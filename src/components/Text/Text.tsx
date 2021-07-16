@@ -18,7 +18,7 @@ type RcTextProps = {
   /** highlight for text with color and background to be mentionMe */
   highlight?: boolean;
   /**
-   * is show title only when truncated, use `number` value to truncate text at a specific number of lines.
+   * is show title only when truncated,
    * ### should not change titleWhenOverflow dynamically, keep that be same value, that will cause hook issue
    */
   titleWhenOverflow?: boolean | number;

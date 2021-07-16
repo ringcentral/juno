@@ -10,6 +10,7 @@ export const textStyle: RcThemedStyled<RcTextProps, any> = (props) => {
     ${typeof titleWhenOverflow === 'number' &&
       css`
         overflow: hidden;
+        text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: ${titleWhenOverflow};
         -webkit-box-orient: vertical;
