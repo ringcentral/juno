@@ -27,7 +27,7 @@ import ArrowUp from '../../icon/ArrowUp';
 import { RcIconButtonProps } from '../Buttons/IconButton';
 import { RcChip } from '../Chip';
 import { RcTextFieldProps } from '../Forms/TextField';
-import { ClearIconButton } from '../Forms/TextField/styles/ClearIconButton';
+import { ClearIconButton } from '../Forms/TextField/TextField/styles/ClearIconButton';
 import { RcPopperProps } from '../Popper';
 import { WithTooltipProps } from '../Tooltip';
 import { RcVisuallyHidden } from '../VisuallyHidden';
@@ -67,23 +67,10 @@ export interface RcDownshiftRenderOptionState {
   expandIconProps?: Partial<RcIconButtonProps>;
 }
 
-export type RcDownshiftCloseReason =
-  | 'toggleInput'
-  | 'escape'
-  | 'select-option'
-  | 'blur';
-
 type RcDownshiftProps<
   T = RcDownshiftSelectedItem,
   K = T & RcDownshiftSelectedItem
 > = {
-  /**
-   * display mode,
-   * when be `autocomplete`, that `multiple` will be `false`
-   *
-   * @default tags
-   */
-  variant?: 'tags' | 'autocomplete';
   /**
    * @requires
    * this is required, must have options, but because need with old code suggestionItems, so make that to be optional
@@ -124,7 +111,7 @@ type RcDownshiftProps<
    */
   filterOptions?: RcDownshiftFilterOptions<T>;
   /** emit current input value */
-  onInputChange?: (value: string) => any;
+  onInputChange?: (value?: string) => any;
   /**
    * Render the option, use `getOptionLabel` by default.
    *
@@ -285,28 +272,6 @@ type RcDownshiftProps<
    * Render the input, default is `RcTextField`
    */
   renderInput?: (params: Partial<RcTextFieldProps>) => React.ReactNode;
-  /**
-   * Control the popup` open state.
-   */
-  open?: boolean;
-  /**
-   * Callback fired when the popup requests to be opened.
-   * Use in controlled mode (see open).
-   *
-   * @param {object} event The event source of the callback.
-   */
-  onOpen?: (event: React.ChangeEvent<{}>) => void;
-  /**
-   * Callback fired when the popup requests to be closed.
-   * Use in controlled mode (see open).
-   *
-   * @param {object} event The event source of the callback.
-   * @param {string} reason Can be: `"toggleInput"`, `"escape"`, `"select-option"`, `"blur"`.
-   */
-  onClose?: (
-    event: React.ChangeEvent<{}>,
-    reason: RcDownshiftCloseReason,
-  ) => void;
 } & RcBaseProps<
   Partial<RcTextFieldProps>,
   | 'children'
@@ -447,7 +412,6 @@ const _RcDownshift = memo(
       automationId,
       screenReader,
       onSelectChange,
-      variant,
       getExpandIconProps,
       groupBy,
       value: valueProp = selectedItemsProp,
@@ -496,9 +460,6 @@ const _RcDownshift = memo(
       InputProps: InputPropsProp,
       debug,
       disabledItemsHighlightable,
-      open: openProp,
-      onOpen,
-      onClose,
       ...rest
     } = props;
 
@@ -549,10 +510,6 @@ const _RcDownshift = memo(
       getNoOptionsProps,
       isKeepHighlightedIndex,
     } = useDownshift({
-      open: openProp,
-      variant,
-      onOpen,
-      onClose,
       wrapperRef: textFieldRef,
       inputContainerRef,
       inputRef: innerInputRef,
@@ -585,7 +542,7 @@ const _RcDownshift = memo(
       onGroupExpanded,
     });
 
-    const open = Boolean((isOpen || noOptionItem) && textFieldRef.current);
+    const open = Boolean((isOpen && textFieldRef.current) || noOptionItem);
 
     const { onBlur, ...InputProps } = getInputProps();
 
@@ -617,9 +574,6 @@ const _RcDownshift = memo(
     const toTextFieldRef = useForkRef(textFieldRef, ref);
 
     const startAdornment = (() => {
-      if (variant === 'autocomplete') {
-        return undefined;
-      }
       const getCustomizedTagProps = (
         selectedItem: RcDownshiftSelectedItem,
         index: number,
