@@ -78,6 +78,13 @@ type RcDownshiftProps<
   K = T & RcDownshiftSelectedItem
 > = {
   /**
+   * display mode,
+   * when be `autocomplete`, that `multiple` will be `false`
+   *
+   * @default tags
+   */
+  variant?: 'tags' | 'autocomplete';
+  /**
    * @requires
    * this is required, must have options, but because need with old code suggestionItems, so make that to be optional
    */
@@ -440,6 +447,7 @@ const _RcDownshift = memo(
       automationId,
       screenReader,
       onSelectChange,
+      variant,
       getExpandIconProps,
       groupBy,
       value: valueProp = selectedItemsProp,
@@ -542,6 +550,7 @@ const _RcDownshift = memo(
       isKeepHighlightedIndex,
     } = useDownshift({
       open: openProp,
+      variant,
       onOpen,
       onClose,
       wrapperRef: textFieldRef,
@@ -608,6 +617,9 @@ const _RcDownshift = memo(
     const toTextFieldRef = useForkRef(textFieldRef, ref);
 
     const startAdornment = (() => {
+      if (variant === 'autocomplete') {
+        return undefined;
+      }
       const getCustomizedTagProps = (
         selectedItem: RcDownshiftSelectedItem,
         index: number,

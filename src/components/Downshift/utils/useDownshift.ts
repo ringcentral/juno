@@ -84,6 +84,7 @@ type UseDownshiftParams = {
   | 'required'
   | 'label'
   | 'disabledItemsHighlightable'
+  | 'variant'
 >;
 
 function stringArrToRegExp(keyToTags?: string[]): RegExp {
@@ -94,7 +95,8 @@ function stringArrToRegExp(keyToTags?: string[]): RegExp {
 const componentName = 'RcDownshift';
 
 export const useDownshift = ({
-  multiple,
+  multiple: multipleProp,
+  variant,
   label: labelProp,
   inputValue: inputValueProp,
   getExpandIconProps,
@@ -130,6 +132,10 @@ export const useDownshift = ({
   onOpen,
   onClose,
 }: UseDownshiftParams) => {
+  const isAutocomplete = variant === 'autocomplete';
+  // * when that is autocomplete, that will never be multiple
+  const multiple = isAutocomplete ? false : multipleProp;
+
   const [isOpen, setIsOpen] = useControlled({
     controlled: openProp,
     default: initialIsOpen || false,
@@ -162,7 +168,10 @@ export const useDownshift = ({
     RcDownshiftHighlightChangeReason
   >();
 
-  const readOnly = !multiple && selectedItems.length >= 1 ? true : undefined;
+  const readOnly =
+    !isAutocomplete && !multiple && selectedItems.length >= 1
+      ? true
+      : undefined;
 
   const forceUpdate = useForceUpdate();
 
@@ -255,6 +264,12 @@ export const useDownshift = ({
   const handleSelectedItems = (_selectedItems: RcDownshiftSelectedItem[]) => {
     setSelectedItems(_selectedItems);
     onSelectChange?.(_selectedItems);
+
+    if (isAutocomplete && _selectedItems.length === 1) {
+      const result = getOptionLabel(_selectedItems[0]);
+
+      onInputChangeProp?.(result);
+    }
   };
 
   const setHighlightedIndex = (
@@ -484,7 +499,11 @@ export const useDownshift = ({
       }
     }
 
-    handleSelectedItems([...selectedItems, selectedItem]);
+    if (multiple) {
+      handleSelectedItems([...selectedItems, selectedItem]);
+    } else {
+      handleSelectedItems([selectedItem]);
+    }
   };
 
   const resetState = (e?: ChangeEvent<{}>) => {
@@ -502,6 +521,7 @@ export const useDownshift = ({
     resetState();
     setIsTagsFocus(false);
 
+    onInputChangeProp?.('');
     onSelectChange?.([]);
     if (isFocus) focusInput();
   };
@@ -562,7 +582,21 @@ export const useDownshift = ({
   // * only when menu is open set to defaultHighlightedIndex
   if (isOpen) {
     if (highlightedIndexRef.current === DEFAULT_HIGHLIGHTED_INDEX) {
-      setHighlightedIndex(defaultHighlightedIndex, { reason: 'auto' });
+      let toIndex = defaultHighlightedIndex;
+
+      if (isAutocomplete && selectedItems.length === 1) {
+        const itemText = getOptionLabel(selectedItems[0]);
+
+        const fIndex = optionItems.findIndex(
+          (x) => getOptionLabel(x) === itemText,
+        );
+
+        if (fIndex > -1) {
+          toIndex = fIndex;
+        }
+      }
+
+      setHighlightedIndex(toIndex, { reason: 'auto' });
     } else {
       const currIndex = highlightedIndexRef.current;
       const availableIndex = getNextFocusableOption(currIndex);
@@ -578,11 +612,21 @@ export const useDownshift = ({
     }
   }
 
+  const handleAutocompleteText = () => {
+    if (isAutocomplete && selectedItems.length > 0) {
+      const result = getOptionLabel(selectedItems[0]);
+
+      onInputChangeProp?.(result);
+    }
+  };
+
   // * use force update to sync open state when init is open
   useLayoutEffect(() => {
     if (isOpen) {
       forceUpdate();
     }
+
+    handleAutocompleteText();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -734,15 +778,24 @@ export const useDownshift = ({
           }
         },
         onChange: (e) => {
-          handleInputChange(
-            fromPasteString.current || e.target.value,
-            undefined,
-            e,
-          );
+          const changeValue = fromPasteString.current || e.target.value;
+
+          handleInputChange(changeValue, undefined, e);
+
+          // * when input value clear all, clear selected item
+          if (isAutocomplete && changeValue.length === 0) {
+            handleSelectedItems([]);
+          }
+
           fromPasteString.current = '';
         },
         onFocus: (e) => {
           if (openOnFocus) openMenu(e);
+
+          // * when autocomplete mode, always select all text when focus
+          if (isAutocomplete) {
+            inputRef.current?.select();
+          }
 
           // * reset stopAutoSelect in focus input
           stopAutoSelectRef.current = false;
@@ -757,6 +810,10 @@ export const useDownshift = ({
 
             checkAndAddFreeSolo({}, e);
           }
+
+          // * when blur should restore text when have selected item
+          handleAutocompleteText();
+
           closeMenu(e, 'blur');
         },
         onCompositionStart: () => {
@@ -859,6 +916,13 @@ export const useDownshift = ({
                 if (readOnly) {
                   e.preventDefault();
                   return;
+                }
+
+                // * check state for is that should move key in option items
+                if (isAutocomplete && selectedItems.length > 0 && !isOpen) {
+                  openMenu(e);
+                  e.preventDefault();
+                  break;
                 }
 
                 onKeyFocusedIndexHandle(e);
