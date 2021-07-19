@@ -187,7 +187,7 @@ Array [
   cursor: pointer;
 }
 
-.c1:hover .sc-cSiAOC {
+.c1:hover .sc-hBeyRu {
   display: block;
 }
 
@@ -196,7 +196,7 @@ Array [
   color: #fff;
 }
 
-.c1:active .sc-lgWdIC {
+.c1:active .sc-dMabaV {
   color: #fff;
 }
 
@@ -551,7 +551,7 @@ Array [
   cursor: pointer;
 }
 
-.c1:hover .sc-cSiAOC {
+.c1:hover .sc-hBeyRu {
   display: block;
 }
 
@@ -560,7 +560,7 @@ Array [
   color: #fff;
 }
 
-.c1:active .sc-lgWdIC {
+.c1:active .sc-dMabaV {
   color: #fff;
 }
 
@@ -794,7 +794,7 @@ exports[`Storyshots 🖤 deprecated Components/Menus/Menu Menu List 1`] = `
   cursor: pointer;
 }
 
-.c1:hover .sc-cSiAOC {
+.c1:hover .sc-hBeyRu {
   display: block;
 }
 
@@ -803,7 +803,7 @@ exports[`Storyshots 🖤 deprecated Components/Menus/Menu Menu List 1`] = `
   color: #fff;
 }
 
-.c1:active .sc-lgWdIC {
+.c1:active .sc-dMabaV {
   color: #fff;
 }
 
@@ -1056,7 +1056,7 @@ Array [
   cursor: pointer;
 }
 
-.c1:hover .sc-cSiAOC {
+.c1:hover .sc-hBeyRu {
   display: block;
 }
 
@@ -1065,7 +1065,7 @@ Array [
   color: #fff;
 }
 
-.c1:active .sc-lgWdIC {
+.c1:active .sc-dMabaV {
   color: #fff;
 }
 
