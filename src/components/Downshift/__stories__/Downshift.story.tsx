@@ -775,9 +775,6 @@ export const DownshiftAutocomplete: Story<DownshiftProps> = ({ ...args }) => {
       onInputChange={(value) => {
         setInputValue(value || '');
       }}
-      SuggestionListProps={{
-        padding: true,
-      }}
     />
   );
 };
@@ -788,6 +785,4 @@ DownshiftAutocomplete.args = {
   multiple: false,
   clearBtn: true,
   toggleButton: true,
-  disableCloseOnSelect: false,
-  openOnFocus: true,
 };
