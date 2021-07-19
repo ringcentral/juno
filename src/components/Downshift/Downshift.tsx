@@ -67,6 +67,12 @@ export interface RcDownshiftRenderOptionState {
   expandIconProps?: Partial<RcIconButtonProps>;
 }
 
+export type RcDownshiftCloseReason =
+  | 'toggleInput'
+  | 'escape'
+  | 'select-option'
+  | 'blur';
+
 type RcDownshiftProps<
   T = RcDownshiftSelectedItem,
   K = T & RcDownshiftSelectedItem
@@ -272,6 +278,28 @@ type RcDownshiftProps<
    * Render the input, default is `RcTextField`
    */
   renderInput?: (params: Partial<RcTextFieldProps>) => React.ReactNode;
+  /**
+   * Control the popup` open state.
+   */
+  open?: boolean;
+  /**
+   * Callback fired when the popup requests to be opened.
+   * Use in controlled mode (see open).
+   *
+   * @param {object} event The event source of the callback.
+   */
+  onOpen?: (event: React.ChangeEvent<{}>) => void;
+  /**
+   * Callback fired when the popup requests to be closed.
+   * Use in controlled mode (see open).
+   *
+   * @param {object} event The event source of the callback.
+   * @param {string} reason Can be: `"toggleInput"`, `"escape"`, `"select-option"`, `"blur"`.
+   */
+  onClose?: (
+    event: React.ChangeEvent<{}>,
+    reason: RcDownshiftCloseReason,
+  ) => void;
 } & RcBaseProps<
   Partial<RcTextFieldProps>,
   | 'children'
@@ -460,6 +488,9 @@ const _RcDownshift = memo(
       InputProps: InputPropsProp,
       debug,
       disabledItemsHighlightable,
+      open: openProp,
+      onOpen,
+      onClose,
       ...rest
     } = props;
 
@@ -510,6 +541,9 @@ const _RcDownshift = memo(
       getNoOptionsProps,
       isKeepHighlightedIndex,
     } = useDownshift({
+      open: openProp,
+      onOpen,
+      onClose,
       wrapperRef: textFieldRef,
       inputContainerRef,
       inputRef: innerInputRef,
