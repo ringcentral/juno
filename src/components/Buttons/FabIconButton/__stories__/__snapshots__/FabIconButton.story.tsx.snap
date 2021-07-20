@@ -19,7 +19,7 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/FabIconButton FabIconButt
 }
 
 .c0.c0 {
-  background-color: #3f51b5;
+  background-color: #066FAC;
   width: 48px;
   height: 48px;
   box-shadow: none;
@@ -28,7 +28,7 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/FabIconButton FabIconButt
 }
 
 .c0.c0 .RcFabIconButtonTouchRipple-rippleVisible {
-  color: rgb(101,115,195);
+  color: rgb(55,139,188);
   opacity: 0.08;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -38,7 +38,7 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/FabIconButton FabIconButt
 }
 
 .c0.c0.RcFabIconButton-disabled {
-  background-color: #3f51b5;
+  background-color: #066FAC;
   color: #fff;
   box-shadow: none;
   opacity: NaN;
@@ -46,7 +46,7 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/FabIconButton FabIconButt
 
 .c0.c0:hover,
 .c0.c0:active {
-  background-color: rgb(56,72,162);
+  background-color: rgb(5,99,154);
 }
 
 <button

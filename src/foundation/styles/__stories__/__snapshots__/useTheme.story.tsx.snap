@@ -42,40 +42,40 @@ exports[`Storyshots 🔧 Foundation/Hooks/useTheme Theme Value 1`] = `
     },
     "type": "light",
     "primary": {
-      "contrastText": "#fff",
-      "dark": "#303f9f",
-      "light": "#7986cb",
-      "main": "#3f51b5"
+      "main": "#066FAC",
+      "light": "rgb(55, 139, 188)",
+      "dark": "rgb(4, 77, 120)",
+      "contrastText": "#fff"
     },
     "secondary": {
-      "contrastText": "#fff",
-      "dark": "#c51162",
-      "light": "#ff4081",
-      "main": "#f50057"
+      "main": "#FF8800",
+      "light": "rgb(255, 159, 51)",
+      "dark": "rgb(178, 95, 0)",
+      "contrastText": "rgba(0, 0, 0, 0.87)"
     },
     "error": {
-      "contrastText": "#fff",
-      "dark": "#d32f2f",
-      "light": "#e57373",
-      "main": "#f44336"
+      "main": "#D63E39",
+      "light": "rgb(222, 100, 96)",
+      "dark": "rgb(149, 43, 39)",
+      "contrastText": "#fff"
     },
     "warning": {
       "b01": "#FFF7EB",
       "b02": "#FFE7C1",
       "b03": "#F6AD16",
-      "contrastText": "rgba(0, 0, 0, 0.87)",
-      "dark": "#f57c00",
       "f01": "#F6AD16",
       "f02": "#896219",
       "f11": "#F6AD16",
-      "light": "#ffb74d",
-      "main": "#ff9800"
+      "main": "#F6AD16",
+      "light": "rgb(247, 189, 68)",
+      "dark": "rgb(172, 121, 15)",
+      "contrastText": "rgba(0, 0, 0, 0.87)"
     },
     "info": {
-      "contrastText": "#fff",
-      "dark": "#1976d2",
-      "light": "#64b5f6",
-      "main": "#2196f3"
+      "main": "#666666",
+      "light": "rgb(132, 132, 132)",
+      "dark": "rgb(71, 71, 71)",
+      "contrastText": "#fff"
     },
     "success": {
       "b01": "#F0FCEF",
@@ -83,13 +83,13 @@ exports[`Storyshots 🔧 Foundation/Hooks/useTheme Theme Value 1`] = `
       "b03": "#3C9949",
       "b04": "#368541",
       "b05": "#3C9949",
-      "contrastText": "rgba(0, 0, 0, 0.87)",
-      "dark": "#388e3c",
       "f01": "#CEF4CE",
       "f02": "#32773B",
       "f11": "#46BE59",
-      "light": "#81c784",
-      "main": "#4caf50"
+      "main": "#368541",
+      "light": "rgb(94, 157, 103)",
+      "dark": "rgb(37, 93, 45)",
+      "contrastText": "#fff"
     },
     "grey": {
       "50": "#fafafa",
@@ -333,57 +333,49 @@ exports[`Storyshots 🔧 Foundation/Hooks/useTheme Theme Value 1`] = `
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 300,
       "fontSize": "6rem",
-      "lineHeight": 1.167,
-      "letterSpacing": "-0.01562em"
+      "lineHeight": 1.167
     },
     "h2": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 300,
       "fontSize": "3.75rem",
-      "lineHeight": 1.2,
-      "letterSpacing": "-0.00833em"
+      "lineHeight": 1.2
     },
     "h3": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "3rem",
-      "lineHeight": 1.167,
-      "letterSpacing": "0em"
+      "lineHeight": 1.167
     },
     "h4": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "2.125rem",
-      "lineHeight": 1.235,
-      "letterSpacing": "0.00735em"
+      "lineHeight": 1.235
     },
     "h5": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "1.5rem",
-      "lineHeight": 1.334,
-      "letterSpacing": "0em"
+      "lineHeight": 1.334
     },
     "h6": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 500,
       "fontSize": "1.25rem",
-      "lineHeight": 1.6,
-      "letterSpacing": "0.0075em"
+      "lineHeight": 1.6
     },
     "subtitle1": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "1rem",
-      "lineHeight": 1.75,
-      "letterSpacing": "0.00938em"
+      "lineHeight": 1.75
     },
     "subtitle2": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 500,
       "fontSize": "0.875rem",
-      "lineHeight": 1.57,
-      "letterSpacing": "0.00714em"
+      "lineHeight": 1.57
     },
     "body1": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -408,86 +400,72 @@ exports[`Storyshots 🔧 Foundation/Hooks/useTheme Theme Value 1`] = `
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "0.75rem",
-      "lineHeight": 1.66,
-      "letterSpacing": "0.03333em"
+      "lineHeight": 1.66
     },
     "overline": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "0.75rem",
       "lineHeight": 2.66,
-      "textTransform": "uppercase",
-      "letterSpacing": "0.08333em"
+      "textTransform": "uppercase"
     },
     "caption1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "0.75rem",
       "fontWeight": 400,
       "lineHeight": "16px"
     },
     "caption2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "0.75rem",
       "fontWeight": 700,
       "lineHeight": "16px"
     },
     "codeFontFamily": "Courier",
     "display1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "2.125rem",
       "fontWeight": 400,
       "lineHeight": "40px"
     },
     "display2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "2.8125rem",
       "fontWeight": 400,
       "lineHeight": "56px"
     },
     "display3": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "3.5rem",
       "fontWeight": 700,
       "lineHeight": "72px"
     },
     "display4": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "6rem",
       "fontWeight": 700,
       "lineHeight": "112px"
     },
     "headline1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1.5rem",
       "fontWeight": 400,
       "lineHeight": "32px"
     },
     "headline2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1.5rem",
       "fontWeight": 700,
       "lineHeight": "32px"
     },
     "subheading1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1rem",
       "fontWeight": 400,
       "lineHeight": "24px"
     },
     "subheading2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1rem",
       "fontWeight": 700,
       "lineHeight": "24px"
     },
     "title1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1.25rem",
       "fontWeight": 400,
       "lineHeight": "28px"
     },
     "title2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1.25rem",
       "fontWeight": 700,
       "lineHeight": "28px"
@@ -610,40 +588,40 @@ Array [
     },
     "type": "light",
     "primary": {
-      "contrastText": "#fff",
-      "dark": "#303f9f",
-      "light": "#7986cb",
-      "main": "#3f51b5"
+      "main": "#066FAC",
+      "light": "rgb(55, 139, 188)",
+      "dark": "rgb(4, 77, 120)",
+      "contrastText": "#fff"
     },
     "secondary": {
-      "contrastText": "#fff",
-      "dark": "#c51162",
-      "light": "#ff4081",
-      "main": "#f50057"
+      "main": "#FF8800",
+      "light": "rgb(255, 159, 51)",
+      "dark": "rgb(178, 95, 0)",
+      "contrastText": "rgba(0, 0, 0, 0.87)"
     },
     "error": {
-      "contrastText": "#fff",
-      "dark": "#d32f2f",
-      "light": "#e57373",
-      "main": "#f44336"
+      "main": "#D63E39",
+      "light": "rgb(222, 100, 96)",
+      "dark": "rgb(149, 43, 39)",
+      "contrastText": "#fff"
     },
     "warning": {
       "b01": "#FFF7EB",
       "b02": "#FFE7C1",
       "b03": "#F6AD16",
-      "contrastText": "rgba(0, 0, 0, 0.87)",
-      "dark": "#f57c00",
       "f01": "#F6AD16",
       "f02": "#896219",
       "f11": "#F6AD16",
-      "light": "#ffb74d",
-      "main": "#ff9800"
+      "main": "#F6AD16",
+      "light": "rgb(247, 189, 68)",
+      "dark": "rgb(172, 121, 15)",
+      "contrastText": "rgba(0, 0, 0, 0.87)"
     },
     "info": {
-      "contrastText": "#fff",
-      "dark": "#1976d2",
-      "light": "#64b5f6",
-      "main": "#2196f3"
+      "main": "#666666",
+      "light": "rgb(132, 132, 132)",
+      "dark": "rgb(71, 71, 71)",
+      "contrastText": "#fff"
     },
     "success": {
       "b01": "#F0FCEF",
@@ -651,13 +629,13 @@ Array [
       "b03": "#3C9949",
       "b04": "#368541",
       "b05": "#3C9949",
-      "contrastText": "rgba(0, 0, 0, 0.87)",
-      "dark": "#388e3c",
       "f01": "#CEF4CE",
       "f02": "#32773B",
       "f11": "#46BE59",
-      "light": "#81c784",
-      "main": "#4caf50"
+      "main": "#368541",
+      "light": "rgb(94, 157, 103)",
+      "dark": "rgb(37, 93, 45)",
+      "contrastText": "#fff"
     },
     "grey": {
       "50": "#fafafa",
@@ -901,57 +879,49 @@ Array [
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 300,
       "fontSize": "6rem",
-      "lineHeight": 1.167,
-      "letterSpacing": "-0.01562em"
+      "lineHeight": 1.167
     },
     "h2": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 300,
       "fontSize": "3.75rem",
-      "lineHeight": 1.2,
-      "letterSpacing": "-0.00833em"
+      "lineHeight": 1.2
     },
     "h3": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "3rem",
-      "lineHeight": 1.167,
-      "letterSpacing": "0em"
+      "lineHeight": 1.167
     },
     "h4": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "2.125rem",
-      "lineHeight": 1.235,
-      "letterSpacing": "0.00735em"
+      "lineHeight": 1.235
     },
     "h5": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "1.5rem",
-      "lineHeight": 1.334,
-      "letterSpacing": "0em"
+      "lineHeight": 1.334
     },
     "h6": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 500,
       "fontSize": "1.25rem",
-      "lineHeight": 1.6,
-      "letterSpacing": "0.0075em"
+      "lineHeight": 1.6
     },
     "subtitle1": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "1rem",
-      "lineHeight": 1.75,
-      "letterSpacing": "0.00938em"
+      "lineHeight": 1.75
     },
     "subtitle2": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 500,
       "fontSize": "0.875rem",
-      "lineHeight": 1.57,
-      "letterSpacing": "0.00714em"
+      "lineHeight": 1.57
     },
     "body1": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -976,86 +946,72 @@ Array [
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "0.75rem",
-      "lineHeight": 1.66,
-      "letterSpacing": "0.03333em"
+      "lineHeight": 1.66
     },
     "overline": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "0.75rem",
       "lineHeight": 2.66,
-      "textTransform": "uppercase",
-      "letterSpacing": "0.08333em"
+      "textTransform": "uppercase"
     },
     "caption1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "0.75rem",
       "fontWeight": 400,
       "lineHeight": "16px"
     },
     "caption2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "0.75rem",
       "fontWeight": 700,
       "lineHeight": "16px"
     },
     "codeFontFamily": "Courier",
     "display1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "2.125rem",
       "fontWeight": 400,
       "lineHeight": "40px"
     },
     "display2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "2.8125rem",
       "fontWeight": 400,
       "lineHeight": "56px"
     },
     "display3": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "3.5rem",
       "fontWeight": 700,
       "lineHeight": "72px"
     },
     "display4": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "6rem",
       "fontWeight": 700,
       "lineHeight": "112px"
     },
     "headline1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1.5rem",
       "fontWeight": 400,
       "lineHeight": "32px"
     },
     "headline2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1.5rem",
       "fontWeight": 700,
       "lineHeight": "32px"
     },
     "subheading1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1rem",
       "fontWeight": 400,
       "lineHeight": "24px"
     },
     "subheading2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1rem",
       "fontWeight": 700,
       "lineHeight": "24px"
     },
     "title1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1.25rem",
       "fontWeight": 400,
       "lineHeight": "28px"
     },
     "title2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1.25rem",
       "fontWeight": 700,
       "lineHeight": "28px"
@@ -1157,16 +1113,23 @@ Array [
   "direction": "ltr",
   "mixins": {
     "toolbar": {
+      "minHeight": 56,
       "@media (min-width:0px) and (orientation: landscape)": {
         "minHeight": 48
       },
-      "@media (min-width:600px)": {
+      "@media (min-width:641px)": {
         "minHeight": 64
-      },
-      "minHeight": 56
+      }
     }
   },
-  "overrides": {},
+  "overrides": {
+    "MuiPaper": {
+      "root": {
+        "backgroundColor": "#282A32",
+        "color": "#FFFFFF"
+      }
+    }
+  },
   "palette": {
     "common": {
       "black": "#000",
@@ -1174,40 +1137,40 @@ Array [
     },
     "type": "dark",
     "primary": {
-      "contrastText": "rgba(0, 0, 0, 0.87)",
-      "dark": "rgb(100, 141, 174)",
-      "light": "rgb(166, 212, 250)",
-      "main": "#90caf9"
+      "main": "#356AFD",
+      "light": "rgb(93, 135, 253)",
+      "dark": "rgb(37, 74, 177)",
+      "contrastText": "#fff"
     },
     "secondary": {
-      "contrastText": "rgba(0, 0, 0, 0.87)",
-      "dark": "rgb(170, 100, 123)",
-      "light": "rgb(246, 165, 192)",
-      "main": "#f48fb1"
+      "main": "#884C12",
+      "light": "rgb(159, 111, 65)",
+      "dark": "rgb(95, 53, 12)",
+      "contrastText": "#fff"
     },
     "error": {
-      "contrastText": "#fff",
-      "dark": "#d32f2f",
-      "light": "#e57373",
-      "main": "#f44336"
+      "main": "#DD6057",
+      "light": "rgb(227, 127, 120)",
+      "dark": "rgb(154, 67, 60)",
+      "contrastText": "#fff"
     },
     "warning": {
       "b01": "#2B2416",
       "b02": "#373D1B",
       "b03": "#D99F26",
-      "contrastText": "rgba(0, 0, 0, 0.87)",
-      "dark": "#f57c00",
       "f01": "#D99F26",
       "f02": "#D99F26",
       "f11": "#D99F26",
-      "light": "#ffb74d",
-      "main": "#ff9800"
+      "main": "#74561D",
+      "light": "rgb(143, 119, 74)",
+      "dark": "rgb(81, 60, 20)",
+      "contrastText": "#fff"
     },
     "info": {
-      "contrastText": "#fff",
-      "dark": "#1976d2",
-      "light": "#64b5f6",
-      "main": "#2196f3"
+      "main": "#A0A2A9",
+      "light": "rgb(179, 180, 186)",
+      "dark": "rgb(112, 113, 118)",
+      "contrastText": "rgba(0, 0, 0, 0.87)"
     },
     "success": {
       "b01": "#1C281B",
@@ -1215,13 +1178,13 @@ Array [
       "b03": "#368440",
       "b04": "#368440",
       "b05": "#A0A2A9",
-      "contrastText": "rgba(0, 0, 0, 0.87)",
-      "dark": "#388e3c",
       "f01": "#223221",
       "f02": "#72B375",
       "f11": "#72B375",
-      "light": "#81c784",
-      "main": "#4caf50"
+      "main": "#3D9A4A",
+      "light": "rgb(99, 174, 110)",
+      "dark": "rgb(42, 107, 51)",
+      "contrastText": "#fff"
     },
     "grey": {
       "50": "#fafafa",
@@ -1251,9 +1214,7 @@ Array [
     "divider": "rgba(255, 255, 255, 0.12)",
     "background": {
       "paper": "#424242",
-      "default": "#121212",
-      "level1": "#212121",
-      "level2": "#333"
+      "default": "#303030"
     },
     "action": {
       "active": "#fff",
@@ -1468,57 +1429,49 @@ Array [
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 300,
       "fontSize": "6rem",
-      "lineHeight": 1.167,
-      "letterSpacing": "-0.01562em"
+      "lineHeight": 1.167
     },
     "h2": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 300,
       "fontSize": "3.75rem",
-      "lineHeight": 1.2,
-      "letterSpacing": "-0.00833em"
+      "lineHeight": 1.2
     },
     "h3": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "3rem",
-      "lineHeight": 1.167,
-      "letterSpacing": "0em"
+      "lineHeight": 1.167
     },
     "h4": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "2.125rem",
-      "lineHeight": 1.235,
-      "letterSpacing": "0.00735em"
+      "lineHeight": 1.235
     },
     "h5": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "1.5rem",
-      "lineHeight": 1.334,
-      "letterSpacing": "0em"
+      "lineHeight": 1.334
     },
     "h6": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 500,
       "fontSize": "1.25rem",
-      "lineHeight": 1.6,
-      "letterSpacing": "0.0075em"
+      "lineHeight": 1.6
     },
     "subtitle1": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "1rem",
-      "lineHeight": 1.75,
-      "letterSpacing": "0.00938em"
+      "lineHeight": 1.75
     },
     "subtitle2": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 500,
       "fontSize": "0.875rem",
-      "lineHeight": 1.57,
-      "letterSpacing": "0.00714em"
+      "lineHeight": 1.57
     },
     "body1": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -1534,96 +1487,81 @@ Array [
     },
     "button": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-      "fontWeight": 500,
-      "fontSize": "0.875rem",
-      "lineHeight": 1.75,
-      "textTransform": "uppercase",
-      "letterSpacing": "0.02857em"
+      "fontWeight": 700,
+      "fontSize": "0.9375rem",
+      "lineHeight": "20px",
+      "textTransform": "none"
     },
     "caption": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "0.75rem",
-      "lineHeight": 1.66,
-      "letterSpacing": "0.03333em"
+      "lineHeight": 1.66
     },
     "overline": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "0.75rem",
       "lineHeight": 2.66,
-      "textTransform": "uppercase",
-      "letterSpacing": "0.08333em"
+      "textTransform": "uppercase"
     },
     "caption1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "0.75rem",
       "fontWeight": 400,
       "lineHeight": "16px"
     },
     "caption2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "0.75rem",
       "fontWeight": 700,
       "lineHeight": "16px"
     },
     "codeFontFamily": "Courier",
     "display1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "2.125rem",
       "fontWeight": 400,
       "lineHeight": "40px"
     },
     "display2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "2.8125rem",
       "fontWeight": 400,
       "lineHeight": "56px"
     },
     "display3": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "3.5rem",
       "fontWeight": 700,
       "lineHeight": "72px"
     },
     "display4": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "6rem",
       "fontWeight": 700,
       "lineHeight": "112px"
     },
     "headline1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1.5rem",
       "fontWeight": 400,
       "lineHeight": "32px"
     },
     "headline2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1.5rem",
       "fontWeight": 700,
       "lineHeight": "32px"
     },
     "subheading1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1rem",
       "fontWeight": 400,
       "lineHeight": "24px"
     },
     "subheading2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1rem",
       "fontWeight": 700,
       "lineHeight": "24px"
     },
     "title1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1.25rem",
       "fontWeight": 400,
       "lineHeight": "28px"
     },
     "title2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1.25rem",
       "fontWeight": 700,
       "lineHeight": "28px"
@@ -1683,9 +1621,6 @@ Array [
     "xxl": "16px",
     "zero": "0px"
   },
-  "nprogress": {
-    "color": "#fff"
-  },
   "unit": "4px"
 }
     </pre>
@@ -1729,18 +1664,46 @@ Array [
   "direction": "ltr",
   "mixins": {
     "toolbar": {
+      "minHeight": 56,
       "@media (min-width:0px) and (orientation: landscape)": {
         "minHeight": 48
       },
-      "@media (min-width:600px)": {
+      "@media (min-width:641px)": {
         "minHeight": 64
-      },
-      "minHeight": 56
+      }
     }
   },
   "overrides": {
     "MuiPaper": {
+      "root": {
+        "backgroundColor": "#000000",
+        "color": "#FFFFFF"
+      },
       "elevation1": {
+        "box-shadow": "0 0 0 1px #FFFFFF"
+      },
+      "elevation2": {
+        "box-shadow": "0 0 0 1px #FFFFFF"
+      },
+      "elevation3": {
+        "box-shadow": "0 0 0 1px #FFFFFF"
+      },
+      "elevation4": {
+        "box-shadow": "0 0 0 1px #FFFFFF"
+      },
+      "elevation5": {
+        "box-shadow": "0 0 0 1px #FFFFFF"
+      },
+      "elevation6": {
+        "box-shadow": "0 0 0 1px #FFFFFF"
+      },
+      "elevation7": {
+        "box-shadow": "0 0 0 1px #FFFFFF"
+      },
+      "elevation8": {
+        "box-shadow": "0 0 0 1px #FFFFFF"
+      },
+      "elevation9": {
         "box-shadow": "0 0 0 1px #FFFFFF"
       },
       "elevation10": {
@@ -1773,9 +1736,6 @@ Array [
       "elevation19": {
         "box-shadow": "0 0 0 1px #FFFFFF"
       },
-      "elevation2": {
-        "box-shadow": "0 0 0 1px #FFFFFF"
-      },
       "elevation20": {
         "box-shadow": "0 0 0 1px #FFFFFF"
       },
@@ -1790,31 +1750,6 @@ Array [
       },
       "elevation24": {
         "box-shadow": "0 0 0 1px #FFFFFF"
-      },
-      "elevation3": {
-        "box-shadow": "0 0 0 1px #FFFFFF"
-      },
-      "elevation4": {
-        "box-shadow": "0 0 0 1px #FFFFFF"
-      },
-      "elevation5": {
-        "box-shadow": "0 0 0 1px #FFFFFF"
-      },
-      "elevation6": {
-        "box-shadow": "0 0 0 1px #FFFFFF"
-      },
-      "elevation7": {
-        "box-shadow": "0 0 0 1px #FFFFFF"
-      },
-      "elevation8": {
-        "box-shadow": "0 0 0 1px #FFFFFF"
-      },
-      "elevation9": {
-        "box-shadow": "0 0 0 1px #FFFFFF"
-      },
-      "root": {
-        "backgroundColor": "#000000",
-        "color": "#FFFFFF"
       }
     }
   },
@@ -1825,40 +1760,40 @@ Array [
     },
     "type": "dark",
     "primary": {
-      "contrastText": "rgba(0, 0, 0, 0.87)",
-      "dark": "rgb(100, 141, 174)",
-      "light": "rgb(166, 212, 250)",
-      "main": "#90caf9"
+      "main": "#35C6FF",
+      "light": "rgb(93, 209, 255)",
+      "dark": "rgb(37, 138, 178)",
+      "contrastText": "rgba(0, 0, 0, 0.87)"
     },
     "secondary": {
-      "contrastText": "rgba(0, 0, 0, 0.87)",
-      "dark": "rgb(170, 100, 123)",
-      "light": "rgb(246, 165, 192)",
-      "main": "#f48fb1"
+      "main": "#884C12",
+      "light": "rgb(159, 111, 65)",
+      "dark": "rgb(95, 53, 12)",
+      "contrastText": "#fff"
     },
     "error": {
-      "contrastText": "#fff",
-      "dark": "#d32f2f",
-      "light": "#e57373",
-      "main": "#f44336"
+      "main": "#DD6057",
+      "light": "rgb(227, 127, 120)",
+      "dark": "rgb(154, 67, 60)",
+      "contrastText": "#fff"
     },
     "warning": {
       "b01": "#2B2416",
       "b02": "#373D1B",
       "b03": "#FEFF05",
-      "contrastText": "rgba(0, 0, 0, 0.87)",
-      "dark": "#f57c00",
       "f01": "#FEFF05",
       "f02": "#FEFF05",
       "f11": "#FEFF05",
-      "light": "#ffb74d",
-      "main": "#ff9800"
+      "main": "#74561D",
+      "light": "rgb(143, 119, 74)",
+      "dark": "rgb(81, 60, 20)",
+      "contrastText": "#fff"
     },
     "info": {
-      "contrastText": "#fff",
-      "dark": "#1976d2",
-      "light": "#64b5f6",
-      "main": "#2196f3"
+      "main": "#FFFFFF",
+      "light": "rgb(255, 255, 255)",
+      "dark": "rgb(178, 178, 178)",
+      "contrastText": "rgba(0, 0, 0, 0.87)"
     },
     "success": {
       "b01": "#1C281B",
@@ -1866,13 +1801,13 @@ Array [
       "b03": "#7FFF5D",
       "b04": "#7FFF5D",
       "b05": "#FFFFFF",
-      "contrastText": "rgba(0, 0, 0, 0.87)",
-      "dark": "#388e3c",
       "f01": "#223221",
       "f02": "#7FFF5D",
       "f11": "#7FFF5D",
-      "light": "#81c784",
-      "main": "#4caf50"
+      "main": "#3D9A4A",
+      "light": "rgb(99, 174, 110)",
+      "dark": "rgb(42, 107, 51)",
+      "contrastText": "#fff"
     },
     "grey": {
       "50": "#fafafa",
@@ -1902,9 +1837,7 @@ Array [
     "divider": "rgba(255, 255, 255, 0.12)",
     "background": {
       "paper": "#424242",
-      "default": "#121212",
-      "level1": "#212121",
-      "level2": "#333"
+      "default": "#303030"
     },
     "action": {
       "active": "#fff",
@@ -2119,57 +2052,49 @@ Array [
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 300,
       "fontSize": "6rem",
-      "lineHeight": 1.167,
-      "letterSpacing": "-0.01562em"
+      "lineHeight": 1.167
     },
     "h2": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 300,
       "fontSize": "3.75rem",
-      "lineHeight": 1.2,
-      "letterSpacing": "-0.00833em"
+      "lineHeight": 1.2
     },
     "h3": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "3rem",
-      "lineHeight": 1.167,
-      "letterSpacing": "0em"
+      "lineHeight": 1.167
     },
     "h4": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "2.125rem",
-      "lineHeight": 1.235,
-      "letterSpacing": "0.00735em"
+      "lineHeight": 1.235
     },
     "h5": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "1.5rem",
-      "lineHeight": 1.334,
-      "letterSpacing": "0em"
+      "lineHeight": 1.334
     },
     "h6": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 500,
       "fontSize": "1.25rem",
-      "lineHeight": 1.6,
-      "letterSpacing": "0.0075em"
+      "lineHeight": 1.6
     },
     "subtitle1": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "1rem",
-      "lineHeight": 1.75,
-      "letterSpacing": "0.00938em"
+      "lineHeight": 1.75
     },
     "subtitle2": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 500,
       "fontSize": "0.875rem",
-      "lineHeight": 1.57,
-      "letterSpacing": "0.00714em"
+      "lineHeight": 1.57
     },
     "body1": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -2185,96 +2110,81 @@ Array [
     },
     "button": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-      "fontWeight": 500,
-      "fontSize": "0.875rem",
-      "lineHeight": 1.75,
-      "textTransform": "uppercase",
-      "letterSpacing": "0.02857em"
+      "fontWeight": 700,
+      "fontSize": "0.9375rem",
+      "lineHeight": "20px",
+      "textTransform": "none"
     },
     "caption": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "0.75rem",
-      "lineHeight": 1.66,
-      "letterSpacing": "0.03333em"
+      "lineHeight": 1.66
     },
     "overline": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "0.75rem",
       "lineHeight": 2.66,
-      "textTransform": "uppercase",
-      "letterSpacing": "0.08333em"
+      "textTransform": "uppercase"
     },
     "caption1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "0.75rem",
       "fontWeight": 400,
       "lineHeight": "16px"
     },
     "caption2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "0.75rem",
       "fontWeight": 700,
       "lineHeight": "16px"
     },
     "codeFontFamily": "Courier",
     "display1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "2.125rem",
       "fontWeight": 400,
       "lineHeight": "40px"
     },
     "display2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "2.8125rem",
       "fontWeight": 400,
       "lineHeight": "56px"
     },
     "display3": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "3.5rem",
       "fontWeight": 700,
       "lineHeight": "72px"
     },
     "display4": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "6rem",
       "fontWeight": 700,
       "lineHeight": "112px"
     },
     "headline1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1.5rem",
       "fontWeight": 400,
       "lineHeight": "32px"
     },
     "headline2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1.5rem",
       "fontWeight": 700,
       "lineHeight": "32px"
     },
     "subheading1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1rem",
       "fontWeight": 400,
       "lineHeight": "24px"
     },
     "subheading2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1rem",
       "fontWeight": 700,
       "lineHeight": "24px"
     },
     "title1": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1.25rem",
       "fontWeight": 400,
       "lineHeight": "28px"
     },
     "title2": {
-      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontSize": "1.25rem",
       "fontWeight": 700,
       "lineHeight": "28px"
@@ -2333,9 +2243,6 @@ Array [
     "xl": "8px",
     "xxl": "16px",
     "zero": "0px"
-  },
-  "nprogress": {
-    "color": "#fff"
   },
   "unit": "4px"
 }
