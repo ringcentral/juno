@@ -1,6 +1,12 @@
 {
   "breakpoints": {
-    "keys": ["xs", "sm", "md", "lg", "xl"],
+    "keys": [
+      "xs",
+      "sm",
+      "md",
+      "lg",
+      "xl"
+    ],
     "values": {
       "lg": 1280,
       "md": 960,
@@ -10,7 +16,6 @@
     }
   },
   "opacity": {
-    "08": 0.08,
     "12": 0.12,
     "16": 0.16,
     "24": 0.24,
@@ -22,7 +27,8 @@
     "72": 0.72,
     "80": 0.8,
     "88": 0.88,
-    "96": 0.96
+    "96": 0.96,
+    "08": 0.08
   },
   "palette": {
     "action": {
@@ -343,5 +349,13 @@
       "lineHeight": "28px"
     }
   },
-  "unit": "4px"
+  "unit": "4px",
+  "overrides": {
+    "MuiPaper": {
+      "root": {
+        "backgroundColor": "#282A32",
+        "color": "#FFFFFF"
+      }
+    }
+  }
 }
