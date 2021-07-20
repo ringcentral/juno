@@ -257,7 +257,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   box-shadow: unset;
   min-width: 0px;
   min-height: 28px;
-  padding: 0px 16px;
+  padding: 0px 12px;
 }
 
 .c26 .RcButton-startIcon {
@@ -285,7 +285,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 .c26.RcButton-outlined {
   color: #066FAC;
   border-color: #066FAC;
-  padding: 0px 15px;
+  padding: 0px 11px;
 }
 
 .c29 {
@@ -336,7 +336,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 .c29.RcButton-outlined {
   color: #066FAC;
   border-color: #066FAC;
-  padding: 0px 15px;
+  padding: 0px 11px;
 }
 
 .c31 {

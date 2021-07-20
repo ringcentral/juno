@@ -267,7 +267,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
   box-shadow: unset;
   min-width: 0px;
   min-height: 28px;
-  padding: 0px 16px;
+  padding: 0px 12px;
 }
 
 .c9 .RcButton-startIcon {
@@ -295,7 +295,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
 .c9.RcButton-outlined {
   color: #066FAC;
   border-color: #066FAC;
-  padding: 0px 15px;
+  padding: 0px 11px;
 }
 
 .c11 {
@@ -1939,7 +1939,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
   box-shadow: unset;
   min-width: 0px;
   min-height: 28px;
-  padding: 0px 16px;
+  padding: 0px 12px;
 }
 
 .c5 .RcButton-startIcon {
@@ -1967,7 +1967,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
 .c5.RcButton-outlined {
   color: #066FAC;
   border-color: #066FAC;
-  padding: 0px 15px;
+  padding: 0px 11px;
 }
 
 .c7 {
@@ -3225,7 +3225,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Radius 1`
   border-radius: 100vw;
   min-width: 0px;
   min-height: 28px;
-  padding: 0px 16px;
+  padding: 0px 12px;
 }
 
 .c0 .RcButton-startIcon {
@@ -3253,7 +3253,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Radius 1`
 .c0.RcButton-outlined {
   color: #FFFFFF;
   border-color: #FFFFFF;
-  padding: 0px 15px;
+  padding: 0px 11px;
 }
 
 .c1 {
@@ -3587,7 +3587,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Icon 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M24 17a1 1 0 011 1v4h4a1 1 0 010 2h-4.001L25 28a1 1 0 01-2 0l-.001-4H19a1 1 0 010-2h4v-4a1 1 0 011-1zm4-12a2 2 0 012 2l.001 10.71a8.05 8.05 0 00-2-1.639L28 9l-10.197 8.764a3 3 0 01-3.599.005l-.157-.126-.822-.705-8.6 7.989a.992.992 0 00.374.072h11.252c.183.71.46 1.382.819 2.001l-13.071-.001a2 2 0 01-2-2v-18a2 2 0 012-2h24zM4 9.032v13.744l7.698-7.146L4 9.032zM27 7H5a.98.98 0 00-.255.033l10.701 9.166a1 1 0 001.097.007l.107-.08 10.605-9.092a.982.982 0 00-.256-.033z"
+                  d="M27.813 4.063a2 2 0 012 2V16.79a7.665 7.665 0 00-2-1.562V8.094l-7.699 6.599.53.492a7.682 7.682 0 00-1.665 1.184l-.394-.366-.82.704-.149.12a3 3 0 01-3.599.005l-.157-.126-.821-.704-8.601 7.988a.992.992 0 00.374.072h12.05c.207.716.517 1.388.911 2H3.812a2 2 0 01-2-2v-18a2 2 0 012-2h24zM3.812 8.095v13.744l7.698-7.146-7.698-6.598zm7.699 6.597l1.529 1.31-1.529-1.31zm15.301-8.63h-22a.98.98 0 00-.255.033l10.701 9.166a1 1 0 001.097.007l.107-.08 10.605-9.092a1.026 1.026 0 00-.256-.033zm-2.624 9.876a1 1 0 011 1v4h4a1 1 0 010 2h-4.001l.001 4a1 1 0 01-2 0l-.001-4h-3.999a1 1 0 010-2h4v-4a1 1 0 011-1z"
                 />
               </svg>
               
