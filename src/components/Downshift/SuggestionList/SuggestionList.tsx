@@ -18,6 +18,8 @@ import {
   styled,
   useForkRef,
   usePrevious,
+  useRetry,
+  useSleep,
   useThemeProps,
 } from '../../../foundation';
 import ArrowDown2 from '../../../icon/ArrowDown2';
@@ -158,6 +160,33 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
       },
     });
 
+    const { sleep } = useSleep();
+
+    const { retry: scrollToIndexWithRetry } = useRetry(
+      async (location: number | IndexLocationWithAlign) => {
+        vlRef.current?.scrollToIndex(location);
+
+        const toIndex =
+          typeof location === 'number' ? location : location.index;
+
+        await sleep(0);
+        // confirm that scrollInto view
+        const toElm = listRef.current?.querySelector<HTMLElement>(
+          `[data-item-index="${toIndex}"]`,
+        );
+
+        if (toElm) {
+          return true;
+        }
+
+        return false;
+      },
+      {
+        retryTimes: 10,
+        intervalTime: 20,
+      },
+    );
+
     const {
       scrollerRef,
       scrollerRefFn,
@@ -165,9 +194,7 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
       scrollToHighlightedIndex,
     } = useHighlightScroll({
       containerHeighRef,
-      scrollToIndex: (location: number | IndexLocationWithAlign) => {
-        vlRef.current?.scrollToIndex(location);
-      },
+      scrollToIndex: scrollToIndexWithRetry,
     });
 
     const prevHighlightedIndex = usePrevious(() => highlightedIndex, true);

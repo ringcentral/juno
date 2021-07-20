@@ -18,6 +18,7 @@ import {
   useForceUpdate,
   useKeyboardMoveFocus,
   useResultRef,
+  useSleep,
 } from '../../../foundation';
 import { RcIconButtonProps } from '../../Buttons/IconButton';
 import { RcTextFieldProps } from '../../Forms';
@@ -174,6 +175,8 @@ export const useDownshift = ({
       : undefined;
 
   const forceUpdate = useForceUpdate();
+
+  const { sleep, getSleeping } = useSleep();
 
   const filteredResult = useMemo(() => {
     const getInputValueAsItem = () => {
@@ -819,7 +822,9 @@ export const useDownshift = ({
         onCompositionStart: () => {
           isCompositionRef.current = true;
         },
-        onCompositionEnd: () => {
+        onCompositionEnd: async () => {
+          // sleep for prevent tab in composition
+          await sleep(20);
           isCompositionRef.current = false;
         },
         onKeyDown: (e) => {
@@ -854,12 +859,20 @@ export const useDownshift = ({
                 }
                 break;
               case 'Tab':
+                if (e.which === 229) return;
+
+                if (getSleeping()) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  return;
+                }
+
                 // * when shift+ tab also not need autoSelect
                 if (e.shiftKey && currTagsLength > 0) {
                   stopAutoSelectRef.current = true;
                 }
 
-                // ! [Browser Bug] when in composition,
+                // ! [Browser] when in composition,
                 // ! and keydown 'Tab' that will trigger twice keydown,
                 // ! must check is that is not in composition mode
                 if (!e.shiftKey && !isCompositionRef.current) {
@@ -876,6 +889,7 @@ export const useDownshift = ({
                 }
                 break;
               case 'Enter':
+                if (e.which === 229) return;
                 if (
                   freeSolo &&
                   highlightedIndex === DEFAULT_HIGHLIGHTED_INDEX &&
