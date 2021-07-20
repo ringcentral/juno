@@ -56,7 +56,7 @@ export const RcButtonMinWidths: UnitMap<RcButtonSize> = {
 
 export const RcButtonPadding: UnitMap<RcButtonSize, number> = {
   xsmall: 2,
-  small: 3,
+  small: 4,
   medium: 3,
   large: 4,
   xlarge: 5,
