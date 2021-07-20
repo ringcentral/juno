@@ -1,3 +1,6 @@
+/* eslint-disable global-require */
+/* eslint-disable security/detect-non-literal-fs-filename */
+/* eslint-disable no-console */
 import fs from 'fs';
 import { pick } from 'lodash';
 import path from 'path';
@@ -12,16 +15,16 @@ const themePath = path.join(targetUrl, 'themes');
 console.log(`[JUNO] Json to Scss...`);
 
 const fileList = Lib.getFileTree(
-  path.join(__dirname, '../src/foundation/theme/assets'),
+  path.join(__dirname, '../src/foundation/styles/theme/assets'),
 );
 
 const darkThemePath = path.join(
   __dirname,
-  '../src/foundation/theme/ThemeSwitcherProvider/rcDark.json',
+  '../src/foundation/styles/ThemeSwitcherProvider/rcDark.json',
 );
 const highContrastThemePath = path.join(
   __dirname,
-  '../src/foundation/theme/ThemeSwitcherProvider/rcHighContrast.json',
+  '../src/foundation/styles/ThemeSwitcherProvider/rcHighContrast.json',
 );
 
 Lib.makeDirExit(themePath);
