@@ -189,8 +189,17 @@ export const useKeyboardMoveFocus = <T>({
   );
 
   return {
+    /**
+     * Get previous focusable option(include current index).
+     */
     getPrevFocusableOption,
+    /**
+     * Get next focusable option(include current index).
+     */
     getNextFocusableOption,
+    /**
+     * Use to handle keyboard event.
+     */
     onKeyFocusedIndexHandle,
   };
 };
