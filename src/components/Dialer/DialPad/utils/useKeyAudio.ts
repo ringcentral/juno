@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { logInDev, useAudio } from '../../../../foundation';
+import { logInDev } from '../../../../foundation';
 import { DIALER_PAD_PLUS, DialPadSoundMap } from './DialPadUtils';
 
 export type audioOption = {
@@ -9,18 +9,29 @@ export type audioOption = {
 };
 
 export const useKeyAudio = ({ volume, muted, sounds }: audioOption) => {
-  const audio = useAudio();
+  const audioRef = useRef(new Audio());
   const lastPlayRef = useRef<Promise<void>>();
 
   useEffect(() => {
+    const audio = audioRef.current;
     audio.volume = volume;
     audio.muted = muted;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [muted, volume]);
+
+  // * remove elm prevent memory leak issue after Chrome 92
+  useEffect(
+    () => () => {
+      if (audioRef.current) {
+        audioRef.current.remove();
+        audioRef.current = null as any;
+      }
+    },
+    [],
+  );
 
   const play = async (src: string) => {
     const lastPlay = lastPlayRef.current;
-
+    const audio = audioRef.current;
     /* https://developers.google.com/web/updates/2017/06/play-request-was-interrupted
      * prevent play request interrupted
      */
