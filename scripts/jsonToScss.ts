@@ -15,16 +15,16 @@ const themePath = path.join(targetUrl, 'themes');
 console.log(`[JUNO] Json to Scss...`);
 
 const fileList = Lib.getFileTree(
-  path.join(__dirname, '../src/foundation/styles/theme/assets'),
+  path.join(__dirname, '../src/foundation/theme/assets'),
 );
 
 const darkThemePath = path.join(
   __dirname,
-  '../src/foundation/styles/ThemeSwitcherProvider/rcDark.json',
+  '../src/foundation/theme/ThemeSwitcherProvider/rcDark.json',
 );
 const highContrastThemePath = path.join(
   __dirname,
-  '../src/foundation/styles/ThemeSwitcherProvider/rcHighContrast.json',
+  '../src/foundation/theme/ThemeSwitcherProvider/rcHighContrast.json',
 );
 
 Lib.makeDirExit(themePath);
