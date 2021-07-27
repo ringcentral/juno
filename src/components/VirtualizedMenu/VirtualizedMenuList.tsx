@@ -280,7 +280,7 @@ const _RcVirtualizedMenuList = forwardRef<any, RcVirtualizedMenuListProps>(
           typeof maxHeight === 'number' &&
           scrollElm.clientHeight === maxHeight
         ) {
-          const scrollbarSize = `${getScrollbarSize()}px`;
+          const scrollbarSize = `${getScrollbarSize(document)}px`;
           const styleDirection =
             theme.direction === 'rtl' ? 'paddingLeft' : 'paddingRight';
 
