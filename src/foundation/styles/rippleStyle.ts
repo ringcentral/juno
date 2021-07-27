@@ -2,7 +2,7 @@ import { css } from '../styled-components';
 import { RcThemedStyled } from '../theme/theme.type';
 import { palette2 } from './newPalette';
 
-export const backgroundTransition: RcThemedStyled<any, string> = ({ theme }) =>
+export const backgroundTransition: RcThemedStyled<{}, string> = ({ theme }) =>
   theme.transitions.create(['background'], {
     easing: theme.transitions.easing.easeInOut,
     duration: theme.transitions.duration.shortest,
