@@ -614,7 +614,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
   margin-right: 4px;
 }
 
-.c1 > .sc-pNWxx,
+.c1 > .sc-fujyUd,
 .c1 > .c2 {
   margin-right: 8px;
 }

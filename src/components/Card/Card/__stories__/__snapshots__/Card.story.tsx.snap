@@ -180,7 +180,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   width: 168px;
 }
 
-.c32 .sc-pNWxx {
+.c32 .sc-fujyUd {
   margin-left: 12px;
 }
 
@@ -203,11 +203,11 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   color: #121212;
 }
 
-.c32 .RcTextFieldInput-root .sc-iTVIwl {
+.c32 .RcTextFieldInput-root .sc-carGAA {
   display: none;
 }
 
-.c32 .RcTextFieldInput-focused .sc-iTVIwl {
+.c32 .RcTextFieldInput-focused .sc-carGAA {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -587,7 +587,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   margin-right: 4px;
 }
 
-.c24 > .sc-pNWxx,
+.c24 > .sc-fujyUd,
 .c24 > .c5 {
   margin-right: 8px;
 }
@@ -771,7 +771,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c32 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-iTVIwl {
+  .c32 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carGAA {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;

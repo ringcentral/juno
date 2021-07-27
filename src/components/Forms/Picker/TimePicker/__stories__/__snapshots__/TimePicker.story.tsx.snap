@@ -2,19 +2,7 @@
 
 exports[`Storyshots 🚀 Cleanup Components/Forms/TimePicker Time Picker Change Range 1`] = `
 Array [
-  .c9 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.c8 {
+  .c8 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -134,6 +122,18 @@ Array [
   opacity: 0;
 }
 
+.c9 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c2 {
   width: 168px;
 }
@@ -165,11 +165,11 @@ Array [
   color: #121212;
 }
 
-.c2 .RcTextFieldInput-root .sc-iTVIwl {
+.c2 .RcTextFieldInput-root .sc-carGAA {
   display: none;
 }
 
-.c2 .RcTextFieldInput-focused .sc-iTVIwl {
+.c2 .RcTextFieldInput-focused .sc-carGAA {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -364,7 +364,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c2 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-iTVIwl {
+  .c2 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carGAA {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -1459,11 +1459,11 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .sc-iTVIwl {
+.c0 .RcTextFieldInput-root .sc-carGAA {
   display: none;
 }
 
-.c0 .RcTextFieldInput-focused .sc-iTVIwl {
+.c0 .RcTextFieldInput-focused .sc-carGAA {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1615,7 +1615,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-iTVIwl {
+  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carGAA {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -2007,11 +2007,11 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .sc-iTVIwl {
+.c0 .RcTextFieldInput-root .sc-carGAA {
   display: none;
 }
 
-.c0 .RcTextFieldInput-focused .sc-iTVIwl {
+.c0 .RcTextFieldInput-focused .sc-carGAA {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2171,7 +2171,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-iTVIwl {
+  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carGAA {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -2564,7 +2564,7 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .sc-iTVIwl {
+.c0 .RcTextFieldInput-root .sc-carGAA {
   display: none;
 }
 
@@ -3019,19 +3019,7 @@ Array [
 }
 
 <br />,
-  .c8 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.c7 {
+  .c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -3151,6 +3139,18 @@ Array [
   opacity: 0;
 }
 
+.c8 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c9 .c3 {
   margin-left: 12px;
 }
@@ -3186,7 +3186,7 @@ Array [
   color: #121212;
 }
 
-.c1 .RcTextFieldInput-root .sc-iTVIwl {
+.c1 .RcTextFieldInput-root .sc-carGAA {
   display: none;
 }
 
@@ -3663,19 +3663,7 @@ Array [
 }
 
 <br />,
-  .c8 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.c7 {
+  .c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -3795,6 +3783,18 @@ Array [
   opacity: 0;
 }
 
+.c8 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c9 .c3 {
   margin-left: 12px;
 }
@@ -3830,7 +3830,7 @@ Array [
   color: #121212;
 }
 
-.c1 .RcTextFieldInput-root .sc-iTVIwl {
+.c1 .RcTextFieldInput-root .sc-carGAA {
   display: none;
 }
 

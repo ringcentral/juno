@@ -18,20 +18,19 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 2px solid #FFFFFF;
   background: #939393;
 }
 
-.c0 .sc-eCApnc {
+.c0 .sc-eCApGN {
   -webkit-transform: scale(0.5);
   -ms-transform: scale(0.5);
   transform: scale(0.5);
 }
 
-.c0 .sc-eCApnc svg {
+.c0 .sc-eCApGN svg {
   width: 10px;
   height: 10px;
 }
@@ -60,7 +59,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 1px solid #FFFFFF;
@@ -95,7 +93,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 2px solid #FFFFFF;
@@ -130,7 +127,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 2px solid #FFFFFF;
@@ -159,7 +155,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 3px solid #FFFFFF;
@@ -188,7 +183,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 14px;
   height: 14px;
   border: 3px solid #FFFFFF;
@@ -217,7 +211,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 18px;
   height: 18px;
   border: 3px solid #FFFFFF;
@@ -304,7 +297,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 1px solid #FFFFFF;
@@ -339,7 +331,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 2px solid #FFFFFF;
@@ -374,7 +365,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 2px solid #FFFFFF;
@@ -403,7 +393,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 3px solid #FFFFFF;
@@ -432,7 +421,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 14px;
   height: 14px;
   border: 3px solid #FFFFFF;
@@ -461,7 +449,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 18px;
   height: 18px;
   border: 3px solid #FFFFFF;
@@ -848,7 +835,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 1px solid #FFFFFF;
@@ -883,7 +869,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 2px solid #FFFFFF;
@@ -918,7 +903,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 2px solid #FFFFFF;
@@ -947,7 +931,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 3px solid #FFFFFF;
@@ -976,7 +959,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 14px;
   height: 14px;
   border: 3px solid #FFFFFF;
@@ -1005,7 +987,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 18px;
   height: 18px;
   border: 3px solid #FFFFFF;
@@ -1290,7 +1271,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 1px solid #FFFFFF;
@@ -1325,7 +1305,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 2px solid #FFFFFF;
@@ -1360,7 +1339,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 2px solid #FFFFFF;
@@ -1389,7 +1367,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 3px solid #FFFFFF;
@@ -1418,7 +1395,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 14px;
   height: 14px;
   border: 3px solid #FFFFFF;
@@ -1447,7 +1423,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 18px;
   height: 18px;
   border: 3px solid #FFFFFF;
@@ -1516,7 +1491,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 1px solid #FFFFFF;
@@ -1551,7 +1525,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 2px solid #FFFFFF;
@@ -1586,7 +1559,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 2px solid #FFFFFF;
@@ -1615,7 +1587,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 3px solid #FFFFFF;
@@ -1644,7 +1615,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 14px;
   height: 14px;
   border: 3px solid #FFFFFF;
@@ -1673,7 +1643,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 18px;
   height: 18px;
   border: 3px solid #FFFFFF;
@@ -1766,7 +1735,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 1px solid #FFFFFF;
@@ -1801,7 +1769,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 2px solid #FFFFFF;
@@ -1836,7 +1803,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 2px solid #FFFFFF;
@@ -1865,7 +1831,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 3px solid #FFFFFF;
@@ -1894,7 +1859,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 14px;
   height: 14px;
   border: 3px solid #FFFFFF;
@@ -1923,7 +1887,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 18px;
   height: 18px;
   border: 3px solid #FFFFFF;
@@ -2022,7 +1985,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 1px solid #FFFFFF;
@@ -2057,7 +2019,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 2px solid #FFFFFF;
@@ -2092,7 +2053,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 2px solid #FFFFFF;
@@ -2121,7 +2081,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 3px solid #FFFFFF;
@@ -2150,7 +2109,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 14px;
   height: 14px;
   border: 3px solid #FFFFFF;
@@ -2179,7 +2137,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 18px;
   height: 18px;
   border: 3px solid #FFFFFF;
@@ -2248,7 +2205,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 1px solid #FFFFFF;
@@ -2283,7 +2239,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 2px solid #FFFFFF;
@@ -2318,7 +2273,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 2px solid #FFFFFF;
@@ -2347,7 +2301,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 3px solid #FFFFFF;
@@ -2376,7 +2329,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 14px;
   height: 14px;
   border: 3px solid #FFFFFF;
@@ -2405,7 +2357,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 18px;
   height: 18px;
   border: 3px solid #FFFFFF;
@@ -2474,7 +2425,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 1px solid #FFFFFF;
@@ -2509,7 +2459,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 2px solid #FFFFFF;
@@ -2544,7 +2493,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 2px solid #FFFFFF;
@@ -2573,7 +2521,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 3px solid #FFFFFF;
@@ -2602,7 +2549,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 14px;
   height: 14px;
   border: 3px solid #FFFFFF;
@@ -2631,7 +2577,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 18px;
   height: 18px;
   border: 3px solid #FFFFFF;
@@ -2700,7 +2645,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 1px solid #FFFFFF;
@@ -2735,7 +2679,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 2px solid #FFFFFF;
@@ -2770,7 +2713,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 2px solid #FFFFFF;
@@ -2799,7 +2741,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 3px solid #FFFFFF;
@@ -2828,7 +2769,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 14px;
   height: 14px;
   border: 3px solid #FFFFFF;
@@ -2857,7 +2797,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 18px;
   height: 18px;
   border: 3px solid #FFFFFF;
@@ -2926,7 +2865,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 1px solid #FFFFFF;
@@ -2961,7 +2899,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 2px solid #FFFFFF;
@@ -2996,7 +2933,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 2px solid #FFFFFF;
@@ -3025,7 +2961,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 3px solid #FFFFFF;
@@ -3054,7 +2989,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 14px;
   height: 14px;
   border: 3px solid #FFFFFF;
@@ -3083,7 +3017,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 18px;
   height: 18px;
   border: 3px solid #FFFFFF;
@@ -3152,7 +3085,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 1px solid #FFFFFF;
@@ -3187,7 +3119,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
   border: 2px solid #FFFFFF;
@@ -3222,7 +3153,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 2px solid #FFFFFF;
@@ -3251,7 +3181,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 10px;
   height: 10px;
   border: 3px solid #FFFFFF;
@@ -3280,7 +3209,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 14px;
   height: 14px;
   border: 3px solid #FFFFFF;
@@ -3309,7 +3237,6 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 18px;
   height: 18px;
   border: 3px solid #FFFFFF;

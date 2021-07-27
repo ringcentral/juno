@@ -1,18 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
-.c4 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .c10 {
   width: 1em;
   height: 1em;
@@ -120,6 +108,18 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
   opacity: 0;
 }
 
+.c4 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c7 {
   padding-top: 27.59%;
 }
@@ -185,7 +185,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
   color: #121212;
 }
 
-.c1 .RcTextFieldInput-root .sc-iTVIwl {
+.c1 .RcTextFieldInput-root .sc-carGAA {
   display: none;
 }
 
@@ -868,18 +868,6 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
 `;
 
 exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
-.c21 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .c9 {
   width: 1em;
   height: 1em;
@@ -1291,6 +1279,18 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
   opacity: 0;
 }
 
+.c21 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c23 {
   padding-top: 27.59%;
 }
@@ -1356,7 +1356,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
   color: #121212;
 }
 
-.c11 .RcTextFieldInput-root .sc-iTVIwl {
+.c11 .RcTextFieldInput-root .sc-carGAA {
   display: none;
 }
 
@@ -1495,11 +1495,11 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
   color: #121212;
 }
 
-.c16 .RcTextFieldInput-root .sc-iTVIwl {
+.c16 .RcTextFieldInput-root .sc-carGAA {
   display: none;
 }
 
-.c16 .RcTextFieldInput-focused .sc-iTVIwl {
+.c16 .RcTextFieldInput-focused .sc-carGAA {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2020,7 +2020,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c16 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-iTVIwl {
+  .c16 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carGAA {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -2813,18 +2813,6 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 `;
 
 exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
-.c14 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .c10 {
   width: 1em;
   height: 1em;
@@ -3035,6 +3023,18 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
   opacity: 0;
 }
 
+.c14 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c16 {
   padding-top: 27.59%;
 }
@@ -3100,7 +3100,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
   color: #121212;
 }
 
-.c11 .RcTextFieldInput-root .sc-iTVIwl {
+.c11 .RcTextFieldInput-root .sc-carGAA {
   display: none;
 }
 

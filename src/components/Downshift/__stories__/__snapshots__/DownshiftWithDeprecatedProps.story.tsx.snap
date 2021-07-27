@@ -1,18 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots 🖤 Deprecated Components/Downshift (New with deprecated props) Downshift (New with deprecated props) 1`] = `
-.c12 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .c11 {
   width: 1em;
   height: 1em;
@@ -192,6 +180,18 @@ exports[`Storyshots 🖤 Deprecated Components/Downshift (New with deprecated pr
   height: auto;
 }
 
+.c12 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c2 .c7 {
   margin-left: 12px;
 }
@@ -219,7 +219,7 @@ exports[`Storyshots 🖤 Deprecated Components/Downshift (New with deprecated pr
   color: #121212;
 }
 
-.c2 .RcTextFieldInput-root .sc-iTVIwl {
+.c2 .RcTextFieldInput-root .sc-carGAA {
   display: none;
 }
 
@@ -353,7 +353,7 @@ exports[`Storyshots 🖤 Deprecated Components/Downshift (New with deprecated pr
   min-width: 30px;
 }
 
-.c3 .RcTextFieldInput-focused .sc-iTVIwl {
+.c3 .RcTextFieldInput-focused .sc-carGAA {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -426,7 +426,7 @@ exports[`Storyshots 🖤 Deprecated Components/Downshift (New with deprecated pr
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c3 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-iTVIwl {
+  .c3 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carGAA {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
