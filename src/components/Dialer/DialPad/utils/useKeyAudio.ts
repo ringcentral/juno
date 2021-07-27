@@ -22,7 +22,7 @@ export const useKeyAudio = ({ volume, muted, sounds }: audioOption) => {
   useEffect(
     () => () => {
       if (audioRef.current) {
-        audioRef.current.remove();
+        audioRef.current.srcObject = null;
         audioRef.current = null as any;
       }
     },
