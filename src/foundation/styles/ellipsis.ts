@@ -1,9 +1,6 @@
 import { css } from '../styled-components';
 
 /**
- * ellipsis style
- *
- * @returns
  * ```css
  * white-space: nowrap;
  * overflow: hidden;

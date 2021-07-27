@@ -1,6 +1,5 @@
-import { renderHook } from '@testing-library/react-hooks';
-
 import { EachRun } from '../../../../../tests';
+import { renderHooks } from '../../../../../tests/utils/renderHooks';
 import { useId } from '../useId';
 
 // * useId() => 'rc-juno-id-xxxx'
@@ -24,7 +23,7 @@ describe('useId()', () => {
       Scenario: useId correct result
       Given: create useId with $args
       Then: result will be $result ${(args, context) => {
-        const { result: hookRef } = renderHook(() => useId(...args.args));
+        const hookRef = renderHooks(() => useId(...args.args));
         expect(hookRef.current).toEqual(args.result);
       }}
     `,
