@@ -22,7 +22,6 @@ import { RcIconButton, RcButton, RcIconButtonProps } from '../../Buttons';
 import { RcCardActions } from '../CardActions';
 import { RcCardMedia } from '../CardMedia';
 import { RcGridProps, RcGrid } from '../../Grid';
-import { RcResponsive } from '../../Responsive';
 
 export default {
   title: '🚀 Cleanup Components/Cards/CardExample',
@@ -321,16 +320,14 @@ export const CardResponsiveExample: Story<RcCardProps> = () => {
   const noOfCards = 6;
 
   return (
-    <RcResponsive>
-      <RcGridContainer container spacing={2}>
-        {Array(noOfCards)
-          .fill(null)
-          .map(() => (
-            <RcGrid item xs={12} sm={6} md={4} lg={3} xl={2}>
-              <CardExample />
-            </RcGrid>
-          ))}
-      </RcGridContainer>
-    </RcResponsive>
+    <RcGridContainer container spacing={2}>
+      {Array(noOfCards)
+        .fill(null)
+        .map(() => (
+          <RcGrid item xs={12} sm={6} md={4} lg={3} xl={2}>
+            <CardExample />
+          </RcGrid>
+        ))}
+    </RcGridContainer>
   );
 };

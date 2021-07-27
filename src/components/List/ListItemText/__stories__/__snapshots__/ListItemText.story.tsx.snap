@@ -17,17 +17,12 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemText ListItemText 1`] 
   cursor: default;
 }
 
-.c0.RcListItem-focusVisible {
-  background-color: rgba(102,102,102,0.16);
-}
-
-.c0.RcListItem-selected,
-.c0.RcListItem-selected:hover {
-  background-color: rgba(102,102,102,0.12);
-}
-
 .c0 .RcListItemTouchRipple-rippleVisible {
   color: #666666;
+}
+
+.c0.RcListItem-focusVisible {
+  background-color: rgba(102,102,102,0.1);
 }
 
 .c0.RcListItem-gutters {
@@ -40,11 +35,11 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemText ListItemText 1`] 
   padding-bottom: 4px;
 }
 
-.c0 .sc-oeezt {
+.c0 .sc-oefIU {
   margin-right: 0;
 }
 
-.c0 .sc-oeezt > .sc-fXgAZx {
+.c0 .sc-oefIU > .sc-fXgAFM {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -90,7 +85,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemText ListItemText 1`] 
 
 @media (hover:hover) and (pointer:fine) {
   .c0:hover {
-    background-color: rgba(102,102,102,0.08);
+    background-color: rgba(102,102,102,0.05);
   }
 }
 

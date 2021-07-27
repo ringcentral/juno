@@ -381,11 +381,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
   padding: 0 68px 0 0;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE {
+.c2 .RcDownshiftInput-root .sc-iBzFoy {
   margin: 2px;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE .RcChip-deleteIcon {
+.c2 .RcDownshiftInput-root .sc-iBzFoy .RcChip-deleteIcon {
   margin-left: -6px;
 }
 
@@ -973,11 +973,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
   padding: 0 68px 0 0;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE {
+.c2 .RcDownshiftInput-root .sc-iBzFoy {
   margin: 2px;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE .RcChip-deleteIcon {
+.c2 .RcDownshiftInput-root .sc-iBzFoy .RcChip-deleteIcon {
   margin-left: -6px;
 }
 
@@ -1572,11 +1572,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
   padding: 0 68px 0 0;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE {
+.c2 .RcDownshiftInput-root .sc-iBzFoy {
   margin: 2px;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE .RcChip-deleteIcon {
+.c2 .RcDownshiftInput-root .sc-iBzFoy .RcChip-deleteIcon {
   margin-left: -6px;
 }
 
@@ -1918,7 +1918,7 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .sc-laZMyp {
+.c0 .RcTextFieldInput-root .sc-iTVIwl {
   display: none;
 }
 
@@ -2048,11 +2048,11 @@ Array [
   padding: 0 36px 0 0;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE {
+.c2 .RcDownshiftInput-root .sc-iBzFoy {
   margin: 2px;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE .RcChip-deleteIcon {
+.c2 .RcDownshiftInput-root .sc-iBzFoy .RcChip-deleteIcon {
   margin-left: -6px;
 }
 
@@ -2408,7 +2408,7 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .sc-laZMyp {
+.c0 .RcTextFieldInput-root .sc-iTVIwl {
   display: none;
 }
 
@@ -2538,11 +2538,11 @@ Array [
   padding: 0 36px 0 0;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE {
+.c2 .RcDownshiftInput-root .sc-iBzFoy {
   margin: 2px;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE .RcChip-deleteIcon {
+.c2 .RcDownshiftInput-root .sc-iBzFoy .RcChip-deleteIcon {
   margin-left: -6px;
 }
 
@@ -6403,11 +6403,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
   padding: 0 68px 0 0;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE {
+.c2 .RcDownshiftInput-root .sc-iBzFoy {
   margin: 2px;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE .RcChip-deleteIcon {
+.c2 .RcDownshiftInput-root .sc-iBzFoy .RcChip-deleteIcon {
   margin-left: -6px;
 }
 
@@ -6982,11 +6982,11 @@ Array [
   padding: 0 68px 0 0;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE {
+.c2 .RcDownshiftInput-root .sc-iBzFoy {
   margin: 2px;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE .RcChip-deleteIcon {
+.c2 .RcDownshiftInput-root .sc-iBzFoy .RcChip-deleteIcon {
   margin-left: -6px;
 }
 
@@ -7597,11 +7597,11 @@ Array [
   padding: 0 68px 0 0;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE {
+.c2 .RcDownshiftInput-root .sc-iBzFoy {
   margin: 2px;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE .RcChip-deleteIcon {
+.c2 .RcDownshiftInput-root .sc-iBzFoy .RcChip-deleteIcon {
   margin-left: -6px;
 }
 
@@ -8181,11 +8181,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
   padding: 0 68px 0 0;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE {
+.c2 .RcDownshiftInput-root .sc-iBzFoy {
   margin: 2px;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE .RcChip-deleteIcon {
+.c2 .RcDownshiftInput-root .sc-iBzFoy .RcChip-deleteIcon {
   margin-left: -6px;
 }
 
@@ -8769,11 +8769,11 @@ Array [
   padding: 0 68px 0 0;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE {
+.c2 .RcDownshiftInput-root .sc-iBzFoy {
   margin: 2px;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE .RcChip-deleteIcon {
+.c2 .RcDownshiftInput-root .sc-iBzFoy .RcChip-deleteIcon {
   margin-left: -6px;
 }
 
@@ -9348,11 +9348,11 @@ Array [
   padding: 0 68px 0 0;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE {
+.c2 .RcDownshiftInput-root .sc-iBzFoy {
   margin: 2px;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE .RcChip-deleteIcon {
+.c2 .RcDownshiftInput-root .sc-iBzFoy .RcChip-deleteIcon {
   margin-left: -6px;
 }
 
@@ -9983,11 +9983,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
   padding: 0 68px 0 0;
 }
 
-.c3 .RcDownshiftInput-root .sc-iNiQeE {
+.c3 .RcDownshiftInput-root .sc-iBzFoy {
   margin: 2px;
 }
 
-.c3 .RcDownshiftInput-root .sc-iNiQeE .RcChip-deleteIcon {
+.c3 .RcDownshiftInput-root .sc-iBzFoy .RcChip-deleteIcon {
   margin-left: -6px;
 }
 
@@ -10566,11 +10566,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
   padding: 0 68px 0 0;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE {
+.c2 .RcDownshiftInput-root .sc-iBzFoy {
   margin: 2px;
 }
 
-.c2 .RcDownshiftInput-root .sc-iNiQeE .RcChip-deleteIcon {
+.c2 .RcDownshiftInput-root .sc-iBzFoy .RcChip-deleteIcon {
   margin-left: -6px;
 }
 

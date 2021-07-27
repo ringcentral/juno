@@ -123,17 +123,12 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
   cursor: default;
 }
 
-.c0.RcListItem-focusVisible {
-  background-color: rgba(102,102,102,0.16);
-}
-
-.c0.RcListItem-selected,
-.c0.RcListItem-selected:hover {
-  background-color: rgba(102,102,102,0.12);
-}
-
 .c0 .RcListItemTouchRipple-rippleVisible {
   color: #666666;
+}
+
+.c0.RcListItem-focusVisible {
+  background-color: rgba(102,102,102,0.1);
 }
 
 .c0.RcListItem-gutters {
@@ -146,11 +141,11 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
   padding-bottom: 4px;
 }
 
-.c0 .sc-oeezt {
+.c0 .sc-oefIU {
   margin-right: 0;
 }
 
-.c0 .sc-oeezt > .sc-fXgAZx {
+.c0 .sc-oefIU > .sc-fXgAFM {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -175,13 +170,13 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
   color: #666666;
 }
 
-.c2 .sc-oeezt {
+.c2 .sc-oefIU {
   margin-right: -8px;
 }
 
-.c2 .sc-oeezt > .sc-biJonm,
-.c2 .sc-oeezt > .sc-hhIiOg,
-.c2 .sc-oeezt > .sc-fXgAZx {
+.c2 .sc-oefIU > .sc-biJoGX,
+.c2 .sc-oefIU > .sc-hhIhEF,
+.c2 .sc-oefIU > .sc-fXgAFM {
   margin-right: 0;
 }
 
@@ -250,7 +245,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
 
 @media (hover:hover) and (pointer:fine) {
   .c0:hover {
-    background-color: rgba(102,102,102,0.08);
+    background-color: rgba(102,102,102,0.05);
   }
 }
 
@@ -563,17 +558,12 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
   cursor: default;
 }
 
-.c0.RcListItem-focusVisible {
-  background-color: rgba(102,102,102,0.16);
-}
-
-.c0.RcListItem-selected,
-.c0.RcListItem-selected:hover {
-  background-color: rgba(102,102,102,0.12);
-}
-
 .c0 .RcListItemTouchRipple-rippleVisible {
   color: #666666;
+}
+
+.c0.RcListItem-focusVisible {
+  background-color: rgba(102,102,102,0.1);
 }
 
 .c0.RcListItem-gutters {
@@ -586,11 +576,11 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
   padding-bottom: 4px;
 }
 
-.c0 .sc-oeezt {
+.c0 .sc-oefIU {
   margin-right: 0;
 }
 
-.c0 .sc-oeezt > .sc-fXgAZx {
+.c0 .sc-oefIU > .sc-fXgAFM {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -614,17 +604,17 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
   min-width: unset;
 }
 
-.c1 > .sc-biJonm,
-.c1 > .sc-hhIiOg {
+.c1 > .sc-biJoGX,
+.c1 > .sc-hhIhEF {
   margin-right: 4px;
 }
 
-.c1 > .sc-fXgAZx {
+.c1 > .sc-fXgAFM {
   margin-left: 4px;
   margin-right: 4px;
 }
 
-.c1 > .sc-fujyAs,
+.c1 > .sc-pNWxx,
 .c1 > .c2 {
   margin-right: 8px;
 }
@@ -670,7 +660,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
 
 @media (hover:hover) and (pointer:fine) {
   .c0:hover {
-    background-color: rgba(102,102,102,0.08);
+    background-color: rgba(102,102,102,0.05);
   }
 }
 

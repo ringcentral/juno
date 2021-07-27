@@ -75,17 +75,12 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
   cursor: default;
 }
 
-.c0.RcListItem-focusVisible {
-  background-color: rgba(102,102,102,0.16);
-}
-
-.c0.RcListItem-selected,
-.c0.RcListItem-selected:hover {
-  background-color: rgba(102,102,102,0.12);
-}
-
 .c0 .RcListItemTouchRipple-rippleVisible {
   color: #666666;
+}
+
+.c0.RcListItem-focusVisible {
+  background-color: rgba(102,102,102,0.1);
 }
 
 .c0.RcListItem-gutters {
@@ -102,7 +97,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
   margin-right: 0;
 }
 
-.c0 .c3 > .sc-fXgAZx {
+.c0 .c3 > .sc-fXgAFM {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -131,9 +126,9 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
   margin-right: -8px;
 }
 
-.c2 .c3 > .sc-biJonm,
+.c2 .c3 > .sc-biJoGX,
 .c2 .c3 > .c5,
-.c2 .c3 > .sc-fXgAZx {
+.c2 .c3 > .sc-fXgAFM {
   margin-right: 0;
 }
 
@@ -193,7 +188,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
 
 @media (hover:hover) and (pointer:fine) {
   .c0:hover {
-    background-color: rgba(102,102,102,0.08);
+    background-color: rgba(102,102,102,0.05);
   }
 }
 
@@ -234,7 +229,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-218 MuiCheckbox-root RcCheckbox-root MuiCheckbox-indeterminate c5 c6"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-175 MuiCheckbox-root RcCheckbox-root MuiCheckbox-indeterminate c5 c6"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -252,7 +247,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-221"
+            className="PrivateSwitchBase-input-178"
             data-indeterminate={true}
             onChange={[Function]}
             type="checkbox"

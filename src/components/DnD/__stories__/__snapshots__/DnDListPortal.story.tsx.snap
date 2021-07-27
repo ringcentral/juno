@@ -17,17 +17,12 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list/Multi
   cursor: default;
 }
 
-.c2.RcListItem-focusVisible {
-  background-color: rgba(102,102,102,0.16);
-}
-
-.c2.RcListItem-selected,
-.c2.RcListItem-selected:hover {
-  background-color: rgba(102,102,102,0.12);
-}
-
 .c2 .RcListItemTouchRipple-rippleVisible {
   color: #666666;
+}
+
+.c2.RcListItem-focusVisible {
+  background-color: rgba(102,102,102,0.1);
 }
 
 .c2.RcListItem-gutters {
@@ -40,11 +35,11 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list/Multi
   padding-bottom: 4px;
 }
 
-.c2 .sc-oeezt {
+.c2 .sc-oefIU {
   margin-right: 0;
 }
 
-.c2 .sc-oeezt > .sc-fXgAZx {
+.c2 .sc-oefIU > .sc-fXgAFM {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -84,7 +79,7 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list/Multi
 
 @media (hover:hover) and (pointer:fine) {
   .c2:hover {
-    background-color: rgba(102,102,102,0.08);
+    background-color: rgba(102,102,102,0.05);
   }
 }
 

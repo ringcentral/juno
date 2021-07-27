@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots 💅 Style system/utils/GlobalScrollBarStyle GlobalScrollBarStyle 1`] = `
+exports[`Storyshots 🔧 Foundation/GlobalScrollBarStyle GlobalScrollBarStyle 1`] = `
 .c0 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -10,7 +10,7 @@ exports[`Storyshots 💅 Style system/utils/GlobalScrollBarStyle GlobalScrollBar
 }
 
 <div
-  className="MuiBox-root MuiBox-root-308"
+  className="MuiBox-root MuiBox-root-295"
 >
   <h5
     className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
