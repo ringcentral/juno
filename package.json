@@ -77,7 +77,6 @@
     "@material-ui/styles": "^4.11.3",
     "@types/lodash": "^4.14.169",
     "@types/react-beautiful-dnd": "^13.0.0",
-    "@types/smoothscroll-polyfill": "^0.3.1",
     "@types/styled-components": "4.0.3",
     "clsx": "^1.0.4",
     "deepmerge": "^4.0.0",
