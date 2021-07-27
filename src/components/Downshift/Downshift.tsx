@@ -27,7 +27,7 @@ import ArrowUp from '../../icon/ArrowUp';
 import { RcIconButtonProps } from '../Buttons/IconButton';
 import { RcChip } from '../Chip';
 import { RcTextFieldProps } from '../Forms/TextField';
-import { ClearIconButton } from '../Forms/TextField/TextField/styles/ClearIconButton';
+import { ClearIconButton } from '../Forms/TextField/styles/ClearIconButton';
 import { RcPopperProps } from '../Popper';
 import { WithTooltipProps } from '../Tooltip';
 import { RcVisuallyHidden } from '../VisuallyHidden';

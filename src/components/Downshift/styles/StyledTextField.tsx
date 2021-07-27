@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react';
 
 import { styled } from '../../../foundation';
 import { RcTextField, RcTextFieldProps } from '../../Forms/TextField';
-import { clearBtnInactiveStyle } from '../../Forms/TextField/TextField/styles';
+import { clearBtnInactiveStyle } from '../../Forms/TextField/styles';
 import { RcDownshiftProps } from '../Downshift';
 import { RcDownshiftInputClasses } from '../utils';
 
