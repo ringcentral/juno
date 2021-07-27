@@ -1,6 +1,6 @@
 {
   "name": "@ringcentral/juno",
-  "version": "1.9.1",
+  "version": "1.10.0",
   "license": "MIT",
   "author": "RingCentral",
   "main": "./index.js",
