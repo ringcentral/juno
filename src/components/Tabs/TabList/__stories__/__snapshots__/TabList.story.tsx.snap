@@ -81,7 +81,7 @@ Array [
               Tab 0
             </span>
             <span
-              className="PrivateTabIndicator-root-187 PrivateTabIndicator-colorPrimary-188 MuiTabs-indicator RcTabs-indicator"
+              className="PrivateTabIndicator-root-191 PrivateTabIndicator-colorPrimary-192 MuiTabs-indicator RcTabs-indicator"
               style={Object {}}
             />
           </button>
