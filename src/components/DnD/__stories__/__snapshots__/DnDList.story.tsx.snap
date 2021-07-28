@@ -17,12 +17,17 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list Multi
   cursor: default;
 }
 
-.c1 .RcListItemTouchRipple-rippleVisible {
-  color: #666666;
+.c1.RcListItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
 }
 
-.c1.RcListItem-focusVisible {
-  background-color: rgba(102,102,102,0.1);
+.c1.RcListItem-selected,
+.c1.RcListItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c1 .RcListItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c1.RcListItem-gutters {
@@ -71,7 +76,7 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list Multi
 
 @media (hover:hover) and (pointer:fine) {
   .c1:hover {
-    background-color: rgba(102,102,102,0.05);
+    background-color: rgba(102,102,102,0.08);
   }
 }
 

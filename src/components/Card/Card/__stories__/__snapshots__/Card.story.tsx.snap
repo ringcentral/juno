@@ -531,12 +531,17 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   cursor: default;
 }
 
-.c23 .RcListItemTouchRipple-rippleVisible {
-  color: #666666;
+.c23.RcListItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
 }
 
-.c23.RcListItem-focusVisible {
-  background-color: rgba(102,102,102,0.1);
+.c23.RcListItem-selected,
+.c23.RcListItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c23 .RcListItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c23.RcListItem-gutters {
@@ -808,7 +813,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
 
 @media (hover:hover) and (pointer:fine) {
   .c23:hover {
-    background-color: rgba(102,102,102,0.05);
+    background-color: rgba(102,102,102,0.08);
   }
 }
 

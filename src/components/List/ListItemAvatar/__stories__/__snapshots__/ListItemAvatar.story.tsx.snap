@@ -67,12 +67,17 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemAvatar ListItemAvatar 
   cursor: default;
 }
 
-.c0 .RcListItemTouchRipple-rippleVisible {
-  color: #666666;
+.c0.RcListItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
 }
 
-.c0.RcListItem-focusVisible {
-  background-color: rgba(102,102,102,0.1);
+.c0.RcListItem-selected,
+.c0.RcListItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcListItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0.RcListItem-gutters {
@@ -152,7 +157,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemAvatar ListItemAvatar 
 
 @media (hover:hover) and (pointer:fine) {
   .c0:hover {
-    background-color: rgba(102,102,102,0.05);
+    background-color: rgba(102,102,102,0.08);
   }
 }
 

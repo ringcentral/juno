@@ -884,12 +884,17 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   cursor: pointer;
 }
 
-.c15 .RcListItemTouchRipple-rippleVisible {
-  color: #666666;
+.c15.RcListItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
 }
 
-.c15.RcListItem-focusVisible {
-  background-color: rgba(102,102,102,0.1);
+.c15.RcListItem-selected,
+.c15.RcListItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c15 .RcListItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c15.RcListItem-gutters {
@@ -1059,7 +1064,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 
 @media (hover:hover) and (pointer:fine) {
   .c15:hover {
-    background-color: rgba(102,102,102,0.05);
+    background-color: rgba(102,102,102,0.08);
   }
 }
 

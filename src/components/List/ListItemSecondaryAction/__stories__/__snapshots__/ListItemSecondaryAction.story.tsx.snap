@@ -75,12 +75,17 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
   cursor: default;
 }
 
-.c0 .RcListItemTouchRipple-rippleVisible {
-  color: #666666;
+.c0.RcListItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
 }
 
-.c0.RcListItem-focusVisible {
-  background-color: rgba(102,102,102,0.1);
+.c0.RcListItem-selected,
+.c0.RcListItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcListItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0.RcListItem-gutters {
@@ -188,7 +193,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
 
 @media (hover:hover) and (pointer:fine) {
   .c0:hover {
-    background-color: rgba(102,102,102,0.05);
+    background-color: rgba(102,102,102,0.08);
   }
 }
 
@@ -229,7 +234,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-179 MuiCheckbox-root RcCheckbox-root MuiCheckbox-indeterminate c5 c6"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-175 MuiCheckbox-root RcCheckbox-root MuiCheckbox-indeterminate c5 c6"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -247,7 +252,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-182"
+            className="PrivateSwitchBase-input-178"
             data-indeterminate={true}
             onChange={[Function]}
             type="checkbox"
