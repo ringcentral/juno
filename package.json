@@ -79,7 +79,6 @@
     "@types/react-beautiful-dnd": "^13.0.0",
     "@types/styled-components": "4.0.3",
     "clsx": "^1.0.4",
-    "deepmerge": "^4.0.0",
     "focus-visible": "^5.1.0",
     "lodash": "^4.17.21",
     "react-beautiful-dnd": "^13.0.0",

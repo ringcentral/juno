@@ -1,7 +1,7 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import deepmerge from 'deepmerge';
 
 import { DeepPartial } from '../typings';
+import { deepmerge } from '../utils';
 import breakpoints from './assets/breakpoints.json';
 import opacity from './assets/opacity.json';
 import paletteDark from './assets/palette.dark.json';
