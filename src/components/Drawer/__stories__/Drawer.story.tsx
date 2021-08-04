@@ -338,7 +338,7 @@ export const DrawerAndModalSwitchInDevice: Story<DrawerProps> = ({
           </RcMenuItem>
           <ListTitle>Panelists</ListTitle>
           {items.map((x) => (
-            <RcMenuItem avatar={<RcAvatar src={avatar} size="small" />}>
+            <RcMenuItem key={x} avatar={<RcAvatar src={avatar} size="small" />}>
               <RcListItemText primary={`User Name ${x}`} />
             </RcMenuItem>
           ))}
