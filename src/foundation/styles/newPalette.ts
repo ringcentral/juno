@@ -8,19 +8,50 @@ type Pl = RcPalette;
 
 type PaletteReturnType = ({ theme }: RcThemeProps) => any;
 
+/**
+ * This is the new version palette, support five layer types palette color get,
+ * ! Not support opacity, please use `setOpacity` to do that,
+ * ! like `setOpacity(palette2('neutral', 'b05'), '80')`
+ * @param obj main color
+ * @param prop1 sub
+ */
 function palette2<T extends keyof Pl>(obj: T): PaletteReturnType;
 
+/**
+ * This is the new version palette, support five layer types palette color get,
+ * ! Not support opacity, please use `setOpacity` to do that,
+ * ! like `setOpacity(palette2('neutral', 'b05'), '80')`
+ * @param obj main color
+ * @param prop1 sub
+ */
 function palette2<T extends keyof Pl, P1 extends keyof NU<Pl[T]>>(
   obj: T,
   prop1: P1,
 ): PaletteReturnType;
 
+/**
+ * This is the new version palette, support five layer types palette color get,
+ * ! Not support opacity, please use `setOpacity` to do that,
+ * ! like `setOpacity(palette2('neutral', 'b05'), '80')`
+ * @param obj main color
+ * @param prop1 sub
+ * @param prop2 sub
+ */
 function palette2<
   T extends keyof Pl,
   P1 extends keyof NU<Pl[T]>,
   P2 extends keyof NU<NU<Pl[T]>[P1]>
 >(obj: T, prop1: P1, prop2: P2): PaletteReturnType;
 
+/**
+ * This is the new version palette, support five layer types palette color get,
+ * ! Not support opacity, please use `setOpacity` to do that,
+ * ! like `setOpacity(palette2('neutral', 'b05'), '80')`
+ * @param obj main color
+ * @param prop1 sub
+ * @param prop2 sub
+ * @param prop3 sub
+ */
 function palette2<
   T extends keyof Pl,
   P1 extends keyof NU<Pl[T]>,
@@ -28,6 +59,16 @@ function palette2<
   P3 extends keyof NU<NU<NU<Pl[T]>[P1]>[P2]>
 >(obj: T, prop1: P1, prop2: P2, prop3: P3): PaletteReturnType;
 
+/**
+ * This is the new version palette, support five layer types palette color get,
+ * ! Not support opacity, please use `setOpacity` to do that,
+ * ! like `setOpacity(palette2('neutral', 'b05'), '80')`
+ * @param obj main color
+ * @param prop1 sub
+ * @param prop2 sub
+ * @param prop3 sub
+ * @param prop4 sub
+ */
 function palette2<
   T extends keyof Pl,
   P1 extends keyof NU<Pl[T]>,

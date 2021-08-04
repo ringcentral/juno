@@ -7,8 +7,21 @@ import { RcPaletteKeys } from '../theme/palette.type';
 import { RcThemedStyled, RcThemeProps } from '../theme/theme.type';
 import { getParsePaletteColor, palette2 } from './newPalette';
 
+/**
+ * get darken coefficient of color
+ *
+ * @example
+ *
+ * ```tsx
+ * const Darken = styled(Basic)`
+ *   background-color: ${darken(palette2('interactive', 'b02'), 0.5)};
+ * `;
+ * ```
+ */
 export function darken(
+  /** color input */
   colorInput: ReturnType<typeof palette2>,
+  /** color coefficient to apply */
   coefficient: number,
 ) {
   return (props: RcThemeProps): string => {
@@ -19,6 +32,17 @@ export function darken(
   };
 }
 
+/**
+ * get lighten coefficient of color
+ *
+ * @example
+ *
+ * ```tsx
+ * const Lighten = styled(Basic)`
+ *   background-color: ${lighten(palette2('interactive', 'b02'), 0.5)};
+ * `;
+ * ```
+ */
 export function lighten(
   colorInput: ReturnType<typeof palette2> | string,
   coefficient: number,
