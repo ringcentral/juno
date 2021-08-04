@@ -5,7 +5,7 @@ import { RcComponentsProps } from './theme.type';
 /**
  * use combine props from default theme props
  *
- * @see {@link https://ringcentral.github.io/juno/?path=/story/api-reference-hooks-usethemeprops--page 🔧-foundation-hooks-usethemeprops--use-theme-props-example}
+ * @see stories {@link https://ringcentral.github.io/juno/?path=/story/api-reference-hooks-usethemeprops--page 🔧-foundation-hooks-usethemeprops--use-theme-props-example}
  */
 export function useThemeProps<T, K extends keyof RcComponentsProps>({
   props,
