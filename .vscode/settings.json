@@ -42,7 +42,6 @@
     "bgcolor",
     "bpmr",
     "clsx",
-    "commitizen",
     "compositionend",
     "compositionstart",
     "csstype",
@@ -86,7 +85,7 @@
   ],
   "ringcentral-juno.defaultTheme": "default",
   "ringcentral-juno.themeMap": {
-    "dark": "./src/foundation/theme/ThemeSwitcherProvider/rcDark.json",
-    "highContrast": "./src/foundation/theme/ThemeSwitcherProvider/rcHighContrast.json"
+    "dark": "./src/foundation/styles/ThemeSwitcherProvider/rcDark.json",
+    "highContrast": "./src/foundation/styles/ThemeSwitcherProvider/rcHighContrast.json"
   }
 }

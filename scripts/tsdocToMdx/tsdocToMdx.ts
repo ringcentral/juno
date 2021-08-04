@@ -6,7 +6,6 @@ import os from 'os';
 import path from 'path';
 
 import { Lib } from '../utils/lib';
-// @ts-ignore
 import prettier from 'prettier';
 
 console.log('[Stories Doc]: start create docs');
