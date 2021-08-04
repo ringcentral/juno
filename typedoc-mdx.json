@@ -75,10 +75,6 @@
     "name": "API Reference/Styles/zIndex",
     "title": "zIndex"
   },
-  "src/foundation/hooks/useAudio/useAudio.ts": {
-    "name": "API Reference/Hooks/useAudio",
-    "title": "useAudio"
-  },
   "src/foundation/hooks/useA11yKeyEvent/useA11yKeyEvent.ts": {
     "name": "API Reference/Hooks/useA11yKeyEvent",
     "title": "useA11yKeyEvent"
