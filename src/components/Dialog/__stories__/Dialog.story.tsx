@@ -118,7 +118,7 @@ const ResponsiveDialogExample = ({ ...args }) => {
   const matchResult = useResponsiveMatch();
 
   console.log(bp, matchResult);
-  const { ltSM, xs, gtXS } = matchResult;
+  const { ltMD, sm, gtSM } = matchResult;
 
   return (
     <>
@@ -130,7 +130,7 @@ const ResponsiveDialogExample = ({ ...args }) => {
       >
         Open Responsive Dialog
       </RcButton>
-      <RcDialog {...args} open={openState} fullScreen={ltSM}>
+      <RcDialog {...args} open={openState} fullScreen={ltMD}>
         <RcDialogTitle>{bp} Size</RcDialogTitle>
         <RcDialogContent>
           <RcTypography>try to resize screen</RcTypography>
@@ -144,26 +144,26 @@ const ResponsiveDialogExample = ({ ...args }) => {
             }
             label="Enable Comp Responsive"
           />
-          <RcRadioGroup row={enableRes && gtXS}>
+          <RcRadioGroup row={enableRes && gtSM}>
             <RcRadio
-              label={enableRes && gtXS ? 'horizontal radio' : 'vertical radio'}
+              label={enableRes && gtSM ? 'horizontal radio' : 'vertical radio'}
             />
             <RcRadio
-              label={enableRes && gtXS ? 'horizontal radio' : 'vertical radio'}
+              label={enableRes && gtSM ? 'horizontal radio' : 'vertical radio'}
             />
           </RcRadioGroup>
         </RcDialogContent>
         <RcDialogActions
-          direction={enableRes && xs ? 'vertical' : 'horizontal'}
+          direction={enableRes && sm ? 'vertical' : 'horizontal'}
         >
           <RcButton
             onClick={() => setOpenState(false)}
             color="danger.b04"
-            fullWidth={enableRes && xs}
+            fullWidth={enableRes && sm}
           >
             Cancel
           </RcButton>
-          <RcButton fullWidth={enableRes && xs}>OK</RcButton>
+          <RcButton fullWidth={enableRes && sm}>OK</RcButton>
         </RcDialogActions>
       </RcDialog>
     </>

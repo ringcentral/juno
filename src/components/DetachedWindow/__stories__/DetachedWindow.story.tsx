@@ -8,7 +8,10 @@ import React, {
 
 import styled from '../../../foundation/styled-components';
 import { RcButton } from '../../Buttons/Button';
-import { DialogExampleComponent } from '../../Dialog/__stories__/Dialog.story';
+import {
+  DialogExampleComponent,
+  DialogWithResponsiveExample,
+} from '../../Dialog/__stories__/Dialog.story';
 // import { MenuExampleComponent } from '../../Menu/Menu/__stories__/Menu.story';
 import { SubMenuExampleComponent } from '../../Menu/SubMenu/__stories__/SubMenu.story';
 import { Popper } from '../../Popper/__stories__/Popper.story';
@@ -157,6 +160,8 @@ export const DetachedWindow: Story<DetachedWindowProps> = ({
           <SubMenuExampleComponent />
           <RcDivider />
           <DialogExampleComponent />
+          <RcDivider />
+          <DialogWithResponsiveExample />
           <RcDivider />
           <Popper />
           <RcDivider />
