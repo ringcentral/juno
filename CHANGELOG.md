@@ -1,4 +1,19 @@
 
+### [1.10.1](https://github.com/ringcentral/juno/compare/1.10.0...1.10.1) (2021-08-19)
+
+
+### Features
+
+* **Dialog:** add Responsive dialog Example ([44e9ced](https://github.com/ringcentral/juno/commit/44e9ceda3530b9caaff792261a278bfcf8332f4a))
+* **Drawer:** add multi drawer example ([fdfcf8c](https://github.com/ringcentral/juno/commit/fdfcf8c9624d22f0de118883c88e2476831b035b))
+* **Hidden:** reexport Hidden component ([f997e68](https://github.com/ringcentral/juno/commit/f997e68956fc33da89d99d8f2a14036805ce1ee5))
+
+
+### Bug Fixes
+
+* **Deepmerge:** switch deepmerge to mui inner deepmerge ([a70b3f1](https://github.com/ringcentral/juno/commit/a70b3f1951a948a90915890aa052e1726a107429))
+* **DialPad:** switch to useAudio ([5f4d3d7](https://github.com/ringcentral/juno/commit/5f4d3d763763f1668fd8b3cb909b1d726ce4e610))
+
 ## 1.10.0 (2021-08-19)
 
 
