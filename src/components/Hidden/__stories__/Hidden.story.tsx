@@ -14,7 +14,7 @@ import { RcGrid } from '../../Grid';
 import { RcHidden } from '../Hidden';
 
 export default {
-  title: '🚀 Cleanup Components/Hidden',
+  title: 'Hidden',
   component: RcHidden,
   argTypes: {
     ...sortInDocTable<keyof HiddenProps>([]),

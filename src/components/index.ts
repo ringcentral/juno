@@ -19,6 +19,7 @@ export * from './Downshift';
 export * from './Drawer';
 export * from './Forms';
 export * from './Grid';
+export * from './Hidden';
 export * from './Icon';
 export * from './ImageView';
 export * from './InlineEditable';
