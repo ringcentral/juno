@@ -77,5 +77,6 @@
   "src/foundation/typings/UnionOmit.ts": "{\"name\":\"API Reference/Typings/UnionOmit\",\"title\":\"UnionOmit\"}9fd97f28",
   "src/foundation/typings/UnitMap.ts": "{\"name\":\"API Reference/Typings/UnitMap\",\"title\":\"UnitMap\"}9979b196",
   "src/foundation/typings/deepPartial.ts": "{\"name\":\"API Reference/Typings/deepPartial\",\"title\":\"deepPartial\"}9a00d4f2",
-  "src/foundation/typings/notNullRecord.ts": "{\"name\":\"API Reference/Typings/notNullRecord\",\"title\":\"notNullRecord\"}9a00d4f2"
+  "src/foundation/typings/notNullRecord.ts": "{\"name\":\"API Reference/Typings/notNullRecord\",\"title\":\"notNullRecord\"}9a00d4f2",
+  "src/foundation/hooks/useAudio/useAudio.ts": "{\"name\":\"API Reference/Hooks/useAudio\",\"title\":\"useAudio\"}424dc38f"
 }
