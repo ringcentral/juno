@@ -60,7 +60,7 @@ exports[`Storyshots 🔧 Foundation/Hooks/useAnnouncer useAnnouncer 1`] = `
 }
 
 <div
-  className="MuiBox-root MuiBox-root-263"
+  className="MuiBox-root MuiBox-root-264"
 >
   Please enable the Screen Reader, and click the "Announce" button.
   <br />

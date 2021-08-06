@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots 🚀 Cleanup Components/Hidden Hidden 1`] = `
+exports[`Storyshots Hidden Hidden 1`] = `
 Array [
   <div
     className="MuiBox-root MuiBox-root-165"
