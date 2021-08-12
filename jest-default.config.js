@@ -10,13 +10,11 @@ module.exports = {
 
   testMatch: [`**/*/__tests__/**/*.test?(s).[jt]s?(x)`],
   setupFiles: [
-    '<rootDir>/tests/setup/jest.testingLibraryConfig.js',
-    '<rootDir>/tests/setup/enzymeTestAdapterSetup.js',
+    '<rootDir>/config/jest/polyfills.js',
+    '<rootDir>/config/jest/jest.testingLibraryConfig.js',
+    '<rootDir>/config/jest/enzymeTestAdapterSetup.js',
   ],
-  setupFilesAfterEnv: [
-    '<rootDir>/tests/setup/setupTest.js',
-    '@testing-library/jest-dom/extend-expect',
-  ],
+  setupFilesAfterEnv: ['<rootDir>/config/jest/setupTest.js'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
   testEnvironment: 'jsdom',
 };
