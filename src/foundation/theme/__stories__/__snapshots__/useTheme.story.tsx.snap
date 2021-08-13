@@ -2,7 +2,7 @@
 
 exports[`Storyshots 🔧 Foundation/Hooks/useTheme Theme Value 1`] = `
 <div
-  className="MuiBox-root MuiBox-root-272"
+  className="MuiBox-root MuiBox-root-310"
 >
   <pre>
     {
@@ -548,7 +548,7 @@ Array [
     Current Theme
   </h5>,
   <div
-    className="MuiBox-root MuiBox-root-273"
+    className="MuiBox-root MuiBox-root-311"
   >
     <pre>
       {
@@ -1090,7 +1090,7 @@ Array [
     Dark Theme
   </h5>,
   <div
-    className="MuiBox-root-274 MuiBox-root-275"
+    className="MuiBox-root-312 MuiBox-root-313"
   >
     <pre>
       {
@@ -1641,7 +1641,7 @@ Array [
     HighContrast Theme
   </h5>,
   <div
-    className="MuiBox-root-276 MuiBox-root-277"
+    className="MuiBox-root-314 MuiBox-root-315"
   >
     <pre>
       {

@@ -60,7 +60,7 @@ exports[`Storyshots 🚀 Cleanup Components/Tooltip Tooltip 1`] = `
 }
 
 <div
-  className="MuiBox-root MuiBox-root-212"
+  className="MuiBox-root MuiBox-root-250"
 >
   <button
     aria-describedby={null}
@@ -1126,7 +1126,7 @@ Array [
   >
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-213 MuiCheckbox-root RcCheckbox-root c1"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-251 MuiCheckbox-root RcCheckbox-root c1"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -1144,7 +1144,7 @@ Array [
         className="MuiIconButton-label"
       >
         <input
-          className="PrivateSwitchBase-input-216"
+          className="PrivateSwitchBase-input-254"
           data-indeterminate={false}
           disabled={false}
           onChange={[Function]}
@@ -1289,7 +1289,7 @@ Array [
   >
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-213 MuiRadio-root RcRadio-root c1"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-251 MuiRadio-root RcRadio-root c1"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -1307,13 +1307,13 @@ Array [
         className="MuiIconButton-label"
       >
         <input
-          className="PrivateSwitchBase-input-216"
+          className="PrivateSwitchBase-input-254"
           disabled={false}
           onChange={[Function]}
           type="radio"
         />
         <div
-          className="PrivateRadioButtonIcon-root-217 RadioButtonIcon-root"
+          className="PrivateRadioButtonIcon-root-255 RadioButtonIcon-root"
         >
           <svg
             aria-hidden={true}
@@ -1327,7 +1327,7 @@ Array [
           </svg>
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-218"
+            className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-256"
             focusable="false"
             viewBox="0 0 24 24"
           >
@@ -3017,7 +3017,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-220 MuiSwitch-switchBase RcSwitch-switchBase"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-258 MuiSwitch-switchBase RcSwitch-switchBase"
         onBlur={[Function]}
         onClick={[Function]}
         onDragLeave={[Function]}
@@ -3037,7 +3037,7 @@ Array [
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-223 MuiSwitch-input"
+            className="PrivateSwitchBase-input-261 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />

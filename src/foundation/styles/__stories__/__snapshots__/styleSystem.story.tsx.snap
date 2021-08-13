@@ -181,7 +181,7 @@ exports[`Storyshots 💅 Style system/utils flexWidth 1`] = `
 }
 
 <div
-  className="MuiBox-root MuiBox-root-271"
+  className="MuiBox-root MuiBox-root-309"
 >
   <div
     className="c0 c1 c2"
