@@ -94,6 +94,8 @@ exports[`Storyshots 🚀 Cleanup Components/Tooltip Tooltip 1`] = `
 </div>
 `;
 
+exports[`Storyshots 🚀 Cleanup Components/Tooltip Tooltip Sizes 1`] = `null`;
+
 exports[`Storyshots 🚀 Cleanup Components/Tooltip Tooltip With Custom Color 1`] = `
 Array [
   .c0 {
