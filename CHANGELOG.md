@@ -1,4 +1,12 @@
 
+## [1.11.0](https://github.com/ringcentral/juno/compare/1.10.1...1.11.0) (2021-08-19)
+
+
+### Features
+
+* **Icon add dark prop to svg component:** update icon ([6adbbaf](https://github.com/ringcentral/juno/commit/6adbbafa67289297c277864cee8dd75145c0ae08))
+* **Responsive:** update storybook ([fc135ff](https://github.com/ringcentral/juno/commit/fc135ff3f763d82f34924bdd683a6200f790b8c7))
+
 ### [1.10.1](https://github.com/ringcentral/juno/compare/1.10.0...1.10.1) (2021-08-19)
 
 
