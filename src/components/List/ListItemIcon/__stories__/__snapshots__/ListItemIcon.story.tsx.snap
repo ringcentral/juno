@@ -57,11 +57,11 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemIcon ListItemIcon 1`] 
   padding-bottom: 4px;
 }
 
-.c0 .sc-oefIU {
+.c0 .sc-oeezt {
   margin-right: 0;
 }
 
-.c0 .sc-oefIU > .sc-fXgAFM {
+.c0 .sc-oeezt > .sc-fXgAZx {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -85,17 +85,17 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemIcon ListItemIcon 1`] 
   min-width: unset;
 }
 
-.c1 > .sc-biJoGX,
-.c1 > .sc-hhIhEF {
+.c1 > .sc-biJonm,
+.c1 > .sc-hhIiOg {
   margin-right: 4px;
 }
 
-.c1 > .sc-fXgAFM {
+.c1 > .sc-fXgAZx {
   margin-left: 4px;
   margin-right: 4px;
 }
 
-.c1 > .sc-fujyUd,
+.c1 > .sc-fujyAs,
 .c1 > .c2 {
   margin-right: 8px;
 }

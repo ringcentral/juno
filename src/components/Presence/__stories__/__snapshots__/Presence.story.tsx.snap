@@ -25,13 +25,13 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   background: #939393;
 }
 
-.c0 .sc-eCApGN {
+.c0 .sc-eCApnc {
   -webkit-transform: scale(0.5);
   -ms-transform: scale(0.5);
   transform: scale(0.5);
 }
 
-.c0 .sc-eCApGN svg {
+.c0 .sc-eCApnc svg {
   width: 10px;
   height: 10px;
 }

@@ -5,7 +5,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialTextField DialTextField 1
   width: 168px;
 }
 
-.c0 .sc-fujyUd {
+.c0 .sc-fujyAs {
   margin-left: 12px;
 }
 
@@ -28,7 +28,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialTextField DialTextField 1
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .sc-carGAA {
+.c0 .RcTextFieldInput-root .sc-carFqZ {
   display: none;
 }
 

@@ -191,7 +191,7 @@ Array [
       />
     </button>
   </div>,
-  .c0 .sc-cxNIbT {
+  .c0 .sc-cxNHIi {
   margin: 8px 0px;
 }
 
@@ -223,11 +223,11 @@ Array [
   font-weight: 700;
 }
 
-.c1 .sc-oefIU {
+.c1 .sc-oeezt {
   margin-right: 0;
 }
 
-.c1 .sc-oefIU > .sc-fXgAFM {
+.c1 .sc-oeezt > .sc-fXgAZx {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -518,7 +518,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   border-color: #B9B9B9;
 }
 
-.c8 .sc-cxNIbT {
+.c8 .sc-cxNHIi {
   margin: 8px 0px;
 }
 
@@ -907,11 +907,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   padding-bottom: 4px;
 }
 
-.c15 .sc-oefIU {
+.c15 .sc-oeezt {
   margin-right: 0;
 }
 
-.c15 .sc-oefIU > .sc-fXgAFM {
+.c15 .sc-oeezt > .sc-fXgAZx {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -944,11 +944,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   font-weight: 700;
 }
 
-.c9 .sc-oefIU {
+.c9 .sc-oeezt {
   margin-right: 0;
 }
 
-.c9 .sc-oefIU > .sc-fXgAFM {
+.c9 .sc-oeezt > .sc-fXgAZx {
   margin-left: 4px;
   margin-right: 4px;
 }
