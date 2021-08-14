@@ -4,7 +4,7 @@ import {
   UseKeyboardMoveFocusParams,
 } from '../useKeyboardMoveFocus';
 import React from 'react';
-import { renderHooks } from '../../../../../tests';
+import { renderHook } from '@testing-library/react-hooks';
 
 describe('useKeyboardMoveFocus()', () => {
   let mockOnFocusedIndexChangeFn = jest.fn();
@@ -16,7 +16,9 @@ describe('useKeyboardMoveFocus()', () => {
   });
 
   function _useKeyboardMoveFocus(params: UseKeyboardMoveFocusParams<any>) {
-    const { current } = renderHooks(() =>
+    const {
+      result: { current },
+    } = renderHook(() =>
       useKeyboardMoveFocus({
         ...params,
         getOptionSearchText: (v) => `${v}`,
@@ -63,7 +65,7 @@ describe('useKeyboardMoveFocus()', () => {
       ];
 
       const seq = getFocusSequence(keys, {
-        focusedIndexRef: renderHooks(() => currIndex),
+        focusedIndexRef: { current: currIndex },
         options,
         columns,
         infinite,
@@ -85,7 +87,7 @@ describe('useKeyboardMoveFocus()', () => {
       const keys = [['1'], ['2'], ['3'], ['1', '2'], ['1', '9'], ['0', '2']];
 
       const seq = getFocusSequence(keys, {
-        focusedIndexRef: renderHooks(() => currIndex),
+        focusedIndexRef: { current: currIndex },
         options,
         columns,
         infinite,
@@ -121,7 +123,7 @@ describe('useKeyboardMoveFocus()', () => {
       const disabledDict = { 16: true, 19: true };
 
       const seq = getFocusSequence(keys, {
-        focusedIndexRef: renderHooks(() => currIndex),
+        focusedIndexRef: { current: currIndex },
         options,
         columns,
         infinite,
@@ -144,7 +146,7 @@ describe('useKeyboardMoveFocus()', () => {
       const disabledDict = { 0: true, 1: true, 2: true, 16: true, 19: true };
 
       const { getPrevFocusableOption } = _useKeyboardMoveFocus({
-        focusedIndexRef: renderHooks(() => currIndex),
+        focusedIndexRef: { current: currIndex },
         options,
         columns,
         infinite,
@@ -167,7 +169,7 @@ describe('useKeyboardMoveFocus()', () => {
       const disabledDict = { 0: true, 1: true, 2: true, 16: true, 19: true };
 
       const { getNextFocusableOption } = _useKeyboardMoveFocus({
-        focusedIndexRef: renderHooks(() => currIndex),
+        focusedIndexRef: { current: currIndex },
         options,
         columns,
         infinite,
