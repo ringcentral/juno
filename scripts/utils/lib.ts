@@ -32,7 +32,7 @@ export namespace Lib {
         file.write(value);
 
         file.on('close', () => {
-          resolve(value);
+          resolve(undefined);
         });
         file.end();
       } catch (error) {
@@ -83,20 +83,16 @@ export namespace Lib {
     }
   };
 
-  export function getFileTree(sourceUrl: string, acceptFolder?: boolean) {
+  export const getFileTree = (sourceUrl: string): string[] => {
     const returnObj: string[] = [];
     const files = fs.readdirSync(sourceUrl);
 
     files.forEach((file) => {
       const url = path.join(sourceUrl, file);
 
-      if (!url.match(/node_modules|\.git$|\.gitconfig/gm)) {
+      if (!url.includes('node_modules')) {
         if (fs.lstatSync(url).isDirectory()) {
-          if (acceptFolder) {
-            returnObj.push(url);
-          } else {
-            returnObj.push(...getFileTree(url));
-          }
+          returnObj.push(...getFileTree(url));
         } else {
           returnObj.push(url);
         }
@@ -104,7 +100,7 @@ export namespace Lib {
     });
 
     return returnObj;
-  }
+  };
 
   function clearString(s: string) {
     const pattern = new RegExp(/[.\-_]/);

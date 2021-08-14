@@ -1,5 +1,3 @@
-/* eslint-disable security/detect-non-literal-fs-filename */
-/* eslint-disable no-console */
 import path from 'path';
 
 import {

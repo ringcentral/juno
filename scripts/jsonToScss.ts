@@ -1,6 +1,3 @@
-/* eslint-disable global-require */
-/* eslint-disable security/detect-non-literal-fs-filename */
-/* eslint-disable no-console */
 import fs from 'fs';
 import { pick } from 'lodash';
 import path from 'path';
