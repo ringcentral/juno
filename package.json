@@ -25,6 +25,7 @@
     "lint:packageJson": "eslint ./package.json --no-ignore",
     "lint:ts": "eslint '**/src/**/*.{ts,tsx,json}' --quiet",
     "open-reporters": "open -a \"Google Chrome\" jest_html_reporters.html",
+    "postinstall": "node scripts/postinstall.run",
     "presence-icon-to-component": "svgr  --ext tsx --typescript --ref --memo ./src/components/Presence/assets --template ./scripts/iconToComponent.js -d ./src/components/Presence/assets && eslint ./src/components/Presence/assets/** --fix",
     "release": "rm -rf dist && npm run build:lib && node scripts/build/build-npm-package.js",
     "release-after": "npm run update-mdx && ts-node scripts/mergeIntoPreviousCommit && npm run start-next",
