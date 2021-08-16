@@ -124,7 +124,7 @@ type RcDownshiftProps<
    */
   filterOptions?: RcDownshiftFilterOptions<T>;
   /** emit current input value */
-  onInputChange?: (value?: string) => any;
+  onInputChange?: (value: string) => any;
   /**
    * Render the option, use `getOptionLabel` by default.
    *
@@ -585,7 +585,7 @@ const _RcDownshift = memo(
       onGroupExpanded,
     });
 
-    const open = Boolean((isOpen && textFieldRef.current) || noOptionItem);
+    const open = Boolean((isOpen || noOptionItem) && textFieldRef.current);
 
     const { onBlur, ...InputProps } = getInputProps();
 

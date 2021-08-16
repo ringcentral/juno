@@ -1,31 +1,34 @@
 /* eslint-disable no-await-in-loop */
-import { ReactWrapper } from 'enzyme';
+import { RenderResult } from '@testing-library/react';
 
 export function EachRun<
   T = any,
   K extends {
-    wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
+    result: RenderResult;
   } = {
-    wrapper: ReactWrapper;
+    result: RenderResult;
   }
 >(titles: TemplateStringsArray, ...actions: ((args: T, context: K) => void)[]) {
   const context: K = {} as K;
 
   return async (args: any) => {
-    for (let i = 0; i < titles.length; i++) {
-      const title = titles[i];
-      if (title.trim() !== '') {
+    try {
+      for (let i = 0; i < titles.length; i++) {
         if (actions[i]) {
           await actions[i](args, context);
         }
         // TODO: wait can get correct error position
+        // const title = titles[i];
         // try {
         // } catch (error) {
         //   expect(() => {}).toThrow(`[step]: ${title}\n ${error}`);
         // }
       }
-    }
 
-    context.wrapper?.unmount();
+      context.result?.unmount();
+    } catch (error) {
+      context.result?.unmount();
+      throw error;
+    }
   };
 }
