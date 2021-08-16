@@ -149,6 +149,12 @@ export const useDownshift = ({
     default: '',
     name: componentName,
   });
+
+  const updateInputValue = (newValue: string) => {
+    onInputChangeProp?.(newValue);
+    setInputValue(newValue);
+  };
+
   const [selectedItems, setSelectedItems] = useControlled({
     controlled: selectedItemsProp,
     default: [],
@@ -360,8 +366,7 @@ export const useDownshift = ({
         return resultHaveAdd;
       }
 
-      onInputChangeProp?.(newValue);
-      setInputValue(newValue);
+      updateInputValue(newValue);
     }
 
     if (open) openMenu(e);
@@ -511,7 +516,7 @@ export const useDownshift = ({
 
   const resetState = (e?: ChangeEvent<{}>) => {
     if (inputRef.current && inputRef.current.value.length > 0) {
-      setInputValue('');
+      updateInputValue('');
     }
     setActiveIndex(-1);
 
