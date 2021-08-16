@@ -10,16 +10,6 @@ const targetPath = 'dist';
 const targetFolder = path.join(rootPath, targetPath);
 const targetFolderES6 = path.join(targetFolder, 'es6');
 
-console.log('[Release]: start build package...');
-
-execSync('rm -rf dist');
-
-execSync(
-  'concurrently "tsc --project tsconfig.prod.json" "tsc --project tsconfig.prod.es6.json"',
-);
-
-console.log('[Release]: build package complete');
-
 console.log('[Release]: prepare package start');
 
 const srcMovePaths = [
