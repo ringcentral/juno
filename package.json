@@ -6,6 +6,14 @@
   "main": "./index.js",
   "module": "./es6/index.js",
   "typings": "./index.d.ts",
+  "bugs": {
+    "url": "https://github.com/ringcentral/juno/issues"
+  },
+  "homepage": "https://github.com/ringcentral/juno#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ringcentral/juno.git"
+  },
   "scripts": {
     "build:lib": "concurrently \"tsc --project tsconfig.prod.json\" \"tsc --project tsconfig.prod.es6.json\"",
     "build:lib:inner": "node scripts/build/source-release.js",
