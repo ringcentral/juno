@@ -35,7 +35,6 @@ const movePaths = [
   '.gitignore',
   '.npmrc',
   'README.md',
-  'CHANGELOG.md',
 ];
 
 fs.removeSync(targetFolder);
