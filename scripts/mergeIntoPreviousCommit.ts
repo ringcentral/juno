@@ -15,4 +15,9 @@ execSync(`git reset ${currentBranch}^ --mixed`);
 
 execSync(`git add .`);
 execSync(`git commit -m '${message}'`);
+
+const version = message.replace('chore(release): ', '');
+
+execSync(`git tag -a v${version} -m ''`);
+
 console.log('[Release]: merge into previous commit complete');
