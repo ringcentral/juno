@@ -1,6 +1,5 @@
 const fs = require('fs-extra');
 const path = require('path');
-const { execSync } = require('child_process');
 const { writePackageJson } = require('./writePackageJson.plugin');
 
 const rootPath = process.cwd();
