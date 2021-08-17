@@ -57,7 +57,7 @@
       "name": "tsdocToMdx",
       "type": "node",
       "request": "launch",
-      "args": ["${workspaceRoot}/scripts/tsdocToMdx/tsdocToMdx.ts"],
+      "args": ["${workspaceRoot}/scripts/sync-github/sync-github.ts"],
       "runtimeArgs": ["-r", "ts-node/register"],
       "cwd": "${workspaceRoot}",
       "protocol": "inspector",

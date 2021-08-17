@@ -38,7 +38,7 @@
   "src/foundation/hooks/usePrevious/usePrevious.ts": "{\"name\":\"API Reference/Hooks/usePrevious\",\"title\":\"usePrevious\"}8357bfb4",
   "src/foundation/hooks/useRefState/useRefState.ts": "{\"name\":\"API Reference/Hooks/useRefState\",\"title\":\"useRefState\"}0132f3ec",
   "src/foundation/hooks/useResizeObserver/useResizeObserver.ts": "{\"name\":\"API Reference/Hooks/useResizeObserver\",\"title\":\"useResizeObserver\"}5b97ed9b",
-  "src/foundation/hooks/useResponsiveMatch/useResponsiveMatch.ts": "{\"name\":\"API Reference/Hooks/useResponsiveMatch\",\"title\":\"useResponsiveMatch\"}87fb6e11",
+  "src/foundation/hooks/useResponsiveMatch/useResponsiveMatch.ts": "{\"name\":\"API Reference/Hooks/useResponsiveMatch\",\"title\":\"useResponsiveMatch\"}4f7f8158",
   "src/foundation/hooks/useResultRef/useResultRef.ts": "{\"name\":\"API Reference/Hooks/useResultRef\",\"title\":\"useResultRef\"}cd89a085",
   "src/foundation/hooks/useRetry/useRetry.ts": "{\"name\":\"API Reference/Hooks/useRetry\",\"title\":\"useRetry\"}4f132b81",
   "src/foundation/hooks/useSleep/useSleep.ts": "{\"name\":\"API Reference/Hooks/useSleep\",\"title\":\"useSleep\"}a4972e4b",

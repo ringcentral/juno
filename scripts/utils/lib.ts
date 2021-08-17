@@ -90,7 +90,7 @@ export namespace Lib {
     files.forEach((file) => {
       const url = path.join(sourceUrl, file);
 
-      if (!url.includes('node_modules')) {
+      if (!url.match(/node_modules|\.git$|\.gitconfig/gm)) {
         if (fs.lstatSync(url).isDirectory()) {
           if (acceptFolder) {
             returnObj.push(url);
