@@ -1,0 +1,57 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Open Chrome",
+      "type": "process",
+      "command": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+      "args": ["http://localhost:6006", "--remote-debugging-port=9222"],
+      "isBackground": true,
+      "problemMatcher": [
+        {
+          "pattern": [
+            {
+              "regexp": ".",
+              "file": 1,
+              "location": 2,
+              "message": 3
+            }
+          ],
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": ".",
+            "endsPattern": "."
+          }
+        }
+      ]
+    },
+    {
+      "label": "Run App",
+      "type": "shell",
+      "command": "npm start",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Run App with doc",
+      "type": "shell",
+      "command": "npm run storybook:docgen",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "update storybook snapshot",
+      "type": "shell",
+      "command": "npm run update-storybook-snapshot",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "update snapshot",
+      "type": "shell",
+      "command": "npm run update-snapshot",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}

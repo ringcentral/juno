@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🖤 Deprecated Components/Text/TextWithHighlight TextWithHighlight 1`] = `
+.c0 {
+  color: #121212;
+  background-color: #FFDFB1;
+}
+
+.c0 a {
+  color: inherit;
+}
+
+<span
+  className="c0 highlight-term"
+>
+  abcde
+</span>
+`;

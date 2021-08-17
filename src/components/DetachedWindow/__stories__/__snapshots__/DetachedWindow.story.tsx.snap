@@ -1,0 +1,789 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/DetachedWindow DetachedWindow 1`] = `
+Array [
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #16181D;
+}
+
+.c1.highlight-term {
+  color: #16181D !important;
+  background-color: #FFE6CE !important;
+}
+
+<p
+    className="MuiTypography-root c0"
+    data-color="neutral.f06"
+    data-variant="body1"
+  >
+    That can make render element on new window, and can shared state easy.
+    <br />
+    Also you can get window use 
+    <span
+      className="MuiTypography-root c1 highlight-term MuiTypography-noWrap"
+      data-color="initial"
+      data-variant="inherit"
+      title="ref"
+    >
+      ref
+    </span>
+    ,
+     
+    <span
+      className="MuiTypography-root c1 highlight-term MuiTypography-noWrap"
+      data-color="initial"
+      data-variant="inherit"
+      title="ref.current.window"
+    >
+      ref.current.window
+    </span>
+    , you can get that after
+     
+    <span
+      className="MuiTypography-root c1 highlight-term MuiTypography-noWrap"
+      data-color="initial"
+      data-variant="inherit"
+      title="onload"
+    >
+      onload
+    </span>
+    , or get that in
+     
+    <span
+      className="MuiTypography-root c1 highlight-term MuiTypography-noWrap"
+      data-color="initial"
+      data-variant="inherit"
+    >
+      onOpen=
+      {(window) =&gt; ... }
+    </span>
+     trigger arg
+    <br />
+    count: 
+    1
+  </p>,
+  .c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #2559E4;
+}
+
+.c0.RcButton-text:hover {
+  background-color: rgba(37,89,228,0.08);
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #2559E4;
+}
+
+.c0.RcButton-contained:hover {
+  background-color: rgba(37,89,228,0.92);
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B5B9C5;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #2559E4;
+  border-color: #2559E4;
+  padding: 0px 15px;
+}
+
+.c0.RcButton-outlined:hover {
+  background-color: rgba(37,89,228,0.08);
+}
+
+<button
+    aria-describedby={null}
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    title="cool"
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      +1
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>,
+  .c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #2559E4;
+}
+
+.c0.RcButton-text:hover {
+  background-color: rgba(37,89,228,0.08);
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #2559E4;
+}
+
+.c0.RcButton-contained:hover {
+  background-color: rgba(37,89,228,0.92);
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B5B9C5;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #2559E4;
+  border-color: #2559E4;
+  padding: 0px 15px;
+}
+
+.c0.RcButton-outlined:hover {
+  background-color: rgba(37,89,228,0.08);
+}
+
+<button
+    aria-describedby={null}
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    style={
+      Object {
+        "float": "right",
+      }
+    }
+    tabIndex={0}
+    title="This is tooltip"
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Open
+       this block
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>,
+]
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/DetachedWindow DetachedWindow Examples 1`] = `
+Array [
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #16181D;
+}
+
+<p
+    className="MuiTypography-root c0"
+    data-color="neutral.f06"
+    data-variant="body1"
+  >
+    Control window in another window
+    <br />
+    count: 
+    1
+  </p>,
+  .c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #2559E4;
+}
+
+.c0.RcButton-text:hover {
+  background-color: rgba(37,89,228,0.08);
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #2559E4;
+}
+
+.c0.RcButton-contained:hover {
+  background-color: rgba(37,89,228,0.92);
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B5B9C5;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #2559E4;
+  border-color: #2559E4;
+  padding: 0px 15px;
+}
+
+.c0.RcButton-outlined:hover {
+  background-color: rgba(37,89,228,0.08);
+}
+
+<button
+    aria-describedby={null}
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    title="+1"
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      +1
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>,
+  .c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #2559E4;
+}
+
+.c0.RcButton-text:hover {
+  background-color: rgba(37,89,228,0.08);
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #2559E4;
+}
+
+.c0.RcButton-contained:hover {
+  background-color: rgba(37,89,228,0.92);
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B5B9C5;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #2559E4;
+  border-color: #2559E4;
+  padding: 0px 15px;
+}
+
+.c0.RcButton-outlined:hover {
+  background-color: rgba(37,89,228,0.08);
+}
+
+<button
+    aria-describedby={null}
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    title="cool"
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      open
+       1
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>,
+  .c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #2559E4;
+}
+
+.c0.RcButton-text:hover {
+  background-color: rgba(37,89,228,0.08);
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #2559E4;
+}
+
+.c0.RcButton-contained:hover {
+  background-color: rgba(37,89,228,0.92);
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B5B9C5;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #2559E4;
+  border-color: #2559E4;
+  padding: 0px 15px;
+}
+
+.c0.RcButton-outlined:hover {
+  background-color: rgba(37,89,228,0.08);
+}
+
+<button
+    aria-describedby={null}
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    title="cool"
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      open
+       2
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>,
+  .c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #2559E4;
+}
+
+.c0.RcButton-text:hover {
+  background-color: rgba(37,89,228,0.08);
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #2559E4;
+}
+
+.c0.RcButton-contained:hover {
+  background-color: rgba(37,89,228,0.92);
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B5B9C5;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #2559E4;
+  border-color: #2559E4;
+  padding: 0px 15px;
+}
+
+.c0.RcButton-outlined:hover {
+  background-color: rgba(37,89,228,0.08);
+}
+
+<button
+    aria-describedby={null}
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    title="cool"
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      open
+       3
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>,
+  <br />,
+]
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/DetachedWindow open window by yourself 1`] = `
+Array [
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #16181D;
+}
+
+<p
+    className="MuiTypography-root c0"
+    data-color="neutral.f06"
+    data-variant="body1"
+  >
+    Open window with getWindow
+    <br />
+    count: 
+    1
+  </p>,
+  .c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #2559E4;
+}
+
+.c0.RcButton-text:hover {
+  background-color: rgba(37,89,228,0.08);
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #2559E4;
+}
+
+.c0.RcButton-contained:hover {
+  background-color: rgba(37,89,228,0.92);
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B5B9C5;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #2559E4;
+  border-color: #2559E4;
+  padding: 0px 15px;
+}
+
+.c0.RcButton-outlined:hover {
+  background-color: rgba(37,89,228,0.08);
+}
+
+<button
+    aria-describedby={null}
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    title="+1"
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      +1
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>,
+  .c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #2559E4;
+}
+
+.c0.RcButton-text:hover {
+  background-color: rgba(37,89,228,0.08);
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #2559E4;
+}
+
+.c0.RcButton-contained:hover {
+  background-color: rgba(37,89,228,0.92);
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B5B9C5;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #2559E4;
+  border-color: #2559E4;
+  padding: 0px 15px;
+}
+
+.c0.RcButton-outlined:hover {
+  background-color: rgba(37,89,228,0.08);
+}
+
+<button
+    aria-describedby={null}
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    style={
+      Object {
+        "float": "right",
+      }
+    }
+    tabIndex={0}
+    title="This is tooltip"
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Open
+       this block
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>,
+  <br />,
+]
+`;

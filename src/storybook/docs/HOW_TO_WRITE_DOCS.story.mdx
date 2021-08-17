@@ -1,0 +1,130 @@
+<Meta title="CONTRIBUTION/2. How to write storybook document" />
+
+# How to write storybook document
+
+1. Clone repo from git
+
+```bash
+git clone git@github.com:ringcentral/juno.git
+```
+
+2. Run app
+
+```bash
+cd rcui
+
+npm start
+# or run storybook if you need component doc generator
+npm run storybook
+```
+
+3. Checkout branch
+
+```bash
+## switch to develop branch
+git checkout develop
+
+## create a branch follow with you want to write component
+git checkout -b 'RCUI-DOC-Button'
+```
+
+4. Find Component folder under `src/components/${component name}`.
+
+5. In that `__stories__` folder, create a file name follow with `${component name}.story.mdx` like `Drawer.story.mdx`.
+
+6. Open that file and follow below guide to start write components document.
+
+## Quick Teaplate generator
+
+Use vscode launch feature to create
+
+1. Open `Run and Debug` in sidebar
+2. Choice `create mdx`
+3. Press `F5`
+4. Enter Component name
+5. Press Enter to confirm
+
+![](./assets/create-mdx.png)
+
+You also can use script to create template quickly!
+
+```
+npm run create-mdx -- ComponentName
+```
+
+> that will create mdx template in root, put that file to target folder.
+
+# Component Story Doc Guide
+
+1. Need show component reference in document.
+2. All custom props need follow with one example.
+3. Let user know...
+   - How to use component.
+   - Which component we base onHow to use component.
+   - Each addition props we supportHow to use component.
+4. Make User easy to use components, and can find their use case in our examples.
+5. Show all props for user to know how to use, and detail description with each prop.
+
+Template structure
+
+![](./assets/mdx-example.png)
+
+1. Only use [embedding-stories](https://storybook.js.org/docs/react/writing-docs/mdx#embedding-stories)
+
+> We want user can control props in component page, so we only use embedding-stories
+
+like below, that id can get from browser target story url.
+
+```tsx
+<Canvas>
+  <Story id="🚀-cleanup-components-drawer--drawer-with-inline-paper" />
+</Canvas>
+```
+
+2. keep write example simple, not too complete example, that will make user confuse, and diffcult to view code in example
+
+3. keep example code in one file, because our story code plugin only can show one file in story tab.
+
+# How to use image
+
+- Put file below `assets/*`
+
+and use markdown to view that
+
+```md
+![](./assets/mdx-example.png)
+```
+
+# Push your code
+
+1. Update snapshot first
+
+```bash
+npm run update-snapshot
+```
+
+2. Commit your code
+
+```bash
+git commit -m 'doc(RCUI-DOC): [Button] create button doc page'
+```
+
+3. Push to remote branch
+
+```bash
+git push --set-upstream origin RCUI-DOC-Button
+```
+
+4. Open \[github\](https://github.com/ringcentral/juno/-/merge_requests) to create a merge-request, title same as your commit message `doc(RCUI-DOC): [Button] create button doc page`
+
+<br />
+<br />
+<br />
+
+# How to write mdx
+
+[Storybook document](https://storybook.js.org/docs/react/writing-docs/mdx)
+
+[Markdown Crash Course](https://www.youtube.com/watch?v=HUBNt18RFbo)
+
+[md-tutorial](https://www.runoob.com/markdown/md-tutorial.html)

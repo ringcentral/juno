@@ -1,0 +1,286 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Stepper/StepButton StepButton 1`] = `
+.c4 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  color: #757575;
+}
+
+.c1.RcStep-horizontal {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c3 .RcStepIcon-root {
+  color: #666666;
+}
+
+.c3 .RcStepIcon-active {
+  color: #066FAC;
+}
+
+.c3 .RcStepIcon-text {
+  fill: #FFFFFF;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  -webkit-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  transform: translateY(1px);
+}
+
+.c3 .RcStepLabel-labelContainer .RcStepLabel-alternativeLabel {
+  margin-top: 12px;
+}
+
+.c3 .RcStepLabel-label {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #666666;
+}
+
+.c3 .RcStepLabel-active {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c3.RcStepLabel-error .RcStepIcon-root {
+  color: #BE3933;
+}
+
+.c3.RcStepLabel-error .RcStepLabel-label {
+  color: #BE3933;
+}
+
+.c3.RcStepLabel-disabled .RcStepIcon-root {
+  color: #B9B9B9;
+}
+
+.c3.RcStepLabel-disabled .RcStepLabel-label {
+  color: #B9B9B9;
+}
+
+.c2 .RcStepButton-touchRipple {
+  z-index: 1;
+}
+
+.c5 .RcStepConnector-line {
+  border-color: #E5E5E5;
+}
+
+.c0 {
+  padding: 24px 0px 24px 0px;
+}
+
+<div
+  className="MuiPaper-root MuiStepper-root MuiStepper-horizontal c0 MuiStepper-alternativeLabel MuiPaper-elevation0"
+>
+  <div
+    className="MuiStep-root RcStep-root MuiStep-horizontal RcStep-horizontal c1 MuiStep-alternativeLabel"
+  >
+    <button
+      className="MuiButtonBase-root MuiStepButton-root MuiStepButton-horizontal c2"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiStepLabel-root MuiStepLabel-horizontal c3 MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel"
+      >
+        <span
+          className="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiStepIcon-root RcStepIcon-root MuiStepIcon-active RcStepIcon-active"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="12"
+            />
+            <text
+              className="MuiStepIcon-text RcStepIcon-text"
+              textAnchor="middle"
+              x="12"
+              y="16"
+            >
+              1
+            </text>
+          </svg>
+        </span>
+        <span
+          className="MuiStepLabel-labelContainer RcStepLabel-labelContainer"
+        >
+          <span
+            className="MuiTypography-root MuiStepLabel-label RcStepLabel-label MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel MuiStepLabel-active RcStepLabel-active MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            Select campaign settings
+          </span>
+          <h6
+            className="MuiTypography-root c4"
+            data-color="neutral.f03"
+            data-variant="subheading1"
+          >
+            optional
+          </h6>
+        </span>
+      </span>
+    </button>
+  </div>
+  <div
+    className="MuiStep-root RcStep-root MuiStep-horizontal RcStep-horizontal c1 MuiStep-alternativeLabel"
+  >
+    <div
+      className="MuiStepConnector-root MuiStepConnector-horizontal c5 MuiStepConnector-alternativeLabel"
+    >
+      <span
+        className="MuiStepConnector-line RcStepConnector-line MuiStepConnector-lineHorizontal"
+      />
+    </div>
+    <button
+      className="MuiButtonBase-root MuiStepButton-root MuiStepButton-horizontal c2"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiStepLabel-root MuiStepLabel-horizontal c3 MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel"
+      >
+        <span
+          className="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiStepIcon-root RcStepIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="12"
+            />
+            <text
+              className="MuiStepIcon-text RcStepIcon-text"
+              textAnchor="middle"
+              x="12"
+              y="16"
+            >
+              2
+            </text>
+          </svg>
+        </span>
+        <span
+          className="MuiStepLabel-labelContainer RcStepLabel-labelContainer"
+        >
+          <span
+            className="MuiTypography-root MuiStepLabel-label RcStepLabel-label MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            Select campaign settings
+          </span>
+        </span>
+      </span>
+    </button>
+  </div>
+  <div
+    className="MuiStep-root RcStep-root MuiStep-horizontal RcStep-horizontal c1 MuiStep-alternativeLabel"
+  >
+    <div
+      className="MuiStepConnector-root MuiStepConnector-horizontal c5 MuiStepConnector-alternativeLabel"
+    >
+      <span
+        className="MuiStepConnector-line RcStepConnector-line MuiStepConnector-lineHorizontal"
+      />
+    </div>
+    <button
+      className="MuiButtonBase-root MuiStepButton-root MuiStepButton-horizontal c2"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiStepLabel-root MuiStepLabel-horizontal c3 MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel"
+      >
+        <span
+          className="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiStepIcon-root RcStepIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="12"
+            />
+            <text
+              className="MuiStepIcon-text RcStepIcon-text"
+              textAnchor="middle"
+              x="12"
+              y="16"
+            >
+              3
+            </text>
+          </svg>
+        </span>
+        <span
+          className="MuiStepLabel-labelContainer RcStepLabel-labelContainer"
+        >
+          <span
+            className="MuiTypography-root MuiStepLabel-label RcStepLabel-label MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel MuiTypography-body2 MuiTypography-displayBlock"
+          >
+            Select campaign settings
+          </span>
+        </span>
+      </span>
+    </button>
+  </div>
+</div>
+`;

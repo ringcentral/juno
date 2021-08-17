@@ -1,0 +1,47 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/useRefState" />
+
+## useRefState
+
+### Functions
+
+- [useRefState](#const-userefstate)
+
+## Functions
+
+### `Const` useRefState
+
+▸ **useRefState**‹**T**›(`value`: T, `customUpdate?`: undefined | function): _[MutableRefObject‹T›, (Anonymous function)]_
+
+Returns a stateful like state with Ref, and a function to update it current value.
+can trigger update value without re-render
+
+**`example`**
+
+```ts
+const [inputRef, updateInput] = useRefState(123);
+
+if (needReRender) {
+  updateInput(456); // trigger re-render
+} else {
+  updateInput(456, false); // not trigger re-render
+}
+```
+
+**Type parameters:**
+
+▪ **T**
+
+**Parameters:**
+
+| Name            | Type                      | Description                                                                             |
+| --------------- | ------------------------- | --------------------------------------------------------------------------------------- |
+| `value`         | T                         | init value                                                                              |
+| `customUpdate?` | undefined &#124; function | you can custom you update method, or just set your `forceUpdate` to reuse same instance |
+
+**Returns:** _[MutableRefObject‹T›, (Anonymous function)]_
+
+an array with [ref, update]

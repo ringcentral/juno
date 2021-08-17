@@ -1,0 +1,71 @@
+import { Meta, Story } from '@storybook/react/types-6-0';
+import React, { ComponentProps } from 'react';
+
+import {
+  notControlInDocTable,
+  notShowInDocTable,
+  sortInDocTable,
+  switchToControlKnobs,
+} from '../../../../storybook';
+import { RcList } from '../../List';
+import { RcListItem } from '../../ListItem';
+import { RcListItemText } from '../../ListItemText';
+import { RcListSubheader } from '../ListSubheader';
+
+export default {
+  title: '🚀 Cleanup Components/Lists/ListSubheader',
+  component: RcListSubheader,
+  argTypes: {
+    ...sortInDocTable<keyof ListSubheaderProps>([]),
+    ...notControlInDocTable<keyof ListSubheaderProps>([]),
+    ...notShowInDocTable<keyof ListSubheaderProps>([]),
+  },
+} as Meta;
+
+type ListSubheaderProps = ComponentProps<typeof RcListSubheader>;
+
+export const ListSubheader: Story<ListSubheaderProps> = ({
+  children,
+  ...args
+}) => {
+  switchToControlKnobs();
+  return (
+    <RcList subheader={<li />} style={{ height: '200px', overflow: 'auto' }}>
+      {[0, 1, 2, 3, 4].map((sectionId) => (
+        <li key={`section-${sectionId}`}>
+          <ul>
+            <RcListSubheader
+              {...args}
+            >{`I'm sticky ${sectionId}`}</RcListSubheader>
+            {[0, 1, 2].map((item) => (
+              <RcListItem key={`item-${sectionId}-${item}`}>
+                <RcListItemText primary={`Item ${item}`} />
+              </RcListItem>
+            ))}
+          </ul>
+        </li>
+      ))}
+    </RcList>
+  );
+};
+
+ListSubheader.args = {};
+
+ListSubheader.argTypes = {
+  ...notControlInDocTable<keyof ListSubheaderProps>([]),
+};
+
+ListSubheader.parameters = {
+  tags: [
+    {
+      name: 'Mui',
+      href: 'https://material-ui.com/demos/lists/#pinned-subheader-list',
+    },
+    {
+      name: 'Accessibility',
+      value: '100%',
+    },
+  ],
+};
+
+ListSubheader.storyName = 'ListSubheader';

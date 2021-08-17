@@ -1,0 +1,383 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list Multiple DnD List 1`] = `
+.c1 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #121212;
+  cursor: default;
+}
+
+.c1.RcListItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c1.RcListItem-selected,
+.c1.RcListItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c1 .RcListItemTouchRipple-rippleVisible {
+  color: #666666;
+}
+
+.c1.RcListItem-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c1.RcListItem-dense {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.c1 .sc-oeezt {
+  margin-right: 0;
+}
+
+.c1 .sc-oeezt > .sc-fXgAZx {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.c0 {
+  height: 36px;
+  padding-top: 12px;
+  padding-bottom: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: #FFFFFF;
+  color: #666666;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c0.RcListSubheader-gutters {
+  padding-left: 16px;
+  padding-right: 8px;
+}
+
+.c0.RcListSubheader-inset {
+  padding-left: 72px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
+}
+
+<div
+  data-rbd-droppable-context-id="1"
+  data-rbd-droppable-id="all-groups"
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <div
+    className="RcDraggable-root"
+    data-rbd-draggable-context-id="1"
+    data-rbd-draggable-id="group-1"
+    onTransitionEnd={null}
+    style={
+      Object {
+        "transform": null,
+        "transition": null,
+      }
+    }
+  >
+    <li
+      aria-describedby="rbd-hidden-text-1-hidden-text-6"
+      className="MuiListSubheader-root c0 MuiListSubheader-gutters RcListSubheader-gutters"
+      data-rbd-drag-handle-context-id="1"
+      data-rbd-drag-handle-draggable-id="group-1"
+      draggable={false}
+      onDragStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Group 1
+    </li>
+    <div
+      className="MuiCollapse-container MuiCollapse-entered"
+      style={
+        Object {
+          "minHeight": "0px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner"
+        >
+          <ul
+            className="MuiList-root "
+            data-rbd-droppable-context-id="1"
+            data-rbd-droppable-id="group-1"
+            style={
+              Object {
+                "minHeight": "1px",
+              }
+            }
+          >
+            <div
+              aria-describedby="rbd-hidden-text-1-hidden-text-6"
+              aria-disabled={false}
+              className="MuiButtonBase-root MuiListItem-root c1 RcDraggable-root RcListItem-multiline MuiListItem-gutters RcListItem-gutters MuiListItem-button"
+              data-rbd-drag-handle-context-id="1"
+              data-rbd-drag-handle-draggable-id="item-1"
+              data-rbd-draggable-context-id="1"
+              data-rbd-draggable-id="item-1"
+              draggable={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onDragStart={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              onTransitionEnd={null}
+              role="button"
+              style={
+                Object {
+                  "transform": null,
+                  "transition": null,
+                }
+              }
+              tabIndex={0}
+            >
+              Item 1 Content
+            </div>
+            <div
+              aria-describedby="rbd-hidden-text-1-hidden-text-6"
+              aria-disabled={false}
+              className="MuiButtonBase-root MuiListItem-root c1 RcDraggable-root RcListItem-multiline MuiListItem-gutters RcListItem-gutters MuiListItem-button"
+              data-rbd-drag-handle-context-id="1"
+              data-rbd-drag-handle-draggable-id="item-2"
+              data-rbd-draggable-context-id="1"
+              data-rbd-draggable-id="item-2"
+              draggable={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onDragStart={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              onTransitionEnd={null}
+              role="button"
+              style={
+                Object {
+                  "transform": null,
+                  "transition": null,
+                }
+              }
+              tabIndex={0}
+            >
+              Item 2 Content
+            </div>
+            <div
+              aria-describedby="rbd-hidden-text-1-hidden-text-6"
+              aria-disabled={false}
+              className="MuiButtonBase-root MuiListItem-root c1 RcDraggable-root RcListItem-multiline MuiListItem-gutters RcListItem-gutters MuiListItem-button"
+              data-rbd-drag-handle-context-id="1"
+              data-rbd-drag-handle-draggable-id="item-3"
+              data-rbd-draggable-context-id="1"
+              data-rbd-draggable-id="item-3"
+              draggable={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onDragStart={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              onTransitionEnd={null}
+              role="button"
+              style={
+                Object {
+                  "transform": null,
+                  "transition": null,
+                }
+              }
+              tabIndex={0}
+            >
+              Item 3 Content
+            </div>
+            <div
+              aria-describedby="rbd-hidden-text-1-hidden-text-6"
+              aria-disabled={false}
+              className="MuiButtonBase-root MuiListItem-root c1 RcDraggable-root RcListItem-multiline MuiListItem-gutters RcListItem-gutters MuiListItem-button"
+              data-rbd-drag-handle-context-id="1"
+              data-rbd-drag-handle-draggable-id="item-4"
+              data-rbd-draggable-context-id="1"
+              data-rbd-draggable-id="item-4"
+              draggable={false}
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onDragStart={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              onTransitionEnd={null}
+              role="button"
+              style={
+                Object {
+                  "transform": null,
+                  "transition": null,
+                }
+              }
+              tabIndex={0}
+            >
+              Item 4 Content
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="RcDraggable-root"
+    data-rbd-draggable-context-id="1"
+    data-rbd-draggable-id="group-2"
+    onTransitionEnd={null}
+    style={
+      Object {
+        "transform": null,
+        "transition": null,
+      }
+    }
+  >
+    <li
+      aria-describedby="rbd-hidden-text-1-hidden-text-6"
+      className="MuiListSubheader-root c0 MuiListSubheader-gutters RcListSubheader-gutters"
+      data-rbd-drag-handle-context-id="1"
+      data-rbd-drag-handle-draggable-id="group-2"
+      draggable={false}
+      onDragStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Group 2
+    </li>
+    <div
+      className="MuiCollapse-container MuiCollapse-entered"
+      style={
+        Object {
+          "minHeight": "0px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner"
+        >
+          <ul
+            className="MuiList-root "
+            data-rbd-droppable-context-id="1"
+            data-rbd-droppable-id="group-2"
+            style={
+              Object {
+                "minHeight": "1px",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="RcDraggable-root"
+    data-rbd-draggable-context-id="1"
+    data-rbd-draggable-id="group-3"
+    onTransitionEnd={null}
+    style={
+      Object {
+        "transform": null,
+        "transition": null,
+      }
+    }
+  >
+    <li
+      aria-describedby="rbd-hidden-text-1-hidden-text-6"
+      className="MuiListSubheader-root c0 MuiListSubheader-gutters RcListSubheader-gutters"
+      data-rbd-drag-handle-context-id="1"
+      data-rbd-drag-handle-draggable-id="group-3"
+      draggable={false}
+      onDragStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      Group 3
+    </li>
+    <div
+      className="MuiCollapse-container MuiCollapse-entered"
+      style={
+        Object {
+          "minHeight": "0px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner"
+        >
+          <ul
+            className="MuiList-root "
+            data-rbd-droppable-context-id="1"
+            data-rbd-droppable-id="group-3"
+            style={
+              Object {
+                "minHeight": "1px",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

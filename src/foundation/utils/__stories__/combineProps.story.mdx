@@ -1,0 +1,186 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Utils/combineProps" />
+
+## combineProps
+
+### Type aliases
+
+- [GroupChildProps](#groupchildprops)
+
+### Functions
+
+- [combineClasses](#const-combineclasses)
+- [combineProps](#const-combineprops)
+- [innerCombineProps](#const-innercombineprops)
+- [mergeChildProps](#mergechildprops)
+
+## Type aliases
+
+### GroupChildProps
+
+Ƭ **GroupChildProps**: _object_
+
+#### Type declaration:
+
+- **baseProps**: _any_
+
+- **combineAllString**? : _undefined | false | true_
+
+- **coverPropKeys**? : _any[]_
+
+- **newProps**: _any_
+
+## Functions
+
+### `Const` combineClasses
+
+▸ **combineClasses**‹**T**›(`baseClasses`: T, `newClasses`: T): _NonNullable‹T›_
+
+Combine two classes
+
+**`example`**
+
+```ts
+combineClasses(
+{
+root: 'a1',
+input: 'a1',
+un1: undefined,
+un2: 'a4',
+},
+{
+root: 'a1',
+input: 'a2',
+un1: 'a3',
+un2: undefined,
+un3: 'a5',
+},
+)
+// output result:
+{
+root: 'a1 a1',
+input: 'a1 a2',
+un1: 'a3',
+un2: 'a4',
+un3: 'a5',
+}
+```
+
+**Type parameters:**
+
+▪ **T**
+
+**Parameters:**
+
+| Name          | Type | Description                               |
+| ------------- | ---- | ----------------------------------------- |
+| `baseClasses` | T    | base classes you want to combine together |
+| `newClasses`  | T    | new classes want to combine in to props   |
+
+**Returns:** _NonNullable‹T›_
+
+---
+
+### `Const` combineProps
+
+▸ **combineProps**‹**T**›(`baseProps`: T, `newProps`: T, `coverPropKeys?`: keyof T[]): _NonNullable‹T›_
+
+Combine props object together
+
+that will group className, classes together
+function will auto combine together,
+trigger order is `intoProps.someFn(e) => defaultProps.someFn(e)`
+
+**`example`**
+
+```tsx
+combineProps(
+{
+children: <A />,
+value: '1',
+className: 'a1',
+classes: {
+root: 'root1'
+},
+count: 1,
+size: 'large',
+onClick: fn1
+},
+{
+children: <B />,
+value: '2',
+className: 'a2',
+classes: {
+root: 'root2'
+},
+count: 2,
+size: undefined,
+onClick: fn2
+},
+)
+// output result:
+{
+children: <B />,
+value: '2',
+className: 'a1 a2',
+classes: {
+root: 'root1 root2'
+},
+count: 2,
+size: 'large',
+onClick: (e) => {
+fn2(e);
+fn1(e);
+}
+}
+```
+
+**Type parameters:**
+
+▪ **T**
+
+**Parameters:**
+
+| Name             | Type      | Description                                                                             |
+| ---------------- | --------- | --------------------------------------------------------------------------------------- |
+| `baseProps`      | T         | base props you want to combine together                                                 |
+| `newProps`       | T         | want to combine in to props                                                             |
+| `coverPropKeys?` | keyof T[] | some prop key you want to cover, not combine when type is function, ex. `ComponentType` |
+
+**Returns:** _NonNullable‹T›_
+
+---
+
+### `Const` innerCombineProps
+
+▸ **innerCombineProps**(`params`: [GroupChildProps](#groupchildprops)): _any_
+
+**Parameters:**
+
+| Name     | Type                                |
+| -------- | ----------------------------------- |
+| `params` | [GroupChildProps](#groupchildprops) |
+
+**Returns:** _any_
+
+---
+
+### mergeChildProps
+
+▸ **mergeChildProps**(`__namedParameters`: object): _any_
+
+**Parameters:**
+
+▪ **\_\_namedParameters**: _object_
+
+| Name               | Type                               |
+| ------------------ | ---------------------------------- |
+| `baseProps`        | any                                |
+| `combineAllString` | undefined &#124; false &#124; true |
+| `coverPropKeys`    | undefined &#124; any[]             |
+| `newProps`         | any                                |
+
+**Returns:** _any_

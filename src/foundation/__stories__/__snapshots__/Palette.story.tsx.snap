@@ -1,0 +1,4530 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
+.c6 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c3.RcIconButton-root {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  color: #666666;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+}
+
+.c3.RcIconButton-root .c4 {
+  font-size: 20px;
+}
+
+.c3.RcIconButton-root:active .c4 {
+  color: #666666;
+}
+
+.c3.RcIconButton-root.focus-visible,
+.c3.RcIconButton-root[data-focus-visible-added] {
+  background-color: transparent;
+}
+
+.c3.RcIconButton-root.focus-visible:active .c4,
+.c3.RcIconButton-root[data-focus-visible-added]:active .c4 {
+  color: rgba(102,102,102,0.88);
+}
+
+.c3.RcIconButton-root.focus-visible:after,
+.c3.RcIconButton-root[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.c3.RcIconButton-persistBg {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c3.RcIconButton-disabled .c4 {
+  color: #B9B9B9;
+}
+
+.c3.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c3.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c3.RcIconButton-contained {
+  color: #fff;
+  background-color: #666666;
+}
+
+.c3.RcIconButton-contained:active {
+  background-color: rgb(91,91,91);
+}
+
+.c3.RcIconButton-contained:active .c4 {
+  color: #fff;
+}
+
+.c3.RcIconButton-contained.focus-visible,
+.c3.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgb(91,91,91);
+}
+
+.c3.RcIconButton-contained.focus-visible:active .c4,
+.c3.RcIconButton-contained[data-focus-visible-added]:active .c4 {
+  color: #fff;
+}
+
+.c3 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c1 *:not(input) + .c2 {
+  margin-left: 12px;
+}
+
+.c1.RcTextField-root {
+  margin: 0 0 16px 0;
+}
+
+.c1 .RcTextFieldInputLabel-root {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1 .RcTextFieldInputLabel-focused {
+  color: #066FAC;
+}
+
+.c1 .RcTextFieldInput-root {
+  color: #121212;
+}
+
+.c1 .RcTextFieldInput-root .{
+  display: none;
+}
+
+.c1 .RcTextFieldInput-input {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+}
+
+.c1 .RcTextFieldInput-input::-webkit-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c1 .RcTextFieldInput-input::-moz-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c1 .RcTextFieldInput-input:-ms-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c1 .RcTextFieldInput-input::placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c1 .RcTextFieldInput-underline:before {
+  border-bottom-color: #939393;
+}
+
+.c1 .RcTextFieldInput-underline:after {
+  border-bottom-color: #066FAC;
+}
+
+.c1 .RcTextFieldInput-error:after {
+  border-bottom-color: #BE3933;
+}
+
+.c1 .RcTextFieldInput-disabled {
+  color: #B9B9B9;
+  -webkit-text-fill-color: #B9B9B9;
+}
+
+.c1 .RcTextFieldInput-disabled::-webkit-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c1 .RcTextFieldInput-disabled::-moz-placeholder {
+  color: #B9B9B9;
+}
+
+.c1 .RcTextFieldInput-disabled:-ms-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c1 .RcTextFieldInput-disabled::placeholder {
+  color: #B9B9B9;
+}
+
+.c1 .RcTextFieldInput-disabled:before {
+  border-bottom-style: solid;
+  border-bottom-color: #B9B9B9;
+}
+
+.c1 .RcTextFieldInput-disabled:after {
+  border-bottom-style: none;
+}
+
+.c1 .RcTextFieldFormHelperText-root {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c1 .RcTextFieldFormHelperText-error {
+  color: #BE3933;
+}
+
+.c1 .RcTextFieldFormHelperText-disabled {
+  color: #B9B9B9;
+}
+
+.c1 .RcTextFieldInputLabel-error {
+  color: #BE3933;
+}
+
+.c1 .RcTextFieldInputLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c1 input[type='search']::-ms-clear,
+.c1 input[type='search']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.c1 input[type='search']::-webkit-search-decoration,
+.c1 input[type='search']::-webkit-search-cancel-button,
+.c1 input[type='search']::-webkit-search-results-button,
+.c1 input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+.c1 *:not(input) + .c2 {
+  margin-left: 12px;
+}
+
+.c1 * + .RcOutlineTextFieldInput-input {
+  margin-left: 16px;
+}
+
+.c1.RcTextField-root label + .RcOutlineTextFieldInput-root {
+  margin-top: 22px;
+}
+
+.c1 .RcOutlineTextFieldInput-root {
+  -webkit-tap-highlight-color: transparent;
+  height: 40px;
+  min-height: 40px;
+  background: #FFFFFF;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.c1 .RcOutlineTextFieldInput-root:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  -webkit-transition: none;
+  transition: none;
+  border-bottom: none !important;
+  pointer-events: none;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
+}
+
+.c1 .RcOutlineTextFieldInput-root:not(.RcOutlineTextFieldInput-focused):not(.RcOutlineTextFieldInput-disabled):hover {
+  background: #F9F9F9;
+}
+
+.c1 .RcOutlineTextFieldInput-focused:before {
+  box-shadow: inset 0 0 0 1px #066FAC;
+}
+
+.c1 .RcOutlineTextFieldInput-error:before {
+  box-shadow: inset 0 0 0 1px #BE3933;
+}
+
+.c1 .RcOutlineTextFieldInput-disabled {
+  background: #F3F3F3;
+}
+
+.c1 .RcOutlineTextFieldInput-disabled:before {
+  box-shadow: inset 0 0 0 1px #B9B9B9;
+}
+
+.c7 {
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 40px;
+  color: #121212;
+}
+
+.c12 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c13 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #494949;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: calc(100vh - 40px - 0.7rem);
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex: 1 1 245px;
+  -ms-flex: 1 1 245px;
+  flex: 1 1 245px;
+  max-width: 245px;
+  min-width: 245px;
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+.c8 {
+  margin: 16px;
+}
+
+.c10 {
+  background: #FFF7EB;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c14 {
+  background: #FFE7C1;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c15 {
+  background: #F6AD16;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c16 {
+  background: #896219;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c17 {
+  background: #F0FCEF;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c18 {
+  background: #CEF4CE;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c19 {
+  background: #3C9949;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c20 {
+  background: #368541;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c21 {
+  background: #32773B;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c22 {
+  background: #46BE59;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c23 {
+  background: #494949;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c24 {
+  background: #666666;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c25 {
+  background: #066FAC;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c26 {
+  background: #5A5ABF;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c27 {
+  background: #8E6B2B;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c28 {
+  background: #509AC4;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c29 {
+  background: #7A7000;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c30 {
+  background: #1A70C1;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c31 {
+  background: #04549F;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c32 {
+  background: #3C7E44;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c33 {
+  background: #A14B00;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c34 {
+  background: #047C68;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c35 {
+  background: #C93637;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c36 {
+  background: #FFF7F5;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c37 {
+  background: #FFE5E0;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c38 {
+  background: #E6413C;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c39 {
+  background: #D63E39;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c40 {
+  background: #BE3933;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c41 {
+  background: #F88878;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c42 {
+  background: #FFFFFF;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c43 {
+  background: rgba(255,255,255,0.88);
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c44 {
+  background: #B9B9B9;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c45 {
+  background: rgba(255,255,255,0.16);
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c46 {
+  background: rgba(255,255,255,0.08);
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c47 {
+  background: transparent;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c48 {
+  background: rgba(0,0,0,0.12);
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c49 {
+  background: #121212;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c50 {
+  background: rgba(255,255,255,0.32);
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c51 {
+  background: rgba(255,255,255,0.48);
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c52 {
+  background: #FF8800;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c53 {
+  background: #FFDFB1;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c54 {
+  background: #F6F9FC;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c55 {
+  background: #E3EBF4;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c56 {
+  background: #E6F2F8;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c57 {
+  background: #CD6E0D;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c58 {
+  background: #A15600;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c59 {
+  background: #8A77E3;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c60 {
+  background: #6C5DAF;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c61 {
+  background: #3093A4;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c62 {
+  background: #2B727F;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c63 {
+  background: #B17D1A;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c64 {
+  background: #F9F9F9;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c65 {
+  background: #939393;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c66 {
+  background: #757575;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c67 {
+  background: #E5E5E5;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c68 {
+  background: #F3F3F3;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c69 {
+  background: #000000;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c70 {
+  background: #C7C7C7;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c11 {
+  margin-left: 8px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c3.RcIconButton-root:hover {
+    background-color: transparent;
+  }
+
+  .c3.RcIconButton-root:hover .c4 {
+    color: rgba(102,102,102,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c3.RcIconButton-contained:hover {
+    background-color: rgb(91,91,91);
+  }
+
+  .c3.RcIconButton-contained:hover .c4 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
+    border-bottom-color: #121212;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root RcTextField-root c1 MuiFormControl-fullWidth"
+  >
+    <div
+      className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcOutlineTextFieldInput-root MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input RcOutlineTextFieldInput-input MuiInputBase-inputAdornedEnd"
+        disabled={false}
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Search color token or color value"
+        required={false}
+        type="text"
+        value=""
+      />
+      <button
+        aria-hidden={true}
+        className="MuiButtonBase-root c2 c3 RcIconButton-root"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="c4 c5 delete_circle icon"
+        >
+          <svg
+            className="c6"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+            />
+          </svg>
+          
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-301"
+  >
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      warning
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c10"
+          color="#FFF7EB"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            warning.b01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFF7EB
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c14"
+          color="#FFE7C1"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            warning.b02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFE7C1
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c15"
+          color="#F6AD16"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            warning.b03
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #F6AD16
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c15"
+          color="#F6AD16"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            warning.f01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #F6AD16
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c16"
+          color="#896219"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            warning.f02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #896219
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c15"
+          color="#F6AD16"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            warning.f11
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #F6AD16
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      success
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c17"
+          color="#F0FCEF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            success.b01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #F0FCEF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c18"
+          color="#CEF4CE"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            success.b02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #CEF4CE
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c19"
+          color="#3C9949"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            success.b03
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #3C9949
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c20"
+          color="#368541"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            success.b04
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #368541
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c19"
+          color="#3C9949"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            success.b05
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #3C9949
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c18"
+          color="#CEF4CE"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            success.f01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #CEF4CE
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c21"
+          color="#32773B"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            success.f02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #32773B
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c22"
+          color="#46BE59"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            success.f11
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #46BE59
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      action
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c23"
+          color="#494949"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            action.grayDark
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #494949
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c24"
+          color="#666666"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            action.grayLight
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #666666
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c25"
+          color="#066FAC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            action.primary
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #066FAC
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      avatar
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c24"
+          color="#666666"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            avatar.ash
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #666666
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c26"
+          color="#5A5ABF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            avatar.blueberry
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #5A5ABF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c27"
+          color="#8E6B2B"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            avatar.brass
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #8E6B2B
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c28"
+          color="#509AC4"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            avatar.global
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #509AC4
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c29"
+          color="#7A7000"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            avatar.gold
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #7A7000
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c30"
+          color="#1A70C1"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            avatar.lake
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #1A70C1
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c31"
+          color="#04549F"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            avatar.oasis
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #04549F
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c32"
+          color="#3C7E44"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            avatar.pear
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #3C7E44
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c33"
+          color="#A14B00"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            avatar.persimmon
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #A14B00
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c34"
+          color="#047C68"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            avatar.sage
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #047C68
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c35"
+          color="#C93637"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            avatar.tomato
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #C93637
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      content
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c25"
+          color="#066FAC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            content.brand
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #066FAC
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      danger
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c36"
+          color="#FFF7F5"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            danger.b01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFF7F5
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c37"
+          color="#FFE5E0"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            danger.b02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFE5E0
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c38"
+          color="#E6413C"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            danger.b03
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #E6413C
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c39"
+          color="#D63E39"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            danger.b04
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #D63E39
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c37"
+          color="#FFE5E0"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            danger.f01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFE5E0
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c40"
+          color="#BE3933"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            danger.f02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #BE3933
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c41"
+          color="#F88878"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            danger.f11
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #F88878
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      dialHeader
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            dialHeader.avatarBg
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c25"
+          color="#066FAC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            dialHeader.avatarIcon
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #066FAC
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c25"
+          color="#066FAC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            dialHeader.bg
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #066FAC
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            dialHeader.focusBorder
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            dialHeader.icon
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            dialHeader.text
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c43"
+          color="rgba(255,255,255,0.88)"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            dialHeader.textHint
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            rgba(255,255,255,0.88)
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      disabled
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c44"
+          color="#B9B9B9"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            disabled.b01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #B9B9B9
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            disabled.f01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c44"
+          color="#B9B9B9"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            disabled.f02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #B9B9B9
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      header
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c25"
+          color="#066FAC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            header.bgLeft
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #066FAC
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c45"
+          color="rgba(255,255,255,0.16)"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            header.bgOverlay
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            rgba(255,255,255,0.16)
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c46"
+          color="rgba(255,255,255,0.08)"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            header.bgOverlayDisabled
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            rgba(255,255,255,0.08)
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c28"
+          color="#509AC4"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            header.bgRight
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #509AC4
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c47"
+          color="transparent"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            header.border
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            transparent
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c48"
+          color="rgba(0,0,0,0.12)"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            header.divider
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            rgba(0,0,0,0.12)
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            header.fabBg
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c49"
+          color="#121212"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            header.fabIcon
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #121212
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            header.focusBorder
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            header.icon
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c50"
+          color="rgba(255,255,255,0.32)"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            header.iconDisabled
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            rgba(255,255,255,0.32)
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            header.text
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c51"
+          color="rgba(255,255,255,0.48)"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            header.textHint
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            rgba(255,255,255,0.48)
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      highContrast
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c47"
+          color="transparent"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            highContrast
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            transparent
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      highlight
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c52"
+          color="#FF8800"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            highlight.b01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FF8800
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c53"
+          color="#FFDFB1"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            highlight.b02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFDFB1
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c52"
+          color="#FF8800"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            highlight.b03
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FF8800
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c49"
+          color="#121212"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            highlight.f01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #121212
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c52"
+          color="#FF8800"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            highlight.f02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FF8800
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      informative
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c54"
+          color="#F6F9FC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            informative.b01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #F6F9FC
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c55"
+          color="#E3EBF4"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            informative.f01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #E3EBF4
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c25"
+          color="#066FAC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            informative.f02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #066FAC
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      interactive
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c56"
+          color="#E6F2F8"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            interactive.b01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #E6F2F8
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c25"
+          color="#066FAC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            interactive.b02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #066FAC
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c25"
+          color="#066FAC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            interactive.f01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #066FAC
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      label
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c49"
+          color="#121212"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            label.black02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #121212
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c25"
+          color="#066FAC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            label.blue01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #066FAC
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c25"
+          color="#066FAC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            label.blue02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #066FAC
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c19"
+          color="#3C9949"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            label.green01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #3C9949
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c21"
+          color="#32773B"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            label.green02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #32773B
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c57"
+          color="#CD6E0D"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            label.orange01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #CD6E0D
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c58"
+          color="#A15600"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            label.orange02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #A15600
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c59"
+          color="#8A77E3"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            label.purple01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #8A77E3
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c60"
+          color="#6C5DAF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            label.purple02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #6C5DAF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c38"
+          color="#E6413C"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            label.red01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #E6413C
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c40"
+          color="#BE3933"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            label.red02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #BE3933
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c61"
+          color="#3093A4"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            label.teal01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #3093A4
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c62"
+          color="#2B727F"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            label.teal02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #2B727F
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c63"
+          color="#B17D1A"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            label.yellow01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #B17D1A
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c16"
+          color="#896219"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            label.yellow02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #896219
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      nav
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            nav.b01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c64"
+          color="#F9F9F9"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            nav.b02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #F9F9F9
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c25"
+          color="#066FAC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            nav.bookmark
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #066FAC
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c65"
+          color="#939393"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            nav.ctlDefault
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #939393
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c25"
+          color="#066FAC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            nav.ctlSelected
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #066FAC
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c66"
+          color="#757575"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            nav.f01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #757575
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c24"
+          color="#666666"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            nav.f02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #666666
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c23"
+          color="#494949"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            nav.f03
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #494949
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c49"
+          color="#121212"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            nav.f04
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #121212
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c49"
+          color="#121212"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            nav.iconDefault
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #121212
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c25"
+          color="#066FAC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            nav.iconSelected
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #066FAC
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c67"
+          color="#E5E5E5"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            nav.line
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #E5E5E5
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c52"
+          color="#FF8800"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            nav.mention
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FF8800
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c25"
+          color="#066FAC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            nav.menuBg
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #066FAC
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            nav.menuText
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      neutral
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.b01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c64"
+          color="#F9F9F9"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.b02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #F9F9F9
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c68"
+          color="#F3F3F3"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.b03
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #F3F3F3
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c24"
+          color="#666666"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.b04
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #666666
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c23"
+          color="#494949"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.b05
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #494949
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c69"
+          color="#000000"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.b06
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #000000
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.elevation
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.f01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c65"
+          color="#939393"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.f02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #939393
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c66"
+          color="#757575"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.f03
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #757575
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c24"
+          color="#666666"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.f04
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #666666
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c23"
+          color="#494949"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.f05
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #494949
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c49"
+          color="#121212"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.f06
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #121212
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c49"
+          color="#121212"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.f07
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #121212
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.f11
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.l01
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c67"
+          color="#E5E5E5"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.l02
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #E5E5E5
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c70"
+          color="#C7C7C7"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.l03
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #C7C7C7
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c24"
+          color="#666666"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.l04
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #666666
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c47"
+          color="transparent"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            neutral.transparent
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            transparent
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      presence
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c19"
+          color="#3C9949"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            presence.available
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #3C9949
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c38"
+          color="#E6413C"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            presence.busy
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #E6413C
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c65"
+          color="#939393"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            presence.invisible
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #939393
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      subAction
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c25"
+          color="#066FAC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            subAction
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #066FAC
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      tab
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c49"
+          color="#121212"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            tab.default
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #121212
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c25"
+          color="#066FAC"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            tab.selected
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #066FAC
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4
+      className="MuiTypography-root c7"
+      data-color="neutral.f06"
+      data-variant="display1"
+    >
+      umi
+    </h4>
+    <div
+      className="c8"
+    >
+      <div
+        className="c9"
+      >
+        <div
+          className="c24"
+          color="#666666"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            umi.bg
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #666666
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c52"
+          color="#FF8800"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            umi.mentioned
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FF8800
+          </p>
+        </div>
+      </div>
+      <div
+        className="c9"
+      >
+        <div
+          className="c42"
+          color="#FFFFFF"
+        />
+        <div
+          className="c11"
+        >
+          <p
+            className="MuiTypography-root c12"
+            data-color="neutral.f06"
+            data-variant="body1"
+          >
+            umi.text
+          </p>
+          <p
+            className="MuiTypography-root c13"
+            data-color="neutral.f05"
+            data-variant="body1"
+          >
+            #FFFFFF
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

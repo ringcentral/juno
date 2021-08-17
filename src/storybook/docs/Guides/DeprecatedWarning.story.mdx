@@ -1,0 +1,23 @@
+<Meta title="📖 Guides/Deprecated Warning" />
+
+## Deprecated Warning
+
+If you use some deprecated methods, we will show warning when you use in development mode,
+if you don't want see those warning, you can turn off that by set
+
+```ts
+import { configure } from '@ringcentral/juno';
+
+configure({
+  warning: false,
+});
+```
+
+or just use window to set
+
+```ts
+window.__JUNO__.WARNING_IGNORE = true;
+```
+
+**BUT, Don't recommended you close it, we should avoid use any deprecated props or methods.**
+

@@ -1,0 +1,44 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/useEventListener" />
+
+## useEventListener
+
+### Functions
+
+- [useEventListener](#useeventlistener)
+
+## Functions
+
+### useEventListener
+
+▸ **useEventListener**(`target?`: EventTarget | null | RefObject‹HTMLElement›, ...`o`: Parameters‹EventTarget["addEventListener"]›): _object_
+
+bind event when component mount and auto remove event when destroy.
+can remove listener by call returned function or pass empty 'target'.
+
+**`example`**
+
+```ts
+useEventListener(window, "keyup", () => console.log("window key up"));
+```
+
+**Parameters:**
+
+| Name      | Type                                                  | Description                                                                                                    |
+| --------- | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `target?` | EventTarget &#124; null &#124; RefObject‹HTMLElement› | listener will be removed when target is changed to null, or rebinding to new element when `ref.current` change |
+| `...o`    | Parameters‹EventTarget["addEventListener"]›           | -                                                                                                              |
+
+**Returns:** _object_
+
+a method object
+
+- listen() listen listener again, if that have listener, that will not listen again
+- remove() remove listener
+
+* **listen**(): _void_
+
+* **remove**(): _void_

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Virtuoso Virtuoso Example 1`] = `
+<div
+  style={
+    Object {
+      "WebkitOverflowScrolling": "touch",
+      "height": "200px",
+      "outline": "none",
+      "overflowY": "auto",
+      "position": "relative",
+    }
+  }
+  tabIndex={0}
+>
+  <div
+    style={
+      Object {
+        "height": "100%",
+        "position": "absolute",
+        "top": 0,
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "marginTop": 0,
+          "paddingBottom": 0,
+          "paddingTop": 0,
+        }
+      }
+    />
+  </div>
+</div>
+`;

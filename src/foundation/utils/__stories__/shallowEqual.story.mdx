@@ -1,0 +1,63 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Utils/shallowEqual" />
+
+## shallowEqual
+
+### Variables
+
+- [hasOwnProperty](#const-hasownproperty)
+
+### Functions
+
+- [is](#is)
+- [shallowEqual](#shallowequal)
+
+## Variables
+
+### `Const` hasOwnProperty
+
+• **hasOwnProperty**: _hasOwnProperty_ = Object.prototype.hasOwnProperty
+
+## Functions
+
+### is
+
+▸ **is**(`x`: any, `y`: any): _boolean_
+
+inlined Object.is polyfill to avoid requiring consumers ship their own
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+
+**Parameters:**
+
+| Name | Type |
+| ---- | ---- |
+| `x`  | any  |
+| `y`  | any  |
+
+**Returns:** _boolean_
+
+---
+
+### shallowEqual
+
+▸ **shallowEqual**‹**T**›(`objA`: T, `objB`: T): _boolean_
+
+Performs equality by iterating through keys on an object and returning false
+when any key has values which are not strictly equal between the arguments.
+Returns true when the values of all keys are strictly equal.
+
+**Type parameters:**
+
+▪ **T**
+
+**Parameters:**
+
+| Name   | Type |
+| ------ | ---- |
+| `objA` | T    |
+| `objB` | T    |
+
+**Returns:** _boolean_

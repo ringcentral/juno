@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Dialer/DialDelete DialDelete 1`] = `
+.c3 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c0.RcIconButton-root {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  color: #666666;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+}
+
+.c0.RcIconButton-root .c1 {
+  font-size: 24px;
+}
+
+.c0.RcIconButton-root:active .c1 {
+  color: #666666;
+}
+
+.c0.RcIconButton-root.focus-visible,
+.c0.RcIconButton-root[data-focus-visible-added] {
+  background-color: transparent;
+}
+
+.c0.RcIconButton-root.focus-visible:active .c1,
+.c0.RcIconButton-root[data-focus-visible-added]:active .c1 {
+  color: rgba(102,102,102,0.88);
+}
+
+.c0.RcIconButton-root.focus-visible:after,
+.c0.RcIconButton-root[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.c0.RcIconButton-persistBg {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0.RcIconButton-disabled .c1 {
+  color: #B9B9B9;
+}
+
+.c0.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c0.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c0.RcIconButton-contained {
+  color: #fff;
+  background-color: #666666;
+}
+
+.c0.RcIconButton-contained:active {
+  background-color: rgb(91,91,91);
+}
+
+.c0.RcIconButton-contained:active .c1 {
+  color: #fff;
+}
+
+.c0.RcIconButton-contained.focus-visible,
+.c0.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgb(91,91,91);
+}
+
+.c0.RcIconButton-contained.focus-visible:active .c1,
+.c0.RcIconButton-contained[data-focus-visible-added]:active .c1 {
+  color: #fff;
+}
+
+.c0 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcIconButton-root:hover {
+    background-color: transparent;
+  }
+
+  .c0.RcIconButton-root:hover .c1 {
+    color: rgba(102,102,102,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcIconButton-contained:hover {
+    background-color: rgb(91,91,91);
+  }
+
+  .c0.RcIconButton-contained:hover .c1 {
+    color: #fff;
+  }
+}
+
+<button
+  aria-describedby={null}
+  aria-label="delete"
+  className="MuiButtonBase-root c0 RcIconButton-root"
+  data-sign="deleteButton"
+  disabled={false}
+  onBlur={[Function]}
+  onContextMenu={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOver={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  title="delete"
+  type="button"
+>
+  <span
+    className="c1 c2 deletenumber icon"
+  >
+    <svg
+      className="c3"
+      viewBox="0 0 32 32"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M28 6a2 2 0 012 2v16a2 2 0 01-2 2H10.891a2.003 2.003 0 01-1.487-.662l-7.2-8a2 2 0 010-2.676l7.2-8c.379-.421.92-.662 1.487-.662H28zm-1 2H11.336a.996.996 0 00-.743.331l-6.3 7a1 1 0 000 1.338l6.3 7a1 1 0 00.743.331H27a1 1 0 001-1V9a1 1 0 00-1-1zm-10.536 3.05L20 14.584l3.536-3.534a.999.999 0 111.414 1.414l-3.536 3.534 3.536 3.537a.999.999 0 11-1.414 1.414L20 17.412l-3.536 3.537a.999.999 0 11-1.414-1.414l3.536-3.537-3.536-3.534a.999.999 0 111.414-1.414z"
+      />
+    </svg>
+    
+  </span>
+</button>
+`;

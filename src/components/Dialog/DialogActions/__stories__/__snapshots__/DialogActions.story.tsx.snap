@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogActions DialogActions 1`] = `
+.c1 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c1 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c1 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c1.RcButton-text {
+  color: #066FAC;
+}
+
+.c1.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c1.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c1.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c0 {
+  padding: 8px 24px 24px;
+}
+
+.c0 > * + * {
+  margin-left: 8px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<div
+  className="MuiDialogActions-root c0"
+>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c1"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Cancel
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Ok
+    </span>
+  </button>
+</div>
+`;

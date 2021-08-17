@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Buttons/ButtonBase ButtonBase 1`] = `
+.c1 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0 .ripple {
+  color: red;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="MuiButtonBase-root "
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <p
+      className="MuiTypography-root c1"
+      data-color="neutral.f06"
+      data-variant="body1"
+    >
+      cool
+    </p>
+  </button>
+</div>
+`;

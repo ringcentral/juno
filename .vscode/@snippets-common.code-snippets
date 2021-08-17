@@ -1,0 +1,27 @@
+{
+  // https://code.visualstudio.com/docs/editor/userdefinedsnippets#_creating-your-own-snippets
+  "reduce": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": ".reduce",
+    "body": [
+      ".reduce((prev, curr, i) => {",
+      "  $2",
+      "  return prev;",
+      "}, ${1:{\\}});",
+      ""
+    ],
+    "description": "i18n.getString"
+  },
+  "/** */": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "/*",
+    "body": ["/** $1 */"],
+    "description": "/** $1 */"
+  },
+  "Cleanup": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "cleanup Components/",
+    "body": ["🚀 Cleanup Components/"],
+    "description": "🚀 Cleanup Components/"
+  }
+}

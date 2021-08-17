@@ -1,0 +1,179 @@
+{
+  // https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "browser-preview",
+      "request": "launch",
+      "name": "Browser Preview: Launch",
+      "url": "http://localhost:6006"
+    },
+    {
+      "name": "Attach to Chrome",
+      "port": 9222,
+      "request": "attach",
+      "type": "chrome",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "preLaunchTask": "Open Chrome"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome",
+      // "preLaunchTask": "Run Storybook",
+      "url": "http://localhost:6006",
+      "internalConsoleOptions": "openOnSessionStart",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Jest Current File",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": ["--watch", "${file}"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true
+    },
+    {
+      "name": "getTypeDocToMdx",
+      "type": "node",
+      "request": "launch",
+      "args": [
+        "${workspaceRoot}/scripts/tsdocToMdx/getTypeDocToMdx.ts",
+        "${relativeFileDirname}",
+        "${input:storyDir}"
+      ],
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "cwd": "${workspaceRoot}",
+      "protocol": "inspector",
+      "internalConsoleOptions": "openOnSessionStart",
+      "env": {
+        "TS_NODE_IGNORE": "false"
+      }
+    },
+    {
+      "name": "tsdocToMdx",
+      "type": "node",
+      "request": "launch",
+      "args": ["${workspaceRoot}/scripts/tsdocToMdx/tsdocToMdx.ts"],
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "cwd": "${workspaceRoot}",
+      "protocol": "inspector",
+      "internalConsoleOptions": "openOnSessionStart",
+      "env": {
+        "TS_NODE_IGNORE": "false"
+      }
+    },
+    {
+      "name": "create component",
+      "type": "node",
+      "request": "launch",
+      "args": [
+        "${workspaceRoot}/scripts/generator",
+        "${input:componentDestination}"
+      ],
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "cwd": "${workspaceRoot}",
+      "protocol": "inspector",
+      "internalConsoleOptions": "openOnSessionStart",
+      "env": {
+        "TS_NODE_IGNORE": "false"
+      }
+    },
+    {
+      "name": "create mdx",
+      "type": "node",
+      "request": "launch",
+      "args": [
+        "${workspaceRoot}/scripts/generator/mdx",
+        "${input:componentDestination}"
+      ],
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "cwd": "${workspaceRoot}",
+      "protocol": "inspector",
+      "internalConsoleOptions": "openOnSessionStart",
+      "env": {
+        "TS_NODE_IGNORE": "false"
+      }
+    },
+    {
+      "name": "markWithDeprecated",
+      "type": "node",
+      "request": "launch",
+      "args": ["${workspaceRoot}/scripts/markWithDeprecated", "${file}"],
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "cwd": "${workspaceRoot}",
+      "protocol": "inspector",
+      "internalConsoleOptions": "openOnSessionStart",
+      "env": {
+        "TS_NODE_IGNORE": "false"
+      }
+    },
+    {
+      "name": "theme to scss",
+      "type": "node",
+      "request": "launch",
+      "args": ["${workspaceRoot}/scripts/jsonToScss"],
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "cwd": "${workspaceRoot}",
+      "protocol": "inspector",
+      "internalConsoleOptions": "openOnSessionStart",
+      "env": {
+        "TS_NODE_IGNORE": "false"
+      }
+    },
+    {
+      "name": "add theme token overrides",
+      "type": "node",
+      "request": "launch",
+      "args": ["${workspaceRoot}/scripts/getOverrides"],
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "cwd": "${workspaceRoot}",
+      "protocol": "inspector",
+      "internalConsoleOptions": "openOnSessionStart",
+      "env": {
+        "TS_NODE_IGNORE": "false"
+      }
+    },
+    {
+      "name": "create palette type",
+      "type": "node",
+      "request": "launch",
+      "args": ["${workspaceRoot}/scripts/createPaletteType"],
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "cwd": "${workspaceRoot}",
+      "protocol": "inspector",
+      "internalConsoleOptions": "openOnSessionStart",
+      "env": {
+        "TS_NODE_IGNORE": "false"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "componentDestination",
+      "description": "Component destination?"
+    },
+    {
+      "type": "promptString",
+      "id": "targetUrl",
+      "description": "Switch svg to component from?"
+    },
+    {
+      "type": "promptString",
+      "id": "storyDir",
+      "description": "What is that stories folder?",
+      "default": "API Reference/"
+    },
+    {
+      "type": "pickString",
+      "id": "mode",
+      "default": "",
+      "description": "what mode?",
+      "options": ["--default", "--inner"]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/useA11yKeyEvent" />
+
+## useA11yKeyEvent
+
+### Type aliases
+
+- [useA11yKeyEventOptions](#usea11ykeyeventoptions)
+
+### Functions
+
+- [useA11yKeyEvent](#const-usea11ykeyevent)
+
+## Type aliases
+
+### useA11yKeyEventOptions
+
+Ƭ **useA11yKeyEventOptions**: _object_
+
+#### Type declaration:
+
+- **checkKeys**? : _string[]_
+
+- **onlyOnFocus**? : _undefined | false | true_
+
+- **preventDefault**? : _undefined | false | true_
+
+## Functions
+
+### `Const` useA11yKeyEvent
+
+▸ **useA11yKeyEvent**(`fn?`: Function, `__namedParameters`: object): _(Anonymous function)_
+
+bind event with a11y keyboard, `space`, `enter`, only trigger when key includes in `checkKeys`
+
+that will auto preventDefault by default, if you don't want that, set `false` with `preventDefault`
+
+**Parameters:**
+
+▪`Optional` **fn**: _Function_
+
+▪`Default value` **\_\_namedParameters**: _object_= {}
+
+| Name             | Type                               | Default            |
+| ---------------- | ---------------------------------- | ------------------ |
+| `checkKeys`      | string[]                           | ['Enter', 'Space'] |
+| `onlyOnFocus`    | undefined &#124; false &#124; true | -                  |
+| `preventDefault` | boolean                            | true               |
+
+**Returns:** _(Anonymous function)_

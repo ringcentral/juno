@@ -1,0 +1,110 @@
+<Meta title="💅 Style system/Custom theme" />
+
+## Custom Theme
+
+You can custom theme by `theme` props with `RcThemeInput` object like below, all of option you can see type `RcThemeInput`;
+
+```tsx
+const defaultTheme: RcThemeInput = {
+  palette: {
+    blue: {
+      top:'#0088ff'
+      bottom:'#0088'
+    },
+    primary: {
+      main: '#0684bd',
+    },
+    ...
+  },
+  props: {
+    RcAccordion: {
+      expandIcon: true,
+      ...
+    }
+  }
+};
+
+const App = (props) => {
+  return (
+    <RcThemeProvider theme={theme}>
+      <RcCircularProgress />
+    </RcThemeProvider>
+  );
+};
+```
+
+## Typescript
+
+Create a declarations file
+TypeScript definitions for `styled-components` can be extended by using declaration.
+
+So the first step is creating a declarations file. Let's name it `juno.d.ts` for example.
+
+### Use `styled` with `@ringcentral/juno`
+
+```ts
+// import original module declarations
+import '@ringcentral/juno';
+
+// and extend them!
+declare module '@ringcentral/juno' {
+  interface DefaultTheme {
+    palette: {
+      blue: {
+        top:'#0088ff'
+        bottom:'#0088'
+      },
+    };
+  }
+
+  // before ts 4.1, the only way to use Literal Types, you should use script to create all possible color type
+  interface DefaultPaletteKeys {
+    ['blue.top']: string;
+    ['blue.bottom']: string;
+  }
+}
+```
+
+Then you can use styled like below
+
+```tsx
+import { styled, palette2 } from '@ringcentral/juno';
+
+const Button = styled.div`
+  color: ${({ theme }) => theme.palette.blue.top}; // result will be `#0088ff`
+  background-color: ${palette2('blue', 'top')}; // also can use palette2
+`;
+
+// also have type in `color` prop
+return <RcButton color="blue.top">Click</RcButton>
+```
+
+### Use `styled` with `styled-components`
+
+If you work with other `styled-components` library, you should set [custom theme](https://styled-components.com/docs/api#create-a-declarations-file) for whole `styled-components`
+
+1. create `juno.type.d.ts` like above
+
+2. create another `styled-components.type.d.ts` to extends `RcTheme`
+
+```ts
+// import original module declarations
+import 'styled-components';
+import { RcTheme } from '@ringcentral/juno';
+
+// and extend them!
+declare module 'styled-components' {
+  export interface DefaultTheme extends RcTheme {}
+}
+```
+
+Then you can use styled like below
+
+```ts
+import styled from 'styled-components';
+
+const Button = styled.div`
+  color: ${({ theme }) => theme.palette.blue}; // result will be `#0088ff`
+  background-color: ${palette2('blue', 'top')}; // also can use palette2
+`;
+```

@@ -1,0 +1,58 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/useKeyDownOnce" />
+
+## useKeyDownOnce
+
+### Type aliases
+
+- [UseKeyDownOnce](#usekeydownonce)
+
+### Functions
+
+- [useKeyDownOnce](#const-usekeydownonce)
+
+## Type aliases
+
+### UseKeyDownOnce
+
+Ƭ **UseKeyDownOnce**: _object_
+
+#### Type declaration:
+
+- **onKeyDown**? : _undefined | function_
+
+- **onKeyUp**? : _undefined | function_
+
+## Functions
+
+### `Const` useKeyDownOnce
+
+▸ **useKeyDownOnce**‹**T**›(`includeKeys`: string[], `__namedParameters`: object): _object_
+
+Provide user trigger `onKeyDown` only one time when hold press on key.
+
+**Type parameters:**
+
+▪ **T**
+
+**Parameters:**
+
+▪ **includeKeys**: _string[]_
+
+that check include keys
+
+▪ **\_\_namedParameters**: _object_
+
+| Name        | Type                      |
+| ----------- | ------------------------- |
+| `onKeyDown` | undefined &#124; function |
+| `onKeyUp`   | undefined &#124; function |
+
+**Returns:** _object_
+
+- **onKeyDown**: _(Anonymous function)_ = handleKeyDown
+
+- **onKeyUp**: _(Anonymous function)_ = handleKeyUp

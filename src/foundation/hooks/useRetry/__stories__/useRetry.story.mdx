@@ -1,0 +1,63 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/useRetry" />
+
+## useRetry
+
+### Type aliases
+
+- [UseRetryOptions](#useretryoptions)
+
+### Functions
+
+- [useRetry](#const-useretry)
+
+## Type aliases
+
+### UseRetryOptions
+
+Ƭ **UseRetryOptions**: _object_
+
+#### Type declaration:
+
+- **intervalTime**: _number_
+
+- **onCancel**? : _undefined | function_
+
+- **onComplete**? : _undefined | function_
+
+- **onStart**? : _undefined | function_
+
+- **onSuccess**? : _undefined | function_
+
+- **retryTimes**: _number_
+
+## Functions
+
+### `Const` useRetry
+
+▸ **useRetry**‹**T**›(`cb`: T, `options?`: [UseRetryOptions](#useretryoptions)): _object_
+
+retry times when exec callback fail
+
+- `retry`: that will auto add `times` end of your call back
+- `cancel`: cancel that retry event, that only cancel inner interval promise, **if you need cancel your `cb` promise, you should handle by yourself.**
+
+**Type parameters:**
+
+▪ **T**: _function_
+
+**Parameters:**
+
+| Name       | Type                                |
+| ---------- | ----------------------------------- |
+| `cb`       | T                                   |
+| `options?` | [UseRetryOptions](#useretryoptions) |
+
+**Returns:** _object_
+
+- **cancel**: _cancel_
+
+- **retry**: _retry_

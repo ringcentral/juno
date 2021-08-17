@@ -1,0 +1,50 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/useAudio" />
+
+## useAudio
+
+### Functions
+
+- [useAudio](#const-useaudio)
+
+## Functions
+
+### `Const` useAudio
+
+▸ **useAudio**(`init?`: undefined | function): _HTMLAudioElement_
+
+get Browser `Audio` instance, and auto destroy when component be destroyed.
+
+**`example`**
+
+```ts
+const audio = useAudio(instance => {
+  instance.src = "https://your.audio";
+});
+
+const click = () => audio.play();
+
+click();
+```
+
+**`see`** stories [🔧-foundation-hooks-useaudio--simple-announcer](https://ringcentral.github.io/juno/?path=/story/%F0%9F%94%A7-foundation-hooks-useaudio--simple-announcer)
+
+[Go to this canvas](?path=/story/🔧-foundation-hooks-useaudio--simple-announcer)
+
+<Canvas>
+  <Story id="🔧-foundation-hooks-useaudio--simple-announcer" />
+</Canvas>
+
+
+**`see`** [https://chromium-review.googlesource.com/c/chromium/src/+/2816118](https://chromium-review.googlesource.com/c/chromium/src/+/2816118)
+
+**Parameters:**
+
+| Name    | Type                      | Description                         |
+| ------- | ------------------------- | ----------------------------------- |
+| `init?` | undefined &#124; function | a callback when you init that audio |
+
+**Returns:** _HTMLAudioElement_

@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Cards/CardActionArea CardActionArea 1`] = `
+.c0 {
+  position: relative;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+}
+
+.c0.RcCard-focusVisible,
+.c0.RcCard-selected {
+  border-color: #066FAC;
+}
+
+.c0:not(:hover):not(:focus-within) .RcCardHoverActions-root:not(.RcCardHoverActions-visible) {
+  opacity: 0;
+}
+
+.c1.RcCardActionArea-focusVisible .RcCardActionArea-focusHighlight {
+  opacity: 0;
+}
+
+.c1 .RcCardActionAreaTouchRipple-root {
+  color: #666666;
+}
+
+.c1 .RcCardActionAreaTouchRipple-rippleVisible {
+  opacity: 0.24;
+  -webkit-animation-name: bchLuH;
+  animation-name: bchLuH;
+}
+
+.c1.RcCardActionArea-disableRipple:active {
+  background-color: rgba(102,102,102,0.24);
+}
+
+.c2 {
+  padding: 16px;
+}
+
+.c3 {
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 40px;
+}
+
+.c4 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+<div
+  className="MuiPaper-root MuiCard-root c0 MuiPaper-outlined MuiPaper-rounded"
+  style={
+    Object {
+      "width": 300,
+    }
+  }
+>
+  <button
+    className="MuiButtonBase-root MuiCardActionArea-root RcCardActionArea-root c1"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <div
+      className="MuiCardContent-root RcCardContent-root c2"
+    >
+      <h4
+        className="MuiTypography-root c3 MuiTypography-gutterBottom"
+        data-color="initial"
+        data-variant="display1"
+      >
+        Lizard
+      </h4>
+      <p
+        className="MuiTypography-root c4 MuiTypography-gutterBottom"
+        data-color="initial"
+        data-variant="body1"
+      >
+        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica
+      </p>
+    </div>
+    <span
+      className="MuiCardActionArea-focusHighlight RcCardActionArea-focusHighlight"
+    />
+  </button>
+</div>
+`;

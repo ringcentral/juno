@@ -1,0 +1,65 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="📖 Component Docs/Tooltip" />
+
+# Tooltip
+
+> `Tooltip` base on `Mui Tooltip`, we provide more type of Tooltip, and different size for you use in different place.
+> All `Mui` props still work, see more in `material-ui` doc.
+
+[Go to this canvas](?path=/story/🚀-cleanup-components-tooltip--tooltip)
+
+<Canvas>
+  <Story id="🚀-cleanup-components-tooltip--tooltip" />
+</Canvas>
+
+## Size
+
+Tooltip have different size show below, can use in different place.
+
+<Canvas>
+  <Story id="🚀-cleanup-components-tooltip--tooltip-sizes" />
+</Canvas>
+
+
+## Tooltip on disabled item
+
+When you want make disabled item with tooltip, you can set `ignorePointer={true}`
+that will wrap your compoent with a `span` mask
+
+> also if you want custom that wrapper props, you can use `maskProps` to set that props,
+
+<Canvas>
+  <Story id="🚀-cleanup-components-tooltip--tooltip-with-disabled-children" />
+</Canvas>
+
+if you want to change that default `span`, you can set styled-components props `as="div"`
+
+```tsx
+<RcTooltip
+  title="disabled item tooltip"
+  ignorePointer
+  maskProps={{ as: 'div' }}
+>
+  <RcButton disabled>disabled item also have Tooltip</RcButton>
+</RcTooltip>
+```
+
+## ForceHide
+
+When set `forceHide={true}`, that will never show tooltip, whatever focus or hover
+
+<Canvas>
+  <Story id="🚀-cleanup-components-tooltip--tooltip-with-force-hide" />
+</Canvas>
+
+## Custom Color
+
+We support token use in
+
+- color: set tooltip background color
+- textColor: set tooltip text color
+
+<Canvas>
+  <Story id="🚀-cleanup-components-tooltip--tooltip-with-custom-color" />
+</Canvas>

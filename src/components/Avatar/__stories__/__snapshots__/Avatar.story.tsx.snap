@@ -1,0 +1,6237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar 1`] = `
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+<div
+  aria-describedby={null}
+  className="c0 "
+  data-test-automation-class="avatar"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOver={[Function]}
+  onTouchEnd={[Function]}
+  onTouchStart={[Function]}
+  title="tooltip"
+>
+  <div
+    className="c1 RcAvatar-avatarContainer"
+  >
+    <img
+      alt="avatar-image"
+      src="test-file-stub"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Build In Color And Short Name 1`] = `
+Array [
+  .c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #8E6B2B;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added] {
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 4px;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added] .RcAvatar-avatarContainer,
+.c0 .RcAvatar-avatarContainer:hover {
+  opacity: 0.88;
+}
+
+.c0.focus-visible:active,
+.c0[data-focus-visible-added] .RcAvatar-avatarContainer:active,
+.c0 .RcAvatar-avatarContainer:active {
+  opacity: 0.76;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<button
+    className="c0 "
+    data-test-automation-class="avatar"
+    type="button"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      AZ
+    </div>
+  </button>,
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<p
+    className="MuiTypography-root c0"
+    data-color="neutral.f06"
+    data-variant="body1"
+  >
+    id
+    : 
+    0
+  </p>,
+  .c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #066FAC;
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Click
+    </span>
+  </button>,
+]
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Custom Icon 1`] = `
+.c3 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #1A70C1;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+<div
+  className="c0 "
+  data-test-automation-class="avatar"
+  onKeyDown={[Function]}
+>
+  <div
+    className="c1 RcAvatar-avatarContainer"
+  >
+    <span
+      className="c2 call-add icon"
+    >
+      <svg
+        className="c3"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+        />
+      </svg>
+      
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Custom Img 1`] = `
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+<div
+  className="c0 "
+  data-test-automation-class="avatar"
+>
+  <div
+    className="c1 RcAvatar-avatarContainer"
+  >
+    <img
+      alt="avatar"
+      src="https://placeimg.com/100/100/any"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Custom Mask 1`] = `
+.c3 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 16px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #1A70C1;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c4 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 27.5%;
+  background-color: rgba(0,0,0,0.56);
+  color: #FFFFFF;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  className="c0 "
+  data-test-automation-class="avatar"
+  onKeyDown={[Function]}
+>
+  <div
+    className="c1 RcAvatar-avatarContainer"
+  >
+    <span
+      className="c2 default-team-avatar icon"
+    >
+      <svg
+        className="c3"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M30.002 10c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S22 11.083 22 10c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm-20 0c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S2 11.083 2 10c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm10 17.999c0 1.083-.396 2.021-1.188 2.813S17.084 32 16.001 32c-1.083 0-2.021-.396-2.813-1.188S12 29.082 12 27.999c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm10-5.999c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S22 23.083 22 22c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm-20 0c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S2 23.083 2 22c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm10-17.999c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S12 5.084 12 4.001c0-1.083.396-2.021 1.188-2.813S14.918 0 16.001 0c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813z"
+        />
+      </svg>
+      
+    </span>
+    <div
+      className="c4 RcAvatar-mask"
+    >
+      <span
+        className="c5 call-add icon"
+      >
+        <svg
+          className="c3"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+          />
+        </svg>
+        
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Custom Presence 1`] = `
+Array [
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  width: 24px;
+  height: 24px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  width: 24px;
+  height: 24px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  width: 24px;
+  height: 24px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  width: 24px;
+  height: 24px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  width: 24px;
+  height: 24px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  width: 24px;
+  height: 24px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  <br />,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  width: 32px;
+  height: 32px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  width: 32px;
+  height: 32px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  width: 32px;
+  height: 32px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  width: 32px;
+  height: 32px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  width: 32px;
+  height: 32px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  width: 32px;
+  height: 32px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  <br />,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  width: 40px;
+  height: 40px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  width: 40px;
+  height: 40px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  width: 40px;
+  height: 40px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  width: 40px;
+  height: 40px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  width: 40px;
+  height: 40px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  width: 40px;
+  height: 40px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  <br />,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  <br />,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 40px;
+  width: 80px;
+  height: 80px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 40px;
+  width: 80px;
+  height: 80px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 40px;
+  width: 80px;
+  height: 80px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 40px;
+  width: 80px;
+  height: 80px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 40px;
+  width: 80px;
+  height: 80px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 40px;
+  width: 80px;
+  height: 80px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  <br />,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 56px;
+  width: 100px;
+  height: 100px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 56px;
+  width: 100px;
+  height: 100px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 56px;
+  width: 100px;
+  height: 100px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 56px;
+  width: 100px;
+  height: 100px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 56px;
+  width: 100px;
+  height: 100px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 56px;
+  width: 100px;
+  height: 100px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  <br />,
+]
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
+.c10 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 16px;
+}
+
+.c14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: inherit;
+}
+
+.c0 {
+  display: inline-block;
+  outline: none;
+}
+
+.c6 {
+  width: 6px;
+  height: 2px;
+  background: #FFFFFF;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c4 .c8 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c4 .c8 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #FFFFFF;
+  background: #E6413C;
+}
+
+.c5 .c8 svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #F3F3F3;
+}
+
+.c2 > img,
+.c2 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c7 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #1A70C1;
+}
+
+.c7 > img,
+.c7 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c13 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+}
+
+.c13 > img,
+.c13 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+  pointer-events: none;
+  opacity: 0.32;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.c1.focus-visible,
+.c1[data-focus-visible-added] {
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 4px;
+}
+
+.c1.focus-visible,
+.c1[data-focus-visible-added] .RcAvatar-avatarContainer,
+.c1 .RcAvatar-avatarContainer:hover {
+  opacity: 0.88;
+}
+
+.c1.focus-visible:active,
+.c1[data-focus-visible-added] .RcAvatar-avatarContainer:active,
+.c1 .RcAvatar-avatarContainer:active {
+  opacity: 0.76;
+}
+
+.c15 {
+  font-size: 64px;
+}
+
+.c11 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 27.5%;
+  background-color: rgba(0,0,0,0.56);
+  color: #FFFFFF;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+<div
+  className="MuiBox-root MuiBox-root-1"
+>
+  <span
+    aria-describedby={null}
+    className="c0"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    onTouchEnd={[Function]}
+    onTouchStart={[Function]}
+    title="This is disabled tips"
+  >
+    <button
+      className="c1 "
+      data-test-automation-class="avatar"
+      disabled={true}
+      type="button"
+    >
+      <div
+        className="c2 RcAvatar-avatarContainer"
+      >
+        <img
+          src="test-file-stub"
+        />
+      </div>
+      <div
+        className="c3 RcAvatar-presenceWrapper"
+      >
+        <div
+          className="c4 "
+        />
+      </div>
+    </button>
+  </span>
+  <button
+    className="c1 "
+    data-test-automation-class="avatar"
+    disabled={true}
+    type="button"
+  >
+    <div
+      className="c2 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c3 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c5 "
+      >
+        <div
+          className="c6"
+          size="medium"
+        />
+      </div>
+    </div>
+  </button>
+  <button
+    className="c1 "
+    data-test-automation-class="avatar"
+    disabled={true}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    type="button"
+  >
+    <div
+      className="c7 RcAvatar-avatarContainer"
+    >
+      <span
+        className="c8 c9 default-team-avatar icon"
+      >
+        <svg
+          className="c10"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M30.002 10c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S22 11.083 22 10c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm-20 0c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S2 11.083 2 10c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm10 17.999c0 1.083-.396 2.021-1.188 2.813S17.084 32 16.001 32c-1.083 0-2.021-.396-2.813-1.188S12 29.082 12 27.999c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm10-5.999c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S22 23.083 22 22c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm-20 0c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S2 23.083 2 22c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm10-17.999c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S12 5.084 12 4.001c0-1.083.396-2.021 1.188-2.813S14.918 0 16.001 0c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813z"
+          />
+        </svg>
+        
+      </span>
+      <div
+        className="c11 RcAvatar-mask"
+      >
+        <span
+          className="c8 c12 call-add icon"
+        >
+          <svg
+            className="c10"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+            />
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </button>
+  <button
+    className="c1 "
+    data-test-automation-class="avatar"
+    disabled={true}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    type="button"
+  >
+    <div
+      className="c13 RcAvatar-avatarContainer"
+    >
+      <span
+        className="c8 c14 c15 call-add icon"
+      >
+        <svg
+          className="c10"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+          />
+        </svg>
+        
+      </span>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Icon 1`] = `
+.c4 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: inherit;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #066FAC;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c3 {
+  font-size: 64px;
+}
+
+<div
+  aria-describedby={null}
+  className="c0 "
+  data-test-automation-class="avatar"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOver={[Function]}
+  onTouchEnd={[Function]}
+  onTouchStart={[Function]}
+  title="tooltip"
+>
+  <div
+    className="c1 RcAvatar-avatarContainer"
+  >
+    <span
+      className="c2 c3 call-add icon"
+    >
+      <svg
+        className="c4"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+        />
+      </svg>
+      
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Mask 1`] = `
+.c3 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 16px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #1A70C1;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added] {
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 4px;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added] .RcAvatar-avatarContainer,
+.c0 .RcAvatar-avatarContainer:hover {
+  opacity: 0.88;
+}
+
+.c0.focus-visible:active,
+.c0[data-focus-visible-added] .RcAvatar-avatarContainer:active,
+.c0 .RcAvatar-avatarContainer:active {
+  opacity: 0.76;
+}
+
+.c4 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 27.5%;
+  background-color: rgba(0,0,0,0.56);
+  color: #FFFFFF;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<button
+  className="c0 "
+  data-test-automation-class="avatar"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  type="button"
+>
+  <div
+    className="c1 RcAvatar-avatarContainer"
+  >
+    <span
+      className="c2 default-team-avatar icon"
+    >
+      <svg
+        className="c3"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M30.002 10c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S22 11.083 22 10c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm-20 0c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S2 11.083 2 10c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm10 17.999c0 1.083-.396 2.021-1.188 2.813S17.084 32 16.001 32c-1.083 0-2.021-.396-2.813-1.188S12 29.082 12 27.999c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm10-5.999c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S22 23.083 22 22c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm-20 0c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S2 23.083 2 22c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm10-17.999c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S12 5.084 12 4.001c0-1.083.396-2.021 1.188-2.813S14.918 0 16.001 0c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813z"
+        />
+      </svg>
+      
+    </span>
+    <div
+      className="c4 RcAvatar-mask"
+    >
+      <span
+        className="c5 edit icon"
+      >
+        <svg
+          className="c3"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M28.01 4a4 4 0 010 5.657L10.761 26.906c-.279.279-.635.47-1.022.547l-5.006 1.001a1 1 0 01-1.177-1.176l1.001-5.006c.077-.387.268-.743.547-1.022L22.353 4.001a4 4 0 015.657 0zm-4.242 7.07L20.94 8.242 6.598 22.584l2.828 2.828L23.768 11.07zm2.827-5.656a2 2 0 00-2.828 0l-1.413 1.413 2.828 2.828 1.413-1.414a2 2 0 000-2.828z"
+          />
+        </svg>
+        
+      </span>
+    </div>
+  </div>
+</button>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Presence 1`] = `
+Array [
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #FFFFFF;
+  background: #3C9949;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </div>,
+  .c4 {
+  width: 6px;
+  height: 2px;
+  background: #FFFFFF;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #FFFFFF;
+  background: #E6413C;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      >
+        <div
+          className="c4"
+          size="medium"
+        />
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<h6
+    className="MuiTypography-root c0"
+    data-color="neutral.f06"
+    data-variant="subheading2"
+  >
+    Only render presence when active and hover
+  </h6>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #FFFFFF;
+  background: #939393;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.c0 .RcAvatar-presenceWrapper {
+  visibility: hidden;
+}
+
+.c0:hover .RcAvatar-presenceWrapper,
+.c0:focus-within .RcAvatar-presenceWrapper {
+  visibility: visible;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added] {
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 4px;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added] .RcAvatar-avatarContainer,
+.c0 .RcAvatar-avatarContainer:hover {
+  opacity: 0.88;
+}
+
+.c0.focus-visible:active,
+.c0[data-focus-visible-added] .RcAvatar-avatarContainer:active,
+.c0 .RcAvatar-avatarContainer:active {
+  opacity: 0.76;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<button
+    className="c0 "
+    data-test-automation-class="avatar"
+    type="button"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </button>,
+  .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #FFFFFF;
+  background: #E6413C;
+}
+
+.c3 .sc-eCApnc svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.c0 .RcAvatar-presenceWrapper {
+  visibility: hidden;
+}
+
+.c0:hover .RcAvatar-presenceWrapper,
+.c0:focus-within .RcAvatar-presenceWrapper {
+  visibility: visible;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added] {
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 4px;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added] .RcAvatar-avatarContainer,
+.c0 .RcAvatar-avatarContainer:hover {
+  opacity: 0.88;
+}
+
+.c0.focus-visible:active,
+.c0[data-focus-visible-added] .RcAvatar-avatarContainer:active,
+.c0 .RcAvatar-avatarContainer:active {
+  opacity: 0.76;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<button
+    className="c0 "
+    data-test-automation-class="avatar"
+    type="button"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      />
+    </div>
+  </button>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #066FAC;
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      left
+       presence
+    </span>
+  </button>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #066FAC;
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      top
+       presence
+    </span>
+  </button>,
+]
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Text 1`] = `
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #066FAC;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+<div
+  className="c0 "
+  data-test-automation-class="avatar"
+  onKeyDown={[Function]}
+>
+  <div
+    className="c1 RcAvatar-avatarContainer"
+  >
+    CK
+  </div>
+</div>
+`;

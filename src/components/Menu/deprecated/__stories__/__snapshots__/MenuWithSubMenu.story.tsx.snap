@@ -1,0 +1,595 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🖤 deprecated Components/Menus/SubMenu Menu Item Control 1`] = `
+Array [
+  .c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #066FAC;
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Open Menu
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>,
+  .c5 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+  color: #666666;
+}
+
+.c0 .sc-cxNHIi {
+  margin: 8px 0px;
+}
+
+.c1 {
+  outline: none;
+  padding: 4px 16px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+  height: auto;
+  min-height: 32px;
+  min-width: 112px;
+  box-sizing: border-box;
+}
+
+.c1.RcMenuItem-unchecked {
+  padding-right: 48px;
+}
+
+.c1:hover {
+  cursor: pointer;
+}
+
+.c1:hover .sc-cSiAOC {
+  display: block;
+}
+
+.c1:active {
+  background-color: #066FAC;
+  color: #fff;
+}
+
+.c1:active .sc-lgWdIC {
+  color: #fff;
+}
+
+.c2.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4.c4 {
+  margin-left: 8px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<div
+    className="MuiPopover-root c0 "
+    onKeyDown={[Function]}
+    role="presentation"
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "visibility": "hidden",
+        "zIndex": 1300,
+      }
+    }
+  >
+    <div
+      data-test="sentinelStart"
+      tabIndex={0}
+    />
+    <div
+      className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
+      style={
+        Object {
+          "opacity": 0,
+          "transform": "scale(0.75, 0.5625)",
+          "visibility": "hidden",
+        }
+      }
+      tabIndex="-1"
+    >
+      <ul
+        className="MuiList-root MuiMenu-list MuiList-padding"
+        onKeyDown={[Function]}
+        role="menu"
+        tabIndex={-1}
+      >
+        <li
+          aria-disabled={false}
+          className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c1 MuiListItem-button"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="menuitem"
+          tabIndex={0}
+        >
+          MenuItem Zero
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </li>
+        <li
+          aria-disabled={false}
+          className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c1 MuiListItem-button"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="menuitem"
+          tabIndex={-1}
+        >
+          MenuItem One
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </li>
+        <li
+          aria-disabled={false}
+          className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c1 c2 MuiListItem-button"
+          data-menuitem-uuid="rc-sub-menu-item-0"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="menuitem"
+          tabIndex={-1}
+        >
+          MenuItem Two
+          <span
+            className="c3 c4 arrow_right icon"
+          >
+            <svg
+              className="c5"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.05 9.636a.999.999 0 000 1.414L18 16l-4.95 4.95a.999.999 0 101.414 1.414l5.657-5.657a.999.999 0 000-1.414l-5.657-5.657a.999.999 0 00-1.414 0z"
+              />
+            </svg>
+            
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </li>
+        <li
+          aria-disabled={false}
+          className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c1 MuiListItem-button"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="menuitem"
+          tabIndex={-1}
+        >
+          MenuItem Three
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </li>
+        <li
+          aria-disabled={false}
+          className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c1 c2 MuiListItem-button"
+          data-menuitem-uuid="rc-sub-menu-item-0"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role="menuitem"
+          tabIndex={-1}
+        >
+          MenuItem Four
+          <span
+            className="c3 c4 arrow_right icon"
+          >
+            <svg
+              className="c5"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.05 9.636a.999.999 0 000 1.414L18 16l-4.95 4.95a.999.999 0 101.414 1.414l5.657-5.657a.999.999 0 000-1.414l-5.657-5.657a.999.999 0 00-1.414 0z"
+              />
+            </svg>
+            
+          </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
+        </li>
+      </ul>
+    </div>
+    <div
+      data-test="sentinelEnd"
+      tabIndex={0}
+    />
+  </div>,
+]
+`;
+
+exports[`Storyshots 🖤 deprecated Components/Menus/SubMenu Menu List Control 1`] = `
+.c5 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+  color: #666666;
+}
+
+.c0.c0.RcMenuList-root {
+  max-width: 592px;
+  min-width: 112px;
+  overflow: auto;
+}
+
+.c0 .sc-cxNHIi {
+  margin: 8px 0px;
+}
+
+.c1 {
+  outline: none;
+  padding: 4px 16px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+  height: auto;
+  min-height: 32px;
+  min-width: 112px;
+  box-sizing: border-box;
+}
+
+.c1.RcMenuItem-unchecked {
+  padding-right: 48px;
+}
+
+.c1:hover {
+  cursor: pointer;
+}
+
+.c1:hover .sc-cSiAOC {
+  display: block;
+}
+
+.c1:active {
+  background-color: #066FAC;
+  color: #fff;
+}
+
+.c1:active .sc-lgWdIC {
+  color: #fff;
+}
+
+.c2.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4.c4 {
+  margin-left: 8px;
+}
+
+<ul
+  className="MuiList-root RcMenuList-root c0 MuiList-padding"
+  onKeyDown={[Function]}
+  role="menu"
+  style={
+    Object {
+      "width": "180px",
+    }
+  }
+  tabIndex={-1}
+>
+  <li
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c1 MuiListItem-button"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="menuitem"
+    tabIndex={0}
+  >
+    MenuItem One
+  </li>
+  <li
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c1 c2 MuiListItem-button"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="menuitem"
+    tabIndex={-1}
+  >
+    MenuItem Two
+    <span
+      className="c3 c4 arrow_right icon"
+    >
+      <svg
+        className="c5"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.05 9.636a.999.999 0 000 1.414L18 16l-4.95 4.95a.999.999 0 101.414 1.414l5.657-5.657a.999.999 0 000-1.414l-5.657-5.657a.999.999 0 00-1.414 0z"
+        />
+      </svg>
+      
+    </span>
+  </li>
+  <li
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c1 MuiListItem-button"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="menuitem"
+    tabIndex={-1}
+  >
+    MenuItem Three
+  </li>
+  <li
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c1 c2 MuiListItem-button"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="menuitem"
+    tabIndex={-1}
+  >
+    MenuItem Four
+    <span
+      className="c3 c4 arrow_right icon"
+    >
+      <svg
+        className="c5"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.05 9.636a.999.999 0 000 1.414L18 16l-4.95 4.95a.999.999 0 101.414 1.414l5.657-5.657a.999.999 0 000-1.414l-5.657-5.657a.999.999 0 00-1.414 0z"
+        />
+      </svg>
+      
+    </span>
+  </li>
+  <li
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c1 MuiListItem-button"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="menuitem"
+    tabIndex={-1}
+  >
+    MenuItem Five
+  </li>
+</ul>
+`;

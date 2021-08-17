@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Tag Tag 1`] = `
+.c0 {
+  display: inline-block;
+  background-color: #FF8800;
+  color: #FFFFFF;
+  border-radius: 8px;
+  text-align: center;
+  padding: 0px 8px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  margin-left: 12px;
+  min-width: 36px;
+  max-width: 164px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+<span
+  className="c0"
+>
+  tag test overflowsannsadsndjdnsaasddksjnadsndsasdasdadsadsdsa
+</span>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Tag Tag With Custom Border 1`] = `
+.c0 {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #066FAC;
+  border: 1px solid #FF8800;
+  border-radius: 8px;
+  text-align: center;
+  padding: 0px 8px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  margin-left: 12px;
+  min-width: 36px;
+  max-width: 164px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+<span
+  className="c0"
+  onClick={[Function]}
+>
+  tag test overflowsannsadsndjdnsaasddksjnadsndsasdasdadsadsdsa
+</span>
+`;

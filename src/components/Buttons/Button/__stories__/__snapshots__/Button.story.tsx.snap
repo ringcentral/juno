@@ -1,0 +1,4032 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Buttons Button 1`] = `
+.c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #066FAC;
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+  disabled={false}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  title="button"
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    button
+  </span>
+</button>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
+.c3 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 12px;
+}
+
+.c10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 16px;
+}
+
+.c13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c1 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c1 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c1 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c1.RcButton-text {
+  color: #066FAC;
+}
+
+.c1.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c1.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c1.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c4 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+}
+
+.c4 .RcButton-startIcon {
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+.c4 .RcButton-endIcon {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.c4.RcButton-text {
+  color: #066FAC;
+  padding: 4px;
+  min-width: unset;
+  line-height: 1;
+}
+
+.c4.RcButton-text.focus-visible,
+.c4.RcButton-text[data-focus-visible-added] {
+  box-shadow: inset 0 0 0 1px #066FAC;
+}
+
+.c4.RcButton-text:active.RcButton-text {
+  color: rgba(6,111,172,0.64);
+}
+
+.c4.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c4.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c4.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c7 {
+  text-transform: none;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 0px;
+  min-height: 24px;
+  padding: 0px 8px;
+}
+
+.c7 .RcButton-startIcon {
+  margin-right: 4px;
+}
+
+.c7 .RcButton-endIcon {
+  margin-left: 4px;
+}
+
+.c7.RcButton-text {
+  color: #066FAC;
+}
+
+.c7.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c7.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c7.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 7px;
+}
+
+.c9 {
+  text-transform: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 0px;
+  min-height: 28px;
+  padding: 0px 16px;
+}
+
+.c9 .RcButton-startIcon {
+  margin-right: 6px;
+}
+
+.c9 .RcButton-endIcon {
+  margin-left: 6px;
+}
+
+.c9.RcButton-text {
+  color: #066FAC;
+}
+
+.c9.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c9.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c9.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c11 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 88px;
+  min-height: 32px;
+  padding: 0px 12px;
+}
+
+.c11 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c11 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c11.RcButton-text {
+  color: #066FAC;
+}
+
+.c11.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c11.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c11.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 11px;
+}
+
+.c12 {
+  text-transform: none;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 140px;
+  min-height: 48px;
+  padding: 0px 20px;
+}
+
+.c12 .RcButton-startIcon {
+  margin-right: 12px;
+}
+
+.c12 .RcButton-endIcon {
+  margin-left: 12px;
+}
+
+.c12.RcButton-text {
+  color: #066FAC;
+}
+
+.c12.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c12.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c12.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 19px;
+}
+
+.c5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  color: #121212;
+}
+
+.c6 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c0 li {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 li > * + * {
+  margin-left: 1em;
+}
+
+.c0 li + li {
+  margin-top: 1em;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-text:hover {
+    color: rgba(6,111,172,0.8);
+    background-color: transparent;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c9.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c9.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c9.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c11.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c11.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c11.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c12.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c12.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c12.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<ul
+  className="c0"
+>
+  <li>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      title="button"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      title="button"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <span
+          className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+        >
+          <span
+            className="c2 bubble_lines_border icon"
+          >
+            <svg
+              className="c3"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      title="button"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+        <span
+          className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+        >
+          <span
+            className="c2 bubble_lines_border icon"
+          >
+            <svg
+              className="c3"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      title="button"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <span
+          className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+        >
+          <span
+            className="c2 bubble_lines_border icon"
+          >
+            <svg
+              className="c3"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+        button
+        <span
+          className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+        >
+          <span
+            className="c2 bubble_lines_border icon"
+          >
+            <svg
+              className="c3"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+      </span>
+    </button>
+  </li>
+  <li>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      title="button"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      title="button"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <span
+          className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+        >
+          <span
+            className="c2 bubble_lines_border icon"
+          >
+            <svg
+              className="c3"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      title="button"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+        <span
+          className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+        >
+          <span
+            className="c2 bubble_lines_border icon"
+          >
+            <svg
+              className="c3"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      title="button"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <span
+          className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+        >
+          <span
+            className="c2 bubble_lines_border icon"
+          >
+            <svg
+              className="c3"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+        button
+        <span
+          className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+        >
+          <span
+            className="c2 bubble_lines_border icon"
+          >
+            <svg
+              className="c3"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+      </span>
+    </button>
+  </li>
+  <li>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      title="button"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      title="button"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <span
+          className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+        >
+          <span
+            className="c2 bubble_lines_border icon"
+          >
+            <svg
+              className="c3"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      title="button"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+        <span
+          className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+        >
+          <span
+            className="c2 bubble_lines_border icon"
+          >
+            <svg
+              className="c3"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      title="button"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <span
+          className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+        >
+          <span
+            className="c2 bubble_lines_border icon"
+          >
+            <svg
+              className="c3"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+        button
+        <span
+          className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+        >
+          <span
+            className="c2 bubble_lines_border icon"
+          >
+            <svg
+              className="c3"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+      </span>
+    </button>
+  </li>
+  <li>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c4"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      title="button"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c4"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      title="button"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <span
+          className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+        >
+          <span
+            className="c2 bubble_lines_border icon"
+          >
+            <svg
+              className="c3"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c4"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      title="button"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+        <span
+          className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+        >
+          <span
+            className="c2 bubble_lines_border icon"
+          >
+            <svg
+              className="c3"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c4"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      title="button"
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <span
+          className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+        >
+          <span
+            className="c2 bubble_lines_border icon"
+          >
+            <svg
+              className="c3"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+        button
+        <span
+          className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+        >
+          <span
+            className="c2 bubble_lines_border icon"
+          >
+            <svg
+              className="c3"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+      </span>
+    </button>
+  </li>
+  <br />
+  <br />
+  <br />
+  <h6
+    className="MuiTypography-root c5 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="title1"
+  >
+    All Size button
+  </h6>
+  <ul
+    className="c0"
+  >
+    <li>
+      <div
+        className="MuiBox-root MuiBox-root-4"
+      >
+        <p
+          className="MuiTypography-root c6 MuiTypography-paragraph MuiTypography-displayBlock"
+          data-color="neutral.f06"
+          data-variant="body1"
+        >
+          xsmall
+        </p>
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c7"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="button"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            button
+          </span>
+        </button>
+        <br />
+        <br />
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c7"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="button"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <span
+              className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <span
+                className="c8 call-add icon"
+              >
+                <svg
+                  className="c3"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+                  />
+                </svg>
+                
+              </span>
+            </span>
+            button
+          </span>
+        </button>
+        <br />
+        <br />
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c7"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="button"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <span
+              className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <span
+                className="c8 call-add icon"
+              >
+                <svg
+                  className="c3"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+                  />
+                </svg>
+                
+              </span>
+            </span>
+            Start a conversation
+          </span>
+        </button>
+      </div>
+      <div
+        className="MuiBox-root MuiBox-root-5"
+      >
+        <p
+          className="MuiTypography-root c6 MuiTypography-paragraph MuiTypography-displayBlock"
+          data-color="neutral.f06"
+          data-variant="body1"
+        >
+          small
+        </p>
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c9"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="button"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            button
+          </span>
+        </button>
+        <br />
+        <br />
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c9"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="button"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <span
+              className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <span
+                className="c10 call-add icon"
+              >
+                <svg
+                  className="c3"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+                  />
+                </svg>
+                
+              </span>
+            </span>
+            button
+          </span>
+        </button>
+        <br />
+        <br />
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c9"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="button"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <span
+              className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <span
+                className="c10 call-add icon"
+              >
+                <svg
+                  className="c3"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+                  />
+                </svg>
+                
+              </span>
+            </span>
+            Start a conversation
+          </span>
+        </button>
+      </div>
+      <div
+        className="MuiBox-root MuiBox-root-6"
+      >
+        <p
+          className="MuiTypography-root c6 MuiTypography-paragraph MuiTypography-displayBlock"
+          data-color="neutral.f06"
+          data-variant="body1"
+        >
+          medium
+        </p>
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c11"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="button"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            button
+          </span>
+        </button>
+        <br />
+        <br />
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c11"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="button"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <span
+              className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <span
+                className="c10 call-add icon"
+              >
+                <svg
+                  className="c3"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+                  />
+                </svg>
+                
+              </span>
+            </span>
+            button
+          </span>
+        </button>
+        <br />
+        <br />
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c11"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="button"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <span
+              className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <span
+                className="c10 call-add icon"
+              >
+                <svg
+                  className="c3"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+                  />
+                </svg>
+                
+              </span>
+            </span>
+            Start a conversation
+          </span>
+        </button>
+      </div>
+      <div
+        className="MuiBox-root MuiBox-root-7"
+      >
+        <p
+          className="MuiTypography-root c6 MuiTypography-paragraph MuiTypography-displayBlock"
+          data-color="neutral.f06"
+          data-variant="body1"
+        >
+          large
+        </p>
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="button"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            button
+          </span>
+        </button>
+        <br />
+        <br />
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="button"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <span
+              className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <span
+                className="c2 call-add icon"
+              >
+                <svg
+                  className="c3"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+                  />
+                </svg>
+                
+              </span>
+            </span>
+            button
+          </span>
+        </button>
+        <br />
+        <br />
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="button"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <span
+              className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <span
+                className="c2 call-add icon"
+              >
+                <svg
+                  className="c3"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+                  />
+                </svg>
+                
+              </span>
+            </span>
+            Start a conversation
+          </span>
+        </button>
+      </div>
+      <div
+        className="MuiBox-root MuiBox-root-8"
+      >
+        <p
+          className="MuiTypography-root c6 MuiTypography-paragraph MuiTypography-displayBlock"
+          data-color="neutral.f06"
+          data-variant="body1"
+        >
+          xlarge
+        </p>
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c12"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="button"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            button
+          </span>
+        </button>
+        <br />
+        <br />
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c12"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="button"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <span
+              className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <span
+                className="c13 call-add icon"
+              >
+                <svg
+                  className="c3"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+                  />
+                </svg>
+                
+              </span>
+            </span>
+            button
+          </span>
+        </button>
+        <br />
+        <br />
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c12"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          title="button"
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            <span
+              className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+            >
+              <span
+                className="c13 call-add icon"
+              >
+                <svg
+                  className="c3"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+                  />
+                </svg>
+                
+              </span>
+            </span>
+            Start a conversation
+          </span>
+        </button>
+      </div>
+    </li>
+  </ul>
+</ul>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
+.c4 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 12px;
+}
+
+.c6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 16px;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.c11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c2 {
+  text-transform: none;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 0px;
+  min-height: 24px;
+  padding: 0px 8px;
+}
+
+.c2 .RcButton-startIcon {
+  margin-right: 4px;
+}
+
+.c2 .RcButton-endIcon {
+  margin-left: 4px;
+}
+
+.c2.RcButton-text {
+  color: #066FAC;
+}
+
+.c2.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c2.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c2.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 7px;
+}
+
+.c5 {
+  text-transform: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 0px;
+  min-height: 28px;
+  padding: 0px 16px;
+}
+
+.c5 .RcButton-startIcon {
+  margin-right: 6px;
+}
+
+.c5 .RcButton-endIcon {
+  margin-left: 6px;
+}
+
+.c5.RcButton-text {
+  color: #066FAC;
+}
+
+.c5.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c5.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c5.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c7 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 88px;
+  min-height: 32px;
+  padding: 0px 12px;
+}
+
+.c7 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c7 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c7.RcButton-text {
+  color: #066FAC;
+}
+
+.c7.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c7.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c7.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 11px;
+}
+
+.c8 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c8 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c8 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c8.RcButton-text {
+  color: #066FAC;
+}
+
+.c8.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c8.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c8.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c10 {
+  text-transform: none;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 140px;
+  min-height: 48px;
+  padding: 0px 20px;
+}
+
+.c10 .RcButton-startIcon {
+  margin-right: 12px;
+}
+
+.c10 .RcButton-endIcon {
+  margin-left: 12px;
+}
+
+.c10.RcButton-text {
+  color: #066FAC;
+}
+
+.c10.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c10.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c10.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 19px;
+}
+
+.c1 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c0 li {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 li > * + * {
+  margin-left: 1em;
+}
+
+.c0 li + li {
+  margin-top: 1em;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c5.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c5.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c5.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c8.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c8.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c8.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c10.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c10.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c10.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<ul
+  className="c0"
+>
+  <li>
+    <div
+      className="MuiBox-root MuiBox-root-9"
+    >
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        xsmall
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          click
+        </span>
+      </button>
+      <br />
+      <br />
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <span
+            className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <span
+              className="c3 call-add icon"
+            >
+              <svg
+                className="c4"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+                />
+              </svg>
+              
+            </span>
+          </span>
+          Start a conversation
+        </span>
+      </button>
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-10"
+    >
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        small
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c5"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          click
+        </span>
+      </button>
+      <br />
+      <br />
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c5"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <span
+            className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <span
+              className="c6 call-add icon"
+            >
+              <svg
+                className="c4"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+                />
+              </svg>
+              
+            </span>
+          </span>
+          Start a conversation
+        </span>
+      </button>
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-11"
+    >
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        medium
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c7"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          click
+        </span>
+      </button>
+      <br />
+      <br />
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c7"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <span
+            className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <span
+              className="c6 call-add icon"
+            >
+              <svg
+                className="c4"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+                />
+              </svg>
+              
+            </span>
+          </span>
+          Start a conversation
+        </span>
+      </button>
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-12"
+    >
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        large
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c8"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          click
+        </span>
+      </button>
+      <br />
+      <br />
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c8"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <span
+            className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <span
+              className="c9 call-add icon"
+            >
+              <svg
+                className="c4"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+                />
+              </svg>
+              
+            </span>
+          </span>
+          Start a conversation
+        </span>
+      </button>
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-13"
+    >
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        xlarge
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c10"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          click
+        </span>
+      </button>
+      <br />
+      <br />
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c10"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <span
+            className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <span
+              className="c11 call-add icon"
+            >
+              <svg
+                className="c4"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z"
+                />
+              </svg>
+              
+            </span>
+          </span>
+          Start a conversation
+        </span>
+      </button>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Buttons Button Variants 1`] = `
+.c1 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c1 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c1 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c1.RcButton-text {
+  color: #066FAC;
+}
+
+.c1.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c1.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c1.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c2 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+}
+
+.c2 .RcButton-startIcon {
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+.c2 .RcButton-endIcon {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.c2.RcButton-text {
+  color: #066FAC;
+  padding: 4px;
+  min-width: unset;
+  line-height: 1;
+}
+
+.c2.RcButton-text.focus-visible,
+.c2.RcButton-text[data-focus-visible-added] {
+  box-shadow: inset 0 0 0 1px #066FAC;
+}
+
+.c2.RcButton-text:active.RcButton-text {
+  color: rgba(6,111,172,0.64);
+}
+
+.c2.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c2.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c2.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c0 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c0 li {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 li > * + * {
+  margin-left: 1em;
+}
+
+.c0 li + li {
+  margin-top: 1em;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-text:hover {
+    color: rgba(6,111,172,0.8);
+    background-color: transparent;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<ul
+  className="c0"
+>
+  <li>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        click me
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        click me
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        click me
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        click me
+      </span>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Color 1`] = `
+.c1 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c1 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c1 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c1.RcButton-text {
+  color: #E6413C;
+}
+
+.c1.RcButton-contained {
+  color: #fff;
+  background-color: #E6413C;
+}
+
+.c1.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c1.RcButton-outlined {
+  color: #E6413C;
+  border-color: #E6413C;
+  padding: 0px 15px;
+}
+
+.c2 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c2 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c2 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c2.RcButton-text {
+  color: #3C9949;
+}
+
+.c2.RcButton-contained {
+  color: #fff;
+  background-color: #3C9949;
+}
+
+.c2.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c2.RcButton-outlined {
+  color: #3C9949;
+  border-color: #3C9949;
+  padding: 0px 15px;
+}
+
+.c3 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c3 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c3 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c3.RcButton-text {
+  color: #FF8800;
+}
+
+.c3.RcButton-contained {
+  color: rgba(0,0,0,0.87);
+  background-color: #FF8800;
+}
+
+.c3.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c3.RcButton-outlined {
+  color: #FF8800;
+  border-color: #FF8800;
+  padding: 0px 15px;
+}
+
+.c4 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c4 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c4 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c4.RcButton-text {
+  color: #F6F9FC;
+}
+
+.c4.RcButton-contained {
+  color: rgba(0,0,0,0.87);
+  background-color: #F6F9FC;
+}
+
+.c4.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c4.RcButton-outlined {
+  color: #F6F9FC;
+  border-color: #F6F9FC;
+  padding: 0px 15px;
+}
+
+.c0 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c0 li {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 li > * + * {
+  margin-left: 1em;
+}
+
+.c0 li + li {
+  margin-top: 1em;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-text:hover {
+    background-color: rgba(230,65,60,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-contained:hover {
+    background-color: rgba(230,65,60,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-outlined:hover {
+    background-color: rgba(230,65,60,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-text:hover {
+    background-color: rgba(60,153,73,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-contained:hover {
+    background-color: rgba(60,153,73,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-outlined:hover {
+    background-color: rgba(60,153,73,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c3.RcButton-text:hover {
+    background-color: rgba(255,136,0,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c3.RcButton-contained:hover {
+    background-color: rgba(255,136,0,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c3.RcButton-outlined:hover {
+    background-color: rgba(255,136,0,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-text:hover {
+    background-color: rgba(246,249,252,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-contained:hover {
+    background-color: rgba(246,249,252,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-outlined:hover {
+    background-color: rgba(246,249,252,0.08);
+  }
+}
+
+<ul
+  className="c0"
+>
+  <li>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        logout
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        logout
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c3"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        logout
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c4"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        logout
+      </span>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Radius 1`] = `
+.c0 {
+  text-transform: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  border-radius: 100vw;
+  min-width: 0px;
+  min-height: 28px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 6px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 6px;
+}
+
+.c0.RcButton-text {
+  color: #FFFFFF;
+}
+
+.c0.RcButton-contained {
+  color: rgba(0,0,0,0.87);
+  background-color: #FFFFFF;
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  padding: 0px 15px;
+}
+
+.c1 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #066FAC;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-text:hover {
+    background-color: rgba(255,255,255,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-contained:hover {
+    background-color: rgba(255,255,255,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-outlined:hover {
+    background-color: rgba(255,255,255,0.08);
+  }
+}
+
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+  disabled={false}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  style={
+    Object {
+      "minWidth": "104px",
+    }
+  }
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    <p
+      className="MuiTypography-root c1"
+      data-color="interactive.f01"
+      data-variant="caption1"
+    >
+      button
+    </p>
+  </span>
+</button>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Icon 1`] = `
+.c4 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.c2 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c2 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c2 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c2.RcButton-text {
+  color: #066FAC;
+}
+
+.c2.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c2.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c2.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c1 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c0 li {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 li > * + * {
+  margin-left: 1em;
+}
+
+.c0 li + li {
+  margin-top: 1em;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<ul
+  className="c0"
+>
+  <li>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        startIcon
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <span
+            className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <span
+              className="c3 user-default icon"
+            >
+              <svg
+                className="c4"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.8 5.66a5.222 5.222 0 014.168 2.106 5.276 5.276 0 011.056 3.794 26.765 26.765 0 00-.136 2.901v.139a3.457 3.457 0 010 2.106 5.804 5.804 0 01-1.144 2.459 5.648 5.648 0 01-.6 2.459 8.879 8.879 0 00-.456 1.828v.155c.001.59.01.59.136.59 2.188.662 4.644 1.774 6.763 2.708A15.152 15.152 0 0116 31.199a15.151 15.151 0 01-10.724-4.428.14.14 0 01.059-.021 57.038 57.038 0 016.96-2.618h.019c.117-.002.117-.037.117-.746a5.668 5.668 0 00-.272-1.828c-.136-.615-.456-1.5-.6-2.459a5.694 5.694 0 01-1.048-2.459 3.3 3.3 0 010-2.106v-.074c0-.279-.144-1.688-.28-2.901a5.276 5.276 0 011.056-3.794 5.259 5.259 0 014.176-2.106h1.336z"
+                />
+              </svg>
+              
+            </span>
+          </span>
+          login
+        </span>
+      </button>
+    </div>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        endIcon
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          logout
+          <span
+            className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+          >
+            <span
+              className="c3 leave icon"
+            >
+              <svg
+                className="c4"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.272 2.688a4.5 4.5 0 015.231 6.274c.309.075.607.2.88.371l4.986-1.336a1.998 1.998 0 011.932.518l2.726 2.797a3 3 0 11-4.243 4.243l-1.094-1.164-1.011.271 2.849 4.747 3.028-.222.234-.009c.242-.005.566-.003.702.009 1.377.118 2.362.715 2.739 2.121a3 3 0 01-2.121 3.674l-6.258.784a1.001 1.001 0 01-.711-.182l-3.374-2.443-1.227.731.963 3.591a3 3 0 01-5.795 1.553L9.93 22.855a3 3 0 011.038-3.131c.137-.116.287-.223.449-.316l1.616-.88-.834-.986-.581.301c-.928.473-1.652.799-2.172.979-.936.323-2.188.514-3.099-.059a2.998 2.998 0 01-.806-.576l-2.958-3.356a3 3 0 114.243-4.243l1.867 1.689 2.037-1.078a4.5 4.5 0 01.543-8.51zm-7.276 9.314a1 1 0 00-.078 1.327l3.036 3.443c.054.054.112.1.173.139l.284.158a1 1 0 00.809.116l-.299.111.525-.207c.793-.31 1.999-.904 3.62-1.781a1 1 0 011.302.267l.064.099 1.825 2.704a1 1 0 01-.269 1.302l-.112.072-2.458 1.387a1.386 1.386 0 00-.208.153 1 1 0 00-.37.927l.024.117 1.778 6.161a1 1 0 001.956-.403l-.024-.114-1.159-4.322a1 1 0 01.477-1.131l2.565-1.338a.998.998 0 011.06.085l3.151 2.35c.213.159.48.226.743.188l5.182-.762a1 1 0 00.707-1.225c-.133-.495-.605-.776-1.111-.731l-1.902.146-2.031.149c-.472.061-.92-.082-1.14-.49l-5.46-9.523a1 1 0 00-1.262-.418l-.104.053-6.927 3.766-2.952-2.774a.999.999 0 00-1.414 0zm14.746-.964l.969 1.811 2.577-.689 1.911 1.98a.999.999 0 001.492-1.327l-.078-.087-2.726-2.797-4.145 1.109zM11.79 4.619a2.5 2.5 0 101.294 4.83 2.5 2.5 0 00-1.294-4.83z"
+                />
+              </svg>
+              
+            </span>
+          </span>
+        </span>
+      </button>
+    </div>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        both
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <span
+            className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <span
+              className="c3 bubble_lines_border icon"
+            >
+              <svg
+                className="c4"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z"
+                />
+              </svg>
+              
+            </span>
+          </span>
+          logout
+          <span
+            className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+          >
+            <span
+              className="c3 New-email icon"
+            >
+              <svg
+                className="c4"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24 17a1 1 0 011 1v4h4a1 1 0 010 2h-4.001L25 28a1 1 0 01-2 0l-.001-4H19a1 1 0 010-2h4v-4a1 1 0 011-1zm4-12a2 2 0 012 2l.001 10.71a8.05 8.05 0 00-2-1.639L28 9l-10.197 8.764a3 3 0 01-3.599.005l-.157-.126-.822-.705-8.6 7.989a.992.992 0 00.374.072h11.252c.183.71.46 1.382.819 2.001l-13.071-.001a2 2 0 01-2-2v-18a2 2 0 012-2h24zM4 9.032v13.744l7.698-7.146L4 9.032zM27 7H5a.98.98 0 00-.255.033l10.701 9.166a1 1 0 001.097.007l.107-.08 10.605-9.092a.982.982 0 00-.256-.033z"
+                />
+              </svg>
+              
+            </span>
+          </span>
+        </span>
+      </button>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Keep Elevation 1`] = `
+.c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #066FAC;
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<div
+  className="MuiBox-root MuiBox-root-14"
+>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Keep
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
+.c3 {
+  color: inherit;
+}
+
+.c4 {
+  color: #E6413C;
+}
+
+.c2 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c2 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c2 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c2.RcButton-text {
+  color: #066FAC;
+}
+
+.c2.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c2.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c2.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c1 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c0 li {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 li > * + * {
+  margin-left: 1em;
+}
+
+.c0 li + li {
+  margin-top: 1em;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<ul
+  className="c0"
+>
+  <li>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        replace(default)
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <div
+            className="MuiCircularProgress-root c3 MuiCircularProgress-indeterminate"
+            role="progressbar"
+            style={
+              Object {
+                "height": 20,
+                "width": 20,
+              }
+            }
+          >
+            <svg
+              className="MuiCircularProgress-svg"
+              viewBox="22 22 44 44"
+            >
+              <circle
+                className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                cx={44}
+                cy={44}
+                fill="none"
+                r={20.2}
+                strokeWidth={3.6}
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </span>
+      </button>
+    </div>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        prefix
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <span
+            className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <div
+              className="MuiCircularProgress-root c3 MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </span>
+          click
+        </span>
+      </button>
+    </div>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        suffix
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          click
+          <span
+            className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+          >
+            <div
+              className="MuiCircularProgress-root c3 MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </span>
+        </span>
+      </button>
+    </div>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        with custom loading props
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          click
+          <span
+            className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+          >
+            <div
+              className="MuiCircularProgress-root c4 MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={17}
+                  strokeWidth={10}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </span>
+        </span>
+      </button>
+    </div>
+  </li>
+</ul>
+`;

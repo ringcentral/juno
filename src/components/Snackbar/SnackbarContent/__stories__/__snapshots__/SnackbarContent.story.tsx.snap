@@ -1,0 +1,720 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Snackbar/SnackbarContent SnackbarContent 1`] = `
+.c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  line-height: 24px;
+  overflow: hidden;
+  background-color: #368541;
+  color: #FFFFFF;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  border-radius: 4px;
+  min-width: 248px;
+  max-width: 640px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  pointer-events: auto;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  padding: 12px 16px;
+}
+
+.c0 .RcSnackbarContent-message {
+  margin: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0px;
+  text-align: center;
+  word-break: break-word;
+}
+
+.c0 .RcSnackbarContent-message a {
+  color: #066FAC;
+  font-style: italic;
+}
+
+.c0 .RcSnackbarContent-action {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  margin-right: 0;
+  height: 24px;
+}
+
+<div
+  className="MuiPaper-root MuiSnackbarContent-root c0 MuiPaper-elevation6"
+  role="alert"
+>
+  <div
+    className="MuiSnackbarContent-message RcSnackbarContent-message"
+  >
+    Example snackbar content
+  </div>
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Snackbar/SnackbarContent SnackbarContent Examples 1`] = `
+.c10 {
+  color: inherit;
+}
+
+.c9 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.c6 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #066FAC;
+  cursor: pointer;
+}
+
+.c6:focus {
+  outline: none;
+}
+
+.c6.focus-visible,
+.c6[data-focus-visible-added] {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c6:active {
+  color: rgba(6,111,172,0.76);
+}
+
+.c1 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  line-height: 24px;
+  overflow: hidden;
+  background-color: #368541;
+  color: #FFFFFF;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  border-radius: 4px;
+  min-width: 248px;
+  max-width: 640px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  pointer-events: auto;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  padding: 12px 16px;
+}
+
+.c1 .RcSnackbarContent-message {
+  margin: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0px;
+  text-align: center;
+  word-break: break-word;
+}
+
+.c1 .RcSnackbarContent-message a {
+  color: #066FAC;
+  font-style: italic;
+}
+
+.c1 .RcSnackbarContent-action {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  margin-right: 0;
+  height: 24px;
+}
+
+.c2 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  line-height: 24px;
+  overflow: hidden;
+  background-color: #D63E39;
+  color: #FFFFFF;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  border-radius: 4px;
+  min-width: 248px;
+  max-width: 640px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  pointer-events: auto;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  padding: 12px 16px;
+}
+
+.c2 .RcSnackbarContent-message {
+  margin: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0px;
+  text-align: center;
+  word-break: break-word;
+}
+
+.c2 .RcSnackbarContent-message a {
+  color: #066FAC;
+  font-style: italic;
+}
+
+.c2 .RcSnackbarContent-action {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  margin-right: 0;
+  height: 24px;
+}
+
+.c5 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  line-height: 24px;
+  overflow: hidden;
+  background-color: #F6AD16;
+  color: #121212;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  border-radius: 4px;
+  min-width: 248px;
+  max-width: 640px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  pointer-events: auto;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  padding: 12px 16px;
+}
+
+.c5 .RcSnackbarContent-message {
+  margin: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0px;
+  text-align: center;
+  word-break: break-word;
+}
+
+.c5 .RcSnackbarContent-message a {
+  color: #066FAC;
+  font-style: italic;
+}
+
+.c5 .RcSnackbarContent-action {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  margin-right: 0;
+  height: 24px;
+}
+
+.c7 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  line-height: 24px;
+  overflow: hidden;
+  background-color: #666666;
+  color: #FFFFFF;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  border-radius: 4px;
+  min-width: 248px;
+  max-width: 640px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  pointer-events: auto;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  padding: 12px 16px;
+}
+
+.c7 .RcSnackbarContent-message {
+  margin: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0px;
+  text-align: center;
+  word-break: break-word;
+}
+
+.c7 .RcSnackbarContent-message a {
+  color: #066FAC;
+  font-style: italic;
+}
+
+.c7 .RcSnackbarContent-action {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  margin-right: 0;
+  height: 24px;
+}
+
+.c11 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  line-height: 24px;
+  overflow: hidden;
+  background-color: #666666;
+  color: #FFFFFF;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  border-radius: 0;
+  min-width: 248px;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  pointer-events: auto;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  padding: 12px 16px;
+}
+
+.c11 .RcSnackbarContent-message {
+  margin: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0px;
+  text-align: center;
+  word-break: break-word;
+}
+
+.c11 .RcSnackbarContent-message a {
+  color: #066FAC;
+  font-style: italic;
+}
+
+.c11 .RcSnackbarContent-action {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  margin-right: 0;
+  height: 24px;
+}
+
+.c4.RcSnackbarAction-text {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  line-height: 24px;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c3 + .c3.RcSnackbarAction-text {
+  margin-left: 12px;
+}
+
+.c3 + .c3.RcSnackbarAction-icon {
+  margin-left: 16px;
+}
+
+.c4:active {
+  opacity: 0.76;
+}
+
+.c4:disabled {
+  opacity: 0.24;
+}
+
+.c4.Mui-focusVisible:after,
+.c4.focus-visible:after,
+.c4[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 0 1px currentColor;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  padding: 12px 24px;
+  margin: 12px 0;
+}
+
+.c0 > div {
+  margin-bottom: 10px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c6:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="MuiPaper-root MuiSnackbarContent-root c1 MuiPaper-elevation6"
+    role="alert"
+  >
+    <div
+      className="MuiSnackbarContent-message RcSnackbarContent-message"
+    >
+      This is an success message.
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiSnackbarContent-root c2 MuiPaper-elevation6"
+    role="alert"
+  >
+    <div
+      className="MuiSnackbarContent-message RcSnackbarContent-message"
+    >
+      This is an error message.
+    </div>
+    <div
+      className="MuiSnackbarContent-action RcSnackbarContent-action"
+    >
+      <button
+        className="MuiButtonBase-root c3 c4 RcSnackbarAction-text"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        Action
+      </button>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiSnackbarContent-root c5 MuiPaper-elevation6"
+    role="alert"
+  >
+    <div
+      className="MuiSnackbarContent-message RcSnackbarContent-message"
+    >
+      This is an warning message.  
+      <a
+        className="c6"
+        href="https://app.ringcentral.com/"
+        onKeyDown={[Function]}
+        target="_blank"
+      >
+        https://app.ringcentral.com/
+      </a>
+    </div>
+    <div
+      className="MuiSnackbarContent-action RcSnackbarContent-action"
+    >
+      <button
+        className="MuiButtonBase-root c3 c4 RcSnackbarAction-text"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        Action
+      </button>
+      <button
+        className="MuiButtonBase-root c3 c4 RcSnackbarAction-text"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        Action
+      </button>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiSnackbarContent-root c7 MuiPaper-elevation6"
+    role="alert"
+  >
+    <div
+      className="MuiSnackbarContent-message RcSnackbarContent-message"
+    >
+      This is an informational message.
+    </div>
+    <div
+      className="MuiSnackbarContent-action RcSnackbarContent-action"
+    >
+      <button
+        className="MuiButtonBase-root c3 c4 RcSnackbarAction-text Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        Action
+      </button>
+      <button
+        className="MuiButtonBase-root c3 c4 RcSnackbarAction-text"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        Action
+      </button>
+      <button
+        className="MuiButtonBase-root c3 c4 RcSnackbarAction-icon"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="c8 close icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M25.899 7.515L17.414 16l8.485 8.486a1 1 0 01-1.414 1.414L16 17.413 7.515 25.9a1 1 0 01-1.414-1.414l8.485-8.487-8.485-8.484a.999.999 0 111.414-1.414l8.486 8.485 8.485-8.485A.999.999 0 1125.9 7.515z"
+            />
+          </svg>
+          
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiSnackbarContent-root c7 MuiPaper-elevation6"
+    role="alert"
+  >
+    <div
+      className="MuiSnackbarContent-message RcSnackbarContent-message"
+    >
+      This is an neutral message.
+    </div>
+    <div
+      className="MuiSnackbarContent-action RcSnackbarContent-action"
+    >
+      <div
+        className="MuiCircularProgress-root c10 MuiCircularProgress-indeterminate"
+        role="progressbar"
+        style={
+          Object {
+            "height": 20,
+            "width": 20,
+          }
+        }
+      >
+        <svg
+          className="MuiCircularProgress-svg"
+          viewBox="22 22 44 44"
+        >
+          <circle
+            className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+            cx={44}
+            cy={44}
+            fill="none"
+            r={20.2}
+            strokeWidth={3.6}
+            style={Object {}}
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiSnackbarContent-root c11 MuiPaper-elevation6"
+    role="alert"
+  >
+    <div
+      className="MuiSnackbarContent-message RcSnackbarContent-message"
+    >
+      Only has icon
+    </div>
+    <div
+      className="MuiSnackbarContent-action RcSnackbarContent-action"
+    >
+      <button
+        className="MuiButtonBase-root c3 c4 RcSnackbarAction-icon"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="c8 close icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M25.899 7.515L17.414 16l8.485 8.486a1 1 0 01-1.414 1.414L16 17.413 7.515 25.9a1 1 0 01-1.414-1.414l8.485-8.487-8.485-8.484a.999.999 0 111.414-1.414l8.486 8.485 8.485-8.485A.999.999 0 1125.9 7.515z"
+            />
+          </svg>
+          
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiSnackbarContent-root c7 MuiPaper-elevation6"
+    role="alert"
+  >
+    <div
+      className="MuiSnackbarContent-message RcSnackbarContent-message"
+    >
+      In the cellular phone industry, mobile phones and their networks sometimes support concatenated short message service (or concatenated SMS) to overcome the limitation on the number of characters that can be sent in a single SMS text message transmission (which is usually 160). Using this method, long messages are split into smaller messages by the sending device and recombined at the receiving end. Each message is then billed separately. When the feature works properly, it is nearly transparent to the user, appearing as a single long text message. Previously, due to incompatibilities between providers and lack of support in some phone models, there was not widespread use of this feature.
+    </div>
+    <div
+      className="MuiSnackbarContent-action RcSnackbarContent-action"
+    >
+      <button
+        className="MuiButtonBase-root c3 c4 RcSnackbarAction-icon"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="c8 close icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M25.899 7.515L17.414 16l8.485 8.486a1 1 0 01-1.414 1.414L16 17.413 7.515 25.9a1 1 0 01-1.414-1.414l8.485-8.487-8.485-8.484a.999.999 0 111.414-1.414l8.486 8.485 8.485-8.485A.999.999 0 1125.9 7.515z"
+            />
+          </svg>
+          
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

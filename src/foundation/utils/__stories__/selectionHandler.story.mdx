@@ -1,0 +1,71 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Utils/selectionHandler" />
+
+## selectionHandler
+
+### Functions
+
+- [clearWindowSelection](#clearwindowselection)
+- [getSelectionPosition](#getselectionposition)
+- [setSelectionPosition](#setselectionposition)
+
+## Functions
+
+### clearWindowSelection
+
+▸ **clearWindowSelection**(): _void_
+
+clean whole selection
+
+**Returns:** _void_
+
+---
+
+### getSelectionPosition
+
+▸ **getSelectionPosition**(`inputRef`: RefObject‹HTMLInputElement›): _object_
+
+get current input element selection position and is that selectRange state
+
+**Parameters:**
+
+| Name       | Type                        |
+| ---------- | --------------------------- |
+| `inputRef` | RefObject‹HTMLInputElement› |
+
+**Returns:** _object_
+
+- **isSelectRange**: _boolean_
+
+- ### **position**: _object_
+
+  - **end**: _number_ = currentPositionEnd || 0
+
+  - **start**: _number_ = currentPosition || 0
+
+---
+
+### setSelectionPosition
+
+▸ **setSelectionPosition**(`inputRef`: RefObject‹HTMLInputElement›, `options`: object): _void_
+
+set input element selection position position,
+if you need scroll that into view set `scrollIntoView` as true
+
+**Parameters:**
+
+▪ **inputRef**: _RefObject‹HTMLInputElement›_
+
+▪ **options**: _object_
+
+| Name              | Type                                                       |
+| ----------------- | ---------------------------------------------------------- |
+| `direction?`      | "forward" &#124; "backward" &#124; "none" &#124; undefined |
+| `end`             | number &#124; null                                         |
+| `scrollIntoView?` | undefined &#124; false &#124; true                         |
+| `start`           | number &#124; null                                         |
+
+**Returns:** _void_

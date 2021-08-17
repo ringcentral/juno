@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Dialer/useFixedEndSelection useFixedEndSelection 1`] = `
+<input
+  onClick={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  type="text"
+/>
+`;

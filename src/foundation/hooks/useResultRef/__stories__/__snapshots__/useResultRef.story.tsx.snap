@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🔧 Foundation/Hooks/useResultRef useResultRef 1`] = `
+.c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+<h5
+  className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+  data-color="neutral.f06"
+  data-variant="headline1"
+>
+  2
+</h5>
+`;

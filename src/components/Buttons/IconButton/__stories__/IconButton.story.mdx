@@ -1,0 +1,58 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="📖 Component Docs/IconButton" />
+
+# IconButton
+
+> `IconButton` can provide you in different use case when you need icon action.
+
+[Go to this canvas](?path=/story/🚀-cleanup-components-iconbutton--icon-button)
+
+<Canvas>
+  <Story id="🚀-cleanup-components-iconbutton--icon-button" />
+</Canvas>
+
+## Variant, Tooltip and `stretchIcon`
+
+We support different variant button, that can be use in different use case.
+
+default support `RcTooltip`, can set `title` to show tooltip, also support `TooltipProps` for custom tooltip props.
+
+if you want browser default title, set `useRcTooltip={false}`
+
+<Canvas>
+  <Story id="🚀-cleanup-components-iconbutton--icon-button-examples" />
+</Canvas>
+
+## Color and Size
+
+Support `color` token and different `size`
+
+<Canvas>
+  <Story id="🚀-cleanup-components-iconbutton--icon-button-with-color-and-size" />
+</Canvas>
+
+## Elevation
+
+When button active, that default `activeElevation` will `+11` from current elevation.
+
+<Canvas>
+  <Story id="🚀-cleanup-components-iconbutton--icon-button-with-elevation" />
+</Canvas>
+
+## Radius
+
+We can set that button radius with `radius` props, like `sm` below.
+
+<Canvas>
+  <Story id="🚀-cleanup-components-iconbutton--icon-button-with-radius" />
+</Canvas>
+
+## Use color when disabled
+
+When disabled button, default will become color `disabled.f02`,
+if you still want use color when disabled, use can set `useColorWhenDisabled` as `true`
+
+<Canvas>
+  <Story id="🚀-cleanup-components-iconbutton--icon-button-with-disabled-color" />
+</Canvas>

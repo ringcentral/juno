@@ -1,0 +1,123 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/useLongPress" />
+
+## useLongPress
+
+### Interfaces
+
+- [UseLongPressOptions](interfaces/uselongpressoptions.md)
+
+### Type aliases
+
+- [UseLongPressEventReason](#uselongpresseventreason)
+- [UseLongPressInput](#uselongpressinput)
+- [UseLongPressOutput](#uselongpressoutput)
+
+### Functions
+
+- [useLongPress](#const-uselongpress)
+
+## Type aliases
+
+### UseLongPressEventReason
+
+Ƭ **UseLongPressEventReason**: _"keyboard" | "click" | "tap"_
+
+---
+
+### UseLongPressInput
+
+Ƭ **UseLongPressInput**: _object & UseTouchMouseEvent‹T›_
+
+---
+
+### UseLongPressOutput
+
+Ƭ **UseLongPressOutput**: _object_
+
+#### Type declaration:
+
+- **onPress**? : _undefined | function_
+
+- **onTap**? : _undefined | function_
+
+## Functions
+
+### `Const` useLongPress
+
+▸ **useLongPress**‹**T**›(`__namedParameters`: object, `__namedParameters`: object, `__namedParameters`: object): _object_
+
+Provide longPress helper, both `click`/`tab`/`keydown` will trigger event
+
+- Trigger `onTap` when user action leave small than delay time.
+- Trigger `onPress` when action time is long than delay time.
+
+**`default`** UseLongPressOptions { isPreventDefault = true, delay = 300 }
+
+**Type parameters:**
+
+▪ **T**
+
+**Parameters:**
+
+▪ **\_\_namedParameters**: _object_
+
+| Name      | Type                      |
+| --------- | ------------------------- |
+| `onPress` | undefined &#124; function |
+| `onTap`   | undefined &#124; function |
+
+▪`Default value` **\_\_namedParameters**: _object_= {}
+
+| Name            | Type                            |
+| --------------- | ------------------------------- |
+| `onContextMenu` | undefined &#124; function       |
+| `onKeyDown`     | undefined &#124; function       |
+| `onKeyUp`       | undefined &#124; function       |
+| `onMouseDown`   | undefined &#124; bivarianceHack |
+| `onMouseUpArg`  | undefined &#124; bivarianceHack |
+| `onTouchEnd`    | undefined &#124; bivarianceHack |
+| `onTouchStart`  | undefined &#124; bivarianceHack |
+
+▪`Default value` **\_\_namedParameters**: _object_= {}
+
+| Name               | Type    | Default |
+| ------------------ | ------- | ------- |
+| `delay`            | number  | 300     |
+| `isPreventDefault` | boolean | true    |
+
+**Returns:** _object_
+
+- **onContextMenu**: _(Anonymous function)_ = handleContextMenu
+
+- **onKeyDown**: _(Anonymous function)_ = handleKeyDown
+
+- **onKeyUp**: _(Anonymous function)_ = handleKeyUp
+
+- **ref**: _RefObject‹HTMLElement›_ = elmRef
+
+## UseLongPressOptions
+
+### Properties
+
+- [delay](#optional-delay)
+- [isPreventDefault](#optional-ispreventdefault)
+
+## Properties
+
+### `Optional` delay
+
+• **delay**? : _undefined | number_
+
+the longPress delay
+
+---
+
+### `Optional` isPreventDefault
+
+• **isPreventDefault**? : _undefined | false | true_
+
+is prevent all non need event

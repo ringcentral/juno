@@ -1,0 +1,239 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Divider Divider 1`] = `
+.c2 {
+  position: relative;
+  margin: 0;
+  border: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: initial;
+  width: 100%;
+  height: 1px;
+  background-color: #E5E5E5;
+}
+
+.c1 {
+  padding: 10px;
+  margin: 0;
+  color: #066FAC;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  className="c0"
+  style={
+    Object {
+      "flexDirection": "column",
+      "height": "auto",
+    }
+  }
+>
+  <p
+    className="c1"
+  >
+    test test test test test
+  </p>
+  <hr
+    className="c2"
+    role="separator"
+  />
+  <p
+    className="c1"
+  >
+    test test test test test
+  </p>
+  <hr
+    className="c2"
+    role="separator"
+  />
+  <p
+    className="c1"
+  >
+    test test test test test
+  </p>
+  <hr
+    className="c2"
+    role="separator"
+  />
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Divider Divider Examples 1`] = `
+Array [
+  .c2 {
+  position: relative;
+  margin: 0;
+  border: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: initial;
+  width: 100%;
+  height: 1px;
+  background-color: #E5E5E5;
+}
+
+.c2::after {
+  content: 'divider title';
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #121212;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 0px 16px;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  background-color: #FFFFFF;
+}
+
+.c1 {
+  padding: 10px;
+  margin: 0;
+  color: #066FAC;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+    className="c0"
+    style={
+      Object {
+        "flexDirection": "column",
+      }
+    }
+  >
+    <p
+      className="c1"
+    >
+      test test test test test
+    </p>
+    <hr
+      className="c2"
+      role="separator"
+    />
+    <p
+      className="c1"
+    >
+      test test test test test
+    </p>
+    <hr
+      className="c2"
+      role="separator"
+    />
+    <p
+      className="c1"
+    >
+      test test test test test
+    </p>
+    <hr
+      className="c2"
+      role="separator"
+    />
+  </div>,
+  <br />,
+  .c2 {
+  position: relative;
+  margin: 0;
+  border: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: initial;
+  width: 1px;
+  height: 100%;
+  background-color: #E5E5E5;
+}
+
+.c1 {
+  padding: 10px;
+  margin: 0;
+  color: #066FAC;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+    className="c0"
+    style={
+      Object {
+        "flexDirection": "row",
+        "height": "3em",
+      }
+    }
+  >
+    <p
+      className="c1"
+    >
+      test test test test test
+    </p>
+    <hr
+      className="c2"
+      role="separator"
+    />
+    <p
+      className="c1"
+    >
+      test test test test test
+    </p>
+    <hr
+      className="c2"
+      role="separator"
+    />
+    <p
+      className="c1"
+    >
+      test test test test test
+    </p>
+    <hr
+      className="c2"
+      role="separator"
+    />
+  </div>,
+]
+`;

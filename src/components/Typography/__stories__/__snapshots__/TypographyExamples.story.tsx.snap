@@ -1,0 +1,644 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🔧 Foundation/Typography List Typography List 1`] = `
+.c5 {
+  position: relative;
+  margin: 0;
+  border: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: initial;
+  width: 100%;
+  height: 1px;
+  background-color: #E5E5E5;
+}
+
+.c1 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+}
+
+.c3 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c6 {
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 112px;
+}
+
+.c7 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 72px;
+}
+
+.c8 {
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 56px;
+}
+
+.c9 {
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 40px;
+}
+
+.c10 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+}
+
+.c11 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+}
+
+.c12 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+}
+
+.c13 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+}
+
+.c14 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+}
+
+.c15 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+}
+
+.c16 {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c17 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+}
+
+.c18 {
+  font-family: Lato,Helvetica,Arial,sans-serif;
+}
+
+.c2 {
+  margin-bottom: 1rem;
+  -webkit-flex: 2 1 0;
+  -ms-flex: 2 1 0;
+  flex: 2 1 0;
+}
+
+.c4 {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+<div
+  className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+  style={
+    Object {
+      "padding": "4rem",
+      "width": "1000px",
+    }
+  }
+>
+  <div
+    className="c0"
+  >
+    <p
+      className="MuiTypography-root c1 c2"
+      data-color="initial"
+      data-variant="caption1"
+    >
+      Name/TypeFace
+    </p>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    >
+      font weight
+    </p>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    >
+      font size
+    </p>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    >
+      line height
+    </p>
+  </div>
+  <hr
+    className="c5"
+    role="separator"
+  />
+  <div
+    className="c0"
+  >
+    <h1
+      className="MuiTypography-root c6 c2"
+      data-color="initial"
+      data-variant="display4"
+    >
+      display4
+    </h1>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+  </div>
+  <hr
+    className="c5"
+    role="separator"
+  />
+  <div
+    className="c0"
+  >
+    <h2
+      className="MuiTypography-root c7 c2"
+      data-color="initial"
+      data-variant="display3"
+    >
+      display3
+    </h2>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+  </div>
+  <hr
+    className="c5"
+    role="separator"
+  />
+  <div
+    className="c0"
+  >
+    <h3
+      className="MuiTypography-root c8 c2"
+      data-color="initial"
+      data-variant="display2"
+    >
+      display2
+    </h3>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+  </div>
+  <hr
+    className="c5"
+    role="separator"
+  />
+  <div
+    className="c0"
+  >
+    <h4
+      className="MuiTypography-root c9 c2"
+      data-color="initial"
+      data-variant="display1"
+    >
+      display1
+    </h4>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+  </div>
+  <hr
+    className="c5"
+    role="separator"
+  />
+  <div
+    className="c0"
+  >
+    <h5
+      className="MuiTypography-root c10 c2"
+      data-color="initial"
+      data-variant="headline2"
+    >
+      headline2
+    </h5>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+  </div>
+  <hr
+    className="c5"
+    role="separator"
+  />
+  <div
+    className="c0"
+  >
+    <h5
+      className="MuiTypography-root c11 c2"
+      data-color="initial"
+      data-variant="headline1"
+    >
+      headline1
+    </h5>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+  </div>
+  <hr
+    className="c5"
+    role="separator"
+  />
+  <div
+    className="c0"
+  >
+    <h6
+      className="MuiTypography-root c12 c2"
+      data-color="initial"
+      data-variant="title2"
+    >
+      title2
+    </h6>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+  </div>
+  <hr
+    className="c5"
+    role="separator"
+  />
+  <div
+    className="c0"
+  >
+    <h6
+      className="MuiTypography-root c13 c2"
+      data-color="initial"
+      data-variant="title1"
+    >
+      title1
+    </h6>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+  </div>
+  <hr
+    className="c5"
+    role="separator"
+  />
+  <div
+    className="c0"
+  >
+    <h6
+      className="MuiTypography-root c14 c2"
+      data-color="initial"
+      data-variant="subheading2"
+    >
+      subheading2
+    </h6>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+  </div>
+  <hr
+    className="c5"
+    role="separator"
+  />
+  <div
+    className="c0"
+  >
+    <h6
+      className="MuiTypography-root c15 c2"
+      data-color="initial"
+      data-variant="subheading1"
+    >
+      subheading1
+    </h6>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+  </div>
+  <hr
+    className="c5"
+    role="separator"
+  />
+  <div
+    className="c0"
+  >
+    <p
+      className="MuiTypography-root c16 c2"
+      data-color="initial"
+      data-variant="body2"
+    >
+      body2
+    </p>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+  </div>
+  <hr
+    className="c5"
+    role="separator"
+  />
+  <div
+    className="c0"
+  >
+    <p
+      className="MuiTypography-root c3 c2"
+      data-color="initial"
+      data-variant="body1"
+    >
+      body1
+    </p>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+  </div>
+  <hr
+    className="c5"
+    role="separator"
+  />
+  <div
+    className="c0"
+  >
+    <p
+      className="MuiTypography-root c17 c2"
+      data-color="initial"
+      data-variant="caption2"
+    >
+      caption2
+    </p>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+  </div>
+  <hr
+    className="c5"
+    role="separator"
+  />
+  <div
+    className="c0"
+  >
+    <p
+      className="MuiTypography-root c1 c2"
+      data-color="initial"
+      data-variant="caption1"
+    >
+      caption1
+    </p>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+  </div>
+  <hr
+    className="c5"
+    role="separator"
+  />
+  <div
+    className="c0"
+  >
+    <p
+      className="MuiTypography-root c18 c2"
+      data-color="initial"
+      data-variant="inherit"
+    >
+      inherit
+    </p>
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+    <p
+      className="MuiTypography-root c3 c4"
+      data-color="initial"
+      data-variant="body1"
+    />
+  </div>
+  <hr
+    className="c5"
+    role="separator"
+  />
+</div>
+`;

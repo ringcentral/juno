@@ -1,0 +1,33 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="📖 Component Docs/Drawer" />
+
+# Drawer
+
+> `Drawer` base on `Mui Drawer`, we provide `inlinePaper` mode.
+
+[Go to this canvas](?path=/story/🚀-cleanup-components-drawer--drawer)
+
+<Canvas>
+  <Story id="🚀-cleanup-components-drawer--drawer" />
+</Canvas>
+
+## Inline Paper
+
+when variant is `temporary` if you want only render your children content,
+you can set that as `true`, that will overwrite default paper
+background as `transparent` and remove `shadow` and keep chidden in `center`
+
+<Canvas>
+  <Story id="🚀-cleanup-components-drawer--drawer-with-inline-paper" />
+</Canvas>
+
+## Radius
+
+We can set that papper radius with `radius` props.
+
+> default is `lg`, that radius only apply on inner side.
+
+<Canvas>
+  <Story id="🚀-cleanup-components-drawer--drawer-examples" />
+</Canvas>

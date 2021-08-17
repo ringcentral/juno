@@ -1,0 +1,88 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Styles/colorManipulator" />
+
+## colorManipulator
+
+### Functions
+
+- [darken](#darken)
+- [getContrastBgColor](#const-getcontrastbgcolor)
+- [lighten](#lighten)
+
+## Functions
+
+### darken
+
+▸ **darken**(`colorInput`: ReturnType‹typeof palette2›, `coefficient`: number): _(Anonymous function)_
+
+get darken coefficient of color
+
+**`example`**
+
+```tsx
+const Darken = styled(Basic)`
+  background-color: ${darken(palette2("interactive", "b02"), 0.5)};
+`;
+```
+
+**Parameters:**
+
+| Name          | Type                        |
+| ------------- | --------------------------- |
+| `colorInput`  | ReturnType‹typeof palette2› |
+| `coefficient` | number                      |
+
+**Returns:** _(Anonymous function)_
+
+---
+
+### `Const` getContrastBgColor
+
+▸ **getContrastBgColor**(`__namedParameters`: object): _function[]_
+
+get color from palette, and contrast color defined in mui
+
+**`example`**
+
+```ts
+const [currColor, contrastBgColor] = getContrastBgColor(props);
+```
+
+**Parameters:**
+
+▪ **\_\_namedParameters**: _object_
+
+| Name    | Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `color` | undefined &#124; "highContrast" &#124; "subAction" &#124; "action.grayDark" &#124; "action.grayLight" &#124; "action.primary" &#124; "avatar.ash" &#124; "avatar.blueberry" &#124; "avatar.brass" &#124; "avatar.global" &#124; "avatar.gold" &#124; "avatar.lake" &#124; "avatar.oasis" &#124; "avatar.pear" &#124; "avatar.persimmon" &#124; "avatar.sage" &#124; "avatar.tomato" &#124; "content.brand" &#124; "danger.b01" &#124; "danger.b02" &#124; "danger.b03" &#124; "danger.b04" &#124; "danger.f01" &#124; "danger.f02" &#124; "danger.f11" &#124; "dialHeader.avatarBg" &#124; "dialHeader.avatarIcon" &#124; "dialHeader.bg" &#124; "dialHeader.focusBorder" &#124; "dialHeader.icon" &#124; "dialHeader.text" &#124; "dialHeader.textHint" &#124; "disabled.b01" &#124; "disabled.f01" &#124; "disabled.f02" &#124; "header.bgLeft" &#124; "header.bgOverlay" &#124; "header.bgOverlayDisabled" &#124; "header.bgRight" &#124; "header.border" &#124; "header.divider" &#124; "header.fabBg" &#124; "header.fabIcon" &#124; "header.focusBorder" &#124; "header.icon" &#124; "header.iconDisabled" &#124; "header.text" &#124; "header.textHint" &#124; "highlight.b01" &#124; "highlight.b02" &#124; "highlight.b03" &#124; "highlight.f01" &#124; "highlight.f02" &#124; "informative.b01" &#124; "informative.f01" &#124; "informative.f02" &#124; "interactive.b01" &#124; "interactive.b02" &#124; "interactive.f01" &#124; "label.black02" &#124; "label.blue01" &#124; "label.blue02" &#124; "label.green01" &#124; "label.green02" &#124; "label.orange01" &#124; "label.orange02" &#124; "label.purple01" &#124; "label.purple02" &#124; "label.red01" &#124; "label.red02" &#124; "label.teal01" &#124; "label.teal02" &#124; "label.yellow01" &#124; "label.yellow02" &#124; "nav.b01" &#124; "nav.b02" &#124; "nav.bookmark" &#124; "nav.ctlDefault" &#124; "nav.ctlSelected" &#124; "nav.f01" &#124; "nav.f02" &#124; "nav.f03" &#124; "nav.f04" &#124; "nav.iconDefault" &#124; "nav.iconSelected" &#124; "nav.line" &#124; "nav.mention" &#124; "nav.menuBg" &#124; "nav.menuText" &#124; "neutral.b01" &#124; "neutral.b02" &#124; "neutral.b03" &#124; "neutral.b04" &#124; "neutral.b05" &#124; "neutral.b06" &#124; "neutral.elevation" &#124; "neutral.f01" &#124; "neutral.f02" &#124; "neutral.f03" &#124; "neutral.f04" &#124; "neutral.f05" &#124; "neutral.f06" &#124; "neutral.f07" &#124; "neutral.f11" &#124; "neutral.l01" &#124; "neutral.l02" &#124; "neutral.l03" &#124; "neutral.l04" &#124; "neutral.transparent" &#124; "presence.available" &#124; "presence.busy" &#124; "presence.invisible" &#124; "success.b01" &#124; "success.b02" &#124; "success.b03" &#124; "success.b04" &#124; "success.b05" &#124; "success.f01" &#124; "success.f02" &#124; "success.f11" &#124; "tab.default" &#124; "tab.selected" &#124; "umi.bg" &#124; "umi.mentioned" &#124; "umi.text" &#124; "warning.b01" &#124; "warning.b02" &#124; "warning.b03" &#124; "warning.f01" &#124; "warning.f02" &#124; "warning.f11" |
+| `theme` | object & object & DefaultTheme & object                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+
+**Returns:** _function[]_
+
+---
+
+### lighten
+
+▸ **lighten**(`colorInput`: ReturnType‹typeof palette2› | string, `coefficient`: number): _(Anonymous function)_
+
+get lighten coefficient of color
+
+**`example`**
+
+```tsx
+const Lighten = styled(Basic)`
+  background-color: ${lighten(palette2("interactive", "b02"), 0.5)};
+`;
+```
+
+**Parameters:**
+
+| Name          | Type                                      |
+| ------------- | ----------------------------------------- |
+| `colorInput`  | ReturnType‹typeof palette2› &#124; string |
+| `coefficient` | number                                    |
+
+**Returns:** _(Anonymous function)_

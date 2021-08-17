@@ -1,0 +1,404 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Typography/Text Text 1`] = `
+Array [
+  .c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #066FAC;
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Resize Container
+    </span>
+  </button>,
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c1.highlight-term {
+  color: #121212 !important;
+  background-color: #FFDFB1 !important;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<div
+    style={
+      Object {
+        "width": undefined,
+      }
+    }
+  >
+    <p
+      className="MuiTypography-root c0 c1 MuiTypography-noWrap"
+      data-color="initial"
+      data-variant="body1"
+      title="RcText will auto add title with text, when that children is string, and the default wrap is noWrap"
+    >
+      RcText will auto add title with text, when that children is string, and the default wrap is noWrap
+    </p>
+  </div>,
+]
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Typography/Text Text With Highlight 1`] = `
+.c0 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  color: #121212;
+}
+
+.c2 {
+  font-family: Lato,Helvetica,Arial,sans-serif;
+}
+
+.c3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+}
+
+.c1.highlight-term {
+  color: #121212 !important;
+  background-color: #FFDFB1 !important;
+}
+
+<h6
+  className="MuiTypography-root c0 c1 MuiTypography-noWrap"
+  data-color="neutral.f06"
+  data-variant="subheading1"
+>
+  highlight text will be
+  <span
+    className="MuiTypography-root c2 c1 highlight-term MuiTypography-noWrap"
+    data-color="initial"
+    data-variant="inherit"
+    title="\\"Span\\""
+  >
+    "Span"
+  </span>
+  tag, and set color to be
+  <span
+    className="MuiTypography-root c3 c1 highlight-term MuiTypography-noWrap"
+    data-color="initial"
+    data-variant="headline1"
+    title="\\"mention\\""
+  >
+    "mention"
+  </span>
+</h6>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Typography/Text Text With Link 1`] = `
+.c0 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #757575;
+}
+
+.c2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  color: #066FAC;
+  cursor: pointer;
+}
+
+.c2:focus {
+  outline: none;
+}
+
+.c2.focus-visible,
+.c2[data-focus-visible-added] {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2:active {
+  color: rgba(6,111,172,0.76);
+}
+
+.c1.highlight-term {
+  color: #121212 !important;
+  background-color: #FFDFB1 !important;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+  }
+}
+
+<p
+  className="MuiTypography-root c0 c1 MuiTypography-noWrap"
+  data-color="neutral.f03"
+  data-variant="caption1"
+>
+  You are an admin to this team.
+  <a
+    className="c2"
+    onKeyDown={[Function]}
+  >
+    Learn about team administration
+  </a>
+</p>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Typography/Text Text With Title When Overflow 1`] = `
+Array [
+  .c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #066FAC;
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Resize Container
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>,
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #494949;
+}
+
+.c1.highlight-term {
+  color: #121212 !important;
+  background-color: #FFDFB1 !important;
+}
+
+.c2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.c2.highlight-term {
+  color: #121212 !important;
+  background-color: #FFDFB1 !important;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<div
+    style={
+      Object {
+        "width": undefined,
+      }
+    }
+  >
+    <p
+      className="MuiTypography-root c0 c1 MuiTypography-noWrap"
+      data-color="neutral.f05"
+      data-variant="body1"
+      title="Show title only when text overflow, default is always show title with same value with children"
+    >
+      Show title only when text overflow, default is always show title with same value with children
+    </p>
+    <p
+      aria-describedby={null}
+      className="MuiTypography-root c0 c1 MuiTypography-noWrap"
+      data-color="neutral.f05"
+      data-variant="body1"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+      title="cool"
+    >
+      Show title only when text overflow, default is always show title with same value with children, also support custom Title
+    </p>
+    <p
+      className="MuiTypography-root c0 c2 MuiTypography-noWrap"
+      data-color="neutral.f05"
+      data-variant="body1"
+      title="Show title only when text overflow, default is always show title with same value with children, also support custom Title and line ellipsis."
+    >
+      Show title only when text overflow, default is always show title with same value with children, also support custom Title and line ellipsis.
+    </p>
+  </div>,
+]
+`;

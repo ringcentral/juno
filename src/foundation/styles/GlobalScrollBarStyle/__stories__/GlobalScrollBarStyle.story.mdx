@@ -1,0 +1,47 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Styles/GlobalScrollBarStyle" />
+
+## GlobalScrollBarStyle
+
+### Variables
+
+- [RcGlobalScrollBarStyle](#const-rcglobalscrollbarstyle)
+- [scrollBarColor](#const-scrollbarcolor)
+
+## Variables
+
+### `Const` RcGlobalScrollBarStyle
+
+• **RcGlobalScrollBarStyle**: _GlobalStyleClass‹object, object & object & DefaultTheme & object›_ = createGlobalStyle`
+/_ Firefox-only _/
+
+- {
+  scrollbar-color: \${scrollBarColor} transparent;
+  }
+  /_
+  /_ Works on Chrome/Edge/Safari \*/
+  ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  };
+
+::-webkit-scrollbar-track {
+background-color: transparent;
+};
+
+::-webkit-scrollbar-thumb {
+background-color: \${scrollBarColor};
+border-radius: 10px;
+};
+`
+
+Provide you to change whole app scrollBar color
+
+---
+
+### `Const` scrollBarColor
+
+• **scrollBarColor**: _"rgba(80,80,80,0.7)"_ = "rgba(80,80,80,0.7)"

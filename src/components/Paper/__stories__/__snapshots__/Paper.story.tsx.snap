@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Paper Paper 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+>
+  <h3>
+    This is a sheet of paper.
+  </h3>
+  <p>
+    Paper can be used to build surface or other elements for your application.
+  </p>
+</div>
+`;

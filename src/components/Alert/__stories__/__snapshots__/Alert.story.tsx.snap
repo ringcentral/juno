@@ -1,0 +1,422 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Alert Alert 1`] = `
+.c0.RcAlert-root {
+  background-color: #F3F3F3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 20px;
+  word-break: break-word;
+  border-radius: 0px;
+}
+
+.c0 .RcAlert-message {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+  text-align: left;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0;
+}
+
+.c0 .RcAlert-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+<div
+  className="MuiPaper-root MuiAlert-root RcAlert-root MuiAlert-standardInfo c0 MuiPaper-elevation0"
+  role="alert"
+>
+  <div
+    className="MuiAlert-icon RcAlert-icon"
+  />
+  <div
+    className="MuiAlert-message RcAlert-message"
+  >
+    example1
+  </div>
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Alert Alert Examples 1`] = `
+Array [
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+<h5
+    className="MuiTypography-root c0"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    info
+  </h5>,
+  .c0.RcAlert-root {
+  background-color: #F3F3F3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 20px;
+  word-break: break-word;
+  border-radius: 0px;
+}
+
+.c0 .RcAlert-message {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+  text-align: left;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0;
+}
+
+.c0 .RcAlert-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+<div
+    className="MuiPaper-root MuiAlert-root RcAlert-root MuiAlert-standardInfo c0 MuiPaper-elevation0"
+    role="alert"
+  >
+    <div
+      className="MuiAlert-icon RcAlert-icon"
+    />
+    <div
+      className="MuiAlert-message RcAlert-message"
+    >
+      Example
+    </div>
+  </div>,
+  <br />,
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+<h5
+    className="MuiTypography-root c0"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    error
+  </h5>,
+  .c0.RcAlert-root {
+  background-color: #FFF7F5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 20px;
+  word-break: break-word;
+  border-radius: 0px;
+}
+
+.c0 .RcAlert-message {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #BE3933;
+  text-align: left;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0;
+}
+
+.c0 .RcAlert-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+<div
+    className="MuiPaper-root MuiAlert-root RcAlert-root MuiAlert-standardError c0 MuiPaper-elevation0"
+    role="alert"
+  >
+    <div
+      className="MuiAlert-icon RcAlert-icon"
+    />
+    <div
+      className="MuiAlert-message RcAlert-message"
+    >
+      Example
+    </div>
+  </div>,
+  <br />,
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+<h5
+    className="MuiTypography-root c0"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    success
+  </h5>,
+  .c0.RcAlert-root {
+  background-color: #F0FCEF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 20px;
+  word-break: break-word;
+  border-radius: 0px;
+}
+
+.c0 .RcAlert-message {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #32773B;
+  text-align: left;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0;
+}
+
+.c0 .RcAlert-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+<div
+    className="MuiPaper-root MuiAlert-root RcAlert-root MuiAlert-standardSuccess c0 MuiPaper-elevation0"
+    role="alert"
+  >
+    <div
+      className="MuiAlert-icon RcAlert-icon"
+    />
+    <div
+      className="MuiAlert-message RcAlert-message"
+    >
+      Example
+    </div>
+  </div>,
+  <br />,
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+<h5
+    className="MuiTypography-root c0"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    warning
+  </h5>,
+  .c0.RcAlert-root {
+  background-color: #FFF7EB;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 20px;
+  word-break: break-word;
+  border-radius: 0px;
+}
+
+.c0 .RcAlert-message {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #896219;
+  text-align: left;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0;
+}
+
+.c0 .RcAlert-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+<div
+    className="MuiPaper-root MuiAlert-root RcAlert-root MuiAlert-standardWarning c0 MuiPaper-elevation0"
+    role="alert"
+  >
+    <div
+      className="MuiAlert-icon RcAlert-icon"
+    />
+    <div
+      className="MuiAlert-message RcAlert-message"
+    >
+      Example
+    </div>
+  </div>,
+  <br />,
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+<h5
+    className="MuiTypography-root c0"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    With default Icon
+  </h5>,
+  .c0.RcAlert-root {
+  background-color: #F3F3F3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 20px;
+  word-break: break-word;
+  border-radius: 0px;
+}
+
+.c0 .RcAlert-message {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+  text-align: left;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0;
+}
+
+.c0 .RcAlert-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+<div
+    className="MuiPaper-root MuiAlert-root RcAlert-root MuiAlert-standardInfo c0 MuiPaper-elevation0"
+    role="alert"
+  >
+    <div
+      className="MuiAlert-icon RcAlert-icon"
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20, 12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10, 10 0 0,0 12,2M11,17H13V11H11V17Z"
+        />
+      </svg>
+    </div>
+    <div
+      className="MuiAlert-message RcAlert-message"
+    >
+      With default Icon
+    </div>
+  </div>,
+]
+`;

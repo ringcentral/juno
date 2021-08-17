@@ -1,0 +1,943 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Rating Custom Rating Render 1`] = `
+Array [
+  .c2 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c0.RcRating-focusVisible .RcRating-iconActive,
+.c0 input:focus + .RcRating-pristine {
+  outline: none;
+  border-radius: 16px;
+  box-shadow: 0 0 0 1px #066FAC;
+}
+
+.c0 .RcRating-iconActive {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c0 .RcRating-label {
+  padding: 0 8px;
+}
+
+.c0 .RcRating-iconFilled {
+  color: #368541;
+}
+
+.c0 .RcRating-iconEmpty {
+  color: #666666;
+}
+
+.c0.RcRating-disabled {
+  opacity: 1;
+}
+
+.c0.RcRating-disabled .RcRating-iconFilled {
+  color: rgba(54,133,65,0.6);
+}
+
+.c0.RcRating-disabled .RcRating-iconEmpty {
+  color: #B9B9B9;
+}
+
+.c0.RcRating-readOnly .RcRating-icon {
+  padding: 0 8px;
+}
+
+<span
+    aria-label={null}
+    className="MuiRating-root c0"
+    onMouseLeave={[Function]}
+    onMouseMove={[Function]}
+    role={null}
+  >
+    <label
+      className="MuiRating-label RcRating-label"
+      htmlFor="rating-1"
+    >
+      <span
+        className="MuiRating-icon RcRating-icon MuiRating-iconFilled RcRating-iconFilled"
+      >
+        <span
+          aria-describedby={null}
+          className="c1 add icon"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          title="Poor"
+        >
+          <svg
+            className="c2"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M25.899 6.101c5.467 5.467 5.467 14.332 0 19.799s-14.332 5.467-19.799 0C.633 20.433.633 11.568 6.1 6.101s14.332-5.467 19.799 0zm-8.898 8.898L17 9a1 1 0 00-1.993-.117L15 9l.001 5.999L9 15a1 1 0 00-.117 1.993L9 17l6.001-.001L15 23a1 1 0 001.993.117L17 23l.001-6.001L23 17a1 1 0 00.117-1.993L23 15l-5.999-.001z"
+            />
+          </svg>
+          
+        </span>
+      </span>
+      <span
+        className="MuiRating-visuallyhidden"
+      >
+        1 Star
+      </span>
+    </label>
+    <input
+      checked={false}
+      className="MuiRating-visuallyhidden"
+      disabled={false}
+      id="rating-1"
+      name="rating"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value={1}
+    />
+    <label
+      className="MuiRating-label RcRating-label"
+      htmlFor="rating-2"
+    >
+      <span
+        className="MuiRating-icon RcRating-icon MuiRating-iconFilled RcRating-iconFilled"
+      >
+        <span
+          aria-describedby={null}
+          className="c1 add icon"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          title="Fair"
+        >
+          <svg
+            className="c2"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M25.899 6.101c5.467 5.467 5.467 14.332 0 19.799s-14.332 5.467-19.799 0C.633 20.433.633 11.568 6.1 6.101s14.332-5.467 19.799 0zm-8.898 8.898L17 9a1 1 0 00-1.993-.117L15 9l.001 5.999L9 15a1 1 0 00-.117 1.993L9 17l6.001-.001L15 23a1 1 0 001.993.117L17 23l.001-6.001L23 17a1 1 0 00.117-1.993L23 15l-5.999-.001z"
+            />
+          </svg>
+          
+        </span>
+      </span>
+      <span
+        className="MuiRating-visuallyhidden"
+      >
+        2 Stars
+      </span>
+    </label>
+    <input
+      checked={true}
+      className="MuiRating-visuallyhidden"
+      disabled={false}
+      id="rating-2"
+      name="rating"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value={2}
+    />
+    <label
+      className="MuiRating-label RcRating-label"
+      htmlFor="rating-3"
+    >
+      <span
+        className="MuiRating-icon RcRating-icon MuiRating-iconEmpty RcRating-iconEmpty"
+      >
+        <span
+          aria-describedby={null}
+          className="c1 add_border icon"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          title="Okay"
+        >
+          <svg
+            className="c2"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm0 4a1 1 0 01.993.883L17 9l.001 5.999L23 15l.117.007a1 1 0 010 1.986L23 17l-5.999-.001L17 23l-.007.117a1 1 0 01-1.986 0L15 23l.001-6.001L9 17l-.117-.007a1 1 0 010-1.986L9 15l6.001-.001L15 9l.007-.117A1 1 0 0116 8z"
+            />
+          </svg>
+          
+        </span>
+      </span>
+      <span
+        className="MuiRating-visuallyhidden"
+      >
+        3 Stars
+      </span>
+    </label>
+    <input
+      checked={false}
+      className="MuiRating-visuallyhidden"
+      disabled={false}
+      id="rating-3"
+      name="rating"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value={3}
+    />
+    <label
+      className="MuiRating-label RcRating-label"
+      htmlFor="rating-4"
+    >
+      <span
+        className="MuiRating-icon RcRating-icon MuiRating-iconEmpty RcRating-iconEmpty"
+      >
+        <span
+          aria-describedby={null}
+          className="c1 add_border icon"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          title="Good"
+        >
+          <svg
+            className="c2"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm0 4a1 1 0 01.993.883L17 9l.001 5.999L23 15l.117.007a1 1 0 010 1.986L23 17l-5.999-.001L17 23l-.007.117a1 1 0 01-1.986 0L15 23l.001-6.001L9 17l-.117-.007a1 1 0 010-1.986L9 15l6.001-.001L15 9l.007-.117A1 1 0 0116 8z"
+            />
+          </svg>
+          
+        </span>
+      </span>
+      <span
+        className="MuiRating-visuallyhidden"
+      >
+        4 Stars
+      </span>
+    </label>
+    <input
+      checked={false}
+      className="MuiRating-visuallyhidden"
+      disabled={false}
+      id="rating-4"
+      name="rating"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value={4}
+    />
+    <label
+      className="MuiRating-label RcRating-label"
+      htmlFor="rating-5"
+    >
+      <span
+        className="MuiRating-icon RcRating-icon MuiRating-iconEmpty RcRating-iconEmpty"
+      >
+        <span
+          aria-describedby={null}
+          className="c1 add_border icon"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          title="Great"
+        >
+          <svg
+            className="c2"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm0 4a1 1 0 01.993.883L17 9l.001 5.999L23 15l.117.007a1 1 0 010 1.986L23 17l-5.999-.001L17 23l-.007.117a1 1 0 01-1.986 0L15 23l.001-6.001L9 17l-.117-.007a1 1 0 010-1.986L9 15l6.001-.001L15 9l.007-.117A1 1 0 0116 8z"
+            />
+          </svg>
+          
+        </span>
+      </span>
+      <span
+        className="MuiRating-visuallyhidden"
+      >
+        5 Stars
+      </span>
+    </label>
+    <input
+      checked={false}
+      className="MuiRating-visuallyhidden"
+      disabled={false}
+      id="rating-5"
+      name="rating"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value={5}
+    />
+  </span>,
+  <br />,
+  .c2 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #666666;
+}
+
+.c0.RcRating-focusVisible .RcRating-iconActive,
+.c0 input:focus + .RcRating-pristine {
+  outline: none;
+  border-radius: 16px;
+  box-shadow: 0 0 0 1px #066FAC;
+}
+
+.c0 .RcRating-iconActive {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c0 .RcRating-label {
+  padding: 0 8px;
+}
+
+.c0 .RcRating-iconFilled {
+  color: #368541;
+}
+
+.c0 .RcRating-iconEmpty {
+  color: #666666;
+}
+
+.c0.RcRating-disabled {
+  opacity: 1;
+}
+
+.c0.RcRating-disabled .RcRating-iconFilled {
+  opacity: 0.64;
+}
+
+.c0.RcRating-disabled .RcRating-iconEmpty {
+  color: #B9B9B9;
+}
+
+.c0.RcRating-readOnly .RcRating-icon {
+  padding: 0 8px;
+}
+
+.c1 {
+  height: 100px;
+  width: 100px;
+  font-size: 80px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<span
+    aria-label={null}
+    className="MuiRating-root c0"
+    onMouseLeave={[Function]}
+    onMouseMove={[Function]}
+    role={null}
+  >
+    <label
+      className="MuiRating-label RcRating-label"
+      htmlFor="add-1"
+    >
+      <span
+        className="MuiRating-icon RcRating-icon MuiRating-iconFilled RcRating-iconFilled"
+      >
+        <div
+          aria-describedby={null}
+          className="c1"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          title="Poor"
+        >
+          + 
+          <p
+            className="MuiTypography-root c2"
+            data-color="neutral.f04"
+            data-variant="body1"
+          >
+            (a)
+          </p>
+        </div>
+      </span>
+      <span
+        className="MuiRating-visuallyhidden"
+      >
+        1 Star
+      </span>
+    </label>
+    <input
+      checked={false}
+      className="MuiRating-visuallyhidden"
+      disabled={false}
+      id="add-1"
+      name="add"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value={1}
+    />
+    <label
+      className="MuiRating-label RcRating-label"
+      htmlFor="add-2"
+    >
+      <span
+        className="MuiRating-icon RcRating-icon MuiRating-iconFilled RcRating-iconFilled"
+      >
+        <div
+          aria-describedby={null}
+          className="c1"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          title="Fair"
+        >
+          + 
+          <p
+            className="MuiTypography-root c2"
+            data-color="neutral.f04"
+            data-variant="body1"
+          >
+            (a)
+          </p>
+        </div>
+      </span>
+      <span
+        className="MuiRating-visuallyhidden"
+      >
+        2 Stars
+      </span>
+    </label>
+    <input
+      checked={true}
+      className="MuiRating-visuallyhidden"
+      disabled={false}
+      id="add-2"
+      name="add"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value={2}
+    />
+    <label
+      className="MuiRating-label RcRating-label"
+      htmlFor="add-3"
+    >
+      <span
+        className="MuiRating-icon RcRating-icon MuiRating-iconEmpty RcRating-iconEmpty"
+      >
+        <div
+          aria-describedby={null}
+          className="c1"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          title="Okay"
+        >
+          - 
+          <p
+            className="MuiTypography-root c2"
+            data-color="neutral.f04"
+            data-variant="body1"
+          >
+            (b)
+          </p>
+        </div>
+      </span>
+      <span
+        className="MuiRating-visuallyhidden"
+      >
+        3 Stars
+      </span>
+    </label>
+    <input
+      checked={false}
+      className="MuiRating-visuallyhidden"
+      disabled={false}
+      id="add-3"
+      name="add"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value={3}
+    />
+    <label
+      className="MuiRating-label RcRating-label"
+      htmlFor="add-4"
+    >
+      <span
+        className="MuiRating-icon RcRating-icon MuiRating-iconEmpty RcRating-iconEmpty"
+      >
+        <div
+          aria-describedby={null}
+          className="c1"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          title="Good"
+        >
+          - 
+          <p
+            className="MuiTypography-root c2"
+            data-color="neutral.f04"
+            data-variant="body1"
+          >
+            (b)
+          </p>
+        </div>
+      </span>
+      <span
+        className="MuiRating-visuallyhidden"
+      >
+        4 Stars
+      </span>
+    </label>
+    <input
+      checked={false}
+      className="MuiRating-visuallyhidden"
+      disabled={false}
+      id="add-4"
+      name="add"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value={4}
+    />
+    <label
+      className="MuiRating-label RcRating-label"
+      htmlFor="add-5"
+    >
+      <span
+        className="MuiRating-icon RcRating-icon MuiRating-iconEmpty RcRating-iconEmpty"
+      >
+        <div
+          aria-describedby={null}
+          className="c1"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          title="Great"
+        >
+          - 
+          <p
+            className="MuiTypography-root c2"
+            data-color="neutral.f04"
+            data-variant="body1"
+          >
+            (b)
+          </p>
+        </div>
+      </span>
+      <span
+        className="MuiRating-visuallyhidden"
+      >
+        5 Stars
+      </span>
+    </label>
+    <input
+      checked={false}
+      className="MuiRating-visuallyhidden"
+      disabled={false}
+      id="add-5"
+      name="add"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value={5}
+    />
+  </span>,
+]
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Rating Rating 1`] = `
+.c2 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 28px;
+}
+
+.c0.RcRating-focusVisible .RcRating-iconActive,
+.c0 input:focus + .RcRating-pristine {
+  outline: none;
+  border-radius: 16px;
+  box-shadow: 0 0 0 1px #066FAC;
+}
+
+.c0 .RcRating-iconActive {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c0 .RcRating-label {
+  padding: 0 8px;
+}
+
+.c0 .RcRating-iconFilled {
+  color: #F6AD16;
+}
+
+.c0 .RcRating-iconEmpty {
+  color: #666666;
+}
+
+.c0.RcRating-disabled {
+  opacity: 1;
+}
+
+.c0.RcRating-disabled .RcRating-iconFilled {
+  color: rgba(246,173,22,0.6);
+}
+
+.c0.RcRating-disabled .RcRating-iconEmpty {
+  color: #B9B9B9;
+}
+
+.c0.RcRating-readOnly .RcRating-icon {
+  padding: 0 8px;
+}
+
+<span
+  aria-label={null}
+  className="MuiRating-root c0"
+  onMouseLeave={[Function]}
+  onMouseMove={[Function]}
+  role={null}
+>
+  <label
+    className="MuiRating-label RcRating-label"
+    htmlFor="rating-1"
+  >
+    <span
+      className="MuiRating-icon RcRating-icon MuiRating-iconFilled RcRating-iconFilled"
+    >
+      <span
+        aria-describedby={null}
+        className="c1 star icon"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        title="Poor"
+      >
+        <svg
+          className="c2"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.885 1.726c.394.195.714.514.908.908l2.97 6.018a1 1 0 00.753.547l6.641.965a2.001 2.001 0 011.109 3.412L24.46 18.26c-.236.23-.343.561-.288.885l1.134 6.614a1.999 1.999 0 01-2.902 2.108l-5.94-3.123a1.002 1.002 0 00-.931 0l-5.94 3.123a2 2 0 01-2.902-2.109l1.134-6.614a.999.999 0 00-.288-.885l-4.806-4.684a2 2 0 011.109-3.411l6.641-.965a1 1 0 00.753-.547l2.97-6.018a2 2 0 012.679-.908z"
+          />
+        </svg>
+        
+      </span>
+    </span>
+    <span
+      className="MuiRating-visuallyhidden"
+    >
+      1 Star
+    </span>
+  </label>
+  <input
+    checked={true}
+    className="MuiRating-visuallyhidden"
+    disabled={false}
+    id="rating-1"
+    name="rating"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    type="radio"
+    value={1}
+  />
+  <label
+    className="MuiRating-label RcRating-label"
+    htmlFor="rating-2"
+  >
+    <span
+      className="MuiRating-icon RcRating-icon MuiRating-iconEmpty RcRating-iconEmpty"
+    >
+      <span
+        aria-describedby={null}
+        className="c1 star_border icon"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        title="Fair"
+      >
+        <svg
+          className="c2"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.885 1.726c.394.195.714.514.908.908l2.97 6.018a1 1 0 00.753.547l6.641.965a2.001 2.001 0 011.109 3.412L24.46 18.26c-.236.23-.343.561-.288.885l1.134 6.614a1.999 1.999 0 01-2.902 2.108l-5.94-3.123a1.002 1.002 0 00-.931 0l-5.94 3.123a2 2 0 01-2.902-2.109l1.134-6.614a.999.999 0 00-.288-.885l-4.806-4.684a2 2 0 011.109-3.411l6.641-.965a1 1 0 00.753-.547l2.97-6.018a2 2 0 012.679-.908zM13.03 9.537a3.001 3.001 0 01-2.259 1.641l-6.24.907a.2.2 0 00-.111.341l4.515 4.401a3 3 0 01.863 2.655l-1.066 6.215a.2.2 0 00.29.211l5.581-2.934a3.003 3.003 0 012.792 0l5.581 2.934a.2.2 0 00.27-.084c.02-.039.028-.084.02-.127L22.2 19.482a3 3 0 01.863-2.655l4.515-4.401a.2.2 0 00-.11-.341l-6.24-.907a3.001 3.001 0 01-2.259-1.641l-2.791-5.655a.2.2 0 00-.359 0l-2.791 5.655z"
+          />
+        </svg>
+        
+      </span>
+    </span>
+    <span
+      className="MuiRating-visuallyhidden"
+    >
+      2 Stars
+    </span>
+  </label>
+  <input
+    checked={false}
+    className="MuiRating-visuallyhidden"
+    disabled={false}
+    id="rating-2"
+    name="rating"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    type="radio"
+    value={2}
+  />
+  <label
+    className="MuiRating-label RcRating-label"
+    htmlFor="rating-3"
+  >
+    <span
+      className="MuiRating-icon RcRating-icon MuiRating-iconEmpty RcRating-iconEmpty"
+    >
+      <span
+        aria-describedby={null}
+        className="c1 star_border icon"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        title="Okay"
+      >
+        <svg
+          className="c2"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.885 1.726c.394.195.714.514.908.908l2.97 6.018a1 1 0 00.753.547l6.641.965a2.001 2.001 0 011.109 3.412L24.46 18.26c-.236.23-.343.561-.288.885l1.134 6.614a1.999 1.999 0 01-2.902 2.108l-5.94-3.123a1.002 1.002 0 00-.931 0l-5.94 3.123a2 2 0 01-2.902-2.109l1.134-6.614a.999.999 0 00-.288-.885l-4.806-4.684a2 2 0 011.109-3.411l6.641-.965a1 1 0 00.753-.547l2.97-6.018a2 2 0 012.679-.908zM13.03 9.537a3.001 3.001 0 01-2.259 1.641l-6.24.907a.2.2 0 00-.111.341l4.515 4.401a3 3 0 01.863 2.655l-1.066 6.215a.2.2 0 00.29.211l5.581-2.934a3.003 3.003 0 012.792 0l5.581 2.934a.2.2 0 00.27-.084c.02-.039.028-.084.02-.127L22.2 19.482a3 3 0 01.863-2.655l4.515-4.401a.2.2 0 00-.11-.341l-6.24-.907a3.001 3.001 0 01-2.259-1.641l-2.791-5.655a.2.2 0 00-.359 0l-2.791 5.655z"
+          />
+        </svg>
+        
+      </span>
+    </span>
+    <span
+      className="MuiRating-visuallyhidden"
+    >
+      3 Stars
+    </span>
+  </label>
+  <input
+    checked={false}
+    className="MuiRating-visuallyhidden"
+    disabled={false}
+    id="rating-3"
+    name="rating"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    type="radio"
+    value={3}
+  />
+  <label
+    className="MuiRating-label RcRating-label"
+    htmlFor="rating-4"
+  >
+    <span
+      className="MuiRating-icon RcRating-icon MuiRating-iconEmpty RcRating-iconEmpty"
+    >
+      <span
+        aria-describedby={null}
+        className="c1 star_border icon"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        title="Good"
+      >
+        <svg
+          className="c2"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.885 1.726c.394.195.714.514.908.908l2.97 6.018a1 1 0 00.753.547l6.641.965a2.001 2.001 0 011.109 3.412L24.46 18.26c-.236.23-.343.561-.288.885l1.134 6.614a1.999 1.999 0 01-2.902 2.108l-5.94-3.123a1.002 1.002 0 00-.931 0l-5.94 3.123a2 2 0 01-2.902-2.109l1.134-6.614a.999.999 0 00-.288-.885l-4.806-4.684a2 2 0 011.109-3.411l6.641-.965a1 1 0 00.753-.547l2.97-6.018a2 2 0 012.679-.908zM13.03 9.537a3.001 3.001 0 01-2.259 1.641l-6.24.907a.2.2 0 00-.111.341l4.515 4.401a3 3 0 01.863 2.655l-1.066 6.215a.2.2 0 00.29.211l5.581-2.934a3.003 3.003 0 012.792 0l5.581 2.934a.2.2 0 00.27-.084c.02-.039.028-.084.02-.127L22.2 19.482a3 3 0 01.863-2.655l4.515-4.401a.2.2 0 00-.11-.341l-6.24-.907a3.001 3.001 0 01-2.259-1.641l-2.791-5.655a.2.2 0 00-.359 0l-2.791 5.655z"
+          />
+        </svg>
+        
+      </span>
+    </span>
+    <span
+      className="MuiRating-visuallyhidden"
+    >
+      4 Stars
+    </span>
+  </label>
+  <input
+    checked={false}
+    className="MuiRating-visuallyhidden"
+    disabled={false}
+    id="rating-4"
+    name="rating"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    type="radio"
+    value={4}
+  />
+  <label
+    className="MuiRating-label RcRating-label"
+    htmlFor="rating-5"
+  >
+    <span
+      className="MuiRating-icon RcRating-icon MuiRating-iconEmpty RcRating-iconEmpty"
+    >
+      <span
+        aria-describedby={null}
+        className="c1 star_border icon"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        title="Great"
+      >
+        <svg
+          className="c2"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.885 1.726c.394.195.714.514.908.908l2.97 6.018a1 1 0 00.753.547l6.641.965a2.001 2.001 0 011.109 3.412L24.46 18.26c-.236.23-.343.561-.288.885l1.134 6.614a1.999 1.999 0 01-2.902 2.108l-5.94-3.123a1.002 1.002 0 00-.931 0l-5.94 3.123a2 2 0 01-2.902-2.109l1.134-6.614a.999.999 0 00-.288-.885l-4.806-4.684a2 2 0 011.109-3.411l6.641-.965a1 1 0 00.753-.547l2.97-6.018a2 2 0 012.679-.908zM13.03 9.537a3.001 3.001 0 01-2.259 1.641l-6.24.907a.2.2 0 00-.111.341l4.515 4.401a3 3 0 01.863 2.655l-1.066 6.215a.2.2 0 00.29.211l5.581-2.934a3.003 3.003 0 012.792 0l5.581 2.934a.2.2 0 00.27-.084c.02-.039.028-.084.02-.127L22.2 19.482a3 3 0 01.863-2.655l4.515-4.401a.2.2 0 00-.11-.341l-6.24-.907a3.001 3.001 0 01-2.259-1.641l-2.791-5.655a.2.2 0 00-.359 0l-2.791 5.655z"
+          />
+        </svg>
+        
+      </span>
+    </span>
+    <span
+      className="MuiRating-visuallyhidden"
+    >
+      5 Stars
+    </span>
+  </label>
+  <input
+    checked={false}
+    className="MuiRating-visuallyhidden"
+    disabled={false}
+    id="rating-5"
+    name="rating"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    type="radio"
+    value={5}
+  />
+</span>
+`;

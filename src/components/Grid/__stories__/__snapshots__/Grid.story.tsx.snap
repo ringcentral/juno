@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Grid Grid Container 1`] = `
+Array [
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c2 {
+  font-family: Lato,Helvetica,Arial,sans-serif;
+}
+
+.c1.highlight-term {
+  color: #121212 !important;
+  background-color: #FFDFB1 !important;
+}
+
+<p
+    className="MuiTypography-root c0 c1"
+    data-color="initial"
+    data-variant="body1"
+  >
+    <span
+      className="MuiTypography-root c2 c1 highlight-term MuiTypography-noWrap"
+      data-color="initial"
+      data-variant="inherit"
+      title="align-content "
+    >
+      align-content 
+    </span>
+    determines the spacing between lines
+  </p>,
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c2 {
+  font-family: Lato,Helvetica,Arial,sans-serif;
+}
+
+.c1.highlight-term {
+  color: #121212 !important;
+  background-color: #FFDFB1 !important;
+}
+
+<p
+    className="MuiTypography-root c0 c1 MuiTypography-gutterBottom"
+    data-color="initial"
+    data-variant="body1"
+  >
+    <span
+      className="MuiTypography-root c2 c1 highlight-term MuiTypography-noWrap"
+      data-color="initial"
+      data-variant="inherit"
+      title="align-items "
+    >
+      align-items 
+    </span>
+    determines how the items as a whole are aligned within the container.
+  </p>,
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-9"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
+    >
+      <div
+        className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        1. xs=3
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
+    >
+      <div
+        className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        2. xs=3
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5"
+    >
+      <div
+        className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        3. xs=3
+      </div>
+    </div>
+  </div>,
+]
+`;

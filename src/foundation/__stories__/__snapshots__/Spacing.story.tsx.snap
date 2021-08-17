@@ -1,0 +1,448 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🔧 Foundation/Spacing Spacing 1`] = `
+.c2 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #000000;
+}
+
+.c3 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #666666;
+}
+
+.c1 {
+  background: #ef99b7;
+  width: 100px;
+  height: 4px;
+}
+
+.c4 {
+  background: #79ecfa;
+  width: 100px;
+  height: 8px;
+}
+
+.c5 {
+  background: #e479f7;
+  width: 100px;
+  height: 12px;
+}
+
+.c6 {
+  background: #f8a58b;
+  width: 100px;
+  height: 16px;
+}
+
+.c7 {
+  background: #91a0f9;
+  width: 100px;
+  height: 20px;
+}
+
+.c8 {
+  background: #f9cf7a;
+  width: 100px;
+  height: 24px;
+}
+
+.c9 {
+  background: #79d7e4;
+  width: 100px;
+  height: 32px;
+}
+
+.c10 {
+  background: #79c4be;
+  width: 100px;
+  height: 40px;
+}
+
+.c11 {
+  background: #a88ec9;
+  width: 100px;
+  height: 48px;
+}
+
+.c12 {
+  background: #ef99b7;
+  margin-right: 30px;
+  width: 4px;
+  height: 100px;
+}
+
+.c13 {
+  background: #79ecfa;
+  margin-right: 30px;
+  width: 8px;
+  height: 100px;
+}
+
+.c14 {
+  background: #e479f7;
+  margin-right: 30px;
+  width: 12px;
+  height: 100px;
+}
+
+.c15 {
+  background: #f8a58b;
+  margin-right: 30px;
+  width: 16px;
+  height: 100px;
+}
+
+.c16 {
+  background: #91a0f9;
+  margin-right: 30px;
+  width: 20px;
+  height: 100px;
+}
+
+.c17 {
+  background: #f9cf7a;
+  margin-right: 30px;
+  width: 24px;
+  height: 100px;
+}
+
+.c18 {
+  background: #79d7e4;
+  margin-right: 30px;
+  width: 32px;
+  height: 100px;
+}
+
+.c19 {
+  background: #79c4be;
+  margin-right: 30px;
+  width: 40px;
+  height: 100px;
+}
+
+.c20 {
+  background: #a88ec9;
+  margin-right: 30px;
+  width: 48px;
+  height: 100px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.c0 span {
+  margin-left: 10px;
+}
+
+<div
+  className="MuiGrid-root MuiGrid-container"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
+  >
+    <div
+      className="c0"
+    >
+      <div
+        className="c1"
+        color="#ef99b7"
+      />
+      <span>
+        <p
+          className="MuiTypography-root c2"
+          data-color="neutral.b06"
+          data-variant="body1"
+        >
+          spacing(
+          1
+          )
+        </p>
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          4
+          px
+        </p>
+      </span>
+    </div>
+    <div
+      className="c0"
+    >
+      <div
+        className="c4"
+        color="#79ecfa"
+      />
+      <span>
+        <p
+          className="MuiTypography-root c2"
+          data-color="neutral.b06"
+          data-variant="body1"
+        >
+          spacing(
+          2
+          )
+        </p>
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          8
+          px
+        </p>
+      </span>
+    </div>
+    <div
+      className="c0"
+    >
+      <div
+        className="c5"
+        color="#e479f7"
+      />
+      <span>
+        <p
+          className="MuiTypography-root c2"
+          data-color="neutral.b06"
+          data-variant="body1"
+        >
+          spacing(
+          3
+          )
+        </p>
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          12
+          px
+        </p>
+      </span>
+    </div>
+    <div
+      className="c0"
+    >
+      <div
+        className="c6"
+        color="#f8a58b"
+      />
+      <span>
+        <p
+          className="MuiTypography-root c2"
+          data-color="neutral.b06"
+          data-variant="body1"
+        >
+          spacing(
+          4
+          )
+        </p>
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          16
+          px
+        </p>
+      </span>
+    </div>
+    <div
+      className="c0"
+    >
+      <div
+        className="c7"
+        color="#91a0f9"
+      />
+      <span>
+        <p
+          className="MuiTypography-root c2"
+          data-color="neutral.b06"
+          data-variant="body1"
+        >
+          spacing(
+          5
+          )
+        </p>
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          20
+          px
+        </p>
+      </span>
+    </div>
+    <div
+      className="c0"
+    >
+      <div
+        className="c8"
+        color="#f9cf7a"
+      />
+      <span>
+        <p
+          className="MuiTypography-root c2"
+          data-color="neutral.b06"
+          data-variant="body1"
+        >
+          spacing(
+          6
+          )
+        </p>
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          24
+          px
+        </p>
+      </span>
+    </div>
+    <div
+      className="c0"
+    >
+      <div
+        className="c9"
+        color="#79d7e4"
+      />
+      <span>
+        <p
+          className="MuiTypography-root c2"
+          data-color="neutral.b06"
+          data-variant="body1"
+        >
+          spacing(
+          8
+          )
+        </p>
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          32
+          px
+        </p>
+      </span>
+    </div>
+    <div
+      className="c0"
+    >
+      <div
+        className="c10"
+        color="#79c4be"
+      />
+      <span>
+        <p
+          className="MuiTypography-root c2"
+          data-color="neutral.b06"
+          data-variant="body1"
+        >
+          spacing(
+          10
+          )
+        </p>
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          40
+          px
+        </p>
+      </span>
+    </div>
+    <div
+      className="c0"
+    >
+      <div
+        className="c11"
+        color="#a88ec9"
+      />
+      <span>
+        <p
+          className="MuiTypography-root c2"
+          data-color="neutral.b06"
+          data-variant="body1"
+        >
+          spacing(
+          12
+          )
+        </p>
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          48
+          px
+        </p>
+      </span>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8"
+  >
+    <div
+      className="c0"
+    >
+      <div
+        className="c12"
+        color="#ef99b7"
+      />
+      <div
+        className="c13"
+        color="#79ecfa"
+      />
+      <div
+        className="c14"
+        color="#e479f7"
+      />
+      <div
+        className="c15"
+        color="#f8a58b"
+      />
+      <div
+        className="c16"
+        color="#91a0f9"
+      />
+      <div
+        className="c17"
+        color="#f9cf7a"
+      />
+      <div
+        className="c18"
+        color="#79d7e4"
+      />
+      <div
+        className="c19"
+        color="#79c4be"
+      />
+      <div
+        className="c20"
+        color="#a88ec9"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🔧 Foundation/Hooks/useAudio useAudio 1`] = `
+.c3 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c0.RcIconButton-root {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #066FAC;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  font-size: 40px;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+}
+
+.c0.RcIconButton-root:active {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+
+.c0.RcIconButton-root .c1 {
+  font-size: 40px;
+}
+
+.c0.RcIconButton-root:active .c1 {
+  color: #066FAC;
+}
+
+.c0.RcIconButton-root.focus-visible,
+.c0.RcIconButton-root[data-focus-visible-added] {
+  background-color: rgba(6,111,172,0.16);
+}
+
+.c0.RcIconButton-root.focus-visible:active .c1,
+.c0.RcIconButton-root[data-focus-visible-added]:active .c1 {
+  color: rgba(6,111,172,0.88);
+}
+
+.c0.RcIconButton-persistBg {
+  background-color: rgba(6,111,172,0.12);
+}
+
+.c0.RcIconButton-disabled .c1 {
+  color: #B9B9B9;
+}
+
+.c0.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c0.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c0.RcIconButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c0.RcIconButton-contained:active {
+  background-color: rgb(5,99,154);
+}
+
+.c0.RcIconButton-contained:active .c1 {
+  color: #fff;
+}
+
+.c0.RcIconButton-contained.focus-visible,
+.c0.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgb(5,99,154);
+}
+
+.c0.RcIconButton-contained.focus-visible:active .c1,
+.c0.RcIconButton-contained[data-focus-visible-added]:active .c1 {
+  color: #fff;
+}
+
+.c0 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcIconButton-root:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+
+  .c0.RcIconButton-root:hover .c1 {
+    color: rgba(6,111,172,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcIconButton-contained:hover {
+    background-color: rgb(5,99,154);
+  }
+
+  .c0.RcIconButton-contained:hover .c1 {
+    color: #fff;
+  }
+}
+
+<button
+  className="MuiButtonBase-root c0 RcIconButton-root RcIconButton-contained"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="c1 c2 play_circle_border icon"
+  >
+    <svg
+      className="c3"
+      viewBox="0 0 32 32"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm-3.432 5.17l.116.065 9.73 5.832c.776.533.782 1.328.01 1.867l-.128.083-9.711 5.808c-.845.442-1.523.022-1.58-.967l-.004-.138-.002-11.437.003-.128c.052-.997.724-1.418 1.565-.984zm.431 2.584l.002 8.494 7.093-4.245-7.095-4.249z"
+      />
+    </svg>
+    
+  </span>
+</button>
+`;

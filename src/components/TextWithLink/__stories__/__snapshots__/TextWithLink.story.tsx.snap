@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🖤 Deprecated Components/Text/TextWithLink TextWithLink 1`] = `
+.c1 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #066FAC;
+  cursor: pointer;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1.focus-visible,
+.c1[data-focus-visible-added] {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1:active {
+  color: rgba(6,111,172,0.76);
+}
+
+.c0.c0 {
+  color: #666666;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+}
+
+.c0.c0 * {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+  }
+}
+
+<p
+  className="MuiTypography-root c0 MuiTypography-body1"
+>
+  You are an admin to this team.
+  <a
+    className="c1"
+    onKeyDown={[Function]}
+  >
+    Learn about team administration
+  </a>
+</p>
+`;

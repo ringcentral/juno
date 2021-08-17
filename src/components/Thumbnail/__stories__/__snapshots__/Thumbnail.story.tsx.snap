@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Thumbnail Thumbnail 1`] = `
+.c0 {
+  width: 36px;
+  height: 36px;
+  background-image: url(https://picsum.photos/100/100/?image=1);
+  border-radius: 4px;
+  display: inline-block;
+  background-color: #F3F3F3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+<span
+  className="c0 "
+  data-test-automation-id="thumbnail"
+  size="large"
+  src="https://picsum.photos/100/100/?image=1"
+/>
+`;

@@ -1,0 +1,41 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/usePrevious" />
+
+## usePrevious
+
+### Functions
+
+- [usePrevious](#useprevious)
+
+## Functions
+
+### usePrevious
+
+▸ **usePrevious**‹**T**, **K**›(`cb`: function, `isDefault?`: K): _T_
+
+get previous render value
+
+**Type parameters:**
+
+▪ **T**
+
+▪ **K**: _boolean_
+
+**Parameters:**
+
+▪ **cb**: _function_
+
+that get method of target value
+
+▸ (): _T_
+
+▪`Optional` **isDefault**: _K_
+
+if set `true`, the first time will get value from `cb`
+
+**Returns:** _T_
+
+previous value get from `cb`

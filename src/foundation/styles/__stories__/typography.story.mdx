@@ -1,0 +1,58 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Styles/typography" />
+
+## typography
+
+### Functions
+
+- [typography](#typography)
+- [typographyProp](#typographyprop)
+
+## Functions
+
+### typography
+
+▸ **typography**(`name`: RcTypographyKeys, `fontOnly`: boolean): _(undefined | null | string | number | false | Styles | Keyframes | StyledComponentClass‹any, any, any› | function)[]_
+
+get typography style from token
+
+**`example`**
+
+```ts
+typography("body1");
+```
+
+**Parameters:**
+
+| Name       | Type             | Default |
+| ---------- | ---------------- | ------- |
+| `name`     | RcTypographyKeys | -       |
+| `fontOnly` | boolean          | false   |
+
+**Returns:** _(undefined | null | string | number | false | Styles | Keyframes | StyledComponentClass‹any, any, any› | function)[]_
+
+---
+
+### typographyProp
+
+▸ **typographyProp**(`name`: RcTypographyKeys, `key`: string): _undefined | (Anonymous function)_
+
+get typography key value with token
+
+**`example`**
+
+```ts
+typographyProp("body1", "fontSize");
+```
+
+**Parameters:**
+
+| Name   | Type             |
+| ------ | ---------------- |
+| `name` | RcTypographyKeys |
+| `key`  | string           |
+
+**Returns:** _undefined | (Anonymous function)_

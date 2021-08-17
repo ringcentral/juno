@@ -1,0 +1,84 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/useChange" />
+
+## useChange
+
+### Functions
+
+- [useChange](#const-usechange)
+- [useDepsChange](#const-usedepschange)
+
+## Functions
+
+### `Const` useChange
+
+▸ **useChange**‹**T**, **K**›(`cb`: function, `listenCb`: function): _T_
+
+get value when prev listen value change
+
+**Type parameters:**
+
+▪ **T**
+
+▪ **K**
+
+**Parameters:**
+
+▪ **cb**: _function_
+
+that method you want calculate to get value
+
+▸ (`prevValue`: K | undefined, `nextValue`: K): _T_
+
+**Parameters:**
+
+| Name        | Type               |
+| ----------- | ------------------ |
+| `prevValue` | K &#124; undefined |
+| `nextValue` | K                  |
+
+▪ **listenCb**: _function_
+
+prev compare listener value
+
+▸ (): _K_
+
+**Returns:** _T_
+
+---
+
+### `Const` useDepsChange
+
+▸ **useDepsChange**‹**T**, **K**›(`cb`: function, `deps`: K): _T_
+
+get value when prev deps one of array value change
+
+**Type parameters:**
+
+▪ **T**
+
+▪ **K**: _Array‹any›_
+
+**Parameters:**
+
+▪ **cb**: _function_
+
+that method you want calculate to get value
+
+▸ (`prevValue`: K | undefined, `nextValue`: K): _T_
+
+**Parameters:**
+
+| Name        | Type               |
+| ----------- | ------------------ |
+| `prevValue` | K &#124; undefined |
+| `nextValue` | K                  |
+
+▪ **deps**: _K_
+
+prev compare value array
+
+**Returns:** _T_

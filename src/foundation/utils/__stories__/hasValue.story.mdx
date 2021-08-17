@@ -1,0 +1,73 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Utils/hasValue" />
+
+## hasValue
+
+### Variables
+
+- [hasValue](#const-hasvalue)
+- [isFilled](#const-isfilled)
+
+## Variables
+
+### `Const` hasValue
+
+• **hasValue**: _function_ = MuiHasValue
+
+Copy from Mui
+
+**`see`** https://facebook.github.io/react/docs/forms.html#controlled-components
+
+[Go to this canvas](?path=/story/undefined)
+
+<Canvas>
+  <Story id="undefined" />
+</Canvas>
+
+
+**`param`**
+
+**`returns`** true if string (including '') or number (including zero)
+
+#### Type declaration:
+
+▸ (`value`: any): _boolean_
+
+**Parameters:**
+
+| Name    | Type |
+| ------- | ---- |
+| `value` | any  |
+
+---
+
+### `Const` isFilled
+
+• **isFilled**: _function_ = MuiIsFilled
+
+Determine if field is empty or filled.
+Response determines if label is presented above field or as placeholder.
+
+**`param`**
+
+**`param`**
+
+**`returns`** False when not present or empty string.
+True when any number or string with length.
+
+#### Type declaration:
+
+▸ (`obj`: object, `SSR?`: undefined | false | true): _boolean_
+
+**Parameters:**
+
+▪ **obj**: _object_
+
+| Name    | Type |
+| ------- | ---- |
+| `value` | any  |
+
+▪`Optional` **SSR**: _undefined | false | true_

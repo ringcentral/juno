@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Portal Portal 1`] = `
+.c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c1.highlight-term {
+  color: #121212 !important;
+  background-color: #FFDFB1 !important;
+}
+
+<div
+  className="MuiBox-root MuiBox-root-229"
+>
+  <p
+    className="MuiTypography-root c0 c1 MuiTypography-noWrap"
+    data-color="neutral.f06"
+    data-variant="body1"
+    title="This text is portaled at the end of document.body!"
+  >
+    This text is portaled at the end of document.body!
+  </p>
+</div>
+`;

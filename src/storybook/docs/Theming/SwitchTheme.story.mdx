@@ -1,0 +1,51 @@
+<Meta title="💅 Style system/Switch Theme" />
+
+## Switch theme
+
+https://codesandbox.io/s/juno-theme-switcher-4j370?file=/src/App.tsx
+
+```tsx
+const themeMap = {
+    light: {}, // that theme you want to overwrite default theme
+    dark: RcDefaultDarkTheme // that theme you want to overwrite default theme
+}
+...
+<RcThemeSwitcherProvider defaultTheme="light" themeMap={themeMap}>
+  <RcThemeProvider>
+    <ThemeSwitcher />
+    <div className="rc-text-primary-main">123</div>
+    <div className="rc-bg-bg-dark rc-text-text-dark">Abc</div>
+  </RcThemeProvider>
+</RcThemeSwitcherProvider>
+```
+
+### useThemeSwitcher
+
+use `useThemeSwitcher` to set theme or get theme value from hook.
+
+- ThemeSwitcher
+
+```tsx
+import { RcButton, useThemeSwitcher } from '@ringcentral/juno';
+import React, { FunctionComponent } from 'react';
+
+export interface ThemeSwitcherProps {}
+
+export const ThemeSwitcher: FunctionComponent<ThemeSwitcherProps> = () => {
+  const { setTheme, themeMap } = useThemeSwitcher();
+
+  return (
+    <>
+      {Object.keys(themeMap).map((key) => (
+        <RcButton
+          onClick={() => {
+            setTheme(key);
+          }}
+        >
+          {key}
+        </RcButton>
+      ))}
+    </>
+  );
+};
+```

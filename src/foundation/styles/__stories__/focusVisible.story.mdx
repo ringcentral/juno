@@ -1,0 +1,80 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Styles/focusVisible" />
+
+## focusVisible
+
+### Variables
+
+- [focusVisible](#const-focusvisible)
+- [focusVisibleColor](#const-focusvisiblecolor)
+- [focusWithin](#const-focuswithin)
+
+### Functions
+
+- [focusVisibleShadowStyle](#const-focusvisibleshadowstyle)
+- [shadowBorder](#const-shadowborder)
+
+## Variables
+
+### `Const` focusVisible
+
+• **focusVisible**: _"&.focus-visible, &[data-focus-visible-added]"_ = "&.focus-visible, &[data-focus-visible-added]"
+
+---
+
+### `Const` focusVisibleColor
+
+• **focusVisibleColor**: _function_ = palette2('interactive', 'f01')
+
+#### Type declaration:
+
+▸ (`__namedParameters`: object): _any_
+
+**Parameters:**
+
+▪ **\_\_namedParameters**: _object_
+
+| Name    | Type                                    |
+| ------- | --------------------------------------- |
+| `theme` | object & object & DefaultTheme & object |
+
+---
+
+### `Const` focusWithin
+
+• **focusWithin**: _"&:hover, &:focus-within"_ = "&:hover, &:focus-within"
+
+## Functions
+
+### `Const` focusVisibleShadowStyle
+
+▸ **focusVisibleShadowStyle**(`r?`: Parameters‹typeof radius›[0], `color?`: any): _(undefined | null | string | number | false | Styles | Keyframes | StyledComponentClass‹any, any, any› | function)[]_
+
+**Parameters:**
+
+| Name     | Type                         |
+| -------- | ---------------------------- |
+| `r?`     | Parameters‹typeof radius›[0] |
+| `color?` | any                          |
+
+**Returns:** _(undefined | null | string | number | false | Styles | Keyframes | StyledComponentClass‹any, any, any› | function)[]_
+
+---
+
+### `Const` shadowBorder
+
+▸ **shadowBorder**(`r`: Parameters‹typeof radius›[0], `color`: any, `inset`: boolean, `size`: number): _(undefined | null | string | number | false | Styles | Keyframes | StyledComponentClass‹any, any, any› | function)[]_
+
+**Parameters:**
+
+| Name    | Type                         | Default           |
+| ------- | ---------------------------- | ----------------- |
+| `r`     | Parameters‹typeof radius›[0] | "zero"            |
+| `color` | any                          | focusVisibleColor |
+| `inset` | boolean                      | true              |
+| `size`  | number                       | 1                 |
+
+**Returns:** _(undefined | null | string | number | false | Styles | Keyframes | StyledComponentClass‹any, any, any› | function)[]_

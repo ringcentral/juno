@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Cards/CardMedia CardMedia 1`] = `
+.c0 {
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c1 {
+  padding: 16px;
+}
+
+.c2 {
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 40px;
+}
+
+.c3 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+<div
+  className="MuiPaper-root MuiCard-root c0 MuiPaper-elevation1 MuiPaper-rounded"
+  style={
+    Object {
+      "width": 300,
+    }
+  }
+>
+  <div
+    className="MuiCardMedia-root RcCardMedia-root "
+    style={
+      Object {
+        "backgroundImage": "url(\\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Lizard_namely_Oriental_Garden_Lizard.jpg/1200px-Lizard_namely_Oriental_Garden_Lizard.jpg\\")",
+        "height": 140,
+      }
+    }
+  />
+  <div
+    className="MuiCardContent-root RcCardContent-root c1"
+  >
+    <h4
+      className="MuiTypography-root c2 MuiTypography-gutterBottom"
+      data-color="initial"
+      data-variant="display1"
+    >
+      Lizard
+    </h4>
+    <p
+      className="MuiTypography-root c3 MuiTypography-gutterBottom"
+      data-color="initial"
+      data-variant="body1"
+    >
+      Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica
+    </p>
+  </div>
+</div>
+`;

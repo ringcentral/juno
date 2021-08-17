@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🖤 Deprecated Components/Text/TextWithTooltip TextWithTooltip 1`] = `
+.c1 {
+  color: #121212;
+}
+
+.c0 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+<div
+  className="c0"
+  style={
+    Object {
+      "width": "400px",
+    }
+  }
+>
+  <span
+    onMouseOver={[Function]}
+    title=""
+  >
+    <span
+      className="c1"
+    >
+      If the text is truncated, will show tooltip when hovered. hahahahahahah
+    </span>
+  </span>
+</div>
+`;

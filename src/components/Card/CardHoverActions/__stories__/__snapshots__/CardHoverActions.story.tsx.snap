@@ -1,0 +1,270 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Cards/CardHoverActions CardHoverActions 1`] = `
+.c5 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c2.RcIconButton-root {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  color: #FFFFFF;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+}
+
+.c2.RcIconButton-root:active {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+
+.c2.RcIconButton-root .c3 {
+  font-size: 16px;
+}
+
+.c2.RcIconButton-root:active .c3 {
+  color: #FFFFFF;
+}
+
+.c2.RcIconButton-root.focus-visible,
+.c2.RcIconButton-root[data-focus-visible-added] {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c2.RcIconButton-root.focus-visible:active .c3,
+.c2.RcIconButton-root[data-focus-visible-added]:active .c3 {
+  color: rgba(255,255,255,0.88);
+}
+
+.c2.RcIconButton-persistBg {
+  background-color: rgba(255,255,255,0.12);
+}
+
+.c2.RcIconButton-disabled .c3 {
+  color: #B9B9B9;
+}
+
+.c2.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c2.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c2.RcIconButton-contained {
+  color: rgba(0,0,0,0.87);
+  background-color: #FFFFFF;
+}
+
+.c2.RcIconButton-contained:active {
+  background-color: rgb(229,229,229);
+}
+
+.c2.RcIconButton-contained:active .c3 {
+  color: rgba(0,0,0,0.87);
+}
+
+.c2.RcIconButton-contained.focus-visible,
+.c2.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgb(229,229,229);
+}
+
+.c2.RcIconButton-contained.focus-visible:active .c3,
+.c2.RcIconButton-contained[data-focus-visible-added]:active .c3 {
+  color: rgba(0,0,0,0.87);
+}
+
+.c2 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c0 {
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c6 {
+  padding: 16px;
+}
+
+.c1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 16px;
+  -webkit-transition: opacity 300ms cubic-bezier(0.25,0.8,0.25,1) 0ms;
+  transition: opacity 300ms cubic-bezier(0.25,0.8,0.25,1) 0ms;
+}
+
+.c7 {
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 40px;
+}
+
+.c8 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcIconButton-root:hover {
+    background-color: rgba(255,255,255,0.08);
+  }
+
+  .c2.RcIconButton-root:hover .c3 {
+    color: rgba(255,255,255,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcIconButton-contained:hover {
+    background-color: rgb(229,229,229);
+  }
+
+  .c2.RcIconButton-contained:hover .c3 {
+    color: rgba(0,0,0,0.87);
+  }
+}
+
+<div
+  className="MuiPaper-root MuiCard-root c0 MuiPaper-elevation1 MuiPaper-rounded"
+  style={
+    Object {
+      "width": 300,
+    }
+  }
+  tabIndex={0}
+>
+  <div
+    className="c1 RcCardHoverActions-root"
+  >
+    <button
+      className="MuiButtonBase-root c2 RcIconButton-root RcIconButton-contained"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      style={
+        Object {
+          "marginRight": 16,
+        }
+      }
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="c3 c4 edit icon"
+      >
+        <svg
+          className="c5"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M28.01 4a4 4 0 010 5.657L10.761 26.906c-.279.279-.635.47-1.022.547l-5.006 1.001a1 1 0 01-1.177-1.176l1.001-5.006c.077-.387.268-.743.547-1.022L22.353 4.001a4 4 0 015.657 0zm-4.242 7.07L20.94 8.242 6.598 22.584l2.828 2.828L23.768 11.07zm2.827-5.656a2 2 0 00-2.828 0l-1.413 1.413 2.828 2.828 1.413-1.414a2 2 0 000-2.828z"
+          />
+        </svg>
+        
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root c2 RcIconButton-root RcIconButton-contained"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="c3 c4 delete icon"
+      >
+        <svg
+          className="c5"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 2a2 2 0 012 2v2h6a1 1 0 010 2h-1.083l-.837 20.083A2 2 0 0124.082 30H7.919a2 2 0 01-1.998-1.917L5.084 8H4.001a1 1 0 010-2h6V4a2 2 0 012-2h8zm4.914 6H7.085l.793 19.042a1 1 0 00.999.958h14.245a1 1 0 00.999-.958L24.913 8zM13 12a1 1 0 011 1v10a1 1 0 01-2 0V13a1 1 0 011-1zm6 0a1 1 0 011 1v10a1 1 0 01-2 0V13a1 1 0 011-1zm0-8h-6a1 1 0 00-1 1v1h8V5a1 1 0 00-1-1z"
+          />
+        </svg>
+        
+      </span>
+    </button>
+  </div>
+  <div
+    className="MuiCardContent-root RcCardContent-root c6"
+  >
+    <h4
+      className="MuiTypography-root c7 MuiTypography-gutterBottom"
+      data-color="initial"
+      data-variant="display1"
+    >
+      Lizard
+    </h4>
+    <p
+      className="MuiTypography-root c8 MuiTypography-gutterBottom"
+      data-color="initial"
+      data-variant="body1"
+    >
+      Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica
+    </p>
+  </div>
+</div>
+`;

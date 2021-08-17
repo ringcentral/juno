@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Tabs/Tab Tab 1`] = `
+Array [
+  .c0 {
+  text-transform: none;
+  box-sizing: border-box;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+  min-height: 32px;
+  min-width: 32px;
+}
+
+.c0.RcTab-selected {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #066FAC;
+}
+
+<button
+    className="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="tab"
+    size="small"
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiTab-wrapper RcTab-wrapper"
+    >
+      Just Tab Component
+    </span>
+  </button>,
+  <br />,
+  .c2 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c0 {
+  text-transform: none;
+  box-sizing: border-box;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+  min-height: 32px;
+  min-width: 32px;
+}
+
+.c0.RcTab-selected {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #066FAC;
+}
+
+<button
+    className="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit c0 MuiTab-labelIcon RcTab-labelIcon"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="tab"
+    size="small"
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiTab-wrapper RcTab-wrapper"
+    >
+      <span
+        className="c1 pin icon"
+      >
+        <svg
+          className="c2"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.302 14.798a1.141 1.141 0 010-1.613 10.248 10.248 0 018.724-2.901l5.045-8.715a1.14 1.14 0 011.793-.234l10.802 10.801a1.141 1.141 0 01-.235 1.794l-8.715 5.046a10.246 10.246 0 01-2.901 8.723 1.141 1.141 0 01-1.613 0l-5.644-5.644-7.256 7.256c-.445.445-2.78 2.058-3.225 1.613s1.167-2.78 1.613-3.225l7.256-7.256-5.644-5.644z"
+          />
+        </svg>
+        
+      </span>
+      With Icon
+    </span>
+  </button>,
+  <br />,
+  .c2 .RcBadge-badge {
+  color: #FFFFFF;
+  background-color: #FF8800;
+  height: 18px;
+  min-width: 18px;
+  padding: 0;
+  position: unset;
+  -webkit-transform: unset;
+  -ms-transform: unset;
+  transform: unset;
+}
+
+.c2 .RcBadge-badge.RcBadge-invisible {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.c1 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c0 {
+  text-transform: none;
+  box-sizing: border-box;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+  min-height: 32px;
+  min-width: 32px;
+}
+
+.c0.RcTab-selected {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #066FAC;
+}
+
+<button
+    className="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="tab"
+    size="small"
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiTab-wrapper RcTab-wrapper"
+    >
+      <span
+        className="MuiTypography-root c1"
+        data-color="initial"
+        data-variant="body1"
+      >
+        Tab 1
+      </span>
+      <span
+        className="MuiBadge-root c2"
+      >
+        <span
+          className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightRectangle"
+        >
+          5
+        </span>
+      </span>
+    </span>
+  </button>,
+]
+`;

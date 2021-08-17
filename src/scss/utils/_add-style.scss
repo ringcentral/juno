@@ -1,0 +1,11 @@
+@mixin add-style($alias, $type, $map) {
+  @each $property, $value in $map {
+    @if (type-of($value) == map) {
+      @include add-style(#{$alias}-#{$property}, $type, $value);
+    } @else {
+      .#{$alias}-#{$property} {
+        #{$type}: $value;
+      }
+    }
+  }
+}

@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Progress/CircularProgress CircularProgress 1`] = `
+.c0 {
+  color: #066FAC;
+}
+
+<div
+  className="MuiCircularProgress-root c0 MuiCircularProgress-indeterminate"
+  role="progressbar"
+  style={
+    Object {
+      "height": 24,
+      "width": 24,
+    }
+  }
+>
+  <svg
+    className="MuiCircularProgress-svg"
+    viewBox="22 22 44 44"
+  >
+    <circle
+      className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+      cx={44}
+      cy={44}
+      fill="none"
+      r={20.2}
+      strokeWidth={3.6}
+      style={Object {}}
+    />
+  </svg>
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Progress/CircularProgress CircularProgress Examples 1`] = `
+.c1 {
+  color: #BE3933;
+}
+
+.c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+<div>
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Default
+  </h5>
+  <div
+    className="MuiCircularProgress-root c1 MuiCircularProgress-indeterminate"
+    role="progressbar"
+    style={
+      Object {
+        "height": 24,
+        "width": 24,
+      }
+    }
+  >
+    <svg
+      className="MuiCircularProgress-svg"
+      viewBox="22 22 44 44"
+    >
+      <circle
+        className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+        cx={44}
+        cy={44}
+        fill="none"
+        r={20.2}
+        strokeWidth={3.6}
+        style={Object {}}
+      />
+    </svg>
+  </div>
+  <br />
+  <br />
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Determinate with value
+  </h5>
+  <div
+    aria-valuenow={25}
+    className="MuiCircularProgress-root c1 MuiCircularProgress-determinate"
+    role="progressbar"
+    style={
+      Object {
+        "height": 24,
+        "transform": "rotate(-90deg)",
+        "width": 24,
+      }
+    }
+  >
+    <svg
+      className="MuiCircularProgress-svg"
+      viewBox="22 22 44 44"
+    >
+      <circle
+        className="MuiCircularProgress-circle MuiCircularProgress-circleDeterminate"
+        cx={44}
+        cy={44}
+        fill="none"
+        r={20.2}
+        strokeWidth={3.6}
+        style={
+          Object {
+            "strokeDasharray": "126.920",
+            "strokeDashoffset": "95.190px",
+          }
+        }
+      />
+    </svg>
+  </div>
+  <br />
+  <br />
+  <div
+    aria-valuenow={50}
+    className="MuiCircularProgress-root c1 MuiCircularProgress-determinate"
+    role="progressbar"
+    style={
+      Object {
+        "height": 24,
+        "transform": "rotate(-90deg)",
+        "width": 24,
+      }
+    }
+  >
+    <svg
+      className="MuiCircularProgress-svg"
+      viewBox="22 22 44 44"
+    >
+      <circle
+        className="MuiCircularProgress-circle MuiCircularProgress-circleDeterminate"
+        cx={44}
+        cy={44}
+        fill="none"
+        r={20.2}
+        strokeWidth={3.6}
+        style={
+          Object {
+            "strokeDasharray": "126.920",
+            "strokeDashoffset": "63.460px",
+          }
+        }
+      />
+    </svg>
+  </div>
+  <br />
+  <br />
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Size
+  </h5>
+  <div
+    className="MuiCircularProgress-root c1 MuiCircularProgress-indeterminate"
+    role="progressbar"
+    style={
+      Object {
+        "height": 36,
+        "width": 36,
+      }
+    }
+  >
+    <svg
+      className="MuiCircularProgress-svg"
+      viewBox="22 22 44 44"
+    >
+      <circle
+        className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+        cx={44}
+        cy={44}
+        fill="none"
+        r={20.2}
+        strokeWidth={3.6}
+        style={Object {}}
+      />
+    </svg>
+  </div>
+  <br />
+  <br />
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Thickness
+  </h5>
+  <div
+    className="MuiCircularProgress-root c1 MuiCircularProgress-indeterminate"
+    role="progressbar"
+    style={
+      Object {
+        "height": 50,
+        "width": 50,
+      }
+    }
+  >
+    <svg
+      className="MuiCircularProgress-svg"
+      viewBox="22 22 44 44"
+    >
+      <circle
+        className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+        cx={44}
+        cy={44}
+        fill="none"
+        r={17}
+        strokeWidth={10}
+        style={Object {}}
+      />
+    </svg>
+  </div>
+</div>
+`;

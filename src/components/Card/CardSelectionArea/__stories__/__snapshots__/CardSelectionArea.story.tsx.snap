@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Cards/CardSelectionArea CardSelectionArea 1`] = `
+.c0 {
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c2 {
+  padding: 16px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0;
+}
+
+.c1 .RcCardSelectionArea-iconOuterCircle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 8px;
+  border-radius: 50%;
+  padding: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
+}
+
+.c1 .RcCardSelectionArea-iconOuterCircle .RcCardSelectionArea-iconInnerCircle {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  border: 1px solid #066FAC;
+  background-color: #FFFFFF;
+}
+
+.c1.RcCardSelectionArea-checked .RcCardSelectionArea-iconInnerCircle {
+  height: 16px;
+  width: 16px;
+  border: none;
+  background-color: #066FAC;
+}
+
+.c3 {
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 40px;
+}
+
+.c4 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.c1:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
+}
+
+<div
+  className="MuiPaper-root MuiCard-root c0 MuiPaper-elevation1 MuiPaper-rounded"
+  style={
+    Object {
+      "width": 300,
+    }
+  }
+>
+  <span
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-82 MuiCheckbox-root RcCardSelectionArea-root MuiCheckbox-colorSecondary c1 MuiIconButton-colorSecondary"
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={null}
+  >
+    <span
+      className="MuiIconButton-label"
+    >
+      <input
+        className="PrivateSwitchBase-input-85"
+        data-indeterminate={false}
+        disabled={false}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <div
+        className="RcCardSelectionArea-iconOuterCircle"
+      >
+        <div
+          className="RcCardSelectionArea-iconInnerCircle"
+        />
+      </div>
+    </span>
+  </span>
+  <div
+    className="MuiCardContent-root RcCardContent-root c2"
+  >
+    <h4
+      className="MuiTypography-root c3 MuiTypography-gutterBottom"
+      data-color="initial"
+      data-variant="display1"
+    >
+      Lizard
+    </h4>
+    <p
+      className="MuiTypography-root c4 MuiTypography-gutterBottom"
+      data-color="initial"
+      data-variant="body1"
+    >
+      Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica
+    </p>
+  </div>
+</div>
+`;

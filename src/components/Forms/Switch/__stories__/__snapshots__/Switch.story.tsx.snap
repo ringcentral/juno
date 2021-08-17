@@ -1,0 +1,634 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch 1`] = `
+.c0.RcSwitch-root {
+  padding: 0px;
+  width: 36px;
+  height: 20px;
+}
+
+.c0.RcSwitch-root .RcSwitch-switchBase {
+  width: 36px;
+  height: 20px;
+  padding: 0;
+  background-color: transparent;
+  -webkit-transform: translateX(-8px);
+  -ms-transform: translateX(-8px);
+  transform: translateX(-8px);
+}
+
+.c0.RcSwitch-root .RcSwitch-switchBase.RcSwitch-checked {
+  -webkit-transform: translateX(8px);
+  -ms-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+.c0.RcSwitch-root .RcSwitch-thumb {
+  height: 12px;
+  width: 12px;
+  background-color: #FFFFFF;
+  box-shadow: none;
+}
+
+.c0.RcSwitch-root .RcSwitch-track {
+  height: 20px;
+  opacity: 1;
+  margin: 0;
+  border-radius: 100vw;
+  background-color: #939393;
+}
+
+.c0.RcSwitch-root .RcSwitch-checked + .RcSwitch-track {
+  background-color: #066FAC;
+}
+
+.c0.RcSwitch-root .RcSwitch-disabled + .RcSwitch-track {
+  background-color: #B9B9B9;
+}
+
+.c0.RcSwitch-root .RcSwitch-focusVisible + .RcSwitch-track:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 100vw;
+  border: 1px solid #066FAC;
+}
+
+.c0.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
+  background-color: rgba(147,147,147,0.76);
+}
+
+.c0.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled).RcSwitch-checked + .RcSwitch-track {
+  background-color: rgba(6,111,172,0.76);
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
+    background-color: rgba(147,147,147,0.92);
+  }
+
+  .c0.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled).RcSwitch-checked + .RcSwitch-track {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+<span
+  className="MuiSwitch-root RcSwitch-root c0"
+>
+  <span
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-153 MuiSwitch-switchBase RcSwitch-switchBase"
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={null}
+  >
+    <span
+      className="MuiIconButton-label"
+    >
+      <input
+        className="PrivateSwitchBase-input-156 MuiSwitch-input"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <span
+        className="MuiSwitch-thumb RcSwitch-thumb"
+      />
+    </span>
+  </span>
+  <span
+    className="MuiSwitch-track RcSwitch-track"
+  />
+</span>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch Examples 1`] = `
+.c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+.c1 {
+  color: #121212;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c1 .RcFormControlLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c1 .RcCheckbox-root,
+.c1 .RcRadio-root {
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+.c1 .RcSwitch-root {
+  margin: 12px;
+}
+
+.c1.RcFormControlLabel-labelPlacementStart .RcCheckbox-root,
+.c1.RcFormControlLabel-labelPlacementStart .RcRadio-root {
+  margin-left: 4px;
+  margin-right: 0;
+}
+
+.c3 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  color: #066FAC;
+}
+
+.c2.RcSwitch-root {
+  padding: 0px;
+  width: 36px;
+  height: 20px;
+}
+
+.c2.RcSwitch-root .RcSwitch-switchBase {
+  width: 36px;
+  height: 20px;
+  padding: 0;
+  background-color: transparent;
+  -webkit-transform: translateX(-8px);
+  -ms-transform: translateX(-8px);
+  transform: translateX(-8px);
+}
+
+.c2.RcSwitch-root .RcSwitch-switchBase.RcSwitch-checked {
+  -webkit-transform: translateX(8px);
+  -ms-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+.c2.RcSwitch-root .RcSwitch-thumb {
+  height: 12px;
+  width: 12px;
+  background-color: #FFFFFF;
+  box-shadow: none;
+}
+
+.c2.RcSwitch-root .RcSwitch-track {
+  height: 20px;
+  opacity: 1;
+  margin: 0;
+  border-radius: 100vw;
+  background-color: #939393;
+}
+
+.c2.RcSwitch-root .RcSwitch-checked + .RcSwitch-track {
+  background-color: #066FAC;
+}
+
+.c2.RcSwitch-root .RcSwitch-disabled + .RcSwitch-track {
+  background-color: #B9B9B9;
+}
+
+.c2.RcSwitch-root .RcSwitch-focusVisible + .RcSwitch-track:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 100vw;
+  border: 1px solid #066FAC;
+}
+
+.c2.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
+  background-color: rgba(147,147,147,0.76);
+}
+
+.c2.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled).RcSwitch-checked + .RcSwitch-track {
+  background-color: rgba(6,111,172,0.76);
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
+    background-color: rgba(147,147,147,0.92);
+  }
+
+  .c2.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled).RcSwitch-checked + .RcSwitch-track {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+<div>
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Label placement end
+  </h5>
+  <label
+    className="MuiFormControlLabel-root RcFormControlLabel-root c1"
+  >
+    <span
+      className="MuiSwitch-root RcSwitch-root c2"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiSwitch-switchBase RcSwitch-switchBase"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            className="PrivateSwitchBase-input-160 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb RcSwitch-thumb"
+          />
+        </span>
+      </span>
+      <span
+        className="MuiSwitch-track RcSwitch-track"
+      />
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Label
+    </span>
+  </label>
+  <br />
+  <br />
+  <br />
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Label placement start
+  </h5>
+  <label
+    className="MuiFormControlLabel-root RcFormControlLabel-root c1 MuiFormControlLabel-labelPlacementStart RcFormControlLabel-labelPlacementStart"
+  >
+    <span
+      className="MuiSwitch-root RcSwitch-root c2"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiSwitch-switchBase RcSwitch-switchBase"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            className="PrivateSwitchBase-input-160 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb RcSwitch-thumb"
+          />
+        </span>
+      </span>
+      <span
+        className="MuiSwitch-track RcSwitch-track"
+      />
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Label
+    </span>
+  </label>
+  <br />
+  <br />
+  <br />
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    With RcFormControl and RcFormControlLabel
+  </h5>
+  <div
+    className="MuiFormControl-root "
+  >
+    <label
+      className="MuiFormLabel-root c3"
+    >
+      FormLabel
+    </label>
+    <div
+      className="MuiFormGroup-root "
+    >
+      <label
+        className="MuiFormControlLabel-root RcFormControlLabel-root c1"
+      >
+        <span
+          className="MuiSwitch-root RcSwitch-root c2"
+        >
+          <span
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiSwitch-switchBase RcSwitch-switchBase"
+            onBlur={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={null}
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <input
+                className="PrivateSwitchBase-input-160 MuiSwitch-input"
+                disabled={false}
+                name="RcSwitch name prop"
+                onChange={[Function]}
+                type="checkbox"
+              />
+              <span
+                className="MuiSwitch-thumb RcSwitch-thumb"
+              />
+            </span>
+          </span>
+          <span
+            className="MuiSwitch-track RcSwitch-track"
+          />
+        </span>
+        <span
+          className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+        >
+          RcSwitch wrapped by RcFormControlLabel
+        </span>
+      </label>
+      <label
+        className="MuiFormControlLabel-root RcFormControlLabel-root c1"
+      >
+        <span
+          className="MuiSwitch-root RcSwitch-root c2"
+        >
+          <span
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiSwitch-switchBase RcSwitch-switchBase"
+            onBlur={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={null}
+          >
+            <span
+              className="MuiIconButton-label"
+            >
+              <input
+                className="PrivateSwitchBase-input-160 MuiSwitch-input"
+                disabled={false}
+                onChange={[Function]}
+                type="checkbox"
+              />
+              <span
+                className="MuiSwitch-thumb RcSwitch-thumb"
+              />
+            </span>
+          </span>
+          <span
+            className="MuiSwitch-track RcSwitch-track"
+          />
+        </span>
+        <span
+          className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+        >
+          RcSwitch use label prop
+        </span>
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch with custom trackColor 1`] = `
+Array [
+  .c0 {
+  color: #121212;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c0 .RcFormControlLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c0 .RcCheckbox-root,
+.c0 .RcRadio-root {
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+.c0 .RcSwitch-root {
+  margin: 12px;
+}
+
+.c0.RcFormControlLabel-labelPlacementStart .RcCheckbox-root,
+.c0.RcFormControlLabel-labelPlacementStart .RcRadio-root {
+  margin-left: 4px;
+  margin-right: 0;
+}
+
+.c1.RcSwitch-root {
+  padding: 0px;
+  width: 36px;
+  height: 20px;
+}
+
+.c1.RcSwitch-root .RcSwitch-switchBase {
+  width: 36px;
+  height: 20px;
+  padding: 0;
+  background-color: transparent;
+  -webkit-transform: translateX(-8px);
+  -ms-transform: translateX(-8px);
+  transform: translateX(-8px);
+}
+
+.c1.RcSwitch-root .RcSwitch-switchBase.RcSwitch-checked {
+  -webkit-transform: translateX(8px);
+  -ms-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+.c1.RcSwitch-root .RcSwitch-thumb {
+  height: 12px;
+  width: 12px;
+  background-color: #FFFFFF;
+  box-shadow: none;
+}
+
+.c1.RcSwitch-root .RcSwitch-track {
+  height: 20px;
+  opacity: 1;
+  margin: 0;
+  border-radius: 100vw;
+  background-color: #3C9949;
+}
+
+.c1.RcSwitch-root .RcSwitch-checked + .RcSwitch-track {
+  background-color: #066FAC;
+}
+
+.c1.RcSwitch-root .RcSwitch-disabled + .RcSwitch-track {
+  background-color: #B9B9B9;
+}
+
+.c1.RcSwitch-root .RcSwitch-focusVisible + .RcSwitch-track:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 100vw;
+  border: 1px solid #066FAC;
+}
+
+.c1.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
+  background-color: rgba(60,153,73,0.76);
+}
+
+.c1.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled).RcSwitch-checked + .RcSwitch-track {
+  background-color: rgba(6,111,172,0.76);
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
+    background-color: rgba(60,153,73,0.92);
+  }
+
+  .c1.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled).RcSwitch-checked + .RcSwitch-track {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+<label
+    className="MuiFormControlLabel-root RcFormControlLabel-root c0"
+  >
+    <span
+      className="MuiSwitch-root RcSwitch-root c1"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-161 MuiSwitch-switchBase RcSwitch-switchBase"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            className="PrivateSwitchBase-input-164 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb RcSwitch-thumb"
+          />
+        </span>
+      </span>
+      <span
+        className="MuiSwitch-track RcSwitch-track"
+      />
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Label
+    </span>
+  </label>,
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<p
+    className="MuiTypography-root c0 MuiTypography-paragraph"
+    data-color="neutral.f06"
+    data-variant="body1"
+  >
+    prop "trackColor" is applied when switch is unchecked.
+  </p>,
+]
+`;

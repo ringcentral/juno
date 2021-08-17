@@ -1,0 +1,53 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="📖 Component Docs/Icon" />
+
+# Icon
+
+> `Icon` base on `Mui Icon`, we add support for setting color and symbol.
+> All `Mui` props still work, see more in `material-ui` doc.
+
+[Go to this canvas](?path=/story/🚀-cleanup-components-icon--icon)
+
+<Canvas>
+  <Story id="🚀-cleanup-components-icon--icon" />
+</Canvas>
+
+## Set symbol
+
+We can pass SVG icon as `symbol` into `RcIcon`.
+
+```tsx
+import { Add } from '@ringcentral/juno/icon';
+
+<RcIcon symbol={Add} />
+```
+
+<Canvas>
+  <Story id="🚀-cleanup-components-icon--icon-with-symbol" />
+</Canvas>
+
+Get all icon list [here](?path=/story/🔧-foundation-icon-list--icon-list).
+
+## Custom icon color
+
+We can use `color` prop to set with `color token`.
+
+<Canvas>
+  <Story id="🚀-cleanup-components-icon--icon-with-custom-color" />
+</Canvas>
+
+## Custom size
+
+We can use `size` prop to customize size.
+
+<Canvas>
+  <Story id="🚀-cleanup-components-icon--icon-with-custom-size" />
+</Canvas>
+
+## Icon with svg theme auto switching
+Svg component can switch to dark or light mode according to current theme automaticaly.
+
+<Canvas>
+  <Story id="🚀-cleanup-components-icon--icon-with-dark-theme" />
+</Canvas>

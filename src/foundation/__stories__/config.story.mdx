@@ -1,0 +1,180 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Utils/config" />
+
+## config
+
+### Classes
+
+- [RcConfig](classes/rcconfig.md)
+
+### Type aliases
+
+- [RcConfigure](#rcconfigure)
+- [WarningFunctionType](#warningfunctiontype)
+
+### Variables
+
+- [JUNO_WARNING_IGNORE_KEY](#const-juno_warning_ignore_key)
+- [rcConfiguration](#const-rcconfiguration)
+
+### Functions
+
+- [configure](#const-configure)
+
+## Type aliases
+
+### RcConfigure
+
+Ƭ **RcConfigure**: _object_
+
+#### Type declaration:
+
+- **warning**? : _undefined | false | true_
+
+- **warningFunction**? : _[WarningFunctionType](#warningfunctiontype)_
+
+---
+
+### WarningFunctionType
+
+Ƭ **WarningFunctionType**: _function_
+
+#### Type declaration:
+
+▸ (`message`: string, `options?`: Pick‹ShowDeprecatedArgs, "level"›): _void_
+
+**Parameters:**
+
+| Name       | Type                              |
+| ---------- | --------------------------------- |
+| `message`  | string                            |
+| `options?` | Pick‹ShowDeprecatedArgs, "level"› |
+
+## Variables
+
+### `Const` JUNO_WARNING_IGNORE_KEY
+
+• **JUNO_WARNING_IGNORE_KEY**: _"**JUNO_WARNING_IGNORE**"_ = "**JUNO_WARNING_IGNORE**"
+
+---
+
+### `Const` rcConfiguration
+
+• **rcConfiguration**: _[RcConfig](classes/rcconfig.md)‹›_ = new RcConfig()
+
+config instance
+
+## Functions
+
+### `Const` configure
+
+▸ **configure**(`__namedParameters`: object): _void_
+
+set config with Juno
+
+**Parameters:**
+
+▪ **\_\_namedParameters**: _object_
+
+| Name              | Type                               |
+| ----------------- | ---------------------------------- |
+| `warning`         | undefined &#124; false &#124; true |
+| `warningFunction` | undefined &#124; function          |
+
+**Returns:** _void_
+
+## RcConfig
+
+### Constructors
+
+- [constructor](#constructor)
+
+### Properties
+
+- [\_WARNING_IGNORE](#private-_warning_ignore)
+
+### Accessors
+
+- [WARNING_FUNCTION](#warning_function)
+- [WARNING_IGNORE](#warning_ignore)
+
+### Methods
+
+- [\_WARNING_FUNCTION](#private-_warning_function)
+
+## Constructors
+
+### constructor
+
+\+ **new RcConfig**(): _[RcConfig]()_
+
+**Returns:** _[RcConfig]()_
+
+## Properties
+
+### `Private` \_WARNING_IGNORE
+
+• **\_WARNING_IGNORE**: _boolean_ = false
+
+## Accessors
+
+### WARNING_FUNCTION
+
+• **get WARNING_FUNCTION**(): _function_
+
+**Returns:** _function_
+
+▸ (`message`: string, `options?`: Pick‹ShowDeprecatedArgs, "level"›): _void_
+
+**Parameters:**
+
+| Name       | Type                              |
+| ---------- | --------------------------------- |
+| `message`  | string                            |
+| `options?` | Pick‹ShowDeprecatedArgs, "level"› |
+
+• **set WARNING_FUNCTION**(`func`: [WarningFunctionType](#warningfunctiontype)): _void_
+
+**Parameters:**
+
+| Name   | Type                                        |
+| ------ | ------------------------------------------- |
+| `func` | [WarningFunctionType](#warningfunctiontype) |
+
+**Returns:** _void_
+
+---
+
+### WARNING_IGNORE
+
+• **get WARNING_IGNORE**(): _boolean_
+
+**Returns:** _boolean_
+
+• **set WARNING_IGNORE**(`value`: boolean): _void_
+
+**Parameters:**
+
+| Name    | Type    |
+| ------- | ------- |
+| `value` | boolean |
+
+**Returns:** _void_
+
+## Methods
+
+### `Private` \_WARNING_FUNCTION
+
+▸ **\_WARNING_FUNCTION**(`message`: string, `options`: undefined | object): _void_
+
+**Parameters:**
+
+| Name      | Type                    |
+| --------- | ----------------------- |
+| `message` | string                  |
+| `options` | undefined &#124; object |
+
+**Returns:** _void_

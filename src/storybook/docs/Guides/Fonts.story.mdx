@@ -1,0 +1,30 @@
+<Meta title="📖 Guides/Use Lato Font" />
+
+### Font
+
+JUNO was designed with the [Lato](https://fonts.google.com/specimen/Lato) font in mind.
+But the Lato font will **not** be automatically loaded by JUNO. The developer is responsible for loading all fonts used in their application.
+
+#### Lato font CDN
+
+Shown below is a sample link markup used to load the Lato font from a CDN:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900" />
+```
+
+#### Install with npm package
+
+JUNO depends on `typeface-lato` package. If you are using `webpack` with `css-loader` or `scss-loader`, you can import it directly in your project.
+
+In your JS entry-point:
+
+```js
+import 'typeface-lato'
+```
+
+Or in your SCSS file:
+
+```scss
+@import '~typeface-lato/index.css';
+```

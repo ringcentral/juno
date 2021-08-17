@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Cards/CardActions CardActions 1`] = `
+.c5 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c5 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c5 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c5.RcButton-text {
+  color: #066FAC;
+}
+
+.c5.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c5.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c5.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c0 {
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.c1 {
+  padding: 16px;
+}
+
+.c4 {
+  position: relative;
+  padding: 0px 16px 16px 16px;
+  z-index: 2;
+}
+
+.c2 {
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 40px;
+}
+
+.c3 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c5.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c5.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c5.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<div
+  className="MuiPaper-root MuiCard-root c0 MuiPaper-elevation1 MuiPaper-rounded"
+  style={
+    Object {
+      "width": 300,
+    }
+  }
+>
+  <div
+    className="MuiCardContent-root RcCardContent-root c1"
+  >
+    <h4
+      className="MuiTypography-root c2 MuiTypography-gutterBottom"
+      data-color="initial"
+      data-variant="display1"
+    >
+      Lizard
+    </h4>
+    <p
+      className="MuiTypography-root c3 MuiTypography-gutterBottom"
+      data-color="initial"
+      data-variant="body1"
+    >
+      Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica
+    </p>
+  </div>
+  <div
+    className="MuiCardActions-root c4 MuiCardActions-spacing"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c5"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Watch Lizards
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c5"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Watch Lizards
+      </span>
+    </button>
+  </div>
+</div>
+`;

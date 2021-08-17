@@ -1,0 +1,241 @@
+@import './themes/index';
+@import './utils/index';
+
+// that palette will be a global variable, you can use set-palette
+$rc-light-palette: $rc-palette-light-variable !global;
+
+$rc-dark-palette: $rc-palette-dark-variable !global;
+
+// default is light
+$rc-current-palette: $rc-light-palette !global;
+
+/// Set custom palette color
+/// @param {Map} $custom-light-theme - custom light palette map
+/// @param {Map} $custom-dark-theme - custom dark palette map
+@mixin custom-rc-palette($custom-light-theme, $custom-dark-theme) {
+  $rc-light-palette: map-deep-merge(
+    $rc-light-palette,
+    $custom-light-theme
+  ) !global;
+  $rc-dark-palette: map-deep-merge(
+    $rc-dark-palette,
+    $custom-dark-theme
+  ) !global;
+  // reset current to light
+  $rc-current-palette: $rc-light-palette !global;
+}
+
+/**
+  let user can use this to get both theme color
+  Example:
+  @include with-rc-theme() {
+    .root {
+      color: rc-palette('interactive', 'f01');
+    }
+  }
+
+  result will be =>
+
+  [light] .root {
+    color: #4475FD
+  }
+
+  [dark] .root {
+    color: #729AFF
+  }
+*/
+@mixin with-rc-theme() {
+  $tmp: map-merge((), $rc-current-palette);
+  /*
+  this name is so long, is because this variable will global to the scss, must be unique,
+  otherwise it will cause duplicate problem
+  */
+  $rc-current-palette: $rc-light-palette !global;
+
+  [light] {
+    @content;
+  }
+
+  $rc-current-palette: $rc-dark-palette !global;
+
+  [dark] {
+    @content;
+  }
+
+  $rc-current-palette: $tmp !global;
+}
+
+@mixin switchTheme($type) {
+  $tmp: map-merge((), $rc-current-palette);
+
+  @if $type== 'light' {
+    $rc-current-palette: $rc-light-palette !global;
+  } @else if $type== 'dark' {
+    $rc-current-palette: $rc-dark-palette !global;
+  }
+
+  @content;
+
+  $rc-current-palette: $tmp !global;
+}
+
+/**
+  let user can use this to get target theme color
+  Example:
+  @include with-theme-type('light') {
+    .root {
+      color: rc-palette('interactive', 'f01');
+    }
+  }
+
+  result will be =>
+
+  [light] .root {
+    color: #4475FD
+  }
+*/
+@mixin with-rc-theme-type($type) {
+  @include switchTheme($type) {
+    [#{$type}] {
+      @content;
+    }
+  }
+}
+
+/**
+  generate static style with rc like rc-bg-primary-200
+*/
+@mixin generate-rc-static-style($type) {
+  @include switchTheme($type) {
+    @include add-style('rc-bg', 'background-color', $rc-current-palette);
+    @include add-style('rc-text', 'color', $rc-current-palette);
+    @include add-style('rc-border', 'border-color', $rc-current-palette);
+  }
+}
+
+/** get opacity from theme token */
+@function rc-opacity($value) {
+  @return map-get($rc-opacity-variable, $value);
+}
+
+/** get breakpoint from theme token */
+@function rc-breakpoints($value) {
+  @return #{map-deep-get($rc-breakpoints-variable, 'value', $value)}px;
+}
+
+/** get shape from theme token */
+@function rc-shape($value) {
+  @return map-get($rc-shape-variable, $value);
+}
+
+/** append typography style from theme token */
+@mixin rc-typography($value) {
+  $typography: map-get($rc-typography-variable, $value);
+
+  font-size: map-get($typography, 'fontSize');
+  font-weight: map-get($typography, 'fontWeight');
+  line-height: map-get($typography, 'lineHeight');
+
+  @if map-has-key($typography, 'textTransform') {
+    text-transform: map-get($typography, 'textTransform');
+  }
+}
+
+/** append zIndex style from theme token */
+@mixin rc-zIndex($value) {
+  $index: map-get($rc-zIndex-variable, $value);
+  z-index: $index;
+}
+
+/** append border-radius style from theme token */
+@mixin rc-radius($value) {
+  $radius: map-get($rc-radius-variable, $value);
+  border-radius: $radius;
+}
+
+@mixin rc-shadow($value) {
+  // * that nth begin from 1, so +1
+  $shadow: nth($rc-shadows-variable, $value + 1);
+  @include box-shadow($shadow);
+}
+
+/** get palette from theme token */
+@function rc-palette($values...) {
+  @return map-deep-get($rc-current-palette, $values...);
+}
+
+$rc-unit: 4;
+
+/** append spacing style from theme token */
+@function rc-spacing($values...) {
+  $list: ();
+
+  @each $value in $values {
+    $list: append($list, #{$value * $rc-unit}px);
+  }
+
+  @return $list;
+}
+
+@mixin add-rc-shadow($values) {
+  @for $i from 0 through length($rc-shadows-variable) - 1 {
+    .rc-shadow-#{$i} {
+      @include rc-shadow($i);
+    }
+  }
+}
+
+@mixin add-rc-typography($values...) {
+  @each $value in $values {
+    .rc-typography-#{$value} {
+      @include rc-typography($value);
+    }
+  }
+}
+
+/**
+  default rc utils class
+*/
+@mixin rc-utilities {
+  @include add-style('rc-opacity', 'opacity', $rc-opacity-variable);
+  @include add-style('rc-zIndex', 'z-index', $rc-zIndex-variable);
+  @include add-style('rc-radius', 'border-radius', $rc-radius-variable);
+  @include add-rc-shadow($rc-shadows-variable);
+
+  @include add-rc-typography(
+    'display4',
+    'display3',
+    'display2',
+    'display1',
+    'headline1',
+    'headline2',
+    'title2',
+    'title1',
+    'subheading2',
+    'subheading1',
+    'body2',
+    'body1',
+    'caption2',
+    'caption1'
+  );
+
+  // margin
+  @include add-rc-spacing(5, $rc-unit, 'm');
+  // padding
+  @include add-rc-spacing(5, $rc-unit, 'p');
+}
+
+/**
+  include all rc class
+*/
+@mixin rc-core() {
+  @include with-rc-theme-type('light') {
+    @include generate-rc-static-style('light');
+  }
+
+  @include with-rc-theme-type('dark') {
+    @include generate-rc-static-style('dark');
+  }
+
+  @include rc-utilities();
+}

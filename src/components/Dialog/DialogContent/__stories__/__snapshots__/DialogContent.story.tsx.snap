@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogContent DialogContent 1`] = `
+.c0 {
+  padding: 0px 24px 12px;
+}
+
+.c0.RcDialogContent-dividers {
+  border-color: #E5E5E5;
+}
+
+<div
+  className="MuiDialogContent-root c0"
+>
+  Content
+</div>
+`;

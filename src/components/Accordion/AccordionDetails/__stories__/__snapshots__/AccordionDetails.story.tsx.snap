@@ -1,0 +1,297 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Accordion/AccordionDetails AccordionDetails 1`] = `
+.c1 {
+  box-shadow: none;
+}
+
+.c1:before {
+  display: none;
+}
+
+.c1.RcAccordion-root + .c0.RcAccordion-root {
+  border-top: 1px solid #E5E5E5;
+}
+
+.c1.RcAccordion-root + .c0.RcAccordion-expanded,
+.c1.RcAccordion-expanded + .c1.RcAccordion-root {
+  margin-top: 16px;
+  border-top: 0;
+}
+
+.c1.RcAccordion-expanded {
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12);
+  margin: 0;
+}
+
+.c7 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c4.RcIconButton-root {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #666666;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+}
+
+.c4.RcIconButton-root .c5 {
+  font-size: 20px;
+}
+
+.c4.RcIconButton-root:active .c5 {
+  color: #666666;
+}
+
+.c4.RcIconButton-root.focus-visible,
+.c4.RcIconButton-root[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c4.RcIconButton-root.focus-visible:active .c5,
+.c4.RcIconButton-root[data-focus-visible-added]:active .c5 {
+  color: rgba(102,102,102,0.88);
+}
+
+.c4.RcIconButton-persistBg {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c4.RcIconButton-disabled .c5 {
+  color: #B9B9B9;
+}
+
+.c4.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c4.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c4.RcIconButton-contained {
+  color: #fff;
+  background-color: #666666;
+}
+
+.c4.RcIconButton-contained:active {
+  background-color: rgb(91,91,91);
+}
+
+.c4.RcIconButton-contained:active .c5 {
+  color: #fff;
+}
+
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgb(91,91,91);
+}
+
+.c4.RcIconButton-contained.focus-visible:active .c5,
+.c4.RcIconButton-contained[data-focus-visible-added]:active .c5 {
+  color: #fff;
+}
+
+.c4 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c2 {
+  box-sizing: border-box;
+  padding: 0px 16px;
+}
+
+.c2.RcAccordionSummary-expanded {
+  margin: 0;
+  min-height: 48px;
+}
+
+.c2 .RcAccordionSummary-content {
+  margin: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 .c3 {
+  position: relative;
+  overflow: hidden;
+}
+
+.c2 .RcAccordionSummary-expandIcon {
+  margin-right: 0;
+  padding: 0;
+}
+
+.c8 {
+  border-top: 1px solid #E5E5E5;
+  padding: 16px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcIconButton-root:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
+
+  .c4.RcIconButton-root:hover .c5 {
+    color: rgba(102,102,102,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcIconButton-contained:hover {
+    background-color: rgb(91,91,91);
+  }
+
+  .c4.RcIconButton-contained:hover .c5 {
+    color: #fff;
+  }
+}
+
+<div
+  className="MuiPaper-root MuiAccordion-root RcAccordion-root c0 c1 Mui-expanded RcAccordion-expanded MuiPaper-elevation1"
+>
+  <div
+    aria-disabled={false}
+    aria-expanded={true}
+    className="MuiButtonBase-root MuiAccordionSummary-root c2 Mui-expanded RcAccordionSummary-expanded"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <div
+      className="MuiAccordionSummary-content RcAccordionSummary-content Mui-expanded RcAccordionSummary-expanded"
+    >
+      Expansion Panel 1
+    </div>
+    <div
+      aria-disabled={false}
+      aria-hidden={true}
+      className="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon RcAccordionSummary-expandIcon Mui-expanded RcAccordionSummary-expanded MuiIconButton-edgeEnd"
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role={null}
+      tabIndex={null}
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <button
+          className="MuiButtonBase-root c3 c4 RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          type="button"
+        >
+          <span
+            className="c5 c6 arrow_down icon"
+          >
+            <svg
+              className="c7"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.636 13.05a.999.999 0 011.414 0L16 18l4.95-4.95a.999.999 0 111.414 1.414l-5.657 5.657a.999.999 0 01-1.414 0l-5.657-5.657a.999.999 0 010-1.414z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+      </span>
+    </div>
+  </div>
+  <div
+    className="MuiCollapse-container MuiCollapse-entered"
+    style={
+      Object {
+        "minHeight": "0px",
+      }
+    }
+  >
+    <div
+      className="MuiCollapse-wrapper"
+    >
+      <div
+        className="MuiCollapse-wrapperInner"
+      >
+        <div
+          role="region"
+        >
+          <div
+            className="MuiAccordionDetails-root c8"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+  malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

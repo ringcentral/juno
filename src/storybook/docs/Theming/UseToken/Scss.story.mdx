@@ -1,0 +1,134 @@
+<Meta title="💅 Style system/🎨 Use Juno Token(Scss)" />
+
+## Use Rc Token
+
+## Scss
+
+You can also use token with scss file
+
+```css
+@import '@ringcentral/juno/scss/theming';
+```
+
+#### buildIn mixin and function
+
+| name               | type        | description                                     | Example                                                   | result                                                             |
+| ------------------ | ----------- | ----------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------ |
+| rc-opacity         | `@function` | get opacity from theme token                    | `opacity: rc-opacity('1')`                                | `opacity: 0.1`                                                     |
+| rc-breakpoints     | `@function` | get breakpoint from theme token                 | `@media screen and (max-width: rc-breakpoints('md')) { }` | `@media screen and (max-width: 640px) { }`                         |
+| rc-shape           | `@function` | get shape from theme token                      | `border: rc-shape('border3')`                             | `border: 1px solid rgba(0, 0, 0, 0.36)`                            |
+| rc-shadow          | `@mixin`    | append shadow style from theme token            | `@include rc-shadow(1)`                                   | `box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);`                      |
+| rc-typography      | `@mixin`    | append typography style from theme token        | `@include rc-typography('body1')`                         | `font-size: 3.5rem; font-weight: 400; line-height: 72px`           |
+| rc-zIndex          | `@mixin`    | append zIndex style from theme token            | `@include rc-zIndex('banner')`                            | `z-index: 9500`                                                    |
+| rc-radius          | `@mixin`    | append border-radius style from theme token     | `@include rc-radius('circle')`                            | `border-radius: 50%`                                               |
+| rc-spacing         | `@function` | append spacing style from theme token           | `margin: rc-spacing(1, 2, 3, 4)`                          | `margin: 4 8 12 16`                                                |
+| rc-palette         | `@function` | get palette from theme token                    | `color: rc-palette(element, primary)`                     | `color: #4475FD`                                                   |
+| with-rc-theme      | `@mixin`    | let user can use this to get both theme color   | ![](./assets/with-rc-theme.png)                           | [light] .paper { color: #4475FD } [dark] .paper { color: #729AFF } |
+| with-rc-theme-type | `@mixin`    | let user can use this to get target theme color | ![](./assets/with-rc-theme-type.png)                      | [dark] .paper { color: #729AFF }                                   |
+| custom-rc-palette  | `@mixin`    | Set custom palette color                        | ![](./assets/custom-rc-palette.png)                       | that will change the whole project default light and dark theme    |
+| rc-utilities       | `@mixin`    | Set custom palette color                        | `@include rc-utilities();`                                | only include utilities class                                       |
+| rc-core            | `@mixin`    | include all rc class                            | `@include rc-core();`                                     | include all rc color and utilities                                 |
+
+#### Create global color style
+
+Include all rc color and utilities class with `rc-core`.
+
+```css
+@include rc-core();
+/**
+  rc-bg-xxx, ex: rc-bg-primary-main => background-color: #4475fd
+  rc-text-xxx, ex: rc-text-primary-main => color: #4475fd
+  rc-border-xxx, ex: rc-border-primary-main => border-color: #4475fd
+
+  ----- also import all utilities -----
+  rc-opacity-xxx
+  rc-zIndex-xxx
+  rc-radius-xxx
+  rc-shadow-xxx
+  rc-typography-xxx
+  rc-m-xxx
+  rc-mt-xxx
+  rc-b-xxx
+  rc-bt-xxx
+  ...
+*/
+```
+
+### Only import utils
+
+With `rc-utilities` that will only include utilities class.
+
+```css
+@include rc-utilities();
+```
+
+### Custom your global class
+
+```css
+/** custom your light variable */
+$rc-palette-custom-light-variable: (
+  primary: (
+    main: red
+  )
+);
+
+/** custom your dark variable */
+$rc-palette-custom-dark-variable: (
+  primary: (
+    main: black
+  )
+);
+
+/** set custom palette before include all theme class */
+@include custom-rc-palette(
+  $rc-palette-custom-light-variable,
+  $rc-palette-custom-dark-variable
+);
+
+/** include your class */
+:global {
+  @include rc-core();
+}
+```
+
+### Only include what you want
+
+You can only import some utilities from rc-utilities
+
+```css
+// add opacity
+@include add-style('rc-opacity', 'opacity', $rc-opacity-variable);
+
+// add z-index
+@include add-style('rc-zIndex', 'z-index', $rc-zIndex-variable);
+
+// add radius
+@include add-style('rc-radius', 'border-radius', $rc-radius-variable);
+
+// add shadows
+@include add-rc-shadow($rc-shadows-variable);
+
+// some typography you want to include
+@include add-rc-typography(
+  'display4',
+  'display3',
+  'display2',
+  'display1',
+  'headline1',
+  'headline2',
+  'title2',
+  'title1',
+  'subheading2',
+  'subheading1',
+  'body2',
+  'body1',
+  'caption2',
+  'caption1',
+  'button'
+);
+
+// margin
+@include add-rc-spacing(5, $rc-unit, 'm');
+// padding
+@include add-rc-spacing(5, $rc-unit, 'p');
+```

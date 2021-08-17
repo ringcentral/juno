@@ -1,0 +1,88 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="📖 Component Docs/InlineEditable" />
+
+# InlineEditable
+
+> `InlineEditable` provide you can make you text editable, and provide more helpful feature let you use easily.
+
+[Go to this canvas](?path=/story/🚀-cleanup-components-inlineeditable--inline-editable)
+
+InlineEditable will can become editable when be focused,
+
+- When in editing mode, user keydown `enter` or leave editable area, that will trigger onChange event with different reason `'leave' | 'confirm'`,
+after leave editing mode, that focus with be track to this label, you can keydowm `enter` again to `editing` mode.
+
+- When `disabled`, that will just like plain string, and don't have placeholder.
+
+<Canvas>
+  <Story id="🚀-cleanup-components-inlineeditable--inline-editable" />
+</Canvas>
+
+## Multiline
+
+`multiline`: If `true`, a textarea element will be rendered instead of an input.
+
+- multiline: auto `trim end` of you value
+- non multiline: auto `trim` of you value
+
+<Canvas>
+  <Story id="🚀-cleanup-components-inlineeditable--inline-editable-multiline" />
+</Canvas>
+
+## text variant and color
+
+`variant`: can custom text variant, default is `body1`
+`color`: color for apply to text, support full palette, default is `neutral.f06`
+
+<Canvas>
+  <Story id="🚀-cleanup-components-inlineeditable--inline-editable-custom-variant" />
+</Canvas>
+
+## Tooltip
+
+That tooltip only show when not editing, you can use Tooltip props to set that.
+
+- editing: non tooltip
+- not editing: show Juno Tooltip with your `TooltipProp` title
+- disabled: show value as title
+
+<Canvas>
+  <Story id="🚀-cleanup-components-inlineeditable--inline-editable-with-tooltip" />
+</Canvas>
+
+## Loading
+
+When `onChange` with async method, that will be saving mode when onChange not complete,
+that will make that component to non clickable, and keydowm `enter` to editing event will not work anymore when saving,
+also you can custom `saving` with `classes`.
+
+<Canvas>
+  <Story id="🚀-cleanup-components-inlineeditable--inline-editable-loading" />
+</Canvas>
+
+## Trigger only when keydown Enter
+
+if you only want trigger update value when keydown enter, you can write like below
+
+```tsx
+const [value, setValue] = useState('');
+
+return (
+  <RcInlineEditable
+    value={value}
+    onChange={(newValue, reason) => {
+      console.log(newValue, reason);
+      if (reason === 'confirm') {
+        setValue(newValue);
+      }
+    }}
+    placeholder="Enter value here"
+    multiline
+  />
+);
+```
+
+<Canvas>
+  <Story id="🚀-cleanup-components-inlineeditable--inline-editable-only-enter" />
+</Canvas>

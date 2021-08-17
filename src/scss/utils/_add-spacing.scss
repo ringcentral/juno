@@ -1,0 +1,32 @@
+$spacing-type: ('', 'y', 'x', 'l', 'r', 't', 'b');
+
+@mixin add-rc-spacing($num: 3, $space: 4, $category: 'p') {
+  $css: 'padding';
+  @if ($category== 'm') {
+    $css: 'margin';
+  }
+
+  @each $type in $spacing-type {
+    @for $i from 1 through $num {
+      .rc-#{$category}#{$type}-#{$i} {
+        @if $type== '' {
+          #{$css}: #{$i * $space}px;
+        } @else if $type== 'y' {
+          #{$css}-top: #{$i * $space}px;
+          #{$css}-bottom: #{$i * $space}px;
+        } @else if $type== 'x' {
+          #{$css}-right: #{$i * $space}px;
+          #{$css}-left: #{$i * $space}px;
+        } @else if $type== 'l' {
+          #{$css}-left: #{$i * $space}px;
+        } @else if $type== 'r' {
+          #{$css}-right: #{$i * $space}px;
+        } @else if $type== 't' {
+          #{$css}-top: #{$i * $space}px;
+        } @else if $type== 'b' {
+          #{$css}-bottom: #{$i * $space}px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  // https://code.visualstudio.com/docs/editor/userdefinedsnippets#_creating-your-own-snippets
+  "react function component": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "rfc: react function component",
+    "body": [
+      "import React, { FunctionComponent } from 'react';",
+      "",
+      "export type ${1:${TM_FILENAME_BASE}}Props = {$2};",
+      "export const ${1:${TM_FILENAME_BASE}}: FunctionComponent<${1:${TM_FILENAME_BASE}}Props> = ({",
+      "   $3",
+      "}) => {",
+      "  return <$4>$0</$4>",
+      "};"
+    ],
+    "description": "react function component "
+  },
+  "react type props": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "rtp: react type props",
+    "body": [
+      "export type ${1:${TM_FILENAME_BASE}}Props = {$2};",
+    ],
+    "description": "react function component "
+  },
+  "switch useMemo": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "useMemo switch",
+    "body": [
+      "useMemo(() => $1${TM_SELECTED_TEXT}, [])$0",
+    ],
+    "description": "switch nomal const to useMemo"
+  },
+  "switch useEventCallback": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "useEventCallback switch",
+    "body": [
+      "useEventCallback($1${TM_SELECTED_TEXT})$0",
+    ],
+    "description": "switch nomal const to useEventCallback"
+  },
+  "switch useCallback": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "useCallback switch",
+    "body": [
+      "useCallback($1${TM_SELECTED_TEXT}, [])$0",
+    ],
+    "description": "switch nomal const to useCallback"
+  },
+}

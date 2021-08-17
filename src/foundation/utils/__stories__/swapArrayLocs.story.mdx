@@ -1,0 +1,41 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Utils/swapArrayLocs" />
+
+## swapArrayLocs
+
+### Functions
+
+- [swapArrayLocs](#const-swaparraylocs)
+
+## Functions
+
+### `Const` swapArrayLocs
+
+▸ **swapArrayLocs**‹**T**›(`arr`: T, `index1`: number, `index2`: number): _T_
+
+swap position of an array,
+
+**`example`**
+
+```ts
+const arr = [0, 1, 2, 3];
+swapArrayLocs(arr, 0, 3);
+console.log(arr); // result: [3, 1 ,2 ,0]
+```
+
+**Type parameters:**
+
+▪ **T**
+
+**Parameters:**
+
+| Name     | Type   | Description  |
+| -------- | ------ | ------------ |
+| `arr`    | T      | source arr   |
+| `index1` | number | source index |
+| `index2` | number | target index |
+
+**Returns:** _T_

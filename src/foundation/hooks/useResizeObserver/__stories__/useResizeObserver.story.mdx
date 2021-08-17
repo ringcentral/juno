@@ -1,0 +1,64 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/useResizeObserver" />
+
+## useResizeObserver
+
+### Type aliases
+
+- [PerformanceOptions](#performanceoptions)
+
+### Functions
+
+- [getResizeObserver](#const-getresizeobserver)
+- [useResizeObserver](#const-useresizeobserver)
+
+## Type aliases
+
+### PerformanceOptions
+
+Ƭ **PerformanceOptions**: _object_
+
+#### Type declaration:
+
+- **ignoreFireWhenObserve**? : _undefined | false | true_
+
+- **mode**? : _"debounce" | "throttle" | "none"_
+
+- **time**? : _undefined | number_
+
+## Functions
+
+### `Const` getResizeObserver
+
+▸ **getResizeObserver**(`callback`: ResizeObserverCallback, `externalWindow`: undefined | Window): _any_
+
+**Parameters:**
+
+| Name             | Type                    | Description                  |
+| ---------------- | ----------------------- | ---------------------------- |
+| `callback`       | ResizeObserverCallback  | ResizeObserverCallback       |
+| `externalWindow` | undefined &#124; Window | options that external window |
+
+**Returns:** _any_
+
+---
+
+### `Const` useResizeObserver
+
+▸ **useResizeObserver**(`ref`: RefObject‹HTMLElement›, `callback`: ResizeObserverCallback, `performance`: [PerformanceOptions](#performanceoptions)): _ResizeObserver_
+
+get resize event with auto disconnect when layout destroy.
+bring with debounce for event not too many
+
+**Parameters:**
+
+| Name          | Type                                      | Default | Description                      |
+| ------------- | ----------------------------------------- | ------- | -------------------------------- |
+| `ref`         | RefObject‹HTMLElement›                    | -       | that ref for element             |
+| `callback`    | ResizeObserverCallback                    | -       | callback when element resize     |
+| `performance` | [PerformanceOptions](#performanceoptions) | {}      | options that improve performance |
+
+**Returns:** _ResizeObserver_

@@ -1,0 +1,3972 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
+.c10 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c6.RcIconButton-root {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #666666;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.c6.RcIconButton-root .c8 {
+  font-size: 40px;
+}
+
+.c6.RcIconButton-root:active .c8 {
+  color: #666666;
+}
+
+.c6.RcIconButton-root.focus-visible,
+.c6.RcIconButton-root[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c6.RcIconButton-root.focus-visible:active .c8,
+.c6.RcIconButton-root[data-focus-visible-added]:active .c8 {
+  color: rgba(102,102,102,0.88);
+}
+
+.c6.RcIconButton-persistBg {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c6.RcIconButton-disabled .c8 {
+  color: #B9B9B9;
+}
+
+.c6.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c6.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c6.RcIconButton-contained {
+  color: #fff;
+  background-color: #666666;
+}
+
+.c6.RcIconButton-contained:active {
+  background-color: rgb(91,91,91);
+}
+
+.c6.RcIconButton-contained:active .c8 {
+  color: #fff;
+}
+
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgb(91,91,91);
+}
+
+.c6.RcIconButton-contained.focus-visible:active .c8,
+.c6.RcIconButton-contained[data-focus-visible-added]:active .c8 {
+  color: #fff;
+}
+
+.c6 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c4 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c7 {
+  padding-top: 27.59%;
+}
+
+.c7.c7 {
+  width: 27.59%;
+  height: 0;
+}
+
+.c7 .c8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.c7 .c8 svg {
+  height: 100%;
+  width: 100%;
+}
+
+.c7 .c8 svg path:first-child {
+  fill: #121212;
+}
+
+.c7 .c8 svg path:nth-child(2) {
+  fill: #666666;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c1 .c5 {
+  margin-left: 12px;
+}
+
+.c1 .RcTextFieldInputLabel-root {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1 .RcTextFieldInputLabel-focused {
+  color: #066FAC;
+}
+
+.c1 .RcTextFieldInput-root {
+  color: #121212;
+}
+
+.c1 .RcTextFieldInput-root .sc-carFqZ {
+  display: none;
+}
+
+.c1 .RcTextFieldInput-input {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  text-align: center;
+}
+
+.c1 .RcTextFieldInput-input::-webkit-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c1 .RcTextFieldInput-input::-moz-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c1 .RcTextFieldInput-input:-ms-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c1 .RcTextFieldInput-input::placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c1 .RcTextFieldInput-underline:before {
+  border-bottom-color: #939393;
+}
+
+.c1 .RcTextFieldInput-underline:after {
+  border-bottom-color: #066FAC;
+}
+
+.c1 .RcTextFieldInput-error:after {
+  border-bottom-color: #BE3933;
+}
+
+.c1 .RcTextFieldInput-disabled {
+  color: #B9B9B9;
+  -webkit-text-fill-color: #B9B9B9;
+}
+
+.c1 .RcTextFieldInput-disabled::-webkit-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c1 .RcTextFieldInput-disabled::-moz-placeholder {
+  color: #B9B9B9;
+}
+
+.c1 .RcTextFieldInput-disabled:-ms-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c1 .RcTextFieldInput-disabled::placeholder {
+  color: #B9B9B9;
+}
+
+.c1 .RcTextFieldInput-disabled:before {
+  border-bottom-style: solid;
+  border-bottom-color: #B9B9B9;
+}
+
+.c1 .RcTextFieldInput-disabled:after {
+  border-bottom-style: none;
+}
+
+.c1 .RcTextFieldFormHelperText-root {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c1 .RcTextFieldFormHelperText-error {
+  color: #BE3933;
+}
+
+.c1 .RcTextFieldFormHelperText-disabled {
+  color: #B9B9B9;
+}
+
+.c1 .RcTextFieldInputLabel-error {
+  color: #BE3933;
+}
+
+.c1 .RcTextFieldInputLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c1 input[type='search']::-ms-clear,
+.c1 input[type='search']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.c1 input[type='search']::-webkit-search-decoration,
+.c1 input[type='search']::-webkit-search-cancel-button,
+.c1 input[type='search']::-webkit-search-results-button,
+.c1 input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+.c0 {
+  width: 280px;
+  resize: horizontal;
+  overflow: hidden;
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+
+.c0 .c2 .custom-select-input-root {
+  padding: 1em;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c6.RcIconButton-root:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
+
+  .c6.RcIconButton-root:hover .c8 {
+    color: rgba(102,102,102,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c6.RcIconButton-contained:hover {
+    background-color: rgb(91,91,91);
+  }
+
+  .c6.RcIconButton-contained:hover .c8 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
+    border-bottom-color: #121212;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 MuiFormControl-fullWidth"
+  >
+    <div
+      className="MuiInputBase-root MuiInput-root RcTextFieldInput-root custom-select-input-root MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoComplete="off"
+        autoFocus={false}
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input"
+        disabled={false}
+        maxLength={30}
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        placeholder="Enter a number"
+        required={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="c3"
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+  >
+    <span
+      className="c4"
+      tabIndex={-1}
+    />
+    <button
+      aria-label="1"
+      className="MuiButtonBase-root c5 c6 c7 RcIconButton-root"
+      data-move-focused-0={0}
+      data-move-focused-0-dial-button="1"
+      data-test-id="1"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="c8 c9 1 icon"
+      >
+        <svg
+          className="c10"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13.498 15.148h1.805V9.025c0-.184.006-.37.018-.558L13.82 9.84c-.039.033-.078.057-.117.072a.308.308 0 01-.269-.019.292.292 0 01-.105-.097l-.328-.483L15.498 7h.85v8.148h1.653V16h-4.502v-.852z"
+          />
+        </svg>
+        
+      </span>
+    </button>
+    <button
+      aria-label="2,A B C"
+      className="MuiButtonBase-root c5 c6 c7 RcIconButton-root"
+      data-move-focused-0={1}
+      data-move-focused-0-dial-button="2"
+      data-test-id="2"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={-1}
+      type="button"
+    >
+      <span
+        className="c8 c9 2 icon"
+      >
+        <svg
+          className="c10"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.119 7c.381 0 .736.056 1.067.168s.616.274.857.488c.241.213.43.473.568.779s.207.654.207 1.043c0 .331-.05.638-.151.919s-.236.552-.408.811a6.033 6.033 0 01-.593.752c-.149.162-.305.325-.466.491l-2.613 2.648c.167-.046.337-.082.508-.109s.337-.04.496-.04h3.013c.121 0 .218.035.289.106s.107.162.107.273V16h-6v-.379a.647.647 0 01.201-.472l2.881-2.863c.238-.24.456-.471.653-.693s.365-.444.505-.668c.14-.224.248-.45.323-.68s.113-.475.113-.736-.042-.49-.126-.686a1.35 1.35 0 00-.86-.777 2.039 2.039 0 00-.634-.096c-.226 0-.435.033-.628.099a1.687 1.687 0 00-.888.695 1.62 1.62 0 00-.217.534c-.033.12-.084.207-.151.261s-.155.081-.264.081l-.066-.003a1.577 1.577 0 01-.078-.009l-.584-.099c.059-.406.172-.765.339-1.078s.38-.575.637-.786c.257-.211.552-.372.885-.481s.691-.165 1.076-.165z"
+            fill="var(--color11, #000)"
+          />
+          <path
+            d="M14.357 24h-.375c-.043 0-.078-.011-.105-.032s-.047-.049-.06-.082l-.335-.865h-1.607l-.335.865c-.012.03-.032.057-.06.08s-.063.035-.105.035H11l1.433-3.582h.492l1.433 3.582zm-2.347-1.33h1.338l-.563-1.457a2.72 2.72 0 01-.107-.337l-.054.189-.051.151-.563 1.455zm2.8 1.33v-3.582h1.143c.22 0 .41.022.569.065s.29.105.392.185c.102.08.178.178.227.294s.074.246.074.391c0 .088-.014.173-.041.255s-.069.157-.125.227c-.056.07-.126.133-.21.188s-.183.1-.296.135c.262.052.459.146.593.282s.2.317.2.54c0 .152-.028.29-.084.415s-.137.233-.245.323c-.108.09-.239.16-.395.209s-.334.074-.534.074H14.81zm.485-1.633v1.247h.775c.138 0 .257-.016.356-.047s.181-.076.245-.134c.064-.058.111-.126.141-.205s.045-.166.045-.261c0-.185-.065-.331-.196-.439s-.329-.161-.594-.161h-.773zm0-.344h.64c.137 0 .255-.015.355-.045s.183-.072.249-.125c.066-.053.115-.118.146-.194s.047-.159.047-.249c0-.21-.063-.364-.19-.462s-.323-.148-.59-.148h-.658v1.223zm5.275 1.237c.027 0 .051.011.073.032l.19.207c-.147.17-.325.302-.534.398s-.461.142-.756.142c-.258 0-.492-.045-.703-.134s-.389-.214-.538-.375c-.148-.161-.263-.354-.345-.579s-.122-.473-.122-.742c0-.27.044-.517.131-.742s.21-.418.369-.58c.158-.162.348-.287.569-.376s.465-.134.731-.134c.263 0 .49.041.681.122s.36.192.509.332l-.157.223c-.012.017-.025.03-.04.041s-.037.016-.065.016a.125.125 0 01-.069-.024l-.086-.059c-.033-.023-.073-.048-.117-.075s-.098-.052-.16-.075a1.373 1.373 0 00-.497-.083c-.192 0-.367.033-.526.099a1.19 1.19 0 00-.68.726 1.7 1.7 0 00-.096.587c0 .223.032.422.096.598s.152.323.262.444c.111.121.242.213.394.276s.315.095.49.095c.107 0 .203-.006.288-.019s.164-.032.236-.059c.073-.027.14-.06.203-.101l.094-.067.095-.079c.028-.025.056-.038.082-.038z"
+            fill="var(--color77, #9e9e9e)"
+          />
+        </svg>
+        
+      </span>
+    </button>
+    <button
+      aria-label="3,D E F"
+      className="MuiButtonBase-root c5 c6 c7 RcIconButton-root"
+      data-move-focused-0={2}
+      data-move-focused-0-dial-button="3"
+      data-test-id="3"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={-1}
+      type="button"
+    >
+      <span
+        className="c8 c9 3 icon"
+      >
+        <svg
+          className="c10"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.193 7c.378 0 .728.053 1.048.16s.596.258.826.455c.231.197.411.434.54.713s.193.588.193.928c0 .278-.036.527-.109.746a1.802 1.802 0 01-.802.998 2.721 2.721 0 01-.642.276c.582.152 1.02.405 1.313.762s.44.803.44 1.339c0 .405-.078.77-.234 1.094s-.369.599-.639.826c-.27.227-.585.401-.945.522s-.745.181-1.157.181c-.474 0-.879-.058-1.216-.175s-.622-.277-.854-.482c-.233-.205-.424-.447-.574-.728s-.277-.585-.38-.912l.474-.197a.666.666 0 01.262-.055c.083 0 .157.017.221.052a.31.31 0 01.108.096l.051.093.037.085c.058.119.129.253.212.402s.195.29.337.421c.141.131.317.242.527.332s.471.135.783.135c.312 0 .585-.05.82-.15s.43-.23.586-.39a1.637 1.637 0 00.471-1.118c0-.238-.032-.455-.097-.651s-.181-.367-.349-.51c-.168-.143-.401-.256-.699-.338s-.679-.123-1.145-.123v-.793c.378-.004.702-.045.97-.123s.488-.184.658-.319c.17-.135.294-.297.371-.485s.115-.397.115-.627c0-.254-.041-.475-.122-.663s-.192-.344-.334-.467c-.141-.123-.309-.215-.502-.276s-.402-.092-.627-.092c-.225 0-.432.033-.624.098s-.361.157-.508.273c-.148.117-.271.256-.371.418s-.175.337-.225.525c-.033.119-.083.205-.15.258s-.152.08-.256.08l-.066-.003a1.577 1.577 0 01-.078-.009l-.58-.098c.058-.401.17-.757.337-1.066s.377-.568.633-.777c.256-.209.549-.368.879-.476s.687-.163 1.07-.163z"
+            fill="var(--color11, #000)"
+          />
+          <path
+            d="M14.54 22.21c0 .268-.043.512-.127.733s-.205.408-.36.565c-.155.157-.341.278-.557.364s-.457.129-.72.129h-1.34v-3.582h1.34c.263 0 .503.043.72.129a1.587 1.587 0 01.917.931c.085.22.127.464.127.733zm-.497 0c0-.22-.03-.417-.09-.59s-.145-.32-.255-.44c-.11-.12-.243-.212-.4-.275s-.331-.095-.523-.095h-.852v2.797h.852c.192 0 .366-.032.523-.095s.29-.155.4-.274c.11-.119.195-.265.255-.439s.09-.37.09-.59zm3.364-1.792v.395h-1.72v1.19h1.393v.38h-1.393v1.223h1.72v.395H15.2v-3.582h2.207zm2.906 0v.395h-1.72v1.253h1.47v.395h-1.47v1.54h-.488v-3.582h2.207z"
+            fill="var(--color77, #9e9e9e)"
+          />
+        </svg>
+        
+      </span>
+    </button>
+    <button
+      aria-label="4,G H I"
+      className="MuiButtonBase-root c5 c6 c7 RcIconButton-root"
+      data-move-focused-0={3}
+      data-move-focused-0-dial-button="4"
+      data-test-id="4"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={-1}
+      type="button"
+    >
+      <span
+        className="c8 c9 4 icon"
+      >
+        <svg
+          className="c10"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17.594 7v5.753H19v.641c0 .067-.021.124-.062.17s-.105.069-.191.069h-1.154v2.368h-1.018v-2.368h-4.116c-.086 0-.161-.024-.224-.072s-.103-.108-.12-.179l-.117-.572 4.518-5.809h1.076zm-.966 1.3l-3.377 4.453h3.325V9.041c0-.109.003-.226.01-.352l.015-.192.027-.198z"
+            fill="var(--color11, #000)"
+          />
+          <path
+            d="M13.607 23.648c.097 0 .185-.005.266-.014a1.728 1.728 0 00.432-.107c.064-.026.127-.055.19-.089v-.79h-.555c-.032 0-.057-.009-.076-.027s-.029-.041-.029-.067v-.275h1.1v1.375a1.883 1.883 0 01-.594.291c-.111.032-.23.057-.356.073s-.264.024-.412.024c-.26 0-.498-.045-.715-.134a1.642 1.642 0 01-.926-.954 2.044 2.044 0 01-.131-.742c0-.273.043-.523.129-.747s.208-.418.367-.579c.159-.161.352-.285.578-.374s.479-.133.759-.133c.142 0 .273.01.395.031s.235.051.339.09a1.651 1.651 0 01.537.331l-.137.22c-.028.045-.065.067-.11.067a.181.181 0 01-.088-.027l-.14-.085c-.052-.033-.115-.065-.189-.096a1.545 1.545 0 00-.621-.111c-.202 0-.384.033-.547.099a1.17 1.17 0 00-.683.727 1.74 1.74 0 00-.092.586c0 .227.032.429.096.606s.155.328.271.451c.117.123.255.218.415.282s.337.098.53.098zm4.978.352h-.488v-1.63h-1.93V24h-.488v-3.582h.488v1.598h1.93v-1.598h.488V24zm1.45 0h-.485v-3.582h.485V24z"
+            fill="var(--color77, #9e9e9e)"
+          />
+        </svg>
+        
+      </span>
+    </button>
+    <button
+      aria-label="5,J K L"
+      className="MuiButtonBase-root c5 c6 c7 RcIconButton-root"
+      data-move-focused-0={4}
+      data-move-focused-0-dial-button="5"
+      data-test-id="5"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={-1}
+      type="button"
+    >
+      <span
+        className="c8 c9 5 icon"
+      >
+        <svg
+          className="c10"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.711 7.484c0 .157-.053.287-.158.388s-.282.152-.532.152h-2.954l-.433 2.335c.49-.099.943-.149 1.359-.149.49 0 .922.068 1.297.205s.688.325.942.565c.254.24.445.524.574.851s.194.683.194 1.068a2.936 2.936 0 01-.982 2.258c-.304.271-.662.479-1.073.624s-.856.217-1.333.217c-.276 0-.54-.026-.794-.078a4.195 4.195 0 01-1.32-.506 3.542 3.542 0 01-.499-.354l.354-.472a.371.371 0 01.315-.162c.083 0 .181.032.292.096s.246.136.404.214c.158.079.342.15.555.214s.465.096.758.096c.328 0 .624-.05.886-.149s.487-.241.673-.425c.186-.184.329-.405.43-.662s.151-.544.151-.863c0-.277-.043-.528-.128-.752s-.214-.414-.387-.571c-.173-.157-.388-.28-.647-.366s-.56-.13-.906-.13a5.103 5.103 0 00-1.523.236l-.735-.205.761-4.162h4.457v.484z"
+            fill="var(--color11, #000)"
+          />
+          <path
+            d="M13.633 22.762c0 .2-.025.379-.074.538s-.122.292-.217.401c-.096.109-.214.193-.354.251s-.301.087-.482.087c-.162 0-.33-.023-.505-.07l.027-.285c.003-.028.014-.051.031-.069s.044-.026.079-.026c.02 0 .044.003.073.01l.047.012c.05.015.117.023.2.023.11 0 .208-.017.294-.05s.158-.085.217-.155c.059-.07.104-.16.135-.269s.046-.239.046-.389v-2.355h.482v2.345zm1.404-.774h.182c.063 0 .114-.008.151-.024s.073-.043.106-.081l1.193-1.35c.037-.042.072-.071.106-.089s.078-.026.131-.026h.413l-1.365 1.543c-.035.038-.068.071-.099.098s-.064.048-.099.065c.047.015.088.038.123.067s.072.067.11.113l1.425 1.698h-.42c-.032 0-.058-.003-.08-.008s-.04-.012-.056-.02l-.023-.014-.061-.061-1.238-1.422-.051-.051a.238.238 0 00-.127-.057l-.046-.005-.275-.002v1.64h-.482V20.42h.482v1.57zm3.358 1.605h1.55V24H17.91v-3.582h.485v3.175z"
+            fill="var(--color77, #9e9e9e)"
+          />
+        </svg>
+        
+      </span>
+    </button>
+    <button
+      aria-label="6,M N O"
+      className="MuiButtonBase-root c5 c6 c7 RcIconButton-root"
+      data-move-focused-0={5}
+      data-move-focused-0-dial-button="6"
+      data-test-id="6"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={-1}
+      type="button"
+    >
+      <span
+        className="c8 c9 6 icon"
+      >
+        <svg
+          className="c10"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17.919 7l-3.087 3.907c.211-.145.445-.258.702-.338s.534-.121.832-.121c.356 0 .694.059 1.012.177s.598.29.838.516c.24.226.431.503.571.832s.211.705.211 1.127c0 .41-.075.791-.224 1.143s-.357.658-.624.919-.589.466-.966.615-.791.224-1.242.224c-.447 0-.852-.071-1.214-.214s-.672-.346-.929-.609-.454-.582-.593-.957-.208-.794-.208-1.258c0-.389.087-.803.261-1.242s.449-.911.826-1.416l2.255-3.037c.058-.075.139-.138.242-.189s.222-.078.354-.078h.981zm-1.913 4.292c-.298 0-.567.051-.807.152s-.444.238-.612.41c-.168.172-.296.371-.385.596s-.134.461-.134.705c0 .286.041.547.124.783s.204.439.363.609c.159.17.354.301.584.394s.492.14.786.14c.298 0 .567-.048.807-.143s.446-.228.618-.398.304-.371.398-.603.14-.484.14-.758c0-.29-.046-.552-.137-.786s-.219-.433-.385-.596c-.166-.164-.364-.289-.596-.376s-.487-.13-.764-.13z"
+            fill="var(--color11, #000)"
+          />
+          <path
+            d="M19.94 20.378c.263 0 .504.045.721.135s.404.216.559.379c.155.163.275.356.36.58s.128.47.128.739c0 .268-.043.515-.128.739s-.205.417-.36.579c-.155.162-.341.287-.559.376s-.458.134-.721.134c-.263 0-.503-.045-.72-.134s-.402-.215-.558-.376c-.155-.162-.275-.355-.36-.579s-.128-.47-.128-.739c0-.268.043-.515.128-.739s.205-.418.36-.58c.155-.163.341-.289.558-.379s.457-.135.72-.135zm-9.583.04c.043 0 .077.004.1.012s.046.032.068.07l1.27 2.267.08.198.026-.068.027-.065c.018-.043.039-.085.063-.129l1.213-2.203c.022-.038.044-.062.068-.07s.057-.012.1-.012h.357V24h-.425l.001-2.687.009-.181-1.227 2.24c-.042.075-.1.113-.175.113h-.07c-.075 0-.133-.038-.175-.113l-1.255-2.247.011.128.004.115v2.633h-.425v-3.582h.357zm4.493 0c.043 0 .075.005.096.016s.045.033.071.066l2.075 2.7-.01-.126-.003-.119v-2.538h.425v3.582h-.245c-.038 0-.07-.007-.096-.02s-.051-.036-.076-.067l-2.072-2.697.01.233v2.553H14.6v-3.582h.25zm5.09.379c-.192 0-.366.032-.523.098s-.29.158-.401.279c-.111.121-.196.269-.256.444s-.09.372-.09.593c0 .22.03.417.09.591s.145.322.256.442c.111.121.245.213.401.277s.331.096.523.096c.193 0 .368-.032.525-.096s.29-.157.4-.277c.11-.121.195-.268.255-.442s.09-.371.09-.591c0-.22-.03-.418-.09-.593s-.145-.323-.255-.444c-.11-.121-.243-.214-.4-.279s-.332-.098-.525-.098z"
+            fill="var(--color77, #9e9e9e)"
+          />
+        </svg>
+        
+      </span>
+    </button>
+    <button
+      aria-label="7,P Q R S"
+      className="MuiButtonBase-root c5 c6 c7 RcIconButton-root"
+      data-move-focused-0={6}
+      data-move-focused-0-dial-button="7"
+      data-test-id="7"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={-1}
+      type="button"
+    >
+      <span
+        className="c8 c9 7 icon"
+      >
+        <svg
+          className="c10"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 7v.502c0 .142-.015.26-.046.352s-.063.17-.095.232l-3.653 7.518c-.053.109-.127.202-.222.279s-.222.116-.382.116h-.782l3.708-7.424c.053-.105.108-.201.163-.289s.118-.172.188-.251h-4.608c-.07 0-.132-.028-.188-.085S13 7.83 13 7.758v-.76h6z"
+            fill="var(--color11, #000)"
+          />
+          <path
+            d="M10.482 22.66V24H10v-3.582h1.058c.227 0 .424.026.591.079s.306.127.416.224c.11.097.192.213.246.35s.081.289.081.457c0 .167-.029.319-.088.457s-.144.258-.256.358c-.113.1-.252.178-.419.234s-.357.084-.572.084h-.575zm0-.385h.575c.138 0 .26-.018.366-.055s.195-.088.266-.154c.072-.066.126-.145.162-.236s.055-.192.055-.302c0-.228-.07-.407-.211-.535s-.354-.192-.639-.192h-.575v1.475zm5.85-.065c0 .168-.017.328-.051.48s-.084.293-.149.424a1.615 1.615 0 01-.553.633l.92.992h-.4c-.06 0-.113-.008-.16-.025s-.089-.046-.127-.087l-.63-.685a1.96 1.96 0 01-.617.095c-.263 0-.503-.045-.72-.134a1.613 1.613 0 01-.917-.955 2.066 2.066 0 01-.127-.739c0-.268.043-.515.127-.739s.205-.418.36-.58c.155-.163.341-.289.557-.379s.457-.135.72-.135c.263 0 .504.045.721.135s.404.216.559.379c.155.163.275.356.36.58s.128.47.128.739zm-.497 0c0-.22-.03-.418-.09-.593s-.145-.323-.255-.444c-.11-.121-.243-.214-.4-.279s-.332-.098-.525-.098c-.192 0-.366.032-.522.098a1.136 1.136 0 00-.657.723 1.82 1.82 0 00-.09.593c0 .22.03.417.09.591s.145.322.256.442c.111.121.245.213.401.277s.331.096.523.096c.193 0 .368-.032.525-.096s.29-.157.4-.277c.11-.121.195-.268.255-.442s.09-.371.09-.591zm1.692.295V24h-.483v-3.582h1.012c.227 0 .422.023.587.069s.301.112.409.199c.108.087.187.191.239.314s.078.26.078.411c0 .127-.02.245-.06.355s-.098.209-.174.296c-.076.087-.168.162-.277.224s-.233.108-.371.14c.06.035.113.086.16.152L19.692 24h-.43c-.088 0-.153-.034-.195-.102l-.93-1.28c-.028-.04-.059-.069-.093-.086s-.083-.026-.15-.026h-.367zm0-.353h.508c.142 0 .266-.017.374-.051s.198-.082.27-.145c.073-.063.127-.137.164-.224s.055-.183.055-.288c0-.213-.07-.374-.211-.483s-.35-.163-.629-.163h-.53v1.352zm4.523-1.175c-.015.025-.031.044-.047.056s-.038.019-.065.019a.129.129 0 01-.063-.019l-.036-.024a1.223 1.223 0 00-.349-.188.903.903 0 00-.294-.043c-.108 0-.204.015-.288.044s-.153.069-.209.119c-.056.05-.098.109-.126.176s-.043.14-.043.219c0 .1.025.183.074.249s.114.122.195.169c.081.047.172.087.275.121l.315.106c.108.037.212.078.315.124s.194.104.275.174c.081.07.146.156.195.258s.074.227.074.375c0 .157-.027.304-.08.441s-.131.257-.234.359c-.102.102-.228.182-.378.24s-.319.087-.509.087c-.232 0-.443-.042-.634-.126s-.354-.198-.489-.341l.14-.23c.013-.018.03-.034.049-.046s.04-.019.064-.019a.15.15 0 01.077.025l.148.111.064.044c.067.045.149.086.245.124s.213.056.351.056c.115 0 .218-.016.308-.047s.166-.076.229-.134c.063-.058.11-.126.144-.206s.05-.169.05-.267c0-.108-.025-.197-.074-.266s-.114-.127-.194-.174a1.354 1.354 0 00-.274-.119l-.315-.1c-.108-.034-.212-.074-.315-.119s-.194-.103-.274-.175c-.08-.072-.145-.161-.194-.269s-.074-.24-.074-.399a.947.947 0 01.288-.682c.093-.092.209-.165.346-.22s.295-.082.474-.082c.2 0 .383.032.547.095s.309.155.433.275l-.117.23z"
+            fill="var(--color77, #9e9e9e)"
+          />
+        </svg>
+        
+      </span>
+    </button>
+    <button
+      aria-label="8,T U V"
+      className="MuiButtonBase-root c5 c6 c7 RcIconButton-root"
+      data-move-focused-0={7}
+      data-move-focused-0-dial-button="8"
+      data-test-id="8"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={-1}
+      type="button"
+    >
+      <span
+        className="c8 c9 8 icon"
+      >
+        <svg
+          className="c10"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 7c.402 0 .768.059 1.099.178s.615.283.851.491a2.162 2.162 0 01.74 1.646c0 .475-.12.884-.36 1.226s-.592.599-1.056.771c.555.156.981.417 1.279.783s.447.832.447 1.398a2.293 2.293 0 01-.836 1.83c-.263.217-.579.384-.947.501s-.774.175-1.217.175c-.443 0-.849-.058-1.217-.175s-.685-.284-.95-.501c-.265-.217-.47-.48-.615-.789s-.217-.656-.217-1.041c0-.565.149-1.031.447-1.398s.725-.628 1.28-.783c-.468-.172-.821-.429-1.059-.771s-.357-.751-.357-1.226a2.159 2.159 0 01.74-1.646c.236-.209.519-.373.848-.491S15.597 7 16.003 7zm0 4.78c-.244 0-.478.032-.702.095s-.421.163-.593.298c-.172.135-.309.31-.41.525s-.152.474-.152.777c0 .246.042.47.127.673s.207.377.366.522c.159.145.354.258.584.338s.49.12.78.12c.29 0 .55-.04.779-.12s.424-.193.584-.338c.159-.145.282-.319.366-.522s.127-.427.127-.673c0-.303-.051-.562-.152-.777s-.238-.39-.41-.525-.37-.234-.593-.298-.458-.095-.702-.095zm0-3.932c-.265 0-.498.039-.699.117s-.369.184-.503.319c-.135.135-.236.293-.304.473s-.102.373-.102.577c0 .201.029.395.087.584s.151.355.28.501c.128.145.295.262.5.35s.452.132.742.132.537-.044.742-.132.372-.205.5-.35.222-.312.279-.501.087-.383.087-.584c0-.205-.034-.397-.102-.577a1.335 1.335 0 00-.807-.792 1.946 1.946 0 00-.699-.117z"
+            fill="var(--color11, #000)"
+          />
+          <path
+            d="M13.875 20.418v.407h-1.158V24h-.485v-3.175H11.07v-.407h2.805zm1.902 3.197c.148 0 .281-.025.398-.075s.215-.12.296-.21c.081-.09.142-.198.185-.323s.064-.262.064-.413v-2.177h.483v2.178c0 .207-.033.398-.099.575s-.16.33-.282.459c-.122.129-.272.23-.449.304s-.375.11-.595.11c-.22 0-.418-.037-.595-.11a1.297 1.297 0 01-.734-.763 1.63 1.63 0 01-.099-.575v-2.178h.482v2.175c0 .15.021.288.064.413s.104.233.185.323.18.16.297.211.25.076.399.076zm1.843-3.197h.387c.043 0 .078.011.105.032s.047.049.06.082l1.012 2.527.033.089.03.096c.019.067.038.136.056.207.015-.072.031-.141.049-.207s.038-.128.061-.185l1.008-2.527c.012-.028.032-.055.06-.079s.063-.036.105-.036h.39l-1.46 3.582h-.438l-1.46-3.582z"
+            fill="var(--color77, #9e9e9e)"
+          />
+        </svg>
+        
+      </span>
+    </button>
+    <button
+      aria-label="9,W X Y Z"
+      className="MuiButtonBase-root c5 c6 c7 RcIconButton-root"
+      data-move-focused-0={8}
+      data-move-focused-0-dial-button="9"
+      data-test-id="9"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={-1}
+      type="button"
+    >
+      <span
+        className="c8 c9 9 icon"
+      >
+        <svg
+          className="c10"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.058 7c.443 0 .845.07 1.206.211s.671.337.929.59c.258.253.457.555.597.907s.21.741.21 1.168a3.494 3.494 0 01-.29 1.404c-.095.219-.208.438-.339.655s-.281.442-.448.674l-2.252 3.13c-.056.079-.135.142-.239.189s-.222.071-.355.071h-1.058l2.813-3.547.265-.342c.082-.108.159-.215.232-.323-.237.182-.503.321-.8.416s-.611.143-.942.143c-.348 0-.678-.056-.99-.168s-.586-.276-.823-.494c-.237-.217-.425-.484-.565-.801s-.21-.68-.21-1.09c0-.389.075-.754.226-1.093s.361-.636.632-.888c.271-.253.594-.451.968-.596s.785-.217 1.232-.217zm-.013.925c-.284 0-.543.045-.777.134s-.434.212-.6.37c-.166.157-.294.346-.384.565s-.135.46-.135.72c0 .282.042.533.126.755s.204.409.361.562c.157.153.348.269.574.348s.479.118.758.118c.31 0 .584-.049.823-.146s.44-.227.603-.388c.163-.162.288-.348.374-.559s.129-.431.129-.658c0-.277-.046-.529-.139-.755s-.22-.417-.384-.575c-.163-.157-.358-.278-.584-.363s-.474-.127-.745-.127z"
+            fill="var(--color11, #000)"
+          />
+          <path
+            d="M8.8 20.418h.402c.043 0 .079.011.107.032s.047.049.057.082l.74 2.49.019.07.048.238.054-.239.864-2.558c.01-.028.03-.055.059-.079s.065-.036.106-.036h.14c.043 0 .079.011.106.032s.047.049.059.082l.838 2.49c.03.087.057.186.08.297l.042-.23.761-2.558a.167.167 0 01.162-.115h.377l-1.117 3.582h-.435l-.908-2.733a1.618 1.618 0 01-.05-.18l-.035.14-.925 2.772h-.435l-1.117-3.582zm6.327 1.742l-1.182-1.742h.482c.035 0 .061.006.078.017s.032.028.045.05l.935 1.435a.67.67 0 01.053-.115l.883-1.31c.015-.023.031-.042.049-.056s.039-.021.064-.021h.462l-1.188 1.72 1.227 1.863h-.48c-.037 0-.065-.01-.086-.029s-.038-.04-.051-.064l-.96-1.503a.6.6 0 01-.045.1l-.935 1.402c-.015.023-.032.045-.051.064s-.046.029-.081.029h-.45l1.232-1.84zm3.763.415V24h-.483v-1.425l-1.313-2.157h.425c.043 0 .078.011.102.032s.047.048.065.08l.82 1.393c.033.058.061.113.084.165l.061.152.06-.155c.022-.052.049-.106.082-.163l.817-1.393c.015-.027.035-.052.061-.076s.06-.036.101-.036h.43l-1.315 2.157zm4.26-2.157v.18c0 .057-.017.11-.052.16l-2.027 2.848h2.045v.395h-2.68v-.19c0-.05.016-.098.047-.142l2.03-2.855H20.53v-.395h2.62z"
+            fill="var(--color77, #9e9e9e)"
+          />
+        </svg>
+        
+      </span>
+    </button>
+    <button
+      aria-label="*"
+      className="MuiButtonBase-root c5 c6 c7 RcIconButton-root"
+      data-move-focused-0={9}
+      data-move-focused-0-dial-button="*"
+      data-test-id="*"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={-1}
+      type="button"
+    >
+      <span
+        className="c8 c9 asterisk icon"
+      >
+        <svg
+          className="c10"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.583 20v-2.463a1.93 1.93 0 00-.212-.896c.097.133.207.245.331.336s.265.182.424.274l2.291 1.244.583-.933-2.291-1.257c-.15-.091-.298-.16-.444-.205s-.298-.077-.457-.093a2.09 2.09 0 00.901-.311l2.278-1.244-.583-.933-2.278 1.232c-.15.091-.285.182-.404.274s-.227.199-.325.323a2.04 2.04 0 00.185-.896v-2.451h-1.166v2.463c0 .166.015.326.046.479s.086.305.166.454a2.224 2.224 0 00-.755-.647l-2.291-1.244-.583.933 2.291 1.257c.159.1.316.172.47.218s.32.077.497.093a2.365 2.365 0 00-.967.299l-2.278 1.244.583.933 2.278-1.232c.291-.166.525-.352.702-.56-.062.133-.104.27-.126.411s-.033.29-.033.448v2.451h1.166z"
+          />
+        </svg>
+        
+      </span>
+    </button>
+    <button
+      aria-label="0,+"
+      className="MuiButtonBase-root c5 c6 c7 RcIconButton-root"
+      data-move-focused-0={10}
+      data-move-focused-0-dial-button="0"
+      data-test-id="0"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={-1}
+      type="button"
+    >
+      <span
+        className="c8 c9 0 icon"
+      >
+        <svg
+          className="c10"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 7c.489 0 .948.09 1.376.271s.8.456 1.114.827c.314.371.562.839.744 1.405s.273 1.234.273 2.004c0 .771-.091 1.438-.273 2.001s-.43 1.03-.744 1.399-.685.643-1.114.824-.887.27-1.376.27c-.494 0-.952-.09-1.376-.271s-.793-.455-1.107-.824c-.314-.369-.561-.835-.74-1.399s-.269-1.231-.269-2.001c0-.771.09-1.439.269-2.004s.426-1.034.74-1.405.683-.646 1.107-.827.883-.271 1.376-.271zm0 .928c-.296 0-.581.06-.855.181s-.514.321-.72.599c-.206.279-.371.646-.495 1.103s-.185 1.021-.185 1.694c0 .672.062 1.236.185 1.691s.288.822.495 1.1c.206.279.446.478.72.599s.559.181.855.181c.296 0 .581-.06.855-.181s.515-.321.724-.599c.209-.279.375-.646.498-1.1s.185-1.018.185-1.691c0-.672-.062-1.237-.185-1.694s-.289-.825-.498-1.103c-.209-.279-.45-.478-.724-.599s-.559-.181-.855-.181z"
+            fill="var(--color11, #000)"
+          />
+          <path
+            d="M16.198 20.583v1.471H17.6v.465h-1.402V24h-.503v-1.481H14.3v-.465h1.395v-1.471z"
+            fill="var(--color77, #9e9e9e)"
+          />
+        </svg>
+        
+      </span>
+    </button>
+    <button
+      aria-label="#"
+      className="MuiButtonBase-root c5 c6 c7 RcIconButton-root"
+      data-move-focused-0={11}
+      data-move-focused-0-dial-button="#"
+      data-test-id="#"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={-1}
+      type="button"
+    >
+      <span
+        className="c8 c9 hash icon"
+      >
+        <svg
+          className="c10"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.523 11l-.559 2.65h1.645l.559-2.65h.526c.111 0 .203.031.276.094s.11.144.11.245a.367.367 0 01-.007.082l-.486 2.23h1.412l-.087.471c-.022.121-.074.21-.157.267s-.208.085-.376.085h-.919l-.433 2.047h1.192c.107 0 .189.024.246.072s.087.133.087.254l-.008.101-.066.395H17.9L17.341 20h-.54c-.102 0-.189-.036-.26-.107s-.107-.163-.107-.276l.001-.024.007-.047.479-2.202h-1.645l-.473 2.23c-.036.155-.103.265-.203.33s-.214.097-.343.097h-.526l.566-2.657h-.972c-.102 0-.182-.024-.24-.072s-.087-.131-.087-.248l.001-.033.007-.074.059-.396h1.359l.433-2.047h-1.545l.087-.465c.022-.121.073-.211.153-.27s.206-.088.38-.088h1.052l.48-2.248c.027-.126.088-.224.183-.295s.21-.107.343-.107h.533zm.959 3.473h-1.645l-.433 2.047h1.645l.433-2.047z"
+          />
+        </svg>
+        
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
+.c9 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c19 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+  color: #666666;
+}
+
+.c6.RcIconButton-root {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  color: #FFFFFF;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+}
+
+.c6.RcIconButton-root .c7 {
+  font-size: 16px;
+}
+
+.c6.RcIconButton-root:active .c7 {
+  color: #FFFFFF;
+}
+
+.c6.RcIconButton-root.focus-visible,
+.c6.RcIconButton-root[data-focus-visible-added] {
+  background-color: transparent;
+}
+
+.c6.RcIconButton-root.focus-visible:active .c7,
+.c6.RcIconButton-root[data-focus-visible-added]:active .c7 {
+  color: rgba(255,255,255,0.88);
+}
+
+.c6.RcIconButton-root.focus-visible:after,
+.c6.RcIconButton-root[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.c6.RcIconButton-persistBg {
+  background-color: rgba(255,255,255,0.12);
+}
+
+.c6.RcIconButton-disabled .c7 {
+  color: #B9B9B9;
+}
+
+.c6.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c6.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c6.RcIconButton-contained {
+  color: rgba(0,0,0,0.87);
+  background-color: #FFFFFF;
+}
+
+.c6.RcIconButton-contained:active {
+  background-color: rgb(229,229,229);
+}
+
+.c6.RcIconButton-contained:active .c7 {
+  color: rgba(0,0,0,0.87);
+}
+
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgb(229,229,229);
+}
+
+.c6.RcIconButton-contained.focus-visible:active .c7,
+.c6.RcIconButton-contained[data-focus-visible-added]:active .c7 {
+  color: rgba(0,0,0,0.87);
+}
+
+.c6 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c22.RcIconButton-root {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #666666;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.c22.RcIconButton-root .c7 {
+  font-size: 40px;
+}
+
+.c22.RcIconButton-root:active .c7 {
+  color: #666666;
+}
+
+.c22.RcIconButton-root.focus-visible,
+.c22.RcIconButton-root[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c22.RcIconButton-root.focus-visible:active .c7,
+.c22.RcIconButton-root[data-focus-visible-added]:active .c7 {
+  color: rgba(102,102,102,0.88);
+}
+
+.c22.RcIconButton-persistBg {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c22.RcIconButton-disabled .c7 {
+  color: #B9B9B9;
+}
+
+.c22.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c22.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c22.RcIconButton-contained {
+  color: #fff;
+  background-color: #666666;
+}
+
+.c22.RcIconButton-contained:active {
+  background-color: rgb(91,91,91);
+}
+
+.c22.RcIconButton-contained:active .c7 {
+  color: #fff;
+}
+
+.c22.RcIconButton-contained.focus-visible,
+.c22.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgb(91,91,91);
+}
+
+.c22.RcIconButton-contained.focus-visible:active .c7,
+.c22.RcIconButton-contained[data-focus-visible-added]:active .c7 {
+  color: #fff;
+}
+
+.c22 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c25.RcIconButton-root {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  color: #3C9949;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  box-shadow: none;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+}
+
+.c25.RcIconButton-root:active {
+  box-shadow: none;
+}
+
+.c25.RcIconButton-root .c7 {
+  font-size: 32px;
+}
+
+.c25.RcIconButton-root:active .c7 {
+  color: #3C9949;
+}
+
+.c25.RcIconButton-root.focus-visible,
+.c25.RcIconButton-root[data-focus-visible-added] {
+  background-color: rgba(60,153,73,0.16);
+}
+
+.c25.RcIconButton-root.focus-visible:active .c7,
+.c25.RcIconButton-root[data-focus-visible-added]:active .c7 {
+  color: rgba(60,153,73,0.88);
+}
+
+.c25.RcIconButton-persistBg {
+  background-color: rgba(60,153,73,0.12);
+}
+
+.c25.RcIconButton-disabled .c7 {
+  color: #B9B9B9;
+}
+
+.c25.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c25.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c25.RcIconButton-contained {
+  color: #fff;
+  background-color: #3C9949;
+}
+
+.c25.RcIconButton-contained:active {
+  background-color: rgb(54,137,65);
+}
+
+.c25.RcIconButton-contained:active .c7 {
+  color: #fff;
+}
+
+.c25.RcIconButton-contained.focus-visible,
+.c25.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgb(54,137,65);
+}
+
+.c25.RcIconButton-contained.focus-visible:active .c7,
+.c25.RcIconButton-contained[data-focus-visible-added]:active .c7 {
+  color: #fff;
+}
+
+.c25 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c26.RcIconButton-root {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  color: #FFFFFF;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+}
+
+.c26.RcIconButton-root:active {
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
+}
+
+.c26.RcIconButton-root .c7 {
+  font-size: 16px;
+}
+
+.c26.RcIconButton-root:active .c7 {
+  color: #FFFFFF;
+}
+
+.c26.RcIconButton-root.focus-visible,
+.c26.RcIconButton-root[data-focus-visible-added] {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c26.RcIconButton-root.focus-visible:active .c7,
+.c26.RcIconButton-root[data-focus-visible-added]:active .c7 {
+  color: rgba(255,255,255,0.88);
+}
+
+.c26.RcIconButton-persistBg {
+  background-color: rgba(255,255,255,0.12);
+}
+
+.c26.RcIconButton-disabled .c7 {
+  color: #B9B9B9;
+}
+
+.c26.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c26.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c26.RcIconButton-contained {
+  color: rgba(0,0,0,0.87);
+  background-color: #FFFFFF;
+}
+
+.c26.RcIconButton-contained:active {
+  background-color: rgb(229,229,229);
+}
+
+.c26.RcIconButton-contained:active .c7 {
+  color: rgba(0,0,0,0.87);
+}
+
+.c26.RcIconButton-contained.focus-visible,
+.c26.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgb(229,229,229);
+}
+
+.c26.RcIconButton-contained.focus-visible:active .c7,
+.c26.RcIconButton-contained[data-focus-visible-added]:active .c7 {
+  color: rgba(0,0,0,0.87);
+}
+
+.c26 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c21 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c23 {
+  padding-top: 27.59%;
+}
+
+.c23.c23 {
+  width: 27.59%;
+  height: 0;
+}
+
+.c23 .c7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.c23 .c7 svg {
+  height: 100%;
+  width: 100%;
+}
+
+.c23 .c7 svg path:first-child {
+  fill: #121212;
+}
+
+.c23 .c7 svg path:nth-child(2) {
+  fill: #666666;
+}
+
+.c20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c11 .c5 {
+  margin-left: 12px;
+}
+
+.c11 .RcTextFieldInputLabel-root {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c11 .RcTextFieldInputLabel-focused {
+  color: #066FAC;
+}
+
+.c11 .RcTextFieldInput-root {
+  color: #121212;
+}
+
+.c11 .RcTextFieldInput-root .sc-carFqZ {
+  display: none;
+}
+
+.c11 .RcTextFieldInput-input {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  text-align: center;
+}
+
+.c11 .RcTextFieldInput-input::-webkit-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c11 .RcTextFieldInput-input::-moz-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c11 .RcTextFieldInput-input:-ms-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c11 .RcTextFieldInput-input::placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c11 .RcTextFieldInput-underline:before {
+  border-bottom-color: #939393;
+}
+
+.c11 .RcTextFieldInput-underline:after {
+  border-bottom-color: #066FAC;
+}
+
+.c11 .RcTextFieldInput-error:after {
+  border-bottom-color: #BE3933;
+}
+
+.c11 .RcTextFieldInput-disabled {
+  color: #B9B9B9;
+  -webkit-text-fill-color: #B9B9B9;
+}
+
+.c11 .RcTextFieldInput-disabled::-webkit-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c11 .RcTextFieldInput-disabled::-moz-placeholder {
+  color: #B9B9B9;
+}
+
+.c11 .RcTextFieldInput-disabled:-ms-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c11 .RcTextFieldInput-disabled::placeholder {
+  color: #B9B9B9;
+}
+
+.c11 .RcTextFieldInput-disabled:before {
+  border-bottom-style: solid;
+  border-bottom-color: #B9B9B9;
+}
+
+.c11 .RcTextFieldInput-disabled:after {
+  border-bottom-style: none;
+}
+
+.c11 .RcTextFieldFormHelperText-root {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c11 .RcTextFieldFormHelperText-error {
+  color: #BE3933;
+}
+
+.c11 .RcTextFieldFormHelperText-disabled {
+  color: #B9B9B9;
+}
+
+.c11 .RcTextFieldInputLabel-error {
+  color: #BE3933;
+}
+
+.c11 .RcTextFieldInputLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c11 input[type='search']::-ms-clear,
+.c11 input[type='search']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.c11 input[type='search']::-webkit-search-decoration,
+.c11 input[type='search']::-webkit-search-cancel-button,
+.c11 input[type='search']::-webkit-search-results-button,
+.c11 input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+.c16 {
+  width: 168px;
+}
+
+.c16 .c5 {
+  margin-left: 12px;
+}
+
+.c16 .RcTextFieldInputLabel-root {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c16 .RcTextFieldInputLabel-focused {
+  color: #066FAC;
+}
+
+.c16 .RcTextFieldInput-root {
+  color: #121212;
+}
+
+.c16 .RcTextFieldInput-root .sc-carFqZ {
+  display: none;
+}
+
+.c16 .RcTextFieldInput-focused .sc-carFqZ {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c16 .RcTextFieldInput-input {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+}
+
+.c16 .RcTextFieldInput-input::-webkit-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c16 .RcTextFieldInput-input::-moz-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c16 .RcTextFieldInput-input:-ms-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c16 .RcTextFieldInput-input::placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c16 .RcTextFieldInput-underline:before {
+  border-bottom-color: #939393;
+}
+
+.c16 .RcTextFieldInput-underline:after {
+  border-bottom-color: #066FAC;
+}
+
+.c16 .RcTextFieldInput-error:after {
+  border-bottom-color: #BE3933;
+}
+
+.c16 .RcTextFieldInput-disabled {
+  color: #B9B9B9;
+  -webkit-text-fill-color: #B9B9B9;
+}
+
+.c16 .RcTextFieldInput-disabled::-webkit-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c16 .RcTextFieldInput-disabled::-moz-placeholder {
+  color: #B9B9B9;
+}
+
+.c16 .RcTextFieldInput-disabled:-ms-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c16 .RcTextFieldInput-disabled::placeholder {
+  color: #B9B9B9;
+}
+
+.c16 .RcTextFieldInput-disabled:before {
+  border-bottom-style: solid;
+  border-bottom-color: #B9B9B9;
+}
+
+.c16 .RcTextFieldInput-disabled:after {
+  border-bottom-style: none;
+}
+
+.c16 .RcTextFieldFormHelperText-root {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c16 .RcTextFieldFormHelperText-error {
+  color: #BE3933;
+}
+
+.c16 .RcTextFieldFormHelperText-disabled {
+  color: #B9B9B9;
+}
+
+.c16 .RcTextFieldInputLabel-error {
+  color: #BE3933;
+}
+
+.c16 .RcTextFieldInputLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c16 input[type='search']::-ms-clear,
+.c16 input[type='search']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.c16 input[type='search']::-webkit-search-decoration,
+.c16 input[type='search']::-webkit-search-cancel-button,
+.c16 input[type='search']::-webkit-search-results-button,
+.c16 input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+.c3 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.c15 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #939393;
+}
+
+.c18 .RcSelect-icon {
+  color: #666666;
+}
+
+.c18 .RcSelectInput-focused .RcSelect-icon {
+  color: #066FAC;
+}
+
+.c18 .RcSelectInput-error .RcSelect-icon {
+  color: #BE3933;
+}
+
+.c18 .RcSelectInputWhenPlaceholder-input {
+  color: #757575;
+}
+
+.c18 .RcSelectInputWhenPlaceholder-input:before {
+  content: 'undefined';
+  border: none;
+}
+
+.c18 .RcSelectInput-disabled {
+  color: #B9B9B9;
+}
+
+.c18 .RcSelectInput-disabled .RcSelect-icon {
+  color: #B9B9B9;
+}
+
+.c18 > .RcBoxSelectInput-root {
+  box-sizing: border-box;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #F3F3F3;
+}
+
+.c18 > .RcBoxSelectInput-root:not(.RcBoxSelectInput-disabled):hover {
+  background-color: rgba(73,73,73,0.12);
+}
+
+.c18 > .RcBoxSelectInput-root:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  -webkit-transition: none;
+  transition: none;
+  border-bottom: none !important;
+  pointer-events: none;
+}
+
+.c18 > .RcBoxSelectInput-root:after {
+  display: none;
+}
+
+.c18 > .RcBoxSelectInput-focused {
+  background-color: rgba(73,73,73,0.16);
+}
+
+.c18 > .RcBoxSelectInput-focused:before {
+  box-shadow: inset 0 0 0 1px #066FAC;
+}
+
+.c18 > .RcBoxSelectInput-error:before {
+  box-shadow: inset 0 0 0 1px #BE3933;
+}
+
+.c18 > .RcBoxSelectInput-disabled {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c18 > .RcBoxSelectInput-disabled:before {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+
+.c18 .RcBoxSelectInput-input {
+  padding: 6px 24px 6px 8px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  line-height: 20px;
+}
+
+.c18 .RcBoxSelectInput-input:focus {
+  background: transparent;
+}
+
+.c4.highlight-term {
+  color: #121212 !important;
+  background-color: #FFDFB1 !important;
+}
+
+.c0 {
+  width: 280px;
+  margin: 20px;
+  overflow: hidden;
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+.c1 {
+  background-color: #066FAC;
+  color: #FFFFFF;
+  padding: 0px 16px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 36px;
+}
+
+.c13 {
+  position: relative;
+  padding: 0px 24px 24px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4px 0px 12px;
+}
+
+.c10 .c12 {
+  margin: 0px 12px;
+  position: relative;
+}
+
+.c10 .c12 input {
+  color: #FFFFFF;
+  caret-color: #FFFFFF;
+}
+
+.c10 .c12 input::-webkit-input-placeholder {
+  color: rgba(255,255,255,0.88);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.c10 .c12 input::-moz-placeholder {
+  color: rgba(255,255,255,0.88);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.c10 .c12 input:-ms-input-placeholder {
+  color: rgba(255,255,255,0.88);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.c10 .c12 input::placeholder {
+  color: rgba(255,255,255,0.88);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.c10 .c5 {
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.c14 .c17 {
+  width: auto;
+}
+
+.c14 .c17 .custom-select-input-root,
+.c14 .c17 .custom-select-input-root:hover {
+  background-color: transparent;
+}
+
+.c24 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.c24.c24 .c7 {
+  font-size: 28px;
+}
+
+.c27 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 16px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c6.RcIconButton-root:hover {
+    background-color: transparent;
+  }
+
+  .c6.RcIconButton-root:hover .c7 {
+    color: rgba(255,255,255,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c6.RcIconButton-contained:hover {
+    background-color: rgb(229,229,229);
+  }
+
+  .c6.RcIconButton-contained:hover .c7 {
+    color: rgba(0,0,0,0.87);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c22.RcIconButton-root:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
+
+  .c22.RcIconButton-root:hover .c7 {
+    color: rgba(102,102,102,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c22.RcIconButton-contained:hover {
+    background-color: rgb(91,91,91);
+  }
+
+  .c22.RcIconButton-contained:hover .c7 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c25.RcIconButton-root:hover {
+    background-color: rgba(60,153,73,0.08);
+  }
+
+  .c25.RcIconButton-root:hover .c7 {
+    color: rgba(60,153,73,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c25.RcIconButton-contained:hover {
+    background-color: rgb(54,137,65);
+  }
+
+  .c25.RcIconButton-contained:hover .c7 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c26.RcIconButton-root:hover {
+    background-color: rgba(255,255,255,0.08);
+  }
+
+  .c26.RcIconButton-root:hover .c7 {
+    color: rgba(255,255,255,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c26.RcIconButton-contained:hover {
+    background-color: rgb(229,229,229);
+  }
+
+  .c26.RcIconButton-contained:hover .c7 {
+    color: rgba(0,0,0,0.87);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c11 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
+    border-bottom-color: #121212;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c16 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carFqZ {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c16 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
+    border-bottom-color: #121212;
+  }
+}
+
+<div
+  className="c0"
+>
+  <header
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <p
+        className="MuiTypography-root c3 c4 MuiTypography-noWrap"
+        data-color="dialHeader.text"
+        data-variant="body1"
+        title="New Call"
+      >
+        New Call
+      </p>
+      <div
+        className="MuiBox-root MuiBox-root-86"
+      />
+      <button
+        className="MuiButtonBase-root c5 c6 RcIconButton-root"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="c7 c8 minimize icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.333 18v-4h21.333v4z"
+            />
+          </svg>
+          
+        </span>
+      </button>
+    </div>
+    <div
+      className="c10"
+    >
+      <div
+        className="MuiFormControl-root MuiTextField-root RcTextField-root c11 c12 MuiFormControl-fullWidth"
+      >
+        <div
+          aria-disabled={false}
+          aria-required={false}
+          className="MuiInputBase-root MuiInput-root RcTextFieldInput-root MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+          onClick={[Function]}
+          onCompositionEnd={[Function]}
+          onCompositionStart={[Function]}
+          onKeyPress={[Function]}
+          onPaste={[Function]}
+        >
+          <div
+            onClick={[Function]}
+          >
+            <input
+              aria-autocomplete="list"
+              aria-expanded={false}
+              aria-haspopup={true}
+              aria-invalid={false}
+              autoComplete="off"
+              autoFocus={false}
+              className="MuiInputBase-input MuiInput-input RcTextFieldInput-input"
+              disabled={false}
+              id="downshift-0-input"
+              maxLength={30}
+              onAnimationStart={[Function]}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              placeholder="Enter a number"
+              required={false}
+              role="combobox"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main
+    className="c13"
+  >
+    <div
+      className="c14"
+    >
+      <p
+        className="MuiTypography-root c15 c4 MuiTypography-noWrap"
+        data-color="neutral.f02"
+        data-variant="caption2"
+        title="Call from:"
+      >
+        Call from:
+      </p>
+      <div
+        className="MuiFormControl-root MuiTextField-root RcTextField-root c16 c17 c18"
+      >
+        <div
+          className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcSelectInput-root RcBoxSelectInput-root custom-select-input-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-formControl MuiInput-formControl"
+          onClick={[Function]}
+        >
+          <div
+            aria-haspopup="listbox"
+            className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input RcTextFieldInput-input RcBoxSelectInput-input"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            (000) 000-0000
+          </div>
+          <input
+            aria-hidden={true}
+            autoFocus={false}
+            className="MuiSelect-nativeInput"
+            disabled={false}
+            onAnimationStart={[Function]}
+            onChange={[Function]}
+            required={false}
+            tabIndex={-1}
+            value={1}
+            variant="standard"
+          />
+          <span
+            className="c7 c19 MuiSvgIcon-root MuiSelect-icon RcSelect-icon arrow-down icon"
+            disabled={false}
+          >
+            <svg
+              className="c9"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.707 20.293l5.586-5.586A.999.999 0 0021.586 13H10.414a1 1 0 00-.707 1.707l5.586 5.586a.999.999 0 001.414 0z"
+              />
+            </svg>
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c20"
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+    >
+      <span
+        className="c21"
+        tabIndex={-1}
+      />
+      <button
+        aria-label="1"
+        className="MuiButtonBase-root c5 c22 c23 RcIconButton-root"
+        data-move-focused-0={0}
+        data-move-focused-0-dial-button="1"
+        data-test-id="1"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="c7 c8 1 icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.498 15.148h1.805V9.025c0-.184.006-.37.018-.558L13.82 9.84c-.039.033-.078.057-.117.072a.308.308 0 01-.269-.019.292.292 0 01-.105-.097l-.328-.483L15.498 7h.85v8.148h1.653V16h-4.502v-.852z"
+            />
+          </svg>
+          
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        aria-label="2,A B C"
+        className="MuiButtonBase-root c5 c22 c23 RcIconButton-root"
+        data-move-focused-0={1}
+        data-move-focused-0-dial-button="2"
+        data-test-id="2"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="c7 c8 2 icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.119 7c.381 0 .736.056 1.067.168s.616.274.857.488c.241.213.43.473.568.779s.207.654.207 1.043c0 .331-.05.638-.151.919s-.236.552-.408.811a6.033 6.033 0 01-.593.752c-.149.162-.305.325-.466.491l-2.613 2.648c.167-.046.337-.082.508-.109s.337-.04.496-.04h3.013c.121 0 .218.035.289.106s.107.162.107.273V16h-6v-.379a.647.647 0 01.201-.472l2.881-2.863c.238-.24.456-.471.653-.693s.365-.444.505-.668c.14-.224.248-.45.323-.68s.113-.475.113-.736-.042-.49-.126-.686a1.35 1.35 0 00-.86-.777 2.039 2.039 0 00-.634-.096c-.226 0-.435.033-.628.099a1.687 1.687 0 00-.888.695 1.62 1.62 0 00-.217.534c-.033.12-.084.207-.151.261s-.155.081-.264.081l-.066-.003a1.577 1.577 0 01-.078-.009l-.584-.099c.059-.406.172-.765.339-1.078s.38-.575.637-.786c.257-.211.552-.372.885-.481s.691-.165 1.076-.165z"
+              fill="var(--color11, #000)"
+            />
+            <path
+              d="M14.357 24h-.375c-.043 0-.078-.011-.105-.032s-.047-.049-.06-.082l-.335-.865h-1.607l-.335.865c-.012.03-.032.057-.06.08s-.063.035-.105.035H11l1.433-3.582h.492l1.433 3.582zm-2.347-1.33h1.338l-.563-1.457a2.72 2.72 0 01-.107-.337l-.054.189-.051.151-.563 1.455zm2.8 1.33v-3.582h1.143c.22 0 .41.022.569.065s.29.105.392.185c.102.08.178.178.227.294s.074.246.074.391c0 .088-.014.173-.041.255s-.069.157-.125.227c-.056.07-.126.133-.21.188s-.183.1-.296.135c.262.052.459.146.593.282s.2.317.2.54c0 .152-.028.29-.084.415s-.137.233-.245.323c-.108.09-.239.16-.395.209s-.334.074-.534.074H14.81zm.485-1.633v1.247h.775c.138 0 .257-.016.356-.047s.181-.076.245-.134c.064-.058.111-.126.141-.205s.045-.166.045-.261c0-.185-.065-.331-.196-.439s-.329-.161-.594-.161h-.773zm0-.344h.64c.137 0 .255-.015.355-.045s.183-.072.249-.125c.066-.053.115-.118.146-.194s.047-.159.047-.249c0-.21-.063-.364-.19-.462s-.323-.148-.59-.148h-.658v1.223zm5.275 1.237c.027 0 .051.011.073.032l.19.207c-.147.17-.325.302-.534.398s-.461.142-.756.142c-.258 0-.492-.045-.703-.134s-.389-.214-.538-.375c-.148-.161-.263-.354-.345-.579s-.122-.473-.122-.742c0-.27.044-.517.131-.742s.21-.418.369-.58c.158-.162.348-.287.569-.376s.465-.134.731-.134c.263 0 .49.041.681.122s.36.192.509.332l-.157.223c-.012.017-.025.03-.04.041s-.037.016-.065.016a.125.125 0 01-.069-.024l-.086-.059c-.033-.023-.073-.048-.117-.075s-.098-.052-.16-.075a1.373 1.373 0 00-.497-.083c-.192 0-.367.033-.526.099a1.19 1.19 0 00-.68.726 1.7 1.7 0 00-.096.587c0 .223.032.422.096.598s.152.323.262.444c.111.121.242.213.394.276s.315.095.49.095c.107 0 .203-.006.288-.019s.164-.032.236-.059c.073-.027.14-.06.203-.101l.094-.067.095-.079c.028-.025.056-.038.082-.038z"
+              fill="var(--color77, #9e9e9e)"
+            />
+          </svg>
+          
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        aria-label="3,D E F"
+        className="MuiButtonBase-root c5 c22 c23 RcIconButton-root"
+        data-move-focused-0={2}
+        data-move-focused-0-dial-button="3"
+        data-test-id="3"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="c7 c8 3 icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.193 7c.378 0 .728.053 1.048.16s.596.258.826.455c.231.197.411.434.54.713s.193.588.193.928c0 .278-.036.527-.109.746a1.802 1.802 0 01-.802.998 2.721 2.721 0 01-.642.276c.582.152 1.02.405 1.313.762s.44.803.44 1.339c0 .405-.078.77-.234 1.094s-.369.599-.639.826c-.27.227-.585.401-.945.522s-.745.181-1.157.181c-.474 0-.879-.058-1.216-.175s-.622-.277-.854-.482c-.233-.205-.424-.447-.574-.728s-.277-.585-.38-.912l.474-.197a.666.666 0 01.262-.055c.083 0 .157.017.221.052a.31.31 0 01.108.096l.051.093.037.085c.058.119.129.253.212.402s.195.29.337.421c.141.131.317.242.527.332s.471.135.783.135c.312 0 .585-.05.82-.15s.43-.23.586-.39a1.637 1.637 0 00.471-1.118c0-.238-.032-.455-.097-.651s-.181-.367-.349-.51c-.168-.143-.401-.256-.699-.338s-.679-.123-1.145-.123v-.793c.378-.004.702-.045.97-.123s.488-.184.658-.319c.17-.135.294-.297.371-.485s.115-.397.115-.627c0-.254-.041-.475-.122-.663s-.192-.344-.334-.467c-.141-.123-.309-.215-.502-.276s-.402-.092-.627-.092c-.225 0-.432.033-.624.098s-.361.157-.508.273c-.148.117-.271.256-.371.418s-.175.337-.225.525c-.033.119-.083.205-.15.258s-.152.08-.256.08l-.066-.003a1.577 1.577 0 01-.078-.009l-.58-.098c.058-.401.17-.757.337-1.066s.377-.568.633-.777c.256-.209.549-.368.879-.476s.687-.163 1.07-.163z"
+              fill="var(--color11, #000)"
+            />
+            <path
+              d="M14.54 22.21c0 .268-.043.512-.127.733s-.205.408-.36.565c-.155.157-.341.278-.557.364s-.457.129-.72.129h-1.34v-3.582h1.34c.263 0 .503.043.72.129a1.587 1.587 0 01.917.931c.085.22.127.464.127.733zm-.497 0c0-.22-.03-.417-.09-.59s-.145-.32-.255-.44c-.11-.12-.243-.212-.4-.275s-.331-.095-.523-.095h-.852v2.797h.852c.192 0 .366-.032.523-.095s.29-.155.4-.274c.11-.119.195-.265.255-.439s.09-.37.09-.59zm3.364-1.792v.395h-1.72v1.19h1.393v.38h-1.393v1.223h1.72v.395H15.2v-3.582h2.207zm2.906 0v.395h-1.72v1.253h1.47v.395h-1.47v1.54h-.488v-3.582h2.207z"
+              fill="var(--color77, #9e9e9e)"
+            />
+          </svg>
+          
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        aria-label="4,G H I"
+        className="MuiButtonBase-root c5 c22 c23 RcIconButton-root"
+        data-move-focused-0={3}
+        data-move-focused-0-dial-button="4"
+        data-test-id="4"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="c7 c8 4 icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.594 7v5.753H19v.641c0 .067-.021.124-.062.17s-.105.069-.191.069h-1.154v2.368h-1.018v-2.368h-4.116c-.086 0-.161-.024-.224-.072s-.103-.108-.12-.179l-.117-.572 4.518-5.809h1.076zm-.966 1.3l-3.377 4.453h3.325V9.041c0-.109.003-.226.01-.352l.015-.192.027-.198z"
+              fill="var(--color11, #000)"
+            />
+            <path
+              d="M13.607 23.648c.097 0 .185-.005.266-.014a1.728 1.728 0 00.432-.107c.064-.026.127-.055.19-.089v-.79h-.555c-.032 0-.057-.009-.076-.027s-.029-.041-.029-.067v-.275h1.1v1.375a1.883 1.883 0 01-.594.291c-.111.032-.23.057-.356.073s-.264.024-.412.024c-.26 0-.498-.045-.715-.134a1.642 1.642 0 01-.926-.954 2.044 2.044 0 01-.131-.742c0-.273.043-.523.129-.747s.208-.418.367-.579c.159-.161.352-.285.578-.374s.479-.133.759-.133c.142 0 .273.01.395.031s.235.051.339.09a1.651 1.651 0 01.537.331l-.137.22c-.028.045-.065.067-.11.067a.181.181 0 01-.088-.027l-.14-.085c-.052-.033-.115-.065-.189-.096a1.545 1.545 0 00-.621-.111c-.202 0-.384.033-.547.099a1.17 1.17 0 00-.683.727 1.74 1.74 0 00-.092.586c0 .227.032.429.096.606s.155.328.271.451c.117.123.255.218.415.282s.337.098.53.098zm4.978.352h-.488v-1.63h-1.93V24h-.488v-3.582h.488v1.598h1.93v-1.598h.488V24zm1.45 0h-.485v-3.582h.485V24z"
+              fill="var(--color77, #9e9e9e)"
+            />
+          </svg>
+          
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        aria-label="5,J K L"
+        className="MuiButtonBase-root c5 c22 c23 RcIconButton-root"
+        data-move-focused-0={4}
+        data-move-focused-0-dial-button="5"
+        data-test-id="5"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="c7 c8 5 icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.711 7.484c0 .157-.053.287-.158.388s-.282.152-.532.152h-2.954l-.433 2.335c.49-.099.943-.149 1.359-.149.49 0 .922.068 1.297.205s.688.325.942.565c.254.24.445.524.574.851s.194.683.194 1.068a2.936 2.936 0 01-.982 2.258c-.304.271-.662.479-1.073.624s-.856.217-1.333.217c-.276 0-.54-.026-.794-.078a4.195 4.195 0 01-1.32-.506 3.542 3.542 0 01-.499-.354l.354-.472a.371.371 0 01.315-.162c.083 0 .181.032.292.096s.246.136.404.214c.158.079.342.15.555.214s.465.096.758.096c.328 0 .624-.05.886-.149s.487-.241.673-.425c.186-.184.329-.405.43-.662s.151-.544.151-.863c0-.277-.043-.528-.128-.752s-.214-.414-.387-.571c-.173-.157-.388-.28-.647-.366s-.56-.13-.906-.13a5.103 5.103 0 00-1.523.236l-.735-.205.761-4.162h4.457v.484z"
+              fill="var(--color11, #000)"
+            />
+            <path
+              d="M13.633 22.762c0 .2-.025.379-.074.538s-.122.292-.217.401c-.096.109-.214.193-.354.251s-.301.087-.482.087c-.162 0-.33-.023-.505-.07l.027-.285c.003-.028.014-.051.031-.069s.044-.026.079-.026c.02 0 .044.003.073.01l.047.012c.05.015.117.023.2.023.11 0 .208-.017.294-.05s.158-.085.217-.155c.059-.07.104-.16.135-.269s.046-.239.046-.389v-2.355h.482v2.345zm1.404-.774h.182c.063 0 .114-.008.151-.024s.073-.043.106-.081l1.193-1.35c.037-.042.072-.071.106-.089s.078-.026.131-.026h.413l-1.365 1.543c-.035.038-.068.071-.099.098s-.064.048-.099.065c.047.015.088.038.123.067s.072.067.11.113l1.425 1.698h-.42c-.032 0-.058-.003-.08-.008s-.04-.012-.056-.02l-.023-.014-.061-.061-1.238-1.422-.051-.051a.238.238 0 00-.127-.057l-.046-.005-.275-.002v1.64h-.482V20.42h.482v1.57zm3.358 1.605h1.55V24H17.91v-3.582h.485v3.175z"
+              fill="var(--color77, #9e9e9e)"
+            />
+          </svg>
+          
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        aria-label="6,M N O"
+        className="MuiButtonBase-root c5 c22 c23 RcIconButton-root"
+        data-move-focused-0={5}
+        data-move-focused-0-dial-button="6"
+        data-test-id="6"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="c7 c8 6 icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.919 7l-3.087 3.907c.211-.145.445-.258.702-.338s.534-.121.832-.121c.356 0 .694.059 1.012.177s.598.29.838.516c.24.226.431.503.571.832s.211.705.211 1.127c0 .41-.075.791-.224 1.143s-.357.658-.624.919-.589.466-.966.615-.791.224-1.242.224c-.447 0-.852-.071-1.214-.214s-.672-.346-.929-.609-.454-.582-.593-.957-.208-.794-.208-1.258c0-.389.087-.803.261-1.242s.449-.911.826-1.416l2.255-3.037c.058-.075.139-.138.242-.189s.222-.078.354-.078h.981zm-1.913 4.292c-.298 0-.567.051-.807.152s-.444.238-.612.41c-.168.172-.296.371-.385.596s-.134.461-.134.705c0 .286.041.547.124.783s.204.439.363.609c.159.17.354.301.584.394s.492.14.786.14c.298 0 .567-.048.807-.143s.446-.228.618-.398.304-.371.398-.603.14-.484.14-.758c0-.29-.046-.552-.137-.786s-.219-.433-.385-.596c-.166-.164-.364-.289-.596-.376s-.487-.13-.764-.13z"
+              fill="var(--color11, #000)"
+            />
+            <path
+              d="M19.94 20.378c.263 0 .504.045.721.135s.404.216.559.379c.155.163.275.356.36.58s.128.47.128.739c0 .268-.043.515-.128.739s-.205.417-.36.579c-.155.162-.341.287-.559.376s-.458.134-.721.134c-.263 0-.503-.045-.72-.134s-.402-.215-.558-.376c-.155-.162-.275-.355-.36-.579s-.128-.47-.128-.739c0-.268.043-.515.128-.739s.205-.418.36-.58c.155-.163.341-.289.558-.379s.457-.135.72-.135zm-9.583.04c.043 0 .077.004.1.012s.046.032.068.07l1.27 2.267.08.198.026-.068.027-.065c.018-.043.039-.085.063-.129l1.213-2.203c.022-.038.044-.062.068-.07s.057-.012.1-.012h.357V24h-.425l.001-2.687.009-.181-1.227 2.24c-.042.075-.1.113-.175.113h-.07c-.075 0-.133-.038-.175-.113l-1.255-2.247.011.128.004.115v2.633h-.425v-3.582h.357zm4.493 0c.043 0 .075.005.096.016s.045.033.071.066l2.075 2.7-.01-.126-.003-.119v-2.538h.425v3.582h-.245c-.038 0-.07-.007-.096-.02s-.051-.036-.076-.067l-2.072-2.697.01.233v2.553H14.6v-3.582h.25zm5.09.379c-.192 0-.366.032-.523.098s-.29.158-.401.279c-.111.121-.196.269-.256.444s-.09.372-.09.593c0 .22.03.417.09.591s.145.322.256.442c.111.121.245.213.401.277s.331.096.523.096c.193 0 .368-.032.525-.096s.29-.157.4-.277c.11-.121.195-.268.255-.442s.09-.371.09-.591c0-.22-.03-.418-.09-.593s-.145-.323-.255-.444c-.11-.121-.243-.214-.4-.279s-.332-.098-.525-.098z"
+              fill="var(--color77, #9e9e9e)"
+            />
+          </svg>
+          
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        aria-label="7,P Q R S"
+        className="MuiButtonBase-root c5 c22 c23 RcIconButton-root"
+        data-move-focused-0={6}
+        data-move-focused-0-dial-button="7"
+        data-test-id="7"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="c7 c8 7 icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 7v.502c0 .142-.015.26-.046.352s-.063.17-.095.232l-3.653 7.518c-.053.109-.127.202-.222.279s-.222.116-.382.116h-.782l3.708-7.424c.053-.105.108-.201.163-.289s.118-.172.188-.251h-4.608c-.07 0-.132-.028-.188-.085S13 7.83 13 7.758v-.76h6z"
+              fill="var(--color11, #000)"
+            />
+            <path
+              d="M10.482 22.66V24H10v-3.582h1.058c.227 0 .424.026.591.079s.306.127.416.224c.11.097.192.213.246.35s.081.289.081.457c0 .167-.029.319-.088.457s-.144.258-.256.358c-.113.1-.252.178-.419.234s-.357.084-.572.084h-.575zm0-.385h.575c.138 0 .26-.018.366-.055s.195-.088.266-.154c.072-.066.126-.145.162-.236s.055-.192.055-.302c0-.228-.07-.407-.211-.535s-.354-.192-.639-.192h-.575v1.475zm5.85-.065c0 .168-.017.328-.051.48s-.084.293-.149.424a1.615 1.615 0 01-.553.633l.92.992h-.4c-.06 0-.113-.008-.16-.025s-.089-.046-.127-.087l-.63-.685a1.96 1.96 0 01-.617.095c-.263 0-.503-.045-.72-.134a1.613 1.613 0 01-.917-.955 2.066 2.066 0 01-.127-.739c0-.268.043-.515.127-.739s.205-.418.36-.58c.155-.163.341-.289.557-.379s.457-.135.72-.135c.263 0 .504.045.721.135s.404.216.559.379c.155.163.275.356.36.58s.128.47.128.739zm-.497 0c0-.22-.03-.418-.09-.593s-.145-.323-.255-.444c-.11-.121-.243-.214-.4-.279s-.332-.098-.525-.098c-.192 0-.366.032-.522.098a1.136 1.136 0 00-.657.723 1.82 1.82 0 00-.09.593c0 .22.03.417.09.591s.145.322.256.442c.111.121.245.213.401.277s.331.096.523.096c.193 0 .368-.032.525-.096s.29-.157.4-.277c.11-.121.195-.268.255-.442s.09-.371.09-.591zm1.692.295V24h-.483v-3.582h1.012c.227 0 .422.023.587.069s.301.112.409.199c.108.087.187.191.239.314s.078.26.078.411c0 .127-.02.245-.06.355s-.098.209-.174.296c-.076.087-.168.162-.277.224s-.233.108-.371.14c.06.035.113.086.16.152L19.692 24h-.43c-.088 0-.153-.034-.195-.102l-.93-1.28c-.028-.04-.059-.069-.093-.086s-.083-.026-.15-.026h-.367zm0-.353h.508c.142 0 .266-.017.374-.051s.198-.082.27-.145c.073-.063.127-.137.164-.224s.055-.183.055-.288c0-.213-.07-.374-.211-.483s-.35-.163-.629-.163h-.53v1.352zm4.523-1.175c-.015.025-.031.044-.047.056s-.038.019-.065.019a.129.129 0 01-.063-.019l-.036-.024a1.223 1.223 0 00-.349-.188.903.903 0 00-.294-.043c-.108 0-.204.015-.288.044s-.153.069-.209.119c-.056.05-.098.109-.126.176s-.043.14-.043.219c0 .1.025.183.074.249s.114.122.195.169c.081.047.172.087.275.121l.315.106c.108.037.212.078.315.124s.194.104.275.174c.081.07.146.156.195.258s.074.227.074.375c0 .157-.027.304-.08.441s-.131.257-.234.359c-.102.102-.228.182-.378.24s-.319.087-.509.087c-.232 0-.443-.042-.634-.126s-.354-.198-.489-.341l.14-.23c.013-.018.03-.034.049-.046s.04-.019.064-.019a.15.15 0 01.077.025l.148.111.064.044c.067.045.149.086.245.124s.213.056.351.056c.115 0 .218-.016.308-.047s.166-.076.229-.134c.063-.058.11-.126.144-.206s.05-.169.05-.267c0-.108-.025-.197-.074-.266s-.114-.127-.194-.174a1.354 1.354 0 00-.274-.119l-.315-.1c-.108-.034-.212-.074-.315-.119s-.194-.103-.274-.175c-.08-.072-.145-.161-.194-.269s-.074-.24-.074-.399a.947.947 0 01.288-.682c.093-.092.209-.165.346-.22s.295-.082.474-.082c.2 0 .383.032.547.095s.309.155.433.275l-.117.23z"
+              fill="var(--color77, #9e9e9e)"
+            />
+          </svg>
+          
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        aria-label="8,T U V"
+        className="MuiButtonBase-root c5 c22 c23 RcIconButton-root"
+        data-move-focused-0={7}
+        data-move-focused-0-dial-button="8"
+        data-test-id="8"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="c7 c8 8 icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 7c.402 0 .768.059 1.099.178s.615.283.851.491a2.162 2.162 0 01.74 1.646c0 .475-.12.884-.36 1.226s-.592.599-1.056.771c.555.156.981.417 1.279.783s.447.832.447 1.398a2.293 2.293 0 01-.836 1.83c-.263.217-.579.384-.947.501s-.774.175-1.217.175c-.443 0-.849-.058-1.217-.175s-.685-.284-.95-.501c-.265-.217-.47-.48-.615-.789s-.217-.656-.217-1.041c0-.565.149-1.031.447-1.398s.725-.628 1.28-.783c-.468-.172-.821-.429-1.059-.771s-.357-.751-.357-1.226a2.159 2.159 0 01.74-1.646c.236-.209.519-.373.848-.491S15.597 7 16.003 7zm0 4.78c-.244 0-.478.032-.702.095s-.421.163-.593.298c-.172.135-.309.31-.41.525s-.152.474-.152.777c0 .246.042.47.127.673s.207.377.366.522c.159.145.354.258.584.338s.49.12.78.12c.29 0 .55-.04.779-.12s.424-.193.584-.338c.159-.145.282-.319.366-.522s.127-.427.127-.673c0-.303-.051-.562-.152-.777s-.238-.39-.41-.525-.37-.234-.593-.298-.458-.095-.702-.095zm0-3.932c-.265 0-.498.039-.699.117s-.369.184-.503.319c-.135.135-.236.293-.304.473s-.102.373-.102.577c0 .201.029.395.087.584s.151.355.28.501c.128.145.295.262.5.35s.452.132.742.132.537-.044.742-.132.372-.205.5-.35.222-.312.279-.501.087-.383.087-.584c0-.205-.034-.397-.102-.577a1.335 1.335 0 00-.807-.792 1.946 1.946 0 00-.699-.117z"
+              fill="var(--color11, #000)"
+            />
+            <path
+              d="M13.875 20.418v.407h-1.158V24h-.485v-3.175H11.07v-.407h2.805zm1.902 3.197c.148 0 .281-.025.398-.075s.215-.12.296-.21c.081-.09.142-.198.185-.323s.064-.262.064-.413v-2.177h.483v2.178c0 .207-.033.398-.099.575s-.16.33-.282.459c-.122.129-.272.23-.449.304s-.375.11-.595.11c-.22 0-.418-.037-.595-.11a1.297 1.297 0 01-.734-.763 1.63 1.63 0 01-.099-.575v-2.178h.482v2.175c0 .15.021.288.064.413s.104.233.185.323.18.16.297.211.25.076.399.076zm1.843-3.197h.387c.043 0 .078.011.105.032s.047.049.06.082l1.012 2.527.033.089.03.096c.019.067.038.136.056.207.015-.072.031-.141.049-.207s.038-.128.061-.185l1.008-2.527c.012-.028.032-.055.06-.079s.063-.036.105-.036h.39l-1.46 3.582h-.438l-1.46-3.582z"
+              fill="var(--color77, #9e9e9e)"
+            />
+          </svg>
+          
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        aria-label="9,W X Y Z"
+        className="MuiButtonBase-root c5 c22 c23 RcIconButton-root"
+        data-move-focused-0={8}
+        data-move-focused-0-dial-button="9"
+        data-test-id="9"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="c7 c8 9 icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.058 7c.443 0 .845.07 1.206.211s.671.337.929.59c.258.253.457.555.597.907s.21.741.21 1.168a3.494 3.494 0 01-.29 1.404c-.095.219-.208.438-.339.655s-.281.442-.448.674l-2.252 3.13c-.056.079-.135.142-.239.189s-.222.071-.355.071h-1.058l2.813-3.547.265-.342c.082-.108.159-.215.232-.323-.237.182-.503.321-.8.416s-.611.143-.942.143c-.348 0-.678-.056-.99-.168s-.586-.276-.823-.494c-.237-.217-.425-.484-.565-.801s-.21-.68-.21-1.09c0-.389.075-.754.226-1.093s.361-.636.632-.888c.271-.253.594-.451.968-.596s.785-.217 1.232-.217zm-.013.925c-.284 0-.543.045-.777.134s-.434.212-.6.37c-.166.157-.294.346-.384.565s-.135.46-.135.72c0 .282.042.533.126.755s.204.409.361.562c.157.153.348.269.574.348s.479.118.758.118c.31 0 .584-.049.823-.146s.44-.227.603-.388c.163-.162.288-.348.374-.559s.129-.431.129-.658c0-.277-.046-.529-.139-.755s-.22-.417-.384-.575c-.163-.157-.358-.278-.584-.363s-.474-.127-.745-.127z"
+              fill="var(--color11, #000)"
+            />
+            <path
+              d="M8.8 20.418h.402c.043 0 .079.011.107.032s.047.049.057.082l.74 2.49.019.07.048.238.054-.239.864-2.558c.01-.028.03-.055.059-.079s.065-.036.106-.036h.14c.043 0 .079.011.106.032s.047.049.059.082l.838 2.49c.03.087.057.186.08.297l.042-.23.761-2.558a.167.167 0 01.162-.115h.377l-1.117 3.582h-.435l-.908-2.733a1.618 1.618 0 01-.05-.18l-.035.14-.925 2.772h-.435l-1.117-3.582zm6.327 1.742l-1.182-1.742h.482c.035 0 .061.006.078.017s.032.028.045.05l.935 1.435a.67.67 0 01.053-.115l.883-1.31c.015-.023.031-.042.049-.056s.039-.021.064-.021h.462l-1.188 1.72 1.227 1.863h-.48c-.037 0-.065-.01-.086-.029s-.038-.04-.051-.064l-.96-1.503a.6.6 0 01-.045.1l-.935 1.402c-.015.023-.032.045-.051.064s-.046.029-.081.029h-.45l1.232-1.84zm3.763.415V24h-.483v-1.425l-1.313-2.157h.425c.043 0 .078.011.102.032s.047.048.065.08l.82 1.393c.033.058.061.113.084.165l.061.152.06-.155c.022-.052.049-.106.082-.163l.817-1.393c.015-.027.035-.052.061-.076s.06-.036.101-.036h.43l-1.315 2.157zm4.26-2.157v.18c0 .057-.017.11-.052.16l-2.027 2.848h2.045v.395h-2.68v-.19c0-.05.016-.098.047-.142l2.03-2.855H20.53v-.395h2.62z"
+              fill="var(--color77, #9e9e9e)"
+            />
+          </svg>
+          
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        aria-label="*"
+        className="MuiButtonBase-root c5 c22 c23 RcIconButton-root"
+        data-move-focused-0={9}
+        data-move-focused-0-dial-button="*"
+        data-test-id="*"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="c7 c8 asterisk icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.583 20v-2.463a1.93 1.93 0 00-.212-.896c.097.133.207.245.331.336s.265.182.424.274l2.291 1.244.583-.933-2.291-1.257c-.15-.091-.298-.16-.444-.205s-.298-.077-.457-.093a2.09 2.09 0 00.901-.311l2.278-1.244-.583-.933-2.278 1.232c-.15.091-.285.182-.404.274s-.227.199-.325.323a2.04 2.04 0 00.185-.896v-2.451h-1.166v2.463c0 .166.015.326.046.479s.086.305.166.454a2.224 2.224 0 00-.755-.647l-2.291-1.244-.583.933 2.291 1.257c.159.1.316.172.47.218s.32.077.497.093a2.365 2.365 0 00-.967.299l-2.278 1.244.583.933 2.278-1.232c.291-.166.525-.352.702-.56-.062.133-.104.27-.126.411s-.033.29-.033.448v2.451h1.166z"
+            />
+          </svg>
+          
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        aria-label="0,+"
+        className="MuiButtonBase-root c5 c22 c23 RcIconButton-root"
+        data-move-focused-0={10}
+        data-move-focused-0-dial-button="0"
+        data-test-id="0"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="c7 c8 0 icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 7c.489 0 .948.09 1.376.271s.8.456 1.114.827c.314.371.562.839.744 1.405s.273 1.234.273 2.004c0 .771-.091 1.438-.273 2.001s-.43 1.03-.744 1.399-.685.643-1.114.824-.887.27-1.376.27c-.494 0-.952-.09-1.376-.271s-.793-.455-1.107-.824c-.314-.369-.561-.835-.74-1.399s-.269-1.231-.269-2.001c0-.771.09-1.439.269-2.004s.426-1.034.74-1.405.683-.646 1.107-.827.883-.271 1.376-.271zm0 .928c-.296 0-.581.06-.855.181s-.514.321-.72.599c-.206.279-.371.646-.495 1.103s-.185 1.021-.185 1.694c0 .672.062 1.236.185 1.691s.288.822.495 1.1c.206.279.446.478.72.599s.559.181.855.181c.296 0 .581-.06.855-.181s.515-.321.724-.599c.209-.279.375-.646.498-1.1s.185-1.018.185-1.691c0-.672-.062-1.237-.185-1.694s-.289-.825-.498-1.103c-.209-.279-.45-.478-.724-.599s-.559-.181-.855-.181z"
+              fill="var(--color11, #000)"
+            />
+            <path
+              d="M16.198 20.583v1.471H17.6v.465h-1.402V24h-.503v-1.481H14.3v-.465h1.395v-1.471z"
+              fill="var(--color77, #9e9e9e)"
+            />
+          </svg>
+          
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        aria-label="#"
+        className="MuiButtonBase-root c5 c22 c23 RcIconButton-root"
+        data-move-focused-0={11}
+        data-move-focused-0-dial-button="#"
+        data-test-id="#"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="c7 c8 hash icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.523 11l-.559 2.65h1.645l.559-2.65h.526c.111 0 .203.031.276.094s.11.144.11.245a.367.367 0 01-.007.082l-.486 2.23h1.412l-.087.471c-.022.121-.074.21-.157.267s-.208.085-.376.085h-.919l-.433 2.047h1.192c.107 0 .189.024.246.072s.087.133.087.254l-.008.101-.066.395H17.9L17.341 20h-.54c-.102 0-.189-.036-.26-.107s-.107-.163-.107-.276l.001-.024.007-.047.479-2.202h-1.645l-.473 2.23c-.036.155-.103.265-.203.33s-.214.097-.343.097h-.526l.566-2.657h-.972c-.102 0-.182-.024-.24-.072s-.087-.131-.087-.248l.001-.033.007-.074.059-.396h1.359l.433-2.047h-1.545l.087-.465c.022-.121.073-.211.153-.27s.206-.088.38-.088h1.052l.48-2.248c.027-.126.088-.224.183-.295s.21-.107.343-.107h.533zm.959 3.473h-1.645l-.433 2.047h1.645l.433-2.047z"
+            />
+          </svg>
+          
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <div
+      className="c24"
+    >
+      <button
+        className="MuiButtonBase-root c5 c25 RcIconButton-root RcIconButton-contained"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="c7 c8 phone icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.228 14.296c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 001.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.078c-.004.003.001-.001.009-.015l.076-.093c.226-.238.417-.428.575-.573.171-.156.362-.306.617-.477a3.574 3.574 0 012.169-.483c.803.071 1.484.39 1.965.905.599.566 1.221 1.131 1.865 1.697s1.489 1.28 2.534 2.141c.586.482.976 1.073 1.157 1.757.184.694.125 1.365-.161 1.937-.193.479-.565 1.044-1.117 1.713-.544.659-1.035 1.155-1.456 1.47-.44.363-.947.637-1.516.818a6.01 6.01 0 01-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.989 24.989 0 01-3.475-2.719 36.73 36.73 0 01-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716.735-.115 1.455-.01 2.133.308s1.204.818 1.577 1.5a33.63 33.63 0 001.257 2.265 49.99 49.99 0 001.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 01-1.027.705 1.161 1.161 0 01-.218.137l-.171.083a2.256 2.256 0 01-.223.12 1.99 1.99 0 00-.144.067c.027.132.084.31.182.548z"
+            />
+          </svg>
+          
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <button
+      className="MuiButtonBase-root c5 c26 c27 RcIconButton-root RcIconButton-contained"
+      disabled={false}
+      id="downshift-0-toggle-button"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={-1}
+      type="button"
+    >
+      <span
+        className="c7 c8 time_border icon"
+      >
+        <svg
+          className="c9"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zM9 17a1 1 0 010-2h6V7a1 1 0 012 0v9a1 1 0 01-.883.993L16 17H9z"
+          />
+        </svg>
+        
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+  </main>
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
+.c10 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c7.RcIconButton-root {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  color: #666666;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+}
+
+.c7.RcIconButton-root .c8 {
+  font-size: 12px;
+}
+
+.c7.RcIconButton-root:active .c8 {
+  color: #666666;
+}
+
+.c7.RcIconButton-root.focus-visible,
+.c7.RcIconButton-root[data-focus-visible-added] {
+  background-color: transparent;
+}
+
+.c7.RcIconButton-root.focus-visible:active .c8,
+.c7.RcIconButton-root[data-focus-visible-added]:active .c8 {
+  color: rgba(102,102,102,0.88);
+}
+
+.c7.RcIconButton-root.focus-visible:after,
+.c7.RcIconButton-root[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.c7.RcIconButton-persistBg {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c7.RcIconButton-disabled .c8 {
+  color: #B9B9B9;
+}
+
+.c7.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c7.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c7.RcIconButton-contained {
+  color: #fff;
+  background-color: #666666;
+}
+
+.c7.RcIconButton-contained:active {
+  background-color: rgb(91,91,91);
+}
+
+.c7.RcIconButton-contained:active .c8 {
+  color: #fff;
+}
+
+.c7.RcIconButton-contained.focus-visible,
+.c7.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgb(91,91,91);
+}
+
+.c7.RcIconButton-contained.focus-visible:active .c8,
+.c7.RcIconButton-contained[data-focus-visible-added]:active .c8 {
+  color: #fff;
+}
+
+.c7 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c15.RcIconButton-root {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #666666;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.c15.RcIconButton-root .c8 {
+  font-size: 40px;
+}
+
+.c15.RcIconButton-root:active .c8 {
+  color: #666666;
+}
+
+.c15.RcIconButton-root.focus-visible,
+.c15.RcIconButton-root[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c15.RcIconButton-root.focus-visible:active .c8,
+.c15.RcIconButton-root[data-focus-visible-added]:active .c8 {
+  color: rgba(102,102,102,0.88);
+}
+
+.c15.RcIconButton-persistBg {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c15.RcIconButton-disabled .c8 {
+  color: #B9B9B9;
+}
+
+.c15.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c15.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c15.RcIconButton-contained {
+  color: #fff;
+  background-color: #666666;
+}
+
+.c15.RcIconButton-contained:active {
+  background-color: rgb(91,91,91);
+}
+
+.c15.RcIconButton-contained:active .c8 {
+  color: #fff;
+}
+
+.c15.RcIconButton-contained.focus-visible,
+.c15.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgb(91,91,91);
+}
+
+.c15.RcIconButton-contained.focus-visible:active .c8,
+.c15.RcIconButton-contained[data-focus-visible-added]:active .c8 {
+  color: #fff;
+}
+
+.c15 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c14 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c16 {
+  padding-top: 27.59%;
+}
+
+.c16.c16 {
+  width: 27.59%;
+  height: 0;
+}
+
+.c16 .c8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.c16 .c8 svg {
+  height: 100%;
+  width: 100%;
+}
+
+.c16 .c8 svg path:first-child {
+  fill: #121212;
+}
+
+.c16 .c8 svg path:nth-child(2) {
+  fill: #666666;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c11 .c6 {
+  margin-left: 12px;
+}
+
+.c11 .RcTextFieldInputLabel-root {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c11 .RcTextFieldInputLabel-focused {
+  color: #066FAC;
+}
+
+.c11 .RcTextFieldInput-root {
+  color: #121212;
+}
+
+.c11 .RcTextFieldInput-root .sc-carFqZ {
+  display: none;
+}
+
+.c11 .RcTextFieldInput-input {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  text-align: center;
+}
+
+.c11 .RcTextFieldInput-input::-webkit-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c11 .RcTextFieldInput-input::-moz-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c11 .RcTextFieldInput-input:-ms-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c11 .RcTextFieldInput-input::placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c11 .RcTextFieldInput-underline:before {
+  border-bottom-color: #939393;
+}
+
+.c11 .RcTextFieldInput-underline:after {
+  border-bottom-color: #066FAC;
+}
+
+.c11 .RcTextFieldInput-error:after {
+  border-bottom-color: #BE3933;
+}
+
+.c11 .RcTextFieldInput-disabled {
+  color: #B9B9B9;
+  -webkit-text-fill-color: #B9B9B9;
+}
+
+.c11 .RcTextFieldInput-disabled::-webkit-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c11 .RcTextFieldInput-disabled::-moz-placeholder {
+  color: #B9B9B9;
+}
+
+.c11 .RcTextFieldInput-disabled:-ms-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c11 .RcTextFieldInput-disabled::placeholder {
+  color: #B9B9B9;
+}
+
+.c11 .RcTextFieldInput-disabled:before {
+  border-bottom-style: solid;
+  border-bottom-color: #B9B9B9;
+}
+
+.c11 .RcTextFieldInput-disabled:after {
+  border-bottom-style: none;
+}
+
+.c11 .RcTextFieldFormHelperText-root {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c11 .RcTextFieldFormHelperText-error {
+  color: #BE3933;
+}
+
+.c11 .RcTextFieldFormHelperText-disabled {
+  color: #B9B9B9;
+}
+
+.c11 .RcTextFieldInputLabel-error {
+  color: #BE3933;
+}
+
+.c11 .RcTextFieldInputLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c11 input[type='search']::-ms-clear,
+.c11 input[type='search']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.c11 input[type='search']::-webkit-search-decoration,
+.c11 input[type='search']::-webkit-search-cancel-button,
+.c11 input[type='search']::-webkit-search-results-button,
+.c11 input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+  border: 1px solid #C7C7C7;
+}
+
+.c1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(73,73,73,0.8);
+}
+
+.c2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+
+.c2 .c3 {
+  border-radius: 0px;
+}
+
+.c2 .c12 input {
+  margin: 0px 16px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 28px;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7.RcIconButton-root:hover {
+    background-color: transparent;
+  }
+
+  .c7.RcIconButton-root:hover .c8 {
+    color: rgba(102,102,102,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7.RcIconButton-contained:hover {
+    background-color: rgb(91,91,91);
+  }
+
+  .c7.RcIconButton-contained:hover .c8 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c15.RcIconButton-root:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
+
+  .c15.RcIconButton-root:hover .c8 {
+    color: rgba(102,102,102,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c15.RcIconButton-contained:hover {
+    background-color: rgb(91,91,91);
+  }
+
+  .c15.RcIconButton-contained:hover .c8 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c11 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
+    border-bottom-color: #121212;
+  }
+}
+
+<div
+  className="MuiBox-root MuiBox-root-87"
+>
+  <div
+    className="c0"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="c1"
+      onClick={[Function]}
+      style={
+        Object {
+          "opacity": 0,
+          "visibility": "hidden",
+        }
+      }
+    />
+    <div
+      className="MuiCollapse-container c2"
+      style={
+        Object {
+          "minHeight": "28px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner"
+        >
+          <div
+            className="MuiPaper-root c3 MuiPaper-elevation16 MuiPaper-rounded"
+          >
+            <div
+              className="c4"
+              open={false}
+            >
+              <div
+                aria-describedby={null}
+                className="c5"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
+                onTouchEnd={[Function]}
+                onTouchStart={[Function]}
+                title="Open"
+              >
+                <button
+                  className="MuiButtonBase-root c6 c7 RcIconButton-root"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onDragLeave={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex={0}
+                  type="button"
+                >
+                  <span
+                    className="c8 c9 keypad icon"
+                  >
+                    <svg
+                      className="c10"
+                      viewBox="0 0 32 32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7 22a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6zM7 13a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6zM7 4a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6z"
+                      />
+                    </svg>
+                    
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div
+              className="MuiFormControl-root MuiTextField-root RcTextField-root c11 c12 MuiFormControl-fullWidth"
+            >
+              <div
+                className="MuiInputBase-root MuiInput-root RcTextFieldInput-root MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+                onClick={[Function]}
+                onKeyPress={[Function]}
+              >
+                <input
+                  aria-invalid={false}
+                  autoComplete="off"
+                  autoFocus={false}
+                  className="MuiInputBase-input MuiInput-input RcTextFieldInput-input"
+                  disabled={false}
+                  onAnimationStart={[Function]}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  placeholder="Enter a number"
+                  required={false}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="c13"
+            >
+              <span
+                className="c14"
+                tabIndex={-1}
+              />
+              <button
+                aria-label="1"
+                className="MuiButtonBase-root c6 c15 c16 RcIconButton-root"
+                data-move-focused-0={0}
+                data-move-focused-0-dial-button="1"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="c8 c9 1 icon"
+                >
+                  <svg
+                    className="c10"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.498 15.148h1.805V9.025c0-.184.006-.37.018-.558L13.82 9.84c-.039.033-.078.057-.117.072a.308.308 0 01-.269-.019.292.292 0 01-.105-.097l-.328-.483L15.498 7h.85v8.148h1.653V16h-4.502v-.852z"
+                    />
+                  </svg>
+                  
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-label="2,A B C"
+                className="MuiButtonBase-root c6 c15 c16 RcIconButton-root"
+                data-move-focused-0={1}
+                data-move-focused-0-dial-button="2"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={-1}
+                type="button"
+              >
+                <span
+                  className="c8 c9 2 icon"
+                >
+                  <svg
+                    className="c10"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.119 7c.381 0 .736.056 1.067.168s.616.274.857.488c.241.213.43.473.568.779s.207.654.207 1.043c0 .331-.05.638-.151.919s-.236.552-.408.811a6.033 6.033 0 01-.593.752c-.149.162-.305.325-.466.491l-2.613 2.648c.167-.046.337-.082.508-.109s.337-.04.496-.04h3.013c.121 0 .218.035.289.106s.107.162.107.273V16h-6v-.379a.647.647 0 01.201-.472l2.881-2.863c.238-.24.456-.471.653-.693s.365-.444.505-.668c.14-.224.248-.45.323-.68s.113-.475.113-.736-.042-.49-.126-.686a1.35 1.35 0 00-.86-.777 2.039 2.039 0 00-.634-.096c-.226 0-.435.033-.628.099a1.687 1.687 0 00-.888.695 1.62 1.62 0 00-.217.534c-.033.12-.084.207-.151.261s-.155.081-.264.081l-.066-.003a1.577 1.577 0 01-.078-.009l-.584-.099c.059-.406.172-.765.339-1.078s.38-.575.637-.786c.257-.211.552-.372.885-.481s.691-.165 1.076-.165z"
+                      fill="var(--color11, #000)"
+                    />
+                    <path
+                      d="M14.357 24h-.375c-.043 0-.078-.011-.105-.032s-.047-.049-.06-.082l-.335-.865h-1.607l-.335.865c-.012.03-.032.057-.06.08s-.063.035-.105.035H11l1.433-3.582h.492l1.433 3.582zm-2.347-1.33h1.338l-.563-1.457a2.72 2.72 0 01-.107-.337l-.054.189-.051.151-.563 1.455zm2.8 1.33v-3.582h1.143c.22 0 .41.022.569.065s.29.105.392.185c.102.08.178.178.227.294s.074.246.074.391c0 .088-.014.173-.041.255s-.069.157-.125.227c-.056.07-.126.133-.21.188s-.183.1-.296.135c.262.052.459.146.593.282s.2.317.2.54c0 .152-.028.29-.084.415s-.137.233-.245.323c-.108.09-.239.16-.395.209s-.334.074-.534.074H14.81zm.485-1.633v1.247h.775c.138 0 .257-.016.356-.047s.181-.076.245-.134c.064-.058.111-.126.141-.205s.045-.166.045-.261c0-.185-.065-.331-.196-.439s-.329-.161-.594-.161h-.773zm0-.344h.64c.137 0 .255-.015.355-.045s.183-.072.249-.125c.066-.053.115-.118.146-.194s.047-.159.047-.249c0-.21-.063-.364-.19-.462s-.323-.148-.59-.148h-.658v1.223zm5.275 1.237c.027 0 .051.011.073.032l.19.207c-.147.17-.325.302-.534.398s-.461.142-.756.142c-.258 0-.492-.045-.703-.134s-.389-.214-.538-.375c-.148-.161-.263-.354-.345-.579s-.122-.473-.122-.742c0-.27.044-.517.131-.742s.21-.418.369-.58c.158-.162.348-.287.569-.376s.465-.134.731-.134c.263 0 .49.041.681.122s.36.192.509.332l-.157.223c-.012.017-.025.03-.04.041s-.037.016-.065.016a.125.125 0 01-.069-.024l-.086-.059c-.033-.023-.073-.048-.117-.075s-.098-.052-.16-.075a1.373 1.373 0 00-.497-.083c-.192 0-.367.033-.526.099a1.19 1.19 0 00-.68.726 1.7 1.7 0 00-.096.587c0 .223.032.422.096.598s.152.323.262.444c.111.121.242.213.394.276s.315.095.49.095c.107 0 .203-.006.288-.019s.164-.032.236-.059c.073-.027.14-.06.203-.101l.094-.067.095-.079c.028-.025.056-.038.082-.038z"
+                      fill="var(--color77, #9e9e9e)"
+                    />
+                  </svg>
+                  
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-label="3,D E F"
+                className="MuiButtonBase-root c6 c15 c16 RcIconButton-root"
+                data-move-focused-0={2}
+                data-move-focused-0-dial-button="3"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={-1}
+                type="button"
+              >
+                <span
+                  className="c8 c9 3 icon"
+                >
+                  <svg
+                    className="c10"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.193 7c.378 0 .728.053 1.048.16s.596.258.826.455c.231.197.411.434.54.713s.193.588.193.928c0 .278-.036.527-.109.746a1.802 1.802 0 01-.802.998 2.721 2.721 0 01-.642.276c.582.152 1.02.405 1.313.762s.44.803.44 1.339c0 .405-.078.77-.234 1.094s-.369.599-.639.826c-.27.227-.585.401-.945.522s-.745.181-1.157.181c-.474 0-.879-.058-1.216-.175s-.622-.277-.854-.482c-.233-.205-.424-.447-.574-.728s-.277-.585-.38-.912l.474-.197a.666.666 0 01.262-.055c.083 0 .157.017.221.052a.31.31 0 01.108.096l.051.093.037.085c.058.119.129.253.212.402s.195.29.337.421c.141.131.317.242.527.332s.471.135.783.135c.312 0 .585-.05.82-.15s.43-.23.586-.39a1.637 1.637 0 00.471-1.118c0-.238-.032-.455-.097-.651s-.181-.367-.349-.51c-.168-.143-.401-.256-.699-.338s-.679-.123-1.145-.123v-.793c.378-.004.702-.045.97-.123s.488-.184.658-.319c.17-.135.294-.297.371-.485s.115-.397.115-.627c0-.254-.041-.475-.122-.663s-.192-.344-.334-.467c-.141-.123-.309-.215-.502-.276s-.402-.092-.627-.092c-.225 0-.432.033-.624.098s-.361.157-.508.273c-.148.117-.271.256-.371.418s-.175.337-.225.525c-.033.119-.083.205-.15.258s-.152.08-.256.08l-.066-.003a1.577 1.577 0 01-.078-.009l-.58-.098c.058-.401.17-.757.337-1.066s.377-.568.633-.777c.256-.209.549-.368.879-.476s.687-.163 1.07-.163z"
+                      fill="var(--color11, #000)"
+                    />
+                    <path
+                      d="M14.54 22.21c0 .268-.043.512-.127.733s-.205.408-.36.565c-.155.157-.341.278-.557.364s-.457.129-.72.129h-1.34v-3.582h1.34c.263 0 .503.043.72.129a1.587 1.587 0 01.917.931c.085.22.127.464.127.733zm-.497 0c0-.22-.03-.417-.09-.59s-.145-.32-.255-.44c-.11-.12-.243-.212-.4-.275s-.331-.095-.523-.095h-.852v2.797h.852c.192 0 .366-.032.523-.095s.29-.155.4-.274c.11-.119.195-.265.255-.439s.09-.37.09-.59zm3.364-1.792v.395h-1.72v1.19h1.393v.38h-1.393v1.223h1.72v.395H15.2v-3.582h2.207zm2.906 0v.395h-1.72v1.253h1.47v.395h-1.47v1.54h-.488v-3.582h2.207z"
+                      fill="var(--color77, #9e9e9e)"
+                    />
+                  </svg>
+                  
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-label="4,G H I"
+                className="MuiButtonBase-root c6 c15 c16 RcIconButton-root"
+                data-move-focused-0={3}
+                data-move-focused-0-dial-button="4"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={-1}
+                type="button"
+              >
+                <span
+                  className="c8 c9 4 icon"
+                >
+                  <svg
+                    className="c10"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.594 7v5.753H19v.641c0 .067-.021.124-.062.17s-.105.069-.191.069h-1.154v2.368h-1.018v-2.368h-4.116c-.086 0-.161-.024-.224-.072s-.103-.108-.12-.179l-.117-.572 4.518-5.809h1.076zm-.966 1.3l-3.377 4.453h3.325V9.041c0-.109.003-.226.01-.352l.015-.192.027-.198z"
+                      fill="var(--color11, #000)"
+                    />
+                    <path
+                      d="M13.607 23.648c.097 0 .185-.005.266-.014a1.728 1.728 0 00.432-.107c.064-.026.127-.055.19-.089v-.79h-.555c-.032 0-.057-.009-.076-.027s-.029-.041-.029-.067v-.275h1.1v1.375a1.883 1.883 0 01-.594.291c-.111.032-.23.057-.356.073s-.264.024-.412.024c-.26 0-.498-.045-.715-.134a1.642 1.642 0 01-.926-.954 2.044 2.044 0 01-.131-.742c0-.273.043-.523.129-.747s.208-.418.367-.579c.159-.161.352-.285.578-.374s.479-.133.759-.133c.142 0 .273.01.395.031s.235.051.339.09a1.651 1.651 0 01.537.331l-.137.22c-.028.045-.065.067-.11.067a.181.181 0 01-.088-.027l-.14-.085c-.052-.033-.115-.065-.189-.096a1.545 1.545 0 00-.621-.111c-.202 0-.384.033-.547.099a1.17 1.17 0 00-.683.727 1.74 1.74 0 00-.092.586c0 .227.032.429.096.606s.155.328.271.451c.117.123.255.218.415.282s.337.098.53.098zm4.978.352h-.488v-1.63h-1.93V24h-.488v-3.582h.488v1.598h1.93v-1.598h.488V24zm1.45 0h-.485v-3.582h.485V24z"
+                      fill="var(--color77, #9e9e9e)"
+                    />
+                  </svg>
+                  
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-label="5,J K L"
+                className="MuiButtonBase-root c6 c15 c16 RcIconButton-root"
+                data-move-focused-0={4}
+                data-move-focused-0-dial-button="5"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={-1}
+                type="button"
+              >
+                <span
+                  className="c8 c9 5 icon"
+                >
+                  <svg
+                    className="c10"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.711 7.484c0 .157-.053.287-.158.388s-.282.152-.532.152h-2.954l-.433 2.335c.49-.099.943-.149 1.359-.149.49 0 .922.068 1.297.205s.688.325.942.565c.254.24.445.524.574.851s.194.683.194 1.068a2.936 2.936 0 01-.982 2.258c-.304.271-.662.479-1.073.624s-.856.217-1.333.217c-.276 0-.54-.026-.794-.078a4.195 4.195 0 01-1.32-.506 3.542 3.542 0 01-.499-.354l.354-.472a.371.371 0 01.315-.162c.083 0 .181.032.292.096s.246.136.404.214c.158.079.342.15.555.214s.465.096.758.096c.328 0 .624-.05.886-.149s.487-.241.673-.425c.186-.184.329-.405.43-.662s.151-.544.151-.863c0-.277-.043-.528-.128-.752s-.214-.414-.387-.571c-.173-.157-.388-.28-.647-.366s-.56-.13-.906-.13a5.103 5.103 0 00-1.523.236l-.735-.205.761-4.162h4.457v.484z"
+                      fill="var(--color11, #000)"
+                    />
+                    <path
+                      d="M13.633 22.762c0 .2-.025.379-.074.538s-.122.292-.217.401c-.096.109-.214.193-.354.251s-.301.087-.482.087c-.162 0-.33-.023-.505-.07l.027-.285c.003-.028.014-.051.031-.069s.044-.026.079-.026c.02 0 .044.003.073.01l.047.012c.05.015.117.023.2.023.11 0 .208-.017.294-.05s.158-.085.217-.155c.059-.07.104-.16.135-.269s.046-.239.046-.389v-2.355h.482v2.345zm1.404-.774h.182c.063 0 .114-.008.151-.024s.073-.043.106-.081l1.193-1.35c.037-.042.072-.071.106-.089s.078-.026.131-.026h.413l-1.365 1.543c-.035.038-.068.071-.099.098s-.064.048-.099.065c.047.015.088.038.123.067s.072.067.11.113l1.425 1.698h-.42c-.032 0-.058-.003-.08-.008s-.04-.012-.056-.02l-.023-.014-.061-.061-1.238-1.422-.051-.051a.238.238 0 00-.127-.057l-.046-.005-.275-.002v1.64h-.482V20.42h.482v1.57zm3.358 1.605h1.55V24H17.91v-3.582h.485v3.175z"
+                      fill="var(--color77, #9e9e9e)"
+                    />
+                  </svg>
+                  
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-label="6,M N O"
+                className="MuiButtonBase-root c6 c15 c16 RcIconButton-root"
+                data-move-focused-0={5}
+                data-move-focused-0-dial-button="6"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={-1}
+                type="button"
+              >
+                <span
+                  className="c8 c9 6 icon"
+                >
+                  <svg
+                    className="c10"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.919 7l-3.087 3.907c.211-.145.445-.258.702-.338s.534-.121.832-.121c.356 0 .694.059 1.012.177s.598.29.838.516c.24.226.431.503.571.832s.211.705.211 1.127c0 .41-.075.791-.224 1.143s-.357.658-.624.919-.589.466-.966.615-.791.224-1.242.224c-.447 0-.852-.071-1.214-.214s-.672-.346-.929-.609-.454-.582-.593-.957-.208-.794-.208-1.258c0-.389.087-.803.261-1.242s.449-.911.826-1.416l2.255-3.037c.058-.075.139-.138.242-.189s.222-.078.354-.078h.981zm-1.913 4.292c-.298 0-.567.051-.807.152s-.444.238-.612.41c-.168.172-.296.371-.385.596s-.134.461-.134.705c0 .286.041.547.124.783s.204.439.363.609c.159.17.354.301.584.394s.492.14.786.14c.298 0 .567-.048.807-.143s.446-.228.618-.398.304-.371.398-.603.14-.484.14-.758c0-.29-.046-.552-.137-.786s-.219-.433-.385-.596c-.166-.164-.364-.289-.596-.376s-.487-.13-.764-.13z"
+                      fill="var(--color11, #000)"
+                    />
+                    <path
+                      d="M19.94 20.378c.263 0 .504.045.721.135s.404.216.559.379c.155.163.275.356.36.58s.128.47.128.739c0 .268-.043.515-.128.739s-.205.417-.36.579c-.155.162-.341.287-.559.376s-.458.134-.721.134c-.263 0-.503-.045-.72-.134s-.402-.215-.558-.376c-.155-.162-.275-.355-.36-.579s-.128-.47-.128-.739c0-.268.043-.515.128-.739s.205-.418.36-.58c.155-.163.341-.289.558-.379s.457-.135.72-.135zm-9.583.04c.043 0 .077.004.1.012s.046.032.068.07l1.27 2.267.08.198.026-.068.027-.065c.018-.043.039-.085.063-.129l1.213-2.203c.022-.038.044-.062.068-.07s.057-.012.1-.012h.357V24h-.425l.001-2.687.009-.181-1.227 2.24c-.042.075-.1.113-.175.113h-.07c-.075 0-.133-.038-.175-.113l-1.255-2.247.011.128.004.115v2.633h-.425v-3.582h.357zm4.493 0c.043 0 .075.005.096.016s.045.033.071.066l2.075 2.7-.01-.126-.003-.119v-2.538h.425v3.582h-.245c-.038 0-.07-.007-.096-.02s-.051-.036-.076-.067l-2.072-2.697.01.233v2.553H14.6v-3.582h.25zm5.09.379c-.192 0-.366.032-.523.098s-.29.158-.401.279c-.111.121-.196.269-.256.444s-.09.372-.09.593c0 .22.03.417.09.591s.145.322.256.442c.111.121.245.213.401.277s.331.096.523.096c.193 0 .368-.032.525-.096s.29-.157.4-.277c.11-.121.195-.268.255-.442s.09-.371.09-.591c0-.22-.03-.418-.09-.593s-.145-.323-.255-.444c-.11-.121-.243-.214-.4-.279s-.332-.098-.525-.098z"
+                      fill="var(--color77, #9e9e9e)"
+                    />
+                  </svg>
+                  
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-label="7,P Q R S"
+                className="MuiButtonBase-root c6 c15 c16 RcIconButton-root"
+                data-move-focused-0={6}
+                data-move-focused-0-dial-button="7"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={-1}
+                type="button"
+              >
+                <span
+                  className="c8 c9 7 icon"
+                >
+                  <svg
+                    className="c10"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19 7v.502c0 .142-.015.26-.046.352s-.063.17-.095.232l-3.653 7.518c-.053.109-.127.202-.222.279s-.222.116-.382.116h-.782l3.708-7.424c.053-.105.108-.201.163-.289s.118-.172.188-.251h-4.608c-.07 0-.132-.028-.188-.085S13 7.83 13 7.758v-.76h6z"
+                      fill="var(--color11, #000)"
+                    />
+                    <path
+                      d="M10.482 22.66V24H10v-3.582h1.058c.227 0 .424.026.591.079s.306.127.416.224c.11.097.192.213.246.35s.081.289.081.457c0 .167-.029.319-.088.457s-.144.258-.256.358c-.113.1-.252.178-.419.234s-.357.084-.572.084h-.575zm0-.385h.575c.138 0 .26-.018.366-.055s.195-.088.266-.154c.072-.066.126-.145.162-.236s.055-.192.055-.302c0-.228-.07-.407-.211-.535s-.354-.192-.639-.192h-.575v1.475zm5.85-.065c0 .168-.017.328-.051.48s-.084.293-.149.424a1.615 1.615 0 01-.553.633l.92.992h-.4c-.06 0-.113-.008-.16-.025s-.089-.046-.127-.087l-.63-.685a1.96 1.96 0 01-.617.095c-.263 0-.503-.045-.72-.134a1.613 1.613 0 01-.917-.955 2.066 2.066 0 01-.127-.739c0-.268.043-.515.127-.739s.205-.418.36-.58c.155-.163.341-.289.557-.379s.457-.135.72-.135c.263 0 .504.045.721.135s.404.216.559.379c.155.163.275.356.36.58s.128.47.128.739zm-.497 0c0-.22-.03-.418-.09-.593s-.145-.323-.255-.444c-.11-.121-.243-.214-.4-.279s-.332-.098-.525-.098c-.192 0-.366.032-.522.098a1.136 1.136 0 00-.657.723 1.82 1.82 0 00-.09.593c0 .22.03.417.09.591s.145.322.256.442c.111.121.245.213.401.277s.331.096.523.096c.193 0 .368-.032.525-.096s.29-.157.4-.277c.11-.121.195-.268.255-.442s.09-.371.09-.591zm1.692.295V24h-.483v-3.582h1.012c.227 0 .422.023.587.069s.301.112.409.199c.108.087.187.191.239.314s.078.26.078.411c0 .127-.02.245-.06.355s-.098.209-.174.296c-.076.087-.168.162-.277.224s-.233.108-.371.14c.06.035.113.086.16.152L19.692 24h-.43c-.088 0-.153-.034-.195-.102l-.93-1.28c-.028-.04-.059-.069-.093-.086s-.083-.026-.15-.026h-.367zm0-.353h.508c.142 0 .266-.017.374-.051s.198-.082.27-.145c.073-.063.127-.137.164-.224s.055-.183.055-.288c0-.213-.07-.374-.211-.483s-.35-.163-.629-.163h-.53v1.352zm4.523-1.175c-.015.025-.031.044-.047.056s-.038.019-.065.019a.129.129 0 01-.063-.019l-.036-.024a1.223 1.223 0 00-.349-.188.903.903 0 00-.294-.043c-.108 0-.204.015-.288.044s-.153.069-.209.119c-.056.05-.098.109-.126.176s-.043.14-.043.219c0 .1.025.183.074.249s.114.122.195.169c.081.047.172.087.275.121l.315.106c.108.037.212.078.315.124s.194.104.275.174c.081.07.146.156.195.258s.074.227.074.375c0 .157-.027.304-.08.441s-.131.257-.234.359c-.102.102-.228.182-.378.24s-.319.087-.509.087c-.232 0-.443-.042-.634-.126s-.354-.198-.489-.341l.14-.23c.013-.018.03-.034.049-.046s.04-.019.064-.019a.15.15 0 01.077.025l.148.111.064.044c.067.045.149.086.245.124s.213.056.351.056c.115 0 .218-.016.308-.047s.166-.076.229-.134c.063-.058.11-.126.144-.206s.05-.169.05-.267c0-.108-.025-.197-.074-.266s-.114-.127-.194-.174a1.354 1.354 0 00-.274-.119l-.315-.1c-.108-.034-.212-.074-.315-.119s-.194-.103-.274-.175c-.08-.072-.145-.161-.194-.269s-.074-.24-.074-.399a.947.947 0 01.288-.682c.093-.092.209-.165.346-.22s.295-.082.474-.082c.2 0 .383.032.547.095s.309.155.433.275l-.117.23z"
+                      fill="var(--color77, #9e9e9e)"
+                    />
+                  </svg>
+                  
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-label="8,T U V"
+                className="MuiButtonBase-root c6 c15 c16 RcIconButton-root"
+                data-move-focused-0={7}
+                data-move-focused-0-dial-button="8"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={-1}
+                type="button"
+              >
+                <span
+                  className="c8 c9 8 icon"
+                >
+                  <svg
+                    className="c10"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 7c.402 0 .768.059 1.099.178s.615.283.851.491a2.162 2.162 0 01.74 1.646c0 .475-.12.884-.36 1.226s-.592.599-1.056.771c.555.156.981.417 1.279.783s.447.832.447 1.398a2.293 2.293 0 01-.836 1.83c-.263.217-.579.384-.947.501s-.774.175-1.217.175c-.443 0-.849-.058-1.217-.175s-.685-.284-.95-.501c-.265-.217-.47-.48-.615-.789s-.217-.656-.217-1.041c0-.565.149-1.031.447-1.398s.725-.628 1.28-.783c-.468-.172-.821-.429-1.059-.771s-.357-.751-.357-1.226a2.159 2.159 0 01.74-1.646c.236-.209.519-.373.848-.491S15.597 7 16.003 7zm0 4.78c-.244 0-.478.032-.702.095s-.421.163-.593.298c-.172.135-.309.31-.41.525s-.152.474-.152.777c0 .246.042.47.127.673s.207.377.366.522c.159.145.354.258.584.338s.49.12.78.12c.29 0 .55-.04.779-.12s.424-.193.584-.338c.159-.145.282-.319.366-.522s.127-.427.127-.673c0-.303-.051-.562-.152-.777s-.238-.39-.41-.525-.37-.234-.593-.298-.458-.095-.702-.095zm0-3.932c-.265 0-.498.039-.699.117s-.369.184-.503.319c-.135.135-.236.293-.304.473s-.102.373-.102.577c0 .201.029.395.087.584s.151.355.28.501c.128.145.295.262.5.35s.452.132.742.132.537-.044.742-.132.372-.205.5-.35.222-.312.279-.501.087-.383.087-.584c0-.205-.034-.397-.102-.577a1.335 1.335 0 00-.807-.792 1.946 1.946 0 00-.699-.117z"
+                      fill="var(--color11, #000)"
+                    />
+                    <path
+                      d="M13.875 20.418v.407h-1.158V24h-.485v-3.175H11.07v-.407h2.805zm1.902 3.197c.148 0 .281-.025.398-.075s.215-.12.296-.21c.081-.09.142-.198.185-.323s.064-.262.064-.413v-2.177h.483v2.178c0 .207-.033.398-.099.575s-.16.33-.282.459c-.122.129-.272.23-.449.304s-.375.11-.595.11c-.22 0-.418-.037-.595-.11a1.297 1.297 0 01-.734-.763 1.63 1.63 0 01-.099-.575v-2.178h.482v2.175c0 .15.021.288.064.413s.104.233.185.323.18.16.297.211.25.076.399.076zm1.843-3.197h.387c.043 0 .078.011.105.032s.047.049.06.082l1.012 2.527.033.089.03.096c.019.067.038.136.056.207.015-.072.031-.141.049-.207s.038-.128.061-.185l1.008-2.527c.012-.028.032-.055.06-.079s.063-.036.105-.036h.39l-1.46 3.582h-.438l-1.46-3.582z"
+                      fill="var(--color77, #9e9e9e)"
+                    />
+                  </svg>
+                  
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-label="9,W X Y Z"
+                className="MuiButtonBase-root c6 c15 c16 RcIconButton-root"
+                data-move-focused-0={8}
+                data-move-focused-0-dial-button="9"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={-1}
+                type="button"
+              >
+                <span
+                  className="c8 c9 9 icon"
+                >
+                  <svg
+                    className="c10"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.058 7c.443 0 .845.07 1.206.211s.671.337.929.59c.258.253.457.555.597.907s.21.741.21 1.168a3.494 3.494 0 01-.29 1.404c-.095.219-.208.438-.339.655s-.281.442-.448.674l-2.252 3.13c-.056.079-.135.142-.239.189s-.222.071-.355.071h-1.058l2.813-3.547.265-.342c.082-.108.159-.215.232-.323-.237.182-.503.321-.8.416s-.611.143-.942.143c-.348 0-.678-.056-.99-.168s-.586-.276-.823-.494c-.237-.217-.425-.484-.565-.801s-.21-.68-.21-1.09c0-.389.075-.754.226-1.093s.361-.636.632-.888c.271-.253.594-.451.968-.596s.785-.217 1.232-.217zm-.013.925c-.284 0-.543.045-.777.134s-.434.212-.6.37c-.166.157-.294.346-.384.565s-.135.46-.135.72c0 .282.042.533.126.755s.204.409.361.562c.157.153.348.269.574.348s.479.118.758.118c.31 0 .584-.049.823-.146s.44-.227.603-.388c.163-.162.288-.348.374-.559s.129-.431.129-.658c0-.277-.046-.529-.139-.755s-.22-.417-.384-.575c-.163-.157-.358-.278-.584-.363s-.474-.127-.745-.127z"
+                      fill="var(--color11, #000)"
+                    />
+                    <path
+                      d="M8.8 20.418h.402c.043 0 .079.011.107.032s.047.049.057.082l.74 2.49.019.07.048.238.054-.239.864-2.558c.01-.028.03-.055.059-.079s.065-.036.106-.036h.14c.043 0 .079.011.106.032s.047.049.059.082l.838 2.49c.03.087.057.186.08.297l.042-.23.761-2.558a.167.167 0 01.162-.115h.377l-1.117 3.582h-.435l-.908-2.733a1.618 1.618 0 01-.05-.18l-.035.14-.925 2.772h-.435l-1.117-3.582zm6.327 1.742l-1.182-1.742h.482c.035 0 .061.006.078.017s.032.028.045.05l.935 1.435a.67.67 0 01.053-.115l.883-1.31c.015-.023.031-.042.049-.056s.039-.021.064-.021h.462l-1.188 1.72 1.227 1.863h-.48c-.037 0-.065-.01-.086-.029s-.038-.04-.051-.064l-.96-1.503a.6.6 0 01-.045.1l-.935 1.402c-.015.023-.032.045-.051.064s-.046.029-.081.029h-.45l1.232-1.84zm3.763.415V24h-.483v-1.425l-1.313-2.157h.425c.043 0 .078.011.102.032s.047.048.065.08l.82 1.393c.033.058.061.113.084.165l.061.152.06-.155c.022-.052.049-.106.082-.163l.817-1.393c.015-.027.035-.052.061-.076s.06-.036.101-.036h.43l-1.315 2.157zm4.26-2.157v.18c0 .057-.017.11-.052.16l-2.027 2.848h2.045v.395h-2.68v-.19c0-.05.016-.098.047-.142l2.03-2.855H20.53v-.395h2.62z"
+                      fill="var(--color77, #9e9e9e)"
+                    />
+                  </svg>
+                  
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-label="*"
+                className="MuiButtonBase-root c6 c15 c16 RcIconButton-root"
+                data-move-focused-0={9}
+                data-move-focused-0-dial-button="*"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={-1}
+                type="button"
+              >
+                <span
+                  className="c8 c9 asterisk icon"
+                >
+                  <svg
+                    className="c10"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.583 20v-2.463a1.93 1.93 0 00-.212-.896c.097.133.207.245.331.336s.265.182.424.274l2.291 1.244.583-.933-2.291-1.257c-.15-.091-.298-.16-.444-.205s-.298-.077-.457-.093a2.09 2.09 0 00.901-.311l2.278-1.244-.583-.933-2.278 1.232c-.15.091-.285.182-.404.274s-.227.199-.325.323a2.04 2.04 0 00.185-.896v-2.451h-1.166v2.463c0 .166.015.326.046.479s.086.305.166.454a2.224 2.224 0 00-.755-.647l-2.291-1.244-.583.933 2.291 1.257c.159.1.316.172.47.218s.32.077.497.093a2.365 2.365 0 00-.967.299l-2.278 1.244.583.933 2.278-1.232c.291-.166.525-.352.702-.56-.062.133-.104.27-.126.411s-.033.29-.033.448v2.451h1.166z"
+                    />
+                  </svg>
+                  
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-label="0,+"
+                className="MuiButtonBase-root c6 c15 c16 RcIconButton-root"
+                data-move-focused-0={10}
+                data-move-focused-0-dial-button="0"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={-1}
+                type="button"
+              >
+                <span
+                  className="c8 c9 0 icon"
+                >
+                  <svg
+                    className="c10"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 7c.489 0 .948.09 1.376.271s.8.456 1.114.827c.314.371.562.839.744 1.405s.273 1.234.273 2.004c0 .771-.091 1.438-.273 2.001s-.43 1.03-.744 1.399-.685.643-1.114.824-.887.27-1.376.27c-.494 0-.952-.09-1.376-.271s-.793-.455-1.107-.824c-.314-.369-.561-.835-.74-1.399s-.269-1.231-.269-2.001c0-.771.09-1.439.269-2.004s.426-1.034.74-1.405.683-.646 1.107-.827.883-.271 1.376-.271zm0 .928c-.296 0-.581.06-.855.181s-.514.321-.72.599c-.206.279-.371.646-.495 1.103s-.185 1.021-.185 1.694c0 .672.062 1.236.185 1.691s.288.822.495 1.1c.206.279.446.478.72.599s.559.181.855.181c.296 0 .581-.06.855-.181s.515-.321.724-.599c.209-.279.375-.646.498-1.1s.185-1.018.185-1.691c0-.672-.062-1.237-.185-1.694s-.289-.825-.498-1.103c-.209-.279-.45-.478-.724-.599s-.559-.181-.855-.181z"
+                      fill="var(--color11, #000)"
+                    />
+                    <path
+                      d="M16.198 20.583v1.471H17.6v.465h-1.402V24h-.503v-1.481H14.3v-.465h1.395v-1.471z"
+                      fill="var(--color77, #9e9e9e)"
+                    />
+                  </svg>
+                  
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-label="#"
+                className="MuiButtonBase-root c6 c15 c16 RcIconButton-root"
+                data-move-focused-0={11}
+                data-move-focused-0-dial-button="#"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={-1}
+                type="button"
+              >
+                <span
+                  className="c8 c9 hash icon"
+                >
+                  <svg
+                    className="c10"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.523 11l-.559 2.65h1.645l.559-2.65h.526c.111 0 .203.031.276.094s.11.144.11.245a.367.367 0 01-.007.082l-.486 2.23h1.412l-.087.471c-.022.121-.074.21-.157.267s-.208.085-.376.085h-.919l-.433 2.047h1.192c.107 0 .189.024.246.072s.087.133.087.254l-.008.101-.066.395H17.9L17.341 20h-.54c-.102 0-.189-.036-.26-.107s-.107-.163-.107-.276l.001-.024.007-.047.479-2.202h-1.645l-.473 2.23c-.036.155-.103.265-.203.33s-.214.097-.343.097h-.526l.566-2.657h-.972c-.102 0-.182-.024-.24-.072s-.087-.131-.087-.248l.001-.033.007-.074.059-.396h1.359l.433-2.047h-1.545l.087-.465c.022-.121.073-.211.153-.27s.206-.088.38-.088h1.052l.48-2.248c.027-.126.088-.224.183-.295s.21-.107.343-.107h.533zm.959 3.473h-1.645l-.433 2.047h1.645l.433-2.047z"
+                    />
+                  </svg>
+                  
+                </span>
+                <span
+                  className="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-88"
+    style={
+      Object {
+        "overflowX": "hidden",
+      }
+    }
+  />
+</div>
+`;

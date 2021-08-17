@@ -1,0 +1,25 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="💅 Style system/Custom Scroll bar" />
+
+# GlobalScrollBarStyle
+
+> `GlobalScrollBarStyle` overwrite browser scroll bar follow by `juno` style.
+
+[Go to this canvas](?path=/story/💅-style-system-utils-globalscrollbarstyle--global-scroll-bar-style-example)
+
+```tsx
+import { RcThemeProvider, RcGlobalScrollBarStyle } from '@ringcentral/juno';
+
+const App = () => {
+  return (
+    <RcThemeProvider>
+      <RcGlobalScrollBarStyle />
+    </RcThemeProvider>
+  );
+};
+```
+
+<Canvas>
+  <Story id="💅-style-system-utils-globalscrollbarstyle--global-scroll-bar-style-example" />
+</Canvas>

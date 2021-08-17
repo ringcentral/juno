@@ -1,0 +1,135 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/useTouchMouseEvent" />
+
+## useTouchMouseEvent
+
+### Interfaces
+
+- [UseTouchMouseEvent](interfaces/usetouchmouseevent.md)
+- [UseTouchMouseEventOptions](interfaces/usetouchmouseeventoptions.md)
+
+### Functions
+
+- [isElmEqualOrContainRef](#const-iselmequalorcontainref)
+- [useTouchMouseEvent](#const-usetouchmouseevent)
+
+## Functions
+
+### `Const` isElmEqualOrContainRef
+
+▸ **isElmEqualOrContainRef**(`elm`: Element | undefined, `elmRef`: RefObject‹HTMLElement›): _undefined | false | true_
+
+**Parameters:**
+
+| Name     | Type                     |
+| -------- | ------------------------ |
+| `elm`    | Element &#124; undefined |
+| `elmRef` | RefObject‹HTMLElement›   |
+
+**Returns:** _undefined | false | true_
+
+---
+
+### `Const` useTouchMouseEvent
+
+▸ **useTouchMouseEvent**‹**T**›(`__namedParameters`: object, `__namedParameters`: object): _object_
+
+Provide a utils for switch trigger touch event or mouse event between different device
+
+- Trigger `touch` event in `touch support` device
+  - onTouchStart
+  - onTouchEnd
+- Trigger `mouse` event in `non touch support` device
+  - onMouseDown
+  - onMouseUp
+
+https://developer.mozilla.org/en-US/docs/Web/API/Touch_events/Supporting_both_TouchEvent_and_MouseEvent
+
+Event order:
+
+- touchstart
+- Zero or more touchmove events, depending on movement of the finger(s)
+- touchend
+- mousemove
+- mousedown
+- mouseup
+- click
+
+**Type parameters:**
+
+▪ **T**
+
+**Parameters:**
+
+▪ **\_\_namedParameters**: _object_
+
+| Name              | Type                            |
+| ----------------- | ------------------------------- |
+| `onMouseDownArg`  | undefined &#124; bivarianceHack |
+| `onMouseUpArg`    | undefined &#124; bivarianceHack |
+| `onTouchEndArg`   | undefined &#124; bivarianceHack |
+| `onTouchStartArg` | undefined &#124; bivarianceHack |
+
+▪`Default value` **\_\_namedParameters**: _object_= {}
+
+| Name               | Type    | Default |
+| ------------------ | ------- | ------- |
+| `isPreventDefault` | boolean | true    |
+
+**Returns:** _object_
+
+- **onMouseDown**: _bivarianceHack_
+
+- **onMouseUp**: _(Anonymous function)_
+
+- **onTouchEnd**: _(Anonymous function)_
+
+- **onTouchStart**: _(Anonymous function)_
+
+## UseTouchMouseEvent
+
+### Properties
+
+- [onMouseDown](#optional-onmousedown)
+- [onMouseUp](#optional-onmouseup)
+- [onTouchEnd](#optional-ontouchend)
+- [onTouchStart](#optional-ontouchstart)
+
+## Properties
+
+### `Optional` onMouseDown
+
+• **onMouseDown**? : _MouseEventHandler‹T›_
+
+---
+
+### `Optional` onMouseUp
+
+• **onMouseUp**? : _MouseEventHandler‹T›_
+
+---
+
+### `Optional` onTouchEnd
+
+• **onTouchEnd**? : _TouchEventHandler‹T›_
+
+---
+
+### `Optional` onTouchStart
+
+• **onTouchStart**? : _TouchEventHandler‹T›_
+
+## UseTouchMouseEventOptions
+
+### Properties
+
+- [isPreventDefault](#optional-ispreventdefault)
+
+## Properties
+
+### `Optional` isPreventDefault
+
+• **isPreventDefault**? : _undefined | false | true_

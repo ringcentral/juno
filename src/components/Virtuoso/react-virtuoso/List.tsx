@@ -1,0 +1,619 @@
+/* eslint-disable no-console */
+import { RefHandle, systemToComponent } from '@virtuoso.dev/react-urx';
+import {
+  compose,
+  connect,
+  distinctUntilChanged,
+  getValue,
+  map,
+  noop,
+  pipe,
+  prop,
+  publish,
+  statefulStream,
+  statefulStreamFromEmitter,
+  Stream,
+  stream,
+  subscribe,
+  system,
+  tup,
+  withLatestFrom,
+} from '@virtuoso.dev/urx';
+import * as React from 'react';
+import { createElement, CSSProperties, FC } from 'react';
+
+import useChangedChildSizes from './hooks/useChangedChildSizes';
+import useIsomorphicLayoutEffect from './hooks/useIsomorphicLayoutEffect';
+import useScrollTop from './hooks/useScrollTop';
+import useSize from './hooks/useSize';
+import useWindowViewportRectRef from './hooks/useWindowViewportRect';
+import {
+  Components,
+  ComputeItemKey,
+  GroupContent,
+  GroupItemContent,
+  ItemContent,
+  ListRootProps,
+} from './interfaces';
+import { listSystem } from './listSystem';
+import { positionStickyCssValue } from './utils/positionStickyCssValue';
+import { useRcPortalWindowContext } from '../../../foundation';
+
+export function identity<T>(value: T) {
+  return value;
+}
+
+const listComponentPropsSystem = system(() => {
+  const itemContent = statefulStream<ItemContent<any> | GroupItemContent<any>>(
+    (index: number) => `Item ${index}`,
+  );
+  const groupContent = statefulStream<GroupContent>(
+    (index: number) => `Group ${index}`,
+  );
+  const components = statefulStream<Components>({});
+  const computeItemKey = statefulStream<ComputeItemKey>(identity);
+  const headerFooterTag = statefulStream('div');
+  const scrollerRef = statefulStream<
+    (ref: HTMLElement | Window | null) => void
+  >(noop);
+
+  const distinctProp = <K extends keyof Components>(
+    propName: K,
+    defaultValue: Components[K] | null | 'div' = null,
+  ) => {
+    return statefulStreamFromEmitter(
+      pipe(
+        components,
+        map((components) => components[propName]),
+        distinctUntilChanged(),
+      ),
+      defaultValue,
+    );
+  };
+
+  return {
+    itemContent,
+    groupContent,
+    components,
+    computeItemKey,
+    headerFooterTag,
+    scrollerRef,
+    FooterComponent: distinctProp('Footer'),
+    HeaderComponent: distinctProp('Header'),
+    TopItemListComponent: distinctProp('TopItemList'),
+    ListComponent: distinctProp('List', 'div'),
+    ItemComponent: distinctProp('Item', 'div'),
+    GroupComponent: distinctProp('Group', 'div'),
+    ScrollerComponent: distinctProp('Scroller', 'div'),
+    EmptyPlaceholder: distinctProp('EmptyPlaceholder'),
+    ScrollSeekPlaceholder: distinctProp('ScrollSeekPlaceholder'),
+  };
+});
+
+export function addDeprecatedAlias<T>(prop: Stream<T>, message: string) {
+  const alias = stream<T>();
+  subscribe(alias, () =>
+    console.warn(
+      `react-virtuoso: You are using a deprecated property. ${message}`,
+      'color: red;',
+      'color: inherit;',
+      'color: blue;',
+    ),
+  );
+  connect(alias, prop);
+  return alias;
+}
+
+const combinedSystem = system(([listSystem, propsSystem]) => {
+  const deprecatedProps = {
+    item: addDeprecatedAlias(
+      propsSystem.itemContent,
+      'Rename the %citem%c prop to %citemContent.',
+    ),
+    group: addDeprecatedAlias(
+      propsSystem.groupContent,
+      'Rename the %cgroup%c prop to %cgroupContent.',
+    ),
+    topItems: addDeprecatedAlias(
+      listSystem.topItemCount,
+      'Rename the %ctopItems%c prop to %ctopItemCount.',
+    ),
+    itemHeight: addDeprecatedAlias(
+      listSystem.fixedItemHeight,
+      'Rename the %citemHeight%c prop to %cfixedItemHeight.',
+    ),
+    scrollingStateChange: addDeprecatedAlias(
+      listSystem.isScrolling,
+      'Rename the %cscrollingStateChange%c prop to %cisScrolling.',
+    ),
+    adjustForPrependedItems: stream<any>(),
+    maxHeightCacheSize: stream<any>(),
+    footer: stream<any>(),
+    header: stream<any>(),
+    HeaderContainer: stream<any>(),
+    FooterContainer: stream<any>(),
+    ItemContainer: stream<any>(),
+    ScrollContainer: stream<any>(),
+    GroupContainer: stream<any>(),
+    ListContainer: stream<any>(),
+    emptyComponent: stream<any>(),
+    scrollSeek: stream<any>(),
+  };
+
+  subscribe(deprecatedProps.adjustForPrependedItems, () => {
+    console.warn(
+      `react-virtuoso: adjustForPrependedItems is no longer supported. Use the firstItemIndex property instead - https://virtuoso.dev/prepend-items.`,
+      'color: red;',
+      'color: inherit;',
+      'color: blue;',
+    );
+  });
+
+  subscribe(deprecatedProps.maxHeightCacheSize, () => {
+    console.warn(
+      `react-virtuoso: maxHeightCacheSize is no longer necessary. Setting it has no effect - remove it from your code.`,
+    );
+  });
+
+  subscribe(deprecatedProps.HeaderContainer, () => {
+    console.warn(
+      `react-virtuoso: HeaderContainer is deprecated. Use headerFooterTag if you want to change the wrapper of the header component and pass components.Header to change its contents.`,
+    );
+  });
+
+  subscribe(deprecatedProps.FooterContainer, () => {
+    console.warn(
+      `react-virtuoso: FooterContainer is deprecated. Use headerFooterTag if you want to change the wrapper of the footer component and pass components.Footer to change its contents.`,
+    );
+  });
+
+  function deprecateComponentProp(
+    stream: Stream<any>,
+    componentName: string,
+    propName: string,
+  ) {
+    connect(
+      pipe(
+        stream,
+        withLatestFrom(propsSystem.components),
+        map(([comp, components]) => {
+          console.warn(
+            `react-virtuoso: ${propName} property is deprecated. Pass components.${componentName} instead.`,
+          );
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+          return { ...components, [componentName]: comp };
+        }),
+      ),
+      propsSystem.components,
+    );
+  }
+
+  subscribe(deprecatedProps.scrollSeek, ({ placeholder, ...config }) => {
+    console.warn(
+      `react-virtuoso: scrollSeek property is deprecated. Pass scrollSeekConfiguration and specify the placeholder in components.ScrollSeekPlaceholder instead.`,
+    );
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    publish(propsSystem.components, {
+      ...getValue(propsSystem.components),
+      ScrollSeekPlaceholder: placeholder,
+    });
+    publish(listSystem.scrollSeekConfiguration, config);
+  });
+
+  deprecateComponentProp(deprecatedProps.footer, 'Footer', 'footer');
+  deprecateComponentProp(deprecatedProps.header, 'Header', 'header');
+  deprecateComponentProp(
+    deprecatedProps.ItemContainer,
+    'Item',
+    'ItemContainer',
+  );
+  deprecateComponentProp(
+    deprecatedProps.ListContainer,
+    'List',
+    'ListContainer',
+  );
+  deprecateComponentProp(
+    deprecatedProps.ScrollContainer,
+    'Scroller',
+    'ScrollContainer',
+  );
+  deprecateComponentProp(
+    deprecatedProps.emptyComponent,
+    'EmptyPlaceholder',
+    'emptyComponent',
+  );
+  deprecateComponentProp(
+    deprecatedProps.GroupContainer,
+    'Group',
+    'GroupContainer',
+  );
+
+  return { ...listSystem, ...propsSystem, ...deprecatedProps };
+}, tup(listSystem, listComponentPropsSystem));
+
+const DefaultScrollSeekPlaceholder = ({ height }: { height: number }) => (
+  <div style={{ height }} />
+);
+
+const GROUP_STYLE = { position: positionStickyCssValue(), zIndex: 1 };
+
+export const Items = React.memo(function VirtuosoItems({
+  showTopList = false,
+}: {
+  showTopList?: boolean;
+}) {
+  const listState = useEmitterValue('listState');
+  const deviation = useEmitterValue('deviation');
+  const sizeRanges = usePublisher('sizeRanges');
+  const itemContent = useEmitterValue('itemContent');
+  const groupContent = useEmitterValue('groupContent');
+  const trackItemSizes = useEmitterValue('trackItemSizes');
+  const itemSize = useEmitterValue('itemSize');
+
+  const ref = useChangedChildSizes(sizeRanges, itemSize, trackItemSizes);
+  const EmptyPlaceholder = useEmitterValue('EmptyPlaceholder');
+  const ScrollSeekPlaceholder =
+    useEmitterValue('ScrollSeekPlaceholder') || DefaultScrollSeekPlaceholder;
+  const ListComponent = useEmitterValue('ListComponent')!;
+  const ItemComponent = useEmitterValue('ItemComponent')!;
+  const GroupComponent = useEmitterValue('GroupComponent')!;
+  const computeItemKey = useEmitterValue('computeItemKey');
+  const isSeeking = useEmitterValue('isSeeking');
+  const hasGroups = useEmitterValue('groupIndices').length > 0;
+  const paddingTopAddition = useEmitterValue('paddingTopAddition');
+  const scrolledToInitialItem = useEmitterValue('scrolledToInitialItem');
+
+  // const calculatedHeight = listState.offsetBottom + listState.bottom
+  const containerStyle: CSSProperties = showTopList
+    ? {}
+    : {
+        boxSizing: 'border-box',
+        paddingTop: listState!.offsetTop + paddingTopAddition,
+        paddingBottom: listState!.offsetBottom,
+        marginTop: deviation,
+        // height: calculatedHeight,
+      };
+
+  if (
+    !showTopList &&
+    listState!.items.length === 0 &&
+    EmptyPlaceholder &&
+    scrolledToInitialItem
+  ) {
+    return createElement(EmptyPlaceholder);
+  }
+
+  return createElement(
+    ListComponent,
+    { ref, style: containerStyle },
+    (showTopList ? listState!.topItems : listState!.items).map((item) => {
+      const index = item.originalIndex!;
+      const key = computeItemKey(index);
+
+      if (isSeeking) {
+        return createElement(ScrollSeekPlaceholder, {
+          key,
+          index: item.index,
+          height: item.size,
+        });
+      }
+
+      if (item.type === 'group') {
+        return createElement(
+          GroupComponent,
+          {
+            key,
+            'data-index': index,
+            'data-known-size': item.size,
+            'data-item-index': item.index,
+            style: GROUP_STYLE,
+          } as any,
+          groupContent(item.index),
+        );
+      }
+      return createElement(
+        ItemComponent,
+        {
+          key,
+          'data-index': index,
+          'data-known-size': item.size,
+          'data-item-index': item.index,
+          'data-item-group-index': item.groupIndex,
+        } as any,
+        hasGroups
+          ? (itemContent as GroupItemContent<any>)(
+              item.index,
+              item.groupIndex!,
+              item.data,
+            )
+          : (itemContent as ItemContent<any>)(item.index, item.data),
+      );
+    }),
+  );
+});
+
+export const scrollerStyle: CSSProperties = {
+  height: '100%',
+  outline: 'none',
+  overflowY: 'auto',
+  position: 'relative',
+  WebkitOverflowScrolling: 'touch',
+};
+
+export const viewportStyle: CSSProperties = {
+  width: '100%',
+  height: '100%',
+  position: 'absolute',
+  top: 0,
+};
+
+const topItemListStyle: CSSProperties = {
+  width: '100%',
+  position: positionStickyCssValue(),
+  top: 0,
+};
+
+const Header: FC = React.memo(function VirtuosoHeader() {
+  const Header = useEmitterValue('HeaderComponent');
+  const headerHeight = usePublisher('headerHeight');
+  const headerFooterTag = useEmitterValue('headerFooterTag');
+  const ref = useSize((el) => headerHeight(el.offsetHeight));
+  return Header
+    ? createElement(headerFooterTag, { ref }, createElement(Header))
+    : null;
+});
+
+const Footer: FC = React.memo(function VirtuosoFooter() {
+  const Footer = useEmitterValue('FooterComponent');
+  const footerHeight = usePublisher('footerHeight');
+  const headerFooterTag = useEmitterValue('headerFooterTag');
+  const ref = useSize((el) => footerHeight(el.offsetHeight));
+  return Footer
+    ? createElement(headerFooterTag, { ref }, createElement(Footer))
+    : null;
+});
+
+export interface Hooks {
+  usePublisher: typeof usePublisher;
+  useEmitterValue: typeof useEmitterValue;
+  useEmitter: typeof useEmitter;
+  window?: Window;
+}
+
+export function buildScroller({
+  usePublisher,
+  useEmitter,
+  useEmitterValue,
+  window: customWindow,
+}: Hooks) {
+  const Scroller: Components['Scroller'] = React.memo(
+    function VirtuosoScroller({ style, children, ...props }) {
+      const scrollTopCallback = usePublisher('scrollTop');
+      const ScrollerComponent = useEmitterValue('ScrollerComponent')!;
+      const smoothScrollTargetReached = usePublisher(
+        'smoothScrollTargetReached',
+      );
+      const scrollerRefCallback = useEmitterValue('scrollerRef');
+
+      const { scrollerRef, scrollByCallback, scrollToCallback } = useScrollTop(
+        scrollTopCallback,
+        smoothScrollTargetReached,
+        ScrollerComponent,
+        scrollerRefCallback,
+        customWindow,
+      );
+
+      useEmitter('scrollTo', scrollToCallback);
+      useEmitter('scrollBy', scrollByCallback);
+      return createElement(
+        ScrollerComponent,
+        {
+          ref: scrollerRef as React.MutableRefObject<HTMLDivElement | null>,
+          style: { ...scrollerStyle, ...style },
+          tabIndex: 0,
+          ...props,
+        },
+        children,
+      );
+    },
+  );
+  return Scroller;
+}
+
+export function buildWindowScroller({
+  usePublisher,
+  useEmitter,
+  useEmitterValue,
+  window: customWindow,
+}: Hooks) {
+  const Scroller: Components['Scroller'] = React.memo(
+    function VirtuosoWindowScroller({ style, children, ...props }) {
+      const scrollTopCallback = usePublisher('windowScrollTop');
+      const ScrollerComponent = useEmitterValue('ScrollerComponent')!;
+      const smoothScrollTargetReached = usePublisher(
+        'smoothScrollTargetReached',
+      );
+      const totalListHeight = useEmitterValue('totalListHeight');
+      const { scrollerRef, scrollByCallback, scrollToCallback } = useScrollTop(
+        scrollTopCallback,
+        smoothScrollTargetReached,
+        ScrollerComponent,
+        undefined,
+        customWindow,
+      );
+
+      useIsomorphicLayoutEffect(() => {
+        scrollerRef.current = window;
+        return () => {
+          scrollerRef.current = null;
+        };
+      }, [scrollerRef]);
+
+      useEmitter('windowScrollTo', scrollToCallback);
+      useEmitter('scrollBy', scrollByCallback);
+      return createElement(
+        ScrollerComponent,
+        {
+          style: {
+            position: 'relative',
+            ...style,
+            ...(totalListHeight !== 0 ? { height: totalListHeight } : {}),
+          },
+          ...props,
+        },
+        children,
+      );
+    },
+  );
+  return Scroller;
+}
+
+const Viewport: FC = ({ children }) => {
+  const viewportHeight = usePublisher('viewportHeight');
+  const viewportRef = useSize(compose(viewportHeight, prop('offsetHeight')));
+
+  return (
+    <div style={viewportStyle} ref={viewportRef}>
+      {children}
+    </div>
+  );
+};
+
+const WindowViewport: FC = ({ children }) => {
+  const windowViewportRect = usePublisher('windowViewportRect');
+  const { externalWindow } = useRcPortalWindowContext();
+
+  const viewportRef = useWindowViewportRectRef(
+    windowViewportRect,
+    externalWindow,
+  );
+
+  return (
+    <div ref={viewportRef} style={viewportStyle}>
+      {children}
+    </div>
+  );
+};
+
+const TopItemListContainer: FC = ({ children }) => {
+  const TopItemList = useEmitterValue('TopItemListComponent');
+  const headerHeight = useEmitterValue('headerHeight');
+  const style = { ...topItemListStyle, marginTop: `${headerHeight}px` };
+  return createElement(TopItemList || 'div', { style }, children);
+};
+
+const ListRoot: FC<ListRootProps> = React.memo(function VirtuosoRoot(props) {
+  const useWindowScroll = useEmitterValue('useWindowScroll');
+  const showTopList = useEmitterValue('topItemsIndexes').length > 0;
+
+  const { externalWindow } = useRcPortalWindowContext();
+
+  const TheScroller = React.useMemo(
+    () =>
+      (useWindowScroll ? createWindowScroller : createScroller)(
+        externalWindow || window,
+      ),
+    [externalWindow, useWindowScroll],
+  );
+
+  const TheViewport = useWindowScroll ? WindowViewport : Viewport;
+  return (
+    <TheScroller {...props}>
+      <TheViewport>
+        <Header />
+        <Items />
+        <Footer />
+      </TheViewport>
+      {showTopList && (
+        <TopItemListContainer>
+          <Items showTopList />
+        </TopItemListContainer>
+      )}
+    </TheScroller>
+  );
+});
+
+export type ListHandle = RefHandle<typeof List>;
+
+export const {
+  Component: List,
+  usePublisher,
+  useEmitterValue,
+  useEmitter,
+} = systemToComponent(
+  combinedSystem,
+  {
+    required: {},
+    optional: {
+      followOutput: 'followOutput',
+      firstItemIndex: 'firstItemIndex',
+      itemContent: 'itemContent',
+      groupContent: 'groupContent',
+      overscan: 'overscan',
+      totalCount: 'totalCount',
+      topItemCount: 'topItemCount',
+      initialTopMostItemIndex: 'initialTopMostItemIndex',
+      components: 'components',
+      groupCounts: 'groupCounts',
+      computeItemKey: 'computeItemKey',
+      defaultItemHeight: 'defaultItemHeight',
+      fixedItemHeight: 'fixedItemHeight',
+      itemSize: 'itemSize',
+      scrollSeekConfiguration: 'scrollSeekConfiguration',
+      headerFooterTag: 'headerFooterTag',
+      data: 'data',
+      initialItemCount: 'initialItemCount',
+      initialScrollTop: 'initialScrollTop',
+      alignToBottom: 'alignToBottom',
+      useWindowScroll: 'useWindowScroll',
+      scrollerRef: 'scrollerRef',
+
+      // deprecated
+      item: 'item',
+      group: 'group',
+      topItems: 'topItems',
+      itemHeight: 'itemHeight',
+      scrollingStateChange: 'scrollingStateChange',
+      maxHeightCacheSize: 'maxHeightCacheSize',
+      footer: 'footer',
+      header: 'header',
+      ItemContainer: 'ItemContainer',
+      ScrollContainer: 'ScrollContainer',
+      ListContainer: 'ListContainer',
+      GroupContainer: 'GroupContainer',
+      emptyComponent: 'emptyComponent',
+      HeaderContainer: 'HeaderContainer',
+      FooterContainer: 'FooterContainer',
+      scrollSeek: 'scrollSeek',
+    },
+    methods: {
+      scrollToIndex: 'scrollToIndex',
+      scrollTo: 'scrollTo',
+      scrollBy: 'scrollBy',
+      adjustForPrependedItems: 'adjustForPrependedItems',
+    },
+    events: {
+      isScrolling: 'isScrolling',
+      endReached: 'endReached',
+      startReached: 'startReached',
+      rangeChanged: 'rangeChanged',
+      atBottomStateChange: 'atBottomStateChange',
+      atTopStateChange: 'atTopStateChange',
+      totalListHeightChanged: 'totalListHeightChanged',
+      itemsRendered: 'itemsRendered',
+      groupIndices: 'groupIndices',
+    },
+  },
+  ListRoot,
+);
+
+const createScroller = (window: Window) =>
+  buildScroller({ usePublisher, useEmitterValue, useEmitter, window });
+
+const createWindowScroller = (window: Window) =>
+  buildWindowScroller({
+    usePublisher,
+    useEmitterValue,
+    useEmitter,
+    window,
+  });

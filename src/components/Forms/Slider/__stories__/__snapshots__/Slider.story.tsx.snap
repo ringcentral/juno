@@ -1,0 +1,842 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Forms/Slider Slider 1`] = `
+.c0 {
+  color: #066FAC;
+}
+
+.c0.RcSlider-trackInverted .RcSlider-track {
+  background-color: rgb(160,200,223);
+}
+
+.c0 .RcSlider-thumb.RcSlider-focusVisible {
+  box-shadow: 0 0 0 8px rgba(6,111,172,0.16);
+}
+
+.c0 .RcSlider-thumb.RcSlider-active {
+  box-shadow: 0 0 0 14px rgba(6,111,172,0.16);
+}
+
+.c0.RcSlider-disabled {
+  color: #B9B9B9;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0 .RcSlider-thumb:hover {
+    box-shadow: 0 0 0 8px rgba(6,111,172,0.16);
+  }
+}
+
+<span
+  className="MuiSlider-root MuiSlider-colorPrimary c0"
+  onMouseDown={[Function]}
+>
+  <span
+    className="MuiSlider-rail"
+  />
+  <span
+    className="MuiSlider-track RcSlider-track"
+    style={
+      Object {
+        "left": "0%",
+        "width": "0%",
+      }
+    }
+  />
+  <input
+    type="hidden"
+    value="0"
+  />
+  <span
+    aria-orientation="horizontal"
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={0}
+    className="MuiSlider-thumb RcSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-143"
+    data-index={0}
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    role="slider"
+    style={
+      Object {
+        "left": "0%",
+      }
+    }
+    tabIndex={0}
+  >
+    <span
+      className="PrivateValueLabel-offset-145 MuiSlider-valueLabel"
+    >
+      <span
+        className="PrivateValueLabel-circle-146"
+      >
+        <span
+          className="PrivateValueLabel-label-147"
+        >
+          0
+        </span>
+      </span>
+    </span>
+  </span>
+</span>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Forms/Slider Slider Examples 1`] = `
+Array [
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Slider with icon
+  </h5>,
+  .c1 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.c2 {
+  color: #066FAC;
+}
+
+.c2.RcSlider-trackInverted .RcSlider-track {
+  background-color: rgb(160,200,223);
+}
+
+.c2 .RcSlider-thumb.RcSlider-focusVisible {
+  box-shadow: 0 0 0 8px rgba(6,111,172,0.16);
+}
+
+.c2 .RcSlider-thumb.RcSlider-active {
+  box-shadow: 0 0 0 14px rgba(6,111,172,0.16);
+}
+
+.c2.RcSlider-disabled {
+  color: #B9B9B9;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2 .RcSlider-thumb:hover {
+    box-shadow: 0 0 0 8px rgba(6,111,172,0.16);
+  }
+}
+
+<div
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-align-items-xs-center"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item"
+    >
+      <span
+        className="c0 star icon"
+      >
+        <svg
+          className="c1"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.885 1.726c.394.195.714.514.908.908l2.97 6.018a1 1 0 00.753.547l6.641.965a2.001 2.001 0 011.109 3.412L24.46 18.26c-.236.23-.343.561-.288.885l1.134 6.614a1.999 1.999 0 01-2.902 2.108l-5.94-3.123a1.002 1.002 0 00-.931 0l-5.94 3.123a2 2 0 01-2.902-2.109l1.134-6.614a.999.999 0 00-.288-.885l-4.806-4.684a2 2 0 011.109-3.411l6.641-.965a1 1 0 00.753-.547l2.97-6.018a2 2 0 012.679-.908z"
+          />
+        </svg>
+        
+      </span>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+    >
+      <span
+        className="MuiSlider-root MuiSlider-colorPrimary c2"
+        onMouseDown={[Function]}
+      >
+        <span
+          className="MuiSlider-rail"
+        />
+        <span
+          className="MuiSlider-track RcSlider-track"
+          style={
+            Object {
+              "left": "0%",
+              "width": "0%",
+            }
+          }
+        />
+        <input
+          type="hidden"
+          value="0"
+        />
+        <span
+          aria-labelledby="input-slider"
+          aria-orientation="horizontal"
+          aria-valuemax={100}
+          aria-valuemin={0}
+          aria-valuenow={0}
+          className="MuiSlider-thumb RcSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-148"
+          data-index={0}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          role="slider"
+          style={
+            Object {
+              "left": "0%",
+            }
+          }
+          tabIndex={0}
+        >
+          <span
+            className="PrivateValueLabel-offset-150 MuiSlider-valueLabel"
+          >
+            <span
+              className="PrivateValueLabel-circle-151"
+            >
+              <span
+                className="PrivateValueLabel-label-152"
+              >
+                0
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item"
+    >
+      <span
+        className="c0 star icon"
+      >
+        <svg
+          className="c1"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.885 1.726c.394.195.714.514.908.908l2.97 6.018a1 1 0 00.753.547l6.641.965a2.001 2.001 0 011.109 3.412L24.46 18.26c-.236.23-.343.561-.288.885l1.134 6.614a1.999 1.999 0 01-2.902 2.108l-5.94-3.123a1.002 1.002 0 00-.931 0l-5.94 3.123a2 2 0 01-2.902-2.109l1.134-6.614a.999.999 0 00-.288-.885l-4.806-4.684a2 2 0 011.109-3.411l6.641-.965a1 1 0 00.753-.547l2.97-6.018a2 2 0 012.679-.908z"
+          />
+        </svg>
+        
+      </span>
+    </div>
+  </div>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Slider with TextField
+  </h5>,
+  .c1 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.c3 {
+  width: 168px;
+}
+
+.c3 .sc-fujyAs {
+  margin-left: 12px;
+}
+
+.c3 .RcTextFieldInputLabel-root {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c3 .RcTextFieldInputLabel-focused {
+  color: #066FAC;
+}
+
+.c3 .RcTextFieldInput-root {
+  color: #121212;
+}
+
+.c3 .RcTextFieldInput-root .sc-carFqZ {
+  display: none;
+}
+
+.c3 .RcTextFieldInput-focused .sc-carFqZ {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c3 .RcTextFieldInput-input {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+}
+
+.c3 .RcTextFieldInput-input::-webkit-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c3 .RcTextFieldInput-input::-moz-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c3 .RcTextFieldInput-input:-ms-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c3 .RcTextFieldInput-input::placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c3 .RcTextFieldInput-underline:before {
+  border-bottom-color: #939393;
+}
+
+.c3 .RcTextFieldInput-underline:after {
+  border-bottom-color: #066FAC;
+}
+
+.c3 .RcTextFieldInput-error:after {
+  border-bottom-color: #BE3933;
+}
+
+.c3 .RcTextFieldInput-disabled {
+  color: #B9B9B9;
+  -webkit-text-fill-color: #B9B9B9;
+}
+
+.c3 .RcTextFieldInput-disabled::-webkit-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c3 .RcTextFieldInput-disabled::-moz-placeholder {
+  color: #B9B9B9;
+}
+
+.c3 .RcTextFieldInput-disabled:-ms-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c3 .RcTextFieldInput-disabled::placeholder {
+  color: #B9B9B9;
+}
+
+.c3 .RcTextFieldInput-disabled:before {
+  border-bottom-style: solid;
+  border-bottom-color: #B9B9B9;
+}
+
+.c3 .RcTextFieldInput-disabled:after {
+  border-bottom-style: none;
+}
+
+.c3 .RcTextFieldFormHelperText-root {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c3 .RcTextFieldFormHelperText-error {
+  color: #BE3933;
+}
+
+.c3 .RcTextFieldFormHelperText-disabled {
+  color: #B9B9B9;
+}
+
+.c3 .RcTextFieldInputLabel-error {
+  color: #BE3933;
+}
+
+.c3 .RcTextFieldInputLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c3 input[type='search']::-ms-clear,
+.c3 input[type='search']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.c3 input[type='search']::-webkit-search-decoration,
+.c3 input[type='search']::-webkit-search-cancel-button,
+.c3 input[type='search']::-webkit-search-results-button,
+.c3 input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+.c2 {
+  color: #066FAC;
+}
+
+.c2.RcSlider-trackInverted .RcSlider-track {
+  background-color: rgb(160,200,223);
+}
+
+.c2 .RcSlider-thumb.RcSlider-focusVisible {
+  box-shadow: 0 0 0 8px rgba(6,111,172,0.16);
+}
+
+.c2 .RcSlider-thumb.RcSlider-active {
+  box-shadow: 0 0 0 14px rgba(6,111,172,0.16);
+}
+
+.c2.RcSlider-disabled {
+  color: #B9B9B9;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c3 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carFqZ {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c3 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
+    border-bottom-color: #121212;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2 .RcSlider-thumb:hover {
+    box-shadow: 0 0 0 8px rgba(6,111,172,0.16);
+  }
+}
+
+<div
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-align-items-xs-center"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item"
+    >
+      <span
+        className="c0 star icon"
+      >
+        <svg
+          className="c1"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.885 1.726c.394.195.714.514.908.908l2.97 6.018a1 1 0 00.753.547l6.641.965a2.001 2.001 0 011.109 3.412L24.46 18.26c-.236.23-.343.561-.288.885l1.134 6.614a1.999 1.999 0 01-2.902 2.108l-5.94-3.123a1.002 1.002 0 00-.931 0l-5.94 3.123a2 2 0 01-2.902-2.109l1.134-6.614a.999.999 0 00-.288-.885l-4.806-4.684a2 2 0 011.109-3.411l6.641-.965a1 1 0 00.753-.547l2.97-6.018a2 2 0 012.679-.908z"
+          />
+        </svg>
+        
+      </span>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+    >
+      <span
+        className="MuiSlider-root MuiSlider-colorPrimary c2"
+        onMouseDown={[Function]}
+      >
+        <span
+          className="MuiSlider-rail"
+        />
+        <span
+          className="MuiSlider-track RcSlider-track"
+          style={
+            Object {
+              "left": "0%",
+              "width": "0%",
+            }
+          }
+        />
+        <input
+          type="hidden"
+          value="0"
+        />
+        <span
+          aria-labelledby="input-slider"
+          aria-orientation="horizontal"
+          aria-valuemax={100}
+          aria-valuemin={0}
+          aria-valuenow={0}
+          className="MuiSlider-thumb RcSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-148"
+          data-index={0}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          role="slider"
+          style={
+            Object {
+              "left": "0%",
+            }
+          }
+          tabIndex={0}
+        >
+          <span
+            className="PrivateValueLabel-offset-150 MuiSlider-valueLabel"
+          >
+            <span
+              className="PrivateValueLabel-circle-151"
+            >
+              <span
+                className="PrivateValueLabel-label-152"
+              >
+                0
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item"
+    >
+      <div
+        className="MuiFormControl-root MuiTextField-root RcTextField-root c3"
+        style={
+          Object {
+            "width": "2em",
+          }
+        }
+      >
+        <div
+          className="MuiInputBase-root MuiInput-root RcTextFieldInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-formControl MuiInput-formControl"
+          onClick={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            autoFocus={false}
+            className="MuiInputBase-input MuiInput-input RcTextFieldInput-input"
+            disabled={false}
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            readOnly={true}
+            required={false}
+            type="text"
+            value={0}
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Slider with Volume
+  </h5>,
+  .c1 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.c2 {
+  color: #066FAC;
+}
+
+.c2.RcSlider-trackInverted .RcSlider-track {
+  background-color: rgb(160,200,223);
+}
+
+.c2 .RcSlider-thumb.RcSlider-focusVisible {
+  box-shadow: 0 0 0 8px rgba(6,111,172,0.16);
+}
+
+.c2 .RcSlider-thumb.RcSlider-active {
+  box-shadow: 0 0 0 14px rgba(6,111,172,0.16);
+}
+
+.c2.RcSlider-disabled {
+  color: #B9B9B9;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2 .RcSlider-thumb:hover {
+    box-shadow: 0 0 0 8px rgba(6,111,172,0.16);
+  }
+}
+
+<div
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 MuiGrid-align-items-xs-center"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item"
+    >
+      <span
+        className="c0 speaker-up icon"
+      >
+        <svg
+          className="c1"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19.414 3.414A2 2 0 0120 4.828v22.343a2 2 0 01-3.414 1.414L10 21.999H4a2 2 0 01-2-2v-8a2 2 0 012-2h6l6.586-6.586a2 2 0 012.828 0zM18 4.828l-6.586 6.586A2 2 0 0110 12H5a1 1 0 00-1 1v6a1 1 0 001 1h5a2 2 0 011.414.586L18 27.172V4.829zm8.003 2.809a1 1 0 011.395.232C29.081 10.224 30 13.044 30 16s-.919 5.776-2.602 8.131a1 1 0 01-1.627-1.163C27.213 20.95 28 18.535 28 16s-.787-4.95-2.229-6.968a1 1 0 01.232-1.395zm-3.521 3.568a1 1 0 011.362.38A8.963 8.963 0 0125 16.001a8.953 8.953 0 01-1.171 4.441 1 1 0 11-1.738-.988A6.965 6.965 0 0023 16.001a6.962 6.962 0 00-.898-3.433 1 1 0 01.38-1.362z"
+          />
+        </svg>
+        
+      </span>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+    >
+      <span
+        className="MuiSlider-root MuiSlider-colorPrimary c2"
+        onMouseDown={[Function]}
+      >
+        <span
+          className="MuiSlider-rail"
+        />
+        <span
+          className="MuiSlider-track RcSlider-track"
+          style={
+            Object {
+              "left": "0%",
+              "width": "0%",
+            }
+          }
+        />
+        <input
+          type="hidden"
+          value="0"
+        />
+        <span
+          aria-labelledby="input-slider"
+          aria-orientation="horizontal"
+          aria-valuemax={100}
+          aria-valuemin={0}
+          aria-valuenow={0}
+          className="MuiSlider-thumb RcSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-148"
+          data-index={0}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          role="slider"
+          style={
+            Object {
+              "left": "0%",
+            }
+          }
+          tabIndex={0}
+        >
+          <span
+            className="PrivateValueLabel-offset-150 MuiSlider-valueLabel"
+          >
+            <span
+              className="PrivateValueLabel-circle-151"
+            >
+              <span
+                className="PrivateValueLabel-label-152"
+              >
+                0%
+              </span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item"
+    >
+      <span
+        className="c0 speaker-mute icon"
+      >
+        <svg
+          className="c1"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19.414 3.414A2 2 0 0120 4.828v22.343a2 2 0 01-3.414 1.414L10 21.999H4a2 2 0 01-2-2v-8a2 2 0 012-2h6l6.586-6.586a2 2 0 012.828 0zM18 4.828l-6.586 6.586A2 2 0 0110 12H5a1 1 0 00-1 1v6a1 1 0 001 1h5a2 2 0 011.414.586L18 27.172V4.829zm5.172 6.929l2.83 2.828 2.827-2.828a.999.999 0 111.414 1.414l-2.827 2.828 2.827 2.828a.999.999 0 11-1.414 1.414l-2.827-2.828-2.83 2.828a.999.999 0 11-1.414-1.414l2.83-2.828-2.83-2.828a.999.999 0 111.414-1.414z"
+          />
+        </svg>
+        
+      </span>
+    </div>
+  </div>,
+]
+`;

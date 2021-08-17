@@ -1,0 +1,56 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/useKeyboardMoveFocus" />
+
+## useKeyboardMoveFocus
+
+### Type aliases
+
+- [UseKeyboardMoveFocusParams](#usekeyboardmovefocusparams)
+
+### Functions
+
+- [useKeyboardMoveFocus](#const-usekeyboardmovefocus)
+
+## Type aliases
+
+### UseKeyboardMoveFocusParams
+
+Ƭ **UseKeyboardMoveFocusParams**: _object & Pick‹MoveIndexInTwoDimensionalOptions, "infinite"›_
+
+## Functions
+
+### `Const` useKeyboardMoveFocus
+
+▸ **useKeyboardMoveFocus**‹**T**›(`__namedParameters`: object): _object_
+
+use keyboard move index in two dimensional
+
+**Type parameters:**
+
+▪ **T**
+
+**Parameters:**
+
+▪ **\_\_namedParameters**: _object_
+
+| Name                    | Type                                              | Default |
+| ----------------------- | ------------------------------------------------- | ------- |
+| `columns`               | number                                            | 1       |
+| `endSearchDebounceTime` | number                                            | 500     |
+| `focusedIndexRef`       | MutableRefObject‹number›                          | -       |
+| `getOptionDisabled`     | undefined &#124; function                         | -       |
+| `getOptionSearchText`   | undefined &#124; function                         | -       |
+| `infinite`              | undefined &#124; false &#124; true &#124; "order" | -       |
+| `onFocusedIndexChange`  | function                                          | -       |
+| `options`               | T[]                                               | []      |
+
+**Returns:** _object_
+
+- **getNextFocusableOption**: _(Anonymous function)_
+
+- **getPrevFocusableOption**: _(Anonymous function)_
+
+- **onKeyFocusedIndexHandle**: _onKeyFocusedIndexHandle_

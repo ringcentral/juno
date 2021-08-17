@@ -1,0 +1,576 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio 1`] = `
+.c0.RcRadio-root {
+  color: #939393;
+  padding: 10px;
+}
+
+.c0.RcRadio-root.RcRadio-checked {
+  color: #066FAC;
+}
+
+.c0.RcRadio-root.RcRadio-disabled {
+  color: #B9B9B9;
+}
+
+.c0 .RadioButtonIcon-root svg {
+  font-size: 24px;
+  margin: -2px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcRadio-root:hover {
+    background-color: rgba(147,147,147,0.12);
+  }
+
+  .c0.RcRadio-root:hover.RcRadio-checked {
+    color: rgba(6,111,172,0.92);
+    background-color: rgba(6,111,172,0.12);
+  }
+}
+
+<span
+  aria-disabled={false}
+  className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-111 MuiRadio-root RcRadio-root c0"
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={null}
+>
+  <span
+    className="MuiIconButton-label"
+  >
+    <input
+      className="PrivateSwitchBase-input-114"
+      onChange={[Function]}
+      type="radio"
+    />
+    <div
+      className="PrivateRadioButtonIcon-root-115 RadioButtonIcon-root"
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+        />
+      </svg>
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-116"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+        />
+      </svg>
+    </div>
+  </span>
+</span>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio Examples 1`] = `
+Array [
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Label placement end
+  </h5>,
+  .c0 {
+  color: #121212;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c0 .RcFormControlLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c0 .RcCheckbox-root,
+.c0 .RcRadio-root {
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+.c0 .RcSwitch-root {
+  margin: 12px;
+}
+
+.c0.RcFormControlLabel-labelPlacementStart .RcCheckbox-root,
+.c0.RcFormControlLabel-labelPlacementStart .RcRadio-root {
+  margin-left: 4px;
+  margin-right: 0;
+}
+
+.c1.RcRadio-root {
+  color: #939393;
+  padding: 10px;
+}
+
+.c1.RcRadio-root.RcRadio-checked {
+  color: #066FAC;
+}
+
+.c1.RcRadio-root.RcRadio-disabled {
+  color: #B9B9B9;
+}
+
+.c1 .RadioButtonIcon-root svg {
+  font-size: 24px;
+  margin: -2px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcRadio-root:hover {
+    background-color: rgba(147,147,147,0.12);
+  }
+
+  .c1.RcRadio-root:hover.RcRadio-checked {
+    color: rgba(6,111,172,0.92);
+    background-color: rgba(6,111,172,0.12);
+  }
+}
+
+<label
+    className="MuiFormControlLabel-root RcFormControlLabel-root c0"
+  >
+    <span
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-118 MuiRadio-root RcRadio-root c1"
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={null}
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <input
+          className="PrivateSwitchBase-input-121"
+          onChange={[Function]}
+          type="radio"
+        />
+        <div
+          className="PrivateRadioButtonIcon-root-122 RadioButtonIcon-root"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+            />
+          </svg>
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-123"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+            />
+          </svg>
+        </div>
+      </span>
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Label
+    </span>
+  </label>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Label placement start
+  </h5>,
+  .c0 {
+  color: #121212;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c0 .RcFormControlLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c0 .RcCheckbox-root,
+.c0 .RcRadio-root {
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+.c0 .RcSwitch-root {
+  margin: 12px;
+}
+
+.c0.RcFormControlLabel-labelPlacementStart .RcCheckbox-root,
+.c0.RcFormControlLabel-labelPlacementStart .RcRadio-root {
+  margin-left: 4px;
+  margin-right: 0;
+}
+
+.c1.RcRadio-root {
+  color: #939393;
+  padding: 10px;
+}
+
+.c1.RcRadio-root.RcRadio-checked {
+  color: #066FAC;
+}
+
+.c1.RcRadio-root.RcRadio-disabled {
+  color: #B9B9B9;
+}
+
+.c1 .RadioButtonIcon-root svg {
+  font-size: 24px;
+  margin: -2px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcRadio-root:hover {
+    background-color: rgba(147,147,147,0.12);
+  }
+
+  .c1.RcRadio-root:hover.RcRadio-checked {
+    color: rgba(6,111,172,0.92);
+    background-color: rgba(6,111,172,0.12);
+  }
+}
+
+<label
+    className="MuiFormControlLabel-root RcFormControlLabel-root c0 MuiFormControlLabel-labelPlacementStart RcFormControlLabel-labelPlacementStart"
+  >
+    <span
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-118 MuiRadio-root RcRadio-root c1"
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={null}
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <input
+          className="PrivateSwitchBase-input-121"
+          onChange={[Function]}
+          type="radio"
+        />
+        <div
+          className="PrivateRadioButtonIcon-root-122 RadioButtonIcon-root"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+            />
+          </svg>
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-123"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+            />
+          </svg>
+        </div>
+      </span>
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Label
+    </span>
+  </label>,
+]
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio with custom icon 1`] = `
+.c4 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.c1 {
+  color: #121212;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c1 .RcFormControlLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c1 .RcCheckbox-root,
+.c1 .RcRadio-root {
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+.c1 .RcSwitch-root {
+  margin: 12px;
+}
+
+.c1.RcFormControlLabel-labelPlacementStart .RcCheckbox-root,
+.c1.RcFormControlLabel-labelPlacementStart .RcRadio-root {
+  margin-left: 4px;
+  margin-right: 0;
+}
+
+.c0 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  color: #066FAC;
+}
+
+.c2.RcRadio-root {
+  color: #939393;
+  padding: 10px;
+}
+
+.c2.RcRadio-root.RcRadio-checked {
+  color: #066FAC;
+}
+
+.c2.RcRadio-root.RcRadio-disabled {
+  color: #B9B9B9;
+}
+
+.c2 .RadioButtonIcon-root svg {
+  font-size: 24px;
+  margin: -2px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcRadio-root:hover {
+    background-color: rgba(147,147,147,0.12);
+  }
+
+  .c2.RcRadio-root:hover.RcRadio-checked {
+    color: rgba(6,111,172,0.92);
+    background-color: rgba(6,111,172,0.12);
+  }
+}
+
+<div
+  className="MuiFormControl-root "
+>
+  <label
+    className="MuiFormLabel-root c0"
+  >
+    Gender
+  </label>
+  <div
+    className="MuiFormGroup-root MuiFormGroup-row"
+    role="radiogroup"
+  >
+    <label
+      className="MuiFormControlLabel-root RcFormControlLabel-root c1"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-125 MuiRadio-root RcRadio-root c2 PrivateSwitchBase-checked-126 Mui-checked RcRadio-checked"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            checked={true}
+            className="PrivateSwitchBase-input-128"
+            disabled={false}
+            onChange={[Function]}
+            type="radio"
+            value={0}
+          />
+          <span
+            className="c3 people icon"
+          >
+            <svg
+              className="c4"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 18c7.067 0 13 4.315 13 10a2 2 0 01-2 2H5a2 2 0 01-2-2c0-5.685 5.933-10 13-10zm0-16a7 7 0 110 14 7 7 0 010-14z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+      </span>
+      <span
+        className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+      >
+        female
+      </span>
+    </label>
+    <label
+      className="MuiFormControlLabel-root RcFormControlLabel-root c1"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-125 MuiRadio-root RcRadio-root c2"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            checked={false}
+            className="PrivateSwitchBase-input-128"
+            disabled={false}
+            onChange={[Function]}
+            type="radio"
+            value={1}
+          />
+          <span
+            className="c3 add_border icon"
+          >
+            <svg
+              className="c4"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm0 4a1 1 0 01.993.883L17 9l.001 5.999L23 15l.117.007a1 1 0 010 1.986L23 17l-5.999-.001L17 23l-.007.117a1 1 0 01-1.986 0L15 23l.001-6.001L9 17l-.117-.007a1 1 0 010-1.986L9 15l6.001-.001L15 9l.007-.117A1 1 0 0116 8z"
+              />
+            </svg>
+            
+          </span>
+        </span>
+      </span>
+      <span
+        className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+      >
+        male
+      </span>
+    </label>
+  </div>
+</div>
+`;

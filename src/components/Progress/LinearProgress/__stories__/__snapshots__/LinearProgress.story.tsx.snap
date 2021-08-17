@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Progress/LinearProgress LinearProgress 1`] = `
+.c0:not(.RcLinearProgress-buffer),
+.c0 .RcLinearProgress-colorPrimary {
+  background-color: rgb(160,200,223);
+}
+
+.c0 .RcLinearProgress-barColorPrimary {
+  background-color: #066FAC;
+}
+
+.c0 .RcLinearProgress-dashedColorPrimary {
+  background-image: radial-gradient( rgb(160,200,223) 0%, rgb(160,200,223) 16%, transparent 42% );
+}
+
+<div
+  className="MuiLinearProgress-root MuiLinearProgress-colorPrimary RcLinearProgress-colorPrimary c0 MuiLinearProgress-indeterminate"
+  role="progressbar"
+>
+  <div
+    className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary RcLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate"
+    style={Object {}}
+  />
+  <div
+    className="MuiLinearProgress-bar MuiLinearProgress-bar2Indeterminate MuiLinearProgress-barColorPrimary RcLinearProgress-barColorPrimary"
+    style={Object {}}
+  />
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Progress/LinearProgress LinearProgress Examples 1`] = `
+.c1:not(.RcLinearProgress-buffer),
+.c1 .RcLinearProgress-colorPrimary {
+  background-color: rgb(230,179,177);
+}
+
+.c1 .RcLinearProgress-barColorPrimary {
+  background-color: #BE3933;
+}
+
+.c1 .RcLinearProgress-dashedColorPrimary {
+  background-image: radial-gradient( rgb(230,179,177) 0%, rgb(230,179,177) 16%, transparent 42% );
+}
+
+.c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+<div>
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Default
+  </h5>
+  <div
+    className="MuiLinearProgress-root MuiLinearProgress-colorPrimary RcLinearProgress-colorPrimary c1 MuiLinearProgress-indeterminate"
+    role="progressbar"
+  >
+    <div
+      className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary RcLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate"
+      style={Object {}}
+    />
+    <div
+      className="MuiLinearProgress-bar MuiLinearProgress-bar2Indeterminate MuiLinearProgress-barColorPrimary RcLinearProgress-barColorPrimary"
+      style={Object {}}
+    />
+  </div>
+  <br />
+  <br />
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Determinate with value
+  </h5>
+  <div
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={25}
+    className="MuiLinearProgress-root MuiLinearProgress-colorPrimary RcLinearProgress-colorPrimary c1 MuiLinearProgress-determinate"
+    role="progressbar"
+  >
+    <div
+      className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary RcLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+      style={
+        Object {
+          "transform": "translateX(-75%)",
+        }
+      }
+    />
+  </div>
+  <br />
+  <br />
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Query progress
+  </h5>
+  <div
+    className="MuiLinearProgress-root MuiLinearProgress-colorPrimary RcLinearProgress-colorPrimary c1 MuiLinearProgress-query"
+    role="progressbar"
+  >
+    <div
+      className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary RcLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate"
+      style={Object {}}
+    />
+    <div
+      className="MuiLinearProgress-bar MuiLinearProgress-bar2Indeterminate MuiLinearProgress-barColorPrimary RcLinearProgress-barColorPrimary"
+      style={Object {}}
+    />
+  </div>
+  <br />
+  <br />
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Buffer progress
+  </h5>
+  <div
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={25}
+    className="MuiLinearProgress-root MuiLinearProgress-colorPrimary RcLinearProgress-colorPrimary c1 MuiLinearProgress-buffer RcLinearProgress-buffer"
+    role="progressbar"
+  >
+    <div
+      className="MuiLinearProgress-dashed MuiLinearProgress-dashedColorPrimary RcLinearProgress-dashedColorPrimary"
+    />
+    <div
+      className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary RcLinearProgress-barColorPrimary MuiLinearProgress-bar1Buffer"
+      style={
+        Object {
+          "transform": "translateX(-75%)",
+        }
+      }
+    />
+    <div
+      className="MuiLinearProgress-bar MuiLinearProgress-colorPrimary RcLinearProgress-colorPrimary MuiLinearProgress-bar2Buffer"
+      style={
+        Object {
+          "transform": "translateX(-50%)",
+        }
+      }
+    />
+  </div>
+</div>
+`;

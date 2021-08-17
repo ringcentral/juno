@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Typography Typography 1`] = `
+Array [
+  <br />,
+  <br />,
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+<div
+    style={
+      Object {
+        "maxWidth": 800,
+      }
+    }
+  >
+    <p
+      className="MuiTypography-root c0"
+      data-color="initial"
+      data-variant="body1"
+    >
+      Current variant: 
+      <br />
+      Typography component provides you can use Juno font style with our token, make all font in your app to be uniform
+    </p>
+  </div>,
+  .c1 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c2 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #FF8800;
+}
+
+.c0 {
+  background: #121212;
+  color: #FFFFFF;
+}
+
+<div
+    className="c0"
+  >
+    <p
+      aria-describedby={null}
+      className="MuiTypography-root c1 MuiTypography-alignCenter MuiTypography-displayBlock"
+      data-color="initial"
+      data-variant="body1"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+      title="this is useRcTooltip"
+    >
+      Show for you know bottom margin, when you use props
+    </p>
+    <p
+      className="MuiTypography-root c2 MuiTypography-alignCenter MuiTypography-displayBlock"
+      data-color="highlight.f02"
+      data-variant="body1"
+    >
+      paragraph: 0.35em
+    </p>
+    <p
+      className="MuiTypography-root c2 MuiTypography-alignCenter MuiTypography-displayBlock"
+      data-color="highlight.f02"
+      data-variant="body1"
+    >
+      gutterBottom: 16px
+    </p>
+  </div>,
+]
+`;

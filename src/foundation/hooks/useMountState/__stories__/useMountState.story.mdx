@@ -1,0 +1,31 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/useMountState" />
+
+## useMountState
+
+### Functions
+
+- [useMountState](#const-usemountstate)
+
+## Functions
+
+### `Const` useMountState
+
+▸ **useMountState**(): _MutableRefObject‹boolean›_
+
+get that component mounted state `ref`
+
+**`example`**
+
+```ts
+const isMountedRef = useMountState();
+
+if (isMountedRef.current) {
+  console.log("component mounted");
+}
+```
+
+**Returns:** _MutableRefObject‹boolean›_

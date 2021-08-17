@@ -1,0 +1,47 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/useOverflow" />
+
+## useOverflow
+
+### Functions
+
+- [useOverflow](#const-useoverflow)
+
+## Functions
+
+### `Const` useOverflow
+
+▸ **useOverflow**(`innerRef`: RefObject‹HTMLElement›, `cb`: function, `performance`: PerformanceOptions): _ResizeObserver_
+
+trigger when overflow state change
+
+**Parameters:**
+
+▪ **innerRef**: _RefObject‹HTMLElement›_
+
+▪ **cb**: _function_
+
+▸ (`state`: boolean, `value`: object): _void_
+
+**Parameters:**
+
+▪ **state**: _boolean_
+
+▪ **value**: _object_
+
+| Name           | Type   |
+| -------------- | ------ |
+| `clientHeight` | number |
+| `clientWidth`  | number |
+| `scrollHeight` | number |
+| `scrollWidth`  | number |
+
+▪`Default value` **performance**: _PerformanceOptions_= {
+mode: 'throttle',
+time: 200,
+}
+
+**Returns:** _ResizeObserver_

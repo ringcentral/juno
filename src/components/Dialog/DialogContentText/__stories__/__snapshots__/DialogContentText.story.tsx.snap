@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogContentText DialogContentText 1`] = `
+.c0 {
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  color: #666666;
+}
+
+<p
+  className="MuiTypography-root MuiDialogContentText-root c0 MuiTypography-body1"
+  data-variant="inherit"
+>
+  You can set my maximum width and whether to adapt or not.
+</p>
+`;

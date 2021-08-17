@@ -1,0 +1,437 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
+.c4 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.c0 {
+  color: #121212;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c0 .RcFormControlLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c0 .RcCheckbox-root,
+.c0 .RcRadio-root {
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+.c0 .RcSwitch-root {
+  margin: 12px;
+}
+
+.c0.RcFormControlLabel-labelPlacementStart .RcCheckbox-root,
+.c0.RcFormControlLabel-labelPlacementStart .RcRadio-root {
+  margin-left: 4px;
+  margin-right: 0;
+}
+
+.c2.RcCheckbox-root {
+  color: #939393;
+  padding: 10px;
+}
+
+.c2.RcCheckbox-root.RcCheckbox-checked {
+  color: #066FAC;
+}
+
+.c2.RcCheckbox-root.RcCheckbox-disabled {
+  color: #B9B9B9;
+}
+
+.c1.RcSwitch-root {
+  padding: 0px;
+  width: 36px;
+  height: 20px;
+}
+
+.c1.RcSwitch-root .RcSwitch-switchBase {
+  width: 36px;
+  height: 20px;
+  padding: 0;
+  background-color: transparent;
+  -webkit-transform: translateX(-8px);
+  -ms-transform: translateX(-8px);
+  transform: translateX(-8px);
+}
+
+.c1.RcSwitch-root .RcSwitch-switchBase.RcSwitch-checked {
+  -webkit-transform: translateX(8px);
+  -ms-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+.c1.RcSwitch-root .RcSwitch-thumb {
+  height: 12px;
+  width: 12px;
+  background-color: #FFFFFF;
+  box-shadow: none;
+}
+
+.c1.RcSwitch-root .RcSwitch-track {
+  height: 20px;
+  opacity: 1;
+  margin: 0;
+  border-radius: 100vw;
+  background-color: #939393;
+}
+
+.c1.RcSwitch-root .RcSwitch-checked + .RcSwitch-track {
+  background-color: #066FAC;
+}
+
+.c1.RcSwitch-root .RcSwitch-disabled + .RcSwitch-track {
+  background-color: #B9B9B9;
+}
+
+.c1.RcSwitch-root .RcSwitch-focusVisible + .RcSwitch-track:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 100vw;
+  border: 1px solid #066FAC;
+}
+
+.c1.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
+  background-color: rgba(147,147,147,0.76);
+}
+
+.c1.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled).RcSwitch-checked + .RcSwitch-track {
+  background-color: rgba(6,111,172,0.76);
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcCheckbox-root:hover {
+    background-color: rgba(147,147,147,0.12);
+  }
+
+  .c2.RcCheckbox-root:hover.RcCheckbox-checked {
+    color: rgba(6,111,172,0.92);
+    background-color: rgba(6,111,172,0.12);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
+    background-color: rgba(147,147,147,0.92);
+  }
+
+  .c1.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled).RcSwitch-checked + .RcSwitch-track {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+<div
+  className="MuiFormGroup-root "
+>
+  <label
+    className="MuiFormControlLabel-root RcFormControlLabel-root c0"
+  >
+    <span
+      className="MuiSwitch-root RcSwitch-root c1"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-107 MuiSwitch-switchBase RcSwitch-switchBase"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            className="PrivateSwitchBase-input-110 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb RcSwitch-thumb"
+          />
+        </span>
+      </span>
+      <span
+        className="MuiSwitch-track RcSwitch-track"
+      />
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Toggle button 1
+    </span>
+  </label>
+  <label
+    className="MuiFormControlLabel-root RcFormControlLabel-root c0"
+  >
+    <span
+      className="MuiSwitch-root RcSwitch-root c1"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-107 MuiSwitch-switchBase RcSwitch-switchBase"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            className="PrivateSwitchBase-input-110 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb RcSwitch-thumb"
+          />
+        </span>
+      </span>
+      <span
+        className="MuiSwitch-track RcSwitch-track"
+      />
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Toggle button 2
+    </span>
+  </label>
+  <label
+    className="MuiFormControlLabel-root RcFormControlLabel-root c0"
+  >
+    <span
+      className="MuiSwitch-root RcSwitch-root c1"
+    >
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-107 MuiSwitch-switchBase RcSwitch-switchBase"
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={null}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <input
+            className="PrivateSwitchBase-input-110 MuiSwitch-input"
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="MuiSwitch-thumb RcSwitch-thumb"
+          />
+        </span>
+      </span>
+      <span
+        className="MuiSwitch-track RcSwitch-track"
+      />
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Toggle button 3
+    </span>
+  </label>
+  <label
+    className="MuiFormControlLabel-root RcFormControlLabel-root c0"
+  >
+    <span
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-107 MuiCheckbox-root RcCheckbox-root c2"
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={null}
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <input
+          className="PrivateSwitchBase-input-110"
+          data-indeterminate={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="c3 unselect icon"
+        >
+          <svg
+            className="c4"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M27 2a3 3 0 013 3v22a3 3 0 01-3 3H5a3 3 0 01-3-3V5a3 3 0 013-3h22zm0 2.5H5a.5.5 0 00-.492.41L4.5 5v22a.5.5 0 00.41.492L5 27.5h22a.5.5 0 00.492-.41L27.5 27V5a.5.5 0 00-.41-.492L27 4.5z"
+            />
+          </svg>
+          
+        </span>
+      </span>
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Toggle button 3
+    </span>
+  </label>
+  <label
+    className="MuiFormControlLabel-root RcFormControlLabel-root c0"
+  >
+    <span
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-107 MuiCheckbox-root RcCheckbox-root c2"
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={null}
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <input
+          className="PrivateSwitchBase-input-110"
+          data-indeterminate={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="c3 unselect icon"
+        >
+          <svg
+            className="c4"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M27 2a3 3 0 013 3v22a3 3 0 01-3 3H5a3 3 0 01-3-3V5a3 3 0 013-3h22zm0 2.5H5a.5.5 0 00-.492.41L4.5 5v22a.5.5 0 00.41.492L5 27.5h22a.5.5 0 00.492-.41L27.5 27V5a.5.5 0 00-.41-.492L27 4.5z"
+            />
+          </svg>
+          
+        </span>
+      </span>
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Toggle button 3
+    </span>
+  </label>
+  <label
+    className="MuiFormControlLabel-root RcFormControlLabel-root c0"
+  >
+    <span
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-107 MuiCheckbox-root RcCheckbox-root c2"
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={null}
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <input
+          className="PrivateSwitchBase-input-110"
+          data-indeterminate={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="c3 unselect icon"
+        >
+          <svg
+            className="c4"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M27 2a3 3 0 013 3v22a3 3 0 01-3 3H5a3 3 0 01-3-3V5a3 3 0 013-3h22zm0 2.5H5a.5.5 0 00-.492.41L4.5 5v22a.5.5 0 00.41.492L5 27.5h22a.5.5 0 00.492-.41L27.5 27V5a.5.5 0 00-.41-.492L27 4.5z"
+            />
+          </svg>
+          
+        </span>
+      </span>
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Toggle button 3
+    </span>
+  </label>
+</div>
+`;

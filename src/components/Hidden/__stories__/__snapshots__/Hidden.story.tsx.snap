@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Hidden Hidden 1`] = `
+Array [
+  <div
+    className="MuiBox-root MuiBox-root-165"
+  >
+    <pre>
+      {
+  "xs": 0,
+  "sm": 641,
+  "md": 960,
+  "lg": 1280,
+  "xl": 1920
+}
+    </pre>
+  </div>,
+  <div
+    className="MuiGrid-root MuiGrid-container"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-grid-xs-true"
+    />
+    <div
+      className="MuiGrid-root MuiGrid-grid-xs-true"
+    />
+    <div
+      className="MuiGrid-root MuiGrid-grid-xs-true"
+    />
+    <div
+      className="MuiGrid-root MuiGrid-grid-xs-true"
+    />
+  </div>,
+]
+`;

@@ -1,0 +1,68 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/useOnlyOneFocusable" />
+
+## useOnlyOneFocusable
+
+### Type aliases
+
+- [UseOnlyOneFocusableParams](#useonlyonefocusableparams)
+
+### Variables
+
+- [MOVE_ATTR_KEY](#const-move_attr_key)
+
+### Functions
+
+- [useOnlyOneFocusable](#const-useonlyonefocusable)
+
+## Type aliases
+
+### UseOnlyOneFocusableParams
+
+Ƭ **UseOnlyOneFocusableParams**: _object_
+
+#### Type declaration:
+
+- **containerRef**: _RefObject‹HTMLElement›_
+
+- **focusedIndexRef**: _MutableRefObject‹number›_
+
+- **retryOptions**? : _UseRetryOptions_
+
+## Variables
+
+### `Const` MOVE_ATTR_KEY
+
+• **MOVE_ATTR_KEY**: _"data-move-focused"_ = "data-move-focused"
+
+## Functions
+
+### `Const` useOnlyOneFocusable
+
+▸ **useOnlyOneFocusable**(`__namedParameters`: object): _object_
+
+when focus in container below element with binding `getItemProps`,
+that will only have one element can be focusable.
+
+**Parameters:**
+
+▪ **\_\_namedParameters**: _object_
+
+| Name              | Type                     |
+| ----------------- | ------------------------ |
+| `containerRef`    | RefObject‹HTMLElement›   |
+| `focusedIndexRef` | MutableRefObject‹number› |
+| `retryOptions`    | undefined &#124; object  |
+
+**Returns:** _object_
+
+- **focusIndex**: _retry_ = focusIndexWithRetry
+
+- **moveFocusedId**: _string_
+
+- **setIndexTabIndex**: _setIndexTabIndex_
+
+- **getItemProps**(`index`: number, `options?`: Omit‹HTMLAttributes‹HTMLElement›, "children"›): _object_

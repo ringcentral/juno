@@ -1,0 +1,48 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/useId" />
+
+## useId
+
+### Variables
+
+- [DEFAULT_PREFIX](#const-default_prefix)
+
+### Functions
+
+- [useId](#useid)
+
+## Variables
+
+### `Const` DEFAULT_PREFIX
+
+• **DEFAULT_PREFIX**: _"rc-juno-id-"_ = "rc-juno-id-"
+
+## Functions
+
+### useId
+
+▸ **useId**(`id?`: undefined | string, `prefixMode?`: undefined | false | true): _string_
+
+Generates a unique ID.
+
+**`example`**
+useId() => 'rc-juno-id-xxxx'
+useId('') => 'rc-juno-id-xxxx'
+useId(null) => 'rc-juno-id-xxxx'
+useId(undefined) => 'rc-juno-id-xxxx'
+useId('nameId') => 'nameId'
+useId('nameId', true) => 'nameId-xxxx'
+
+**Parameters:**
+
+| Name          | Type                               | Description                        |
+| ------------- | ---------------------------------- | ---------------------------------- |
+| `id?`         | undefined &#124; string            | Default component id or prefix id. |
+| `prefixMode?` | undefined &#124; false &#124; true | Whether enable prefix the ID with. |
+
+**Returns:** _string_
+
+unique ID

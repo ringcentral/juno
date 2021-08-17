@@ -1,0 +1,17 @@
+{
+  "exclude": ["**/*+(index|.spec|.e2e|module).ts"],
+  "plugin": "typedoc-plugin-markdown",
+  "excludeExternals": true,
+  "excludeNotExported": true,
+  "module": "commonjs",
+  "ignoreCompilerErrors": true,
+  "hideBreadcrumbs": true,
+  "hideGenerator": true,
+  "disableSources": true,
+  "theme": "docusaurus",
+  "skipSidebar": true,
+  "readme": "none",
+  "gitRemote": "https://github.com/ringcentral/juno",
+  "mode": "file",
+  "target": "es5"
+}

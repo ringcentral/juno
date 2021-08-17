@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Snackbar/SnackbarAction SnackbarAction 1`] = `
+.c4 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  line-height: 24px;
+  overflow: hidden;
+  background-color: #666666;
+  color: #FFFFFF;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  border-radius: 4px;
+  min-width: 248px;
+  max-width: 640px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  pointer-events: auto;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  padding: 12px 16px;
+}
+
+.c0 .RcSnackbarContent-message {
+  margin: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0px;
+  text-align: center;
+  word-break: break-word;
+}
+
+.c0 .RcSnackbarContent-message a {
+  color: #066FAC;
+  font-style: italic;
+}
+
+.c0 .RcSnackbarContent-action {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  margin-right: 0;
+  height: 24px;
+}
+
+.c2.RcSnackbarAction-text {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  line-height: 24px;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 + .c1.RcSnackbarAction-text {
+  margin-left: 12px;
+}
+
+.c1 + .c1.RcSnackbarAction-icon {
+  margin-left: 16px;
+}
+
+.c2:active {
+  opacity: 0.76;
+}
+
+.c2:disabled {
+  opacity: 0.24;
+}
+
+.c2.Mui-focusVisible:after,
+.c2.focus-visible:after,
+.c2[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 0 1px currentColor;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+<div
+  className="MuiPaper-root MuiSnackbarContent-root c0 MuiPaper-elevation6"
+  role="alert"
+>
+  <div
+    className="MuiSnackbarContent-message RcSnackbarContent-message"
+  >
+    This is an error message.
+  </div>
+  <div
+    className="MuiSnackbarContent-action RcSnackbarContent-action"
+  >
+    <button
+      className="MuiButtonBase-root c1 c2 RcSnackbarAction-text"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    />
+    <button
+      className="MuiButtonBase-root c1 c2 RcSnackbarAction-text Mui-disabled"
+      disabled={true}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={-1}
+      type="button"
+    >
+      Action
+    </button>
+    <button
+      className="MuiButtonBase-root c1 c2 RcSnackbarAction-text"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      Action
+    </button>
+    <button
+      className="MuiButtonBase-root c1 c2 RcSnackbarAction-icon"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="c3 close icon"
+      >
+        <svg
+          className="c4"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M25.899 7.515L17.414 16l8.485 8.486a1 1 0 01-1.414 1.414L16 17.413 7.515 25.9a1 1 0 01-1.414-1.414l8.485-8.487-8.485-8.484a.999.999 0 111.414-1.414l8.486 8.485 8.485-8.485A.999.999 0 1125.9 7.515z"
+          />
+        </svg>
+        
+      </span>
+    </button>
+  </div>
+</div>
+`;

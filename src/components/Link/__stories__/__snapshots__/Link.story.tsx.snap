@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Link Link 1`] = `
+Array [
+  .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #066FAC;
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added] {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:active {
+  color: rgba(6,111,172,0.76);
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+  }
+}
+
+<a
+    className="c0"
+    href="https://ringcentral.github.io/juno/assets/logo.png"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    tabIndex={0}
+    target="_blank"
+  >
+    button
+  </a>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #066FAC;
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added] {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:active {
+  color: rgba(6,111,172,0.76);
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+  }
+}
+
+<div
+    className="c0"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    tabIndex={0}
+  >
+    button
+  </div>,
+]
+`;

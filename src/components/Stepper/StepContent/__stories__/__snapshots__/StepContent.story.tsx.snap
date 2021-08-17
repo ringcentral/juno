@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Stepper/StepContent StepContent 1`] = `
+.c1.RcStep-horizontal {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c2 .RcStepIcon-root {
+  color: #666666;
+}
+
+.c2 .RcStepIcon-active {
+  color: #066FAC;
+}
+
+.c2 .RcStepIcon-text {
+  fill: #FFFFFF;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  -webkit-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  transform: translateY(1px);
+}
+
+.c2 .RcStepLabel-labelContainer .RcStepLabel-alternativeLabel {
+  margin-top: 12px;
+}
+
+.c2 .RcStepLabel-label {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #666666;
+}
+
+.c2 .RcStepLabel-active {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c2.RcStepLabel-error .RcStepIcon-root {
+  color: #BE3933;
+}
+
+.c2.RcStepLabel-error .RcStepLabel-label {
+  color: #BE3933;
+}
+
+.c2.RcStepLabel-disabled .RcStepIcon-root {
+  color: #B9B9B9;
+}
+
+.c2.RcStepLabel-disabled .RcStepLabel-label {
+  color: #B9B9B9;
+}
+
+.c3 .RcStepConnector-line {
+  border-color: #E5E5E5;
+}
+
+.c0 {
+  padding: 24px 0px 24px 0px;
+}
+
+<div
+  className="MuiPaper-root MuiStepper-root MuiStepper-horizontal c0 MuiStepper-alternativeLabel MuiPaper-elevation0"
+>
+  <div
+    className="MuiStep-root RcStep-root MuiStep-horizontal RcStep-horizontal c1 MuiStep-alternativeLabel"
+  >
+    <span
+      className="MuiStepLabel-root MuiStepLabel-horizontal c2 MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel"
+    >
+      <span
+        className="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiStepIcon-root RcStepIcon-root MuiStepIcon-active RcStepIcon-active"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="12"
+          />
+          <text
+            className="MuiStepIcon-text RcStepIcon-text"
+            textAnchor="middle"
+            x="12"
+            y="16"
+          >
+            1
+          </text>
+        </svg>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer RcStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label RcStepLabel-label MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel MuiStepLabel-active RcStepLabel-active MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          Select campaign settings
+        </span>
+      </span>
+    </span>
+    <div
+      className="MuiStepContent-root "
+      disabled={false}
+      icon={1}
+    >
+      <div
+        className="MuiCollapse-container MuiStepContent-transition MuiCollapse-entered"
+        style={
+          Object {
+            "minHeight": "0px",
+          }
+        }
+      >
+        <div
+          className="MuiCollapse-wrapper"
+        >
+          <div
+            className="MuiCollapse-wrapperInner"
+          >
+            that is content
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiStep-root RcStep-root MuiStep-horizontal RcStep-horizontal c1 MuiStep-alternativeLabel"
+  >
+    <div
+      className="MuiStepConnector-root MuiStepConnector-horizontal c3 MuiStepConnector-alternativeLabel"
+    >
+      <span
+        className="MuiStepConnector-line RcStepConnector-line MuiStepConnector-lineHorizontal"
+      />
+    </div>
+    <span
+      className="MuiStepLabel-root MuiStepLabel-horizontal c2 MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel"
+    >
+      <span
+        className="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiStepIcon-root RcStepIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="12"
+          />
+          <text
+            className="MuiStepIcon-text RcStepIcon-text"
+            textAnchor="middle"
+            x="12"
+            y="16"
+          >
+            2
+          </text>
+        </svg>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer RcStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label RcStepLabel-label MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          Select campaign settings
+        </span>
+      </span>
+    </span>
+    <div
+      className="MuiStepContent-root "
+      disabled={false}
+      icon={2}
+    />
+  </div>
+  <div
+    className="MuiStep-root RcStep-root MuiStep-horizontal RcStep-horizontal c1 MuiStep-alternativeLabel"
+  >
+    <div
+      className="MuiStepConnector-root MuiStepConnector-horizontal c3 MuiStepConnector-alternativeLabel"
+    >
+      <span
+        className="MuiStepConnector-line RcStepConnector-line MuiStepConnector-lineHorizontal"
+      />
+    </div>
+    <span
+      className="MuiStepLabel-root MuiStepLabel-horizontal c2 MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel"
+    >
+      <span
+        className="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiStepIcon-root RcStepIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="12"
+          />
+          <text
+            className="MuiStepIcon-text RcStepIcon-text"
+            textAnchor="middle"
+            x="12"
+            y="16"
+          >
+            3
+          </text>
+        </svg>
+      </span>
+      <span
+        className="MuiStepLabel-labelContainer RcStepLabel-labelContainer"
+      >
+        <span
+          className="MuiTypography-root MuiStepLabel-label RcStepLabel-label MuiStepLabel-alternativeLabel RcStepLabel-alternativeLabel MuiTypography-body2 MuiTypography-displayBlock"
+        >
+          Select campaign settings
+        </span>
+      </span>
+    </span>
+    <div
+      className="MuiStepContent-root MuiStepContent-last"
+      disabled={false}
+      icon={3}
+    />
+  </div>
+</div>
+`;

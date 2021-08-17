@@ -1,0 +1,36 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Hooks/useResultRef" />
+
+## useResultRef
+
+### Functions
+
+- [useResultRef](#useresultref)
+
+## Functions
+
+### useResultRef
+
+▸ **useResultRef**‹**T**›(`cb`: function): _MutableRefObject‹T›_
+
+provide a ref for only calculate `cb` once
+prevent `useRef(getValue())`, that `getValue` calculate every re-render
+
+**Type parameters:**
+
+▪ **T**
+
+**Parameters:**
+
+▪ **cb**: _function_
+
+that get method of get this ref init value, only calculate once
+
+▸ (): _T_
+
+**Returns:** _MutableRefObject‹T›_
+
+same as `useRef` result

@@ -1,0 +1,22 @@
+{
+  "console.group()": {
+    "prefix": "cg: console.group",
+    "body": [
+      "console.group('%c${TM_FILENAME_BASE}', 'background: #20232a; color: #43daf9; padding: 2px 4px; border-radius: 5px;');",
+      "console.log($1)",
+      "console.groupEnd();"
+    ]
+  },
+  "console.log('-----------------------------')": {
+    "prefix": "cl-: console.log-------",
+    "body": [
+      "console.log('-------- [${TM_FILENAME_BASE} Log] --------');",
+      "console.log($1)",
+      "console.log('---------------- [Log End] ----------------');"
+    ]
+  },
+  "console.time()": {
+    "prefix": "cti: console.time",
+    "body": ["console.time('$1');", "console.timeEnd('$1');"]
+  }
+}

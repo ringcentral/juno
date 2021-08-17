@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Box Box 1`] = `
+Array [
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+.c1 {
+  font-family: Lato,Helvetica,Arial,sans-serif;
+}
+
+.c3 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  color: #066FAC;
+  cursor: pointer;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3.focus-visible,
+.c3[data-focus-visible-added] {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c3:active {
+  color: rgba(6,111,172,0.76);
+}
+
+.c2.highlight-term {
+  color: #121212 !important;
+  background-color: #FFDFB1 !important;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c3:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+  }
+}
+
+<h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    The Box component packages
+     
+    <span
+      className="MuiTypography-root c1 c2 highlight-term MuiTypography-noWrap"
+      data-color="initial"
+      data-variant="inherit"
+      title="all the style functions"
+    >
+      all the style functions
+    </span>
+     that are exposed in
+     
+    <a
+      className="c3"
+      href="https://material-ui.com/system/basics/"
+      onKeyDown={[Function]}
+    >
+      <span
+        className="MuiTypography-root c1 c2 highlight-term MuiTypography-noWrap"
+        data-color="initial"
+        data-variant="inherit"
+        title="@material-ui/system"
+      >
+        @material-ui/system
+      </span>
+    </a>
+  </h5>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+<div
+    className="MuiBox-root MuiBox-root-2"
+  >
+    Box Example
+  </div>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+<div
+    className="MuiBox-root MuiBox-root-3"
+  >
+    Box Example
+  </div>,
+]
+`;

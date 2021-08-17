@@ -1,0 +1,196 @@
+$rc-palette-dark-variable: (
+  action: (
+    grayDark: #FFFFFF,
+    grayLight: #A0A2A9,
+    primary: #729AFF
+  ),
+  avatar: (
+    ash: #666666,
+    blueberry: #5A5ABF,
+    brass: #8E6B2B,
+    global: #6990FD,
+    gold: #7A7000,
+    lake: #1A70C1,
+    oasis: #04549F,
+    pear: #3C7E44,
+    persimmon: #A14B00,
+    sage: #047C68,
+    tomato: #C93637
+  ),
+  content: (
+    brand: #729AFF
+  ),
+  danger: (
+    b01: #391D19,
+    b02: #49241F,
+    b03: #D53C32,
+    b04: #D53C32,
+    f01: #49241F,
+    f02: #E68B85,
+    f11: #E68B85
+  ),
+  dialHeader: (
+    avatarBg: #6990FD,
+    avatarIcon: #FFFFFF,
+    bg: #383A43,
+    focusBorder: #729AFF,
+    icon: #FFFFFF,
+    text: #FFFFFF,
+    textHint: #898B94
+  ),
+  disabled: (
+    b01: #44464E,
+    f01: #72747E,
+    f02: #54565E
+  ),
+  error: (
+    main: #DD6057
+  ),
+  header: (
+    bgLeft: #30323A,
+    bgOverlay: rgba(137,139,148,0.16),
+    bgOverlayDisabled: rgba(137,139,148,0.08),
+    bgRight: #30323A,
+    border: transparent,
+    divider: rgba(0,0,0,0.12),
+    fabBg: #282A32,
+    fabIcon: #FFFFFF,
+    focusBorder: #FFFFFF,
+    icon: #FFFFFF,
+    iconDisabled: rgba(255,255,255,0.32),
+    text: #FFFFFF,
+    textHint: #898B94
+  ),
+  highContrast: transparent,
+  highlight: (
+    b01: #FFFFFF,
+    b02: #3E2A19,
+    b03: #884C12,
+    f01: #FF8800,
+    f02: #FF8800
+  ),
+  info: (
+    main: #A0A2A9
+  ),
+  informative: (
+    b01: #282A32,
+    f01: #222E49,
+    f02: #729AFF
+  ),
+  interactive: (
+    b01: #29334C,
+    b02: #356AFD,
+    f01: #729AFF
+  ),
+  label: (
+    black02: #FFFFFF,
+    blue01: #729AFF,
+    blue02: #729AFF,
+    green01: #72B375,
+    green02: #72B375,
+    orange01: #FF8800,
+    orange02: #FF8800,
+    purple01: #A89CD6,
+    purple02: #A89CD6,
+    red01: #E68B85,
+    red02: #E68B85,
+    teal01: #71ADBA,
+    teal02: #71ADBA,
+    yellow01: #D99F26,
+    yellow02: #D99F26
+  ),
+  nav: (
+    b01: #1e2027,
+    b02: #282A32,
+    bookmark: #729AFF,
+    ctlDefault: #72747E,
+    ctlSelected: #729AFF,
+    f01: #898B94,
+    f02: #A0A2A9,
+    f03: #BCBDC2,
+    f04: #FFFFFF,
+    iconDefault: #FFFFFF,
+    iconSelected: #729AFF,
+    line: #383A43,
+    mention: #FF8800,
+    menuBg: #356AFD,
+    menuText: #FFFFFF
+  ),
+  neutral: (
+    b01: #1e2027,
+    b02: #30323A,
+    b03: #383A43,
+    b04: #72747E,
+    b05: #72747E,
+    b06: #1e2027,
+    elevation: #282A32,
+    f01: #FFFFFF,
+    f02: #72747E,
+    f03: #898B94,
+    f04: #A0A2A9,
+    f05: #BCBDC2,
+    f06: #FFFFFF,
+    f07: #1e2027,
+    f11: #FFFFFF,
+    l01: #1e2027,
+    l02: #383A43,
+    l03: #54565E,
+    l04: #A0A2A9,
+    transparent: transparent
+  ),
+  presence: (
+    available: #3D9A4A,
+    busy: #DD6057,
+    invisible: #72747E
+  ),
+  primary: (
+    main: #356AFD
+  ),
+  secondary: (
+    main: #884C12
+  ),
+  subAction: #729AFF,
+  success: (
+    b01: #1C281B,
+    b02: #223221,
+    b03: #368440,
+    b04: #368440,
+    b05: #A0A2A9,
+    f01: #223221,
+    f02: #72B375,
+    f11: #72B375,
+    main: #3D9A4A
+  ),
+  tab: (
+    default: #FFFFFF,
+    selected: #729AFF
+  ),
+  type: dark,
+  umi: (
+    bg: #72747E,
+    mentioned: #FF8800,
+    text: #FFFFFF
+  ),
+  vDanger: (
+    f01: #DD6057
+  ),
+  vDisabled: (
+    f01: #54565E
+  ),
+  vNeutral: (
+    b01: #1e2027,
+    b02: #282A32,
+    b03: #30323A,
+    b04: #383A43,
+    f01: #FFFFFF
+  ),
+  warning: (
+    b01: #2B2416,
+    b02: #373D1B,
+    b03: #D99F26,
+    f01: #D99F26,
+    f02: #D99F26,
+    f11: #D99F26,
+    main: #74561D
+  )
+);

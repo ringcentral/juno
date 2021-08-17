@@ -1,0 +1,528 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🚀 Cleanup Components/Forms/Checkbox Checkbox 1`] = `
+.c2 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.c0.RcCheckbox-root {
+  color: #939393;
+  padding: 10px;
+}
+
+.c0.RcCheckbox-root.RcCheckbox-checked {
+  color: #066FAC;
+}
+
+.c0.RcCheckbox-root.RcCheckbox-disabled {
+  color: #B9B9B9;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcCheckbox-root:hover {
+    background-color: rgba(147,147,147,0.12);
+  }
+
+  .c0.RcCheckbox-root:hover.RcCheckbox-checked {
+    color: rgba(6,111,172,0.92);
+    background-color: rgba(6,111,172,0.12);
+  }
+}
+
+<span
+  aria-disabled={false}
+  className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-95 MuiCheckbox-root RcCheckbox-root c0"
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={null}
+>
+  <span
+    className="MuiIconButton-label"
+  >
+    <input
+      className="PrivateSwitchBase-input-98"
+      data-indeterminate={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="c1 unselect icon"
+    >
+      <svg
+        className="c2"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M27 2a3 3 0 013 3v22a3 3 0 01-3 3H5a3 3 0 01-3-3V5a3 3 0 013-3h22zm0 2.5H5a.5.5 0 00-.492.41L4.5 5v22a.5.5 0 00.41.492L5 27.5h22a.5.5 0 00.492-.41L27.5 27V5a.5.5 0 00-.41-.492L27 4.5z"
+        />
+      </svg>
+      
+    </span>
+  </span>
+</span>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Forms/Checkbox Checkbox Examples 1`] = `
+.c4 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+.c1 {
+  color: #121212;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c1 .RcFormControlLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c1 .RcCheckbox-root,
+.c1 .RcRadio-root {
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+.c1 .RcSwitch-root {
+  margin: 12px;
+}
+
+.c1.RcFormControlLabel-labelPlacementStart .RcCheckbox-root,
+.c1.RcFormControlLabel-labelPlacementStart .RcRadio-root {
+  margin-left: 4px;
+  margin-right: 0;
+}
+
+.c2.RcCheckbox-root {
+  color: #939393;
+  padding: 10px;
+}
+
+.c2.RcCheckbox-root.RcCheckbox-checked {
+  color: #066FAC;
+}
+
+.c2.RcCheckbox-root.RcCheckbox-disabled {
+  color: #B9B9B9;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcCheckbox-root:hover {
+    background-color: rgba(147,147,147,0.12);
+  }
+
+  .c2.RcCheckbox-root:hover.RcCheckbox-checked {
+    color: rgba(6,111,172,0.92);
+    background-color: rgba(6,111,172,0.12);
+  }
+}
+
+<div>
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Label placement end
+  </h5>
+  <label
+    className="MuiFormControlLabel-root RcFormControlLabel-root c1"
+  >
+    <span
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-99 MuiCheckbox-root RcCheckbox-root c2"
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={null}
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <input
+          className="PrivateSwitchBase-input-102"
+          data-indeterminate={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="c3 unselect icon"
+        >
+          <svg
+            className="c4"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M27 2a3 3 0 013 3v22a3 3 0 01-3 3H5a3 3 0 01-3-3V5a3 3 0 013-3h22zm0 2.5H5a.5.5 0 00-.492.41L4.5 5v22a.5.5 0 00.41.492L5 27.5h22a.5.5 0 00.492-.41L27.5 27V5a.5.5 0 00-.41-.492L27 4.5z"
+            />
+          </svg>
+          
+        </span>
+      </span>
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Label
+    </span>
+  </label>
+  <br />
+  <br />
+  <br />
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Label placement start
+  </h5>
+  <label
+    className="MuiFormControlLabel-root RcFormControlLabel-root c1 MuiFormControlLabel-labelPlacementStart RcFormControlLabel-labelPlacementStart"
+  >
+    <span
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-99 MuiCheckbox-root RcCheckbox-root c2"
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={null}
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <input
+          className="PrivateSwitchBase-input-102"
+          data-indeterminate={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="c3 unselect icon"
+        >
+          <svg
+            className="c4"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M27 2a3 3 0 013 3v22a3 3 0 01-3 3H5a3 3 0 01-3-3V5a3 3 0 013-3h22zm0 2.5H5a.5.5 0 00-.492.41L4.5 5v22a.5.5 0 00.41.492L5 27.5h22a.5.5 0 00.492-.41L27.5 27V5a.5.5 0 00-.41-.492L27 4.5z"
+            />
+          </svg>
+          
+        </span>
+      </span>
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Label
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Forms/Checkbox Checkbox with custom icon 1`] = `
+Array [
+  .c3 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.c0 {
+  color: #121212;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c0 .RcFormControlLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c0 .RcCheckbox-root,
+.c0 .RcRadio-root {
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+.c0 .RcSwitch-root {
+  margin: 12px;
+}
+
+.c0.RcFormControlLabel-labelPlacementStart .RcCheckbox-root,
+.c0.RcFormControlLabel-labelPlacementStart .RcRadio-root {
+  margin-left: 4px;
+  margin-right: 0;
+}
+
+.c1.RcCheckbox-root {
+  color: #939393;
+  padding: 10px;
+}
+
+.c1.RcCheckbox-root.RcCheckbox-checked {
+  color: #066FAC;
+}
+
+.c1.RcCheckbox-root.RcCheckbox-disabled {
+  color: #B9B9B9;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcCheckbox-root:hover {
+    background-color: rgba(147,147,147,0.12);
+  }
+
+  .c1.RcCheckbox-root:hover.RcCheckbox-checked {
+    color: rgba(6,111,172,0.92);
+    background-color: rgba(6,111,172,0.12);
+  }
+}
+
+<label
+    className="MuiFormControlLabel-root RcFormControlLabel-root c0"
+  >
+    <span
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-103 MuiCheckbox-root RcCheckbox-root c1"
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={null}
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <input
+          className="PrivateSwitchBase-input-106"
+          data-indeterminate={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="c2 member_border icon"
+        >
+          <svg
+            className="c3"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 18c7.067 0 13 4.315 13 10a2 2 0 01-2 2H5a2 2 0 01-2-2c0-5.685 5.933-10 13-10zm0 2c-5.736 0-10.447 3.193-10.955 7.269-.063.503.17.731.567.731H26.53c.239 0 .48-.158.444-.551C26.585 23.288 21.82 20 16 20zm0-18a7 7 0 110 14 7 7 0 010-14zm0 2a5 5 0 10.001 10.001A5 5 0 0016 4z"
+            />
+          </svg>
+          
+        </span>
+      </span>
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Are you available?
+    </span>
+  </label>,
+  .c3 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.c0 {
+  color: #121212;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c0 .RcFormControlLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c0 .RcCheckbox-root,
+.c0 .RcRadio-root {
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+.c0 .RcSwitch-root {
+  margin: 12px;
+}
+
+.c0.RcFormControlLabel-labelPlacementStart .RcCheckbox-root,
+.c0.RcFormControlLabel-labelPlacementStart .RcRadio-root {
+  margin-left: 4px;
+  margin-right: 0;
+}
+
+.c1.RcCheckbox-root {
+  color: #939393;
+  padding: 10px;
+}
+
+.c1.RcCheckbox-root.RcCheckbox-checked {
+  color: #066FAC;
+}
+
+.c1.RcCheckbox-root.RcCheckbox-disabled {
+  color: #B9B9B9;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcCheckbox-root:hover {
+    background-color: rgba(147,147,147,0.12);
+  }
+
+  .c1.RcCheckbox-root:hover.RcCheckbox-checked {
+    color: rgba(6,111,172,0.92);
+    background-color: rgba(6,111,172,0.12);
+  }
+}
+
+<label
+    className="MuiFormControlLabel-root RcFormControlLabel-root c0"
+  >
+    <span
+      aria-disabled={false}
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-103 MuiCheckbox-root RcCheckbox-root c1"
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={null}
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <input
+          className="PrivateSwitchBase-input-106"
+          data-indeterminate={false}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="c2 add_border icon"
+        >
+          <svg
+            className="c3"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm0 4a1 1 0 01.993.883L17 9l.001 5.999L23 15l.117.007a1 1 0 010 1.986L23 17l-5.999-.001L17 23l-.007.117a1 1 0 01-1.986 0L15 23l.001-6.001L9 17l-.117-.007a1 1 0 010-1.986L9 15l6.001-.001L15 9l.007-.117A1 1 0 0116 8z"
+            />
+          </svg>
+          
+        </span>
+      </span>
+    </span>
+    <span
+      className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+    >
+      Is that ok?
+    </span>
+  </label>,
+]
+`;

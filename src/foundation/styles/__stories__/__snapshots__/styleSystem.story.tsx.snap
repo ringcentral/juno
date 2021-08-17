@@ -1,0 +1,678 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 💅 Style system/utils FlexCenter 1`] = `
+.c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #066FAC;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  className="c0 c1 c2"
+>
+  flex center
+</div>
+`;
+
+exports[`Storyshots 💅 Style system/utils darken 1`] = `
+.c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #066FAC;
+}
+
+.c2 {
+  background-color: rgb(3,55,86);
+}
+
+<div
+  className="c0 c1 c2"
+>
+  darken
+</div>
+`;
+
+exports[`Storyshots 💅 Style system/utils ellipsis 1`] = `
+.c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #066FAC;
+}
+
+.c2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+<div
+  className="c0 c1 c2"
+>
+  line 1 line 2 line 3
+</div>
+`;
+
+exports[`Storyshots 💅 Style system/utils fakeBorder 1`] = `
+Array [
+  .c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #066FAC;
+}
+
+<div
+    className="c0 c1 "
+  >
+    border in highContrast theme
+  </div>,
+  .c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #066FAC;
+}
+
+.c2 {
+  box-shadow: inset 0 0 0 1px #C7C7C7;
+}
+
+<div
+    className="c0 c1 c2"
+  >
+    fakeborder
+  </div>,
+]
+`;
+
+exports[`Storyshots 💅 Style system/utils flexWidth 1`] = `
+.c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #066FAC;
+}
+
+.c2 {
+  -webkit-flex: 1 1 300px;
+  -ms-flex: 1 1 300px;
+  flex: 1 1 300px;
+  max-width: 300px;
+  min-width: 300px;
+  background: #066FAC;
+}
+
+.c3 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  max-width: unset;
+  min-width: unset;
+  background: #666666;
+}
+
+.c4 {
+  -webkit-flex: 1 1 200px;
+  -ms-flex: 1 1 200px;
+  flex: 1 1 200px;
+  max-width: 200px;
+  min-width: 200px;
+  background: #066FAC;
+}
+
+<div
+  className="MuiBox-root MuiBox-root-309"
+>
+  <div
+    className="c0 c1 c2"
+    width="300px"
+  />
+  <div
+    className="c0 c1 c3"
+    color="neutral.b04"
+    width="auto"
+  />
+  <div
+    className="c0 c1 c4"
+    width="200px"
+  />
+</div>
+`;
+
+exports[`Storyshots 💅 Style system/utils focusVisibleShadowStyle 1`] = `
+.c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  outline: none;
+  position: relative;
+}
+
+.c1.focus-visible:after,
+.c1[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #066FAC;
+  pointer-events: none;
+}
+
+<div
+  className="c0 c1"
+  tabIndex={0}
+>
+  focus visible
+</div>
+`;
+
+exports[`Storyshots 💅 Style system/utils getContrastBgColor 1`] = `
+Array [
+  .c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #066FAC;
+}
+
+.c2 {
+  color: #066FAC;
+  background-color: rgb(160,200,223);
+}
+
+<div
+    className="c0 c1 c2"
+  >
+    getContrastBgColor2
+  </div>,
+  .c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #066FAC;
+}
+
+.c2 {
+  color: #FF8800;
+  background-color: rgb(255,209,158);
+}
+
+<div
+    className="c0 c1 c2"
+  >
+    getContrastBgColor2
+  </div>,
+]
+`;
+
+exports[`Storyshots 💅 Style system/utils lighten 1`] = `
+.c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #066FAC;
+}
+
+.c2 {
+  background-color: rgb(130,183,213);
+}
+
+<div
+  className="c0 c1 c2"
+>
+  Lighten
+</div>
+`;
+
+exports[`Storyshots 💅 Style system/utils lineClamp 1`] = `
+.c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 38px;
+  word-break: break-word;
+}
+
+<div
+  className="c0 c1"
+>
+  line 1 
+  <br />
+  line 2 
+  <br />
+  line 3 
+  <br />
+</div>
+`;
+
+exports[`Storyshots 💅 Style system/utils nonStyleButton 1`] = `
+.c0 {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+  background-color: #FFDFB1;
+}
+
+<button
+  className="c0"
+>
+  NonStyleButton
+</button>
+`;
+
+exports[`Storyshots 💅 Style system/utils nonTouchHoverMedia 1`] = `
+.c0 {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+  background-color: #FFDFB1;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1:hover {
+    background-color: rgba(255,223,177,0.24);
+  }
+}
+
+<button
+  className="c0 c1"
+>
+  NonTouchHoverMedia
+</button>
+`;
+
+exports[`Storyshots 💅 Style system/utils opacity 1`] = `
+.c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #066FAC;
+}
+
+.c2 {
+  opacity: 0.48;
+}
+
+<div
+  className="c0 c1 c2"
+>
+  Opacity
+</div>
+`;
+
+exports[`Storyshots 💅 Style system/utils palette 1`] = `
+.c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  background-color: #FF8800;
+}
+
+<div
+  className="c0 c1"
+>
+  Palette
+</div>
+`;
+
+exports[`Storyshots 💅 Style system/utils paletteContrastText 1`] = `
+.c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #066FAC;
+}
+
+.c2 {
+  color: #fff;
+}
+
+<div
+  className="c0 c1 c2"
+>
+  PaletteContrastText
+</div>
+`;
+
+exports[`Storyshots 💅 Style system/utils radius 1`] = `
+.c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #066FAC;
+}
+
+.c2 {
+  border-radius: 50%;
+}
+
+<div
+  className="c0 c1 c2"
+/>
+`;
+
+exports[`Storyshots 💅 Style system/utils shadows 1`] = `
+.c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #066FAC;
+}
+
+.c2 {
+  border-radius: 50%;
+}
+
+.c3 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+
+<div
+  className="c0 c1 c2 c3"
+/>
+`;
+
+exports[`Storyshots 💅 Style system/utils spacing 1`] = `
+Array [
+  .c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #066FAC;
+}
+
+.c2 {
+  border-radius: 50%;
+}
+
+.c3 {
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+<div
+    className="c0 c1 c2 c3"
+  >
+    padding
+  </div>,
+  .c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #066FAC;
+}
+
+.c2 {
+  border-radius: 50%;
+}
+
+.c3 {
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.c4 {
+  margin: 40px;
+}
+
+<div
+    className="c0 c1 c2 c3 c4"
+  >
+    margin
+  </div>,
+]
+`;
+
+exports[`Storyshots 💅 Style system/utils typography 1`] = `
+.c0 {
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 40px;
+}
+
+<div
+  className="c0"
+>
+  Typography display1
+</div>
+`;
+
+exports[`Storyshots 💅 Style system/utils zIndex 1`] = `
+.c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #066FAC;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  -webkit-flex: 1 1 30px;
+  -ms-flex: 1 1 30px;
+  flex: 1 1 30px;
+  max-width: 30px;
+  min-width: 30px;
+  height: 30px;
+  background: #066FAC;
+}
+
+.c5 {
+  -webkit-flex: 1 1 100px;
+  -ms-flex: 1 1 100px;
+  flex: 1 1 100px;
+  max-width: 100px;
+  min-width: 100px;
+  background: #FF8800;
+}
+
+.c4 {
+  position: absolute;
+  z-index: 1400;
+}
+
+.c6 {
+  position: absolute;
+  z-index: 1300;
+}
+
+<div
+  className="c0 c1 c2"
+>
+  <div
+    className="c0 c1 c3 c4"
+    height="30px"
+    width="30px"
+  >
+    snackbar
+  </div>
+  <div
+    className="c0 c1 c5 c6"
+    color="highlight.b01"
+    width="100px"
+  >
+    modal
+  </div>
+</div>
+`;

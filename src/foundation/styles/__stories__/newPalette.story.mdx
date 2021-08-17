@@ -1,0 +1,213 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="API Reference/Styles/newPalette" />
+
+## newPalette
+
+### Type aliases
+
+- [NU](#nu)
+- [PaletteReturnType](#palettereturntype)
+- [Pl](#pl)
+
+### Functions
+
+- [getPaletteColor](#getpalettecolor)
+- [getParsePaletteColor](#getparsepalettecolor)
+- [palette2](#palette2)
+
+## Type aliases
+
+### NU
+
+Ƭ **NU**: _NonNullable‹T›_
+
+---
+
+### PaletteReturnType
+
+Ƭ **PaletteReturnType**: _function_
+
+#### Type declaration:
+
+▸ (`__namedParameters`: object): _any_
+
+**Parameters:**
+
+▪ **\_\_namedParameters**: _object_
+
+| Name    | Type                                    |
+| ------- | --------------------------------------- |
+| `theme` | object & object & DefaultTheme & object |
+
+---
+
+### Pl
+
+Ƭ **Pl**: _RcPalette_
+
+## Functions
+
+### getPaletteColor
+
+▸ **getPaletteColor**(...`args`: any[]): _(Anonymous function)_
+
+**Parameters:**
+
+| Name      | Type  |
+| --------- | ----- |
+| `...args` | any[] |
+
+**Returns:** _(Anonymous function)_
+
+---
+
+### getParsePaletteColor
+
+▸ **getParsePaletteColor**(`color?`: RcPaletteProp, `defaultColor?`: RcPaletteProp | null, `useMain`: boolean): _function_
+
+**Parameters:**
+
+| Name            | Type                      | Default |
+| --------------- | ------------------------- | ------- |
+| `color?`        | RcPaletteProp             | -       |
+| `defaultColor?` | RcPaletteProp &#124; null | -       |
+| `useMain`       | boolean                   | true    |
+
+**Returns:** _function_
+
+▸ (`__namedParameters`: object): _any_
+
+**Parameters:**
+
+▪ **\_\_namedParameters**: _object_
+
+| Name    | Type                                    |
+| ------- | --------------------------------------- |
+| `theme` | object & object & DefaultTheme & object |
+
+---
+
+### palette2
+
+▸ **palette2**‹**T**›(`obj`: T): _[PaletteReturnType](#palettereturntype)_
+
+This is the new version palette, support five layer types palette color get,
+! Not support opacity, please use `setOpacity` to do that,
+! like `setOpacity(palette2('neutral', 'b05'), '80')`
+
+**Type parameters:**
+
+▪ **T**: _keyof Pl_
+
+**Parameters:**
+
+| Name  | Type | Description |
+| ----- | ---- | ----------- |
+| `obj` | T    | main color  |
+
+**Returns:** _[PaletteReturnType](#palettereturntype)_
+
+▸ **palette2**‹**T**, **P1**›(`obj`: T, `prop1`: P1): _[PaletteReturnType](#palettereturntype)_
+
+This is the new version palette, support five layer types palette color get,
+! Not support opacity, please use `setOpacity` to do that,
+! like `setOpacity(palette2('neutral', 'b05'), '80')`
+
+**Type parameters:**
+
+▪ **T**: _keyof Pl_
+
+▪ **P1**: _keyof NU<Pl[T]>_
+
+**Parameters:**
+
+| Name    | Type | Description |
+| ------- | ---- | ----------- |
+| `obj`   | T    | main color  |
+| `prop1` | P1   | sub         |
+
+**Returns:** _[PaletteReturnType](#palettereturntype)_
+
+▸ **palette2**‹**T**, **P1**, **P2**›(`obj`: T, `prop1`: P1, `prop2`: P2): _[PaletteReturnType](#palettereturntype)_
+
+This is the new version palette, support five layer types palette color get,
+! Not support opacity, please use `setOpacity` to do that,
+! like `setOpacity(palette2('neutral', 'b05'), '80')`
+
+**Type parameters:**
+
+▪ **T**: _keyof Pl_
+
+▪ **P1**: _keyof NU<Pl[T]>_
+
+▪ **P2**: _keyof NU<NU<Pl[T]>[P1]>_
+
+**Parameters:**
+
+| Name    | Type | Description |
+| ------- | ---- | ----------- |
+| `obj`   | T    | main color  |
+| `prop1` | P1   | sub         |
+| `prop2` | P2   | sub         |
+
+**Returns:** _[PaletteReturnType](#palettereturntype)_
+
+▸ **palette2**‹**T**, **P1**, **P2**, **P3**›(`obj`: T, `prop1`: P1, `prop2`: P2, `prop3`: P3): _[PaletteReturnType](#palettereturntype)_
+
+This is the new version palette, support five layer types palette color get,
+! Not support opacity, please use `setOpacity` to do that,
+! like `setOpacity(palette2('neutral', 'b05'), '80')`
+
+**Type parameters:**
+
+▪ **T**: _keyof Pl_
+
+▪ **P1**: _keyof NU<Pl[T]>_
+
+▪ **P2**: _keyof NU<NU<Pl[T]>[P1]>_
+
+▪ **P3**: _keyof NU<NU<NU<Pl[T]>[P1]>[P2]>_
+
+**Parameters:**
+
+| Name    | Type | Description |
+| ------- | ---- | ----------- |
+| `obj`   | T    | main color  |
+| `prop1` | P1   | sub         |
+| `prop2` | P2   | sub         |
+| `prop3` | P3   | sub         |
+
+**Returns:** _[PaletteReturnType](#palettereturntype)_
+
+▸ **palette2**‹**T**, **P1**, **P2**, **P3**, **P4**›(`obj`: T, `prop1`: P1, `prop2`: P2, `prop3`: P3, `prop4`: P4): _[PaletteReturnType](#palettereturntype)_
+
+This is the new version palette, support five layer types palette color get,
+! Not support opacity, please use `setOpacity` to do that,
+! like `setOpacity(palette2('neutral', 'b05'), '80')`
+
+**Type parameters:**
+
+▪ **T**: _keyof Pl_
+
+▪ **P1**: _keyof NU<Pl[T]>_
+
+▪ **P2**: _keyof NU<NU<Pl[T]>[P1]>_
+
+▪ **P3**: _keyof NU<NU<NU<Pl[T]>[P1]>[P2]>_
+
+▪ **P4**: _keyof NU<NU<NU<NU<Pl[T]>[P1]>[P2]>[P3]>_
+
+**Parameters:**
+
+| Name    | Type | Description |
+| ------- | ---- | ----------- |
+| `obj`   | T    | main color  |
+| `prop1` | P1   | sub         |
+| `prop2` | P2   | sub         |
+| `prop3` | P3   | sub         |
+| `prop4` | P4   | sub         |
+
+**Returns:** _[PaletteReturnType](#palettereturntype)_

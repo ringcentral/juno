@@ -1,0 +1,84 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="📖 Component Docs/Button" />
+
+# Button
+
+> `Button` base on `Mui Button`, we provide more type of button, and different size for you use in different place.
+> All `Mui` props still work, see more in `material-ui` doc.
+
+[Go to this canvas](?path=/story/🚀-cleanup-components-buttons--button)
+
+<Canvas>
+  <Story id="🚀-cleanup-components-buttons--button" />
+</Canvas>
+
+## With Icon
+
+You can use icon with `startIcon` and `endIcon`, that will provide you a buildin spacing between content.
+
+> also you still can put Icon inside `children`, but that will out of our controll, you should make that style by yourself.
+
+<Canvas>
+  <Story id="🚀-cleanup-components-buttons--button-with-icon" />
+</Canvas>
+
+## Custom button color
+
+We can use `color` prop set with `color token`.
+
+```tsx
+<RcButton color="danger.b03">logout</RcButton>
+```
+
+<Canvas>
+  <Story id="🚀-cleanup-components-buttons--button-with-custom-color" />
+</Canvas>
+
+## Variant
+
+We support `'text' | 'outlined' | 'contained' | 'plain'` variants, each variant have same button function, but different in display style.
+
+<Canvas>
+  <Story id="🚀-cleanup-components-buttons--button-variants" />
+</Canvas>
+
+## Size
+
+Button have different size show below, can use in different place.
+
+<Canvas>
+  <Story id="🚀-cleanup-components-buttons--button-sizes" />
+</Canvas>
+
+## Loading
+
+Loading props can help you add loading spinner on Button with `loadingMode`,
+
+when you want some custom prop, also can set that `RcCircularProgress` props with `CircularProgressProps` prop.
+
+<Canvas>
+  <Story id="🚀-cleanup-components-buttons--button-with-loading" />
+</Canvas>
+
+## Radius
+
+We can set that button radius with `radius` props, like `round` below.
+
+<Canvas>
+  <Story id="🚀-cleanup-components-buttons--button-with-custom-radius" />
+</Canvas>
+
+## KeepElevation
+
+In `contained` variant, we default not have elevation in button style, if you still want that, you can set `keepElevation` as `true`.
+
+> that elevation will show more clearly in `light` mode theme.
+
+<Canvas>
+  <Story id="🚀-cleanup-components-buttons--button-with-keep-elevation" />
+</Canvas>
+
+## Cursor not-allowed
+
+view that in [Mui Button](https://material-ui.com/components/buttons/#cursor-not-allowed)
