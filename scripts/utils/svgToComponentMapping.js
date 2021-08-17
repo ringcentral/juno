@@ -72,7 +72,7 @@ module.exports = {
   "GoogleSlideD": "google-slide-D",
   "GoogleSheetD": "google-sheet-D",
   "DefaultVideoD": "default-video-D",
-  "GifD": "gif-D",
+  "GifFileD": "gif-file-D",
   "ZipD": "zip-D",
   "DefaultFileD": "default-file-D",
   "ImageBrokenD": "image-broken-D",
@@ -130,7 +130,9 @@ module.exports = {
   "ResendFax": "resend-fax",
   "NoAudio": "no-audio",
   "Audio": "audio",
-  "MenuFax": "menu-fax",
+  "NewFax": "new-fax",
+  "FaxBorder": "fax_border",
+  "Fax": "fax",
   "FailedFax": "failed-fax",
   "FailedFaxBorder": "failed-fax_border",
   "InboundFaxBorder": "inbound-fax_border",
@@ -387,5 +389,6 @@ module.exports = {
   "DefaultGroupAvatar": "default-group-avatar",
   "DefaultAvatar": "default-avatar",
   "Assignment": "assignment",
-  "ItemListSelected": "item-list-selected"
+  "ItemListSelected": "item-list-selected",
+  "MenuFax": "menu-fax"
 };
