@@ -13,6 +13,7 @@ console.log('[Release]: prepare package start');
 
 const srcMovePaths = [
   'README.md',
+  'LICENSE',
   {
     source: 'src/components/Dialer/DialPad/assets/RcDialerPadSounds.json',
     to: 'RcDialerPadSounds.json',
