@@ -7,7 +7,7 @@ import { ThemeProvider as StyledThemeProvider } from '../styled-components';
 import createTheme from './createTheme';
 import { RcThemeInput } from './theme.type';
 
-type RcThemeProviderProps = {
+export type RcThemeProviderProps = {
   /** custom theme */
   theme?: RcThemeInput;
   children?: ReactNode;
