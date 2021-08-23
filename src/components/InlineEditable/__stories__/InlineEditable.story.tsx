@@ -1,7 +1,7 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 import React, { ComponentProps, useState } from 'react';
 
-import { palette2, shadows, styled } from '../../../foundation';
+import { palette2, shadows, styled, useTheme } from '../../../foundation';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -257,6 +257,7 @@ export const InlineEditableWithTooltip: Story<InlineEditableProps> = () => {
         title="custom title"
         placeholder="Enter value here"
         TooltipProps={{ title: 'click to edit' }}
+        multiline
       />
       <br />
       <br />
@@ -273,22 +274,35 @@ export const InlineEditableWithoutPlaceholder: Story<InlineEditableProps> = () =
   switchToControlKnobs();
 
   const [value, setValue] = useState('');
+  const [disabled, setDisabled] = useState(false);
+
+  const theme = useTheme();
+
+  const green = palette2('success', 'b02')({ theme });
+  const red = palette2('danger', 'b04')({ theme });
 
   return (
     <>
       <RcTypography variant="title1" color="neutral.f06">
-        this story is use to percy verify
+        When not have value and also non placeholder, show size boundary below.
       </RcTypography>
       <br />
       <RcTypography color="neutral.f06">
         red is InlineEditable container, green is input
       </RcTypography>
       <br />
+      <RcButton onClick={() => setDisabled(!disabled)}>
+        Switch to {disabled ? 'enabled' : 'disabled'}
+      </RcButton>
+      <br />
       <RcTypography color="neutral.f06">one line: </RcTypography>
       <RcInlineEditable
-        style={{ backgroundColor: 'red' }}
+        style={{ backgroundColor: red }}
+        disabled={disabled}
         value={value}
-        inputProps={{ style: { backgroundColor: 'green' } }}
+        inputProps={{
+          style: { backgroundColor: green },
+        }}
         onChange={(newValue, reason) => {
           console.log(newValue, reason);
           setValue(newValue);
@@ -297,9 +311,10 @@ export const InlineEditableWithoutPlaceholder: Story<InlineEditableProps> = () =
       <br />
       <RcTypography color="neutral.f06">multiple line: </RcTypography>
       <RcInlineEditable
-        style={{ backgroundColor: 'red' }}
+        style={{ backgroundColor: red }}
+        disabled={disabled}
         value={value}
-        inputProps={{ style: { backgroundColor: 'green' } }}
+        inputProps={{ style: { backgroundColor: green } }}
         onChange={(newValue, reason) => {
           console.log(newValue, reason);
           setValue(newValue);
@@ -310,4 +325,5 @@ export const InlineEditableWithoutPlaceholder: Story<InlineEditableProps> = () =
   );
 };
 
-InlineEditableWithTooltip.storyName = 'InlineEditable without placeholder';
+InlineEditableWithoutPlaceholder.storyName =
+  'InlineEditable without placeholder';
