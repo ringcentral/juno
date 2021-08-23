@@ -1,5 +1,383 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots 🚀 Cleanup Components/InlineEditable Inline Editable Without Placeholder 1`] = `
+Array [
+  .c0 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  color: #121212;
+}
+
+<h6
+    className="MuiTypography-root c0"
+    data-color="neutral.f06"
+    data-variant="title1"
+  >
+    this story is use to percy verify
+  </h6>,
+  <br />,
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+<p
+    className="MuiTypography-root c0"
+    data-color="neutral.f06"
+    data-variant="body1"
+  >
+    red is InlineEditable container, green is input
+  </p>,
+  <br />,
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+<p
+    className="MuiTypography-root c0"
+    data-color="neutral.f06"
+    data-variant="body1"
+  >
+    one line: 
+  </p>,
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  min-width: 32px;
+  margin: -4px;
+  color: #121212;
+}
+
+.c0.RcInlineEditable-saving {
+  pointer-events: none;
+}
+
+.c0 .RcInlineEditable-label {
+  margin: 4px;
+  position: relative;
+  outline: none;
+  box-sizing: border-box;
+  pointer-events: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  white-space: pre;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0 .RcInlineEditable-label::after {
+  content: ' ';
+  width: 0;
+  visibility: hidden;
+  display: inline-block;
+}
+
+.c0 .RcInlineEditable-placeholder {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #757575;
+}
+
+.c0 .RcInlineEditable-textField {
+  position: absolute;
+  width: 100%;
+  border: 1px solid transparent;
+  padding: 2px;
+  background-color: transparent;
+  color: transparent;
+  line-height: inherit;
+  white-space: pre-wrap;
+  word-break: break-all;
+  box-sizing: border-box;
+  font: inherit;
+  outline: none;
+  border-radius: 4px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.c0 .RcInlineEditable-textField::-webkit-input-placeholder {
+  font: inherit;
+  opacity: 0;
+  color: #757575;
+}
+
+.c0 .RcInlineEditable-textField::-moz-placeholder {
+  font: inherit;
+  opacity: 0;
+  color: #757575;
+}
+
+.c0 .RcInlineEditable-textField:-ms-input-placeholder {
+  font: inherit;
+  opacity: 0;
+  color: #757575;
+}
+
+.c0 .RcInlineEditable-textField::placeholder {
+  font: inherit;
+  opacity: 0;
+  color: #757575;
+}
+
+.c0 .RcInlineEditable-textField:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+}
+
+.c0 .RcInlineEditable-textField:focus {
+  background-color: #FFFFFF;
+  border: 2px solid #066FAC;
+  color: inherit;
+}
+
+.c0 .RcInlineEditable-textField:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c0 .RcInlineEditable-textField:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c0 .RcInlineEditable-textField:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c0 .RcInlineEditable-textField:focus::placeholder {
+  opacity: 1;
+}
+
+.c0 .RcInlineEditable-textField:focus ~ .RcInlineEditable-label {
+  visibility: hidden;
+}
+
+<div
+    className="c0"
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "red",
+      }
+    }
+  >
+    <input
+      autoComplete="off"
+      className="RcInlineEditable-textField"
+      onBlurCapture={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      style={
+        Object {
+          "backgroundColor": "green",
+        }
+      }
+      type="text"
+      value=""
+    />
+    <div
+      className="RcInlineEditable-label RcInlineEditable-placeholder"
+      onFocusCapture={[Function]}
+      onKeyDown={[Function]}
+      tabIndex={-1}
+      title=""
+    />
+  </div>,
+  <br />,
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+<p
+    className="MuiTypography-root c0"
+    data-color="neutral.f06"
+    data-variant="body1"
+  >
+    multiple line: 
+  </p>,
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-width: 32px;
+  margin: -4px;
+  color: #121212;
+}
+
+.c0.RcInlineEditable-saving {
+  pointer-events: none;
+}
+
+.c0 .RcInlineEditable-label {
+  margin: 4px;
+  position: relative;
+  outline: none;
+  box-sizing: border-box;
+  pointer-events: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  white-space: pre-wrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0 .RcInlineEditable-label::after {
+  content: ' ';
+  width: 0;
+  visibility: hidden;
+  display: inline-block;
+}
+
+.c0 .RcInlineEditable-placeholder {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #757575;
+}
+
+.c0 .RcInlineEditable-textField {
+  position: absolute;
+  width: 100%;
+  border: 1px solid transparent;
+  padding: 2px;
+  background-color: transparent;
+  color: transparent;
+  line-height: inherit;
+  white-space: pre-wrap;
+  word-break: break-all;
+  box-sizing: border-box;
+  font: inherit;
+  outline: none;
+  border-radius: 4px;
+  height: 100%;
+  overflow: hidden;
+  resize: none;
+}
+
+.c0 .RcInlineEditable-textField::-webkit-input-placeholder {
+  font: inherit;
+  opacity: 0;
+  color: #757575;
+}
+
+.c0 .RcInlineEditable-textField::-moz-placeholder {
+  font: inherit;
+  opacity: 0;
+  color: #757575;
+}
+
+.c0 .RcInlineEditable-textField:-ms-input-placeholder {
+  font: inherit;
+  opacity: 0;
+  color: #757575;
+}
+
+.c0 .RcInlineEditable-textField::placeholder {
+  font: inherit;
+  opacity: 0;
+  color: #757575;
+}
+
+.c0 .RcInlineEditable-textField:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+}
+
+.c0 .RcInlineEditable-textField:focus {
+  background-color: #FFFFFF;
+  border: 2px solid #066FAC;
+  color: inherit;
+}
+
+.c0 .RcInlineEditable-textField:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c0 .RcInlineEditable-textField:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c0 .RcInlineEditable-textField:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c0 .RcInlineEditable-textField:focus::placeholder {
+  opacity: 1;
+}
+
+.c0 .RcInlineEditable-textField:focus ~ .RcInlineEditable-label {
+  visibility: hidden;
+}
+
+<div
+    className="c0"
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "red",
+      }
+    }
+  >
+    <textarea
+      autoComplete="off"
+      className="RcInlineEditable-textField"
+      onBlurCapture={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      style={
+        Object {
+          "backgroundColor": "green",
+        }
+      }
+      value=""
+    />
+    <div
+      className="RcInlineEditable-label RcInlineEditable-placeholder"
+      onFocusCapture={[Function]}
+      onKeyDown={[Function]}
+      tabIndex={-1}
+      title=""
+    />
+  </div>,
+]
+`;
+
 exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable 1`] = `
 Array [
   .c0 {
@@ -30,26 +408,25 @@ Array [
   text-overflow: ellipsis;
   word-break: break-all;
   white-space: pre;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.c0 .RcInlineEditable-label:empty::after {
+.c0 .RcInlineEditable-label::after {
   content: ' ';
   width: 0;
   visibility: hidden;
-  display: block;
+  display: inline-block;
 }
 
 .c0 .RcInlineEditable-placeholder {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #757575;
-}
-
-.c0 .RcInlineEditable-placeholder::after {
-  content: '' !important;
-  display: none !important;
-}
-
-.c0 .RcInlineEditable-placeholder:before {
-  content: 'Enter value here';
 }
 
 .c0 .RcInlineEditable-textField {
@@ -168,7 +545,7 @@ Array [
       tabIndex={-1}
       title=""
     >
-      
+      Enter value here
     </div>
   </div>,
   @media (hover:hover) and (pointer:fine) {
@@ -331,26 +708,25 @@ Array [
   text-overflow: ellipsis;
   word-break: break-all;
   white-space: pre;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.c0 .RcInlineEditable-label:empty::after {
+.c0 .RcInlineEditable-label::after {
   content: ' ';
   width: 0;
   visibility: hidden;
-  display: block;
+  display: inline-block;
 }
 
 .c0 .RcInlineEditable-placeholder {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #757575;
-}
-
-.c0 .RcInlineEditable-placeholder::after {
-  content: '' !important;
-  display: none !important;
-}
-
-.c0 .RcInlineEditable-placeholder:before {
-  content: 'Enter value here';
 }
 
 .c0 .RcInlineEditable-textField {
@@ -450,7 +826,7 @@ Array [
       tabIndex={-1}
       title=""
     >
-      
+      Enter value here
     </div>
   </div>,
   <br />,
@@ -499,15 +875,11 @@ Array [
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-all;
-  white-space: pre;
   white-space: pre-wrap;
-}
-
-.c0 .RcInlineEditable-label:empty::after {
-  content: ' ';
-  width: 0;
-  visibility: hidden;
-  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c0 .RcInlineEditable-label::after {
@@ -518,16 +890,11 @@ Array [
 }
 
 .c0 .RcInlineEditable-placeholder {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #757575;
-}
-
-.c0 .RcInlineEditable-placeholder::after {
-  content: '' !important;
-  display: none !important;
-}
-
-.c0 .RcInlineEditable-placeholder:before {
-  content: 'Enter value here';
 }
 
 .c0 .RcInlineEditable-textField {
@@ -625,7 +992,7 @@ Array [
       tabIndex={-1}
       title=""
     >
-      
+      Enter value here
     </div>
   </div>,
 ]
@@ -659,15 +1026,11 @@ exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable multil
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-all;
-  white-space: pre;
   white-space: pre-wrap;
-}
-
-.c0 .RcInlineEditable-label:empty::after {
-  content: ' ';
-  width: 0;
-  visibility: hidden;
-  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c0 .RcInlineEditable-label::after {
@@ -678,16 +1041,11 @@ exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable multil
 }
 
 .c0 .RcInlineEditable-placeholder {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #757575;
-}
-
-.c0 .RcInlineEditable-placeholder::after {
-  content: '' !important;
-  display: none !important;
-}
-
-.c0 .RcInlineEditable-placeholder:before {
-  content: 'Enter value here';
 }
 
 .c0 .RcInlineEditable-textField {
@@ -830,15 +1188,11 @@ exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable only e
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-all;
-  white-space: pre;
   white-space: pre-wrap;
-}
-
-.c0 .RcInlineEditable-label:empty::after {
-  content: ' ';
-  width: 0;
-  visibility: hidden;
-  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c0 .RcInlineEditable-label::after {
@@ -849,16 +1203,11 @@ exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable only e
 }
 
 .c0 .RcInlineEditable-placeholder {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #757575;
-}
-
-.c0 .RcInlineEditable-placeholder::after {
-  content: '' !important;
-  display: none !important;
-}
-
-.c0 .RcInlineEditable-placeholder:before {
-  content: 'Enter value here';
 }
 
 .c0 .RcInlineEditable-textField {
@@ -956,7 +1305,7 @@ exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable only e
     tabIndex={-1}
     title=""
   >
-    
+    Enter value here
   </div>
 </div>
 `;
@@ -990,26 +1339,25 @@ exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable with l
   text-overflow: ellipsis;
   word-break: break-all;
   white-space: pre;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.c1 .RcInlineEditable-label:empty::after {
+.c1 .RcInlineEditable-label::after {
   content: ' ';
   width: 0;
   visibility: hidden;
-  display: block;
+  display: inline-block;
 }
 
 .c1 .RcInlineEditable-placeholder {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #757575;
-}
-
-.c1 .RcInlineEditable-placeholder::after {
-  content: '' !important;
-  display: none !important;
-}
-
-.c1 .RcInlineEditable-placeholder:before {
-  content: 'Enter value here';
 }
 
 .c1 .RcInlineEditable-textField {
@@ -1130,7 +1478,7 @@ exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable with l
 </div>
 `;
 
-exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable with tooltip 1`] = `
+exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable without placeholder 1`] = `
 Array [
   .c0 {
   font-size: 0.9375rem;
@@ -1160,26 +1508,25 @@ Array [
   text-overflow: ellipsis;
   word-break: break-all;
   white-space: pre;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.c0 .RcInlineEditable-label:empty::after {
+.c0 .RcInlineEditable-label::after {
   content: ' ';
   width: 0;
   visibility: hidden;
-  display: block;
+  display: inline-block;
 }
 
 .c0 .RcInlineEditable-placeholder {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #757575;
-}
-
-.c0 .RcInlineEditable-placeholder::after {
-  content: '' !important;
-  display: none !important;
-}
-
-.c0 .RcInlineEditable-placeholder:before {
-  content: 'Enter value here';
 }
 
 .c0 .RcInlineEditable-textField {
@@ -1355,26 +1702,25 @@ Array [
   text-overflow: ellipsis;
   word-break: break-all;
   white-space: pre;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.c0 .RcInlineEditable-label:empty::after {
+.c0 .RcInlineEditable-label::after {
   content: ' ';
   width: 0;
   visibility: hidden;
-  display: block;
+  display: inline-block;
 }
 
 .c0 .RcInlineEditable-placeholder {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #757575;
-}
-
-.c0 .RcInlineEditable-placeholder::after {
-  content: '' !important;
-  display: none !important;
-}
-
-.c0 .RcInlineEditable-placeholder:before {
-  content: 'Enter value here';
 }
 
 .c0 .RcInlineEditable-textField {
