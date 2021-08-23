@@ -13,6 +13,7 @@ import {
 import { Title } from '../../../storybook/components';
 import { RcButton } from '../../Buttons';
 import { RcCircularProgress } from '../../Progress';
+import { RcTypography } from '../../Typography';
 import { RcInlineEditable } from '../InlineEditable';
 
 export default {
@@ -267,3 +268,46 @@ export const InlineEditableWithTooltip: Story<InlineEditableProps> = () => {
 };
 
 InlineEditableWithTooltip.storyName = 'InlineEditable with tooltip';
+
+export const InlineEditableWithoutPlaceholder: Story<InlineEditableProps> = () => {
+  switchToControlKnobs();
+
+  const [value, setValue] = useState('');
+
+  return (
+    <>
+      <RcTypography variant="title1" color="neutral.f06">
+        this story is use to percy verify
+      </RcTypography>
+      <br />
+      <RcTypography color="neutral.f06">
+        red is InlineEditable container, green is input
+      </RcTypography>
+      <br />
+      <RcTypography color="neutral.f06">one line: </RcTypography>
+      <RcInlineEditable
+        style={{ backgroundColor: 'red' }}
+        value={value}
+        inputProps={{ style: { backgroundColor: 'green' } }}
+        onChange={(newValue, reason) => {
+          console.log(newValue, reason);
+          setValue(newValue);
+        }}
+      />
+      <br />
+      <RcTypography color="neutral.f06">multiple line: </RcTypography>
+      <RcInlineEditable
+        style={{ backgroundColor: 'red' }}
+        value={value}
+        inputProps={{ style: { backgroundColor: 'green' } }}
+        onChange={(newValue, reason) => {
+          console.log(newValue, reason);
+          setValue(newValue);
+        }}
+        multiline
+      />
+    </>
+  );
+};
+
+InlineEditableWithTooltip.storyName = 'InlineEditable without placeholder';

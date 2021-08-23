@@ -13,7 +13,7 @@ import { inputStyle, textareaStyle } from './textFieldStyle';
 export const InlineEditableStyle: RcThemedStyled<
   RcInlineEditableProps,
   any
-> = ({ variant, multiline, fullWidth, disabled, placeholder, color }) => {
+> = ({ variant, multiline, fullWidth, disabled, color }) => {
   return css`
     ${typography(variant!)};
     position: relative;
@@ -35,39 +35,34 @@ export const InlineEditableStyle: RcThemedStyled<
       pointer-events: ${disabled ? 'initial' : 'none'};
       ${ellipsis()};
       word-break: break-all;
-      white-space: pre;
+      white-space: ${multiline ? 'pre-wrap' : 'pre'};
 
-      :empty::after {
+      ${
+        ''
+        /*
+        1. the single '\n' would be ignore in the last line. so need append ' ' after '\n' when multiline.
+        2. need keep content height when placeholder is empty.
+        */
+      }
+      ::after {
         content: ' ';
         width: 0;
         visibility: hidden;
-        display: block;
+        display: inline-block;
       }
 
-      ${multiline &&
-        css`
-          white-space: pre-wrap;
-
-          ::after {
-            content: ' ';
-            width: 0;
-            visibility: hidden;
-            display: inline-block;
-          }
-        `};
+      ${
+        '' /* prevent select double content when the input has a value and not disabled (input would be removed when disabled) */
+      }
+      user-select: ${!disabled && 'none'};
     }
 
     .${RcInlineEditableClasses.placeholder} {
-      ::after {
-        content: '' !important;
-        display: none !important;
+      ${
+        '' /* prevent select placeholder when the input does not have a value */
       }
-
+      user-select: none;
       color: ${placeholderColor};
-
-      &:before {
-        content: ${placeholder && `'${placeholder}'`};
-      }
     }
 
     .${RcInlineEditableClasses.textField} {

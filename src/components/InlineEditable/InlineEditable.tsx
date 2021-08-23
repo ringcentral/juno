@@ -335,7 +335,7 @@ const _RcInlineEditable = forwardRef<any, RcInlineEditableProps>(
           onFocusCapture={handleFocusCapture}
           onKeyDown={disabled || saving ? undefined : focusTextField}
         >
-          {displayValue}
+          {displayValue || placeholder}
         </div>
       </div>
     );
