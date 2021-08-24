@@ -774,6 +774,7 @@ export const DownshiftAutocomplete: Story<DownshiftProps> = ({ ...args }) => {
       inputValue={inputValue}
       onInputChange={(value) => {
         setInputValue(value || '');
+        console.log('input change', value);
       }}
       SuggestionListProps={{
         padding: true,

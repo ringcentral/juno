@@ -17,6 +17,7 @@ export type InitContext = {
   ref: React.MutableRefObject<RcDownshiftRef | null>;
   input: HTMLElement;
   onChangeFn: jest.Mock;
+  onInputChangeFn: jest.Mock;
   onKeyDownFn: jest.Mock;
   value: RcDownshiftSelectedItem[];
   updateOption: React.Dispatch<React.SetStateAction<RcDownshiftSelectedItem[]>>;
@@ -44,6 +45,7 @@ export const init = (
     onMaxFreeSolo,
     openOnFocus,
     label,
+    variant,
     disabledItemsHighlightable,
   }: {
     isHaveTags?: boolean;
@@ -57,6 +59,7 @@ export const init = (
     | 'multiple'
     | 'ToggleButtonProps'
     | 'initialIsOpen'
+    | 'variant'
     | 'clearBtn'
     | 'inputValue'
     | 'disableCloseOnSelect'
@@ -73,12 +76,16 @@ export const init = (
   context: InitContext,
 ) => {
   let update: React.Dispatch<React.SetStateAction<RcDownshiftSelectedItem[]>>;
+  let updateInput: React.Dispatch<React.SetStateAction<string>>;
+  context.onKeyDownFn = jest.fn();
 
   context.onChangeFn = jest.fn((e) => {
     update(e);
   });
 
-  context.onKeyDownFn = jest.fn();
+  context.onInputChangeFn = jest.fn((e) => {
+    updateInput(e);
+  });
 
   const Component = () => {
     context.ref = useRef<RcDownshiftRef>(null);
@@ -96,12 +103,14 @@ export const init = (
         setOptionState(...args);
       });
     };
-    context.value = value;
 
+    context.value = value;
     update = setValue;
+    updateInput = setInputValue;
 
     return (
       <RcDownshift
+        variant={variant}
         label={label}
         freeSolo={freeSolo}
         maxFreeSolo={maxFreeSolo}
@@ -119,7 +128,7 @@ export const init = (
         error={error}
         onKeyDown={context.onKeyDownFn}
         action={context.ref}
-        onInputChange={setInputValue}
+        onInputChange={context.onInputChangeFn}
         keyToTags={keyToTags}
         onChange={context.onChangeFn}
         value={value}
@@ -134,10 +143,6 @@ export const init = (
   context.result = render(<Component />);
 
   context.input = context.result.getByRole('combobox');
-
-  // if (isHaveTags) {
-  //   expect(context.wrapper.find('RcChip')).toHaveLength(2);
-  // }
 };
 
 export const openMenu = (args: any, context: InitContext) => {

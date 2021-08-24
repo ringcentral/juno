@@ -879,9 +879,11 @@ describe('Downshift', () => {
   );
 
   it.each`
-    multiple | inputUnselectable
-    ${true}  | ${false}
-    ${false} | ${true}
+    multiple | variant           | inputUnselectable
+    ${true}  | ${'tags'}         | ${false}
+    ${false} | ${'tags'}         | ${true}
+    ${true}  | ${'autocomplete'} | ${false}
+    ${false} | ${'autocomplete'} | ${false}
   `(
     '[Downshift] multiple logic',
     EachRun<any, InitContext>`
@@ -1321,6 +1323,77 @@ describe('Downshift', () => {
       }}
     `,
   );
+
+  it.each`
+    run
+    ${true}
+  `(
+    '[Downshift] autocomplete when select item, will trigger onInputChange',
+    EachRun<any, InitContext>`
+      Scenario: when select item, will trigger onInputChange
+      Given: variant is 'autocomplete'
+      ${(args, context) =>
+        init(
+          {
+            ...args,
+            variant: 'autocomplete',
+            options: [{ id: 1, label: 'Alan Zou' }],
+            SuggestionListProps: {
+              initialItemCount: 1,
+            },
+          },
+          context,
+        )}
+      ${focusInput}
+      When: menu is open ${openMenu} ${() => checkMenuOpen(true)}
+      And: user click menu item
+      And: this item is $isDisabled ${(args, context) => {
+        const item = context.result.getByRole('option');
+
+        userEvent.click(item);
+      }}
+      Then: onChange and onInputChange should be call ${(args, context) => {
+        expect(context.onChangeFn).toBeCalled();
+        expect(context.onInputChangeFn).toBeCalled();
+      }}
+      And: keep focus on input ${(args, context) => {
+        expect(document.activeElement).toBe(context.input);
+      }}
+      And: input value change to select Item ${(args, context) => {
+        expect(context.input.getAttribute('value')).toEqual('Alan Zou');
+      }}
+    `,
+  );
+
+  it.each`
+    run
+    ${true}
+  `(
+    '[Downshift] autocomplete init have value will trigger onInputChange',
+    EachRun<any, InitContext>`
+      Scenario: init have value will trigger onInputChange
+      Given: variant is 'autocomplete'
+      ${(args, context) =>
+        init(
+          {
+            ...args,
+            variant: 'autocomplete',
+            options: [{ id: 1, label: 'Alan Zou' }],
+            value: [{ id: 1, label: 'Alan Zou' }],
+            SuggestionListProps: {
+              initialItemCount: 1,
+            },
+          },
+          context,
+        )}
+      Then: onInputChange should be call ${(args, context) => {
+        expect(context.onInputChangeFn).toBeCalled();
+      }}
+      And: input value change to select Item ${(args, context) => {
+        expect(context.input.getAttribute('value')).toEqual('Alan Zou');
+      }}
+    `,
+  );
 });
 
 // it.each``('', EachRun<any, InitContext>``);
@@ -1337,6 +1410,3 @@ describe('Downshift', () => {
 // renderNoOptions
 
 // item groupBy
-
-// * know issue
-// when scroll bottom loop that a11y will not speak because that element not ready yet
