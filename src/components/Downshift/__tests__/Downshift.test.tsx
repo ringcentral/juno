@@ -4,7 +4,10 @@ import range from 'lodash/range';
 import React from 'react';
 
 import { act, EachRun, fireEvent, screen, sleep } from '../../../../tests';
-import { setSelectionPosition } from '../../../foundation';
+import {
+  getSelectionPosition,
+  setSelectionPosition,
+} from '../../../foundation';
 import { options } from '../__stories__/options';
 import {
   blurInput,
@@ -1390,6 +1393,68 @@ describe('Downshift', () => {
         expect(context.onInputChangeFn).toBeCalled();
       }}
       And: input value change to select Item ${(args, context) => {
+        expect(context.input.getAttribute('value')).toEqual('Alan Zou');
+      }}
+    `,
+  );
+
+  it.each`
+    run
+    ${true}
+  `(
+    '[Downshift] autocomplete when focus will selectAll',
+    EachRun<any, InitContext>`
+      Scenario: autocomplete when focus will selectAll
+      Given: variant is 'autocomplete'
+      ${(args, context) =>
+        init(
+          {
+            ...args,
+            variant: 'autocomplete',
+            options: [{ id: 1, label: 'Alan Zou' }],
+            value: [{ id: 1, label: 'Alan Zou' }],
+            SuggestionListProps: {
+              initialItemCount: 1,
+            },
+          },
+          context,
+        )}
+      When: focus input ${focusInput}
+      Then: selection range will be all input text ${(args, context) => {
+        const currRange = getSelectionPosition({
+          current: context.input as any,
+        });
+        expect(currRange.isSelectRange).toBeTruthy();
+        expect(currRange.position).toEqual({ start: 0, end: 8 });
+      }}
+    `,
+  );
+
+  it.each`
+    run
+    ${true}
+  `(
+    '[Downshift] autocomplete when change value and not select item, blur will recover original value',
+    EachRun<any, InitContext>`
+      Scenario: blur will recover original value
+      Given: variant is 'autocomplete'
+      ${(args, context) =>
+        init(
+          {
+            ...args,
+            variant: 'autocomplete',
+            options: [{ id: 1, label: 'Alan Zou' }],
+            value: [{ id: 1, label: 'Alan Zou' }],
+          },
+          context,
+        )}
+      When: focus input ${focusInput}
+      And: change input value ${(args, context) => {
+        fireEvent.change(context.input, { target: { value: 'abcdef' } });
+        expect(context.input.getAttribute('value')).toEqual('abcdef');
+      }}
+      When: leave input ${blurInput}
+      Then: input value should be recover ${(args, context) => {
         expect(context.input.getAttribute('value')).toEqual('Alan Zou');
       }}
     `,
