@@ -137,6 +137,7 @@ export const useDownshift = ({
   // * when that is autocomplete, that will never be multiple
   const multiple = isAutocomplete ? false : multipleProp;
 
+  const isSelectedFromAutocompleteRef = useRef(false);
   const [isOpen, setIsOpen] = useControlled({
     controlled: openProp,
     default: initialIsOpen || false,
@@ -278,6 +279,7 @@ export const useDownshift = ({
       const result = getOptionLabel(_selectedItems[0]);
 
       onInputChangeProp?.(result);
+      isSelectedFromAutocompleteRef.current = true;
     }
   };
 
@@ -515,9 +517,16 @@ export const useDownshift = ({
   };
 
   const resetState = (e?: ChangeEvent<{}>) => {
-    if (inputRef.current && inputRef.current.value.length > 0) {
+    if (
+      // * when autocomplete select mode not reset input value
+      !isSelectedFromAutocompleteRef.current &&
+      inputRef.current &&
+      inputRef.current.value.length > 0
+    ) {
       updateInputValue('');
     }
+    isSelectedFromAutocompleteRef.current = false;
+
     setActiveIndex(-1);
 
     if (!disableCloseOnSelect) {
