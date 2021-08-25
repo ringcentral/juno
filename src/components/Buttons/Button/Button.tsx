@@ -46,7 +46,7 @@ type RcButtonProps = {
   variant?: RcButtonVariant;
   /** color of button */
   color?: RcPaletteKeys | RcButtonColor;
-  /** is button loading, when `loading` that default `disabled` will be true  */
+  /** is button loading, when `loading` that `disabled` will auto become `true` */
   loading?: boolean;
   /** loading mode with button, default is `replace` */
   loadingMode?: RcButtonColorLoadingMode;
@@ -80,7 +80,7 @@ const _RcButton = forwardRef<any, RcButtonProps>(
       endIcon: endIconProp,
       loading,
       loadingMode,
-      disabled = loading,
+      disabled,
       IconProps,
       size,
       color,
@@ -191,7 +191,7 @@ const _RcButton = forwardRef<any, RcButtonProps>(
     return (
       <MuiButton
         ref={buttonRef}
-        disabled={disabled}
+        disabled={disabled || loading}
         variant={isPlain ? undefined : (variant as any)}
         disableRipple={theme?.props?.MuiButton?.disableRipple || isPlain}
         startIcon={startIcon}
