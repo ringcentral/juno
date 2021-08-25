@@ -71,10 +71,7 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
           height: 100%;
           width: 100%;
           display: block;
-          background: ${setOpacity(
-            isPlain ? plainTextColor : buttonTextColor(props),
-            '24',
-          )};
+          background: ${setOpacity(palette2('neutral', 'b01'), '32')};
           width: 100%;
           height: 100%;
           border-radius: ${radius(radiusProp ?? 'lg')};
