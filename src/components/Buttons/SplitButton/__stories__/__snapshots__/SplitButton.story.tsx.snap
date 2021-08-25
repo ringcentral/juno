@@ -43,6 +43,10 @@ Array [
   color: #066FAC;
 }
 
+.c1.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c1.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -57,6 +61,19 @@ Array [
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c1.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c1.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c3.c3.c3 {
@@ -402,6 +419,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   color: #066FAC;
 }
 
+.c3.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c3.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -416,6 +437,19 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c3.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c3.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c13 {
@@ -444,6 +478,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   line-height: 1;
 }
 
+.c13.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c13.RcButton-text.focus-visible,
 .c13.RcButton-text[data-focus-visible-added] {
   box-shadow: inset 0 0 0 1px #066FAC;
@@ -469,53 +507,17 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   padding: 0px 15px;
 }
 
-.c20 {
-  text-transform: none;
-  font-size: 0.9375rem;
-  font-weight: 700;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  text-align: center;
-  box-shadow: unset;
-  min-width: 96px;
-  min-height: 36px;
-  padding: 0px 16px;
-}
-
-.c20 .RcButton-startIcon {
-  margin-right: 8px;
-}
-
-.c20 .RcButton-endIcon {
-  margin-left: 8px;
-}
-
-.c20.RcButton-text {
-  color: #066FAC;
-}
-
-.c20.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
-}
-
-.c20.RcButton-contained {
-  color: #fff;
-  background-color: #066FAC;
-}
-
-.c20.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
-}
-
-.c20.RcButton-outlined {
-  color: #066FAC;
-  border-color: #066FAC;
-  padding: 0px 15px;
-}
-
-.c20.RcButton-outlined.RcButton-disabled {
+.c13.RcButton-outlined.RcButton-disabled {
   color: #B9B9B9;
   border-color: #B9B9B9;
+}
+
+.c13.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c8 .sc-cxNHIi {
@@ -992,24 +994,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 
 @media (hover:hover) and (pointer:fine) {
   .c13.RcButton-outlined:hover {
-    background-color: rgba(6,111,172,0.08);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c20.RcButton-text:hover {
-    background-color: rgba(6,111,172,0.08);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c20.RcButton-contained:hover {
-    background-color: rgba(6,111,172,0.92);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c20.RcButton-outlined:hover {
     background-color: rgba(6,111,172,0.08);
   }
 }
@@ -2246,7 +2230,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
       title="custom actionButton props"
     >
       <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2 c20 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation Mui-disabled RcButton-disabled Mui-disabled"
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2 c3 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation Mui-disabled RcButton-disabled Mui-disabled"
         disabled={true}
         onBlur={[Function]}
         onClick={[Function]}
@@ -2433,7 +2417,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
       title="custom actionButton props"
     >
       <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2 c20 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation Mui-disabled RcButton-disabled Mui-disabled"
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2 c3 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation Mui-disabled RcButton-disabled Mui-disabled"
         disabled={true}
         onBlur={[Function]}
         onClick={[Function]}

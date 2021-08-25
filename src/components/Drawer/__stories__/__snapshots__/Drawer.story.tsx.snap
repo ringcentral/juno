@@ -25,6 +25,10 @@ exports[`Storyshots 🚀 Cleanup Components/Drawer Drawer 1`] = `
   color: #066FAC;
 }
 
+.c0.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c0.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -39,6 +43,19 @@ exports[`Storyshots 🚀 Cleanup Components/Drawer Drawer 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c0.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c0.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -111,6 +128,10 @@ Array [
   color: #066FAC;
 }
 
+.c0.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c0.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -125,6 +146,19 @@ Array [
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c0.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c0.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -255,6 +289,10 @@ Array [
   color: #066FAC;
 }
 
+.c0.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c0.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -269,6 +307,19 @@ Array [
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c0.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c0.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -389,6 +440,10 @@ Array [
   color: #FF8800;
 }
 
+.c0.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c0.RcButton-contained {
   color: rgba(0,0,0,0.87);
   background-color: #FF8800;
@@ -403,6 +458,19 @@ Array [
   color: #FF8800;
   border-color: #FF8800;
   padding: 0px 15px;
+}
+
+.c0.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c0.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -488,6 +556,10 @@ exports[`Storyshots 🚀 Cleanup Components/Drawer Drawer Examples 1`] = `
   color: #066FAC;
 }
 
+.c0.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c0.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -502,6 +574,19 @@ exports[`Storyshots 🚀 Cleanup Components/Drawer Drawer Examples 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c0.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c0.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -647,6 +732,10 @@ exports[`Storyshots 🚀 Cleanup Components/Drawer Drawer With Inline Paper 1`] 
   color: #066FAC;
 }
 
+.c0.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c0.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -661,6 +750,19 @@ exports[`Storyshots 🚀 Cleanup Components/Drawer Drawer With Inline Paper 1`] 
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c0.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c0.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -733,6 +835,10 @@ Array [
   color: #066FAC;
 }
 
+.c0.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c0.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -747,6 +853,19 @@ Array [
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c0.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c0.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {

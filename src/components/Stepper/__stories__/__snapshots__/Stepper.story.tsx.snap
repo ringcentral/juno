@@ -22,18 +22,6 @@ Array [
 
 }
 
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
 <h6
     className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
     data-color="neutral.f06"
@@ -118,18 +106,6 @@ Array [
 
 .c0 {
   padding: 24px 0px 24px 0px;
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -361,18 +337,6 @@ Array [
 
 }
 
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
 <br />,
   .c1 {
   text-transform: none;
@@ -423,6 +387,14 @@ Array [
   border-color: #B9B9B9;
 }
 
+.c1.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
 .c0 + .c0 {
   margin-left: 1em;
 }
@@ -443,18 +415,6 @@ Array [
   .c1.RcButton-outlined:hover {
     background-color: rgba(6,111,172,0.08);
   }
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
 }
 
 <button
@@ -505,6 +465,10 @@ Array [
   color: #066FAC;
 }
 
+.c1.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c1.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -521,20 +485,21 @@ Array [
   padding: 0px 15px;
 }
 
+.c1.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c1.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
 .c0 + .c0 {
   margin-left: 1em;
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -603,6 +568,10 @@ Array [
   color: #066FAC;
 }
 
+.c1.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c1.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -619,20 +588,21 @@ Array [
   padding: 0px 15px;
 }
 
+.c1.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c1.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
 .c0 + .c0 {
   margin-left: 1em;
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
 }
 
 @media (hover:hover) and (pointer:fine) {

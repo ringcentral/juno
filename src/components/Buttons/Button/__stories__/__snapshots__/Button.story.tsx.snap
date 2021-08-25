@@ -25,6 +25,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button 1`] = `
   color: #066FAC;
 }
 
+.c0.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c0.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -39,6 +43,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c0.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c0.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -151,6 +168,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
   color: #066FAC;
 }
 
+.c1.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c1.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -165,6 +186,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c1.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c1.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c4 {
@@ -193,6 +227,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
   line-height: 1;
 }
 
+.c4.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c4.RcButton-text.focus-visible,
 .c4.RcButton-text[data-focus-visible-added] {
   box-shadow: inset 0 0 0 1px #066FAC;
@@ -216,6 +254,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c4.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c4.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c7 {
@@ -242,6 +293,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
   color: #066FAC;
 }
 
+.c7.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c7.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -256,6 +311,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 7px;
+}
+
+.c7.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c7.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c9 {
@@ -282,6 +350,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
   color: #066FAC;
 }
 
+.c9.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c9.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -296,6 +368,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c9.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c9.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c11 {
@@ -322,6 +407,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
   color: #066FAC;
 }
 
+.c11.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c11.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -336,6 +425,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 11px;
+}
+
+.c11.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c11.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c12 {
@@ -362,6 +464,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
   color: #066FAC;
 }
 
+.c12.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c12.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -376,6 +482,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 19px;
+}
+
+.c12.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c12.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c5 {
@@ -1914,6 +2033,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
   color: #066FAC;
 }
 
+.c2.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c2.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -1928,6 +2051,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 7px;
+}
+
+.c2.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c2.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c5 {
@@ -1954,6 +2090,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
   color: #066FAC;
 }
 
+.c5.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c5.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -1968,6 +2108,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c5.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c5.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c7 {
@@ -1994,6 +2147,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
   color: #066FAC;
 }
 
+.c7.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c7.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -2008,6 +2165,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 11px;
+}
+
+.c7.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c7.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c8 {
@@ -2034,6 +2204,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
   color: #066FAC;
 }
 
+.c8.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c8.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -2048,6 +2222,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c8.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c8.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c10 {
@@ -2074,6 +2261,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
   color: #066FAC;
 }
 
+.c10.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c10.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -2088,6 +2279,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 19px;
+}
+
+.c10.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c10.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c1 {
@@ -2628,6 +2832,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Variants 1`] = `
   color: #066FAC;
 }
 
+.c1.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c1.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -2642,6 +2850,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Variants 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c1.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c1.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c2 {
@@ -2670,6 +2891,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Variants 1`] = `
   line-height: 1;
 }
 
+.c2.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c2.RcButton-text.focus-visible,
 .c2.RcButton-text[data-focus-visible-added] {
   box-shadow: inset 0 0 0 1px #066FAC;
@@ -2693,6 +2918,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Variants 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c2.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c2.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c0 {
@@ -2885,6 +3123,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Color 1`]
   color: #E6413C;
 }
 
+.c1.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c1.RcButton-contained {
   color: #fff;
   background-color: #E6413C;
@@ -2899,6 +3141,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Color 1`]
   color: #E6413C;
   border-color: #E6413C;
   padding: 0px 15px;
+}
+
+.c1.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c1.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c2 {
@@ -2925,6 +3180,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Color 1`]
   color: #3C9949;
 }
 
+.c2.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c2.RcButton-contained {
   color: #fff;
   background-color: #3C9949;
@@ -2939,6 +3198,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Color 1`]
   color: #3C9949;
   border-color: #3C9949;
   padding: 0px 15px;
+}
+
+.c2.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c2.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c3 {
@@ -2965,6 +3237,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Color 1`]
   color: #FF8800;
 }
 
+.c3.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c3.RcButton-contained {
   color: rgba(0,0,0,0.87);
   background-color: #FF8800;
@@ -2979,6 +3255,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Color 1`]
   color: #FF8800;
   border-color: #FF8800;
   padding: 0px 15px;
+}
+
+.c3.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c3.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c4 {
@@ -3005,6 +3294,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Color 1`]
   color: #F6F9FC;
 }
 
+.c4.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c4.RcButton-contained {
   color: rgba(0,0,0,0.87);
   background-color: #F6F9FC;
@@ -3019,6 +3312,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Color 1`]
   color: #F6F9FC;
   border-color: #F6F9FC;
   padding: 0px 15px;
+}
+
+.c4.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c4.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c0 {
@@ -3240,6 +3546,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Radius 1`
   color: #FFFFFF;
 }
 
+.c0.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c0.RcButton-contained {
   color: rgba(0,0,0,0.87);
   background-color: #FFFFFF;
@@ -3254,6 +3564,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Radius 1`
   color: #FFFFFF;
   border-color: #FFFFFF;
   padding: 0px 15px;
+}
+
+.c0.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c0.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c1 {
@@ -3360,6 +3683,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Icon 1`] = `
   color: #066FAC;
 }
 
+.c2.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c2.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -3374,6 +3701,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Icon 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c2.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c2.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c1 {
@@ -3624,6 +3964,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Keep Elevation 1
   color: #066FAC;
 }
 
+.c0.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c0.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -3638,6 +3982,19 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Keep Elevation 1
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c0.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c0.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3692,10 +4049,6 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
   color: inherit;
 }
 
-.c4 {
-  color: #E6413C;
-}
-
 .c2 {
   text-transform: none;
   font-size: 0.9375rem;
@@ -3706,6 +4059,22 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
+}
+
+.c2:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  background: rgba(255,255,255,0.24);
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
 }
 
 .c2 .RcButton-startIcon {
@@ -3725,15 +4094,88 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
   background-color: #066FAC;
 }
 
-.c2.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
-}
-
 .c2.RcButton-outlined {
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c2.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
+.c4 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+}
+
+.c4:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  background: rgba(6,111,172,0.24);
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.c4 .RcButton-startIcon {
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+.c4 .RcButton-endIcon {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.c4.RcButton-text {
+  color: #066FAC;
+  padding: 4px;
+  min-width: unset;
+  line-height: 1;
+}
+
+.c4.RcButton-text.focus-visible,
+.c4.RcButton-text[data-focus-visible-added] {
+  box-shadow: inset 0 0 0 1px #066FAC;
+}
+
+.c4.RcButton-text:active.RcButton-text {
+  color: rgba(6,111,172,0.64);
+}
+
+.c4.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c4.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c4.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c1 {
@@ -3784,6 +4226,31 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
   }
 }
 
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-text:hover {
+    color: rgba(6,111,172,0.8);
+    background-color: transparent;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
 <ul
   className="c0"
 >
@@ -3797,8 +4264,8 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
         replace(default)
       </p>
       <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2"
-        disabled={false}
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -3810,7 +4277,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
-        tabIndex={0}
+        tabIndex={-1}
         type="button"
       >
         <span
@@ -3853,8 +4320,8 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
         prefix
       </p>
       <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2"
-        disabled={false}
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -3866,7 +4333,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
-        tabIndex={0}
+        tabIndex={-1}
         type="button"
       >
         <span
@@ -3914,8 +4381,8 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
         suffix
       </p>
       <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2"
-        disabled={false}
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -3927,7 +4394,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
-        tabIndex={0}
+        tabIndex={-1}
         type="button"
       >
         <span
@@ -3975,8 +4442,8 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
         with custom loading props
       </p>
       <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2"
-        disabled={false}
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -3988,7 +4455,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
-        tabIndex={0}
+        tabIndex={-1}
         type="button"
       >
         <span
@@ -3999,7 +4466,730 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
             className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
           >
             <div
-              className="MuiCircularProgress-root c4 MuiCircularProgress-indeterminate"
+              className="MuiCircularProgress-root c3 MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={17}
+                  strokeWidth={10}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </span>
+        </span>
+      </button>
+    </div>
+  </li>
+  <li>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        replace(default)
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c2 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <div
+            className="MuiCircularProgress-root c3 MuiCircularProgress-indeterminate"
+            role="progressbar"
+            style={
+              Object {
+                "height": 20,
+                "width": 20,
+              }
+            }
+          >
+            <svg
+              className="MuiCircularProgress-svg"
+              viewBox="22 22 44 44"
+            >
+              <circle
+                className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                cx={44}
+                cy={44}
+                fill="none"
+                r={20.2}
+                strokeWidth={3.6}
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </span>
+      </button>
+    </div>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        prefix
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c2 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <span
+            className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <div
+              className="MuiCircularProgress-root c3 MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </span>
+          click
+        </span>
+      </button>
+    </div>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        suffix
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c2 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          click
+          <span
+            className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+          >
+            <div
+              className="MuiCircularProgress-root c3 MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </span>
+        </span>
+      </button>
+    </div>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        with custom loading props
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c2 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          click
+          <span
+            className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+          >
+            <div
+              className="MuiCircularProgress-root c3 MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={17}
+                  strokeWidth={10}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </span>
+        </span>
+      </button>
+    </div>
+  </li>
+  <li>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        replace(default)
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <div
+            className="MuiCircularProgress-root c3 MuiCircularProgress-indeterminate"
+            role="progressbar"
+            style={
+              Object {
+                "height": 20,
+                "width": 20,
+              }
+            }
+          >
+            <svg
+              className="MuiCircularProgress-svg"
+              viewBox="22 22 44 44"
+            >
+              <circle
+                className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                cx={44}
+                cy={44}
+                fill="none"
+                r={20.2}
+                strokeWidth={3.6}
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </span>
+      </button>
+    </div>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        prefix
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <span
+            className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <div
+              className="MuiCircularProgress-root c3 MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </span>
+          click
+        </span>
+      </button>
+    </div>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        suffix
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          click
+          <span
+            className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+          >
+            <div
+              className="MuiCircularProgress-root c3 MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </span>
+        </span>
+      </button>
+    </div>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        with custom loading props
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          click
+          <span
+            className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+          >
+            <div
+              className="MuiCircularProgress-root c3 MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={17}
+                  strokeWidth={10}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </span>
+        </span>
+      </button>
+    </div>
+  </li>
+  <li>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        replace(default)
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c4 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <div
+            className="MuiCircularProgress-root c3 MuiCircularProgress-indeterminate"
+            role="progressbar"
+            style={
+              Object {
+                "height": 20,
+                "width": 20,
+              }
+            }
+          >
+            <svg
+              className="MuiCircularProgress-svg"
+              viewBox="22 22 44 44"
+            >
+              <circle
+                className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                cx={44}
+                cy={44}
+                fill="none"
+                r={20.2}
+                strokeWidth={3.6}
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </span>
+      </button>
+    </div>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        prefix
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c4 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <span
+            className="MuiButton-startIcon RcButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <div
+              className="MuiCircularProgress-root c3 MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </span>
+          click
+        </span>
+      </button>
+    </div>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        suffix
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c4 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          click
+          <span
+            className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+          >
+            <div
+              className="MuiCircularProgress-root c3 MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </span>
+        </span>
+      </button>
+    </div>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        with custom loading props
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c4 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          click
+          <span
+            className="MuiButton-endIcon RcButton-endIcon MuiButton-iconSizeMedium"
+          >
+            <div
+              className="MuiCircularProgress-root c3 MuiCircularProgress-indeterminate"
               role="progressbar"
               style={
                 Object {

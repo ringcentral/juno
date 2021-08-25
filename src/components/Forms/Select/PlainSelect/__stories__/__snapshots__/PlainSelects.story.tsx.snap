@@ -42,6 +42,10 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
   color: #066FAC;
 }
 
+.c4.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c4.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -56,6 +60,19 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 11px;
+}
+
+.c4.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c4.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c0 {
@@ -466,6 +483,10 @@ Array [
   color: #066FAC;
 }
 
+.c4.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c4.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -480,6 +501,19 @@ Array [
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 11px;
+}
+
+.c4.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c4.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c0 {
@@ -1028,6 +1062,10 @@ Array [
   line-height: 1;
 }
 
+.c4.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c4.RcButton-text.focus-visible,
 .c4.RcButton-text[data-focus-visible-added] {
   box-shadow: inset 0 0 0 1px #066FAC;
@@ -1051,6 +1089,19 @@ Array [
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 11px;
+}
+
+.c4.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c4.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c0 {
@@ -1699,6 +1750,10 @@ Array [
   color: #066FAC;
 }
 
+.c4.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c4.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -1713,6 +1768,19 @@ Array [
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 11px;
+}
+
+.c4.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c4.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c0 {
@@ -2274,6 +2342,10 @@ Array [
   line-height: 1;
 }
 
+.c4.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c4.RcButton-text.focus-visible,
 .c4.RcButton-text[data-focus-visible-added] {
   box-shadow: inset 0 0 0 1px #066FAC;
@@ -2297,6 +2369,19 @@ Array [
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 11px;
+}
+
+.c4.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c4.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c0 {

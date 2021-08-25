@@ -402,6 +402,10 @@ exports[`Storyshots 🚀 Cleanup Components/Icon Icon With Dark Theme 1`] = `
   color: #066FAC;
 }
 
+.c1.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c1.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -416,6 +420,19 @@ exports[`Storyshots 🚀 Cleanup Components/Icon Icon With Dark Theme 1`] = `
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c1.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c1.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c0 {

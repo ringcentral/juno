@@ -524,6 +524,10 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
   color: #066FAC;
 }
 
+.c18.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c18.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -538,6 +542,19 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c18.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c18.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c0 {
@@ -1050,6 +1067,10 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
   color: #066FAC;
 }
 
+.c17.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c17.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -1064,6 +1085,19 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c17.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c17.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c0 {

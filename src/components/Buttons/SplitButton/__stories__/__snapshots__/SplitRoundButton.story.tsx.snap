@@ -90,6 +90,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   color: #066FAC;
 }
 
+.c4.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c4.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -104,6 +108,19 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c4.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c4.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c10 {
@@ -132,6 +149,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   line-height: 1;
 }
 
+.c10.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c10.RcButton-text.focus-visible,
 .c10.RcButton-text[data-focus-visible-added] {
   box-shadow: inset 0 0 0 1px #066FAC;
@@ -155,6 +176,19 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c10.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c10.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c21 {
@@ -181,6 +215,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   color: #066FAC;
 }
 
+.c21.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c21.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -195,6 +233,19 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 11px;
+}
+
+.c21.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c21.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c24 {
@@ -223,6 +274,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   line-height: 1;
 }
 
+.c24.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c24.RcButton-text.focus-visible,
 .c24.RcButton-text[data-focus-visible-added] {
   box-shadow: inset 0 0 0 1px #066FAC;
@@ -246,6 +301,19 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 11px;
+}
+
+.c24.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c24.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c26 {
@@ -272,6 +340,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   color: #066FAC;
 }
 
+.c26.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c26.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -286,6 +358,19 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c26.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c26.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c29 {
@@ -314,6 +399,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   line-height: 1;
 }
 
+.c29.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c29.RcButton-text.focus-visible,
 .c29.RcButton-text[data-focus-visible-added] {
   box-shadow: inset 0 0 0 1px #066FAC;
@@ -337,6 +426,19 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c29.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c29.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c31 {
@@ -363,6 +465,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   color: #066FAC;
 }
 
+.c31.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c31.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -377,6 +483,19 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 7px;
+}
+
+.c31.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c31.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c34 {
@@ -405,6 +524,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   line-height: 1;
 }
 
+.c34.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c34.RcButton-text.focus-visible,
 .c34.RcButton-text[data-focus-visible-added] {
   box-shadow: inset 0 0 0 1px #066FAC;
@@ -428,6 +551,19 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 7px;
+}
+
+.c34.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c34.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 .c8.c8.c8 {

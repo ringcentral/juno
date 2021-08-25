@@ -227,6 +227,10 @@ Array [
   color: #066FAC;
 }
 
+.c0.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c0.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -241,6 +245,19 @@ Array [
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c0.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c0.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -6001,6 +6018,10 @@ Array [
   color: #066FAC;
 }
 
+.c0.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c0.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -6015,6 +6036,19 @@ Array [
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c0.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c0.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -6110,6 +6144,10 @@ Array [
   color: #066FAC;
 }
 
+.c0.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
 .c0.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
@@ -6124,6 +6162,19 @@ Array [
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
+}
+
+.c0.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c0.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
