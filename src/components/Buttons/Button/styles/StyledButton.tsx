@@ -41,11 +41,11 @@ export const buttonHoverColor: RcThemedStyled<RcButtonProps> = (props) =>
 const containedButtonHoverColor: RcThemedStyled<RcButtonProps> = (props) =>
   setOpacity(buttonColor(props), '08', true);
 
-const disabledColor: RcThemedStyled<RcButtonProps, any> = ({ disabled }) =>
-  disabled ? palette2('disabled', 'f02') : '';
+const textDisabledColor: RcThemedStyled<RcButtonProps, any> = ({ loading }) =>
+  !loading ? palette2('disabled', 'f02') : undefined;
 
 export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
-  const { variant, size, radius: radiusProp, keepElevation } = props;
+  const { variant, size, radius: radiusProp, keepElevation, loading } = props;
   const plainTextColor = plainButtonTextColor(props);
 
   const iconSpace = spacing(RcButtonIconSpace[size!]);
@@ -58,6 +58,28 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
     text-align: center;
     box-shadow: ${!keepElevation && 'unset'};
     border-radius: ${radiusProp && radius(radiusProp)};
+
+    ${loading &&
+      css`
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 100%;
+          width: 100%;
+          display: block;
+          background: ${setOpacity(
+            isPlain ? plainTextColor : buttonTextColor(props),
+            '24',
+          )};
+          width: 100%;
+          height: 100%;
+          border-radius: ${radius(radiusProp ?? 'lg')};
+        }
+      `};
 
     ${!isPlain &&
       css`
@@ -88,7 +110,7 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
       color: ${plainButtonTextColor};
 
       &.${RcButtonClasses.disabled} {
-        color: ${disabledColor};
+        color: ${textDisabledColor};
       }
 
       ${nonTouchHoverMedia} {
@@ -132,10 +154,13 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
         }
       }
 
-      &.${RcButtonClasses.disabled} {
-        background-color: ${palette2('disabled', 'b01')};
-        color: ${palette2('disabled', 'f01')};
-      }
+      ${!loading &&
+        css`
+          &.${RcButtonClasses.disabled} {
+            background-color: ${palette2('disabled', 'b01')};
+            color: ${palette2('disabled', 'f01')};
+          }
+        `}
     }
 
     &.${RcButtonClasses.outlined} {
@@ -150,8 +175,16 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
       }
 
       &.${RcButtonClasses.disabled} {
-        color: ${disabledColor};
-        border-color: ${disabledColor};
+        color: ${textDisabledColor};
+        border-color: ${textDisabledColor};
+      }
+
+      &:after {
+        top: -1px;
+        bottom: -1px;
+        left: -1px;
+        right: -1px;
+        border: 1px solid transparent;
       }
     }
   `;

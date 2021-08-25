@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
-import React, { ComponentProps, useState } from 'react';
+import React, { ComponentProps } from 'react';
 
 import { styled, useTheme } from '../../../../foundation';
 import { CallAdd, Leave, NewEmail, UserDefault } from '../../../../icon';
@@ -220,42 +220,57 @@ export const ButtonSizes: Story<ButtonProps> = () => {
   );
 };
 
-export const ButtonWithLoading: Story<ButtonProps> = () => {
+export const ButtonWithLoading: Story<ButtonProps> = ({
+  children,
+  ...args
+}) => {
   return (
     <Wrapper>
-      <li>
-        <div>
-          <Title variant="body1">replace(default)</Title>
-          <RcButton loading>click</RcButton>
-        </div>
-        <div>
-          <Title variant="body1">prefix</Title>
-          <RcButton loading loadingMode="prefix">
-            click
-          </RcButton>
-        </div>
-        <div>
-          <Title variant="body1">suffix</Title>
-          <RcButton loading loadingMode="suffix">
-            click
-          </RcButton>
-        </div>
-        <div>
-          <Title variant="body1">with custom loading props</Title>
-          <RcButton
-            loading
-            loadingMode="suffix"
-            CircularProgressProps={{
-              thickness: 10,
-              color: 'presence.busy',
-            }}
-          >
-            click
-          </RcButton>
-        </div>
-      </li>
+      {variants.map((variant) => (
+        <li key={variant}>
+          <div>
+            <Title variant="body1">replace(default)</Title>
+            <RcButton {...args} variant={variant}>
+              click
+            </RcButton>
+          </div>
+          <div>
+            <Title variant="body1">prefix</Title>
+            <RcButton {...args} variant={variant} loadingMode="prefix">
+              click
+            </RcButton>
+          </div>
+          <div>
+            <Title variant="body1">suffix</Title>
+            <RcButton {...args} variant={variant} loadingMode="suffix">
+              click
+            </RcButton>
+          </div>
+          <div>
+            <Title variant="body1">with custom loading props</Title>
+            <RcButton
+              {...args}
+              variant={variant}
+              loadingMode="suffix"
+              CircularProgressProps={{
+                thickness: 10,
+              }}
+            >
+              click
+            </RcButton>
+          </div>
+        </li>
+      ))}
     </Wrapper>
   );
+};
+
+ButtonWithLoading.args = {
+  loading: true,
+};
+
+ButtonWithLoading.argTypes = {
+  ...notControlInDocTable<keyof ButtonProps>(['variant']),
 };
 
 export const ButtonWithCustomRadius: Story<ButtonProps> = () => {
