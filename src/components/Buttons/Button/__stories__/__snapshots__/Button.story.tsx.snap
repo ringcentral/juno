@@ -4071,7 +4071,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
   height: 100%;
   width: 100%;
   display: block;
-  background: rgba(255,255,255,0.24);
+  background: rgba(255,255,255,0.32);
   width: 100%;
   height: 100%;
   border-radius: 4px;
@@ -4127,7 +4127,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
   height: 100%;
   width: 100%;
   display: block;
-  background: rgba(6,111,172,0.24);
+  background: rgba(255,255,255,0.32);
   width: 100%;
   height: 100%;
   border-radius: 4px;
