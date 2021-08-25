@@ -62,6 +62,8 @@ type RcSplitButtonProps = {
   MenuProps?: RcBaseProps<RcMenuProps, 'open' | 'anchorEl'>;
   /** emit when menu open */
   onOpen?: () => void;
+  /** loading state */
+  loading?: boolean;
 } & Pick<RcMenuProps, 'onClose'> &
   Pick<RcButtonProps, 'type' | 'color' | 'disabled'> &
   RcBaseProps<
@@ -90,6 +92,7 @@ const _RcSplitButton = forwardRef<any, RcSplitButtonProps>(
       onOpen,
       onClose,
       className,
+      loading,
       ...rest
     } = props;
     const theme = useTheme();
@@ -159,9 +162,10 @@ const _RcSplitButton = forwardRef<any, RcSplitButtonProps>(
         size: toButtonSize,
         color,
         variant: getVariant(variant),
-        disabled,
+        disabled: loading ? true : undefined,
+        disabledVariant: loading ? 'mask' : undefined,
       };
-    }, [color, disabled, toButtonSize, type, variant]);
+    }, [color, loading, toButtonSize, type, variant]);
 
     const { actionButtonProps, children } = useMemo(() => {
       if (!(childrenProp instanceof Array)) {
@@ -257,6 +261,7 @@ const _RcSplitButton = forwardRef<any, RcSplitButtonProps>(
     const _ActionButtonProps = useMemo(() => {
       return {
         TouchRippleProps,
+        loading,
         ...actionButtonProps,
         ...SharedButtonProps,
         ...ActionButtonProps,
@@ -266,6 +271,7 @@ const _RcSplitButton = forwardRef<any, RcSplitButtonProps>(
       SharedButtonProps,
       TouchRippleProps,
       actionButtonProps,
+      loading,
     ]);
 
     const _ControlButtonProps = useMemo(() => {

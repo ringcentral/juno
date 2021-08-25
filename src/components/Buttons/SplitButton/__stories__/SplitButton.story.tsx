@@ -10,6 +10,7 @@ import {
   switchToControlKnobs,
 } from '../../../../storybook';
 import { Title } from '../../../../storybook/components';
+import { RcGrid } from '../../../Grid';
 import { RcIcon } from '../../../Icon';
 import { RcListItem } from '../../../List';
 import { RcMenuItem } from '../../../Menu';
@@ -101,142 +102,56 @@ SplitButton.parameters = {
 
 SplitButton.storyName = 'SplitButton';
 
-export const SplitButtonExamples: Story<ComponentProps<
-  typeof RcSplitButton
->> = ({ children, ...args }) => {
+const variants = [
+  'contained',
+  'outlined',
+  'text',
+  'plain',
+  'round',
+  'plainIcon',
+] as SplitButtonProps['variant'][];
+
+export const SplitButtonExamples: Story<SplitButtonProps> = ({
+  children,
+  ...args
+}) => {
   switchToControlKnobs();
 
   return (
     <div>
-      <RcTypography color="neutral.f04">Contained</RcTypography>
-      <RcSplitButton
-        {...args}
-        MenuProps={{
-          keepMounted: true,
-          ...args.MenuProps,
-        }}
-        onOpen={() => console.log('open')}
-        onClose={(e, reason) => console.log('close', e, reason)}
-      >
-        <RcMenuItem key={'1'} onClick={(e) => console.log('Text', e)}>
-          Text
-        </RcMenuItem>
-        <RcMenuItem key={'2'} onClick={(e) => console.log('Task', e)}>
-          Task
-        </RcMenuItem>
-        <RcMenuItem key={'3'} onClick={(e) => console.log('Cool', e)}>
-          Cool
-        </RcMenuItem>
-      </RcSplitButton>
-      <br />
-      <br />
-      <RcTypography color="neutral.f04">Outlined</RcTypography>
-      <RcSplitButton
-        {...args}
-        variant="outlined"
-        MenuProps={{
-          keepMounted: true,
-          ...args.MenuProps,
-        }}
-      >
-        <RcMenuItem key={'1'} onClick={(e) => console.log('Text', e)}>
-          Text
-        </RcMenuItem>
-        <RcMenuItem key={'2'} onClick={(e) => console.log('Task', e)}>
-          Task
-        </RcMenuItem>
-        <RcMenuItem key={'3'} onClick={(e) => console.log('Cool', e)}>
-          Cool
-        </RcMenuItem>
-      </RcSplitButton>
-      <br />
-      <br />
-      <RcTypography color="neutral.f04">Text</RcTypography>
-      <RcSplitButton
-        {...args}
-        variant="text"
-        MenuProps={{
-          keepMounted: true,
-          ...args.MenuProps,
-        }}
-      >
-        <RcMenuItem key={'1'} onClick={(e) => console.log('Text', e)}>
-          Text
-        </RcMenuItem>
-        <RcMenuItem key={'2'} onClick={(e) => console.log('Task', e)}>
-          Task
-        </RcMenuItem>
-        <RcMenuItem key={'3'} onClick={(e) => console.log('Cool', e)}>
-          Cool
-        </RcMenuItem>
-      </RcSplitButton>
-      <br />
-      <br />
-      <RcTypography color="neutral.f04">Plain</RcTypography>
-      <RcSplitButton
-        {...args}
-        variant="plain"
-        MenuProps={{
-          keepMounted: true,
-          ...args.MenuProps,
-        }}
-      >
-        <RcMenuItem key={'1'} onClick={(e) => console.log('Text', e)}>
-          Text
-        </RcMenuItem>
-        <RcMenuItem key={'2'} onClick={(e) => console.log('Task', e)}>
-          Task
-        </RcMenuItem>
-        <RcMenuItem key={'3'} onClick={(e) => console.log('Cool', e)}>
-          Cool
-        </RcMenuItem>
-      </RcSplitButton>
-      <br />
-      <br />
-      <RcTypography color="neutral.f04">Round</RcTypography>
-      <RcSplitButton
-        {...args}
-        variant="round"
-        MenuProps={{
-          keepMounted: true,
-          ...args.MenuProps,
-        }}
-      >
-        <RcListItem key={'1'} onClick={(e) => console.log('Text', e)}>
-          <RcTooltip title="cool">
-            <RcIcon symbol={StartSvg} size={args.size} />
-          </RcTooltip>
-        </RcListItem>
-        <RcListItem key={'2'} onClick={(e) => console.log('Task', e)}>
-          <RcIcon symbol={ReplySvg} size="medium" />
-        </RcListItem>
-        <RcListItem key={'3'} onClick={(e) => console.log('Cool', e)}>
-          <RcTooltip title="cool">
-            <RcIcon symbol={AddSvg} size="medium" />
-          </RcTooltip>
-        </RcListItem>
-      </RcSplitButton>
-      <br />
-      <br />
-      <RcTypography color="neutral.f04">PlainIcon</RcTypography>
-      <RcSplitButton
-        {...args}
-        variant="plainIcon"
-        MenuProps={{
-          keepMounted: true,
-          ...args.MenuProps,
-        }}
-      >
-        <RcListItem key={'1'} onClick={(e) => console.log('Text', e)}>
-          <RcIcon symbol={StartSvg} size={args.size} />
-        </RcListItem>
-        <RcListItem key={'2'} onClick={(e) => console.log('Task', e)}>
-          <RcIcon symbol={ReplySvg} size="medium" />
-        </RcListItem>
-        <RcListItem key={'3'} onClick={(e) => console.log('Cool', e)}>
-          <RcIcon symbol={AddSvg} size="medium" />
-        </RcListItem>
-      </RcSplitButton>
+      <RcGrid container spacing={2}>
+        {variants.map((variant) => (
+          <RcGrid item xs key={variant}>
+            <RcTypography
+              color="neutral.f04"
+              style={{ textTransform: 'capitalize' }}
+            >
+              {variant}
+            </RcTypography>
+            <RcSplitButton
+              {...args}
+              MenuProps={{
+                keepMounted: true,
+                ...args.MenuProps,
+              }}
+              variant={variant}
+              onOpen={() => console.log('open')}
+              onClose={(e, reason) => console.log('close', e, reason)}
+            >
+              <RcMenuItem key={'1'} onClick={(e) => console.log('Text', e)}>
+                Text
+              </RcMenuItem>
+              <RcMenuItem key={'2'} onClick={(e) => console.log('Task', e)}>
+                Task
+              </RcMenuItem>
+              <RcMenuItem key={'3'} onClick={(e) => console.log('Cool', e)}>
+                Cool
+              </RcMenuItem>
+            </RcSplitButton>
+          </RcGrid>
+        ))}
+      </RcGrid>
+
       <br />
       <br />
       <Title>Custom Props</Title>
@@ -391,3 +306,60 @@ SplitButtonExamples.args = {
 };
 
 SplitButtonExamples.storyName = 'SplitButton Examples';
+
+export const SplitButtonLoadingExamples: Story<SplitButtonProps> = ({
+  children,
+  ...args
+}) => {
+  switchToControlKnobs();
+
+  return (
+    <RcGrid container spacing={2}>
+      {variants.map((variant) => (
+        <RcGrid item xs key={variant}>
+          <RcTypography
+            color="neutral.f04"
+            style={{ textTransform: 'capitalize' }}
+          >
+            {variant}
+          </RcTypography>
+          <RcSplitButton
+            {...args}
+            MenuProps={{
+              keepMounted: true,
+              ...args.MenuProps,
+            }}
+            variant={variant}
+            onOpen={() => console.log('open')}
+            onClose={(e, reason) => console.log('close', e, reason)}
+          >
+            <RcMenuItem key={'1'} onClick={(e) => console.log('Text', e)}>
+              Text
+            </RcMenuItem>
+            <RcMenuItem key={'2'} onClick={(e) => console.log('Task', e)}>
+              Task
+            </RcMenuItem>
+            <RcMenuItem key={'3'} onClick={(e) => console.log('Cool', e)}>
+              Cool
+            </RcMenuItem>
+          </RcSplitButton>
+        </RcGrid>
+      ))}
+    </RcGrid>
+  );
+};
+
+SplitButtonLoadingExamples.args = {
+  color: 'primary',
+  variant: 'contained',
+  size: 'large',
+  loading: true,
+  ActionButtonProps: {
+    'aria-label': 'mainAction',
+  },
+  ControlButtonProps: {
+    'aria-label': 'openMenu',
+  },
+};
+
+SplitButtonLoadingExamples.storyName = 'SplitButton Loading';

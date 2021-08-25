@@ -114,7 +114,7 @@ const iconButtonStyle: RcThemedStyled<RcSplitButtonProps, any> = ({
 export const splitButtonStyle: RcThemedStyled<RcSplitButtonProps, any> = (
   props,
 ) => {
-  const { variant, disabled } = props;
+  const { variant, disabled, loading } = props;
   const variantIs = variantIsHandler(variant);
 
   const currColor = buttonColor(props as any);
@@ -127,16 +127,27 @@ export const splitButtonStyle: RcThemedStyled<RcSplitButtonProps, any> = (
     .${RcSplitButtonClasses.actionButton} {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
+
+      &:after {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
     }
 
     .${RcSplitButtonClasses.controlButton} {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
+
+      &:after {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
     }
 
     &.${RcSplitButtonClasses.root} {
       ${!disabled &&
         variantIs(['outlined', 'text', 'round']) &&
+        !loading &&
         css<any>`
           transition: ${transition};
 
@@ -152,6 +163,7 @@ export const splitButtonStyle: RcThemedStyled<RcSplitButtonProps, any> = (
           align-items: center;
 
           ${!disabled &&
+            !loading &&
             css`
               ${nonTouchHoverMedia} {
                 &:hover {
@@ -193,15 +205,18 @@ export const splitButtonStyle: RcThemedStyled<RcSplitButtonProps, any> = (
 
             transition: ${transition};
 
-            ${nonTouchHoverMedia} {
-              &:hover {
-                background: ${buttonHoverColor};
-              }
-            }
+            ${!loading &&
+              css`
+                ${nonTouchHoverMedia} {
+                  &:hover {
+                    background: ${buttonHoverColor};
+                  }
+                }
 
-            ${focusVisible} {
-              background: ${buttonHoverColor};
-            }
+                ${focusVisible} {
+                  background: ${buttonHoverColor};
+                }
+              `};
           }
 
           &.${RcSplitButtonClasses.actionButton} {
