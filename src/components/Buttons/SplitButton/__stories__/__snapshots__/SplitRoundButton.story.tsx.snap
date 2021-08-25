@@ -576,7 +576,17 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-bottom-right-radius: 0;
 }
 
+.c2 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .c2 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c2 .RcSplitButton-controlButton:after {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -657,7 +667,17 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-bottom-right-radius: 0;
 }
 
+.c9 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .c9 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c9 .RcSplitButton-controlButton:after {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -744,7 +764,17 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-bottom-right-radius: 0;
 }
 
+.c11 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .c11 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c11 .RcSplitButton-controlButton:after {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -825,7 +855,17 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-bottom-right-radius: 0;
 }
 
+.c13 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .c13 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c13 .RcSplitButton-controlButton:after {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -912,7 +952,17 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-bottom-right-radius: 0;
 }
 
+.c14 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .c14 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c14 .RcSplitButton-controlButton:after {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -993,7 +1043,17 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-bottom-right-radius: 0;
 }
 
+.c16 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .c16 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c16 .RcSplitButton-controlButton:after {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -1080,7 +1140,17 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-bottom-right-radius: 0;
 }
 
+.c17 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .c17 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c17 .RcSplitButton-controlButton:after {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -1161,7 +1231,17 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-bottom-right-radius: 0;
 }
 
+.c19 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .c19 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c19 .RcSplitButton-controlButton:after {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -1248,7 +1328,17 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-bottom-right-radius: 0;
 }
 
+.c20 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .c20 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c20 .RcSplitButton-controlButton:after {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -1329,7 +1419,17 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-bottom-right-radius: 0;
 }
 
+.c23 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .c23 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c23 .RcSplitButton-controlButton:after {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -1416,7 +1516,17 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-bottom-right-radius: 0;
 }
 
+.c25 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .c25 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c25 .RcSplitButton-controlButton:after {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -1497,7 +1607,17 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-bottom-right-radius: 0;
 }
 
+.c28 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .c28 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c28 .RcSplitButton-controlButton:after {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -1584,7 +1704,17 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-bottom-right-radius: 0;
 }
 
+.c30 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .c30 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c30 .RcSplitButton-controlButton:after {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -1665,7 +1795,17 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-bottom-right-radius: 0;
 }
 
+.c33 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .c33 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c33 .RcSplitButton-controlButton:after {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }

@@ -1579,7 +1579,17 @@ Array [
   border-bottom-right-radius: 0;
 }
 
+.c0 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .c0 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c0 .RcSplitButton-controlButton:after {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }

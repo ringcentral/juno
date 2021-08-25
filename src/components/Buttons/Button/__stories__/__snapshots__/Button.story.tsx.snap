@@ -3641,6 +3641,261 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Radius 1`
 </button>
 `;
 
+exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Disabled 1`] = `
+.c2 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c2 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c2 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c2.RcButton-text {
+  color: #066FAC;
+}
+
+.c2.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
+.c2.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c2.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c2.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c2.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c2.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
+.c3 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c3:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  background: rgba(255,255,255,0.32);
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.c3 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c3 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c3.RcButton-text {
+  color: #066FAC;
+}
+
+.c3.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c3.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c3.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
+.c1 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c0 li {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 li > * + * {
+  margin-left: 1em;
+}
+
+.c0 li + li {
+  margin-top: 1em;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c3.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c3.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c3.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<ul
+  className="c0"
+>
+  <li>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        Normal
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          button
+        </span>
+      </button>
+    </div>
+    <div>
+      <p
+        className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="body1"
+      >
+        Mask
+      </p>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c3 Mui-disabled RcButton-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          button
+        </span>
+      </button>
+    </div>
+  </li>
+</ul>
+`;
+
 exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Icon 1`] = `
 .c4 {
   width: 1em;
