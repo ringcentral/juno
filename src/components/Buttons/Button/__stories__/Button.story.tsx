@@ -273,6 +273,25 @@ ButtonWithLoading.argTypes = {
   ...notControlInDocTable<keyof ButtonProps>(['variant']),
 };
 
+export const ButtonWithDisabled: Story<ButtonProps> = () => {
+  return (
+    <Wrapper>
+      <li>
+        <div>
+          <Title variant="body1">Normal</Title>
+          <RcButton disabled>button</RcButton>
+        </div>
+        <div>
+          <Title variant="body1">Mask</Title>
+          <RcButton disabled disabledVariant="mask">
+            button
+          </RcButton>
+        </div>
+      </li>
+    </Wrapper>
+  );
+};
+
 export const ButtonWithCustomRadius: Story<ButtonProps> = () => {
   const theme = useTheme();
   return (

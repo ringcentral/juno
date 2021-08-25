@@ -41,11 +41,20 @@ export const buttonHoverColor: RcThemedStyled<RcButtonProps> = (props) =>
 const containedButtonHoverColor: RcThemedStyled<RcButtonProps> = (props) =>
   setOpacity(buttonColor(props), '08', true);
 
-const textDisabledColor: RcThemedStyled<RcButtonProps, any> = ({ loading }) =>
-  !loading ? palette2('disabled', 'f02') : undefined;
-
 export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
-  const { variant, size, radius: radiusProp, keepElevation, loading } = props;
+  const {
+    variant,
+    size,
+    radius: radiusProp,
+    keepElevation,
+    loading,
+    disabled,
+    disabledVariant,
+  } = props;
+  const isMask = loading || (disabled && disabledVariant === 'mask');
+
+  const textDisabledColor = !isMask ? palette2('disabled', 'f02') : undefined;
+
   const plainTextColor = plainButtonTextColor(props);
 
   const iconSpace = spacing(RcButtonIconSpace[size!]);
@@ -59,7 +68,7 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
     box-shadow: ${!keepElevation && 'unset'};
     border-radius: ${radiusProp && radius(radiusProp)};
 
-    ${loading &&
+    ${isMask &&
       css`
         &:after {
           content: '';
@@ -151,7 +160,7 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
         }
       }
 
-      ${!loading &&
+      ${!isMask &&
         css`
           &.${RcButtonClasses.disabled} {
             background-color: ${palette2('disabled', 'b01')};

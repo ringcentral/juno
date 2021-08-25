@@ -48,6 +48,15 @@ type RcButtonProps = {
   color?: RcPaletteKeys | RcButtonColor;
   /** is button loading, when `loading` that `disabled` will auto become `true` */
   loading?: boolean;
+  /**
+   * disabled variant
+   *
+   * - `normal`: default disabled button style
+   * - `mask`: with mask cover on button, and do not change the button base color
+   *
+   * @default 'normal'
+   */
+  disabledVariant?: 'normal' | 'mask';
   /** loading mode with button, default is `replace` */
   loadingMode?: RcButtonColorLoadingMode;
   /** Props send to `RcCircularProgress` when loading is `true` */
@@ -86,6 +95,7 @@ const _RcButton = forwardRef<any, RcButtonProps>(
       color,
       CircularProgressProps,
       variant,
+      disabledVariant,
       radius,
       keepElevation,
       ...rest
