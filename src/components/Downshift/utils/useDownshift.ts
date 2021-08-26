@@ -935,7 +935,7 @@ export const useDownshift = ({
                   const currentGroup = currOption.group;
 
                   if (currentGroup && currentGroup.options.length > 1) {
-                    handleGroupExpandedChange(currentGroup.key);
+                    handleGroupExpandedChange(currentGroup.group);
                   }
                 }
                 break;

@@ -30,8 +30,9 @@ export const useDownshiftGroup = ({
     Record<string, boolean>
   >({});
 
-  const handleGroupExpandedChange = (key: number) => {
+  const handleGroupExpandedChange = (key: string) => {
     const toExpandedState = !groupExpandedMap[key];
+
     const newExpandedMap = {
       ...groupExpandedMap,
       [key]: toExpandedState,
@@ -40,7 +41,7 @@ export const useDownshiftGroup = ({
     setGroupExpandedMap(newExpandedMap);
 
     if (onGroupExpanded) {
-      const group = groupedOptionsSource.find((x) => x.key === key);
+      const group = groupedOptionsSource.find((x) => x.group === key);
 
       if (group) {
         onGroupExpanded(
@@ -55,7 +56,7 @@ export const useDownshiftGroup = ({
   };
 
   const handleExpandIconClick = useEventCallback(
-    (e: React.MouseEvent<HTMLButtonElement, MouseEvent>, key: number) => {
+    (e: React.MouseEvent<HTMLButtonElement, MouseEvent>, key: string) => {
       handleGroupExpandedChange(key);
       e.preventDefault();
       e.stopPropagation();
@@ -102,7 +103,7 @@ export const useDownshiftGroup = ({
                   ? combineProps(
                       {
                         onClick: (e) => {
-                          handleExpandIconClick(e, index);
+                          handleExpandIconClick(e, group);
                         },
                         onMouseDown: (e) => {
                           e.preventDefault();
@@ -142,7 +143,7 @@ export const useDownshiftGroup = ({
   const groupedResult = useMemo(() => {
     const addExpandedResult = Object.entries(groupExpandedMap).reduce(
       (prev, [key, expended]) => {
-        const group = prev.find((x) => `${x.key}` === key);
+        const group = prev.find((x) => x.group === key);
         if (group) {
           group.expanded = expended;
         }
