@@ -30,6 +30,7 @@ import { RcTypographyProps } from '../../Typography';
 import { useRcFormContext } from '../Form/Form/FormContext';
 import { ClearIconButton, TextFieldStyle } from './styles';
 import {
+  RcOutlineTextFieldIconSizes,
   RcOutlineTextFieldInputClasses,
   RcTextFieldClasses,
   RcTextFieldFormHelperTextClasses,
@@ -168,7 +169,7 @@ const _RcTextField = forwardRef<any, RcTextFieldProps>((inProps, ref) => {
             tooltipForceHide: !iconTitle,
           },
           onClick: handleClear,
-          size,
+          size: RcOutlineTextFieldIconSizes[size!],
         },
         clearButtonProps,
       );
@@ -377,5 +378,6 @@ export {
   RcTextFieldProps,
   RcTextFieldVariant,
   RcOutlineTextSizeRadius,
+  RcOutlineTextFieldIconSizes,
   RcOutlineTextSize,
 };

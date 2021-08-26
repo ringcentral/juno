@@ -1,4 +1,5 @@
 import { RcClasses, RcTypographyKeys, UnitMap } from '../../../../foundation';
+import { RcIconButtonSize } from '../../../Buttons/IconButton';
 import { RcOutlineTextSize, RcTextFieldProps } from '../TextField';
 
 export const RcOutlineTextFieldInputClasses = RcClasses<
@@ -48,4 +49,13 @@ export const RcOutlineTextFieldFontStyles: UnitMap<
   small: 'body1',
   medium: 'subheading1',
   large: 'subheading1',
+};
+
+export const RcOutlineTextFieldIconSizes: UnitMap<
+  RcOutlineTextSize,
+  RcIconButtonSize
+> = {
+  small: 'small',
+  medium: 'medium',
+  large: 'medium',
 };
