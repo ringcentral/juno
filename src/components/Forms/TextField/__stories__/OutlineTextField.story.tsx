@@ -20,7 +20,7 @@ import {
 } from '../../../../storybook';
 import { RcIconButton } from '../../../Buttons/IconButton';
 import { RcIcon } from '../../../Icon';
-import { RcTextField } from '../TextField';
+import { RcOutlineTextFieldIconSizes, RcTextField } from '../TextField';
 import TextFieldStory from './TextField.story';
 
 export default {
@@ -278,13 +278,17 @@ export const OutlineTextFieldSizes: Story<OutlineTextFieldProps> = ({
             fullWidth
             InputProps={{
               startAdornment: (
-                <RcIcon color="neutral.f04" size={size} symbol={BoxSvg} />
+                <RcIcon
+                  color="neutral.f04"
+                  size={RcOutlineTextFieldIconSizes[size!]}
+                  symbol={BoxSvg}
+                />
               ),
               endAdornment: (
                 <RcIconButton
                   color="neutral.f04"
                   variant="plain"
-                  size={size}
+                  size={RcOutlineTextFieldIconSizes[size!]}
                   symbol={AddSvg}
                 />
               ),
