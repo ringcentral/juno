@@ -34,9 +34,9 @@ export const ListSubheader: Story<ListSubheaderProps> = ({
       {[0, 1, 2, 3, 4].map((sectionId) => (
         <li key={`section-${sectionId}`}>
           <ul>
-            <RcListSubheader
-              {...args}
-            >{`I'm sticky ${sectionId}`}</RcListSubheader>
+            <RcListSubheader {...args}>
+              {`I'm sticky ${sectionId}`}
+            </RcListSubheader>
             {[0, 1, 2].map((item) => (
               <RcListItem key={`item-${sectionId}-${item}`}>
                 <RcListItemText primary={`Item ${item}`} />
