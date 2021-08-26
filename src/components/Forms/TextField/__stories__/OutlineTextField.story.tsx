@@ -239,3 +239,73 @@ export const OutlineTextFieldExamples: Story<OutlineTextFieldProps> = ({
 };
 
 OutlineTextFieldExamples.storyName = 'OutlineTextField Examples';
+
+const sizes = ['small', 'medium', 'large'] as OutlineTextFieldProps['size'][];
+
+export const OutlineTextFieldSizes: Story<OutlineTextFieldProps> = ({
+  children,
+  value: valueArg,
+  ...args
+}) => {
+  switchToControlKnobs();
+
+  const ref = useRef();
+  const inputRef = useRef();
+
+  const [value, setValue] = useState<string>(valueArg as any);
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setValue(event.target.value);
+  };
+
+  useLayoutEffect(() => {
+    console.log(ref, inputRef);
+  }, []);
+
+  return (
+    <>
+      {sizes.map((size) => (
+        <React.Fragment key={size}>
+          <RcTextField
+            {...args}
+            variant="outline"
+            label={size}
+            value={value}
+            size={size}
+            onChange={handleChange}
+            ref={ref}
+            inputRef={inputRef}
+            fullWidth
+            InputProps={{
+              startAdornment: (
+                <RcIcon color="neutral.f04" size={size} symbol={BoxSvg} />
+              ),
+              endAdornment: (
+                <RcIconButton
+                  color="neutral.f04"
+                  variant="plain"
+                  size={size}
+                  symbol={AddSvg}
+                />
+              ),
+            }}
+          />
+          <br />
+          <br />
+        </React.Fragment>
+      ))}
+    </>
+  );
+};
+
+OutlineTextFieldSizes.storyName = 'OutlineTextField Sizes';
+
+OutlineTextFieldSizes.args = {
+  helperText: 'some helper text',
+  placeholder: 'Placeholder',
+  id: 'id-OutlineTextFieldWithSize-1',
+};
+
+OutlineTextFieldSizes.argTypes = {
+  ...notControlInDocTable<keyof OutlineTextFieldProps>(['size']),
+};
