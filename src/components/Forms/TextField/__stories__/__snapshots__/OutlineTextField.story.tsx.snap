@@ -4314,32 +4314,6 @@ Array [
   color: #fff;
 }
 
-.c10.RcIconButton-root .c1 {
-  font-size: 24px;
-}
-
-.c10.RcIconButton-root:active .c1 {
-  color: #666666;
-}
-
-.c10.RcIconButton-root.focus-visible:active .c1,
-.c10.RcIconButton-root[data-focus-visible-added]:active .c1 {
-  color: rgba(102,102,102,0.88);
-}
-
-.c10.RcIconButton-disabled .c1 {
-  color: #B9B9B9;
-}
-
-.c10.RcIconButton-contained:active .c1 {
-  color: #fff;
-}
-
-.c10.RcIconButton-contained.focus-visible:active .c1,
-.c10.RcIconButton-contained[data-focus-visible-added]:active .c1 {
-  color: #fff;
-}
-
 .c0 *:not(input) + .c4 {
   margin-left: 12px;
 }
@@ -4580,18 +4554,6 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-root:hover .c1 {
-    color: rgba(102,102,102,0.88);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-contained:hover .c1 {
-    color: #fff;
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
   .c0 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
     border-bottom-color: #121212;
   }
@@ -4751,24 +4713,8 @@ Array [
 
 }
 
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
 <br />,
   @media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
 
 }
 
@@ -4950,32 +4896,6 @@ Array [
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
-}
-
-.c10.RcIconButton-root .c1 {
-  font-size: 24px;
-}
-
-.c10.RcIconButton-root:active .c1 {
-  color: #666666;
-}
-
-.c10.RcIconButton-root.focus-visible:active .c1,
-.c10.RcIconButton-root[data-focus-visible-added]:active .c1 {
-  color: rgba(102,102,102,0.88);
-}
-
-.c10.RcIconButton-disabled .c1 {
-  color: #B9B9B9;
-}
-
-.c10.RcIconButton-contained:active .c1 {
-  color: #fff;
-}
-
-.c10.RcIconButton-contained.focus-visible:active .c1,
-.c10.RcIconButton-contained[data-focus-visible-added]:active .c1 {
-  color: #fff;
 }
 
 .c7 *:not(input) + .c4 {
@@ -5218,18 +5138,6 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-root:hover .c1 {
-    color: rgba(102,102,102,0.88);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-contained:hover .c1 {
-    color: #fff;
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
 
 }
 
@@ -5389,24 +5297,8 @@ Array [
 
 }
 
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
 <br />,
   @media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
 
 }
 
@@ -5457,7 +5349,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: 20px;
   color: #666666;
 }
 
@@ -5487,32 +5379,6 @@ Array [
   color: #fff;
 }
 
-.c10.RcIconButton-root .c1 {
-  font-size: 20px;
-}
-
-.c10.RcIconButton-root:active .c1 {
-  color: #666666;
-}
-
-.c10.RcIconButton-root.focus-visible:active .c1,
-.c10.RcIconButton-root[data-focus-visible-added]:active .c1 {
-  color: rgba(102,102,102,0.88);
-}
-
-.c10.RcIconButton-disabled .c1 {
-  color: #B9B9B9;
-}
-
-.c10.RcIconButton-contained:active .c1 {
-  color: #fff;
-}
-
-.c10.RcIconButton-contained.focus-visible:active .c1,
-.c10.RcIconButton-contained[data-focus-visible-added]:active .c1 {
-  color: #fff;
-}
-
 .c5.RcIconButton-root {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5526,8 +5392,8 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   color: #666666;
   border-radius: 50%;
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
@@ -5536,7 +5402,7 @@ Array [
 }
 
 .c5.RcIconButton-root .c1 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .c5.RcIconButton-root:active .c1 {
@@ -5557,10 +5423,10 @@ Array [
 .c5.RcIconButton-root[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
   box-shadow: 0 0 0 1px #066FAC;
   border-radius: 50%;
   pointer-events: none;
@@ -5836,18 +5702,6 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-root:hover .c1 {
-    color: rgba(102,102,102,0.88);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-contained:hover .c1 {
-    color: #fff;
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
   .c5.RcIconButton-root:hover {
     background-color: transparent;
   }
@@ -6027,24 +5881,8 @@ Array [
 
 }
 
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
 <br />,
   @media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
 
 }
 
