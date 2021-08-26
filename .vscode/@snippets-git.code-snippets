@@ -1,0 +1,23 @@
+{
+  // https://code.visualstudio.com/docs/editor/userdefinedsnippets#_creating-your-own-snippets
+  "feat": {
+    "prefix": "feat",
+    "body": ["feat(RCUI-${1}): [$2] ${0}"],
+    "description": "commit message"
+  },
+  "fix": {
+    "prefix": "fix",
+    "body": ["fix(RCUI-${1}): [$2] ${0}"],
+    "description": "commit message"
+  },
+  "chore": {
+    "prefix": "chore",
+    "body": ["chore(project): [$2] ${0}"],
+    "description": "commit message"
+  },
+  "snapshot": {
+    "prefix": "snapshot",
+    "body": ["chore(RCUI-${0}): [Snapshot] update snapshot"],
+    "description": "commit message"
+  }
+}
