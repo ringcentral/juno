@@ -3,7 +3,14 @@ import userEvent from '@testing-library/user-event';
 import range from 'lodash/range';
 import React from 'react';
 
-import { act, EachRun, fireEvent, screen, sleep } from '../../../../tests';
+import {
+  act,
+  EachRun,
+  fireEvent,
+  screen,
+  sleep,
+  within,
+} from '../../../../tests';
 import {
   getSelectionPosition,
   setSelectionPosition,
@@ -15,6 +22,7 @@ import {
   checkHighlightItem,
   checkMenuOpen,
   checkStopPropagation,
+  clickExpandButton,
   focusInput,
   getClearButton,
   getToggleButton,
@@ -24,6 +32,7 @@ import {
   keydownKey,
   openMenu,
   openMenuWithState,
+  optionLengthToBe,
   typingValueAndOpen,
 } from './steps/init.step';
 
@@ -1461,10 +1470,114 @@ describe('Downshift', () => {
   );
 });
 
-// it.each``('', EachRun<any, InitContext>``);
-// TODO: logic of below
-// groupBy?: (option: RcDownshiftSelectedItem) => string;
-// renderGroup
+describe('Downshift GroupBy', () => {
+  it.each`
+    groupVariant  | groupExpanded | totalCount | titleDisabled
+    ${'normal'}   | ${true}       | ${15}      | ${'true'}
+    ${'normal'}   | ${false}      | ${15}      | ${'true'}
+    ${'expanded'} | ${false}      | ${5}       | ${'false'}
+    ${'expanded'} | ${true}       | ${10}      | ${'false'}
+  `(
+    '[Downshift] groupBy work correctly',
+    EachRun<any, InitContext>`
+      Scenario: have set groupBy props
+      Given: groupVariant state is $groupVariant
+      And: groupExpanded state is $groupExpanded
+      ${(args, context) =>
+        init(
+          {
+            ...args,
+            options: [
+              { id: 1, label: 'Alan Zou' },
+              { id: 2, label: 'Alan Zou2' },
+              { id: 3, label: 'Blan Zou' },
+              { id: 4, label: 'Blan Zou2' },
+              { id: 5, label: 'Clan Zou' },
+              { id: 6, label: 'Clan Zou2' },
+              { id: 7, label: 'Dlan Zou' },
+              { id: 8, label: 'Dlan Zou2' },
+              { id: 9, label: 'Elan Zou' },
+              { id: 10, label: 'Elan Zou2' },
+            ],
+            groupBy: (option) => option.label?.[0] || '',
+            SuggestionListProps: {
+              initialItemCount: args.totalCount,
+            },
+          },
+          context,
+        )}
+      When: focus input ${focusInput}
+      And: menu is open ${openMenu} ${() => checkMenuOpen(true)}
+      Then: total menu item length to be $totalCount ${(args, context) => {
+        const items = context.result.queryAllByRole('option');
+
+        expect(items.length).toEqual(args.totalCount);
+      }}
+      And: group length to be 5
+      And: each title item should be disabled ${(args, context) => {
+        const menuElm = screen.queryByRole('presentation');
+        const items = menuElm?.querySelectorAll('.RcSuggestionList-groupTitle');
+
+        expect(items?.length).toEqual(5);
+
+        items?.forEach((item) => {
+          expect(item.getAttribute('aria-disabled')).toEqual(
+            args.titleDisabled,
+          );
+        });
+      }}
+  `,
+  );
+
+  it.each`
+    run
+    ${true}
+  `(
+    '[Downshift] expanded button work correctly',
+    EachRun<any, InitContext>`
+      Scenario: have set groupBy props
+      Given: groupVariant state is 'expanded'
+      And: groupExpanded state is $groupExpanded
+      ${(args, context) =>
+        init(
+          {
+            ...args,
+            groupVariant: 'expanded',
+            options: [
+              { id: 1, label: 'Alan Zou' },
+              { id: 2, label: 'Alan Zou2' },
+            ],
+            groupBy: (option) => option.label?.[0] || '',
+            SuggestionListProps: {
+              initialItemCount: 1,
+            },
+          },
+          context,
+        )}
+      When: focus input ${focusInput}
+      And: menu is open ${openMenu} ${() => checkMenuOpen(true)}
+      Then: total menu item length to be 1 ${(args, context) =>
+        optionLengthToBe({ length: 1 }, context)}
+
+      When: click expand button ${clickExpandButton}
+      Then: total menu item length to be 2${(args, context) =>
+        optionLengthToBe({ length: 2 }, context)}
+
+      When: user blur to close menu ${blurInput} ${() => checkMenuOpen(false)}
+      And: re-open menu ${openMenu} ${() => checkMenuOpen(true)}
+      Then: toggle state should be keep ,total menu item length to be 2 ${(
+        args,
+        context,
+      ) => optionLengthToBe({ length: 2 }, context)}
+
+
+      When: click expand button again ${clickExpandButton}
+      Then: total menu item length to be 1 ${(args, context) =>
+        optionLengthToBe({ length: 1 }, context)}
+  `,
+  );
+});
+
 // renderNoOptions
 // autoHighlight
 
@@ -1473,5 +1586,3 @@ describe('Downshift', () => {
 // tooltip
 
 // renderNoOptions
-
-// item groupBy

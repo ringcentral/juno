@@ -1,7 +1,13 @@
 import React, { useRef, useState } from 'react';
 import { act } from 'react-dom/test-utils';
 
-import { fireEvent, render, RenderResult, screen } from '../../../../../tests';
+import {
+  fireEvent,
+  render,
+  RenderResult,
+  screen,
+  within,
+} from '../../../../../tests';
 import { options } from '../../__stories__/options';
 import {
   RcDownshift,
@@ -47,6 +53,9 @@ export const init = (
     label,
     variant,
     disabledItemsHighlightable,
+    groupVariant,
+    groupExpanded,
+    groupBy,
   }: {
     isHaveTags?: boolean;
     options?: RcDownshiftSelectedItem[];
@@ -72,6 +81,9 @@ export const init = (
     | 'error'
     | 'label'
     | 'disabledItemsHighlightable'
+    | 'groupBy'
+    | 'groupVariant'
+    | 'groupExpanded'
   >,
   context: InitContext,
 ) => {
@@ -111,6 +123,9 @@ export const init = (
     return (
       <RcDownshift
         variant={variant}
+        groupVariant={groupVariant}
+        groupExpanded={groupExpanded}
+        groupBy={groupBy}
         label={label}
         freeSolo={freeSolo}
         maxFreeSolo={maxFreeSolo}
@@ -272,18 +287,24 @@ export const getClearButton = (context: InitContext) => {
   )!;
 };
 
-// ${(args, context) => {
-//   switch (args.result) {
-//     case 'focus on first tag':
-//       context.wrapper
-//         .find('RcChip')
-//         .at(0)
-//         .simulate('focus');
-//       break;
-//     case 'focus on input':
-//       focusInput(args, context);
-//       break;
-//     default:
-//       break;
-//   }
-// }}
+export const clickExpandButton: (args: any, context: InitContext) => void = (
+  args,
+  context,
+) => {
+  const item = context.result.queryByRole('option');
+
+  const expandButton = within(item!).getByRole('button');
+
+  expect(expandButton).toHaveClass('RcSuggestionList-toggle');
+
+  userEvent.click(expandButton);
+};
+
+export const optionLengthToBe: (args: any, context: InitContext) => void = (
+  args,
+  context,
+) => {
+  const items = context.ref.current?.getFilterResultItems()!;
+
+  expect(items.length).toEqual(args.length);
+};
