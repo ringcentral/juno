@@ -1,4 +1,32 @@
 
+### [1.11.2](https://github.com/ringcentral/juno/compare/v1.11.1...v1.11.2) (2021-08-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* **OutlineTextField:** [TextField] `variant=“outline”` font-size from `subheading1` to `body1`
+* **OutlineTextField:** [TextField] `variant=“outline”` clear icon follow size auto change
+* **Button:** [Button] when loading, default will disabled button
+* **update-icon:** [Icon] gif-D rename to gif-file-D
+
+### Features
+
+* **Button:** support `mask` disabledVariant ([cc7c520](https://github.com/ringcentral/juno/commit/cc7c520436d5fc36a637a3423c887b95a2ebfeca))
+* **Button:** support loading mask ([83185d6](https://github.com/ringcentral/juno/commit/83185d644bbb12c088b0698b9d91848121945d4d))
+* **SplitButton:** support `loading` ([43c1264](https://github.com/ringcentral/juno/commit/43c12645f783077b367e413e1ed2d2a283f8de1a))
+* **update-icon:** [update-icon] fix gif dark icon name ([829d3d8](https://github.com/ringcentral/juno/commit/829d3d8cf1900e17613e4a90a98cb02a508bd4bd))
+
+
+### Bug Fixes
+
+* **Button:** loading mask use `neutral.b01` with `0.32` opacity ([02d12c5](https://github.com/ringcentral/juno/commit/02d12c50961bc5943c84b0cc2a2743783f1bd7a3))
+* **Button:** when loading button always be disabled ([d324704](https://github.com/ringcentral/juno/commit/d32470475b4a35c382b43281b3e4eac641264c19))
+* **Downshift:** fix autocomplete mode value be clear issue ([ca8cfed](https://github.com/ringcentral/juno/commit/ca8cfeddc03695a031ddcb9937efd8323c97fe3b))
+* **InlineEditable:** fix empty placeholder problem ([216e4c5](https://github.com/ringcentral/juno/commit/216e4c59e77aa89fd7bb6261c471351f2ef1517b))
+* **OutlineTextField:** add OutlineTextField sizes with token ([c946add](https://github.com/ringcentral/juno/commit/c946adda0e6f1d079307463e6efef4f3a4954e40))
+* **OutlineTextField:** fix typography size miss use in OutlineTextField ([2c8d98a](https://github.com/ringcentral/juno/commit/2c8d98abba67d98cf37ec1ef46863c98e5190774))
+* **script:** export miss `RcThemeProviderProps` ([6b8cedf](https://github.com/ringcentral/juno/commit/6b8cedf54bc11609ae59717661e7a7267aae6be1))
+
 ### [1.11.1](https://github.com/ringcentral/juno/compare/1.11.0...1.11.1) (2021-08-19)
 
 
