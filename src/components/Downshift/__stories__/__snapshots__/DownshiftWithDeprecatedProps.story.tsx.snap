@@ -300,18 +300,12 @@ exports[`Storyshots 🖤 Deprecated Components/Downshift (New with deprecated pr
   color: #666666;
 }
 
-.c2 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c2 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c2 .RcTextFieldFormHelperText-error,
 .c2 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c2 .RcTextFieldFormHelperText-disabled,
 .c2 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }

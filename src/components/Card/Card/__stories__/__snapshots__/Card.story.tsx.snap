@@ -291,18 +291,12 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   color: #666666;
 }
 
-.c32 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c32 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c32 .RcTextFieldFormHelperText-error,
 .c32 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c32 .RcTextFieldFormHelperText-disabled,
 .c32 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }

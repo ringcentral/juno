@@ -332,18 +332,12 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -917,18 +911,12 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -1523,18 +1511,12 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -1999,18 +1981,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -2489,18 +2465,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -3274,18 +3244,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -4299,18 +4263,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -5206,18 +5164,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -6422,18 +6374,12 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -7001,18 +6947,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -7616,18 +7556,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -8200,18 +8134,12 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -8784,18 +8712,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -9367,18 +9289,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -9946,18 +9862,12 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -9974,6 +9884,13 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
 .c0 input[type='search']::-webkit-search-results-button,
 .c0 input[type='search']::-webkit-search-results-decoration {
   display: none;
+}
+
+.c0 .RcOutlineTextFieldInput-input {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
 }
 
 .c0 .c5 {
@@ -9998,7 +9915,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
 }
 
 .c0 .RcOutlineTextFieldInput-root:before {
-  content: ' ';
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -10585,18 +10502,12 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }

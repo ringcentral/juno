@@ -106,18 +106,12 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/BorderLessTextField BorderLess
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }

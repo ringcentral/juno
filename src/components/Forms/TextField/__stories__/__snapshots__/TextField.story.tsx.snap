@@ -312,18 +312,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -742,18 +736,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -1107,18 +1095,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -1525,18 +1507,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -1941,18 +1917,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -2389,18 +2359,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -2805,18 +2769,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -3217,18 +3175,12 @@ Array [
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -3600,18 +3552,12 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c0 .RcTextFieldFormHelperText-error,
 .c0 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -3751,18 +3697,12 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   color: #666666;
 }
 
-.c6 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c6 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c6 .RcTextFieldFormHelperText-error,
 .c6 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c6 .RcTextFieldFormHelperText-disabled,
 .c6 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
@@ -3902,18 +3842,12 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   color: #666666;
 }
 
-.c7 .RcTextFieldFormHelperText-error {
-  color: #BE3933;
-}
-
-.c7 .RcTextFieldFormHelperText-disabled {
-  color: #B9B9B9;
-}
-
+.c7 .RcTextFieldFormHelperText-error,
 .c7 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
+.c7 .RcTextFieldFormHelperText-disabled,
 .c7 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
