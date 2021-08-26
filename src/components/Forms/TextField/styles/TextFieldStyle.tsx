@@ -158,19 +158,13 @@ export const TextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = ({
       color: ${idleColor};
     }
 
-    .${RcTextFieldFormHelperTextClasses.error} {
+    .${RcTextFieldFormHelperTextClasses.error},
+      .${RcTextFieldInputLabelClasses.error} {
       color: ${errorTextColor};
     }
 
-    .${RcTextFieldFormHelperTextClasses.disabled} {
-      color: ${disabledColor};
-    }
-
-    .${RcTextFieldInputLabelClasses.error} {
-      color: ${errorTextColor};
-    }
-
-    .${RcTextFieldInputLabelClasses.disabled} {
+    .${RcTextFieldFormHelperTextClasses.disabled},
+      .${RcTextFieldInputLabelClasses.disabled} {
       color: ${disabledColor};
     }
 

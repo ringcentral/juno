@@ -1,5 +1,5 @@
-import { RcClasses, typography, UnitMap } from '../../../../foundation';
-import { RcTextFieldProps, RcOutlineTextSize } from '../TextField';
+import { RcClasses, RcTypographyKeys, UnitMap } from '../../../../foundation';
+import { RcOutlineTextSize, RcTextFieldProps } from '../TextField';
 
 export const RcOutlineTextFieldInputClasses = RcClasses<
   RcTextFieldProps['InputProps']
@@ -41,20 +41,11 @@ export const RcOutlineTextFieldHeights: UnitMap<RcOutlineTextSize> = {
   large: 48,
 };
 
-export const RcOutlineTextFieldFontStyles: UnitMap<RcOutlineTextSize> = {
-  small: typography('body1'),
-  medium: typography('subheading1'),
-  large: typography('subheading1'),
-};
-
-export const RcOutlineTextFieldIconSizes: UnitMap<
+export const RcOutlineTextFieldFontStyles: UnitMap<
   RcOutlineTextSize,
-  {
-    width: any;
-    height: any;
-  }
+  RcTypographyKeys
 > = {
-  small: { width: 16, height: 16 },
-  medium: { width: 20, height: 20 },
-  large: { width: 20, height: 20 },
+  small: 'body1',
+  medium: 'subheading1',
+  large: 'subheading1',
 };

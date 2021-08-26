@@ -48,11 +48,11 @@ type RcTextFieldProps = {
   variant?: RcTextFieldVariant;
   /** border radius for outline text field */
   radius?: RcOutlineTextSizeRadius;
-  /** size for outline text field */
+  /** size for TextField when `variant="outline"` */
   size?: RcOutlineTextSize;
   /** align for text */
   align?: 'left' | 'center' | 'right';
-  /** set text size for below input when `variant="borderLess"` */
+  /** set input text size when `variant="borderLess"` */
   textVariant?: RcTypographyProps['variant'];
   /** is should show clear button */
   clearBtn?: boolean;
@@ -168,6 +168,7 @@ const _RcTextField = forwardRef<any, RcTextFieldProps>((inProps, ref) => {
             tooltipForceHide: !iconTitle,
           },
           onClick: handleClear,
+          size,
         },
         clearButtonProps,
       );
@@ -202,6 +203,7 @@ const _RcTextField = forwardRef<any, RcTextFieldProps>((inProps, ref) => {
     clearButtonProps,
     clearLabel,
     handleClear,
+    size,
   ]);
 
   const events = useMemo(

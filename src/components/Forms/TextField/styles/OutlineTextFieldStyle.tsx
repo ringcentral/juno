@@ -6,10 +6,12 @@ import {
   radius as radiusFn,
   RcThemedStyled,
   spacing,
+  typography,
 } from '../../../../foundation';
 import { RcTextFieldProps } from '../TextField';
 import {
   belowIconButtonSpacing,
+  RcOutlineTextFieldFontStyles,
   RcOutlineTextFieldHeights,
   RcOutlineTextFieldInputClasses,
   RcOutlineTextFieldLabelMargins,
@@ -24,11 +26,16 @@ export const OutlineTextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = ({
   const height = px(RcOutlineTextFieldHeights[size!]);
   const { inside, outside, insideLeft } = RcOutlineTextFieldSpaces[size!];
   const labelMargin = RcOutlineTextFieldLabelMargins[size!];
+  const typographyToken = RcOutlineTextFieldFontStyles[size!];
 
   const currRadius = radiusFn(radius!);
 
   // `-webkit-tap-highlight-color` for cover background color, prevent color be cover by browser
   return css`
+    .${RcOutlineTextFieldInputClasses.input} {
+      ${typography(typographyToken)};
+    }
+
     ${belowIconButtonSpacing(spacing(inside))};
 
     * + .${RcOutlineTextFieldInputClasses.input} {
@@ -50,7 +57,7 @@ export const OutlineTextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = ({
       border-radius: ${currRadius};
 
       &:before {
-        content: ' ';
+        content: '';
         position: absolute;
         top: 0;
         right: 0;
