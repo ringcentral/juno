@@ -403,6 +403,12 @@ export const DownshiftGroupBy: Story<DownshiftProps> = () => {
     );
   };
   return (
+    /**
+     * When have some country or address label or others chrome support autofill
+     * that will support auto fill address in input
+     * if you not need should use autoComplete="chrome-off"
+     * more detail https://developers.google.com/web/updates/2015/06/checkout-faster-with-autofill
+     */
     <>
       <Title>Normal Group</Title>
       <RcDownshift
@@ -417,6 +423,9 @@ export const DownshiftGroupBy: Story<DownshiftProps> = () => {
           console.log(group, groupStateMap);
           setGroupExpanded(groupStateMap);
         }}
+        InputProps={{
+          autoComplete: 'chrome-off',
+        }}
         toggleButton
         groupBy={groupBy}
         multiple
@@ -429,7 +438,7 @@ export const DownshiftGroupBy: Story<DownshiftProps> = () => {
       <RcDownshift
         gutterBottom
         options={options}
-        label="Country"
+        label="Address"
         value={value}
         onChange={handleChange}
         groupVariant="expanded"
@@ -438,6 +447,9 @@ export const DownshiftGroupBy: Story<DownshiftProps> = () => {
         onGroupExpanded={(group, groupStateMap) => {
           console.log(group, groupStateMap);
           setGroupExpanded(groupStateMap);
+        }}
+        InputProps={{
+          autoComplete: 'chrome-off',
         }}
         toggleButton
         groupBy={groupBy}
@@ -457,6 +469,9 @@ export const DownshiftGroupBy: Story<DownshiftProps> = () => {
         getExpandIconProps={getExpandIconProps}
         toggleButton
         groupBy={groupBy}
+        InputProps={{
+          autoComplete: 'chrome-off',
+        }}
         renderGroup={(
           {
             label,
@@ -495,6 +510,9 @@ export const DownshiftGroupBy: Story<DownshiftProps> = () => {
         getExpandIconProps={getExpandIconProps}
         toggleButton
         groupBy={groupBy}
+        InputProps={{
+          autoComplete: 'chrome-off',
+        }}
         renderGroup={(
           {
             label,
