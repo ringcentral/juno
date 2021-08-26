@@ -137,6 +137,24 @@ type RcDownshiftProps<
     state: RcDownshiftRenderOptionState,
   ) => React.ReactNode;
   /**
+   * group layout mode
+   *
+   * - `normal`: use group name as group title
+   * - `expanded`: use first-item as group title, and that is `clickable`
+   *
+   * @default 'normal'
+   */
+  groupVariant?: 'normal' | 'expanded';
+  /**
+   * group expanded state, you can control expanded state by that,
+   * use when `groupVariant` is `expanded`
+   *
+   * - `true`: expand all
+   * - `false`: collapse all
+   * - `{key: boolean}`: control group state
+   */
+  groupExpanded?: Record<string, boolean> | boolean;
+  /**
    * If provided, the options will be grouped under the returned string.
    * The groupBy value is also used as the text for group headings when `renderGroup` is not provided.
    *
@@ -448,6 +466,8 @@ const _RcDownshift = memo(
       screenReader,
       onSelectChange,
       variant,
+      groupExpanded,
+      groupVariant = 'normal',
       getExpandIconProps,
       groupBy,
       value: valueProp = selectedItemsProp,
@@ -521,6 +541,7 @@ const _RcDownshift = memo(
     const {
       focusInput,
       optionItems,
+      optionsGroupList,
       selectedItems,
       highlightedIndex,
       getToggleButtonProps,
@@ -559,6 +580,7 @@ const _RcDownshift = memo(
       value: valueProp,
       inputValue: inputValueProp,
       getOptionDisabled,
+      groupExpanded: groupVariant === 'normal' ? true : groupExpanded,
       getExpandIconProps,
       options: suggestionItems || options,
       freeSolo,
@@ -574,6 +596,7 @@ const _RcDownshift = memo(
       openOnFocus,
       autoHighlight,
       groupBy,
+      groupVariant,
       onChange: onChangeProp,
       onInputChange: onInputChangeProp,
       getOptionLabel,
@@ -795,8 +818,10 @@ const _RcDownshift = memo(
           {isOpen && (
             <RcSuggestionList
               highlightedIndex={highlightedIndex}
+              optionsGroupList={optionsGroupList}
               options={optionItems}
-              groupBy={groupBy}
+              groupVariant={groupVariant}
+              groupExpanded={groupExpanded}
               renderGroup={renderGroup}
               MenuItem={MenuItem}
               renderOption={renderOption}

@@ -77,15 +77,17 @@ type UseDownshiftParams = {
   | 'openOnFocus'
   | 'onClear'
   | 'renderNoOptions'
-  | 'groupBy'
-  | 'getExpandIconProps'
   | 'autoHighlight'
   | 'getOptionDisabled'
-  | 'onGroupExpanded'
   | 'required'
   | 'label'
   | 'disabledItemsHighlightable'
   | 'variant'
+  | 'groupBy'
+  | 'getExpandIconProps'
+  | 'groupExpanded'
+  | 'onGroupExpanded'
+  | 'groupVariant'
 >;
 
 function stringArrToRegExp(keyToTags?: string[]): RegExp {
@@ -100,7 +102,6 @@ export const useDownshift = ({
   variant,
   label: labelProp,
   inputValue: inputValueProp,
-  getExpandIconProps,
   getOptionLabel = DEFAULT_GET_OPTION_LABEL,
   keyToTags = DEFAULT_KEY_TO_CHIPS,
   filterOptions,
@@ -123,11 +124,14 @@ export const useDownshift = ({
   disabled,
   renderNoOptions,
   onClear,
-  groupBy,
   autoHighlight,
   getOptionDisabled,
   addNoOptionItem,
+  groupBy,
   onGroupExpanded,
+  groupVariant,
+  groupExpanded,
+  getExpandIconProps,
   required,
   open: openProp,
   onOpen,
@@ -256,12 +260,19 @@ export const useDownshift = ({
     selectedItems,
   ]);
 
-  const { groupedResult, handleGroupExpandedChange } = useDownshiftGroup({
+  const {
+    groupedResult,
+    handleGroupExpandedChange,
+    optionsGroupList,
+  } = useDownshiftGroup({
     groupBy,
     options,
     filteredResult,
     getExpandIconProps,
+    groupExpanded,
     onGroupExpanded,
+    groupVariant,
+    id: downshiftId,
   });
 
   const optionItems = groupBy ? groupedResult : filteredResult;
@@ -1108,6 +1119,7 @@ export const useDownshift = ({
     openMenu,
     reset,
     forceUpdate,
+    optionsGroupList,
   };
 
   changeHighlightedIndexReason.current = undefined;

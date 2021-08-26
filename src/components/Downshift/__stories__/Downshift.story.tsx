@@ -28,9 +28,10 @@ import { RcButton, RcIconButton } from '../../Buttons';
 import { RcChip } from '../../Chip';
 import { DialogExampleComponent } from '../../Dialog/__stories__/Dialog.story';
 import { RcTextField } from '../../Forms/TextField';
-import { RcListItemText } from '../../List';
+import { RcListItemText, RcListSubheader } from '../../List';
 import { RcMenuItem } from '../../Menu';
 import { RcText } from '../../Text';
+import { RcTypography } from '../../Typography';
 import { RcDownshift, RcDownshiftProps, RcDownshiftRef } from '../Downshift';
 import {
   DEFAULT_KEY_TO_CHIPS,
@@ -363,6 +364,10 @@ export const DownshiftLazyLoadExamples: Story<DownshiftProps> = () => {
 export const DownshiftGroupBy: Story<DownshiftProps> = () => {
   const [value, setValue] = useState<RcDownshiftSelectedItem[]>([]);
 
+  const [groupExpanded, setGroupExpanded] = useState<Record<string, boolean>>(
+    {},
+  );
+
   const getExpandIconProps = useCallback<
     NonNullable<DownshiftProps['getExpandIconProps']>
   >(({ group, expanded }) => {
@@ -399,14 +404,19 @@ export const DownshiftGroupBy: Story<DownshiftProps> = () => {
   };
   return (
     <>
+      <Title>Normal Group</Title>
       <RcDownshift
         gutterBottom
         options={options}
         label="Country"
         value={value}
         onChange={handleChange}
+        groupExpanded={groupExpanded}
         getExpandIconProps={getExpandIconProps}
-        onGroupExpanded={console.log}
+        onGroupExpanded={(group, groupStateMap) => {
+          console.log(group, groupStateMap);
+          setGroupExpanded(groupStateMap);
+        }}
         toggleButton
         groupBy={groupBy}
         multiple
@@ -415,13 +425,73 @@ export const DownshiftGroupBy: Story<DownshiftProps> = () => {
         placeholder="What country have you been to?"
         filterOptions={filterOptions}
       />
-      <Title>Custom RenderGroup Title</Title>
+      <Title>Expanded Group</Title>
       <RcDownshift
         gutterBottom
         options={options}
         label="Country"
         value={value}
         onChange={handleChange}
+        groupVariant="expanded"
+        groupExpanded={groupExpanded}
+        getExpandIconProps={getExpandIconProps}
+        onGroupExpanded={(group, groupStateMap) => {
+          console.log(group, groupStateMap);
+          setGroupExpanded(groupStateMap);
+        }}
+        toggleButton
+        groupBy={groupBy}
+        multiple
+        clearBtn
+        helperText="please select country"
+        placeholder="What country have you been to?"
+        filterOptions={filterOptions}
+      />
+      <Title>Normal Group (Custom render)</Title>
+      <RcDownshift
+        gutterBottom
+        options={options}
+        label="Country"
+        value={value}
+        onChange={handleChange}
+        getExpandIconProps={getExpandIconProps}
+        toggleButton
+        groupBy={groupBy}
+        renderGroup={(
+          {
+            label,
+            id,
+            error,
+            unSelectable,
+            isSuggestion,
+            isError,
+            group,
+            ...restProps
+          },
+          { selected, expanded, expandIconProps },
+        ) => {
+          return (
+            <RcBox margin="1em" id={`${id}`} {...restProps}>
+              <RcTypography color="neutral.b04" variant="title2">
+                {label}
+              </RcTypography>
+            </RcBox>
+          );
+        }}
+        multiple
+        clearBtn
+        helperText="please select country"
+        placeholder="What country have you been to?"
+        filterOptions={filterOptions}
+      />
+      <Title>Expanded Group (Custom render)</Title>
+      <RcDownshift
+        gutterBottom
+        options={options}
+        label="Country"
+        value={value}
+        onChange={handleChange}
+        groupVariant="expanded"
         getExpandIconProps={getExpandIconProps}
         toggleButton
         groupBy={groupBy}

@@ -39,6 +39,7 @@ import {
 import { RcDownshiftProps } from '../Downshift';
 import {
   RcDownshiftGetItemPropsOptions,
+  RcDownshiftGroupedOption,
   RcDownshiftHighlightChangeReason,
   RcDownshiftSelectedItem,
 } from '../utils';
@@ -61,7 +62,7 @@ export type RcSuggestionListProps<T> = RcBaseProps<
    * @default false
    */
   padding?: boolean | number;
-} & RcClassesProps<'root' | 'toggle' | 'expanded'>;
+} & RcClassesProps<'root' | 'toggle' | 'expanded' | 'groupTitle'>;
 
 export type InnerSuggestionListProps = {
   /** current highlightedIndex */
@@ -82,6 +83,8 @@ export type InnerSuggestionListProps = {
   isKeepHighlightedIndex: boolean;
   /** trigger when need update outside popper position */
   onUpdatePopper?: () => any;
+  /** options group list, use for calculate `aria-setsize` */
+  optionsGroupList?: RcDownshiftGroupedOption<RcDownshiftSelectedItem>[];
 } & Pick<
   RcDownshiftProps,
   | 'inputValue'
@@ -89,7 +92,8 @@ export type InnerSuggestionListProps = {
   | 'renderOption'
   | 'getOptionDisabled'
   | 'renderGroup'
-  | 'groupBy'
+  | 'groupExpanded'
+  | 'groupVariant'
   | 'getOptionLabel'
 > &
   RcSuggestionListProps<any>;
@@ -116,8 +120,10 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
       getMenuProps,
       renderOption,
       inputValue,
-      groupBy,
+      groupVariant,
+      groupExpanded,
       renderGroup,
+      optionsGroupList,
       getOptionDisabled,
       MenuItem,
       changeHighlightedIndexReason,
@@ -134,6 +140,8 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
 
     const vlRef = useRef<VirtuosoHandle>(null);
     const forkVlRef = useForkRef(ref, vlRef);
+
+    const isTitleGroup = groupVariant === 'normal';
 
     const listRef = useRef<HTMLElement>(null);
 
@@ -207,7 +215,12 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
         changeHighlightedIndexReason &&
         changeHighlightedIndexReason !== 'mouse'
       ) {
-        scrollToHighlightedIndex(prevHighlightedIndex, highlightedIndex);
+        scrollToHighlightedIndex(
+          prevHighlightedIndex,
+          highlightedIndex,
+          // when title group topHighlightIndex to be 1, first item is group title
+          isTitleGroup ? 1 : 0,
+        );
       }
     });
 
@@ -223,19 +236,27 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
     };
 
     const itemContent = (index: number, option: RcDownshiftSelectedItem) => {
-      const isFirstGroupItem = option === option.group?.options[0];
+      const currGroup = option.group;
+      const isGroupTitle = option === currGroup?.options[0];
 
-      const expandIconProps = isFirstGroupItem
-        ? option.group?.getExpandIconProps?.({
-            className: clsx(classes.toggle, {
-              [classes.expanded]: option.group?.expanded,
-            }),
-          })
-        : undefined;
+      const groupIndex =
+        optionsGroupList?.findIndex((x) => x.group === currGroup?.group) || 0;
+
+      const isFixedGroupExpanded = typeof groupExpanded === 'boolean';
+
+      const expandIconProps =
+        !isTitleGroup && !isFixedGroupExpanded && isGroupTitle
+          ? option.group?.getExpandIconProps?.({
+              className: clsx(classes.toggle, {
+                [classes.expanded]: option.group?.expanded,
+              }),
+            })
+          : undefined;
 
       const itemProps = getItemProps({
         item: option,
         index,
+        className: isGroupTitle ? classes.groupTitle : undefined,
       });
 
       const selected = highlightedIndex === index;
@@ -243,8 +264,9 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
       const resultProps = {
         ...option,
         ...itemProps,
-        'aria-setsize': itemCount,
-        'aria-posinset': index,
+        'aria-setsize':
+          itemCount - (isTitleGroup ? optionsGroupList?.length || 0 : 0),
+        'aria-posinset': index - (isTitleGroup ? groupIndex : 0),
         key: itemProps.id,
       };
 
@@ -259,7 +281,7 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
         index,
       };
 
-      if (renderGroup && expandIconProps) {
+      if (renderGroup && isGroupTitle) {
         return renderGroup(resultProps, {
           ...state,
           expanded: option.group?.expanded,
