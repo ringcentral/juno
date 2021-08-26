@@ -21,9 +21,10 @@ export function useHighlightScroll({
   const scrollToHighlightedIndex = (
     prevHighlightedIndex: number,
     currHighlightedIndex: number,
+    topHighlightIndex = 0,
   ) => {
     if (!scrollerRef.current) {
-      if (currHighlightedIndex !== 0) {
+      if (currHighlightedIndex !== topHighlightIndex) {
         setTimeout(() => {
           scrollToIndex({
             index: currHighlightedIndex,
@@ -111,6 +112,7 @@ export function useHighlightScroll({
      * Scroll to target highlighted index
      * @param prevHighlightedIndex previous highlightedIndex
      * @param currHighlightedIndex current highlightedIndex
+     * @param topHighlightIndex top highlighIndex for check should scroll when init
      */
     scrollToHighlightedIndex,
     /**
