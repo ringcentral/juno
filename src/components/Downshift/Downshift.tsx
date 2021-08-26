@@ -264,6 +264,7 @@ type RcDownshiftProps<
    *
    * - `getActiveIndex`: get current active index
    * - `setActiveIndex`: set current active index;
+   * - `getFilterResultItems`: get current filter result option items;
    * - `getHighlightedIndex`: get current highlight index;
    * - `setHighlightedIndex`: set current highlight index;
    * - `openMenu`: open the listbox menu
@@ -271,7 +272,7 @@ type RcDownshiftProps<
    * - `focus`: focus on text field input
    * - `reset(isFocus)`: reset whole downshift, `isFocus` default is `false`
    */
-  action?: React.Ref<RcDownshiftRef>;
+  action?: React.Ref<RcDownshiftRef<T>>;
   /** auto close menu when options filter result is zero */
   autoClose?: boolean;
   /**
@@ -411,11 +412,13 @@ type RcDownshiftProps<
     TextFieldProps?: Pick<RcTextFieldProps, 'required' | 'inputProps'>;
   };
 
-type RcDownshiftRef = {
+type RcDownshiftRef<T = RcDownshiftSelectedItem> = {
   /** get current active index */
   getActiveIndex: () => number;
   /** set current active index */
   setActiveIndex: (index: number) => void;
+  /** get current filter result option items; */
+  getFilterResultItems: () => T[];
   /** get current highlight index */
   getHighlightedIndex: () => number;
   /** set current highlight index */
@@ -736,6 +739,7 @@ const _RcDownshift = memo(
     useImperativeHandle(action, () => ({
       getActiveIndex: () => activeIndex,
       setActiveIndex,
+      getFilterResultItems: () => optionItems,
       getHighlightedIndex: () => highlightedIndex,
       setHighlightedIndex: (index) =>
         setHighlightedIndex(index, { reason: 'auto', reRender: true }),
