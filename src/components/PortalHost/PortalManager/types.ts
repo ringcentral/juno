@@ -1,83 +1,110 @@
 import { ComponentType, Key } from 'react';
-import { DeepPartial } from '../../../foundation';
 
-export type PortalDescriptor<P extends {} = {}, A extends {} = {}, F = any> = {
-  id: UniqID;
-  Component: ComponentType<P>;
-  props: P;
+export type PortalDescriptor<D extends {} = {}, P extends {} = {}, F = any> = {
+  readonly id: UniqID;
+  readonly Component: ComponentType;
   /**
    * lifecycle hook
    */
-  onAfterOpened: () => void;
+  readonly onMounted: () => void;
   /**
    * lifecycle hook
    */
-  onAfterClosed: () => void;
+  readonly onUnmounted: () => void;
 
   /**
    * pass to component. component can call this fn to close self
    */
-  onClose: (feedback?: F) => void;
+  readonly onClose: (feedback: any) => void;
+
+  /**
+   * mutable object
+   */
+  readonly portalController: PortalController<P, F, D>;
+
+  props?: {};
 
   /**
    * pass to component.
    */
   open: boolean;
 
+  feedback: any;
+};
+
+export type createPortalDescriptorProps<P extends {}, F, D extends {}> = {
+  id: UniqID;
+  Component: ComponentType<ControlledProps<P, F>>;
+  props?: UncontrolledProps<P>;
+  data?: D;
+};
+
+// ****** public type ******
+export interface PortalController<
+  P extends {} = {},
+  F = any,
+  D extends {} = {}
+> {
+  id: UniqID;
   /**
-   * mutable object
+   * resolve after portal mounted
    */
-  portalController: PortalController<P, F>;
+  onOpened: Promise<void>;
+  /**
+   * resolve after portal unmounted
+   */
+  onClosed: Promise<F | undefined>;
+
+  /**
+   * close portal
+   * @param feedback onClosed will resolve this feedback value
+   */
+  close(feedback?: F): void;
+
+  /**
+   * update props
+   * @param newProps will cover old props
+   */
+  updateProps: (newProps: UncontrolledProps<P>) => void;
+
+  /**
+   * check if it's opened
+   */
+  readonly isOpened: boolean;
+
+  /**
+   * check if it's on top
+   */
+  readonly isTop: boolean;
 
   /**
    * custom data
    */
-  addition?: A;
-
-  feedback: F | undefined;
-};
-
-export type PortalController<P, F> = {
-  id: UniqID;
-  /**
-   * after portal mounted
-   */
-  afterOpened: Promise<void>;
-  /**
-   * after portal unmounted
-   */
-  afterClosed: Promise<F | undefined>;
-
-  close(feedback?: F): void;
-
-  unmount(): void;
-
-  // moveToTop(): void;
-
-  isOpened(): boolean;
-
-  isTop(): boolean;
-
-  updateProps: UpdatePropsHandler<UncontrolledProps<P>>;
-};
-
-export interface UpdatePropsHandler<P extends {} = {}> {
-  (newProps: DeepPartial<P>, isCombined: true): void;
-  (newProps: P): void;
-  (newProps: P, isCombined: false): void;
+  readonly data?: D;
 }
 
-export type ControlledProps<P extends {}, F> = P & {
+export type ControlledProps<P extends {} = {}, F = undefined> = P & {
   onClose: (feedback?: F) => void;
   open: boolean;
 };
 
 export type UncontrolledProps<P extends {}> = Omit<P, 'onClose' | 'open'>;
 
-export type PortalOptions<P, A> = {
-  props?: Omit<P, 'onClose'>;
+export type PortalOptions<P, D> = {
+  /**
+   * props without 'onClose' and 'open'
+   */
+  props?: UncontrolledProps<P>;
+  /**
+   * manager will generate id if no provide id
+   */
   id?: UniqID;
-  addition?: A;
+  /**
+   * custom data
+   */
+  data?: D;
 };
 
 export type UniqID = Key;
+
+export const UnmountSymbol = Symbol('UmountPortal');

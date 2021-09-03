@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useEffect, useMemo, useRef } from 'react';
-import { PortalControllerProvider } from './PortalControllerProvider';
+import { PortalIDProvider } from './context';
 import { PortalDescriptor } from './PortalManager';
 
 type RcPortalRendererProps = {
@@ -10,38 +10,35 @@ const RcPortalRenderer: FunctionComponent<RcPortalRendererProps> = ({
   portalDescriptor,
 }) => {
   // prevent portalDescriptor change
+  // portalDescriptor is mutable object
   const { current: portal } = useRef(portalDescriptor);
 
   const {
     Component,
     props: _props,
-    onAfterOpened,
-    onAfterClosed,
-    portalController,
+    onMounted,
+    onUnmounted,
     onClose,
     open,
+    id,
   } = portal;
 
-  // lifecycle hooks cannot change
   useEffect(() => {
-    onAfterOpened();
+    onMounted();
 
-    return () => onAfterClosed();
+    return () => onUnmounted();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // component cannot change
   const element = useMemo(() => {
+    // onClose, open must be covered
     const props = { ..._props, onClose, open } as any;
+
     return <Component {...props} />;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [_props, onClose, open]);
+  }, [_props, open]);
 
-  return (
-    <PortalControllerProvider value={portalController}>
-      {element}
-    </PortalControllerProvider>
-  );
+  return <PortalIDProvider value={id}>{element}</PortalIDProvider>;
 };
 
 RcPortalRenderer.displayName = 'RcPortalRenderer';

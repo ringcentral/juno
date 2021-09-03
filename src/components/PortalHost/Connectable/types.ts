@@ -3,14 +3,9 @@ export interface Scheduler {
   clear(): void;
 }
 
-// ****** Connectible ******
+// ****** Connectable ******
 export type Connector<T> = (value: T) => void;
 
 export type DisconnectHandler = () => void;
-
-export interface ConnectibleLifecycles {
-  onConnected: void;
-  onDisconnected: void;
-}
 
 export const ConnectSymbol = Symbol('connect');

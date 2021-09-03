@@ -7,7 +7,7 @@ import {
   styled,
   useThemeProps,
 } from '../../foundation';
-import { usePortalAnimationExisted } from '../PortalHost';
+import { useUnmountPortalHandler } from '../PortalHost';
 import { RcSnackbarContent, RcSnackbarContentProps } from './SnackbarContent';
 import { SnackbarStyle } from './styles';
 import { RcSnackbarClasses } from './utils';
@@ -38,7 +38,7 @@ const _RcSnackbar = forwardRef<any, RcSnackbarProps>(
       [classesProp],
     );
 
-    const onExited = usePortalAnimationExisted(onExitedProp);
+    const onExited = useUnmountPortalHandler(onExitedProp);
 
     return (
       <MuiSnackbar ref={ref} classes={classes} {...rest} onExited={onExited}>

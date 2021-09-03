@@ -1,25 +1,27 @@
 import { ComponentType } from 'react';
-import { combineProps, DeepPartial, logInDev } from '../../../foundation';
+import { logInDev } from '../../../foundation';
 import {
-  ThrottleScheduler,
   Connectable,
   ConnectSymbol,
   Scheduler,
+  ThrottleScheduler,
 } from '../Connectable';
 import { PortalStore } from './PortalStore';
 import {
   ControlledProps,
+  createPortalDescriptorProps,
   PortalController,
   PortalDescriptor,
   PortalOptions,
   UncontrolledProps,
   UniqID,
+  UnmountSymbol,
 } from './types';
 import { createPromise, UniqIdUtil } from './utils';
 
 const managerUniqIdUtils = new UniqIdUtil();
 
-export class PortalManager<A extends {} = {}> extends Connectable<
+export class PortalManager<D extends {} = {}> extends Connectable<
   PortalDescriptor[]
 > {
   constructor(scheduler: Scheduler = new ThrottleScheduler()) {
@@ -30,113 +32,92 @@ export class PortalManager<A extends {} = {}> extends Connectable<
 
   readonly id = managerUniqIdUtils.get();
 
-  protected readonly _portalStore = new PortalStore<A>();
+  protected readonly _portalStore = new PortalStore<D>();
 
-  private readonly _portalUniqIdUtils = new UniqIdUtil();
+  private readonly _uniqIdUtils = new UniqIdUtil();
 
+  /**
+   * open a component with portal (Dialog, snackbar, modal...)
+   * @param Component the component you want to open
+   * @param options some options (id, props...)
+   */
   open<P extends {} = {}, F = undefined>(
-    component: ComponentType<ControlledProps<P, F>>,
-    options: PortalOptions<P, A> = {},
+    Component: ComponentType<ControlledProps<P, F>>,
+    options: PortalOptions<P, D> = {},
   ) {
-    const { id: _id, props, addition } = options;
+    const { id: _id, props, data } = options;
 
-    const id = _id ?? this._portalUniqIdUtils.get();
+    const id = _id ?? this._uniqIdUtils.get();
 
-    const [afterOpened, resolveAfterOpened] = createPromise<void>();
-    const [afterClosed, resolveAfterClosed] = createPromise<F | undefined>();
+    const portalWithSameID = this._portalStore.get(id);
 
-    const portalController: PortalController<P, F> = {
+    // portalWithSameID opened
+    if (portalWithSameID?.open) {
+      logInDev({
+        component: 'RcPortalHost',
+        message: `open the portal with id('${id}') failed, this portal is already open`,
+      });
+      return portalWithSameID.portalController;
+    }
+
+    const portalDescriptor = this.createPortalDescriptor({
+      Component,
       id,
-      afterOpened,
-      afterClosed,
+      props,
+      data,
+    });
 
-      close: (feedback?: F) => {
-        this.closeByID(id, feedback);
-      },
+    // portalWithSameID closed and not unmount
+    if (portalWithSameID) {
+      portalWithSameID.portalController.onClosed.then(() => {
+        this._openPortal(portalDescriptor);
+      });
+    }
+    // portalWithSameID unmounted
+    else {
+      this._openPortal(portalDescriptor);
+    }
 
-      unmount: () => {
-        this.unmountById(id);
-      },
-
-      isOpened: () => {
-        return this.isOpened(id);
-      },
-
-      updateProps: (
-        newProps: UncontrolledProps<P> | DeepPartial<UncontrolledProps<P>>,
-        isCombined: boolean = false,
-      ) => {
-        this.updatePropsByID(id, newProps as any, isCombined as any);
-      },
-
-      isTop: () => {
-        return this.isTop(id);
-      },
-    };
-
-    // mutable object
-    const portalDescriptor: PortalDescriptor<{}, A> = {
-      id,
-      Component: component,
-      feedback: undefined,
-
-      onAfterOpened: () => {
-        resolveAfterOpened();
-      },
-
-      onAfterClosed: () => {
-        resolveAfterClosed(portalDescriptor.feedback);
-      },
-
-      props: { ...props },
-
-      onClose: (feedback: F) => {
-        // check if open. prevent close twice if close outside component
-        if (portalDescriptor.open) this.closeByID(id, feedback);
-      },
-
-      open: true,
-
-      portalController,
-
-      addition,
-    };
-
-    this._openPortal(portalDescriptor);
-
-    return portalController;
+    return portalDescriptor.portalController;
   }
 
+  /**
+   * close all
+   */
   closeAll() {
-    for (const portal of this._portalStore.portals()) {
+    for (const portal of this._portalStore.portals) {
       portal.open = false;
     }
     this._portalStore.manuallyEmit();
   }
 
-  unmountAll() {
-    this._portalStore.clear();
-  }
-
+  /**
+   * get portal controller which on top
+   */
   getTop<P extends {} = {}, F = any>(): PortalController<P, F> | undefined {
     return this._portalStore.lastPortal?.portalController;
   }
 
+  /**
+   * get portal controller by id
+   */
   getByID<P extends {} = {}, F = any>(
     id: UniqID,
   ): PortalController<P, F> | undefined {
     return this._portalStore.get(id)?.portalController;
   }
 
-  getAdditionByID(id: UniqID) {
-    return this._portalStore.get(id)?.addition;
-  }
-
+  /**
+   * check if it's opened by id. equal 'portalController.isOpened'
+   */
   isOpened(id: UniqID) {
     const portal = this._portalStore.get(id);
     return Boolean(portal?.open);
   }
 
+  /**
+   * check if it's on top by id. equal 'portalController.isTop'
+   */
   isTop(id: UniqID) {
     return this._portalStore.lastPortal?.id === id;
   }
@@ -147,6 +128,8 @@ export class PortalManager<A extends {} = {}> extends Connectable<
    * then unmount component after animation finish
    *
    * for non-RC component, you need unmount by self or call unmount directly
+   *
+   * equal 'portalController.close()'
    */
   closeByID<F>(id: UniqID, feedback?: F) {
     const portal = this._portalStore.get(id);
@@ -164,7 +147,14 @@ export class PortalManager<A extends {} = {}> extends Connectable<
     this._portalStore.manuallyEmit();
   }
 
-  unmountById(id: UniqID) {
+  /**
+   * invoke this to close portal is not recommend, will loss close animation
+   *
+   * this function just help you unmount component after close animation finish
+   *
+   * RC component (Modal, component based on modal, snackbar) would invoke this after close animation finish
+   */
+  [UnmountSymbol](id: UniqID) {
     const portal = this._portalStore.get(id);
     if (!portal) {
       logInDev({
@@ -177,23 +167,10 @@ export class PortalManager<A extends {} = {}> extends Connectable<
     this._portalStore.delete(portal.id);
   }
 
-  updatePropsByID<P extends {}>(
-    id: UniqID,
-    props: UncontrolledProps<P>,
-    isCombined: false,
-  ): void;
-
-  updatePropsByID<P extends {}>(
-    id: UniqID,
-    props: DeepPartial<UncontrolledProps<P>>,
-    isCombined: true,
-  ): void;
-
-  updatePropsByID<P extends {}>(
-    id: UniqID,
-    props: DeepPartial<UncontrolledProps<P>> | UncontrolledProps<P>,
-    isCombined = false,
-  ) {
+  /**
+   * update props by id, equal 'portalController.updateProps(newProps)'
+   */
+  updatePropsByID<P extends {}>(id: UniqID, props: UncontrolledProps<P>) {
     const portal = this._portalStore.get(id);
     if (!portal?.open) {
       logInDev({
@@ -203,11 +180,7 @@ export class PortalManager<A extends {} = {}> extends Connectable<
       return;
     }
 
-    if (isCombined) {
-      portal.props = combineProps(portal.props, props);
-    } else {
-      portal.props = props;
-    }
+    portal.props = props;
 
     this._portalStore.manuallyEmit();
   }
@@ -226,7 +199,72 @@ export class PortalManager<A extends {} = {}> extends Connectable<
     this._portalStore.clear(false);
   }
 
-  private _openPortal(portal: PortalDescriptor<{}, A>) {
+  private _openPortal(portal: PortalDescriptor<D>) {
     this._portalStore.add(portal);
+  }
+
+  private createPortalDescriptor<P extends {}, F>({
+    props,
+    data,
+    Component,
+    id,
+  }: createPortalDescriptorProps<P, F, D>) {
+    const [onOpened, resolveOnOpened] = createPromise<void>();
+    const [onClosed, resolveOnClosed] = createPromise<F | undefined>();
+
+    const isTop = () => this.isTop(id);
+    const isOpened = () => this.isOpened(id);
+
+    const portalController: PortalController<P, F, D> = {
+      id,
+      onOpened,
+      onClosed,
+
+      close: (feedback?: F) => {
+        this.closeByID(id, feedback);
+      },
+
+      updateProps: (newProps: UncontrolledProps<P>) => {
+        this.updatePropsByID(id, newProps);
+      },
+
+      data,
+
+      get isOpened() {
+        return isOpened();
+      },
+
+      get isTop() {
+        return isTop();
+      },
+    };
+
+    // mutable object
+    const portalDescriptor: PortalDescriptor<D, P, F> = {
+      id,
+      Component,
+      feedback: undefined,
+
+      onMounted: () => {
+        resolveOnOpened();
+      },
+
+      onUnmounted: () => {
+        resolveOnClosed(portalDescriptor.feedback);
+      },
+
+      props,
+
+      onClose: (feedback: F) => {
+        // check if open. prevent close twice if close outside component
+        if (portalDescriptor.open) this.closeByID(id, feedback);
+      },
+
+      open: true,
+
+      portalController,
+    };
+
+    return portalDescriptor;
   }
 }

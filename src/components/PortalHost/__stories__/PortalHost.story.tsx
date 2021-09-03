@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
-import React, { ComponentProps, FC, useRef, useState, useEffect } from 'react';
+import React, { ComponentProps, FC, useEffect, useRef, useState } from 'react';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -13,16 +13,14 @@ import {
   RcDialogContent,
   RcDialogTitle,
 } from '../../Dialog';
+import { RcTextField } from '../../Forms';
+import { RcSnackbar, RcSnackbarProps } from '../../Snackbar';
 import { RcPortalHost } from '../PortalHost';
 import {
-  PortalManager,
-  PortalController,
   ControlledProps,
-  UniqID,
+  PortalController,
+  PortalManager,
 } from '../PortalManager';
-import { RcSnackbar, RcSnackbarProps } from '../../Snackbar';
-import { usePortalController } from '../PortalControllerProvider';
-import { RcTextField } from '../../Forms';
 
 export default {
   title: '🚀 Cleanup Components/PortalHost',
@@ -54,12 +52,14 @@ const Dialog: FC<DialogProps> = ({ onClose, n = 0, open }) => {
       <RcDialogContent>{content}</RcDialogContent>
       <RcDialogActions>
         <RcButton
-          onClick={async () => {
-            const feedback = await portalManager.open(Dialog, {
-              props: { n: n + 1 },
-            }).afterClosed;
-
-            if (feedback) setContent(feedback);
+          onClick={() => {
+            portalManager
+              .open(Dialog, {
+                props: { n: n + 1 },
+              })
+              .onClosed.then((feedback) => {
+                if (feedback) setContent(feedback);
+              });
           }}
         >
           open Dialog
@@ -97,8 +97,9 @@ PortalHostDialogExample.storyName = 'PortalHost Dialog Example';
 
 type SnackbarProps = ControlledProps<RcSnackbarProps, undefined>;
 
+const portalManager2 = new PortalManager();
+
 const Snackbar: FC<SnackbarProps> = ({ onClose, children, ...rest }) => {
-  // onClose no need check reason
   return (
     <RcSnackbar
       onClose={(_, reason) => {
@@ -117,18 +118,18 @@ export const PortalHostSnackbarExample: Story<PortalHostProps> = () => {
 
   return (
     <>
-      <RcPortalHost manager={portalManager} />
+      <RcPortalHost manager={portalManager2} />
       <RcButton
         onClick={() => {
           if (!open) {
-            snackbarRef.current = portalManager.open(Snackbar, {
+            snackbarRef.current = portalManager2.open(Snackbar, {
               props: { autoHideDuration: 2000, message: '233' },
             });
 
-            snackbarRef.current.afterOpened.then(() => {
+            snackbarRef.current.onOpened.then(() => {
               setOpen(true);
             });
-            snackbarRef.current.afterClosed.then(() => {
+            snackbarRef.current.onClosed.then(() => {
               setOpen(false);
             });
           } else {
@@ -144,6 +145,8 @@ export const PortalHostSnackbarExample: Story<PortalHostProps> = () => {
 
 PortalHostSnackbarExample.storyName = 'PortalHost Snackbar Example';
 
+const portalManager3 = new PortalManager();
+
 export const PortalHostUpdatePropsExample: Story<PortalHostProps> = () => {
   switchToControlKnobs();
 
@@ -152,15 +155,15 @@ export const PortalHostUpdatePropsExample: Story<PortalHostProps> = () => {
   const [value, setValue] = useState('');
 
   useEffect(() => {
-    snackbarRef.current = portalManager.open(Snackbar, {
-      props: { autoHideDuration: null, type: 'error', message: value },
+    snackbarRef.current = portalManager3.open(Snackbar, {
+      props: { autoHideDuration: null, message: value },
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <>
-      <RcPortalHost manager={portalManager} />
+      <RcPortalHost manager={portalManager3} />
       <br />
       <RcTextField
         placeholder="snackbar message"
@@ -171,10 +174,7 @@ export const PortalHostUpdatePropsExample: Story<PortalHostProps> = () => {
       <br />
       <RcButton
         onClick={() => {
-          // cover
-          // snackbarRef.current?.updateProps({ message: value });
-          // combine
-          snackbarRef.current?.updateProps({ message: value }, true);
+          snackbarRef.current?.updateProps({ message: value });
         }}
       >
         update props
@@ -185,24 +185,37 @@ export const PortalHostUpdatePropsExample: Story<PortalHostProps> = () => {
 
 PortalHostUpdatePropsExample.storyName = 'PortalHost Update Props Example';
 
-const portalManagerWithAddition = new PortalManager<{ tag: string }>();
+class TagPortalManager extends PortalManager<{ tag: string }> {
+  closeByTag(tag: string) {
+    for (const portal of this._portalStore.portals) {
+      if (portal.portalController.data?.tag === tag) {
+        this.closeByID(portal.id);
+      }
+    }
+  }
+}
+const tagPortalManager = new TagPortalManager();
 
 export const PortalHostWithAdditionExample: Story<PortalHostProps> = () => {
   switchToControlKnobs();
 
   useEffect(() => {
-    const { id, updateProps } = portalManagerWithAddition.open(Snackbar, {
-      addition: { tag: 'a-tag' },
-    });
-
-    updateProps({
-      message: portalManagerWithAddition.getAdditionByID(id)?.tag,
+    tagPortalManager.open(Snackbar, {
+      props: { message: '233' },
+      data: { tag: 'a-tag' },
     });
   }, []);
 
   return (
     <>
-      <RcPortalHost manager={portalManagerWithAddition} />
+      <RcPortalHost manager={tagPortalManager} />
+      <RcButton
+        onClick={() => {
+          tagPortalManager.closeByTag('a-tag');
+        }}
+      >
+        close by tag
+      </RcButton>
     </>
   );
 };

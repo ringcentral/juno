@@ -8,7 +8,7 @@ import {
   useRcPortalWindowContext,
   useThemeProps,
 } from '../../foundation';
-import { usePortalAnimationExisted } from '../PortalHost';
+import { useUnmountPortalHandler } from '../PortalHost';
 import { DialogStyle } from './styles';
 import { RcDialogClasses } from './utils';
 
@@ -38,7 +38,7 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
 
     const { externalWindow } = useRcPortalWindowContext();
 
-    const onExited = usePortalAnimationExisted(onExitedProp);
+    const onExited = useUnmountPortalHandler(onExitedProp);
 
     const maxWidth = useMemo<
       ComponentProps<typeof MuiDialog>['maxWidth']

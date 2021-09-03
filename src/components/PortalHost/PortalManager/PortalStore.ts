@@ -1,28 +1,28 @@
 import { UniqID, PortalDescriptor } from './types';
 import { Connectable } from '../Connectable';
 
-export class PortalStore<A extends {}> extends Connectable<
-  PortalDescriptor<{}, A>[]
+export class PortalStore<D extends {}> extends Connectable<
+  PortalDescriptor<D>[]
 > {
-  private readonly _portalMap = new Map<UniqID, PortalDescriptor<{}, A>>();
+  private readonly _portalMap = new Map<UniqID, PortalDescriptor<D>>();
 
   get size() {
     return this._portalMap.size;
   }
 
   get lastPortal() {
-    let lastPortal: PortalDescriptor<{}, A> | undefined;
-    for (const portal of this.portals()) {
+    let lastPortal: PortalDescriptor<D> | undefined;
+    for (const portal of this.portals) {
       lastPortal = portal;
     }
     return lastPortal;
   }
 
-  portals() {
+  get portals() {
     return this._portalMap.values();
   }
 
-  add(portal: PortalDescriptor<{}, A>, emit = true) {
+  add(portal: PortalDescriptor<D>, emit = true) {
     this._portalMap.set(portal.id, portal);
 
     if (emit) this._emitChanges();
@@ -59,6 +59,6 @@ export class PortalStore<A extends {}> extends Connectable<
   }
 
   private _emitChanges() {
-    this.emit([...this.portals()]);
+    this.emit([...this.portals]);
   }
 }

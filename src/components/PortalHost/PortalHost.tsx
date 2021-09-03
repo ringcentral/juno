@@ -1,32 +1,36 @@
-import React, { FunctionComponent, useEffect, useMemo, useState } from 'react';
+import React, { FunctionComponent, useEffect, useRef, useState } from 'react';
 import { ConnectSymbol } from './Connectable';
 import { PortalDescriptor, PortalManager } from './PortalManager';
 import { RcPortalRenderer } from './PortalRenderer';
+import { PortalManagerProvider } from './context';
 
 type RcPortalHostProps = {
   manager: PortalManager;
 };
 
-const RcPortalHost: FunctionComponent<RcPortalHostProps> = ({
-  manager: portalManager,
-}) => {
+const RcPortalHost: FunctionComponent<RcPortalHostProps> = ({ manager }) => {
   const [portals, setPortals] = useState<PortalDescriptor[]>([]);
 
-  // manager cannot change
+  // prevent manager change
+  const managerRef = useRef(manager);
+
   useEffect(() => {
-    return portalManager[ConnectSymbol]((portalDescriptors) => {
-      setPortals(portalDescriptors);
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const disconnectHandler = managerRef.current[ConnectSymbol](
+      (portalDescriptors) => {
+        setPortals(portalDescriptors);
+      },
+    );
+
+    return disconnectHandler;
   }, []);
 
-  const portalRenderers = useMemo(() => {
-    return portals.map((portal) => {
-      return <RcPortalRenderer key={portal.id} portalDescriptor={portal} />;
-    });
-  }, [portals]);
-
-  return <>{portalRenderers}</>;
+  return (
+    <PortalManagerProvider value={managerRef.current}>
+      {portals.map((portal) => {
+        return <RcPortalRenderer key={portal.id} portalDescriptor={portal} />;
+      })}
+    </PortalManagerProvider>
+  );
 };
 
 RcPortalHost.displayName = 'RcPortalHost';
