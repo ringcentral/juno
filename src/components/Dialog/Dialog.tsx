@@ -1,6 +1,5 @@
 import MuiDialog from '@material-ui/core/Dialog';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
-
 import {
   combineClasses,
   RcBaseProps,
@@ -9,6 +8,7 @@ import {
   useRcPortalWindowContext,
   useThemeProps,
 } from '../../foundation';
+import { usePortalAnimationExisted } from '../PortalHost';
 import { DialogStyle } from './styles';
 import { RcDialogClasses } from './utils';
 
@@ -24,13 +24,21 @@ type RcDialogProps = {
 const _RcDialog = forwardRef<any, RcDialogProps>(
   (inProps: RcDialogProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcDialog' });
-    const { classes: classesProp, size, children, ...rest } = props;
+    const {
+      classes: classesProp,
+      size,
+      children,
+      onExited: onExitedProp,
+      ...rest
+    } = props;
     const classes = useMemo(
       () => combineClasses(RcDialogClasses, classesProp),
       [classesProp],
     );
 
     const { externalWindow } = useRcPortalWindowContext();
+
+    const onExited = usePortalAnimationExisted(onExitedProp);
 
     const maxWidth = useMemo<
       ComponentProps<typeof MuiDialog>['maxWidth']
@@ -57,6 +65,7 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
         fullScreen={size === 'fullScreen' ? true : undefined}
         classes={classes}
         {...rest}
+        onExited={onExited}
       >
         {children}
       </MuiDialog>
