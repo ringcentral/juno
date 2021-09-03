@@ -126,6 +126,7 @@ module.exports = {
     'import/dynamic-import-chunkname': 'warn',
     'security/detect-object-injection': 'off',
     'react/jsx-no-duplicate-props': [2, { ignoreCase: false }],
+    'security/detect-non-literal-fs-filename': 'off',
   },
   settings: {
     react: {
