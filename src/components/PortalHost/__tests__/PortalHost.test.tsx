@@ -3,7 +3,6 @@ import {
   fireEvent,
   render,
   screen,
-  waitForElementToBeRemoved,
   waitFor,
 } from '@testing-library/react';
 import React, { FunctionComponent, useRef } from 'react';

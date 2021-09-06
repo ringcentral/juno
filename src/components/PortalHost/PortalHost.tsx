@@ -26,9 +26,9 @@ const RcPortalHost: FunctionComponent<RcPortalHostProps> = ({ manager }) => {
 
   return (
     <PortalManagerProvider value={managerRef.current}>
-      {portals.map((portal) => {
-        return <RcPortalRenderer key={portal.id} portalDescriptor={portal} />;
-      })}
+      {portals.map((portal) => (
+        <RcPortalRenderer key={portal.id} portalDescriptor={portal} />
+      ))}
     </PortalManagerProvider>
   );
 };

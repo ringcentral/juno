@@ -50,15 +50,15 @@ export class PortalManager<D extends {} = {}> extends Connectable<
 
     const id = _id ?? this._uniqIdUtils.get();
 
-    const portalWithSameID = this.portalStore.get(id);
+    const currPortal = this.portalStore.get(id);
 
     // portalWithSameID opened
-    if (portalWithSameID?.open) {
+    if (currPortal?.open) {
       logInDev({
         component: 'RcPortalHost',
         message: `open the portal with id('${id}') failed, this portal is already open`,
       });
-      return portalWithSameID.portalController;
+      return currPortal.portalController;
     }
 
     const portalDescriptor = this.createPortalDescriptor({
@@ -69,8 +69,9 @@ export class PortalManager<D extends {} = {}> extends Connectable<
     });
 
     // portalWithSameID closed and not unmount
-    if (portalWithSameID) {
-      portalWithSameID.portalController.onClosed.then(() => {
+    if (currPortal) {
+      // when closing (Animating), trigger open again.
+      currPortal.portalController.onClosed.then(() => {
         this._openPortal(portalDescriptor);
       });
     }
