@@ -28,8 +28,6 @@ export type PortalDescriptor<D extends {} = {}, P extends {} = {}, F = any> = {
    * pass to component.
    */
   open: boolean;
-
-  feedback: any;
 };
 
 export type createPortalDescriptorProps<P extends {}, F, D extends {}> = {

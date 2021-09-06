@@ -19,20 +19,21 @@ import {
 } from './types';
 import { createPromise, UniqIdUtil } from './utils';
 
-const managerUniqIdUtils = new UniqIdUtil();
-
 export class PortalManager<D extends {} = {}> extends Connectable<
   PortalDescriptor[]
 > {
   constructor(scheduler: Scheduler = new ThrottleScheduler()) {
     super(scheduler);
 
-    this._portalStore[ConnectSymbol]((portals) => this.emit(portals));
+    this.portalStore[ConnectSymbol]((portals) => this.emit(portals));
   }
 
-  readonly id = managerUniqIdUtils.get();
+  /**
+   * you can custom your manager by control this
+   */
+  protected readonly portalStore = new PortalStore<D>();
 
-  protected readonly _portalStore = new PortalStore<D>();
+  private readonly _feedbackMap = new Map<UniqID, any>();
 
   private readonly _uniqIdUtils = new UniqIdUtil();
 
@@ -49,7 +50,7 @@ export class PortalManager<D extends {} = {}> extends Connectable<
 
     const id = _id ?? this._uniqIdUtils.get();
 
-    const portalWithSameID = this._portalStore.get(id);
+    const portalWithSameID = this.portalStore.get(id);
 
     // portalWithSameID opened
     if (portalWithSameID?.open) {
@@ -85,17 +86,18 @@ export class PortalManager<D extends {} = {}> extends Connectable<
    * close all
    */
   closeAll() {
-    for (const portal of this._portalStore.portals) {
-      portal.open = false;
-    }
-    this._portalStore.manuallyEmit();
+    this.portalStore.batch((store) => {
+      for (const portal of this.portalStore.portals) {
+        store.addOrUpdate({ ...portal, open: false });
+      }
+    });
   }
 
   /**
    * get portal controller which on top
    */
   getTop<P extends {} = {}, F = any>(): PortalController<P, F> | undefined {
-    return this._portalStore.lastPortal?.portalController;
+    return this.portalStore.lastPortal?.portalController;
   }
 
   /**
@@ -104,14 +106,14 @@ export class PortalManager<D extends {} = {}> extends Connectable<
   getByID<P extends {} = {}, F = any>(
     id: UniqID,
   ): PortalController<P, F> | undefined {
-    return this._portalStore.get(id)?.portalController;
+    return this.portalStore.get(id)?.portalController;
   }
 
   /**
    * check if it's opened by id. equal 'portalController.isOpened'
    */
   isOpened(id: UniqID) {
-    const portal = this._portalStore.get(id);
+    const portal = this.portalStore.get(id);
     return Boolean(portal?.open);
   }
 
@@ -119,7 +121,7 @@ export class PortalManager<D extends {} = {}> extends Connectable<
    * check if it's on top by id. equal 'portalController.isTop'
    */
   isTop(id: UniqID) {
-    return this._portalStore.lastPortal?.id === id;
+    return this.portalStore.lastPortal?.id === id;
   }
 
   /**
@@ -132,7 +134,7 @@ export class PortalManager<D extends {} = {}> extends Connectable<
    * equal 'portalController.close()'
    */
   closeByID<F>(id: UniqID, feedback?: F) {
-    const portal = this._portalStore.get(id);
+    const portal = this.portalStore.get(id);
     if (!portal?.open) {
       logInDev({
         component: 'RcPortalHost',
@@ -141,10 +143,8 @@ export class PortalManager<D extends {} = {}> extends Connectable<
       return;
     }
 
-    portal.feedback = feedback;
-    portal.open = false;
-
-    this._portalStore.manuallyEmit();
+    this._feedbackMap.set(portal.id, feedback);
+    this.portalStore.addOrUpdate({ ...portal, open: false });
   }
 
   /**
@@ -155,7 +155,7 @@ export class PortalManager<D extends {} = {}> extends Connectable<
    * RC component (Modal, component based on modal, snackbar) would invoke this after close animation finish
    */
   [UnmountSymbol](id: UniqID) {
-    const portal = this._portalStore.get(id);
+    const portal = this.portalStore.get(id);
     if (!portal) {
       logInDev({
         component: 'RcPortalHost',
@@ -164,14 +164,14 @@ export class PortalManager<D extends {} = {}> extends Connectable<
       return;
     }
 
-    this._portalStore.delete(portal.id);
+    this.portalStore.delete(portal.id);
   }
 
   /**
    * update props by id, equal 'portalController.updateProps(newProps)'
    */
   updatePropsByID<P extends {}>(id: UniqID, props: UncontrolledProps<P>) {
-    const portal = this._portalStore.get(id);
+    const portal = this.portalStore.get(id);
     if (!portal?.open) {
       logInDev({
         component: 'RcPortalHost',
@@ -180,27 +180,26 @@ export class PortalManager<D extends {} = {}> extends Connectable<
       return;
     }
 
-    portal.props = props;
-
-    this._portalStore.manuallyEmit();
+    this.portalStore.addOrUpdate({ ...portal, props });
   }
 
   protected onConnected() {
     super.onConnected();
 
     // prevent invoke 'open()' fail before PortalHost connect this
-    this._portalStore.manuallyEmit();
+    this.portalStore.forceEmit();
   }
 
   protected onDisconnected() {
     super.onDisconnected();
 
     // clean all portal after PortalHost disconnect this
-    this._portalStore.clear(false);
+    this.portalStore.clear();
+    this._feedbackMap.clear();
   }
 
   private _openPortal(portal: PortalDescriptor<D>) {
-    this._portalStore.add(portal);
+    this.portalStore.addOrUpdate(portal);
   }
 
   private createPortalDescriptor<P extends {}, F>({
@@ -239,25 +238,23 @@ export class PortalManager<D extends {} = {}> extends Connectable<
       },
     };
 
-    // mutable object
     const portalDescriptor: PortalDescriptor<D, P, F> = {
       id,
       Component,
-      feedback: undefined,
 
       onMounted: () => {
         resolveOnOpened();
       },
 
       onUnmounted: () => {
-        resolveOnClosed(portalDescriptor.feedback);
+        const feedback = this._feedbackMap.get(id);
+        resolveOnClosed(feedback);
       },
 
       props,
 
       onClose: (feedback: F) => {
-        // check if open. prevent close twice if close outside component
-        if (portalDescriptor.open) this.closeByID(id, feedback);
+        this.closeByID(id, feedback);
       },
 
       open: true,

@@ -187,7 +187,7 @@ PortalHostUpdatePropsExample.storyName = 'PortalHost Update Props Example';
 
 class TagPortalManager extends PortalManager<{ tag: string }> {
   closeByTag(tag: string) {
-    for (const portal of this._portalStore.portals) {
+    for (const portal of this.portalStore.portals) {
       if (portal.portalController.data?.tag === tag) {
         this.closeByID(portal.id);
       }

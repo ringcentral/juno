@@ -6,6 +6,8 @@ export class PortalStore<D extends {}> extends Connectable<
 > {
   private readonly _portalMap = new Map<UniqID, PortalDescriptor<D>>();
 
+  private _batchMode = false;
+
   get size() {
     return this._portalMap.size;
   }
@@ -22,22 +24,22 @@ export class PortalStore<D extends {}> extends Connectable<
     return this._portalMap.values();
   }
 
-  add(portal: PortalDescriptor<D>, emit = true) {
+  addOrUpdate(portal: PortalDescriptor<D>) {
     this._portalMap.set(portal.id, portal);
 
-    if (emit) this._emitChanges();
+    if (!this._batchMode) this._emitChanges();
   }
 
-  delete(id: UniqID, emit = true) {
+  delete(id: UniqID) {
     this._portalMap.delete(id);
 
-    if (emit) this._emitChanges();
+    if (!this._batchMode) this._emitChanges();
   }
 
-  clear(emit = true) {
+  clear() {
     this._portalMap.clear();
 
-    if (emit) this._emitChanges();
+    if (!this._batchMode) this._emitChanges();
   }
 
   has(id: UniqID) {
@@ -48,13 +50,21 @@ export class PortalStore<D extends {}> extends Connectable<
     return this._portalMap.get(id);
   }
 
+  batch(handle: (store: PortalStore<D>) => void) {
+    this._batchMode = true;
+
+    try {
+      handle(this);
+    } finally {
+      this._batchMode = false;
+      this._emitChanges();
+    }
+  }
+
   /**
-   * invoke this function after modify the portalDescriptor in store
-   *
-   * if you want batch store changes (clear, delete, add)
-   * you can set emit as false then invoke this function
+   * just notify portal host rerender view
    */
-  manuallyEmit() {
+  forceEmit() {
     this._emitChanges();
   }
 

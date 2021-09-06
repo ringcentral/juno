@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect, useMemo, useRef } from 'react';
+import React, { FunctionComponent, useEffect, useMemo } from 'react';
 import { PortalIDProvider } from './context';
 import { PortalDescriptor } from './PortalManager';
 
@@ -6,13 +6,12 @@ type RcPortalRendererProps = {
   portalDescriptor: PortalDescriptor;
 };
 
+/**
+ * private, do not use this directly
+ */
 const RcPortalRenderer: FunctionComponent<RcPortalRendererProps> = ({
   portalDescriptor,
 }) => {
-  // prevent portalDescriptor change
-  // portalDescriptor is mutable object
-  const { current: portal } = useRef(portalDescriptor);
-
   const {
     Component,
     props: _props,
@@ -21,7 +20,7 @@ const RcPortalRenderer: FunctionComponent<RcPortalRendererProps> = ({
     onClose,
     open,
     id,
-  } = portal;
+  } = portalDescriptor;
 
   useEffect(() => {
     onMounted();
