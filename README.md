@@ -46,16 +46,6 @@ import {
 </RcThemeProvider>
 ```
 
-### Use DatePicker
-
-if you use `RcDatePicker`, we calculate time depend on `moment.js` you should install moment
-
-```ts
-npm i moment
-// or
-yarn add moment
-```
-
 ### Use Juno Icon
 
 We can use any component with `RcIcon` prop `symbol`, pass component into symbol that will render svg icon with our `RcIcon` style.
