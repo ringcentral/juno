@@ -9,6 +9,7 @@ module.exports = {
   "7": "7",
   "8": "8",
   "9": "9",
+  "Connect": "connect",
   "ViewLogBorder": "view-log_border",
   "AppleLogo": "apple-logo",
   "LeaveMeeting": "leave-meeting",

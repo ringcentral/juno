@@ -80,6 +80,7 @@ export { default as Comments } from './Comments';
 export { default as Computer } from './Computer';
 export { default as ConferenceBorder } from './ConferenceBorder';
 export { default as Conference } from './Conference';
+export { default as Connect } from './Connect';
 export { default as ContactsAndCalendars } from './ContactsAndCalendars';
 export { default as ContactsBorder } from './ContactsBorder';
 export { default as Contacts } from './Contacts';
