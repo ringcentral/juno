@@ -39,7 +39,7 @@ export const ListItemStyle: RcThemedStyled<RcListItemProps, any> = ({
   onClick,
   color,
   canHover,
-  baseColor: baseColorProp,
+  baseColor: baseColorProp = 'black',
   highlighted,
 }) => {
   const baseColor = getParsePaletteColor(color ?? colorMap[baseColorProp!]);

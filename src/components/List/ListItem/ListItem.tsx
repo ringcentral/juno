@@ -149,7 +149,6 @@ RcListItem.defaultProps = {
   singleLine: false,
   button: true,
   canHover: true,
-  baseColor: 'black',
   size: 'medium',
 };
 
