@@ -108,7 +108,7 @@ export const SwitchStyle: RcThemedStyled<RcSwitchProps, any> = ({
           box-sizing: border-box;
           border-radius: ${radius('round')};
           border: 1px solid ${palette2('interactive', 'f01')};
-          ${fakeBorder({ color: palette2('highContrast') })}
+          ${fakeBorder({ color: palette2('neutral', 'f11') })}
         }
       }
 
