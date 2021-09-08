@@ -118,7 +118,7 @@ const DatePickerHeader: FunctionComponent<DatePickerHeaderProps> = memo(
             {monthLabel}
             <SelectArrowDownIcon />
           </StyledCurrentMonth>
-          <SwitchHeaderButtonWrapper size={size!} overlapSize={-3} view={view}>
+          <SwitchHeaderButtonWrapper size={size!} gap={3} view={view}>
             <SwitchHeaderButton
               color="neutral.f04"
               size="small"

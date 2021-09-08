@@ -11,7 +11,7 @@ import {
   styled,
   typography,
 } from '../../../../../foundation';
-import { RcButtonBar, RcIconButton } from '../../../../Buttons';
+import { RcIconButton, RcIconButtonGroup } from '../../../../Buttons';
 import { RcIconButtonClasses } from '../../../../Buttons/IconButton/utils';
 import { RcIcon } from '../../../../Icon';
 import { DatePickerHeaderProps } from '../DatePickerHeader';
@@ -78,9 +78,9 @@ const SwitchHeaderWrapper = styled.div<Pick<DatePickerHeaderProps, 'size'>>`
   }}
 `;
 
-type SwitchHeaderWrapperProps = Pick<DatePickerHeaderProps, 'size' | 'view'>;
+type SwitchHeaderProps = Pick<DatePickerHeaderProps, 'size' | 'view'>;
 
-const SwitchHeaderButtonWrapper = styled(RcButtonBar)<SwitchHeaderWrapperProps>`
+const SwitchHeaderButtonWrapper = styled(RcIconButtonGroup)<SwitchHeaderProps>`
   flex: 1;
   display: ${({ view }) => (view === 'day' ? 'flex' : 'none')};
   justify-content: flex-end;
