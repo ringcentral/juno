@@ -64,7 +64,7 @@ type RcPopupBoxProps = {
   TitleProps?: RcDialogTitleProps;
   ContentProps?: RcDialogContentProps;
   ActionsProps?: RcDialogActionsProps;
-} & RcBaseProps<RcDialogProps, 'title'>;
+} & RcBaseProps<RcDialogProps, 'title' | 'size'>;
 
 type RcDialogFuncProps = { componentProps?: any } & Omit<RcDialogProps, 'open'>;
 
@@ -72,7 +72,7 @@ const _RcPopupBox = forwardRef<any, RcPopupBoxProps>(
   (inProps: RcPopupBoxProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcPopupBox' });
     const {
-      size,
+      childrenSize,
       title,
       footer,
       loadingOverlay,
@@ -94,7 +94,7 @@ const _RcPopupBox = forwardRef<any, RcPopupBoxProps>(
       ...rest
     } = props;
 
-    const isXsmall = size === 'xsmall';
+    const isXsmall = childrenSize === 'small';
 
     const { onClose: handleClose } = useMemo(
       () => combineProps({ onClose: onCancel }, { onClose }),
@@ -104,7 +104,7 @@ const _RcPopupBox = forwardRef<any, RcPopupBoxProps>(
     return (
       <RcDialog
         ref={ref}
-        size={size}
+        childrenSize={childrenSize}
         disableEscapeKeyDown={loading || loadingOverlay}
         disableBackdropClick={loading || loadingOverlay}
         onClose={handleClose}
@@ -113,14 +113,12 @@ const _RcPopupBox = forwardRef<any, RcPopupBoxProps>(
       >
         <RcLoading loading={loadingOverlay!}>
           <RcDialogTitle
-            size={size}
             data-test-automation-id={'DialogTitle'}
             {...TitleProps}
           >
             {title}
           </RcDialogTitle>
           <RcDialogContent
-            size={size}
             data-test-automation-id={'DialogContent'}
             {...ContentProps}
           >
@@ -132,8 +130,6 @@ const _RcPopupBox = forwardRef<any, RcPopupBoxProps>(
           </RcDialogContent>
           {footer !== null && (
             <RcDialogActions
-              size={size}
-              direction={isXsmall ? 'vertical' : 'horizontal'}
               data-test-automation-id={'DialogActions'}
               {...ActionsProps}
             >
@@ -179,8 +175,6 @@ const _RcPopupBox = forwardRef<any, RcPopupBoxProps>(
  */
 const RcPopupBox = styled(_RcPopupBox)``;
 
-RcPopupBox.defaultProps = {
-  size: 'medium',
-};
+RcPopupBox.defaultProps = {};
 
 export { RcPopupBox, RcPopupBoxProps, RcDialogFuncProps };

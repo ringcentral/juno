@@ -18,7 +18,6 @@ export default {
   argTypes: {
     ...sortInDocTable<keyof PopupBoxProps>([
       'open',
-      'size',
       'scroll',
       'title',
       'footer',
