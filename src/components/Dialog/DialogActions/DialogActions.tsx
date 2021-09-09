@@ -36,7 +36,16 @@ const _RcDialogActions = forwardRef<any, RcDialogActionsProps>(
   },
 );
 
-const RcDialogActions = styled(_RcDialogActions).attrs(useDialogDefaultProps)`
+const RcDialogActions = styled(_RcDialogActions).attrs(
+  (props: RcDialogActionsProps) => {
+    const toProps = useDialogDefaultProps(props);
+
+    return {
+      direction: toProps.size === 'small' ? 'vertical' : 'horizontal',
+      ...toProps,
+    };
+  },
+)`
   ${DialogActionsStyle}
 `;
 
