@@ -1,4 +1,5 @@
 import { RcClasses, UnitMap } from '../../../../foundation';
+import { RcTypographyVariant } from '../../../Typography';
 import { RcDialogTitleProps } from '../DialogTitle';
 
 export const RcDialogTitleClasses = RcClasses<RcDialogTitleProps>(
@@ -12,4 +13,12 @@ export const RcDialogTitleSpacings: UnitMap<
 > = {
   small: [4],
   medium: [4, 6],
+};
+
+export const RcDialogTitleTypographyVariant: UnitMap<
+  NonNullable<RcDialogTitleProps['size']>,
+  RcTypographyVariant
+> = {
+  small: 'subheading2',
+  medium: 'title2',
 };

@@ -10,7 +10,7 @@ import {
 import { RcTypography } from '../../Typography';
 import { RcDialogChildrenProps, useDialogDefaultProps } from '../utils';
 import { DialogTitleStyle } from './styles';
-import { RcDialogTitleClasses } from './utils';
+import { RcDialogTitleClasses, RcDialogTitleTypographyVariant } from './utils';
 
 type RcDialogTitleProps = {
   display?: 'block' | 'flex';
@@ -43,7 +43,10 @@ const _RcDialogTitle = forwardRef<any, RcDialogTitleProps>(
         {disableTypography ? (
           children
         ) : (
-          <RcTypography variant="title2" component="h2">
+          <RcTypography
+            variant={RcDialogTitleTypographyVariant[size!]}
+            component="h2"
+          >
             {children}
           </RcTypography>
         )}
