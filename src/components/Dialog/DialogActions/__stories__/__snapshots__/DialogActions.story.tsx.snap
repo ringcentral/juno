@@ -59,7 +59,11 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogActions DialogActions 1
 }
 
 .c0 {
-  padding: 8px 24px 24px;
+  padding: 12px 24px 24px;
+}
+
+.RcDialogContent-dividers + .c0.c0 {
+  padding-top: 20px;
 }
 
 .c0 > * + * {
@@ -86,6 +90,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogActions DialogActions 1
 
 <div
   className="MuiDialogActions-root c0"
+  direction="horizontal"
 >
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c1"

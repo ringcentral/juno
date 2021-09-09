@@ -234,7 +234,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-218 MuiCheckbox-root RcCheckbox-root MuiCheckbox-indeterminate c5 c6"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-222 MuiCheckbox-root RcCheckbox-root MuiCheckbox-indeterminate c5 c6"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -252,7 +252,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-221"
+            className="PrivateSwitchBase-input-225"
             data-indeterminate={true}
             onChange={[Function]}
             type="checkbox"

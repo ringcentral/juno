@@ -140,7 +140,7 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-262"
+    className="MuiBox-root MuiBox-root-266"
   >
     <div
       className="MuiCollapse-container MuiCollapse-hidden"
@@ -157,7 +157,7 @@ Array [
           className="MuiCollapse-wrapperInner"
         >
           <div
-            className="MuiBox-root MuiBox-root-263"
+            className="MuiBox-root MuiBox-root-267"
           />
         </div>
       </div>
@@ -177,7 +177,7 @@ Array [
           className="MuiCollapse-wrapperInner"
         >
           <div
-            className="MuiBox-root MuiBox-root-264"
+            className="MuiBox-root MuiBox-root-268"
           />
         </div>
       </div>

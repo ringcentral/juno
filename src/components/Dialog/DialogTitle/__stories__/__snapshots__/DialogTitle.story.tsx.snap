@@ -10,6 +10,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle 1`] =
 
 .c0 {
   color: #121212;
+  padding: 16px 24px;
 }
 
 <div
