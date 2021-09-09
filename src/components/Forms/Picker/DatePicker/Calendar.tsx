@@ -18,6 +18,7 @@ import {
   RcClassesProps,
   useEventCallback,
   usePrevious,
+  useResultRef,
 } from '../../../../foundation';
 import { transitionendSubscriber } from '../../../Transitions/utils';
 import { RcButton } from '../../../Buttons';
@@ -116,7 +117,7 @@ const Calendar = forwardRef<any, CalendarProps>(
 
     // * `getWeekdays` not set locale, need set locale before get
     moment.locale(utils.locale);
-    const weekdaysRef = useRef(utils.getWeekdays());
+    const weekdaysRef = useResultRef(() => utils.getWeekdays());
 
     const [focusedDate, setFocusedDate] = useState(date);
     const [view, setView] = useState<ViewType>('day');
@@ -131,7 +132,7 @@ const Calendar = forwardRef<any, CalendarProps>(
 
     const currentMonthNumber = utils.getMonth(focusedDate);
 
-    const { current: now } = useRef(utils.date());
+    const { current: now } = useResultRef(() => utils.date());
 
     const pickClasses = useMemo(
       () => pick(classes, ['header', 'leftArrow', 'rightArrow', 'select']),
@@ -198,6 +199,8 @@ const Calendar = forwardRef<any, CalendarProps>(
         Boolean(shouldDisableDateProp?.(day))
       );
     });
+
+    const isToDayDisabled = shouldDisableDate(now);
 
     const disableNextMonth = useMemo(() => {
       const nextStartDay = utils.startOfMonth(utils.getNextMonth(focusedDate));
@@ -341,11 +344,11 @@ const Calendar = forwardRef<any, CalendarProps>(
                 slideDirection={slideDirection}
                 transKey={currentMonthNumber}
               >
-                {(loadingQueue > 0 && (
+                {loadingQueue > 0 ? (
                   <ProgressContainer className={classes!.progress}>
                     {loadingElement}
                   </ProgressContainer>
-                )) || (
+                ) : (
                   // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
                   <div
                     role="rowgroup"
@@ -368,6 +371,7 @@ const Calendar = forwardRef<any, CalendarProps>(
                 <RcButton
                   variant="plain"
                   onClick={backToToday}
+                  disabled={isToDayDisabled}
                   aria-label={backToTodayAriaLabel}
                   data-test-automation-id="date-picker-today"
                 >
