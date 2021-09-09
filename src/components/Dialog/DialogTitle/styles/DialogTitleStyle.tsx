@@ -7,21 +7,17 @@ export const DialogTitleStyle: RcThemedStyled<RcDialogTitleProps, any> = (
 ) => {
   const { size, space: spaceProp, display } = props;
 
-  const sizeSpacing = RcDialogTitleSpacings[size!];
-
   const paddingValue =
     spaceProp !== undefined
       ? spaceProp instanceof Array
-        ? spacing(...spaceProp)
-        : spacing(spaceProp)
-      : sizeSpacing.length > 0
-      ? spacing(...sizeSpacing)
-      : null;
+        ? spaceProp
+        : [spaceProp]
+      : RcDialogTitleSpacings[size!];
 
   return css`
     color: ${palette2('neutral', 'f06')};
 
-    padding: ${paddingValue};
+    padding: ${spacing(...paddingValue)};
 
     display: ${display};
   `;

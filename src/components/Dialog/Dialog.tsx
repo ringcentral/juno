@@ -7,26 +7,42 @@ import {
   styled,
   useRcPortalWindowContext,
   useThemeProps,
+  withDeprecatedCheck,
 } from '../../foundation';
 import { useUnmountPortalHandler } from '../PortalHost';
 import { DialogStyle } from './styles';
-import { RcDialogClasses } from './utils';
+import { RcDialogChildrenSize, RcDialogClasses } from './utils';
+import { RcDialogContext } from './utils/DialogContext';
 
 type RcDialogSize =
   | RcBaseSize<'xsmall' | 'small' | 'medium' | 'large'>
   | 'fullScreen';
 
 type RcDialogProps = {
-  /** size of dialog */
+  /**
+   * @deprecated size of dialog,
+   * please use `maxWidth` and `fullScreen` directly
+   *
+   * - 'fullScreen' => false
+   * - 'large' => `md`
+   * - 'medium' => `sm`
+   * - 'small' => `xs`
+   * - 'xsmall' => no longer exist, should custom by yourself
+   */
   size?: RcDialogSize;
-} & RcBaseProps<ComponentProps<typeof MuiDialog>, 'maxWidth'>;
+  /** size apply to all dialog children */
+  childrenSize?: RcDialogChildrenSize;
+} & RcBaseProps<ComponentProps<typeof MuiDialog>>;
 
 const _RcDialog = forwardRef<any, RcDialogProps>(
   (inProps: RcDialogProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcDialog' });
     const {
       classes: classesProp,
-      size,
+      size = 'medium',
+      maxWidth: maxWidthProp,
+      fullWidth = true,
+      childrenSize,
       children,
       onExited: onExitedProp,
       ...rest
@@ -43,6 +59,8 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
     const maxWidth = useMemo<
       ComponentProps<typeof MuiDialog>['maxWidth']
     >(() => {
+      if (maxWidthProp) return maxWidthProp;
+
       switch (size) {
         case 'fullScreen':
         case 'xsmall':
@@ -55,11 +73,16 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
         default:
           return 'xs';
       }
-    }, [size]);
+    }, [maxWidthProp, size]);
+
+    const contextValue = useMemo(() => ({ size: childrenSize }), [
+      childrenSize,
+    ]);
 
     return (
       <MuiDialog
         ref={ref}
+        fullWidth={fullWidth}
         container={externalWindow?.document.body}
         maxWidth={maxWidth}
         fullScreen={size === 'fullScreen' ? true : undefined}
@@ -67,20 +90,39 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
         {...rest}
         onExited={onExited}
       >
-        {children}
+        <RcDialogContext.Provider value={contextValue}>
+          {children}
+        </RcDialogContext.Provider>
       </MuiDialog>
     );
   },
 );
 
-const RcDialog = styled(_RcDialog)`
+const RcDialog = styled(
+  withDeprecatedCheck(
+    _RcDialog,
+    [
+      {
+        prop: 'size',
+        time: '2021-11',
+        comment: `
+   * please use \`maxWidth\` and \`fullScreen\` directly
+   *
+   * - 'fullScreen' => false
+   * - 'large' => \`md\`
+   * - 'medium' => \`sm\`
+   * - 'small' => \`xs\`
+   * - 'xsmall' => no longer exist, should custom by yourself
+   */`,
+      },
+    ],
+    'RcDialog',
+  ),
+)`
   ${DialogStyle}
 `;
 
-RcDialog.defaultProps = {
-  size: 'medium',
-  fullWidth: true,
-};
+RcDialog.defaultProps = {};
 
 RcDialog.displayName = 'RcDialog';
 

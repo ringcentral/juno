@@ -7,11 +7,11 @@ import {
   styled,
   useThemeProps,
 } from '../../../foundation';
-import { RcDialogProps } from '../Dialog';
+import { RcDialogChildrenProps, useDialogDefaultProps } from '../utils';
 import { DialogContentStyle } from './styles';
 import { RcDialogContentClasses } from './utils';
 
-type RcDialogContentProps = {} & Pick<RcDialogProps, 'size'> &
+type RcDialogContentProps = {} & RcDialogChildrenProps &
   RcBaseProps<ComponentProps<typeof MuiDialogContent>>;
 
 const _RcDialogContent = forwardRef<any, RcDialogContentProps>(
@@ -31,13 +31,11 @@ const _RcDialogContent = forwardRef<any, RcDialogContentProps>(
   },
 );
 
-const RcDialogContent = styled(_RcDialogContent)`
+const RcDialogContent = styled(_RcDialogContent).attrs(useDialogDefaultProps)`
   ${DialogContentStyle}
 `;
 
-RcDialogContent.defaultProps = {
-  size: 'medium',
-};
+RcDialogContent.defaultProps = {};
 
 RcDialogContent.displayName = 'RcDialogContent';
 

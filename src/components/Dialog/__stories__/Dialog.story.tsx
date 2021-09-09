@@ -14,7 +14,7 @@ import { RcRadioGroup } from '../../Forms/RadioGroup';
 import { RcTypography } from '../../Typography';
 import { RcDialog } from '../Dialog';
 import { RcDialogActions } from '../DialogActions';
-import { RcDialogContent } from '../DialogContent';
+import { RcDialogContent, RcDialogContentProps } from '../DialogContent';
 import { RcDialogTitle } from '../DialogTitle';
 import { RcResponsive } from '../../Responsive';
 import { useResponsiveContext, useResponsiveMatch } from '../../../foundation';
@@ -39,9 +39,11 @@ export default {
 type DialogProps = ComponentProps<typeof RcDialog>;
 
 export const DialogExampleComponent: FunctionComponent<Partial<
-  DialogProps
->> = ({ children, ...rest }) => {
+  DialogProps & Pick<RcDialogContentProps, 'dividers'>
+>> = ({ children, childrenSize, dividers, ...rest }) => {
   const [openState, setOpenState] = useState(false);
+
+  const isSmall = childrenSize === 'small';
   return (
     <>
       <RcButton
@@ -51,8 +53,10 @@ export const DialogExampleComponent: FunctionComponent<Partial<
         }}
       >
         Open Children Modal
+        {childrenSize && <span>(childrenSize: {childrenSize})</span>}
       </RcButton>
       <RcDialog
+        childrenSize={childrenSize}
         {...rest}
         open={openState}
         onClose={(e: any) => {
@@ -64,7 +68,7 @@ export const DialogExampleComponent: FunctionComponent<Partial<
         onEscapeKeyDown={(e) => console.log('onEscapeKeyDown', e)}
       >
         <RcDialogTitle>Title</RcDialogTitle>
-        <RcDialogContent>
+        <RcDialogContent dividers={dividers}>
           <RcTypography>some content</RcTypography>
           <RcCheckbox title="Go" label="Do something" />
           <RcCheckbox label="Custom Field" />
@@ -75,8 +79,8 @@ export const DialogExampleComponent: FunctionComponent<Partial<
           {children}
         </RcDialogContent>
         <RcDialogActions>
-          <RcButton>Custom Button</RcButton>
-          <RcButton>Custom Button</RcButton>
+          <RcButton fullWidth={isSmall}>Custom Button</RcButton>
+          <RcButton fullWidth={isSmall}>Custom Button</RcButton>
         </RcDialogActions>
       </RcDialog>
     </>
@@ -195,10 +199,39 @@ export const DialogWithResponsive: Story<DialogProps> = ({
   );
 };
 
-DialogWithResponsive.storyName = 'DialogWithResponsive';
+DialogWithResponsive.storyName = 'Dialog with responsive';
 
 DialogWithResponsive.args = {};
 
 DialogWithResponsive.argTypes = {
+  ...notControlInDocTable<keyof DialogProps>([]),
+};
+
+export const DialogChildrenSizes: Story<DialogProps> = () => {
+  switchToControlKnobs();
+
+  const [dividers, setDividers] = useState(false);
+  return (
+    <>
+      <RcSwitch
+        label="dividers"
+        value={dividers}
+        onChange={() => setDividers(!dividers)}
+      />
+      <br />
+      <br />
+      <DialogExampleComponent childrenSize="small" dividers={dividers} />
+      <br />
+      <br />
+      <DialogExampleComponent dividers={dividers} />
+    </>
+  );
+};
+
+DialogChildrenSizes.storyName = 'Dialog with different children sizes';
+
+DialogChildrenSizes.args = {};
+
+DialogChildrenSizes.argTypes = {
   ...notControlInDocTable<keyof DialogProps>([]),
 };

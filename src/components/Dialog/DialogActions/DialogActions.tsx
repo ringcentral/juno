@@ -8,14 +8,14 @@ import {
   styled,
   useThemeProps,
 } from '../../../foundation';
-import { RcDialogProps } from '../Dialog';
+import { RcDialogChildrenProps, useDialogDefaultProps } from '../utils';
 import { DialogActionsStyle } from './styles';
 import { RcDialogActionsClasses } from './utils';
 
 type RcDialogActionsProps = {
   /** direction of actions */
   direction?: RcBaseDirection;
-} & Pick<RcDialogProps, 'size'> &
+} & RcDialogChildrenProps &
   RcBaseProps<ComponentProps<typeof MuiDialogActions>>;
 
 const _RcDialogActions = forwardRef<any, RcDialogActionsProps>(
@@ -36,13 +36,11 @@ const _RcDialogActions = forwardRef<any, RcDialogActionsProps>(
   },
 );
 
-const RcDialogActions = styled(_RcDialogActions)`
+const RcDialogActions = styled(_RcDialogActions).attrs(useDialogDefaultProps)`
   ${DialogActionsStyle}
 `;
 
-RcDialogActions.defaultProps = {
-  size: 'medium',
-};
+RcDialogActions.defaultProps = {};
 
 RcDialogActions.displayName = 'RcDialogActions';
 

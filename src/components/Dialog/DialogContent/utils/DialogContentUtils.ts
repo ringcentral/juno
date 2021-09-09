@@ -1,5 +1,4 @@
 import { RcClasses, UnitMap } from '../../../../foundation';
-import { RcDialogSize } from '../../Dialog';
 import { RcDialogContentProps } from '../DialogContent';
 
 export const RcDialogContentClasses = RcClasses<RcDialogContentProps>(
@@ -7,10 +6,14 @@ export const RcDialogContentClasses = RcClasses<RcDialogContentProps>(
   'RcDialogContent',
 );
 
-export const RcDialogContentSpacings: UnitMap<RcDialogSize, number[]> = {
-  xsmall: [0, 3.5, 3],
-  small: [],
-  medium: [],
-  large: [],
-  fullScreen: [],
+export const getRcDialogContentSpacings = (isDividers?: boolean) => {
+  const spacings: UnitMap<
+    NonNullable<RcDialogContentProps['size']>,
+    number[]
+  > = {
+    small: isDividers ? [3, 4] : [0, 4, 1],
+    medium: isDividers ? [3, 6] : [0, 6, 3],
+  };
+
+  return spacings;
 };

@@ -8,7 +8,7 @@ import {
   useThemeProps,
 } from '../../../foundation';
 import { RcTypography } from '../../Typography';
-import { RcDialogProps } from '../Dialog';
+import { RcDialogChildrenProps, useDialogDefaultProps } from '../utils';
 import { DialogTitleStyle } from './styles';
 import { RcDialogTitleClasses } from './utils';
 
@@ -16,12 +16,13 @@ type RcDialogTitleProps = {
   display?: 'block' | 'flex';
   /** Define the padding size of that group wrapper. */
   space?: number | number[];
-} & Pick<RcDialogProps, 'size'> &
+} & RcDialogChildrenProps &
   RcBaseProps<ComponentProps<typeof MuiDialogTitle>>;
 
 const _RcDialogTitle = forwardRef<any, RcDialogTitleProps>(
   (inProps: RcDialogTitleProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcDialogTitle' });
+
     const {
       classes: classesProp,
       display,
@@ -51,13 +52,11 @@ const _RcDialogTitle = forwardRef<any, RcDialogTitleProps>(
   },
 );
 
-const RcDialogTitle = styled(_RcDialogTitle)`
+const RcDialogTitle = styled(_RcDialogTitle).attrs(useDialogDefaultProps)`
   ${DialogTitleStyle}
 `;
 
-RcDialogTitle.defaultProps = {
-  size: 'medium',
-};
+RcDialogTitle.defaultProps = {};
 
 RcDialogTitle.displayName = 'RcDialogTitle';
 
