@@ -3,6 +3,8 @@ import { RcDialogContentClasses } from '../../DialogContent/utils';
 import { RcDialogActionsProps } from '../DialogActions';
 import { RcDialogActionsSizes } from '../utils';
 
+const itemSpace = spacing(2);
+
 export const DialogActionsStyle: RcThemedStyled<RcDialogActionsProps, any> = (
   props,
 ) => {
@@ -35,19 +37,19 @@ export const DialogActionsStyle: RcThemedStyled<RcDialogActionsProps, any> = (
             ? css`
                 ${reverse
                   ? css`
-                      margin-bottom: ${spacing(4)};
+                      margin-bottom: ${itemSpace};
                     `
                   : css`
-                      margin-top: ${spacing(4)};
+                      margin-top: ${itemSpace};
                     `}
               `
             : css`
                 ${reverse
                   ? css`
-                      margin-left: ${spacing(2)};
+                      margin-right: ${itemSpace};
                     `
                   : css`
-                      margin-right: ${spacing(2)};
+                      margin-left: ${itemSpace};
                     `}
               `};
         }
