@@ -12,13 +12,20 @@ import { RcCheckbox } from '../../Forms/Checkbox';
 import { RcRadio } from '../../Forms/Radio';
 import { RcRadioGroup } from '../../Forms/RadioGroup';
 import { RcTypography } from '../../Typography';
-import { RcDialog } from '../Dialog';
+import { RcDialog, RcDialogContext } from '../Dialog';
 import { RcDialogActions } from '../DialogActions';
+import { RcDialogContentText } from '../DialogContentText';
 import { RcDialogContent, RcDialogContentProps } from '../DialogContent';
 import { RcDialogTitle } from '../DialogTitle';
 import { RcResponsive } from '../../Responsive';
-import { useResponsiveContext, useResponsiveMatch } from '../../../foundation';
+import {
+  styled,
+  useResponsiveContext,
+  useResponsiveMatch,
+} from '../../../foundation';
 import { RcSwitch, RcFormControlLabel } from '../../Forms';
+import { RcDrawer } from '../../Drawer';
+import { RcBox } from '../../Box';
 
 export default {
   title: '🚀 Cleanup Components/Dialog/Dialog',
@@ -38,12 +45,43 @@ export default {
 
 type DialogProps = ComponentProps<typeof RcDialog>;
 
-export const DialogExampleComponent: FunctionComponent<Partial<
+const Content: FunctionComponent<DialogExampleComponentProps> = ({
+  children,
+  childrenSize,
+  dividers,
+  onClick,
+}) => {
+  const isSmall = childrenSize === 'small';
+
+  return (
+    <>
+      <RcDialogTitle>Title</RcDialogTitle>
+      <RcDialogContent dividers={dividers}>
+        <RcDialogContentText>some content</RcDialogContentText>
+        {children}
+      </RcDialogContent>
+      <RcDialogActions>
+        <RcButton fullWidth={isSmall} variant="text" onClick={onClick as any}>
+          Cancel
+        </RcButton>
+        <RcButton fullWidth={isSmall} onClick={onClick as any}>
+          Ok
+        </RcButton>
+      </RcDialogActions>
+    </>
+  );
+};
+
+type DialogExampleComponentProps = Partial<
   DialogProps & Pick<RcDialogContentProps, 'dividers'>
->> = ({ children, childrenSize, dividers, ...rest }) => {
+>;
+
+export const DialogExampleComponent: FunctionComponent<DialogExampleComponentProps> = (
+  props,
+) => {
+  const { children, childrenSize, dividers, ...rest } = props;
   const [openState, setOpenState] = useState(false);
 
-  const isSmall = childrenSize === 'small';
   return (
     <>
       <RcButton
@@ -67,21 +105,14 @@ export const DialogExampleComponent: FunctionComponent<Partial<
         onBackdropClick={(e) => console.log('onBackdropClick', e)}
         onEscapeKeyDown={(e) => console.log('onEscapeKeyDown', e)}
       >
-        <RcDialogTitle>Title</RcDialogTitle>
-        <RcDialogContent dividers={dividers}>
-          <RcTypography>some content</RcTypography>
+        <Content {...props} onClick={() => setOpenState(false)}>
           <RcCheckbox title="Go" label="Do something" />
           <RcCheckbox label="Custom Field" />
           <RcRadioGroup defaultValue="mail">
             <RcRadio label="mail" value="mail" />
             <RcRadio label="address" value="address" />
           </RcRadioGroup>
-          {children}
-        </RcDialogContent>
-        <RcDialogActions>
-          <RcButton fullWidth={isSmall}>Custom Button</RcButton>
-          <RcButton fullWidth={isSmall}>Custom Button</RcButton>
-        </RcDialogActions>
+        </Content>
       </RcDialog>
     </>
   );
@@ -207,10 +238,54 @@ DialogWithResponsive.argTypes = {
   ...notControlInDocTable<keyof DialogProps>([]),
 };
 
-export const DialogChildrenSizes: Story<DialogProps> = () => {
+const DrawerWrapper = styled.div`
+  ${RcDialogContent} {
+    max-height: 200px;
+    overflow: auto;
+  }
+`;
+
+export const DialogChildrenSizes: Story<DialogProps> = ({
+  children,
+  childrenSize: childrenSizeProp,
+  ...args
+}) => {
   switchToControlKnobs();
 
   const [dividers, setDividers] = useState(false);
+  const [openState, setOpenState] = useState(false);
+  const [mode, setMode] = useState('dialog');
+  const [childrenSize, setChildrenSize] = useState(
+    childrenSizeProp || 'medium',
+  );
+
+  const handleClose = (e: any) => {
+    setOpenState(false);
+    console.log('onClose', e);
+  };
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setMode(event.target.value);
+  };
+
+  const handleChildrenSize = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setChildrenSize(event.target.value as any);
+  };
+
+  const content = (
+    <Content
+      childrenSize={childrenSize}
+      dividers={dividers}
+      onClick={() => setOpenState(false)}
+    >
+      <RcDialogContentText gutterBottom={false}>
+        Show in dialog
+      </RcDialogContentText>
+      <RcBox height="1000px" />
+      <RcDialogContentText gutterBottom={false}>bottom</RcDialogContentText>
+    </Content>
+  );
+
   return (
     <>
       <RcSwitch
@@ -219,11 +294,49 @@ export const DialogChildrenSizes: Story<DialogProps> = () => {
         onChange={() => setDividers(!dividers)}
       />
       <br />
+      <RcRadioGroup row value={mode} onChange={handleChange}>
+        <RcRadio label="dialog" value="dialog" />
+        <RcRadio label="drawer" value="drawer" />
+      </RcRadioGroup>
       <br />
-      <DialogExampleComponent childrenSize="small" dividers={dividers} />
+      <RcRadioGroup row value={childrenSize} onChange={handleChildrenSize}>
+        <RcRadio label="small" value="small" />
+        <RcRadio label="medium" value="medium" />
+      </RcRadioGroup>
       <br />
-      <br />
-      <DialogExampleComponent dividers={dividers} />
+      <RcButton
+        type="button"
+        onClick={() => {
+          setOpenState(true);
+        }}
+      >
+        Open Children Modal
+      </RcButton>
+      {mode === 'drawer' ? (
+        <RcDrawer
+          {...args}
+          anchor="bottom"
+          radius="xl"
+          open={openState}
+          onClose={handleClose}
+        >
+          <RcDialogContext.Provider value={{ size: childrenSize }}>
+            <DrawerWrapper>{content}</DrawerWrapper>
+          </RcDialogContext.Provider>
+        </RcDrawer>
+      ) : (
+        <RcDialog
+          {...args}
+          childrenSize={childrenSize}
+          open={openState}
+          onClose={handleClose}
+          onExited={(e) => console.log('onExited', e)}
+          onBackdropClick={(e) => console.log('onBackdropClick', e)}
+          onEscapeKeyDown={(e) => console.log('onEscapeKeyDown', e)}
+        >
+          {content}
+        </RcDialog>
+      )}
     </>
   );
 };

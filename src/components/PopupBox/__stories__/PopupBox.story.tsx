@@ -9,6 +9,7 @@ import {
 } from '../../../storybook';
 import { RcBox } from '../../Box';
 import { RcButton } from '../../Buttons/Button';
+import { RcDialogContentText } from '../../Dialog';
 import { RcTextField } from '../../Forms';
 import { RcPopupBox } from '../PopupBox';
 
@@ -71,7 +72,7 @@ export const PopupBox: Story<PopupBoxProps> = ({ open: openProp, ...args }) => {
       >
         <RcTextField fullWidth autoFocus />
         <RcBox height="1000px">cool</RcBox>
-        bottom
+        <RcDialogContentText gutterBottom={false}>bottom</RcDialogContentText>
       </RcPopupBox>
     </>
   );
