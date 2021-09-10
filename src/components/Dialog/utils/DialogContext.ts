@@ -15,15 +15,17 @@ export const RcDialogContext = createContext<RcDialogContextValue>({});
 
 export const useRcDialogContext = () => useContext(RcDialogContext);
 
-export const useDialogDefaultProps = ({
+export const useDialogDefaultProps = <
+  T extends RcDialogChildrenProps & { theme?: RcTheme }
+>({
   theme,
   ...props
-}: RcDialogChildrenProps & { theme?: RcTheme }) => {
+}: T) => {
   const context = useRcDialogContext();
   const { size = context.size || 'medium' } = props;
 
   return {
     ...props,
     size,
-  };
+  } as T;
 };

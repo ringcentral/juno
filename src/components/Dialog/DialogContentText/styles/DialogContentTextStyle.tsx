@@ -4,6 +4,9 @@ import { RcDialogContentTextProps } from '../DialogContentText';
 export const DialogContentTextStyle: RcThemedStyled<
   RcDialogContentTextProps,
   any
-> = () => {
-  return css``;
+> = ({ gutterBottom }) => {
+  // that is mui but, that not work with gutterBottom set
+  return css`
+    margin-bottom: ${gutterBottom === false && 0};
+  `;
 };

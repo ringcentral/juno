@@ -126,4 +126,4 @@ RcDialog.defaultProps = {};
 
 RcDialog.displayName = 'RcDialog';
 
-export { RcDialog, RcDialogProps, RcDialogSize };
+export { RcDialog, RcDialogProps, RcDialogSize, RcDialogContext };

@@ -6,13 +6,16 @@ import { RcDialogActionsSizes } from '../utils';
 export const DialogActionsStyle: RcThemedStyled<RcDialogActionsProps, any> = (
   props,
 ) => {
-  const { size, direction, disableSpacing } = props;
+  const { size, reverse, direction, disableSpacing } = props;
 
   const isVertical = direction === 'vertical';
 
+  const columnDirection = reverse ? 'column-reverse' : 'column';
+  const rowDirection = reverse ? 'row-reverse' : 'row';
+
   return css`
     padding: ${spacing(...RcDialogActionsSizes[size!])};
-    flex-direction: ${isVertical && 'column-reverse'};
+    flex-direction: ${isVertical ? columnDirection : rowDirection};
 
     ${size === 'medium' &&
       /**
@@ -30,10 +33,22 @@ export const DialogActionsStyle: RcThemedStyled<RcDialogActionsProps, any> = (
         > * + * {
           ${isVertical
             ? css`
-                margin-bottom: ${spacing(4)};
+                ${reverse
+                  ? css`
+                      margin-bottom: ${spacing(4)};
+                    `
+                  : css`
+                      margin-top: ${spacing(4)};
+                    `}
               `
             : css`
-                margin-left: ${spacing(2)};
+                ${reverse
+                  ? css`
+                      margin-left: ${spacing(2)};
+                    `
+                  : css`
+                      margin-right: ${spacing(2)};
+                    `}
               `};
         }
       `};

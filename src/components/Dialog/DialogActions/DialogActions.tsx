@@ -13,15 +13,25 @@ import { DialogActionsStyle } from './styles';
 import { RcDialogActionsClasses } from './utils';
 
 type RcDialogActionsProps = {
-  /** direction of actions */
+  /**
+   * direction of actions
+   *
+   * @default 'horizontal'
+   */
   direction?: RcBaseDirection;
+  /**
+   * reverse below items
+   *
+   * @default false, when direction is `vertical`, default reverse will be `true`
+   */
+  reverse?: boolean;
 } & RcDialogChildrenProps &
   RcBaseProps<ComponentProps<typeof MuiDialogActions>>;
 
 const _RcDialogActions = forwardRef<any, RcDialogActionsProps>(
   (inProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcDialogActions' });
-    const { classes: classesProp, size, children, ...rest } = props;
+    const { classes: classesProp, size, children, reverse, ...rest } = props;
 
     const classes = useMemo(
       () => combineClasses(RcDialogActionsClasses, classesProp),
@@ -40,9 +50,16 @@ const RcDialogActions = styled(_RcDialogActions).attrs(
   (props: RcDialogActionsProps) => {
     const toProps = useDialogDefaultProps(props);
 
+    const direction =
+      toProps.direction ??
+      (toProps.size === 'small' ? 'vertical' : 'horizontal');
+
+    const reverse = toProps.reverse ?? direction === 'vertical';
+
     return {
-      direction: toProps.size === 'small' ? 'vertical' : 'horizontal',
       ...toProps,
+      direction,
+      reverse,
     };
   },
 )`
