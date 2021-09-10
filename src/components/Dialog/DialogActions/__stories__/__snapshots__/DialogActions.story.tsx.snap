@@ -60,6 +60,9 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogActions DialogActions 1
 
 .c0 {
   padding: 12px 24px 24px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .RcDialogContent-dividers + .c0.c0 {

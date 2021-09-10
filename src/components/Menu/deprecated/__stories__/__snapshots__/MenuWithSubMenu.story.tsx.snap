@@ -148,7 +148,7 @@ Array [
   cursor: pointer;
 }
 
-.c1:hover .sc-cSiAOC {
+.c1:hover .sc-lgWdIC {
   display: block;
 }
 
@@ -157,7 +157,7 @@ Array [
   color: #fff;
 }
 
-.c1:active .sc-lgWdIC {
+.c1:active .sc-hoPuav {
   color: #fff;
 }
 
@@ -436,7 +436,7 @@ exports[`Storyshots 🖤 deprecated Components/Menus/SubMenu Menu List Control 1
   cursor: pointer;
 }
 
-.c1:hover .sc-cSiAOC {
+.c1:hover .sc-lgWdIC {
   display: block;
 }
 
@@ -445,7 +445,7 @@ exports[`Storyshots 🖤 deprecated Components/Menus/SubMenu Menu List Control 1
   color: #fff;
 }
 
-.c1:active .sc-lgWdIC {
+.c1:active .sc-hoPuav {
   color: #fff;
 }
 

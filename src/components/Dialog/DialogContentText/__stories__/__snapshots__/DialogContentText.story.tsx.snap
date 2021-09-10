@@ -2,13 +2,16 @@
 
 exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogContentText DialogContentText 1`] = `
 .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
   color: #666666;
 }
 
 <p
   className="MuiTypography-root MuiDialogContentText-root c0 MuiTypography-body1"
-  data-variant="inherit"
+  data-variant="body1"
 >
   You can set my maximum width and whether to adapt or not.
 </p>
