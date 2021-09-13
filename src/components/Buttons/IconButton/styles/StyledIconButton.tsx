@@ -98,11 +98,7 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
   const currRadius =
     radiusProp || (isOutline ? 'lg' : isCircle ? 'circle' : 'zero');
 
-  const persistBgColor = setOpacity(
-    mainColor,
-    isInverse ? '80' : '12',
-    isInverse,
-  );
+  const persistBgColor = setOpacity(mainColor, isInverse ? '16' : '12');
 
   const defaultShadow = isContained ? shadows('1') : undefined;
 
