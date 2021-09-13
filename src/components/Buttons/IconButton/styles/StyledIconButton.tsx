@@ -1,7 +1,6 @@
 import {
   backgroundTransition,
   css,
-  darken,
   focusVisible,
   focusVisibleColor,
   getParsePaletteColor,
@@ -98,14 +97,6 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
 
   const currRadius =
     radiusProp || (isOutline ? 'lg' : isCircle ? 'circle' : 'zero');
-
-  const containedInactiveStyled = css`
-    background-color: ${darken(mainColor, 0.1)};
-
-    ${childrenClass} {
-      color: ${mainColorContrast};
-    }
-  `;
 
   const persistBgColor = setOpacity(
     mainColor,
@@ -217,21 +208,27 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
 
       ${nonTouchHoverMedia} {
         &:hover {
-          ${containedInactiveStyled};
+          background-color: ${setOpacity(mainColor, '08', true)};
+
+          ${childrenClass} {
+            color: ${mainColorContrast};
+          }
+        }
+      }
+
+      ${focusVisible} {
+        background-color: ${setOpacity(mainColor, '16', true)};
+
+        ${childrenClass} {
+          color: ${mainColorContrast};
         }
       }
 
       &:active {
-        ${containedInactiveStyled};
-      }
+        background-color: ${setOpacity(mainColor, '24', true)};
 
-      ${focusVisible} {
-        background-color: ${darken(mainColor, 0.1)};
-
-        &:active {
-          ${childrenClass} {
-            color: ${mainColorContrast};
-          }
+        ${childrenClass} {
+          color: ${mainColorContrast};
         }
       }
     }
