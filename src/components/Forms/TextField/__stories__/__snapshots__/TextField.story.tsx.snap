@@ -101,7 +101,7 @@ Array [
   font-size: 24px;
 }
 
-.c2.RcIconButton-root {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -123,26 +123,30 @@ Array [
   cursor: pointer;
 }
 
-.c2.RcIconButton-root .c3 {
+.c2,
+.c2 .c3 {
   font-size: 20px;
 }
 
-.c2.RcIconButton-root:active .c3 {
+.c2:active,
+.c2:active .c3 {
   color: #666666;
 }
 
-.c2.RcIconButton-root.focus-visible,
-.c2.RcIconButton-root[data-focus-visible-added] {
+.c2.focus-visible,
+.c2[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c2.RcIconButton-root.focus-visible:active .c3,
-.c2.RcIconButton-root[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active,
+.c2[data-focus-visible-added]:active,
+.c2.focus-visible:active .c3,
+.c2[data-focus-visible-added]:active .c3 {
   color: rgba(102,102,102,0.88);
 }
 
-.c2.RcIconButton-root.focus-visible:after,
-.c2.RcIconButton-root[data-focus-visible-added]:after {
+.c2.focus-visible:after,
+.c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -159,6 +163,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c2.RcIconButton-disabled,
 .c2.RcIconButton-disabled .c3 {
   color: #B9B9B9;
 }
@@ -179,21 +184,24 @@ Array [
   background-color: #666666;
 }
 
-.c2.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c2.RcIconButton-contained:active .c3 {
-  color: #fff;
+.c2.RcIconButton-contained.focus-visible,
+.c2.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c2.RcIconButton-contained.focus-visible,
-.c2.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c2.RcIconButton-contained[data-focus-visible-added],
+.c2.RcIconButton-contained.focus-visible .c3,
+.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+  color: #fff;
 }
 
-.c2.RcIconButton-contained.focus-visible:active .c3,
-.c2.RcIconButton-contained[data-focus-visible-added]:active .c3 {
+.c2.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c2.RcIconButton-contained:active,
+.c2.RcIconButton-contained:active .c3 {
   color: #fff;
 }
 
@@ -337,20 +345,22 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c2.RcIconButton-root:hover {
+  .c2:hover {
     background-color: transparent;
   }
 
-  .c2.RcIconButton-root:hover .c3 {
+  .c2:hover,
+  .c2:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c2.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c2.RcIconButton-contained:hover,
   .c2.RcIconButton-contained:hover .c3 {
     color: #fff;
   }
@@ -525,7 +535,7 @@ Array [
   font-size: 24px;
 }
 
-.c2.RcIconButton-root {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -547,26 +557,30 @@ Array [
   cursor: pointer;
 }
 
-.c2.RcIconButton-root .c3 {
+.c2,
+.c2 .c3 {
   font-size: 20px;
 }
 
-.c2.RcIconButton-root:active .c3 {
+.c2:active,
+.c2:active .c3 {
   color: #666666;
 }
 
-.c2.RcIconButton-root.focus-visible,
-.c2.RcIconButton-root[data-focus-visible-added] {
+.c2.focus-visible,
+.c2[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c2.RcIconButton-root.focus-visible:active .c3,
-.c2.RcIconButton-root[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active,
+.c2[data-focus-visible-added]:active,
+.c2.focus-visible:active .c3,
+.c2[data-focus-visible-added]:active .c3 {
   color: rgba(102,102,102,0.88);
 }
 
-.c2.RcIconButton-root.focus-visible:after,
-.c2.RcIconButton-root[data-focus-visible-added]:after {
+.c2.focus-visible:after,
+.c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -583,6 +597,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c2.RcIconButton-disabled,
 .c2.RcIconButton-disabled .c3 {
   color: #B9B9B9;
 }
@@ -603,21 +618,24 @@ Array [
   background-color: #666666;
 }
 
-.c2.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c2.RcIconButton-contained:active .c3 {
-  color: #fff;
+.c2.RcIconButton-contained.focus-visible,
+.c2.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c2.RcIconButton-contained.focus-visible,
-.c2.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c2.RcIconButton-contained[data-focus-visible-added],
+.c2.RcIconButton-contained.focus-visible .c3,
+.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+  color: #fff;
 }
 
-.c2.RcIconButton-contained.focus-visible:active .c3,
-.c2.RcIconButton-contained[data-focus-visible-added]:active .c3 {
+.c2.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c2.RcIconButton-contained:active,
+.c2.RcIconButton-contained:active .c3 {
   color: #fff;
 }
 
@@ -761,20 +779,22 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c2.RcIconButton-root:hover {
+  .c2:hover {
     background-color: transparent;
   }
 
-  .c2.RcIconButton-root:hover .c3 {
+  .c2:hover,
+  .c2:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c2.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c2.RcIconButton-contained:hover,
   .c2.RcIconButton-contained:hover .c3 {
     color: #fff;
   }
@@ -880,7 +900,7 @@ Array [
   font-size: 24px;
 }
 
-.c2.RcIconButton-root {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -902,26 +922,30 @@ Array [
   cursor: pointer;
 }
 
-.c2.RcIconButton-root .c3 {
+.c2,
+.c2 .c3 {
   font-size: 20px;
 }
 
-.c2.RcIconButton-root:active .c3 {
+.c2:active,
+.c2:active .c3 {
   color: #666666;
 }
 
-.c2.RcIconButton-root.focus-visible,
-.c2.RcIconButton-root[data-focus-visible-added] {
+.c2.focus-visible,
+.c2[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c2.RcIconButton-root.focus-visible:active .c3,
-.c2.RcIconButton-root[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active,
+.c2[data-focus-visible-added]:active,
+.c2.focus-visible:active .c3,
+.c2[data-focus-visible-added]:active .c3 {
   color: rgba(102,102,102,0.88);
 }
 
-.c2.RcIconButton-root.focus-visible:after,
-.c2.RcIconButton-root[data-focus-visible-added]:after {
+.c2.focus-visible:after,
+.c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -938,6 +962,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c2.RcIconButton-disabled,
 .c2.RcIconButton-disabled .c3 {
   color: #B9B9B9;
 }
@@ -958,21 +983,24 @@ Array [
   background-color: #666666;
 }
 
-.c2.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c2.RcIconButton-contained:active .c3 {
-  color: #fff;
+.c2.RcIconButton-contained.focus-visible,
+.c2.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c2.RcIconButton-contained.focus-visible,
-.c2.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c2.RcIconButton-contained[data-focus-visible-added],
+.c2.RcIconButton-contained.focus-visible .c3,
+.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+  color: #fff;
 }
 
-.c2.RcIconButton-contained.focus-visible:active .c3,
-.c2.RcIconButton-contained[data-focus-visible-added]:active .c3 {
+.c2.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c2.RcIconButton-contained:active,
+.c2.RcIconButton-contained:active .c3 {
   color: #fff;
 }
 
@@ -1128,20 +1156,22 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c2.RcIconButton-root:hover {
+  .c2:hover {
     background-color: transparent;
   }
 
-  .c2.RcIconButton-root:hover .c3 {
+  .c2:hover,
+  .c2:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c2.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c2.RcIconButton-contained:hover,
   .c2.RcIconButton-contained:hover .c3 {
     color: #fff;
   }
@@ -1281,7 +1311,7 @@ Array [
   font-size: 24px;
 }
 
-.c2.RcIconButton-root {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1303,26 +1333,30 @@ Array [
   cursor: pointer;
 }
 
-.c2.RcIconButton-root .c3 {
+.c2,
+.c2 .c3 {
   font-size: 20px;
 }
 
-.c2.RcIconButton-root:active .c3 {
+.c2:active,
+.c2:active .c3 {
   color: #666666;
 }
 
-.c2.RcIconButton-root.focus-visible,
-.c2.RcIconButton-root[data-focus-visible-added] {
+.c2.focus-visible,
+.c2[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c2.RcIconButton-root.focus-visible:active .c3,
-.c2.RcIconButton-root[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active,
+.c2[data-focus-visible-added]:active,
+.c2.focus-visible:active .c3,
+.c2[data-focus-visible-added]:active .c3 {
   color: rgba(102,102,102,0.88);
 }
 
-.c2.RcIconButton-root.focus-visible:after,
-.c2.RcIconButton-root[data-focus-visible-added]:after {
+.c2.focus-visible:after,
+.c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -1339,6 +1373,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c2.RcIconButton-disabled,
 .c2.RcIconButton-disabled .c3 {
   color: #B9B9B9;
 }
@@ -1359,21 +1394,24 @@ Array [
   background-color: #666666;
 }
 
-.c2.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c2.RcIconButton-contained:active .c3 {
-  color: #fff;
+.c2.RcIconButton-contained.focus-visible,
+.c2.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c2.RcIconButton-contained.focus-visible,
-.c2.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c2.RcIconButton-contained[data-focus-visible-added],
+.c2.RcIconButton-contained.focus-visible .c3,
+.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+  color: #fff;
 }
 
-.c2.RcIconButton-contained.focus-visible:active .c3,
-.c2.RcIconButton-contained[data-focus-visible-added]:active .c3 {
+.c2.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c2.RcIconButton-contained:active,
+.c2.RcIconButton-contained:active .c3 {
   color: #fff;
 }
 
@@ -1536,20 +1574,22 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c2.RcIconButton-root:hover {
+  .c2:hover {
     background-color: transparent;
   }
 
-  .c2.RcIconButton-root:hover .c3 {
+  .c2:hover,
+  .c2:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c2.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c2.RcIconButton-contained:hover,
   .c2.RcIconButton-contained:hover .c3 {
     color: #fff;
   }
@@ -1691,7 +1731,7 @@ Array [
   font-size: 24px;
 }
 
-.c2.RcIconButton-root {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1713,26 +1753,30 @@ Array [
   cursor: pointer;
 }
 
-.c2.RcIconButton-root .c3 {
+.c2,
+.c2 .c3 {
   font-size: 20px;
 }
 
-.c2.RcIconButton-root:active .c3 {
+.c2:active,
+.c2:active .c3 {
   color: #666666;
 }
 
-.c2.RcIconButton-root.focus-visible,
-.c2.RcIconButton-root[data-focus-visible-added] {
+.c2.focus-visible,
+.c2[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c2.RcIconButton-root.focus-visible:active .c3,
-.c2.RcIconButton-root[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active,
+.c2[data-focus-visible-added]:active,
+.c2.focus-visible:active .c3,
+.c2[data-focus-visible-added]:active .c3 {
   color: rgba(102,102,102,0.88);
 }
 
-.c2.RcIconButton-root.focus-visible:after,
-.c2.RcIconButton-root[data-focus-visible-added]:after {
+.c2.focus-visible:after,
+.c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -1749,6 +1793,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c2.RcIconButton-disabled,
 .c2.RcIconButton-disabled .c3 {
   color: #B9B9B9;
 }
@@ -1769,21 +1814,24 @@ Array [
   background-color: #666666;
 }
 
-.c2.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c2.RcIconButton-contained:active .c3 {
-  color: #fff;
+.c2.RcIconButton-contained.focus-visible,
+.c2.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c2.RcIconButton-contained.focus-visible,
-.c2.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c2.RcIconButton-contained[data-focus-visible-added],
+.c2.RcIconButton-contained.focus-visible .c3,
+.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+  color: #fff;
 }
 
-.c2.RcIconButton-contained.focus-visible:active .c3,
-.c2.RcIconButton-contained[data-focus-visible-added]:active .c3 {
+.c2.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c2.RcIconButton-contained:active,
+.c2.RcIconButton-contained:active .c3 {
   color: #fff;
 }
 
@@ -1946,20 +1994,22 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c2.RcIconButton-root:hover {
+  .c2:hover {
     background-color: transparent;
   }
 
-  .c2.RcIconButton-root:hover .c3 {
+  .c2:hover,
+  .c2:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c2.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c2.RcIconButton-contained:hover,
   .c2.RcIconButton-contained:hover .c3 {
     color: #fff;
   }
@@ -2133,7 +2183,7 @@ Array [
   font-size: 24px;
 }
 
-.c2.RcIconButton-root {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2155,26 +2205,30 @@ Array [
   cursor: pointer;
 }
 
-.c2.RcIconButton-root .c3 {
+.c2,
+.c2 .c3 {
   font-size: 20px;
 }
 
-.c2.RcIconButton-root:active .c3 {
+.c2:active,
+.c2:active .c3 {
   color: #666666;
 }
 
-.c2.RcIconButton-root.focus-visible,
-.c2.RcIconButton-root[data-focus-visible-added] {
+.c2.focus-visible,
+.c2[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c2.RcIconButton-root.focus-visible:active .c3,
-.c2.RcIconButton-root[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active,
+.c2[data-focus-visible-added]:active,
+.c2.focus-visible:active .c3,
+.c2[data-focus-visible-added]:active .c3 {
   color: rgba(102,102,102,0.88);
 }
 
-.c2.RcIconButton-root.focus-visible:after,
-.c2.RcIconButton-root[data-focus-visible-added]:after {
+.c2.focus-visible:after,
+.c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -2191,6 +2245,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c2.RcIconButton-disabled,
 .c2.RcIconButton-disabled .c3 {
   color: #B9B9B9;
 }
@@ -2211,21 +2266,24 @@ Array [
   background-color: #666666;
 }
 
-.c2.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c2.RcIconButton-contained:active .c3 {
-  color: #fff;
+.c2.RcIconButton-contained.focus-visible,
+.c2.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c2.RcIconButton-contained.focus-visible,
-.c2.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c2.RcIconButton-contained[data-focus-visible-added],
+.c2.RcIconButton-contained.focus-visible .c3,
+.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+  color: #fff;
 }
 
-.c2.RcIconButton-contained.focus-visible:active .c3,
-.c2.RcIconButton-contained[data-focus-visible-added]:active .c3 {
+.c2.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c2.RcIconButton-contained:active,
+.c2.RcIconButton-contained:active .c3 {
   color: #fff;
 }
 
@@ -2388,20 +2446,22 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c2.RcIconButton-root:hover {
+  .c2:hover {
     background-color: transparent;
   }
 
-  .c2.RcIconButton-root:hover .c3 {
+  .c2:hover,
+  .c2:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c2.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c2.RcIconButton-contained:hover,
   .c2.RcIconButton-contained:hover .c3 {
     color: #fff;
   }
@@ -2543,7 +2603,7 @@ Array [
   font-size: 24px;
 }
 
-.c2.RcIconButton-root {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2565,26 +2625,30 @@ Array [
   cursor: pointer;
 }
 
-.c2.RcIconButton-root .c3 {
+.c2,
+.c2 .c3 {
   font-size: 20px;
 }
 
-.c2.RcIconButton-root:active .c3 {
+.c2:active,
+.c2:active .c3 {
   color: #666666;
 }
 
-.c2.RcIconButton-root.focus-visible,
-.c2.RcIconButton-root[data-focus-visible-added] {
+.c2.focus-visible,
+.c2[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c2.RcIconButton-root.focus-visible:active .c3,
-.c2.RcIconButton-root[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active,
+.c2[data-focus-visible-added]:active,
+.c2.focus-visible:active .c3,
+.c2[data-focus-visible-added]:active .c3 {
   color: rgba(102,102,102,0.88);
 }
 
-.c2.RcIconButton-root.focus-visible:after,
-.c2.RcIconButton-root[data-focus-visible-added]:after {
+.c2.focus-visible:after,
+.c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -2601,6 +2665,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c2.RcIconButton-disabled,
 .c2.RcIconButton-disabled .c3 {
   color: #B9B9B9;
 }
@@ -2621,21 +2686,24 @@ Array [
   background-color: #666666;
 }
 
-.c2.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c2.RcIconButton-contained:active .c3 {
-  color: #fff;
+.c2.RcIconButton-contained.focus-visible,
+.c2.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c2.RcIconButton-contained.focus-visible,
-.c2.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c2.RcIconButton-contained[data-focus-visible-added],
+.c2.RcIconButton-contained.focus-visible .c3,
+.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+  color: #fff;
 }
 
-.c2.RcIconButton-contained.focus-visible:active .c3,
-.c2.RcIconButton-contained[data-focus-visible-added]:active .c3 {
+.c2.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c2.RcIconButton-contained:active,
+.c2.RcIconButton-contained:active .c3 {
   color: #fff;
 }
 
@@ -2798,20 +2866,22 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c2.RcIconButton-root:hover {
+  .c2:hover {
     background-color: transparent;
   }
 
-  .c2.RcIconButton-root:hover .c3 {
+  .c2:hover,
+  .c2:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c2.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c2.RcIconButton-contained:hover,
   .c2.RcIconButton-contained:hover .c3 {
     color: #fff;
   }
@@ -2953,7 +3023,7 @@ Array [
   font-size: 24px;
 }
 
-.c2.RcIconButton-root {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2975,26 +3045,30 @@ Array [
   cursor: pointer;
 }
 
-.c2.RcIconButton-root .c3 {
+.c2,
+.c2 .c3 {
   font-size: 20px;
 }
 
-.c2.RcIconButton-root:active .c3 {
+.c2:active,
+.c2:active .c3 {
   color: #666666;
 }
 
-.c2.RcIconButton-root.focus-visible,
-.c2.RcIconButton-root[data-focus-visible-added] {
+.c2.focus-visible,
+.c2[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c2.RcIconButton-root.focus-visible:active .c3,
-.c2.RcIconButton-root[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active,
+.c2[data-focus-visible-added]:active,
+.c2.focus-visible:active .c3,
+.c2[data-focus-visible-added]:active .c3 {
   color: rgba(102,102,102,0.88);
 }
 
-.c2.RcIconButton-root.focus-visible:after,
-.c2.RcIconButton-root[data-focus-visible-added]:after {
+.c2.focus-visible:after,
+.c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -3011,6 +3085,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c2.RcIconButton-disabled,
 .c2.RcIconButton-disabled .c3 {
   color: #B9B9B9;
 }
@@ -3031,21 +3106,24 @@ Array [
   background-color: #666666;
 }
 
-.c2.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c2.RcIconButton-contained:active .c3 {
-  color: #fff;
+.c2.RcIconButton-contained.focus-visible,
+.c2.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c2.RcIconButton-contained.focus-visible,
-.c2.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c2.RcIconButton-contained[data-focus-visible-added],
+.c2.RcIconButton-contained.focus-visible .c3,
+.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+  color: #fff;
 }
 
-.c2.RcIconButton-contained.focus-visible:active .c3,
-.c2.RcIconButton-contained[data-focus-visible-added]:active .c3 {
+.c2.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c2.RcIconButton-contained:active,
+.c2.RcIconButton-contained:active .c3 {
   color: #fff;
 }
 
@@ -3200,20 +3278,22 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c2.RcIconButton-root:hover {
+  .c2:hover {
     background-color: transparent;
   }
 
-  .c2.RcIconButton-root:hover .c3 {
+  .c2:hover,
+  .c2:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c2.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c2.RcIconButton-contained:hover,
   .c2.RcIconButton-contained:hover .c3 {
     color: #fff;
   }
@@ -3330,7 +3410,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   font-size: 24px;
 }
 
-.c2.RcIconButton-root {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3352,26 +3432,30 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   cursor: pointer;
 }
 
-.c2.RcIconButton-root .c3 {
+.c2,
+.c2 .c3 {
   font-size: 20px;
 }
 
-.c2.RcIconButton-root:active .c3 {
+.c2:active,
+.c2:active .c3 {
   color: #666666;
 }
 
-.c2.RcIconButton-root.focus-visible,
-.c2.RcIconButton-root[data-focus-visible-added] {
+.c2.focus-visible,
+.c2[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c2.RcIconButton-root.focus-visible:active .c3,
-.c2.RcIconButton-root[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active,
+.c2[data-focus-visible-added]:active,
+.c2.focus-visible:active .c3,
+.c2[data-focus-visible-added]:active .c3 {
   color: rgba(102,102,102,0.88);
 }
 
-.c2.RcIconButton-root.focus-visible:after,
-.c2.RcIconButton-root[data-focus-visible-added]:after {
+.c2.focus-visible:after,
+.c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -3388,6 +3472,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   background-color: rgba(102,102,102,0.12);
 }
 
+.c2.RcIconButton-disabled,
 .c2.RcIconButton-disabled .c3 {
   color: #B9B9B9;
 }
@@ -3408,21 +3493,24 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   background-color: #666666;
 }
 
-.c2.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c2.RcIconButton-contained:active .c3 {
-  color: #fff;
+.c2.RcIconButton-contained.focus-visible,
+.c2.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c2.RcIconButton-contained.focus-visible,
-.c2.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c2.RcIconButton-contained[data-focus-visible-added],
+.c2.RcIconButton-contained.focus-visible .c3,
+.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+  color: #fff;
 }
 
-.c2.RcIconButton-contained.focus-visible:active .c3,
-.c2.RcIconButton-contained[data-focus-visible-added]:active .c3 {
+.c2.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c2.RcIconButton-contained:active,
+.c2.RcIconButton-contained:active .c3 {
   color: #fff;
 }
 
@@ -3875,20 +3963,22 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c2.RcIconButton-root:hover {
+  .c2:hover {
     background-color: transparent;
   }
 
-  .c2.RcIconButton-root:hover .c3 {
+  .c2:hover,
+  .c2:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c2.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c2.RcIconButton-contained:hover,
   .c2.RcIconButton-contained:hover .c3 {
     color: #fff;
   }

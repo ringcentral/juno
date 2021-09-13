@@ -282,7 +282,7 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Plain Icon Butt
   font-size: 24px;
 }
 
-.c1.RcIconButton-root {
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -304,26 +304,30 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Plain Icon Butt
   cursor: pointer;
 }
 
-.c1.RcIconButton-root .c2 {
+.c1,
+.c1 .c2 {
   font-size: 20px;
 }
 
-.c1.RcIconButton-root:active .c2 {
+.c1:active,
+.c1:active .c2 {
   color: #666666;
 }
 
-.c1.RcIconButton-root.focus-visible,
-.c1.RcIconButton-root[data-focus-visible-added] {
+.c1.focus-visible,
+.c1[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c1.RcIconButton-root.focus-visible:active .c2,
-.c1.RcIconButton-root[data-focus-visible-added]:active .c2 {
+.c1.focus-visible:active,
+.c1[data-focus-visible-added]:active,
+.c1.focus-visible:active .c2,
+.c1[data-focus-visible-added]:active .c2 {
   color: rgba(102,102,102,0.88);
 }
 
-.c1.RcIconButton-root.focus-visible:after,
-.c1.RcIconButton-root[data-focus-visible-added]:after {
+.c1.focus-visible:after,
+.c1[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -340,6 +344,7 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Plain Icon Butt
   background-color: rgba(102,102,102,0.12);
 }
 
+.c1.RcIconButton-disabled,
 .c1.RcIconButton-disabled .c2 {
   color: #B9B9B9;
 }
@@ -360,21 +365,24 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Plain Icon Butt
   background-color: #666666;
 }
 
-.c1.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c1.RcIconButton-contained:active .c2 {
-  color: #fff;
+.c1.RcIconButton-contained.focus-visible,
+.c1.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c1.RcIconButton-contained.focus-visible,
-.c1.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c1.RcIconButton-contained[data-focus-visible-added],
+.c1.RcIconButton-contained.focus-visible .c2,
+.c1.RcIconButton-contained[data-focus-visible-added] .c2 {
+  color: #fff;
 }
 
-.c1.RcIconButton-contained.focus-visible:active .c2,
-.c1.RcIconButton-contained[data-focus-visible-added]:active .c2 {
+.c1.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c1.RcIconButton-contained:active,
+.c1.RcIconButton-contained:active .c2 {
   color: #fff;
 }
 
@@ -412,20 +420,22 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Plain Icon Butt
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c1.RcIconButton-root:hover {
+  .c1:hover {
     background-color: transparent;
   }
 
-  .c1.RcIconButton-root:hover .c2 {
+  .c1:hover,
+  .c1:hover .c2 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c1.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c1.RcIconButton-contained:hover,
   .c1.RcIconButton-contained:hover .c2 {
     color: #fff;
   }
@@ -605,7 +615,7 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Round Icon Butt
   font-size: 24px;
 }
 
-.c1.RcIconButton-root {
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -627,21 +637,25 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Round Icon Butt
   cursor: pointer;
 }
 
-.c1.RcIconButton-root .c2 {
+.c1,
+.c1 .c2 {
   font-size: 20px;
 }
 
-.c1.RcIconButton-root:active .c2 {
+.c1:active,
+.c1:active .c2 {
   color: #666666;
 }
 
-.c1.RcIconButton-root.focus-visible,
-.c1.RcIconButton-root[data-focus-visible-added] {
+.c1.focus-visible,
+.c1[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
-.c1.RcIconButton-root.focus-visible:active .c2,
-.c1.RcIconButton-root[data-focus-visible-added]:active .c2 {
+.c1.focus-visible:active,
+.c1[data-focus-visible-added]:active,
+.c1.focus-visible:active .c2,
+.c1[data-focus-visible-added]:active .c2 {
   color: rgba(102,102,102,0.88);
 }
 
@@ -649,6 +663,7 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Round Icon Butt
   background-color: rgba(102,102,102,0.12);
 }
 
+.c1.RcIconButton-disabled,
 .c1.RcIconButton-disabled .c2 {
   color: #B9B9B9;
 }
@@ -669,21 +684,24 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Round Icon Butt
   background-color: #666666;
 }
 
-.c1.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c1.RcIconButton-contained:active .c2 {
-  color: #fff;
+.c1.RcIconButton-contained.focus-visible,
+.c1.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c1.RcIconButton-contained.focus-visible,
-.c1.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c1.RcIconButton-contained[data-focus-visible-added],
+.c1.RcIconButton-contained.focus-visible .c2,
+.c1.RcIconButton-contained[data-focus-visible-added] .c2 {
+  color: #fff;
 }
 
-.c1.RcIconButton-contained.focus-visible:active .c2,
-.c1.RcIconButton-contained[data-focus-visible-added]:active .c2 {
+.c1.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c1.RcIconButton-contained:active,
+.c1.RcIconButton-contained:active .c2 {
   color: #fff;
 }
 
@@ -721,20 +739,22 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Round Icon Butt
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c1.RcIconButton-root:hover {
+  .c1:hover {
     background-color: rgba(102,102,102,0.08);
   }
 
-  .c1.RcIconButton-root:hover .c2 {
+  .c1:hover,
+  .c1:hover .c2 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c1.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c1.RcIconButton-contained:hover,
   .c1.RcIconButton-contained:hover .c2 {
     color: #fff;
   }

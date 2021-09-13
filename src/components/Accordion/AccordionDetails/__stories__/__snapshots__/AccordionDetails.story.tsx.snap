@@ -41,7 +41,7 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/AccordionDetails Accordion
   font-size: 24px;
 }
 
-.c4.RcIconButton-root {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -63,21 +63,25 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/AccordionDetails Accordion
   cursor: pointer;
 }
 
-.c4.RcIconButton-root .c5 {
+.c4,
+.c4 .c5 {
   font-size: 20px;
 }
 
-.c4.RcIconButton-root:active .c5 {
+.c4:active,
+.c4:active .c5 {
   color: #666666;
 }
 
-.c4.RcIconButton-root.focus-visible,
-.c4.RcIconButton-root[data-focus-visible-added] {
+.c4.focus-visible,
+.c4[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
-.c4.RcIconButton-root.focus-visible:active .c5,
-.c4.RcIconButton-root[data-focus-visible-added]:active .c5 {
+.c4.focus-visible:active,
+.c4[data-focus-visible-added]:active,
+.c4.focus-visible:active .c5,
+.c4[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
@@ -85,6 +89,7 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/AccordionDetails Accordion
   background-color: rgba(102,102,102,0.12);
 }
 
+.c4.RcIconButton-disabled,
 .c4.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
@@ -105,21 +110,24 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/AccordionDetails Accordion
   background-color: #666666;
 }
 
-.c4.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c4.RcIconButton-contained:active .c5 {
-  color: #fff;
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c4.RcIconButton-contained[data-focus-visible-added],
+.c4.RcIconButton-contained.focus-visible .c5,
+.c4.RcIconButton-contained[data-focus-visible-added] .c5 {
+  color: #fff;
 }
 
-.c4.RcIconButton-contained.focus-visible:active .c5,
-.c4.RcIconButton-contained[data-focus-visible-added]:active .c5 {
+.c4.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c4.RcIconButton-contained:active,
+.c4.RcIconButton-contained:active .c5 {
   color: #fff;
 }
 
@@ -164,20 +172,22 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/AccordionDetails Accordion
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-root:hover {
+  .c4:hover {
     background-color: rgba(102,102,102,0.08);
   }
 
-  .c4.RcIconButton-root:hover .c5 {
+  .c4:hover,
+  .c4:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c4.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c4.RcIconButton-contained:hover,
   .c4.RcIconButton-contained:hover .c5 {
     color: #fff;
   }

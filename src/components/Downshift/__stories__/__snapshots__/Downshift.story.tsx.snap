@@ -18,7 +18,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
   font-size: 24px;
 }
 
-.c5.RcIconButton-root {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -40,26 +40,30 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
   cursor: pointer;
 }
 
-.c5.RcIconButton-root .c6 {
+.c5,
+.c5 .c6 {
   font-size: 20px;
 }
 
-.c5.RcIconButton-root:active .c6 {
+.c5:active,
+.c5:active .c6 {
   color: #666666;
 }
 
-.c5.RcIconButton-root.focus-visible,
-.c5.RcIconButton-root[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.RcIconButton-root.focus-visible:active .c6,
-.c5.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c6,
+.c5[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.RcIconButton-root.focus-visible:after,
-.c5.RcIconButton-root[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -76,6 +80,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
   background-color: rgba(102,102,102,0.12);
 }
 
+.c5.RcIconButton-disabled,
 .c5.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -96,21 +101,24 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c5.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c6,
+.c5.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c5.RcIconButton-contained.focus-visible:active .c6,
-.c5.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c5.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -121,7 +129,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
   opacity: 0;
 }
 
-.c9.RcIconButton-root {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -143,26 +151,30 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
   cursor: pointer;
 }
 
-.c9.RcIconButton-root .c6 {
+.c9,
+.c9 .c6 {
   font-size: 24px;
 }
 
-.c9.RcIconButton-root:active .c6 {
+.c9:active,
+.c9:active .c6 {
   color: #666666;
 }
 
-.c9.RcIconButton-root.focus-visible,
-.c9.RcIconButton-root[data-focus-visible-added] {
+.c9.focus-visible,
+.c9[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c9.RcIconButton-root.focus-visible:active .c6,
-.c9.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c9.focus-visible:active,
+.c9[data-focus-visible-added]:active,
+.c9.focus-visible:active .c6,
+.c9[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c9.RcIconButton-root.focus-visible:after,
-.c9.RcIconButton-root[data-focus-visible-added]:after {
+.c9.focus-visible:after,
+.c9[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -179,6 +191,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
   background-color: rgba(102,102,102,0.12);
 }
 
+.c9.RcIconButton-disabled,
 .c9.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -199,21 +212,24 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
   background-color: #666666;
 }
 
-.c9.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c9.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c9.RcIconButton-contained[data-focus-visible-added],
+.c9.RcIconButton-contained.focus-visible .c6,
+.c9.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c9.RcIconButton-contained.focus-visible:active .c6,
-.c9.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c9.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c9.RcIconButton-contained:active,
+.c9.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -402,40 +418,44 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-root:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c5.RcIconButton-root:hover .c6 {
+  .c5:hover,
+  .c5:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c5.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c5.RcIconButton-contained:hover,
   .c5.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-root:hover {
+  .c9:hover {
     background-color: transparent;
   }
 
-  .c9.RcIconButton-root:hover .c6 {
+  .c9:hover,
+  .c9:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c9.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c9.RcIconButton-contained:hover,
   .c9.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
@@ -590,7 +610,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
   font-size: 24px;
 }
 
-.c5.RcIconButton-root {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -612,26 +632,30 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
   cursor: pointer;
 }
 
-.c5.RcIconButton-root .c6 {
+.c5,
+.c5 .c6 {
   font-size: 20px;
 }
 
-.c5.RcIconButton-root:active .c6 {
+.c5:active,
+.c5:active .c6 {
   color: #666666;
 }
 
-.c5.RcIconButton-root.focus-visible,
-.c5.RcIconButton-root[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.RcIconButton-root.focus-visible:active .c6,
-.c5.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c6,
+.c5[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.RcIconButton-root.focus-visible:after,
-.c5.RcIconButton-root[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -648,6 +672,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
   background-color: rgba(102,102,102,0.12);
 }
 
+.c5.RcIconButton-disabled,
 .c5.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -668,21 +693,24 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c5.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c6,
+.c5.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c5.RcIconButton-contained.focus-visible:active .c6,
-.c5.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c5.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -693,7 +721,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
   opacity: 0;
 }
 
-.c9.RcIconButton-root {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -715,26 +743,30 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
   cursor: pointer;
 }
 
-.c9.RcIconButton-root .c6 {
+.c9,
+.c9 .c6 {
   font-size: 24px;
 }
 
-.c9.RcIconButton-root:active .c6 {
+.c9:active,
+.c9:active .c6 {
   color: #666666;
 }
 
-.c9.RcIconButton-root.focus-visible,
-.c9.RcIconButton-root[data-focus-visible-added] {
+.c9.focus-visible,
+.c9[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c9.RcIconButton-root.focus-visible:active .c6,
-.c9.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c9.focus-visible:active,
+.c9[data-focus-visible-added]:active,
+.c9.focus-visible:active .c6,
+.c9[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c9.RcIconButton-root.focus-visible:after,
-.c9.RcIconButton-root[data-focus-visible-added]:after {
+.c9.focus-visible:after,
+.c9[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -751,6 +783,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
   background-color: rgba(102,102,102,0.12);
 }
 
+.c9.RcIconButton-disabled,
 .c9.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -771,21 +804,24 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
   background-color: #666666;
 }
 
-.c9.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c9.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c9.RcIconButton-contained[data-focus-visible-added],
+.c9.RcIconButton-contained.focus-visible .c6,
+.c9.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c9.RcIconButton-contained.focus-visible:active .c6,
-.c9.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c9.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c9.RcIconButton-contained:active,
+.c9.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -988,40 +1024,44 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-root:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c5.RcIconButton-root:hover .c6 {
+  .c5:hover,
+  .c5:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c5.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c5.RcIconButton-contained:hover,
   .c5.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-root:hover {
+  .c9:hover {
     background-color: transparent;
   }
 
-  .c9.RcIconButton-root:hover .c6 {
+  .c9:hover,
+  .c9:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c9.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c9.RcIconButton-contained:hover,
   .c9.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
@@ -1197,7 +1237,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
   font-size: 24px;
 }
 
-.c5.RcIconButton-root {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1219,26 +1259,30 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
   cursor: pointer;
 }
 
-.c5.RcIconButton-root .c6 {
+.c5,
+.c5 .c6 {
   font-size: 20px;
 }
 
-.c5.RcIconButton-root:active .c6 {
+.c5:active,
+.c5:active .c6 {
   color: #666666;
 }
 
-.c5.RcIconButton-root.focus-visible,
-.c5.RcIconButton-root[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.RcIconButton-root.focus-visible:active .c6,
-.c5.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c6,
+.c5[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.RcIconButton-root.focus-visible:after,
-.c5.RcIconButton-root[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -1255,6 +1299,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
   background-color: rgba(102,102,102,0.12);
 }
 
+.c5.RcIconButton-disabled,
 .c5.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -1275,21 +1320,24 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c5.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c6,
+.c5.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c5.RcIconButton-contained.focus-visible:active .c6,
-.c5.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c5.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -1300,7 +1348,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
   opacity: 0;
 }
 
-.c9.RcIconButton-root {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1322,26 +1370,30 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
   cursor: pointer;
 }
 
-.c9.RcIconButton-root .c6 {
+.c9,
+.c9 .c6 {
   font-size: 24px;
 }
 
-.c9.RcIconButton-root:active .c6 {
+.c9:active,
+.c9:active .c6 {
   color: #666666;
 }
 
-.c9.RcIconButton-root.focus-visible,
-.c9.RcIconButton-root[data-focus-visible-added] {
+.c9.focus-visible,
+.c9[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c9.RcIconButton-root.focus-visible:active .c6,
-.c9.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c9.focus-visible:active,
+.c9[data-focus-visible-added]:active,
+.c9.focus-visible:active .c6,
+.c9[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c9.RcIconButton-root.focus-visible:after,
-.c9.RcIconButton-root[data-focus-visible-added]:after {
+.c9.focus-visible:after,
+.c9[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -1358,6 +1410,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
   background-color: rgba(102,102,102,0.12);
 }
 
+.c9.RcIconButton-disabled,
 .c9.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -1378,21 +1431,24 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
   background-color: #666666;
 }
 
-.c9.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c9.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c9.RcIconButton-contained[data-focus-visible-added],
+.c9.RcIconButton-contained.focus-visible .c6,
+.c9.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c9.RcIconButton-contained.focus-visible:active .c6,
-.c9.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c9.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c9.RcIconButton-contained:active,
+.c9.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -1581,40 +1637,44 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-root:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c5.RcIconButton-root:hover .c6 {
+  .c5:hover,
+  .c5:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c5.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c5.RcIconButton-contained:hover,
   .c5.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-root:hover {
+  .c9:hover {
     background-color: transparent;
   }
 
-  .c9.RcIconButton-root:hover .c6 {
+  .c9:hover,
+  .c9:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c9.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c9.RcIconButton-contained:hover,
   .c9.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
@@ -1770,7 +1830,7 @@ Array [
   font-size: 24px;
 }
 
-.c5.RcIconButton-root {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1792,26 +1852,30 @@ Array [
   cursor: pointer;
 }
 
-.c5.RcIconButton-root .c6 {
+.c5,
+.c5 .c6 {
   font-size: 24px;
 }
 
-.c5.RcIconButton-root:active .c6 {
+.c5:active,
+.c5:active .c6 {
   color: #666666;
 }
 
-.c5.RcIconButton-root.focus-visible,
-.c5.RcIconButton-root[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.RcIconButton-root.focus-visible:active .c6,
-.c5.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c6,
+.c5[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.RcIconButton-root.focus-visible:after,
-.c5.RcIconButton-root[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -1828,6 +1892,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c5.RcIconButton-disabled,
 .c5.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -1848,21 +1913,24 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c5.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c6,
+.c5.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c5.RcIconButton-contained.focus-visible:active .c6,
-.c5.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c5.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -2051,20 +2119,22 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-root:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c5.RcIconButton-root:hover .c6 {
+  .c5:hover,
+  .c5:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c5.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c5.RcIconButton-contained:hover,
   .c5.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
@@ -2254,7 +2324,7 @@ Array [
   font-size: 24px;
 }
 
-.c5.RcIconButton-root {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2276,26 +2346,30 @@ Array [
   cursor: pointer;
 }
 
-.c5.RcIconButton-root .c6 {
+.c5,
+.c5 .c6 {
   font-size: 24px;
 }
 
-.c5.RcIconButton-root:active .c6 {
+.c5:active,
+.c5:active .c6 {
   color: #666666;
 }
 
-.c5.RcIconButton-root.focus-visible,
-.c5.RcIconButton-root[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.RcIconButton-root.focus-visible:active .c6,
-.c5.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c6,
+.c5[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.RcIconButton-root.focus-visible:after,
-.c5.RcIconButton-root[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -2312,6 +2386,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c5.RcIconButton-disabled,
 .c5.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -2332,21 +2407,24 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c5.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c6,
+.c5.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c5.RcIconButton-contained.focus-visible:active .c6,
-.c5.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c5.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -2535,20 +2613,22 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-root:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c5.RcIconButton-root:hover .c6 {
+  .c5:hover,
+  .c5:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c5.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c5.RcIconButton-contained:hover,
   .c5.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
@@ -2793,7 +2873,7 @@ Array [
   font-size: 24px;
 }
 
-.c6.RcIconButton-root {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2815,26 +2895,30 @@ Array [
   cursor: pointer;
 }
 
-.c6.RcIconButton-root .c7 {
+.c6,
+.c6 .c7 {
   font-size: 20px;
 }
 
-.c6.RcIconButton-root:active .c7 {
+.c6:active,
+.c6:active .c7 {
   color: #666666;
 }
 
-.c6.RcIconButton-root.focus-visible,
-.c6.RcIconButton-root[data-focus-visible-added] {
+.c6.focus-visible,
+.c6[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c6.RcIconButton-root.focus-visible:active .c7,
-.c6.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c6.focus-visible:active,
+.c6[data-focus-visible-added]:active,
+.c6.focus-visible:active .c7,
+.c6[data-focus-visible-added]:active .c7 {
   color: rgba(102,102,102,0.88);
 }
 
-.c6.RcIconButton-root.focus-visible:after,
-.c6.RcIconButton-root[data-focus-visible-added]:after {
+.c6.focus-visible:after,
+.c6[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -2851,6 +2935,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c6.RcIconButton-disabled,
 .c6.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
@@ -2871,21 +2956,24 @@ Array [
   background-color: #666666;
 }
 
-.c6.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c6.RcIconButton-contained:active .c7 {
-  color: #fff;
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c6.RcIconButton-contained[data-focus-visible-added],
+.c6.RcIconButton-contained.focus-visible .c7,
+.c6.RcIconButton-contained[data-focus-visible-added] .c7 {
+  color: #fff;
 }
 
-.c6.RcIconButton-contained.focus-visible:active .c7,
-.c6.RcIconButton-contained[data-focus-visible-added]:active .c7 {
+.c6.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c6.RcIconButton-contained:active,
+.c6.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
@@ -2896,7 +2984,7 @@ Array [
   opacity: 0;
 }
 
-.c11.RcIconButton-root {
+.c11 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2918,26 +3006,30 @@ Array [
   cursor: pointer;
 }
 
-.c11.RcIconButton-root .c7 {
+.c11,
+.c11 .c7 {
   font-size: 24px;
 }
 
-.c11.RcIconButton-root:active .c7 {
+.c11:active,
+.c11:active .c7 {
   color: #666666;
 }
 
-.c11.RcIconButton-root.focus-visible,
-.c11.RcIconButton-root[data-focus-visible-added] {
+.c11.focus-visible,
+.c11[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c11.RcIconButton-root.focus-visible:active .c7,
-.c11.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c11.focus-visible:active,
+.c11[data-focus-visible-added]:active,
+.c11.focus-visible:active .c7,
+.c11[data-focus-visible-added]:active .c7 {
   color: rgba(102,102,102,0.88);
 }
 
-.c11.RcIconButton-root.focus-visible:after,
-.c11.RcIconButton-root[data-focus-visible-added]:after {
+.c11.focus-visible:after,
+.c11[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -2954,6 +3046,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c11.RcIconButton-disabled,
 .c11.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
@@ -2974,21 +3067,24 @@ Array [
   background-color: #666666;
 }
 
-.c11.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c11.RcIconButton-contained:active .c7 {
-  color: #fff;
+.c11.RcIconButton-contained.focus-visible,
+.c11.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c11.RcIconButton-contained[data-focus-visible-added],
+.c11.RcIconButton-contained.focus-visible .c7,
+.c11.RcIconButton-contained[data-focus-visible-added] .c7 {
+  color: #fff;
 }
 
-.c11.RcIconButton-contained.focus-visible:active .c7,
-.c11.RcIconButton-contained[data-focus-visible-added]:active .c7 {
+.c11.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c11.RcIconButton-contained:active,
+.c11.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
@@ -2999,81 +3095,105 @@ Array [
   opacity: 0;
 }
 
-.c12.RcIconButton-root .c7 {
+.c12,
+.c12 .c7 {
   font-size: 20px;
 }
 
-.c12.RcIconButton-root:active .c7 {
+.c12:active,
+.c12:active .c7 {
   color: #666666;
 }
 
-.c12.RcIconButton-root.focus-visible:active .c7,
-.c12.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c12.focus-visible:active,
+.c12[data-focus-visible-added]:active,
+.c12.focus-visible:active .c7,
+.c12[data-focus-visible-added]:active .c7 {
   color: rgba(102,102,102,0.88);
 }
 
+.c12.RcIconButton-disabled,
 .c12.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
 
+.c12.RcIconButton-contained.focus-visible,
+.c12.RcIconButton-contained[data-focus-visible-added],
+.c12.RcIconButton-contained.focus-visible .c7,
+.c12.RcIconButton-contained[data-focus-visible-added] .c7 {
+  color: #fff;
+}
+
+.c12.RcIconButton-contained:active,
 .c12.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
-.c12.RcIconButton-contained.focus-visible:active .c7,
-.c12.RcIconButton-contained[data-focus-visible-added]:active .c7 {
-  color: #fff;
-}
-
-.c13.RcIconButton-root .c7 {
+.c13,
+.c13 .c7 {
   font-size: 24px;
 }
 
-.c13.RcIconButton-root:active .c7 {
+.c13:active,
+.c13:active .c7 {
   color: #666666;
 }
 
-.c13.RcIconButton-root.focus-visible:active .c7,
-.c13.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c13.focus-visible:active,
+.c13[data-focus-visible-added]:active,
+.c13.focus-visible:active .c7,
+.c13[data-focus-visible-added]:active .c7 {
   color: rgba(102,102,102,0.88);
 }
 
+.c13.RcIconButton-disabled,
 .c13.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
 
+.c13.RcIconButton-contained.focus-visible,
+.c13.RcIconButton-contained[data-focus-visible-added],
+.c13.RcIconButton-contained.focus-visible .c7,
+.c13.RcIconButton-contained[data-focus-visible-added] .c7 {
+  color: #fff;
+}
+
+.c13.RcIconButton-contained:active,
 .c13.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
-.c13.RcIconButton-contained.focus-visible:active .c7,
-.c13.RcIconButton-contained[data-focus-visible-added]:active .c7 {
-  color: #fff;
-}
-
-.c14.RcIconButton-root .c7 {
+.c14,
+.c14 .c7 {
   font-size: 24px;
 }
 
-.c14.RcIconButton-root:active .c7 {
+.c14:active,
+.c14:active .c7 {
   color: #BE3933;
 }
 
-.c14.RcIconButton-root.focus-visible:active .c7,
-.c14.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c14.focus-visible:active,
+.c14[data-focus-visible-added]:active,
+.c14.focus-visible:active .c7,
+.c14[data-focus-visible-added]:active .c7 {
   color: rgba(190,57,51,0.88);
 }
 
+.c14.RcIconButton-disabled,
 .c14.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
 
-.c14.RcIconButton-contained:active .c7 {
+.c14.RcIconButton-contained.focus-visible,
+.c14.RcIconButton-contained[data-focus-visible-added],
+.c14.RcIconButton-contained.focus-visible .c7,
+.c14.RcIconButton-contained[data-focus-visible-added] .c7 {
   color: #fff;
 }
 
-.c14.RcIconButton-contained.focus-visible:active .c7,
-.c14.RcIconButton-contained[data-focus-visible-added]:active .c7 {
+.c14.RcIconButton-contained:active,
+.c14.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
@@ -3321,76 +3441,86 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-root:hover {
+  .c6:hover {
     background-color: transparent;
   }
 
-  .c6.RcIconButton-root:hover .c7 {
+  .c6:hover,
+  .c6:hover .c7 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c6.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c6.RcIconButton-contained:hover,
   .c6.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-root:hover {
+  .c11:hover {
     background-color: transparent;
   }
 
-  .c11.RcIconButton-root:hover .c7 {
+  .c11:hover,
+  .c11:hover .c7 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c11.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c11.RcIconButton-contained:hover,
   .c11.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-root:hover .c7 {
+  .c12:hover,
+  .c12:hover .c7 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
+  .c12.RcIconButton-contained:hover,
   .c12.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcIconButton-root:hover .c7 {
+  .c13:hover,
+  .c13:hover .c7 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
+  .c13.RcIconButton-contained:hover,
   .c13.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c14.RcIconButton-root:hover .c7 {
+  .c14:hover,
+  .c14:hover .c7 {
     color: rgba(190,57,51,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
+  .c14.RcIconButton-contained:hover,
   .c14.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
@@ -3735,7 +3865,7 @@ Array [
   font-size: 24px;
 }
 
-.c11.RcIconButton-root {
+.c11 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3757,26 +3887,30 @@ Array [
   cursor: pointer;
 }
 
-.c11.RcIconButton-root .c7 {
+.c11,
+.c11 .c7 {
   font-size: 20px;
 }
 
-.c11.RcIconButton-root:active .c7 {
+.c11:active,
+.c11:active .c7 {
   color: #666666;
 }
 
-.c11.RcIconButton-root.focus-visible,
-.c11.RcIconButton-root[data-focus-visible-added] {
+.c11.focus-visible,
+.c11[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c11.RcIconButton-root.focus-visible:active .c7,
-.c11.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c11.focus-visible:active,
+.c11[data-focus-visible-added]:active,
+.c11.focus-visible:active .c7,
+.c11[data-focus-visible-added]:active .c7 {
   color: rgba(102,102,102,0.88);
 }
 
-.c11.RcIconButton-root.focus-visible:after,
-.c11.RcIconButton-root[data-focus-visible-added]:after {
+.c11.focus-visible:after,
+.c11[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -3793,6 +3927,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c11.RcIconButton-disabled,
 .c11.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
@@ -3813,21 +3948,24 @@ Array [
   background-color: #666666;
 }
 
-.c11.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c11.RcIconButton-contained:active .c7 {
-  color: #fff;
+.c11.RcIconButton-contained.focus-visible,
+.c11.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c11.RcIconButton-contained[data-focus-visible-added],
+.c11.RcIconButton-contained.focus-visible .c7,
+.c11.RcIconButton-contained[data-focus-visible-added] .c7 {
+  color: #fff;
 }
 
-.c11.RcIconButton-contained.focus-visible:active .c7,
-.c11.RcIconButton-contained[data-focus-visible-added]:active .c7 {
+.c11.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c11.RcIconButton-contained:active,
+.c11.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
@@ -3838,33 +3976,41 @@ Array [
   opacity: 0;
 }
 
-.c13.RcIconButton-root .c7 {
+.c13,
+.c13 .c7 {
   font-size: 24px;
 }
 
-.c13.RcIconButton-root:active .c7 {
+.c13:active,
+.c13:active .c7 {
   color: #666666;
 }
 
-.c13.RcIconButton-root.focus-visible:active .c7,
-.c13.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c13.focus-visible:active,
+.c13[data-focus-visible-added]:active,
+.c13.focus-visible:active .c7,
+.c13[data-focus-visible-added]:active .c7 {
   color: rgba(102,102,102,0.88);
 }
 
+.c13.RcIconButton-disabled,
 .c13.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
 
+.c13.RcIconButton-contained.focus-visible,
+.c13.RcIconButton-contained[data-focus-visible-added],
+.c13.RcIconButton-contained.focus-visible .c7,
+.c13.RcIconButton-contained[data-focus-visible-added] .c7 {
+  color: #fff;
+}
+
+.c13.RcIconButton-contained:active,
 .c13.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
-.c13.RcIconButton-contained.focus-visible:active .c7,
-.c13.RcIconButton-contained[data-focus-visible-added]:active .c7 {
-  color: #fff;
-}
-
-.c6.RcIconButton-root {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3886,26 +4032,30 @@ Array [
   cursor: default;
 }
 
-.c6.RcIconButton-root .c7 {
+.c6,
+.c6 .c7 {
   font-size: 20px;
 }
 
-.c6.RcIconButton-root:active .c7 {
+.c6:active,
+.c6:active .c7 {
   color: #666666;
 }
 
-.c6.RcIconButton-root.focus-visible,
-.c6.RcIconButton-root[data-focus-visible-added] {
+.c6.focus-visible,
+.c6[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c6.RcIconButton-root.focus-visible:active .c7,
-.c6.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c6.focus-visible:active,
+.c6[data-focus-visible-added]:active,
+.c6.focus-visible:active .c7,
+.c6[data-focus-visible-added]:active .c7 {
   color: rgba(102,102,102,0.88);
 }
 
-.c6.RcIconButton-root.focus-visible:after,
-.c6.RcIconButton-root[data-focus-visible-added]:after {
+.c6.focus-visible:after,
+.c6[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -3922,6 +4072,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c6.RcIconButton-disabled,
 .c6.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
@@ -3942,21 +4093,24 @@ Array [
   background-color: #666666;
 }
 
-.c6.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c6.RcIconButton-contained:active .c7 {
-  color: #fff;
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c6.RcIconButton-contained[data-focus-visible-added],
+.c6.RcIconButton-contained.focus-visible .c7,
+.c6.RcIconButton-contained[data-focus-visible-added] .c7 {
+  color: #fff;
 }
 
-.c6.RcIconButton-contained.focus-visible:active .c7,
-.c6.RcIconButton-contained[data-focus-visible-added]:active .c7 {
+.c6.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c6.RcIconButton-contained:active,
+.c6.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
@@ -3967,7 +4121,7 @@ Array [
   opacity: 0;
 }
 
-.c12.RcIconButton-root {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3989,26 +4143,30 @@ Array [
   cursor: default;
 }
 
-.c12.RcIconButton-root .c7 {
+.c12,
+.c12 .c7 {
   font-size: 24px;
 }
 
-.c12.RcIconButton-root:active .c7 {
+.c12:active,
+.c12:active .c7 {
   color: #666666;
 }
 
-.c12.RcIconButton-root.focus-visible,
-.c12.RcIconButton-root[data-focus-visible-added] {
+.c12.focus-visible,
+.c12[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c12.RcIconButton-root.focus-visible:active .c7,
-.c12.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c12.focus-visible:active,
+.c12[data-focus-visible-added]:active,
+.c12.focus-visible:active .c7,
+.c12[data-focus-visible-added]:active .c7 {
   color: rgba(102,102,102,0.88);
 }
 
-.c12.RcIconButton-root.focus-visible:after,
-.c12.RcIconButton-root[data-focus-visible-added]:after {
+.c12.focus-visible:after,
+.c12[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -4025,6 +4183,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c12.RcIconButton-disabled,
 .c12.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
@@ -4045,21 +4204,24 @@ Array [
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c12.RcIconButton-contained:active .c7 {
-  color: #fff;
+.c12.RcIconButton-contained.focus-visible,
+.c12.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c12.RcIconButton-contained[data-focus-visible-added],
+.c12.RcIconButton-contained.focus-visible .c7,
+.c12.RcIconButton-contained[data-focus-visible-added] .c7 {
+  color: #fff;
 }
 
-.c12.RcIconButton-contained.focus-visible:active .c7,
-.c12.RcIconButton-contained[data-focus-visible-added]:active .c7 {
+.c12.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c12.RcIconButton-contained:active,
+.c12.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
@@ -4070,29 +4232,37 @@ Array [
   opacity: 0;
 }
 
-.c14.RcIconButton-root .c7 {
+.c14,
+.c14 .c7 {
   font-size: 24px;
 }
 
-.c14.RcIconButton-root:active .c7 {
+.c14:active,
+.c14:active .c7 {
   color: #BE3933;
 }
 
-.c14.RcIconButton-root.focus-visible:active .c7,
-.c14.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c14.focus-visible:active,
+.c14[data-focus-visible-added]:active,
+.c14.focus-visible:active .c7,
+.c14[data-focus-visible-added]:active .c7 {
   color: rgba(190,57,51,0.88);
 }
 
+.c14.RcIconButton-disabled,
 .c14.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
 
-.c14.RcIconButton-contained:active .c7 {
+.c14.RcIconButton-contained.focus-visible,
+.c14.RcIconButton-contained[data-focus-visible-added],
+.c14.RcIconButton-contained.focus-visible .c7,
+.c14.RcIconButton-contained[data-focus-visible-added] .c7 {
   color: #fff;
 }
 
-.c14.RcIconButton-contained.focus-visible:active .c7,
-.c14.RcIconButton-contained[data-focus-visible-added]:active .c7 {
+.c14.RcIconButton-contained:active,
+.c14.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
@@ -4340,84 +4510,94 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-root:hover {
+  .c11:hover {
     background-color: transparent;
   }
 
-  .c11.RcIconButton-root:hover .c7 {
+  .c11:hover,
+  .c11:hover .c7 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c11.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c11.RcIconButton-contained:hover,
   .c11.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcIconButton-root:hover .c7 {
+  .c13:hover,
+  .c13:hover .c7 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
+  .c13.RcIconButton-contained:hover,
   .c13.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-root:hover {
+  .c6:hover {
     background-color: transparent;
   }
 
-  .c6.RcIconButton-root:hover .c7 {
+  .c6:hover,
+  .c6:hover .c7 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c6.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c6.RcIconButton-contained:hover,
   .c6.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-root:hover {
+  .c12:hover {
     background-color: transparent;
   }
 
-  .c12.RcIconButton-root:hover .c7 {
+  .c12:hover,
+  .c12:hover .c7 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c12.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c12.RcIconButton-contained:hover,
   .c12.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c14.RcIconButton-root:hover .c7 {
+  .c14:hover,
+  .c14:hover .c7 {
     color: rgba(190,57,51,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
+  .c14.RcIconButton-contained:hover,
   .c14.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
@@ -4713,7 +4893,7 @@ Array [
   font-size: 24px;
 }
 
-.c6.RcIconButton-root {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4735,26 +4915,30 @@ Array [
   cursor: pointer;
 }
 
-.c6.RcIconButton-root .c7 {
+.c6,
+.c6 .c7 {
   font-size: 20px;
 }
 
-.c6.RcIconButton-root:active .c7 {
+.c6:active,
+.c6:active .c7 {
   color: #666666;
 }
 
-.c6.RcIconButton-root.focus-visible,
-.c6.RcIconButton-root[data-focus-visible-added] {
+.c6.focus-visible,
+.c6[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c6.RcIconButton-root.focus-visible:active .c7,
-.c6.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c6.focus-visible:active,
+.c6[data-focus-visible-added]:active,
+.c6.focus-visible:active .c7,
+.c6[data-focus-visible-added]:active .c7 {
   color: rgba(102,102,102,0.88);
 }
 
-.c6.RcIconButton-root.focus-visible:after,
-.c6.RcIconButton-root[data-focus-visible-added]:after {
+.c6.focus-visible:after,
+.c6[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -4771,6 +4955,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c6.RcIconButton-disabled,
 .c6.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
@@ -4791,21 +4976,24 @@ Array [
   background-color: #666666;
 }
 
-.c6.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c6.RcIconButton-contained:active .c7 {
-  color: #fff;
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c6.RcIconButton-contained[data-focus-visible-added],
+.c6.RcIconButton-contained.focus-visible .c7,
+.c6.RcIconButton-contained[data-focus-visible-added] .c7 {
+  color: #fff;
 }
 
-.c6.RcIconButton-contained.focus-visible:active .c7,
-.c6.RcIconButton-contained[data-focus-visible-added]:active .c7 {
+.c6.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c6.RcIconButton-contained:active,
+.c6.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
@@ -4816,85 +5004,109 @@ Array [
   opacity: 0;
 }
 
-.c12.RcIconButton-root .c7 {
+.c12,
+.c12 .c7 {
   font-size: 24px;
 }
 
-.c12.RcIconButton-root:active .c7 {
+.c12:active,
+.c12:active .c7 {
   color: #666666;
 }
 
-.c12.RcIconButton-root.focus-visible:active .c7,
-.c12.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c12.focus-visible:active,
+.c12[data-focus-visible-added]:active,
+.c12.focus-visible:active .c7,
+.c12[data-focus-visible-added]:active .c7 {
   color: rgba(102,102,102,0.88);
 }
 
+.c12.RcIconButton-disabled,
 .c12.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
 
+.c12.RcIconButton-contained.focus-visible,
+.c12.RcIconButton-contained[data-focus-visible-added],
+.c12.RcIconButton-contained.focus-visible .c7,
+.c12.RcIconButton-contained[data-focus-visible-added] .c7 {
+  color: #fff;
+}
+
+.c12.RcIconButton-contained:active,
 .c12.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
-.c12.RcIconButton-contained.focus-visible:active .c7,
-.c12.RcIconButton-contained[data-focus-visible-added]:active .c7 {
-  color: #fff;
-}
-
-.c13.RcIconButton-root .c7 {
+.c13,
+.c13 .c7 {
   font-size: 20px;
 }
 
-.c13.RcIconButton-root:active .c7 {
+.c13:active,
+.c13:active .c7 {
   color: #666666;
 }
 
-.c13.RcIconButton-root.focus-visible:active .c7,
-.c13.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c13.focus-visible:active,
+.c13[data-focus-visible-added]:active,
+.c13.focus-visible:active .c7,
+.c13[data-focus-visible-added]:active .c7 {
   color: rgba(102,102,102,0.88);
 }
 
+.c13.RcIconButton-disabled,
 .c13.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
 
+.c13.RcIconButton-contained.focus-visible,
+.c13.RcIconButton-contained[data-focus-visible-added],
+.c13.RcIconButton-contained.focus-visible .c7,
+.c13.RcIconButton-contained[data-focus-visible-added] .c7 {
+  color: #fff;
+}
+
+.c13.RcIconButton-contained:active,
 .c13.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
-.c13.RcIconButton-contained.focus-visible:active .c7,
-.c13.RcIconButton-contained[data-focus-visible-added]:active .c7 {
-  color: #fff;
-}
-
-.c14.RcIconButton-root .c7 {
+.c14,
+.c14 .c7 {
   font-size: 24px;
 }
 
-.c14.RcIconButton-root:active .c7 {
+.c14:active,
+.c14:active .c7 {
   color: #666666;
 }
 
-.c14.RcIconButton-root.focus-visible:active .c7,
-.c14.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c14.focus-visible:active,
+.c14[data-focus-visible-added]:active,
+.c14.focus-visible:active .c7,
+.c14[data-focus-visible-added]:active .c7 {
   color: rgba(102,102,102,0.88);
 }
 
+.c14.RcIconButton-disabled,
 .c14.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
 
+.c14.RcIconButton-contained.focus-visible,
+.c14.RcIconButton-contained[data-focus-visible-added],
+.c14.RcIconButton-contained.focus-visible .c7,
+.c14.RcIconButton-contained[data-focus-visible-added] .c7 {
+  color: #fff;
+}
+
+.c14.RcIconButton-contained:active,
 .c14.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
-.c14.RcIconButton-contained.focus-visible:active .c7,
-.c14.RcIconButton-contained[data-focus-visible-added]:active .c7 {
-  color: #fff;
-}
-
-.c11.RcIconButton-root {
+.c11 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4916,26 +5128,30 @@ Array [
   cursor: pointer;
 }
 
-.c11.RcIconButton-root .c7 {
+.c11,
+.c11 .c7 {
   font-size: 24px;
 }
 
-.c11.RcIconButton-root:active .c7 {
+.c11:active,
+.c11:active .c7 {
   color: #BE3933;
 }
 
-.c11.RcIconButton-root.focus-visible,
-.c11.RcIconButton-root[data-focus-visible-added] {
+.c11.focus-visible,
+.c11[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c11.RcIconButton-root.focus-visible:active .c7,
-.c11.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c11.focus-visible:active,
+.c11[data-focus-visible-added]:active,
+.c11.focus-visible:active .c7,
+.c11[data-focus-visible-added]:active .c7 {
   color: rgba(190,57,51,0.88);
 }
 
-.c11.RcIconButton-root.focus-visible:after,
-.c11.RcIconButton-root[data-focus-visible-added]:after {
+.c11.focus-visible:after,
+.c11[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -4952,6 +5168,7 @@ Array [
   background-color: rgba(190,57,51,0.12);
 }
 
+.c11.RcIconButton-disabled,
 .c11.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
@@ -4972,21 +5189,24 @@ Array [
   background-color: #BE3933;
 }
 
-.c11.RcIconButton-contained:active {
-  background-color: rgb(171,51,45);
-}
-
-.c11.RcIconButton-contained:active .c7 {
-  color: #fff;
+.c11.RcIconButton-contained.focus-visible,
+.c11.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(190,57,51,0.84);
 }
 
 .c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(171,51,45);
+.c11.RcIconButton-contained[data-focus-visible-added],
+.c11.RcIconButton-contained.focus-visible .c7,
+.c11.RcIconButton-contained[data-focus-visible-added] .c7 {
+  color: #fff;
 }
 
-.c11.RcIconButton-contained.focus-visible:active .c7,
-.c11.RcIconButton-contained[data-focus-visible-added]:active .c7 {
+.c11.RcIconButton-contained:active {
+  background-color: rgba(190,57,51,0.76);
+}
+
+.c11.RcIconButton-contained:active,
+.c11.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
@@ -5241,76 +5461,86 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-root:hover {
+  .c6:hover {
     background-color: transparent;
   }
 
-  .c6.RcIconButton-root:hover .c7 {
+  .c6:hover,
+  .c6:hover .c7 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c6.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c6.RcIconButton-contained:hover,
   .c6.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-root:hover .c7 {
+  .c12:hover,
+  .c12:hover .c7 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
+  .c12.RcIconButton-contained:hover,
   .c12.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcIconButton-root:hover .c7 {
+  .c13:hover,
+  .c13:hover .c7 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
+  .c13.RcIconButton-contained:hover,
   .c13.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c14.RcIconButton-root:hover .c7 {
+  .c14:hover,
+  .c14:hover .c7 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
+  .c14.RcIconButton-contained:hover,
   .c14.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-root:hover {
+  .c11:hover {
     background-color: transparent;
   }
 
-  .c11.RcIconButton-root:hover .c7 {
+  .c11:hover,
+  .c11:hover .c7 {
     color: rgba(190,57,51,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c11.RcIconButton-contained:hover {
-    background-color: rgb(171,51,45);
+    background-color: rgba(190,57,51,0.92);
   }
 
+  .c11.RcIconButton-contained:hover,
   .c11.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
@@ -6060,7 +6290,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
   font-size: 24px;
 }
 
-.c5.RcIconButton-root {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6082,26 +6312,30 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
   cursor: pointer;
 }
 
-.c5.RcIconButton-root .c6 {
+.c5,
+.c5 .c6 {
   font-size: 20px;
 }
 
-.c5.RcIconButton-root:active .c6 {
+.c5:active,
+.c5:active .c6 {
   color: #666666;
 }
 
-.c5.RcIconButton-root.focus-visible,
-.c5.RcIconButton-root[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.RcIconButton-root.focus-visible:active .c6,
-.c5.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c6,
+.c5[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.RcIconButton-root.focus-visible:after,
-.c5.RcIconButton-root[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -6118,6 +6352,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
   background-color: rgba(102,102,102,0.12);
 }
 
+.c5.RcIconButton-disabled,
 .c5.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -6138,21 +6373,24 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c5.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c6,
+.c5.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c5.RcIconButton-contained.focus-visible:active .c6,
-.c5.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c5.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -6163,7 +6401,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
   opacity: 0;
 }
 
-.c9.RcIconButton-root {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6185,26 +6423,30 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
   cursor: pointer;
 }
 
-.c9.RcIconButton-root .c6 {
+.c9,
+.c9 .c6 {
   font-size: 24px;
 }
 
-.c9.RcIconButton-root:active .c6 {
+.c9:active,
+.c9:active .c6 {
   color: #666666;
 }
 
-.c9.RcIconButton-root.focus-visible,
-.c9.RcIconButton-root[data-focus-visible-added] {
+.c9.focus-visible,
+.c9[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c9.RcIconButton-root.focus-visible:active .c6,
-.c9.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c9.focus-visible:active,
+.c9[data-focus-visible-added]:active,
+.c9.focus-visible:active .c6,
+.c9[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c9.RcIconButton-root.focus-visible:after,
-.c9.RcIconButton-root[data-focus-visible-added]:after {
+.c9.focus-visible:after,
+.c9[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -6221,6 +6463,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
   background-color: rgba(102,102,102,0.12);
 }
 
+.c9.RcIconButton-disabled,
 .c9.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -6241,21 +6484,24 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
   background-color: #666666;
 }
 
-.c9.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c9.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c9.RcIconButton-contained[data-focus-visible-added],
+.c9.RcIconButton-contained.focus-visible .c6,
+.c9.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c9.RcIconButton-contained.focus-visible:active .c6,
-.c9.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c9.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c9.RcIconButton-contained:active,
+.c9.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -6444,40 +6690,44 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-root:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c5.RcIconButton-root:hover .c6 {
+  .c5:hover,
+  .c5:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c5.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c5.RcIconButton-contained:hover,
   .c5.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-root:hover {
+  .c9:hover {
     background-color: transparent;
   }
 
-  .c9.RcIconButton-root:hover .c6 {
+  .c9:hover,
+  .c9:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c9.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c9.RcIconButton-contained:hover,
   .c9.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
@@ -6668,7 +6918,7 @@ Array [
   font-size: 24px;
 }
 
-.c5.RcIconButton-root {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6690,26 +6940,30 @@ Array [
   cursor: pointer;
 }
 
-.c5.RcIconButton-root .c6 {
+.c5,
+.c5 .c6 {
   font-size: 20px;
 }
 
-.c5.RcIconButton-root:active .c6 {
+.c5:active,
+.c5:active .c6 {
   color: #666666;
 }
 
-.c5.RcIconButton-root.focus-visible,
-.c5.RcIconButton-root[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.RcIconButton-root.focus-visible:active .c6,
-.c5.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c6,
+.c5[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.RcIconButton-root.focus-visible:after,
-.c5.RcIconButton-root[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -6726,6 +6980,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c5.RcIconButton-disabled,
 .c5.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -6746,21 +7001,24 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c5.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c6,
+.c5.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c5.RcIconButton-contained.focus-visible:active .c6,
-.c5.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c5.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -6771,7 +7029,7 @@ Array [
   opacity: 0;
 }
 
-.c9.RcIconButton-root {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6793,26 +7051,30 @@ Array [
   cursor: pointer;
 }
 
-.c9.RcIconButton-root .c6 {
+.c9,
+.c9 .c6 {
   font-size: 24px;
 }
 
-.c9.RcIconButton-root:active .c6 {
+.c9:active,
+.c9:active .c6 {
   color: #666666;
 }
 
-.c9.RcIconButton-root.focus-visible,
-.c9.RcIconButton-root[data-focus-visible-added] {
+.c9.focus-visible,
+.c9[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c9.RcIconButton-root.focus-visible:active .c6,
-.c9.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c9.focus-visible:active,
+.c9[data-focus-visible-added]:active,
+.c9.focus-visible:active .c6,
+.c9[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c9.RcIconButton-root.focus-visible:after,
-.c9.RcIconButton-root[data-focus-visible-added]:after {
+.c9.focus-visible:after,
+.c9[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -6829,6 +7091,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c9.RcIconButton-disabled,
 .c9.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -6849,21 +7112,24 @@ Array [
   background-color: #666666;
 }
 
-.c9.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c9.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c9.RcIconButton-contained[data-focus-visible-added],
+.c9.RcIconButton-contained.focus-visible .c6,
+.c9.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c9.RcIconButton-contained.focus-visible:active .c6,
-.c9.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c9.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c9.RcIconButton-contained:active,
+.c9.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -7052,40 +7318,44 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-root:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c5.RcIconButton-root:hover .c6 {
+  .c5:hover,
+  .c5:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c5.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c5.RcIconButton-contained:hover,
   .c5.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-root:hover {
+  .c9:hover {
     background-color: transparent;
   }
 
-  .c9.RcIconButton-root:hover .c6 {
+  .c9:hover,
+  .c9:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c9.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c9.RcIconButton-contained:hover,
   .c9.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
@@ -7277,7 +7547,7 @@ Array [
   font-size: 24px;
 }
 
-.c5.RcIconButton-root {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7299,26 +7569,30 @@ Array [
   cursor: pointer;
 }
 
-.c5.RcIconButton-root .c6 {
+.c5,
+.c5 .c6 {
   font-size: 20px;
 }
 
-.c5.RcIconButton-root:active .c6 {
+.c5:active,
+.c5:active .c6 {
   color: #666666;
 }
 
-.c5.RcIconButton-root.focus-visible,
-.c5.RcIconButton-root[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.RcIconButton-root.focus-visible:active .c6,
-.c5.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c6,
+.c5[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.RcIconButton-root.focus-visible:after,
-.c5.RcIconButton-root[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -7335,6 +7609,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c5.RcIconButton-disabled,
 .c5.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -7355,21 +7630,24 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c5.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c6,
+.c5.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c5.RcIconButton-contained.focus-visible:active .c6,
-.c5.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c5.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -7380,7 +7658,7 @@ Array [
   opacity: 0;
 }
 
-.c9.RcIconButton-root {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7402,26 +7680,30 @@ Array [
   cursor: pointer;
 }
 
-.c9.RcIconButton-root .c6 {
+.c9,
+.c9 .c6 {
   font-size: 24px;
 }
 
-.c9.RcIconButton-root:active .c6 {
+.c9:active,
+.c9:active .c6 {
   color: #666666;
 }
 
-.c9.RcIconButton-root.focus-visible,
-.c9.RcIconButton-root[data-focus-visible-added] {
+.c9.focus-visible,
+.c9[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c9.RcIconButton-root.focus-visible:active .c6,
-.c9.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c9.focus-visible:active,
+.c9[data-focus-visible-added]:active,
+.c9.focus-visible:active .c6,
+.c9[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c9.RcIconButton-root.focus-visible:after,
-.c9.RcIconButton-root[data-focus-visible-added]:after {
+.c9.focus-visible:after,
+.c9[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -7438,6 +7720,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c9.RcIconButton-disabled,
 .c9.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -7458,21 +7741,24 @@ Array [
   background-color: #666666;
 }
 
-.c9.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c9.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c9.RcIconButton-contained[data-focus-visible-added],
+.c9.RcIconButton-contained.focus-visible .c6,
+.c9.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c9.RcIconButton-contained.focus-visible:active .c6,
-.c9.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c9.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c9.RcIconButton-contained:active,
+.c9.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -7661,40 +7947,44 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-root:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c5.RcIconButton-root:hover .c6 {
+  .c5:hover,
+  .c5:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c5.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c5.RcIconButton-contained:hover,
   .c5.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-root:hover {
+  .c9:hover {
     background-color: transparent;
   }
 
-  .c9.RcIconButton-root:hover .c6 {
+  .c9:hover,
+  .c9:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c9.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c9.RcIconButton-contained:hover,
   .c9.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
@@ -7886,7 +8176,7 @@ Array [
   font-size: 24px;
 }
 
-.c5.RcIconButton-root {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7908,26 +8198,30 @@ Array [
   cursor: pointer;
 }
 
-.c5.RcIconButton-root .c6 {
+.c5,
+.c5 .c6 {
   font-size: 20px;
 }
 
-.c5.RcIconButton-root:active .c6 {
+.c5:active,
+.c5:active .c6 {
   color: #666666;
 }
 
-.c5.RcIconButton-root.focus-visible,
-.c5.RcIconButton-root[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.RcIconButton-root.focus-visible:active .c6,
-.c5.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c6,
+.c5[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.RcIconButton-root.focus-visible:after,
-.c5.RcIconButton-root[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -7944,6 +8238,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c5.RcIconButton-disabled,
 .c5.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -7964,21 +8259,24 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c5.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c6,
+.c5.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c5.RcIconButton-contained.focus-visible:active .c6,
-.c5.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c5.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -7989,7 +8287,7 @@ Array [
   opacity: 0;
 }
 
-.c9.RcIconButton-root {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8011,26 +8309,30 @@ Array [
   cursor: pointer;
 }
 
-.c9.RcIconButton-root .c6 {
+.c9,
+.c9 .c6 {
   font-size: 24px;
 }
 
-.c9.RcIconButton-root:active .c6 {
+.c9:active,
+.c9:active .c6 {
   color: #666666;
 }
 
-.c9.RcIconButton-root.focus-visible,
-.c9.RcIconButton-root[data-focus-visible-added] {
+.c9.focus-visible,
+.c9[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c9.RcIconButton-root.focus-visible:active .c6,
-.c9.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c9.focus-visible:active,
+.c9[data-focus-visible-added]:active,
+.c9.focus-visible:active .c6,
+.c9[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c9.RcIconButton-root.focus-visible:after,
-.c9.RcIconButton-root[data-focus-visible-added]:after {
+.c9.focus-visible:after,
+.c9[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -8047,6 +8349,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c9.RcIconButton-disabled,
 .c9.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -8067,21 +8370,24 @@ Array [
   background-color: #666666;
 }
 
-.c9.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c9.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c9.RcIconButton-contained[data-focus-visible-added],
+.c9.RcIconButton-contained.focus-visible .c6,
+.c9.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c9.RcIconButton-contained.focus-visible:active .c6,
-.c9.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c9.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c9.RcIconButton-contained:active,
+.c9.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -8270,40 +8576,44 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-root:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c5.RcIconButton-root:hover .c6 {
+  .c5:hover,
+  .c5:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c5.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c5.RcIconButton-contained:hover,
   .c5.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-root:hover {
+  .c9:hover {
     background-color: transparent;
   }
 
-  .c9.RcIconButton-root:hover .c6 {
+  .c9:hover,
+  .c9:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c9.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c9.RcIconButton-contained:hover,
   .c9.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
@@ -8495,7 +8805,7 @@ Array [
   font-size: 24px;
 }
 
-.c5.RcIconButton-root {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8517,26 +8827,30 @@ Array [
   cursor: pointer;
 }
 
-.c5.RcIconButton-root .c6 {
+.c5,
+.c5 .c6 {
   font-size: 20px;
 }
 
-.c5.RcIconButton-root:active .c6 {
+.c5:active,
+.c5:active .c6 {
   color: #666666;
 }
 
-.c5.RcIconButton-root.focus-visible,
-.c5.RcIconButton-root[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.RcIconButton-root.focus-visible:active .c6,
-.c5.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c6,
+.c5[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.RcIconButton-root.focus-visible:after,
-.c5.RcIconButton-root[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -8553,6 +8867,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c5.RcIconButton-disabled,
 .c5.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -8573,21 +8888,24 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c5.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c6,
+.c5.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c5.RcIconButton-contained.focus-visible:active .c6,
-.c5.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c5.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -8598,7 +8916,7 @@ Array [
   opacity: 0;
 }
 
-.c9.RcIconButton-root {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8620,26 +8938,30 @@ Array [
   cursor: pointer;
 }
 
-.c9.RcIconButton-root .c6 {
+.c9,
+.c9 .c6 {
   font-size: 24px;
 }
 
-.c9.RcIconButton-root:active .c6 {
+.c9:active,
+.c9:active .c6 {
   color: #666666;
 }
 
-.c9.RcIconButton-root.focus-visible,
-.c9.RcIconButton-root[data-focus-visible-added] {
+.c9.focus-visible,
+.c9[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c9.RcIconButton-root.focus-visible:active .c6,
-.c9.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c9.focus-visible:active,
+.c9[data-focus-visible-added]:active,
+.c9.focus-visible:active .c6,
+.c9[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c9.RcIconButton-root.focus-visible:after,
-.c9.RcIconButton-root[data-focus-visible-added]:after {
+.c9.focus-visible:after,
+.c9[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -8656,6 +8978,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c9.RcIconButton-disabled,
 .c9.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -8676,21 +8999,24 @@ Array [
   background-color: #666666;
 }
 
-.c9.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c9.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c9.RcIconButton-contained[data-focus-visible-added],
+.c9.RcIconButton-contained.focus-visible .c6,
+.c9.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c9.RcIconButton-contained.focus-visible:active .c6,
-.c9.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c9.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c9.RcIconButton-contained:active,
+.c9.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -8879,40 +9205,44 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-root:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c5.RcIconButton-root:hover .c6 {
+  .c5:hover,
+  .c5:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c5.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c5.RcIconButton-contained:hover,
   .c5.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-root:hover {
+  .c9:hover {
     background-color: transparent;
   }
 
-  .c9.RcIconButton-root:hover .c6 {
+  .c9:hover,
+  .c9:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c9.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c9.RcIconButton-contained:hover,
   .c9.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
@@ -9073,7 +9403,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
   font-size: 24px;
 }
 
-.c5.RcIconButton-root {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -9095,26 +9425,30 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
   cursor: pointer;
 }
 
-.c5.RcIconButton-root .c6 {
+.c5,
+.c5 .c6 {
   font-size: 20px;
 }
 
-.c5.RcIconButton-root:active .c6 {
+.c5:active,
+.c5:active .c6 {
   color: #666666;
 }
 
-.c5.RcIconButton-root.focus-visible,
-.c5.RcIconButton-root[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.RcIconButton-root.focus-visible:active .c6,
-.c5.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c6,
+.c5[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.RcIconButton-root.focus-visible:after,
-.c5.RcIconButton-root[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -9131,6 +9465,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
   background-color: rgba(102,102,102,0.12);
 }
 
+.c5.RcIconButton-disabled,
 .c5.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -9151,21 +9486,24 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c5.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c6,
+.c5.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c5.RcIconButton-contained.focus-visible:active .c6,
-.c5.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c5.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -9176,7 +9514,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
   opacity: 0;
 }
 
-.c9.RcIconButton-root {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -9198,26 +9536,30 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
   cursor: pointer;
 }
 
-.c9.RcIconButton-root .c6 {
+.c9,
+.c9 .c6 {
   font-size: 24px;
 }
 
-.c9.RcIconButton-root:active .c6 {
+.c9:active,
+.c9:active .c6 {
   color: #666666;
 }
 
-.c9.RcIconButton-root.focus-visible,
-.c9.RcIconButton-root[data-focus-visible-added] {
+.c9.focus-visible,
+.c9[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c9.RcIconButton-root.focus-visible:active .c6,
-.c9.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c9.focus-visible:active,
+.c9[data-focus-visible-added]:active,
+.c9.focus-visible:active .c6,
+.c9[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c9.RcIconButton-root.focus-visible:after,
-.c9.RcIconButton-root[data-focus-visible-added]:after {
+.c9.focus-visible:after,
+.c9[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -9234,6 +9576,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
   background-color: rgba(102,102,102,0.12);
 }
 
+.c9.RcIconButton-disabled,
 .c9.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -9254,21 +9597,24 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
   background-color: #666666;
 }
 
-.c9.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c9.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c9.RcIconButton-contained[data-focus-visible-added],
+.c9.RcIconButton-contained.focus-visible .c6,
+.c9.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c9.RcIconButton-contained.focus-visible:active .c6,
-.c9.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c9.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c9.RcIconButton-contained:active,
+.c9.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -9457,40 +9803,44 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-root:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c5.RcIconButton-root:hover .c6 {
+  .c5:hover,
+  .c5:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c5.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c5.RcIconButton-contained:hover,
   .c5.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-root:hover {
+  .c9:hover {
     background-color: transparent;
   }
 
-  .c9.RcIconButton-root:hover .c6 {
+  .c9:hover,
+  .c9:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c9.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c9.RcIconButton-contained:hover,
   .c9.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
@@ -9651,7 +10001,7 @@ Array [
   font-size: 24px;
 }
 
-.c5.RcIconButton-root {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -9673,26 +10023,30 @@ Array [
   cursor: pointer;
 }
 
-.c5.RcIconButton-root .c6 {
+.c5,
+.c5 .c6 {
   font-size: 20px;
 }
 
-.c5.RcIconButton-root:active .c6 {
+.c5:active,
+.c5:active .c6 {
   color: #666666;
 }
 
-.c5.RcIconButton-root.focus-visible,
-.c5.RcIconButton-root[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.RcIconButton-root.focus-visible:active .c6,
-.c5.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c6,
+.c5[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.RcIconButton-root.focus-visible:after,
-.c5.RcIconButton-root[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -9709,6 +10063,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c5.RcIconButton-disabled,
 .c5.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -9729,21 +10084,24 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c5.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c6,
+.c5.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c5.RcIconButton-contained.focus-visible:active .c6,
-.c5.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c5.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -9754,7 +10112,7 @@ Array [
   opacity: 0;
 }
 
-.c9.RcIconButton-root {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -9776,26 +10134,30 @@ Array [
   cursor: pointer;
 }
 
-.c9.RcIconButton-root .c6 {
+.c9,
+.c9 .c6 {
   font-size: 24px;
 }
 
-.c9.RcIconButton-root:active .c6 {
+.c9:active,
+.c9:active .c6 {
   color: #666666;
 }
 
-.c9.RcIconButton-root.focus-visible,
-.c9.RcIconButton-root[data-focus-visible-added] {
+.c9.focus-visible,
+.c9[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c9.RcIconButton-root.focus-visible:active .c6,
-.c9.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c9.focus-visible:active,
+.c9[data-focus-visible-added]:active,
+.c9.focus-visible:active .c6,
+.c9[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c9.RcIconButton-root.focus-visible:after,
-.c9.RcIconButton-root[data-focus-visible-added]:after {
+.c9.focus-visible:after,
+.c9[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -9812,6 +10174,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c9.RcIconButton-disabled,
 .c9.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -9832,21 +10195,24 @@ Array [
   background-color: #666666;
 }
 
-.c9.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c9.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c9.RcIconButton-contained[data-focus-visible-added],
+.c9.RcIconButton-contained.focus-visible .c6,
+.c9.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c9.RcIconButton-contained.focus-visible:active .c6,
-.c9.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c9.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c9.RcIconButton-contained:active,
+.c9.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -10039,40 +10405,44 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-root:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c5.RcIconButton-root:hover .c6 {
+  .c5:hover,
+  .c5:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c5.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c5.RcIconButton-contained:hover,
   .c5.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-root:hover {
+  .c9:hover {
     background-color: transparent;
   }
 
-  .c9.RcIconButton-root:hover .c6 {
+  .c9:hover,
+  .c9:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c9.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c9.RcIconButton-contained:hover,
   .c9.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
@@ -10228,7 +10598,7 @@ Array [
   font-size: 24px;
 }
 
-.c5.RcIconButton-root {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -10250,26 +10620,30 @@ Array [
   cursor: pointer;
 }
 
-.c5.RcIconButton-root .c6 {
+.c5,
+.c5 .c6 {
   font-size: 20px;
 }
 
-.c5.RcIconButton-root:active .c6 {
+.c5:active,
+.c5:active .c6 {
   color: #666666;
 }
 
-.c5.RcIconButton-root.focus-visible,
-.c5.RcIconButton-root[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.RcIconButton-root.focus-visible:active .c6,
-.c5.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c6,
+.c5[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.RcIconButton-root.focus-visible:after,
-.c5.RcIconButton-root[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -10286,6 +10660,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c5.RcIconButton-disabled,
 .c5.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -10306,21 +10681,24 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c5.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c6,
+.c5.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c5.RcIconButton-contained.focus-visible:active .c6,
-.c5.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c5.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -10331,7 +10709,7 @@ Array [
   opacity: 0;
 }
 
-.c9.RcIconButton-root {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -10353,26 +10731,30 @@ Array [
   cursor: pointer;
 }
 
-.c9.RcIconButton-root .c6 {
+.c9,
+.c9 .c6 {
   font-size: 24px;
 }
 
-.c9.RcIconButton-root:active .c6 {
+.c9:active,
+.c9:active .c6 {
   color: #666666;
 }
 
-.c9.RcIconButton-root.focus-visible,
-.c9.RcIconButton-root[data-focus-visible-added] {
+.c9.focus-visible,
+.c9[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c9.RcIconButton-root.focus-visible:active .c6,
-.c9.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c9.focus-visible:active,
+.c9[data-focus-visible-added]:active,
+.c9.focus-visible:active .c6,
+.c9[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c9.RcIconButton-root.focus-visible:after,
-.c9.RcIconButton-root[data-focus-visible-added]:after {
+.c9.focus-visible:after,
+.c9[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -10389,6 +10771,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
+.c9.RcIconButton-disabled,
 .c9.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -10409,21 +10792,24 @@ Array [
   background-color: #666666;
 }
 
-.c9.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c9.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c9.RcIconButton-contained[data-focus-visible-added],
+.c9.RcIconButton-contained.focus-visible .c6,
+.c9.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c9.RcIconButton-contained.focus-visible:active .c6,
-.c9.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c9.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c9.RcIconButton-contained:active,
+.c9.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -10612,40 +10998,44 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-root:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c5.RcIconButton-root:hover .c6 {
+  .c5:hover,
+  .c5:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c5.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c5.RcIconButton-contained:hover,
   .c5.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-root:hover {
+  .c9:hover {
     background-color: transparent;
   }
 
-  .c9.RcIconButton-root:hover .c6 {
+  .c9:hover,
+  .c9:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c9.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c9.RcIconButton-contained:hover,
   .c9.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
@@ -10805,7 +11195,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
   font-size: 24px;
 }
 
-.c6.RcIconButton-root {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -10827,26 +11217,30 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
   cursor: pointer;
 }
 
-.c6.RcIconButton-root .c7 {
+.c6,
+.c6 .c7 {
   font-size: 20px;
 }
 
-.c6.RcIconButton-root:active .c7 {
+.c6:active,
+.c6:active .c7 {
   color: #666666;
 }
 
-.c6.RcIconButton-root.focus-visible,
-.c6.RcIconButton-root[data-focus-visible-added] {
+.c6.focus-visible,
+.c6[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c6.RcIconButton-root.focus-visible:active .c7,
-.c6.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c6.focus-visible:active,
+.c6[data-focus-visible-added]:active,
+.c6.focus-visible:active .c7,
+.c6[data-focus-visible-added]:active .c7 {
   color: rgba(102,102,102,0.88);
 }
 
-.c6.RcIconButton-root.focus-visible:after,
-.c6.RcIconButton-root[data-focus-visible-added]:after {
+.c6.focus-visible:after,
+.c6[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -10863,6 +11257,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
   background-color: rgba(102,102,102,0.12);
 }
 
+.c6.RcIconButton-disabled,
 .c6.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
@@ -10883,21 +11278,24 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
   background-color: #666666;
 }
 
-.c6.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c6.RcIconButton-contained:active .c7 {
-  color: #fff;
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c6.RcIconButton-contained[data-focus-visible-added],
+.c6.RcIconButton-contained.focus-visible .c7,
+.c6.RcIconButton-contained[data-focus-visible-added] .c7 {
+  color: #fff;
 }
 
-.c6.RcIconButton-contained.focus-visible:active .c7,
-.c6.RcIconButton-contained[data-focus-visible-added]:active .c7 {
+.c6.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c6.RcIconButton-contained:active,
+.c6.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
@@ -10908,7 +11306,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
   opacity: 0;
 }
 
-.c10.RcIconButton-root {
+.c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -10930,26 +11328,30 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
   cursor: pointer;
 }
 
-.c10.RcIconButton-root .c7 {
+.c10,
+.c10 .c7 {
   font-size: 24px;
 }
 
-.c10.RcIconButton-root:active .c7 {
+.c10:active,
+.c10:active .c7 {
   color: #666666;
 }
 
-.c10.RcIconButton-root.focus-visible,
-.c10.RcIconButton-root[data-focus-visible-added] {
+.c10.focus-visible,
+.c10[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c10.RcIconButton-root.focus-visible:active .c7,
-.c10.RcIconButton-root[data-focus-visible-added]:active .c7 {
+.c10.focus-visible:active,
+.c10[data-focus-visible-added]:active,
+.c10.focus-visible:active .c7,
+.c10[data-focus-visible-added]:active .c7 {
   color: rgba(102,102,102,0.88);
 }
 
-.c10.RcIconButton-root.focus-visible:after,
-.c10.RcIconButton-root[data-focus-visible-added]:after {
+.c10.focus-visible:after,
+.c10[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -10966,6 +11368,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
   background-color: rgba(102,102,102,0.12);
 }
 
+.c10.RcIconButton-disabled,
 .c10.RcIconButton-disabled .c7 {
   color: #B9B9B9;
 }
@@ -10986,21 +11389,24 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
   background-color: #666666;
 }
 
-.c10.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c10.RcIconButton-contained:active .c7 {
-  color: #fff;
+.c10.RcIconButton-contained.focus-visible,
+.c10.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c10.RcIconButton-contained.focus-visible,
-.c10.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c10.RcIconButton-contained[data-focus-visible-added],
+.c10.RcIconButton-contained.focus-visible .c7,
+.c10.RcIconButton-contained[data-focus-visible-added] .c7 {
+  color: #fff;
 }
 
-.c10.RcIconButton-contained.focus-visible:active .c7,
-.c10.RcIconButton-contained[data-focus-visible-added]:active .c7 {
+.c10.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c10.RcIconButton-contained:active,
+.c10.RcIconButton-contained:active .c7 {
   color: #fff;
 }
 
@@ -11257,40 +11663,44 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-root:hover {
+  .c6:hover {
     background-color: transparent;
   }
 
-  .c6.RcIconButton-root:hover .c7 {
+  .c6:hover,
+  .c6:hover .c7 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c6.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c6.RcIconButton-contained:hover,
   .c6.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-root:hover {
+  .c10:hover {
     background-color: transparent;
   }
 
-  .c10.RcIconButton-root:hover .c7 {
+  .c10:hover,
+  .c10:hover .c7 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c10.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c10.RcIconButton-contained:hover,
   .c10.RcIconButton-contained:hover .c7 {
     color: #fff;
   }
@@ -11445,7 +11855,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
   font-size: 24px;
 }
 
-.c5.RcIconButton-root {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -11467,26 +11877,30 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
   cursor: pointer;
 }
 
-.c5.RcIconButton-root .c6 {
+.c5,
+.c5 .c6 {
   font-size: 20px;
 }
 
-.c5.RcIconButton-root:active .c6 {
+.c5:active,
+.c5:active .c6 {
   color: #666666;
 }
 
-.c5.RcIconButton-root.focus-visible,
-.c5.RcIconButton-root[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.RcIconButton-root.focus-visible:active .c6,
-.c5.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c6,
+.c5[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.RcIconButton-root.focus-visible:after,
-.c5.RcIconButton-root[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -11503,6 +11917,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
   background-color: rgba(102,102,102,0.12);
 }
 
+.c5.RcIconButton-disabled,
 .c5.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -11523,21 +11938,24 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c5.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c6,
+.c5.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c5.RcIconButton-contained.focus-visible:active .c6,
-.c5.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c5.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -11548,7 +11966,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
   opacity: 0;
 }
 
-.c9.RcIconButton-root {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -11570,26 +11988,30 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
   cursor: pointer;
 }
 
-.c9.RcIconButton-root .c6 {
+.c9,
+.c9 .c6 {
   font-size: 24px;
 }
 
-.c9.RcIconButton-root:active .c6 {
+.c9:active,
+.c9:active .c6 {
   color: #666666;
 }
 
-.c9.RcIconButton-root.focus-visible,
-.c9.RcIconButton-root[data-focus-visible-added] {
+.c9.focus-visible,
+.c9[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c9.RcIconButton-root.focus-visible:active .c6,
-.c9.RcIconButton-root[data-focus-visible-added]:active .c6 {
+.c9.focus-visible:active,
+.c9[data-focus-visible-added]:active,
+.c9.focus-visible:active .c6,
+.c9[data-focus-visible-added]:active .c6 {
   color: rgba(102,102,102,0.88);
 }
 
-.c9.RcIconButton-root.focus-visible:after,
-.c9.RcIconButton-root[data-focus-visible-added]:after {
+.c9.focus-visible:after,
+.c9[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -11606,6 +12028,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
   background-color: rgba(102,102,102,0.12);
 }
 
+.c9.RcIconButton-disabled,
 .c9.RcIconButton-disabled .c6 {
   color: #B9B9B9;
 }
@@ -11626,21 +12049,24 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
   background-color: #666666;
 }
 
-.c9.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c9.RcIconButton-contained:active .c6 {
-  color: #fff;
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c9.RcIconButton-contained[data-focus-visible-added],
+.c9.RcIconButton-contained.focus-visible .c6,
+.c9.RcIconButton-contained[data-focus-visible-added] .c6 {
+  color: #fff;
 }
 
-.c9.RcIconButton-contained.focus-visible:active .c6,
-.c9.RcIconButton-contained[data-focus-visible-added]:active .c6 {
+.c9.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c9.RcIconButton-contained:active,
+.c9.RcIconButton-contained:active .c6 {
   color: #fff;
 }
 
@@ -11825,40 +12251,44 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-root:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c5.RcIconButton-root:hover .c6 {
+  .c5:hover,
+  .c5:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c5.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c5.RcIconButton-contained:hover,
   .c5.RcIconButton-contained:hover .c6 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-root:hover {
+  .c9:hover {
     background-color: transparent;
   }
 
-  .c9.RcIconButton-root:hover .c6 {
+  .c9:hover,
+  .c9:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c9.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c9.RcIconButton-contained:hover,
   .c9.RcIconButton-contained:hover .c6 {
     color: #fff;
   }

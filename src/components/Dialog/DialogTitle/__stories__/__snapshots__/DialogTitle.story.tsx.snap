@@ -44,7 +44,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
   font-size: 24px;
 }
 
-.c7.RcIconButton-root {
+.c7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -66,21 +66,25 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
   cursor: pointer;
 }
 
-.c7.RcIconButton-root .c8 {
+.c7,
+.c7 .c8 {
   font-size: 20px;
 }
 
-.c7.RcIconButton-root:active .c8 {
+.c7:active,
+.c7:active .c8 {
   color: #F6AD16;
 }
 
-.c7.RcIconButton-root.focus-visible,
-.c7.RcIconButton-root[data-focus-visible-added] {
+.c7.focus-visible,
+.c7[data-focus-visible-added] {
   background-color: rgba(246,173,22,0.16);
 }
 
-.c7.RcIconButton-root.focus-visible:active .c8,
-.c7.RcIconButton-root[data-focus-visible-added]:active .c8 {
+.c7.focus-visible:active,
+.c7[data-focus-visible-added]:active,
+.c7.focus-visible:active .c8,
+.c7[data-focus-visible-added]:active .c8 {
   color: rgba(246,173,22,0.88);
 }
 
@@ -88,6 +92,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
   background-color: rgba(246,173,22,0.12);
 }
 
+.c7.RcIconButton-disabled,
 .c7.RcIconButton-disabled .c8 {
   color: #B9B9B9;
 }
@@ -108,21 +113,24 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
   background-color: #F6AD16;
 }
 
-.c7.RcIconButton-contained:active {
-  background-color: rgb(221,155,19);
-}
-
-.c7.RcIconButton-contained:active .c8 {
-  color: rgba(0,0,0,0.87);
+.c7.RcIconButton-contained.focus-visible,
+.c7.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(246,173,22,0.84);
 }
 
 .c7.RcIconButton-contained.focus-visible,
-.c7.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(221,155,19);
+.c7.RcIconButton-contained[data-focus-visible-added],
+.c7.RcIconButton-contained.focus-visible .c8,
+.c7.RcIconButton-contained[data-focus-visible-added] .c8 {
+  color: rgba(0,0,0,0.87);
 }
 
-.c7.RcIconButton-contained.focus-visible:active .c8,
-.c7.RcIconButton-contained[data-focus-visible-added]:active .c8 {
+.c7.RcIconButton-contained:active {
+  background-color: rgba(246,173,22,0.76);
+}
+
+.c7.RcIconButton-contained:active,
+.c7.RcIconButton-contained:active .c8 {
   color: rgba(0,0,0,0.87);
 }
 
@@ -133,7 +141,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
   opacity: 0;
 }
 
-.c11.RcIconButton-root {
+.c11 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -155,21 +163,25 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
   cursor: pointer;
 }
 
-.c11.RcIconButton-root .c8 {
+.c11,
+.c11 .c8 {
   font-size: 20px;
 }
 
-.c11.RcIconButton-root:active .c8 {
+.c11:active,
+.c11:active .c8 {
   color: #666666;
 }
 
-.c11.RcIconButton-root.focus-visible,
-.c11.RcIconButton-root[data-focus-visible-added] {
+.c11.focus-visible,
+.c11[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
-.c11.RcIconButton-root.focus-visible:active .c8,
-.c11.RcIconButton-root[data-focus-visible-added]:active .c8 {
+.c11.focus-visible:active,
+.c11[data-focus-visible-added]:active,
+.c11.focus-visible:active .c8,
+.c11[data-focus-visible-added]:active .c8 {
   color: rgba(102,102,102,0.88);
 }
 
@@ -177,6 +189,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
   background-color: rgba(102,102,102,0.12);
 }
 
+.c11.RcIconButton-disabled,
 .c11.RcIconButton-disabled .c8 {
   color: #B9B9B9;
 }
@@ -197,21 +210,24 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
   background-color: #666666;
 }
 
-.c11.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c11.RcIconButton-contained:active .c8 {
-  color: #fff;
+.c11.RcIconButton-contained.focus-visible,
+.c11.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c11.RcIconButton-contained[data-focus-visible-added],
+.c11.RcIconButton-contained.focus-visible .c8,
+.c11.RcIconButton-contained[data-focus-visible-added] .c8 {
+  color: #fff;
 }
 
-.c11.RcIconButton-contained.focus-visible:active .c8,
-.c11.RcIconButton-contained[data-focus-visible-added]:active .c8 {
+.c11.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c11.RcIconButton-contained:active,
+.c11.RcIconButton-contained:active .c8 {
   color: #fff;
 }
 
@@ -330,40 +346,44 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7.RcIconButton-root:hover {
+  .c7:hover {
     background-color: rgba(246,173,22,0.08);
   }
 
-  .c7.RcIconButton-root:hover .c8 {
+  .c7:hover,
+  .c7:hover .c8 {
     color: rgba(246,173,22,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c7.RcIconButton-contained:hover {
-    background-color: rgb(221,155,19);
+    background-color: rgba(246,173,22,0.92);
   }
 
+  .c7.RcIconButton-contained:hover,
   .c7.RcIconButton-contained:hover .c8 {
     color: rgba(0,0,0,0.87);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-root:hover {
+  .c11:hover {
     background-color: rgba(102,102,102,0.08);
   }
 
-  .c11.RcIconButton-root:hover .c8 {
+  .c11:hover,
+  .c11:hover .c8 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c11.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c11.RcIconButton-contained:hover,
   .c11.RcIconButton-contained:hover .c8 {
     color: #fff;
   }

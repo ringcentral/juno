@@ -34,7 +34,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   font-size: 36px;
 }
 
-.c4.RcIconButton-root {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -56,26 +56,30 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   cursor: pointer;
 }
 
-.c4.RcIconButton-root .c5 {
+.c4,
+.c4 .c5 {
   font-size: 20px;
 }
 
-.c4.RcIconButton-root:active .c5 {
+.c4:active,
+.c4:active .c5 {
   color: #666666;
 }
 
-.c4.RcIconButton-root.focus-visible,
-.c4.RcIconButton-root[data-focus-visible-added] {
+.c4.focus-visible,
+.c4[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c4.RcIconButton-root.focus-visible:active .c5,
-.c4.RcIconButton-root[data-focus-visible-added]:active .c5 {
+.c4.focus-visible:active,
+.c4[data-focus-visible-added]:active,
+.c4.focus-visible:active .c5,
+.c4[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
-.c4.RcIconButton-root.focus-visible:after,
-.c4.RcIconButton-root[data-focus-visible-added]:after {
+.c4.focus-visible:after,
+.c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -92,6 +96,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   background-color: rgba(102,102,102,0.12);
 }
 
+.c4.RcIconButton-disabled,
 .c4.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
@@ -112,21 +117,24 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   background-color: #666666;
 }
 
-.c4.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c4.RcIconButton-contained:active .c5 {
-  color: #fff;
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c4.RcIconButton-contained[data-focus-visible-added],
+.c4.RcIconButton-contained.focus-visible .c5,
+.c4.RcIconButton-contained[data-focus-visible-added] .c5 {
+  color: #fff;
 }
 
-.c4.RcIconButton-contained.focus-visible:active .c5,
-.c4.RcIconButton-contained[data-focus-visible-added]:active .c5 {
+.c4.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c4.RcIconButton-contained:active,
+.c4.RcIconButton-contained:active .c5 {
   color: #fff;
 }
 
@@ -137,7 +145,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   opacity: 0;
 }
 
-.c8.RcIconButton-root {
+.c8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -159,26 +167,30 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   cursor: pointer;
 }
 
-.c8.RcIconButton-root .c5 {
+.c8,
+.c8 .c5 {
   font-size: 16px;
 }
 
-.c8.RcIconButton-root:active .c5 {
+.c8:active,
+.c8:active .c5 {
   color: #666666;
 }
 
-.c8.RcIconButton-root.focus-visible,
-.c8.RcIconButton-root[data-focus-visible-added] {
+.c8.focus-visible,
+.c8[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c8.RcIconButton-root.focus-visible:active .c5,
-.c8.RcIconButton-root[data-focus-visible-added]:active .c5 {
+.c8.focus-visible:active,
+.c8[data-focus-visible-added]:active,
+.c8.focus-visible:active .c5,
+.c8[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
-.c8.RcIconButton-root.focus-visible:after,
-.c8.RcIconButton-root[data-focus-visible-added]:after {
+.c8.focus-visible:after,
+.c8[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -3px;
@@ -195,6 +207,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   background-color: rgba(102,102,102,0.12);
 }
 
+.c8.RcIconButton-disabled,
 .c8.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
@@ -215,21 +228,24 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   background-color: #666666;
 }
 
-.c8.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c8.RcIconButton-contained:active .c5 {
-  color: #fff;
+.c8.RcIconButton-contained.focus-visible,
+.c8.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c8.RcIconButton-contained[data-focus-visible-added],
+.c8.RcIconButton-contained.focus-visible .c5,
+.c8.RcIconButton-contained[data-focus-visible-added] .c5 {
+  color: #fff;
 }
 
-.c8.RcIconButton-contained.focus-visible:active .c5,
-.c8.RcIconButton-contained[data-focus-visible-added]:active .c5 {
+.c8.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c8.RcIconButton-contained:active,
+.c8.RcIconButton-contained:active .c5 {
   color: #fff;
 }
 
@@ -588,40 +604,44 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-root:hover {
+  .c4:hover {
     background-color: transparent;
   }
 
-  .c4.RcIconButton-root:hover .c5 {
+  .c4:hover,
+  .c4:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c4.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c4.RcIconButton-contained:hover,
   .c4.RcIconButton-contained:hover .c5 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-root:hover {
+  .c8:hover {
     background-color: transparent;
   }
 
-  .c8.RcIconButton-root:hover .c5 {
+  .c8:hover,
+  .c8:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c8.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c8.RcIconButton-contained:hover,
   .c8.RcIconButton-contained:hover .c5 {
     color: #fff;
   }
@@ -1485,7 +1505,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
   font-size: 20px;
 }
 
-.c13.RcIconButton-root {
+.c13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1507,26 +1527,30 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
   cursor: pointer;
 }
 
-.c13.RcIconButton-root .c9 {
+.c13,
+.c13 .c9 {
   font-size: 16px;
 }
 
-.c13.RcIconButton-root:active .c9 {
+.c13:active,
+.c13:active .c9 {
   color: #666666;
 }
 
-.c13.RcIconButton-root.focus-visible,
-.c13.RcIconButton-root[data-focus-visible-added] {
+.c13.focus-visible,
+.c13[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c13.RcIconButton-root.focus-visible:active .c9,
-.c13.RcIconButton-root[data-focus-visible-added]:active .c9 {
+.c13.focus-visible:active,
+.c13[data-focus-visible-added]:active,
+.c13.focus-visible:active .c9,
+.c13[data-focus-visible-added]:active .c9 {
   color: rgba(102,102,102,0.88);
 }
 
-.c13.RcIconButton-root.focus-visible:after,
-.c13.RcIconButton-root[data-focus-visible-added]:after {
+.c13.focus-visible:after,
+.c13[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -3px;
@@ -1543,6 +1567,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
   background-color: rgba(102,102,102,0.12);
 }
 
+.c13.RcIconButton-disabled,
 .c13.RcIconButton-disabled .c9 {
   color: #B9B9B9;
 }
@@ -1563,21 +1588,24 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
   background-color: #666666;
 }
 
-.c13.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c13.RcIconButton-contained:active .c9 {
-  color: #fff;
+.c13.RcIconButton-contained.focus-visible,
+.c13.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c13.RcIconButton-contained.focus-visible,
-.c13.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c13.RcIconButton-contained[data-focus-visible-added],
+.c13.RcIconButton-contained.focus-visible .c9,
+.c13.RcIconButton-contained[data-focus-visible-added] .c9 {
+  color: #fff;
 }
 
-.c13.RcIconButton-contained.focus-visible:active .c9,
-.c13.RcIconButton-contained[data-focus-visible-added]:active .c9 {
+.c13.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c13.RcIconButton-contained:active,
+.c13.RcIconButton-contained:active .c9 {
   color: #fff;
 }
 
@@ -2015,20 +2043,22 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcIconButton-root:hover {
+  .c13:hover {
     background-color: transparent;
   }
 
-  .c13.RcIconButton-root:hover .c9 {
+  .c13:hover,
+  .c13:hover .c9 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c13.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c13.RcIconButton-contained:hover,
   .c13.RcIconButton-contained:hover .c9 {
     color: #fff;
   }

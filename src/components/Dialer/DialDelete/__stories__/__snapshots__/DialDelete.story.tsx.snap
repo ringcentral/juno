@@ -18,7 +18,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialDelete DialDelete 1`] = `
   font-size: 24px;
 }
 
-.c0.RcIconButton-root {
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -40,26 +40,30 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialDelete DialDelete 1`] = `
   cursor: pointer;
 }
 
-.c0.RcIconButton-root .c1 {
+.c0,
+.c0 .c1 {
   font-size: 24px;
 }
 
-.c0.RcIconButton-root:active .c1 {
+.c0:active,
+.c0:active .c1 {
   color: #666666;
 }
 
-.c0.RcIconButton-root.focus-visible,
-.c0.RcIconButton-root[data-focus-visible-added] {
+.c0.focus-visible,
+.c0[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c0.RcIconButton-root.focus-visible:active .c1,
-.c0.RcIconButton-root[data-focus-visible-added]:active .c1 {
+.c0.focus-visible:active,
+.c0[data-focus-visible-added]:active,
+.c0.focus-visible:active .c1,
+.c0[data-focus-visible-added]:active .c1 {
   color: rgba(102,102,102,0.88);
 }
 
-.c0.RcIconButton-root.focus-visible:after,
-.c0.RcIconButton-root[data-focus-visible-added]:after {
+.c0.focus-visible:after,
+.c0[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -76,6 +80,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialDelete DialDelete 1`] = `
   background-color: rgba(102,102,102,0.12);
 }
 
+.c0.RcIconButton-disabled,
 .c0.RcIconButton-disabled .c1 {
   color: #B9B9B9;
 }
@@ -96,21 +101,24 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialDelete DialDelete 1`] = `
   background-color: #666666;
 }
 
-.c0.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c0.RcIconButton-contained:active .c1 {
-  color: #fff;
+.c0.RcIconButton-contained.focus-visible,
+.c0.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c0.RcIconButton-contained.focus-visible,
-.c0.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c0.RcIconButton-contained[data-focus-visible-added],
+.c0.RcIconButton-contained.focus-visible .c1,
+.c0.RcIconButton-contained[data-focus-visible-added] .c1 {
+  color: #fff;
 }
 
-.c0.RcIconButton-contained.focus-visible:active .c1,
-.c0.RcIconButton-contained[data-focus-visible-added]:active .c1 {
+.c0.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c0.RcIconButton-contained:active,
+.c0.RcIconButton-contained:active .c1 {
   color: #fff;
 }
 
@@ -122,20 +130,22 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialDelete DialDelete 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0.RcIconButton-root:hover {
+  .c0:hover {
     background-color: transparent;
   }
 
-  .c0.RcIconButton-root:hover .c1 {
+  .c0:hover,
+  .c0:hover .c1 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c0.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c0.RcIconButton-contained:hover,
   .c0.RcIconButton-contained:hover .c1 {
     color: #fff;
   }

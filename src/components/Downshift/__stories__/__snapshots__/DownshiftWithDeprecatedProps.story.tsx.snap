@@ -18,7 +18,7 @@ exports[`Storyshots 🖤 Deprecated Components/Downshift (New with deprecated pr
   font-size: 24px;
 }
 
-.c8.RcIconButton-root {
+.c8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -40,26 +40,30 @@ exports[`Storyshots 🖤 Deprecated Components/Downshift (New with deprecated pr
   cursor: pointer;
 }
 
-.c8.RcIconButton-root .c9 {
+.c8,
+.c8 .c9 {
   font-size: 20px;
 }
 
-.c8.RcIconButton-root:active .c9 {
+.c8:active,
+.c8:active .c9 {
   color: #666666;
 }
 
-.c8.RcIconButton-root.focus-visible,
-.c8.RcIconButton-root[data-focus-visible-added] {
+.c8.focus-visible,
+.c8[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c8.RcIconButton-root.focus-visible:active .c9,
-.c8.RcIconButton-root[data-focus-visible-added]:active .c9 {
+.c8.focus-visible:active,
+.c8[data-focus-visible-added]:active,
+.c8.focus-visible:active .c9,
+.c8[data-focus-visible-added]:active .c9 {
   color: rgba(102,102,102,0.88);
 }
 
-.c8.RcIconButton-root.focus-visible:after,
-.c8.RcIconButton-root[data-focus-visible-added]:after {
+.c8.focus-visible:after,
+.c8[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -76,6 +80,7 @@ exports[`Storyshots 🖤 Deprecated Components/Downshift (New with deprecated pr
   background-color: rgba(102,102,102,0.12);
 }
 
+.c8.RcIconButton-disabled,
 .c8.RcIconButton-disabled .c9 {
   color: #B9B9B9;
 }
@@ -96,21 +101,24 @@ exports[`Storyshots 🖤 Deprecated Components/Downshift (New with deprecated pr
   background-color: #666666;
 }
 
-.c8.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c8.RcIconButton-contained:active .c9 {
-  color: #fff;
+.c8.RcIconButton-contained.focus-visible,
+.c8.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c8.RcIconButton-contained[data-focus-visible-added],
+.c8.RcIconButton-contained.focus-visible .c9,
+.c8.RcIconButton-contained[data-focus-visible-added] .c9 {
+  color: #fff;
 }
 
-.c8.RcIconButton-contained.focus-visible:active .c9,
-.c8.RcIconButton-contained[data-focus-visible-added]:active .c9 {
+.c8.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c8.RcIconButton-contained:active,
+.c8.RcIconButton-contained:active .c9 {
   color: #fff;
 }
 
@@ -388,20 +396,22 @@ exports[`Storyshots 🖤 Deprecated Components/Downshift (New with deprecated pr
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-root:hover {
+  .c8:hover {
     background-color: transparent;
   }
 
-  .c8.RcIconButton-root:hover .c9 {
+  .c8:hover,
+  .c8:hover .c9 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c8.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c8.RcIconButton-contained:hover,
   .c8.RcIconButton-contained:hover .c9 {
     color: #fff;
   }

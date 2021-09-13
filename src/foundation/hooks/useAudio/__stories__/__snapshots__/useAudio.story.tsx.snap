@@ -18,7 +18,7 @@ exports[`Storyshots 🔧 Foundation/Hooks/useAudio useAudio 1`] = `
   font-size: 24px;
 }
 
-.c0.RcIconButton-root {
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -38,31 +38,34 @@ exports[`Storyshots 🔧 Foundation/Hooks/useAudio useAudio 1`] = `
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-  font-size: 40px;
   box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
   -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
 }
 
-.c0.RcIconButton-root:active {
+.c0:active {
   box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
 }
 
-.c0.RcIconButton-root .c1 {
+.c0,
+.c0 .c1 {
   font-size: 40px;
 }
 
-.c0.RcIconButton-root:active .c1 {
+.c0:active,
+.c0:active .c1 {
   color: #066FAC;
 }
 
-.c0.RcIconButton-root.focus-visible,
-.c0.RcIconButton-root[data-focus-visible-added] {
+.c0.focus-visible,
+.c0[data-focus-visible-added] {
   background-color: rgba(6,111,172,0.16);
 }
 
-.c0.RcIconButton-root.focus-visible:active .c1,
-.c0.RcIconButton-root[data-focus-visible-added]:active .c1 {
+.c0.focus-visible:active,
+.c0[data-focus-visible-added]:active,
+.c0.focus-visible:active .c1,
+.c0[data-focus-visible-added]:active .c1 {
   color: rgba(6,111,172,0.88);
 }
 
@@ -70,6 +73,7 @@ exports[`Storyshots 🔧 Foundation/Hooks/useAudio useAudio 1`] = `
   background-color: rgba(6,111,172,0.12);
 }
 
+.c0.RcIconButton-disabled,
 .c0.RcIconButton-disabled .c1 {
   color: #B9B9B9;
 }
@@ -90,21 +94,24 @@ exports[`Storyshots 🔧 Foundation/Hooks/useAudio useAudio 1`] = `
   background-color: #066FAC;
 }
 
-.c0.RcIconButton-contained:active {
-  background-color: rgb(5,99,154);
-}
-
-.c0.RcIconButton-contained:active .c1 {
-  color: #fff;
+.c0.RcIconButton-contained.focus-visible,
+.c0.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(6,111,172,0.84);
 }
 
 .c0.RcIconButton-contained.focus-visible,
-.c0.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(5,99,154);
+.c0.RcIconButton-contained[data-focus-visible-added],
+.c0.RcIconButton-contained.focus-visible .c1,
+.c0.RcIconButton-contained[data-focus-visible-added] .c1 {
+  color: #fff;
 }
 
-.c0.RcIconButton-contained.focus-visible:active .c1,
-.c0.RcIconButton-contained[data-focus-visible-added]:active .c1 {
+.c0.RcIconButton-contained:active {
+  background-color: rgba(6,111,172,0.76);
+}
+
+.c0.RcIconButton-contained:active,
+.c0.RcIconButton-contained:active .c1 {
   color: #fff;
 }
 
@@ -116,20 +123,22 @@ exports[`Storyshots 🔧 Foundation/Hooks/useAudio useAudio 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0.RcIconButton-root:hover {
+  .c0:hover {
     background-color: rgba(6,111,172,0.08);
   }
 
-  .c0.RcIconButton-root:hover .c1 {
+  .c0:hover,
+  .c0:hover .c1 {
     color: rgba(6,111,172,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c0.RcIconButton-contained:hover {
-    background-color: rgb(5,99,154);
+    background-color: rgba(6,111,172,0.92);
   }
 
+  .c0.RcIconButton-contained:hover,
   .c0.RcIconButton-contained:hover .c1 {
     color: #fff;
   }

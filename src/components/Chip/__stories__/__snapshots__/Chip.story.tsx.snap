@@ -100,7 +100,7 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   font-size: 24px;
 }
 
-.c2.RcIconButton-root {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -122,26 +122,30 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   cursor: pointer;
 }
 
-.c2.RcIconButton-root .c3 {
+.c2,
+.c2 .c3 {
   font-size: 20px;
 }
 
-.c2.RcIconButton-root:active .c3 {
+.c2:active,
+.c2:active .c3 {
   color: #666666;
 }
 
-.c2.RcIconButton-root.focus-visible,
-.c2.RcIconButton-root[data-focus-visible-added] {
+.c2.focus-visible,
+.c2[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c2.RcIconButton-root.focus-visible:active .c3,
-.c2.RcIconButton-root[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active,
+.c2[data-focus-visible-added]:active,
+.c2.focus-visible:active .c3,
+.c2[data-focus-visible-added]:active .c3 {
   color: rgba(102,102,102,0.88);
 }
 
-.c2.RcIconButton-root.focus-visible:after,
-.c2.RcIconButton-root[data-focus-visible-added]:after {
+.c2.focus-visible:after,
+.c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -158,6 +162,7 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   background-color: rgba(102,102,102,0.12);
 }
 
+.c2.RcIconButton-disabled,
 .c2.RcIconButton-disabled .c3 {
   color: #B9B9B9;
 }
@@ -178,21 +183,24 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   background-color: #666666;
 }
 
-.c2.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c2.RcIconButton-contained:active .c3 {
-  color: #fff;
+.c2.RcIconButton-contained.focus-visible,
+.c2.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c2.RcIconButton-contained.focus-visible,
-.c2.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c2.RcIconButton-contained[data-focus-visible-added],
+.c2.RcIconButton-contained.focus-visible .c3,
+.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+  color: #fff;
 }
 
-.c2.RcIconButton-contained.focus-visible:active .c3,
-.c2.RcIconButton-contained[data-focus-visible-added]:active .c3 {
+.c2.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c2.RcIconButton-contained:active,
+.c2.RcIconButton-contained:active .c3 {
   color: #fff;
 }
 
@@ -203,7 +211,7 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   opacity: 0;
 }
 
-.c6.RcIconButton-root {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -225,26 +233,30 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   cursor: default;
 }
 
-.c6.RcIconButton-root .c3 {
+.c6,
+.c6 .c3 {
   font-size: 20px;
 }
 
-.c6.RcIconButton-root:active .c3 {
+.c6:active,
+.c6:active .c3 {
   color: #666666;
 }
 
-.c6.RcIconButton-root.focus-visible,
-.c6.RcIconButton-root[data-focus-visible-added] {
+.c6.focus-visible,
+.c6[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c6.RcIconButton-root.focus-visible:active .c3,
-.c6.RcIconButton-root[data-focus-visible-added]:active .c3 {
+.c6.focus-visible:active,
+.c6[data-focus-visible-added]:active,
+.c6.focus-visible:active .c3,
+.c6[data-focus-visible-added]:active .c3 {
   color: rgba(102,102,102,0.88);
 }
 
-.c6.RcIconButton-root.focus-visible:after,
-.c6.RcIconButton-root[data-focus-visible-added]:after {
+.c6.focus-visible:after,
+.c6[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -261,6 +273,7 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   background-color: rgba(102,102,102,0.12);
 }
 
+.c6.RcIconButton-disabled,
 .c6.RcIconButton-disabled .c3 {
   color: #B9B9B9;
 }
@@ -281,21 +294,24 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   background-color: #666666;
 }
 
-.c6.RcIconButton-contained:active {
-  background-color: rgb(91,91,91);
-}
-
-.c6.RcIconButton-contained:active .c3 {
-  color: #fff;
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
 }
 
 .c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(91,91,91);
+.c6.RcIconButton-contained[data-focus-visible-added],
+.c6.RcIconButton-contained.focus-visible .c3,
+.c6.RcIconButton-contained[data-focus-visible-added] .c3 {
+  color: #fff;
 }
 
-.c6.RcIconButton-contained.focus-visible:active .c3,
-.c6.RcIconButton-contained[data-focus-visible-added]:active .c3 {
+.c6.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c6.RcIconButton-contained:active,
+.c6.RcIconButton-contained:active .c3 {
   color: #fff;
 }
 
@@ -306,7 +322,7 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   opacity: 0;
 }
 
-.c8.RcIconButton-root {
+.c8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -328,26 +344,30 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   cursor: pointer;
 }
 
-.c8.RcIconButton-root .c3 {
+.c8,
+.c8 .c3 {
   font-size: 20px;
 }
 
-.c8.RcIconButton-root:active .c3 {
+.c8:active,
+.c8:active .c3 {
   color: #BE3933;
 }
 
-.c8.RcIconButton-root.focus-visible,
-.c8.RcIconButton-root[data-focus-visible-added] {
+.c8.focus-visible,
+.c8[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c8.RcIconButton-root.focus-visible:active .c3,
-.c8.RcIconButton-root[data-focus-visible-added]:active .c3 {
+.c8.focus-visible:active,
+.c8[data-focus-visible-added]:active,
+.c8.focus-visible:active .c3,
+.c8[data-focus-visible-added]:active .c3 {
   color: rgba(190,57,51,0.88);
 }
 
-.c8.RcIconButton-root.focus-visible:after,
-.c8.RcIconButton-root[data-focus-visible-added]:after {
+.c8.focus-visible:after,
+.c8[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -364,6 +384,7 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   background-color: rgba(190,57,51,0.12);
 }
 
+.c8.RcIconButton-disabled,
 .c8.RcIconButton-disabled .c3 {
   color: #B9B9B9;
 }
@@ -384,21 +405,24 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   background-color: #BE3933;
 }
 
-.c8.RcIconButton-contained:active {
-  background-color: rgb(171,51,45);
-}
-
-.c8.RcIconButton-contained:active .c3 {
-  color: #fff;
+.c8.RcIconButton-contained.focus-visible,
+.c8.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(190,57,51,0.84);
 }
 
 .c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgb(171,51,45);
+.c8.RcIconButton-contained[data-focus-visible-added],
+.c8.RcIconButton-contained.focus-visible .c3,
+.c8.RcIconButton-contained[data-focus-visible-added] .c3 {
+  color: #fff;
 }
 
-.c8.RcIconButton-contained.focus-visible:active .c3,
-.c8.RcIconButton-contained[data-focus-visible-added]:active .c3 {
+.c8.RcIconButton-contained:active {
+  background-color: rgba(190,57,51,0.76);
+}
+
+.c8.RcIconButton-contained:active,
+.c8.RcIconButton-contained:active .c3 {
   color: #fff;
 }
 
@@ -623,60 +647,66 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c2.RcIconButton-root:hover {
+  .c2:hover {
     background-color: transparent;
   }
 
-  .c2.RcIconButton-root:hover .c3 {
+  .c2:hover,
+  .c2:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c2.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c2.RcIconButton-contained:hover,
   .c2.RcIconButton-contained:hover .c3 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-root:hover {
+  .c6:hover {
     background-color: transparent;
   }
 
-  .c6.RcIconButton-root:hover .c3 {
+  .c6:hover,
+  .c6:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c6.RcIconButton-contained:hover {
-    background-color: rgb(91,91,91);
+    background-color: rgba(102,102,102,0.92);
   }
 
+  .c6.RcIconButton-contained:hover,
   .c6.RcIconButton-contained:hover .c3 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-root:hover {
+  .c8:hover {
     background-color: transparent;
   }
 
-  .c8.RcIconButton-root:hover .c3 {
+  .c8:hover,
+  .c8:hover .c3 {
     color: rgba(190,57,51,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c8.RcIconButton-contained:hover {
-    background-color: rgb(171,51,45);
+    background-color: rgba(190,57,51,0.92);
   }
 
+  .c8.RcIconButton-contained:hover,
   .c8.RcIconButton-contained:hover .c3 {
     color: #fff;
   }
