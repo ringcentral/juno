@@ -37,6 +37,9 @@ export const getFocusVisibleInsetSize: RcThemedStyled<
   `;
 };
 
+// * text inside button should also set style
+const childrenClass = `&,${RcIcon}`;
+
 const containedVariantTransitions: RcThemedStyled<
   RcIconButtonProps,
   string
@@ -99,7 +102,7 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
   const containedInactiveStyled = css`
     background-color: ${darken(mainColor, 0.1)};
 
-    ${RcIcon} {
+    ${childrenClass} {
       color: ${mainColorContrast};
     }
   `;
@@ -116,77 +119,71 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
     elevation !== undefined ? shadows(elevation) : defaultShadow;
 
   return css`
-    &.${RcIconButtonClasses.root} {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 
-      width: ${containerSize};
-      height: ${containerSize};
-      color: ${mainColor};
-      border-radius: ${radius(currRadius)};
-      transition: ${backgroundTransition};
-      cursor: ${disabled ? 'default' : 'pointer'};
+    width: ${containerSize};
+    height: ${containerSize};
+    color: ${mainColor};
+    border-radius: ${radius(currRadius)};
+    transition: ${backgroundTransition};
+    cursor: ${disabled ? 'default' : 'pointer'};
+    background-color: ${(shouldPersistBg || isInverse) && persistBgColor};
+    box-shadow: ${nowShadow};
 
-      background-color: ${(shouldPersistBg || isInverse) && persistBgColor};
-
-      font-size: ${stretchIcon && containerSize};
-
-      box-shadow: ${nowShadow};
-
-      ${nowShadow &&
-        css`
-          transition: ${containedVariantTransitions};
-
-          &:active {
-            box-shadow: ${shadows(
-              activeElevation ??
-                (elevation ? Math.min(+(elevation as any) + 11, 24) : '12'),
-            )};
-          }
-        `}
-
-      ${RcIcon} {
-        font-size: ${stretchIcon
-          ? containerSize
-          : px(
-              isOutline
-                ? iconSize * 1.2 // keep size same as before
-                : iconSize,
-            )};
-      }
-
-      ${nonTouchHoverMedia} {
-        &:hover {
-          background-color: ${isPlain
-            ? 'transparent'
-            : setOpacity(mainColor, isInverse ? '40' : '08')};
-
-          ${RcIcon} {
-            color: ${setOpacity(mainColor, '88')};
-          }
-        }
-      }
-
-      &:active {
-        ${RcIcon} {
-          color: ${mainColor};
-        }
-      }
-
-      ${focusVisible} {
-        background-color: ${isPlain
-          ? 'transparent'
-          : setOpacity(mainColor, isInverse ? '40' : '16')};
+    ${nowShadow &&
+      css`
+        transition: ${containedVariantTransitions};
 
         &:active {
-          ${RcIcon} {
-            color: ${setOpacity(mainColor, '88')};
-          }
+          box-shadow: ${shadows(
+            activeElevation ??
+              (elevation ? Math.min(+(elevation as any) + 11, 24) : '12'),
+          )};
         }
+      `};
 
-        ${isPlain && plainIconButtonFocusStyle({ radius: currRadius })};
+    ${childrenClass} {
+      font-size: ${stretchIcon
+        ? containerSize
+        : px(
+            isOutline
+              ? iconSize * 1.2 // keep size same as before
+              : iconSize,
+          )};
+    }
+
+    ${nonTouchHoverMedia} {
+      &:hover {
+        background-color: ${isPlain
+          ? 'transparent'
+          : setOpacity(mainColor, isInverse ? '40' : '08')};
+
+        ${childrenClass} {
+          color: ${setOpacity(mainColor, '88')};
+        }
       }
+    }
+
+    &:active {
+      ${childrenClass} {
+        color: ${mainColor};
+      }
+    }
+
+    ${focusVisible} {
+      background-color: ${isPlain
+        ? 'transparent'
+        : setOpacity(mainColor, isInverse ? '40' : '16')};
+
+      &:active {
+        ${childrenClass} {
+          color: ${setOpacity(mainColor, '88')};
+        }
+      }
+
+      ${isPlain && plainIconButtonFocusStyle({ radius: currRadius })};
     }
 
     &.${RcIconButtonClasses.persistBg} {
@@ -194,7 +191,7 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
     }
 
     &.${RcIconButtonClasses.disabled} {
-      ${RcIcon} {
+      ${childrenClass} {
         color: ${useColorWhenDisabled
           ? setOpacity(mainColor, '32')
           : palette2('disabled', 'f02')};
@@ -232,7 +229,7 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
         background-color: ${darken(mainColor, 0.1)};
 
         &:active {
-          ${RcIcon} {
+          ${childrenClass} {
             color: ${mainColorContrast};
           }
         }
