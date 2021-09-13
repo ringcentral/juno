@@ -586,7 +586,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-  background-color: rgba(102,102,102,0.2);
+  background-color: rgba(102,102,102,0.16);
 }
 
 .c9,
@@ -601,7 +601,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 
 .c9.focus-visible,
 .c9[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.4);
+  background-color: rgba(102,102,102,0.32);
 }
 
 .c9.focus-visible:active,
@@ -612,7 +612,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 }
 
 .c9.RcIconButton-persistBg {
-  background-color: rgba(102,102,102,0.2);
+  background-color: rgba(102,102,102,0.16);
 }
 
 .c9.RcIconButton-disabled {
@@ -909,7 +909,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 
 @media (hover:hover) and (pointer:fine) {
   .c9:hover {
-    background-color: rgba(102,102,102,0.4);
+    background-color: rgba(102,102,102,0.24);
   }
 
   .c9:hover,

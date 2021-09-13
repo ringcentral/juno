@@ -2031,7 +2031,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-  background-color: rgba(102,102,102,0.2);
+  background-color: rgba(102,102,102,0.16);
 }
 
 .c8,
@@ -2046,7 +2046,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 
 .c8.focus-visible,
 .c8[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.4);
+  background-color: rgba(102,102,102,0.32);
 }
 
 .c8.focus-visible:active,
@@ -2057,7 +2057,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 .c8.RcIconButton-persistBg {
-  background-color: rgba(102,102,102,0.2);
+  background-color: rgba(102,102,102,0.16);
 }
 
 .c8.RcIconButton-disabled {
@@ -2133,7 +2133,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-  background-color: rgba(102,102,102,0.2);
+  background-color: rgba(102,102,102,0.16);
 }
 
 .c9,
@@ -2148,7 +2148,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 
 .c9.focus-visible,
 .c9[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.4);
+  background-color: rgba(102,102,102,0.32);
 }
 
 .c9.focus-visible:active,
@@ -2159,7 +2159,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 .c9.RcIconButton-persistBg {
-  background-color: rgba(102,102,102,0.2);
+  background-color: rgba(102,102,102,0.16);
 }
 
 .c9.RcIconButton-disabled {
@@ -2630,7 +2630,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 
 @media (hover:hover) and (pointer:fine) {
   .c8:hover {
-    background-color: rgba(102,102,102,0.4);
+    background-color: rgba(102,102,102,0.24);
   }
 
   .c8:hover,
@@ -2652,7 +2652,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 
 @media (hover:hover) and (pointer:fine) {
   .c9:hover {
-    background-color: rgba(102,102,102,0.4);
+    background-color: rgba(102,102,102,0.24);
   }
 
   .c9:hover,
@@ -3407,7 +3407,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-  background-color: rgba(60,153,73,0.2);
+  background-color: rgba(60,153,73,0.16);
 }
 
 .c8,
@@ -3422,7 +3422,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 
 .c8.focus-visible,
 .c8[data-focus-visible-added] {
-  background-color: rgba(60,153,73,0.4);
+  background-color: rgba(60,153,73,0.32);
 }
 
 .c8.focus-visible:active,
@@ -3433,7 +3433,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 .c8.RcIconButton-persistBg {
-  background-color: rgba(60,153,73,0.2);
+  background-color: rgba(60,153,73,0.16);
 }
 
 .c8.RcIconButton-disabled {
@@ -3924,7 +3924,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-  background-color: rgba(54,133,65,0.2);
+  background-color: rgba(54,133,65,0.16);
 }
 
 .c13,
@@ -3939,7 +3939,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 
 .c13.focus-visible,
 .c13[data-focus-visible-added] {
-  background-color: rgba(54,133,65,0.4);
+  background-color: rgba(54,133,65,0.32);
 }
 
 .c13.focus-visible:active,
@@ -3950,7 +3950,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 .c13.RcIconButton-persistBg {
-  background-color: rgba(54,133,65,0.2);
+  background-color: rgba(54,133,65,0.16);
 }
 
 .c13.RcIconButton-disabled {
@@ -4441,7 +4441,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-  background-color: rgba(255,136,0,0.2);
+  background-color: rgba(255,136,0,0.16);
 }
 
 .c18,
@@ -4456,7 +4456,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 
 .c18.focus-visible,
 .c18[data-focus-visible-added] {
-  background-color: rgba(255,136,0,0.4);
+  background-color: rgba(255,136,0,0.32);
 }
 
 .c18.focus-visible:active,
@@ -4467,7 +4467,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 .c18.RcIconButton-persistBg {
-  background-color: rgba(255,136,0,0.2);
+  background-color: rgba(255,136,0,0.16);
 }
 
 .c18.RcIconButton-disabled {
@@ -4958,7 +4958,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-  background-color: rgba(255,223,177,0.2);
+  background-color: rgba(255,223,177,0.16);
 }
 
 .c23,
@@ -4973,7 +4973,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 
 .c23.focus-visible,
 .c23[data-focus-visible-added] {
-  background-color: rgba(255,223,177,0.4);
+  background-color: rgba(255,223,177,0.32);
 }
 
 .c23.focus-visible:active,
@@ -4984,7 +4984,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 .c23.RcIconButton-persistBg {
-  background-color: rgba(255,223,177,0.2);
+  background-color: rgba(255,223,177,0.16);
 }
 
 .c23.RcIconButton-disabled {
@@ -5475,7 +5475,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-  background-color: rgba(255,136,0,0.2);
+  background-color: rgba(255,136,0,0.16);
 }
 
 .c28,
@@ -5490,7 +5490,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 
 .c28.focus-visible,
 .c28[data-focus-visible-added] {
-  background-color: rgba(255,136,0,0.4);
+  background-color: rgba(255,136,0,0.32);
 }
 
 .c28.focus-visible:active,
@@ -5501,7 +5501,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 .c28.RcIconButton-persistBg {
-  background-color: rgba(255,136,0,0.2);
+  background-color: rgba(255,136,0,0.16);
 }
 
 .c28.RcIconButton-disabled {
@@ -5992,7 +5992,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-  background-color: rgba(230,65,60,0.2);
+  background-color: rgba(230,65,60,0.16);
 }
 
 .c33,
@@ -6007,7 +6007,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 
 .c33.focus-visible,
 .c33[data-focus-visible-added] {
-  background-color: rgba(230,65,60,0.4);
+  background-color: rgba(230,65,60,0.32);
 }
 
 .c33.focus-visible:active,
@@ -6018,7 +6018,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 .c33.RcIconButton-persistBg {
-  background-color: rgba(230,65,60,0.2);
+  background-color: rgba(230,65,60,0.16);
 }
 
 .c33.RcIconButton-disabled {
@@ -6509,7 +6509,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-  background-color: rgba(214,62,57,0.2);
+  background-color: rgba(214,62,57,0.16);
 }
 
 .c38,
@@ -6524,7 +6524,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 
 .c38.focus-visible,
 .c38[data-focus-visible-added] {
-  background-color: rgba(214,62,57,0.4);
+  background-color: rgba(214,62,57,0.32);
 }
 
 .c38.focus-visible:active,
@@ -6535,7 +6535,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 .c38.RcIconButton-persistBg {
-  background-color: rgba(214,62,57,0.2);
+  background-color: rgba(214,62,57,0.16);
 }
 
 .c38.RcIconButton-disabled {
@@ -6872,7 +6872,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 
 @media (hover:hover) and (pointer:fine) {
   .c8:hover {
-    background-color: rgba(60,153,73,0.4);
+    background-color: rgba(60,153,73,0.24);
   }
 
   .c8:hover,
@@ -6982,7 +6982,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 
 @media (hover:hover) and (pointer:fine) {
   .c13:hover {
-    background-color: rgba(54,133,65,0.4);
+    background-color: rgba(54,133,65,0.24);
   }
 
   .c13:hover,
@@ -7092,7 +7092,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 
 @media (hover:hover) and (pointer:fine) {
   .c18:hover {
-    background-color: rgba(255,136,0,0.4);
+    background-color: rgba(255,136,0,0.24);
   }
 
   .c18:hover,
@@ -7202,7 +7202,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 
 @media (hover:hover) and (pointer:fine) {
   .c23:hover {
-    background-color: rgba(255,223,177,0.4);
+    background-color: rgba(255,223,177,0.24);
   }
 
   .c23:hover,
@@ -7312,7 +7312,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 
 @media (hover:hover) and (pointer:fine) {
   .c28:hover {
-    background-color: rgba(255,136,0,0.4);
+    background-color: rgba(255,136,0,0.24);
   }
 
   .c28:hover,
@@ -7422,7 +7422,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 
 @media (hover:hover) and (pointer:fine) {
   .c33:hover {
-    background-color: rgba(230,65,60,0.4);
+    background-color: rgba(230,65,60,0.24);
   }
 
   .c33:hover,
@@ -7532,7 +7532,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 
 @media (hover:hover) and (pointer:fine) {
   .c38:hover {
-    background-color: rgba(214,62,57,0.4);
+    background-color: rgba(214,62,57,0.24);
   }
 
   .c38:hover,
