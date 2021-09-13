@@ -1,4 +1,39 @@
 
+### [1.11.3](https://github.com/ringcentral/juno/compare/v1.11.2...v1.11.3) (2021-09-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* **DialogActions:** [DialogActions] vertical from `spacing(4)` to `spacing(2)`
+* **update-icon:** [Icon] add connect icon
+* **Downshift:** [Downshift] change default group way to normal group, previous is expanded group
+
+### Features
+
+* **DatePicker:** migrate deprecated `RcButtonBar` to `RcIconButtonGroup` ([c69b7ac](https://github.com/ringcentral/juno/commit/c69b7ac696163956a17e0e5879884070680a637f))
+* **DatePicker:** support today disabled when today is not validate item ([0ddca3c](https://github.com/ringcentral/juno/commit/0ddca3c1d12e067393dcba9fb052e6e3b4eece84))
+* **Dialog:** support childrenSize with `DialogActions`, `DialogContent`, `DialogTitle` ([32d5ced](https://github.com/ringcentral/juno/commit/32d5cede898d6710a7964b5f0eeed7438454c759))
+* **Dialog:** support typography size with DialogContentText and Title ([fbdd52b](https://github.com/ringcentral/juno/commit/fbdd52b0c5c840eccff272cb2133aa7030929fd7))
+* **Dialog,Snackbar:** make Dialog, Snackbar support portalMnager ([22da29d](https://github.com/ringcentral/juno/commit/22da29d2ccc6e8bda99f8c9102703bee9178482a))
+* **DialogActions:** change default space between items to `spacing(2)` ([7d5cabc](https://github.com/ringcentral/juno/commit/7d5cabc1e8d901d05db2e96f2fb28aaae8ef8053))
+* **DialogActions:** support `reverse` and fix mui gutterBottom bug ([66ee6a0](https://github.com/ringcentral/juno/commit/66ee6a00b50df252dfd4b6c94e1f3b8b55933757))
+* **DialogActions:** when size is `small` default  direction to be  `vertical` ([6beed04](https://github.com/ringcentral/juno/commit/6beed04e05e91ecf279bac33844b689e908563f0))
+* **Downshift:** support `groupVariant` and `groupExpanded` ([8819d15](https://github.com/ringcentral/juno/commit/8819d1511a054913b84dc98cb65f206534c569b4))
+* **Downshift:** support action with `getFilterResultItems` to get current filter result items ([93c2811](https://github.com/ringcentral/juno/commit/93c281118113c4818b45a88643092a43258b95d2))
+* **PopupBox:** migrate to Dialog new API ([fd0a808](https://github.com/ringcentral/juno/commit/fd0a8084f4e7110fe47fffdec0a88d63355ddc3c))
+* **PortalHost:** fix some problem and refactor types ([aea62cb](https://github.com/ringcentral/juno/commit/aea62cb081ab17c2af12c6f2de95dadee3da1a3a))
+* **PortalHost:** init PortalHost ([94a3f5b](https://github.com/ringcentral/juno/commit/94a3f5b74bd30d397236a18afa98ce615d6af8af))
+* **PortalManager:** init PortalManager ([0a7de51](https://github.com/ringcentral/juno/commit/0a7de5157dac0a5d75b375b2067363955a9b23b9))
+* **Switch:** fix error token from `highContrast` to `neutral-f11` ([9a66a26](https://github.com/ringcentral/juno/commit/9a66a267ca236429baf7293acbcffcc807470121))
+* **update-icon:** [update-icon] update ([9b496f7](https://github.com/ringcentral/juno/commit/9b496f725093cd66599db88a1d23e2593bc54c57))
+* **useHighlightScroll:** support custom topHighlightIndex ([0487db5](https://github.com/ringcentral/juno/commit/0487db5f7f80da4c579c4a5d8f5e97872c2d178f))
+
+
+### Bug Fixes
+
+* **Downshift:** fix groupStateMap logic with group name ([fddf20b](https://github.com/ringcentral/juno/commit/fddf20b03b987b4bebd9ca4cdc71e7519f61aaaa))
+* **ListItem:** move default baseColorProp into style ([5772488](https://github.com/ringcentral/juno/commit/5772488d7f82a5237bbc5655b6d0b205f01d3278))
+
 ### [1.11.2](https://github.com/ringcentral/juno/compare/v1.11.1...v1.11.2) (2021-08-26)
 
 
