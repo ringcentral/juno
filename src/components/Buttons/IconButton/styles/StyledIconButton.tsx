@@ -145,7 +145,7 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
       &:hover {
         background-color: ${isPlain
           ? 'transparent'
-          : setOpacity(mainColor, isInverse ? '40' : '08')};
+          : setOpacity(mainColor, isInverse ? '24' : '08')};
 
         ${childrenClass} {
           color: ${setOpacity(mainColor, '88')};
@@ -162,7 +162,7 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
     ${focusVisible} {
       background-color: ${isPlain
         ? 'transparent'
-        : setOpacity(mainColor, isInverse ? '40' : '16')};
+        : setOpacity(mainColor, isInverse ? '32' : '16')};
 
       &:active {
         ${childrenClass} {
