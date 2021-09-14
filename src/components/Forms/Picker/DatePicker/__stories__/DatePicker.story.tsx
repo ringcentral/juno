@@ -1,6 +1,12 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 import moment from 'moment';
-import React, { ComponentProps, useMemo, useState } from 'react';
+import React, {
+  ComponentProps,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 
 import {
   notControlInDocTable,
@@ -8,6 +14,10 @@ import {
   sortInDocTable,
   switchToControlKnobs,
 } from '../../../../../storybook';
+import { Title } from '../../../../../storybook/components';
+import { isTestEnv } from '../../../../../storybook/isTestEnv';
+import { RcButton } from '../../../../Buttons';
+import { RcGrid } from '../../../../Grid';
 import { RcTypography } from '../../../../Typography';
 import { RcDatePicker } from '../DatePicker';
 
@@ -44,6 +54,7 @@ type DatePickerProps = ComponentProps<typeof RcDatePicker>;
 
 export const DatePicker: Story<DatePickerProps> = ({ value, ...args }) => {
   switchToControlKnobs();
+  const ref = useRef(null);
 
   const [selectedDate, handleDateChange] = useState<Date | null | undefined>(
     value,
@@ -53,8 +64,17 @@ export const DatePicker: Story<DatePickerProps> = ({ value, ...args }) => {
     handleDateChange(date);
   };
 
+  useEffect(() => {
+    console.log(ref);
+  }, []);
+
   return (
-    <RcDatePicker value={selectedDate} onChange={handleChange} {...args} />
+    <RcDatePicker
+      ref={ref}
+      value={selectedDate}
+      onChange={handleChange}
+      {...args}
+    />
   );
 };
 
@@ -81,6 +101,91 @@ DatePicker.parameters = {
   ],
 };
 
+const minDate = new Date();
+
+// TODO: need fix snapshot mock with date
+if (!isTestEnv) {
+  minDate.setDate(minDate.getDate() + 1);
+}
+
+const maxDate = new Date('2025-11-15');
+
+export const DatePickerWithRange: Story<DatePickerProps> = ({
+  value,
+  ...args
+}) => {
+  switchToControlKnobs();
+
+  const [selectedDate, setSelectedDate] = useState<Date | null | undefined>(
+    value,
+  );
+
+  const handleChange = (date: Date | null) => {
+    setSelectedDate(date);
+  };
+
+  return (
+    <RcGrid container spacing={4}>
+      <RcGrid item>
+        <Title>Min</Title>
+        <RcDatePicker min={minDate} {...args} />
+      </RcGrid>
+      <RcGrid item>
+        <Title>Max</Title>
+        <RcDatePicker max={maxDate} {...args} />
+      </RcGrid>
+      <RcGrid item>
+        <Title>Min and Max</Title>
+        <RcDatePicker min={minDate} max={maxDate} {...args} />
+      </RcGrid>
+      <RcGrid item>
+        <Title>disablePast</Title>
+        <RcDatePicker disablePast {...args} />
+      </RcGrid>
+      <RcGrid item>
+        <Title>disableFuture</Title>
+        <RcDatePicker disableFuture {...args} />
+      </RcGrid>
+      <RcGrid item>
+        <Title>init value invalid(2019-11-16~2020-11-20)</Title>
+        <RcDatePicker
+          min={new Date('2019-11-16')}
+          max={new Date('2020-11-20')}
+          value={selectedDate}
+          onChange={handleChange}
+          {...args}
+        />
+        <br /> <br />
+        <RcButton
+          onClick={() => {
+            setSelectedDate(new Date('2019-11-14'));
+          }}
+        >
+          set past date of min(will auto reset to valid min range)
+        </RcButton>
+        <br /> <br />
+        <RcButton
+          onClick={() => {
+            setSelectedDate(new Date('2020-11-25'));
+          }}
+        >
+          set future date of max(will auto reset to valid max range)
+        </RcButton>
+      </RcGrid>
+    </RcGrid>
+  );
+};
+
+DatePickerWithRange.storyName = 'DatePicker with range';
+
+DatePickerWithRange.args = {
+  label: RcDatePicker.defaultProps!.label,
+  value: new Date('2019-11-15'),
+  placeholder: 'when?',
+};
+
+DatePickerWithRange.argTypes = {};
+
 // * if you want to custom moment option, you need set that global by yourself
 moment.locale('zh-cn', {
   months: '一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月'.split(
@@ -88,8 +193,6 @@ moment.locale('zh-cn', {
   ),
   weekdaysShort: '(日)_(一)_(二)_(三)_(四)_(五)_(六)'.split('_'),
 });
-
-type DatePickerExamplesProps = ComponentProps<typeof RcDatePicker>;
 
 export const DatePickerExamples: Story<DatePickerProps> = () => {
   const [selectedDate, handleDateChange] = useState<Date | null>(

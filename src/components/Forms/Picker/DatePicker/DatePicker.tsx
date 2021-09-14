@@ -1,8 +1,19 @@
+import { useControlled } from '@material-ui/core/utils';
 import MomentUtils from '@date-io/moment';
-import { MuiPickersUtilsProvider } from '@material-ui/pickers';
+import {
+  MuiPickersUtilsProvider,
+  useUtils as useMuiUtils,
+} from '@material-ui/pickers';
+import { findClosestEnabledDate as MuiFindClosestEnabledDate } from '@material-ui/pickers/_helpers/date-utils';
 import { MaterialUiPickersDate as MuiPickersDate } from '@material-ui/pickers/typings/date';
 import moment from 'moment';
-import React, { FunctionComponent, useMemo, useRef } from 'react';
+import React, {
+  forwardRef,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+} from 'react';
 
 import {
   combineClasses,
@@ -13,8 +24,8 @@ import {
   RcClassesProps,
   styled,
   useEventCallback,
-  withDeprecatedCheck,
   useThemeProps,
+  withDeprecatedCheck,
 } from '../../../../foundation';
 import DateBorder from '../../../../icon/DateBorder';
 import { RcPopoverProps } from '../../../Popover';
@@ -25,6 +36,7 @@ import {
 } from '../utils';
 import { Calendar, CalendarProps } from './Calendar';
 import {
+  invalidateDateInRange,
   RcDatePickerClasses,
   ScreenReaderProps,
   ScreenReaderProvider,
@@ -35,6 +47,13 @@ type RcDatePickerSize = RcBaseSize<'small' | 'medium'>;
 type RcDatePickerProps = {
   /** size for date picker, default with medium */
   size?: RcDatePickerSize;
+  /**
+   * Calendar onChange
+   *
+   * @param {Date} date update date value
+   * @param {boolean} fromUserSelect is that change come from user select day, when `false` mean that is come from range limitation
+   */
+  onChange?: (date: Date | null, fromUserSelect?: boolean) => void;
   /** i18n locale country */
   locale?: string;
   /** value for picker */
@@ -45,10 +64,10 @@ type RcDatePickerProps = {
   formatString?: string;
   /** when hover on the textField, if show the clearBtn. With default is true. */
   clearBtn?: boolean;
-  /** Min date @DateIOType */
-  min?: MuiPickersDate;
-  /** Max date @DateIOType */
-  max?: MuiPickersDate;
+  /** Min date */
+  min?: Date | MuiPickersDate;
+  /** Max date */
+  max?: Date | MuiPickersDate;
   /** Text label for Today button */
   todayButtonText?: string;
   /** @deprecated Min date @DateIOType, using min instead */
@@ -57,7 +76,10 @@ type RcDatePickerProps = {
   maxDate?: MuiPickersDate;
   /** @deprecated please use value to replace that */
   date?: RcDatePickerProps['value'];
-} & RcBaseProps<Partial<CalendarProps>, 'date' | 'dateRange'> &
+} & RcBaseProps<
+  Partial<CalendarProps>,
+  'date' | 'dateRange' | 'handleDaySelect' | 'getInvalidateDateInRange'
+> &
   RcBaseProps<PickerTextFieldProps, 'value' | 'children'> &
   Pick<RcPopoverProps, 'onClose'> &
   RcClassesProps<'popover' | 'popoverPaper'>;
@@ -67,8 +89,7 @@ const defaultMaxDate = new Date('2100-01-01');
 const DEFAULT_FORMAT = 'MM/DD/YYYY';
 
 /** @release */
-const _RcDatePicker: FunctionComponent<RcDatePickerProps> = (inProps) => {
-  const props = useThemeProps({ props: inProps, name: 'RcDatePicker' });
+const InnerRcDatePicker = forwardRef<any, RcDatePickerProps>((props, ref) => {
   const {
     date,
     value = date,
@@ -76,8 +97,8 @@ const _RcDatePicker: FunctionComponent<RcDatePickerProps> = (inProps) => {
     formatString,
     locale,
     todayButtonText,
-    minDate,
-    maxDate,
+    minDate: minDateProp,
+    maxDate: maxDateProp,
     min,
     max,
     disableFuture,
@@ -86,7 +107,7 @@ const _RcDatePicker: FunctionComponent<RcDatePickerProps> = (inProps) => {
     onMonthChange,
     renderDay,
     disabled,
-    shouldDisableDate,
+    shouldDisableDate: shouldDisableDateProp,
     size,
     onClose,
     onClear,
@@ -95,37 +116,79 @@ const _RcDatePicker: FunctionComponent<RcDatePickerProps> = (inProps) => {
     screenReaderProps,
     ...rest
   } = props;
-  const _maxDate = maxDate || max;
-  const _minDate = minDate || min;
-  const textFieldRef = useRef<PickerTextFieldRef>(null);
+  const utils = useMuiUtils();
 
-  const handleChange = useEventCallback(
-    (date: Date | null, isFinish?: boolean | undefined) => {
-      textFieldRef.current?.close();
-      onChange?.(date, isFinish);
-    },
-  );
-
-  const handleClear = useEventCallback((evt) => {
-    onClear?.(evt);
-    handleChange?.(null);
+  const [controlledValue, setControlledValue] = useControlled({
+    controlled: value,
+    default: null,
+    name: 'RcDatePicker',
   });
 
-  const momentValue = useMemo(() => (value ? moment(value) : null), [value]);
+  const emitValueRef = useRef<Date | null>(null);
+
+  const maxDate = minDateProp || max;
+  const minDate = maxDateProp || min;
+
+  const actionRef = useRef<PickerTextFieldRef>(null);
 
   const dateRange = useMemo(
     () => ({
-      min: moment(_minDate || defaultMinDate),
-      max: moment(_maxDate || defaultMaxDate),
+      min: moment(minDate || defaultMinDate),
+      max: moment(maxDate || defaultMaxDate),
     }),
-    [_minDate, _maxDate],
+    [minDate, maxDate],
   );
 
-  const instance = useMemo(() => new MomentUtils({ locale, moment }), [locale]);
+  const getInvalidateDateInRange = useEventCallback((day: MuiPickersDate) =>
+    invalidateDateInRange(
+      day,
+      { dateRange, now: utils.date(), disableFuture, disablePast },
+      utils,
+    ),
+  );
+
+  const shouldDisableDate = useEventCallback((day: MuiPickersDate) => {
+    return (
+      Boolean(getInvalidateDateInRange(day)) ||
+      Boolean(shouldDisableDateProp?.(day))
+    );
+  });
+
+  const getClosestEnableDate = useCallback(
+    (currDate: moment.Moment) =>
+      MuiFindClosestEnabledDate({
+        date: currDate,
+        utils,
+        minDate: utils.date(dateRange.min),
+        maxDate: utils.date(dateRange.max),
+        disablePast: Boolean(disablePast),
+        disableFuture: Boolean(disableFuture),
+        shouldDisableDate,
+      }),
+    [
+      dateRange.max,
+      dateRange.min,
+      disableFuture,
+      disablePast,
+      shouldDisableDate,
+      utils,
+    ],
+  );
+
+  const initDate = useMemo(() => {
+    return getClosestEnableDate(moment(utils.date()));
+  }, [getClosestEnableDate, utils]);
+
+  const momentValue = useMemo(
+    () => (controlledValue ? moment(controlledValue) : null),
+    [controlledValue],
+  );
+
+  const nowDate = momentValue || initDate;
 
   const textFiledValue = useMemo(
-    () => (momentValue ? instance.format(momentValue, formatString!) : ''),
-    [momentValue, instance, formatString],
+    () => (momentValue ? utils.format(momentValue, formatString!) : ''),
+    [momentValue, utils, formatString],
   );
 
   const PopoverProps = useMemo(
@@ -158,42 +221,90 @@ const _RcDatePicker: FunctionComponent<RcDatePickerProps> = (inProps) => {
     [classes],
   );
 
+  const handleChange = (
+    toDate: Date | null,
+    fromUserSelect?: boolean | undefined,
+  ) => {
+    actionRef.current?.close();
+
+    setControlledValue(toDate);
+    // save inner change value
+    emitValueRef.current = toDate;
+
+    onChange?.(toDate, fromUserSelect);
+  };
+
+  const handleClear = useEventCallback((evt) => {
+    onClear?.(evt);
+    handleChange?.(null);
+  });
+
+  const handleDaySelect = (day: MuiPickersDate, fromUserSelect = true) => {
+    const newDay = day ? utils.startOfDay(day)!.toDate() : null;
+
+    handleChange(newDay, fromUserSelect);
+  };
+
+  useEffect(() => {
+    if (
+      // only when inner value change need check again is that value is valid
+      momentValue &&
+      value !== emitValueRef.current &&
+      shouldDisableDate(momentValue)
+    ) {
+      const closestEnabledDate = getClosestEnableDate(momentValue);
+
+      handleDaySelect(closestEnabledDate, false);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [value]);
+
+  return (
+    <PickerTextField
+      ref={ref}
+      action={actionRef}
+      onClear={handleClear}
+      PopoverProps={PopoverProps}
+      value={textFiledValue}
+      disabled={disabled}
+      ActionSymbol={DateBorder}
+      {...rest}
+    >
+      <ScreenReaderProvider screenReaderProps={screenReaderProps!}>
+        <Calendar
+          size={size}
+          classes={calendarClasses}
+          date={nowDate}
+          dateRange={dateRange}
+          handleDaySelect={handleDaySelect}
+          disableFuture={disableFuture}
+          disablePast={disablePast}
+          loadingIndicator={loadingIndicator}
+          onMonthChange={onMonthChange}
+          renderDay={renderDay}
+          shouldDisableDate={shouldDisableDate}
+          getInvalidateDateInRange={getInvalidateDateInRange}
+          todayButtonText={todayButtonText}
+          formatString={formatString}
+        />
+      </ScreenReaderProvider>
+    </PickerTextField>
+  );
+});
+
+const _RcDatePicker = forwardRef<any, RcDatePickerProps>((inProps, ref) => {
+  const props = useThemeProps({ props: inProps, name: 'RcDatePicker' });
+
   return (
     <MuiPickersUtilsProvider
       utils={MomentUtils}
-      locale={locale}
+      locale={props.locale}
       libInstance={moment}
     >
-      <PickerTextField
-        ref={textFieldRef}
-        onClear={handleClear}
-        PopoverProps={PopoverProps}
-        value={textFiledValue}
-        disabled={disabled}
-        ActionSymbol={DateBorder}
-        {...rest}
-      >
-        <ScreenReaderProvider screenReaderProps={screenReaderProps!}>
-          <Calendar
-            size={size}
-            classes={calendarClasses}
-            date={momentValue || moment(new Date())}
-            dateRange={dateRange}
-            onChange={handleChange}
-            disableFuture={disableFuture}
-            disablePast={disablePast}
-            loadingIndicator={loadingIndicator}
-            onMonthChange={onMonthChange}
-            renderDay={renderDay}
-            shouldDisableDate={shouldDisableDate}
-            todayButtonText={todayButtonText}
-            formatString={formatString}
-          />
-        </ScreenReaderProvider>
-      </PickerTextField>
+      <InnerRcDatePicker ref={ref} {...props} />
     </MuiPickersUtilsProvider>
   );
-};
+});
 
 const RcDatePicker = styled(
   withDeprecatedCheck(
@@ -224,6 +335,7 @@ RcDatePicker.defaultProps = {
   formatString: DEFAULT_FORMAT,
   size: 'medium',
   todayButtonText: 'Today',
+  locale: 'en',
   label: 'Date',
 };
 

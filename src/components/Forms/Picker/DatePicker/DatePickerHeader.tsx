@@ -21,7 +21,7 @@ type ViewType = 'day' | 'year';
 
 type DatePickerHeaderProps = {
   /** the month on display */
-  currentMonth: DateType;
+  focusedDate: DateType;
   /** with options 'right' | 'left' */
   slideDirection: MuiSlideDirection;
   /** the current view mode, with options 'day' | 'year'. */
@@ -46,7 +46,7 @@ type DatePickerHeaderProps = {
 const DatePickerHeader: FunctionComponent<DatePickerHeaderProps> = memo(
   (props) => {
     const {
-      currentMonth: currentMonthProp,
+      focusedDate,
       onMonthChange,
       disablePrevMonth,
       disableNextMonth,
@@ -56,11 +56,10 @@ const DatePickerHeader: FunctionComponent<DatePickerHeaderProps> = memo(
       classes,
     } = props;
     const utils = useMuiUtils();
-    const currentMonth = utils.startOfMonth(currentMonthProp);
 
-    const preMonth = utils.getPreviousMonth(currentMonth);
-    const nextMonth = utils.getNextMonth(currentMonth);
-    const monthLabel = utils.getCalendarHeaderText(currentMonth);
+    const preMonth = utils.getPreviousMonth(focusedDate);
+    const nextMonth = utils.getNextMonth(focusedDate);
+    const monthLabel = utils.getCalendarHeaderText(focusedDate);
 
     const changeFromRef = useRef<'next' | 'previous'>();
 
@@ -87,12 +86,12 @@ const DatePickerHeader: FunctionComponent<DatePickerHeaderProps> = memo(
 
     const nextMonthAriaLabel = getSwitchMonthAriaLabel?.(
       true,
-      utils.getMonthText(currentMonth),
+      utils.getMonthText(focusedDate),
     );
 
     const previousMonthAriaLabel = getSwitchMonthAriaLabel?.(
       false,
-      utils.getMonthText(currentMonth),
+      utils.getMonthText(focusedDate),
     );
 
     return (

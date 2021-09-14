@@ -1,6 +1,5 @@
 import MuiCircularProgress from '@material-ui/core/CircularProgress';
 import { useUtils as useMuiUtils } from '@material-ui/pickers';
-import { findClosestEnabledDate as MuiFindClosestEnabledDate } from '@material-ui/pickers/_helpers/date-utils';
 import { runKeyHandler } from '@material-ui/pickers/_shared/hooks/useKeyDown';
 import { MaterialUiPickersDate as MuiPickersDate } from '@material-ui/pickers/typings/date';
 import { SlideDirection as MuiSlideDirection } from '@material-ui/pickers/views/Calendar/SlideTransition';
@@ -20,8 +19,8 @@ import {
   usePrevious,
   useResultRef,
 } from '../../../../foundation';
-import { transitionendSubscriber } from '../../../Transitions/utils';
 import { RcButton } from '../../../Buttons';
+import { transitionendSubscriber } from '../../../Transitions/utils';
 import {
   DatePickerHeader,
   DatePickerHeaderProps,
@@ -40,7 +39,6 @@ import {
 } from './styles';
 import {
   focusDayElement,
-  invalidateDateInRange,
   isSameYearAndMonth,
   onTransitionEnd,
   RcDatePickerClasses,
@@ -49,10 +47,6 @@ import {
 import { Years } from './Years';
 
 type CalendarProps = {
-  /** Calendar Date @DateIOType */
-  date: MuiPickersDate;
-  /** Calendar onChange */
-  onChange?: (date: Date | null, isFinish?: boolean) => void;
   /** DateRange for setting */
   dateRange: {
     /**  Min date @DateIOType */
@@ -80,11 +74,15 @@ type CalendarProps = {
     dayComponent: JSX.Element,
   ) => JSX.Element;
   /** Disable specific date @DateIOType */
-  shouldDisableDate?: (day: MuiPickersDate) => boolean;
+  shouldDisableDate: (day: MuiPickersDate) => boolean;
   /** Callback firing on month change. Return promise to render spinner till it will not be resolved @DateIOType */
   onMonthChange?: (date: MuiPickersDate) => void | Promise<void>;
   /** Custom loading indicator  */
   loadingIndicator?: JSX.Element;
+
+  date: MuiPickersDate;
+  handleDaySelect: (day: MuiPickersDate, fromUserSelect?: boolean) => void;
+  getInvalidateDateInRange: (day: MuiPickersDate) => false | MuiPickersDate;
 } & Pick<DayProps, 'size'> &
   RcClassesProps<'calendarSlider' | 'progress' | 'footer'> &
   Pick<DatePickerHeaderProps, 'classes'>;
@@ -95,15 +93,16 @@ const Calendar = forwardRef<any, CalendarProps>(
       onMonthChange,
       size,
       date,
-      shouldDisableDate: shouldDisableDateProp,
+      shouldDisableDate,
       dateRange,
-      onChange,
       todayButtonText,
       loadingIndicator,
       disablePast,
       disableFuture,
       renderDay,
       classes,
+      handleDaySelect,
+      getInvalidateDateInRange,
     },
     ref,
   ) => {
@@ -117,7 +116,17 @@ const Calendar = forwardRef<any, CalendarProps>(
 
     // * `getWeekdays` not set locale, need set locale before get
     moment.locale(utils.locale);
-    const weekdaysRef = useResultRef(() => utils.getWeekdays());
+
+    const { current: weekdays } = useResultRef(() => utils.getWeekdays());
+
+    const { now, isToDayDisabled } = useMemo(() => {
+      const nowDate = utils.date();
+
+      return {
+        now: nowDate,
+        isToDayDisabled: shouldDisableDate(nowDate),
+      };
+    }, [shouldDisableDate, utils]);
 
     const [focusedDate, setFocusedDate] = useState(date);
     const [view, setView] = useState<ViewType>('day');
@@ -131,8 +140,6 @@ const Calendar = forwardRef<any, CalendarProps>(
     const { min, max } = dateRange;
 
     const currentMonthNumber = utils.getMonth(focusedDate);
-
-    const { current: now } = useResultRef(() => utils.date());
 
     const pickClasses = useMemo(
       () => pick(classes, ['header', 'leftArrow', 'rightArrow', 'select']),
@@ -148,12 +155,6 @@ const Calendar = forwardRef<any, CalendarProps>(
       weeks.current = utils.getWeekArray(focusedDate);
     }
 
-    const handleDaySelect = (day: MuiPickersDate, isFinish = true) => {
-      const newDay = day ? utils.startOfDay(day)!.toDate() : null;
-
-      onChange!(newDay, isFinish);
-    };
-
     const viewChange = view !== previousView;
 
     const pushToLoadingQueue = () => {
@@ -167,7 +168,8 @@ const Calendar = forwardRef<any, CalendarProps>(
     const handleMonthChange = useEventCallback(
       (newMonth: MuiPickersDate, direction: MuiSlideDirection) => {
         setSlideDirection(direction);
-        setFocusedDate(newMonth);
+
+        setFocusedDate(getInvalidateDateInRange(newMonth) || newMonth);
 
         if (onMonthChange) {
           const returnVal = onMonthChange(newMonth);
@@ -184,23 +186,6 @@ const Calendar = forwardRef<any, CalendarProps>(
     const handleChangeView = useEventCallback(() => {
       setView(view === 'day' ? 'year' : 'day');
     });
-
-    const getInvalidateDateInRange = useEventCallback((day: MuiPickersDate) =>
-      invalidateDateInRange(
-        day,
-        { dateRange, now, disableFuture, disablePast },
-        utils,
-      ),
-    );
-
-    const shouldDisableDate = useEventCallback((day: MuiPickersDate) => {
-      return (
-        Boolean(getInvalidateDateInRange(day)) ||
-        Boolean(shouldDisableDateProp?.(day))
-      );
-    });
-
-    const isToDayDisabled = shouldDisableDate(now);
 
     const disableNextMonth = useMemo(() => {
       const nextStartDay = utils.startOfMonth(utils.getNextMonth(focusedDate));
@@ -223,18 +208,23 @@ const Calendar = forwardRef<any, CalendarProps>(
     const handleKeyDown = useEventCallback((event: React.KeyboardEvent) => {
       const moveDay = (value: number) => {
         const day = utils.addDays(focusedDate, value);
+
         if (day && !shouldDisableDate(day)) {
           const newMonthNumber = utils.getMonth(day);
 
           if (newMonthNumber !== currentMonthNumber) {
-            handleMonthChange(
-              utils.startOfMonth(day),
+            return handleMonthChange(
+              day,
               newMonthNumber > currentMonthNumber ? 'left' : 'right',
             );
           }
 
           setFocusedDate(day);
         }
+      };
+
+      const goToDate = (day: MuiPickersDate) => {
+        setFocusedDate(getInvalidateDateInRange(day) || day);
       };
 
       const confirmDate = () => {
@@ -247,6 +237,8 @@ const Calendar = forwardRef<any, CalendarProps>(
         ArrowDown: () => moveDay(7),
         ArrowLeft: () => moveDay(-1),
         ArrowRight: () => moveDay(1),
+        Home: () => goToDate(utils.startOfMonth(focusedDate)),
+        End: () => goToDate(utils.endOfMonth(focusedDate)),
         Enter: confirmDate,
         ' ': confirmDate,
       });
@@ -262,14 +254,14 @@ const Calendar = forwardRef<any, CalendarProps>(
     const header = useMemo(
       () => (
         <StyledDaysHeader>
-          {weekdaysRef.current.map((day) => (
+          {weekdays.map((day) => (
             <StyledDayLabel size={size!} key={day} variant="caption">
               {day}
             </StyledDayLabel>
           ))}
         </StyledDaysHeader>
       ),
-      [size],
+      [size, weekdays],
     );
 
     const renderDays = (week: MuiPickersDate[]) => {
@@ -384,6 +376,7 @@ const Calendar = forwardRef<any, CalendarProps>(
           return (
             <Years
               date={focusedDate}
+              size={size}
               minDate={min!}
               maxDate={max!}
               onYearChange={(day) => {
@@ -416,20 +409,6 @@ const Calendar = forwardRef<any, CalendarProps>(
     }, [previousView, view, viewChange]);
 
     useLayoutEffect(() => {
-      if (shouldDisableDate(date)) {
-        const closestEnabledDate = MuiFindClosestEnabledDate({
-          date,
-          utils,
-          minDate: utils.date(min),
-          maxDate: utils.date(max),
-          disablePast: Boolean(disablePast),
-          disableFuture: Boolean(disableFuture),
-          shouldDisableDate,
-        });
-
-        handleDaySelect(closestEnabledDate, false);
-      }
-
       focusDayElement();
 
       calendarRef.current = document.querySelector(
@@ -452,7 +431,7 @@ const Calendar = forwardRef<any, CalendarProps>(
         <DatePickerHeader
           classes={pickClasses}
           size={size}
-          currentMonth={focusedDate!}
+          focusedDate={focusedDate!}
           slideDirection={slideDirection}
           view={view}
           onMonthChange={handleMonthChange}
@@ -466,11 +445,7 @@ const Calendar = forwardRef<any, CalendarProps>(
   },
 );
 
-Calendar.defaultProps = {
-  disablePast: false,
-  disableFuture: false,
-  onChange: () => {},
-};
+Calendar.defaultProps = {};
 
 Calendar.displayName = 'RcCalendar';
 

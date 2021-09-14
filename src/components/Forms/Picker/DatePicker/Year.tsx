@@ -18,6 +18,8 @@ type YearProps = {
   selected?: boolean;
   /** the value of the year */
   value: number | null;
+  /** tabindex */
+  tabIndex?: number;
 };
 
 const Year = memo(
@@ -46,7 +48,6 @@ const Year = memo(
 
     return (
       <StyledYear
-        tabIndex={selected ? 0 : -1}
         onClick={handleClick}
         onKeyPress={handleClick}
         ref={ref}

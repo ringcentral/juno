@@ -1,18 +1,16 @@
 import { DateType } from '@date-io/type';
 import { useUtils as useMuiUtils } from '@material-ui/pickers';
-import { runKeyHandler } from '@material-ui/pickers/_shared/hooks/useKeyDown';
 import { MaterialUiPickersDate as MuiPickersDate } from '@material-ui/pickers/typings/date';
-import React, {
-  forwardRef,
-  useLayoutEffect,
-  useMemo,
-  useRef,
-  useState,
-} from 'react';
+import React, { forwardRef, useLayoutEffect, useMemo, useRef } from 'react';
 
-import { useEventCallback } from '../../../../foundation';
+import {
+  useEventCallback,
+  useForkRef,
+  useKeyboardMoveFocus,
+  useOnlyOneFocusable,
+} from '../../../../foundation';
+import { RcDatePickerProps } from './DatePicker';
 import { YearsWrapper } from './styles';
-import { invalidateDateInRange } from './utils';
 import { Year } from './Year';
 
 type YearsProps = {
@@ -30,14 +28,14 @@ type YearsProps = {
   onYearChange: (date: MuiPickersDate) => void;
   /** now date */
   now: MuiPickersDate;
-};
-const YEARS_IN_ROW = 4;
+} & Pick<RcDatePickerProps, 'size'>;
 
 const Years = forwardRef<any, YearsProps>((props, ref) => {
   const {
     date,
     onYearChange,
     minDate,
+    size,
     maxDate,
     disablePast,
     disableFuture,
@@ -45,14 +43,18 @@ const Years = forwardRef<any, YearsProps>((props, ref) => {
   } = props;
   const utils = useMuiUtils();
 
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const combineRef = useForkRef(containerRef, ref);
+
   const selectedYearRef = useRef<HTMLButtonElement>(null);
   const currentYear = utils.getYear(date || now);
-  const [focusedYear, setFocusedYear] = useState<number>(currentYear);
 
-  const min = useMemo(() => utils.startOfMonth(minDate), [minDate, utils]);
-  const max = useMemo(() => utils.endOfMonth(maxDate), [maxDate, utils]);
-
-  const { current: years } = useRef(utils.getYearRange(minDate, maxDate));
+  const years = useMemo(() => utils.getYearRange(minDate, maxDate), [
+    maxDate,
+    minDate,
+    utils,
+  ]);
 
   const onYearSelect = useEventCallback((year: number) => {
     const newDate = utils.setYear(date, year);
@@ -60,58 +62,61 @@ const Years = forwardRef<any, YearsProps>((props, ref) => {
     onYearChange(newDate);
   });
 
-  const handleKeyDown = useEventCallback((event: React.KeyboardEvent) => {
-    const validateThenSetYear = (value: number) => {
-      if (
-        !invalidateDateInRange(
-          utils.setYear(utils.date(), value),
-          {
-            dateRange: { min, max },
-            now,
-            disableFuture,
-            disablePast,
-          },
-          utils,
-        )
-      ) {
-        setFocusedYear(value);
-      }
-    };
+  const focusedIndexRef = useRef(0);
 
-    runKeyHandler(event.nativeEvent as KeyboardEvent, {
-      ArrowUp: () => validateThenSetYear(focusedYear - YEARS_IN_ROW),
-      ArrowDown: () => validateThenSetYear(focusedYear + YEARS_IN_ROW),
-      ArrowLeft: () => validateThenSetYear(focusedYear - 1),
-      ArrowRight: () => validateThenSetYear(focusedYear + 1),
-      Enter: () => onYearSelect(focusedYear),
-      ' ': () => onYearSelect(focusedYear),
-    });
+  const focusedYear = years[focusedIndexRef.current]?.year();
+
+  const { focusIndex, getItemProps } = useOnlyOneFocusable({
+    focusedIndexRef,
+    containerRef,
+  });
+
+  const getOptionDisabled = (year: MuiPickersDate) =>
+    Boolean(
+      (disablePast && utils.isBeforeYear(year, now)) ||
+        (disableFuture && utils.isAfterYear(year, now)),
+    );
+
+  const columns = size === 'small' ? 2 : 4;
+
+  const { onKeyFocusedIndexHandle: handleKeyDown } = useKeyboardMoveFocus({
+    options: years,
+    focusedIndexRef,
+    columns,
+    infinite: 'order',
+    onFocusedIndexChange: (event, toIndex) => {
+      focusIndex(toIndex);
+      event?.preventDefault();
+    },
+    getOptionDisabled,
   });
 
   useLayoutEffect(() => {
-    selectedYearRef.current!.focus();
-  }, [focusedYear]);
+    const index = years.findIndex((x) => utils.getYear(x) === currentYear);
+
+    focusIndex(index);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <YearsWrapper
       role="presentation"
       aria-label=" "
+      columns={columns}
+      ref={combineRef}
       onKeyDown={handleKeyDown}
-      ref={ref}
     >
-      {years.map((year) => {
+      {years.map((year, index) => {
         const yearNumber = utils.getYear(year);
         const selected = yearNumber === currentYear;
         const focused = yearNumber === focusedYear;
 
-        const disabled = Boolean(
-          (disablePast && utils.isBeforeYear(year, now)) ||
-            (disableFuture && utils.isAfterYear(year, now)),
-        );
+        const disabled = getOptionDisabled(year);
 
         return (
           <li key={utils.getYearText(year)}>
             <Year
+              {...getItemProps(index)}
               ref={focused ? selectedYearRef : undefined}
               key={utils.getYearText(year)}
               selected={selected}
