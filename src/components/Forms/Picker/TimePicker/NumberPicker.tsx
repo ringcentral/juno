@@ -200,7 +200,7 @@ const _NumberPicker = forwardRef<NumberPickerRef, NumberPickerProps>(
       [forceUpdate, innerValue, innerValueRef, setInnerValue],
     );
 
-    const iconSize = useMemo<RcIconButtonSize>(() => {
+    const iconSize: RcIconButtonSize = (() => {
       switch (size) {
         case 'small':
           return 'medium';
@@ -208,7 +208,7 @@ const _NumberPicker = forwardRef<NumberPickerRef, NumberPickerProps>(
         default:
           return 'large';
       }
-    }, [size]);
+    })();
 
     return (
       <StyledNumberPicker

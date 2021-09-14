@@ -119,12 +119,12 @@ const Calendar = forwardRef<any, CalendarProps>(
 
     const { current: weekdays } = useResultRef(() => utils.getWeekdays());
 
-    const { now, isToDayDisabled } = useMemo(() => {
+    const { now, isTodayDisabled } = useMemo(() => {
       const nowDate = utils.date();
 
       return {
         now: nowDate,
-        isToDayDisabled: shouldDisableDate(nowDate),
+        isTodayDisabled: shouldDisableDate(nowDate),
       };
     }, [shouldDisableDate, utils]);
 
@@ -363,7 +363,7 @@ const Calendar = forwardRef<any, CalendarProps>(
                 <RcButton
                   variant="plain"
                   onClick={backToToday}
-                  disabled={isToDayDisabled}
+                  disabled={isTodayDisabled}
                   aria-label={backToTodayAriaLabel}
                   data-test-automation-id="date-picker-today"
                 >
