@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { forwardRef } from 'react';
 
 import {
   css,
@@ -9,10 +9,10 @@ import {
 import { RcTextField, RcTextFieldProps } from '../../TextField';
 import { RcTextFieldInputClasses } from '../../TextField/utils';
 
-const _RcTextField: FunctionComponent<RcTextFieldProps> = (props) => {
+const _RcTextField = forwardRef<any, RcTextFieldProps>((props, ref) => {
   const { ...rest } = props;
-  return <RcTextField {...rest} clearBtn={false} />;
-};
+  return <RcTextField ref={ref} {...rest} clearBtn={false} />;
+});
 
 const cleanStyle: RcThemedStyled<RcTextFieldProps, any> = ({
   value,

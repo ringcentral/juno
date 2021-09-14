@@ -1,6 +1,6 @@
 import { runKeyHandler } from '@material-ui/pickers/_shared/hooks/useKeyDown';
 import React, {
-  FunctionComponent,
+  forwardRef,
   useCallback,
   useLayoutEffect,
   useMemo,
@@ -18,8 +18,8 @@ import {
   styled,
   useDepsChange,
   useEventCallback,
-  withDeprecatedCheck,
   useThemeProps,
+  withDeprecatedCheck,
 } from '../../../../foundation';
 import TimeBorderIcon from '../../../../icon/TimeBorder';
 import {
@@ -44,6 +44,7 @@ import {
   getFormattedTime,
   getHourAndMinute,
   getNumberPickerBoundary,
+  getPeriod,
   getRangeBoundary,
   getTimestamp,
   getTimestampFromDate,
@@ -55,7 +56,6 @@ import {
   timestampToDate,
   twelveHourSystemSource,
   twentyFourHourSystemSource,
-  getPeriod,
 } from './utils';
 
 type RcTimePickerSize = RcBaseSize<'small' | 'medium'>;
@@ -125,7 +125,7 @@ type UpdateTimeOption = {
   period?: TIME_SYSTEM_TEXT;
 };
 
-const _RcTimePicker: FunctionComponent<RcTimePickerProps> = (inProps) => {
+const _RcTimePicker = forwardRef<any, RcTimePickerProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcTimePicker' });
   const {
     isTwelveHourSystem,
@@ -158,7 +158,7 @@ const _RcTimePicker: FunctionComponent<RcTimePickerProps> = (inProps) => {
     });
   }
 
-  const textFieldRef = useRef<PickerTextFieldRef>(null);
+  const actionRef = useRef<PickerTextFieldRef>(null);
   const hourRef = useRef<NumberPickerRef>(null);
   const minuteRef = useRef<NumberPickerRef>(null);
   const periodRef = useRef<ToggleTextRef>(null);
@@ -302,7 +302,7 @@ const _RcTimePicker: FunctionComponent<RcTimePickerProps> = (inProps) => {
   });
 
   const closeMenu = useEventCallback(() => {
-    textFieldRef.current?.close();
+    actionRef.current?.close();
   });
 
   const setHourSelectionShow = useEventCallback(() => setSelectionType('hour'));
@@ -490,7 +490,8 @@ const _RcTimePicker: FunctionComponent<RcTimePickerProps> = (inProps) => {
 
   return (
     <PickerTextField
-      ref={textFieldRef}
+      ref={ref}
+      action={actionRef}
       onClear={handleClear}
       value={textFiledValueRef.current}
       disabled={disabled}
@@ -569,7 +570,7 @@ const _RcTimePicker: FunctionComponent<RcTimePickerProps> = (inProps) => {
       </StyledPickerPopperWrap>
     </PickerTextField>
   );
-};
+});
 
 /** @release */
 const RcTimePicker = styled(

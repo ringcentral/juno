@@ -2,6 +2,7 @@ import { PopoverOrigin } from '@material-ui/core/Popover';
 import uniqueId from 'lodash/uniqueId';
 import React, {
   forwardRef,
+  Ref,
   useImperativeHandle,
   useMemo,
   useRef,
@@ -52,9 +53,12 @@ type PickerTextFieldProps = {
   children: React.ReactNode;
   /** action icon */
   ActionSymbol?: SvgSymbol;
+  /** can manual trigger close by ref */
+  action?: Ref<PickerTextFieldRef>;
 } & Pick<
   RcTextFieldProps,
   | 'value'
+  | 'inputRef'
   | 'placeholder'
   | 'gutterBottom'
   | 'disabled'
@@ -85,186 +89,184 @@ type PickerTextFieldRef = {
   close: () => void;
 };
 
-const PickerTextField = forwardRef<PickerTextFieldRef, PickerTextFieldProps>(
-  (props, ref) => {
-    const {
-      onClear,
-      InputProps,
-      disabled,
-      onKeyDown,
-      inputProps: { announcementText, ...inputProps } = {},
-      PopoverProps: PopoverPropsProp,
-      children,
-      ActionSymbol,
-      clearBtn,
-      clearButtonProps,
-      value,
-      ...rest
-    } = props;
+const PickerTextField = forwardRef<any, PickerTextFieldProps>((props, ref) => {
+  const {
+    onClear,
+    InputProps,
+    disabled,
+    action,
+    onKeyDown,
+    inputProps: { announcementText, ...inputProps } = {},
+    PopoverProps: PopoverPropsProp,
+    children,
+    ActionSymbol,
+    clearBtn,
+    clearButtonProps,
+    value,
+    ...rest
+  } = props;
 
-    const { current: idForInput } = useRef(uniqueId(`${PICKER_DISPLAY_NAME}-`));
-    const [anchorEl, setAnchorEl] = useState<HTMLDivElement | null>(null);
+  const { current: idForInput } = useRef(uniqueId(`${PICKER_DISPLAY_NAME}-`));
+  const [anchorEl, setAnchorEl] = useState<HTMLDivElement | null>(null);
 
-    const idForHelperText = `${idForInput}-helper-text`;
-    const idForInstruction = `${idForInput}-instruction`;
+  const idForHelperText = `${idForInput}-helper-text`;
+  const idForInstruction = `${idForInput}-instruction`;
 
-    const handlePickerClick = useEventCallback(
-      (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-        if (!disabled && !anchorEl) {
-          setAnchorEl(event.currentTarget);
-        }
-      },
-    );
-
-    const handleA11yKeydown = useA11yKeyEvent(
-      (event: React.KeyboardEvent<HTMLDivElement>) => {
+  const handlePickerClick = useEventCallback(
+    (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+      if (!disabled && !anchorEl) {
         setAnchorEl(event.currentTarget);
-      },
-    );
+      }
+    },
+  );
 
-    const handleKeydown = useEventCallback(
-      (event: React.KeyboardEvent<any>) => {
-        if (disabled) return;
+  const handleA11yKeydown = useA11yKeyEvent(
+    (event: React.KeyboardEvent<HTMLDivElement>) => {
+      setAnchorEl(event.currentTarget);
+    },
+  );
 
-        handleA11yKeydown(event);
-        onKeyDown?.(event);
-      },
-    );
+  const handleKeydown = useEventCallback((event: React.KeyboardEvent<any>) => {
+    if (disabled) return;
 
-    const handleClearClick = useEventCallback(
-      (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
-        e.stopPropagation();
-        e.preventDefault();
-        onClear?.(e);
-      },
-    );
+    handleA11yKeydown(event);
+    onKeyDown?.(event);
+  });
 
-    const _InputProps = useMemo<RcTextFieldProps['InputProps']>(() => {
-      const iconTitle = clearButtonProps?.title;
-      const combineClearProps =
-        clearBtn &&
-        combineProps(
-          {
-            TooltipProps: {
-              tooltipForceHide: !iconTitle,
-            },
-            onClick: handleClearClick,
-          },
-          clearButtonProps,
-        );
+  const handleClearClick = useEventCallback(
+    (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
+      e.stopPropagation();
+      e.preventDefault();
+      onClear?.(e);
+    },
+  );
 
-      return combineProps(
+  const _InputProps = useMemo<RcTextFieldProps['InputProps']>(() => {
+    const iconTitle = clearButtonProps?.title;
+    const combineClearProps =
+      clearBtn &&
+      combineProps(
         {
-          readOnly: true,
-          endAdornment: (
-            <>
-              {value && (
-                <RcIconButton
-                  className="picker-clear"
-                  variant="plain"
-                  tabIndex={-1}
-                  disabled={disabled}
-                  symbol={DeleteCircleIcon}
-                  title={iconTitle}
-                  aria-label={iconTitle}
-                  {...combineClearProps}
-                />
-              )}
+          TooltipProps: {
+            tooltipForceHide: !iconTitle,
+          },
+          onClick: handleClearClick,
+        },
+        clearButtonProps,
+      );
+
+    return combineProps(
+      {
+        readOnly: true,
+        endAdornment: (
+          <>
+            {value && (
               <RcIconButton
-                className="picker-action"
+                className="picker-clear"
                 variant="plain"
                 tabIndex={-1}
                 disabled={disabled}
-                symbol={ActionSymbol!}
+                symbol={DeleteCircleIcon}
+                title={iconTitle}
+                aria-label={iconTitle}
+                {...combineClearProps}
               />
-            </>
-          ),
-          onClick: handlePickerClick,
-          onKeyDown: handleKeydown,
-          inputProps: {
-            'aria-describedby': `${idForHelperText} ${idForInstruction}`,
-            'aria-haspopup': true,
-            ...inputProps,
-          },
-        },
-        InputProps,
-      );
-    }, [
-      clearBtn,
-      handleClearClick,
-      clearButtonProps,
-      value,
-      disabled,
-      ActionSymbol,
-      handlePickerClick,
-      handleKeydown,
-      idForHelperText,
-      idForInstruction,
-      inputProps,
-      InputProps,
-    ]);
-
-    const _FormHelperTextProps = useMemo(
-      () => ({
-        id: idForHelperText,
-      }),
-      [idForHelperText],
-    );
-
-    const onPickerViewClose = useEventCallback(() => {
-      setAnchorEl(null);
-    });
-
-    const PopoverProps = useMemo(
-      () =>
-        combineProps(
-          {
-            onClose: onPickerViewClose,
-          },
-          PopoverPropsProp,
+            )}
+            <RcIconButton
+              className="picker-action"
+              variant="plain"
+              tabIndex={-1}
+              disabled={disabled}
+              symbol={ActionSymbol!}
+            />
+          </>
         ),
-      [PopoverPropsProp, onPickerViewClose],
+        onClick: handlePickerClick,
+        onKeyDown: handleKeydown,
+        inputProps: {
+          'aria-describedby': `${idForHelperText} ${idForInstruction}`,
+          'aria-haspopup': true,
+          ...inputProps,
+        },
+      },
+      InputProps,
     );
+  }, [
+    clearBtn,
+    handleClearClick,
+    clearButtonProps,
+    value,
+    disabled,
+    ActionSymbol,
+    handlePickerClick,
+    handleKeydown,
+    idForHelperText,
+    idForInstruction,
+    inputProps,
+    InputProps,
+  ]);
 
-    const popoverOpen = Boolean(anchorEl);
+  const _FormHelperTextProps = useMemo(
+    () => ({
+      id: idForHelperText,
+    }),
+    [idForHelperText],
+  );
 
-    useImperativeHandle(
-      ref,
-      () => ({
-        close: onPickerViewClose,
-      }),
-      [onPickerViewClose],
-    );
+  const onPickerViewClose = useEventCallback(() => {
+    setAnchorEl(null);
+  });
 
-    return (
-      <>
-        <StyledPickerTextField
-          id={idForInput}
-          InputProps={_InputProps}
-          FormHelperTextProps={_FormHelperTextProps}
-          focused={popoverOpen ? true : undefined}
-          disabled={disabled}
-          clearBtn={clearBtn}
-          value={value}
-          {...rest}
-        />
-        <StyledPopover
-          open={popoverOpen}
-          anchorEl={anchorEl}
-          onClose={onPickerViewClose}
-          anchorOrigin={popoverAnchorOrigin}
-          transformOrigin={popoverTransformOrigin}
-          {...PopoverProps}
-        >
-          {children}
-        </StyledPopover>
-        <RcVisuallyHidden id={idForInstruction}>
-          {announcementText}
-        </RcVisuallyHidden>
-      </>
-    );
-  },
-);
+  const PopoverProps = useMemo(
+    () =>
+      combineProps(
+        {
+          onClose: onPickerViewClose,
+        },
+        PopoverPropsProp,
+      ),
+    [PopoverPropsProp, onPickerViewClose],
+  );
+
+  const popoverOpen = Boolean(anchorEl);
+
+  useImperativeHandle(
+    action,
+    () => ({
+      close: onPickerViewClose,
+    }),
+    [onPickerViewClose],
+  );
+
+  return (
+    <>
+      <StyledPickerTextField
+        id={idForInput}
+        ref={ref}
+        InputProps={_InputProps}
+        FormHelperTextProps={_FormHelperTextProps}
+        focused={popoverOpen ? true : undefined}
+        disabled={disabled}
+        clearBtn={clearBtn}
+        value={value}
+        {...rest}
+      />
+      <StyledPopover
+        open={popoverOpen}
+        anchorEl={anchorEl}
+        onClose={onPickerViewClose}
+        anchorOrigin={popoverAnchorOrigin}
+        transformOrigin={popoverTransformOrigin}
+        {...PopoverProps}
+      >
+        {children}
+      </StyledPopover>
+      <RcVisuallyHidden id={idForInstruction}>
+        {announcementText}
+      </RcVisuallyHidden>
+    </>
+  );
+});
 
 PickerTextField.displayName = PICKER_DISPLAY_NAME;
 
