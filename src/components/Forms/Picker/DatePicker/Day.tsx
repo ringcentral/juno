@@ -43,7 +43,10 @@ const _Day = forwardRef(
         aria-pressed={focused}
         ref={ref}
         size={size}
+        selected={selected}
         data-picker-focused={focused ? '' : undefined}
+        // TODO: remove those className
+        hidden={hidden}
         className={clsx({
           'Day-hidden': hidden,
           'Day-current': current,
@@ -56,7 +59,12 @@ const _Day = forwardRef(
         data-test-automation-value={children}
         {...rest}
       >
-        {children}
+        <>
+          {
+            // TODO: that <></> will fix when `RcIconButton` ready
+            children
+          }
+        </>
       </StyledDay>
     );
   },

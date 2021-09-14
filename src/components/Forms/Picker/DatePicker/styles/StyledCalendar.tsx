@@ -15,7 +15,7 @@ import { RcDatePickerSizes } from '../utils';
 
 const CalendarSlideTransitionWrapper = styled(MuiSlideTransition)`
   min-height: 160px;
-  margin: 0 0 12px;
+  margin: ${spacing(0, 0, 3)};
 `;
 
 const ProgressContainer = styled.div`
@@ -40,7 +40,7 @@ const WeekWrapper = styled.div<Pick<RcDatePickerProps, 'size'>>`
       height: 32px;
 
       & > div:not(:first-child) {
-        margin-left: 4px;
+        margin-left: ${spacing(1)};
       }
     `;
   }};
@@ -58,7 +58,7 @@ const StyledDayLabel = styled(MuiTypography)<StyledDayLabelProps>`
     if (size === 'small') {
       return css`
         &:not(:first-child) {
-          margin-left: 2px;
+          margin-left: ${spacing(0.5)};
         }
       `;
     }
@@ -66,7 +66,7 @@ const StyledDayLabel = styled(MuiTypography)<StyledDayLabelProps>`
       width: 32px;
 
       &:not(:first-child) {
-        margin-left: 4px;
+        margin-left: ${spacing(1)};
       }
     `;
   }}
@@ -86,7 +86,7 @@ const DatePickerWrapper = styled.div<Pick<RcDatePickerProps, 'size'>>`
   }};
 
   box-sizing: border-box;
-  padding: 12px 0;
+  padding: ${spacing(3, 0)};
   display: flex;
   flex-direction: column;
   background-color: ${palette2('neutral', 'elevation')};

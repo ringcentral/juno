@@ -48,9 +48,11 @@ const Year = memo(
 
     return (
       <StyledYear
+        radius="round"
         onClick={handleClick}
         onKeyPress={handleClick}
         ref={ref}
+        selected={selected}
         aria-pressed={focused}
         aria-label={yearAriaLabel}
         className={className}
@@ -58,7 +60,12 @@ const Year = memo(
         data-test-automation-value={children}
         {...rest}
       >
-        {children}
+        <>
+          {
+            // TODO: that <></> will fix when `RcIconButton` ready
+            children
+          }
+        </>
       </StyledYear>
     );
   }),
