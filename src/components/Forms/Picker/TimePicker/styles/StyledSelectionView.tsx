@@ -7,21 +7,19 @@ import {
 import { RcTimePickerUtils } from '../utils';
 import { RcClickFiledStyleProps } from '../TimePicker';
 
-const StyledSelectionView = styled.div<RcClickFiledStyleProps>`
-  box-sizing: border-box;
-  padding: ${spacing(2)};
-  ${flexCenterStyle};
-  flex-wrap: wrap;
-
+export const StyledSelectionView = styled.div<RcClickFiledStyleProps>`
   ${({ size }) => {
     const { width, height } = RcTimePickerUtils[size!];
+
     return css`
+      ${flexCenterStyle};
+      box-sizing: border-box;
+      padding: ${spacing(2)};
+      flex-wrap: wrap;
       width: ${width};
       height: ${height};
+      margin: ${spacing(-3, -4)};
     `;
+    /** reset wrapper margin */
   }};
-  // reset wrapper margin
-  margin: ${spacing(-3, -4)};
 `;
-
-export { StyledSelectionView };

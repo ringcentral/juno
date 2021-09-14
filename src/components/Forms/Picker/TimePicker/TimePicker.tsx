@@ -22,6 +22,7 @@ import {
   withDeprecatedCheck,
 } from '../../../../foundation';
 import TimeBorderIcon from '../../../../icon/TimeBorder';
+import { RcBox } from '../../../Box';
 import {
   PickerTextField,
   PickerTextFieldProps,
@@ -34,11 +35,7 @@ import {
   NumberPickerRef,
 } from './NumberPicker';
 import { SelectionView } from './SelectionView';
-import {
-  StyledDividerWrap,
-  StyledPickerPopperWrap,
-  StyledToggleTextContent,
-} from './styles';
+import { StyledPickerPopperWrap } from './styles';
 import { ToggleText, ToggleTextProps, ToggleTextRef } from './ToggleText';
 import {
   getFormattedTime,
@@ -521,7 +518,9 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps>((inProps, ref) => {
               automationId="time-picker-hour"
               {...HourPickerProps}
             />
-            <StyledDividerWrap>:</StyledDividerWrap>
+            <RcBox textAlign="center" width="48px">
+              :
+            </RcBox>
             <NumberPicker
               ref={minuteRef}
               size={size}
@@ -536,7 +535,7 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps>((inProps, ref) => {
               {...MinutePickerProps}
             />
             {isTwelveHourSystem && (
-              <StyledToggleTextContent size={size}>
+              <div>
                 <ToggleText
                   ref={periodRef}
                   size={size}
@@ -547,7 +546,7 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps>((inProps, ref) => {
                   value={periodValue}
                   {...PeriodToggleProps}
                 />
-              </StyledToggleTextContent>
+              </div>
             )}
           </>
         ) : (

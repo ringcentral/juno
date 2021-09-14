@@ -7,13 +7,15 @@ import React, {
 } from 'react';
 
 import {
+  styled,
   useChange,
   useEventCallback,
   useRefState,
 } from '../../../../foundation';
 import { TIME_SYSTEM_TEXT } from './constant';
-import { StyledToggleText } from './styles';
+import { StyledTimeIconButton } from './styles';
 import { RcClickFiledStyleProps } from './TimePicker';
+import { RcTimePickerUtils } from './utils';
 import { isClick } from './utils/A11yUtils';
 
 type ToggleTextProps = {
@@ -34,7 +36,7 @@ type ToggleTextRef = {
   value: TIME_SYSTEM_TEXT;
 };
 
-const ToggleText = memo(
+const _ToggleText = memo(
   forwardRef<ToggleTextRef, ToggleTextProps>(
     (
       {
@@ -109,21 +111,27 @@ const ToggleText = memo(
       );
 
       return (
-        <StyledToggleText
-          tabIndex={0}
-          size={size}
+        <StyledTimeIconButton
+          wrapperSize={size}
           onClick={handleClick}
           onKeyDown={handleToggleKeyDown}
           disabled={disabled}
+          color="informative.f02"
           aria-live="assertive"
           aria-label={label}
           {...rest}
         >
-          {innerValue}
-        </StyledToggleText>
+          <>{innerValue}</>
+        </StyledTimeIconButton>
       );
     },
   ),
 );
+
+const ToggleText = styled(_ToggleText)`
+  margin-left: ${({ size }) => RcTimePickerUtils[size!].timeSystem.margin};
+`;
+
+ToggleText.displayName = 'ToggleText';
 
 export { ToggleText, ToggleTextProps, ToggleTextRef };

@@ -1,11 +1,23 @@
-import { focusVisible, palette2, styled } from '../../../../../foundation';
+import {
+  focusVisible,
+  focusVisibleShadowStyle,
+  palette2,
+  spacing,
+  styled,
+} from '../../../../../foundation';
 import { RcIconButton } from '../../../../Buttons';
 import { RcIconButtonClasses } from '../../../../Buttons/IconButton/utils';
-import { clearButtonStyle } from './clickFiledStyle';
 
-const StyledNumberPicker = styled.div`
-  border-radius: 4px;
-  ${clearButtonStyle};
+export const StyledNumberPicker = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  outline: none;
+  border: 1px solid transparent;
+  position: relative;
+
+  ${focusVisibleShadowStyle('lg')};
+
   ${focusVisible} {
     ${RcIconButton} {
       ${`&:not(.${RcIconButtonClasses.disabled})`} .icon {
@@ -13,6 +25,8 @@ const StyledNumberPicker = styled.div`
       }
     }
   }
-`;
 
-export { StyledNumberPicker };
+  > * + * {
+    margin-top: ${spacing(2)};
+  }
+`;

@@ -19,7 +19,8 @@ import {
 } from '../../../../foundation';
 import ArrowDownIcon from '../../../../icon/ArrowDown';
 import ArrowUpIcon from '../../../../icon/ArrowUp';
-import { StyledPaginationButton, StyledTextWrap } from './styles';
+import { RcIconButtonSize } from '../../../Buttons/IconButton';
+import { StyledTimeIconButton } from './styles/StyledTimeIconButton';
 import { StyledNumberPicker } from './styles/StyledNumberPicker';
 import { RcClickFiledStyleProps } from './TimePicker';
 import { pad } from './utils';
@@ -61,8 +62,6 @@ type NumberPickerRef = {
   value: number;
   setRange: React.Dispatch<React.SetStateAction<Range>>;
 };
-
-const NUMBER_PICKER = 'NumberPicker';
 
 const _NumberPicker = forwardRef<NumberPickerRef, NumberPickerProps>(
   (props, ref) => {
@@ -201,6 +200,16 @@ const _NumberPicker = forwardRef<NumberPickerRef, NumberPickerProps>(
       [forceUpdate, innerValue, innerValueRef, setInnerValue],
     );
 
+    const iconSize = useMemo<RcIconButtonSize>(() => {
+      switch (size) {
+        case 'small':
+          return 'medium';
+        case 'medium':
+        default:
+          return 'large';
+      }
+    }, [size]);
+
     return (
       <StyledNumberPicker
         tabIndex={0}
@@ -209,9 +218,11 @@ const _NumberPicker = forwardRef<NumberPickerRef, NumberPickerProps>(
         aria-label={label}
         {...rest}
       >
-        <StyledPaginationButton
+        <StyledTimeIconButton
           tabIndex={-1}
-          size={size}
+          size={iconSize}
+          color="neutral.f04"
+          wrapperSize={size}
           disabled={increaseDisabled}
           onClick={() => {
             onUpdateValue(increaseValue);
@@ -222,18 +233,26 @@ const _NumberPicker = forwardRef<NumberPickerRef, NumberPickerProps>(
           }
           aria-label="Arrow Up"
         />
-        <StyledTextWrap
-          size={size}
+        <StyledTimeIconButton
+          wrapperSize={size}
+          tabIndex={-1}
           onClick={onClick}
           // * when both disabled that icon can't click into selection view
           disabled={increaseDisabled && decreaseDisabled}
           data-test-automation-id={automationId && `${automationId}-text`}
         >
-          {showValue}
-        </StyledTextWrap>
-        <StyledPaginationButton
+          <>
+            {
+              // TODO: that <></> will fix when `RcIconButton` ready
+              showValue
+            }
+          </>
+        </StyledTimeIconButton>
+        <StyledTimeIconButton
           tabIndex={-1}
-          size={size}
+          size={iconSize}
+          color="neutral.f04"
+          wrapperSize={size}
           disabled={decreaseDisabled}
           onClick={() => {
             onUpdateValue(decreaseValue);
@@ -251,6 +270,6 @@ const _NumberPicker = forwardRef<NumberPickerRef, NumberPickerProps>(
 
 const NumberPicker = styled(memo(_NumberPicker))``;
 
-NumberPicker.displayName = NUMBER_PICKER;
+NumberPicker.displayName = 'NumberPicker';
 
 export { NumberPicker, NumberPickerProps, NumberPickerRef };

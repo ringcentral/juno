@@ -58,19 +58,21 @@ const SelectionView: FunctionComponent<SelectionViewProps> = (props) => {
           (min !== undefined && v < min)
         );
         const itemShowValue = parseNumberToString(v, isTwelveHourSystem);
+
         return (
           <StyledSelectionItem
             disabled={disabled}
+            radius="round"
+            wrapperSize={size}
             key={v}
             onClick={handleClick(v, disabled)}
-            isSelected={itemShowValue === showValue}
+            selected={itemShowValue === showValue}
             data-test-automation-id={
               automationId && `${automationId}-${itemShowValue}`
             }
-            size={size}
             itemLength={source.length}
           >
-            {itemShowValue}
+            <>{itemShowValue}</>
           </StyledSelectionItem>
         );
       })}
