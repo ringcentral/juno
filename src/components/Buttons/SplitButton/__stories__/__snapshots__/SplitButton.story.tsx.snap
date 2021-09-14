@@ -254,7 +254,7 @@ Array [
   margin-right: 0;
 }
 
-.c1 .sc-oeezt > .sc-fXgAZx {
+.c1 .sc-oeezt > .sc-dWBRfb {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -983,7 +983,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   margin-right: 0;
 }
 
-.c18 .sc-oeezt > .sc-fXgAZx {
+.c18 .sc-oeezt > .sc-dWBRfb {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -1020,7 +1020,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   margin-right: 0;
 }
 
-.c9 .sc-oeezt > .sc-fXgAZx {
+.c9 .sc-oeezt > .sc-dWBRfb {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -3390,7 +3390,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
   margin-right: 0;
 }
 
-.c10 .sc-oeezt > .sc-fXgAZx {
+.c10 .sc-oeezt > .sc-dWBRfb {
   margin-left: 4px;
   margin-right: 4px;
 }

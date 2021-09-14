@@ -122,7 +122,7 @@ exports[`Storyshots 🖤 deprecated Components/Menus/MenuItem 2 Lines MenuItem W
   cursor: pointer;
 }
 
-.c0:hover .sc-lgWdIC {
+.c0:hover .sc-hUhoqY {
   display: block;
 }
 
@@ -252,7 +252,7 @@ Array [
   cursor: pointer;
 }
 
-.c0:hover .sc-lgWdIC {
+.c0:hover .sc-hUhoqY {
   display: block;
 }
 
@@ -261,7 +261,7 @@ Array [
   color: #fff;
 }
 
-.c0:active .sc-hoPuav {
+.c0:active .sc-fJxALz {
   color: #fff;
 }
 
@@ -322,7 +322,7 @@ Array [
   cursor: pointer;
 }
 
-.c0:hover .sc-lgWdIC {
+.c0:hover .sc-hUhoqY {
   display: block;
 }
 
@@ -331,7 +331,7 @@ Array [
   color: #fff;
 }
 
-.c0:active .sc-hoPuav {
+.c0:active .sc-fJxALz {
   color: #fff;
 }
 
@@ -378,7 +378,7 @@ Array [
   cursor: pointer;
 }
 
-.c0:hover .sc-lgWdIC {
+.c0:hover .sc-hUhoqY {
   display: block;
 }
 
@@ -387,7 +387,7 @@ Array [
   color: #fff;
 }
 
-.c0:active .sc-hoPuav {
+.c0:active .sc-fJxALz {
   color: #fff;
 }
 
@@ -477,7 +477,7 @@ exports[`Storyshots 🖤 deprecated Components/Menus/MenuItem MenuItem with subt
   cursor: pointer;
 }
 
-.c0:hover .sc-lgWdIC {
+.c0:hover .sc-hUhoqY {
   display: block;
 }
 
@@ -572,7 +572,7 @@ exports[`Storyshots 🖤 deprecated Components/Menus/MenuItem Text MenuItem With
   cursor: pointer;
 }
 
-.c0:hover .sc-lgWdIC {
+.c0:hover .sc-hUhoqY {
   display: block;
 }
 
@@ -649,7 +649,7 @@ exports[`Storyshots 🖤 deprecated Components/Menus/MenuItem Text MenuItem With
   cursor: pointer;
 }
 
-.c0:hover .sc-lgWdIC {
+.c0:hover .sc-hUhoqY {
   display: block;
 }
 

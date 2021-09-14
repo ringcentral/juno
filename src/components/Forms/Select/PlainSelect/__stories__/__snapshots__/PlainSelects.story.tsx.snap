@@ -247,7 +247,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
   margin-right: 0;
 }
 
-.c2 .sc-dTSzeu {
+.c2 .sc-fmdNqN {
   margin-right: 0;
 }
 
@@ -1279,12 +1279,12 @@ Array [
   min-width: unset;
 }
 
-.c5 > .sc-biJonm,
+.c5 > .sc-WZYut,
 .c5 > .sc-hhIiOg {
   margin-right: 4px;
 }
 
-.c5 > .sc-fXgAZx {
+.c5 > .sc-dWBRfb {
   margin-left: 4px;
   margin-right: 4px;
 }

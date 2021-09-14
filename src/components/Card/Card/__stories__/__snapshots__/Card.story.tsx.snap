@@ -577,7 +577,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   min-width: unset;
 }
 
-.c24 > .sc-biJonm,
+.c24 > .sc-WZYut,
 .c24 > .c15 {
   margin-right: 4px;
 }

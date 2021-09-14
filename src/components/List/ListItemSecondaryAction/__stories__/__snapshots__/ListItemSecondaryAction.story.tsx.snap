@@ -102,7 +102,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
   margin-right: 0;
 }
 
-.c0 .c3 > .sc-fXgAZx {
+.c0 .c3 > .sc-dWBRfb {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -131,9 +131,9 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
   margin-right: -8px;
 }
 
-.c2 .c3 > .sc-biJonm,
+.c2 .c3 > .sc-WZYut,
 .c2 .c3 > .c5,
-.c2 .c3 > .sc-fXgAZx {
+.c2 .c3 > .sc-dWBRfb {
   margin-right: 0;
 }
 
