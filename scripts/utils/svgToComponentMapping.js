@@ -9,6 +9,7 @@ module.exports = {
   "7": "7",
   "8": "8",
   "9": "9",
+  "CustomizeTabs": "customize-tabs",
   "Connect": "connect",
   "ViewLogBorder": "view-log_border",
   "AppleLogo": "apple-logo",
@@ -390,6 +391,5 @@ module.exports = {
   "DefaultGroupAvatar": "default-group-avatar",
   "DefaultAvatar": "default-avatar",
   "Assignment": "assignment",
-  "ItemListSelected": "item-list-selected",
-  "MenuFax": "menu-fax"
+  "ItemListSelected": "item-list-selected"
 };
