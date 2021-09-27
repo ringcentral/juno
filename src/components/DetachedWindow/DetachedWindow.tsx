@@ -1,8 +1,4 @@
 import { useForkRef } from '@material-ui/core/utils';
-import MUIStylesProvider, {
-  StylesContext as MUIStylesContext,
-} from '@material-ui/styles/StylesProvider';
-import { Jss } from 'jss';
 import React, {
   forwardRef,
   memo,
@@ -14,20 +10,16 @@ import React, {
   useState,
 } from 'react';
 import ReactDOM from 'react-dom';
-// @ts-ignore
-import { __PRIVATE__ } from 'styled-components';
-
 import {
-  RcPortalWindowContext,
   logInDev,
+  RcPortalWindowContext,
   useEventCallback,
-  StyleSheetManager,
   useThemeProps,
 } from '../../foundation';
+import { RcDetachedWindowStylesProvider } from './DetachedWindowStylesProvider';
 import { GlobalStyle } from './styles';
 import {
   addCommentInHeader,
-  buildJssFromWindow,
   DetachedWindowRefMaps,
   MUI_INSERTION_POINT,
   openExternalWindow,
@@ -134,10 +126,7 @@ const RcDetachedWindow = memo(
       keep,
     } = props;
     const [externalWindow, setExternalWindow] = useState<Window>();
-    const sheetsManagerRef = useRef(new Map());
     const isCloseByWindowExitRef = useRef(false);
-    const jssCache = useRef<Jss>();
-    const sheetCache = useRef<StyleSheet>();
 
     const innerRef = useRef<RcDetachedWindowRef>(null);
 
@@ -209,8 +198,6 @@ const RcDetachedWindow = memo(
 
       return () => {
         DetachedWindowRefMaps.delete(innerRef);
-        jssCache.current = undefined;
-        sheetCache.current = undefined;
 
         // * when window is open, and destroy mean that trigger by whole component destroy
         if (open && newWindow) {
@@ -230,44 +217,22 @@ const RcDetachedWindow = memo(
 
     const children = useMemo<React.ReactNode>(() => {
       if (!externalWindow?.document.body) return null;
-      if (!jssCache.current) {
-        jssCache.current = buildJssFromWindow(externalWindow, {
-          insertionPoint: MUI_INSERTION_POINT,
-        });
-      }
-
-      // We need to use the same styleSheet for the same window in case styled-component insert styles multiple times
-      if (!sheetCache.current) {
-        sheetCache.current = __PRIVATE__.masterSheet.reconstructWithOptions(
-          { target: externalWindow.document.head },
-          false,
-        );
-      }
 
       return (
-        <>
-          <StyleSheetManager sheet={sheetCache.current}>
-            <MUIStylesContext.Consumer>
-              {(options) => (
-                <MUIStylesProvider
-                  {...options}
-                  jss={jssCache.current}
-                  sheetsManager={sheetsManagerRef.current}
-                >
-                  <RcPortalWindowContext.Provider
-                    value={{
-                      externalWindow,
-                      document: externalWindow?.document || document,
-                    }}
-                  >
-                    <GlobalStyle />
-                    {childrenProp}
-                  </RcPortalWindowContext.Provider>
-                </MUIStylesProvider>
-              )}
-            </MUIStylesContext.Consumer>
-          </StyleSheetManager>
-        </>
+        <RcDetachedWindowStylesProvider
+          jssInsertionPoint={MUI_INSERTION_POINT}
+          externalWindow={externalWindow}
+        >
+          <RcPortalWindowContext.Provider
+            value={{
+              externalWindow,
+              document: externalWindow?.document || document,
+            }}
+          >
+            <GlobalStyle />
+            {childrenProp}
+          </RcPortalWindowContext.Provider>
+        </RcDetachedWindowStylesProvider>
       );
     }, [childrenProp, externalWindow]);
 
