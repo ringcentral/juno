@@ -57,6 +57,7 @@ const _Day = forwardRef(
           hidden ? 'date-picker-hidden-day' : 'date-picker-day'
         }
         data-test-automation-value={children}
+        disabled={disabled}
         {...rest}
       >
         <>
