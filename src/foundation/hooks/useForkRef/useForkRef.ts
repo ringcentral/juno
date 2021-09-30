@@ -1,4 +1,4 @@
-import MuiUseForkRef from '@material-ui/core/utils/useForkRef';
+import { useForkRef as MuiUseForkRef } from '@material-ui/core/utils';
 
 /**
  * That method will give you ability fork same value `ref object` or `method`

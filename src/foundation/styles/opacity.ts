@@ -1,4 +1,4 @@
-import { fade } from '@material-ui/core/styles/colorManipulator';
+import { fade } from '@material-ui/core/styles';
 
 import { RcTheme } from '../theme/theme.type';
 import { logInDev } from '../utils';

@@ -1,5 +1,5 @@
 import MuiBadge from '@material-ui/core/Badge';
-import capitalize from '@material-ui/core/utils/capitalize';
+import { capitalize } from '@material-ui/core/utils';
 import clsx from 'clsx';
 import React, {
   ComponentProps,
