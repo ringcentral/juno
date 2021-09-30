@@ -61,7 +61,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run prebuild:storybook"
     }
   },
   "dependencies": {

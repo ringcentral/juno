@@ -5,6 +5,8 @@ import React, { FunctionComponent, useEffect, useMemo, useState } from 'react';
 import svgToComponentMapping from '../../../../scripts/utils/svgToComponentMapping';
 import { palette2, useEventCallback } from '../../../foundation';
 import styled from '../../../foundation/styled-components';
+import Warning from '../../../icon/Warning';
+import { RcBox } from '../../Box';
 import { RcTextField } from '../../Forms/TextField';
 import { RcCircularProgress } from '../../Progress';
 import { RcTypography } from '../../Typography';
@@ -114,6 +116,7 @@ const insertSVG = (data: string) => {
 export const IconList: FunctionComponent<IconListProps> = () => {
   const [remoteIcons, setRemoteIcons] = useState<string[]>([]);
   const [deletedIcons, setDeletedIcons] = useState<string[]>([]);
+  const [loadFail, setLoadFail] = useState(false);
   const [filterText, setFilterText] = useState('');
 
   const resultIcons = useMemo(() => {
@@ -146,8 +149,11 @@ export const IconList: FunctionComponent<IconListProps> = () => {
       setLoading(false);
       return;
     }
-    // eslint-disable-next-line no-alert
-    alert('get remote svg file fail');
+
+    setLoadFail(true);
+    insertSVG(localIcons);
+    setRemoteIcons(currentIcons);
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -192,12 +198,40 @@ export const IconList: FunctionComponent<IconListProps> = () => {
         />
       </div>
       {!loading && (
-        <StyledList>
-          {resultIcons.map((icon) => {
-            const isExist = currentIcons.includes(icon);
+        <>
+          {loadFail && (
+            <RcBox display="flex" alignItems="center" clone marginBottom="1em">
+              <RcTypography color="danger.f02" variant="body1" component="span">
+                <RcIcon symbol={Warning} /> get remote svg file fail, current is
+                local files
+              </RcTypography>
+            </RcBox>
+          )}
+          <StyledList>
+            {resultIcons.map((icon) => {
+              const isExist = currentIcons.includes(icon);
 
-            return (
-              <StyledIcon state={isExist ? 'exist' : 'new'} key={icon}>
+              return (
+                <StyledIcon state={isExist ? 'exist' : 'new'} key={icon}>
+                  <RcIcon
+                    color="neutral.f06"
+                    symbol={(props) => (
+                      <svg {...props}>
+                        <use xlinkHref={`#icon-${icon}`} />
+                      </svg>
+                    )}
+                  />
+                  {isExist && (
+                    <RcTypography color="neutral.f06" variant="subheading2">
+                      {mapping[icon]}
+                    </RcTypography>
+                  )}
+                  <RcTypography color="neutral.f03">{icon}</RcTypography>
+                </StyledIcon>
+              );
+            })}
+            {deletedIcons.map((icon) => (
+              <StyledIcon state="delete" key={icon}>
                 <RcIcon
                   color="neutral.f06"
                   symbol={(props) => (
@@ -206,29 +240,11 @@ export const IconList: FunctionComponent<IconListProps> = () => {
                     </svg>
                   )}
                 />
-                {isExist && (
-                  <RcTypography color="neutral.f06" variant="subheading2">
-                    {mapping[icon]}
-                  </RcTypography>
-                )}
-                <RcTypography color="neutral.f03">{icon}</RcTypography>
+                {icon}
               </StyledIcon>
-            );
-          })}
-          {deletedIcons.map((icon) => (
-            <StyledIcon state="delete" key={icon}>
-              <RcIcon
-                color="neutral.f06"
-                symbol={(props) => (
-                  <svg {...props}>
-                    <use xlinkHref={`#icon-${icon}`} />
-                  </svg>
-                )}
-              />
-              {icon}
-            </StyledIcon>
-          ))}
-        </StyledList>
+            ))}
+          </StyledList>
+        </>
       )}
     </StyledMain>
   );
