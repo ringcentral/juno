@@ -45,7 +45,7 @@ export class PortalManager<D extends {} = {}> extends Connectable<
   open<P extends {} = {}, F = undefined>(
     Component: ComponentType<ControlledProps<P, F>>,
     options: PortalOptions<P, D> = {},
-  ) {
+  ): PortalController<P, F, D> {
     const { id: _id, props, data } = options;
 
     const id = _id ?? this._uniqIdUtils.get();
