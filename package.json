@@ -1,6 +1,6 @@
 {
   "name": "@ringcentral/juno",
-  "version": "1.11.5",
+  "version": "1.11.6",
   "license": "MIT",
   "author": "RingCentral",
   "main": "./index.js",
@@ -61,6 +61,7 @@
   },
   "husky": {
     "hooks": {
+      "pre-push": "npm run prebuild:storybook"
     }
   },
   "dependencies": {
