@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>gmail</title>
+<path fill="#4285f4" style="fill: var(--color1, #4285f4)" d="M3.909 27h4.455v-11.33l-6.364-4.999v14.33c0 1.106 0.856 1.999 1.909 1.999z"></path>
+<path fill="#34a853" style="fill: var(--color2, #34a853)" d="M23.636 27h4.455c1.056 0 1.909-0.896 1.909-1.999v-14.33l-6.364 4.999z"></path>
+<path fill="#fbbc04" style="fill: var(--color3, #fbbc04)" d="M23.636 7.005v8.664l6.364-4.999v-2.666c0-2.473-2.695-3.882-4.582-2.399z"></path>
+<path fill="#ea4335" style="fill: var(--color4, #ea4335)" d="M8.364 15.67v-8.664l7.636 5.998 7.636-5.998v8.664l-7.636 5.998z"></path>
+<path fill="#c5221f" style="fill: var(--color5, #c5221f)" d="M2 8.005v2.666l6.364 4.999v-8.664l-1.782-1.4c-1.89-1.483-4.582-0.073-4.582 2.399z"></path>
+</svg>

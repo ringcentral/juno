@@ -13,19 +13,19 @@ const DefaultGdriveD = memo(
         {...props}
       >
         <path
-          fill="var(--color14, #222b42)"
+          fill="var(--color18, #222b42)"
           d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
         />
         <path
-          fill="var(--color15, #ffc107)"
+          fill="var(--color19, #ffc107)"
           d="M13.333 8.889h5.778l5.778 9.778h-5.778z"
         />
         <path
-          fill="var(--color16, #1976d2)"
+          fill="var(--color20, #1976d2)"
           d="M9.778 24l3.038-5.333h12.073L21.877 24z"
         />
         <path
-          fill="var(--color17, #4caf50)"
+          fill="var(--color21, #4caf50)"
           d="M7.111 19.015L10.021 24 16 13.926l-2.963-5.037z"
         />
       </svg>

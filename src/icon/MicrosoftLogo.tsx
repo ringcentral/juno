@@ -12,14 +12,14 @@ const MicrosoftLogo = memo(
         ref={svgRef}
         {...props}
       >
-        <path fill="var(--color43, #f1511b)" d="M15.403 15.403H4V4h11.403z" />
+        <path fill="var(--color47, #f1511b)" d="M15.403 15.403H4V4h11.403z" />
         <path
-          fill="var(--color44, #80cc28)"
+          fill="var(--color48, #80cc28)"
           d="M27.997 15.403H16.592V4h11.403v11.403z"
         />
-        <path fill="var(--color45, #00adef)" d="M15.403 28H4V16.597h11.403z" />
+        <path fill="var(--color49, #00adef)" d="M15.403 28H4V16.597h11.403z" />
         <path
-          fill="var(--color46, #fbbc09)"
+          fill="var(--color50, #fbbc09)"
           d="M27.997 28H16.592V16.597h11.403V28z"
         />
       </svg>
