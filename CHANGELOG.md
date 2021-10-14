@@ -1,4 +1,18 @@
 
+### [1.11.5](https://github.com/ringcentral/juno/compare/v1.11.4...v1.11.5) (2021-10-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **Icon:** [Icon]  Info => InfoBorder
+
+### Bug Fixes
+
+* **type error:** fix PortalManager.open return type, it would lost after build ([4e6ae27](https://github.com/ringcentral/juno/commit/4e6ae279885af9e20b0c4eb54f5b5138650e6c60))
+
+
+* **Icon:** update icon ([8a69baf](https://github.com/ringcentral/juno/commit/8a69baf2b74add3fe948c1e63b4d54064c534c16))
+
 ### [1.11.4](https://github.com/ringcentral/juno/compare/v1.11.3...v1.11.4) (2021-09-27)
 
 
