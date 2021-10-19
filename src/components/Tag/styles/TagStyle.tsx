@@ -34,7 +34,6 @@ export const TagStyle: RcThemedStyled<RcTagProps, any> = ({
     text-align: center;
     padding: ${spacing(0, 2)};
     ${typography('caption1')};
-    margin-left: ${spacing(3)};
     min-width: ${spacing(9)};
     max-width: ${spacing(41)};
     ${ellipsis}
