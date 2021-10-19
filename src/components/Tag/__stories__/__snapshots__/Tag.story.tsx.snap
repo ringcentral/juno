@@ -12,7 +12,6 @@ exports[`Storyshots 🚀 Cleanup Components/Tag Tag 1`] = `
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 16px;
-  margin-left: 12px;
   min-width: 36px;
   max-width: 164px;
   white-space: nowrap;
@@ -40,7 +39,6 @@ exports[`Storyshots 🚀 Cleanup Components/Tag Tag With Custom Border 1`] = `
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 16px;
-  margin-left: 12px;
   min-width: 36px;
   max-width: 164px;
   white-space: nowrap;
