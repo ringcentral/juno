@@ -10,7 +10,8 @@ import {
   spacing,
   typography,
 } from '../../../../foundation';
-import { RcFormControlLabel, RcSwitch } from '../../../Forms';
+import { RcFormControlLabel } from '../../../Forms/FormControlLabel';
+import { RcSwitch } from '../../../Forms/Switch';
 import { RcListItemProps } from '../ListItem';
 import {
   colorMap,
