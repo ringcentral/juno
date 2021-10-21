@@ -57,7 +57,6 @@ import { RcDialTextField } from '../DialTextField';
 
 export default {
   title: '🚀 Cleanup Components/Dialer',
-  component: RcDialer,
   argTypes: {
     ...sortInDocTable<keyof DialerProps>([]),
     ...notControlInDocTable<keyof DialerProps>([

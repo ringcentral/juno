@@ -102,13 +102,13 @@ export const ChipExamples: Story<ChipProps> = ({ children, ...args }) => {
 
       <RcGrid item xs>
         <Title>Avatar</Title>
-        <RcChip {...args} Avatar={<RcAvatar src={avatar} />} />
+        <RcChip {...args} avatar={<RcAvatar src={avatar} />} />
         <br />
         <br />
         <Title>Avatar & Delete Icon</Title>
         <RcChip
           {...args}
-          Avatar={<RcAvatar src={avatar} />}
+          avatar={<RcAvatar src={avatar} />}
           onDelete={handleDelete}
           deleteTooltip="Remove"
         />
@@ -119,7 +119,7 @@ export const ChipExamples: Story<ChipProps> = ({ children, ...args }) => {
           {...args}
           title={isString(args.label) ? args.label : undefined}
           style={{ maxWidth: 120 }}
-          Avatar={<RcAvatar src={avatar} />}
+          avatar={<RcAvatar src={avatar} />}
           onDelete={handleDelete}
           deleteTooltip="Remove"
         />
@@ -132,7 +132,7 @@ export const ChipExamples: Story<ChipProps> = ({ children, ...args }) => {
           {...args}
           label={<RcText titleWhenOverflow>{args.label}</RcText>}
           style={{ maxWidth: '30%' }}
-          Avatar={<RcAvatar src={avatar} />}
+          avatar={<RcAvatar src={avatar} />}
           onDelete={handleDelete}
           deleteTooltip="Remove"
         />
