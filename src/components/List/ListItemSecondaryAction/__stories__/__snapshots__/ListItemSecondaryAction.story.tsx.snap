@@ -46,19 +46,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
   margin-right: 0;
 }
 
-.c6.RcCheckbox-root {
-  color: #939393;
-  padding: 10px;
-}
-
-.c6.RcCheckbox-root.RcCheckbox-checked {
-  color: #066FAC;
-}
-
-.c6.RcCheckbox-root.RcCheckbox-disabled {
-  color: #B9B9B9;
-}
-
 .c0 {
   font-size: 0.9375rem;
   font-weight: 400;
@@ -102,9 +89,22 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
   margin-right: 0;
 }
 
-.c0 .c3 > .sc-dWBRfb {
+.c0 .c3 > .sc-hhIiOg {
   margin-left: 4px;
   margin-right: 4px;
+}
+
+.c6.RcCheckbox-root {
+  color: #939393;
+  padding: 10px;
+}
+
+.c6.RcCheckbox-root.RcCheckbox-checked {
+  color: #066FAC;
+}
+
+.c6.RcCheckbox-root.RcCheckbox-disabled {
+  color: #B9B9B9;
 }
 
 .c2 {
@@ -131,9 +131,9 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
   margin-right: -8px;
 }
 
-.c2 .c3 > .sc-WZYut,
+.c2 .c3 > .sc-ckTSus,
 .c2 .c3 > .c5,
-.c2 .c3 > .sc-dWBRfb {
+.c2 .c3 > .sc-hhIiOg {
   margin-right: 0;
 }
 
@@ -181,6 +181,12 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
 }
 
 @media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
   .c6.RcCheckbox-root:hover {
     background-color: rgba(147,147,147,0.12);
   }
@@ -188,12 +194,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
   .c6.RcCheckbox-root:hover.RcCheckbox-checked {
     color: rgba(6,111,172,0.92);
     background-color: rgba(6,111,172,0.12);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c0:hover {
-    background-color: rgba(102,102,102,0.08);
   }
 }
 

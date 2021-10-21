@@ -145,9 +145,9 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/SubMenu SubMenu With MenuList 1
   margin-right: -8px;
 }
 
-.c3 .sc-oeezt > .sc-WZYut,
-.c3 .sc-oeezt > .sc-hhIiOg,
-.c3 .sc-oeezt > .sc-dWBRfb {
+.c3 .sc-oeezt > .sc-ckTSus,
+.c3 .sc-oeezt > .sc-gGLxEB,
+.c3 .sc-oeezt > .sc-hhIiOg {
   margin-right: 0;
 }
 
@@ -226,7 +226,7 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/SubMenu SubMenu With MenuList 1
   margin-right: 0;
 }
 
-.c1 .sc-oeezt > .sc-dWBRfb {
+.c1 .sc-oeezt > .sc-hhIiOg {
   margin-left: 4px;
   margin-right: 4px;
 }

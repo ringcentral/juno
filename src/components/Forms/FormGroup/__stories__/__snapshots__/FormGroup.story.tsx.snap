@@ -46,19 +46,6 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
   margin-right: 0;
 }
 
-.c2.RcCheckbox-root {
-  color: #939393;
-  padding: 10px;
-}
-
-.c2.RcCheckbox-root.RcCheckbox-checked {
-  color: #066FAC;
-}
-
-.c2.RcCheckbox-root.RcCheckbox-disabled {
-  color: #B9B9B9;
-}
-
 .c1.RcSwitch-root {
   padding: 0px;
   width: 36px;
@@ -125,15 +112,17 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
   background-color: rgba(6,111,172,0.76);
 }
 
-@media (hover:hover) and (pointer:fine) {
-  .c2.RcCheckbox-root:hover {
-    background-color: rgba(147,147,147,0.12);
-  }
+.c2.RcCheckbox-root {
+  color: #939393;
+  padding: 10px;
+}
 
-  .c2.RcCheckbox-root:hover.RcCheckbox-checked {
-    color: rgba(6,111,172,0.92);
-    background-color: rgba(6,111,172,0.12);
-  }
+.c2.RcCheckbox-root.RcCheckbox-checked {
+  color: #066FAC;
+}
+
+.c2.RcCheckbox-root.RcCheckbox-disabled {
+  color: #B9B9B9;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -143,6 +132,17 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
 
   .c1.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled).RcSwitch-checked + .RcSwitch-track {
     background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcCheckbox-root:hover {
+    background-color: rgba(147,147,147,0.12);
+  }
+
+  .c2.RcCheckbox-root:hover.RcCheckbox-checked {
+    color: rgba(6,111,172,0.92);
+    background-color: rgba(6,111,172,0.12);
   }
 }
 

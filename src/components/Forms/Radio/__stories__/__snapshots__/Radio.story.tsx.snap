@@ -418,14 +418,6 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio with custom icon 1
   margin-right: 0;
 }
 
-.c0 {
-  font-size: 1rem;
-  font-weight: 700;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 24px;
-  color: #066FAC;
-}
-
 .c2.RcRadio-root {
   color: #939393;
   padding: 10px;
@@ -442,6 +434,14 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio with custom icon 1
 .c2 .RadioButtonIcon-root svg {
   font-size: 24px;
   margin: -2px;
+}
+
+.c0 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  color: #066FAC;
 }
 
 @media (hover:hover) and (pointer:fine) {

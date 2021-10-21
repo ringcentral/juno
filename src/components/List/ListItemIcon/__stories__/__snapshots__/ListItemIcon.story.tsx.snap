@@ -61,7 +61,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemIcon ListItemIcon 1`] 
   margin-right: 0;
 }
 
-.c0 .sc-oeezt > .sc-dWBRfb {
+.c0 .sc-oeezt > .sc-hhIiOg {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -85,12 +85,12 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemIcon ListItemIcon 1`] 
   min-width: unset;
 }
 
-.c1 > .sc-WZYut,
-.c1 > .sc-hhIiOg {
+.c1 > .sc-ckTSus,
+.c1 > .sc-gGLxEB {
   margin-right: 4px;
 }
 
-.c1 > .sc-dWBRfb {
+.c1 > .sc-hhIiOg {
   margin-left: 4px;
   margin-right: 4px;
 }

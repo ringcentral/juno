@@ -340,110 +340,6 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   color: #121212;
 }
 
-.c16.RcCheckbox-root {
-  color: #BE3933;
-  padding: 10px;
-}
-
-.c16.RcCheckbox-root.RcCheckbox-checked {
-  color: #BE3933;
-}
-
-.c16.RcCheckbox-root.RcCheckbox-disabled {
-  color: #B9B9B9;
-}
-
-.c33 .RcSelect-icon {
-  color: #666666;
-}
-
-.c33 .RcSelectInput-focused .RcSelect-icon {
-  color: #066FAC;
-}
-
-.c33 .RcSelectInput-error .RcSelect-icon {
-  color: #BE3933;
-}
-
-.c33 .RcSelectInputWhenPlaceholder-input {
-  color: #757575;
-}
-
-.c33 .RcSelectInputWhenPlaceholder-input:before {
-  content: 'undefined';
-  border: none;
-}
-
-.c33 .RcSelectInput-disabled {
-  color: #B9B9B9;
-}
-
-.c33 .RcSelectInput-disabled .RcSelect-icon {
-  color: #B9B9B9;
-}
-
-.c33 > .RcBoxSelectInput-root {
-  box-sizing: border-box;
-  height: 32px;
-  border-radius: 4px;
-  background-color: #F3F3F3;
-}
-
-.c33 > .RcBoxSelectInput-root:not(.RcBoxSelectInput-disabled):hover {
-  background-color: rgba(73,73,73,0.12);
-}
-
-.c33 > .RcBoxSelectInput-root:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 4px;
-  -webkit-transition: none;
-  transition: none;
-  border-bottom: none !important;
-  pointer-events: none;
-}
-
-.c33 > .RcBoxSelectInput-root:after {
-  display: none;
-}
-
-.c33 > .RcBoxSelectInput-focused {
-  background-color: rgba(73,73,73,0.16);
-}
-
-.c33 > .RcBoxSelectInput-focused:before {
-  box-shadow: inset 0 0 0 1px #066FAC;
-}
-
-.c33 > .RcBoxSelectInput-error:before {
-  box-shadow: inset 0 0 0 1px #BE3933;
-}
-
-.c33 > .RcBoxSelectInput-disabled {
-  background-color: rgba(102,102,102,0.12);
-}
-
-.c33 > .RcBoxSelectInput-disabled:before {
-  box-shadow: inset 0 0 0 1px transparent;
-}
-
-.c33 .RcBoxSelectInput-input {
-  padding: 6px 24px 6px 8px;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  line-height: 20px;
-}
-
-.c33 .RcBoxSelectInput-input:focus {
-  background: transparent;
-}
-
 .c29.RcSwitch-root {
   padding: 0px;
   width: 36px;
@@ -558,6 +454,19 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   margin-right: 4px;
 }
 
+.c16.RcCheckbox-root {
+  color: #BE3933;
+  padding: 10px;
+}
+
+.c16.RcCheckbox-root.RcCheckbox-checked {
+  color: #BE3933;
+}
+
+.c16.RcCheckbox-root.RcCheckbox-disabled {
+  color: #B9B9B9;
+}
+
 .c24 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -577,7 +486,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   min-width: unset;
 }
 
-.c24 > .sc-WZYut,
+.c24 > .sc-ckTSus,
 .c24 > .c15 {
   margin-right: 4px;
 }
@@ -629,6 +538,97 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 16px;
   color: #666666;
+}
+
+.c33 .RcSelect-icon {
+  color: #666666;
+}
+
+.c33 .RcSelectInput-focused .RcSelect-icon {
+  color: #066FAC;
+}
+
+.c33 .RcSelectInput-error .RcSelect-icon {
+  color: #BE3933;
+}
+
+.c33 .RcSelectInputWhenPlaceholder-input {
+  color: #757575;
+}
+
+.c33 .RcSelectInputWhenPlaceholder-input:before {
+  content: 'undefined';
+  border: none;
+}
+
+.c33 .RcSelectInput-disabled {
+  color: #B9B9B9;
+}
+
+.c33 .RcSelectInput-disabled .RcSelect-icon {
+  color: #B9B9B9;
+}
+
+.c33 > .RcBoxSelectInput-root {
+  box-sizing: border-box;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #F3F3F3;
+}
+
+.c33 > .RcBoxSelectInput-root:not(.RcBoxSelectInput-disabled):hover {
+  background-color: rgba(73,73,73,0.12);
+}
+
+.c33 > .RcBoxSelectInput-root:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  -webkit-transition: none;
+  transition: none;
+  border-bottom: none !important;
+  pointer-events: none;
+}
+
+.c33 > .RcBoxSelectInput-root:after {
+  display: none;
+}
+
+.c33 > .RcBoxSelectInput-focused {
+  background-color: rgba(73,73,73,0.16);
+}
+
+.c33 > .RcBoxSelectInput-focused:before {
+  box-shadow: inset 0 0 0 1px #066FAC;
+}
+
+.c33 > .RcBoxSelectInput-error:before {
+  box-shadow: inset 0 0 0 1px #BE3933;
+}
+
+.c33 > .RcBoxSelectInput-disabled {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c33 > .RcBoxSelectInput-disabled:before {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+
+.c33 .RcBoxSelectInput-input {
+  padding: 6px 24px 6px 8px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  line-height: 20px;
+}
+
+.c33 .RcBoxSelectInput-input:focus {
+  background: transparent;
 }
 
 .c8 {
@@ -786,17 +786,6 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c16.RcCheckbox-root:hover {
-    background-color: rgba(190,57,51,0.12);
-  }
-
-  .c16.RcCheckbox-root:hover.RcCheckbox-checked {
-    color: rgba(190,57,51,0.92);
-    background-color: rgba(190,57,51,0.12);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
   .c29.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
     background-color: rgba(147,147,147,0.92);
   }
@@ -809,6 +798,17 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
 @media (hover:hover) and (pointer:fine) {
   .c23:hover {
     background-color: rgba(102,102,102,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c16.RcCheckbox-root:hover {
+    background-color: rgba(190,57,51,0.12);
+  }
+
+  .c16.RcCheckbox-root:hover.RcCheckbox-checked {
+    color: rgba(190,57,51,0.92);
+    background-color: rgba(190,57,51,0.12);
   }
 }
 

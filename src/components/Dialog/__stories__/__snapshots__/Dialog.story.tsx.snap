@@ -211,10 +211,6 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
   .c1.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
     background-color: rgba(147,147,147,0.92);
   }
@@ -222,6 +218,10 @@ Array [
   .c1.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled).RcSwitch-checked + .RcSwitch-track {
     background-color: rgba(6,111,172,0.92);
   }
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 <label
@@ -350,6 +350,10 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
   .c1.RcRadio-root:hover {
     background-color: rgba(147,147,147,0.12);
   }
@@ -358,10 +362,6 @@ Array [
     color: rgba(6,111,172,0.92);
     background-color: rgba(6,111,172,0.12);
   }
-}
-
-@media (hover:hover) and (pointer:fine) {
-
 }
 
 <div
@@ -571,6 +571,10 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
   .c1.RcRadio-root:hover {
     background-color: rgba(147,147,147,0.12);
   }
@@ -579,10 +583,6 @@ Array [
     color: rgba(6,111,172,0.92);
     background-color: rgba(6,111,172,0.12);
   }
-}
-
-@media (hover:hover) and (pointer:fine) {
-
 }
 
 <div
