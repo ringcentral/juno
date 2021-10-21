@@ -131,7 +131,7 @@ const _RcInlineEditable = forwardRef<any, RcInlineEditableProps>(
       classes: classesProp,
       color,
       className,
-      saving: saving_,
+      saving: savingProp,
       inputProps,
       ...rest
     } = props;
@@ -147,7 +147,7 @@ const _RcInlineEditable = forwardRef<any, RcInlineEditableProps>(
 
     const labelRef = useRef<HTMLDivElement>(null);
 
-    const saving = isSaving || saving_;
+    const saving = isSaving || savingProp;
 
     const handleSave = async (
       newValue: string,
