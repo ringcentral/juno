@@ -22,7 +22,7 @@ const defaultSize = 'xlarge';
 
 const defaultIcon = <RcIcon size={defaultSize} symbol={Star} />;
 
-const defaultEmptyIcon = <RcIcon symbol={StarBorder} size={defaultSize} />;
+const defaultEmptyIcon = <RcIcon size={defaultSize} symbol={StarBorder} />;
 
 type RcRatingProps = {
   /** content of tooltip, array for each icon, `['first icon', 'second icon', ...]` */
