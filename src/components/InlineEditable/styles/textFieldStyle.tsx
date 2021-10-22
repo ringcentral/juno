@@ -14,7 +14,6 @@ const baseInputStyles = css`
   color: transparent;
   line-height: inherit;
   white-space: pre-wrap;
-  word-break: break-all;
   box-sizing: border-box;
   font: inherit;
   outline: none;
