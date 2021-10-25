@@ -509,7 +509,7 @@ Array [
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  overflow-wrap: anwhere;
+  overflow-wrap: anywhere;
   white-space: pre-wrap;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -659,7 +659,7 @@ exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable multil
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  overflow-wrap: anwhere;
+  overflow-wrap: anywhere;
   white-space: pre-wrap;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -820,7 +820,7 @@ exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable only e
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  overflow-wrap: anwhere;
+  overflow-wrap: anywhere;
   white-space: pre-wrap;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1328,7 +1328,7 @@ Array [
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  overflow-wrap: anwhere;
+  overflow-wrap: anywhere;
   white-space: pre-wrap;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2052,7 +2052,7 @@ Array [
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  overflow-wrap: anwhere;
+  overflow-wrap: anywhere;
   white-space: pre-wrap;
   -webkit-user-select: none;
   -moz-user-select: none;
