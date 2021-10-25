@@ -34,7 +34,7 @@ export const InlineEditableStyle: RcThemedStyled<
       box-sizing: border-box;
       pointer-events: ${disabled ? 'initial' : 'none'};
       ${ellipsis()};
-      overflow-wrap: ${multiline && 'anwhere'};
+      overflow-wrap: ${multiline && 'anywhere'};
       white-space: ${multiline ? 'pre-wrap' : 'pre'};
 
       ${
