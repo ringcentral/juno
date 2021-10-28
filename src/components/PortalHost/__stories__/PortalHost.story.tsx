@@ -152,7 +152,7 @@ export const PortalHostUpdatePropsExample: Story<PortalHostProps> = () => {
 
   const snackbarRef = useRef<PortalController<SnackbarProps, undefined>>();
 
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState('Example');
 
   useEffect(() => {
     snackbarRef.current = portalManager3.open(Snackbar, {
@@ -199,23 +199,25 @@ const tagPortalManager = new TagPortalManager();
 export const PortalHostWithAdditionExample: Story<PortalHostProps> = () => {
   switchToControlKnobs();
 
-  useEffect(() => {
-    tagPortalManager.open(Snackbar, {
-      props: { message: '233' },
-      data: { tag: 'a-tag' },
-    });
-  }, []);
+  const [open, setOpen] = useState(false);
+
+  const toggle = () => {
+    setOpen(!open);
+
+    if (!open) {
+      tagPortalManager.open(Snackbar, {
+        props: { message: '233' },
+        data: { tag: 'a-tag' },
+      });
+      return;
+    }
+    tagPortalManager.closeByTag('a-tag');
+  };
 
   return (
     <>
       <RcPortalHost manager={tagPortalManager} />
-      <RcButton
-        onClick={() => {
-          tagPortalManager.closeByTag('a-tag');
-        }}
-      >
-        close by tag
-      </RcButton>
+      <RcButton onClick={toggle}>{open ? 'close' : 'open'} by tag</RcButton>
     </>
   );
 };
