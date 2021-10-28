@@ -10,7 +10,7 @@ import {
 import { RcAppBar } from '../AppBar';
 
 export default {
-  title: 'AppBar',
+  title: '🚀 Cleanup Components/AppBar',
   component: RcAppBar,
   argTypes: {
     ...sortInDocTable<keyof AppBarProps>([]),
