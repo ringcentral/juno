@@ -1,6 +1,4 @@
-import { Theme as MuiTheme } from '@material-ui/core/styles/createMuiTheme';
-import { Palette as MuiPalette } from '@material-ui/core/styles/createPalette';
-import { ZIndex as MuiZIndex } from '@material-ui/core/styles/zIndex';
+import { Theme as MuiTheme } from '@material-ui/core/styles';
 
 import {
   RcAccordionDetailsProps,
@@ -123,7 +121,7 @@ import {
 import {
   RcStepButtonProps,
   RcStepConnectorProps,
-  RcStepContentProps,
+  // RcStepContentProps,
   RcStepIconProps,
   RcStepLabelProps,
   RcStepperProps,
@@ -179,7 +177,7 @@ type ForExtendTheme = { palette: {} };
 
 export type RcPalette = typeof palette &
   (DefaultTheme & ForExtendTheme)['palette'] &
-  MuiPalette;
+  MuiTheme['palette'];
 
 export type RcPaletteColor = Omit<
   RcPalette,
@@ -192,7 +190,7 @@ export type RcPaletteColor = Omit<
 
 type Opacity = typeof opacity;
 type Radius = typeof radius;
-type ZIndex = typeof zIndex & MuiZIndex;
+type ZIndex = typeof zIndex & MuiTheme['zIndex'];
 type Shape = typeof shape;
 type Breakpoints = typeof breakpoints;
 
@@ -318,7 +316,7 @@ export type RcTheme = {
       RcStep?: RcStepProps;
       RcStepButton?: RcStepButtonProps;
       RcStepConnector?: RcStepConnectorProps;
-      RcStepContent?: RcStepContentProps;
+      // RcStepContent?: RcStepContentProps;
       RcStepIcon?: RcStepIconProps;
       RcStepLabel?: RcStepLabelProps;
       RcStepper?: RcStepperProps;

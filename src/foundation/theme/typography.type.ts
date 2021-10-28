@@ -1,4 +1,4 @@
-import { Typography as MuiTypography } from '@material-ui/core/styles/createTypography';
+import { Theme as MuiTheme } from '@material-ui/core/styles';
 
 import typography from './assets/typography.json';
 
@@ -45,4 +45,4 @@ export type RcTypographies = Record<
 
 export type RcTypographyType = RcTypographyAddition &
   RcTypographies &
-  MuiTypography;
+  MuiTheme['typography'];
