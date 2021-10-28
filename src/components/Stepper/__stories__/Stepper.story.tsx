@@ -14,7 +14,6 @@ import { RcButton } from '../../Buttons';
 import { RcTypography } from '../../Typography';
 import { RcStep } from '../Step';
 import { RcStepButton } from '../StepButton';
-import { RcStepContent } from '../StepContent';
 import { RcStepLabel } from '../StepLabel';
 import { RcStepper } from '../Stepper';
 
@@ -29,10 +28,12 @@ export default {
       'elevation',
       'square',
       'alternativeLabel',
-      'orientation',
+      // 'orientation',
     ]),
     ...notControlInDocTable<keyof StepperProps>(['connector']),
-    ...notShowInDocTable<keyof StepperProps>(['orientation']),
+    ...notShowInDocTable<keyof StepperProps>([
+      // 'orientation'
+    ]),
   },
 } as Meta;
 
@@ -68,7 +69,6 @@ export const Stepper: Story<StepperProps> = ({
   const [completed, setCompleted] = useState(new Set<number>());
   const [skipped, setSkipped] = useState(new Set<number>());
 
-  const withContent = boolean('with Content', false);
   const clickable = boolean('clickable', true);
 
   const steps = [
@@ -191,13 +191,15 @@ export const Stepper: Story<StepperProps> = ({
               >
                 {step}
               </StepComponent>
-              {withContent && (
-                <RcStepContent>{getStepContent(activeStep)}</RcStepContent>
-              )}
             </RcStep>
           );
         })}
       </RcStepper>
+      <div>
+        <RcTypography color="neutral.f06">
+          {getStepContent(activeStep)}
+        </RcTypography>
+      </div>
       <br />
       {allStepsCompleted() ? (
         <>

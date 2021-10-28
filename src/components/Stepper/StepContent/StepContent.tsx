@@ -5,7 +5,7 @@ import {
   combineClasses,
   RcBaseProps,
   styled,
-  useThemeProps,
+  // useThemeProps,
 } from '../../../foundation';
 import { StepContentStyle } from './styles';
 import { RcStepContentClasses } from './utils';
@@ -15,8 +15,8 @@ type RcStepContentProps = {} & RcBaseProps<
 >;
 
 const _RcStepContent = forwardRef<any, RcStepContentProps>(
-  (inProps: RcStepContentProps, ref) => {
-    const props = useThemeProps({ props: inProps, name: 'RcStepContent' });
+  (props: RcStepContentProps, ref) => {
+    // const props = useThemeProps({ props: inProps, name: 'RcStepContent' });
     const { classes: classesProp, children, ...rest } = props;
     const classes = useMemo(
       () => combineClasses(RcStepContentClasses, classesProp),

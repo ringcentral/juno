@@ -1,68 +1,68 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
-import React, { ComponentProps } from 'react';
+// import { Meta, Story } from '@storybook/react/types-6-0';
+// import React, { ComponentProps } from 'react';
 
-import {
-  notControlInDocTable,
-  notShowInDocTable,
-  sortInDocTable,
-  switchToControlKnobs,
-} from '../../../../storybook';
-import { RcStep } from '../../Step';
-import { RcStepLabel } from '../../StepLabel';
-import { RcStepper } from '../../Stepper';
-import { RcStepContent } from '../StepContent';
+// import {
+//   notControlInDocTable,
+//   notShowInDocTable,
+//   sortInDocTable,
+//   switchToControlKnobs,
+// } from '../../../../storybook';
+// import { RcStep } from '../../Step';
+// import { RcStepLabel } from '../../StepLabel';
+// import { RcStepper } from '../../Stepper';
+// import { RcStepContent } from '../StepContent';
 
-export default {
-  title: '🚀 Cleanup Components/Stepper/StepContent',
-  component: RcStepContent,
-  argTypes: {
-    ...sortInDocTable<keyof StepContentProps>([]),
-    ...notControlInDocTable<keyof StepContentProps>([]),
-    ...notShowInDocTable<keyof StepContentProps>([]),
-  },
-} as Meta;
+// export default {
+//   title: '🚀 Cleanup Components/Stepper/StepContent',
+//   component: RcStepContent,
+//   argTypes: {
+//     ...sortInDocTable<keyof StepContentProps>([]),
+//     ...notControlInDocTable<keyof StepContentProps>([]),
+//     ...notShowInDocTable<keyof StepContentProps>([]),
+//   },
+// } as Meta;
 
-type StepContentProps = ComponentProps<typeof RcStepContent>;
+// type StepContentProps = ComponentProps<typeof RcStepContent>;
 
-export const StepContent: Story<StepContentProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
-  return (
-    <RcStepper activeStep={0}>
-      <RcStep>
-        <RcStepLabel>Select campaign settings</RcStepLabel>
-        <RcStepContent {...args}>{children}</RcStepContent>;
-      </RcStep>
-      <RcStep>
-        <RcStepLabel>Select campaign settings</RcStepLabel>
-        <RcStepContent {...args}>{children}</RcStepContent>;
-      </RcStep>
-      <RcStep>
-        <RcStepLabel>Select campaign settings</RcStepLabel>
-        <RcStepContent {...args}>{children}</RcStepContent>;
-      </RcStep>
-    </RcStepper>
-  );
-};
+// export const StepContent: Story<StepContentProps> = ({ children, ...args }) => {
+//   switchToControlKnobs();
+//   return (
+//     <RcStepper activeStep={0}>
+//       <RcStep>
+//         <RcStepLabel>Select campaign settings</RcStepLabel>
+//         <RcStepContent {...args}>{children}</RcStepContent>;
+//       </RcStep>
+//       <RcStep>
+//         <RcStepLabel>Select campaign settings</RcStepLabel>
+//         <RcStepContent {...args}>{children}</RcStepContent>;
+//       </RcStep>
+//       <RcStep>
+//         <RcStepLabel>Select campaign settings</RcStepLabel>
+//         <RcStepContent {...args}>{children}</RcStepContent>;
+//       </RcStep>
+//     </RcStepper>
+//   );
+// };
 
-StepContent.storyName = 'StepContent';
+// StepContent.storyName = 'StepContent';
 
-StepContent.args = {
-  children: 'that is content',
-};
+// StepContent.args = {
+//   children: 'that is content',
+// };
 
-StepContent.argTypes = {
-  ...notControlInDocTable<keyof StepContentProps>([]),
-};
+// StepContent.argTypes = {
+//   ...notControlInDocTable<keyof StepContentProps>([]),
+// };
 
-StepContent.parameters = {
-  tags: [
-    {
-      name: 'Mui',
-      href: 'https://material-ui.com/api/step-content/',
-    },
-    {
-      name: 'Accessibility',
-      value: '100%',
-    },
-  ],
-};
+// StepContent.parameters = {
+//   tags: [
+//     {
+//       name: 'Mui',
+//       href: 'https://material-ui.com/api/step-content/',
+//     },
+//     {
+//       name: 'Accessibility',
+//       value: '100%',
+//     },
+//   ],
+// };

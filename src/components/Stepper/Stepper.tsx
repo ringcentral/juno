@@ -11,7 +11,10 @@ import { RcStepConnector } from './StepConnector';
 import { StepperStyle } from './styles';
 import { RcStepperClasses } from './utils';
 
-type RcStepperProps = {} & RcBaseProps<ComponentProps<typeof MuiStepper>>;
+type RcStepperProps = {} & RcBaseProps<
+  ComponentProps<typeof MuiStepper>,
+  'orientation'
+>;
 
 const _RcStepper = forwardRef<any, RcStepperProps>(
   (inProps: RcStepperProps, ref) => {
