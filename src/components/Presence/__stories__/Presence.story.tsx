@@ -74,13 +74,17 @@ export const PresenceExamples: Story<PresenceProps> = () => {
 
       <StyledWrapper>
         {sizes.map((size) => (
-          <RcPresence size={size} color={palette2('interactive', 'b02')} />
+          <RcPresence
+            key={size}
+            size={size}
+            color={palette2('interactive', 'b02')}
+          />
         ))}
         <StyledText>Custom Color with theme method</StyledText>
       </StyledWrapper>
       <StyledWrapper>
         {sizes.map((size) => (
-          <RcPresence size={size} color={'yellow'} />
+          <RcPresence key={size} size={size} color={'yellow'} />
         ))}
         <StyledText>Custom Color with css color</StyledText>
       </StyledWrapper>

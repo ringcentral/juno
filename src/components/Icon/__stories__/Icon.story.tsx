@@ -135,6 +135,7 @@ const ThemeSwitcher: FunctionComponent<{}> = () => {
     <>
       {Object.keys(themeMap).map((value) => (
         <RcButton
+          key={value}
           onClick={() => {
             if (setTheme) {
               setTheme(value);
