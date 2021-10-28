@@ -1,6 +1,5 @@
+import { useTheme, PaletteType } from '@material-ui/core';
 import React, { forwardRef, memo } from 'react';
-import { useTheme } from '../foundation';
-import { PaletteType } from '@material-ui/core';
 import MacKeynoteD from './MacKeynoteD';
 
 const MacKeynote = memo(

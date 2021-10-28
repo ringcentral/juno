@@ -65,9 +65,9 @@ function template(
   }
 
   return hasDark ? template.ast`
+    import { useTheme, PaletteType } from '@material-ui/core';\n\n
     import React, { forwardRef, memo } from 'react';\n\n
-    import { useTheme } from '../foundation';\n\n
-    import { PaletteType } from '@material-ui/core';
+
     ${`import ${outPutName}D from './${outPutName}D'`};\n\n
 
     const ${outPutName} = memo(forwardRef((${props}) => {
