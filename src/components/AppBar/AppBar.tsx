@@ -12,7 +12,7 @@ type RcAppBarProps = RcBaseProps<
   'color' | 'variant' | 'square'
 >;
 
-const RcAppBar = styled(MuiAppBar)`
+const RcAppBar = styled<RcAppBarProps>(MuiAppBar)`
   height: ${TOP_BAR_HEIGHT};
   min-width: ${TOP_BAR_MIN_WIDTH};
   background-color: ${palette2('neutral', 'b01')};
