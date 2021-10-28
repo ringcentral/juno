@@ -88,6 +88,7 @@ export const ChipExamples: Story<ChipProps> = ({ children, ...args }) => {
           disabled
           onDelete={handleDelete}
           deleteTooltip="Remove"
+          deleteIconProps={{ TooltipProps: { tooltipForceHide: true } }}
         />
         <br />
         <br />

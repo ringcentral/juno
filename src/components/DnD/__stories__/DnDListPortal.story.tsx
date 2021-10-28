@@ -1,6 +1,6 @@
 import { select } from '@storybook/addon-knobs';
 import { Meta, Story } from '@storybook/react/types-6-0';
-import React, { FunctionComponent, useState } from 'react';
+import React, { forwardRef, FunctionComponent, useState } from 'react';
 import { DraggableProvided, DraggableStateSnapshot } from 'react-beautiful-dnd';
 import ReactDOM from 'react-dom';
 
@@ -36,7 +36,13 @@ document.body.appendChild(portal);
 
 type StyledListItemProps = RcListItemProps & { inPortal: boolean };
 
-const StyledListItem = styled(RcListItem)<StyledListItemProps>`
+const _StyledListItem = forwardRef<any, StyledListItemProps>(
+  ({ inPortal, ...rest }, ref) => {
+    return <RcListItem {...rest} ref={ref} />;
+  },
+);
+
+const StyledListItem = styled(_StyledListItem)`
   position: relative;
   ${({ inPortal }) =>
     inPortal

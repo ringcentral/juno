@@ -1,27 +1,28 @@
-import React, { useState, FunctionComponent, useCallback } from 'react';
 import { Meta, Story } from '@storybook/react';
-import { styled, spacing, palette2, px } from '../../../foundation';
-import { RcTypography } from '../../Typography';
-import { RcIcon } from '../../Icon';
-import { switchToControlKnobs } from '../../../storybook';
-import { RcCard, RcCardProps } from '../Card';
-import { RcCardActionArea, RcCardActionAreaProps } from '../CardActionArea';
-import { RcCardContent } from '../CardContent';
+import React, { FunctionComponent, useCallback, useState } from 'react';
+
+import { palette2, px, spacing, styled } from '../../../foundation';
 import {
-  ExternalLink,
-  Pin,
   Delete,
   Edit,
-  MoreVert,
+  ExternalLink,
   GoogleDoc,
+  MoreVert,
+  Pin,
 } from '../../../icon';
-import { RcCardHoverActions } from '../CardHoverActions';
+import { switchToControlKnobs } from '../../../storybook';
+import { RcButton, RcIconButton, RcIconButtonProps } from '../../Buttons';
+import { RcGrid } from '../../Grid';
+import { RcIcon } from '../../Icon';
+import { RcMenu, RcMenuItem, RcMenuProps } from '../../Menu';
 import { RcMenuItemProps } from '../../Menu/deprecated';
-import { RcMenuProps, RcMenuItem, RcMenu } from '../../Menu';
-import { RcIconButton, RcButton, RcIconButtonProps } from '../../Buttons';
+import { RcTypography } from '../../Typography';
+import { RcCard, RcCardProps } from '../Card';
+import { RcCardActionArea, RcCardActionAreaProps } from '../CardActionArea';
 import { RcCardActions } from '../CardActions';
+import { RcCardContent } from '../CardContent';
+import { RcCardHoverActions } from '../CardHoverActions';
 import { RcCardMedia } from '../CardMedia';
-import { RcGridProps, RcGrid } from '../../Grid';
 
 export default {
   title: '🚀 Cleanup Components/Cards/CardExample',
@@ -88,7 +89,7 @@ const stopPropagation = (event: React.MouseEvent<HTMLElement, MouseEvent>) => {
   event.stopPropagation();
 };
 
-const logAndStopPropgation = (text: string) => {
+const logAndStopPropagation = (text: string) => {
   return (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
     console.log(text);
     stopPropagation(e);
@@ -118,12 +119,12 @@ const CardWithHoverActions: FunctionComponent<RcCardProps &
     {
       symbol: Pin,
       tooltip: 'Pin',
-      onClick: logAndStopPropgation('Pin'),
+      onClick: logAndStopPropagation('Pin'),
     },
     {
       symbol: Delete,
       tooltip: 'Delete',
-      onClick: logAndStopPropgation('Delete'),
+      onClick: logAndStopPropagation('Delete'),
     },
   ];
 
@@ -148,28 +149,28 @@ const CardWithHoverActions: FunctionComponent<RcCardProps &
             variant="contained"
             color="neutral.b01"
             title="Edit"
-            onClick={logAndStopPropgation('HoverActionButton:onEditClick')}
+            onClick={logAndStopPropagation('HoverActionButton:onEditClick')}
             symbol={Edit}
           />
           <CardHoverMoreButton
             title="More"
             symbol={MoreVert}
-            onEnter={onEnter}
             onExit={onExit}
+            onEnter={onEnter}
             menuItemProps={moreMenusItemProps}
           />
         </RcCardHoverActions>
         {children}
         <RcCardActions>
           <RcButton
-            onClick={logAndStopPropgation('Toast')}
+            onClick={logAndStopPropagation('Toast')}
             onMouseDown={stopPropagation}
             color="interactive.f01"
           >
             Toast
           </RcButton>
           <RcButton
-            onClick={logAndStopPropgation('Boast')}
+            onClick={logAndStopPropagation('Boast')}
             onMouseDown={stopPropagation}
             variant="outlined"
           >
@@ -191,7 +192,9 @@ const CardHoverMoreButton: FunctionComponent<CardHoverMoreButtonProps> = (
   const { menuItemProps, onEnter, onExit, ...rest } = props;
 
   const menuItemComps = menuItemProps.map(({ tooltip, ...rests }) => (
-    <RcMenuItem {...rests}>{tooltip}</RcMenuItem>
+    <RcMenuItem {...rests} key={tooltip}>
+      {tooltip}
+    </RcMenuItem>
   ));
 
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
@@ -323,8 +326,9 @@ export const CardResponsiveExample: Story<RcCardProps> = () => {
     <RcGridContainer container spacing={2}>
       {Array(noOfCards)
         .fill(null)
-        .map(() => (
-          <RcGrid item xs={12} sm={6} md={4} lg={3} xl={2}>
+        .map((x, i) => (
+          // eslint-disable-next-line react/no-array-index-key
+          <RcGrid key={i} item xs={12} sm={6} md={4} lg={3} xl={2}>
             <CardExample />
           </RcGrid>
         ))}

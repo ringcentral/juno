@@ -373,7 +373,7 @@ export const DrawerAndModalSwitchInDevice: Story<DrawerProps> = ({
           <RcPaper>{cancel}</RcPaper>
         </CustomDrawer>
       ) : (
-        <RcDialog size="small" open={open} onClose={handleClose}>
+        <RcDialog maxWidth="xs" open={open} onClose={handleClose}>
           {header}
           {confirm}
           {cancel}
@@ -392,7 +392,7 @@ export const DrawerAndModalSwitchInDevice: Story<DrawerProps> = ({
           {content}
         </CustomDrawer>
       ) : (
-        <RcDialog size="small" open={open2} onClose={handleClose2}>
+        <RcDialog maxWidth="xs" open={open2} onClose={handleClose2}>
           {content}
         </RcDialog>
       )}

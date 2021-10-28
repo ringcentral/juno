@@ -36,22 +36,22 @@ export const Hidden: Story<HiddenProps> = ({ ...args }) => {
         <pre>{JSON.stringify(theme.breakpoints.values, null, 2)}</pre>
       </RcBox>
       <RcGrid container>
-        <RcGrid xs>
+        <RcGrid item xs>
           <RcHidden smDown {...args}>
             <RcButton color="highlight.b03">smDown</RcButton>
           </RcHidden>
         </RcGrid>
-        <RcGrid xs>
+        <RcGrid item xs>
           <RcHidden lgUp {...args}>
             <RcButton>lgUp</RcButton>
           </RcHidden>
         </RcGrid>
-        <RcGrid xs>
+        <RcGrid item xs>
           <RcHidden only="md">
             <RcButton color="danger.b03">Hidden on md</RcButton>
           </RcHidden>
         </RcGrid>
-        <RcGrid xs>
+        <RcGrid item xs>
           <RcHidden only={['lg', 'sm']}>
             <RcButton>Hidden on lg and sm</RcButton>
           </RcHidden>

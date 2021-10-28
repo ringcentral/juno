@@ -105,6 +105,7 @@ const Content = styled(RcTypography)``;
 Content.defaultProps = {
   color: 'neutral.f06',
   weight: 'bold',
+  component: 'div',
 };
 
 const Item = styled.div<{ display?: string }>`
