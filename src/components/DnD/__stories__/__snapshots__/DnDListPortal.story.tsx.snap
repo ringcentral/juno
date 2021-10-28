@@ -172,7 +172,6 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list/Multi
                 data-rbd-draggable-context-id="2"
                 data-rbd-draggable-id="item-1"
                 draggable={false}
-                inPortal={false}
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onDragStart={[Function]}
@@ -206,7 +205,6 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list/Multi
                 data-rbd-draggable-context-id="2"
                 data-rbd-draggable-id="item-2"
                 draggable={false}
-                inPortal={false}
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onDragStart={[Function]}
@@ -240,7 +238,6 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list/Multi
                 data-rbd-draggable-context-id="2"
                 data-rbd-draggable-id="item-3"
                 draggable={false}
-                inPortal={false}
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onDragStart={[Function]}
@@ -274,7 +271,6 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list/Multi
                 data-rbd-draggable-context-id="2"
                 data-rbd-draggable-id="item-4"
                 draggable={false}
-                inPortal={false}
                 onBlur={[Function]}
                 onDragLeave={[Function]}
                 onDragStart={[Function]}

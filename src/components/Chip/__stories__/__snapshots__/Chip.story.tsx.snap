@@ -845,7 +845,7 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
       <button
         aria-describedby={null}
         aria-disabled={true}
-        aria-label="Remove"
+        aria-label={null}
         className="MuiButtonBase-root c6 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root RcIconButton-disabled Mui-disabled"
         disabled={true}
         onBlur={[Function]}
@@ -856,13 +856,12 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
         onKeyUp={[Function]}
         onMouseDown={[Function]}
         onMouseLeave={[Function]}
-        onMouseOver={[Function]}
         onMouseUp={[Function]}
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
         tabIndex={-1}
-        title="Remove"
+        title={null}
         type="button"
       >
         <span

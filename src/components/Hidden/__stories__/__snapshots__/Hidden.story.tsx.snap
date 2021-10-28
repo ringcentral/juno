@@ -19,16 +19,16 @@ Array [
     className="MuiGrid-root MuiGrid-container"
   >
     <div
-      className="MuiGrid-root MuiGrid-grid-xs-true"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
     />
     <div
-      className="MuiGrid-root MuiGrid-grid-xs-true"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
     />
     <div
-      className="MuiGrid-root MuiGrid-grid-xs-true"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
     />
     <div
-      className="MuiGrid-root MuiGrid-grid-xs-true"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
     />
   </div>,
 ]

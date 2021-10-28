@@ -875,13 +875,13 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         >
           Date & time
         </p>
-        <p
+        <div
           className="MuiTypography-root c12"
           data-color="neutral.f06"
           data-variant="body1"
         >
           Thu, 12/05/2019 at 8:00 AM - 11:00AM, repeating every month
-        </p>
+        </div>
       </div>
       <div
         className="c10"
@@ -893,13 +893,13 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         >
           Location
         </p>
-        <p
+        <div
           className="MuiTypography-root c12"
           data-color="neutral.f06"
           data-variant="body1"
         >
           XMN office - 10F
-        </p>
+        </div>
       </div>
       <div
         className="c10"
@@ -911,13 +911,13 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         >
           Description
         </p>
-        <p
+        <div
           className="MuiTypography-root c12"
           data-color="neutral.f06"
           data-variant="body1"
         >
           This is description of note. Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate.
-        </p>
+        </div>
       </div>
     </main>
   </div>
@@ -1010,13 +1010,13 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
           </svg>
           
         </span>
-        <p
+        <div
           className="MuiTypography-root c12 MuiTypography-displayInline"
           data-color="neutral.f06"
           data-variant="body1"
         >
           Thu, 12/05/2019 at 8:00 AM - 11:00AM
-        </p>
+        </div>
       </div>
       <div
         className="c10"
@@ -1028,7 +1028,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         >
           Assignee
         </p>
-        <p
+        <div
           className="MuiTypography-root c12"
           data-color="neutral.f06"
           data-variant="body1"
@@ -1067,7 +1067,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
             </div>
             Tomas
           </div>
-        </p>
+        </div>
       </div>
       <div
         className="c10"
@@ -1079,13 +1079,13 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         >
           Section
         </p>
-        <p
+        <div
           className="MuiTypography-root c12"
           data-color="neutral.f06"
           data-variant="body1"
         >
           This is description of note. Mauris non tempor quam, et lacinia sapien.
-        </p>
+        </div>
       </div>
       <div
         className="c10"
@@ -1097,7 +1097,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         >
           Attachments
         </p>
-        <p
+        <div
           className="MuiTypography-root c12"
           data-color="neutral.f06"
           data-variant="body1"
@@ -1167,7 +1167,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
               className="MuiTouchRipple-root"
             />
           </div>
-        </p>
+        </div>
       </div>
     </main>
   </div>
@@ -1184,13 +1184,13 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         <div
           className="MuiBox-root MuiBox-root-74"
         >
-          <p
+          <div
             className="MuiTypography-root c12"
             data-color="neutral.f06"
             data-variant="body1"
           >
             Desktop notifications for browser
-          </p>
+          </div>
           <p
             className="MuiTypography-root c11"
             data-color="neutral.f04"
@@ -1252,13 +1252,13 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         <div
           className="MuiBox-root MuiBox-root-76"
         >
-          <p
+          <div
             className="MuiTypography-root c12"
             data-color="neutral.f06"
             data-variant="body1"
           >
             New messages
-          </p>
+          </div>
           <p
             className="MuiTypography-root c11"
             data-color="neutral.f04"
@@ -1333,13 +1333,13 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         <div
           className="MuiBox-root MuiBox-root-78"
         >
-          <p
+          <div
             className="MuiTypography-root c12"
             data-color="neutral.f06"
             data-variant="body1"
           >
             Incoming calls
-          </p>
+          </div>
           <p
             className="MuiTypography-root c11"
             data-color="neutral.f04"
@@ -1401,13 +1401,13 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         <div
           className="MuiBox-root MuiBox-root-80"
         >
-          <p
+          <div
             className="MuiTypography-root c12"
             data-color="neutral.f06"
             data-variant="body1"
           >
             Missed calls and new voicemails
-          </p>
+          </div>
           <p
             className="MuiTypography-root c11"
             data-color="neutral.f04"
