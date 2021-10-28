@@ -65,7 +65,11 @@ export default {
       'onEscapeKeyDown',
       'onRendered',
     ]),
-    ...notControlInDocTable<keyof MenuProps>(['open', 'anchorEl']),
+    ...notControlInDocTable<keyof MenuProps>([
+      'open',
+      'anchorEl',
+      'anchorOrigin',
+    ]),
     ...notShowInDocTable<keyof MenuProps>([]),
   },
 } as Meta;
@@ -76,6 +80,7 @@ const menus = range(0, 1000);
 
 export const VirtualizedMenu: Story<Partial<MenuProps>> = ({
   children,
+  anchorOrigin,
   ...args
 }) => {
   switchToControlKnobs();
