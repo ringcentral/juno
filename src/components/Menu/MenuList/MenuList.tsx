@@ -43,6 +43,7 @@ const _RcMenuList = forwardRef<any, RcMenuListProps>(
       children,
       autoClose,
       onClose: onCloseProp,
+      maxHeight,
       ...rest
     } = props;
 
