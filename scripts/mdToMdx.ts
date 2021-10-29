@@ -40,7 +40,9 @@ Lib.makeDirExit(storybookDocPath);
 
   const template = fs.readFileSync(doc.path).toString();
 
-  fs.writeFileSync(target, `${doc.title}\r\n${template}`);
+  fs.writeFileSync(target, `import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+
+${doc.title}\r\n${template}`);
 });
 
 console.log('[Release]: update doc complete');
