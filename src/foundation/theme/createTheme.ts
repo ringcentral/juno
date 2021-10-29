@@ -1,4 +1,4 @@
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createTheme as createMuiTheme } from '@material-ui/core/styles';
 
 import { DeepPartial } from '../typings';
 import { deepmerge } from '../utils';
@@ -52,7 +52,7 @@ function createTheme(options: RcThemeInput = {}) {
     shape: deepmerge(shape, shapeInput),
   };
 
-  return createMuiTheme(theme as any) as RcTheme;
+  return (createMuiTheme(theme as any) as any) as RcTheme;
 }
 
 export default createTheme;

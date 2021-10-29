@@ -1,4 +1,4 @@
-import { fade } from '@material-ui/core/styles';
+import { alpha as MuiAlpha } from '@material-ui/core/styles';
 
 import { RcTheme } from '../theme/theme.type';
 import { logInDev } from '../utils';
@@ -31,7 +31,7 @@ export function doAlpha(
       : theme.palette.action.hoverOpacity * opacity;
 
   try {
-    return fade(color, +alpha.toFixed(2));
+    return MuiAlpha(color, +alpha.toFixed(2));
   } catch (error) {
     logInDev({
       component: 'setOpacity',
