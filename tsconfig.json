@@ -24,5 +24,12 @@
     "skipLibCheck": true
   },
   "include": ["src/**/*.tsx", "src/**/*.ts"],
-  "exclude": ["node_modules", "build", "scripts", "dist", "dist-source"]
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "dist",
+    "dist-source",
+    "framer"
+  ]
 }

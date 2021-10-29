@@ -26,6 +26,8 @@
     "commit": "git-cz",
     "create-component": "ts-node scripts/generator",
     "create-mdx": "ts-node scripts/generator/mdx",
+    "framer:build": "node scripts/framer/esmbuild build ./src public/framer",
+    "framer:serve": "node scripts/framer/esmbuild serve ./src 8000",
     "preicon-to-component": "rm -rf ./src/icon/* && ts-node scripts/update-icon --tmp && eslint scripts/utils/svgToComponentMapping.js --fix",
     "icon-to-component": "svgr  --ext tsx --typescript --ref --memo ./src/icon/tmp --template ./scripts/iconToComponent.js -d ./src/icon",
     "posticon-to-component": "rm -rf ./src/icon/tmp && eslint ./src/icon/** --fix",
@@ -56,7 +58,7 @@
     "update-snapshot": "jest --updateSnapshot",
     "update-storybook-snapshot": "jest src/__tests__/snapshot/storyShots.test.tsx --updateSnapshot",
     "update-theme": "concurrently \"ts-node scripts/getOverrides\" \"ts-node scripts/jsonToScss\" \"ts-node scripts/createPaletteType\"",
-    "predeploy": "npm run build:storybook",
+    "predeploy": "npm run build:storybook && npm run framer:build",
     "deploy": "gh-pages -d public"
   },
   "husky": {
@@ -74,6 +76,7 @@
     "@types/react-beautiful-dnd": "^13.0.0",
     "@types/styled-components": "4.0.3",
     "clsx": "^1.0.4",
+    "esbuild": "0.13.10",
     "focus-visible": "^5.1.0",
     "lodash": "^4.17.21",
     "react-beautiful-dnd": "^13.0.0",
