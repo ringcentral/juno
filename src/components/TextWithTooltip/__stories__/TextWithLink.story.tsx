@@ -26,6 +26,4 @@ export const TextWithTooltip = () => {
   );
 };
 
-TextWithTooltip.story = {
-  name: 'TextWithTooltip',
-};
+TextWithTooltip.storyName = 'TextWithTooltip';

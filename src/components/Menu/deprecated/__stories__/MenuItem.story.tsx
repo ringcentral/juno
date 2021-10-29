@@ -72,17 +72,13 @@ export const TextMenuItemWithIcon = () => {
   );
 };
 
-TextMenuItemWithIcon.story = {
-  name: 'Text MenuItem With Icon',
-};
+TextMenuItemWithIcon.storyName = 'Text MenuItem With Icon';
 
 export const TextMenuItemWithLabel = () => {
   return <RcMenuItem label={'label1:'}>test@ringcentral.com</RcMenuItem>;
 };
 
-TextMenuItemWithLabel.story = {
-  name: 'Text MenuItem With Label',
-};
+TextMenuItemWithLabel.storyName = 'Text MenuItem With Label';
 
 export const _2LinesMenuItemWithAvatar = () => {
   const primary = text('primary', 'Two-line item name');
@@ -94,9 +90,7 @@ export const _2LinesMenuItemWithAvatar = () => {
   );
 };
 
-_2LinesMenuItemWithAvatar.story = {
-  name: '2 Lines MenuItem With Avatar',
-};
+_2LinesMenuItemWithAvatar.storyName = '2 Lines MenuItem With Avatar';
 
 export const MenuItemWithSubtext = () => {
   const primary = text('primary', 'Profile');
@@ -112,9 +106,7 @@ export const MenuItemWithSubtext = () => {
   );
 };
 
-MenuItemWithSubtext.story = {
-  name: 'MenuItem with subtext',
-};
+MenuItemWithSubtext.storyName = 'MenuItem with subtext';
 
 export const CheckedMenuItem = () => {
   const checked = boolean('checked', false);
@@ -137,6 +129,4 @@ export const CheckedMenuItem = () => {
   );
 };
 
-CheckedMenuItem.story = {
-  name: 'Checked MenuItem',
-};
+CheckedMenuItem.storyName = 'Checked MenuItem';

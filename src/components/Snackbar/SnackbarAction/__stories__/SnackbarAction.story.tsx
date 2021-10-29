@@ -16,7 +16,7 @@ export default {
   component: RcSnackbarAction,
   argTypes: {
     size: {
-      defaultValue: 'medium',
+      table: { defaultValue: 'medium' },
     },
     ...sortInDocTable<keyof SnackbarActionProps>(['variant', 'disabled']),
     ...notControlInDocTable<keyof SnackbarActionProps>(['icon', 'symbol']),

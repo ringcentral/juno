@@ -16,7 +16,7 @@ import {
 import arrayFixture from './RcTableMUIDataArray.fixture.json';
 
 export default {
-  title: 'Components/Tables',
+  title: '🖤 deprecated Components/Tables',
   component: RcTable,
 } as Meta;
 

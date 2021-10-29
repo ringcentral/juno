@@ -10,6 +10,4 @@ export const TextWithHighlight = () => {
   return <RcTextWithHighlight>abcde</RcTextWithHighlight>;
 };
 
-TextWithHighlight.story = {
-  name: 'TextWithHighlight',
-};
+TextWithHighlight.storyName = 'TextWithHighlight';

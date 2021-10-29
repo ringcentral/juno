@@ -1,10 +1,11 @@
 import { boolean, number, text } from '@storybook/addon-knobs';
+import { Story } from '@storybook/react/types-6-0';
 import React from 'react';
 
 import { RcImageView } from '../ImageView';
 
 export default {
-  title: 'Components/ImageView',
+  title: '🖤 deprecated Components/ImageView',
 };
 
 const knobs = {
@@ -15,7 +16,7 @@ const knobs = {
   containerHeight: () => number('containerHeight', 400),
 };
 
-export const ImageView = () => (
+export const ImageView: Story<any> = () => (
   <div
     style={{
       width: knobs.containerWidth(),
@@ -26,6 +27,4 @@ export const ImageView = () => (
   </div>
 );
 
-ImageView.story = {
-  name: 'ImageView',
-};
+ImageView.storyName = 'ImageView';

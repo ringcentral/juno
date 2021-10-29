@@ -63,6 +63,4 @@ export const _withTooltip = () => {
   );
 };
 
-_withTooltip.story = {
-  name: 'withTooltip',
-};
+_withTooltip.storyName = 'withTooltip';

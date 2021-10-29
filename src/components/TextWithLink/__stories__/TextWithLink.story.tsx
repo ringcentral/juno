@@ -15,6 +15,4 @@ export const TextWithLink = () => {
   );
 };
 
-TextWithLink.story = {
-  name: 'TextWithLink',
-};
+TextWithLink.storyName = 'TextWithLink';

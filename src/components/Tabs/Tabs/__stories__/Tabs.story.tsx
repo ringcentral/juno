@@ -203,65 +203,66 @@ TabsChangeExample.args = {};
 
 type TabsCustomExampleProps = {};
 
+const tabsData2: {
+  key: string;
+  badgeNumber: number;
+  label: string;
+  value: string;
+}[] = [
+  {
+    key: 'tab-0',
+    badgeNumber: 7,
+    label: 'Tab 0',
+    value: 'tab-0',
+  },
+  {
+    key: 'tab-1',
+    badgeNumber: 0,
+    label: 'Tab 1',
+    value: 'tab-1',
+  },
+  {
+    key: 'tab-2',
+    badgeNumber: 54,
+    label: 'Tab 2',
+    value: 'tab-2',
+  },
+  {
+    key: 'tab-3',
+    badgeNumber: 72,
+    label: 'Tab 3',
+    value: 'tab-3',
+  },
+  {
+    key: 'tab-4',
+    badgeNumber: 2,
+    label: 'Tab 4',
+    value: 'tab-4',
+  },
+];
+
 export const TabsCustomExample: Story<TabsCustomExampleProps> = (args) => {
   const [value, setValue] = React.useState('tab-0');
   const [moreBadgeNumber, setMoreBadgeNumber] = React.useState(0);
 
   const handleChange = (event: React.ChangeEvent<{}>, value: any) => {
+    console.log(event, value);
     setValue(value);
   };
 
   const MoreIconCmp = (
     <>
-      <RcIcon size="medium" color="icon.subdued" symbol={MoreHorizIcon} />
+      <RcIcon size="medium" symbol={MoreHorizIcon} />
       <RcBadge badgeContent={moreBadgeNumber} showZero={false} overlap="none" />
     </>
   );
-
-  const tabsData: {
-    key: string;
-    badgeNumber: number;
-    label: string;
-    value: string;
-  }[] = [
-    {
-      key: 'tab-0',
-      badgeNumber: 7,
-      label: 'Tab 0',
-      value: 'tab-0',
-    },
-    {
-      key: 'tab-1',
-      badgeNumber: 0,
-      label: 'Tab 1',
-      value: 'tab-1',
-    },
-    {
-      key: 'tab-2',
-      badgeNumber: 54,
-      label: 'Tab 2',
-      value: 'tab-2',
-    },
-    {
-      key: 'tab-3',
-      badgeNumber: 72,
-      label: 'Tab 3',
-      value: 'tab-3',
-    },
-    {
-      key: 'tab-4',
-      badgeNumber: 2,
-      label: 'Tab 4',
-      value: 'tab-4',
-    },
-  ];
 
   const handleGroupInfoChange = (info: RcTabsMoreMenuGroupInfoType) => {
     const [tabItems, menuItems] = info;
     setMoreBadgeNumber(
       menuItems.reduce(
         (acc, curr) =>
-          curr.index ? acc + tabsData[curr.index].badgeNumber : acc,
+          curr.index ? acc + tabsData2[curr.index].badgeNumber : acc,
         0,
       ),
     );
@@ -284,7 +285,7 @@ export const TabsCustomExample: Story<TabsCustomExampleProps> = (args) => {
             onGroupInfoChange: handleGroupInfoChange,
           }}
         >
-          {tabsData.map((data) => {
+          {tabsData2.map((data) => {
             const { key, label, value, badgeNumber } = data;
             return (
               <RcTab
