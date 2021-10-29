@@ -307,7 +307,6 @@ Array [
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 20px;
-  color: icon;
 }
 
 .c3 .RcBadge-badge {

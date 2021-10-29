@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/ImageView ImageView 1`] = `
+exports[`Storyshots 🖤 deprecated Components/ImageView ImageView 1`] = `
 .c0 {
   display: block;
   overflow: hidden;

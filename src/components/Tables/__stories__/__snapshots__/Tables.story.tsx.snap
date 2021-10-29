@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Tables Accessibility 1`] = `
+exports[`Storyshots 🖤 deprecated Components/Tables Accessibility 1`] = `
 .c10 {
   width: 1em;
   height: 1em;
@@ -8193,7 +8193,7 @@ exports[`Storyshots Components/Tables Accessibility 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tables Borders 1`] = `
+exports[`Storyshots 🖤 deprecated Components/Tables Borders 1`] = `
 .c8 {
   font-size: 0.9375rem;
   font-weight: 400;
@@ -8694,7 +8694,7 @@ exports[`Storyshots Components/Tables Borders 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tables Right Aligned Column 1`] = `
+exports[`Storyshots 🖤 deprecated Components/Tables Right Aligned Column 1`] = `
 .c10 {
   width: 1em;
   height: 1em;
@@ -17711,7 +17711,7 @@ exports[`Storyshots Components/Tables Right Aligned Column 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tables Sizes 1`] = `
+exports[`Storyshots 🖤 deprecated Components/Tables Sizes 1`] = `
 Array [
   .c8 {
   font-size: 0.9375rem;
@@ -18850,7 +18850,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Components/Tables Sort States 1`] = `
+exports[`Storyshots 🖤 deprecated Components/Tables Sort States 1`] = `
 .c9 {
   width: 1em;
   height: 1em;
@@ -19778,7 +19778,7 @@ exports[`Storyshots Components/Tables Sort States 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tables Sticky Header 1`] = `
+exports[`Storyshots 🖤 deprecated Components/Tables Sticky Header 1`] = `
 .c8 {
   font-size: 0.9375rem;
   font-weight: 400;
