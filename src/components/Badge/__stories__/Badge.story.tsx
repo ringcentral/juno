@@ -99,7 +99,7 @@ export const BadgeExamples: Story<BadgeProps> = ({
   return (
     <RcGrid container>
       <RcGrid item xs>
-        <Title>overlap="rectangle"</Title>
+        <Title>overlap="rectangular"</Title>
         <RcBadge {...args}>
           <RcButton>right bottom</RcButton>
         </RcBadge>
@@ -129,15 +129,15 @@ export const BadgeExamples: Story<BadgeProps> = ({
         </RcBadge>
       </RcGrid>
       <RcGrid item xs>
-        <Title>overlap="circle"</Title>
-        <RcBadge {...args} overlap="circle">
+        <Title>overlap="circular"</Title>
+        <RcBadge {...args} overlap="circular">
           <RcAvatar>CK</RcAvatar>
         </RcBadge>
         <br />
         <br />
         <RcBadge
           {...args}
-          overlap="circle"
+          overlap="circular"
           dotProps={{ size: 'large' }}
           anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
         >
@@ -147,7 +147,7 @@ export const BadgeExamples: Story<BadgeProps> = ({
         <br />
         <RcBadge
           {...args}
-          overlap="circle"
+          overlap="circular"
           dotComponent={null}
           anchorOrigin={{ horizontal: 'left', vertical: 'top' }}
         >
@@ -157,7 +157,7 @@ export const BadgeExamples: Story<BadgeProps> = ({
         <br />
         <RcBadge
           {...args}
-          overlap="circle"
+          overlap="circular"
           anchorOrigin={{ horizontal: 'left', vertical: 'bottom' }}
         >
           <RcAvatar>CK</RcAvatar>
@@ -171,7 +171,7 @@ export const BadgeExamples: Story<BadgeProps> = ({
         <br />
         <br />
         <Title>With Icon</Title>
-        <RcBadge {...args} overlap="circle">
+        <RcBadge {...args} overlap="circular">
           <RcIcon symbol={Phone} color="interactive.f01" />
         </RcBadge>
         <br />
@@ -180,7 +180,7 @@ export const BadgeExamples: Story<BadgeProps> = ({
           When BadgeContent is number, that will limit with prop{' '}
           <RcText highlight>max</RcText>
         </Title>
-        <RcBadge {...args} badgeContent="123" overlap="circle" max={5}>
+        <RcBadge {...args} badgeContent="123" overlap="circular" max={5}>
           <RcAvatar>CK</RcAvatar>
         </RcBadge>
         <br />
@@ -189,7 +189,7 @@ export const BadgeExamples: Story<BadgeProps> = ({
           When BadgeContent is not number, that will not limit with prop{' '}
           <RcText highlight>max</RcText>
         </Title>
-        <RcBadge {...args} badgeContent="- 123 -" overlap="circle" max={5}>
+        <RcBadge {...args} badgeContent="- 123 -" overlap="circular" max={5}>
           <RcAvatar>CK</RcAvatar>
         </RcBadge>
       </RcGrid>

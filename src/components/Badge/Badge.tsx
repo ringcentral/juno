@@ -14,6 +14,7 @@ import {
   RcBaseProps,
   RcPaletteKeys,
   styled,
+  UnionPick,
   useThemeProps,
 } from '../../foundation';
 import { RcBox } from '../Box';
@@ -31,7 +32,12 @@ type RcBadgeProps = {
   /** The component used for the root node. Either a string to use a HTML element or a component. */
   component?: ElementType;
   /** Wrapped shape the badge should overlap */
-  overlap?: ComponentProps<typeof MuiBadge>['overlap'] | 'none';
+  overlap?:
+    | UnionPick<
+        NonNullable<ComponentProps<typeof MuiBadge>['overlap']>,
+        'circular' | 'rectangular'
+      >
+    | 'none';
   /**
    * Custom dot render Component in `dot` mode
    * if you don't want any dot, you can set `null`
@@ -117,7 +123,7 @@ const RcBadge = styled(_RcBadge)`
 RcBadge.defaultProps = {
   color: 'highlight.b03',
   textColor: 'neutral.f01',
-  overlap: 'rectangle',
+  overlap: 'rectangular',
   anchorOrigin: {
     horizontal: 'right',
     vertical: 'top',
