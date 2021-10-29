@@ -27,13 +27,13 @@ export type RcTablePaginationActionsProps = {
   nextIconButtonProps?: Partial<IconButtonProps>;
 } & RcBaseProps<
   TablePaginationActionsProps,
-  'backIconButtonProps' | 'nextIconButtonProps'
+  'backIconButtonProps' | 'nextIconButtonProps' | 'onChangePage'
 >;
 
 export const RcTablePaginationActions = memo<RcTablePaginationActionsProps>(
   (props) => {
     const {
-      onChangePage,
+      onPageChange,
       page,
       count,
       rowsPerPage,
@@ -43,11 +43,11 @@ export const RcTablePaginationActions = memo<RcTablePaginationActionsProps>(
     } = props;
 
     const handleBackButtonClick = (event: any) => {
-      onChangePage(event, page - 1);
+      onPageChange(event, page - 1);
     };
 
     const handleNextButtonClick = (event: any) => {
-      onChangePage(event, page + 1);
+      onPageChange(event, page + 1);
     };
 
     const prevDisabled = page === 0;

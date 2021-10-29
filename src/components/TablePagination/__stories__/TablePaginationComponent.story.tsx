@@ -37,7 +37,7 @@ export const TablePagination: Story<TablePaginationProps> = ({
 
   const [rowsPerPage, setRowsPerPage] = useState(10);
 
-  const handleChangePage = (
+  const handlePageChange = (
     event: React.MouseEvent<HTMLButtonElement> | null,
     newPage: number,
   ) => {
@@ -45,7 +45,7 @@ export const TablePagination: Story<TablePaginationProps> = ({
     setPage(newPage);
   };
 
-  const handleChangeRowsPerPage = (
+  const handleRowsPerPageChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     console.log('RowsPerPage change', event);
@@ -68,10 +68,10 @@ export const TablePagination: Story<TablePaginationProps> = ({
                 title: 'prev',
               }}
               page={page}
-              onChangePage={handleChangePage}
+              onPageChange={handlePageChange}
               rowsPerPageOptions={[]}
               rowsPerPage={rowsPerPage}
-              onChangeRowsPerPage={handleChangeRowsPerPage}
+              onRowsPerPageChange={handleRowsPerPageChange}
             />
           </tr>
         </tfoot>
@@ -83,10 +83,10 @@ export const TablePagination: Story<TablePaginationProps> = ({
               {...args}
               type="displayedRows"
               page={page}
-              onChangePage={handleChangePage}
+              onPageChange={handlePageChange}
               rowsPerPageOptions={[]}
               rowsPerPage={rowsPerPage}
-              onChangeRowsPerPage={handleChangeRowsPerPage}
+              onRowsPerPageChange={handleRowsPerPageChange}
             />
           </tr>
         </tfoot>
@@ -101,9 +101,9 @@ export const TablePagination: Story<TablePaginationProps> = ({
               nextIconButtonProps={{}}
               backIconButtonProps={{}}
               page={page}
-              onChangePage={handleChangePage}
+              onPageChange={handlePageChange}
               rowsPerPage={rowsPerPage}
-              onChangeRowsPerPage={handleChangeRowsPerPage}
+              onRowsPerPageChange={handleRowsPerPageChange}
             />
           </tr>
         </tfoot>
@@ -117,10 +117,10 @@ export const TablePagination: Story<TablePaginationProps> = ({
               type="pageSelection"
               nextIconButtonProps={{}}
               backIconButtonProps={{}}
-              onChangePage={handleChangePage}
+              onPageChange={handlePageChange}
               rowsPerPage={rowsPerPage}
               labelOfPage={({ totalPage }) => `之 ${totalPage} 頁`}
-              onChangeRowsPerPage={handleChangeRowsPerPage}
+              onRowsPerPageChange={handleRowsPerPageChange}
               labelRowsPerPage="每頁幾筆"
             />
           </tr>
@@ -136,9 +136,9 @@ export const TablePagination: Story<TablePaginationProps> = ({
               nextIconButtonProps={{}}
               backIconButtonProps={{}}
               page={page}
-              onChangePage={handleChangePage}
+              onPageChange={handlePageChange}
               rowsPerPage={rowsPerPage}
-              onChangeRowsPerPage={handleChangeRowsPerPage}
+              onRowsPerPageChange={handleRowsPerPageChange}
             />
           </tr>
         </tfoot>
@@ -152,7 +152,7 @@ export const TablePagination: Story<TablePaginationProps> = ({
               nextIconButtonProps={{}}
               backIconButtonProps={{}}
               page={page}
-              onChangePage={handleChangePage}
+              onPageChange={handlePageChange}
               rowsPerPage={rowsPerPage}
               rowsPerPageOptions={[
                 {
@@ -169,7 +169,7 @@ export const TablePagination: Story<TablePaginationProps> = ({
               labelDisplayedRows={({ count, from, page, to }) =>
                 `第${page + 1}頁 ${from}-${to} 共 ${count} 筆`
               }
-              onChangeRowsPerPage={handleChangeRowsPerPage}
+              onRowsPerPageChange={handleRowsPerPageChange}
             />
           </tr>
         </tfoot>
@@ -182,7 +182,7 @@ export const TablePagination: Story<TablePaginationProps> = ({
         nextIconButtonProps={{}}
         backIconButtonProps={{}}
         page={page}
-        onChangePage={handleChangePage}
+        onPageChange={handlePageChange}
         rowsPerPage={rowsPerPage}
         rowsPerPageOptions={[
           {
@@ -199,7 +199,7 @@ export const TablePagination: Story<TablePaginationProps> = ({
         labelDisplayedRows={({ count, from, page, to }) =>
           `第${page + 1}頁 ${from}-${to} 共 ${count} 筆`
         }
-        onChangeRowsPerPage={handleChangeRowsPerPage}
+        onRowsPerPageChange={handleRowsPerPageChange}
       />
     </>
   );

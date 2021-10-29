@@ -72,8 +72,8 @@ const _RcTablePagination = forwardRef<any, RcTablePaginationProps>(
       labelDisplayedRows = defaultLabelDisplayedRows,
       labelOfPage = defaultLabelOfPage,
       labelRowsPerPage = 'Rows per page:',
-      onChangePage,
-      onChangeRowsPerPage,
+      onPageChange,
+      onRowsPerPageChange,
       rowsPerPageOptions = [10, 25, 50, 100],
       SelectProps = {},
       page,
@@ -83,7 +83,7 @@ const _RcTablePagination = forwardRef<any, RcTablePaginationProps>(
       // getItemAriaLabel = defaultGetAriaLabel,
       // showFirstButton = false,
       // showLastButton = false,
-      ...other
+      ...rest
     } = props;
 
     const MenuItemComponent = SelectProps.native
@@ -125,7 +125,9 @@ const _RcTablePagination = forwardRef<any, RcTablePaginationProps>(
             selected={i === page}
             key={i}
             className={classes!.menuItem}
-            onClick={(e: any) => onChangePage(e, i)}
+            onClick={(e: any) => {
+              onPageChange?.(e, i);
+            }}
           >
             {i + 1}
           </MenuItemComponent>,
@@ -136,7 +138,7 @@ const _RcTablePagination = forwardRef<any, RcTablePaginationProps>(
       MenuItemComponent,
       classes,
       isPageSelection,
-      onChangePage,
+      onPageChange,
       page,
       totalPage,
     ]);
@@ -147,7 +149,7 @@ const _RcTablePagination = forwardRef<any, RcTablePaginationProps>(
         ref={ref}
         as={component}
         className={clsx(classes.root, className)}
-        {...other}
+        {...rest}
       >
         <RcToolbar className={classes.toolbar}>
           <div className={classes.spacer} />
@@ -167,7 +169,7 @@ const _RcTablePagination = forwardRef<any, RcTablePaginationProps>(
               className={classes!.selectRoot}
               InputProps={{ disableUnderline: true }}
               value={rowsPerPage}
-              onChange={onChangeRowsPerPage}
+              onChange={onRowsPerPageChange}
               {...SelectProps}
             >
               {rowsPerPageOptions!.map((rowsPerPageOption) => {
@@ -220,7 +222,7 @@ const _RcTablePagination = forwardRef<any, RcTablePaginationProps>(
             backIconButtonProps={backIconButtonProps}
             count={count}
             nextIconButtonProps={nextIconButtonProps}
-            onChangePage={onChangePage}
+            onPageChange={onPageChange!}
             page={page}
             rowsPerPage={rowsPerPage}
             // showFirstButton={showFirstButton}
