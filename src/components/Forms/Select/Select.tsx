@@ -44,6 +44,8 @@ type RcSelectProps = {
   | 'rows'
   | 'rowsMax'
   | 'rowsMin'
+  | 'maxRows'
+  | 'minRows'
   | 'startAdornment'
   | 'disableUnderline'
   | 'autoWidth'

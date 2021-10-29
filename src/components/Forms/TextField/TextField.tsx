@@ -85,6 +85,8 @@ type RcTextFieldProps = {
   | 'SelectProps'
   | 'size'
   | 'margin'
+  | 'rowsMax'
+  | 'rows'
 > &
   Pick<RcTypographyProps, 'gutterBottom'>;
 

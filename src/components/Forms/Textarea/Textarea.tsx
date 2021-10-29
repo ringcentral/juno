@@ -46,7 +46,7 @@ const RcTextarea = styled(_RcTextarea)`
 `;
 
 RcTextarea.defaultProps = {
-  rows: 3,
+  minRows: 3,
 };
 
 RcTextarea.displayName = 'RcTextarea';

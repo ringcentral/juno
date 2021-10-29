@@ -10,7 +10,7 @@ export default {
   title: '🚀 Cleanup Components/Forms/Textarea',
   component: RcTextarea,
   argTypes: {
-    ...sortInDocTable<keyof TextareaProps>(['rows', 'rowsMax']),
+    ...sortInDocTable<keyof TextareaProps>(['minRows', 'maxRows']),
     ...TextFieldStory.argTypes,
   },
 } as Meta;
