@@ -104,7 +104,9 @@ export const Popover: Story<PopoverProps> = ({
         transformOrigin={transformOrigin}
         onClose={handleClose}
       >
-        <RcTypography>The content of the Popover.</RcTypography>
+        <RcTypography color="neutral.f06">
+          The content of the Popover.
+        </RcTypography>
       </RcPopover>
     </div>
   );

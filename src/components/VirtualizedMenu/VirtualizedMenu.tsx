@@ -37,8 +37,7 @@ const _RcVirtualizedMenu = forwardRef<any, RcVirtualizedMenuProps>(
       MenuListProps: { maxHeight = 416, onKeyDown, ...MenuListProps } = {},
       onClose,
       open,
-      onEntering,
-      onEntered,
+      TransitionProps: TransitionPropsProp,
       PaperProps: PaperPropsProp = {},
       PopoverClasses,
       transitionDuration = 'auto',
@@ -59,15 +58,13 @@ const _RcVirtualizedMenu = forwardRef<any, RcVirtualizedMenuProps>(
 
     const autoFocusItem = autoFocus && !disableAutoFocusItem && open;
 
-    const events = useMemo(
+    const TransitionProps = useMemo(
       () =>
         combineProps(
           {
-            onEntering: (element: HTMLElement, isAppearing: boolean) => {
+            onEntering: () => {
               menuListActionRef.current?.adjustStyleForScrollbar();
               menuListActionRef.current?.scrollIntoViewAndFocus();
-
-              onEntering?.(element, isAppearing);
             },
             onEntered: () => {
               const popoverElm = popoverRef.current!;
@@ -82,12 +79,9 @@ const _RcVirtualizedMenu = forwardRef<any, RcVirtualizedMenuProps>(
               }
             },
           },
-          {
-            onEntering,
-            onEntered,
-          },
+          TransitionPropsProp,
         ),
-      [maxHeight, onEntered, onEntering],
+      [maxHeight, TransitionPropsProp],
     );
 
     const PaperProps = combineProps(
@@ -122,7 +116,7 @@ const _RcVirtualizedMenu = forwardRef<any, RcVirtualizedMenuProps>(
         open={open}
         transitionDuration={transitionDuration}
         PaperProps={PaperProps}
-        {...events}
+        TransitionProps={TransitionProps}
         {...rest}
       >
         <RcVirtualizedMenuList

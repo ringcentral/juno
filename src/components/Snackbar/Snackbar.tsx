@@ -1,8 +1,10 @@
 import Slide from '@material-ui/core/Slide';
 import MuiSnackbar from '@material-ui/core/Snackbar';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
 import {
   combineClasses,
+  combineProps,
   RcBaseProps,
   styled,
   useThemeProps,
@@ -29,7 +31,7 @@ const _RcSnackbar = forwardRef<any, RcSnackbarProps>(
       action,
       ContentProps,
       children,
-      onExited: onExitedProp,
+      TransitionProps: TransitionPropsProp,
       ...rest
     } = props;
 
@@ -38,10 +40,20 @@ const _RcSnackbar = forwardRef<any, RcSnackbarProps>(
       [classesProp],
     );
 
-    const onExited = useUnmountPortalHandler(onExitedProp);
+    const onExited = useUnmountPortalHandler(TransitionPropsProp?.onExited);
+
+    const TransitionProps = useMemo(
+      () => combineProps({ onExited }, TransitionPropsProp),
+      [TransitionPropsProp, onExited],
+    );
 
     return (
-      <MuiSnackbar ref={ref} classes={classes} {...rest} onExited={onExited}>
+      <MuiSnackbar
+        ref={ref}
+        classes={classes}
+        TransitionProps={TransitionProps}
+        {...rest}
+      >
         {children || (
           <RcSnackbarContent
             size={size}

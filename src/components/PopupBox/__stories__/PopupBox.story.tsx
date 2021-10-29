@@ -58,8 +58,10 @@ export const PopupBox: Story<PopupBoxProps> = ({ open: openProp, ...args }) => {
       <RcPopupBox
         {...args}
         open={open}
-        onExited={(e) => {
-          console.log('exit');
+        TransitionProps={{
+          onExited: (e) => {
+            console.log('exit');
+          },
         }}
         onConfirm={() => {
           console.log('confirm');

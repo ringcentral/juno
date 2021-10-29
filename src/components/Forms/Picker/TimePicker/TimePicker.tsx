@@ -395,7 +395,9 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps>((inProps, ref) => {
             },
           ),
           onKeyDown: handlePopoverKeydown,
-          onEnter: () => setSelectionType('none'),
+          TransitionProps: {
+            onEnter: () => setSelectionType('none'),
+          },
         },
         PopoverPropsProp,
       ),

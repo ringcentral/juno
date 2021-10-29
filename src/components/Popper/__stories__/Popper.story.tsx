@@ -8,6 +8,7 @@ import {
   switchToControlKnobs,
 } from '../../../storybook';
 import { RcButton } from '../../Buttons/Button';
+import { RcTypography } from '../../Typography';
 import { RcPopper } from '../Popper';
 
 export default {
@@ -40,7 +41,11 @@ export const Popper: Story<PopperProps> = ({ children, ...args }) => {
         Toggle Popper
       </RcButton>
       <RcPopper {...args} id={id} open={open} anchorEl={anchorEl}>
-        <div>The content of the Popper.</div>
+        <div>
+          <RcTypography color="neutral.f06">
+            The content of the Popper.
+          </RcTypography>
+        </div>
       </RcPopper>
     </div>
   );

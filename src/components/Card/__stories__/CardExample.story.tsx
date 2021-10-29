@@ -222,8 +222,10 @@ const CardHoverMoreButton: FunctionComponent<CardHoverMoreButtonProps> = (
         open={Boolean(anchorEl)}
         anchorEl={anchorEl}
         onClose={handleClose}
-        onEnter={onEnter}
-        onExit={onExit}
+        TransitionProps={{
+          onExit,
+          onEnter,
+        }}
         autoClose
       >
         {menuItemComps}

@@ -2,30 +2,30 @@ import { Meta, Story } from '@storybook/react/types-6-0';
 import React, { ComponentProps, FunctionComponent, useState } from 'react';
 
 import {
+  styled,
+  useResponsiveContext,
+  useResponsiveMatch,
+} from '../../../foundation';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '../../../storybook';
+import { RcBox } from '../../Box';
 import { RcButton } from '../../Buttons/Button';
+import { RcDrawer } from '../../Drawer';
+import { RcFormControlLabel, RcSwitch } from '../../Forms';
 import { RcCheckbox } from '../../Forms/Checkbox';
 import { RcRadio } from '../../Forms/Radio';
 import { RcRadioGroup } from '../../Forms/RadioGroup';
-import { RcTypography } from '../../Typography';
-import { RcDialog, RcDialogContext } from '../Dialog';
-import { RcDialogActions } from '../DialogActions';
-import { RcDialogContentText } from '../DialogContentText';
-import { RcDialogContent, RcDialogContentProps } from '../DialogContent';
-import { RcDialogTitle } from '../DialogTitle';
 import { RcResponsive } from '../../Responsive';
-import {
-  styled,
-  useResponsiveContext,
-  useResponsiveMatch,
-} from '../../../foundation';
-import { RcSwitch, RcFormControlLabel } from '../../Forms';
-import { RcDrawer } from '../../Drawer';
-import { RcBox } from '../../Box';
+import { RcTypography } from '../../Typography';
+import { RcDialog, RcDialogContext, RcDialogProps } from '../Dialog';
+import { RcDialogActions } from '../DialogActions';
+import { RcDialogContent, RcDialogContentProps } from '../DialogContent';
+import { RcDialogContentText } from '../DialogContentText';
+import { RcDialogTitle } from '../DialogTitle';
 
 export default {
   title: '🚀 Cleanup Components/Dialog/Dialog',
@@ -76,47 +76,46 @@ type DialogExampleComponentProps = Partial<
   DialogProps & Pick<RcDialogContentProps, 'dividers'>
 >;
 
-export const DialogExampleComponent: FunctionComponent<DialogExampleComponentProps> = (
-  props,
-) => {
-  const { children, childrenSize, dividers, ...rest } = props;
-  const [openState, setOpenState] = useState(false);
+export const DialogExampleComponent: FunctionComponent<DialogExampleComponentProps> =
+  (props) => {
+    const { children, childrenSize, dividers, ...rest } = props;
+    const [openState, setOpenState] = useState(false);
 
-  return (
-    <>
-      <RcButton
-        type="button"
-        onClick={() => {
-          setOpenState(true);
-        }}
-      >
-        Open Children Modal
-        {childrenSize && <span>(childrenSize: {childrenSize})</span>}
-      </RcButton>
-      <RcDialog
-        childrenSize={childrenSize}
-        {...rest}
-        open={openState}
-        onClose={(e: any) => {
-          setOpenState(false);
-          console.log('onClose', e);
-        }}
-        onExited={(e) => console.log('onExited', e)}
-        onBackdropClick={(e) => console.log('onBackdropClick', e)}
-        onEscapeKeyDown={(e) => console.log('onEscapeKeyDown', e)}
-      >
-        <Content {...props} onClick={() => setOpenState(false)}>
-          <RcCheckbox title="Go" label="Do something" />
-          <RcCheckbox label="Custom Field" />
-          <RcRadioGroup defaultValue="mail">
-            <RcRadio label="mail" value="mail" />
-            <RcRadio label="address" value="address" />
-          </RcRadioGroup>
-        </Content>
-      </RcDialog>
-    </>
-  );
-};
+    return (
+      <>
+        <RcButton
+          type="button"
+          onClick={() => {
+            setOpenState(true);
+          }}
+        >
+          Open Children Modal
+          {childrenSize && <span>(childrenSize: {childrenSize})</span>}
+        </RcButton>
+        <RcDialog
+          childrenSize={childrenSize}
+          {...rest}
+          open={openState}
+          onClose={(e: any, reason) => {
+            setOpenState(false);
+            console.log('onClose', e, reason);
+          }}
+          TransitionProps={{
+            onExited: (e) => console.log('onExited', e),
+          }}
+        >
+          <Content {...props} onClick={() => setOpenState(false)}>
+            <RcCheckbox title="Go" label="Do something" />
+            <RcCheckbox label="Custom Field" />
+            <RcRadioGroup defaultValue="mail">
+              <RcRadio label="mail" value="mail" />
+              <RcRadio label="address" value="address" />
+            </RcRadioGroup>
+          </Content>
+        </RcDialog>
+      </>
+    );
+  };
 
 export const Dialog: Story<DialogProps> = ({ children, ...args }) => {
   switchToControlKnobs();
@@ -205,9 +204,9 @@ const ResponsiveDialogExample = ({ ...args }) => {
   );
 };
 
-export const DialogWithResponsiveExample: FunctionComponent<Partial<
-  DialogProps
->> = ({ children, ...args }) => {
+export const DialogWithResponsiveExample: FunctionComponent<
+  Partial<DialogProps>
+> = ({ children, ...args }) => {
   return (
     <>
       <RcResponsive>
@@ -259,9 +258,9 @@ export const DialogChildrenSizes: Story<DialogProps> = ({
     childrenSizeProp || 'medium',
   );
 
-  const handleClose = (e: any) => {
+  const handleClose: RcDialogProps['onClose'] = (e, reason) => {
     setOpenState(false);
-    console.log('onClose', e);
+    console.log('onClose', e, reason);
   };
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -330,9 +329,9 @@ export const DialogChildrenSizes: Story<DialogProps> = ({
           childrenSize={childrenSize}
           open={openState}
           onClose={handleClose}
-          onExited={(e) => console.log('onExited', e)}
-          onBackdropClick={(e) => console.log('onBackdropClick', e)}
-          onEscapeKeyDown={(e) => console.log('onEscapeKeyDown', e)}
+          TransitionProps={{
+            onExited: (e) => console.log('onExited', e),
+          }}
         >
           {content}
         </RcDialog>

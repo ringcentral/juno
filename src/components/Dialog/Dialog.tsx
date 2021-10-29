@@ -1,7 +1,9 @@
 import MuiDialog from '@material-ui/core/Dialog';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
 import {
   combineClasses,
+  combineProps,
   RcBaseProps,
   RcBaseSize,
   styled,
@@ -44,7 +46,7 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
       fullWidth = true,
       childrenSize,
       children,
-      onExited: onExitedProp,
+      TransitionProps: TransitionPropsProp,
       ...rest
     } = props;
     const classes = useMemo(
@@ -53,8 +55,6 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
     );
 
     const { externalWindow } = useRcPortalWindowContext();
-
-    const onExited = useUnmountPortalHandler(onExitedProp);
 
     const maxWidth = useMemo<
       ComponentProps<typeof MuiDialog>['maxWidth']
@@ -79,6 +79,13 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
       childrenSize,
     ]);
 
+    const onExited = useUnmountPortalHandler(TransitionPropsProp?.onExited);
+
+    const TransitionProps = useMemo(
+      () => combineProps({ onExited }, TransitionPropsProp),
+      [TransitionPropsProp, onExited],
+    );
+
     return (
       <MuiDialog
         ref={ref}
@@ -87,8 +94,8 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
         maxWidth={maxWidth}
         fullScreen={size === 'fullScreen' ? true : undefined}
         classes={classes}
+        TransitionProps={TransitionProps}
         {...rest}
-        onExited={onExited}
       >
         <RcDialogContext.Provider value={contextValue}>
           {children}

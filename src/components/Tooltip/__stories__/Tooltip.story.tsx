@@ -316,12 +316,13 @@ export const TooltipWithForceHide: Story<TooltipProps> = ({
       </RcTooltip>
       <RcDialog
         open={openState}
-        onClose={(e: any) => {
+        onClose={(e, reason) => {
           setOpenState(false);
+          console.log('close', e, reason);
         }}
-        onExited={(e) => console.log('onExited', e)}
-        onBackdropClick={(e) => console.log('onBackdropClick', e)}
-        onEscapeKeyDown={(e) => console.log('onEscapeKeyDown', e)}
+        TransitionProps={{
+          onExited: (e) => console.log('onExited', e),
+        }}
       >
         <RcDialogTitle>Title</RcDialogTitle>
         <RcDialogContent>
