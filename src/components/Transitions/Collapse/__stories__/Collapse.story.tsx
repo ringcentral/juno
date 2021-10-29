@@ -47,7 +47,7 @@ export const Collapse: Story<CollapseProps> = ({
           <RcBox width="100px" height="100px" bgcolor="neutral.b03" />
         </RcCollapse>
 
-        <RcCollapse in={open} collapsedHeight="28px">
+        <RcCollapse in={open} collapsedSize="28px">
           <RcBox
             width="100px"
             marginLeft="1rem"

@@ -570,7 +570,7 @@ export const KeypadMode: Story<any> = () => {
         </RcFade>
         <StyledCollapse
           in={open}
-          collapsedHeight={`${footHeight}px`}
+          collapsedSize={`${footHeight}px`}
           onEntered={() => {
             inputRef.current?.focus();
           }}
