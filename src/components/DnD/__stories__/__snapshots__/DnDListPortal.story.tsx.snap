@@ -140,7 +140,7 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list/Multi
         Group 1
       </li>
       <div
-        className="MuiCollapse-container MuiCollapse-entered"
+        className="MuiCollapse-root MuiCollapse-entered"
         style={
           Object {
             "minHeight": "0px",
@@ -332,7 +332,7 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list/Multi
         Group 2
       </li>
       <div
-        className="MuiCollapse-container MuiCollapse-entered"
+        className="MuiCollapse-root MuiCollapse-entered"
         style={
           Object {
             "minHeight": "0px",
@@ -391,7 +391,7 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list/Multi
         Group 3
       </li>
       <div
-        className="MuiCollapse-container MuiCollapse-entered"
+        className="MuiCollapse-root MuiCollapse-entered"
         style={
           Object {
             "minHeight": "0px",

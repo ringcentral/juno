@@ -277,7 +277,7 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/AccordionDetails Accordion
     </div>
   </div>
   <div
-    className="MuiCollapse-container MuiCollapse-entered"
+    className="MuiCollapse-root MuiCollapse-entered"
     style={
       Object {
         "minHeight": "0px",

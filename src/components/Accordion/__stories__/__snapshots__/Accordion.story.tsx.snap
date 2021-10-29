@@ -277,7 +277,7 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/Accordion Accordion 1`] = 
     </div>
   </div>
   <div
-    className="MuiCollapse-container MuiCollapse-hidden"
+    className="MuiCollapse-root MuiCollapse-hidden"
     style={
       Object {
         "minHeight": "0px",
@@ -585,7 +585,7 @@ Array [
       </div>
     </div>
     <div
-      className="MuiCollapse-container MuiCollapse-hidden"
+      className="MuiCollapse-root MuiCollapse-hidden"
       style={
         Object {
           "minHeight": "0px",
@@ -891,7 +891,7 @@ Array [
       </div>
     </div>
     <div
-      className="MuiCollapse-container MuiCollapse-hidden"
+      className="MuiCollapse-root MuiCollapse-hidden"
       style={
         Object {
           "minHeight": "0px",
@@ -1197,7 +1197,7 @@ Array [
       </div>
     </div>
     <div
-      className="MuiCollapse-container MuiCollapse-hidden"
+      className="MuiCollapse-root MuiCollapse-hidden"
       style={
         Object {
           "minHeight": "0px",
@@ -1320,7 +1320,7 @@ Array [
       </div>
     </div>
     <div
-      className="MuiCollapse-container MuiCollapse-hidden"
+      className="MuiCollapse-root MuiCollapse-hidden"
       style={
         Object {
           "minHeight": "0px",

@@ -206,6 +206,29 @@ Array [
         placeholder="placeholder"
         required={false}
         rows={3}
+        style={
+          Object {
+            "height": -4,
+            "overflow": "hidden",
+          }
+        }
+      />
+      <textarea
+        aria-hidden={true}
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
+        readOnly={true}
+        style={
+          Object {
+            "height": 0,
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "top": 0,
+            "transform": "translateZ(0)",
+            "visibility": "hidden",
+          }
+        }
+        tabIndex={-1}
       />
     </div>
   </div>,
@@ -431,6 +454,29 @@ Array [
         placeholder="placeholder"
         required={false}
         rows={3}
+        style={
+          Object {
+            "height": -4,
+            "overflow": "hidden",
+          }
+        }
+      />
+      <textarea
+        aria-hidden={true}
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
+        readOnly={true}
+        style={
+          Object {
+            "height": 0,
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "top": 0,
+            "transform": "translateZ(0)",
+            "visibility": "hidden",
+          }
+        }
+        tabIndex={-1}
       />
     </div>
   </div>,
@@ -620,7 +666,7 @@ Array [
     className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1"
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
       data-shrink={true}
     >
       Title
@@ -641,7 +687,30 @@ Array [
         placeholder="what's your title?"
         required={false}
         rows={3}
+        style={
+          Object {
+            "height": -4,
+            "overflow": "hidden",
+          }
+        }
         value="Example"
+      />
+      <textarea
+        aria-hidden={true}
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
+        readOnly={true}
+        style={
+          Object {
+            "height": 0,
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "top": 0,
+            "transform": "translateZ(0)",
+            "visibility": "hidden",
+          }
+        }
+        tabIndex={-1}
       />
     </div>
   </div>,
@@ -843,7 +912,7 @@ Array [
     className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 MuiFormControl-fullWidth"
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
       data-shrink={true}
     >
       Title
@@ -864,7 +933,30 @@ Array [
         placeholder="what's your title?"
         required={false}
         rows={3}
+        style={
+          Object {
+            "height": -4,
+            "overflow": "hidden",
+          }
+        }
         value="Example"
+      />
+      <textarea
+        aria-hidden={true}
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
+        readOnly={true}
+        style={
+          Object {
+            "height": 0,
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "top": 0,
+            "transform": "translateZ(0)",
+            "visibility": "hidden",
+          }
+        }
+        tabIndex={-1}
       />
     </div>
   </div>,
@@ -1070,7 +1162,7 @@ Array [
     className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1"
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled Mui-focused Mui-focused RcTextFieldInputLabel-focused"
+      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-focused Mui-focused RcTextFieldInputLabel-focused"
       data-shrink={true}
     >
       Title
@@ -1091,7 +1183,30 @@ Array [
         placeholder="what's your title?"
         required={false}
         rows={3}
+        style={
+          Object {
+            "height": -4,
+            "overflow": "hidden",
+          }
+        }
         value="Example"
+      />
+      <textarea
+        aria-hidden={true}
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
+        readOnly={true}
+        style={
+          Object {
+            "height": 0,
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "top": 0,
+            "transform": "translateZ(0)",
+            "visibility": "hidden",
+          }
+        }
+        tabIndex={-1}
       />
     </div>
   </div>,
@@ -1297,7 +1412,7 @@ Array [
     className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1"
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-error Mui-error RcTextFieldInputLabel-error MuiFormLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-error Mui-error RcTextFieldInputLabel-error"
       data-shrink={true}
     >
       Title
@@ -1318,7 +1433,30 @@ Array [
         placeholder="what's your title?"
         required={false}
         rows={3}
+        style={
+          Object {
+            "height": -4,
+            "overflow": "hidden",
+          }
+        }
         value="Example"
+      />
+      <textarea
+        aria-hidden={true}
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
+        readOnly={true}
+        style={
+          Object {
+            "height": 0,
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "top": 0,
+            "transform": "translateZ(0)",
+            "visibility": "hidden",
+          }
+        }
+        tabIndex={-1}
       />
     </div>
   </div>,
@@ -1522,7 +1660,7 @@ Array [
     className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1"
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-disabled Mui-disabled RcTextFieldInputLabel-disabled MuiFormLabel-filled"
+      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-disabled Mui-disabled RcTextFieldInputLabel-disabled"
       data-shrink={true}
     >
       Title
@@ -1543,7 +1681,30 @@ Array [
         placeholder="what's your title?"
         required={false}
         rows={3}
+        style={
+          Object {
+            "height": -4,
+            "overflow": "hidden",
+          }
+        }
         value="Example"
+      />
+      <textarea
+        aria-hidden={true}
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input Mui-disabled Mui-disabled RcTextFieldInput-disabled MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
+        readOnly={true}
+        style={
+          Object {
+            "height": 0,
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "top": 0,
+            "transform": "translateZ(0)",
+            "visibility": "hidden",
+          }
+        }
+        tabIndex={-1}
       />
     </div>
   </div>,

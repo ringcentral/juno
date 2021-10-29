@@ -117,7 +117,7 @@ exports[`Storyshots 🚀 Cleanup Components/Stepper/StepContent StepContent 1`] 
       icon={1}
     >
       <div
-        className="MuiCollapse-container MuiStepContent-transition MuiCollapse-entered"
+        className="MuiCollapse-root MuiStepContent-transition MuiCollapse-entered"
         style={
           Object {
             "minHeight": "0px",

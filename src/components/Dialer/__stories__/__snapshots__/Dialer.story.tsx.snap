@@ -3384,7 +3384,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
       }
     />
     <div
-      className="MuiCollapse-container c2"
+      className="MuiCollapse-root c2"
       style={
         Object {
           "minHeight": "28px",

@@ -143,7 +143,7 @@ Array [
     className="MuiBox-root MuiBox-root-269"
   >
     <div
-      className="MuiCollapse-container MuiCollapse-hidden"
+      className="MuiCollapse-root MuiCollapse-hidden"
       style={
         Object {
           "minHeight": "0px",
@@ -163,7 +163,7 @@ Array [
       </div>
     </div>
     <div
-      className="MuiCollapse-container"
+      className="MuiCollapse-root"
       style={
         Object {
           "minHeight": "28px",

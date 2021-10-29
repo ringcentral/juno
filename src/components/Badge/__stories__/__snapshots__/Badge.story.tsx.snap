@@ -112,7 +112,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge 1`] = `
     </span>
   </button>
   <span
-    className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightRectangle"
+    className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightRectangular"
   >
     0
   </span>
@@ -349,7 +349,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
       data-color="neutral.f06"
       data-variant="headline1"
     >
-      overlap="rectangle"
+      overlap="rectangular"
     </h5>
     <span
       className="MuiBadge-root c1"
@@ -378,7 +378,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
         </span>
       </button>
       <span
-        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightRectangle"
+        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightRectangular"
       >
         1
       </span>
@@ -412,7 +412,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
         </span>
       </button>
       <span
-        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginBottomRightRectangle"
+        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginBottomRightRectangular"
       >
         1
       </span>
@@ -446,7 +446,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
         </span>
       </button>
       <span
-        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopLeftRectangle"
+        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopLeftRectangular"
       >
         1
       </span>
@@ -480,7 +480,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
         </span>
       </button>
       <span
-        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginBottomLeftRectangle"
+        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginBottomLeftRectangular"
       >
         1
       </span>
@@ -494,7 +494,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
       data-color="neutral.f06"
       data-variant="headline1"
     >
-      overlap="circle"
+      overlap="circular"
     </h5>
     <span
       className="MuiBadge-root c1"
@@ -510,7 +510,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
         </div>
       </div>
       <span
-        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightCircle"
+        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightCircular"
       >
         1
       </span>
@@ -531,7 +531,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
         </div>
       </div>
       <span
-        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginBottomRightCircle"
+        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginBottomRightCircular"
       >
         1
       </span>
@@ -552,7 +552,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
         </div>
       </div>
       <span
-        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopLeftCircle"
+        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopLeftCircular"
       >
         1
       </span>
@@ -573,7 +573,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
         </div>
       </div>
       <span
-        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginBottomLeftCircle"
+        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginBottomLeftCircular"
       >
         1
       </span>
@@ -635,7 +635,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
         
       </span>
       <span
-        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightCircle"
+        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightCircular"
       >
         1
       </span>
@@ -672,7 +672,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
         </div>
       </div>
       <span
-        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightCircle"
+        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightCircular"
       >
         5+
       </span>
@@ -709,7 +709,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
         </div>
       </div>
       <span
-        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightCircle"
+        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightCircular"
       >
         - 123 -
       </span>
