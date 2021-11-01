@@ -4,7 +4,7 @@ const path = require('path');
 exports.textReplacePlugin = {
   name: 'textReplace',
   setup(build) {
-    build.onLoad({ filter: /.*.tsx|.*.ts/ }, async (args) => {
+    build.onLoad({ filter: /.*.tsx|.*.ts|.*.js/ }, async (args) => {
       const loader = path.extname(args.path).replace('.', '');
 
       const source = await fs.promises.readFile(args.path, 'utf8');
@@ -21,6 +21,10 @@ exports.textReplacePlugin = {
         .replace(
           '@material-ui/pickers/_shared/hooks/useKeyDown',
           '@material-ui/pickers/esm/Calendar-11ae61f6',
+        )
+        .replace(
+          `console.error('Material-UI: You cannot use a custom insertionPoint and <StylesContext injectFirst> at the same time.');`,
+          ``,
         );
 
       return { contents, loader };

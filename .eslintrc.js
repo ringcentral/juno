@@ -162,6 +162,12 @@ module.exports = {
       },
     },
     {
+      files: ['framer/**/*'],
+      rules: {
+        'react/react-in-jsx-scope': 'off',
+      },
+    },
+    {
       files: ['**/package.json'],
       parser: 'esprima',
       plugins: ['json-files'],

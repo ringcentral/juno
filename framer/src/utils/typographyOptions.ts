@@ -1,0 +1,17 @@
+export const typographyOptions = [
+  'display4',
+  'display3',
+  'display2',
+  'display1',
+  'headline2',
+  'headline1',
+  'title2',
+  'title1',
+  'subheading2',
+  'subheading1',
+  'body2',
+  'body1',
+  'caption2',
+  'caption1',
+  'inherit',
+];

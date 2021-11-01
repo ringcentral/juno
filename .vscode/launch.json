@@ -3,6 +3,15 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "update framer",
+      "program": "${workspaceFolder}/framer/scripts/update-code-components.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "pwa-node"
+    },
+    {
       "type": "browser-preview",
       "request": "launch",
       "name": "Browser Preview: Launch",
