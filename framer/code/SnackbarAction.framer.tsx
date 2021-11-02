@@ -2,10 +2,16 @@ import { addPropertyControls, ControlType } from 'framer';
 
 import * as lib from '../src';
 
-const RcSnackbarAction: React.ComponentType = ({ _children, ...rest }: any) => {
+const RcSnackbarAction: React.ComponentType = ({
+  _children,
+  symbol,
+  ...rest
+}: any) => {
   return (
     <lib.RcThemeProvider>
-      <lib.RcSnackbarAction {...rest}>{_children}</lib.RcSnackbarAction>
+      <lib.RcSnackbarAction {...rest} symbol={lib.iconList[symbol]}>
+        {_children}
+      </lib.RcSnackbarAction>
     </lib.RcThemeProvider>
   );
 };
@@ -60,7 +66,7 @@ addPropertyControls(RcSnackbarAction, {
     title: 'centerRipple',
     type: ControlType.Boolean,
     /** description: "If `true`, the ripples will be centered.
-They won't start at the cursor interaction position.", */
+                                                                                                                                                                              They won't start at the cursor interaction position.", */
     defaultValue: false,
   },
   disableRipple: {
@@ -68,8 +74,8 @@ They won't start at the cursor interaction position.", */
     type: ControlType.Boolean,
     /** description: "If `true`, the ripple effect will be disabled.
 
-⚠️ Without a ripple there is no styling for :focus-visible by default. Be sure
-to highlight the element by applying separate styles with the `focusVisibleClassName`.", */
+                                                                                                                                                                                                  ⚠️ Without a ripple there is no styling for :focus-visible by default. Be sure
+                                                                                                                                                                                                  to highlight the element by applying separate styles with the `focusVisibleClassName`.", */
     defaultValue: true,
   },
   disableTouchRipple: {

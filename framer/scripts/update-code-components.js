@@ -27,12 +27,35 @@ const codeDir = path.join(__dirname, '../code');
 
 const fileList = getFileTree(codeDir);
 
-const pageUrl = 'https://framer.com/projects/nD9DUxzEooUOlAdeVwbQ-bKTW7';
+const authFilePath = path.join(__dirname, 'auth.json');
 
-const auth = fs.readJsonSync(path.join(__dirname, 'auth.json'));
+if (!fs.existsSync(authFilePath)) {
+  console.log(
+    '[Sync] please create credentials file at framer/scripts/auth.json',
+  );
+  process.exit();
+}
 
+const auth = fs.readJsonSync(authFilePath);
+
+const projectUrl = auth.projectUrl;
 const account = auth.account;
 const password = auth.password;
+
+if (!projectUrl || !account || !password) {
+  console.log(`
+  [Sync] make sure you auth.json like below
+
+  {
+    "account": "example.sample",
+    "password": "sample-password",
+    "projectUrl": "https://framer.com/projects/Juno-lib--dOnyvEBQQdH0f0971UB9-3AD7W"
+  }
+
+  that projectUrl can copy from framer.
+  `);
+  process.exit();
+}
 
 (async () => {
   const browser = await puppeteer.launch({
@@ -42,6 +65,8 @@ const password = auth.password;
   });
 
   const page = await browser.newPage();
+
+  page.setDefaultTimeout(1000 * 300);
 
   const waitForClick = async (selector) => {
     await page.waitForSelector(selector);
@@ -69,7 +94,7 @@ const password = auth.password;
   }
 
   async function replaceAllContent(content) {
-    console.log('Click Content');
+    console.log('create all content');
     await waitForClick(
       '.overflow-guard > .monaco-scrollable-element > .lines-content > .view-lines',
     );
@@ -92,7 +117,7 @@ const password = auth.password;
     await waitForClick('.dark > .menu-fisso li:nth-child(2)');
   }
 
-  await page.goto(pageUrl);
+  await page.goto(projectUrl);
   await page.setViewport({ width: 1920, height: 968 });
 
   await waitForClick('div > .sc-fzppAM > div > .sc-fzoXzr > .label');
@@ -117,8 +142,7 @@ const password = auth.password;
   await waitForClick('input[name="password"]');
   await page.keyboard.type(password);
 
-  await page.waitForSelector('#okta-signin-submit');
-  await page.click('#okta-signin-submit');
+  await waitForClick('#okta-signin-submit');
 
   await page.waitForNavigation();
 
@@ -137,10 +161,11 @@ const password = auth.password;
   console.log('go into framer');
   await toCodeComponentBlock();
 
+  // make sure you have at latest one code component
   await page.waitForSelector(
     `.content_csqh01q > .scroll_shr89u9 > div > div:nth-child(1) > div`,
   );
-  // make sure you have at latest one code component
+
   const componentNames = await page.evaluate(() =>
     Array.from(
       document.querySelectorAll(
@@ -151,6 +176,7 @@ const password = auth.password;
   );
 
   const patchComponentContent = async (name, content) => {
+    console.log(`[${name}]: patch component content`);
     const index = componentNames.findIndex((x) => x === `${name}.tsx`);
 
     if (index !== -1) {

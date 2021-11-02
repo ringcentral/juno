@@ -1,4 +1,5 @@
 import { addPropertyControls, ControlType } from 'framer';
+
 import * as lib from '../src';
 
 const RcIconButton: React.ComponentType = ({

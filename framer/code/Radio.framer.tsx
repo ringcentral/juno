@@ -1,4 +1,5 @@
 import { addPropertyControls, ControlType } from 'framer';
+
 import * as lib from '../src';
 
 const RcRadio: React.ComponentType = ({ _children, ...rest }: any) => {
