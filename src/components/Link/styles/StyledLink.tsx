@@ -15,6 +15,7 @@ export const LinkStyle: RcThemedStyled<RcLinkProps, any> = ({
   disabled,
   color: colorProp,
   size,
+  underline,
   variant,
 }) => {
   const color = disabled
@@ -24,7 +25,7 @@ export const LinkStyle: RcThemedStyled<RcLinkProps, any> = ({
     : getParsePaletteColor(colorProp);
 
   return css`
-    text-decoration: none;
+    text-decoration: ${underline ? 'underline' : 'none'};
     ${typography(RcLinkTypographies[size!] || variant)};
     color: ${color};
 

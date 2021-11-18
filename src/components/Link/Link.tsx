@@ -23,6 +23,8 @@ type RcLinkProps = {
   color?: RcPaletteProp;
   /** root render element, default is `<a />` */
   Component?: keyof JSX.IntrinsicElements;
+  /** is that have underline default */
+  underline?: boolean;
   /** is that href can be download */
   download?: boolean;
   /**
@@ -49,6 +51,7 @@ const _RcLink = forwardRef<any, RcLinkProps>((inProps: RcLinkProps, ref) => {
     children,
     tabIndex,
     color,
+    underline,
     variant,
     ...rest
   } = props;
