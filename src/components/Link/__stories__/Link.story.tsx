@@ -50,6 +50,7 @@ export const Link: Story<LinkProps> = ({ children, ...args }) => {
         }}
         {...args}
         Component="div"
+        underline
       >
         {children}
       </RcLink>

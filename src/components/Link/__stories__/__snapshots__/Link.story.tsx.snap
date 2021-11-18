@@ -34,6 +34,10 @@ Array [
   }
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <a
     className="c0"
     href="https://ringcentral.github.io/juno/assets/logo.png"
@@ -48,10 +52,14 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <br />,
   .c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
   font-size: 0.9375rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -72,6 +80,10 @@ Array [
 
 .c0:active {
   color: rgba(6,111,172,0.76);
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
