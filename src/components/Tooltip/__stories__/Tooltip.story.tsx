@@ -1,10 +1,11 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
 import React, {
   ComponentProps,
   useLayoutEffect,
   useRef,
   useState,
 } from 'react';
+
+import { Meta, Story } from '@storybook/react/types-6-0';
 
 import { styled, useTheme } from '../../../foundation';
 import Add from '../../../icon/Add';
@@ -26,6 +27,7 @@ import {
 } from '../../Dialog';
 import { RcCheckbox, RcRadio, RcSwitch } from '../../Forms';
 import { RcIcon } from '../../Icon';
+import { RcLink } from '../../Link';
 import { RcListItem } from '../../List';
 import { RcText } from '../../Text';
 import { RcTypography } from '../../Typography';
@@ -379,3 +381,34 @@ export const TooltipWithCustomColor: Story<TooltipProps> = ({
 TooltipWithCustomColor.args = {
   title: 'Add',
 };
+
+export const TooltipWithInteractiveLink: Story<TooltipProps> = ({
+  children,
+  ...args
+}) => {
+  switchToControlKnobs();
+
+  return (
+    <RcTooltip
+      {...args}
+      title={
+        <>
+          open{' '}
+          <RcLink
+            href="https://www.ringcentral.com"
+            color="neutral.f01"
+            underline
+            target="_blank"
+          >
+            ringcentral
+          </RcLink>
+        </>
+      }
+      interactive
+    >
+      <RcButton type="button">Open</RcButton>
+    </RcTooltip>
+  );
+};
+
+TooltipWithInteractiveLink.args = {};
