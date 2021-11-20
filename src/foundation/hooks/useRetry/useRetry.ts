@@ -31,7 +31,7 @@ export type UseRetryOptions = {
  * * `cancel`: cancel that retry event, that only cancel inner interval promise, **if you need cancel your `cb` promise, you should handle by yourself.**
  */
 export const useRetry = <
-  T extends (...args: any[]) => boolean | Promise<boolean>
+  T extends (...args: any[]) => boolean | Promise<boolean>,
 >(
   /**
    * exec callback, when you want to end that retry, return `true` with your callback

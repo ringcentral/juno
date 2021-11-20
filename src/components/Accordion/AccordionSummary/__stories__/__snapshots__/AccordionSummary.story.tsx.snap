@@ -272,9 +272,15 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/AccordionSummary Accordion
             </svg>
             
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </button>
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </div>
   <div
     className="MuiCollapse-root MuiCollapse-hidden"

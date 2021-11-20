@@ -176,5 +176,8 @@ exports[`Storyshots 🔧 Foundation/Hooks/useAudio useAudio 1`] = `
     </svg>
     
   </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
 </button>
 `;

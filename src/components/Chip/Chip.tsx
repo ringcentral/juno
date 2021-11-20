@@ -56,9 +56,10 @@ const _RcChip = forwardRef<any, RcChipProps>((inProps: RcChipProps, ref) => {
     tabIndex,
     ...rest
   } = props;
-  const classes = useMemo(() => combineClasses(RcChipClasses, classesProp), [
-    classesProp,
-  ]);
+  const classes = useMemo(
+    () => combineClasses(RcChipClasses, classesProp),
+    [classesProp],
+  );
 
   const deleteIcon = useMemo(() => {
     return deleteIconProp ? (
@@ -136,4 +137,5 @@ RcChip.defaultProps = {
 
 RcChip.displayName = 'RcChip';
 
-export { RcChip, RcChipProps };
+export { RcChip };
+export type { RcChipProps };

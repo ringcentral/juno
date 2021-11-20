@@ -1,5 +1,6 @@
-import MuiTabPanel from '@material-ui/lab/TabPanel';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiTabPanel from '@material-ui/lab/TabPanel';
 
 import {
   combineClasses,
@@ -44,4 +45,5 @@ RcTabPanel.defaultProps = {};
 
 RcTabPanel.displayName = 'RcTabPanel';
 
-export { RcTabPanel, RcTabPanelProps };
+export { RcTabPanel };
+export type { RcTabPanelProps };

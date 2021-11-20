@@ -99,6 +99,9 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/SubMenu SubMenu With Menu 1`] =
   >
     Open Menu
   </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
 </button>
 `;
 
@@ -139,16 +142,6 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/SubMenu SubMenu With MenuList 1
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 16px;
   color: #666666;
-}
-
-.c3 .sc-oeezt {
-  margin-right: -8px;
-}
-
-.c3 .sc-oeezt > .sc-ckTSus,
-.c3 .sc-oeezt > .sc-gGLxEB,
-.c3 .sc-oeezt > .sc-hhIiOg {
-  margin-right: 0;
 }
 
 .c3 > * + * {
@@ -222,21 +215,8 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/SubMenu SubMenu With MenuList 1
   font-weight: 700;
 }
 
-.c1 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c1 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 .c0 {
   overflow: auto;
-}
-
-.c0 .sc-cxNHIi {
-  margin: 8px 0px;
 }
 
 .c4 {

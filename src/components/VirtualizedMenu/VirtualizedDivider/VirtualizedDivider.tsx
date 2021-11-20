@@ -35,4 +35,5 @@ RcVirtualizedDivider.defaultProps = {};
 
 RcVirtualizedDivider.displayName = 'RcVirtualizedDivider';
 
-export { RcVirtualizedDivider, RcVirtualizedDividerProps };
+export { RcVirtualizedDivider };
+export type { RcVirtualizedDividerProps };

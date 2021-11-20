@@ -89,4 +89,5 @@ RcIconButtonGroup.defaultProps = {
 
 RcIconButtonGroup.displayName = 'RcIconButtonGroup';
 
-export { RcIconButtonGroup, RcIconButtonGroupProps };
+export { RcIconButtonGroup };
+export type { RcIconButtonGroupProps };

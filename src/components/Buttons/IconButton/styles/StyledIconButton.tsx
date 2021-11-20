@@ -23,29 +23,25 @@ import {
   RcIconButtonTouchRippleClasses,
 } from '../utils';
 
-export const getFocusVisibleInsetSize: RcThemedStyled<
-  RcIconButtonProps,
-  any
-> = ({ size }) => {
-  const inset = RcIconButtonFocusVisibleInsetSize[size!];
-  return css`
-    top: -${inset}px;
-    right: -${inset}px;
-    bottom: -${inset}px;
-    left: -${inset}px;
-  `;
-};
+export const getFocusVisibleInsetSize: RcThemedStyled<RcIconButtonProps, any> =
+  ({ size }) => {
+    const inset = RcIconButtonFocusVisibleInsetSize[size!];
+    return css`
+      top: -${inset}px;
+      right: -${inset}px;
+      bottom: -${inset}px;
+      left: -${inset}px;
+    `;
+  };
 
 // * text inside button should also set style
 const childrenClass = `&,${RcIcon}`;
 
-const containedVariantTransitions: RcThemedStyled<
-  RcIconButtonProps,
-  string
-> = ({ theme }) =>
-  theme.transitions.create(['background-color', 'box-shadow', 'border'], {
-    duration: theme.transitions.duration.short,
-  });
+const containedVariantTransitions: RcThemedStyled<RcIconButtonProps, string> =
+  ({ theme }) =>
+    theme.transitions.create(['background-color', 'box-shadow', 'border'], {
+      duration: theme.transitions.duration.short,
+    });
 
 type PlainIconButtonFocusStyleOption = {
   radius?: keyof RcTheme['radius'];
@@ -79,12 +75,9 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
 }) => {
   const iconSize = RcIconButtonSizes[size!];
 
-  const isCircle = ([
-    'plain',
-    'round',
-    'inverse',
-    'contained',
-  ] as RcIconButtonVariant[]).includes(variant!);
+  const isCircle = (
+    ['plain', 'round', 'inverse', 'contained'] as RcIconButtonVariant[]
+  ).includes(variant!);
   const isPlain = variant === 'plain';
   const isInverse = variant === 'inverse';
   const isOutline = variant === 'outline';
@@ -120,16 +113,16 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
     box-shadow: ${nowShadow};
 
     ${nowShadow &&
-      css`
-        transition: ${containedVariantTransitions};
+    css`
+      transition: ${containedVariantTransitions};
 
-        &:active {
-          box-shadow: ${shadows(
-            activeElevation ??
-              (elevation ? Math.min(+(elevation as any) + 11, 24) : '12'),
-          )};
-        }
-      `};
+      &:active {
+        box-shadow: ${shadows(
+          activeElevation ??
+            (elevation ? Math.min(+(elevation as any) + 11, 24) : '12'),
+        )};
+      }
+    `};
 
     ${childrenClass} {
       font-size: ${stretchIcon
@@ -235,12 +228,13 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
       opacity: 0;
     }
 
-    ${/**
-     * that is equilateral triangle, the third Side length is
-     * Math.sqrt(2) = 1.414213562373095, so we scale that
-     * to make that full with this square
-     */
-    !isPlain &&
+    ${
+      /**
+       * that is equilateral triangle, the third Side length is
+       * Math.sqrt(2) = 1.414213562373095, so we scale that
+       * to make that full with this square
+       */
+      !isPlain &&
       !(['circle', 'round'] as RcIconButtonProps['radius'][]).includes(
         currRadius,
       ) &&
@@ -248,6 +242,7 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
         .${RcIconButtonTouchRippleClasses.child} {
           transform: scale(1.41421357);
         }
-      `}
+      `
+    }
   `;
 };

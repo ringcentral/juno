@@ -1,6 +1,7 @@
+import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
 import { StepButtonProps as MuiStepButtonProps } from '@material-ui/core/StepButton';
 import MuiStepLabel from '@material-ui/core/StepLabel';
-import React, { ComponentProps, forwardRef, useMemo } from 'react';
 
 import {
   combineClasses,
@@ -72,4 +73,5 @@ RcStepLabel.defaultProps = {};
 
 RcStepLabel.displayName = 'RcStepLabel';
 
-export { RcStepLabel, RcStepLabelProps };
+export { RcStepLabel };
+export type { RcStepLabelProps };

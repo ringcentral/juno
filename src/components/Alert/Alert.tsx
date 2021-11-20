@@ -54,4 +54,5 @@ RcAlert.defaultProps = {
 
 RcAlert.displayName = 'RcAlert';
 
-export { RcAlert, RcAlertProps, RcAlertSize };
+export { RcAlert };
+export type { RcAlertProps, RcAlertSize };

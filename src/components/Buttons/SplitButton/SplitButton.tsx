@@ -123,19 +123,16 @@ const _RcSplitButton = forwardRef<any, RcSplitButtonProps>(
 
     const isMenuOpen = !!anchorEl;
 
-    const {
-      classes,
-      actionButtonClassName,
-      controlButtonClassName,
-    } = useMemo(() => {
-      const result = combineClasses(RcSplitButtonClasses, classesProp);
+    const { classes, actionButtonClassName, controlButtonClassName } =
+      useMemo(() => {
+        const result = combineClasses(RcSplitButtonClasses, classesProp);
 
-      return {
-        classes: omit(result, ['actionButton', 'controlButton', 'menuOpen']),
-        actionButtonClassName: result?.actionButton,
-        controlButtonClassName: result?.controlButton,
-      };
-    }, [classesProp]);
+        return {
+          classes: omit(result, ['actionButton', 'controlButton', 'menuOpen']),
+          actionButtonClassName: result?.actionButton,
+          controlButtonClassName: result?.controlButton,
+        };
+      }, [classesProp]);
 
     const handleClick = useEventCallback(
       checkDefaultPrevented(() => {
@@ -355,8 +352,8 @@ RcSplitButton.defaultProps = {
   disableElevation: true,
 };
 
-export {
-  RcSplitButton,
+export { RcSplitButton };
+export type {
   RcSplitButtonProps,
   RcSplitButtonVariant,
   RcSplitButtonChildrenProps,

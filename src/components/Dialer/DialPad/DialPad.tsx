@@ -24,14 +24,16 @@ import { RcVisuallyHidden } from '../../VisuallyHidden';
 import { DialPadButton, DialPadButtonProps } from '../DialPadButton';
 import { useRcDialerContext } from '../utils';
 import { keypadContainerStyle } from './styles';
-import {
-  ACCEPTABLE_KEYS,
+import type {
   DIALER_PAD_ICON_VALUES,
-  DIALER_PAD_ICONS,
-  DIALER_PAD_PLUS,
   DialPadSoundMap,
   RcDialPadAction,
   RcDialPadControl,
+} from './utils';
+import {
+  ACCEPTABLE_KEYS,
+  DIALER_PAD_ICONS,
+  DIALER_PAD_PLUS,
   useKeyAudio,
 } from './utils';
 
@@ -142,7 +144,7 @@ const _RcDialPad = forwardRef<HTMLDivElement, RcDialPadProps>(
 
         keyButtonElm.classList.add(RcIconButtonClasses.persistBg);
 
-        keyTimerMapRef.current[key] = setTimeout(() => {
+        keyTimerMapRef.current[key] = window.setTimeout(() => {
           keyButtonElm.classList.remove(RcIconButtonClasses.persistBg);
 
           delete keyTimerMapRef.current[key];
@@ -246,4 +248,6 @@ RcDialPad.defaultProps = {
 
 RcDialPad.displayName = 'RcDialPad';
 
-export { RcDialPad, RcDialPadProps, RcDialPadAction, RcDialPadOnChangeReason };
+export { RcDialPad };
+
+export type { RcDialPadAction, RcDialPadOnChangeReason, RcDialPadProps };

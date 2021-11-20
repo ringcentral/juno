@@ -79,10 +79,6 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
   width: 168px;
 }
 
-.c0 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c0 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -100,17 +96,6 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
-}
-
-.c0 .RcTextFieldInput-focused .sc-carFqZ {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -247,10 +232,6 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
   margin-right: 0;
 }
 
-.c2 .sc-dvXYtj {
-  margin-right: 0;
-}
-
 .c2 .RcTextField-root {
   margin-bottom: 0;
 }
@@ -272,10 +253,6 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
   padding-right: 4px;
 }
 
-.c2 .c3 .{
-  margin: 0px 0px 0px 4px;
-}
-
 @media (hover:hover) and (pointer:fine) {
   .c4.RcButton-text:hover {
     background-color: rgba(6,111,172,0.08);
@@ -295,12 +272,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carFqZ {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -514,10 +486,6 @@ Array [
   width: 168px;
 }
 
-.c0 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c0 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -535,17 +503,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
-}
-
-.c0 .RcTextFieldInput-focused .sc-carFqZ {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -649,11 +606,6 @@ Array [
   display: none;
 }
 
-.c10 > .sc-fujyAs,
-.c10 > .c5 {
-  margin-right: 8px;
-}
-
 .c1 .RcSelect-icon {
   color: #666666;
 }
@@ -687,10 +639,6 @@ Array [
   margin-right: 0;
 }
 
-.c2 .c11 {
-  margin-right: 0;
-}
-
 .c2 .RcTextField-root {
   margin-bottom: 0;
 }
@@ -712,10 +660,6 @@ Array [
   padding-right: 4px;
 }
 
-.c2 .c3 .{
-  margin: 0px 0px 0px 4px;
-}
-
 .c8 .c3 .c5 {
   margin-right: 0;
 }
@@ -725,10 +669,6 @@ Array [
   min-width: unset;
   padding-left: 4px;
   padding-right: 0px;
-}
-
-.c8 .c3 .{
-  margin: 0px 0px 0px 4px;
 }
 
 .c9 .c3 .c5 {
@@ -743,10 +683,6 @@ Array [
   border-radius: 16px;
   padding-top: 6px;
   padding-bottom: 6px;
-}
-
-.c9 .c3 .{
-  margin: 0px 0px 0px 0px;
 }
 
 .c9 .c3.focus-visible .RcPlainSelect-TouchRipple-root,
@@ -797,12 +733,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carFqZ {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1096,10 +1027,6 @@ Array [
   width: 168px;
 }
 
-.c0 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c0 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -1117,17 +1044,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
-}
-
-.c0 .RcTextFieldInput-focused .sc-carFqZ {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -1250,21 +1166,6 @@ Array [
   min-width: unset;
 }
 
-.c5 > .sc-ckTSus,
-.c5 > .sc-gGLxEB {
-  margin-right: 4px;
-}
-
-.c5 > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.c5 > .sc-fujyAs,
-.c5 > .c6 {
-  margin-right: 8px;
-}
-
 .c10 {
   padding: 0;
   margin: 0 8px 0 0;
@@ -1348,10 +1249,6 @@ Array [
   padding-right: 4px;
 }
 
-.c11 .c3 .{
-  margin: 0px 0px 0px 4px;
-}
-
 .c2 .c3 .c6 {
   margin-right: 0;
 }
@@ -1381,10 +1278,6 @@ Array [
   padding-right: 0px;
 }
 
-.c2 .c3 .{
-  margin: 0px 0px 0px 4px;
-}
-
 .c12 .c3 .c6 {
   margin-right: 0;
 }
@@ -1401,10 +1294,6 @@ Array [
   border-radius: 16px;
   padding-top: 6px;
   padding-bottom: 6px;
-}
-
-.c12 .c3 .{
-  margin: 0px 0px 0px 0px;
 }
 
 .c12 .c3.focus-visible .RcPlainSelect-TouchRipple-root,
@@ -1458,12 +1347,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carFqZ {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1769,10 +1653,6 @@ Array [
   width: 168px;
 }
 
-.c0 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c0 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -1790,17 +1670,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
-}
-
-.c0 .RcTextFieldInput-focused .sc-carFqZ {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -1904,11 +1773,6 @@ Array [
   display: none;
 }
 
-.c10 > .sc-fujyAs,
-.c10 > .c5 {
-  margin-right: 8px;
-}
-
 .c1 .RcSelect-icon {
   color: #666666;
 }
@@ -1949,10 +1813,6 @@ Array [
   padding-right: 4px;
 }
 
-.c8 .c3 .{
-  margin: 0px 0px 0px 4px;
-}
-
 .c9 .c3 .c5 {
   margin-right: 0;
 }
@@ -1964,15 +1824,7 @@ Array [
   padding-right: 0px;
 }
 
-.c9 .c3 .{
-  margin: 0px 0px 0px 4px;
-}
-
 .c2 .c3 .c5 {
-  margin-right: 0;
-}
-
-.c2 .c11 {
   margin-right: 0;
 }
 
@@ -1998,10 +1850,6 @@ Array [
   border-radius: 16px;
   padding-top: 6px;
   padding-bottom: 6px;
-}
-
-.c2 .c3 .{
-  margin: 0px 0px 0px 0px;
 }
 
 .c2 .c3.focus-visible .RcPlainSelect-TouchRipple-root,
@@ -2052,12 +1900,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carFqZ {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2364,10 +2207,6 @@ Array [
   width: 168px;
 }
 
-.c0 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c0 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -2385,17 +2224,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
-}
-
-.c0 .RcTextFieldInput-focused .sc-carFqZ {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -2499,11 +2327,6 @@ Array [
   display: none;
 }
 
-.c10 > .sc-fujyAs,
-.c10 > .c5 {
-  margin-right: 8px;
-}
-
 .c1 .RcSelect-icon {
   color: #666666;
 }
@@ -2544,10 +2367,6 @@ Array [
   padding-right: 4px;
 }
 
-.c8 .c3 .{
-  margin: 0px 0px 0px 4px;
-}
-
 .c9 .c3 .c5 {
   margin-right: 0;
 }
@@ -2559,15 +2378,7 @@ Array [
   padding-right: 0px;
 }
 
-.c9 .c3 .{
-  margin: 0px 0px 0px 4px;
-}
-
 .c2 .c3 .c5 {
-  margin-right: 0;
-}
-
-.c2 .c11 {
   margin-right: 0;
 }
 
@@ -2593,10 +2404,6 @@ Array [
   border-radius: 16px;
   padding-top: 6px;
   padding-bottom: 6px;
-}
-
-.c2 .c3 .{
-  margin: 0px 0px 0px 0px;
 }
 
 .c2 .c3.focus-visible .RcPlainSelect-TouchRipple-root,
@@ -2650,12 +2457,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carFqZ {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {

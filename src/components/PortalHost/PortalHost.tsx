@@ -35,4 +35,5 @@ const RcPortalHost: FunctionComponent<RcPortalHostProps> = ({ manager }) => {
 
 RcPortalHost.displayName = 'RcPortalHost';
 
-export { RcPortalHost, RcPortalHostProps };
+export { RcPortalHost };
+export type { RcPortalHostProps };

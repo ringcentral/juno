@@ -10,4 +10,5 @@ const useResponsiveContext = () => {
   return useContext(RcResponsiveContext);
 };
 
-export { RcResponsiveContextValue, RcResponsiveContext, useResponsiveContext };
+export { RcResponsiveContext, useResponsiveContext };
+export type { RcResponsiveContextValue };

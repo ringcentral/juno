@@ -63,4 +63,5 @@ RcDialogTitle.defaultProps = {};
 
 RcDialogTitle.displayName = 'RcDialogTitle';
 
-export { RcDialogTitle, RcDialogTitleProps };
+export { RcDialogTitle };
+export type { RcDialogTitleProps };

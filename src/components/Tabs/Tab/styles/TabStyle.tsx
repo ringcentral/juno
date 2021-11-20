@@ -30,16 +30,16 @@ export const TabStyle: RcThemedStyled<RcTabProps, any> = (props) => {
     min-width: 32px;
 
     ${directionProp !== undefined &&
-      css`
-        .${RcTabClasses.wrapper} {
-          flex-direction: ${isVertical ? 'row' : 'column'};
-        }
+    css`
+      .${RcTabClasses.wrapper} {
+        flex-direction: ${isVertical ? 'row' : 'column'};
+      }
 
-        &.${RcTabClasses.labelIcon} .${RcTabClasses.wrapper} > *:first-child {
-          margin-bottom: ${isVertical && 'unset'};
-          // 6px is follow mui
-          margin-right: ${isVertical && '6px'};
-        }
-      `}
+      &.${RcTabClasses.labelIcon} .${RcTabClasses.wrapper} > *:first-child {
+        margin-bottom: ${isVertical && 'unset'};
+        // 6px is follow mui
+        margin-right: ${isVertical && '6px'};
+      }
+    `}
   `;
 };

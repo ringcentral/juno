@@ -57,9 +57,9 @@ export const ListItemStyle: RcThemedStyled<RcListItemProps, any> = ({
     cursor: ${onClick ? 'pointer' : 'default'};
 
     ${highlighted &&
-      css`
-        background-color: ${setAlpha(baseColor, 0.05)};
-      `};
+    css`
+      background-color: ${setAlpha(baseColor, 0.05)};
+    `};
 
     &.${RcListItemClasses.focusVisible} {
       background-color: ${setOpacity(baseColor, '16')};

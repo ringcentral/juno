@@ -66,7 +66,7 @@ export const useDeprecatedLog = (...args: Parameters<typeof logInDev>) => {
 
 export function withDeprecatedCheck<
   T extends ComponentType<any>,
-  K extends keyof ComponentProps<T>
+  K extends keyof ComponentProps<T>,
 >(Component: T, depreciates: WithDeprecatedCheckArgs<K>[], source?: string) {
   if (!isShowJunoWarning) {
     return Component;
@@ -74,7 +74,7 @@ export function withDeprecatedCheck<
 
   const name = Component.displayName || source || '';
 
-  return (forwardRef((props: any, ref) => {
+  return forwardRef((props: any, ref) => {
     useEffect(() => {
       depreciates.forEach(({ prop, comment, time }) => {
         if (
@@ -94,5 +94,5 @@ export function withDeprecatedCheck<
     }, []);
 
     return <Component {...props} ref={ref} />;
-  }) as any) as T;
+  }) as any as T;
 }

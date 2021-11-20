@@ -33,30 +33,30 @@ export const BadgeStyle: RcThemedStyled<RcBadgeProps, any> = ({
       background-color: ${getParsePaletteColor(color, null, false)};
 
       ${borderColor &&
-        css`
-          ${isStandard
-            ? fakeBorder({ color: borderCurrColor, radius: 'round' })
-            : css`
-                border-color: ${borderCurrColor};
-              `}
-        `};
+      css`
+        ${isStandard
+          ? fakeBorder({ color: borderCurrColor, radius: 'round' })
+          : css`
+              border-color: ${borderCurrColor};
+            `}
+      `};
 
       ${isStandard &&
-        css`
-          height: 18px;
-          min-width: 18px;
-          padding: ${!manyChar && 0};
-        `}
+      css`
+        height: 18px;
+        min-width: 18px;
+        padding: ${!manyChar && 0};
+      `}
 
       ${overlapNone &&
-        css`
-          position: unset;
-          transform: unset;
+      css`
+        position: unset;
+        transform: unset;
 
-          &.${RcBadgeClasses.invisible} {
-            transform: scale(0);
-          }
-        `}
+        &.${RcBadgeClasses.invisible} {
+          transform: scale(0);
+        }
+      `}
     }
   `;
 };

@@ -21,4 +21,5 @@ RcRadioGroup.defaultProps = {};
 
 RcRadioGroup.displayName = 'RcRadioGroup';
 
-export { RcRadioGroup, RcRadioGroupProps };
+export { RcRadioGroup };
+export type { RcRadioGroupProps };

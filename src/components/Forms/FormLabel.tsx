@@ -27,4 +27,5 @@ const RcFormLabel = styled(_RcFormLabel)`
 
 RcFormLabel.displayName = 'RcFormLabel';
 
-export { RcFormLabel, RcFormLabelProps };
+export { RcFormLabel };
+export type { RcFormLabelProps };

@@ -82,4 +82,5 @@ _Day.defaultProps = {
 
 const Day = memo(_Day);
 
-export { Day, DayProps };
+export { Day };
+export type { DayProps };

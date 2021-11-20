@@ -1,10 +1,11 @@
-import MuiStepButton from '@material-ui/core/StepButton';
 import React, {
   cloneElement,
   ComponentProps,
   forwardRef,
   useMemo,
 } from 'react';
+
+import MuiStepButton from '@material-ui/core/StepButton';
 
 import {
   combineClasses,
@@ -85,4 +86,5 @@ RcStepButton.defaultProps = {
 
 RcStepButton.displayName = 'RcStepButton';
 
-export { RcStepButton, RcStepButtonProps };
+export { RcStepButton };
+export type { RcStepButtonProps };

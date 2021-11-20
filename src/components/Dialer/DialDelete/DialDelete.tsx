@@ -61,4 +61,5 @@ const RcDialDelete: FunctionComponent<RcDialDeleteProps> = (inProps) => {
   });
 };
 
-export { RcDialDelete, RcDialDeleteProps };
+export { RcDialDelete };
+export type { RcDialDeleteProps };

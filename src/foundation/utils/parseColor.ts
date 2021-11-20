@@ -46,4 +46,5 @@ function parseColor(
 
 type RcParseColor = ReturnType<typeof parseColor>;
 
-export { parseColor, RcParseColor };
+export { parseColor };
+export type { RcParseColor };

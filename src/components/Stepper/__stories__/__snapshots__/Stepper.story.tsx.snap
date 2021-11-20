@@ -181,6 +181,9 @@ Array [
             </span>
           </span>
         </span>
+        <span
+          className="MuiTouchRipple-root MuiStepButton-touchRipple RcStepButton-touchRipple"
+        />
       </button>
     </div>
     <div
@@ -255,6 +258,9 @@ Array [
             </h6>
           </span>
         </span>
+        <span
+          className="MuiTouchRipple-root MuiStepButton-touchRipple RcStepButton-touchRipple"
+        />
       </button>
     </div>
     <div
@@ -322,6 +328,9 @@ Array [
             </span>
           </span>
         </span>
+        <span
+          className="MuiTouchRipple-root MuiStepButton-touchRipple RcStepButton-touchRipple"
+        />
       </button>
     </div>
   </div>,
@@ -572,6 +581,9 @@ Array [
     >
       Next
     </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </button>,
   .c1 {
   text-transform: none;
@@ -675,6 +687,9 @@ Array [
     >
       Complete Step
     </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </button>,
 ]
 `;

@@ -20,25 +20,22 @@ export const DEFAULT_LIMIT_CHIPS = 20;
 export const DEFAULT_GET_OPTION_LABEL = (item: RcDownshiftSelectedItem) =>
   item.label || '';
 
-export const RcDownshiftDefaultRenderNoOptions: RcDownshiftProps['renderNoOptions'] = (
-  getNoOptionsProps,
-) => {
-  return (
-    <RcMenuItem component="div" {...getNoOptionsProps()}>
-      No Options
-    </RcMenuItem>
-  );
-};
+export const RcDownshiftDefaultRenderNoOptions: RcDownshiftProps['renderNoOptions'] =
+  (getNoOptionsProps) => {
+    return (
+      <RcMenuItem component="div" {...getNoOptionsProps()}>
+        No Options
+      </RcMenuItem>
+    );
+  };
 
-export const RcDownshiftDefaultFilterOptions: RcDownshiftProps['filterOptions'] = (
-  options,
-  { inputValue, getOptionLabel, selectedItems },
-) => {
-  return options.filter(
-    (item) =>
-      selectedItems.indexOf(item) < 0 &&
-      getOptionLabel?.(item)
-        .toLowerCase()
-        .startsWith(inputValue?.toLowerCase() || ''),
-  );
-};
+export const RcDownshiftDefaultFilterOptions: RcDownshiftProps['filterOptions'] =
+  (options, { inputValue, getOptionLabel, selectedItems }) => {
+    return options.filter(
+      (item) =>
+        selectedItems.indexOf(item) < 0 &&
+        getOptionLabel?.(item)
+          .toLowerCase()
+          .startsWith(inputValue?.toLowerCase() || ''),
+    );
+  };

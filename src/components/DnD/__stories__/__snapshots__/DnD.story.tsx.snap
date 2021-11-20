@@ -81,15 +81,6 @@ exports[`Storyshots 🚀 Cleanup Components/DnD DnD 1`] = `
   padding-bottom: 4px;
 }
 
-.c0 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c0 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 @media (hover:hover) and (pointer:fine) {
   .c0:hover {
     background-color: rgba(102,102,102,0.08);

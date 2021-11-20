@@ -77,8 +77,7 @@ exports[`Storyshots 🚀 Cleanup Components/Tabs/Tabs Tabs 1`] = `
             Tab 1
           </span>
           <span
-            className="PrivateTabIndicator-root-286 PrivateTabIndicator-colorPrimary-287 MuiTabs-indicator RcTabs-indicator"
-            style={Object {}}
+            className="MuiTouchRipple-root"
           />
         </button>
         <button
@@ -107,6 +106,9 @@ exports[`Storyshots 🚀 Cleanup Components/Tabs/Tabs Tabs 1`] = `
           >
             Tab 2
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </button>
         <button
           aria-selected={false}
@@ -134,6 +136,9 @@ exports[`Storyshots 🚀 Cleanup Components/Tabs/Tabs Tabs 1`] = `
           >
             Tab 3
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </button>
         <button
           aria-selected={false}
@@ -161,6 +166,9 @@ exports[`Storyshots 🚀 Cleanup Components/Tabs/Tabs Tabs 1`] = `
           >
             Tab 4
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </button>
         <button
           aria-selected={false}
@@ -188,6 +196,9 @@ exports[`Storyshots 🚀 Cleanup Components/Tabs/Tabs Tabs 1`] = `
           >
             Tab 5
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </button>
         <button
           aria-selected={false}
@@ -242,6 +253,9 @@ exports[`Storyshots 🚀 Cleanup Components/Tabs/Tabs Tabs 1`] = `
           >
             Tab 7
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </button>
         <button
           aria-selected={false}
@@ -269,8 +283,20 @@ exports[`Storyshots 🚀 Cleanup Components/Tabs/Tabs Tabs 1`] = `
           >
             Tab 8
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </button>
       </div>
+      <span
+        className="PrivateTabIndicator-root-286 PrivateTabIndicator-colorPrimary-287 MuiTabs-indicator RcTabs-indicator"
+        style={
+          Object {
+            "left": 0,
+            "width": 0,
+          }
+        }
+      />
     </div>
   </div>
 </div>

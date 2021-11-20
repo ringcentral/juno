@@ -1,5 +1,6 @@
-import MuiInputLabel from '@material-ui/core/InputLabel';
 import React, { ComponentProps, forwardRef } from 'react';
+
+import MuiInputLabel from '@material-ui/core/InputLabel';
 
 import {
   combineClasses,
@@ -33,4 +34,5 @@ RcInputLabel.defaultProps = {};
 
 RcInputLabel.displayName = 'RcInputLabel';
 
-export { RcInputLabel, RcInputLabelProps };
+export { RcInputLabel };
+export type { RcInputLabelProps };

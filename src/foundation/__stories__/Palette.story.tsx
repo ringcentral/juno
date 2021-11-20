@@ -174,21 +174,18 @@ Palette.parameters = {
     {
       name: 'Source',
       value: 'Token Sheet',
-      href:
-        'https://docs.google.com/spreadsheets/d/1eGJAib2seE1AMIReWVtbGJAhQppQNVfU49rct8a6CKk/edit#gid=0',
+      href: 'https://docs.google.com/spreadsheets/d/1eGJAib2seE1AMIReWVtbGJAhQppQNVfU49rct8a6CKk/edit#gid=0',
     },
     {
       name: 'Source',
       value: 'New vs Old',
-      href:
-        'https://docs.google.com/spreadsheets/d/1BYZUI2aDwLyvizO45tpQNylpVpMIkmeWLSz4geeuTP0/edit#gid=360032390',
+      href: 'https://docs.google.com/spreadsheets/d/1BYZUI2aDwLyvizO45tpQNylpVpMIkmeWLSz4geeuTP0/edit#gid=360032390',
       color: 'highlight.b03',
     },
     {
       name: 'Source',
       value: 'Wiki',
-      href:
-        'https://wiki.ringcentral.com/pages/viewpage.action?pageId=424536658',
+      href: 'https://wiki.ringcentral.com/pages/viewpage.action?pageId=424536658',
       color: 'content.brand',
     },
   ],

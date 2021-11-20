@@ -40,4 +40,5 @@ type RcSelectTextFieldProps = ComponentProps<typeof RcTextField> &
   Pick<MuiStandardTextFieldProps, 'select' | 'SelectProps'>;
 
 /** inner type, just for type change with TextField */
-export const RcSelectTextField: FunctionComponent<RcSelectTextFieldProps> = RcTextField as any;
+export const RcSelectTextField: FunctionComponent<RcSelectTextFieldProps> =
+  RcTextField as any;

@@ -54,7 +54,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card 1`] = `
 `;
 
 exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
-.c7 {
+.c6 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -63,7 +63,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   pointer-events: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -72,7 +72,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   color: #066FAC;
 }
 
-.c17 {
+.c15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -80,7 +80,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   font-size: 20px;
 }
 
-.c19 {
+.c17 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -89,7 +89,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   color: #666666;
 }
 
-.c25 {
+.c23 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -97,7 +97,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   font-size: 36px;
 }
 
-.c22 {
+.c20 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -132,13 +132,13 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   background-color: #F3F3F3;
 }
 
-.c22 > img,
-.c22 > canvas {
+.c20 > img,
+.c20 > canvas {
   width: 100%;
   height: 100%;
 }
 
-.c21 {
+.c19 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -147,7 +147,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   outline: 0;
 }
 
-.c31 {
+.c29 {
   position: relative;
   margin: 0;
   border: 0;
@@ -176,15 +176,11 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   opacity: 0;
 }
 
-.c32 {
+.c30 {
   width: 168px;
 }
 
-.c32 .sc-fujyAs {
-  margin-left: 12px;
-}
-
-.c32 .RcTextFieldInputLabel-root {
+.c30 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -195,95 +191,84 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   transform: scale(1);
 }
 
-.c32 .RcTextFieldInputLabel-focused {
+.c30 .RcTextFieldInputLabel-focused {
   color: #066FAC;
 }
 
-.c32 .RcTextFieldInput-root {
+.c30 .RcTextFieldInput-root {
   color: #121212;
 }
 
-.c32 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
-}
-
-.c32 .RcTextFieldInput-focused .sc-carFqZ {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c32 .RcTextFieldInput-input {
+.c30 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 24px;
 }
 
-.c32 .RcTextFieldInput-input::-webkit-input-placeholder {
+.c30 .RcTextFieldInput-input::-webkit-input-placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c32 .RcTextFieldInput-input::-moz-placeholder {
+.c30 .RcTextFieldInput-input::-moz-placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c32 .RcTextFieldInput-input:-ms-input-placeholder {
+.c30 .RcTextFieldInput-input:-ms-input-placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c32 .RcTextFieldInput-input::placeholder {
+.c30 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c32 .RcTextFieldInput-underline:before {
+.c30 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
 
-.c32 .RcTextFieldInput-underline:after {
+.c30 .RcTextFieldInput-underline:after {
   border-bottom-color: #066FAC;
 }
 
-.c32 .RcTextFieldInput-error:after {
+.c30 .RcTextFieldInput-error:after {
   border-bottom-color: #BE3933;
 }
 
-.c32 .RcTextFieldInput-disabled {
+.c30 .RcTextFieldInput-disabled {
   color: #B9B9B9;
   -webkit-text-fill-color: #B9B9B9;
 }
 
-.c32 .RcTextFieldInput-disabled::-webkit-input-placeholder {
+.c30 .RcTextFieldInput-disabled::-webkit-input-placeholder {
   color: #B9B9B9;
 }
 
-.c32 .RcTextFieldInput-disabled::-moz-placeholder {
+.c30 .RcTextFieldInput-disabled::-moz-placeholder {
   color: #B9B9B9;
 }
 
-.c32 .RcTextFieldInput-disabled:-ms-input-placeholder {
+.c30 .RcTextFieldInput-disabled:-ms-input-placeholder {
   color: #B9B9B9;
 }
 
-.c32 .RcTextFieldInput-disabled::placeholder {
+.c30 .RcTextFieldInput-disabled::placeholder {
   color: #B9B9B9;
 }
 
-.c32 .RcTextFieldInput-disabled:before {
+.c30 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
   border-bottom-color: #B9B9B9;
 }
 
-.c32 .RcTextFieldInput-disabled:after {
+.c30 .RcTextFieldInput-disabled:after {
   border-bottom-style: none;
 }
 
-.c32 .RcTextFieldFormHelperText-root {
+.c30 .RcTextFieldFormHelperText-root {
   font-size: 0.75rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -291,31 +276,31 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   color: #666666;
 }
 
-.c32 .RcTextFieldFormHelperText-error,
-.c32 .RcTextFieldInputLabel-error {
+.c30 .RcTextFieldFormHelperText-error,
+.c30 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
-.c32 .RcTextFieldFormHelperText-disabled,
-.c32 .RcTextFieldInputLabel-disabled {
+.c30 .RcTextFieldFormHelperText-disabled,
+.c30 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
 
-.c32 input[type='search']::-ms-clear,
-.c32 input[type='search']::-ms-reveal {
+.c30 input[type='search']::-ms-clear,
+.c30 input[type='search']::-ms-reveal {
   display: none;
   width: 0;
   height: 0;
 }
 
-.c32 input[type='search']::-webkit-search-decoration,
-.c32 input[type='search']::-webkit-search-cancel-button,
-.c32 input[type='search']::-webkit-search-results-button,
-.c32 input[type='search']::-webkit-search-results-decoration {
+.c30 input[type='search']::-webkit-search-decoration,
+.c30 input[type='search']::-webkit-search-cancel-button,
+.c30 input[type='search']::-webkit-search-results-button,
+.c30 input[type='search']::-webkit-search-results-decoration {
   display: none;
 }
 
-.c9 {
+.c8 {
   font-size: 1rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -323,7 +308,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   font-weight: 700;
 }
 
-.c11 {
+.c10 {
   font-size: 0.9375rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -331,7 +316,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   color: #666666;
 }
 
-.c12 {
+.c11 {
   font-size: 0.9375rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -340,13 +325,13 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   color: #121212;
 }
 
-.c29.RcSwitch-root {
+.c27.RcSwitch-root {
   padding: 0px;
   width: 36px;
   height: 20px;
 }
 
-.c29.RcSwitch-root .RcSwitch-switchBase {
+.c27.RcSwitch-root .RcSwitch-switchBase {
   width: 36px;
   height: 20px;
   padding: 0;
@@ -356,20 +341,20 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   transform: translateX(-8px);
 }
 
-.c29.RcSwitch-root .RcSwitch-switchBase.RcSwitch-checked {
+.c27.RcSwitch-root .RcSwitch-switchBase.RcSwitch-checked {
   -webkit-transform: translateX(8px);
   -ms-transform: translateX(8px);
   transform: translateX(8px);
 }
 
-.c29.RcSwitch-root .RcSwitch-thumb {
+.c27.RcSwitch-root .RcSwitch-thumb {
   height: 12px;
   width: 12px;
   background-color: #FFFFFF;
   box-shadow: none;
 }
 
-.c29.RcSwitch-root .RcSwitch-track {
+.c27.RcSwitch-root .RcSwitch-track {
   height: 20px;
   opacity: 1;
   margin: 0;
@@ -377,15 +362,15 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   background-color: #939393;
 }
 
-.c29.RcSwitch-root .RcSwitch-checked + .RcSwitch-track {
+.c27.RcSwitch-root .RcSwitch-checked + .RcSwitch-track {
   background-color: #066FAC;
 }
 
-.c29.RcSwitch-root .RcSwitch-disabled + .RcSwitch-track {
+.c27.RcSwitch-root .RcSwitch-disabled + .RcSwitch-track {
   background-color: #B9B9B9;
 }
 
-.c29.RcSwitch-root .RcSwitch-focusVisible + .RcSwitch-track:after {
+.c27.RcSwitch-root .RcSwitch-focusVisible + .RcSwitch-track:after {
   content: '';
   position: absolute;
   top: 0;
@@ -398,15 +383,15 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   box-shadow: inset 0 0 0 1px #FFFFFF;
 }
 
-.c29.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
+.c27.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
   background-color: rgba(147,147,147,0.76);
 }
 
-.c29.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled).RcSwitch-checked + .RcSwitch-track {
+.c27.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled).RcSwitch-checked + .RcSwitch-track {
   background-color: rgba(6,111,172,0.76);
 }
 
-.c23 {
+.c21 {
   font-size: 0.9375rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -422,52 +407,43 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   cursor: default;
 }
 
-.c23.RcListItem-focusVisible {
+.c21.RcListItem-focusVisible {
   background-color: rgba(102,102,102,0.16);
 }
 
-.c23.RcListItem-selected,
-.c23.RcListItem-selected:hover {
+.c21.RcListItem-selected,
+.c21.RcListItem-selected:hover {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c23 .RcListItemTouchRipple-rippleVisible {
+.c21 .RcListItemTouchRipple-rippleVisible {
   color: #666666;
 }
 
-.c23.RcListItem-gutters {
+.c21.RcListItem-gutters {
   padding-left: 16px;
   padding-right: 16px;
 }
 
-.c23.RcListItem-dense {
+.c21.RcListItem-dense {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-.c23 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c23 .sc-oeezt > .c28 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.c16.RcCheckbox-root {
+.c14.RcCheckbox-root {
   color: #BE3933;
   padding: 10px;
 }
 
-.c16.RcCheckbox-root.RcCheckbox-checked {
+.c14.RcCheckbox-root.RcCheckbox-checked {
   color: #BE3933;
 }
 
-.c16.RcCheckbox-root.RcCheckbox-disabled {
+.c14.RcCheckbox-root.RcCheckbox-disabled {
   color: #B9B9B9;
 }
 
-.c24 {
+.c22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -486,35 +462,25 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   min-width: unset;
 }
 
-.c24 > .sc-ckTSus,
-.c24 > .c15 {
-  margin-right: 4px;
-}
-
-.c24 > .c28 {
+.c22 > .c26 {
   margin-left: 4px;
   margin-right: 4px;
 }
 
-.c24 > .sc-fujyAs,
-.c24 > .c5 {
-  margin-right: 8px;
-}
-
-.c26 {
+.c24 {
   padding: 0;
   margin: 0 8px 0 0;
 }
 
-.c26.RcListItemText-multiline {
+.c24.RcListItemText-multiline {
   margin: 4px 8px 4px 0px;
 }
 
-.c26.RcListItemText-inset {
+.c24.RcListItemText-inset {
   padding-left: 56px;
 }
 
-.c26 .RcListItemText-primary {
+.c24 .RcListItemText-primary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -527,7 +493,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   color: #121212;
 }
 
-.c26 .RcListItemText-secondary {
+.c24 .RcListItemText-secondary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -540,47 +506,47 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   color: #666666;
 }
 
-.c33 .RcSelect-icon {
+.c31 .RcSelect-icon {
   color: #666666;
 }
 
-.c33 .RcSelectInput-focused .RcSelect-icon {
+.c31 .RcSelectInput-focused .RcSelect-icon {
   color: #066FAC;
 }
 
-.c33 .RcSelectInput-error .RcSelect-icon {
+.c31 .RcSelectInput-error .RcSelect-icon {
   color: #BE3933;
 }
 
-.c33 .RcSelectInputWhenPlaceholder-input {
+.c31 .RcSelectInputWhenPlaceholder-input {
   color: #757575;
 }
 
-.c33 .RcSelectInputWhenPlaceholder-input:before {
+.c31 .RcSelectInputWhenPlaceholder-input:before {
   content: 'undefined';
   border: none;
 }
 
-.c33 .RcSelectInput-disabled {
+.c31 .RcSelectInput-disabled {
   color: #B9B9B9;
 }
 
-.c33 .RcSelectInput-disabled .RcSelect-icon {
+.c31 .RcSelectInput-disabled .RcSelect-icon {
   color: #B9B9B9;
 }
 
-.c33 > .RcBoxSelectInput-root {
+.c31 > .RcBoxSelectInput-root {
   box-sizing: border-box;
   height: 32px;
   border-radius: 4px;
   background-color: #F3F3F3;
 }
 
-.c33 > .RcBoxSelectInput-root:not(.RcBoxSelectInput-disabled):hover {
+.c31 > .RcBoxSelectInput-root:not(.RcBoxSelectInput-disabled):hover {
   background-color: rgba(73,73,73,0.12);
 }
 
-.c33 > .RcBoxSelectInput-root:before {
+.c31 > .RcBoxSelectInput-root:before {
   content: '';
   position: absolute;
   top: 0;
@@ -594,31 +560,31 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   pointer-events: none;
 }
 
-.c33 > .RcBoxSelectInput-root:after {
+.c31 > .RcBoxSelectInput-root:after {
   display: none;
 }
 
-.c33 > .RcBoxSelectInput-focused {
+.c31 > .RcBoxSelectInput-focused {
   background-color: rgba(73,73,73,0.16);
 }
 
-.c33 > .RcBoxSelectInput-focused:before {
+.c31 > .RcBoxSelectInput-focused:before {
   box-shadow: inset 0 0 0 1px #066FAC;
 }
 
-.c33 > .RcBoxSelectInput-error:before {
+.c31 > .RcBoxSelectInput-error:before {
   box-shadow: inset 0 0 0 1px #BE3933;
 }
 
-.c33 > .RcBoxSelectInput-disabled {
+.c31 > .RcBoxSelectInput-disabled {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c33 > .RcBoxSelectInput-disabled:before {
+.c31 > .RcBoxSelectInput-disabled:before {
   box-shadow: inset 0 0 0 1px transparent;
 }
 
-.c33 .RcBoxSelectInput-input {
+.c31 .RcBoxSelectInput-input {
   padding: 6px 24px 6px 8px;
   font-size: 0.9375rem;
   font-weight: 400;
@@ -627,11 +593,11 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   line-height: 20px;
 }
 
-.c33 .RcBoxSelectInput-input:focus {
+.c31 .RcBoxSelectInput-input:focus {
   background: transparent;
 }
 
-.c8 {
+.c7 {
   -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 0.9375rem;
@@ -642,21 +608,21 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   cursor: pointer;
 }
 
-.c8:focus {
+.c7:focus {
   outline: none;
 }
 
-.c8.focus-visible,
-.c8[data-focus-visible-added] {
+.c7.focus-visible,
+.c7[data-focus-visible-added] {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c8:active {
+.c7:active {
   color: rgba(6,111,172,0.76);
 }
 
-.c14 {
+.c13 {
   -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 0.9375rem;
@@ -667,17 +633,17 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   cursor: pointer;
 }
 
-.c14:focus {
+.c13:focus {
   outline: none;
 }
 
-.c14.focus-visible,
-.c14[data-focus-visible-added] {
+.c13.focus-visible,
+.c13[data-focus-visible-added] {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c14:active {
+.c13:active {
   color: rgba(190,57,51,0.76);
 }
 
@@ -699,15 +665,15 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   margin-bottom: 16px;
 }
 
-.c10 {
+.c9 {
   margin-bottom: 20px;
 }
 
-.c10:last-child {
+.c9:last-child {
   margin-bottom: unset;
 }
 
-.c18 {
+.c16 {
   margin-bottom: 20px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -715,7 +681,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   display: flex;
 }
 
-.c18:last-child {
+.c16:last-child {
   margin-bottom: unset;
 }
 
@@ -737,18 +703,18 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   margin-right: 8px;
 }
 
-.c13 {
+.c12 {
   margin: 8px;
   padding: 16px 24px;
   max-width: 400px;
   box-sizing: border-box;
 }
 
-.c13 .c30 {
+.c12 .c28 {
   margin-bottom: 20px;
 }
 
-.c20 {
+.c18 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -759,11 +725,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   align-items: center;
 }
 
-.c20 .{
-  margin-right: 4px;
-}
-
-.c27 {
+.c25 {
   margin: 8px;
   padding: 16px 24px;
   max-width: 800px;
@@ -771,56 +733,51 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c32 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carFqZ {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c32 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
+  .c30 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
     border-bottom-color: #121212;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c29.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
+  .c27.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
     background-color: rgba(147,147,147,0.92);
   }
 
-  .c29.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled).RcSwitch-checked + .RcSwitch-track {
+  .c27.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled).RcSwitch-checked + .RcSwitch-track {
     background-color: rgba(6,111,172,0.92);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c23:hover {
+  .c21:hover {
     background-color: rgba(102,102,102,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c16.RcCheckbox-root:hover {
+  .c14.RcCheckbox-root:hover {
     background-color: rgba(190,57,51,0.12);
   }
 
-  .c16.RcCheckbox-root:hover.RcCheckbox-checked {
+  .c14.RcCheckbox-root:hover.RcCheckbox-checked {
     color: rgba(190,57,51,0.92);
     background-color: rgba(190,57,51,0.12);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8:hover {
+  .c7:hover {
     -webkit-text-decoration: underline;
     text-decoration: underline;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c14:hover {
+  .c13:hover {
     -webkit-text-decoration: underline;
     text-decoration: underline;
   }
@@ -836,10 +793,10 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
       className="c4"
     >
       <span
-        className="c5 c6 mr-2 date_border icon"
+        className="c5 mr-2 date_border icon"
       >
         <svg
-          className="c7"
+          className="c6"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -850,11 +807,11 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         
       </span>
       <a
-        className="c8"
+        className="c7"
         onKeyDown={[Function]}
       >
         <h6
-          className="MuiTypography-root c9"
+          className="MuiTypography-root c8"
           data-color="initial"
           data-variant="subheading2"
         >
@@ -866,17 +823,17 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
       className=""
     >
       <div
-        className="c10"
+        className="c9"
       >
         <p
-          className="MuiTypography-root c11"
+          className="MuiTypography-root c10"
           data-color="neutral.f04"
           data-variant="body1"
         >
           Date & time
         </p>
         <div
-          className="MuiTypography-root c12"
+          className="MuiTypography-root c11"
           data-color="neutral.f06"
           data-variant="body1"
         >
@@ -884,17 +841,17 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         </div>
       </div>
       <div
-        className="c10"
+        className="c9"
       >
         <p
-          className="MuiTypography-root c11"
+          className="MuiTypography-root c10"
           data-color="neutral.f04"
           data-variant="body1"
         >
           Location
         </p>
         <div
-          className="MuiTypography-root c12"
+          className="MuiTypography-root c11"
           data-color="neutral.f06"
           data-variant="body1"
         >
@@ -902,17 +859,17 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         </div>
       </div>
       <div
-        className="c10"
+        className="c9"
       >
         <p
-          className="MuiTypography-root c11"
+          className="MuiTypography-root c10"
           data-color="neutral.f04"
           data-variant="body1"
         >
           Description
         </p>
         <div
-          className="MuiTypography-root c12"
+          className="MuiTypography-root c11"
           data-color="neutral.f06"
           data-variant="body1"
         >
@@ -922,17 +879,17 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
     </main>
   </div>
   <div
-    className="MuiPaper-root MuiCard-root c2 c13 MuiPaper-outlined MuiPaper-rounded"
+    className="MuiPaper-root MuiCard-root c2 c12 MuiPaper-outlined MuiPaper-rounded"
   >
     <header
       className="c4"
     >
       <a
-        className="c14"
+        className="c13"
         onKeyDown={[Function]}
       >
         <h6
-          className="MuiTypography-root c9"
+          className="MuiTypography-root c8"
           data-color="initial"
           data-variant="subheading2"
         >
@@ -945,7 +902,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
       <div>
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-111 MuiCheckbox-root RcCheckbox-root c15 c16"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-111 MuiCheckbox-root RcCheckbox-root c14"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -969,10 +926,10 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
               type="checkbox"
             />
             <span
-              className="c5 c17 unselect icon"
+              className="c15 unselect icon"
             >
               <svg
-                className="c7"
+                className="c6"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -993,14 +950,14 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
       className=""
     >
       <div
-        className="c18"
+        className="c16"
         display="flex"
       >
         <span
-          className="c5 c19 mr-2 time_border icon"
+          className="c17 mr-2 time_border icon"
         >
           <svg
-            className="c7"
+            className="c6"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -1011,7 +968,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
           
         </span>
         <div
-          className="MuiTypography-root c12 MuiTypography-displayInline"
+          className="MuiTypography-root c11 MuiTypography-displayInline"
           data-color="neutral.f06"
           data-variant="body1"
         >
@@ -1019,29 +976,29 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         </div>
       </div>
       <div
-        className="c10"
+        className="c9"
       >
         <p
-          className="MuiTypography-root c11"
+          className="MuiTypography-root c10"
           data-color="neutral.f04"
           data-variant="body1"
         >
           Assignee
         </p>
         <div
-          className="MuiTypography-root c12"
+          className="MuiTypography-root c11"
           data-color="neutral.f06"
           data-variant="body1"
         >
           <div
-            className="c20 mr-2"
+            className="c18 mr-2"
           >
             <div
-              className="c21 "
+              className="c19 "
               data-test-automation-class="avatar"
             >
               <div
-                className="c22 RcAvatar-avatarContainer"
+                className="c20 RcAvatar-avatarContainer"
               >
                 <img
                   src="test-file-stub"
@@ -1051,14 +1008,14 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
             Jesse
           </div>
           <div
-            className="c20"
+            className="c18"
           >
             <div
-              className="c21 "
+              className="c19 "
               data-test-automation-class="avatar"
             >
               <div
-                className="c22 RcAvatar-avatarContainer"
+                className="c20 RcAvatar-avatarContainer"
               >
                 <img
                   src="test-file-stub"
@@ -1070,17 +1027,17 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         </div>
       </div>
       <div
-        className="c10"
+        className="c9"
       >
         <p
-          className="MuiTypography-root c11"
+          className="MuiTypography-root c10"
           data-color="neutral.f04"
           data-variant="body1"
         >
           Section
         </p>
         <div
-          className="MuiTypography-root c12"
+          className="MuiTypography-root c11"
           data-color="neutral.f06"
           data-variant="body1"
         >
@@ -1088,23 +1045,23 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         </div>
       </div>
       <div
-        className="c10"
+        className="c9"
       >
         <p
-          className="MuiTypography-root c11"
+          className="MuiTypography-root c10"
           data-color="neutral.f04"
           data-variant="body1"
         >
           Attachments
         </p>
         <div
-          className="MuiTypography-root c12"
+          className="MuiTypography-root c11"
           data-color="neutral.f06"
           data-variant="body1"
         >
           <div
             aria-disabled={false}
-            className="MuiButtonBase-root MuiListItem-root c23 RcListItem-multiline MuiListItem-gutters RcListItem-gutters MuiListItem-button"
+            className="MuiButtonBase-root MuiListItem-root c21 RcListItem-multiline MuiListItem-gutters RcListItem-gutters MuiListItem-button"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -1120,14 +1077,14 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
             tabIndex={0}
           >
             <div
-              className="MuiListItemIcon-root c24"
+              className="MuiListItemIcon-root c22"
             >
               <span
-                className="c5 c25 doc icon"
+                className="c23 doc icon"
                 data-test-automation-id="iconThumbnail"
               >
                 <svg
-                  className="c7"
+                  className="c6"
                   viewBox="0 0 32 32"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -1150,7 +1107,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
               </span>
             </div>
             <div
-              className="MuiListItemText-root c26 MuiListItemText-multiline RcListItemText-multiline"
+              className="MuiListItemText-root c24 MuiListItemText-multiline RcListItemText-multiline"
             >
               <span
                 className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
@@ -1172,27 +1129,27 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
     </main>
   </div>
   <div
-    className="MuiPaper-root MuiCard-root c2 c13 c27 MuiPaper-outlined MuiPaper-rounded"
+    className="MuiPaper-root MuiCard-root c2 c12 c25 MuiPaper-outlined MuiPaper-rounded"
   >
     <main
       className=""
     >
       <div
-        className="c18"
+        className="c16"
         display="flex"
       >
         <div
           className="MuiBox-root MuiBox-root-115"
         >
           <div
-            className="MuiTypography-root c12"
+            className="MuiTypography-root c11"
             data-color="neutral.f06"
             data-variant="body1"
           >
             Desktop notifications for browser
           </div>
           <p
-            className="MuiTypography-root c11"
+            className="MuiTypography-root c10"
             data-color="neutral.f04"
             data-variant="body1"
           >
@@ -1203,7 +1160,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
           className="MuiBox-root MuiBox-root-116"
         >
           <span
-            className="MuiSwitch-root RcSwitch-root c28 c29"
+            className="MuiSwitch-root RcSwitch-root c26 c27"
           >
             <span
               aria-disabled={false}
@@ -1242,25 +1199,25 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         </div>
       </div>
       <hr
-        className="c30 c31"
+        className="c28 c29"
         role="separator"
       />
       <div
-        className="c18"
+        className="c16"
         display="flex"
       >
         <div
           className="MuiBox-root MuiBox-root-117"
         >
           <div
-            className="MuiTypography-root c12"
+            className="MuiTypography-root c11"
             data-color="neutral.f06"
             data-variant="body1"
           >
             New messages
           </div>
           <p
-            className="MuiTypography-root c11"
+            className="MuiTypography-root c10"
             data-color="neutral.f04"
             data-variant="body1"
           >
@@ -1271,7 +1228,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
           className="MuiBox-root MuiBox-root-118"
         >
           <div
-            className="MuiFormControl-root MuiTextField-root RcTextField-root c32 c33"
+            className="MuiFormControl-root MuiTextField-root RcTextField-root c30 c31"
           >
             <div
               className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcSelectInput-root RcBoxSelectInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-formControl MuiInput-formControl"
@@ -1304,11 +1261,11 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
                 variant="standard"
               />
               <span
-                className="c5 c19 MuiSvgIcon-root MuiSelect-icon RcSelect-icon arrow-down icon"
+                className="c17 MuiSvgIcon-root MuiSelect-icon RcSelect-icon arrow-down icon"
                 disabled={false}
               >
                 <svg
-                  className="c7"
+                  className="c6"
                   viewBox="0 0 32 32"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -1323,25 +1280,25 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         </div>
       </div>
       <hr
-        className="c30 c31"
+        className="c28 c29"
         role="separator"
       />
       <div
-        className="c18"
+        className="c16"
         display="flex"
       >
         <div
           className="MuiBox-root MuiBox-root-119"
         >
           <div
-            className="MuiTypography-root c12"
+            className="MuiTypography-root c11"
             data-color="neutral.f06"
             data-variant="body1"
           >
             Incoming calls
           </div>
           <p
-            className="MuiTypography-root c11"
+            className="MuiTypography-root c10"
             data-color="neutral.f04"
             data-variant="body1"
           >
@@ -1352,7 +1309,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
           className="MuiBox-root MuiBox-root-120"
         >
           <span
-            className="MuiSwitch-root RcSwitch-root c28 c29"
+            className="MuiSwitch-root RcSwitch-root c26 c27"
           >
             <span
               aria-disabled={false}
@@ -1391,25 +1348,25 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         </div>
       </div>
       <hr
-        className="c30 c31"
+        className="c28 c29"
         role="separator"
       />
       <div
-        className="c18"
+        className="c16"
         display="flex"
       >
         <div
           className="MuiBox-root MuiBox-root-121"
         >
           <div
-            className="MuiTypography-root c12"
+            className="MuiTypography-root c11"
             data-color="neutral.f06"
             data-variant="body1"
           >
             Missed calls and new voicemails
           </div>
           <p
-            className="MuiTypography-root c11"
+            className="MuiTypography-root c10"
             data-color="neutral.f04"
             data-variant="body1"
           >
@@ -1420,7 +1377,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
           className="MuiBox-root MuiBox-root-122"
         >
           <span
-            className="MuiSwitch-root RcSwitch-root c28 c29"
+            className="MuiSwitch-root RcSwitch-root c26 c27"
           >
             <span
               aria-disabled={false}

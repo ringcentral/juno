@@ -49,50 +49,50 @@ export const ToggleButtonStyle: RcThemedStyled<RcToggleButtonProps, any> = (
     }
 
     ${variant === 'standard' &&
+    css`
+      padding: ${space};
+
+      ${nonTouchHoverMedia} {
+        &:hover {
+          background-color: ${setOpacity(actionColor, '08')};
+        }
+      }
+
+      ${focusVisibleShadowStyle('sm')};
+
+      &:active {
+        background-color: ${setOpacity(actionColor, '12')};
+      }
+
+      ${!disabled &&
       css`
-        padding: ${space};
-
-        ${nonTouchHoverMedia} {
-          &:hover {
-            background-color: ${setOpacity(actionColor, '08')};
-          }
+        &.${RcToggleButtonClasses.selected},
+          &.${RcToggleButtonClasses.selected}:hover {
+          background-color: ${selectedBgColor};
         }
-
-        ${focusVisibleShadowStyle('sm')};
-
-        &:active {
-          background-color: ${setOpacity(actionColor, '12')};
-        }
-
-        ${!disabled &&
-          css`
-            &.${RcToggleButtonClasses.selected},
-              &.${RcToggleButtonClasses.selected}:hover {
-              background-color: ${selectedBgColor};
-            }
-          `};
       `};
+    `};
 
     ${variant === 'box' &&
-      css`
-        padding: ${space};
+    css`
+      padding: ${space};
 
-        &.${RcToggleButtonClasses.selected} {
+      &.${RcToggleButtonClasses.selected} {
+        background-color: unset;
+      }
+
+      ${nonTouchHoverMedia} {
+        &:hover,
+        &.${RcToggleButtonClasses.selected}:hover {
           background-color: unset;
         }
+      }
 
-        ${nonTouchHoverMedia} {
-          &:hover,
-          &.${RcToggleButtonClasses.selected}:hover {
-            background-color: unset;
-          }
+      ${focusVisible} {
+        .${RcToggleButtonClasses.label} {
+          ${plainIconButtonFocusStyle({ radius: 'sm' })}
         }
-
-        ${focusVisible} {
-          .${RcToggleButtonClasses.label} {
-            ${plainIconButtonFocusStyle({ radius: 'sm' })}
-          }
-        }
-      `};
+      }
+    `};
   `;
 };

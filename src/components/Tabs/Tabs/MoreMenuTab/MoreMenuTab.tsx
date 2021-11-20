@@ -141,4 +141,6 @@ MoreMenuTab.defaultProps = {
 
 MoreMenuTab.displayName = 'MoreMenuTab';
 
-export { MoreMenuTab, MoreMenuTabProps, DEFAULT_MORE_MENU_TAB_LABEL };
+export { MoreMenuTab, DEFAULT_MORE_MENU_TAB_LABEL };
+
+export type { MoreMenuTabProps };

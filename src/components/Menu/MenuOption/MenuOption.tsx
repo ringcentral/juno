@@ -23,4 +23,5 @@ const RcMenuOption: FunctionComponent<RcMenuOptionProps> = (props) => {
 
 RcMenuOption.displayName = 'RcMenuOption';
 
-export { RcMenuOption, RcMenuOptionProps };
+export { RcMenuOption };
+export type { RcMenuOptionProps };

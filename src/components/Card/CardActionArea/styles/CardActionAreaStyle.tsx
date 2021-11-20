@@ -26,27 +26,25 @@ const rippleAnimation: RcThemedStyled<RcCardActionAreaProps, Keyframes> = ({
   }
 `;
 
-export const CardActionAreaStyle: RcThemedStyled<
-  RcCardActionAreaProps,
-  any
-> = () => {
-  return css`
-    &.${RcCardActionAreaClasses.focusVisible}
-      .${RcCardActionAreaClasses.focusHighlight} {
-      opacity: 0;
-    }
+export const CardActionAreaStyle: RcThemedStyled<RcCardActionAreaProps, any> =
+  () => {
+    return css`
+      &.${RcCardActionAreaClasses.focusVisible}
+        .${RcCardActionAreaClasses.focusHighlight} {
+        opacity: 0;
+      }
 
-    .${RcCardActionAreaRippleClasses.root} {
-      color: ${palette2('action', 'grayLight')};
-    }
+      .${RcCardActionAreaRippleClasses.root} {
+        color: ${palette2('action', 'grayLight')};
+      }
 
-    .${RcCardActionAreaRippleClasses.rippleVisible} {
-      opacity: ${opacity('24')};
-      animation-name: ${rippleAnimation};
-    }
+      .${RcCardActionAreaRippleClasses.rippleVisible} {
+        opacity: ${opacity('24')};
+        animation-name: ${rippleAnimation};
+      }
 
-    &.${RcCardActionAreaClasses.disableRipple}:active {
-      background-color: ${palette2('action', 'grayLight', 0.24)};
-    }
-  `;
-};
+      &.${RcCardActionAreaClasses.disableRipple}:active {
+        background-color: ${palette2('action', 'grayLight', 0.24)};
+      }
+    `;
+  };

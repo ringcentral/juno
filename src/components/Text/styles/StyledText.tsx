@@ -8,13 +8,13 @@ export const textStyle: RcThemedStyled<RcTextProps, any> = (props) => {
 
   return css`
     ${typeof titleWhenOverflow === 'number' &&
-      css`
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: ${titleWhenOverflow};
-        -webkit-box-orient: vertical;
-        white-space: normal;
-      `};
+    css`
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: ${titleWhenOverflow};
+      -webkit-box-orient: vertical;
+      white-space: normal;
+    `};
 
     flex: ${flexFull && '1 1 auto'};
 

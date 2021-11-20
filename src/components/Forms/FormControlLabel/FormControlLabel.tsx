@@ -35,4 +35,5 @@ RcFormControlLabel.defaultProps = {};
 
 RcFormControlLabel.displayName = 'RcFormControlLabel';
 
-export { RcFormControlLabel, RcFormControlLabelProps };
+export { RcFormControlLabel };
+export type { RcFormControlLabelProps };

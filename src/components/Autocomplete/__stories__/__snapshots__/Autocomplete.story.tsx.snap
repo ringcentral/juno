@@ -230,10 +230,6 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .{
-  display: none;
-}
-
 .c0 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -857,10 +853,6 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .{
-  display: none;
-}
-
 .c0 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -979,14 +971,6 @@ Array [
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 0 68px 0 0;
-}
-
-.c2 .RcDownshiftInput-root .sc-iTVJFM {
-  margin: 2px;
-}
-
-.c2 .RcDownshiftInput-root .sc-iTVJFM .RcChip-deleteIcon {
-  margin-left: -6px;
 }
 
 .c2 .RcDownshiftInput-root:before,

@@ -75,9 +75,10 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
       }
     }, [maxWidthProp, size]);
 
-    const contextValue = useMemo(() => ({ size: childrenSize }), [
-      childrenSize,
-    ]);
+    const contextValue = useMemo(
+      () => ({ size: childrenSize }),
+      [childrenSize],
+    );
 
     const onExited = useUnmountPortalHandler(TransitionPropsProp?.onExited);
 
@@ -133,4 +134,5 @@ RcDialog.defaultProps = {};
 
 RcDialog.displayName = 'RcDialog';
 
-export { RcDialog, RcDialogProps, RcDialogSize, RcDialogContext };
+export { RcDialog, RcDialogContext };
+export type { RcDialogProps, RcDialogSize };

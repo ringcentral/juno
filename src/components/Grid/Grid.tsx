@@ -15,9 +15,10 @@ type RcGridProps = {} & RcBaseProps<ComponentProps<typeof MuiGrid>>;
 const _RcGrid = forwardRef<any, RcGridProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcGrid' });
   const { classes: classesProp, children, ...rest } = props;
-  const classes = useMemo(() => combineClasses(RcGridClasses, classesProp), [
-    classesProp,
-  ]);
+  const classes = useMemo(
+    () => combineClasses(RcGridClasses, classesProp),
+    [classesProp],
+  );
 
   return (
     <MuiGrid {...rest} ref={ref} classes={classes}>
@@ -34,4 +35,5 @@ RcGrid.defaultProps = {};
 
 RcGrid.displayName = 'RcGrid';
 
-export { RcGrid, RcGridProps };
+export { RcGrid };
+export type { RcGridProps };

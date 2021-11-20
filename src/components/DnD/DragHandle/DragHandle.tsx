@@ -35,4 +35,5 @@ RcDragHandle.defaultProps = {};
 
 RcDragHandle.displayName = 'RcDragHandle';
 
-export { RcDragHandle, RcDragHandleProps };
+export { RcDragHandle };
+export type { RcDragHandleProps };

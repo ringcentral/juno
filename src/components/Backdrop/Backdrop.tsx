@@ -35,4 +35,5 @@ RcBackdrop.defaultProps = {};
 
 RcBackdrop.displayName = 'RcBackdrop';
 
-export { RcBackdrop, RcBackdropProps };
+export { RcBackdrop };
+export type { RcBackdropProps };

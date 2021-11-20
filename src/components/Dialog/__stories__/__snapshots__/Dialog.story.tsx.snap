@@ -942,5 +942,8 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/Dialog Dialog with responsive
   >
     Open Responsive Dialog
   </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
 </button>
 `;

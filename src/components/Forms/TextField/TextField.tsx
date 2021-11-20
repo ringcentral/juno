@@ -375,11 +375,10 @@ RcTextField.defaultProps = {
 
 RcTextField.displayName = 'RcTextField';
 
-export {
-  RcTextField,
+export { RcTextField, RcOutlineTextFieldIconSizes };
+export type {
   RcTextFieldProps,
   RcTextFieldVariant,
   RcOutlineTextSizeRadius,
-  RcOutlineTextFieldIconSizes,
   RcOutlineTextSize,
 };

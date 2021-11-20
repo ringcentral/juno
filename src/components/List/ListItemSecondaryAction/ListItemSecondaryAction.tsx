@@ -59,4 +59,5 @@ RcListItemSecondaryAction.defaultProps = {};
 
 RcListItemSecondaryAction.displayName = 'RcListItemSecondaryAction';
 
-export { RcListItemSecondaryAction, RcListItemSecondaryActionProps };
+export { RcListItemSecondaryAction };
+export type { RcListItemSecondaryActionProps };

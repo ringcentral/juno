@@ -3,8 +3,8 @@ import React, { forwardRef, HTMLAttributes, memo } from 'react';
 import {
   RcBaseSize,
   styled,
-  withDeprecatedCheck,
   useThemeProps,
+  withDeprecatedCheck,
 } from '../../foundation';
 import { RcIcon, RcIconProps } from '../Icon';
 import { StyledThumbnail } from './styles';
@@ -79,4 +79,5 @@ RcThumbnail.defaultProps = {
 
 RcThumbnail.displayName = 'RcThumbnail';
 
-export { RcThumbnail, RcThumbnailProps, RcThumbnailSize };
+export { RcThumbnail };
+export type { RcThumbnailProps, RcThumbnailSize };

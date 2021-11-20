@@ -4,5 +4,5 @@ type BaseDirections = {
 };
 
 export type RcBaseDirection<
-  T extends keyof BaseDirections = 'horizontal' | 'vertical'
+  T extends keyof BaseDirections = 'horizontal' | 'vertical',
 > = keyof Pick<BaseDirections, T>;

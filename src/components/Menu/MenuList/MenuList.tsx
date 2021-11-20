@@ -1,4 +1,3 @@
-import MuiMenuList from '@material-ui/core/MenuList';
 import React, {
   ComponentProps,
   forwardRef,
@@ -8,6 +7,8 @@ import React, {
   useState,
 } from 'react';
 
+import MuiMenuList from '@material-ui/core/MenuList';
+
 import {
   combineClasses,
   RcBaseProps,
@@ -16,11 +17,11 @@ import {
   useThemeProps,
 } from '../../../foundation';
 import { RcSubMenuContext } from '../SubMenu/SubMenuContext';
-import {
-  RcMenuListContext,
+import type {
   RcMenuListContextType,
   RcMenuListOnCloseReasonsType,
 } from './MenuListContext';
+import { RcMenuListContext } from './MenuListContext';
 import { MenuListStyle } from './styles';
 import { RcMenuListClasses } from './utils';
 
@@ -88,9 +89,5 @@ RcMenuList.defaultProps = {
 
 RcMenuList.displayName = 'RcMenuList';
 
-export {
-  RcMenuList,
-  RcMenuListProps,
-  RcMenuListContext,
-  RcMenuListContextType,
-};
+export { RcMenuList, RcMenuListContext };
+export type { RcMenuListContextType, RcMenuListProps };

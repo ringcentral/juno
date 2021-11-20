@@ -85,4 +85,5 @@ export const configure = ({ warning, warningFunction }: RcConfigure) => {
   }
 };
 
-export { rcConfiguration, WarningFunctionType };
+export { rcConfiguration };
+export type { WarningFunctionType };

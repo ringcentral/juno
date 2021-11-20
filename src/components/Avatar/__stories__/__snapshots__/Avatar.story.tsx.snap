@@ -634,17 +634,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -750,17 +739,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -866,11 +844,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -974,11 +947,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #066FAC;
-}
-
-.c3 .sc-eCApnc svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c1 {
@@ -1086,11 +1054,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -1194,11 +1157,6 @@ Array [
   height: 18px;
   border: 3px solid #FFFFFF;
   background: #066FAC;
-}
-
-.c3 .sc-eCApnc svg {
-  width: 12px;
-  height: 12px;
 }
 
 .c1 {
@@ -1307,17 +1265,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -1423,17 +1370,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -1539,11 +1475,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -1647,11 +1578,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #066FAC;
-}
-
-.c3 .sc-eCApnc svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c1 {
@@ -1759,11 +1685,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -1867,11 +1788,6 @@ Array [
   height: 18px;
   border: 3px solid #FFFFFF;
   background: #066FAC;
-}
-
-.c3 .sc-eCApnc svg {
-  width: 12px;
-  height: 12px;
 }
 
 .c1 {
@@ -1980,17 +1896,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2096,17 +2001,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2212,11 +2106,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2320,11 +2209,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #066FAC;
-}
-
-.c3 .sc-eCApnc svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c1 {
@@ -2432,11 +2316,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2540,11 +2419,6 @@ Array [
   height: 18px;
   border: 3px solid #FFFFFF;
   background: #066FAC;
-}
-
-.c3 .sc-eCApnc svg {
-  width: 12px;
-  height: 12px;
 }
 
 .c1 {
@@ -2653,17 +2527,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2769,17 +2632,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2885,11 +2737,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2993,11 +2840,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #066FAC;
-}
-
-.c3 .sc-eCApnc svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c1 {
@@ -3105,11 +2947,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -3213,11 +3050,6 @@ Array [
   height: 18px;
   border: 3px solid #FFFFFF;
   background: #066FAC;
-}
-
-.c3 .sc-eCApnc svg {
-  width: 12px;
-  height: 12px;
 }
 
 .c1 {
@@ -3326,17 +3158,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -3442,17 +3263,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -3558,11 +3368,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -3666,11 +3471,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #066FAC;
-}
-
-.c3 .sc-eCApnc svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c1 {
@@ -3778,11 +3578,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -3886,11 +3681,6 @@ Array [
   height: 18px;
   border: 3px solid #FFFFFF;
   background: #066FAC;
-}
-
-.c3 .sc-eCApnc svg {
-  width: 12px;
-  height: 12px;
 }
 
 .c1 {
@@ -3999,17 +3789,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -4115,17 +3894,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -4231,11 +3999,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -4339,11 +4102,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #066FAC;
-}
-
-.c3 .sc-eCApnc svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c1 {
@@ -4451,11 +4209,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -4559,11 +4312,6 @@ Array [
   height: 18px;
   border: 3px solid #FFFFFF;
   background: #066FAC;
-}
-
-.c3 .sc-eCApnc svg {
-  width: 12px;
-  height: 12px;
 }
 
 .c1 {
@@ -5396,11 +5144,6 @@ Array [
   background: #3C9949;
 }
 
-.c3 .sc-eCApnc svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -5522,11 +5265,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #E6413C;
-}
-
-.c3 .sc-eCApnc svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c1 {
@@ -5676,11 +5414,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #939393;
-}
-
-.c3 .sc-eCApnc svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c1 {
@@ -5833,11 +5566,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #E6413C;
-}
-
-.c3 .sc-eCApnc svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c1 {

@@ -87,4 +87,5 @@ RcDrawer.defaultProps = {
 
 RcDrawer.displayName = 'RcDrawer';
 
-export { RcDrawer, RcDrawerProps };
+export { RcDrawer };
+export type { RcDrawerProps };

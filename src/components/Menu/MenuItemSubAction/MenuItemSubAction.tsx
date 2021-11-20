@@ -9,4 +9,5 @@ const RcMenuItemSubAction = StyledMenuItemSubAction;
 
 RcMenuItemSubAction.displayName = 'RcMenuItemSubAction';
 
-export { RcMenuItemSubAction, RcMenuItemSubActionProps };
+export { RcMenuItemSubAction };
+export type { RcMenuItemSubActionProps };

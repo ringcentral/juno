@@ -130,4 +130,5 @@ RcRating.defaultProps = {
 
 RcRating.displayName = 'RcRating';
 
-export { RcRating, RcRatingProps };
+export { RcRating };
+export type { RcRatingProps };

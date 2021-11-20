@@ -51,4 +51,5 @@ RcTextarea.defaultProps = {
 
 RcTextarea.displayName = 'RcTextarea';
 
-export { RcTextarea, RcTextareaProps };
+export { RcTextarea };
+export type { RcTextareaProps };

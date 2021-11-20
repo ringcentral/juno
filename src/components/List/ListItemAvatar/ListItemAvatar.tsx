@@ -39,4 +39,5 @@ RcListItemAvatar.defaultProps = {};
 
 RcListItemAvatar.displayName = 'RcListItemAvatar';
 
-export { RcListItemAvatar, RcListItemAvatarProps };
+export { RcListItemAvatar };
+export type { RcListItemAvatarProps };

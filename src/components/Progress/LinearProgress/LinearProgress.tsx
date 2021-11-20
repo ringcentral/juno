@@ -39,4 +39,5 @@ RcLinearProgress.defaultProps = {
 
 RcLinearProgress.displayName = 'RcLinearProgress';
 
-export { RcLinearProgress, RcLinearProgressProps };
+export { RcLinearProgress };
+export type { RcLinearProgressProps };

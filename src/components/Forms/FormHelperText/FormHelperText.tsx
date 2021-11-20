@@ -37,4 +37,5 @@ RcFormHelperText.defaultProps = {};
 
 RcFormHelperText.displayName = 'RcFormHelperText';
 
-export { RcFormHelperText, RcFormHelperTextProps };
+export { RcFormHelperText };
+export type { RcFormHelperTextProps };

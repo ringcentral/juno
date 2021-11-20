@@ -75,7 +75,7 @@ export type RcDownshiftCloseReason =
 
 type RcDownshiftProps<
   T = RcDownshiftSelectedItem,
-  K = T & RcDownshiftSelectedItem
+  K = T & RcDownshiftSelectedItem,
 > = {
   /**
    * display mode,
@@ -634,9 +634,8 @@ const _RcDownshift = memo(
       if (!helperText) {
         InputProps['aria-describedby'] = describedbyId;
       } else if (helperText) {
-        FormHelperTextProps[
-          'aria-label'
-        ] = `${screenReaderText} ${helperText}`.trim();
+        FormHelperTextProps['aria-label'] =
+          `${screenReaderText} ${helperText}`.trim();
       }
     }
 
@@ -754,9 +753,8 @@ const _RcDownshift = memo(
     const hasTags = selectedItems.length > 0;
     const isRenderNoOptions = !!noOptionItem;
 
-    const popperRef: ComponentProps<typeof StyledPopper>['popperRef'] = useRef(
-      null,
-    );
+    const popperRef: ComponentProps<typeof StyledPopper>['popperRef'] =
+      useRef(null);
 
     const handleUpdatePopper = useEventCallback(() => {
       popperRef.current?.update();
@@ -971,12 +969,8 @@ RcDownshift.displayName = 'RcDownshift';
 
 const ExportType: <T extends RcDownshiftSelectedItem>(
   props: RcDownshiftProps<T>,
-) => JSX.Element &
-  CustomStyledComponentResult<RcDownshiftProps<T>> = RcDownshift as any;
+) => JSX.Element & CustomStyledComponentResult<RcDownshiftProps<T>> =
+  RcDownshift as any;
 
-export {
-  ExportType as RcDownshift,
-  RcDownshiftProps,
-  RcDownshiftRef,
-  RcDownshiftDefaultFilterOptions,
-};
+export { ExportType as RcDownshift, RcDownshiftDefaultFilterOptions };
+export type { RcDownshiftProps, RcDownshiftRef };

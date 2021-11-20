@@ -4,7 +4,7 @@ import { RcBaseLabelPlacement } from './BaseLabelPlacement';
 import { RcBaseProps } from './BaseProps';
 
 export type RcBaseFormControlLabelProps<
-  T extends RcBaseLabelPlacement = RcBaseLabelPlacement
+  T extends RcBaseLabelPlacement = RcBaseLabelPlacement,
 > = {
   labelPlacement?: T;
 } & RcBaseProps<

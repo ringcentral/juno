@@ -16,9 +16,10 @@ type RcPopoverProps = {} & RcBaseProps<ComponentProps<typeof MuiPopover>>;
 const _RcPopover = forwardRef<any, RcPopoverProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcPopover' });
   const { classes: classesProp, children, ...rest } = props;
-  const classes = useMemo(() => combineClasses(RcPopoverClasses, classesProp), [
-    classesProp,
-  ]);
+  const classes = useMemo(
+    () => combineClasses(RcPopoverClasses, classesProp),
+    [classesProp],
+  );
   const { externalWindow } = useRcPortalWindowContext();
 
   return (
@@ -44,4 +45,5 @@ RcPopover.defaultProps = {
 
 RcPopover.displayName = 'RcPopover';
 
-export { RcPopover, RcPopoverProps };
+export { RcPopover };
+export type { RcPopoverProps };

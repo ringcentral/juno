@@ -24,10 +24,6 @@ Array [
   width: 168px;
 }
 
-.c0 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c0 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -45,10 +41,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -344,10 +336,6 @@ Array [
   width: 168px;
 }
 
-.c0 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c0 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -365,10 +353,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -664,10 +648,6 @@ Array [
   width: 168px;
 }
 
-.c0 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c0 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -685,10 +665,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -983,10 +959,6 @@ Array [
   width: 168px;
 }
 
-.c0 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c0 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -1004,10 +976,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -1327,10 +1295,6 @@ Array [
   width: 168px;
 }
 
-.c0 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c0 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -1348,10 +1312,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -1615,10 +1575,6 @@ Array [
   width: 168px;
 }
 
-.c0 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c0 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -1636,10 +1592,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -1903,10 +1855,6 @@ Array [
   width: 168px;
 }
 
-.c0 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c0 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -1924,10 +1872,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -2191,10 +2135,6 @@ Array [
   width: 168px;
 }
 
-.c0 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c0 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -2212,10 +2152,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -2479,10 +2415,6 @@ Array [
   width: 168px;
 }
 
-.c0 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c0 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -2500,10 +2432,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -2751,10 +2679,6 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select 1`] = `
   width: 168px;
 }
 
-.c1 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c1 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -2772,10 +2696,6 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select 1`] = `
 
 .c1 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c1 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
 }
 
 .c1 .RcTextFieldInput-input {
@@ -3388,10 +3308,6 @@ Array [
   width: 168px;
 }
 
-.c0 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c0 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -3409,10 +3325,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -3650,10 +3562,6 @@ Array [
   width: 168px;
 }
 
-.c0 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c0 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -3671,10 +3579,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
 }
 
 .c0 .RcTextFieldInput-input {

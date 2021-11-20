@@ -40,7 +40,7 @@ function palette2<T extends keyof Pl, P1 extends keyof NU<Pl[T]>>(
 function palette2<
   T extends keyof Pl,
   P1 extends keyof NU<Pl[T]>,
-  P2 extends keyof NU<NU<Pl[T]>[P1]>
+  P2 extends keyof NU<NU<Pl[T]>[P1]>,
 >(obj: T, prop1: P1, prop2: P2): PaletteReturnType;
 
 /**
@@ -56,7 +56,7 @@ function palette2<
   T extends keyof Pl,
   P1 extends keyof NU<Pl[T]>,
   P2 extends keyof NU<NU<Pl[T]>[P1]>,
-  P3 extends keyof NU<NU<NU<Pl[T]>[P1]>[P2]>
+  P3 extends keyof NU<NU<NU<Pl[T]>[P1]>[P2]>,
 >(obj: T, prop1: P1, prop2: P2, prop3: P3): PaletteReturnType;
 
 /**
@@ -74,7 +74,7 @@ function palette2<
   P1 extends keyof NU<Pl[T]>,
   P2 extends keyof NU<NU<Pl[T]>[P1]>,
   P3 extends keyof NU<NU<NU<Pl[T]>[P1]>[P2]>,
-  P4 extends keyof NU<NU<NU<NU<Pl[T]>[P1]>[P2]>[P3]>
+  P4 extends keyof NU<NU<NU<NU<Pl[T]>[P1]>[P2]>[P3]>,
 >(obj: T, prop1: P1, prop2: P2, prop3: P3, prop4: P4): PaletteReturnType;
 
 /**
@@ -140,4 +140,5 @@ function getParsePaletteColor(
   return getPaletteColor(...args);
 }
 
-export { palette2, getParsePaletteColor, PaletteReturnType };
+export { getParsePaletteColor, palette2 };
+export type { PaletteReturnType };

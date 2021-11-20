@@ -368,4 +368,5 @@ RcInlineEditable.defaultProps = {
 
 RcInlineEditable.displayName = 'RcInlineEditable';
 
-export { RcInlineEditable, RcInlineEditableProps };
+export { RcInlineEditable };
+export type { RcInlineEditableProps };

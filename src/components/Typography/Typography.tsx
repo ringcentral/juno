@@ -1,5 +1,6 @@
-import MuiTypography from '@material-ui/core/Typography';
 import React, { ComponentProps, ElementType, forwardRef, useMemo } from 'react';
+
+import MuiTypography from '@material-ui/core/Typography';
 
 import {
   RcBaseProps,
@@ -83,9 +84,5 @@ RcTypography.defaultProps = {
 
 RcTypography.displayName = 'RcTypography';
 
-export {
-  RcTypographyProps,
-  RcTypography,
-  RcTypographyVariant,
-  RcTypographyWeight,
-};
+export { RcTypography };
+export type { RcTypographyProps, RcTypographyVariant, RcTypographyWeight };

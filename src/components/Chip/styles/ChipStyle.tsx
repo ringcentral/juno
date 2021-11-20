@@ -69,28 +69,28 @@ export const ChipStyle: RcThemedStyled<RcChipProps, any> = (props) => {
     }
 
     ${error &&
-      css`
-        &:not(.${RcChipClasses.disabled}) {
-          color: ${palette2('danger', 'f02')};
-          ${fakePseudoRoundBorder({ color: palette2('danger', 'f02') })};
+    css`
+      &:not(.${RcChipClasses.disabled}) {
+        color: ${palette2('danger', 'f02')};
+        ${fakePseudoRoundBorder({ color: palette2('danger', 'f02') })};
 
-          background-color: ${palette2('danger', 'b01')};
+        background-color: ${palette2('danger', 'b01')};
 
-          ${nonTouchHoverMedia} {
-            &:hover {
-              background-color: ${setOpacity(errorBgColor, '08')};
-            }
-          }
-
-          &:focus {
-            background-color: ${setOpacity(errorBgColor, '16')};
-          }
-
-          &:active {
-            background-color: ${setOpacity(errorBgColor, '24')};
+        ${nonTouchHoverMedia} {
+          &:hover {
+            background-color: ${setOpacity(errorBgColor, '08')};
           }
         }
-      `};
+
+        &:focus {
+          background-color: ${setOpacity(errorBgColor, '16')};
+        }
+
+        &:active {
+          background-color: ${setOpacity(errorBgColor, '24')};
+        }
+      }
+    `};
 
     .${RcChipClasses.avatar} {
       color: ${palette2('neutral', 'b01')};

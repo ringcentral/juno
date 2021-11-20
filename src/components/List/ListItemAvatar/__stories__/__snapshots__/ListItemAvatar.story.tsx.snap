@@ -90,15 +90,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemAvatar ListItemAvatar 
   padding-bottom: 4px;
 }
 
-.c0 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c0 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 .c1 {
   margin: 3px 8px 3px 0px;
   min-width: 0;

@@ -338,10 +338,6 @@ Array [
   width: 168px;
 }
 
-.c3 .sc-fujyAs {
-  margin-left: 12px;
-}
-
 .c3 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
@@ -359,17 +355,6 @@ Array [
 
 .c3 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c3 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
-}
-
-.c3 .RcTextFieldInput-focused .sc-carFqZ {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .c3 .RcTextFieldInput-input {
@@ -494,12 +479,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c3 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carFqZ {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {

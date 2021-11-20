@@ -68,15 +68,12 @@ enum SORT_ICON_CLASS {
 }
 
 export {
+  ARIA_SORT_VALUES,
+  COLUMN_TEXT_ALIGN,
+  ORDER_TABLE_BY,
+  SORT_ICON_CLASS,
   TABLE_BORDER_TYPE,
   TABLE_STICKY_TYPE,
   TABLE_TYPE,
-  COLUMN_TEXT_ALIGN,
-  ORDER_TABLE_BY,
-  ARIA_SORT_VALUES,
-  SORT_ICON_CLASS,
-  SortMap,
-  TableHeadProps,
-  TableHeadCellProps,
-  ColumnProps,
 };
+export type { ColumnProps, SortMap, TableHeadCellProps, TableHeadProps };

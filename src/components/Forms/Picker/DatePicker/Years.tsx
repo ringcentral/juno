@@ -50,11 +50,10 @@ const Years = forwardRef<any, YearsProps>((props, ref) => {
   const selectedYearRef = useRef<HTMLButtonElement>(null);
   const currentYear = utils.getYear(date || now);
 
-  const years = useMemo(() => utils.getYearRange(minDate, maxDate), [
-    maxDate,
-    minDate,
-    utils,
-  ]);
+  const years = useMemo(
+    () => utils.getYearRange(minDate, maxDate),
+    [maxDate, minDate, utils],
+  );
 
   const onYearSelect = useEventCallback((year: number) => {
     const newDate = utils.setYear(date, year);
@@ -136,4 +135,5 @@ const Years = forwardRef<any, YearsProps>((props, ref) => {
 
 Years.displayName = 'RcYears';
 
-export { Years, YearsProps };
+export { Years };
+export type { YearsProps };

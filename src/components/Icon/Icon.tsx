@@ -218,4 +218,5 @@ RcIcon.defaultProps = {
 };
 RcIcon.displayName = 'RcIcon';
 
-export { RcIcon, RcIconProps, SvgSymbol };
+export { RcIcon };
+export type { RcIconProps, SvgSymbol };

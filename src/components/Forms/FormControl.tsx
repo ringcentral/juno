@@ -14,4 +14,5 @@ const RcFormControl = styled(FormControl)``;
 
 RcFormControl.displayName = 'RcFormControl';
 
-export { RcFormControl, RcFormControlProps };
+export { RcFormControl };
+export type { RcFormControlProps };

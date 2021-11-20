@@ -102,6 +102,9 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/ButtonGroup ButtonGroup 1`] 
     >
       One
     </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </button>
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined"
@@ -125,6 +128,9 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/ButtonGroup ButtonGroup 1`] 
     >
       Two
     </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </button>
 </div>
 `;

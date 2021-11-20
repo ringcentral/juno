@@ -105,4 +105,5 @@ RcCardActionArea.defaultProps = {};
 
 RcCardActionArea.displayName = 'RcCardActionArea';
 
-export { RcCardActionArea, RcCardActionAreaProps };
+export { RcCardActionArea };
+export type { RcCardActionAreaProps };

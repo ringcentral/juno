@@ -156,6 +156,9 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardActions CardActions 1`] = 
       >
         Watch Lizards
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <button
       className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c5"
@@ -179,6 +182,9 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardActions CardActions 1`] = 
       >
         Watch Lizards
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
   </div>
 </div>

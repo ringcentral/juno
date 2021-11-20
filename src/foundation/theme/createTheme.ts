@@ -52,7 +52,7 @@ function createTheme(options: RcThemeInput = {}) {
     shape: deepmerge(shape, shapeInput),
   };
 
-  return (createMuiTheme(theme as any) as any) as RcTheme;
+  return createMuiTheme(theme as any) as any as RcTheme;
 }
 
 export default createTheme;

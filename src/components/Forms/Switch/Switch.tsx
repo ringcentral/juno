@@ -21,9 +21,8 @@ import { RcSwitchClasses } from './utils';
 
 type RcSwitchLabelPlacement = RcBaseLabelPlacement<'start' | 'end'>;
 
-type RcSwitchFormControlLabelProps = RcBaseFormControlLabelProps<
-  RcSwitchLabelPlacement
->;
+type RcSwitchFormControlLabelProps =
+  RcBaseFormControlLabelProps<RcSwitchLabelPlacement>;
 
 type RcSwitchProps = {
   /** custom trackColor when unchecked status */
@@ -105,8 +104,8 @@ RcSwitch.defaultProps = {
 
 RcSwitch.displayName = 'RcSwitch';
 
-export {
-  RcSwitch,
+export { RcSwitch };
+export type {
   RcSwitchProps,
   RcSwitchLabelPlacement,
   RcSwitchFormControlLabelProps,

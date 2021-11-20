@@ -15,9 +15,11 @@ export function getHighlightStyle({
   backgroundColorProp,
   theme,
 }: GetHighlightStyle) {
-  const backgroundColor = (backgroundColorProp
-    ? getParsePaletteColor(backgroundColorProp)
-    : setOpacity(palette2('warning', 'b03'), '12'))({ theme });
+  const backgroundColor = (
+    backgroundColorProp
+      ? getParsePaletteColor(backgroundColorProp)
+      : setOpacity(palette2('warning', 'b03'), '12')
+  )({ theme });
 
   const styles = {
     entering: {

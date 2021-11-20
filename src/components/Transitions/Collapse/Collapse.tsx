@@ -1,7 +1,9 @@
+import React, { forwardRef } from 'react';
+
 import MuiCollapse, {
   CollapseProps as MuiCollapseProps,
 } from '@material-ui/core/Collapse';
-import React, { forwardRef } from 'react';
+
 import { useThemeProps } from '../../../foundation';
 
 type RcCollapseProps = MuiCollapseProps;
@@ -14,4 +16,5 @@ const _RcCollapse = forwardRef<any, RcCollapseProps>((inProps, ref) => {
 
 const RcCollapse = _RcCollapse;
 
-export { RcCollapse, RcCollapseProps };
+export { RcCollapse };
+export type { RcCollapseProps };

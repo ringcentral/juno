@@ -1,5 +1,6 @@
-import MuiTab from '@material-ui/core/Tab';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiTab from '@material-ui/core/Tab';
 
 import {
   combineProps,
@@ -23,9 +24,10 @@ type RcTabProps = {
 const _RcTab = forwardRef<any, RcTabProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcTab' });
   const { classes: classesProp, children, direction, ...rest } = props;
-  const classes = useMemo(() => combineProps(RcTabClasses, classesProp), [
-    classesProp,
-  ]);
+  const classes = useMemo(
+    () => combineProps(RcTabClasses, classesProp),
+    [classesProp],
+  );
 
   return <MuiTab {...rest} ref={ref} classes={classes} />;
 });
@@ -40,4 +42,5 @@ RcTab.defaultProps = {
 
 RcTab.displayName = 'RcTab';
 
-export { RcTab, RcTabProps };
+export { RcTab };
+export type { RcTabProps };

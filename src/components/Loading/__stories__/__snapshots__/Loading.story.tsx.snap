@@ -122,6 +122,9 @@ Array [
       >
         start loading
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
   </div>,
   .c0 {
@@ -222,6 +225,9 @@ Array [
     >
       start loading 
     </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </button>,
   .c0 {
   text-transform: none;
@@ -321,6 +327,9 @@ Array [
     >
       end loading 
     </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </button>,
 ]
 `;

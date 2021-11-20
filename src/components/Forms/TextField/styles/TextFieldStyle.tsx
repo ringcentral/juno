@@ -70,11 +70,11 @@ export const TextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = ({
     width: ${!fullWidth && RcDefaultTextFieldWidth};
 
     ${gutterBottom &&
-      css`
-        &.${RcTextFieldClasses.root} {
-          margin: 0 0 ${spacing(4)} 0;
-        }
-      `};
+    css`
+      &.${RcTextFieldClasses.root} {
+        margin: 0 0 ${spacing(4)} 0;
+      }
+    `};
 
     .${RcTextFieldInputLabelClasses.root} {
       ${typography('caption2')};
@@ -106,11 +106,11 @@ export const TextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = ({
       }
 
       ${clearBtn &&
-        align &&
-        align !== 'left' &&
-        css`
-          width: calc(100% - ${px(RcIconButtonSizes[size!])});
-        `};
+      align &&
+      align !== 'left' &&
+      css`
+        width: calc(100% - ${px(RcIconButtonSizes[size!])});
+      `};
     }
 
     .${RcTextFieldInputClasses.underline} {

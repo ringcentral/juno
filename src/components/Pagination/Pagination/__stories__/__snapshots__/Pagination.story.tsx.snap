@@ -326,6 +326,9 @@ Array [
           tabIndex={0}
         >
           1
+          <span
+            className="MuiTouchRipple-root"
+          />
         </div>
       </li>
       <li>
@@ -349,6 +352,9 @@ Array [
           tabIndex={0}
         >
           2
+          <span
+            className="MuiTouchRipple-root"
+          />
         </div>
       </li>
       <li>
@@ -372,6 +378,9 @@ Array [
           tabIndex={0}
         >
           3
+          <span
+            className="MuiTouchRipple-root"
+          />
         </div>
       </li>
       <li>
@@ -395,6 +404,9 @@ Array [
           tabIndex={0}
         >
           4
+          <span
+            className="MuiTouchRipple-root"
+          />
         </div>
       </li>
       <li>
@@ -418,6 +430,9 @@ Array [
           tabIndex={0}
         >
           5
+          <span
+            className="MuiTouchRipple-root"
+          />
         </div>
       </li>
       <li>
@@ -448,6 +463,9 @@ Array [
           tabIndex={0}
         >
           50
+          <span
+            className="MuiTouchRipple-root"
+          />
         </div>
       </li>
       <li>
@@ -480,6 +498,9 @@ Array [
               d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
             />
           </svg>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </div>
       </li>
     </ul>
@@ -643,6 +664,9 @@ Array [
     >
       red bg
     </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </button>,
   @media (hover:hover) and (pointer:fine) {
 
@@ -840,6 +864,9 @@ Array [
     >
       blue bg
     </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </button>,
   @media (hover:hover) and (pointer:fine) {
 
@@ -1037,6 +1064,9 @@ Array [
     >
       green bg
     </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </button>,
 ]
 `;

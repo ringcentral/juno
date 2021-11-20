@@ -1,5 +1,4 @@
 export * from './Button';
-export * from './ButtonBar';
 export * from './ButtonBase';
 export * from './ButtonGroup';
 export * from './IconButton';

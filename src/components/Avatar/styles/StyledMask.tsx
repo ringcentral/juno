@@ -35,4 +35,5 @@ const RcAvatarMask: FunctionComponent<RcAvatarMaskProps> = ({
   return <StyledMask className={className}>{children}</StyledMask>;
 };
 
-export { RcAvatarMask, RcAvatarMaskProps };
+export { RcAvatarMask };
+export type { RcAvatarMaskProps };

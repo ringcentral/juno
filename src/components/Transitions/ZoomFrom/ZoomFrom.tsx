@@ -6,7 +6,6 @@ import {
   useTheme,
   useThemeProps,
 } from '../../../foundation';
-import { useNormalizedTransitionProps } from '../utils';
 import {
   duration,
   getTransitionProps,
@@ -16,6 +15,7 @@ import {
   TransitionProps,
   TransitionStatus,
 } from '../Transition';
+import { useNormalizedTransitionProps } from '../utils';
 import { transformToFromElm } from './utils';
 
 const styles = {
@@ -141,4 +141,5 @@ RcZoomFrom.defaultProps = {
 
 RcZoomFrom.displayName = 'ZoomInFadeOut';
 
-export { RcZoomFrom, RcZoomFromProps };
+export { RcZoomFrom };
+export type { RcZoomFromProps };

@@ -202,6 +202,9 @@ exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost Snackbar Examp
     open
      snackbar
   </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
 </button>
 `;
 
@@ -391,17 +394,6 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .{
-  display: none;
-}
-
-.c0 .RcTextFieldInput-focused .{
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .c0 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -538,12 +530,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .{
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -885,5 +872,8 @@ exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost With Addition 
     open
      by tag
   </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
 </button>
 `;

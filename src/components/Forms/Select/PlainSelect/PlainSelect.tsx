@@ -189,4 +189,5 @@ RcPlainSelect.defaultProps = {
 
 RcPlainSelect.displayName = 'RcPlainSelect';
 
-export { RcPlainSelect, RcPlainSelectProps, RcPlainSelectPropsVariant };
+export { RcPlainSelect };
+export type { RcPlainSelectProps, RcPlainSelectPropsVariant };

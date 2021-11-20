@@ -69,47 +69,47 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
     border-radius: ${radiusProp && radius(radiusProp)};
 
     ${isMask &&
-      css`
-        &:after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          height: 100%;
-          width: 100%;
-          display: block;
-          background: ${setOpacity(palette2('neutral', 'b01'), '32')};
-          width: 100%;
-          height: 100%;
-          border-radius: ${radius(radiusProp ?? 'lg')};
-        }
-      `};
+    css`
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        display: block;
+        background: ${setOpacity(palette2('neutral', 'b01'), '32')};
+        width: 100%;
+        height: 100%;
+        border-radius: ${radius(radiusProp ?? 'lg')};
+      }
+    `};
 
     ${!isPlain &&
-      css`
-        min-width: ${px(RcButtonMinWidths[size!])};
-        min-height: ${px(RcButtonHeights[size!])};
-        padding: ${spacing(0, RcButtonPadding[size!])};
-      `};
+    css`
+      min-width: ${px(RcButtonMinWidths[size!])};
+      min-height: ${px(RcButtonHeights[size!])};
+      padding: ${spacing(0, RcButtonPadding[size!])};
+    `};
 
     .${RcButtonClasses.startIcon} {
       margin-right: ${iconSpace};
 
       ${isPlain &&
-        css`
-          margin-left: 0;
-        `};
+      css`
+        margin-left: 0;
+      `};
     }
 
     .${RcButtonClasses.endIcon} {
       margin-left: ${iconSpace};
 
       ${isPlain &&
-        css`
-          margin-right: 0;
-        `};
+      css`
+        margin-right: 0;
+      `};
     }
 
     &.${RcButtonClasses.text} {
@@ -126,28 +126,28 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
       }
 
       ${isPlain &&
-        css`
-          padding: ${spacing(1)};
-          min-width: unset;
-          line-height: 1;
+      css`
+        padding: ${spacing(1)};
+        min-width: unset;
+        line-height: 1;
 
-          ${nonTouchHoverMedia} {
-            &:hover {
-              color: ${setOpacity(plainTextColor, '80')};
-              background-color: transparent;
-            }
+        ${nonTouchHoverMedia} {
+          &:hover {
+            color: ${setOpacity(plainTextColor, '80')};
+            background-color: transparent;
           }
+        }
 
-          ${focusVisible} {
-            ${fakeBorder({ color: plainButtonTextColor(props) })}
-          }
+        ${focusVisible} {
+          ${fakeBorder({ color: plainButtonTextColor(props) })}
+        }
 
-          &:active {
-            &.${RcButtonClasses.text} {
-              color: ${setOpacity(plainTextColor, '64')};
-            }
+        &:active {
+          &.${RcButtonClasses.text} {
+            color: ${setOpacity(plainTextColor, '64')};
           }
-        `};
+        }
+      `};
     }
 
     &.${RcButtonClasses.contained} {
@@ -161,12 +161,12 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
       }
 
       ${!isMask &&
-        css`
-          &.${RcButtonClasses.disabled} {
-            background-color: ${palette2('disabled', 'b01')};
-            color: ${palette2('disabled', 'f01')};
-          }
-        `}
+      css`
+        &.${RcButtonClasses.disabled} {
+          background-color: ${palette2('disabled', 'b01')};
+          color: ${palette2('disabled', 'f01')};
+        }
+      `}
     }
 
     &.${RcButtonClasses.outlined} {

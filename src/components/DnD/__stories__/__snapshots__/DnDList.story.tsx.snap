@@ -40,15 +40,6 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list Multi
   padding-bottom: 4px;
 }
 
-.c1 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c1 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 .c0 {
   height: 36px;
   padding-top: 12px;
@@ -170,6 +161,9 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list Multi
               tabIndex={0}
             >
               Item 1 Content
+              <span
+                className="MuiTouchRipple-root"
+              />
             </div>
             <div
               aria-describedby="rbd-hidden-text-1-hidden-text-6"
@@ -203,6 +197,9 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list Multi
               tabIndex={0}
             >
               Item 2 Content
+              <span
+                className="MuiTouchRipple-root"
+              />
             </div>
             <div
               aria-describedby="rbd-hidden-text-1-hidden-text-6"
@@ -236,6 +233,9 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list Multi
               tabIndex={0}
             >
               Item 3 Content
+              <span
+                className="MuiTouchRipple-root"
+              />
             </div>
             <div
               aria-describedby="rbd-hidden-text-1-hidden-text-6"
@@ -269,6 +269,9 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list Multi
               tabIndex={0}
             >
               Item 4 Content
+              <span
+                className="MuiTouchRipple-root"
+              />
             </div>
           </ul>
         </div>

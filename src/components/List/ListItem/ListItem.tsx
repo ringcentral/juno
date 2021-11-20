@@ -154,4 +154,5 @@ RcListItem.defaultProps = {
 
 RcListItem.displayName = 'RcListItem';
 
-export { RcListItem, RcListItemProps, RcListItemSize, RcListItemColor };
+export { RcListItem };
+export type { RcListItemProps, RcListItemSize, RcListItemColor };

@@ -192,10 +192,6 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
   color: #121212;
 }
 
-.c1 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
-}
-
 .c1 .RcTextFieldInput-input {
   font-size: 1.5rem;
   font-weight: 400;
@@ -1390,10 +1386,6 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
   color: #121212;
 }
 
-.c11 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
-}
-
 .c11 .RcTextFieldInput-input {
   font-size: 1.5rem;
   font-weight: 400;
@@ -1521,17 +1513,6 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 
 .c16 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c16 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
-}
-
-.c16 .RcTextFieldInput-focused .sc-carFqZ {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .c16 .RcTextFieldInput-input {
@@ -2050,12 +2031,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c16 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carFqZ {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3143,10 +3119,6 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
 
 .c11 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c11 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
 }
 
 .c11 .RcTextFieldInput-input {

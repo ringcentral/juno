@@ -53,9 +53,8 @@ const listComponentPropsSystem = system(() => {
   const components = statefulStream<Components>({});
   const computeItemKey = statefulStream<ComputeItemKey>(identity);
   const headerFooterTag = statefulStream('div');
-  const scrollerRef = statefulStream<
-    (ref: HTMLElement | Window | null) => void
-  >(noop);
+  const scrollerRef =
+    statefulStream<(ref: HTMLElement | Window | null) => void>(noop);
 
   const distinctProp = <K extends keyof Components>(
     propName: K,

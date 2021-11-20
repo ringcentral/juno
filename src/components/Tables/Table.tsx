@@ -1,5 +1,6 @@
-import clsx from 'clsx';
 import React, { forwardRef, useMemo } from 'react';
+
+import clsx from 'clsx';
 
 import { RcClassesProps, styled, useThemeProps } from '../../foundation';
 import { StyledTable, TableWrapper } from './styled';
@@ -54,4 +55,5 @@ const _RcTable = forwardRef<any, RcTableProps>((inProps, ref) => {
 
 const RcTable = styled(_RcTable)``;
 
-export { RcTable, RcTableProps };
+export { RcTable };
+export type { RcTableProps };

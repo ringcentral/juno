@@ -21,14 +21,8 @@ import {
 
 const RcTableHeadCell = (inProps: TableHeadCellProps) => {
   const props = useThemeProps({ props: inProps, name: 'RcTableHeadCell' });
-  const {
-    automationID,
-    title,
-    width,
-    sortDirection,
-    sortKey,
-    textAlign,
-  } = props;
+  const { automationID, title, width, sortDirection, sortKey, textAlign } =
+    props;
 
   const onClick = () => {
     const { sortHandler, sortKey, sortDirection } = props;

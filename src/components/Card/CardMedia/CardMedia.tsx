@@ -42,4 +42,5 @@ RcCardMedia.defaultProps = {};
 
 RcCardMedia.displayName = 'RcCardMedia';
 
-export { RcCardMedia, RcCardMediaProps };
+export { RcCardMedia };
+export type { RcCardMediaProps };

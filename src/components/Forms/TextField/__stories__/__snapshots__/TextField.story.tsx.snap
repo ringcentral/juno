@@ -239,10 +239,6 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .{
-  display: none;
-}
-
 .c0 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -673,10 +669,6 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .{
-  display: none;
-}
-
 .c0 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -1040,10 +1032,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .{
-  display: none;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -1457,17 +1445,6 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .{
-  display: none;
-}
-
-.c0 .RcTextFieldInput-focused .{
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .c0 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -1600,12 +1577,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .{
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1877,17 +1849,6 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .{
-  display: none;
-}
-
-.c0 .RcTextFieldInput-focused .{
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .c0 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -2020,12 +1981,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .{
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2329,17 +2285,6 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .{
-  display: none;
-}
-
-.c0 .RcTextFieldInput-focused .{
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .c0 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -2472,12 +2417,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .{
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2749,17 +2689,6 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .{
-  display: none;
-}
-
-.c0 .RcTextFieldInput-focused .{
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .c0 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -2892,12 +2821,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .{
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3165,17 +3089,6 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .{
-  display: none;
-}
-
-.c0 .RcTextFieldInput-focused .{
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .c0 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -3312,12 +3225,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .{
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3552,17 +3460,6 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .{
-  display: none;
-}
-
-.c0 .RcTextFieldInput-focused .{
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .c0 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -3693,17 +3590,6 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
 
 .c6 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c6 .RcTextFieldInput-root .{
-  display: none;
-}
-
-.c6 .RcTextFieldInput-focused .{
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .c6 .RcTextFieldInput-input {
@@ -3840,17 +3726,6 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   color: #121212;
 }
 
-.c7 .RcTextFieldInput-root .{
-  display: none;
-}
-
-.c7 .RcTextFieldInput-focused .{
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .c7 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -3985,12 +3860,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .{
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -4000,12 +3870,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .{
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -4015,12 +3880,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .{
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -4039,7 +3899,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
       className="MuiFormControl-root MuiTextField-root RcTextField-root c0"
     >
       <label
-        className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+        className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
         data-shrink={true}
         htmlFor="id-TextFieldWithAlign-1"
         id="id-TextFieldWithAlign-1-label"
@@ -4102,7 +3962,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
         </button>
       </div>
       <p
-        className="MuiFormHelperText-root RcTextFieldFormHelperText-root MuiFormHelperText-filled"
+        className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
         id="id-TextFieldWithAlign-1-helper-text"
       >
         some helper text
@@ -4113,7 +3973,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
       className="MuiFormControl-root MuiTextField-root RcTextField-root c6"
     >
       <label
-        className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+        className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
         data-shrink={true}
         htmlFor="id-TextFieldWithAlign-1"
         id="id-TextFieldWithAlign-1-label"
@@ -4176,7 +4036,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
         </button>
       </div>
       <p
-        className="MuiFormHelperText-root RcTextFieldFormHelperText-root MuiFormHelperText-filled"
+        className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
         id="id-TextFieldWithAlign-1-helper-text"
       >
         some helper text
@@ -4187,7 +4047,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
       className="MuiFormControl-root MuiTextField-root RcTextField-root c7"
     >
       <label
-        className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+        className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
         data-shrink={true}
         htmlFor="id-TextFieldWithAlign-1"
         id="id-TextFieldWithAlign-1-label"
@@ -4250,7 +4110,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
         </button>
       </div>
       <p
-        className="MuiFormHelperText-root RcTextFieldFormHelperText-root MuiFormHelperText-filled"
+        className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
         id="id-TextFieldWithAlign-1-helper-text"
       >
         some helper text

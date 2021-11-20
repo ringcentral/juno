@@ -19,9 +19,10 @@ type RcSliderProps = {
 const _RcSlider = forwardRef<any, RcSliderProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcSlider' });
   const { classes: classesProp, color, children, ...rest } = props;
-  const classes = useMemo(() => combineClasses(RcSliderClasses, classesProp), [
-    classesProp,
-  ]);
+  const classes = useMemo(
+    () => combineClasses(RcSliderClasses, classesProp),
+    [classesProp],
+  );
 
   return (
     <MuiSlider {...rest} ref={ref} classes={classes}>
@@ -41,4 +42,5 @@ RcSlider.defaultProps = {
 
 RcSlider.displayName = 'RcSlider';
 
-export { RcSlider, RcSliderProps };
+export { RcSlider };
+export type { RcSliderProps };

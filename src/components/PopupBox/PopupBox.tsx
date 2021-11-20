@@ -177,4 +177,5 @@ const RcPopupBox = styled(_RcPopupBox)``;
 
 RcPopupBox.defaultProps = {};
 
-export { RcPopupBox, RcPopupBoxProps, RcDialogFuncProps };
+export { RcPopupBox };
+export type { RcPopupBoxProps, RcDialogFuncProps };

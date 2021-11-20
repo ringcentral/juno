@@ -64,4 +64,5 @@ RcCard.displayName = 'RcCard';
 
 RcCard.defaultProps = {};
 
-export { RcCard, RcCardProps };
+export { RcCard };
+export type { RcCardProps };

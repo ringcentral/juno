@@ -176,9 +176,8 @@ export const useDownshift = ({
   const stopAutoSelectRef = useRef(false);
   const fromPasteString = useRef('');
   const keepHighlightedIndexRef = useRef(false);
-  const changeHighlightedIndexReason = useRef<
-    RcDownshiftHighlightChangeReason
-  >();
+  const changeHighlightedIndexReason =
+    useRef<RcDownshiftHighlightChangeReason>();
 
   const readOnly =
     !isAutocomplete && !multiple && selectedItems.length >= 1
@@ -260,20 +259,17 @@ export const useDownshift = ({
     selectedItems,
   ]);
 
-  const {
-    groupedResult,
-    handleGroupExpandedChange,
-    optionsGroupList,
-  } = useDownshiftGroup({
-    groupBy,
-    options,
-    filteredResult,
-    getExpandIconProps,
-    groupExpanded,
-    onGroupExpanded,
-    groupVariant,
-    id: downshiftId,
-  });
+  const { groupedResult, handleGroupExpandedChange, optionsGroupList } =
+    useDownshiftGroup({
+      groupBy,
+      options,
+      filteredResult,
+      getExpandIconProps,
+      groupExpanded,
+      onGroupExpanded,
+      groupVariant,
+      id: downshiftId,
+    });
 
   const optionItems = groupBy ? groupedResult : filteredResult;
 
@@ -567,24 +563,22 @@ export const useDownshift = ({
     },
   });
 
-  const {
-    onKeyFocusedIndexHandle,
-    getNextFocusableOption,
-  } = useKeyboardMoveFocus({
-    options: optionItems,
-    focusedIndexRef: highlightedIndexRef,
-    infinite: true,
-    onFocusedIndexChange: (event, toIndex) => {
-      setHighlightedIndex(toIndex, { reason: 'keyboard', reRender: true });
+  const { onKeyFocusedIndexHandle, getNextFocusableOption } =
+    useKeyboardMoveFocus({
+      options: optionItems,
+      focusedIndexRef: highlightedIndexRef,
+      infinite: true,
+      onFocusedIndexChange: (event, toIndex) => {
+        setHighlightedIndex(toIndex, { reason: 'keyboard', reRender: true });
 
-      event?.preventDefault();
-    },
-    getOptionDisabled: disabledItemsHighlightable
-      ? undefined
-      : (child) => {
-          return !getIsItemCanSelected(child);
-        },
-  });
+        event?.preventDefault();
+      },
+      getOptionDisabled: disabledItemsHighlightable
+        ? undefined
+        : (child) => {
+            return !getIsItemCanSelected(child);
+          },
+    });
 
   const keepHighlightedIndex = () => {
     keepHighlightedIndexRef.current = true;

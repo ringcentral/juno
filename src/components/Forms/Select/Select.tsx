@@ -216,4 +216,5 @@ RcSelect.defaultProps = {
   variant: 'line',
 };
 
-export { RcSelect, RcSelectProps, RcSelectSize, RcSelectVariant };
+export { RcSelect };
+export type { RcSelectProps, RcSelectSize, RcSelectVariant };

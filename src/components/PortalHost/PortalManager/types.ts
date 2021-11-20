@@ -41,7 +41,7 @@ export type createPortalDescriptorProps<P extends {}, F, D extends {}> = {
 export interface PortalController<
   P extends {} = {},
   F = any,
-  D extends {} = {}
+  D extends {} = {},
 > {
   id: UniqID;
   /**

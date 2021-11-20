@@ -39,4 +39,5 @@ RcDialogContent.defaultProps = {};
 
 RcDialogContent.displayName = 'RcDialogContent';
 
-export { RcDialogContent, RcDialogContentProps };
+export { RcDialogContent };
+export type { RcDialogContentProps };

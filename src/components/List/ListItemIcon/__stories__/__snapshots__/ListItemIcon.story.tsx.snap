@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemIcon ListItemIcon 1`] = `
-.c4 {
+.c3 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -10,7 +10,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemIcon ListItemIcon 1`] 
   pointer-events: none;
 }
 
-.c3 {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -57,15 +57,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemIcon ListItemIcon 1`] 
   padding-bottom: 4px;
 }
 
-.c0 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c0 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -85,35 +76,20 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemIcon ListItemIcon 1`] 
   min-width: unset;
 }
 
-.c1 > .sc-ckTSus,
-.c1 > .sc-gGLxEB {
-  margin-right: 4px;
-}
-
-.c1 > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.c1 > .sc-fujyAs,
-.c1 > .c2 {
-  margin-right: 8px;
-}
-
-.c5 {
+.c4 {
   padding: 0;
   margin: 0 8px 0 0;
 }
 
-.c5.RcListItemText-multiline {
+.c4.RcListItemText-multiline {
   margin: 4px 8px 4px 0px;
 }
 
-.c5.RcListItemText-inset {
+.c4.RcListItemText-inset {
   padding-left: 56px;
 }
 
-.c5 .RcListItemText-primary {
+.c4 .RcListItemText-primary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -126,7 +102,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemIcon ListItemIcon 1`] 
   color: #121212;
 }
 
-.c5 .RcListItemText-secondary {
+.c4 .RcListItemText-secondary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -166,11 +142,11 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemIcon ListItemIcon 1`] 
     className="MuiListItemIcon-root c1"
   >
     <span
-      className="c2 c3 star icon"
+      className="c2 star icon"
       title="favorite"
     >
       <svg
-        className="c4"
+        className="c3"
         viewBox="0 0 32 32"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -182,7 +158,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemIcon ListItemIcon 1`] 
     </span>
   </div>
   <div
-    className="MuiListItemText-root c5"
+    className="MuiListItemText-root c4"
   >
     <span
       className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
@@ -190,5 +166,8 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemIcon ListItemIcon 1`] 
       Favorite Item
     </span>
   </div>
+  <span
+    className="MuiTouchRipple-root"
+  />
 </div>
 `;

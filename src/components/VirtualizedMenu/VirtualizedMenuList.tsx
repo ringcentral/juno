@@ -6,6 +6,7 @@ import React, {
   useMemo,
   useRef,
 } from 'react';
+
 import { isFragment } from 'react-is';
 
 import {
@@ -166,15 +167,12 @@ const _RcVirtualizedMenuList = forwardRef<any, RcVirtualizedMenuListProps>(
       },
     );
 
-    const {
-      totalListHeightChanged,
-      style,
-      containerHeighRef,
-    } = useDynamicHeight({
-      itemCount,
-      maxContainerHeight: maxHeight,
-      onContainerHeightChange,
-    });
+    const { totalListHeightChanged, style, containerHeighRef } =
+      useDynamicHeight({
+        itemCount,
+        maxContainerHeight: maxHeight,
+        onContainerHeightChange,
+      });
 
     const modifyScrollPosition = () => vlRef.current?.scrollBy({ top: -8 });
 
@@ -203,40 +201,38 @@ const _RcVirtualizedMenuList = forwardRef<any, RcVirtualizedMenuListProps>(
 
     const debounceFocusIndex = useDebounce(focusIndex, 20);
 
-    const {
-      onKeyFocusedIndexHandle,
-      getNextFocusableOption,
-    } = useKeyboardMoveFocus({
-      options: items,
-      focusedIndexRef,
-      infinite: !disableListWrap,
-      onFocusedIndexChange: (event, toIndex) => {
-        scrollToHighlightedIndex(focusedIndexRef.current, toIndex);
-        focusedIndexRef.current = toIndex;
+    const { onKeyFocusedIndexHandle, getNextFocusableOption } =
+      useKeyboardMoveFocus({
+        options: items,
+        focusedIndexRef,
+        infinite: !disableListWrap,
+        onFocusedIndexChange: (event, toIndex) => {
+          scrollToHighlightedIndex(focusedIndexRef.current, toIndex);
+          focusedIndexRef.current = toIndex;
 
-        // * fix that will focus at previous index
-        // * use debounce to prevent same time scrollToIndex and here trigger,
-        debounceFocusIndex(focusedIndexRef.current);
+          // * fix that will focus at previous index
+          // * use debounce to prevent same time scrollToIndex and here trigger,
+          debounceFocusIndex(focusedIndexRef.current);
 
-        event.preventDefault();
-      },
-      getOptionDisabled: (child) => {
-        return (
-          !disabledItemsFocusable &&
-          (child.props.disabled ||
-            child.props['aria-disabled'] ||
-            child.props['data-disabled-focus'] ||
-            // if that item is divider also not allow to select
-            isRcElement(child, ['RcDivider', 'RcVirtualizedDivider']))
-        );
-      },
-      // * only when any children have search-text field need search
-      getOptionSearchText: hasSearchText
-        ? (child) => {
-            return child.props['data-search-text'];
-          }
-        : undefined,
-    });
+          event.preventDefault();
+        },
+        getOptionDisabled: (child) => {
+          return (
+            !disabledItemsFocusable &&
+            (child.props.disabled ||
+              child.props['aria-disabled'] ||
+              child.props['data-disabled-focus'] ||
+              // if that item is divider also not allow to select
+              isRcElement(child, ['RcDivider', 'RcVirtualizedDivider']))
+          );
+        },
+        // * only when any children have search-text field need search
+        getOptionSearchText: hasSearchText
+          ? (child) => {
+              return child.props['data-search-text'];
+            }
+          : undefined,
+      });
     const hiddenRef = useRef<HTMLDivElement>(null);
 
     const events = useHiddenTabindex(hiddenRef);
@@ -405,8 +401,5 @@ RcVirtualizedMenuList.defaultProps = {};
 
 RcVirtualizedMenuList.displayName = 'RcVirtualizedMenuList';
 
-export {
-  RcVirtualizedMenuList,
-  RcVirtualizedMenuListProps,
-  RcVirtualizedMenuListRef,
-};
+export { RcVirtualizedMenuList };
+export type { RcVirtualizedMenuListProps, RcVirtualizedMenuListRef };

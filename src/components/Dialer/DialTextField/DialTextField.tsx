@@ -313,10 +313,10 @@ const _RcDialTextField = forwardRef<any, RcDialTextFieldProps>(
       ],
     );
 
-    const inputProps = useMemo(() => ({ ...inputPropsProp, maxLength }), [
-      inputPropsProp,
-      maxLength,
-    ]);
+    const inputProps = useMemo(
+      () => ({ ...inputPropsProp, maxLength }),
+      [inputPropsProp, maxLength],
+    );
 
     return (
       <RcTextField
@@ -349,4 +349,5 @@ RcDialTextField.defaultProps = {
 
 RcDialTextField.displayName = 'RcDialTextField';
 
-export { RcDialTextField, RcDialTextFieldProps };
+export { RcDialTextField };
+export type { RcDialTextFieldProps };

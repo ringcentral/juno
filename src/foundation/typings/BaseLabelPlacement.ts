@@ -6,5 +6,5 @@ type BaseLabelPlacement = {
 };
 
 export type RcBaseLabelPlacement<
-  T extends keyof BaseLabelPlacement = 'top' | 'start' | 'end' | 'bottom'
+  T extends keyof BaseLabelPlacement = 'top' | 'start' | 'end' | 'bottom',
 > = keyof Pick<BaseLabelPlacement, T>;

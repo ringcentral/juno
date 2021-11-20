@@ -51,4 +51,5 @@ RcToggleButtonGroup.defaultProps = {
 
 RcToggleButtonGroup.displayName = 'RcToggleButtonGroup';
 
-export { RcToggleButtonGroup, RcToggleButtonGroupProps };
+export { RcToggleButtonGroup };
+export type { RcToggleButtonGroupProps };

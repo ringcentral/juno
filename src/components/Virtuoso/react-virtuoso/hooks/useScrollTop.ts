@@ -51,7 +51,7 @@ export default function useScrollTop(
     const localRef = scrollerRef.current!;
 
     scrollerRefCallback(scrollerRef.current);
-    handler(({ target: localRef } as unknown) as Event);
+    handler({ target: localRef } as unknown as Event);
     localRef.addEventListener('scroll', handler, { passive: true });
 
     return () => {

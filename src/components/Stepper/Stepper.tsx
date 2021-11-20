@@ -1,5 +1,6 @@
-import MuiStepper from '@material-ui/core/Stepper';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiStepper from '@material-ui/core/Stepper';
 
 import {
   combineClasses,
@@ -46,4 +47,5 @@ RcStepper.defaultProps = {
 
 RcStepper.displayName = 'RcStepper';
 
-export { RcStepper, RcStepperProps };
+export { RcStepper };
+export type { RcStepperProps };

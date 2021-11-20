@@ -1,44 +1,53 @@
-/*
- * @Author: Valor Lin (valor.lin@ringcentral.com)
- * @Date: 2019-11-18 11:50:58
- * Copyright © RingCentral. All rights reserved.
- */
-import { mount } from 'enzyme';
 import React from 'react';
 
-import { withDelay } from '../withDelay';
+import { act, screen } from '@testing-library/react';
 
-jest.useFakeTimers();
+import { render, cleanup } from '../../../../../tests';
+import { withDelay } from '../withDelay';
 
 const DELAY = 1000;
 const TestComponent = () => <div>My Component</div>;
 const DelayedComponent = withDelay(TestComponent);
 
+beforeEach(() => {
+  jest.useFakeTimers();
+});
+
+afterEach(() => {
+  jest.useRealTimers();
+  cleanup();
+});
+
 describe('withDelay()', () => {
   describe('delay', () => {
     it(`should render component after ${DELAY}ms [JPT-4067]`, () => {
-      const wrapper = mount(<DelayedComponent delay={DELAY} />);
-      expect(wrapper.html()).toBeNull();
-      jest.advanceTimersByTime(DELAY);
-      wrapper.update();
-      expect(wrapper.html()).toBe('<div>My Component</div>');
+      render(<DelayedComponent delay={DELAY} />);
+
+      expect(screen.queryByText('My Component')).not.toBeInTheDocument();
+      act(() => {
+        jest.advanceTimersByTime(DELAY);
+      });
+      expect(screen.queryByText('My Component')).toBeInTheDocument();
     });
 
     it('should render component immediately', () => {
-      const wrapper = mount(<DelayedComponent />);
-      expect(wrapper.html()).toBe('<div>My Component</div>');
+      render(<DelayedComponent />);
+      expect(screen.queryByText('My Component')).toBeInTheDocument();
     });
   });
 
   describe('placeholder', () => {
     it('should render placeholder', () => {
-      const wrapper = mount(
+      render(
         <DelayedComponent delay={DELAY} placeholder={<div>Placeholder</div>} />,
       );
-      expect(wrapper.html()).toBe('<div>Placeholder</div>');
-      jest.advanceTimersByTime(DELAY);
-      wrapper.update();
-      expect(wrapper.html()).toBe('<div>My Component</div>');
+      expect(screen.queryByText('My Component')).not.toBeInTheDocument();
+      expect(screen.queryByText('Placeholder')).toBeInTheDocument();
+
+      act(() => {
+        jest.advanceTimersByTime(DELAY);
+      });
+      expect(screen.queryByText('My Component')).toBeInTheDocument();
     });
   });
 });

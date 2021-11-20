@@ -70,4 +70,5 @@ RcDialogActions.defaultProps = {};
 
 RcDialogActions.displayName = 'RcDialogActions';
 
-export { RcDialogActions, RcDialogActionsProps };
+export { RcDialogActions };
+export type { RcDialogActionsProps };

@@ -152,8 +152,10 @@ export const TypographyExample: Story<{}> = () => {
 TypographyExample.storyName = 'typography';
 
 const FakeBorder = styled(Block)`
-  ${// default will use `palette2('highContrast')`, that will only show in highContrast theme
-  fakeBorder()}
+  ${
+    // default will use `palette2('highContrast')`, that will only show in highContrast theme
+    fakeBorder()
+  }
 `;
 const FakeBorder2 = styled(Block)`
   ${fakeBorder({

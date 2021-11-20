@@ -1,5 +1,6 @@
-import MuiStepIcon from '@material-ui/core/StepIcon';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiStepIcon from '@material-ui/core/StepIcon';
 
 import {
   combineClasses,
@@ -65,4 +66,5 @@ RcStepIcon.defaultProps = {};
 
 RcStepIcon.displayName = 'RcStepIcon';
 
-export { RcStepIcon, RcStepIconProps };
+export { RcStepIcon };
+export type { RcStepIconProps };

@@ -42,4 +42,5 @@ RcListSubheader.defaultProps = {
 
 RcListSubheader.displayName = 'RcListSubheader';
 
-export { RcListSubheader, RcListSubheaderProps };
+export { RcListSubheader };
+export type { RcListSubheaderProps };

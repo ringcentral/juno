@@ -202,45 +202,44 @@ const SelectInput = forwardRef<any, SelectInputProps>((props, ref) => {
     }
   };
 
-  const handleItemClick = (child: React.ReactElement) => (
-    event: React.MouseEvent,
-  ) => {
-    let newValue: any[];
+  const handleItemClick =
+    (child: React.ReactElement) => (event: React.MouseEvent) => {
+      let newValue: any[];
 
-    if (multiple) {
-      newValue = Array.isArray(value) ? value.slice() : [];
-      const itemIndex = value.indexOf(child.props.value);
-      if (itemIndex === -1) {
-        newValue.push(child.props.value);
+      if (multiple) {
+        newValue = Array.isArray(value) ? value.slice() : [];
+        const itemIndex = value.indexOf(child.props.value);
+        if (itemIndex === -1) {
+          newValue.push(child.props.value);
+        } else {
+          newValue.splice(itemIndex, 1);
+        }
       } else {
-        newValue.splice(itemIndex, 1);
+        newValue = child.props.value;
       }
-    } else {
-      newValue = child.props.value;
-    }
 
-    if (child.props.onClick) {
-      child.props.onClick(event);
-    }
-
-    if (value !== newValue) {
-      setValueState(newValue);
-
-      if (onChange) {
-        event.persist();
-        // Preact support, target is read only property on a native event.
-        Object.defineProperty(event, 'target', {
-          writable: true,
-          value: { value: newValue, name },
-        });
-        onChange(event as any, child);
+      if (child.props.onClick) {
+        child.props.onClick(event);
       }
-    }
 
-    if (!multiple) {
-      update(false, event);
-    }
-  };
+      if (value !== newValue) {
+        setValueState(newValue);
+
+        if (onChange) {
+          event.persist();
+          // Preact support, target is read only property on a native event.
+          Object.defineProperty(event, 'target', {
+            writable: true,
+            value: { value: newValue, name },
+          });
+          onChange(event as any, child);
+        }
+      }
+
+      if (!multiple) {
+        update(false, event);
+      }
+    };
 
   const handleKeyDown = (event: any) => {
     if (!readOnly) {
@@ -370,10 +369,12 @@ const SelectInput = forwardRef<any, SelectInputProps>((props, ref) => {
               name ? `(name="${name}") ` : ''
             }component.`,
             "Consider providing a value that matches one of the available options or ''.",
-            `The available values are ${values
-              .filter((x) => x != null)
-              .map((x) => `\`${x}\``)
-              .join(', ') || '""'}.`,
+            `The available values are ${
+              values
+                .filter((x) => x != null)
+                .map((x) => `\`${x}\``)
+                .join(', ') || '""'
+            }.`,
           ].join('\n'),
         );
       }
@@ -499,4 +500,5 @@ SelectInput.defaultProps = {};
 
 SelectInput.displayName = 'SelectInput';
 
-export { SelectInput, SelectInputProps };
+export { SelectInput };
+export type { SelectInputProps };

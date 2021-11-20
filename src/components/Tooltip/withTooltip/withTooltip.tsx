@@ -30,4 +30,5 @@ function withTooltip<T extends object>(Component: ComponentType<T>) {
   });
 }
 
-export { withTooltip, WithTooltipProps };
+export { withTooltip };
+export type { WithTooltipProps };

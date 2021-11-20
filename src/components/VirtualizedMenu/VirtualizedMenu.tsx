@@ -1,5 +1,6 @@
-import clsx from 'clsx';
 import React, { forwardRef, useMemo, useRef } from 'react';
+
+import clsx from 'clsx';
 
 import {
   combineClasses,
@@ -149,4 +150,5 @@ RcVirtualizedMenu.defaultProps = {
   anchorOrigin: { vertical: 'bottom', horizontal: 'left' },
 };
 
-export { RcVirtualizedMenu, RcVirtualizedMenuProps };
+export { RcVirtualizedMenu };
+export type { RcVirtualizedMenuProps };

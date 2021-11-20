@@ -1,5 +1,6 @@
-import clsx from 'clsx';
 import React, { forwardRef, memo, ReactNode, RefObject } from 'react';
+
+import clsx from 'clsx';
 
 import { useEventCallback } from '../../../../foundation';
 import { StyledYear } from './styles';
@@ -24,15 +25,8 @@ type YearProps = {
 
 const Year = memo(
   forwardRef((props: YearProps, ref: RefObject<HTMLButtonElement>) => {
-    const {
-      onSelect,
-      value,
-      selected,
-      disabled,
-      focused,
-      children,
-      ...rest
-    } = props;
+    const { onSelect, value, selected, disabled, focused, children, ...rest } =
+      props;
     const { getYearAriaLabel } = useScreenReaderContext();
 
     const _handleClick = useEventCallback(() => onSelect(value));
@@ -73,4 +67,5 @@ const Year = memo(
 
 Year.displayName = 'RcYear';
 
-export { Year, YearProps };
+export { Year };
+export type { YearProps };

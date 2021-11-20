@@ -157,17 +157,6 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
-}
-
-.c0 .RcTextFieldInput-focused .sc-carFqZ {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .c0 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -309,12 +298,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carFqZ {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -637,17 +621,6 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
-}
-
-.c0 .RcTextFieldInput-focused .sc-carFqZ {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .c0 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -797,12 +770,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carFqZ {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1155,17 +1123,6 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
-}
-
-.c0 .RcTextFieldInput-focused .sc-carFqZ {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .c0 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -1319,12 +1276,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carFqZ {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1762,17 +1714,6 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
-}
-
-.c0 .RcTextFieldInput-focused .sc-carFqZ {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
 .c0 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -1930,12 +1871,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carFqZ {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2335,10 +2271,6 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
   color: #121212;
 }
 
-.c1 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
-}
-
 .c1 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -2465,17 +2397,6 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
 
 .c9 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c9 .RcTextFieldInput-root .sc-carFqZ {
-  display: none;
-}
-
-.c9 .RcTextFieldInput-focused .sc-carFqZ {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
 .c9 .RcTextFieldInput-input {
@@ -2668,12 +2589,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .sc-carFqZ {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {

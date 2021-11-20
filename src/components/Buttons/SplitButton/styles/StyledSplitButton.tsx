@@ -146,41 +146,41 @@ export const splitButtonStyle: RcThemedStyled<RcSplitButtonProps, any> = (
 
     &.${RcSplitButtonClasses.root} {
       ${!disabled &&
-        variantIs(['outlined', 'text', 'round']) &&
-        !loading &&
-        css<any>`
-          transition: ${transition};
+      variantIs(['outlined', 'text', 'round']) &&
+      !loading &&
+      css<any>`
+        transition: ${transition};
 
-          ${nonTouchHoverMedia} {
-            &:hover {
-              background: ${buttonHoverColor};
-            }
+        ${nonTouchHoverMedia} {
+          &:hover {
+            background: ${buttonHoverColor};
           }
-        `};
+        }
+      `};
 
       ${variantIs(['text', 'round', 'plainIcon']) &&
-        css`
-          align-items: center;
+      css`
+        align-items: center;
 
-          ${!disabled &&
-            !loading &&
-            css`
-              ${nonTouchHoverMedia} {
-                &:hover {
-                  .${RcSplitButtonClasses.controlButton} {
-                    border-left-color: ${activeColor24};
-                  }
-                }
+        ${!disabled &&
+        !loading &&
+        css`
+          ${nonTouchHoverMedia} {
+            &:hover {
+              .${RcSplitButtonClasses.controlButton} {
+                border-left-color: ${activeColor24};
               }
-            `}
-        `};
+            }
+          }
+        `}
+      `};
     }
 
     .${RcSplitButtonClasses.groupedHorizontal} {
       ${variantIs(['outlined', 'text', 'contained']) &&
-        css`
-          min-width: 72px;
-        `};
+      css`
+        min-width: 72px;
+      `};
 
       &.${RcSplitButtonClasses.controlButton} {
         padding: 0;
@@ -197,85 +197,87 @@ export const splitButtonStyle: RcThemedStyled<RcSplitButtonProps, any> = (
       }
 
       ${variantIs(['plain', 'plainIcon']) &&
-        css<any>`
-          &.${RcSplitButtonClasses.controlButton} {
-            border-top-left-radius: inherit;
-            border-bottom-left-radius: inherit;
-            box-shadow: none;
+      css<any>`
+        &.${RcSplitButtonClasses.controlButton} {
+          border-top-left-radius: inherit;
+          border-bottom-left-radius: inherit;
+          box-shadow: none;
 
-            transition: ${transition};
+          transition: ${transition};
 
-            ${!loading &&
-              css`
-                ${nonTouchHoverMedia} {
-                  &:hover {
-                    background: ${buttonHoverColor};
-                  }
-                }
+          ${!loading &&
+          css`
+            ${nonTouchHoverMedia} {
+              &:hover {
+                background: ${buttonHoverColor};
+              }
+            }
 
-                ${focusVisible} {
-                  background: ${buttonHoverColor};
-                }
-              `};
-          }
+            ${focusVisible} {
+              background: ${buttonHoverColor};
+            }
+          `};
+        }
 
-          &.${RcSplitButtonClasses.actionButton} {
-            border-top-right-radius: inherit;
-            border-bottom-right-radius: inherit;
-          }
-        `};
+        &.${RcSplitButtonClasses.actionButton} {
+          border-top-right-radius: inherit;
+          border-bottom-right-radius: inherit;
+        }
+      `};
     }
 
     ${variant === 'plainIcon' &&
-      css`
-        &.${RcSplitButtonClasses.root},
-          .${RcSplitButtonClasses.groupedHorizontal} {
-          border-radius: ${radius('circle')};
+    css`
+      &.${RcSplitButtonClasses.root},
+        .${RcSplitButtonClasses.groupedHorizontal} {
+        border-radius: ${radius('circle')};
 
-          ${RcButton} {
-            min-height: auto;
-          }
+        ${RcButton} {
+          min-height: auto;
         }
-      `};
+      }
+    `};
 
     ${variant === 'round' &&
-      css`
-        &.${RcSplitButtonClasses.root} {
-          border-radius: ${radius('round')};
-          overflow: hidden;
+    css`
+      &.${RcSplitButtonClasses.root} {
+        border-radius: ${radius('round')};
+        overflow: hidden;
 
-          ${RcButton} {
-            min-height: auto;
+        ${RcButton} {
+          min-height: auto;
+        }
+
+        .${RcSplitButtonTouchRippleClasses.child},
+          .${RcSplitButtonTouchRippleClasses.ripplePulsate} {
+          transform: scale(2);
+        }
+
+        .${
+            RcSplitButtonClasses.groupedHorizontal /** this safari issue, top level overflow is not work */
+          } {
+          &.${RcSplitButtonClasses.actionButton} {
+            border-top-left-radius: ${radius('round')};
+            border-bottom-left-radius: ${radius('round')};
           }
 
-          .${RcSplitButtonTouchRippleClasses.child},
-            .${RcSplitButtonTouchRippleClasses.ripplePulsate} {
-            transform: scale(2);
-          }
-
-          .${RcSplitButtonClasses.groupedHorizontal /** this safari issue, top level overflow is not work */} {
-            &.${RcSplitButtonClasses.actionButton} {
-              border-top-left-radius: ${radius('round')};
-              border-bottom-left-radius: ${radius('round')};
-            }
-
-            &.${RcSplitButtonClasses.controlButton} {
-              border-top-right-radius: ${radius('round')};
-              border-bottom-right-radius: ${radius('round')};
-            }
+          &.${RcSplitButtonClasses.controlButton} {
+            border-top-right-radius: ${radius('round')};
+            border-bottom-right-radius: ${radius('round')};
           }
         }
-      `};
+      }
+    `};
 
     ${variantIs(['round', 'plainIcon']) && iconButtonStyle};
 
     &.${RcSplitButtonClasses.menuOpen} {
       ${!variantIs(['plain', 'plainIcon']) &&
-        css`
-          .${RcSplitButtonClasses.actionButton} {
-            background: ${!isContainer && (buttonHoverColor as any)};
-          }
-        `};
+      css`
+        .${RcSplitButtonClasses.actionButton} {
+          background: ${!isContainer && (buttonHoverColor as any)};
+        }
+      `};
 
       .${RcSplitButtonClasses.controlButton} {
         background: ${isContainer ? containedActiveColor : activeColor24};

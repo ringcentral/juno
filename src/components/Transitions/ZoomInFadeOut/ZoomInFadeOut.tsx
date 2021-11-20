@@ -6,7 +6,6 @@ import {
   useTheme,
   useThemeProps,
 } from '../../../foundation';
-import { useNormalizedTransitionProps } from '../utils';
 import {
   duration,
   getTransitionProps,
@@ -16,6 +15,7 @@ import {
   TransitionProps,
   TransitionStatus,
 } from '../Transition';
+import { useNormalizedTransitionProps } from '../utils';
 
 const styles = {
   entering: {
@@ -133,4 +133,5 @@ RcZoomInFadeOut.defaultProps = {
 
 RcZoomInFadeOut.displayName = 'ZoomInFadeOut';
 
-export { RcZoomInFadeOut, RcZoomInFadeOutProps };
+export { RcZoomInFadeOut };
+export type { RcZoomInFadeOutProps };

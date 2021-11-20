@@ -1114,6 +1114,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
   </div>
   <div
@@ -1157,6 +1160,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
   </div>
   <div
@@ -1200,6 +1206,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
   </div>
   <div
@@ -1243,6 +1252,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
   </div>
   <div
@@ -1286,6 +1298,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
   </div>
   <div
@@ -1329,6 +1344,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
   </div>
   <div
@@ -1372,6 +1390,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
   </div>
   <div
@@ -1415,6 +1436,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
   </div>
 </div>

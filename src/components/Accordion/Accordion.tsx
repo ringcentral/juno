@@ -40,4 +40,5 @@ RcAccordion.defaultProps = {};
 
 RcAccordion.displayName = 'RcAccordion';
 
-export { RcAccordion, RcAccordionProps };
+export { RcAccordion };
+export type { RcAccordionProps };

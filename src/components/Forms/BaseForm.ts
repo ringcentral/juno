@@ -15,4 +15,4 @@ type RcBaseFormProps = {
   readonly?: boolean;
 };
 
-export { RcBaseFormProps };
+export type { RcBaseFormProps };

@@ -99,5 +99,8 @@ exports[`Storyshots 🔧 Foundation/Hooks/useThrottle useThrottle 1`] = `
   >
     Trigger event
   </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
 </button>
 `;

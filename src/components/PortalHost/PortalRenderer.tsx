@@ -42,4 +42,5 @@ const RcPortalRenderer: FunctionComponent<RcPortalRendererProps> = ({
 
 RcPortalRenderer.displayName = 'RcPortalRenderer';
 
-export { RcPortalRenderer, RcPortalRendererProps };
+export { RcPortalRenderer };
+export type { RcPortalRendererProps };

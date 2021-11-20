@@ -1,35 +1,41 @@
 import React from 'react';
 
-import { mountWithTheme } from '../../../../tests';
+import { screen } from '@testing-library/react';
+
+import { cleanup, render } from '../../../../tests';
 import { RcTableHeadCell } from '../TableHeadCell';
 import { TableHeadCellProps } from '../types';
+
+beforeEach(() => {});
+
+afterEach(cleanup);
+
+const title = 'Tell him about the twinkie, Egon.';
+
+const getProps = (props = {}) => ({ title, ...props });
+
+const renderComponent = (props: TableHeadCellProps) =>
+  render(
+    <table>
+      <thead>
+        <tr>
+          <RcTableHeadCell {...props} />
+        </tr>
+      </thead>
+    </table>,
+  );
 
 describe('TableHeadCell', () => {
   afterEach(() => {
     jest.clearAllMocks();
   });
 
-  const getProps = (props = {}) => ({
-    title: 'Tell him about the twinkie, Egon.',
-    ...props,
-  });
-  const renderComponent = (props: TableHeadCellProps) =>
-    mountWithTheme(
-      <table>
-        <thead>
-          <tr>
-            <RcTableHeadCell {...props} />
-          </tr>
-        </thead>
-      </table>,
-    );
-
   describe('renders', () => {
     test('when provided with only required props', () => {
       const props = getProps();
-      const wrapper = renderComponent(props);
+      renderComponent(props);
 
-      expect(wrapper.text()).toBe(props.title);
+      expect(screen.queryByText(title)).toBeInTheDocument();
     });
   });
 
@@ -39,9 +45,11 @@ describe('TableHeadCell', () => {
         const props = getProps({
           sortKey: undefined,
         });
-        const wrapper = renderComponent(props);
+        renderComponent(props);
 
-        expect(wrapper.find('th').getElement().props.tabIndex).toBeUndefined();
+        expect(
+          screen.queryByRole('columnheader')?.getAttribute('tabindex'),
+        ).toBeNull();
       });
     });
     describe('is set to a value of 0', () => {
@@ -49,17 +57,21 @@ describe('TableHeadCell', () => {
         const props = getProps({
           sortKey: 0,
         });
-        const wrapper = renderComponent(props);
+        renderComponent(props);
 
-        expect(wrapper.find('th').getElement().props.tabIndex).toBe(0);
+        expect(
+          screen.queryByRole('columnheader')?.getAttribute('tabindex'),
+        ).toBe('0');
       });
       test('when sortKey is a string', () => {
         const props = getProps({
           sortKey: 'thatsABigTwinkie',
         });
-        const wrapper = renderComponent(props);
+        renderComponent(props);
 
-        expect(wrapper.find('th').getElement().props.tabIndex).toBe(0);
+        expect(
+          screen.queryByRole('columnheader')?.getAttribute('tabindex'),
+        ).toBe('0');
       });
     });
   });

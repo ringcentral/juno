@@ -30,10 +30,5 @@ const ScreenReaderProvider: FunctionComponent<ScreenReaderProviderProps> = ({
   );
 };
 
-export {
-  ScreenReaderProps,
-  ScreenReaderContext,
-  ScreenReaderProviderProps,
-  ScreenReaderProvider,
-  useScreenReaderContext,
-};
+export { ScreenReaderContext, ScreenReaderProvider, useScreenReaderContext };
+export type { ScreenReaderProps, ScreenReaderProviderProps };

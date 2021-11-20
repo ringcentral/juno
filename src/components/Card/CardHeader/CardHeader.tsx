@@ -42,4 +42,5 @@ RcCardHeader.defaultProps = {};
 
 RcCardHeader.displayName = 'RcCardHeader';
 
-export { RcCardHeader, RcCardHeaderProps };
+export { RcCardHeader };
+export type { RcCardHeaderProps };

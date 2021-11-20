@@ -15,9 +15,10 @@ type RcListProps = {} & RcBaseProps<ComponentProps<typeof MuiList>>;
 const _RcList = forwardRef<any, RcListProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcList' });
   const { classes: classesProp, children, ...rest } = props;
-  const classes = useMemo(() => combineClasses(RcListClasses, classesProp), [
-    classesProp,
-  ]);
+  const classes = useMemo(
+    () => combineClasses(RcListClasses, classesProp),
+    [classesProp],
+  );
 
   return (
     <MuiList {...rest} ref={ref} classes={classes}>
@@ -36,4 +37,5 @@ RcList.defaultProps = {
 
 RcList.displayName = 'RcList';
 
-export { RcList, RcListProps };
+export { RcList };
+export type { RcListProps };

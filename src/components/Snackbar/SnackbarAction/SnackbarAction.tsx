@@ -53,9 +53,10 @@ const _RcSnackbarAction: FunctionComponent<RcSnackbarActionProps> = (
     [classNameProp, variant],
   );
 
-  const classes = useMemo(() => omit(classesProp, ['text', 'icon']), [
-    classesProp,
-  ]);
+  const classes = useMemo(
+    () => omit(classesProp, ['text', 'icon']),
+    [classesProp],
+  );
 
   return (
     <MuiButtonBase className={className} classes={classes} {...rest}>
@@ -82,4 +83,5 @@ RcSnackbarAction.defaultProps = {
   size: RcSnackbarContent.defaultProps!.size,
 };
 
-export { RcSnackbarAction, RcSnackbarActionProps };
+export { RcSnackbarAction };
+export type { RcSnackbarActionProps };

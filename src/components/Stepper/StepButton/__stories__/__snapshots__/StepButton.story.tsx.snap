@@ -148,6 +148,9 @@ exports[`Storyshots 🚀 Cleanup Components/Stepper/StepButton StepButton 1`] = 
           </h6>
         </span>
       </span>
+      <span
+        className="MuiTouchRipple-root MuiStepButton-touchRipple RcStepButton-touchRipple"
+      />
     </button>
   </div>
   <div
@@ -214,6 +217,9 @@ exports[`Storyshots 🚀 Cleanup Components/Stepper/StepButton StepButton 1`] = 
           </span>
         </span>
       </span>
+      <span
+        className="MuiTouchRipple-root MuiStepButton-touchRipple RcStepButton-touchRipple"
+      />
     </button>
   </div>
   <div
@@ -280,6 +286,9 @@ exports[`Storyshots 🚀 Cleanup Components/Stepper/StepButton StepButton 1`] = 
           </span>
         </span>
       </span>
+      <span
+        className="MuiTouchRipple-root MuiStepButton-touchRipple RcStepButton-touchRipple"
+      />
     </button>
   </div>
 </div>

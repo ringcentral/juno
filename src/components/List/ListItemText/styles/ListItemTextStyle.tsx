@@ -41,9 +41,9 @@ export const ListItemTextStyle: RcThemedStyled<RcListItemTextProps, any> = ({
 
   return css`
     ${alignCenter &&
-      css`
-        flex: 'none !important';
-      `}
+    css`
+      flex: 'none !important';
+    `}
 
     padding: 0;
     /** for next ListSecondaryAction default margin */

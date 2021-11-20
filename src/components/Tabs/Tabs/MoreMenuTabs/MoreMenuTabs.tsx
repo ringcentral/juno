@@ -172,10 +172,8 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
       };
     };
 
-    const {
-      tabRefs,
-      tabsTabDefaultChild,
-    } = getRefsMapAndSetDefaultTabChildren();
+    const { tabRefs, tabsTabDefaultChild } =
+      getRefsMapAndSetDefaultTabChildren();
 
     tabRefsMapRef.current = tabRefs;
     tabsTabChildRef.current = tabsTabDefaultChild;
@@ -271,10 +269,8 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
       });
       const limitSize = tabsSize[oriStr] - moreTabSizeRef.current[oriStr];
 
-      const {
-        plainArr: tabsTabLabel,
-        groupArr: menuTabLabel,
-      } = computeChildBySize(labelArray, currSelectMenuItem?.[0], limitSize);
+      const { plainArr: tabsTabLabel, groupArr: menuTabLabel } =
+        computeChildBySize(labelArray, currSelectMenuItem?.[0], limitSize);
 
       computeGroupingInfo(tabsTabLabel, menuTabLabel);
 
@@ -286,8 +282,8 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
         findChildrenByKey(childrenProp, key),
       );
 
-      tabsTabChildRef.current = (tabsTabChild as unknown) as React.ReactElement[];
-      setMenuTabChild((menuTabChild as unknown) as React.ReactElement[]);
+      tabsTabChildRef.current = tabsTabChild as unknown as React.ReactElement[];
+      setMenuTabChild(menuTabChild as unknown as React.ReactElement[]);
     };
 
     const computedStandardModeChild = (tabRefsMap: TabRefsMapType) => {
@@ -303,7 +299,7 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
         findChildrenByKey(childrenProp, key),
       );
 
-      tabsTabChildRef.current = (tabsTabChild as unknown) as React.ReactElement[];
+      tabsTabChildRef.current = tabsTabChild as unknown as React.ReactElement[];
       setMenuTabChild([]);
     };
 
@@ -392,9 +388,6 @@ const MoreMenuTabs = styled(_MoreMenuTabs)``;
 
 MoreMenuTabs.displayName = 'MoreMenuTabs';
 
-export {
-  MoreMenuTabs,
-  MoreMenuTabsProps,
-  MoreButtonProps,
-  RcTabsMoreMenuGroupInfoType,
-};
+export { MoreMenuTabs };
+
+export type { RcTabsMoreMenuGroupInfoType, MoreMenuTabsProps, MoreButtonProps };

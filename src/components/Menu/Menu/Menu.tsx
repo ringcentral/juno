@@ -16,11 +16,11 @@ import {
   useRcPortalWindowContext,
   useThemeProps,
 } from '../../../foundation';
-import {
+import type {
   RcMenuOnCloseReasonsType,
-  RcMenuContext,
   RcMenuContextType,
 } from './MenuContext';
+import { RcMenuContext } from './MenuContext';
 import { MenuStyle } from './styles';
 import { RcMenuClasses } from './utils';
 
@@ -44,9 +44,10 @@ const _RcMenu = forwardRef<any, RcMenuProps>((inProps: RcMenuProps, ref) => {
 
   const { externalWindow } = useRcPortalWindowContext();
 
-  const classes = useMemo(() => combineClasses(RcMenuClasses, classesProp), [
-    classesProp,
-  ]);
+  const classes = useMemo(
+    () => combineClasses(RcMenuClasses, classesProp),
+    [classesProp],
+  );
 
   const handleClose = useEventCallback(
     (event: {}, reason: RcMenuOnCloseReasonsType) => {
@@ -94,4 +95,6 @@ RcMenu.defaultProps = {
 
 RcMenu.displayName = 'RcMenu';
 
-export { RcMenu, RcMenuProps, RcMenuContext, RcMenuContextType };
+export { RcMenu, RcMenuContext };
+
+export type { RcMenuProps, RcMenuContextType };

@@ -60,4 +60,5 @@ RcTabList.defaultProps = {};
 
 RcTabList.displayName = 'RcTabList';
 
-export { RcTabList, RcTabListProps };
+export { RcTabList };
+export type { RcTabListProps };

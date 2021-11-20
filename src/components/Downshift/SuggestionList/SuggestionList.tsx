@@ -151,22 +151,19 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
     const classes = combineClasses(RcSuggestionListClasses, classesProp);
     const className = clsx(classNameProp, classes?.root);
 
-    const {
-      totalListHeightChanged,
-      style,
-      containerHeighRef,
-    } = useDynamicHeight({
-      itemCount,
-      maxContainerHeight,
-      onContainerHeightChange: (changeHeight) => {
-        const scroller = scrollerRef.current;
-        if (scroller?.style) {
-          scroller.style.height = `${changeHeight}px`;
+    const { totalListHeightChanged, style, containerHeighRef } =
+      useDynamicHeight({
+        itemCount,
+        maxContainerHeight,
+        onContainerHeightChange: (changeHeight) => {
+          const scroller = scrollerRef.current;
+          if (scroller?.style) {
+            scroller.style.height = `${changeHeight}px`;
 
-          onUpdatePopper?.();
-        }
-      },
-    });
+            onUpdatePopper?.();
+          }
+        },
+      });
 
     const { sleep } = useSleep();
 

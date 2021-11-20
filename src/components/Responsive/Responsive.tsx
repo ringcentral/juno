@@ -80,4 +80,5 @@ RcResponsive.defaultProps = {
 
 RcResponsive.displayName = 'RcResponsive';
 
-export { RcResponsive, RcResponsiveProps };
+export { RcResponsive };
+export type { RcResponsiveProps };

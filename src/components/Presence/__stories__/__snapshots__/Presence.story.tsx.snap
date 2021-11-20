@@ -25,17 +25,6 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   background: #939393;
 }
 
-.c0 .sc-eCApnc {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c0 .sc-eCApnc svg {
-  width: 10px;
-  height: 10px;
-}
-
 <div
   className="c0 "
 />
@@ -67,17 +56,6 @@ Array [
   background: #3C9949;
 }
 
-.c1 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c1 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -100,17 +78,6 @@ Array [
   height: 8px;
   border: 2px solid #FFFFFF;
   background: #3C9949;
-}
-
-.c2 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c2 .c8 svg {
-  width: 10px;
-  height: 10px;
 }
 
 .c3 {
@@ -137,11 +104,6 @@ Array [
   background: #3C9949;
 }
 
-.c3 .c8 svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -164,11 +126,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #3C9949;
-}
-
-.c4 .c8 svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c5 {
@@ -195,11 +152,6 @@ Array [
   background: #3C9949;
 }
 
-.c5 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -222,11 +174,6 @@ Array [
   height: 18px;
   border: 3px solid #FFFFFF;
   background: #3C9949;
-}
-
-.c6 .c8 svg {
-  width: 12px;
-  height: 12px;
 }
 
 .c0 {
@@ -1297,17 +1244,6 @@ Array [
   background: #E6413C;
 }
 
-.c1 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c1 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1330,17 +1266,6 @@ Array [
   height: 8px;
   border: 2px solid #FFFFFF;
   background: #E6413C;
-}
-
-.c2 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c2 .c8 svg {
-  width: 10px;
-  height: 10px;
 }
 
 .c3 {
@@ -1367,11 +1292,6 @@ Array [
   background: #E6413C;
 }
 
-.c3 .c8 svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1394,11 +1314,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #E6413C;
-}
-
-.c4 .c8 svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c5 {
@@ -1425,11 +1340,6 @@ Array [
   background: #E6413C;
 }
 
-.c5 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1452,11 +1362,6 @@ Array [
   height: 18px;
   border: 3px solid #FFFFFF;
   background: #E6413C;
-}
-
-.c6 .c8 svg {
-  width: 12px;
-  height: 12px;
 }
 
 .c0 {
@@ -1523,17 +1428,6 @@ Array [
   background: #E6413C;
 }
 
-.c1 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c1 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1556,17 +1450,6 @@ Array [
   height: 8px;
   border: 2px solid #FFFFFF;
   background: #E6413C;
-}
-
-.c2 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c2 .c8 svg {
-  width: 10px;
-  height: 10px;
 }
 
 .c3 {
@@ -1593,11 +1476,6 @@ Array [
   background: #E6413C;
 }
 
-.c3 .c8 svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1620,11 +1498,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #E6413C;
-}
-
-.c4 .c8 svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c5 {
@@ -1651,11 +1524,6 @@ Array [
   background: #E6413C;
 }
 
-.c5 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1678,11 +1546,6 @@ Array [
   height: 18px;
   border: 3px solid #FFFFFF;
   background: #E6413C;
-}
-
-.c6 .c8 svg {
-  width: 12px;
-  height: 12px;
 }
 
 .c0 {
@@ -1773,17 +1636,6 @@ Array [
   background: #E6413C;
 }
 
-.c1 .c12 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c1 .c12 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1806,17 +1658,6 @@ Array [
   height: 8px;
   border: 2px solid #FFFFFF;
   background: #E6413C;
-}
-
-.c3 .c12 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c3 .c12 svg {
-  width: 10px;
-  height: 10px;
 }
 
 .c5 {
@@ -1843,11 +1684,6 @@ Array [
   background: #E6413C;
 }
 
-.c5 .c12 svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1870,11 +1706,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #E6413C;
-}
-
-.c6 .c12 svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c7 {
@@ -1901,11 +1732,6 @@ Array [
   background: #E6413C;
 }
 
-.c7 .c12 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1928,11 +1754,6 @@ Array [
   height: 18px;
   border: 3px solid #FFFFFF;
   background: #E6413C;
-}
-
-.c9 .c12 svg {
-  width: 12px;
-  height: 12px;
 }
 
 .c0 {
@@ -2029,17 +1850,6 @@ Array [
   background: #E6413C;
 }
 
-.c1 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c1 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2062,17 +1872,6 @@ Array [
   height: 8px;
   border: 2px solid #FFFFFF;
   background: #E6413C;
-}
-
-.c2 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c2 .c8 svg {
-  width: 10px;
-  height: 10px;
 }
 
 .c3 {
@@ -2099,11 +1898,6 @@ Array [
   background: #E6413C;
 }
 
-.c3 .c8 svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2126,11 +1920,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #E6413C;
-}
-
-.c4 .c8 svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c5 {
@@ -2157,11 +1946,6 @@ Array [
   background: #E6413C;
 }
 
-.c5 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2184,11 +1968,6 @@ Array [
   height: 18px;
   border: 3px solid #FFFFFF;
   background: #E6413C;
-}
-
-.c6 .c8 svg {
-  width: 12px;
-  height: 12px;
 }
 
 .c0 {
@@ -2255,17 +2034,6 @@ Array [
   background: #939393;
 }
 
-.c1 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c1 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2288,17 +2056,6 @@ Array [
   height: 8px;
   border: 2px solid #FFFFFF;
   background: #939393;
-}
-
-.c2 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c2 .c8 svg {
-  width: 10px;
-  height: 10px;
 }
 
 .c3 {
@@ -2325,11 +2082,6 @@ Array [
   background: #939393;
 }
 
-.c3 .c8 svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2352,11 +2104,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #939393;
-}
-
-.c4 .c8 svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c5 {
@@ -2383,11 +2130,6 @@ Array [
   background: #939393;
 }
 
-.c5 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2410,11 +2152,6 @@ Array [
   height: 18px;
   border: 3px solid #FFFFFF;
   background: #939393;
-}
-
-.c6 .c8 svg {
-  width: 12px;
-  height: 12px;
 }
 
 .c0 {
@@ -2481,17 +2218,6 @@ Array [
   background: #939393;
 }
 
-.c1 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c1 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2514,17 +2240,6 @@ Array [
   height: 8px;
   border: 2px solid #FFFFFF;
   background: #939393;
-}
-
-.c2 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c2 .c8 svg {
-  width: 10px;
-  height: 10px;
 }
 
 .c3 {
@@ -2551,11 +2266,6 @@ Array [
   background: #939393;
 }
 
-.c3 .c8 svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2578,11 +2288,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #939393;
-}
-
-.c4 .c8 svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c5 {
@@ -2609,11 +2314,6 @@ Array [
   background: #939393;
 }
 
-.c5 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2636,11 +2336,6 @@ Array [
   height: 18px;
   border: 3px solid #FFFFFF;
   background: #939393;
-}
-
-.c6 .c8 svg {
-  width: 12px;
-  height: 12px;
 }
 
 .c0 {
@@ -2707,17 +2402,6 @@ Array [
   background: #939393;
 }
 
-.c1 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c1 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2740,17 +2424,6 @@ Array [
   height: 8px;
   border: 2px solid #FFFFFF;
   background: #939393;
-}
-
-.c2 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c2 .c8 svg {
-  width: 10px;
-  height: 10px;
 }
 
 .c3 {
@@ -2777,11 +2450,6 @@ Array [
   background: #939393;
 }
 
-.c3 .c8 svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2804,11 +2472,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #939393;
-}
-
-.c4 .c8 svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c5 {
@@ -2835,11 +2498,6 @@ Array [
   background: #939393;
 }
 
-.c5 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2862,11 +2520,6 @@ Array [
   height: 18px;
   border: 3px solid #FFFFFF;
   background: #939393;
-}
-
-.c6 .c8 svg {
-  width: 12px;
-  height: 12px;
 }
 
 .c0 {
@@ -2933,17 +2586,6 @@ Array [
   background: #066FAC;
 }
 
-.c1 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c1 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2966,17 +2608,6 @@ Array [
   height: 8px;
   border: 2px solid #FFFFFF;
   background: #066FAC;
-}
-
-.c2 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c2 .c8 svg {
-  width: 10px;
-  height: 10px;
 }
 
 .c3 {
@@ -3003,11 +2634,6 @@ Array [
   background: #066FAC;
 }
 
-.c3 .c8 svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3030,11 +2656,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: #066FAC;
-}
-
-.c4 .c8 svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c5 {
@@ -3061,11 +2682,6 @@ Array [
   background: #066FAC;
 }
 
-.c5 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3088,11 +2704,6 @@ Array [
   height: 18px;
   border: 3px solid #FFFFFF;
   background: #066FAC;
-}
-
-.c6 .c8 svg {
-  width: 12px;
-  height: 12px;
 }
 
 .c0 {
@@ -3159,17 +2770,6 @@ Array [
   background: yellow;
 }
 
-.c1 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c1 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3192,17 +2792,6 @@ Array [
   height: 8px;
   border: 2px solid #FFFFFF;
   background: yellow;
-}
-
-.c2 .c8 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c2 .c8 svg {
-  width: 10px;
-  height: 10px;
 }
 
 .c3 {
@@ -3229,11 +2818,6 @@ Array [
   background: yellow;
 }
 
-.c3 .c8 svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3256,11 +2840,6 @@ Array [
   height: 10px;
   border: 3px solid #FFFFFF;
   background: yellow;
-}
-
-.c4 .c8 svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c5 {
@@ -3287,11 +2866,6 @@ Array [
   background: yellow;
 }
 
-.c5 .c8 svg {
-  width: 10px;
-  height: 10px;
-}
-
 .c6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3314,11 +2888,6 @@ Array [
   height: 18px;
   border: 3px solid #FFFFFF;
   background: yellow;
-}
-
-.c6 .c8 svg {
-  width: 12px;
-  height: 12px;
 }
 
 .c0 {

@@ -18,4 +18,5 @@ const RcButtonGroup = styled(_RcButtonGroup)``;
 
 RcButtonGroup.defaultProps = {};
 
-export { RcButtonGroup, RcButtonGroupProps };
+export { RcButtonGroup };
+export type { RcButtonGroupProps };

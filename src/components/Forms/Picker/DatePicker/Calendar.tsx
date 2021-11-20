@@ -131,9 +131,8 @@ const Calendar = forwardRef<any, CalendarProps>(
     const [focusedDate, setFocusedDate] = useState(date);
     const [view, setView] = useState<ViewType>('day');
 
-    const [slideDirection, setSlideDirection] = useState<MuiSlideDirection>(
-      'left',
-    );
+    const [slideDirection, setSlideDirection] =
+      useState<MuiSlideDirection>('left');
 
     const [loadingQueue, setLoadingQueue] = useState(0);
 
@@ -244,10 +243,8 @@ const Calendar = forwardRef<any, CalendarProps>(
       });
     });
 
-    const {
-      getBackToTodayAriaLabel,
-      getDayAriaLabel,
-    } = useScreenReaderContext();
+    const { getBackToTodayAriaLabel, getDayAriaLabel } =
+      useScreenReaderContext();
 
     const backToTodayAriaLabel = getBackToTodayAriaLabel?.();
 
@@ -449,4 +446,5 @@ Calendar.defaultProps = {};
 
 Calendar.displayName = 'RcCalendar';
 
-export { Calendar, CalendarProps };
+export { Calendar };
+export type { CalendarProps };

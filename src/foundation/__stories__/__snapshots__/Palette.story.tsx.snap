@@ -156,10 +156,6 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   color: #121212;
 }
 
-.c1 .RcTextFieldInput-root .{
-  display: none;
-}
-
 .c1 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;

@@ -41,15 +41,6 @@ Array [
   padding-bottom: 4px;
 }
 
-.c0 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c0 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 .c1 {
   padding: 0;
   margin: 0 8px 0 0;
@@ -129,6 +120,9 @@ Array [
         ListItem Content
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </div>,
   @media (hover:hover) and (pointer:fine) {
 
@@ -180,15 +174,6 @@ Array [
 .c0.RcListItem-dense {
   padding-top: 4px;
   padding-bottom: 4px;
-}
-
-.c0 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c0 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
 }
 
 .c1 {
@@ -275,6 +260,9 @@ Array [
         Secondary content
       </p>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </div>,
   @media (hover:hover) and (pointer:fine) {
 
@@ -327,15 +315,6 @@ Array [
 .c0.RcListItem-dense {
   padding-top: 4px;
   padding-bottom: 4px;
-}
-
-.c0 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c0 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
 }
 
 .c1 {
@@ -422,6 +401,9 @@ Array [
         Secondary content
       </p>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </div>,
   @media (hover:hover) and (pointer:fine) {
 
@@ -474,15 +456,6 @@ Array [
 .c0.RcListItem-dense {
   padding-top: 4px;
   padding-bottom: 4px;
-}
-
-.c0 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c0 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
 }
 
 .c1 {
@@ -569,6 +542,9 @@ Array [
         Secondary content
       </p>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </div>,
 ]
 `;

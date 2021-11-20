@@ -26,9 +26,9 @@ export const TagStyle: RcThemedStyled<RcTagProps, any> = ({
     background-color: ${backgroundColor};
     color: ${getParsePaletteColor(textColor!)};
     ${borderColor &&
-      css`
-        border: 1px solid ${getParsePaletteColor(borderColor)};
-      `};
+    css`
+      border: 1px solid ${getParsePaletteColor(borderColor)};
+    `};
 
     border-radius: ${radius(radiusProp!)};
     text-align: center;

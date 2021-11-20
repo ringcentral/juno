@@ -36,11 +36,11 @@ import {
   StyledListItemSecondaryAction,
   SubMenuStyle,
 } from './styles';
-import {
-  RcSubMenuContext,
+import type {
   RcSubMenuContextType,
   RcSubMenuOnCloseReasonsType,
 } from './SubMenuContext';
+import { RcSubMenuContext } from './SubMenuContext';
 import { RcSubMenuClasses } from './utils';
 
 type RcSubMenuProps = {
@@ -376,4 +376,6 @@ RcSubMenu.defaultProps = {};
 
 RcSubMenu.displayName = 'RcSubMenu';
 
-export { RcSubMenu, RcSubMenuProps, RcSubMenuContext, RcSubMenuContextType };
+export { RcSubMenu, RcSubMenuContext };
+
+export type { RcSubMenuContextType, RcSubMenuProps };

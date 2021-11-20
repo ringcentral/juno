@@ -24,4 +24,5 @@ function withDelay<T extends object>(Component: ComponentType<T>) {
   } as ComponentType<T & WithDelay>;
 }
 
-export { withDelay, WithDelay };
+export { withDelay };
+export type { WithDelay };

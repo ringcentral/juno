@@ -154,15 +154,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
   padding-bottom: 4px;
 }
 
-.c0 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c0 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -181,16 +172,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 16px;
   color: #666666;
-}
-
-.c2 .sc-oeezt {
-  margin-right: -8px;
-}
-
-.c2 .sc-oeezt > .sc-ckTSus,
-.c2 .sc-oeezt > .sc-gGLxEB,
-.c2 .sc-oeezt > .sc-hhIiOg {
-  margin-right: 0;
 }
 
 .c2 > * + * {
@@ -527,7 +508,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
 `;
 
 exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] = `
-.c4 {
+.c3 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -536,7 +517,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
   pointer-events: none;
 }
 
-.c3 {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -544,7 +525,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
   font-size: 24px;
 }
 
-.c6 {
+.c5 {
   position: relative;
   margin: 0;
   border: 0;
@@ -596,15 +577,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
   padding-bottom: 4px;
 }
 
-.c0 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c0 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -624,35 +596,20 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
   min-width: unset;
 }
 
-.c1 > .sc-ckTSus,
-.c1 > .sc-gGLxEB {
-  margin-right: 4px;
-}
-
-.c1 > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.c1 > .sc-fujyAs,
-.c1 > .c2 {
-  margin-right: 8px;
-}
-
-.c5 {
+.c4 {
   padding: 0;
   margin: 0 8px 0 0;
 }
 
-.c5.RcListItemText-multiline {
+.c4.RcListItemText-multiline {
   margin: 4px 8px 4px 0px;
 }
 
-.c5.RcListItemText-inset {
+.c4.RcListItemText-inset {
   padding-left: 56px;
 }
 
-.c5 .RcListItemText-primary {
+.c4 .RcListItemText-primary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -665,7 +622,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
   color: #121212;
 }
 
-.c5 .RcListItemText-secondary {
+.c4 .RcListItemText-secondary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -708,10 +665,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
       className="MuiListItemIcon-root c1"
     >
       <span
-        className="c2 c3 inbox icon"
+        className="c2 inbox icon"
       >
         <svg
-          className="c4"
+          className="c3"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -723,7 +680,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
       </span>
     </div>
     <div
-      className="MuiListItemText-root c5"
+      className="MuiListItemText-root c4"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
@@ -731,6 +688,9 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
         Inbox
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </div>
   <div
     aria-disabled={false}
@@ -753,10 +713,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
       className="MuiListItemIcon-root c1"
     >
       <span
-        className="c2 c3 draft icon"
+        className="c2 draft icon"
       >
         <svg
-          className="c4"
+          className="c3"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -768,7 +728,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
       </span>
     </div>
     <div
-      className="MuiListItemText-root c5"
+      className="MuiListItemText-root c4"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
@@ -776,9 +736,12 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
         Drafts
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </div>
   <hr
-    className="c6"
+    className="c5"
     role="separator"
   />
   <div
@@ -799,7 +762,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
     tabIndex={0}
   >
     <div
-      className="MuiListItemText-root c5"
+      className="MuiListItemText-root c4"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
@@ -807,6 +770,9 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
         Trash
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </div>
   <div
     aria-disabled={false}
@@ -826,7 +792,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
     tabIndex={0}
   >
     <div
-      className="MuiListItemText-root c5"
+      className="MuiListItemText-root c4"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
@@ -834,6 +800,9 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
         Spam
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </div>
 </ul>
 `;

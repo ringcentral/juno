@@ -68,8 +68,8 @@ RcDraggable.defaultProps = {};
 
 RcDraggable.displayName = 'RcDraggable';
 
-export {
-  RcDraggable,
+export { RcDraggable };
+export type {
   RcDraggableProps,
   RcDraggableProvided,
   RcDraggableStateSnapshot,

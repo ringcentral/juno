@@ -47,4 +47,5 @@ RcCircularProgress.defaultProps = {
 
 RcCircularProgress.displayName = 'RcCircularProgress';
 
-export { RcCircularProgress, RcCircularProgressProps };
+export { RcCircularProgress };
+export type { RcCircularProgressProps };

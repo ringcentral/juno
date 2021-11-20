@@ -184,10 +184,6 @@ Array [
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-root .{
-  display: none;
-}
-
 .c0 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
@@ -580,10 +576,6 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .{
-  display: none;
 }
 
 .c0 .RcTextFieldInput-input {

@@ -44,4 +44,5 @@ RcDivider.defaultProps = {
   size: 'default',
 };
 
-export { RcDivider, RcDividerProps };
+export { RcDivider };
+export type { RcDividerProps };

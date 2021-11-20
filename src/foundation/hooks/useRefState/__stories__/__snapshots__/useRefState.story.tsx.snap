@@ -100,6 +100,9 @@ Array [
     >
       add (re-render)
     </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </button>,
   .c0 {
   text-transform: none;
@@ -199,6 +202,9 @@ Array [
     >
       add (non-render)
     </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </button>,
   .c0 {
   font-size: 1.5rem;

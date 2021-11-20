@@ -21,7 +21,5 @@ export const hasValue: (value: any) => boolean = MuiHasValue;
  * @returns {boolean} False when not present or empty string.
                     True when any number or string with length.
  */
-export const isFilled: (
-  obj: { value: any },
-  SSR?: boolean,
-) => boolean = MuiIsFilled;
+export const isFilled: (obj: { value: any }, SSR?: boolean) => boolean =
+  MuiIsFilled;

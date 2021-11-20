@@ -65,9 +65,10 @@ const _RcBadge = forwardRef<any, RcBadgeProps>((inProps: RcBadgeProps, ref) => {
     ...rest
   } = props;
 
-  const classes = useMemo(() => combineProps(RcBadgeClasses, classesProp), [
-    classesProp,
-  ]);
+  const classes = useMemo(
+    () => combineProps(RcBadgeClasses, classesProp),
+    [classesProp],
+  );
 
   const CustomDotBadge = useMemo(() => {
     const isDot = variant === 'dot';
@@ -132,4 +133,5 @@ RcBadge.defaultProps = {
 
 RcBadge.displayName = 'RcBadge';
 
-export { RcBadge, RcBadgeProps };
+export { RcBadge };
+export type { RcBadgeProps };

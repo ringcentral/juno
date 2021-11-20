@@ -37,4 +37,5 @@ RcCardContent.defaultProps = {};
 
 RcCardContent.displayName = 'RcCardContent';
 
-export { RcCardContent, RcCardContentProps };
+export { RcCardContent };
+export type { RcCardContentProps };

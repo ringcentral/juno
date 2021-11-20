@@ -19,13 +19,13 @@ export const TextareaStyle: RcThemedStyled<RcTextareaProps, any> = ({
       background: ${palette2('neutral', 'b03')};
       ${fakeBorder()};
       ${!disabled &&
-        css`
-          ${nonTouchHoverMedia} {
-            &:hover {
-              background: transparent;
-            }
+      css`
+        ${nonTouchHoverMedia} {
+          &:hover {
+            background: transparent;
           }
-        `};
+        }
+      `};
     }
 
     .${RcTextareaInputClasses.root} {

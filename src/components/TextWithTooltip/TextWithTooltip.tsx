@@ -34,12 +34,8 @@ const RcTextWithTooltip = (props: {
   const onMouseOver = () => {
     const span = ref.current;
     if (span && span.parentElement) {
-      const {
-        scrollHeight,
-        scrollWidth,
-        clientHeight,
-        clientWidth,
-      } = span.parentElement;
+      const { scrollHeight, scrollWidth, clientHeight, clientWidth } =
+        span.parentElement;
       setShowTooltip(scrollWidth > clientWidth || scrollHeight > clientHeight);
     }
   };

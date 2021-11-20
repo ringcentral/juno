@@ -307,6 +307,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
               checked={true}
               className="PrivateSwitchBase-input-187"
               disabled={false}
+              name="mui-10000"
               onChange={[Function]}
               type="radio"
               value="radio1"
@@ -336,6 +337,9 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
               </svg>
             </div>
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </span>
         <span
           className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
@@ -369,6 +373,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
               checked={false}
               className="PrivateSwitchBase-input-187"
               disabled={false}
+              name="mui-10000"
               onChange={[Function]}
               type="radio"
               value="radio2"
@@ -398,6 +403,9 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
               </svg>
             </div>
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </span>
         <span
           className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
@@ -431,6 +439,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
               checked={false}
               className="PrivateSwitchBase-input-187"
               disabled={true}
+              name="mui-10000"
               onChange={[Function]}
               type="radio"
               value="radio3"

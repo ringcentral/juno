@@ -1,10 +1,11 @@
+import React, { forwardRef } from 'react';
+
 import MuiFormGroup, {
   FormGroupProps as MuiFormGroupProps,
 } from '@material-ui/core/FormGroup';
 
-import styled from '../../../foundation/styled-components';
-import React, { forwardRef } from 'react';
 import { useThemeProps } from '../../../foundation';
+import styled from '../../../foundation/styled-components';
 
 type RcFormGroupProps = MuiFormGroupProps;
 
@@ -19,4 +20,5 @@ const RcFormGroup = styled(_RcFormGroup)``;
 
 RcFormGroup.displayName = 'RcFormGroup';
 
-export { RcFormGroup, RcFormGroupProps };
+export { RcFormGroup };
+export type { RcFormGroupProps };

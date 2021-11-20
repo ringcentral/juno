@@ -39,4 +39,5 @@ RcListItemIcon.defaultProps = {};
 
 RcListItemIcon.displayName = 'RcListItemIcon';
 
-export { RcListItemIcon, RcListItemIconProps };
+export { RcListItemIcon };
+export type { RcListItemIconProps };

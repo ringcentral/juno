@@ -1,13 +1,15 @@
+import React, { ComponentProps, ElementType, forwardRef, useMemo } from 'react';
+
+import clsx from 'clsx';
+
 import MuiTableCell from '@material-ui/core/TableCell';
 import MuiTablePagination from '@material-ui/core/TablePagination';
-import clsx from 'clsx';
-import React, { ComponentProps, ElementType, forwardRef, useMemo } from 'react';
 
 import {
   combineClasses,
   RcBaseProps,
-  useThemeProps,
   styled,
+  useThemeProps,
 } from '../../foundation';
 import { RcSelect, RcSelectProps } from '../Forms/Select';
 import { RcToolbar } from '../Toolbar';
@@ -241,4 +243,5 @@ const RcTablePagination = styled(_RcTablePagination)`
 
 RcTablePagination.displayName = 'RcTablePagination';
 
-export { RcTablePagination, RcTablePaginationProps };
+export { RcTablePagination };
+export type { RcTablePaginationProps };

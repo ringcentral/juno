@@ -32,4 +32,5 @@ RcAppBar.defaultProps = {
   elevation: 0,
 };
 
-export { RcAppBar, RcAppBarProps };
+export { RcAppBar };
+export type { RcAppBarProps };

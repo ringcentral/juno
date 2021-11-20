@@ -11,6 +11,5 @@ type BaseColor = {
   neutral: any;
 };
 
-export type RcBaseColor<
-  T extends keyof BaseColor = 'primary' | 'secondary'
-> = keyof Pick<BaseColor, T>;
+export type RcBaseColor<T extends keyof BaseColor = 'primary' | 'secondary'> =
+  keyof Pick<BaseColor, T>;

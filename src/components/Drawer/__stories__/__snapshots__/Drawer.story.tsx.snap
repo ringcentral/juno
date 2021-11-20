@@ -99,6 +99,9 @@ exports[`Storyshots 🚀 Cleanup Components/Drawer Drawer 1`] = `
   >
     open
   </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
 </button>
 `;
 
@@ -806,6 +809,9 @@ exports[`Storyshots 🚀 Cleanup Components/Drawer Drawer With Inline Paper 1`] 
   >
     open
   </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
 </button>
 `;
 
@@ -913,6 +919,9 @@ Array [
     >
       open Drawer 0
     </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </button>,
   .c0 {
   color: #121212;

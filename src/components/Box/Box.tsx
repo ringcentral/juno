@@ -1,5 +1,6 @@
-import MuiBox, { BoxProps as MuiBoxProps } from '@material-ui/core/Box';
 import React, { forwardRef } from 'react';
+
+import MuiBox, { BoxProps as MuiBoxProps } from '@material-ui/core/Box';
 
 import { RcBaseProps, RcPaletteKeys, useThemeProps } from '../../foundation';
 
@@ -21,4 +22,5 @@ const RcBox = forwardRef<any, RcBoxProps>((inProps, ref) => {
   return <MuiBox {...addProps} {...props} />;
 });
 
-export { RcBox, RcBoxProps };
+export { RcBox };
+export type { RcBoxProps };

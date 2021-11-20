@@ -250,18 +250,17 @@ export const checkHighlightItem = (args: any, context: InitContext) => {
   }
 };
 
-export const keydownKey = (key?: string) => (
-  args: { arrowDirection: string },
-  context: InitContext,
-) => {
-  if (document.activeElement) {
-    fireEvent.keyDown(document.activeElement, {
-      key: key || args.arrowDirection,
-    });
-  } else {
-    throw new Error('not find activeElement to keydown');
-  }
-};
+export const keydownKey =
+  (key?: string) =>
+  (args: { arrowDirection: string }, context: InitContext) => {
+    if (document.activeElement) {
+      fireEvent.keyDown(document.activeElement, {
+        key: key || args.arrowDirection,
+      });
+    } else {
+      throw new Error('not find activeElement to keydown');
+    }
+  };
 
 export const checkStopPropagation = (
   args: {

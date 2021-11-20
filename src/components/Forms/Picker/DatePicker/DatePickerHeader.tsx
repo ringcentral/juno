@@ -74,10 +74,8 @@ const DatePickerHeader: FunctionComponent<DatePickerHeaderProps> = memo(
 
     const ariaExpanded = view === 'year';
 
-    const {
-      getMonthYearAriaLabel,
-      getSwitchMonthAriaLabel,
-    } = useScreenReaderContext();
+    const { getMonthYearAriaLabel, getSwitchMonthAriaLabel } =
+      useScreenReaderContext();
 
     const monthYearAriaLabel = getMonthYearAriaLabel?.(
       `${monthLabel}`,
@@ -154,4 +152,5 @@ DatePickerHeader.defaultProps = {
 
 DatePickerHeader.displayName = 'RcDatePickerHeader';
 
-export { DatePickerHeader, DatePickerHeaderProps, ViewType };
+export { DatePickerHeader };
+export type { DatePickerHeaderProps, ViewType };

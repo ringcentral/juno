@@ -1,5 +1,6 @@
-import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 
 import {
   combineClasses,
@@ -48,9 +49,7 @@ const _RcAccordionSummary = forwardRef<any, RcAccordionSummaryProps>(
             tabIndex={-1}
             {...IconButtonProps}
           />
-        ) : (
-          undefined
-        ),
+        ) : undefined,
       [IconButtonProps, expandIconProp],
     );
 
@@ -79,4 +78,6 @@ RcAccordionSummary.defaultProps = {
 
 RcAccordionSummary.displayName = 'RcAccordionSummary';
 
-export { RcAccordionSummary, RcAccordionSummaryProps };
+export { RcAccordionSummary };
+
+export type { RcAccordionSummaryProps };

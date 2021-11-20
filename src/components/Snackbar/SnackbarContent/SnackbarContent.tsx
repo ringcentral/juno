@@ -132,8 +132,8 @@ RcSnackbarContent.defaultProps = {
 
 RcSnackbarContent.displayName = 'RcSnackbarContent';
 
-export {
-  RcSnackbarContent,
+export { RcSnackbarContent };
+export type {
   RcSnackbarContentProps,
   RcSnackbarContentSize,
   RcSnackbarContentType,

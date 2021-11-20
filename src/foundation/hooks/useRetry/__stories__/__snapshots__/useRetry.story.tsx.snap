@@ -482,6 +482,9 @@ Array [
     >
       Go
     </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </button>,
   .c0 {
   text-transform: none;

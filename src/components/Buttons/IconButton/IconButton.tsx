@@ -229,9 +229,5 @@ RcIconButton.defaultProps = {
   useRcTooltip: true,
 };
 
-export {
-  RcIconButton,
-  RcIconButtonProps,
-  RcIconButtonSize,
-  RcIconButtonVariant,
-};
+export { RcIconButton };
+export type { RcIconButtonProps, RcIconButtonSize, RcIconButtonVariant };

@@ -84,4 +84,5 @@ const RcLoading: FunctionComponent<RcLoadingProps> = (inProps) => {
   );
 };
 
-export { RcLoading, RcLoadingProps };
+export { RcLoading };
+export type { RcLoadingProps };

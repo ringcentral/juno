@@ -272,4 +272,5 @@ const NumberPicker = styled(memo(_NumberPicker))``;
 
 NumberPicker.displayName = 'NumberPicker';
 
-export { NumberPicker, NumberPickerProps, NumberPickerRef };
+export { NumberPicker };
+export type { NumberPickerProps, NumberPickerRef };

@@ -31,7 +31,7 @@ export const DividerStyle: RcThemedStyled<RcDividerProps, any> = ({
     background-color: ${getParsePaletteColor(color, null, false)};
 
     ${!(vertical || !title) &&
-      css`
+    css`
       &::after {
         content: '${title}';
         ${typography('caption1')};

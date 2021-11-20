@@ -1,5 +1,7 @@
-import MuiSlide, { SlideProps as MuiSlideProps } from '@material-ui/core/Slide';
 import React, { forwardRef } from 'react';
+
+import MuiSlide, { SlideProps as MuiSlideProps } from '@material-ui/core/Slide';
+
 import { useThemeProps } from '../../../foundation';
 
 type RcSlideProps = MuiSlideProps;
@@ -12,4 +14,5 @@ const _RcSlide = forwardRef<any, RcSlideProps>((inProps, ref) => {
 
 const RcSlide = _RcSlide;
 
-export { RcSlide, RcSlideProps };
+export { RcSlide };
+export type { RcSlideProps };

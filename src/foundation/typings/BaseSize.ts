@@ -13,6 +13,5 @@ type BaseSizes = {
 
 export type BaseSizeKey = keyof BaseSizes;
 
-export type RcBaseSize<
-  T extends BaseSizeKey = 'small' | 'medium' | 'large'
-> = keyof Pick<BaseSizes, T>;
+export type RcBaseSize<T extends BaseSizeKey = 'small' | 'medium' | 'large'> =
+  keyof Pick<BaseSizes, T>;

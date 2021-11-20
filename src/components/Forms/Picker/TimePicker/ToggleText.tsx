@@ -134,4 +134,5 @@ const ToggleText = styled(_ToggleText)`
 
 ToggleText.displayName = 'ToggleText';
 
-export { ToggleText, ToggleTextProps, ToggleTextRef };
+export { ToggleText };
+export type { ToggleTextProps, ToggleTextRef };

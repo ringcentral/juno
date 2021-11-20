@@ -25,4 +25,5 @@ RcDragDropContext.defaultProps = {};
 
 RcDragDropContext.displayName = 'RcDragDropContext';
 
-export { RcDragDropContext, RcDragDropContextProps };
+export { RcDragDropContext };
+export type { RcDragDropContextProps };

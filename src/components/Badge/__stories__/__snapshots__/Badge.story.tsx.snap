@@ -376,6 +376,9 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
         >
           right bottom
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
       <span
         className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightRectangular"
@@ -410,6 +413,9 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
         >
           right bottom
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
       <span
         className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginBottomRightRectangular"
@@ -444,6 +450,9 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
         >
           left top
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
       <span
         className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopLeftRectangular"
@@ -478,6 +487,9 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
         >
           left bottom
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
       <span
         className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginBottomLeftRectangular"

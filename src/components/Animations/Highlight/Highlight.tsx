@@ -145,4 +145,5 @@ RcHighlight.defaultProps = {};
 
 RcHighlight.displayName = 'RcHighlight';
 
-export { RcHighlight, RcHighlightProps };
+export { RcHighlight };
+export type { RcHighlightProps };

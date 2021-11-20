@@ -8,9 +8,10 @@ import {
   useThemeProps,
 } from '../../../foundation';
 import { RcTabProps } from '../Tab';
-import {
+import { MoreMenuTabs } from './MoreMenuTabs';
+
+import type {
   MoreButtonProps,
-  MoreMenuTabs,
   RcTabsMoreMenuGroupInfoType,
 } from './MoreMenuTabs';
 import { TabsStyle } from './styles';
@@ -62,9 +63,10 @@ const _RcTabs = forwardRef<any, RcTabsProps>((inProps: RcTabsProps, ref) => {
 
   const isMore = variantProp === 'moreMenu';
 
-  const classes = useMemo(() => combineProps(RcTabsClasses, classesProp), [
-    classesProp,
-  ]);
+  const classes = useMemo(
+    () => combineProps(RcTabsClasses, classesProp),
+    [classesProp],
+  );
 
   const children = React.Children.map(
     childrenProp,
@@ -111,4 +113,5 @@ RcTabs.defaultProps = {
 
 RcTabs.displayName = 'RcTabs';
 
-export { RcTabs, RcTabsProps, RcTabsMoreMenuGroupInfoType };
+export { RcTabs };
+export type { RcTabsProps, RcTabsMoreMenuGroupInfoType };

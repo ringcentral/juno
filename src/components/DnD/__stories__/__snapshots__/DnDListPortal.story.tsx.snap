@@ -40,15 +40,6 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list/Multi
   padding-bottom: 4px;
 }
 
-.c2 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c2 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 .c1 {
   height: 36px;
   padding-top: 12px;

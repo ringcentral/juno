@@ -33,4 +33,5 @@ RcCardActions.defaultProps = {};
 
 RcCardActions.displayName = 'RcCardActions';
 
-export { RcCardActions, RcCardActionsProps };
+export { RcCardActions };
+export type { RcCardActionsProps };

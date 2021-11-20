@@ -2,14 +2,13 @@ import { useTheme } from '@material-ui/core/styles';
 /* eslint-disable import/no-duplicates */
 import * as styledComponents from 'styled-components';
 
-import {
+import type {
   ThemedStyledComponentsModule,
   ThemeProps as StyledThemeProps,
   InterpolationValue,
   Keyframes,
   Interpolation,
   FlattenInterpolation,
-  StyleSheetManager,
   ThemedStyledProps,
 } from 'styled-components';
 
@@ -23,9 +22,11 @@ const {
   keyframes,
   createGlobalStyle,
   withTheme,
+  // @ts-ignore
+  StyleSheetManager,
   ThemeProvider,
   ThemeConsumer,
-} = (styledComponents as any) as ThemedStyledComponentsModule<RcTheme>;
+} = styledComponents as any as ThemedStyledComponentsModule<RcTheme>;
 
 type Dependencies = {
   dependencies?: (React.ComponentType | ((props: any) => JSX.Element))[];
@@ -39,16 +40,19 @@ export {
   keyframes,
   ThemeProvider,
   withTheme,
+  RcUseTheme as useTheme,
   ThemeConsumer,
+  StyleSheetManager,
+};
+
+export type {
   ThemeProps,
   Dependencies,
   InterpolationValue,
   Keyframes,
   FlattenInterpolation,
   Interpolation,
-  RcUseTheme as useTheme,
   ThemedStyledProps,
-  StyleSheetManager,
 };
 
 export default styled;

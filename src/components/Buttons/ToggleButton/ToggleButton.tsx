@@ -89,4 +89,5 @@ RcToggleButton.defaultProps = {
 
 RcToggleButton.displayName = 'RcToggleButton';
 
-export { RcToggleButton, RcToggleButtonProps, RcToggleButtonVariant };
+export { RcToggleButton };
+export type { RcToggleButtonProps, RcToggleButtonVariant };

@@ -53,11 +53,11 @@ Array [
           role="tablist"
         >
           <button
-            aria-controls={null}
+            aria-controls="mui-p-10000-P-tab-0"
             aria-selected={true}
             className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1 Mui-selected RcTab-selected"
             disabled={false}
-            id={null}
+            id="mui-p-10000-T-tab-0"
             onBlur={[Function]}
             onClick={[Function]}
             onDragLeave={[Function]}
@@ -81,16 +81,15 @@ Array [
               Tab 0
             </span>
             <span
-              className="PrivateTabIndicator-root-278 PrivateTabIndicator-colorPrimary-279 MuiTabs-indicator RcTabs-indicator"
-              style={Object {}}
+              className="MuiTouchRipple-root"
             />
           </button>
           <button
-            aria-controls={null}
+            aria-controls="mui-p-10000-P-tab-1"
             aria-selected={false}
             className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1"
             disabled={false}
-            id={null}
+            id="mui-p-10000-T-tab-1"
             onBlur={[Function]}
             onClick={[Function]}
             onDragLeave={[Function]}
@@ -113,13 +112,16 @@ Array [
             >
               Tab 1
             </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
           </button>
           <button
-            aria-controls={null}
+            aria-controls="mui-p-10000-P-tab-2"
             aria-selected={false}
             className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1"
             disabled={false}
-            id={null}
+            id="mui-p-10000-T-tab-2"
             onBlur={[Function]}
             onClick={[Function]}
             onDragLeave={[Function]}
@@ -142,13 +144,16 @@ Array [
             >
               Tab 2
             </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
           </button>
           <button
-            aria-controls={null}
+            aria-controls="mui-p-10000-P-tab-3"
             aria-selected={false}
             className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1"
             disabled={false}
-            id={null}
+            id="mui-p-10000-T-tab-3"
             onBlur={[Function]}
             onClick={[Function]}
             onDragLeave={[Function]}
@@ -171,13 +176,16 @@ Array [
             >
               Tab 3
             </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
           </button>
           <button
-            aria-controls={null}
+            aria-controls="mui-p-10000-P-tab-4"
             aria-selected={false}
             className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1"
             disabled={false}
-            id={null}
+            id="mui-p-10000-T-tab-4"
             onBlur={[Function]}
             onClick={[Function]}
             onDragLeave={[Function]}
@@ -200,13 +208,16 @@ Array [
             >
               Tab 4
             </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
           </button>
           <button
-            aria-controls={null}
+            aria-controls="mui-p-10000-P-tab-5"
             aria-selected={false}
             className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1 Mui-disabled Mui-disabled"
             disabled={true}
-            id={null}
+            id="mui-p-10000-T-tab-5"
             onBlur={[Function]}
             onClick={[Function]}
             onDragLeave={[Function]}
@@ -231,11 +242,11 @@ Array [
             </span>
           </button>
           <button
-            aria-controls={null}
+            aria-controls="mui-p-10000-P-tab-6"
             aria-selected={false}
             className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1"
             disabled={false}
-            id={null}
+            id="mui-p-10000-T-tab-6"
             onBlur={[Function]}
             onClick={[Function]}
             onDragLeave={[Function]}
@@ -258,13 +269,16 @@ Array [
             >
               Tab 6
             </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
           </button>
           <button
-            aria-controls={null}
+            aria-controls="mui-p-10000-P-tab-7"
             aria-selected={false}
             className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1"
             disabled={false}
-            id={null}
+            id="mui-p-10000-T-tab-7"
             onBlur={[Function]}
             onClick={[Function]}
             onDragLeave={[Function]}
@@ -287,13 +301,16 @@ Array [
             >
               Tab 77777777
             </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
           </button>
           <button
-            aria-controls={null}
+            aria-controls="mui-p-10000-P-tab-8"
             aria-selected={false}
             className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1"
             disabled={false}
-            id={null}
+            id="mui-p-10000-T-tab-8"
             onBlur={[Function]}
             onClick={[Function]}
             onDragLeave={[Function]}
@@ -316,13 +333,16 @@ Array [
             >
               Tab 8
             </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
           </button>
           <button
-            aria-controls={null}
+            aria-controls="mui-p-10000-P-tab-9"
             aria-selected={false}
             className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1"
             disabled={false}
-            id={null}
+            id="mui-p-10000-T-tab-9"
             onBlur={[Function]}
             onClick={[Function]}
             onDragLeave={[Function]}
@@ -345,81 +365,93 @@ Array [
             >
               Tab 9
             </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
           </button>
         </div>
+        <span
+          className="PrivateTabIndicator-root-278 PrivateTabIndicator-colorPrimary-279 MuiTabs-indicator RcTabs-indicator"
+          style={
+            Object {
+              "left": 0,
+              "width": 0,
+            }
+          }
+        />
       </div>
     </div>
   </div>,
   <div
-    aria-labelledby={null}
+    aria-labelledby="mui-p-10000-T-tab-0"
     className="MuiTabPanel-root "
     hidden={false}
-    id={null}
+    id="mui-p-10000-P-tab-0"
     role="tabpanel"
   >
     Tab Content 0
   </div>,
   <div
-    aria-labelledby={null}
+    aria-labelledby="mui-p-10000-T-tab-1"
     className="MuiTabPanel-root "
     hidden={true}
-    id={null}
+    id="mui-p-10000-P-tab-1"
     role="tabpanel"
   />,
   <div
-    aria-labelledby={null}
+    aria-labelledby="mui-p-10000-T-tab-2"
     className="MuiTabPanel-root "
     hidden={true}
-    id={null}
+    id="mui-p-10000-P-tab-2"
     role="tabpanel"
   />,
   <div
-    aria-labelledby={null}
+    aria-labelledby="mui-p-10000-T-tab-3"
     className="MuiTabPanel-root "
     hidden={true}
-    id={null}
+    id="mui-p-10000-P-tab-3"
     role="tabpanel"
   />,
   <div
-    aria-labelledby={null}
+    aria-labelledby="mui-p-10000-T-tab-4"
     className="MuiTabPanel-root "
     hidden={true}
-    id={null}
+    id="mui-p-10000-P-tab-4"
     role="tabpanel"
   />,
   <div
-    aria-labelledby={null}
+    aria-labelledby="mui-p-10000-T-tab-5"
     className="MuiTabPanel-root "
     hidden={true}
-    id={null}
+    id="mui-p-10000-P-tab-5"
     role="tabpanel"
   />,
   <div
-    aria-labelledby={null}
+    aria-labelledby="mui-p-10000-T-tab-6"
     className="MuiTabPanel-root "
     hidden={true}
-    id={null}
+    id="mui-p-10000-P-tab-6"
     role="tabpanel"
   />,
   <div
-    aria-labelledby={null}
+    aria-labelledby="mui-p-10000-T-tab-7"
     className="MuiTabPanel-root "
     hidden={true}
-    id={null}
+    id="mui-p-10000-P-tab-7"
     role="tabpanel"
   />,
   <div
-    aria-labelledby={null}
+    aria-labelledby="mui-p-10000-T-tab-8"
     className="MuiTabPanel-root "
     hidden={true}
-    id={null}
+    id="mui-p-10000-P-tab-8"
     role="tabpanel"
   />,
   <div
-    aria-labelledby={null}
+    aria-labelledby="mui-p-10000-T-tab-9"
     className="MuiTabPanel-root "
     hidden={true}
-    id={null}
+    id="mui-p-10000-P-tab-9"
     role="tabpanel"
   />,
 ]

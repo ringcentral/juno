@@ -1,10 +1,11 @@
+import React, { forwardRef } from 'react';
+
 import MuiToolbar, {
   ToolbarProps as MuiToolbarProps,
 } from '@material-ui/core/Toolbar';
 
-import styled from '../../foundation/styled-components';
-import React, { forwardRef } from 'react';
 import { useThemeProps } from '../../foundation';
+import styled from '../../foundation/styled-components';
 
 type RcToolbarProps = MuiToolbarProps;
 
@@ -19,4 +20,5 @@ const RcToolbar = styled(_RcToolbar)``;
 
 RcToolbar.displayName = 'RcToolbar';
 
-export { RcToolbar, RcToolbarProps };
+export { RcToolbar };
+export type { RcToolbarProps };

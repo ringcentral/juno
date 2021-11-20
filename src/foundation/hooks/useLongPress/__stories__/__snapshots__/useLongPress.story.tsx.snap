@@ -99,5 +99,8 @@ exports[`Storyshots 🔧 Foundation/Hooks/useLongPress useLongPress 1`] = `
   >
     Trigger event
   </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
 </button>
 `;

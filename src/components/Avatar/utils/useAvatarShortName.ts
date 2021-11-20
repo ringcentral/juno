@@ -69,11 +69,10 @@ export const useAvatarShortName = ({
   lastName,
   email,
 }: UseShortNameParams) => {
-  const result = useMemo(() => getAvatarShortName(firstName, lastName, email), [
-    email,
-    firstName,
-    lastName,
-  ]);
+  const result = useMemo(
+    () => getAvatarShortName(firstName, lastName, email),
+    [email, firstName, lastName],
+  );
 
   return result;
 };

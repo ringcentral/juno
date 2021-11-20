@@ -248,4 +248,5 @@ const RcDetachedWindow = memo(
 
 RcDetachedWindow.displayName = 'RcDetachedWindow';
 
-export { RcDetachedWindow, RcDetachedWindowProps, RcDetachedWindowRef };
+export { RcDetachedWindow };
+export type { RcDetachedWindowProps, RcDetachedWindowRef };

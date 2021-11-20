@@ -35,12 +35,8 @@ export const useOverflow = (
     innerRef,
     () => {
       if (innerRef.current) {
-        const {
-          scrollWidth,
-          clientWidth,
-          scrollHeight,
-          clientHeight,
-        } = innerRef.current;
+        const { scrollWidth, clientWidth, scrollHeight, clientHeight } =
+          innerRef.current;
 
         const show = scrollWidth > clientWidth || scrollHeight > clientHeight;
 

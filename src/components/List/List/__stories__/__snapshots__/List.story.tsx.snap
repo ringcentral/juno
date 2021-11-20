@@ -40,15 +40,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List List 1`] = `
   padding-bottom: 4px;
 }
 
-.c0 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c0 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 .c1 {
   padding: 0;
   margin: 0 8px 0 0;

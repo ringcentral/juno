@@ -14,7 +14,7 @@ export type UnitMap<T extends string | number | symbol, K = any> = {
  */
 export type ClassesMap<
   T extends { classes?: any } | undefined,
-  K = any
+  K = any,
 > = Partial<UnitMap<Classes<T>, K>>;
 
 /** @ignore */
@@ -23,7 +23,7 @@ type ClassesReturn<
     | {
         classes?: any;
       }
-    | undefined
+    | undefined,
 > = keyof NonNullable<NonNullable<T>['classes']>;
 
 /**

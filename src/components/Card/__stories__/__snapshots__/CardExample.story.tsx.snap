@@ -1655,6 +1655,9 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Simple Card Exampl
       <span
         className="MuiCardActionArea-focusHighlight RcCardActionArea-focusHighlight"
       />
+      <span
+        className="MuiTouchRipple-root RcCardActionAreaTouchRipple-root"
+      />
     </button>
   </div>
 </div>

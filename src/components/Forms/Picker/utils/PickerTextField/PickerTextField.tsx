@@ -270,4 +270,5 @@ const PickerTextField = forwardRef<any, PickerTextFieldProps>((props, ref) => {
 
 PickerTextField.displayName = PICKER_DISPLAY_NAME;
 
-export { PickerTextField, PickerTextFieldProps, PickerTextFieldRef };
+export { PickerTextField };
+export type { PickerTextFieldProps, PickerTextFieldRef };

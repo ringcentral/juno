@@ -82,4 +82,5 @@ RcSnackbar.defaultProps = {
 
 RcSnackbar.displayName = 'RcSnackbar';
 
-export { RcSnackbar, RcSnackbarProps };
+export { RcSnackbar };
+export type { RcSnackbarProps };

@@ -116,4 +116,5 @@ RcListItemText.defaultProps = {
 
 RcListItemText.displayName = 'RcListItemText';
 
-export { RcListItemText, RcListItemTextProps };
+export { RcListItemText };
+export type { RcListItemTextProps };

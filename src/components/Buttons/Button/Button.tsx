@@ -1,4 +1,3 @@
-import MuiButton from '@material-ui/core/Button';
 import React, {
   ComponentProps,
   forwardRef,
@@ -7,6 +6,8 @@ import React, {
   useMemo,
   useRef,
 } from 'react';
+
+import MuiButton from '@material-ui/core/Button';
 
 import {
   combineClasses,
@@ -27,7 +28,8 @@ import { RcIconSizes } from '../../Icon/utils';
 import { RcCircularProgress, RcCircularProgressProps } from '../../Progress';
 import { withTooltip } from '../../Tooltip';
 import { buttonStyle } from './styles';
-import { getButtonIconSize, RcButtonClasses, RcButtonSize } from './utils';
+import type { RcButtonSize } from './utils';
+import { getButtonIconSize, RcButtonClasses } from './utils';
 
 type RcButtonColor = RcBaseColor<
   'primary' | 'secondary' | 'negative' | 'positive' | 'action' | 'neutral'
@@ -241,11 +243,12 @@ RcButton.defaultProps = {
 
 RcButton.displayName = 'RcButton';
 
-export {
-  RcButton,
-  RcButtonSize,
-  RcButtonProps,
+export { RcButton };
+
+export type {
   RcButtonColor,
   RcButtonColorLoadingMode,
+  RcButtonProps,
+  RcButtonSize,
   RcButtonVariant,
 };

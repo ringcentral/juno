@@ -1,5 +1,6 @@
-import MuiStepConnector from '@material-ui/core/StepConnector';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiStepConnector from '@material-ui/core/StepConnector';
 
 import {
   combineClasses,
@@ -36,4 +37,5 @@ RcStepConnector.defaultProps = {};
 
 RcStepConnector.displayName = 'RcStepConnector';
 
-export { RcStepConnector, RcStepConnectorProps };
+export { RcStepConnector };
+export type { RcStepConnectorProps };

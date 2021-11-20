@@ -6,4 +6,4 @@ type RcFormProps = React.HTMLAttributes<HTMLFormElement> & {
 
 type FieldInfo = { validate: () => string | false };
 
-export { RcFormProps, FieldInfo };
+export type { RcFormProps, FieldInfo };

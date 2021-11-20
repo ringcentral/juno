@@ -161,4 +161,5 @@ export type WithResponsiveSizes = {
     | 'inherit.gt-xl';
 };
 
-export type WithResponsivePatterns = WithResponsiveSizes[keyof WithResponsiveSizes][];
+export type WithResponsivePatterns =
+  WithResponsiveSizes[keyof WithResponsiveSizes][];

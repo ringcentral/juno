@@ -32,4 +32,5 @@ const RcDialerContext = createContext<RcDialerContextValue>({});
 
 const useRcDialerContext = () => useContext(RcDialerContext);
 
-export { RcDialerContext, useRcDialerContext, RcDialerContextValue };
+export { RcDialerContext, useRcDialerContext };
+export type { RcDialerContextValue };

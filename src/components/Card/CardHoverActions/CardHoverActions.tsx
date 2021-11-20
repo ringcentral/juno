@@ -37,4 +37,5 @@ RcCardHoverActions.defaultProps = {};
 
 RcCardHoverActions.displayName = 'RcCardHoverActions';
 
-export { RcCardHoverActions, RcCardHoverActionsProps };
+export { RcCardHoverActions };
+export type { RcCardHoverActionsProps };

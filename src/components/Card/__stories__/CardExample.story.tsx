@@ -1,5 +1,6 @@
-import { Meta, Story } from '@storybook/react';
 import React, { FunctionComponent, useCallback, useState } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import { palette2, px, spacing, styled } from '../../../foundation';
 import {
@@ -14,8 +15,7 @@ import { switchToControlKnobs } from '../../../storybook';
 import { RcButton, RcIconButton, RcIconButtonProps } from '../../Buttons';
 import { RcGrid } from '../../Grid';
 import { RcIcon } from '../../Icon';
-import { RcMenu, RcMenuItem, RcMenuProps } from '../../Menu';
-import { RcMenuItemProps } from '../../Menu/deprecated';
+import { RcMenu, RcMenuItem, RcMenuItemProps, RcMenuProps } from '../../Menu';
 import { RcTypography } from '../../Typography';
 import { RcCard, RcCardProps } from '../Card';
 import { RcCardActionArea, RcCardActionAreaProps } from '../CardActionArea';
@@ -110,8 +110,9 @@ const RcCardWithHoverActions = styled(RcCard)`
   }
 `;
 
-const CardWithHoverActions: FunctionComponent<RcCardProps &
-  RcCardActionAreaProps> = (props) => {
+const CardWithHoverActions: FunctionComponent<
+  RcCardProps & RcCardActionAreaProps
+> = (props) => {
   const { onClick, children } = props;
   const [isMoreMenuOpen, setIsMoreMenuOpen] = useState(false);
 

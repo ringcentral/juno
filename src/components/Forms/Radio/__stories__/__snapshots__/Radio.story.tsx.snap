@@ -79,6 +79,9 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio 1`] = `
       </svg>
     </div>
   </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
 </span>
 `;
 
@@ -493,6 +496,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio with custom icon 1
             checked={true}
             className="PrivateSwitchBase-input-176"
             disabled={false}
+            name="mui-10000"
             onChange={[Function]}
             type="radio"
             value={0}
@@ -512,6 +516,9 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio with custom icon 1
             
           </span>
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </span>
       <span
         className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
@@ -545,6 +552,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio with custom icon 1
             checked={false}
             className="PrivateSwitchBase-input-176"
             disabled={false}
+            name="mui-10000"
             onChange={[Function]}
             type="radio"
             value={1}
@@ -564,6 +572,9 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio with custom icon 1
             
           </span>
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </span>
       <span
         className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"

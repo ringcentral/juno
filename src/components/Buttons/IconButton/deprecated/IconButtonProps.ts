@@ -249,10 +249,10 @@ const rcIconButtonWarning = [
   },
 ];
 
-export {
+export { rcIconButtonWarning };
+export type {
   RcIconButtonVariant,
   RcIconButtonProps,
   RcIconButtonSize,
   RcIconButtonDeprecatedProps,
-  rcIconButtonWarning,
 };

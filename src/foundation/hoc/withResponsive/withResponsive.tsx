@@ -10,31 +10,30 @@ import { BaseSizeKey } from '../../typings';
 import { WithResponsivePatterns, WithResponsiveSizes } from './types';
 import { getMatchedSize, getSizeMap, SizeMap } from './utils';
 
-type ResponsiveComponentProps<P extends any, K extends keyof P> = Omit<P, K> &
-  {
-    /**
-     * when you pass a size string, size will be pass to component directly
-     *
-     * when you pass a pattern array, matched size will be pass to component
-     *
-     * pattern priority:
-     *
-     * 1, breakpoint > gtBreakpoint > ltBreakpoint > default.
-     * such as small.md > small.gt-sm > small.lt-lg > small
-     *
-     * 2. breakpoint can be covered.
-     * such as [small.gt-sm, large.gt-sm] equal [large.gt-sm]
-     *
-     * 3. small range > large range
-     * such as small.gt-xl > small.gt-lg, small.lt-sm > small.lt-md
-     */
-    [key in K]: P[key] extends BaseSizeKey | undefined
-      ? NonNullable<P[key]> | WithResponsiveSizes[NonNullable<P[key]>][]
-      : never;
-  } & {
-    /** component would be hidden when match hidden patterns   */
-    hiddenPatterns?: FullBreakpoint | FullBreakpoint[];
-  };
+type ResponsiveComponentProps<P extends any, K extends keyof P> = Omit<P, K> & {
+  /**
+   * when you pass a size string, size will be pass to component directly
+   *
+   * when you pass a pattern array, matched size will be pass to component
+   *
+   * pattern priority:
+   *
+   * 1, breakpoint > gtBreakpoint > ltBreakpoint > default.
+   * such as small.md > small.gt-sm > small.lt-lg > small
+   *
+   * 2. breakpoint can be covered.
+   * such as [small.gt-sm, large.gt-sm] equal [large.gt-sm]
+   *
+   * 3. small range > large range
+   * such as small.gt-xl > small.gt-lg, small.lt-sm > small.lt-md
+   */
+  [key in K]: P[key] extends BaseSizeKey | undefined
+    ? NonNullable<P[key]> | WithResponsiveSizes[NonNullable<P[key]>][]
+    : never;
+} & {
+  /** component would be hidden when match hidden patterns   */
+  hiddenPatterns?: FullBreakpoint | FullBreakpoint[];
+};
 
 /**
  * Make component can responsive size

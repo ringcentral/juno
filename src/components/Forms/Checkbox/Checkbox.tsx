@@ -22,9 +22,8 @@ import { RcCheckboxClasses } from './utils';
 
 type RcCheckboxLabelPlacement = RcBaseLabelPlacement;
 
-type RcCheckboxFormControlLabelProps = RcBaseFormControlLabelProps<
-  RcCheckboxLabelPlacement
->;
+type RcCheckboxFormControlLabelProps =
+  RcBaseFormControlLabelProps<RcCheckboxLabelPlacement>;
 
 type RcCheckboxProps = {
   /** @deprecated using size to replace that */
@@ -68,11 +67,10 @@ const _RcCheckbox = forwardRef<any, RcCheckboxProps>((inProps, ref) => {
     [classesProp],
   );
 
-  const iconProps = useMemo(() => getIconProps({ size, icon, checkedIcon }), [
-    checkedIcon,
-    icon,
-    size,
-  ]);
+  const iconProps = useMemo(
+    () => getIconProps({ size, icon, checkedIcon }),
+    [checkedIcon, icon, size],
+  );
 
   const Checkbox = (
     <MuiCheckbox
@@ -119,8 +117,8 @@ RcCheckbox.defaultProps = {
   size: 'medium',
 };
 
-export {
-  RcCheckbox,
+export { RcCheckbox };
+export type {
   RcCheckboxProps,
   RcCheckboxLabelPlacement,
   RcCheckboxFormControlLabelProps,

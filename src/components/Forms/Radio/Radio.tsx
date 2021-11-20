@@ -20,9 +20,8 @@ import { RadioButtonIconClasses, RcRadioClasses } from './utils';
 // * remember when upgrade version with Mui, should check that classes have change in 4.11.0
 type RcRadioLabelPlacement = RcBaseLabelPlacement<'start' | 'end'>;
 
-type RcRadioFormControlLabelProps = RcBaseFormControlLabelProps<
-  RcRadioLabelPlacement
->;
+type RcRadioFormControlLabelProps =
+  RcBaseFormControlLabelProps<RcRadioLabelPlacement>;
 
 type RcRadioProps = {} & RcCheckedStyledProps<RcRadioFormControlLabelProps> &
   RcBaseProps<
@@ -50,15 +49,15 @@ const _RcRadio = forwardRef<any, RcRadioProps>((inProps: RcRadioProps, ref) => {
     ...rest
   } = props;
 
-  const classes = useMemo(() => combineClasses(RcRadioClasses, classesProp), [
-    classesProp,
-  ]);
+  const classes = useMemo(
+    () => combineClasses(RcRadioClasses, classesProp),
+    [classesProp],
+  );
 
-  const iconProps = useMemo(() => getIconProps({ size, icon, checkedIcon }), [
-    checkedIcon,
-    icon,
-    size,
-  ]);
+  const iconProps = useMemo(
+    () => getIconProps({ size, icon, checkedIcon }),
+    [checkedIcon, icon, size],
+  );
 
   const Radio = (
     <MuiRadio
@@ -94,8 +93,8 @@ RcRadio.defaultProps = {
 
 RcRadio.displayName = 'RcRadio';
 
-export {
-  RcRadio,
+export { RcRadio };
+export type {
   RcRadioProps,
   RcRadioLabelPlacement,
   RcRadioFormControlLabelProps,

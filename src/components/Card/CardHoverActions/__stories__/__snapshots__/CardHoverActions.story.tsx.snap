@@ -224,6 +224,9 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardHoverActions CardHoverActi
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <button
       className="MuiButtonBase-root c2 RcIconButton-root RcIconButton-contained"
@@ -256,6 +259,9 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardHoverActions CardHoverActi
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
   </div>
   <div

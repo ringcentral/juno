@@ -92,13 +92,15 @@ export const IconButtonExamples: Story<IconButtonProps> = ({
   switchToControlKnobs();
   return (
     <RcBox display="flex" flexWrap="wrap">
-      {([
-        'round',
-        'contained',
-        'inverse',
-        'outline',
-        'plain',
-      ] as RcIconButtonVariant[]).map((variant) => (
+      {(
+        [
+          'round',
+          'contained',
+          'inverse',
+          'outline',
+          'plain',
+        ] as RcIconButtonVariant[]
+      ).map((variant) => (
         <RcBox margin="1em" textAlign="center" key={variant}>
           <Title>{variant}</Title>
           <RcIconButton
@@ -195,13 +197,15 @@ export const IconButtonWithColorAndSize: Story<IconButtonProps> = () => {
             <br />
             <RcText color="neutral.f04">({valuePx * 2}px)</RcText>
           </Title>
-          {([
-            'round',
-            'contained',
-            'inverse',
-            'outline',
-            'plain',
-          ] as RcIconButtonVariant[]).map((variant) => (
+          {(
+            [
+              'round',
+              'contained',
+              'inverse',
+              'outline',
+              'plain',
+            ] as RcIconButtonVariant[]
+          ).map((variant) => (
             <React.Fragment key={variant}>
               <RcIconButton
                 variant={variant}

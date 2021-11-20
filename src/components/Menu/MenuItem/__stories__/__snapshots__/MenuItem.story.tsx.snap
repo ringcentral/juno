@@ -69,15 +69,6 @@ Array [
   font-weight: 700;
 }
 
-.c0 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c0 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 <li
     aria-disabled={false}
     className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c0 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
@@ -174,15 +165,6 @@ Array [
   min-height: auto;
   line-height: 22px;
   font-weight: 700;
-}
-
-.c0 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c0 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
 }
 
 <li

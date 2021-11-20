@@ -16,7 +16,7 @@ export const RcDialogContext = createContext<RcDialogContextValue>({});
 export const useRcDialogContext = () => useContext(RcDialogContext);
 
 export const useDialogDefaultProps = <
-  T extends RcDialogChildrenProps & { theme?: RcTheme }
+  T extends RcDialogChildrenProps & { theme?: RcTheme },
 >({
   theme,
   ...props

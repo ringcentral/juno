@@ -313,14 +313,8 @@ RcAvatar.displayName = 'RcAvatar';
 const ExportType: <T extends boolean>(
   props: RcAvatarProps<T> & WithTooltipProps,
 ) => JSX.Element &
-  CustomStyledComponentResult<
-    RcAvatarProps<T> & WithTooltipProps
-  > = RcAvatar as any;
+  CustomStyledComponentResult<RcAvatarProps<T> & WithTooltipProps> =
+  RcAvatar as any;
 
-export {
-  ExportType as RcAvatar,
-  RcAvatarProps,
-  RcAvatarSize,
-  StyledAvatar,
-  PresenceOrigin,
-};
+export { ExportType as RcAvatar, StyledAvatar };
+export type { RcAvatarProps, RcAvatarSize, PresenceOrigin };

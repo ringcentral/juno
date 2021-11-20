@@ -1,5 +1,3 @@
-import MuiMenuItem from '@material-ui/core/MenuItem';
-import clsx from 'clsx';
 import React, {
   ComponentProps,
   ElementType,
@@ -11,6 +9,10 @@ import React, {
   useImperativeHandle,
   useMemo,
 } from 'react';
+
+import clsx from 'clsx';
+
+import MuiMenuItem from '@material-ui/core/MenuItem';
 
 import {
   Classes,
@@ -119,9 +121,10 @@ const _RcMenuItem = forwardRef<any, RcMenuItemProps & RcMenuItemInnerProps>(
       [classesProp],
     );
 
-    const toClasses = useMemo(() => omit(classes, ['checked', 'unchecked']), [
-      classes,
-    ]);
+    const toClasses = useMemo(
+      () => omit(classes, ['checked', 'unchecked']),
+      [classes],
+    );
 
     const itemAvatar = useMemo(() => {
       if (React.isValidElement(avatar)) {
@@ -254,10 +257,10 @@ RcMenuItem.defaultProps = {
 
 RcMenuItem.displayName = 'RcMenuItem';
 
-export {
-  RcMenuItem,
+export { RcMenuItem };
+export type {
+  RcMenuItemClassesType,
   RcMenuItemProps,
   RcMenuItemSize,
   RcMenuItemType,
-  RcMenuItemClassesType,
 };

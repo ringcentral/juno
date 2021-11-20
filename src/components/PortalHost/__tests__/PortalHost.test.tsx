@@ -16,10 +16,9 @@ import {
 
 const TestComponentString = 'TestComponent';
 
-const TestComponent: FunctionComponent<ControlledProps<
-  { text?: string },
-  string
->> = ({ open, onClose, text, ...rest }) => {
+const TestComponent: FunctionComponent<
+  ControlledProps<{ text?: string }, string>
+> = ({ open, onClose, text, ...rest }) => {
   const timeRef = useRef(+new Date());
   return (
     <RcDialog open={open} onClose={() => onClose('feedback')} {...rest}>

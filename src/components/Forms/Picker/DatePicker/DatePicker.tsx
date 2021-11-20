@@ -341,10 +341,5 @@ RcDatePicker.defaultProps = {
 
 RcDatePicker.displayName = 'RcDatePicker';
 
-export {
-  RcDatePicker,
-  RcDatePickerProps,
-  RcDatePickerSize,
-  DEFAULT_FORMAT,
-  RcDatePickerClasses,
-};
+export { RcDatePicker, DEFAULT_FORMAT, RcDatePickerClasses };
+export type { RcDatePickerProps, RcDatePickerSize };

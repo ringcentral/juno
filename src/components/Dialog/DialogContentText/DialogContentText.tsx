@@ -91,4 +91,5 @@ RcDialogContentText.defaultProps = {};
 
 RcDialogContentText.displayName = 'RcDialogContentText';
 
-export { RcDialogContentText, RcDialogContentTextProps };
+export { RcDialogContentText };
+export type { RcDialogContentTextProps };

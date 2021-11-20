@@ -82,4 +82,5 @@ const SelectionView: FunctionComponent<SelectionViewProps> = (props) => {
 
 SelectionView.displayName = 'SelectionView';
 
-export { SelectionView, SelectionViewProps };
+export { SelectionView };
+export type { SelectionViewProps };

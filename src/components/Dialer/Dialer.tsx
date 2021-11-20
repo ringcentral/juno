@@ -5,9 +5,8 @@ import { RcDialerContext, RcDialerContextValue } from './utils';
 type RcDialerProps = {};
 
 const RcDialer: FunctionComponent<RcDialerProps> = ({ children }) => {
-  const dialPadActionRef: RcDialerContextValue['dialPadActionRef'] = useRef(
-    null,
-  );
+  const dialPadActionRef: RcDialerContextValue['dialPadActionRef'] =
+    useRef(null);
   const onInsertRef: RcDialerContextValue['onInsertRef'] = useRef(null);
   const inputRef: RcDialerContextValue['inputRef'] = useRef(null);
   const onDeleteRef: RcDialerContextValue['onDeleteRef'] = useRef(null);
@@ -32,4 +31,5 @@ RcDialer.defaultProps = {};
 
 RcDialer.displayName = 'RcDialer';
 
-export { RcDialer, RcDialerProps };
+export { RcDialer };
+export type { RcDialerProps };

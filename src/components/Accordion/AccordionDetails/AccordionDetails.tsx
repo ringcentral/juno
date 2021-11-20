@@ -39,4 +39,5 @@ RcAccordionDetails.defaultProps = {};
 
 RcAccordionDetails.displayName = 'RcAccordionDetails';
 
-export { RcAccordionDetails, RcAccordionDetailsProps };
+export { RcAccordionDetails };
+export type { RcAccordionDetailsProps };

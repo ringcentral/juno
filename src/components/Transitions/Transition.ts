@@ -49,7 +49,11 @@ export function getTransitionProps(
     style?: React.CSSProperties;
   },
   options: { mode: string },
-) {
+): {
+  duration?: number;
+  easing?: string;
+  delay?: string;
+} {
   const { timeout, easing, style = {} } = props;
 
   return {

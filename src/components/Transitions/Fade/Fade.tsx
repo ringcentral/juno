@@ -1,5 +1,7 @@
-import MuiFade, { FadeProps as MuiFadeProps } from '@material-ui/core/Fade';
 import React, { forwardRef } from 'react';
+
+import MuiFade, { FadeProps as MuiFadeProps } from '@material-ui/core/Fade';
+
 import { useThemeProps } from '../../../foundation';
 
 type RcFadeProps = MuiFadeProps;
@@ -12,4 +14,5 @@ const _RcFade = forwardRef<any, RcFadeProps>((inProps, ref) => {
 
 const RcFade = _RcFade;
 
-export { RcFade, RcFadeProps };
+export { RcFade };
+export type { RcFadeProps };

@@ -1,12 +1,8 @@
-import MuiStepContent from '@material-ui/core/StepContent';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
 
-import {
-  combineClasses,
-  RcBaseProps,
-  styled,
-  // useThemeProps,
-} from '../../../foundation';
+import MuiStepContent from '@material-ui/core/StepContent';
+
+import { combineClasses, RcBaseProps, styled } from '../../../foundation';
 import { StepContentStyle } from './styles';
 import { RcStepContentClasses } from './utils';
 
@@ -39,4 +35,5 @@ RcStepContent.defaultProps = {};
 
 RcStepContent.displayName = 'RcStepContent';
 
-export { RcStepContent, RcStepContentProps };
+export { RcStepContent };
+export type { RcStepContentProps };

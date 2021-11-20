@@ -1,4 +1,3 @@
-import MuiTooltip from '@material-ui/core/Tooltip';
 import React, {
   ComponentProps,
   forwardRef,
@@ -7,6 +6,8 @@ import React, {
   useRef,
   useState,
 } from 'react';
+
+import MuiTooltip from '@material-ui/core/Tooltip';
 
 import {
   combineClasses,
@@ -18,8 +19,8 @@ import {
   styled,
   useForkRef,
   useRcPortalWindowContext,
-  withDeprecatedCheck,
   useThemeProps,
+  withDeprecatedCheck,
 } from '../../foundation';
 import { Mask, tooltipStyle } from './styles';
 import { RcTooltipClasses, useTooltipForceHide } from './utils';
@@ -187,4 +188,5 @@ RcTooltip.defaultProps = {
 
 RcTooltip.displayName = 'RcTooltip';
 
-export { RcTooltip, RcTooltipProps, RcTooltipSize };
+export { RcTooltip };
+export type { RcTooltipProps, RcTooltipSize };

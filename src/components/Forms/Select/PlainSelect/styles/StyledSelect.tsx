@@ -66,20 +66,20 @@ export const plainSelectStyle: RcThemedStyled<RcPlainSelectProps, any> = ({
       }
 
       ${isRound &&
-        css`
-          padding-top: ${spacing(1.5)};
-          padding-bottom: ${spacing(1.5)};
+      css`
+        padding-top: ${spacing(1.5)};
+        padding-bottom: ${spacing(1.5)};
 
-          ${focusVisible}, &.Mui-focusVisible {
-            .${RcPlainSelectTouchRippleClasses.root} {
-              background-color: currentColor;
-              opacity: ${opacity('32')};
-            }
-            .${RcPlainSelectTouchRippleClasses.child} {
-              display: none;
-            }
+        ${focusVisible}, &.Mui-focusVisible {
+          .${RcPlainSelectTouchRippleClasses.root} {
+            background-color: currentColor;
+            opacity: ${opacity('32')};
           }
-        `}
+          .${RcPlainSelectTouchRippleClasses.child} {
+            display: none;
+          }
+        }
+      `}
     }
   `;
 };

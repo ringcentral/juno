@@ -168,6 +168,9 @@ Array [
     >
       Click
     </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </button>,
   @media (hover:hover) and (pointer:fine) {
 
@@ -332,6 +335,9 @@ Array [
       >
         Listen again
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
      
     <button
@@ -357,6 +363,9 @@ Array [
       >
         Remove listen
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
   </div>,
   @media (hover:hover) and (pointer:fine) {
@@ -579,6 +588,9 @@ Array [
       >
         Listen again
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
      
     <button
@@ -604,6 +616,9 @@ Array [
       >
         Remove listen
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
   </div>,
 ]

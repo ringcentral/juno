@@ -32,4 +32,5 @@ RcPagination.defaultProps = {};
 
 RcPagination.displayName = 'RcPagination';
 
-export { RcPagination, RcPaginationProps };
+export { RcPagination };
+export type { RcPaginationProps };

@@ -327,6 +327,9 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
           
         </span>
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </span>
     <span
       className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
@@ -377,6 +380,9 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
           
         </span>
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </span>
     <span
       className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
@@ -427,6 +433,9 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
           
         </span>
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </span>
     <span
       className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"

@@ -31,4 +31,5 @@ RcPopper.defaultProps = {};
 
 RcPopper.displayName = 'RcPopper';
 
-export { RcPopper, RcPopperProps };
+export { RcPopper };
+export type { RcPopperProps };

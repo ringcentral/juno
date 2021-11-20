@@ -23,17 +23,17 @@ export const DrawerStyle: RcThemedStyled<RcDrawerProps, any> = (props) => {
       border-radius: ${currRadiusValue};
 
       ${inlinePaper &&
-        css`
-          background: transparent;
-          box-shadow: none;
-          align-items: center;
-          justify-content: center;
-          overflow: unset;
+      css`
+        background: transparent;
+        box-shadow: none;
+        align-items: center;
+        justify-content: center;
+        overflow: unset;
 
-          ${RcPaper} {
-            border-radius: ${currRadiusValue};
-          }
-        `}
+        ${RcPaper} {
+          border-radius: ${currRadiusValue};
+        }
+      `}
     }
   `;
 };

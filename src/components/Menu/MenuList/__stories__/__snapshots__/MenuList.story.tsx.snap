@@ -68,21 +68,8 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/MenuList MenuList 1`] = `
   font-weight: 700;
 }
 
-.c1 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c1 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 .c0 {
   overflow: auto;
-}
-
-.c0 .sc-cxNHIi {
-  margin: 8px 0px;
 }
 
 <ul
@@ -120,6 +107,9 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/MenuList MenuList 1`] = `
         MenuItem 1
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>
   <li
     aria-disabled={false}
@@ -150,6 +140,9 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/MenuList MenuList 1`] = `
         MenuItem 2
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>
   <li
     aria-disabled={true}
@@ -210,6 +203,9 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/MenuList MenuList 1`] = `
         MenuItem 4
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>
 </ul>
 `;

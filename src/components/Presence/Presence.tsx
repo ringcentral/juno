@@ -73,4 +73,5 @@ RcPresence.defaultProps = {
 
 RcPresence.displayName = 'RcPresence';
 
-export { RcPresence, RcPresenceProps, RcPresenceSize, RcPresenceType };
+export { RcPresence };
+export type { RcPresenceProps, RcPresenceSize, RcPresenceType };

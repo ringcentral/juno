@@ -28,9 +28,5 @@ RcDroppable.defaultProps = {};
 
 RcDroppable.displayName = 'RcDroppable';
 
-export {
-  RcDroppable,
-  RcDroppableProps,
-  RcDroppableProvided,
-  RcDroppableStateSnapshot,
-};
+export { RcDroppable };
+export type { RcDroppableProps, RcDroppableProvided, RcDroppableStateSnapshot };

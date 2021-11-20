@@ -5,8 +5,8 @@ import {
   RcPaletteProp,
   RcTheme,
   styled,
-  withDeprecatedCheck,
   useThemeProps,
+  withDeprecatedCheck,
 } from '../../foundation';
 import { TagStyle } from './styles';
 import { colorMap } from './utils';
@@ -68,4 +68,5 @@ RcTag.defaultProps = {
 
 RcTag.displayName = 'RcTag';
 
-export { RcTag, RcTagProps };
+export { RcTag };
+export type { RcTagProps };

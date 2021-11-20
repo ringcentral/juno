@@ -1,16 +1,11 @@
-/* eslint-disable jest/no-conditional-expect */
-import userEvent from '@testing-library/user-event';
-import range from 'lodash/range';
 import React from 'react';
 
-import {
-  act,
-  EachRun,
-  fireEvent,
-  screen,
-  sleep,
-  within,
-} from '../../../../tests';
+import range from 'lodash/range';
+
+/* eslint-disable jest/no-conditional-expect */
+import userEvent from '@testing-library/user-event';
+
+import { act, EachRun, fireEvent, screen, sleep } from '../../../../tests';
 import {
   getSelectionPosition,
   setSelectionPosition,
@@ -369,9 +364,8 @@ describe('Downshift', () => {
         }
       }}
       Then: result will be $result ${(args, context) => {
-        const tags = context.result.container.querySelectorAll(
-          '[data-tag-index]',
-        );
+        const tags =
+          context.result.container.querySelectorAll('[data-tag-index]');
         if (args.isHaveTags) {
           expect(tags.length).toBeGreaterThan(0);
         } else {
@@ -405,9 +399,8 @@ describe('Downshift', () => {
         }
       }}
       And: should not create a tag ${(args, context) => {
-        const tags = context.result.container.querySelectorAll(
-          '[data-tag-index]',
-        );
+        const tags =
+          context.result.container.querySelectorAll('[data-tag-index]');
         expect(tags.length).toBe(args.isHaveTags ? 2 : 0);
       }}
     `,
@@ -481,9 +474,8 @@ describe('Downshift', () => {
           context,
         )}
       And: user focus on first item ${(args, context) => {
-        const tag = context.result.container.querySelector(
-          `[data-tag-index="0"]`,
-        );
+        const tag =
+          context.result.container.querySelector(`[data-tag-index="0"]`);
         if (tag) {
           userEvent.click(tag);
           fireEvent.focus(tag);
@@ -722,9 +714,8 @@ describe('Downshift', () => {
         userEvent.click(cleanButton);
       }}
       And: input value and tags will be empty ${(args, context) => {
-        const tags = context.result.container.querySelectorAll(
-          '[data-tag-index]',
-        );
+        const tags =
+          context.result.container.querySelectorAll('[data-tag-index]');
 
         expect(tags.length).toEqual(0);
       }}
@@ -995,9 +986,8 @@ describe('Downshift', () => {
         );
       }}
       Then: that text should be truncate ${(args, context) => {
-        const item = context.result.container.querySelector(
-          '[data-tag-index]',
-        )!;
+        const item =
+          context.result.container.querySelector('[data-tag-index]')!;
 
         expect(item).toHaveStyle('overflow: hidden');
         expect(item).toHaveStyle('text-overflow: ellipsis');

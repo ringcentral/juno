@@ -116,4 +116,5 @@ RcLink.defaultProps = {
 
 RcLink.displayName = 'RcLink';
 
-export { RcLink, RcLinkProps, RcLinkSize };
+export { RcLink };
+export type { RcLinkProps, RcLinkSize };

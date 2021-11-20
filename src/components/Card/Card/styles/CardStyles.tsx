@@ -13,19 +13,19 @@ export const CardStyle: RcThemedStyled<RcCardProps, any> = (props) => {
     background-color: ${palette2('neutral', 'elevation')};
 
     ${isOutline &&
-      css`
-        border: 1px solid ${palette2('neutral', 'l02')};
-        border-radius: ${!square && radius('xl')};
+    css`
+      border: 1px solid ${palette2('neutral', 'l02')};
+      border-radius: ${!square && radius('xl')};
 
-        &.${RcCardClasses.focusVisible}, &.${RcCardClasses.selected} {
-          border-color: ${isOutline && palette2('interactive', 'f01')};
-        }
+      &.${RcCardClasses.focusVisible}, &.${RcCardClasses.selected} {
+        border-color: ${isOutline && palette2('interactive', 'f01')};
+      }
 
-        &:not(:hover):not(:focus-within) .${RcCardHoverActionsClasses.root} {
-          &:not(.${RcCardHoverActionsClasses.visible}) {
-            opacity: ${isOutline && 0};
-          }
+      &:not(:hover):not(:focus-within) .${RcCardHoverActionsClasses.root} {
+        &:not(.${RcCardHoverActionsClasses.visible}) {
+          opacity: ${isOutline && 0};
         }
-      `}
+      }
+    `}
   `;
 };

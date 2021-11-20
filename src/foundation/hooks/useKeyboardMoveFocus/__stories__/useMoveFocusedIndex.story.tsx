@@ -38,13 +38,11 @@ function getRandom(arr: any[], n: number) {
   return result;
 }
 
-const Column: FunctionComponent<{
-  title: string;
-} & Pick<UseKeyboardMoveFocusParams<any>, 'columns' | 'infinite'>> = ({
-  columns = 1,
-  infinite,
-  title,
-}) => {
+const Column: FunctionComponent<
+  {
+    title: string;
+  } & Pick<UseKeyboardMoveFocusParams<any>, 'columns' | 'infinite'>
+> = ({ columns = 1, infinite, title }) => {
   const focusedIndexRef = useRef(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -59,25 +57,23 @@ const Column: FunctionComponent<{
   const getOptionDisabled = (index: number) =>
     disabledOptionsRef.current.includes(index);
 
-  const {
-    onKeyFocusedIndexHandle,
-    getNextFocusableOption,
-  } = useKeyboardMoveFocus({
-    options,
-    focusedIndexRef,
-    infinite,
-    columns,
-    onFocusedIndexChange: (event, toIndex) => {
-      focusedIndexRef.current = toIndex;
-      focusIndex(toIndex);
+  const { onKeyFocusedIndexHandle, getNextFocusableOption } =
+    useKeyboardMoveFocus({
+      options,
+      focusedIndexRef,
+      infinite,
+      columns,
+      onFocusedIndexChange: (event, toIndex) => {
+        focusedIndexRef.current = toIndex;
+        focusIndex(toIndex);
 
-      event.preventDefault();
-    },
-    getOptionSearchText: (option) => {
-      return `${option}`;
-    },
-    getOptionDisabled,
-  });
+        event.preventDefault();
+      },
+      getOptionSearchText: (option) => {
+        return `${option}`;
+      },
+      getOptionDisabled,
+    });
 
   useLayoutEffect(() => {
     const toIndex = getNextFocusableOption();

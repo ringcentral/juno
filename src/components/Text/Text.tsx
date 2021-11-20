@@ -1,6 +1,7 @@
+import React, { forwardRef, useMemo, useRef, useState } from 'react';
+
 import clsx from 'clsx';
 import isString from 'lodash/isString';
-import React, { forwardRef, useMemo, useRef, useState } from 'react';
 
 import {
   combineProps,
@@ -10,7 +11,7 @@ import {
   useThemeProps,
 } from '../../foundation';
 import { RcTypography, RcTypographyProps } from '../Typography';
-import { textStyle, highlightClassName } from './styles';
+import { highlightClassName, textStyle } from './styles';
 
 type RcTextProps = {
   /** when set `true`, add style `flex: 1 1 auto` */
@@ -99,4 +100,5 @@ RcText.defaultProps = {
   noWrap: true,
 };
 
-export { RcText, RcTextProps };
+export { RcText };
+export type { RcTextProps };

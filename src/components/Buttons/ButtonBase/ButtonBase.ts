@@ -10,4 +10,5 @@ const RcButtonBase = styled(MuiButtonBase)``;
 
 RcButtonBase.displayName = 'RcButtonBase';
 
-export { RcButtonBase, RcButtonBaseProps };
+export { RcButtonBase };
+export type { RcButtonBaseProps };

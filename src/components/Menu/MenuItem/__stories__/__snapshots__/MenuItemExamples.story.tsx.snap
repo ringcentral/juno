@@ -119,15 +119,6 @@ Array [
   font-weight: 700;
 }
 
-.c0 .c3 {
-  margin-right: 0;
-}
-
-.c0 .c3 > .c2 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 @media (hover:hover) and (pointer:fine) {
 
 }
@@ -177,6 +168,9 @@ Array [
         Checked Type: UnCheck
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>,
   .c6 {
   width: 1em;
@@ -196,43 +190,38 @@ Array [
   color: #066FAC;
 }
 
-.c11,
-.c11 .c3 {
+.c7,
+.c7 .c3 {
   font-size: 16px;
 }
 
-.c11:active,
-.c11:active .c3 {
+.c7:active,
+.c7:active .c3 {
   color: #666666;
 }
 
-.c11.focus-visible:active,
-.c11[data-focus-visible-added]:active,
-.c11.focus-visible:active .c3,
-.c11[data-focus-visible-added]:active .c3 {
+.c7.focus-visible:active,
+.c7[data-focus-visible-added]:active,
+.c7.focus-visible:active .c3,
+.c7[data-focus-visible-added]:active .c3 {
   color: rgba(102,102,102,0.88);
 }
 
-.c11.RcIconButton-disabled,
-.c11.RcIconButton-disabled .c3 {
+.c7.RcIconButton-disabled,
+.c7.RcIconButton-disabled .c3 {
   color: #B9B9B9;
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added],
-.c11.RcIconButton-contained.focus-visible .c3,
-.c11.RcIconButton-contained[data-focus-visible-added] .c3 {
+.c7.RcIconButton-contained.focus-visible,
+.c7.RcIconButton-contained[data-focus-visible-added],
+.c7.RcIconButton-contained.focus-visible .c3,
+.c7.RcIconButton-contained[data-focus-visible-added] .c3 {
   color: #fff;
 }
 
-.c11.RcIconButton-contained:active,
-.c11.RcIconButton-contained:active .c3 {
+.c7.RcIconButton-contained:active,
+.c7.RcIconButton-contained:active .c3 {
   color: #fff;
-}
-
-.c7 > .c10,
-.c7 > .c3 {
-  margin-right: 8px;
 }
 
 .c2 {
@@ -253,16 +242,6 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 16px;
   color: #666666;
-}
-
-.c2 .c12 {
-  margin-right: -8px;
-}
-
-.c2 .c12 > .c8,
-.c2 .c12 > .sc-gGLxEB,
-.c2 .c12 > .c9 {
-  margin-right: 0;
 }
 
 .c2 > * + * {
@@ -340,25 +319,16 @@ Array [
   font-weight: 700;
 }
 
-.c0 .c12 {
-  margin-right: 0;
-}
-
-.c0 .c12 > .c9 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 @media (hover:hover) and (pointer:fine) {
-  .c11:hover,
-  .c11:hover .c3 {
+  .c7:hover,
+  .c7:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover,
-  .c11.RcIconButton-contained:hover .c3 {
+  .c7.RcIconButton-contained:hover,
+  .c7.RcIconButton-contained:hover .c3 {
     color: #fff;
   }
 }
@@ -423,6 +393,9 @@ Array [
         
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>,
   .c0 {
   position: relative;
@@ -645,15 +618,6 @@ Array [
   font-weight: 700;
 }
 
-.c0 .c6 {
-  margin-right: 0;
-}
-
-.c0 .c6 > .c5 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 @media (hover:hover) and (pointer:fine) {
 
 }
@@ -719,6 +683,9 @@ Array [
         use avatar prop
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>,
   .c3 {
   position: relative;
@@ -854,15 +821,6 @@ Array [
   font-weight: 700;
 }
 
-.c0 .c6 {
-  margin-right: 0;
-}
-
-.c0 .c6 > .c5 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 @media (hover:hover) and (pointer:fine) {
 
 }
@@ -928,6 +886,9 @@ Array [
         use ListItemAvatar
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>,
   .c0 {
   position: relative;
@@ -1033,37 +994,37 @@ Array [
   font-size: 16px;
 }
 
-.c9,
-.c9 .c2 {
+.c6,
+.c6 .c2 {
   font-size: 16px;
 }
 
-.c9:active,
-.c9:active .c2 {
+.c6:active,
+.c6:active .c2 {
   color: #666666;
 }
 
-.c9.focus-visible:active,
-.c9[data-focus-visible-added]:active,
-.c9.focus-visible:active .c2,
-.c9[data-focus-visible-added]:active .c2 {
+.c6.focus-visible:active,
+.c6[data-focus-visible-added]:active,
+.c6.focus-visible:active .c2,
+.c6[data-focus-visible-added]:active .c2 {
   color: rgba(102,102,102,0.88);
 }
 
-.c9.RcIconButton-disabled,
-.c9.RcIconButton-disabled .c2 {
+.c6.RcIconButton-disabled,
+.c6.RcIconButton-disabled .c2 {
   color: #B9B9B9;
 }
 
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added],
-.c9.RcIconButton-contained.focus-visible .c2,
-.c9.RcIconButton-contained[data-focus-visible-added] .c2 {
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added],
+.c6.RcIconButton-contained.focus-visible .c2,
+.c6.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
 }
 
-.c9.RcIconButton-contained:active,
-.c9.RcIconButton-contained:active .c2 {
+.c6.RcIconButton-contained:active,
+.c6.RcIconButton-contained:active .c2 {
   color: #fff;
 }
 
@@ -1084,21 +1045,6 @@ Array [
   height: unset;
   color: #666666;
   min-width: unset;
-}
-
-.c1 > .c6,
-.c1 > .sc-gGLxEB {
-  margin-right: 4px;
-}
-
-.c1 > .c7 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.c1 > .c8,
-.c1 > .c2 {
-  margin-right: 8px;
 }
 
 .c5 {
@@ -1168,25 +1114,16 @@ Array [
   font-weight: 700;
 }
 
-.c0 .c10 {
-  margin-right: 0;
-}
-
-.c0 .c10 > .c7 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 @media (hover:hover) and (pointer:fine) {
-  .c9:hover,
-  .c9:hover .c2 {
+  .c6:hover,
+  .c6:hover .c2 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-contained:hover,
-  .c9.RcIconButton-contained:hover .c2 {
+  .c6.RcIconButton-contained:hover,
+  .c6.RcIconButton-contained:hover .c2 {
     color: #fff;
   }
 }
@@ -1250,6 +1187,9 @@ Array [
         use icon prop
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>,
   .c4 {
   width: 1em;
@@ -1268,37 +1208,37 @@ Array [
   font-size: 16px;
 }
 
-.c9,
-.c9 .c2 {
+.c6,
+.c6 .c2 {
   font-size: 16px;
 }
 
-.c9:active,
-.c9:active .c2 {
+.c6:active,
+.c6:active .c2 {
   color: #666666;
 }
 
-.c9.focus-visible:active,
-.c9[data-focus-visible-added]:active,
-.c9.focus-visible:active .c2,
-.c9[data-focus-visible-added]:active .c2 {
+.c6.focus-visible:active,
+.c6[data-focus-visible-added]:active,
+.c6.focus-visible:active .c2,
+.c6[data-focus-visible-added]:active .c2 {
   color: rgba(102,102,102,0.88);
 }
 
-.c9.RcIconButton-disabled,
-.c9.RcIconButton-disabled .c2 {
+.c6.RcIconButton-disabled,
+.c6.RcIconButton-disabled .c2 {
   color: #B9B9B9;
 }
 
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added],
-.c9.RcIconButton-contained.focus-visible .c2,
-.c9.RcIconButton-contained[data-focus-visible-added] .c2 {
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added],
+.c6.RcIconButton-contained.focus-visible .c2,
+.c6.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
 }
 
-.c9.RcIconButton-contained:active,
-.c9.RcIconButton-contained:active .c2 {
+.c6.RcIconButton-contained:active,
+.c6.RcIconButton-contained:active .c2 {
   color: #fff;
 }
 
@@ -1319,21 +1259,6 @@ Array [
   height: unset;
   color: #666666;
   min-width: unset;
-}
-
-.c1 > .c6,
-.c1 > .sc-gGLxEB {
-  margin-right: 4px;
-}
-
-.c1 > .c7 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.c1 > .c8,
-.c1 > .c2 {
-  margin-right: 8px;
 }
 
 .c5 {
@@ -1403,25 +1328,16 @@ Array [
   font-weight: 700;
 }
 
-.c0 .c10 {
-  margin-right: 0;
-}
-
-.c0 .c10 > .c7 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 @media (hover:hover) and (pointer:fine) {
-  .c9:hover,
-  .c9:hover .c2 {
+  .c6:hover,
+  .c6:hover .c2 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-contained:hover,
-  .c9.RcIconButton-contained:hover .c2 {
+  .c6.RcIconButton-contained:hover,
+  .c6.RcIconButton-contained:hover .c2 {
     color: #fff;
   }
 }
@@ -1485,6 +1401,9 @@ Array [
         use symbol prop
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>,
   .c4 {
   width: 1em;
@@ -1503,37 +1422,37 @@ Array [
   font-size: 16px;
 }
 
-.c9,
-.c9 .c2 {
+.c6,
+.c6 .c2 {
   font-size: 16px;
 }
 
-.c9:active,
-.c9:active .c2 {
+.c6:active,
+.c6:active .c2 {
   color: #666666;
 }
 
-.c9.focus-visible:active,
-.c9[data-focus-visible-added]:active,
-.c9.focus-visible:active .c2,
-.c9[data-focus-visible-added]:active .c2 {
+.c6.focus-visible:active,
+.c6[data-focus-visible-added]:active,
+.c6.focus-visible:active .c2,
+.c6[data-focus-visible-added]:active .c2 {
   color: rgba(102,102,102,0.88);
 }
 
-.c9.RcIconButton-disabled,
-.c9.RcIconButton-disabled .c2 {
+.c6.RcIconButton-disabled,
+.c6.RcIconButton-disabled .c2 {
   color: #B9B9B9;
 }
 
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added],
-.c9.RcIconButton-contained.focus-visible .c2,
-.c9.RcIconButton-contained[data-focus-visible-added] .c2 {
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added],
+.c6.RcIconButton-contained.focus-visible .c2,
+.c6.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
 }
 
-.c9.RcIconButton-contained:active,
-.c9.RcIconButton-contained:active .c2 {
+.c6.RcIconButton-contained:active,
+.c6.RcIconButton-contained:active .c2 {
   color: #fff;
 }
 
@@ -1554,21 +1473,6 @@ Array [
   height: unset;
   color: #666666;
   min-width: unset;
-}
-
-.c1 > .c6,
-.c1 > .sc-gGLxEB {
-  margin-right: 4px;
-}
-
-.c1 > .c7 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.c1 > .c8,
-.c1 > .c2 {
-  margin-right: 8px;
 }
 
 .c5 {
@@ -1638,25 +1542,16 @@ Array [
   font-weight: 700;
 }
 
-.c0 .c10 {
-  margin-right: 0;
-}
-
-.c0 .c10 > .c7 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 @media (hover:hover) and (pointer:fine) {
-  .c9:hover,
-  .c9:hover .c2 {
+  .c6:hover,
+  .c6:hover .c2 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-contained:hover,
-  .c9.RcIconButton-contained:hover .c2 {
+  .c6.RcIconButton-contained:hover,
+  .c6.RcIconButton-contained:hover .c2 {
     color: #fff;
   }
 }
@@ -1720,6 +1615,9 @@ Array [
         use ListItemIcon
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>,
   .c0 {
   position: relative;
@@ -1808,7 +1706,7 @@ Array [
   >
     IconControl Case
   </li>,
-  .c6 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -1817,7 +1715,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1825,50 +1723,50 @@ Array [
   font-size: 20px;
 }
 
-.c12,
-.c12 .c4 {
+.c7,
+.c7 .c3 {
   font-size: 16px;
 }
 
-.c12:active,
-.c12:active .c4 {
+.c7:active,
+.c7:active .c3 {
   color: #666666;
 }
 
-.c12.focus-visible:active,
-.c12[data-focus-visible-added]:active,
-.c12.focus-visible:active .c4,
-.c12[data-focus-visible-added]:active .c4 {
+.c7.focus-visible:active,
+.c7[data-focus-visible-added]:active,
+.c7.focus-visible:active .c3,
+.c7[data-focus-visible-added]:active .c3 {
   color: rgba(102,102,102,0.88);
 }
 
-.c12.RcIconButton-disabled,
-.c12.RcIconButton-disabled .c4 {
+.c7.RcIconButton-disabled,
+.c7.RcIconButton-disabled .c3 {
   color: #B9B9B9;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added],
-.c12.RcIconButton-contained.focus-visible .c4,
-.c12.RcIconButton-contained[data-focus-visible-added] .c4 {
+.c7.RcIconButton-contained.focus-visible,
+.c7.RcIconButton-contained[data-focus-visible-added],
+.c7.RcIconButton-contained.focus-visible .c3,
+.c7.RcIconButton-contained[data-focus-visible-added] .c3 {
   color: #fff;
 }
 
-.c12.RcIconButton-contained:active,
-.c12.RcIconButton-contained:active .c4 {
+.c7.RcIconButton-contained:active,
+.c7.RcIconButton-contained:active .c3 {
   color: #fff;
 }
 
-.c3.RcCheckbox-root {
+.c2.RcCheckbox-root {
   color: #939393;
   padding: 10px;
 }
 
-.c3.RcCheckbox-root.RcCheckbox-checked {
+.c2.RcCheckbox-root.RcCheckbox-checked {
   color: #066FAC;
 }
 
-.c3.RcCheckbox-root.RcCheckbox-disabled {
+.c2.RcCheckbox-root.RcCheckbox-disabled {
   color: #B9B9B9;
 }
 
@@ -1891,41 +1789,20 @@ Array [
   min-width: unset;
 }
 
-.c1 > .c9,
-.c1 > .c2 {
-  margin-right: 4px;
-}
-
-.c1 > .c10 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.c1 > .c11,
-.c1 > .c4 {
-  margin-right: 8px;
-}
-
-.c8 .c13 > .c9,
-.c8 .c13 > .c2,
-.c8 .c13 > .c10 {
-  margin-right: 0;
-}
-
-.c7 {
+.c6 {
   padding: 0;
   margin: 0 8px 0 0;
 }
 
-.c7.RcListItemText-multiline {
+.c6.RcListItemText-multiline {
   margin: 4px 8px 4px 0px;
 }
 
-.c7.RcListItemText-inset {
+.c6.RcListItemText-inset {
   padding-left: 56px;
 }
 
-.c7 .RcListItemText-primary {
+.c6 .RcListItemText-primary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1938,7 +1815,7 @@ Array [
   color: #121212;
 }
 
-.c7 .RcListItemText-secondary {
+.c6 .RcListItemText-secondary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1979,25 +1856,16 @@ Array [
   font-weight: 700;
 }
 
-.c0 .c13 {
-  margin-right: 0;
-}
-
-.c0 .c13 > .c10 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 @media (hover:hover) and (pointer:fine) {
-  .c12:hover,
-  .c12:hover .c4 {
+  .c7:hover,
+  .c7:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover,
-  .c12.RcIconButton-contained:hover .c4 {
+  .c7.RcIconButton-contained:hover,
+  .c7.RcIconButton-contained:hover .c3 {
     color: #fff;
   }
 }
@@ -2007,11 +1875,11 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c3.RcCheckbox-root:hover {
+  .c2.RcCheckbox-root:hover {
     background-color: rgba(147,147,147,0.12);
   }
 
-  .c3.RcCheckbox-root:hover.RcCheckbox-checked {
+  .c2.RcCheckbox-root:hover.RcCheckbox-checked {
     color: rgba(6,111,172,0.92);
     background-color: rgba(6,111,172,0.12);
   }
@@ -2046,7 +1914,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-270 MuiCheckbox-root RcCheckbox-root c2 c3"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-270 MuiCheckbox-root RcCheckbox-root c2"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -2070,10 +1938,10 @@ Array [
             type="checkbox"
           />
           <span
-            className="c4 c5 unselect icon"
+            className="c3 c4 unselect icon"
           >
             <svg
-              className="c6"
+              className="c5"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2084,10 +1952,13 @@ Array [
             
           </span>
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </span>
     </div>
     <div
-      className="MuiListItemText-root c7"
+      className="MuiListItemText-root c6"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
@@ -2095,21 +1966,24 @@ Array [
         Checkbox Case
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>,
-  .c3.RcRadio-root {
+  .c2.RcRadio-root {
   color: #939393;
   padding: 10px;
 }
 
-.c3.RcRadio-root.RcRadio-checked {
+.c2.RcRadio-root.RcRadio-checked {
   color: #066FAC;
 }
 
-.c3.RcRadio-root.RcRadio-disabled {
+.c2.RcRadio-root.RcRadio-disabled {
   color: #B9B9B9;
 }
 
-.c3 .RadioButtonIcon-root svg {
+.c2 .RadioButtonIcon-root svg {
   font-size: 24px;
   margin: -2px;
 }
@@ -2133,41 +2007,20 @@ Array [
   min-width: unset;
 }
 
-.c1 > .c2,
-.c1 > .sc-gGLxEB {
-  margin-right: 4px;
-}
-
-.c1 > .c6 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.c1 > .c7,
-.c1 > .sc-eCApnc {
-  margin-right: 8px;
-}
-
-.c5 .c8 > .c2,
-.c5 .c8 > .sc-gGLxEB,
-.c5 .c8 > .c6 {
-  margin-right: 0;
-}
-
-.c4 {
+.c3 {
   padding: 0;
   margin: 0 8px 0 0;
 }
 
-.c4.RcListItemText-multiline {
+.c3.RcListItemText-multiline {
   margin: 4px 8px 4px 0px;
 }
 
-.c4.RcListItemText-inset {
+.c3.RcListItemText-inset {
   padding-left: 56px;
 }
 
-.c4 .RcListItemText-primary {
+.c3 .RcListItemText-primary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2180,7 +2033,7 @@ Array [
   color: #121212;
 }
 
-.c4 .RcListItemText-secondary {
+.c3 .RcListItemText-secondary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2221,15 +2074,6 @@ Array [
   font-weight: 700;
 }
 
-.c0 .c8 {
-  margin-right: 0;
-}
-
-.c0 .c8 > .c6 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 @media (hover:hover) and (pointer:fine) {
 
 }
@@ -2247,11 +2091,11 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c3.RcRadio-root:hover {
+  .c2.RcRadio-root:hover {
     background-color: rgba(147,147,147,0.12);
   }
 
-  .c3.RcRadio-root:hover.RcRadio-checked {
+  .c2.RcRadio-root:hover.RcRadio-checked {
     color: rgba(6,111,172,0.92);
     background-color: rgba(6,111,172,0.12);
   }
@@ -2282,7 +2126,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-270 MuiRadio-root RcRadio-root c2 c3"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-270 MuiRadio-root RcRadio-root c2"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -2329,10 +2173,13 @@ Array [
             </svg>
           </div>
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </span>
     </div>
     <div
-      className="MuiListItemText-root c4"
+      className="MuiListItemText-root c3"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
@@ -2340,6 +2187,9 @@ Array [
         Radio Case
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>,
   .c3.RcSwitch-root {
   padding: 0px;
@@ -2426,25 +2276,9 @@ Array [
   min-width: unset;
 }
 
-.c1 > .c6,
-.c1 > .sc-gGLxEB {
-  margin-right: 4px;
-}
-
 .c1 > .c2 {
   margin-left: 4px;
   margin-right: 4px;
-}
-
-.c1 > .c7,
-.c1 > .sc-eCApnc {
-  margin-right: 8px;
-}
-
-.c5 .c8 > .c6,
-.c5 .c8 > .sc-gGLxEB,
-.c5 .c8 > .c2 {
-  margin-right: 0;
 }
 
 .c4 {
@@ -2512,15 +2346,6 @@ Array [
   min-height: auto;
   line-height: 22px;
   font-weight: 700;
-}
-
-.c0 .c8 {
-  margin-right: 0;
-}
-
-.c0 .c8 > .c2 {
-  margin-left: 4px;
-  margin-right: 4px;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2618,6 +2443,9 @@ Array [
         Switch Case
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>,
   .c0 {
   position: relative;
@@ -2726,16 +2554,6 @@ Array [
   color: #666666;
 }
 
-.c2 .c5 {
-  margin-right: -8px;
-}
-
-.c2 .c5 > .c3,
-.c2 .c5 > .sc-gGLxEB,
-.c2 .c5 > .c4 {
-  margin-right: 0;
-}
-
 .c2 > * + * {
   margin-left: 8px;
 }
@@ -2805,15 +2623,6 @@ Array [
   min-height: auto;
   line-height: 22px;
   font-weight: 700;
-}
-
-.c0 .c5 {
-  margin-right: 0;
-}
-
-.c0 .c5 > .c4 {
-  margin-left: 4px;
-  margin-right: 4px;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2870,6 +2679,9 @@ Array [
     >
       secondaryAction string Action
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>,
   .c5 {
   width: 1em;
@@ -2888,43 +2700,38 @@ Array [
   font-size: 16px;
 }
 
-.c10,
-.c10 .c3 {
+.c6,
+.c6 .c3 {
   font-size: 16px;
 }
 
-.c10:active,
-.c10:active .c3 {
+.c6:active,
+.c6:active .c3 {
   color: #666666;
 }
 
-.c10.focus-visible:active,
-.c10[data-focus-visible-added]:active,
-.c10.focus-visible:active .c3,
-.c10[data-focus-visible-added]:active .c3 {
+.c6.focus-visible:active,
+.c6[data-focus-visible-added]:active,
+.c6.focus-visible:active .c3,
+.c6[data-focus-visible-added]:active .c3 {
   color: rgba(102,102,102,0.88);
 }
 
-.c10.RcIconButton-disabled,
-.c10.RcIconButton-disabled .c3 {
+.c6.RcIconButton-disabled,
+.c6.RcIconButton-disabled .c3 {
   color: #B9B9B9;
 }
 
-.c10.RcIconButton-contained.focus-visible,
-.c10.RcIconButton-contained[data-focus-visible-added],
-.c10.RcIconButton-contained.focus-visible .c3,
-.c10.RcIconButton-contained[data-focus-visible-added] .c3 {
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added],
+.c6.RcIconButton-contained.focus-visible .c3,
+.c6.RcIconButton-contained[data-focus-visible-added] .c3 {
   color: #fff;
 }
 
-.c10.RcIconButton-contained:active,
-.c10.RcIconButton-contained:active .c3 {
+.c6.RcIconButton-contained:active,
+.c6.RcIconButton-contained:active .c3 {
   color: #fff;
-}
-
-.c6 > .c9,
-.c6 > .c3 {
-  margin-right: 8px;
 }
 
 .c2 {
@@ -2945,16 +2752,6 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 16px;
   color: #666666;
-}
-
-.c2 .c11 {
-  margin-right: -8px;
-}
-
-.c2 .c11 > .c7,
-.c2 .c11 > .sc-gGLxEB,
-.c2 .c11 > .c8 {
-  margin-right: 0;
 }
 
 .c2 > * + * {
@@ -3028,25 +2825,16 @@ Array [
   font-weight: 700;
 }
 
-.c0 .c11 {
-  margin-right: 0;
-}
-
-.c0 .c11 > .c8 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 @media (hover:hover) and (pointer:fine) {
-  .c10:hover,
-  .c10:hover .c3 {
+  .c6:hover,
+  .c6:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-contained:hover,
-  .c10.RcIconButton-contained:hover .c3 {
+  .c6.RcIconButton-contained:hover,
+  .c6.RcIconButton-contained:hover .c3 {
     color: #fff;
   }
 }
@@ -3113,6 +2901,9 @@ Array [
         
       </span>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>,
   .c7 {
   width: 1em;
@@ -3267,16 +3058,6 @@ Array [
   color: #666666;
 }
 
-.c2 .c11 {
-  margin-right: -8px;
-}
-
-.c2 .c11 > .c9,
-.c2 .c11 > .sc-gGLxEB,
-.c2 .c11 > .c10 {
-  margin-right: 0;
-}
-
 .c2 > * + * {
   margin-left: 8px;
 }
@@ -3346,15 +3127,6 @@ Array [
   min-height: auto;
   line-height: 22px;
   font-weight: 700;
-}
-
-.c0 .c11 {
-  margin-right: 0;
-}
-
-.c0 .c11 > .c10 {
-  margin-left: 4px;
-  margin-right: 4px;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3459,6 +3231,9 @@ Array [
         </span>
       </button>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>,
   .c0 {
   position: relative;
@@ -3547,7 +3322,7 @@ Array [
   >
     SecondaryActionControl Case:
   </li>,
-  .c8 {
+  .c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -3556,7 +3331,7 @@ Array [
   pointer-events: none;
 }
 
-.c7 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3564,37 +3339,37 @@ Array [
   font-size: 20px;
 }
 
-.c14,
-.c14 .c6 {
+.c10,
+.c10 .c5 {
   font-size: 16px;
 }
 
-.c14:active,
-.c14:active .c6 {
+.c10:active,
+.c10:active .c5 {
   color: #666666;
 }
 
-.c14.focus-visible:active,
-.c14[data-focus-visible-added]:active,
-.c14.focus-visible:active .c6,
-.c14[data-focus-visible-added]:active .c6 {
+.c10.focus-visible:active,
+.c10[data-focus-visible-added]:active,
+.c10.focus-visible:active .c5,
+.c10[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
-.c14.RcIconButton-disabled,
-.c14.RcIconButton-disabled .c6 {
+.c10.RcIconButton-disabled,
+.c10.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
 
-.c14.RcIconButton-contained.focus-visible,
-.c14.RcIconButton-contained[data-focus-visible-added],
-.c14.RcIconButton-contained.focus-visible .c6,
-.c14.RcIconButton-contained[data-focus-visible-added] .c6 {
+.c10.RcIconButton-contained.focus-visible,
+.c10.RcIconButton-contained[data-focus-visible-added],
+.c10.RcIconButton-contained.focus-visible .c5,
+.c10.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
 }
 
-.c14.RcIconButton-contained:active,
-.c14.RcIconButton-contained:active .c6 {
+.c10.RcIconButton-contained:active,
+.c10.RcIconButton-contained:active .c5 {
   color: #fff;
 }
 
@@ -3626,16 +3401,16 @@ Array [
   margin-right: 0;
 }
 
-.c5.RcCheckbox-root {
+.c4.RcCheckbox-root {
   color: #939393;
   padding: 10px;
 }
 
-.c5.RcCheckbox-root.RcCheckbox-checked {
+.c4.RcCheckbox-root.RcCheckbox-checked {
   color: #066FAC;
 }
 
-.c5.RcCheckbox-root.RcCheckbox-disabled {
+.c4.RcCheckbox-root.RcCheckbox-disabled {
   color: #B9B9B9;
 }
 
@@ -3658,22 +3433,7 @@ Array [
   min-width: unset;
 }
 
-.c1 > .c11,
-.c1 > .c4 {
-  margin-right: 4px;
-}
-
-.c1 > .c12 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.c1 > .c13,
-.c1 > .c6 {
-  margin-right: 8px;
-}
-
-.c10 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3693,34 +3453,28 @@ Array [
   color: #666666;
 }
 
-.c10 .c2 {
+.c9 .c2 {
   margin-right: -8px;
 }
 
-.c10 .c2 > .c11,
-.c10 .c2 > .c4,
-.c10 .c2 > .c12 {
-  margin-right: 0;
-}
-
-.c10 > * + * {
+.c9 > * + * {
   margin-left: 8px;
 }
 
-.c9 {
+.c8 {
   padding: 0;
   margin: 0 8px 0 0;
 }
 
-.c9.RcListItemText-multiline {
+.c8.RcListItemText-multiline {
   margin: 4px 8px 4px 0px;
 }
 
-.c9.RcListItemText-inset {
+.c8.RcListItemText-inset {
   padding-left: 56px;
 }
 
-.c9 .RcListItemText-primary {
+.c8 .RcListItemText-primary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -3733,7 +3487,7 @@ Array [
   color: #121212;
 }
 
-.c9 .RcListItemText-secondary {
+.c8 .RcListItemText-secondary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -3778,21 +3532,16 @@ Array [
   margin-right: 0;
 }
 
-.c0 .c2 > .c12 {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 @media (hover:hover) and (pointer:fine) {
-  .c14:hover,
-  .c14:hover .c6 {
+  .c10:hover,
+  .c10:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c14.RcIconButton-contained:hover,
-  .c14.RcIconButton-contained:hover .c6 {
+  .c10.RcIconButton-contained:hover,
+  .c10.RcIconButton-contained:hover .c5 {
     color: #fff;
   }
 }
@@ -3802,11 +3551,11 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcCheckbox-root:hover {
+  .c4.RcCheckbox-root:hover {
     background-color: rgba(147,147,147,0.12);
   }
 
-  .c5.RcCheckbox-root:hover.RcCheckbox-checked {
+  .c4.RcCheckbox-root:hover.RcCheckbox-checked {
     color: rgba(6,111,172,0.92);
     background-color: rgba(6,111,172,0.12);
   }
@@ -3844,7 +3593,7 @@ Array [
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-270 MuiCheckbox-root RcCheckbox-root c4 c5"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-270 MuiCheckbox-root RcCheckbox-root c4"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -3868,10 +3617,10 @@ Array [
               type="checkbox"
             />
             <span
-              className="c6 c7 unselect icon"
+              className="c5 c6 unselect icon"
             >
               <svg
-                className="c8"
+                className="c7"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -3882,6 +3631,9 @@ Array [
               
             </span>
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </span>
         <span
           className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
@@ -3891,7 +3643,7 @@ Array [
       </label>
     </div>
     <div
-      className="MuiListItemText-root c9"
+      className="MuiListItemText-root c8"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
@@ -3900,14 +3652,14 @@ Array [
       </span>
     </div>
     <div
-      className="MuiListItemSecondaryAction-root c10"
+      className="MuiListItemSecondaryAction-root c9"
     >
       <label
         className="MuiFormControlLabel-root RcFormControlLabel-root c2 c3"
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-270 MuiCheckbox-root RcCheckbox-root c4 c5"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-270 MuiCheckbox-root RcCheckbox-root c4"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -3931,10 +3683,10 @@ Array [
               type="checkbox"
             />
             <span
-              className="c6 c7 unselect icon"
+              className="c5 c6 unselect icon"
             >
               <svg
-                className="c8"
+                className="c7"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -3945,6 +3697,9 @@ Array [
               
             </span>
           </span>
+          <span
+            className="MuiTouchRipple-root"
+          />
         </span>
         <span
           className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
@@ -3953,6 +3708,9 @@ Array [
         </span>
       </label>
     </div>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </li>,
 ]
 `;
@@ -4023,15 +3781,6 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/MenuItem/MenuItem Examples Seco
   min-height: auto;
   line-height: 22px;
   font-weight: 700;
-}
-
-.c0 .sc-oeezt {
-  margin-right: 0;
-}
-
-.c0 .sc-oeezt > .sc-hhIiOg {
-  margin-left: 4px;
-  margin-right: 4px;
 }
 
 <li

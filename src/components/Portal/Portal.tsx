@@ -12,4 +12,5 @@ const _RcPortal: FunctionComponent<RcPortalProps> = (inProps) => {
 
 const RcPortal = _RcPortal;
 
-export { RcPortal, RcPortalProps };
+export { RcPortal };
+export type { RcPortalProps };

@@ -608,9 +608,5 @@ RcTimePicker.defaultProps = {
 
 RcTimePicker.displayName = 'RcTimePicker';
 
-export {
-  RcTimePicker,
-  RcTimePickerProps,
-  RcTimePickerSize,
-  RcClickFiledStyleProps,
-};
+export { RcTimePicker };
+export type { RcTimePickerProps, RcTimePickerSize, RcClickFiledStyleProps };

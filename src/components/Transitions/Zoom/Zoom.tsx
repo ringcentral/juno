@@ -1,5 +1,7 @@
-import MuiZoom, { ZoomProps as MuiZoomProps } from '@material-ui/core/Zoom';
 import React, { forwardRef } from 'react';
+
+import MuiZoom, { ZoomProps as MuiZoomProps } from '@material-ui/core/Zoom';
+
 import { useThemeProps } from '../../../foundation';
 
 type RcZoomProps = MuiZoomProps;
@@ -12,4 +14,5 @@ const _RcZoom = forwardRef<any, RcZoomProps>((inProps, ref) => {
 
 const RcZoom = _RcZoom;
 
-export { RcZoom, RcZoomProps };
+export { RcZoom };
+export type { RcZoomProps };

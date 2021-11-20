@@ -8,4 +8,5 @@ const RcHidden = MuiHidden;
 
 RcHidden.displayName = 'RcHidden';
 
-export { RcHidden, RcHiddenProps };
+export { RcHidden };
+export type { RcHiddenProps };
