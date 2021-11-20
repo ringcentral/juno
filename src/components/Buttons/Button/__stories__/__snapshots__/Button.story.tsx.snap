@@ -1348,7 +1348,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
   >
     <li>
       <div
-        className="MuiBox-root MuiBox-root-4"
+        className="MuiBox-root MuiBox-root-49"
       >
         <p
           className="MuiTypography-root c6 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1471,7 +1471,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
         </button>
       </div>
       <div
-        className="MuiBox-root MuiBox-root-5"
+        className="MuiBox-root MuiBox-root-50"
       >
         <p
           className="MuiTypography-root c6 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1594,7 +1594,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
         </button>
       </div>
       <div
-        className="MuiBox-root MuiBox-root-6"
+        className="MuiBox-root MuiBox-root-51"
       >
         <p
           className="MuiTypography-root c6 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1717,7 +1717,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
         </button>
       </div>
       <div
-        className="MuiBox-root MuiBox-root-7"
+        className="MuiBox-root MuiBox-root-52"
       >
         <p
           className="MuiTypography-root c6 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1840,7 +1840,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
         </button>
       </div>
       <div
-        className="MuiBox-root MuiBox-root-8"
+        className="MuiBox-root MuiBox-root-53"
       >
         <p
           className="MuiTypography-root c6 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -2419,7 +2419,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
 >
   <li>
     <div
-      className="MuiBox-root MuiBox-root-9"
+      className="MuiBox-root MuiBox-root-54"
     >
       <p
         className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -2496,7 +2496,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-10"
+      className="MuiBox-root MuiBox-root-55"
     >
       <p
         className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -2573,7 +2573,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-11"
+      className="MuiBox-root MuiBox-root-56"
     >
       <p
         className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -2650,7 +2650,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-12"
+      className="MuiBox-root MuiBox-root-57"
     >
       <p
         className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -2727,7 +2727,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-13"
+      className="MuiBox-root MuiBox-root-58"
     >
       <p
         className="MuiTypography-root c1 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -4271,7 +4271,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Keep Elevation 1
 }
 
 <div
-  className="MuiBox-root MuiBox-root-14"
+  className="MuiBox-root MuiBox-root-59"
 >
   <button
     className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"

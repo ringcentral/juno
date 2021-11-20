@@ -2082,7 +2082,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
         New Call
       </p>
       <div
-        className="MuiBox-root MuiBox-root-86"
+        className="MuiBox-root MuiBox-root-127"
       />
       <button
         className="MuiButtonBase-root c5 c6 RcIconButton-root"
@@ -3367,7 +3367,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
 }
 
 <div
-  className="MuiBox-root MuiBox-root-87"
+  className="MuiBox-root MuiBox-root-128"
 >
   <div
     className="c0"
@@ -4004,7 +4004,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
     </div>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-88"
+    className="MuiBox-root MuiBox-root-129"
     style={
       Object {
         "overflowX": "hidden",

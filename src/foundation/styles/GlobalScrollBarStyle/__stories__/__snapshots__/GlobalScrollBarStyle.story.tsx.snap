@@ -10,7 +10,7 @@ exports[`Storyshots 💅 Style system/utils/GlobalScrollBarStyle GlobalScrollBar
 }
 
 <div
-  className="MuiBox-root MuiBox-root-315"
+  className="MuiBox-root MuiBox-root-2"
 >
   <h5
     className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"

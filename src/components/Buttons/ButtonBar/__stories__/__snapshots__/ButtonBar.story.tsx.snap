@@ -79,7 +79,7 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Checkbox Button
     <span
       aria-describedby={null}
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-15 MuiCheckbox-root RcCheckbox-root c1"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-349 MuiCheckbox-root RcCheckbox-root c1"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -99,7 +99,7 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Checkbox Button
         className="MuiIconButton-label"
       >
         <input
-          className="PrivateSwitchBase-input-18"
+          className="PrivateSwitchBase-input-352"
           data-indeterminate={false}
           onChange={[Function]}
           type="checkbox"
@@ -126,7 +126,7 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Checkbox Button
     <span
       aria-describedby={null}
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-15 MuiCheckbox-root RcCheckbox-root c1"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-349 MuiCheckbox-root RcCheckbox-root c1"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -146,7 +146,7 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Checkbox Button
         className="MuiIconButton-label"
       >
         <input
-          className="PrivateSwitchBase-input-18"
+          className="PrivateSwitchBase-input-352"
           data-indeterminate={false}
           onChange={[Function]}
           type="checkbox"
@@ -172,7 +172,7 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Checkbox Button
     </span>
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-15 MuiCheckbox-root RcCheckbox-root c1"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-349 MuiCheckbox-root RcCheckbox-root c1"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -191,7 +191,7 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Checkbox Button
         className="MuiIconButton-label"
       >
         <input
-          className="PrivateSwitchBase-input-18"
+          className="PrivateSwitchBase-input-352"
           data-indeterminate={false}
           onChange={[Function]}
           type="checkbox"
@@ -217,7 +217,7 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Checkbox Button
     </span>
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-15 MuiCheckbox-root RcCheckbox-root c1"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-349 MuiCheckbox-root RcCheckbox-root c1"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -236,7 +236,7 @@ exports[`Storyshots 🖤 deprecated Components/Buttons/ButtonBar Checkbox Button
         className="MuiIconButton-label"
       >
         <input
-          className="PrivateSwitchBase-input-18"
+          className="PrivateSwitchBase-input-352"
           data-indeterminate={false}
           onChange={[Function]}
           type="checkbox"

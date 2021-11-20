@@ -1071,10 +1071,10 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 <div
-  className="MuiBox-root MuiBox-root-52"
+  className="MuiBox-root MuiBox-root-93"
 >
   <div
-    className="MuiBox-root MuiBox-root-53"
+    className="MuiBox-root MuiBox-root-94"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1117,7 +1117,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-54"
+    className="MuiBox-root MuiBox-root-95"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1160,7 +1160,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-55"
+    className="MuiBox-root MuiBox-root-96"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1203,7 +1203,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-56"
+    className="MuiBox-root MuiBox-root-97"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1246,7 +1246,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-57"
+    className="MuiBox-root MuiBox-root-98"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1289,7 +1289,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-58"
+    className="MuiBox-root MuiBox-root-99"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1332,7 +1332,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-59"
+    className="MuiBox-root MuiBox-root-100"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1375,7 +1375,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-60"
+    className="MuiBox-root MuiBox-root-101"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -2739,10 +2739,10 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 <div
-  className="MuiBox-root MuiBox-root-19"
+  className="MuiBox-root MuiBox-root-60"
 >
   <div
-    className="MuiBox-root MuiBox-root-20"
+    className="MuiBox-root MuiBox-root-61"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -2828,7 +2828,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-21"
+    className="MuiBox-root MuiBox-root-62"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -2914,7 +2914,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-22"
+    className="MuiBox-root MuiBox-root-63"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -3000,7 +3000,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-23"
+    className="MuiBox-root MuiBox-root-64"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -3086,7 +3086,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-24"
+    className="MuiBox-root MuiBox-root-65"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -7597,10 +7597,10 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 <div
-  className="MuiBox-root MuiBox-root-61"
+  className="MuiBox-root MuiBox-root-102"
 >
   <div
-    className="MuiBox-root MuiBox-root-62"
+    className="MuiBox-root MuiBox-root-103"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -7791,7 +7791,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
     <br />
   </div>
   <div
-    className="MuiBox-root MuiBox-root-63"
+    className="MuiBox-root MuiBox-root-104"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -7982,7 +7982,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
     <br />
   </div>
   <div
-    className="MuiBox-root MuiBox-root-64"
+    className="MuiBox-root MuiBox-root-105"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -8173,7 +8173,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
     <br />
   </div>
   <div
-    className="MuiBox-root MuiBox-root-65"
+    className="MuiBox-root MuiBox-root-106"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -8364,7 +8364,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
     <br />
   </div>
   <div
-    className="MuiBox-root MuiBox-root-66"
+    className="MuiBox-root MuiBox-root-107"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -8555,7 +8555,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
     <br />
   </div>
   <div
-    className="MuiBox-root MuiBox-root-67"
+    className="MuiBox-root MuiBox-root-108"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -8746,7 +8746,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
     <br />
   </div>
   <div
-    className="MuiBox-root MuiBox-root-68"
+    className="MuiBox-root MuiBox-root-109"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12604,10 +12604,10 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-25"
+    className="MuiBox-root MuiBox-root-66"
   >
     <div
-      className="MuiBox-root MuiBox-root-26"
+      className="MuiBox-root MuiBox-root-67"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12650,7 +12650,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-27"
+      className="MuiBox-root MuiBox-root-68"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12693,7 +12693,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-28"
+      className="MuiBox-root MuiBox-root-69"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12736,7 +12736,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-29"
+      className="MuiBox-root MuiBox-root-70"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12779,7 +12779,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-30"
+      className="MuiBox-root MuiBox-root-71"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12822,7 +12822,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-31"
+      className="MuiBox-root MuiBox-root-72"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12865,7 +12865,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-32"
+      className="MuiBox-root MuiBox-root-73"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12908,7 +12908,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-33"
+      className="MuiBox-root MuiBox-root-74"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12951,7 +12951,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-34"
+      className="MuiBox-root MuiBox-root-75"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12994,7 +12994,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-35"
+      className="MuiBox-root MuiBox-root-76"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13037,7 +13037,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-36"
+      className="MuiBox-root MuiBox-root-77"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13080,7 +13080,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-37"
+      className="MuiBox-root MuiBox-root-78"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13123,7 +13123,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-38"
+      className="MuiBox-root MuiBox-root-79"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13166,7 +13166,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-39"
+      className="MuiBox-root MuiBox-root-80"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13209,7 +13209,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-40"
+      className="MuiBox-root MuiBox-root-81"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13252,7 +13252,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-41"
+      className="MuiBox-root MuiBox-root-82"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13295,7 +13295,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-42"
+      className="MuiBox-root MuiBox-root-83"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13338,7 +13338,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-43"
+      className="MuiBox-root MuiBox-root-84"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13381,7 +13381,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-44"
+      className="MuiBox-root MuiBox-root-85"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13424,7 +13424,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-45"
+      className="MuiBox-root MuiBox-root-86"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13467,7 +13467,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-46"
+      className="MuiBox-root MuiBox-root-87"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13510,7 +13510,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-47"
+      className="MuiBox-root MuiBox-root-88"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13553,7 +13553,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-48"
+      className="MuiBox-root MuiBox-root-89"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13596,7 +13596,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-49"
+      className="MuiBox-root MuiBox-root-90"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13639,7 +13639,7 @@ Array [
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-50"
+      className="MuiBox-root MuiBox-root-91"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -15453,7 +15453,7 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-51"
+    className="MuiBox-root MuiBox-root-92"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"

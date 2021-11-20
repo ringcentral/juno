@@ -480,7 +480,7 @@ exports[`Storyshots 🚀 Cleanup Components/Icon Icon With Dark Theme 1`] = `
 >
   <li>
     <button
-      className="MuiButtonBase-root-200 MuiButton-root-173 MuiButton-contained-181 RcButton-contained c1"
+      className="MuiButtonBase-root-241 MuiButton-root-214 MuiButton-contained-222 RcButton-contained c1"
       disabled={false}
       onBlur={[Function]}
       onClick={[Function]}
@@ -498,13 +498,13 @@ exports[`Storyshots 🚀 Cleanup Components/Icon Icon With Dark Theme 1`] = `
       type="button"
     >
       <span
-        className="MuiButton-label-174"
+        className="MuiButton-label-215"
       >
         light
       </span>
     </button>
     <button
-      className="MuiButtonBase-root-200 MuiButton-root-173 MuiButton-contained-181 RcButton-contained c1"
+      className="MuiButtonBase-root-241 MuiButton-root-214 MuiButton-contained-222 RcButton-contained c1"
       disabled={false}
       onBlur={[Function]}
       onClick={[Function]}
@@ -522,7 +522,7 @@ exports[`Storyshots 🚀 Cleanup Components/Icon Icon With Dark Theme 1`] = `
       type="button"
     >
       <span
-        className="MuiButton-label-174"
+        className="MuiButton-label-215"
       >
         dark
       </span>
