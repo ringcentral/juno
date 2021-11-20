@@ -1,4 +1,7 @@
 module.exports = {
+  core: {
+    builder: 'webpack5',
+  },
   stories: ['../src/**/*.story.tsx', '../src/**/*.story.mdx'],
   addons: [
     '@storybook/addon-knobs',
