@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { Meta, Story } from '@storybook/react';
 import range from 'lodash/range';
 import React, { ComponentProps, FunctionComponent, useState } from 'react';
 
@@ -163,13 +163,15 @@ export const DrawerExamples: Story<DrawerProps> = ({
     right: false,
   });
 
-  const toggleDrawer = (anchor: Anchor, open: boolean) => (
-    event: React.KeyboardEvent | React.MouseEvent,
-    reason?: 'backdropClick' | 'escapeKeyDown',
-  ) => {
-    console.log(event, reason);
-    setState({ ...state, [anchor]: open });
-  };
+  const toggleDrawer =
+    (anchor: Anchor, open: boolean) =>
+    (
+      event: React.KeyboardEvent | React.MouseEvent,
+      reason?: 'backdropClick' | 'escapeKeyDown',
+    ) => {
+      console.log(event, reason);
+      setState({ ...state, [anchor]: open });
+    };
 
   return (
     <div>
@@ -234,7 +236,7 @@ DrawerWithInlinePaper.args = {
 // https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
 function checkIsMobile() {
   let check = false;
-  (function(a) {
+  (function (a) {
     if (
       /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(
         a,
@@ -264,7 +266,7 @@ const CustomDrawer = styled(RcDrawer)`
   ${RcPaper}${RcPaper} {
     min-width: 360px;
     border-radius: ${radius('md')};
-    margin-bottom: ${spacing(2)}
+    margin-bottom: ${spacing(2)};
   }
 `;
 

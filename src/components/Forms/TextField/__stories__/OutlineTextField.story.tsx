@@ -1,10 +1,12 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
 import React, {
   ComponentProps,
+  FunctionComponent,
   useLayoutEffect,
   useRef,
   useState,
 } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import AddSvg from '../../../../icon/Add';
 import BoxSvg from '../../../../icon/Box';
@@ -36,7 +38,7 @@ export default {
 
 type OutlineTextFieldProps = ComponentProps<typeof RcTextField>;
 
-export const OutlineTextField: Story<OutlineTextFieldProps> = ({
+const OutlineTextFieldComponent: FunctionComponent<OutlineTextFieldProps> = ({
   children,
   value: valueArg,
   size,
@@ -97,6 +99,10 @@ export const OutlineTextField: Story<OutlineTextFieldProps> = ({
   );
 };
 
+export const OutlineTextField: Story<OutlineTextFieldProps> = (args) => (
+  <OutlineTextFieldComponent {...args} />
+);
+
 OutlineTextField.storyName = 'OutlineTextField';
 
 OutlineTextField.args = {
@@ -123,184 +129,187 @@ OutlineTextField.parameters = {
   ],
 };
 
-export const OutlineTextFieldExamples: Story<OutlineTextFieldProps> = ({
-  size,
-  radius,
-}) => {
-  const [value, setValue] = useState<string>('');
+const OutlineTextFieldExamplesComponent: FunctionComponent<OutlineTextFieldProps> =
+  ({ size, radius }) => {
+    const [value, setValue] = useState<string>('');
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(event.target.value);
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+      setValue(event.target.value);
+    };
+
+    return (
+      <>
+        <RcTextField
+          variant="outline"
+          value={value}
+          size={size}
+          radius={radius}
+          placeholder="what's your age?"
+          onChange={handleChange}
+          fullWidth
+        />
+        <br />
+        <RcTextField
+          variant="outline"
+          value={value}
+          size={size}
+          radius="round"
+          InputProps={{
+            startAdornment: <RcIcon symbol={AddSvg} size={size} />,
+            endAdornment: (
+              <RcIconButton variant="plain" size={size} symbol={BoxSvg} />
+            ),
+          }}
+          placeholder="what's your title?"
+          onChange={handleChange}
+          label="Title"
+          fullWidth
+        />
+        <br />
+        <RcTextField
+          variant="outline"
+          value={value}
+          type="password"
+          size={size}
+          radius="zero"
+          InputProps={{
+            endAdornment: (
+              <RcIconButton size={size} variant="plain" symbol={Lock} />
+            ),
+          }}
+          placeholder="what's your password?"
+          onChange={handleChange}
+          label="Password"
+          fullWidth
+        />
+        <br />
+        <RcTextField
+          variant="outline"
+          value={value}
+          size={size}
+          radius={radius}
+          InputProps={{
+            endAdornment: (
+              <RcIconButton size={size} variant="plain" symbol={LockBorder} />
+            ),
+          }}
+          placeholder="what's your title?"
+          onChange={handleChange}
+          label="Title"
+          fullWidth
+          focused
+        />
+        <br />
+        <RcTextField
+          variant="outline"
+          value={value}
+          size={size}
+          radius={radius}
+          placeholder="what's your title?"
+          onChange={handleChange}
+          label="Title"
+          error
+        />
+        <br />
+        <RcTextField
+          variant="outline"
+          value={value}
+          placeholder="what's your title?"
+          size={size}
+          radius={radius}
+          onChange={handleChange}
+          InputProps={{
+            startAdornment: (
+              <RcIcon size={size} color="disabled.f02" symbol={SearchNav} />
+            ),
+            endAdornment: (
+              <>
+                <span>clear</span>
+                <RcIconButton
+                  disabled
+                  size={size}
+                  variant="plain"
+                  symbol={Close}
+                />
+              </>
+            ),
+          }}
+          label="Title"
+          fullWidth
+          disabled
+        />
+      </>
+    );
   };
 
-  return (
-    <>
-      <RcTextField
-        variant="outline"
-        value={value}
-        size={size}
-        radius={radius}
-        placeholder="what's your age?"
-        onChange={handleChange}
-        fullWidth
-      />
-      <br />
-      <RcTextField
-        variant="outline"
-        value={value}
-        size={size}
-        radius="round"
-        InputProps={{
-          startAdornment: <RcIcon symbol={AddSvg} size={size} />,
-          endAdornment: (
-            <RcIconButton variant="plain" size={size} symbol={BoxSvg} />
-          ),
-        }}
-        placeholder="what's your title?"
-        onChange={handleChange}
-        label="Title"
-        fullWidth
-      />
-      <br />
-      <RcTextField
-        variant="outline"
-        value={value}
-        type="password"
-        size={size}
-        radius="zero"
-        InputProps={{
-          endAdornment: (
-            <RcIconButton size={size} variant="plain" symbol={Lock} />
-          ),
-        }}
-        placeholder="what's your password?"
-        onChange={handleChange}
-        label="Password"
-        fullWidth
-      />
-      <br />
-      <RcTextField
-        variant="outline"
-        value={value}
-        size={size}
-        radius={radius}
-        InputProps={{
-          endAdornment: (
-            <RcIconButton size={size} variant="plain" symbol={LockBorder} />
-          ),
-        }}
-        placeholder="what's your title?"
-        onChange={handleChange}
-        label="Title"
-        fullWidth
-        focused
-      />
-      <br />
-      <RcTextField
-        variant="outline"
-        value={value}
-        size={size}
-        radius={radius}
-        placeholder="what's your title?"
-        onChange={handleChange}
-        label="Title"
-        error
-      />
-      <br />
-      <RcTextField
-        variant="outline"
-        value={value}
-        placeholder="what's your title?"
-        size={size}
-        radius={radius}
-        onChange={handleChange}
-        InputProps={{
-          startAdornment: (
-            <RcIcon size={size} color="disabled.f02" symbol={SearchNav} />
-          ),
-          endAdornment: (
-            <>
-              <span>clear</span>
-              <RcIconButton
-                disabled
-                size={size}
-                variant="plain"
-                symbol={Close}
-              />
-            </>
-          ),
-        }}
-        label="Title"
-        fullWidth
-        disabled
-      />
-    </>
-  );
-};
+export const OutlineTextFieldExamples: Story<OutlineTextFieldProps> = (
+  args,
+) => <OutlineTextFieldExamplesComponent {...args} />;
 
 OutlineTextFieldExamples.storyName = 'OutlineTextField Examples';
 
 const sizes = ['small', 'medium', 'large'] as OutlineTextFieldProps['size'][];
 
-export const OutlineTextFieldSizes: Story<OutlineTextFieldProps> = ({
-  children,
-  value: valueArg,
-  ...args
-}) => {
-  switchToControlKnobs();
+const OutlineTextFieldSizesComponent: FunctionComponent<OutlineTextFieldProps> =
+  ({ children, value: valueArg, ...args }) => {
+    switchToControlKnobs();
 
-  const ref = useRef();
-  const inputRef = useRef();
+    const ref = useRef();
+    const inputRef = useRef();
 
-  const [value, setValue] = useState<string>(valueArg as any);
+    const [value, setValue] = useState<string>(valueArg as any);
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(event.target.value);
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+      setValue(event.target.value);
+    };
+
+    useLayoutEffect(() => {
+      console.log(ref, inputRef);
+    }, []);
+
+    return (
+      <>
+        {sizes.map((size) => (
+          <React.Fragment key={size}>
+            <RcTextField
+              {...args}
+              variant="outline"
+              label={size}
+              value={value}
+              size={size}
+              onChange={handleChange}
+              ref={ref}
+              inputRef={inputRef}
+              fullWidth
+              InputProps={{
+                startAdornment: (
+                  <RcIcon
+                    color="neutral.f04"
+                    size={RcOutlineTextFieldIconSizes[size!]}
+                    symbol={BoxSvg}
+                  />
+                ),
+                endAdornment: (
+                  <RcIconButton
+                    color="neutral.f04"
+                    variant="plain"
+                    size={RcOutlineTextFieldIconSizes[size!]}
+                    symbol={AddSvg}
+                  />
+                ),
+              }}
+            />
+            <br />
+            <br />
+          </React.Fragment>
+        ))}
+      </>
+    );
   };
 
-  useLayoutEffect(() => {
-    console.log(ref, inputRef);
-  }, []);
-
-  return (
-    <>
-      {sizes.map((size) => (
-        <React.Fragment key={size}>
-          <RcTextField
-            {...args}
-            variant="outline"
-            label={size}
-            value={value}
-            size={size}
-            onChange={handleChange}
-            ref={ref}
-            inputRef={inputRef}
-            fullWidth
-            InputProps={{
-              startAdornment: (
-                <RcIcon
-                  color="neutral.f04"
-                  size={RcOutlineTextFieldIconSizes[size!]}
-                  symbol={BoxSvg}
-                />
-              ),
-              endAdornment: (
-                <RcIconButton
-                  color="neutral.f04"
-                  variant="plain"
-                  size={RcOutlineTextFieldIconSizes[size!]}
-                  symbol={AddSvg}
-                />
-              ),
-            }}
-          />
-          <br />
-          <br />
-        </React.Fragment>
-      ))}
-    </>
-  );
-};
+export const OutlineTextFieldSizes: Story<OutlineTextFieldProps> = (args) => (
+  <OutlineTextFieldSizesComponent {...args} />
+);
 
 OutlineTextFieldSizes.storyName = 'OutlineTextField Sizes';
 

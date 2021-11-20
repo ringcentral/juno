@@ -1,4 +1,4 @@
-import { Story } from '@storybook/react/types-6-0';
+import { Story } from '@storybook/react';
 import React, { useCallback, useMemo, useState } from 'react';
 
 import { RcBox } from '../../components/Box';

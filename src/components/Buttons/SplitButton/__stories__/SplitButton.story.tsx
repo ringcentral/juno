@@ -1,5 +1,5 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
-import React, { ComponentProps } from 'react';
+import { Meta, Story } from '@storybook/react';
+import React, { ComponentProps, FunctionComponent } from 'react';
 
 import AddSvg from '../../../../icon/Add';
 import ReplySvg from '../../../../icon/Reply';
@@ -34,7 +34,10 @@ export default {
 
 type SplitButtonProps = ComponentProps<typeof RcSplitButton>;
 
-export const SplitButton: Story<SplitButtonProps> = ({ children, ...args }) => {
+const SplitButtonComponent: FunctionComponent<SplitButtonProps> = ({
+  children,
+  ...args
+}) => {
   switchToControlKnobs();
 
   return (
@@ -77,6 +80,10 @@ export const SplitButton: Story<SplitButtonProps> = ({ children, ...args }) => {
   );
 };
 
+export const SplitButton: Story<SplitButtonProps> = (args) => (
+  <SplitButtonComponent {...args} />
+);
+
 SplitButton.args = {
   color: 'primary',
   variant: 'contained',
@@ -111,7 +118,7 @@ const variants = [
   'plainIcon',
 ] as SplitButtonProps['variant'][];
 
-export const SplitButtonExamples: Story<SplitButtonProps> = ({
+const SplitButtonExamplesComponent: FunctionComponent<SplitButtonProps> = ({
   children,
   ...args
 }) => {
@@ -293,6 +300,10 @@ export const SplitButtonExamples: Story<SplitButtonProps> = ({
   );
 };
 
+export const SplitButtonExamples: Story<SplitButtonProps> = (args) => (
+  <SplitButtonExamplesComponent {...args} />
+);
+
 SplitButtonExamples.args = {
   color: 'primary',
   variant: 'contained',
@@ -307,47 +318,49 @@ SplitButtonExamples.args = {
 
 SplitButtonExamples.storyName = 'SplitButton Examples';
 
-export const SplitButtonLoadingExamples: Story<SplitButtonProps> = ({
-  children,
-  ...args
-}) => {
-  switchToControlKnobs();
+const SplitButtonLoadingExamplesComponent: FunctionComponent<SplitButtonProps> =
+  ({ children, ...args }) => {
+    switchToControlKnobs();
 
-  return (
-    <RcGrid container spacing={2}>
-      {variants.map((variant) => (
-        <RcGrid item xs key={variant}>
-          <RcTypography
-            color="neutral.f04"
-            style={{ textTransform: 'capitalize' }}
-          >
-            {variant}
-          </RcTypography>
-          <RcSplitButton
-            {...args}
-            MenuProps={{
-              keepMounted: true,
-              ...args.MenuProps,
-            }}
-            variant={variant}
-            onOpen={() => console.log('open')}
-            onClose={(e, reason) => console.log('close', e, reason)}
-          >
-            <RcMenuItem key={'1'} onClick={(e) => console.log('Text', e)}>
-              Text
-            </RcMenuItem>
-            <RcMenuItem key={'2'} onClick={(e) => console.log('Task', e)}>
-              Task
-            </RcMenuItem>
-            <RcMenuItem key={'3'} onClick={(e) => console.log('Cool', e)}>
-              Cool
-            </RcMenuItem>
-          </RcSplitButton>
-        </RcGrid>
-      ))}
-    </RcGrid>
-  );
-};
+    return (
+      <RcGrid container spacing={2}>
+        {variants.map((variant) => (
+          <RcGrid item xs key={variant}>
+            <RcTypography
+              color="neutral.f04"
+              style={{ textTransform: 'capitalize' }}
+            >
+              {variant}
+            </RcTypography>
+            <RcSplitButton
+              {...args}
+              MenuProps={{
+                keepMounted: true,
+                ...args.MenuProps,
+              }}
+              variant={variant}
+              onOpen={() => console.log('open')}
+              onClose={(e, reason) => console.log('close', e, reason)}
+            >
+              <RcMenuItem key={'1'} onClick={(e) => console.log('Text', e)}>
+                Text
+              </RcMenuItem>
+              <RcMenuItem key={'2'} onClick={(e) => console.log('Task', e)}>
+                Task
+              </RcMenuItem>
+              <RcMenuItem key={'3'} onClick={(e) => console.log('Cool', e)}>
+                Cool
+              </RcMenuItem>
+            </RcSplitButton>
+          </RcGrid>
+        ))}
+      </RcGrid>
+    );
+  };
+
+export const SplitButtonLoadingExamples: Story<SplitButtonProps> = (args) => (
+  <SplitButtonLoadingExamplesComponent {...args} />
+);
 
 SplitButtonLoadingExamples.args = {
   color: 'primary',

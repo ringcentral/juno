@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { Meta, Story } from '@storybook/react';
 import React, {
   ComponentProps,
   FunctionComponent,
@@ -34,7 +34,7 @@ import { RcText } from '../../Text';
 
 // @ts-ignore
 // eslint-disable-next-line
-import polyfill from '!raw-loader!./ResizeObserver.global.js';
+// import polyfill from '!raw-loader!./ResizeObserver.global.js';
 import { VirtualizedMenu } from '../../VirtualizedMenu/__stories__/VirtualizedMenu.story';
 import { DownshiftExamples } from '../../Downshift/__stories__/Downshift.story';
 import { MultiDrawer } from '../../Drawer/__stories__/Drawer.story';
@@ -108,7 +108,7 @@ export const DetachedWindow: Story<DetachedWindowProps> = ({
           if (targetWindow && !targetWindow['ResizeObserver']) {
             const s = targetWindow.document.createElement('script');
             s.type = 'text/javascript';
-            s.innerHTML = `${polyfill}`;
+            // s.innerHTML = `${polyfill}`;
             targetWindow.document.head.appendChild(s);
           }
         }}

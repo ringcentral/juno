@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
 
 import Add from '../../../../icon/Add';
@@ -35,20 +35,22 @@ export const SnackbarAction: Story<SnackbarActionProps> = ({
       type="info"
       size={args.size}
       message="This is an error message."
-      action={[
-        args.variant === 'text' ? (
-          <RcSnackbarAction key="1" {...args}>
-            {children}
+      action={
+        <>
+          {args.variant === 'text' ? (
+            <RcSnackbarAction key="1" {...args}>
+              {children}
+            </RcSnackbarAction>
+          ) : (
+            <RcSnackbarAction key="1" {...args} symbol={Add} />
+          )}
+          <RcSnackbarAction key="action1" disabled>
+            Action
           </RcSnackbarAction>
-        ) : (
-          <RcSnackbarAction key="1" {...args} symbol={Add} />
-        ),
-        <RcSnackbarAction key="action1" disabled>
-          Action
-        </RcSnackbarAction>,
-        <RcSnackbarAction key="action2">Action</RcSnackbarAction>,
-        <RcSnackbarAction key="action3" variant="icon" symbol={Close} />,
-      ]}
+          <RcSnackbarAction key="action2">Action</RcSnackbarAction>
+          <RcSnackbarAction key="action3" variant="icon" symbol={Close} />
+        </>
+      }
     />
   );
 };

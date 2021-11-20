@@ -40,7 +40,7 @@ Lib.makeDirExit(storybookDocPath);
 
   const template = fs.readFileSync(doc.path).toString();
 
-  fs.writeFileSync(target, `import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+  fs.writeFileSync(target, `import { Canvas, Meta, Story } from '@storybook/addon-docs';
 
 ${doc.title}\r\n${template}`);
 });

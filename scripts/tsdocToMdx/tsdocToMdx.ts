@@ -24,7 +24,7 @@ function getContent(doc: { name: string; title: string }, template: string) {
     `
 <!-- This file generate automatically, should not modify that directly -->
 
-import { Canvas, Meta, Story } from '@storybook/addon-docs/blocks';
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
 
 <Meta title="${doc.name}" />
 

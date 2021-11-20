@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { Meta, Story } from '@storybook/react';
 import uniqueId from 'lodash/uniqueId';
 import React, {
   ComponentProps,

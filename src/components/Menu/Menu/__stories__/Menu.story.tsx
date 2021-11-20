@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { Meta, Story } from '@storybook/react';
 import range from 'lodash/range';
 import React, { ComponentProps, FunctionComponent, useState } from 'react';
 
@@ -138,43 +138,42 @@ type MenuExampleComponentProps = {} & Partial<ComponentProps<typeof RcMenu>>;
 
 const menus = range(0, 20);
 
-export const MenuExampleComponent: FunctionComponent<MenuExampleComponentProps> = (
-  props,
-) => {
-  const [anchorEl, setAnchorEl] = useState(null);
+export const MenuExampleComponent: FunctionComponent<MenuExampleComponentProps> =
+  (props) => {
+    const [anchorEl, setAnchorEl] = useState(null);
 
-  const handleClick = (event: any) => {
-    setAnchorEl(event.currentTarget);
+    const handleClick = (event: any) => {
+      setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+      setAnchorEl(null);
+    };
+
+    return (
+      <>
+        <RcButton onClick={handleClick}>Open Menu</RcButton>
+        <RcMenu
+          {...props}
+          anchorEl={anchorEl}
+          open={Boolean(anchorEl)}
+          keepMounted
+          onClose={handleClose}
+        >
+          {menus.map((x) => (
+            <RcMenuItem key={x} onClick={handleClose}>
+              <RcListItemText primary={`MenuItem ${x}`} />
+            </RcMenuItem>
+          ))}
+          <RcMenuItem>MenuItem One</RcMenuItem>
+          <RcMenuItem disabled>MenuItem Two(disabled)</RcMenuItem>
+          <RcMenuItem title="native tooltip">MenuItem Three</RcMenuItem>
+          <RcDivider component="li" />
+          <RcMenuItem>MenuItem Five</RcMenuItem>
+        </RcMenu>
+      </>
+    );
   };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  return (
-    <>
-      <RcButton onClick={handleClick}>Open Menu</RcButton>
-      <RcMenu
-        {...props}
-        anchorEl={anchorEl}
-        open={Boolean(anchorEl)}
-        keepMounted
-        onClose={handleClose}
-      >
-        {menus.map((x) => (
-          <RcMenuItem key={x} onClick={handleClose}>
-            <RcListItemText primary={`MenuItem ${x}`} />
-          </RcMenuItem>
-        ))}
-        <RcMenuItem>MenuItem One</RcMenuItem>
-        <RcMenuItem disabled>MenuItem Two(disabled)</RcMenuItem>
-        <RcMenuItem title="native tooltip">MenuItem Three</RcMenuItem>
-        <RcDivider component="li" />
-        <RcMenuItem>MenuItem Five</RcMenuItem>
-      </RcMenu>
-    </>
-  );
-};
 
 export const MenuExamples: Story<MenuProps> = ({ anchorOrigin, ...args }) => {
   switchToControlKnobs();

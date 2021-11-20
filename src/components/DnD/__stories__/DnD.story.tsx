@@ -1,5 +1,5 @@
 import { boolean, select } from '@storybook/addon-knobs';
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { Meta, Story } from '@storybook/react';
 import React, { useState } from 'react';
 
 import {

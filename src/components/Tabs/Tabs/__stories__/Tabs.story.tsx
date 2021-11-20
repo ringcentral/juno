@@ -1,19 +1,20 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
 import React, { ComponentProps, FunctionComponent } from 'react';
 
+import { Meta, Story } from '@storybook/react';
+
+import MoreHorizIcon from '../../../../icon/MoreHoriz';
 import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '../../../../storybook';
+import { RcBadge } from '../../../Badge';
+import { RcIcon } from '../../../Icon';
 import { RcPaper } from '../../../Paper';
 import { RcTypography } from '../../../Typography';
 import { RcTab } from '../../Tab';
 import { RcTabs, RcTabsMoreMenuGroupInfoType } from '../Tabs';
-import { RcBadge } from '../../../Badge';
-import MoreHorizIcon from '../../../../icon/MoreHoriz';
-import { RcIcon } from '../../../Icon';
 
 export default {
   title: '🚀 Cleanup Components/Tabs/Tabs',
@@ -258,6 +259,7 @@ export const TabsCustomExample: Story<TabsCustomExampleProps> = (args) => {
   );
 
   const handleGroupInfoChange = (info: RcTabsMoreMenuGroupInfoType) => {
+    console.log(info);
     const [tabItems, menuItems] = info;
     setMoreBadgeNumber(
       menuItems.reduce(
@@ -280,7 +282,7 @@ export const TabsCustomExample: Story<TabsCustomExampleProps> = (args) => {
           value={value}
           onChange={handleChange}
           MoreButtonProps={{
-            MoreIcon: MoreIconCmp,
+            // MoreIcon: MoreIconCmp,
             direction: 'vertical',
             onGroupInfoChange: handleGroupInfoChange,
           }}
@@ -318,37 +320,36 @@ TabsCustomExample.args = {
 
 type TabsExampleComponentProps = {} & Partial<ComponentProps<typeof RcTabs>>;
 
-export const TabsExampleComponent: FunctionComponent<TabsExampleComponentProps> = (
-  args,
-) => {
-  const [value, setValue] = React.useState('tab-0');
-  const handleChange = (event: React.ChangeEvent<{}>, value: any) => {
-    setValue(value);
-  };
+export const TabsExampleComponent: FunctionComponent<TabsExampleComponentProps> =
+  (args) => {
+    const [value, setValue] = React.useState('tab-0');
+    const handleChange = (event: React.ChangeEvent<{}>, value: any) => {
+      setValue(value);
+    };
 
-  const TabChildren = tabsData.map((tab) => {
-    const { label, value, disabled, ...rest } = tab;
+    const TabChildren = tabsData.map((tab) => {
+      const { label, value, disabled, ...rest } = tab;
+      return (
+        <RcTab
+          key={label}
+          label={label}
+          value={value}
+          disabled={disabled}
+          {...rest}
+        />
+      );
+    });
+
     return (
-      <RcTab
-        key={label}
-        label={label}
-        value={value}
-        disabled={disabled}
-        {...rest}
-      />
+      <RcPaper square>
+        <RcTabs
+          {...args}
+          value={value}
+          onChange={handleChange}
+          variant="moreMenu"
+        >
+          {TabChildren}
+        </RcTabs>
+      </RcPaper>
     );
-  });
-
-  return (
-    <RcPaper square>
-      <RcTabs
-        {...args}
-        value={value}
-        onChange={handleChange}
-        variant="moreMenu"
-      >
-        {TabChildren}
-      </RcTabs>
-    </RcPaper>
-  );
-};
+  };

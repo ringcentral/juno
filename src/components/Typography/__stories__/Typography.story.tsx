@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps, useEffect, useRef } from 'react';
 
 import { palette2, styled } from '../../../foundation';

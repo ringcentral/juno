@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { Meta, Story } from '@storybook/react';
 import moment from 'moment';
 import React, {
   ComponentProps,
@@ -188,9 +188,10 @@ DatePickerWithRange.argTypes = {};
 
 // * if you want to custom moment option, you need set that global by yourself
 moment.locale('zh-cn', {
-  months: '一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月'.split(
-    '_',
-  ),
+  months:
+    '一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月'.split(
+      '_',
+    ),
   weekdaysShort: '(日)_(一)_(二)_(三)_(四)_(五)_(六)'.split('_'),
 });
 

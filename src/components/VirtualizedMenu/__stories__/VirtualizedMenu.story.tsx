@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { Meta, Story } from '@storybook/react';
 import range from 'lodash/range';
 import React, { ComponentProps, FunctionComponent, useState } from 'react';
 
@@ -65,11 +65,7 @@ export default {
       'onEscapeKeyDown',
       'onRendered',
     ]),
-    ...notControlInDocTable<keyof MenuProps>([
-      'open',
-      'anchorEl',
-      'anchorOrigin',
-    ]),
+    ...notControlInDocTable<keyof MenuProps>(['open', 'anchorEl']),
     ...notShowInDocTable<keyof MenuProps>([]),
   },
 } as Meta;
@@ -80,7 +76,6 @@ const menus = range(0, 1000);
 
 export const VirtualizedMenu: Story<Partial<MenuProps>> = ({
   children,
-  anchorOrigin,
   ...args
 }) => {
   switchToControlKnobs();
@@ -154,39 +149,38 @@ type MenuExampleComponentProps = {} & Partial<
   ComponentProps<typeof RcVirtualizedMenu>
 >;
 
-export const MenuExampleComponent: FunctionComponent<MenuExampleComponentProps> = (
-  props,
-) => {
-  const [anchorEl, setAnchorEl] = useState(null);
+export const MenuExampleComponent: FunctionComponent<MenuExampleComponentProps> =
+  (props) => {
+    const [anchorEl, setAnchorEl] = useState(null);
 
-  const handleClick = (event: any) => {
-    setAnchorEl(event.currentTarget);
+    const handleClick = (event: any) => {
+      setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+      setAnchorEl(null);
+    };
+
+    return (
+      <>
+        <RcButton onClick={handleClick}>Open Menu</RcButton>
+        <RcVirtualizedMenu
+          {...props}
+          anchorEl={anchorEl}
+          open={Boolean(anchorEl)}
+          keepMounted
+          onClose={handleClose}
+        >
+          {menus.map((x) => (
+            <RcMenuItem key={x} onClick={handleClose}>
+              <RcListItemText primary={`MenuItem ${x}`} />
+            </RcMenuItem>
+          ))}
+          <RcMenuItem key="cool">MenuItem Five</RcMenuItem>
+        </RcVirtualizedMenu>
+      </>
+    );
   };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  return (
-    <>
-      <RcButton onClick={handleClick}>Open Menu</RcButton>
-      <RcVirtualizedMenu
-        {...props}
-        anchorEl={anchorEl}
-        open={Boolean(anchorEl)}
-        keepMounted
-        onClose={handleClose}
-      >
-        {menus.map((x) => (
-          <RcMenuItem key={x} onClick={handleClose}>
-            <RcListItemText primary={`MenuItem ${x}`} />
-          </RcMenuItem>
-        ))}
-        <RcMenuItem key="cool">MenuItem Five</RcMenuItem>
-      </RcVirtualizedMenu>
-    </>
-  );
-};
 
 export const MenuExamples: Story<MenuProps> = ({ anchorOrigin, ...args }) => {
   switchToControlKnobs();

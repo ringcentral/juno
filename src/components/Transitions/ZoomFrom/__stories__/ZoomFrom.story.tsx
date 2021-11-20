@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { Meta, Story } from '@storybook/react';
 import React, { useRef, useState } from 'react';
 
 import { styled } from '../../../../foundation';

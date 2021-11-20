@@ -9,7 +9,6 @@ const [, theme] = getThemeValue();
 // can view node_modules/@storybook/api/node_modules/@storybook/theming/dist/types.d.ts to get theme types
 addons.setConfig({
   theme,
-  showRoots: true,
 });
 
 addons.register('theme-switcher', (api) => {

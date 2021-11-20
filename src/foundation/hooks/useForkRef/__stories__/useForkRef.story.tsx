@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { Meta, Story } from '@storybook/react';
 import React, { useEffect, useRef } from 'react';
 
 import { Title } from '../../../../storybook/components';

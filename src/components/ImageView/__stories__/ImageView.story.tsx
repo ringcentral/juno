@@ -1,5 +1,5 @@
 import { boolean, number, text } from '@storybook/addon-knobs';
-import { Story } from '@storybook/react/types-6-0';
+import { Story } from '@storybook/react';
 import React from 'react';
 
 import { RcImageView } from '../ImageView';

@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
 
 import {
@@ -64,12 +64,10 @@ export const AccordionExamples: Story<RcAccordionProps> = () => {
   switchToControlKnobs();
 
   const [expanded, setExpanded] = React.useState<string | false>(false);
-  const handleChange = (panel: string) => (
-    event: React.ChangeEvent<{}>,
-    isExpanded: boolean,
-  ) => {
-    setExpanded(isExpanded ? panel : false);
-  };
+  const handleChange =
+    (panel: string) => (event: React.ChangeEvent<{}>, isExpanded: boolean) => {
+      setExpanded(isExpanded ? panel : false);
+    };
 
   return (
     <>
