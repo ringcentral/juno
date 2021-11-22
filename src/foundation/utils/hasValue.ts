@@ -1,6 +1,7 @@
 import {
   hasValue as MuiHasValue,
   isFilled as MuiIsFilled,
+  // @ts-ignore
 } from '@material-ui/core/InputBase/utils';
 
 /**

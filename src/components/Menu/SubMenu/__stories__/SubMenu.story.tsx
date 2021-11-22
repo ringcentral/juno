@@ -195,10 +195,6 @@ SubMenuWithMenu.argTypes = {
 SubMenuWithMenu.parameters = {
   tags: [
     {
-      name: 'Spec',
-      href: 'https://app.abstract.com/projects/d893ad32-0d8d-4e65-a37a-b4a5c881c51b/branches/master/commits/9e531c6b30974c6e11ee1ca2030d489988c01e23/files/8ffaf9bc-6939-4ef9-9bd1-6aa5b460e2ae/layers/307A6D61-EC1D-4F03-8ED2-67FA63B4971C?mode=design&sha=9e531c6b30974c6e11ee1ca2030d489988c01e23',
-    },
-    {
       name: 'Accessibility',
       value: '100%',
     },

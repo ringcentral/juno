@@ -5,8 +5,10 @@ import {
   TransitionKeys as MuiTransitionKeys,
   TransitionProps as MuiTransitionProps,
 } from '@material-ui/core/transitions';
+// @ts-ignore
 import { reflow as MuiReflow } from '@material-ui/core/transitions/utils';
 
+// @ts-ignore
 export * from 'react-transition-group';
 export * from '@material-ui/core/styles/transitions';
 
