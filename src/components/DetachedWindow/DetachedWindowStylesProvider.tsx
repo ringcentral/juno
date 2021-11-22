@@ -2,7 +2,7 @@ import React, { FunctionComponent, useEffect, useRef } from 'react';
 
 import { Jss } from 'jss';
 // @ts-ignore
-import { __PRIVATE__ } from 'styled-components';
+import { StyleSheetManagerProps, __PRIVATE__ } from 'styled-components';
 
 import MUIStylesProvider, {
   StylesContext as MUIStylesContext,
@@ -29,7 +29,7 @@ export const RcDetachedWindowStylesProvider: FunctionComponent<RcDetachedWindowS
 
     const sheetsManagerRef = useRef(new Map());
     const jssCache = useRef<Jss>();
-    const sheetCache = useRef<StyleSheet>();
+    const sheetCache = useRef<StyleSheetManagerProps['sheet']>();
 
     useEffect(
       () => () => {
@@ -54,7 +54,7 @@ export const RcDetachedWindowStylesProvider: FunctionComponent<RcDetachedWindowS
     }
 
     return (
-      <StyleSheetManager sheet={sheetCache.current}>
+      <StyleSheetManager sheet={sheetCache.current!}>
         <MUIStylesContext.Consumer>
           {(options) => (
             <MUIStylesProvider

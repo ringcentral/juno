@@ -33,7 +33,7 @@ const getBackgroundColor = (color?: RcPaletteProp, iconSymbol?: any) => {
 
 export type StyledAvatarProps = Pick<
   RcAvatarProps<true>,
-  'size' | 'color' | 'iconSymbol' | 'className'
+  'size' | 'color' | 'iconSymbol' | 'className' | 'children'
 >;
 
 const _StyledAvatar = forwardRef<any, StyledAvatarProps>(
