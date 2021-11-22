@@ -1,9 +1,10 @@
+import { ComponentProps, FunctionComponent } from 'react';
+
 import MuiTabContext, {
   getPanelId,
   getTabId,
   useTabContext,
 } from '@material-ui/lab/TabContext';
-import { ComponentProps, FunctionComponent } from 'react';
 
 const RcTabContext = MuiTabContext as FunctionComponent<
   ComponentProps<typeof MuiTabContext>
@@ -11,4 +12,4 @@ const RcTabContext = MuiTabContext as FunctionComponent<
 
 RcTabContext.displayName = 'RcTabContext';
 
-export { RcTabContext, useTabContext, getPanelId, getTabId };
+export { getPanelId, getTabId, RcTabContext, useTabContext };

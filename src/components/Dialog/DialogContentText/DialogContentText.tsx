@@ -1,5 +1,6 @@
-import MuiDialogContentText from '@material-ui/core/DialogContentText';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiDialogContentText from '@material-ui/core/DialogContentText';
 
 import {
   combineClasses,

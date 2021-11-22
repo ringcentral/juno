@@ -1,5 +1,6 @@
-import { number, text } from '@storybook/addon-knobs';
 import React from 'react';
+
+import { number, text } from '@storybook/addon-knobs';
 
 import { ellipsis } from '../../../foundation';
 import styled from '../../../foundation/styled-components';

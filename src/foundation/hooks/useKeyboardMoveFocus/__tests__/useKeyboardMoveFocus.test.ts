@@ -1,10 +1,13 @@
+import React from 'react';
+
 import _ from 'lodash';
+
+import { renderHook } from '@testing-library/react-hooks';
+
 import {
   useKeyboardMoveFocus,
   UseKeyboardMoveFocusParams,
 } from '../useKeyboardMoveFocus';
-import React from 'react';
-import { renderHook } from '@testing-library/react-hooks';
 
 describe('useKeyboardMoveFocus()', () => {
   let mockOnFocusedIndexChangeFn = jest.fn();

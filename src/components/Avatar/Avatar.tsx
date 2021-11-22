@@ -1,5 +1,6 @@
-import clsx from 'clsx';
 import React, { ComponentType, forwardRef, useMemo } from 'react';
+
+import clsx from 'clsx';
 
 import {
   CustomStyledComponentResult,
@@ -317,4 +318,4 @@ const ExportType: <T extends boolean>(
   RcAvatar as any;
 
 export { ExportType as RcAvatar, StyledAvatar };
-export type { RcAvatarProps, RcAvatarSize, PresenceOrigin };
+export type { PresenceOrigin, RcAvatarProps, RcAvatarSize };

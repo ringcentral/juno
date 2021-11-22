@@ -5,8 +5,8 @@ import { useDebounce } from '../useDebounce';
 import { useEventCallback } from '../useEventCallback';
 import {
   isElmEqualOrContainRef,
-  UseTouchMouseEvent,
   useTouchMouseEvent,
+  UseTouchMouseEvent,
 } from '../useTouchMouseEvent';
 
 export interface UseLongPressOptions {

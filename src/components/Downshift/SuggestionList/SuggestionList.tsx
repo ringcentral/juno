@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import React, {
   createContext,
   forwardRef,
@@ -8,6 +7,8 @@ import React, {
   useMemo,
   useRef,
 } from 'react';
+
+import clsx from 'clsx';
 
 import {
   combineClasses,
@@ -28,12 +29,12 @@ import { RcIconButton } from '../../Buttons/IconButton';
 import { RcMenuItem } from '../../Menu/MenuItem';
 import { StyledMenuListPadding } from '../../VirtualizedMenu/styles';
 import {
+  Components,
   IndexLocationWithAlign,
   useDynamicHeight,
   useHighlightScroll,
   Virtuoso,
   VirtuosoHandle,
-  Components,
   VirtuosoProps,
 } from '../../Virtuoso';
 import { RcDownshiftProps } from '../Downshift';

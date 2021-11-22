@@ -1,7 +1,8 @@
 import 'focus-visible';
 
-import { MuiThemeProvider, StylesProvider } from '@material-ui/core/styles';
 import React, { FunctionComponent, ReactNode } from 'react';
+
+import { MuiThemeProvider, StylesProvider } from '@material-ui/core/styles';
 
 import {
   ThemeProvider as StyledThemeProvider,

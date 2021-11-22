@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+
 import { styled } from '../../foundation';
 import { RcTypography, RcTypographyProps } from '../Typography';
 import { COLUMN_TEXT_ALIGN } from './types';

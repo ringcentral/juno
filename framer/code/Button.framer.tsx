@@ -9,9 +9,7 @@ const RcButton: React.ComponentType = ({
   ...rest
 }: any) => {
   const StartIcon =
-    startIcon === '' ? (
-      undefined
-    ) : (
+    startIcon === '' ? undefined : (
       <lib.RcIcon symbol={lib.iconList[startIcon]} />
     );
   const EndIcon =

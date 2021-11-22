@@ -1,6 +1,8 @@
-import { Meta, Story } from '@storybook/react';
-import range from 'lodash/range';
 import React, { ComponentProps, FunctionComponent, useState } from 'react';
+
+import range from 'lodash/range';
+
+import { Meta, Story } from '@storybook/react';
 
 import {
   notControlInDocTable,

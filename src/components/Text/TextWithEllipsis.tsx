@@ -1,5 +1,6 @@
-import { Typography as MuiTypography } from '@material-ui/core';
 import React, { ComponentProps, forwardRef } from 'react';
+
+import { Typography as MuiTypography } from '@material-ui/core';
 
 import { ellipsis, useDeprecatedLog } from '../../foundation';
 import styled from '../../foundation/styled-components';

@@ -1,11 +1,11 @@
 import {
-  styled,
   css,
   flexCenterStyle,
   spacing,
+  styled,
 } from '../../../../../foundation';
-import { RcTimePickerUtils } from '../utils';
 import { RcClickFiledStyleProps } from '../TimePicker';
+import { RcTimePickerUtils } from '../utils';
 
 export const StyledSelectionView = styled.div<RcClickFiledStyleProps>`
   ${({ size }) => {

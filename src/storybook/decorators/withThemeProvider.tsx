@@ -1,7 +1,8 @@
+import React from 'react';
+
 import { addons, StoryContext } from '@storybook/addons';
 import { UPDATE_GLOBALS } from '@storybook/core-events';
 import { Story as StoryType } from '@storybook/react';
-import React from 'react';
 
 import { RcIconButton } from '../../components';
 import {

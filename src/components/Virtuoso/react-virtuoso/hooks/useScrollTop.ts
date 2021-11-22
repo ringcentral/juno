@@ -1,5 +1,6 @@
-import * as u from '@virtuoso.dev/urx';
 import { useCallback, useEffect, useRef } from 'react';
+
+import * as u from '@virtuoso.dev/urx';
 
 export type ScrollerRef = Window | HTMLElement | null;
 

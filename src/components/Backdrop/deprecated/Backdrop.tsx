@@ -1,7 +1,8 @@
+import React from 'react';
+
 import MuiBackdrop, {
   BackdropProps as MuiBackdropProps,
 } from '@material-ui/core/Backdrop';
-import React from 'react';
 
 export type RcBackdropProps = Omit<MuiBackdropProps, 'innerRef'> & {
   size?: 'small' | 'large';

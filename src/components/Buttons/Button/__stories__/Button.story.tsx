@@ -1,5 +1,6 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import { styled, useTheme } from '../../../../foundation';
 import { CallAdd, Leave, NewEmail, UserDefault } from '../../../../icon';

@@ -1,5 +1,6 @@
-import clsx from 'clsx';
 import React, { ComponentProps, forwardRef } from 'react';
+
+import clsx from 'clsx';
 
 import { styled } from '../../../../foundation';
 import ArrowDown from '../../../../icon/ArrowDown';

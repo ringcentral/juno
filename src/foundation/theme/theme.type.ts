@@ -121,7 +121,6 @@ import {
 import {
   RcStepButtonProps,
   RcStepConnectorProps,
-  // RcStepContentProps,
   RcStepIconProps,
   RcStepLabelProps,
   RcStepperProps,

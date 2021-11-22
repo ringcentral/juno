@@ -1,7 +1,8 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
-import { RcPaletteProp } from '../../../../foundation';
 
+import { Meta, Story } from '@storybook/react';
+
+import { RcPaletteProp } from '../../../../foundation';
 import radiusObj from '../../../../foundation/theme/assets/radius.json';
 import StarIcon from '../../../../icon/Star';
 import {

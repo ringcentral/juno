@@ -1,5 +1,6 @@
-import MuiListItemIcon from '@material-ui/core/ListItemIcon';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiListItemIcon from '@material-ui/core/ListItemIcon';
 
 import {
   combineClasses,

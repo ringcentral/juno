@@ -1,9 +1,9 @@
 import {
   createGlobalStyle,
+  fakeBorder,
   opacity,
   palette2,
   shadows,
-  fakeBorder,
 } from '../../../../foundation';
 import { RcDraggableClasses } from '../../Draggable/utils';
 

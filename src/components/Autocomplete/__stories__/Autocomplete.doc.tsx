@@ -1,5 +1,6 @@
-import { AutocompleteProps } from '@material-ui/lab';
 import React, { FunctionComponent } from 'react';
+
+import { AutocompleteProps } from '@material-ui/lab';
 
 export type AutocompleteDocProps = AutocompleteProps<any, any, any, any>;
 const AutocompleteDoc: FunctionComponent<AutocompleteDocProps> = (props) => {

@@ -1,12 +1,3 @@
-import { useControlled } from '@material-ui/core/utils';
-import MomentUtils from '@date-io/moment';
-import {
-  MuiPickersUtilsProvider,
-  useUtils as useMuiUtils,
-} from '@material-ui/pickers';
-import { findClosestEnabledDate as MuiFindClosestEnabledDate } from '@material-ui/pickers/_helpers/date-utils';
-import { MaterialUiPickersDate as MuiPickersDate } from '@material-ui/pickers/typings/date';
-import moment from 'moment';
 import React, {
   forwardRef,
   useCallback,
@@ -14,6 +5,17 @@ import React, {
   useMemo,
   useRef,
 } from 'react';
+
+import moment from 'moment';
+
+import MomentUtils from '@date-io/moment';
+import { useControlled } from '@material-ui/core/utils';
+import {
+  MuiPickersUtilsProvider,
+  useUtils as useMuiUtils,
+} from '@material-ui/pickers';
+import { findClosestEnabledDate as MuiFindClosestEnabledDate } from '@material-ui/pickers/_helpers/date-utils';
+import { MaterialUiPickersDate as MuiPickersDate } from '@material-ui/pickers/typings/date';
 
 import {
   combineClasses,
@@ -341,5 +343,5 @@ RcDatePicker.defaultProps = {
 
 RcDatePicker.displayName = 'RcDatePicker';
 
-export { RcDatePicker, DEFAULT_FORMAT, RcDatePickerClasses };
+export { DEFAULT_FORMAT, RcDatePicker, RcDatePickerClasses };
 export type { RcDatePickerProps, RcDatePickerSize };

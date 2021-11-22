@@ -1,4 +1,3 @@
-import jssPreset from '@material-ui/styles/jssPreset';
 import {
   create as createJss,
   Jss,
@@ -7,6 +6,8 @@ import {
   SheetsRegistry,
   StyleSheet as IStyleSheet,
 } from 'jss';
+
+import jssPreset from '@material-ui/styles/jssPreset';
 
 const jssInst: Jss | null = createJss(jssPreset());
 const JssDomRendererConstructor = (jssInst as any).options.Renderer as new (

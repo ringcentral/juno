@@ -1,6 +1,3 @@
-import MuiTextField, {
-  StandardTextFieldProps as MuiStandardTextFieldProps,
-} from '@material-ui/core/TextField';
 import React, {
   forwardRef,
   useEffect,
@@ -9,6 +6,10 @@ import React, {
   useRef,
   useState,
 } from 'react';
+
+import MuiTextField, {
+  StandardTextFieldProps as MuiStandardTextFieldProps,
+} from '@material-ui/core/TextField';
 
 import {
   clearReactReferencesInNode,
@@ -375,10 +376,10 @@ RcTextField.defaultProps = {
 
 RcTextField.displayName = 'RcTextField';
 
-export { RcTextField, RcOutlineTextFieldIconSizes };
+export { RcOutlineTextFieldIconSizes, RcTextField };
 export type {
+  RcOutlineTextSize,
+  RcOutlineTextSizeRadius,
   RcTextFieldProps,
   RcTextFieldVariant,
-  RcOutlineTextSizeRadius,
-  RcOutlineTextSize,
 };

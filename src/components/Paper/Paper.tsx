@@ -1,5 +1,6 @@
-import MuiPaper from '@material-ui/core/Paper';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiPaper from '@material-ui/core/Paper';
 
 import {
   combineClasses,

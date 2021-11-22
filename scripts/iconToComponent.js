@@ -7,7 +7,7 @@ function template(
   opts,
   { imports, componentName, props, jsx, exports },
 ) {
-  const filePath = path.parse(opts.state.filePath)
+  const filePath = path.parse(opts.state.filePath);
   const iconName = filePath.name;
   const noSvgName = componentName.name.replace('Svg', '');
   let hasDark = false;
@@ -22,17 +22,17 @@ function template(
   const svgName = svgToComponentMapping[noSvgName];
 
   const darkNoSvgName = noSvgName + 'D';
-  const svgPath = path.join(
-    process.cwd(),
-    './src/components/Icon/assets/',
+  const svgPath = path.join(process.cwd(), './src/components/Icon/assets/');
+  const darkFilePath = path.join(
+    svgPath,
+    'icon-' + svgToComponentMapping[darkNoSvgName] + '.svg',
   );
-  const darkFilePath = path.join(svgPath, 'icon-' + svgToComponentMapping[darkNoSvgName] + '.svg');
 
   if (darkNoSvgName && fs.existsSync(darkFilePath)) {
     hasDark = true;
 
     // dark parameter AST
-    const propTypeAst = props[0].typeAnnotation
+    const propTypeAst = props[0].typeAnnotation;
     const darkObjTypeAst = {
       type: 'ObjectTypeAnnotation',
       properties: [
@@ -40,31 +40,29 @@ function template(
           type: 'ObjectTypeProperty',
           key: {
             type: 'Identifier',
-            name: 'themeType'
+            name: 'themeType',
           },
           value: {
             type: 'GenericTypeAnnotation',
             id: {
               type: 'Identifier',
               name: 'PaletteType',
-            }
+            },
           },
           optional: true,
-        }
-      ]
-    }
+        },
+      ],
+    };
     const intersectionAst = {
       type: 'IntersectionTypeAnnotation',
-      types: [
-        propTypeAst,
-        darkObjTypeAst,
-      ]
-    }
+      types: [propTypeAst, darkObjTypeAst],
+    };
     props[0].typeAnnotation = intersectionAst;
     props[0].name = 'inProps';
   }
 
-  return hasDark ? template.ast`
+  return hasDark
+    ? template.ast`
     import { useTheme, PaletteType } from '@material-ui/core';\n\n
     import React, { forwardRef, memo } from 'react';\n\n
 
@@ -82,7 +80,8 @@ function template(
     ${outPutName}['iconName'] = '${svgName || iconName}';\n\n
 
     export default ${outPutName};
-  ` : template.ast`
+  `
+    : template.ast`
     import React, { forwardRef, memo } from 'react';\n\n
 
     const ${outPutName} = memo(forwardRef((${props}) => ${jsx}));\n\n

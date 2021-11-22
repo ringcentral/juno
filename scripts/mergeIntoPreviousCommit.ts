@@ -2,9 +2,7 @@ import { execSync } from 'child_process';
 
 console.log('[Release]: merge into previous commit');
 const exec = (cmd: string) => {
-  const [result] = execSync(cmd)
-    .toString()
-    .split('\n');
+  const [result] = execSync(cmd).toString().split('\n');
   return result;
 };
 

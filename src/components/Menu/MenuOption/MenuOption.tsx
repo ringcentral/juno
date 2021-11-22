@@ -1,4 +1,5 @@
 import React, { FunctionComponent, useCallback } from 'react';
+
 import { RcBaseProps } from '../../../foundation';
 import { RcMenuItemProps } from '../MenuItem';
 import { StyledMenuOption } from './styles';

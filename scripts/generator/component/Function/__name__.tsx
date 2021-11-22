@@ -1,5 +1,6 @@
-import Mui__name__ from '@material-ui/core/__name__';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import Mui__name__ from '@material-ui/core/__name__';
 
 import { combineClasses, RcBaseProps, styled } from '../../foundation';
 import { __name__Style } from './styles';

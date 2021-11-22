@@ -1,6 +1,8 @@
-import MuiListItem from '@material-ui/core/ListItem';
-import clsx from 'clsx';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import clsx from 'clsx';
+
+import MuiListItem from '@material-ui/core/ListItem';
 
 import {
   combineClasses,
@@ -155,4 +157,4 @@ RcListItem.defaultProps = {
 RcListItem.displayName = 'RcListItem';
 
 export { RcListItem };
-export type { RcListItemProps, RcListItemSize, RcListItemColor };
+export type { RcListItemColor, RcListItemProps, RcListItemSize };

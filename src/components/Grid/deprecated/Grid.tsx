@@ -1,5 +1,6 @@
-import MuiGrid, { GridProps as MuiGridProps } from '@material-ui/core/Grid';
 import React from 'react';
+
+import MuiGrid, { GridProps as MuiGridProps } from '@material-ui/core/Grid';
 
 export type RcGridProps = MuiGridProps;
 

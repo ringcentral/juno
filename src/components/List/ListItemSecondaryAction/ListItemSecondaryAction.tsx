@@ -1,4 +1,3 @@
-import MuiListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import React, {
   ComponentProps,
   forwardRef,
@@ -6,6 +5,8 @@ import React, {
   useMemo,
   useRef,
 } from 'react';
+
+import MuiListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 
 import {
   combineClasses,

@@ -1,5 +1,6 @@
-import MuiToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 
 import {
   combineClasses,

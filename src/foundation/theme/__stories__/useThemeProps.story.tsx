@@ -1,5 +1,6 @@
-import { Meta, Story } from '@storybook/react';
 import React, { FunctionComponent } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import { RcButtonProps } from '../../../components/Buttons';
 import { RcText } from '../../../components/Text';

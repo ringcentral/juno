@@ -1,5 +1,6 @@
-import MuiCheckbox from '@material-ui/core/Checkbox';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiCheckbox from '@material-ui/core/Checkbox';
 
 import {
   combineClasses,
@@ -119,7 +120,7 @@ RcCheckbox.defaultProps = {
 
 export { RcCheckbox };
 export type {
-  RcCheckboxProps,
-  RcCheckboxLabelPlacement,
   RcCheckboxFormControlLabelProps,
+  RcCheckboxLabelPlacement,
+  RcCheckboxProps,
 };

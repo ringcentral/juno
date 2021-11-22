@@ -1,4 +1,5 @@
 import { ComponentType } from 'react';
+
 import { logInDev } from '../../../foundation';
 import {
   Connectable,

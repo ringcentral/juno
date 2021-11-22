@@ -1,5 +1,6 @@
-import { Story } from '@storybook/react';
 import React from 'react';
+
+import { Story } from '@storybook/react';
 
 import styled from '../../../foundation/styled-components';
 import { RcDivider } from '../../Divider';

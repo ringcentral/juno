@@ -1,6 +1,7 @@
+import React, { FunctionComponent, useState } from 'react';
+
 import { select } from '@storybook/addon-knobs';
 import { Meta, Story } from '@storybook/react';
-import React, { FunctionComponent, useState } from 'react';
 
 import {
   RcDragDropContext,

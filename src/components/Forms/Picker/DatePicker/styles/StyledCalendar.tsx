@@ -112,9 +112,9 @@ export {
   CalendarSlideTransitionWrapper,
   DatePickerWrapper,
   DayFooterWrapper,
-  StyledDayLabel,
-  StyledDaysHeader,
   DaysWrapper,
   ProgressContainer,
+  StyledDayLabel,
+  StyledDaysHeader,
   WeekWrapper,
 };

@@ -1,10 +1,12 @@
+import ReactDOM from 'react-dom';
+
+import { addSerializer } from 'jest-specific-snapshot';
+import { styleSheetSerializer } from 'jest-styled-components';
+import renderer from 'react-test-renderer';
+
 import initStoryshots, {
   Stories2SnapsConverter,
 } from '@storybook/addon-storyshots';
-import { addSerializer } from 'jest-specific-snapshot';
-import { styleSheetSerializer } from 'jest-styled-components';
-import ReactDOM from 'react-dom';
-import renderer from 'react-test-renderer';
 
 import { excludeDomSnapshot } from './snapshotConfig';
 import { isExcluded } from './utils';

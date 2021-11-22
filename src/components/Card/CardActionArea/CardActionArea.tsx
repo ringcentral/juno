@@ -1,6 +1,8 @@
-import MuiCardActionArea from '@material-ui/core/CardActionArea';
-import clsx from 'clsx';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import clsx from 'clsx';
+
+import MuiCardActionArea from '@material-ui/core/CardActionArea';
 
 import {
   combineClasses,

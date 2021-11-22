@@ -1,12 +1,11 @@
+import React, { FunctionComponent } from 'react';
+
 import {
   flexCenterStyle,
   palette2,
   setOpacity,
   styled,
 } from '../../../foundation';
-
-import React, { FunctionComponent } from 'react';
-
 import Edit from '../../../icon/Edit';
 import { RcIcon } from '../../Icon';
 

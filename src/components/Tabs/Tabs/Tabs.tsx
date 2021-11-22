@@ -1,5 +1,6 @@
-import MuiTabs from '@material-ui/core/Tabs';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiTabs from '@material-ui/core/Tabs';
 
 import {
   combineProps,
@@ -8,12 +9,11 @@ import {
   useThemeProps,
 } from '../../../foundation';
 import { RcTabProps } from '../Tab';
-import { MoreMenuTabs } from './MoreMenuTabs';
-
 import type {
   MoreButtonProps,
   RcTabsMoreMenuGroupInfoType,
 } from './MoreMenuTabs';
+import { MoreMenuTabs } from './MoreMenuTabs';
 import { TabsStyle } from './styles';
 import { RcTabsClasses } from './utils';
 
@@ -114,4 +114,4 @@ RcTabs.defaultProps = {
 RcTabs.displayName = 'RcTabs';
 
 export { RcTabs };
-export type { RcTabsProps, RcTabsMoreMenuGroupInfoType };
+export type { RcTabsMoreMenuGroupInfoType, RcTabsProps };

@@ -1,4 +1,3 @@
-import { runKeyHandler } from '@material-ui/pickers/_shared/hooks/useKeyDown';
 import React, {
   forwardRef,
   useCallback,
@@ -7,6 +6,8 @@ import React, {
   useRef,
   useState,
 } from 'react';
+
+import { runKeyHandler } from '@material-ui/pickers/_shared/hooks/useKeyDown';
 
 import {
   combineClasses,
@@ -609,4 +610,4 @@ RcTimePicker.defaultProps = {
 RcTimePicker.displayName = 'RcTimePicker';
 
 export { RcTimePicker };
-export type { RcTimePickerProps, RcTimePickerSize, RcClickFiledStyleProps };
+export type { RcClickFiledStyleProps, RcTimePickerProps, RcTimePickerSize };

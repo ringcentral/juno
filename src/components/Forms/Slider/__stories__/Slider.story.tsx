@@ -1,5 +1,6 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps, useState } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import SpeakerMute from '../../../../icon/SpeakerMute';
 import SpeakerUp from '../../../../icon/SpeakerUp';
@@ -12,8 +13,8 @@ import {
   switchToControlKnobs,
 } from '../../../../storybook';
 import { Title } from '../../../../storybook/components';
-import { RcIcon } from '../../../Icon';
 import { RcGrid } from '../../../Grid';
+import { RcIcon } from '../../../Icon';
 import { RcTextField } from '../../TextField';
 import { RcSlider } from '../Slider';
 

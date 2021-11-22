@@ -1,5 +1,6 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import { spacing, styled } from '../../../../foundation';
 import DateBorder from '../../../../icon/DateBorder';

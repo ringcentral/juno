@@ -1,5 +1,6 @@
-import { addPropertyControls, ControlType } from 'framer';
 import { useState } from 'react';
+
+import { addPropertyControls, ControlType } from 'framer';
 
 import * as lib from '../src';
 
@@ -10,12 +11,10 @@ const RcAccordion: React.ComponentType = ({ _children, ...rest }: any) => {
 
   const [expanded, setExpanded] = useState<string | false>(false);
 
-  const handleChange = (panel: string) => (
-    event: React.ChangeEvent<{}>,
-    isExpanded: boolean,
-  ) => {
-    setExpanded(isExpanded ? panel : false);
-  };
+  const handleChange =
+    (panel: string) => (event: React.ChangeEvent<{}>, isExpanded: boolean) => {
+      setExpanded(isExpanded ? panel : false);
+    };
 
   return (
     <lib.RcThemeProvider>

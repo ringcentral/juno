@@ -1,6 +1,8 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
 
+import { Meta, Story } from '@storybook/react';
+
+import star from '../../../../icon/Star';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -8,12 +10,10 @@ import {
   sortInDocTable,
   switchToControlKnobs,
 } from '../../../../storybook';
-import { RcListItem } from '../../ListItem';
-import { RcListItemIcon } from '../ListItemIcon';
-import { RcListItemText } from '../../ListItemText';
 import { RcIcon } from '../../../Icon';
-
-import star from '../../../../icon/Star';
+import { RcListItem } from '../../ListItem';
+import { RcListItemText } from '../../ListItemText';
+import { RcListItemIcon } from '../ListItemIcon';
 
 export default {
   title: '🚀 Cleanup Components/Lists/ListItemIcon',

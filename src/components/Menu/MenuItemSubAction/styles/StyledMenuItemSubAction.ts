@@ -1,5 +1,6 @@
 import MuiListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
-import { styled, spacing } from '../../../../foundation';
+
+import { spacing, styled } from '../../../../foundation';
 
 const StyledMenuItemSubAction = styled(MuiListItemSecondaryAction)`
   && {

@@ -1,7 +1,8 @@
+import React, { ComponentProps, forwardRef, useCallback, useMemo } from 'react';
+
 import MuiRating, {
   IconContainerProps as MuiIconContainerProps,
 } from '@material-ui/lab/Rating';
-import React, { ComponentProps, forwardRef, useCallback, useMemo } from 'react';
 
 import {
   combineClasses,

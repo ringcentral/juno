@@ -9,9 +9,7 @@ module.exports = {
   },
 
   testMatch: [`**/*/__tests__/**/*.test?(s).[jt]s?(x)`],
-  setupFiles: [
-    '<rootDir>/tests/setup/jest.testingLibraryConfig.js',
-  ],
+  setupFiles: ['<rootDir>/tests/setup/jest.testingLibraryConfig.js'],
   setupFilesAfterEnv: [
     '<rootDir>/tests/setup/setupTest.js',
     '@testing-library/jest-dom/extend-expect',

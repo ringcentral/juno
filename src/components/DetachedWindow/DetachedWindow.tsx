@@ -1,4 +1,3 @@
-import { useForkRef } from '@material-ui/core/utils';
 import React, {
   forwardRef,
   memo,
@@ -10,6 +9,9 @@ import React, {
   useState,
 } from 'react';
 import ReactDOM from 'react-dom';
+
+import { useForkRef } from '@material-ui/core/utils';
+
 import {
   logInDev,
   RcPortalWindowContext,

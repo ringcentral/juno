@@ -1,10 +1,13 @@
+import React, { FunctionComponent, useEffect, useRef } from 'react';
+
+import { Jss } from 'jss';
+// @ts-ignore
+import { __PRIVATE__ } from 'styled-components';
+
 import MUIStylesProvider, {
   StylesContext as MUIStylesContext,
 } from '@material-ui/styles/StylesProvider';
-import { Jss } from 'jss';
-import React, { FunctionComponent, useEffect, useRef } from 'react';
-// @ts-ignore
-import { __PRIVATE__ } from 'styled-components';
+
 import { StyleSheetManager } from '../../foundation';
 import { buildJssFromWindow } from './utils';
 

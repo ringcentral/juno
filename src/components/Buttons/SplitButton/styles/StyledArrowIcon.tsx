@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
 
 import { styled } from '../../../../foundation';
-import { RcIcon, RcIconProps } from '../../../Icon';
 import arrowDownSvg from '../../../../icon/ArrowDown';
+import { RcIcon, RcIconProps } from '../../../Icon';
 
 export type StyledArrowIconProps = {
   open: boolean;

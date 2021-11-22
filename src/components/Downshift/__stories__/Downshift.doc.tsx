@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react';
+
 import { RcDownshiftProps } from '../Downshift';
 import { RcDownshiftSelectedItem } from '../utils';
 

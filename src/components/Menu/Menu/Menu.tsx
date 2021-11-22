@@ -1,4 +1,3 @@
-import MuiMenu from '@material-ui/core/Menu';
 import React, {
   ComponentProps,
   forwardRef,
@@ -6,6 +5,8 @@ import React, {
   useMemo,
   useState,
 } from 'react';
+
+import MuiMenu from '@material-ui/core/Menu';
 
 import {
   combineClasses,
@@ -17,8 +18,8 @@ import {
   useThemeProps,
 } from '../../../foundation';
 import type {
-  RcMenuOnCloseReasonsType,
   RcMenuContextType,
+  RcMenuOnCloseReasonsType,
 } from './MenuContext';
 import { RcMenuContext } from './MenuContext';
 import { MenuStyle } from './styles';
@@ -97,4 +98,4 @@ RcMenu.displayName = 'RcMenu';
 
 export { RcMenu, RcMenuContext };
 
-export type { RcMenuProps, RcMenuContextType };
+export type { RcMenuContextType, RcMenuProps };

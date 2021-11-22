@@ -1,13 +1,14 @@
-import MuiCheckBox from '@material-ui/core/Checkbox';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiCheckBox from '@material-ui/core/Checkbox';
 
 import {
   combineClasses,
   combineProps,
+  omit,
   RcBaseProps,
   RcClassesProps,
   styled,
-  omit,
   useThemeProps,
 } from '../../../foundation';
 import CheckIcon from '../../../icon/Check';

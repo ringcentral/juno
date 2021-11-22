@@ -1,7 +1,8 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
-import { styled, zIndex } from '../../../foundation';
 
+import { Meta, Story } from '@storybook/react';
+
+import { styled, zIndex } from '../../../foundation';
 import {
   notControlInDocTable,
   notShowInDocTable,

@@ -1,5 +1,6 @@
-import MuiListItemText from '@material-ui/core/ListItemText';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiListItemText from '@material-ui/core/ListItemText';
 
 import {
   combineClasses,
@@ -7,8 +8,8 @@ import {
   RcBaseProps,
   RcPaletteProp,
   styled,
-  withDeprecatedCheck,
   useThemeProps,
+  withDeprecatedCheck,
 } from '../../../foundation';
 import { RcTypographyProps } from '../../Typography';
 import { ListItemTextStyle } from './styles';

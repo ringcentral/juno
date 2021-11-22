@@ -1,6 +1,8 @@
-import { Meta, Story } from '@storybook/react';
-import range from 'lodash/range';
 import React, { FunctionComponent, useLayoutEffect, useRef } from 'react';
+
+import range from 'lodash/range';
+
+import { Meta, Story } from '@storybook/react';
 
 import { RcAvatar, RcBox, RcText } from '../../../../components';
 import { Title } from '../../../../storybook/components';

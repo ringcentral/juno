@@ -1,5 +1,6 @@
-import MuiDrawer from '@material-ui/core/Drawer';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiDrawer from '@material-ui/core/Drawer';
 
 import {
   combineClasses,

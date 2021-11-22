@@ -1,5 +1,6 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import PinSvg from '../../../../icon/Pin';
 import {
@@ -8,10 +9,10 @@ import {
   sortInDocTable,
   switchToControlKnobs,
 } from '../../../../storybook';
-import { RcIcon } from '../../../Icon';
-import { RcTab } from '../Tab';
 import { RcBadge } from '../../../Badge';
+import { RcIcon } from '../../../Icon';
 import { RcTypography } from '../../../Typography';
+import { RcTab } from '../Tab';
 
 export default {
   title: '🚀 Cleanup Components/Tabs/Tab',

@@ -1,5 +1,6 @@
-import MuiCircularProgress from '@material-ui/core/CircularProgress';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiCircularProgress from '@material-ui/core/CircularProgress';
 
 import {
   combineClasses,

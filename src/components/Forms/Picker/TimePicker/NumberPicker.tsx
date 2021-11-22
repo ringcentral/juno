@@ -1,4 +1,3 @@
-import { runKeyHandler } from '@material-ui/pickers/_shared/hooks/useKeyDown';
 import React, {
   forwardRef,
   HTMLAttributes,
@@ -7,6 +6,8 @@ import React, {
   useMemo,
   useRef,
 } from 'react';
+
+import { runKeyHandler } from '@material-ui/pickers/_shared/hooks/useKeyDown';
 
 import {
   RcBaseProps,
@@ -20,8 +21,8 @@ import {
 import ArrowDownIcon from '../../../../icon/ArrowDown';
 import ArrowUpIcon from '../../../../icon/ArrowUp';
 import { RcIconButtonSize } from '../../../Buttons/IconButton';
-import { StyledTimeIconButton } from './styles/StyledTimeIconButton';
 import { StyledNumberPicker } from './styles/StyledNumberPicker';
+import { StyledTimeIconButton } from './styles/StyledTimeIconButton';
 import { RcClickFiledStyleProps } from './TimePicker';
 import { pad } from './utils';
 

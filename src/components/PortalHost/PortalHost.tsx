@@ -1,8 +1,9 @@
 import React, { FunctionComponent, useEffect, useRef, useState } from 'react';
+
 import { ConnectSymbol } from './Connectable';
+import { PortalManagerProvider } from './context';
 import { PortalDescriptor, PortalManager } from './PortalManager';
 import { RcPortalRenderer } from './PortalRenderer';
-import { PortalManagerProvider } from './context';
 
 type RcPortalHostProps = {
   manager: PortalManager;

@@ -1,5 +1,6 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps, useState } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import { palette2, shadows, styled, useTheme } from '../../../foundation';
 import {

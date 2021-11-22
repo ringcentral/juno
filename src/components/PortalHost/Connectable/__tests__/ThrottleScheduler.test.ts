@@ -1,5 +1,5 @@
-import { ThrottleScheduler } from '../ThrottleScheduler';
 import { createPromise } from '../../PortalManager';
+import { ThrottleScheduler } from '../ThrottleScheduler';
 
 it('Should batch task and async process task', async () => {
   const scheduler = new ThrottleScheduler();

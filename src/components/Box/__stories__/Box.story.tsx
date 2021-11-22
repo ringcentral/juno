@@ -1,5 +1,6 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import { notControlInDocTable, switchToControlKnobs } from '../../../storybook';
 import { Title } from '../../../storybook/components';

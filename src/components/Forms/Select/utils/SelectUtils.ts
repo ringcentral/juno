@@ -1,5 +1,6 @@
-import { StandardTextFieldProps as MuiStandardTextFieldProps } from '@material-ui/core/TextField';
 import { ComponentProps, FunctionComponent } from 'react';
+
+import { StandardTextFieldProps as MuiStandardTextFieldProps } from '@material-ui/core/TextField';
 
 import { RcClasses, UnitMap } from '../../../../foundation';
 import { RcTextField } from '../../TextField';

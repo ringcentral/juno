@@ -1,6 +1,8 @@
-import { Meta, Story } from '@storybook/react';
-import range from 'lodash/range';
 import React, { useRef } from 'react';
+
+import range from 'lodash/range';
+
+import { Meta, Story } from '@storybook/react';
 
 import { RcText } from '../../../../components';
 import { RcIconButton } from '../../../../components/Buttons';

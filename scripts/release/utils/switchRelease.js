@@ -1,16 +1,12 @@
 const { execSync } = require('child_process');
 
 const exec = (cmd) => {
-  const [result] = execSync(cmd)
-    .toString()
-    .split('\n');
+  const [result] = execSync(cmd).toString().split('\n');
   return result;
 };
 
 const switchRelease = async (fn) => {
-  const random = Math.random()
-    .toString(35)
-    .substr(2, 22);
+  const random = Math.random().toString(35).substr(2, 22);
 
   const tmpDev = `tmp_release_develop_${random}`;
   const tmpMaster = `tmp_release_master_${random}`;

@@ -1,5 +1,3 @@
-import { Meta, Story } from '@storybook/react';
-import moment from 'moment';
 import React, {
   ComponentProps,
   useEffect,
@@ -7,6 +5,10 @@ import React, {
   useRef,
   useState,
 } from 'react';
+
+import moment from 'moment';
+
+import { Meta, Story } from '@storybook/react';
 
 import {
   notControlInDocTable,

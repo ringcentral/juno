@@ -1,11 +1,12 @@
-import cloneDeep from 'lodash/cloneDeep';
-import values from 'lodash/values';
 import React, {
   ComponentType,
   createRef,
   RefObject,
   SyntheticEvent,
 } from 'react';
+
+import cloneDeep from 'lodash/cloneDeep';
+import values from 'lodash/values';
 
 import styled from '../../foundation/styled-components';
 import ImageBroken from '../../icon/ImageBroken';

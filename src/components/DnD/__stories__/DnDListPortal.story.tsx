@@ -1,8 +1,10 @@
+import React, { forwardRef, FunctionComponent, useState } from 'react';
+import ReactDOM from 'react-dom';
+
+import { DraggableProvided, DraggableStateSnapshot } from 'react-beautiful-dnd';
+
 import { select } from '@storybook/addon-knobs';
 import { Meta, Story } from '@storybook/react';
-import React, { forwardRef, FunctionComponent, useState } from 'react';
-import { DraggableProvided, DraggableStateSnapshot } from 'react-beautiful-dnd';
-import ReactDOM from 'react-dom';
 
 import {
   RcDragDropContext,

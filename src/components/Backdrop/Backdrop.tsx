@@ -1,5 +1,6 @@
-import MuiBackdrop from '@material-ui/core/Backdrop';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiBackdrop from '@material-ui/core/Backdrop';
 
 import {
   combineClasses,

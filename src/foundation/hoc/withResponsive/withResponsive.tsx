@@ -1,5 +1,6 @@
-import isArray from 'lodash/isArray';
 import React, { ComponentType, forwardRef, useMemo } from 'react';
+
+import isArray from 'lodash/isArray';
 
 import {
   FullBreakpoint,

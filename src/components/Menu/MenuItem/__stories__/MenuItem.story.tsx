@@ -1,5 +1,6 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import {
   notControlInDocTable,
@@ -7,9 +8,8 @@ import {
   sortInDocTable,
   switchToControlKnobs,
 } from '../../../../storybook';
-import { RcMenuItem } from '../MenuItem';
-
 import { RcListItemText } from '../../../List';
+import { RcMenuItem } from '../MenuItem';
 
 export default {
   title: '🚀 Cleanup Components/Menu/MenuItem',

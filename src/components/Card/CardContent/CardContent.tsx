@@ -1,5 +1,6 @@
-import MuiCardContent from '@material-ui/core/CardContent';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiCardContent from '@material-ui/core/CardContent';
 
 import {
   combineClasses,

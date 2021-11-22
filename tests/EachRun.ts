@@ -7,7 +7,7 @@ export function EachRun<
     result: RenderResult;
   } = {
     result: RenderResult;
-  }
+  },
 >(titles: TemplateStringsArray, ...actions: ((args: T, context: K) => void)[]) {
   const context: K = {} as K;
 

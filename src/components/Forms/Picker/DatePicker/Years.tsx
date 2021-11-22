@@ -1,7 +1,8 @@
+import React, { forwardRef, useLayoutEffect, useMemo, useRef } from 'react';
+
 import { DateType } from '@date-io/type';
 import { useUtils as useMuiUtils } from '@material-ui/pickers';
 import { MaterialUiPickersDate as MuiPickersDate } from '@material-ui/pickers/typings/date';
-import React, { forwardRef, useLayoutEffect, useMemo, useRef } from 'react';
 
 import {
   useEventCallback,

@@ -1,7 +1,7 @@
 import {
   css,
-  Keyframes,
   keyframes,
+  Keyframes,
   opacity,
   palette2,
   RcThemedStyled,

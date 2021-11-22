@@ -10,8 +10,8 @@ import {
 import { RcIcon } from '../../Icon';
 import { RcPresenceProps } from '../Presence';
 import {
-  RcPresenceColors,
   RcPresenceAvailableIconSizes,
+  RcPresenceColors,
   RcPresenceSizes,
 } from '../utils';
 

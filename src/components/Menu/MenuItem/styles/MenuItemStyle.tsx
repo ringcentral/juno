@@ -11,8 +11,8 @@ import { ListItemFormControlStyle } from '../../../List/ListItem/styles';
 import { RcMenuItemProps } from '../MenuItem';
 import {
   RcMenuItemClasses,
-  RcMenuItemTopAndBottomPaddings,
   RcMenuItemLeftAndRightPaddings,
+  RcMenuItemTopAndBottomPaddings,
 } from '../utils';
 
 export const StyledCheckIcon = styled(RcIcon)`

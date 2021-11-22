@@ -1,5 +1,6 @@
-import MuiPaper, { PaperProps as MuiPaperProps } from '@material-ui/core/Paper';
 import React, { FunctionComponent } from 'react';
+
+import MuiPaper, { PaperProps as MuiPaperProps } from '@material-ui/core/Paper';
 
 import { RcBaseProps } from '../../../foundation/typings';
 

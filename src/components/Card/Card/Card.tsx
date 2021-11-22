@@ -1,12 +1,14 @@
-import MuiCard from '@material-ui/core/Card';
-import clsx from 'clsx';
 import React, { ComponentProps, forwardRef, useMemo, useState } from 'react';
+
+import clsx from 'clsx';
+
+import MuiCard from '@material-ui/core/Card';
 
 import {
   combineClasses,
+  omit,
   RcBaseProps,
   RcClassesProps,
-  omit,
   useThemeProps,
 } from '../../../foundation';
 import styled from '../../../foundation/styled-components';

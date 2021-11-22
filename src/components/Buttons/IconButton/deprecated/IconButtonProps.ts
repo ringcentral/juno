@@ -1,7 +1,8 @@
+import { ElementType, ReactNode, RefObject } from 'react';
+
 import { StandardProps as MuiStandardProps } from '@material-ui/core';
 import { PopperProps as MuiPopperProps } from '@material-ui/core/Popper';
 import { TooltipProps as MuiTooltipProps } from '@material-ui/core/Tooltip';
-import { ElementType, ReactNode, RefObject } from 'react';
 
 import { RcBaseProps, RcBaseSize, RcPaletteProp } from '../../../../foundation';
 import { RcIconProps } from '../../../Icon';
@@ -251,8 +252,8 @@ const rcIconButtonWarning = [
 
 export { rcIconButtonWarning };
 export type {
-  RcIconButtonVariant,
+  RcIconButtonDeprecatedProps,
   RcIconButtonProps,
   RcIconButtonSize,
-  RcIconButtonDeprecatedProps,
+  RcIconButtonVariant,
 };

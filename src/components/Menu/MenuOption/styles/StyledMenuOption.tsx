@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react';
-import { styled, palette } from '../../../../foundation';
+
+import { palette, styled } from '../../../../foundation';
 import { RcMenuItem } from '../../MenuItem';
 import { RcMenuOptionProps } from '../MenuOption';
 

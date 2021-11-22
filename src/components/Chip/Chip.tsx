@@ -1,10 +1,11 @@
-import MuiChip from '@material-ui/core/Chip';
 import React, {
   ComponentProps,
   forwardRef,
   ReactElement,
   useMemo,
 } from 'react';
+
+import MuiChip from '@material-ui/core/Chip';
 
 import {
   combineClasses,

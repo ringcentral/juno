@@ -1,5 +1,6 @@
-import MuiAccordion from '@material-ui/core/Accordion';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiAccordion from '@material-ui/core/Accordion';
 
 import {
   combineClasses,

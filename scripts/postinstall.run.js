@@ -7,8 +7,7 @@ const changeComment = '/** [Juno] postinstall fix */';
 
 const fixTypeFile = [
   {
-    url:
-      'node_modules/@material-ui/pickers/views/Calendar/SlideTransition.d.ts',
+    url: 'node_modules/@material-ui/pickers/views/Calendar/SlideTransition.d.ts',
     content: 'interface SlideTransitionProps',
     replaceTo: 'export interface SlideTransitionProps',
   },

@@ -1,8 +1,9 @@
-import { Meta } from '@storybook/react';
 import React, { useState } from 'react';
 
+import { Meta } from '@storybook/react';
+
+import { RcTable, RcTableBodyCellContent, RcTableProps } from '..';
 import { palette2, styled } from '../../../foundation';
-import { RcTable, RcTableProps, RcTableBodyCellContent } from '..';
 import { RcTableHeadView } from '../TableHead';
 import { RcTableRow } from '../TableRow';
 import {

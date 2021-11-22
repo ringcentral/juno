@@ -1,6 +1,8 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
 
+import { Meta, Story } from '@storybook/react';
+
+import { Phone } from '../../../../icon';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -11,7 +13,6 @@ import { RcAvatar } from '../../../Avatar';
 import { RcIconButton } from '../../../Buttons';
 import { RcCard } from '../../Card';
 import { RcCardHeader } from '../CardHeader';
-import { Phone } from '../../../../icon';
 
 export default {
   title: '🚀 Cleanup Components/Cards/CardHeader',

@@ -1,10 +1,10 @@
-import { Meta, Story } from '@storybook/react';
 import React, { useState } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import { RcIconButton } from '../../../../components/Buttons';
 import PauseCircleBorder from '../../../../icon/PauseCircleBorder';
 import PlayCircleBorder from '../../../../icon/PlayCircleBorder';
-import { useChange } from '../../useChange';
 import { useAudio } from '../useAudio';
 
 export default {

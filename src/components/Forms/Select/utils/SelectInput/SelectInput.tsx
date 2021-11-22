@@ -4,12 +4,15 @@
  * https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/Select/SelectInput.js
  */
 
+import React, { ComponentType, forwardRef, useState } from 'react';
+
+import clsx from 'clsx';
+import { isFragment } from 'react-is';
+
 // @ts-ignore that is exist in source, but no type
 import { isFilled } from '@material-ui/core/InputBase/utils';
-import { isFragment } from 'react-is';
 // @ts-ignore
 // import MuiError from '@material-ui/utils/macros/MuiError.macro';
-
 import MuiMenu, { MenuProps as MuiMenuProps } from '@material-ui/core/Menu';
 import { SelectProps as MuiSelectProps } from '@material-ui/core/Select';
 import {
@@ -17,11 +20,9 @@ import {
   useControlled,
   useForkRef,
 } from '@material-ui/core/utils';
-import clsx from 'clsx';
-import React, { ComponentType, forwardRef, useState } from 'react';
 
-import { SelectArrowDownIcon } from '../../styles/SelectArrowDownIcon';
 import { RcBaseProps } from '../../../../../foundation';
+import { SelectArrowDownIcon } from '../../styles/SelectArrowDownIcon';
 
 type SelectInputProps = {
   MenuComponent?: ComponentType<MuiMenuProps>;

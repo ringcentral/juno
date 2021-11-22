@@ -1,7 +1,8 @@
+import React, { forwardRef } from 'react';
+
 import MuiFormLabel, {
   FormLabelProps as MuiFormLabelProps,
 } from '@material-ui/core/FormLabel';
-import React, { forwardRef } from 'react';
 
 import {
   palette2,

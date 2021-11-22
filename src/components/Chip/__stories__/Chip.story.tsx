@@ -1,6 +1,8 @@
-import { Meta, Story } from '@storybook/react';
-import isString from 'lodash/isString';
 import React, { ComponentProps } from 'react';
+
+import isString from 'lodash/isString';
+
+import { Meta, Story } from '@storybook/react';
 
 import {
   notControlInDocTable,

@@ -1,5 +1,6 @@
-import MuiButtonBase from '@material-ui/core/ButtonBase';
 import { ComponentProps } from 'react';
+
+import MuiButtonBase from '@material-ui/core/ButtonBase';
 
 import { styled } from '../../../foundation';
 

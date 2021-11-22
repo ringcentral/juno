@@ -1,5 +1,6 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps, useState } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import { sortInDocTable, switchToControlKnobs } from '../../../../storybook';
 import { Title } from '../../../../storybook/components';

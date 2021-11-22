@@ -1,3 +1,5 @@
+import React, { FunctionComponent, useRef } from 'react';
+
 import {
   cleanup,
   fireEvent,
@@ -5,7 +7,7 @@ import {
   screen,
   waitFor,
 } from '@testing-library/react';
-import React, { FunctionComponent, useRef } from 'react';
+
 import { RcDialog } from '../../Dialog';
 import { RcPortalHost } from '../PortalHost';
 import {

@@ -75,4 +75,4 @@ const RcMobileThemes = {
 
 const RcThemeIds = Object.keys(RcThemes) as RcThemesIdType[];
 
-export { RcThemeIds, RcThemes, RcMobileThemes, RcThemesIdType, RcThemesType };
+export { RcMobileThemes, RcThemeIds, RcThemes, RcThemesIdType, RcThemesType };

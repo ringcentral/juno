@@ -6,4 +6,4 @@ enum TIME_SYSTEM_TEXT {
 const K_ENTER = 'Enter';
 const K_SPACE = ' ';
 
-export { TIME_SYSTEM_TEXT, K_ENTER, K_SPACE };
+export { K_ENTER, K_SPACE, TIME_SYSTEM_TEXT };

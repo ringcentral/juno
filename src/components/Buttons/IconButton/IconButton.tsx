@@ -1,5 +1,6 @@
-import clsx from 'clsx';
 import React, { forwardRef, memo, ReactElement } from 'react';
+
+import clsx from 'clsx';
 
 import {
   combineProps,

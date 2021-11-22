@@ -1,5 +1,6 @@
-import isPlainObject from 'lodash/isPlainObject';
 import { isValidElement } from 'react';
+
+import isPlainObject from 'lodash/isPlainObject';
 
 /**
  * Combine props object together

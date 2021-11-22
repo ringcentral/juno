@@ -1,5 +1,6 @@
-import { Meta } from '@storybook/react';
 import React, { FunctionComponent, useEffect, useMemo, useState } from 'react';
+
+import { Meta } from '@storybook/react';
 
 // @ts-ignore
 import svgToComponentMapping from '../../../../scripts/utils/svgToComponentMapping';

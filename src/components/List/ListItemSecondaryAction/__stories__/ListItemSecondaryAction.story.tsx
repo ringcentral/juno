@@ -1,5 +1,6 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import {
   notControlInDocTable,
@@ -7,8 +8,8 @@ import {
   sortInDocTable,
   switchToControlKnobs,
 } from '../../../../storybook';
-import { RcFormControlLabel } from '../../../Forms/FormControlLabel';
 import { RcCheckbox } from '../../../Forms/Checkbox';
+import { RcFormControlLabel } from '../../../Forms/FormControlLabel';
 import { RcListItem } from '../../ListItem';
 import { RcListItemText } from '../../ListItemText';
 import { RcListItemSecondaryAction } from '../ListItemSecondaryAction';

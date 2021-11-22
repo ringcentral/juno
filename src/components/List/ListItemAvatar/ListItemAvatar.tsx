@@ -1,5 +1,6 @@
-import MuiListItemAvatar from '@material-ui/core/ListItemAvatar';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiListItemAvatar from '@material-ui/core/ListItemAvatar';
 
 import {
   combineClasses,

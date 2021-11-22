@@ -1,11 +1,12 @@
 import React, { FunctionComponent } from 'react';
+
 import {
   DragDropContext as RBDDragDropContext,
   DragDropContextProps,
 } from 'react-beautiful-dnd';
 
-import { GlobalDraggableStyle } from './styles';
 import { useThemeProps } from '../../../foundation';
+import { GlobalDraggableStyle } from './styles';
 
 type RcDragDropContextProps = DragDropContextProps;
 

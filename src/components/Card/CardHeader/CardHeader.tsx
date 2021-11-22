@@ -1,10 +1,11 @@
-import MuiCardHeader from '@material-ui/core/CardHeader';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiCardHeader from '@material-ui/core/CardHeader';
 
 import {
   combineClasses,
-  RcBaseProps,
   overridableStyled,
+  RcBaseProps,
   useThemeProps,
 } from '../../../foundation';
 import { CardHeaderStyle } from './styles';

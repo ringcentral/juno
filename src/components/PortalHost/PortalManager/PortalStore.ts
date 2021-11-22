@@ -1,5 +1,5 @@
-import { UniqID, PortalDescriptor } from './types';
 import { Connectable } from '../Connectable';
+import { PortalDescriptor, UniqID } from './types';
 
 export class PortalStore<D extends {}> extends Connectable<
   PortalDescriptor<D>[]

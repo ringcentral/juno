@@ -1,8 +1,8 @@
 import React, { useCallback, useState } from 'react';
 
+import { useThemeProps } from '../../../../foundation';
 import { RcFormContext } from './FormContext';
 import { FieldInfo, RcFormProps } from './types';
-import { useThemeProps } from '../../../../foundation';
 
 const RcForm = (inProps: RcFormProps) => {
   const props = useThemeProps({ props: inProps, name: 'RcForm' });

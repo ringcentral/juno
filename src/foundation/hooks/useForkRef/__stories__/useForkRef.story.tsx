@@ -1,5 +1,6 @@
-import { Meta, Story } from '@storybook/react';
 import React, { useEffect, useRef } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import { Title } from '../../../../storybook/components';
 import { useForkRef } from '../useForkRef';

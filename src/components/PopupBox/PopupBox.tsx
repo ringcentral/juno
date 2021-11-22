@@ -178,4 +178,4 @@ const RcPopupBox = styled(_RcPopupBox)``;
 RcPopupBox.defaultProps = {};
 
 export { RcPopupBox };
-export type { RcPopupBoxProps, RcDialogFuncProps };
+export type { RcDialogFuncProps, RcPopupBoxProps };

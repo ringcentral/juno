@@ -1,5 +1,6 @@
-import { Meta, Story } from '@storybook/react';
 import React from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import { RcBox } from '../../../../components';
 import { Title } from '../../../../storybook/components';

@@ -1,6 +1,6 @@
 import { css, palette2, RcThemedStyled, spacing } from '../../../../foundation';
 import { RcDialogContentProps } from '../DialogContent';
-import { RcDialogContentClasses, getRcDialogContentSpacings } from '../utils';
+import { getRcDialogContentSpacings, RcDialogContentClasses } from '../utils';
 
 export const DialogContentStyle: RcThemedStyled<RcDialogContentProps, any> = (
   props,

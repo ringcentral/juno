@@ -1,8 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-import clsx from 'clsx';
-import isString from 'lodash/isString';
-import trimEnd from 'lodash/trimEnd';
-import { InputProps } from '@material-ui/core/Input';
 import React, {
   CSSProperties,
   DOMAttributes,
@@ -13,10 +8,18 @@ import React, {
   useState,
 } from 'react';
 
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+import clsx from 'clsx';
+import isString from 'lodash/isString';
+import trimEnd from 'lodash/trimEnd';
+
+import { InputProps } from '@material-ui/core/Input';
+
 import {
   clearReactReferencesInNode,
   clearWindowSelection,
   combineClasses,
+  combineProps,
   RcBaseProps,
   RcClassesProps,
   RcPaletteKeys,
@@ -26,7 +29,6 @@ import {
   useEventCallback,
   useRefState,
   useThemeProps,
-  combineProps,
 } from '../../foundation';
 import { RcTooltip, RcTooltipProps } from '../Tooltip';
 import { InlineEditableStyle } from './styles';

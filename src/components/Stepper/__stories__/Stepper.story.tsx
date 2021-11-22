@@ -1,6 +1,7 @@
+import React, { ComponentProps, useState } from 'react';
+
 import { boolean } from '@storybook/addon-knobs';
 import { Meta, Story } from '@storybook/react';
-import React, { ComponentProps, useState } from 'react';
 
 import { styled } from '../../../foundation';
 import {

@@ -1,5 +1,6 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import { palette2, shadows, styled } from '../../../../foundation';
 import { Emoji } from '../../../../icon';

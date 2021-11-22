@@ -77,7 +77,7 @@ axios
           const widthValue = width !== null ? `width="${width}px" ` : '';
           const heightValue = height !== null ? `height="${height}px" ` : '';
           const viewBoxValue = viewBox !== null ? `viewBox="${viewBox}" ` : '';
-          const contentValue = ((content as any) as string[]).join('\n');
+          const contentValue = (content as any as string[]).join('\n');
 
           return `<?xml version="1.0" encoding="UTF-8"?>
 <svg ${widthValue}${heightValue}${viewBoxValue}version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

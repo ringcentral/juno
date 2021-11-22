@@ -1,5 +1,6 @@
-import { ButtonBaseActions } from '@material-ui/core';
 import React, { FunctionComponent, ReactNode, useRef } from 'react';
+
+import { ButtonBaseActions } from '@material-ui/core';
 
 import {
   RcButtonBase,

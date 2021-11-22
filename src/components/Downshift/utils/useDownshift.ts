@@ -1,6 +1,3 @@
-import { useControlled } from '@material-ui/core/utils';
-import isString from 'lodash/isString';
-import uniqueId from 'lodash/uniqueId';
 import {
   ChangeEvent,
   HTMLAttributes,
@@ -9,6 +6,11 @@ import {
   useRef,
   useState,
 } from 'react';
+
+import isString from 'lodash/isString';
+import uniqueId from 'lodash/uniqueId';
+
+import { useControlled } from '@material-ui/core/utils';
 
 import {
   combineProps,

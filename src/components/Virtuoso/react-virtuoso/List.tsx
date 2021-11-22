@@ -1,3 +1,6 @@
+import * as React from 'react';
+import { createElement, CSSProperties, FC } from 'react';
+
 /* eslint-disable no-console */
 import { RefHandle, systemToComponent } from '@virtuoso.dev/react-urx';
 import {
@@ -12,16 +15,15 @@ import {
   publish,
   statefulStream,
   statefulStreamFromEmitter,
-  Stream,
   stream,
+  Stream,
   subscribe,
   system,
   tup,
   withLatestFrom,
 } from '@virtuoso.dev/urx';
-import * as React from 'react';
-import { createElement, CSSProperties, FC } from 'react';
 
+import { useRcPortalWindowContext } from '../../../foundation';
 import useChangedChildSizes from './hooks/useChangedChildSizes';
 import useIsomorphicLayoutEffect from './hooks/useIsomorphicLayoutEffect';
 import useScrollTop from './hooks/useScrollTop';
@@ -37,7 +39,6 @@ import {
 } from './interfaces';
 import { listSystem } from './listSystem';
 import { positionStickyCssValue } from './utils/positionStickyCssValue';
-import { useRcPortalWindowContext } from '../../../foundation';
 
 export function identity<T>(value: T) {
   return value;

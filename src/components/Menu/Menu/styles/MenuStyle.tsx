@@ -1,6 +1,6 @@
 import { css, RcThemedStyled } from '../../../../foundation';
-import { RcMenuProps } from '../Menu';
 import { DividerInMenuStyle } from '../../MenuList/styles';
+import { RcMenuProps } from '../Menu';
 
 export const MenuStyle: RcThemedStyled<RcMenuProps, any> = () => {
   return css`

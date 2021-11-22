@@ -1,5 +1,6 @@
-import { boolean, select, text } from '@storybook/addon-knobs';
 import React, { forwardRef } from 'react';
+
+import { boolean, select, text } from '@storybook/addon-knobs';
 
 import { RcTooltipProps } from '../../Tooltip';
 import { withTooltip } from '../withTooltip';

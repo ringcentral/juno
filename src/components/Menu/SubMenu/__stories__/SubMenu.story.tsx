@@ -1,5 +1,6 @@
+import React, { ComponentProps, FunctionComponent, useState } from 'react';
+
 import { Meta, Story } from '@storybook/react';
-import React, { ComponentProps, useState, FunctionComponent } from 'react';
 
 import {
   notControlInDocTable,

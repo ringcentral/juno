@@ -1,4 +1,5 @@
 import { ListItemSecondaryActionProps as MuiListItemSecondaryActionProps } from '@material-ui/core/ListItemSecondaryAction';
+
 import { RcBaseProps } from '../../../foundation';
 import { StyledMenuItemSubAction } from './styles';
 

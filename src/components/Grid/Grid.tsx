@@ -1,5 +1,6 @@
-import MuiGrid from '@material-ui/core/Grid';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiGrid from '@material-ui/core/Grid';
 
 import {
   combineClasses,

@@ -1,13 +1,15 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps, FunctionComponent } from 'react';
 
+import { Meta, Story } from '@storybook/react';
+
 import {
-  styled,
   RcDefaultDarkTheme,
-  useThemeSwitcher,
-  RcThemeSwitcherProvider,
   RcSubThemeProvider,
+  RcThemeSwitcherProvider,
+  styled,
+  useThemeSwitcher,
 } from '../../../foundation';
+import { DefaultFile } from '../../../icon';
 import Add from '../../../icon/Add';
 import Phone from '../../../icon/Phone';
 import {
@@ -15,9 +17,8 @@ import {
   paletteChoice,
   switchToControlKnobs,
 } from '../../../storybook';
-import { RcIcon } from '../Icon';
-import { DefaultFile } from '../../../icon';
 import { RcButton } from '../../Buttons';
+import { RcIcon } from '../Icon';
 
 export default {
   title: '🚀 Cleanup Components/Icon',

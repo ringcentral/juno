@@ -1,11 +1,11 @@
 import {
   css,
   ellipsis,
+  getParsePaletteColor,
   palette2,
   RcThemedStyled,
   spacing,
   typography,
-  getParsePaletteColor,
 } from '../../../../foundation';
 import { RcListItemTextProps } from '../ListItemText';
 import { RcListItemTextClasses } from '../utils';

@@ -1,9 +1,9 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps, FunctionComponent } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import AddSvg from '../../../../icon/Add';
 import ReplySvg from '../../../../icon/Reply';
-import StartSvg from '../../../../icon/Start';
 import {
   paletteChoice,
   sortInDocTable,

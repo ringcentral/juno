@@ -1,5 +1,6 @@
-import MuiButtonGroup from '@material-ui/core/ButtonGroup';
 import React, { ComponentProps, forwardRef } from 'react';
+
+import MuiButtonGroup from '@material-ui/core/ButtonGroup';
 
 import { RcBaseProps, styled, useThemeProps } from '../../../foundation';
 

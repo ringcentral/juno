@@ -1,4 +1,5 @@
 import { createContext } from 'react';
+
 import { PortalManager } from '../PortalManager';
 
 export const PortalManagerContext = createContext<PortalManager | undefined>(

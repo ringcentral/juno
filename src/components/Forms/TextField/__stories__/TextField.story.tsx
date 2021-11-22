@@ -1,11 +1,11 @@
-import { Meta, Story } from '@storybook/react';
 import React, {
   ComponentProps,
   useLayoutEffect,
   useRef,
   useState,
 } from 'react';
-import { Title } from '../../../../storybook/components';
+
+import { Meta, Story } from '@storybook/react';
 
 import HideBorder from '../../../../icon/HideBorder';
 import {
@@ -14,6 +14,7 @@ import {
   sortInDocTable,
   switchToControlKnobs,
 } from '../../../../storybook';
+import { Title } from '../../../../storybook/components';
 import { RcIconButton } from '../../../Buttons';
 import { RcGrid } from '../../../Grid';
 import { RcText } from '../../../Text';

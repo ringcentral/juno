@@ -1,11 +1,13 @@
-import { Meta, Story } from '@storybook/react';
-import uniqueId from 'lodash/uniqueId';
 import React, {
   ComponentProps,
   FunctionComponent,
   useRef,
   useState,
 } from 'react';
+
+import uniqueId from 'lodash/uniqueId';
+
+import { Meta, Story } from '@storybook/react';
 
 import {
   flexCenterStyle,

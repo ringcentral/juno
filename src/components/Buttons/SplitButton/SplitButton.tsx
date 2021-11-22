@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import React, {
   forwardRef,
   ReactElement,
@@ -7,6 +6,8 @@ import React, {
   useRef,
   useState,
 } from 'react';
+
+import clsx from 'clsx';
 
 import {
   checkDefaultPrevented,
@@ -354,8 +355,8 @@ RcSplitButton.defaultProps = {
 
 export { RcSplitButton };
 export type {
+  RcSplitButtonChildrenProps,
   RcSplitButtonProps,
   RcSplitButtonVariant,
-  RcSplitButtonChildrenProps,
   RcSplitRoundButtonSpacingSize,
 };

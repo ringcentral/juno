@@ -1,4 +1,4 @@
-import { RcThemedStyled, css, palette2 } from '../../../foundation';
+import { css, palette2, RcThemedStyled } from '../../../foundation';
 import { RcTextProps } from '../Text';
 
 export const highlightClassName = 'highlight-term';

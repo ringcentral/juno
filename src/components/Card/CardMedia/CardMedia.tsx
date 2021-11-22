@@ -1,10 +1,11 @@
-import MuiCardMedia from '@material-ui/core/CardMedia';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiCardMedia from '@material-ui/core/CardMedia';
 
 import {
   combineClasses,
-  RcBaseProps,
   overridableStyled,
+  RcBaseProps,
   useThemeProps,
 } from '../../../foundation';
 import { CardMediaStyle } from './styles';

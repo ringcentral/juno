@@ -1,4 +1,3 @@
-import MuiSnackbarContent from '@material-ui/core/SnackbarContent';
 import React, {
   ComponentProps,
   forwardRef,
@@ -6,14 +5,16 @@ import React, {
   useMemo,
 } from 'react';
 
+import MuiSnackbarContent from '@material-ui/core/SnackbarContent';
+
 import {
   combineClasses,
   isRcElement,
   RcBaseProps,
   RcBaseSize,
   styled,
-  withDeprecatedCheck,
   useThemeProps,
+  withDeprecatedCheck,
 } from '../../../foundation';
 import { RcCircularProgress } from '../../Progress/CircularProgress';
 import { snackbarContentStyle } from './styles';

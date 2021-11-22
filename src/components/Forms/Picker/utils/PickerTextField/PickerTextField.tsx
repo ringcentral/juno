@@ -1,5 +1,3 @@
-import { PopoverOrigin } from '@material-ui/core/Popover';
-import uniqueId from 'lodash/uniqueId';
 import React, {
   forwardRef,
   Ref,
@@ -8,6 +6,10 @@ import React, {
   useRef,
   useState,
 } from 'react';
+
+import uniqueId from 'lodash/uniqueId';
+
+import { PopoverOrigin } from '@material-ui/core/Popover';
 
 import {
   combineProps,

@@ -1,6 +1,8 @@
-import MuiSwitch from '@material-ui/core/Switch';
-import clsx from 'clsx';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import clsx from 'clsx';
+
+import MuiSwitch from '@material-ui/core/Switch';
 
 import {
   combineClasses,
@@ -106,7 +108,7 @@ RcSwitch.displayName = 'RcSwitch';
 
 export { RcSwitch };
 export type {
-  RcSwitchProps,
-  RcSwitchLabelPlacement,
   RcSwitchFormControlLabelProps,
+  RcSwitchLabelPlacement,
+  RcSwitchProps,
 };

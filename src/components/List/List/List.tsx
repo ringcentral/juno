@@ -1,5 +1,6 @@
-import MuiList from '@material-ui/core/List';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiList from '@material-ui/core/List';
 
 import {
   combineClasses,

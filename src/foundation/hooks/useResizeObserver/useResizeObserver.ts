@@ -1,6 +1,7 @@
+import { useLayoutEffect, useRef } from 'react';
+
 import debounce from 'lodash/debounce';
 import throttle from 'lodash/throttle';
-import { useLayoutEffect, useRef } from 'react';
 import ResizeObserverPolyfill from 'resize-observer-polyfill';
 
 import { useRcPortalWindowContext } from '../../contexts';

@@ -1,6 +1,8 @@
-import MuiButtonBase from '@material-ui/core/ButtonBase';
-import clsx from 'clsx';
 import React, { ComponentProps, FunctionComponent, useMemo } from 'react';
+
+import clsx from 'clsx';
+
+import MuiButtonBase from '@material-ui/core/ButtonBase';
 
 import {
   omit,

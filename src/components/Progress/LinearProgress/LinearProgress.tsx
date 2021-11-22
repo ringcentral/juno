@@ -1,5 +1,6 @@
-import MuiLinearProgress from '@material-ui/core/LinearProgress';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiLinearProgress from '@material-ui/core/LinearProgress';
 
 import {
   combineClasses,

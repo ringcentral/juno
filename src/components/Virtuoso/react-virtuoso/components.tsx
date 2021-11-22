@@ -8,10 +8,10 @@ import {
   GroupContent,
   GroupItemContent,
   IndexLocationWithAlign,
+  ItemContent,
   ListItem,
   ListRange,
   ScrollSeekConfiguration,
-  ItemContent,
 } from './interfaces';
 import { List, ListHandle } from './List';
 

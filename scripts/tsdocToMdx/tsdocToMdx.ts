@@ -2,12 +2,11 @@
 import { execSync } from 'child_process';
 import fs from 'fs-extra';
 import os from 'os';
-
 import path from 'path';
-
-import { Lib } from '../utils/lib';
 // @ts-ignore
 import prettier from 'prettier';
+
+import { Lib } from '../utils/lib';
 
 console.log('[Stories Doc]: start create docs');
 

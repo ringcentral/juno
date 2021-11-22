@@ -1,6 +1,3 @@
-import MuiBadge from '@material-ui/core/Badge';
-import { capitalize } from '@material-ui/core/utils';
-import clsx from 'clsx';
 import React, {
   ComponentProps,
   ComponentType,
@@ -8,6 +5,11 @@ import React, {
   forwardRef,
   useMemo,
 } from 'react';
+
+import clsx from 'clsx';
+
+import MuiBadge from '@material-ui/core/Badge';
+import { capitalize } from '@material-ui/core/utils';
 
 import {
   combineProps,

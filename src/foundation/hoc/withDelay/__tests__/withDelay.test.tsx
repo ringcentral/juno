@@ -2,7 +2,7 @@ import React from 'react';
 
 import { act, screen } from '@testing-library/react';
 
-import { render, cleanup } from '../../../../../tests';
+import { cleanup, render } from '../../../../../tests';
 import { withDelay } from '../withDelay';
 
 const DELAY = 1000;

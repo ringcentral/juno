@@ -1,4 +1,4 @@
-import { styled, spacing } from '../../../../foundation';
+import { spacing, styled } from '../../../../foundation';
 
 const StyledMenuItemActionWrapper = styled.div`
   & {

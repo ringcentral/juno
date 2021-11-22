@@ -1,5 +1,6 @@
-import MuiFormControlLabel from '@material-ui/core/FormControlLabel';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiFormControlLabel from '@material-ui/core/FormControlLabel';
 
 import {
   combineClasses,

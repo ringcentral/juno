@@ -6,12 +6,11 @@ import {
   spacing,
   typography,
 } from '../../../../foundation';
-
-import { RcListItemSecondaryActionProps } from '../ListItemSecondaryAction';
 import { RcCheckbox } from '../../../Forms/Checkbox';
+import { RcFormControlLabel } from '../../../Forms/FormControlLabel';
 import { RcRadio } from '../../../Forms/Radio';
 import { RcSwitch } from '../../../Forms/Switch';
-import { RcFormControlLabel } from '../../../Forms/FormControlLabel';
+import { RcListItemSecondaryActionProps } from '../ListItemSecondaryAction';
 
 export const ListItemSecondaryActionStyle: RcThemedStyled<
   RcListItemSecondaryActionProps,

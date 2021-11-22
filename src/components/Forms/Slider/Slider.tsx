@@ -1,5 +1,6 @@
-import MuiSlider from '@material-ui/core/Slider';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiSlider from '@material-ui/core/Slider';
 
 import {
   combineClasses,

@@ -1,11 +1,14 @@
 import React, { FunctionComponent, memo, useRef } from 'react';
+
 import { DateType } from '@date-io/type';
 import { useUtils as useMuiUtils } from '@material-ui/pickers';
 import { MaterialUiPickersDate as MuiPickersDate } from '@material-ui/pickers/typings/date';
 import { SlideDirection as MuiSlideDirection } from '@material-ui/pickers/views/Calendar/SlideTransition';
+
 import { RcClassesProps } from '../../../../foundation';
 import arrowLeftSvg from '../../../../icon/ArrowLeft2';
 import arrowRightSvg from '../../../../icon/ArrowRight';
+import { RcVisuallyHidden } from '../../../VisuallyHidden';
 import { SelectArrowDownIcon } from '../../Select/styles/SelectArrowDownIcon';
 import { RcDatePickerSize } from './DatePicker';
 import {
@@ -15,7 +18,6 @@ import {
   SwitchHeaderWrapper,
 } from './styles';
 import { useScreenReaderContext } from './utils';
-import { RcVisuallyHidden } from '../../../VisuallyHidden';
 
 type ViewType = 'day' | 'year';
 

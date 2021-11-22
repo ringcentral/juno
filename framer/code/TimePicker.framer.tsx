@@ -1,5 +1,6 @@
-import { addPropertyControls, ControlType } from 'framer';
 import { useRef, useState } from 'react';
+
+import { addPropertyControls, ControlType } from 'framer';
 
 import * as lib from '../src';
 

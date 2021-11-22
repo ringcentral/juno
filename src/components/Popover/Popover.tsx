@@ -1,5 +1,6 @@
-import MuiPopover from '@material-ui/core/Popover';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiPopover from '@material-ui/core/Popover';
 
 import {
   combineClasses,

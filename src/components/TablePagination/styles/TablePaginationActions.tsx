@@ -1,5 +1,6 @@
-import { TablePaginationActionsProps } from '@material-ui/core/TablePagination/TablePaginationActions';
 import React, { memo } from 'react';
+
+import { TablePaginationActionsProps } from '@material-ui/core/TablePagination/TablePaginationActions';
 
 import {
   combineProps,

@@ -1,4 +1,5 @@
 import React, { FunctionComponent, useEffect, useMemo } from 'react';
+
 import { PortalIDProvider } from './context';
 import { PortalDescriptor } from './PortalManager';
 

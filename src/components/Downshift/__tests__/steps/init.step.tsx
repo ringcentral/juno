@@ -1,5 +1,8 @@
 import React, { useRef, useState } from 'react';
+
 import { act } from 'react-dom/test-utils';
+
+import userEvent from '@testing-library/user-event';
 
 import {
   fireEvent,
@@ -16,7 +19,6 @@ import {
   RcDownshiftRef,
 } from '../../Downshift';
 import { RcDownshiftSelectedItem } from '../../utils';
-import userEvent from '@testing-library/user-event';
 
 export type InitContext = {
   result: RenderResult;

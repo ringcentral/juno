@@ -54,9 +54,9 @@ const RcSnackbarContentLoadingSizes: UnitMap<RcSnackbarContentSize, number> = {
 const RcSnackbarContentLineHeight = px(24);
 
 export {
-  RcSnackbarContentColors,
   RcSnackbarContentClasses,
-  RcSnackbarContentPaddings,
-  RcSnackbarContentLoadingSizes,
+  RcSnackbarContentColors,
   RcSnackbarContentLineHeight,
+  RcSnackbarContentLoadingSizes,
+  RcSnackbarContentPaddings,
 };

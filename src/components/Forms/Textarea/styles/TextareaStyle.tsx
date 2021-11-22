@@ -1,9 +1,9 @@
 import {
   css,
   fakeBorder,
+  nonTouchHoverMedia,
   palette2,
   RcThemedStyled,
-  nonTouchHoverMedia,
   spacing,
 } from '../../../../foundation';
 import { RcTextareaProps } from '../Textarea';

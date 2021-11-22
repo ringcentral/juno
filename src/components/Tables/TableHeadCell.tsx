@@ -1,6 +1,7 @@
+import React, { useMemo } from 'react';
+
 import isFunction from 'lodash/isFunction';
 import isNumber from 'lodash/isNumber';
-import React, { useMemo } from 'react';
 
 import { useA11yKeyEvent, useThemeProps } from '../../foundation';
 import arrowDown from '../../icon/JumpToLatest';

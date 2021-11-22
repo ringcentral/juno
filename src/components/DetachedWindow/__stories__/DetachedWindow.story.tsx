@@ -1,4 +1,3 @@
-import { Meta, Story } from '@storybook/react';
 import React, {
   ComponentProps,
   FunctionComponent,
@@ -6,39 +5,40 @@ import React, {
   useState,
 } from 'react';
 
+import { Meta, Story } from '@storybook/react';
+
 import styled from '../../../foundation/styled-components';
-import { RcButton } from '../../Buttons/Button';
-import {
-  DialogExampleComponent,
-  DialogWithResponsiveExample,
-} from '../../Dialog/__stories__/Dialog.story';
-// import { MenuExampleComponent } from '../../Menu/Menu/__stories__/Menu.story';
-import { SubMenuExampleComponent } from '../../Menu/SubMenu/__stories__/SubMenu.story';
-import { Popper } from '../../Popper/__stories__/Popper.story';
-import { Popover } from '../../Popover/__stories__/Popover.story';
-import { VirtuosoExample } from '../../Virtuoso/__stories__/Virtuoso.story';
-import { TabsExampleComponent } from '../../Tabs/Tabs/__stories__/Tabs.story';
-import { RcDetachedWindow, RcDetachedWindowRef } from '../DetachedWindow';
+import { Close } from '../../../icon';
 import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '../../../storybook';
-import { RcGrid } from '../../Grid';
-import { RcPaper } from '../../Paper';
-import { RcTypography } from '../../Typography';
+import { RcButton } from '../../Buttons/Button';
 import { RcIconButton } from '../../Buttons/IconButton';
-import { Close } from '../../../icon';
+import {
+  DialogExampleComponent,
+  DialogWithResponsiveExample,
+} from '../../Dialog/__stories__/Dialog.story';
+import { RcDivider } from '../../Divider';
+import { DownshiftExamples } from '../../Downshift/__stories__/Downshift.story';
+import { MultiDrawer } from '../../Drawer/__stories__/Drawer.story';
+import { RcGrid } from '../../Grid';
+// import { MenuExampleComponent } from '../../Menu/Menu/__stories__/Menu.story';
+import { SubMenuExampleComponent } from '../../Menu/SubMenu/__stories__/SubMenu.story';
+import { RcPaper } from '../../Paper';
+import { Popover } from '../../Popover/__stories__/Popover.story';
+import { Popper } from '../../Popper/__stories__/Popper.story';
+import { TabsExampleComponent } from '../../Tabs/Tabs/__stories__/Tabs.story';
 import { RcText } from '../../Text';
-
+import { RcTypography } from '../../Typography';
 // @ts-ignore
 // eslint-disable-next-line
 // import polyfill from '!raw-loader!./ResizeObserver.global.js';
 import { VirtualizedMenu } from '../../VirtualizedMenu/__stories__/VirtualizedMenu.story';
-import { DownshiftExamples } from '../../Downshift/__stories__/Downshift.story';
-import { MultiDrawer } from '../../Drawer/__stories__/Drawer.story';
-import { RcDivider } from '../../Divider';
+import { VirtuosoExample } from '../../Virtuoso/__stories__/Virtuoso.story';
+import { RcDetachedWindow, RcDetachedWindowRef } from '../DetachedWindow';
 
 const Box = styled.div<any>`
   width: 50px;

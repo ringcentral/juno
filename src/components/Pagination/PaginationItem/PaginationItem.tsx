@@ -1,5 +1,6 @@
-import MuiPaginationItem from '@material-ui/lab/PaginationItem';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiPaginationItem from '@material-ui/lab/PaginationItem';
 
 import {
   combineProps,

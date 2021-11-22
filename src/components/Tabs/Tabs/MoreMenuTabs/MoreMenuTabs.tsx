@@ -1,5 +1,3 @@
-import MuiTabs from '@material-ui/core/Tabs';
-import isEqual from 'lodash/isEqual';
 import React, {
   createRef,
   forwardRef,
@@ -8,6 +6,10 @@ import React, {
   useRef,
   useState,
 } from 'react';
+
+import isEqual from 'lodash/isEqual';
+
+import MuiTabs from '@material-ui/core/Tabs';
 
 import {
   RcBaseProps,
@@ -28,8 +30,8 @@ import {
   computeChildBySize,
   DEFAULT_SIZE,
   getDomBoundingClientSize,
-  parseKey,
   getKey,
+  parseKey,
   RcTabsMoreMenuGroupInfoType,
 } from './utils';
 
@@ -390,4 +392,4 @@ MoreMenuTabs.displayName = 'MoreMenuTabs';
 
 export { MoreMenuTabs };
 
-export type { RcTabsMoreMenuGroupInfoType, MoreMenuTabsProps, MoreButtonProps };
+export type { MoreButtonProps, MoreMenuTabsProps, RcTabsMoreMenuGroupInfoType };

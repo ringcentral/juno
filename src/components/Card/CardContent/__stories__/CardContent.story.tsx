@@ -1,5 +1,6 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import {
   notControlInDocTable,
@@ -8,9 +9,8 @@ import {
   switchToControlKnobs,
 } from '../../../../storybook';
 import { RcTypography } from '../../../Typography';
-
-import { RcCardContent } from '../CardContent';
 import { RcCard } from '../../Card';
+import { RcCardContent } from '../CardContent';
 
 export default {
   title: '🚀 Cleanup Components/Cards/CardContent',

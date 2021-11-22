@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import React, {
   forwardRef,
   FunctionComponent,
@@ -6,13 +5,15 @@ import React, {
   memo,
 } from 'react';
 
+import clsx from 'clsx';
+
 import {
   RcBaseProps,
   RcBaseSize,
   RcPaletteProp,
   styled,
-  withDeprecatedCheck,
   useThemeProps,
+  withDeprecatedCheck,
 } from '../../foundation';
 import { RcCircularProgress, RcCircularProgressProps } from '../Progress';
 import { IconStyle, StyledSvg } from './styles';

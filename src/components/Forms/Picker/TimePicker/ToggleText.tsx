@@ -1,10 +1,11 @@
-import { runKeyHandler } from '@material-ui/pickers/_shared/hooks/useKeyDown';
 import React, {
   ButtonHTMLAttributes,
   forwardRef,
   memo,
   useImperativeHandle,
 } from 'react';
+
+import { runKeyHandler } from '@material-ui/pickers/_shared/hooks/useKeyDown';
 
 import {
   styled,

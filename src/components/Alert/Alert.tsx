@@ -1,5 +1,6 @@
-import MuiAlert from '@material-ui/lab/Alert';
 import React, { ComponentProps, forwardRef } from 'react';
+
+import MuiAlert from '@material-ui/lab/Alert';
 
 import {
   combineClasses,

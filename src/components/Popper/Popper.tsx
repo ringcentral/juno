@@ -1,5 +1,6 @@
-import MuiPopper from '@material-ui/core/Popper';
 import React, { ComponentProps, forwardRef } from 'react';
+
+import MuiPopper from '@material-ui/core/Popper';
 
 import {
   RcBaseProps,

@@ -1,5 +1,6 @@
-import throttle from 'lodash/throttle';
 import { useCallback, useEffect } from 'react';
+
+import throttle from 'lodash/throttle';
 
 import { useEventCallback } from '../useEventCallback';
 

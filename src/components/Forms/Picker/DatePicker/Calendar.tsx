@@ -1,9 +1,3 @@
-import MuiCircularProgress from '@material-ui/core/CircularProgress';
-import { useUtils as useMuiUtils } from '@material-ui/pickers';
-import { runKeyHandler } from '@material-ui/pickers/_shared/hooks/useKeyDown';
-import { MaterialUiPickersDate as MuiPickersDate } from '@material-ui/pickers/typings/date';
-import { SlideDirection as MuiSlideDirection } from '@material-ui/pickers/views/Calendar/SlideTransition';
-import moment from 'moment';
 import React, {
   forwardRef,
   useLayoutEffect,
@@ -11,6 +5,14 @@ import React, {
   useRef,
   useState,
 } from 'react';
+
+import moment from 'moment';
+
+import MuiCircularProgress from '@material-ui/core/CircularProgress';
+import { useUtils as useMuiUtils } from '@material-ui/pickers';
+import { runKeyHandler } from '@material-ui/pickers/_shared/hooks/useKeyDown';
+import { MaterialUiPickersDate as MuiPickersDate } from '@material-ui/pickers/typings/date';
+import { SlideDirection as MuiSlideDirection } from '@material-ui/pickers/views/Calendar/SlideTransition';
 
 import {
   pick,

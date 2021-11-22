@@ -1,11 +1,12 @@
 import React, { forwardRef } from 'react';
+
 import clsx from 'clsx';
 
 import { RcClassesProps, styled, useThemeProps } from '../../../foundation';
+import DraggableHandle from '../../../icon/DragableArea';
+import { RcIcon } from '../../Icon';
 import { dragHandleStyle } from './styles';
 import { RcDragHandleClasses } from './utils';
-import { RcIcon } from '../../Icon';
-import DraggableHandle from '../../../icon/DragableArea';
 
 type RcDragHandleClassesType = RcClassesProps<'root'>;
 

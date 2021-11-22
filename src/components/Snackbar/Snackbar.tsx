@@ -1,6 +1,7 @@
+import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
 import Slide from '@material-ui/core/Slide';
 import MuiSnackbar from '@material-ui/core/Snackbar';
-import React, { ComponentProps, forwardRef, useMemo } from 'react';
 
 import {
   combineClasses,

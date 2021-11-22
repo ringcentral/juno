@@ -1,13 +1,14 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import {
   notControlInDocTable,
   notShowInDocTable,
-  sortInDocTable,
-  switchToControlKnobs,
   originChoice,
   originChoiceStringToObj,
+  sortInDocTable,
+  switchToControlKnobs,
 } from '../../../storybook';
 import { RcButton } from '../../Buttons';
 import { RcTypography } from '../../Typography';

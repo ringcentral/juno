@@ -1,7 +1,8 @@
+import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
 import MuiRadio from '@material-ui/core/Radio';
 // @ts-ignore
 import RadioButtonIcon from '@material-ui/core/Radio/RadioButtonIcon';
-import React, { ComponentProps, forwardRef, useMemo } from 'react';
 
 import {
   combineClasses,
@@ -95,7 +96,7 @@ RcRadio.displayName = 'RcRadio';
 
 export { RcRadio };
 export type {
-  RcRadioProps,
-  RcRadioLabelPlacement,
   RcRadioFormControlLabelProps,
+  RcRadioLabelPlacement,
+  RcRadioProps,
 };

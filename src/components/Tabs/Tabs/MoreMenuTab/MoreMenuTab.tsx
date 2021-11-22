@@ -12,8 +12,8 @@ import { RcListItemIcon, RcListItemText } from '../../../List';
 import { RcMenu, RcMenuItem, RcMenuProps } from '../../../Menu';
 import { RcTooltip, RcTooltipProps } from '../../../Tooltip';
 import { RcTab, RcTabProps } from '../../Tab';
-import { MoreMenuTabStyle } from './styles';
 import { getKey } from '../MoreMenuTabs/utils';
+import { MoreMenuTabStyle } from './styles';
 
 type MoreMenuTabProps = {
   menuItems: RcBaseProps<RcTabProps>[];
@@ -141,6 +141,6 @@ MoreMenuTab.defaultProps = {
 
 MoreMenuTab.displayName = 'MoreMenuTab';
 
-export { MoreMenuTab, DEFAULT_MORE_MENU_TAB_LABEL };
+export { DEFAULT_MORE_MENU_TAB_LABEL, MoreMenuTab };
 
 export type { MoreMenuTabProps };

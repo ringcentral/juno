@@ -1,5 +1,6 @@
-import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
+
+import { Meta, Story } from '@storybook/react';
 
 import {
   notControlInDocTable,
@@ -7,10 +8,10 @@ import {
   sortInDocTable,
   switchToControlKnobs,
 } from '../../../../storybook';
-import { RcTypography } from '../../../Typography';
 import { RcButton } from '../../../Buttons';
-import { RcCardContent } from '../../CardContent';
+import { RcTypography } from '../../../Typography';
 import { RcCard } from '../../Card';
+import { RcCardContent } from '../../CardContent';
 import { RcCardActions } from '../CardActions';
 
 export default {

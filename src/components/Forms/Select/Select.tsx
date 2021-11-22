@@ -1,6 +1,7 @@
+import React, { forwardRef, useMemo } from 'react';
+
 import { PopoverOrigin } from '@material-ui/core/Popover';
 import { SelectProps as MuiSelectProps } from '@material-ui/core/Select';
-import React, { forwardRef, useMemo } from 'react';
 
 import {
   combineClasses,

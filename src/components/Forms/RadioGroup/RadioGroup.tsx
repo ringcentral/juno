@@ -1,5 +1,6 @@
-import MuiRadioGroup from '@material-ui/core/RadioGroup';
 import React, { ComponentProps, forwardRef } from 'react';
+
+import MuiRadioGroup from '@material-ui/core/RadioGroup';
 
 import { RcBaseProps, styled, useThemeProps } from '../../../foundation';
 

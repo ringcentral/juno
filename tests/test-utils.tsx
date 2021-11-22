@@ -1,8 +1,9 @@
+import React from 'react';
+
 /**
  * https://testing-library.com/docs/react-testing-library/setup
  */
 import { render } from '@testing-library/react';
-import React from 'react';
 
 import { RcThemeProvider } from '../src/foundation';
 

@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+
 import clsx from 'clsx';
 import {
   Direction,
@@ -72,6 +73,6 @@ export { RcDraggable };
 export type {
   RcDraggableProps,
   RcDraggableProvided,
-  RcDraggableStateSnapshot,
   RcDraggableRubric,
+  RcDraggableStateSnapshot,
 };

@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+
 import { IndexLocationWithAlign, ListItem } from 'react-virtuoso';
 
 type UseHighlightScrollParams = {

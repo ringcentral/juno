@@ -1,16 +1,11 @@
+import { Duration } from '@material-ui/core/styles/transitions';
 import {
-  // getTransitionProps as MuiGetTransitionProps,
-  reflow as MuiReflow,
-  // @ts-ignore
-} from '@material-ui/core/transitions/utils';
-
-import {
-  TransitionProps as MuiTransitionProps,
   TransitionHandlerKeys as MuiTransitionHandlerKeys,
   TransitionHandlerProps as MuiTransitionHandlerProps,
   TransitionKeys as MuiTransitionKeys,
+  TransitionProps as MuiTransitionProps,
 } from '@material-ui/core/transitions';
-import { Duration } from '@material-ui/core/styles/transitions';
+import { reflow as MuiReflow } from '@material-ui/core/transitions/utils';
 
 export * from 'react-transition-group';
 export * from '@material-ui/core/styles/transitions';

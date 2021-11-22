@@ -1,5 +1,6 @@
-import MuiListSubheader from '@material-ui/core/ListSubheader';
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
+
+import MuiListSubheader from '@material-ui/core/ListSubheader';
 
 import {
   combineClasses,

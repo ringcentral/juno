@@ -1,6 +1,8 @@
-import { Meta, Story } from '@storybook/react';
-import range from 'lodash/range';
 import React, { ComponentProps, FunctionComponent, useState } from 'react';
+
+import range from 'lodash/range';
+
+import { Meta, Story } from '@storybook/react';
 
 import { flexCenterStyle, radius, spacing, styled } from '../../../foundation';
 import {
@@ -25,15 +27,15 @@ import { RcBox } from '../../Box';
 import { RcButton } from '../../Buttons/Button';
 import { RcDialog, RcDialogContent, RcDialogTitle } from '../../Dialog';
 import { RcDivider } from '../../Divider';
+import { RcSelect, RcSwitch } from '../../Forms';
 import { RcIcon } from '../../Icon';
 import { RcList, RcListItem, RcListItemIcon, RcListItemText } from '../../List';
 import { RcMenuItem } from '../../Menu/MenuItem';
 import { RcMenuList } from '../../Menu/MenuList';
 import { RcPaper } from '../../Paper';
 import { RcText } from '../../Text';
-import { RcDrawer } from '../Drawer';
 import { RcTypography } from '../../Typography';
-import { RcSelect, RcSlider, RcSwitch } from '../../Forms';
+import { RcDrawer } from '../Drawer';
 
 export default {
   title: '🚀 Cleanup Components/Drawer',

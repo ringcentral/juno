@@ -1,5 +1,6 @@
-import MuiTypography, { TypographyProps } from '@material-ui/core/Typography';
 import React, { memo } from 'react';
+
+import MuiTypography, { TypographyProps } from '@material-ui/core/Typography';
 
 import { palette2, typography, useDeprecatedLog } from '../../foundation';
 import styled from '../../foundation/styled-components';

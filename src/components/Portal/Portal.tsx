@@ -1,5 +1,7 @@
-import MuiPortal, { PortalProps } from '@material-ui/core/Portal';
 import React, { FunctionComponent } from 'react';
+
+import MuiPortal, { PortalProps } from '@material-ui/core/Portal';
+
 import { useThemeProps } from '../../foundation';
 
 type RcPortalProps = PortalProps;
