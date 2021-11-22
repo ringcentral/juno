@@ -8,7 +8,11 @@
     "noUnusedLocals": true,
     "declaration": true,
     "sourceMap": false,
-    "removeComments": false
+    "removeComments": false,
+    "baseUrl": ".",
+    "paths": {
+      "@emotion/core": ["./src/typings/skip.d.ts"]
+    }
   },
   "exclude": [
     "**/__stories__/*",

@@ -18,9 +18,6 @@ const writePackageJson = (pkg, targetPath) => {
         repository: pkg.repository,
         dependencies: {
           ...pkg.dependencies,
-          // that for type issue with @emotion type in styled-component type issue,
-          // that is fix in latest styled-component
-          '@emotion/core': '^10.0.27',
         },
         peerDependencies: pkg.peerDependencies,
         sideEffects: false,
