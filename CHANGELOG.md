@@ -1,4 +1,38 @@
 
+## [1.12.0](https://github.com/ringcentral/juno/compare/v1.11.5...v1.12.0) (2021-11-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* **Dialog, Snackbar, TimePicker, VirtualizedMenu:** [Dialog, Snackbar, TimePicker, VirtualizedMenu] move `onXXX` inside `TransitionProps`
+* **Badge:** [Badge] rename circle and rectangle to circular and rectangular
+* **TablePagination:** [TablePagination] change deprecated props to new name `onChangePage` => `onPageChange`,  `onRowsPerPageChange` => `onChangeRowsPerPage`
+* **Stepper:** [StepContent] remove StepContent temporary, because we not support orientation vertical
+
+### Features
+
+* **AppBar:** cleanup AppBar ([9f835dd](https://github.com/ringcentral/juno/commit/9f835ddcddac99c82732dd5dd4aa159c1c8126bf))
+* **InlineEditable:** change default word break rules like textarea ([6f790e9](https://github.com/ringcentral/juno/commit/6f790e9c34a660d2448f2b69e223b979f65778a9))
+* **Link:** support underline prop ([e344212](https://github.com/ringcentral/juno/commit/e344212c4391a006680e8234803b9744c8c575bd))
+* **Package:** update mui version to v4.12.3 for prepare upgrade to v5 ([8b8bfb6](https://github.com/ringcentral/juno/commit/8b8bfb6660501363822726ba776d69e9660b491b))
+* **ThemeProvider:** subThemeProvider use parent theme as default when not pass theme into ([77d7afd](https://github.com/ringcentral/juno/commit/77d7afdcc22de4ddf57d3b3ecd68473ee8cb1eb7))
+
+
+### Bug Fixes
+
+* **AppBar:** use RcAppBarProps ([dd9db7b](https://github.com/ringcentral/juno/commit/dd9db7bbe0f194bf9998b8f4c904226add3db33f))
+* **Badge:** rename circle and rectangle to circular and rectangular ([c9e3bf2](https://github.com/ringcentral/juno/commit/c9e3bf28fd4373d69d354403fe968cbd9cfa3f4d))
+* **createTheme:** rename mud createTheme to createTheme, fade to alpha ([ee9e579](https://github.com/ringcentral/juno/commit/ee9e5798dc0ead4e204fe133f5e4fe29dcb820a9))
+* **Dialog, Snackbar, TimePicker, VirtualizedMenu:** move `onXXX` inside `TransitionProps` ([9f45f47](https://github.com/ringcentral/juno/commit/9f45f4716ab9458957d6eeb56f6f65281c0fb43c))
+* **Icon:** change icon dep on juno main library to @material-ui/core ([25c3db9](https://github.com/ringcentral/juno/commit/25c3db9c01fe4f4fd2413a96a491805556b9c379))
+* **InlineEditable:** change anwhere to anywhere ([cac2805](https://github.com/ringcentral/juno/commit/cac2805c41f7435dd84dce137cf7e20891e2faec))
+* **MenuList:** pick forget props `maxHeight` ([a272203](https://github.com/ringcentral/juno/commit/a27220326b3d79ea48175e51aca365933ed97636))
+* **Project:** [Package] fix type for ready to upgrade type to latest styled-components ([2fc7189](https://github.com/ringcentral/juno/commit/2fc7189e2cbb9be8ccc01335484efd5c2a027748))
+* **Stepper:** remove StepContent temporary, because we not support orientation vertical ([f8d4163](https://github.com/ringcentral/juno/commit/f8d4163bd77cdfc3b97479e9ba53b2bb93f565ae))
+* **TablePagination:** change deprecated props to new name onChangePage, onChangeRowsPerPage ([813da5a](https://github.com/ringcentral/juno/commit/813da5a85e37d8967f2323154f559f37d74312f4))
+* **Tag:** remove not need `margin-left` ([57ed326](https://github.com/ringcentral/juno/commit/57ed326c36a7585b49ea578a7b22897b860fe199))
+* **TextField, Textarea, Select:** remove rowsMax and rows, and switch to new props minRows, maxRows ([f7e5135](https://github.com/ringcentral/juno/commit/f7e5135c6c2437ba92fa67477abd8420a932aeae))
+
 ### [1.11.5](https://github.com/ringcentral/juno/compare/v1.11.4...v1.11.5) (2021-10-14)
 
 
