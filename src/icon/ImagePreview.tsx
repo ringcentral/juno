@@ -1,7 +1,5 @@
+import { useTheme, PaletteType } from '@material-ui/core';
 import React, { forwardRef, memo } from 'react';
-
-import { PaletteType, useTheme } from '@material-ui/core';
-
 import ImagePreviewD from './ImagePreviewD';
 
 const ImagePreview = memo(

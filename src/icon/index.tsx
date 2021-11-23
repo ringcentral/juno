@@ -10,6 +10,7 @@ export { default as Svg8 } from './8';
 export { default as Svg9 } from './9';
 export { default as CompanySetupBorder } from './CompanySetupBorder';
 export { default as CompanySetup } from './CompanySetup';
+export { default as Description } from './Description';
 export { default as Hud } from './Hud';
 export { default as Logout } from './Logout';
 export { default as NewEmail } from './NewEmail';
