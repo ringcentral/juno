@@ -9,6 +9,7 @@ export * from './useForceUpdate';
 export * from './useForkRef';
 export * from './useHiddenTabindex';
 export * from './useId';
+export * from './useInterval';
 export * from './useKeyDownOnce';
 export * from './useKeyboardMoveFocus';
 export * from './useLongPress';
