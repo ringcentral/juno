@@ -1,0 +1,72 @@
+<!-- This file generate automatically, should not modify that directly -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+<Meta title="API Reference/Hooks/useInterval" />
+
+## useInterval
+
+### Functions
+
+- [useInterval](#const-useinterval)
+
+## Functions
+
+### `Const` useInterval
+
+▸ **useInterval**(`callback`: function, `delay`: number, `startImmediately`: boolean): _object_
+
+controllable interval, provide easy way to control interval
+
+- cancel: cancel current interval
+- pause: pause current interval
+- play: play current interval
+- getRunning: return current interval running state
+
+**`example`**
+
+```ts
+const { cancel, play, pause } = useInterval(() => {
+  console.log("interval be triggered");
+}, 1000);
+
+// get current run times
+useInterval((times) => {
+  console.log("current times start from 1", times);
+}, 2000);
+
+// not start interval immediately
+useInterval(
+  (times) => {
+    console.log("current times start from 1", times);
+  },
+  2000,
+  false
+);
+```
+
+**Parameters:**
+
+▪ **callback**: _function_
+
+▸ (`times`: number): _void_
+
+**Parameters:**
+
+| Name    | Type   |
+| ------- | ------ |
+| `times` | number |
+
+▪`Default value` **delay**: _number_= 0
+
+▪`Default value` **startImmediately**: _boolean_= true
+
+**Returns:** _object_
+
+- **cancel**: _(Anonymous function)_
+
+- **getRunning**: _(Anonymous function)_
+
+- **pause**: _(Anonymous function)_
+
+- **play**: _(Anonymous function)_

@@ -79,6 +79,10 @@
     "name": "API Reference/Hooks/useAudio",
     "title": "useAudio"
   },
+  "src/foundation/hooks/useInterval/useInterval.ts": {
+    "name": "API Reference/Hooks/useInterval",
+    "title": "useInterval"
+  },
   "src/foundation/hooks/useA11yKeyEvent/useA11yKeyEvent.ts": {
     "name": "API Reference/Hooks/useA11yKeyEvent",
     "title": "useA11yKeyEvent"
