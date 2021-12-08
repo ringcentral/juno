@@ -4,21 +4,15 @@
     "jpoissonnier.vscode-styled-components",
     "streetsidesoftware.code-spell-checker",
     "editorconfig.editorconfig",
-    "visualstudioexptteam.vscodeintellicode",
-    "rbbit.typescript-hero",
     "naumovs.color-highlight",
     "ms-vscode.references-view",
-    "krizzdewizz.refactorix",
     "stringham.move-ts",
     "pkief.material-icon-theme",
     "johnpapa.vscode-peacock",
     "nhoizey.gremlins",
     "mariusalchimavicius.json-to-ts",
-    "coenraads.bracket-pair-colorizer",
-    "msjsdiag.debugger-for-chrome",
     "ms-edgedevtools.vscode-edge-devtools",
     "dbaeumer.vscode-eslint",
-    "declanzou.index-generator",
-    "auchenberg.vscode-browser-preview"
+    "declanzou.index-generator"
   ]
 }
