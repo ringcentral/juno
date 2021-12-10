@@ -11,7 +11,7 @@ export default {
   title: '🚀 Cleanup Components/Forms/Textarea',
   component: RcTextarea,
   argTypes: {
-    ...sortInDocTable<keyof TextareaProps>(['minRows', 'maxRows']),
+    ...sortInDocTable<keyof TextareaProps>(['rows', 'minRows', 'maxRows']),
     ...TextFieldStory.argTypes,
   },
 } as Meta;
@@ -95,6 +95,15 @@ export const TextareaExamples: Story<TextareaProps> = () => {
         onChange={handleChange}
         label="Title"
         disabled
+      />
+      <br />
+      <RcTextarea
+        value={value}
+        placeholder="Auto size change?"
+        onChange={handleChange}
+        label="Auto size"
+        minRows={3}
+        maxRows={5}
       />
     </>
   );

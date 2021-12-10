@@ -337,6 +337,7 @@ type RcDownshiftProps<
   | 'size'
   | 'defaultValue'
   | 'multiline'
+  | 'rows'
   | 'minRows'
   | 'maxRows'
   | 'align'

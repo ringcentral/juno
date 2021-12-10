@@ -198,29 +198,6 @@ Array [
         placeholder="placeholder"
         required={false}
         rows={3}
-        style={
-          Object {
-            "height": -4,
-            "overflow": "hidden",
-          }
-        }
-      />
-      <textarea
-        aria-hidden={true}
-        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
-        readOnly={true}
-        style={
-          Object {
-            "height": 0,
-            "left": 0,
-            "overflow": "hidden",
-            "position": "absolute",
-            "top": 0,
-            "transform": "translateZ(0)",
-            "visibility": "hidden",
-          }
-        }
-        tabIndex={-1}
       />
     </div>
   </div>,
@@ -438,29 +415,6 @@ Array [
         placeholder="placeholder"
         required={false}
         rows={3}
-        style={
-          Object {
-            "height": -4,
-            "overflow": "hidden",
-          }
-        }
-      />
-      <textarea
-        aria-hidden={true}
-        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
-        readOnly={true}
-        style={
-          Object {
-            "height": 0,
-            "left": 0,
-            "overflow": "hidden",
-            "position": "absolute",
-            "top": 0,
-            "transform": "translateZ(0)",
-            "visibility": "hidden",
-          }
-        }
-        tabIndex={-1}
       />
     </div>
   </div>,
@@ -651,30 +605,7 @@ Array [
         placeholder="what's your title?"
         required={false}
         rows={3}
-        style={
-          Object {
-            "height": -4,
-            "overflow": "hidden",
-          }
-        }
         value="Example"
-      />
-      <textarea
-        aria-hidden={true}
-        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
-        readOnly={true}
-        style={
-          Object {
-            "height": 0,
-            "left": 0,
-            "overflow": "hidden",
-            "position": "absolute",
-            "top": 0,
-            "transform": "translateZ(0)",
-            "visibility": "hidden",
-          }
-        }
-        tabIndex={-1}
       />
     </div>
   </div>,
@@ -877,30 +808,7 @@ Array [
         placeholder="what's your title?"
         required={false}
         rows={3}
-        style={
-          Object {
-            "height": -4,
-            "overflow": "hidden",
-          }
-        }
         value="Example"
-      />
-      <textarea
-        aria-hidden={true}
-        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
-        readOnly={true}
-        style={
-          Object {
-            "height": 0,
-            "left": 0,
-            "overflow": "hidden",
-            "position": "absolute",
-            "top": 0,
-            "transform": "translateZ(0)",
-            "visibility": "hidden",
-          }
-        }
-        tabIndex={-1}
       />
     </div>
   </div>,
@@ -1107,30 +1015,7 @@ Array [
         placeholder="what's your title?"
         required={false}
         rows={3}
-        style={
-          Object {
-            "height": -4,
-            "overflow": "hidden",
-          }
-        }
         value="Example"
-      />
-      <textarea
-        aria-hidden={true}
-        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
-        readOnly={true}
-        style={
-          Object {
-            "height": 0,
-            "left": 0,
-            "overflow": "hidden",
-            "position": "absolute",
-            "top": 0,
-            "transform": "translateZ(0)",
-            "visibility": "hidden",
-          }
-        }
-        tabIndex={-1}
       />
     </div>
   </div>,
@@ -1337,30 +1222,7 @@ Array [
         placeholder="what's your title?"
         required={false}
         rows={3}
-        style={
-          Object {
-            "height": -4,
-            "overflow": "hidden",
-          }
-        }
         value="Example"
-      />
-      <textarea
-        aria-hidden={true}
-        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
-        readOnly={true}
-        style={
-          Object {
-            "height": 0,
-            "left": 0,
-            "overflow": "hidden",
-            "position": "absolute",
-            "top": 0,
-            "transform": "translateZ(0)",
-            "visibility": "hidden",
-          }
-        }
-        tabIndex={-1}
       />
     </div>
   </div>,
@@ -1565,6 +1427,213 @@ Array [
         placeholder="what's your title?"
         required={false}
         rows={3}
+        value="Example"
+      />
+    </div>
+  </div>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c0 {
+  width: 168px;
+}
+
+.c0 .RcTextFieldInputLabel-root {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0 .RcTextFieldInputLabel-focused {
+  color: #066FAC;
+}
+
+.c0 .RcTextFieldInput-root {
+  color: #121212;
+}
+
+.c0 .RcTextFieldInput-input {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+}
+
+.c0 .RcTextFieldInput-input::-webkit-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input::-moz-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:-ms-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input::placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-underline:before {
+  border-bottom-color: #939393;
+}
+
+.c0 .RcTextFieldInput-underline:after {
+  border-bottom-color: #066FAC;
+}
+
+.c0 .RcTextFieldInput-error:after {
+  border-bottom-color: #BE3933;
+}
+
+.c0 .RcTextFieldInput-disabled {
+  color: #B9B9B9;
+  -webkit-text-fill-color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled::-moz-placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled::placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled:before {
+  border-bottom-style: solid;
+  border-bottom-color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled:after {
+  border-bottom-style: none;
+}
+
+.c0 .RcTextFieldFormHelperText-root {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c0 .RcTextFieldFormHelperText-error,
+.c0 .RcTextFieldInputLabel-error {
+  color: #BE3933;
+}
+
+.c0 .RcTextFieldFormHelperText-disabled,
+.c0 .RcTextFieldInputLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c0 input[type='search']::-ms-clear,
+.c0 input[type='search']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.c0 input[type='search']::-webkit-search-decoration,
+.c0 input[type='search']::-webkit-search-cancel-button,
+.c0 input[type='search']::-webkit-search-results-button,
+.c0 input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+.c1 .RcTextareaInput-inputMultiline {
+  margin: 4px 0 0 0;
+  background: #F3F3F3;
+}
+
+.c1 .RcTextareaInput-root {
+  padding: 0;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
+    border-bottom-color: #121212;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1 .RcTextareaInput-inputMultiline:hover {
+    background: transparent;
+  }
+}
+
+<div
+    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+      data-shrink={true}
+    >
+      Auto size
+    </label>
+    <div
+      className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcTextareaInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-multiline MuiInput-multiline"
+      onClick={[Function]}
+    >
+      <textarea
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
+        disabled={false}
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Auto size change?"
+        required={false}
+        rows={3}
         style={
           Object {
             "height": -4,
@@ -1575,7 +1644,7 @@ Array [
       />
       <textarea
         aria-hidden={true}
-        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input Mui-disabled Mui-disabled RcTextFieldInput-disabled MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
         readOnly={true}
         style={
           Object {
