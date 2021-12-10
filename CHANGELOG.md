@@ -1,4 +1,19 @@
 
+### [1.12.1](https://github.com/ringcentral/juno/compare/1.12.0...1.12.1) (2021-12-10)
+
+
+### Features
+
+* **Hooks:** implement controllable interval ([7d89406](https://github.com/ringcentral/juno/commit/7d894068d9295242d995883100d3728bfe908df2))
+* **Icon:** update icon ([e26e219](https://github.com/ringcentral/juno/commit/e26e2191dd28f4759d7a3250b8f107ac3388e480))
+* **Icon:** update icon (Description) ([41ab361](https://github.com/ringcentral/juno/commit/41ab3613c899f2ff613c7d75677b9ec93263ef6f))
+
+
+### Bug Fixes
+
+* **Project:** [DialPad] add miss export ([e608a3d](https://github.com/ringcentral/juno/commit/e608a3dbcfa2abb3d3365d255aa4ce669822eef1))
+* **TextField:** fix type with rows ([d613524](https://github.com/ringcentral/juno/commit/d613524fde124f10aca09c1b646423acbc79cc8b))
+
 ## [1.12.0](https://github.com/ringcentral/juno/compare/v1.11.5...v1.12.0) (2021-11-23)
 
 
