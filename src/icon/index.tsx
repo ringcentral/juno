@@ -281,6 +281,8 @@ export { default as PlayBorder } from './PlayBorder';
 export { default as PlayCircle } from './PlayCircle';
 export { default as PlayCircleBorder } from './PlayCircleBorder';
 export { default as Play } from './Play';
+export { default as PollBorder } from './PollBorder';
+export { default as Poll } from './Poll';
 export { default as PoorConnection } from './PoorConnection';
 export { default as PptD } from './PptD';
 export { default as Ppt } from './Ppt';

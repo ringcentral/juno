@@ -9,6 +9,8 @@ module.exports = {
   "7": "7",
   "8": "8",
   "9": "9",
+  "PollBorder": "poll_border",
+  "Poll": "poll",
   "Description": "Description",
   "Info": "info",
   "InProgress": "in-progress",
