@@ -1,9 +1,9 @@
-import React, { forwardRef, ReactNode, useMemo } from 'react';
+import React, { forwardRef, ReactNode } from 'react';
 
 import {
-  combineProps,
   RcBaseProps,
   styled,
+  useEventCallback,
   useThemeProps,
 } from '../../foundation';
 import { RcButton, RcButtonProps } from '../Buttons/Button';
@@ -87,6 +87,7 @@ const _RcPopupBox = forwardRef<any, RcPopupBoxProps>(
       onCancel,
       TitleProps,
       ContentProps,
+      disableBackdropClick: disableBackdropClickProp,
       ActionsProps,
       children,
       onClose,
@@ -95,18 +96,22 @@ const _RcPopupBox = forwardRef<any, RcPopupBoxProps>(
     } = props;
 
     const isXsmall = childrenSize === 'small';
+    const isLoading = loading || loadingOverlay;
+    const disableBackdropClick = disableBackdropClickProp ?? isLoading;
 
-    const { onClose: handleClose } = useMemo(
-      () => combineProps({ onClose: onCancel }, { onClose }),
-      [onCancel, onClose],
-    );
+    const handleClose = useEventCallback((e, reason) => {
+      if (reason === 'backdropClick' && disableBackdropClick) {
+        return;
+      }
+      onClose?.(e, reason);
+      onCancel?.(e, reason);
+    });
 
     return (
       <RcDialog
         ref={ref}
         childrenSize={childrenSize}
-        disableEscapeKeyDown={loading || loadingOverlay}
-        disableBackdropClick={loading || loadingOverlay}
+        disableEscapeKeyDown={isLoading}
         onClose={handleClose}
         open={open}
         {...rest}

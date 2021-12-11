@@ -57,7 +57,6 @@ export default {
       'BackdropProps',
       'closeAfterTransition',
       'container',
-      'disableBackdropClick',
       // 'disableEnforceFocus',
       'disableEscapeKeyDown',
       'disablePortal',

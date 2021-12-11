@@ -5,7 +5,6 @@ import MuiSnackbar from '@material-ui/core/Snackbar';
 
 import {
   combineClasses,
-  combineProps,
   RcBaseProps,
   styled,
   useThemeProps,
@@ -43,10 +42,7 @@ const _RcSnackbar = forwardRef<any, RcSnackbarProps>(
 
     const onExited = useUnmountPortalHandler(TransitionPropsProp?.onExited);
 
-    const TransitionProps = useMemo(
-      () => combineProps({ onExited }, TransitionPropsProp),
-      [TransitionPropsProp, onExited],
-    );
+    const TransitionProps = { ...TransitionPropsProp, onExited };
 
     return (
       <MuiSnackbar

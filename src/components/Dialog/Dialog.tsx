@@ -4,7 +4,6 @@ import MuiDialog from '@material-ui/core/Dialog';
 
 import {
   combineClasses,
-  combineProps,
   RcBaseProps,
   RcBaseSize,
   styled,
@@ -83,10 +82,7 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
 
     const onExited = useUnmountPortalHandler(TransitionPropsProp?.onExited);
 
-    const TransitionProps = useMemo(
-      () => combineProps({ onExited }, TransitionPropsProp),
-      [TransitionPropsProp, onExited],
-    );
+    const TransitionProps = { ...TransitionPropsProp, onExited };
 
     return (
       <MuiDialog
