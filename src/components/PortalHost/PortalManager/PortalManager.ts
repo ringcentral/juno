@@ -17,6 +17,7 @@ import {
   UncontrolledProps,
   UniqID,
   UnmountSymbol,
+  UpdatePropsHandler,
 } from './types';
 import { createPromise, UniqIdUtil } from './utils';
 
@@ -172,7 +173,10 @@ export class PortalManager<D extends {} = {}> extends Connectable<
   /**
    * update props by id, equal 'portalController.updateProps(newProps)'
    */
-  updatePropsByID<P extends {}>(id: UniqID, props: UncontrolledProps<P>) {
+  updatePropsByID<P extends {}>(
+    id: UniqID,
+    propsOrHandler: UncontrolledProps<P> | UpdatePropsHandler<P>,
+  ) {
     const portal = this.portalStore.get(id);
     if (!portal?.open) {
       logInDev({
@@ -181,7 +185,12 @@ export class PortalManager<D extends {} = {}> extends Connectable<
       });
       return;
     }
-
+    const props = (() => {
+      if (typeof propsOrHandler === 'function') {
+        return propsOrHandler(portal.props as UncontrolledProps<P> | undefined);
+      }
+      return propsOrHandler;
+    })();
     this.portalStore.addOrUpdate({ ...portal, props });
   }
 
@@ -221,12 +230,12 @@ export class PortalManager<D extends {} = {}> extends Connectable<
       onOpened,
       onClosed,
 
-      close: (feedback?: F) => {
+      close: (feedback) => {
         this.closeByID(id, feedback);
       },
 
-      updateProps: (newProps: UncontrolledProps<P>) => {
-        this.updatePropsByID(id, newProps);
+      updateProps: (propsOrHandler) => {
+        this.updatePropsByID(id, propsOrHandler);
       },
 
       data,

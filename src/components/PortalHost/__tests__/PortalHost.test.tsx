@@ -82,8 +82,8 @@ describe('Open portal', () => {
   });
 });
 
-type ManagerHandlerProps = {
-  controller: PortalController;
+type ManagerHandlerProps<P extends {} = {}> = {
+  controller: PortalController<P>;
   manager: PortalManager;
 };
 
@@ -167,9 +167,25 @@ describe('Update props', () => {
       },
     ],
     [
+      'portalController.updateProps',
+      ({ controller }: ManagerHandlerProps<{ text?: string }>) => {
+        controller.updateProps((pre) => ({
+          text: `${pre?.text}4`,
+        }));
+      },
+    ],
+    [
       'manager.updatePropsByID',
       ({ manager, controller }: ManagerHandlerProps) => {
         manager.updatePropsByID(controller.id, { text: '244' });
+      },
+    ],
+    [
+      'manager.updatePropsByID',
+      ({ manager, controller }: ManagerHandlerProps) => {
+        manager.updatePropsByID<{ text?: string }>(controller.id, (pre) => ({
+          text: `${pre?.text}4`,
+        }));
       },
     ],
   ])('Should update props correctly (%s)', async (_, handleUpdate) => {
@@ -177,11 +193,11 @@ describe('Update props', () => {
     render(<RcPortalHost manager={manager} />);
 
     const controller = manager.open(TestComponent, {
-      props: { text: '233' },
+      props: { text: '24' },
     });
 
     // wait open
-    let dialogs = await screen.findAllByText('233');
+    let dialogs = await screen.findAllByText('24');
 
     expect(dialogs).toHaveLength(1);
     expect(screen.queryAllByText('244')).toHaveLength(0);
@@ -195,7 +211,7 @@ describe('Update props', () => {
     dialogs = await screen.findAllByText('244');
 
     expect(dialogs).toHaveLength(1);
-    expect(screen.queryAllByText('233')).toHaveLength(0);
+    expect(screen.queryAllByText('24')).toHaveLength(0);
   });
 });
 

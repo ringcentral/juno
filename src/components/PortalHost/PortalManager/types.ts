@@ -63,7 +63,7 @@ export interface PortalController<
    * update props
    * @param newProps will cover old props
    */
-  updateProps: (newProps: UncontrolledProps<P>) => void;
+  updateProps: (newProps: UncontrolledProps<P> | UpdatePropsHandler<P>) => void;
 
   /**
    * check if it's opened
@@ -80,6 +80,10 @@ export interface PortalController<
    */
   readonly data?: D;
 }
+
+export type UpdatePropsHandler<P extends {} = {}> = (
+  preProps?: UncontrolledProps<P>,
+) => UncontrolledProps<P>;
 
 export type ControlledProps<P extends {} = {}, F = undefined> = P & {
   onClose: (feedback?: F) => void;
