@@ -339,12 +339,12 @@ const _RcSubMenu = forwardRef<any, RcSubMenuProps>(
           role="menu"
           id={popperId}
           container={externalWindow?.document.body}
+          placement="right-start"
           {...restPopperProps}
           ref={popperRef}
           open={open}
           anchorEl={anchorEl}
           transition
-          placement="right-start"
           modifiers={modifiers}
           onKeyDown={handlePopperKeyDown}
           onMouseLeave={handlePopperMouseLeave}
