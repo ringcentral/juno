@@ -238,8 +238,6 @@ const _NumberPicker = forwardRef<NumberPickerRef, NumberPickerProps>(
           wrapperSize={size}
           tabIndex={-1}
           onClick={onClick}
-          // * when both disabled that icon can't click into selection view
-          disabled={increaseDisabled && decreaseDisabled}
           data-test-automation-id={automationId && `${automationId}-text`}
         >
           <>
