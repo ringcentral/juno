@@ -147,6 +147,8 @@ const OutlineTextFieldExamplesComponent: FunctionComponent<OutlineTextFieldProps
           placeholder="what's your age?"
           onChange={handleChange}
           fullWidth
+          helperText="some helper text"
+          gutterBottom
         />
         <br />
         <RcTextField
@@ -164,6 +166,8 @@ const OutlineTextFieldExamplesComponent: FunctionComponent<OutlineTextFieldProps
           onChange={handleChange}
           label="Title"
           fullWidth
+          helperText="some helper text"
+          gutterBottom
         />
         <br />
         <RcTextField
@@ -181,6 +185,8 @@ const OutlineTextFieldExamplesComponent: FunctionComponent<OutlineTextFieldProps
           onChange={handleChange}
           label="Password"
           fullWidth
+          helperText="some helper text"
+          gutterBottom
         />
         <br />
         <RcTextField
@@ -197,6 +203,8 @@ const OutlineTextFieldExamplesComponent: FunctionComponent<OutlineTextFieldProps
           onChange={handleChange}
           label="Title"
           fullWidth
+          helperText="some helper text"
+          gutterBottom
           focused
         />
         <br />
@@ -208,6 +216,9 @@ const OutlineTextFieldExamplesComponent: FunctionComponent<OutlineTextFieldProps
           placeholder="what's your title?"
           onChange={handleChange}
           label="Title"
+          helperText="some helper text"
+          fullWidth
+          gutterBottom
           error
         />
         <br />
@@ -236,6 +247,8 @@ const OutlineTextFieldExamplesComponent: FunctionComponent<OutlineTextFieldProps
           }}
           label="Title"
           fullWidth
+          helperText="some helper text"
+          gutterBottom
           disabled
         />
         <br />
@@ -243,17 +256,10 @@ const OutlineTextFieldExamplesComponent: FunctionComponent<OutlineTextFieldProps
           variant="outline"
           label="Custom color"
           fullWidth
+          helperText="some helper text"
+          gutterBottom
           placeholder="what's your title?"
           color="warning.f11"
-        />
-        <br />
-        <RcTextField
-          variant="outline"
-          label="Custom color"
-          fullWidth
-          placeholder="what's your title?"
-          color="success.f11"
-          focused
         />
       </>
     );

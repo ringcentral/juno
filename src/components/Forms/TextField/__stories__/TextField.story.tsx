@@ -160,6 +160,7 @@ export const TextFieldExamples: Story<TextFieldProps> = () => {
         placeholder="what's your age?"
         onChange={handleChange2}
         label="Number"
+        helperText="some helper text"
       />
       <br />
       <RcTextField
@@ -168,6 +169,7 @@ export const TextFieldExamples: Story<TextFieldProps> = () => {
         placeholder="what's your title?"
         onChange={handleChange}
         label="Title"
+        helperText="some helper text"
       />
       <br />
       <RcTextField
@@ -180,6 +182,7 @@ export const TextFieldExamples: Story<TextFieldProps> = () => {
         InputProps={{
           endAdornment: <RcIconButton variant="plain" symbol={HideBorder} />,
         }}
+        helperText="some helper text"
       />
       <br />
       <RcTextField
@@ -189,6 +192,7 @@ export const TextFieldExamples: Story<TextFieldProps> = () => {
         onChange={handleChange}
         label="Title"
         focused
+        helperText="some helper text"
       />
       <br />
       <RcTextField
@@ -198,6 +202,7 @@ export const TextFieldExamples: Story<TextFieldProps> = () => {
         onChange={handleChange}
         label="Title"
         error
+        helperText="some helper text"
       />
       <br />
       <RcTextField
@@ -208,6 +213,7 @@ export const TextFieldExamples: Story<TextFieldProps> = () => {
         disabled
         gutterBottom
         fullWidth
+        helperText="some helper text"
       />
       <br />
       <RcTextField
@@ -217,6 +223,7 @@ export const TextFieldExamples: Story<TextFieldProps> = () => {
         label="Title"
         gutterBottom
         color="warning.f11"
+        helperText="some helper text"
       />
       <br />
       <RcTextField
@@ -226,6 +233,7 @@ export const TextFieldExamples: Story<TextFieldProps> = () => {
         label="Title"
         color="success.f11"
         focused
+        helperText="some helper text"
       />
     </>
   );

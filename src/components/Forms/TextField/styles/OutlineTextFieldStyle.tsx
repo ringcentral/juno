@@ -1,8 +1,8 @@
 import {
   css,
   fakeBorder,
+  getParsePaletteColor,
   palette2,
-  PaletteReturnType,
   px,
   radius as radiusFn,
   RcThemedStyled,
@@ -20,16 +20,27 @@ import {
   RcTextFieldClasses,
 } from '../utils';
 
-export const OutlineTextFieldStyle: RcThemedStyled<
-  RcTextFieldProps & { parsedColor: PaletteReturnType },
-  any
-> = ({ radius, size, parsedColor }) => {
+export const OutlineTextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = ({
+  radius,
+  size,
+  color: colorProp,
+}) => {
   const height = px(RcOutlineTextFieldHeights[size!]);
   const { inside, outside, insideLeft } = RcOutlineTextFieldSpaces[size!];
   const labelMargin = RcOutlineTextFieldLabelMargins[size!];
   const typographyToken = RcOutlineTextFieldFontStyles[size!];
 
   const currRadius = radiusFn(radius!);
+
+  const borderColor = getParsePaletteColor(
+    colorProp,
+    palette2('neutral', 'l03'),
+  );
+
+  const focusBorderColor = getParsePaletteColor(
+    colorProp,
+    palette2('interactive', 'f01'),
+  );
 
   // `-webkit-tap-highlight-color` for cover background color, prevent color be cover by browser
   return css`
@@ -68,7 +79,7 @@ export const OutlineTextFieldStyle: RcThemedStyled<
         transition: none;
         border-bottom: none !important;
         pointer-events: none;
-        ${fakeBorder({ color: palette2('neutral', 'l03') })};
+        ${fakeBorder({ color: borderColor })};
       }
 
       &:not(.${RcOutlineTextFieldInputClasses.focused}):not(.${RcOutlineTextFieldInputClasses.disabled}):hover {
@@ -78,7 +89,7 @@ export const OutlineTextFieldStyle: RcThemedStyled<
 
     .${RcOutlineTextFieldInputClasses.focused} {
       &:before {
-        ${fakeBorder({ color: parsedColor })};
+        ${fakeBorder({ color: focusBorderColor })};
       }
     }
 

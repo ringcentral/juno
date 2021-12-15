@@ -211,6 +211,11 @@ Select.argTypes = {
 Select.parameters = {
   tags: [
     {
+      name: 'Spec',
+      value: 'BoxSelect',
+      href: 'https://app.abstract.com/projects/d893ad32-0d8d-4e65-a37a-b4a5c881c51b/branches/master/commits/a6497a24bcae3cd22071b657cca0b73b11887d09/files/8ffaf9bc-6939-4ef9-9bd1-6aa5b460e2ae/layers/8F8CA3D0-3173-4B76-980A-F7977FD20412',
+    },
+    {
       name: 'Mui',
       href: 'https://material-ui.com/components/selects/#select',
     },
@@ -245,6 +250,24 @@ export const LineSelect: Story<SelectProps> = ({ ...args }) => {
       </RcTypography>
       <RcSelect
         onChange={handleChange}
+        onOpen={(e) => {
+          console.log('open', e);
+        }}
+        value={value}
+        {...args}
+      >
+        {menus.map((item) => (
+          <RcMenuItem value={item.id} key={item.id}>
+            {item.value}
+          </RcMenuItem>
+        ))}
+      </RcSelect>
+      <RcTypography color="neutral.f06" variant="body2">
+        Custom color
+      </RcTypography>
+      <RcSelect
+        onChange={handleChange}
+        color="warning.f11"
         onOpen={(e) => {
           console.log('open', e);
         }}
@@ -400,6 +423,23 @@ export const BoxSelect: Story<SelectProps> = ({ ...args }) => {
       <RcTypography color="neutral.f06" variant="body2">
         Focused with custom color
       </RcTypography>
+      <RcSelect
+        onChange={handleChange}
+        color="warning.f11"
+        focused
+        onOpen={(e) => {
+          console.log('open', e);
+        }}
+        value={value}
+        {...args}
+      >
+        {menus.map((item) => (
+          <RcMenuItem value={item.id} key={item.id}>
+            {item.value}
+          </RcMenuItem>
+        ))}
+      </RcSelect>
+      <br />
       <RcSelect
         onChange={handleChange}
         color="success.f11"

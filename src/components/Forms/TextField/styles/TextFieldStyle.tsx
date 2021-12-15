@@ -22,12 +22,10 @@ import { ClearIconButton } from './ClearIconButton';
 import { OutlineTextFieldStyle } from './OutlineTextFieldStyle';
 
 const idleColor = palette2('neutral', 'f04');
-
 const errorTextColor = palette2('danger', 'f02');
 const errorColor = palette2('danger', 'f02');
 
 export const textColor = palette2('neutral', 'f06');
-
 export const disabledColor = palette2('disabled', 'f02');
 export const placeholderColor = palette2('neutral', 'f03');
 
@@ -71,6 +69,18 @@ export const TextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = (
 
   const color = getParsePaletteColor(colorProp, palette2('interactive', 'f01'));
 
+  const labelRootColor = getParsePaletteColor(colorProp, idleColor);
+
+  const underlineColor = getParsePaletteColor(
+    colorProp,
+    palette2('neutral', 'f02'),
+  );
+
+  const underlineFocusColor = getParsePaletteColor(
+    colorProp,
+    palette2('neutral', 'f06'),
+  );
+
   return css`
     ${belowIconButtonSpacing(spacing(3))};
 
@@ -85,7 +95,7 @@ export const TextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = (
 
     .${RcTextFieldInputLabelClasses.root} {
       ${typography('caption2')};
-      color: ${idleColor};
+      color: ${labelRootColor};
       transform: scale(1);
     }
 
@@ -122,13 +132,13 @@ export const TextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = (
 
     .${RcTextFieldInputClasses.underline} {
       &:before {
-        border-bottom-color: ${palette2('neutral', 'f02')};
+        border-bottom-color: ${underlineColor};
       }
 
       ${nonTouchHoverMedia} {
         &:hover:not(.${RcTextFieldInputClasses.disabled}) {
           &:before {
-            border-bottom-color: ${palette2('neutral', 'f06')};
+            border-bottom-color: ${underlineFocusColor};
           }
         }
       }
@@ -191,7 +201,6 @@ export const TextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = (
       display: none;
     }
 
-    ${variant === 'outline' &&
-    OutlineTextFieldStyle({ ...props, parsedColor: color })}
+    ${variant === 'outline' && OutlineTextFieldStyle}
   `;
 };
