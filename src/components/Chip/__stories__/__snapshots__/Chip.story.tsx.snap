@@ -18,11 +18,13 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip 1`] = `
   line-height: 22px;
 }
 
+.c0.RcChip-focused,
 .c0.focus-visible,
 .c0[data-focus-visible-added] {
   background-color: rgba(73,73,73,0.08);
 }
 
+.c0.RcChip-focused:after,
 .c0.focus-visible:after,
 .c0[data-focus-visible-added]:after {
   content: '';
@@ -36,6 +38,7 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip 1`] = `
   pointer-events: none;
 }
 
+.c0.RcChip-focused,
 .c0:focus {
   background-color: rgba(73,73,73,0.16);
 }
@@ -67,7 +70,7 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip 1`] = `
 }
 
 <div
-  className="MuiChip-root c0"
+  className="MuiChip-root c0 RcChip-focused"
   data-test-automation-class="selected-item"
   data-test-automation-value="Basic Chip"
   onKeyDown={[Function]}
@@ -500,11 +503,13 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   line-height: 22px;
 }
 
+.c1.RcChip-focused,
 .c1.focus-visible,
 .c1[data-focus-visible-added] {
   background-color: rgba(73,73,73,0.08);
 }
 
+.c1.RcChip-focused:after,
 .c1.focus-visible:after,
 .c1[data-focus-visible-added]:after {
   content: '';
@@ -518,6 +523,7 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   pointer-events: none;
 }
 
+.c1.RcChip-focused,
 .c1:focus {
   background-color: rgba(73,73,73,0.16);
 }
@@ -559,11 +565,13 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   line-height: 22px;
 }
 
+.c7.RcChip-focused,
 .c7.focus-visible,
 .c7[data-focus-visible-added] {
   background-color: rgba(190,57,51,0.08);
 }
 
+.c7.RcChip-focused:after,
 .c7.focus-visible:after,
 .c7[data-focus-visible-added]:after {
   content: '';
@@ -577,6 +585,7 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   pointer-events: none;
 }
 
+.c7.RcChip-focused,
 .c7:focus {
   background-color: rgba(73,73,73,0.16);
 }
