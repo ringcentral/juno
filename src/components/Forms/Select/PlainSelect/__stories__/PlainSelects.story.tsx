@@ -6,6 +6,7 @@ import { Add, BubbleLines, BubbleLinesBorder } from '../../../../../icon';
 import {
   notControlInDocTable,
   notShowInDocTable,
+  paletteChoice,
   sortInDocTable,
 } from '../../../../../storybook';
 import { RcIcon } from '../../../../Icon';
@@ -17,6 +18,12 @@ export default {
   title: '🚀 Cleanup Components/Selects/PlainSelect',
   component: RcPlainSelect,
   argTypes: {
+    color: {
+      control: {
+        type: 'select',
+        options: paletteChoice,
+      },
+    },
     ...sortInDocTable<keyof PlainSelectProps>([
       'variant',
       'size',

@@ -13,12 +13,14 @@ import {
   combineClasses,
   combineProps,
   CustomStyledComponentResult,
+  getParsePaletteColor,
   omit,
   RcBaseProps,
   RcClassesProps,
   styled,
   useEventCallback,
   useForkRef,
+  useTheme,
   useThemeProps,
   withDeprecatedCheck,
 } from '../../foundation';
@@ -455,6 +457,8 @@ const _RcDownshift = memo(
   forwardRef<any, RcDownshiftProps<RcDownshiftSelectedItem>>((inProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcDownshift' });
 
+    const theme = useTheme();
+
     const {
       itemToString = DEFAULT_GET_OPTION_LABEL,
       keyToChips = DEFAULT_KEY_TO_CHIPS,
@@ -534,6 +538,8 @@ const _RcDownshift = memo(
       open: openProp,
       onOpen,
       onClose,
+      focused,
+      color,
       ...rest
     } = props;
 
@@ -584,7 +590,9 @@ const _RcDownshift = memo(
       noOptionItem,
       getNoOptionsProps,
       isKeepHighlightedIndex,
+      isFocused,
     } = useDownshift({
+      focused,
       open: openProp,
       variant,
       onOpen,
@@ -654,6 +662,11 @@ const _RcDownshift = memo(
 
     const toTextFieldRef = useForkRef(textFieldRef, ref);
 
+    const colorHex = useMemo(
+      () => (color ? getParsePaletteColor(color)({ theme }) : undefined),
+      [color, theme],
+    );
+
     const startAdornment = (() => {
       if (variant === 'autocomplete') {
         return undefined;
@@ -673,7 +686,7 @@ const _RcDownshift = memo(
           oneOfTagError = true;
         }
 
-        return tagProps;
+        return { ...tagProps, color: colorHex };
       };
 
       return renderTags
@@ -709,6 +722,9 @@ const _RcDownshift = memo(
           });
     })();
 
+    const isDownshiftFocused =
+      focused ?? (isTagsFocus || isFocused ? true : undefined);
+
     const endAdornment = (toggleButton || clearBtn) && (
       <EndAdornment>
         {clearBtn && (
@@ -718,7 +734,13 @@ const _RcDownshift = memo(
           <ArrowDownButton
             variant="plain"
             aria-hidden
-            color={error ? 'danger.f02' : 'neutral.f04'}
+            color={
+              isDownshiftFocused
+                ? color || 'interactive.f01'
+                : error
+                ? 'danger.f02'
+                : 'neutral.f04'
+            }
             size="large"
             symbol={isOpen ? ArrowUp : ArrowDown}
             {...getToggleButtonProps(ToggleButtonProps)}
@@ -784,9 +806,10 @@ const _RcDownshift = memo(
           fullWidth={fullWidth}
           placeholder={!hasTags ? placeholder : undefined}
           label={label}
-          focused={isTagsFocus ? true : undefined}
+          focused={isDownshiftFocused}
           disabled={disabled}
           required={required}
+          color={color}
           // * if below one of tag is error, that main downshift default will be error
           error={error ?? oneOfTagError}
           FormHelperTextProps={FormHelperTextProps}

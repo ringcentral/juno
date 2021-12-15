@@ -91,6 +91,7 @@ type UseDownshiftParams = {
   | 'groupDefaultExpanded'
   | 'onGroupExpanded'
   | 'groupVariant'
+  | 'focused'
 >;
 
 function stringArrToRegExp(keyToTags?: string[]): RegExp {
@@ -140,17 +141,25 @@ export const useDownshift = ({
   open: openProp,
   onOpen,
   onClose,
+  focused: focusedProp,
 }: UseDownshiftParams) => {
   const isAutocomplete = variant === 'autocomplete';
   // * when that is autocomplete, that will never be multiple
   const multiple = isAutocomplete ? false : multipleProp;
 
   const isSelectedFromAutocompleteRef = useRef(false);
+  const [isFocused, setIsFocused] = useControlled({
+    controlled: focusedProp,
+    default: false,
+    name: componentName,
+  });
+
   const [isOpen, setIsOpen] = useControlled({
     controlled: openProp,
     default: initialIsOpen || false,
     name: componentName,
   });
+
   const [isTagsFocus, setIsTagsFocus] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [inputValue, setInputValue] = useControlled({
@@ -819,6 +828,8 @@ export const useDownshift = ({
           fromPasteString.current = '';
         },
         onFocus: (e) => {
+          setIsFocused(true);
+
           if (openOnFocus) openMenu(e);
 
           // * when autocomplete mode, always select all text when focus
@@ -833,6 +844,8 @@ export const useDownshift = ({
           }
         },
         onBlur: (e) => {
+          setIsFocused(false);
+
           if (autoSelect && !stopAutoSelectRef.current) {
             if (!freeSolo)
               selectItemFn(optionItems[highlightedIndexRef.current], e);
@@ -1121,6 +1134,7 @@ export const useDownshift = ({
     reset,
     forceUpdate,
     optionsGroupList,
+    isFocused,
   };
 
   changeHighlightedIndexReason.current = undefined;

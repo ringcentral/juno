@@ -1,5 +1,6 @@
 import {
   css,
+  getParsePaletteColor,
   isFilled,
   nonTouchHoverMedia,
   palette2,
@@ -52,17 +53,23 @@ export const clearBtnInactiveStyle = css`
   }
 `;
 
-export const TextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = ({
-  value,
-  variant,
-  fullWidth,
-  clearBtn,
-  size,
-  textVariant,
-  gutterBottom,
-  align,
-}) => {
+export const TextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = (
+  props,
+) => {
+  const {
+    value,
+    variant,
+    fullWidth,
+    clearBtn,
+    size,
+    textVariant,
+    gutterBottom,
+    align,
+    color: colorProp,
+  } = props;
   const showClean = isFilled({ value });
+
+  const color = getParsePaletteColor(colorProp, palette2('interactive', 'f01'));
 
   return css`
     ${belowIconButtonSpacing(spacing(3))};
@@ -83,7 +90,7 @@ export const TextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = ({
     }
 
     .${RcTextFieldInputLabelClasses.focused} {
-      color: ${palette2('interactive', 'f01')};
+      color: ${color};
     }
 
     .${RcTextFieldInputClasses.root} {
@@ -127,7 +134,7 @@ export const TextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = ({
       }
 
       &:after {
-        border-bottom-color: ${palette2('interactive', 'f01')};
+        border-bottom-color: ${color};
       }
     }
 
@@ -184,6 +191,7 @@ export const TextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = ({
       display: none;
     }
 
-    ${variant === 'outline' && OutlineTextFieldStyle}
+    ${variant === 'outline' &&
+    OutlineTextFieldStyle({ ...props, parsedColor: color })}
   `;
 };

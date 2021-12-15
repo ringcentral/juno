@@ -2,6 +2,7 @@ import {
   css,
   fakeBorder,
   palette2,
+  PaletteReturnType,
   px,
   radius as radiusFn,
   RcThemedStyled,
@@ -19,10 +20,10 @@ import {
   RcTextFieldClasses,
 } from '../utils';
 
-export const OutlineTextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = ({
-  radius,
-  size,
-}) => {
+export const OutlineTextFieldStyle: RcThemedStyled<
+  RcTextFieldProps & { parsedColor: PaletteReturnType },
+  any
+> = ({ radius, size, parsedColor }) => {
   const height = px(RcOutlineTextFieldHeights[size!]);
   const { inside, outside, insideLeft } = RcOutlineTextFieldSpaces[size!];
   const labelMargin = RcOutlineTextFieldLabelMargins[size!];
@@ -77,7 +78,7 @@ export const OutlineTextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = ({
 
     .${RcOutlineTextFieldInputClasses.focused} {
       &:before {
-        ${fakeBorder({ color: palette2('interactive', 'f01') })};
+        ${fakeBorder({ color: parsedColor })};
       }
     }
 

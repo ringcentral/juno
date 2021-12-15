@@ -1,6 +1,7 @@
 import {
   css,
   fakeBorder,
+  getParsePaletteColor,
   palette2,
   px,
   radius,
@@ -34,7 +35,9 @@ const lineSelectStyle = css<RcSelectProps>`
   }
 `;
 
-const boxSelectStyle = css<RcSelectProps>`
+const boxSelectStyle: RcThemedStyled<RcSelectProps, any> = ({
+  color,
+}) => css<RcSelectProps>`
   > .${RcBoxSelectInputClasses.root} {
     margin-top: ${({ label }: any) => label && spacing(5)};
     box-sizing: border-box;
@@ -70,7 +73,7 @@ const boxSelectStyle = css<RcSelectProps>`
     background-color: ${setOpacity(boxActionBackgroundColor, '16')};
 
     &:before {
-      ${fakeBorder({ color: palette2('interactive', 'f01') })};
+      ${fakeBorder({ color })};
     }
   }
 
@@ -100,41 +103,43 @@ const boxSelectStyle = css<RcSelectProps>`
   }
 `;
 
-export const selectStyle: RcThemedStyled<RcSelectProps, any> = ({
-  variant,
-  placeholder,
-}) => css`
-  .${RcSelectClasses.icon} {
-    color: ${palette2('neutral', 'f04')};
-  }
+export const selectStyle: RcThemedStyled<RcSelectProps, any> = (props) => {
+  const { variant, placeholder, color: colorProp } = props;
+  const color = getParsePaletteColor(colorProp, palette2('interactive', 'f01'));
 
-  .${RcSelectInputClasses.focused} {
+  return css`
     .${RcSelectClasses.icon} {
-      color: ${palette2('interactive', 'f01')};
+      color: ${palette2('neutral', 'f04')};
     }
-  }
 
-  .${RcSelectInputClasses.error} {
-    .${RcSelectClasses.icon} {
-      color: ${palette2('danger', 'f02')};
+    .${RcSelectInputClasses.focused} {
+      .${RcSelectClasses.icon} {
+        color: ${color};
+      }
     }
-  }
 
-  .${RcSelectInputWhenPlaceholderClasses.input} {
-    color: ${placeholderColor};
-    &:before {
-      content: ${`'${placeholder}'`};
-      border: none;
+    .${RcSelectInputClasses.error} {
+      .${RcSelectClasses.icon} {
+        color: ${palette2('danger', 'f02')};
+      }
     }
-  }
 
-  .${RcSelectInputClasses.disabled} {
-    color: ${disabledColor};
-    .${RcSelectClasses.icon} {
+    .${RcSelectInputWhenPlaceholderClasses.input} {
+      color: ${placeholderColor};
+      &:before {
+        content: ${`'${placeholder}'`};
+        border: none;
+      }
+    }
+
+    .${RcSelectInputClasses.disabled} {
       color: ${disabledColor};
+      .${RcSelectClasses.icon} {
+        color: ${disabledColor};
+      }
     }
-  }
 
-  ${variant === 'line' && lineSelectStyle};
-  ${variant === 'box' && boxSelectStyle};
-`;
+    ${variant === 'line' && lineSelectStyle};
+    ${variant === 'box' && boxSelectStyle({ ...props, color })};
+  `;
+};

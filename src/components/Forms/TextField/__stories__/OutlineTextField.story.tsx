@@ -238,6 +238,23 @@ const OutlineTextFieldExamplesComponent: FunctionComponent<OutlineTextFieldProps
           fullWidth
           disabled
         />
+        <br />
+        <RcTextField
+          variant="outline"
+          label="Custom color"
+          fullWidth
+          placeholder="what's your title?"
+          color="warning.f11"
+        />
+        <br />
+        <RcTextField
+          variant="outline"
+          label="Custom color"
+          fullWidth
+          placeholder="what's your title?"
+          color="success.f11"
+          focused
+        />
       </>
     );
   };

@@ -63,6 +63,7 @@ type RcSelectProps = {
     | 'focused'
     | 'gutterBottom'
     | 'textVariant'
+    | 'color'
   >;
 
 const leftBottomAnchorOrigin: PopoverOrigin = {
@@ -90,6 +91,7 @@ const _RcSelect = forwardRef<any, RcSelectProps>(
       focused,
       gutterBottom,
       helperText,
+      color,
       label,
       id,
       className,
@@ -184,6 +186,7 @@ const _RcSelect = forwardRef<any, RcSelectProps>(
         className={className}
         // for when that is select type that type will be select onChange, just any for ignore that
         onChange={onChange as any}
+        color={color}
         select
         focused={focused}
         gutterBottom={gutterBottom}

@@ -11,6 +11,7 @@ import HideBorder from '../../../../icon/HideBorder';
 import {
   notControlInDocTable,
   notShowInDocTable,
+  paletteChoice,
   sortInDocTable,
   switchToControlKnobs,
 } from '../../../../storybook';
@@ -25,6 +26,12 @@ export default {
   title: '🚀 Cleanup Components/Forms/TextField',
   component: RcTextField,
   argTypes: {
+    color: {
+      control: {
+        type: 'select',
+        options: paletteChoice,
+      },
+    },
     ...sortInDocTable<keyof TextFieldProps>([
       'variant',
       'align',
@@ -199,7 +206,26 @@ export const TextFieldExamples: Story<TextFieldProps> = () => {
         onChange={handleChange}
         label="Title"
         disabled
+        gutterBottom
         fullWidth
+      />
+      <br />
+      <RcTextField
+        value={value}
+        placeholder="what's your title?"
+        onChange={handleChange}
+        label="Title"
+        gutterBottom
+        color="warning.f11"
+      />
+      <br />
+      <RcTextField
+        value={value}
+        placeholder="what's your title?"
+        onChange={handleChange}
+        label="Title"
+        color="success.f11"
+        focused
       />
     </>
   );

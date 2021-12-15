@@ -19,6 +19,7 @@ import ArrowDown2 from '../../../icon/ArrowDown2';
 import {
   notControlInDocTable,
   notShowInDocTable,
+  paletteChoice,
   sortInDocTable,
   switchToControlKnobs,
 } from '../../../storybook';
@@ -47,6 +48,12 @@ export default {
   title: '🚀 Cleanup Components/Downshift',
   component: DownshiftDoc,
   argTypes: {
+    color: {
+      control: {
+        type: 'select',
+        options: paletteChoice,
+      },
+    },
     ...sortInDocTable<keyof DownshiftProps>([
       'options',
       'value',

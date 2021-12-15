@@ -58,6 +58,7 @@ const _RcPlainSelect = forwardRef<any, RcPlainSelectProps>(
       size,
       virtualize,
       fullWidth,
+      color,
       //
       IconComponent,
       onOpen: onOpenProp,
@@ -86,6 +87,7 @@ const _RcPlainSelect = forwardRef<any, RcPlainSelectProps>(
             innerRef={innerRef}
             disabled={disabled}
             size={size}
+            color={color}
             fullWidth={fullWidth}
             autoFocus={autoFocus}
             variant={_variant}
@@ -109,6 +111,7 @@ const _RcPlainSelect = forwardRef<any, RcPlainSelectProps>(
         ButtonProps,
         IconComponent,
         autoFocus,
+        color,
         disabled,
         display,
         fullWidth,
@@ -170,6 +173,7 @@ const _RcPlainSelect = forwardRef<any, RcPlainSelectProps>(
         InputProps={_InputProps}
         renderValue={_renderValue}
         fullWidth={fullWidth}
+        color={color}
         {...rest}
       >
         {children}

@@ -17,6 +17,7 @@ import {
   combineProps,
   RcBaseProps,
   RcBaseSize,
+  RcPaletteProp,
   RcTheme,
   styled,
   useEventCallback,
@@ -46,6 +47,8 @@ type RcOutlineTextSize = RcBaseSize<'small' | 'medium' | 'large'>;
 type RcTextFieldVariant = 'standard' | 'outline' | 'borderLess';
 
 type RcTextFieldProps = {
+  /** color palette set, effect that active color when focus */
+  color?: RcPaletteProp;
   /** variant type for different display TextField */
   variant?: RcTextFieldVariant;
   /** border radius for outline text field */
@@ -130,6 +133,7 @@ const _RcTextField = forwardRef<any, RcTextFieldProps>((inProps, ref) => {
     align,
     textVariant,
     gutterBottom,
+    color,
     // #endregion
     ...rest
   } = props;
