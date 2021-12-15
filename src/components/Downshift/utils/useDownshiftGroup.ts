@@ -4,7 +4,7 @@ import {
   combineProps,
   logInDev,
   omit,
-  useChange,
+  useDepsChange,
   useEventCallback,
   useRefState,
 } from '../../../foundation';
@@ -14,61 +14,61 @@ import {
   RcDownshiftSelectedItem,
 } from './SelectItem';
 
-type UseDownshiftGroup = {
-  filteredResult: RcDownshiftSelectedItem[];
+type UseDownshiftGroup<
+  T extends RcDownshiftSelectedItem = RcDownshiftSelectedItem,
+> = {
+  filteredResult: T[];
   id: string;
 } & Pick<
-  RcDownshiftProps,
+  RcDownshiftProps<T>,
   | 'options'
   | 'groupBy'
   | 'getExpandIconProps'
   | 'onGroupExpanded'
   | 'groupExpanded'
+  | 'groupDefaultExpanded'
   | 'groupVariant'
+  | 'getOptionDisabled'
 >;
 
-export const useDownshiftGroup = ({
+type ExpandedMapState = Record<string, boolean>;
+
+export const useDownshiftGroup = <
+  T extends RcDownshiftSelectedItem = RcDownshiftSelectedItem,
+>({
   groupBy,
   options,
   filteredResult,
   getExpandIconProps,
   groupExpanded,
+  groupDefaultExpanded,
   onGroupExpanded,
   groupVariant,
+  getOptionDisabled,
   id,
-}: UseDownshiftGroup) => {
-  const [groupExpandedMapRef, setGroupExpandedMap] = useRefState<
-    Record<string, boolean>
-  >({});
+}: UseDownshiftGroup<T>) => {
+  const [groupExpandedMapRef, setGroupExpandedMap] =
+    useRefState<ExpandedMapState>({});
   const isTitleGroup = groupVariant === 'normal';
 
-  useChange(
-    () => {
-      if (typeof groupExpanded === 'object') {
-        setGroupExpandedMap(groupExpanded, false);
-      }
-    },
-    () => groupExpanded,
-  );
-
-  const handleGroupExpandedChange = (key: string) => {
+  const handleGroupExpandedChange = (groupName: string) => {
     const groupExpandedMap = groupExpandedMapRef.current;
 
     if (typeof groupExpanded === 'boolean') {
       return;
     }
 
-    const toExpandedState = !groupExpandedMap[key];
+    const toExpandedState = !groupExpandedMap[groupName];
 
     const newExpandedMap = {
       ...groupExpandedMap,
-      [key]: toExpandedState,
+      [groupName]: toExpandedState,
     };
 
     setGroupExpandedMap(newExpandedMap);
 
     if (onGroupExpanded) {
-      const group = optionsGroupList.find((x) => x.group === key);
+      const group = optionsGroupList.find((x) => x.group === groupName);
 
       if (group) {
         onGroupExpanded(
@@ -83,8 +83,8 @@ export const useDownshiftGroup = ({
   };
 
   const handleExpandIconClick = useEventCallback(
-    (e: React.MouseEvent<HTMLButtonElement, MouseEvent>, key: string) => {
-      handleGroupExpandedChange(key);
+    (e: React.MouseEvent<HTMLButtonElement, MouseEvent>, groupName: string) => {
+      handleGroupExpandedChange(groupName);
       e.preventDefault();
       e.stopPropagation();
     },
@@ -97,7 +97,9 @@ export const useDownshiftGroup = ({
       const indexBy = new Map();
       let warn = false;
 
-      return filteredResult.reduce<RcDownshiftGroupedOption[]>(
+      const afterGroupFn: (() => void)[] = [];
+
+      const result = filteredResult.reduce<RcDownshiftGroupedOption<T>[]>(
         (acc, option, index) => {
           const group = groupBy(option);
 
@@ -119,7 +121,7 @@ export const useDownshiftGroup = ({
               indexBy.set(group, true);
             }
 
-            const newGroup: RcDownshiftGroupedOption = {
+            const newGroup: RcDownshiftGroupedOption<T> = {
               key: index,
               index,
               group,
@@ -149,12 +151,23 @@ export const useDownshiftGroup = ({
             newGroup.options[0].group = newGroup;
 
             if (isTitleGroup) {
-              newGroup.options.unshift({
+              const groupTitleOption = {
                 id: `${id}-${group}`,
                 label: group,
                 disabled: true,
-                group: newGroup,
-              });
+                // * here cause by self Type reference
+                group: newGroup as any,
+              } as T;
+
+              // push fn to array, do that after all options be add into group
+              if (getOptionDisabled) {
+                afterGroupFn.push(() => {
+                  groupTitleOption.disabled =
+                    getOptionDisabled(groupTitleOption);
+                });
+              }
+
+              newGroup.options.unshift(groupTitleOption);
             }
 
             acc.push(newGroup);
@@ -164,17 +177,49 @@ export const useDownshiftGroup = ({
         },
         [],
       );
+
+      afterGroupFn.forEach((fn) => {
+        fn();
+      });
+
+      return result;
     }
+
     return [];
   }, [
     filteredResult,
     getExpandIconProps,
+    getOptionDisabled,
     groupBy,
     handleExpandIconClick,
     id,
     isTitleGroup,
     options,
   ]);
+
+  const initGroupExpandedState = (
+    expandedState: UseDownshiftGroup<T>['groupExpanded'],
+  ) => {
+    if (typeof expandedState === 'object') {
+      setGroupExpandedMap(expandedState, false);
+    } else if (typeof expandedState === 'boolean') {
+      setGroupExpandedMap(
+        optionsGroupList.reduce((prev, curr) => {
+          prev[curr.group] = expandedState;
+          return prev;
+        }, {}),
+        false,
+      );
+    }
+  };
+
+  useDepsChange(() => {
+    initGroupExpandedState(groupDefaultExpanded);
+  }, []);
+
+  useDepsChange(() => {
+    initGroupExpandedState(groupExpanded);
+  }, [groupExpanded]);
 
   const groupExpandedMap = groupExpandedMapRef.current;
 
@@ -183,16 +228,16 @@ export const useDownshiftGroup = ({
     const addExpandedResult = Object.entries(groupExpandedMap).reduce(
       (prev, [key, expended]) => {
         const group = prev.find((x) => x.group === key);
-        if (group) {
-          group.expanded = expended;
-        }
+
+        if (group) group.expanded = expended;
+
         return prev;
       },
       [...optionsGroupList],
     );
 
-    return addExpandedResult.reduce<RcDownshiftSelectedItem[]>((prev, curr) => {
-      if (typeof groupExpanded === 'boolean' ? groupExpanded : curr.expanded) {
+    return addExpandedResult.reduce<T[]>((prev, curr) => {
+      if (curr.expanded) {
         prev.push(...curr.options);
       } else {
         prev.push(curr.options[0]);
@@ -200,7 +245,7 @@ export const useDownshiftGroup = ({
 
       return prev;
     }, []);
-  }, [groupExpandedMap, optionsGroupList, groupExpanded]);
+  }, [groupExpandedMap, optionsGroupList]);
 
   return {
     optionsGroupList,

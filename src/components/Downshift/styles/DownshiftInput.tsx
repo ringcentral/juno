@@ -10,15 +10,13 @@ export const RcDownshiftInput: FunctionComponent<any> = ({
   containerClassName,
   onContainerClick,
   ...rest
-}) => {
-  return (
-    <div
-      ref={containerRef}
-      onClick={onContainerClick}
-      className={containerClassName}
-    >
-      {startAdornment}
-      <input ref={inputRef} {...rest} />
-    </div>
-  );
-};
+}) => (
+  <div
+    ref={containerRef}
+    onClick={onContainerClick}
+    className={containerClassName}
+  >
+    {startAdornment}
+    <input ref={inputRef} {...rest} />
+  </div>
+);

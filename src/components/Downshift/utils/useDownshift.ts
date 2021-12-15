@@ -88,6 +88,7 @@ type UseDownshiftParams = {
   | 'groupBy'
   | 'getExpandIconProps'
   | 'groupExpanded'
+  | 'groupDefaultExpanded'
   | 'onGroupExpanded'
   | 'groupVariant'
 >;
@@ -133,6 +134,7 @@ export const useDownshift = ({
   onGroupExpanded,
   groupVariant,
   groupExpanded,
+  groupDefaultExpanded,
   getExpandIconProps,
   required,
   open: openProp,
@@ -268,7 +270,10 @@ export const useDownshift = ({
       filteredResult,
       getExpandIconProps,
       groupExpanded,
+      groupDefaultExpanded,
       onGroupExpanded,
+      // TODO: single release for that breaking change
+      // getOptionDisabled,
       groupVariant,
       id: downshiftId,
     });

@@ -50,6 +50,7 @@ import {
   RcDownshiftGroupedOption,
   RcDownshiftInputClasses,
   RcDownshiftSelectedItem,
+  RcDownshiftSelectedItemAdditionProps,
   useDownshift,
   useDownshiftError,
 } from './utils';
@@ -74,8 +75,7 @@ export type RcDownshiftCloseReason =
   | 'blur';
 
 type RcDownshiftProps<
-  T = RcDownshiftSelectedItem,
-  K = T & RcDownshiftSelectedItem,
+  T extends RcDownshiftSelectedItem = RcDownshiftSelectedItem,
 > = {
   /**
    * display mode,
@@ -133,7 +133,7 @@ type RcDownshiftProps<
    * @returns {ReactNode}
    */
   renderOption?: (
-    option: T & RcDownshiftSelectedItem,
+    option: T & RcDownshiftSelectedItemAdditionProps,
     state: RcDownshiftRenderOptionState,
   ) => React.ReactNode;
   /**
@@ -146,14 +146,21 @@ type RcDownshiftProps<
    */
   groupVariant?: 'normal' | 'expanded';
   /**
-   * group expanded state, you can control expanded state by that,
-   * use when `groupVariant` is `expanded`
+   * group expanded state, you can control expanded state by that
    *
    * - `true`: expand all
    * - `false`: collapse all
    * - `{key: boolean}`: control group state
    */
   groupExpanded?: Record<string, boolean> | boolean;
+  /**
+   * group default expanded state
+   *
+   * - `true`: expand all
+   * - `false`: collapse all
+   * - `{key: boolean}`: control group state
+   */
+  groupDefaultExpanded?: Record<string, boolean> | boolean;
   /**
    * If provided, the options will be grouped under the returned string.
    * The groupBy value is also used as the text for group headings when `renderGroup` is not provided.
@@ -172,7 +179,7 @@ type RcDownshiftProps<
    * @returns {ReactNode}
    */
   renderGroup?: (
-    option: T & RcDownshiftSelectedItem,
+    option: T & RcDownshiftSelectedItemAdditionProps,
     state: RcDownshiftRenderOptionState,
   ) => React.ReactNode;
   /**
@@ -207,9 +214,9 @@ type RcDownshiftProps<
    * @returns {ReactNode}
    */
   renderTags?: (
-    selectedItems: K[],
+    selectedItems: T[],
     getTagProps: (
-      selectedItem: K,
+      selectedItem: T,
       index: number,
     ) => Omit<React.HTMLAttributes<HTMLElement>, 'children'> & {
       onDelete?: React.EventHandler<any>;
@@ -376,7 +383,10 @@ type RcDownshiftProps<
     inputPlaceholder?: RcTextFieldProps['placeholder'];
     /** @deprecated input element maxlength, please use `TextFieldProps.inputProps.maxLength` */
     maxLength?: number;
-    /** @deprecated should use `screenReaderProps` */
+    /**
+     * @deprecated  you not need that props,
+     * use `FormHelperTextProps['aria-label']` and `useAnnouncer` by yourself
+     */
     screenReader?: {
       entry: string;
       entries: string;
@@ -471,6 +481,7 @@ const _RcDownshift = memo(
       onSelectChange,
       variant,
       groupExpanded,
+      groupDefaultExpanded,
       groupVariant = 'normal',
       getExpandIconProps,
       groupBy,
@@ -585,6 +596,7 @@ const _RcDownshift = memo(
       inputValue: inputValueProp,
       getOptionDisabled,
       groupExpanded: groupVariant === 'normal' ? true : groupExpanded,
+      groupDefaultExpanded,
       getExpandIconProps,
       options: suggestionItems || options,
       freeSolo,
@@ -973,5 +985,9 @@ const ExportType: <T extends RcDownshiftSelectedItem>(
 ) => JSX.Element & CustomStyledComponentResult<RcDownshiftProps<T>> =
   RcDownshift as any;
 
-export { ExportType as RcDownshift, RcDownshiftDefaultFilterOptions };
+export {
+  ExportType as RcDownshift,
+  RcDownshiftDefaultFilterOptions,
+  RcDownshiftInput,
+};
 export type { RcDownshiftProps, RcDownshiftRef };

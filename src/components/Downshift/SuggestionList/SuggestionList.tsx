@@ -81,7 +81,7 @@ export type InnerSuggestionListProps = {
   /** that reason that change highlighted */
   changeHighlightedIndexReason: RcDownshiftHighlightChangeReason | undefined;
   /** is that need keep highlighted index, that will be helpful when you need load more options when scroll */
-  isKeepHighlightedIndex: boolean;
+  isKeepHighlightedIndex?: boolean;
   /** trigger when need update outside popper position */
   onUpdatePopper?: () => any;
   /** options group list, use for calculate `aria-setsize` */

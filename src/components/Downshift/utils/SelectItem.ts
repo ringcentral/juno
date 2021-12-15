@@ -31,6 +31,25 @@ export type RcDownshiftSelectedItem = {
   isError?: boolean;
 };
 
+export type RcDownshiftSelectedItemAdditionProps = {
+  /** that key of item */
+  key?: string;
+  /** role of that item */
+  role?: string;
+  /** when that item is group, that will get class with `classes.groupTitle` */
+  className?: string;
+  /** current position of set */
+  'aria-posinset'?: number;
+  /** number of all options */
+  'aria-setsize'?: number;
+  /** binding event when click item */
+  onClick?: React.MouseEventHandler<HTMLElement>;
+  /** stop propagation */
+  onMouseDown?: React.MouseEventHandler<HTMLElement>;
+  /** binding mouse over event */
+  onMouseOver?: React.MouseEventHandler<HTMLElement>;
+};
+
 export interface RcDownshiftGroupedOption<T = RcDownshiftSelectedItem> {
   /** group key */
   key: number;
