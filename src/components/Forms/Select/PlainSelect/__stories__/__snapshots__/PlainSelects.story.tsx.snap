@@ -760,7 +760,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 16px;
-  color: #666666;
+  color: #46BE59;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -802,7 +802,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
 }
 
 .c15 .RcTextFieldInput-underline:before {
-  border-bottom-color: #939393;
+  border-bottom-color: #46BE59;
 }
 
 .c15 .RcTextFieldInput-underline:after {
@@ -1216,7 +1216,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
 
 @media (hover:hover) and (pointer:fine) {
   .c15 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
-    border-bottom-color: #121212;
+    border-bottom-color: #46BE59;
   }
 }
 

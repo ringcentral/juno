@@ -18,6 +18,10 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <p
     className="MuiTypography-root c0"
     data-color="neutral.f06"
@@ -269,6 +273,10 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <div
     className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1"
   >
@@ -357,6 +365,10 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <p
     className="MuiTypography-root c0"
     data-color="neutral.f06"
@@ -391,7 +403,340 @@ Array [
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 16px;
+  color: #F6AD16;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0 .RcTextFieldInputLabel-focused {
+  color: #F6AD16;
+}
+
+.c0 .RcTextFieldInput-root {
+  color: #121212;
+}
+
+.c0 .RcTextFieldInput-input {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+}
+
+.c0 .RcTextFieldInput-input::-webkit-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input::-moz-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:-ms-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input::placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-underline:before {
+  border-bottom-color: #F6AD16;
+}
+
+.c0 .RcTextFieldInput-underline:after {
+  border-bottom-color: #F6AD16;
+}
+
+.c0 .RcTextFieldInput-error:after {
+  border-bottom-color: #BE3933;
+}
+
+.c0 .RcTextFieldInput-disabled {
+  color: #B9B9B9;
+  -webkit-text-fill-color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled::-moz-placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled::placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled:before {
+  border-bottom-style: solid;
+  border-bottom-color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled:after {
+  border-bottom-style: none;
+}
+
+.c0 .RcTextFieldFormHelperText-root {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
   color: #666666;
+}
+
+.c0 .RcTextFieldFormHelperText-error,
+.c0 .RcTextFieldInputLabel-error {
+  color: #BE3933;
+}
+
+.c0 .RcTextFieldFormHelperText-disabled,
+.c0 .RcTextFieldInputLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c0 input[type='search']::-ms-clear,
+.c0 input[type='search']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.c0 input[type='search']::-webkit-search-decoration,
+.c0 input[type='search']::-webkit-search-cancel-button,
+.c0 input[type='search']::-webkit-search-results-button,
+.c0 input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+.c1 .RcSelect-icon {
+  color: #666666;
+}
+
+.c1 .RcSelectInput-focused .RcSelect-icon {
+  color: #F6AD16;
+}
+
+.c1 .RcSelectInput-error .RcSelect-icon {
+  color: #BE3933;
+}
+
+.c1 .RcSelectInputWhenPlaceholder-input {
+  color: #757575;
+}
+
+.c1 .RcSelectInputWhenPlaceholder-input:before {
+  content: 'Select an age, please';
+  border: none;
+}
+
+.c1 .RcSelectInput-disabled {
+  color: #B9B9B9;
+}
+
+.c1 .RcSelectInput-disabled .RcSelect-icon {
+  color: #B9B9B9;
+}
+
+.c1 > .RcBoxSelectInput-root {
+  margin-top: 20px;
+  box-sizing: border-box;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #F3F3F3;
+}
+
+.c1 > .RcBoxSelectInput-root:not(.RcBoxSelectInput-disabled):hover {
+  background-color: rgba(73,73,73,0.12);
+}
+
+.c1 > .RcBoxSelectInput-root:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  -webkit-transition: none;
+  transition: none;
+  border-bottom: none !important;
+  pointer-events: none;
+}
+
+.c1 > .RcBoxSelectInput-root:after {
+  display: none;
+}
+
+.c1 > .RcBoxSelectInput-focused {
+  background-color: rgba(73,73,73,0.16);
+}
+
+.c1 > .RcBoxSelectInput-focused:before {
+  box-shadow: inset 0 0 0 1px #F6AD16;
+}
+
+.c1 > .RcBoxSelectInput-error:before {
+  box-shadow: inset 0 0 0 1px #BE3933;
+}
+
+.c1 > .RcBoxSelectInput-disabled {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c1 > .RcBoxSelectInput-disabled:before {
+  box-shadow: inset 0 0 0 1px transparent;
+}
+
+.c1 .RcBoxSelectInput-input {
+  padding: 6px 24px 6px 8px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  line-height: 20px;
+}
+
+.c1 .RcBoxSelectInput-input:focus {
+  background: transparent;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
+    border-bottom-color: #F6AD16;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<div
+    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-focused Mui-focused RcTextFieldInputLabel-focused"
+      data-shrink={true}
+      htmlFor="select-id2"
+      id="select-id2-label"
+    >
+      Team Name
+    </label>
+    <div
+      className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcSelectInput-root RcBoxSelectInput-root RcSelectInput-root RcBoxSelectInput-root Mui-focused Mui-focused RcTextFieldInput-focused RcSelectInput-focused RcBoxSelectInput-focused RcSelectInput-focused RcBoxSelectInput-focused MuiInputBase-formControl MuiInput-formControl"
+      onClick={[Function]}
+    >
+      <div
+        aria-haspopup="listbox"
+        aria-labelledby="select-id2-label select-id2"
+        className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input RcTextFieldInput-input RcBoxSelectInput-input RcSelectInputWhenPlaceholder-input RcBoxSelectInput-input"
+        id="select-id2"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "&#8203;",
+            }
+          }
+        />
+      </div>
+      <input
+        aria-describedby="select-id2-helper-text"
+        aria-hidden={true}
+        autoFocus={false}
+        className="MuiSelect-nativeInput"
+        disabled={false}
+        onAnimationStart={[Function]}
+        onChange={[Function]}
+        placeholder="Select an age, please"
+        required={false}
+        tabIndex={-1}
+        value=""
+        variant="standard"
+      />
+      <span
+        className="c2 MuiSvgIcon-root MuiSelect-icon RcSelect-icon arrow-down icon"
+        disabled={false}
+      >
+        <svg
+          className="c3"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.707 20.293l5.586-5.586A.999.999 0 0021.586 13H10.414a1 1 0 00-.707 1.707l5.586 5.586a.999.999 0 001.414 0z"
+          />
+        </svg>
+        
+      </span>
+    </div>
+    <p
+      className="MuiFormHelperText-root RcTextFieldFormHelperText-root Mui-focused"
+      id="select-id2-helper-text"
+    >
+      Some important helper text
+    </p>
+  </div>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c3 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+  color: #666666;
+}
+
+.c0 {
+  width: 168px;
+}
+
+.c0 .RcTextFieldInputLabel-root {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #46BE59;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -433,7 +778,7 @@ Array [
 }
 
 .c0 .RcTextFieldInput-underline:before {
-  border-bottom-color: #939393;
+  border-bottom-color: #46BE59;
 }
 
 .c0 .RcTextFieldInput-underline:after {
@@ -603,8 +948,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
   .c0 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
-    border-bottom-color: #121212;
+    border-bottom-color: #46BE59;
   }
 }
 
@@ -686,6 +1035,10 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
   color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -947,6 +1300,10 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <div
     className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1"
   >
@@ -1025,6 +1382,10 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
   color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1286,6 +1647,10 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <div
     className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1"
   >
@@ -1363,6 +1728,10 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
   color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1624,6 +1993,10 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <div
     className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1"
   >
@@ -1707,6 +2080,10 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
   color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1917,6 +2294,10 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <div
     className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1"
   >
@@ -2005,6 +2386,306 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<p
+    className="MuiTypography-root c0"
+    data-color="neutral.f06"
+    data-variant="body2"
+  >
+    Custom color
+  </p>,
+  .c3 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+  color: #666666;
+}
+
+.c0 {
+  width: 168px;
+}
+
+.c0 .RcTextFieldInputLabel-root {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #F6AD16;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0 .RcTextFieldInputLabel-focused {
+  color: #F6AD16;
+}
+
+.c0 .RcTextFieldInput-root {
+  color: #121212;
+}
+
+.c0 .RcTextFieldInput-input {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+}
+
+.c0 .RcTextFieldInput-input::-webkit-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input::-moz-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:-ms-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input::placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-underline:before {
+  border-bottom-color: #F6AD16;
+}
+
+.c0 .RcTextFieldInput-underline:after {
+  border-bottom-color: #F6AD16;
+}
+
+.c0 .RcTextFieldInput-error:after {
+  border-bottom-color: #BE3933;
+}
+
+.c0 .RcTextFieldInput-disabled {
+  color: #B9B9B9;
+  -webkit-text-fill-color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled::-moz-placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled::placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled:before {
+  border-bottom-style: solid;
+  border-bottom-color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled:after {
+  border-bottom-style: none;
+}
+
+.c0 .RcTextFieldFormHelperText-root {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c0 .RcTextFieldFormHelperText-error,
+.c0 .RcTextFieldInputLabel-error {
+  color: #BE3933;
+}
+
+.c0 .RcTextFieldFormHelperText-disabled,
+.c0 .RcTextFieldInputLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c0 input[type='search']::-ms-clear,
+.c0 input[type='search']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.c0 input[type='search']::-webkit-search-decoration,
+.c0 input[type='search']::-webkit-search-cancel-button,
+.c0 input[type='search']::-webkit-search-results-button,
+.c0 input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+.c1 .RcSelect-icon {
+  color: #666666;
+}
+
+.c1 .RcSelectInput-focused .RcSelect-icon {
+  color: #F6AD16;
+}
+
+.c1 .RcSelectInput-error .RcSelect-icon {
+  color: #BE3933;
+}
+
+.c1 .RcSelectInputWhenPlaceholder-input {
+  color: #757575;
+}
+
+.c1 .RcSelectInputWhenPlaceholder-input:before {
+  content: 'Select an age, please';
+  border: none;
+}
+
+.c1 .RcSelectInput-disabled {
+  color: #B9B9B9;
+}
+
+.c1 .RcSelectInput-disabled .RcSelect-icon {
+  color: #B9B9B9;
+}
+
+.c1 .RcLineSelectInput-input {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+  line-height: unset;
+}
+
+.c1 .RcLineSelectInput-input:focus {
+  background-color: rgba(73,73,73,0.08);
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
+    border-bottom-color: #F6AD16;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<div
+    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+      data-shrink={true}
+      htmlFor="select-id"
+      id="select-id-label"
+    >
+      Team Name
+    </label>
+    <div
+      className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcSelectInput-root RcSelectInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-formControl MuiInput-formControl"
+      onClick={[Function]}
+    >
+      <div
+        aria-haspopup="listbox"
+        aria-labelledby="select-id-label select-id"
+        className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input RcTextFieldInput-input RcLineSelectInput-input RcSelectInputWhenPlaceholder-input RcLineSelectInput-input"
+        id="select-id"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "&#8203;",
+            }
+          }
+        />
+      </div>
+      <input
+        aria-describedby="select-id-helper-text"
+        aria-hidden={true}
+        autoFocus={false}
+        className="MuiSelect-nativeInput"
+        disabled={false}
+        onAnimationStart={[Function]}
+        onChange={[Function]}
+        placeholder="Select an age, please"
+        required={false}
+        tabIndex={-1}
+        value=""
+        variant="standard"
+      />
+      <span
+        className="c2 MuiSvgIcon-root MuiSelect-icon RcSelect-icon arrow-down icon"
+        disabled={false}
+      >
+        <svg
+          className="c3"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.707 20.293l5.586-5.586A.999.999 0 0021.586 13H10.414a1 1 0 00-.707 1.707l5.586 5.586a.999.999 0 001.414 0z"
+          />
+        </svg>
+        
+      </span>
+    </div>
+    <p
+      className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+      id="select-id-helper-text"
+    >
+      Some important helper text
+    </p>
+  </div>,
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <p
     className="MuiTypography-root c0"
     data-color="neutral.f06"
@@ -2039,7 +2720,7 @@ Array [
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 16px;
-  color: #666666;
+  color: #46BE59;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -2081,7 +2762,7 @@ Array [
 }
 
 .c0 .RcTextFieldInput-underline:before {
-  border-bottom-color: #939393;
+  border-bottom-color: #46BE59;
 }
 
 .c0 .RcTextFieldInput-underline:after {
@@ -2200,8 +2881,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
   .c0 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
-    border-bottom-color: #121212;
+    border-bottom-color: #46BE59;
   }
 }
 
@@ -2283,6 +2968,10 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
   color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2493,6 +3182,10 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <div
     className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1"
   >
@@ -2571,6 +3264,10 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
   color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2781,6 +3478,10 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <div
     className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1"
   >
@@ -2859,6 +3560,10 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
   color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3069,6 +3774,10 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <div
     className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1"
   >
@@ -3147,6 +3856,10 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
   color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3351,6 +4064,10 @@ Array [
   .c0 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
     border-bottom-color: #121212;
   }
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {

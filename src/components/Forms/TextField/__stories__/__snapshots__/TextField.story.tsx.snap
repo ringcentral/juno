@@ -1276,6 +1276,11 @@ Array [
         </span>
       </button>
     </div>
+    <p
+      className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+    >
+      some helper text
+    </p>
   </div>,
   @media (hover:hover) and (pointer:fine) {
 
@@ -1720,6 +1725,11 @@ Array [
         </span>
       </button>
     </div>
+    <p
+      className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+    >
+      some helper text
+    </p>
   </div>,
   @media (hover:hover) and (pointer:fine) {
 
@@ -2196,6 +2206,11 @@ Array [
         </span>
       </button>
     </div>
+    <p
+      className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+    >
+      some helper text
+    </p>
   </div>,
   @media (hover:hover) and (pointer:fine) {
 
@@ -2640,6 +2655,11 @@ Array [
         </span>
       </button>
     </div>
+    <p
+      className="MuiFormHelperText-root RcTextFieldFormHelperText-root Mui-focused"
+    >
+      some helper text
+    </p>
   </div>,
   @media (hover:hover) and (pointer:fine) {
 
@@ -3084,6 +3104,11 @@ Array [
         </span>
       </button>
     </div>
+    <p
+      className="MuiFormHelperText-root RcTextFieldFormHelperText-root Mui-error RcTextFieldFormHelperText-error"
+    >
+      some helper text
+    </p>
   </div>,
   @media (hover:hover) and (pointer:fine) {
 
@@ -3524,6 +3549,11 @@ Array [
         </span>
       </button>
     </div>
+    <p
+      className="MuiFormHelperText-root RcTextFieldFormHelperText-root Mui-disabled RcTextFieldFormHelperText-disabled"
+    >
+      some helper text
+    </p>
   </div>,
   @media (hover:hover) and (pointer:fine) {
 
@@ -3727,7 +3757,7 @@ Array [
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 16px;
-  color: #666666;
+  color: #F6AD16;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -3769,7 +3799,7 @@ Array [
 }
 
 .c0 .RcTextFieldInput-underline:before {
-  border-bottom-color: #939393;
+  border-bottom-color: #F6AD16;
 }
 
 .c0 .RcTextFieldInput-underline:after {
@@ -3894,7 +3924,7 @@ Array [
 
 @media (hover:hover) and (pointer:fine) {
   .c0 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
-    border-bottom-color: #121212;
+    border-bottom-color: #F6AD16;
   }
 }
 
@@ -3968,6 +3998,11 @@ Array [
         </span>
       </button>
     </div>
+    <p
+      className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+    >
+      some helper text
+    </p>
   </div>,
   @media (hover:hover) and (pointer:fine) {
 
@@ -4171,7 +4206,7 @@ Array [
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 16px;
-  color: #666666;
+  color: #46BE59;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -4213,7 +4248,7 @@ Array [
 }
 
 .c0 .RcTextFieldInput-underline:before {
-  border-bottom-color: #939393;
+  border-bottom-color: #46BE59;
 }
 
 .c0 .RcTextFieldInput-underline:after {
@@ -4342,7 +4377,7 @@ Array [
 
 @media (hover:hover) and (pointer:fine) {
   .c0 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
-    border-bottom-color: #121212;
+    border-bottom-color: #46BE59;
   }
 }
 
@@ -4408,6 +4443,11 @@ Array [
         </span>
       </button>
     </div>
+    <p
+      className="MuiFormHelperText-root RcTextFieldFormHelperText-root Mui-focused"
+    >
+      some helper text
+    </p>
   </div>,
 ]
 `;
