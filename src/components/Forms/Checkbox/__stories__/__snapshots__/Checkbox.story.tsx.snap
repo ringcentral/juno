@@ -44,7 +44,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Checkbox Checkbox 1`] = `
 
 <span
   aria-disabled={false}
-  className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-143 MuiCheckbox-root RcCheckbox-root c0"
+  className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-144 MuiCheckbox-root RcCheckbox-root c0"
   onBlur={[Function]}
   onDragLeave={[Function]}
   onFocus={[Function]}
@@ -62,7 +62,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Checkbox Checkbox 1`] = `
     className="MuiIconButton-label"
   >
     <input
-      className="PrivateSwitchBase-input-146"
+      className="PrivateSwitchBase-input-147"
       data-indeterminate={false}
       onChange={[Function]}
       type="checkbox"
@@ -82,6 +82,9 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Checkbox Checkbox 1`] = `
       
     </span>
   </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
 </span>
 `;
 
@@ -176,7 +179,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Checkbox Checkbox Examples 1`]
   >
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-147 MuiCheckbox-root RcCheckbox-root c2"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-148 MuiCheckbox-root RcCheckbox-root c2"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -194,7 +197,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Checkbox Checkbox Examples 1`]
         className="MuiIconButton-label"
       >
         <input
-          className="PrivateSwitchBase-input-150"
+          className="PrivateSwitchBase-input-151"
           data-indeterminate={false}
           onChange={[Function]}
           type="checkbox"
@@ -214,9 +217,6 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Checkbox Checkbox Examples 1`]
           
         </span>
       </span>
-      <span
-        className="MuiTouchRipple-root"
-      />
     </span>
     <span
       className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
@@ -239,7 +239,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Checkbox Checkbox Examples 1`]
   >
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-147 MuiCheckbox-root RcCheckbox-root c2"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-148 MuiCheckbox-root RcCheckbox-root c2"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -257,7 +257,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Checkbox Checkbox Examples 1`]
         className="MuiIconButton-label"
       >
         <input
-          className="PrivateSwitchBase-input-150"
+          className="PrivateSwitchBase-input-151"
           data-indeterminate={false}
           onChange={[Function]}
           type="checkbox"
@@ -277,9 +277,6 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Checkbox Checkbox Examples 1`]
           
         </span>
       </span>
-      <span
-        className="MuiTouchRipple-root"
-      />
     </span>
     <span
       className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
@@ -366,7 +363,7 @@ Array [
   >
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-151 MuiCheckbox-root RcCheckbox-root c1"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-152 MuiCheckbox-root RcCheckbox-root c1"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -384,7 +381,7 @@ Array [
         className="MuiIconButton-label"
       >
         <input
-          className="PrivateSwitchBase-input-154"
+          className="PrivateSwitchBase-input-155"
           data-indeterminate={false}
           onChange={[Function]}
           type="checkbox"
@@ -404,6 +401,9 @@ Array [
           
         </span>
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </span>
     <span
       className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
@@ -485,7 +485,7 @@ Array [
   >
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-151 MuiCheckbox-root RcCheckbox-root c1"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-152 MuiCheckbox-root RcCheckbox-root c1"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -503,7 +503,7 @@ Array [
         className="MuiIconButton-label"
       >
         <input
-          className="PrivateSwitchBase-input-154"
+          className="PrivateSwitchBase-input-155"
           data-indeterminate={false}
           onChange={[Function]}
           type="checkbox"
@@ -523,6 +523,9 @@ Array [
           
         </span>
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </span>
     <span
       className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"

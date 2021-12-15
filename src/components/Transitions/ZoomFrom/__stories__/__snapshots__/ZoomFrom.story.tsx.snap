@@ -114,7 +114,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-337 MuiSwitch-switchBase RcSwitch-switchBase"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-338 MuiSwitch-switchBase RcSwitch-switchBase"
         onBlur={[Function]}
         onClick={[Function]}
         onDragLeave={[Function]}
@@ -134,7 +134,7 @@ Array [
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-340 MuiSwitch-input"
+            className="PrivateSwitchBase-input-341 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -320,7 +320,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-341 MuiSwitch-switchBase RcSwitch-switchBase"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-342 MuiSwitch-switchBase RcSwitch-switchBase"
         onBlur={[Function]}
         onClick={[Function]}
         onDragLeave={[Function]}
@@ -340,7 +340,7 @@ Array [
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-344 MuiSwitch-input"
+            className="PrivateSwitchBase-input-345 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />

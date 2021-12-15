@@ -1673,7 +1673,7 @@ Array [
     className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 "
   >
     <label
-      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
       data-shrink={true}
       htmlFor="PickerTextField-0"
       id="PickerTextField-0-label"

@@ -67,7 +67,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup Radio Group 1`] = `
   >
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-177 MuiRadio-root RcRadio-root c1"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-178 MuiRadio-root RcRadio-root c1"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -86,13 +86,13 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup Radio Group 1`] = `
       >
         <input
           checked={false}
-          className="PrivateSwitchBase-input-180"
+          className="PrivateSwitchBase-input-181"
           onChange={[Function]}
           type="radio"
           value="radio1"
         />
         <div
-          className="PrivateRadioButtonIcon-root-181 RadioButtonIcon-root"
+          className="PrivateRadioButtonIcon-root-182 RadioButtonIcon-root"
         >
           <svg
             aria-hidden={true}
@@ -106,7 +106,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup Radio Group 1`] = `
           </svg>
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-182"
+            className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-183"
             focusable="false"
             viewBox="0 0 24 24"
           >
@@ -128,7 +128,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup Radio Group 1`] = `
   >
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-177 MuiRadio-root RcRadio-root c1"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-178 MuiRadio-root RcRadio-root c1"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -147,13 +147,13 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup Radio Group 1`] = `
       >
         <input
           checked={false}
-          className="PrivateSwitchBase-input-180"
+          className="PrivateSwitchBase-input-181"
           onChange={[Function]}
           type="radio"
           value="radio2"
         />
         <div
-          className="PrivateRadioButtonIcon-root-181 RadioButtonIcon-root"
+          className="PrivateRadioButtonIcon-root-182 RadioButtonIcon-root"
         >
           <svg
             aria-hidden={true}
@@ -167,7 +167,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup Radio Group 1`] = `
           </svg>
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-182"
+            className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-183"
             focusable="false"
             viewBox="0 0 24 24"
           >
@@ -286,7 +286,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-184 MuiRadio-root RcRadio-root c3 PrivateSwitchBase-checked-185 Mui-checked RcRadio-checked"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-185 MuiRadio-root RcRadio-root c3 PrivateSwitchBase-checked-186 Mui-checked RcRadio-checked"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -305,7 +305,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
           >
             <input
               checked={true}
-              className="PrivateSwitchBase-input-187"
+              className="PrivateSwitchBase-input-188"
               disabled={false}
               name="mui-10000"
               onChange={[Function]}
@@ -313,7 +313,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
               value="radio1"
             />
             <div
-              className="PrivateRadioButtonIcon-root-188 RadioButtonIcon-root PrivateRadioButtonIcon-checked-190"
+              className="PrivateRadioButtonIcon-root-189 RadioButtonIcon-root PrivateRadioButtonIcon-checked-191"
             >
               <svg
                 aria-hidden={true}
@@ -327,7 +327,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
               </svg>
               <svg
                 aria-hidden={true}
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-189"
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-190"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -352,7 +352,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-184 MuiRadio-root RcRadio-root c3"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-185 MuiRadio-root RcRadio-root c3"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -371,7 +371,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
           >
             <input
               checked={false}
-              className="PrivateSwitchBase-input-187"
+              className="PrivateSwitchBase-input-188"
               disabled={false}
               name="mui-10000"
               onChange={[Function]}
@@ -379,7 +379,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
               value="radio2"
             />
             <div
-              className="PrivateRadioButtonIcon-root-188 RadioButtonIcon-root"
+              className="PrivateRadioButtonIcon-root-189 RadioButtonIcon-root"
             >
               <svg
                 aria-hidden={true}
@@ -393,7 +393,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
               </svg>
               <svg
                 aria-hidden={true}
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-189"
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-190"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -418,7 +418,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
       >
         <span
           aria-disabled={true}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-184 MuiRadio-root RcRadio-root c3 PrivateSwitchBase-disabled-186 Mui-disabled RcRadio-disabled Mui-disabled Mui-disabled"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-185 MuiRadio-root RcRadio-root c3 PrivateSwitchBase-disabled-187 Mui-disabled RcRadio-disabled Mui-disabled Mui-disabled"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -437,7 +437,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
           >
             <input
               checked={false}
-              className="PrivateSwitchBase-input-187"
+              className="PrivateSwitchBase-input-188"
               disabled={true}
               name="mui-10000"
               onChange={[Function]}
@@ -445,7 +445,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
               value="radio3"
             />
             <div
-              className="PrivateRadioButtonIcon-root-188 RadioButtonIcon-root"
+              className="PrivateRadioButtonIcon-root-189 RadioButtonIcon-root"
             >
               <svg
                 aria-hidden={true}
@@ -459,7 +459,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/RadioGroup RadioGroup Examples
               </svg>
               <svg
                 aria-hidden={true}
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-189"
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-190"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
