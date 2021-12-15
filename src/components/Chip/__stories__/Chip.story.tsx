@@ -54,7 +54,7 @@ const handleDelete = () => {};
 
 export const Chip: Story<ChipProps> = ({ children, ...args }) => {
   switchToControlKnobs();
-  return <RcChip {...args} focused />;
+  return <RcChip {...args} />;
 };
 
 Chip.args = {
@@ -108,6 +108,11 @@ export const ChipExamples: Story<ChipProps> = ({ children, ...args }) => {
           onDelete={handleDelete}
           deleteTooltip="Remove"
         />
+        <br />
+        <br />
+        <Title>Focused</Title>
+        <RcChip {...args} focused />
+        <RcChip {...args} focused color="success.f11" />
       </RcGrid>
 
       <RcGrid item xs>

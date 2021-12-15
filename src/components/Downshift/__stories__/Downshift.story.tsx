@@ -283,6 +283,7 @@ export const DownshiftExamples: Story<DownshiftProps> = () => {
       />
       <DownshiftExample disabled />
       <DownshiftExample error />
+      <DownshiftExample color="success.f11" focused />
       <DialogExampleComponent>
         <DownshiftExample />
       </DialogExampleComponent>

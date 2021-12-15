@@ -1,4 +1,4 @@
-import React, { ComponentProps, useState } from 'react';
+import React, { ComponentProps, FunctionComponent, useState } from 'react';
 
 import { Meta, Story } from '@storybook/react';
 
@@ -9,6 +9,7 @@ import {
   paletteChoice,
   sortInDocTable,
 } from '../../../../../storybook';
+import { RcBox } from '../../../../Box';
 import { RcIcon } from '../../../../Icon';
 import { RcListItem, RcListItemIcon, RcListItemText } from '../../../../List';
 import { RcTypography } from '../../../../Typography';
@@ -89,7 +90,9 @@ PlainSelect.parameters = {
   ],
 };
 
-export const PlainSelectExamples: Story<PlainSelectProps> = () => {
+const PlainSelectComponent: FunctionComponent<Partial<PlainSelectProps>> = ({
+  color,
+}) => {
   const [value, setValue] = useState<number>(1);
 
   const handleChange = (
@@ -100,9 +103,14 @@ export const PlainSelectExamples: Story<PlainSelectProps> = () => {
   };
 
   return (
-    <>
+    <div>
       <RcTypography color="neutral.f04">text</RcTypography>
-      <RcPlainSelect value={value} onChange={handleChange} variant="text">
+      <RcPlainSelect
+        color={color}
+        value={value}
+        onChange={handleChange}
+        variant="text"
+      >
         {menuList.map((item) => (
           <RcListItem value={item.id} key={item.id}>
             {item.value}
@@ -112,7 +120,12 @@ export const PlainSelectExamples: Story<PlainSelectProps> = () => {
       <br />
       <br />
       <RcTypography color="neutral.f04">plain</RcTypography>
-      <RcPlainSelect value={value} onChange={handleChange} variant="plain">
+      <RcPlainSelect
+        color={color}
+        value={value}
+        onChange={handleChange}
+        variant="plain"
+      >
         {menuList.map((item) => (
           <RcListItem value={item.id} key={item.id}>
             <RcListItemIcon color="inherit">
@@ -128,7 +141,12 @@ export const PlainSelectExamples: Story<PlainSelectProps> = () => {
       <br />
       <br />
       <RcTypography color="neutral.f04">round</RcTypography>
-      <RcPlainSelect value={value} onChange={handleChange} variant="round">
+      <RcPlainSelect
+        color={color}
+        value={value}
+        onChange={handleChange}
+        variant="round"
+      >
         {menuList.map((item) => (
           <RcListItem value={item.id} key={item.id}>
             <RcIcon symbol={item.symbol} />
@@ -138,14 +156,28 @@ export const PlainSelectExamples: Story<PlainSelectProps> = () => {
       <br />
       <br />
       <RcTypography color="neutral.f04">plainIcon</RcTypography>
-      <RcPlainSelect value={value} onChange={handleChange} variant="plainIcon">
+      <RcPlainSelect
+        color={color}
+        value={value}
+        onChange={handleChange}
+        variant="plainIcon"
+      >
         {menuList.map((item) => (
           <RcListItem value={item.id} key={item.id}>
             <RcIcon symbol={item.symbol} />
           </RcListItem>
         ))}
       </RcPlainSelect>
-    </>
+    </div>
+  );
+};
+
+export const PlainSelectExamples: Story<PlainSelectProps> = () => {
+  return (
+    <RcBox display="flex">
+      <PlainSelectComponent />
+      <PlainSelectComponent color="success.f11" />
+    </RcBox>
   );
 };
 
