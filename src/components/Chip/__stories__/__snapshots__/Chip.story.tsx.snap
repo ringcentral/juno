@@ -70,7 +70,7 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip 1`] = `
 }
 
 <div
-  className="MuiChip-root c0 RcChip-focused"
+  className="MuiChip-root c0"
   data-test-automation-class="selected-item"
   data-test-automation-value="Basic Chip"
   onKeyDown={[Function]}
@@ -436,7 +436,7 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   opacity: 0;
 }
 
-.c10 {
+.c11 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -471,13 +471,13 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   background-color: #F3F3F3;
 }
 
-.c10 > img,
-.c10 > canvas {
+.c11 > img,
+.c11 > canvas {
   width: 100%;
   height: 100%;
 }
 
-.c9 {
+.c10 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -635,6 +635,68 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   height: auto;
 }
 
+.c9 {
+  height: 28px;
+  box-sizing: border-box;
+  padding: 2px;
+  background-color: #F3F3F3;
+  color: #121212;
+  position: relative;
+  border-radius: 100vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c9.RcChip-focused,
+.c9.focus-visible,
+.c9[data-focus-visible-added] {
+  background-color: rgba(73,73,73,0.08);
+}
+
+.c9.RcChip-focused:after,
+.c9.focus-visible:after,
+.c9[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #46BE59;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c9.RcChip-focused,
+.c9:focus {
+  background-color: rgba(73,73,73,0.16);
+}
+
+.c9:active {
+  background-color: rgba(73,73,73,0.24);
+}
+
+.c9.RcChip-disabled {
+  color: #B9B9B9;
+  opacity: 1;
+}
+
+.c9 .RcChip-avatar {
+  color: #FFFFFF;
+  margin-left: 0px;
+  margin-right: -4px;
+}
+
+.c9 .RcChip-avatar span {
+  width: auto;
+  height: auto;
+}
+
 .c0 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -643,14 +705,14 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   color: #121212;
 }
 
-.c11 {
+.c12 {
   font-size: 0.9375rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
 }
 
-.c12.highlight-term {
+.c13.highlight-term {
   color: #121212 !important;
   background-color: #FFDFB1 !important;
 }
@@ -736,6 +798,12 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
 @media (hover:hover) and (pointer:fine) {
   .c7:not(.RcChip-disabled):hover {
     background-color: rgba(190,57,51,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c9:hover {
+    background-color: rgba(73,73,73,0.12);
   }
 }
 
@@ -951,6 +1019,43 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
         </span>
       </button>
     </div>
+    <br />
+    <br />
+    <h5
+      className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+      data-color="neutral.f06"
+      data-variant="headline1"
+    >
+      Focused
+    </h5>
+    <div
+      className="MuiChip-root c1 RcChip-focused"
+      data-test-automation-class="selected-item"
+      data-test-automation-value="Basic Chip"
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      tabIndex={0}
+    >
+      <span
+        className="MuiChip-label"
+      >
+        Basic Chip
+      </span>
+    </div>
+    <div
+      className="MuiChip-root c9 RcChip-focused"
+      data-test-automation-class="selected-item"
+      data-test-automation-value="Basic Chip"
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      tabIndex={0}
+    >
+      <span
+        className="MuiChip-label"
+      >
+        Basic Chip
+      </span>
+    </div>
   </div>
   <div
     className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
@@ -971,11 +1076,11 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
       tabIndex={0}
     >
       <div
-        className="c9 MuiChip-avatar RcChip-avatar"
+        className="c10 MuiChip-avatar RcChip-avatar"
         data-test-automation-class="avatar"
       >
         <div
-          className="c10 RcAvatar-avatarContainer"
+          className="c11 RcAvatar-avatarContainer"
         >
           <img
             src="test-file-stub"
@@ -1007,11 +1112,11 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
       tabIndex={0}
     >
       <div
-        className="c9 MuiChip-avatar RcChip-avatar"
+        className="c10 MuiChip-avatar RcChip-avatar"
         data-test-automation-class="avatar"
       >
         <div
-          className="c10 RcAvatar-avatarContainer"
+          className="c11 RcAvatar-avatarContainer"
         >
           <img
             src="test-file-stub"
@@ -1088,11 +1193,11 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
       title="Basic Chip"
     >
       <div
-        className="c9 MuiChip-avatar RcChip-avatar"
+        className="c10 MuiChip-avatar RcChip-avatar"
         data-test-automation-class="avatar"
       >
         <div
-          className="c10 RcAvatar-avatarContainer"
+          className="c11 RcAvatar-avatarContainer"
         >
           <img
             src="test-file-stub"
@@ -1173,11 +1278,11 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
       tabIndex={0}
     >
       <div
-        className="c9 MuiChip-avatar RcChip-avatar"
+        className="c10 MuiChip-avatar RcChip-avatar"
         data-test-automation-class="avatar"
       >
         <div
-          className="c10 RcAvatar-avatarContainer"
+          className="c11 RcAvatar-avatarContainer"
         >
           <img
             src="test-file-stub"
@@ -1188,7 +1293,7 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
         className="MuiChip-label"
       >
         <p
-          className="MuiTypography-root c11 c12 MuiTypography-noWrap"
+          className="MuiTypography-root c12 c13 MuiTypography-noWrap"
           data-color="initial"
           data-variant="body1"
           title="Basic Chip"
