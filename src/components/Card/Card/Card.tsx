@@ -16,14 +16,14 @@ import { RcCardContext } from './CardContext';
 import { CardStyle } from './styles';
 import { RcCardClasses } from './utils';
 
-type RcCardClassKey = RcClassesProps<'root' | 'selected' | 'focusVisible'>;
+type RcCardClassProp = RcClassesProps<'root' | 'selected' | 'focusVisible'>;
 
 type RcCardProps = {
   /** applies the visual style of selection, only applied when variant outline */
   selected?: boolean;
   /** sets the visible style of focus if the focus target is delegated to a child component, only applied when variant outline */
   focusVisible?: boolean;
-} & RcCardClassKey &
+} & RcCardClassProp &
   RcBaseProps<ComponentProps<typeof MuiCard>, 'classes' | 'raised'>;
 
 const _RcCard = forwardRef<any, RcCardProps>((inProps: RcCardProps, ref) => {
