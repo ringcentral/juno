@@ -14,6 +14,13 @@ export const visuallyHiddenStyles = `
 
 /**
  * read announce when need read message.
+ *
+ * @example
+ * ```ts
+ *   const announce = useAnnouncer('simpleId');
+ *
+ *   announce(`You click "Announce" button`);
+ * ```
  */
 export const useAnnouncer = (id?: string) => {
   const _id = useId(id ? `rc-announcer-${id}` : 'rc-announcer', !id);

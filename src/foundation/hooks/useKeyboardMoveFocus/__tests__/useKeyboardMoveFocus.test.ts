@@ -103,6 +103,7 @@ describe('useKeyboardMoveFocus()', () => {
 
   it.each`
     currIndex | columns | infinite | result
+    ${-1}     | ${1}    | ${true}  | ${[18, null, 0, null, 0, 18, 1, 2, 3, 12, 1, 0]}
     ${1}      | ${5}    | ${true}  | ${[11, 2, 6, 0, 0, 18, 1, 2, 3, 12, 1, 0]}
     ${18}     | ${6}    | ${false} | ${[12, null, null, null, 0, null, 1, 2, 3, 12, 1, 0]}
   `(

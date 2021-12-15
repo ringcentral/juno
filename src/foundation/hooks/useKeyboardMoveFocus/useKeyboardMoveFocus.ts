@@ -120,7 +120,10 @@ export const useKeyboardMoveFocus = <T>({
       // * mean that item is disabled, use same direction find next
       else {
         // * find toIndex is same as current, mean that already find all
-        if (toIndex === Math.max(focusedIndexRef.current, 0)) {
+        if (
+          focusedIndexRef.current !== -1 &&
+          toIndex === Math.max(focusedIndexRef.current, 0)
+        ) {
           break;
         }
 
