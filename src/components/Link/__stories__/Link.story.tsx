@@ -10,9 +10,9 @@ export default {
   component: RcLink,
   argTypes: {
     color: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     children: {

@@ -20,9 +20,9 @@ export default {
   argTypes: {
     ...sortInDocTable<keyof PopoverProps>(['open', 'anchorEl']),
     anchorOrigin: {
+      options: originChoice,
       control: {
         type: 'select',
-        options: originChoice,
       },
     },
     ...sortInDocTable<keyof PopoverProps>([
@@ -40,9 +40,9 @@ export default {
       'TransitionProps',
     ]),
     transformOrigin: {
+      options: originChoice,
       control: {
         type: 'select',
-        options: originChoice,
       },
     },
     ...sortInDocTable<keyof PopoverProps>([

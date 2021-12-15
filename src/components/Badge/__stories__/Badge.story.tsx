@@ -23,21 +23,21 @@ export default {
   component: RcBadge,
   argTypes: {
     color: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     textColor: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     borderColor: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     ...sortInDocTable<keyof BadgeProps>([

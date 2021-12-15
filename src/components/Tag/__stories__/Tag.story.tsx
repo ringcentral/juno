@@ -14,21 +14,21 @@ export default {
   component: RcTag,
   argTypes: {
     color: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     textColor: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     borderColor: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
   },

@@ -18,9 +18,9 @@ export default {
   component: RcRating,
   argTypes: {
     color: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     ...notControlInDocTable<keyof RatingProps>(['icon', 'emptyIcon']),

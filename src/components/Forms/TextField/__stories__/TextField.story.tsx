@@ -27,9 +27,9 @@ export default {
   component: RcTextField,
   argTypes: {
     color: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     ...sortInDocTable<keyof TextFieldProps>([

@@ -19,9 +19,9 @@ export default {
   component: RcCheckbox,
   argTypes: {
     color: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     ...sortInDocTable<keyof CheckboxProps>([

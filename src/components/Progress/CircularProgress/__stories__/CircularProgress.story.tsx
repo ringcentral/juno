@@ -17,9 +17,9 @@ export default {
   component: RcCircularProgress,
   argTypes: {
     color: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     ...sortInDocTable<keyof CircularProgressProps>([

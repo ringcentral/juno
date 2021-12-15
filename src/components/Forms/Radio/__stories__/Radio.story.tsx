@@ -22,9 +22,9 @@ export default {
   component: RcRadio,
   argTypes: {
     color: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     ...sortInDocTable<keyof RadioProps>([

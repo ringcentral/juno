@@ -24,9 +24,9 @@ export default {
   component: RcButton,
   argTypes: {
     color: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     ...sortInDocTable<keyof ButtonProps>([

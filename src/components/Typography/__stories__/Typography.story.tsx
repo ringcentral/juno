@@ -16,9 +16,9 @@ export default {
   component: RcTypography,
   argTypes: {
     color: {
+      options: [...MuiDefaultColor, ...textPaletteChoice],
       control: {
         type: 'select',
-        options: [...MuiDefaultColor, ...textPaletteChoice],
       },
     },
     ...notShowInDocTable<keyof TypographyProps>([

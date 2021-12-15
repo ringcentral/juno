@@ -25,9 +25,9 @@ export default {
   component: RcIcon,
   argTypes: {
     color: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
   },

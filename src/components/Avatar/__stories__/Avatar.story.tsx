@@ -29,9 +29,9 @@ export default {
   argTypes: {
     ...sortInDocTable<keyof AvatarProps>(['clickable']),
     color: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     ...notShowInDocTable<keyof AvatarProps>([

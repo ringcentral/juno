@@ -17,9 +17,9 @@ export default {
   component: RcDialogContentText,
   argTypes: {
     color: {
+      options: [...MuiDefaultColor, ...textPaletteChoice],
       control: {
         type: 'select',
-        options: [...MuiDefaultColor, ...textPaletteChoice],
       },
     },
     ...sortInDocTable<keyof DialogContentTextProps>([

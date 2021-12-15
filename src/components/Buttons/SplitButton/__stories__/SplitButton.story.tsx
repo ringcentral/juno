@@ -23,9 +23,9 @@ export default {
   component: RcSplitButton,
   argTypes: {
     color: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     ...sortInDocTable<keyof SplitButtonProps>(['size', 'variant', 'disabled']),

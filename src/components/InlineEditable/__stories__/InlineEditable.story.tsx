@@ -22,9 +22,9 @@ export default {
   component: RcInlineEditable,
   argTypes: {
     color: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     ...sortInDocTable<keyof InlineEditableProps>([

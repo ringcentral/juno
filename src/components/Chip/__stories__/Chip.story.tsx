@@ -23,9 +23,9 @@ export default {
   component: RcChip,
   argTypes: {
     color: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     ...sortInDocTable<keyof ChipProps>([

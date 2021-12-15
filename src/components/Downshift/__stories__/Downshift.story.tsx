@@ -49,9 +49,9 @@ export default {
   component: DownshiftDoc,
   argTypes: {
     color: {
+      options: paletteChoice,
       control: {
         type: 'select',
-        options: paletteChoice,
       },
     },
     ...sortInDocTable<keyof DownshiftProps>([
