@@ -26,11 +26,14 @@ import {
 } from '../utils';
 
 export const buttonColor: RcThemedStyled<RcButtonProps> = ({ color }) =>
-  RcButtonColors[color!] || getParsePaletteColor(color);
+  (typeof color === 'string' && RcButtonColors[color!]) ||
+  getParsePaletteColor(color);
 
 export const plainButtonTextColor: RcThemedStyled<RcButtonProps> = ({
   color,
-}) => RcButtonTextColors[color!] || getParsePaletteColor(color);
+}) =>
+  (typeof color === 'string' && RcButtonTextColors[color!]) ||
+  getParsePaletteColor(color);
 
 export const buttonTextColor: RcThemedStyled<RcButtonProps> = (props) =>
   paletteContrastText(buttonColor(props));

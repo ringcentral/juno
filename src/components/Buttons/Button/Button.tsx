@@ -14,7 +14,7 @@ import {
   isRcElement,
   RcBaseColor,
   RcBaseProps,
-  RcPaletteKeys,
+  RcPaletteProp,
   RcTheme,
   removeClassName,
   styled,
@@ -47,7 +47,7 @@ type RcButtonProps = {
   /** variant of button, default is `contained` */
   variant?: RcButtonVariant;
   /** color of button */
-  color?: RcPaletteKeys | RcButtonColor;
+  color?: RcPaletteProp | RcButtonColor;
   /** is button loading, when `loading` that `disabled` will auto become `true` */
   loading?: boolean;
   /**
