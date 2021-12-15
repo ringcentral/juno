@@ -78,7 +78,7 @@ const getHourAndMinute = (times?: number) => {
   const hour = (times - minute) / ONE_HOUR;
   return {
     hour,
-    minute: minute / ONE_MINUTE,
+    minute: Math.floor(minute / ONE_MINUTE),
   };
 };
 
