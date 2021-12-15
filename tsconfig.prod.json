@@ -11,7 +11,8 @@
     "removeComments": false,
     "baseUrl": ".",
     "paths": {
-      "@emotion/core": ["./src/typings/skip.d.ts"]
+      "@emotion/core": ["./src/typings/skip.d.ts"],
+      "react-router": ["./src/typings/skip.d.ts"]
     }
   },
   "exclude": [
