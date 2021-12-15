@@ -1,7 +1,7 @@
 {
   "recommendations": [
     "eamodio.gitlens",
-    "jpoissonnier.vscode-styled-components",
+    "styled-components.vscode-styled-components",
     "streetsidesoftware.code-spell-checker",
     "editorconfig.editorconfig",
     "naumovs.color-highlight",
