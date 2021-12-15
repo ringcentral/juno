@@ -27,10 +27,14 @@ export const plainSelectStyle: RcThemedStyled<RcPlainSelectProps, any> = ({
 
   const isRound = roundVariant.includes(variant as any);
 
-  // TODO: cancel button bellow icon margin issue,
-  // TODO: wait RCUI-234 merge below overwrite can be remove
   return css`
-    ${RcButton} {
+    width: auto;
+
+    ${
+      RcButton /**
+      // TODO: cancel button bellow icon margin issue,
+  */
+    } {
       ${RcIcon} {
         margin-right: 0;
       }
