@@ -10,7 +10,10 @@ import MuiChip from '@material-ui/core/Chip';
 import {
   combineClasses,
   isRcElement,
+  omit,
   RcBaseProps,
+  RcClassesProps,
+  RcPaletteProp,
   styled,
   useThemeProps,
 } from '../../foundation';
@@ -20,10 +23,19 @@ import { RcIconButton, RcIconButtonProps } from '../Buttons/IconButton';
 import { WithTooltipProps } from '../Tooltip';
 import { ChipStyle } from './styles';
 import { RcChipClasses } from './utils';
+import clsx from 'clsx';
+
+type RcChipClassProp = RcClassesProps<'focused'>;
 
 type RcChipProps = {
+  /** color palette set, effect that active color when focus */
+  color?: RcPaletteProp;
   /** is that error chip */
   error?: boolean;
+  /**
+   * If `true`, the component will be displayed in focused state.
+   */
+  focused?: boolean;
   /** props apply on `deleteIcon` */
   deleteIconProps?: RcIconButtonProps & WithTooltipProps;
   /** @deprecated should use `avatar` */
@@ -37,7 +49,8 @@ type RcChipProps = {
 } & RcBaseProps<
   ComponentProps<typeof MuiChip>,
   'color' | 'size' | 'variant' | 'icon'
->;
+> &
+  RcChipClassProp;
 
 const _RcChip = forwardRef<any, RcChipProps>((inProps: RcChipProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcChip' });
@@ -55,11 +68,19 @@ const _RcChip = forwardRef<any, RcChipProps>((inProps: RcChipProps, ref) => {
     deleteIcon: deleteIconProp,
     deleteIconProps,
     tabIndex,
+    focused,
+    color,
+    className,
     ...rest
   } = props;
-  const classes = useMemo(
+  const combinedClasses = useMemo(
     () => combineClasses(RcChipClasses, classesProp),
     [classesProp],
+  );
+
+  const classes = useMemo(
+    () => omit(combinedClasses, ['focused']),
+    [combinedClasses],
   );
 
   const deleteIcon = useMemo(() => {
@@ -117,6 +138,7 @@ const _RcChip = forwardRef<any, RcChipProps>((inProps: RcChipProps, ref) => {
       label={label}
       disabled={disabled}
       classes={classes}
+      className={clsx(className, focused ? combinedClasses.focused : undefined)}
       avatar={avatar}
       deleteIcon={deleteIcon}
       data-test-automation-class="selected-item"

@@ -5,6 +5,7 @@ import {
   FakeBorderOption,
   focusVisible,
   focusVisibleColor,
+  getParsePaletteColor,
   nonTouchHoverMedia,
   palette2,
   radius,
@@ -25,7 +26,9 @@ function fakePseudoRoundBorder(addOptions?: FakeBorderOption) {
 }
 
 export const ChipStyle: RcThemedStyled<RcChipProps, any> = (props) => {
-  const { isError, error = isError } = props;
+  const { isError, error = isError, color: colorProp } = props;
+
+  const color = getParsePaletteColor(colorProp, focusVisibleColor);
 
   return css`
     height: 28px;
@@ -40,8 +43,8 @@ export const ChipStyle: RcThemedStyled<RcChipProps, any> = (props) => {
     ${typography('body1')};
     ${fakePseudoRoundBorder()};
 
-    ${focusVisible} {
-      ${fakePseudoRoundBorder({ color: focusVisibleColor })};
+    &.${RcChipClasses.focused}, ${focusVisible} {
+      ${fakePseudoRoundBorder({ color })};
 
       background-color: ${setOpacity(
         error ? errorBgColor : defaultBgColor,
@@ -55,7 +58,7 @@ export const ChipStyle: RcThemedStyled<RcChipProps, any> = (props) => {
       }
     }
 
-    &:focus {
+    &.${RcChipClasses.focused}, &:focus {
       background-color: ${setOpacity(defaultBgColor, '16')};
     }
 

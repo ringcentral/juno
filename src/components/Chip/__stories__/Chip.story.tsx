@@ -7,6 +7,7 @@ import { Meta, Story } from '@storybook/react';
 import {
   notControlInDocTable,
   notShowInDocTable,
+  paletteChoice,
   sortInDocTable,
   switchToControlKnobs,
 } from '../../../storybook';
@@ -21,6 +22,12 @@ export default {
   title: '🚀 Cleanup Components/Chip',
   component: RcChip,
   argTypes: {
+    color: {
+      control: {
+        type: 'select',
+        options: paletteChoice,
+      },
+    },
     ...sortInDocTable<keyof ChipProps>([
       'label',
       'clickable',
@@ -47,7 +54,7 @@ const handleDelete = () => {};
 
 export const Chip: Story<ChipProps> = ({ children, ...args }) => {
   switchToControlKnobs();
-  return <RcChip {...args} />;
+  return <RcChip {...args} focused />;
 };
 
 Chip.args = {
