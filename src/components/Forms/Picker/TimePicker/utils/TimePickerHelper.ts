@@ -28,6 +28,12 @@ type GetFormattedTimeOption = {
   period: TIME_SYSTEM_TEXT;
 };
 
+/**
+ * get formatted time hh:mm
+ * @param option `{hour, min, period}`
+ * @param isTwelveHourSystem boolean
+ * @returns `hh:mm AM` or `hh:mm PM` or `hh:mm`
+ */
 const getFormattedTime = (
   { hour, minute, period }: GetFormattedTimeOption,
   isTwelveHourSystem?: boolean,
@@ -62,10 +68,16 @@ const twentyFourHourSystemSource = buildConsecutiveNumberToArray(0, 23);
 const minuteSource = [0, 15, 30, 45];
 const lastMinute = 45;
 
+/**
+ * hour and minute timestamp
+ */
 const getTimestampFromDate = (date: Date) => {
   return date.getHours() * ONE_HOUR + date.getMinutes() * ONE_MINUTE;
 };
 
+/**
+ * hour and minute number
+ */
 const getHourAndMinute = (times?: number) => {
   if (!times) {
     return {
@@ -82,6 +94,9 @@ const getHourAndMinute = (times?: number) => {
   };
 };
 
+/**
+ * timestamp to date
+ */
 const timestampToDate = (times?: number) => {
   const { hour, minute } = getHourAndMinute(times);
 
@@ -91,10 +106,16 @@ const timestampToDate = (times?: number) => {
   return date;
 };
 
+/**
+ * get timestamp from date or timestamp
+ */
 function getTimestamp(nowTime: number | Date) {
   return nowTime instanceof Date ? getTimestampFromDate(nowTime) : nowTime;
 }
 
+/**
+ * hour and min object to timestamp
+ */
 const getTimestampFromHourAndMin = (option: {
   hour: number;
   minute: number;
@@ -102,6 +123,9 @@ const getTimestampFromHourAndMin = (option: {
   return option.hour * ONE_HOUR + option.minute * ONE_MINUTE;
 };
 
+/**
+ * get period, `PM` or `AM`
+ */
 function getPeriod(currHour: number) {
   return currHour >= HALF_DAY_HOURS ? TIME_SYSTEM_TEXT.PM : TIME_SYSTEM_TEXT.AM;
 }
