@@ -2,6 +2,7 @@ import React, { useCallback, useRef, useState } from 'react';
 
 import { Meta, Story } from '@storybook/react';
 
+import { useAnnouncer } from '../../../foundation';
 import { ArrowDown2 } from '../../../icon';
 import { RcBox } from '../../Box';
 import { RcIconButton } from '../../Buttons/IconButton';
@@ -33,6 +34,8 @@ export const useSuggestionListExample: Story<any> = () => {
   >(undefined);
 
   const [value, setValue] = useState('');
+
+  const announce = useAnnouncer();
 
   const {
     optionItems,
@@ -72,6 +75,13 @@ export const useSuggestionListExample: Story<any> = () => {
     },
     onGroupExpanded: (group, groupStateMap) => {
       console.log(group, groupStateMap);
+
+      announce(
+        `${group.group} Group being ${
+          group.expanded ? 'expanded' : 'collapsed'
+        }`,
+      );
+
       setGroupExpanded(groupStateMap);
     },
     groupBy,
