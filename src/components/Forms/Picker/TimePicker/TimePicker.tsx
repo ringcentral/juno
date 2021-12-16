@@ -166,7 +166,7 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps>((inProps, ref) => {
     'none' | 'hour' | 'minute'
   >('none');
 
-  const nowTime = value! || times!;
+  const nowTime = value! ?? times!;
 
   const isHaveValue = nowTime !== undefined;
 
