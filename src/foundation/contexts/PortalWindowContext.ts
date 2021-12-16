@@ -6,7 +6,9 @@ type RcPortalWindowContextValue = {
 };
 
 const RcPortalWindowContext = createContext<RcPortalWindowContextValue>({
-  document,
+  document:
+    // directly access `document` will cause error in next.js
+    typeof globalThis !== 'undefined' ? globalThis.document : window.document,
 });
 
 const useRcPortalWindowContext = () => useContext(RcPortalWindowContext);

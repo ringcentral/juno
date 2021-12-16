@@ -21,12 +21,15 @@ class RcConfig {
   };
 
   constructor() {
-    // * get value once when init
-    this._WARNING_IGNORE =
-      window?.localStorage?.getItem(JUNO_WARNING_IGNORE_KEY) === 'true';
+    if (typeof window !== 'undefined') {
+      // SSR support
+      // * get value once when init
+      this._WARNING_IGNORE =
+        window?.localStorage?.getItem(JUNO_WARNING_IGNORE_KEY) === 'true';
 
-    // * also provide user to set variable from window
-    (window as any).__JUNO__ = this;
+      // * also provide user to set variable from window
+      (window as any).__JUNO__ = this;
+    }
   }
 
   set WARNING_IGNORE(value: boolean) {
