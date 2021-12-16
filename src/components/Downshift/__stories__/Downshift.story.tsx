@@ -37,6 +37,7 @@ import { RcTypography } from '../../Typography';
 import { RcDownshift, RcDownshiftProps, RcDownshiftRef } from '../Downshift';
 import {
   DEFAULT_KEY_TO_CHIPS,
+  RcAutocompleteDefaultFilterOptions,
   RcDownshiftDefaultFilterOptions,
   RcDownshiftFilterOptions,
   RcDownshiftSelectedItem,
@@ -876,6 +877,7 @@ export const DownshiftAutocomplete: Story<DownshiftProps> = ({ ...args }) => {
       SuggestionListProps={{
         padding: true,
       }}
+      filterOptions={RcAutocompleteDefaultFilterOptions}
     />
   );
 };

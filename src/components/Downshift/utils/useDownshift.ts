@@ -148,6 +148,7 @@ export const useDownshift = ({
   const multiple = isAutocomplete ? false : multipleProp;
 
   const isSelectedFromAutocompleteRef = useRef(false);
+  const isInputValueChangedRef = useRef(false);
   const [isFocused, setIsFocused] = useControlled({
     controlled: focusedProp,
     default: false,
@@ -222,6 +223,7 @@ export const useDownshift = ({
       if (filterOptions) {
         return filterOptions(items, {
           inputValue,
+          inputChanged: isInputValueChangedRef.current,
           getOptionLabel,
           selectedItems,
         });
@@ -350,6 +352,7 @@ export const useDownshift = ({
 
   const closeMenu = (e?: ChangeEvent<{}>, reason?: RcDownshiftCloseReason) => {
     keepHighlightedIndexRef.current = false;
+    isInputValueChangedRef.current = false;
     // * set to default highlighted
     setHighlightedIndex(DEFAULT_HIGHLIGHTED_INDEX, { reason: 'auto' });
 
@@ -549,6 +552,7 @@ export const useDownshift = ({
       updateInputValue('');
     }
     isSelectedFromAutocompleteRef.current = false;
+    isInputValueChangedRef.current = false;
 
     setActiveIndex(-1);
 
@@ -826,6 +830,7 @@ export const useDownshift = ({
           }
 
           fromPasteString.current = '';
+          isInputValueChangedRef.current = true;
         },
         onFocus: (e) => {
           setIsFocused(true);
@@ -1136,6 +1141,7 @@ export const useDownshift = ({
     optionsGroupList,
     isFocused,
     id: downshiftId,
+    inputChanged: isInputValueChangedRef.current,
   };
 
   changeHighlightedIndexReason.current = undefined;

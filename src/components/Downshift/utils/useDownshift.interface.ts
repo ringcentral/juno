@@ -15,8 +15,13 @@ export type RcDownshiftGetSelectedItemProps<T> = {
 export type RcDownshiftFilterOptions<T> = (
   options: T[],
   state: {
+    /** current input value */
     inputValue?: string;
+    /** is that input value have been changed or not */
+    inputChanged: boolean;
+    /** get option label */
     getOptionLabel: (option: T) => string;
+    /** current be selected item array  */
     selectedItems: T[];
   },
 ) => T[];
