@@ -1135,6 +1135,7 @@ export const useDownshift = ({
     forceUpdate,
     optionsGroupList,
     isFocused,
+    id: downshiftId,
   };
 
   changeHighlightedIndexReason.current = undefined;

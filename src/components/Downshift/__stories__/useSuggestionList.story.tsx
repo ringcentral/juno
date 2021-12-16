@@ -55,7 +55,9 @@ export const useSuggestionListExample: Story<any> = () => {
     groupExpanded,
     groupDefaultExpanded: true,
     onSelect: (e, option) => {
-      console.log(option);
+      const { id } = getItemProps({ item: option, index: highlightedIndex });
+
+      console.log(option, id, id && document.getElementById(id));
       // eslint-disable-next-line no-alert
       alert(option.label);
     },

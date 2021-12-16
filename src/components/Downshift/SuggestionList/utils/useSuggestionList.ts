@@ -359,6 +359,8 @@ export const useSuggestionList = <
     reset,
     forceUpdate,
     optionsGroupList,
+    /** current suggestion list id */
+    id: suggestionListId,
   };
 
   changeHighlightedIndexReason.current = undefined;
