@@ -21,6 +21,7 @@ import { isTestEnv } from '../../../../../storybook/isTestEnv';
 import { RcButton } from '../../../../Buttons';
 import { RcGrid } from '../../../../Grid';
 import { RcTypography } from '../../../../Typography';
+import { RcTimePicker } from '../../TimePicker';
 import { RcDatePicker } from '../DatePicker';
 
 export default {
@@ -58,26 +59,13 @@ export const DatePicker: Story<DatePickerProps> = ({ value, ...args }) => {
   switchToControlKnobs();
   const ref = useRef(null);
 
-  const [selectedDate, handleDateChange] = useState<Date | null | undefined>(
-    value,
-  );
-
-  const handleChange = (date: Date | null) => {
-    handleDateChange(date);
-  };
+  const [date, setDate] = useState<Date | null | undefined>(value);
 
   useEffect(() => {
     console.log(ref);
   }, []);
 
-  return (
-    <RcDatePicker
-      ref={ref}
-      value={selectedDate}
-      onChange={handleChange}
-      {...args}
-    />
-  );
+  return <RcDatePicker ref={ref} value={date} onChange={setDate} {...args} />;
 };
 
 DatePicker.storyName = 'DatePicker';
@@ -118,13 +106,7 @@ export const DatePickerWithRange: Story<DatePickerProps> = ({
 }) => {
   switchToControlKnobs();
 
-  const [selectedDate, setSelectedDate] = useState<Date | null | undefined>(
-    value,
-  );
-
-  const handleChange = (date: Date | null) => {
-    setSelectedDate(date);
-  };
+  const [date, setDate] = useState<Date | null | undefined>(value);
 
   return (
     <RcGrid container spacing={4}>
@@ -153,14 +135,14 @@ export const DatePickerWithRange: Story<DatePickerProps> = ({
         <RcDatePicker
           min={new Date('2019-11-16')}
           max={new Date('2020-11-20')}
-          value={selectedDate}
-          onChange={handleChange}
+          value={date}
+          onChange={setDate}
           {...args}
         />
         <br /> <br />
         <RcButton
           onClick={() => {
-            setSelectedDate(new Date('2019-11-14'));
+            setDate(new Date('2019-11-14'));
           }}
         >
           set past date of min(will auto reset to valid min range)
@@ -168,7 +150,7 @@ export const DatePickerWithRange: Story<DatePickerProps> = ({
         <br /> <br />
         <RcButton
           onClick={() => {
-            setSelectedDate(new Date('2020-11-25'));
+            setDate(new Date('2020-11-25'));
           }}
         >
           set future date of max(will auto reset to valid max range)
@@ -198,13 +180,7 @@ moment.locale('zh-cn', {
 });
 
 export const DatePickerExamples: Story<DatePickerProps> = () => {
-  const [selectedDate, handleDateChange] = useState<Date | null>(
-    new Date('2019-11-15'),
-  );
-
-  const handleChange = (date: Date | null) => {
-    handleDateChange(date);
-  };
+  const [date, setDate] = useState<Date | null>(new Date('2019-11-15'));
 
   const screenReaderProps = useMemo(
     () => ({
@@ -249,8 +225,8 @@ export const DatePickerExamples: Story<DatePickerProps> = () => {
               'press Enter to save the time or use Tab to make further changes or Escape to cancel',
           },
         }}
-        value={selectedDate}
-        onChange={handleChange}
+        value={date}
+        onChange={setDate}
         onClick={(e) => console.log('click', e)}
         onClear={(e: any) => console.log('clear', e)}
         onClose={() => console.log('close')}
@@ -260,8 +236,8 @@ export const DatePickerExamples: Story<DatePickerProps> = () => {
       />
       <RcDatePicker
         screenReaderProps={screenReaderProps}
-        value={selectedDate}
-        onChange={handleChange}
+        value={date}
+        onChange={setDate}
         placeholder="when?"
         locale="en"
         fullWidth
@@ -278,9 +254,9 @@ export const DatePickerExamples: Story<DatePickerProps> = () => {
         inputProps={{
           'aria-describedby': 'text-field-today',
         }}
-        value={selectedDate}
+        value={date}
         placeholder="when?"
-        onChange={handleChange}
+        onChange={setDate}
         onClick={(e) => console.log('click', e)}
         onClear={(e: any) => console.log('clear', e)}
         onClose={() => console.log('close')}
@@ -295,3 +271,28 @@ export const DatePickerExamples: Story<DatePickerProps> = () => {
 };
 
 DatePickerExamples.storyName = 'DatePicker Examples';
+
+export const DatePickerWithTimePick: Story<DatePickerProps> = ({
+  value,
+  ...args
+}) => {
+  switchToControlKnobs();
+  const ref = useRef(null);
+
+  const [date, setDate] = useState<Date | null>(value || null);
+  const [time, setTime] = useState<Date | null>(null);
+
+  useEffect(() => {
+    console.log(ref);
+  }, []);
+
+  return (
+    <>
+      <RcDatePicker ref={ref} value={date} onChange={setDate} {...args} />
+      <br />
+      <RcTimePicker dateMode value={time} onChange={(v) => setTime(v)} />
+    </>
+  );
+};
+
+DatePicker.storyName = 'DatePicker with TimePick';

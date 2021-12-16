@@ -45,7 +45,9 @@ export const TimePicker: Story<TimePickerProps> = ({
 }) => {
   switchToControlKnobs();
 
-  const [value, setValue] = useState<number | Date | undefined>(valueProp);
+  const [value, setValue] = useState<number | Date | undefined | null>(
+    valueProp,
+  );
 
   const handleChange = (time: number) => {
     console.log('time', time);
@@ -153,6 +155,24 @@ export const TimePickerExamples: Story<TimePickerProps> = () => {
         }}
         {...accessibilityProps}
       />
+      <br />
+      <RcTimePicker
+        value={times1}
+        onChange={handleChange1}
+        isTwelveHourSystem
+        inputProps={{
+          announcementText: 'press enter or space to change the time',
+        }}
+        gutterBottom
+        placeholder="what's time?"
+        PopoverProps={{
+          PaperProps: {
+            'aria-label':
+              'press Enter to save the time or use Tab to make further changes or Escape to cancel',
+          },
+        }}
+        {...accessibilityProps}
+      />
       <RcTypography color="interactive.f01">Date Mode</RcTypography>
       <br />
       <RcTimePicker
@@ -178,10 +198,6 @@ export const TimePickerExamples: Story<TimePickerProps> = () => {
         {...accessibilityProps}
         isTwelveHourSystem
       />
-      <RcTypography color="danger.f02">
-        if that is date format, we couldn't reset to undefined, that will miss
-        that date information.
-      </RcTypography>
       <br />
       <br />
       <RcTypography variant="headline1" color="neutral.f06">
