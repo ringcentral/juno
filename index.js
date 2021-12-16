@@ -8688,6 +8688,7 @@ __export(src_exports2, {
   RcAccordionSummary: () => RcAccordionSummary,
   RcAlert: () => RcAlert,
   RcAppBar: () => RcAppBar,
+  RcAutocompleteDefaultFilterOptions: () => RcAutocompleteDefaultFilterOptions,
   RcAvatar: () => ExportType,
   RcBackdrop: () => RcBackdrop,
   RcBadge: () => RcBadge,
@@ -46962,6 +46963,7 @@ __export(src_exports, {
   RcAccordionSummary: () => RcAccordionSummary,
   RcAlert: () => RcAlert,
   RcAppBar: () => RcAppBar,
+  RcAutocompleteDefaultFilterOptions: () => RcAutocompleteDefaultFilterOptions,
   RcAvatar: () => ExportType,
   RcBackdrop: () => RcBackdrop,
   RcBadge: () => RcBadge,
@@ -47320,6 +47322,7 @@ __export(components_exports, {
   RcAccordionSummary: () => RcAccordionSummary,
   RcAlert: () => RcAlert,
   RcAppBar: () => RcAppBar,
+  RcAutocompleteDefaultFilterOptions: () => RcAutocompleteDefaultFilterOptions,
   RcAvatar: () => ExportType,
   RcBackdrop: () => RcBackdrop,
   RcBadge: () => RcBadge,
@@ -69555,7 +69558,7 @@ var isItemCanSelected = (item) => {
 };
 var DEFAULT_KEY_TO_CHIPS = [";", ",", "\\n"];
 var DEFAULT_LIMIT_CHIPS = 20;
-var DEFAULT_GET_OPTION_LABEL = (item) => item.label || "";
+var DEFAULT_GET_OPTION_LABEL = (item) => item?.label || "";
 var RcDownshiftDefaultRenderNoOptions = (getNoOptionsProps) => {
   return /* @__PURE__ */ React641.createElement(RcMenuItem, {
     component: "div",
@@ -69564,6 +69567,12 @@ var RcDownshiftDefaultRenderNoOptions = (getNoOptionsProps) => {
 };
 var RcDownshiftDefaultFilterOptions = (options, { inputValue, getOptionLabel, selectedItems }) => {
   return options.filter((item) => selectedItems.indexOf(item) < 0 && getOptionLabel?.(item).toLowerCase().startsWith(inputValue?.toLowerCase() || ""));
+};
+var RcAutocompleteDefaultFilterOptions = (options, { inputValue, getOptionLabel, inputChanged }) => {
+  if (!inputChanged) {
+    return options;
+  }
+  return options.filter((item) => getOptionLabel?.(item).toLowerCase().startsWith(inputValue?.toLowerCase() || ""));
 };
 
 // src/components/Downshift/utils/useDownshift.ts
@@ -69790,6 +69799,7 @@ var useDownshift = ({
   const isAutocomplete = variant === "autocomplete";
   const multiple = isAutocomplete ? false : multipleProp;
   const isSelectedFromAutocompleteRef = useRef71(false);
+  const isInputValueChangedRef = useRef71(false);
   const [isFocused, setIsFocused] = useControlled({
     controlled: focusedProp,
     default: false,
@@ -69846,6 +69856,7 @@ var useDownshift = ({
       if (filterOptions) {
         return filterOptions(items, {
           inputValue,
+          inputChanged: isInputValueChangedRef.current,
           getOptionLabel,
           selectedItems
         });
@@ -69936,6 +69947,7 @@ var useDownshift = ({
   });
   const closeMenu = (e2, reason) => {
     keepHighlightedIndexRef.current = false;
+    isInputValueChangedRef.current = false;
     setHighlightedIndex(DEFAULT_HIGHLIGHTED_INDEX, { reason: "auto" });
     if (isOpen) {
       if (e2 && reason) {
@@ -70064,6 +70076,7 @@ var useDownshift = ({
       updateInputValue("");
     }
     isSelectedFromAutocompleteRef.current = false;
+    isInputValueChangedRef.current = false;
     setActiveIndex(-1);
     if (!disableCloseOnSelect) {
       closeMenu(e2, "select-option");
@@ -70247,6 +70260,7 @@ var useDownshift = ({
           handleSelectedItems([]);
         }
         fromPasteString.current = "";
+        isInputValueChangedRef.current = true;
       },
       onFocus: (e2) => {
         setIsFocused(true);
@@ -70476,7 +70490,9 @@ var useDownshift = ({
     reset: reset2,
     forceUpdate,
     optionsGroupList,
-    isFocused
+    isFocused,
+    id: downshiftId,
+    inputChanged: isInputValueChangedRef.current
   };
   changeHighlightedIndexReason.current = void 0;
   return resultObj;
@@ -73812,7 +73828,8 @@ var useSuggestionList = ({
     changeHighlightedIndexReason: changeHighlightedIndexReason.current,
     reset: reset2,
     forceUpdate,
-    optionsGroupList
+    optionsGroupList,
+    id: suggestionListId
   };
   changeHighlightedIndexReason.current = void 0;
   return resultObj;
@@ -73892,8 +73909,14 @@ var SuggestionList = forwardRef569((inProps, ref2) => {
   });
   const { sleep } = useSleep();
   const { retry: scrollToIndexWithRetry } = useRetry(async (location) => {
+    if (location.index === 0 && padding !== void 0) {
+      location = {
+        ...location,
+        offset: -(typeof padding === "number" ? padding : menuListBoundaryPadding)
+      };
+    }
     vlRef.current?.scrollToIndex(location);
-    const toIndex = typeof location === "number" ? location : location.index;
+    const toIndex = location.index;
     await sleep(0);
     const toElm = listRef.current?.querySelector(`[data-item-index="${toIndex}"]`);
     if (toElm) {
@@ -73996,10 +74019,11 @@ var SuggestionList = forwardRef569((inProps, ref2) => {
     }));
   };
   const PaddingComponent = useMemo62(() => {
-    return padding !== void 0 ? typeof padding === "number" ? () => /* @__PURE__ */ React650.createElement(StyledMenuListPadding, {
-      height: padding
-    }) : StyledMenuListPadding : void 0;
-  }, [padding]);
+    const paddingValue = padding !== void 0 && itemCount > 0 ? typeof padding === "number" ? padding : menuListBoundaryPadding : 0;
+    return () => /* @__PURE__ */ React650.createElement(StyledMenuListPadding, {
+      height: paddingValue
+    });
+  }, [itemCount, padding]);
   const components = useMemo62(() => {
     return {
       List: List4,
@@ -83125,6 +83149,7 @@ export {
   RcAccordionSummary,
   RcAlert,
   RcAppBar,
+  RcAutocompleteDefaultFilterOptions,
   ExportType as RcAvatar,
   RcBackdrop,
   RcBadge,
