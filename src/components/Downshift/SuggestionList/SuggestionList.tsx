@@ -27,7 +27,10 @@ import ArrowDown2 from '../../../icon/ArrowDown2';
 import { RcBox } from '../../Box';
 import { RcIconButton } from '../../Buttons/IconButton';
 import { RcMenuItem } from '../../Menu/MenuItem';
-import { StyledMenuListPadding } from '../../VirtualizedMenu/styles';
+import {
+  menuListBoundaryPadding,
+  StyledMenuListPadding,
+} from '../../VirtualizedMenu/styles';
 import {
   Components,
   IndexLocationWithAlign,
@@ -169,11 +172,19 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
     const { sleep } = useSleep();
 
     const { retry: scrollToIndexWithRetry } = useRetry(
-      async (location: number | IndexLocationWithAlign) => {
+      async (location: IndexLocationWithAlign) => {
+        if (location.index === 0 && padding !== undefined) {
+          location = {
+            ...location,
+            offset: -(typeof padding === 'number'
+              ? padding
+              : menuListBoundaryPadding),
+          };
+        }
+
         vlRef.current?.scrollToIndex(location);
 
-        const toIndex =
-          typeof location === 'number' ? location : location.index;
+        const toIndex = location.index;
 
         await sleep(0);
         // confirm that scrollInto view
@@ -326,12 +337,15 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
     };
 
     const PaddingComponent = useMemo(() => {
-      return padding !== undefined
-        ? typeof padding === 'number'
-          ? () => <StyledMenuListPadding height={padding} />
-          : StyledMenuListPadding
-        : undefined;
-    }, [padding]);
+      const paddingValue =
+        padding !== undefined && itemCount > 0
+          ? typeof padding === 'number'
+            ? padding
+            : menuListBoundaryPadding
+          : 0;
+
+      return () => <StyledMenuListPadding height={paddingValue} />;
+    }, [itemCount, padding]);
 
     const components = useMemo<Components>(() => {
       return {
