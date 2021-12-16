@@ -18,7 +18,7 @@ export type RcDownshiftFilterOptions<T> = (
     /** current input value */
     inputValue?: string;
     /** is that input value have been changed or not */
-    inputChanged: boolean;
+    inputChanged?: boolean;
     /** get option label */
     getOptionLabel: (option: T) => string;
     /** current be selected item array  */
