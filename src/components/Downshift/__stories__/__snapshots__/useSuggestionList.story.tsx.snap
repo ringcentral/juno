@@ -426,7 +426,11 @@ Array [
       </button>
     </div>
   </div>,
-  .c0 .RcSuggestionList-toggle {
+  .c1 {
+  height: 0px;
+}
+
+.c0 .RcSuggestionList-toggle {
   margin-right: -12px;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -483,6 +487,12 @@ Array [
           }
         }
       >
+        <div>
+          <div
+            className="c1"
+            height={0}
+          />
+        </div>
         <div
           data-suggestion-list={true}
           style={
@@ -494,6 +504,12 @@ Array [
             }
           }
         />
+        <div>
+          <div
+            className="c1"
+            height={0}
+          />
+        </div>
       </div>
     </div>
   </div>,
