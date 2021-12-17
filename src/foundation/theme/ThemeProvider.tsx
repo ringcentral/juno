@@ -2,7 +2,11 @@ import 'focus-visible';
 
 import React, { FunctionComponent, ReactNode } from 'react';
 
-import { MuiThemeProvider, StylesProvider } from '@material-ui/core/styles';
+import {
+  MuiThemeProvider,
+  StylesProvider,
+  createGenerateClassName,
+} from '@material-ui/core/styles';
 
 import {
   ThemeProvider as StyledThemeProvider,
@@ -10,11 +14,14 @@ import {
 } from '../styled-components';
 import createTheme from './createTheme';
 import { RcThemeInput } from './theme.type';
+import { useResultRef } from '../hooks';
 
 export type RcThemeProviderProps = {
   /** custom theme */
   theme?: RcThemeInput;
   children?: ReactNode;
+  /** prefix the mui global class */
+  prefixGlobalClass?: string;
 };
 
 /**
@@ -49,9 +56,23 @@ export const RcSubThemeProvider: FunctionComponent<RcThemeProviderProps> = ({
 export const RcThemeProvider: FunctionComponent<RcThemeProviderProps> = (
   props,
 ) => {
+  const { prefixGlobalClass, ...rest } = props;
+
+  // cannot pass `generateClassName: undefine`
+  // otherwise global class will be random
+  const stylesProviderProps = useResultRef(() => {
+    return prefixGlobalClass
+      ? {
+          generateClassName: createGenerateClassName({
+            seed: prefixGlobalClass,
+          }),
+        }
+      : {};
+  });
+
   return (
-    <StylesProvider injectFirst>
-      <RcSubThemeProvider {...props} />
+    <StylesProvider injectFirst {...stylesProviderProps.current}>
+      <RcSubThemeProvider {...rest} />
     </StylesProvider>
   );
 };
