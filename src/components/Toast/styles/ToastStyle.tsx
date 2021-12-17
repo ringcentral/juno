@@ -16,7 +16,7 @@ export const ToastStyle: RcThemedStyled<RcToastProps, any> = () => {
   `;
 };
 
-export const ToastContainerStyle: RcThemedStyled<RcToastProps, any> = () => {
+export const ToastContainerStyle: RcThemedStyled<{}, any> = () => {
   return css`
     #${RC_TOAST_CONTAINER_ID} {
       padding-left: ${spacing(4)};
