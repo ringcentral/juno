@@ -46,6 +46,7 @@ export * from './Tabs';
 export * from './Tag';
 export * from './Text';
 export * from './Thumbnail';
+export * from './Toast';
 export * from './Toolbar';
 export * from './Tooltip';
 export * from './Transitions';

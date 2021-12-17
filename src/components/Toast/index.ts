@@ -1,3 +1,4 @@
+export { ToastContainerStyle } from './styles';
 export * from './Toast';
 export * from './ToastContainer';
-export { ToastContainerStyle } from './styles';
+export { RC_TOAST_CONTAINER_ID } from './utils';
