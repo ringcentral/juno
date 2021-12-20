@@ -1,1 +1,0 @@
-export const RC_TOAST_CONTAINER_ID = 'RC_TOAST_CONTAINER';

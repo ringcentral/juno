@@ -5,6 +5,5 @@
   "modal": 1300,
   "snackbar": 1400,
   "speedDial": 1050,
-  "tooltip": 1500,
-  "toast": 3000
+  "tooltip": 1500
 }
