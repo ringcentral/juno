@@ -498,8 +498,7 @@ exports[`Storyshots 🔧 Foundation/Hooks/useTheme Theme Value 1`] = `
     "drawer": 1200,
     "modal": 1300,
     "snackbar": 1400,
-    "tooltip": 1500,
-    "toast": 3000
+    "tooltip": 1500
   },
   "opacity": {
     "12": 0.12,
@@ -1045,8 +1044,7 @@ Array [
     "drawer": 1200,
     "modal": 1300,
     "snackbar": 1400,
-    "tooltip": 1500,
-    "toast": 3000
+    "tooltip": 1500
   },
   "opacity": {
     "12": 0.12,
@@ -1596,8 +1594,7 @@ Array [
     "drawer": 1200,
     "modal": 1300,
     "snackbar": 1400,
-    "tooltip": 1500,
-    "toast": 3000
+    "tooltip": 1500
   },
   "opacity": {
     "12": 0.12,
@@ -2220,8 +2217,7 @@ Array [
     "drawer": 1200,
     "modal": 1300,
     "snackbar": 1400,
-    "tooltip": 1500,
-    "toast": 3000
+    "tooltip": 1500
   },
   "opacity": {
     "12": 0.12,
