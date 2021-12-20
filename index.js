@@ -51601,7 +51601,6 @@ var modal = 1300;
 var snackbar = 1400;
 var speedDial = 1050;
 var tooltip = 1500;
-var toast = 3e3;
 var zIndex_default2 = {
   appBar,
   drawer,
@@ -51609,8 +51608,7 @@ var zIndex_default2 = {
   modal,
   snackbar,
   speedDial,
-  tooltip,
-  toast
+  tooltip
 };
 
 // src/foundation/theme/createTheme.ts
