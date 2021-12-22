@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton 1`] = `
-Array [
-  .c4 {
+.c4 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -139,226 +138,85 @@ Array [
 }
 
 <div
-    className="MuiButtonGroup-root RcSplitButton-root c0 MuiButtonGroup-disableElevation"
-    role="group"
-  >
-    <button
-      aria-describedby={null}
-      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
-      disabled={false}
-      onBlur={[Function]}
-      onClick={[Function]}
-      onDragLeave={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      onMouseDown={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      onMouseUp={[Function]}
-      onTouchEnd={[Function]}
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
-      tabIndex={0}
-      title="Text"
-      type="button"
-    >
-      <span
-        className="MuiButton-label"
-      >
-        Text
-      </span>
-      <span
-        className="MuiTouchRipple-root"
-      />
-    </button>
-    <button
-      aria-describedby={null}
-      aria-haspopup="listbox"
-      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
-      disabled={false}
-      onBlur={[Function]}
-      onClick={[Function]}
-      onDragLeave={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      onMouseDown={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      onMouseUp={[Function]}
-      onTouchEnd={[Function]}
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
-      tabIndex={0}
-      title="arrow"
-      type="button"
-    >
-      <span
-        className="MuiButton-label"
-      >
-        <span
-          className="c2 c3 arrow-down icon"
-          open={false}
-        >
-          <svg
-            className="c4"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16.707 20.293l5.586-5.586A.999.999 0 0021.586 13H10.414a1 1 0 00-.707 1.707l5.586 5.586a.999.999 0 001.414 0z"
-            />
-          </svg>
-          
-        </span>
-      </span>
-      <span
-        className="MuiTouchRipple-root"
-      />
-    </button>
-  </div>,
-  .c0 {
-  outline: none;
-  box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
-  height: auto;
-  min-height: 32px;
-  min-width: 112px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c0 .RcMenuItem-gutters {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.c0.RcMenuItem-dense {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  min-height: auto;
-  line-height: 22px;
-  font-weight: 700;
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-<div
-    className="MuiPopover-root "
+  className="MuiButtonGroup-root RcSplitButton-root c0 MuiButtonGroup-disableElevation"
+  role="group"
+>
+  <button
+    aria-describedby={null}
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="presentation"
-    style={
-      Object {
-        "bottom": 0,
-        "left": 0,
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-        "visibility": "hidden",
-        "zIndex": 1300,
-      }
-    }
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    title="Text"
+    type="button"
   >
-    <div
-      data-test="sentinelStart"
-      tabIndex={0}
-    />
-    <div
-      className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
-      style={
-        Object {
-          "opacity": 0,
-          "transform": "scale(0.75, 0.5625)",
-          "visibility": "hidden",
-        }
-      }
-      tabIndex="-1"
+    <span
+      className="MuiButton-label"
     >
-      <ul
-        className="MuiList-root MuiMenu-list MuiList-padding"
-        onKeyDown={[Function]}
-        role="menu"
-        tabIndex={-1}
-      >
-        <li
-          aria-describedby={null}
-          aria-disabled={false}
-          className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c0 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-          data-menuitem-id="menu-item-0"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="menuitem"
-          tabIndex={0}
-          title="cool"
-        >
-          Task
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </li>
-        <li
-          aria-describedby={null}
-          aria-disabled={false}
-          className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c0 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-          data-menuitem-id="menu-item-0"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="menuitem"
-          tabIndex={-1}
-          title="cool"
-        >
-          Cool (stopPropagation)
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </li>
-      </ul>
-    </div>
-    <div
-      data-test="sentinelEnd"
-      tabIndex={0}
+      Text
+    </span>
+    <span
+      className="MuiTouchRipple-root"
     />
-  </div>,
-]
+  </button>
+  <button
+    aria-describedby={null}
+    aria-haspopup="listbox"
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    title="arrow"
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      <span
+        className="c2 c3 arrow-down icon"
+        open={false}
+      >
+        <svg
+          className="c4"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16.707 20.293l5.586-5.586A.999.999 0 0021.586 13H10.414a1 1 0 00-.707 1.707l5.586 5.586a.999.999 0 001.414 0z"
+          />
+        </svg>
+        
+      </span>
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>
+</div>
 `;
 
 exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`] = `
@@ -379,15 +237,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   font-size: 24px;
 }
 
-.c18 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-size: 20px;
-}
-
-.c16 {
+.c15 {
   display: inline-block;
   outline: none;
 }
@@ -449,7 +299,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   border: 1px solid transparent;
 }
 
-.c12 {
+.c11 {
   text-transform: none;
   font-size: 0.9375rem;
   font-weight: 700;
@@ -458,58 +308,58 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   box-shadow: unset;
 }
 
-.c12 .RcButton-startIcon {
+.c11 .RcButton-startIcon {
   margin-right: 8px;
   margin-left: 0;
 }
 
-.c12 .RcButton-endIcon {
+.c11 .RcButton-endIcon {
   margin-left: 8px;
   margin-right: 0;
 }
 
-.c12.RcButton-text {
+.c11.RcButton-text {
   color: #066FAC;
   padding: 4px;
   min-width: unset;
   line-height: 1;
 }
 
-.c12.RcButton-text.RcButton-disabled {
+.c11.RcButton-text.RcButton-disabled {
   color: #B9B9B9;
 }
 
-.c12.RcButton-text.focus-visible,
-.c12.RcButton-text[data-focus-visible-added] {
+.c11.RcButton-text.focus-visible,
+.c11.RcButton-text[data-focus-visible-added] {
   box-shadow: inset 0 0 0 1px #066FAC;
 }
 
-.c12.RcButton-text:active.RcButton-text {
+.c11.RcButton-text:active.RcButton-text {
   color: rgba(6,111,172,0.64);
 }
 
-.c12.RcButton-contained {
+.c11.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
 }
 
-.c12.RcButton-contained.RcButton-disabled {
+.c11.RcButton-contained.RcButton-disabled {
   background-color: #B9B9B9;
   color: #FFFFFF;
 }
 
-.c12.RcButton-outlined {
+.c11.RcButton-outlined {
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
 }
 
-.c12.RcButton-outlined.RcButton-disabled {
+.c11.RcButton-outlined.RcButton-disabled {
   color: #B9B9B9;
   border-color: #B9B9B9;
 }
 
-.c12.RcButton-outlined:after {
+.c11.RcButton-outlined:after {
   top: -1px;
   bottom: -1px;
   left: -1px;
@@ -561,6 +411,58 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   background: rgba(6,111,172,0.76);
 }
 
+.c8 .RcSplitButton-actionButton {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c8 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c8 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c8 .RcSplitButton-controlButton:after {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c8.RcSplitButton-root {
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+}
+
+.c8 .RcSplitButton-groupedHorizontal {
+  min-width: 72px;
+}
+
+.c8 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
+  padding: 0;
+  min-width: 24px;
+  padding-right: 1px;
+  border-left: 1px solid #066FAC;
+}
+
+.c8 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
+  border-right: 0;
+}
+
+.c8 .RcSplitButton-groupedHorizontal:not(.RcSplitButton-actionButton) {
+  margin-left: 0;
+}
+
+.c8.RcSplitButton-menuOpen .RcSplitButton-actionButton {
+  background: rgba(6,111,172,0.08);
+}
+
+.c8.RcSplitButton-menuOpen .RcSplitButton-controlButton {
+  background: rgba(6,111,172,0.24);
+}
+
 .c9 .RcSplitButton-actionButton {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -584,6 +486,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 .c9.RcSplitButton-root {
   -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c9 .RcSplitButton-groupedHorizontal {
@@ -593,12 +499,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 .c9 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
   padding: 0;
   min-width: 24px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   padding-right: 1px;
-  border-left: 1px solid #066FAC;
-}
-
-.c9 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
-  border-right: 0;
+  border-left: 1px solid transparent;
 }
 
 .c9 .RcSplitButton-groupedHorizontal:not(.RcSplitButton-actionButton) {
@@ -633,7 +538,58 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   border-bottom-left-radius: 0;
 }
 
-.c10.RcSplitButton-root {
+.c10 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
+  padding: 0;
+  min-width: 24px;
+}
+
+.c10 .RcSplitButton-groupedHorizontal:not(.RcSplitButton-actionButton) {
+  margin-left: 0;
+}
+
+.c10 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  box-shadow: none;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+}
+
+.c10 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton.focus-visible,
+.c10 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton[data-focus-visible-added] {
+  background: rgba(6,111,172,0.08);
+}
+
+.c10 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.c10.RcSplitButton-menuOpen .RcSplitButton-controlButton {
+  background: rgba(6,111,172,0.24);
+}
+
+.c12 .RcSplitButton-actionButton {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c12 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c12 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c12 .RcSplitButton-controlButton:after {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c12.RcSplitButton-root {
   -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
   -webkit-align-items: center;
@@ -642,11 +598,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   align-items: center;
 }
 
-.c10 .RcSplitButton-groupedHorizontal {
-  min-width: 72px;
-}
-
-.c10 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
+.c12 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
   padding: 0;
   min-width: 24px;
   -webkit-align-self: stretch;
@@ -656,66 +608,55 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   border-left: 1px solid transparent;
 }
 
-.c10 .RcSplitButton-groupedHorizontal:not(.RcSplitButton-actionButton) {
+.c12 .RcSplitButton-groupedHorizontal:not(.RcSplitButton-actionButton) {
   margin-left: 0;
 }
 
-.c10.RcSplitButton-menuOpen .RcSplitButton-actionButton {
-  background: rgba(6,111,172,0.08);
+.c12.RcSplitButton-root {
+  border-radius: 100vw;
+  overflow: hidden;
 }
 
-.c10.RcSplitButton-menuOpen .RcSplitButton-controlButton {
-  background: rgba(6,111,172,0.24);
+.c12.RcSplitButton-root .c2 {
+  min-height: auto;
 }
 
-.c11 .RcSplitButton-actionButton {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+.c12.RcSplitButton-root .RcSplitButton-TouchRipple-child,
+.c12.RcSplitButton-root .RcSplitButton-TouchRipple-ripplePulsate {
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
 }
 
-.c11 .RcSplitButton-actionButton:after {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+.c12.RcSplitButton-root .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
+  border-top-left-radius: 100vw;
+  border-bottom-left-radius: 100vw;
 }
 
-.c11 .RcSplitButton-controlButton {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+.c12.RcSplitButton-root .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
+  border-top-right-radius: 100vw;
+  border-bottom-right-radius: 100vw;
 }
 
-.c11 .RcSplitButton-controlButton:after {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+.c12 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
+  min-width: auto;
+  padding: 12px 8px 12px 12px;
 }
 
-.c11 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
-  padding: 0;
+.c12 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton .c4 {
+  margin-right: 0;
+}
+
+.c12 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
   min-width: 24px;
+  width: 24px;
 }
 
-.c11 .RcSplitButton-groupedHorizontal:not(.RcSplitButton-actionButton) {
-  margin-left: 0;
-}
-
-.c11 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
-  border-top-left-radius: inherit;
-  border-bottom-left-radius: inherit;
-  box-shadow: none;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
-  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
-}
-
-.c11 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton.focus-visible,
-.c11 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton[data-focus-visible-added] {
+.c12.RcSplitButton-menuOpen .RcSplitButton-actionButton {
   background: rgba(6,111,172,0.08);
 }
 
-.c11 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
-  border-top-right-radius: inherit;
-  border-bottom-right-radius: inherit;
-}
-
-.c11.RcSplitButton-menuOpen .RcSplitButton-controlButton {
+.c12.RcSplitButton-menuOpen .RcSplitButton-controlButton {
   background: rgba(6,111,172,0.24);
 }
 
@@ -740,8 +681,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 }
 
 .c13.RcSplitButton-root {
-  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
-  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -751,102 +690,13 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 .c13 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
   padding: 0;
   min-width: 24px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  padding-right: 1px;
-  border-left: 1px solid transparent;
 }
 
 .c13 .RcSplitButton-groupedHorizontal:not(.RcSplitButton-actionButton) {
   margin-left: 0;
 }
 
-.c13.RcSplitButton-root {
-  border-radius: 100vw;
-  overflow: hidden;
-}
-
-.c13.RcSplitButton-root .c2 {
-  min-height: auto;
-}
-
-.c13.RcSplitButton-root .RcSplitButton-TouchRipple-child,
-.c13.RcSplitButton-root .RcSplitButton-TouchRipple-ripplePulsate {
-  -webkit-transform: scale(2);
-  -ms-transform: scale(2);
-  transform: scale(2);
-}
-
-.c13.RcSplitButton-root .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
-  border-top-left-radius: 100vw;
-  border-bottom-left-radius: 100vw;
-}
-
-.c13.RcSplitButton-root .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
-  border-top-right-radius: 100vw;
-  border-bottom-right-radius: 100vw;
-}
-
-.c13 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
-  min-width: auto;
-  padding: 12px 8px 12px 12px;
-}
-
-.c13 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton .c4 {
-  margin-right: 0;
-}
-
 .c13 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
-  min-width: 24px;
-  width: 24px;
-}
-
-.c13.RcSplitButton-menuOpen .RcSplitButton-actionButton {
-  background: rgba(6,111,172,0.08);
-}
-
-.c13.RcSplitButton-menuOpen .RcSplitButton-controlButton {
-  background: rgba(6,111,172,0.24);
-}
-
-.c14 .RcSplitButton-actionButton {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c14 .RcSplitButton-actionButton:after {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c14 .RcSplitButton-controlButton {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.c14 .RcSplitButton-controlButton:after {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.c14.RcSplitButton-root {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
-  padding: 0;
-  min-width: 24px;
-}
-
-.c14 .RcSplitButton-groupedHorizontal:not(.RcSplitButton-actionButton) {
-  margin-left: 0;
-}
-
-.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
   box-shadow: none;
@@ -854,34 +704,34 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
 }
 
-.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton.focus-visible,
-.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton[data-focus-visible-added] {
+.c13 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton.focus-visible,
+.c13 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton[data-focus-visible-added] {
   background: rgba(6,111,172,0.08);
 }
 
-.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
+.c13 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
   border-top-right-radius: inherit;
   border-bottom-right-radius: inherit;
 }
 
-.c14.RcSplitButton-root,
-.c14 .RcSplitButton-groupedHorizontal {
+.c13.RcSplitButton-root,
+.c13 .RcSplitButton-groupedHorizontal {
   border-radius: 50%;
 }
 
-.c14.RcSplitButton-root .c2,
-.c14 .RcSplitButton-groupedHorizontal .c2 {
+.c13.RcSplitButton-root .c2,
+.c13 .RcSplitButton-groupedHorizontal .c2 {
   min-height: auto;
 }
 
-.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
+.c13 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
   min-width: auto;
   padding: 0;
   box-shadow: none;
 }
 
-.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible:after,
-.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
+.c13 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible:after,
+.c13 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -894,16 +744,16 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   z-index: 1;
 }
 
-.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton .c4 {
+.c13 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton .c4 {
   margin-right: 0;
 }
 
-.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
+.c13 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
   min-width: 24px;
   width: 24px;
 }
 
-.c14.RcSplitButton-menuOpen .RcSplitButton-controlButton {
+.c13.RcSplitButton-menuOpen .RcSplitButton-controlButton {
   background: rgba(6,111,172,0.24);
 }
 
@@ -915,79 +765,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   color: #666666;
 }
 
-.c15 {
+.c14 {
   font-size: 1.5rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 32px;
   color: #121212;
-}
-
-.c17 {
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  color: #121212;
-  cursor: pointer;
-}
-
-.c17.RcListItem-focusVisible {
-  background-color: rgba(102,102,102,0.16);
-}
-
-.c17.RcListItem-selected,
-.c17.RcListItem-selected:hover {
-  background-color: rgba(102,102,102,0.12);
-}
-
-.c17 .RcListItemTouchRipple-rippleVisible {
-  color: #666666;
-}
-
-.c17.RcListItem-gutters {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.c17.RcListItem-dense {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c8 {
-  outline: none;
-  box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
-  height: auto;
-  min-height: 32px;
-  min-width: 112px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c8 .RcMenuItem-gutters {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.c8.RcMenuItem-dense {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  min-height: auto;
-  line-height: 22px;
-  font-weight: 700;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1009,27 +792,33 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcButton-text:hover {
+  .c11.RcButton-text:hover {
     background-color: rgba(6,111,172,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcButton-text:hover {
+  .c11.RcButton-text:hover {
     color: rgba(6,111,172,0.8);
     background-color: transparent;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcButton-contained:hover {
+  .c11.RcButton-contained:hover {
     background-color: rgba(6,111,172,0.92);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcButton-outlined:hover {
+  .c11.RcButton-outlined:hover {
     background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c8.RcSplitButton-root:hover {
+    background: rgba(6,111,172,0.08);
   }
 }
 
@@ -1040,26 +829,26 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcSplitButton-root:hover {
-    background: rgba(6,111,172,0.08);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c10.RcSplitButton-root:hover .RcSplitButton-controlButton {
+  .c9.RcSplitButton-root:hover .RcSplitButton-controlButton {
     border-left-color: rgba(6,111,172,0.24);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton:hover {
+  .c10 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton:hover {
     background: rgba(6,111,172,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcSplitButton-root:hover {
+  .c12.RcSplitButton-root:hover {
     background: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c12.RcSplitButton-root:hover .RcSplitButton-controlButton {
+    border-left-color: rgba(6,111,172,0.24);
   }
 }
 
@@ -1070,20 +859,8 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c14.RcSplitButton-root:hover .RcSplitButton-controlButton {
-    border-left-color: rgba(6,111,172,0.24);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c14 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton:hover {
+  .c13 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton:hover {
     background: rgba(6,111,172,0.08);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c17:hover {
-    background-color: rgba(102,102,102,0.08);
   }
 }
 
@@ -1182,100 +959,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
           />
         </button>
       </div>
-      <div
-        className="MuiPopover-root "
-        onKeyDown={[Function]}
-        role="presentation"
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "fixed",
-            "right": 0,
-            "top": 0,
-            "visibility": "hidden",
-            "zIndex": 1300,
-          }
-        }
-      >
-        <div
-          data-test="sentinelStart"
-          tabIndex={0}
-        />
-        <div
-          className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
-          style={
-            Object {
-              "opacity": 0,
-              "transform": "scale(0.75, 0.5625)",
-              "visibility": "hidden",
-            }
-          }
-          tabIndex="-1"
-        >
-          <ul
-            className="MuiList-root MuiMenu-list MuiList-padding"
-            onKeyDown={[Function]}
-            role="menu"
-            tabIndex={-1}
-          >
-            <li
-              aria-disabled={false}
-              className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c8 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-              data-menuitem-id="menu-item-0"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onDragLeave={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              role="menuitem"
-              tabIndex={0}
-            >
-              Task
-              <span
-                className="MuiTouchRipple-root"
-              />
-            </li>
-            <li
-              aria-disabled={false}
-              className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c8 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-              data-menuitem-id="menu-item-0"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onDragLeave={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              role="menuitem"
-              tabIndex={-1}
-            >
-              Cool
-              <span
-                className="MuiTouchRipple-root"
-              />
-            </li>
-          </ul>
-        </div>
-        <div
-          data-test="sentinelEnd"
-          tabIndex={0}
-        />
-      </div>
     </div>
     <div
       className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
@@ -1293,7 +976,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
         outlined
       </p>
       <div
-        className="MuiButtonGroup-root RcSplitButton-root c9 MuiButtonGroup-disableElevation"
+        className="MuiButtonGroup-root RcSplitButton-root c8 MuiButtonGroup-disableElevation"
         role="group"
       >
         <button
@@ -1368,100 +1051,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
           />
         </button>
       </div>
-      <div
-        className="MuiPopover-root "
-        onKeyDown={[Function]}
-        role="presentation"
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "fixed",
-            "right": 0,
-            "top": 0,
-            "visibility": "hidden",
-            "zIndex": 1300,
-          }
-        }
-      >
-        <div
-          data-test="sentinelStart"
-          tabIndex={0}
-        />
-        <div
-          className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
-          style={
-            Object {
-              "opacity": 0,
-              "transform": "scale(0.75, 0.5625)",
-              "visibility": "hidden",
-            }
-          }
-          tabIndex="-1"
-        >
-          <ul
-            className="MuiList-root MuiMenu-list MuiList-padding"
-            onKeyDown={[Function]}
-            role="menu"
-            tabIndex={-1}
-          >
-            <li
-              aria-disabled={false}
-              className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c8 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-              data-menuitem-id="menu-item-0"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onDragLeave={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              role="menuitem"
-              tabIndex={0}
-            >
-              Task
-              <span
-                className="MuiTouchRipple-root"
-              />
-            </li>
-            <li
-              aria-disabled={false}
-              className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c8 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-              data-menuitem-id="menu-item-0"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onDragLeave={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              role="menuitem"
-              tabIndex={-1}
-            >
-              Cool
-              <span
-                className="MuiTouchRipple-root"
-              />
-            </li>
-          </ul>
-        </div>
-        <div
-          data-test="sentinelEnd"
-          tabIndex={0}
-        />
-      </div>
     </div>
     <div
       className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
@@ -1479,7 +1068,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
         text
       </p>
       <div
-        className="MuiButtonGroup-root RcSplitButton-root c10 MuiButtonGroup-disableElevation"
+        className="MuiButtonGroup-root RcSplitButton-root c9 MuiButtonGroup-disableElevation"
         role="group"
       >
         <button
@@ -1553,100 +1142,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
             className="MuiTouchRipple-root"
           />
         </button>
-      </div>
-      <div
-        className="MuiPopover-root "
-        onKeyDown={[Function]}
-        role="presentation"
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "fixed",
-            "right": 0,
-            "top": 0,
-            "visibility": "hidden",
-            "zIndex": 1300,
-          }
-        }
-      >
-        <div
-          data-test="sentinelStart"
-          tabIndex={0}
-        />
-        <div
-          className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
-          style={
-            Object {
-              "opacity": 0,
-              "transform": "scale(0.75, 0.5625)",
-              "visibility": "hidden",
-            }
-          }
-          tabIndex="-1"
-        >
-          <ul
-            className="MuiList-root MuiMenu-list MuiList-padding"
-            onKeyDown={[Function]}
-            role="menu"
-            tabIndex={-1}
-          >
-            <li
-              aria-disabled={false}
-              className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c8 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-              data-menuitem-id="menu-item-0"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onDragLeave={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              role="menuitem"
-              tabIndex={0}
-            >
-              Task
-              <span
-                className="MuiTouchRipple-root"
-              />
-            </li>
-            <li
-              aria-disabled={false}
-              className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c8 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-              data-menuitem-id="menu-item-0"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onDragLeave={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              role="menuitem"
-              tabIndex={-1}
-            >
-              Cool
-              <span
-                className="MuiTouchRipple-root"
-              />
-            </li>
-          </ul>
-        </div>
-        <div
-          data-test="sentinelEnd"
-          tabIndex={0}
-        />
       </div>
     </div>
     <div
@@ -1665,12 +1160,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
         plain
       </p>
       <div
-        className="MuiButtonGroup-root RcSplitButton-root c11 MuiButtonGroup-disableElevation"
+        className="MuiButtonGroup-root RcSplitButton-root c10 MuiButtonGroup-disableElevation"
         role="group"
       >
         <button
           aria-label="mainAction"
-          className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 c12 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+          className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 c11 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -1696,7 +1191,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
         <button
           aria-haspopup="listbox"
           aria-label="openMenu"
-          className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 c12 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+          className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 c11 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -1734,100 +1229,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
           </span>
         </button>
       </div>
-      <div
-        className="MuiPopover-root "
-        onKeyDown={[Function]}
-        role="presentation"
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "fixed",
-            "right": 0,
-            "top": 0,
-            "visibility": "hidden",
-            "zIndex": 1300,
-          }
-        }
-      >
-        <div
-          data-test="sentinelStart"
-          tabIndex={0}
-        />
-        <div
-          className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
-          style={
-            Object {
-              "opacity": 0,
-              "transform": "scale(0.75, 0.5625)",
-              "visibility": "hidden",
-            }
-          }
-          tabIndex="-1"
-        >
-          <ul
-            className="MuiList-root MuiMenu-list MuiList-padding"
-            onKeyDown={[Function]}
-            role="menu"
-            tabIndex={-1}
-          >
-            <li
-              aria-disabled={false}
-              className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c8 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-              data-menuitem-id="menu-item-0"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onDragLeave={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              role="menuitem"
-              tabIndex={0}
-            >
-              Task
-              <span
-                className="MuiTouchRipple-root"
-              />
-            </li>
-            <li
-              aria-disabled={false}
-              className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c8 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-              data-menuitem-id="menu-item-0"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onDragLeave={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              role="menuitem"
-              tabIndex={-1}
-            >
-              Cool
-              <span
-                className="MuiTouchRipple-root"
-              />
-            </li>
-          </ul>
-        </div>
-        <div
-          data-test="sentinelEnd"
-          tabIndex={0}
-        />
-      </div>
     </div>
     <div
       className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
@@ -1845,7 +1246,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
         round
       </p>
       <div
-        className="MuiButtonGroup-root RcSplitButton-root c13 MuiButtonGroup-disableElevation"
+        className="MuiButtonGroup-root RcSplitButton-root c12 MuiButtonGroup-disableElevation"
         role="group"
       >
         <button
@@ -1920,100 +1321,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
           />
         </button>
       </div>
-      <div
-        className="MuiPopover-root "
-        onKeyDown={[Function]}
-        role="presentation"
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "fixed",
-            "right": 0,
-            "top": 0,
-            "visibility": "hidden",
-            "zIndex": 1300,
-          }
-        }
-      >
-        <div
-          data-test="sentinelStart"
-          tabIndex={0}
-        />
-        <div
-          className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
-          style={
-            Object {
-              "opacity": 0,
-              "transform": "scale(0.75, 0.5625)",
-              "visibility": "hidden",
-            }
-          }
-          tabIndex="-1"
-        >
-          <ul
-            className="MuiList-root MuiMenu-list MuiList-padding"
-            onKeyDown={[Function]}
-            role="menu"
-            tabIndex={-1}
-          >
-            <li
-              aria-disabled={false}
-              className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c8 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-              data-menuitem-id="menu-item-0"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onDragLeave={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              role="menuitem"
-              tabIndex={0}
-            >
-              Task
-              <span
-                className="MuiTouchRipple-root"
-              />
-            </li>
-            <li
-              aria-disabled={false}
-              className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c8 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-              data-menuitem-id="menu-item-0"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onDragLeave={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              role="menuitem"
-              tabIndex={-1}
-            >
-              Cool
-              <span
-                className="MuiTouchRipple-root"
-              />
-            </li>
-          </ul>
-        </div>
-        <div
-          data-test="sentinelEnd"
-          tabIndex={0}
-        />
-      </div>
     </div>
     <div
       className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
@@ -2031,12 +1338,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
         plainIcon
       </p>
       <div
-        className="MuiButtonGroup-root RcSplitButton-root c14 MuiButtonGroup-disableElevation"
+        className="MuiButtonGroup-root RcSplitButton-root c13 MuiButtonGroup-disableElevation"
         role="group"
       >
         <button
           aria-label="mainAction"
-          className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 c12 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+          className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 c11 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -2062,7 +1369,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
         <button
           aria-haspopup="listbox"
           aria-label="openMenu"
-          className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 c12 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+          className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 c11 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -2100,106 +1407,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
           </span>
         </button>
       </div>
-      <div
-        className="MuiPopover-root "
-        onKeyDown={[Function]}
-        role="presentation"
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "fixed",
-            "right": 0,
-            "top": 0,
-            "visibility": "hidden",
-            "zIndex": 1300,
-          }
-        }
-      >
-        <div
-          data-test="sentinelStart"
-          tabIndex={0}
-        />
-        <div
-          className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
-          style={
-            Object {
-              "opacity": 0,
-              "transform": "scale(0.75, 0.5625)",
-              "visibility": "hidden",
-            }
-          }
-          tabIndex="-1"
-        >
-          <ul
-            className="MuiList-root MuiMenu-list MuiList-padding"
-            onKeyDown={[Function]}
-            role="menu"
-            tabIndex={-1}
-          >
-            <li
-              aria-disabled={false}
-              className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c8 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-              data-menuitem-id="menu-item-0"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onDragLeave={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              role="menuitem"
-              tabIndex={0}
-            >
-              Task
-              <span
-                className="MuiTouchRipple-root"
-              />
-            </li>
-            <li
-              aria-disabled={false}
-              className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c8 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-              data-menuitem-id="menu-item-0"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onDragLeave={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              role="menuitem"
-              tabIndex={-1}
-            >
-              Cool
-              <span
-                className="MuiTouchRipple-root"
-              />
-            </li>
-          </ul>
-        </div>
-        <div
-          data-test="sentinelEnd"
-          tabIndex={0}
-        />
-      </div>
     </div>
   </div>
   <br />
   <br />
   <h5
-    className="MuiTypography-root c15 MuiTypography-paragraph MuiTypography-displayBlock"
+    className="MuiTypography-root c14 MuiTypography-paragraph MuiTypography-displayBlock"
     data-color="neutral.f06"
     data-variant="headline1"
   >
@@ -2211,7 +1424,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   >
     <span
       aria-describedby={null}
-      className="c16"
+      className="c15"
       onBlur={[Function]}
       onFocus={[Function]}
       onMouseLeave={[Function]}
@@ -2290,106 +1503,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
         className="MuiTouchRipple-root"
       />
     </button>
-  </div>
-  <div
-    className="MuiPopover-root "
-    onKeyDown={[Function]}
-    role="presentation"
-    style={
-      Object {
-        "bottom": 0,
-        "left": 0,
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-        "visibility": "hidden",
-        "zIndex": 1300,
-      }
-    }
-  >
-    <div
-      data-test="sentinelStart"
-      tabIndex={0}
-    />
-    <div
-      className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
-      style={
-        Object {
-          "opacity": 0,
-          "transform": "scale(0.75, 0.5625)",
-          "visibility": "hidden",
-        }
-      }
-      tabIndex="-1"
-    >
-      <ul
-        className="MuiList-root MuiMenu-list MuiList-padding"
-        onKeyDown={[Function]}
-        role="menu"
-        tabIndex={-1}
-      >
-        <li
-          aria-describedby={null}
-          aria-disabled={false}
-          className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c8 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-          data-menuitem-id="menu-item-0"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="menuitem"
-          tabIndex={0}
-          title="cool"
-        >
-          Task
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </li>
-        <li
-          aria-describedby={null}
-          aria-disabled={false}
-          className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c8 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-          data-menuitem-id="menu-item-0"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="menuitem"
-          tabIndex={-1}
-          title="cool"
-        >
-          Cool (stopPropagation)
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </li>
-      </ul>
-    </div>
-    <div
-      data-test="sentinelEnd"
-      tabIndex={0}
-    />
   </div>
   <div
     className="MuiButtonGroup-root RcSplitButton-root c1 MuiButtonGroup-disableElevation"
@@ -2397,7 +1510,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   >
     <span
       aria-describedby={null}
-      className="c16"
+      className="c15"
       onBlur={[Function]}
       onFocus={[Function]}
       onMouseLeave={[Function]}
@@ -2478,115 +1591,15 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
       />
     </button>
   </div>
-  <div
-    className="MuiPopover-root "
-    onKeyDown={[Function]}
-    role="presentation"
-    style={
-      Object {
-        "bottom": 0,
-        "left": 0,
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-        "visibility": "hidden",
-        "zIndex": 1300,
-      }
-    }
-  >
-    <div
-      data-test="sentinelStart"
-      tabIndex={0}
-    />
-    <div
-      className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
-      style={
-        Object {
-          "opacity": 0,
-          "transform": "scale(0.75, 0.5625)",
-          "visibility": "hidden",
-        }
-      }
-      tabIndex="-1"
-    >
-      <ul
-        className="MuiList-root MuiMenu-list MuiList-padding"
-        onKeyDown={[Function]}
-        role="menu"
-        tabIndex={-1}
-      >
-        <li
-          aria-describedby={null}
-          aria-disabled={false}
-          className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c8 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-          data-menuitem-id="menu-item-0"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="menuitem"
-          tabIndex={0}
-          title="cool"
-        >
-          Task
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </li>
-        <li
-          aria-describedby={null}
-          aria-disabled={false}
-          className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c8 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-          data-menuitem-id="menu-item-0"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="menuitem"
-          tabIndex={-1}
-          title="cool"
-        >
-          Cool (stopPropagation)
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </li>
-      </ul>
-    </div>
-    <div
-      data-test="sentinelEnd"
-      tabIndex={0}
-    />
-  </div>
   <h5
-    className="MuiTypography-root c15 MuiTypography-paragraph MuiTypography-displayBlock"
+    className="MuiTypography-root c14 MuiTypography-paragraph MuiTypography-displayBlock"
     data-color="neutral.f06"
     data-variant="headline1"
   >
     Custom ActionButton Children Render
   </h5>
   <div
-    className="MuiButtonGroup-root RcSplitButton-root c13 MuiButtonGroup-disableElevation"
+    className="MuiButtonGroup-root RcSplitButton-root c12 MuiButtonGroup-disableElevation"
     role="group"
   >
     <button
@@ -2659,132 +1672,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
         className="MuiTouchRipple-root"
       />
     </button>
-  </div>
-  <div
-    className="MuiPopover-root "
-    onKeyDown={[Function]}
-    role="presentation"
-    style={
-      Object {
-        "bottom": 0,
-        "left": 0,
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-        "visibility": "hidden",
-        "zIndex": 1300,
-      }
-    }
-  >
-    <div
-      data-test="sentinelStart"
-      tabIndex={0}
-    />
-    <div
-      className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
-      style={
-        Object {
-          "opacity": 0,
-          "transform": "scale(0.75, 0.5625)",
-          "visibility": "hidden",
-        }
-      }
-      tabIndex="-1"
-    >
-      <ul
-        className="MuiList-root MuiMenu-list MuiList-padding"
-        onKeyDown={[Function]}
-        role="menu"
-        tabIndex={-1}
-      >
-        <div
-          aria-disabled={false}
-          className="MuiButtonBase-root MuiListItem-root c17 RcListItem-multiline MuiListItem-gutters RcListItem-gutters MuiListItem-button"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          tabIndex={0}
-        >
-          <span
-            className="c4 c18 reply icon"
-          >
-            <svg
-              className="c7"
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M19.287 4.297l.127.117 10.172 10.172a2 2 0 01.117 2.701l-.117.127-10.172 10.172a2 2 0 01-3.408-1.265L16 26.172 15.999 21l-.999.001c-7.18 0-13-5.82-13-13v-3c0-1.192 1.711-1.384 1.975-.221a8 8 0 007.538 6.217l.263.004h4.222l.001-5.171a2 2 0 013.287-1.531zM14 19h2.999a1 1 0 01.993.883l.007.117.001 5.689c0 .11.09.2.2.2a.197.197 0 00.141-.059l9.689-9.689a.2.2 0 000-.283l-9.689-9.689a.2.2 0 00-.342.141l-.001 5.688a1 1 0 01-1 1l-5.531-.005a9.996 9.996 0 01-7.179-3.365l-.202-.235.04.284c.759 4.955 4.824 8.822 9.873 9.277l-.001.045z"
-              />
-            </svg>
-            
-          </span>
-          Task
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </div>
-        <div
-          aria-disabled={false}
-          className="MuiButtonBase-root MuiListItem-root c17 RcListItem-multiline MuiListItem-gutters RcListItem-gutters MuiListItem-button"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          role="button"
-          tabIndex={0}
-        >
-          <span
-            aria-describedby={null}
-            className="c4 c18 add icon"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            onTouchEnd={[Function]}
-            onTouchStart={[Function]}
-            title="cool"
-          >
-            <svg
-              className="c7"
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M25.899 6.101c5.467 5.467 5.467 14.332 0 19.799s-14.332 5.467-19.799 0C.633 20.433.633 11.568 6.1 6.101s14.332-5.467 19.799 0zm-8.898 8.898L17 9a1 1 0 00-1.993-.117L15 9l.001 5.999L9 15a1 1 0 00-.117 1.993L9 17l6.001-.001L15 23a1 1 0 001.993.117L17 23l.001-6.001L23 17a1 1 0 00.117-1.993L23 15l-5.999-.001z"
-              />
-            </svg>
-            
-          </span>
-          Cool
-          <span
-            className="MuiTouchRipple-root"
-          />
-        </div>
-      </ul>
-    </div>
-    <div
-      data-test="sentinelEnd"
-      tabIndex={0}
-    />
   </div>
 </div>
 `;
@@ -2870,7 +1757,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
   border: 1px solid transparent;
 }
 
-.c13 {
+.c12 {
   text-transform: none;
   font-size: 0.9375rem;
   font-weight: 700;
@@ -2879,7 +1766,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
   box-shadow: unset;
 }
 
-.c13:after {
+.c12:after {
   content: '';
   position: absolute;
   top: 0;
@@ -2895,44 +1782,44 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
   border-radius: 4px;
 }
 
-.c13 .RcButton-startIcon {
+.c12 .RcButton-startIcon {
   margin-right: 8px;
   margin-left: 0;
 }
 
-.c13 .RcButton-endIcon {
+.c12 .RcButton-endIcon {
   margin-left: 8px;
   margin-right: 0;
 }
 
-.c13.RcButton-text {
+.c12.RcButton-text {
   color: #066FAC;
   padding: 4px;
   min-width: unset;
   line-height: 1;
 }
 
-.c13.RcButton-text.focus-visible,
-.c13.RcButton-text[data-focus-visible-added] {
+.c12.RcButton-text.focus-visible,
+.c12.RcButton-text[data-focus-visible-added] {
   box-shadow: inset 0 0 0 1px #066FAC;
 }
 
-.c13.RcButton-text:active.RcButton-text {
+.c12.RcButton-text:active.RcButton-text {
   color: rgba(6,111,172,0.64);
 }
 
-.c13.RcButton-contained {
+.c12.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
 }
 
-.c13.RcButton-outlined {
+.c12.RcButton-outlined {
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
 }
 
-.c13.RcButton-outlined:after {
+.c12.RcButton-outlined:after {
   top: -1px;
   bottom: -1px;
   left: -1px;
@@ -2984,6 +1871,53 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
   background: rgba(6,111,172,0.76);
 }
 
+.c9 .RcSplitButton-actionButton {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c9 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c9 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c9 .RcSplitButton-controlButton:after {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c9 .RcSplitButton-groupedHorizontal {
+  min-width: 72px;
+}
+
+.c9 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
+  padding: 0;
+  min-width: 24px;
+  padding-right: 1px;
+  border-left: 1px solid #066FAC;
+}
+
+.c9 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
+  border-right: 0;
+}
+
+.c9 .RcSplitButton-groupedHorizontal:not(.RcSplitButton-actionButton) {
+  margin-left: 0;
+}
+
+.c9.RcSplitButton-menuOpen .RcSplitButton-actionButton {
+  background: rgba(6,111,172,0.08);
+}
+
+.c9.RcSplitButton-menuOpen .RcSplitButton-controlButton {
+  background: rgba(6,111,172,0.24);
+}
+
 .c10 .RcSplitButton-actionButton {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -3004,6 +1938,13 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
   border-bottom-left-radius: 0;
 }
 
+.c10.RcSplitButton-root {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c10 .RcSplitButton-groupedHorizontal {
   min-width: 72px;
 }
@@ -3011,12 +1952,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
 .c10 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
   padding: 0;
   min-width: 24px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
   padding-right: 1px;
-  border-left: 1px solid #066FAC;
-}
-
-.c10 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
-  border-right: 0;
+  border-left: 1px solid transparent;
 }
 
 .c10 .RcSplitButton-groupedHorizontal:not(.RcSplitButton-actionButton) {
@@ -3051,18 +1991,60 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
   border-bottom-left-radius: 0;
 }
 
-.c11.RcSplitButton-root {
+.c11 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
+  padding: 0;
+  min-width: 24px;
+}
+
+.c11 .RcSplitButton-groupedHorizontal:not(.RcSplitButton-actionButton) {
+  margin-left: 0;
+}
+
+.c11 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  box-shadow: none;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+}
+
+.c11 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.c11.RcSplitButton-menuOpen .RcSplitButton-controlButton {
+  background: rgba(6,111,172,0.24);
+}
+
+.c13 .RcSplitButton-actionButton {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c13 .RcSplitButton-actionButton:after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c13 .RcSplitButton-controlButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c13 .RcSplitButton-controlButton:after {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c13.RcSplitButton-root {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c11 .RcSplitButton-groupedHorizontal {
-  min-width: 72px;
-}
-
-.c11 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
+.c13 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
   padding: 0;
   min-width: 24px;
   -webkit-align-self: stretch;
@@ -3072,61 +2054,55 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
   border-left: 1px solid transparent;
 }
 
-.c11 .RcSplitButton-groupedHorizontal:not(.RcSplitButton-actionButton) {
+.c13 .RcSplitButton-groupedHorizontal:not(.RcSplitButton-actionButton) {
   margin-left: 0;
 }
 
-.c11.RcSplitButton-menuOpen .RcSplitButton-actionButton {
+.c13.RcSplitButton-root {
+  border-radius: 100vw;
+  overflow: hidden;
+}
+
+.c13.RcSplitButton-root .c2 {
+  min-height: auto;
+}
+
+.c13.RcSplitButton-root .RcSplitButton-TouchRipple-child,
+.c13.RcSplitButton-root .RcSplitButton-TouchRipple-ripplePulsate {
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+}
+
+.c13.RcSplitButton-root .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
+  border-top-left-radius: 100vw;
+  border-bottom-left-radius: 100vw;
+}
+
+.c13.RcSplitButton-root .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
+  border-top-right-radius: 100vw;
+  border-bottom-right-radius: 100vw;
+}
+
+.c13 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
+  min-width: auto;
+  padding: 12px 8px 12px 12px;
+}
+
+.c13 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton .c5 {
+  margin-right: 0;
+}
+
+.c13 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
+  min-width: 24px;
+  width: 24px;
+}
+
+.c13.RcSplitButton-menuOpen .RcSplitButton-actionButton {
   background: rgba(6,111,172,0.08);
 }
 
-.c11.RcSplitButton-menuOpen .RcSplitButton-controlButton {
-  background: rgba(6,111,172,0.24);
-}
-
-.c12 .RcSplitButton-actionButton {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c12 .RcSplitButton-actionButton:after {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c12 .RcSplitButton-controlButton {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.c12 .RcSplitButton-controlButton:after {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.c12 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
-  padding: 0;
-  min-width: 24px;
-}
-
-.c12 .RcSplitButton-groupedHorizontal:not(.RcSplitButton-actionButton) {
-  margin-left: 0;
-}
-
-.c12 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
-  border-top-left-radius: inherit;
-  border-bottom-left-radius: inherit;
-  box-shadow: none;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
-  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
-}
-
-.c12 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
-  border-top-right-radius: inherit;
-  border-bottom-right-radius: inherit;
-}
-
-.c12.RcSplitButton-menuOpen .RcSplitButton-controlButton {
+.c13.RcSplitButton-menuOpen .RcSplitButton-controlButton {
   background: rgba(6,111,172,0.24);
 }
 
@@ -3160,102 +2136,13 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
 .c14 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
   padding: 0;
   min-width: 24px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  padding-right: 1px;
-  border-left: 1px solid transparent;
 }
 
 .c14 .RcSplitButton-groupedHorizontal:not(.RcSplitButton-actionButton) {
   margin-left: 0;
 }
 
-.c14.RcSplitButton-root {
-  border-radius: 100vw;
-  overflow: hidden;
-}
-
-.c14.RcSplitButton-root .c2 {
-  min-height: auto;
-}
-
-.c14.RcSplitButton-root .RcSplitButton-TouchRipple-child,
-.c14.RcSplitButton-root .RcSplitButton-TouchRipple-ripplePulsate {
-  -webkit-transform: scale(2);
-  -ms-transform: scale(2);
-  transform: scale(2);
-}
-
-.c14.RcSplitButton-root .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
-  border-top-left-radius: 100vw;
-  border-bottom-left-radius: 100vw;
-}
-
-.c14.RcSplitButton-root .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
-  border-top-right-radius: 100vw;
-  border-bottom-right-radius: 100vw;
-}
-
-.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
-  min-width: auto;
-  padding: 12px 8px 12px 12px;
-}
-
-.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton .c5 {
-  margin-right: 0;
-}
-
 .c14 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
-  min-width: 24px;
-  width: 24px;
-}
-
-.c14.RcSplitButton-menuOpen .RcSplitButton-actionButton {
-  background: rgba(6,111,172,0.08);
-}
-
-.c14.RcSplitButton-menuOpen .RcSplitButton-controlButton {
-  background: rgba(6,111,172,0.24);
-}
-
-.c15 .RcSplitButton-actionButton {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c15 .RcSplitButton-actionButton:after {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c15 .RcSplitButton-controlButton {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.c15 .RcSplitButton-controlButton:after {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.c15.RcSplitButton-root {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c15 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
-  padding: 0;
-  min-width: 24px;
-}
-
-.c15 .RcSplitButton-groupedHorizontal:not(.RcSplitButton-actionButton) {
-  margin-left: 0;
-}
-
-.c15 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
   box-shadow: none;
@@ -3263,29 +2150,29 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
   transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,color 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
 }
 
-.c15 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
+.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
   border-top-right-radius: inherit;
   border-bottom-right-radius: inherit;
 }
 
-.c15.RcSplitButton-root,
-.c15 .RcSplitButton-groupedHorizontal {
+.c14.RcSplitButton-root,
+.c14 .RcSplitButton-groupedHorizontal {
   border-radius: 50%;
 }
 
-.c15.RcSplitButton-root .c2,
-.c15 .RcSplitButton-groupedHorizontal .c2 {
+.c14.RcSplitButton-root .c2,
+.c14 .RcSplitButton-groupedHorizontal .c2 {
   min-height: auto;
 }
 
-.c15 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
+.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton {
   min-width: auto;
   padding: 0;
   box-shadow: none;
 }
 
-.c15 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible:after,
-.c15 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
+.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible:after,
+.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -3298,16 +2185,16 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
   z-index: 1;
 }
 
-.c15 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton .c5 {
+.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton .c5 {
   margin-right: 0;
 }
 
-.c15 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
+.c14 .RcSplitButton-groupedHorizontal.RcSplitButton-controlButton {
   min-width: 24px;
   width: 24px;
 }
 
-.c15.RcSplitButton-menuOpen .RcSplitButton-controlButton {
+.c14.RcSplitButton-menuOpen .RcSplitButton-controlButton {
   background: rgba(6,111,172,0.24);
 }
 
@@ -3317,34 +2204,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
   color: #666666;
-}
-
-.c9 {
-  outline: none;
-  box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
-  height: auto;
-  min-height: 32px;
-  min-width: 112px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.c9 .RcMenuItem-gutters {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.c9.RcMenuItem-dense {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  min-height: auto;
-  line-height: 22px;
-  font-weight: 700;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3366,26 +2225,26 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcButton-text:hover {
+  .c12.RcButton-text:hover {
     background-color: rgba(6,111,172,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcButton-text:hover {
+  .c12.RcButton-text:hover {
     color: rgba(6,111,172,0.8);
     background-color: transparent;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcButton-contained:hover {
+  .c12.RcButton-contained:hover {
     background-color: rgba(6,111,172,0.92);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcButton-outlined:hover {
+  .c12.RcButton-outlined:hover {
     background-color: rgba(6,111,172,0.08);
   }
 }
@@ -3502,94 +2361,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
         </span>
       </button>
     </div>
-    <div
-      className="MuiPopover-root "
-      onKeyDown={[Function]}
-      role="presentation"
-      style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-          "visibility": "hidden",
-          "zIndex": 1300,
-        }
-      }
-    >
-      <div
-        data-test="sentinelStart"
-        tabIndex={0}
-      />
-      <div
-        className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
-        style={
-          Object {
-            "opacity": 0,
-            "transform": "scale(0.75, 0.5625)",
-            "visibility": "hidden",
-          }
-        }
-        tabIndex="-1"
-      >
-        <ul
-          className="MuiList-root MuiMenu-list MuiList-padding"
-          onKeyDown={[Function]}
-          role="menu"
-          tabIndex={-1}
-        >
-          <li
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c9 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-            data-menuitem-id="menu-item-0"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="menuitem"
-            tabIndex={0}
-          >
-            Task
-          </li>
-          <li
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c9 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-            data-menuitem-id="menu-item-0"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="menuitem"
-            tabIndex={-1}
-          >
-            Cool
-          </li>
-        </ul>
-      </div>
-      <div
-        data-test="sentinelEnd"
-        tabIndex={0}
-      />
-    </div>
   </div>
   <div
     className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
@@ -3607,7 +2378,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
       outlined
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c10 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c9 MuiButtonGroup-disableElevation"
       role="group"
     >
       <button
@@ -3700,94 +2471,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
         </span>
       </button>
     </div>
-    <div
-      className="MuiPopover-root "
-      onKeyDown={[Function]}
-      role="presentation"
-      style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-          "visibility": "hidden",
-          "zIndex": 1300,
-        }
-      }
-    >
-      <div
-        data-test="sentinelStart"
-        tabIndex={0}
-      />
-      <div
-        className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
-        style={
-          Object {
-            "opacity": 0,
-            "transform": "scale(0.75, 0.5625)",
-            "visibility": "hidden",
-          }
-        }
-        tabIndex="-1"
-      >
-        <ul
-          className="MuiList-root MuiMenu-list MuiList-padding"
-          onKeyDown={[Function]}
-          role="menu"
-          tabIndex={-1}
-        >
-          <li
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c9 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-            data-menuitem-id="menu-item-0"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="menuitem"
-            tabIndex={0}
-          >
-            Task
-          </li>
-          <li
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c9 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-            data-menuitem-id="menu-item-0"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="menuitem"
-            tabIndex={-1}
-          >
-            Cool
-          </li>
-        </ul>
-      </div>
-      <div
-        data-test="sentinelEnd"
-        tabIndex={0}
-      />
-    </div>
   </div>
   <div
     className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
@@ -3805,7 +2488,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
       text
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c11 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c10 MuiButtonGroup-disableElevation"
       role="group"
     >
       <button
@@ -3897,94 +2580,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
           </span>
         </span>
       </button>
-    </div>
-    <div
-      className="MuiPopover-root "
-      onKeyDown={[Function]}
-      role="presentation"
-      style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-          "visibility": "hidden",
-          "zIndex": 1300,
-        }
-      }
-    >
-      <div
-        data-test="sentinelStart"
-        tabIndex={0}
-      />
-      <div
-        className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
-        style={
-          Object {
-            "opacity": 0,
-            "transform": "scale(0.75, 0.5625)",
-            "visibility": "hidden",
-          }
-        }
-        tabIndex="-1"
-      >
-        <ul
-          className="MuiList-root MuiMenu-list MuiList-padding"
-          onKeyDown={[Function]}
-          role="menu"
-          tabIndex={-1}
-        >
-          <li
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c9 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-            data-menuitem-id="menu-item-0"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="menuitem"
-            tabIndex={0}
-          >
-            Task
-          </li>
-          <li
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c9 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-            data-menuitem-id="menu-item-0"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="menuitem"
-            tabIndex={-1}
-          >
-            Cool
-          </li>
-        </ul>
-      </div>
-      <div
-        data-test="sentinelEnd"
-        tabIndex={0}
-      />
     </div>
   </div>
   <div
@@ -4003,12 +2598,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
       plain
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c12 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c11 MuiButtonGroup-disableElevation"
       role="group"
     >
       <button
         aria-label="mainAction"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 c13 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation Mui-disabled RcButton-disabled Mui-disabled"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 c12 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation Mui-disabled RcButton-disabled Mui-disabled"
         disabled={true}
         onBlur={[Function]}
         onClick={[Function]}
@@ -4058,7 +2653,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
       <button
         aria-haspopup="listbox"
         aria-label="openMenu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 c13 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation Mui-disabled RcButton-disabled Mui-disabled"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 c12 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation Mui-disabled RcButton-disabled Mui-disabled"
         disabled={true}
         onBlur={[Function]}
         onClick={[Function]}
@@ -4096,94 +2691,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
         </span>
       </button>
     </div>
-    <div
-      className="MuiPopover-root "
-      onKeyDown={[Function]}
-      role="presentation"
-      style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-          "visibility": "hidden",
-          "zIndex": 1300,
-        }
-      }
-    >
-      <div
-        data-test="sentinelStart"
-        tabIndex={0}
-      />
-      <div
-        className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
-        style={
-          Object {
-            "opacity": 0,
-            "transform": "scale(0.75, 0.5625)",
-            "visibility": "hidden",
-          }
-        }
-        tabIndex="-1"
-      >
-        <ul
-          className="MuiList-root MuiMenu-list MuiList-padding"
-          onKeyDown={[Function]}
-          role="menu"
-          tabIndex={-1}
-        >
-          <li
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c9 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-            data-menuitem-id="menu-item-0"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="menuitem"
-            tabIndex={0}
-          >
-            Task
-          </li>
-          <li
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c9 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-            data-menuitem-id="menu-item-0"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="menuitem"
-            tabIndex={-1}
-          >
-            Cool
-          </li>
-        </ul>
-      </div>
-      <div
-        data-test="sentinelEnd"
-        tabIndex={0}
-      />
-    </div>
   </div>
   <div
     className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
@@ -4201,7 +2708,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
       round
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c14 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c13 MuiButtonGroup-disableElevation"
       role="group"
     >
       <button
@@ -4294,94 +2801,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
         </span>
       </button>
     </div>
-    <div
-      className="MuiPopover-root "
-      onKeyDown={[Function]}
-      role="presentation"
-      style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-          "visibility": "hidden",
-          "zIndex": 1300,
-        }
-      }
-    >
-      <div
-        data-test="sentinelStart"
-        tabIndex={0}
-      />
-      <div
-        className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
-        style={
-          Object {
-            "opacity": 0,
-            "transform": "scale(0.75, 0.5625)",
-            "visibility": "hidden",
-          }
-        }
-        tabIndex="-1"
-      >
-        <ul
-          className="MuiList-root MuiMenu-list MuiList-padding"
-          onKeyDown={[Function]}
-          role="menu"
-          tabIndex={-1}
-        >
-          <li
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c9 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-            data-menuitem-id="menu-item-0"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="menuitem"
-            tabIndex={0}
-          >
-            Task
-          </li>
-          <li
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c9 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-            data-menuitem-id="menu-item-0"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="menuitem"
-            tabIndex={-1}
-          >
-            Cool
-          </li>
-        </ul>
-      </div>
-      <div
-        data-test="sentinelEnd"
-        tabIndex={0}
-      />
-    </div>
   </div>
   <div
     className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
@@ -4399,12 +2818,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
       plainIcon
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c15 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c14 MuiButtonGroup-disableElevation"
       role="group"
     >
       <button
         aria-label="mainAction"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 c13 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation Mui-disabled RcButton-disabled Mui-disabled"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 c12 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation Mui-disabled RcButton-disabled Mui-disabled"
         disabled={true}
         onBlur={[Function]}
         onClick={[Function]}
@@ -4454,7 +2873,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
       <button
         aria-haspopup="listbox"
         aria-label="openMenu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 c13 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation Mui-disabled RcButton-disabled Mui-disabled"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2 c12 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation Mui-disabled RcButton-disabled Mui-disabled"
         disabled={true}
         onBlur={[Function]}
         onClick={[Function]}
@@ -4491,94 +2910,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
           </span>
         </span>
       </button>
-    </div>
-    <div
-      className="MuiPopover-root "
-      onKeyDown={[Function]}
-      role="presentation"
-      style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-          "visibility": "hidden",
-          "zIndex": 1300,
-        }
-      }
-    >
-      <div
-        data-test="sentinelStart"
-        tabIndex={0}
-      />
-      <div
-        className="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
-        style={
-          Object {
-            "opacity": 0,
-            "transform": "scale(0.75, 0.5625)",
-            "visibility": "hidden",
-          }
-        }
-        tabIndex="-1"
-      >
-        <ul
-          className="MuiList-root MuiMenu-list MuiList-padding"
-          onKeyDown={[Function]}
-          role="menu"
-          tabIndex={-1}
-        >
-          <li
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c9 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-            data-menuitem-id="menu-item-0"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="menuitem"
-            tabIndex={0}
-          >
-            Task
-          </li>
-          <li
-            aria-disabled={false}
-            className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c9 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-            data-menuitem-id="menu-item-0"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="menuitem"
-            tabIndex={-1}
-          >
-            Cool
-          </li>
-        </ul>
-      </div>
-      <div
-        data-test="sentinelEnd"
-        tabIndex={0}
-      />
     </div>
   </div>
 </div>

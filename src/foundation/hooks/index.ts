@@ -5,6 +5,7 @@ export * from './useChange';
 export * from './useDebounce';
 export * from './useEventCallback';
 export * from './useEventListener';
+export * from './useEver';
 export * from './useForceUpdate';
 export * from './useForkRef';
 export * from './useHiddenTabindex';

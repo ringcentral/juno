@@ -19,6 +19,7 @@ import {
   RcClassesProps,
   styled,
   UnionOmit,
+  useEver,
   useEventCallback,
   useForkRef,
   useTheme,
@@ -121,8 +122,8 @@ const _RcSplitButton = forwardRef<any, RcSplitButtonProps>(
 
     const innerRef = useRef<HTMLButtonElement>(null);
     const splitRef = useForkRef(innerRef, ref);
-
     const isMenuOpen = !!anchorEl;
+    const isMenuEverOpen = useEver(isMenuOpen);
 
     const { classes, actionButtonClassName, controlButtonClassName } =
       useMemo(() => {
@@ -324,14 +325,16 @@ const _RcSplitButton = forwardRef<any, RcSplitButtonProps>(
             />
           </RcButton>
         </RcButtonGroup>
-        <RcMenu
-          {...MenuProps}
-          anchorEl={anchorEl}
-          open={isMenuOpen}
-          onClose={handleClose}
-        >
-          {children}
-        </RcMenu>
+        {isMenuEverOpen && (
+          <RcMenu
+            {...MenuProps}
+            anchorEl={anchorEl}
+            open={isMenuOpen}
+            onClose={handleClose}
+          >
+            {children}
+          </RcMenu>
+        )}
       </>
     );
   },
