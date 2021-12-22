@@ -64,6 +64,8 @@ export interface RcDownshiftRenderOptionState {
   selected: boolean;
   /** that item index */
   index: number;
+  /** sort index in option own group */
+  indexInOwnGroup?: number;
   /** if that item is group title, that have that `expanded` state */
   expanded?: boolean;
   /** if that item is group title, that will have that `expandIconProps` */

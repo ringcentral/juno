@@ -40,7 +40,7 @@ import {
   VirtuosoHandle,
   VirtuosoProps,
 } from '../../Virtuoso';
-import { RcDownshiftProps } from '../Downshift';
+import { RcDownshiftProps, RcDownshiftRenderOptionState } from '../Downshift';
 import {
   RcDownshiftGetItemPropsOptions,
   RcDownshiftGroupedOption,
@@ -279,15 +279,20 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
         key: itemProps.id,
       };
 
+      const indexInOwnGroup = resultProps.indexInOwnGroup;
+
+      delete resultProps.indexInOwnGroup;
+
       // * when item is not disabled, that should check outside is that disabled
       if (!resultProps.freeSolo && !resultProps.disabled && getOptionDisabled) {
         resultProps.disabled = getOptionDisabled(option);
       }
 
-      const state = {
+      const state: RcDownshiftRenderOptionState = {
         inputValue,
         selected,
         index,
+        indexInOwnGroup,
       };
 
       if (renderGroup && isGroupTitle) {

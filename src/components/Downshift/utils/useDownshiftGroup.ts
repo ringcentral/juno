@@ -104,9 +104,11 @@ export const useDownshiftGroup = <
           const group = groupBy(option);
 
           if (acc.length > 0 && acc[acc.length - 1].group === group) {
+            const currGroup = acc[acc.length - 1];
             acc[acc.length - 1].options.push({
               ...option,
-              group: acc[acc.length - 1],
+              group: currGroup,
+              indexInOwnGroup: currGroup.options.length - 1,
             });
           } else {
             if (process.env.NODE_ENV !== 'production') {
@@ -125,7 +127,7 @@ export const useDownshiftGroup = <
               key: index,
               index,
               group,
-              options: [{ ...option }],
+              options: [{ ...option, indexInOwnGroup: 0 }],
               expanded: false,
               getExpandIconProps: (additionExpandIconProps) => {
                 return newGroup.options.length > 1

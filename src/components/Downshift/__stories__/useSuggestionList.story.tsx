@@ -142,7 +142,7 @@ export const useSuggestionListExample: Story<any> = () => {
             const groupName = group!.group;
             const groupTotal = group!.options.length - 1 || 0;
 
-            const currIndex = state.index - group!.index;
+            const currIndex = (state.indexInOwnGroup || 0) + 1;
 
             return (
               <RcMenuItem
