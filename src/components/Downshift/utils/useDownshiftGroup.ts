@@ -127,6 +127,7 @@ export const useDownshiftGroup = <
               key: index,
               index,
               group,
+              order: acc.length,
               options: [{ ...option, indexInOwnGroup: 0 }],
               expanded: false,
               getExpandIconProps: (additionExpandIconProps) => {

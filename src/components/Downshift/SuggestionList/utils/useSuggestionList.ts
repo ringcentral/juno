@@ -1,14 +1,19 @@
-import { ChangeEvent, HTMLAttributes, useMemo, useRef } from 'react';
-
-import uniqueId from 'lodash/uniqueId';
+import {
+  ChangeEvent,
+  HTMLAttributes,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+} from 'react';
 
 import { useControlled } from '@material-ui/core/utils';
 
 import {
   combineProps,
   useForceUpdate,
+  useId,
   useKeyboardMoveFocus,
-  useResultRef,
 } from '../../../../foundation';
 import { RcIconButtonProps } from '../../../Buttons/IconButton';
 import { RcTextFieldProps } from '../../../Forms';
@@ -16,17 +21,23 @@ import { RcDownshiftProps } from '../../Downshift';
 import {
   DEFAULT_GET_OPTION_LABEL,
   isItemCanSelected,
+} from '../../utils/DownshiftUtils';
+import { RcDownshiftSelectedItem } from '../../utils/SelectItem';
+import {
   RcDownshiftGetItemPropsOptions,
   RcDownshiftHighlightChangeReason,
-  RcDownshiftSelectedItem,
-} from '../../utils';
+} from '../../utils/useDownshift.interface';
 import { useDownshiftGroup } from '../../utils/useDownshiftGroup';
 
 const DEFAULT_HIGHLIGHTED_INDEX = -1;
 
 type UseDownshiftParams<T = RcDownshiftSelectedItem> = {
+  /** current suggestion list unique id */
+  id?: string;
   /** that input ref you binding event */
   inputRef: React.RefObject<HTMLInputElement>;
+  /** process filtered options result, let you can handle result after filter */
+  processFilteredResult?: (options: T[], inputValue: string) => T[];
   /** emit when item be select */
   onSelect?: (event: React.ChangeEvent<{}>, selectedItems: T) => void;
 } & Pick<
@@ -58,6 +69,7 @@ const componentName = 'useSuggestionList';
 export const useSuggestionList = <
   T extends RcDownshiftSelectedItem = RcDownshiftSelectedItem,
 >({
+  id,
   inputValue: inputValueProp,
   getOptionLabel = DEFAULT_GET_OPTION_LABEL,
   filterOptions,
@@ -75,7 +87,9 @@ export const useSuggestionList = <
   groupExpanded,
   groupDefaultExpanded,
   getExpandIconProps,
+  processFilteredResult,
 }: UseDownshiftParams<T>) => {
+  const isTitleMode = groupVariant === 'normal';
   const [inputValue, setInputValue] = useControlled({
     controlled: inputValueProp,
     default: '',
@@ -89,18 +103,16 @@ export const useSuggestionList = <
 
   const focusInput = () => inputRef.current?.focus();
 
-  const { current: suggestionListId } = useResultRef(() =>
-    uniqueId(`suggestion-list-`),
-  );
-  // * use -2 for us know that is init state, for recalculate defaultHighlightedIndex
+  const currUniqueId = useId(id || 'suggestion-list', !id);
+
   const highlightedIndexRef = useRef(DEFAULT_HIGHLIGHTED_INDEX);
-  const changeHighlightedIndexReason =
+  const changeHighlightedIndexReasonRef =
     useRef<RcDownshiftHighlightChangeReason>();
 
   const forceUpdate = useForceUpdate();
 
-  const filteredResult = useMemo(() => {
-    const getFilteredItems = (items: T[]) => {
+  const getFilteredItems = useCallback(
+    (items: T[]) => {
       if (filterOptions) {
         return filterOptions(items, {
           inputValue,
@@ -110,26 +122,33 @@ export const useSuggestionList = <
       }
 
       return items;
-    };
+    },
+    [filterOptions, getOptionLabel, inputValue],
+  );
 
+  const filteredResult = useMemo(() => {
     // * only when isOpen calculate the filtered result
-    const results = getFilteredItems(options!);
+    let results = getFilteredItems(options!);
+
+    results = processFilteredResult
+      ? processFilteredResult(results, inputValue)
+      : results;
 
     return results;
-  }, [filterOptions, getOptionLabel, inputValue, options]);
+  }, [getFilteredItems, inputValue, options, processFilteredResult]);
 
   const { groupedResult, handleGroupExpandedChange, optionsGroupList } =
     useDownshiftGroup<T>({
-      groupBy,
+      id: currUniqueId,
       options,
       filteredResult,
-      getExpandIconProps,
       groupExpanded,
       groupDefaultExpanded,
-      onGroupExpanded,
       groupVariant,
+      groupBy,
+      getExpandIconProps,
+      onGroupExpanded,
       getOptionDisabled,
-      id: suggestionListId,
     });
 
   const optionItems = groupBy ? groupedResult : filteredResult;
@@ -144,7 +163,7 @@ export const useSuggestionList = <
       reason?: RcDownshiftHighlightChangeReason;
     },
   ) => {
-    changeHighlightedIndexReason.current = reason;
+    changeHighlightedIndexReasonRef.current = reason;
 
     if (highlightedIndexRef.current !== index) {
       highlightedIndexRef.current = index;
@@ -170,7 +189,7 @@ export const useSuggestionList = <
     );
   };
 
-  const selectItemFn = (e: ChangeEvent<{}>, selectedItem: T | null) => {
+  const selectItem = (e: ChangeEvent<{}>, selectedItem: T | null) => {
     if (getIsItemCanSelected(selectedItem)) {
       onSelect?.(e, selectedItem);
 
@@ -179,65 +198,97 @@ export const useSuggestionList = <
     return false;
   };
 
-  const resetState = () => {
+  const clearInput = () => {
     if (inputRef.current && inputRef.current.value.length > 0) {
       updateInputValue('');
     }
   };
 
   const reset = (isFocus?: boolean) => {
-    resetState();
+    clearInput();
 
     onInputChangeProp?.('');
     if (isFocus) focusInput();
   };
 
-  const { onKeyFocusedIndexHandle } = useKeyboardMoveFocus<T>({
-    options: optionItems,
-    focusedIndexRef: highlightedIndexRef,
-    infinite: true,
-    onFocusedIndexChange: (event, toIndex) => {
-      setHighlightedIndex(toIndex, { reason: 'keyboard', reRender: true });
+  const { onKeyFocusedIndexHandle, getNextFocusableOption } =
+    useKeyboardMoveFocus<T>({
+      options: optionItems,
+      focusedIndexRef: highlightedIndexRef,
+      infinite: true,
+      onFocusedIndexChange: (event, toIndex) => {
+        setHighlightedIndex(toIndex, { reason: 'keyboard', reRender: true });
 
-      event?.preventDefault();
-    },
-    getOptionDisabled: disabledItemsHighlightable
-      ? undefined
-      : (child) => {
-          return !getIsItemCanSelected(child);
-        },
-  });
+        event?.preventDefault();
+      },
+      getOptionDisabled: disabledItemsHighlightable
+        ? undefined
+        : (child) => {
+            return !getIsItemCanSelected(child);
+          },
+    });
 
   const getItemProps = ({
     item,
-    index,
+    index = 0,
     ...itemRest
   }: RcDownshiftGetItemPropsOptions<T>) => {
+    const currGroup = item.group;
+    const isGroupTitle = item === currGroup?.options[0];
+    const itemCount = optionItems.length;
+    const groupOrder = currGroup?.order || 0;
+
     return combineProps(
       {
-        id: `${suggestionListId}-option-${index}`,
-        role: 'option',
+        id: `${currUniqueId}-option-${index}`,
         onClick: (e) => {
-          selectItemFn(e, item);
+          selectItem(e, item);
         },
         onMouseDown: (e) => {
           e.preventDefault();
           e.stopPropagation();
         },
         onMouseOver: () => {
-          if (highlightedIndexRef.current !== index) {
+          if (
+            highlightedIndexRef.current !== index &&
+            getIsItemCanSelected(item)
+          ) {
             setHighlightedIndex(index!, { reason: 'mouse', reRender: true });
           }
         },
+        // When title mode and is title, skip that posinset
+        ...(isTitleMode && isGroupTitle
+          ? {}
+          : {
+              role: 'option',
+              'aria-setsize':
+                itemCount - (isTitleMode ? optionsGroupList?.length || 0 : 0),
+              'aria-posinset': index - (isTitleMode ? groupOrder + 1 : 0),
+            }),
       },
       itemRest,
     );
   };
 
+  const handleF10KeyDown = (
+    e: React.KeyboardEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const highlightedIndex = highlightedIndexRef.current;
+
+    if (e.shiftKey) {
+      const currOption = optionItems[highlightedIndex];
+      const currentGroup = currOption.group;
+
+      if (currentGroup && currentGroup.options.length > 1) {
+        handleGroupExpandedChange(currentGroup.group);
+      }
+    }
+  };
+
   const getInputProps = (props?: RcTextFieldProps['InputProps']) => {
     return combineProps(
       {
-        id: `${suggestionListId}-input`,
+        id: `${currUniqueId}-input`,
         autoComplete: 'off',
         onChange: (e) => {
           const changeValue = e.target.value;
@@ -246,19 +297,13 @@ export const useSuggestionList = <
         onKeyDown: (e) => {
           onKeyDownProp?.(e, highlightedIndexRef.current);
 
-          const highlightedIndex = highlightedIndexRef.current;
           switch (e.key) {
             case 'F10':
-              if (e.shiftKey) {
-                const currOption = optionItems[highlightedIndex];
-                const currentGroup = currOption.group;
-
-                if (currentGroup && currentGroup.options.length > 1) {
-                  handleGroupExpandedChange(currentGroup.group);
-                }
-              }
+              handleF10KeyDown(e);
               break;
-            case 'Enter':
+            case 'Enter': {
+              const highlightedIndex = highlightedIndexRef.current;
+
               if (e.which === 229) return;
               if (highlightedIndex !== DEFAULT_HIGHLIGHTED_INDEX) {
                 const currOption = optionItems[highlightedIndex];
@@ -270,7 +315,7 @@ export const useSuggestionList = <
 
                   onClick?.(e as any);
                 } else {
-                  selectItemFn(e, currOption);
+                  selectItem(e, currOption);
                 }
 
                 e.stopPropagation();
@@ -278,6 +323,7 @@ export const useSuggestionList = <
               // always preventDefault for not inset all enter into textarea
               e.preventDefault();
               break;
+            }
             default:
               onKeyFocusedIndexHandle(e);
               break;
@@ -295,13 +341,12 @@ export const useSuggestionList = <
         onContainerClick: focusInput,
         role: 'combobox',
         'aria-autocomplete': 'list',
-        // TODO
         'aria-expanded': true,
         'aria-haspopup': true,
-        'aria-owns': `${suggestionListId}-menu`,
+        'aria-owns': `${currUniqueId}-menu`,
         'aria-activedescendant':
           highlightedIndexRef.current > -1
-            ? `${suggestionListId}-option-${highlightedIndexRef.current}`
+            ? `${currUniqueId}-option-${highlightedIndexRef.current}`
             : undefined,
       },
       props,
@@ -311,8 +356,8 @@ export const useSuggestionList = <
   const getLabelProps = (props?: RcTextFieldProps['InputLabelProps']) => {
     return combineProps(
       {
-        htmlFor: `${suggestionListId}-input`,
-        id: `${suggestionListId}-label`,
+        htmlFor: `${currUniqueId}-input`,
+        id: `${currUniqueId}-label`,
       },
       props,
     );
@@ -321,8 +366,8 @@ export const useSuggestionList = <
   const getMenuProps = (restMenuProps?: HTMLAttributes<HTMLElement>) => {
     return combineProps(
       {
-        'aria-labelledby': `${suggestionListId}-label`,
-        id: `${suggestionListId}-menu`,
+        'aria-labelledby': `${currUniqueId}-label`,
+        id: `${currUniqueId}-menu`,
         role: 'listbox',
       },
       restMenuProps,
@@ -332,7 +377,7 @@ export const useSuggestionList = <
   const getClearButtonProps = (props?: RcIconButtonProps) => {
     return combineProps(
       {
-        id: `${suggestionListId}-clear-button`,
+        id: `${currUniqueId}-clear-button`,
         onClick: (e) => {
           onClear?.(e);
           reset(true);
@@ -342,27 +387,36 @@ export const useSuggestionList = <
     );
   };
 
-  const resultObj = {
+  useEffect(() => {
+    changeHighlightedIndexReasonRef.current = undefined;
+  });
+
+  return {
+    reset,
+    clearInput,
+    forceUpdate,
     focusInput,
+    updateInputValue,
+    selectItem,
+    onKeyFocusedIndexHandle,
     getClearButtonProps,
     getLabelProps,
     getMenuProps,
     getInputProps,
     getInputAriaProps,
     getItemProps,
+    highlightedIndexRef,
     highlightedIndex: highlightedIndexRef.current,
     optionItems,
     inputValue,
     onInputChange: handleInputChange,
     setHighlightedIndex,
-    changeHighlightedIndexReason: changeHighlightedIndexReason.current,
-    reset,
-    forceUpdate,
+    changeHighlightedIndexReasonRef,
+    changeHighlightedIndexReason: changeHighlightedIndexReasonRef.current,
     optionsGroupList,
-    /** current suggestion list id */
-    id: suggestionListId,
+    /** current unique id */
+    id: currUniqueId,
+    getNextFocusableOption,
+    handleF10KeyDown,
   };
-
-  changeHighlightedIndexReason.current = undefined;
-  return resultObj;
 };

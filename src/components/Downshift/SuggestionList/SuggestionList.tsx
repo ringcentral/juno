@@ -145,7 +145,7 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
     const vlRef = useRef<VirtuosoHandle>(null);
     const forkVlRef = useForkRef(ref, vlRef);
 
-    const isTitleGroup = groupVariant === 'normal';
+    const isTitleMode = groupVariant === 'normal';
 
     const listRef = useRef<HTMLElement>(null);
 
@@ -228,7 +228,7 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
           prevHighlightedIndex,
           highlightedIndex,
           // when title group topHighlightIndex to be 1, first item is group title
-          isTitleGroup ? 1 : 0,
+          isTitleMode ? 1 : 0,
         );
       }
     });
@@ -248,13 +248,10 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
       const currGroup = option.group;
       const isGroupTitle = option === currGroup?.options[0];
 
-      const groupIndex =
-        optionsGroupList?.findIndex((x) => x.group === currGroup?.group) || 0;
-
       const isFixedGroupExpanded = typeof groupExpanded === 'boolean';
 
       const expandIconProps =
-        !isTitleGroup && !isFixedGroupExpanded && isGroupTitle
+        !isTitleMode && !isFixedGroupExpanded && isGroupTitle
           ? option.group?.getExpandIconProps?.({
               className: clsx(classes.toggle, {
                 [classes.expanded]: option.group?.expanded,
@@ -273,9 +270,6 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
       const resultProps = {
         ...option,
         ...itemProps,
-        'aria-setsize':
-          itemCount - (isTitleGroup ? optionsGroupList?.length || 0 : 0),
-        'aria-posinset': index - (isTitleGroup ? groupIndex : 0),
         key: itemProps.id,
       };
 

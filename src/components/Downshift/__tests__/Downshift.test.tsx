@@ -917,10 +917,10 @@ describe('Downshift', () => {
     maxFreeSolo  | tagsCount
     ${undefined} | ${20}
     ${10}        | ${10}
-  `('[Downshift] maxFreeSolo logic', (values) => {
+  `('[Downshift] maxFreeSolo logic', async (values) => {
     const onMaxFreeSolo = jest.fn();
 
-    EachRun<any, InitContext>`
+    await EachRun<any, InitContext>`
       Scenario: maxFreeSolo logic
       Given: multiple is true
       And: maxFreeSolo is $maxFreeSolo
@@ -1498,10 +1498,14 @@ describe('Downshift GroupBy', () => {
         )}
       When: focus input ${focusInput}
       And: menu is open ${openMenu} ${() => checkMenuOpen(true)}
-      Then: total menu item length to be $totalCount ${(args, context) => {
+      Then: total menu item length and title length to be $totalCount ${(
+        args,
+        context,
+      ) => {
         const items = context.result.queryAllByRole('option');
+        const menuitems = context.result.queryAllByRole('menuitem');
 
-        expect(items.length).toEqual(args.totalCount);
+        expect(items.length + menuitems.length).toEqual(args.totalCount);
       }}
       And: group length to be 5
       And: each title item should be disabled ${(args, context) => {

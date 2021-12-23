@@ -53,8 +53,10 @@ export type RcDownshiftSelectedItemAdditionProps = {
 export interface RcDownshiftGroupedOption<T = RcDownshiftSelectedItem> {
   /** group key */
   key: number;
-  /** group index */
+  /** group index in all options */
   index: number;
+  /** group order in all group */
+  order: number;
   /** group title */
   group: string;
   /** expanded state */

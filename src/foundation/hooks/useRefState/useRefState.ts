@@ -31,7 +31,14 @@ export const useRefState = <T>(value: T, customUpdate?: () => void) => {
    * update ref value, set isUpdate to `false` will not trigger re-render
    */
   const setInnerValue = useEventCallback(
-    (toValue: T, isUpdate: boolean = true) => {
+    (
+      toValue: T,
+      /**
+       * is re-render
+       * @default true
+       */
+      isUpdate: boolean = true,
+    ) => {
       innerValueRef.current = toValue;
 
       if (isUpdate) {

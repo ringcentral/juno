@@ -48,7 +48,7 @@ export const useSuggestionListExample: Story<any> = () => {
     getItemProps,
     inputValue,
     optionsGroupList,
-    // setHighlightedIndex,
+    setHighlightedIndex,
     // reset,
   } = useSuggestionList({
     inputRef,
@@ -93,8 +93,15 @@ export const useSuggestionListExample: Story<any> = () => {
     },
   });
 
-  const { onFocus, onBlur, ...InputProps } = getInputProps({
-    onKeyDown: () => {},
+  const InputProps = getInputProps({
+    onKeyDown: () => {
+      // you can add some keydown logic here
+    },
+    onBlur: () => {
+      // you can add some blur logic here
+      // like reset index to top
+      // setHighlightedIndex(-1, { reason: 'auto', reRender: true });
+    },
   });
 
   return (

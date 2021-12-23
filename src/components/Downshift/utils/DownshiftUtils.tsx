@@ -63,3 +63,10 @@ export const RcAutocompleteDefaultFilterOptions: RcDownshiftProps['filterOptions
         .startsWith(inputValue?.toLowerCase() || ''),
     );
   };
+
+export const downshiftComponentName = 'RcDownshift';
+
+export function stringArrToRegExp(keyToTags?: string[]): RegExp {
+  // eslint-disable-next-line security/detect-non-literal-regexp
+  return new RegExp(keyToTags?.join('|') || '', 'g');
+}

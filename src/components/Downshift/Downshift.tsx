@@ -237,7 +237,7 @@ type RcDownshiftProps<
     getNoOptionsProps: (
       additionProps?: HTMLAttributes<HTMLElement>,
     ) => HTMLAttributes<HTMLElement>,
-    additionItem?: RcDownshiftSelectedItem,
+    additionItem: RcDownshiftSelectedItem | null,
   ) => React.ReactNode;
   /**
    * one of that character, also can be confirm a tag
@@ -565,7 +565,7 @@ const _RcDownshift = memo(
       focusInput,
       optionItems,
       optionsGroupList,
-      selectedItems,
+      tags: selectedItems,
       highlightedIndex,
       getToggleButtonProps,
       getTagProps,
@@ -578,7 +578,6 @@ const _RcDownshift = memo(
       getItemProps,
       isOpen,
       inputValue,
-      isTagsFocus,
       activeIndex,
       setActiveIndex,
       setHighlightedIndex,
@@ -592,7 +591,7 @@ const _RcDownshift = memo(
       noOptionItem,
       getNoOptionsProps,
       isKeepHighlightedIndex,
-      isFocused,
+      focused: isDownshiftFocused,
     } = useDownshift({
       focused,
       open: openProp,
@@ -723,9 +722,6 @@ const _RcDownshift = memo(
             );
           });
     })();
-
-    const isDownshiftFocused =
-      focused ?? (isTagsFocus || isFocused ? true : undefined);
 
     const endAdornment = (toggleButton || clearBtn) && (
       <EndAdornment>
