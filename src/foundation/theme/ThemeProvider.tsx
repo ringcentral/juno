@@ -16,20 +16,23 @@ import createTheme from './createTheme';
 import { RcThemeInput } from './theme.type';
 import { useResultRef } from '../hooks';
 
-export type RcThemeProviderProps = {
+export type RcSubThemeProviderProps = {
   /** custom theme */
   theme?: RcThemeInput;
   children?: ReactNode;
+};
+
+export type RcThemeProviderProps = {
   /** prefix the mui global class */
   prefixGlobalClass?: string;
-};
+} & RcSubThemeProviderProps;
 
 /**
  * sub theme provider,
  * that will use when you want use multiple theme in one app
  * that will user parent's theme when not set theme
  */
-export const RcSubThemeProvider: FunctionComponent<RcThemeProviderProps> = ({
+export const RcSubThemeProvider: FunctionComponent<RcSubThemeProviderProps> = ({
   theme: themeProp,
   children,
 }) => {

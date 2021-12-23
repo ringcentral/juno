@@ -83,7 +83,7 @@ export interface PortalController<
 
 export type UpdatePropsHandler<P extends {} = {}> = (
   preProps?: UncontrolledProps<P>,
-) => UncontrolledProps<P>;
+) => Partial<UncontrolledProps<P>>;
 
 export type ControlledProps<P extends {} = {}, F = undefined> = P & {
   onClose: (feedback?: F) => void;
