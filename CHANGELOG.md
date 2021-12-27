@@ -1,4 +1,27 @@
 
+### [1.12.4](https://github.com/ringcentral/juno/compare/1.12.3...1.12.4) (2021-12-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **TimePicker:** [TimePicker] emit `null` when click clear, previous is `undefined`
+
+### Features
+
+* **Downshift:** support indexInOwnGroup field ([bb2661a](https://github.com/ringcentral/juno/commit/bb2661a711f8b57f789c61b293f5295b75711420))
+* **Fix runtime error when render in next.js:** detect window existed ([82f0e1c](https://github.com/ringcentral/juno/commit/82f0e1ccb74f87c14c9bb4b9568801b32e2f3209))
+* **RCUI-675:** [useEver] provide hook for return `true` when the value ever to be `you want value` once. ([e167f84](https://github.com/ringcentral/juno/commit/e167f840f6ed98effd8c7533546f96f0582448c2))
+* **SplitButton:** improve the render performance ([e167f84](https://github.com/ringcentral/juno/commit/e167f840f6ed98effd8c7533546f96f0582448c2))
+* **ThemeProviderjss:** support prefix class ([5ef0fc6](https://github.com/ringcentral/juno/commit/5ef0fc6a362292dc986e06068f913e403310eb16))
+* **Type:** improve PortalManager and SubThemeProvider type ([a17e957](https://github.com/ringcentral/juno/commit/a17e9579b7bd8b24802fdc273234ada26ddb1527))
+
+
+### Bug Fixes
+
+* **TimePicker:** add description for time picker utils, and re-export that ([5703a34](https://github.com/ringcentral/juno/commit/5703a34d9d05a749721d2ee2a3b4819085949519))
+* **TimePicker:** fix TimePicker text be empty when is 00:00 ([17a1103](https://github.com/ringcentral/juno/commit/17a11036c1e5716d966802c660800af5016ee196))
+* **TimePicker:** support dateMode type generic and emit `null` when click clear ([c98c4c3](https://github.com/ringcentral/juno/commit/c98c4c364c277e04be47130f47a4886f40566475))
+
 ### [1.12.3](https://github.com/ringcentral/juno/compare/1.12.2...1.12.3) (2021-12-16)
 
 
