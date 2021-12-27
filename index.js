@@ -306,23 +306,23 @@ var require_checkPropTypes = __commonJS({
     var ReactPropTypesSecret;
     var loggedTypeFailures;
     var has;
-    function checkPropTypes(typeSpecs, values6, location, componentName3, getStack) {
+    function checkPropTypes(typeSpecs, values6, location, componentName2, getStack) {
       if (true) {
         for (var typeSpecName in typeSpecs) {
           if (has(typeSpecs, typeSpecName)) {
             var error4;
             try {
               if (typeof typeSpecs[typeSpecName] !== "function") {
-                var err = Error((componentName3 || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`.");
+                var err = Error((componentName2 || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`.");
                 err.name = "Invariant Violation";
                 throw err;
               }
-              error4 = typeSpecs[typeSpecName](values6, typeSpecName, componentName3, location, null, ReactPropTypesSecret);
+              error4 = typeSpecs[typeSpecName](values6, typeSpecName, componentName2, location, null, ReactPropTypesSecret);
             } catch (ex) {
               error4 = ex;
             }
             if (error4 && !(error4 instanceof Error)) {
-              printWarning((componentName3 || "React class") + ": type specification of " + location + " `" + typeSpecName + "` is invalid; the type checker function must return `null` or an `Error` but returned a " + typeof error4 + ". You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).");
+              printWarning((componentName2 || "React class") + ": type specification of " + location + " `" + typeSpecName + "` is invalid; the type checker function must return `null` or an `Error` but returned a " + typeof error4 + ". You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).");
             }
             if (error4 instanceof Error && !(error4.message in loggedTypeFailures)) {
               loggedTypeFailures[error4.message] = true;
@@ -415,8 +415,8 @@ var require_factoryWithTypeCheckers = __commonJS({
           var manualPropTypeCallCache = {};
           var manualPropTypeWarningCount = 0;
         }
-        function checkType(isRequired, props, propName, componentName3, location, propFullName, secret) {
-          componentName3 = componentName3 || ANONYMOUS;
+        function checkType(isRequired, props, propName, componentName2, location, propFullName, secret) {
+          componentName2 = componentName2 || ANONYMOUS;
           propFullName = propFullName || propName;
           if (secret !== ReactPropTypesSecret) {
             if (throwOnDirectAccess) {
@@ -424,9 +424,9 @@ var require_factoryWithTypeCheckers = __commonJS({
               err.name = "Invariant Violation";
               throw err;
             } else if (typeof console !== "undefined") {
-              var cacheKey = componentName3 + ":" + propName;
+              var cacheKey = componentName2 + ":" + propName;
               if (!manualPropTypeCallCache[cacheKey] && manualPropTypeWarningCount < 3) {
-                printWarning("You are manually calling a React.PropTypes validation function for the `" + propFullName + "` prop on `" + componentName3 + "`. This is deprecated and will throw in the standalone `prop-types` package. You may be seeing this warning due to a third-party PropTypes library. See https://fb.me/react-warning-dont-call-proptypes for details.");
+                printWarning("You are manually calling a React.PropTypes validation function for the `" + propFullName + "` prop on `" + componentName2 + "`. This is deprecated and will throw in the standalone `prop-types` package. You may be seeing this warning due to a third-party PropTypes library. See https://fb.me/react-warning-dont-call-proptypes for details.");
                 manualPropTypeCallCache[cacheKey] = true;
                 manualPropTypeWarningCount++;
               }
@@ -435,13 +435,13 @@ var require_factoryWithTypeCheckers = __commonJS({
           if (props[propName] == null) {
             if (isRequired) {
               if (props[propName] === null) {
-                return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required " + ("in `" + componentName3 + "`, but its value is `null`."));
+                return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required " + ("in `" + componentName2 + "`, but its value is `null`."));
               }
-              return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required in " + ("`" + componentName3 + "`, but its value is `undefined`."));
+              return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required in " + ("`" + componentName2 + "`, but its value is `undefined`."));
             }
             return null;
           } else {
-            return validate(props, propName, componentName3, location, propFullName);
+            return validate(props, propName, componentName2, location, propFullName);
           }
         }
         var chainedCheckType = checkType.bind(null, false);
@@ -449,12 +449,12 @@ var require_factoryWithTypeCheckers = __commonJS({
         return chainedCheckType;
       }
       function createPrimitiveTypeChecker(expectedType) {
-        function validate(props, propName, componentName3, location, propFullName, secret) {
+        function validate(props, propName, componentName2, location, propFullName, secret) {
           var propValue = props[propName];
           var propType = getPropType(propValue);
           if (propType !== expectedType) {
             var preciseType = getPreciseType(propValue);
-            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + preciseType + "` supplied to `" + componentName3 + "`, expected ") + ("`" + expectedType + "`."));
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + preciseType + "` supplied to `" + componentName2 + "`, expected ") + ("`" + expectedType + "`."));
           }
           return null;
         }
@@ -464,17 +464,17 @@ var require_factoryWithTypeCheckers = __commonJS({
         return createChainableTypeChecker(emptyFunctionThatReturnsNull);
       }
       function createArrayOfTypeChecker(typeChecker) {
-        function validate(props, propName, componentName3, location, propFullName) {
+        function validate(props, propName, componentName2, location, propFullName) {
           if (typeof typeChecker !== "function") {
-            return new PropTypeError("Property `" + propFullName + "` of component `" + componentName3 + "` has invalid PropType notation inside arrayOf.");
+            return new PropTypeError("Property `" + propFullName + "` of component `" + componentName2 + "` has invalid PropType notation inside arrayOf.");
           }
           var propValue = props[propName];
           if (!Array.isArray(propValue)) {
             var propType = getPropType(propValue);
-            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName3 + "`, expected an array."));
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName2 + "`, expected an array."));
           }
           for (var i2 = 0; i2 < propValue.length; i2++) {
-            var error4 = typeChecker(propValue, i2, componentName3, location, propFullName + "[" + i2 + "]", ReactPropTypesSecret);
+            var error4 = typeChecker(propValue, i2, componentName2, location, propFullName + "[" + i2 + "]", ReactPropTypesSecret);
             if (error4 instanceof Error) {
               return error4;
             }
@@ -484,33 +484,33 @@ var require_factoryWithTypeCheckers = __commonJS({
         return createChainableTypeChecker(validate);
       }
       function createElementTypeChecker() {
-        function validate(props, propName, componentName3, location, propFullName) {
+        function validate(props, propName, componentName2, location, propFullName) {
           var propValue = props[propName];
           if (!isValidElement20(propValue)) {
             var propType = getPropType(propValue);
-            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName3 + "`, expected a single ReactElement."));
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName2 + "`, expected a single ReactElement."));
           }
           return null;
         }
         return createChainableTypeChecker(validate);
       }
       function createElementTypeTypeChecker() {
-        function validate(props, propName, componentName3, location, propFullName) {
+        function validate(props, propName, componentName2, location, propFullName) {
           var propValue = props[propName];
           if (!ReactIs.isValidElementType(propValue)) {
             var propType = getPropType(propValue);
-            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName3 + "`, expected a single ReactElement type."));
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName2 + "`, expected a single ReactElement type."));
           }
           return null;
         }
         return createChainableTypeChecker(validate);
       }
       function createInstanceTypeChecker(expectedClass) {
-        function validate(props, propName, componentName3, location, propFullName) {
+        function validate(props, propName, componentName2, location, propFullName) {
           if (!(props[propName] instanceof expectedClass)) {
             var expectedClassName = expectedClass.name || ANONYMOUS;
             var actualClassName = getClassName(props[propName]);
-            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + actualClassName + "` supplied to `" + componentName3 + "`, expected ") + ("instance of `" + expectedClassName + "`."));
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + actualClassName + "` supplied to `" + componentName2 + "`, expected ") + ("instance of `" + expectedClassName + "`."));
           }
           return null;
         }
@@ -527,7 +527,7 @@ var require_factoryWithTypeCheckers = __commonJS({
           }
           return emptyFunctionThatReturnsNull;
         }
-        function validate(props, propName, componentName3, location, propFullName) {
+        function validate(props, propName, componentName2, location, propFullName) {
           var propValue = props[propName];
           for (var i2 = 0; i2 < expectedValues.length; i2++) {
             if (is3(propValue, expectedValues[i2])) {
@@ -541,23 +541,23 @@ var require_factoryWithTypeCheckers = __commonJS({
             }
             return value;
           });
-          return new PropTypeError("Invalid " + location + " `" + propFullName + "` of value `" + String(propValue) + "` " + ("supplied to `" + componentName3 + "`, expected one of " + valuesString + "."));
+          return new PropTypeError("Invalid " + location + " `" + propFullName + "` of value `" + String(propValue) + "` " + ("supplied to `" + componentName2 + "`, expected one of " + valuesString + "."));
         }
         return createChainableTypeChecker(validate);
       }
       function createObjectOfTypeChecker(typeChecker) {
-        function validate(props, propName, componentName3, location, propFullName) {
+        function validate(props, propName, componentName2, location, propFullName) {
           if (typeof typeChecker !== "function") {
-            return new PropTypeError("Property `" + propFullName + "` of component `" + componentName3 + "` has invalid PropType notation inside objectOf.");
+            return new PropTypeError("Property `" + propFullName + "` of component `" + componentName2 + "` has invalid PropType notation inside objectOf.");
           }
           var propValue = props[propName];
           var propType = getPropType(propValue);
           if (propType !== "object") {
-            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName3 + "`, expected an object."));
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName2 + "`, expected an object."));
           }
           for (var key in propValue) {
             if (has(propValue, key)) {
-              var error4 = typeChecker(propValue, key, componentName3, location, propFullName + "." + key, ReactPropTypesSecret);
+              var error4 = typeChecker(propValue, key, componentName2, location, propFullName + "." + key, ReactPropTypesSecret);
               if (error4 instanceof Error) {
                 return error4;
               }
@@ -579,39 +579,39 @@ var require_factoryWithTypeCheckers = __commonJS({
             return emptyFunctionThatReturnsNull;
           }
         }
-        function validate(props, propName, componentName3, location, propFullName) {
+        function validate(props, propName, componentName2, location, propFullName) {
           for (var i3 = 0; i3 < arrayOfTypeCheckers.length; i3++) {
             var checker2 = arrayOfTypeCheckers[i3];
-            if (checker2(props, propName, componentName3, location, propFullName, ReactPropTypesSecret) == null) {
+            if (checker2(props, propName, componentName2, location, propFullName, ReactPropTypesSecret) == null) {
               return null;
             }
           }
-          return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName3 + "`."));
+          return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName2 + "`."));
         }
         return createChainableTypeChecker(validate);
       }
       function createNodeChecker() {
-        function validate(props, propName, componentName3, location, propFullName) {
+        function validate(props, propName, componentName2, location, propFullName) {
           if (!isNode(props[propName])) {
-            return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName3 + "`, expected a ReactNode."));
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName2 + "`, expected a ReactNode."));
           }
           return null;
         }
         return createChainableTypeChecker(validate);
       }
       function createShapeTypeChecker(shapeTypes) {
-        function validate(props, propName, componentName3, location, propFullName) {
+        function validate(props, propName, componentName2, location, propFullName) {
           var propValue = props[propName];
           var propType = getPropType(propValue);
           if (propType !== "object") {
-            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName3 + "`, expected `object`."));
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName2 + "`, expected `object`."));
           }
           for (var key in shapeTypes) {
             var checker = shapeTypes[key];
             if (!checker) {
               continue;
             }
-            var error4 = checker(propValue, key, componentName3, location, propFullName + "." + key, ReactPropTypesSecret);
+            var error4 = checker(propValue, key, componentName2, location, propFullName + "." + key, ReactPropTypesSecret);
             if (error4) {
               return error4;
             }
@@ -621,19 +621,19 @@ var require_factoryWithTypeCheckers = __commonJS({
         return createChainableTypeChecker(validate);
       }
       function createStrictShapeTypeChecker(shapeTypes) {
-        function validate(props, propName, componentName3, location, propFullName) {
+        function validate(props, propName, componentName2, location, propFullName) {
           var propValue = props[propName];
           var propType = getPropType(propValue);
           if (propType !== "object") {
-            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName3 + "`, expected `object`."));
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName2 + "`, expected `object`."));
           }
           var allKeys = assign({}, props[propName], shapeTypes);
           for (var key in allKeys) {
             var checker = shapeTypes[key];
             if (!checker) {
-              return new PropTypeError("Invalid " + location + " `" + propFullName + "` key `" + key + "` supplied to `" + componentName3 + "`.\nBad object: " + JSON.stringify(props[propName], null, "  ") + "\nValid keys: " + JSON.stringify(Object.keys(shapeTypes), null, "  "));
+              return new PropTypeError("Invalid " + location + " `" + propFullName + "` key `" + key + "` supplied to `" + componentName2 + "`.\nBad object: " + JSON.stringify(props[propName], null, "  ") + "\nValid keys: " + JSON.stringify(Object.keys(shapeTypes), null, "  "));
             }
-            var error4 = checker(propValue, key, componentName3, location, propFullName + "." + key, ReactPropTypesSecret);
+            var error4 = checker(propValue, key, componentName2, location, propFullName + "." + key, ReactPropTypesSecret);
             if (error4) {
               return error4;
             }
@@ -1440,11 +1440,11 @@ var require_uniqueId = __commonJS({
   "node_modules/lodash/uniqueId.js"(exports, module) {
     var toString2 = require_toString();
     var idCounter = 0;
-    function uniqueId5(prefix4) {
+    function uniqueId4(prefix4) {
       var id3 = ++idCounter;
       return toString2(prefix4) + id3;
     }
-    module.exports = uniqueId5;
+    module.exports = uniqueId4;
   }
 });
 
@@ -8906,6 +8906,7 @@ __export(src_exports2, {
   darken: () => darken2,
   deepmerge: () => deepmerge2,
   doAlpha: () => doAlpha,
+  downshiftComponentName: () => downshiftComponentName,
   elevationOptions: () => elevationOptions,
   ellipsis: () => ellipsis,
   fakeBorder: () => fakeBorder,
@@ -8988,6 +8989,7 @@ __export(src_exports2, {
   shallowEqual: () => shallowEqual,
   spacing: () => spacing2,
   spacingUnit: () => spacingUnit,
+  stringArrToRegExp: () => stringArrToRegExp,
   styled: () => styled_components_default,
   swapArrayLocs: () => swapArrayLocs,
   themeOptions: () => themeOptions,
@@ -9010,9 +9012,12 @@ __export(src_exports2, {
   useDialKeyboard: () => useDialKeyboard,
   useDownshift: () => useDownshift,
   useDownshiftError: () => useDownshiftError,
+  useDownshiftGroup: () => useDownshiftGroup,
+  useDownshiftTag: () => useDownshiftTag,
   useDynamicHeight: () => useDynamicHeight,
   useEventCallback: () => useEventCallback2,
   useEventListener: () => useEventListener,
+  useEver: () => useEver,
   useFixedEndSelection: () => useFixedEndSelection,
   useForceUpdate: () => useForceUpdate,
   useForkRef: () => useForkRef2,
@@ -11057,7 +11062,7 @@ function isClassComponent(elementType2) {
   var _elementType$prototyp = elementType2.prototype, prototype = _elementType$prototyp === void 0 ? {} : _elementType$prototyp;
   return Boolean(prototype.isReactComponent);
 }
-function acceptingRef(props, propName, componentName3, location, propFullName) {
+function acceptingRef(props, propName, componentName2, location, propFullName) {
   var element2 = props[propName];
   var safePropName = propFullName || propName;
   if (element2 == null) {
@@ -11069,7 +11074,7 @@ function acceptingRef(props, propName, componentName3, location, propFullName) {
     warningHint = "Did you accidentally use a plain function component for an element instead?";
   }
   if (warningHint !== void 0) {
-    return new Error("Invalid ".concat(location, " `").concat(safePropName, "` supplied to `").concat(componentName3, "`. ") + "Expected an element that can hold a ref. ".concat(warningHint, " ") + "For more information see https://material-ui.com/r/caveat-with-refs-guide");
+    return new Error("Invalid ".concat(location, " `").concat(safePropName, "` supplied to `").concat(componentName2, "`. ") + "Expected an element that can hold a ref. ".concat(warningHint, " ") + "For more information see https://material-ui.com/r/caveat-with-refs-guide");
   }
   return null;
 }
@@ -11083,7 +11088,7 @@ function isClassComponent2(elementType2) {
   var _elementType$prototyp = elementType2.prototype, prototype = _elementType$prototyp === void 0 ? {} : _elementType$prototyp;
   return Boolean(prototype.isReactComponent);
 }
-function elementTypeAcceptingRef(props, propName, componentName3, location, propFullName) {
+function elementTypeAcceptingRef(props, propName, componentName2, location, propFullName) {
   var propValue = props[propName];
   var safePropName = propFullName || propName;
   if (propValue == null) {
@@ -11094,7 +11099,7 @@ function elementTypeAcceptingRef(props, propName, componentName3, location, prop
     warningHint = "Did you accidentally provide a plain function component instead?";
   }
   if (warningHint !== void 0) {
-    return new Error("Invalid ".concat(location, " `").concat(safePropName, "` supplied to `").concat(componentName3, "`. ") + "Expected an element type that can hold a ref. ".concat(warningHint, " ") + "For more information see https://material-ui.com/r/caveat-with-refs-guide");
+    return new Error("Invalid ".concat(location, " `").concat(safePropName, "` supplied to `").concat(componentName2, "`. ") + "Expected an element type that can hold a ref. ".concat(warningHint, " ") + "For more information see https://material-ui.com/r/caveat-with-refs-guide");
   }
   return null;
 }
@@ -11174,7 +11179,7 @@ function getDisplayName(Component7) {
 }
 
 // node_modules/@material-ui/utils/esm/HTMLElementType.js
-function HTMLElementType(props, propName, componentName3, location, propFullName) {
+function HTMLElementType(props, propName, componentName2, location, propFullName) {
   if (false) {
     return null;
   }
@@ -11184,7 +11189,7 @@ function HTMLElementType(props, propName, componentName3, location, propFullName
     return null;
   }
   if (propValue && propValue.nodeType !== 1) {
-    return new Error("Invalid ".concat(location, " `").concat(safePropName, "` supplied to `").concat(componentName3, "`. ") + "Expected an HTMLElement.");
+    return new Error("Invalid ".concat(location, " `").concat(safePropName, "` supplied to `").concat(componentName2, "`. ") + "Expected an HTMLElement.");
   }
   return null;
 }
@@ -15854,8 +15859,8 @@ function deprecatedPropType(validator, reason) {
       return null;
     };
   }
-  return function(props, propName, componentName3, location, propFullName) {
-    var componentNameSafe = componentName3 || "<<anonymous>>";
+  return function(props, propName, componentName2, location, propFullName) {
+    var componentNameSafe = componentName2 || "<<anonymous>>";
     var propFullNameSafe = propFullName || propName;
     if (typeof props[propName] !== "undefined") {
       return new Error("The ".concat(location, " `").concat(propFullNameSafe, "` of ") + "`".concat(componentNameSafe, "` is deprecated. ").concat(reason));
@@ -15891,7 +15896,7 @@ function requirePropFactory(componentNameInError) {
     };
   }
   var requireProp = function requireProp2(requiredProp) {
-    return function(props, propName, componentName3, location, propFullName) {
+    return function(props, propName, componentName2, location, propFullName) {
       var propFullNameSafe = propFullName || propName;
       if (typeof props[propName] !== "undefined" && !props[requiredProp]) {
         return new Error("The prop `".concat(propFullNameSafe, "` of ") + "`".concat(componentNameInError, "` must be used on `").concat(requiredProp, "`."));
@@ -15912,7 +15917,7 @@ function setRef(ref2, value) {
 }
 
 // node_modules/@material-ui/core/esm/utils/unsupportedProp.js
-function unsupportedProp(props, propName, componentName3, location, propFullName) {
+function unsupportedProp(props, propName, componentName2, location, propFullName) {
   if (false) {
     return null;
   }
@@ -16409,9 +16414,9 @@ var Transition = /* @__PURE__ */ function(_React$Component) {
 Transition.contextType = TransitionGroupContext_default;
 Transition.propTypes = true ? {
   nodeRef: import_prop_types12.default.shape({
-    current: typeof Element === "undefined" ? import_prop_types12.default.any : function(propValue, key, componentName3, location, propFullName, secret) {
+    current: typeof Element === "undefined" ? import_prop_types12.default.any : function(propValue, key, componentName2, location, propFullName, secret) {
       var value = propValue[key];
-      return import_prop_types12.default.instanceOf(value && "ownerDocument" in value ? value.ownerDocument.defaultView.Element : Element)(propValue, key, componentName3, location, propFullName, secret);
+      return import_prop_types12.default.instanceOf(value && "ownerDocument" in value ? value.ownerDocument.defaultView.Element : Element)(propValue, key, componentName2, location, propFullName, secret);
     }
   }),
   children: import_prop_types12.default.oneOfType([import_prop_types12.default.func.isRequired, import_prop_types12.default.element.isRequired]).isRequired,
@@ -47202,6 +47207,7 @@ __export(src_exports, {
   darken: () => darken2,
   deepmerge: () => deepmerge2,
   doAlpha: () => doAlpha,
+  downshiftComponentName: () => downshiftComponentName,
   ellipsis: () => ellipsis,
   fakeBorder: () => fakeBorder,
   flexCenterStyle: () => flexCenterStyle,
@@ -47280,6 +47286,7 @@ __export(src_exports, {
   shallowEqual: () => shallowEqual,
   spacing: () => spacing2,
   spacingUnit: () => spacingUnit,
+  stringArrToRegExp: () => stringArrToRegExp,
   styled: () => styled_components_default,
   swapArrayLocs: () => swapArrayLocs,
   timestampToDate: () => timestampToDate,
@@ -47300,9 +47307,12 @@ __export(src_exports, {
   useDialKeyboard: () => useDialKeyboard,
   useDownshift: () => useDownshift,
   useDownshiftError: () => useDownshiftError,
+  useDownshiftGroup: () => useDownshiftGroup,
+  useDownshiftTag: () => useDownshiftTag,
   useDynamicHeight: () => useDynamicHeight,
   useEventCallback: () => useEventCallback2,
   useEventListener: () => useEventListener,
+  useEver: () => useEver,
   useFixedEndSelection: () => useFixedEndSelection,
   useForceUpdate: () => useForceUpdate,
   useForkRef: () => useForkRef2,
@@ -47555,6 +47565,7 @@ __export(components_exports, {
   VirtuosoGrid: () => VirtuosoGrid,
   config: () => config_default,
   createPromise: () => createPromise,
+  downshiftComponentName: () => downshiftComponentName,
   getAvatarColorTokenFromId: () => getAvatarColorTokenFromId,
   getAvatarShortName: () => getAvatarShortName,
   getDialPadValueOnlyRegex: () => getDialPadValueOnlyRegex,
@@ -47579,6 +47590,7 @@ __export(components_exports, {
   parseNumberToString: () => parseNumberToString,
   reflow: () => reflow3,
   setTransitionStyle: () => setTransitionStyle,
+  stringArrToRegExp: () => stringArrToRegExp,
   timestampToDate: () => timestampToDate,
   twelveHourSystemSource: () => twelveHourSystemSource,
   twentyFourHourSystemSource: () => twentyFourHourSystemSource,
@@ -47587,6 +47599,8 @@ __export(components_exports, {
   useDialKeyboard: () => useDialKeyboard,
   useDownshift: () => useDownshift,
   useDownshiftError: () => useDownshiftError,
+  useDownshiftGroup: () => useDownshiftGroup,
+  useDownshiftTag: () => useDownshiftTag,
   useDynamicHeight: () => useDynamicHeight,
   useFixedEndSelection: () => useFixedEndSelection,
   useHighlightScroll: () => useHighlightScroll,
@@ -49312,6 +49326,17 @@ function useEventListener(target, ...o2) {
   };
 }
 
+// src/foundation/hooks/useEver/useEver.ts
+import { useRef as useRef36 } from "react";
+var defaultEverTargetValue = (value) => !!value;
+var useEver = (value, targetValue = defaultEverTargetValue) => {
+  const result = useRef36(false);
+  if (!result.current) {
+    result.current = targetValue(value);
+  }
+  return result.current;
+};
+
 // src/foundation/hooks/useForceUpdate/useForceUpdate.ts
 import { useState as useState20 } from "react";
 function useForceUpdate() {
@@ -49346,10 +49371,10 @@ var useHiddenTabindex = (hiddenRef) => {
 };
 
 // src/foundation/hooks/useInterval/useInterval.ts
-import { useEffect as useEffect35, useRef as useRef36, useCallback as useCallback22 } from "react";
+import { useEffect as useEffect35, useRef as useRef37, useCallback as useCallback22 } from "react";
 var useInterval = (callback, delay = 0, startImmediately = true) => {
-  const intervalRef = useRef36();
-  const countRef = useRef36(0);
+  const intervalRef = useRef37();
+  const countRef = useRef37(0);
   const getRunning = useEventCallback2(() => !!intervalRef.current);
   const savedCallback = useEventCallback2((times) => {
     callback(times);
@@ -49388,9 +49413,9 @@ var useInterval = (callback, delay = 0, startImmediately = true) => {
 };
 
 // src/foundation/hooks/useKeyDownOnce/useKeyDownOnce.ts
-import { useRef as useRef37 } from "react";
+import { useRef as useRef38 } from "react";
 var useKeyDownOnce = (includeKeys, { onKeyDown, onKeyUp }) => {
-  const isKeyDownMapRef = useRef37({});
+  const isKeyDownMapRef = useRef38({});
   const handleKeyDown2 = useEventCallback2((e2) => {
     if (includeKeys.includes(e2.key)) {
       if (!isKeyDownMapRef.current[e2.key]) {
@@ -49479,7 +49504,7 @@ function moveIndexInTwoDimension(direction, options) {
 }
 
 // src/foundation/hooks/useKeyboardMoveFocus/useKeyboardMoveFocus.ts
-import { useCallback as useCallback23, useRef as useRef38 } from "react";
+import { useCallback as useCallback23, useRef as useRef39 } from "react";
 var useKeyboardMoveFocus = ({
   infinite,
   options = [],
@@ -49491,7 +49516,7 @@ var useKeyboardMoveFocus = ({
   endSearchDebounceTime = 500
 }) => {
   const total = options.length;
-  const searchText = useRef38("");
+  const searchText = useRef39("");
   const debounceEndSearch = useDebounce(() => searchText.current = "", endSearchDebounceTime);
   const searchTextAndFocus = (event) => {
     const key = event.key;
@@ -49983,14 +50008,14 @@ var swapArrayLocs = (arr, index1, index22) => {
 };
 
 // src/foundation/hooks/useRetry/useRetry.ts
-import { useRef as useRef40 } from "react";
+import { useRef as useRef41 } from "react";
 
 // src/foundation/hooks/useSleep/useSleep.ts
-import { useEffect as useEffect37, useRef as useRef39 } from "react";
+import { useEffect as useEffect37, useRef as useRef40 } from "react";
 var useSleep = () => {
-  const timeoutIdRef = useRef39();
-  const rejectRef = useRef39();
-  const sleepingRef = useRef39(false);
+  const timeoutIdRef = useRef40();
+  const rejectRef = useRef40();
+  const sleepingRef = useRef40(false);
   const clearCurrTimeout = () => {
     const id3 = timeoutIdRef.current;
     sleepingRef.current = false;
@@ -50025,7 +50050,7 @@ var useSleep = () => {
 // src/foundation/hooks/useRetry/useRetry.ts
 var useRetry = (cb, options) => {
   const { sleep, cancel: cancelSleep } = useSleep();
-  const isCancelRef = useRef40(true);
+  const isCancelRef = useRef41(true);
   const complete = () => {
     isCancelRef.current = true;
     options?.onComplete?.();
@@ -50119,18 +50144,18 @@ var useOnlyOneFocusable = ({
 };
 
 // src/foundation/hooks/useLongPress/useLongPress.ts
-import { useEffect as useEffect38, useRef as useRef42 } from "react";
+import { useEffect as useEffect38, useRef as useRef43 } from "react";
 
 // src/foundation/hooks/useTouchMouseEvent/useTouchMouseEvent.ts
-import { useRef as useRef41 } from "react";
+import { useRef as useRef42 } from "react";
 var useTouchMouseEvent = ({
   onMouseDown: onMouseDownArg,
   onMouseUp: onMouseUpArg,
   onTouchStart: onTouchStartArg,
   onTouchEnd: onTouchEndArg
 }, { isPreventDefault = true } = {}) => {
-  const isLiveEndRef = useRef41(false);
-  const isStartRef = useRef41(false);
+  const isLiveEndRef = useRef42(false);
+  const isStartRef = useRef42(false);
   const startAction = () => isStartRef.current = true;
   const endAction = () => isStartRef.current = false;
   const onTouchStart = useEventCallback2((e2) => {
@@ -50191,10 +50216,10 @@ var useLongPress = ({ onTap, onPress }, {
   onContextMenu,
   onMouseUp: onMouseUpArg
 } = {}, { isPreventDefault = true, delay = 300 } = {}) => {
-  const isEmittedRef = useRef42(false);
-  const isA11yDownRef = useRef42(false);
-  const elmRef = useRef42(null);
-  const reasonRef = useRef42("click");
+  const isEmittedRef = useRef43(false);
+  const isA11yDownRef = useRef43(false);
+  const elmRef = useRef43(null);
+  const reasonRef = useRef43("click");
   const emitLongPress = useDebounce((e2) => {
     if (onPress) {
       onPress(e2, reasonRef.current);
@@ -50275,9 +50300,9 @@ var useLongPress = ({ onTap, onPress }, {
 };
 
 // src/foundation/hooks/useMountState/useMountState.ts
-import { useEffect as useEffect39, useRef as useRef43 } from "react";
+import { useEffect as useEffect39, useRef as useRef44 } from "react";
 var useMountState = () => {
-  const isMountedRef = useRef43(false);
+  const isMountedRef = useRef44(false);
   useEffect39(() => {
     isMountedRef.current = true;
     return () => {
@@ -50288,9 +50313,9 @@ var useMountState = () => {
 };
 
 // src/foundation/hooks/useOnReRender/useOnReRender.ts
-import { useLayoutEffect as useLayoutEffect10, useRef as useRef44 } from "react";
+import { useLayoutEffect as useLayoutEffect10, useRef as useRef45 } from "react";
 var useOnReRender = (cb, deps) => {
-  const count2 = useRef44(0);
+  const count2 = useRef45(0);
   const method = useEventCallback2(cb);
   useLayoutEffect10(() => {
     if (count2.current === 0) {
@@ -50304,12 +50329,12 @@ var useOnReRender = (cb, deps) => {
 };
 
 // src/foundation/hooks/useOverflow/useOverflow.ts
-import { useRef as useRef46 } from "react";
+import { useRef as useRef47 } from "react";
 
 // src/foundation/hooks/useResizeObserver/useResizeObserver.ts
 var import_debounce7 = __toModule(require_debounce());
 var import_throttle = __toModule(require_throttle());
-import { useLayoutEffect as useLayoutEffect11, useRef as useRef45 } from "react";
+import { useLayoutEffect as useLayoutEffect11, useRef as useRef46 } from "react";
 
 // node_modules/resize-observer-polyfill/dist/ResizeObserver.es.js
 var MapShim = function() {
@@ -50808,7 +50833,7 @@ var useResizeObserver = (ref2, callback, performance2 = {}) => {
     time: performanceTime = 200,
     ignoreFireWhenObserve
   } = performance2;
-  const countRef = useRef45(0);
+  const countRef = useRef46(0);
   const cb = useEventCallback2((...args) => {
     if (ignoreFireWhenObserve) {
       if (countRef.current === 0) {
@@ -50849,7 +50874,7 @@ var useOverflow = (innerRef, cb, performance2 = {
   mode: "throttle",
   time: 200
 }) => {
-  const showRef = useRef46();
+  const showRef = useRef47();
   return useResizeObserver(innerRef, () => {
     if (innerRef.current) {
       const { scrollWidth, clientWidth, scrollHeight, clientHeight } = innerRef.current;
@@ -50868,10 +50893,10 @@ var useOverflow = (innerRef, cb, performance2 = {
 };
 
 // src/foundation/hooks/useRefState/useRefState.ts
-import { useRef as useRef47 } from "react";
+import { useRef as useRef48 } from "react";
 var useRefState = (value, customUpdate) => {
   const forceUpdate = customUpdate ?? useForceUpdate();
-  const innerValueRef = useRef47(value);
+  const innerValueRef = useRef48(value);
   const setInnerValue = useEventCallback2((toValue2, isUpdate = true) => {
     innerValueRef.current = toValue2;
     if (isUpdate) {
@@ -53376,7 +53401,7 @@ import React550, {
   forwardRef as forwardRef495,
   useLayoutEffect as useLayoutEffect12,
   useMemo as useMemo9,
-  useRef as useRef49,
+  useRef as useRef50,
   useState as useState23
 } from "react";
 
@@ -53413,7 +53438,7 @@ var RcTooltipPadding = {
 };
 
 // src/components/Tooltip/utils/useTooltipForceHide.ts
-import { useRef as useRef48 } from "react";
+import { useRef as useRef49 } from "react";
 var useTooltipForceHide = ({
   tooltipForceHide,
   open: openProp,
@@ -53422,7 +53447,7 @@ var useTooltipForceHide = ({
   ref: ref2
 }) => {
   const [openRef, setOpen] = useRefState(false);
-  const isOverRef = useRef48(false);
+  const isOverRef = useRef49(false);
   let openState = tooltipForceHide ? false : openProp ?? openRef.current;
   const prevOpenState = usePrevious(() => openState);
   useChange(() => {
@@ -53560,7 +53585,7 @@ var _RcTooltip = forwardRef495((inProps, ref2) => {
   } = props;
   const { externalWindow } = useRcPortalWindowContext();
   const [isDisabledButton, setIsDisabledButton] = useState23(false);
-  const innerRef = useRef49(null);
+  const innerRef = useRef50(null);
   const tooltipRef = useForkRef2(ref2, innerRef);
   const classes = useMemo9(() => combineClasses(combineClasses({ popper: classNameProp }, RcTooltipClasses), classesProp), [classNameProp, classesProp]);
   const PopperProps = useMemo9(() => combineProps({
@@ -54456,7 +54481,7 @@ RcAlert.displayName = "RcAlert";
 import React570, {
   forwardRef as forwardRef509,
   useImperativeHandle as useImperativeHandle9,
-  useRef as useRef52,
+  useRef as useRef53,
   useState as useState24
 } from "react";
 
@@ -54569,7 +54594,7 @@ var _RcZoom = forwardRef506((inProps, ref2) => {
 var RcZoom = _RcZoom;
 
 // src/components/Transitions/ZoomFrom/ZoomFrom.tsx
-import React568, { forwardRef as forwardRef507, useRef as useRef50 } from "react";
+import React568, { forwardRef as forwardRef507, useRef as useRef51 } from "react";
 
 // src/components/Transitions/utils/transitionendSubscriber.ts
 var transitionendSubscriber = (elm, event) => {
@@ -54659,7 +54684,7 @@ var RcZoomFrom = forwardRef507((inProps, ref2) => {
     ...other
   } = props;
   const theme = RcUseTheme();
-  const nodeRef = useRef50(null);
+  const nodeRef = useRef51(null);
   const handlers = useNormalizedTransitionProps({
     ...props,
     onEnter: (node4, isAppearing) => {
@@ -54724,7 +54749,7 @@ RcZoomFrom.defaultProps = {
 RcZoomFrom.displayName = "ZoomInFadeOut";
 
 // src/components/Transitions/ZoomInFadeOut/ZoomInFadeOut.tsx
-import React569, { forwardRef as forwardRef508, useRef as useRef51 } from "react";
+import React569, { forwardRef as forwardRef508, useRef as useRef52 } from "react";
 var styles143 = {
   entering: {
     opacity: 0,
@@ -54754,7 +54779,7 @@ var RcZoomInFadeOut = forwardRef508((inProps, ref2) => {
     ...other
   } = props;
   const theme = RcUseTheme();
-  const nodeRef = useRef51(null);
+  const nodeRef = useRef52(null);
   const handlers = useNormalizedTransitionProps({
     ...props,
     onEnter: (node4, isAppearing) => {
@@ -54849,7 +54874,7 @@ var RcHighlight = forwardRef509((inProps, ref2) => {
   const theme = RcUseTheme();
   const [inValue, setInValue] = useState24(false);
   const styles158 = getHighlightStyle({ backgroundColorProp, theme });
-  const nodeRef = useRef52(null);
+  const nodeRef = useRef53(null);
   const handlers = useNormalizedTransitionProps({
     ...props,
     onEnter: (node4, isAppearing) => {
@@ -55655,7 +55680,7 @@ import React583, {
   useCallback as useCallback25,
   useLayoutEffect as useLayoutEffect13,
   useMemo as useMemo18,
-  useRef as useRef53
+  useRef as useRef54
 } from "react";
 
 // src/components/Buttons/Button/utils/ButtonUtils.ts
@@ -55903,7 +55928,7 @@ var _RcButton = forwardRef520((inProps, ref2) => {
     ...rest
   } = props;
   const theme = RcUseTheme();
-  const innerRef = useRef53(null);
+  const innerRef = useRef54(null);
   const buttonRef = useForkRef2(innerRef, ref2);
   const isPlain = variant === "plain";
   const isReplace = loadingMode === "replace";
@@ -56089,7 +56114,7 @@ RcIconButtonGroup.displayName = "RcIconButtonGroup";
 import React589, {
   forwardRef as forwardRef525,
   useMemo as useMemo20,
-  useRef as useRef54,
+  useRef as useRef55,
   useState as useState26
 } from "react";
 
@@ -56543,9 +56568,10 @@ var _RcSplitButton = forwardRef525((inProps, ref2) => {
   } = ControlButtonPropsProp;
   const [anchorEl, setAnchorEl] = useState26();
   const [enterNextDelay, setEnterNextDelay] = useState26(DEFAULT_DELAY);
-  const innerRef = useRef54(null);
+  const innerRef = useRef55(null);
   const splitRef = useForkRef2(innerRef, ref2);
   const isMenuOpen = !!anchorEl;
+  const isMenuEverOpen = useEver(isMenuOpen);
   const { classes, actionButtonClassName, controlButtonClassName } = useMemo20(() => {
     const result = combineClasses(RcSplitButtonClasses, classesProp);
     return {
@@ -56695,7 +56721,7 @@ var _RcSplitButton = forwardRef525((inProps, ref2) => {
     open: isMenuOpen,
     size: variantIs(["round", "plainIcon"]) ? size : toButtonSize,
     ...ArrowIconProps
-  }))), /* @__PURE__ */ React589.createElement(RcMenu, {
+  }))), isMenuEverOpen && /* @__PURE__ */ React589.createElement(RcMenu, {
     ...MenuProps,
     anchorEl,
     open: isMenuOpen,
@@ -56721,7 +56747,7 @@ import React591, {
   forwardRef as forwardRef527,
   useLayoutEffect as useLayoutEffect14,
   useMemo as useMemo21,
-  useRef as useRef55
+  useRef as useRef56
 } from "react";
 
 // node_modules/@material-ui/lab/esm/ToggleButton/ToggleButton.js
@@ -56919,7 +56945,7 @@ var _RcToggleButton = forwardRef527((inProps, ref2) => {
     IconProps,
     ...rest
   } = props;
-  const innerRef = useRef55(null);
+  const innerRef = useRef56(null);
   const buttonRef = useForkRef2(ref2, innerRef);
   const classes = useMemo21(() => combineClasses(RcToggleButtonClasses, classesProp), [classesProp]);
   useLayoutEffect14(() => {
@@ -58156,13 +58182,13 @@ import React605, {
   useEffect as useEffect43,
   useImperativeHandle as useImperativeHandle10,
   useMemo as useMemo32,
-  useRef as useRef57,
+  useRef as useRef58,
   useState as useState28
 } from "react";
 import ReactDOM15 from "react-dom";
 
 // src/components/DetachedWindow/DetachedWindowStylesProvider.tsx
-import React604, { useEffect as useEffect42, useRef as useRef56 } from "react";
+import React604, { useEffect as useEffect42, useRef as useRef57 } from "react";
 
 // src/components/DetachedWindow/utils/JssDomRendererFactory.ts
 var jssInst = createJss(jssPreset());
@@ -58338,9 +58364,9 @@ var openExternalWindow = ({
 // src/components/DetachedWindow/DetachedWindowStylesProvider.tsx
 var RcDetachedWindowStylesProvider = (props) => {
   const { externalWindow, jssInsertionPoint, children: children2 } = props;
-  const sheetsManagerRef = useRef56(new Map());
-  const jssCache = useRef56();
-  const sheetCache = useRef56();
+  const sheetsManagerRef = useRef57(new Map());
+  const jssCache = useRef57();
+  const sheetCache = useRef57();
   useEffect42(() => () => {
     jssCache.current = void 0;
     sheetCache.current = void 0;
@@ -58395,8 +58421,8 @@ var RcDetachedWindow = memo406(forwardRef540((inProps, ref2) => {
     keep
   } = props;
   const [externalWindow, setExternalWindow] = useState28();
-  const isCloseByWindowExitRef = useRef57(false);
-  const innerRef = useRef57(null);
+  const isCloseByWindowExitRef = useRef58(false);
+  const innerRef = useRef58(null);
   const instanceRef = useForkRef(ref2, innerRef);
   const beforeMainUnload = useEventCallback2(() => {
     if (externalWindow) {
@@ -58512,7 +58538,7 @@ import React608, {
   forwardRef as forwardRef541,
   useEffect as useEffect45,
   useImperativeHandle as useImperativeHandle11,
-  useRef as useRef60
+  useRef as useRef61
 } from "react";
 
 // src/components/VisuallyHidden/VisuallyHidden.tsx
@@ -58605,13 +58631,13 @@ var ACCEPTABLE_KEYS = [
 ];
 
 // src/components/Dialer/DialPad/utils/useDialKeyboard.ts
-import { useRef as useRef58 } from "react";
+import { useRef as useRef59 } from "react";
 var useDialKeyboard = ({
   onKeyDown: onKeyDownArg,
   onKeyUp: onKeyUpArg
 } = {}) => {
-  const control = useRef58(null);
-  const keyBufferRef = useRef58([]);
+  const control = useRef59(null);
+  const keyBufferRef = useRef59([]);
   const onKeyDown = useEventCallback2((e2) => {
     onKeyDownArg?.(e2);
     const key = e2.key;
@@ -58639,10 +58665,10 @@ var useDialKeyboard = ({
 };
 
 // src/components/Dialer/DialPad/utils/useKeyAudio.ts
-import { useEffect as useEffect44, useRef as useRef59 } from "react";
+import { useEffect as useEffect44, useRef as useRef60 } from "react";
 var useKeyAudio = ({ volume, muted, sounds }) => {
   const audio = useAudio();
-  const lastPlayRef = useRef59();
+  const lastPlayRef = useRef60();
   useEffect44(() => {
     audio.volume = volume;
     audio.muted = muted;
@@ -58685,12 +58711,12 @@ var _RcDialPad = forwardRef541((inProps, ref2) => {
     getDialPadButtonProps,
     ...divProps
   } = props;
-  const containerRef = useRef60(null);
-  const hiddenRef = useRef60(null);
-  const keyTimerMapRef = useRef60({});
+  const containerRef = useRef61(null);
+  const hiddenRef = useRef61(null);
+  const keyTimerMapRef = useRef61({});
   const forkRef = useForkRef2(containerRef, ref2);
   const { onInsertRef, dialPadActionRef } = useRcDialerContext();
-  const focusedIndexRef = useRef60(0);
+  const focusedIndexRef = useRef61(0);
   const { focusIndex, getItemProps, moveFocusedId } = useOnlyOneFocusable({
     focusedIndexRef,
     containerRef
@@ -58826,7 +58852,7 @@ import React610, {
   useImperativeHandle as useImperativeHandle12,
   useLayoutEffect as useLayoutEffect16,
   useMemo as useMemo34,
-  useRef as useRef63
+  useRef as useRef64
 } from "react";
 
 // src/components/Forms/TextField/TextField.tsx
@@ -58835,7 +58861,7 @@ import React609, {
   useEffect as useEffect46,
   useLayoutEffect as useLayoutEffect15,
   useMemo as useMemo33,
-  useRef as useRef61,
+  useRef as useRef62,
   useState as useState29
 } from "react";
 
@@ -58883,7 +58909,7 @@ var _RcTextField = forwardRef542((inProps, ref2) => {
     ...rest
   } = props;
   const formContext = useRcFormContext();
-  const innerRef = useRef61();
+  const innerRef = useRef62();
   const inputRef = useForkRef2(inputRefProp, innerRef);
   const [validateMessage, setValidateMessage] = useState29("");
   const runValidate = useEventCallback2((value = valueProp) => {
@@ -59060,9 +59086,9 @@ function getDialPadValueOnlyRegex() {
 }
 
 // src/components/Dialer/DialTextField/utils/useFixedEndSelection.ts
-import { useRef as useRef62 } from "react";
+import { useRef as useRef63 } from "react";
 var useFixedEndSelection = () => {
-  const ref2 = useRef62(null);
+  const ref2 = useRef63(null);
   const keypadModeFixedAtLatest = useEventCallback2(() => {
     const { position: position4, isSelectRange } = getSelectionPosition(ref2);
     const value = ref2.current?.value || "";
@@ -59126,8 +59152,8 @@ var _RcDialTextField = forwardRef543((inProps, ref2) => {
   } = useFixedEndSelection();
   const forkContextRef = useForkRef2(dialerContext.inputRef, inputRef);
   const forkInputRef = useForkRef2(inputRefProp, forkContextRef);
-  const scrollToPositionRef = useRef63();
-  const isNotTriggerRefocusRef = useRef63(false);
+  const scrollToPositionRef = useRef64();
+  const isNotTriggerRefocusRef = useRef64(false);
   const maxLength = keypadMode ? void 0 : inputPropsProp?.maxLength;
   const checkNotReFocus = useEventCallback2((reason, isFocus) => {
     const elm = inputRef.current;
@@ -59294,13 +59320,13 @@ RcDialTextField.defaultProps = {
 RcDialTextField.displayName = "RcDialTextField";
 
 // src/components/Dialer/Dialer.tsx
-import React611, { useRef as useRef64 } from "react";
+import React611, { useRef as useRef65 } from "react";
 var RcDialer = ({ children: children2 }) => {
-  const dialPadActionRef = useRef64(null);
-  const onInsertRef = useRef64(null);
-  const inputRef = useRef64(null);
-  const onDeleteRef = useRef64(null);
-  const onClearRef = useRef64(null);
+  const dialPadActionRef = useRef65(null);
+  const onInsertRef = useRef65(null);
+  const inputRef = useRef65(null);
+  const onDeleteRef = useRef65(null);
+  const onClearRef = useRef65(null);
   return /* @__PURE__ */ React611.createElement(RcDialerContext.Provider, {
     value: {
       dialPadActionRef,
@@ -59383,7 +59409,7 @@ var Connectable = class {
 };
 
 // src/components/PortalHost/PortalHost.tsx
-import React613, { useEffect as useEffect48, useRef as useRef65, useState as useState30 } from "react";
+import React613, { useEffect as useEffect48, useRef as useRef66, useState as useState30 } from "react";
 
 // src/components/PortalHost/context/PortalIDContext.ts
 import { createContext as createContext13 } from "react";
@@ -59428,7 +59454,7 @@ RcPortalRenderer.displayName = "RcPortalRenderer";
 // src/components/PortalHost/PortalHost.tsx
 var RcPortalHost = ({ manager }) => {
   const [portals, setPortals] = useState30([]);
-  const managerRef = useRef65(manager);
+  const managerRef = useRef66(manager);
   useEffect48(() => {
     const disconnectHandler = managerRef.current[ConnectSymbol]((portalDescriptors) => {
       setPortals(portalDescriptors);
@@ -60110,7 +60136,7 @@ RcDialogTitle.displayName = "RcDialogTitle";
 import React624 from "react";
 
 // node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js
-import React623, { useLayoutEffect as useLayoutEffect18, useEffect as useEffect51, useRef as useRef69, useState as useState32, useContext as useContext22 } from "react";
+import React623, { useLayoutEffect as useLayoutEffect18, useEffect as useEffect51, useRef as useRef70, useState as useState32, useContext as useContext22 } from "react";
 
 // node_modules/@babel/runtime/helpers/esm/objectSpread2.js
 function ownKeys(object3, enumerableOnly) {
@@ -60605,7 +60631,7 @@ var Provider_default = Provider;
 // node_modules/react-redux/es/components/connectAdvanced.js
 var import_hoist_non_react_statics5 = __toModule(require_hoist_non_react_statics_cjs());
 var import_react_is11 = __toModule(require_react_is2());
-import React622, { useContext as useContext18, useMemo as useMemo43, useRef as useRef66, useReducer } from "react";
+import React622, { useContext as useContext18, useMemo as useMemo43, useRef as useRef67, useReducer } from "react";
 var _excluded = ["getDisplayName", "methodName", "renderCountProp", "shouldHandleStateChanges", "storeKey", "withRef", "forwardRef", "context"];
 var _excluded2 = ["reactReduxForwardedRef"];
 var EMPTY_ARRAY = [];
@@ -60767,10 +60793,10 @@ function connectAdvanced(selectorFactory, _ref6) {
       if (previousStateUpdateResult && previousStateUpdateResult.error) {
         throw previousStateUpdateResult.error;
       }
-      var lastChildProps = useRef66();
-      var lastWrapperProps = useRef66(wrapperProps);
-      var childPropsFromStoreUpdate = useRef66();
-      var renderIsScheduled = useRef66(false);
+      var lastChildProps = useRef67();
+      var lastWrapperProps = useRef67(wrapperProps);
+      var childPropsFromStoreUpdate = useRef67();
+      var renderIsScheduled = useRef67(false);
       var actualChildProps = usePureOnlyMemo(function() {
         if (childPropsFromStoreUpdate.current && wrapperProps === lastWrapperProps.current) {
           return childPropsFromStoreUpdate.current;
@@ -61130,7 +61156,7 @@ import { useContext as useContext20 } from "react";
 import { useContext as useContext19 } from "react";
 
 // node_modules/react-redux/es/hooks/useSelector.js
-import { useReducer as useReducer2, useRef as useRef67, useMemo as useMemo44, useContext as useContext21, useDebugValue as useDebugValue3 } from "react";
+import { useReducer as useReducer2, useRef as useRef68, useMemo as useMemo44, useContext as useContext21, useDebugValue as useDebugValue3 } from "react";
 
 // node_modules/react-redux/es/utils/reactBatchedUpdates.js
 import { unstable_batchedUpdates } from "react-dom";
@@ -61139,7 +61165,7 @@ import { unstable_batchedUpdates } from "react-dom";
 setBatch(unstable_batchedUpdates);
 
 // node_modules/use-memo-one/dist/use-memo-one.esm.js
-import { useState as useState31, useRef as useRef68, useEffect as useEffect50 } from "react";
+import { useState as useState31, useRef as useRef69, useEffect as useEffect50 } from "react";
 function areInputsEqual(newInputs, lastInputs) {
   if (newInputs.length !== lastInputs.length) {
     return false;
@@ -61158,8 +61184,8 @@ function useMemoOne(getResult, inputs) {
       result: getResult()
     };
   })[0];
-  var isFirstRun = useRef68(true);
-  var committed = useRef68(initial);
+  var isFirstRun = useRef69(true);
+  var committed = useRef69(initial);
   var useCache = isFirstRun.current || Boolean(inputs && committed.current.inputs && areInputsEqual(inputs, committed.current.inputs));
   var cache3 = useCache ? committed.current : {
     inputs,
@@ -65419,8 +65445,8 @@ function useStyleMarshal(contextId, nonce) {
   var styles158 = useMemo45(function() {
     return getStyles$1(contextId);
   }, [contextId]);
-  var alwaysRef = useRef69(null);
-  var dynamicRef = useRef69(null);
+  var alwaysRef = useRef70(null);
+  var dynamicRef = useRef70(null);
   var setDynamicStyle = useCallback26(memoize_one_esm_default(function(proposed) {
     var el2 = dynamicRef.current;
     !el2 ? true ? invariant2(false, "Cannot set dynamic style element if it is not set") : invariant2(false) : void 0;
@@ -65506,10 +65532,10 @@ function findDragHandle(contextId, draggableId) {
   return handle;
 }
 function useFocusMarshal(contextId) {
-  var entriesRef = useRef69({});
-  var recordRef = useRef69(null);
-  var restoreFocusFrameRef = useRef69(null);
-  var isMountedRef = useRef69(false);
+  var entriesRef = useRef70({});
+  var recordRef = useRef70(null);
+  var restoreFocusFrameRef = useRef70(null);
+  var isMountedRef = useRef70(false);
   var register = useCallback26(function register2(id3, focus2) {
     var entry = {
       id: id3,
@@ -65735,7 +65761,7 @@ function useAnnouncer2(contextId) {
   var id3 = useMemo45(function() {
     return getId(contextId);
   }, [contextId]);
-  var ref2 = useRef69(null);
+  var ref2 = useRef70(null);
   useEffect51(function setup() {
     var el2 = document.createElement("div");
     ref2.current = el2;
@@ -65779,20 +65805,20 @@ function useUniqueId(prefix4, options) {
   }, [options.separator, prefix4]);
 }
 function getElementId(_ref6) {
-  var contextId = _ref6.contextId, uniqueId5 = _ref6.uniqueId;
-  return "rbd-hidden-text-" + contextId + "-" + uniqueId5;
+  var contextId = _ref6.contextId, uniqueId4 = _ref6.uniqueId;
+  return "rbd-hidden-text-" + contextId + "-" + uniqueId4;
 }
 function useHiddenTextElement(_ref23) {
   var contextId = _ref23.contextId, text = _ref23.text;
-  var uniqueId5 = useUniqueId("hidden-text", {
+  var uniqueId4 = useUniqueId("hidden-text", {
     separator: "-"
   });
   var id3 = useMemo45(function() {
     return getElementId({
       contextId,
-      uniqueId: uniqueId5
+      uniqueId: uniqueId4
     });
-  }, [uniqueId5, contextId]);
+  }, [uniqueId4, contextId]);
   useEffect51(function mount() {
     var el2 = document.createElement("div");
     el2.id = id3;
@@ -65887,7 +65913,7 @@ function useStartupValidation() {
   }, []);
 }
 function usePrevious2(current) {
-  var ref2 = useRef69(current);
+  var ref2 = useRef70(current);
   useEffect51(function() {
     ref2.current = current;
   });
@@ -66064,8 +66090,8 @@ function getCaptureBindings(_ref6) {
   }];
 }
 function useMouseSensor(api) {
-  var phaseRef = useRef69(idle$1);
-  var unbindEventsRef = useRef69(noop2);
+  var phaseRef = useRef70(idle$1);
+  var unbindEventsRef = useRef70(noop2);
   var startCaptureBinding = useMemo45(function() {
     return {
       eventName: "mousedown",
@@ -66264,7 +66290,7 @@ function getDraggingBindings(actions, stop) {
   }];
 }
 function useKeyboardSensor(api) {
-  var unbindEventsRef = useRef69(noop$1);
+  var unbindEventsRef = useRef70(noop$1);
   var startCaptureBinding = useMemo45(function() {
     return {
       eventName: "keydown",
@@ -66433,8 +66459,8 @@ function getHandleBindings(_ref23) {
   }];
 }
 function useTouchSensor(api) {
-  var phaseRef = useRef69(idle$2);
-  var unbindEventsRef = useRef69(noop2);
+  var phaseRef = useRef70(idle$2);
+  var unbindEventsRef = useRef70(noop2);
   var getPhase = useCallback26(function getPhase2() {
     return phaseRef.current;
   }, []);
@@ -66974,7 +67000,7 @@ function getStore(lazyRef) {
 }
 function App(props) {
   var contextId = props.contextId, setCallbacks = props.setCallbacks, sensors = props.sensors, nonce = props.nonce, dragHandleUsageInstructions2 = props.dragHandleUsageInstructions;
-  var lazyStoreRef = useRef69(null);
+  var lazyStoreRef = useRef70(null);
   useStartupValidation();
   var lastPropsRef = usePrevious2(props);
   var getResponders = useCallback26(function() {
@@ -67324,9 +67350,9 @@ var getClosestScrollableFromDrag = function getClosestScrollableFromDrag2(draggi
   return dragging && dragging.env.closestScrollable || null;
 };
 function useDroppablePublisher(args) {
-  var whileDraggingRef = useRef69(null);
+  var whileDraggingRef = useRef70(null);
   var appContext = useRequiredContext(AppContext);
-  var uniqueId5 = useUniqueId("droppable");
+  var uniqueId4 = useUniqueId("droppable");
   var registry = appContext.registry, marshal = appContext.marshal;
   var previousRef = usePrevious2(args);
   var descriptor = useMemo45(function() {
@@ -67336,7 +67362,7 @@ function useDroppablePublisher(args) {
       mode: args.mode
     };
   }, [args.droppableId, args.mode, args.type]);
-  var publishedDescriptorRef = useRef69(descriptor);
+  var publishedDescriptorRef = useRef70(descriptor);
   var memoizedUpdateScroll = useMemo45(function() {
     return memoize_one_esm_default(function(x2, y2) {
       !whileDraggingRef.current ? true ? invariant2(false, "Can only update scroll when dragging") : invariant2(false) : void 0;
@@ -67441,11 +67467,11 @@ function useDroppablePublisher(args) {
   }, [dragStopped, getDimensionAndWatchScroll, getScrollWhileDragging, scroll3]);
   var entry = useMemo45(function() {
     return {
-      uniqueId: uniqueId5,
+      uniqueId: uniqueId4,
       descriptor,
       callbacks
     };
-  }, [callbacks, descriptor, uniqueId5]);
+  }, [callbacks, descriptor, uniqueId4]);
   useIsomorphicLayoutEffect2(function() {
     publishedDescriptorRef.current = entry.descriptor;
     registry.droppable.register(entry);
@@ -67514,7 +67540,7 @@ var getStyle = function getStyle2(_ref23) {
   };
 };
 function Placeholder(props) {
-  var animateOpenTimerRef = useRef69(null);
+  var animateOpenTimerRef = useRef70(null);
   var tryClearAnimateOpenTimer = useCallback26(function() {
     if (!animateOpenTimerRef.current) {
       return;
@@ -67767,7 +67793,7 @@ function getDimension$1(descriptor, el2, windowScroll) {
   return dimension;
 }
 function useDraggablePublisher(args) {
-  var uniqueId5 = useUniqueId("draggable");
+  var uniqueId4 = useUniqueId("draggable");
   var descriptor = args.descriptor, registry = args.registry, getDraggableRef = args.getDraggableRef, canDragInteractiveElements = args.canDragInteractiveElements, shouldRespectForcePress = args.shouldRespectForcePress, isEnabled = args.isEnabled;
   var options = useMemo45(function() {
     return {
@@ -67783,14 +67809,14 @@ function useDraggablePublisher(args) {
   }, [descriptor, getDraggableRef]);
   var entry = useMemo45(function() {
     return {
-      uniqueId: uniqueId5,
+      uniqueId: uniqueId4,
       descriptor,
       options,
       getDimension: getDimension2
     };
-  }, [descriptor, getDimension2, options, uniqueId5]);
-  var publishedRef = useRef69(entry);
-  var isFirstPublishRef = useRef69(true);
+  }, [descriptor, getDimension2, options, uniqueId4]);
+  var publishedRef = useRef70(entry);
+  var isFirstPublishRef = useRef70(true);
   useIsomorphicLayoutEffect2(function() {
     registry.draggable.register(publishedRef.current);
     return function() {
@@ -67827,7 +67853,7 @@ function useValidation$1(props, contextId, getRef) {
 }
 function useClonePropValidation(isClone) {
   useDev(function() {
-    var initialRef = useRef69(isClone);
+    var initialRef = useRef70(isClone);
     useDevSetupWarning(function() {
       !(isClone === initialRef.current) ? true ? invariant2(false, "Draggable isClone prop value changed during component life") : invariant2(false) : void 0;
     }, [isClone]);
@@ -67837,7 +67863,7 @@ function preventHtml5Dnd(event) {
   event.preventDefault();
 }
 function Draggable(props) {
-  var ref2 = useRef69(null);
+  var ref2 = useRef70(null);
   var setRef2 = useCallback26(function(el2) {
     ref2.current = el2;
   }, []);
@@ -68148,8 +68174,8 @@ function Droppable(props) {
   var appContext = useContext22(AppContext);
   !appContext ? true ? invariant2(false, "Could not find app context") : invariant2(false) : void 0;
   var contextId = appContext.contextId, isMovementAllowed2 = appContext.isMovementAllowed;
-  var droppableRef = useRef69(null);
-  var placeholderRef = useRef69(null);
+  var droppableRef = useRef70(null);
+  var placeholderRef = useRef70(null);
   var children2 = props.children, droppableId = props.droppableId, type3 = props.type, mode = props.mode, direction = props.direction, ignoreContainerClipping = props.ignoreContainerClipping, isDropDisabled = props.isDropDisabled, isCombineEnabled = props.isCombineEnabled, snapshot = props.snapshot, useClone = props.useClone, updateViewportMaxScroll3 = props.updateViewportMaxScroll, getContainerForClone = props.getContainerForClone;
   var getDroppableRef = useCallback26(function() {
     return droppableRef.current;
@@ -69244,7 +69270,7 @@ import React637, {
   forwardRef as forwardRef561,
   useLayoutEffect as useLayoutEffect19,
   useMemo as useMemo54,
-  useRef as useRef70
+  useRef as useRef71
 } from "react";
 
 // src/components/List/ListItemSecondaryAction/styles/ListItemSecondaryActionStyle.tsx
@@ -69278,7 +69304,7 @@ var _RcListItemSecondaryAction = forwardRef561((inProps, ref2) => {
     name: "RcListItemSecondaryAction"
   });
   const { classes: classesProp, children: children2, ...rest } = props;
-  const innerRef = useRef70(null);
+  const innerRef = useRef71(null);
   const divRef = useForkRef2(innerRef, ref2);
   const classes = useMemo54(() => combineClasses(RcListItemSecondaryActionClasses, classesProp), [classesProp]);
   useLayoutEffect19(() => {
@@ -69660,15 +69686,25 @@ var RcAutocompleteDefaultFilterOptions = (options, { inputValue, getOptionLabel,
   }
   return options.filter((item) => getOptionLabel?.(item).toLowerCase().startsWith(inputValue?.toLowerCase() || ""));
 };
+var downshiftComponentName = "RcDownshift";
+function stringArrToRegExp(keyToTags) {
+  return new RegExp(keyToTags?.join("|") || "", "g");
+}
 
 // src/components/Downshift/utils/useDownshift.ts
-var import_isString = __toModule(require_isString());
-var import_uniqueId2 = __toModule(require_uniqueId());
 import {
+  useCallback as useCallback28,
   useLayoutEffect as useLayoutEffect20,
+  useMemo as useMemo61,
+  useRef as useRef74
+} from "react";
+
+// src/components/Downshift/SuggestionList/utils/useSuggestionList.ts
+import {
+  useCallback as useCallback27,
+  useEffect as useEffect52,
   useMemo as useMemo59,
-  useRef as useRef71,
-  useState as useState33
+  useRef as useRef72
 } from "react";
 
 // src/components/Downshift/utils/useDownshiftGroup.ts
@@ -69721,9 +69757,11 @@ var useDownshiftGroup = ({
       const result = filteredResult.reduce((acc, option, index4) => {
         const group = groupBy(option);
         if (acc.length > 0 && acc[acc.length - 1].group === group) {
+          const currGroup = acc[acc.length - 1];
           acc[acc.length - 1].options.push({
             ...option,
-            group: acc[acc.length - 1]
+            group: currGroup,
+            indexInOwnGroup: currGroup.options.length - 1
           });
         } else {
           if (true) {
@@ -69741,7 +69779,8 @@ var useDownshiftGroup = ({
             key: index4,
             index: index4,
             group,
-            options: [{ ...option }],
+            order: acc.length,
+            options: [{ ...option, indexInOwnGroup: 0 }],
             expanded: false,
             getExpandIconProps: (additionExpandIconProps) => {
               return newGroup.options.length > 1 ? combineProps({
@@ -69832,14 +69871,484 @@ var useDownshiftGroup = ({
   };
 };
 
-// src/components/Downshift/utils/useDownshift.ts
-var DOWNSHIFT_ID_TOKEN = "rc-chip-";
-var DOWNSHIFT_ID_NO_RESULT_TOKEN = "rc-chip-empty";
+// src/components/Downshift/SuggestionList/utils/useSuggestionList.ts
 var DEFAULT_HIGHLIGHTED_INDEX = -1;
-function stringArrToRegExp(keyToTags) {
-  return new RegExp(keyToTags?.join("|") || "", "g");
-}
-var componentName = "RcDownshift";
+var componentName = "useSuggestionList";
+var useSuggestionList = ({
+  id: id3,
+  inputValue: inputValueProp,
+  getOptionLabel = DEFAULT_GET_OPTION_LABEL,
+  filterOptions,
+  disabledItemsHighlightable,
+  options,
+  onInputChange: onInputChangeProp,
+  inputRef,
+  onKeyDown: onKeyDownProp,
+  onSelect,
+  onClear,
+  getOptionDisabled,
+  groupBy,
+  onGroupExpanded,
+  groupVariant,
+  groupExpanded,
+  groupDefaultExpanded,
+  getExpandIconProps,
+  processFilteredResult
+}) => {
+  const isTitleMode = groupVariant === "normal";
+  const [inputValue, setInputValue] = useControlled({
+    controlled: inputValueProp,
+    default: "",
+    name: componentName
+  });
+  const updateInputValue = (newValue) => {
+    onInputChangeProp?.(newValue);
+    setInputValue(newValue);
+  };
+  const focusInput = () => inputRef.current?.focus();
+  const currUniqueId = useId2(id3 || "suggestion-list", !id3);
+  const highlightedIndexRef = useRef72(DEFAULT_HIGHLIGHTED_INDEX);
+  const changeHighlightedIndexReasonRef = useRef72();
+  const forceUpdate = useForceUpdate();
+  const getFilteredItems = useCallback27((items) => {
+    if (filterOptions) {
+      return filterOptions(items, {
+        inputValue,
+        getOptionLabel,
+        selectedItems: []
+      });
+    }
+    return items;
+  }, [filterOptions, getOptionLabel, inputValue]);
+  const filteredResult = useMemo59(() => {
+    let results = getFilteredItems(options);
+    results = processFilteredResult ? processFilteredResult(results, inputValue) : results;
+    return results;
+  }, [getFilteredItems, inputValue, options, processFilteredResult]);
+  const { groupedResult, handleGroupExpandedChange, optionsGroupList } = useDownshiftGroup({
+    id: currUniqueId,
+    options,
+    filteredResult,
+    groupExpanded,
+    groupDefaultExpanded,
+    groupVariant,
+    groupBy,
+    getExpandIconProps,
+    onGroupExpanded,
+    getOptionDisabled
+  });
+  const optionItems = groupBy ? groupedResult : filteredResult;
+  const setHighlightedIndex = (index4, {
+    reRender = false,
+    reason
+  }) => {
+    changeHighlightedIndexReasonRef.current = reason;
+    if (highlightedIndexRef.current !== index4) {
+      highlightedIndexRef.current = index4;
+      if (reRender)
+        forceUpdate();
+    }
+  };
+  const handleInputChange = (newValue) => {
+    if (inputValue !== newValue) {
+      setHighlightedIndex(DEFAULT_HIGHLIGHTED_INDEX, { reason: "auto" });
+      updateInputValue(newValue);
+    }
+    return false;
+  };
+  const getIsItemCanSelected = (item) => {
+    return !!item && item.freeSolo || isItemCanSelected(item) && !getOptionDisabled?.(item);
+  };
+  const selectItem = (e2, selectedItem) => {
+    if (getIsItemCanSelected(selectedItem)) {
+      onSelect?.(e2, selectedItem);
+      return true;
+    }
+    return false;
+  };
+  const clearInput = () => {
+    if (inputRef.current && inputRef.current.value.length > 0) {
+      updateInputValue("");
+    }
+  };
+  const reset2 = (isFocus) => {
+    clearInput();
+    onInputChangeProp?.("");
+    if (isFocus)
+      focusInput();
+  };
+  const { onKeyFocusedIndexHandle, getNextFocusableOption } = useKeyboardMoveFocus({
+    options: optionItems,
+    focusedIndexRef: highlightedIndexRef,
+    infinite: true,
+    onFocusedIndexChange: (event, toIndex) => {
+      setHighlightedIndex(toIndex, { reason: "keyboard", reRender: true });
+      event?.preventDefault();
+    },
+    getOptionDisabled: disabledItemsHighlightable ? void 0 : (child) => {
+      return !getIsItemCanSelected(child);
+    }
+  });
+  const getItemProps = ({
+    item,
+    index: index4 = 0,
+    ...itemRest
+  }) => {
+    const currGroup = item.group;
+    const isGroupTitle = item === currGroup?.options[0];
+    const itemCount = optionItems.length;
+    const groupOrder = currGroup?.order || 0;
+    return combineProps({
+      id: `${currUniqueId}-option-${index4}`,
+      onClick: (e2) => {
+        selectItem(e2, item);
+      },
+      onMouseDown: (e2) => {
+        e2.preventDefault();
+        e2.stopPropagation();
+      },
+      onMouseOver: () => {
+        if (highlightedIndexRef.current !== index4 && getIsItemCanSelected(item)) {
+          setHighlightedIndex(index4, { reason: "mouse", reRender: true });
+        }
+      },
+      ...isTitleMode && isGroupTitle ? {} : {
+        role: "option",
+        "aria-setsize": itemCount - (isTitleMode ? optionsGroupList?.length || 0 : 0),
+        "aria-posinset": index4 - (isTitleMode ? groupOrder + 1 : 0)
+      }
+    }, itemRest);
+  };
+  const handleF10KeyDown = (e2) => {
+    const highlightedIndex = highlightedIndexRef.current;
+    if (e2.shiftKey) {
+      const currOption = optionItems[highlightedIndex];
+      const currentGroup = currOption.group;
+      if (currentGroup && currentGroup.options.length > 1) {
+        handleGroupExpandedChange(currentGroup.group);
+      }
+    }
+  };
+  const getInputProps = (props) => {
+    return combineProps({
+      id: `${currUniqueId}-input`,
+      autoComplete: "off",
+      onChange: (e2) => {
+        const changeValue = e2.target.value;
+        handleInputChange(changeValue);
+      },
+      onKeyDown: (e2) => {
+        onKeyDownProp?.(e2, highlightedIndexRef.current);
+        switch (e2.key) {
+          case "F10":
+            handleF10KeyDown(e2);
+            break;
+          case "Enter": {
+            const highlightedIndex = highlightedIndexRef.current;
+            if (e2.which === 229)
+              return;
+            if (highlightedIndex !== DEFAULT_HIGHLIGHTED_INDEX) {
+              const currOption = optionItems[highlightedIndex];
+              const isGroupTitle = currOption === currOption.group?.options[0];
+              if (isGroupTitle) {
+                const { onClick } = currOption.group.getExpandIconProps();
+                onClick?.(e2);
+              } else {
+                selectItem(e2, currOption);
+              }
+              e2.stopPropagation();
+            }
+            e2.preventDefault();
+            break;
+          }
+          default:
+            onKeyFocusedIndexHandle(e2);
+            break;
+        }
+      }
+    }, props);
+  };
+  const getInputAriaProps = (props) => {
+    return combineProps({
+      onContainerClick: focusInput,
+      role: "combobox",
+      "aria-autocomplete": "list",
+      "aria-expanded": true,
+      "aria-haspopup": true,
+      "aria-owns": `${currUniqueId}-menu`,
+      "aria-activedescendant": highlightedIndexRef.current > -1 ? `${currUniqueId}-option-${highlightedIndexRef.current}` : void 0
+    }, props);
+  };
+  const getLabelProps = (props) => {
+    return combineProps({
+      htmlFor: `${currUniqueId}-input`,
+      id: `${currUniqueId}-label`
+    }, props);
+  };
+  const getMenuProps = (restMenuProps) => {
+    return combineProps({
+      "aria-labelledby": `${currUniqueId}-label`,
+      id: `${currUniqueId}-menu`,
+      role: "listbox"
+    }, restMenuProps);
+  };
+  const getClearButtonProps = (props) => {
+    return combineProps({
+      id: `${currUniqueId}-clear-button`,
+      onClick: (e2) => {
+        onClear?.(e2);
+        reset2(true);
+      }
+    }, props);
+  };
+  useEffect52(() => {
+    changeHighlightedIndexReasonRef.current = void 0;
+  });
+  return {
+    reset: reset2,
+    clearInput,
+    forceUpdate,
+    focusInput,
+    updateInputValue,
+    selectItem,
+    onKeyFocusedIndexHandle,
+    getClearButtonProps,
+    getLabelProps,
+    getMenuProps,
+    getInputProps,
+    getInputAriaProps,
+    getItemProps,
+    highlightedIndexRef,
+    highlightedIndex: highlightedIndexRef.current,
+    optionItems,
+    inputValue,
+    onInputChange: handleInputChange,
+    setHighlightedIndex,
+    changeHighlightedIndexReasonRef,
+    changeHighlightedIndexReason: changeHighlightedIndexReasonRef.current,
+    optionsGroupList,
+    id: currUniqueId,
+    getNextFocusableOption,
+    handleF10KeyDown
+  };
+};
+
+// src/components/Downshift/utils/useDownshiftTag.ts
+var import_isString = __toModule(require_isString());
+var import_uniqueId2 = __toModule(require_uniqueId());
+import { useMemo as useMemo60, useRef as useRef73, useState as useState33 } from "react";
+var DOWNSHIFT_ID_TOKEN = "rc-chip-";
+var useDownshiftTag = ({
+  id: downshiftId,
+  value: selectedItemsProp = [],
+  onChange: onSelectChange,
+  variant,
+  getOptionLabel = DEFAULT_GET_OPTION_LABEL,
+  onInputChange: onInputChangeProp,
+  wrapperRef,
+  inputRef,
+  freeSolo,
+  maxFreeSolo,
+  keyToTags,
+  onMaxFreeSolo,
+  multiple,
+  label: labelProp,
+  required: required2,
+  disabled: disabled3,
+  getStopCreateFreeSolo,
+  onReset
+}) => {
+  const isAutocomplete = variant === "autocomplete";
+  const isSelectedFromAutocompleteRef = useRef73(false);
+  const [tags, _setTags] = useControlled({
+    controlled: selectedItemsProp,
+    default: [],
+    name: downshiftComponentName
+  });
+  const [focused, setFocused] = useState33(false);
+  const [focusedIndexRef, setFocusedIndex] = useRefState(0);
+  const freeSoloCount = useMemo60(() => tags.filter((x2) => x2.freeSolo).length, [tags]);
+  const setTags = (_selectedItems) => {
+    _setTags(_selectedItems);
+    onSelectChange?.(_selectedItems);
+    if (isAutocomplete && _selectedItems.length === 1) {
+      const result = getOptionLabel(_selectedItems[0]);
+      onInputChangeProp?.(result);
+      isSelectedFromAutocompleteRef.current = true;
+    }
+  };
+  const _focusTag = (tagToFocus) => {
+    const textFieldElm = wrapperRef?.current;
+    const inputElm = inputRef.current;
+    if (tagToFocus === -1) {
+      inputElm?.focus();
+    } else {
+      textFieldElm?.querySelector(`[data-tag-index="${tagToFocus}"]`)?.focus();
+    }
+  };
+  const focusTag = useEventCallback2((tagToFocus, focus2 = true) => {
+    if (focusedIndexRef.current === tagToFocus)
+      return;
+    setFocusedIndex(tagToFocus);
+    if (focus2)
+      _focusTag(tagToFocus);
+  });
+  const checkAndAddFreeSolo = ({
+    selectedItem,
+    value
+  } = {}, e2) => {
+    let isAddItem = false;
+    const currentValue = value ?? inputRef.current?.value;
+    if (!getStopCreateFreeSolo?.() && !selectedItem && freeSolo && currentValue && currentValue.length > 0) {
+      if (freeSoloCount < maxFreeSolo) {
+        const items = currentValue.trim().split(stringArrToRegExp(keyToTags)).filter((x2) => x2.trim() !== "");
+        const toLength = freeSoloCount + items.length;
+        if (toLength > maxFreeSolo) {
+          items.splice(-(toLength - maxFreeSolo));
+          onMaxFreeSolo?.(maxFreeSolo);
+        }
+        if (items.length > 0) {
+          setTags([
+            ...tags,
+            ...items.map((label3) => ({
+              id: (0, import_uniqueId2.default)(DOWNSHIFT_ID_TOKEN),
+              isSuggestion: false,
+              freeSolo: true,
+              label: label3
+            }))
+          ]);
+          isAddItem = true;
+        }
+      } else {
+        onMaxFreeSolo?.(maxFreeSolo);
+      }
+      onReset?.(e2);
+    }
+    return isAddItem;
+  };
+  const removeTag = (selectedItem) => {
+    const selectedItemIndex = tags.indexOf(selectedItem);
+    if (selectedItemIndex > -1) {
+      setTags([
+        ...tags.slice(0, selectedItemIndex),
+        ...tags.slice(selectedItemIndex + 1)
+      ]);
+    }
+  };
+  const addTag = (selectedItem) => {
+    if (selectedItem.freeSolo) {
+      if (freeSoloCount < maxFreeSolo) {
+        selectedItem.id = (0, import_uniqueId2.default)(DOWNSHIFT_ID_TOKEN);
+      } else {
+        onMaxFreeSolo?.(maxFreeSolo);
+        return;
+      }
+    }
+    if (multiple) {
+      setTags([...tags, selectedItem]);
+    } else {
+      setTags([selectedItem]);
+    }
+  };
+  const { onKeyFocusedIndexHandle: handleTagKey } = useKeyboardMoveFocus({
+    options: tags,
+    focusedIndexRef,
+    infinite: "order",
+    onFocusedIndexChange: (event, toIndex) => {
+      focusTag(toIndex);
+      event?.preventDefault();
+    }
+  });
+  const getTagListBoxProps = (props) => {
+    return {
+      "aria-label": (0, import_isString.default)(labelProp) ? labelProp : void 0,
+      "aria-required": required2 || false,
+      "aria-disabled": disabled3 || false,
+      ...props
+    };
+  };
+  const getTagProps = ({
+    index: index4,
+    selectedItem,
+    ...restTagProps
+  }) => {
+    const tabIndex = !focused && index4 === 0 ? 0 : -1;
+    return combineProps({
+      tabIndex,
+      role: "button",
+      key: `${downshiftId}-selected-item-${index4}`,
+      "data-tag-index": index4,
+      "data-item-last": index4 === tags.length - 1,
+      onClick: (e2) => {
+        e2.stopPropagation();
+      },
+      onBlur: () => setFocused(false),
+      onFocus: () => {
+        focusTag(index4);
+        setFocused(true);
+      },
+      onKeyDown: (e2) => {
+        const focusedIndex = focusedIndexRef.current;
+        switch (e2.key) {
+          case "Backspace":
+            {
+              const lengthBeforeDelete = tags.length;
+              focusTag(lengthBeforeDelete === 1 ? -1 : focusedIndex === 0 ? 0 : focusedIndex - 1);
+              removeTag(selectedItem);
+            }
+            break;
+          case "Delete":
+            {
+              const lengthBeforeDelete = tags.length;
+              focusTag(lengthBeforeDelete === 1 ? -1 : focusedIndex === tags.length - 1 ? focusedIndex - 1 : focusedIndex);
+              removeTag(selectedItem);
+            }
+            break;
+          default:
+            handleTagKey(e2);
+            break;
+        }
+      },
+      onDelete: (e2) => {
+        if (e2.button === 0) {
+          removeTag(selectedItem);
+          setFocused(false);
+        }
+      }
+    }, restTagProps);
+  };
+  return {
+    focused,
+    setFocused,
+    tags,
+    isSelectedFromAutocompleteRef,
+    focusedIndex: focusedIndexRef.current,
+    checkAndAddFreeSolo,
+    getTagListBoxProps,
+    getTagProps,
+    focusTag,
+    addTag,
+    clearTags: () => {
+      setTags([]);
+    },
+    blur: () => {
+      if (focusedIndexRef.current !== -1) {
+        focusTag(-1, false);
+      }
+      setFocused(false);
+    },
+    focusLast: () => {
+      const currTagsLength = tags.length;
+      if (currTagsLength > 0) {
+        focusTag(currTagsLength - 1);
+      }
+    }
+  };
+};
+
+// src/components/Downshift/utils/useDownshift.ts
+var DOWNSHIFT_ID_NO_RESULT_TOKEN = "rc-chip-empty";
+var DEFAULT_HIGHLIGHTED_INDEX2 = -1;
 var useDownshift = ({
   multiple: multipleProp,
   variant,
@@ -69847,7 +70356,7 @@ var useDownshift = ({
   inputValue: inputValueProp,
   getOptionLabel = DEFAULT_GET_OPTION_LABEL,
   keyToTags = DEFAULT_KEY_TO_CHIPS,
-  filterOptions,
+  filterOptions: filterOptionsProp,
   disabledItemsHighlightable,
   options,
   freeSolo,
@@ -69880,53 +70389,66 @@ var useDownshift = ({
   open: openProp,
   onOpen,
   onClose,
-  focused: focusedProp
+  focused
 }) => {
   const isAutocomplete = variant === "autocomplete";
-  const multiple = isAutocomplete ? false : multipleProp;
-  const isSelectedFromAutocompleteRef = useRef71(false);
-  const isInputValueChangedRef = useRef71(false);
-  const [isFocused, setIsFocused] = useControlled({
-    controlled: focusedProp,
+  const downshiftId = useId2("downshift", true);
+  const [inputFocused, setInputFocused] = useControlled({
+    controlled: focused,
     default: false,
-    name: componentName
+    name: downshiftComponentName
   });
   const [isOpen, setIsOpen] = useControlled({
     controlled: openProp,
     default: initialIsOpen || false,
-    name: componentName
+    name: downshiftComponentName
   });
-  const [isTagsFocus, setIsTagsFocus] = useState33(false);
-  const [activeIndex, setActiveIndex] = useState33(0);
-  const [inputValue, setInputValue] = useControlled({
-    controlled: inputValueProp,
-    default: "",
-    name: componentName
-  });
-  const updateInputValue = (newValue) => {
-    onInputChangeProp?.(newValue);
-    setInputValue(newValue);
-  };
-  const [selectedItems, setSelectedItems] = useControlled({
-    controlled: selectedItemsProp,
-    default: [],
-    name: componentName
-  });
-  const focusInput = () => inputRef.current?.focus();
-  const { current: downshiftId } = useResultRef(() => (0, import_uniqueId2.default)(`downshift-`));
-  const highlightedIndexRef = useRef71(DEFAULT_HIGHLIGHTED_INDEX);
-  const isCompositionRef = useRef71(false);
-  const noOptionItemRef = useRef71();
-  const stopAutoSelectRef = useRef71(false);
-  const fromPasteString = useRef71("");
-  const keepHighlightedIndexRef = useRef71(false);
-  const changeHighlightedIndexReason = useRef71();
-  const readOnly = !isAutocomplete && !multiple && selectedItems.length >= 1 ? true : void 0;
-  const forceUpdate = useForceUpdate();
+  const isInputValueChangedRef = useRef74(false);
+  const isCompositionRef = useRef74(false);
+  const noOptionItemRef = useRef74(null);
+  const stopAutoSelectRef = useRef74(false);
+  const fromPasteString = useRef74("");
+  const keepHighlightedIndexRef = useRef74(false);
   const { sleep, getSleeping } = useSleep();
-  const filteredResult = useMemo59(() => {
+  const multiple = isAutocomplete ? false : multipleProp;
+  const {
+    isSelectedFromAutocompleteRef,
+    tags,
+    focused: tagFocused,
+    addTag,
+    checkAndAddFreeSolo,
+    focusedIndex: focusedTagIndex,
+    focusTag,
+    focusLast: focusLastTag,
+    clearTags,
+    blur: blurTags,
+    getTagProps,
+    getTagListBoxProps
+  } = useDownshiftTag({
+    id: downshiftId,
+    value: selectedItemsProp,
+    onChange: onSelectChange,
+    getOptionLabel,
+    onInputChange: onInputChangeProp,
+    variant,
+    wrapperRef,
+    inputRef,
+    freeSolo,
+    maxFreeSolo,
+    keyToTags,
+    onMaxFreeSolo,
+    multiple,
+    label: labelProp,
+    required: required2,
+    disabled: disabled3,
+    getStopCreateFreeSolo: () => isCompositionRef.current,
+    onReset: () => {
+      resetState();
+    }
+  });
+  const processFilteredResult = useCallback28((results, inputValue2 = "") => {
     const getInputValueAsItem = () => {
-      const label3 = inputValue.trim() || "";
+      const label3 = inputValue2.trim();
       if (label3.length > 0) {
         const item = {
           id: DOWNSHIFT_ID_NO_RESULT_TOKEN,
@@ -69936,21 +70458,9 @@ var useDownshift = ({
         };
         return item;
       }
-      return void 0;
+      return null;
     };
-    const getFilteredItems = (items) => {
-      if (filterOptions) {
-        return filterOptions(items, {
-          inputValue,
-          inputChanged: isInputValueChangedRef.current,
-          getOptionLabel,
-          selectedItems
-        });
-      }
-      return items;
-    };
-    const results = getFilteredItems(options);
-    noOptionItemRef.current = void 0;
+    noOptionItemRef.current = null;
     if (addNoOptionItem) {
       const item = getInputValueAsItem();
       noOptionItemRef.current = item;
@@ -69972,69 +70482,81 @@ var useDownshift = ({
       }
     }
     return results;
-  }, [
-    addNoOptionItem,
-    filterOptions,
-    freeSolo,
-    getOptionLabel,
+  }, [addNoOptionItem, freeSolo, renderNoOptions]);
+  const filterOptions = useCallback28((items, state) => {
+    if (filterOptionsProp) {
+      return filterOptionsProp(items, {
+        ...state,
+        inputChanged: isInputValueChangedRef.current,
+        selectedItems: tags
+      });
+    }
+    return items;
+  }, [filterOptionsProp, tags]);
+  const {
     inputValue,
+    optionItems,
+    optionsGroupList,
+    highlightedIndexRef,
+    changeHighlightedIndexReasonRef,
+    forceUpdate,
+    selectItem,
+    handleF10KeyDown,
+    onKeyFocusedIndexHandle,
+    setHighlightedIndex,
+    updateInputValue,
+    clearInput,
+    getNextFocusableOption,
+    getItemProps,
+    focusInput,
+    reset: resetSuggestionList,
+    getInputProps: getSuggestionListInputProps,
+    getInputAriaProps: getSuggestionListInputAriaProps,
+    getClearButtonProps: getSuggestionListClearButtonProps,
+    getLabelProps,
+    getMenuProps
+  } = useSuggestionList({
+    id: downshiftId,
+    inputRef,
+    inputValue: inputValueProp,
     options,
-    renderNoOptions,
-    selectedItems
-  ]);
-  const { groupedResult, handleGroupExpandedChange, optionsGroupList } = useDownshiftGroup({
-    groupBy,
-    options,
-    filteredResult,
-    getExpandIconProps,
+    disabledItemsHighlightable,
+    groupVariant,
     groupExpanded,
     groupDefaultExpanded,
+    getOptionLabel,
+    filterOptions,
+    processFilteredResult,
+    onInputChange: onInputChangeProp,
+    onKeyDown: onKeyDownProp,
+    onClear,
+    getOptionDisabled,
+    groupBy,
     onGroupExpanded,
-    groupVariant,
-    id: downshiftId
+    getExpandIconProps,
+    onSelect: (e2, selectedItem) => {
+      addTag(selectedItem);
+      resetState(e2);
+      inputContainerScrollToBottom();
+      if (disableCloseOnSelect) {
+        if (autoHighlight) {
+          const currIndex = highlightedIndexRef.current;
+          const nextValidIndex = getNextFocusableOption();
+          const toIndex = nextValidIndex > currIndex || nextValidIndex === optionItems.length - 1 ? nextValidIndex - 1 : nextValidIndex;
+          setHighlightedIndex(toIndex, {
+            reRender: true
+          });
+        } else {
+          highlightedIndexRef.current = DEFAULT_HIGHLIGHTED_INDEX2;
+        }
+      }
+    }
   });
-  const optionItems = groupBy ? groupedResult : filteredResult;
-  const freeSoloCount = useMemo59(() => selectedItems.filter((x2) => x2.freeSolo).length, [selectedItems]);
-  const handleSelectedItems = (_selectedItems) => {
-    setSelectedItems(_selectedItems);
-    onSelectChange?.(_selectedItems);
-    if (isAutocomplete && _selectedItems.length === 1) {
-      const result = getOptionLabel(_selectedItems[0]);
-      onInputChangeProp?.(result);
-      isSelectedFromAutocompleteRef.current = true;
-    }
-  };
-  const setHighlightedIndex = (index4, {
-    reRender = false,
-    reason
-  }) => {
-    changeHighlightedIndexReason.current = reason;
-    if (highlightedIndexRef.current !== index4) {
-      highlightedIndexRef.current = index4;
-      if (reRender)
-        forceUpdate();
-    }
-  };
-  const focusTag = (tagToFocus) => {
-    const textFieldElm = wrapperRef?.current;
-    const inputElm = inputRef.current;
-    if (tagToFocus === -1) {
-      inputElm?.focus();
-    } else {
-      textFieldElm?.querySelector(`[data-tag-index="${tagToFocus}"]`)?.focus();
-    }
-  };
-  const handleFocusTag = useEventCallback2((tagToFocus, focus2 = true) => {
-    if (activeIndex === tagToFocus)
-      return;
-    setActiveIndex(tagToFocus);
-    if (focus2)
-      focusTag(tagToFocus);
-  });
+  const readOnly = !isAutocomplete && !multiple && tags.length >= 1 ? true : void 0;
   const closeMenu = (e2, reason) => {
     keepHighlightedIndexRef.current = false;
     isInputValueChangedRef.current = false;
-    setHighlightedIndex(DEFAULT_HIGHLIGHTED_INDEX, { reason: "auto" });
+    setHighlightedIndex(DEFAULT_HIGHLIGHTED_INDEX2, { reason: "auto" });
     if (isOpen) {
       if (e2 && reason) {
         onClose?.(e2, reason);
@@ -70051,7 +70573,7 @@ var useDownshift = ({
   };
   const handleInputChange = (newValue, open = true, e2) => {
     if (inputValue !== newValue) {
-      setHighlightedIndex(DEFAULT_HIGHLIGHTED_INDEX, { reason: "auto" });
+      setHighlightedIndex(DEFAULT_HIGHLIGHTED_INDEX2, { reason: "auto" });
       if (stringArrToRegExp(keyToTags).test((newValue || "").trim())) {
         const resultHaveAdd = checkAndAddFreeSolo({ value: newValue }, e2);
         if (!disableCloseOnSelect) {
@@ -70067,42 +70589,6 @@ var useDownshift = ({
       openMenu(e2);
     return false;
   };
-  const getIsItemCanSelected = (item) => {
-    return !!item && item.freeSolo || isItemCanSelected(item) && !getOptionDisabled?.(item);
-  };
-  const checkAndAddFreeSolo = ({
-    selectedItem,
-    value
-  } = {}, e2) => {
-    let isAddItem = false;
-    const currentValue = value ?? inputRef.current?.value;
-    if (!selectedItem && freeSolo && !isCompositionRef.current && currentValue && currentValue.length > 0) {
-      if (freeSoloCount < maxFreeSolo) {
-        const items = currentValue.trim().split(stringArrToRegExp(keyToTags)).filter((x2) => x2.trim() !== "");
-        const toLength = freeSoloCount + items.length;
-        if (toLength > maxFreeSolo) {
-          items.splice(-(toLength - maxFreeSolo));
-          onMaxFreeSolo?.(maxFreeSolo);
-        }
-        if (items.length > 0) {
-          handleSelectedItems([
-            ...selectedItems,
-            ...items.map((label3) => ({
-              id: (0, import_uniqueId2.default)(DOWNSHIFT_ID_TOKEN),
-              isSuggestion: false,
-              freeSolo: true,
-              label: label3
-            }))
-          ]);
-          isAddItem = true;
-        }
-      } else {
-        onMaxFreeSolo?.(maxFreeSolo);
-      }
-      resetState(e2);
-    }
-    return isAddItem;
-  };
   const inputContainerScrollToBottom = () => {
     requestAnimationFrame(() => {
       const inputContainer = inputContainerRef?.current;
@@ -70111,111 +70597,40 @@ var useDownshift = ({
       }
     });
   };
-  const selectItemFn = (selectedItem, e2) => {
-    if (getIsItemCanSelected(selectedItem)) {
-      addSelectedItem(selectedItem);
-      resetState(e2);
-      inputContainerScrollToBottom();
-      if (disableCloseOnSelect) {
-        if (autoHighlight) {
-          const currIndex = highlightedIndexRef.current;
-          const nextValidIndex = getNextFocusableOption();
-          const toIndex = nextValidIndex > currIndex || nextValidIndex === optionItems.length - 1 ? nextValidIndex - 1 : nextValidIndex;
-          setHighlightedIndex(toIndex, {
-            reRender: true
-          });
-        } else {
-          highlightedIndexRef.current = DEFAULT_HIGHLIGHTED_INDEX;
-        }
-      }
-      return true;
-    }
-    return false;
-  };
-  const removeSelectedItem = (selectedItem) => {
-    const selectedItemIndex = selectedItems.indexOf(selectedItem);
-    if (selectedItemIndex > -1) {
-      handleSelectedItems([
-        ...selectedItems.slice(0, selectedItemIndex),
-        ...selectedItems.slice(selectedItemIndex + 1)
-      ]);
-    }
-  };
-  const addSelectedItem = (selectedItem) => {
-    if (selectedItem.freeSolo) {
-      noOptionItemRef.current = void 0;
-      if (freeSoloCount < maxFreeSolo) {
-        selectedItem.id = (0, import_uniqueId2.default)(DOWNSHIFT_ID_TOKEN);
-      } else {
-        onMaxFreeSolo?.(maxFreeSolo);
-        return;
-      }
-    }
-    if (multiple) {
-      handleSelectedItems([...selectedItems, selectedItem]);
-    } else {
-      handleSelectedItems([selectedItem]);
-    }
-  };
   const resetState = (e2) => {
-    if (!isSelectedFromAutocompleteRef.current && inputRef.current && inputRef.current.value.length > 0) {
-      updateInputValue("");
+    if (!isSelectedFromAutocompleteRef.current) {
+      clearInput();
     }
+    blurTags();
     isSelectedFromAutocompleteRef.current = false;
+    noOptionItemRef.current = null;
     isInputValueChangedRef.current = false;
-    setActiveIndex(-1);
     if (!disableCloseOnSelect) {
       closeMenu(e2, "select-option");
     }
   };
   const reset2 = (isFocus) => {
     resetState();
-    setIsTagsFocus(false);
-    onInputChangeProp?.("");
     onSelectChange?.([]);
-    if (isFocus)
-      focusInput();
+    resetSuggestionList(isFocus);
   };
-  const activeIndexRef = useRef71(activeIndex);
-  activeIndexRef.current = activeIndex;
-  const { onKeyFocusedIndexHandle: handleTagKey } = useKeyboardMoveFocus({
-    options: selectedItems,
-    focusedIndexRef: activeIndexRef,
-    infinite: "order",
-    onFocusedIndexChange: (event, toIndex) => {
-      handleFocusTag(toIndex);
-      event?.preventDefault();
-    }
-  });
-  const { onKeyFocusedIndexHandle, getNextFocusableOption } = useKeyboardMoveFocus({
-    options: optionItems,
-    focusedIndexRef: highlightedIndexRef,
-    infinite: true,
-    onFocusedIndexChange: (event, toIndex) => {
-      setHighlightedIndex(toIndex, { reason: "keyboard", reRender: true });
-      event?.preventDefault();
-    },
-    getOptionDisabled: disabledItemsHighlightable ? void 0 : (child) => {
-      return !getIsItemCanSelected(child);
-    }
-  });
   const keepHighlightedIndex = () => {
     keepHighlightedIndexRef.current = true;
   };
   useChange(() => {
     const shouldResetHighlightedIndex = !keepHighlightedIndexRef.current;
     if (options !== void 0 && shouldResetHighlightedIndex) {
-      setHighlightedIndex(DEFAULT_HIGHLIGHTED_INDEX, { reason: "auto" });
+      setHighlightedIndex(DEFAULT_HIGHLIGHTED_INDEX2, { reason: "auto" });
     }
   }, () => options);
-  const defaultHighlightedIndex = useMemo59(() => {
+  const defaultHighlightedIndex = useMemo61(() => {
     return autoHighlight ? getNextFocusableOption(0) : -1;
   }, [autoHighlight, getNextFocusableOption]);
   if (isOpen) {
-    if (highlightedIndexRef.current === DEFAULT_HIGHLIGHTED_INDEX) {
+    if (highlightedIndexRef.current === DEFAULT_HIGHLIGHTED_INDEX2) {
       let toIndex = defaultHighlightedIndex;
-      if (isAutocomplete && selectedItems.length === 1) {
-        const itemText = getOptionLabel(selectedItems[0]);
+      if (isAutocomplete && tags.length === 1) {
+        const itemText = getOptionLabel(tags[0]);
         const fIndex = optionItems.findIndex((x2) => getOptionLabel(x2) === itemText);
         if (fIndex > -1) {
           toIndex = fIndex;
@@ -70236,8 +70651,8 @@ var useDownshift = ({
     }
   }
   const handleAutocompleteText = () => {
-    if (isAutocomplete && selectedItems.length > 0) {
-      const result = getOptionLabel(selectedItems[0]);
+    if (isAutocomplete && tags.length > 0) {
+      const result = getOptionLabel(tags[0]);
       onInputChangeProp?.(result);
     }
   };
@@ -70247,89 +70662,10 @@ var useDownshift = ({
     }
     handleAutocompleteText();
   }, []);
-  const getTagListBoxProps = (props) => {
-    return {
-      "aria-label": (0, import_isString.default)(labelProp) ? labelProp : void 0,
-      "aria-required": required2 || false,
-      "aria-disabled": disabled3 || false,
-      ...props
-    };
-  };
-  const getItemProps = ({
-    item,
-    index: index4,
-    ...itemRest
-  }) => {
-    return combineProps({
-      id: `${downshiftId}-option-${index4}`,
-      role: "option",
-      onClick: (e2) => {
-        selectItemFn(item, e2);
-      },
-      onMouseDown: (e2) => {
-        e2.preventDefault();
-        e2.stopPropagation();
-      },
-      onMouseOver: () => {
-        if (highlightedIndexRef.current !== index4) {
-          setHighlightedIndex(index4, { reason: "mouse", reRender: true });
-        }
-      }
-    }, itemRest);
-  };
-  const getTagProps = ({
-    index: index4,
-    selectedItem,
-    ...restTagProps
-  }) => {
-    const tabIndex = !isTagsFocus && index4 === 0 ? 0 : -1;
-    return combineProps({
-      tabIndex,
-      role: "button",
-      key: `${downshiftId}-selected-item-${index4}`,
-      "data-tag-index": index4,
-      "data-item-last": index4 === selectedItems.length - 1,
-      onClick: (e2) => {
-        e2.stopPropagation();
-      },
-      onBlur: () => setIsTagsFocus(false),
-      onFocus: () => {
-        handleFocusTag(index4);
-        setIsTagsFocus(true);
-      },
-      onKeyDown: (e2) => {
-        switch (e2.key) {
-          case "Backspace":
-            {
-              const lengthBeforeDelete = selectedItems.length;
-              handleFocusTag(lengthBeforeDelete === 1 ? -1 : activeIndex === 0 ? 0 : activeIndex - 1);
-              removeSelectedItem(selectedItem);
-            }
-            break;
-          case "Delete":
-            {
-              const lengthBeforeDelete = selectedItems.length;
-              handleFocusTag(lengthBeforeDelete === 1 ? -1 : activeIndex === selectedItems.length - 1 ? activeIndex - 1 : activeIndex);
-              removeSelectedItem(selectedItem);
-            }
-            break;
-          default:
-            handleTagKey(e2);
-            break;
-        }
-      },
-      onDelete: (e2) => {
-        if (e2.button === 0) {
-          removeSelectedItem(selectedItem);
-          setIsTagsFocus(false);
-        }
-      }
-    }, restTagProps);
-  };
   const getInputProps = (props) => {
+    const suggestionListItemProps = getSuggestionListInputProps(props);
     return combineProps({
-      id: `${downshiftId}-input`,
-      autoComplete: "off",
+      ...suggestionListItemProps,
       onPaste: (e2) => {
         if (freeSolo) {
           const clipboardData = e2.clipboardData;
@@ -70343,28 +70679,26 @@ var useDownshift = ({
         const changeValue = fromPasteString.current || e2.target.value;
         handleInputChange(changeValue, void 0, e2);
         if (isAutocomplete && changeValue.length === 0) {
-          handleSelectedItems([]);
+          clearTags();
         }
         fromPasteString.current = "";
         isInputValueChangedRef.current = true;
       },
       onFocus: (e2) => {
-        setIsFocused(true);
+        setInputFocused(true);
         if (openOnFocus)
           openMenu(e2);
         if (isAutocomplete) {
           inputRef.current?.select();
         }
         stopAutoSelectRef.current = false;
-        if (activeIndex !== -1) {
-          handleFocusTag(-1, false);
-        }
+        blurTags();
       },
       onBlur: (e2) => {
-        setIsFocused(false);
+        setInputFocused(false);
         if (autoSelect && !stopAutoSelectRef.current) {
           if (!freeSolo)
-            selectItemFn(optionItems[highlightedIndexRef.current], e2);
+            selectItem(e2, optionItems[highlightedIndexRef.current]);
           checkAndAddFreeSolo({}, e2);
         }
         handleAutocompleteText();
@@ -70381,12 +70715,10 @@ var useDownshift = ({
         keepHighlightedIndexRef.current = false;
         onKeyDownProp?.(e2, highlightedIndexRef.current);
         const { isSelectRange, position: position4 } = getSelectionPosition(inputRef);
-        const currTagsLength = selectedItems.length;
+        const currTagsLength = tags.length;
         if (!isSelectRange && position4.start === 0 && currTagsLength > 0 && e2.key === "Backspace") {
-          if (currTagsLength > 0) {
-            stopAutoSelectRef.current = true;
-            handleFocusTag(currTagsLength - 1);
-          }
+          stopAutoSelectRef.current = true;
+          focusLastTag();
         } else {
           const highlightedIndex = highlightedIndexRef.current;
           switch (e2.key) {
@@ -70411,7 +70743,7 @@ var useDownshift = ({
               if (!e2.shiftKey && !isCompositionRef.current) {
                 const currentHighlightItem = optionItems[highlightedIndex];
                 if (isOpen && currentHighlightItem) {
-                  if (selectItemFn(currentHighlightItem, e2)) {
+                  if (selectItem(e2, currentHighlightItem)) {
                     e2.preventDefault();
                     e2.stopPropagation();
                   }
@@ -70424,25 +70756,19 @@ var useDownshift = ({
             case "Enter":
               if (e2.which === 229)
                 return;
-              if (freeSolo && highlightedIndex === DEFAULT_HIGHLIGHTED_INDEX && checkAndAddFreeSolo({
+              if (freeSolo && highlightedIndex === DEFAULT_HIGHLIGHTED_INDEX2 && checkAndAddFreeSolo({
                 selectedItem: isOpen ? optionItems[highlightedIndex] : void 0
               }, e2)) {
                 e2.stopPropagation();
                 closeMenu(e2, "select-option");
-              } else if (highlightedIndex !== DEFAULT_HIGHLIGHTED_INDEX && isOpen && !isCompositionRef.current) {
-                selectItemFn(optionItems[highlightedIndex], e2);
+              } else if (highlightedIndex !== DEFAULT_HIGHLIGHTED_INDEX2 && isOpen && !isCompositionRef.current) {
+                selectItem(e2, optionItems[highlightedIndex]);
                 e2.stopPropagation();
               }
               e2.preventDefault();
               break;
             case "F10":
-              if (e2.shiftKey) {
-                const currOption = optionItems[highlightedIndex];
-                const currentGroup = currOption.group;
-                if (currentGroup && currentGroup.options.length > 1) {
-                  handleGroupExpandedChange(currentGroup.group);
-                }
-              }
+              handleF10KeyDown(e2);
               break;
             case "ArrowUp":
             case "ArrowDown":
@@ -70450,7 +70776,7 @@ var useDownshift = ({
                 e2.preventDefault();
                 return;
               }
-              if (isAutocomplete && selectedItems.length > 0 && !isOpen) {
+              if (isAutocomplete && tags.length > 0 && !isOpen) {
                 openMenu(e2);
                 e2.preventDefault();
                 break;
@@ -70469,22 +70795,13 @@ var useDownshift = ({
     }, props);
   };
   const getInputAriaProps = (props) => {
+    const suggestionListInputAriaProps = getSuggestionListInputAriaProps(props);
     return combineProps({
+      ...suggestionListInputAriaProps,
       readOnly,
-      onContainerClick: focusInput,
       unselectable: readOnly ? "on" : void 0,
-      role: "combobox",
-      "aria-autocomplete": "list",
-      "aria-expanded": !!isOpen,
-      "aria-haspopup": true,
       "aria-owns": isOpen ? `${downshiftId}-menu` : void 0,
-      "aria-activedescendant": isOpen && highlightedIndexRef.current > -1 ? `${downshiftId}-option-${highlightedIndexRef.current}` : void 0
-    }, props);
-  };
-  const getLabelProps = (props) => {
-    return combineProps({
-      htmlFor: `${downshiftId}-input`,
-      id: `${downshiftId}-label`
+      "aria-expanded": !!isOpen
     }, props);
   };
   const getPopperProps = (restPopperProps) => {
@@ -70497,13 +70814,6 @@ var useDownshift = ({
         e2.stopPropagation();
       }
     }, restPopperProps);
-  };
-  const getMenuProps = (restMenuProps) => {
-    return combineProps({
-      "aria-labelledby": `${downshiftId}-label`,
-      id: `${downshiftId}-menu`,
-      role: "listbox"
-    }, restMenuProps);
   };
   const getToggleButtonProps = (props) => {
     return combineProps({
@@ -70525,8 +70835,9 @@ var useDownshift = ({
     }, props);
   };
   const getClearButtonProps = (props) => {
+    const suggestionListClearButtonProps = getSuggestionListClearButtonProps(props);
     return combineProps({
-      id: `${downshiftId}-clear-button`,
+      ...suggestionListClearButtonProps,
       onClick: (e2) => {
         onClear?.(e2);
         reset2(true);
@@ -70541,17 +70852,14 @@ var useDownshift = ({
       role: "presentation"
     }, additionProps);
   };
-  const resultObj = {
+  return {
     focusInput,
-    setIsTagsFocus,
     readOnly,
     getTagProps,
     getClearButtonProps,
-    removeSelectedItem,
-    activeIndex,
-    setActiveIndex: handleFocusTag,
+    activeIndex: focusedTagIndex,
+    setActiveIndex: focusTag,
     isOpen,
-    isTagsFocus,
     getToggleButtonProps,
     getPopperProps,
     getLabelProps,
@@ -70563,33 +70871,31 @@ var useDownshift = ({
     getNoOptionsProps,
     noOptionItem: noOptionItemRef.current,
     highlightedIndex: highlightedIndexRef.current,
-    selectedItems,
+    tags,
     optionItems,
     inputValue,
     onInputChange: handleInputChange,
     keepHighlightedIndex,
     isKeepHighlightedIndex: keepHighlightedIndexRef.current,
     setHighlightedIndex,
-    changeHighlightedIndexReason: changeHighlightedIndexReason.current,
+    changeHighlightedIndexReason: changeHighlightedIndexReasonRef.current,
     closeMenu,
     openMenu,
     reset: reset2,
     forceUpdate,
     optionsGroupList,
-    isFocused,
+    focused: focused ?? (tagFocused || inputFocused ? true : void 0),
     id: downshiftId,
     inputChanged: isInputValueChangedRef.current
   };
-  changeHighlightedIndexReason.current = void 0;
-  return resultObj;
 };
 
 // src/components/Downshift/utils/useDownshiftError.tsx
 var import_react_is12 = __toModule(require_react_is2());
-import React642, { useEffect as useEffect52 } from "react";
+import React642, { useEffect as useEffect53 } from "react";
 var useDownshiftError = ({ isNew, MenuItem: MenuItem3, InputItem }) => {
   if (isShowJunoWarning) {
-    useEffect52(() => {
+    useEffect53(() => {
       if (!isNew) {
         logInDev({
           component: "RcDownshift",
@@ -70625,8 +70931,8 @@ import React651, {
   forwardRef as forwardRef570,
   memo as memo409,
   useImperativeHandle as useImperativeHandle15,
-  useMemo as useMemo63,
-  useRef as useRef79,
+  useMemo as useMemo64,
+  useRef as useRef81,
   useState as useState35
 } from "react";
 
@@ -70767,8 +71073,8 @@ import React650, {
   forwardRef as forwardRef569,
   useContext as useContext25,
   useLayoutEffect as useLayoutEffect23,
-  useMemo as useMemo62,
-  useRef as useRef78
+  useMemo as useMemo63,
+  useRef as useRef80
 } from "react";
 
 // src/components/VirtualizedMenu/styles/StyledMenuPadding.tsx
@@ -70799,7 +71105,7 @@ import {
 import { createElement as createElement120 } from "react";
 
 // node_modules/@virtuoso.dev/react-urx/dist/react-urx.esm.js
-import { createContext as createContext18, forwardRef as forwardRef568, useState as useState34, useImperativeHandle as useImperativeHandle14, createElement as createElement116, useLayoutEffect as useLayoutEffect21, useEffect as useEffect53, useCallback as useCallback27, useContext as useContext24 } from "react";
+import { createContext as createContext18, forwardRef as forwardRef568, useState as useState34, useImperativeHandle as useImperativeHandle14, createElement as createElement116, useLayoutEffect as useLayoutEffect21, useEffect as useEffect54, useCallback as useCallback29, useContext as useContext24 } from "react";
 
 // node_modules/@virtuoso.dev/urx/dist/urx.esm.js
 var PUBLISH = 0;
@@ -71264,7 +71570,7 @@ function omit4(keys3, obj) {
   }
   return result;
 }
-var useIsomorphicLayoutEffect3 = typeof document !== "undefined" ? useLayoutEffect21 : useEffect53;
+var useIsomorphicLayoutEffect3 = typeof document !== "undefined" ? useLayoutEffect21 : useEffect54;
 function systemToComponent(systemSpec, map2, Root) {
   var requiredPropNames = Object.keys(map2.required || {});
   var optionalPropNames = Object.keys(map2.optional || {});
@@ -71334,7 +71640,7 @@ function systemToComponent(systemSpec, map2, Root) {
     }, Root ? createElement116(Root, omit4([].concat(requiredPropNames, optionalPropNames, eventNames), props), children2) : children2);
   });
   var usePublisher3 = function usePublisher4(key) {
-    return useCallback27(curry2to1(publish, useContext24(Context2)[key]), [key]);
+    return useCallback29(curry2to1(publish, useContext24(Context2)[key]), [key]);
   };
   var useEmitterValue3 = function useEmitterValue4(key) {
     var context = useContext24(Context2);
@@ -72311,10 +72617,10 @@ function itemsPerRow(viewportWidth, itemWidth) {
 }
 
 // src/components/Virtuoso/react-virtuoso/hooks/useSize.ts
-import { useRef as useRef72 } from "react";
+import { useRef as useRef75 } from "react";
 function useSizeWithElRef(callback, enabled = true) {
   const { externalWindow } = useRcPortalWindowContext();
-  const ref2 = useRef72(null);
+  const ref2 = useRef75(null);
   const observer = getResizeObserver((entries) => {
     const element2 = entries[0].target;
     if (element2.offsetParent !== null) {
@@ -72339,10 +72645,10 @@ function useSize(callback, enabled = true) {
 }
 
 // src/components/Virtuoso/react-virtuoso/hooks/useWindowViewportRect.ts
-import { useCallback as useCallback28, useEffect as useEffect54, useRef as useRef73 } from "react";
+import { useCallback as useCallback30, useEffect as useEffect55, useRef as useRef76 } from "react";
 function useWindowViewportRectRef(callback, customWindow = window) {
-  const viewportInfo = useRef73(null);
-  const calculateInfo = useCallback28((element2) => {
+  const viewportInfo = useRef76(null);
+  const calculateInfo = useCallback30((element2) => {
     if (element2 === null) {
       return;
     }
@@ -72358,10 +72664,10 @@ function useWindowViewportRectRef(callback, customWindow = window) {
     callback(viewportInfo.current);
   }, [callback, customWindow]);
   const { callbackRef, ref: ref2 } = useSizeWithElRef(calculateInfo);
-  const windowEH = useCallback28(() => {
+  const windowEH = useCallback30(() => {
     calculateInfo(ref2.current);
   }, [calculateInfo, ref2]);
-  useEffect54(() => {
+  useEffect55(() => {
     customWindow.addEventListener("scroll", windowEH);
     customWindow.addEventListener("resize", windowEH);
     return () => {
@@ -72376,7 +72682,7 @@ function useWindowViewportRectRef(callback, customWindow = window) {
 import {
   createElement as createElement117,
   memo as memo407,
-  useMemo as useMemo60
+  useMemo as useMemo62
 } from "react";
 import { createElement as createElement118 } from "react";
 
@@ -72420,18 +72726,18 @@ function getChangedChildSizes(children2, itemSize, field) {
 }
 
 // src/components/Virtuoso/react-virtuoso/hooks/useIsomorphicLayoutEffect.ts
-import { useEffect as useEffect55, useLayoutEffect as useLayoutEffect22 } from "react";
-var useIsomorphicLayoutEffect4 = typeof document !== "undefined" ? useLayoutEffect22 : useEffect55;
+import { useEffect as useEffect56, useLayoutEffect as useLayoutEffect22 } from "react";
+var useIsomorphicLayoutEffect4 = typeof document !== "undefined" ? useLayoutEffect22 : useEffect56;
 var useIsomorphicLayoutEffect_default = useIsomorphicLayoutEffect4;
 
 // src/components/Virtuoso/react-virtuoso/hooks/useScrollTop.ts
-import { useCallback as useCallback29, useEffect as useEffect56, useRef as useRef74 } from "react";
+import { useCallback as useCallback31, useEffect as useEffect57, useRef as useRef77 } from "react";
 function useScrollTop(scrollTopCallback, smoothScrollTargetReached, scrollerElement, scrollerRefCallback = noop3, customWindow = window) {
-  const scrollerRef = useRef74(null);
-  const scrollTopTarget = useRef74(null);
-  const timeoutRef = useRef74(null);
+  const scrollerRef = useRef77(null);
+  const scrollTopTarget = useRef77(null);
+  const timeoutRef = useRef77(null);
   const customDocument = customWindow.document;
-  const handler = useCallback29((ev) => {
+  const handler = useCallback31((ev) => {
     const el2 = ev.target;
     const scrollTop = el2 === customWindow || el2 === customDocument ? customWindow.pageYOffset || customDocument.documentElement.scrollTop : el2.scrollTop;
     scrollTopCallback(Math.max(scrollTop, 0));
@@ -72451,7 +72757,7 @@ function useScrollTop(scrollTopCallback, smoothScrollTargetReached, scrollerElem
     scrollTopCallback,
     smoothScrollTargetReached
   ]);
-  useEffect56(() => {
+  useEffect57(() => {
     const localRef = scrollerRef.current;
     scrollerRefCallback(scrollerRef.current);
     handler({ target: localRef });
@@ -73109,10 +73415,10 @@ var combinedSystem = system(([listSystem2, propsSystem]) => {
   subscribe(deprecatedProps.FooterContainer, () => {
     console.warn(`react-virtuoso: FooterContainer is deprecated. Use headerFooterTag if you want to change the wrapper of the footer component and pass components.Footer to change its contents.`);
   });
-  function deprecateComponentProp(stream2, componentName3, propName) {
+  function deprecateComponentProp(stream2, componentName2, propName) {
     connect(pipe(stream2, withLatestFrom(propsSystem.components), map(([comp, components]) => {
-      console.warn(`react-virtuoso: ${propName} property is deprecated. Pass components.${componentName3} instead.`);
-      return { ...components, [componentName3]: comp };
+      console.warn(`react-virtuoso: ${propName} property is deprecated. Pass components.${componentName2} instead.`);
+      return { ...components, [componentName2]: comp };
     })), propsSystem.components);
   }
   subscribe(deprecatedProps.scrollSeek, ({ placeholder: placeholder2, ...config2 }) => {
@@ -73307,7 +73613,7 @@ var ListRoot = memo407(function VirtuosoRoot(props) {
   const useWindowScroll = useEmitterValue("useWindowScroll");
   const showTopList = useEmitterValue("topItemsIndexes").length > 0;
   const { externalWindow } = useRcPortalWindowContext();
-  const TheScroller = useMemo60(() => (useWindowScroll ? createWindowScroller : createScroller)(externalWindow || window), [externalWindow, useWindowScroll]);
+  const TheScroller = useMemo62(() => (useWindowScroll ? createWindowScroller : createScroller)(externalWindow || window), [externalWindow, useWindowScroll]);
   const TheViewport = useWindowScroll ? WindowViewport : Viewport;
   return /* @__PURE__ */ createElement117(TheScroller, {
     ...props
@@ -73421,10 +73727,10 @@ var combinedSystem2 = system(([gridSystem2, gridComponentPropsSystem2]) => {
     emptyComponent: stream(),
     scrollSeek: stream()
   };
-  function deprecateComponentProp(stream2, componentName3, propName) {
+  function deprecateComponentProp(stream2, componentName2, propName) {
     connect(pipe(stream2, withLatestFrom(gridComponentPropsSystem2.components), map(([comp, components]) => {
-      console.warn(`react-virtuoso: ${propName} property is deprecated. Pass components.${componentName3} instead.`);
-      return { ...components, [componentName3]: comp };
+      console.warn(`react-virtuoso: ${propName} property is deprecated. Pass components.${componentName2} instead.`);
+      return { ...components, [componentName2]: comp };
     })), gridComponentPropsSystem2.components);
   }
   subscribe(deprecatedProps.scrollSeek, ({ placeholder: placeholder2, ...config2 }) => {
@@ -73560,7 +73866,7 @@ function isOutOfRange(focusedIndex, range) {
 }
 
 // src/components/Virtuoso/utils/useDynamicHeight.tsx
-import { useRef as useRef75 } from "react";
+import { useRef as useRef78 } from "react";
 var useDynamicHeight = ({
   itemCount,
   maxContainerHeight,
@@ -73569,7 +73875,7 @@ var useDynamicHeight = ({
   const prevItemCount = usePrevious(() => itemCount);
   const fullHeight = maxContainerHeight === "100%";
   const maxContainerSize = fullHeight ? -1 : maxContainerHeight;
-  const containerHeighRef = useRef75(maxContainerSize);
+  const containerHeighRef = useRef78(maxContainerSize);
   if (!fullHeight) {
     if (prevItemCount === 0 && itemCount !== 0) {
       containerHeighRef.current = maxContainerSize;
@@ -73601,13 +73907,13 @@ var useDynamicHeight = ({
 };
 
 // src/components/Virtuoso/utils/useHighlightScroll.tsx
-import { useRef as useRef76 } from "react";
+import { useRef as useRef79 } from "react";
 function useHighlightScroll({
   containerHeighRef,
   scrollToIndex
 }) {
-  const renderedItemsRef = useRef76([]);
-  const scrollerRef = useRef76();
+  const renderedItemsRef = useRef79([]);
+  const scrollerRef = useRef79();
   const scrollToHighlightedIndex = (prevHighlightedIndex, currHighlightedIndex, topHighlightIndex = 0) => {
     if (!scrollerRef.current) {
       if (currHighlightedIndex !== topHighlightIndex) {
@@ -73683,244 +73989,6 @@ function useHighlightScroll({
 // src/components/Downshift/SuggestionList/utils/SuggestionListUtils.ts
 var RcSuggestionListClasses = RcClasses(["root", "expanded", "toggle", "groupTitle"], "RcSuggestionList");
 
-// src/components/Downshift/SuggestionList/utils/useSuggestionList.ts
-var import_uniqueId3 = __toModule(require_uniqueId());
-import { useMemo as useMemo61, useRef as useRef77 } from "react";
-var DEFAULT_HIGHLIGHTED_INDEX2 = -1;
-var componentName2 = "useSuggestionList";
-var useSuggestionList = ({
-  inputValue: inputValueProp,
-  getOptionLabel = DEFAULT_GET_OPTION_LABEL,
-  filterOptions,
-  disabledItemsHighlightable,
-  options,
-  onInputChange: onInputChangeProp,
-  inputRef,
-  onKeyDown: onKeyDownProp,
-  onSelect,
-  onClear,
-  getOptionDisabled,
-  groupBy,
-  onGroupExpanded,
-  groupVariant,
-  groupExpanded,
-  groupDefaultExpanded,
-  getExpandIconProps
-}) => {
-  const [inputValue, setInputValue] = useControlled({
-    controlled: inputValueProp,
-    default: "",
-    name: componentName2
-  });
-  const updateInputValue = (newValue) => {
-    onInputChangeProp?.(newValue);
-    setInputValue(newValue);
-  };
-  const focusInput = () => inputRef.current?.focus();
-  const { current: suggestionListId } = useResultRef(() => (0, import_uniqueId3.default)(`suggestion-list-`));
-  const highlightedIndexRef = useRef77(DEFAULT_HIGHLIGHTED_INDEX2);
-  const changeHighlightedIndexReason = useRef77();
-  const forceUpdate = useForceUpdate();
-  const filteredResult = useMemo61(() => {
-    const getFilteredItems = (items) => {
-      if (filterOptions) {
-        return filterOptions(items, {
-          inputValue,
-          getOptionLabel,
-          selectedItems: []
-        });
-      }
-      return items;
-    };
-    const results = getFilteredItems(options);
-    return results;
-  }, [filterOptions, getOptionLabel, inputValue, options]);
-  const { groupedResult, handleGroupExpandedChange, optionsGroupList } = useDownshiftGroup({
-    groupBy,
-    options,
-    filteredResult,
-    getExpandIconProps,
-    groupExpanded,
-    groupDefaultExpanded,
-    onGroupExpanded,
-    groupVariant,
-    getOptionDisabled,
-    id: suggestionListId
-  });
-  const optionItems = groupBy ? groupedResult : filteredResult;
-  const setHighlightedIndex = (index4, {
-    reRender = false,
-    reason
-  }) => {
-    changeHighlightedIndexReason.current = reason;
-    if (highlightedIndexRef.current !== index4) {
-      highlightedIndexRef.current = index4;
-      if (reRender)
-        forceUpdate();
-    }
-  };
-  const handleInputChange = (newValue) => {
-    if (inputValue !== newValue) {
-      setHighlightedIndex(DEFAULT_HIGHLIGHTED_INDEX2, { reason: "auto" });
-      updateInputValue(newValue);
-    }
-    return false;
-  };
-  const getIsItemCanSelected = (item) => {
-    return !!item && item.freeSolo || isItemCanSelected(item) && !getOptionDisabled?.(item);
-  };
-  const selectItemFn = (e2, selectedItem) => {
-    if (getIsItemCanSelected(selectedItem)) {
-      onSelect?.(e2, selectedItem);
-      return true;
-    }
-    return false;
-  };
-  const resetState = () => {
-    if (inputRef.current && inputRef.current.value.length > 0) {
-      updateInputValue("");
-    }
-  };
-  const reset2 = (isFocus) => {
-    resetState();
-    onInputChangeProp?.("");
-    if (isFocus)
-      focusInput();
-  };
-  const { onKeyFocusedIndexHandle } = useKeyboardMoveFocus({
-    options: optionItems,
-    focusedIndexRef: highlightedIndexRef,
-    infinite: true,
-    onFocusedIndexChange: (event, toIndex) => {
-      setHighlightedIndex(toIndex, { reason: "keyboard", reRender: true });
-      event?.preventDefault();
-    },
-    getOptionDisabled: disabledItemsHighlightable ? void 0 : (child) => {
-      return !getIsItemCanSelected(child);
-    }
-  });
-  const getItemProps = ({
-    item,
-    index: index4,
-    ...itemRest
-  }) => {
-    return combineProps({
-      id: `${suggestionListId}-option-${index4}`,
-      role: "option",
-      onClick: (e2) => {
-        selectItemFn(e2, item);
-      },
-      onMouseDown: (e2) => {
-        e2.preventDefault();
-        e2.stopPropagation();
-      },
-      onMouseOver: () => {
-        if (highlightedIndexRef.current !== index4) {
-          setHighlightedIndex(index4, { reason: "mouse", reRender: true });
-        }
-      }
-    }, itemRest);
-  };
-  const getInputProps = (props) => {
-    return combineProps({
-      id: `${suggestionListId}-input`,
-      autoComplete: "off",
-      onChange: (e2) => {
-        const changeValue = e2.target.value;
-        handleInputChange(changeValue);
-      },
-      onKeyDown: (e2) => {
-        onKeyDownProp?.(e2, highlightedIndexRef.current);
-        const highlightedIndex = highlightedIndexRef.current;
-        switch (e2.key) {
-          case "F10":
-            if (e2.shiftKey) {
-              const currOption = optionItems[highlightedIndex];
-              const currentGroup = currOption.group;
-              if (currentGroup && currentGroup.options.length > 1) {
-                handleGroupExpandedChange(currentGroup.group);
-              }
-            }
-            break;
-          case "Enter":
-            if (e2.which === 229)
-              return;
-            if (highlightedIndex !== DEFAULT_HIGHLIGHTED_INDEX2) {
-              const currOption = optionItems[highlightedIndex];
-              const isGroupTitle = currOption === currOption.group?.options[0];
-              if (isGroupTitle) {
-                const { onClick } = currOption.group.getExpandIconProps();
-                onClick?.(e2);
-              } else {
-                selectItemFn(e2, currOption);
-              }
-              e2.stopPropagation();
-            }
-            e2.preventDefault();
-            break;
-          default:
-            onKeyFocusedIndexHandle(e2);
-            break;
-        }
-      }
-    }, props);
-  };
-  const getInputAriaProps = (props) => {
-    return combineProps({
-      onContainerClick: focusInput,
-      role: "combobox",
-      "aria-autocomplete": "list",
-      "aria-expanded": true,
-      "aria-haspopup": true,
-      "aria-owns": `${suggestionListId}-menu`,
-      "aria-activedescendant": highlightedIndexRef.current > -1 ? `${suggestionListId}-option-${highlightedIndexRef.current}` : void 0
-    }, props);
-  };
-  const getLabelProps = (props) => {
-    return combineProps({
-      htmlFor: `${suggestionListId}-input`,
-      id: `${suggestionListId}-label`
-    }, props);
-  };
-  const getMenuProps = (restMenuProps) => {
-    return combineProps({
-      "aria-labelledby": `${suggestionListId}-label`,
-      id: `${suggestionListId}-menu`,
-      role: "listbox"
-    }, restMenuProps);
-  };
-  const getClearButtonProps = (props) => {
-    return combineProps({
-      id: `${suggestionListId}-clear-button`,
-      onClick: (e2) => {
-        onClear?.(e2);
-        reset2(true);
-      }
-    }, props);
-  };
-  const resultObj = {
-    focusInput,
-    getClearButtonProps,
-    getLabelProps,
-    getMenuProps,
-    getInputProps,
-    getInputAriaProps,
-    getItemProps,
-    highlightedIndex: highlightedIndexRef.current,
-    optionItems,
-    inputValue,
-    onInputChange: handleInputChange,
-    setHighlightedIndex,
-    changeHighlightedIndexReason: changeHighlightedIndexReason.current,
-    reset: reset2,
-    forceUpdate,
-    optionsGroupList,
-    id: suggestionListId
-  };
-  changeHighlightedIndexReason.current = void 0;
-  return resultObj;
-};
-
 // src/components/Downshift/SuggestionList/styles/SuggestionListStyle.tsx
 var SuggestionListStyle = () => {
   return css2`
@@ -73974,10 +74042,10 @@ var SuggestionList = forwardRef569((inProps, ref2) => {
     classes: classesProp,
     ...rest
   } = props;
-  const vlRef = useRef78(null);
+  const vlRef = useRef80(null);
   const forkVlRef = useForkRef2(ref2, vlRef);
-  const isTitleGroup = groupVariant === "normal";
-  const listRef = useRef78(null);
+  const isTitleMode = groupVariant === "normal";
+  const listRef = useRef80(null);
   const itemData = options;
   const itemCount = options.length;
   const classes = combineClasses(RcSuggestionListClasses, classesProp);
@@ -74025,7 +74093,7 @@ var SuggestionList = forwardRef569((inProps, ref2) => {
   const prevHighlightedIndex = usePrevious(() => highlightedIndex, true);
   useLayoutEffect23(() => {
     if (vlRef.current && !isKeepHighlightedIndex && changeHighlightedIndexReason && changeHighlightedIndexReason !== "mouse") {
-      scrollToHighlightedIndex(prevHighlightedIndex, highlightedIndex, isTitleGroup ? 1 : 0);
+      scrollToHighlightedIndex(prevHighlightedIndex, highlightedIndex, isTitleMode ? 1 : 0);
     }
   });
   const handleScrolling = (scrolling) => {
@@ -74041,9 +74109,8 @@ var SuggestionList = forwardRef569((inProps, ref2) => {
   const itemContent = (index4, option) => {
     const currGroup = option.group;
     const isGroupTitle = option === currGroup?.options[0];
-    const groupIndex = optionsGroupList?.findIndex((x2) => x2.group === currGroup?.group) || 0;
     const isFixedGroupExpanded = typeof groupExpanded === "boolean";
-    const expandIconProps = !isTitleGroup && !isFixedGroupExpanded && isGroupTitle ? option.group?.getExpandIconProps?.({
+    const expandIconProps = !isTitleMode && !isFixedGroupExpanded && isGroupTitle ? option.group?.getExpandIconProps?.({
       className: clsx_m_default(classes.toggle, {
         [classes.expanded]: option.group?.expanded
       })
@@ -74057,17 +74124,18 @@ var SuggestionList = forwardRef569((inProps, ref2) => {
     const resultProps = {
       ...option,
       ...itemProps,
-      "aria-setsize": itemCount - (isTitleGroup ? optionsGroupList?.length || 0 : 0),
-      "aria-posinset": index4 - (isTitleGroup ? groupIndex : 0),
       key: itemProps.id
     };
+    const indexInOwnGroup = resultProps.indexInOwnGroup;
+    delete resultProps.indexInOwnGroup;
     if (!resultProps.freeSolo && !resultProps.disabled && getOptionDisabled) {
       resultProps.disabled = getOptionDisabled(option);
     }
     const state = {
       inputValue,
       selected,
-      index: index4
+      index: index4,
+      indexInOwnGroup
     };
     if (renderGroup && isGroupTitle) {
       return renderGroup(resultProps, {
@@ -74104,13 +74172,13 @@ var SuggestionList = forwardRef569((inProps, ref2) => {
       symbol: ArrowDown2_default
     }));
   };
-  const PaddingComponent = useMemo62(() => {
+  const PaddingComponent = useMemo63(() => {
     const paddingValue = padding !== void 0 && itemCount > 0 ? typeof padding === "number" ? padding : menuListBoundaryPadding : 0;
     return () => /* @__PURE__ */ React650.createElement(StyledMenuListPadding, {
       height: paddingValue
     });
   }, [itemCount, padding]);
-  const components = useMemo62(() => {
+  const components = useMemo63(() => {
     return {
       List: List4,
       Header: PaddingComponent,
@@ -74230,10 +74298,10 @@ var _RcDownshift = memo409(forwardRef570((inProps, ref2) => {
     ...rest
   } = props;
   const [position4, setPosition] = useState35("bottom");
-  const innerInputRef = useRef79(null);
-  const textFieldRef = useRef79(null);
+  const innerInputRef = useRef81(null);
+  const textFieldRef = useRef81(null);
   const inputRef = useForkRef2(inputRefProp, innerInputRef);
-  const inputContainerRef = useRef79(null);
+  const inputContainerRef = useRef81(null);
   const isNew = !suggestionItems;
   let oneOfTagError = false;
   useDownshiftError({ isNew, MenuItem: MenuItem3, InputItem });
@@ -74242,7 +74310,7 @@ var _RcDownshift = memo409(forwardRef570((inProps, ref2) => {
     focusInput,
     optionItems,
     optionsGroupList,
-    selectedItems,
+    tags: selectedItems,
     highlightedIndex,
     getToggleButtonProps,
     getTagProps,
@@ -74255,7 +74323,6 @@ var _RcDownshift = memo409(forwardRef570((inProps, ref2) => {
     getItemProps,
     isOpen,
     inputValue,
-    isTagsFocus,
     activeIndex,
     setActiveIndex,
     setHighlightedIndex,
@@ -74269,7 +74336,7 @@ var _RcDownshift = memo409(forwardRef570((inProps, ref2) => {
     noOptionItem,
     getNoOptionsProps,
     isKeepHighlightedIndex,
-    isFocused
+    focused: isDownshiftFocused
   } = useDownshift({
     focused,
     open: openProp,
@@ -74315,7 +74382,7 @@ var _RcDownshift = memo409(forwardRef570((inProps, ref2) => {
   const helperText = isNew ? helperTextProp : nameError || allowPlainHelperText ? helperTextProp : void 0;
   const describedbyId = `${InputProps.id}-helper-text`;
   const FormHelperTextProps = FormHelperTextPropsProp || {};
-  const screenReaderText = useMemo63(() => {
+  const screenReaderText = useMemo64(() => {
     if (!screenReader || !selectedItems.length)
       return;
     const { entry, entries } = screenReader;
@@ -74329,7 +74396,7 @@ var _RcDownshift = memo409(forwardRef570((inProps, ref2) => {
     }
   }
   const toTextFieldRef = useForkRef2(textFieldRef, ref2);
-  const colorHex = useMemo63(() => color2 ? getParsePaletteColor(color2)({ theme }) : void 0, [color2, theme]);
+  const colorHex = useMemo64(() => color2 ? getParsePaletteColor(color2)({ theme }) : void 0, [color2, theme]);
   const startAdornment = (() => {
     if (variant === "autocomplete") {
       return void 0;
@@ -74364,7 +74431,6 @@ var _RcDownshift = memo409(forwardRef570((inProps, ref2) => {
       });
     });
   })();
-  const isDownshiftFocused = focused ?? (isTagsFocus || isFocused ? true : void 0);
   const endAdornment = (toggleButton || clearBtn) && /* @__PURE__ */ React651.createElement(EndAdornment, null, clearBtn && /* @__PURE__ */ React651.createElement(ClearIconButton, {
     ...getClearButtonProps(clearButtonProps)
   }), toggleButton && /* @__PURE__ */ React651.createElement(ArrowDownButton, {
@@ -74405,7 +74471,7 @@ var _RcDownshift = memo409(forwardRef570((inProps, ref2) => {
   }));
   const hasTags = selectedItems.length > 0;
   const isRenderNoOptions = !!noOptionItem;
-  const popperRef = useRef79(null);
+  const popperRef = useRef81(null);
   const handleUpdatePopper = useEventCallback2(() => {
     popperRef.current?.update();
   });
@@ -74590,10 +74656,10 @@ RcDownshift.displayName = "RcDownshift";
 var ExportType2 = RcDownshift;
 
 // src/components/Drawer/Drawer.tsx
-import React653, { forwardRef as forwardRef572, useMemo as useMemo65 } from "react";
+import React653, { forwardRef as forwardRef572, useMemo as useMemo66 } from "react";
 
 // src/components/Paper/Paper.tsx
-import React652, { forwardRef as forwardRef571, useMemo as useMemo64 } from "react";
+import React652, { forwardRef as forwardRef571, useMemo as useMemo65 } from "react";
 
 // src/components/Paper/styles/PaperStyle.tsx
 var PaperStyle = () => {
@@ -74607,7 +74673,7 @@ var RcPaperClasses = RcClasses([], "RcPaper");
 var _RcPaper = forwardRef571((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcPaper" });
   const { classes: classesProp, children: children2, ...rest } = props;
-  const classes = useMemo64(() => combineClasses(RcPaperClasses, classesProp), [classesProp]);
+  const classes = useMemo65(() => combineClasses(RcPaperClasses, classesProp), [classesProp]);
   return /* @__PURE__ */ React652.createElement(Paper_default, {
     ...rest,
     ref: ref2,
@@ -74678,7 +74744,7 @@ var _RcDrawer = forwardRef572((inProps, ref2) => {
     ...rest
   } = props;
   const { externalWindow } = useRcPortalWindowContext();
-  const PaperProps = useMemo65(() => combineProps({
+  const PaperProps = useMemo66(() => combineProps({
     ["data-mui-paper"]: true,
     onClick: inlinePaper ? (e2) => {
       if (e2.target?.dataset.muiPaper) {
@@ -74686,7 +74752,7 @@ var _RcDrawer = forwardRef572((inProps, ref2) => {
       }
     } : void 0
   }, PaperPropsProp), [PaperPropsProp, inlinePaper, onClose]);
-  const classes = useMemo65(() => combineClasses(RcDrawerClasses, classesProp), [classesProp]);
+  const classes = useMemo66(() => combineClasses(RcDrawerClasses, classesProp), [classesProp]);
   return /* @__PURE__ */ React653.createElement(Drawer_default, {
     ...rest,
     ref: ref2,
@@ -74705,7 +74771,7 @@ RcDrawer.defaultProps = {
 RcDrawer.displayName = "RcDrawer";
 
 // src/components/Forms/Form/Form/Form.tsx
-import React654, { useCallback as useCallback30, useState as useState36 } from "react";
+import React654, { useCallback as useCallback32, useState as useState36 } from "react";
 var RcForm = (inProps) => {
   const props = useThemeProps({ props: inProps, name: "RcForm" });
   const {
@@ -74717,7 +74783,7 @@ var RcForm = (inProps) => {
     ...rest
   } = props;
   const [fieldManager] = useState36(() => new Map());
-  const handleSubmit = useCallback30((event) => {
+  const handleSubmit = useCallback32((event) => {
     event.preventDefault();
     if (isSubmitting)
       return;
@@ -74832,10 +74898,10 @@ RcInputLabel.displayName = "RcInputLabel";
 var import_moment3 = __toModule(require_moment());
 import React672, {
   forwardRef as forwardRef588,
-  useCallback as useCallback32,
-  useEffect as useEffect59,
-  useMemo as useMemo71,
-  useRef as useRef85
+  useCallback as useCallback34,
+  useEffect as useEffect60,
+  useMemo as useMemo72,
+  useRef as useRef87
 } from "react";
 
 // node_modules/@date-io/moment/build/index.esm.js
@@ -75051,11 +75117,11 @@ import "react";
 
 // node_modules/@material-ui/pickers/esm/useUtils-cfb96ac9.js
 var import_prop_types117 = __toModule(require_prop_types());
-import { createContext as createContext20, useMemo as useMemo66, createElement as createElement121, useContext as useContext26 } from "react";
+import { createContext as createContext20, useMemo as useMemo67, createElement as createElement121, useContext as useContext26 } from "react";
 var MuiPickersContext = createContext20(null);
 var MuiPickersUtilsProvider = function MuiPickersUtilsProvider2(_ref6) {
   var Utils = _ref6.utils, children2 = _ref6.children, locale = _ref6.locale, libInstance = _ref6.libInstance;
-  var utils = useMemo66(function() {
+  var utils = useMemo67(function() {
     return new Utils({
       locale,
       instance: libInstance
@@ -75084,7 +75150,7 @@ function useUtils() {
 
 // node_modules/@material-ui/pickers/esm/Wrapper-241966d7.js
 var import_prop_types118 = __toModule(require_prop_types());
-import { createElement as createElement122, useEffect as useEffect57, useLayoutEffect as useLayoutEffect24, useRef as useRef80, Fragment as Fragment10, createContext as createContext21 } from "react";
+import { createElement as createElement122, useEffect as useEffect58, useLayoutEffect as useLayoutEffect24, useRef as useRef82, Fragment as Fragment10, createContext as createContext21 } from "react";
 var DIALOG_WIDTH = 310;
 var DIALOG_WIDTH_WIDER = 325;
 var useStyles = makeStyles_default(function(theme) {
@@ -75152,7 +75218,7 @@ var styles148 = createStyles2({
 var ModalDialog$1 = withStyles_default2(styles148, {
   name: "MuiPickersModal"
 })(ModalDialog);
-var useIsomorphicEffect = typeof window === "undefined" ? useEffect57 : useLayoutEffect24;
+var useIsomorphicEffect = typeof window === "undefined" ? useEffect58 : useLayoutEffect24;
 function runKeyHandler(e2, keyHandlers) {
   var handler = keyHandlers[e2.key];
   if (handler) {
@@ -75161,7 +75227,7 @@ function runKeyHandler(e2, keyHandlers) {
   }
 }
 function useKeyDown(active, keyHandlers) {
-  var keyHandlersRef = useRef80(keyHandlers);
+  var keyHandlersRef = useRef82(keyHandlers);
   keyHandlersRef.current = keyHandlers;
   useIsomorphicEffect(function() {
     if (active) {
@@ -75216,7 +75282,7 @@ ModalWrapper.defaultProps = {
 };
 var InlineWrapper = function InlineWrapper2(_ref6) {
   var open = _ref6.open, wider = _ref6.wider, children2 = _ref6.children, PopoverProps = _ref6.PopoverProps, onClear = _ref6.onClear, onDismiss = _ref6.onDismiss, onSetToday = _ref6.onSetToday, onAccept = _ref6.onAccept, showTabs = _ref6.showTabs, DateInputProps = _ref6.DateInputProps, InputComponent = _ref6.InputComponent, other = _objectWithoutProperties(_ref6, ["open", "wider", "children", "PopoverProps", "onClear", "onDismiss", "onSetToday", "onAccept", "showTabs", "DateInputProps", "InputComponent"]);
-  var ref2 = useRef80();
+  var ref2 = useRef82();
   useKeyDown(open, {
     Enter: onAccept
   });
@@ -75249,7 +75315,7 @@ import { Component as Component5 } from "react";
 
 // node_modules/@material-ui/pickers/esm/Calendar-11ae61f6.js
 var import_prop_types120 = __toModule(require_prop_types());
-import React__default, { useCallback as useCallback31, createElement as createElement124, cloneElement as cloneElement27, Fragment as Fragment11, Component as Component6, useEffect as useEffect58 } from "react";
+import React__default, { useCallback as useCallback33, createElement as createElement124, cloneElement as cloneElement27, Fragment as Fragment11, Component as Component6, useEffect as useEffect59 } from "react";
 
 // node_modules/@material-ui/pickers/esm/Day.js
 var import_prop_types119 = __toModule(require_prop_types());
@@ -75362,7 +75428,7 @@ var findClosestEnabledDate = function findClosestEnabledDate2(_ref6) {
 };
 var DayWrapper = function DayWrapper2(_ref6) {
   var children2 = _ref6.children, value = _ref6.value, disabled3 = _ref6.disabled, onSelect = _ref6.onSelect, dayInCurrentMonth = _ref6.dayInCurrentMonth, other = _objectWithoutProperties(_ref6, ["children", "value", "disabled", "onSelect", "dayInCurrentMonth"]);
-  var handleClick = useCallback31(function() {
+  var handleClick = useCallback33(function() {
     return onSelect(value);
   }, [onSelect, value]);
   return createElement124("div", _extends({
@@ -75558,7 +75624,7 @@ var withUtils = function withUtils2() {
 };
 var KeyDownListener = function KeyDownListener2(_ref6) {
   var onKeyDown = _ref6.onKeyDown;
-  useEffect58(function() {
+  useEffect59(function() {
     window.addEventListener("keydown", onKeyDown);
     return function() {
       window.removeEventListener("keydown", onKeyDown);
@@ -75802,12 +75868,12 @@ var Calendar$1 = withStyles_default2(styles149, {
 var import_date_utils = __toModule(require_date_utils());
 
 // src/components/Forms/Picker/utils/PickerTextField/PickerTextField.tsx
-var import_uniqueId4 = __toModule(require_uniqueId());
+var import_uniqueId3 = __toModule(require_uniqueId());
 import React665, {
   forwardRef as forwardRef582,
   useImperativeHandle as useImperativeHandle16,
-  useMemo as useMemo68,
-  useRef as useRef81,
+  useMemo as useMemo69,
+  useRef as useRef83,
   useState as useState37
 } from "react";
 
@@ -75879,7 +75945,7 @@ var StyledPickerTextField = styled_components_default(_RcTextField2)`
 `;
 
 // src/components/Popover/Popover.tsx
-import React663, { forwardRef as forwardRef581, useMemo as useMemo67 } from "react";
+import React663, { forwardRef as forwardRef581, useMemo as useMemo68 } from "react";
 
 // src/components/Popover/styles/PopoverStyle.tsx
 var PopoverStyle = () => {
@@ -75893,7 +75959,7 @@ var RcPopoverClasses = RcClasses([], "RcPopover");
 var _RcPopover = forwardRef581((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcPopover" });
   const { classes: classesProp, children: children2, ...rest } = props;
-  const classes = useMemo67(() => combineClasses(RcPopoverClasses, classesProp), [classesProp]);
+  const classes = useMemo68(() => combineClasses(RcPopoverClasses, classesProp), [classesProp]);
   const { externalWindow } = useRcPortalWindowContext();
   return /* @__PURE__ */ React663.createElement(Popover_default, {
     container: externalWindow?.document.body,
@@ -76257,7 +76323,7 @@ var PickerTextField = forwardRef582((props, ref2) => {
     value,
     ...rest
   } = props;
-  const { current: idForInput } = useRef81((0, import_uniqueId4.default)(`${PICKER_DISPLAY_NAME}-`));
+  const { current: idForInput } = useRef83((0, import_uniqueId3.default)(`${PICKER_DISPLAY_NAME}-`));
   const [anchorEl, setAnchorEl] = useState37(null);
   const idForHelperText = `${idForInput}-helper-text`;
   const idForInstruction = `${idForInput}-instruction`;
@@ -76280,7 +76346,7 @@ var PickerTextField = forwardRef582((props, ref2) => {
     e2.preventDefault();
     onClear?.(e2);
   });
-  const _InputProps = useMemo68(() => {
+  const _InputProps = useMemo69(() => {
     const iconTitle = clearButtonProps?.title;
     const combineClearProps = clearBtn && combineProps({
       TooltipProps: {
@@ -76328,13 +76394,13 @@ var PickerTextField = forwardRef582((props, ref2) => {
     inputProps,
     InputProps
   ]);
-  const _FormHelperTextProps = useMemo68(() => ({
+  const _FormHelperTextProps = useMemo69(() => ({
     id: idForHelperText
   }), [idForHelperText]);
   const onPickerViewClose = useEventCallback2(() => {
     setAnchorEl(null);
   });
-  const PopoverProps = useMemo68(() => combineProps({
+  const PopoverProps = useMemo69(() => combineProps({
     onClose: onPickerViewClose
   }, PopoverPropsProp), [PopoverPropsProp, onPickerViewClose]);
   const popoverOpen = Boolean(anchorEl);
@@ -76369,13 +76435,13 @@ var import_moment2 = __toModule(require_moment());
 import React671, {
   forwardRef as forwardRef587,
   useLayoutEffect as useLayoutEffect26,
-  useMemo as useMemo70,
-  useRef as useRef84,
+  useMemo as useMemo71,
+  useRef as useRef86,
   useState as useState38
 } from "react";
 
 // src/components/Forms/Picker/DatePicker/DatePickerHeader.tsx
-import React667, { memo as memo410, useRef as useRef82 } from "react";
+import React667, { memo as memo410, useRef as useRef84 } from "react";
 
 // src/components/Forms/Select/styles/SelectArrowDownIcon.tsx
 import React666, { forwardRef as forwardRef583 } from "react";
@@ -76614,7 +76680,7 @@ var DatePickerHeader = memo410((props) => {
   const preMonth = utils.getPreviousMonth(focusedDate);
   const nextMonth = utils.getNextMonth(focusedDate);
   const monthLabel = utils.getCalendarHeaderText(focusedDate);
-  const changeFromRef = useRef82();
+  const changeFromRef = useRef84();
   const selectNextMonth = () => {
     onMonthChange(nextMonth, "left");
     changeFromRef.current = "next";
@@ -76718,7 +76784,7 @@ _Day.defaultProps = {
 var Day3 = memo411(_Day);
 
 // src/components/Forms/Picker/DatePicker/Years.tsx
-import React670, { forwardRef as forwardRef586, useLayoutEffect as useLayoutEffect25, useMemo as useMemo69, useRef as useRef83 } from "react";
+import React670, { forwardRef as forwardRef586, useLayoutEffect as useLayoutEffect25, useMemo as useMemo70, useRef as useRef85 } from "react";
 
 // src/components/Forms/Picker/DatePicker/Year.tsx
 import React669, { forwardRef as forwardRef585, memo as memo412 } from "react";
@@ -76761,16 +76827,16 @@ var Years = forwardRef586((props, ref2) => {
     now: now2
   } = props;
   const utils = useUtils();
-  const containerRef = useRef83(null);
+  const containerRef = useRef85(null);
   const combineRef = useForkRef2(containerRef, ref2);
-  const selectedYearRef = useRef83(null);
+  const selectedYearRef = useRef85(null);
   const currentYear = utils.getYear(date || now2);
-  const years = useMemo69(() => utils.getYearRange(minDate, maxDate), [maxDate, minDate, utils]);
+  const years = useMemo70(() => utils.getYearRange(minDate, maxDate), [maxDate, minDate, utils]);
   const onYearSelect = useEventCallback2((year) => {
     const newDate = utils.setYear(date, year);
     onYearChange(newDate);
   });
-  const focusedIndexRef = useRef83(0);
+  const focusedIndexRef = useRef85(0);
   const focusedYear = years[focusedIndexRef.current]?.year();
   const { focusIndex, getItemProps } = useOnlyOneFocusable({
     focusedIndexRef,
@@ -76837,13 +76903,13 @@ var Calendar2 = forwardRef587(({
   getInvalidateDateInRange
 }, ref2) => {
   const utils = useUtils();
-  const calendarRef = useRef84(null);
+  const calendarRef = useRef86(null);
   const previousFocusDate = usePrevious(() => focusedDate);
   const previousView = usePrevious(() => view);
-  const weeks = useRef84([]);
+  const weeks = useRef86([]);
   import_moment2.default.locale(utils.locale);
   const { current: weekdays } = useResultRef(() => utils.getWeekdays());
-  const { now: now2, isTodayDisabled } = useMemo70(() => {
+  const { now: now2, isTodayDisabled } = useMemo71(() => {
     const nowDate = utils.date();
     return {
       now: nowDate,
@@ -76856,7 +76922,7 @@ var Calendar2 = forwardRef587(({
   const [loadingQueue, setLoadingQueue] = useState38(0);
   const { min: min2, max: max2 } = dateRange;
   const currentMonthNumber = utils.getMonth(focusedDate);
-  const pickClasses = useMemo70(() => pick(classes, ["header", "leftArrow", "rightArrow", "select"]), [classes]);
+  const pickClasses = useMemo71(() => pick(classes, ["header", "leftArrow", "rightArrow", "select"]), [classes]);
   const sameMonthDate = isSameYearAndMonth({ source: focusedDate, comparing: previousFocusDate || null }, utils);
   if (!sameMonthDate) {
     weeks.current = utils.getWeekArray(focusedDate);
@@ -76884,11 +76950,11 @@ var Calendar2 = forwardRef587(({
   const handleChangeView = useEventCallback2(() => {
     setView(view === "day" ? "year" : "day");
   });
-  const disableNextMonth = useMemo70(() => {
+  const disableNextMonth = useMemo71(() => {
     const nextStartDay = utils.startOfMonth(utils.getNextMonth(focusedDate));
     return !!getInvalidateDateInRange(nextStartDay);
   }, [focusedDate, getInvalidateDateInRange, utils]);
-  const disablePrevMonth = useMemo70(() => {
+  const disablePrevMonth = useMemo71(() => {
     const prevLatestDay = utils.endOfMonth(utils.getPreviousMonth(focusedDate));
     return !!getInvalidateDateInRange(prevLatestDay);
   }, [focusedDate, getInvalidateDateInRange, utils]);
@@ -76926,7 +76992,7 @@ var Calendar2 = forwardRef587(({
   });
   const { getBackToTodayAriaLabel, getDayAriaLabel } = useScreenReaderContext();
   const backToTodayAriaLabel = getBackToTodayAriaLabel?.();
-  const header3 = useMemo70(() => /* @__PURE__ */ React671.createElement(StyledDaysHeader, null, weekdays.map((day) => /* @__PURE__ */ React671.createElement(StyledDayLabel, {
+  const header3 = useMemo71(() => /* @__PURE__ */ React671.createElement(StyledDaysHeader, null, weekdays.map((day) => /* @__PURE__ */ React671.createElement(StyledDayLabel, {
     size,
     key: day,
     variant: "caption"
@@ -77082,11 +77148,11 @@ var InnerRcDatePicker = forwardRef588((props, ref2) => {
     default: null,
     name: "RcDatePicker"
   });
-  const emitValueRef = useRef85(null);
+  const emitValueRef = useRef87(null);
   const maxDate = minDateProp || max2;
   const minDate = maxDateProp || min2;
-  const actionRef = useRef85(null);
-  const dateRange = useMemo71(() => ({
+  const actionRef = useRef87(null);
+  const dateRange = useMemo72(() => ({
     min: (0, import_moment3.default)(minDate || defaultMinDate),
     max: (0, import_moment3.default)(maxDate || defaultMaxDate)
   }), [minDate, maxDate]);
@@ -77094,7 +77160,7 @@ var InnerRcDatePicker = forwardRef588((props, ref2) => {
   const shouldDisableDate = useEventCallback2((day) => {
     return Boolean(getInvalidateDateInRange(day)) || Boolean(shouldDisableDateProp?.(day));
   });
-  const getClosestEnableDate = useCallback32((currDate) => (0, import_date_utils.findClosestEnabledDate)({
+  const getClosestEnableDate = useCallback34((currDate) => (0, import_date_utils.findClosestEnabledDate)({
     date: currDate,
     utils,
     minDate: utils.date(dateRange.min),
@@ -77110,13 +77176,13 @@ var InnerRcDatePicker = forwardRef588((props, ref2) => {
     shouldDisableDate,
     utils
   ]);
-  const initDate = useMemo71(() => {
+  const initDate = useMemo72(() => {
     return getClosestEnableDate((0, import_moment3.default)(utils.date()));
   }, [getClosestEnableDate, utils]);
-  const momentValue = useMemo71(() => controlledValue ? (0, import_moment3.default)(controlledValue) : null, [controlledValue]);
+  const momentValue = useMemo72(() => controlledValue ? (0, import_moment3.default)(controlledValue) : null, [controlledValue]);
   const nowDate = momentValue || initDate;
-  const textFiledValue = useMemo71(() => momentValue ? utils.format(momentValue, formatString) : "", [momentValue, utils, formatString]);
-  const PopoverProps = useMemo71(() => combineProps({
+  const textFiledValue = useMemo72(() => momentValue ? utils.format(momentValue, formatString) : "", [momentValue, utils, formatString]);
+  const PopoverProps = useMemo72(() => combineProps({
     classes: combineClasses({
       root: RcDatePickerClasses.popover,
       paper: RcDatePickerClasses.popoverPaper
@@ -77126,7 +77192,7 @@ var InnerRcDatePicker = forwardRef588((props, ref2) => {
     }),
     onClose
   }, PopoverPropsProp), [PopoverPropsProp, classes, onClose]);
-  const calendarClasses = useMemo71(() => combineClasses(omit3(RcDatePickerClasses, ["popover", "popoverPaper"]), omit3(classes, ["popover", "popoverPaper"])), [classes]);
+  const calendarClasses = useMemo72(() => combineClasses(omit3(RcDatePickerClasses, ["popover", "popoverPaper"]), omit3(classes, ["popover", "popoverPaper"])), [classes]);
   const handleChange = (toDate, fromUserSelect) => {
     actionRef.current?.close();
     setControlledValue(toDate);
@@ -77141,7 +77207,7 @@ var InnerRcDatePicker = forwardRef588((props, ref2) => {
     const newDay = day ? utils.startOfDay(day).toDate() : null;
     handleChange(newDay, fromUserSelect);
   };
-  useEffect59(() => {
+  useEffect60(() => {
     if (momentValue && value !== emitValueRef.current && shouldDisableDate(momentValue)) {
       const closestEnabledDate = getClosestEnableDate(momentValue);
       handleDaySelect(closestEnabledDate, false);
@@ -77218,8 +77284,8 @@ import React674, {
   forwardRef as forwardRef590,
   memo as memo413,
   useImperativeHandle as useImperativeHandle17,
-  useMemo as useMemo72,
-  useRef as useRef86
+  useMemo as useMemo73,
+  useRef as useRef88
 } from "react";
 
 // src/components/Forms/Picker/TimePicker/styles/StyledNumberPicker.tsx
@@ -77295,7 +77361,7 @@ var _NumberPicker = forwardRef590((props, ref2) => {
   } = props;
   const forceUpdate = useForceUpdate();
   const [innerValueRef, setInnerValue] = useRefState(value, forceUpdate);
-  const rangeRef = useRef86({ max: maxProp, min: minProp });
+  const rangeRef = useRef88({ max: maxProp, min: minProp });
   useDepsChange(() => {
     rangeRef.current = { max: maxProp, min: minProp };
   }, [maxProp, minProp]);
@@ -77315,7 +77381,7 @@ var _NumberPicker = forwardRef590((props, ref2) => {
   const { min: min2, max: max2 } = rangeRef.current;
   const decreaseDisabled = isFirst ? !!(max2 !== void 0 && latestValue > max2) : !!(min2 !== void 0 && decreaseValue < min2);
   const increaseDisabled = isLatest ? !!(min2 !== void 0 && firstValue < min2) : !!(max2 !== void 0 && increaseValue > max2);
-  const showValue = useMemo72(() => {
+  const showValue = useMemo73(() => {
     if (renderValue) {
       return renderValue(innerValue);
     }
@@ -77574,10 +77640,10 @@ SelectionView.displayName = "SelectionView";
 // src/components/Forms/Picker/TimePicker/TimePicker.tsx
 import React677, {
   forwardRef as forwardRef592,
-  useCallback as useCallback33,
+  useCallback as useCallback35,
   useLayoutEffect as useLayoutEffect27,
-  useMemo as useMemo73,
-  useRef as useRef87,
+  useMemo as useMemo74,
+  useRef as useRef89,
   useState as useState39
 } from "react";
 var _RcTimePicker = forwardRef592((inProps, ref2) => {
@@ -77610,11 +77676,11 @@ var _RcTimePicker = forwardRef592((inProps, ref2) => {
       comment: `this props will be removed, using value to replace that `
     });
   }
-  const actionRef = useRef87(null);
-  const hourRef = useRef87(null);
-  const minuteRef = useRef87(null);
-  const periodRef = useRef87(null);
-  const textFiledValueRef = useRef87("");
+  const actionRef = useRef89(null);
+  const hourRef = useRef89(null);
+  const minuteRef = useRef89(null);
+  const periodRef = useRef89(null);
+  const textFiledValueRef = useRef89("");
   const [selectionShowType, setSelectionType] = useState39("none");
   const nowTime = value ?? times;
   const isHaveValue = nowTime !== void 0;
@@ -77624,7 +77690,7 @@ var _RcTimePicker = forwardRef592((inProps, ref2) => {
   const isHourView = selectionShowType === "hour";
   const currentPeriod = getPeriod(currentHourMinute.hour);
   const recoupHour = isTwelveHourSystem && currentPeriod === TIME_SYSTEM_TEXT.PM ? HALF_DAY_HOURS : 0;
-  const range = useMemo73(() => {
+  const range = useMemo74(() => {
     return getRangeBoundary({ min: min2, max: max2 });
   }, [max2, min2]);
   const getEmitInitDate = useEventCallback2(() => {
@@ -77637,7 +77703,7 @@ var _RcTimePicker = forwardRef592((inProps, ref2) => {
     }
     return date;
   });
-  const handleChange = useCallback33((toValue2) => {
+  const handleChange = useCallback35((toValue2) => {
     if (onChange) {
       if (isDateMode) {
         onChange(toValue2);
@@ -77752,7 +77818,7 @@ var _RcTimePicker = forwardRef592((inProps, ref2) => {
   const renderHourValue = useEventCallback2((hourValue2) => {
     return parseNumberToString(hourValue2, isTwelveHourSystem);
   });
-  const PopoverProps = useMemo73(() => combineProps({
+  const PopoverProps = useMemo74(() => combineProps({
     classes: combineClasses({
       root: RcTimePickerClasses.popover,
       paper: RcTimePickerClasses.popoverPaper
@@ -77797,11 +77863,11 @@ var _RcTimePicker = forwardRef592((inProps, ref2) => {
     currentPeriod
   ]);
   const originalHourValue = isHaveValue ? currentHourMinute.hour : range.min.hour || 0;
-  const boundary = useMemo73(() => getNumberPickerBoundary(originalHourValue, {
+  const boundary = useMemo74(() => getNumberPickerBoundary(originalHourValue, {
     range,
     isTwelveHourSystem
   }), [isTwelveHourSystem, originalHourValue, range]);
-  const toggleTextDisabled = useMemo73(() => {
+  const toggleTextDisabled = useMemo74(() => {
     return !!(range.min.hour && (range.min.hour >= HALF_DAY_HOURS || range.max.hour && range.min.hour < HALF_DAY_HOURS && range.max.hour < HALF_DAY_HOURS));
   }, [range.max.hour, range.min.hour]);
   const hourValue = isTwelveHourSystem ? originalHourValue % HALF_DAY_HOURS : originalHourValue;
@@ -77906,18 +77972,18 @@ RcRadioGroup.defaultProps = {};
 RcRadioGroup.displayName = "RcRadioGroup";
 
 // src/components/Forms/Select/Select.tsx
-import React683, { forwardRef as forwardRef598, useMemo as useMemo76 } from "react";
+import React683, { forwardRef as forwardRef598, useMemo as useMemo77 } from "react";
 
 // src/components/VirtualizedMenu/VirtualizedMenu.tsx
-import React680, { forwardRef as forwardRef595, useMemo as useMemo75, useRef as useRef89 } from "react";
+import React680, { forwardRef as forwardRef595, useMemo as useMemo76, useRef as useRef91 } from "react";
 
 // src/components/VirtualizedMenu/VirtualizedMenuList.tsx
 var import_react_is13 = __toModule(require_react_is2());
 import React679, {
   forwardRef as forwardRef594,
   useImperativeHandle as useImperativeHandle19,
-  useMemo as useMemo74,
-  useRef as useRef88
+  useMemo as useMemo75,
+  useRef as useRef90
 } from "react";
 var _RcVirtualizedMenuList = forwardRef594((inProps, ref2) => {
   const props = useThemeProps({
@@ -77943,10 +78009,10 @@ var _RcVirtualizedMenuList = forwardRef594((inProps, ref2) => {
   } = props;
   const theme = RcUseTheme();
   const { document: document2 } = useRcPortalWindowContext();
-  const vlRef = useRef88(null);
+  const vlRef = useRef90(null);
   const innerListRef = React679.useRef(null);
   const handleRef = useForkRef2(innerListRef, ref2);
-  const rangeChangedRef = useRef88({ startIndex: 0, endIndex: 0 });
+  const rangeChangedRef = useRef90({ startIndex: 0, endIndex: 0 });
   const isMountedRef = useMountState();
   let hasSearchText = false;
   let activeItemIndex = -1;
@@ -77978,7 +78044,7 @@ var _RcVirtualizedMenuList = forwardRef594((inProps, ref2) => {
     return child;
   });
   const itemCount = items.length;
-  const focusedIndexRef = useRef88(activeItemIndex);
+  const focusedIndexRef = useRef90(activeItemIndex);
   focusedIndexRef.current = activeItemIndex;
   const onContainerHeightChange = useEventCallback2((changeHeight) => {
     const scroller = scrollerRef.current;
@@ -78029,7 +78095,7 @@ var _RcVirtualizedMenuList = forwardRef594((inProps, ref2) => {
       return child.props["data-search-text"];
     } : void 0
   });
-  const hiddenRef = useRef88(null);
+  const hiddenRef = useRef90(null);
   const events = useHiddenTabindex(hiddenRef);
   const onMounted = useEventCallback2(() => {
     if (autoFocus) {
@@ -78067,7 +78133,7 @@ var _RcVirtualizedMenuList = forwardRef594((inProps, ref2) => {
       onContainerHeightChange(value);
     }
   }));
-  const components = useMemo74(() => ({
+  const components = useMemo75(() => ({
     Header: StyledMenuListPadding,
     Footer: StyledMenuListPadding,
     List: React679.forwardRef(({ children: children2, ...listRest }, listRef) => {
@@ -78157,12 +78223,12 @@ var _RcVirtualizedMenu = forwardRef595((inProps, ref2) => {
     ...rest
   } = props;
   const { document: document2 } = useRcPortalWindowContext();
-  const popoverRef = useRef89(null);
+  const popoverRef = useRef91(null);
   const handleRef = useForkRef2(ref2, popoverRef);
-  const menuListActionRef = useRef89(null);
-  const classes = useMemo75(() => combineClasses(RcVirtualizedMenuClasses, classesProp), [classesProp]);
+  const menuListActionRef = useRef91(null);
+  const classes = useMemo76(() => combineClasses(RcVirtualizedMenuClasses, classesProp), [classesProp]);
   const autoFocusItem = autoFocus && !disableAutoFocusItem && open;
-  const TransitionProps4 = useMemo75(() => combineProps({
+  const TransitionProps4 = useMemo76(() => combineProps({
     onEntering: () => {
       menuListActionRef.current?.adjustStyleForScrollbar();
       menuListActionRef.current?.scrollIntoViewAndFocus();
@@ -78745,11 +78811,11 @@ var _RcSelect = forwardRef598((inProps, ref2) => {
     ...rest
   } = props;
   const nonValue = value === void 0 || value === null || !displayEmpty && value === "" || value instanceof Array && value.length === 0;
-  const applyClasses = useMemo76(() => {
+  const applyClasses = useMemo77(() => {
     const variantClasses = RcSelectInputClassesMap[variant];
     return combineClasses(RcSelectInputClasses, variantClasses);
   }, [variant]);
-  const _SelectProps = useMemo76(() => {
+  const _SelectProps = useMemo77(() => {
     const additionProps = {
       MenuComponent: void 0,
       MenuProps: void 0
@@ -78784,7 +78850,7 @@ var _RcSelect = forwardRef598((inProps, ref2) => {
       ...rest
     };
   }, [rest, virtualize, renderValue, displayEmpty, SelectInputPropsProp]);
-  const _InputProps = useMemo76(() => {
+  const _InputProps = useMemo77(() => {
     let result = InputProps;
     if (placeholder2 && nonValue) {
       result = combineProps({
@@ -78830,7 +78896,7 @@ RcSelect.defaultProps = {
 };
 
 // src/components/Forms/Slider/Slider.tsx
-import React684, { forwardRef as forwardRef599, useMemo as useMemo77 } from "react";
+import React684, { forwardRef as forwardRef599, useMemo as useMemo78 } from "react";
 
 // src/components/Forms/Slider/utils/SliderUtil.ts
 var RcSliderClasses = RcClasses(["thumb", "active", "trackInverted", "track", "focusVisible", "disabled"], "RcSlider");
@@ -78874,7 +78940,7 @@ var SliderStyle = (props) => {
 var _RcSlider = forwardRef599((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcSlider" });
   const { classes: classesProp, color: color2, children: children2, ...rest } = props;
-  const classes = useMemo77(() => combineClasses(RcSliderClasses, classesProp), [classesProp]);
+  const classes = useMemo78(() => combineClasses(RcSliderClasses, classesProp), [classesProp]);
   return /* @__PURE__ */ React684.createElement(Slider_default, {
     ...rest,
     ref: ref2,
@@ -78891,7 +78957,7 @@ RcSlider.defaultProps = {
 RcSlider.displayName = "RcSlider";
 
 // src/components/Forms/Textarea/Textarea.tsx
-import React685, { forwardRef as forwardRef600, useMemo as useMemo78 } from "react";
+import React685, { forwardRef as forwardRef600, useMemo as useMemo79 } from "react";
 
 // src/components/Forms/Textarea/utils/TextareaUtils.ts
 var RcTextareaInputClasses = RcClasses(["inputMultiline", "root"], "RcTextareaInput");
@@ -78932,7 +78998,7 @@ var _RcTextarea = forwardRef600((inProps, ref2) => {
     maxRows,
     ...rest
   } = props;
-  const InputProps = useMemo78(() => combineProps({
+  const InputProps = useMemo79(() => combineProps({
     classes: RcTextareaInputClasses
   }, InputPropsProp), [InputPropsProp]);
   let rows = rowsProp;
@@ -78959,7 +79025,7 @@ RcTextarea.defaultProps = {
 RcTextarea.displayName = "RcTextarea";
 
 // src/components/Grid/Grid.tsx
-import React686, { forwardRef as forwardRef601, useMemo as useMemo79 } from "react";
+import React686, { forwardRef as forwardRef601, useMemo as useMemo80 } from "react";
 
 // src/components/Grid/styles/GridStyle.tsx
 var GridStyle = () => {
@@ -78973,7 +79039,7 @@ var RcGridClasses = RcClasses([], "RcGrid");
 var _RcGrid = forwardRef601((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcGrid" });
   const { classes: classesProp, children: children2, ...rest } = props;
-  const classes = useMemo79(() => combineClasses(RcGridClasses, classesProp), [classesProp]);
+  const classes = useMemo80(() => combineClasses(RcGridClasses, classesProp), [classesProp]);
   return /* @__PURE__ */ React686.createElement(Grid_default, {
     ...rest,
     ref: ref2,
@@ -79224,9 +79290,9 @@ __publicField(RcImageView, "initThumbnailModeState", {
 // src/components/InlineEditable/InlineEditable.tsx
 import React688, {
   forwardRef as forwardRef602,
-  useEffect as useEffect60,
-  useMemo as useMemo80,
-  useRef as useRef90,
+  useEffect as useEffect61,
+  useMemo as useMemo81,
+  useRef as useRef92,
   useState as useState41
 } from "react";
 var import_isString2 = __toModule(require_isString());
@@ -79373,9 +79439,9 @@ var _RcInlineEditable = forwardRef602((inProps, ref2) => {
   const [isEditing, setEditing] = useState41(false);
   const [isSaving, setSaving] = useState41(false);
   const [draftRef, setDraft] = useRefState("");
-  const isNotNeedSaveWhenBlurRef = useRef90(false);
-  const textFieldRef = useRef90();
-  const labelRef = useRef90(null);
+  const isNotNeedSaveWhenBlurRef = useRef92(false);
+  const textFieldRef = useRef92();
+  const labelRef = useRef92(null);
   const saving = isSaving || savingProp;
   const handleSave = async (newValue, reason) => {
     const outputValue = multiline ? (0, import_trimEnd.default)(newValue) : newValue.trim();
@@ -79448,8 +79514,8 @@ var _RcInlineEditable = forwardRef602((inProps, ref2) => {
   const handleFocusCapture = useEventCallback2((e2) => {
     e2.stopPropagation();
   });
-  const classes = useMemo80(() => combineClasses(RcInlineEditableClasses, classesProp), [classesProp]);
-  useEffect60(() => {
+  const classes = useMemo81(() => combineClasses(RcInlineEditableClasses, classesProp), [classesProp]);
+  useEffect61(() => {
     return () => {
       if (shouldRemoveNode && textFieldRef && textFieldRef.current) {
         clearReactReferencesInNode(textFieldRef.current);
@@ -79695,7 +79761,7 @@ import React692, {
   forwardRef as forwardRef604,
   memo as memo415,
   useContext as useContext28,
-  useMemo as useMemo81,
+  useMemo as useMemo82,
   useState as useState42
 } from "react";
 
@@ -79716,9 +79782,9 @@ var _RcMenuList = forwardRef604((inProps, ref2) => {
   } = props;
   const [focusedMenuItemId, setFocusedMenuItemId] = useState42(null);
   const id3 = useId2("menu-list", true);
-  const classes = useMemo81(() => combineClasses(RcMenuListClasses, classesProp), [classesProp]);
+  const classes = useMemo82(() => combineClasses(RcMenuListClasses, classesProp), [classesProp]);
   const subMenuContext = useContext28(RcSubMenuContext);
-  const ctxValue = useMemo81(() => ({
+  const ctxValue = useMemo82(() => ({
     menuListId: id3,
     autoClose: !!autoClose || subMenuContext.autoClose,
     focusedMenuItemId,
@@ -79747,8 +79813,8 @@ import React693, {
   memo as memo416,
   useContext as useContext29,
   useLayoutEffect as useLayoutEffect28,
-  useMemo as useMemo82,
-  useRef as useRef91,
+  useMemo as useMemo83,
+  useRef as useRef93,
   useState as useState43
 } from "react";
 
@@ -79787,10 +79853,10 @@ var _RcSubMenu = forwardRef605((inProps, ref2) => {
     onClose,
     ...rest
   } = props;
-  const _popperRef = useRef91(null);
+  const _popperRef = useRef93(null);
   const popperRef = useForkRef2(_popperRef, PopperProps.ref || null);
   const popperId = useId2(PopperProps.id);
-  const menuItemIdRef = useRef91(null);
+  const menuItemIdRef = useRef93(null);
   const [anchorEl, setAnchorEl] = useState43(null);
   const [open, setOpen] = useState43(false);
   const menuListContext = useContext29(RcMenuListContext);
@@ -79826,8 +79892,8 @@ var _RcSubMenu = forwardRef605((inProps, ref2) => {
       handleClose(e2, "subMenuItemAnchorMouseLeave");
     }
   });
-  const classes = useMemo82(() => combineClasses(RcSubMenuClasses, classesProp), [classesProp]);
-  const title = useMemo82(() => typeof titleProp === "string" ? /* @__PURE__ */ React693.createElement(RcListItemText, null, titleProp) : titleProp, [titleProp]);
+  const classes = useMemo83(() => combineClasses(RcSubMenuClasses, classesProp), [classesProp]);
+  const title = useMemo83(() => typeof titleProp === "string" ? /* @__PURE__ */ React693.createElement(RcListItemText, null, titleProp) : titleProp, [titleProp]);
   const {
     onKeyDown: onPopperKeyDown,
     onMouseLeave: onPopperMouseLeave,
@@ -79902,7 +79968,7 @@ var _RcSubMenu = forwardRef605((inProps, ref2) => {
     menuListContext.menuListId,
     open
   ]);
-  const ctxValue = useMemo82(() => ({
+  const ctxValue = useMemo83(() => ({
     autoClose: menuListContext.autoClose,
     closeSubMenu: (e2, reason) => {
       handleCloseSubMenu();
@@ -79910,7 +79976,7 @@ var _RcSubMenu = forwardRef605((inProps, ref2) => {
       menuListContext?.onClose?.(e2, reason);
     }
   }), [handleCloseSubMenu, menuListContext, subMenuContext]);
-  const modifiers2 = useMemo82(() => ({
+  const modifiers2 = useMemo83(() => ({
     flip: {
       enabled: true
     },
@@ -79971,7 +80037,7 @@ RcSubMenu.defaultProps = {};
 RcSubMenu.displayName = "RcSubMenu";
 
 // src/components/Pagination/Pagination/Pagination.tsx
-import React700, { forwardRef as forwardRef608, useMemo as useMemo83 } from "react";
+import React700, { forwardRef as forwardRef608, useMemo as useMemo84 } from "react";
 
 // node_modules/@material-ui/lab/esm/Pagination/Pagination.js
 var import_prop_types123 = __toModule(require_prop_types());
@@ -79983,11 +80049,11 @@ import {
 // node_modules/@material-ui/lab/esm/Pagination/usePagination.js
 function usePagination() {
   var props = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
-  var _props$boundaryCount = props.boundaryCount, boundaryCount = _props$boundaryCount === void 0 ? 1 : _props$boundaryCount, _props$componentName = props.componentName, componentName3 = _props$componentName === void 0 ? "usePagination" : _props$componentName, _props$count = props.count, count2 = _props$count === void 0 ? 1 : _props$count, _props$defaultPage = props.defaultPage, defaultPage = _props$defaultPage === void 0 ? 1 : _props$defaultPage, _props$disabled = props.disabled, disabled3 = _props$disabled === void 0 ? false : _props$disabled, _props$hideNextButton = props.hideNextButton, hideNextButton = _props$hideNextButton === void 0 ? false : _props$hideNextButton, _props$hidePrevButton = props.hidePrevButton, hidePrevButton = _props$hidePrevButton === void 0 ? false : _props$hidePrevButton, handleChange = props.onChange, pageProp = props.page, _props$showFirstButto = props.showFirstButton, showFirstButton = _props$showFirstButto === void 0 ? false : _props$showFirstButto, _props$showLastButton = props.showLastButton, showLastButton = _props$showLastButton === void 0 ? false : _props$showLastButton, _props$siblingCount = props.siblingCount, siblingCount = _props$siblingCount === void 0 ? 1 : _props$siblingCount, other = _objectWithoutProperties(props, ["boundaryCount", "componentName", "count", "defaultPage", "disabled", "hideNextButton", "hidePrevButton", "onChange", "page", "showFirstButton", "showLastButton", "siblingCount"]);
+  var _props$boundaryCount = props.boundaryCount, boundaryCount = _props$boundaryCount === void 0 ? 1 : _props$boundaryCount, _props$componentName = props.componentName, componentName2 = _props$componentName === void 0 ? "usePagination" : _props$componentName, _props$count = props.count, count2 = _props$count === void 0 ? 1 : _props$count, _props$defaultPage = props.defaultPage, defaultPage = _props$defaultPage === void 0 ? 1 : _props$defaultPage, _props$disabled = props.disabled, disabled3 = _props$disabled === void 0 ? false : _props$disabled, _props$hideNextButton = props.hideNextButton, hideNextButton = _props$hideNextButton === void 0 ? false : _props$hideNextButton, _props$hidePrevButton = props.hidePrevButton, hidePrevButton = _props$hidePrevButton === void 0 ? false : _props$hidePrevButton, handleChange = props.onChange, pageProp = props.page, _props$showFirstButto = props.showFirstButton, showFirstButton = _props$showFirstButto === void 0 ? false : _props$showFirstButto, _props$showLastButton = props.showLastButton, showLastButton = _props$showLastButton === void 0 ? false : _props$showLastButton, _props$siblingCount = props.siblingCount, siblingCount = _props$siblingCount === void 0 ? 1 : _props$siblingCount, other = _objectWithoutProperties(props, ["boundaryCount", "componentName", "count", "defaultPage", "disabled", "hideNextButton", "hidePrevButton", "onChange", "page", "showFirstButton", "showLastButton", "siblingCount"]);
   var _useControlled = useControlled({
     controlled: pageProp,
     default: defaultPage,
-    name: componentName3,
+    name: componentName2,
     state: "page"
   }), _useControlled2 = _slicedToArray(_useControlled, 2), page = _useControlled2[0], setPageState = _useControlled2[1];
   var handleClick = function handleClick2(event, value) {
@@ -80366,7 +80432,7 @@ var RcPaginationClasses = RcClasses([], "RcPagination");
 var _RcPagination = forwardRef608((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcPagination" });
   const { classes: classesProp, ...reset2 } = props;
-  const classes = useMemo83(() => combineProps(RcPaginationClasses, classesProp), [classesProp]);
+  const classes = useMemo84(() => combineProps(RcPaginationClasses, classesProp), [classesProp]);
   return /* @__PURE__ */ React700.createElement(Pagination_default, {
     ref: ref2,
     classes,
@@ -80380,7 +80446,7 @@ RcPagination.defaultProps = {};
 RcPagination.displayName = "RcPagination";
 
 // src/components/Pagination/PaginationItem/PaginationItem.tsx
-import React701, { forwardRef as forwardRef609, useMemo as useMemo84 } from "react";
+import React701, { forwardRef as forwardRef609, useMemo as useMemo85 } from "react";
 
 // src/components/Pagination/PaginationItem/utils/PaginationItemUtils.ts
 var RcPaginationItemClasses = RcClasses([], "RcPaginationItem");
@@ -80389,7 +80455,7 @@ var RcPaginationItemClasses = RcClasses([], "RcPaginationItem");
 var _RcPaginationItem = forwardRef609((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcPaginationItem" });
   const { classes: classesProp, children: children2, ...rest } = props;
-  const classes = useMemo84(() => combineProps(RcPaginationItemClasses, classesProp), [classesProp]);
+  const classes = useMemo85(() => combineProps(RcPaginationItemClasses, classesProp), [classesProp]);
   return /* @__PURE__ */ React701.createElement(PaginationItem_default, {
     ...rest,
     ref: ref2,
@@ -80484,7 +80550,7 @@ var _RcPortal = (inProps) => {
 var RcPortal = _RcPortal;
 
 // src/components/Rating/Rating.tsx
-import React707, { forwardRef as forwardRef612, useCallback as useCallback34, useMemo as useMemo85 } from "react";
+import React707, { forwardRef as forwardRef612, useCallback as useCallback36, useMemo as useMemo86 } from "react";
 
 // node_modules/@material-ui/lab/esm/Rating/Rating.js
 var import_prop_types124 = __toModule(require_prop_types());
@@ -80492,7 +80558,7 @@ import {
   Fragment as Fragment12,
   createElement as createElement132,
   forwardRef as forwardRef611,
-  useRef as useRef92,
+  useRef as useRef94,
   useState as useState44
 } from "react";
 
@@ -80635,7 +80701,7 @@ var Rating = /* @__PURE__ */ forwardRef611(function Rating2(props, ref2) {
   }
   var _useIsFocusVisible = useIsFocusVisible(), isFocusVisible2 = _useIsFocusVisible.isFocusVisible, onBlurVisible = _useIsFocusVisible.onBlurVisible, focusVisibleRef = _useIsFocusVisible.ref;
   var _React$useState2 = useState44(false), focusVisible2 = _React$useState2[0], setFocusVisible = _React$useState2[1];
-  var rootRef = useRef92();
+  var rootRef = useRef94();
   var handleFocusRef = useForkRef(focusVisibleRef, rootRef);
   var handleRef = useForkRef(handleFocusRef, ref2);
   var handleMouseMove = function handleMouseMove2(event) {
@@ -80946,14 +81012,14 @@ var _RcRating = forwardRef612((inProps, ref2) => {
     color: color2,
     ...rest
   } = props;
-  const tooltipOpenStatus = useMemo85(() => {
+  const tooltipOpenStatus = useMemo86(() => {
     const tooltipOpenStatus2 = [];
     for (let i2 = 0; i2 < max2; i2++) {
       tooltipOpenStatus2.push(false);
     }
     return tooltipOpenStatus2;
   }, [max2]);
-  const IconContainer2 = useCallback34((containerProps) => {
+  const IconContainer2 = useCallback36((containerProps) => {
     const { value: itemValue, children: children2, ...other } = containerProps;
     return /* @__PURE__ */ React707.createElement("span", {
       ...other
@@ -80969,7 +81035,7 @@ var _RcRating = forwardRef612((inProps, ref2) => {
     });
     onChangeActiveProp?.(e2, value);
   });
-  const classes = useMemo85(() => combineClasses(RcRatingClasses, classesProp), [classesProp]);
+  const classes = useMemo86(() => combineClasses(RcRatingClasses, classesProp), [classesProp]);
   return /* @__PURE__ */ React707.createElement(Rating_default, {
     ref: ref2,
     classes,
@@ -80995,7 +81061,7 @@ RcRating.defaultProps = {
 RcRating.displayName = "RcRating";
 
 // src/components/Responsive/Responsive.tsx
-import React708, { useRef as useRef93, useState as useState45 } from "react";
+import React708, { useRef as useRef95, useState as useState45 } from "react";
 
 // src/components/Responsive/utils/getMatchedBreakpoint.ts
 var bpListL2S = [...breakpointList].reverse();
@@ -81013,7 +81079,7 @@ var RcResponsive = (inProps) => {
   } = props;
   const { externalWindow } = useRcPortalWindowContext();
   const currentWindow = externalWindow ?? window;
-  const bodyRef = useRef93(currentWindow.document.body);
+  const bodyRef = useRef95(currentWindow.document.body);
   const targetRef = responsiveTarget ?? bodyRef;
   const [contextValue, setContextValue] = useState45(() => {
     const target = targetRef.current;
@@ -81040,13 +81106,13 @@ RcResponsive.defaultProps = {
 RcResponsive.displayName = "RcResponsive";
 
 // src/components/Snackbar/Snackbar.tsx
-import React710, { forwardRef as forwardRef614, useMemo as useMemo87 } from "react";
+import React710, { forwardRef as forwardRef614, useMemo as useMemo88 } from "react";
 
 // src/components/Snackbar/SnackbarContent/SnackbarContent.tsx
 import React709, {
   forwardRef as forwardRef613,
   isValidElement as isValidElement19,
-  useMemo as useMemo86
+  useMemo as useMemo87
 } from "react";
 
 // src/components/Snackbar/SnackbarContent/utils/SnackbarContentUtils.tsx
@@ -81141,8 +81207,8 @@ var _RcSnackbarContent = forwardRef613((inProps, ref2) => {
     action: actionProp,
     ...rest
   } = props;
-  const classes = useMemo86(() => combineClasses(RcSnackbarContentClasses, classesProp), [classesProp]);
-  const action3 = useMemo86(() => {
+  const classes = useMemo87(() => combineClasses(RcSnackbarContentClasses, classesProp), [classesProp]);
+  const action3 = useMemo87(() => {
     const getItem = (item) => {
       if (isValidElement19(item) && isRcElement(item, ["RcSnackbarAction"])) {
         if (size !== RcSnackbarContent.defaultProps.size) {
@@ -81205,7 +81271,7 @@ var _RcSnackbar = forwardRef614((inProps, ref2) => {
     TransitionProps: TransitionPropsProp,
     ...rest
   } = props;
-  const classes = useMemo87(() => combineClasses(RcSnackbarClasses, classesProp), [classesProp]);
+  const classes = useMemo88(() => combineClasses(RcSnackbarClasses, classesProp), [classesProp]);
   const onExited = useUnmountPortalHandler(TransitionPropsProp?.onExited);
   const TransitionProps4 = { ...TransitionPropsProp, onExited };
   return /* @__PURE__ */ React710.createElement(Snackbar_default, {
@@ -81234,7 +81300,7 @@ RcSnackbar.defaultProps = {
 RcSnackbar.displayName = "RcSnackbar";
 
 // src/components/Snackbar/SnackbarAction/SnackbarAction.tsx
-import React711, { useMemo as useMemo88 } from "react";
+import React711, { useMemo as useMemo89 } from "react";
 
 // src/components/Snackbar/SnackbarAction/utils/SnackbarActionUtils.tsx
 var RcSnackbarActionClasses = RcClasses(["text", "icon"], "RcSnackbarAction");
@@ -81292,11 +81358,11 @@ var _RcSnackbarAction = (inProps) => {
     className: classNameProp,
     ...rest
   } = props;
-  const className = useMemo88(() => clsx_m_default(classNameProp, {
+  const className = useMemo89(() => clsx_m_default(classNameProp, {
     [RcSnackbarActionClasses.text]: variant === "text",
     [RcSnackbarActionClasses.icon]: variant === "icon"
   }), [classNameProp, variant]);
-  const classes = useMemo88(() => omit3(classesProp, ["text", "icon"]), [classesProp]);
+  const classes = useMemo89(() => omit3(classesProp, ["text", "icon"]), [classesProp]);
   return /* @__PURE__ */ React711.createElement(ButtonBase_default, {
     className,
     classes,
@@ -81317,7 +81383,7 @@ RcSnackbarAction.defaultProps = {
 };
 
 // src/components/Stepper/Step/Step.tsx
-import React712, { forwardRef as forwardRef615, useMemo as useMemo89 } from "react";
+import React712, { forwardRef as forwardRef615, useMemo as useMemo90 } from "react";
 
 // src/components/Stepper/Step/utils/StepUtils.ts
 var RcStepClasses = RcClasses(["root", "horizontal"], "RcStep");
@@ -81337,7 +81403,7 @@ var StepStyle = () => {
 var _RcStep = forwardRef615((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcStep" });
   const { classes: classesProp, children: children2, ...rest } = props;
-  const classes = useMemo89(() => combineClasses(RcStepClasses, classesProp), [classesProp]);
+  const classes = useMemo90(() => combineClasses(RcStepClasses, classesProp), [classesProp]);
   return /* @__PURE__ */ React712.createElement(Step_default, {
     ...rest,
     ref: ref2,
@@ -81354,23 +81420,23 @@ RcStep.displayName = "RcStep";
 import React716, {
   cloneElement as cloneElement28,
   forwardRef as forwardRef618,
-  useMemo as useMemo92
+  useMemo as useMemo93
 } from "react";
 
 // src/components/Stepper/StepLabel/StepLabel.tsx
-import React715, { forwardRef as forwardRef617, useMemo as useMemo91 } from "react";
+import React715, { forwardRef as forwardRef617, useMemo as useMemo92 } from "react";
 
 // src/components/Stepper/StepIcon/StepIcon.tsx
-import React714, { forwardRef as forwardRef616, useMemo as useMemo90 } from "react";
+import React714, { forwardRef as forwardRef616, useMemo as useMemo91 } from "react";
 
 // src/components/Stepper/StepIcon/utils/StepIconUtils.ts
-import { useRef as useRef94 } from "react";
+import { useRef as useRef96 } from "react";
 var RcStepIconClasses = RcClasses(["root", "active", "text"], "RcStepIcon");
 var iconColor = palette22("interactive", "b02");
 var iconTextColor = palette22("neutral", "f01");
 var useIsEditable = ({ active, completed }) => {
-  const completedTimesRef = useRef94(0);
-  const isEditRef = useRef94(false);
+  const completedTimesRef = useRef96(0);
+  const isEditRef = useRef96(false);
   const { current: completedTimes } = completedTimesRef;
   const { current: isEdit } = isEditRef;
   if (completedTimes === 0 && !active && completed) {
@@ -81441,9 +81507,9 @@ var _RcStepIcon = forwardRef616((inProps, ref2) => {
     children: children2,
     ...rest
   } = props;
-  const classes = useMemo90(() => combineClasses(RcStepIconClasses, classesProp), [classesProp]);
+  const classes = useMemo91(() => combineClasses(RcStepIconClasses, classesProp), [classesProp]);
   const isEdit = useIsEditable(props);
-  const icon = useMemo90(() => {
+  const icon = useMemo91(() => {
     if (editable) {
       return /* @__PURE__ */ React714.createElement(StyledCircleIcon, {
         isEdit: true,
@@ -81537,8 +81603,8 @@ var _RcStepLabel = forwardRef617((inProps, ref2) => {
     onClick,
     ...rest
   } = props;
-  const classes = useMemo91(() => combineClasses(RcStepLabelClasses, classesProp), [classesProp]);
-  const StepIconProps = useMemo91(() => combineProps({ editable }, StepIconPropsProp), [StepIconPropsProp, editable]);
+  const classes = useMemo92(() => combineClasses(RcStepLabelClasses, classesProp), [classesProp]);
+  const StepIconProps = useMemo92(() => combineProps({ editable }, StepIconPropsProp), [StepIconPropsProp, editable]);
   return /* @__PURE__ */ React715.createElement(StepLabel_default, {
     ref: ref2,
     StepIconComponent: RcStepIcon,
@@ -81581,8 +81647,8 @@ var _RcStepButton = forwardRef618((inProps, ref2) => {
     editable,
     ...rest
   } = props;
-  const classes = useMemo92(() => combineClasses(RcStepButtonClasses, classesProp), [classesProp]);
-  const children2 = useMemo92(() => {
+  const classes = useMemo93(() => combineClasses(RcStepButtonClasses, classesProp), [classesProp]);
+  const children2 = useMemo93(() => {
     const childProps = combineProps({
       icon,
       optional,
@@ -81610,7 +81676,7 @@ RcStepButton.defaultProps = {
 RcStepButton.displayName = "RcStepButton";
 
 // src/components/Stepper/StepConnector/StepConnector.tsx
-import React717, { forwardRef as forwardRef619, useMemo as useMemo93 } from "react";
+import React717, { forwardRef as forwardRef619, useMemo as useMemo94 } from "react";
 
 // src/components/Stepper/StepConnector/utils/StepConnectorUtils.ts
 var RcStepConnectorClasses = RcClasses(["line"], "RcStepConnector");
@@ -81628,7 +81694,7 @@ var StepConnectorStyle = () => {
 var _RcStepConnector = forwardRef619((inProps, ref2) => {
   const prop2 = useThemeProps({ props: inProps, name: "RcStepConnector" });
   const { classes: classesProp, ...rest } = prop2;
-  const classes = useMemo93(() => combineClasses(RcStepConnectorClasses, classesProp), [classesProp]);
+  const classes = useMemo94(() => combineClasses(RcStepConnectorClasses, classesProp), [classesProp]);
   return /* @__PURE__ */ React717.createElement(StepConnector_default, {
     ...rest,
     ref: ref2,
@@ -81642,7 +81708,7 @@ RcStepConnector.defaultProps = {};
 RcStepConnector.displayName = "RcStepConnector";
 
 // src/components/Stepper/Stepper.tsx
-import React718, { forwardRef as forwardRef620, useMemo as useMemo94 } from "react";
+import React718, { forwardRef as forwardRef620, useMemo as useMemo95 } from "react";
 
 // src/components/Stepper/styles/StepperStyle.tsx
 var StepperStyle = () => {
@@ -81658,7 +81724,7 @@ var RcStepperClasses = RcClasses([], "RcStepper");
 var _RcStepper = forwardRef620((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcStepper" });
   const { classes: classesProp, children: children2, ...rest } = props;
-  const classes = useMemo94(() => combineClasses(RcStepperClasses, classesProp), [classesProp]);
+  const classes = useMemo95(() => combineClasses(RcStepperClasses, classesProp), [classesProp]);
   return /* @__PURE__ */ React718.createElement(Stepper_default, {
     ...rest,
     ref: ref2,
@@ -81676,7 +81742,7 @@ RcStepper.defaultProps = {
 RcStepper.displayName = "RcStepper";
 
 // src/components/TablePagination/TablePagination.tsx
-import React721, { forwardRef as forwardRef622, useMemo as useMemo95 } from "react";
+import React721, { forwardRef as forwardRef622, useMemo as useMemo96 } from "react";
 
 // src/components/Toolbar/Toolbar.tsx
 import React719, { forwardRef as forwardRef621 } from "react";
@@ -81832,7 +81898,7 @@ var _RcTablePagination = forwardRef622((inProps, ref2) => {
   const MenuItemComponent = SelectProps.native ? "option" : TablePaginationMenuItem;
   const totalPage = Math.ceil(count2 / rowsPerPage);
   const isPageSelection = type3 === "pageSelection";
-  const classes = useMemo95(() => combineClasses(RcTablePaginationClasses, classesProp), [classesProp]);
+  const classes = useMemo96(() => combineClasses(RcTablePaginationClasses, classesProp), [classesProp]);
   let colSpan;
   if (component === TableCell_default || component === "td") {
     colSpan = colSpanProp || 1e3;
@@ -81842,7 +81908,7 @@ var _RcTablePagination = forwardRef622((inProps, ref2) => {
       return (page + 1) * rowsPerPage;
     return rowsPerPage === -1 ? count2 : Math.min(count2, (page + 1) * rowsPerPage);
   };
-  const menuItems = useMemo95(() => {
+  const menuItems = useMemo96(() => {
     const menus = [];
     if (!isPageSelection)
       return menus;
@@ -81924,7 +81990,7 @@ var RcTablePagination = styled_components_default(_RcTablePagination)`
 RcTablePagination.displayName = "RcTablePagination";
 
 // src/components/Tables/Table.tsx
-import React722, { forwardRef as forwardRef623, useMemo as useMemo96 } from "react";
+import React722, { forwardRef as forwardRef623, useMemo as useMemo97 } from "react";
 
 // src/components/Tables/types.ts
 var TABLE_BORDER_TYPE;
@@ -82128,12 +82194,12 @@ var _RcTable = forwardRef623((inProps, ref2) => {
     classes,
     className
   } = props;
-  const containerClass = useMemo96(() => {
+  const containerClass = useMemo97(() => {
     return clsx_m_default(className, classes?.root, {
       [TABLE_BORDER_TYPE.BORDERED]: tableBorder === TABLE_BORDER_TYPE.BORDERED
     });
   }, [className, classes, tableBorder]);
-  const tableClass = useMemo96(() => {
+  const tableClass = useMemo97(() => {
     return clsx_m_default(classes?.table, tableType || TABLE_TYPE.CARD, {
       [TABLE_STICKY_TYPE.STICKY]: tableSticky === TABLE_STICKY_TYPE.STICKY
     });
@@ -82154,7 +82220,7 @@ import React724 from "react";
 // src/components/Tables/TableHeadCell.tsx
 var import_isFunction = __toModule(require_isFunction());
 var import_isNumber = __toModule(require_isNumber());
-import React723, { useMemo as useMemo97 } from "react";
+import React723, { useMemo as useMemo98 } from "react";
 var RcTableHeadCell = (inProps) => {
   const props = useThemeProps({ props: inProps, name: "RcTableHeadCell" });
   const { automationID, title, width: width2, sortDirection, sortKey, textAlign: textAlign2 } = props;
@@ -82174,7 +82240,7 @@ var RcTableHeadCell = (inProps) => {
     const { sortHandler, sortKey: sortKey2 } = props;
     return (0, import_isFunction.default)(sortHandler) && (0, import_isNumber.default)(sortKey2);
   };
-  const sortDirectionArrow = useMemo97(() => {
+  const sortDirectionArrow = useMemo98(() => {
     let sortClass = "";
     switch (sortDirection) {
       case ORDER_TABLE_BY.ASC:
@@ -82274,24 +82340,24 @@ var RcTableBodyCellContent = styled_components_default(_RcTableBodyCellContent)`
 `;
 
 // src/components/Tabs/Tabs/Tabs.tsx
-import React729, { forwardRef as forwardRef628, useMemo as useMemo101 } from "react";
+import React729, { forwardRef as forwardRef628, useMemo as useMemo102 } from "react";
 
 // src/components/Tabs/Tabs/MoreMenuTabs/MoreMenuTabs.tsx
 var import_isEqual = __toModule(require_isEqual());
 import React728, {
   createRef as createRef2,
   forwardRef as forwardRef627,
-  useEffect as useEffect61,
-  useMemo as useMemo100,
-  useRef as useRef95,
+  useEffect as useEffect62,
+  useMemo as useMemo101,
+  useRef as useRef97,
   useState as useState47
 } from "react";
 
 // src/components/Tabs/Tabs/MoreMenuTab/MoreMenuTab.tsx
-import React727, { forwardRef as forwardRef626, useMemo as useMemo99, useState as useState46 } from "react";
+import React727, { forwardRef as forwardRef626, useMemo as useMemo100, useState as useState46 } from "react";
 
 // src/components/Tabs/Tab/Tab.tsx
-import React726, { forwardRef as forwardRef625, useMemo as useMemo98 } from "react";
+import React726, { forwardRef as forwardRef625, useMemo as useMemo99 } from "react";
 
 // src/components/Tabs/Tab/utils/TabUtils.ts
 var RcTabClasses = RcClasses(["labelIcon", "wrapper", "selected"], "RcTab");
@@ -82333,7 +82399,7 @@ var TabStyle = (props) => {
 var _RcTab = forwardRef625((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcTab" });
   const { classes: classesProp, children: children2, direction, ...rest } = props;
-  const classes = useMemo98(() => combineProps(RcTabClasses, classesProp), [classesProp]);
+  const classes = useMemo99(() => combineProps(RcTabClasses, classesProp), [classesProp]);
   return /* @__PURE__ */ React726.createElement(Tab_default, {
     ...rest,
     ref: ref2,
@@ -82457,7 +82523,7 @@ var _MoreMenuTab = forwardRef626((props, ref2) => {
   } = MenuProps;
   const menuId = useId2(menuIdProp);
   const [anchorEl, setAnchorEl] = useState46(null);
-  const MoreIcon = useMemo99(() => {
+  const MoreIcon = useMemo100(() => {
     const Icon = MoreIconProp || /* @__PURE__ */ React727.createElement(RcIcon, {
       size: "medium",
       color: "neutral.f04",
@@ -82477,7 +82543,7 @@ var _MoreMenuTab = forwardRef626((props, ref2) => {
     setAnchorEl(null);
     onMenuCloseProp?.(event, reason);
   });
-  const MenuList3 = useMemo99(() => {
+  const MenuList3 = useMemo100(() => {
     if (!menuItems || menuItems.length === 0) {
       return null;
     }
@@ -82559,18 +82625,18 @@ var _MoreMenuTabs = forwardRef627((props, ref2) => {
   const { onGroupInfoChange, ...MoreButtonPropsRest } = MoreButtonProps;
   const isVertical = orientation === "vertical";
   const oriStr = isVertical ? "height" : "width";
-  const innerRef = useRef95(null);
-  const moreTabRef = useRef95(null);
+  const innerRef = useRef97(null);
+  const moreTabRef = useRef97(null);
   const tabsRef = useForkRef2(innerRef, ref2);
-  const tabRefsMapRef = useRef95();
-  const moreTabSizeRef = useRef95(DEFAULT_SIZE);
-  const allTabsSizeRef = useRef95(DEFAULT_SIZE);
-  const tabsTabChildRef = useRef95([]);
-  const tabsSizeRef = useRef95(DEFAULT_SIZE);
-  const groupingRef = useRef95();
+  const tabRefsMapRef = useRef97();
+  const moreTabSizeRef = useRef97(DEFAULT_SIZE);
+  const allTabsSizeRef = useRef97(DEFAULT_SIZE);
+  const tabsTabChildRef = useRef97([]);
+  const tabsSizeRef = useRef97(DEFAULT_SIZE);
+  const groupingRef = useRef97();
   const [menuTabChild, setMenuTabChild] = useState47([]);
   const [useMoreMode, setUseMoreMode] = useState47(true);
-  const sizeChangeResolve = useRef95(true);
+  const sizeChangeResolve = useRef97(true);
   const forceUpdate = useForceUpdate();
   const sizeChange = (size) => {
     if (tabsSizeRef.current.height !== size.height || tabsSizeRef.current.width !== size.width) {
@@ -82617,7 +82683,7 @@ var _MoreMenuTabs = forwardRef627((props, ref2) => {
     tabRefsMapRef.current = tabRefs;
     tabsTabChildRef.current = tabsTabDefaultChild;
   }
-  useEffect61(() => {
+  useEffect62(() => {
     const tabRefsMap = tabRefsMapRef.current;
     if (tabRefsMap?.size !== void 0) {
       const allTabsSize = { ...DEFAULT_SIZE };
@@ -82641,7 +82707,7 @@ var _MoreMenuTabs = forwardRef627((props, ref2) => {
       moreTabSizeRef.current = size;
     }
   }, []);
-  useEffect61(() => {
+  useEffect62(() => {
     let currSelectMenuItem;
     const tabRefsMap = tabRefsMapRef.current;
     if (tabRefsMap) {
@@ -82719,7 +82785,7 @@ var _MoreMenuTabs = forwardRef627((props, ref2) => {
     tabsSize,
     valueProp
   ]);
-  const MoreMenuTabCmp = useMemo100(() => {
+  const MoreMenuTabCmp = useMemo101(() => {
     const menuItems = React728.Children.map(menuTabChild, (child) => {
       return { ...child.props };
     });
@@ -82780,7 +82846,7 @@ var _RcTabs = forwardRef628((inProps, ref2) => {
     ...rest
   } = props;
   const isMore = variantProp === "moreMenu";
-  const classes = useMemo101(() => combineProps(RcTabsClasses, classesProp), [classesProp]);
+  const classes = useMemo102(() => combineProps(RcTabsClasses, classesProp), [classesProp]);
   const children2 = React729.Children.map(childrenProp, (child) => React729.cloneElement(child, { size }));
   if (isMore) {
     return /* @__PURE__ */ React729.createElement(MoreMenuTabs, {
@@ -82815,8 +82881,8 @@ import {
   createContext as createContext23,
   createElement as createElement133,
   useContext as useContext30,
-  useEffect as useEffect62,
-  useMemo as useMemo102,
+  useEffect as useEffect63,
+  useMemo as useMemo103,
   useState as useState48
 } from "react";
 var Context = createContext23(null);
@@ -82825,7 +82891,7 @@ if (true) {
 }
 function useUniquePrefix() {
   var _React$useState = useState48(null), id3 = _React$useState[0], setId = _React$useState[1];
-  useEffect62(function() {
+  useEffect63(function() {
     setId("mui-p-".concat(Math.round(Math.random() * 1e5)));
   }, []);
   return id3;
@@ -82833,7 +82899,7 @@ function useUniquePrefix() {
 function TabContext(props) {
   var children2 = props.children, value = props.value;
   var idPrefix = useUniquePrefix();
-  var context = useMemo102(function() {
+  var context = useMemo103(function() {
     return {
       idPrefix,
       value
@@ -82870,7 +82936,7 @@ var RcTabContext = TabContext;
 RcTabContext.displayName = "RcTabContext";
 
 // src/components/Tabs/TabList/TabList.tsx
-import React731, { forwardRef as forwardRef629, useMemo as useMemo103 } from "react";
+import React731, { forwardRef as forwardRef629, useMemo as useMemo104 } from "react";
 
 // src/components/Tabs/TabList/styles/TabListStyle.tsx
 var TabListStyle = () => {
@@ -82884,7 +82950,7 @@ var RcTabListClasses = RcClasses([], "RcTabList");
 var _RcTabList = forwardRef629((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcTabList" });
   const { classes: classesProp, children: childrenProp, ...rest } = props;
-  const classes = useMemo103(() => combineClasses(RcTabListClasses, classesProp), [classesProp]);
+  const classes = useMemo104(() => combineClasses(RcTabListClasses, classesProp), [classesProp]);
   const context = useTabContext();
   if (context === null) {
     throw new TypeError("[RcTabList] No TabContext provided");
@@ -82910,7 +82976,7 @@ RcTabList.defaultProps = {};
 RcTabList.displayName = "RcTabList";
 
 // src/components/Tabs/TabPanel/TabPanel.tsx
-import React733, { forwardRef as forwardRef631, useMemo as useMemo104 } from "react";
+import React733, { forwardRef as forwardRef631, useMemo as useMemo105 } from "react";
 
 // node_modules/@material-ui/lab/esm/TabPanel/TabPanel.js
 var import_prop_types125 = __toModule(require_prop_types());
@@ -82964,7 +83030,7 @@ var RcTabPanelClasses = RcClasses([], "RcTabPanel");
 var _RcTabPanel = forwardRef631((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcTabPanel" });
   const { classes: classesProp, children: children2, ...rest } = props;
-  const classes = useMemo104(() => combineClasses(RcTabPanelClasses, classesProp), [classesProp]);
+  const classes = useMemo105(() => combineClasses(RcTabPanelClasses, classesProp), [classesProp]);
   const context = useTabContext();
   if (context === null) {
     throw new TypeError("[RcTabList] No RcTabContext provided");
@@ -83052,7 +83118,7 @@ RcTag.defaultProps = {
 RcTag.displayName = "RcTag";
 
 // src/components/Text/Text.tsx
-import React735, { forwardRef as forwardRef633, useMemo as useMemo105, useRef as useRef96, useState as useState49 } from "react";
+import React735, { forwardRef as forwardRef633, useMemo as useMemo106, useRef as useRef98, useState as useState49 } from "react";
 var import_isString3 = __toModule(require_isString());
 
 // src/components/Text/styles/StyledText.tsx
@@ -83092,13 +83158,13 @@ var _RcText = forwardRef633((inProps, ref2) => {
     ...rest
   } = props;
   const [isShowTitle, setIsShowTitle] = useState49(true);
-  const innerRef = useRef96(null);
+  const innerRef = useRef98(null);
   const textRef = useForkRef2(innerRef, ref2);
   if (titleWhenOverflow) {
     useOverflow(innerRef, (state) => setIsShowTitle(state));
   }
-  const className = useMemo105(() => clsx_m_default(classNameProp, { [highlightClassName]: highlight3 }), [classNameProp, highlight3]);
-  const TooltipProps = useMemo105(() => combineProps({
+  const className = useMemo106(() => clsx_m_default(classNameProp, { [highlightClassName]: highlight3 }), [classNameProp, highlight3]);
+  const TooltipProps = useMemo106(() => combineProps({
     tooltipForceHide: !isShowTitle
   }, TooltipPropsProp), [TooltipPropsProp, isShowTitle]);
   return /* @__PURE__ */ React735.createElement(RcTypography, {
@@ -83445,6 +83511,7 @@ export {
   darken2 as darken,
   deepmerge2 as deepmerge,
   doAlpha,
+  downshiftComponentName,
   elevationOptions,
   ellipsis,
   fakeBorder,
@@ -83527,6 +83594,7 @@ export {
   shallowEqual,
   spacing2 as spacing,
   spacingUnit,
+  stringArrToRegExp,
   styled_components_default as styled,
   swapArrayLocs,
   themeOptions,
@@ -83549,9 +83617,12 @@ export {
   useDialKeyboard,
   useDownshift,
   useDownshiftError,
+  useDownshiftGroup,
+  useDownshiftTag,
   useDynamicHeight,
   useEventCallback2 as useEventCallback,
   useEventListener,
+  useEver,
   useFixedEndSelection,
   useForceUpdate,
   useForkRef2 as useForkRef,
