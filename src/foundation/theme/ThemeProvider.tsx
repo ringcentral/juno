@@ -1,6 +1,11 @@
 import 'focus-visible';
 
-import React, { FunctionComponent, ReactNode } from 'react';
+import React, {
+  FunctionComponent,
+  ReactNode,
+  createContext,
+  useContext,
+} from 'react';
 
 import {
   MuiThemeProvider,
@@ -16,23 +21,27 @@ import createTheme from './createTheme';
 import { RcThemeInput } from './theme.type';
 import { useResultRef } from '../hooks';
 
-export type RcSubThemeProviderProps = {
+type SubThemeProviderProps = {
   /** custom theme */
   theme?: RcThemeInput;
   children?: ReactNode;
 };
 
-export type RcThemeProviderProps = {
+type RootThemeProviderProps = {
   /** prefix the mui global class */
   prefixGlobalClass?: string;
-} & RcSubThemeProviderProps;
+} & SubThemeProviderProps;
+
+export type RcThemeProviderProps = RootThemeProviderProps;
+
+const NestedThemeContext = createContext(false);
 
 /**
  * sub theme provider,
  * that will use when you want use multiple theme in one app
  * that will user parent's theme when not set theme
  */
-export const RcSubThemeProvider: FunctionComponent<RcSubThemeProviderProps> = ({
+const SubThemeProvider: FunctionComponent<SubThemeProviderProps> = ({
   theme: themeProp,
   children,
 }) => {
@@ -54,9 +63,10 @@ export const RcSubThemeProvider: FunctionComponent<RcSubThemeProviderProps> = ({
 
 /**
  * theme wrapper, apply in root,
- * each app should always have one `RcThemeProvider` at root,
- * if you need multiple, use `RcSubThemeProvider` inside that `RcThemeProvider` */
-export const RcThemeProvider: FunctionComponent<RcThemeProviderProps> = (
+ * each app should always have one `RootThemeProvider` at root,
+ * if you need multiple, use `SubThemeProvider` inside that `RootThemeProvider`
+ */
+const RootThemeProvider: FunctionComponent<RootThemeProviderProps> = (
   props,
 ) => {
   const { prefixGlobalClass, ...rest } = props;
@@ -75,7 +85,28 @@ export const RcThemeProvider: FunctionComponent<RcThemeProviderProps> = (
 
   return (
     <StylesProvider injectFirst {...stylesProviderProps.current}>
-      <RcSubThemeProvider {...rest} />
+      <SubThemeProvider {...rest} />
     </StylesProvider>
+  );
+};
+
+/**
+ * theme wrapper, each app should always have one `RcThemeProvider` at root
+ *
+ * if you need multiple theme,
+ * you can apply another `RcThemeProvider` inside root `RcThemeProvider`.
+ *
+ * `RcThemeProvider` can unlimited nest
+ */
+export const RcThemeProvider: FunctionComponent<RcThemeProviderProps> = (
+  props,
+) => {
+  const isSubProvider = useContext(NestedThemeContext);
+  const ThemeProvider = isSubProvider ? SubThemeProvider : RootThemeProvider;
+
+  return (
+    <NestedThemeContext.Provider value>
+      <ThemeProvider {...props} />
+    </NestedThemeContext.Provider>
   );
 };

@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react';
 
 import {
   RcDefaultDarkTheme,
-  RcSubThemeProvider,
+  RcThemeProvider,
   RcThemeSwitcherProvider,
   styled,
   useThemeSwitcher,
@@ -161,10 +161,10 @@ export const IconWithDarkTheme: Story<IconProps> = () => {
     <Wrapper>
       <li>
         <RcThemeSwitcherProvider defaultTheme="light" themeMap={themeMap}>
-          <RcSubThemeProvider>
+          <RcThemeProvider>
             <ThemeSwitcher />
             <RcIcon symbol={DefaultFile} />
-          </RcSubThemeProvider>
+          </RcThemeProvider>
         </RcThemeSwitcherProvider>
       </li>
     </Wrapper>

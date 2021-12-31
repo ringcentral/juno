@@ -5,7 +5,7 @@ import { Meta, Story } from '@storybook/react';
 import { RcBox } from '../../../components';
 import { Title } from '../../../storybook/components';
 import { useTheme } from '../../styled-components';
-import { RcSubThemeProvider } from '../ThemeProvider';
+import { RcThemeProvider } from '../ThemeProvider';
 import {
   RcDefaultDarkTheme,
   RcDefaultHighContrastTheme,
@@ -31,13 +31,13 @@ export const useThemeExample: Story<{}> = () => {
       <Title>Current Theme</Title>
       <ThemeValue />
       <Title>Dark Theme</Title>
-      <RcSubThemeProvider theme={RcDefaultDarkTheme}>
+      <RcThemeProvider theme={RcDefaultDarkTheme}>
         <ThemeValue />
-      </RcSubThemeProvider>
+      </RcThemeProvider>
       <Title>HighContrast Theme</Title>
-      <RcSubThemeProvider theme={RcDefaultHighContrastTheme}>
+      <RcThemeProvider theme={RcDefaultHighContrastTheme}>
         <ThemeValue />
-      </RcSubThemeProvider>
+      </RcThemeProvider>
     </>
   );
 };

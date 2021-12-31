@@ -5,7 +5,7 @@ import { Meta, Story } from '@storybook/react';
 import { RcButtonProps } from '../../../components/Buttons';
 import { RcText } from '../../../components/Text';
 import { RcThemeInput } from '../theme.type';
-import { RcSubThemeProvider } from '../ThemeProvider';
+import { RcThemeProvider } from '../ThemeProvider';
 import { useThemeProps } from '../useThemeProps';
 
 export default {
@@ -40,9 +40,9 @@ export const useThemePropsExample: Story<{}> = () => {
       <RcButtonExample />
 
       <RcText highlight>Custom Component Theme: </RcText>
-      <RcSubThemeProvider theme={theme}>
+      <RcThemeProvider theme={theme}>
         <RcButtonExample />
-      </RcSubThemeProvider>
+      </RcThemeProvider>
     </>
   );
 };
