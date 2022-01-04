@@ -331,7 +331,7 @@ const OutlineTextFieldSizesComponent: FunctionComponent<OutlineTextFieldProps> =
   };
 
 export const OutlineTextFieldSizes: Story<OutlineTextFieldProps> = (args) => (
-  <OutlineTextFieldSizesComponent {...args} />
+  <OutlineTextFieldSizesComponent {...args} multiline />
 );
 
 OutlineTextFieldSizes.storyName = 'OutlineTextField Sizes';

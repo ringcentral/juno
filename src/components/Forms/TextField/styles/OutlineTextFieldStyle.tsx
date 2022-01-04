@@ -26,7 +26,7 @@ export const OutlineTextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = ({
   color: colorProp,
 }) => {
   const height = px(RcOutlineTextFieldHeights[size!]);
-  const { inside, outside, insideLeft } = RcOutlineTextFieldSpaces[size!];
+  const { inside, outside, insideLeft, y } = RcOutlineTextFieldSpaces[size!];
   const labelMargin = RcOutlineTextFieldLabelMargins[size!];
   const typographyToken = RcOutlineTextFieldFontStyles[size!];
 
@@ -62,10 +62,9 @@ export const OutlineTextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = ({
 
     .${RcOutlineTextFieldInputClasses.root} {
       -webkit-tap-highlight-color: transparent;
-      height: ${height};
       min-height: ${height};
       background: ${palette2('neutral', 'b01')};
-      padding: ${spacing(outside)};
+      padding: ${spacing(y, outside)};
       border-radius: ${currRadius};
 
       &:before {

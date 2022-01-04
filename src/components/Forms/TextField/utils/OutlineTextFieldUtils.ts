@@ -12,21 +12,25 @@ export const RcOutlineTextFieldSpaces: UnitMap<
     outside: number;
     insideLeft?: number;
     inside: number;
+    y: number;
   }
 > = {
   small: {
     outside: 3,
     inside: 2,
+    y: 1,
   },
   medium: {
     outside: 4,
     inside: 3,
     insideLeft: 4,
+    y: 2,
   },
   large: {
     outside: 4,
     inside: 3,
     insideLeft: 4,
+    y: 3,
   },
 };
 
