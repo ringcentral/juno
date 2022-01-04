@@ -12,7 +12,7 @@ import { RcTextareaInputClasses } from './utils';
 
 type RcTextareaProps = {} & RcBaseProps<
   RcTextFieldProps,
-  'clearBtn' | 'clearButtonProps' | 'clearLabel' | 'clearAriaLabel'
+  'clearBtn' | 'clearButtonProps' | 'clearLabel' | 'clearAriaLabel' | 'variant'
 >;
 
 const _RcTextarea = forwardRef<any, RcTextareaProps>((inProps, ref) => {
