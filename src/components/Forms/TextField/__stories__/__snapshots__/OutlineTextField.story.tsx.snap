@@ -275,10 +275,9 @@ Array [
 
 .c0 .RcOutlineTextFieldInput-root {
   -webkit-tap-highlight-color: transparent;
-  height: 40px;
   min-height: 40px;
   background: #FFFFFF;
-  padding: 16px;
+  padding: 8px 16px;
   border-radius: 4px;
 }
 
@@ -712,10 +711,9 @@ Array [
 
 .c0 .RcOutlineTextFieldInput-root {
   -webkit-tap-highlight-color: transparent;
-  height: 40px;
   min-height: 40px;
   background: #FFFFFF;
-  padding: 16px;
+  padding: 8px 16px;
   border-radius: 4px;
 }
 
@@ -1216,10 +1214,9 @@ Array [
 
 .c0 .RcOutlineTextFieldInput-root {
   -webkit-tap-highlight-color: transparent;
-  height: 40px;
   min-height: 40px;
   background: #FFFFFF;
-  padding: 16px;
+  padding: 8px 16px;
   border-radius: 4px;
 }
 
@@ -1750,10 +1747,9 @@ Array [
 
 .c0 .RcOutlineTextFieldInput-root {
   -webkit-tap-highlight-color: transparent;
-  height: 40px;
   min-height: 40px;
   background: #FFFFFF;
-  padding: 16px;
+  padding: 8px 16px;
   border-radius: 100vw;
 }
 
@@ -2336,10 +2332,9 @@ Array [
 
 .c0 .RcOutlineTextFieldInput-root {
   -webkit-tap-highlight-color: transparent;
-  height: 40px;
   min-height: 40px;
   background: #FFFFFF;
-  padding: 16px;
+  padding: 8px 16px;
   border-radius: 0px;
 }
 
@@ -2884,10 +2879,9 @@ Array [
 
 .c0 .RcOutlineTextFieldInput-root {
   -webkit-tap-highlight-color: transparent;
-  height: 40px;
   min-height: 40px;
   background: #FFFFFF;
-  padding: 16px;
+  padding: 8px 16px;
   border-radius: 4px;
 }
 
@@ -3448,10 +3442,9 @@ Array [
 
 .c0 .RcOutlineTextFieldInput-root {
   -webkit-tap-highlight-color: transparent;
-  height: 40px;
   min-height: 40px;
   background: #FFFFFF;
-  padding: 16px;
+  padding: 8px 16px;
   border-radius: 4px;
 }
 
@@ -4066,10 +4059,9 @@ Array [
 
 .c0 .RcOutlineTextFieldInput-root {
   -webkit-tap-highlight-color: transparent;
-  height: 40px;
   min-height: 40px;
   background: #FFFFFF;
-  padding: 16px;
+  padding: 8px 16px;
   border-radius: 4px;
 }
 
@@ -4680,10 +4672,9 @@ Array [
 
 .c0 .RcOutlineTextFieldInput-root {
   -webkit-tap-highlight-color: transparent;
-  height: 40px;
   min-height: 40px;
   background: #FFFFFF;
-  padding: 16px;
+  padding: 8px 16px;
   border-radius: 4px;
 }
 
@@ -5164,10 +5155,9 @@ Array [
 
 .c0 .RcOutlineTextFieldInput-root {
   -webkit-tap-highlight-color: transparent;
-  height: 32px;
   min-height: 32px;
   background: #FFFFFF;
-  padding: 12px;
+  padding: 4px 12px;
   border-radius: 4px;
 }
 
@@ -5284,7 +5274,7 @@ Array [
       small
     </label>
     <div
-      className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcOutlineTextFieldInput-root MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd"
+      className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcOutlineTextFieldInput-root MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-multiline MuiInput-multiline MuiInputBase-adornedStart MuiInputBase-adornedEnd"
       onClick={[Function]}
     >
       <span
@@ -5301,11 +5291,11 @@ Array [
         </svg>
         
       </span>
-      <input
+      <textarea
         aria-describedby="id-OutlineTextFieldWithSize-1-helper-text"
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input RcOutlineTextFieldInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd"
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input RcOutlineTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd"
         disabled={false}
         id="id-OutlineTextFieldWithSize-1"
         onAnimationStart={[Function]}
@@ -5314,7 +5304,30 @@ Array [
         onFocus={[Function]}
         placeholder="Placeholder"
         required={false}
-        type="text"
+        rows={1}
+        style={
+          Object {
+            "height": -4,
+            "overflow": "hidden",
+          }
+        }
+      />
+      <textarea
+        aria-hidden={true}
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input RcOutlineTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd"
+        readOnly={true}
+        style={
+          Object {
+            "height": 0,
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "top": 0,
+            "transform": "translateZ(0)",
+            "visibility": "hidden",
+          }
+        }
+        tabIndex={-1}
       />
       <button
         aria-hidden={true}
@@ -5772,10 +5785,9 @@ Array [
 
 .c0 .RcOutlineTextFieldInput-root {
   -webkit-tap-highlight-color: transparent;
-  height: 40px;
   min-height: 40px;
   background: #FFFFFF;
-  padding: 16px;
+  padding: 8px 16px;
   border-radius: 4px;
 }
 
@@ -5884,7 +5896,7 @@ Array [
       medium
     </label>
     <div
-      className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcOutlineTextFieldInput-root MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd"
+      className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcOutlineTextFieldInput-root MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-multiline MuiInput-multiline MuiInputBase-adornedStart MuiInputBase-adornedEnd"
       onClick={[Function]}
     >
       <span
@@ -5901,11 +5913,11 @@ Array [
         </svg>
         
       </span>
-      <input
+      <textarea
         aria-describedby="id-OutlineTextFieldWithSize-1-helper-text"
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input RcOutlineTextFieldInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd"
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input RcOutlineTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd"
         disabled={false}
         id="id-OutlineTextFieldWithSize-1"
         onAnimationStart={[Function]}
@@ -5914,7 +5926,30 @@ Array [
         onFocus={[Function]}
         placeholder="Placeholder"
         required={false}
-        type="text"
+        rows={1}
+        style={
+          Object {
+            "height": -4,
+            "overflow": "hidden",
+          }
+        }
+      />
+      <textarea
+        aria-hidden={true}
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input RcOutlineTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd"
+        readOnly={true}
+        style={
+          Object {
+            "height": 0,
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "top": 0,
+            "transform": "translateZ(0)",
+            "visibility": "hidden",
+          }
+        }
+        tabIndex={-1}
       />
       <button
         aria-hidden={true}
@@ -6380,10 +6415,9 @@ Array [
 
 .c0 .RcOutlineTextFieldInput-root {
   -webkit-tap-highlight-color: transparent;
-  height: 48px;
   min-height: 48px;
   background: #FFFFFF;
-  padding: 16px;
+  padding: 12px 16px;
   border-radius: 4px;
 }
 
@@ -6484,7 +6518,7 @@ Array [
       large
     </label>
     <div
-      className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcOutlineTextFieldInput-root MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd"
+      className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcOutlineTextFieldInput-root MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-multiline MuiInput-multiline MuiInputBase-adornedStart MuiInputBase-adornedEnd"
       onClick={[Function]}
     >
       <span
@@ -6501,11 +6535,11 @@ Array [
         </svg>
         
       </span>
-      <input
+      <textarea
         aria-describedby="id-OutlineTextFieldWithSize-1-helper-text"
         aria-invalid={false}
         autoFocus={false}
-        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input RcOutlineTextFieldInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd"
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input RcOutlineTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd"
         disabled={false}
         id="id-OutlineTextFieldWithSize-1"
         onAnimationStart={[Function]}
@@ -6514,7 +6548,30 @@ Array [
         onFocus={[Function]}
         placeholder="Placeholder"
         required={false}
-        type="text"
+        rows={1}
+        style={
+          Object {
+            "height": -4,
+            "overflow": "hidden",
+          }
+        }
+      />
+      <textarea
+        aria-hidden={true}
+        className="MuiInputBase-input MuiInput-input RcTextFieldInput-input RcOutlineTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd"
+        readOnly={true}
+        style={
+          Object {
+            "height": 0,
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "top": 0,
+            "transform": "translateZ(0)",
+            "visibility": "hidden",
+          }
+        }
+        tabIndex={-1}
       />
       <button
         aria-hidden={true}

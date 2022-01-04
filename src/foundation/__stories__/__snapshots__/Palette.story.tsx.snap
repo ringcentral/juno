@@ -278,10 +278,9 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
 
 .c1 .RcOutlineTextFieldInput-root {
   -webkit-tap-highlight-color: transparent;
-  height: 40px;
   min-height: 40px;
   background: #FFFFFF;
-  padding: 16px;
+  padding: 8px 16px;
   border-radius: 4px;
 }
 
