@@ -8813,7 +8813,6 @@ __export(src_exports2, {
   RcStepper: () => RcStepper,
   RcSubMenu: () => RcSubMenu,
   RcSubMenuContext: () => RcSubMenuContext,
-  RcSubThemeProvider: () => RcSubThemeProvider,
   RcSuggestionList: () => RcSuggestionList,
   RcSuggestionListClasses: () => RcSuggestionListClasses,
   RcSwitch: () => RcSwitch,
@@ -47117,7 +47116,6 @@ __export(src_exports, {
   RcStepper: () => RcStepper,
   RcSubMenu: () => RcSubMenu,
   RcSubMenuContext: () => RcSubMenuContext,
-  RcSubThemeProvider: () => RcSubThemeProvider,
   RcSuggestionList: () => RcSuggestionList,
   RcSuggestionListClasses: () => RcSuggestionListClasses,
   RcSwitch: () => RcSwitch,
@@ -51744,8 +51742,12 @@ __publicField(RcThemeHandler, "instance");
 
 // src/foundation/theme/ThemeProvider.tsx
 var import_focus_visible = __toModule(require_focus_visible());
-import React542 from "react";
-var RcSubThemeProvider = ({
+import React542, {
+  createContext as createContext9,
+  useContext as useContext12
+} from "react";
+var NestedThemeContext = createContext9(false);
+var SubThemeProvider = ({
   theme: themeProp,
   children: children2
 }) => {
@@ -51758,7 +51760,7 @@ var RcSubThemeProvider = ({
     theme
   }, /* @__PURE__ */ React542.createElement(React542.Fragment, null, children2)));
 };
-var RcThemeProvider = (props) => {
+var RootThemeProvider = (props) => {
   const { prefixGlobalClass, ...rest } = props;
   const stylesProviderProps = useResultRef(() => {
     return prefixGlobalClass ? {
@@ -51770,8 +51772,17 @@ var RcThemeProvider = (props) => {
   return /* @__PURE__ */ React542.createElement(StylesProvider, {
     injectFirst: true,
     ...stylesProviderProps.current
-  }, /* @__PURE__ */ React542.createElement(RcSubThemeProvider, {
+  }, /* @__PURE__ */ React542.createElement(SubThemeProvider, {
     ...rest
+  }));
+};
+var RcThemeProvider = (props) => {
+  const isSubProvider = useContext12(NestedThemeContext);
+  const ThemeProvider3 = isSubProvider ? SubThemeProvider : RootThemeProvider;
+  return /* @__PURE__ */ React542.createElement(NestedThemeContext.Provider, {
+    value: true
+  }, /* @__PURE__ */ React542.createElement(ThemeProvider3, {
+    ...props
   }));
 };
 
@@ -52634,9 +52645,9 @@ var RcThemeSwitcherProvider = ({
 };
 
 // src/foundation/theme/ThemeSwitcherProvider/useThemeSwitcher.ts
-import { useContext as useContext12 } from "react";
+import { useContext as useContext13 } from "react";
 var useThemeSwitcher = () => {
-  const context = useContext12(RcThemeContext);
+  const context = useContext13(RcThemeContext);
   if (!context) {
     throw new Error("To use `useThemeSwitcher`, component must be within a RcThemeSwitcherProvider");
   }
@@ -56127,8 +56138,8 @@ import React587, {
 } from "react";
 
 // src/components/Menu/Menu/MenuContext.ts
-import { createContext as createContext9 } from "react";
-var RcMenuContext = createContext9({
+import { createContext as createContext10 } from "react";
+var RcMenuContext = createContext10({
   menuId: "",
   autoClose: false,
   focusedMenuItemId: null,
@@ -57262,12 +57273,12 @@ RcToggleButtonGroup.displayName = "RcToggleButtonGroup";
 import React594, { forwardRef as forwardRef530, useMemo as useMemo23, useState as useState27 } from "react";
 
 // src/components/Card/Card/CardContext.ts
-import { createContext as createContext10, useContext as useContext13 } from "react";
-var RcCardContext = createContext10({
+import { createContext as createContext11, useContext as useContext14 } from "react";
+var RcCardContext = createContext11({
   setFocusVisible: () => {
   }
 });
-var useRcCardContext = () => useContext13(RcCardContext);
+var useRcCardContext = () => useContext14(RcCardContext);
 
 // src/components/Card/CardHoverActions/utils/CardHoverActionsUtils.ts
 var RcCardHoverActionsClasses = RcClasses(["root", "visible"], "RcCardHoverActions");
@@ -57709,17 +57720,20 @@ var RcOutlineTextFieldInputClasses = RcClasses(["input", "root", "focused", "dis
 var RcOutlineTextFieldSpaces = {
   small: {
     outside: 3,
-    inside: 2
+    inside: 2,
+    y: 1
   },
   medium: {
     outside: 4,
     inside: 3,
-    insideLeft: 4
+    insideLeft: 4,
+    y: 2
   },
   large: {
     outside: 4,
     inside: 3,
-    insideLeft: 4
+    insideLeft: 4,
+    y: 3
   }
 };
 var RcOutlineTextFieldLabelMargins = {
@@ -57773,7 +57787,7 @@ var OutlineTextFieldStyle = ({
   color: colorProp
 }) => {
   const height2 = px2(RcOutlineTextFieldHeights[size]);
-  const { inside, outside, insideLeft } = RcOutlineTextFieldSpaces[size];
+  const { inside, outside, insideLeft, y: y2 } = RcOutlineTextFieldSpaces[size];
   const labelMargin = RcOutlineTextFieldLabelMargins[size];
   const typographyToken = RcOutlineTextFieldFontStyles[size];
   const currRadius = radius3(radius4);
@@ -57798,10 +57812,9 @@ var OutlineTextFieldStyle = ({
 
     .${RcOutlineTextFieldInputClasses.root} {
       -webkit-tap-highlight-color: transparent;
-      height: ${height2};
       min-height: ${height2};
       background: ${palette22("neutral", "b01")};
-      padding: ${spacing2(outside)};
+      padding: ${spacing2(y2, outside)};
       border-radius: ${currRadius};
 
       &:before {
@@ -58507,9 +58520,9 @@ RcDetachedWindow.displayName = "RcDetachedWindow";
 import React606 from "react";
 
 // src/components/Dialer/utils/DialerContext.ts
-import { createContext as createContext11, useContext as useContext14 } from "react";
-var RcDialerContext = createContext11({});
-var useRcDialerContext = () => useContext14(RcDialerContext);
+import { createContext as createContext12, useContext as useContext15 } from "react";
+var RcDialerContext = createContext12({});
+var useRcDialerContext = () => useContext15(RcDialerContext);
 
 // src/components/Dialer/DialDelete/DialDelete.tsx
 var holdTime = 1e3;
@@ -58866,9 +58879,9 @@ import React609, {
 } from "react";
 
 // src/components/Forms/Form/Form/FormContext.ts
-import { createContext as createContext12, useContext as useContext15 } from "react";
-var RcFormContext = createContext12(new Map());
-var useRcFormContext = () => useContext15(RcFormContext);
+import { createContext as createContext13, useContext as useContext16 } from "react";
+var RcFormContext = createContext13(new Map());
+var useRcFormContext = () => useContext16(RcFormContext);
 
 // src/components/Forms/TextField/TextField.tsx
 var combineOutlineClasses = combineClasses(RcTextFieldInputClasses, RcOutlineTextFieldInputClasses);
@@ -59412,13 +59425,13 @@ var Connectable = class {
 import React613, { useEffect as useEffect48, useRef as useRef66, useState as useState30 } from "react";
 
 // src/components/PortalHost/context/PortalIDContext.ts
-import { createContext as createContext13 } from "react";
-var PortalIDContext = createContext13(void 0);
+import { createContext as createContext14 } from "react";
+var PortalIDContext = createContext14(void 0);
 var PortalIDProvider = PortalIDContext.Provider;
 
 // src/components/PortalHost/context/PortalManagerContext.ts
-import { createContext as createContext14 } from "react";
-var PortalManagerContext = createContext14(void 0);
+import { createContext as createContext15 } from "react";
+var PortalManagerContext = createContext15(void 0);
 var PortalManagerProvider = PortalManagerContext.Provider;
 
 // src/components/PortalHost/PortalRenderer.tsx
@@ -59700,10 +59713,10 @@ var PortalManager = class extends Connectable {
 };
 
 // src/components/PortalHost/utils/usePortalManagerWithID.ts
-import { useContext as useContext16 } from "react";
+import { useContext as useContext17 } from "react";
 var usePortalManagerWithID = () => {
-  const manager = useContext16(PortalManagerContext);
-  const id3 = useContext16(PortalIDContext);
+  const manager = useContext17(PortalManagerContext);
+  const id3 = useContext17(PortalIDContext);
   if (manager && id3 !== void 0) {
     return { manager, id: id3 };
   }
@@ -59724,9 +59737,9 @@ var useUnmountPortalHandler = (handler) => {
 };
 
 // src/components/Dialog/utils/DialogContext.ts
-import { createContext as createContext15, useContext as useContext17 } from "react";
-var RcDialogContext = createContext15({});
-var useRcDialogContext = () => useContext17(RcDialogContext);
+import { createContext as createContext16, useContext as useContext18 } from "react";
+var RcDialogContext = createContext16({});
+var useRcDialogContext = () => useContext18(RcDialogContext);
 var useDialogDefaultProps = ({
   theme,
   ...props
@@ -60136,7 +60149,7 @@ RcDialogTitle.displayName = "RcDialogTitle";
 import React624 from "react";
 
 // node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js
-import React623, { useLayoutEffect as useLayoutEffect18, useEffect as useEffect51, useRef as useRef70, useState as useState32, useContext as useContext22 } from "react";
+import React623, { useLayoutEffect as useLayoutEffect18, useEffect as useEffect51, useRef as useRef70, useState as useState32, useContext as useContext23 } from "react";
 
 // node_modules/@babel/runtime/helpers/esm/objectSpread2.js
 function ownKeys(object3, enumerableOnly) {
@@ -60631,7 +60644,7 @@ var Provider_default = Provider;
 // node_modules/react-redux/es/components/connectAdvanced.js
 var import_hoist_non_react_statics5 = __toModule(require_hoist_non_react_statics_cjs());
 var import_react_is11 = __toModule(require_react_is2());
-import React622, { useContext as useContext18, useMemo as useMemo43, useRef as useRef67, useReducer } from "react";
+import React622, { useContext as useContext19, useMemo as useMemo43, useRef as useRef67, useReducer } from "react";
 var _excluded = ["getDisplayName", "methodName", "renderCountProp", "shouldHandleStateChanges", "storeKey", "withRef", "forwardRef", "context"];
 var _excluded2 = ["reactReduxForwardedRef"];
 var EMPTY_ARRAY = [];
@@ -60764,7 +60777,7 @@ function connectAdvanced(selectorFactory, _ref6) {
       var ContextToUse = useMemo43(function() {
         return propsContext && propsContext.Consumer && (0, import_react_is11.isContextConsumer)(/* @__PURE__ */ React622.createElement(propsContext.Consumer, null)) ? propsContext : Context2;
       }, [propsContext, Context2]);
-      var contextValue = useContext18(ContextToUse);
+      var contextValue = useContext19(ContextToUse);
       var didStoreComeFromProps = Boolean(props.store) && Boolean(props.store.getState) && Boolean(props.store.dispatch);
       var didStoreComeFromContext = Boolean(contextValue) && Boolean(contextValue.store);
       if (!didStoreComeFromProps && !didStoreComeFromContext) {
@@ -61150,13 +61163,13 @@ function createConnect(_temp) {
 var connect_default = /* @__PURE__ */ createConnect();
 
 // node_modules/react-redux/es/hooks/useStore.js
-import { useContext as useContext20 } from "react";
+import { useContext as useContext21 } from "react";
 
 // node_modules/react-redux/es/hooks/useReduxContext.js
-import { useContext as useContext19 } from "react";
+import { useContext as useContext20 } from "react";
 
 // node_modules/react-redux/es/hooks/useSelector.js
-import { useReducer as useReducer2, useRef as useRef68, useMemo as useMemo44, useContext as useContext21, useDebugValue as useDebugValue3 } from "react";
+import { useReducer as useReducer2, useRef as useRef68, useMemo as useMemo44, useContext as useContext22, useDebugValue as useDebugValue3 } from "react";
 
 // node_modules/react-redux/es/utils/reactBatchedUpdates.js
 import { unstable_batchedUpdates } from "react-dom";
@@ -67342,7 +67355,7 @@ var getListenerOptions = function(options) {
   return options.shouldPublishImmediately ? immediate : delayed;
 };
 function useRequiredContext(Context2) {
-  var result = useContext22(Context2);
+  var result = useContext23(Context2);
   !result ? true ? invariant2(false, "Could not find required context") : invariant2(false) : void 0;
   return result;
 }
@@ -68171,7 +68184,7 @@ function PublicDraggable(props) {
   }));
 }
 function Droppable(props) {
-  var appContext = useContext22(AppContext);
+  var appContext = useContext23(AppContext);
   !appContext ? true ? invariant2(false, "Could not find app context") : invariant2(false) : void 0;
   var contextId = appContext.contextId, isMovementAllowed2 = appContext.isMovementAllowed;
   var droppableRef = useRef70(null);
@@ -68549,7 +68562,7 @@ import React641 from "react";
 // src/components/Menu/MenuItem/MenuItem.tsx
 import React640, {
   forwardRef as forwardRef564,
-  useContext as useContext23,
+  useContext as useContext24,
   useImperativeHandle as useImperativeHandle13,
   useMemo as useMemo57
 } from "react";
@@ -69482,8 +69495,8 @@ RcListItemText.defaultProps = {
 RcListItemText.displayName = "RcListItemText";
 
 // src/components/Menu/MenuList/MenuListContext.ts
-import { createContext as createContext16 } from "react";
-var RcMenuListContext = createContext16({
+import { createContext as createContext17 } from "react";
+var RcMenuListContext = createContext17({
   menuListId: "",
   autoClose: false,
   focusedMenuItemId: null,
@@ -69492,8 +69505,8 @@ var RcMenuListContext = createContext16({
 });
 
 // src/components/Menu/SubMenu/SubMenuContext.ts
-import { createContext as createContext17 } from "react";
-var RcSubMenuContext = createContext17({
+import { createContext as createContext18 } from "react";
+var RcSubMenuContext = createContext18({
   autoClose: false,
   closeSubMenu: void 0
 });
@@ -69570,9 +69583,9 @@ var _RcMenuItem = forwardRef564((inProps, ref2) => {
   } = props;
   const isCheckedType = type3 === "checked";
   const menuItemId = useId2("menu-item", true);
-  const menuContext = useContext23(RcMenuContext);
-  const menuListContext = useContext23(RcMenuListContext);
-  const subMenuContext = useContext23(RcSubMenuContext);
+  const menuContext = useContext24(RcMenuContext);
+  const menuListContext = useContext24(RcMenuListContext);
+  const subMenuContext = useContext24(RcSubMenuContext);
   const setFocusedMenuItemId = useEventCallback2(() => {
     if (!menuItemId)
       return;
@@ -71069,9 +71082,9 @@ var StyledTextField = styled_components_default(_StyledTextField)`
 
 // src/components/Downshift/SuggestionList/SuggestionList.tsx
 import React650, {
-  createContext as createContext19,
+  createContext as createContext20,
   forwardRef as forwardRef569,
-  useContext as useContext25,
+  useContext as useContext26,
   useLayoutEffect as useLayoutEffect23,
   useMemo as useMemo63,
   useRef as useRef80
@@ -71105,7 +71118,7 @@ import {
 import { createElement as createElement120 } from "react";
 
 // node_modules/@virtuoso.dev/react-urx/dist/react-urx.esm.js
-import { createContext as createContext18, forwardRef as forwardRef568, useState as useState34, useImperativeHandle as useImperativeHandle14, createElement as createElement116, useLayoutEffect as useLayoutEffect21, useEffect as useEffect54, useCallback as useCallback29, useContext as useContext24 } from "react";
+import { createContext as createContext19, forwardRef as forwardRef568, useState as useState34, useImperativeHandle as useImperativeHandle14, createElement as createElement116, useLayoutEffect as useLayoutEffect21, useEffect as useEffect54, useCallback as useCallback29, useContext as useContext25 } from "react";
 
 // node_modules/@virtuoso.dev/urx/dist/urx.esm.js
 var PUBLISH = 0;
@@ -71576,7 +71589,7 @@ function systemToComponent(systemSpec, map2, Root) {
   var optionalPropNames = Object.keys(map2.optional || {});
   var methodNames = Object.keys(map2.methods || {});
   var eventNames = Object.keys(map2.events || {});
-  var Context2 = createContext18({});
+  var Context2 = createContext19({});
   function applyPropsToSystem(system2, props) {
     if (system2["propsReady"]) {
       publish(system2["propsReady"], false);
@@ -71640,10 +71653,10 @@ function systemToComponent(systemSpec, map2, Root) {
     }, Root ? createElement116(Root, omit4([].concat(requiredPropNames, optionalPropNames, eventNames), props), children2) : children2);
   });
   var usePublisher3 = function usePublisher4(key) {
-    return useCallback29(curry2to1(publish, useContext24(Context2)[key]), [key]);
+    return useCallback29(curry2to1(publish, useContext25(Context2)[key]), [key]);
   };
   var useEmitterValue3 = function useEmitterValue4(key) {
-    var context = useContext24(Context2);
+    var context = useContext25(Context2);
     var source = context[key];
     var _useState3 = useState34(curry1to0(getValue3, source)), value = _useState3[0], setValue = _useState3[1];
     useIsomorphicLayoutEffect3(function() {
@@ -71656,7 +71669,7 @@ function systemToComponent(systemSpec, map2, Root) {
     return value;
   };
   var useEmitter3 = function useEmitter4(key, callback) {
-    var context = useContext24(Context2);
+    var context = useContext25(Context2);
     var source = context[key];
     useIsomorphicLayoutEffect3(function() {
       return subscribe(source, callback);
@@ -74006,9 +74019,9 @@ var SuggestionListStyle = () => {
 };
 
 // src/components/Downshift/SuggestionList/SuggestionList.tsx
-var SuggestionListContext = createContext19(null);
+var SuggestionListContext = createContext20(null);
 var List4 = forwardRef569((props, ref2) => {
-  const listRef = useContext25(SuggestionListContext);
+  const listRef = useContext26(SuggestionListContext);
   const forkRef = useForkRef2(ref2, listRef);
   return /* @__PURE__ */ React650.createElement("div", {
     ref: forkRef,
@@ -75117,8 +75130,8 @@ import "react";
 
 // node_modules/@material-ui/pickers/esm/useUtils-cfb96ac9.js
 var import_prop_types117 = __toModule(require_prop_types());
-import { createContext as createContext20, useMemo as useMemo67, createElement as createElement121, useContext as useContext26 } from "react";
-var MuiPickersContext = createContext20(null);
+import { createContext as createContext21, useMemo as useMemo67, createElement as createElement121, useContext as useContext27 } from "react";
+var MuiPickersContext = createContext21(null);
 var MuiPickersUtilsProvider = function MuiPickersUtilsProvider2(_ref6) {
   var Utils = _ref6.utils, children2 = _ref6.children, locale = _ref6.locale, libInstance = _ref6.libInstance;
   var utils = useMemo67(function() {
@@ -75143,14 +75156,14 @@ var checkUtils = function checkUtils2(utils) {
   }
 };
 function useUtils() {
-  var utils = useContext26(MuiPickersContext);
+  var utils = useContext27(MuiPickersContext);
   checkUtils(utils);
   return utils;
 }
 
 // node_modules/@material-ui/pickers/esm/Wrapper-241966d7.js
 var import_prop_types118 = __toModule(require_prop_types());
-import { createElement as createElement122, useEffect as useEffect58, useLayoutEffect as useLayoutEffect24, useRef as useRef82, Fragment as Fragment10, createContext as createContext21 } from "react";
+import { createElement as createElement122, useEffect as useEffect58, useLayoutEffect as useLayoutEffect24, useRef as useRef82, Fragment as Fragment10, createContext as createContext22 } from "react";
 var DIALOG_WIDTH = 310;
 var DIALOG_WIDTH_WIDER = 325;
 var useStyles = makeStyles_default(function(theme) {
@@ -75308,7 +75321,7 @@ true ? InlineWrapper.propTypes = {
   onClose: import_prop_types118.func,
   PopoverProps: import_prop_types118.object
 } : void 0;
-var VariantContext = createContext21(null);
+var VariantContext = createContext22(null);
 
 // node_modules/rifm/dist/rifm.esm.js
 import { Component as Component5 } from "react";
@@ -76049,9 +76062,9 @@ var invalidateDateInRange = (day, {
 };
 
 // src/components/Forms/Picker/DatePicker/utils/DatePickerAriaLabelUtils.tsx
-import React664, { createContext as createContext22, useContext as useContext27 } from "react";
-var ScreenReaderContext = createContext22({});
-var useScreenReaderContext = () => useContext27(ScreenReaderContext);
+import React664, { createContext as createContext23, useContext as useContext28 } from "react";
+var ScreenReaderContext = createContext23({});
+var useScreenReaderContext = () => useContext28(ScreenReaderContext);
 var ScreenReaderProvider = ({
   screenReaderProps,
   children: children2
@@ -79760,7 +79773,7 @@ var RcLoading = (inProps) => {
 import React692, {
   forwardRef as forwardRef604,
   memo as memo415,
-  useContext as useContext28,
+  useContext as useContext29,
   useMemo as useMemo82,
   useState as useState42
 } from "react";
@@ -79783,7 +79796,7 @@ var _RcMenuList = forwardRef604((inProps, ref2) => {
   const [focusedMenuItemId, setFocusedMenuItemId] = useState42(null);
   const id3 = useId2("menu-list", true);
   const classes = useMemo82(() => combineClasses(RcMenuListClasses, classesProp), [classesProp]);
-  const subMenuContext = useContext28(RcSubMenuContext);
+  const subMenuContext = useContext29(RcSubMenuContext);
   const ctxValue = useMemo82(() => ({
     menuListId: id3,
     autoClose: !!autoClose || subMenuContext.autoClose,
@@ -79811,7 +79824,7 @@ RcMenuList.displayName = "RcMenuList";
 import React693, {
   forwardRef as forwardRef605,
   memo as memo416,
-  useContext as useContext29,
+  useContext as useContext30,
   useLayoutEffect as useLayoutEffect28,
   useMemo as useMemo83,
   useRef as useRef93,
@@ -79859,9 +79872,9 @@ var _RcSubMenu = forwardRef605((inProps, ref2) => {
   const menuItemIdRef = useRef93(null);
   const [anchorEl, setAnchorEl] = useState43(null);
   const [open, setOpen] = useState43(false);
-  const menuListContext = useContext29(RcMenuListContext);
-  const menuContext = useContext29(RcMenuContext);
-  const subMenuContext = useContext29(RcSubMenuContext);
+  const menuListContext = useContext30(RcMenuListContext);
+  const menuContext = useContext30(RcMenuContext);
+  const subMenuContext = useContext30(RcSubMenuContext);
   const { externalWindow } = useRcPortalWindowContext();
   const handleClose = useEventCallback2((e2, reason) => {
     onClose?.(e2, reason);
@@ -82878,14 +82891,14 @@ RcTabs.displayName = "RcTabs";
 // node_modules/@material-ui/lab/esm/TabContext/TabContext.js
 var PropTypes121 = __toModule(require_prop_types());
 import {
-  createContext as createContext23,
+  createContext as createContext24,
   createElement as createElement133,
-  useContext as useContext30,
+  useContext as useContext31,
   useEffect as useEffect63,
   useMemo as useMemo103,
   useState as useState48
 } from "react";
-var Context = createContext23(null);
+var Context = createContext24(null);
 if (true) {
   Context.displayName = "TabContext";
 }
@@ -82914,7 +82927,7 @@ true ? TabContext.propTypes = {
   value: PropTypes121.string.isRequired
 } : void 0;
 function useTabContext() {
-  return useContext30(Context);
+  return useContext31(Context);
 }
 function getPanelId(context, value) {
   var idPrefix = context.idPrefix;
@@ -83418,7 +83431,6 @@ export {
   RcStepper,
   RcSubMenu,
   RcSubMenuContext,
-  RcSubThemeProvider,
   RcSuggestionList,
   RcSuggestionListClasses,
   RcSwitch,
