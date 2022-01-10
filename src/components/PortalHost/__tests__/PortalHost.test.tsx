@@ -105,7 +105,7 @@ describe('Close portal', () => {
       'onClose prop',
       () => {
         fireEvent(
-          screen.getByRole('presentation'),
+          screen.getByRole('dialog'),
           new KeyboardEvent('keydown', {
             bubbles: true,
             cancelable: true,

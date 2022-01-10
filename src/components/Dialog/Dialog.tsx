@@ -82,7 +82,12 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
 
     const onExited = useUnmountPortalHandler(TransitionPropsProp?.onExited);
 
-    const TransitionProps = { ...TransitionPropsProp, onExited };
+    const TransitionProps = {
+      // TODO: remove after upgrade to mui v5
+      role: 'presentation',
+      ...TransitionPropsProp,
+      onExited,
+    };
 
     return (
       <MuiDialog
