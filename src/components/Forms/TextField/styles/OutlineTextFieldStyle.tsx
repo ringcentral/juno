@@ -24,6 +24,7 @@ export const OutlineTextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = ({
   radius,
   size,
   color: colorProp,
+  multiline,
 }) => {
   const height = px(RcOutlineTextFieldHeights[size!]);
   const { inside, outside, insideLeft, y } = RcOutlineTextFieldSpaces[size!];
@@ -64,7 +65,7 @@ export const OutlineTextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = ({
       -webkit-tap-highlight-color: transparent;
       min-height: ${height};
       background: ${palette2('neutral', 'b01')};
-      padding: ${spacing(y, outside)};
+      padding: ${spacing(multiline ? y : 0, outside)};
       border-radius: ${currRadius};
 
       &:before {

@@ -322,6 +322,35 @@ const OutlineTextFieldSizesComponent: FunctionComponent<OutlineTextFieldProps> =
                 ),
               }}
             />
+            <RcTextField
+              {...args}
+              multiline
+              variant="outline"
+              label={`${size}-multiline`}
+              value={value}
+              size={size}
+              onChange={handleChange}
+              ref={ref}
+              inputRef={inputRef}
+              fullWidth
+              InputProps={{
+                startAdornment: (
+                  <RcIcon
+                    color="neutral.f04"
+                    size={RcOutlineTextFieldIconSizes[size!]}
+                    symbol={BoxSvg}
+                  />
+                ),
+                endAdornment: (
+                  <RcIconButton
+                    color="neutral.f04"
+                    variant="plain"
+                    size={RcOutlineTextFieldIconSizes[size!]}
+                    symbol={AddSvg}
+                  />
+                ),
+              }}
+            />
             <br />
             <br />
           </React.Fragment>
@@ -331,7 +360,7 @@ const OutlineTextFieldSizesComponent: FunctionComponent<OutlineTextFieldProps> =
   };
 
 export const OutlineTextFieldSizes: Story<OutlineTextFieldProps> = (args) => (
-  <OutlineTextFieldSizesComponent {...args} multiline />
+  <OutlineTextFieldSizesComponent {...args} />
 );
 
 OutlineTextFieldSizes.storyName = 'OutlineTextField Sizes';
