@@ -280,7 +280,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   -webkit-tap-highlight-color: transparent;
   min-height: 40px;
   background: #FFFFFF;
-  padding: 8px 16px;
+  padding: 0px 16px;
   border-radius: 4px;
 }
 

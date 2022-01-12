@@ -12345,7 +12345,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
   -webkit-tap-highlight-color: transparent;
   min-height: 40px;
   background: #FFFFFF;
-  padding: 8px 16px;
+  padding: 0px 16px;
   border-radius: 4px;
 }
 
