@@ -78985,7 +78985,9 @@ var _RcSelect = forwardRef607((inProps, ref2) => {
   const {
     children: children2,
     onChange,
+    defaultValue,
     SelectInputProps: SelectInputPropsProp,
+    MenuProps,
     textVariant,
     placeholder: placeholder2,
     renderValue,
@@ -79009,7 +79011,8 @@ var _RcSelect = forwardRef607((inProps, ref2) => {
     error: error4,
     ...rest
   } = props;
-  const nonValue = value === void 0 || value === null || !displayEmpty && value === "" || value instanceof Array && value.length === 0;
+  const hasDefaultValue = hasValue2(defaultValue);
+  const nonValue = !hasValue2(value) && !hasDefaultValue || !displayEmpty && value === "";
   const applyClasses = useMemo77(() => {
     const variantClasses = RcSelectInputClassesMap[variant];
     return combineClasses(RcSelectInputClasses, variantClasses);
@@ -79035,6 +79038,7 @@ var _RcSelect = forwardRef607((inProps, ref2) => {
         transformOrigin: { horizontal: 0, vertical: 8 }
       };
     }
+    additionProps.MenuProps = combineProps(additionProps.MenuProps, MenuProps);
     return {
       renderValue,
       classes: combineClasses(RcSelectClasses, rest?.classes),
@@ -79048,7 +79052,14 @@ var _RcSelect = forwardRef607((inProps, ref2) => {
       },
       ...rest
     };
-  }, [rest, virtualize, renderValue, displayEmpty, SelectInputPropsProp]);
+  }, [
+    rest,
+    virtualize,
+    renderValue,
+    displayEmpty,
+    SelectInputPropsProp,
+    MenuProps
+  ]);
   const _InputProps = useMemo77(() => {
     let result = InputProps;
     if (placeholder2 && nonValue) {
@@ -79060,8 +79071,9 @@ var _RcSelect = forwardRef607((inProps, ref2) => {
     return combineProps({
       classes: applyClasses
     }, result);
-  }, [InputProps, variant, placeholder2, nonValue, applyClasses]);
+  }, [InputProps, placeholder2, nonValue, applyClasses, variant]);
   const valueIsNumber = typeof value === "number";
+  const currValue = valueIsNumber ? value : value || "";
   return /* @__PURE__ */ React692.createElement(RcSelectTextField, {
     ref: ref2,
     id: id3,
@@ -79073,7 +79085,8 @@ var _RcSelect = forwardRef607((inProps, ref2) => {
     gutterBottom,
     helperText,
     label: label3,
-    value: valueIsNumber ? value : value || "",
+    value: hasDefaultValue ? void 0 : currValue,
+    defaultValue,
     validate,
     required: required2,
     fullWidth,
