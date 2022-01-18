@@ -6,6 +6,7 @@ import { SelectProps as MuiSelectProps } from '@material-ui/core/Select';
 import {
   combineClasses,
   combineProps,
+  hasValue,
   RcBaseProps,
   RcBaseSize,
   styled,
@@ -47,9 +48,6 @@ type RcSelectProps = {
   | 'rowsMin'
   | 'maxRows'
   | 'minRows'
-  | 'startAdornment'
-  | 'disableUnderline'
-  | 'autoWidth'
   | 'renderSuffix'
   | 'multiline'
   | 'margin'
@@ -78,6 +76,7 @@ const _RcSelect = forwardRef<any, RcSelectProps>(
     const {
       children,
       onChange,
+      defaultValue,
       SelectInputProps: SelectInputPropsProp,
       MenuProps,
       textVariant,
@@ -104,12 +103,11 @@ const _RcSelect = forwardRef<any, RcSelectProps>(
       error,
       ...rest
     } = props;
+    const hasDefaultValue = hasValue(defaultValue);
     const nonValue =
-      value === undefined ||
-      value === null ||
+      (!hasValue(value) && !hasDefaultValue) ||
       // * if that can't displayEmpty, and that value === '', same as no value
-      (!displayEmpty && value === '') ||
-      (value instanceof Array && value.length === 0);
+      (!displayEmpty && value === '');
 
     const applyClasses = useMemo(() => {
       const variantClasses = RcSelectInputClassesMap[variant!];
@@ -189,9 +187,10 @@ const _RcSelect = forwardRef<any, RcSelectProps>(
         },
         result,
       );
-    }, [InputProps, variant, placeholder, nonValue, applyClasses]);
-
+    }, [InputProps, placeholder, nonValue, applyClasses, variant]);
     const valueIsNumber = typeof value === 'number';
+
+    const currValue = valueIsNumber ? value : value || '';
 
     return (
       <RcSelectTextField
@@ -206,7 +205,9 @@ const _RcSelect = forwardRef<any, RcSelectProps>(
         gutterBottom={gutterBottom}
         helperText={helperText}
         label={label}
-        value={valueIsNumber ? value : value || ''}
+        // when that has defaultValue, and that value always to be undefined
+        value={hasDefaultValue ? undefined : currValue}
+        defaultValue={defaultValue}
         validate={validate}
         required={required}
         fullWidth={fullWidth}
