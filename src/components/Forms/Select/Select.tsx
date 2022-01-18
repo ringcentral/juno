@@ -79,6 +79,7 @@ const _RcSelect = forwardRef<any, RcSelectProps>(
       children,
       onChange,
       SelectInputProps: SelectInputPropsProp,
+      MenuProps,
       textVariant,
       placeholder,
       renderValue,
@@ -121,6 +122,7 @@ const _RcSelect = forwardRef<any, RcSelectProps>(
         MenuComponent: undefined,
         MenuProps: undefined,
       };
+
       if (rest?.multiple) {
         additionProps.MenuComponent = RcMenu;
         additionProps.MenuProps = {
@@ -138,6 +140,11 @@ const _RcSelect = forwardRef<any, RcSelectProps>(
         };
       }
 
+      additionProps.MenuProps = combineProps(
+        additionProps.MenuProps,
+        MenuProps,
+      );
+
       return {
         renderValue,
         classes: combineClasses(RcSelectClasses, rest?.classes),
@@ -151,7 +158,14 @@ const _RcSelect = forwardRef<any, RcSelectProps>(
         },
         ...rest,
       };
-    }, [rest, virtualize, renderValue, displayEmpty, SelectInputPropsProp]);
+    }, [
+      rest,
+      virtualize,
+      renderValue,
+      displayEmpty,
+      SelectInputPropsProp,
+      MenuProps,
+    ]);
 
     const _InputProps = useMemo<RcSelectProps['InputProps']>(() => {
       let result = InputProps;
