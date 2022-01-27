@@ -1,4 +1,27 @@
 
+### [1.12.5](https://github.com/ringcentral/juno/compare/1.12.4...1.12.5) (2022-01-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **ThemeProvider:** [ThemeProvider] remove `RcSubThemeProvider`
+
+### Features
+
+* **a11y:** Convert role none presentation to presentation ([7413f46](https://github.com/ringcentral/juno/commit/7413f4623126579bfc44472b45b203c59bebae70))
+* **Icon:** update icon ([7b0be48](https://github.com/ringcentral/juno/commit/7b0be4835164b77a6040cf8c343047ea1e87314f))
+* **ThemeProvider:** remove `RcSubThemeProvider` and make `RcThemeProvider` support nesting ([58a8a53](https://github.com/ringcentral/juno/commit/58a8a53a6aeab29e3d7ac94e4e9f530c12f70025))
+
+
+### Bug Fixes
+
+* **PlainSelect:** re-export miss PlainSelect ([2f2974d](https://github.com/ringcentral/juno/commit/2f2974d2c72bfcc1d6a50dbbd7ea19e4cd389a0e))
+* **Select:** fix defaultValue not work issue, and open some miss props ([c0e9181](https://github.com/ringcentral/juno/commit/c0e9181f4970c0de549f2413d8dcfba8c35925c7))
+* **Select:** fix Select MenuProps not working issue ([94e7fc3](https://github.com/ringcentral/juno/commit/94e7fc38b0823f838c36995ec74aea4892d81440))
+* **Textarea:** remove not support `variant` prop ([a9531b8](https://github.com/ringcentral/juno/commit/a9531b8f1bf28dbbcc9409a92860d90256101786))
+* **TextField:** fix outline variant multiline height not auto issue ([f2028c7](https://github.com/ringcentral/juno/commit/f2028c7bc27efd7d01013c76104679977a4440b4))
+* **TextField:** outline mode remove non multiline padding issue ([3d76890](https://github.com/ringcentral/juno/commit/3d768908b68b3ed31b86da3f2ac7f8b83ba35a09))
+
 ### [1.12.4](https://github.com/ringcentral/juno/compare/1.12.3...1.12.4) (2021-12-27)
 
 
