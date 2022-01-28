@@ -13,7 +13,6 @@ import {
   combineClasses,
   combineProps,
   CustomStyledComponentResult,
-  logInDev,
   RcBaseProps,
   RcBaseSize,
   RcClassesProps,
@@ -21,7 +20,6 @@ import {
   useDepsChange,
   useEventCallback,
   useThemeProps,
-  withDeprecatedCheck,
 } from '../../../../foundation';
 import TimeBorderIcon from '../../../../icon/TimeBorder';
 import { RcBox } from '../../../Box';
@@ -89,7 +87,7 @@ type RcTimePickerProps<T = false> = {
   /** Is 12 hours system */
   isTwelveHourSystem?: boolean;
   /** Date or timestamp(only hour and minute) */
-  value?: (T extends true ? Date : number) | null;
+  value: (T extends true ? Date : number) | null;
   /** When all using date, this props will be remove, */
   dateMode?: T;
   /** when user change time */
@@ -112,9 +110,8 @@ type RcTimePickerProps<T = false> = {
     | 'onUpdateValue'
     | 'children'
   >;
-  // TODO: this will be remove, use comment props with value
-  /** @deprecated this props will be removed, using value to replace that */
-  times?: RcTimePickerProps<T>['value'];
+  /** picker will show default value when textfield is empty */
+  defaultPickerValue?: T extends true ? Date : number;
 } & RcBaseProps<PickerTextFieldProps, 'onClick' | 'value' | 'children'> &
   RcClassesProps<'popover' | 'popoverPaper'>;
 
@@ -130,7 +127,6 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
     const {
       isTwelveHourSystem,
       value,
-      times,
       onChange,
       disabled,
       dateMode,
@@ -145,18 +141,9 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
       PopoverProps: PopoverPropsProp,
       InputProps: InputPropsProp,
       classes,
+      defaultPickerValue,
       ...rest
     } = props;
-
-    // TODO: when props remove clear that code, not use forwardRef for Jupiter test issue
-    if (times) {
-      logInDev({
-        component: 'RcTimePicker',
-        target: 'times',
-        time: '2021-3',
-        comment: `this props will be removed, using value to replace that `,
-      });
-    }
 
     const actionRef = useRef<PickerTextFieldRef>(null);
     const hourRef = useRef<NumberPickerRef>(null);
@@ -168,10 +155,14 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
       'none' | 'hour' | 'minute'
     >('none');
 
-    const nowTime = (value === undefined ? times : value) as
-      | number
-      | Date
-      | null;
+    const { nowTime, isShowTextfieldValue } = (() => {
+      if (value !== null) return { nowTime: value, isShowTextfieldValue: true };
+
+      if (defaultPickerValue)
+        return { nowTime: defaultPickerValue, isShowTextfieldValue: false };
+
+      return { nowTime: null, isShowTextfieldValue: false };
+    })();
 
     const isHaveValue = nowTime !== null;
 
@@ -391,7 +382,7 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
 
     // * update input value
     useDepsChange(() => {
-      if (!isHaveValue) {
+      if (!isShowTextfieldValue) {
         textFiledValueRef.current = '';
         return;
       }
@@ -415,7 +406,7 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
       currentPeriod,
     ]);
 
-    // * when no init value, open menu use min as value
+    // * when no value, open menu use min as value
     const originalHourValue = isHaveValue
       ? currentHourMinute.hour
       : // * use original range to calculate period value
@@ -448,7 +439,7 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
       ? originalHourValue % HALF_DAY_HOURS
       : originalHourValue;
 
-    // * when no init value, open menu use min as value
+    // * when no value, open menu use min as value
     const minuteValue = isHaveValue
       ? currentHourMinute.minute
       : boundary.minute.min;
@@ -545,19 +536,7 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
 );
 
 /** @release */
-const RcTimePicker = styled(
-  withDeprecatedCheck(
-    _RcTimePicker,
-    [
-      {
-        prop: 'times',
-        time: '2021-4',
-        comment: `@deprecated this props will be removed, using value to replace that`,
-      },
-    ],
-    'RcTimePicker',
-  ),
-)``;
+const RcTimePicker = styled(_RcTimePicker)``;
 
 RcTimePicker.defaultProps = {
   clearBtn: true,

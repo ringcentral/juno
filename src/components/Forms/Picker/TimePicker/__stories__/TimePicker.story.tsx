@@ -5,7 +5,6 @@ import { Meta, Story } from '@storybook/react';
 import { spacing, styled } from '../../../../../foundation';
 import {
   notControlInDocTable,
-  notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '../../../../../storybook';
@@ -33,7 +32,6 @@ export default {
       'clearButtonProps',
     ]),
     ...notControlInDocTable<keyof TimePickerProps>([]),
-    ...notShowInDocTable<keyof TimePickerProps>(['times']),
   },
 } as Meta;
 
@@ -45,9 +43,7 @@ export const TimePicker: Story<TimePickerProps> = ({
 }) => {
   switchToControlKnobs();
 
-  const [value, setValue] = useState<number | Date | undefined | null>(
-    valueProp,
-  );
+  const [value, setValue] = useState<number | Date | null>(valueProp);
 
   const handleChange = (time: number) => {
     console.log('time', time);
@@ -107,13 +103,16 @@ const accessibilityProps = {
   } as RcTimePickerProps['PeriodToggleProps'],
 };
 
+const defaultPickerValue = new Date('2022-1-1 13:15');
+
 export const TimePickerExamples: Story<TimePickerProps> = () => {
   // 58500000
   // new Date('2021-01-20T01:30:00.000Z'),
-  const [times1, setTimes1] = useState<number>(58500000);
-  const [times2, setTimes2] = useState<Date>();
-  const [times3, setTimes3] = useState<number>();
-  const [times4, setTimes4] = useState<Date>();
+  const [times1, setTimes1] = useState<number | null>(58500000);
+  const [times2, setTimes2] = useState<Date | null>(null);
+  const [times3, setTimes3] = useState<number | null>(null);
+  const [times4, setTimes4] = useState<Date | null>(null);
+  const [times5, setTimes5] = useState<Date | null>(null);
 
   const handleChange1 = (times: number) => {
     console.log('time', times);
@@ -133,6 +132,11 @@ export const TimePickerExamples: Story<TimePickerProps> = () => {
   const handleChange4 = (DateTime: Date) => {
     console.log('DateTime', DateTime);
     setTimes4(DateTime);
+  };
+
+  const handleChange5 = (DateTime: Date) => {
+    console.log('DateTime', DateTime);
+    setTimes5(DateTime);
   };
 
   return (
@@ -312,6 +316,30 @@ export const TimePickerExamples: Story<TimePickerProps> = () => {
           />
         </div>
       </div>
+      <br />
+      <br />
+      <RcTypography color="interactive.f01">
+        With Default Picker Value
+      </RcTypography>
+      <br />
+      <RcTimePicker
+        dateMode
+        value={times5}
+        onChange={handleChange5}
+        defaultPickerValue={defaultPickerValue}
+        inputProps={{
+          announcementText: 'press enter or space to change the time',
+        }}
+        gutterBottom
+        placeholder="what's time?"
+        PopoverProps={{
+          PaperProps: {
+            'aria-label':
+              'press Enter to save the time or use Tab to make further changes or Escape to cancel',
+          },
+        }}
+        {...accessibilityProps}
+      />
     </>
   );
 };
@@ -453,3 +481,41 @@ export const TimePickerChangeRange: Story<TimePickerProps> = () => {
 };
 
 TimePickerExamples.storyName = 'TimePicker Examples';
+
+export const TimePickerWithDefaultPickerValue: Story<TimePickerProps> = ({
+  value: valueProp,
+  ...args
+}) => {
+  switchToControlKnobs();
+
+  const [value, setValue] = useState<number | Date | null>(valueProp);
+
+  const handleChange = (time: number) => {
+    console.log('time', time);
+    setValue(time);
+  };
+
+  return (
+    <RcTimePicker
+      value={value}
+      onChange={handleChange}
+      dateMode
+      {...args}
+      {...accessibilityProps}
+    />
+  );
+};
+
+TimePickerWithDefaultPickerValue.storyName =
+  'TimePicker with default picker value';
+
+TimePickerWithDefaultPickerValue.args = {
+  label: 'Time',
+  value: null,
+  defaultPickerValue: new Date('2021-12-12 14:15:11'),
+  placeholder: "what's time?",
+};
+
+TimePickerWithDefaultPickerValue.argTypes = {
+  ...notControlInDocTable<keyof TimePickerProps>([]),
+};
