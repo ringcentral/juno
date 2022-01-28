@@ -295,4 +295,4 @@ export const DatePickerWithTimePick: Story<DatePickerProps> = ({
   );
 };
 
-DatePicker.storyName = 'DatePicker with TimePick';
+DatePickerWithTimePick.storyName = 'DatePicker with TimePick';
