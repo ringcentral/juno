@@ -1,11 +1,9 @@
 import React, { forwardRef, memo, ReactNode, RefObject } from 'react';
-
-import clsx from 'clsx';
-
 import { MaterialUiPickersDate } from '@material-ui/pickers/typings/date';
-
 import { RcDatePickerSize } from './DatePicker';
-import { StyledDay } from './styles';
+import { DayStyle } from './styles';
+import { PickerBaseIconButton } from '../styles';
+import { styled } from '../../../../foundation';
 
 type DayProps = {
   /** Day text */
@@ -41,20 +39,13 @@ const _Day = forwardRef(
     } = props;
 
     return (
-      <StyledDay
+      <PickerBaseIconButton
         aria-pressed={focused}
         ref={ref}
         size={size}
         selected={selected}
         data-picker-focused={focused ? '' : undefined}
-        // TODO: remove those className
         hidden={hidden}
-        className={clsx({
-          'Day-hidden': hidden,
-          'Day-current': current,
-          'Day-selected': selected,
-          'Day-disabled': disabled,
-        })}
         data-test-automation-class={
           hidden ? 'date-picker-hidden-day' : 'date-picker-day'
         }
@@ -68,7 +59,7 @@ const _Day = forwardRef(
             children
           }
         </>
-      </StyledDay>
+      </PickerBaseIconButton>
     );
   },
 );
@@ -82,7 +73,11 @@ _Day.defaultProps = {
   selected: false,
 };
 
-const Day = memo(_Day);
+const Day = memo(
+  styled(_Day)`
+    ${DayStyle}
+  `,
+);
 
 export { Day };
 export type { DayProps };

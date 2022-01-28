@@ -1,14 +1,31 @@
-import { styled, typography } from '../../../../../foundation';
+import {
+  css,
+  palette2,
+  RcThemedStyled,
+  typography,
+} from '../../../../../foundation';
 import { RcIconButtonClasses } from '../../../../Buttons/IconButton/utils';
-import { PickerBaseIconButton } from '../../styles';
+import { DayProps } from '../Day';
 import { RcDatePickerIconWidths } from '../utils';
 
-export const StyledDay = styled(PickerBaseIconButton)`
-  &.${RcIconButtonClasses.root} {
-    width: ${({ size }) => RcDatePickerIconWidths[size!]};
-    height: ${({ size }) => RcDatePickerIconWidths[size!]};
-    margin: 0 2px;
-    visibility: ${({ hidden }) => hidden && 'hidden'};
-    ${typography('caption1')};
-  }
+const CurrentDayStyle = css`
+  border: 1px solid ${palette2('neutral', 'b04')};
 `;
+
+export const DayStyle: RcThemedStyled<DayProps, any> = ({
+  current,
+  size,
+  hidden,
+  selected,
+}) => {
+  return css`
+    &.${RcIconButtonClasses.root} {
+      width: ${RcDatePickerIconWidths[size!]};
+      height: ${RcDatePickerIconWidths[size!]};
+      margin: 0 2px;
+      visibility: ${hidden && 'hidden'};
+      ${typography('caption1')};
+      ${current && !selected && CurrentDayStyle};
+    }
+  `;
+};
