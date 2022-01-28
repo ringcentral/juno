@@ -3,7 +3,6 @@
 exports[`Storyshots 🚀 Cleanup Components/AppBar AppBar 1`] = `
 .c0 {
   height: 56px;
-  min-width: 480px;
   background-color: #FFFFFF;
   background: linear-gradient( to right, #066FAC, #509AC4 );
   border-bottom: 1px solid rgba(0,0,0,0.12);
