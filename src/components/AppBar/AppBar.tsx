@@ -5,7 +5,6 @@ import MuiAppBar, {
 import { palette2, RcBaseProps, styled } from '../../foundation';
 
 const TOP_BAR_HEIGHT = '56px';
-const TOP_BAR_MIN_WIDTH = '480px';
 
 type RcAppBarProps = RcBaseProps<
   MuiAppBarProps,
@@ -14,7 +13,6 @@ type RcAppBarProps = RcBaseProps<
 
 const RcAppBar = styled(MuiAppBar)<RcAppBarProps>`
   height: ${TOP_BAR_HEIGHT};
-  min-width: ${TOP_BAR_MIN_WIDTH};
   background-color: ${palette2('neutral', 'b01')};
   background: linear-gradient(
     to right,
