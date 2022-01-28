@@ -78,8 +78,8 @@ const getTimestampFromDate = (date: Date) => {
 /**
  * hour and minute number
  */
-const getHourAndMinute = (times?: number) => {
-  if (!times) {
+const getHourAndMinute = (times: number | null) => {
+  if (times === null) {
     return {
       hour: 0,
       minute: 0,
@@ -94,22 +94,15 @@ const getHourAndMinute = (times?: number) => {
   };
 };
 
-/**
- * timestamp to date
- */
-const timestampToDate = (times?: number) => {
-  const { hour, minute } = getHourAndMinute(times);
-
-  const date = new Date();
-  date.setHours(hour, minute, 0, 0);
-
-  return date;
-};
-
+function getTimestamp(nowTime: number | Date): number;
+function getTimestamp(nowTime: null): null;
+function getTimestamp(nowTime: number | Date | null): number | null;
 /**
  * get timestamp from date or timestamp
+ *
+ * if nowTime is number, it must be hour and minute timestamp
  */
-function getTimestamp(nowTime: number | Date) {
+function getTimestamp(nowTime: number | Date | null): number | null {
   return nowTime instanceof Date ? getTimestampFromDate(nowTime) : nowTime;
 }
 
@@ -130,6 +123,27 @@ function getPeriod(currHour: number) {
   return currHour >= HALF_DAY_HOURS ? TIME_SYSTEM_TEXT.PM : TIME_SYSTEM_TEXT.AM;
 }
 
+const getRecoupHour = (currHour: number, period?: TIME_SYSTEM_TEXT) => {
+  switch (period) {
+    case TIME_SYSTEM_TEXT.PM:
+      if (currHour < HALF_DAY_HOURS) {
+        return HALF_DAY_HOURS;
+      }
+      break;
+    case TIME_SYSTEM_TEXT.AM:
+      if (currHour < HALF_DAY_HOURS) {
+        if (currHour >= HALF_DAY_HOURS) {
+          return -HALF_DAY_HOURS;
+        }
+      }
+      break;
+    default:
+      break;
+  }
+
+  return 0;
+};
+
 export {
   getFormattedTime,
   getHourAndMinute,
@@ -146,7 +160,7 @@ export {
   parseNumber,
   parseNumberToString,
   TIME_GAP,
-  timestampToDate,
   twelveHourSystemSource,
   twentyFourHourSystemSource,
+  getRecoupHour,
 };

@@ -52,9 +52,9 @@ import {
   parseNumberToString,
   RcTimePickerClasses,
   TIME_GAP,
-  timestampToDate,
   twelveHourSystemSource,
   twentyFourHourSystemSource,
+  getRecoupHour,
 } from './utils';
 
 type RcTimePickerSize = RcBaseSize<'small' | 'medium'>;
@@ -88,7 +88,7 @@ type RcTimePickerProps<T = false> = {
   size?: RcTimePickerSize;
   /** Is 12 hours system */
   isTwelveHourSystem?: boolean;
-  /** Date or timestamp */
+  /** Date or timestamp(only hour and minute) */
   value?: (T extends true ? Date : number) | null;
   /** When all using date, this props will be remove, */
   dateMode?: T;
@@ -168,9 +168,12 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
       'none' | 'hour' | 'minute'
     >('none');
 
-    const nowTime = value! ?? times!;
+    const nowTime = (value === undefined ? times : value) as
+      | number
+      | Date
+      | null;
 
-    const isHaveValue = nowTime !== undefined;
+    const isHaveValue = nowTime !== null;
 
     const isDateMode = nowTime instanceof Date || dateMode;
 
@@ -192,17 +195,11 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
     }, [max, min]);
 
     const getEmitInitDate = useEventCallback(() => {
-      const date = isHaveValue
-        ? nowTime instanceof Date
-          ? new Date(nowTime)
-          : timestampToDate(nowTime)
-        : new Date();
-      if (nowTime) {
-        const { hour, minute } = currentHourMinute;
-        date.setHours(hour, minute, 0, 0);
-      } else {
-        date.setHours(0, 0, 0, 0);
-      }
+      const date = nowTime !== null ? new Date(nowTime) : new Date();
+
+      const { hour, minute } = currentHourMinute;
+      date.setHours(hour, minute, 0, 0);
+
       return date;
     });
 
@@ -315,27 +312,6 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
       },
     );
 
-    const getRecoupHour = (currHour: number, period?: TIME_SYSTEM_TEXT) => {
-      switch (period) {
-        case TIME_SYSTEM_TEXT.PM:
-          if (currHour < HALF_DAY_HOURS) {
-            return HALF_DAY_HOURS;
-          }
-          break;
-        case TIME_SYSTEM_TEXT.AM:
-          if (currHour < HALF_DAY_HOURS) {
-            if (currHour >= HALF_DAY_HOURS) {
-              return -HALF_DAY_HOURS;
-            }
-          }
-          break;
-        default:
-          break;
-      }
-
-      return 0;
-    };
-
     const handleHourInnerChange = useEventCallback((hour: number) => {
       const minuteInstance = minuteRef.current!;
       const periodInstance = periodRef.current;
@@ -398,6 +374,8 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
 
     // * make sure value inside range
     useLayoutEffect(() => {
+      if (currentTimestamp === null) return;
+
       const time = getEmitInitDate();
 
       if (range.max.date && currentTimestamp > range.max.timestamp) {
@@ -413,7 +391,7 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
 
     // * update input value
     useDepsChange(() => {
-      if (currentTimestamp === undefined) {
+      if (!isHaveValue) {
         textFiledValueRef.current = '';
         return;
       }

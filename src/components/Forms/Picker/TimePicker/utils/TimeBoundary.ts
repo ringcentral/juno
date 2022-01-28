@@ -3,7 +3,7 @@ import {
   getTimestampFromDate,
   HOUR_MINUTES,
   TIME_GAP,
-  timestampToDate,
+  getHourAndMinute,
 } from './TimePickerHelper';
 
 const getDateBeginning = () => {
@@ -90,9 +90,15 @@ export class TimeBoundary {
   }
 
   private getDateTime() {
-    return this.value instanceof Date
-      ? this.value
-      : timestampToDate(this.value);
+    if (this.value instanceof Date) {
+      return this.value;
+    }
+
+    const { hour, minute } = getHourAndMinute(this.value ?? 0);
+    const date = new Date();
+    date.setHours(hour, minute, 0, 0);
+
+    return date;
   }
 }
 
