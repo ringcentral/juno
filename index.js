@@ -8928,6 +8928,7 @@ __export(src_exports2, {
   getParsePaletteColor: () => getParsePaletteColor,
   getPeriod: () => getPeriod,
   getRangeBoundary: () => getRangeBoundary,
+  getRecoupHour: () => getRecoupHour,
   getResizeObserver: () => getResizeObserver,
   getScrollbarSize: () => getScrollbarSize2,
   getSelectionPosition: () => getSelectionPosition,
@@ -8993,7 +8994,6 @@ __export(src_exports2, {
   styled: () => styled_components_default,
   swapArrayLocs: () => swapArrayLocs,
   themeOptions: () => themeOptions,
-  timestampToDate: () => timestampToDate,
   toSpacing: () => toSpacing,
   twelveHourSystemSource: () => twelveHourSystemSource,
   twentyFourHourSystemSource: () => twentyFourHourSystemSource,
@@ -47409,6 +47409,7 @@ __export(src_exports, {
   getParsePaletteColor: () => getParsePaletteColor,
   getPeriod: () => getPeriod,
   getRangeBoundary: () => getRangeBoundary,
+  getRecoupHour: () => getRecoupHour,
   getResizeObserver: () => getResizeObserver,
   getScrollbarSize: () => getScrollbarSize2,
   getSelectionPosition: () => getSelectionPosition,
@@ -47470,7 +47471,6 @@ __export(src_exports, {
   stringArrToRegExp: () => stringArrToRegExp,
   styled: () => styled_components_default,
   swapArrayLocs: () => swapArrayLocs,
-  timestampToDate: () => timestampToDate,
   toSpacing: () => toSpacing,
   twelveHourSystemSource: () => twelveHourSystemSource,
   twentyFourHourSystemSource: () => twentyFourHourSystemSource,
@@ -47757,6 +47757,7 @@ __export(components_exports, {
   getPanelId: () => getPanelId,
   getPeriod: () => getPeriod,
   getRangeBoundary: () => getRangeBoundary,
+  getRecoupHour: () => getRecoupHour,
   getTabId: () => getTabId,
   getTimestamp: () => getTimestamp,
   getTimestampFromDate: () => getTimestampFromDate,
@@ -47773,7 +47774,6 @@ __export(components_exports, {
   reflow: () => reflow3,
   setTransitionStyle: () => setTransitionStyle,
   stringArrToRegExp: () => stringArrToRegExp,
-  timestampToDate: () => timestampToDate,
   twelveHourSystemSource: () => twelveHourSystemSource,
   twentyFourHourSystemSource: () => twentyFourHourSystemSource,
   useAvatarColorToken: () => useAvatarColorToken,
@@ -55124,10 +55124,8 @@ RcHighlight.displayName = "RcHighlight";
 
 // src/components/AppBar/AppBar.tsx
 var TOP_BAR_HEIGHT = "56px";
-var TOP_BAR_MIN_WIDTH = "480px";
 var RcAppBar = styled_components_default(AppBar_default)`
   height: ${TOP_BAR_HEIGHT};
-  min-width: ${TOP_BAR_MIN_WIDTH};
   background-color: ${palette22("neutral", "b01")};
   background: linear-gradient(
     to right,
@@ -76323,7 +76321,7 @@ var getTimestampFromDate = (date) => {
   return date.getHours() * ONE_HOUR + date.getMinutes() * ONE_MINUTE;
 };
 var getHourAndMinute = (times) => {
-  if (!times) {
+  if (times === null) {
     return {
       hour: 0,
       minute: 0
@@ -76336,12 +76334,6 @@ var getHourAndMinute = (times) => {
     minute: Math.floor(minute / ONE_MINUTE)
   };
 };
-var timestampToDate = (times) => {
-  const { hour, minute } = getHourAndMinute(times);
-  const date = new Date();
-  date.setHours(hour, minute, 0, 0);
-  return date;
-};
 function getTimestamp(nowTime) {
   return nowTime instanceof Date ? getTimestampFromDate(nowTime) : nowTime;
 }
@@ -76351,6 +76343,25 @@ var getTimestampFromHourAndMin = (option) => {
 function getPeriod(currHour) {
   return currHour >= HALF_DAY_HOURS ? TIME_SYSTEM_TEXT.PM : TIME_SYSTEM_TEXT.AM;
 }
+var getRecoupHour = (currHour, period) => {
+  switch (period) {
+    case TIME_SYSTEM_TEXT.PM:
+      if (currHour < HALF_DAY_HOURS) {
+        return HALF_DAY_HOURS;
+      }
+      break;
+    case TIME_SYSTEM_TEXT.AM:
+      if (currHour < HALF_DAY_HOURS) {
+        if (currHour >= HALF_DAY_HOURS) {
+          return -HALF_DAY_HOURS;
+        }
+      }
+      break;
+    default:
+      break;
+  }
+  return 0;
+};
 
 // src/components/Forms/Picker/TimePicker/utils/TimeBoundary.ts
 var getDateBeginning = () => {
@@ -76408,7 +76419,13 @@ var TimeBoundary = class {
     this._minute = Math.floor(time.getMinutes() / this.timeGap) * this.timeGap;
   }
   getDateTime() {
-    return this.value instanceof Date ? this.value : timestampToDate(this.value);
+    if (this.value instanceof Date) {
+      return this.value;
+    }
+    const { hour, minute } = getHourAndMinute(this.value ?? 0);
+    const date = new Date();
+    date.setHours(hour, minute, 0, 0);
+    return date;
   }
 };
 var getRangeBoundary = ({
@@ -76658,15 +76675,26 @@ var _SelectArrowDownIcon = forwardRef592(({ className, ...rest }, ref2) => /* @_
 var SelectArrowDownIcon = styled_components_default(_SelectArrowDownIcon)``;
 
 // src/components/Forms/Picker/DatePicker/styles/StyledDay.tsx
-var StyledDay = styled_components_default(PickerBaseIconButton)`
-  &.${RcIconButtonClasses.root} {
-    width: ${({ size }) => RcDatePickerIconWidths[size]};
-    height: ${({ size }) => RcDatePickerIconWidths[size]};
-    margin: 0 2px;
-    visibility: ${({ hidden }) => hidden && "hidden"};
-    ${typography4("caption1")};
-  }
+var CurrentDayStyle = css2`
+  border: 1px solid ${palette22("neutral", "b04")};
 `;
+var DayStyle = ({
+  current,
+  size,
+  hidden,
+  selected
+}) => {
+  return css2`
+    &.${RcIconButtonClasses.root} {
+      width: ${RcDatePickerIconWidths[size]};
+      height: ${RcDatePickerIconWidths[size]};
+      margin: 0 2px;
+      visibility: ${hidden && "hidden"};
+      ${typography4("caption1")};
+      ${current && !selected && CurrentDayStyle};
+    }
+  `;
+};
 
 // src/components/Forms/Picker/DatePicker/styles/StyledYear.tsx
 var StyledYear = styled_components_default(PickerBaseIconButton)`
@@ -76957,19 +76985,13 @@ var _Day = forwardRef593((props, ref2) => {
     day,
     ...rest
   } = props;
-  return /* @__PURE__ */ React677.createElement(StyledDay, {
+  return /* @__PURE__ */ React677.createElement(PickerBaseIconButton, {
     "aria-pressed": focused,
     ref: ref2,
     size,
     selected,
     "data-picker-focused": focused ? "" : void 0,
     hidden,
-    className: clsx_m_default({
-      "Day-hidden": hidden,
-      "Day-current": current,
-      "Day-selected": selected,
-      "Day-disabled": disabled3
-    }),
     "data-test-automation-class": hidden ? "date-picker-hidden-day" : "date-picker-day",
     "data-test-automation-value": children2,
     disabled: disabled3,
@@ -76983,7 +77005,9 @@ _Day.defaultProps = {
   current: false,
   selected: false
 };
-var Day3 = memo420(_Day);
+var Day3 = memo420(styled_components_default(_Day)`
+    ${DayStyle}
+  `);
 
 // src/components/Forms/Picker/DatePicker/Years.tsx
 import React679, { forwardRef as forwardRef595, useLayoutEffect as useLayoutEffect25, useMemo as useMemo70, useRef as useRef85 } from "react";
@@ -77853,7 +77877,6 @@ var _RcTimePicker = forwardRef601((inProps, ref2) => {
   const {
     isTwelveHourSystem,
     value,
-    times,
     onChange,
     disabled: disabled3,
     dateMode,
@@ -77868,24 +77891,23 @@ var _RcTimePicker = forwardRef601((inProps, ref2) => {
     PopoverProps: PopoverPropsProp,
     InputProps: InputPropsProp,
     classes,
+    defaultPickerValue,
     ...rest
   } = props;
-  if (times) {
-    logInDev({
-      component: "RcTimePicker",
-      target: "times",
-      time: "2021-3",
-      comment: `this props will be removed, using value to replace that `
-    });
-  }
   const actionRef = useRef89(null);
   const hourRef = useRef89(null);
   const minuteRef = useRef89(null);
   const periodRef = useRef89(null);
   const textFiledValueRef = useRef89("");
   const [selectionShowType, setSelectionType] = useState39("none");
-  const nowTime = value ?? times;
-  const isHaveValue = nowTime !== void 0;
+  const { nowTime, isShowTextfieldValue } = (() => {
+    if (value !== null)
+      return { nowTime: value, isShowTextfieldValue: true };
+    if (defaultPickerValue)
+      return { nowTime: defaultPickerValue, isShowTextfieldValue: false };
+    return { nowTime: null, isShowTextfieldValue: false };
+  })();
+  const isHaveValue = nowTime !== null;
   const isDateMode = nowTime instanceof Date || dateMode;
   const currentTimestamp = getTimestamp(nowTime);
   const currentHourMinute = getHourAndMinute(currentTimestamp);
@@ -77896,13 +77918,9 @@ var _RcTimePicker = forwardRef601((inProps, ref2) => {
     return getRangeBoundary({ min: min2, max: max2 });
   }, [max2, min2]);
   const getEmitInitDate = useEventCallback2(() => {
-    const date = isHaveValue ? nowTime instanceof Date ? new Date(nowTime) : timestampToDate(nowTime) : new Date();
-    if (nowTime) {
-      const { hour, minute } = currentHourMinute;
-      date.setHours(hour, minute, 0, 0);
-    } else {
-      date.setHours(0, 0, 0, 0);
-    }
+    const date = nowTime !== null ? new Date(nowTime) : new Date();
+    const { hour, minute } = currentHourMinute;
+    date.setHours(hour, minute, 0, 0);
     return date;
   });
   const handleChange = useCallback35((toValue2) => {
@@ -77976,25 +77994,6 @@ var _RcTimePicker = forwardRef601((inProps, ref2) => {
       Escape: closeMenu
     });
   });
-  const getRecoupHour = (currHour, period) => {
-    switch (period) {
-      case TIME_SYSTEM_TEXT.PM:
-        if (currHour < HALF_DAY_HOURS) {
-          return HALF_DAY_HOURS;
-        }
-        break;
-      case TIME_SYSTEM_TEXT.AM:
-        if (currHour < HALF_DAY_HOURS) {
-          if (currHour >= HALF_DAY_HOURS) {
-            return -HALF_DAY_HOURS;
-          }
-        }
-        break;
-      default:
-        break;
-    }
-    return 0;
-  };
   const handleHourInnerChange = useEventCallback2((hour) => {
     const minuteInstance = minuteRef.current;
     const periodInstance = periodRef.current;
@@ -78034,6 +78033,8 @@ var _RcTimePicker = forwardRef601((inProps, ref2) => {
     }
   }, PopoverPropsProp), [PopoverPropsProp, classes, handlePopoverKeydown]);
   useLayoutEffect27(() => {
+    if (currentTimestamp === null)
+      return;
     const time = getEmitInitDate();
     if (range.max.date && currentTimestamp > range.max.timestamp) {
       time.setHours(range.max.hour);
@@ -78046,7 +78047,7 @@ var _RcTimePicker = forwardRef601((inProps, ref2) => {
     }
   }, [currentTimestamp, range, handleChange, getEmitInitDate]);
   useDepsChange(() => {
-    if (currentTimestamp === void 0) {
+    if (!isShowTextfieldValue) {
       textFiledValueRef.current = "";
       return;
     }
@@ -78134,13 +78135,7 @@ var _RcTimePicker = forwardRef601((inProps, ref2) => {
     automationId: `time-picker-${selectionShowType}`
   })));
 });
-var RcTimePicker = styled_components_default(withDeprecatedCheck(_RcTimePicker, [
-  {
-    prop: "times",
-    time: "2021-4",
-    comment: `@deprecated this props will be removed, using value to replace that`
-  }
-], "RcTimePicker"))``;
+var RcTimePicker = styled_components_default(_RcTimePicker)``;
 RcTimePicker.defaultProps = {
   clearBtn: true,
   dateMode: false,
@@ -83952,6 +83947,7 @@ export {
   getParsePaletteColor,
   getPeriod,
   getRangeBoundary,
+  getRecoupHour,
   getResizeObserver,
   getScrollbarSize2 as getScrollbarSize,
   getSelectionPosition,
@@ -84017,7 +84013,6 @@ export {
   styled_components_default as styled,
   swapArrayLocs,
   themeOptions,
-  timestampToDate,
   toSpacing,
   twelveHourSystemSource,
   twentyFourHourSystemSource,
