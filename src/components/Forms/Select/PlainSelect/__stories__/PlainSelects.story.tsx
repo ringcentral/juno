@@ -9,7 +9,9 @@ import {
   paletteChoice,
   sortInDocTable,
 } from '../../../../../storybook';
+import { Title } from '../../../../../storybook/components';
 import { RcBox } from '../../../../Box';
+import { RcGrid } from '../../../../Grid';
 import { RcIcon } from '../../../../Icon';
 import { RcListItem, RcListItemIcon, RcListItemText } from '../../../../List';
 import { RcTypography } from '../../../../Typography';
@@ -48,6 +50,7 @@ type PlainSelectProps = ComponentProps<typeof RcPlainSelect>;
 
 export const PlainSelect: Story<PlainSelectProps> = ({ ...args }) => {
   const [value, setValue] = useState<number>(1);
+  const [value2, setValue2] = useState<number | null>(null);
 
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -56,25 +59,88 @@ export const PlainSelect: Story<PlainSelectProps> = ({ ...args }) => {
     setValue(id);
   };
 
+  const handleChange2 = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const id = Number(event.target.value);
+    setValue2(id);
+  };
+
   return (
-    <RcPlainSelect
-      {...args}
-      value={value}
-      onChange={handleChange}
-      data-test-automation-id="demo"
-      onOpen={(e) => {
-        console.log('open', e);
-      }}
-      onClose={(e) => {
-        console.log(e);
-      }}
-    >
-      {menuList.map((item) => (
-        <RcListItem value={item.id} key={item.id}>
-          {item.value}
-        </RcListItem>
-      ))}
-    </RcPlainSelect>
+    <RcGrid container>
+      <RcGrid item xs={6}>
+        <Title>controlled mode</Title>
+        <RcPlainSelect
+          {...args}
+          value={value}
+          onChange={handleChange}
+          data-test-automation-id="demo"
+          onOpen={(e) => {
+            console.log('open', e);
+          }}
+          onClose={(e) => {
+            console.log(e);
+          }}
+        >
+          {menuList.map((item) => (
+            <RcListItem value={item.id} key={item.id}>
+              {item.value}
+            </RcListItem>
+          ))}
+        </RcPlainSelect>
+      </RcGrid>
+      <RcGrid item xs={6}>
+        <Title>With placeholder</Title>
+        <RcPlainSelect
+          {...args}
+          placeholder="Select a value"
+          value={value2}
+          onChange={handleChange2}
+          data-test-automation-id="demo"
+        >
+          {menuList.map((item) => (
+            <RcListItem value={item.id} key={item.id}>
+              {item.value}
+            </RcListItem>
+          ))}
+        </RcPlainSelect>
+      </RcGrid>
+      <RcGrid item xs={6}>
+        <Title>uncontrolled mode</Title>
+        <RcPlainSelect
+          {...args}
+          placeholder="Select a value"
+          defaultValue={1}
+          onChange={(e, v) => {
+            console.log('value change', e, v);
+          }}
+          data-test-automation-id="demo"
+        >
+          {menuList.map((item) => (
+            <RcListItem value={item.id} key={item.id}>
+              {item.value}
+            </RcListItem>
+          ))}
+        </RcPlainSelect>
+      </RcGrid>
+      <RcGrid item xs={6}>
+        <Title>With placeholder</Title>
+        <RcPlainSelect
+          {...args}
+          placeholder="Select a value"
+          onChange={(e, v) => {
+            console.log('value change', e, v);
+          }}
+          data-test-automation-id="demo"
+        >
+          {menuList.map((item) => (
+            <RcListItem value={item.id} key={item.id}>
+              {item.value}
+            </RcListItem>
+          ))}
+        </RcPlainSelect>
+      </RcGrid>
+    </RcGrid>
   );
 };
 

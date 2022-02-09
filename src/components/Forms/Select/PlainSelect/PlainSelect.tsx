@@ -1,8 +1,15 @@
-import React, { forwardRef, useCallback, useMemo, useState } from 'react';
+import React, { forwardRef, useMemo, useState } from 'react';
 
 import { PopoverOrigin } from '@material-ui/core/Popover';
 
-import { combineProps, RcBaseProps, styled } from '../../../../foundation';
+import {
+  combineProps,
+  hasValue,
+  isShowJunoWarning,
+  logInDev,
+  RcBaseProps,
+  styled,
+} from '../../../../foundation';
 import { RcButton, RcButtonProps } from '../../../Buttons';
 import { RcMenu } from '../../../Menu';
 import { RcVirtualizedMenu } from '../../../VirtualizedMenu';
@@ -15,6 +22,7 @@ import {
   switchVariantToButtonVariant,
   UnionButtonVariant,
 } from './utils';
+import { useControlled } from '@material-ui/core';
 
 type RcPlainSelectPropsVariant = 'round' | 'plainIcon' | UnionButtonVariant;
 
@@ -35,6 +43,9 @@ const defaultButtonProps: RcButtonProps = {
 
 const EmptyIcon = () => null;
 
+const placeholderValue = '$$__PLACEHOLDER__$$';
+const displayName = 'RcPlainSelect';
+
 const plainAnchorOrigin: PopoverOrigin = {
   horizontal: 'left',
   vertical: 'bottom',
@@ -46,7 +57,8 @@ const _RcPlainSelect = forwardRef<any, RcPlainSelectProps>(
       children,
       className,
       classes,
-      value,
+      value: valueProp,
+      defaultValue,
       renderValue,
       variant,
       ButtonProps,
@@ -59,15 +71,24 @@ const _RcPlainSelect = forwardRef<any, RcPlainSelectProps>(
       virtualize,
       fullWidth,
       color,
+      placeholder,
       //
       IconComponent,
       onOpen: onOpenProp,
       onClose: onCloseProp,
+      onChange: onChangeProp,
       ...rest
     },
     ref,
   ) => {
+    const [value, setValue] = useControlled({
+      controlled: valueProp,
+      default: defaultValue,
+      name: displayName,
+    });
+
     const [open, setOpen] = useState(false);
+    const isEmpty = !hasValue(value);
 
     const display = useMemo(() => {
       const item = children.find((child) => {
@@ -77,52 +98,45 @@ const _RcPlainSelect = forwardRef<any, RcPlainSelectProps>(
       return item?.props['children'];
     }, [children, value]);
 
-    const _renderValue = useCallback(
-      (value: any) => {
-        const _variant = switchVariantToButtonVariant(variant!);
+    const _renderValue = (newValue: any) => {
+      const _variant = switchVariantToButtonVariant(variant!);
 
-        return (
-          <RcButton
-            ref={ref}
-            innerRef={innerRef}
-            disabled={disabled}
-            size={size}
-            color={color}
-            fullWidth={fullWidth}
-            autoFocus={autoFocus}
-            variant={_variant}
-            aria-label="open menu"
-            aria-haspopup="listbox"
-            {...combineProps(defaultButtonProps, ButtonProps)}
-          >
-            {renderValue ? renderValue(value) : display}
-            {(IconComponent && <IconComponent open={open} />) || (
-              <SelectArrowDownIcon
-                // * reset default color
-                color={undefined}
-                // *for reverse button
-                className={open ? 'MuiSelect-iconOpen' : ''}
-              />
-            )}
-          </RcButton>
-        );
-      },
-      [
-        ButtonProps,
-        IconComponent,
-        autoFocus,
-        color,
-        disabled,
-        display,
-        fullWidth,
-        innerRef,
-        open,
-        ref,
-        renderValue,
-        size,
-        variant,
-      ],
-    );
+      const showChildren = renderValue ? renderValue(newValue) : display;
+
+      if (isShowJunoWarning && isEmpty && !placeholder) {
+        logInDev({
+          component: displayName,
+          message: '[Juno]: when value be empty, must have placeholder.',
+          level: 'error',
+        });
+      }
+
+      return (
+        <RcButton
+          ref={ref}
+          innerRef={innerRef}
+          disabled={disabled}
+          size={size}
+          color={color}
+          fullWidth={fullWidth}
+          autoFocus={autoFocus}
+          variant={_variant}
+          aria-label="open menu"
+          aria-haspopup="listbox"
+          {...combineProps(defaultButtonProps, ButtonProps)}
+        >
+          {isEmpty && placeholder ? placeholder : showChildren}
+          {(IconComponent && <IconComponent open={open} />) || (
+            <SelectArrowDownIcon
+              // * reset default color
+              color={undefined}
+              // *for reverse button
+              className={open ? 'MuiSelect-iconOpen' : ''}
+            />
+          )}
+        </RcButton>
+      );
+    };
 
     const _SelectInputProps = useMemo<RcSelectProps['SelectInputProps']>(() => {
       return combineProps(
@@ -156,18 +170,23 @@ const _RcPlainSelect = forwardRef<any, RcPlainSelectProps>(
     return (
       <RcSelect
         className={className}
-        value={value}
+        // put an placeholder string for that trigger renderValue
+        value={isEmpty ? placeholderValue : value}
         // * set any for select could not find any class
         variant={'none' as any}
         disabled={disabled}
         IconComponent={EmptyIcon}
-        onOpen={(e: React.ChangeEvent<{}>) => {
+        onOpen={(e) => {
           setOpen(true);
           onOpenProp?.(e);
         }}
-        onClose={(e: React.ChangeEvent<{}>) => {
+        onClose={(e) => {
           setOpen(false);
           onCloseProp?.(e);
+        }}
+        onChange={(e, v) => {
+          setValue(e.target.value);
+          onChangeProp?.(e, v);
         }}
         SelectInputProps={_SelectInputProps}
         InputProps={_InputProps}
@@ -192,7 +211,7 @@ RcPlainSelect.defaultProps = {
   size: 'medium',
 };
 
-RcPlainSelect.displayName = 'RcPlainSelect';
+RcPlainSelect.displayName = displayName;
 
 export { RcPlainSelect };
 export type { RcPlainSelectProps, RcPlainSelectPropsVariant };
