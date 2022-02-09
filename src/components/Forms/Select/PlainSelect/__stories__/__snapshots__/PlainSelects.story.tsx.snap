@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] = `
-.c7 {
+.c8 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -10,7 +10,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
   pointer-events: none;
 }
 
-.c6 {
+.c7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -18,7 +18,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
   font-size: 24px;
 }
 
-.c4 {
+.c5 {
   text-transform: none;
   font-size: 0.9375rem;
   font-weight: 700;
@@ -30,44 +30,44 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
   padding: 0px 12px;
 }
 
-.c4 .RcButton-startIcon {
+.c5 .RcButton-startIcon {
   margin-right: 8px;
 }
 
-.c4 .RcButton-endIcon {
+.c5 .RcButton-endIcon {
   margin-left: 8px;
 }
 
-.c4.RcButton-text {
+.c5.RcButton-text {
   color: #066FAC;
 }
 
-.c4.RcButton-text.RcButton-disabled {
+.c5.RcButton-text.RcButton-disabled {
   color: #B9B9B9;
 }
 
-.c4.RcButton-contained {
+.c5.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
 }
 
-.c4.RcButton-contained.RcButton-disabled {
+.c5.RcButton-contained.RcButton-disabled {
   background-color: #B9B9B9;
   color: #FFFFFF;
 }
 
-.c4.RcButton-outlined {
+.c5.RcButton-outlined {
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 11px;
 }
 
-.c4.RcButton-outlined.RcButton-disabled {
+.c5.RcButton-outlined.RcButton-disabled {
   color: #B9B9B9;
   border-color: #B9B9B9;
 }
 
-.c4.RcButton-outlined:after {
+.c5.RcButton-outlined:after {
   top: -1px;
   bottom: -1px;
   left: -1px;
@@ -75,11 +75,11 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
   border: 1px solid transparent;
 }
 
-.c0 {
+.c1 {
   width: 168px;
 }
 
-.c0 .RcTextFieldInputLabel-root {
+.c1 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -90,84 +90,84 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
   transform: scale(1);
 }
 
-.c0 .RcTextFieldInputLabel-focused {
+.c1 .RcTextFieldInputLabel-focused {
   color: #066FAC;
 }
 
-.c0 .RcTextFieldInput-root {
+.c1 .RcTextFieldInput-root {
   color: #121212;
 }
 
-.c0 .RcTextFieldInput-input {
+.c1 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 24px;
 }
 
-.c0 .RcTextFieldInput-input::-webkit-input-placeholder {
+.c1 .RcTextFieldInput-input::-webkit-input-placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c0 .RcTextFieldInput-input::-moz-placeholder {
+.c1 .RcTextFieldInput-input::-moz-placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c0 .RcTextFieldInput-input:-ms-input-placeholder {
+.c1 .RcTextFieldInput-input:-ms-input-placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c0 .RcTextFieldInput-input::placeholder {
+.c1 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c0 .RcTextFieldInput-underline:before {
+.c1 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
 
-.c0 .RcTextFieldInput-underline:after {
+.c1 .RcTextFieldInput-underline:after {
   border-bottom-color: #066FAC;
 }
 
-.c0 .RcTextFieldInput-error:after {
+.c1 .RcTextFieldInput-error:after {
   border-bottom-color: #BE3933;
 }
 
-.c0 .RcTextFieldInput-disabled {
+.c1 .RcTextFieldInput-disabled {
   color: #B9B9B9;
   -webkit-text-fill-color: #B9B9B9;
 }
 
-.c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
+.c1 .RcTextFieldInput-disabled::-webkit-input-placeholder {
   color: #B9B9B9;
 }
 
-.c0 .RcTextFieldInput-disabled::-moz-placeholder {
+.c1 .RcTextFieldInput-disabled::-moz-placeholder {
   color: #B9B9B9;
 }
 
-.c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
+.c1 .RcTextFieldInput-disabled:-ms-input-placeholder {
   color: #B9B9B9;
 }
 
-.c0 .RcTextFieldInput-disabled::placeholder {
+.c1 .RcTextFieldInput-disabled::placeholder {
   color: #B9B9B9;
 }
 
-.c0 .RcTextFieldInput-disabled:before {
+.c1 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
   border-bottom-color: #B9B9B9;
 }
 
-.c0 .RcTextFieldInput-disabled:after {
+.c1 .RcTextFieldInput-disabled:after {
   border-bottom-style: none;
 }
 
-.c0 .RcTextFieldFormHelperText-root {
+.c1 .RcTextFieldFormHelperText-root {
   font-size: 0.75rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -175,82 +175,90 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
   color: #666666;
 }
 
-.c0 .RcTextFieldFormHelperText-error,
-.c0 .RcTextFieldInputLabel-error {
+.c1 .RcTextFieldFormHelperText-error,
+.c1 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
-.c0 .RcTextFieldFormHelperText-disabled,
-.c0 .RcTextFieldInputLabel-disabled {
+.c1 .RcTextFieldFormHelperText-disabled,
+.c1 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
 
-.c0 input[type='search']::-ms-clear,
-.c0 input[type='search']::-ms-reveal {
+.c1 input[type='search']::-ms-clear,
+.c1 input[type='search']::-ms-reveal {
   display: none;
   width: 0;
   height: 0;
 }
 
-.c0 input[type='search']::-webkit-search-decoration,
-.c0 input[type='search']::-webkit-search-cancel-button,
-.c0 input[type='search']::-webkit-search-results-button,
-.c0 input[type='search']::-webkit-search-results-decoration {
+.c1 input[type='search']::-webkit-search-decoration,
+.c1 input[type='search']::-webkit-search-cancel-button,
+.c1 input[type='search']::-webkit-search-results-button,
+.c1 input[type='search']::-webkit-search-results-decoration {
   display: none;
 }
 
-.c1 .RcSelect-icon {
+.c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+.c2 .RcSelect-icon {
   color: #666666;
 }
 
-.c1 .RcSelectInput-focused .RcSelect-icon {
+.c2 .RcSelectInput-focused .RcSelect-icon {
   color: #066FAC;
 }
 
-.c1 .RcSelectInput-error .RcSelect-icon {
+.c2 .RcSelectInput-error .RcSelect-icon {
   color: #BE3933;
 }
 
-.c1 .RcSelectInputWhenPlaceholder-input {
+.c2 .RcSelectInputWhenPlaceholder-input {
   color: #757575;
 }
 
-.c1 .RcSelectInputWhenPlaceholder-input:before {
+.c2 .RcSelectInputWhenPlaceholder-input:before {
   content: 'undefined';
   border: none;
 }
 
-.c1 .RcSelectInput-disabled {
+.c2 .RcSelectInput-disabled {
   color: #B9B9B9;
 }
 
-.c1 .RcSelectInput-disabled .RcSelect-icon {
+.c2 .RcSelectInput-disabled .RcSelect-icon {
   color: #B9B9B9;
 }
 
-.c2 {
+.c3 {
   width: auto;
 }
 
-.c2 .c3 .c5 {
+.c3 .c4 .c6 {
   margin-right: 0;
 }
 
-.c2 .RcTextField-root {
+.c3 .RcTextField-root {
   margin-bottom: 0;
 }
 
-.c2 .RcPlainSelectInput-root {
+.c3 .RcPlainSelectInput-root {
   width: auto;
   pointer-events: none;
 }
 
-.c2 .RcPlainSelectInput-input {
+.c3 .RcPlainSelectInput-input {
   padding: 0;
   height: auto;
 }
 
-.c2 .c3 {
+.c3 .c4 {
   pointer-events: auto;
   min-width: unset;
   padding-left: 16px;
@@ -258,19 +266,19 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcButton-text:hover {
+  .c5.RcButton-text:hover {
     background-color: rgba(6,111,172,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcButton-contained:hover {
+  .c5.RcButton-contained:hover {
     background-color: rgba(6,111,172,0.92);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcButton-outlined:hover {
+  .c5.RcButton-outlined:hover {
     background-color: rgba(6,111,172,0.08);
   }
 }
@@ -280,81 +288,345 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
+  .c1 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
     border-bottom-color: #121212;
   }
 }
 
 <div
-  className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 c2"
+  className="MuiGrid-root MuiGrid-container"
 >
   <div
-    className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcSelectInput-root RcPlainSelectInput-root MuiInputBase-formControl MuiInput-formControl"
-    data-test-automation-id="demo"
-    onClick={[Function]}
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
   >
-    <div
-      className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input RcTextFieldInput-input RcPlainSelectInput-input"
-      onBlur={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
+    <h5
+      className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+      data-color="neutral.f06"
+      data-variant="headline1"
     >
-      <button
-        aria-haspopup="listbox"
-        aria-label="open menu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4"
-        disabled={false}
-        onBlur={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={0}
-        type="button"
+      controlled mode
+    </h5>
+    <div
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c3"
+    >
+      <div
+        className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcSelectInput-root RcPlainSelectInput-root MuiInputBase-formControl MuiInput-formControl"
+        data-test-automation-id="demo"
+        onClick={[Function]}
       >
-        <span
-          className="MuiButton-label"
+        <div
+          className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input RcTextFieldInput-input RcPlainSelectInput-input"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
         >
-          One
-          <span
-            className="c5 c6 MuiSvgIcon-root arrow-down icon"
+          <button
+            aria-haspopup="listbox"
+            aria-label="open menu"
+            className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c4 c5"
+            disabled={false}
+            onBlur={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
           >
-            <svg
-              className="c7"
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
+            <span
+              className="MuiButton-label"
             >
-              <path
-                d="M16.707 20.293l5.586-5.586A.999.999 0 0021.586 13H10.414a1 1 0 00-.707 1.707l5.586 5.586a.999.999 0 001.414 0z"
-              />
-            </svg>
-            
-          </span>
-        </span>
-        <span
-          className="MuiTouchRipple-root RcPlainSelect-TouchRipple-root"
+              One
+              <span
+                className="c6 c7 MuiSvgIcon-root arrow-down icon"
+              >
+                <svg
+                  className="c8"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.707 20.293l5.586-5.586A.999.999 0 0021.586 13H10.414a1 1 0 00-.707 1.707l5.586 5.586a.999.999 0 001.414 0z"
+                  />
+                </svg>
+                
+              </span>
+            </span>
+            <span
+              className="MuiTouchRipple-root RcPlainSelect-TouchRipple-root"
+            />
+          </button>
+        </div>
+        <input
+          aria-hidden={true}
+          autoFocus={false}
+          className="MuiSelect-nativeInput"
+          disabled={false}
+          onAnimationStart={[Function]}
+          onChange={[Function]}
+          required={false}
+          tabIndex={-1}
+          value={1}
+          variant="standard"
         />
-      </button>
+      </div>
     </div>
-    <input
-      aria-hidden={true}
-      autoFocus={false}
-      className="MuiSelect-nativeInput"
-      disabled={false}
-      onAnimationStart={[Function]}
-      onChange={[Function]}
-      required={false}
-      tabIndex={-1}
-      value={1}
-      variant="standard"
-    />
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+  >
+    <h5
+      className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+      data-color="neutral.f06"
+      data-variant="headline1"
+    >
+      With placeholder
+    </h5>
+    <div
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c3"
+    >
+      <div
+        className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcSelectInput-root RcPlainSelectInput-root MuiInputBase-formControl MuiInput-formControl"
+        data-test-automation-id="demo"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input RcTextFieldInput-input RcPlainSelectInput-input"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+        >
+          <button
+            aria-haspopup="listbox"
+            aria-label="open menu"
+            className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c4 c5"
+            disabled={false}
+            onBlur={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Select a value
+              <span
+                className="c6 c7 MuiSvgIcon-root arrow-down icon"
+              >
+                <svg
+                  className="c8"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.707 20.293l5.586-5.586A.999.999 0 0021.586 13H10.414a1 1 0 00-.707 1.707l5.586 5.586a.999.999 0 001.414 0z"
+                  />
+                </svg>
+                
+              </span>
+            </span>
+            <span
+              className="MuiTouchRipple-root RcPlainSelect-TouchRipple-root"
+            />
+          </button>
+        </div>
+        <input
+          aria-hidden={true}
+          autoFocus={false}
+          className="MuiSelect-nativeInput"
+          disabled={false}
+          onAnimationStart={[Function]}
+          onChange={[Function]}
+          required={false}
+          tabIndex={-1}
+          value="$$__PLACEHOLDER__$$"
+          variant="standard"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+  >
+    <h5
+      className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+      data-color="neutral.f06"
+      data-variant="headline1"
+    >
+      uncontrolled mode
+    </h5>
+    <div
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c3"
+    >
+      <div
+        className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcSelectInput-root RcPlainSelectInput-root MuiInputBase-formControl MuiInput-formControl"
+        data-test-automation-id="demo"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input RcTextFieldInput-input RcPlainSelectInput-input"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+        >
+          <button
+            aria-haspopup="listbox"
+            aria-label="open menu"
+            className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c4 c5"
+            disabled={false}
+            onBlur={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              One
+              <span
+                className="c6 c7 MuiSvgIcon-root arrow-down icon"
+              >
+                <svg
+                  className="c8"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.707 20.293l5.586-5.586A.999.999 0 0021.586 13H10.414a1 1 0 00-.707 1.707l5.586 5.586a.999.999 0 001.414 0z"
+                  />
+                </svg>
+                
+              </span>
+            </span>
+            <span
+              className="MuiTouchRipple-root RcPlainSelect-TouchRipple-root"
+            />
+          </button>
+        </div>
+        <input
+          aria-hidden={true}
+          autoFocus={false}
+          className="MuiSelect-nativeInput"
+          disabled={false}
+          onAnimationStart={[Function]}
+          onChange={[Function]}
+          required={false}
+          tabIndex={-1}
+          value={1}
+          variant="standard"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+  >
+    <h5
+      className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+      data-color="neutral.f06"
+      data-variant="headline1"
+    >
+      With placeholder
+    </h5>
+    <div
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c3"
+    >
+      <div
+        className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcSelectInput-root RcPlainSelectInput-root MuiInputBase-formControl MuiInput-formControl"
+        data-test-automation-id="demo"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input RcTextFieldInput-input RcPlainSelectInput-input"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+        >
+          <button
+            aria-haspopup="listbox"
+            aria-label="open menu"
+            className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c4 c5"
+            disabled={false}
+            onBlur={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Select a value
+              <span
+                className="c6 c7 MuiSvgIcon-root arrow-down icon"
+              >
+                <svg
+                  className="c8"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.707 20.293l5.586-5.586A.999.999 0 0021.586 13H10.414a1 1 0 00-.707 1.707l5.586 5.586a.999.999 0 001.414 0z"
+                  />
+                </svg>
+                
+              </span>
+            </span>
+            <span
+              className="MuiTouchRipple-root RcPlainSelect-TouchRipple-root"
+            />
+          </button>
+        </div>
+        <input
+          aria-hidden={true}
+          autoFocus={false}
+          className="MuiSelect-nativeInput"
+          disabled={false}
+          onAnimationStart={[Function]}
+          onChange={[Function]}
+          required={false}
+          tabIndex={-1}
+          value="$$__PLACEHOLDER__$$"
+          variant="standard"
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
