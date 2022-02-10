@@ -5,7 +5,6 @@ import { PopoverOrigin } from '@material-ui/core/Popover';
 import {
   combineProps,
   hasValue,
-  isShowJunoWarning,
   logInDev,
   RcBaseProps,
   styled,
@@ -35,7 +34,10 @@ type RcPlainSelectProps = {
   ButtonProps?: RcButtonProps;
   /** item for the select options */
   children: JSX.Element[];
-} & RcBaseProps<RcSelectProps, 'variant' | 'multiple' | 'error'>;
+} & RcBaseProps<
+  RcSelectProps,
+  'variant' | 'multiple' | 'error' | 'placeholder'
+>;
 
 const defaultButtonProps: RcButtonProps = {
   TouchRippleProps: { classes: RcPlainSelectTouchRippleClasses },
@@ -43,7 +45,6 @@ const defaultButtonProps: RcButtonProps = {
 
 const EmptyIcon = () => null;
 
-const placeholderValue = '$$__PLACEHOLDER__$$';
 const displayName = 'RcPlainSelect';
 
 const plainAnchorOrigin: PopoverOrigin = {
@@ -71,7 +72,6 @@ const _RcPlainSelect = forwardRef<any, RcPlainSelectProps>(
       virtualize,
       fullWidth,
       color,
-      placeholder,
       //
       IconComponent,
       onOpen: onOpenProp,
@@ -90,6 +90,14 @@ const _RcPlainSelect = forwardRef<any, RcPlainSelectProps>(
     const [open, setOpen] = useState(false);
     const isEmpty = !hasValue(value);
 
+    if (process.env.NODE_ENV !== 'production' && isEmpty) {
+      logInDev({
+        component: displayName,
+        message: '[Juno]: Plain Select must have init value',
+        level: 'error',
+      });
+    }
+
     const display = useMemo(() => {
       const item = children.find((child) => {
         return child.props['value'] === value;
@@ -100,16 +108,6 @@ const _RcPlainSelect = forwardRef<any, RcPlainSelectProps>(
 
     const _renderValue = (newValue: any) => {
       const _variant = switchVariantToButtonVariant(variant!);
-
-      const showChildren = renderValue ? renderValue(newValue) : display;
-
-      if (isShowJunoWarning && isEmpty && !placeholder) {
-        logInDev({
-          component: displayName,
-          message: '[Juno]: when value be empty, must have placeholder.',
-          level: 'error',
-        });
-      }
 
       return (
         <RcButton
@@ -125,7 +123,7 @@ const _RcPlainSelect = forwardRef<any, RcPlainSelectProps>(
           aria-haspopup="listbox"
           {...combineProps(defaultButtonProps, ButtonProps)}
         >
-          {isEmpty && placeholder ? placeholder : showChildren}
+          {renderValue ? renderValue(newValue) : display}
           {(IconComponent && <IconComponent open={open} />) || (
             <SelectArrowDownIcon
               // * reset default color
@@ -170,8 +168,7 @@ const _RcPlainSelect = forwardRef<any, RcPlainSelectProps>(
     return (
       <RcSelect
         className={className}
-        // put an placeholder string for that trigger renderValue
-        value={isEmpty ? placeholderValue : value}
+        value={value}
         // * set any for select could not find any class
         variant={'none' as any}
         disabled={disabled}
