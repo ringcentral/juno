@@ -72,7 +72,7 @@ DatePicker.storyName = 'DatePicker';
 
 DatePicker.args = {
   label: RcDatePicker.defaultProps!.label,
-  value: new Date('2019-11-15'),
+  value: isTestEnv ? new Date('2019-11-15') : undefined,
   placeholder: 'when?',
 };
 
