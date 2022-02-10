@@ -103,7 +103,7 @@ const accessibilityProps = {
   } as RcTimePickerProps['PeriodToggleProps'],
 };
 
-const defaultPickerValue = new Date('2022-1-1 13:15');
+const defaultPickerValue = new Date('2022/1/1 13:15');
 
 export const TimePickerExamples: Story<TimePickerProps> = () => {
   // 58500000
@@ -352,7 +352,6 @@ const Wrapper = styled.div`
 `;
 
 export const TimePickerChangeRange: Story<TimePickerProps> = () => {
-  // new Date('2021-01-20T01:30:00.000Z'),
   const [times, setTimes] = useState<number>(38500000);
   const [times2, setTimes2] = useState<number>(38500000);
   const [min, setMin] = useState(38500000);
@@ -509,10 +508,12 @@ export const TimePickerWithDefaultPickerValue: Story<TimePickerProps> = ({
 TimePickerWithDefaultPickerValue.storyName =
   'TimePicker with default picker value';
 
+console.log('!!!', new Date('2021/12/12 14:15:11'));
+
 TimePickerWithDefaultPickerValue.args = {
   label: 'Time',
   value: null,
-  defaultPickerValue: new Date('2021-12-12 14:15:11'),
+  defaultPickerValue: new Date('2021/12/12 14:15:11'),
   placeholder: "what's time?",
 };
 
