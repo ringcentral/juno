@@ -15632,9 +15632,9 @@ function styled(Component7) {
     var classNamePrefix = name;
     if (true) {
       if (!name) {
-        var displayName = getDisplayName(Component7);
-        if (displayName !== void 0) {
-          classNamePrefix = displayName;
+        var displayName2 = getDisplayName(Component7);
+        if (displayName2 !== void 0) {
+          classNamePrefix = displayName2;
         }
       }
     }
@@ -15767,9 +15767,9 @@ var withStyles = function withStyles2(stylesOrCreator) {
     var classNamePrefix = name;
     if (true) {
       if (!name) {
-        var displayName = getDisplayName(Component7);
-        if (displayName !== void 0) {
-          classNamePrefix = displayName;
+        var displayName2 = getDisplayName(Component7);
+        if (displayName2 !== void 0) {
+          classNamePrefix = displayName2;
         }
       }
     }
@@ -15999,14 +15999,14 @@ var SvgIcon_default = withStyles_default2(styles, {
 })(SvgIcon);
 
 // node_modules/@material-ui/core/esm/utils/createSvgIcon.js
-function createSvgIcon(path, displayName) {
+function createSvgIcon(path, displayName2) {
   var Component7 = function Component8(props, ref2) {
     return /* @__PURE__ */ React114.createElement(SvgIcon_default, _extends({
       ref: ref2
     }, props), path);
   };
   if (true) {
-    Component7.displayName = "".concat(displayName, "Icon");
+    Component7.displayName = "".concat(displayName2, "Icon");
   }
   Component7.muiName = SvgIcon_default.muiName;
   return /* @__PURE__ */ React114.memo(/* @__PURE__ */ React114.forwardRef(Component7));
@@ -55505,7 +55505,7 @@ var _RcAvatar = forwardRef525((inProps, ref2) => {
     Img,
     imgProps,
     presenceProps,
-    displayName,
+    displayName: displayName2,
     ...rest
   } = props;
   let unClickable = props.unClickable;
@@ -60938,14 +60938,14 @@ function connectAdvanced(selectorFactory, _ref6) {
       throw new Error("You must pass a component to the function returned by " + (methodName + ". Instead received " + stringifyComponent(WrappedComponent)));
     }
     var wrappedComponentName = WrappedComponent.displayName || WrappedComponent.name || "Component";
-    var displayName = getDisplayName2(wrappedComponentName);
+    var displayName2 = getDisplayName2(wrappedComponentName);
     var selectorFactoryOptions = _extends({}, connectOptions, {
       getDisplayName: getDisplayName2,
       methodName,
       renderCountProp,
       shouldHandleStateChanges,
       storeKey,
-      displayName,
+      displayName: displayName2,
       wrappedComponentName,
       WrappedComponent
     });
@@ -60968,7 +60968,7 @@ function connectAdvanced(selectorFactory, _ref6) {
       var didStoreComeFromProps = Boolean(props.store) && Boolean(props.store.getState) && Boolean(props.store.dispatch);
       var didStoreComeFromContext = Boolean(contextValue) && Boolean(contextValue.store);
       if (!didStoreComeFromProps && !didStoreComeFromContext) {
-        throw new Error('Could not find "store" in the context of ' + ('"' + displayName + '". Either wrap the root component in a <Provider>, ') + "or pass a custom React context provider to <Provider> and the corresponding " + ("React context consumer to " + displayName + " in connect options."));
+        throw new Error('Could not find "store" in the context of ' + ('"' + displayName2 + '". Either wrap the root component in a <Provider>, ') + "or pass a custom React context provider to <Provider> and the corresponding " + ("React context consumer to " + displayName2 + " in connect options."));
       }
       var store = didStoreComeFromProps ? props.store : contextValue.store;
       var childPropsSelector = useMemo43(function() {
@@ -61022,14 +61022,14 @@ function connectAdvanced(selectorFactory, _ref6) {
     }
     var Connect2 = pure ? React631.memo(ConnectFunction) : ConnectFunction;
     Connect2.WrappedComponent = WrappedComponent;
-    Connect2.displayName = ConnectFunction.displayName = displayName;
+    Connect2.displayName = ConnectFunction.displayName = displayName2;
     if (forwardRef646) {
       var forwarded = React631.forwardRef(function forwardConnectRef(props, ref2) {
         return /* @__PURE__ */ React631.createElement(Connect2, _extends({}, props, {
           reactReduxForwardedRef: ref2
         }));
       });
-      forwarded.displayName = displayName;
+      forwarded.displayName = displayName2;
       forwarded.WrappedComponent = WrappedComponent;
       return (0, import_hoist_non_react_statics5.default)(forwarded, WrappedComponent);
     }
@@ -61106,9 +61106,9 @@ function warning6(message) {
 }
 
 // node_modules/react-redux/es/utils/verifyPlainObject.js
-function verifyPlainObject(value, displayName, methodName) {
+function verifyPlainObject(value, displayName2, methodName) {
   if (!isPlainObject4(value)) {
-    warning6(methodName + "() in " + displayName + " must return a plain object. Instead received " + value + ".");
+    warning6(methodName + "() in " + displayName2 + " must return a plain object. Instead received " + value + ".");
   }
 }
 
@@ -61128,7 +61128,7 @@ function getDependsOnOwnProps(mapToProps) {
 }
 function wrapMapToPropsFunc(mapToProps, methodName) {
   return function initProxySelector(dispatch, _ref6) {
-    var displayName = _ref6.displayName;
+    var displayName2 = _ref6.displayName;
     var proxy = function mapToPropsProxy(stateOrDispatch, ownProps) {
       return proxy.dependsOnOwnProps ? proxy.mapToProps(stateOrDispatch, ownProps) : proxy.mapToProps(stateOrDispatch);
     };
@@ -61143,7 +61143,7 @@ function wrapMapToPropsFunc(mapToProps, methodName) {
         props = proxy(stateOrDispatch, ownProps);
       }
       if (true)
-        verifyPlainObject(props, displayName, methodName);
+        verifyPlainObject(props, displayName2, methodName);
       return props;
     };
     return proxy;
@@ -61185,7 +61185,7 @@ function defaultMergeProps(stateProps, dispatchProps, ownProps) {
 }
 function wrapMergePropsFunc(mergeProps) {
   return function initMergePropsProxy(dispatch, _ref6) {
-    var displayName = _ref6.displayName, pure = _ref6.pure, areMergedPropsEqual = _ref6.areMergedPropsEqual;
+    var displayName2 = _ref6.displayName, pure = _ref6.pure, areMergedPropsEqual = _ref6.areMergedPropsEqual;
     var hasRunOnce = false;
     var mergedProps;
     return function mergePropsProxy(stateProps, dispatchProps, ownProps) {
@@ -61197,7 +61197,7 @@ function wrapMergePropsFunc(mergeProps) {
         hasRunOnce = true;
         mergedProps = nextMergedProps;
         if (true)
-          verifyPlainObject(mergedProps, displayName, "mergeProps");
+          verifyPlainObject(mergedProps, displayName2, "mergeProps");
       }
       return mergedProps;
     };
@@ -61214,19 +61214,19 @@ function whenMergePropsIsOmitted(mergeProps) {
 var mergeProps_default = [whenMergePropsIsFunction, whenMergePropsIsOmitted];
 
 // node_modules/react-redux/es/connect/verifySubselectors.js
-function verify(selector, methodName, displayName) {
+function verify(selector, methodName, displayName2) {
   if (!selector) {
-    throw new Error("Unexpected value for " + methodName + " in " + displayName + ".");
+    throw new Error("Unexpected value for " + methodName + " in " + displayName2 + ".");
   } else if (methodName === "mapStateToProps" || methodName === "mapDispatchToProps") {
     if (!Object.prototype.hasOwnProperty.call(selector, "dependsOnOwnProps")) {
-      warning6("The selector for " + methodName + " of " + displayName + " did not specify a value for dependsOnOwnProps.");
+      warning6("The selector for " + methodName + " of " + displayName2 + " did not specify a value for dependsOnOwnProps.");
     }
   }
 }
-function verifySubselectors(mapStateToProps, mapDispatchToProps2, mergeProps, displayName) {
-  verify(mapStateToProps, "mapStateToProps", displayName);
-  verify(mapDispatchToProps2, "mapDispatchToProps", displayName);
-  verify(mergeProps, "mergeProps", displayName);
+function verifySubselectors(mapStateToProps, mapDispatchToProps2, mergeProps, displayName2) {
+  verify(mapStateToProps, "mapStateToProps", displayName2);
+  verify(mapDispatchToProps2, "mapDispatchToProps", displayName2);
+  verify(mergeProps, "mergeProps", displayName2);
 }
 
 // node_modules/react-redux/es/connect/selectorFactory.js
@@ -79106,7 +79106,7 @@ RcSelect.defaultProps = {
 };
 
 // src/components/Forms/Select/PlainSelect/PlainSelect.tsx
-import React695, { forwardRef as forwardRef610, useCallback as useCallback36, useMemo as useMemo80, useState as useState43 } from "react";
+import React695, { forwardRef as forwardRef610, useMemo as useMemo80, useState as useState43 } from "react";
 
 // src/components/Menu/MenuList/MenuList.tsx
 import React693, {
@@ -79471,6 +79471,7 @@ var defaultButtonProps = {
   TouchRippleProps: { classes: RcPlainSelectTouchRippleClasses }
 };
 var EmptyIcon2 = () => null;
+var displayName = "RcPlainSelect";
 var plainAnchorOrigin = {
   horizontal: "left",
   vertical: "bottom"
@@ -79479,7 +79480,8 @@ var _RcPlainSelect = forwardRef610(({
   children: children2,
   className,
   classes,
-  value,
+  value: valueProp,
+  defaultValue,
   renderValue,
   variant,
   ButtonProps,
@@ -79495,16 +79497,30 @@ var _RcPlainSelect = forwardRef610(({
   IconComponent,
   onOpen: onOpenProp,
   onClose: onCloseProp,
+  onChange: onChangeProp,
   ...rest
 }, ref2) => {
+  const [value, setValue] = useControlled({
+    controlled: valueProp,
+    default: defaultValue,
+    name: displayName
+  });
   const [open, setOpen] = useState43(false);
+  const isEmpty3 = !hasValue2(value);
+  if (isEmpty3) {
+    logInDev({
+      component: displayName,
+      message: "[Juno]: Plain Select must have init value",
+      level: "error"
+    });
+  }
   const display = useMemo80(() => {
     const item = children2.find((child) => {
       return child.props["value"] === value;
     });
     return item?.props["children"];
   }, [children2, value]);
-  const _renderValue = useCallback36((value2) => {
+  const _renderValue = (newValue) => {
     const _variant = switchVariantToButtonVariant(variant);
     return /* @__PURE__ */ React695.createElement(RcButton, {
       ref: ref2,
@@ -79518,27 +79534,13 @@ var _RcPlainSelect = forwardRef610(({
       "aria-label": "open menu",
       "aria-haspopup": "listbox",
       ...combineProps(defaultButtonProps, ButtonProps)
-    }, renderValue ? renderValue(value2) : display, IconComponent && /* @__PURE__ */ React695.createElement(IconComponent, {
+    }, renderValue ? renderValue(newValue) : display, IconComponent && /* @__PURE__ */ React695.createElement(IconComponent, {
       open
     }) || /* @__PURE__ */ React695.createElement(SelectArrowDownIcon, {
       color: void 0,
       className: open ? "MuiSelect-iconOpen" : ""
     }));
-  }, [
-    ButtonProps,
-    IconComponent,
-    autoFocus,
-    color2,
-    disabled3,
-    display,
-    fullWidth,
-    innerRef,
-    open,
-    ref2,
-    renderValue,
-    size,
-    variant
-  ]);
+  };
   const _SelectInputProps = useMemo80(() => {
     return combineProps({
       MenuComponent: virtualize ? RcVirtualizedMenu : RcMenu,
@@ -79572,6 +79574,10 @@ var _RcPlainSelect = forwardRef610(({
       setOpen(false);
       onCloseProp?.(e2);
     },
+    onChange: (e2, v2) => {
+      setValue(e2.target.value);
+      onChangeProp?.(e2, v2);
+    },
     SelectInputProps: _SelectInputProps,
     InputProps: _InputProps,
     renderValue: _renderValue,
@@ -79587,7 +79593,7 @@ RcPlainSelect.defaultProps = {
   variant: "text",
   size: "medium"
 };
-RcPlainSelect.displayName = "RcPlainSelect";
+RcPlainSelect.displayName = displayName;
 
 // src/components/Forms/Slider/Slider.tsx
 import React696, { forwardRef as forwardRef611, useMemo as useMemo81 } from "react";
@@ -80964,7 +80970,7 @@ var _RcPortal = (inProps) => {
 var RcPortal = _RcPortal;
 
 // src/components/Rating/Rating.tsx
-import React717, { forwardRef as forwardRef622, useCallback as useCallback37, useMemo as useMemo87 } from "react";
+import React717, { forwardRef as forwardRef622, useCallback as useCallback36, useMemo as useMemo87 } from "react";
 
 // node_modules/@material-ui/lab/esm/Rating/Rating.js
 var import_prop_types124 = __toModule(require_prop_types());
@@ -81433,7 +81439,7 @@ var _RcRating = forwardRef622((inProps, ref2) => {
     }
     return tooltipOpenStatus2;
   }, [max2]);
-  const IconContainer2 = useCallback37((containerProps) => {
+  const IconContainer2 = useCallback36((containerProps) => {
     const { value: itemValue, children: children2, ...other } = containerProps;
     return /* @__PURE__ */ React717.createElement("span", {
       ...other
