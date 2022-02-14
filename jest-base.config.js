@@ -1,10 +1,12 @@
+const path = require('path');
+
 module.exports = {
   testURL: 'http://localhost',
-  testPathIgnorePatterns: ['/node_modules/', '/build/'],
+  testPathIgnorePatterns: ['/node_modules/', '/build/', '/dist/'],
   moduleNameMapper: {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
-      '<rootDir>/tests/__mocks__/fileMock.js',
-    '\\.(css|less)$': '<rootDir>/tests/__mocks__/cssMock.js',
+      path.join(__dirname, './tests/__mocks__/fileMock.js'),
+    '\\.(css|less)$': path.join(__dirname, './tests/__mocks__/cssMock.js'),
   },
   transform: {
     '^.+\\.story\\.tsx$': '@storybook/addon-storyshots/injectFileName',
@@ -13,7 +15,7 @@ module.exports = {
   globals: {
     'ts-jest': {
       diagnostics: false,
-      tsconfig: './tsconfig.test.json',
+      tsconfig: path.join(__dirname, './tsconfig.test.json'),
       babelConfig: {
         plugins: ['require-context-hook'],
       },

@@ -7,7 +7,7 @@ import {
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
-} from '../../../storybook';
+} from '@ringcentral/juno-storybook';
 import { Rc__name__ } from '../__name__';
 
 export default {

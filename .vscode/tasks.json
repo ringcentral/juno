@@ -28,28 +28,28 @@
     {
       "label": "Run App",
       "type": "shell",
-      "command": "npm start",
+      "command": "yarn start",
       "isBackground": true,
       "problemMatcher": []
     },
     {
       "label": "Run App with doc",
       "type": "shell",
-      "command": "npm run storybook:docgen",
+      "command": "yarn storybook:docgen",
       "isBackground": true,
       "problemMatcher": []
     },
     {
       "label": "update storybook snapshot",
       "type": "shell",
-      "command": "npm run update-storybook-snapshot",
+      "command": "yarn update-storybook-snapshot",
       "isBackground": true,
       "problemMatcher": []
     },
     {
       "label": "update snapshot",
       "type": "shell",
-      "command": "npm run update-snapshot",
+      "command": "yarn update-snapshot",
       "isBackground": true,
       "problemMatcher": []
     }

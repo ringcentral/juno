@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.prod.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES5",
+    "outDir": "dist/es6",
+    "declaration": false
+  }
+}

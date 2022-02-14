@@ -15,11 +15,7 @@ jobs:
 
       - uses: borales/actions-yarn@v2.3.0
         with:
-          cmd: build-storybook -c .storybook -o public --no-dll --config-dir ./.storybook.doc
-
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: framer:build
+          cmd: predeploy
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4

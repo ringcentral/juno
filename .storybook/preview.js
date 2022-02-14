@@ -5,7 +5,7 @@ import './index.css';
 // import { UPDATE_GLOBALS } from '@storybook/core-events';
 import { themes } from '@storybook/theming';
 
-import { withThemeProvider } from '../src/storybook/decorators';
+import { withThemeProvider } from '@ringcentral/juno-storybook';
 import { getThemeValue } from './utils';
 
 const [themeType] = getThemeValue();

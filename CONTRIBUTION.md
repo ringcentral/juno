@@ -1,16 +1,16 @@
 ## Setup
 
-Install the dependencies with npm
+Install the dependencies with `yarn`
 
 ```ts
 // install deps
-npm install
+yarn
 
 // normal start, fast speed in develop component
-npm start
+yarn start
 
 // start with docgen, that run when you write doc in component
-npm run storybook:docgen
+yarn storybook:docgen
 
 ```
 
@@ -296,11 +296,11 @@ https://www.typescriptlang.org/docs/handbook/utility-types.html
 ## Testing
 
 ```shell
-npm run test
+yarn test
 ```
 
 ## Git flow
 
 1. checkout branch from `main`.
 2. commit with message like `feat(ComponentName): what change you made`.
-3. We test components change base on snapshot, run `npm run update-snapshot` to update snapshot before you push.
+3. We test components change base on snapshot, run `yarn update-snapshot` to update snapshot before you push.

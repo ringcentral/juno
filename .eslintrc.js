@@ -162,7 +162,7 @@ module.exports = {
       },
     },
     {
-      files: ['framer/**/*'],
+      files: ['packages/juno-framer/**/*'],
       rules: {
         'react/react-in-jsx-scope': 'off',
       },

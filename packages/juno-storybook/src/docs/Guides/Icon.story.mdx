@@ -1,0 +1,21 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+<Meta title="📖 Guides/Use Svg with Juno Icon" />
+
+### Use Svg
+
+using `@svgr/webpack` to load svg as component.
+
+you can import from `'@ringcentral/juno/icons/*.svg`, using like below.
+
+```tsx
+import phoneSvg from '@ringcentral/juno-icons/icon-phone.svg';
+
+const App = (props) => {
+  return (
+    <RcThemeProvider>
+      <RcIcon symbol={phoneSvg} />
+    </RcThemeProvider>
+  );
+};
+```

@@ -5,7 +5,7 @@
     "moduleResolution": "node",
     "module": "commonjs",
     "target": "es5",
-    "lib": ["es2015", "es2016", "es2017", "dom", "esnext.array"],
+    "lib": ["dom", "esnext"],
     "sourceMap": true,
     "checkJs": false,
     "allowJs": false,
@@ -24,6 +24,19 @@
     "esModuleInterop": true,
     "skipLibCheck": true
   },
-  "include": ["src/**/*.tsx", "src/**/*.ts"],
-  "exclude": ["node_modules", "build", "scripts", "dist", "dist-source"]
+  "include": [
+    "packages/**/*.tsx",
+    "packages/**/*.ts",
+    "packages/**/*.js",
+    "packages/**/*.json",
+    "typings/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "dist",
+    "dist-source",
+    "**/dist/*"
+  ]
 }

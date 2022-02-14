@@ -1,90 +1,64 @@
 {
-  "name": "@ringcentral/juno",
-  "version": "1.12.7",
+  "name": "@ringcentral/juno-monorepo",
   "license": "MIT",
   "author": "RingCentral",
-  "main": "./index.js",
-  "module": "./es6/index.js",
-  "typings": "./index.d.ts",
   "bugs": {
     "url": "https://github.com/ringcentral/juno/issues"
   },
+  "private": true,
   "homepage": "https://github.com/ringcentral/juno#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/ringcentral/juno.git"
   },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
   "scripts": {
-    "build:lib": "concurrently \"tsc --project tsconfig.prod.json\" \"tsc --project tsconfig.prod.es6.json\"",
-    "build:lib:inner": "node scripts/build/source-release.js",
-    "build:lib:test": "tsc --project tsconfig.prod.json --noEmit",
-    "prebuild:storybook": "concurrently \"npm run lint:ts\" \"npm run lint:css\" \"npm run test\" \"npm run build:lib:test\"",
+    "build:lib:test": "concurrently \"yarn workspace @ringcentral/juno run build:lib:test\" \"yarn workspace @ringcentral/juno-icon run build:lib:test\"",
+    "prebuild:storybook": "concurrently \"yarn lint:ts\" \"yarn workspace @ringcentral/juno run lint:css\" \"yarn test\" \"yarn workspace @ringcentral/juno run build:lib:test\"",
     "build:storybook": "build-storybook -c .storybook -o public --no-dll --config-dir ./.storybook.doc",
-    "clean": "rm -rf node_modules",
-    "clean-cache": "rm -rf node_modules/.cache",
+    "clean": "rm -rf node_modules && yarn workspaces run clean",
+    "clean-cache": "rm -rf node_modules/.cache && yarn workspaces run clean-cache",
     "clean-commit-cache": "rm -rf config/commitizen/jira.cache.json",
+    "clean-dist": "concurrently \"yarn workspace @ringcentral/juno run clean-dist\" \"yarn workspace @ringcentral/juno-icon run clean-dist\"",
     "commit": "git-cz",
     "create-component": "ts-node scripts/generator",
     "create-mdx": "ts-node scripts/generator/mdx",
-    "framer:build": "node framer/scripts/esmbuild build ./framer/src public",
-    "framer:serve": "node framer/scripts/esmbuild serve ./framer/src 8000",
-    "preicon-to-component": "rm -rf ./src/icon/* && ts-node scripts/update-icon --tmp && eslint scripts/utils/svgToComponentMapping.js --fix",
-    "icon-to-component": "svgr  --ext tsx --typescript --ref --memo ./src/icon/tmp --template ./scripts/iconToComponent.js -d ./src/icon",
-    "posticon-to-component": "rm -rf ./src/icon/tmp && eslint ./src/icon/** --fix",
-    "lint:css": "stylelint './src/**/*.ts ./src/**/*.tsx'",
     "lint:packageJson": "eslint ./package.json --no-ignore",
-    "lint:ts": "eslint './src/**/*.{ts,tsx,json}' --quiet",
+    "lint:ts": "concurrently \"yarn workspace @ringcentral/juno run lint:ts\" \"yarn workspace @ringcentral/juno-icon run lint:ts\"",
     "open-reporters": "open -a \"Google Chrome\" jest_html_reporters.html",
     "postinstall": "node scripts/postinstall.run",
-    "presence-icon-to-component": "svgr  --ext tsx --typescript --ref --memo ./src/components/Presence/assets --template ./scripts/iconToComponent.js -d ./src/components/Presence/assets && eslint ./src/components/Presence/assets/** --fix",
-    "release": "rm -rf dist && npm run build:lib && node scripts/build/build-npm-package.js",
-    "release-after": "npm run update-mdx && ts-node scripts/mergeIntoPreviousCommit && npm run start-next",
+    "release": "concurrently \"yarn workspace @ringcentral/juno run release\" \"yarn workspace @ringcentral/juno-icon run release\"",
+    "release-after": "yarn update-mdx && ts-node scripts/mergeIntoPreviousCommit && yarn start-next",
     "release-major": "node scripts/release/majorRelease.run.js",
-    "postrelease-major": "npm run release-after",
+    "postrelease-major": "yarn release-after",
     "release-minor": "node scripts/release/minorRelease.run.js",
-    "postrelease-minor": "npm run release-after",
+    "postrelease-minor": "yarn release-after",
     "release-patch": "node scripts/release/patchRelease.run.js",
-    "postrelease-patch": "npm run release-after",
-    "snapshot": "jest src/__tests__/snapshot/storyShots.test.tsx",
-    "start": "npm run storybook",
+    "postrelease-patch": "yarn release-after",
+    "start": "yarn storybook",
     "start-next": "node scripts/release/start-next",
     "storybook": "start-storybook -p 6006 --no-manager-cache",
     "storybook:docgen": "start-storybook -p 6006 --config-dir ./.storybook.doc --no-dll",
-    "test": "jest",
-    "update-icon": "concurrently \"ts-node scripts/update-icon\" \"npm run icon-to-component\"",
-    "postupdate-icon": "eslint src/components/Icon/icon-symbol.ts --fix && jest src/components/Icon/__tests__/icons.test.ts --updateSnapshot",
+    "test": "yarn clean-dist && jest",
     "update-mdx": "ts-node scripts/mdToMdx",
     "update-packageJson": "eslint ./package.json --no-ignore --fix",
-    "update-snapshot": "jest --updateSnapshot",
-    "update-storybook-snapshot": "jest src/__tests__/snapshot/storyShots.test.tsx --updateSnapshot",
-    "update-theme": "concurrently \"ts-node scripts/getOverrides\" \"ts-node scripts/jsonToScss\" \"ts-node scripts/createPaletteType\"",
-    "predeploy": "npm run build:storybook && npm run framer:build",
-    "deploy": "gh-pages -d public"
+    "update-snapshot": "yarn clean-dist && jest --updateSnapshot",
+    "update-storybook-snapshot": "yarn clean-dist && jest ./packages/juno-core/src/__tests__/snapshot/storyShots.test.tsx --updateSnapshot",
+    "predeploy": "yarn build:storybook && yarn workspace @ringcentral/juno-framer run framer:build",
+    "deploy": "gh-pages -d public",
+    "publish-npm": "concurrently \"yarn workspace @ringcentral/juno run publish-npm\" \"yarn workspace @ringcentral/juno-icon run publish-npm\""
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run prebuild:storybook"
+      "pre-push": "yarn prebuild:storybook"
     }
   },
-  "dependencies": {
-    "@date-io/moment": "^1.3.11",
-    "@material-ui/core": "^4.12.3",
-    "@material-ui/lab": "^4.0.0-alpha.60",
-    "@material-ui/pickers": "^3.3.10",
-    "@material-ui/styles": "^4.11.4",
-    "@types/lodash": "^4.14.169",
-    "@types/react-beautiful-dnd": "^13.0.0",
-    "@types/styled-components": "4.0.3",
-    "clsx": "^1.0.4",
-    "focus-visible": "^5.1.0",
-    "lodash": "^4.17.21",
-    "react-beautiful-dnd": "^13.0.0",
-    "react-virtuoso": "^1.9.3",
-    "resize-observer-polyfill": "^1.5.1",
-    "tslib": ">=2.0.0",
-    "typeface-lato": "^0.0.75"
-  },
   "devDependencies": {
+    "@types/glob-parent": "^5.1.0",
     "@babel/node": "7.16.0",
     "@phenomnomnominal/tsquery": "4.1.1",
     "@storybook/addon-a11y": "6.4.9",
@@ -98,8 +72,6 @@
     "@storybook/manager-webpack5": "6.4.9",
     "@storybook/react": "6.4.9",
     "@storybook/theming": "6.4.9",
-    "@svgr/cli": "5.5.0",
-    "@svgr/webpack": "5.5.0",
     "@testing-library/dom": "8.11.1",
     "@testing-library/jest-dom": "5.15.0",
     "@testing-library/react": "12.1.2",
@@ -122,7 +94,6 @@
     "commitizen": "4.2.4",
     "concurrently": "6.4.0",
     "copy-webpack-plugin": "10.0.0",
-    "esbuild": "0.13.14",
     "eslint": "7.26.0",
     "eslint-config-airbnb-typescript": "12.3.1",
     "eslint-config-prettier": "8.3.0",
@@ -144,8 +115,6 @@
     "jest-html-reporters": "2.1.6",
     "jest-styled-components": "7.0.6",
     "jira-connector": "2.10.0",
-    "json-sass": "1.3.5",
-    "moment": "^2.29.1",
     "npm-check-updates": "12.0.2",
     "prettier": "2.4.1",
     "puppeteer-core": "11.0.0",
@@ -154,7 +123,6 @@
     "react-test-renderer": "17.0.2",
     "speed-measure-webpack-plugin": "1.5.0",
     "standard-version": "9.0.0",
-    "styled-components": "5.3.0",
     "stylelint": "9.10.1",
     "stylelint-config-recommended": "2.1.0",
     "stylelint-config-styled-components": "0.1.1",
@@ -169,30 +137,8 @@
     "webpack": "5.64.1",
     "winston": "3.3.3"
   },
-  "peerDependencies": {
-    "moment": "^2.29.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "styled-components": "^5.3.3"
-  },
   "engines": {
     "node": ">=12.0.0",
     "npm": ">=6.9.0"
-  },
-  "exports": {
-    ".": {
-      "node": {
-        "module": "./es6/index.js",
-        "require": "./index.js"
-      },
-      "default": "./es6/index.js"
-    },
-    "./": {
-      "node": {
-        "module": "./es6/",
-        "require": "./"
-      },
-      "default": "./es6/"
-    }
   }
 }

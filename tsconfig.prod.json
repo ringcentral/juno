@@ -3,7 +3,6 @@
   "compilerOptions": {
     "module": "CommonJS",
     "outDir": "dist",
-    "rootDir": "src",
     "target": "ES5",
     "noUnusedLocals": true,
     "declaration": true,
@@ -11,16 +10,17 @@
     "removeComments": false,
     "baseUrl": ".",
     "paths": {
-      "@emotion/core": ["./src/typings/skip.d.ts"],
-      "react-router": ["./src/typings/skip.d.ts"]
+      "@emotion/core": ["./typings/skip.d.ts"],
+      "react-router": ["./typings/skip.d.ts"]
     }
   },
   "exclude": [
+    "node_modules",
+    "scripts",
+    "dist",
     "**/__stories__/*",
     "**/__tests__/*",
     "**/__mocks__/*",
-    "src/storybook/*",
-    "scripts/**/*",
     "**/*.test.tsx"
   ]
 }

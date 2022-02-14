@@ -1,17 +1,15 @@
 import fs from 'fs-extra';
 import path from 'path';
 
-import { Lib } from './utils/lib';
-
 console.log('[Release]: update doc');
 
 const rootPath = process.cwd();
 const readMePath = path.join(rootPath, 'README.md');
 const changelogPath = path.join(rootPath, 'CHANGELOG.md');
 const contributionPath = path.join(rootPath, 'CONTRIBUTION.md');
-const storybookDocPath = path.join(rootPath, './src/storybook/docs');
+const storybookDocPath = path.join(rootPath, './packages/juno-storybook/src/docs');
 
-Lib.makeDirExit(storybookDocPath);
+fs.ensureDirSync(storybookDocPath);
 
 [
   {

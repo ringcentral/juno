@@ -1,0 +1,26 @@
+{
+  "name": "@ringcentral/juno-test",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "RingCentral",
+  "bugs": {
+    "url": "https://github.com/ringcentral/juno/issues"
+  },
+  "homepage": "https://github.com/ringcentral/juno#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ringcentral/juno.git"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "clean-cache": "rm -rf node_modules/.cache"
+  },
+  "dependencies": {
+    "@ringcentral/juno": "*"
+  },
+  "peerDependencies": {
+    "@material-ui/core": "^4.12.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

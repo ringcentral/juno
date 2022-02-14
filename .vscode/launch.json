@@ -6,9 +6,7 @@
       "name": "update framer",
       "program": "${workspaceFolder}/framer/scripts/update-code-components.js",
       "request": "launch",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
+      "skipFiles": ["<node_internals>/**"],
       "type": "pwa-node"
     },
     {
@@ -44,6 +42,19 @@
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
       "disableOptimisticBPs": true
+    },
+    {
+      "name": "build",
+      "type": "node",
+      "request": "launch",
+      "args": ["${workspaceRoot}/scripts/build.ts"],
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "cwd": "${workspaceRoot}",
+      "protocol": "inspector",
+      "internalConsoleOptions": "openOnSessionStart",
+      "env": {
+        "TS_NODE_IGNORE": "false"
+      }
     },
     {
       "name": "getTypeDocToMdx",

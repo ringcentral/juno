@@ -15,9 +15,9 @@ View in [Codesandbox Example](https://codesandbox.io/s/4j370).
 ### Install
 
 ```ts
-npm i @ringcentral/juno styled-components
+npm i @ringcentral/juno @ringcentral/juno-icon styled-components moment
 // or
-yarn add @ringcentral/juno styled-components
+yarn add @ringcentral/juno @ringcentral/juno-icon styled-components moment
 ```
 
 ### Quick Start
@@ -53,7 +53,7 @@ We can use any component with `RcIcon` prop `symbol`, pass component into symbol
 ```tsx
 import { RcIcon } from '@ringcentral/juno';
 
-import { Phone } from '@ringcentral/juno/icon';
+import { Phone } from '@ringcentral/juno-icon';
 
 const App = (props) => {
   return (

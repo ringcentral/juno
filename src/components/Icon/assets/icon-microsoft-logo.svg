@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<title>microsoft-logo</title>
-<path fill="#f1511b" style="fill: var(--color49, #f1511b)" d="M15.403 15.403h-11.403v-11.403h11.403z"></path>
-<path fill="#80cc28" style="fill: var(--color50, #80cc28)" d="M27.997 15.403h-11.405v-11.403h11.403v11.403z"></path>
-<path fill="#00adef" style="fill: var(--color51, #00adef)" d="M15.403 28h-11.403v-11.403h11.403z"></path>
-<path fill="#fbbc09" style="fill: var(--color52, #fbbc09)" d="M27.997 28h-11.405v-11.403h11.403v11.403z"></path>
-</svg>

@@ -15,7 +15,7 @@ module.exports = async ({ config }) => {
         ...config.module.rules,
         {
           test: /\.(ts|tsx)$/,
-          include: path.resolve(__dirname, '../src'),
+          include: path.resolve(__dirname, '../package'),
           use: [
             {
               loader: 'thread-loader',
