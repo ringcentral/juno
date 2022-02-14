@@ -136,12 +136,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: [
-        '**/__tests__/**/*',
-        '**/__mocks__/**/*',
-        '**/__stories__/**/*',
-        'src/storybook/**/*',
-      ],
+      files: ['**/__tests__/**/*', '**/__mocks__/**/*', '**/__stories__/**/*'],
       rules: {
         '@typescript-eslint/no-unused-vars': 'warn',
         'no-console': 'off',
