@@ -33,3 +33,5 @@ jira.config.json
 jira.cache.json
 
 framer/scripts/auth.json
+
+.env

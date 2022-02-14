@@ -44,6 +44,7 @@
     "storybook": "start-storybook -p 6006 --no-manager-cache",
     "storybook:docgen": "start-storybook -p 6006 --config-dir ./.storybook.doc --no-dll",
     "test": "yarn clean-dist && jest",
+    "test:percy": "percy storybook ./public",
     "update-mdx": "ts-node scripts/mdToMdx",
     "update-packageJson": "eslint ./package.json --no-ignore --fix",
     "update-snapshot": "yarn clean-dist && jest --updateSnapshot",
@@ -58,8 +59,9 @@
     }
   },
   "devDependencies": {
-    "@types/glob-parent": "^5.1.0",
     "@babel/node": "7.16.0",
+    "@percy/cli": "1.0.0-beta.75",
+    "@percy/storybook": "4.1.0",
     "@phenomnomnominal/tsquery": "4.1.1",
     "@storybook/addon-a11y": "6.4.9",
     "@storybook/addon-docs": "6.4.9",
@@ -78,6 +80,7 @@
     "@testing-library/react-hooks": "7.0.2",
     "@testing-library/user-event": "13.5.0",
     "@types/fs-extra": "9.0.13",
+    "@types/glob-parent": "^5.1.0",
     "@types/jest": "26.0.22",
     "@types/node": "16.11.9",
     "@types/react": "17.0.35",
