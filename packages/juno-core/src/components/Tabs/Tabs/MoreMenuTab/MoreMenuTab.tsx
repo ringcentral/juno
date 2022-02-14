@@ -1,15 +1,17 @@
 import React, { forwardRef, useMemo, useState } from 'react';
 
+import { MoreHoriz as MoreHorizIcon } from '@ringcentral/juno-icon';
+
 import {
   RcBaseProps,
   styled,
   useEventCallback,
   useId,
 } from '../../../../foundation';
-import { MoreHoriz as MoreHorizIcon } from '@ringcentral/juno-icon';
 import { RcIcon } from '../../../Icon';
 import { RcListItemIcon, RcListItemText } from '../../../List';
 import { RcMenu, RcMenuItem, RcMenuProps } from '../../../Menu';
+import type { RcMenuOnCloseReasonsType } from '../../../Menu/Menu/MenuContext';
 import { RcTooltip, RcTooltipProps } from '../../../Tooltip';
 import { RcTab, RcTabProps } from '../../Tab';
 import { getKey } from '../MoreMenuTabs/utils';
@@ -61,7 +63,7 @@ const _MoreMenuTab = forwardRef<any, MoreMenuTabProps>((props, ref) => {
   );
 
   const handleMenuClose = useEventCallback(
-    (event: {}, reason: 'backdropClick' | 'escapeKeyDown') => {
+    (event: {}, reason: RcMenuOnCloseReasonsType) => {
       setAnchorEl(null);
       onMenuCloseProp?.(event, reason);
     },

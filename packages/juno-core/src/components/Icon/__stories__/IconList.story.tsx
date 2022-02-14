@@ -178,7 +178,7 @@ export const IconList: FunctionComponent<IconListProps> = () => {
           green{' '}
         </RcTypography>
         shadow means this icon is not in current version of icon yet, you can
-        update icon by running 'npm run update-icon'
+        update icon by running 'yarn update-icon'
       </p>
       <p>
         <RcTypography color="danger.f02" variant="body1" component="span">

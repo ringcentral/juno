@@ -1,6 +1,6 @@
 import {
-  Asterisk as AsteriskIcon,
-  Hash as HashIcon,
+  Asterisk,
+  Hash,
   Svg0,
   Svg1,
   Svg2,
@@ -45,9 +45,9 @@ export const DIALER_PAD_ICONS: [SvgSymbol, DIALER_PAD_ICON_VALUES, string][] = [
   [Svg7, '7', 'P Q R S'],
   [Svg8, '8', 'T U V'],
   [Svg9, '9', 'W X Y Z'],
-  [AsteriskIcon, '*', ''],
+  [Asterisk, '*', ''],
   [Svg0, '0', '+'],
-  [HashIcon, '#', ''],
+  [Hash, '#', ''],
 ];
 
 export const DIALER_PAD_PLUS = '+';

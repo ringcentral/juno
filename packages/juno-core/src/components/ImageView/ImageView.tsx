@@ -171,7 +171,7 @@ class RcImageView extends React.Component<RcImageProps, RcImageState> {
 
   get error() {
     const { errors } = this.state;
-    return values(errors).every((status: boolean) => status);
+    return values(errors).every((status) => !!status);
   }
 
   private _drawToCanvas = (imgBitmap: ImageBitmap | HTMLImageElement) => {

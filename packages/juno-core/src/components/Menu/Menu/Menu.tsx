@@ -40,7 +40,9 @@ const MemoMuiMenu = memo(MuiMenu);
 const _RcMenu = forwardRef<any, RcMenuProps>((inProps: RcMenuProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcMenu' });
   const { classes: classesProp, children, autoClose, onClose, ...rest } = props;
-  const [focusedMenuItemId, setFocusedMenuItemId] = useState(null);
+  const [focusedMenuItemId, setFocusedMenuItemId] = useState<string | null>(
+    null,
+  );
   const id = useId('menu-', true);
 
   const { externalWindow } = useRcPortalWindowContext();

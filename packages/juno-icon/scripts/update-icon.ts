@@ -43,7 +43,6 @@ const handleProcessResult = ({
 };
 
 axios
-  // @ts-ignore
   .get(
     `https://i.icomoon.io/public/6483cc0f53/Jupiternewicontest/symbol-defs.svg?${Math.random()}`,
   )
