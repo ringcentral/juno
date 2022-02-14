@@ -1,11 +1,11 @@
+/* eslint-disable jest/no-conditional-expect */
 import React from 'react';
 
 import range from 'lodash/range';
 
-/* eslint-disable jest/no-conditional-expect */
+import { act, EachRun, fireEvent, screen, sleep } from '@ringcentral/juno-test';
 import userEvent from '@testing-library/user-event';
 
-import { act, EachRun, fireEvent, screen, sleep } from '@ringcentral/juno-test';
 import {
   getSelectionPosition,
   setSelectionPosition,

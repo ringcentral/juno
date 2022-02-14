@@ -1,7 +1,5 @@
 import React, { ComponentProps } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import { Star } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -10,6 +8,8 @@ import {
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
 import { RcIcon } from '../../../Icon';
 import { RcListItem } from '../../ListItem';
 import { RcListItemText } from '../../ListItemText';

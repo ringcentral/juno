@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 
+import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import { Title } from '@ringcentral/juno-storybook';
 import styled from '../../../styled-components';
 import { shadows } from '../../../styles';
 import { useResizeObserver } from '../useResizeObserver';

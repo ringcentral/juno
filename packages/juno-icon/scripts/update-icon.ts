@@ -1,7 +1,7 @@
 import axios from 'axios';
+import { spawnSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
-import { spawnSync } from 'child_process';
 
 function clearString(s: string) {
   const pattern = new RegExp(/[.\-_]/);

@@ -1,13 +1,13 @@
 import React, { ComponentProps } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
 import { RcTypography } from '../../../Typography';
 import { RcCard } from '../../Card';
 import { RcCardContent } from '../CardContent';

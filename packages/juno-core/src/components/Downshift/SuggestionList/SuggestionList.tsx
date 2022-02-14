@@ -10,6 +10,8 @@ import React, {
 
 import clsx from 'clsx';
 
+import { ArrowDown2 } from '@ringcentral/juno-icon';
+
 import {
   combineClasses,
   combineProps,
@@ -23,7 +25,6 @@ import {
   useSleep,
   useThemeProps,
 } from '../../../foundation';
-import { ArrowDown2 } from '@ringcentral/juno-icon';
 import { RcBox } from '../../Box';
 import { RcIconButton } from '../../Buttons/IconButton';
 import { RcMenuItem } from '../../Menu/MenuItem';

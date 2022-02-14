@@ -1,3 +1,5 @@
+import React from 'react';
+
 import {
   RcDefaultDarkTheme,
   RcDefaultHighContrastTheme,
@@ -7,7 +9,7 @@ import {
 import { addons, StoryContext } from '@storybook/addons';
 import { UPDATE_GLOBALS } from '@storybook/core-events';
 import { Story as StoryType } from '@storybook/react';
-import React from 'react';
+
 import BrightnessContrastIcon from '../assets/BrightnessContrast';
 import SunIcon from '../assets/Sun';
 import { MainStoryView } from '../components';

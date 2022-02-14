@@ -2,7 +2,7 @@ import React, { FunctionComponent, useEffect, useRef } from 'react';
 
 import { Jss } from 'jss';
 // @ts-ignore
-import { StyleSheetManagerProps, __PRIVATE__ } from 'styled-components';
+import { __PRIVATE__, StyleSheetManagerProps } from 'styled-components';
 
 import MUIStylesProvider, {
   StylesContext as MUIStylesContext,

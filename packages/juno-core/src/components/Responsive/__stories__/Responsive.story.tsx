@@ -1,5 +1,11 @@
 import React, { ComponentProps, useRef, useState } from 'react';
 
+import {
+  notControlInDocTable,
+  notShowInDocTable,
+  sortInDocTable,
+  switchToControlKnobs,
+} from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
 import {
@@ -8,12 +14,6 @@ import {
   useResponsiveMatch,
   withResponsive,
 } from '../../../foundation';
-import {
-  notControlInDocTable,
-  notShowInDocTable,
-  sortInDocTable,
-  switchToControlKnobs,
-} from '@ringcentral/juno-storybook';
 import { RcButton } from '../../Buttons';
 import {
   RcDialog,

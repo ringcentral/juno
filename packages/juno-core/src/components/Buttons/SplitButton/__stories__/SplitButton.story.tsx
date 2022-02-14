@@ -1,15 +1,13 @@
 import React, { ComponentProps, FunctionComponent } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import { Add as AddSvg, Reply as ReplySvg } from '@ringcentral/juno-icon';
-
 import {
   paletteChoice,
   sortInDocTable,
   switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
 
 import { RcGrid } from '../../../Grid';
 import { RcIcon } from '../../../Icon';

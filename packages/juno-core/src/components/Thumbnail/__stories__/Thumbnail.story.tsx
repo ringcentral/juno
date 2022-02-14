@@ -1,9 +1,9 @@
 import React, { ComponentProps } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import { NonEdit } from '@ringcentral/juno-icon';
 import { notShowInDocTable } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
 import { RcThumbnail } from '../Thumbnail';
 
 export default {

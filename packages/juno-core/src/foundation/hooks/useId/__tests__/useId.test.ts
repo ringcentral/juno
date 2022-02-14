@@ -1,6 +1,6 @@
+import { EachRun } from '@ringcentral/juno-test';
 import { renderHook } from '@testing-library/react-hooks';
 
-import { EachRun } from '@ringcentral/juno-test';
 import { useId } from '../useId';
 
 // * useId() => 'rc-juno-id-xxxx'

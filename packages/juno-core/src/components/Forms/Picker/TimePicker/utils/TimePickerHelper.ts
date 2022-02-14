@@ -148,6 +148,7 @@ export {
   getFormattedTime,
   getHourAndMinute,
   getPeriod,
+  getRecoupHour,
   getTimestamp,
   getTimestampFromDate,
   getTimestampFromHourAndMin,
@@ -162,5 +163,4 @@ export {
   TIME_GAP,
   twelveHourSystemSource,
   twentyFourHourSystemSource,
-  getRecoupHour,
 };

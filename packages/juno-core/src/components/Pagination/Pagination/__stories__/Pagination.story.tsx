@@ -1,14 +1,14 @@
 import React, { ComponentProps, useState } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
-import { styled } from '../../../../foundation';
 import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
+import { styled } from '../../../../foundation';
 import { RcButton } from '../../../Buttons';
 import { RcPaginationItem } from '../../PaginationItem';
 import { RcPagination } from '../Pagination';

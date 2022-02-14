@@ -1,14 +1,14 @@
 import React, { ComponentProps } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
-import { styled } from '../../../../foundation';
 import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
+import { styled } from '../../../../foundation';
 import { RcTypography } from '../../../Typography';
 import { RcButtonBase } from '../ButtonBase';
 

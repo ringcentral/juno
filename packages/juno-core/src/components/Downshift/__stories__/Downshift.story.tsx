@@ -1,3 +1,11 @@
+import React, {
+  ComponentProps,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
+
 import { ArrowDown2 } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -8,13 +16,7 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-import React, {
-  ComponentProps,
-  useCallback,
-  useEffect,
-  useRef,
-  useState,
-} from 'react';
+
 import {
   combineProps,
   RcClasses,
@@ -22,7 +24,6 @@ import {
   styled,
   useEventCallback,
 } from '../../../foundation';
-
 import { RcAvatar } from '../../Avatar';
 import { RcBox } from '../../Box';
 import { RcButton, RcIconButton } from '../../Buttons';

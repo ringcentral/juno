@@ -2,14 +2,14 @@ import React, { ComponentProps, useState } from 'react';
 
 import range from 'lodash/range';
 
-import { Meta, Story } from '@storybook/react';
-
 import {
   notControlInDocTable,
   notShowInDocTable,
   paletteChoice,
   sortInDocTable,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
 import { RcGrid } from '../../../Grid';
 import { RcListItem } from '../../../List/ListItem';
 import { RcMenuItem } from '../../../Menu';

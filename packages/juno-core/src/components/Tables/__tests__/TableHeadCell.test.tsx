@@ -1,8 +1,8 @@
 import React from 'react';
 
+import { cleanup, render } from '@ringcentral/juno-test';
 import { screen } from '@testing-library/react';
 
-import { cleanup, render } from '@ringcentral/juno-test';
 import { RcTableHeadCell } from '../TableHeadCell';
 import { TableHeadCellProps } from '../types';
 

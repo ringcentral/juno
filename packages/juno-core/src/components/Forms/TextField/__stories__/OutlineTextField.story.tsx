@@ -6,8 +6,6 @@ import React, {
   useState,
 } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import {
   Add as AddSvg,
   BoxBorder as BoxSvg,
@@ -16,13 +14,14 @@ import {
   LockBorder,
   SearchNav,
 } from '@ringcentral/juno-icon';
-
 import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
 import { RcIconButton } from '../../../Buttons/IconButton';
 import { RcIcon } from '../../../Icon';
 import { RcOutlineTextFieldIconSizes, RcTextField } from '../TextField';

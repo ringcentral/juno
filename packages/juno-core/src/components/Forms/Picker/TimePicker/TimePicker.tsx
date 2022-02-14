@@ -8,6 +8,7 @@ import React, {
 } from 'react';
 
 import { runKeyHandler } from '@material-ui/pickers/_shared/hooks/useKeyDown';
+import { TimeBorder as TimeBorderIcon } from '@ringcentral/juno-icon';
 
 import {
   combineClasses,
@@ -21,7 +22,6 @@ import {
   useEventCallback,
   useThemeProps,
 } from '../../../../foundation';
-import { TimeBorder as TimeBorderIcon } from '@ringcentral/juno-icon';
 import { RcBox } from '../../../Box';
 import {
   PickerTextField,
@@ -43,6 +43,7 @@ import {
   getNumberPickerBoundary,
   getPeriod,
   getRangeBoundary,
+  getRecoupHour,
   getTimestamp,
   getTimestampFromDate,
   HALF_DAY_HOURS,
@@ -52,7 +53,6 @@ import {
   TIME_GAP,
   twelveHourSystemSource,
   twentyFourHourSystemSource,
-  getRecoupHour,
 } from './utils';
 
 type RcTimePickerSize = RcBaseSize<'small' | 'medium'>;

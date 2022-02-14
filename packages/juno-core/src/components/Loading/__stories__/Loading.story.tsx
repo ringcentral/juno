@@ -1,9 +1,9 @@
 import React, { ComponentProps, useState } from 'react';
 
+import { notShowInDocTable } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
 import { flexCenterStyle, palette2, styled } from '../../../foundation';
-import { notShowInDocTable } from '@ringcentral/juno-storybook';
 import { RcButton } from '../../Buttons';
 import { RcLoading } from '../Loading';
 

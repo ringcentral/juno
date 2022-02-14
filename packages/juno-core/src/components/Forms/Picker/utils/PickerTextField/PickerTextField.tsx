@@ -10,6 +10,7 @@ import React, {
 import uniqueId from 'lodash/uniqueId';
 
 import { PopoverOrigin } from '@material-ui/core/Popover';
+import { DeleteCircle as DeleteCircleIcon } from '@ringcentral/juno-icon';
 
 import {
   combineProps,
@@ -17,7 +18,6 @@ import {
   useA11yKeyEvent,
   useEventCallback,
 } from '../../../../../foundation';
-import { DeleteCircle as DeleteCircleIcon } from '@ringcentral/juno-icon';
 import { RcIconButton } from '../../../../Buttons/IconButton';
 import { SvgSymbol } from '../../../../Icon';
 import { RcPopoverProps } from '../../../../Popover';

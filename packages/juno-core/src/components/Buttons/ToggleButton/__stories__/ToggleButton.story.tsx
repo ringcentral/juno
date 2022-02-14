@@ -1,7 +1,5 @@
 import React, { ComponentProps } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import { AlignJustify } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -10,6 +8,7 @@ import {
   switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
 
 import { RcToggleButton } from '../ToggleButton';
 

@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
 
+import { switchToControlKnobs } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
 import { RcButton } from '../../../../components/Buttons';
 import { RcResponsive } from '../../../../components/Responsive';
 import { RcTypography } from '../../../../components/Typography';
-import { switchToControlKnobs } from '@ringcentral/juno-storybook';
 import styled from '../../../styled-components';
 import { withResponsive } from '../withResponsive';
 

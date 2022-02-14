@@ -1,9 +1,5 @@
 import React, { ComponentProps, useState } from 'react';
 
-import { boolean } from '@storybook/addon-knobs';
-import { Meta, Story } from '@storybook/react';
-
-import { styled } from '../../../foundation';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -11,7 +7,10 @@ import {
   switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
+import { boolean } from '@storybook/addon-knobs';
+import { Meta, Story } from '@storybook/react';
 
+import { styled } from '../../../foundation';
 import { RcButton } from '../../Buttons';
 import { RcTypography } from '../../Typography';
 import { RcStep } from '../Step';

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { fireEvent, render } from '@ringcentral/juno-test';
+
 import { RcInlineEditable } from '../InlineEditable';
 import { RcInlineEditableClasses } from '../utils';
 

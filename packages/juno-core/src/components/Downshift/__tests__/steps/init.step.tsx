@@ -2,8 +2,6 @@ import React, { useRef, useState } from 'react';
 
 import { act } from 'react-dom/test-utils';
 
-import userEvent from '@testing-library/user-event';
-
 import {
   fireEvent,
   render,
@@ -11,6 +9,8 @@ import {
   screen,
   within,
 } from '@ringcentral/juno-test';
+import userEvent from '@testing-library/user-event';
+
 import { options } from '../../__stories__/options';
 import {
   RcDownshift,

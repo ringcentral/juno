@@ -1,12 +1,11 @@
 import React, { ComponentProps, useState } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import {
   sortInDocTable,
   switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
 
 import TextFieldStory from '../../TextField/__stories__/TextField.story';
 import { RcTextarea } from '../Textarea';

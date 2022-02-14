@@ -1,7 +1,5 @@
 import React, { ComponentProps } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import { Pin as PinSvg } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -9,6 +7,8 @@ import {
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
 import { RcBadge } from '../../../Badge';
 import { RcIcon } from '../../../Icon';
 import { RcTypography } from '../../../Typography';

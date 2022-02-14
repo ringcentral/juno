@@ -1,3 +1,5 @@
+import React, { FunctionComponent, ReactNode, useRef } from 'react';
+
 import { ButtonBaseActions } from '@material-ui/core';
 import {
   createGlobalStyle,
@@ -10,7 +12,7 @@ import {
   RcTypography,
   styled,
 } from '@ringcentral/juno';
-import React, { FunctionComponent, ReactNode, useRef } from 'react';
+
 import CenterFocusWeak from '../assets/CenterFocusWeak';
 import type { TagProps } from '../typings/tag';
 import { Tag } from './Tag';

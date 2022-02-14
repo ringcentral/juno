@@ -1,8 +1,8 @@
 import React from 'react';
 
+import { cleanup, render } from '@ringcentral/juno-test';
 import { act, screen } from '@testing-library/react';
 
-import { cleanup, render } from '@ringcentral/juno-test';
 import { withDelay } from '../withDelay';
 
 const DELAY = 1000;

@@ -1,15 +1,14 @@
 import React, { ComponentProps } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import { Close, Settings, Star } from '@ringcentral/juno-icon';
-
 import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
 import { RcAvatar } from '../../../Avatar';
 import { RcBox } from '../../../Box';
 import { RcIconButton } from '../../../Buttons/IconButton';

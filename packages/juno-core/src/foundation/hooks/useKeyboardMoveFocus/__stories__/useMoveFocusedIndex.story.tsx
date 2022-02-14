@@ -2,11 +2,10 @@ import React, { FunctionComponent, useLayoutEffect, useRef } from 'react';
 
 import range from 'lodash/range';
 
+import { isTestEnv, Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
 import { RcAvatar, RcBox, RcText } from '../../../../components';
-import { Title, isTestEnv } from '@ringcentral/juno-storybook';
-
 import styled from '../../../styled-components';
 import { useResultRef } from '../../useResultRef';
 import {

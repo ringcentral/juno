@@ -1,6 +1,11 @@
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
 
 import MuiCheckbox from '@material-ui/core/Checkbox';
+import {
+  Indeterminate as indeterminateIcon,
+  Selects as selectIcon,
+  Unselect as unSelectIcon,
+} from '@ringcentral/juno-icon';
 
 import {
   combineClasses,
@@ -11,12 +16,6 @@ import {
   useThemeProps,
   withDeprecatedCheck,
 } from '../../../foundation';
-import {
-  Indeterminate as indeterminateIcon,
-  Selects as selectIcon,
-  Unselect as unSelectIcon,
-} from '@ringcentral/juno-icon';
-
 import { RcIconButtonSize } from '../../Buttons/IconButton';
 import { withTooltip } from '../../Tooltip';
 import { RcFormControlLabel } from '../FormControlLabel';

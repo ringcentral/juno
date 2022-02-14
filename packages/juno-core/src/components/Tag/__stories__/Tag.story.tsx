@@ -1,12 +1,12 @@
 import React, { ComponentProps } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import {
   notShowInDocTable,
   paletteChoice,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
 import { RcTag } from '../Tag';
 
 export default {

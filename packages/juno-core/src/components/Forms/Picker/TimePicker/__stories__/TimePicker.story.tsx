@@ -1,15 +1,14 @@
 import React, { ComponentProps, useState } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
-import { spacing, styled } from '../../../../../foundation';
 import {
   notControlInDocTable,
   sortInDocTable,
   switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
 
+import { spacing, styled } from '../../../../../foundation';
 import { RcButton } from '../../../../Buttons/Button';
 import { RcTypography } from '../../../../Typography';
 import { RcTimePicker, RcTimePickerProps } from '../TimePicker';

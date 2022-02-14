@@ -1,9 +1,9 @@
 import {
+  getHourAndMinute,
   getTimestamp,
   getTimestampFromDate,
   HOUR_MINUTES,
   TIME_GAP,
-  getHourAndMinute,
 } from './TimePickerHelper';
 
 const getDateBeginning = () => {

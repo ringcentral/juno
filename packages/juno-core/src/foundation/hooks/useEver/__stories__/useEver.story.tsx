@@ -1,10 +1,12 @@
-import React, { useRef, useState, useCallback } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
+
+import { MenuItem } from '@material-ui/core';
+import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
+
 import { RcMenu } from '../../../../components';
 import { RcButton } from '../../../../components/Buttons';
-import { Title } from '@ringcentral/juno-storybook';
 import { useEver } from '../useEver';
-import { MenuItem } from '@material-ui/core';
 
 export default {
   title: '🔧 Foundation/Hooks/useEver',

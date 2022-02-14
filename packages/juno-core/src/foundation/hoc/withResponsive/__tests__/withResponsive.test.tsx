@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 
+import { cleanup, render } from '@ringcentral/juno-test';
 import { screen } from '@testing-library/react';
 
-import { cleanup, render } from '@ringcentral/juno-test';
 import { RcResponsiveContext } from '../../../contexts';
 import { BaseSizeKey } from '../../../typings';
 import { withResponsive } from '../withResponsive';

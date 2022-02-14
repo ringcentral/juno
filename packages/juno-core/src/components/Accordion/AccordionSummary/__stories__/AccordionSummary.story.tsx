@@ -1,3 +1,5 @@
+import React, { ComponentProps } from 'react';
+
 import { ArrowUp } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -6,7 +8,7 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-import React, { ComponentProps } from 'react';
+
 import { RcAccordion } from '../../Accordion';
 import { RcAccordionDetails } from '../../AccordionDetails';
 import { RcAccordionSummary } from '../AccordionSummary';

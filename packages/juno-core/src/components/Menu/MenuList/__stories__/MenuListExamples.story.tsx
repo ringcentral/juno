@@ -1,7 +1,5 @@
 import React, { ComponentProps } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -9,6 +7,7 @@ import {
   switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
 
 import { RcListItemText } from '../../../List/ListItemText';
 import { RcText } from '../../../Text';

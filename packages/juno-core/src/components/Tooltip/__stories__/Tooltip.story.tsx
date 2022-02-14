@@ -5,11 +5,7 @@ import React, {
   useState,
 } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
-import { styled, useTheme } from '../../../foundation';
 import { Add, Videocam } from '@ringcentral/juno-icon';
-
 import {
   notShowInDocTable,
   paletteChoice,
@@ -17,7 +13,9 @@ import {
   switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
 
+import { styled, useTheme } from '../../../foundation';
 import { RcBox } from '../../Box';
 import { RcButton, RcIconButton, RcSplitButton } from '../../Buttons';
 import {

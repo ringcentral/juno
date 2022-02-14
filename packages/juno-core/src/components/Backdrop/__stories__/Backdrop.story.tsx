@@ -1,14 +1,14 @@
 import React, { ComponentProps } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
-import { styled, zIndex } from '../../../foundation';
 import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
+import { styled, zIndex } from '../../../foundation';
 import { RcButton } from '../../Buttons/Button';
 import { RcCircularProgress } from '../../Progress/CircularProgress';
 import { RcBackdrop } from '../Backdrop';

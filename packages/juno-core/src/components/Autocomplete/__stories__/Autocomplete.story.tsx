@@ -1,8 +1,8 @@
 import React, { ComponentProps, useState } from 'react';
 
+import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import { Title } from '@ringcentral/juno-storybook';
 import { RcDownshift, RcDownshiftSelectedItem } from '../../Downshift';
 import { RcTextField } from '../../Forms/TextField';
 import { RcAutocomplete } from '../Autocomplete';

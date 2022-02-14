@@ -1,11 +1,11 @@
 import React, { useCallback, useMemo, useState } from 'react';
 
+import { isValidPalettes } from '@ringcentral/juno-storybook';
 import { Story } from '@storybook/react';
 
 import { RcBox } from '../../components/Box';
 import { RcTextField } from '../../components/Forms/TextField';
 import { RcTypography } from '../../components/Typography';
-import { isValidPalettes } from '@ringcentral/juno-storybook';
 import styled, { useTheme } from '../styled-components';
 import { radius, spacing } from '../styles';
 

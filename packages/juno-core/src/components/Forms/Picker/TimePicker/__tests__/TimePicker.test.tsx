@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { fireEvent, render, screen } from '@ringcentral/juno-test';
+
 import { RcTimePicker } from '../TimePicker';
 
 describe('TimePicker', () => {

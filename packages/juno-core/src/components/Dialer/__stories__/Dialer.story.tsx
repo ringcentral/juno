@@ -7,6 +7,22 @@ import React, {
 
 import uniqueId from 'lodash/uniqueId';
 
+import {
+  Close,
+  Deletenumber,
+  Dialer as DialerSvg,
+  IncallBorder,
+  Keypad,
+  Minimize,
+  Phone,
+  TimeBorder,
+} from '@ringcentral/juno-icon';
+import {
+  notControlInDocTable,
+  notShowInDocTable,
+  sortInDocTable,
+  switchToControlKnobs,
+} from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
 import {
@@ -23,23 +39,6 @@ import {
   typography,
   UseLongPressEventReason,
 } from '../../../foundation';
-import {
-  Close,
-  IncallBorder,
-  Keypad,
-  TimeBorder,
-  Deletenumber,
-  Dialer as DialerSvg,
-  Minimize,
-  Phone,
-} from '@ringcentral/juno-icon';
-
-import {
-  notControlInDocTable,
-  notShowInDocTable,
-  sortInDocTable,
-  switchToControlKnobs,
-} from '@ringcentral/juno-storybook';
 import { RcAvatar } from '../../Avatar';
 import avatar from '../../Avatar/__stories__/img/avatar.jpg';
 import { RcBox } from '../../Box';

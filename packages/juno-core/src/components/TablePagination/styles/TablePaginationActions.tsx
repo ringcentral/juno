@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
 
 import { TablePaginationActionsProps } from '@material-ui/core/TablePagination/TablePaginationActions';
+import { ArrowLeft2, ArrowRight } from '@ringcentral/juno-icon';
 
 import {
   combineProps,
@@ -8,8 +9,6 @@ import {
   spacing,
   styled,
 } from '../../../foundation';
-import { ArrowLeft2, ArrowRight } from '@ringcentral/juno-icon';
-
 import { RcIconButtonProps } from '../../Buttons/IconButton';
 import { RcIconButton } from '../../Buttons/IconButton/IconButton';
 import { WithTooltipProps } from '../../Tooltip';

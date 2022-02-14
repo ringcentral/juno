@@ -1,16 +1,12 @@
 import React, { ComponentProps } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
-import { styled, useTheme } from '../../../../foundation';
 import {
+  BubbleLinesBorder,
   CallAdd,
   Leave,
   NewEmail,
   UserDefault,
-  BubbleLinesBorder,
 } from '@ringcentral/juno-icon';
-
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -19,7 +15,9 @@ import {
   switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
 
+import { styled, useTheme } from '../../../../foundation';
 import { RcBox } from '../../../Box';
 import { RcIcon } from '../../../Icon';
 import { RcTypography } from '../../../Typography';

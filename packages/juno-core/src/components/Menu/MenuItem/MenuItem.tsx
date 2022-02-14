@@ -13,6 +13,7 @@ import React, {
 import clsx from 'clsx';
 
 import MuiMenuItem from '@material-ui/core/MenuItem';
+import { Check as checkSvg } from '@ringcentral/juno-icon';
 
 import {
   Classes,
@@ -28,7 +29,6 @@ import {
   useId,
   useThemeProps,
 } from '../../../foundation';
-import { Check as checkSvg } from '@ringcentral/juno-icon';
 import { RcIcon, RcIconProps } from '../../Icon';
 import { RcListItemSecondaryAction } from '../../List';
 import { RcListItemAvatar } from '../../List/ListItemAvatar';

@@ -1,9 +1,6 @@
 import React, { ComponentProps, useState } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import { SpeakerMute, SpeakerUp, Star } from '@ringcentral/juno-icon';
-
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -12,6 +9,7 @@ import {
   switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
 
 import { RcGrid } from '../../../Grid';
 import { RcIcon } from '../../../Icon';

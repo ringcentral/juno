@@ -1,4 +1,3 @@
-import { ArrowDown, ArrowUp } from '@ringcentral/juno-icon';
 import React, {
   ComponentProps,
   forwardRef,
@@ -9,6 +8,9 @@ import React, {
   useRef,
   useState,
 } from 'react';
+
+import { ArrowDown, ArrowUp } from '@ringcentral/juno-icon';
+
 import {
   combineClasses,
   combineProps,

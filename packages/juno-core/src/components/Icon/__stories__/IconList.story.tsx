@@ -1,8 +1,10 @@
-import { Warning } from '@ringcentral/juno-icon';
-import svgToComponentMapping from '@ringcentral/juno-icon/devUtils/svgToComponentMapping';
-import localIcons from '@ringcentral/juno-icon/devUtils/iconSymbol';
-import { Meta } from '@storybook/react';
 import React, { FunctionComponent, useEffect, useMemo, useState } from 'react';
+
+import { Warning } from '@ringcentral/juno-icon';
+import localIcons from '@ringcentral/juno-icon/devUtils/iconSymbol';
+import svgToComponentMapping from '@ringcentral/juno-icon/devUtils/svgToComponentMapping';
+import { Meta } from '@storybook/react';
+
 import { palette2, useEventCallback } from '../../../foundation';
 import styled from '../../../foundation/styled-components';
 import { RcBox } from '../../Box';

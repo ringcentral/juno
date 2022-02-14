@@ -16,6 +16,7 @@ import {
 } from '@material-ui/pickers';
 import { findClosestEnabledDate as MuiFindClosestEnabledDate } from '@material-ui/pickers/_helpers/date-utils';
 import { MaterialUiPickersDate as MuiPickersDate } from '@material-ui/pickers/typings/date';
+import { DateBorder } from '@ringcentral/juno-icon';
 
 import {
   combineClasses,
@@ -29,7 +30,6 @@ import {
   useThemeProps,
   withDeprecatedCheck,
 } from '../../../../foundation';
-import { DateBorder } from '@ringcentral/juno-icon';
 import { RcPopoverProps } from '../../../Popover';
 import {
   PickerTextField,

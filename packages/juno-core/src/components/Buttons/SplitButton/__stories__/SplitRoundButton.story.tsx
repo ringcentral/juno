@@ -1,20 +1,19 @@
 import React, { ComponentProps, Fragment } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
-import { omit } from '../../../../foundation';
 import {
   Add as AddSvg,
   Reply as ReplySvg,
   Start as StartSvg,
 } from '@ringcentral/juno-icon';
-
 import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
+import { omit } from '../../../../foundation';
 import { RcGrid } from '../../../Grid';
 import { RcIcon } from '../../../Icon';
 import { RcIconSizes } from '../../../Icon/utils';

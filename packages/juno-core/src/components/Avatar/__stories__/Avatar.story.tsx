@@ -1,10 +1,9 @@
+import React, { ComponentProps, useState } from 'react';
+
 import {
   CallAdd,
   DefaultTeamAvatar as TeamAvatar,
 } from '@ringcentral/juno-icon';
-import { Meta, Story } from '@storybook/react';
-import React, { ComponentProps, useState } from 'react';
-import { palette2 } from '../../../foundation';
 import {
   notShowInDocTable,
   paletteChoice,
@@ -12,6 +11,9 @@ import {
   switchToControlKnobs,
   useCheckRenderButton,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
+import { palette2 } from '../../../foundation';
 import { RcBox } from '../../Box';
 import { RcButton } from '../../Buttons';
 import { RcIcon } from '../../Icon';

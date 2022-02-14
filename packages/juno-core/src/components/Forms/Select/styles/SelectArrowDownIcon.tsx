@@ -2,8 +2,9 @@ import React, { ComponentProps, forwardRef } from 'react';
 
 import clsx from 'clsx';
 
-import { styled } from '../../../../foundation';
 import { ArrowDown } from '@ringcentral/juno-icon';
+
+import { styled } from '../../../../foundation';
 import { RcIcon } from '../../../Icon';
 
 export type SelectArrowDownIconProps = {

@@ -8,16 +8,15 @@ import React, {
 
 import moment from 'moment';
 
-import { Meta, Story } from '@storybook/react';
-
 import {
+  isTestEnv,
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
   Title,
-  isTestEnv,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
 
 import { RcButton } from '../../../../Buttons';
 import { RcGrid } from '../../../../Grid';

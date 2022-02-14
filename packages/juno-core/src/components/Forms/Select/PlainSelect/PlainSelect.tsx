@@ -1,5 +1,6 @@
 import React, { forwardRef, useMemo, useState } from 'react';
 
+import { useControlled } from '@material-ui/core';
 import { PopoverOrigin } from '@material-ui/core/Popover';
 
 import {
@@ -21,7 +22,6 @@ import {
   switchVariantToButtonVariant,
   UnionButtonVariant,
 } from './utils';
-import { useControlled } from '@material-ui/core';
 
 type RcPlainSelectPropsVariant = 'round' | 'plainIcon' | UnionButtonVariant;
 

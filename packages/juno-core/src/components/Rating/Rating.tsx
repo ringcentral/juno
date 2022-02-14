@@ -3,6 +3,7 @@ import React, { ComponentProps, forwardRef, useCallback, useMemo } from 'react';
 import MuiRating, {
   IconContainerProps as MuiIconContainerProps,
 } from '@material-ui/lab/Rating';
+import { Star, StarBorder } from '@ringcentral/juno-icon';
 
 import {
   combineClasses,
@@ -12,8 +13,6 @@ import {
   useEventCallback,
   useThemeProps,
 } from '../../foundation';
-import { Star, StarBorder } from '@ringcentral/juno-icon';
-
 import { RcIcon } from '../Icon';
 import { RcTooltip, RcTooltipProps } from '../Tooltip';
 import { RatingStyle } from './styles';

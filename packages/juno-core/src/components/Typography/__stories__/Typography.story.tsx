@@ -1,13 +1,13 @@
 import React, { ComponentProps, useEffect, useRef } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
-import { palette2, styled } from '../../../foundation';
 import {
   notShowInDocTable,
   switchToControlKnobs,
   textPaletteChoice,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
+import { palette2, styled } from '../../../foundation';
 import { RcTypography } from '../Typography';
 import { MuiDefaultColor } from '../utils';
 

@@ -3,12 +3,12 @@ import React, { useMemo } from 'react';
 import isFunction from 'lodash/isFunction';
 import isNumber from 'lodash/isNumber';
 
-import { useA11yKeyEvent, useThemeProps } from '../../foundation';
 import {
   JumpToLatest as arrowDown,
   JumpToUnread as arrowUp,
 } from '@ringcentral/juno-icon';
 
+import { useA11yKeyEvent, useThemeProps } from '../../foundation';
 import { RcIcon } from '../Icon';
 import {
   StyledSortIconWrapper,

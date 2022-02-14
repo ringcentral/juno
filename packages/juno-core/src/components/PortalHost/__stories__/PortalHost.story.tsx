@@ -1,13 +1,13 @@
 import React, { ComponentProps, FC, useEffect, useRef, useState } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
 import { RcButton } from '../../Buttons';
 import {
   RcDialog,

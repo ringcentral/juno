@@ -5,7 +5,10 @@ import React, {
   useMemo,
 } from 'react';
 
+import clsx from 'clsx';
+
 import MuiChip from '@material-ui/core/Chip';
+import { DeleteCircle } from '@ringcentral/juno-icon';
 
 import {
   combineClasses,
@@ -17,13 +20,11 @@ import {
   styled,
   useThemeProps,
 } from '../../foundation';
-import { DeleteCircle } from '@ringcentral/juno-icon';
 import { RcAvatarProps } from '../Avatar';
 import { RcIconButton, RcIconButtonProps } from '../Buttons/IconButton';
 import { WithTooltipProps } from '../Tooltip';
 import { ChipStyle } from './styles';
 import { RcChipClasses } from './utils';
-import clsx from 'clsx';
 
 type RcChipClassProp = RcClassesProps<'focused'>;
 

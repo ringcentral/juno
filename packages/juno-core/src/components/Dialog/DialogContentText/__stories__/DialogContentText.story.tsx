@@ -1,7 +1,5 @@
 import React, { ComponentProps } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -9,6 +7,8 @@ import {
   switchToControlKnobs,
   textPaletteChoice,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
 import { MuiDefaultColor } from '../../../Typography/utils';
 import { RcDialogContentText } from '../DialogContentText';
 

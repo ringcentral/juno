@@ -5,9 +5,6 @@ import React, {
   useState,
 } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
-import styled from '../../../foundation/styled-components';
 import { Close } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -15,6 +12,9 @@ import {
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
+import styled from '../../../foundation/styled-components';
 import { RcButton } from '../../Buttons/Button';
 import { RcIconButton } from '../../Buttons/IconButton';
 import {

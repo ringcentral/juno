@@ -1,6 +1,7 @@
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
 
 import MuiStepIcon from '@material-ui/core/StepIcon';
+import { Check, Edit } from '@ringcentral/juno-icon';
 
 import {
   combineClasses,
@@ -8,8 +9,6 @@ import {
   styled,
   useThemeProps,
 } from '../../../foundation';
-import { Check, Edit } from '@ringcentral/juno-icon';
-
 import { StepIconStyle } from './styles';
 import { StyledCircleIcon } from './styles/StyledCircleIcon';
 import { RcStepIconClasses, useIsEditable } from './utils';

@@ -1,5 +1,7 @@
-import { Edit } from '@ringcentral/juno-icon';
 import React, { FunctionComponent } from 'react';
+
+import { Edit } from '@ringcentral/juno-icon';
+
 import {
   flexCenterStyle,
   palette2,

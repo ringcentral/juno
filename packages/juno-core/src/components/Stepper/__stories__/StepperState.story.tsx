@@ -1,8 +1,8 @@
 import React from 'react';
 
+import { switchToControlKnobs } from '@ringcentral/juno-storybook';
 import { Meta } from '@storybook/react';
 
-import { switchToControlKnobs } from '@ringcentral/juno-storybook';
 import { RcStep } from '../Step';
 import { RcStepButton } from '../StepButton';
 import { RcStepLabel } from '../StepLabel';

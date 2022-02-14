@@ -1,7 +1,5 @@
 import React, { ComponentProps, FunctionComponent, useState } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import { Add, BubbleLines, BubbleLinesBorder } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -10,6 +8,8 @@ import {
   sortInDocTable,
   Title,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
 import { RcBox } from '../../../../Box';
 import { RcGrid } from '../../../../Grid';
 import { RcIcon } from '../../../../Icon';

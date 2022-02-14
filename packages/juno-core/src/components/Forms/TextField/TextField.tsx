@@ -10,6 +10,7 @@ import React, {
 import MuiTextField, {
   StandardTextFieldProps as MuiStandardTextFieldProps,
 } from '@material-ui/core/TextField';
+import { DeleteCircle } from '@ringcentral/juno-icon';
 
 import {
   clearReactReferencesInNode,
@@ -25,7 +26,6 @@ import {
   useThemeProps,
   withDeprecatedCheck,
 } from '../../../foundation';
-import { DeleteCircle } from '@ringcentral/juno-icon';
 import { RcIconButtonProps } from '../../Buttons';
 import { WithTooltipProps } from '../../Tooltip';
 import { RcTypographyProps } from '../../Typography';

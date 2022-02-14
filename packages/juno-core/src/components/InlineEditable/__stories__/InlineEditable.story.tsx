@@ -1,8 +1,5 @@
 import React, { ComponentProps, useState } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
-import { palette2, shadows, styled, useTheme } from '../../../foundation';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -12,7 +9,9 @@ import {
   switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
 
+import { palette2, shadows, styled, useTheme } from '../../../foundation';
 import { RcButton } from '../../Buttons';
 import { RcCircularProgress } from '../../Progress';
 import { RcTypography } from '../../Typography';

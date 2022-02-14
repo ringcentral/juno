@@ -1,8 +1,5 @@
 import React, { FunctionComponent, useCallback, useState } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
-import { palette2, px, spacing, styled } from '../../../foundation';
 import {
   Delete,
   Edit,
@@ -12,6 +9,9 @@ import {
   Pin,
 } from '@ringcentral/juno-icon';
 import { switchToControlKnobs } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
+import { palette2, px, spacing, styled } from '../../../foundation';
 import { RcButton, RcIconButton, RcIconButtonProps } from '../../Buttons';
 import { RcGrid } from '../../Grid';
 import { RcIcon } from '../../Icon';

@@ -1,12 +1,12 @@
 import React, { ComponentProps } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
-import { palette2, styled } from '../../../foundation';
 import {
   paletteChoice,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
+import { palette2, styled } from '../../../foundation';
 import { RcDivider } from '../Divider';
 
 export default {

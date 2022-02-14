@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 
+import { PauseCircleBorder, PlayCircleBorder } from '@ringcentral/juno-icon';
 import { Meta, Story } from '@storybook/react';
 
 import { RcIconButton } from '../../../../components/Buttons';
-import { PauseCircleBorder, PlayCircleBorder } from '@ringcentral/juno-icon';
-
 import { useAudio } from '../useAudio';
 
 export default {

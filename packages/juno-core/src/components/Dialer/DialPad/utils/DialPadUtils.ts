@@ -1,4 +1,6 @@
 import {
+  Asterisk as AsteriskIcon,
+  Hash as HashIcon,
   Svg0,
   Svg1,
   Svg2,
@@ -9,8 +11,6 @@ import {
   Svg7,
   Svg8,
   Svg9,
-  Asterisk as AsteriskIcon,
-  Hash as HashIcon,
 } from '@ringcentral/juno-icon';
 
 import { SvgSymbol } from '../../../Icon';

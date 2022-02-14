@@ -8,6 +8,10 @@ import React, {
 } from 'react';
 
 import { runKeyHandler } from '@material-ui/pickers/_shared/hooks/useKeyDown';
+import {
+  ArrowDown as ArrowDownIcon,
+  ArrowUp as ArrowUpIcon,
+} from '@ringcentral/juno-icon';
 
 import {
   RcBaseProps,
@@ -18,11 +22,6 @@ import {
   useForceUpdate,
   useRefState,
 } from '../../../../foundation';
-import {
-  ArrowDown as ArrowDownIcon,
-  ArrowUp as ArrowUpIcon,
-} from '@ringcentral/juno-icon';
-
 import { RcIconButtonSize } from '../../../Buttons/IconButton';
 import { StyledNumberPicker } from './styles/StyledNumberPicker';
 import { StyledTimeIconButton } from './styles/StyledTimeIconButton';

@@ -1,5 +1,11 @@
 import React, { ComponentProps, FunctionComponent } from 'react';
 
+import { Add, DefaultFile, Phone } from '@ringcentral/juno-icon';
+import {
+  notShowInDocTable,
+  paletteChoice,
+  switchToControlKnobs,
+} from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
 import {
@@ -9,13 +15,6 @@ import {
   styled,
   useThemeSwitcher,
 } from '../../../foundation';
-import { DefaultFile, Add, Phone } from '@ringcentral/juno-icon';
-
-import {
-  notShowInDocTable,
-  paletteChoice,
-  switchToControlKnobs,
-} from '@ringcentral/juno-storybook';
 import { RcButton } from '../../Buttons';
 import { RcIcon } from '../Icon';
 

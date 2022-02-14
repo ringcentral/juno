@@ -1,7 +1,5 @@
 import React, { ComponentProps, useState } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import { Phone } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -11,6 +9,7 @@ import {
   switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
 
 import { RcAvatar } from '../../Avatar';
 import { RcButton } from '../../Buttons/Button';

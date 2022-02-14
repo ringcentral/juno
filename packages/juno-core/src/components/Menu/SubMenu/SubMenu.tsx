@@ -10,6 +10,8 @@ import React, {
   useState,
 } from 'react';
 
+import { ArrowRight } from '@ringcentral/juno-icon';
+
 import {
   a11yKeyboard,
   combineClasses,
@@ -21,7 +23,6 @@ import {
   useRcPortalWindowContext,
   useThemeProps,
 } from '../../../foundation';
-import { ArrowRight } from '@ringcentral/juno-icon';
 import { ClickAwayListener } from '../../ClickAwayListener';
 import { RcIcon } from '../../Icon';
 import { RcListItemText } from '../../List/ListItemText';

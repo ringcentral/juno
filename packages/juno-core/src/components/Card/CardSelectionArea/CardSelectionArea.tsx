@@ -1,6 +1,7 @@
 import React, { ComponentProps, forwardRef, useMemo } from 'react';
 
 import MuiCheckBox from '@material-ui/core/Checkbox';
+import { Check as CheckIcon } from '@ringcentral/juno-icon';
 
 import {
   combineClasses,
@@ -11,7 +12,6 @@ import {
   styled,
   useThemeProps,
 } from '../../../foundation';
-import { Check as CheckIcon } from '@ringcentral/juno-icon';
 import { RcIcon } from '../../Icon';
 import { useRcCardContext } from '../Card/CardContext';
 import { CardSelectionAreaStyle } from './styles';

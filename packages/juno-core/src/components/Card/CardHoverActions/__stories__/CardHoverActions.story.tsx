@@ -1,7 +1,5 @@
 import React, { ComponentProps } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import { Delete, Edit } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -9,6 +7,8 @@ import {
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
 import { RcIconButton } from '../../../Buttons';
 import { RcTypography } from '../../../Typography';
 import { RcCard } from '../../Card';

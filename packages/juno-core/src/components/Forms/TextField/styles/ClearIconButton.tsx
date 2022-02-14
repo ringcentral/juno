@@ -1,7 +1,8 @@
 import React, { ComponentProps, forwardRef } from 'react';
 
-import { styled } from '../../../../foundation';
 import { DeleteCircle } from '@ringcentral/juno-icon';
+
+import { styled } from '../../../../foundation';
 import { RcIconButton } from '../../../Buttons/IconButton';
 
 const _ClearIconButton = forwardRef<any, ComponentProps<typeof RcIconButton>>(

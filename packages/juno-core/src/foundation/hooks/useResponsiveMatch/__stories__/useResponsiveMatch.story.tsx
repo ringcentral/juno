@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import { switchToControlKnobs } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
 import {
@@ -13,7 +14,6 @@ import {
   RcResponsive,
   RcTypography,
 } from '../../../../components';
-import { switchToControlKnobs } from '@ringcentral/juno-storybook';
 import { useResponsiveContext } from '../../../contexts';
 import { useResponsiveMatch } from '../useResponsiveMatch';
 

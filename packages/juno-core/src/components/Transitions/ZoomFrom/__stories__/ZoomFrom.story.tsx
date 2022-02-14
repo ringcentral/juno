@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react';
 
+import { Close } from '@ringcentral/juno-icon';
 import { Meta, Story } from '@storybook/react';
 
 import { styled } from '../../../../foundation';
-import { Close } from '@ringcentral/juno-icon';
 import { RcBox } from '../../../Box';
 import { RcIconButton } from '../../../Buttons';
 import { RcDialog, RcDialogContent, RcDialogTitle } from '../../../Dialog';

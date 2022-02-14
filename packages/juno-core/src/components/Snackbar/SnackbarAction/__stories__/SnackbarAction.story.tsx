@@ -1,14 +1,13 @@
 import React, { ComponentProps } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import { Add, Close } from '@ringcentral/juno-icon';
-
 import {
   notControlInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
 import { RcSnackbarContent } from '../../SnackbarContent';
 import { RcSnackbarAction } from '../SnackbarAction';
 

@@ -1,25 +1,25 @@
 import 'focus-visible';
 
 import React, {
+  createContext,
   FunctionComponent,
   ReactNode,
-  createContext,
   useContext,
 } from 'react';
 
 import {
+  createGenerateClassName,
   MuiThemeProvider,
   StylesProvider,
-  createGenerateClassName,
 } from '@material-ui/core/styles';
 
+import { useResultRef } from '../hooks';
 import {
   ThemeProvider as StyledThemeProvider,
   useTheme,
 } from '../styled-components';
 import createTheme from './createTheme';
 import { RcThemeInput } from './theme.type';
-import { useResultRef } from '../hooks';
 
 type SubThemeProviderProps = {
   /** custom theme */

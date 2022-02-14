@@ -1,5 +1,6 @@
-import { RcButton, RcTypography } from '@ringcentral/juno';
 import React, { useState } from 'react';
+
+import { RcButton, RcTypography } from '@ringcentral/juno';
 
 /**
  * use for check is that memo correctly,

@@ -1,9 +1,9 @@
 import React, { useCallback, useRef, useState } from 'react';
 
+import { ArrowDown2 } from '@ringcentral/juno-icon';
 import { Meta, Story } from '@storybook/react';
 
 import { useAnnouncer } from '../../../foundation';
-import { ArrowDown2 } from '@ringcentral/juno-icon';
 import { RcBox } from '../../Box';
 import { RcIconButton } from '../../Buttons/IconButton';
 import { RcTextField } from '../../Forms/TextField';

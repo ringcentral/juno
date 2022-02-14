@@ -1,14 +1,14 @@
 import React, { ComponentProps, useState } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
-import { styled } from '../../../foundation';
 import { Add, AddBorder } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
   paletteChoice,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
+import { styled } from '../../../foundation';
 import { RcIcon } from '../../Icon';
 import { RcTypography } from '../../Typography';
 import { RcRating } from '../Rating';

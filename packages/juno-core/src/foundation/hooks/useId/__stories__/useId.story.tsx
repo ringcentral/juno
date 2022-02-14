@@ -1,8 +1,8 @@
 import React from 'react';
 
+import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import { Title } from '@ringcentral/juno-storybook';
 import { useId } from '../useId';
 
 export default {

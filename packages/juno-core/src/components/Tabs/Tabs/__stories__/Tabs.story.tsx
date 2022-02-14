@@ -1,7 +1,5 @@
 import React, { ComponentProps, FunctionComponent } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import { MoreHoriz as MoreHorizIcon } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -9,6 +7,8 @@ import {
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
 import { RcBadge } from '../../../Badge';
 import { RcIcon } from '../../../Icon';
 import { RcPaper } from '../../../Paper';

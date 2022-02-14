@@ -4,13 +4,12 @@ import { DateType } from '@date-io/type';
 import { useUtils as useMuiUtils } from '@material-ui/pickers';
 import { MaterialUiPickersDate as MuiPickersDate } from '@material-ui/pickers/typings/date';
 import { SlideDirection as MuiSlideDirection } from '@material-ui/pickers/views/Calendar/SlideTransition';
-
-import { RcClassesProps } from '../../../../foundation';
 import {
   ArrowLeft2 as arrowLeftSvg,
   ArrowRight as arrowRightSvg,
 } from '@ringcentral/juno-icon';
 
+import { RcClassesProps } from '../../../../foundation';
 import { RcVisuallyHidden } from '../../../VisuallyHidden';
 import { SelectArrowDownIcon } from '../../Select/styles/SelectArrowDownIcon';
 import { RcDatePickerSize } from './DatePicker';

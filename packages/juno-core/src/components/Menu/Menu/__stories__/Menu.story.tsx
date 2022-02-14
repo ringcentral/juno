@@ -2,14 +2,14 @@ import React, { ComponentProps, FunctionComponent, useState } from 'react';
 
 import range from 'lodash/range';
 
-import { Meta, Story } from '@storybook/react';
-
 import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
+
 import { RcButton } from '../../../Buttons/Button';
 import { RcDivider } from '../../../Divider';
 import { RcListItemText } from '../../../List/ListItemText';

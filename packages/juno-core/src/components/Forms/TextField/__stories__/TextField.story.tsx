@@ -5,8 +5,6 @@ import React, {
   useState,
 } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
 import { HideBorder } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -16,6 +14,7 @@ import {
   switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
 
 import { RcIconButton } from '../../../Buttons';
 import { RcGrid } from '../../../Grid';

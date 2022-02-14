@@ -8,8 +8,9 @@ import React, {
 import cloneDeep from 'lodash/cloneDeep';
 import values from 'lodash/values';
 
-import styled from '../../foundation/styled-components';
 import { ImageBroken } from '@ringcentral/juno-icon';
+
+import styled from '../../foundation/styled-components';
 import { RcIcon } from '../Icon';
 
 const StyledLoadingPage = styled.div`

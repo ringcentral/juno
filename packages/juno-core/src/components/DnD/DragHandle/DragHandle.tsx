@@ -2,8 +2,9 @@ import React, { forwardRef } from 'react';
 
 import clsx from 'clsx';
 
-import { RcClassesProps, styled, useThemeProps } from '../../../foundation';
 import { DragableArea as DraggableHandle } from '@ringcentral/juno-icon';
+
+import { RcClassesProps, styled, useThemeProps } from '../../../foundation';
 import { RcIcon } from '../../Icon';
 import { dragHandleStyle } from './styles';
 import { RcDragHandleClasses } from './utils';

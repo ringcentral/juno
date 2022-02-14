@@ -1,9 +1,5 @@
 import React, { ComponentProps } from 'react';
 
-import { Meta, Story } from '@storybook/react';
-
-import { RcPaletteProp } from '../../../../foundation';
-import radiusObj from '../../../../foundation/theme/assets/radius.json';
 import { Star as StarIcon } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -13,7 +9,10 @@ import {
   switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
 
+import { RcPaletteProp } from '../../../../foundation';
+import radiusObj from '../../../../foundation/theme/assets/radius.json';
 import { RcBox } from '../../../Box';
 import { Icon } from '../../../Icon/__stories__/Icon.story';
 import { RcText } from '../../../Text';
