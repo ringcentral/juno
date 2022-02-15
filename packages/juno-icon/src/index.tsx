@@ -327,6 +327,7 @@ export { default as Search } from './Search';
 export { default as Selects } from './Selects';
 export { default as SendFilled } from './SendFilled';
 export { default as Send } from './Send';
+export { default as SettingsBorder } from './SettingsBorder';
 export { default as Settings } from './Settings';
 export { default as Share } from './Share';
 export { default as Sharepoint } from './Sharepoint';

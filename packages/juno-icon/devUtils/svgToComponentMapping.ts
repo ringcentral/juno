@@ -314,6 +314,7 @@ export default {
   Pin: 'pin',
   Close: 'close',
   DeleteCircle: 'delete_circle',
+  SettingsBorder: 'settings_border',
   Settings: 'settings',
   NoteBorder: 'note_border',
   Note: 'note',
