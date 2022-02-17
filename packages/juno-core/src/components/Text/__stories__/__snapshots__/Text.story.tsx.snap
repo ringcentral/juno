@@ -436,3 +436,26 @@ Array [
   </div>,
 ]
 `;
+
+exports[`Storyshots 🚀 Cleanup Components/Typography/Text Text Without Default Title 1`] = `
+.c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c1.highlight-term {
+  color: #121212 !important;
+  background-color: #FFDFB1 !important;
+}
+
+<p
+  className="MuiTypography-root c0 c1 MuiTypography-noWrap"
+  data-color="neutral.f06"
+  data-variant="body1"
+>
+  Make that wrap with a react element will ignore that auto title feature
+</p>
+`;
