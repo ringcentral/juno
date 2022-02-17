@@ -81,6 +81,24 @@ TextWithLink.argTypes = {
   },
 };
 
+export const TextWithoutDefaultTitle: Story<TextProps> = () => {
+  return (
+    <RcText color="neutral.f06">
+      <>
+        Make that wrap with a react element will ignore that auto title feature
+      </>
+    </RcText>
+  );
+};
+
+TextWithoutDefaultTitle.argTypes = {
+  color: {
+    control: {
+      type: null,
+    },
+  },
+};
+
 export const TextWithTitleWhenOverflow: Story<TextProps> = () => {
   const [width, setWidth] = useState<number | undefined>(undefined);
   return (
