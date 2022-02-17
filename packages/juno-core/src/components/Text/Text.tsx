@@ -72,7 +72,7 @@ const _RcText = forwardRef<any, RcTextProps>((inProps, ref) => {
       title={
         isShowTitle || useRcTooltip // * if useRcTooltip always keep title pass into
           ? // * if user pass title, use title first
-            title || (isString(children) ? children : undefined)
+            title ?? (isString(children) ? children : undefined)
           : undefined
       }
       TooltipProps={TooltipProps}
