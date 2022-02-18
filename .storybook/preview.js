@@ -37,6 +37,7 @@ export const parameters = {
       order: [
         'README',
         'CHANGELOG',
+        'ICON-CHANGELOG',
         'CONTRIBUTION',
         '📖 Guides',
         '💅 Style system',
