@@ -34,7 +34,6 @@
     "release": "concurrently \"yarn workspace @ringcentral/juno run release\" \"yarn workspace @ringcentral/juno-icon run release\"",
     "version-release": "node scripts/release/release.run.js",
     "start": "yarn storybook",
-    "start-next": "node scripts/release/start-next",
     "storybook": "start-storybook -p 6006 --no-manager-cache",
     "storybook:docgen": "start-storybook -p 6006 --config-dir ./.storybook.doc --no-dll",
     "test": "yarn clean-dist && jest",

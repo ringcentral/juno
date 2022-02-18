@@ -1,2 +1,0 @@
-const { writeChangelog } = require('./utils');
-
