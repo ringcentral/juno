@@ -512,8 +512,6 @@ export const TimePickerWithDefaultPickerValue: Story<TimePickerProps> = ({
 TimePickerWithDefaultPickerValue.storyName =
   'TimePicker with default picker value';
 
-console.log('!!!', new Date('2021/12/12 14:15:11'));
-
 TimePickerWithDefaultPickerValue.args = {
   label: 'Time',
   value: null,
