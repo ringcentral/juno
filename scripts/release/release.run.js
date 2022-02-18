@@ -1,31 +1,27 @@
 const standardVersion = require('standard-version');
 const inquirer = require('inquirer');
 
+const argPackageName = process.argv[2];
+const argReleaseAs = process.argv[3];
+const ignoreNext = process.argv.includes('--ignore-next');
+
 (async () => {
   try {
     const packageOptions = ['juno-core', 'juno-icon'];
 
-    const { packageName } = await inquirer.prompt([
-      {
-        type: 'list',
-        name: 'packageName',
-        message: `Which package do you want to release?`,
-        default: 'juno-core',
-        choices: packageOptions,
-      },
-    ]);
+    const { packageName } = argPackageName
+      ? argPackageName
+      : await inquirer.prompt([
+          {
+            type: 'list',
+            name: 'packageName',
+            message: `Which package do you want to release?`,
+            default: 'juno-core',
+            choices: packageOptions,
+          },
+        ]);
 
     const packagePath = `packages/${packageName}`;
-
-    const { releaseAs } = await inquirer.prompt([
-      {
-        type: 'list',
-        name: 'releaseAs',
-        message: `what kind of release do you want to do for ${packageName}?`,
-        default: 'patch',
-        choices: ['patch', 'minor', 'major'],
-      },
-    ]);
 
     const pathOptions = {
       path: packagePath,
@@ -35,7 +31,7 @@ const inquirer = require('inquirer');
     };
 
     await standardVersion({
-      releaseAs,
+      releaseAs: 'patch',
       tagPrefix: `${packageName}-v`,
       header: '',
       ...pathOptions,
@@ -48,6 +44,20 @@ const inquirer = require('inquirer');
         bump: true,
       },
     });
+
+    if (!ignoreNext) return;
+
+    const { releaseAs } = argReleaseAs
+      ? argReleaseAs
+      : await inquirer.prompt([
+          {
+            type: 'list',
+            name: 'releaseAs',
+            message: `what kind of next release do you want to do for ${packageName}?`,
+            default: 'patch',
+            choices: ['patch', 'minor', 'major'],
+          },
+        ]);
 
     await standardVersion({
       releaseAs,
