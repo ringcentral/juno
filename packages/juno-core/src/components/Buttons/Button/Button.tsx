@@ -21,7 +21,7 @@ import {
   useForkRef,
   useTheme,
   useThemeProps,
-  withDeprecatedCheck,
+  useDeprecatedCheck,
 } from '../../../foundation';
 import { RcIcon, RcIconProps } from '../../Icon';
 import { RcIconSizes } from '../../Icon/utils';
@@ -84,6 +84,18 @@ type RcButtonProps = {
 const _RcButton = forwardRef<any, RcButtonProps>(
   (inProps: RcButtonProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcButton' });
+
+    if (process.env.NODE_ENV !== 'production') {
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      useDeprecatedCheck(RcButton, props, [
+        {
+          prop: 'IconProps',
+          time: '2021-4',
+          comment: `@deprecated Icon, please use startIcon with \`<RcIcon />\` */`,
+        },
+      ]);
+    }
+
     const {
       children: childrenProp,
       classes: classesProp,
@@ -218,19 +230,7 @@ const _RcButton = forwardRef<any, RcButtonProps>(
 );
 
 /** @release */
-const RcButton = styled(
-  withDeprecatedCheck(
-    withTooltip(_RcButton),
-    [
-      {
-        prop: 'IconProps',
-        time: '2021-4',
-        comment: `@deprecated Icon, please use startIcon with \`<RcIcon />\` */`,
-      },
-    ],
-    'RcButton',
-  ),
-)`
+const RcButton = styled(withTooltip(_RcButton))`
   ${buttonStyle}
 `;
 

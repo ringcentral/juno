@@ -7,7 +7,7 @@ import {
   styled,
   useA11yKeyEvent,
   useThemeProps,
-  withDeprecatedCheck,
+  useDeprecatedCheck,
 } from '../../foundation';
 import { RcTypographyVariant } from '../Typography';
 import { LinkStyle } from './styles';
@@ -42,6 +42,27 @@ type RcLinkProps = {
 
 const _RcLink = forwardRef<any, RcLinkProps>((inProps: RcLinkProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcLink' });
+
+  if (process.env.NODE_ENV !== 'production') {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useDeprecatedCheck(RcLink, props, [
+      {
+        prop: 'size',
+        time: '2021-4',
+        comment: `@deprecated size of Link, default is medium, please use variant directly
+ * \`small\` => \`caption1\`
+ * \`medium\` => \`body1\`
+ * \`large\` => \`headline1\`
+ */`,
+      },
+      {
+        prop: 'handleOnClick',
+        time: '2021-4',
+        comment: `@deprecated use onClick replace that */`,
+      },
+    ]);
+  }
+
   const {
     handleOnClick: _handleOnClick,
     Component: ComponentProp,
@@ -82,28 +103,7 @@ const _RcLink = forwardRef<any, RcLinkProps>((inProps: RcLinkProps, ref) => {
  * @release
  * that onClick event will be trigger with `enter` like `<a>`, when have custom onKeydown event, that will be cover by outside
  * */
-const RcLink = styled(
-  withDeprecatedCheck(
-    _RcLink,
-    [
-      {
-        prop: 'size',
-        time: '2021-4',
-        comment: `@deprecated size of Link, default is medium, please use variant directly
-   * \`small\` => \`caption1\`
-   * \`medium\` => \`body1\`
-   * \`large\` => \`headline1\`
-   */`,
-      },
-      {
-        prop: 'handleOnClick',
-        time: '2021-4',
-        comment: `@deprecated use onClick replace that */`,
-      },
-    ],
-    'RcLink',
-  ),
-)`
+const RcLink = styled(_RcLink)`
   ${LinkStyle}
 `;
 

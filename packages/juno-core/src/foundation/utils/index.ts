@@ -8,7 +8,6 @@ export * from './getScrollbarSize';
 export * from './hasValue';
 export * from './isRcElement';
 export * from './isRef';
-export * from './isShowJunoWarning';
 export * from './isUrl';
 export * from './omit';
 export * from './outerSize';

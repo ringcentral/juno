@@ -27,11 +27,14 @@ type RcTextWithLinkProps = {
 
 /** @deprecated please don't use that component, just use RcText and RcLink directly */
 const RcTextWithLink = memo((props: RcTextWithLinkProps) => {
-  useDeprecatedLog({
-    component: 'RcTextWithLink',
-    message:
-      "please don't use that component, just use `RcText` and RcLink directly",
-  });
+  if (process.env.NODE_ENV !== 'production') {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useDeprecatedLog({
+      component: 'RcTextWithLink',
+      message:
+        "please don't use that component, just use `RcText` and RcLink directly",
+    });
+  }
 
   const { text, linkText, onClick, TypographyProps, RcLinkProps } = props;
   let textProps;

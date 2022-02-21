@@ -9,7 +9,7 @@ import {
   RcPaletteProp,
   styled,
   useThemeProps,
-  withDeprecatedCheck,
+  useDeprecatedCheck,
 } from '../../../foundation';
 import { RcTypographyProps } from '../../Typography';
 import { ListItemTextStyle } from './styles';
@@ -37,6 +37,28 @@ type RcListItemTextProps = {
 
 const _RcListItemText = forwardRef<any, RcListItemTextProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcListItemText' });
+
+  if (process.env.NODE_ENV !== 'production') {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useDeprecatedCheck(RcListItemText, props, [
+      {
+        prop: 'primaryColor',
+        time: '2021-4',
+        comment: 'recommend use primaryTypographyProps color prop',
+      },
+      {
+        prop: 'alignCenter',
+        time: '2021-4',
+        comment: `recommend using classes to define it`,
+      },
+      {
+        prop: 'lineThrough',
+        time: '2021-4',
+        comment: `recommend using classes to define it`,
+      },
+    ]);
+  }
+
   const {
     classes: classesProp,
     children,
@@ -77,29 +99,7 @@ const _RcListItemText = forwardRef<any, RcListItemTextProps>((inProps, ref) => {
   );
 });
 
-const RcListItemText = styled(
-  withDeprecatedCheck(
-    _RcListItemText,
-    [
-      {
-        prop: 'primaryColor',
-        time: '2021-4',
-        comment: 'recommend use primaryTypographyProps color prop',
-      },
-      {
-        prop: 'alignCenter',
-        time: '2021-4',
-        comment: `recommend using classes to define it`,
-      },
-      {
-        prop: 'lineThrough',
-        time: '2021-4',
-        comment: `recommend using classes to define it`,
-      },
-    ],
-    'RcListItemText',
-  ),
-)`
+const RcListItemText = styled(_RcListItemText)`
   ${ListItemTextStyle}
 `;
 

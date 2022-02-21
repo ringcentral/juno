@@ -15,10 +15,13 @@ const StyledSpan = styled.span`
 const RcTextWithHighlight = (props: {
   children: React.ReactChild | null | (React.ReactChild | null)[];
 }) => {
-  useDeprecatedLog({
-    component: 'RcTextWithHighlight',
-    message: 'should not use that, just use RcText with `highlight`',
-  });
+  if (process.env.NODE_ENV !== 'production') {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useDeprecatedLog({
+      component: 'RcTextWithHighlight',
+      message: 'should not use that, just use RcText with `highlight`',
+    });
+  }
 
   return <StyledSpan className="highlight-term" {...props} />;
 };

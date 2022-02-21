@@ -1,15 +1,9 @@
-import React, {
-  ComponentProps,
-  ComponentType,
-  forwardRef,
-  useEffect,
-} from 'react';
+import { ComponentProps, ComponentType, useEffect } from 'react';
 
 import { rcConfiguration } from '../config';
-import { isShowJunoWarning } from './isShowJunoWarning';
 
 /* eslint-disable no-console */
-type WithDeprecatedCheckArgs<TKey> = {
+type UseDeprecatedCheckArgs<TKey> = {
   prop: TKey;
   comment?: string;
   time: string;
@@ -42,20 +36,26 @@ function showDeprecated({
       comment ? `, ${comment}` : ''
     }`;
 
-  rcConfiguration.WARNING_FUNCTION(`JUNO [${component}]: ${showMessage}`, {
+  rcConfiguration.WARNING_FUNCTION?.(`JUNO [${component}]: ${showMessage}`, {
     level,
   });
 }
 
 export function logInDev(args: ShowDeprecatedArgs, cb?: Function) {
-  if (isShowJunoWarning) {
+  if (
+    process.env.NODE_ENV !== 'production' &&
+    !rcConfiguration.WARNING_IGNORE
+  ) {
     showDeprecated(args);
     cb?.();
   }
 }
 
 export const useDeprecatedLog = (...args: Parameters<typeof logInDev>) => {
-  if (isShowJunoWarning) {
+  if (
+    process.env.NODE_ENV !== 'production' &&
+    !rcConfiguration.WARNING_IGNORE
+  ) {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
       logInDev(...args);
@@ -64,17 +64,22 @@ export const useDeprecatedLog = (...args: Parameters<typeof logInDev>) => {
   }
 };
 
-export function withDeprecatedCheck<
+export function useDeprecatedCheck<
   T extends ComponentType<any>,
   K extends keyof ComponentProps<T>,
->(Component: T, depreciates: WithDeprecatedCheckArgs<K>[], source?: string) {
-  if (!isShowJunoWarning) {
-    return Component;
-  }
-
+>(
+  Component: T,
+  props: any,
+  depreciates: UseDeprecatedCheckArgs<K>[],
+  source?: string,
+) {
   const name = Component.displayName || source || '';
 
-  return forwardRef((props: any, ref) => {
+  if (
+    process.env.NODE_ENV !== 'production' &&
+    !rcConfiguration.WARNING_IGNORE
+  ) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
       depreciates.forEach(({ prop, comment, time }) => {
         if (
@@ -90,9 +95,6 @@ export function withDeprecatedCheck<
           });
         }
       });
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-
-    return <Component {...props} ref={ref} />;
-  }) as any as T;
+    });
+  }
 }

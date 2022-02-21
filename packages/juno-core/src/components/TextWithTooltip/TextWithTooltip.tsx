@@ -21,11 +21,14 @@ const RcTextWithTooltip = (props: {
   tooltip?: string;
   textColor?: RcPaletteProp;
 }) => {
-  useDeprecatedLog({
-    component: 'RcTextWithTooltip',
-    message:
-      "please don't use that component, just use `RcText` with `title` directly",
-  });
+  if (process.env.NODE_ENV !== 'production') {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useDeprecatedLog({
+      component: 'RcTextWithTooltip',
+      message:
+        "please don't use that component, just use `RcText` with `title` directly",
+    });
+  }
 
   const { tooltip, children, textColor = ['neutral', 'f06'] } = props;
   const ref = useRef<HTMLSpanElement>(null);

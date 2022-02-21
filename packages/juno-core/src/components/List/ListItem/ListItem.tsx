@@ -12,7 +12,7 @@ import {
   RcPaletteProp,
   styled,
   useThemeProps,
-  withDeprecatedCheck,
+  useDeprecatedCheck,
 } from '../../../foundation';
 import { withTooltip, WithTooltipProps } from '../../Tooltip';
 import { ListItemStyle } from './styles';
@@ -66,6 +66,23 @@ type RcListItemProps = {
 const _RcListItem = forwardRef<any, RcListItemProps>(
   (inProps: RcListItemProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcListItem' });
+
+    if (process.env.NODE_ENV !== 'production') {
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      useDeprecatedCheck(RcListItem, props, [
+        {
+          prop: 'baseColor',
+          time: '2021-9',
+          comment: '@deprecated should use color directly',
+        },
+        {
+          prop: 'maxWidth',
+          time: '2021-4',
+          comment: 'recommend using classes to define',
+        },
+      ]);
+    }
+
     const {
       classes: classesProp,
       color,
@@ -126,24 +143,7 @@ const _RcListItem = forwardRef<any, RcListItemProps>(
   },
 );
 
-const RcListItem = styled(
-  withDeprecatedCheck(
-    withTooltip(_RcListItem),
-    [
-      {
-        prop: 'baseColor',
-        time: '2021-9',
-        comment: '@deprecated should use color directly',
-      },
-      {
-        prop: 'maxWidth',
-        time: '2021-4',
-        comment: 'recommend using classes to define',
-      },
-    ],
-    'RcListItem',
-  ),
-)`
+const RcListItem = styled(withTooltip(_RcListItem))`
   ${ListItemStyle};
 `;
 

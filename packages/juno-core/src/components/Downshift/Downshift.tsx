@@ -24,7 +24,7 @@ import {
   useForkRef,
   useTheme,
   useThemeProps,
-  withDeprecatedCheck,
+  useDeprecatedCheck,
 } from '../../foundation';
 import { RcIconButtonProps } from '../Buttons/IconButton';
 import { RcChip } from '../Chip';
@@ -459,6 +459,116 @@ const _RcDownshift = memo(
   forwardRef<any, RcDownshiftProps<RcDownshiftSelectedItem>>((inProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcDownshift' });
 
+    if (process.env.NODE_ENV !== 'production') {
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      useDeprecatedCheck(RcDownshift, props, [
+        {
+          prop: 'onSelectChange',
+          time: '2021-10',
+          comment: `@deprecated should use \`onChange\` */`,
+        },
+        {
+          prop: 'suggestionItems',
+          time: '2021-10',
+          comment: `@deprecated  should use \`options\` to replace */`,
+        },
+        {
+          prop: 'selectedItems',
+          time: '2021-10',
+          comment: `@deprecated  not need any more */`,
+        },
+        {
+          prop: 'itemToString',
+          time: '2021-10',
+          comment: `@deprecated use \`getOptionLabel\` to replace that */`,
+        },
+        {
+          prop: 'MenuItem',
+          time: '2021-10',
+          comment: `@deprecated should use \`renderOption\` to replace that */`,
+        },
+        {
+          prop: 'minRowHeight',
+          time: '2021-10',
+          comment: `@deprecated suggestion list row min height for virtual list */`,
+        },
+        {
+          prop: 'enableFreeChips',
+          time: '2021-10',
+          comment: `@deprecated enable free chip mode, should use \`freeSolo\` to replace that */`,
+        },
+        {
+          prop: 'inputLabel',
+          time: '2021-10',
+          comment: `@deprecated please use \`label\` to replace that */`,
+        },
+        {
+          prop: 'inputPlaceholder',
+          time: '2021-10',
+          comment: `@deprecated input element placeholder attribute */`,
+        },
+        {
+          prop: 'maxLength',
+          time: '2021-10',
+          comment: `@deprecated input element maxlength, please use \`TextFieldProps.inputProps.maxLength\` */`,
+        },
+        {
+          prop: 'screenReader',
+          time: '2021-10',
+          comment: `@deprecated should use \`screenReaderProps\` */`,
+        },
+        {
+          prop: 'automationId',
+          time: '2021-10',
+          comment: `@deprecated wrapper automationId, should use \`data-test-automation-id\` directly */`,
+        },
+        {
+          prop: 'InputItem',
+          time: '2021-10',
+          comment: `@deprecated just use the \`renderTags\` to render whole tags  */`,
+        },
+        {
+          prop: 'emailError',
+          time: '2021-10',
+          comment: `@deprecated please calculate error outside by your self with \`renderTags\`, or prepare ready items with error field */`,
+        },
+        {
+          prop: 'errorSelectedItems',
+          time: '2021-10',
+          comment: `@deprecated please calculate error outside by your self with \`renderTags\`, or prepare ready items with error field */`,
+        },
+        {
+          prop: 'nameError',
+          time: '2021-10',
+          comment: `@deprecated replace to \`error\` */`,
+        },
+        {
+          prop: 'keyToChips',
+          time: '2021-10',
+          comment: `@deprecated rename to \`keyToTags\` */`,
+        },
+        {
+          prop: 'limitOfFreeChips',
+          time: '2021-10',
+          comment: `@deprecated should use \`max\` */`,
+        },
+        {
+          prop: 'enableAutoTransform',
+          time: '2021-10',
+          comment: `@deprecated should use \`autoSelect\` */`,
+        },
+        {
+          prop: 'messageRef',
+          time: '2021-10',
+          comment: `@deprecated should use \`inputRef\` */`,
+        },
+        {
+          prop: 'TextFieldProps',
+          time: '2021-10',
+          comment: `@deprecated TextField props */`,
+        },
+      ]);
+    }
     const theme = useTheme();
 
     const {
@@ -557,7 +667,10 @@ const _RcDownshift = memo(
 
     let oneOfTagError = false;
 
-    useDownshiftError({ isNew, MenuItem, InputItem });
+    if (process.env.NODE_ENV !== 'production') {
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      useDownshiftError({ isNew, MenuItem, InputItem });
+    }
 
     const required = requiredProp || TextFieldProps?.required;
 
@@ -881,119 +994,7 @@ const _RcDownshift = memo(
   }),
 );
 
-const RcDownshift = styled(
-  withDeprecatedCheck(
-    _RcDownshift,
-    [
-      {
-        prop: 'onSelectChange',
-        time: '2021-10',
-        comment: `@deprecated should use \`onChange\` */`,
-      },
-      {
-        prop: 'suggestionItems',
-        time: '2021-10',
-        comment: `@deprecated  should use \`options\` to replace */`,
-      },
-      {
-        prop: 'selectedItems',
-        time: '2021-10',
-        comment: `@deprecated  not need any more */`,
-      },
-      {
-        prop: 'itemToString',
-        time: '2021-10',
-        comment: `@deprecated use \`getOptionLabel\` to replace that */`,
-      },
-      {
-        prop: 'MenuItem',
-        time: '2021-10',
-        comment: `@deprecated should use \`renderOption\` to replace that */`,
-      },
-      {
-        prop: 'minRowHeight',
-        time: '2021-10',
-        comment: `@deprecated suggestion list row min height for virtual list */`,
-      },
-      {
-        prop: 'enableFreeChips',
-        time: '2021-10',
-        comment: `@deprecated enable free chip mode, should use \`freeSolo\` to replace that */`,
-      },
-      {
-        prop: 'inputLabel',
-        time: '2021-10',
-        comment: `@deprecated please use \`label\` to replace that */`,
-      },
-      {
-        prop: 'inputPlaceholder',
-        time: '2021-10',
-        comment: `@deprecated input element placeholder attribute */`,
-      },
-      {
-        prop: 'maxLength',
-        time: '2021-10',
-        comment: `@deprecated input element maxlength, please use \`TextFieldProps.inputProps.maxLength\` */`,
-      },
-      {
-        prop: 'screenReader',
-        time: '2021-10',
-        comment: `@deprecated should use \`screenReaderProps\` */`,
-      },
-      {
-        prop: 'automationId',
-        time: '2021-10',
-        comment: `@deprecated wrapper automationId, should use \`data-test-automation-id\` directly */`,
-      },
-      {
-        prop: 'InputItem',
-        time: '2021-10',
-        comment: `@deprecated just use the \`renderTags\` to render whole tags  */`,
-      },
-      {
-        prop: 'emailError',
-        time: '2021-10',
-        comment: `@deprecated please calculate error outside by your self with \`renderTags\`, or prepare ready items with error field */`,
-      },
-      {
-        prop: 'errorSelectedItems',
-        time: '2021-10',
-        comment: `@deprecated please calculate error outside by your self with \`renderTags\`, or prepare ready items with error field */`,
-      },
-      {
-        prop: 'nameError',
-        time: '2021-10',
-        comment: `@deprecated replace to \`error\` */`,
-      },
-      {
-        prop: 'keyToChips',
-        time: '2021-10',
-        comment: `@deprecated rename to \`keyToTags\` */`,
-      },
-      {
-        prop: 'limitOfFreeChips',
-        time: '2021-10',
-        comment: `@deprecated should use \`max\` */`,
-      },
-      {
-        prop: 'enableAutoTransform',
-        time: '2021-10',
-        comment: `@deprecated should use \`autoSelect\` */`,
-      },
-      {
-        prop: 'messageRef',
-        time: '2021-10',
-        comment: `@deprecated should use \`inputRef\` */`,
-      },
-      {
-        prop: 'TextFieldProps',
-        time: '2021-10',
-        comment: `@deprecated TextField props */`,
-      },
-    ],
-    'RcDownshift',
-  ),
-)`
+const RcDownshift = styled(_RcDownshift)`
   ${DownshiftStyle}
 `;
 

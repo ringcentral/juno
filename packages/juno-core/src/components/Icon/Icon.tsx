@@ -13,7 +13,7 @@ import {
   RcPaletteProp,
   styled,
   useThemeProps,
-  withDeprecatedCheck,
+  useDeprecatedCheck,
 } from '../../foundation';
 import { RcCircularProgress, RcCircularProgressProps } from '../Progress';
 import { IconStyle, StyledSvg } from './styles';
@@ -85,6 +85,49 @@ type RcIconProps = {
 const _RcIcon = memo(
   forwardRef<any, RcIconProps>((inProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcIcon' });
+
+    if (process.env.NODE_ENV !== 'production') {
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      useDeprecatedCheck(RcIcon, props, [
+        {
+          prop: 'icon',
+          time: '2021-1',
+          comment: 'please use symbol to replace icon',
+        },
+        {
+          prop: 'children',
+          time: '2021-1',
+          comment: 'please use symbol to replace children',
+        },
+        {
+          prop: 'iconSize',
+          time: '2021-1',
+          comment: 'please use size',
+        },
+        {
+          prop: 'iconColor',
+          time: '2021-1',
+          comment: 'please use color',
+        },
+        {
+          prop: 'useLoading',
+          time: '2021-1',
+          comment: 'please use loading',
+        },
+        {
+          prop: 'loadingSize',
+          time: '2021-1',
+          comment:
+            'please use CircularProgressProps={{ size: 24 }} to set custom loading size',
+        },
+        {
+          prop: 'desc',
+          time: '2021-1',
+          comment: 'please use symbol',
+        },
+      ]);
+    }
+
     const {
       loadingSize,
       useLoading,
@@ -167,50 +210,7 @@ const _RcIcon = memo(
   }),
 );
 
-const RcIcon = styled(
-  withDeprecatedCheck(
-    _RcIcon,
-    [
-      {
-        prop: 'icon',
-        time: '2021-1',
-        comment: 'please use symbol to replace icon',
-      },
-      {
-        prop: 'children',
-        time: '2021-1',
-        comment: 'please use symbol to replace children',
-      },
-      {
-        prop: 'iconSize',
-        time: '2021-1',
-        comment: 'please use size',
-      },
-      {
-        prop: 'iconColor',
-        time: '2021-1',
-        comment: 'please use color',
-      },
-      {
-        prop: 'useLoading',
-        time: '2021-1',
-        comment: 'please use loading',
-      },
-      {
-        prop: 'loadingSize',
-        time: '2021-1',
-        comment:
-          'please use CircularProgressProps={{ size: 24 }} to set custom loading size',
-      },
-      {
-        prop: 'desc',
-        time: '2021-1',
-        comment: 'please use symbol',
-      },
-    ],
-    'RcIcon',
-  ),
-)`
+const RcIcon = styled(_RcIcon)`
   ${IconStyle}
 `;
 

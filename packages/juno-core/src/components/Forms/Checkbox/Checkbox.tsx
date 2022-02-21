@@ -14,7 +14,7 @@ import {
   RcBaseProps,
   styled,
   useThemeProps,
-  withDeprecatedCheck,
+  useDeprecatedCheck,
 } from '../../../foundation';
 import { RcIconButtonSize } from '../../Buttons/IconButton';
 import { withTooltip } from '../../Tooltip';
@@ -45,6 +45,18 @@ const getIconProps = CustomIconPropsGetter({
 
 const _RcCheckbox = forwardRef<any, RcCheckboxProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcCheckbox' });
+
+  if (process.env.NODE_ENV !== 'production') {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useDeprecatedCheck(RcCheckbox, props, [
+      {
+        prop: 'iconSize',
+        time: '2021-4',
+        comment: `@deprecated using size to replace that`,
+      },
+    ]);
+  }
+
   const {
     label,
     formControlLabelProps,
@@ -97,19 +109,7 @@ const _RcCheckbox = forwardRef<any, RcCheckboxProps>((inProps, ref) => {
   return Checkbox;
 });
 
-const RcCheckbox = styled(
-  withDeprecatedCheck(
-    withTooltip(_RcCheckbox),
-    [
-      {
-        prop: 'iconSize',
-        time: '2021-4',
-        comment: `@deprecated using size to replace that`,
-      },
-    ],
-    'RcCheckbox',
-  ),
-)`
+const RcCheckbox = styled(withTooltip(_RcCheckbox))`
   ${CheckboxStyle}
 `;
 

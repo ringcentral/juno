@@ -2,11 +2,14 @@ import React, { useEffect } from 'react';
 
 import { isForwardRef } from 'react-is';
 
-import { isShowJunoWarning, logInDev } from '../../../foundation';
+import { logInDev, rcConfiguration } from '../../../foundation';
 
 // TODO: this just for check error props
 export const useDownshiftError = ({ isNew, MenuItem, InputItem }: any) => {
-  if (isShowJunoWarning) {
+  if (
+    process.env.NODE_ENV !== 'production' &&
+    !rcConfiguration.WARNING_IGNORE
+  ) {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
       if (!isNew) {

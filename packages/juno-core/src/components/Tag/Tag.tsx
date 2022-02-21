@@ -6,7 +6,7 @@ import {
   RcTheme,
   styled,
   useThemeProps,
-  withDeprecatedCheck,
+  useDeprecatedCheck,
 } from '../../foundation';
 import { TagStyle } from './styles';
 import { colorMap } from './utils';
@@ -30,6 +30,18 @@ type RcTagProps = {
 const _RcTag = memo(
   forwardRef<any, RcTagProps>((inProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcTag' });
+
+    if (process.env.NODE_ENV !== 'production') {
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      useDeprecatedCheck(RcTag, props, [
+        {
+          prop: 'content',
+          comment: 'you should replace with children',
+          time: '2021-1',
+        },
+      ]);
+    }
+
     const {
       color,
       children,
@@ -48,15 +60,7 @@ const _RcTag = memo(
   }),
 );
 
-const RcTag = styled(
-  withDeprecatedCheck(_RcTag, [
-    {
-      prop: 'content',
-      comment: 'you should replace with children',
-      time: '2021-1',
-    },
-  ]),
-)`
+const RcTag = styled(_RcTag)`
   ${TagStyle}
 `;
 

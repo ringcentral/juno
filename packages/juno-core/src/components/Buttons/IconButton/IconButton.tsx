@@ -11,7 +11,7 @@ import {
   UnionOmit,
   useTheme,
   useThemeProps,
-  withDeprecatedCheck,
+  useDeprecatedCheck,
 } from '../../../foundation';
 import { RcIcon, RcIconProps, RcIconSize } from '../../Icon';
 import { RcTooltip, withTooltip } from '../../Tooltip';
@@ -73,6 +73,12 @@ type RcIconButtonProps = {
 const _RcIconButton = memo(
   forwardRef<HTMLButtonElement, RcIconButtonProps>((inProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcIconButton' });
+
+    if (process.env.NODE_ENV !== 'production') {
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      useDeprecatedCheck(RcIconButton, props, rcIconButtonWarning as any);
+    }
+
     const {
       buttonRef = ref,
       className,
@@ -205,14 +211,7 @@ const _RcIconButton = memo(
   }),
 );
 
-const RcIconButton = styled(
-  withDeprecatedCheck(
-    withTooltip(_RcIconButton),
-    // TODO remove when ready
-    rcIconButtonWarning as any,
-    'RcIconButton',
-  ),
-)`
+const RcIconButton = styled(withTooltip(_RcIconButton))`
   ${iconButtonStyle}
 `;
 

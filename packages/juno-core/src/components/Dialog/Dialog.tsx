@@ -9,7 +9,7 @@ import {
   styled,
   useRcPortalWindowContext,
   useThemeProps,
-  withDeprecatedCheck,
+  useDeprecatedCheck,
 } from '../../foundation';
 import { useUnmountPortalHandler } from '../PortalHost';
 import { DialogStyle } from './styles';
@@ -39,6 +39,26 @@ type RcDialogProps = {
 const _RcDialog = forwardRef<any, RcDialogProps>(
   (inProps: RcDialogProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcDialog' });
+
+    if (process.env.NODE_ENV !== 'production') {
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      useDeprecatedCheck(RcDialog, props, [
+        {
+          prop: 'size',
+          time: '2021-11',
+          comment: `
+     * please use \`maxWidth\` and \`fullScreen\` directly
+     *
+     * - 'fullScreen' => false
+     * - 'large' => \`md\`
+     * - 'medium' => \`sm\`
+     * - 'small' => \`xs\`
+     * - 'xsmall' => no longer exist, should custom by yourself
+     */`,
+        },
+      ]);
+    }
+
     const {
       classes: classesProp,
       size = 'medium',
@@ -108,27 +128,7 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
   },
 );
 
-const RcDialog = styled(
-  withDeprecatedCheck(
-    _RcDialog,
-    [
-      {
-        prop: 'size',
-        time: '2021-11',
-        comment: `
-   * please use \`maxWidth\` and \`fullScreen\` directly
-   *
-   * - 'fullScreen' => false
-   * - 'large' => \`md\`
-   * - 'medium' => \`sm\`
-   * - 'small' => \`xs\`
-   * - 'xsmall' => no longer exist, should custom by yourself
-   */`,
-      },
-    ],
-    'RcDialog',
-  ),
-)`
+const RcDialog = styled(_RcDialog)`
   ${DialogStyle}
 `;
 

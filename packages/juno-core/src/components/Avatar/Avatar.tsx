@@ -9,8 +9,8 @@ import {
   RcClassesProps,
   RcPaletteProp,
   styled,
+  useDeprecatedCheck,
   useThemeProps,
-  withDeprecatedCheck,
 } from '../../foundation';
 import { SvgSymbol } from '../Icon';
 import { RcPresence, RcPresenceProps } from '../Presence';
@@ -102,6 +102,42 @@ const _RcAvatar = forwardRef<any, RcAvatarProps<true>>(
   (inProps: RcAvatarProps, ref) => {
     // change default unClickable to here, prevent warning
     const props = useThemeProps({ props: inProps, name: 'RcAvatar' });
+
+    if (process.env.NODE_ENV !== 'production') {
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      useDeprecatedCheck(RcAvatar, inProps, [
+        {
+          prop: 'customColor',
+          time: '2021-3',
+          comment: `if 'true', will just use color value, use \`color\` directly `,
+        },
+        {
+          prop: 'unClickable',
+          time: '2021-3',
+          comment: `force set avatar clickable, default is true, please use clickable to set clickable `,
+        },
+        {
+          prop: 'isMember',
+          time: '2021-3',
+          comment: `not used, just keep type temp `,
+        },
+        {
+          prop: 'displayName',
+          time: '2021-3',
+          comment: `not used, just keep type temp `,
+        },
+        {
+          prop: 'alt',
+          time: '2021-3',
+          comment: `alt for img, just use \`<img src /> in children or imgProps for apply alt\` `,
+        },
+        {
+          prop: 'tooltip',
+          time: '2021-3',
+          comment: `support tooltip for avatar, use title to replace `,
+        },
+      ]);
+    }
 
     const {
       presenceOrigin,
@@ -262,44 +298,7 @@ const _RcAvatar = forwardRef<any, RcAvatarProps<true>>(
   },
 );
 
-const RcAvatar = styled(
-  withDeprecatedCheck(
-    withTooltip(_RcAvatar),
-    [
-      {
-        prop: 'customColor',
-        time: '2021-3',
-        comment: `if 'true', will just use color value, use \`color\` directly `,
-      },
-      {
-        prop: 'unClickable',
-        time: '2021-3',
-        comment: `force set avatar clickable, default is true, please use clickable to set clickable `,
-      },
-      {
-        prop: 'isMember',
-        time: '2021-3',
-        comment: `not used, just keep type temp `,
-      },
-      {
-        prop: 'displayName',
-        time: '2021-3',
-        comment: `not used, just keep type temp `,
-      },
-      {
-        prop: 'alt',
-        time: '2021-3',
-        comment: `alt for img, just use \`<img src /> in children or imgProps for apply alt\` `,
-      },
-      {
-        prop: 'tooltip',
-        time: '2021-3',
-        comment: `support tooltip for avatar, use title to replace `,
-      },
-    ],
-    'RcAvatar',
-  ),
-)``;
+const RcAvatar = styled(withTooltip(_RcAvatar))``;
 
 RcAvatar.defaultProps = {
   size: 'medium',

@@ -9,11 +9,14 @@ const _RcTextWithEllipsis = forwardRef<
   any,
   ComponentProps<typeof MuiTypography>
 >((props, ref) => {
-  useDeprecatedLog({
-    component: 'RcTextWithEllipsis',
-    message:
-      'should not use that, just use `RcText` with `titleWhenOverflow` and `flexFull`',
-  });
+  if (process.env.NODE_ENV !== 'production') {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useDeprecatedLog({
+      component: 'RcTextWithEllipsis',
+      message:
+        'should not use that, just use `RcText` with `titleWhenOverflow` and `flexFull`',
+    });
+  }
 
   return <MuiTypography {...props} ref={ref} />;
 });

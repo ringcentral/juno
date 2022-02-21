@@ -33,11 +33,13 @@ export function doAlpha(
   try {
     return MuiAlpha(color, +alpha.toFixed(2));
   } catch (error) {
-    logInDev({
-      component: 'setOpacity',
-      message:
-        'your color pass into setOpacity is error color, check your color again, please',
-    });
+    if (process.env.NODE_ENV !== 'production') {
+      logInDev({
+        component: 'setOpacity',
+        message:
+          'your color pass into setOpacity is error color, check your color again, please',
+      });
+    }
 
     return color;
   }

@@ -167,7 +167,10 @@ const _RcSplitButton = forwardRef<any, RcSplitButtonProps>(
     }, [color, loading, toButtonSize, type, variant]);
 
     const { actionButtonProps, children } = useMemo(() => {
-      if (!(childrenProp instanceof Array)) {
+      if (
+        process.env.NODE_ENV !== 'production' &&
+        !(childrenProp instanceof Array)
+      ) {
         logInDev({
           component: 'RcSplitButton',
           message:

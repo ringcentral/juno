@@ -28,7 +28,7 @@ import {
   styled,
   useEventCallback,
   useThemeProps,
-  withDeprecatedCheck,
+  useDeprecatedCheck,
 } from '../../../../foundation';
 import { RcPopoverProps } from '../../../Popover';
 import {
@@ -297,21 +297,9 @@ const InnerRcDatePicker = forwardRef<any, RcDatePickerProps>((props, ref) => {
 const _RcDatePicker = forwardRef<any, RcDatePickerProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcDatePicker' });
 
-  return (
-    <MuiPickersUtilsProvider
-      utils={MomentUtils}
-      locale={props.locale}
-      libInstance={moment}
-    >
-      <InnerRcDatePicker ref={ref} {...props} />
-    </MuiPickersUtilsProvider>
-  );
-});
-
-const RcDatePicker = styled(
-  withDeprecatedCheck(
-    _RcDatePicker,
-    [
+  if (process.env.NODE_ENV !== 'production') {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useDeprecatedCheck(RcDatePicker, props, [
       {
         prop: 'minDate',
         time: '2021-3',
@@ -327,10 +315,21 @@ const RcDatePicker = styled(
         time: '2021-3',
         comment: `please use value to replace that `,
       },
-    ],
-    'RcDatePicker',
-  ),
-)``;
+    ]);
+  }
+
+  return (
+    <MuiPickersUtilsProvider
+      utils={MomentUtils}
+      locale={props.locale}
+      libInstance={moment}
+    >
+      <InnerRcDatePicker ref={ref} {...props} />
+    </MuiPickersUtilsProvider>
+  );
+});
+
+const RcDatePicker = styled(_RcDatePicker)``;
 
 RcDatePicker.defaultProps = {
   clearBtn: true,

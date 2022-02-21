@@ -155,10 +155,12 @@ const _RcMenuItem = forwardRef<any, RcMenuItemProps & RcMenuItemInnerProps>(
       }
 
       if (typeof icon === 'string') {
-        logInDev({
-          component: 'RcMenuItem',
-          message: 'please use symbol to replace icon string',
-        });
+        if (process.env.NODE_ENV !== 'production') {
+          logInDev({
+            component: 'RcMenuItem',
+            message: 'please use symbol to replace icon string',
+          });
+        }
         return (
           <RcListItemIcon>
             <RcIcon size="small">{icon}</RcIcon>

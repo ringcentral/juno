@@ -56,10 +56,12 @@ export class PortalManager<D extends {} = {}> extends Connectable<
 
     // portalWithSameID opened
     if (currPortal?.open) {
-      logInDev({
-        component: 'RcPortalHost',
-        message: `open the portal with id('${id}') failed, this portal is already open`,
-      });
+      if (process.env.NODE_ENV !== 'production') {
+        logInDev({
+          component: 'RcPortalHost',
+          message: `open the portal with id('${id}') failed, this portal is already open`,
+        });
+      }
       return currPortal.portalController;
     }
 
@@ -139,10 +141,12 @@ export class PortalManager<D extends {} = {}> extends Connectable<
   closeByID<F>(id: UniqID, feedback?: F) {
     const portal = this.portalStore.get(id);
     if (!portal?.open) {
-      logInDev({
-        component: 'RcPortalHost',
-        message: 'close portal failed, this portal is already closed',
-      });
+      if (process.env.NODE_ENV !== 'production') {
+        logInDev({
+          component: 'RcPortalHost',
+          message: 'close portal failed, this portal is already closed',
+        });
+      }
       return;
     }
 
@@ -160,10 +164,12 @@ export class PortalManager<D extends {} = {}> extends Connectable<
   [UnmountSymbol](id: UniqID) {
     const portal = this.portalStore.get(id);
     if (!portal) {
-      logInDev({
-        component: 'RcPortalHost',
-        message: 'unmount portal failed, this portal is already unmount',
-      });
+      if (process.env.NODE_ENV !== 'production') {
+        logInDev({
+          component: 'RcPortalHost',
+          message: 'unmount portal failed, this portal is already unmount',
+        });
+      }
       return;
     }
 
@@ -179,10 +185,12 @@ export class PortalManager<D extends {} = {}> extends Connectable<
   ) {
     const portal = this.portalStore.get(id);
     if (!portal?.open) {
-      logInDev({
-        component: 'RcPortalHost',
-        message: 'update props failed, this portal is already closed',
-      });
+      if (process.env.NODE_ENV !== 'production') {
+        logInDev({
+          component: 'RcPortalHost',
+          message: 'update props failed, this portal is already closed',
+        });
+      }
       return;
     }
     const props = (() => {

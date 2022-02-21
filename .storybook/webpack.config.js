@@ -3,10 +3,18 @@ const path = require('path');
 const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const CircularDependencyPlugin = require('circular-dependency-plugin');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 const smp = new SpeedMeasurePlugin({ disable: !process.env.MEASURE });
 
 module.exports = async ({ config }) => {
+  config.resolve.plugins = [
+    ...(config.resolve.plugins || []),
+    new TsconfigPathsPlugin({
+      extensions: config.resolve.extensions,
+    }),
+  ];
+
   config = {
     ...config,
     module: {

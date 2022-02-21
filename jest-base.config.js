@@ -7,6 +7,9 @@ module.exports = {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
       path.join(__dirname, './tests/__mocks__/fileMock.js'),
     '\\.(css|less)$': path.join(__dirname, './tests/__mocks__/cssMock.js'),
+    '@ringcentral/juno$': '<rootDir>/packages/juno-core/index.ts',
+    '@ringcentral/juno-foundation$':
+      'packages/juno-core/src/foundation/index.ts',
   },
   transform: {
     '^.+\\.story\\.tsx$': '@storybook/addon-storyshots/injectFileName',

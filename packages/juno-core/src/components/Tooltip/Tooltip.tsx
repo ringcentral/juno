@@ -17,10 +17,10 @@ import {
   RcBaseSize,
   RcPaletteProp,
   styled,
+  useDeprecatedCheck,
   useForkRef,
   useRcPortalWindowContext,
   useThemeProps,
-  withDeprecatedCheck,
 } from '../../foundation';
 import { Mask, tooltipStyle } from './styles';
 import { RcTooltipClasses, useTooltipForceHide } from './utils';
@@ -57,6 +57,18 @@ type RcTooltipProps = {
 
 const _RcTooltip = forwardRef<any, RcTooltipProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcTooltip' });
+
+  if (process.env.NODE_ENV !== 'production') {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useDeprecatedCheck(RcTooltip, props, [
+      {
+        prop: 'injectGlobalStyle',
+        time: '2021-3',
+        comment: `@deprecated now need anymore */`,
+      },
+    ]);
+  }
+
   const {
     children,
     tooltipForceHide,
@@ -133,11 +145,13 @@ const _RcTooltip = forwardRef<any, RcTooltipProps>((inProps, ref) => {
       (childNode as any).disabled
     ) {
       setIsDisabledButton(true);
-      logInDev({
-        component: 'RcTooltip',
-        message:
-          'You have set a tooltip on disabled button, A disabled element does not fire events.',
-      });
+      if (process.env.NODE_ENV !== 'production') {
+        logInDev({
+          component: 'RcTooltip',
+          message:
+            'You have set a tooltip on disabled button, A disabled element does not fire events.',
+        });
+      }
     } else if (isDisabledButton) {
       setIsDisabledButton(false);
     }
@@ -163,19 +177,7 @@ const _RcTooltip = forwardRef<any, RcTooltipProps>((inProps, ref) => {
 });
 
 /** @release */
-const RcTooltip = styled(
-  withDeprecatedCheck(
-    _RcTooltip,
-    [
-      {
-        prop: 'injectGlobalStyle',
-        time: '2021-3',
-        comment: `@deprecated now need anymore */`,
-      },
-    ],
-    'RcTooltip',
-  ),
-)`
+const RcTooltip = styled(_RcTooltip)`
   ${tooltipStyle};
 `;
 

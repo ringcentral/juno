@@ -32,15 +32,18 @@ export const getResizeObserver: (
 ) => ResizeObserver = (callback, externalWindow) => {
   if (externalWindow) {
     if (externalWindow?.['ResizeObserver'] === undefined) {
-      const message = `window.ResizeObserver is not a constructor,
+      if (process.env.NODE_ENV !== 'production') {
+        const message = `window.ResizeObserver is not a constructor,
     should load polyfill script from 'foundation/polyfill/resize-observer-polyfill/ResizeObserver.global.js' or other CDN polyfill on render window.`;
 
-      logInDev({
-        component: 'useResizeObserver',
-        level: 'error',
-        message,
-      });
-      throw Error(message);
+        logInDev({
+          component: 'useResizeObserver',
+          level: 'error',
+          message,
+        });
+        throw Error(message);
+      }
+      throw Error('window.ResizeObserver not defined');
     }
 
     return new externalWindow['ResizeObserver'](callback);

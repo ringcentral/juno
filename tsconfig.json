@@ -1,6 +1,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ringcentral/juno": ["packages/juno-core/index.ts"],
+      "@ringcentral/juno-foundation": ["packages/juno-core/src/foundation/index.ts"]
+    },
     "importHelpers": true,
     "moduleResolution": "node",
     "module": "commonjs",

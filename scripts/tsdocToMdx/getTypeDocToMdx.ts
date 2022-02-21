@@ -6,7 +6,7 @@ const sourcePath = process.argv[2];
 const category = process.argv[3];
 console.log(`[TypeDoc] get typedoc to mdx list`);
 
-const markWithDeprecated = (filePath: string) => {
+const getTypeDocToMdx = (filePath: string) => {
   const fileList = Lib.getFileTree(filePath)
     .filter(
       (x) =>
@@ -24,6 +24,6 @@ const markWithDeprecated = (filePath: string) => {
   console.log(JSON.stringify(fileList, null, 2));
 };
 
-markWithDeprecated(sourcePath);
+getTypeDocToMdx(sourcePath);
 
 console.log(`[TypeDoc] completed!`);

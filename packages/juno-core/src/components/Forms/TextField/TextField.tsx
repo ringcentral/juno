@@ -24,7 +24,7 @@ import {
   useEventCallback,
   useForkRef,
   useThemeProps,
-  withDeprecatedCheck,
+  useDeprecatedCheck,
 } from '../../../foundation';
 import { RcIconButtonProps } from '../../Buttons';
 import { WithTooltipProps } from '../../Tooltip';
@@ -100,6 +100,33 @@ const combineOutlineClasses = combineClasses(
 
 const _RcTextField = forwardRef<any, RcTextFieldProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcTextField' });
+
+  if (process.env.NODE_ENV !== 'production') {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useDeprecatedCheck(RcTextField, props, [
+      {
+        prop: 'focusOnMount',
+        time: '2021-4',
+        comment: `please use \`autoFocus\` to replace that`,
+      },
+      {
+        prop: 'selectOnMount',
+        time: '2021-4',
+        comment: `please use \`autoSelect\` to replace that`,
+      },
+      {
+        prop: 'clearLabel',
+        time: '2021-4',
+        comment: `clear button label, please use \`clearButtonProps\` with \`title\` replace that`,
+      },
+      {
+        prop: 'clearAriaLabel',
+        time: '2021-4',
+        comment: `clear button aria-label, use \`clearButtonProps\` with \`aria-label\` replace that`,
+      },
+    ]);
+  }
+
   const {
     classes: classesProp,
     InputLabelProps: InputLabelPropsProp,
@@ -338,34 +365,7 @@ const _RcTextField = forwardRef<any, RcTextFieldProps>((inProps, ref) => {
 });
 
 /** @release */
-const RcTextField = styled(
-  withDeprecatedCheck(
-    _RcTextField,
-    [
-      {
-        prop: 'focusOnMount',
-        time: '2021-4',
-        comment: `please use \`autoFocus\` to replace that`,
-      },
-      {
-        prop: 'selectOnMount',
-        time: '2021-4',
-        comment: `please use \`autoSelect\` to replace that`,
-      },
-      {
-        prop: 'clearLabel',
-        time: '2021-4',
-        comment: `clear button label, please use \`clearButtonProps\` with \`title\` replace that`,
-      },
-      {
-        prop: 'clearAriaLabel',
-        time: '2021-4',
-        comment: `clear button aria-label, use \`clearButtonProps\` with \`aria-label\` replace that`,
-      },
-    ],
-    'RcTextField',
-  ),
-)`
+const RcTextField = styled(_RcTextField)`
   ${TextFieldStyle}
 `;
 

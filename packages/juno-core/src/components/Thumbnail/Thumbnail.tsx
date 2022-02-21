@@ -4,7 +4,7 @@ import {
   RcBaseSize,
   styled,
   useThemeProps,
-  withDeprecatedCheck,
+  useDeprecatedCheck,
 } from '../../foundation';
 import { RcIcon, RcIconProps } from '../Icon';
 import { StyledThumbnail } from './styles';
@@ -27,6 +27,23 @@ type RcThumbnailProps = {
 const _RcThumbnail = forwardRef<any, RcThumbnailProps>(
   (inProps: RcThumbnailProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcThumbnail' });
+
+    if (process.env.NODE_ENV !== 'production') {
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      useDeprecatedCheck(RcThumbnail, props, [
+        {
+          prop: 'iconType',
+          time: '2021-2',
+          comment: 'Please use symbol to set icon',
+        },
+        {
+          prop: 'url',
+          time: '2021-2',
+          comment: 'Please use src to set url',
+        },
+      ]);
+    }
+
     const { url, src = url, iconType, size, symbol, ...rest } = props;
     return (
       <>
@@ -54,24 +71,7 @@ const _RcThumbnail = forwardRef<any, RcThumbnailProps>(
   },
 );
 
-const RcThumbnail = styled(
-  withDeprecatedCheck(
-    memo(_RcThumbnail),
-    [
-      {
-        prop: 'iconType',
-        time: '2021-2',
-        comment: 'Please use symbol to set icon',
-      },
-      {
-        prop: 'url',
-        time: '2021-2',
-        comment: 'Please use src to set url',
-      },
-    ],
-    'RcThumbnail',
-  ),
-)``;
+const RcThumbnail = styled(memo(_RcThumbnail))``;
 
 RcThumbnail.defaultProps = {
   size: 'large',

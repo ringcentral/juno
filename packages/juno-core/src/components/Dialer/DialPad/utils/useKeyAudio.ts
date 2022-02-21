@@ -29,11 +29,11 @@ export const useKeyAudio = ({ volume, muted, sounds }: audioOption) => {
 
     audio.currentTime = 0;
     audio.src = src;
-    lastPlayRef.current = audio
-      .play()
-      .catch((reason) =>
-        logInDev({ component: 'RcDialerPad', message: reason }),
-      );
+    lastPlayRef.current = audio.play().catch((reason) => {
+      if (process.env.NODE_ENV !== 'production') {
+        logInDev({ component: 'RcDialerPad', message: reason });
+      }
+    });
   };
 
   const playKeyAudio = (key: string) => {

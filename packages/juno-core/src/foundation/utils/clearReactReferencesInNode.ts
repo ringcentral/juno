@@ -30,16 +30,18 @@ function clearReactReferencesInNode(node: ChildNode) {
       }
     }
   } catch (error) {
-    logInDev(
-      {
-        component: 'clearReactReferencesInNode',
-        message: `trigger clearReactReferencesInNode fail`,
-      },
-      () => {
-        // eslint-disable-next-line no-console
-        console.log(error);
-      },
-    );
+    if (process.env.NODE_ENV !== 'production') {
+      logInDev(
+        {
+          component: 'clearReactReferencesInNode',
+          message: `trigger clearReactReferencesInNode fail`,
+        },
+        () => {
+          // eslint-disable-next-line no-console
+          console.log(error);
+        },
+      );
+    }
   }
 }
 

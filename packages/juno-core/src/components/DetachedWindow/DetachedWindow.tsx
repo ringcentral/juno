@@ -160,11 +160,14 @@ const RcDetachedWindow = memo(
         : openExternalWindow(props);
 
       if (!newWindow) {
-        logInDev({
-          component: 'RcDetachedWindow',
-          message:
-            'Please check your window instance, that `window.open` should not trigger by another window',
-        });
+        if (process.env.NODE_ENV !== 'production') {
+          logInDev({
+            component: 'RcDetachedWindow',
+            message:
+              'Please check your window instance, that `window.open` should not trigger by another window',
+          });
+        }
+
         return;
       }
 

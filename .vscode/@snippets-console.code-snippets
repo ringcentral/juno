@@ -18,5 +18,14 @@
   "console.time()": {
     "prefix": "cti: console.time",
     "body": ["console.time('$1');", "console.timeEnd('$1');"]
+  },
+  "non-production": {
+    "prefix": "process.env.NODE_ENV",
+    "body": [
+      "if (process.env.NODE_ENV !== 'production') {",
+      "// eslint-disable-next-line react-hooks/rules-of-hooks",
+      "  $0",
+      "}"
+    ]
   }
 }

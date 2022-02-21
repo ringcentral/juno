@@ -15,28 +15,36 @@ export const RcIconSizes: Record<RcIconSize, number | string> = {
 export function switchSize(size: any): BaseSizeKey {
   switch (size) {
     case 'extraSmall':
-      logInDev({
-        component: 'RcIcon',
-        message: 'please change extraSmall to xsmall',
-      });
+      if (process.env.NODE_ENV !== 'production') {
+        logInDev({
+          component: 'RcIcon',
+          message: 'please change extraSmall to xsmall',
+        });
+      }
       return 'xsmall';
     case 'moreLarge':
-      logInDev({
-        component: 'RcIcon',
-        message: 'please change moreLarge to xlarge',
-      });
+      if (process.env.NODE_ENV !== 'production') {
+        logInDev({
+          component: 'RcIcon',
+          message: 'please change moreLarge to xlarge',
+        });
+      }
       return 'xlarge';
     case 'mediumLarge':
-      logInDev({
-        component: 'RcIcon',
-        message: 'please change mediumLarge to xxlarge',
-      });
+      if (process.env.NODE_ENV !== 'production') {
+        logInDev({
+          component: 'RcIcon',
+          message: 'please change mediumLarge to xxlarge',
+        });
+      }
       return 'xxlarge';
     case 'extraLarge':
-      logInDev({
-        component: 'RcIcon',
-        message: 'please change extraLarge to xxxlarge',
-      });
+      if (process.env.NODE_ENV !== 'production') {
+        logInDev({
+          component: 'RcIcon',
+          message: 'please change extraLarge to xxxlarge',
+        });
+      }
       return 'xxxlarge';
     default:
       return size;

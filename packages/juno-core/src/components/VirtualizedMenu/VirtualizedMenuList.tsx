@@ -13,7 +13,6 @@ import {
   combineProps,
   getScrollbarSize,
   isRcElement,
-  isShowJunoWarning,
   logInDev,
   RcBaseProps,
   styled,
@@ -126,16 +125,14 @@ const _RcVirtualizedMenuList = forwardRef<any, RcVirtualizedMenuListProps>(
         return;
       }
 
-      if (isShowJunoWarning) {
-        if (isFragment(child)) {
-          logInDev({
-            component: 'RcVirtualizedMenuList',
-            message: [
-              "Material-UI: The Menu component doesn't accept a Fragment as a child.",
-              'Consider providing an array instead.',
-            ].join('\n'),
-          });
-        }
+      if (process.env.NODE_ENV !== 'production' && isFragment(child)) {
+        logInDev({
+          component: 'RcVirtualizedMenuList',
+          message: [
+            "Material-UI: The Menu component doesn't accept a Fragment as a child.",
+            'Consider providing an array instead.',
+          ].join('\n'),
+        });
       }
 
       if (!child.props.disabled) {

@@ -60,11 +60,13 @@ const RcLoading: FunctionComponent<RcLoadingProps> = (inProps) => {
       );
     }
 
-    logInDev({
-      component: 'RcLoading',
-      message:
-        'please confirm your children is a valid html element to set style, when you use `keepVisible=false`',
-    });
+    if (process.env.NODE_ENV !== 'production') {
+      logInDev({
+        component: 'RcLoading',
+        message:
+          'please confirm your children is a valid html element to set style, when you use `keepVisible=false`',
+      });
+    }
 
     return childrenWhenLoading;
   };

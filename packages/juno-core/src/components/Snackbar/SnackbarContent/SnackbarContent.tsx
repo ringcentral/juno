@@ -13,8 +13,8 @@ import {
   RcBaseProps,
   RcBaseSize,
   styled,
+  useDeprecatedCheck,
   useThemeProps,
-  withDeprecatedCheck,
 } from '../../../foundation';
 import { RcCircularProgress } from '../../Progress/CircularProgress';
 import { snackbarContentStyle } from './styles';
@@ -53,6 +53,18 @@ type RcSnackbarContentProps = {
 const _RcSnackbarContent = forwardRef<any, RcSnackbarContentProps>(
   (inProps: RcSnackbarContentProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcSnackbarContent' });
+
+    if (process.env.NODE_ENV !== 'production') {
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      useDeprecatedCheck(RcSnackbarContent, props, [
+        {
+          prop: 'ariaLabel',
+          time: '2021-3',
+          comment: `please use \`aria-label\` directly `,
+        },
+      ]);
+    }
+
     const {
       classes: classesProp,
       loading,
@@ -109,19 +121,7 @@ const _RcSnackbarContent = forwardRef<any, RcSnackbarContentProps>(
   },
 );
 
-const RcSnackbarContent = styled(
-  withDeprecatedCheck(
-    _RcSnackbarContent,
-    [
-      {
-        prop: 'ariaLabel',
-        time: '2021-3',
-        comment: `please use \`aria-label\` directly `,
-      },
-    ],
-    'RcSnackbarContent',
-  ),
-)`
+const RcSnackbarContent = styled(_RcSnackbarContent)`
   ${snackbarContentStyle}
 `;
 
