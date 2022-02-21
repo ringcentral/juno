@@ -3,6 +3,10 @@ module.exports = {
     builder: 'webpack5',
   },
   stories: ['../packages/**/*.story.tsx', '../packages/**/*.story.mdx'],
+  // TODO: wait for theme switch complete
+  // features: {
+  //   storyStoreV7: true,
+  // },
   addons: [
     '@storybook/addon-knobs',
     '@storybook/addon-storysource',
@@ -27,4 +31,19 @@ module.exports = {
     checkOptions: {},
     reactDocgen: 'none',
   },
+  managerWebpack: async (config, options) => {
+    // * storybook can support custom title, we should set that by our self
+    // * that may be change in future version update
+    // https://github.com/storybookjs/storybook/blob/8940c2a3ca/lib/manager-webpack5/src/presets/manager-preset.ts#L89
+    config.plugins
+      .filter((plugin) => plugin.constructor?.name === 'HtmlWebpackPlugin')
+      .forEach((plugin) => {
+        plugin.userOptions.title = 'Juno Storybook';
+      });
+
+    return config;
+  },
+  // refs,
+  // managerBabel,
+  // features,
 };
