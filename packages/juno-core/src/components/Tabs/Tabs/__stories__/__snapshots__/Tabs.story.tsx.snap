@@ -2345,3 +2345,588 @@ Array [
   <br />,
 ]
 `;
+
+exports[`Storyshots 🚀 Cleanup Components/Tabs/Tabs Tabs With Dynamic Children 1`] = `
+Array [
+  .c4 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 20px;
+  color: #666666;
+}
+
+.c1 {
+  text-transform: none;
+  box-sizing: border-box;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+  min-height: 32px;
+  min-width: 32px;
+}
+
+.c1.RcTab-selected {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #066FAC;
+}
+
+.c2 {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+}
+
+.c0 {
+  min-height: auto;
+}
+
+.c0 .RcTabs-indicator {
+  background-color: #066FAC;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<div
+    className="MuiPaper-root MuiPaper-elevation1"
+  >
+    <div
+      className="MuiTabs-root c0"
+      size="small"
+    >
+      <div
+        className="MuiTabs-scroller MuiTabs-fixed"
+        onScroll={[Function]}
+        style={
+          Object {
+            "marginBottom": null,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <div
+          className="MuiTabs-flexContainer"
+          onKeyDown={[Function]}
+          role="tablist"
+        >
+          <button
+            aria-selected={true}
+            className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1 Mui-selected RcTab-selected"
+            data-test-automation-id="tab-test-0"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="tab"
+            size="small"
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiTab-wrapper RcTab-wrapper"
+            >
+              Tab 0-0
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            aria-selected={false}
+            className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1"
+            data-test-automation-id="tab-test-1"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="tab"
+            size="small"
+            tabIndex={-1}
+            type="button"
+          >
+            <span
+              className="MuiTab-wrapper RcTab-wrapper"
+            >
+              Tab 1-0
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            aria-selected={false}
+            className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1"
+            data-test-automation-id="tab-test-2"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="tab"
+            size="small"
+            tabIndex={-1}
+            type="button"
+          >
+            <span
+              className="MuiTab-wrapper RcTab-wrapper"
+            >
+              Tab 2-0
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            aria-selected={false}
+            className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1"
+            data-test-automation-id="tab-test-3"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="tab"
+            size="small"
+            tabIndex={-1}
+            type="button"
+          >
+            <span
+              className="MuiTab-wrapper RcTab-wrapper"
+            >
+              Tab 3-0
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            aria-selected={false}
+            className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1"
+            data-test-automation-id="tab-test-4"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="tab"
+            size="small"
+            tabIndex={-1}
+            type="button"
+          >
+            <span
+              className="MuiTab-wrapper RcTab-wrapper"
+            >
+              Tab 4-0
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            aria-selected={false}
+            className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1 Mui-disabled Mui-disabled"
+            data-test-automation-id="tab-test-5"
+            disabled={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="tab"
+            size="small"
+            tabIndex={-1}
+            type="button"
+          >
+            <span
+              className="MuiTab-wrapper RcTab-wrapper"
+            >
+              Tab 5-0
+            </span>
+          </button>
+          <button
+            aria-selected={false}
+            className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1"
+            data-test-automation-id="tab-test-6"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="tab"
+            size="small"
+            tabIndex={-1}
+            type="button"
+          >
+            <span
+              className="MuiTab-wrapper RcTab-wrapper"
+            >
+              Tab 6-0
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            aria-selected={false}
+            className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1"
+            data-test-automation-id="tab-test-7"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="tab"
+            size="small"
+            tabIndex={-1}
+            type="button"
+          >
+            <span
+              className="MuiTab-wrapper RcTab-wrapper"
+            >
+              Tab 77777777-0
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            aria-selected={false}
+            className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1"
+            data-test-automation-id="tab-test-8"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="tab"
+            size="small"
+            tabIndex={-1}
+            type="button"
+          >
+            <span
+              className="MuiTab-wrapper RcTab-wrapper"
+            >
+              Tab 8-0
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            aria-selected={false}
+            className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1"
+            data-test-automation-id="tab-test-9"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="tab"
+            size="small"
+            tabIndex={-1}
+            type="button"
+          >
+            <span
+              className="MuiTab-wrapper RcTab-wrapper"
+            >
+              Tab 9-0
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            aria-controls="rc-juno-id-0"
+            aria-haspopup="true"
+            aria-selected={false}
+            className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary c1 c2"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="tab"
+            size="small"
+            tabIndex={-1}
+            type="button"
+          >
+            <span
+              className="MuiTab-wrapper RcTab-wrapper"
+            >
+              <span
+                className="c3 more_horiz icon"
+              >
+                <svg
+                  className="c4"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 16a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm9.5 0a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm9.5 0a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"
+                  />
+                </svg>
+                
+              </span>
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <span
+          className="PrivateTabIndicator-root-300 PrivateTabIndicator-colorPrimary-301 MuiTabs-indicator RcTabs-indicator"
+          style={
+            Object {
+              "left": 0,
+              "width": 0,
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #066FAC;
+}
+
+.c0.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c0.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c0.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c0.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      click
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>,
+]
+`;
