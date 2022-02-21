@@ -1,4 +1,11 @@
 
+### [2.0.1](https://github.com/ringcentral/juno/compare/juno-core-v2.0.0...juno-core-v2.0.1) (2022-02-21)
+
+
+### Bug Fixes
+
+* **Tabs Tabs:** fix tabs children change not re-render issue ([31de650](https://github.com/ringcentral/juno/commit/31de650cd5b237f727d730a8357e55be00ad9180))
+
 ## 2.0.0 (2022-02-21)
 
 
