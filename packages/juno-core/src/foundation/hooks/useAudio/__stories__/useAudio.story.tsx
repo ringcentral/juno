@@ -25,12 +25,13 @@ export const SimpleAnnouncer: Story<{}> = () => {
       stretchIcon
       color="interactive.b02"
       symbol={isPlaying ? PauseCircleBorder : PlayCircleBorder}
-      onClick={() => {
+      onClick={async () => {
         setIsPlaying(!isPlaying);
         if (isPlaying) {
           audio.pause();
         } else {
-          audio.play();
+          // eslint-disable-next-line storybook/context-in-play-function
+          await audio.play();
         }
       }}
     />
