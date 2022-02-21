@@ -1,0 +1,41 @@
+name: Publish Package to npm
+on:
+  release:
+    types: [created]
+env:
+  CORE: ${{ contains(github.ref, 'juno-core') }}
+  ICON: ${{ contains(github.ref, 'juno-icon') }}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install 👾
+        run: yarn
+
+      - name: Build core 📦
+        # TODO: that need == true to make if work correct, find way
+        if: ${{ env.CORE == true }}
+        run: yarn workspace @ringcentral/juno run release
+      - name: Publish core 🚀
+        if: ${{ env.CORE == true }}
+        run: npm publish ./packages/juno-core/dist
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Build icon 📦
+        if: ${{ env.ICON == true }}
+        run: yarn workspace @ringcentral/juno-icon run release
+      - name: Publish icon 🚀
+        if: ${{ env.ICON == true }}
+        run: npm publish ./packages/juno-icon/dist
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

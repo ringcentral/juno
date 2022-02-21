@@ -1,5 +1,5 @@
 name: Deploy to Github Hosting on merge
-"on":
+on:
   push:
     branches:
       - main
@@ -9,13 +9,12 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: install # will run `yarn install` command
 
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: predeploy
+      - name: Install 👾
+        run: yarn
+
+      - name: Build 📦
+        run: yarn predeploy
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
