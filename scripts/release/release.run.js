@@ -10,7 +10,7 @@ const ignoreNext = process.argv.includes('--ignore-next');
     const packageOptions = ['juno-core', 'juno-icon'];
 
     const { packageName } = argPackageName
-      ? argPackageName
+      ? { packageName: argPackageName }
       : await inquirer.prompt([
           {
             type: 'list',
@@ -22,6 +22,8 @@ const ignoreNext = process.argv.includes('--ignore-next');
         ]);
 
     const packagePath = `packages/${packageName}`;
+
+    console.log(packagePath);
 
     const pathOptions = {
       path: packagePath,
