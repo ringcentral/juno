@@ -6,6 +6,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'prettier',
     'plugin:security/recommended',
+    'plugin:storybook/recommended',
   ],
   plugins: [
     'react-hooks',
@@ -121,11 +122,18 @@ module.exports = {
         trailingComma: 'all',
       },
     ],
-    'react-hooks/rules-of-hooks': 'warn', // Checks rules of Hooks
-    'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
+    'react-hooks/rules-of-hooks': 'warn',
+    // Checks rules of Hooks
+    'react-hooks/exhaustive-deps': 'warn',
+    // Checks effect dependencies
     'import/dynamic-import-chunkname': 'warn',
     'security/detect-object-injection': 'off',
-    'react/jsx-no-duplicate-props': [2, { ignoreCase: false }],
+    'react/jsx-no-duplicate-props': [
+      2,
+      {
+        ignoreCase: false,
+      },
+    ],
     'security/detect-non-literal-fs-filename': 'off',
   },
   settings: {
