@@ -1,4 +1,17 @@
 
+## 2.0.0 (2022-02-21)
+
+
+### Features
+
+* **DetachedWindow:** remove  deprecated props `replace` ([b81cf02](https://github.com/ringcentral/juno/commit/b81cf0296657725704e9ee8aecb8c1288b0aeb44))
+* **Monorepo:** migrate to monorepo ([7f72715](https://github.com/ringcentral/juno/commit/7f727156f5716f6dc1d0894ffd2faf46d9ebce06))
+
+
+### Bug Fixes
+
+* **Text:** fix title issue check, let user can set null to cancel title ([c6355c4](https://github.com/ringcentral/juno/commit/c6355c445061e9c617b340ee22e3862d84910786))
+
 ### [1.12.6](https://github.com/ringcentral/juno/compare/1.12.5...1.12.6) (2022-02-09)
 
 
