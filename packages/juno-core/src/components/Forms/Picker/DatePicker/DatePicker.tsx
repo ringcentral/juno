@@ -26,9 +26,9 @@ import {
   RcBaseSize,
   RcClassesProps,
   styled,
+  useDeprecatedCheck,
   useEventCallback,
   useThemeProps,
-  useDeprecatedCheck,
 } from '../../../../foundation';
 import { RcPopoverProps } from '../../../Popover';
 import {

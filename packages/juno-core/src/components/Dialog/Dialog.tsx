@@ -7,9 +7,9 @@ import {
   RcBaseProps,
   RcBaseSize,
   styled,
+  useDeprecatedCheck,
   useRcPortalWindowContext,
   useThemeProps,
-  useDeprecatedCheck,
 } from '../../foundation';
 import { useUnmountPortalHandler } from '../PortalHost';
 import { DialogStyle } from './styles';

@@ -8,8 +8,8 @@ import {
   RcBaseProps,
   RcPaletteProp,
   styled,
-  useThemeProps,
   useDeprecatedCheck,
+  useThemeProps,
 } from '../../../foundation';
 import { RcTypographyProps } from '../../Typography';
 import { ListItemTextStyle } from './styles';

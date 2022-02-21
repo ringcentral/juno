@@ -9,9 +9,9 @@ import {
   RcTheme,
   styled,
   UnionOmit,
+  useDeprecatedCheck,
   useTheme,
   useThemeProps,
-  useDeprecatedCheck,
 } from '../../../foundation';
 import { RcIcon, RcIconProps, RcIconSize } from '../../Icon';
 import { RcTooltip, withTooltip } from '../../Tooltip';

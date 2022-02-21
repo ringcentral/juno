@@ -3,8 +3,8 @@ import React, { forwardRef, HTMLAttributes, memo } from 'react';
 import {
   RcBaseSize,
   styled,
-  useThemeProps,
   useDeprecatedCheck,
+  useThemeProps,
 } from '../../foundation';
 import { RcIcon, RcIconProps } from '../Icon';
 import { StyledThumbnail } from './styles';

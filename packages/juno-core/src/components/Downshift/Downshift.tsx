@@ -20,11 +20,11 @@ import {
   RcBaseProps,
   RcClassesProps,
   styled,
+  useDeprecatedCheck,
   useEventCallback,
   useForkRef,
   useTheme,
   useThemeProps,
-  useDeprecatedCheck,
 } from '../../foundation';
 import { RcIconButtonProps } from '../Buttons/IconButton';
 import { RcChip } from '../Chip';

@@ -5,8 +5,8 @@ import {
   RcPaletteProp,
   RcTheme,
   styled,
-  useThemeProps,
   useDeprecatedCheck,
+  useThemeProps,
 } from '../../foundation';
 import { TagStyle } from './styles';
 import { colorMap } from './utils';

@@ -12,8 +12,8 @@ import {
   RcBaseSize,
   RcPaletteProp,
   styled,
-  useThemeProps,
   useDeprecatedCheck,
+  useThemeProps,
 } from '../../foundation';
 import { RcCircularProgress, RcCircularProgressProps } from '../Progress';
 import { IconStyle, StyledSvg } from './styles';

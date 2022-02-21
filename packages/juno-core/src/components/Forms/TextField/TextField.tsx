@@ -21,10 +21,10 @@ import {
   RcPaletteProp,
   RcTheme,
   styled,
+  useDeprecatedCheck,
   useEventCallback,
   useForkRef,
   useThemeProps,
-  useDeprecatedCheck,
 } from '../../../foundation';
 import { RcIconButtonProps } from '../../Buttons';
 import { WithTooltipProps } from '../../Tooltip';

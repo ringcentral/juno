@@ -11,8 +11,8 @@ import {
   RcBaseSize,
   RcPaletteProp,
   styled,
-  useThemeProps,
   useDeprecatedCheck,
+  useThemeProps,
 } from '../../../foundation';
 import { withTooltip, WithTooltipProps } from '../../Tooltip';
 import { ListItemStyle } from './styles';

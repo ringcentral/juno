@@ -18,10 +18,10 @@ import {
   RcTheme,
   removeClassName,
   styled,
+  useDeprecatedCheck,
   useForkRef,
   useTheme,
   useThemeProps,
-  useDeprecatedCheck,
 } from '../../../foundation';
 import { RcIcon, RcIconProps } from '../../Icon';
 import { RcIconSizes } from '../../Icon/utils';

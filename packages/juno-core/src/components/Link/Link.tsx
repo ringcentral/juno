@@ -6,8 +6,8 @@ import {
   RcPaletteProp,
   styled,
   useA11yKeyEvent,
-  useThemeProps,
   useDeprecatedCheck,
+  useThemeProps,
 } from '../../foundation';
 import { RcTypographyVariant } from '../Typography';
 import { LinkStyle } from './styles';

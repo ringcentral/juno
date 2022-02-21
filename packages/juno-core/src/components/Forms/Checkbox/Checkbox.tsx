@@ -13,8 +13,8 @@ import {
   RcBaseLabelPlacement,
   RcBaseProps,
   styled,
-  useThemeProps,
   useDeprecatedCheck,
+  useThemeProps,
 } from '../../../foundation';
 import { RcIconButtonSize } from '../../Buttons/IconButton';
 import { withTooltip } from '../../Tooltip';
