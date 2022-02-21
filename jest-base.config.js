@@ -9,7 +9,7 @@ module.exports = {
     '\\.(css|less)$': path.join(__dirname, './tests/__mocks__/cssMock.js'),
     '@ringcentral/juno$': '<rootDir>/packages/juno-core/index.ts',
     '@ringcentral/juno-foundation$':
-      'packages/juno-core/src/foundation/index.ts',
+      '<rootDir>/packages/juno-core/src/foundation/index.ts',
   },
   transform: {
     '^.+\\.story\\.tsx$': '@storybook/addon-storyshots/injectFileName',
