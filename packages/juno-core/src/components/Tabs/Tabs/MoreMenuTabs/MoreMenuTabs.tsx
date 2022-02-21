@@ -16,6 +16,7 @@ import {
   styled,
   useForceUpdate,
   useForkRef,
+  usePrevious,
   useResizeObserver,
   useThrottle,
 } from '../../../../foundation';
@@ -88,6 +89,8 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
 
   const { onGroupInfoChange, ...MoreButtonPropsRest } = MoreButtonProps;
 
+  const prevChildren = usePrevious(() => childrenProp);
+
   const isVertical = orientation === 'vertical';
   const oriStr = isVertical ? 'height' : 'width';
 
@@ -108,7 +111,7 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
   const [menuTabChild, setMenuTabChild] = useState<React.ReactElement[]>([]);
   const [useMoreMode, setUseMoreMode] = useState(true);
 
-  const sizeChangeResolve = useRef(true);
+  const hasResizeRef = useRef(true);
   const forceUpdate = useForceUpdate();
 
   const sizeChange = (size: Size) => {
@@ -128,7 +131,7 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
     ([entry]: ResizeObserverEntry[]) => {
       const { width, height } = entry.contentRect;
       const obj = { width, height };
-      sizeChangeResolve.current = false;
+      hasResizeRef.current = true;
       throttleTabsSizeChange(obj);
     },
     { mode: 'none' },
@@ -216,12 +219,12 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
   }, []);
 
   useEffect(() => {
-    let currSelectMenuItem: [string, TabRefType] | undefined;
+    let currSelectTabItem: [string, TabRefType] | undefined;
 
     const tabRefsMap = tabRefsMapRef.current;
 
     if (tabRefsMap) {
-      currSelectMenuItem = [...tabRefsMap].find(([, mapValue]) => {
+      currSelectTabItem = [...tabRefsMap].find(([, mapValue]) => {
         return valueProp === mapValue.value || valueProp === mapValue.index;
       });
     }
@@ -272,7 +275,7 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
       const limitSize = tabsSize[oriStr] - moreTabSizeRef.current[oriStr];
 
       const { plainArr: tabsTabLabel, groupArr: menuTabLabel } =
-        computeChildBySize(labelArray, currSelectMenuItem?.[0], limitSize);
+        computeChildBySize(labelArray, currSelectTabItem?.[0], limitSize);
 
       computeGroupingInfo(tabsTabLabel, menuTabLabel);
 
@@ -325,20 +328,22 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
       // computed: 1.resize 2. valueProp 3.moreMenuClick
       // not computed: visible tab change
       if (
-        groupingRef.current?.tabs.includes(currSelectMenuItem?.[0] || '') &&
-        sizeChangeResolve.current === true
+        groupingRef.current?.tabs.includes(currSelectTabItem?.[0] || '') &&
+        !hasResizeRef.current &&
+        prevChildren === childrenProp
       ) {
         return;
       }
 
       computeTabChild(tabsSize);
-      sizeChangeResolve.current = true;
+      hasResizeRef.current = false;
     }
   }, [
     childrenProp,
     isVertical,
     onGroupInfoChange,
     oriStr,
+    prevChildren,
     tabsSize,
     valueProp,
   ]);

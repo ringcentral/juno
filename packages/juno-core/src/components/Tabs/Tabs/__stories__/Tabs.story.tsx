@@ -1,7 +1,8 @@
-import React, { ComponentProps, FunctionComponent } from 'react';
+import React, { ComponentProps, FunctionComponent, useState } from 'react';
 
 import {
   RcBadge,
+  RcButton,
   RcIcon,
   RcPaper,
   RcTab,
@@ -359,3 +360,43 @@ export const TabsExampleComponent: FunctionComponent<TabsExampleComponentProps> 
       </RcPaper>
     );
   };
+
+export const TabsWithDynamicChildren: Story<TabsProps> = ({ ...args }) => {
+  const [index, setIndex] = useState(0);
+  const [value, setValue] = React.useState('tab-0');
+  const handleChange = (event: React.ChangeEvent<{}>, value: any) => {
+    setValue(value);
+  };
+
+  const TabChildren = tabsData.map((tab) => {
+    const { label, value, disabled, ...rest } = tab;
+    return (
+      <RcTab
+        key={label}
+        label={`${label}-${index}`}
+        value={value}
+        disabled={disabled}
+        {...rest}
+      />
+    );
+  });
+
+  return (
+    <>
+      <RcPaper square>
+        <RcTabs value={value} onChange={handleChange} variant="moreMenu">
+          {TabChildren}
+        </RcTabs>
+      </RcPaper>
+      <br />
+      <br />
+      <RcButton
+        onClick={() => {
+          setIndex(index + 1);
+        }}
+      >
+        click
+      </RcButton>
+    </>
+  );
+};
