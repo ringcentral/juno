@@ -351,9 +351,8 @@ export const DetachedWindowGetWindow: Story<DetachedWindowProps> = () => {
         ref={ref}
         open={open}
         onUnload={() => setOpen(false)}
-        getWindow={({ url, name, specs, replace, title }) => {
-          // eslint-disable-next-line security/detect-non-literal-fs-filename
-          const win = window.open(url, name, specs, replace);
+        getWindow={({ url, name, specs, title }) => {
+          const win = window.open(url, name, specs);
 
           if (win) {
             win.document.title = title!;

@@ -59,12 +59,6 @@ type RcDetachedWindowProps = {
    * The following values are supported: https://www.w3schools.com/jsref/met_win_open.asp
    */
   specs?: string;
-  /**
-   * `Optional`. Specifies whether the URL creates a new entry or replaces the current entry in the history list. The following values are supported:
-   * - `true` - URL replaces the current document in the history list
-   * - `false` - URL creates a new entry in the history list
-   */
-  replace?: boolean;
   /** title for that new window */
   title?: string;
   /** trigger when window `onload` */
@@ -92,10 +86,7 @@ type RcDetachedWindowProps = {
    * ```
    */
   getWindow?: (
-    props: Pick<
-      RcDetachedWindowProps,
-      'url' | 'name' | 'specs' | 'replace' | 'title'
-    >,
+    props: Pick<RcDetachedWindowProps, 'url' | 'name' | 'specs' | 'title'>,
   ) => Window | undefined | null;
 };
 
@@ -121,7 +112,6 @@ const RcDetachedWindow = memo(
       url,
       name,
       specs,
-      replace,
       open,
       onOpen,
       getWindow,
@@ -156,7 +146,7 @@ const RcDetachedWindow = memo(
 
     const openWindow = useEventCallback(() => {
       const newWindow = getWindow
-        ? getWindow({ url, name, specs, replace, title })
+        ? getWindow({ url, name, specs, title })
         : openExternalWindow(props);
 
       if (!newWindow) {
