@@ -45,7 +45,7 @@ const ignoreNext = process.argv.includes('--ignore-next');
       },
     });
 
-    if (!ignoreNext) return;
+    if (ignoreNext) return;
 
     const { releaseAs } = argReleaseAs
       ? argReleaseAs
