@@ -1,3 +1,4 @@
+
 ## Setup
 
 Install the dependencies with `yarn`
@@ -138,12 +139,13 @@ RcButton.defaultProps = {
 
 RcButton.displayName = 'RcButton';
 
-export {
-  RcButton,
-  RcButtonSize,
-  RcButtonProps,
+export { RcButton };
+
+export type {
   RcButtonColor,
   RcButtonColorLoadingMode,
+  RcButtonProps,
+  RcButtonSize,
   RcButtonVariant,
 };
 ```
@@ -261,7 +263,7 @@ export const ButtonSizes: UnitMap<ButtonSize> = {
 You can import svg icon components from `icon/xxx.tsx` like below,
 
 ```ts
-import ArrowDown2 from '../../../icon/ArrowDown2';
+import { ArrowDown } from '@ringcentral/juno-icon';
 ```
 
 # Debug with vscode
@@ -302,5 +304,5 @@ yarn test
 ## Git flow
 
 1. checkout branch from `main`.
-2. commit with message like `feat(ComponentName): what change you made`.
+2. commit with message like `feat(Ticket-Number): [Update-scope] what change you made`, like `chore(RCUI-100): [Snapshot] update snapshot`.
 3. We test components change base on snapshot, run `yarn update-snapshot` to update snapshot before you push.

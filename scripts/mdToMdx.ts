@@ -41,7 +41,7 @@ fs.ensureDirSync(storybookDocPath);
     filename: 'icon-$basename',
   },
   {
-    title: `<Meta title="CONTRIBUTION/1. Contribution Guide" />
+    title: `<Meta title="CONTRIBUTION/Contribution Guide" />
 
 # CONTRIBUTION
 
