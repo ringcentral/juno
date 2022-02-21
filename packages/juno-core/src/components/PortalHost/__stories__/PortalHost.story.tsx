@@ -22,6 +22,8 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
+// FIXME: switch between Docs and canvas page issue will throw connectable error, should handle destroy
+
 export default {
   title: '🚀 Cleanup Components/PortalHost',
   component: RcPortalHost,
