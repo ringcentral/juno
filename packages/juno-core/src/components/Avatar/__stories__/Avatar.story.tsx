@@ -1,6 +1,18 @@
 import React, { ComponentProps, useState } from 'react';
 
 import {
+  palette2,
+  PresenceOrigin,
+  RcAvatar,
+  RcBox,
+  RcButton,
+  RcIcon,
+  RcPresence,
+  RcTypography,
+  useAvatarColorToken,
+  useAvatarShortName,
+} from '@ringcentral/juno';
+import {
   CallAdd,
   DefaultTeamAvatar as TeamAvatar,
 } from '@ringcentral/juno-icon';
@@ -13,15 +25,6 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import { palette2 } from '../../../foundation';
-import { RcBox } from '../../Box';
-import { RcButton } from '../../Buttons';
-import { RcIcon } from '../../Icon';
-import { RcPresence } from '../../Presence';
-import { RcTypography } from '../../Typography';
-import { PresenceOrigin, RcAvatar } from '../Avatar';
-import { useAvatarColorToken } from '../utils/useAvatarColorToken';
-import { useAvatarShortName } from '../utils/useAvatarShortName';
 import { AvatarDoc } from './Avatar.doc';
 import avatar from './img/avatar.jpg';
 

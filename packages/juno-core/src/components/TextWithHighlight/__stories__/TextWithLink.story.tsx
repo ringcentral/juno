@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { RcTextWithHighlight } from '../TextWithHighlight';
 
 export default {

@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcAppBar } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -7,8 +8,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcAppBar } from '../AppBar';
 
 export default {
   title: '🚀 Cleanup Components/AppBar',

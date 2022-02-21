@@ -1,17 +1,18 @@
 import React, { ComponentProps } from 'react';
 
 import {
+  RcStep,
+  RcStepButton,
+  RcStepper,
+  RcTypography,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcTypography } from '../../../Typography';
-import { RcStep } from '../../Step';
-import { RcStepper } from '../../Stepper';
-import { RcStepButton } from '../StepButton';
 
 export default {
   title: '🚀 Cleanup Components/Stepper/StepButton',

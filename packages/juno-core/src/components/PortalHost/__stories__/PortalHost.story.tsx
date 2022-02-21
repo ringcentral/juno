@@ -1,28 +1,26 @@
 import React, { ComponentProps, FC, useEffect, useRef, useState } from 'react';
 
 import {
+  ControlledProps,
+  PortalController,
+  PortalManager,
+  RcButton,
+  RcDialog,
+  RcDialogActions,
+  RcDialogContent,
+  RcDialogTitle,
+  RcPortalHost,
+  RcSnackbar,
+  RcSnackbarProps,
+  RcTextField,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../Buttons';
-import {
-  RcDialog,
-  RcDialogActions,
-  RcDialogContent,
-  RcDialogTitle,
-} from '../../Dialog';
-import { RcTextField } from '../../Forms';
-import { RcSnackbar, RcSnackbarProps } from '../../Snackbar';
-import { RcPortalHost } from '../PortalHost';
-import {
-  ControlledProps,
-  PortalController,
-  PortalManager,
-} from '../PortalManager';
 
 export default {
   title: '🚀 Cleanup Components/PortalHost',

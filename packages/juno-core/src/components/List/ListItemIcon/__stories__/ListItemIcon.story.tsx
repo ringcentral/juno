@@ -1,5 +1,11 @@
 import React, { ComponentProps } from 'react';
 
+import {
+  RcIcon,
+  RcListItem,
+  RcListItemIcon,
+  RcListItemText,
+} from '@ringcentral/juno';
 import { Star } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -9,11 +15,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcIcon } from '../../../Icon';
-import { RcListItem } from '../../ListItem';
-import { RcListItemText } from '../../ListItemText';
-import { RcListItemIcon } from '../ListItemIcon';
 
 export default {
   title: '🚀 Cleanup Components/Lists/ListItemIcon',

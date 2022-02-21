@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcButton, RcPopover, RcTypography } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -9,10 +10,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../Buttons';
-import { RcTypography } from '../../Typography';
-import { RcPopover } from '../Popover';
 
 export default {
   title: '🚀 Cleanup Components/Popover',

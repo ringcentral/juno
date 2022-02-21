@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 
+import {
+  flexCenterStyle,
+  palette2,
+  RcSwitch,
+  RcZoomInFadeOut,
+  styled,
+} from '@ringcentral/juno';
 import { Meta, Story } from '@storybook/react';
-
-import { flexCenterStyle, palette2, styled } from '../../../../foundation';
-import { RcSwitch } from '../../../Forms/Switch';
-import { RcZoomInFadeOut } from '../ZoomInFadeOut';
 
 export default {
   title: '🚀 Cleanup Components/🌈Animations/Transition/ZoomInFadeOut',

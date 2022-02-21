@@ -1,9 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 
+import { useForkRef } from '@ringcentral/juno';
 import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { useForkRef } from '../useForkRef';
 
 export default {
   title: '🔧 Foundation/Hooks/useForkRef',

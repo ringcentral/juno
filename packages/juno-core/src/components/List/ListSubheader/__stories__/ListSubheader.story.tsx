@@ -1,17 +1,18 @@
 import React, { ComponentProps } from 'react';
 
 import {
+  RcList,
+  RcListItem,
+  RcListItemText,
+  RcListSubheader,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcList } from '../../List';
-import { RcListItem } from '../../ListItem';
-import { RcListItemText } from '../../ListItemText';
-import { RcListSubheader } from '../ListSubheader';
 
 export default {
   title: '🚀 Cleanup Components/Lists/ListSubheader',

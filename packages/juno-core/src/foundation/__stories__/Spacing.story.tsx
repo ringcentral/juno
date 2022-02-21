@@ -1,8 +1,6 @@
 import React from 'react';
 
-import { RcGrid, RcTypography } from '../../components';
-import styled, { css } from '../styled-components';
-import { spacing } from '../styles';
+import { css, RcGrid, RcTypography, spacing, styled } from '@ringcentral/juno';
 
 export default {
   title: '🔧 Foundation/Spacing',

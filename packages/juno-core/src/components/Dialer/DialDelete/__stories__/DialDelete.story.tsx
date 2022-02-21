@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcDialDelete, RcIconButton } from '@ringcentral/juno';
 import { Deletenumber } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -8,9 +9,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcIconButton } from '../../../Buttons/IconButton';
-import { RcDialDelete } from '../DialDelete';
 
 export default {
   title: '🚀 Cleanup Components/Dialer/DialDelete',

@@ -1,9 +1,8 @@
 import React, { ComponentProps } from 'react';
 
+import { RcLink } from '@ringcentral/juno';
 import { notShowInDocTable, paletteChoice } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcLink } from '../Link';
 
 export default {
   title: '🚀 Cleanup Components/Link',

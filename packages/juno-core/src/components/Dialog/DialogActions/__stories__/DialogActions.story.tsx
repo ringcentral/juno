@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcButton, RcDialogActions } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -7,9 +8,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../../Buttons/Button';
-import { RcDialogActions } from '../DialogActions';
 
 export default {
   title: '🚀 Cleanup Components/Dialog/DialogActions',

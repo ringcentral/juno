@@ -1,9 +1,8 @@
 import React from 'react';
 
+import { RcImageView } from '@ringcentral/juno';
 import { boolean, number, text } from '@storybook/addon-knobs';
 import { Story } from '@storybook/react';
-
-import { RcImageView } from '../ImageView';
 
 export default {
   title: '🖤 deprecated Components/ImageView',

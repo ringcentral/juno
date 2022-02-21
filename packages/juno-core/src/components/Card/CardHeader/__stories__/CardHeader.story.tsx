@@ -1,5 +1,11 @@
 import React, { ComponentProps } from 'react';
 
+import {
+  RcAvatar,
+  RcCard,
+  RcCardHeader,
+  RcIconButton,
+} from '@ringcentral/juno';
 import { Phone } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -8,11 +14,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcAvatar } from '../../../Avatar';
-import { RcIconButton } from '../../../Buttons';
-import { RcCard } from '../../Card';
-import { RcCardHeader } from '../CardHeader';
 
 export default {
   title: '🚀 Cleanup Components/Cards/CardHeader',

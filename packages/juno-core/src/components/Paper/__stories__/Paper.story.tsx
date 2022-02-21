@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcPaper } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -7,8 +8,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcPaper } from '../Paper';
 
 export default {
   title: '🚀 Cleanup Components/Paper',

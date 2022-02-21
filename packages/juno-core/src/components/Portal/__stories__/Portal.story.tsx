@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcBox, RcPortal, RcText } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -7,10 +8,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcBox } from '../../Box';
-import { RcText } from '../../Text';
-import { RcPortal } from '../Portal';
 
 export default {
   title: '🚀 Cleanup Components/Portal',

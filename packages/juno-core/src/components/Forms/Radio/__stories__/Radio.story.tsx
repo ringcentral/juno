@@ -1,5 +1,13 @@
 import React, { ComponentProps } from 'react';
 
+import {
+  RcFormControl,
+  RcFormLabel,
+  RcIcon,
+  RcRadio,
+  RcRadioGroup,
+  RcTypography,
+} from '@ringcentral/juno';
 import { Add, AddBorder, MemberBorder, People } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -9,13 +17,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcIcon } from '../../../Icon';
-import { RcTypography } from '../../../Typography';
-import { RcFormControl } from '../../FormControl';
-import { RcFormLabel } from '../../FormLabel';
-import { RcRadioGroup } from '../../RadioGroup';
-import { RcRadio } from '../Radio';
 
 export default {
   title: '🚀 Cleanup Components/Forms/Radio',

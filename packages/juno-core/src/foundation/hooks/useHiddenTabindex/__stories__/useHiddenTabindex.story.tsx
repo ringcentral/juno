@@ -1,11 +1,12 @@
 import React, { useRef } from 'react';
 
+import {
+  palette2,
+  RcButton,
+  styled,
+  useHiddenTabindex,
+} from '@ringcentral/juno';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../../../components';
-import styled from '../../../styled-components';
-import { palette2 } from '../../../styles';
-import { useHiddenTabindex } from '../useHiddenTabindex';
 
 export default {
   title: '🔧 Foundation/Hooks/useHiddenTabindex',

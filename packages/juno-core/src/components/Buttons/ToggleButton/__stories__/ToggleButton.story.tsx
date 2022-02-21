@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcToggleButton } from '@ringcentral/juno';
 import { AlignJustify } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -9,8 +10,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcToggleButton } from '../ToggleButton';
 
 export default {
   title: '🚀 Cleanup Components/Buttons/ToggleButtonGroup/ToggleButton',

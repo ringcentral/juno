@@ -1,9 +1,7 @@
 import React, { forwardRef } from 'react';
 
+import { RcTooltipProps, withTooltip } from '@ringcentral/juno';
 import { boolean, select, text } from '@storybook/addon-knobs';
-
-import { RcTooltipProps } from '../../Tooltip';
-import { withTooltip } from '../withTooltip';
 
 export default {
   title: '🚀 Cleanup Components/Tooltip/withTooltip',

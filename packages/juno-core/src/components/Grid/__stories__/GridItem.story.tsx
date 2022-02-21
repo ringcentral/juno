@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcGrid, RcPaper } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -7,9 +8,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcPaper } from '../../Paper';
-import { RcGrid } from '../Grid';
 
 export default {
   title: '🚀 Cleanup Components/Grid/Grid Item',

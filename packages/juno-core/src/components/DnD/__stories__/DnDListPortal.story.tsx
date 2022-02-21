@@ -3,23 +3,22 @@ import ReactDOM from 'react-dom';
 
 import { DraggableProvided, DraggableStateSnapshot } from 'react-beautiful-dnd';
 
-import { select } from '@storybook/addon-knobs';
-import { Meta, Story } from '@storybook/react';
-
 import {
+  css,
+  RcCollapse,
   RcDragDropContext,
   RcDragDropContextProps,
   RcDraggable,
   RcDroppable,
-} from '..';
-import { css, styled } from '../../../foundation';
-import {
   RcList,
   RcListItem,
   RcListItemProps,
   RcListSubheader,
-} from '../../List';
-import { RcCollapse } from '../../Transitions';
+  styled,
+} from '@ringcentral/juno';
+import { select } from '@storybook/addon-knobs';
+import { Meta, Story } from '@storybook/react';
+
 import { DataType, GroupType, initialData, ItemType } from './DnDExampleData';
 
 export default {

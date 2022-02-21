@@ -1,18 +1,19 @@
 import React, { ComponentProps, useState } from 'react';
 
 import {
+  RcBox,
+  RcButton,
+  RcDialogContentText,
+  RcPopupBox,
+  RcTextField,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcBox } from '../../Box';
-import { RcButton } from '../../Buttons/Button';
-import { RcDialogContentText } from '../../Dialog';
-import { RcTextField } from '../../Forms';
-import { RcPopupBox } from '../PopupBox';
 
 export default {
   title: '🚀 Cleanup Components/PopupBox',

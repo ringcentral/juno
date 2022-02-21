@@ -1,5 +1,6 @@
 import React, { ComponentProps, useState } from 'react';
 
+import { RcBox, RcSwitch, RcZoom } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -7,10 +8,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcBox } from '../../../Box';
-import { RcSwitch } from '../../../Forms/Switch';
-import { RcZoom } from '../Zoom';
 
 export default {
   title: '🚀 Cleanup Components/🌈Animations/Transition/Zoom',

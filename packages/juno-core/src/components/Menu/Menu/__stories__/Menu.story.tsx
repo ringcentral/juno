@@ -3,18 +3,19 @@ import React, { ComponentProps, FunctionComponent, useState } from 'react';
 import range from 'lodash/range';
 
 import {
+  RcButton,
+  RcDivider,
+  RcListItemText,
+  RcMenu,
+  RcMenuItem,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../../Buttons/Button';
-import { RcDivider } from '../../../Divider';
-import { RcListItemText } from '../../../List/ListItemText';
-import { RcMenuItem } from '../../MenuItem';
-import { RcMenu } from '../Menu';
 
 export default {
   title: '🚀 Cleanup Components/Menu/Menu',

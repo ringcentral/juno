@@ -1,9 +1,7 @@
 import React from 'react';
 
+import { RcButton, useThrottle } from '@ringcentral/juno';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../../../components/Buttons';
-import { useThrottle } from '../useThrottle';
 
 export default {
   title: '🔧 Foundation/Hooks/useThrottle',

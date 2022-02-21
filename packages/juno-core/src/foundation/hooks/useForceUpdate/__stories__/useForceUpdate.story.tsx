@@ -1,10 +1,8 @@
 import React, { useRef } from 'react';
 
+import { RcButton, useForceUpdate } from '@ringcentral/juno';
 import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../../../components/Buttons';
-import { useForceUpdate } from '../useForceUpdate';
 
 export default {
   title: '🔧 Foundation/Hooks/useForceUpdate',

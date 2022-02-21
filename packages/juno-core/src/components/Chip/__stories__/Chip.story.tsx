@@ -2,6 +2,7 @@ import React, { ComponentProps } from 'react';
 
 import isString from 'lodash/isString';
 
+import { RcAvatar, RcChip, RcGrid, RcText } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -12,11 +13,7 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import { RcAvatar } from '../../Avatar';
 import avatar from '../../Avatar/__stories__/img/avatar.jpg';
-import { RcGrid } from '../../Grid';
-import { RcText } from '../../Text';
-import { RcChip } from '../Chip';
 
 export default {
   title: '🚀 Cleanup Components/Chip',

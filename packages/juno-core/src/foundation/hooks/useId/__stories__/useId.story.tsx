@@ -1,9 +1,8 @@
 import React from 'react';
 
+import { useId } from '@ringcentral/juno';
 import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { useId } from '../useId';
 
 export default {
   title: '🔧 Foundation/Hooks/useId',

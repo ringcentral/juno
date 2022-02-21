@@ -1,5 +1,6 @@
 import React, { ComponentProps, useEffect, useRef } from 'react';
 
+import { palette2, RcTypography, styled } from '@ringcentral/juno';
 import {
   notShowInDocTable,
   switchToControlKnobs,
@@ -7,8 +8,6 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import { palette2, styled } from '../../../foundation';
-import { RcTypography } from '../Typography';
 import { MuiDefaultColor } from '../utils';
 
 export default {

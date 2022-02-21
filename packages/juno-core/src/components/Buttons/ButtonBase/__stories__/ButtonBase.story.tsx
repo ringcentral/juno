@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcButtonBase, RcTypography, styled } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -7,10 +8,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { styled } from '../../../../foundation';
-import { RcTypography } from '../../../Typography';
-import { RcButtonBase } from '../ButtonBase';
 
 export default {
   title: '🚀 Cleanup Components/Buttons/ButtonBase',

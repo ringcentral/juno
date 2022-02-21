@@ -1,5 +1,13 @@
 import React, { ComponentProps, useState } from 'react';
 
+import {
+  RcAvatar,
+  RcBadge,
+  RcButton,
+  RcGrid,
+  RcIcon,
+  RcText,
+} from '@ringcentral/juno';
 import { Phone } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -10,13 +18,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcAvatar } from '../../Avatar';
-import { RcButton } from '../../Buttons/Button';
-import { RcGrid } from '../../Grid';
-import { RcIcon } from '../../Icon';
-import { RcText } from '../../Text';
-import { RcBadge } from '../Badge';
 
 export default {
   title: '🚀 Cleanup Components/Badge',

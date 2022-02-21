@@ -2,17 +2,18 @@ import React, { FunctionComponent, useLayoutEffect, useRef } from 'react';
 
 import range from 'lodash/range';
 
-import { isTestEnv, Title } from '@ringcentral/juno-storybook';
-import { Meta, Story } from '@storybook/react';
-
-import { RcAvatar, RcBox, RcText } from '../../../../components';
-import styled from '../../../styled-components';
-import { useResultRef } from '../../useResultRef';
 import {
+  RcAvatar,
+  RcBox,
+  RcText,
+  styled,
   useKeyboardMoveFocus,
   UseKeyboardMoveFocusParams,
-} from '../useKeyboardMoveFocus';
-import { useOnlyOneFocusable } from '../useOnlyOneFocusable';
+  useOnlyOneFocusable,
+  useResultRef,
+} from '@ringcentral/juno';
+import { isTestEnv, Title } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
 
 export default {
   title: '🔧 Foundation/Hooks/useKeyboardMoveFocus',

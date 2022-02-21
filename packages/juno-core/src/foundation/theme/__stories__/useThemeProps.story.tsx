@@ -1,12 +1,13 @@
 import React, { FunctionComponent } from 'react';
 
+import {
+  RcButtonProps,
+  RcText,
+  RcThemeInput,
+  RcThemeProvider,
+  useThemeProps,
+} from '@ringcentral/juno';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButtonProps } from '../../../components/Buttons';
-import { RcText } from '../../../components/Text';
-import { RcThemeInput } from '../theme.type';
-import { RcThemeProvider } from '../ThemeProvider';
-import { useThemeProps } from '../useThemeProps';
 
 export default {
   title: '🔧 Foundation/Hooks/useThemeProps',

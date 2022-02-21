@@ -1,11 +1,14 @@
 import React, { ComponentProps, useState } from 'react';
 
+import {
+  flexCenterStyle,
+  palette2,
+  RcButton,
+  RcLoading,
+  styled,
+} from '@ringcentral/juno';
 import { notShowInDocTable } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { flexCenterStyle, palette2, styled } from '../../../foundation';
-import { RcButton } from '../../Buttons';
-import { RcLoading } from '../Loading';
 
 export default {
   title: '🚀 Cleanup Components/Loading',

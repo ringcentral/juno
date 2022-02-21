@@ -3,6 +3,32 @@ import React, { ComponentProps, FunctionComponent, useState } from 'react';
 import range from 'lodash/range';
 
 import {
+  flexCenterStyle,
+  radius,
+  RcAvatar,
+  RcBox,
+  RcButton,
+  RcDialog,
+  RcDialogContent,
+  RcDialogTitle,
+  RcDivider,
+  RcDrawer,
+  RcIcon,
+  RcList,
+  RcListItem,
+  RcListItemIcon,
+  RcListItemText,
+  RcMenuItem,
+  RcMenuList,
+  RcPaper,
+  RcSelect,
+  RcSwitch,
+  RcText,
+  RcTypography,
+  spacing,
+  styled,
+} from '@ringcentral/juno';
+import {
   Delete,
   Draft,
   Email,
@@ -20,22 +46,7 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import { flexCenterStyle, radius, spacing, styled } from '../../../foundation';
-import { RcAvatar } from '../../Avatar';
 import avatar from '../../Avatar/__stories__/img/avatar.jpg';
-import { RcBox } from '../../Box';
-import { RcButton } from '../../Buttons/Button';
-import { RcDialog, RcDialogContent, RcDialogTitle } from '../../Dialog';
-import { RcDivider } from '../../Divider';
-import { RcSelect, RcSwitch } from '../../Forms';
-import { RcIcon } from '../../Icon';
-import { RcList, RcListItem, RcListItemIcon, RcListItemText } from '../../List';
-import { RcMenuItem } from '../../Menu/MenuItem';
-import { RcMenuList } from '../../Menu/MenuList';
-import { RcPaper } from '../../Paper';
-import { RcText } from '../../Text';
-import { RcTypography } from '../../Typography';
-import { RcDrawer } from '../Drawer';
 
 export default {
   title: '🚀 Cleanup Components/Drawer',

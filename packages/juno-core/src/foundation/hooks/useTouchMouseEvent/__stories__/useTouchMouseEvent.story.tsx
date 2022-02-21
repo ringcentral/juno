@@ -1,9 +1,7 @@
 import React from 'react';
 
+import { RcButton, useTouchMouseEvent } from '@ringcentral/juno';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../../../components/Buttons';
-import { useTouchMouseEvent } from '../useTouchMouseEvent';
 
 export default {
   title: '🔧 Foundation/Hooks/useTouchMouseEvent',

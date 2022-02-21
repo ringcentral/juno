@@ -3,19 +3,20 @@ import React, { ComponentProps, useState } from 'react';
 import range from 'lodash/range';
 
 import {
+  RcCheckbox,
+  RcGrid,
+  RcListItem,
+  RcMenuItem,
+  RcSelect,
+  RcTypography,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   paletteChoice,
   sortInDocTable,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcGrid } from '../../../Grid';
-import { RcListItem } from '../../../List/ListItem';
-import { RcMenuItem } from '../../../Menu';
-import { RcTypography } from '../../../Typography';
-import { RcCheckbox } from '../../Checkbox';
-import { RcSelect } from '../Select';
 
 export default {
   title: '🚀 Cleanup Components/Selects/Select',

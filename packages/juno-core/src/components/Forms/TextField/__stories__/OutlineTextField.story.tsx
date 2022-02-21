@@ -7,6 +7,12 @@ import React, {
 } from 'react';
 
 import {
+  RcIcon,
+  RcIconButton,
+  RcOutlineTextFieldIconSizes,
+  RcTextField,
+} from '@ringcentral/juno';
+import {
   Add as AddSvg,
   BoxBorder as BoxSvg,
   Close,
@@ -22,9 +28,6 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import { RcIconButton } from '../../../Buttons/IconButton';
-import { RcIcon } from '../../../Icon';
-import { RcOutlineTextFieldIconSizes, RcTextField } from '../TextField';
 import TextFieldStory from './TextField.story';
 
 export default {

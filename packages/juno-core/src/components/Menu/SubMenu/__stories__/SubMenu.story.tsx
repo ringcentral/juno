@@ -1,20 +1,21 @@
 import React, { ComponentProps, FunctionComponent, useState } from 'react';
 
 import {
+  RcButton,
+  RcListItemText,
+  RcMenu,
+  RcMenuItem,
+  RcMenuList,
+  RcMenuOnCloseReasonsType,
+  RcSubMenu,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../../Buttons/Button';
-import { RcListItemText } from '../../../List/ListItemText';
-import { RcMenu } from '../../Menu';
-import { RcMenuOnCloseReasonsType } from '../../Menu/MenuContext';
-import { RcMenuItem } from '../../MenuItem';
-import { RcMenuList } from '../../MenuList';
-import { RcSubMenu } from '../SubMenu';
 
 export default {
   title: '🚀 Cleanup Components/Menu/SubMenu',

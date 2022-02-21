@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcLinearProgress } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -9,8 +10,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcLinearProgress } from '../LinearProgress';
 
 export default {
   title: '🚀 Cleanup Components/Progress/LinearProgress',

@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcStep, RcStepLabel, RcStepper } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -8,10 +9,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcStep } from '../../Step';
-import { RcStepper } from '../../Stepper';
-import { RcStepLabel } from '../StepLabel';
 
 export default {
   title: '🚀 Cleanup Components/Stepper/StepLabel',

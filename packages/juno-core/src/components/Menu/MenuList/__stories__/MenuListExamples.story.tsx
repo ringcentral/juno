@@ -1,6 +1,12 @@
 import React, { ComponentProps } from 'react';
 
 import {
+  RcListItemText,
+  RcMenuItem,
+  RcMenuList,
+  RcText,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
@@ -8,11 +14,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcListItemText } from '../../../List/ListItemText';
-import { RcText } from '../../../Text';
-import { RcMenuItem } from '../../MenuItem';
-import { RcMenuList } from '../MenuList';
 
 export default {
   title: '🚀 Cleanup Components/Menu/MenuList/MenuList Examples',

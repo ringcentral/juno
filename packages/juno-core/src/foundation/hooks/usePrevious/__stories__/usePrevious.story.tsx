@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 
+import { RcButton, useForceUpdate, usePrevious } from '@ringcentral/juno';
 import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../../../components/Buttons';
-import { useForceUpdate } from '../../useForceUpdate';
-import { usePrevious } from '../usePrevious';
 
 export default {
   title: '🔧 Foundation/Hooks/usePrevious',

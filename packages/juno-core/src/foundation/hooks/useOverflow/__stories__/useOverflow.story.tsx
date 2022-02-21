@@ -1,11 +1,8 @@
 import React, { useRef, useState } from 'react';
 
+import { palette2, styled, useOverflow } from '@ringcentral/juno';
 import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import styled from '../../../styled-components';
-import { palette2 } from '../../../styles';
-import { useOverflow } from '../useOverflow';
 
 export default {
   title: '🔧 Foundation/Hooks/useOverflow',

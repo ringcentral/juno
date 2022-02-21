@@ -6,6 +6,31 @@ import React, {
   useState,
 } from 'react';
 
+import {
+  combineProps,
+  DEFAULT_KEY_TO_CHIPS,
+  RcAutocompleteDefaultFilterOptions,
+  RcAvatar,
+  RcBox,
+  RcButton,
+  RcChip,
+  RcClasses,
+  RcDownshift,
+  RcDownshiftDefaultFilterOptions,
+  RcDownshiftFilterOptions,
+  RcDownshiftProps,
+  RcDownshiftRef,
+  RcDownshiftSelectedItem,
+  RcIconButton,
+  RcListItemText,
+  RcMenuItem,
+  RcText,
+  RcTextField,
+  RcTypography,
+  spacing,
+  styled,
+  useEventCallback,
+} from '@ringcentral/juno';
 import { ArrowDown2 } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -17,31 +42,7 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import {
-  combineProps,
-  RcClasses,
-  spacing,
-  styled,
-  useEventCallback,
-} from '../../../foundation';
-import { RcAvatar } from '../../Avatar';
-import { RcBox } from '../../Box';
-import { RcButton, RcIconButton } from '../../Buttons';
-import { RcChip } from '../../Chip';
 import { DialogExampleComponent } from '../../Dialog/__stories__/Dialog.story';
-import { RcTextField } from '../../Forms/TextField';
-import { RcListItemText } from '../../List';
-import { RcMenuItem } from '../../Menu';
-import { RcText } from '../../Text';
-import { RcTypography } from '../../Typography';
-import { RcDownshift, RcDownshiftProps, RcDownshiftRef } from '../Downshift';
-import {
-  DEFAULT_KEY_TO_CHIPS,
-  RcAutocompleteDefaultFilterOptions,
-  RcDownshiftDefaultFilterOptions,
-  RcDownshiftFilterOptions,
-  RcDownshiftSelectedItem,
-} from '../utils';
 import { DownshiftDoc } from './Downshift.doc';
 import { options } from './options';
 

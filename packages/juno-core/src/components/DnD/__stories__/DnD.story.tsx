@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 
-import { boolean, select } from '@storybook/addon-knobs';
-import { Meta, Story } from '@storybook/react';
-
 import {
   RcDragDropContext,
   RcDragDropContextProps,
   RcDraggable,
+  RcDragHandle,
   RcDroppable,
-} from '..';
-import { RcList, RcListItem } from '../../List';
-import { RcDragHandle } from '../DragHandle';
+  RcList,
+  RcListItem,
+} from '@ringcentral/juno';
+import { boolean, select } from '@storybook/addon-knobs';
+import { Meta, Story } from '@storybook/react';
+
 import { simpleInitialData } from './DnDExampleData';
 
 export default {

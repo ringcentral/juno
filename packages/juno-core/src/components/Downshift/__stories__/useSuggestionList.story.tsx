@@ -1,18 +1,20 @@
 import React, { useCallback, useRef, useState } from 'react';
 
+import {
+  RcBox,
+  RcDownshiftInput,
+  RcDownshiftSelectedItem,
+  RcIconButton,
+  RcListItemText,
+  RcMenuItem,
+  RcSuggestionList,
+  RcTextField,
+  useAnnouncer,
+  useSuggestionList,
+} from '@ringcentral/juno';
 import { ArrowDown2 } from '@ringcentral/juno-icon';
 import { Meta, Story } from '@storybook/react';
 
-import { useAnnouncer } from '../../../foundation';
-import { RcBox } from '../../Box';
-import { RcIconButton } from '../../Buttons/IconButton';
-import { RcTextField } from '../../Forms/TextField';
-import { RcListItemText } from '../../List';
-import { RcMenuItem } from '../../Menu/MenuItem';
-import { RcDownshiftInput } from '../styles/DownshiftInput';
-import { RcSuggestionList } from '../SuggestionList';
-import { useSuggestionList } from '../SuggestionList/utils/useSuggestionList';
-import { RcDownshiftSelectedItem } from '../utils';
 import { options } from './options';
 
 export default {

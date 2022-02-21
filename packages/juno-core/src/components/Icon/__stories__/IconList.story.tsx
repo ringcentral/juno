@@ -1,17 +1,19 @@
 import React, { FunctionComponent, useEffect, useMemo, useState } from 'react';
 
+import {
+  palette2,
+  RcBox,
+  RcCircularProgress,
+  RcIcon,
+  RcTextField,
+  RcTypography,
+  styled,
+  useEventCallback,
+} from '@ringcentral/juno';
 import { Warning } from '@ringcentral/juno-icon';
 import localIcons from '@ringcentral/juno-icon/devUtils/iconSymbol';
 import svgToComponentMapping from '@ringcentral/juno-icon/devUtils/svgToComponentMapping';
 import { Meta } from '@storybook/react';
-
-import { palette2, useEventCallback } from '../../../foundation';
-import styled from '../../../foundation/styled-components';
-import { RcBox } from '../../Box';
-import { RcTextField } from '../../Forms/TextField';
-import { RcCircularProgress } from '../../Progress';
-import { RcTypography } from '../../Typography';
-import { RcIcon } from '../Icon';
 
 export default {
   title: '🔧 Foundation/Icon List',

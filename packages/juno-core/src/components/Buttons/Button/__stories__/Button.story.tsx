@@ -1,6 +1,16 @@
 import React, { ComponentProps } from 'react';
 
 import {
+  RcBox,
+  RcButton,
+  RcButtonSize,
+  RcButtonVariant,
+  RcIcon,
+  RcTypography,
+  styled,
+  useTheme,
+} from '@ringcentral/juno';
+import {
   BubbleLinesBorder,
   CallAdd,
   Leave,
@@ -16,13 +26,7 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { styled, useTheme } from '../../../../foundation';
-import { RcBox } from '../../../Box';
-import { RcIcon } from '../../../Icon';
-import { RcTypography } from '../../../Typography';
-import { RcButton, RcButtonVariant } from '../Button';
-import { RcButtonHeights, RcButtonSize } from '../utils';
+import { RcButtonHeights } from '../utils/ButtonUtils';
 
 export default {
   title: '🚀 Cleanup Components/Buttons',

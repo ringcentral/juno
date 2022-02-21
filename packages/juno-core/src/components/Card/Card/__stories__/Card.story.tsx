@@ -1,5 +1,25 @@
 import React, { ComponentProps } from 'react';
 
+import {
+  RcAvatar,
+  RcBox,
+  RcCard,
+  RcCardContent,
+  RcCheckbox,
+  RcDivider,
+  RcIcon,
+  RcLink,
+  RcListItem,
+  RcListItemIcon,
+  RcListItemText,
+  RcMenuItem,
+  RcSelect,
+  RcSwitch,
+  RcThumbnail,
+  RcTypography,
+  spacing,
+  styled,
+} from '@ringcentral/juno';
 import { DateBorder, Doc, TimeBorder } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -9,20 +29,7 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import { spacing, styled } from '../../../../foundation';
-import { RcAvatar } from '../../../Avatar';
 import avatar from '../../../Avatar/__stories__/img/avatar.jpg';
-import { RcBox } from '../../../Box';
-import { RcDivider } from '../../../Divider';
-import { RcCheckbox, RcSelect, RcSwitch } from '../../../Forms';
-import { RcIcon } from '../../../Icon';
-import { RcLink } from '../../../Link';
-import { RcListItem, RcListItemIcon, RcListItemText } from '../../../List';
-import { RcMenuItem } from '../../../Menu/MenuItem';
-import { RcThumbnail } from '../../../Thumbnail';
-import { RcTypography } from '../../../Typography';
-import { RcCardContent } from '../../CardContent';
-import { RcCard } from '../Card';
 
 export default {
   title: '🚀 Cleanup Components/Cards/Card',

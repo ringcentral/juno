@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcCheckbox, RcFormGroup, RcSwitch } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -7,10 +8,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcCheckbox } from '../../Checkbox';
-import { RcSwitch } from '../../Switch';
-import { RcFormGroup } from '../FormGroup';
 
 export default {
   title: '🚀 Cleanup Components/Forms/FormGroup',

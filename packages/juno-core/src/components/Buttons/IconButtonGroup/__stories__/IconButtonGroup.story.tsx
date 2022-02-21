@@ -1,5 +1,12 @@
 import React, { ComponentProps } from 'react';
 
+import {
+  palette2,
+  RcIconButton,
+  RcIconButtonGroup,
+  shadows,
+  styled,
+} from '@ringcentral/juno';
 import { Emoji, Quote, Signal0, Unpin } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -9,10 +16,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { palette2, shadows, styled } from '../../../../foundation';
-import { RcIconButton } from '../../IconButton';
-import { RcIconButtonGroup } from '../IconButtonGroup';
 
 export default {
   title: '🚀 Cleanup Components/Buttons/IconButtonGroup',

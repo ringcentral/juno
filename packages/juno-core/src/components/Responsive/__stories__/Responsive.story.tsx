@@ -1,30 +1,27 @@
 import React, { ComponentProps, useRef, useState } from 'react';
 
 import {
+  RcButton,
+  RcDialog,
+  RcDialogActions,
+  RcDialogContent,
+  RcDialogTitle,
+  RcRadio,
+  RcRadioGroup,
+  RcResponsive,
+  RcTypography,
+  styled,
+  useResponsiveContext,
+  useResponsiveMatch,
+  withResponsive,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import {
-  styled,
-  useResponsiveContext,
-  useResponsiveMatch,
-  withResponsive,
-} from '../../../foundation';
-import { RcButton } from '../../Buttons';
-import {
-  RcDialog,
-  RcDialogActions,
-  RcDialogContent,
-  RcDialogTitle,
-} from '../../Dialog';
-import { RcRadio } from '../../Forms/Radio';
-import { RcRadioGroup } from '../../Forms/RadioGroup';
-import { RcTypography } from '../../Typography';
-import { RcResponsive } from '../Responsive';
 
 export default {
   title: '🚀 Cleanup Components/Responsive',

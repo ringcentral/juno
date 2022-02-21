@@ -1,11 +1,13 @@
 import React from 'react';
 
+import {
+  RcDivider,
+  RcPaper,
+  RcTypography,
+  RcTypographyVariant,
+  styled,
+} from '@ringcentral/juno';
 import { Story } from '@storybook/react';
-
-import styled from '../../../foundation/styled-components';
-import { RcDivider } from '../../Divider';
-import { RcPaper } from '../../Paper';
-import { RcTypography, RcTypographyVariant } from '../Typography';
 
 export default {
   title: '🔧 Foundation/Typography List',

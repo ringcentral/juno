@@ -1,13 +1,12 @@
 import React, { ComponentProps } from 'react';
 
+import { RcTag } from '@ringcentral/juno';
 import {
   notShowInDocTable,
   paletteChoice,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcTag } from '../Tag';
 
 export default {
   title: '🚀 Cleanup Components/Tag',

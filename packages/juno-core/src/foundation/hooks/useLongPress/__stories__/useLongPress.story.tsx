@@ -1,9 +1,7 @@
 import React from 'react';
 
+import { RcButton, useLongPress } from '@ringcentral/juno';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../../../components/Buttons';
-import { useLongPress } from '../useLongPress';
 
 export default {
   title: '🔧 Foundation/Hooks/useLongPress',

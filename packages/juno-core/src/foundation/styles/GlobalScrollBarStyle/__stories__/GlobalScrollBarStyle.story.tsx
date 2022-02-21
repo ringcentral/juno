@@ -1,10 +1,8 @@
 import React from 'react';
 
+import { RcBox, RcGlobalScrollBarStyle } from '@ringcentral/juno';
 import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcBox } from '../../../../components';
-import { RcGlobalScrollBarStyle } from '../GlobalScrollBarStyle';
 
 export default {
   title: '💅 Style system/utils/GlobalScrollBarStyle',

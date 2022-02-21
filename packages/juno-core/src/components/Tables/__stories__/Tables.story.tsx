@@ -1,19 +1,22 @@
 import React, { useState } from 'react';
 
-import { Meta } from '@storybook/react';
-
-import { RcTable, RcTableBodyCellContent, RcTableProps } from '..';
-import { palette2, styled } from '../../../foundation';
-import { RcTableHeadView } from '../TableHead';
-import { RcTableRow } from '../TableRow';
 import {
   COLUMN_TEXT_ALIGN,
   ColumnProps,
   ORDER_TABLE_BY,
+  palette2,
+  RcTable,
+  RcTableBodyCellContent,
+  RcTableHeadView,
+  RcTableProps,
+  RcTableRow,
+  styled,
   TABLE_BORDER_TYPE,
   TABLE_STICKY_TYPE,
   TABLE_TYPE,
-} from '../types';
+} from '@ringcentral/juno';
+import { Meta } from '@storybook/react';
+
 import arrayFixture from './RcTableMUIDataArray.fixture.json';
 
 export default {

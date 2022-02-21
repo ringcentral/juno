@@ -9,6 +9,13 @@ import React, {
 import moment from 'moment';
 
 import {
+  RcButton,
+  RcDatePicker,
+  RcGrid,
+  RcTimePicker,
+  RcTypography,
+} from '@ringcentral/juno';
+import {
   isTestEnv,
   notControlInDocTable,
   notShowInDocTable,
@@ -17,12 +24,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../../../Buttons';
-import { RcGrid } from '../../../../Grid';
-import { RcTypography } from '../../../../Typography';
-import { RcTimePicker } from '../../TimePicker';
-import { RcDatePicker } from '../DatePicker';
 
 export default {
   title: '🚀 Cleanup Components/Forms/DatePicker',

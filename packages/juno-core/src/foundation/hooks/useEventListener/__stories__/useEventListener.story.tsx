@@ -1,12 +1,8 @@
 import React, { useRef } from 'react';
 
+import { RcBox, RcButton, RcText, useEventListener } from '@ringcentral/juno';
 import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcText } from '../../../../components';
-import { RcBox } from '../../../../components/Box';
-import { RcButton } from '../../../../components/Buttons';
-import { useEventListener } from '../useEventListener';
 
 export default {
   title: '🔧 Foundation/Hooks/useEventListener',

@@ -1,19 +1,20 @@
 import React, { ComponentProps } from 'react';
 
 import {
+  RcFormControl,
+  RcFormControlLabel,
+  RcFormLabel,
+  RcRadio,
+  RcRadioGroup,
+  RcTypography,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcTypography } from '../../../Typography';
-import { RcFormControl } from '../../FormControl';
-import { RcFormControlLabel } from '../../FormControlLabel';
-import { RcFormLabel } from '../../FormLabel';
-import { RcRadio } from '../../Radio';
-import { RcRadioGroup } from '../RadioGroup';
 
 export default {
   title: '🚀 Cleanup Components/Forms/RadioGroup',

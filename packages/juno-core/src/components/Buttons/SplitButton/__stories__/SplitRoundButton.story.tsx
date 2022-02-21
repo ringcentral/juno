@@ -1,6 +1,15 @@
 import React, { ComponentProps, Fragment } from 'react';
 
 import {
+  omit,
+  RcGrid,
+  RcIcon,
+  RcListItem,
+  RcSplitButton,
+  RcTooltip,
+  RcTypography,
+} from '@ringcentral/juno';
+import {
   Add as AddSvg,
   Reply as ReplySvg,
   Start as StartSvg,
@@ -13,14 +22,7 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import { omit } from '../../../../foundation';
-import { RcGrid } from '../../../Grid';
-import { RcIcon } from '../../../Icon';
 import { RcIconSizes } from '../../../Icon/utils';
-import { RcListItem } from '../../../List';
-import { RcTooltip } from '../../../Tooltip';
-import { RcTypography } from '../../../Typography';
-import { RcSplitButton } from '../SplitButton';
 
 export default {
   title: '🚀 Cleanup Components/SplitButton/SplitButton Examples(Icon)',

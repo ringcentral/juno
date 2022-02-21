@@ -1,18 +1,19 @@
 import React, { ComponentProps } from 'react';
 
 import {
+  RcButton,
+  RcCard,
+  RcCardActions,
+  RcCardContent,
+  RcTypography,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../../Buttons';
-import { RcTypography } from '../../../Typography';
-import { RcCard } from '../../Card';
-import { RcCardContent } from '../../CardContent';
-import { RcCardActions } from '../CardActions';
 
 export default {
   title: '🚀 Cleanup Components/Cards/CardActions',

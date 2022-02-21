@@ -2,14 +2,15 @@ import React, { useRef } from 'react';
 
 import range from 'lodash/range';
 
+import {
+  RcIconButton,
+  RcText,
+  styled,
+  useOnlyOneFocusable,
+} from '@ringcentral/juno';
 import { Add } from '@ringcentral/juno-icon';
 import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcText } from '../../../../components';
-import { RcIconButton } from '../../../../components/Buttons';
-import styled from '../../../styled-components';
-import { useOnlyOneFocusable } from '../useOnlyOneFocusable';
 
 export default {
   title: '🔧 Foundation/Hooks/useOnlyOneFocusable',

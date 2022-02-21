@@ -1,10 +1,8 @@
 import React from 'react';
 
+import { RcButton, useRefState } from '@ringcentral/juno';
 import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../../../components';
-import { useRefState } from '../useRefState';
 
 export default {
   title: '🔧 Foundation/Hooks/useRefState',

@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 
+import { useResultRef } from '@ringcentral/juno';
 import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { useResultRef } from '../useResultRef';
 
 export default {
   title: '🔧 Foundation/Hooks/useResultRef',

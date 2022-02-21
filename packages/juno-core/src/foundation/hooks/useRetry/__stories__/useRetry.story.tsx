@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
 
+import { RcBox, RcButton, RcLoading, useRetry } from '@ringcentral/juno';
 import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcBox } from '../../../../components/Box';
-import { RcButton } from '../../../../components/Buttons';
-import { RcLoading } from '../../../../components/Loading';
-import { useRetry } from '../useRetry';
 
 export default {
   title: '🔧 Foundation/Hooks/useRetry',

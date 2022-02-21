@@ -1,13 +1,16 @@
 import React, { useCallback, useMemo, useState } from 'react';
 
+import {
+  radius,
+  RcBox,
+  RcTextField,
+  RcTypography,
+  spacing,
+  styled,
+  useTheme,
+} from '@ringcentral/juno';
 import { isValidPalettes } from '@ringcentral/juno-storybook';
 import { Story } from '@storybook/react';
-
-import { RcBox } from '../../components/Box';
-import { RcTextField } from '../../components/Forms/TextField';
-import { RcTypography } from '../../components/Typography';
-import styled, { useTheme } from '../styled-components';
-import { radius, spacing } from '../styles';
 
 export default {
   title: '🔧 Foundation/Palette',

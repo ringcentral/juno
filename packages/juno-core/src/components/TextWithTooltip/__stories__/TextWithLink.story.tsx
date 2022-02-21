@@ -1,9 +1,8 @@
 import React from 'react';
 
+import { ellipsis, styled } from '@ringcentral/juno';
 import { number, text } from '@storybook/addon-knobs';
 
-import { ellipsis } from '../../../foundation';
-import styled from '../../../foundation/styled-components';
 import { RcTextWithTooltip } from '../TextWithTooltip';
 
 export default {

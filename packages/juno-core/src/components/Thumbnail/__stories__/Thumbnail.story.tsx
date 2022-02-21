@@ -1,10 +1,9 @@
 import React, { ComponentProps } from 'react';
 
+import { RcThumbnail } from '@ringcentral/juno';
 import { NonEdit } from '@ringcentral/juno-icon';
 import { notShowInDocTable } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcThumbnail } from '../Thumbnail';
 
 export default {
   title: '🚀 Cleanup Components/Thumbnail',

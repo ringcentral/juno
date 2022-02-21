@@ -1,12 +1,13 @@
 import React from 'react';
 
+import {
+  RcStep,
+  RcStepButton,
+  RcStepLabel,
+  RcStepper,
+} from '@ringcentral/juno';
 import { switchToControlKnobs } from '@ringcentral/juno-storybook';
 import { Meta } from '@storybook/react';
-
-import { RcStep } from '../Step';
-import { RcStepButton } from '../StepButton';
-import { RcStepLabel } from '../StepLabel';
-import { RcStepper } from '../Stepper';
 
 export default {
   title: '🚀 Cleanup Components/Stepper/Stepper All State',

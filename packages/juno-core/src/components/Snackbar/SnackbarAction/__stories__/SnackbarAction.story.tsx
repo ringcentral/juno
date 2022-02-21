@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcSnackbarAction, RcSnackbarContent } from '@ringcentral/juno';
 import { Add, Close } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -7,9 +8,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcSnackbarContent } from '../../SnackbarContent';
-import { RcSnackbarAction } from '../SnackbarAction';
 
 export default {
   title: '🚀 Cleanup Components/Snackbar/SnackbarAction',

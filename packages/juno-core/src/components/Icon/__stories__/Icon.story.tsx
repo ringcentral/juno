@@ -1,5 +1,14 @@
 import React, { ComponentProps, FunctionComponent } from 'react';
 
+import {
+  RcButton,
+  RcDefaultDarkTheme,
+  RcIcon,
+  RcThemeProvider,
+  RcThemeSwitcherProvider,
+  styled,
+  useThemeSwitcher,
+} from '@ringcentral/juno';
 import { Add, DefaultFile, Phone } from '@ringcentral/juno-icon';
 import {
   notShowInDocTable,
@@ -7,16 +16,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import {
-  RcDefaultDarkTheme,
-  RcThemeProvider,
-  RcThemeSwitcherProvider,
-  styled,
-  useThemeSwitcher,
-} from '../../../foundation';
-import { RcButton } from '../../Buttons';
-import { RcIcon } from '../Icon';
 
 export default {
   title: '🚀 Cleanup Components/Icon',

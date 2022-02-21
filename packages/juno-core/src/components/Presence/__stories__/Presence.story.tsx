@@ -1,13 +1,12 @@
 import React, { ComponentProps } from 'react';
 
+import { palette2, RcPresence, styled } from '@ringcentral/juno';
 import {
   paletteChoice,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import { palette2, styled } from '../../../foundation';
-import { RcPresence } from '../Presence';
 import { RcPresenceColors } from '../utils';
 
 export default {

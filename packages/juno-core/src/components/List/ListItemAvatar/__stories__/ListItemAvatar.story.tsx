@@ -1,6 +1,12 @@
 import React, { ComponentProps } from 'react';
 
 import {
+  RcAvatar,
+  RcListItem,
+  RcListItemAvatar,
+  RcListItemText,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
@@ -8,11 +14,7 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import { RcAvatar } from '../../../Avatar';
 import avatar from '../../../Avatar/__stories__/img/avatar.jpg';
-import { RcListItem } from '../../ListItem';
-import { RcListItemText } from '../../ListItemText';
-import { RcListItemAvatar } from '../ListItemAvatar';
 
 export default {
   title: '🚀 Cleanup Components/Lists/ListItemAvatar',

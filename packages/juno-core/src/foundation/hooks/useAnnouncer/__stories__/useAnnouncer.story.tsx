@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 
+import { RcBox, RcButton, useAnnouncer } from '@ringcentral/juno';
 import { Meta, Story } from '@storybook/react';
-
-import { RcBox } from '../../../../components/Box';
-import { RcButton } from '../../../../components/Buttons';
-import { useAnnouncer } from '../useAnnouncer';
 
 export default {
   title: '🔧 Foundation/Hooks/useAnnouncer',

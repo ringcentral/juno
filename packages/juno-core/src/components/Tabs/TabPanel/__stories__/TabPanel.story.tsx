@@ -1,20 +1,21 @@
 import React, { ComponentProps } from 'react';
 
 import {
+  RcPaper,
+  RcTab,
+  RcTabContext,
+  RcTabList,
+  RcTabPanel,
+  RcTypography,
+  styled,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { styled } from '../../../../foundation';
-import { RcPaper } from '../../../Paper';
-import { RcTypography } from '../../../Typography';
-import { RcTab } from '../../Tab';
-import { RcTabContext } from '../../TabContext';
-import { RcTabList } from '../../TabList';
-import { RcTabPanel } from '../TabPanel';
 
 export default {
   title: '🚀 Cleanup Components/Tabs/TabContext/TabPanel',

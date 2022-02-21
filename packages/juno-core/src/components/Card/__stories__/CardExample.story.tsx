@@ -1,6 +1,30 @@
 import React, { FunctionComponent, useCallback, useState } from 'react';
 
 import {
+  palette2,
+  px,
+  RcButton,
+  RcCard,
+  RcCardActionArea,
+  RcCardActionAreaProps,
+  RcCardActions,
+  RcCardContent,
+  RcCardHoverActions,
+  RcCardMedia,
+  RcCardProps,
+  RcGrid,
+  RcIcon,
+  RcIconButton,
+  RcIconButtonProps,
+  RcMenu,
+  RcMenuItem,
+  RcMenuItemProps,
+  RcMenuProps,
+  RcTypography,
+  spacing,
+  styled,
+} from '@ringcentral/juno';
+import {
   Delete,
   Edit,
   ExternalLink,
@@ -10,19 +34,6 @@ import {
 } from '@ringcentral/juno-icon';
 import { switchToControlKnobs } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { palette2, px, spacing, styled } from '../../../foundation';
-import { RcButton, RcIconButton, RcIconButtonProps } from '../../Buttons';
-import { RcGrid } from '../../Grid';
-import { RcIcon } from '../../Icon';
-import { RcMenu, RcMenuItem, RcMenuItemProps, RcMenuProps } from '../../Menu';
-import { RcTypography } from '../../Typography';
-import { RcCard, RcCardProps } from '../Card';
-import { RcCardActionArea, RcCardActionAreaProps } from '../CardActionArea';
-import { RcCardActions } from '../CardActions';
-import { RcCardContent } from '../CardContent';
-import { RcCardHoverActions } from '../CardHoverActions';
-import { RcCardMedia } from '../CardMedia';
 
 export default {
   title: '🚀 Cleanup Components/Cards/CardExample',

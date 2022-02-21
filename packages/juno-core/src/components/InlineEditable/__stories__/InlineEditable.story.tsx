@@ -1,6 +1,16 @@
 import React, { ComponentProps, useState } from 'react';
 
 import {
+  palette2,
+  RcButton,
+  RcCircularProgress,
+  RcInlineEditable,
+  RcTypography,
+  shadows,
+  styled,
+  useTheme,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   paletteChoice,
@@ -10,12 +20,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { palette2, shadows, styled, useTheme } from '../../../foundation';
-import { RcButton } from '../../Buttons';
-import { RcCircularProgress } from '../../Progress';
-import { RcTypography } from '../../Typography';
-import { RcInlineEditable } from '../InlineEditable';
 
 export default {
   title: '🚀 Cleanup Components/InlineEditable',

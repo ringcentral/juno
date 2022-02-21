@@ -1,5 +1,10 @@
 import React, { ComponentProps } from 'react';
 
+import {
+  RcAccordion,
+  RcAccordionDetails,
+  RcAccordionSummary,
+} from '@ringcentral/juno';
 import { ArrowUp } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -8,10 +13,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcAccordion } from '../../Accordion';
-import { RcAccordionDetails } from '../../AccordionDetails';
-import { RcAccordionSummary } from '../AccordionSummary';
 
 export default {
   title: '🚀 Cleanup Components/Accordion/AccordionSummary',

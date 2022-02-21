@@ -1,14 +1,17 @@
 import React, { useRef, useState } from 'react';
 
+import {
+  RcBox,
+  RcDialog,
+  RcDialogContent,
+  RcDialogTitle,
+  RcIconButton,
+  RcSwitch,
+  RcZoomFrom,
+  styled,
+} from '@ringcentral/juno';
 import { Close } from '@ringcentral/juno-icon';
 import { Meta, Story } from '@storybook/react';
-
-import { styled } from '../../../../foundation';
-import { RcBox } from '../../../Box';
-import { RcIconButton } from '../../../Buttons';
-import { RcDialog, RcDialogContent, RcDialogTitle } from '../../../Dialog';
-import { RcSwitch } from '../../../Forms/Switch';
-import { RcZoomFrom } from '../ZoomFrom';
 
 export default {
   title: '🚀 Cleanup Components/🌈Animations/Transition/ZoomFrom',

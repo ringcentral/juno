@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcCard, RcCardContent, RcTypography } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -7,10 +8,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcTypography } from '../../../Typography';
-import { RcCard } from '../../Card';
-import { RcCardContent } from '../CardContent';
 
 export default {
   title: '🚀 Cleanup Components/Cards/CardContent',

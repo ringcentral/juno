@@ -1,15 +1,12 @@
 import React, { ComponentProps } from 'react';
 
+import { RcBox, RcLink, RcText } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcLink } from '../../Link';
-import { RcText } from '../../Text';
-import { RcBox } from '../Box';
 
 export default {
   title: '🚀 Cleanup Components/Box',

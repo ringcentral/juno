@@ -1,5 +1,14 @@
 import React, { ComponentProps, FunctionComponent } from 'react';
 
+import {
+  RcBadge,
+  RcIcon,
+  RcPaper,
+  RcTab,
+  RcTabs,
+  RcTabsMoreMenuGroupInfoType,
+  RcTypography,
+} from '@ringcentral/juno';
 import { MoreHoriz as MoreHorizIcon } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -8,13 +17,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcBadge } from '../../../Badge';
-import { RcIcon } from '../../../Icon';
-import { RcPaper } from '../../../Paper';
-import { RcTypography } from '../../../Typography';
-import { RcTab } from '../../Tab';
-import { RcTabs, RcTabsMoreMenuGroupInfoType } from '../Tabs';
 
 export default {
   title: '🚀 Cleanup Components/Tabs/Tabs',

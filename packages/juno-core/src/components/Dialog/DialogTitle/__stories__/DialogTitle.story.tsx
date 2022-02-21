@@ -1,5 +1,13 @@
 import React, { ComponentProps } from 'react';
 
+import {
+  RcAvatar,
+  RcBox,
+  RcDialogTitle,
+  RcIconButton,
+  RcIconButtonGroup,
+  RcTypography,
+} from '@ringcentral/juno';
 import { Close, Settings, Star } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -8,13 +16,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcAvatar } from '../../../Avatar';
-import { RcBox } from '../../../Box';
-import { RcIconButton } from '../../../Buttons/IconButton';
-import { RcIconButtonGroup } from '../../../Buttons/IconButtonGroup';
-import { RcTypography } from '../../../Typography';
-import { RcDialogTitle } from '../DialogTitle';
 
 export default {
   title: '🚀 Cleanup Components/Dialog/DialogTitle',

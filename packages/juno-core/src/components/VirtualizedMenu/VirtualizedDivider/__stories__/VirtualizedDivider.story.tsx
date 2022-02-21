@@ -3,6 +3,12 @@ import React, { ComponentProps } from 'react';
 import range from 'lodash/range';
 
 import {
+  RcListItemText,
+  RcMenuItem,
+  RcVirtualizedDivider,
+  Virtuoso,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
@@ -10,11 +16,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcListItemText } from '../../../List/ListItemText';
-import { RcMenuItem } from '../../../Menu/MenuItem/MenuItem';
-import { Virtuoso } from '../../../Virtuoso';
-import { RcVirtualizedDivider } from '../VirtualizedDivider';
 
 export default {
   title: '🚀 Cleanup Components/Virtuoso/VirtualizedDivider',

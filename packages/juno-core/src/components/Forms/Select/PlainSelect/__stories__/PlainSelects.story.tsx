@@ -1,5 +1,15 @@
 import React, { ComponentProps, FunctionComponent, useState } from 'react';
 
+import {
+  RcBox,
+  RcGrid,
+  RcIcon,
+  RcListItem,
+  RcListItemIcon,
+  RcListItemText,
+  RcPlainSelect,
+  RcTypography,
+} from '@ringcentral/juno';
 import { Add, BubbleLines, BubbleLinesBorder } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -9,13 +19,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcBox } from '../../../../Box';
-import { RcGrid } from '../../../../Grid';
-import { RcIcon } from '../../../../Icon';
-import { RcListItem, RcListItemIcon, RcListItemText } from '../../../../List';
-import { RcTypography } from '../../../../Typography';
-import { RcPlainSelect } from '../PlainSelect';
 
 export default {
   title: '🚀 Cleanup Components/Selects/PlainSelect',

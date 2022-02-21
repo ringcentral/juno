@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { RcPaper } from '../../../Paper';
-import { RcGrid } from '../Grid';
+import { RcGrid, RcPaper } from '@ringcentral/juno';
 
 export default {
   title: '🖤 Deprecated Components/Grid',

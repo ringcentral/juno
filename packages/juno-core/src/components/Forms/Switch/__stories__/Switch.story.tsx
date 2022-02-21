@@ -1,6 +1,14 @@
 import React, { ComponentProps } from 'react';
 
 import {
+  RcFormControl,
+  RcFormControlLabel,
+  RcFormGroup,
+  RcFormLabel,
+  RcSwitch,
+  RcTypography,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   paletteChoice,
@@ -8,13 +16,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcTypography } from '../../../Typography';
-import { RcFormControl } from '../../FormControl';
-import { RcFormControlLabel } from '../../FormControlLabel';
-import { RcFormGroup } from '../../FormGroup';
-import { RcFormLabel } from '../../FormLabel';
-import { RcSwitch } from '../Switch';
 
 export default {
   title: '🚀 Cleanup Components/Forms/Switch',

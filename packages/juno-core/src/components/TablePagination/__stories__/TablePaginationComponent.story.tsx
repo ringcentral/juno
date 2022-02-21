@@ -1,5 +1,6 @@
 import React, { ComponentProps, useState } from 'react';
 
+import { RcTablePagination, styled } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -8,9 +9,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { styled } from '../../../foundation';
-import { RcTablePagination } from '../TablePagination';
 
 export default {
   title: '🚀 Cleanup Components/TablePagination',

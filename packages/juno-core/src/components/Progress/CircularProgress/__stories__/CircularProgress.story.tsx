@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcCircularProgress } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -9,8 +10,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcCircularProgress } from '../CircularProgress';
 
 export default {
   title: '🚀 Cleanup Components/Progress/CircularProgress',

@@ -1,16 +1,18 @@
 import React, { ComponentProps } from 'react';
 
 import {
+  RcAccordion,
+  RcAccordionDetails,
+  RcAccordionProps,
+  RcAccordionSummary,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcAccordion, RcAccordionProps } from '../Accordion';
-import { RcAccordionDetails } from '../AccordionDetails';
-import { RcAccordionSummary } from '../AccordionSummary';
 
 export default {
   title: '🚀 Cleanup Components/Accordion/Accordion',

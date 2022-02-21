@@ -1,5 +1,6 @@
 import React, { ComponentProps, useState } from 'react';
 
+import { RcBox, RcButton, RcCollapse } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -7,10 +8,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcBox } from '../../../Box';
-import { RcButton } from '../../../Buttons';
-import { RcCollapse } from '../Collapse';
 
 export default {
   title: '🚀 Cleanup Components/🌈Animations/Transition/Collapse',

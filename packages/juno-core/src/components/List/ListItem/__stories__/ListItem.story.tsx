@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcListItem, RcListItemText } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -7,9 +8,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcListItemText } from '../../ListItemText';
-import { RcListItem } from '../ListItem';
 
 export default {
   title: '🚀 Cleanup Components/Lists/ListItem',

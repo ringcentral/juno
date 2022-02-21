@@ -1,11 +1,9 @@
 import React, { ComponentProps, useState } from 'react';
 
+import { RcButton, RcLink, RcText } from '@ringcentral/juno';
 import { Meta, Story } from '@storybook/react';
 
-import { RcButton } from '../../Buttons';
-import { RcLink } from '../../Link';
 import TypographyStory from '../../Typography/__stories__/Typography.story';
-import { RcText } from '../Text';
 
 export default {
   title: '🚀 Cleanup Components/Typography/Text',

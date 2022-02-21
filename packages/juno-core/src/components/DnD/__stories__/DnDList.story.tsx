@@ -1,17 +1,18 @@
 import React, { FunctionComponent, useState } from 'react';
 
-import { select } from '@storybook/addon-knobs';
-import { Meta, Story } from '@storybook/react';
-
 import {
+  RcCollapse,
   RcDragDropContext,
   RcDragDropContextProps,
   RcDraggable,
   RcDroppable,
-} from '..';
-import { RcList, RcListItem } from '../../List';
-import { RcListSubheader } from '../../List/ListSubheader';
-import { RcCollapse } from '../../Transitions';
+  RcList,
+  RcListItem,
+  RcListSubheader,
+} from '@ringcentral/juno';
+import { select } from '@storybook/addon-knobs';
+import { Meta, Story } from '@storybook/react';
+
 import { DataType, GroupType, initialData, ItemType } from './DnDExampleData';
 
 export default {

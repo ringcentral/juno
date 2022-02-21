@@ -1,8 +1,7 @@
 import React from 'react';
 
+import { useFixedEndSelection } from '@ringcentral/juno';
 import { Meta, Story } from '@storybook/react';
-
-import { useFixedEndSelection } from '../utils/useFixedEndSelection';
 
 export default {
   title: '🚀 Cleanup Components/Dialer/useFixedEndSelection',

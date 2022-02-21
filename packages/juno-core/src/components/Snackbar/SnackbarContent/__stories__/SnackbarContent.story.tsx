@@ -1,5 +1,11 @@
 import React, { ComponentProps } from 'react';
 
+import {
+  RcLink,
+  RcSnackbarAction,
+  RcSnackbarContent,
+  styled,
+} from '@ringcentral/juno';
 import { Close } from '@ringcentral/juno-icon';
 import {
   notShowInDocTable,
@@ -7,11 +13,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { styled } from '../../../../foundation';
-import { RcLink } from '../../../Link';
-import { RcSnackbarAction } from '../../SnackbarAction/SnackbarAction';
-import { RcSnackbarContent } from '../SnackbarContent';
 
 export default {
   title: '🚀 Cleanup Components/Snackbar/SnackbarContent',

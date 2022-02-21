@@ -1,17 +1,19 @@
 import React, { ComponentProps } from 'react';
 
 import {
+  RcBackdrop,
+  RcButton,
+  RcCircularProgress,
+  styled,
+  zIndex,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { styled, zIndex } from '../../../foundation';
-import { RcButton } from '../../Buttons/Button';
-import { RcCircularProgress } from '../../Progress/CircularProgress';
-import { RcBackdrop } from '../Backdrop';
 
 export default {
   title: '🚀 Cleanup Components/Backdrop',

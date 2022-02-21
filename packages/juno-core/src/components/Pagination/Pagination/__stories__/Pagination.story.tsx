@@ -1,17 +1,18 @@
 import React, { ComponentProps, useState } from 'react';
 
 import {
+  RcButton,
+  RcPagination,
+  RcPaginationItem,
+  styled,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { styled } from '../../../../foundation';
-import { RcButton } from '../../../Buttons';
-import { RcPaginationItem } from '../../PaginationItem';
-import { RcPagination } from '../Pagination';
 
 export default {
   title: '🚀 Cleanup Components/Pagination',

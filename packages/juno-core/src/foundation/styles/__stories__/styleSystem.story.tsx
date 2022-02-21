@@ -1,28 +1,33 @@
 import React from 'react';
 
+import {
+  css,
+  darken,
+  ellipsis,
+  fakeBorder,
+  flexCenterStyle,
+  flexWidth,
+  focusVisibleShadowStyle,
+  getContrastBgColor,
+  getParsePaletteColor,
+  lighten,
+  lineClamp,
+  nonStyleButton,
+  nonTouchHoverMedia,
+  opacity,
+  palette2,
+  paletteContrastText,
+  radius,
+  RcBox,
+  RcTheme,
+  setOpacity,
+  shadows,
+  spacing,
+  styled,
+  typography,
+  zIndex,
+} from '@ringcentral/juno';
 import { Meta, Story } from '@storybook/react';
-
-import { RcBox } from '../../../components';
-import styled, { css } from '../../styled-components';
-import { RcTheme } from '../../theme/theme.type';
-import { darken, getContrastBgColor, lighten } from '../colorManipulator';
-import { ellipsis } from '../ellipsis';
-import { fakeBorder } from '../fakeBorder';
-import { flexCenterStyle } from '../flexCenter';
-import { flexWidth } from '../flexWidth';
-import { focusVisibleShadowStyle } from '../focusVisible';
-import { lineClamp } from '../lineClamp';
-import { getParsePaletteColor, palette2 } from '../newPalette';
-import { nonStyleButton } from '../nonStyleButton';
-import { nonTouchHoverMedia } from '../nonTouchHoverMedia';
-import { opacity } from '../opacity';
-import { setOpacity } from '../palette';
-import { paletteContrastText } from '../paletteContrastText';
-import { radius } from '../radius';
-import { shadows } from '../shadows';
-import { spacing } from '../spacing';
-import { typography } from '../typography';
-import { zIndex } from '../zIndex';
 
 export default {
   title: '💅 Style system/utils',

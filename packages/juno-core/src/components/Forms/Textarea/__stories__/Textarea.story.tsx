@@ -1,5 +1,6 @@
 import React, { ComponentProps, useState } from 'react';
 
+import { RcTextarea } from '@ringcentral/juno';
 import {
   sortInDocTable,
   switchToControlKnobs,
@@ -8,7 +9,6 @@ import {
 import { Meta, Story } from '@storybook/react';
 
 import TextFieldStory from '../../TextField/__stories__/TextField.story';
-import { RcTextarea } from '../Textarea';
 
 export default {
   title: '🚀 Cleanup Components/Forms/Textarea',

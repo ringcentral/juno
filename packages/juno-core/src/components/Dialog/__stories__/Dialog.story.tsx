@@ -1,32 +1,35 @@
 import React, { ComponentProps, FunctionComponent, useState } from 'react';
 
 import {
+  RcBox,
+  RcButton,
+  RcCheckbox,
+  RcDialog,
+  RcDialogActions,
+  RcDialogContent,
+  RcDialogContentProps,
+  RcDialogContentText,
+  RcDialogContext,
+  RcDialogProps,
+  RcDialogTitle,
+  RcDrawer,
+  RcFormControlLabel,
+  RcRadio,
+  RcRadioGroup,
+  RcResponsive,
+  RcSwitch,
+  RcTypography,
+  styled,
+  useResponsiveContext,
+  useResponsiveMatch,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import {
-  styled,
-  useResponsiveContext,
-  useResponsiveMatch,
-} from '../../../foundation';
-import { RcBox } from '../../Box';
-import { RcButton } from '../../Buttons/Button';
-import { RcDrawer } from '../../Drawer';
-import { RcFormControlLabel, RcSwitch } from '../../Forms';
-import { RcCheckbox } from '../../Forms/Checkbox';
-import { RcRadio } from '../../Forms/Radio';
-import { RcRadioGroup } from '../../Forms/RadioGroup';
-import { RcResponsive } from '../../Responsive';
-import { RcTypography } from '../../Typography';
-import { RcDialog, RcDialogContext, RcDialogProps } from '../Dialog';
-import { RcDialogActions } from '../DialogActions';
-import { RcDialogContent, RcDialogContentProps } from '../DialogContent';
-import { RcDialogContentText } from '../DialogContentText';
-import { RcDialogTitle } from '../DialogTitle';
 
 export default {
   title: '🚀 Cleanup Components/Dialog/Dialog',

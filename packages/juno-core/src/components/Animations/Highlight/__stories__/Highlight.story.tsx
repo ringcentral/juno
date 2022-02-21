@@ -1,10 +1,13 @@
 import React, { useRef } from 'react';
 
+import {
+  flexCenterStyle,
+  palette2,
+  RcButton,
+  RcHighlight,
+  styled,
+} from '@ringcentral/juno';
 import { Meta, Story } from '@storybook/react';
-
-import { flexCenterStyle, palette2, styled } from '../../../../foundation';
-import { RcButton } from '../../../Buttons';
-import { RcHighlight } from '../Highlight';
 
 export default {
   title: '🚀 Cleanup Components/🌈Animations/Highlight',

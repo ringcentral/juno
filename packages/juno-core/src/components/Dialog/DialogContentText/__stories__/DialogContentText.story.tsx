@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcDialogContentText } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -10,7 +11,6 @@ import {
 import { Meta, Story } from '@storybook/react';
 
 import { MuiDefaultColor } from '../../../Typography/utils';
-import { RcDialogContentText } from '../DialogContentText';
 
 export default {
   title: '🚀 Cleanup Components/Dialog/DialogContentText',

@@ -1,17 +1,18 @@
 import React, { ComponentProps, useState } from 'react';
 
 import {
+  RcCard,
+  RcCardContent,
+  RcCardSelectionArea,
+  RcTypography,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcTypography } from '../../../Typography';
-import { RcCard } from '../../Card';
-import { RcCardContent } from '../../CardContent';
-import { RcCardSelectionArea } from '../CardSelectionArea';
 
 export default {
   title: '🚀 Cleanup Components/Cards/CardSelectionArea',

@@ -1,6 +1,13 @@
 import React, { ComponentProps } from 'react';
 
 import {
+  RcGrid,
+  RcToggleButton,
+  RcToggleButtonGroup,
+  RcToggleButtonGroupProps,
+  RcToggleButtonProps,
+} from '@ringcentral/juno';
+import {
   AlignCenter,
   AlignJustify,
   AlignLeft,
@@ -14,13 +21,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcGrid } from '../../../Grid';
-import { RcToggleButton, RcToggleButtonProps } from '../../ToggleButton';
-import {
-  RcToggleButtonGroup,
-  RcToggleButtonGroupProps,
-} from '../ToggleButtonGroup';
 
 export default {
   title: '🚀 Cleanup Components/Buttons/ToggleButtonGroup',

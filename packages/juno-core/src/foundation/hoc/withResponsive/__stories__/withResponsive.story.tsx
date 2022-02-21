@@ -1,13 +1,14 @@
 import React, { useRef } from 'react';
 
+import {
+  RcButton,
+  RcResponsive,
+  RcTypography,
+  styled,
+  withResponsive,
+} from '@ringcentral/juno';
 import { switchToControlKnobs } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../../../components/Buttons';
-import { RcResponsive } from '../../../../components/Responsive';
-import { RcTypography } from '../../../../components/Typography';
-import styled from '../../../styled-components';
-import { withResponsive } from '../withResponsive';
 
 export default {
   title: '🔧 Foundation/HoC/withResponsive',

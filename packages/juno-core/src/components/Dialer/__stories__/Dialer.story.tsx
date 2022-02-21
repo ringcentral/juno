@@ -8,6 +8,45 @@ import React, {
 import uniqueId from 'lodash/uniqueId';
 
 import {
+  flexCenterStyle,
+  flexWidth,
+  palette2,
+  radius,
+  RcAvatar,
+  RcBox,
+  RcClasses,
+  RcCollapse,
+  RcDialDelete,
+  RcDialer,
+  RcDialerPadSounds,
+  RcDialPad,
+  RcDialTextField,
+  RcDownshiftDefaultFilterOptions,
+  RcDownshiftInput,
+  RcFade,
+  RcGlobalScrollBarStyle,
+  RcIcon,
+  RcIconButton,
+  RcListItemSecondaryAction,
+  RcListItemText,
+  RcMenuItem,
+  RcPaper,
+  RcSelect,
+  RcSelectProps,
+  RcSlide,
+  RcSuggestionList,
+  RcText,
+  RcTooltip,
+  setOpacity,
+  shadows,
+  spacing,
+  styled,
+  typography,
+  useDialKeyboard,
+  useDownshift,
+  UseLongPressEventReason,
+} from '@ringcentral/juno';
+import {
   Close,
   Deletenumber,
   Dialer as DialerSvg,
@@ -25,42 +64,8 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import {
-  flexCenterStyle,
-  flexWidth,
-  palette2,
-  radius,
-  RcClasses,
-  RcGlobalScrollBarStyle,
-  setOpacity,
-  shadows,
-  spacing,
-  styled,
-  typography,
-  UseLongPressEventReason,
-} from '../../../foundation';
-import { RcAvatar } from '../../Avatar';
 import avatar from '../../Avatar/__stories__/img/avatar.jpg';
-import { RcBox } from '../../Box';
-import { RcIconButton } from '../../Buttons';
-import { RcDownshiftDefaultFilterOptions, useDownshift } from '../../Downshift';
 import { options } from '../../Downshift/__stories__/options';
-import { RcDownshiftInput } from '../../Downshift/styles';
-import { RcSuggestionList } from '../../Downshift/SuggestionList';
-import { RcSelect, RcSelectProps } from '../../Forms';
-import { RcIcon } from '../../Icon';
-import { RcListItemSecondaryAction } from '../../List/ListItemSecondaryAction';
-import { RcListItemText } from '../../List/ListItemText';
-import { RcMenuItem } from '../../Menu';
-import { RcPaper } from '../../Paper';
-import { RcText } from '../../Text';
-import { RcTooltip } from '../../Tooltip';
-import { RcCollapse, RcFade, RcSlide } from '../../Transitions';
-import { RcDialDelete } from '../DialDelete';
-import { RcDialer } from '../Dialer';
-import { RcDialerPadSounds, RcDialPad } from '../DialPad';
-import { useDialKeyboard } from '../DialPad/utils/useDialKeyboard';
-import { RcDialTextField } from '../DialTextField';
 
 export default {
   title: '🚀 Cleanup Components/Dialer',

@@ -1,15 +1,14 @@
 import React from 'react';
 
-import { Title } from '@ringcentral/juno-storybook';
-import { Meta, Story } from '@storybook/react';
-
-import { RcBox } from '../../../components';
-import { useTheme } from '../../styled-components';
-import { RcThemeProvider } from '../ThemeProvider';
 import {
+  RcBox,
   RcDefaultDarkTheme,
   RcDefaultHighContrastTheme,
-} from '../ThemeSwitcherProvider';
+  RcThemeProvider,
+  useTheme,
+} from '@ringcentral/juno';
+import { Title } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
 
 export default {
   title: '🔧 Foundation/Hooks/useTheme',

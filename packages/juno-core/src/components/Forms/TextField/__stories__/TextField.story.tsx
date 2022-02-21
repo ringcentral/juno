@@ -5,6 +5,13 @@ import React, {
   useState,
 } from 'react';
 
+import {
+  RcGrid,
+  RcIconButton,
+  RcText,
+  RcTextField,
+  RcTypography,
+} from '@ringcentral/juno';
 import { HideBorder } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -15,12 +22,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcIconButton } from '../../../Buttons';
-import { RcGrid } from '../../../Grid';
-import { RcText } from '../../../Text';
-import { RcTypography } from '../../../Typography';
-import { RcTextField } from '../TextField';
 
 export default {
   title: '🚀 Cleanup Components/Forms/TextField',

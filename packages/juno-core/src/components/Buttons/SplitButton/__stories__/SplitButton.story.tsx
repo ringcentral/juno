@@ -1,5 +1,14 @@
 import React, { ComponentProps, FunctionComponent } from 'react';
 
+import {
+  RcGrid,
+  RcIcon,
+  RcListItem,
+  RcMenuItem,
+  RcSplitButton,
+  RcTooltip,
+  RcTypography,
+} from '@ringcentral/juno';
 import { Add as AddSvg, Reply as ReplySvg } from '@ringcentral/juno-icon';
 import {
   paletteChoice,
@@ -8,14 +17,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcGrid } from '../../../Grid';
-import { RcIcon } from '../../../Icon';
-import { RcListItem } from '../../../List';
-import { RcMenuItem } from '../../../Menu';
-import { RcTooltip } from '../../../Tooltip';
-import { RcTypography } from '../../../Typography';
-import { RcSplitButton } from '../SplitButton';
 
 export default {
   title: '🚀 Cleanup Components/SplitButton',

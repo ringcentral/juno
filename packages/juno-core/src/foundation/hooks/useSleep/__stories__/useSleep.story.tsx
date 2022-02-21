@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 
+import { RcButton, useSleep } from '@ringcentral/juno';
 import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../../../components/Buttons';
-import { useSleep } from '../useSleep';
 
 export default {
   title: '🔧 Foundation/Hooks/useSleep',

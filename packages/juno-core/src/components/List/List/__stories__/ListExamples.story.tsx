@@ -1,5 +1,15 @@
 import React, { ComponentProps } from 'react';
 
+import {
+  RcDivider,
+  RcIcon,
+  RcIconButton,
+  RcList,
+  RcListItem,
+  RcListItemIcon,
+  RcListItemSecondaryAction,
+  RcListItemText,
+} from '@ringcentral/juno';
 import { Draft, Inbox } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -8,15 +18,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcIconButton } from '../../../Buttons/IconButton';
-import { RcDivider } from '../../../Divider';
-import { RcIcon } from '../../../Icon';
-import { RcListItem } from '../../ListItem';
-import { RcListItemIcon } from '../../ListItemIcon';
-import { RcListItemSecondaryAction } from '../../ListItemSecondaryAction';
-import { RcListItemText } from '../../ListItemText';
-import { RcList } from '../List';
 
 export default {
   title: '🚀 Cleanup Components/Lists/List Examples',

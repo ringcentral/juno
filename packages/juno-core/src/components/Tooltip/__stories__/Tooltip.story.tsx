@@ -5,6 +5,27 @@ import React, {
   useState,
 } from 'react';
 
+import {
+  RcBox,
+  RcButton,
+  RcCheckbox,
+  RcDialog,
+  RcDialogActions,
+  RcDialogContent,
+  RcDialogTitle,
+  RcIcon,
+  RcIconButton,
+  RcLink,
+  RcListItem,
+  RcRadio,
+  RcSplitButton,
+  RcSwitch,
+  RcText,
+  RcTooltip,
+  RcTypography,
+  styled,
+  useTheme,
+} from '@ringcentral/juno';
 import { Add, Videocam } from '@ringcentral/juno-icon';
 import {
   notShowInDocTable,
@@ -14,23 +35,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { styled, useTheme } from '../../../foundation';
-import { RcBox } from '../../Box';
-import { RcButton, RcIconButton, RcSplitButton } from '../../Buttons';
-import {
-  RcDialog,
-  RcDialogActions,
-  RcDialogContent,
-  RcDialogTitle,
-} from '../../Dialog';
-import { RcCheckbox, RcRadio, RcSwitch } from '../../Forms';
-import { RcIcon } from '../../Icon';
-import { RcLink } from '../../Link';
-import { RcListItem } from '../../List';
-import { RcText } from '../../Text';
-import { RcTypography } from '../../Typography';
-import { RcTooltip } from '../Tooltip';
 
 export default {
   title: '🚀 Cleanup Components/Tooltip',

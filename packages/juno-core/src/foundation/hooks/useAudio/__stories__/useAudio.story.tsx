@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 
+import { RcIconButton, useAudio } from '@ringcentral/juno';
 import { PauseCircleBorder, PlayCircleBorder } from '@ringcentral/juno-icon';
 import { Meta, Story } from '@storybook/react';
-
-import { RcIconButton } from '../../../../components/Buttons';
-import { useAudio } from '../useAudio';
 
 export default {
   title: '🔧 Foundation/Hooks/useAudio',

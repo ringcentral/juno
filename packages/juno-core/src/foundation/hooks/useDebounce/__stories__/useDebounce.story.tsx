@@ -1,9 +1,7 @@
 import React from 'react';
 
+import { RcButton, useDebounce } from '@ringcentral/juno';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../../../components/Buttons';
-import { useDebounce } from '../useDebounce';
 
 export default {
   title: '🔧 Foundation/Hooks/useDebounce',

@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 
-import { switchToControlKnobs } from '@ringcentral/juno-storybook';
-import { Meta, Story } from '@storybook/react';
-
 import {
   RcButton,
   RcDialog,
@@ -13,9 +10,11 @@ import {
   RcRadioGroup,
   RcResponsive,
   RcTypography,
-} from '../../../../components';
-import { useResponsiveContext } from '../../../contexts';
-import { useResponsiveMatch } from '../useResponsiveMatch';
+  useResponsiveContext,
+  useResponsiveMatch,
+} from '@ringcentral/juno';
+import { switchToControlKnobs } from '@ringcentral/juno-storybook';
+import { Meta, Story } from '@storybook/react';
 
 export default {
   title: '🔧 Foundation/Hooks/useResponsiveMatch',

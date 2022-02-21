@@ -1,5 +1,23 @@
 import React, { ComponentProps } from 'react';
 
+import {
+  RcAvatar,
+  RcCheckbox,
+  RcDivider,
+  RcFormControlLabel,
+  RcIcon,
+  RcIconButton,
+  RcList,
+  RcListItem,
+  RcListItemAvatar,
+  RcListItemIcon,
+  RcListItemSecondaryAction,
+  RcListItemText,
+  RcListSubheader,
+  RcRadio,
+  RcSwitch,
+  RcThumbnail,
+} from '@ringcentral/juno';
 import { Info, Pdf, Star } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -9,23 +27,7 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import { RcAvatar } from '../../../Avatar';
 import avatar from '../../../Avatar/__stories__/img/avatar.jpg';
-import { RcIconButton } from '../../../Buttons/IconButton';
-import { RcDivider } from '../../../Divider';
-import { RcCheckbox } from '../../../Forms/Checkbox';
-import { RcFormControlLabel } from '../../../Forms/FormControlLabel';
-import { RcRadio } from '../../../Forms/Radio';
-import { RcSwitch } from '../../../Forms/Switch';
-import { RcIcon } from '../../../Icon';
-import { RcThumbnail } from '../../../Thumbnail';
-import { RcList } from '../../List';
-import { RcListItemAvatar } from '../../ListItemAvatar';
-import { RcListItemIcon } from '../../ListItemIcon';
-import { RcListItemSecondaryAction } from '../../ListItemSecondaryAction';
-import { RcListItemText } from '../../ListItemText';
-import { RcListSubheader } from '../../ListSubheader';
-import { RcListItem } from '../ListItem';
 
 export default {
   title: '🚀 Cleanup Components/Lists/ListItem Examples',

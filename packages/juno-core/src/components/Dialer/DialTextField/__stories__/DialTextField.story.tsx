@@ -1,5 +1,6 @@
 import React, { ComponentProps, useState } from 'react';
 
+import { RcDialTextField } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -7,8 +8,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcDialTextField } from '../DialTextField';
 
 export default {
   title: '🚀 Cleanup Components/Dialer/DialTextField',

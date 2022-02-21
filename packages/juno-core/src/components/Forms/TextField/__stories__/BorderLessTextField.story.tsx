@@ -5,6 +5,7 @@ import React, {
   useState,
 } from 'react';
 
+import { RcTextField } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -13,7 +14,6 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import { RcTextField } from '../TextField';
 import TextFieldStory from './TextField.story';
 
 export default {

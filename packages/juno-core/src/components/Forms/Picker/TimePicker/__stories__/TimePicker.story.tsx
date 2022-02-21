@@ -1,18 +1,21 @@
 import React, { ComponentProps, useState } from 'react';
 
 import {
+  getTimestampFromHourAndMin,
+  RcButton,
+  RcTimePicker,
+  RcTimePickerProps,
+  RcTypography,
+  spacing,
+  styled,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   sortInDocTable,
   switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { spacing, styled } from '../../../../../foundation';
-import { RcButton } from '../../../../Buttons/Button';
-import { RcTypography } from '../../../../Typography';
-import { RcTimePicker, RcTimePickerProps } from '../TimePicker';
-import { getTimestampFromHourAndMin } from '../utils';
 
 export default {
   title: '🚀 Cleanup Components/Forms/TimePicker',

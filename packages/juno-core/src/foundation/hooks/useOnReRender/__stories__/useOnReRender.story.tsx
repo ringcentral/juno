@@ -1,12 +1,13 @@
 import React, { useRef } from 'react';
 
+import {
+  RcButton,
+  RcText,
+  useForceUpdate,
+  useOnReRender,
+} from '@ringcentral/juno';
 import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcText } from '../../../../components';
-import { RcButton } from '../../../../components/Buttons';
-import { useForceUpdate } from '../../useForceUpdate';
-import { useOnReRender } from '../useOnReRender';
 
 export default {
   title: '🔧 Foundation/Hooks/useOnReRender',

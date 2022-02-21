@@ -1,17 +1,18 @@
 import React, { ComponentProps } from 'react';
 
 import {
+  RcCard,
+  RcCardContent,
+  RcCardMedia,
+  RcTypography,
+} from '@ringcentral/juno';
+import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcTypography } from '../../../Typography';
-import { RcCard } from '../../Card';
-import { RcCardContent } from '../../CardContent';
-import { RcCardMedia } from '../CardMedia';
 
 export default {
   title: '🚀 Cleanup Components/Cards/CardMedia',

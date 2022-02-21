@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 
+import { RcText, RcTextField, useKeyDownOnce } from '@ringcentral/juno';
 import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcText, RcTextField } from '../../../../components';
-import { useKeyDownOnce } from '../useKeyDownOnce';
 
 export default {
   title: '🔧 Foundation/Hooks/useKeyDownOnce',

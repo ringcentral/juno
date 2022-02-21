@@ -2,16 +2,13 @@ import React, { ComponentProps } from 'react';
 
 import range from 'lodash/range';
 
+import { RcListItemText, RcMenuItem, Virtuoso } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcListItemText } from '../../List/ListItemText';
-import { RcMenuItem } from '../../Menu/MenuItem';
-import { Virtuoso } from '../Virtuoso';
 
 export default {
   title: '🚀 Cleanup Components/Virtuoso',

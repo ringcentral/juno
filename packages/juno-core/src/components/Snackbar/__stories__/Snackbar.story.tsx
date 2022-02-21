@@ -1,5 +1,6 @@
 import React, { ComponentProps, useState } from 'react';
 
+import { RcButton, RcSnackbar, RcSnackbarAction } from '@ringcentral/juno';
 import { Close } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -8,10 +9,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcButton } from '../../Buttons/Button';
-import { RcSnackbar } from '../Snackbar';
-import { RcSnackbarAction } from '../SnackbarAction';
 
 export default {
   title: '🚀 Cleanup Components/Snackbar',

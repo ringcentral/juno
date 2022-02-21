@@ -1,5 +1,12 @@
 import React, { ComponentProps } from 'react';
 
+import {
+  RcCard,
+  RcCardContent,
+  RcCardHoverActions,
+  RcIconButton,
+  RcTypography,
+} from '@ringcentral/juno';
 import { Delete, Edit } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -8,12 +15,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcIconButton } from '../../../Buttons';
-import { RcTypography } from '../../../Typography';
-import { RcCard } from '../../Card';
-import { RcCardContent } from '../../CardContent';
-import { RcCardHoverActions } from '../CardHoverActions';
 
 export default {
   title: '🚀 Cleanup Components/Cards/CardHoverActions',

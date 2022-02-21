@@ -1,5 +1,6 @@
 import React, { ComponentProps, useState } from 'react';
 
+import { RcGrid, RcIcon, RcSlider, RcTextField } from '@ringcentral/juno';
 import { SpeakerMute, SpeakerUp, Star } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -10,11 +11,6 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcGrid } from '../../../Grid';
-import { RcIcon } from '../../../Icon';
-import { RcTextField } from '../../TextField';
-import { RcSlider } from '../Slider';
 
 export default {
   title: '🚀 Cleanup Components/Forms/Slider',

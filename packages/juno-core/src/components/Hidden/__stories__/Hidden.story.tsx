@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcBox, RcButton, RcGrid, RcHidden, useTheme } from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -7,12 +8,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { useTheme } from '../../../foundation';
-import { RcBox } from '../../Box';
-import { RcButton } from '../../Buttons';
-import { RcGrid } from '../../Grid';
-import { RcHidden } from '../Hidden';
 
 export default {
   title: '🚀 Cleanup Components/Hidden',

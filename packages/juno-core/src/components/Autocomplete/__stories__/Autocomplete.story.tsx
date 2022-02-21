@@ -1,12 +1,15 @@
 import React, { ComponentProps, useState } from 'react';
 
+import {
+  RcDownshift,
+  RcDownshiftSelectedItem,
+  RcTextField,
+} from '@ringcentral/juno';
 import { Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import { RcDownshift, RcDownshiftSelectedItem } from '../../Downshift';
-import { RcTextField } from '../../Forms/TextField';
-import { RcAutocomplete } from '../Autocomplete';
 import { AutocompleteDoc } from './Autocomplete.doc';
+import { RcAutocomplete } from '../Autocomplete';
 
 export default {
   title: '🖤 deprecated Components/Autocomplete',

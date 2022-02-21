@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react';
 
+import { RcCheckbox, RcIcon, RcTypography } from '@ringcentral/juno';
 import { Add, AddBorder, MemberBorder, People } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -9,10 +10,6 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
-
-import { RcIcon } from '../../../Icon';
-import { RcTypography } from '../../../Typography';
-import { RcCheckbox } from '../Checkbox';
 
 export default {
   title: '🚀 Cleanup Components/Forms/Checkbox',

@@ -1,5 +1,12 @@
 import React, { ComponentProps } from 'react';
 
+import {
+  RcBox,
+  RcIconButton,
+  RcIconButtonVariant,
+  RcPaletteProp,
+  RcText,
+} from '@ringcentral/juno';
 import { Star as StarIcon } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -11,12 +18,8 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import { RcPaletteProp } from '../../../../foundation';
 import radiusObj from '../../../../foundation/theme/assets/radius.json';
-import { RcBox } from '../../../Box';
 import { Icon } from '../../../Icon/__stories__/Icon.story';
-import { RcText } from '../../../Text';
-import { RcIconButton, RcIconButtonVariant } from '../IconButton';
 import { RcIconButtonSizes } from '../utils';
 
 export default {

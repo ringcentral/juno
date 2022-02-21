@@ -5,6 +5,22 @@ import React, {
   useState,
 } from 'react';
 
+// @ts-ignore
+// eslint-disable-next-line
+import polyfill from '!raw-loader!./ResizeObserver.global.js';
+
+import {
+  RcButton,
+  RcDetachedWindow,
+  RcDetachedWindowRef,
+  RcDivider,
+  RcGrid,
+  RcIconButton,
+  RcPaper,
+  RcText,
+  RcTypography,
+  styled,
+} from '@ringcentral/juno';
 import { Close } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
@@ -14,31 +30,18 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
-import styled from '../../../foundation/styled-components';
-import { RcButton } from '../../Buttons/Button';
-import { RcIconButton } from '../../Buttons/IconButton';
 import {
   DialogExampleComponent,
   DialogWithResponsiveExample,
 } from '../../Dialog/__stories__/Dialog.story';
-import { RcDivider } from '../../Divider';
 import { DownshiftExamples } from '../../Downshift/__stories__/Downshift.story';
 import { MultiDrawer } from '../../Drawer/__stories__/Drawer.story';
-import { RcGrid } from '../../Grid';
-// import { MenuExampleComponent } from '../../Menu/Menu/__stories__/Menu.story';
 import { SubMenuExampleComponent } from '../../Menu/SubMenu/__stories__/SubMenu.story';
-import { RcPaper } from '../../Paper';
 import { Popover } from '../../Popover/__stories__/Popover.story';
 import { Popper } from '../../Popper/__stories__/Popper.story';
 import { TabsExampleComponent } from '../../Tabs/Tabs/__stories__/Tabs.story';
-import { RcText } from '../../Text';
-import { RcTypography } from '../../Typography';
-// @ts-ignore
-// eslint-disable-next-line
-// import polyfill from '!raw-loader!./ResizeObserver.global.js';
 import { VirtualizedMenu } from '../../VirtualizedMenu/__stories__/VirtualizedMenu.story';
 import { VirtuosoExample } from '../../Virtuoso/__stories__/Virtuoso.story';
-import { RcDetachedWindow, RcDetachedWindowRef } from '../DetachedWindow';
 
 const Box = styled.div<any>`
   width: 50px;
@@ -108,7 +111,7 @@ export const DetachedWindow: Story<DetachedWindowProps> = ({
           if (targetWindow && !targetWindow['ResizeObserver']) {
             const s = targetWindow.document.createElement('script');
             s.type = 'text/javascript';
-            // s.innerHTML = `${polyfill}`;
+            s.innerHTML = `${polyfill}`;
             targetWindow.document.head.appendChild(s);
           }
         }}
