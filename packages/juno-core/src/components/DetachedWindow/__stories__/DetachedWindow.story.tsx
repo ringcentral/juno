@@ -5,10 +5,6 @@ import React, {
   useState,
 } from 'react';
 
-// @ts-ignore
-// eslint-disable-next-line
-import polyfill from '!raw-loader!./ResizeObserver.global.js';
-
 import {
   RcButton,
   RcDetachedWindow,
@@ -62,6 +58,15 @@ export default {
 
 type DetachedWindowProps = ComponentProps<typeof RcDetachedWindow>;
 
+/**
+ * website url will be like
+ * http://localhost:6006/iframe.html?id=%F0%9F%9A%80-cleanup-components-detachedwindow--detached-window&viewMode=story&args=
+ * https://ringcentral.github.io/juno/iframe.html?id=%F0%9F%9A%80-cleanup-components-detachedwindow--detached-window&viewMode=docs&args='
+ *
+ * so we should split from iframe.html
+ */
+const websiteUrl = window.location.href.split('iframe.html')[0];
+
 export const DetachedWindow: Story<DetachedWindowProps> = ({
   children,
   ...args
@@ -108,10 +113,11 @@ export const DetachedWindow: Story<DetachedWindowProps> = ({
         }}
         onOpen={(targetWindow) => {
           console.log('[onOpen] current ref', targetWindow, ref.current);
+          // when there is no resizeObserver append that
           if (targetWindow && !targetWindow['ResizeObserver']) {
             const s = targetWindow.document.createElement('script');
-            s.type = 'text/javascript';
-            s.innerHTML = `${polyfill}`;
+            s.src = `${websiteUrl}assets/ResizeObserver.global.js`;
+            s.async = true;
             targetWindow.document.head.appendChild(s);
           }
         }}
