@@ -2,9 +2,6 @@ name: Publish Package to npm
 on:
   release:
     types: [created]
-env:
-  CORE: ${{ contains(github.ref, 'juno-core') }}
-  ICON: ${{ contains(github.ref, 'juno-icon') }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,20 +19,19 @@ jobs:
         run: yarn
 
       - name: Build core 📦
-        # TODO: that need == true to make if work correct, find way
-        if: ${{ env.CORE == true }}
+        if: ${{ contains(github.ref, 'juno-core') }}
         run: yarn workspace @ringcentral/juno run release
       - name: Publish core 🚀
-        if: ${{ env.CORE == true }}
+        if: ${{ contains(github.ref, 'juno-core') }}
         run: npm publish ./packages/juno-core/dist
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Build icon 📦
-        if: ${{ env.ICON == true }}
+        if: ${{ contains(github.ref, 'juno-icon') }}
         run: yarn workspace @ringcentral/juno-icon run release
       - name: Publish icon 🚀
-        if: ${{ env.ICON == true }}
+        if: ${{ contains(github.ref, 'juno-icon') }}
         run: npm publish ./packages/juno-icon/dist
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
