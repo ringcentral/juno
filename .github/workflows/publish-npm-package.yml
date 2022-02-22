@@ -21,6 +21,7 @@ jobs:
       - name: Build core 📦
         if: ${{ contains(github.ref, 'juno-core') }}
         run: yarn workspace @ringcentral/juno run release
+
       - name: Publish core 🚀
         if: ${{ contains(github.ref, 'juno-core') }}
         run: npm publish ./packages/juno-core/dist
@@ -30,6 +31,7 @@ jobs:
       - name: Build icon 📦
         if: ${{ contains(github.ref, 'juno-icon') }}
         run: yarn workspace @ringcentral/juno-icon run release
+
       - name: Publish icon 🚀
         if: ${{ contains(github.ref, 'juno-icon') }}
         run: npm publish ./packages/juno-icon/dist
