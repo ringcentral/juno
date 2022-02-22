@@ -90,6 +90,12 @@ export type InnerSuggestionListProps = {
   onUpdatePopper?: () => any;
   /** options group list, use for calculate `aria-setsize` */
   optionsGroupList?: RcDownshiftGroupedOption<RcDownshiftSelectedItem>[];
+  /**
+   * ## should always keep absolute for better render,
+   * but when you wrap that in modal or a non have width container,
+   * set that as `unset`, let outside `absolute` container to calculate that.
+   */
+  position?: 'absolute' | 'unset';
 } & Pick<
   RcDownshiftProps,
   | 'inputValue'
@@ -140,6 +146,7 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
       maxContainerHeight = '100%',
       className: classNameProp,
       classes: classesProp,
+      position = 'absolute',
       ...rest
     } = props;
 
@@ -214,6 +221,14 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
       containerHeighRef,
       scrollToIndex: scrollToIndexWithRetry,
     });
+
+    // for safari, prevent popover
+    const virtuosoViewPort = scrollerRef.current?.firstElementChild;
+    useLayoutEffect(() => {
+      if (virtuosoViewPort) {
+        (virtuosoViewPort as HTMLElement).style.position = position;
+      }
+    }, [virtuosoViewPort, position]);
 
     const prevHighlightedIndex = usePrevious(() => highlightedIndex, true);
 

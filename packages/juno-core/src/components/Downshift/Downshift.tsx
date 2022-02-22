@@ -983,6 +983,7 @@ const _RcDownshift = memo(
               onUpdatePopper={handleUpdatePopper}
               maxContainerHeight={180}
               getOptionLabel={getOptionLabel}
+              position="unset"
               {...(SuggestionListProps as any)}
             />
           )}
