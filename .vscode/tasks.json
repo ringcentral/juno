@@ -52,6 +52,13 @@
       "command": "yarn update-snapshot",
       "isBackground": true,
       "problemMatcher": []
+    },
+    {
+      "label": "update icon",
+      "type": "shell",
+      "command": "yarn workspace @ringcentral/juno-icon run update-icon",
+      "isBackground": true,
+      "problemMatcher": []
     }
   ]
 }

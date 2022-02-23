@@ -96,6 +96,7 @@ export { default as ContactsBorder } from './ContactsBorder';
 export { default as Contacts } from './Contacts';
 export { default as Copy } from './Copy';
 export { default as CustomizeTabs } from './CustomizeTabs';
+export { default as Customize } from './Customize';
 export { default as DashboardBorder } from './DashboardBorder';
 export { default as Dashboard } from './Dashboard';
 export { default as DateBorder } from './DateBorder';

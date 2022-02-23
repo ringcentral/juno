@@ -9,6 +9,7 @@ export default {
   '7': '7',
   '8': '8',
   '9': '9',
+  Customize: 'customize',
   Mobile: 'mobile',
   Department: 'department',
   CallQueue: 'Call-queue',
