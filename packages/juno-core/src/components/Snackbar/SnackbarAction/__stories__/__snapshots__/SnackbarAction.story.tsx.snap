@@ -89,7 +89,6 @@ exports[`Storyshots 🚀 Cleanup Components/Snackbar/SnackbarAction SnackbarActi
   opacity: 0.24;
 }
 
-.c2.Mui-focusVisible:after,
 .c2.focus-visible:after,
 .c2[data-focus-visible-added]:after {
   content: '';

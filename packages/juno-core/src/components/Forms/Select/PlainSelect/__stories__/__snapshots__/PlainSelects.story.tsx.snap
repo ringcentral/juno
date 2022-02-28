@@ -1208,15 +1208,13 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
 }
 
 .c14 .c4.focus-visible .RcPlainSelect-TouchRipple-root,
-.c14 .c4[data-focus-visible-added] .RcPlainSelect-TouchRipple-root,
-.c14 .c4.Mui-focusVisible .RcPlainSelect-TouchRipple-root {
+.c14 .c4[data-focus-visible-added] .RcPlainSelect-TouchRipple-root {
   background-color: currentColor;
   opacity: 0.32;
 }
 
 .c14 .c4.focus-visible .RcPlainSelect-TouchRipple-child,
-.c14 .c4[data-focus-visible-added] .RcPlainSelect-TouchRipple-child,
-.c14 .c4.Mui-focusVisible .RcPlainSelect-TouchRipple-child {
+.c14 .c4[data-focus-visible-added] .RcPlainSelect-TouchRipple-child {
   display: none;
 }
 
