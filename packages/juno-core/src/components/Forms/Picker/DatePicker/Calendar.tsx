@@ -411,7 +411,7 @@ const Calendar = forwardRef<any, CalendarProps>(
       focusDayElement();
 
       calendarRef.current = document.querySelector(
-        `.${RcDatePickerClasses.popover} .MuiPopover-paper`,
+        `.${RcDatePickerClasses.popover} .${RcDatePickerClasses.popoverPaper}`,
       );
 
       const unsubscribe = transitionendSubscriber(
