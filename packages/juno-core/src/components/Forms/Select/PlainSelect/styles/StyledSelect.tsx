@@ -74,7 +74,7 @@ export const plainSelectStyle: RcThemedStyled<RcPlainSelectProps, any> = ({
         padding-top: ${spacing(1.5)};
         padding-bottom: ${spacing(1.5)};
 
-        ${focusVisible}, &.Mui-focusVisible {
+        ${focusVisible} {
           .${RcPlainSelectTouchRippleClasses.root} {
             background-color: currentColor;
             opacity: ${opacity('32')};

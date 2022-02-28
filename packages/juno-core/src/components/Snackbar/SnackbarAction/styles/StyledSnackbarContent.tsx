@@ -41,7 +41,6 @@ export const snackbarContentActionStyle: RcThemedStyled<
       opacity: ${opacity('24')};
     }
 
-    &.Mui-focusVisible,
     ${focusVisible} {
       ${fakeBorder({
         pseudo: true,
