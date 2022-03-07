@@ -9,6 +9,8 @@ export default {
   '7': '7',
   '8': '8',
   '9': '9',
+  ParkLocationFull: 'park-location-full',
+  ParkLocation: 'park-location',
   Customize: 'customize',
   Mobile: 'mobile',
   Department: 'department',
