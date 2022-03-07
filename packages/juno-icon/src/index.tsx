@@ -273,6 +273,8 @@ export { default as Outdent } from './Outdent';
 export { default as ParkCallMessage } from './ParkCallMessage';
 export { default as ParkCallText } from './ParkCallText';
 export { default as ParkCall } from './ParkCall';
+export { default as ParkLocationFull } from './ParkLocationFull';
+export { default as ParkLocation } from './ParkLocation';
 export { default as PartnerCloudContact } from './PartnerCloudContact';
 export { default as PauseBorder } from './PauseBorder';
 export { default as PauseCircle } from './PauseCircle';
