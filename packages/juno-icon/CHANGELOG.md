@@ -1,4 +1,11 @@
 
+### [1.0.3](https://github.com/ringcentral/juno/compare/juno-icon-v1.0.2...juno-icon-v1.0.3) (2022-03-08)
+
+
+### Features
+
+* **update-icon-220308:** [Icon] update `Customize` ([5ee9851](https://github.com/ringcentral/juno/commit/5ee9851d0afea20cfe29698b8e282935497f2c1f))
+
 ### [1.0.2](https://github.com/ringcentral/juno/compare/juno-icon-v1.0.1...juno-icon-v1.0.2) (2022-03-07)
 
 
