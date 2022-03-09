@@ -2,7 +2,9 @@ import React, {
   ComponentProps,
   forwardRef,
   ReactElement,
+  useLayoutEffect,
   useMemo,
+  useRef,
 } from 'react';
 
 import clsx from 'clsx';
@@ -17,7 +19,9 @@ import {
   RcBaseProps,
   RcClassesProps,
   RcPaletteProp,
+  removeClassName,
   styled,
+  useForkRef,
   useThemeProps,
 } from '../../foundation';
 import { RcAvatarProps } from '../Avatar';
@@ -29,8 +33,23 @@ import { RcChipClasses } from './utils';
 type RcChipClassProp = RcClassesProps<'focused'>;
 
 type RcChipProps = {
-  /** color palette set, effect that active color when focus */
+  /**
+   * color palette set,
+   *
+   * - variant: `default`: effect that active color when focus
+   * - variant: `outlined`: effect whole tag color
+   *
+   * in `outlined` variant when only set color, that will use color to calculate default background color
+   * - `lighten`: lighten `0.92` main color
+   * - `darken`: darken `0.72` main color
+   */
   color?: RcPaletteProp;
+  /**
+   * color palette set, only work when variant is `outlined`
+   *
+   * effect background color when not have any interactive.
+   */
+  backgroundColor?: RcPaletteProp;
   /** is that error chip */
   error?: boolean;
   /**
@@ -47,10 +66,7 @@ type RcChipProps = {
   deleteTooltip?: string;
   /** @deprecated should use `error` */
   isError?: boolean;
-} & RcBaseProps<
-  ComponentProps<typeof MuiChip>,
-  'color' | 'size' | 'variant' | 'icon'
-> &
+} & RcBaseProps<ComponentProps<typeof MuiChip>, 'color' | 'size' | 'icon'> &
   RcChipClassProp;
 
 const _RcChip = forwardRef<any, RcChipProps>((inProps: RcChipProps, ref) => {
@@ -60,6 +76,7 @@ const _RcChip = forwardRef<any, RcChipProps>((inProps: RcChipProps, ref) => {
     deleteTooltip,
     deleteAutomationId,
     isError,
+    backgroundColor,
     classes: classesProp,
     avatar: avatarProp = AvatarProp,
     error = isError,
@@ -74,6 +91,10 @@ const _RcChip = forwardRef<any, RcChipProps>((inProps: RcChipProps, ref) => {
     className,
     ...rest
   } = props;
+
+  const innerRef = useRef<HTMLElement>(null);
+  const chipRef = useForkRef(innerRef, ref);
+
   const combinedClasses = useMemo(
     () => combineClasses(RcChipClasses, classesProp),
     [classesProp],
@@ -131,9 +152,15 @@ const _RcChip = forwardRef<any, RcChipProps>((inProps: RcChipProps, ref) => {
     return undefined;
   }, [avatarProp]);
 
+  // TODO: can be removed when upgrade to v5
+  // * need remove not need MuiChip-deletable for render correct
+  useLayoutEffect(() => {
+    removeClassName(innerRef, 'MuiChip-deletable');
+  });
+
   return (
     <MuiChip
-      ref={ref}
+      ref={chipRef}
       id={id}
       tabIndex={disabled ? -1 : tabIndex}
       label={label}
@@ -142,6 +169,7 @@ const _RcChip = forwardRef<any, RcChipProps>((inProps: RcChipProps, ref) => {
       className={clsx(className, focused ? combinedClasses.focused : undefined)}
       avatar={avatar}
       deleteIcon={deleteIcon}
+      // FIXME: should remove those data-test-automation-*
       data-test-automation-class="selected-item"
       data-test-automation-value={id ? id : label}
       data-is-error={error}
@@ -156,6 +184,7 @@ const RcChip = styled(_RcChip)`
 
 RcChip.defaultProps = {
   tabIndex: 0,
+  // FIXME: after implement click state, that can be remove
   clickable: false,
 };
 
