@@ -6,8 +6,6 @@ exports[`removeClassName work correctly can remove children className 1`] = `
   height: 28px;
   box-sizing: border-box;
   padding: 2px;
-  background-color: #F3F3F3;
-  color: #121212;
   position: relative;
   border-radius: 100vw;
   white-space: nowrap;
@@ -17,12 +15,14 @@ exports[`removeClassName work correctly can remove children className 1`] = `
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
+  color: #121212;
+  background-color: #F3F3F3;
 }
 
 .c0.RcChip-focused,
 .c0.focus-visible,
 .c0[data-focus-visible-added] {
-  background-color: rgba(73,73,73,0.08);
+  background-color: rgba(73,73,73,0.16);
 }
 
 .c0.RcChip-focused:after,
@@ -37,11 +37,6 @@ exports[`removeClassName work correctly can remove children className 1`] = `
   box-shadow: inset 0 0 0 1px #066FAC;
   border-radius: 100vw;
   pointer-events: none;
-}
-
-.c0.RcChip-focused,
-.c0:focus {
-  background-color: rgba(73,73,73,0.16);
 }
 
 .c0:active {
@@ -92,8 +87,6 @@ exports[`removeClassName work correctly should remove parent className 1`] = `
   height: 28px;
   box-sizing: border-box;
   padding: 2px;
-  background-color: #F3F3F3;
-  color: #121212;
   position: relative;
   border-radius: 100vw;
   white-space: nowrap;
@@ -103,12 +96,14 @@ exports[`removeClassName work correctly should remove parent className 1`] = `
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
+  color: #121212;
+  background-color: #F3F3F3;
 }
 
 .c0.RcChip-focused,
 .c0.focus-visible,
 .c0[data-focus-visible-added] {
-  background-color: rgba(73,73,73,0.08);
+  background-color: rgba(73,73,73,0.16);
 }
 
 .c0.RcChip-focused:after,
@@ -123,11 +118,6 @@ exports[`removeClassName work correctly should remove parent className 1`] = `
   box-shadow: inset 0 0 0 1px #066FAC;
   border-radius: 100vw;
   pointer-events: none;
-}
-
-.c0.RcChip-focused,
-.c0:focus {
-  background-color: rgba(73,73,73,0.16);
 }
 
 .c0:active {

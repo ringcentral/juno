@@ -3120,8 +3120,6 @@ Array [
   height: 28px;
   box-sizing: border-box;
   padding: 2px;
-  background-color: #F3F3F3;
-  color: #121212;
   position: relative;
   border-radius: 100vw;
   white-space: nowrap;
@@ -3131,12 +3129,14 @@ Array [
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
+  color: #121212;
+  background-color: #F3F3F3;
 }
 
 .c4.RcChip-focused,
 .c4.focus-visible,
 .c4[data-focus-visible-added] {
-  background-color: rgba(73,73,73,0.08);
+  background-color: rgba(73,73,73,0.16);
 }
 
 .c4.RcChip-focused:after,
@@ -3151,11 +3151,6 @@ Array [
   box-shadow: inset 0 0 0 1px #066FAC;
   border-radius: 100vw;
   pointer-events: none;
-}
-
-.c4.RcChip-focused,
-.c4:focus {
-  background-color: rgba(73,73,73,0.16);
 }
 
 .c4:active {
@@ -4188,8 +4183,6 @@ Array [
   height: 28px;
   box-sizing: border-box;
   padding: 2px;
-  background-color: #F3F3F3;
-  color: #121212;
   position: relative;
   border-radius: 100vw;
   white-space: nowrap;
@@ -4199,12 +4192,14 @@ Array [
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
+  color: #121212;
+  background-color: #F3F3F3;
 }
 
 .c4.RcChip-focused,
 .c4.focus-visible,
 .c4[data-focus-visible-added] {
-  background-color: rgba(73,73,73,0.08);
+  background-color: rgba(73,73,73,0.16);
 }
 
 .c4.RcChip-focused:after,
@@ -4219,11 +4214,6 @@ Array [
   box-shadow: inset 0 0 0 1px #066FAC;
   border-radius: 100vw;
   pointer-events: none;
-}
-
-.c4.RcChip-focused,
-.c4:focus {
-  background-color: rgba(73,73,73,0.16);
 }
 
 .c4:active {
@@ -5138,8 +5128,6 @@ Array [
   height: 28px;
   box-sizing: border-box;
   padding: 2px;
-  background-color: #F3F3F3;
-  color: #121212;
   position: relative;
   border-radius: 100vw;
   white-space: nowrap;
@@ -5149,12 +5137,14 @@ Array [
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
+  color: #121212;
+  background-color: #F3F3F3;
 }
 
 .c4.RcChip-focused,
 .c4.focus-visible,
 .c4[data-focus-visible-added] {
-  background-color: rgba(73,73,73,0.08);
+  background-color: rgba(73,73,73,0.16);
 }
 
 .c4.RcChip-focused:after,
@@ -5169,11 +5159,6 @@ Array [
   box-shadow: inset 0 0 0 1px #066FAC;
   border-radius: 100vw;
   pointer-events: none;
-}
-
-.c4.RcChip-focused,
-.c4:focus {
-  background-color: rgba(73,73,73,0.16);
 }
 
 .c4:active {
@@ -6075,8 +6060,6 @@ Array [
   height: 28px;
   box-sizing: border-box;
   padding: 2px;
-  background-color: #F3F3F3;
-  color: #121212;
   position: relative;
   border-radius: 100vw;
   white-space: nowrap;
@@ -6086,12 +6069,14 @@ Array [
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
+  color: #121212;
+  background-color: #F3F3F3;
 }
 
 .c4.RcChip-focused,
 .c4.focus-visible,
 .c4[data-focus-visible-added] {
-  background-color: rgba(73,73,73,0.08);
+  background-color: rgba(73,73,73,0.16);
 }
 
 .c4.RcChip-focused:after,
@@ -6106,11 +6091,6 @@ Array [
   box-shadow: inset 0 0 0 1px #46BE59;
   border-radius: 100vw;
   pointer-events: none;
-}
-
-.c4.RcChip-focused,
-.c4:focus {
-  background-color: rgba(73,73,73,0.16);
 }
 
 .c4:active {

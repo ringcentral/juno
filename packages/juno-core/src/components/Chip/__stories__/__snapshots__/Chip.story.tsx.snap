@@ -1,12 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots 🚀 Cleanup Components/Chip Chip 1`] = `
-.c0 {
+Array [
+  .c0 {
   height: 28px;
   box-sizing: border-box;
   padding: 2px;
-  background-color: #F3F3F3;
-  color: #121212;
   position: relative;
   border-radius: 100vw;
   white-space: nowrap;
@@ -16,12 +15,14 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip 1`] = `
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
+  color: #121212;
+  background-color: #F3F3F3;
 }
 
 .c0.RcChip-focused,
 .c0.focus-visible,
 .c0[data-focus-visible-added] {
-  background-color: rgba(73,73,73,0.08);
+  background-color: rgba(73,73,73,0.16);
 }
 
 .c0.RcChip-focused:after,
@@ -36,11 +37,6 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip 1`] = `
   box-shadow: inset 0 0 0 1px #066FAC;
   border-radius: 100vw;
   pointer-events: none;
-}
-
-.c0.RcChip-focused,
-.c0:focus {
-  background-color: rgba(73,73,73,0.16);
 }
 
 .c0:active {
@@ -69,24 +65,184 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip 1`] = `
   }
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <div
-  className="MuiChip-root c0"
-  data-test-automation-class="selected-item"
-  data-test-automation-value="Basic Chip"
-  onKeyDown={[Function]}
-  onKeyUp={[Function]}
-  tabIndex={0}
->
-  <span
-    className="MuiChip-label"
+    className="MuiChip-root c0"
+    data-test-automation-class="selected-item"
+    data-test-automation-value="default Chip"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={0}
   >
-    Basic Chip
-  </span>
-</div>
+    <span
+      className="MuiChip-label"
+    >
+      default Chip
+    </span>
+  </div>,
+  .c0 {
+  height: 28px;
+  box-sizing: border-box;
+  padding: 2px;
+  position: relative;
+  border-radius: 100vw;
+  border: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+  background-color: #FFFFFF;
+}
+
+.c0:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #E5E5E5;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c0.RcChip-focused,
+.c0.focus-visible,
+.c0[data-focus-visible-added] {
+  background-color: rgba(73,73,73,0.16);
+}
+
+.c0.RcChip-focused:after,
+.c0.focus-visible:after,
+.c0[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #066FAC;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c0:active {
+  background-color: rgba(73,73,73,0.24);
+}
+
+.c0.RcChip-disabled {
+  color: #B9B9B9;
+  opacity: 1;
+}
+
+.c0 .RcChip-avatar {
+  color: #FFFFFF;
+  margin-left: 0px;
+  margin-right: -4px;
+}
+
+.c0 .RcChip-avatar span {
+  width: auto;
+  height: auto;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(73,73,73,0.08);
+  }
+}
+
+<div
+    className="MuiChip-root c0 MuiChip-outlined"
+    data-test-automation-class="selected-item"
+    data-test-automation-value="outlined Chip"
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={0}
+  >
+    <span
+      className="MuiChip-label"
+    >
+      outlined Chip
+    </span>
+  </div>,
+]
 `;
 
-exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
-.c5 {
+exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples(Default) 1`] = `
+Array [
+  .c0 {
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 40px;
+  color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<h4
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="display1"
+  >
+    default
+  </h4>,
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -490,8 +646,6 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   height: 28px;
   box-sizing: border-box;
   padding: 2px;
-  background-color: #F3F3F3;
-  color: #121212;
   position: relative;
   border-radius: 100vw;
   white-space: nowrap;
@@ -501,12 +655,14 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
+  color: #121212;
+  background-color: #F3F3F3;
 }
 
 .c1.RcChip-focused,
 .c1.focus-visible,
 .c1[data-focus-visible-added] {
-  background-color: rgba(73,73,73,0.08);
+  background-color: rgba(73,73,73,0.16);
 }
 
 .c1.RcChip-focused:after,
@@ -521,11 +677,6 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   box-shadow: inset 0 0 0 1px #066FAC;
   border-radius: 100vw;
   pointer-events: none;
-}
-
-.c1.RcChip-focused,
-.c1:focus {
-  background-color: rgba(73,73,73,0.16);
 }
 
 .c1:active {
@@ -552,8 +703,6 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   height: 28px;
   box-sizing: border-box;
   padding: 2px;
-  background-color: #F3F3F3;
-  color: #121212;
   position: relative;
   border-radius: 100vw;
   white-space: nowrap;
@@ -563,12 +712,14 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
+  color: #121212;
+  background-color: #F3F3F3;
 }
 
 .c7.RcChip-focused,
 .c7.focus-visible,
 .c7[data-focus-visible-added] {
-  background-color: rgba(190,57,51,0.08);
+  background-color: rgba(73,73,73,0.16);
 }
 
 .c7.RcChip-focused:after,
@@ -583,11 +734,6 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   box-shadow: inset 0 0 0 1px #066FAC;
   border-radius: 100vw;
   pointer-events: none;
-}
-
-.c7.RcChip-focused,
-.c7:focus {
-  background-color: rgba(73,73,73,0.16);
 }
 
 .c7:active {
@@ -616,8 +762,24 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   pointer-events: none;
 }
 
-.c7:not(.RcChip-disabled):focus {
+.c7:not(.RcChip-disabled).RcChip-focused,
+.c7:not(.RcChip-disabled).focus-visible,
+.c7:not(.RcChip-disabled)[data-focus-visible-added] {
   background-color: rgba(190,57,51,0.16);
+}
+
+.c7:not(.RcChip-disabled).RcChip-focused:after,
+.c7:not(.RcChip-disabled).focus-visible:after,
+.c7:not(.RcChip-disabled)[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #BE3933;
+  border-radius: 100vw;
+  pointer-events: none;
 }
 
 .c7:not(.RcChip-disabled):active {
@@ -639,8 +801,6 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   height: 28px;
   box-sizing: border-box;
   padding: 2px;
-  background-color: #F3F3F3;
-  color: #121212;
   position: relative;
   border-radius: 100vw;
   white-space: nowrap;
@@ -650,12 +810,14 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
+  color: #121212;
+  background-color: #F3F3F3;
 }
 
 .c9.RcChip-focused,
 .c9.focus-visible,
 .c9[data-focus-visible-added] {
-  background-color: rgba(73,73,73,0.08);
+  background-color: rgba(73,73,73,0.16);
 }
 
 .c9.RcChip-focused:after,
@@ -670,11 +832,6 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   box-shadow: inset 0 0 0 1px #46BE59;
   border-radius: 100vw;
   pointer-events: none;
-}
-
-.c9.RcChip-focused,
-.c9:focus {
-  background-color: rgba(73,73,73,0.16);
 }
 
 .c9:active {
@@ -697,6 +854,63 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   height: auto;
 }
 
+.c13 {
+  height: 28px;
+  box-sizing: border-box;
+  padding: 2px;
+  position: relative;
+  border-radius: 100vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+  background-color: #F3F3F3;
+}
+
+.c13.RcChip-focused,
+.c13.focus-visible,
+.c13[data-focus-visible-added] {
+  background-color: rgba(73,73,73,0.16);
+}
+
+.c13.RcChip-focused:after,
+.c13.focus-visible:after,
+.c13[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #F6AD16;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c13:active {
+  background-color: rgba(73,73,73,0.24);
+}
+
+.c13.RcChip-disabled {
+  color: #B9B9B9;
+  opacity: 1;
+}
+
+.c13 .RcChip-avatar {
+  color: #FFFFFF;
+  margin-left: 0px;
+  margin-right: -4px;
+}
+
+.c13 .RcChip-avatar span {
+  width: auto;
+  height: auto;
+}
+
 .c0 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -706,13 +920,21 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
 }
 
 .c12 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c14 {
   font-size: 0.9375rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
 }
 
-.c13.highlight-term {
+.c15.highlight-term {
   color: #121212 !important;
   background-color: #FFDFB1 !important;
 }
@@ -791,7 +1013,7 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
 
 @media (hover:hover) and (pointer:fine) {
   .c7:hover {
-    background-color: rgba(73,73,73,0.12);
+    background-color: rgba(73,73,73,0.08);
   }
 }
 
@@ -807,538 +1029,2451 @@ exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples 1`] = `
   }
 }
 
+@media (hover:hover) and (pointer:fine) {
+  .c13:hover {
+    background-color: rgba(73,73,73,0.12);
+  }
+}
+
 <div
-  className="MuiGrid-root MuiGrid-container"
->
-  <div
-    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+    className="MuiGrid-root MuiGrid-container"
   >
-    <h5
-      className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
-      data-color="neutral.f06"
-      data-variant="headline1"
-    >
-      Basic Chip
-    </h5>
     <div
-      className="MuiChip-root c1"
-      data-test-automation-class="selected-item"
-      data-test-automation-value="Basic Chip"
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      tabIndex={0}
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
     >
-      <span
-        className="MuiChip-label"
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
       >
         Basic Chip
-      </span>
-    </div>
-    <br />
-    <br />
-    <h5
-      className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
-      data-color="neutral.f06"
-      data-variant="headline1"
-    >
-      Delete Icon
-    </h5>
-    <div
-      className="MuiChip-root c1 MuiChip-deletable"
-      data-test-automation-class="selected-item"
-      data-test-automation-value="Basic Chip"
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        className="MuiChip-label"
-      >
-        Basic Chip
-      </span>
-      <button
-        aria-describedby={null}
-        aria-label="Remove"
-        className="MuiButtonBase-root c2 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
+      </h5>
+      <div
+        className="MuiChip-root c1"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic Chip"
         onKeyDown={[Function]}
         onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={-1}
-        title="Remove"
-        type="button"
+        tabIndex={0}
       >
         <span
-          className="c3 c4 delete_circle icon"
+          className="MuiChip-label"
         >
-          <svg
-            className="c5"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-            />
-          </svg>
-          
+          Basic Chip
         </span>
-      </button>
-    </div>
-    <br />
-    <br />
-    <h5
-      className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
-      data-color="neutral.f06"
-      data-variant="headline1"
-    >
-      Disabled
-    </h5>
-    <div
-      aria-disabled={true}
-      className="MuiChip-root c1 Mui-disabled RcChip-disabled MuiChip-deletable"
-      data-test-automation-class="selected-item"
-      data-test-automation-value="Basic Chip"
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      role="button"
-      tabIndex={-1}
-    >
-      <span
-        className="MuiChip-label"
+      </div>
+      <br />
+      <br />
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
       >
-        Basic Chip
-      </span>
-      <button
-        aria-describedby={null}
+        Delete Icon
+      </h5>
+      <div
+        className="MuiChip-root c1 MuiChip-deletable"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic default Chip"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Basic default Chip
+        </span>
+        <button
+          aria-describedby={null}
+          aria-label="Remove"
+          className="MuiButtonBase-root c2 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          title="Remove"
+          type="button"
+        >
+          <span
+            className="c3 c4 delete_circle icon"
+          >
+            <svg
+              className="c5"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+      </div>
+      <br />
+      <br />
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
+      >
+        Disabled
+      </h5>
+      <div
         aria-disabled={true}
-        aria-label={null}
-        className="MuiButtonBase-root c6 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root RcIconButton-disabled Mui-disabled"
-        disabled={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
+        className="MuiChip-root c1 Mui-disabled RcChip-disabled MuiChip-deletable"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic default Chip"
         onKeyDown={[Function]}
         onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
+        role="button"
         tabIndex={-1}
-        title={null}
-        type="button"
       >
         <span
-          className="c3 c4 delete_circle icon"
+          className="MuiChip-label"
         >
-          <svg
-            className="c5"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-            />
-          </svg>
-          
+          Basic default Chip
         </span>
-      </button>
-    </div>
-    <br />
-    <br />
-    <h5
-      className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
-      data-color="neutral.f06"
-      data-variant="headline1"
-    >
-      Error
-    </h5>
-    <div
-      className="MuiChip-root c7 MuiChip-deletable"
-      data-is-error={true}
-      data-test-automation-class="selected-item"
-      data-test-automation-value="Basic Chip"
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        className="MuiChip-label"
-      >
-        Basic Chip
-      </span>
-      <button
-        aria-describedby={null}
-        aria-label="Remove"
-        className="MuiButtonBase-root c8 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={-1}
-        title="Remove"
-        type="button"
-      >
-        <span
-          className="c3 c4 delete_circle icon"
+        <button
+          aria-describedby={null}
+          aria-disabled={true}
+          aria-label={null}
+          className="MuiButtonBase-root c6 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root RcIconButton-disabled Mui-disabled"
+          disabled={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          title={null}
+          type="button"
         >
-          <svg
-            className="c5"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            className="c3 c4 delete_circle icon"
           >
-            <path
-              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-            />
-          </svg>
-          
-        </span>
-      </button>
-    </div>
-    <br />
-    <br />
-    <h5
-      className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
-      data-color="neutral.f06"
-      data-variant="headline1"
-    >
-      Focused
-    </h5>
-    <div
-      className="MuiChip-root c1 RcChip-focused"
-      data-test-automation-class="selected-item"
-      data-test-automation-value="Basic Chip"
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      tabIndex={0}
-    >
-      <span
-        className="MuiChip-label"
+            <svg
+              className="c5"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+      </div>
+      <br />
+      <br />
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
       >
-        Basic Chip
-      </span>
-    </div>
-    <div
-      className="MuiChip-root c9 RcChip-focused"
-      data-test-automation-class="selected-item"
-      data-test-automation-value="Basic Chip"
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      tabIndex={0}
-    >
-      <span
-        className="MuiChip-label"
-      >
-        Basic Chip
-      </span>
-    </div>
-  </div>
-  <div
-    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
-  >
-    <h5
-      className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
-      data-color="neutral.f06"
-      data-variant="headline1"
-    >
-      Avatar
-    </h5>
-    <div
-      className="MuiChip-root c1"
-      data-test-automation-class="selected-item"
-      data-test-automation-value="Basic Chip"
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      tabIndex={0}
-    >
+        Error
+      </h5>
       <div
-        className="c10 MuiChip-avatar RcChip-avatar"
-        data-test-automation-class="avatar"
+        className="MuiChip-root c7 MuiChip-deletable"
+        data-is-error={true}
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic default Chip"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Basic default Chip
+        </span>
+        <button
+          aria-describedby={null}
+          aria-label="Remove"
+          className="MuiButtonBase-root c8 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          title="Remove"
+          type="button"
+        >
+          <span
+            className="c3 c4 delete_circle icon"
+          >
+            <svg
+              className="c5"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+      </div>
+      <br />
+      <br />
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
+      >
+        Focused
+      </h5>
+      <div
+        className="MuiChip-root c1 RcChip-focused"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic default Chip"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Basic default Chip
+        </span>
+      </div>
+      <div
+        className="MuiChip-root c9 RcChip-focused"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic default Chip"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Basic default Chip
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+    >
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
+      >
+        Avatar
+      </h5>
+      <div
+        className="MuiChip-root c1"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic default Chip"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        tabIndex={0}
       >
         <div
-          className="c11 RcAvatar-avatarContainer"
+          className="c10 MuiChip-avatar RcChip-avatar"
+          data-test-automation-class="avatar"
         >
-          <img
-            src="test-file-stub"
-          />
+          <div
+            className="c11 RcAvatar-avatarContainer"
+          >
+            <img
+              src="test-file-stub"
+            />
+          </div>
         </div>
+        <span
+          className="MuiChip-label"
+        >
+          Basic default Chip
+        </span>
       </div>
-      <span
-        className="MuiChip-label"
+      <br />
+      <br />
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
       >
-        Basic Chip
-      </span>
-    </div>
-    <br />
-    <br />
-    <h5
-      className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
-      data-color="neutral.f06"
-      data-variant="headline1"
-    >
-      Avatar & Delete Icon
-    </h5>
-    <div
-      className="MuiChip-root c1 MuiChip-deletable"
-      data-test-automation-class="selected-item"
-      data-test-automation-value="Basic Chip"
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      role="button"
-      tabIndex={0}
-    >
+        Avatar & Delete Icon
+      </h5>
       <div
-        className="c10 MuiChip-avatar RcChip-avatar"
-        data-test-automation-class="avatar"
-      >
-        <div
-          className="c11 RcAvatar-avatarContainer"
-        >
-          <img
-            src="test-file-stub"
-          />
-        </div>
-      </div>
-      <span
-        className="MuiChip-label"
-      >
-        Basic Chip
-      </span>
-      <button
-        aria-describedby={null}
-        aria-label="Remove"
-        className="MuiButtonBase-root c2 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
+        className="MuiChip-root c1 MuiChip-deletable"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic default Chip"
         onKeyDown={[Function]}
         onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={-1}
-        title="Remove"
-        type="button"
-      >
-        <span
-          className="c3 c4 delete_circle icon"
-        >
-          <svg
-            className="c5"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-            />
-          </svg>
-          
-        </span>
-      </button>
-    </div>
-  </div>
-  <div
-    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
-  >
-    <h5
-      className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
-      data-color="neutral.f06"
-      data-variant="headline1"
-    >
-      Truncate Content
-    </h5>
-    <div
-      className="MuiChip-root c1 MuiChip-deletable"
-      data-test-automation-class="selected-item"
-      data-test-automation-value="Basic Chip"
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      role="button"
-      style={
-        Object {
-          "maxWidth": 120,
-        }
-      }
-      tabIndex={0}
-      title="Basic Chip"
-    >
-      <div
-        className="c10 MuiChip-avatar RcChip-avatar"
-        data-test-automation-class="avatar"
+        role="button"
+        tabIndex={0}
       >
         <div
-          className="c11 RcAvatar-avatarContainer"
+          className="c10 MuiChip-avatar RcChip-avatar"
+          data-test-automation-class="avatar"
         >
-          <img
-            src="test-file-stub"
-          />
+          <div
+            className="c11 RcAvatar-avatarContainer"
+          >
+            <img
+              src="test-file-stub"
+            />
+          </div>
         </div>
+        <span
+          className="MuiChip-label"
+        >
+          Basic default Chip
+        </span>
+        <button
+          aria-describedby={null}
+          aria-label="Remove"
+          className="MuiButtonBase-root c2 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          title="Remove"
+          type="button"
+        >
+          <span
+            className="c3 c4 delete_circle icon"
+          >
+            <svg
+              className="c5"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
       </div>
-      <span
-        className="MuiChip-label"
+      <br />
+      <br />
+      <h5
+        className="MuiTypography-root c0 MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
       >
-        Basic Chip
-      </span>
-      <button
-        aria-describedby={null}
-        aria-label="Remove"
-        className="MuiButtonBase-root c2 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
+        Custom color
+      </h5>
+      <p
+        className="MuiTypography-root c12 MuiTypography-gutterBottom"
+        data-color="neutral.f04"
+        data-variant="caption1"
+      >
+        (default only show color when keyboard focus)
+      </p>
+      <div
+        className="MuiChip-root c13"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic Chip"
         onKeyDown={[Function]}
         onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={-1}
-        title="Remove"
-        type="button"
+        tabIndex={0}
       >
         <span
-          className="c3 c4 delete_circle icon"
-        >
-          <svg
-            className="c5"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-            />
-          </svg>
-          
-        </span>
-      </button>
-    </div>
-    <br />
-    <br />
-    <h5
-      className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
-      data-color="neutral.f06"
-      data-variant="headline1"
-    >
-      Truncate Content when overflow, resize to view result(with RcText)
-    </h5>
-    <div
-      className="MuiChip-root c1 MuiChip-deletable"
-      data-test-automation-class="selected-item"
-      data-test-automation-value={
-        <Styled(Component)
-          noWrap={true}
-          titleWhenOverflow={true}
+          className="MuiChip-label"
         >
           Basic Chip
-        </Styled(Component)>
-      }
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      role="button"
-      style={
-        Object {
-          "maxWidth": "30%",
-        }
-      }
-      tabIndex={0}
-    >
-      <div
-        className="c10 MuiChip-avatar RcChip-avatar"
-        data-test-automation-class="avatar"
-      >
-        <div
-          className="c11 RcAvatar-avatarContainer"
-        >
-          <img
-            src="test-file-stub"
-          />
-        </div>
+        </span>
       </div>
-      <span
-        className="MuiChip-label"
+      <br />
+      <br />
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+    >
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
       >
-        <p
-          className="MuiTypography-root c12 c13 MuiTypography-noWrap"
-          data-color="initial"
-          data-variant="body1"
-          title="Basic Chip"
-        >
-          Basic Chip
-        </p>
-      </span>
-      <button
-        aria-describedby={null}
-        aria-label="Remove"
-        className="MuiButtonBase-root c2 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
+        Truncate Content
+      </h5>
+      <div
+        className="MuiChip-root c1 MuiChip-deletable"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic default Chip"
         onKeyDown={[Function]}
         onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={-1}
-        title="Remove"
-        type="button"
+        role="button"
+        style={
+          Object {
+            "maxWidth": 120,
+          }
+        }
+        tabIndex={0}
+        title="Basic default Chip"
+      >
+        <div
+          className="c10 MuiChip-avatar RcChip-avatar"
+          data-test-automation-class="avatar"
+        >
+          <div
+            className="c11 RcAvatar-avatarContainer"
+          >
+            <img
+              src="test-file-stub"
+            />
+          </div>
+        </div>
+        <span
+          className="MuiChip-label"
+        >
+          Basic default Chip
+        </span>
+        <button
+          aria-describedby={null}
+          aria-label="Remove"
+          className="MuiButtonBase-root c2 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          title="Remove"
+          type="button"
+        >
+          <span
+            className="c3 c4 delete_circle icon"
+          >
+            <svg
+              className="c5"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+      </div>
+      <br />
+      <br />
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
+      >
+        Truncate Content when overflow, resize to view result(with RcText)
+      </h5>
+      <div
+        className="MuiChip-root c1 MuiChip-deletable"
+        data-test-automation-class="selected-item"
+        data-test-automation-value={
+          <Styled(Component)
+            noWrap={true}
+            titleWhenOverflow={true}
+          >
+            Basic default Chip
+          </Styled(Component)>
+        }
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        style={
+          Object {
+            "maxWidth": "30%",
+          }
+        }
+        tabIndex={0}
+      >
+        <div
+          className="c10 MuiChip-avatar RcChip-avatar"
+          data-test-automation-class="avatar"
+        >
+          <div
+            className="c11 RcAvatar-avatarContainer"
+          >
+            <img
+              src="test-file-stub"
+            />
+          </div>
+        </div>
+        <span
+          className="MuiChip-label"
+        >
+          <p
+            className="MuiTypography-root c14 c15 MuiTypography-noWrap"
+            data-color="initial"
+            data-variant="body1"
+            title="Basic default Chip"
+          >
+            Basic default Chip
+          </p>
+        </span>
+        <button
+          aria-describedby={null}
+          aria-label="Remove"
+          className="MuiButtonBase-root c2 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          title="Remove"
+          type="button"
+        >
+          <span
+            className="c3 c4 delete_circle icon"
+          >
+            <svg
+              className="c5"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+]
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Chip Chip Examples(outlined) 1`] = `
+Array [
+  .c0 {
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 40px;
+  color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<h4
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="display1"
+  >
+    outlined
+  </h4>,
+  .c5 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  color: #666666;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+}
+
+.c2,
+.c2 .c3 {
+  font-size: 20px;
+}
+
+.c2:active,
+.c2:active .c3 {
+  color: #666666;
+}
+
+.c2.focus-visible,
+.c2[data-focus-visible-added] {
+  background-color: transparent;
+}
+
+.c2.focus-visible:active,
+.c2[data-focus-visible-added]:active,
+.c2.focus-visible:active .c3,
+.c2[data-focus-visible-added]:active .c3 {
+  color: rgba(102,102,102,0.88);
+}
+
+.c2.focus-visible:after,
+.c2[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.c2.RcIconButton-persistBg {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c2.RcIconButton-disabled,
+.c2.RcIconButton-disabled .c3 {
+  color: #B9B9B9;
+}
+
+.c2.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c2.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c2.RcIconButton-contained {
+  color: #fff;
+  background-color: #666666;
+}
+
+.c2.RcIconButton-contained.focus-visible,
+.c2.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
+}
+
+.c2.RcIconButton-contained.focus-visible,
+.c2.RcIconButton-contained[data-focus-visible-added],
+.c2.RcIconButton-contained.focus-visible .c3,
+.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+  color: #fff;
+}
+
+.c2.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c2.RcIconButton-contained:active,
+.c2.RcIconButton-contained:active .c3 {
+  color: #fff;
+}
+
+.c2 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  color: #666666;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: default;
+}
+
+.c6,
+.c6 .c3 {
+  font-size: 20px;
+}
+
+.c6:active,
+.c6:active .c3 {
+  color: #666666;
+}
+
+.c6.focus-visible,
+.c6[data-focus-visible-added] {
+  background-color: transparent;
+}
+
+.c6.focus-visible:active,
+.c6[data-focus-visible-added]:active,
+.c6.focus-visible:active .c3,
+.c6[data-focus-visible-added]:active .c3 {
+  color: rgba(102,102,102,0.88);
+}
+
+.c6.focus-visible:after,
+.c6[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.c6.RcIconButton-persistBg {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c6.RcIconButton-disabled,
+.c6.RcIconButton-disabled .c3 {
+  color: #B9B9B9;
+}
+
+.c6.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c6.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c6.RcIconButton-contained {
+  color: #fff;
+  background-color: #666666;
+}
+
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.84);
+}
+
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added],
+.c6.RcIconButton-contained.focus-visible .c3,
+.c6.RcIconButton-contained[data-focus-visible-added] .c3 {
+  color: #fff;
+}
+
+.c6.RcIconButton-contained:active {
+  background-color: rgba(102,102,102,0.76);
+}
+
+.c6.RcIconButton-contained:active,
+.c6.RcIconButton-contained:active .c3 {
+  color: #fff;
+}
+
+.c6 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  color: #BE3933;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+}
+
+.c8,
+.c8 .c3 {
+  font-size: 20px;
+}
+
+.c8:active,
+.c8:active .c3 {
+  color: #BE3933;
+}
+
+.c8.focus-visible,
+.c8[data-focus-visible-added] {
+  background-color: transparent;
+}
+
+.c8.focus-visible:active,
+.c8[data-focus-visible-added]:active,
+.c8.focus-visible:active .c3,
+.c8[data-focus-visible-added]:active .c3 {
+  color: rgba(190,57,51,0.88);
+}
+
+.c8.focus-visible:after,
+.c8[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.c8.RcIconButton-persistBg {
+  background-color: rgba(190,57,51,0.12);
+}
+
+.c8.RcIconButton-disabled,
+.c8.RcIconButton-disabled .c3 {
+  color: #B9B9B9;
+}
+
+.c8.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c8.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c8.RcIconButton-contained {
+  color: #fff;
+  background-color: #BE3933;
+}
+
+.c8.RcIconButton-contained.focus-visible,
+.c8.RcIconButton-contained[data-focus-visible-added] {
+  background-color: rgba(190,57,51,0.84);
+}
+
+.c8.RcIconButton-contained.focus-visible,
+.c8.RcIconButton-contained[data-focus-visible-added],
+.c8.RcIconButton-contained.focus-visible .c3,
+.c8.RcIconButton-contained[data-focus-visible-added] .c3 {
+  color: #fff;
+}
+
+.c8.RcIconButton-contained:active {
+  background-color: rgba(190,57,51,0.76);
+}
+
+.c8.RcIconButton-contained:active,
+.c8.RcIconButton-contained:active .c3 {
+  color: #fff;
+}
+
+.c8 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c11 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  width: 24px;
+  height: 24px;
+  background-color: #F3F3F3;
+}
+
+.c11 > img,
+.c11 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c10 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c1 {
+  height: 28px;
+  box-sizing: border-box;
+  padding: 2px;
+  position: relative;
+  border-radius: 100vw;
+  border: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+  background-color: #FFFFFF;
+}
+
+.c1:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #E5E5E5;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c1.RcChip-focused,
+.c1.focus-visible,
+.c1[data-focus-visible-added] {
+  background-color: rgba(73,73,73,0.16);
+}
+
+.c1.RcChip-focused:after,
+.c1.focus-visible:after,
+.c1[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #066FAC;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c1:active {
+  background-color: rgba(73,73,73,0.24);
+}
+
+.c1.RcChip-disabled {
+  color: #B9B9B9;
+  opacity: 1;
+}
+
+.c1 .RcChip-avatar {
+  color: #FFFFFF;
+  margin-left: 0px;
+  margin-right: -4px;
+}
+
+.c1 .RcChip-avatar span {
+  width: auto;
+  height: auto;
+}
+
+.c7 {
+  height: 28px;
+  box-sizing: border-box;
+  padding: 2px;
+  position: relative;
+  border-radius: 100vw;
+  border: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+  background-color: #FFFFFF;
+}
+
+.c7:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #E5E5E5;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c7.RcChip-focused,
+.c7.focus-visible,
+.c7[data-focus-visible-added] {
+  background-color: rgba(73,73,73,0.16);
+}
+
+.c7.RcChip-focused:after,
+.c7.focus-visible:after,
+.c7[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #066FAC;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c7:active {
+  background-color: rgba(73,73,73,0.24);
+}
+
+.c7.RcChip-disabled {
+  color: #B9B9B9;
+  opacity: 1;
+}
+
+.c7:not(.RcChip-disabled) {
+  color: #BE3933;
+  background-color: #FFF7F5;
+}
+
+.c7:not(.RcChip-disabled):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #BE3933;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c7:not(.RcChip-disabled).RcChip-focused,
+.c7:not(.RcChip-disabled).focus-visible,
+.c7:not(.RcChip-disabled)[data-focus-visible-added] {
+  background-color: rgba(190,57,51,0.16);
+}
+
+.c7:not(.RcChip-disabled).RcChip-focused:after,
+.c7:not(.RcChip-disabled).focus-visible:after,
+.c7:not(.RcChip-disabled)[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #BE3933;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c7:not(.RcChip-disabled):active {
+  background-color: rgba(190,57,51,0.24);
+}
+
+.c7 .RcChip-avatar {
+  color: #FFFFFF;
+  margin-left: 0px;
+  margin-right: -4px;
+}
+
+.c7 .RcChip-avatar span {
+  width: auto;
+  height: auto;
+}
+
+.c9 {
+  height: 28px;
+  box-sizing: border-box;
+  padding: 2px;
+  position: relative;
+  border-radius: 100vw;
+  border: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #46BE59;
+  background-color: rgb(240,249,241);
+}
+
+.c9:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #46BE59;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c9.RcChip-focused,
+.c9.focus-visible,
+.c9[data-focus-visible-added] {
+  background-color: rgba(70,190,89,0.16);
+}
+
+.c9.RcChip-focused:after,
+.c9.focus-visible:after,
+.c9[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #46BE59;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c9:active {
+  background-color: rgba(70,190,89,0.24);
+}
+
+.c9.RcChip-disabled {
+  color: #B9B9B9;
+  opacity: 1;
+}
+
+.c9 .RcChip-avatar {
+  color: #FFFFFF;
+  margin-left: 0px;
+  margin-right: -4px;
+}
+
+.c9 .RcChip-avatar span {
+  width: auto;
+  height: auto;
+}
+
+.c12 {
+  height: 28px;
+  box-sizing: border-box;
+  padding: 2px;
+  position: relative;
+  border-radius: 100vw;
+  border: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #F6AD16;
+  background-color: rgb(254,248,236);
+}
+
+.c12:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #F6AD16;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c12.RcChip-focused,
+.c12.focus-visible,
+.c12[data-focus-visible-added] {
+  background-color: rgba(246,173,22,0.16);
+}
+
+.c12.RcChip-focused:after,
+.c12.focus-visible:after,
+.c12[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #F6AD16;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c12:active {
+  background-color: rgba(246,173,22,0.24);
+}
+
+.c12.RcChip-disabled {
+  color: #B9B9B9;
+  opacity: 1;
+}
+
+.c12 .RcChip-avatar {
+  color: #FFFFFF;
+  margin-left: 0px;
+  margin-right: -4px;
+}
+
+.c12 .RcChip-avatar span {
+  width: auto;
+  height: auto;
+}
+
+.c13 {
+  height: 28px;
+  box-sizing: border-box;
+  padding: 2px;
+  position: relative;
+  border-radius: 100vw;
+  border: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #066FAC;
+  background-color: #E6F2F8;
+}
+
+.c13:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #066FAC;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c13.RcChip-focused,
+.c13.focus-visible,
+.c13[data-focus-visible-added] {
+  background-color: rgba(6,111,172,0.16);
+}
+
+.c13.RcChip-focused:after,
+.c13.focus-visible:after,
+.c13[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #066FAC;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c13:active {
+  background-color: rgba(6,111,172,0.24);
+}
+
+.c13.RcChip-disabled {
+  color: #B9B9B9;
+  opacity: 1;
+}
+
+.c13 .RcChip-avatar {
+  color: #FFFFFF;
+  margin-left: 0px;
+  margin-right: -4px;
+}
+
+.c13 .RcChip-avatar span {
+  width: auto;
+  height: auto;
+}
+
+.c15 {
+  height: 28px;
+  box-sizing: border-box;
+  padding: 2px;
+  position: relative;
+  border-radius: 100vw;
+  border: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #066FAC;
+  background-color: rgb(235,243,248);
+}
+
+.c15:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #066FAC;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c15.RcChip-focused,
+.c15.focus-visible,
+.c15[data-focus-visible-added] {
+  background-color: rgba(6,111,172,0.16);
+}
+
+.c15.RcChip-focused:after,
+.c15.focus-visible:after,
+.c15[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #066FAC;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c15:active {
+  background-color: rgba(6,111,172,0.24);
+}
+
+.c15.RcChip-disabled {
+  color: #B9B9B9;
+  opacity: 1;
+}
+
+.c15 .RcChip-avatar {
+  color: #FFFFFF;
+  margin-left: 0px;
+  margin-right: -4px;
+}
+
+.c15 .RcChip-avatar span {
+  width: auto;
+  height: auto;
+}
+
+.c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+.c14 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c16 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c17.highlight-term {
+  color: #121212 !important;
+  background-color: #FFDFB1 !important;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2:hover {
+    background-color: transparent;
+  }
+
+  .c2:hover,
+  .c2:hover .c3 {
+    color: rgba(102,102,102,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcIconButton-contained:hover {
+    background-color: rgba(102,102,102,0.92);
+  }
+
+  .c2.RcIconButton-contained:hover,
+  .c2.RcIconButton-contained:hover .c3 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c6:hover {
+    background-color: transparent;
+  }
+
+  .c6:hover,
+  .c6:hover .c3 {
+    color: rgba(102,102,102,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c6.RcIconButton-contained:hover {
+    background-color: rgba(102,102,102,0.92);
+  }
+
+  .c6.RcIconButton-contained:hover,
+  .c6.RcIconButton-contained:hover .c3 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c8:hover {
+    background-color: transparent;
+  }
+
+  .c8:hover,
+  .c8:hover .c3 {
+    color: rgba(190,57,51,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c8.RcIconButton-contained:hover {
+    background-color: rgba(190,57,51,0.92);
+  }
+
+  .c8.RcIconButton-contained:hover,
+  .c8.RcIconButton-contained:hover .c3 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1:hover {
+    background-color: rgba(73,73,73,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7:hover {
+    background-color: rgba(73,73,73,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7:not(.RcChip-disabled):hover {
+    background-color: rgba(190,57,51,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c9:hover {
+    background-color: rgba(70,190,89,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c12:hover {
+    background-color: rgba(246,173,22,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c13:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c15:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<div
+    className="MuiGrid-root MuiGrid-container"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+    >
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
+      >
+        Basic Chip
+      </h5>
+      <div
+        className="MuiChip-root c1 MuiChip-outlined"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic Chip"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        tabIndex={0}
       >
         <span
-          className="c3 c4 delete_circle icon"
+          className="MuiChip-label"
         >
-          <svg
-            className="c5"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-            />
-          </svg>
-          
+          Basic Chip
         </span>
-      </button>
+      </div>
+      <br />
+      <br />
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
+      >
+        Delete Icon
+      </h5>
+      <div
+        className="MuiChip-root c1 MuiChip-outlined MuiChip-deletable"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic outlined Chip"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Basic outlined Chip
+        </span>
+        <button
+          aria-describedby={null}
+          aria-label="Remove"
+          className="MuiButtonBase-root c2 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          title="Remove"
+          type="button"
+        >
+          <span
+            className="c3 c4 delete_circle icon"
+          >
+            <svg
+              className="c5"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+      </div>
+      <br />
+      <br />
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
+      >
+        Disabled
+      </h5>
+      <div
+        aria-disabled={true}
+        className="MuiChip-root c1 MuiChip-outlined Mui-disabled RcChip-disabled MuiChip-deletable"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic outlined Chip"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={-1}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Basic outlined Chip
+        </span>
+        <button
+          aria-describedby={null}
+          aria-disabled={true}
+          aria-label={null}
+          className="MuiButtonBase-root c6 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root RcIconButton-disabled Mui-disabled"
+          disabled={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          title={null}
+          type="button"
+        >
+          <span
+            className="c3 c4 delete_circle icon"
+          >
+            <svg
+              className="c5"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+      </div>
+      <br />
+      <br />
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
+      >
+        Error
+      </h5>
+      <div
+        className="MuiChip-root c7 MuiChip-outlined MuiChip-deletable"
+        data-is-error={true}
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic outlined Chip"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Basic outlined Chip
+        </span>
+        <button
+          aria-describedby={null}
+          aria-label="Remove"
+          className="MuiButtonBase-root c8 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          title="Remove"
+          type="button"
+        >
+          <span
+            className="c3 c4 delete_circle icon"
+          >
+            <svg
+              className="c5"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+      </div>
+      <br />
+      <br />
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
+      >
+        Focused
+      </h5>
+      <div
+        className="MuiChip-root c1 RcChip-focused MuiChip-outlined"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic outlined Chip"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Basic outlined Chip
+        </span>
+      </div>
+      <div
+        className="MuiChip-root c9 RcChip-focused MuiChip-outlined"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic outlined Chip"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Basic outlined Chip
+        </span>
+      </div>
     </div>
-  </div>
-</div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+    >
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
+      >
+        Avatar
+      </h5>
+      <div
+        className="MuiChip-root c1 MuiChip-outlined"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic outlined Chip"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="c10 MuiChip-avatar RcChip-avatar"
+          data-test-automation-class="avatar"
+        >
+          <div
+            className="c11 RcAvatar-avatarContainer"
+          >
+            <img
+              src="test-file-stub"
+            />
+          </div>
+        </div>
+        <span
+          className="MuiChip-label"
+        >
+          Basic outlined Chip
+        </span>
+      </div>
+      <br />
+      <br />
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
+      >
+        Avatar & Delete Icon
+      </h5>
+      <div
+        className="MuiChip-root c1 MuiChip-outlined MuiChip-deletable"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic outlined Chip"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <div
+          className="c10 MuiChip-avatar RcChip-avatar"
+          data-test-automation-class="avatar"
+        >
+          <div
+            className="c11 RcAvatar-avatarContainer"
+          >
+            <img
+              src="test-file-stub"
+            />
+          </div>
+        </div>
+        <span
+          className="MuiChip-label"
+        >
+          Basic outlined Chip
+        </span>
+        <button
+          aria-describedby={null}
+          aria-label="Remove"
+          className="MuiButtonBase-root c2 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          title="Remove"
+          type="button"
+        >
+          <span
+            className="c3 c4 delete_circle icon"
+          >
+            <svg
+              className="c5"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+      </div>
+      <br />
+      <br />
+      <h5
+        className="MuiTypography-root c0 MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
+      >
+        Custom color
+      </h5>
+      <div
+        className="MuiChip-root c12 MuiChip-outlined"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic Chip"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Basic Chip
+        </span>
+      </div>
+      <br />
+      <br />
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
+      >
+        Custom color
+      </h5>
+      <div
+        className="MuiChip-root c13 MuiChip-outlined"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Custom background color"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Custom background color
+        </span>
+      </div>
+      <br />
+      <br />
+      <p
+        className="MuiTypography-root c14 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f04"
+        data-variant="caption1"
+      >
+        when only set color, that will use color to calculate default background color
+        <br />
+        lighten: lighten 0.92 main color
+        <br />
+        darken: darken 0.72 main color
+      </p>
+      <div
+        className="MuiChip-root c15 MuiChip-outlined"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Only color"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        tabIndex={0}
+      >
+        <span
+          className="MuiChip-label"
+        >
+          Only color
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+    >
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
+      >
+        Truncate Content
+      </h5>
+      <div
+        className="MuiChip-root c1 MuiChip-outlined MuiChip-deletable"
+        data-test-automation-class="selected-item"
+        data-test-automation-value="Basic outlined Chip"
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        style={
+          Object {
+            "maxWidth": 120,
+          }
+        }
+        tabIndex={0}
+        title="Basic outlined Chip"
+      >
+        <div
+          className="c10 MuiChip-avatar RcChip-avatar"
+          data-test-automation-class="avatar"
+        >
+          <div
+            className="c11 RcAvatar-avatarContainer"
+          >
+            <img
+              src="test-file-stub"
+            />
+          </div>
+        </div>
+        <span
+          className="MuiChip-label"
+        >
+          Basic outlined Chip
+        </span>
+        <button
+          aria-describedby={null}
+          aria-label="Remove"
+          className="MuiButtonBase-root c2 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          title="Remove"
+          type="button"
+        >
+          <span
+            className="c3 c4 delete_circle icon"
+          >
+            <svg
+              className="c5"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+      </div>
+      <br />
+      <br />
+      <h5
+        className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+        data-color="neutral.f06"
+        data-variant="headline1"
+      >
+        Truncate Content when overflow, resize to view result(with RcText)
+      </h5>
+      <div
+        className="MuiChip-root c1 MuiChip-outlined MuiChip-deletable"
+        data-test-automation-class="selected-item"
+        data-test-automation-value={
+          <Styled(Component)
+            noWrap={true}
+            titleWhenOverflow={true}
+          >
+            Basic outlined Chip
+          </Styled(Component)>
+        }
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        style={
+          Object {
+            "maxWidth": "30%",
+          }
+        }
+        tabIndex={0}
+      >
+        <div
+          className="c10 MuiChip-avatar RcChip-avatar"
+          data-test-automation-class="avatar"
+        >
+          <div
+            className="c11 RcAvatar-avatarContainer"
+          >
+            <img
+              src="test-file-stub"
+            />
+          </div>
+        </div>
+        <span
+          className="MuiChip-label"
+        >
+          <p
+            className="MuiTypography-root c16 c17 MuiTypography-noWrap"
+            data-color="initial"
+            data-variant="body1"
+            title="Basic outlined Chip"
+          >
+            Basic outlined Chip
+          </p>
+        </span>
+        <button
+          aria-describedby={null}
+          aria-label="Remove"
+          className="MuiButtonBase-root c2 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          title="Remove"
+          type="button"
+        >
+          <span
+            className="c3 c4 delete_circle icon"
+          >
+            <svg
+              className="c5"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+]
 `;
