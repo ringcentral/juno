@@ -100,4 +100,4 @@ RcMenu.displayName = 'RcMenu';
 
 export { RcMenu, RcMenuContext };
 
-export type { RcMenuContextType, RcMenuProps };
+export type { RcMenuContextType, RcMenuProps, RcMenuOnCloseReasonsType };
