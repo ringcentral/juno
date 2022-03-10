@@ -89,7 +89,7 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
 
   const { onGroupInfoChange, ...MoreButtonPropsRest } = MoreButtonProps;
 
-  const prevChildren = usePrevious(() => childrenProp);
+  const prevChildrenProp = usePrevious(() => childrenProp);
 
   const isVertical = orientation === 'vertical';
   const oriStr = isVertical ? 'height' : 'width';
@@ -139,84 +139,77 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
 
   const tabsSize = tabsSizeRef.current;
 
-  // init all children elm
-  if (tabRefsMapRef.current === undefined) {
-    const getRefsMapAndSetDefaultTabChildren = () => {
-      const tabRefs: TabRefsMapType = new Map();
-      const tabsTabDefaultChild: React.ReactElement<RcTabProps>[] = [];
+  // initial tabRefsMapRef and tabsTabChildRef
+  if (
+    tabRefsMapRef.current === undefined ||
+    prevChildrenProp !== childrenProp
+  ) {
+    const tabRefs: TabRefsMapType = new Map();
+    const tabsTabDefaultChild: React.ReactElement<RcTabProps>[] = [];
 
-      React.Children.forEach(
-        childrenProp,
-        (child: React.ReactElement<RcTabProps>, index) => {
-          const { ref, value } = child.props;
-          const innerRef = createRef<HTMLDivElement>();
-          const tabRef = ref ? useForkRef(innerRef, ref) : innerRef;
+    React.Children.forEach(
+      childrenProp,
+      (child: React.ReactElement<RcTabProps>, index) => {
+        const { ref, value } = child.props;
+        const innerRef = createRef<HTMLDivElement>();
+        const tabRef = ref ? useForkRef(innerRef, ref) : innerRef;
 
-          const childrenValue = value || index;
+        const childrenValue = value || index;
 
-          const children = React.cloneElement(child, {
-            ref: tabRef,
-            value: childrenValue,
-          });
+        const children = React.cloneElement(child, {
+          ref: tabRef,
+          value: childrenValue,
+        });
 
-          const keyString = typeof child.key === 'string' ? child.key : '';
-          tabRefs.set(getKey(keyString, index), {
-            ref: tabRef as React.RefObject<HTMLDivElement>,
-            size: null,
-            index,
-            value: childrenValue,
-          });
+        const keyString = typeof child.key === 'string' ? child.key : '';
+        tabRefs.set(getKey(keyString, index), {
+          ref: tabRef as React.RefObject<HTMLDivElement>,
+          size: null,
+          index,
+          value: childrenValue,
+        });
 
-          tabsTabDefaultChild.push(children);
-        },
-      );
-
-      return {
-        tabRefs,
-        tabsTabDefaultChild,
-      };
-    };
-
-    const { tabRefs, tabsTabDefaultChild } =
-      getRefsMapAndSetDefaultTabChildren();
+        tabsTabDefaultChild.push(children);
+      },
+    );
 
     tabRefsMapRef.current = tabRefs;
     tabsTabChildRef.current = tabsTabDefaultChild;
   }
 
-  // get all size when first render
+  // get real render size when render
   useEffect(() => {
-    const tabRefsMap = tabRefsMapRef.current;
+    if (childrenProp !== prevChildrenProp) {
+      const tabRefsMap = tabRefsMapRef.current;
 
-    if (tabRefsMap?.size !== undefined) {
-      const allTabsSize = { ...DEFAULT_SIZE };
+      if (tabRefsMap && tabRefsMap.size !== 0) {
+        const allTabsSize = { ...DEFAULT_SIZE };
 
-      tabRefsMap.forEach((value, key) => {
-        const { width, height } = getDomBoundingClientSize(value.ref.current);
-        allTabsSize.width += width;
-        allTabsSize.height += height;
+        tabRefsMap.forEach((value, key) => {
+          const { width, height } = getDomBoundingClientSize(value.ref.current);
+          allTabsSize.width += width;
+          allTabsSize.height += height;
 
-        const newRef: TabRefType = {
-          ref: value.ref,
-          size: { width, height },
-          index: value.index,
-          value: value.value,
-        };
+          const newRef: TabRefType = {
+            ref: value.ref,
+            size: { width, height },
+            index: value.index,
+            value: value.value,
+          };
 
-        tabRefsMap.set(key, newRef);
-      });
+          tabRefsMap.set(key, newRef);
+        });
 
-      allTabsSizeRef.current = allTabsSize;
+        allTabsSizeRef.current = allTabsSize;
+      }
+
+      const moreElm = moreTabRef?.current;
+      if (moreElm) {
+        const size = getDomBoundingClientSize(moreElm);
+        moreTabSizeRef.current = size;
+      }
     }
-
-    const moreElm = moreTabRef?.current;
-    if (moreElm) {
-      const size = getDomBoundingClientSize(moreElm);
-      moreTabSizeRef.current = size;
-    }
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [childrenProp, prevChildrenProp]);
 
   useEffect(() => {
     let currSelectTabItem: [string, TabRefType] | undefined;
@@ -325,12 +318,12 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
     };
 
     if (tabsSize.width !== 0 && tabsSize.height !== 0) {
-      // computed: 1.resize 2. valueProp 3.moreMenuClick
+      // computed: 1.resize 2. valueProp 3.moreMenuClick 4.children change
       // not computed: visible tab change
       if (
         groupingRef.current?.tabs.includes(currSelectTabItem?.[0] || '') &&
         !hasResizeRef.current &&
-        prevChildren === childrenProp
+        prevChildrenProp === childrenProp
       ) {
         return;
       }
@@ -340,10 +333,10 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
     }
   }, [
     childrenProp,
+    prevChildrenProp,
     isVertical,
     onGroupInfoChange,
     oriStr,
-    prevChildren,
     tabsSize,
     valueProp,
   ]);

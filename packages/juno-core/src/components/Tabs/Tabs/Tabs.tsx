@@ -68,10 +68,14 @@ const _RcTabs = forwardRef<any, RcTabsProps>((inProps: RcTabsProps, ref) => {
     [classesProp],
   );
 
-  const children = React.Children.map(
-    childrenProp,
-    (child: React.ReactElement<RcTabProps>) =>
-      React.cloneElement(child, { size }),
+  const children = useMemo(
+    () =>
+      React.Children.map(
+        childrenProp,
+        (child: React.ReactElement<RcTabProps>) =>
+          React.cloneElement(child, { size }),
+      ),
+    [childrenProp],
   );
 
   if (isMore) {

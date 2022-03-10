@@ -1,8 +1,14 @@
-import React, { ComponentProps, FunctionComponent, useState } from 'react';
+import React, {
+  ComponentProps,
+  FunctionComponent,
+  useMemo,
+  useState,
+} from 'react';
 
 import {
   RcBadge,
   RcButton,
+  RcBox,
   RcIcon,
   RcPaper,
   RcTab,
@@ -114,18 +120,35 @@ export const TabsChangeExample: Story<TabsProps> = ({ ...args }) => {
     setValue(value);
   };
 
-  const TabChildren = tabsData.map((tab) => {
-    const { label, value, disabled, ...rest } = tab;
-    return (
-      <RcTab
-        key={label}
-        label={label}
-        value={value}
-        disabled={disabled}
-        {...rest}
-      />
-    );
-  });
+  const [tabs, setTabs] = React.useState(tabsData);
+
+  const TabChildren = useMemo(
+    () =>
+      tabs.map((tab) => {
+        const { label, value, disabled, ...rest } = tab;
+        return (
+          <RcTab
+            key={label}
+            label={label}
+            value={value}
+            disabled={disabled}
+            {...rest}
+          />
+        );
+      }),
+    [tabs],
+  );
+
+  const handleAddTab = () => {
+    setTabs([
+      ...tabs,
+      {
+        label: `Tab ${tabs.length}`,
+        value: `tab-${tabs.length}`,
+        'data-test-automation-id': `tab-test-${tabs.length}`,
+      },
+    ]);
+  };
 
   return (
     <>
@@ -197,6 +220,9 @@ export const TabsChangeExample: Story<TabsProps> = ({ ...args }) => {
         </RcTabs>
       </RcPaper>
       <br />
+      <RcBox>
+        <RcButton onClick={handleAddTab}>Add Tab</RcButton>
+      </RcBox>
     </>
   );
 };
@@ -392,7 +418,7 @@ export const TabsWithDynamicChildren: Story<TabsProps> = ({ ...args }) => {
       <br />
       <RcButton
         onClick={() => {
-          setIndex(index + 1);
+          setIndex(index + 10);
         }}
       >
         click
