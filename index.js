@@ -70868,7 +70868,7 @@ var _MoreMenuTabs = forwardRef639((props, ref2) => {
     ...rest
   } = props;
   const { onGroupInfoChange, ...MoreButtonPropsRest } = MoreButtonProps;
-  const prevChildrenProp = usePrevious(() => childrenProp);
+  const prevChildren = usePrevious(() => childrenProp);
   const isVertical = orientation === "vertical";
   const oriStr = isVertical ? "height" : "width";
   const innerRef = useRef98(null);
@@ -70898,36 +70898,40 @@ var _MoreMenuTabs = forwardRef639((props, ref2) => {
     throttleTabsSizeChange(obj);
   }, { mode: "none" });
   const tabsSize = tabsSizeRef.current;
-  if (tabRefsMapRef.current === void 0 || prevChildrenProp !== childrenProp) {
-    const tabRefs = /* @__PURE__ */ new Map();
-    const tabsTabDefaultChild = [];
-    React740.Children.forEach(childrenProp, (child, index4) => {
-      const { ref: ref3, value } = child.props;
-      const innerRef2 = createRef2();
-      const tabRef = ref3 ? useForkRef2(innerRef2, ref3) : innerRef2;
-      const childrenValue = value || index4;
-      const children2 = React740.cloneElement(child, {
-        ref: tabRef,
-        value: childrenValue
+  if (tabRefsMapRef.current === void 0) {
+    const getRefsMapAndSetDefaultTabChildren = () => {
+      const tabRefs2 = /* @__PURE__ */ new Map();
+      const tabsTabDefaultChild2 = [];
+      React740.Children.forEach(childrenProp, (child, index4) => {
+        const { ref: ref3, value } = child.props;
+        const innerRef2 = createRef2();
+        const tabRef = ref3 ? useForkRef2(innerRef2, ref3) : innerRef2;
+        const childrenValue = value || index4;
+        const children2 = React740.cloneElement(child, {
+          ref: tabRef,
+          value: childrenValue
+        });
+        const keyString = typeof child.key === "string" ? child.key : "";
+        tabRefs2.set(getKey(keyString, index4), {
+          ref: tabRef,
+          size: null,
+          index: index4,
+          value: childrenValue
+        });
+        tabsTabDefaultChild2.push(children2);
       });
-      const keyString = typeof child.key === "string" ? child.key : "";
-      tabRefs.set(getKey(keyString, index4), {
-        ref: tabRef,
-        size: null,
-        index: index4,
-        value: childrenValue
-      });
-      tabsTabDefaultChild.push(children2);
-    });
+      return {
+        tabRefs: tabRefs2,
+        tabsTabDefaultChild: tabsTabDefaultChild2
+      };
+    };
+    const { tabRefs, tabsTabDefaultChild } = getRefsMapAndSetDefaultTabChildren();
     tabRefsMapRef.current = tabRefs;
     tabsTabChildRef.current = tabsTabDefaultChild;
   }
   useEffect62(() => {
-    if (childrenProp === prevChildrenProp) {
-      return;
-    }
     const tabRefsMap = tabRefsMapRef.current;
-    if (tabRefsMap && tabRefsMap.size !== 0) {
+    if (tabRefsMap?.size !== void 0) {
       const allTabsSize = { ...DEFAULT_SIZE };
       tabRefsMap.forEach((value, key) => {
         const { width: width2, height: height2 } = getDomBoundingClientSize(value.ref.current);
@@ -70948,7 +70952,7 @@ var _MoreMenuTabs = forwardRef639((props, ref2) => {
       const size = getDomBoundingClientSize(moreElm);
       moreTabSizeRef.current = size;
     }
-  }, [childrenProp, prevChildrenProp]);
+  }, []);
   useEffect62(() => {
     let currSelectTabItem;
     const tabRefsMap = tabRefsMapRef.current;
@@ -71013,7 +71017,7 @@ var _MoreMenuTabs = forwardRef639((props, ref2) => {
       }
     };
     if (tabsSize.width !== 0 && tabsSize.height !== 0) {
-      if (groupingRef.current?.tabs.includes(currSelectTabItem?.[0] || "") && !hasResizeRef.current && prevChildrenProp === childrenProp) {
+      if (groupingRef.current?.tabs.includes(currSelectTabItem?.[0] || "") && !hasResizeRef.current && prevChildren === childrenProp) {
         return;
       }
       computeTabChild(tabsSize);
@@ -71021,10 +71025,10 @@ var _MoreMenuTabs = forwardRef639((props, ref2) => {
     }
   }, [
     childrenProp,
-    prevChildrenProp,
     isVertical,
     onGroupInfoChange,
     oriStr,
+    prevChildren,
     tabsSize,
     valueProp
   ]);
@@ -71090,7 +71094,7 @@ var _RcTabs = forwardRef640((inProps, ref2) => {
   } = props;
   const isMore = variantProp === "moreMenu";
   const classes = useMemo103(() => combineProps(RcTabsClasses, classesProp), [classesProp]);
-  const children2 = useMemo103(() => React741.Children.map(childrenProp, (child) => React741.cloneElement(child, { size })), [childrenProp, size]);
+  const children2 = React741.Children.map(childrenProp, (child) => React741.cloneElement(child, { size }));
   if (isMore) {
     return /* @__PURE__ */ React741.createElement(MoreMenuTabs, {
       ...rest,
