@@ -1,4 +1,13 @@
 
+### [2.1.1](https://github.com/ringcentral/juno/compare/juno-core-v2.1.0...juno-core-v2.1.1) (2022-03-10)
+
+
+### Bug Fixes
+
+* **RcTab:** fix dynamic children ([48f9c77](https://github.com/ringcentral/juno/commit/48f9c77433ea8333ceb9e9629a9ae9a8d1dc66f1))
+* **RcTab:** fix dynamic children ([d1d085e](https://github.com/ringcentral/juno/commit/d1d085e7c5075f4566eb373bf9a23b7a508e32bf))
+* **RcTab:** update snapshot ([91093c7](https://github.com/ringcentral/juno/commit/91093c79494685e3e0992c10d485fbcc6f4785de))
+
 ## [2.1.0](https://github.com/ringcentral/juno/compare/juno-core-v2.0.3...juno-core-v2.1.0) (2022-03-09)
 
 
