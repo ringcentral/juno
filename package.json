@@ -46,11 +46,6 @@
     "deploy": "gh-pages -d public",
     "publish-npm": "concurrently \"yarn workspace @ringcentral/juno run publish-npm\" \"yarn workspace @ringcentral/juno-icon run publish-npm\""
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "yarn prebuild:storybook"
-    }
-  },
   "devDependencies": {
     "@babel/node": "7.16.0",
     "@percy/cli": "1.0.0-beta.75",
