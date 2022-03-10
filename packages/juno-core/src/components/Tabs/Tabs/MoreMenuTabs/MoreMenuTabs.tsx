@@ -179,35 +179,37 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
 
   // get real render size when render
   useEffect(() => {
-    if (childrenProp !== prevChildrenProp) {
-      const tabRefsMap = tabRefsMapRef.current;
+    if (childrenProp === prevChildrenProp) {
+      return;
+    }
 
-      if (tabRefsMap && tabRefsMap.size !== 0) {
-        const allTabsSize = { ...DEFAULT_SIZE };
+    const tabRefsMap = tabRefsMapRef.current;
 
-        tabRefsMap.forEach((value, key) => {
-          const { width, height } = getDomBoundingClientSize(value.ref.current);
-          allTabsSize.width += width;
-          allTabsSize.height += height;
+    if (tabRefsMap && tabRefsMap.size !== 0) {
+      const allTabsSize = { ...DEFAULT_SIZE };
 
-          const newRef: TabRefType = {
-            ref: value.ref,
-            size: { width, height },
-            index: value.index,
-            value: value.value,
-          };
+      tabRefsMap.forEach((value, key) => {
+        const { width, height } = getDomBoundingClientSize(value.ref.current);
+        allTabsSize.width += width;
+        allTabsSize.height += height;
 
-          tabRefsMap.set(key, newRef);
-        });
+        const newRef: TabRefType = {
+          ref: value.ref,
+          size: { width, height },
+          index: value.index,
+          value: value.value,
+        };
 
-        allTabsSizeRef.current = allTabsSize;
-      }
+        tabRefsMap.set(key, newRef);
+      });
 
-      const moreElm = moreTabRef?.current;
-      if (moreElm) {
-        const size = getDomBoundingClientSize(moreElm);
-        moreTabSizeRef.current = size;
-      }
+      allTabsSizeRef.current = allTabsSize;
+    }
+
+    const moreElm = moreTabRef?.current;
+    if (moreElm) {
+      const size = getDomBoundingClientSize(moreElm);
+      moreTabSizeRef.current = size;
     }
   }, [childrenProp, prevChildrenProp]);
 

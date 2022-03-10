@@ -75,7 +75,7 @@ const _RcTabs = forwardRef<any, RcTabsProps>((inProps: RcTabsProps, ref) => {
         (child: React.ReactElement<RcTabProps>) =>
           React.cloneElement(child, { size }),
       ),
-    [childrenProp],
+    [childrenProp, size],
   );
 
   if (isMore) {
