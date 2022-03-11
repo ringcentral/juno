@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots 🚀 Cleanup Components/Badge Badge 1`] = `
-.c0 .RcBadge-badge {
+Array [
+  .c0 .RcBadge-badge {
   color: #FFFFFF;
   background-color: #FF8800;
   height: 18px;
@@ -84,61 +85,282 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge 1`] = `
   }
 }
 
-<span
-  className="MuiBadge-root c0"
->
-  <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1"
-    disabled={false}
-    onBlur={[Function]}
-    onClick={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={0}
-    type="button"
-  >
-    <span
-      className="MuiButton-label"
-    >
-      +1
-    </span>
-  </button>
-  <span
-    className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightRectangular"
-  >
-    0
-  </span>
-</span>
-`;
+@media (hover:hover) and (pointer:fine) {
 
-exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
-.c8 {
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  pointer-events: none;
 }
 
-.c7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-size: 24px;
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<span
+    className="MuiBadge-root c0"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        +1
+      </span>
+    </button>
+    <span
+      className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightRectangular"
+    >
+      0
+    </span>
+  </span>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c0 .RcBadge-badge {
+  margin: var(--badge-round-margin);
+  color: #FFFFFF;
+  background-color: #FF8800;
+  height: 18px;
+  min-width: 18px;
+  padding: 0;
+}
+
+.c1 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  border-radius: 100vw;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c1 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c1 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c1.RcButton-text {
   color: #066FAC;
 }
 
-.c4 {
+.c1.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
+.c1.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c1.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c1.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c1.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c1.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<span
+    className="MuiBadge-root c0"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        +1
+      </span>
+    </button>
+    <span
+      className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightRectangle"
+    >
+      0
+    </span>
+  </span>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c2 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -173,13 +395,136 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
   background-color: #F3F3F3;
 }
 
-.c4 > img,
-.c4 > canvas {
+.c2 > img,
+.c2 > canvas {
   width: 100%;
   height: 100%;
 }
 
-.c3 {
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c0 .RcBadge-badge {
+  color: #FFFFFF;
+  background-color: #FF8800;
+  height: 18px;
+  min-width: 18px;
+  padding: 0;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<span
+    className="MuiBadge-root c0"
+  >
+    <div
+      className="c1 "
+      data-test-automation-class="avatar"
+    >
+      <div
+        className="c2 RcAvatar-avatarContainer"
+      >
+        CK
+      </div>
+    </div>
+    <span
+      className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightCircular"
+    >
+      0
+    </span>
+  </span>,
+]
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
+.c10 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+  color: #066FAC;
+}
+
+.c6 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #F3F3F3;
+}
+
+.c6 > img,
+.c6 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c5 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -196,7 +541,16 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
   padding: 0;
 }
 
-.c5 .RcBadge-badge {
+.c3 .RcBadge-badge {
+  margin: var(--badge-round-margin);
+  color: #FFFFFF;
+  background-color: #FF8800;
+  height: 18px;
+  min-width: 18px;
+  padding: 0;
+}
+
+.c7 .RcBadge-badge {
   color: #FFFFFF;
   background-color: #FF8800;
   height: 18px;
@@ -207,13 +561,13 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
   transform: unset;
 }
 
-.c5 .RcBadge-badge.RcBadge-invisible {
+.c7 .RcBadge-badge.RcBadge-invisible {
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
 }
 
-.c6 .RcBadge-badge {
+.c8 .RcBadge-badge {
   color: #FFFFFF;
   background-color: #FF8800;
   height: 18px;
@@ -225,13 +579,13 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
   transform: unset;
 }
 
-.c6 .RcBadge-badge.RcBadge-invisible {
+.c8 .RcBadge-badge.RcBadge-invisible {
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
 }
 
-.c12 .RcBadge-badge {
+.c14 .RcBadge-badge {
   color: #FFFFFF;
   background-color: #FF8800;
   height: 18px;
@@ -295,6 +649,64 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
   border: 1px solid transparent;
 }
 
+.c4 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  border-radius: 100vw;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c4 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c4 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c4.RcButton-text {
+  color: #066FAC;
+}
+
+.c4.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
+.c4.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c4.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c4.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c4.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c4.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
 .c0 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -303,7 +715,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
   color: #121212;
 }
 
-.c9 {
+.c11 {
   font-size: 0.9375rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -311,11 +723,11 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
   color: #121212;
 }
 
-.c10 {
+.c12 {
   font-family: Lato,Helvetica,Arial,sans-serif;
 }
 
-.c11.highlight-term {
+.c13.highlight-term {
   color: #121212 !important;
   background-color: #FFDFB1 !important;
 }
@@ -334,6 +746,24 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
 
 @media (hover:hover) and (pointer:fine) {
   .c2.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-outlined:hover {
     background-color: rgba(6,111,172,0.08);
   }
 }
@@ -497,6 +927,162 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
         1
       </span>
     </span>
+    <br />
+    <br />
+    <br />
+    <h5
+      className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+      data-color="neutral.f06"
+      data-variant="headline1"
+    >
+      overlap="round"
+    </h5>
+    <span
+      className="MuiBadge-root c3"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c4"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          right bottom
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <span
+        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightRectangle"
+      >
+        1
+      </span>
+    </span>
+    <br />
+    <br />
+    <span
+      className="MuiBadge-root c3"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c4"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          right bottom
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <span
+        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginBottomRightRectangle"
+      >
+        1
+      </span>
+    </span>
+    <br />
+    <br />
+    <span
+      className="MuiBadge-root c3"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c4"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          left top
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <span
+        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopLeftRectangle"
+      >
+        1
+      </span>
+    </span>
+    <br />
+    <br />
+    <span
+      className="MuiBadge-root c3"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c4"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          left bottom
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <span
+        className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginBottomLeftRectangle"
+      >
+        1
+      </span>
+    </span>
   </div>
   <div
     className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
@@ -512,11 +1098,11 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
       className="MuiBadge-root c1"
     >
       <div
-        className="c3 "
+        className="c5 "
         data-test-automation-class="avatar"
       >
         <div
-          className="c4 RcAvatar-avatarContainer"
+          className="c6 RcAvatar-avatarContainer"
         >
           CK
         </div>
@@ -533,11 +1119,11 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
       className="MuiBadge-root c1"
     >
       <div
-        className="c3 "
+        className="c5 "
         data-test-automation-class="avatar"
       >
         <div
-          className="c4 RcAvatar-avatarContainer"
+          className="c6 RcAvatar-avatarContainer"
         >
           CK
         </div>
@@ -554,11 +1140,11 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
       className="MuiBadge-root c1"
     >
       <div
-        className="c3 "
+        className="c5 "
         data-test-automation-class="avatar"
       >
         <div
-          className="c4 RcAvatar-avatarContainer"
+          className="c6 RcAvatar-avatarContainer"
         >
           CK
         </div>
@@ -575,11 +1161,11 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
       className="MuiBadge-root c1"
     >
       <div
-        className="c3 "
+        className="c5 "
         data-test-automation-class="avatar"
       >
         <div
-          className="c4 RcAvatar-avatarContainer"
+          className="c6 RcAvatar-avatarContainer"
         >
           CK
         </div>
@@ -602,7 +1188,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
       Overlap None
     </h5>
     <span
-      className="MuiBadge-root c5"
+      className="MuiBadge-root c7"
     >
       <span
         className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightRectangle"
@@ -612,7 +1198,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
     </span>
     <br />
     <span
-      className="MuiBadge-root c6"
+      className="MuiBadge-root c8"
     >
       <span
         className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightRectangle"
@@ -633,10 +1219,10 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
       className="MuiBadge-root c1"
     >
       <span
-        className="c7 phone icon"
+        className="c9 phone icon"
       >
         <svg
-          className="c8"
+          className="c10"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -655,14 +1241,14 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
     <br />
     <br />
     <p
-      className="MuiTypography-root c9 MuiTypography-paragraph MuiTypography-displayBlock"
+      className="MuiTypography-root c11 MuiTypography-paragraph MuiTypography-displayBlock"
       data-color="neutral.f06"
       data-variant="body1"
     >
       When BadgeContent is number, that will limit with prop
        
       <span
-        className="MuiTypography-root c10 c11 highlight-term MuiTypography-noWrap"
+        className="MuiTypography-root c12 c13 highlight-term MuiTypography-noWrap"
         data-color="initial"
         data-variant="inherit"
         title="max"
@@ -671,14 +1257,14 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
       </span>
     </p>
     <span
-      className="MuiBadge-root c12"
+      className="MuiBadge-root c14"
     >
       <div
-        className="c3 "
+        className="c5 "
         data-test-automation-class="avatar"
       >
         <div
-          className="c4 RcAvatar-avatarContainer"
+          className="c6 RcAvatar-avatarContainer"
         >
           CK
         </div>
@@ -692,14 +1278,14 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
     <br />
     <br />
     <p
-      className="MuiTypography-root c9 MuiTypography-paragraph MuiTypography-displayBlock"
+      className="MuiTypography-root c11 MuiTypography-paragraph MuiTypography-displayBlock"
       data-color="neutral.f06"
       data-variant="body1"
     >
       When BadgeContent is not number, that will not limit with prop
        
       <span
-        className="MuiTypography-root c10 c11 highlight-term MuiTypography-noWrap"
+        className="MuiTypography-root c12 c13 highlight-term MuiTypography-noWrap"
         data-color="initial"
         data-variant="inherit"
         title="max"
@@ -708,14 +1294,14 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
       </span>
     </p>
     <span
-      className="MuiBadge-root c12"
+      className="MuiBadge-root c14"
     >
       <div
-        className="c3 "
+        className="c5 "
         data-test-automation-class="avatar"
       >
         <div
-          className="c4 RcAvatar-avatarContainer"
+          className="c6 RcAvatar-avatarContainer"
         >
           CK
         </div>
