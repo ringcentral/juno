@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable no-console */
 const { join, resolve } = require('path');
 const esbuild = require('esbuild');
@@ -18,7 +19,7 @@ function getBuildOptions(path) {
       'framer',
       'framer-motion',
     ],
-    tsconfig: join(__dirname, './tsconfig.json'),
+    tsconfig: join(__dirname, '../tsconfig.json'),
     plugins: [textReplacePlugin],
   };
 }
@@ -29,7 +30,7 @@ async function build(path, outdir) {
   console.log(`Build done at ${outdir}`);
 }
 
-async function serve(path = defaultPath, port = 8000) {
+async function serve(path, port = 8000) {
   function onRequest(info) {
     const status = color(
       info.status.toString().startsWith('2') ? 32 : 31,

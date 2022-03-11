@@ -42,7 +42,7 @@
     "update-packageJson": "eslint ./package.json --no-ignore --fix",
     "update-snapshot": "yarn clean-dist && jest --updateSnapshot",
     "update-storybook-snapshot": "yarn clean-dist && jest ./packages/juno-core/src/__tests__/snapshot/storyShots.test.tsx --updateSnapshot",
-    "predeploy": "yarn build:storybook && yarn workspace @ringcentral/juno-framer run framer:build",
+    "predeploy": "yarn build:storybook && yarn workspace @ringcentral/juno-framer run move-dist-tmp",
     "deploy": "gh-pages -d public",
     "publish-npm": "concurrently \"yarn workspace @ringcentral/juno run publish-npm\" \"yarn workspace @ringcentral/juno-icon run publish-npm\""
   },
