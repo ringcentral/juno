@@ -3,7 +3,6 @@ import React, {
   ComponentType,
   ElementType,
   forwardRef,
-  useLayoutEffect,
   useMemo,
   useRef,
 } from 'react';
@@ -15,18 +14,20 @@ import { capitalize } from '@material-ui/core/utils';
 
 import {
   combineProps,
-  px,
+  logInDev,
   RcBaseProps,
   RcPaletteKeys,
   styled,
   UnionPick,
+  useChange,
   useForkRef,
   useThemeProps,
 } from '../../foundation';
 import { RcBox } from '../Box';
 import { RcPresence, RcPresenceProps } from '../Presence';
 import { BadgeStyle } from './styles';
-import { getRoundOffset, RcBadgeClasses, roundBadgeMarginKey } from './utils';
+
+import { RcBadgeClasses, useRoundBadgeOffset } from './utils';
 
 type RcBadgeProps = {
   /** tag color, default is `highlight.b03` */
@@ -82,12 +83,35 @@ const _RcBadge = forwardRef<any, RcBadgeProps>((inProps: RcBadgeProps, ref) => {
     ...rest
   } = props;
 
+  // * should never change overlap
+  if (process.env.NODE_ENV !== 'production') {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useChange(
+      (prev) => {
+        if (!prev) return;
+
+        logInDev({
+          component: 'RcBadge',
+          message: 'Should not change `overlap` prop after component render',
+          level: 'error',
+        });
+      },
+      () => overlap,
+    );
+  }
+
   const innerRef = useRef<HTMLElement>(null);
   const badgeRef = useForkRef(innerRef, ref);
-  const currHeightRef = useRef(0);
 
   const isRound = overlap === 'round';
   const isDot = variant === 'dot';
+  const notPassOverlapToMui = overlap !== 'none' && !isRound;
+
+  // overlap will never change in production mode
+  if (isRound) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useRoundBadgeOffset(innerRef);
+  }
 
   const classes = useMemo(
     () => combineProps(RcBadgeClasses, classesProp),
@@ -123,23 +147,6 @@ const _RcBadge = forwardRef<any, RcBadgeProps>((inProps: RcBadgeProps, ref) => {
         })
       : undefined;
   }, [isDot, dotProps, overlap, anchorOrigin, children, dotComponent]);
-
-  useLayoutEffect(() => {
-    const badgeElm = innerRef.current;
-
-    if (!badgeElm || !isRound) return;
-
-    const height = badgeElm.clientHeight;
-
-    if (currHeightRef.current !== height) {
-      currHeightRef.current = height;
-
-      const offset = getRoundOffset(height / 2);
-      badgeElm.style.setProperty(roundBadgeMarginKey, px(offset));
-    }
-  });
-
-  const notPassOverlapToMui = overlap !== 'none' && !isRound;
 
   return (
     <MuiBadge

@@ -70,7 +70,7 @@ export const Badge: Story<BadgeProps> = ({
       <br />
       <RcBadge badgeContent={count} {...args} overlap="round">
         <RcButton onClick={() => setCount(count + 1)} radius="round">
-          +1
+          +1{Array(count).fill('1')}
         </RcButton>
       </RcBadge>
       <br />
