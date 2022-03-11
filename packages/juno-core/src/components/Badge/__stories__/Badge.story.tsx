@@ -62,9 +62,23 @@ export const Badge: Story<BadgeProps> = ({
   switchToControlKnobs();
   const [count, setCount] = useState(0);
   return (
-    <RcBadge badgeContent={count} {...args}>
-      <RcButton onClick={() => setCount(count + 1)}>+1</RcButton>
-    </RcBadge>
+    <>
+      <RcBadge badgeContent={count} {...args}>
+        <RcButton onClick={() => setCount(count + 1)}>+1</RcButton>
+      </RcBadge>
+      <br />
+      <br />
+      <RcBadge badgeContent={count} {...args} overlap="round">
+        <RcButton onClick={() => setCount(count + 1)} radius="round">
+          +1
+        </RcButton>
+      </RcBadge>
+      <br />
+      <br />
+      <RcBadge badgeContent={count} {...args} overlap="circular">
+        <RcAvatar>CK</RcAvatar>
+      </RcBadge>
+    </>
   );
 };
 
@@ -132,6 +146,40 @@ export const BadgeExamples: Story<BadgeProps> = ({
           anchorOrigin={{ horizontal: 'left', vertical: 'bottom' }}
         >
           <RcButton>left bottom</RcButton>
+        </RcBadge>
+        <br />
+        <br />
+        <br />
+        <Title>overlap="round"</Title>
+        <RcBadge overlap="round" {...args}>
+          <RcButton radius="round">right bottom</RcButton>
+        </RcBadge>
+        <br />
+        <br />
+        <RcBadge
+          {...args}
+          overlap="round"
+          anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+        >
+          <RcButton radius="round">right bottom</RcButton>
+        </RcBadge>
+        <br />
+        <br />
+        <RcBadge
+          {...args}
+          overlap="round"
+          anchorOrigin={{ horizontal: 'left', vertical: 'top' }}
+        >
+          <RcButton radius="round">left top</RcButton>
+        </RcBadge>
+        <br />
+        <br />
+        <RcBadge
+          {...args}
+          overlap="round"
+          anchorOrigin={{ horizontal: 'left', vertical: 'bottom' }}
+        >
+          <RcButton radius="round">left bottom</RcButton>
         </RcBadge>
       </RcGrid>
       <RcGrid item xs>

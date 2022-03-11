@@ -5,7 +5,7 @@ import {
   RcThemedStyled,
 } from '../../../foundation';
 import { RcBadgeProps } from '../Badge';
-import { RcBadgeClasses } from '../utils';
+import { RcBadgeClasses, roundBadgeMarginKey } from '../utils';
 
 export const BadgeStyle: RcThemedStyled<RcBadgeProps, any> = ({
   badgeContent,
@@ -16,6 +16,7 @@ export const BadgeStyle: RcThemedStyled<RcBadgeProps, any> = ({
   max,
   color,
 }) => {
+  const overlapRound = overlap === 'round';
   const overlapNone = overlap === 'none';
   const isStandard = variant !== 'dot';
 
@@ -29,6 +30,7 @@ export const BadgeStyle: RcThemedStyled<RcBadgeProps, any> = ({
 
   return css`
     .${RcBadgeClasses.badge} {
+      margin: ${overlapRound && `var(${roundBadgeMarginKey})`};
       color: ${getParsePaletteColor(textColor!, null, false)};
       background-color: ${getParsePaletteColor(color, null, false)};
 

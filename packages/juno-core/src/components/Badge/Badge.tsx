@@ -3,7 +3,9 @@ import React, {
   ComponentType,
   ElementType,
   forwardRef,
+  useLayoutEffect,
   useMemo,
+  useRef,
 } from 'react';
 
 import clsx from 'clsx';
@@ -13,16 +15,18 @@ import { capitalize } from '@material-ui/core/utils';
 
 import {
   combineProps,
+  px,
   RcBaseProps,
   RcPaletteKeys,
   styled,
   UnionPick,
+  useForkRef,
   useThemeProps,
 } from '../../foundation';
 import { RcBox } from '../Box';
 import { RcPresence, RcPresenceProps } from '../Presence';
 import { BadgeStyle } from './styles';
-import { RcBadgeClasses } from './utils';
+import { getRoundOffset, RcBadgeClasses, roundBadgeMarginKey } from './utils';
 
 type RcBadgeProps = {
   /** tag color, default is `highlight.b03` */
@@ -33,13 +37,24 @@ type RcBadgeProps = {
   borderColor?: RcPaletteKeys;
   /** The component used for the root node. Either a string to use a HTML element or a component. */
   component?: ElementType;
-  /** Wrapped shape the badge should overlap */
+  /**
+   * Wrapped shape the badge should overlap
+   * - `circular`: for circular children
+   * - `rectangular`: for rectangular children
+   * - `round`: for round radius rectangular children, like
+   * ```jsx
+   * <RcButton radius="round">click</RcButton>
+   * ```
+   * - `none`: not do any overlap on that badge
+   */
   overlap?:
     | UnionPick<
         NonNullable<ComponentProps<typeof MuiBadge>['overlap']>,
+        // TODO: when upgrade to v2 that can be remove
         'circular' | 'rectangular'
       >
-    | 'none';
+    | 'none'
+    | 'round';
   /**
    * Custom dot render Component in `dot` mode
    * if you don't want any dot, you can set `null`
@@ -67,14 +82,19 @@ const _RcBadge = forwardRef<any, RcBadgeProps>((inProps: RcBadgeProps, ref) => {
     ...rest
   } = props;
 
+  const innerRef = useRef<HTMLElement>(null);
+  const badgeRef = useForkRef(innerRef, ref);
+  const currHeightRef = useRef(0);
+
+  const isRound = overlap === 'round';
+  const isDot = variant === 'dot';
+
   const classes = useMemo(
     () => combineProps(RcBadgeClasses, classesProp),
     [classesProp],
   );
 
   const CustomDotBadge = useMemo(() => {
-    const isDot = variant === 'dot';
-
     return isDot
       ? forwardRef<any, any>(({ children: OmitChildren, ...rest }, ref) => {
           const { horizontal, vertical } = anchorOrigin!;
@@ -102,7 +122,24 @@ const _RcBadge = forwardRef<any, RcBadgeProps>((inProps: RcBadgeProps, ref) => {
           );
         })
       : undefined;
-  }, [anchorOrigin, children, dotComponent, dotProps, overlap, variant]);
+  }, [isDot, dotProps, overlap, anchorOrigin, children, dotComponent]);
+
+  useLayoutEffect(() => {
+    const badgeElm = innerRef.current;
+
+    if (!badgeElm || !isRound) return;
+
+    const height = badgeElm.clientHeight;
+
+    if (currHeightRef.current !== height) {
+      currHeightRef.current = height;
+
+      const offset = getRoundOffset(height / 2);
+      badgeElm.style.setProperty(roundBadgeMarginKey, px(offset));
+    }
+  });
+
+  const notPassOverlapToMui = overlap !== 'none' && !isRound;
 
   return (
     <MuiBadge
@@ -110,8 +147,9 @@ const _RcBadge = forwardRef<any, RcBadgeProps>((inProps: RcBadgeProps, ref) => {
       variant={variant}
       anchorOrigin={anchorOrigin}
       component={(component || CustomDotBadge) as any}
-      overlap={overlap !== 'none' ? overlap : undefined}
-      ref={ref}
+      // TODO: that as any for ts v3.8 still not support pick variable out of if check
+      overlap={notPassOverlapToMui ? (overlap as any) : undefined}
+      ref={badgeRef}
       classes={classes}
     >
       {children}
