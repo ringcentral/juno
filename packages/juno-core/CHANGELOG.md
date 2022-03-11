@@ -1,4 +1,11 @@
 
+### [2.1.2](https://github.com/ringcentral/juno/compare/juno-core-v2.1.1...juno-core-v2.1.2) (2022-03-11)
+
+
+### Features
+
+* **Badge:** support round overlap ([af73059](https://github.com/ringcentral/juno/commit/af73059345fe39ceb1f0c492db749cd13cc0682f))
+
 ### [2.1.1](https://github.com/ringcentral/juno/compare/juno-core-v2.1.0...juno-core-v2.1.1) (2022-03-10)
 
 
