@@ -333,7 +333,6 @@ Array [
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 20px;
-  color: #666666;
 }
 
 .c3 .RcBadge-badge {
@@ -699,6 +698,15 @@ Array [
                   />
                 </svg>
                 
+              </span>
+              <span
+                className="MuiBadge-root c3"
+              >
+                <span
+                  className="MuiBadge-badge RcBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-invisible RcBadge-invisible"
+                >
+                  0
+                </span>
               </span>
             </span>
           </button>
