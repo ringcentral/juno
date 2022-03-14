@@ -24,6 +24,7 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
+import { RcMenuItem, RcMenuItemProps } from '../../../Menu';
 
 export default {
   title: '🚀 Cleanup Components/Tabs/Tabs',
@@ -275,7 +276,31 @@ const tabsData2: {
   },
 ];
 
-export const TabsCustomExample: Story<TabsCustomExampleProps> = (args) => {
+const badgeNumberMap = tabsData2.reduce((acc, curr) => {
+  acc[curr.key] = curr.badgeNumber;
+  return acc;
+}, {} as Record<string, number>);
+
+const CustomMenuItem: FunctionComponent<RcMenuItemProps> = ({
+  children,
+  ...rest
+}) => {
+  const value = rest.value as string;
+  return (
+    <RcMenuItem {...rest}>
+      custom render in value {value}
+      <RcBadge
+        badgeContent={badgeNumberMap[value]}
+        showZero={false}
+        overlap="none"
+      />
+    </RcMenuItem>
+  );
+};
+
+const TabsCustomExampleComponent: FunctionComponent<TabsCustomExampleProps> = (
+  args,
+) => {
   const [value, setValue] = React.useState('tab-0');
   const [moreBadgeNumber, setMoreBadgeNumber] = React.useState(0);
 
@@ -293,7 +318,7 @@ export const TabsCustomExample: Story<TabsCustomExampleProps> = (args) => {
 
   const handleGroupInfoChange = (info: RcTabsMoreMenuGroupInfoType) => {
     console.log(info);
-    const [tabItems, menuItems] = info;
+    const [, menuItems] = info;
     setMoreBadgeNumber(
       menuItems.reduce(
         (acc, curr) =>
@@ -315,8 +340,9 @@ export const TabsCustomExample: Story<TabsCustomExampleProps> = (args) => {
           value={value}
           onChange={handleChange}
           MoreButtonProps={{
-            // MoreIcon: MoreIconCmp,
+            MoreIcon: MoreIconCmp,
             direction: 'vertical',
+            MenuItemComponent: CustomMenuItem,
             onGroupInfoChange: handleGroupInfoChange,
           }}
         >
@@ -346,6 +372,10 @@ export const TabsCustomExample: Story<TabsCustomExampleProps> = (args) => {
       </RcPaper>
     </>
   );
+};
+
+export const TabsCustomExample: Story<TabsCustomExampleProps> = (args) => {
+  return <TabsCustomExampleComponent {...args} />;
 };
 TabsCustomExample.args = {
   variant: 'moreMenu',

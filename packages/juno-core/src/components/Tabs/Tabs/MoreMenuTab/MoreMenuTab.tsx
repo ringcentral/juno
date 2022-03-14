@@ -1,4 +1,4 @@
-import React, { forwardRef, useMemo, useState } from 'react';
+import React, { ComponentType, forwardRef, useMemo, useState } from 'react';
 
 import { MoreHoriz as MoreHorizIcon } from '@ringcentral/juno-icon';
 
@@ -10,7 +10,12 @@ import {
 } from '../../../../foundation';
 import { RcIcon } from '../../../Icon';
 import { RcListItemIcon, RcListItemText } from '../../../List';
-import { RcMenu, RcMenuItem, RcMenuProps } from '../../../Menu';
+import {
+  RcMenu,
+  RcMenuItem,
+  RcMenuItemProps,
+  RcMenuProps,
+} from '../../../Menu';
 import type { RcMenuOnCloseReasonsType } from '../../../Menu/Menu/MenuContext';
 import { RcTooltip, RcTooltipProps } from '../../../Tooltip';
 import { RcTab, RcTabProps } from '../../Tab';
@@ -20,6 +25,10 @@ import { MoreMenuTabStyle } from './styles';
 type MoreMenuTabProps = {
   menuItems: RcBaseProps<RcTabProps>[];
   MenuProps?: RcBaseProps<RcMenuProps, 'anchorEl' | 'open' | 'variant'>;
+  /**
+   * custom MenuItem render component
+   */
+  MenuItemComponent?: ComponentType<RcMenuItemProps>;
   TooltipProps?: RcBaseProps<RcTooltipProps, 'children'>;
   onChange?: (event: React.MouseEvent<HTMLLIElement>, value: any) => void;
   orientation?: 'horizontal' | 'vertical';
@@ -31,6 +40,7 @@ const DEFAULT_MORE_MENU_TAB_LABEL = 'more_menu_tab';
 const _MoreMenuTab = forwardRef<any, MoreMenuTabProps>((props, ref) => {
   const {
     menuItems,
+    MenuItemComponent = RcMenuItem,
     MenuProps = {},
     TooltipProps,
     onChange,
@@ -90,7 +100,7 @@ const _MoreMenuTab = forwardRef<any, MoreMenuTabProps>((props, ref) => {
       };
 
       return (
-        <RcMenuItem
+        <MenuItemComponent
           key={getKey(menuItemRest.key!, idx)}
           disabled={disabled}
           selected={selected}
@@ -100,10 +110,10 @@ const _MoreMenuTab = forwardRef<any, MoreMenuTabProps>((props, ref) => {
         >
           {icon ? <RcListItemIcon>{icon}</RcListItemIcon> : null}
           <RcListItemText primary={label || value} />
-        </RcMenuItem>
+        </MenuItemComponent>
       );
     });
-  }, [menuItems, onChange]);
+  }, [MenuItemComponent, menuItems, onChange]);
 
   return (
     <>
