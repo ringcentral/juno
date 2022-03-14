@@ -20,7 +20,7 @@ import {
   RcClassesProps,
   RcPaletteProp,
   removeClassName,
-  styled,
+  overridableStyled,
   useForkRef,
   useThemeProps,
 } from '../../foundation';
@@ -68,6 +68,11 @@ type RcChipProps = {
   isError?: boolean;
 } & RcBaseProps<ComponentProps<typeof MuiChip>, 'color' | 'size' | 'icon'> &
   RcChipClassProp;
+
+interface RcChipTypeMap<D extends React.ElementType = 'div'> {
+  props: RcChipProps;
+  defaultComponent: D;
+}
 
 const _RcChip = forwardRef<any, RcChipProps>((inProps: RcChipProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcChip' });
@@ -178,7 +183,7 @@ const _RcChip = forwardRef<any, RcChipProps>((inProps: RcChipProps, ref) => {
   );
 });
 
-const RcChip = styled(_RcChip)`
+const RcChip = overridableStyled<RcChipTypeMap>(_RcChip)`
   ${ChipStyle}
 `;
 
