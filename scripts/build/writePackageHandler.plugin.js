@@ -27,12 +27,12 @@ const createWritePackageHandler = (pkg, targetPath) => {
             },
             default: './es6/index.js',
           },
-          './': {
+          './*': {
             node: {
-              module: './es6/',
-              require: './',
+              module: './es6/*',
+              require: './*',
             },
-            default: './es6/',
+            default: './es6/*',
           },
         },
       };
