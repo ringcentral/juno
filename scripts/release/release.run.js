@@ -23,16 +23,18 @@ const ignoreNext = process.argv.includes('--ignore-next');
 
     const packagePath = `packages/${packageName}`;
 
-    const { currentRelease } = await inquirer.prompt([
-      {
-        type: 'list',
-        name: 'currentRelease',
-        message: `what kind of release do you want to do for ${packageName}?
+    const { currentRelease } = ignoreNext
+      ? { currentRelease: 'current' }
+      : await inquirer.prompt([
+          {
+            type: 'list',
+            name: 'currentRelease',
+            message: `what kind of release do you want to do for ${packageName}?
         (current as release now package version without bump version)`,
-        default: 'current',
-        choices: ['current', 'patch', 'minor', 'major'],
-      },
-    ]);
+            default: 'current',
+            choices: ['current', 'patch', 'minor', 'major'],
+          },
+        ]);
     const isBump = currentRelease !== 'current';
 
     const pathOptions = {

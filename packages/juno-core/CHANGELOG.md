@@ -1,4 +1,13 @@
 
+## [2.2.0](https://github.com/ringcentral/juno/compare/juno-core-v2.1.2...juno-core-v2.2.0) (2022-03-15)
+
+
+### Features
+
+* **Badge:** support round overlap ([06d67a1](https://github.com/ringcentral/juno/commit/06d67a1ea0dcd5e4ba5c85f993080384524e3a18))
+* **Chip:** support component prop with overridableStyled ([ee650aa](https://github.com/ringcentral/juno/commit/ee650aa9f2d1680afd4727557ddc35d0e985a544))
+* **MoreMenuTab:** support custom MenuItemComponent for moreMenu variant ([49c59fc](https://github.com/ringcentral/juno/commit/49c59fc80a595fb32f375a055027cc1f98b9de0b))
+
 ### [2.1.2](https://github.com/ringcentral/juno/compare/juno-core-v2.1.1...juno-core-v2.1.2) (2022-03-11)
 
 
