@@ -48,10 +48,6 @@ if (fs.existsSync(configPath)) {
   });
 
   console.log('[Release]: copy files completed');
-
-  if (npmPackageOptions.subModules) {
-    packageHandler.generateSubBundles(npmPackageOptions.subModules);
-  }
 }
 
 console.log('[Release]: prepare package complete');

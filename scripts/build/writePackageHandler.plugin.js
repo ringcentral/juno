@@ -42,20 +42,6 @@ const createWritePackageHandler = (pkg, targetPath) => {
         JSON.stringify(output, null, 2),
       );
     },
-    generateSubBundles(subModules) {
-      for (const subModule of subModules) {
-        const output = {
-          module: path.join('../es6', subModule, 'index.js'),
-          typings: './index.d.ts',
-          sideEffects: false,
-        };
-
-        writeFileSync(
-          path.join(targetPath, subModule, 'package.json'),
-          JSON.stringify(output, null, 2),
-        );
-      }
-    },
   };
 };
 
