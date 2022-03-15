@@ -23,7 +23,17 @@ const ignoreNext = process.argv.includes('--ignore-next');
 
     const packagePath = `packages/${packageName}`;
 
-    console.log(packagePath);
+    const { currentRelease } = await inquirer.prompt([
+      {
+        type: 'list',
+        name: 'currentRelease',
+        message: `what kind of release do you want to do for ${packageName}?
+        (current as release now package version without bump version)`,
+        default: 'current',
+        choices: ['current', 'patch', 'minor', 'major'],
+      },
+    ]);
+    const isBump = currentRelease !== 'current';
 
     const pathOptions = {
       path: packagePath,
@@ -33,7 +43,7 @@ const ignoreNext = process.argv.includes('--ignore-next');
     };
 
     await standardVersion({
-      releaseAs: 'patch',
+      releaseAs: isBump ? currentRelease : 'patch',
       tagPrefix: `${packageName}-v`,
       header: '',
       ...pathOptions,
@@ -43,7 +53,7 @@ const ignoreNext = process.argv.includes('--ignore-next');
         postchangelog: 'yarn update-mdx && git add .',
       },
       skip: {
-        bump: true,
+        bump: !isBump,
       },
     });
 
