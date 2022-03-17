@@ -429,7 +429,7 @@ Array [
 }
 
 <br />,
-  .c3 {
+  .c6 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -438,7 +438,7 @@ Array [
   pointer-events: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -455,7 +455,7 @@ Array [
   color: #666666;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -477,30 +477,30 @@ Array [
   cursor: pointer;
 }
 
-.c5,
-.c5 .c1 {
+.c4,
+.c4 .c1 {
   font-size: 20px;
 }
 
-.c5:active,
-.c5:active .c1 {
+.c4:active,
+.c4:active .c1 {
   color: #666666;
 }
 
-.c5.focus-visible,
-.c5[data-focus-visible-added] {
+.c4.focus-visible,
+.c4[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.focus-visible:active,
-.c5[data-focus-visible-added]:active,
-.c5.focus-visible:active .c1,
-.c5[data-focus-visible-added]:active .c1 {
+.c4.focus-visible:active,
+.c4[data-focus-visible-added]:active,
+.c4.focus-visible:active .c1,
+.c4[data-focus-visible-added]:active .c1 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.focus-visible:after,
-.c5[data-focus-visible-added]:after {
+.c4.focus-visible:after,
+.c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -513,60 +513,60 @@ Array [
   z-index: 1;
 }
 
-.c5.RcIconButton-persistBg {
+.c4.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c5.RcIconButton-disabled,
-.c5.RcIconButton-disabled .c1 {
+.c4.RcIconButton-disabled,
+.c4.RcIconButton-disabled .c1 {
   color: #B9B9B9;
 }
 
-.c5.RcIconButton-invisible {
+.c4.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c5.RcIconButton-outline {
+.c4.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c5.RcIconButton-contained {
+.c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.84);
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added],
-.c5.RcIconButton-contained.focus-visible .c1,
-.c5.RcIconButton-contained[data-focus-visible-added] .c1 {
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added],
+.c4.RcIconButton-contained.focus-visible .c1,
+.c4.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: #fff;
 }
 
-.c5.RcIconButton-contained:active {
+.c4.RcIconButton-contained:active {
   background-color: rgba(102,102,102,0.76);
 }
 
-.c5.RcIconButton-contained:active,
-.c5.RcIconButton-contained:active .c1 {
+.c4.RcIconButton-contained:active,
+.c4.RcIconButton-contained:active .c1 {
   color: #fff;
 }
 
-.c5 .RcIconButtonTouchRipple-ripplePulsate {
+.c4 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
 }
 
-.c0 *:not(input) + .c4 {
+.c0 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -697,7 +697,7 @@ Array [
   line-height: 24px;
 }
 
-.c0 *:not(input) + .c4 {
+.c0 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -753,23 +753,23 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5:hover {
+  .c4:hover {
     background-color: transparent;
   }
 
-  .c5:hover,
-  .c5:hover .c1 {
+  .c4:hover,
+  .c4:hover .c1 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
+  .c4.RcIconButton-contained:hover {
     background-color: rgba(102,102,102,0.92);
   }
 
-  .c5.RcIconButton-contained:hover,
-  .c5.RcIconButton-contained:hover .c1 {
+  .c4.RcIconButton-contained:hover,
+  .c4.RcIconButton-contained:hover .c1 {
     color: #fff;
   }
 }
@@ -796,18 +796,8 @@ Array [
       onClick={[Function]}
     >
       <span
-        className="c1 c2 box_border icon"
+        className="c1 c2 icon"
       >
-        <svg
-          className="c3"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.279 7.364C.559 7.364 0 7.924 0 8.563v10.065a6.122 6.122 0 006.119 5.992h.034-.002a6.288 6.288 0 005.497-3.244l.016-.032c1.039 1.917 3.116 3.276 5.432 3.276 3.436 0 6.232-2.716 6.232-6.151.08-3.276-2.716-5.993-6.151-5.993-2.317 0-4.393 1.279-5.432 3.196-1.04-1.917-3.117-3.196-5.513-3.196-1.439 0-2.717.48-3.756 1.199V8.563A1.227 1.227 0 001.28 7.364h-.002zm22.19 4.983a1.265 1.265 0 00-.943.213l.004-.003c-.48.4-.639 1.199-.24 1.757l3.196 4.155-3.195 4.153c-.4.56-.32 1.28.24 1.68.559.4 1.355.397 1.755-.163l2.719-3.515L29.8 24.22c.4.48 1.199.559 1.757.16.48-.4.56-1.12.161-1.679l-3.117-4.153 3.117-4.076c.4-.559.397-1.357-.161-1.757-.64-.4-1.359-.32-1.757.24l-2.795 3.435-2.72-3.593c-.199-.24-.497-.4-.816-.451zM6.151 14.872c2.077 0 3.756 1.68 3.756 3.677 0 2.077-1.679 3.675-3.756 3.675s-3.755-1.597-3.755-3.675c0-1.997 1.677-3.677 3.755-3.677zm11.026 0c2.077 0 3.755 1.68 3.755 3.677-.08 2.077-1.757 3.675-3.755 3.675-2.077 0-3.756-1.597-3.756-3.675 0-1.997 1.679-3.677 3.756-3.677z"
-            fill="var(--color53, #0061d5)"
-          />
-        </svg>
         
       </span>
       <input
@@ -827,7 +817,7 @@ Array [
       />
       <button
         aria-hidden={true}
-        className="MuiButtonBase-root c4 c5 RcIconButton-root"
+        className="MuiButtonBase-root c3 c4 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -845,10 +835,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c6 delete_circle icon"
+          className="c1 c5 delete_circle icon"
         >
           <svg
-            className="c3"
+            className="c6"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -860,7 +850,7 @@ Array [
         </span>
       </button>
       <button
-        className="MuiButtonBase-root c4 c5 RcIconButton-root"
+        className="MuiButtonBase-root c3 c4 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -877,10 +867,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c6 add icon"
+          className="c1 c5 add icon"
         >
           <svg
-            className="c3"
+            className="c6"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -1952,18 +1942,8 @@ Array [
         type="button"
       >
         <span
-          className="c1 c2 box_border icon"
+          className="c1 c2 icon"
         >
-          <svg
-            className="c3"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1.279 7.364C.559 7.364 0 7.924 0 8.563v10.065a6.122 6.122 0 006.119 5.992h.034-.002a6.288 6.288 0 005.497-3.244l.016-.032c1.039 1.917 3.116 3.276 5.432 3.276 3.436 0 6.232-2.716 6.232-6.151.08-3.276-2.716-5.993-6.151-5.993-2.317 0-4.393 1.279-5.432 3.196-1.04-1.917-3.117-3.196-5.513-3.196-1.439 0-2.717.48-3.756 1.199V8.563A1.227 1.227 0 001.28 7.364h-.002zm22.19 4.983a1.265 1.265 0 00-.943.213l.004-.003c-.48.4-.639 1.199-.24 1.757l3.196 4.155-3.195 4.153c-.4.56-.32 1.28.24 1.68.559.4 1.355.397 1.755-.163l2.719-3.515L29.8 24.22c.4.48 1.199.559 1.757.16.48-.4.56-1.12.161-1.679l-3.117-4.153 3.117-4.076c.4-.559.397-1.357-.161-1.757-.64-.4-1.359-.32-1.757.24l-2.795 3.435-2.72-3.593c-.199-.24-.497-.4-.816-.451zM6.151 14.872c2.077 0 3.756 1.68 3.756 3.677 0 2.077-1.679 3.675-3.756 3.675s-3.755-1.597-3.755-3.675c0-1.997 1.677-3.677 3.755-3.677zm11.026 0c2.077 0 3.755 1.68 3.755 3.677-.08 2.077-1.757 3.675-3.755 3.675-2.077 0-3.756-1.597-3.756-3.675 0-1.997 1.679-3.677 3.756-3.677z"
-              fill="var(--color53, #0061d5)"
-            />
-          </svg>
           
         </span>
       </button>
@@ -4841,7 +4821,7 @@ Array [
 
 exports[`Storyshots 🚀 Cleanup Components/Forms/OutlineTextField OutlineTextField Sizes 1`] = `
 Array [
-  .c3 {
+  .c6 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -4859,7 +4839,7 @@ Array [
   color: #666666;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4867,7 +4847,7 @@ Array [
   font-size: 24px;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4889,30 +4869,30 @@ Array [
   cursor: pointer;
 }
 
-.c5,
-.c5 .c1 {
+.c4,
+.c4 .c1 {
   font-size: 16px;
 }
 
-.c5:active,
-.c5:active .c1 {
+.c4:active,
+.c4:active .c1 {
   color: #666666;
 }
 
-.c5.focus-visible,
-.c5[data-focus-visible-added] {
+.c4.focus-visible,
+.c4[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.focus-visible:active,
-.c5[data-focus-visible-added]:active,
-.c5.focus-visible:active .c1,
-.c5[data-focus-visible-added]:active .c1 {
+.c4.focus-visible:active,
+.c4[data-focus-visible-added]:active,
+.c4.focus-visible:active .c1,
+.c4[data-focus-visible-added]:active .c1 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.focus-visible:after,
-.c5[data-focus-visible-added]:after {
+.c4.focus-visible:after,
+.c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -3px;
@@ -4925,53 +4905,53 @@ Array [
   z-index: 1;
 }
 
-.c5.RcIconButton-persistBg {
+.c4.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c5.RcIconButton-disabled,
-.c5.RcIconButton-disabled .c1 {
+.c4.RcIconButton-disabled,
+.c4.RcIconButton-disabled .c1 {
   color: #B9B9B9;
 }
 
-.c5.RcIconButton-invisible {
+.c4.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c5.RcIconButton-outline {
+.c4.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c5.RcIconButton-contained {
+.c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.84);
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added],
-.c5.RcIconButton-contained.focus-visible .c1,
-.c5.RcIconButton-contained[data-focus-visible-added] .c1 {
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added],
+.c4.RcIconButton-contained.focus-visible .c1,
+.c4.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: #fff;
 }
 
-.c5.RcIconButton-contained:active {
+.c4.RcIconButton-contained:active {
   background-color: rgba(102,102,102,0.76);
 }
 
-.c5.RcIconButton-contained:active,
-.c5.RcIconButton-contained:active .c1 {
+.c4.RcIconButton-contained:active,
+.c4.RcIconButton-contained:active .c1 {
   color: #fff;
 }
 
-.c5 .RcIconButtonTouchRipple-ripplePulsate {
+.c4 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
@@ -5012,7 +4992,7 @@ Array [
   color: #fff;
 }
 
-.c0 *:not(input) + .c4 {
+.c0 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -5143,7 +5123,7 @@ Array [
   line-height: 22px;
 }
 
-.c0 *:not(input) + .c4 {
+.c0 *:not(input) + .c3 {
   margin-left: 8px;
 }
 
@@ -5198,64 +5178,64 @@ Array [
   box-shadow: inset 0 0 0 1px #B9B9B9;
 }
 
-.c7 *:not(input) + .c4 {
+.c7 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c7 *:not(input) + .c4 {
+.c7 *:not(input) + .c3 {
   margin-left: 8px;
 }
 
-.c8 *:not(input) + .c4 {
+.c8 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c4 {
+.c8 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c4 {
+.c9 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c4 {
+.c9 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c4 {
+.c10 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c4 {
+.c10 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c4 {
+.c11 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c4 {
+.c11 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5:hover {
+  .c4:hover {
     background-color: transparent;
   }
 
-  .c5:hover,
-  .c5:hover .c1 {
+  .c4:hover,
+  .c4:hover .c1 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
+  .c4.RcIconButton-contained:hover {
     background-color: rgba(102,102,102,0.92);
   }
 
-  .c5.RcIconButton-contained:hover,
-  .c5.RcIconButton-contained:hover .c1 {
+  .c4.RcIconButton-contained:hover,
+  .c4.RcIconButton-contained:hover .c1 {
     color: #fff;
   }
 }
@@ -5316,18 +5296,8 @@ Array [
       onClick={[Function]}
     >
       <span
-        className="c1 c2 box_border icon"
+        className="c1 c2 icon"
       >
-        <svg
-          className="c3"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.279 7.364C.559 7.364 0 7.924 0 8.563v10.065a6.122 6.122 0 006.119 5.992h.034-.002a6.288 6.288 0 005.497-3.244l.016-.032c1.039 1.917 3.116 3.276 5.432 3.276 3.436 0 6.232-2.716 6.232-6.151.08-3.276-2.716-5.993-6.151-5.993-2.317 0-4.393 1.279-5.432 3.196-1.04-1.917-3.117-3.196-5.513-3.196-1.439 0-2.717.48-3.756 1.199V8.563A1.227 1.227 0 001.28 7.364h-.002zm22.19 4.983a1.265 1.265 0 00-.943.213l.004-.003c-.48.4-.639 1.199-.24 1.757l3.196 4.155-3.195 4.153c-.4.56-.32 1.28.24 1.68.559.4 1.355.397 1.755-.163l2.719-3.515L29.8 24.22c.4.48 1.199.559 1.757.16.48-.4.56-1.12.161-1.679l-3.117-4.153 3.117-4.076c.4-.559.397-1.357-.161-1.757-.64-.4-1.359-.32-1.757.24l-2.795 3.435-2.72-3.593c-.199-.24-.497-.4-.816-.451zM6.151 14.872c2.077 0 3.756 1.68 3.756 3.677 0 2.077-1.679 3.675-3.756 3.675s-3.755-1.597-3.755-3.675c0-1.997 1.677-3.677 3.755-3.677zm11.026 0c2.077 0 3.755 1.68 3.755 3.677-.08 2.077-1.757 3.675-3.755 3.675-2.077 0-3.756-1.597-3.756-3.675 0-1.997 1.679-3.677 3.756-3.677z"
-            fill="var(--color53, #0061d5)"
-          />
-        </svg>
         
       </span>
       <input
@@ -5347,7 +5317,7 @@ Array [
       />
       <button
         aria-hidden={true}
-        className="MuiButtonBase-root c4 c5 RcIconButton-root"
+        className="MuiButtonBase-root c3 c4 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -5365,10 +5335,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c6 delete_circle icon"
+          className="c1 c5 delete_circle icon"
         >
           <svg
-            className="c3"
+            className="c6"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -5380,7 +5350,7 @@ Array [
         </span>
       </button>
       <button
-        className="MuiButtonBase-root c4 c5 RcIconButton-root"
+        className="MuiButtonBase-root c3 c4 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -5397,10 +5367,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c6 add icon"
+          className="c1 c5 add icon"
         >
           <svg
-            className="c3"
+            className="c6"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -5419,7 +5389,7 @@ Array [
       some helper text
     </p>
   </div>,
-  .c3 {
+  .c6 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -5437,7 +5407,7 @@ Array [
   color: #666666;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5445,7 +5415,7 @@ Array [
   font-size: 24px;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5467,30 +5437,30 @@ Array [
   cursor: pointer;
 }
 
-.c5,
-.c5 .c1 {
+.c4,
+.c4 .c1 {
   font-size: 16px;
 }
 
-.c5:active,
-.c5:active .c1 {
+.c4:active,
+.c4:active .c1 {
   color: #666666;
 }
 
-.c5.focus-visible,
-.c5[data-focus-visible-added] {
+.c4.focus-visible,
+.c4[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.focus-visible:active,
-.c5[data-focus-visible-added]:active,
-.c5.focus-visible:active .c1,
-.c5[data-focus-visible-added]:active .c1 {
+.c4.focus-visible:active,
+.c4[data-focus-visible-added]:active,
+.c4.focus-visible:active .c1,
+.c4[data-focus-visible-added]:active .c1 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.focus-visible:after,
-.c5[data-focus-visible-added]:after {
+.c4.focus-visible:after,
+.c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -3px;
@@ -5503,53 +5473,53 @@ Array [
   z-index: 1;
 }
 
-.c5.RcIconButton-persistBg {
+.c4.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c5.RcIconButton-disabled,
-.c5.RcIconButton-disabled .c1 {
+.c4.RcIconButton-disabled,
+.c4.RcIconButton-disabled .c1 {
   color: #B9B9B9;
 }
 
-.c5.RcIconButton-invisible {
+.c4.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c5.RcIconButton-outline {
+.c4.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c5.RcIconButton-contained {
+.c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.84);
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added],
-.c5.RcIconButton-contained.focus-visible .c1,
-.c5.RcIconButton-contained[data-focus-visible-added] .c1 {
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added],
+.c4.RcIconButton-contained.focus-visible .c1,
+.c4.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: #fff;
 }
 
-.c5.RcIconButton-contained:active {
+.c4.RcIconButton-contained:active {
   background-color: rgba(102,102,102,0.76);
 }
 
-.c5.RcIconButton-contained:active,
-.c5.RcIconButton-contained:active .c1 {
+.c4.RcIconButton-contained:active,
+.c4.RcIconButton-contained:active .c1 {
   color: #fff;
 }
 
-.c5 .RcIconButtonTouchRipple-ripplePulsate {
+.c4 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
@@ -5590,15 +5560,15 @@ Array [
   color: #fff;
 }
 
-.c7 *:not(input) + .c4 {
+.c7 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c7 *:not(input) + .c4 {
+.c7 *:not(input) + .c3 {
   margin-left: 8px;
 }
 
-.c0 *:not(input) + .c4 {
+.c0 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -5729,7 +5699,7 @@ Array [
   line-height: 22px;
 }
 
-.c0 *:not(input) + .c4 {
+.c0 *:not(input) + .c3 {
   margin-left: 8px;
 }
 
@@ -5784,56 +5754,56 @@ Array [
   box-shadow: inset 0 0 0 1px #B9B9B9;
 }
 
-.c8 *:not(input) + .c4 {
+.c8 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c4 {
+.c8 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c4 {
+.c9 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c4 {
+.c9 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c4 {
+.c10 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c4 {
+.c10 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c4 {
+.c11 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c4 {
+.c11 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5:hover {
+  .c4:hover {
     background-color: transparent;
   }
 
-  .c5:hover,
-  .c5:hover .c1 {
+  .c4:hover,
+  .c4:hover .c1 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
+  .c4.RcIconButton-contained:hover {
     background-color: rgba(102,102,102,0.92);
   }
 
-  .c5.RcIconButton-contained:hover,
-  .c5.RcIconButton-contained:hover .c1 {
+  .c4.RcIconButton-contained:hover,
+  .c4.RcIconButton-contained:hover .c1 {
     color: #fff;
   }
 }
@@ -5894,18 +5864,8 @@ Array [
       onClick={[Function]}
     >
       <span
-        className="c1 c2 box_border icon"
+        className="c1 c2 icon"
       >
-        <svg
-          className="c3"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.279 7.364C.559 7.364 0 7.924 0 8.563v10.065a6.122 6.122 0 006.119 5.992h.034-.002a6.288 6.288 0 005.497-3.244l.016-.032c1.039 1.917 3.116 3.276 5.432 3.276 3.436 0 6.232-2.716 6.232-6.151.08-3.276-2.716-5.993-6.151-5.993-2.317 0-4.393 1.279-5.432 3.196-1.04-1.917-3.117-3.196-5.513-3.196-1.439 0-2.717.48-3.756 1.199V8.563A1.227 1.227 0 001.28 7.364h-.002zm22.19 4.983a1.265 1.265 0 00-.943.213l.004-.003c-.48.4-.639 1.199-.24 1.757l3.196 4.155-3.195 4.153c-.4.56-.32 1.28.24 1.68.559.4 1.355.397 1.755-.163l2.719-3.515L29.8 24.22c.4.48 1.199.559 1.757.16.48-.4.56-1.12.161-1.679l-3.117-4.153 3.117-4.076c.4-.559.397-1.357-.161-1.757-.64-.4-1.359-.32-1.757.24l-2.795 3.435-2.72-3.593c-.199-.24-.497-.4-.816-.451zM6.151 14.872c2.077 0 3.756 1.68 3.756 3.677 0 2.077-1.679 3.675-3.756 3.675s-3.755-1.597-3.755-3.675c0-1.997 1.677-3.677 3.755-3.677zm11.026 0c2.077 0 3.755 1.68 3.755 3.677-.08 2.077-1.757 3.675-3.755 3.675-2.077 0-3.756-1.597-3.756-3.675 0-1.997 1.679-3.677 3.756-3.677z"
-            fill="var(--color53, #0061d5)"
-          />
-        </svg>
         
       </span>
       <textarea
@@ -5948,7 +5908,7 @@ Array [
       />
       <button
         aria-hidden={true}
-        className="MuiButtonBase-root c4 c5 RcIconButton-root"
+        className="MuiButtonBase-root c3 c4 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -5966,10 +5926,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c6 delete_circle icon"
+          className="c1 c5 delete_circle icon"
         >
           <svg
-            className="c3"
+            className="c6"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -5981,7 +5941,7 @@ Array [
         </span>
       </button>
       <button
-        className="MuiButtonBase-root c4 c5 RcIconButton-root"
+        className="MuiButtonBase-root c3 c4 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -5998,10 +5958,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c6 add icon"
+          className="c1 c5 add icon"
         >
           <svg
-            className="c3"
+            className="c6"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -6102,7 +6062,7 @@ Array [
 }
 
 <br />,
-  .c3 {
+  .c6 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -6111,7 +6071,7 @@ Array [
   pointer-events: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6162,7 +6122,7 @@ Array [
   color: #fff;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6184,30 +6144,30 @@ Array [
   cursor: pointer;
 }
 
-.c5,
-.c5 .c1 {
+.c4,
+.c4 .c1 {
   font-size: 20px;
 }
 
-.c5:active,
-.c5:active .c1 {
+.c4:active,
+.c4:active .c1 {
   color: #666666;
 }
 
-.c5.focus-visible,
-.c5[data-focus-visible-added] {
+.c4.focus-visible,
+.c4[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.focus-visible:active,
-.c5[data-focus-visible-added]:active,
-.c5.focus-visible:active .c1,
-.c5[data-focus-visible-added]:active .c1 {
+.c4.focus-visible:active,
+.c4[data-focus-visible-added]:active,
+.c4.focus-visible:active .c1,
+.c4[data-focus-visible-added]:active .c1 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.focus-visible:after,
-.c5[data-focus-visible-added]:after {
+.c4.focus-visible:after,
+.c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -6220,76 +6180,76 @@ Array [
   z-index: 1;
 }
 
-.c5.RcIconButton-persistBg {
+.c4.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c5.RcIconButton-disabled,
-.c5.RcIconButton-disabled .c1 {
+.c4.RcIconButton-disabled,
+.c4.RcIconButton-disabled .c1 {
   color: #B9B9B9;
 }
 
-.c5.RcIconButton-invisible {
+.c4.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c5.RcIconButton-outline {
+.c4.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c5.RcIconButton-contained {
+.c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.84);
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added],
-.c5.RcIconButton-contained.focus-visible .c1,
-.c5.RcIconButton-contained[data-focus-visible-added] .c1 {
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added],
+.c4.RcIconButton-contained.focus-visible .c1,
+.c4.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: #fff;
 }
 
-.c5.RcIconButton-contained:active {
+.c4.RcIconButton-contained:active {
   background-color: rgba(102,102,102,0.76);
 }
 
-.c5.RcIconButton-contained:active,
-.c5.RcIconButton-contained:active .c1 {
+.c4.RcIconButton-contained:active,
+.c4.RcIconButton-contained:active .c1 {
   color: #fff;
 }
 
-.c5 .RcIconButtonTouchRipple-ripplePulsate {
+.c4 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
 }
 
-.c7 *:not(input) + .c4 {
+.c7 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c7 *:not(input) + .c4 {
+.c7 *:not(input) + .c3 {
   margin-left: 8px;
 }
 
-.c8 *:not(input) + .c4 {
+.c8 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c4 {
+.c8 *:not(input) + .c3 {
   margin-left: 8px;
 }
 
-.c0 *:not(input) + .c4 {
+.c0 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -6420,7 +6380,7 @@ Array [
   line-height: 24px;
 }
 
-.c0 *:not(input) + .c4 {
+.c0 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -6475,27 +6435,27 @@ Array [
   box-shadow: inset 0 0 0 1px #B9B9B9;
 }
 
-.c9 *:not(input) + .c4 {
+.c9 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c4 {
+.c9 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c4 {
+.c10 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c4 {
+.c10 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c4 {
+.c11 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c4 {
+.c11 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -6514,23 +6474,23 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5:hover {
+  .c4:hover {
     background-color: transparent;
   }
 
-  .c5:hover,
-  .c5:hover .c1 {
+  .c4:hover,
+  .c4:hover .c1 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
+  .c4.RcIconButton-contained:hover {
     background-color: rgba(102,102,102,0.92);
   }
 
-  .c5.RcIconButton-contained:hover,
-  .c5.RcIconButton-contained:hover .c1 {
+  .c4.RcIconButton-contained:hover,
+  .c4.RcIconButton-contained:hover .c1 {
     color: #fff;
   }
 }
@@ -6577,18 +6537,8 @@ Array [
       onClick={[Function]}
     >
       <span
-        className="c1 c2 box_border icon"
+        className="c1 c2 icon"
       >
-        <svg
-          className="c3"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.279 7.364C.559 7.364 0 7.924 0 8.563v10.065a6.122 6.122 0 006.119 5.992h.034-.002a6.288 6.288 0 005.497-3.244l.016-.032c1.039 1.917 3.116 3.276 5.432 3.276 3.436 0 6.232-2.716 6.232-6.151.08-3.276-2.716-5.993-6.151-5.993-2.317 0-4.393 1.279-5.432 3.196-1.04-1.917-3.117-3.196-5.513-3.196-1.439 0-2.717.48-3.756 1.199V8.563A1.227 1.227 0 001.28 7.364h-.002zm22.19 4.983a1.265 1.265 0 00-.943.213l.004-.003c-.48.4-.639 1.199-.24 1.757l3.196 4.155-3.195 4.153c-.4.56-.32 1.28.24 1.68.559.4 1.355.397 1.755-.163l2.719-3.515L29.8 24.22c.4.48 1.199.559 1.757.16.48-.4.56-1.12.161-1.679l-3.117-4.153 3.117-4.076c.4-.559.397-1.357-.161-1.757-.64-.4-1.359-.32-1.757.24l-2.795 3.435-2.72-3.593c-.199-.24-.497-.4-.816-.451zM6.151 14.872c2.077 0 3.756 1.68 3.756 3.677 0 2.077-1.679 3.675-3.756 3.675s-3.755-1.597-3.755-3.675c0-1.997 1.677-3.677 3.755-3.677zm11.026 0c2.077 0 3.755 1.68 3.755 3.677-.08 2.077-1.757 3.675-3.755 3.675-2.077 0-3.756-1.597-3.756-3.675 0-1.997 1.679-3.677 3.756-3.677z"
-            fill="var(--color53, #0061d5)"
-          />
-        </svg>
         
       </span>
       <input
@@ -6608,7 +6558,7 @@ Array [
       />
       <button
         aria-hidden={true}
-        className="MuiButtonBase-root c4 c5 RcIconButton-root"
+        className="MuiButtonBase-root c3 c4 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -6626,10 +6576,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c6 delete_circle icon"
+          className="c1 c5 delete_circle icon"
         >
           <svg
-            className="c3"
+            className="c6"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -6641,7 +6591,7 @@ Array [
         </span>
       </button>
       <button
-        className="MuiButtonBase-root c4 c5 RcIconButton-root"
+        className="MuiButtonBase-root c3 c4 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -6658,10 +6608,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c6 add icon"
+          className="c1 c5 add icon"
         >
           <svg
-            className="c3"
+            className="c6"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -6680,7 +6630,7 @@ Array [
       some helper text
     </p>
   </div>,
-  .c3 {
+  .c6 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -6689,7 +6639,7 @@ Array [
   pointer-events: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6740,7 +6690,7 @@ Array [
   color: #fff;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6762,30 +6712,30 @@ Array [
   cursor: pointer;
 }
 
-.c5,
-.c5 .c1 {
+.c4,
+.c4 .c1 {
   font-size: 20px;
 }
 
-.c5:active,
-.c5:active .c1 {
+.c4:active,
+.c4:active .c1 {
   color: #666666;
 }
 
-.c5.focus-visible,
-.c5[data-focus-visible-added] {
+.c4.focus-visible,
+.c4[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.focus-visible:active,
-.c5[data-focus-visible-added]:active,
-.c5.focus-visible:active .c1,
-.c5[data-focus-visible-added]:active .c1 {
+.c4.focus-visible:active,
+.c4[data-focus-visible-added]:active,
+.c4.focus-visible:active .c1,
+.c4[data-focus-visible-added]:active .c1 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.focus-visible:after,
-.c5[data-focus-visible-added]:after {
+.c4.focus-visible:after,
+.c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -6798,84 +6748,84 @@ Array [
   z-index: 1;
 }
 
-.c5.RcIconButton-persistBg {
+.c4.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c5.RcIconButton-disabled,
-.c5.RcIconButton-disabled .c1 {
+.c4.RcIconButton-disabled,
+.c4.RcIconButton-disabled .c1 {
   color: #B9B9B9;
 }
 
-.c5.RcIconButton-invisible {
+.c4.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c5.RcIconButton-outline {
+.c4.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c5.RcIconButton-contained {
+.c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.84);
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added],
-.c5.RcIconButton-contained.focus-visible .c1,
-.c5.RcIconButton-contained[data-focus-visible-added] .c1 {
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added],
+.c4.RcIconButton-contained.focus-visible .c1,
+.c4.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: #fff;
 }
 
-.c5.RcIconButton-contained:active {
+.c4.RcIconButton-contained:active {
   background-color: rgba(102,102,102,0.76);
 }
 
-.c5.RcIconButton-contained:active,
-.c5.RcIconButton-contained:active .c1 {
+.c4.RcIconButton-contained:active,
+.c4.RcIconButton-contained:active .c1 {
   color: #fff;
 }
 
-.c5 .RcIconButtonTouchRipple-ripplePulsate {
+.c4 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
 }
 
-.c7 *:not(input) + .c4 {
+.c7 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c7 *:not(input) + .c4 {
+.c7 *:not(input) + .c3 {
   margin-left: 8px;
 }
 
-.c8 *:not(input) + .c4 {
+.c8 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c4 {
+.c8 *:not(input) + .c3 {
   margin-left: 8px;
 }
 
-.c9 *:not(input) + .c4 {
+.c9 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c4 {
+.c9 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c0 *:not(input) + .c4 {
+.c0 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -7006,7 +6956,7 @@ Array [
   line-height: 24px;
 }
 
-.c0 *:not(input) + .c4 {
+.c0 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -7061,19 +7011,19 @@ Array [
   box-shadow: inset 0 0 0 1px #B9B9B9;
 }
 
-.c10 *:not(input) + .c4 {
+.c10 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c4 {
+.c10 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c4 {
+.c11 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c4 {
+.c11 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -7092,23 +7042,23 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5:hover {
+  .c4:hover {
     background-color: transparent;
   }
 
-  .c5:hover,
-  .c5:hover .c1 {
+  .c4:hover,
+  .c4:hover .c1 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
+  .c4.RcIconButton-contained:hover {
     background-color: rgba(102,102,102,0.92);
   }
 
-  .c5.RcIconButton-contained:hover,
-  .c5.RcIconButton-contained:hover .c1 {
+  .c4.RcIconButton-contained:hover,
+  .c4.RcIconButton-contained:hover .c1 {
     color: #fff;
   }
 }
@@ -7155,18 +7105,8 @@ Array [
       onClick={[Function]}
     >
       <span
-        className="c1 c2 box_border icon"
+        className="c1 c2 icon"
       >
-        <svg
-          className="c3"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.279 7.364C.559 7.364 0 7.924 0 8.563v10.065a6.122 6.122 0 006.119 5.992h.034-.002a6.288 6.288 0 005.497-3.244l.016-.032c1.039 1.917 3.116 3.276 5.432 3.276 3.436 0 6.232-2.716 6.232-6.151.08-3.276-2.716-5.993-6.151-5.993-2.317 0-4.393 1.279-5.432 3.196-1.04-1.917-3.117-3.196-5.513-3.196-1.439 0-2.717.48-3.756 1.199V8.563A1.227 1.227 0 001.28 7.364h-.002zm22.19 4.983a1.265 1.265 0 00-.943.213l.004-.003c-.48.4-.639 1.199-.24 1.757l3.196 4.155-3.195 4.153c-.4.56-.32 1.28.24 1.68.559.4 1.355.397 1.755-.163l2.719-3.515L29.8 24.22c.4.48 1.199.559 1.757.16.48-.4.56-1.12.161-1.679l-3.117-4.153 3.117-4.076c.4-.559.397-1.357-.161-1.757-.64-.4-1.359-.32-1.757.24l-2.795 3.435-2.72-3.593c-.199-.24-.497-.4-.816-.451zM6.151 14.872c2.077 0 3.756 1.68 3.756 3.677 0 2.077-1.679 3.675-3.756 3.675s-3.755-1.597-3.755-3.675c0-1.997 1.677-3.677 3.755-3.677zm11.026 0c2.077 0 3.755 1.68 3.755 3.677-.08 2.077-1.757 3.675-3.755 3.675-2.077 0-3.756-1.597-3.756-3.675 0-1.997 1.679-3.677 3.756-3.677z"
-            fill="var(--color53, #0061d5)"
-          />
-        </svg>
         
       </span>
       <textarea
@@ -7209,7 +7149,7 @@ Array [
       />
       <button
         aria-hidden={true}
-        className="MuiButtonBase-root c4 c5 RcIconButton-root"
+        className="MuiButtonBase-root c3 c4 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -7227,10 +7167,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c6 delete_circle icon"
+          className="c1 c5 delete_circle icon"
         >
           <svg
-            className="c3"
+            className="c6"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7242,7 +7182,7 @@ Array [
         </span>
       </button>
       <button
-        className="MuiButtonBase-root c4 c5 RcIconButton-root"
+        className="MuiButtonBase-root c3 c4 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -7259,10 +7199,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c6 add icon"
+          className="c1 c5 add icon"
         >
           <svg
-            className="c3"
+            className="c6"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7363,7 +7303,7 @@ Array [
 }
 
 <br />,
-  .c3 {
+  .c6 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -7372,7 +7312,7 @@ Array [
   pointer-events: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7423,7 +7363,7 @@ Array [
   color: #fff;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7445,30 +7385,30 @@ Array [
   cursor: pointer;
 }
 
-.c5,
-.c5 .c1 {
+.c4,
+.c4 .c1 {
   font-size: 20px;
 }
 
-.c5:active,
-.c5:active .c1 {
+.c4:active,
+.c4:active .c1 {
   color: #666666;
 }
 
-.c5.focus-visible,
-.c5[data-focus-visible-added] {
+.c4.focus-visible,
+.c4[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.focus-visible:active,
-.c5[data-focus-visible-added]:active,
-.c5.focus-visible:active .c1,
-.c5[data-focus-visible-added]:active .c1 {
+.c4.focus-visible:active,
+.c4[data-focus-visible-added]:active,
+.c4.focus-visible:active .c1,
+.c4[data-focus-visible-added]:active .c1 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.focus-visible:after,
-.c5[data-focus-visible-added]:after {
+.c4.focus-visible:after,
+.c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -7481,92 +7421,92 @@ Array [
   z-index: 1;
 }
 
-.c5.RcIconButton-persistBg {
+.c4.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c5.RcIconButton-disabled,
-.c5.RcIconButton-disabled .c1 {
+.c4.RcIconButton-disabled,
+.c4.RcIconButton-disabled .c1 {
   color: #B9B9B9;
 }
 
-.c5.RcIconButton-invisible {
+.c4.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c5.RcIconButton-outline {
+.c4.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c5.RcIconButton-contained {
+.c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.84);
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added],
-.c5.RcIconButton-contained.focus-visible .c1,
-.c5.RcIconButton-contained[data-focus-visible-added] .c1 {
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added],
+.c4.RcIconButton-contained.focus-visible .c1,
+.c4.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: #fff;
 }
 
-.c5.RcIconButton-contained:active {
+.c4.RcIconButton-contained:active {
   background-color: rgba(102,102,102,0.76);
 }
 
-.c5.RcIconButton-contained:active,
-.c5.RcIconButton-contained:active .c1 {
+.c4.RcIconButton-contained:active,
+.c4.RcIconButton-contained:active .c1 {
   color: #fff;
 }
 
-.c5 .RcIconButtonTouchRipple-ripplePulsate {
+.c4 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
 }
 
-.c7 *:not(input) + .c4 {
+.c7 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c7 *:not(input) + .c4 {
+.c7 *:not(input) + .c3 {
   margin-left: 8px;
 }
 
-.c8 *:not(input) + .c4 {
+.c8 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c4 {
+.c8 *:not(input) + .c3 {
   margin-left: 8px;
 }
 
-.c9 *:not(input) + .c4 {
+.c9 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c4 {
+.c9 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c4 {
+.c10 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c4 {
+.c10 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c0 *:not(input) + .c4 {
+.c0 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -7697,7 +7637,7 @@ Array [
   line-height: 24px;
 }
 
-.c0 *:not(input) + .c4 {
+.c0 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -7752,11 +7692,11 @@ Array [
   box-shadow: inset 0 0 0 1px #B9B9B9;
 }
 
-.c11 *:not(input) + .c4 {
+.c11 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c4 {
+.c11 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -7775,23 +7715,23 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5:hover {
+  .c4:hover {
     background-color: transparent;
   }
 
-  .c5:hover,
-  .c5:hover .c1 {
+  .c4:hover,
+  .c4:hover .c1 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
+  .c4.RcIconButton-contained:hover {
     background-color: rgba(102,102,102,0.92);
   }
 
-  .c5.RcIconButton-contained:hover,
-  .c5.RcIconButton-contained:hover .c1 {
+  .c4.RcIconButton-contained:hover,
+  .c4.RcIconButton-contained:hover .c1 {
     color: #fff;
   }
 }
@@ -7838,18 +7778,8 @@ Array [
       onClick={[Function]}
     >
       <span
-        className="c1 c2 box_border icon"
+        className="c1 c2 icon"
       >
-        <svg
-          className="c3"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.279 7.364C.559 7.364 0 7.924 0 8.563v10.065a6.122 6.122 0 006.119 5.992h.034-.002a6.288 6.288 0 005.497-3.244l.016-.032c1.039 1.917 3.116 3.276 5.432 3.276 3.436 0 6.232-2.716 6.232-6.151.08-3.276-2.716-5.993-6.151-5.993-2.317 0-4.393 1.279-5.432 3.196-1.04-1.917-3.117-3.196-5.513-3.196-1.439 0-2.717.48-3.756 1.199V8.563A1.227 1.227 0 001.28 7.364h-.002zm22.19 4.983a1.265 1.265 0 00-.943.213l.004-.003c-.48.4-.639 1.199-.24 1.757l3.196 4.155-3.195 4.153c-.4.56-.32 1.28.24 1.68.559.4 1.355.397 1.755-.163l2.719-3.515L29.8 24.22c.4.48 1.199.559 1.757.16.48-.4.56-1.12.161-1.679l-3.117-4.153 3.117-4.076c.4-.559.397-1.357-.161-1.757-.64-.4-1.359-.32-1.757.24l-2.795 3.435-2.72-3.593c-.199-.24-.497-.4-.816-.451zM6.151 14.872c2.077 0 3.756 1.68 3.756 3.677 0 2.077-1.679 3.675-3.756 3.675s-3.755-1.597-3.755-3.675c0-1.997 1.677-3.677 3.755-3.677zm11.026 0c2.077 0 3.755 1.68 3.755 3.677-.08 2.077-1.757 3.675-3.755 3.675-2.077 0-3.756-1.597-3.756-3.675 0-1.997 1.679-3.677 3.756-3.677z"
-            fill="var(--color53, #0061d5)"
-          />
-        </svg>
         
       </span>
       <input
@@ -7869,7 +7799,7 @@ Array [
       />
       <button
         aria-hidden={true}
-        className="MuiButtonBase-root c4 c5 RcIconButton-root"
+        className="MuiButtonBase-root c3 c4 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -7887,10 +7817,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c6 delete_circle icon"
+          className="c1 c5 delete_circle icon"
         >
           <svg
-            className="c3"
+            className="c6"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7902,7 +7832,7 @@ Array [
         </span>
       </button>
       <button
-        className="MuiButtonBase-root c4 c5 RcIconButton-root"
+        className="MuiButtonBase-root c3 c4 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -7919,10 +7849,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c6 add icon"
+          className="c1 c5 add icon"
         >
           <svg
-            className="c3"
+            className="c6"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7941,7 +7871,7 @@ Array [
       some helper text
     </p>
   </div>,
-  .c3 {
+  .c6 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -7950,7 +7880,7 @@ Array [
   pointer-events: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8001,7 +7931,7 @@ Array [
   color: #fff;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8023,30 +7953,30 @@ Array [
   cursor: pointer;
 }
 
-.c5,
-.c5 .c1 {
+.c4,
+.c4 .c1 {
   font-size: 20px;
 }
 
-.c5:active,
-.c5:active .c1 {
+.c4:active,
+.c4:active .c1 {
   color: #666666;
 }
 
-.c5.focus-visible,
-.c5[data-focus-visible-added] {
+.c4.focus-visible,
+.c4[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c5.focus-visible:active,
-.c5[data-focus-visible-added]:active,
-.c5.focus-visible:active .c1,
-.c5[data-focus-visible-added]:active .c1 {
+.c4.focus-visible:active,
+.c4[data-focus-visible-added]:active,
+.c4.focus-visible:active .c1,
+.c4[data-focus-visible-added]:active .c1 {
   color: rgba(102,102,102,0.88);
 }
 
-.c5.focus-visible:after,
-.c5[data-focus-visible-added]:after {
+.c4.focus-visible:after,
+.c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -8059,100 +7989,100 @@ Array [
   z-index: 1;
 }
 
-.c5.RcIconButton-persistBg {
+.c4.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c5.RcIconButton-disabled,
-.c5.RcIconButton-disabled .c1 {
+.c4.RcIconButton-disabled,
+.c4.RcIconButton-disabled .c1 {
   color: #B9B9B9;
 }
 
-.c5.RcIconButton-invisible {
+.c4.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c5.RcIconButton-outline {
+.c4.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c5.RcIconButton-contained {
+.c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.84);
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added],
-.c5.RcIconButton-contained.focus-visible .c1,
-.c5.RcIconButton-contained[data-focus-visible-added] .c1 {
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added],
+.c4.RcIconButton-contained.focus-visible .c1,
+.c4.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: #fff;
 }
 
-.c5.RcIconButton-contained:active {
+.c4.RcIconButton-contained:active {
   background-color: rgba(102,102,102,0.76);
 }
 
-.c5.RcIconButton-contained:active,
-.c5.RcIconButton-contained:active .c1 {
+.c4.RcIconButton-contained:active,
+.c4.RcIconButton-contained:active .c1 {
   color: #fff;
 }
 
-.c5 .RcIconButtonTouchRipple-ripplePulsate {
+.c4 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
 }
 
-.c7 *:not(input) + .c4 {
+.c7 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c7 *:not(input) + .c4 {
+.c7 *:not(input) + .c3 {
   margin-left: 8px;
 }
 
-.c8 *:not(input) + .c4 {
+.c8 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c4 {
+.c8 *:not(input) + .c3 {
   margin-left: 8px;
 }
 
-.c9 *:not(input) + .c4 {
+.c9 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c4 {
+.c9 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c4 {
+.c10 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c4 {
+.c10 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c4 {
+.c11 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c4 {
+.c11 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c0 *:not(input) + .c4 {
+.c0 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -8283,7 +8213,7 @@ Array [
   line-height: 24px;
 }
 
-.c0 *:not(input) + .c4 {
+.c0 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -8353,23 +8283,23 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5:hover {
+  .c4:hover {
     background-color: transparent;
   }
 
-  .c5:hover,
-  .c5:hover .c1 {
+  .c4:hover,
+  .c4:hover .c1 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
+  .c4.RcIconButton-contained:hover {
     background-color: rgba(102,102,102,0.92);
   }
 
-  .c5.RcIconButton-contained:hover,
-  .c5.RcIconButton-contained:hover .c1 {
+  .c4.RcIconButton-contained:hover,
+  .c4.RcIconButton-contained:hover .c1 {
     color: #fff;
   }
 }
@@ -8416,18 +8346,8 @@ Array [
       onClick={[Function]}
     >
       <span
-        className="c1 c2 box_border icon"
+        className="c1 c2 icon"
       >
-        <svg
-          className="c3"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.279 7.364C.559 7.364 0 7.924 0 8.563v10.065a6.122 6.122 0 006.119 5.992h.034-.002a6.288 6.288 0 005.497-3.244l.016-.032c1.039 1.917 3.116 3.276 5.432 3.276 3.436 0 6.232-2.716 6.232-6.151.08-3.276-2.716-5.993-6.151-5.993-2.317 0-4.393 1.279-5.432 3.196-1.04-1.917-3.117-3.196-5.513-3.196-1.439 0-2.717.48-3.756 1.199V8.563A1.227 1.227 0 001.28 7.364h-.002zm22.19 4.983a1.265 1.265 0 00-.943.213l.004-.003c-.48.4-.639 1.199-.24 1.757l3.196 4.155-3.195 4.153c-.4.56-.32 1.28.24 1.68.559.4 1.355.397 1.755-.163l2.719-3.515L29.8 24.22c.4.48 1.199.559 1.757.16.48-.4.56-1.12.161-1.679l-3.117-4.153 3.117-4.076c.4-.559.397-1.357-.161-1.757-.64-.4-1.359-.32-1.757.24l-2.795 3.435-2.72-3.593c-.199-.24-.497-.4-.816-.451zM6.151 14.872c2.077 0 3.756 1.68 3.756 3.677 0 2.077-1.679 3.675-3.756 3.675s-3.755-1.597-3.755-3.675c0-1.997 1.677-3.677 3.755-3.677zm11.026 0c2.077 0 3.755 1.68 3.755 3.677-.08 2.077-1.757 3.675-3.755 3.675-2.077 0-3.756-1.597-3.756-3.675 0-1.997 1.679-3.677 3.756-3.677z"
-            fill="var(--color53, #0061d5)"
-          />
-        </svg>
         
       </span>
       <textarea
@@ -8470,7 +8390,7 @@ Array [
       />
       <button
         aria-hidden={true}
-        className="MuiButtonBase-root c4 c5 RcIconButton-root"
+        className="MuiButtonBase-root c3 c4 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -8488,10 +8408,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c6 delete_circle icon"
+          className="c1 c5 delete_circle icon"
         >
           <svg
-            className="c3"
+            className="c6"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -8503,7 +8423,7 @@ Array [
         </span>
       </button>
       <button
-        className="MuiButtonBase-root c4 c5 RcIconButton-root"
+        className="MuiButtonBase-root c3 c4 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -8520,10 +8440,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c6 add icon"
+          className="c1 c5 add icon"
         >
           <svg
-            className="c3"
+            className="c6"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
