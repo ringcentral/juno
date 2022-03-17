@@ -14,9 +14,8 @@
   "scripts": {
     "clean": "rm -rf node_modules",
     "clean-cache": "rm -rf node_modules/.cache",
-    "framer:build": "node ./scripts/esmbuild build ../juno-core/src ../../public",
-    "move-dist-tmp": "mv ./index.js ../../public/index.js",
-    "framer:serve": "node ./scripts/esmbuild serve ../juno-core/src 8000"
+    "framer:build": "node ./scripts/esmbuild build ./src ../../public",
+    "framer:serve": "node ./scripts/esmbuild serve ./src 8000"
   },
   "dependencies": {
     "esbuild": "0.14.1",

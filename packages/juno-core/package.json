@@ -19,8 +19,6 @@
     "clean-cache": "rm -rf node_modules/.cache",
     "clean-dist": "rm -rf dist",
     "update-theme": "concurrently \"ts-node ./scripts/getOverrides\" \"ts-node ./scripts/createPaletteType\"",
-    "framer:build": "node ./scripts/esmbuild build ./src public",
-    "framer:serve": "node ./scripts/esmbuild serve ./src 8000",
     "lint:ts": "eslint './src/**/*.{ts,tsx,json}' --quiet",
     "prepublish-npm": "yarn release",
     "publish-npm": "cd dist && npm publish"
