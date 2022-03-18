@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-const svgToComponentMapping = require('./svgToComponentMapping');
+const svgToComponentMapping = require('../devUtils/svgToComponentMapping.ts');
 
 const svgAssetsDirPath = path.join(process.cwd(), './assets');
 

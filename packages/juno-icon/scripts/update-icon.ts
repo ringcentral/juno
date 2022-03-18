@@ -162,7 +162,7 @@ ${contentValue}
 
     fs.writeFileSync(
       path.join(devUtilsDir, './svgToComponentMapping.ts'),
-      `export default ${JSON.stringify(iconMap, null, 2)};`,
+      `module.exports = ${JSON.stringify(iconMap, null, 2)};`,
     );
 
     if (fs.existsSync(JunoIconCompPath))
