@@ -18,5 +18,5 @@ const VoicemailBorder = memo(
   ),
 );
 VoicemailBorder.displayName = 'VoicemailBorder';
-VoicemailBorder['iconName'] = 'voicemail-border';
+VoicemailBorder['iconName'] = 'voicemail_border';
 export default VoicemailBorder;

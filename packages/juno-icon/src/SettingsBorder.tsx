@@ -18,5 +18,5 @@ const SettingsBorder = memo(
   ),
 );
 SettingsBorder.displayName = 'SettingsBorder';
-SettingsBorder['iconName'] = 'settings-border';
+SettingsBorder['iconName'] = 'settings_border';
 export default SettingsBorder;
