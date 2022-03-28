@@ -7,11 +7,10 @@ import {
   useRef,
 } from 'react';
 
-import { useControlled } from '@material-ui/core/utils';
-
 import {
   combineProps,
   useForceUpdate,
+  useControlled,
   useId,
   useKeyboardMoveFocus,
 } from '../../../../foundation';

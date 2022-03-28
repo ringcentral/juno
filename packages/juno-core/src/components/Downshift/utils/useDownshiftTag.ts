@@ -3,10 +3,9 @@ import { ChangeEvent, HTMLAttributes, useMemo, useRef, useState } from 'react';
 import isString from 'lodash/isString';
 import uniqueId from 'lodash/uniqueId';
 
-import { useControlled } from '@material-ui/core/utils';
-
 import {
   combineProps,
+  useControlled,
   useEventCallback,
   useKeyboardMoveFocus,
   useRefState,

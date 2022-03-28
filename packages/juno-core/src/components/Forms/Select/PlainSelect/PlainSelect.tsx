@@ -1,6 +1,5 @@
 import React, { forwardRef, useMemo, useState } from 'react';
 
-import { useControlled } from '@material-ui/core';
 import { PopoverOrigin } from '@material-ui/core/Popover';
 
 import {
@@ -8,6 +7,7 @@ import {
   hasValue,
   logInDev,
   RcBaseProps,
+  useControlled,
   styled,
 } from '../../../../foundation';
 import { RcButton, RcButtonProps } from '../../../Buttons';

@@ -9,7 +9,6 @@ import React, {
 import moment from 'moment';
 
 import MomentUtils from '@date-io/moment';
-import { useControlled } from '@material-ui/core/utils';
 import {
   MuiPickersUtilsProvider,
   useUtils as useMuiUtils,
@@ -26,6 +25,7 @@ import {
   RcBaseSize,
   RcClassesProps,
   styled,
+  useControlled,
   useDeprecatedCheck,
   useEventCallback,
   useThemeProps,

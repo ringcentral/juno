@@ -2,6 +2,7 @@ export * from './useA11yKeyEvent';
 export * from './useAnnouncer';
 export * from './useAudio';
 export * from './useChange';
+export * from './useControlled';
 export * from './useDebounce';
 export * from './useEventCallback';
 export * from './useEventListener';
