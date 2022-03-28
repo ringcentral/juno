@@ -14,7 +14,7 @@ import {
 } from '@ringcentral/juno';
 import {
   Add as AddSvg,
-  BoxBorder as BoxSvg,
+  DefaultBox as BoxSvg,
   Close,
   Lock,
   LockBorder,
