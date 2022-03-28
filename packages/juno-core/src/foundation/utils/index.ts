@@ -4,6 +4,7 @@ export * from './classes';
 export * from './clearReactReferencesInNode';
 export * from './combineProps';
 export * from './deepmerge';
+export * from './getRefElement';
 export * from './getScrollbarSize';
 export * from './hasValue';
 export * from './isRcElement';

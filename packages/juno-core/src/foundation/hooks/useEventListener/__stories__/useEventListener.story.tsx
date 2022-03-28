@@ -9,7 +9,7 @@ export default {
   argTypes: {},
 } as Meta;
 
-export const useEventListenerExample: Story<{}> = () => {
+export const UseEventListenerExample: Story<{}> = () => {
   const ref = useRef<HTMLElement>(null);
 
   const listener = useEventListener(ref, 'click', () =>
@@ -53,5 +53,5 @@ export const useEventListenerExample: Story<{}> = () => {
   );
 };
 
-useEventListenerExample.args = {};
-useEventListenerExample.storyName = 'useEventListener';
+UseEventListenerExample.args = {};
+UseEventListenerExample.storyName = 'useEventListener';

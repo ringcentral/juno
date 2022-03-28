@@ -1,11 +1,15 @@
-import { RefObject } from 'react';
+import { getRefElement, RefOrElementOrCallback } from './getRefElement';
 
 /**
  * get current input element selection position and is that selectRange state
  */
-export function getSelectionPosition(inputRef: RefObject<HTMLInputElement>) {
-  const currentPosition = inputRef.current?.selectionStart;
-  const currentPositionEnd = inputRef.current?.selectionEnd;
+export function getSelectionPosition<
+  T extends HTMLInputElement | HTMLTextAreaElement,
+>(sourceTarget: RefOrElementOrCallback<T>) {
+  const input = getRefElement(sourceTarget);
+
+  const currentPosition = input?.selectionStart;
+  const currentPositionEnd = input?.selectionEnd;
   const isSelectRange = currentPosition !== currentPositionEnd;
 
   return {
@@ -18,8 +22,10 @@ export function getSelectionPosition(inputRef: RefObject<HTMLInputElement>) {
  * set input element selection position position,
  * if you need scroll that into view set `scrollIntoView` as true
  */
-export function setSelectionPosition(
-  inputRef: RefObject<HTMLInputElement>,
+export function setSelectionPosition<
+  T extends HTMLInputElement | HTMLTextAreaElement,
+>(
+  target: RefOrElementOrCallback<T>,
   options: {
     start: number | null;
     end: number | null;
@@ -27,7 +33,7 @@ export function setSelectionPosition(
     scrollIntoView?: boolean;
   },
 ) {
-  const elm = inputRef.current;
+  const elm = getRefElement(target);
 
   if (elm && options.start !== null && options.end !== null) {
     // * use blur and refocus to refocus position into view

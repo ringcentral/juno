@@ -4,7 +4,7 @@ import { useA11yKeyEvent } from '../useA11yKeyEvent';
 import { useDebounce } from '../useDebounce';
 import { useEventCallback } from '../useEventCallback';
 import {
-  isElmEqualOrContainRef,
+  isElmEqualOrContain,
   useTouchMouseEvent,
   UseTouchMouseEvent,
 } from '../useTouchMouseEvent';
@@ -82,10 +82,7 @@ export const useLongPress = <T = unknown>(
     // ! mouse up only trigger when up on element, so we host that in document
     document.removeEventListener('mouseup', onMouseUp);
 
-    if (
-      !isEmittedRef.current &&
-      isElmEqualOrContainRef(e.target as any, elmRef)
-    ) {
+    if (!isEmittedRef.current && isElmEqualOrContain(e.target as any, elmRef)) {
       onTap?.(e, reasonRef.current);
     }
 

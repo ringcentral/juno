@@ -1,4 +1,4 @@
-import { RefObject } from 'react';
+import { getRefElement, RefOrElementOrCallback } from './getRefElement';
 
 type RemoveClassNameOptions = {
   /**
@@ -18,7 +18,7 @@ type RemoveClassNameOptions = {
 /**
  * remove className from element, default will not scan child nodes, if you want to scan child nodes, set `scanChildren` to `true`.
  *
- * @param elmRef target element reference
+ * @param target target element reference or element or callback
  * @param removeClass className to remove, default will use class `includes` to check, if you want to use full match, set `fullMatch` to `true`
  *
  * @example
@@ -34,11 +34,11 @@ type RemoveClassNameOptions = {
  * ```
  */
 export function removeClassName(
-  elmRef: RefObject<HTMLElement>,
+  target: RefOrElementOrCallback,
   removeClass: string,
   { scanChildren = false, fullMatch = false }: RemoveClassNameOptions = {},
 ) {
-  const elm = elmRef.current;
+  const elm = getRefElement(target);
 
   if (!elm) return;
 

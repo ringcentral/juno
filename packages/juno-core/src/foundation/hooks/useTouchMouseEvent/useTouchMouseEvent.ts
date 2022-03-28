@@ -1,5 +1,6 @@
 import { MouseEventHandler, TouchEventHandler, useRef } from 'react';
 
+import { getRefElement, RefOrElementOrCallback } from '../../utils';
 import { useEventCallback } from '../useEventCallback';
 
 export interface UseTouchMouseEvent<T> {
@@ -103,13 +104,15 @@ export const useTouchMouseEvent = <T = unknown>(
   };
 };
 
-export const isElmEqualOrContainRef = (
-  elm: Element | undefined,
-  elmRef: React.RefObject<HTMLElement>,
+/**
+ * check is element equal or contains target element
+ */
+export const isElmEqualOrContain = (
+  sourceTarget: RefOrElementOrCallback,
+  containTarget: RefOrElementOrCallback,
 ) => {
-  return (
-    elm &&
-    elmRef &&
-    (elmRef.current === elm || elmRef.current?.contains(elm as any))
-  );
+  const elm = getRefElement(sourceTarget);
+  const target = getRefElement(containTarget);
+
+  return elm && target && (target === elm || target.contains(elm));
 };

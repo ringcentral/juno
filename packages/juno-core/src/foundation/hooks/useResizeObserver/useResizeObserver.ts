@@ -5,7 +5,7 @@ import throttle from 'lodash/throttle';
 import ResizeObserverPolyfill from 'resize-observer-polyfill';
 
 import { useRcPortalWindowContext } from '../../contexts';
-import { logInDev } from '../../utils';
+import { getRefElement, logInDev, RefOrElementOrCallback } from '../../utils';
 import { useEventCallback } from '../useEventCallback';
 import { useResultRef } from '../useResultRef';
 
@@ -59,9 +59,9 @@ export const getResizeObserver: (
  * @param callback callback when element resize
  * @param performance options that improve performance
  */
-export const useResizeObserver = (
+export const useResizeObserver = <T extends HTMLElement = HTMLElement>(
   /** target element ref */
-  ref: React.RefObject<HTMLElement>,
+  target: RefOrElementOrCallback<T>,
   /** trigger when `ResizeObserver` emit */
   callback: ResizeObserverCallback,
   /** performance options, `mode`, `time`, `ignoreFireWhenObserve` */
@@ -100,8 +100,8 @@ export const useResizeObserver = (
   });
 
   useLayoutEffect(() => {
-    const observer = observerRef.current!;
-    const elm = ref.current;
+    const elm = getRefElement(target);
+    const observer = observerRef.current;
 
     if (!elm) {
       throw new Error('please check element exist before bind resize observer');
@@ -114,7 +114,7 @@ export const useResizeObserver = (
     };
     // TODO: wait https://github.com/facebook/react/pull/20477 eslint support to remove this exhaustive-deps comment with support custom hooks
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ref]);
+  }, [target]);
 
   return observerRef.current;
 };

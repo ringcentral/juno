@@ -1,5 +1,4 @@
-import React from 'react';
-
+import { getRefElement, RefOrElementOrCallback } from '../../utils';
 import { useEventCallback } from '../useEventCallback';
 
 /**
@@ -7,10 +6,10 @@ import { useEventCallback } from '../useEventCallback';
  * that hiddenRef will auto be `tabindex={-1}` *
  */
 export const useHiddenTabindex = <T extends HTMLElement>(
-  hiddenRef: React.RefObject<T>,
+  target: RefOrElementOrCallback<T>,
 ) => {
   const handleFocus = useEventCallback(() => {
-    const hiddenElm = hiddenRef.current;
+    const hiddenElm = getRefElement(target);
 
     if (hiddenElm && hiddenElm.tabIndex === 0) {
       hiddenElm.tabIndex = -1;
@@ -18,7 +17,7 @@ export const useHiddenTabindex = <T extends HTMLElement>(
   });
 
   const handleBlur = useEventCallback(() => {
-    const hiddenElm = hiddenRef.current;
+    const hiddenElm = getRefElement(target);
 
     if (hiddenElm && hiddenElm.tabIndex === -1) {
       hiddenElm.tabIndex = 0;

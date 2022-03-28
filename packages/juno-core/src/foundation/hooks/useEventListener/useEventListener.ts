@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-import { isRef } from '../../utils/isRef';
+import { getRefElement, RefOrElementOrCallback } from '../../utils';
 import { useEventCallback } from '../useEventCallback';
 
 /**
@@ -19,7 +19,7 @@ import { useEventCallback } from '../useEventCallback';
  * ```
  */
 export function useEventListener(
-  target?: EventTarget | null | React.RefObject<HTMLElement>,
+  target?: RefOrElementOrCallback | EventTarget,
   ...o: Parameters<EventTarget['addEventListener']>
 ) {
   const [key, cb, options] = o;
@@ -28,19 +28,19 @@ export function useEventListener(
   const cancelRef = useRef<() => void>(() => {});
   const bindRef = useRef<() => void>(() => {});
 
-  const currentRefElm = isRef<HTMLElement>(target) && target.current;
+  const currentRefElm = getRefElement(target as any);
 
   useEffect(() => {
     if (!target) return;
+    const currentElm = getRefElement(target as any);
 
-    const elm = isRef<HTMLElement>(target) ? target.current : target;
-
-    if (!elm) {
+    if (!currentElm) {
       return cancelRef.current;
     }
 
-    bindRef.current = () => elm.addEventListener(key, listener, options);
-    cancelRef.current = () => elm.removeEventListener(key, listener, options);
+    bindRef.current = () => currentElm.addEventListener(key, listener, options);
+    cancelRef.current = () =>
+      currentElm.removeEventListener(key, listener, options);
 
     bindRef.current();
 

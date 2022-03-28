@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 
+import { getRefElement, RefOrElementOrCallback } from '../../utils';
 import { PerformanceOptions, useResizeObserver } from '../useResizeObserver';
 
 /**
@@ -7,7 +8,7 @@ import { PerformanceOptions, useResizeObserver } from '../useResizeObserver';
  */
 export const useOverflow = (
   /** target element ref */
-  innerRef: React.RefObject<HTMLElement>,
+  target: RefOrElementOrCallback,
   /** trigger when `ResizeObserver` emit */
   cb: (
     state: boolean,
@@ -32,25 +33,26 @@ export const useOverflow = (
   const showRef = useRef<boolean>();
 
   return useResizeObserver(
-    innerRef,
+    target,
     () => {
-      if (innerRef.current) {
-        const { scrollWidth, clientWidth, scrollHeight, clientHeight } =
-          innerRef.current;
+      const element = getRefElement(target);
 
-        const show = scrollWidth > clientWidth || scrollHeight > clientHeight;
+      if (!element) return;
 
-        if (showRef.current !== show) {
-          showRef.current = show;
+      const { scrollWidth, clientWidth, scrollHeight, clientHeight } = element;
 
-          cb(show, {
-            scrollWidth,
-            clientWidth,
-            scrollHeight,
-            clientHeight,
-          });
-        }
-      }
+      const show = scrollWidth > clientWidth || scrollHeight > clientHeight;
+
+      if (showRef.current === show) return;
+
+      // only emit when state change
+      showRef.current = show;
+      cb(show, {
+        scrollWidth,
+        clientWidth,
+        scrollHeight,
+        clientHeight,
+      });
     },
     performance,
   );
