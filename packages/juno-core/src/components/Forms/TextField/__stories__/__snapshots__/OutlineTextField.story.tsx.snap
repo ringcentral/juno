@@ -429,7 +429,7 @@ Array [
 }
 
 <br />,
-  .c6 {
+  .c3 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -438,7 +438,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -455,7 +455,7 @@ Array [
   color: #666666;
 }
 
-.c4 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -477,30 +477,30 @@ Array [
   cursor: pointer;
 }
 
-.c4,
-.c4 .c1 {
+.c5,
+.c5 .c1 {
   font-size: 20px;
 }
 
-.c4:active,
-.c4:active .c1 {
+.c5:active,
+.c5:active .c1 {
   color: #666666;
 }
 
-.c4.focus-visible,
-.c4[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c4.focus-visible:active,
-.c4[data-focus-visible-added]:active,
-.c4.focus-visible:active .c1,
-.c4[data-focus-visible-added]:active .c1 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c1,
+.c5[data-focus-visible-added]:active .c1 {
   color: rgba(102,102,102,0.88);
 }
 
-.c4.focus-visible:after,
-.c4[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -513,60 +513,60 @@ Array [
   z-index: 1;
 }
 
-.c4.RcIconButton-persistBg {
+.c5.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c4.RcIconButton-disabled,
-.c4.RcIconButton-disabled .c1 {
+.c5.RcIconButton-disabled,
+.c5.RcIconButton-disabled .c1 {
   color: #B9B9B9;
 }
 
-.c4.RcIconButton-invisible {
+.c5.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c4.RcIconButton-outline {
+.c5.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c4.RcIconButton-contained {
+.c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added] {
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.84);
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added],
-.c4.RcIconButton-contained.focus-visible .c1,
-.c4.RcIconButton-contained[data-focus-visible-added] .c1 {
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c1,
+.c5.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: #fff;
 }
 
-.c4.RcIconButton-contained:active {
+.c5.RcIconButton-contained:active {
   background-color: rgba(102,102,102,0.76);
 }
 
-.c4.RcIconButton-contained:active,
-.c4.RcIconButton-contained:active .c1 {
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c1 {
   color: #fff;
 }
 
-.c4 .RcIconButtonTouchRipple-ripplePulsate {
+.c5 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
 }
 
-.c0 *:not(input) + .c3 {
+.c0 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
@@ -697,7 +697,7 @@ Array [
   line-height: 24px;
 }
 
-.c0 *:not(input) + .c3 {
+.c0 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
@@ -753,23 +753,23 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c4:hover,
-  .c4:hover .c1 {
+  .c5:hover,
+  .c5:hover .c1 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-contained:hover {
+  .c5.RcIconButton-contained:hover {
     background-color: rgba(102,102,102,0.92);
   }
 
-  .c4.RcIconButton-contained:hover,
-  .c4.RcIconButton-contained:hover .c1 {
+  .c5.RcIconButton-contained:hover,
+  .c5.RcIconButton-contained:hover .c1 {
     color: #fff;
   }
 }
@@ -796,8 +796,28 @@ Array [
       onClick={[Function]}
     >
       <span
-        className="c1 c2 icon"
+        className="c1 c2 default-box icon"
       >
+        <svg
+          className="c3"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
+            fill="var(--color2, #fff)"
+            opacity={0.992}
+          />
+          <path
+            d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
+            fill="var(--color57, #a7aaae)"
+            opacity={0.16}
+          />
+          <path
+            d="M4.959 9C4.419 9 4 9.419 4 9.897v7.531a4.586 4.586 0 004.589 4.483h.025-.001a4.718 4.718 0 004.123-2.427l.012-.024c.779 1.434 2.337 2.451 4.074 2.451 2.577 0 4.674-2.032 4.674-4.602.06-2.451-2.037-4.484-4.613-4.484-1.738 0-3.295.957-4.074 2.391-.78-1.434-2.338-2.391-4.135-2.391a4.935 4.935 0 00-2.817.897V9.897A.92.92 0 004.96 9h-.001zm16.643 3.728a.944.944 0 00-.707.16l.003-.002c-.36.299-.479.897-.18 1.315l2.397 3.108-2.396 3.107c-.3.419-.24.958.18 1.257.419.299 1.016.297 1.316-.122l2.039-2.63 2.096 2.69c.3.359.899.418 1.318.12.36-.299.42-.838.121-1.256l-2.338-3.107 2.338-3.05c.3-.418.298-1.016-.121-1.315-.48-.299-1.019-.239-1.318.18l-2.096 2.57-2.04-2.688a1.001 1.001 0 00-.612-.337zM8.613 14.617c1.558 0 2.817 1.257 2.817 2.751 0 1.554-1.259 2.749-2.817 2.749s-2.816-1.195-2.816-2.749c0-1.494 1.258-2.751 2.816-2.751zm8.27 0c1.558 0 2.816 1.257 2.816 2.751-.06 1.554-1.318 2.749-2.816 2.749-1.558 0-2.817-1.195-2.817-2.749 0-1.494 1.259-2.751 2.817-2.751z"
+            fill="var(--color21, #0061d5)"
+          />
+        </svg>
         
       </span>
       <input
@@ -817,7 +837,7 @@ Array [
       />
       <button
         aria-hidden={true}
-        className="MuiButtonBase-root c3 c4 RcIconButton-root"
+        className="MuiButtonBase-root c4 c5 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -835,10 +855,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c5 delete_circle icon"
+          className="c1 c6 delete_circle icon"
         >
           <svg
-            className="c6"
+            className="c3"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -850,7 +870,7 @@ Array [
         </span>
       </button>
       <button
-        className="MuiButtonBase-root c3 c4 RcIconButton-root"
+        className="MuiButtonBase-root c4 c5 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -867,10 +887,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c5 add icon"
+          className="c1 c6 add icon"
         >
           <svg
-            className="c6"
+            className="c3"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -1942,8 +1962,28 @@ Array [
         type="button"
       >
         <span
-          className="c1 c2 icon"
+          className="c1 c2 default-box icon"
         >
+          <svg
+            className="c3"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
+              fill="var(--color2, #fff)"
+              opacity={0.992}
+            />
+            <path
+              d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
+              fill="var(--color57, #a7aaae)"
+              opacity={0.16}
+            />
+            <path
+              d="M4.959 9C4.419 9 4 9.419 4 9.897v7.531a4.586 4.586 0 004.589 4.483h.025-.001a4.718 4.718 0 004.123-2.427l.012-.024c.779 1.434 2.337 2.451 4.074 2.451 2.577 0 4.674-2.032 4.674-4.602.06-2.451-2.037-4.484-4.613-4.484-1.738 0-3.295.957-4.074 2.391-.78-1.434-2.338-2.391-4.135-2.391a4.935 4.935 0 00-2.817.897V9.897A.92.92 0 004.96 9h-.001zm16.643 3.728a.944.944 0 00-.707.16l.003-.002c-.36.299-.479.897-.18 1.315l2.397 3.108-2.396 3.107c-.3.419-.24.958.18 1.257.419.299 1.016.297 1.316-.122l2.039-2.63 2.096 2.69c.3.359.899.418 1.318.12.36-.299.42-.838.121-1.256l-2.338-3.107 2.338-3.05c.3-.418.298-1.016-.121-1.315-.48-.299-1.019-.239-1.318.18l-2.096 2.57-2.04-2.688a1.001 1.001 0 00-.612-.337zM8.613 14.617c1.558 0 2.817 1.257 2.817 2.751 0 1.554-1.259 2.749-2.817 2.749s-2.816-1.195-2.816-2.749c0-1.494 1.258-2.751 2.816-2.751zm8.27 0c1.558 0 2.816 1.257 2.816 2.751-.06 1.554-1.318 2.749-2.816 2.749-1.558 0-2.817-1.195-2.817-2.749 0-1.494 1.259-2.751 2.817-2.751z"
+              fill="var(--color21, #0061d5)"
+            />
+          </svg>
           
         </span>
       </button>
@@ -4821,7 +4861,7 @@ Array [
 
 exports[`Storyshots 🚀 Cleanup Components/Forms/OutlineTextField OutlineTextField Sizes 1`] = `
 Array [
-  .c6 {
+  .c3 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -4839,7 +4879,7 @@ Array [
   color: #666666;
 }
 
-.c5 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4847,7 +4887,7 @@ Array [
   font-size: 24px;
 }
 
-.c4 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4869,30 +4909,30 @@ Array [
   cursor: pointer;
 }
 
-.c4,
-.c4 .c1 {
+.c5,
+.c5 .c1 {
   font-size: 16px;
 }
 
-.c4:active,
-.c4:active .c1 {
+.c5:active,
+.c5:active .c1 {
   color: #666666;
 }
 
-.c4.focus-visible,
-.c4[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c4.focus-visible:active,
-.c4[data-focus-visible-added]:active,
-.c4.focus-visible:active .c1,
-.c4[data-focus-visible-added]:active .c1 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c1,
+.c5[data-focus-visible-added]:active .c1 {
   color: rgba(102,102,102,0.88);
 }
 
-.c4.focus-visible:after,
-.c4[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -3px;
@@ -4905,53 +4945,53 @@ Array [
   z-index: 1;
 }
 
-.c4.RcIconButton-persistBg {
+.c5.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c4.RcIconButton-disabled,
-.c4.RcIconButton-disabled .c1 {
+.c5.RcIconButton-disabled,
+.c5.RcIconButton-disabled .c1 {
   color: #B9B9B9;
 }
 
-.c4.RcIconButton-invisible {
+.c5.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c4.RcIconButton-outline {
+.c5.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c4.RcIconButton-contained {
+.c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added] {
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.84);
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added],
-.c4.RcIconButton-contained.focus-visible .c1,
-.c4.RcIconButton-contained[data-focus-visible-added] .c1 {
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c1,
+.c5.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: #fff;
 }
 
-.c4.RcIconButton-contained:active {
+.c5.RcIconButton-contained:active {
   background-color: rgba(102,102,102,0.76);
 }
 
-.c4.RcIconButton-contained:active,
-.c4.RcIconButton-contained:active .c1 {
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c1 {
   color: #fff;
 }
 
-.c4 .RcIconButtonTouchRipple-ripplePulsate {
+.c5 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
@@ -4992,7 +5032,7 @@ Array [
   color: #fff;
 }
 
-.c0 *:not(input) + .c3 {
+.c0 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
@@ -5123,7 +5163,7 @@ Array [
   line-height: 22px;
 }
 
-.c0 *:not(input) + .c3 {
+.c0 *:not(input) + .c4 {
   margin-left: 8px;
 }
 
@@ -5178,64 +5218,64 @@ Array [
   box-shadow: inset 0 0 0 1px #B9B9B9;
 }
 
-.c7 *:not(input) + .c3 {
+.c7 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c7 *:not(input) + .c3 {
+.c7 *:not(input) + .c4 {
   margin-left: 8px;
 }
 
-.c8 *:not(input) + .c3 {
+.c8 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c3 {
+.c8 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c3 {
+.c9 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c3 {
+.c9 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c3 {
+.c10 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c3 {
+.c10 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c3 {
+.c11 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c3 {
+.c11 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c4:hover,
-  .c4:hover .c1 {
+  .c5:hover,
+  .c5:hover .c1 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-contained:hover {
+  .c5.RcIconButton-contained:hover {
     background-color: rgba(102,102,102,0.92);
   }
 
-  .c4.RcIconButton-contained:hover,
-  .c4.RcIconButton-contained:hover .c1 {
+  .c5.RcIconButton-contained:hover,
+  .c5.RcIconButton-contained:hover .c1 {
     color: #fff;
   }
 }
@@ -5296,8 +5336,28 @@ Array [
       onClick={[Function]}
     >
       <span
-        className="c1 c2 icon"
+        className="c1 c2 default-box icon"
       >
+        <svg
+          className="c3"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
+            fill="var(--color2, #fff)"
+            opacity={0.992}
+          />
+          <path
+            d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
+            fill="var(--color57, #a7aaae)"
+            opacity={0.16}
+          />
+          <path
+            d="M4.959 9C4.419 9 4 9.419 4 9.897v7.531a4.586 4.586 0 004.589 4.483h.025-.001a4.718 4.718 0 004.123-2.427l.012-.024c.779 1.434 2.337 2.451 4.074 2.451 2.577 0 4.674-2.032 4.674-4.602.06-2.451-2.037-4.484-4.613-4.484-1.738 0-3.295.957-4.074 2.391-.78-1.434-2.338-2.391-4.135-2.391a4.935 4.935 0 00-2.817.897V9.897A.92.92 0 004.96 9h-.001zm16.643 3.728a.944.944 0 00-.707.16l.003-.002c-.36.299-.479.897-.18 1.315l2.397 3.108-2.396 3.107c-.3.419-.24.958.18 1.257.419.299 1.016.297 1.316-.122l2.039-2.63 2.096 2.69c.3.359.899.418 1.318.12.36-.299.42-.838.121-1.256l-2.338-3.107 2.338-3.05c.3-.418.298-1.016-.121-1.315-.48-.299-1.019-.239-1.318.18l-2.096 2.57-2.04-2.688a1.001 1.001 0 00-.612-.337zM8.613 14.617c1.558 0 2.817 1.257 2.817 2.751 0 1.554-1.259 2.749-2.817 2.749s-2.816-1.195-2.816-2.749c0-1.494 1.258-2.751 2.816-2.751zm8.27 0c1.558 0 2.816 1.257 2.816 2.751-.06 1.554-1.318 2.749-2.816 2.749-1.558 0-2.817-1.195-2.817-2.749 0-1.494 1.259-2.751 2.817-2.751z"
+            fill="var(--color21, #0061d5)"
+          />
+        </svg>
         
       </span>
       <input
@@ -5317,7 +5377,7 @@ Array [
       />
       <button
         aria-hidden={true}
-        className="MuiButtonBase-root c3 c4 RcIconButton-root"
+        className="MuiButtonBase-root c4 c5 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -5335,10 +5395,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c5 delete_circle icon"
+          className="c1 c6 delete_circle icon"
         >
           <svg
-            className="c6"
+            className="c3"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -5350,7 +5410,7 @@ Array [
         </span>
       </button>
       <button
-        className="MuiButtonBase-root c3 c4 RcIconButton-root"
+        className="MuiButtonBase-root c4 c5 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -5367,10 +5427,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c5 add icon"
+          className="c1 c6 add icon"
         >
           <svg
-            className="c6"
+            className="c3"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -5389,7 +5449,7 @@ Array [
       some helper text
     </p>
   </div>,
-  .c6 {
+  .c3 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -5407,7 +5467,7 @@ Array [
   color: #666666;
 }
 
-.c5 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5415,7 +5475,7 @@ Array [
   font-size: 24px;
 }
 
-.c4 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5437,30 +5497,30 @@ Array [
   cursor: pointer;
 }
 
-.c4,
-.c4 .c1 {
+.c5,
+.c5 .c1 {
   font-size: 16px;
 }
 
-.c4:active,
-.c4:active .c1 {
+.c5:active,
+.c5:active .c1 {
   color: #666666;
 }
 
-.c4.focus-visible,
-.c4[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c4.focus-visible:active,
-.c4[data-focus-visible-added]:active,
-.c4.focus-visible:active .c1,
-.c4[data-focus-visible-added]:active .c1 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c1,
+.c5[data-focus-visible-added]:active .c1 {
   color: rgba(102,102,102,0.88);
 }
 
-.c4.focus-visible:after,
-.c4[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -3px;
@@ -5473,53 +5533,53 @@ Array [
   z-index: 1;
 }
 
-.c4.RcIconButton-persistBg {
+.c5.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c4.RcIconButton-disabled,
-.c4.RcIconButton-disabled .c1 {
+.c5.RcIconButton-disabled,
+.c5.RcIconButton-disabled .c1 {
   color: #B9B9B9;
 }
 
-.c4.RcIconButton-invisible {
+.c5.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c4.RcIconButton-outline {
+.c5.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c4.RcIconButton-contained {
+.c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added] {
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.84);
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added],
-.c4.RcIconButton-contained.focus-visible .c1,
-.c4.RcIconButton-contained[data-focus-visible-added] .c1 {
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c1,
+.c5.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: #fff;
 }
 
-.c4.RcIconButton-contained:active {
+.c5.RcIconButton-contained:active {
   background-color: rgba(102,102,102,0.76);
 }
 
-.c4.RcIconButton-contained:active,
-.c4.RcIconButton-contained:active .c1 {
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c1 {
   color: #fff;
 }
 
-.c4 .RcIconButtonTouchRipple-ripplePulsate {
+.c5 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
@@ -5560,15 +5620,15 @@ Array [
   color: #fff;
 }
 
-.c7 *:not(input) + .c3 {
+.c7 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c7 *:not(input) + .c3 {
+.c7 *:not(input) + .c4 {
   margin-left: 8px;
 }
 
-.c0 *:not(input) + .c3 {
+.c0 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
@@ -5699,7 +5759,7 @@ Array [
   line-height: 22px;
 }
 
-.c0 *:not(input) + .c3 {
+.c0 *:not(input) + .c4 {
   margin-left: 8px;
 }
 
@@ -5754,56 +5814,56 @@ Array [
   box-shadow: inset 0 0 0 1px #B9B9B9;
 }
 
-.c8 *:not(input) + .c3 {
+.c8 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c3 {
+.c8 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c3 {
+.c9 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c3 {
+.c9 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c3 {
+.c10 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c3 {
+.c10 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c3 {
+.c11 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c3 {
+.c11 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c4:hover,
-  .c4:hover .c1 {
+  .c5:hover,
+  .c5:hover .c1 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-contained:hover {
+  .c5.RcIconButton-contained:hover {
     background-color: rgba(102,102,102,0.92);
   }
 
-  .c4.RcIconButton-contained:hover,
-  .c4.RcIconButton-contained:hover .c1 {
+  .c5.RcIconButton-contained:hover,
+  .c5.RcIconButton-contained:hover .c1 {
     color: #fff;
   }
 }
@@ -5864,8 +5924,28 @@ Array [
       onClick={[Function]}
     >
       <span
-        className="c1 c2 icon"
+        className="c1 c2 default-box icon"
       >
+        <svg
+          className="c3"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
+            fill="var(--color2, #fff)"
+            opacity={0.992}
+          />
+          <path
+            d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
+            fill="var(--color57, #a7aaae)"
+            opacity={0.16}
+          />
+          <path
+            d="M4.959 9C4.419 9 4 9.419 4 9.897v7.531a4.586 4.586 0 004.589 4.483h.025-.001a4.718 4.718 0 004.123-2.427l.012-.024c.779 1.434 2.337 2.451 4.074 2.451 2.577 0 4.674-2.032 4.674-4.602.06-2.451-2.037-4.484-4.613-4.484-1.738 0-3.295.957-4.074 2.391-.78-1.434-2.338-2.391-4.135-2.391a4.935 4.935 0 00-2.817.897V9.897A.92.92 0 004.96 9h-.001zm16.643 3.728a.944.944 0 00-.707.16l.003-.002c-.36.299-.479.897-.18 1.315l2.397 3.108-2.396 3.107c-.3.419-.24.958.18 1.257.419.299 1.016.297 1.316-.122l2.039-2.63 2.096 2.69c.3.359.899.418 1.318.12.36-.299.42-.838.121-1.256l-2.338-3.107 2.338-3.05c.3-.418.298-1.016-.121-1.315-.48-.299-1.019-.239-1.318.18l-2.096 2.57-2.04-2.688a1.001 1.001 0 00-.612-.337zM8.613 14.617c1.558 0 2.817 1.257 2.817 2.751 0 1.554-1.259 2.749-2.817 2.749s-2.816-1.195-2.816-2.749c0-1.494 1.258-2.751 2.816-2.751zm8.27 0c1.558 0 2.816 1.257 2.816 2.751-.06 1.554-1.318 2.749-2.816 2.749-1.558 0-2.817-1.195-2.817-2.749 0-1.494 1.259-2.751 2.817-2.751z"
+            fill="var(--color21, #0061d5)"
+          />
+        </svg>
         
       </span>
       <textarea
@@ -5908,7 +5988,7 @@ Array [
       />
       <button
         aria-hidden={true}
-        className="MuiButtonBase-root c3 c4 RcIconButton-root"
+        className="MuiButtonBase-root c4 c5 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -5926,10 +6006,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c5 delete_circle icon"
+          className="c1 c6 delete_circle icon"
         >
           <svg
-            className="c6"
+            className="c3"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -5941,7 +6021,7 @@ Array [
         </span>
       </button>
       <button
-        className="MuiButtonBase-root c3 c4 RcIconButton-root"
+        className="MuiButtonBase-root c4 c5 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -5958,10 +6038,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c5 add icon"
+          className="c1 c6 add icon"
         >
           <svg
-            className="c6"
+            className="c3"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -6062,7 +6142,7 @@ Array [
 }
 
 <br />,
-  .c6 {
+  .c3 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -6071,7 +6151,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6122,7 +6202,7 @@ Array [
   color: #fff;
 }
 
-.c4 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6144,30 +6224,30 @@ Array [
   cursor: pointer;
 }
 
-.c4,
-.c4 .c1 {
+.c5,
+.c5 .c1 {
   font-size: 20px;
 }
 
-.c4:active,
-.c4:active .c1 {
+.c5:active,
+.c5:active .c1 {
   color: #666666;
 }
 
-.c4.focus-visible,
-.c4[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c4.focus-visible:active,
-.c4[data-focus-visible-added]:active,
-.c4.focus-visible:active .c1,
-.c4[data-focus-visible-added]:active .c1 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c1,
+.c5[data-focus-visible-added]:active .c1 {
   color: rgba(102,102,102,0.88);
 }
 
-.c4.focus-visible:after,
-.c4[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -6180,76 +6260,76 @@ Array [
   z-index: 1;
 }
 
-.c4.RcIconButton-persistBg {
+.c5.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c4.RcIconButton-disabled,
-.c4.RcIconButton-disabled .c1 {
+.c5.RcIconButton-disabled,
+.c5.RcIconButton-disabled .c1 {
   color: #B9B9B9;
 }
 
-.c4.RcIconButton-invisible {
+.c5.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c4.RcIconButton-outline {
+.c5.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c4.RcIconButton-contained {
+.c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added] {
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.84);
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added],
-.c4.RcIconButton-contained.focus-visible .c1,
-.c4.RcIconButton-contained[data-focus-visible-added] .c1 {
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c1,
+.c5.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: #fff;
 }
 
-.c4.RcIconButton-contained:active {
+.c5.RcIconButton-contained:active {
   background-color: rgba(102,102,102,0.76);
 }
 
-.c4.RcIconButton-contained:active,
-.c4.RcIconButton-contained:active .c1 {
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c1 {
   color: #fff;
 }
 
-.c4 .RcIconButtonTouchRipple-ripplePulsate {
+.c5 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
 }
 
-.c7 *:not(input) + .c3 {
+.c7 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c7 *:not(input) + .c3 {
+.c7 *:not(input) + .c4 {
   margin-left: 8px;
 }
 
-.c8 *:not(input) + .c3 {
+.c8 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c3 {
+.c8 *:not(input) + .c4 {
   margin-left: 8px;
 }
 
-.c0 *:not(input) + .c3 {
+.c0 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
@@ -6380,7 +6460,7 @@ Array [
   line-height: 24px;
 }
 
-.c0 *:not(input) + .c3 {
+.c0 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
@@ -6435,27 +6515,27 @@ Array [
   box-shadow: inset 0 0 0 1px #B9B9B9;
 }
 
-.c9 *:not(input) + .c3 {
+.c9 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c3 {
+.c9 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c3 {
+.c10 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c3 {
+.c10 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c3 {
+.c11 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c3 {
+.c11 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
@@ -6474,23 +6554,23 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c4:hover,
-  .c4:hover .c1 {
+  .c5:hover,
+  .c5:hover .c1 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-contained:hover {
+  .c5.RcIconButton-contained:hover {
     background-color: rgba(102,102,102,0.92);
   }
 
-  .c4.RcIconButton-contained:hover,
-  .c4.RcIconButton-contained:hover .c1 {
+  .c5.RcIconButton-contained:hover,
+  .c5.RcIconButton-contained:hover .c1 {
     color: #fff;
   }
 }
@@ -6537,8 +6617,28 @@ Array [
       onClick={[Function]}
     >
       <span
-        className="c1 c2 icon"
+        className="c1 c2 default-box icon"
       >
+        <svg
+          className="c3"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
+            fill="var(--color2, #fff)"
+            opacity={0.992}
+          />
+          <path
+            d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
+            fill="var(--color57, #a7aaae)"
+            opacity={0.16}
+          />
+          <path
+            d="M4.959 9C4.419 9 4 9.419 4 9.897v7.531a4.586 4.586 0 004.589 4.483h.025-.001a4.718 4.718 0 004.123-2.427l.012-.024c.779 1.434 2.337 2.451 4.074 2.451 2.577 0 4.674-2.032 4.674-4.602.06-2.451-2.037-4.484-4.613-4.484-1.738 0-3.295.957-4.074 2.391-.78-1.434-2.338-2.391-4.135-2.391a4.935 4.935 0 00-2.817.897V9.897A.92.92 0 004.96 9h-.001zm16.643 3.728a.944.944 0 00-.707.16l.003-.002c-.36.299-.479.897-.18 1.315l2.397 3.108-2.396 3.107c-.3.419-.24.958.18 1.257.419.299 1.016.297 1.316-.122l2.039-2.63 2.096 2.69c.3.359.899.418 1.318.12.36-.299.42-.838.121-1.256l-2.338-3.107 2.338-3.05c.3-.418.298-1.016-.121-1.315-.48-.299-1.019-.239-1.318.18l-2.096 2.57-2.04-2.688a1.001 1.001 0 00-.612-.337zM8.613 14.617c1.558 0 2.817 1.257 2.817 2.751 0 1.554-1.259 2.749-2.817 2.749s-2.816-1.195-2.816-2.749c0-1.494 1.258-2.751 2.816-2.751zm8.27 0c1.558 0 2.816 1.257 2.816 2.751-.06 1.554-1.318 2.749-2.816 2.749-1.558 0-2.817-1.195-2.817-2.749 0-1.494 1.259-2.751 2.817-2.751z"
+            fill="var(--color21, #0061d5)"
+          />
+        </svg>
         
       </span>
       <input
@@ -6558,7 +6658,7 @@ Array [
       />
       <button
         aria-hidden={true}
-        className="MuiButtonBase-root c3 c4 RcIconButton-root"
+        className="MuiButtonBase-root c4 c5 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -6576,10 +6676,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c5 delete_circle icon"
+          className="c1 c6 delete_circle icon"
         >
           <svg
-            className="c6"
+            className="c3"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -6591,7 +6691,7 @@ Array [
         </span>
       </button>
       <button
-        className="MuiButtonBase-root c3 c4 RcIconButton-root"
+        className="MuiButtonBase-root c4 c5 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -6608,10 +6708,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c5 add icon"
+          className="c1 c6 add icon"
         >
           <svg
-            className="c6"
+            className="c3"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -6630,7 +6730,7 @@ Array [
       some helper text
     </p>
   </div>,
-  .c6 {
+  .c3 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -6639,7 +6739,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6690,7 +6790,7 @@ Array [
   color: #fff;
 }
 
-.c4 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6712,30 +6812,30 @@ Array [
   cursor: pointer;
 }
 
-.c4,
-.c4 .c1 {
+.c5,
+.c5 .c1 {
   font-size: 20px;
 }
 
-.c4:active,
-.c4:active .c1 {
+.c5:active,
+.c5:active .c1 {
   color: #666666;
 }
 
-.c4.focus-visible,
-.c4[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c4.focus-visible:active,
-.c4[data-focus-visible-added]:active,
-.c4.focus-visible:active .c1,
-.c4[data-focus-visible-added]:active .c1 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c1,
+.c5[data-focus-visible-added]:active .c1 {
   color: rgba(102,102,102,0.88);
 }
 
-.c4.focus-visible:after,
-.c4[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -6748,84 +6848,84 @@ Array [
   z-index: 1;
 }
 
-.c4.RcIconButton-persistBg {
+.c5.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c4.RcIconButton-disabled,
-.c4.RcIconButton-disabled .c1 {
+.c5.RcIconButton-disabled,
+.c5.RcIconButton-disabled .c1 {
   color: #B9B9B9;
 }
 
-.c4.RcIconButton-invisible {
+.c5.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c4.RcIconButton-outline {
+.c5.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c4.RcIconButton-contained {
+.c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added] {
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.84);
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added],
-.c4.RcIconButton-contained.focus-visible .c1,
-.c4.RcIconButton-contained[data-focus-visible-added] .c1 {
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c1,
+.c5.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: #fff;
 }
 
-.c4.RcIconButton-contained:active {
+.c5.RcIconButton-contained:active {
   background-color: rgba(102,102,102,0.76);
 }
 
-.c4.RcIconButton-contained:active,
-.c4.RcIconButton-contained:active .c1 {
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c1 {
   color: #fff;
 }
 
-.c4 .RcIconButtonTouchRipple-ripplePulsate {
+.c5 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
 }
 
-.c7 *:not(input) + .c3 {
+.c7 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c7 *:not(input) + .c3 {
+.c7 *:not(input) + .c4 {
   margin-left: 8px;
 }
 
-.c8 *:not(input) + .c3 {
+.c8 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c3 {
+.c8 *:not(input) + .c4 {
   margin-left: 8px;
 }
 
-.c9 *:not(input) + .c3 {
+.c9 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c3 {
+.c9 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c0 *:not(input) + .c3 {
+.c0 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
@@ -6956,7 +7056,7 @@ Array [
   line-height: 24px;
 }
 
-.c0 *:not(input) + .c3 {
+.c0 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
@@ -7011,19 +7111,19 @@ Array [
   box-shadow: inset 0 0 0 1px #B9B9B9;
 }
 
-.c10 *:not(input) + .c3 {
+.c10 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c3 {
+.c10 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c3 {
+.c11 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c3 {
+.c11 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
@@ -7042,23 +7142,23 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c4:hover,
-  .c4:hover .c1 {
+  .c5:hover,
+  .c5:hover .c1 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-contained:hover {
+  .c5.RcIconButton-contained:hover {
     background-color: rgba(102,102,102,0.92);
   }
 
-  .c4.RcIconButton-contained:hover,
-  .c4.RcIconButton-contained:hover .c1 {
+  .c5.RcIconButton-contained:hover,
+  .c5.RcIconButton-contained:hover .c1 {
     color: #fff;
   }
 }
@@ -7105,8 +7205,28 @@ Array [
       onClick={[Function]}
     >
       <span
-        className="c1 c2 icon"
+        className="c1 c2 default-box icon"
       >
+        <svg
+          className="c3"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
+            fill="var(--color2, #fff)"
+            opacity={0.992}
+          />
+          <path
+            d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
+            fill="var(--color57, #a7aaae)"
+            opacity={0.16}
+          />
+          <path
+            d="M4.959 9C4.419 9 4 9.419 4 9.897v7.531a4.586 4.586 0 004.589 4.483h.025-.001a4.718 4.718 0 004.123-2.427l.012-.024c.779 1.434 2.337 2.451 4.074 2.451 2.577 0 4.674-2.032 4.674-4.602.06-2.451-2.037-4.484-4.613-4.484-1.738 0-3.295.957-4.074 2.391-.78-1.434-2.338-2.391-4.135-2.391a4.935 4.935 0 00-2.817.897V9.897A.92.92 0 004.96 9h-.001zm16.643 3.728a.944.944 0 00-.707.16l.003-.002c-.36.299-.479.897-.18 1.315l2.397 3.108-2.396 3.107c-.3.419-.24.958.18 1.257.419.299 1.016.297 1.316-.122l2.039-2.63 2.096 2.69c.3.359.899.418 1.318.12.36-.299.42-.838.121-1.256l-2.338-3.107 2.338-3.05c.3-.418.298-1.016-.121-1.315-.48-.299-1.019-.239-1.318.18l-2.096 2.57-2.04-2.688a1.001 1.001 0 00-.612-.337zM8.613 14.617c1.558 0 2.817 1.257 2.817 2.751 0 1.554-1.259 2.749-2.817 2.749s-2.816-1.195-2.816-2.749c0-1.494 1.258-2.751 2.816-2.751zm8.27 0c1.558 0 2.816 1.257 2.816 2.751-.06 1.554-1.318 2.749-2.816 2.749-1.558 0-2.817-1.195-2.817-2.749 0-1.494 1.259-2.751 2.817-2.751z"
+            fill="var(--color21, #0061d5)"
+          />
+        </svg>
         
       </span>
       <textarea
@@ -7149,7 +7269,7 @@ Array [
       />
       <button
         aria-hidden={true}
-        className="MuiButtonBase-root c3 c4 RcIconButton-root"
+        className="MuiButtonBase-root c4 c5 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -7167,10 +7287,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c5 delete_circle icon"
+          className="c1 c6 delete_circle icon"
         >
           <svg
-            className="c6"
+            className="c3"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7182,7 +7302,7 @@ Array [
         </span>
       </button>
       <button
-        className="MuiButtonBase-root c3 c4 RcIconButton-root"
+        className="MuiButtonBase-root c4 c5 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -7199,10 +7319,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c5 add icon"
+          className="c1 c6 add icon"
         >
           <svg
-            className="c6"
+            className="c3"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7303,7 +7423,7 @@ Array [
 }
 
 <br />,
-  .c6 {
+  .c3 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -7312,7 +7432,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7363,7 +7483,7 @@ Array [
   color: #fff;
 }
 
-.c4 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7385,30 +7505,30 @@ Array [
   cursor: pointer;
 }
 
-.c4,
-.c4 .c1 {
+.c5,
+.c5 .c1 {
   font-size: 20px;
 }
 
-.c4:active,
-.c4:active .c1 {
+.c5:active,
+.c5:active .c1 {
   color: #666666;
 }
 
-.c4.focus-visible,
-.c4[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c4.focus-visible:active,
-.c4[data-focus-visible-added]:active,
-.c4.focus-visible:active .c1,
-.c4[data-focus-visible-added]:active .c1 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c1,
+.c5[data-focus-visible-added]:active .c1 {
   color: rgba(102,102,102,0.88);
 }
 
-.c4.focus-visible:after,
-.c4[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -7421,92 +7541,92 @@ Array [
   z-index: 1;
 }
 
-.c4.RcIconButton-persistBg {
+.c5.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c4.RcIconButton-disabled,
-.c4.RcIconButton-disabled .c1 {
+.c5.RcIconButton-disabled,
+.c5.RcIconButton-disabled .c1 {
   color: #B9B9B9;
 }
 
-.c4.RcIconButton-invisible {
+.c5.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c4.RcIconButton-outline {
+.c5.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c4.RcIconButton-contained {
+.c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added] {
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.84);
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added],
-.c4.RcIconButton-contained.focus-visible .c1,
-.c4.RcIconButton-contained[data-focus-visible-added] .c1 {
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c1,
+.c5.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: #fff;
 }
 
-.c4.RcIconButton-contained:active {
+.c5.RcIconButton-contained:active {
   background-color: rgba(102,102,102,0.76);
 }
 
-.c4.RcIconButton-contained:active,
-.c4.RcIconButton-contained:active .c1 {
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c1 {
   color: #fff;
 }
 
-.c4 .RcIconButtonTouchRipple-ripplePulsate {
+.c5 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
 }
 
-.c7 *:not(input) + .c3 {
+.c7 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c7 *:not(input) + .c3 {
+.c7 *:not(input) + .c4 {
   margin-left: 8px;
 }
 
-.c8 *:not(input) + .c3 {
+.c8 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c3 {
+.c8 *:not(input) + .c4 {
   margin-left: 8px;
 }
 
-.c9 *:not(input) + .c3 {
+.c9 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c3 {
+.c9 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c3 {
+.c10 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c3 {
+.c10 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c0 *:not(input) + .c3 {
+.c0 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
@@ -7637,7 +7757,7 @@ Array [
   line-height: 24px;
 }
 
-.c0 *:not(input) + .c3 {
+.c0 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
@@ -7692,11 +7812,11 @@ Array [
   box-shadow: inset 0 0 0 1px #B9B9B9;
 }
 
-.c11 *:not(input) + .c3 {
+.c11 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c3 {
+.c11 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
@@ -7715,23 +7835,23 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c4:hover,
-  .c4:hover .c1 {
+  .c5:hover,
+  .c5:hover .c1 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-contained:hover {
+  .c5.RcIconButton-contained:hover {
     background-color: rgba(102,102,102,0.92);
   }
 
-  .c4.RcIconButton-contained:hover,
-  .c4.RcIconButton-contained:hover .c1 {
+  .c5.RcIconButton-contained:hover,
+  .c5.RcIconButton-contained:hover .c1 {
     color: #fff;
   }
 }
@@ -7778,8 +7898,28 @@ Array [
       onClick={[Function]}
     >
       <span
-        className="c1 c2 icon"
+        className="c1 c2 default-box icon"
       >
+        <svg
+          className="c3"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
+            fill="var(--color2, #fff)"
+            opacity={0.992}
+          />
+          <path
+            d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
+            fill="var(--color57, #a7aaae)"
+            opacity={0.16}
+          />
+          <path
+            d="M4.959 9C4.419 9 4 9.419 4 9.897v7.531a4.586 4.586 0 004.589 4.483h.025-.001a4.718 4.718 0 004.123-2.427l.012-.024c.779 1.434 2.337 2.451 4.074 2.451 2.577 0 4.674-2.032 4.674-4.602.06-2.451-2.037-4.484-4.613-4.484-1.738 0-3.295.957-4.074 2.391-.78-1.434-2.338-2.391-4.135-2.391a4.935 4.935 0 00-2.817.897V9.897A.92.92 0 004.96 9h-.001zm16.643 3.728a.944.944 0 00-.707.16l.003-.002c-.36.299-.479.897-.18 1.315l2.397 3.108-2.396 3.107c-.3.419-.24.958.18 1.257.419.299 1.016.297 1.316-.122l2.039-2.63 2.096 2.69c.3.359.899.418 1.318.12.36-.299.42-.838.121-1.256l-2.338-3.107 2.338-3.05c.3-.418.298-1.016-.121-1.315-.48-.299-1.019-.239-1.318.18l-2.096 2.57-2.04-2.688a1.001 1.001 0 00-.612-.337zM8.613 14.617c1.558 0 2.817 1.257 2.817 2.751 0 1.554-1.259 2.749-2.817 2.749s-2.816-1.195-2.816-2.749c0-1.494 1.258-2.751 2.816-2.751zm8.27 0c1.558 0 2.816 1.257 2.816 2.751-.06 1.554-1.318 2.749-2.816 2.749-1.558 0-2.817-1.195-2.817-2.749 0-1.494 1.259-2.751 2.817-2.751z"
+            fill="var(--color21, #0061d5)"
+          />
+        </svg>
         
       </span>
       <input
@@ -7799,7 +7939,7 @@ Array [
       />
       <button
         aria-hidden={true}
-        className="MuiButtonBase-root c3 c4 RcIconButton-root"
+        className="MuiButtonBase-root c4 c5 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -7817,10 +7957,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c5 delete_circle icon"
+          className="c1 c6 delete_circle icon"
         >
           <svg
-            className="c6"
+            className="c3"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7832,7 +7972,7 @@ Array [
         </span>
       </button>
       <button
-        className="MuiButtonBase-root c3 c4 RcIconButton-root"
+        className="MuiButtonBase-root c4 c5 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -7849,10 +7989,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c5 add icon"
+          className="c1 c6 add icon"
         >
           <svg
-            className="c6"
+            className="c3"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -7871,7 +8011,7 @@ Array [
       some helper text
     </p>
   </div>,
-  .c6 {
+  .c3 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -7880,7 +8020,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7931,7 +8071,7 @@ Array [
   color: #fff;
 }
 
-.c4 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -7953,30 +8093,30 @@ Array [
   cursor: pointer;
 }
 
-.c4,
-.c4 .c1 {
+.c5,
+.c5 .c1 {
   font-size: 20px;
 }
 
-.c4:active,
-.c4:active .c1 {
+.c5:active,
+.c5:active .c1 {
   color: #666666;
 }
 
-.c4.focus-visible,
-.c4[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c4.focus-visible:active,
-.c4[data-focus-visible-added]:active,
-.c4.focus-visible:active .c1,
-.c4[data-focus-visible-added]:active .c1 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c1,
+.c5[data-focus-visible-added]:active .c1 {
   color: rgba(102,102,102,0.88);
 }
 
-.c4.focus-visible:after,
-.c4[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -7989,100 +8129,100 @@ Array [
   z-index: 1;
 }
 
-.c4.RcIconButton-persistBg {
+.c5.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c4.RcIconButton-disabled,
-.c4.RcIconButton-disabled .c1 {
+.c5.RcIconButton-disabled,
+.c5.RcIconButton-disabled .c1 {
   color: #B9B9B9;
 }
 
-.c4.RcIconButton-invisible {
+.c5.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c4.RcIconButton-outline {
+.c5.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c4.RcIconButton-contained {
+.c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added] {
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.84);
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added],
-.c4.RcIconButton-contained.focus-visible .c1,
-.c4.RcIconButton-contained[data-focus-visible-added] .c1 {
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c1,
+.c5.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: #fff;
 }
 
-.c4.RcIconButton-contained:active {
+.c5.RcIconButton-contained:active {
   background-color: rgba(102,102,102,0.76);
 }
 
-.c4.RcIconButton-contained:active,
-.c4.RcIconButton-contained:active .c1 {
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c1 {
   color: #fff;
 }
 
-.c4 .RcIconButtonTouchRipple-ripplePulsate {
+.c5 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
 }
 
-.c7 *:not(input) + .c3 {
+.c7 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c7 *:not(input) + .c3 {
+.c7 *:not(input) + .c4 {
   margin-left: 8px;
 }
 
-.c8 *:not(input) + .c3 {
+.c8 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c3 {
+.c8 *:not(input) + .c4 {
   margin-left: 8px;
 }
 
-.c9 *:not(input) + .c3 {
+.c9 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c3 {
+.c9 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c3 {
+.c10 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c10 *:not(input) + .c3 {
+.c10 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c3 {
+.c11 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c11 *:not(input) + .c3 {
+.c11 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
-.c0 *:not(input) + .c3 {
+.c0 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
@@ -8213,7 +8353,7 @@ Array [
   line-height: 24px;
 }
 
-.c0 *:not(input) + .c3 {
+.c0 *:not(input) + .c4 {
   margin-left: 12px;
 }
 
@@ -8283,23 +8423,23 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4:hover {
+  .c5:hover {
     background-color: transparent;
   }
 
-  .c4:hover,
-  .c4:hover .c1 {
+  .c5:hover,
+  .c5:hover .c1 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-contained:hover {
+  .c5.RcIconButton-contained:hover {
     background-color: rgba(102,102,102,0.92);
   }
 
-  .c4.RcIconButton-contained:hover,
-  .c4.RcIconButton-contained:hover .c1 {
+  .c5.RcIconButton-contained:hover,
+  .c5.RcIconButton-contained:hover .c1 {
     color: #fff;
   }
 }
@@ -8346,8 +8486,28 @@ Array [
       onClick={[Function]}
     >
       <span
-        className="c1 c2 icon"
+        className="c1 c2 default-box icon"
       >
+        <svg
+          className="c3"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
+            fill="var(--color2, #fff)"
+            opacity={0.992}
+          />
+          <path
+            d="M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z"
+            fill="var(--color57, #a7aaae)"
+            opacity={0.16}
+          />
+          <path
+            d="M4.959 9C4.419 9 4 9.419 4 9.897v7.531a4.586 4.586 0 004.589 4.483h.025-.001a4.718 4.718 0 004.123-2.427l.012-.024c.779 1.434 2.337 2.451 4.074 2.451 2.577 0 4.674-2.032 4.674-4.602.06-2.451-2.037-4.484-4.613-4.484-1.738 0-3.295.957-4.074 2.391-.78-1.434-2.338-2.391-4.135-2.391a4.935 4.935 0 00-2.817.897V9.897A.92.92 0 004.96 9h-.001zm16.643 3.728a.944.944 0 00-.707.16l.003-.002c-.36.299-.479.897-.18 1.315l2.397 3.108-2.396 3.107c-.3.419-.24.958.18 1.257.419.299 1.016.297 1.316-.122l2.039-2.63 2.096 2.69c.3.359.899.418 1.318.12.36-.299.42-.838.121-1.256l-2.338-3.107 2.338-3.05c.3-.418.298-1.016-.121-1.315-.48-.299-1.019-.239-1.318.18l-2.096 2.57-2.04-2.688a1.001 1.001 0 00-.612-.337zM8.613 14.617c1.558 0 2.817 1.257 2.817 2.751 0 1.554-1.259 2.749-2.817 2.749s-2.816-1.195-2.816-2.749c0-1.494 1.258-2.751 2.816-2.751zm8.27 0c1.558 0 2.816 1.257 2.816 2.751-.06 1.554-1.318 2.749-2.816 2.749-1.558 0-2.817-1.195-2.817-2.749 0-1.494 1.259-2.751 2.817-2.751z"
+            fill="var(--color21, #0061d5)"
+          />
+        </svg>
         
       </span>
       <textarea
@@ -8390,7 +8550,7 @@ Array [
       />
       <button
         aria-hidden={true}
-        className="MuiButtonBase-root c3 c4 RcIconButton-root"
+        className="MuiButtonBase-root c4 c5 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -8408,10 +8568,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c5 delete_circle icon"
+          className="c1 c6 delete_circle icon"
         >
           <svg
-            className="c6"
+            className="c3"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -8423,7 +8583,7 @@ Array [
         </span>
       </button>
       <button
-        className="MuiButtonBase-root c3 c4 RcIconButton-root"
+        className="MuiButtonBase-root c4 c5 RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -8440,10 +8600,10 @@ Array [
         type="button"
       >
         <span
-          className="c1 c5 add icon"
+          className="c1 c6 add icon"
         >
           <svg
-            className="c6"
+            className="c3"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
