@@ -13,7 +13,7 @@ export const globalListenerEventMap = new Map<
     /**
      * all listener
      */
-    listeners: ((e: any) => void)[];
+    listeners: Set<(e: any) => void>;
   }
 >();
 
@@ -32,7 +32,7 @@ export const globalListenerEventMap = new Map<
  */
 export const createGlobalListener = (
   key: string,
-  listener: EventListenerOrEventListenerObject,
+  listener: EventListener,
   {
     customKey = key,
     target: targetProp = window,
@@ -48,8 +48,6 @@ export const createGlobalListener = (
   } = {},
 ) => {
   let listening = false;
-
-  const _listener = listener as (e: any) => void;
 
   const getMapValue = () => globalListenerEventMap.get(customKey);
 
@@ -67,14 +65,14 @@ export const createGlobalListener = (
 
       globalListenerEventMap.set(customKey, {
         exec,
-        listeners: [...(savedEvent?.listeners || []), _listener],
+        listeners: new Set([listener]),
       });
 
       const target = getRefElement(targetProp as any);
 
       target?.addEventListener(key, exec);
     } else {
-      savedEvent.listeners.push(_listener);
+      savedEvent.listeners.add(listener);
     }
     listening = true;
   };
@@ -88,13 +86,10 @@ export const createGlobalListener = (
     if (!_savedEvent) return;
 
     const { listeners } = _savedEvent;
-    const index = listeners.indexOf(_listener);
 
-    if (index > -1) {
-      listeners.splice(index, 1);
-    }
+    listeners.delete(listener);
 
-    if (listeners.length === 0) {
+    if (listeners.size === 0) {
       const target = getRefElement(targetProp as any);
 
       target?.removeEventListener(key, _savedEvent.exec);
@@ -120,7 +115,7 @@ export const createGlobalListener = (
          * current listener state count
          */
         get count() {
-          return getMapValue()?.listeners.length || 0;
+          return getMapValue()?.listeners.size || 0;
         },
         /**
          * is that be listening
@@ -146,12 +141,12 @@ export const createGlobalListener = (
  * useGlobalListener('keyup', () => console.log('window key up2'))
  * useGlobalListener('keyup', () => console.log('window key up3'))
  *
- * => // that will only create an event listener on window, but every callback will get emit value when event triggered
+ * => // that will only create an event listener on `window`, but every callback will get emit value when event triggered
  * ```
  */
 export function useGlobalListener(
   key: string,
-  listener: EventListenerOrEventListenerObject,
+  listener: EventListener,
   options: {
     /**
      * custom key for determining different event group, default is same as `key`
