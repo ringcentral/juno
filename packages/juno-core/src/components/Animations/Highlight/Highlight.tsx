@@ -33,7 +33,7 @@ type RcHighlightProps = {
   /** that animation easing */
   easing?: string;
   /** that trigger highlight action ref */
-  action: React.MutableRefObject<() => void>;
+  action?: React.Ref<() => void>;
   /** background color when highlight */
   backgroundColor?: RcPaletteProp;
 } & RcBaseProps<TransitionProps, 'in' | 'timeout'>;
