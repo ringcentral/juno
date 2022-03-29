@@ -9,6 +9,7 @@ export * from './useEventListener';
 export * from './useEver';
 export * from './useForceUpdate';
 export * from './useForkRef';
+export * from './useGlobalListener';
 export * from './useHiddenTabindex';
 export * from './useId';
 export * from './useInterval';
