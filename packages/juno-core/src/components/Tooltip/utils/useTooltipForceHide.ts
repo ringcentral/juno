@@ -1,6 +1,8 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { useRef } from 'react';
 
 import {
+  logInDev,
   useChange,
   useEventCallback,
   useEventListener,
@@ -30,6 +32,26 @@ export const useTooltipForceHide = ({
       | 'onClose'
     >
   | undefined => {
+  if (process.env.NODE_ENV !== 'production') {
+    useChange(
+      (prev) => {
+        // ignore first time
+        if (prev !== undefined) {
+          logInDev({
+            component: 'RcTooltip',
+            message:
+              'Should not change tooltipForceHide between controlled and uncontrolled, tooltipForceHide should always be boolean value',
+            level: 'error',
+          });
+        }
+      },
+      () => tooltipForceHide === undefined,
+    );
+  }
+
+  // * when not set tooltipForceHide, always return undefined directly, not bind any event addition
+  if (tooltipForceHide === undefined) return undefined;
+
   const [openRef, setOpen] = useRefState(false);
   const isOverRef = useRef(false);
 
@@ -74,14 +96,12 @@ export const useTooltipForceHide = ({
     onClose?.(event);
   });
 
-  return tooltipForceHide !== undefined
-    ? {
-        disableFocusListener: tooltipForceHide,
-        disableHoverListener: tooltipForceHide,
-        disableTouchListener: tooltipForceHide,
-        open: openState,
-        onOpen: handleOpen,
-        onClose: handleClose,
-      }
-    : undefined;
+  return {
+    disableFocusListener: tooltipForceHide,
+    disableHoverListener: tooltipForceHide,
+    disableTouchListener: tooltipForceHide,
+    open: openState,
+    onOpen: handleOpen,
+    onClose: handleClose,
+  };
 };
