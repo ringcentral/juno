@@ -23,6 +23,18 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <div
     className="c0"
     onFocus={[Function]}
@@ -102,6 +114,18 @@ Array [
   }
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <button
     className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
     disabled={false}
@@ -124,6 +148,9 @@ Array [
     >
       focus
     </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </button>,
 ]
 `;
