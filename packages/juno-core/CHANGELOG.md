@@ -1,4 +1,21 @@
 
+## [2.3.0](https://github.com/ringcentral/juno/compare/juno-core-v2.2.0...juno-core-v2.3.0) (2022-03-29)
+
+
+### Features
+
+* **Deprecated Tables:** remove tables export ([3a62ba0](https://github.com/ringcentral/juno/commit/3a62ba0adf65365c2aaa718235c38dd5ade5a9d1))
+* **foundation:** [foundation] implement `useGlobalListener` for share event ([6e6e05a](https://github.com/ringcentral/juno/commit/6e6e05aa58a865431de0a2e5babad4fcda636fe0))
+* **foundation:** [foundation] support getRefElement for some element event related method ([bcc321e](https://github.com/ringcentral/juno/commit/bcc321e27190fca6a2066a4bc7a59fdea8da1b13))
+* **Table:** new table base on mui ([c29f8e7](https://github.com/ringcentral/juno/commit/c29f8e72203657e69da169d977d77ceb578b13de))
+
+
+### Bug Fixes
+
+* **Foundation:** [useGlobalListener] change array to Set ([d4fcad2](https://github.com/ringcentral/juno/commit/d4fcad29a8c7baf88bd9325317541d07be544c7b))
+* **Highlight:** fix `action` prop type ([888bba1](https://github.com/ringcentral/juno/commit/888bba1c7ece7f0fb8c51ad80cd59f77378225af))
+* **juno-core:** [Tooptip] fix tooltipForceHide alway binding event issue ([b4ceeae](https://github.com/ringcentral/juno/commit/b4ceeaeb01749a83b8b7b0ccdba395b0c018b78b))
+
 ## [2.2.0](https://github.com/ringcentral/juno/compare/juno-core-v2.1.2...juno-core-v2.2.0) (2022-03-15)
 
 
