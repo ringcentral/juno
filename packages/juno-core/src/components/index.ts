@@ -41,7 +41,7 @@ export * from './Responsive';
 export * from './Snackbar';
 export * from './Stepper';
 export * from './TablePagination';
-export * from './Tables';
+export * from './Table';
 export * from './Tabs';
 export * from './Tag';
 export * from './Text';
