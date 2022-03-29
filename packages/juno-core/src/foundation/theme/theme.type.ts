@@ -128,10 +128,13 @@ import {
 } from '../../components/Stepper';
 import { RcTablePaginationProps } from '../../components/TablePagination';
 import {
+  RcTableBodyProps,
+  RcTableCellProps,
+  RcTableContainerProps,
+  RcTableHeadProps,
   RcTableProps,
-  TableHeadCellProps,
-  TableHeadProps,
-} from '../../components/Tables';
+  RcTableRowProps,
+} from '../../components/Table';
 import {
   RcTabListProps,
   RcTabPanelProps,
@@ -322,9 +325,12 @@ export type RcTheme = {
 
       RcTablePagination?: RcTablePaginationProps;
 
-      RcTableHeadCell?: TableHeadCellProps;
-      RcTableHeadView?: TableHeadProps;
+      RcTableBody?: RcTableBodyProps;
+      RcTableCell?: RcTableCellProps;
+      RcTableContainer?: RcTableContainerProps;
+      RcTableHead?: RcTableHeadProps;
       RcTable?: RcTableProps;
+      RcTableRow?: RcTableRowProps;
 
       RcTab?: RcTabProps;
       RcTabList?: RcTabListProps;

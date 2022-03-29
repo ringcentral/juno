@@ -1,12 +1,10 @@
 import React from 'react';
 
-import { useThemeProps } from '../../foundation';
 import { StyledTableRow } from './styled';
 import { RcTableHeadCell } from './TableHeadCell';
 import { ORDER_TABLE_BY, TableHeadProps } from './types';
 
-const RcTableHeadView = (inProps: TableHeadProps) => {
-  const props = useThemeProps({ props: inProps, name: 'RcTableHeadView' });
+const RcTableHeadView = (props: TableHeadProps) => {
   const { columnData, sortMap, sortHandler } = props;
 
   return (

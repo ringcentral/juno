@@ -8,7 +8,7 @@ import {
   JumpToUnread as arrowUp,
 } from '@ringcentral/juno-icon';
 
-import { useA11yKeyEvent, useThemeProps } from '../../foundation';
+import { useA11yKeyEvent } from '../../foundation';
 import { RcIcon } from '../Icon';
 import {
   StyledSortIconWrapper,
@@ -23,8 +23,7 @@ import {
   TableHeadCellProps,
 } from './types';
 
-const RcTableHeadCell = (inProps: TableHeadCellProps) => {
-  const props = useThemeProps({ props: inProps, name: 'RcTableHeadCell' });
+const RcTableHeadCell = (props: TableHeadCellProps) => {
   const { automationID, title, width, sortDirection, sortKey, textAlign } =
     props;
 
