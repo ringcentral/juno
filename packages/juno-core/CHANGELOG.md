@@ -1,4 +1,12 @@
 
+### [2.3.1](https://github.com/ringcentral/juno/compare/juno-core-v2.3.0...juno-core-v2.3.1) (2022-03-31)
+
+
+### Bug Fixes
+
+* **Badge:** [Badge] fix bug with combine classes ([b81895d](https://github.com/ringcentral/juno/commit/b81895dc7639e437fd0e672b19e7ac2ebd49b92e))
+* **FIJI-48582:** [TextField] fix issue about tooltip show incorrectly after click textField clean button ([39b6749](https://github.com/ringcentral/juno/commit/39b674914bc026ede0de910861053bb4323c02ee))
+
 ## [2.3.0](https://github.com/ringcentral/juno/compare/juno-core-v2.3.0...juno-core-v2.3.0) (2022-03-31)
 
 ## [2.3.0](https://github.com/ringcentral/juno/compare/juno-core-v2.2.0...juno-core-v2.3.0) (2022-03-29)
