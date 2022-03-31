@@ -310,7 +310,7 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-5"
+    className="MuiBox-root MuiBox-root-6"
   >
     <button
       className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
@@ -563,7 +563,7 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-6"
+    className="MuiBox-root MuiBox-root-7"
   >
     <button
       className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"

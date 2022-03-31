@@ -2565,7 +2565,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -2585,7 +2585,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -4250,7 +4250,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -4270,7 +4270,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -5935,7 +5935,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -5955,7 +5955,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -7620,7 +7620,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -7640,7 +7640,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -9305,7 +9305,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -9325,7 +9325,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -10990,7 +10990,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -11010,7 +11010,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -12675,7 +12675,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -12695,7 +12695,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -14360,7 +14360,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -14380,7 +14380,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -16045,7 +16045,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -16065,7 +16065,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -17730,7 +17730,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -17750,7 +17750,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -19415,7 +19415,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -19435,7 +19435,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -21100,7 +21100,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -21120,7 +21120,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -22785,7 +22785,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -22805,7 +22805,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -24470,7 +24470,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -24490,7 +24490,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -26155,7 +26155,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -26175,7 +26175,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -27840,7 +27840,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -27860,7 +27860,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -29525,7 +29525,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -29545,7 +29545,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -31210,7 +31210,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -31230,7 +31230,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -32895,7 +32895,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -32915,7 +32915,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -34580,7 +34580,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -34600,7 +34600,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -36265,7 +36265,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -36285,7 +36285,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -37950,7 +37950,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -37970,7 +37970,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -39635,7 +39635,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -39655,7 +39655,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -41320,7 +41320,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -41340,7 +41340,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -43005,7 +43005,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -43025,7 +43025,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"
@@ -44690,7 +44690,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-282 MuiCheckbox-root RcCheckbox-root c9"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-332 MuiCheckbox-root RcCheckbox-root c9"
               onBlur={[Function]}
               onClick={[Function]}
               onDragLeave={[Function]}
@@ -44710,7 +44710,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Table 1`] = `
               >
                 <input
                   checked={false}
-                  className="PrivateSwitchBase-input-285"
+                  className="PrivateSwitchBase-input-335"
                   data-indeterminate={false}
                   onChange={[Function]}
                   type="checkbox"

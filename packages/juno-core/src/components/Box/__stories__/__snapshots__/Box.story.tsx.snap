@@ -85,7 +85,7 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-49"
+    className="MuiBox-root MuiBox-root-52"
   >
     Box Example
   </div>,
@@ -94,7 +94,7 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-50"
+    className="MuiBox-root MuiBox-root-53"
   >
     Box Example
   </div>,

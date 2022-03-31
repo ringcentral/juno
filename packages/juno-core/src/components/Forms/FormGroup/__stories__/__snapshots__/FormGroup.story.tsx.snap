@@ -157,7 +157,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-158 MuiSwitch-switchBase RcSwitch-switchBase"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-179 MuiSwitch-switchBase RcSwitch-switchBase"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -175,7 +175,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-161 MuiSwitch-input"
+            className="PrivateSwitchBase-input-182 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -202,7 +202,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-158 MuiSwitch-switchBase RcSwitch-switchBase"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-179 MuiSwitch-switchBase RcSwitch-switchBase"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -220,7 +220,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-161 MuiSwitch-input"
+            className="PrivateSwitchBase-input-182 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -247,7 +247,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-158 MuiSwitch-switchBase RcSwitch-switchBase"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-179 MuiSwitch-switchBase RcSwitch-switchBase"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -265,7 +265,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-161 MuiSwitch-input"
+            className="PrivateSwitchBase-input-182 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -289,7 +289,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
   >
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-158 MuiCheckbox-root RcCheckbox-root c2"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-179 MuiCheckbox-root RcCheckbox-root c2"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -307,7 +307,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
         className="MuiIconButton-label"
       >
         <input
-          className="PrivateSwitchBase-input-161"
+          className="PrivateSwitchBase-input-182"
           data-indeterminate={false}
           onChange={[Function]}
           type="checkbox"
@@ -339,7 +339,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
   >
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-158 MuiCheckbox-root RcCheckbox-root c2"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-179 MuiCheckbox-root RcCheckbox-root c2"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -357,7 +357,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
         className="MuiIconButton-label"
       >
         <input
-          className="PrivateSwitchBase-input-161"
+          className="PrivateSwitchBase-input-182"
           data-indeterminate={false}
           onChange={[Function]}
           type="checkbox"
@@ -389,7 +389,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
   >
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-158 MuiCheckbox-root RcCheckbox-root c2"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-179 MuiCheckbox-root RcCheckbox-root c2"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -407,7 +407,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/FormGroup FormGroup 1`] = `
         className="MuiIconButton-label"
       >
         <input
-          className="PrivateSwitchBase-input-161"
+          className="PrivateSwitchBase-input-182"
           data-indeterminate={false}
           onChange={[Function]}
           type="checkbox"

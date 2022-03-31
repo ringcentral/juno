@@ -124,7 +124,7 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-7"
+    className="MuiBox-root MuiBox-root-8"
   >
     <button
       className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
@@ -239,7 +239,7 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-8"
+    className="MuiBox-root MuiBox-root-9"
     style={
       Object {
         "overflowX": "hidden",

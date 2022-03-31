@@ -403,7 +403,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
     </div>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-132"
+    className="MuiBox-root MuiBox-root-135"
   >
     <p
       className="MuiTypography-root c3"
@@ -421,7 +421,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
     </p>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-133"
+    className="MuiBox-root MuiBox-root-136"
   >
     <h2
       className="MuiTypography-root c5"

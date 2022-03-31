@@ -84,7 +84,7 @@ Array [
   >
     Control
   </h5>,
-  .c5 {
+  .c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -93,7 +93,7 @@ Array [
   pointer-events: none;
 }
 
-.c4 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -124,12 +124,12 @@ Array [
 }
 
 .c2,
-.c2 .c3 {
+.c2 .c5 {
   font-size: 20px;
 }
 
 .c2:active,
-.c2:active .c3 {
+.c2:active .c5 {
   color: #666666;
 }
 
@@ -140,8 +140,8 @@ Array [
 
 .c2.focus-visible:active,
 .c2[data-focus-visible-added]:active,
-.c2.focus-visible:active .c3,
-.c2[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active .c5,
+.c2[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
@@ -164,7 +164,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled,
-.c2.RcIconButton-disabled .c3 {
+.c2.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
 
@@ -191,8 +191,8 @@ Array [
 
 .c2.RcIconButton-contained.focus-visible,
 .c2.RcIconButton-contained[data-focus-visible-added],
-.c2.RcIconButton-contained.focus-visible .c3,
-.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+.c2.RcIconButton-contained.focus-visible .c5,
+.c2.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
 }
 
@@ -201,7 +201,7 @@ Array [
 }
 
 .c2.RcIconButton-contained:active,
-.c2.RcIconButton-contained:active .c3 {
+.c2.RcIconButton-contained:active .c5 {
   color: #fff;
 }
 
@@ -210,6 +210,24 @@ Array [
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
+}
+
+.c8 {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
 }
 
 .c0 {
@@ -237,6 +255,10 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
+}
+
+.c0 .RcTextFieldInput-root .c3 {
+  display: none;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -346,7 +368,7 @@ Array [
   }
 
   .c2:hover,
-  .c2:hover .c3 {
+  .c2:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -357,7 +379,7 @@ Array [
   }
 
   .c2.RcIconButton-contained:hover,
-  .c2.RcIconButton-contained:hover .c3 {
+  .c2.RcIconButton-contained:hover .c5 {
     color: #fff;
   }
 }
@@ -399,40 +421,50 @@ Array [
         type="text"
         value=""
       />
-      <button
-        aria-hidden={true}
-        className="MuiButtonBase-root c1 c2 RcIconButton-root"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={-1}
-        type="button"
+      <div
+        className="MuiBox-root MuiBox-root-253"
       >
-        <span
-          className="c3 c4 delete_circle icon"
+        <button
+          aria-hidden={true}
+          className="MuiButtonBase-root c1 c2 c3 c4 RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          type="button"
         >
-          <svg
-            className="c5"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            className="c5 c6 delete_circle icon"
           >
-            <path
-              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-            />
-          </svg>
-          
-        </span>
-      </button>
+            <svg
+              className="c7"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+        <div
+          className="c1 c2 c8"
+          color="neutral.f04"
+          size="medium"
+          type="button"
+        />
+      </div>
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
@@ -514,7 +546,7 @@ Array [
       (if you want cleanBtn, make component to be controlled)
     </span>
   </h5>,
-  .c5 {
+  .c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -523,7 +555,7 @@ Array [
   pointer-events: none;
 }
 
-.c4 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -554,12 +586,12 @@ Array [
 }
 
 .c2,
-.c2 .c3 {
+.c2 .c5 {
   font-size: 20px;
 }
 
 .c2:active,
-.c2:active .c3 {
+.c2:active .c5 {
   color: #666666;
 }
 
@@ -570,8 +602,8 @@ Array [
 
 .c2.focus-visible:active,
 .c2[data-focus-visible-added]:active,
-.c2.focus-visible:active .c3,
-.c2[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active .c5,
+.c2[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
@@ -594,7 +626,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled,
-.c2.RcIconButton-disabled .c3 {
+.c2.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
 
@@ -621,8 +653,8 @@ Array [
 
 .c2.RcIconButton-contained.focus-visible,
 .c2.RcIconButton-contained[data-focus-visible-added],
-.c2.RcIconButton-contained.focus-visible .c3,
-.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+.c2.RcIconButton-contained.focus-visible .c5,
+.c2.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
 }
 
@@ -631,7 +663,7 @@ Array [
 }
 
 .c2.RcIconButton-contained:active,
-.c2.RcIconButton-contained:active .c3 {
+.c2.RcIconButton-contained:active .c5 {
   color: #fff;
 }
 
@@ -640,6 +672,24 @@ Array [
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
+}
+
+.c8 {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
 }
 
 .c0 {
@@ -667,6 +717,10 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
+}
+
+.c0 .RcTextFieldInput-root .c3 {
+  display: none;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -776,7 +830,7 @@ Array [
   }
 
   .c2:hover,
-  .c2:hover .c3 {
+  .c2:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -787,7 +841,7 @@ Array [
   }
 
   .c2.RcIconButton-contained:hover,
-  .c2.RcIconButton-contained:hover .c3 {
+  .c2.RcIconButton-contained:hover .c5 {
     color: #fff;
   }
 }
@@ -828,40 +882,50 @@ Array [
         required={false}
         type="search"
       />
-      <button
-        aria-hidden={true}
-        className="MuiButtonBase-root c1 c2 RcIconButton-root"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={-1}
-        type="button"
+      <div
+        className="MuiBox-root MuiBox-root-254"
       >
-        <span
-          className="c3 c4 delete_circle icon"
+        <button
+          aria-hidden={true}
+          className="MuiButtonBase-root c1 c2 c3 c4 RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          type="button"
         >
-          <svg
-            className="c5"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            className="c5 c6 delete_circle icon"
           >
-            <path
-              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-            />
-          </svg>
-          
-        </span>
-      </button>
+            <svg
+              className="c7"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+        <div
+          className="c1 c2 c8"
+          color="neutral.f04"
+          size="medium"
+          type="button"
+        />
+      </div>
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
@@ -875,7 +939,7 @@ Array [
 
 exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField Examples 1`] = `
 Array [
-  .c5 {
+  .c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -884,7 +948,7 @@ Array [
   pointer-events: none;
 }
 
-.c4 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -915,12 +979,12 @@ Array [
 }
 
 .c2,
-.c2 .c3 {
+.c2 .c5 {
   font-size: 20px;
 }
 
 .c2:active,
-.c2:active .c3 {
+.c2:active .c5 {
   color: #666666;
 }
 
@@ -931,8 +995,8 @@ Array [
 
 .c2.focus-visible:active,
 .c2[data-focus-visible-added]:active,
-.c2.focus-visible:active .c3,
-.c2[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active .c5,
+.c2[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
@@ -955,7 +1019,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled,
-.c2.RcIconButton-disabled .c3 {
+.c2.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
 
@@ -982,8 +1046,8 @@ Array [
 
 .c2.RcIconButton-contained.focus-visible,
 .c2.RcIconButton-contained[data-focus-visible-added],
-.c2.RcIconButton-contained.focus-visible .c3,
-.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+.c2.RcIconButton-contained.focus-visible .c5,
+.c2.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
 }
 
@@ -992,7 +1056,7 @@ Array [
 }
 
 .c2.RcIconButton-contained:active,
-.c2.RcIconButton-contained:active .c3 {
+.c2.RcIconButton-contained:active .c5 {
   color: #fff;
 }
 
@@ -1001,6 +1065,24 @@ Array [
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
+}
+
+.c8 {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
 }
 
 .c0 {
@@ -1032,6 +1114,10 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
+}
+
+.c0 .RcTextFieldInput-root .c3 {
+  display: none;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -1135,20 +1221,64 @@ Array [
   display: none;
 }
 
-.c6 *:not(input) + .c1 {
-  margin-left: 12px;
-}
-
-.c7 *:not(input) + .c1 {
-  margin-left: 12px;
-}
-
-.c8 *:not(input) + .c1 {
-  margin-left: 12px;
-}
-
 .c9 *:not(input) + .c1 {
   margin-left: 12px;
+}
+
+.c9 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c9 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c10 *:not(input) + .c1 {
+  margin-left: 12px;
+}
+
+.c10 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c10 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c11 *:not(input) + .c1 {
+  margin-left: 12px;
+}
+
+.c11 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c11 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c12 *:not(input) + .c1 {
+  margin-left: 12px;
+}
+
+.c12 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c12 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1157,7 +1287,7 @@ Array [
   }
 
   .c2:hover,
-  .c2:hover .c3 {
+  .c2:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -1168,7 +1298,7 @@ Array [
   }
 
   .c2.RcIconButton-contained:hover,
-  .c2.RcIconButton-contained:hover .c3 {
+  .c2.RcIconButton-contained:hover .c5 {
     color: #fff;
   }
 }
@@ -1180,7 +1310,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c9 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1188,7 +1323,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c10 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1196,7 +1336,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c11 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1204,7 +1349,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c12 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1237,44 +1387,54 @@ Array [
         required={false}
         type="number"
       />
-      <button
-        aria-describedby={null}
-        aria-hidden={true}
-        aria-label="clear"
-        className="MuiButtonBase-root c1 c2 RcIconButton-root"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={-1}
-        title="clear"
-        type="button"
+      <div
+        className="MuiBox-root MuiBox-root-255"
       >
-        <span
-          className="c3 c4 delete_circle icon"
+        <button
+          aria-describedby={null}
+          aria-hidden={true}
+          aria-label="clear"
+          className="MuiButtonBase-root c1 c2 c3 c4 RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          title="clear"
+          type="button"
         >
-          <svg
-            className="c5"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            className="c5 c6 delete_circle icon"
           >
-            <path
-              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-            />
-          </svg>
-          
-        </span>
-      </button>
+            <svg
+              className="c7"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+        <div
+          className="c1 c2 c8"
+          color="neutral.f04"
+          size="medium"
+          type="button"
+        />
+      </div>
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
@@ -1327,7 +1487,7 @@ Array [
 }
 
 <br />,
-  .c5 {
+  .c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -1336,7 +1496,7 @@ Array [
   pointer-events: none;
 }
 
-.c4 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1367,12 +1527,12 @@ Array [
 }
 
 .c2,
-.c2 .c3 {
+.c2 .c5 {
   font-size: 20px;
 }
 
 .c2:active,
-.c2:active .c3 {
+.c2:active .c5 {
   color: #666666;
 }
 
@@ -1383,8 +1543,8 @@ Array [
 
 .c2.focus-visible:active,
 .c2[data-focus-visible-added]:active,
-.c2.focus-visible:active .c3,
-.c2[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active .c5,
+.c2[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
@@ -1407,7 +1567,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled,
-.c2.RcIconButton-disabled .c3 {
+.c2.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
 
@@ -1434,8 +1594,8 @@ Array [
 
 .c2.RcIconButton-contained.focus-visible,
 .c2.RcIconButton-contained[data-focus-visible-added],
-.c2.RcIconButton-contained.focus-visible .c3,
-.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+.c2.RcIconButton-contained.focus-visible .c5,
+.c2.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
 }
 
@@ -1444,7 +1604,7 @@ Array [
 }
 
 .c2.RcIconButton-contained:active,
-.c2.RcIconButton-contained:active .c3 {
+.c2.RcIconButton-contained:active .c5 {
   color: #fff;
 }
 
@@ -1455,8 +1615,30 @@ Array [
   opacity: 0;
 }
 
-.c6 *:not(input) + .c1 {
+.c8 {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.c9 *:not(input) + .c1 {
   margin-left: 12px;
+}
+
+.c9 .RcTextFieldInput-root .c3 {
+  display: none;
 }
 
 .c0 {
@@ -1488,6 +1670,17 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
+}
+
+.c0 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c0 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -1591,16 +1784,49 @@ Array [
   display: none;
 }
 
-.c7 *:not(input) + .c1 {
+.c10 *:not(input) + .c1 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c1 {
+.c10 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c10 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c11 *:not(input) + .c1 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c1 {
+.c11 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c11 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c12 *:not(input) + .c1 {
   margin-left: 12px;
+}
+
+.c12 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c12 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1609,7 +1835,7 @@ Array [
   }
 
   .c2:hover,
-  .c2:hover .c3 {
+  .c2:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -1620,7 +1846,7 @@ Array [
   }
 
   .c2.RcIconButton-contained:hover,
-  .c2.RcIconButton-contained:hover .c3 {
+  .c2.RcIconButton-contained:hover .c5 {
     color: #fff;
   }
 }
@@ -1630,7 +1856,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1640,7 +1871,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c10 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1648,7 +1884,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c11 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1656,7 +1897,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c12 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1690,40 +1936,50 @@ Array [
         type="text"
         value="Example"
       />
-      <button
-        aria-hidden={true}
-        className="MuiButtonBase-root c1 c2 RcIconButton-root"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={-1}
-        type="button"
+      <div
+        className="MuiBox-root MuiBox-root-256"
       >
-        <span
-          className="c3 c4 delete_circle icon"
+        <button
+          aria-hidden={true}
+          className="MuiButtonBase-root c1 c2 c3 c4 RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          type="button"
         >
-          <svg
-            className="c5"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            className="c5 c6 delete_circle icon"
           >
-            <path
-              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-            />
-          </svg>
-          
-        </span>
-      </button>
+            <svg
+              className="c7"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+        <div
+          className="c1 c2 c8"
+          color="neutral.f04"
+          size="medium"
+          type="button"
+        />
+      </div>
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
@@ -1776,7 +2032,7 @@ Array [
 }
 
 <br />,
-  .c5 {
+  .c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -1785,7 +2041,7 @@ Array [
   pointer-events: none;
 }
 
-.c4 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1816,12 +2072,12 @@ Array [
 }
 
 .c2,
-.c2 .c3 {
+.c2 .c5 {
   font-size: 20px;
 }
 
 .c2:active,
-.c2:active .c3 {
+.c2:active .c5 {
   color: #666666;
 }
 
@@ -1832,8 +2088,8 @@ Array [
 
 .c2.focus-visible:active,
 .c2[data-focus-visible-added]:active,
-.c2.focus-visible:active .c3,
-.c2[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active .c5,
+.c2[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
@@ -1856,7 +2112,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled,
-.c2.RcIconButton-disabled .c3 {
+.c2.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
 
@@ -1883,8 +2139,8 @@ Array [
 
 .c2.RcIconButton-contained.focus-visible,
 .c2.RcIconButton-contained[data-focus-visible-added],
-.c2.RcIconButton-contained.focus-visible .c3,
-.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+.c2.RcIconButton-contained.focus-visible .c5,
+.c2.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
 }
 
@@ -1893,7 +2149,7 @@ Array [
 }
 
 .c2.RcIconButton-contained:active,
-.c2.RcIconButton-contained:active .c3 {
+.c2.RcIconButton-contained:active .c5 {
   color: #fff;
 }
 
@@ -1904,8 +2160,30 @@ Array [
   opacity: 0;
 }
 
-.c6 *:not(input) + .c1 {
+.c8 {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.c9 *:not(input) + .c1 {
   margin-left: 12px;
+}
+
+.c9 .RcTextFieldInput-root .c3 {
+  display: none;
 }
 
 .c0 {
@@ -1937,6 +2215,17 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
+}
+
+.c0 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c0 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -2040,16 +2329,49 @@ Array [
   display: none;
 }
 
-.c7 *:not(input) + .c1 {
+.c10 *:not(input) + .c1 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c1 {
+.c10 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c10 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c11 *:not(input) + .c1 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c1 {
+.c11 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c11 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c12 *:not(input) + .c1 {
   margin-left: 12px;
+}
+
+.c12 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c12 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2058,7 +2380,7 @@ Array [
   }
 
   .c2:hover,
-  .c2:hover .c3 {
+  .c2:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -2069,7 +2391,7 @@ Array [
   }
 
   .c2.RcIconButton-contained:hover,
-  .c2.RcIconButton-contained:hover .c3 {
+  .c2.RcIconButton-contained:hover .c5 {
     color: #fff;
   }
 }
@@ -2079,7 +2401,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2089,7 +2416,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c10 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2097,7 +2429,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c11 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2105,7 +2442,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c12 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2139,40 +2481,50 @@ Array [
         type="password"
         value="Example"
       />
-      <button
-        aria-hidden={true}
-        className="MuiButtonBase-root c1 c2 RcIconButton-root"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={-1}
-        type="button"
+      <div
+        className="MuiBox-root MuiBox-root-257"
       >
-        <span
-          className="c3 c4 delete_circle icon"
+        <button
+          aria-hidden={true}
+          className="MuiButtonBase-root c1 c2 c3 c4 RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          type="button"
         >
-          <svg
-            className="c5"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            className="c5 c6 delete_circle icon"
           >
-            <path
-              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-            />
-          </svg>
-          
-        </span>
-      </button>
+            <svg
+              className="c7"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+        <div
+          className="c1 c2 c8"
+          color="neutral.f04"
+          size="medium"
+          type="button"
+        />
+      </div>
       <button
         className="MuiButtonBase-root c1 c2 RcIconButton-root"
         disabled={false}
@@ -2191,10 +2543,10 @@ Array [
         type="button"
       >
         <span
-          className="c3 c4 hide_border icon"
+          className="c5 c6 hide_border icon"
         >
           <svg
-            className="c5"
+            className="c7"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2257,7 +2609,7 @@ Array [
 }
 
 <br />,
-  .c5 {
+  .c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -2266,7 +2618,7 @@ Array [
   pointer-events: none;
 }
 
-.c4 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2297,12 +2649,12 @@ Array [
 }
 
 .c2,
-.c2 .c3 {
+.c2 .c5 {
   font-size: 20px;
 }
 
 .c2:active,
-.c2:active .c3 {
+.c2:active .c5 {
   color: #666666;
 }
 
@@ -2313,8 +2665,8 @@ Array [
 
 .c2.focus-visible:active,
 .c2[data-focus-visible-added]:active,
-.c2.focus-visible:active .c3,
-.c2[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active .c5,
+.c2[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
@@ -2337,7 +2689,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled,
-.c2.RcIconButton-disabled .c3 {
+.c2.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
 
@@ -2364,8 +2716,8 @@ Array [
 
 .c2.RcIconButton-contained.focus-visible,
 .c2.RcIconButton-contained[data-focus-visible-added],
-.c2.RcIconButton-contained.focus-visible .c3,
-.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+.c2.RcIconButton-contained.focus-visible .c5,
+.c2.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
 }
 
@@ -2374,7 +2726,7 @@ Array [
 }
 
 .c2.RcIconButton-contained:active,
-.c2.RcIconButton-contained:active .c3 {
+.c2.RcIconButton-contained:active .c5 {
   color: #fff;
 }
 
@@ -2385,8 +2737,30 @@ Array [
   opacity: 0;
 }
 
-.c6 *:not(input) + .c1 {
+.c8 {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.c9 *:not(input) + .c1 {
   margin-left: 12px;
+}
+
+.c9 .RcTextFieldInput-root .c3 {
+  display: none;
 }
 
 .c0 {
@@ -2418,6 +2792,17 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
+}
+
+.c0 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c0 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -2521,16 +2906,49 @@ Array [
   display: none;
 }
 
-.c7 *:not(input) + .c1 {
+.c10 *:not(input) + .c1 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c1 {
+.c10 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c10 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c11 *:not(input) + .c1 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c1 {
+.c11 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c11 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c12 *:not(input) + .c1 {
   margin-left: 12px;
+}
+
+.c12 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c12 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2539,7 +2957,7 @@ Array [
   }
 
   .c2:hover,
-  .c2:hover .c3 {
+  .c2:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -2550,7 +2968,7 @@ Array [
   }
 
   .c2.RcIconButton-contained:hover,
-  .c2.RcIconButton-contained:hover .c3 {
+  .c2.RcIconButton-contained:hover .c5 {
     color: #fff;
   }
 }
@@ -2560,7 +2978,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2570,7 +2993,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c10 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2578,7 +3006,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c11 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2586,7 +3019,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c12 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2620,40 +3058,50 @@ Array [
         type="text"
         value="Example"
       />
-      <button
-        aria-hidden={true}
-        className="MuiButtonBase-root c1 c2 RcIconButton-root"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={-1}
-        type="button"
+      <div
+        className="MuiBox-root MuiBox-root-258"
       >
-        <span
-          className="c3 c4 delete_circle icon"
+        <button
+          aria-hidden={true}
+          className="MuiButtonBase-root c1 c2 c3 c4 RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          type="button"
         >
-          <svg
-            className="c5"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            className="c5 c6 delete_circle icon"
           >
-            <path
-              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-            />
-          </svg>
-          
-        </span>
-      </button>
+            <svg
+              className="c7"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+        <div
+          className="c1 c2 c8"
+          color="neutral.f04"
+          size="medium"
+          type="button"
+        />
+      </div>
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root Mui-focused"
@@ -2706,7 +3154,7 @@ Array [
 }
 
 <br />,
-  .c5 {
+  .c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -2715,7 +3163,7 @@ Array [
   pointer-events: none;
 }
 
-.c4 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2746,12 +3194,12 @@ Array [
 }
 
 .c2,
-.c2 .c3 {
+.c2 .c5 {
   font-size: 20px;
 }
 
 .c2:active,
-.c2:active .c3 {
+.c2:active .c5 {
   color: #666666;
 }
 
@@ -2762,8 +3210,8 @@ Array [
 
 .c2.focus-visible:active,
 .c2[data-focus-visible-added]:active,
-.c2.focus-visible:active .c3,
-.c2[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active .c5,
+.c2[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
@@ -2786,7 +3234,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled,
-.c2.RcIconButton-disabled .c3 {
+.c2.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
 
@@ -2813,8 +3261,8 @@ Array [
 
 .c2.RcIconButton-contained.focus-visible,
 .c2.RcIconButton-contained[data-focus-visible-added],
-.c2.RcIconButton-contained.focus-visible .c3,
-.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+.c2.RcIconButton-contained.focus-visible .c5,
+.c2.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
 }
 
@@ -2823,7 +3271,7 @@ Array [
 }
 
 .c2.RcIconButton-contained:active,
-.c2.RcIconButton-contained:active .c3 {
+.c2.RcIconButton-contained:active .c5 {
   color: #fff;
 }
 
@@ -2834,8 +3282,30 @@ Array [
   opacity: 0;
 }
 
-.c6 *:not(input) + .c1 {
+.c8 {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.c9 *:not(input) + .c1 {
   margin-left: 12px;
+}
+
+.c9 .RcTextFieldInput-root .c3 {
+  display: none;
 }
 
 .c0 {
@@ -2867,6 +3337,17 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
+}
+
+.c0 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c0 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -2970,16 +3451,49 @@ Array [
   display: none;
 }
 
-.c7 *:not(input) + .c1 {
+.c10 *:not(input) + .c1 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c1 {
+.c10 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c10 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c11 *:not(input) + .c1 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c1 {
+.c11 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c11 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c12 *:not(input) + .c1 {
   margin-left: 12px;
+}
+
+.c12 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c12 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2988,7 +3502,7 @@ Array [
   }
 
   .c2:hover,
-  .c2:hover .c3 {
+  .c2:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -2999,7 +3513,7 @@ Array [
   }
 
   .c2.RcIconButton-contained:hover,
-  .c2.RcIconButton-contained:hover .c3 {
+  .c2.RcIconButton-contained:hover .c5 {
     color: #fff;
   }
 }
@@ -3009,7 +3523,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3019,7 +3538,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c10 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3027,7 +3551,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c11 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3035,7 +3564,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c12 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3069,40 +3603,50 @@ Array [
         type="text"
         value="Example"
       />
-      <button
-        aria-hidden={true}
-        className="MuiButtonBase-root c1 c2 RcIconButton-root"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={-1}
-        type="button"
+      <div
+        className="MuiBox-root MuiBox-root-259"
       >
-        <span
-          className="c3 c4 delete_circle icon"
+        <button
+          aria-hidden={true}
+          className="MuiButtonBase-root c1 c2 c3 c4 RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          type="button"
         >
-          <svg
-            className="c5"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            className="c5 c6 delete_circle icon"
           >
-            <path
-              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-            />
-          </svg>
-          
-        </span>
-      </button>
+            <svg
+              className="c7"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+        <div
+          className="c1 c2 c8"
+          color="neutral.f04"
+          size="medium"
+          type="button"
+        />
+      </div>
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root Mui-error RcTextFieldFormHelperText-error"
@@ -3155,7 +3699,7 @@ Array [
 }
 
 <br />,
-  .c5 {
+  .c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -3164,7 +3708,7 @@ Array [
   pointer-events: none;
 }
 
-.c4 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3195,12 +3739,12 @@ Array [
 }
 
 .c2,
-.c2 .c3 {
+.c2 .c5 {
   font-size: 20px;
 }
 
 .c2:active,
-.c2:active .c3 {
+.c2:active .c5 {
   color: #666666;
 }
 
@@ -3211,8 +3755,8 @@ Array [
 
 .c2.focus-visible:active,
 .c2[data-focus-visible-added]:active,
-.c2.focus-visible:active .c3,
-.c2[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active .c5,
+.c2[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
@@ -3235,7 +3779,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled,
-.c2.RcIconButton-disabled .c3 {
+.c2.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
 
@@ -3262,8 +3806,8 @@ Array [
 
 .c2.RcIconButton-contained.focus-visible,
 .c2.RcIconButton-contained[data-focus-visible-added],
-.c2.RcIconButton-contained.focus-visible .c3,
-.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+.c2.RcIconButton-contained.focus-visible .c5,
+.c2.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
 }
 
@@ -3272,7 +3816,7 @@ Array [
 }
 
 .c2.RcIconButton-contained:active,
-.c2.RcIconButton-contained:active .c3 {
+.c2.RcIconButton-contained:active .c5 {
   color: #fff;
 }
 
@@ -3283,12 +3827,45 @@ Array [
   opacity: 0;
 }
 
-.c6 *:not(input) + .c1 {
+.c8 {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.c9 *:not(input) + .c1 {
   margin-left: 12px;
 }
 
-.c7 *:not(input) + .c1 {
+.c9 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c10 *:not(input) + .c1 {
   margin-left: 12px;
+}
+
+.c10 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c10 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 *:not(input) + .c1 {
@@ -3316,6 +3893,17 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
+}
+
+.c0 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c0 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -3419,12 +4007,34 @@ Array [
   display: none;
 }
 
-.c8 *:not(input) + .c1 {
+.c11 *:not(input) + .c1 {
   margin-left: 12px;
 }
 
-.c9 *:not(input) + .c1 {
+.c11 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c11 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c12 *:not(input) + .c1 {
   margin-left: 12px;
+}
+
+.c12 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c12 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3433,7 +4043,7 @@ Array [
   }
 
   .c2:hover,
-  .c2:hover .c3 {
+  .c2:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -3444,7 +4054,7 @@ Array [
   }
 
   .c2.RcIconButton-contained:hover,
-  .c2.RcIconButton-contained:hover .c3 {
+  .c2.RcIconButton-contained:hover .c5 {
     color: #fff;
   }
 }
@@ -3454,7 +4064,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c10 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3462,7 +4077,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3472,7 +4092,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c11 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3480,7 +4105,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c12 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3514,40 +4144,50 @@ Array [
         type="text"
         value="Example"
       />
-      <button
-        aria-hidden={true}
-        className="MuiButtonBase-root c1 c2 RcIconButton-root"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={-1}
-        type="button"
+      <div
+        className="MuiBox-root MuiBox-root-260"
       >
-        <span
-          className="c3 c4 delete_circle icon"
+        <button
+          aria-hidden={true}
+          className="MuiButtonBase-root c1 c2 c3 c4 RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          type="button"
         >
-          <svg
-            className="c5"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            className="c5 c6 delete_circle icon"
           >
-            <path
-              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-            />
-          </svg>
-          
-        </span>
-      </button>
+            <svg
+              className="c7"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+        <div
+          className="c1 c2 c8"
+          color="neutral.f04"
+          size="medium"
+          type="button"
+        />
+      </div>
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root Mui-disabled RcTextFieldFormHelperText-disabled"
@@ -3600,7 +4240,7 @@ Array [
 }
 
 <br />,
-  .c5 {
+  .c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -3609,7 +4249,7 @@ Array [
   pointer-events: none;
 }
 
-.c4 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3640,12 +4280,12 @@ Array [
 }
 
 .c2,
-.c2 .c3 {
+.c2 .c5 {
   font-size: 20px;
 }
 
 .c2:active,
-.c2:active .c3 {
+.c2:active .c5 {
   color: #666666;
 }
 
@@ -3656,8 +4296,8 @@ Array [
 
 .c2.focus-visible:active,
 .c2[data-focus-visible-added]:active,
-.c2.focus-visible:active .c3,
-.c2[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active .c5,
+.c2[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
@@ -3680,7 +4320,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled,
-.c2.RcIconButton-disabled .c3 {
+.c2.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
 
@@ -3707,8 +4347,8 @@ Array [
 
 .c2.RcIconButton-contained.focus-visible,
 .c2.RcIconButton-contained[data-focus-visible-added],
-.c2.RcIconButton-contained.focus-visible .c3,
-.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+.c2.RcIconButton-contained.focus-visible .c5,
+.c2.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
 }
 
@@ -3717,7 +4357,7 @@ Array [
 }
 
 .c2.RcIconButton-contained:active,
-.c2.RcIconButton-contained:active .c3 {
+.c2.RcIconButton-contained:active .c5 {
   color: #fff;
 }
 
@@ -3728,16 +4368,60 @@ Array [
   opacity: 0;
 }
 
-.c6 *:not(input) + .c1 {
+.c8 {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.c9 *:not(input) + .c1 {
   margin-left: 12px;
 }
 
-.c7 *:not(input) + .c1 {
+.c9 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c10 *:not(input) + .c1 {
   margin-left: 12px;
 }
 
-.c8 *:not(input) + .c1 {
+.c10 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c10 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c11 *:not(input) + .c1 {
   margin-left: 12px;
+}
+
+.c11 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c11 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 {
@@ -3769,6 +4453,17 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
+}
+
+.c0 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c0 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -3872,8 +4567,19 @@ Array [
   display: none;
 }
 
-.c9 *:not(input) + .c1 {
+.c12 *:not(input) + .c1 {
   margin-left: 12px;
+}
+
+.c12 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c12 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3882,7 +4588,7 @@ Array [
   }
 
   .c2:hover,
-  .c2:hover .c3 {
+  .c2:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -3893,7 +4599,7 @@ Array [
   }
 
   .c2.RcIconButton-contained:hover,
-  .c2.RcIconButton-contained:hover .c3 {
+  .c2.RcIconButton-contained:hover .c5 {
     color: #fff;
   }
 }
@@ -3903,7 +4609,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c10 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3911,7 +4622,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c11 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3919,7 +4635,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3929,7 +4650,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c12 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3963,40 +4689,50 @@ Array [
         type="text"
         value="Example"
       />
-      <button
-        aria-hidden={true}
-        className="MuiButtonBase-root c1 c2 RcIconButton-root"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={-1}
-        type="button"
+      <div
+        className="MuiBox-root MuiBox-root-261"
       >
-        <span
-          className="c3 c4 delete_circle icon"
+        <button
+          aria-hidden={true}
+          className="MuiButtonBase-root c1 c2 c3 c4 RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          type="button"
         >
-          <svg
-            className="c5"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            className="c5 c6 delete_circle icon"
           >
-            <path
-              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-            />
-          </svg>
-          
-        </span>
-      </button>
+            <svg
+              className="c7"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+        <div
+          className="c1 c2 c8"
+          color="neutral.f04"
+          size="medium"
+          type="button"
+        />
+      </div>
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
@@ -4049,7 +4785,7 @@ Array [
 }
 
 <br />,
-  .c5 {
+  .c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -4058,7 +4794,7 @@ Array [
   pointer-events: none;
 }
 
-.c4 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4089,12 +4825,12 @@ Array [
 }
 
 .c2,
-.c2 .c3 {
+.c2 .c5 {
   font-size: 20px;
 }
 
 .c2:active,
-.c2:active .c3 {
+.c2:active .c5 {
   color: #666666;
 }
 
@@ -4105,8 +4841,8 @@ Array [
 
 .c2.focus-visible:active,
 .c2[data-focus-visible-added]:active,
-.c2.focus-visible:active .c3,
-.c2[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active .c5,
+.c2[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
@@ -4129,7 +4865,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled,
-.c2.RcIconButton-disabled .c3 {
+.c2.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
 
@@ -4156,8 +4892,8 @@ Array [
 
 .c2.RcIconButton-contained.focus-visible,
 .c2.RcIconButton-contained[data-focus-visible-added],
-.c2.RcIconButton-contained.focus-visible .c3,
-.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+.c2.RcIconButton-contained.focus-visible .c5,
+.c2.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
 }
 
@@ -4166,7 +4902,7 @@ Array [
 }
 
 .c2.RcIconButton-contained:active,
-.c2.RcIconButton-contained:active .c3 {
+.c2.RcIconButton-contained:active .c5 {
   color: #fff;
 }
 
@@ -4177,20 +4913,75 @@ Array [
   opacity: 0;
 }
 
-.c6 *:not(input) + .c1 {
-  margin-left: 12px;
+.c8 {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
 }
 
-.c7 *:not(input) + .c1 {
-  margin-left: 12px;
-}
-
-.c8 *:not(input) + .c1 {
-  margin-left: 12px;
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
 }
 
 .c9 *:not(input) + .c1 {
   margin-left: 12px;
+}
+
+.c9 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c10 *:not(input) + .c1 {
+  margin-left: 12px;
+}
+
+.c10 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c10 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c11 *:not(input) + .c1 {
+  margin-left: 12px;
+}
+
+.c11 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c11 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c12 *:not(input) + .c1 {
+  margin-left: 12px;
+}
+
+.c12 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c12 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 {
@@ -4218,6 +5009,17 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
+}
+
+.c0 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c0 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -4327,7 +5129,7 @@ Array [
   }
 
   .c2:hover,
-  .c2:hover .c3 {
+  .c2:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -4338,7 +5140,7 @@ Array [
   }
 
   .c2.RcIconButton-contained:hover,
-  .c2.RcIconButton-contained:hover .c3 {
+  .c2.RcIconButton-contained:hover .c5 {
     color: #fff;
   }
 }
@@ -4348,7 +5150,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c10 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -4356,7 +5163,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c11 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -4364,7 +5176,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c12 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -4372,7 +5189,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -4408,40 +5230,50 @@ Array [
         type="text"
         value="Example"
       />
-      <button
-        aria-hidden={true}
-        className="MuiButtonBase-root c1 c2 RcIconButton-root"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={-1}
-        type="button"
+      <div
+        className="MuiBox-root MuiBox-root-262"
       >
-        <span
-          className="c3 c4 delete_circle icon"
+        <button
+          aria-hidden={true}
+          className="MuiButtonBase-root c1 c2 c3 c4 RcIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          type="button"
         >
-          <svg
-            className="c5"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            className="c5 c6 delete_circle icon"
           >
-            <path
-              d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-            />
-          </svg>
-          
-        </span>
-      </button>
+            <svg
+              className="c7"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+        <div
+          className="c1 c2 c8"
+          color="neutral.f04"
+          size="medium"
+          type="button"
+        />
+      </div>
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root Mui-focused"
@@ -4453,7 +5285,7 @@ Array [
 `;
 
 exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align 1`] = `
-.c5 {
+.c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -4462,7 +5294,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   pointer-events: none;
 }
 
-.c4 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4493,12 +5325,12 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
 }
 
 .c2,
-.c2 .c3 {
+.c2 .c5 {
   font-size: 20px;
 }
 
 .c2:active,
-.c2:active .c3 {
+.c2:active .c5 {
   color: #666666;
 }
 
@@ -4509,8 +5341,8 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
 
 .c2.focus-visible:active,
 .c2[data-focus-visible-added]:active,
-.c2.focus-visible:active .c3,
-.c2[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active .c5,
+.c2[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
@@ -4533,7 +5365,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
 }
 
 .c2.RcIconButton-disabled,
-.c2.RcIconButton-disabled .c3 {
+.c2.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
 
@@ -4560,8 +5392,8 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
 
 .c2.RcIconButton-contained.focus-visible,
 .c2.RcIconButton-contained[data-focus-visible-added],
-.c2.RcIconButton-contained.focus-visible .c3,
-.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+.c2.RcIconButton-contained.focus-visible .c5,
+.c2.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
 }
 
@@ -4570,7 +5402,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
 }
 
 .c2.RcIconButton-contained:active,
-.c2.RcIconButton-contained:active .c3 {
+.c2.RcIconButton-contained:active .c5 {
   color: #fff;
 }
 
@@ -4579,6 +5411,24 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
+}
+
+.c8 {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
 }
 
 .c0 {
@@ -4610,6 +5460,17 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
+}
+
+.c0 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c0 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -4713,19 +5574,19 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   display: none;
 }
 
-.c6 {
+.c9 {
   width: 168px;
 }
 
-.c6 *:not(input) + .c1 {
+.c9 *:not(input) + .c1 {
   margin-left: 12px;
 }
 
-.c6.RcTextField-root {
+.c9.RcTextField-root {
   margin: 0 0 16px 0;
 }
 
-.c6 .RcTextFieldInputLabel-root {
+.c9 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -4736,15 +5597,26 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   transform: scale(1);
 }
 
-.c6 .RcTextFieldInputLabel-focused {
+.c9 .RcTextFieldInputLabel-focused {
   color: #066FAC;
 }
 
-.c6 .RcTextFieldInput-root {
+.c9 .RcTextFieldInput-root {
   color: #121212;
 }
 
-.c6 .RcTextFieldInput-input {
+.c9 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c9 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c9 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -4753,69 +5625,69 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   width: calc(100% - 20px);
 }
 
-.c6 .RcTextFieldInput-input::-webkit-input-placeholder {
+.c9 .RcTextFieldInput-input::-webkit-input-placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c6 .RcTextFieldInput-input::-moz-placeholder {
+.c9 .RcTextFieldInput-input::-moz-placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c6 .RcTextFieldInput-input:-ms-input-placeholder {
+.c9 .RcTextFieldInput-input:-ms-input-placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c6 .RcTextFieldInput-input::placeholder {
+.c9 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c6 .RcTextFieldInput-underline:before {
+.c9 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
 
-.c6 .RcTextFieldInput-underline:after {
+.c9 .RcTextFieldInput-underline:after {
   border-bottom-color: #066FAC;
 }
 
-.c6 .RcTextFieldInput-error:after {
+.c9 .RcTextFieldInput-error:after {
   border-bottom-color: #BE3933;
 }
 
-.c6 .RcTextFieldInput-disabled {
+.c9 .RcTextFieldInput-disabled {
   color: #B9B9B9;
   -webkit-text-fill-color: #B9B9B9;
 }
 
-.c6 .RcTextFieldInput-disabled::-webkit-input-placeholder {
+.c9 .RcTextFieldInput-disabled::-webkit-input-placeholder {
   color: #B9B9B9;
 }
 
-.c6 .RcTextFieldInput-disabled::-moz-placeholder {
+.c9 .RcTextFieldInput-disabled::-moz-placeholder {
   color: #B9B9B9;
 }
 
-.c6 .RcTextFieldInput-disabled:-ms-input-placeholder {
+.c9 .RcTextFieldInput-disabled:-ms-input-placeholder {
   color: #B9B9B9;
 }
 
-.c6 .RcTextFieldInput-disabled::placeholder {
+.c9 .RcTextFieldInput-disabled::placeholder {
   color: #B9B9B9;
 }
 
-.c6 .RcTextFieldInput-disabled:before {
+.c9 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
   border-bottom-color: #B9B9B9;
 }
 
-.c6 .RcTextFieldInput-disabled:after {
+.c9 .RcTextFieldInput-disabled:after {
   border-bottom-style: none;
 }
 
-.c6 .RcTextFieldFormHelperText-root {
+.c9 .RcTextFieldFormHelperText-root {
   font-size: 0.75rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -4823,43 +5695,43 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   color: #666666;
 }
 
-.c6 .RcTextFieldFormHelperText-error,
-.c6 .RcTextFieldInputLabel-error {
+.c9 .RcTextFieldFormHelperText-error,
+.c9 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
-.c6 .RcTextFieldFormHelperText-disabled,
-.c6 .RcTextFieldInputLabel-disabled {
+.c9 .RcTextFieldFormHelperText-disabled,
+.c9 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
 
-.c6 input[type='search']::-ms-clear,
-.c6 input[type='search']::-ms-reveal {
+.c9 input[type='search']::-ms-clear,
+.c9 input[type='search']::-ms-reveal {
   display: none;
   width: 0;
   height: 0;
 }
 
-.c6 input[type='search']::-webkit-search-decoration,
-.c6 input[type='search']::-webkit-search-cancel-button,
-.c6 input[type='search']::-webkit-search-results-button,
-.c6 input[type='search']::-webkit-search-results-decoration {
+.c9 input[type='search']::-webkit-search-decoration,
+.c9 input[type='search']::-webkit-search-cancel-button,
+.c9 input[type='search']::-webkit-search-results-button,
+.c9 input[type='search']::-webkit-search-results-decoration {
   display: none;
 }
 
-.c7 {
+.c10 {
   width: 168px;
 }
 
-.c7 *:not(input) + .c1 {
+.c10 *:not(input) + .c1 {
   margin-left: 12px;
 }
 
-.c7.RcTextField-root {
+.c10.RcTextField-root {
   margin: 0 0 16px 0;
 }
 
-.c7 .RcTextFieldInputLabel-root {
+.c10 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -4870,15 +5742,26 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   transform: scale(1);
 }
 
-.c7 .RcTextFieldInputLabel-focused {
+.c10 .RcTextFieldInputLabel-focused {
   color: #066FAC;
 }
 
-.c7 .RcTextFieldInput-root {
+.c10 .RcTextFieldInput-root {
   color: #121212;
 }
 
-.c7 .RcTextFieldInput-input {
+.c10 .RcTextFieldInput-root .c3 {
+  display: none;
+}
+
+.c10 .RcTextFieldInput-focused .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c10 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -4887,69 +5770,69 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   width: calc(100% - 20px);
 }
 
-.c7 .RcTextFieldInput-input::-webkit-input-placeholder {
+.c10 .RcTextFieldInput-input::-webkit-input-placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c7 .RcTextFieldInput-input::-moz-placeholder {
+.c10 .RcTextFieldInput-input::-moz-placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c7 .RcTextFieldInput-input:-ms-input-placeholder {
+.c10 .RcTextFieldInput-input:-ms-input-placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c7 .RcTextFieldInput-input::placeholder {
+.c10 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c7 .RcTextFieldInput-underline:before {
+.c10 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
 
-.c7 .RcTextFieldInput-underline:after {
+.c10 .RcTextFieldInput-underline:after {
   border-bottom-color: #066FAC;
 }
 
-.c7 .RcTextFieldInput-error:after {
+.c10 .RcTextFieldInput-error:after {
   border-bottom-color: #BE3933;
 }
 
-.c7 .RcTextFieldInput-disabled {
+.c10 .RcTextFieldInput-disabled {
   color: #B9B9B9;
   -webkit-text-fill-color: #B9B9B9;
 }
 
-.c7 .RcTextFieldInput-disabled::-webkit-input-placeholder {
+.c10 .RcTextFieldInput-disabled::-webkit-input-placeholder {
   color: #B9B9B9;
 }
 
-.c7 .RcTextFieldInput-disabled::-moz-placeholder {
+.c10 .RcTextFieldInput-disabled::-moz-placeholder {
   color: #B9B9B9;
 }
 
-.c7 .RcTextFieldInput-disabled:-ms-input-placeholder {
+.c10 .RcTextFieldInput-disabled:-ms-input-placeholder {
   color: #B9B9B9;
 }
 
-.c7 .RcTextFieldInput-disabled::placeholder {
+.c10 .RcTextFieldInput-disabled::placeholder {
   color: #B9B9B9;
 }
 
-.c7 .RcTextFieldInput-disabled:before {
+.c10 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
   border-bottom-color: #B9B9B9;
 }
 
-.c7 .RcTextFieldInput-disabled:after {
+.c10 .RcTextFieldInput-disabled:after {
   border-bottom-style: none;
 }
 
-.c7 .RcTextFieldFormHelperText-root {
+.c10 .RcTextFieldFormHelperText-root {
   font-size: 0.75rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -4957,31 +5840,31 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   color: #666666;
 }
 
-.c7 .RcTextFieldFormHelperText-error,
-.c7 .RcTextFieldInputLabel-error {
+.c10 .RcTextFieldFormHelperText-error,
+.c10 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
-.c7 .RcTextFieldFormHelperText-disabled,
-.c7 .RcTextFieldInputLabel-disabled {
+.c10 .RcTextFieldFormHelperText-disabled,
+.c10 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
 
-.c7 input[type='search']::-ms-clear,
-.c7 input[type='search']::-ms-reveal {
+.c10 input[type='search']::-ms-clear,
+.c10 input[type='search']::-ms-reveal {
   display: none;
   width: 0;
   height: 0;
 }
 
-.c7 input[type='search']::-webkit-search-decoration,
-.c7 input[type='search']::-webkit-search-cancel-button,
-.c7 input[type='search']::-webkit-search-results-button,
-.c7 input[type='search']::-webkit-search-results-decoration {
+.c10 input[type='search']::-webkit-search-decoration,
+.c10 input[type='search']::-webkit-search-cancel-button,
+.c10 input[type='search']::-webkit-search-results-button,
+.c10 input[type='search']::-webkit-search-results-decoration {
   display: none;
 }
 
-.c8 {
+.c11 {
   font-size: 0.9375rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -4995,7 +5878,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   }
 
   .c2:hover,
-  .c2:hover .c3 {
+  .c2:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -5006,13 +5889,18 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   }
 
   .c2.RcIconButton-contained:hover,
-  .c2.RcIconButton-contained:hover .c3 {
+  .c2.RcIconButton-contained:hover .c5 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c0 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -5022,21 +5910,31 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c9 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
+  .c9 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
     border-bottom-color: #121212;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-
+  .c10 .RcTextFieldInput-root:hover:not(.RcTextFieldInput-disabled) .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
+  .c10 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
     border-bottom-color: #121212;
   }
 }
@@ -5078,40 +5976,50 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
           type="search"
           value="text align"
         />
-        <button
-          aria-hidden={true}
-          className="MuiButtonBase-root c1 c2 RcIconButton-root"
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={-1}
-          type="button"
+        <div
+          className="MuiBox-root MuiBox-root-263"
         >
-          <span
-            className="c3 c4 delete_circle icon"
+          <button
+            aria-hidden={true}
+            className="MuiButtonBase-root c1 c2 c3 c4 RcIconButton-root"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={-1}
+            type="button"
           >
-            <svg
-              className="c5"
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
+            <span
+              className="c5 c6 delete_circle icon"
             >
-              <path
-                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-              />
-            </svg>
-            
-          </span>
-        </button>
+              <svg
+                className="c7"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+                />
+              </svg>
+              
+            </span>
+          </button>
+          <div
+            className="c1 c2 c8"
+            color="neutral.f04"
+            size="medium"
+            type="button"
+          />
+        </div>
       </div>
       <p
         className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
@@ -5122,7 +6030,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
     </div>
     <br />
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c6"
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c9"
     >
       <label
         className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -5152,40 +6060,50 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
           type="search"
           value="text align"
         />
-        <button
-          aria-hidden={true}
-          className="MuiButtonBase-root c1 c2 RcIconButton-root"
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={-1}
-          type="button"
+        <div
+          className="MuiBox-root MuiBox-root-264"
         >
-          <span
-            className="c3 c4 delete_circle icon"
+          <button
+            aria-hidden={true}
+            className="MuiButtonBase-root c1 c2 c3 c4 RcIconButton-root"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={-1}
+            type="button"
           >
-            <svg
-              className="c5"
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
+            <span
+              className="c5 c6 delete_circle icon"
             >
-              <path
-                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-              />
-            </svg>
-            
-          </span>
-        </button>
+              <svg
+                className="c7"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+                />
+              </svg>
+              
+            </span>
+          </button>
+          <div
+            className="c1 c2 c8"
+            color="neutral.f04"
+            size="medium"
+            type="button"
+          />
+        </div>
       </div>
       <p
         className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
@@ -5196,7 +6114,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
     </div>
     <br />
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c7"
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c10"
     >
       <label
         className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
@@ -5226,40 +6144,50 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
           type="search"
           value="text align"
         />
-        <button
-          aria-hidden={true}
-          className="MuiButtonBase-root c1 c2 RcIconButton-root"
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={-1}
-          type="button"
+        <div
+          className="MuiBox-root MuiBox-root-265"
         >
-          <span
-            className="c3 c4 delete_circle icon"
+          <button
+            aria-hidden={true}
+            className="MuiButtonBase-root c1 c2 c3 c4 RcIconButton-root"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={-1}
+            type="button"
           >
-            <svg
-              className="c5"
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
+            <span
+              className="c5 c6 delete_circle icon"
             >
-              <path
-                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-              />
-            </svg>
-            
-          </span>
-        </button>
+              <svg
+                className="c7"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+                />
+              </svg>
+              
+            </span>
+          </button>
+          <div
+            className="c1 c2 c8"
+            color="neutral.f04"
+            size="medium"
+            type="button"
+          />
+        </div>
       </div>
       <p
         className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
@@ -5273,7 +6201,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
     className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
   >
     <p
-      className="MuiTypography-root c8 MuiTypography-paragraph"
+      className="MuiTypography-root c11 MuiTypography-paragraph"
       data-color="neutral.f06"
       data-variant="body1"
     >

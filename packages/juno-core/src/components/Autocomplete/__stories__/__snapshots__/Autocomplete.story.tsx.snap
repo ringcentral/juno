@@ -41,7 +41,7 @@ Array [
   >
     Should use RcDownshift to replace that
   </h5>,
-  .c5 {
+  .c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -50,7 +50,7 @@ Array [
   pointer-events: none;
 }
 
-.c4 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -81,12 +81,12 @@ Array [
 }
 
 .c2,
-.c2 .c3 {
+.c2 .c5 {
   font-size: 20px;
 }
 
 .c2:active,
-.c2:active .c3 {
+.c2:active .c5 {
   color: #666666;
 }
 
@@ -97,8 +97,8 @@ Array [
 
 .c2.focus-visible:active,
 .c2[data-focus-visible-added]:active,
-.c2.focus-visible:active .c3,
-.c2[data-focus-visible-added]:active .c3 {
+.c2.focus-visible:active .c5,
+.c2[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
@@ -121,7 +121,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled,
-.c2.RcIconButton-disabled .c3 {
+.c2.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
 
@@ -148,8 +148,8 @@ Array [
 
 .c2.RcIconButton-contained.focus-visible,
 .c2.RcIconButton-contained[data-focus-visible-added],
-.c2.RcIconButton-contained.focus-visible .c3,
-.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
+.c2.RcIconButton-contained.focus-visible .c5,
+.c2.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
 }
 
@@ -158,7 +158,7 @@ Array [
 }
 
 .c2.RcIconButton-contained:active,
-.c2.RcIconButton-contained:active .c3 {
+.c2.RcIconButton-contained:active .c5 {
   color: #fff;
 }
 
@@ -169,38 +169,56 @@ Array [
   opacity: 0;
 }
 
-.c7,
-.c7 .c3 {
+.c10,
+.c10 .c5 {
   font-size: 24px;
 }
 
-.c7:active,
-.c7:active .c3 {
+.c10:active,
+.c10:active .c5 {
   color: #666666;
 }
 
-.c7.focus-visible:active,
-.c7[data-focus-visible-added]:active,
-.c7.focus-visible:active .c3,
-.c7[data-focus-visible-added]:active .c3 {
+.c10.focus-visible:active,
+.c10[data-focus-visible-added]:active,
+.c10.focus-visible:active .c5,
+.c10[data-focus-visible-added]:active .c5 {
   color: rgba(102,102,102,0.88);
 }
 
-.c7.RcIconButton-disabled,
-.c7.RcIconButton-disabled .c3 {
+.c10.RcIconButton-disabled,
+.c10.RcIconButton-disabled .c5 {
   color: #B9B9B9;
 }
 
-.c7.RcIconButton-contained.focus-visible,
-.c7.RcIconButton-contained[data-focus-visible-added],
-.c7.RcIconButton-contained.focus-visible .c3,
-.c7.RcIconButton-contained[data-focus-visible-added] .c3 {
+.c10.RcIconButton-contained.focus-visible,
+.c10.RcIconButton-contained[data-focus-visible-added],
+.c10.RcIconButton-contained.focus-visible .c5,
+.c10.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
 }
 
-.c7.RcIconButton-contained:active,
-.c7.RcIconButton-contained:active .c3 {
+.c10.RcIconButton-contained:active,
+.c10.RcIconButton-contained:active .c5 {
   color: #fff;
+}
+
+.c8 {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
 }
 
 .c0 *:not(input) + .c1 {
@@ -228,6 +246,10 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
+}
+
+.c0 .RcTextFieldInput-root .c3 {
+  display: none;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -331,8 +353,12 @@ Array [
   display: none;
 }
 
-.c6 .c1 {
+.c9 .c1 {
   margin-left: 12px;
+}
+
+.c9 .RcTextFieldInput-root .c3 {
+  display: none;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -341,7 +367,7 @@ Array [
   }
 
   .c2:hover,
-  .c2:hover .c3 {
+  .c2:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -352,21 +378,21 @@ Array [
   }
 
   .c2.RcIconButton-contained:hover,
-  .c2.RcIconButton-contained:hover .c3 {
+  .c2.RcIconButton-contained:hover .c5 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7:hover,
-  .c7:hover .c3 {
+  .c10:hover,
+  .c10:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7.RcIconButton-contained:hover,
-  .c7.RcIconButton-contained:hover .c3 {
+  .c10.RcIconButton-contained:hover,
+  .c10.RcIconButton-contained:hover .c5 {
     color: #fff;
   }
 }
@@ -431,40 +457,50 @@ Array [
           type="text"
           value=""
         />
-        <button
-          aria-hidden={true}
-          className="MuiButtonBase-root c1 c2 RcIconButton-root"
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={-1}
-          type="button"
+        <div
+          className="MuiBox-root MuiBox-root-412"
         >
-          <span
-            className="c3 c4 delete_circle icon"
+          <button
+            aria-hidden={true}
+            className="MuiButtonBase-root c1 c2 c3 c4 RcIconButton-root"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={-1}
+            type="button"
           >
-            <svg
-              className="c5"
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
+            <span
+              className="c5 c6 delete_circle icon"
             >
-              <path
-                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-              />
-            </svg>
-            
-          </span>
-        </button>
+              <svg
+                className="c7"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+                />
+              </svg>
+              
+            </span>
+          </button>
+          <div
+            className="c1 c2 c8"
+            color="neutral.f04"
+            size="medium"
+            type="button"
+          />
+        </div>
         <div
           className="MuiAutocomplete-endAdornment"
         >
@@ -587,7 +623,7 @@ Array [
   >
     Example for switch to RcDownshift
   </h5>,
-  .c8 {
+  .c10 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -596,7 +632,7 @@ Array [
   pointer-events: none;
 }
 
-.c7 {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -627,12 +663,12 @@ Array [
 }
 
 .c5,
-.c5 .c6 {
+.c5 .c8 {
   font-size: 20px;
 }
 
 .c5:active,
-.c5:active .c6 {
+.c5:active .c8 {
   color: #666666;
 }
 
@@ -643,8 +679,8 @@ Array [
 
 .c5.focus-visible:active,
 .c5[data-focus-visible-added]:active,
-.c5.focus-visible:active .c6,
-.c5[data-focus-visible-added]:active .c6 {
+.c5.focus-visible:active .c8,
+.c5[data-focus-visible-added]:active .c8 {
   color: rgba(102,102,102,0.88);
 }
 
@@ -667,7 +703,7 @@ Array [
 }
 
 .c5.RcIconButton-disabled,
-.c5.RcIconButton-disabled .c6 {
+.c5.RcIconButton-disabled .c8 {
   color: #B9B9B9;
 }
 
@@ -694,8 +730,8 @@ Array [
 
 .c5.RcIconButton-contained.focus-visible,
 .c5.RcIconButton-contained[data-focus-visible-added],
-.c5.RcIconButton-contained.focus-visible .c6,
-.c5.RcIconButton-contained[data-focus-visible-added] .c6 {
+.c5.RcIconButton-contained.focus-visible .c8,
+.c5.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
 }
 
@@ -704,7 +740,7 @@ Array [
 }
 
 .c5.RcIconButton-contained:active,
-.c5.RcIconButton-contained:active .c6 {
+.c5.RcIconButton-contained:active .c8 {
   color: #fff;
 }
 
@@ -715,7 +751,7 @@ Array [
   opacity: 0;
 }
 
-.c9 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -737,30 +773,30 @@ Array [
   cursor: pointer;
 }
 
-.c9,
-.c9 .c6 {
+.c12,
+.c12 .c8 {
   font-size: 24px;
 }
 
-.c9:active,
-.c9:active .c6 {
+.c12:active,
+.c12:active .c8 {
   color: #666666;
 }
 
-.c9.focus-visible,
-.c9[data-focus-visible-added] {
+.c12.focus-visible,
+.c12[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c9.focus-visible:active,
-.c9[data-focus-visible-added]:active,
-.c9.focus-visible:active .c6,
-.c9[data-focus-visible-added]:active .c6 {
+.c12.focus-visible:active,
+.c12[data-focus-visible-added]:active,
+.c12.focus-visible:active .c8,
+.c12[data-focus-visible-added]:active .c8 {
   color: rgba(102,102,102,0.88);
 }
 
-.c9.focus-visible:after,
-.c9[data-focus-visible-added]:after {
+.c12.focus-visible:after,
+.c12[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -5px;
@@ -773,61 +809,83 @@ Array [
   z-index: 1;
 }
 
-.c9.RcIconButton-persistBg {
+.c12.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c9.RcIconButton-disabled,
-.c9.RcIconButton-disabled .c6 {
+.c12.RcIconButton-disabled,
+.c12.RcIconButton-disabled .c8 {
   color: #B9B9B9;
 }
 
-.c9.RcIconButton-invisible {
+.c12.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c9.RcIconButton-outline {
+.c12.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c9.RcIconButton-contained {
+.c12.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
+.c12.RcIconButton-contained.focus-visible,
+.c12.RcIconButton-contained[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.84);
 }
 
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added],
-.c9.RcIconButton-contained.focus-visible .c6,
-.c9.RcIconButton-contained[data-focus-visible-added] .c6 {
+.c12.RcIconButton-contained.focus-visible,
+.c12.RcIconButton-contained[data-focus-visible-added],
+.c12.RcIconButton-contained.focus-visible .c8,
+.c12.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
 }
 
-.c9.RcIconButton-contained:active {
+.c12.RcIconButton-contained:active {
   background-color: rgba(102,102,102,0.76);
 }
 
-.c9.RcIconButton-contained:active,
-.c9.RcIconButton-contained:active .c6 {
+.c12.RcIconButton-contained:active,
+.c12.RcIconButton-contained:active .c8 {
   color: #fff;
 }
 
-.c9 .RcIconButtonTouchRipple-ripplePulsate {
+.c12 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
 }
 
-.c10 *:not(input) + .c4 {
+.c11 {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.c13 *:not(input) + .c4 {
   margin-left: 12px;
+}
+
+.c13 .RcTextFieldInput-root .c6 {
+  display: none;
 }
 
 .c0 .c4 {
@@ -851,6 +909,10 @@ Array [
 
 .c0 .RcTextFieldInput-root {
   color: #121212;
+}
+
+.c0 .RcTextFieldInput-root .c6 {
+  display: none;
 }
 
 .c0 .RcTextFieldInput-input {
@@ -997,7 +1059,7 @@ Array [
   }
 
   .c5:hover,
-  .c5:hover .c6 {
+  .c5:hover .c8 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -1008,29 +1070,29 @@ Array [
   }
 
   .c5.RcIconButton-contained:hover,
-  .c5.RcIconButton-contained:hover .c6 {
+  .c5.RcIconButton-contained:hover .c8 {
     color: #fff;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9:hover {
+  .c12:hover {
     background-color: transparent;
   }
 
-  .c9:hover,
-  .c9:hover .c6 {
+  .c12:hover,
+  .c12:hover .c8 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-contained:hover {
+  .c12.RcIconButton-contained:hover {
     background-color: rgba(102,102,102,0.92);
   }
 
-  .c9.RcIconButton-contained:hover,
-  .c9.RcIconButton-contained:hover .c6 {
+  .c12.RcIconButton-contained:hover,
+  .c12.RcIconButton-contained:hover .c8 {
     color: #fff;
   }
 }
@@ -1099,44 +1161,54 @@ Array [
       <div
         className="c3"
       >
-        <button
-          aria-hidden={true}
-          className="MuiButtonBase-root c4 c5 RcIconButton-root"
-          disabled={false}
-          id="downshift-0-clear-button"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={-1}
-          type="button"
+        <div
+          className="MuiBox-root MuiBox-root-413"
         >
-          <span
-            className="c6 c7 delete_circle icon"
+          <button
+            aria-hidden={true}
+            className="MuiButtonBase-root c4 c5 c6 c7 RcIconButton-root"
+            disabled={false}
+            id="downshift-0-clear-button"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={-1}
+            type="button"
           >
-            <svg
-              className="c8"
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
+            <span
+              className="c8 c9 delete_circle icon"
             >
-              <path
-                d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-              />
-            </svg>
-            
-          </span>
-        </button>
+              <svg
+                className="c10"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+                />
+              </svg>
+              
+            </span>
+          </button>
+          <div
+            className="c4 c5 c11"
+            color="neutral.f04"
+            size="medium"
+            type="button"
+          />
+        </div>
         <button
           aria-hidden={true}
-          className="MuiButtonBase-root c4 c9 RcIconButton-root"
+          className="MuiButtonBase-root c4 c12 RcIconButton-root"
           disabled={false}
           id="downshift-0-toggle-button"
           onBlur={[Function]}
@@ -1155,10 +1227,10 @@ Array [
           type="button"
         >
           <span
-            className="c6 c7 arrow-down icon"
+            className="c8 c9 arrow-down icon"
           >
             <svg
-              className="c8"
+              className="c10"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
