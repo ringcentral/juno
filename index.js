@@ -56647,7 +56647,7 @@ var _RcBadge = forwardRef537((inProps, ref2) => {
   if (isRound) {
     useRoundBadgeOffset(innerRef);
   }
-  const classes = useMemo18(() => combineProps(RcBadgeClasses, classesProp), [classesProp]);
+  const classes = useMemo18(() => combineClasses(RcBadgeClasses, classesProp), [classesProp]);
   const CustomDotBadge = useMemo18(() => {
     return isDot ? forwardRef537(({ children: OmitChildren, ...rest2 }, ref3) => {
       const { horizontal: horizontal2, vertical: vertical2 } = anchorOrigin;
@@ -58708,9 +58708,17 @@ import React622, {
 
 // ../juno-core/src/components/Forms/TextField/styles/ClearIconButton.tsx
 import React621, { forwardRef as forwardRef556 } from "react";
-var _ClearIconButton = forwardRef556(({ onMouseDown, ...rest }, ref2) => {
-  return /* @__PURE__ */ React621.createElement(RcIconButton, {
-    ref: ref2,
+var FakeButton = styled_components_default(RcIconButton)`
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+`;
+var _ClearIconButton = forwardRef556(({ onMouseDown, size, iconSize, ...rest }, ref2) => {
+  return /* @__PURE__ */ React621.createElement(RcBox, {
+    display: "flex",
+    alignItems: "center",
+    position: "relative"
+  }, /* @__PURE__ */ React621.createElement(RcIconButton, {
     type: "button",
     "aria-hidden": true,
     variant: "plain",
@@ -58720,10 +58728,22 @@ var _ClearIconButton = forwardRef556(({ onMouseDown, ...rest }, ref2) => {
       e2.preventDefault();
       onMouseDown?.(e2);
     },
-    ...rest
-  });
+    size,
+    ...rest,
+    useRcTooltip: false
+  }), /* @__PURE__ */ React621.createElement(FakeButton, {
+    variant: "plain",
+    as: "div",
+    size,
+    ref: ref2
+  }));
 });
-var ClearIconButton = styled_components_default(_ClearIconButton)``;
+var ClearIconButton = styled_components_default(withTooltip(_ClearIconButton))`
+  display: flex;
+  align-items: center;
+  position: relative;
+`;
+ClearIconButton.defaultProps = { useRcTooltip: true };
 
 // ../juno-core/src/components/Forms/TextField/utils/OutlineTextFieldUtils.ts
 var RcOutlineTextFieldInputClasses = RcClasses(["input", "root", "focused", "disabled", "error"], "RcOutlineTextFieldInput");
