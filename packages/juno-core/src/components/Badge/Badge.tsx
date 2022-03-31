@@ -13,6 +13,7 @@ import MuiBadge from '@material-ui/core/Badge';
 import { capitalize } from '@material-ui/core/utils';
 
 import {
+  combineClasses,
   combineProps,
   logInDev,
   RcBaseProps,
@@ -26,7 +27,6 @@ import {
 import { RcBox } from '../Box';
 import { RcPresence, RcPresenceProps } from '../Presence';
 import { BadgeStyle } from './styles';
-
 import { RcBadgeClasses, useRoundBadgeOffset } from './utils';
 
 type RcBadgeProps = {
@@ -114,7 +114,7 @@ const _RcBadge = forwardRef<any, RcBadgeProps>((inProps: RcBadgeProps, ref) => {
   }
 
   const classes = useMemo(
-    () => combineProps(RcBadgeClasses, classesProp),
+    () => combineClasses(RcBadgeClasses, classesProp),
     [classesProp],
   );
 
