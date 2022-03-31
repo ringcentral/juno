@@ -34,7 +34,7 @@ export const RcDefaultTextFieldWidth = '168px';
 const focusWithNotDisabled = `.${RcTextFieldInputClasses.root}:hover:not(.${RcTextFieldInputClasses.disabled})`;
 
 const TextFieldInputHoverFocusStyle = css`
-  ${ClearIconButton} {
+  ${ClearIconButton as any} {
     display: inline-flex;
   }
 `;
@@ -106,7 +106,7 @@ export const TextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = (
     .${RcTextFieldInputClasses.root} {
       color: ${textColor};
 
-      ${ClearIconButton} {
+      ${ClearIconButton as any} {
         display: none;
       }
     }
