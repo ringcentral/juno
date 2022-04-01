@@ -60445,17 +60445,14 @@ var ThrottleScheduler = class {
   schedule(task) {
     if (!this._timeoutID) {
       this._timeoutID = window.setTimeout(() => {
-        this._lastTask();
-        this._reset();
+        this._timeoutID = void 0;
+        this._lastTask?.();
       });
     }
     this._lastTask = task;
   }
   clear() {
     window.clearTimeout(this._timeoutID);
-    this._reset();
-  }
-  _reset() {
     this._lastTask = null;
     this._timeoutID = void 0;
   }
