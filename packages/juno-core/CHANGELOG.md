@@ -1,4 +1,11 @@
 
+### [2.3.3](https://github.com/ringcentral/juno/compare/juno-core-v2.3.1...juno-core-v2.3.3) (2022-04-01)
+
+
+### Bug Fixes
+
+* **fix-portalmanager-issue:** [portalmanager] fix ThrottleScheduler issue ([f3e66e2](https://github.com/ringcentral/juno/commit/f3e66e22e4ef1dbfde86cbbf7a6fc570d73a895c))
+
 ### [2.3.1](https://github.com/ringcentral/juno/compare/juno-core-v2.3.0...juno-core-v2.3.1) (2022-03-31)
 
 
