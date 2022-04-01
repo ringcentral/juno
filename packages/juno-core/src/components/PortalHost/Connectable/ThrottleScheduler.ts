@@ -8,9 +8,8 @@ export class ThrottleScheduler implements Scheduler {
   schedule(task: () => void) {
     if (!this._timeoutID) {
       this._timeoutID = window.setTimeout(() => {
-        this._lastTask!();
-
-        this._reset();
+        this._timeoutID = undefined;
+        this._lastTask?.();
       });
     }
 
@@ -19,10 +18,6 @@ export class ThrottleScheduler implements Scheduler {
 
   clear() {
     window.clearTimeout(this._timeoutID);
-    this._reset();
-  }
-
-  private _reset() {
     this._lastTask = null;
     this._timeoutID = undefined;
   }
