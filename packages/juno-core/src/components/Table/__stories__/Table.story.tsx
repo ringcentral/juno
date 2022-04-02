@@ -1,8 +1,8 @@
 import {
+  RcCheckbox,
   RcTable,
   RcTableBody,
   RcTableCell,
-  RcTableCellProps,
   RcTableContainer,
   RcTableHead,
   RcTableRow,
@@ -16,7 +16,9 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps, useState } from 'react';
-import { RcCheckbox } from '../../Forms';
+import { iterateMap } from './iterable';
+import { useSelectTable } from './useSelectTable';
+import { useSortTable } from './useSortTable';
 import { headRow, sortHandle, tableData } from './utils';
 
 export default {
@@ -31,7 +33,7 @@ export default {
 
 type TableProps = ComponentProps<typeof RcTable>;
 
-const defaultSortDir = 'desc';
+const defaultSortDirection = 'desc';
 const defaultSortKey = 'firstName';
 
 const StyledTableContainer = styled(RcTableContainer)`
@@ -40,40 +42,45 @@ const StyledTableContainer = styled(RcTableContainer)`
 
 export const Table: Story<TableProps> = ({ children, ...args }) => {
   switchToControlKnobs();
-  const [data, setData] = useState(
-    [...tableData].sort(sortHandle[defaultSortDir](defaultSortKey)),
+
+  const [data, setData] = useState(() =>
+    [...tableData].sort(sortHandle[defaultSortDirection](defaultSortKey)),
   );
-  const [activatedSortId, setActivatedSortId] =
-    useState<string>(defaultSortKey);
-  const [dir, setDir] =
-    useState<RcTableCellProps['sortDirection']>(defaultSortDir);
-  const [selectedItems, setSelectedItems] = useState<number[]>([]);
+
+  const { sortedKey, switchDirection, direction } = useSortTable(
+    (order, key) => {
+      if (key !== null) setData((pre) => [...pre].sort(sortHandle[order](key)));
+    },
+    {
+      defaultKey: defaultSortKey,
+      defaultDirection: defaultSortDirection,
+    },
+  );
+
+  const { isSelected, switchSelectState, selectAll, isSelectedAll } =
+    useSelectTable<number>({
+      getAll: () => iterateMap(data, (value) => value.id),
+    });
 
   return (
     <StyledTableContainer bordered>
       <RcTable stickyHeader {...args}>
         <RcTableHead>
           <RcTableRow>
+            <RcTableCell padding="checkbox">
+              <RcCheckbox
+                checked={isSelectedAll()}
+                onClick={() => selectAll()}
+              />
+            </RcTableCell>
             {headRow.map(({ label, align, key }) => (
               <RcTableCell
                 key={key}
                 align={align}
-                activeSort={activatedSortId === key}
-                sortDirection={activatedSortId === key ? dir : defaultSortDir}
+                activeSort={sortedKey === key}
+                sortDirection={direction}
                 onClick={() => {
-                  if (activatedSortId !== key) {
-                    setActivatedSortId(key);
-                    setDir(defaultSortDir);
-                    setData((pre) =>
-                      [...pre].sort(sortHandle[defaultSortDir](key)),
-                    );
-                  } else if (dir === 'desc') {
-                    setDir('asc');
-                    setData((pre) => [...pre].sort(sortHandle.asc(key)));
-                  } else {
-                    setDir('desc');
-                    setData((pre) => [...pre].sort(sortHandle.desc(key)));
-                  }
+                  switchDirection(key);
                 }}
               >
                 {label}
@@ -83,25 +90,16 @@ export const Table: Story<TableProps> = ({ children, ...args }) => {
         </RcTableHead>
         <RcTableBody>
           {data.map(({ id, firstName, lastName, age }) => {
-            const checked = selectedItems.includes(id);
+            const checked = isSelected(id);
             return (
               <RcTableRow key={id} selected={checked}>
-                <RcTableCell>
+                <RcTableCell padding="checkbox">
                   <RcCheckbox
                     checked={checked}
-                    onClick={() =>
-                      setSelectedItems((pre) => {
-                        const idx = pre.indexOf(id);
-                        if (idx !== -1) {
-                          pre.splice(idx, 1);
-                          return [...pre];
-                        }
-                        return [...pre, id];
-                      })
-                    }
-                    label={firstName}
+                    onClick={() => switchSelectState(id)}
                   />
                 </RcTableCell>
+                <RcTableCell>{firstName}</RcTableCell>
                 <RcTableCell>{lastName}</RcTableCell>
                 <RcTableCell align="right">{age}</RcTableCell>
               </RcTableRow>
