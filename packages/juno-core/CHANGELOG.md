@@ -1,4 +1,12 @@
 
+### [2.3.4](https://github.com/ringcentral/juno/compare/juno-core-v2.3.3...juno-core-v2.3.4) (2022-04-02)
+
+
+### Bug Fixes
+
+* **table-issue:** [DialogContent] fix default color ([daf8c46](https://github.com/ringcentral/juno/commit/daf8c46a42567ab57ca961a31ad734c4e25fdc20))
+* **table-issue:** [Table] fix some css issue and mui warning ([76aa08c](https://github.com/ringcentral/juno/commit/76aa08c09d1d40df961019e31c7be0bb93fd9e6a))
+
 ### [2.3.3](https://github.com/ringcentral/juno/compare/juno-core-v2.3.1...juno-core-v2.3.3) (2022-04-01)
 
 
