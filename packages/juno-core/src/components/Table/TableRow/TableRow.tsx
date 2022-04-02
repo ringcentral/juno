@@ -35,12 +35,14 @@ const _RcTableRow = forwardRef<any, RcTableRowProps>((props, ref) => {
     [classesProp],
   );
 
+  const { disabled: disabledClass, ...tableRowClasses } = classes;
+
   return (
     <MuiTableRow
       {...rest}
       ref={ref}
-      classes={classes}
-      className={clsx(className, { [RcTableRowClasses.disabled]: disabled })}
+      classes={tableRowClasses}
+      className={clsx(className, { [disabledClass]: disabled })}
     >
       {children}
     </MuiTableRow>

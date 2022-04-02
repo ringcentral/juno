@@ -8,7 +8,6 @@ import {
   spacing,
   typography,
 } from '../../../../foundation';
-import { RcIcon } from '../../../Icon';
 import { RcTableSize } from '../../types';
 import { RcTableCellProps } from '../TableCell';
 import { RcTableCellClasses } from '../utils';
@@ -26,6 +25,15 @@ export const TableCellStyle: RcThemedStyled<RcTableCellProps, any> = (prop) => {
     box-sizing: border-box;
     padding: ${spacing(0, 2)};
     min-width: 96px;
+
+    &.${RcTableCellClasses.paddingCheckbox} {
+      min-width: unset;
+      padding: ${spacing(0, 0, 0, 2)};
+    }
+
+    &.${RcTableCellClasses.paddingNone} {
+      padding: unset;
+    }
 
     &.${RcTableCellClasses.head} {
       ${typography('caption2')}
@@ -46,6 +54,7 @@ export const TableCellStyle: RcThemedStyled<RcTableCellProps, any> = (prop) => {
 
         .${RcTableCellClasses.sortIcon} {
           opacity: 1;
+          color: ${palette2('neutral', 'f04')};
         }
       }
 
@@ -59,7 +68,7 @@ export const TableCellStyle: RcThemedStyled<RcTableCellProps, any> = (prop) => {
         width: 100%;
         padding: ${spacing(0, 2)};
 
-        ${RcIcon} {
+        ${RcTableCellClasses.sortIcon} {
           color: ${palette2('neutral', 'f04')};
         }
 

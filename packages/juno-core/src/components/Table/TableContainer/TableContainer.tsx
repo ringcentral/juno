@@ -18,7 +18,7 @@ type RcTableContainerProps = {
 
 const _RcTableContainer = forwardRef<any, RcTableContainerProps>(
   (props, ref) => {
-    const { children, bordered, ...rest } = useThemeProps({
+    const { children, bordered, square, ...rest } = useThemeProps({
       props,
       name: 'RcTableContainer',
     });

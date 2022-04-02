@@ -63,6 +63,14 @@ const _RcTableCell = forwardRef<any, RcTableCellProps>((props, ref) => {
 
   const classes = combineClasses(RcTableCellClasses, classesProp);
 
+  // prevent mui classes warning
+  const {
+    sortButton,
+    activeSort: activeSortClass,
+    sortIcon,
+    ...tableCellClasses
+  } = classes;
+
   const children = useMemo(() => {
     if (sortDirection) {
       return (
@@ -89,7 +97,7 @@ const _RcTableCell = forwardRef<any, RcTableCellProps>((props, ref) => {
       {...rest}
       {...(sortDirection ? { sortDirection } : {})}
       ref={ref}
-      classes={classes}
+      classes={tableCellClasses}
     >
       {children}
     </MuiTableCell>
