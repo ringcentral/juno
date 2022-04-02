@@ -2,7 +2,7 @@ export default `<svg aria-hidden="true" style="position: absolute; width: 0; hei
 <defs>
 <symbol id="icon-record_border" viewBox="0 0 32 32">
 <title>record_border</title>
-<path d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14c-7.732 0-14-6.268-14-14s6.268-14 14-14zM16 4c-6.627 0-12 5.373-12 12s5.373 12 12 12c6.627 0 12-5.373 12-12s-5.373-12-12-12zM16 8c4.418 0 8 3.582 8 8s-3.582 8-8 8c-4.418 0-8-3.582-8-8s3.582-8 8-8z"></path>
+<path d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14c-7.732 0-14-6.268-14-14s6.268-14 14-14zM16 4c-6.627 0-12 5.373-12 12s5.373 12 12 12c6.627 0 12-5.373 12-12s-5.373-12-12-12zM16 11c2.761 0 5 2.239 5 5s-2.239 5-5 5c-2.761 0-5-2.239-5-5s2.239-5 5-5z"></path>
 </symbol>
 <symbol id="icon-voicemail_border" viewBox="0 0 32 32">
 <title>voicemail_border</title>

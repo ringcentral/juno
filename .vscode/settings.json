@@ -91,5 +91,6 @@
   "ringcentral-juno.themeMap": {
     "dark": "./packages/juno-core/src/foundation/theme/ThemeSwitcherProvider/rcDark.json",
     "highContrast": "./packages/juno-core/src/foundation/theme/ThemeSwitcherProvider/rcHighContrast.json"
-  }
+  },
+  "svg.preview.background": "transparent"
 }
