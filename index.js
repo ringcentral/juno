@@ -34815,7 +34815,7 @@ var RecordBorder = memo313(forwardRef405((props, svgRef) => /* @__PURE__ */ Reac
   ref: svgRef,
   ...props
 }, /* @__PURE__ */ React455.createElement("path", {
-  d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm0 4a8 8 0 110 16 8 8 0 010-16z"
+  d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm0 7a5 5 0 11-.001 10.001A5 5 0 0116 11z"
 }))));
 RecordBorder.displayName = "RecordBorder";
 RecordBorder["iconName"] = "record_border";
@@ -61025,6 +61025,7 @@ var DialogContentStyle = (props) => {
   const { size, dividers } = props;
   return css2`
     padding: ${spacing2(...getRcDialogContentSpacings(dividers)[size])};
+    color: ${palette22("neutral", "f04")};
 
     &.${RcDialogContentClasses.dividers} {
       border-color: ${palette22("neutral", "l02")};
@@ -83348,14 +83349,12 @@ var RcTablePagination = styled_components_default(_RcTablePagination)`
 `;
 RcTablePagination.displayName = "RcTablePagination";
 
-// ../juno-core/src/components/Table/Table.tsx
-import React742, { forwardRef as forwardRef642, useMemo as useMemo99 } from "react";
-
 // ../juno-core/src/components/Table/context.ts
 import { createContext as createContext24 } from "react";
 var RcTableContext = createContext24({});
 
 // ../juno-core/src/components/Table/Table.tsx
+import React742, { forwardRef as forwardRef642, useMemo as useMemo99 } from "react";
 var _RcTable = forwardRef642((props, ref2) => {
   const { children: children2, size, ...rest } = useThemeProps({ props, name: "RcTable" });
   const tableContextValue = useMemo99(() => ({ size }), [size]);
@@ -83385,7 +83384,15 @@ RcTableBody.displayName = "RcTableBody";
 import React744, { forwardRef as forwardRef644, useMemo as useMemo100, useContext as useContext32 } from "react";
 
 // ../juno-core/src/components/Table/TableCell/utils/TableCellUtils.ts
-var RcTableCellClasses = RcClasses(["head", "body", "sortIcon", "activeSort", "sortButton"], "RcTableCell");
+var RcTableCellClasses = RcClasses([
+  "head",
+  "body",
+  "sortIcon",
+  "activeSort",
+  "sortButton",
+  "paddingCheckbox",
+  "paddingNone"
+], "RcTableCell");
 
 // ../juno-core/src/components/Table/TableCell/styles/TableCellStyle.tsx
 var SizeMap2 = {
@@ -83399,6 +83406,15 @@ var TableCellStyle = (prop2) => {
     box-sizing: border-box;
     padding: ${spacing2(0, 2)};
     min-width: 96px;
+
+    &.${RcTableCellClasses.paddingCheckbox} {
+      min-width: unset;
+      padding: ${spacing2(0, 0, 0, 2)};
+    }
+
+    &.${RcTableCellClasses.paddingNone} {
+      padding: unset;
+    }
 
     &.${RcTableCellClasses.head} {
       ${typography4("caption2")}
@@ -83419,6 +83435,7 @@ var TableCellStyle = (prop2) => {
 
         .${RcTableCellClasses.sortIcon} {
           opacity: 1;
+          color: ${palette22("neutral", "f04")};
         }
       }
 
@@ -83432,7 +83449,7 @@ var TableCellStyle = (prop2) => {
         width: 100%;
         padding: ${spacing2(0, 2)};
 
-        ${RcIcon} {
+        ${RcTableCellClasses.sortIcon} {
           color: ${palette22("neutral", "f04")};
         }
 
@@ -83472,6 +83489,12 @@ var _RcTableCell = forwardRef644((props, ref2) => {
     ...rest
   } = useThemeProps({ props, name: "RcTableCell" });
   const classes = combineClasses(RcTableCellClasses, classesProp);
+  const {
+    sortButton,
+    activeSort: activeSortClass,
+    sortIcon,
+    ...tableCellClasses
+  } = classes;
   const children2 = useMemo100(() => {
     if (sortDirection) {
       return /* @__PURE__ */ React744.createElement(RcButtonBase, {
@@ -83491,7 +83514,7 @@ var _RcTableCell = forwardRef644((props, ref2) => {
     ...rest,
     ...sortDirection ? { sortDirection } : {},
     ref: ref2,
-    classes
+    classes: tableCellClasses
   }, children2);
 });
 var RcTableCell = styled_components_default(_RcTableCell).attrs(({ size: sizeProp, sortDirection = false, ...rest }) => {
@@ -83546,11 +83569,12 @@ var _RcTableRow = forwardRef645((props, ref2) => {
     ...rest
   } = useThemeProps({ props, name: "RcTableRow" });
   const classes = useMemo101(() => combineClasses(RcTableRowClasses, classesProp), [classesProp]);
+  const { disabled: disabledClass, ...tableRowClasses } = classes;
   return /* @__PURE__ */ React745.createElement(TableRow_default, {
     ...rest,
     ref: ref2,
-    classes,
-    className: clsx_m_default(className, { [RcTableRowClasses.disabled]: disabled3 })
+    classes: tableRowClasses,
+    className: clsx_m_default(className, { [disabledClass]: disabled3 })
   }, children2);
 });
 var RcTableRow = styled_components_default(_RcTableRow)`
@@ -83576,7 +83600,7 @@ var TableContainerStyle = (props) => {
 
 // ../juno-core/src/components/Table/TableContainer/TableContainer.tsx
 var _RcTableContainer = forwardRef646((props, ref2) => {
-  const { children: children2, bordered, ...rest } = useThemeProps({
+  const { children: children2, bordered, square, ...rest } = useThemeProps({
     props,
     name: "RcTableContainer"
   });
