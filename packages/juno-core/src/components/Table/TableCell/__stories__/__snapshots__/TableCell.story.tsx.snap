@@ -7,6 +7,15 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableCell TableCell 1`] = `
   min-width: 96px;
 }
 
+.c2.RcTableCell-paddingCheckbox {
+  min-width: unset;
+  padding: 0px 0px 0px 8px;
+}
+
+.c2.RcTableCell-paddingNone {
+  padding: unset;
+}
+
 .c2.RcTableCell-head {
   font-size: 0.75rem;
   font-weight: 700;
@@ -29,6 +38,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableCell TableCell 1`] = `
 
 .c2.RcTableCell-head .RcTableCell-activeSort .RcTableCell-sortIcon {
   opacity: 1;
+  color: #666666;
 }
 
 .c2.RcTableCell-head .RcTableCell-sortButton {
@@ -50,6 +60,10 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableCell TableCell 1`] = `
   height: 100%;
   width: 100%;
   padding: 0px 8px;
+}
+
+.c2.RcTableCell-head .RcTableCell-sortButton RcTableCell-sortIcon {
+  color: #666666;
 }
 
 .c2.RcTableCell-head .RcTableCell-sortButton:hover {
@@ -100,7 +114,6 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableCell TableCell 1`] = `
 
 <div
   className="MuiTableContainer-root c0"
-  square={false}
 >
   <table
     className="MuiTable-root "

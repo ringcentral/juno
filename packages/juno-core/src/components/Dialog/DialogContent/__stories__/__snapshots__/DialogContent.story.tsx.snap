@@ -3,6 +3,7 @@
 exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogContent DialogContent 1`] = `
 .c0 {
   padding: 0px 24px 12px;
+  color: #666666;
 }
 
 .c0.RcDialogContent-dividers {

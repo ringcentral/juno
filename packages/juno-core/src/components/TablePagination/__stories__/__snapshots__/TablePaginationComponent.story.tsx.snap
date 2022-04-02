@@ -518,6 +518,14 @@ Array [
   }
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <table
     className="c0"
   >
@@ -1010,6 +1018,14 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <table
     className="c0"
   >
@@ -1117,6 +1133,14 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 32px;
   color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1673,6 +1697,14 @@ Array [
   }
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <table
     className="c0"
   >
@@ -2400,6 +2432,14 @@ Array [
   }
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <table
     className="c0"
   >
@@ -2610,6 +2650,14 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 32px;
   color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3164,6 +3212,14 @@ Array [
   .c3 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
     border-bottom-color: #121212;
   }
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 <table
@@ -3845,6 +3901,14 @@ Array [
   }
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <table
     className="c0"
   >
@@ -4007,6 +4071,14 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 32px;
   color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -4558,6 +4630,14 @@ Array [
   .c2 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
     border-bottom-color: #121212;
   }
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 <div
