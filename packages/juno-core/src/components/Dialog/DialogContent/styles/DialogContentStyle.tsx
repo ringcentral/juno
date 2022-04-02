@@ -9,6 +9,7 @@ export const DialogContentStyle: RcThemedStyled<RcDialogContentProps, any> = (
 
   return css`
     padding: ${spacing(...getRcDialogContentSpacings(dividers)[size!])};
+    color: ${palette2('neutral', 'f04')};
 
     &.${RcDialogContentClasses.dividers} {
       border-color: ${palette2('neutral', 'l02')};
