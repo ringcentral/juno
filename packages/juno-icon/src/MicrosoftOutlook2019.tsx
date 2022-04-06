@@ -13,59 +13,59 @@ const MicrosoftOutlook2019 = memo(
         {...props}
       >
         <path
-          fill="var(--color65, #1a237e)"
+          fill="var(--color68, #1a237e)"
           d="M30.005 15.68l-5.116-2.98v8.281h5.396v-4.813a.567.567 0 00-.281-.489z"
         />
         <path
-          fill="var(--color66, #0c4999)"
+          fill="var(--color69, #0c4999)"
           d="M23.085 5.029h6.461v-.791c0-.684-.554-1.237-1.236-1.237H11.476c-.683 0-1.237.554-1.237 1.237v.791h12.846z"
         />
         <path
-          fill="var(--color67, #0f73d9)"
+          fill="var(--color70, #0f73d9)"
           d="M23.085 22.659h5.224c.683 0 1.237-.554 1.237-1.237v-4.876h-6.461v6.114z"
         />
         <path
-          fill="var(--color68, #0f439d)"
+          fill="var(--color71, #0f439d)"
           d="M10.24 16.546v4.876c0 .683.554 1.237 1.237 1.237h5.195v-6.113l-6.432-.001z"
         />
         <path
-          fill="var(--color69, #2ecdfd)"
+          fill="var(--color72, #2ecdfd)"
           d="M23.085 5.029h6.461v5.734h-6.461z"
         />
         <path
-          fill="var(--color70, #1c5fb0)"
+          fill="var(--color73, #1c5fb0)"
           d="M10.24 5.029h6.432v5.734H10.24z"
         />
         <path
-          fill="var(--color71, #1467c7)"
+          fill="var(--color74, #1467c7)"
           d="M16.671 16.546h6.414v6.113h-6.414z"
         />
         <path
-          fill="var(--color72, #1690d5)"
+          fill="var(--color75, #1690d5)"
           d="M16.671 5.029h6.414v5.734h-6.414z"
         />
         <path
-          fill="var(--color73, #1bb4ff)"
+          fill="var(--color76, #1bb4ff)"
           d="M23.085 10.762h6.461v5.783h-6.461z"
         />
         <path
-          fill="var(--color74, #074daf)"
+          fill="var(--color77, #074daf)"
           d="M10.24 10.762h6.432v5.783H10.24z"
         />
         <path
-          fill="var(--color75, #2076d4)"
+          fill="var(--color78, #2076d4)"
           d="M16.671 10.762h6.414v5.783h-6.414z"
         />
         <path
-          fill="var(--color76, #2ed0ff)"
+          fill="var(--color79, #2ed0ff)"
           d="M9.886 28.714h19.193c.666 0 1.206-.54 1.206-1.206V16.17s-.021.47-1.251 1.155c-.929.517-19.646 11.079-19.646 11.079s.167.31.498.31z"
         />
         <path
-          fill="var(--color77, #139fe2)"
+          fill="var(--color80, #139fe2)"
           d="M29.056 28.712l-18.993.002c-.666 0-1.206-.54-1.206-1.206V16.619l20.974 11.83c-.175.14-.397.263-.774.263z"
         />
         <path
-          fill="var(--color78, #00488d)"
+          fill="var(--color81, #00488d)"
           d="M14.799 23H2.915a1.201 1.201 0 01-1.201-1.201V9.915c0-.663.538-1.201 1.201-1.201h11.884c.663 0 1.201.538 1.201 1.201v11.884c0 .663-.538 1.201-1.201 1.201z"
         />
         <path

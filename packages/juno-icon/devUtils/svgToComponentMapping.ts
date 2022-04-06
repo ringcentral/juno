@@ -129,6 +129,7 @@ module.exports = {
   ContactsAndCalendars: 'contacts_and_calendars',
   Text: 'text',
   RcContact: 'rc_contact',
+  Ical: 'ical',
   GoogleLogo: 'google-logo',
   MicrosoftLogo: 'microsoft-logo',
   NewEmail: 'New-email',

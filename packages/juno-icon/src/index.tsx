@@ -183,6 +183,7 @@ export { default as HoldAnswer } from './HoldAnswer';
 export { default as Hold } from './Hold';
 export { default as HoldcallBorder } from './HoldcallBorder';
 export { default as HorizontalLine } from './HorizontalLine';
+export { default as Ical } from './Ical';
 export { default as Ignore } from './Ignore';
 export { default as ImageBrokenD } from './ImageBrokenD';
 export { default as ImageBroken } from './ImageBroken';
