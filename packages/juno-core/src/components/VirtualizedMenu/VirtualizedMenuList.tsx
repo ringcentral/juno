@@ -85,6 +85,7 @@ const _RcVirtualizedMenuList = forwardRef<any, RcVirtualizedMenuListProps>(
     });
     const {
       action,
+      disablePadding,
       autoFocus = false,
       VirtuosoProps,
       autoFocusItem = false,
@@ -290,8 +291,8 @@ const _RcVirtualizedMenuList = forwardRef<any, RcVirtualizedMenuListProps>(
 
     const components = useMemo<Components>(
       () => ({
-        Header: StyledMenuListPadding,
-        Footer: StyledMenuListPadding,
+        Header: disablePadding ? undefined : StyledMenuListPadding,
+        Footer: disablePadding ? undefined : StyledMenuListPadding,
         List: React.forwardRef(({ children, ...listRest }, listRef) => {
           const toRef = useForkRef(handleRef, listRef);
 
