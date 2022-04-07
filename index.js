@@ -8967,9 +8967,10 @@ __export(src_exports2, {
   shallowEqual: () => shallowEqual,
   spacing: () => spacing2,
   spacingUnit: () => spacingUnit,
-  stringArrToRegExp: () => stringArrToRegExp,
+  stringArrToRegExp: () => stringArrToRegExp2,
   styled: () => styled_components_default,
   swapArrayLocs: () => swapArrayLocs,
+  textColorOptions: () => textColorOptions,
   themeOptions: () => themeOptions,
   toSpacing: () => toSpacing,
   twelveHourSystemSource: () => twelveHourSystemSource,
@@ -36304,139 +36305,296 @@ ZoomOut.displayName = "ZoomOut";
 ZoomOut["iconName"] = "zoom-out";
 var ZoomOut_default = ZoomOut;
 
-// src/utils/colorOptions.ts
-var colorOptions = [
-  "action.grayDark",
-  "action.grayLight",
-  "action.primary",
-  "avatar.ash",
-  "avatar.blueberry",
-  "avatar.brass",
-  "avatar.global",
-  "avatar.gold",
-  "avatar.lake",
-  "avatar.oasis",
-  "avatar.pear",
-  "avatar.persimmon",
-  "avatar.sage",
-  "avatar.tomato",
-  "content.brand",
-  "danger.b01",
-  "danger.b02",
-  "danger.b03",
-  "danger.b04",
-  "danger.f01",
-  "danger.f02",
-  "danger.f11",
-  "dialHeader.avatarBg",
-  "dialHeader.avatarIcon",
-  "dialHeader.bg",
-  "dialHeader.focusBorder",
-  "dialHeader.icon",
-  "dialHeader.text",
-  "dialHeader.textHint",
-  "disabled.b01",
-  "disabled.f01",
-  "disabled.f02",
-  "header.bgLeft",
-  "header.bgOverlay",
-  "header.bgOverlayDisabled",
-  "header.bgRight",
-  "header.border",
-  "header.divider",
-  "header.fabBg",
-  "header.fabIcon",
-  "header.focusBorder",
-  "header.icon",
-  "header.iconDisabled",
-  "header.text",
-  "header.textHint",
-  "highContrast",
-  "highlight.b01",
-  "highlight.b02",
-  "highlight.b03",
-  "highlight.f01",
-  "highlight.f02",
-  "informative.b01",
-  "informative.f01",
-  "informative.f02",
-  "interactive.b01",
-  "interactive.b02",
-  "interactive.f01",
-  "label.black02",
-  "label.blue01",
-  "label.blue02",
-  "label.green01",
-  "label.green02",
-  "label.orange01",
-  "label.orange02",
-  "label.purple01",
-  "label.purple02",
-  "label.red01",
-  "label.red02",
-  "label.teal01",
-  "label.teal02",
-  "label.yellow01",
-  "label.yellow02",
-  "nav.b01",
-  "nav.b02",
-  "nav.bookmark",
-  "nav.ctlDefault",
-  "nav.ctlSelected",
-  "nav.f01",
-  "nav.f02",
-  "nav.f03",
-  "nav.f04",
-  "nav.iconDefault",
-  "nav.iconSelected",
-  "nav.line",
-  "nav.mention",
-  "nav.menuBg",
-  "nav.menuText",
-  "neutral.b01",
-  "neutral.b02",
-  "neutral.b03",
-  "neutral.b04",
-  "neutral.b05",
-  "neutral.b06",
-  "neutral.elevation",
-  "neutral.f01",
-  "neutral.f02",
-  "neutral.f03",
-  "neutral.f04",
-  "neutral.f05",
-  "neutral.f06",
-  "neutral.f07",
-  "neutral.f11",
-  "neutral.l01",
-  "neutral.l02",
-  "neutral.l03",
-  "neutral.l04",
-  "neutral.transparent",
-  "presence.available",
-  "presence.busy",
-  "presence.invisible",
-  "subAction",
-  "success.b01",
-  "success.b02",
-  "success.b03",
-  "success.b04",
-  "success.b05",
-  "success.f01",
-  "success.f02",
-  "success.f11",
-  "tab.default",
-  "tab.selected",
-  "umi.bg",
-  "umi.mentioned",
-  "umi.text",
-  "warning.b01",
-  "warning.b02",
-  "warning.b03",
-  "warning.f01",
-  "warning.f02",
-  "warning.f11"
+// ../juno-core/src/foundation/theme/assets/palette.light.json
+var action = {
+  grayDark: "#494949",
+  grayLight: "#666666",
+  primary: "#066FAC"
+};
+var avatar = {
+  ash: "#666666",
+  blueberry: "#5A5ABF",
+  brass: "#8E6B2B",
+  global: "#509AC4",
+  gold: "#7A7000",
+  lake: "#1A70C1",
+  oasis: "#04549F",
+  pear: "#3C7E44",
+  persimmon: "#A14B00",
+  sage: "#047C68",
+  tomato: "#C93637"
+};
+var content = {
+  brand: "#066FAC"
+};
+var danger = {
+  b01: "#FFF7F5",
+  b02: "#FFE5E0",
+  b03: "#E6413C",
+  b04: "#D63E39",
+  f01: "#FFE5E0",
+  f02: "#BE3933",
+  f11: "#F88878"
+};
+var dialHeader = {
+  avatarBg: "#FFFFFF",
+  avatarIcon: "#066FAC",
+  bg: "#066FAC",
+  focusBorder: "#FFFFFF",
+  icon: "#FFFFFF",
+  text: "#FFFFFF",
+  textHint: "rgba(255,255,255,0.88)"
+};
+var disabled = {
+  b01: "#B9B9B9",
+  f01: "#FFFFFF",
+  f02: "#B9B9B9"
+};
+var error = {
+  main: "#D63E39"
+};
+var header = {
+  bgLeft: "#066FAC",
+  bgOverlay: "rgba(255,255,255,0.16)",
+  bgOverlayDisabled: "rgba(255,255,255,0.08)",
+  bgRight: "#509AC4",
+  border: "transparent",
+  divider: "rgba(0,0,0,0.12)",
+  fabBg: "#FFFFFF",
+  fabIcon: "#121212",
+  focusBorder: "#FFFFFF",
+  icon: "#FFFFFF",
+  iconDisabled: "rgba(255,255,255,0.32)",
+  text: "#FFFFFF",
+  textHint: "rgba(255,255,255,0.48)"
+};
+var highContrast = "transparent";
+var highlight = {
+  b01: "#FF8800",
+  b02: "#FFDFB1",
+  b03: "#FF8800",
+  f01: "#121212",
+  f02: "#FF8800"
+};
+var info = {
+  main: "#666666"
+};
+var informative = {
+  b01: "#F6F9FC",
+  f01: "#E3EBF4",
+  f02: "#066FAC"
+};
+var interactive = {
+  b01: "#E6F2F8",
+  b02: "#066FAC",
+  f01: "#066FAC"
+};
+var label = {
+  black02: "#121212",
+  blue01: "#066FAC",
+  blue02: "#066FAC",
+  green01: "#3C9949",
+  green02: "#32773B",
+  orange01: "#CD6E0D",
+  orange02: "#A15600",
+  purple01: "#8A77E3",
+  purple02: "#6C5DAF",
+  red01: "#E6413C",
+  red02: "#BE3933",
+  teal01: "#3093A4",
+  teal02: "#2B727F",
+  yellow01: "#B17D1A",
+  yellow02: "#896219"
+};
+var nav = {
+  b01: "#FFFFFF",
+  b02: "#F9F9F9",
+  bookmark: "#066FAC",
+  ctlDefault: "#939393",
+  ctlSelected: "#066FAC",
+  f01: "#757575",
+  f02: "#666666",
+  f03: "#494949",
+  f04: "#121212",
+  iconDefault: "#121212",
+  iconSelected: "#066FAC",
+  line: "#E5E5E5",
+  mention: "#FF8800",
+  menuBg: "#066FAC",
+  menuText: "#FFFFFF"
+};
+var neutral = {
+  b01: "#FFFFFF",
+  b02: "#F9F9F9",
+  b03: "#F3F3F3",
+  b04: "#666666",
+  b05: "#494949",
+  b06: "#000000",
+  elevation: "#FFFFFF",
+  f01: "#FFFFFF",
+  f02: "#939393",
+  f03: "#757575",
+  f04: "#666666",
+  f05: "#494949",
+  f06: "#121212",
+  f07: "#121212",
+  f11: "#FFFFFF",
+  l01: "#FFFFFF",
+  l02: "#E5E5E5",
+  l03: "#C7C7C7",
+  l04: "#666666",
+  transparent: "transparent"
+};
+var presence = {
+  available: "#3C9949",
+  busy: "#E6413C",
+  invisible: "#939393"
+};
+var primary = {
+  main: "#066FAC"
+};
+var secondary = {
+  main: "#FF8800"
+};
+var subAction = "#066FAC";
+var success = {
+  b01: "#F0FCEF",
+  b02: "#CEF4CE",
+  b03: "#3C9949",
+  b04: "#368541",
+  b05: "#3C9949",
+  f01: "#CEF4CE",
+  f02: "#32773B",
+  f11: "#46BE59",
+  main: "#368541"
+};
+var tab = {
+  default: "#121212",
+  selected: "#066FAC"
+};
+var type = "light";
+var umi = {
+  bg: "#666666",
+  mentioned: "#FF8800",
+  text: "#FFFFFF"
+};
+var vDanger = {
+  f01: "#DD6057"
+};
+var vDisabled = {
+  f01: "#54565E"
+};
+var vNeutral = {
+  b01: "#1e2027",
+  b02: "#282A32",
+  b03: "#30323A",
+  b04: "#383A43",
+  f01: "#FFFFFF"
+};
+var warning2 = {
+  b01: "#FFF7EB",
+  b02: "#FFE7C1",
+  b03: "#F6AD16",
+  f01: "#F6AD16",
+  f02: "#896219",
+  f11: "#F6AD16",
+  main: "#F6AD16"
+};
+var palette_light_default = {
+  action,
+  avatar,
+  content,
+  danger,
+  dialHeader,
+  disabled,
+  error,
+  header,
+  highContrast,
+  highlight,
+  info,
+  informative,
+  interactive,
+  label,
+  nav,
+  neutral,
+  presence,
+  primary,
+  secondary,
+  subAction,
+  success,
+  tab,
+  type,
+  umi,
+  vDanger,
+  vDisabled,
+  vNeutral,
+  warning: warning2
+};
+
+// ../juno-storybook/src/utils/paletteChoice.ts
+var loopGetValue = (acc, obj, parentKey = []) => {
+  Object.entries(obj).forEach(([key, value]) => {
+    switch (typeof value) {
+      case "object":
+        loopGetValue(acc, value, [...parentKey, key]);
+        break;
+      case "string":
+        acc.push([...parentKey, key]);
+        break;
+      default:
+        break;
+    }
+  });
+};
+var allPaletteChoice = Object.keys((() => {
+  const arr = [];
+  loopGetValue(arr, palette_light_default);
+  return arr.reduce((acc, curr) => {
+    acc[curr.join(".")] = curr;
+    return acc;
+  }, {});
+})());
+var ignorePaletteKeys = [
+  ...[
+    "vDisabled",
+    "vNeutral",
+    "vDanger",
+    "vDisabled",
+    "text",
+    "primary",
+    "secondary",
+    "info",
+    "grey",
+    "error",
+    "common",
+    "background",
+    "action"
+  ].map((x2) => `${x2}\\.`),
+  "success.light",
+  "success.main",
+  "warning.light",
+  "warning.main",
+  ".contrastText",
+  ".dark",
+  "divider",
+  "type"
 ];
+var includePalettes = [
+  "header.divider",
+  "action.grayLight",
+  "action.grayDark",
+  "action.primary"
+];
+function stringArrToRegExp(keyToTags) {
+  return new RegExp(keyToTags?.join("|") || "", "g");
+}
+var isValidPalettes = (x2) => !x2.match(stringArrToRegExp(ignorePaletteKeys)) || includePalettes.includes(x2);
+var paletteChoice = allPaletteChoice.filter((x2) => isValidPalettes(x2));
+var textPaletteChoice = paletteChoice.filter((x2) => x2.includes("text.") || x2.includes("neutral.") || x2.includes("interactive.") || x2.includes("content."));
+
+// src/utils/colorOptions.ts
+var colorOptions = paletteChoice;
+var textColorOptions = textPaletteChoice;
 
 // src/utils/elevationOptions.ts
 var elevationOptions = [
@@ -36469,413 +36627,30 @@ var elevationOptions = [
 ];
 
 // src/utils/iconOptions.ts
-var iconOptions = [
-  "Svg0",
-  "Svg1",
-  "Svg2",
-  "Svg3",
-  "Svg4",
-  "Svg5",
-  "Svg6",
-  "Svg7",
-  "Svg8",
-  "Svg9",
-  "CustomizeTabs",
-  "Connect",
-  "ViewLogBorder",
-  "AppleLogo",
-  "LeaveMeeting",
-  "Warning",
-  "RcBlog",
-  "RcHelp",
-  "Hd",
-  "GdriveLogo",
-  "WebinarBorder",
-  "Webinar",
-  "AddParkLocation",
-  "ParkCallText",
-  "ParkCallMessage",
-  "ParkCall",
-  "Expand",
-  "RollAp",
-  "BoxNew",
-  "Sharepoint",
-  "DownwardsArrowWithTipRightwards",
-  "DeletedFileD",
-  "MicrosoftLogoDisabled",
-  "GoogleLogoDisabled",
-  "AddNewFolder",
-  "Foldercreated",
-  "JoinAudioPoc",
-  "SmsInviteBorder",
-  "Advanced",
-  "OuboundCallOnBehalf",
-  "InboundCallOnBehalf",
-  "CallOnBehalf",
-  "AddReactions",
-  "AddEmojiMore",
-  "RcvMicOff",
-  "RcvVideocamOff",
-  "Whisper",
-  "Barge",
-  "TakeOver",
-  "MonitorCall",
-  "PickUpCall",
-  "Help",
-  "HelpBorder",
-  "OpenFolder",
-  "WatchVideo",
-  "GoodConnection",
-  "NoConnection",
-  "PoorConnection",
-  "WeakConnection",
-  "DeletedFile",
-  "DragableArea",
-  "DockBorder",
-  "Undock",
-  "UndockBorder",
-  "HUD",
-  "CompanySetup",
-  "CompanySetupBorder",
-  "DefaultGdriveD",
-  "MacNumbersD",
-  "MacKeynoteD",
-  "MacPagesD",
-  "GoogleDocD",
-  "GoogleSlideD",
-  "GoogleSheetD",
-  "DefaultVideoD",
-  "GifFileD",
-  "ZipD",
-  "DefaultFileD",
-  "ImageBrokenD",
-  "ExcelD",
-  "PdfD",
-  "PptD",
-  "DocD",
-  "DefaultMusicD",
-  "ImagePreviewD",
-  "CodeSnippets",
-  "Theme",
-  "RcCloudContact",
-  "PartnerCloudContact",
-  "StartMeeting",
-  "ScheduleMeeting",
-  "JoinMeeting",
-  "VideoAndMessage",
-  "ScreenshareBorder",
-  "Screenshare",
-  "SmsDefault",
-  "TeamDefault",
-  "GroupDefault",
-  "UserDefault",
-  "RichTextEditor",
-  "SendFilled",
-  "CloudContact",
-  "Nickname",
-  "Birthday",
-  "Address",
-  "Apps",
-  "Department",
-  "AddField",
-  "RemoveField",
-  "ContactsAndCalendars",
-  "Text",
-  "RcContact",
-  "GoogleLogo",
-  "MicrosoftLogo",
-  "NewEmail",
-  "VideoMeeting",
-  "Sort",
-  "Radio",
-  "RadioUnselect",
-  "AddTask",
-  "AddEvent",
-  "HideBorder",
-  "WorkspaceBorder",
-  "Workspace",
-  "NewNote",
-  "NewFile",
-  "ForwardingBorder",
-  "Forwarding",
-  "AddIntegration",
-  "ListView",
-  "ResendFax",
-  "NoAudio",
-  "Audio",
-  "NewFax",
-  "FaxBorder",
-  "Fax",
-  "FailedFax",
-  "FailedFaxBorder",
-  "InboundFaxBorder",
-  "InboundFax",
-  "OutboundFaxBorder",
-  "OutboundFax",
-  "StopCircleBorder",
-  "StopCircle",
-  "Stop",
-  "StopBorder",
-  "PlayCircle",
-  "PlayCircleBorder",
-  "Play",
-  "PlayBorder",
-  "PauseCircle",
-  "PauseCircleBorder",
-  "Pause",
-  "PauseBorder",
-  "AlignCenter",
-  "AlignJustify",
-  "AlignLeft",
-  "AlignRight",
-  "Bold",
-  "Italic",
-  "Underline",
-  "Strike",
-  "Indent",
-  "Outdent",
-  "InsertCode",
-  "InsertImage",
-  "InsertLink",
-  "InsertTable",
-  "InsertVideo",
-  "FontColor",
-  "HorizontalLine",
-  "ListBullet",
-  "ListOrdered",
-  "Box",
-  "Evernote",
-  "Dropbox",
-  "Google",
-  "Onedrive",
-  "GifFile",
-  "MacPages",
-  "MacNumbers",
-  "MacKeynote",
-  "GoogleDoc",
-  "GoogleSheet",
-  "GoogleSlide",
-  "DefaultGdrive",
-  "DefaultFile",
-  "DefaultMusic",
-  "DefaultVideo",
-  "Zip",
-  "Doc",
-  "Excel",
-  "Pdf",
-  "Ppt",
-  "GoogleCalendar2019",
-  "MicrosoftOutlook2019",
-  "EndAnswer",
-  "HoldAnswer",
-  "MarkerS",
-  "MarkerM",
-  "StopRecord",
-  "ImagePreview",
-  "ImageBroken",
-  "AdminBorder",
-  "Admin",
-  "AddTeamBorder",
-  "AddTeam",
-  "TeamBorder",
-  "Team",
-  "MemberBorder",
-  "People",
-  "AddMemberBorder",
-  "AddMember",
-  "ContactsBorder",
-  "Contacts",
-  "Asterisk",
-  "Hash",
-  "Transcription",
-  "Comments",
-  "Quote",
-  "ChatBubble",
-  "Dial",
-  "Deletenumber",
-  "ActiveCall",
-  "Merge",
-  "Record",
-  "Keypad",
-  "Dialer",
-  "Hold",
-  "CallAdd",
-  "Ignore",
-  "CallMore",
-  "HandUp",
-  "Voicemail",
-  "Askfirst",
-  "Signal",
-  "Signal1",
-  "Signal2",
-  "Signal3",
-  "MicBorder",
-  "Mic",
-  "MicOffBorder",
-  "MicOff",
-  "BubbleLinesBorder",
-  "BubbleLines",
-  "VideocamBorder",
-  "Videocam",
-  "VideocamOffBorder",
-  "VideocamOff",
-  "PhoneBorder",
-  "Phone",
-  "PhoneOffBorder",
-  "PhoneOff",
-  "TransferCallBorder",
-  "IncallBorder",
-  "HoldcallBorder",
-  "ActivecallBorder",
-  "Incall",
-  "OutcallBorder",
-  "Outcall",
-  "MissedcallBorder",
-  "Missedcall",
-  "Forwardcall",
-  "CallList",
-  "TransferCall",
-  "ArrowUp",
-  "ArrowDown",
-  "ArrowLeft",
-  "ArrowRight1",
-  "ArrowDown2",
-  "ArrowLeft2",
-  "ArrowRight",
-  "ArrowUp2",
-  "ChevronLeft",
-  "ChevronRight",
-  "DoubleChevronLeft",
-  "DoubleChevronRight",
-  "Previous",
-  "Forward",
-  "JumpToLatest",
-  "JumpToUnread",
-  "UnfoldLess",
-  "UnfoldMore",
-  "FileBorder",
-  "File",
-  "BookmarkBorder",
-  "Bookmark",
-  "StarBorder",
-  "Star",
-  "NotificationBorder",
-  "Notification",
-  "MuteNotificationBorder",
-  "MuteNotification",
-  "ThumbupBorder",
-  "Thumbup",
-  "Unpin",
-  "UnpinSlash",
-  "Pin",
-  "Close",
-  "DeleteCircle",
-  "SettingsBorder",
-  "Settings",
-  "NoteBorder",
-  "Note",
-  "TaskNewBorder",
-  "TaskNew",
-  "EventNewBorder",
-  "EventNew",
-  "DashboardBorder",
-  "Dashboard",
-  "Unselect",
-  "Indeterminate",
-  "Selects",
-  "Unlock",
-  "LockBorder",
-  "Lock",
-  "AddBorder",
-  "Add",
-  "RemoveBorder",
-  "Remove",
-  "ViewBorder",
-  "View",
-  "Blocked",
-  "Unblocked",
-  "Read",
-  "Unread",
-  "ShortcutBorder",
-  "Shortcut",
-  "TimeBorder",
-  "Time",
-  "DateBorder",
-  "Date",
-  "MentionBorder",
-  "Mention",
-  "AnalyticsBorder",
-  "Analytics",
-  "LocationBorder",
-  "Location",
-  "ConferenceBorder",
-  "Conference",
-  "DefaultIntegrationBorder",
-  "DefaultIntegration",
-  "SmsBorder",
-  "Sms",
-  "Attachment",
-  "Check",
-  "Computer",
-  "Copy",
-  "Delete",
-  "Logout",
-  "Archive",
-  "Download",
-  "Draft",
-  "Edit",
-  "NonEdit",
-  "Email",
-  "Emoji",
-  "Gif",
-  "ExternalLink",
-  "Filter",
-  "Inbox",
-  "Info",
-  "Leave",
-  "Login",
-  "MoreHoriz",
-  "MoreVert",
-  "Refresh",
-  "Repeat",
-  "Reply",
-  "ResetZoom",
-  "SaveDraft",
-  "Send",
-  "Share",
-  "SpeakerDown",
-  "SpeakerMute",
-  "SpeakerUp",
-  "Webpage",
-  "Work",
-  "ZoomIn",
-  "ZoomOut",
-  "Search",
-  "SearchNav",
-  "NewAction",
-  "DefaultTeamAvatar",
-  "Minimize",
-  "Schedule",
-  "Join",
-  "Start",
-  "Feedback",
-  "DefaultGroupAvatar",
-  "DefaultAvatar",
-  "Assignment",
-  "ItemListSelected"
-].sort();
+var iconOptions = Object.keys(juno_icon_exports).sort();
+
+// ../juno-core/src/foundation/theme/assets/radius.json
+var circle = "50%";
+var lg = "4px";
+var md = "3px";
+var round3 = "100vw";
+var sm = "2px";
+var xl = "8px";
+var xxl = "16px";
+var zero = "0px";
+var radius_default = {
+  circle,
+  lg,
+  md,
+  round: round3,
+  sm,
+  xl,
+  xxl,
+  zero
+};
 
 // src/utils/radiusOptions.ts
-var radiusOptions = [
-  "circle",
-  "lg",
-  "md",
-  "round",
-  "sm",
-  "xl",
-  "xxl",
-  "zero"
-];
+var radiusOptions = Object.keys(radius_default);
 
 // src/utils/themeOptions.ts
 var themeOptions = [
@@ -47776,7 +47551,7 @@ __export(juno_core_exports, {
   shallowEqual: () => shallowEqual,
   spacing: () => spacing2,
   spacingUnit: () => spacingUnit,
-  stringArrToRegExp: () => stringArrToRegExp,
+  stringArrToRegExp: () => stringArrToRegExp2,
   styled: () => styled_components_default,
   swapArrayLocs: () => swapArrayLocs,
   toSpacing: () => toSpacing,
@@ -48157,7 +47932,7 @@ __export(src_exports, {
   shallowEqual: () => shallowEqual,
   spacing: () => spacing2,
   spacingUnit: () => spacingUnit,
-  stringArrToRegExp: () => stringArrToRegExp,
+  stringArrToRegExp: () => stringArrToRegExp2,
   styled: () => styled_components_default,
   swapArrayLocs: () => swapArrayLocs,
   toSpacing: () => toSpacing,
@@ -48452,7 +48227,7 @@ __export(components_exports, {
   parseNumberToString: () => parseNumberToString,
   reflow: () => reflow3,
   setTransitionStyle: () => setTransitionStyle,
-  stringArrToRegExp: () => stringArrToRegExp,
+  stringArrToRegExp: () => stringArrToRegExp2,
   twelveHourSystemSource: () => twelveHourSystemSource,
   twentyFourHourSystemSource: () => twentyFourHourSystemSource,
   useAvatarColorToken: () => useAvatarColorToken,
@@ -51946,12 +51721,12 @@ var opacity_default = {
 };
 
 // ../juno-core/src/foundation/theme/assets/palette.dark.json
-var action = {
+var action2 = {
   grayDark: "#FFFFFF",
   grayLight: "#A0A2A9",
   primary: "#729AFF"
 };
-var avatar = {
+var avatar2 = {
   ash: "#666666",
   blueberry: "#5A5ABF",
   brass: "#8E6B2B",
@@ -51964,10 +51739,10 @@ var avatar = {
   sage: "#047C68",
   tomato: "#C93637"
 };
-var content = {
+var content2 = {
   brand: "#729AFF"
 };
-var danger = {
+var danger2 = {
   b01: "#391D19",
   b02: "#49241F",
   b03: "#D53C32",
@@ -51976,7 +51751,7 @@ var danger = {
   f02: "#E68B85",
   f11: "#E68B85"
 };
-var dialHeader = {
+var dialHeader2 = {
   avatarBg: "#6990FD",
   avatarIcon: "#FFFFFF",
   bg: "#383A43",
@@ -51985,15 +51760,15 @@ var dialHeader = {
   text: "#FFFFFF",
   textHint: "#898B94"
 };
-var disabled = {
+var disabled2 = {
   b01: "#44464E",
   f01: "#72747E",
   f02: "#54565E"
 };
-var error = {
+var error2 = {
   main: "#DD6057"
 };
-var header = {
+var header2 = {
   bgLeft: "#30323A",
   bgOverlay: "rgba(137,139,148,0.16)",
   bgOverlayDisabled: "rgba(137,139,148,0.08)",
@@ -52008,28 +51783,28 @@ var header = {
   text: "#FFFFFF",
   textHint: "#898B94"
 };
-var highContrast = "transparent";
-var highlight = {
+var highContrast2 = "transparent";
+var highlight2 = {
   b01: "#FFFFFF",
   b02: "#3E2A19",
   b03: "#884C12",
   f01: "#FF8800",
   f02: "#FF8800"
 };
-var info = {
+var info2 = {
   main: "#A0A2A9"
 };
-var informative = {
+var informative2 = {
   b01: "#282A32",
   f01: "#222E49",
   f02: "#729AFF"
 };
-var interactive = {
+var interactive2 = {
   b01: "#29334C",
   b02: "#356AFD",
   f01: "#729AFF"
 };
-var label = {
+var label2 = {
   black02: "#FFFFFF",
   blue01: "#729AFF",
   blue02: "#729AFF",
@@ -52046,7 +51821,7 @@ var label = {
   yellow01: "#D99F26",
   yellow02: "#D99F26"
 };
-var nav = {
+var nav2 = {
   b01: "#1e2027",
   b02: "#282A32",
   bookmark: "#729AFF",
@@ -52063,7 +51838,7 @@ var nav = {
   menuBg: "#356AFD",
   menuText: "#FFFFFF"
 };
-var neutral = {
+var neutral2 = {
   b01: "#1e2027",
   b02: "#30323A",
   b03: "#383A43",
@@ -52085,19 +51860,19 @@ var neutral = {
   l04: "#A0A2A9",
   transparent: "transparent"
 };
-var presence = {
+var presence2 = {
   available: "#3D9A4A",
   busy: "#DD6057",
   invisible: "#72747E"
 };
-var primary = {
+var primary2 = {
   main: "#356AFD"
 };
-var secondary = {
+var secondary2 = {
   main: "#884C12"
 };
-var subAction = "#729AFF";
-var success = {
+var subAction2 = "#729AFF";
+var success2 = {
   b01: "#1C281B",
   b02: "#223221",
   b03: "#368440",
@@ -52108,239 +51883,13 @@ var success = {
   f11: "#72B375",
   main: "#3D9A4A"
 };
-var tab = {
+var tab2 = {
   default: "#FFFFFF",
   selected: "#729AFF"
 };
-var type = "dark";
-var umi = {
-  bg: "#72747E",
-  mentioned: "#FF8800",
-  text: "#FFFFFF"
-};
-var vDanger = {
-  f01: "#DD6057"
-};
-var vDisabled = {
-  f01: "#54565E"
-};
-var vNeutral = {
-  b01: "#1e2027",
-  b02: "#282A32",
-  b03: "#30323A",
-  b04: "#383A43",
-  f01: "#FFFFFF"
-};
-var warning2 = {
-  b01: "#2B2416",
-  b02: "#373D1B",
-  b03: "#D99F26",
-  f01: "#D99F26",
-  f02: "#D99F26",
-  f11: "#D99F26",
-  main: "#74561D"
-};
-var palette_dark_default = {
-  action,
-  avatar,
-  content,
-  danger,
-  dialHeader,
-  disabled,
-  error,
-  header,
-  highContrast,
-  highlight,
-  info,
-  informative,
-  interactive,
-  label,
-  nav,
-  neutral,
-  presence,
-  primary,
-  secondary,
-  subAction,
-  success,
-  tab,
-  type,
-  umi,
-  vDanger,
-  vDisabled,
-  vNeutral,
-  warning: warning2
-};
-
-// ../juno-core/src/foundation/theme/assets/palette.light.json
-var action2 = {
-  grayDark: "#494949",
-  grayLight: "#666666",
-  primary: "#066FAC"
-};
-var avatar2 = {
-  ash: "#666666",
-  blueberry: "#5A5ABF",
-  brass: "#8E6B2B",
-  global: "#509AC4",
-  gold: "#7A7000",
-  lake: "#1A70C1",
-  oasis: "#04549F",
-  pear: "#3C7E44",
-  persimmon: "#A14B00",
-  sage: "#047C68",
-  tomato: "#C93637"
-};
-var content2 = {
-  brand: "#066FAC"
-};
-var danger2 = {
-  b01: "#FFF7F5",
-  b02: "#FFE5E0",
-  b03: "#E6413C",
-  b04: "#D63E39",
-  f01: "#FFE5E0",
-  f02: "#BE3933",
-  f11: "#F88878"
-};
-var dialHeader2 = {
-  avatarBg: "#FFFFFF",
-  avatarIcon: "#066FAC",
-  bg: "#066FAC",
-  focusBorder: "#FFFFFF",
-  icon: "#FFFFFF",
-  text: "#FFFFFF",
-  textHint: "rgba(255,255,255,0.88)"
-};
-var disabled2 = {
-  b01: "#B9B9B9",
-  f01: "#FFFFFF",
-  f02: "#B9B9B9"
-};
-var error2 = {
-  main: "#D63E39"
-};
-var header2 = {
-  bgLeft: "#066FAC",
-  bgOverlay: "rgba(255,255,255,0.16)",
-  bgOverlayDisabled: "rgba(255,255,255,0.08)",
-  bgRight: "#509AC4",
-  border: "transparent",
-  divider: "rgba(0,0,0,0.12)",
-  fabBg: "#FFFFFF",
-  fabIcon: "#121212",
-  focusBorder: "#FFFFFF",
-  icon: "#FFFFFF",
-  iconDisabled: "rgba(255,255,255,0.32)",
-  text: "#FFFFFF",
-  textHint: "rgba(255,255,255,0.48)"
-};
-var highContrast2 = "transparent";
-var highlight2 = {
-  b01: "#FF8800",
-  b02: "#FFDFB1",
-  b03: "#FF8800",
-  f01: "#121212",
-  f02: "#FF8800"
-};
-var info2 = {
-  main: "#666666"
-};
-var informative2 = {
-  b01: "#F6F9FC",
-  f01: "#E3EBF4",
-  f02: "#066FAC"
-};
-var interactive2 = {
-  b01: "#E6F2F8",
-  b02: "#066FAC",
-  f01: "#066FAC"
-};
-var label2 = {
-  black02: "#121212",
-  blue01: "#066FAC",
-  blue02: "#066FAC",
-  green01: "#3C9949",
-  green02: "#32773B",
-  orange01: "#CD6E0D",
-  orange02: "#A15600",
-  purple01: "#8A77E3",
-  purple02: "#6C5DAF",
-  red01: "#E6413C",
-  red02: "#BE3933",
-  teal01: "#3093A4",
-  teal02: "#2B727F",
-  yellow01: "#B17D1A",
-  yellow02: "#896219"
-};
-var nav2 = {
-  b01: "#FFFFFF",
-  b02: "#F9F9F9",
-  bookmark: "#066FAC",
-  ctlDefault: "#939393",
-  ctlSelected: "#066FAC",
-  f01: "#757575",
-  f02: "#666666",
-  f03: "#494949",
-  f04: "#121212",
-  iconDefault: "#121212",
-  iconSelected: "#066FAC",
-  line: "#E5E5E5",
-  mention: "#FF8800",
-  menuBg: "#066FAC",
-  menuText: "#FFFFFF"
-};
-var neutral2 = {
-  b01: "#FFFFFF",
-  b02: "#F9F9F9",
-  b03: "#F3F3F3",
-  b04: "#666666",
-  b05: "#494949",
-  b06: "#000000",
-  elevation: "#FFFFFF",
-  f01: "#FFFFFF",
-  f02: "#939393",
-  f03: "#757575",
-  f04: "#666666",
-  f05: "#494949",
-  f06: "#121212",
-  f07: "#121212",
-  f11: "#FFFFFF",
-  l01: "#FFFFFF",
-  l02: "#E5E5E5",
-  l03: "#C7C7C7",
-  l04: "#666666",
-  transparent: "transparent"
-};
-var presence2 = {
-  available: "#3C9949",
-  busy: "#E6413C",
-  invisible: "#939393"
-};
-var primary2 = {
-  main: "#066FAC"
-};
-var secondary2 = {
-  main: "#FF8800"
-};
-var subAction2 = "#066FAC";
-var success2 = {
-  b01: "#F0FCEF",
-  b02: "#CEF4CE",
-  b03: "#3C9949",
-  b04: "#368541",
-  b05: "#3C9949",
-  f01: "#CEF4CE",
-  f02: "#32773B",
-  f11: "#46BE59",
-  main: "#368541"
-};
-var tab2 = {
-  default: "#121212",
-  selected: "#066FAC"
-};
-var type2 = "light";
+var type2 = "dark";
 var umi2 = {
-  bg: "#666666",
+  bg: "#72747E",
   mentioned: "#FF8800",
   text: "#FFFFFF"
 };
@@ -52358,15 +51907,15 @@ var vNeutral2 = {
   f01: "#FFFFFF"
 };
 var warning3 = {
-  b01: "#FFF7EB",
-  b02: "#FFE7C1",
-  b03: "#F6AD16",
-  f01: "#F6AD16",
-  f02: "#896219",
-  f11: "#F6AD16",
-  main: "#F6AD16"
+  b01: "#2B2416",
+  b02: "#373D1B",
+  b03: "#D99F26",
+  f01: "#D99F26",
+  f02: "#D99F26",
+  f11: "#D99F26",
+  main: "#74561D"
 };
-var palette_light_default = {
+var palette_dark_default = {
   action: action2,
   avatar: avatar2,
   content: content2,
@@ -52395,26 +51944,6 @@ var palette_light_default = {
   vDisabled: vDisabled2,
   vNeutral: vNeutral2,
   warning: warning3
-};
-
-// ../juno-core/src/foundation/theme/assets/radius.json
-var circle = "50%";
-var lg = "4px";
-var md = "3px";
-var round3 = "100vw";
-var sm = "2px";
-var xl = "8px";
-var xxl = "16px";
-var zero = "0px";
-var radius_default = {
-  circle,
-  lg,
-  md,
-  round: round3,
-  sm,
-  xl,
-  xxl,
-  zero
 };
 
 // ../juno-core/src/foundation/theme/assets/shadows.json
@@ -70834,7 +70363,7 @@ var RcAutocompleteDefaultFilterOptions = (options, { inputValue, getOptionLabel,
   return options.filter((item) => getOptionLabel?.(item).toLowerCase().startsWith(inputValue?.toLowerCase() || ""));
 };
 var downshiftComponentName = "RcDownshift";
-function stringArrToRegExp(keyToTags) {
+function stringArrToRegExp2(keyToTags) {
   return new RegExp(keyToTags?.join("|") || "", "g");
 }
 
@@ -71348,7 +70877,7 @@ var useDownshiftTag = ({
     const currentValue = value ?? inputRef.current?.value;
     if (!getStopCreateFreeSolo?.() && !selectedItem && freeSolo && currentValue && currentValue.length > 0) {
       if (freeSoloCount < maxFreeSolo) {
-        const items = currentValue.trim().split(stringArrToRegExp(keyToTags)).filter((x2) => x2.trim() !== "");
+        const items = currentValue.trim().split(stringArrToRegExp2(keyToTags)).filter((x2) => x2.trim() !== "");
         const toLength = freeSoloCount + items.length;
         if (toLength > maxFreeSolo) {
           items.splice(-(toLength - maxFreeSolo));
@@ -71721,7 +71250,7 @@ var useDownshift = ({
   const handleInputChange = (newValue, open = true, e2) => {
     if (inputValue !== newValue) {
       setHighlightedIndex(DEFAULT_HIGHLIGHTED_INDEX2, { reason: "auto" });
-      if (stringArrToRegExp(keyToTags).test((newValue || "").trim())) {
+      if (stringArrToRegExp2(keyToTags).test((newValue || "").trim())) {
         const resultHaveAdd = checkAndAddFreeSolo({ value: newValue }, e2);
         if (!disableCloseOnSelect) {
           closeMenu(e2, "toggleInput");
@@ -79152,6 +78681,7 @@ var _RcVirtualizedMenuList = forwardRef613((inProps, ref2) => {
   });
   const {
     action: action3,
+    disablePadding,
     autoFocus = false,
     VirtuosoProps: VirtuosoProps2,
     autoFocusItem = false,
@@ -79292,8 +78822,8 @@ var _RcVirtualizedMenuList = forwardRef613((inProps, ref2) => {
     }
   }));
   const components = useMemo76(() => ({
-    Header: StyledMenuListPadding,
-    Footer: StyledMenuListPadding,
+    Header: disablePadding ? void 0 : StyledMenuListPadding,
+    Footer: disablePadding ? void 0 : StyledMenuListPadding,
     List: React699.forwardRef(({ children: children2, ...listRest }, listRef) => {
       const toRef = useForkRef2(handleRef, listRef);
       return /* @__PURE__ */ React699.createElement(RcList, {
@@ -84914,9 +84444,10 @@ export {
   shallowEqual,
   spacing2 as spacing,
   spacingUnit,
-  stringArrToRegExp,
+  stringArrToRegExp2 as stringArrToRegExp,
   styled_components_default as styled,
   swapArrayLocs,
+  textColorOptions,
   themeOptions,
   toSpacing,
   twelveHourSystemSource,
