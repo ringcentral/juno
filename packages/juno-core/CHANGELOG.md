@@ -1,4 +1,11 @@
 
+### [2.3.5](https://github.com/ringcentral/juno/compare/juno-core-v2.3.4...juno-core-v2.3.5) (2022-04-07)
+
+
+### Features
+
+* **VirtualizedMenuList:** [VirtualizedMenuList] support disablePadding ([fcf9222](https://github.com/ringcentral/juno/commit/fcf9222267c8a5b8dee44d223951fa47b3211d4d))
+
 ### [2.3.4](https://github.com/ringcentral/juno/compare/juno-core-v2.3.3...juno-core-v2.3.4) (2022-04-02)
 
 
