@@ -1,4 +1,3 @@
-// @ts-nocheck
 /* eslint-disable no-console */
 const { join, resolve } = require('path');
 const esbuild = require('esbuild');
@@ -19,13 +18,14 @@ function getBuildOptions(path) {
       'framer',
       'framer-motion',
     ],
-    tsconfig: join(__dirname, '../tsconfig.json'),
+    tsconfig: join(__dirname, './tsconfig.json'),
     plugins: [textReplacePlugin],
   };
 }
 
 async function build(path, outdir) {
   outdir = resolve(outdir);
+  // @ts-ignore
   await esbuild.build({ outdir, ...getBuildOptions(path) });
   console.log(`Build done at ${outdir}`);
 }
@@ -43,6 +43,7 @@ async function serve(path, port = 8000) {
     console.log(line);
   }
 
+  // @ts-ignore
   await esbuild.serve({ port, onRequest }, getBuildOptions(path));
   console.log(`Server listening at http://127.0.0.1:${port}`);
 }
