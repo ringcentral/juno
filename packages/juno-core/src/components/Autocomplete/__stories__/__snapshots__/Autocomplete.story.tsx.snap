@@ -1019,6 +1019,10 @@ Array [
 .c3 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {

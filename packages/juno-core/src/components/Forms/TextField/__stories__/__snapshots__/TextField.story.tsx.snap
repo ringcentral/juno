@@ -425,7 +425,9 @@ Array [
         className="MuiBox-root MuiBox-root-253"
       >
         <button
+          aria-describedby={null}
           aria-hidden={true}
+          aria-label="clear"
           className="MuiButtonBase-root c1 c2 c3 c4 RcIconButton-root"
           disabled={false}
           onBlur={[Function]}
@@ -436,11 +438,13 @@ Array [
           onKeyUp={[Function]}
           onMouseDown={[Function]}
           onMouseLeave={[Function]}
+          onMouseOver={[Function]}
           onMouseUp={[Function]}
           onTouchEnd={[Function]}
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           tabIndex={-1}
+          title="clear"
           type="button"
         >
           <span

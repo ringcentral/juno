@@ -393,6 +393,10 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
 .c3 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -1016,6 +1020,10 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
 .c3 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -1656,6 +1664,10 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
 .c3 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -2136,6 +2148,10 @@ Array [
 .c3 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -2618,6 +2634,10 @@ Array [
 .c3 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -3458,6 +3478,10 @@ Array [
 .c10 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -4569,6 +4593,10 @@ Array [
 .c10 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -5562,6 +5590,10 @@ Array [
 .c10 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -6542,6 +6574,10 @@ Array [
 .c10 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -7838,6 +7874,10 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
 .c3 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -8486,6 +8526,10 @@ Array [
 .c3 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -9135,6 +9179,10 @@ Array [
 .c3 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -9784,6 +9832,10 @@ Array [
 .c3 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -10433,6 +10485,10 @@ Array [
 .c3 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -11051,6 +11107,10 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
 .c3 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -11677,6 +11737,10 @@ Array [
 .c3 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -12294,6 +12358,10 @@ Array [
 .c3 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
@@ -12969,6 +13037,10 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
 .c4 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c2 .RcDownshiftInput-input {
@@ -13586,6 +13658,10 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
 .c3 {
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1 .RcDownshiftInput-input {
