@@ -49793,16 +49793,16 @@ var useEventCallback2 = (func4) => {
 };
 
 // ../juno-core/src/foundation/hooks/useA11yKeyEvent/useA11yKeyEvent.ts
+var defaultCheckKeys = ["Enter", " "];
 var useA11yKeyEvent = (fn, {
   onlyOnFocus,
   preventDefault: preventDefault2 = true,
-  checkKeys = ["Enter", "Space"]
+  checkKeys = defaultCheckKeys
 } = {}) => {
   return useEventCallback2((event) => {
     if (!fn || onlyOnFocus && event.target !== event.currentTarget)
       return;
-    const key = event.key;
-    if (checkKeys.includes(key)) {
+    if (checkKeys.includes(event.key)) {
       if (preventDefault2)
         event.preventDefault();
       fn(event);
@@ -49966,7 +49966,7 @@ var a11yKeyboardCode = {
 var a11yKeyboard = {
   ArrowLeft: "ArrowLeft",
   ArrowRight: "ArrowRight",
-  Space: "Space",
+  Space: " ",
   Escape: "Escape",
   Enter: "Enter",
   Tab: "Tab"
