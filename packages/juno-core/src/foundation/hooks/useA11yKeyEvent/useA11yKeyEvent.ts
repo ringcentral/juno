@@ -11,13 +11,14 @@ export type useA11yKeyEventOptions = {
    */
   preventDefault?: boolean;
   /**
-   * event check keys
+   * check point for `event.key`
    *
-   * @default ['Enter', 'Space']
+   * @default ['Enter', ' ']
    */
   checkKeys?: string[];
 };
 
+const defaultCheckKeys = ['Enter', ' '];
 /**
  * bind event with a11y keyboard, `space`, `enter`, only trigger when key includes in `checkKeys`
  *
@@ -28,14 +29,13 @@ export const useA11yKeyEvent = (
   {
     onlyOnFocus,
     preventDefault = true,
-    checkKeys = ['Enter', 'Space'],
+    checkKeys = defaultCheckKeys,
   }: useA11yKeyEventOptions = {},
 ) => {
   return useEventCallback((event: React.KeyboardEvent<HTMLElement>) => {
     if (!fn || (onlyOnFocus && event.target !== event.currentTarget)) return;
-    const key = event.key;
 
-    if (checkKeys.includes(key)) {
+    if (checkKeys.includes(event.key)) {
       if (preventDefault) event.preventDefault();
 
       fn(event);

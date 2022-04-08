@@ -9,7 +9,7 @@ describe('useA11yKeyDown', () => {
     hookRef.current({
       preventDefault: jest.fn(),
       type: 'keydown',
-      key: 'Space',
+      key: ' ',
     } as any);
     expect(fn).toHaveBeenCalled();
   });
@@ -20,6 +20,27 @@ describe('useA11yKeyDown', () => {
       preventDefault: jest.fn(),
       type: 'keydown',
       key: 'a',
+    } as any);
+    expect(fn).not.toHaveBeenCalled();
+  });
+  it('Custom key', () => {
+    const fn = jest.fn();
+    const { result: hookRef } = renderHook(() =>
+      useA11yKeyEvent(fn, { checkKeys: ['a'] }),
+    );
+    hookRef.current({
+      preventDefault: jest.fn(),
+      type: 'keydown',
+      key: 'a',
+    } as any);
+    expect(fn).toHaveBeenCalled();
+
+    fn.mockRestore();
+
+    hookRef.current({
+      preventDefault: jest.fn(),
+      type: 'keydown',
+      key: ' ',
     } as any);
     expect(fn).not.toHaveBeenCalled();
   });

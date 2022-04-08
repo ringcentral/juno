@@ -15,7 +15,7 @@ export const a11yKeyboardCode = {
 export const a11yKeyboard = {
   ArrowLeft: 'ArrowLeft',
   ArrowRight: 'ArrowRight',
-  Space: 'Space',
+  Space: ' ',
   Escape: 'Escape',
   Enter: 'Enter',
   Tab: 'Tab',
