@@ -16,7 +16,7 @@ const FakeButton = styled(RcIconButton)`
 const _ClearIconButton = forwardRef<any, ComponentProps<typeof RcIconButton>>(
   ({ onMouseDown, size, iconSize, ...rest }, ref) => {
     return (
-      <RcBox display="flex" alignItems="center" position="relative">
+      <RcBox display="inline-flex" alignItems="center" position="relative">
         <RcIconButton
           type="button"
           aria-hidden

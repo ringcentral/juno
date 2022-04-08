@@ -96,6 +96,9 @@ export const TextField: Story<TextFieldProps> = ({
         id="control"
         ref={ref}
         inputRef={inputRef}
+        clearButtonProps={{
+          title: 'clear',
+        }}
         value={value}
         onChange={handleChange}
       />

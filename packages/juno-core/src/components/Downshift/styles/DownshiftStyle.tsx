@@ -10,6 +10,7 @@ export const ArrowDownButton = styled(RcIconButton)``;
 export const EndAdornment = styled.div`
   right: 0;
   position: absolute;
+  display: flex;
 `;
 
 export const DownshiftStyle: RcThemedStyled<RcDownshiftProps, any> = ({
