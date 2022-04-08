@@ -58272,7 +58272,7 @@ var FakeButton = styled_components_default(RcIconButton)`
 `;
 var _ClearIconButton = forwardRef557(({ onMouseDown, size, iconSize, ...rest }, ref2) => {
   return /* @__PURE__ */ React622.createElement(RcBox, {
-    display: "flex",
+    display: "inline-flex",
     alignItems: "center",
     position: "relative"
   }, /* @__PURE__ */ React622.createElement(RcIconButton, {
@@ -71635,6 +71635,7 @@ var ArrowDownButton = styled_components_default(RcIconButton)``;
 var EndAdornment = styled_components_default.div`
   right: 0;
   position: absolute;
+  display: flex;
 `;
 var DownshiftStyle = ({
   toggleButton = false,
