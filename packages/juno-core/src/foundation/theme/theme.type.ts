@@ -353,7 +353,7 @@ export type RcTheme = {
 
       RcTypography?: RcTypographyProps;
 
-      RcVirtualizedDivider: RcVirtualizedDividerProps;
+      RcVirtualizedDivider?: RcVirtualizedDividerProps;
       RcVirtualizedMenu?: RcVirtualizedMenuProps;
       RcVirtualizedMenuList?: RcVirtualizedMenuListProps;
     };
