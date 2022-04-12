@@ -1,4 +1,13 @@
 
+## [2.4.0](https://github.com/ringcentral/juno/compare/juno-core-v2.3.7...juno-core-v2.4.0) (2022-04-12)
+
+
+### Bug Fixes
+
+* **BaseProps:** fix RcVirtualizedDivider to optional ([7435083](https://github.com/ringcentral/juno/commit/7435083bb8948e0ab8e246bc78132e5b0951e1ac))
+* **Grow:** fix Grow issue with safari issue ([77aadc1](https://github.com/ringcentral/juno/commit/77aadc1191ee83373a6c18d7dbb48de247406c60))
+* **SubMenu:** fix error binding transform-origin ([53fc7b8](https://github.com/ringcentral/juno/commit/53fc7b8bdd628c6b6e14e8df106817a05a06be98))
+
 ### [2.3.7](https://github.com/ringcentral/juno/compare/juno-core-v2.3.6...juno-core-v2.3.7) (2022-04-08)
 
 
