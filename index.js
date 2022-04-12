@@ -1265,14 +1265,6 @@ var require_shallowequal = __commonJS({
   }
 });
 
-// ../../node_modules/lodash/isArray.js
-var require_isArray = __commonJS({
-  "../../node_modules/lodash/isArray.js"(exports, module) {
-    var isArray2 = Array.isArray;
-    module.exports = isArray2;
-  }
-});
-
 // ../../node_modules/lodash/_freeGlobal.js
 var require_freeGlobal = __commonJS({
   "../../node_modules/lodash/_freeGlobal.js"(exports, module) {
@@ -1297,20 +1289,6 @@ var require_Symbol = __commonJS({
     var root = require_root();
     var Symbol2 = root.Symbol;
     module.exports = Symbol2;
-  }
-});
-
-// ../../node_modules/lodash/_arrayMap.js
-var require_arrayMap = __commonJS({
-  "../../node_modules/lodash/_arrayMap.js"(exports, module) {
-    function arrayMap(array, iteratee) {
-      var index4 = -1, length = array == null ? 0 : array.length, result = Array(length);
-      while (++index4 < length) {
-        result[index4] = iteratee(array[index4], index4, array);
-      }
-      return result;
-    }
-    module.exports = arrayMap;
   }
 });
 
@@ -1374,6 +1352,27 @@ var require_baseGetTag = __commonJS({
   }
 });
 
+// ../../node_modules/lodash/_overArg.js
+var require_overArg = __commonJS({
+  "../../node_modules/lodash/_overArg.js"(exports, module) {
+    function overArg(func4, transform4) {
+      return function(arg) {
+        return func4(transform4(arg));
+      };
+    }
+    module.exports = overArg;
+  }
+});
+
+// ../../node_modules/lodash/_getPrototype.js
+var require_getPrototype = __commonJS({
+  "../../node_modules/lodash/_getPrototype.js"(exports, module) {
+    var overArg = require_overArg();
+    var getPrototype = overArg(Object.getPrototypeOf, Object);
+    module.exports = getPrototype;
+  }
+});
+
 // ../../node_modules/lodash/isObjectLike.js
 var require_isObjectLike = __commonJS({
   "../../node_modules/lodash/isObjectLike.js"(exports, module) {
@@ -1381,6 +1380,55 @@ var require_isObjectLike = __commonJS({
       return value != null && typeof value == "object";
     }
     module.exports = isObjectLike;
+  }
+});
+
+// ../../node_modules/lodash/isPlainObject.js
+var require_isPlainObject = __commonJS({
+  "../../node_modules/lodash/isPlainObject.js"(exports, module) {
+    var baseGetTag = require_baseGetTag();
+    var getPrototype = require_getPrototype();
+    var isObjectLike = require_isObjectLike();
+    var objectTag = "[object Object]";
+    var funcProto = Function.prototype;
+    var objectProto = Object.prototype;
+    var funcToString = funcProto.toString;
+    var hasOwnProperty2 = objectProto.hasOwnProperty;
+    var objectCtorString = funcToString.call(Object);
+    function isPlainObject5(value) {
+      if (!isObjectLike(value) || baseGetTag(value) != objectTag) {
+        return false;
+      }
+      var proto = getPrototype(value);
+      if (proto === null) {
+        return true;
+      }
+      var Ctor = hasOwnProperty2.call(proto, "constructor") && proto.constructor;
+      return typeof Ctor == "function" && Ctor instanceof Ctor && funcToString.call(Ctor) == objectCtorString;
+    }
+    module.exports = isPlainObject5;
+  }
+});
+
+// ../../node_modules/lodash/isArray.js
+var require_isArray = __commonJS({
+  "../../node_modules/lodash/isArray.js"(exports, module) {
+    var isArray2 = Array.isArray;
+    module.exports = isArray2;
+  }
+});
+
+// ../../node_modules/lodash/_arrayMap.js
+var require_arrayMap = __commonJS({
+  "../../node_modules/lodash/_arrayMap.js"(exports, module) {
+    function arrayMap(array, iteratee) {
+      var index4 = -1, length = array == null ? 0 : array.length, result = Array(length);
+      while (++index4 < length) {
+        result[index4] = iteratee(array[index4], index4, array);
+      }
+      return result;
+    }
+    module.exports = arrayMap;
   }
 });
 
@@ -1620,54 +1668,6 @@ var require_debounce = __commonJS({
       return debounced;
     }
     module.exports = debounce5;
-  }
-});
-
-// ../../node_modules/lodash/_overArg.js
-var require_overArg = __commonJS({
-  "../../node_modules/lodash/_overArg.js"(exports, module) {
-    function overArg(func4, transform4) {
-      return function(arg) {
-        return func4(transform4(arg));
-      };
-    }
-    module.exports = overArg;
-  }
-});
-
-// ../../node_modules/lodash/_getPrototype.js
-var require_getPrototype = __commonJS({
-  "../../node_modules/lodash/_getPrototype.js"(exports, module) {
-    var overArg = require_overArg();
-    var getPrototype = overArg(Object.getPrototypeOf, Object);
-    module.exports = getPrototype;
-  }
-});
-
-// ../../node_modules/lodash/isPlainObject.js
-var require_isPlainObject = __commonJS({
-  "../../node_modules/lodash/isPlainObject.js"(exports, module) {
-    var baseGetTag = require_baseGetTag();
-    var getPrototype = require_getPrototype();
-    var isObjectLike = require_isObjectLike();
-    var objectTag = "[object Object]";
-    var funcProto = Function.prototype;
-    var objectProto = Object.prototype;
-    var funcToString = funcProto.toString;
-    var hasOwnProperty2 = objectProto.hasOwnProperty;
-    var objectCtorString = funcToString.call(Object);
-    function isPlainObject5(value) {
-      if (!isObjectLike(value) || baseGetTag(value) != objectTag) {
-        return false;
-      }
-      var proto = getPrototype(value);
-      if (proto === null) {
-        return true;
-      }
-      var Ctor = hasOwnProperty2.call(proto, "constructor") && proto.constructor;
-      return typeof Ctor == "function" && Ctor instanceof Ctor && funcToString.call(Ctor) == objectCtorString;
-    }
-    module.exports = isPlainObject5;
   }
 });
 
@@ -8663,6 +8663,7 @@ __export(src_exports2, {
   DEFAULT_KEY_TO_CHIPS: () => DEFAULT_KEY_TO_CHIPS,
   DEFAULT_LIMIT_CHIPS: () => DEFAULT_LIMIT_CHIPS,
   DialPadButton: () => DialPadButton,
+  GlobalFixSafariStyle: () => GlobalFixSafariStyle,
   GroupedVirtuoso: () => GroupedVirtuoso,
   HALF_DAY_HOURS: () => HALF_DAY_HOURS,
   HOUR_MINUTES: () => HOUR_MINUTES,
@@ -8886,6 +8887,7 @@ __export(src_exports2, {
   elevationOptions: () => elevationOptions,
   ellipsis: () => ellipsis,
   fakeBorder: () => fakeBorder,
+  fixSafariTransitionStyle: () => fixSafariTransitionStyle,
   flexCenterStyle: () => flexCenterStyle,
   flexWidth: () => flexWidth,
   focusVisible: () => focusVisible,
@@ -8907,6 +8909,7 @@ __export(src_exports2, {
   getRecoupHour: () => getRecoupHour,
   getRefElement: () => getRefElement,
   getResizeObserver: () => getResizeObserver,
+  getSafari154Theme: () => getSafari154Theme,
   getScrollbarSize: () => getScrollbarSize2,
   getSelectionPosition: () => getSelectionPosition,
   getTabId: () => getTabId,
@@ -8925,6 +8928,7 @@ __export(src_exports2, {
   isOutOfRange: () => isOutOfRange,
   isRcElement: () => isRcElement,
   isRef: () => isRef,
+  isSafari154: () => isSafari154,
   isUrl: () => isUrl,
   keyframes: () => keyframes,
   lastMinute: () => lastMinute,
@@ -47255,6 +47259,7 @@ __export(juno_core_exports, {
   DEFAULT_KEY_TO_CHIPS: () => DEFAULT_KEY_TO_CHIPS,
   DEFAULT_LIMIT_CHIPS: () => DEFAULT_LIMIT_CHIPS,
   DialPadButton: () => DialPadButton,
+  GlobalFixSafariStyle: () => GlobalFixSafariStyle,
   GroupedVirtuoso: () => GroupedVirtuoso,
   HALF_DAY_HOURS: () => HALF_DAY_HOURS,
   HOUR_MINUTES: () => HOUR_MINUTES,
@@ -47473,6 +47478,7 @@ __export(juno_core_exports, {
   downshiftComponentName: () => downshiftComponentName,
   ellipsis: () => ellipsis,
   fakeBorder: () => fakeBorder,
+  fixSafariTransitionStyle: () => fixSafariTransitionStyle,
   flexCenterStyle: () => flexCenterStyle,
   flexWidth: () => flexWidth,
   focusVisible: () => focusVisible,
@@ -47494,6 +47500,7 @@ __export(juno_core_exports, {
   getRecoupHour: () => getRecoupHour,
   getRefElement: () => getRefElement,
   getResizeObserver: () => getResizeObserver,
+  getSafari154Theme: () => getSafari154Theme,
   getScrollbarSize: () => getScrollbarSize2,
   getSelectionPosition: () => getSelectionPosition,
   getTabId: () => getTabId,
@@ -47510,6 +47517,7 @@ __export(juno_core_exports, {
   isOutOfRange: () => isOutOfRange,
   isRcElement: () => isRcElement,
   isRef: () => isRef,
+  isSafari154: () => isSafari154,
   isUrl: () => isUrl,
   keyframes: () => keyframes,
   lastMinute: () => lastMinute,
@@ -47636,6 +47644,7 @@ __export(src_exports, {
   DEFAULT_KEY_TO_CHIPS: () => DEFAULT_KEY_TO_CHIPS,
   DEFAULT_LIMIT_CHIPS: () => DEFAULT_LIMIT_CHIPS,
   DialPadButton: () => DialPadButton,
+  GlobalFixSafariStyle: () => GlobalFixSafariStyle,
   GroupedVirtuoso: () => GroupedVirtuoso,
   HALF_DAY_HOURS: () => HALF_DAY_HOURS,
   HOUR_MINUTES: () => HOUR_MINUTES,
@@ -47854,6 +47863,7 @@ __export(src_exports, {
   downshiftComponentName: () => downshiftComponentName,
   ellipsis: () => ellipsis,
   fakeBorder: () => fakeBorder,
+  fixSafariTransitionStyle: () => fixSafariTransitionStyle,
   flexCenterStyle: () => flexCenterStyle,
   flexWidth: () => flexWidth,
   focusVisible: () => focusVisible,
@@ -47875,6 +47885,7 @@ __export(src_exports, {
   getRecoupHour: () => getRecoupHour,
   getRefElement: () => getRefElement,
   getResizeObserver: () => getResizeObserver,
+  getSafari154Theme: () => getSafari154Theme,
   getScrollbarSize: () => getScrollbarSize2,
   getSelectionPosition: () => getSelectionPosition,
   getTabId: () => getTabId,
@@ -47891,6 +47902,7 @@ __export(src_exports, {
   isOutOfRange: () => isOutOfRange,
   isRcElement: () => isRcElement,
   isRef: () => isRef,
+  isSafari154: () => isSafari154,
   isUrl: () => isUrl,
   keyframes: () => keyframes,
   lastMinute: () => lastMinute,
@@ -49591,6 +49603,138 @@ var configure = (options) => {
   }
 };
 
+// ../juno-core/src/foundation/utils/classes.ts
+var RcClasses = (classes, prefix4) => {
+  return classes.reduce((prev, curr) => {
+    prev[curr] = `${prefix4}-${curr}`;
+    return prev;
+  }, {});
+};
+
+// ../juno-core/src/foundation/utils/combineProps.ts
+var import_isPlainObject = __toModule(require_isPlainObject());
+import { isValidElement as isValidElement14 } from "react";
+var combineProps = (baseProps, newProps, coverPropKeys) => innerCombineProps({
+  baseProps,
+  newProps,
+  coverPropKeys
+});
+var combineClasses = (baseClasses, newClasses) => innerCombineProps({
+  baseProps: baseClasses,
+  newProps: newClasses,
+  combineAllString: true
+});
+var innerCombineProps = (params) => {
+  const { baseProps, newProps } = params;
+  if (!newProps || Object.keys(newProps).length === 0) {
+    return baseProps;
+  }
+  const outputProps = mergeChildProps(params);
+  return {
+    ...newProps,
+    ...outputProps
+  };
+};
+function mergeChildProps({
+  baseProps,
+  newProps,
+  combineAllString,
+  coverPropKeys
+}) {
+  const result = Object.keys(baseProps || {}).reduce((output, curr) => {
+    const prop2 = baseProps[curr];
+    const propTo = newProps[curr];
+    if (propTo !== void 0) {
+      switch (typeof prop2) {
+        case "undefined":
+          output[curr] = propTo;
+          break;
+        case "object": {
+          if (!isValidElement14(propTo) && !isValidElement14(prop2) && (0, import_isPlainObject.default)(propTo) && (0, import_isPlainObject.default)(prop2)) {
+            output[curr] = mergeChildProps({
+              baseProps: prop2,
+              newProps: propTo || {},
+              combineAllString: combineAllString || curr === "classes"
+            });
+          } else {
+            output[curr] = propTo;
+          }
+          break;
+        }
+        case "string":
+          if (combineAllString || curr === "className") {
+            output[curr] = [prop2, propTo].filter((x2) => typeof x2 === "string" && x2).join(" ");
+          } else {
+            output[curr] = propTo;
+          }
+          break;
+        case "boolean":
+        case "symbol":
+        case "bigint":
+        case "number":
+          output[curr] = propTo;
+          break;
+        case "function":
+          if (coverPropKeys && coverPropKeys.includes(curr) && propTo) {
+            output[curr] = propTo;
+          } else {
+            output[curr] = (...args) => {
+              propTo?.(...args);
+              prop2?.(...args);
+            };
+          }
+          break;
+        default:
+      }
+    } else {
+      output[curr] = prop2;
+    }
+    return output;
+  }, {});
+  if (Object.keys(result).length === 0) {
+    return void 0;
+  }
+  return {
+    ...newProps,
+    ...result
+  };
+}
+
+// ../juno-core/src/foundation/isSafari154.ts
+var isSafari154 = typeof navigator !== "undefined" && /^((?!chrome|android).)*safari/i.test(navigator.userAgent) && /version\/15\.[4-9]/i.test(navigator.userAgent);
+var FixSafari154Classes = RcClasses(["paper"], "RcFixSafari154");
+var getSafari154Theme = (theme) => {
+  if (!isSafari154)
+    return theme;
+  return combineProps({
+    props: {
+      MuiMenu: {
+        PopoverClasses: { paper: FixSafari154Classes.paper }
+      },
+      RcVirtualizedMenu: {
+        PopoverClasses: { paper: FixSafari154Classes.paper }
+      },
+      MuiPopover: {
+        PaperProps: { className: FixSafari154Classes.paper }
+      },
+      RcTooltip: {
+        classes: {
+          tooltip: FixSafari154Classes.paper
+        }
+      },
+      RcGrow: {
+        className: FixSafari154Classes.paper
+      }
+    }
+  }, theme);
+};
+var fixSafariTransitionStyle = "all 159ms cubic-bezier(0.4, 0, 0.2, 1) 0ms";
+var GlobalFixSafariStyle = We`
+  .${FixSafari154Classes.paper} {
+    transition: ${fixSafariTransitionStyle} !important;
+  }
+`;
+
 // ../juno-core/src/foundation/contexts/PortalWindowContext.ts
 import { createContext as createContext7, useContext as useContext11 } from "react";
 var RcPortalWindowContext = createContext7({
@@ -49981,14 +50125,6 @@ var checkDefaultPrevented = (fc) => {
   };
 };
 
-// ../juno-core/src/foundation/utils/classes.ts
-var RcClasses = (classes, prefix4) => {
-  return classes.reduce((prev, curr) => {
-    prev[curr] = `${prefix4}-${curr}`;
-    return prev;
-  }, {});
-};
-
 // ../juno-core/src/foundation/utils/withDeprecatedCheck.tsx
 import { useEffect as useEffect34 } from "react";
 function showDeprecated({
@@ -50071,95 +50207,6 @@ function clearReactReferencesInNode(node4) {
       });
     }
   }
-}
-
-// ../juno-core/src/foundation/utils/combineProps.ts
-var import_isPlainObject = __toModule(require_isPlainObject());
-import { isValidElement as isValidElement14 } from "react";
-var combineProps = (baseProps, newProps, coverPropKeys) => innerCombineProps({
-  baseProps,
-  newProps,
-  coverPropKeys
-});
-var combineClasses = (baseClasses, newClasses) => innerCombineProps({
-  baseProps: baseClasses,
-  newProps: newClasses,
-  combineAllString: true
-});
-var innerCombineProps = (params) => {
-  const { baseProps, newProps } = params;
-  if (!newProps || Object.keys(newProps).length === 0) {
-    return baseProps;
-  }
-  const outputProps = mergeChildProps(params);
-  return {
-    ...newProps,
-    ...outputProps
-  };
-};
-function mergeChildProps({
-  baseProps,
-  newProps,
-  combineAllString,
-  coverPropKeys
-}) {
-  const result = Object.keys(baseProps || {}).reduce((output, curr) => {
-    const prop2 = baseProps[curr];
-    const propTo = newProps[curr];
-    if (propTo !== void 0) {
-      switch (typeof prop2) {
-        case "undefined":
-          output[curr] = propTo;
-          break;
-        case "object": {
-          if (!isValidElement14(propTo) && !isValidElement14(prop2) && (0, import_isPlainObject.default)(propTo) && (0, import_isPlainObject.default)(prop2)) {
-            output[curr] = mergeChildProps({
-              baseProps: prop2,
-              newProps: propTo || {},
-              combineAllString: combineAllString || curr === "classes"
-            });
-          } else {
-            output[curr] = propTo;
-          }
-          break;
-        }
-        case "string":
-          if (combineAllString || curr === "className") {
-            output[curr] = [prop2, propTo].filter((x2) => typeof x2 === "string" && x2).join(" ");
-          } else {
-            output[curr] = propTo;
-          }
-          break;
-        case "boolean":
-        case "symbol":
-        case "bigint":
-        case "number":
-          output[curr] = propTo;
-          break;
-        case "function":
-          if (coverPropKeys && coverPropKeys.includes(curr) && propTo) {
-            output[curr] = propTo;
-          } else {
-            output[curr] = (...args) => {
-              propTo?.(...args);
-              prop2?.(...args);
-            };
-          }
-          break;
-        default:
-      }
-    } else {
-      output[curr] = prop2;
-    }
-    return output;
-  }, {});
-  if (Object.keys(result).length === 0) {
-    return void 0;
-  }
-  return {
-    ...newProps,
-    ...result
-  };
 }
 
 // ../juno-core/src/foundation/utils/deepmerge.ts
@@ -52250,12 +52297,12 @@ var SubThemeProvider = ({
 }) => {
   const parentTheme = RcUseTheme();
   const isHaveParentRcTheme = parentTheme.palette?.content?.brand;
-  const theme = !themeProp && isHaveParentRcTheme ? parentTheme : createTheme_default2(themeProp);
+  const theme = getSafari154Theme(!themeProp && isHaveParentRcTheme ? parentTheme : createTheme_default2(themeProp));
   return /* @__PURE__ */ React561.createElement(ThemeProvider_default, {
     theme
   }, /* @__PURE__ */ React561.createElement(ThemeProvider2, {
     theme
-  }, /* @__PURE__ */ React561.createElement(React561.Fragment, null, children2)));
+  }, /* @__PURE__ */ React561.createElement(React561.Fragment, null, isSafari154 && /* @__PURE__ */ React561.createElement(GlobalFixSafariStyle, null), children2)));
 };
 var RootThemeProvider = (props) => {
   const { prefixGlobalClass, ...rest } = props;
@@ -78847,10 +78894,13 @@ var _RcVirtualizedMenuList = forwardRef613((inProps, ref2) => {
     tabIndex: -1,
     scrollerRef: (scrollElm) => {
       scrollerRefFn(scrollElm);
-      if (position4 && scrollElm) {
-        const viewPortElm = scrollElm.firstChild;
-        if (viewPortElm) {
-          viewPortElm.style.position = position4;
+      if (scrollElm) {
+        scrollElm.style.transition = fixSafariTransitionStyle;
+        if (position4) {
+          const viewPortElm = scrollElm.firstChild;
+          if (viewPortElm) {
+            viewPortElm.style.position = position4;
+          }
         }
       }
       if (!isMountedRef.current) {
@@ -79669,8 +79719,8 @@ var StyledListItemSecondaryAction = styled_components_default(RcListItemSecondar
   right: 0;
   top: 0;
 `;
-var StyledGrow = styled_components_default(Grow_default)`
-  transform-origin: 'center top';
+var StyledGrow = styled_components_default(RcGrow)`
+  transform-origin: center top;
 `;
 var SubMenuStyle = () => {
   return css2``;
@@ -84141,6 +84191,7 @@ export {
   DEFAULT_KEY_TO_CHIPS,
   DEFAULT_LIMIT_CHIPS,
   DialPadButton,
+  GlobalFixSafariStyle,
   GroupedVirtuoso,
   HALF_DAY_HOURS,
   HOUR_MINUTES,
@@ -84364,6 +84415,7 @@ export {
   elevationOptions,
   ellipsis,
   fakeBorder,
+  fixSafariTransitionStyle,
   flexCenterStyle,
   flexWidth,
   focusVisible,
@@ -84385,6 +84437,7 @@ export {
   getRecoupHour,
   getRefElement,
   getResizeObserver,
+  getSafari154Theme,
   getScrollbarSize2 as getScrollbarSize,
   getSelectionPosition,
   getTabId,
@@ -84403,6 +84456,7 @@ export {
   isOutOfRange,
   isRcElement,
   isRef,
+  isSafari154,
   isUrl,
   keyframes,
   lastMinute,
