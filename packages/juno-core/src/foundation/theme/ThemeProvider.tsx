@@ -15,6 +15,11 @@ import {
 
 import { useResultRef } from '../hooks';
 import {
+  getSafari154Theme,
+  GlobalFixSafariStyle,
+  isSafari154,
+} from '../isSafari154';
+import {
   ThemeProvider as StyledThemeProvider,
   useTheme,
 } from '../styled-components';
@@ -49,13 +54,18 @@ const SubThemeProvider: FunctionComponent<SubThemeProviderProps> = ({
 
   const isHaveParentRcTheme = parentTheme.palette?.content?.brand;
 
-  const theme =
-    !themeProp && isHaveParentRcTheme ? parentTheme : createTheme(themeProp);
+  // TODO: can be remove after safari fix that bug, maybe after v16
+  const theme = getSafari154Theme(
+    !themeProp && isHaveParentRcTheme ? parentTheme : createTheme(themeProp),
+  );
 
   return (
     <MuiThemeProvider theme={theme}>
       <StyledThemeProvider theme={theme}>
-        <React.Fragment>{children}</React.Fragment>
+        <>
+          {isSafari154 && <GlobalFixSafariStyle />}
+          {children}
+        </>
       </StyledThemeProvider>
     </MuiThemeProvider>
   );

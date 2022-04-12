@@ -1,6 +1,7 @@
 import styled from './styled-components';
 
 export * from './config';
+export * from './isSafari154';
 export * from './contexts';
 export * from './hoc';
 export * from './hooks';
