@@ -12,8 +12,9 @@ import {
 } from '@ringcentral/juno';
 import { Warning } from '@ringcentral/juno-icon';
 import localIcons from '@ringcentral/juno-icon/devUtils/iconSymbol';
-import svgToComponentMapping from '@ringcentral/juno-icon/devUtils/svgToComponentMapping';
 import { Meta } from '@storybook/react';
+
+const svgToComponentMapping = require('@ringcentral/juno-icon/devUtils/svgToComponentMapping.ts');
 
 export default {
   title: '🔧 Foundation/Icon List',
