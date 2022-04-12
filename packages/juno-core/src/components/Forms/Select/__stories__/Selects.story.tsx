@@ -226,7 +226,7 @@ Select.parameters = {
 };
 
 export const VirtualizeMenu: Story<SelectProps> = ({ ...args }) => {
-  const [value2, setValue2] = useState<number[]>([]);
+  const [value2, setValue2] = useState<number | null>(null);
 
   return (
     <RcGrid container>
