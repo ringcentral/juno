@@ -9,6 +9,7 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  MicrosoftExchangeServerLogoWine: 'Microsoft_Exchange_Server_Logo_wine',
   RecordBorder: 'record_border',
   VoicemailBorder: 'voicemail_border',
   Customize: 'customize',

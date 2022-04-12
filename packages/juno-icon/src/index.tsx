@@ -18,6 +18,7 @@ export { default as Hud } from './Hud';
 export { default as Limited } from './Limited';
 export { default as Logout } from './Logout';
 export { default as Message } from './Message';
+export { default as MicrosoftExchangeServerLogoWine } from './MicrosoftExchangeServerLogoWine';
 export { default as NewEmail } from './NewEmail';
 export { default as Paging } from './Paging';
 export { default as SharedLine } from './SharedLine';
