@@ -1,7 +1,6 @@
-import MuiGrow from '@material-ui/core/Grow';
-
 import { css, RcThemedStyled, styled } from '../../../../foundation';
 import { RcListItemSecondaryAction } from '../../../List/ListItemSecondaryAction';
+import { RcGrow } from '../../../Transitions/Grow';
 import { RcSubMenuProps } from '../SubMenu';
 
 export const StyledListItemSecondaryAction = styled(RcListItemSecondaryAction)`
@@ -11,8 +10,8 @@ export const StyledListItemSecondaryAction = styled(RcListItemSecondaryAction)`
   top: 0;
 `;
 
-export const StyledGrow = styled(MuiGrow)`
-  transform-origin: 'center top';
+export const StyledGrow = styled(RcGrow)`
+  transform-origin: center top;
 `;
 
 export const SubMenuStyle: RcThemedStyled<RcSubMenuProps, any> = () => {
