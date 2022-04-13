@@ -9,8 +9,9 @@ import { combineProps } from './utils/combineProps';
  */
 export const isSafari154 =
   typeof navigator !== 'undefined' &&
-  /^((?!chrome|android).)*safari/i.test(navigator.userAgent) &&
-  /version\/15\.[4-9]/i.test(navigator.userAgent);
+  (/^((?!chrome|android).)*safari/i.test(navigator.userAgent) ||
+    /(iPhone|iPad)/.test(navigator.userAgent)) &&
+  /15\.[4-9]/i.test(navigator.userAgent);
 
 const FixSafari154Classes = RcClasses<RcClassesProps<'paper'>>(
   ['paper'],
