@@ -11,7 +11,6 @@ import { isFragment } from 'react-is';
 
 import {
   combineProps,
-  fixSafariTransitionStyle,
   getScrollbarSize,
   isRcElement,
   logInDev,
@@ -35,6 +34,7 @@ import {
   IndexLocationWithAlign,
   isOutOfRange,
   ListRange,
+  modifyVlScrollerStyle,
   useDynamicHeight,
   useHighlightScroll,
   Virtuoso,
@@ -328,19 +328,7 @@ const _RcVirtualizedMenuList = forwardRef<any, RcVirtualizedMenuListProps>(
         scrollerRef: (scrollElm: HTMLElement) => {
           scrollerRefFn(scrollElm);
 
-          if (scrollElm) {
-            // * Mozilla/5.0 (iPhone; CPU iPhone OS 15_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/100.0.4896.77 Mobile/15E148 Safari/604.1
-            // * set that to make safari vl render correctly
-            scrollElm.style.transition = fixSafariTransitionStyle;
-
-            if (position) {
-              const viewPortElm = scrollElm.firstChild as HTMLElement;
-              if (viewPortElm) {
-                viewPortElm.style.position = position;
-              }
-            }
-          }
-          // resetViewPortStyle
+          modifyVlScrollerStyle(scrollElm, position);
 
           // * when not have scrollerRef mean that is first render
           if (!isMountedRef.current) {

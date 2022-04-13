@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 
 import { IndexLocationWithAlign, ListItem } from 'react-virtuoso';
 
+import { fixSafariTransitionStyle } from '../../../foundation';
+
 type UseHighlightScrollParams = {
   /** function to call to scroll to target index */
   scrollToIndex: (location: IndexLocationWithAlign) => void;
@@ -125,4 +127,24 @@ export function useHighlightScroll({
      */
     itemsRendered: (e: ListItem<any>[]) => (renderedItemsRef.current = e),
   };
+}
+
+/**
+ * modify virtuoso style to fix safari scroll bug
+ */
+export function modifyVlScrollerStyle(
+  scrollElm: HTMLElement,
+  position: 'absolute' | 'unset' = 'absolute',
+) {
+  if (scrollElm) {
+    scrollElm.style.transition = fixSafariTransitionStyle;
+
+    if (position) {
+      const viewPortElm = scrollElm.firstChild as HTMLElement;
+
+      if (viewPortElm) {
+        viewPortElm.style.position = position;
+      }
+    }
+  }
 }

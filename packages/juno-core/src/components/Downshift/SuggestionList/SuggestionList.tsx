@@ -35,6 +35,7 @@ import {
 import {
   Components,
   IndexLocationWithAlign,
+  modifyVlScrollerStyle,
   useDynamicHeight,
   useHighlightScroll,
   Virtuoso,
@@ -383,7 +384,11 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
           {...(getMenuProps() as any)}
           {...combineProps(
             {
-              scrollerRef: scrollerRefFn,
+              scrollerRef: (scrollElm: HTMLElement) => {
+                scrollerRefFn(scrollElm);
+
+                modifyVlScrollerStyle(scrollElm, position);
+              },
               itemsRendered,
               totalListHeightChanged,
               style,
