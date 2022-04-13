@@ -29,6 +29,13 @@ import { RcThemeInput } from './theme.type';
 type SubThemeProviderProps = {
   /** custom theme */
   theme?: RcThemeInput;
+  // TODO: that should be remove after safari 16.x
+  /**
+   * workaround for fix safari 15.4~.9 bug
+   *
+   * use for when your environment need that fix but userAgent not have safari
+   */
+  fixSafari154?: boolean;
   children?: ReactNode;
 };
 
@@ -49,6 +56,7 @@ const NestedThemeContext = createContext(false);
 const SubThemeProvider: FunctionComponent<SubThemeProviderProps> = ({
   theme: themeProp,
   children,
+  fixSafari154: safari154Fix,
 }) => {
   const parentTheme = useTheme();
 
@@ -57,13 +65,14 @@ const SubThemeProvider: FunctionComponent<SubThemeProviderProps> = ({
   // TODO: can be remove after safari fix that bug, maybe after v16
   const theme = getSafari154Theme(
     !themeProp && isHaveParentRcTheme ? parentTheme : createTheme(themeProp),
+    safari154Fix,
   );
 
   return (
     <MuiThemeProvider theme={theme}>
       <StyledThemeProvider theme={theme}>
         <>
-          {isSafari154 && <GlobalFixSafariStyle />}
+          {(safari154Fix ?? isSafari154) && <GlobalFixSafariStyle />}
           {children}
         </>
       </StyledThemeProvider>

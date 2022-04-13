@@ -21,36 +21,38 @@ const FixSafari154Classes = RcClasses<RcClassesProps<'paper'>>(
  * Conditionally apply a workaround for the CSS transition bug in Safari 15.4.
  * Remove this workaround once the Safari bug is fixed.
  */
-export const getSafari154Theme = (theme: any) => {
-  if (!isSafari154) return theme;
-
-  return combineProps(
-    {
-      props: {
-        // * set all grow related to only have one transition to make animation not shake after safari 15.4
-        MuiMenu: {
-          PopoverClasses: { paper: FixSafari154Classes.paper },
-        },
-        RcVirtualizedMenu: {
-          PopoverClasses: { paper: FixSafari154Classes.paper },
-        },
-        MuiPopover: {
-          PaperProps: { className: FixSafari154Classes.paper },
-        },
-        // mui tooltip prop will cover all existing props
-        RcTooltip: {
-          classes: {
-            tooltip: FixSafari154Classes.paper,
+export const getSafari154Theme = (theme: any, enable?: boolean) => {
+  if (enable ?? isSafari154) {
+    return combineProps(
+      {
+        props: {
+          // * set all grow related to only have one transition to make animation not shake after safari 15.4
+          MuiMenu: {
+            PopoverClasses: { paper: FixSafari154Classes.paper },
+          },
+          RcVirtualizedMenu: {
+            PopoverClasses: { paper: FixSafari154Classes.paper },
+          },
+          MuiPopover: {
+            PaperProps: { className: FixSafari154Classes.paper },
+          },
+          // mui tooltip prop will cover all existing props
+          RcTooltip: {
+            classes: {
+              tooltip: FixSafari154Classes.paper,
+            },
+          },
+          // mui grow not accept global prop
+          RcGrow: {
+            className: FixSafari154Classes.paper,
           },
         },
-        // mui grow not accept global prop
-        RcGrow: {
-          className: FixSafari154Classes.paper,
-        },
       },
-    },
-    theme,
-  );
+      theme,
+    );
+  }
+
+  return theme;
 };
 
 export const fixSafariTransitionStyle =
