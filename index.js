@@ -49745,32 +49745,33 @@ function mergeChildProps({
 }
 
 // ../juno-core/src/foundation/isSafari154.ts
-var isSafari154 = typeof navigator !== "undefined" && /^((?!chrome|android).)*safari/i.test(navigator.userAgent) && /version\/15\.[4-9]/i.test(navigator.userAgent);
+var isSafari154 = typeof navigator !== "undefined" && (/^((?!chrome|android).)*safari/i.test(navigator.userAgent) || /(iPhone|iPad)/.test(navigator.userAgent)) && /15\.[4-9]/i.test(navigator.userAgent);
 var FixSafari154Classes = RcClasses(["paper"], "RcFixSafari154");
-var getSafari154Theme = (theme) => {
-  if (!isSafari154)
-    return theme;
-  return combineProps({
-    props: {
-      MuiMenu: {
-        PopoverClasses: { paper: FixSafari154Classes.paper }
-      },
-      RcVirtualizedMenu: {
-        PopoverClasses: { paper: FixSafari154Classes.paper }
-      },
-      MuiPopover: {
-        PaperProps: { className: FixSafari154Classes.paper }
-      },
-      RcTooltip: {
-        classes: {
-          tooltip: FixSafari154Classes.paper
+var getSafari154Theme = (theme, enable) => {
+  if (enable ?? isSafari154) {
+    return combineProps({
+      props: {
+        MuiMenu: {
+          PopoverClasses: { paper: FixSafari154Classes.paper }
+        },
+        RcVirtualizedMenu: {
+          PopoverClasses: { paper: FixSafari154Classes.paper }
+        },
+        MuiPopover: {
+          PaperProps: { className: FixSafari154Classes.paper }
+        },
+        RcTooltip: {
+          classes: {
+            tooltip: FixSafari154Classes.paper
+          }
+        },
+        RcGrow: {
+          className: FixSafari154Classes.paper
         }
-      },
-      RcGrow: {
-        className: FixSafari154Classes.paper
       }
-    }
-  }, theme);
+    }, theme);
+  }
+  return theme;
 };
 var fixSafariTransitionStyle = "all 159ms cubic-bezier(0.4, 0, 0.2, 1) 0ms";
 var GlobalFixSafariStyle = We`
@@ -52337,16 +52338,17 @@ import React562, {
 var NestedThemeContext = createContext9(false);
 var SubThemeProvider = ({
   theme: themeProp,
-  children: children2
+  children: children2,
+  fixSafari154: safari154Fix
 }) => {
   const parentTheme = RcUseTheme();
   const isHaveParentRcTheme = parentTheme.palette?.content?.brand;
-  const theme = getSafari154Theme(!themeProp && isHaveParentRcTheme ? parentTheme : createTheme_default2(themeProp));
+  const theme = getSafari154Theme(!themeProp && isHaveParentRcTheme ? parentTheme : createTheme_default2(themeProp), safari154Fix);
   return /* @__PURE__ */ React562.createElement(ThemeProvider_default, {
     theme
   }, /* @__PURE__ */ React562.createElement(ThemeProvider2, {
     theme
-  }, /* @__PURE__ */ React562.createElement(React562.Fragment, null, isSafari154 && /* @__PURE__ */ React562.createElement(GlobalFixSafariStyle, null), children2)));
+  }, /* @__PURE__ */ React562.createElement(React562.Fragment, null, (safari154Fix ?? isSafari154) && /* @__PURE__ */ React562.createElement(GlobalFixSafariStyle, null), children2)));
 };
 var RootThemeProvider = (props) => {
   const { prefixGlobalClass, ...rest } = props;
