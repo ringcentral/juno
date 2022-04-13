@@ -25,6 +25,7 @@ import {
   RcTypography,
   styled,
   useTheme,
+  isSafari154,
 } from '@ringcentral/juno';
 import { Add, Videocam } from '@ringcentral/juno-icon';
 import {
@@ -64,6 +65,9 @@ export const Tooltip: Story<TooltipProps> = ({ children, ...args }) => {
 
   return (
     <>
+      <Title variant="body1">
+        current is {isSafari154 ? '' : 'not'} safari 15.4~15.9
+      </Title>
       <RcBox textAlign="center">
         <RcTooltip {...args}>
           <RcButton>Tooltip when hover or keyboard focus</RcButton>
