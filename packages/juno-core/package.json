@@ -36,7 +36,7 @@
     "focus-visible": "^5.1.0",
     "lodash": "^4.17.21",
     "react-beautiful-dnd": "^13.0.0",
-    "react-virtuoso": "^1.9.3",
+    "react-virtuoso": "^2.8.3",
     "resize-observer-polyfill": "^1.5.1",
     "typeface-lato": "^0.0.75",
     "tslib": ">=2.0.0"

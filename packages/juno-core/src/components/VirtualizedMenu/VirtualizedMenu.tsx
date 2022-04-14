@@ -1,4 +1,4 @@
-import React, { forwardRef, useMemo, useRef } from 'react';
+import React, { forwardRef, useEffect, useMemo, useRef } from 'react';
 
 import clsx from 'clsx';
 
@@ -8,8 +8,10 @@ import {
   RcBaseProps,
   styled,
   useEventCallback,
+  useForceUpdate,
   useForkRef,
   useRcPortalWindowContext,
+  useSleep,
   useThemeProps,
 } from '../../foundation';
 import { RcMenuProps } from '../Menu';
@@ -107,6 +109,19 @@ const _RcVirtualizedMenu = forwardRef<any, RcVirtualizedMenuProps>(
         }
       },
     );
+
+    const forceUpdate = useForceUpdate();
+    const { sleep } = useSleep();
+
+    // TODO: fix that when that work
+    useEffect(() => {
+      if (open) {
+        sleep(200).then(() => {
+          forceUpdate();
+        });
+      }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [open]);
 
     return (
       <RcPopover
