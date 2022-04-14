@@ -200,23 +200,21 @@ function adjust<T>(node: NonNilAANode<T>): NonNilAANode<T> {
       });
     }
     throw new Error('Unexpected empty nodes');
-  } else {
-    if (isSingle(node)) {
-      return split(clone(node, { lvl: lvl - 1 }));
-    }
-    if (!empty(r) && !empty(r.l)) {
-      const rl = r.l;
-      const rlvl = isSingle(rl) ? r.lvl - 1 : r.lvl;
+  } else if (isSingle(node)) {
+    return split(clone(node, { lvl: lvl - 1 }));
+  } else if (!empty(r) && !empty(r.l)) {
+    const rl = r.l;
+    const rlvl = isSingle(rl) ? r.lvl - 1 : r.lvl;
 
-      return clone(rl, {
-        l: clone(node, {
-          r: rl.l,
-          lvl: lvl - 1,
-        }),
-        r: split(clone(r, { l: rl.r, lvl: rlvl })),
-        lvl: rl.lvl + 1,
-      });
-    }
+    return clone(rl, {
+      l: clone(node, {
+        r: rl.l,
+        lvl: lvl - 1,
+      }),
+      r: split(clone(r, { l: rl.r, lvl: rlvl })),
+      lvl: rl.lvl + 1,
+    });
+  } else {
     throw new Error('Unexpected empty nodes');
   }
 }

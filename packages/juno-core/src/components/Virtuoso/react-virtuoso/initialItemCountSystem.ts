@@ -25,14 +25,9 @@ export const initialItemCountSystem = u.system(
             }
           }
           const adjustedCount = count + includedGroupsCount;
-          const items = Array.from({
-            length: adjustedCount,
-          }).map((_, index) => ({
-            index,
-            size: 0,
-            offset: 0,
-            data: data[index],
-          }));
+          const items = Array.from({ length: adjustedCount }).map(
+            (_, index) => ({ index, size: 0, offset: 0, data: data[index] }),
+          );
           return buildListState(
             items,
             [],

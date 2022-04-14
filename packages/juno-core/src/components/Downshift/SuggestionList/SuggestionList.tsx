@@ -53,7 +53,7 @@ import { SuggestionListStyle } from './styles';
 import { RcSuggestionListClasses } from './utils';
 
 export type RcSuggestionListProps<T> = RcBaseProps<
-  Partial<VirtuosoProps<T>>,
+  Partial<VirtuosoProps<T, undefined>>,
   'totalCount' | 'itemContent' | 'data'
 > & {
   /**

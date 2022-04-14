@@ -1,45 +1,50 @@
 /* eslint-disable no-continue */
 import * as u from '@virtuoso.dev/urx';
 
-import { domIOSystem, UP } from './domIOSystem';
+import { domIOSystem } from './domIOSystem';
 import { ListItem } from './interfaces';
 import { listStateSystem } from './listStateSystem';
+import { loggerSystem, LogLevel } from './loggerSystem';
 import { sizeSystem } from './sizeSystem';
-import { stateFlagsSystem } from './stateFlagsSystem';
+import { stateFlagsSystem, UP } from './stateFlagsSystem';
 
 /**
  * Fixes upward scrolling by calculating and compensation from changed item heights, using scrollBy.
  */
 export const upwardScrollFixSystem = u.system(
   ([
-    { scrollBy, scrollTop, scrollDirection, deviation, scrollingInProgress },
-    { isScrolling },
+    { scrollBy, scrollTop, deviation, scrollingInProgress },
+    {
+      isScrolling,
+      isAtBottom,
+      atBottomState,
+      scrollDirection,
+      lastJumpDueToItemResize,
+    },
     { listState },
-    { beforeUnshiftWith, sizes },
+    { beforeUnshiftWith, shiftWithOffset, sizes },
+    { log },
   ]) => {
     const deviationOffset = u.streamFromEmitter(
       u.pipe(
         listState,
-        u.withLatestFrom(scrollTop, scrollDirection, scrollingInProgress),
-        u.filter(([, scrollTop, scrollDirection, scrollingInProgress]) => {
-          return (
-            !scrollingInProgress && scrollTop !== 0 && scrollDirection === UP
-          );
-        }),
-        u.map(([state]) => state),
+        u.withLatestFrom(lastJumpDueToItemResize),
         u.scan(
-          ([, prevItems], { items }: any) => {
+          (
+            [, prevItems, prevTotalCount],
+            // @ts-ignore
+            [{ items, totalCount }, lastJumpDueToItemResize],
+          ) => {
             let newDev = 0;
-            if (prevItems.length > 0 && items.length > 0) {
-              const firstItemIndex = items[0].originalIndex;
-              const prevFirstItemIndex = prevItems[0].originalIndex;
-              const atStart = firstItemIndex === 0 && prevFirstItemIndex === 0;
+            if (prevTotalCount === totalCount) {
+              if (prevItems.length > 0 && items.length > 0) {
+                const firstItemIndex = items[0].originalIndex;
+                const prevFirstItemIndex = prevItems[0].originalIndex;
+                const atStart =
+                  firstItemIndex === 0 && prevFirstItemIndex === 0;
+                const onlyItem = items.length === 1;
 
-              if (!atStart) {
-                // Handles an item taller than the viewport
-                if (firstItemIndex === prevFirstItemIndex) {
-                  newDev = items[0].size - prevItems[0].size;
-                } else {
+                if (!atStart) {
                   for (let index = items.length - 1; index >= 0; index--) {
                     const item = items[index];
 
@@ -51,21 +56,50 @@ export const upwardScrollFixSystem = u.system(
                       continue;
                     }
 
-                    if (item.offset !== prevItem.offset) {
-                      newDev = item.offset - prevItem.offset;
+                    if (item.offset !== prevItem.offset || onlyItem) {
+                      newDev =
+                        item.offset -
+                        prevItem.offset +
+                        item.size -
+                        prevItem.size;
                       break;
                     }
                   }
                 }
               }
+
+              if (newDev !== 0) {
+                newDev += lastJumpDueToItemResize;
+              }
             }
 
-            return [newDev, items] as [number, ListItem<any>[]];
+            return [newDev, items, totalCount] as [
+              number,
+              ListItem<any>[],
+              number,
+            ];
           },
-          [0, []] as [number, ListItem<any>[]],
+          [0, [], 0] as [number, ListItem<any>[], number],
         ),
         u.filter(([amount]) => amount !== 0),
-        u.map(([amount]) => amount),
+        u.withLatestFrom(
+          scrollTop,
+          scrollDirection,
+          scrollingInProgress,
+          log,
+          isAtBottom,
+          atBottomState,
+        ),
+        u.filter(([, scrollTop, scrollDirection, scrollingInProgress]) => {
+          // console.log({ amount, scrollTop, scrollDirection, scrollingInProgress, isAtBottom, atBottomState })
+          return (
+            !scrollingInProgress && scrollTop !== 0 && scrollDirection === UP
+          ); // && (isAtBottom ? amount > 0 : true)
+        }),
+        u.map(([[amount], , , , log]) => {
+          log('Upward scrolling compensation', { amount }, LogLevel.DEBUG);
+          return amount;
+        }),
       ),
     );
 
@@ -103,6 +137,16 @@ export const upwardScrollFixSystem = u.system(
 
     u.connect(
       u.pipe(
+        shiftWithOffset,
+        u.map((offset) => {
+          return { top: -offset };
+        }),
+      ),
+      scrollBy,
+    );
+
+    u.connect(
+      u.pipe(
         beforeUnshiftWith,
         u.withLatestFrom(sizes),
         u.map(([offset, { lastSize }]) => offset * lastSize),
@@ -112,5 +156,11 @@ export const upwardScrollFixSystem = u.system(
 
     return { deviation };
   },
-  u.tup(domIOSystem, stateFlagsSystem, listStateSystem, sizeSystem),
+  u.tup(
+    domIOSystem,
+    stateFlagsSystem,
+    listStateSystem,
+    sizeSystem,
+    loggerSystem,
+  ),
 );

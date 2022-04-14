@@ -2,7 +2,7 @@
 
 This project fork from [react-virtuoso](https://github.com/petyosi/react-virtuoso.git)
 
-v1.9.3
-SHA: f98765507de074c38ddb132b677e8fc01d071f68
+v2.8.6
+SHA: 02f188051767d52e47a527bbdce39f61a140a51e
 
 always keep sync with original source, we extends that for support custom `window instance`.

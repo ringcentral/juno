@@ -1,7 +1,9 @@
 import * as u from '@virtuoso.dev/urx';
 
+import { domIOSystem } from './domIOSystem';
 import { initialTopMostItemIndexSystem } from './initialTopMostItemIndexSystem';
 import { FollowOutput, FollowOutputScalarType } from './interfaces';
+import { loggerSystem, LogLevel } from './loggerSystem';
 import { propsReadySystem } from './propsReadySystem';
 import { scrollToIndexSystem } from './scrollToIndexSystem';
 import { sizeSystem } from './sizeSystem';
@@ -33,15 +35,15 @@ export const followOutputSystem = u.system(
     { scrollToIndex },
     { scrolledToInitialItem },
     { propsReady, didMount },
+    { log },
+    { scrollingInProgress },
   ]) => {
     const followOutput = u.statefulStream<FollowOutput>(false);
+    let pendingScrollHandle: any = null;
 
-    function scrollToBottom(
-      totalCount: number,
-      followOutputBehavior: FollowOutputScalarType,
-    ) {
+    function scrollToBottom(followOutputBehavior: FollowOutputScalarType) {
       u.publish(scrollToIndex, {
-        index: totalCount - 1,
+        index: 'LAST',
         align: 'end',
         behavior: followOutputBehavior,
       });
@@ -49,11 +51,12 @@ export const followOutputSystem = u.system(
 
     u.subscribe(
       u.pipe(
-        u.combineLatest(u.duc(totalCount), didMount),
+        u.combineLatest(u.pipe(u.duc(totalCount), u.skip(1)), didMount),
         u.withLatestFrom(
           u.duc(followOutput),
           isAtBottom,
           scrolledToInitialItem,
+          scrollingInProgress,
         ),
         u.map(
           ([
@@ -61,14 +64,17 @@ export const followOutputSystem = u.system(
             followOutput,
             isAtBottom,
             scrolledToInitialItem,
+            scrollingInProgress,
           ]) => {
             let shouldFollow = didMount && scrolledToInitialItem;
             let followOutputBehavior: FollowOutputScalarType = 'auto';
 
             if (shouldFollow) {
+              // if scrolling to index is in progress,
+              // assume that a previous followOutput response is going
               followOutputBehavior = behaviorFromFollowOutput(
                 followOutput,
-                isAtBottom,
+                isAtBottom || scrollingInProgress,
               );
               shouldFollow = shouldFollow && !!followOutputBehavior;
             }
@@ -79,8 +85,19 @@ export const followOutputSystem = u.system(
         u.filter(({ shouldFollow }) => shouldFollow),
       ),
       ({ totalCount, followOutputBehavior }) => {
-        u.handleNext(listRefresh, () => {
-          scrollToBottom(totalCount, followOutputBehavior);
+        if (pendingScrollHandle) {
+          pendingScrollHandle();
+          pendingScrollHandle = null;
+        }
+
+        pendingScrollHandle = u.handleNext(listRefresh, () => {
+          u.getValue(log)(
+            'following output to ',
+            { totalCount },
+            LogLevel.DEBUG,
+          );
+          scrollToBottom(followOutputBehavior);
+          pendingScrollHandle = null;
         });
       },
     );
@@ -98,14 +115,20 @@ export const followOutputSystem = u.system(
         u.filter(({ refreshed }) => refreshed),
         u.withLatestFrom(followOutput, totalCount),
       ),
-      ([, followOutput, totalCount]) => {
+      ([, followOutput]) => {
         const cancel = u.handleNext(atBottomState, (state) => {
           if (
             followOutput &&
             !state.atBottom &&
-            state.notAtBottomBecause === 'SIZE_INCREASED'
+            state.notAtBottomBecause === 'SIZE_INCREASED' &&
+            !pendingScrollHandle
           ) {
-            scrollToBottom(totalCount, 'auto');
+            u.getValue(log)(
+              'scrolling to bottom due to increased size',
+              {},
+              LogLevel.DEBUG,
+            );
+            scrollToBottom('auto');
           }
         });
         setTimeout(cancel, 100);
@@ -113,17 +136,14 @@ export const followOutputSystem = u.system(
     );
 
     u.subscribe(
-      u.pipe(
-        u.combineLatest(u.duc(followOutput), atBottomState),
-        u.withLatestFrom(totalCount),
-      ),
-      ([[followOutput, state], totalCount]) => {
+      u.combineLatest(u.duc(followOutput), atBottomState),
+      ([followOutput, state]) => {
         if (
           followOutput &&
           !state.atBottom &&
           state.notAtBottomBecause === 'VIEWPORT_HEIGHT_DECREASING'
         ) {
-          scrollToBottom(totalCount, 'auto');
+          scrollToBottom('auto');
         }
       },
     );
@@ -136,5 +156,7 @@ export const followOutputSystem = u.system(
     scrollToIndexSystem,
     initialTopMostItemIndexSystem,
     propsReadySystem,
+    loggerSystem,
+    domIOSystem,
   ),
 );

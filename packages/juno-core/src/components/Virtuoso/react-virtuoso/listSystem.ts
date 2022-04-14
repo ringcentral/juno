@@ -8,7 +8,9 @@ import { initialItemCountSystem } from './initialItemCountSystem';
 import { initialScrollTopSystem } from './initialScrollTopSystem';
 import { initialTopMostItemIndexSystem } from './initialTopMostItemIndexSystem';
 import { listStateSystem } from './listStateSystem';
+import { loggerSystem } from './loggerSystem';
 import { propsReadySystem } from './propsReadySystem';
+import { scrollIntoViewSystem } from './scrollIntoViewSystem';
 import { scrollSeekSystem } from './scrollSeekSystem';
 import { scrollToIndexSystem } from './scrollToIndexSystem';
 import { sizeRangeSystem } from './sizeRangeSystem';
@@ -30,6 +32,7 @@ const featureGroup1System = u.system(
     initialScrollTopSystem,
     alignToBottom,
     windowScroller,
+    scrollIntoView,
   ]) => {
     return {
       ...sizeRange,
@@ -40,6 +43,7 @@ const featureGroup1System = u.system(
       ...initialScrollTopSystem,
       ...alignToBottom,
       ...windowScroller,
+      ...scrollIntoView,
     };
   },
   u.tup(
@@ -51,6 +55,7 @@ const featureGroup1System = u.system(
     initialScrollTopSystem,
     alignToBottomSystem,
     windowScrollerSystem,
+    scrollIntoViewSystem,
   ),
 );
 
@@ -66,6 +71,7 @@ export const listSystem = u.system(
       data,
       firstItemIndex,
       groupIndices,
+      statefulTotalCount,
     },
     { initialTopMostItemIndex, scrolledToInitialItem },
     domIO,
@@ -76,6 +82,7 @@ export const listSystem = u.system(
     { topItemCount },
     { groupCounts },
     featureGroup1,
+    log,
   ]) => {
     u.connect(flags.rangeChanged, featureGroup1.scrollSeekRangeChanged);
     u.connect(
@@ -99,6 +106,7 @@ export const listSystem = u.system(
       ...followOutput,
 
       // output
+      statefulTotalCount,
       listState,
       scrollToIndex,
       trackItemSizes,
@@ -110,6 +118,7 @@ export const listSystem = u.system(
       // the bag of IO from featureGroup1System
       ...featureGroup1,
       ...domIO,
+      ...log,
     };
   },
   u.tup(
@@ -123,5 +132,6 @@ export const listSystem = u.system(
     topItemCountSystem,
     groupedListSystem,
     featureGroup1System,
+    loggerSystem,
   ),
 );

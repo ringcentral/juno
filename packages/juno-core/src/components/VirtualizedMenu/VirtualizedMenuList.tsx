@@ -1,5 +1,6 @@
 import React, {
   ComponentProps,
+  ComponentType,
   forwardRef,
   ReactElement,
   useImperativeHandle,
@@ -292,8 +293,12 @@ const _RcVirtualizedMenuList = forwardRef<any, RcVirtualizedMenuListProps>(
 
     const components = useMemo<Components>(
       () => ({
-        Header: disablePadding ? undefined : StyledMenuListPadding,
-        Footer: disablePadding ? undefined : StyledMenuListPadding,
+        Header: disablePadding
+          ? undefined
+          : (StyledMenuListPadding as ComponentType),
+        Footer: disablePadding
+          ? undefined
+          : (StyledMenuListPadding as ComponentType),
         List: React.forwardRef(({ children, ...listRest }, listRef) => {
           const toRef = useForkRef(handleRef, listRef);
 

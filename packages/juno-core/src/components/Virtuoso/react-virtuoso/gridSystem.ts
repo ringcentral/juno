@@ -51,11 +51,7 @@ const PROBE_GRID_STATE: GridState = {
   itemWidth: 0,
 };
 
-const { ceil, floor, min, max } = Math;
-
-function hackFloor(val: number) {
-  return ceil(val) - val < 0.03 ? ceil(val) : floor(val);
-}
+const { round, ceil, floor, min, max } = Math;
 
 function buildItems(startIndex: number, endIndex: number) {
   return Array.from({ length: endIndex - startIndex + 1 }).map(
@@ -71,11 +67,18 @@ export const gridSystem = u.system(
       scrollBy,
       scrollTo,
       smoothScrollTargetReached,
+      scrollContainerState,
     },
     stateFlags,
     scrollSeek,
     { propsReady, didMount },
-    { windowViewportRect, windowScrollTo, useWindowScroll, windowScrollTop },
+    {
+      windowViewportRect,
+      windowScrollTo,
+      useWindowScroll,
+      customScrollParent,
+      windowScrollContainerState,
+    },
   ]) => {
     const totalCount = u.statefulStream(0);
     const initialItemCount = u.statefulStream(0);
@@ -89,6 +92,8 @@ export const gridSystem = u.system(
       width: 0,
     });
     const scrollToIndex = u.stream<IndexLocation>();
+    const scrollHeight = u.stream<number>();
+    const deviation = u.statefulStream(0);
 
     u.connect(
       u.pipe(
@@ -134,7 +139,8 @@ export const gridSystem = u.system(
             return PROBE_GRID_STATE;
           }
 
-          const perRow = hackFloor(viewportWidth / itemWidth);
+          const perRow = itemsPerRow(viewportWidth, itemWidth);
+
           let startIndex = perRow * floor(startOffset / itemHeight);
           let endIndex = perRow * ceil(endOffset / itemHeight) - 1;
           endIndex = min(totalCount - 1, endIndex);
@@ -178,17 +184,6 @@ export const gridSystem = u.system(
         u.distinctUntilChanged(tupleComparator),
       ),
       listBoundary,
-    );
-
-    u.connect(
-      u.pipe(
-        listBoundary,
-        u.withLatestFrom(gridState),
-        u.map(([[, bottom], { offsetBottom }]) => {
-          return { bottom, offsetBottom };
-        }),
-      ),
-      stateFlags.listStateListener,
     );
 
     const endReached = u.streamFromEmitter(
@@ -240,15 +235,18 @@ export const gridSystem = u.system(
           const normalLocation = normalizeIndexLocation(location);
           const { align, behavior, offset } = normalLocation;
           let index = normalLocation.index;
+          if (index === 'LAST') {
+            index = totalCount - 1;
+          }
 
-          index = Math.max(0, index, Math.min(totalCount - 1, index));
+          index = max(0, index, min(totalCount - 1, index));
 
           let top = itemTop(viewport, item, index);
 
           if (align === 'end') {
-            top = Math.round(top - viewport.height + item.height);
+            top = round(top - viewport.height + item.height);
           } else if (align === 'center') {
-            top = Math.round(top - viewport.height / 2 + item.height / 2);
+            top = round(top - viewport.height / 2 + item.height / 2);
           }
 
           if (offset) {
@@ -288,6 +286,7 @@ export const gridSystem = u.system(
       viewportDimensions,
       itemDimensions,
       scrollTop,
+      scrollHeight,
       overscan,
       scrollBy,
       scrollTo,
@@ -296,7 +295,10 @@ export const gridSystem = u.system(
       windowViewportRect,
       windowScrollTo,
       useWindowScroll,
-      windowScrollTop,
+      customScrollParent,
+      windowScrollContainerState,
+      deviation,
+      scrollContainerState,
       initialItemCount,
       ...scrollSeek,
 
@@ -346,5 +348,5 @@ function itemTop(
 }
 
 function itemsPerRow(viewportWidth: number, itemWidth: number) {
-  return hackFloor(viewportWidth / itemWidth);
+  return max(1, floor(viewportWidth / itemWidth));
 }

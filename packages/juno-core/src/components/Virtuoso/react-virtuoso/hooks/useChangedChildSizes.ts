@@ -1,14 +1,51 @@
 /* eslint-disable no-continue */
+import { useRcPortalWindowContext } from '../../../../foundation';
+import { Log, LogLevel } from '../loggerSystem';
 import { SizeFunction, SizeRange } from '../sizeSystem';
 import useSize from './useSize';
 
-export default function useChangedChildSizes(
+export default function useChangedListContentsSizes(
   callback: (ranges: SizeRange[]) => void,
   itemSize: SizeFunction,
   enabled: boolean,
+  scrollContainerStateCallback: (state: [number, number]) => void,
+  log: Log,
+  customScrollParent?: HTMLElement,
 ) {
+  const { externalWindow = window } = useRcPortalWindowContext();
+
   return useSize((el: HTMLElement) => {
-    const ranges = getChangedChildSizes(el.children, itemSize, 'offsetHeight');
+    const ranges = getChangedChildSizes(
+      el.children,
+      itemSize,
+      'offsetHeight',
+      log,
+    );
+    let scrollableElement = el.parentElement!;
+
+    while (!scrollableElement.dataset['virtuosoScroller']) {
+      scrollableElement = scrollableElement.parentElement!;
+    }
+
+    const scrollTop = customScrollParent
+      ? customScrollParent.scrollTop
+      : // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      (scrollableElement.firstElementChild! as HTMLDivElement).dataset[
+          'viewportType'
+        ]! === 'window'
+      ? externalWindow.pageYOffset ||
+        externalWindow.document.documentElement.scrollTop
+      : scrollableElement.scrollTop;
+
+    customScrollParent
+      ? scrollContainerStateCallback([
+          Math.max(scrollTop, 0),
+          customScrollParent.scrollHeight,
+        ])
+      : scrollContainerStateCallback([
+          Math.max(scrollTop, 0),
+          scrollableElement.scrollHeight,
+        ]);
     if (ranges !== null) {
       callback(ranges);
     }
@@ -19,6 +56,7 @@ function getChangedChildSizes(
   children: HTMLCollection,
   itemSize: SizeFunction,
   field: 'offsetHeight' | 'offsetWidth',
+  log: Log,
 ) {
   const length = children.length;
 
@@ -35,12 +73,17 @@ function getChangedChildSizes(
       continue;
     }
 
-    const index = parseInt(child.dataset.index!, 10);
-    const knownSize = parseInt(child.dataset.knownSize!, 10);
+    // eslint-disable-next-line radix
+    const index = parseInt(child.dataset.index!);
+    const knownSize = parseFloat(child.dataset.knownSize!);
     const size = itemSize(child, field);
 
     if (size === 0) {
-      throw new Error('Zero-sized element, this should not happen');
+      log(
+        'Zero-sized element, this should not happen',
+        { child },
+        LogLevel.ERROR,
+      );
     }
 
     if (size === knownSize) {

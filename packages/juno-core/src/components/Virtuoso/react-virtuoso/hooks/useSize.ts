@@ -1,9 +1,5 @@
 import { useRef } from 'react';
-
-import {
-  getResizeObserver,
-  useRcPortalWindowContext,
-} from '../../../../foundation';
+import { useRcPortalWindowContext } from '../../../../foundation';
 
 export type CallbackRefParam = HTMLElement | null;
 
@@ -11,37 +7,38 @@ export function useSizeWithElRef(
   callback: (e: HTMLElement) => void,
   enabled = true,
 ) {
-  const { externalWindow } = useRcPortalWindowContext();
-
   const ref = useRef<CallbackRefParam>(null);
-  const observer = getResizeObserver((entries: ResizeObserverEntry[]) => {
-    const element = entries[0].target as HTMLElement;
-    // Revert the RAF below - it causes a blink in the upward scrolling fix
-    // See e2e/chat example
-    // Avoid Resize loop limit exceeded error
-    // https://github.com/edunad/react-virtuoso/commit/581d4558f2994adea375291b76fe59605556c08f
-    // requestAnimationFrame(() => {
-    //
-    // if display: none, the element won't have an offsetParent
-    // measuring it at this mode is not going to work
-    // https://stackoverflow.com/a/21696585/1009797
-    if (element.offsetParent !== null) {
-      callback(element);
-    }
-    // })
-  }, externalWindow);
+  const { externalWindow = window } = useRcPortalWindowContext();
 
-  const callbackRef = (elRef: CallbackRefParam) => {
-    if (elRef && enabled) {
-      observer.observe(elRef);
-      ref.current = elRef;
-    } else {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-      ref.current = null;
-    }
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  let callbackRef = (_el: CallbackRefParam) => {
+    // eslint-disable-next-line no-void
+    void 0;
   };
+
+  // TODO: fix after upgrade ts
+  if (typeof externalWindow['ResizeObserver'] !== 'undefined') {
+    const observer = new externalWindow['ResizeObserver'](
+      (entries: ResizeObserverEntry[]) => {
+        const element = entries[0].target as HTMLElement;
+        if (element.offsetParent !== null) {
+          callback(element);
+        }
+      },
+    );
+
+    callbackRef = (elRef: CallbackRefParam) => {
+      if (elRef && enabled) {
+        observer.observe(elRef);
+        ref.current = elRef;
+      } else {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+        ref.current = null;
+      }
+    };
+  }
 
   return { ref, callbackRef };
 }

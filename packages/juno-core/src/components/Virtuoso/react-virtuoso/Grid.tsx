@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import * as React from 'react';
 import { createElement, FC } from 'react';
 
@@ -8,8 +9,8 @@ import { gridSystem } from './gridSystem';
 import useSize from './hooks/useSize';
 import useWindowViewportRectRef from './hooks/useWindowViewportRect';
 import {
-  ComputeItemKey,
   GridComponents,
+  GridComputeItemKey,
   GridItemContent,
   GridRootProps,
 } from './interfaces';
@@ -17,18 +18,20 @@ import {
   addDeprecatedAlias,
   buildScroller,
   buildWindowScroller,
+  contextPropIfNotDomElement,
   identity,
   viewportStyle,
 } from './List';
 
 const gridComponentPropsSystem = u.system(() => {
-  const itemContent = u.statefulStream<GridItemContent>(
+  const itemContent = u.statefulStream<GridItemContent<any>>(
     (index) => `Item ${index}`,
   );
   const components = u.statefulStream<GridComponents>({});
+  const context = u.statefulStream<unknown>(null);
   const itemClassName = u.statefulStream('virtuoso-grid-item');
   const listClassName = u.statefulStream('virtuoso-grid-list');
-  const computeItemKey = u.statefulStream<ComputeItemKey>(identity);
+  const computeItemKey = u.statefulStream<GridComputeItemKey>(identity);
   const scrollerRef = u.statefulStream<(ref: HTMLElement | null) => void>(
     u.noop,
   );
@@ -48,6 +51,7 @@ const gridComponentPropsSystem = u.system(() => {
   };
 
   return {
+    context,
     itemContent,
     components,
     computeItemKey,
@@ -84,7 +88,6 @@ const combinedSystem = u.system(([gridSystem, gridComponentPropsSystem]) => {
         stream,
         u.withLatestFrom(gridComponentPropsSystem.components),
         u.map(([comp, components]) => {
-          // eslint-disable-next-line no-console
           console.warn(
             `react-virtuoso: ${propName} property is deprecated. Pass components.${componentName} instead.`,
           );
@@ -97,7 +100,6 @@ const combinedSystem = u.system(([gridSystem, gridComponentPropsSystem]) => {
   }
 
   u.subscribe(deprecatedProps.scrollSeek, ({ placeholder, ...config }) => {
-    // eslint-disable-next-line no-console
     console.warn(
       `react-virtuoso: scrollSeek property is deprecated. Pass scrollSeekConfiguration and specify the placeholder in components.ScrollSeekPlaceholder instead.`,
     );
@@ -135,19 +137,19 @@ const GridItems: FC = React.memo(function GridItems() {
   const itemContent = useEmitterValue('itemContent');
   const computeItemKey = useEmitterValue('computeItemKey');
   const isSeeking = useEmitterValue('isSeeking');
+  const scrollHeightCallback = usePublisher('scrollHeight');
   const ItemComponent = useEmitterValue('ItemComponent')!;
   const ListComponent = useEmitterValue('ListComponent')!;
   const ScrollSeekPlaceholder = useEmitterValue('ScrollSeekPlaceholder')!;
-
+  const context = useEmitterValue('context');
   const itemDimensions = usePublisher('itemDimensions');
 
   const listRef = useSize((el) => {
+    const scrollHeight = el.parentElement!.parentElement!.scrollHeight;
+    scrollHeightCallback(scrollHeight);
     const firstItem = el.firstChild as HTMLElement;
     if (firstItem) {
-      itemDimensions({
-        width: firstItem.offsetWidth,
-        height: firstItem.offsetHeight,
-      });
+      itemDimensions(firstItem.getBoundingClientRect());
     }
   });
 
@@ -156,6 +158,7 @@ const GridItems: FC = React.memo(function GridItems() {
     {
       ref: listRef,
       className: listClassName,
+      ...contextPropIfNotDomElement(ListComponent, context),
       style: {
         paddingTop: gridState.offsetTop,
         paddingBottom: gridState.offsetBottom,
@@ -166,12 +169,20 @@ const GridItems: FC = React.memo(function GridItems() {
       return isSeeking
         ? createElement(ScrollSeekPlaceholder, {
             key,
-            style: { height: gridState.itemHeight, width: gridState.itemWidth },
+            ...contextPropIfNotDomElement(ScrollSeekPlaceholder, context),
+            index: item.index,
+            height: gridState.itemHeight,
+            width: gridState.itemWidth,
           })
         : createElement(
             ItemComponent,
-            { className: itemClassName, 'data-index': item.index, key },
-            itemContent(item.index),
+            {
+              ...contextPropIfNotDomElement(ItemComponent, context),
+              className: itemClassName,
+              'data-index': item.index,
+              key,
+            },
+            itemContent(item.index, context),
           );
     }),
   );
@@ -181,10 +192,7 @@ const Viewport: FC = ({ children }) => {
   const viewportDimensions = usePublisher('viewportDimensions');
 
   const viewportRef = useSize((el) => {
-    viewportDimensions({
-      width: el.offsetWidth,
-      height: el.offsetHeight,
-    });
+    viewportDimensions(el.getBoundingClientRect());
   });
 
   return (
@@ -196,7 +204,11 @@ const Viewport: FC = ({ children }) => {
 
 const WindowViewport: FC = ({ children }) => {
   const windowViewportRect = usePublisher('windowViewportRect');
-  const viewportRef = useWindowViewportRectRef(windowViewportRect);
+  const customScrollParent = useEmitterValue('customScrollParent');
+  const viewportRef = useWindowViewportRectRef(
+    windowViewportRect,
+    customScrollParent,
+  );
 
   return (
     <div ref={viewportRef} style={viewportStyle}>
@@ -207,8 +219,11 @@ const WindowViewport: FC = ({ children }) => {
 
 const GridRoot: FC<GridRootProps> = React.memo(function GridRoot({ ...props }) {
   const useWindowScroll = useEmitterValue('useWindowScroll');
-  const TheScroller = useWindowScroll ? WindowScroller : Scroller;
-  const TheViewport = useWindowScroll ? WindowViewport : Viewport;
+  const customScrollParent = useEmitterValue('customScrollParent');
+  const TheScroller =
+    customScrollParent || useWindowScroll ? WindowScroller : Scroller;
+  const TheViewport =
+    customScrollParent || useWindowScroll ? WindowViewport : Viewport;
 
   return (
     <TheScroller {...props}>
@@ -238,6 +253,7 @@ const {
       listClassName: 'listClassName',
       itemClassName: 'itemClassName',
       useWindowScroll: 'useWindowScroll',
+      customScrollParent: 'customScrollParent',
       scrollerRef: 'scrollerRef',
 
       // deprecated

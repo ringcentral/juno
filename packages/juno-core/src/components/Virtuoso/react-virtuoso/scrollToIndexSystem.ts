@@ -4,6 +4,7 @@ import * as u from '@virtuoso.dev/urx';
 import { findMaxKeyValue } from './AATree';
 import { domIOSystem } from './domIOSystem';
 import { IndexLocationWithAlign } from './interfaces';
+import { loggerSystem, LogLevel } from './loggerSystem';
 import { offsetOf, originalIndexFromItemIndex, sizeSystem } from './sizeSystem';
 
 export type IndexLocation = number | IndexLocationWithAlign;
@@ -39,6 +40,7 @@ export const scrollToIndexSystem = u.system(
       headerHeight,
       footerHeight,
     },
+    { log },
   ]) => {
     const scrollToIndex = u.stream<IndexLocation>();
     const topListHeight = u.statefulStream(0);
@@ -47,7 +49,7 @@ export const scrollToIndexSystem = u.system(
     let cleartTimeoutRef: any = null;
     let unsubscribeListRefresh: any = null;
 
-    const cleanup = () => {
+    function cleanup() {
       if (unsubscribeNextListRefresh) {
         unsubscribeNextListRefresh();
         unsubscribeNextListRefresh = null;
@@ -63,7 +65,7 @@ export const scrollToIndexSystem = u.system(
         cleartTimeoutRef = null;
       }
       u.publish(scrollingInProgress, false);
-    };
+    }
 
     u.connect(
       u.pipe(
@@ -75,6 +77,7 @@ export const scrollToIndexSystem = u.system(
           topListHeight,
           headerHeight,
           footerHeight,
+          log,
         ),
         u.map(
           ([
@@ -85,11 +88,15 @@ export const scrollToIndexSystem = u.system(
             topListHeight,
             headerHeight,
             footerHeight,
+            log,
           ]) => {
             const normalLocation = normalizeIndexLocation(location);
             const { align, behavior, offset } = normalLocation;
             const lastIndex = totalCount - 1;
             let index = normalLocation.index;
+            if (index === 'LAST') {
+              index = lastIndex;
+            }
 
             index = originalIndexFromItemIndex(index, sizes);
 
@@ -97,20 +104,18 @@ export const scrollToIndexSystem = u.system(
 
             let top = offsetOf(index, sizes.offsetTree) + headerHeight;
             if (align === 'end') {
-              top = Math.round(
+              top =
                 top -
-                  viewportHeight +
-                  findMaxKeyValue(sizes.sizeTree, index)[1]!,
-              );
+                viewportHeight +
+                findMaxKeyValue(sizes.sizeTree, index)[1]!;
               if (index === lastIndex) {
                 top += footerHeight;
               }
             } else if (align === 'center') {
-              top = Math.round(
+              top =
                 top -
-                  viewportHeight / 2 +
-                  findMaxKeyValue(sizes.sizeTree, index)[1]! / 2,
-              );
+                viewportHeight / 2 +
+                findMaxKeyValue(sizes.sizeTree, index)[1]! / 2;
             } else {
               top -= topListHeight;
             }
@@ -122,7 +127,14 @@ export const scrollToIndexSystem = u.system(
             const retry = (listChanged: boolean) => {
               cleanup();
               if (listChanged) {
+                log('retrying to scroll to', { location }, LogLevel.DEBUG);
                 u.publish(scrollToIndex, location);
+              } else {
+                log(
+                  'list did not change, scroll successful',
+                  {},
+                  LogLevel.DEBUG,
+                );
               }
             };
 
@@ -141,7 +153,10 @@ export const scrollToIndexSystem = u.system(
                 },
               );
             } else {
-              unsubscribeNextListRefresh = u.handleNext(listRefresh, retry);
+              unsubscribeNextListRefresh = u.handleNext(
+                u.pipe(listRefresh, watchChangesFor(50)),
+                retry,
+              );
             }
 
             // if the scroll jump is too small, the list won't get rerendered.
@@ -151,6 +166,11 @@ export const scrollToIndexSystem = u.system(
             }, 1200);
 
             u.publish(scrollingInProgress, true);
+            log(
+              'scrolling from index to',
+              { index, top, behavior },
+              LogLevel.DEBUG,
+            );
             return { top, behavior };
           },
         ),
@@ -163,6 +183,20 @@ export const scrollToIndexSystem = u.system(
       topListHeight,
     };
   },
-  u.tup(sizeSystem, domIOSystem),
+  u.tup(sizeSystem, domIOSystem, loggerSystem),
   { singleton: true },
 );
+
+function watchChangesFor(limit: number): u.Operator<boolean> {
+  return (done) => {
+    const timeoutRef = setTimeout(() => {
+      done(false);
+    }, limit);
+    return (value) => {
+      if (value) {
+        done(true);
+        clearTimeout(timeoutRef);
+      }
+    };
+  };
+}

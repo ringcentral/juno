@@ -3,24 +3,39 @@ import * as u from '@virtuoso.dev/urx';
 import { empty } from './AATree';
 import { domIOSystem } from './domIOSystem';
 import { propsReadySystem } from './propsReadySystem';
-import { scrollToIndexSystem } from './scrollToIndexSystem';
+import { IndexLocation, scrollToIndexSystem } from './scrollToIndexSystem';
 import { sizeSystem } from './sizeSystem';
+
+export function getInitialTopMostItemIndexNumber(
+  location: IndexLocation,
+  totalCount: number,
+): number {
+  const lastIndex = totalCount - 1;
+  const index =
+    typeof location === 'number'
+      ? location
+      : location.index === 'LAST'
+      ? lastIndex
+      : location.index;
+  return index;
+}
 
 export const initialTopMostItemIndexSystem = u.system(
   ([
-    { sizes, listRefresh },
+    { sizes, listRefresh, defaultItemSize },
     { scrollTop },
     { scrollToIndex },
     { didMount },
   ]) => {
     const scrolledToInitialItem = u.statefulStream(true);
-    const initialTopMostItemIndex = u.statefulStream(0);
+    const initialTopMostItemIndex = u.statefulStream<IndexLocation>(0);
 
     u.connect(
       u.pipe(
         didMount,
         u.withLatestFrom(initialTopMostItemIndex),
-        u.filter(([, index]) => index !== 0),
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        u.filter(([, location]) => !!location),
         u.mapTo(false),
       ),
       scrolledToInitialItem,
@@ -28,19 +43,31 @@ export const initialTopMostItemIndexSystem = u.system(
 
     u.subscribe(
       u.pipe(
-        listRefresh,
-        u.withLatestFrom(scrolledToInitialItem, sizes),
-        u.filter(([, scrolledToInitialItem, { sizeTree }]) => {
-          return !empty(sizeTree) && !scrolledToInitialItem;
-        }),
+        u.combineLatest(listRefresh, didMount),
+        u.withLatestFrom(scrolledToInitialItem, sizes, defaultItemSize),
+        u.filter(
+          ([
+            [, didMount],
+            scrolledToInitialItem,
+            { sizeTree },
+            defaultItemSize,
+          ]) => {
+            return (
+              didMount &&
+              (!empty(sizeTree) || defaultItemSize !== undefined) &&
+              !scrolledToInitialItem
+            );
+          },
+        ),
         u.withLatestFrom(initialTopMostItemIndex),
       ),
       ([, initialTopMostItemIndex]) => {
-        u.handleNext(scrollTop, () => {
-          u.publish(scrolledToInitialItem, true);
+        setTimeout(() => {
+          u.handleNext(scrollTop, () => {
+            u.publish(scrolledToInitialItem, true);
+          });
+          u.publish(scrollToIndex, initialTopMostItemIndex);
         });
-
-        u.publish(scrollToIndex, initialTopMostItemIndex);
       },
     );
 
