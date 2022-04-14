@@ -13,6 +13,7 @@ import { RcTableCellProps } from '../TableCell';
 import { RcTableCellClasses } from '../utils';
 
 const SizeMap: Record<Exclude<RcTableSize, 'auto'>, number> = {
+  xlarge: 64,
   large: 56,
   medium: 48,
   small: 40,
