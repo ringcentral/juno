@@ -8663,7 +8663,7 @@ __export(src_exports2, {
   DEFAULT_KEY_TO_CHIPS: () => DEFAULT_KEY_TO_CHIPS,
   DEFAULT_LIMIT_CHIPS: () => DEFAULT_LIMIT_CHIPS,
   DialPadButton: () => DialPadButton,
-  GlobalFixSafariStyle: () => GlobalFixSafariStyle,
+  GlobalFixWebKitStyle: () => GlobalFixWebKitStyle,
   GroupedVirtuoso: () => GroupedVirtuoso,
   HALF_DAY_HOURS: () => HALF_DAY_HOURS,
   HOUR_MINUTES: () => HOUR_MINUTES,
@@ -8887,7 +8887,7 @@ __export(src_exports2, {
   elevationOptions: () => elevationOptions,
   ellipsis: () => ellipsis,
   fakeBorder: () => fakeBorder,
-  fixSafariTransitionStyle: () => fixSafariTransitionStyle,
+  fixWebKitTransitionStyle: () => fixWebKitTransitionStyle,
   flexCenterStyle: () => flexCenterStyle,
   flexWidth: () => flexWidth,
   focusVisible: () => focusVisible,
@@ -8909,7 +8909,6 @@ __export(src_exports2, {
   getRecoupHour: () => getRecoupHour,
   getRefElement: () => getRefElement,
   getResizeObserver: () => getResizeObserver,
-  getSafari154Theme: () => getSafari154Theme,
   getScrollbarSize: () => getScrollbarSize2,
   getSelectionPosition: () => getSelectionPosition,
   getTabId: () => getTabId,
@@ -8917,6 +8916,7 @@ __export(src_exports2, {
   getTimestampFromDate: () => getTimestampFromDate,
   getTimestampFromHourAndMin: () => getTimestampFromHourAndMin,
   getTransitionProps: () => getTransitionProps2,
+  getWebKit154Theme: () => getWebKit154Theme,
   globalListenerEventMap: () => globalListenerEventMap,
   hasValue: () => hasValue2,
   iconList: () => juno_icon_exports,
@@ -8928,8 +8928,8 @@ __export(src_exports2, {
   isOutOfRange: () => isOutOfRange,
   isRcElement: () => isRcElement,
   isRef: () => isRef,
-  isSafari154: () => isSafari154,
   isUrl: () => isUrl,
+  isWebKit154: () => isWebKit154,
   keyframes: () => keyframes,
   lastMinute: () => lastMinute,
   lightAlpha: () => lightAlpha,
@@ -8937,6 +8937,7 @@ __export(src_exports2, {
   lineClamp: () => lineClamp,
   logInDev: () => logInDev,
   minuteSource: () => minuteSource,
+  modifyVlScrollerStyle: () => modifyVlScrollerStyle,
   moveIndexInTwoDimension: () => moveIndexInTwoDimension,
   nonStyleButton: () => nonStyleButton,
   nonTouchHoverMedia: () => nonTouchHoverMedia,
@@ -47303,7 +47304,7 @@ __export(juno_core_exports, {
   DEFAULT_KEY_TO_CHIPS: () => DEFAULT_KEY_TO_CHIPS,
   DEFAULT_LIMIT_CHIPS: () => DEFAULT_LIMIT_CHIPS,
   DialPadButton: () => DialPadButton,
-  GlobalFixSafariStyle: () => GlobalFixSafariStyle,
+  GlobalFixWebKitStyle: () => GlobalFixWebKitStyle,
   GroupedVirtuoso: () => GroupedVirtuoso,
   HALF_DAY_HOURS: () => HALF_DAY_HOURS,
   HOUR_MINUTES: () => HOUR_MINUTES,
@@ -47522,7 +47523,7 @@ __export(juno_core_exports, {
   downshiftComponentName: () => downshiftComponentName,
   ellipsis: () => ellipsis,
   fakeBorder: () => fakeBorder,
-  fixSafariTransitionStyle: () => fixSafariTransitionStyle,
+  fixWebKitTransitionStyle: () => fixWebKitTransitionStyle,
   flexCenterStyle: () => flexCenterStyle,
   flexWidth: () => flexWidth,
   focusVisible: () => focusVisible,
@@ -47544,7 +47545,6 @@ __export(juno_core_exports, {
   getRecoupHour: () => getRecoupHour,
   getRefElement: () => getRefElement,
   getResizeObserver: () => getResizeObserver,
-  getSafari154Theme: () => getSafari154Theme,
   getScrollbarSize: () => getScrollbarSize2,
   getSelectionPosition: () => getSelectionPosition,
   getTabId: () => getTabId,
@@ -47552,6 +47552,7 @@ __export(juno_core_exports, {
   getTimestampFromDate: () => getTimestampFromDate,
   getTimestampFromHourAndMin: () => getTimestampFromHourAndMin,
   getTransitionProps: () => getTransitionProps2,
+  getWebKit154Theme: () => getWebKit154Theme,
   globalListenerEventMap: () => globalListenerEventMap,
   hasValue: () => hasValue2,
   isClick: () => isClick,
@@ -47561,8 +47562,8 @@ __export(juno_core_exports, {
   isOutOfRange: () => isOutOfRange,
   isRcElement: () => isRcElement,
   isRef: () => isRef,
-  isSafari154: () => isSafari154,
   isUrl: () => isUrl,
+  isWebKit154: () => isWebKit154,
   keyframes: () => keyframes,
   lastMinute: () => lastMinute,
   lightAlpha: () => lightAlpha,
@@ -47570,6 +47571,7 @@ __export(juno_core_exports, {
   lineClamp: () => lineClamp,
   logInDev: () => logInDev,
   minuteSource: () => minuteSource,
+  modifyVlScrollerStyle: () => modifyVlScrollerStyle,
   moveIndexInTwoDimension: () => moveIndexInTwoDimension,
   nonStyleButton: () => nonStyleButton,
   nonTouchHoverMedia: () => nonTouchHoverMedia,
@@ -47688,7 +47690,7 @@ __export(src_exports, {
   DEFAULT_KEY_TO_CHIPS: () => DEFAULT_KEY_TO_CHIPS,
   DEFAULT_LIMIT_CHIPS: () => DEFAULT_LIMIT_CHIPS,
   DialPadButton: () => DialPadButton,
-  GlobalFixSafariStyle: () => GlobalFixSafariStyle,
+  GlobalFixWebKitStyle: () => GlobalFixWebKitStyle,
   GroupedVirtuoso: () => GroupedVirtuoso,
   HALF_DAY_HOURS: () => HALF_DAY_HOURS,
   HOUR_MINUTES: () => HOUR_MINUTES,
@@ -47907,7 +47909,7 @@ __export(src_exports, {
   downshiftComponentName: () => downshiftComponentName,
   ellipsis: () => ellipsis,
   fakeBorder: () => fakeBorder,
-  fixSafariTransitionStyle: () => fixSafariTransitionStyle,
+  fixWebKitTransitionStyle: () => fixWebKitTransitionStyle,
   flexCenterStyle: () => flexCenterStyle,
   flexWidth: () => flexWidth,
   focusVisible: () => focusVisible,
@@ -47929,7 +47931,6 @@ __export(src_exports, {
   getRecoupHour: () => getRecoupHour,
   getRefElement: () => getRefElement,
   getResizeObserver: () => getResizeObserver,
-  getSafari154Theme: () => getSafari154Theme,
   getScrollbarSize: () => getScrollbarSize2,
   getSelectionPosition: () => getSelectionPosition,
   getTabId: () => getTabId,
@@ -47937,6 +47938,7 @@ __export(src_exports, {
   getTimestampFromDate: () => getTimestampFromDate,
   getTimestampFromHourAndMin: () => getTimestampFromHourAndMin,
   getTransitionProps: () => getTransitionProps2,
+  getWebKit154Theme: () => getWebKit154Theme,
   globalListenerEventMap: () => globalListenerEventMap,
   hasValue: () => hasValue2,
   isClick: () => isClick,
@@ -47946,8 +47948,8 @@ __export(src_exports, {
   isOutOfRange: () => isOutOfRange,
   isRcElement: () => isRcElement,
   isRef: () => isRef,
-  isSafari154: () => isSafari154,
   isUrl: () => isUrl,
+  isWebKit154: () => isWebKit154,
   keyframes: () => keyframes,
   lastMinute: () => lastMinute,
   lightAlpha: () => lightAlpha,
@@ -47955,6 +47957,7 @@ __export(src_exports, {
   lineClamp: () => lineClamp,
   logInDev: () => logInDev,
   minuteSource: () => minuteSource,
+  modifyVlScrollerStyle: () => modifyVlScrollerStyle,
   moveIndexInTwoDimension: () => moveIndexInTwoDimension,
   nonStyleButton: () => nonStyleButton,
   nonTouchHoverMedia: () => nonTouchHoverMedia,
@@ -48278,6 +48281,7 @@ __export(components_exports, {
   isOutOfRange: () => isOutOfRange,
   lastMinute: () => lastMinute,
   minuteSource: () => minuteSource,
+  modifyVlScrollerStyle: () => modifyVlScrollerStyle,
   pad: () => pad,
   parseNumber: () => parseNumber,
   parseNumberToString: () => parseNumberToString,
@@ -49744,39 +49748,39 @@ function mergeChildProps({
   };
 }
 
-// ../juno-core/src/foundation/isSafari154.ts
-var isSafari154 = typeof navigator !== "undefined" && (/^((?!chrome|android).)*safari/i.test(navigator.userAgent) || /(iPhone|iPad)/.test(navigator.userAgent)) && /15\.[4-9]/i.test(navigator.userAgent);
-var FixSafari154Classes = RcClasses(["paper"], "RcFixSafari154");
-var getSafari154Theme = (theme, enable) => {
-  if (enable ?? isSafari154) {
+// ../juno-core/src/foundation/isWebKit154.ts
+var isWebKit154 = typeof navigator !== "undefined" && /^((?!chrome|android).)*(safari|mobile)/i.test(navigator.userAgent) && /(os |version\/)15(.|_)[4-9]/i.test(navigator.userAgent);
+var FixWebKit154Classes = RcClasses(["paper"], "RcFixWebKit154");
+var getWebKit154Theme = (theme, enable) => {
+  if (enable ?? isWebKit154) {
     return combineProps({
       props: {
         MuiMenu: {
-          PopoverClasses: { paper: FixSafari154Classes.paper }
+          PopoverClasses: { paper: FixWebKit154Classes.paper }
         },
         RcVirtualizedMenu: {
-          PopoverClasses: { paper: FixSafari154Classes.paper }
+          PopoverClasses: { paper: FixWebKit154Classes.paper }
         },
         MuiPopover: {
-          PaperProps: { className: FixSafari154Classes.paper }
+          PaperProps: { className: FixWebKit154Classes.paper }
         },
         RcTooltip: {
           classes: {
-            tooltip: FixSafari154Classes.paper
+            tooltip: FixWebKit154Classes.paper
           }
         },
         RcGrow: {
-          className: FixSafari154Classes.paper
+          className: FixWebKit154Classes.paper
         }
       }
     }, theme);
   }
   return theme;
 };
-var fixSafariTransitionStyle = "all 159ms cubic-bezier(0.4, 0, 0.2, 1) 0ms";
-var GlobalFixSafariStyle = We`
-  .${FixSafari154Classes.paper} {
-    transition: ${fixSafariTransitionStyle} !important;
+var fixWebKitTransitionStyle = "all 159ms cubic-bezier(0.4, 0, 0.2, 1) 0ms";
+var GlobalFixWebKitStyle = We`
+  .${FixWebKit154Classes.paper} {
+    transition: ${fixWebKitTransitionStyle} !important;
   }
 `;
 
@@ -52339,16 +52343,16 @@ var NestedThemeContext = createContext9(false);
 var SubThemeProvider = ({
   theme: themeProp,
   children: children2,
-  fixSafari154: safari154Fix
+  fixWebKit154
 }) => {
   const parentTheme = RcUseTheme();
   const isHaveParentRcTheme = parentTheme.palette?.content?.brand;
-  const theme = getSafari154Theme(!themeProp && isHaveParentRcTheme ? parentTheme : createTheme_default2(themeProp), safari154Fix);
+  const theme = getWebKit154Theme(!themeProp && isHaveParentRcTheme ? parentTheme : createTheme_default2(themeProp), fixWebKit154);
   return /* @__PURE__ */ React562.createElement(ThemeProvider_default, {
     theme
   }, /* @__PURE__ */ React562.createElement(ThemeProvider2, {
     theme
-  }, /* @__PURE__ */ React562.createElement(React562.Fragment, null, (safari154Fix ?? isSafari154) && /* @__PURE__ */ React562.createElement(GlobalFixSafariStyle, null), children2)));
+  }, /* @__PURE__ */ React562.createElement(React562.Fragment, null, (fixWebKit154 ?? isWebKit154) && /* @__PURE__ */ React562.createElement(GlobalFixWebKitStyle, null), children2)));
 };
 var RootThemeProvider = (props) => {
   const { prefixGlobalClass, ...rest } = props;
@@ -74755,6 +74759,17 @@ function useHighlightScroll({
     itemsRendered: (e2) => renderedItemsRef.current = e2
   };
 }
+function modifyVlScrollerStyle(scrollElm, position4 = "absolute") {
+  if (scrollElm) {
+    scrollElm.style.transition = fixWebKitTransitionStyle;
+    if (position4) {
+      const viewPortElm = scrollElm.firstChild;
+      if (viewPortElm) {
+        viewPortElm.style.position = position4;
+      }
+    }
+  }
+}
 
 // ../juno-core/src/components/Downshift/SuggestionList/utils/SuggestionListUtils.ts
 var RcSuggestionListClasses = RcClasses(["root", "expanded", "toggle", "groupTitle"], "RcSuggestionList");
@@ -74974,7 +74989,10 @@ var SuggestionList = forwardRef589((inProps, ref2) => {
     itemContent,
     ...getMenuProps(),
     ...combineProps({
-      scrollerRef: scrollerRefFn,
+      scrollerRef: (scrollElm) => {
+        scrollerRefFn(scrollElm);
+        modifyVlScrollerStyle(scrollElm, position4);
+      },
       itemsRendered,
       totalListHeightChanged,
       style: style3,
@@ -78940,15 +78958,7 @@ var _RcVirtualizedMenuList = forwardRef614((inProps, ref2) => {
     tabIndex: -1,
     scrollerRef: (scrollElm) => {
       scrollerRefFn(scrollElm);
-      if (scrollElm) {
-        scrollElm.style.transition = fixSafariTransitionStyle;
-        if (position4) {
-          const viewPortElm = scrollElm.firstChild;
-          if (viewPortElm) {
-            viewPortElm.style.position = position4;
-          }
-        }
-      }
+      modifyVlScrollerStyle(scrollElm, position4);
       if (!isMountedRef.current) {
         onMounted();
       }
@@ -84237,7 +84247,7 @@ export {
   DEFAULT_KEY_TO_CHIPS,
   DEFAULT_LIMIT_CHIPS,
   DialPadButton,
-  GlobalFixSafariStyle,
+  GlobalFixWebKitStyle,
   GroupedVirtuoso,
   HALF_DAY_HOURS,
   HOUR_MINUTES,
@@ -84461,7 +84471,7 @@ export {
   elevationOptions,
   ellipsis,
   fakeBorder,
-  fixSafariTransitionStyle,
+  fixWebKitTransitionStyle,
   flexCenterStyle,
   flexWidth,
   focusVisible,
@@ -84483,7 +84493,6 @@ export {
   getRecoupHour,
   getRefElement,
   getResizeObserver,
-  getSafari154Theme,
   getScrollbarSize2 as getScrollbarSize,
   getSelectionPosition,
   getTabId,
@@ -84491,6 +84500,7 @@ export {
   getTimestampFromDate,
   getTimestampFromHourAndMin,
   getTransitionProps2 as getTransitionProps,
+  getWebKit154Theme,
   globalListenerEventMap,
   hasValue2 as hasValue,
   juno_icon_exports as iconList,
@@ -84502,8 +84512,8 @@ export {
   isOutOfRange,
   isRcElement,
   isRef,
-  isSafari154,
   isUrl,
+  isWebKit154,
   keyframes,
   lastMinute,
   lightAlpha,
@@ -84511,6 +84521,7 @@ export {
   lineClamp,
   logInDev,
   minuteSource,
+  modifyVlScrollerStyle,
   moveIndexInTwoDimension,
   nonStyleButton,
   nonTouchHoverMedia,
