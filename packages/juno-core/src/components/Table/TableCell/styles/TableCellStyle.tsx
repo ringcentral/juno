@@ -19,6 +19,8 @@ const SizeMap: Record<Exclude<RcTableSize, 'auto'>, number> = {
   small: 40,
 };
 
+const HeadTypography = typography('caption2');
+
 export const TableCellStyle: RcThemedStyled<RcTableCellProps, any> = (prop) => {
   const { size, sortDirection } = prop;
 
@@ -37,7 +39,7 @@ export const TableCellStyle: RcThemedStyled<RcTableCellProps, any> = (prop) => {
     }
 
     &.${RcTableCellClasses.head} {
-      ${typography('caption2')}
+      ${HeadTypography}
       height: 40px;
       border-bottom: 1px solid ${palette2('neutral', 'l02')};
       color: ${palette2('neutral', 'f05')};
@@ -60,6 +62,7 @@ export const TableCellStyle: RcThemedStyled<RcTableCellProps, any> = (prop) => {
       }
 
       .${RcTableCellClasses.sortButton} {
+        ${HeadTypography /** cover user agent stylesheet */}
         display: inline-flex;
         justify-content: flex-start;
         flex-direction: inherit;

@@ -13,8 +13,8 @@ import { RcTableCellClasses } from './utils';
 import { RcButtonBase } from '../../Buttons';
 import { RcIcon } from '../../Icon';
 import {
-  JumpToLatest as AscSortIcon,
-  JumpToUnread as DescSortIcon,
+  JumpToLatest as DescSortIcon,
+  JumpToUnread as AscSortIcon,
 } from '@ringcentral/juno-icon';
 import clsx from 'clsx';
 import { RcTableSize } from '../types';
@@ -84,7 +84,7 @@ const _RcTableCell = forwardRef<any, RcTableCellProps>((props, ref) => {
           <RcIcon
             size="small"
             className={classes.sortIcon}
-            symbol={sortDirection === 'asc' ? DescSortIcon : AscSortIcon}
+            symbol={sortDirection === 'asc' ? AscSortIcon : DescSortIcon}
           />
         </RcButtonBase>
       );
