@@ -23,6 +23,8 @@ Array [
 }
 
 <div
+    data-test-id="virtuoso-scroller"
+    data-virtuoso-scroller={true}
     onBlur={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
@@ -38,6 +40,7 @@ Array [
     tabIndex={-1}
   >
     <div
+      data-viewport-type="element"
       style={
         Object {
           "height": "100%",
@@ -54,6 +57,8 @@ Array [
       </div>
       <ul
         className="MuiList-root "
+        context={null}
+        data-test-id="virtuoso-item-list"
         role="menu"
         style={
           Object {

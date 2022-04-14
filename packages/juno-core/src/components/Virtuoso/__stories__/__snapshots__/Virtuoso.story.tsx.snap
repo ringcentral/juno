@@ -2,6 +2,8 @@
 
 exports[`Storyshots 🚀 Cleanup Components/Virtuoso Virtuoso Example 1`] = `
 <div
+  data-test-id="virtuoso-scroller"
+  data-virtuoso-scroller={true}
   style={
     Object {
       "WebkitOverflowScrolling": "touch",
@@ -14,6 +16,7 @@ exports[`Storyshots 🚀 Cleanup Components/Virtuoso Virtuoso Example 1`] = `
   tabIndex={0}
 >
   <div
+    data-viewport-type="element"
     style={
       Object {
         "height": "100%",
@@ -24,6 +27,7 @@ exports[`Storyshots 🚀 Cleanup Components/Virtuoso Virtuoso Example 1`] = `
     }
   >
     <div
+      data-test-id="virtuoso-item-list"
       style={
         Object {
           "boxSizing": "border-box",

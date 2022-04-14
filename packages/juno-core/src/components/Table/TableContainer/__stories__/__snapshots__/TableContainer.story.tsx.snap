@@ -42,6 +42,10 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
 }
 
 .c1.RcTableCell-head .RcTableCell-sortButton {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;

@@ -371,7 +371,7 @@ Array [
           </button>
         </div>
         <span
-          className="PrivateTabIndicator-root-336 PrivateTabIndicator-colorPrimary-337 MuiTabs-indicator RcTabs-indicator"
+          className="PrivateTabIndicator-root-340 PrivateTabIndicator-colorPrimary-341 MuiTabs-indicator RcTabs-indicator"
           style={
             Object {
               "left": 0,

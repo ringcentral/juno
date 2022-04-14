@@ -495,6 +495,8 @@ Array [
     <div
       aria-labelledby="suggestion-list-0-label"
       className="c0 RcSuggestionList-root"
+      data-test-id="virtuoso-scroller"
+      data-virtuoso-scroller={true}
       id="suggestion-list-0-menu"
       role="listbox"
       style={
@@ -509,6 +511,7 @@ Array [
       tabIndex={-1}
     >
       <div
+        data-viewport-type="element"
         style={
           Object {
             "height": "100%",
@@ -525,7 +528,9 @@ Array [
           />
         </div>
         <div
+          context={null}
           data-suggestion-list={true}
+          data-test-id="virtuoso-item-list"
           style={
             Object {
               "boxSizing": "border-box",
