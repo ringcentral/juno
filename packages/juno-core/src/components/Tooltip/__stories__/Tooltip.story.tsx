@@ -25,7 +25,7 @@ import {
   RcTypography,
   styled,
   useTheme,
-  isSafari154,
+  isWebKit154,
 } from '@ringcentral/juno';
 import { Add, Videocam } from '@ringcentral/juno-icon';
 import {
@@ -67,7 +67,7 @@ export const Tooltip: Story<TooltipProps> = ({ children, ...args }) => {
     <>
       {!isTestEnv && (
         <>
-          <Title>current is {isSafari154 ? '' : 'not'} safari 15.4~15.9</Title>
+          <Title>current is {isWebKit154 ? '' : 'not'} webkit 15.4~15.9</Title>
           <Title variant="body1">{navigator.userAgent}</Title>
         </>
       )}

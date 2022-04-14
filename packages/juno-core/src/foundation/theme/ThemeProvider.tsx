@@ -15,10 +15,10 @@ import {
 
 import { useResultRef } from '../hooks';
 import {
-  getSafari154Theme,
-  GlobalFixSafariStyle,
-  isSafari154,
-} from '../isSafari154';
+  getWebKit154Theme,
+  GlobalFixWebKitStyle,
+  isWebKit154,
+} from '../isWebKit154';
 import {
   ThemeProvider as StyledThemeProvider,
   useTheme,
@@ -35,7 +35,7 @@ type SubThemeProviderProps = {
    *
    * use for when your environment need that fix but userAgent not have safari
    */
-  fixSafari154?: boolean;
+  fixWebKit154?: boolean;
   children?: ReactNode;
 };
 
@@ -56,23 +56,23 @@ const NestedThemeContext = createContext(false);
 const SubThemeProvider: FunctionComponent<SubThemeProviderProps> = ({
   theme: themeProp,
   children,
-  fixSafari154: safari154Fix,
+  fixWebKit154,
 }) => {
   const parentTheme = useTheme();
 
   const isHaveParentRcTheme = parentTheme.palette?.content?.brand;
 
   // TODO: can be remove after safari fix that bug, maybe after v16
-  const theme = getSafari154Theme(
+  const theme = getWebKit154Theme(
     !themeProp && isHaveParentRcTheme ? parentTheme : createTheme(themeProp),
-    safari154Fix,
+    fixWebKit154,
   );
 
   return (
     <MuiThemeProvider theme={theme}>
       <StyledThemeProvider theme={theme}>
         <>
-          {(safari154Fix ?? isSafari154) && <GlobalFixSafariStyle />}
+          {(fixWebKit154 ?? isWebKit154) && <GlobalFixWebKitStyle />}
           {children}
         </>
       </StyledThemeProvider>
