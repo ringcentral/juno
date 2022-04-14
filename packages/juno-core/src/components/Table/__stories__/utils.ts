@@ -2,7 +2,13 @@ import { RcTableCellProps } from '../TableCell';
 
 let id = 0;
 
-const createData = (firstName: string, lastName: string, age: number) => {
+export type DataType = ReturnType<typeof createData>;
+
+export const createData = (
+  firstName: string,
+  lastName: string,
+  age: number,
+) => {
   id++;
   return { id, firstName, lastName, age };
 };
