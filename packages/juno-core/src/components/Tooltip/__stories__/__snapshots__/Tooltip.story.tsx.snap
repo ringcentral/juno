@@ -1,64 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots 🚀 Cleanup Components/Tooltip Tooltip 1`] = `
-Array [
-  .c0 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 32px;
-  color: #121212;
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-<h5
-    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
-    data-color="neutral.f06"
-    data-variant="headline1"
-  >
-    current is 
-    not
-     safari 15.4~15.9
-  </h5>,
-  .c0 {
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-<p
-    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
-    data-color="neutral.f06"
-    data-variant="body1"
-  >
-    Mozilla/5.0 (darwin) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.7.0
-  </p>,
-  .c0 {
+.c0 {
   text-transform: none;
   font-size: 0.9375rem;
   font-weight: 700;
@@ -134,39 +77,38 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-361"
+  className="MuiBox-root MuiBox-root-361"
+>
+  <button
+    aria-describedby={null}
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    title="I am arrow tip"
+    type="button"
   >
-    <button
-      aria-describedby={null}
-      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
-      disabled={false}
-      onBlur={[Function]}
-      onDragLeave={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      onMouseDown={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      onMouseUp={[Function]}
-      onTouchEnd={[Function]}
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
-      tabIndex={0}
-      title="I am arrow tip"
-      type="button"
+    <span
+      className="MuiButton-label"
     >
-      <span
-        className="MuiButton-label"
-      >
-        Tooltip when hover or keyboard focus
-      </span>
-      <span
-        className="MuiTouchRipple-root"
-      />
-    </button>
-  </div>,
-]
+      Tooltip when hover or keyboard focus
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>
+</div>
 `;
 
 exports[`Storyshots 🚀 Cleanup Components/Tooltip Tooltip Sizes 1`] = `null`;

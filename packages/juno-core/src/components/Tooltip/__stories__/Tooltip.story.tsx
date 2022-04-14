@@ -65,8 +65,12 @@ export const Tooltip: Story<TooltipProps> = ({ children, ...args }) => {
 
   return (
     <>
-      <Title>current is {isSafari154 ? '' : 'not'} safari 15.4~15.9</Title>
-      <Title variant="body1">{navigator.userAgent}</Title>
+      {!isTestEnv && (
+        <>
+          <Title>current is {isSafari154 ? '' : 'not'} safari 15.4~15.9</Title>
+          <Title variant="body1">{navigator.userAgent}</Title>
+        </>
+      )}
       <RcBox textAlign="center">
         <RcTooltip {...args}>
           <RcButton>Tooltip when hover or keyboard focus</RcButton>
