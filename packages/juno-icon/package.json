@@ -26,7 +26,7 @@
     "publish-npm": "cd dist && npm publish"
   },
   "devDependencies": {
-    "@svgr/cli": "5.5.0"
+    "@svgr/cli": "6.2.1"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",

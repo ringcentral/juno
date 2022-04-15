@@ -1,17 +1,17 @@
 const path = require('path');
 const fs = require('fs');
+// @ts-ignore
 const svgToComponentMapping = require('../devUtils/svgToComponentMapping.ts');
 
 const svgAssetsDirPath = path.join(process.cwd(), './assets');
 
-function template(
-  { template },
-  opts,
-  { imports, componentName, props, jsx, exports },
-) {
-  const filePath = path.parse(opts.state.filePath);
+function template(variables, arg) {
+  const { componentName, props, jsx, imports } = variables;
+  const { options, tpl } = arg;
+
+  const filePath = path.parse(options.state.filePath);
   const iconName = filePath.name;
-  const withoutSvgName = componentName.name.replace('Svg', '');
+  const withoutSvgName = componentName.replace('Svg', '');
 
   let outPutName = withoutSvgName;
 
@@ -59,9 +59,9 @@ function template(
   }
 
   return hasDark
-    ? template.ast`
+    ? tpl`
     import { useTheme, PaletteType } from '@material-ui/core';\n\n
-    import React, { forwardRef, memo } from 'react';\n\n
+    ${imports};
 
     ${`import ${outPutName}D from './${outPutName}D'`};\n\n
 
@@ -69,7 +69,7 @@ function template(
       const theme = useTheme();
       const { themeType=theme.palette.type, ...props } = inProps;
 
-      return themeType === 'dark' ? ${`<${outPutName}D {...props} ref={svgRef} />`} : ${jsx};
+      return themeType === 'dark' ? ${`<${outPutName}D {...props} ref={ref} />`} : ${jsx};
     }));\n\n
 
     ${outPutName}.displayName = '${outPutName}';\n\n
@@ -78,8 +78,8 @@ function template(
 
     export default ${outPutName};
   `
-    : template.ast`
-    import React, { forwardRef, memo } from 'react';\n\n
+    : tpl`
+    ${imports};
 
     const ${outPutName} = memo(forwardRef((${props}) => ${jsx}));\n\n
 
