@@ -1,12 +1,14 @@
-import { KeyboardEventHandler, useRef } from 'react';
+import React, { useRef } from 'react';
 
 import { useEventCallback } from '../../../../foundation';
 import { ACCEPTABLE_KEYS } from './DialPadUtils';
 import { RcDialPadControl } from './types';
 
-export type UseDialKeyboard = {
-  onKeyDown?: KeyboardEventHandler;
-  onKeyUp?: KeyboardEventHandler;
+export type UseDialKeyboard<
+  E extends KeyboardEvent | React.KeyboardEvent<any>,
+> = {
+  onKeyDown?: (e: E) => void;
+  onKeyUp?: (e: E) => void;
 };
 
 /**
@@ -14,16 +16,18 @@ export type UseDialKeyboard = {
  * @param options onKeyDown, onKeyUp that you also want apply on target
  * @returns  onKeyDown, onKeyUp, control
  */
-export const useDialKeyboard = ({
+export const useDialKeyboard = <
+  E extends KeyboardEvent | React.KeyboardEvent<any> = React.KeyboardEvent<any>,
+>({
   onKeyDown: onKeyDownArg,
   onKeyUp: onKeyUpArg,
-}: UseDialKeyboard = {}) => {
+}: UseDialKeyboard<E> = {}) => {
   const control = useRef<RcDialPadControl>(null);
 
   // we need `onKeyup` & `onKeydown` to get called in same amount, but also make sure of the performance.
   const keyBufferRef = useRef<string[]>([]);
 
-  const onKeyDown = useEventCallback<KeyboardEventHandler>((e) => {
+  const onKeyDown = useEventCallback((e: E) => {
     onKeyDownArg?.(e);
 
     const key = e.key;
@@ -38,7 +42,7 @@ export const useDialKeyboard = ({
     }
   });
 
-  const onKeyUp = useEventCallback<KeyboardEventHandler>((e) => {
+  const onKeyUp = useEventCallback((e: E) => {
     onKeyUpArg?.(e);
 
     const key = e.key;
