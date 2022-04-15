@@ -97,9 +97,21 @@ Array [
   background-color: #666666;
 }
 
-.c10.RcIconButton-contained.focus-visible,
-.c10.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c10.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c10.RcIconButton-contained.focus-visible:before,
+.c10.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c10.RcIconButton-contained.focus-visible,
@@ -107,10 +119,6 @@ Array [
 .c10.RcIconButton-contained.focus-visible .c5,
 .c10.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
-}
-
-.c10.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c10.RcIconButton-contained:active,
@@ -194,9 +202,21 @@ Array [
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -204,10 +224,6 @@ Array [
 .c12.RcIconButton-contained.focus-visible .c5,
 .c12.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -476,8 +492,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c10.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c10.RcIconButton-contained:hover,
@@ -498,8 +514,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -760,9 +776,21 @@ Array [
   background-color: #666666;
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c4.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c4.RcIconButton-contained.focus-visible:before,
+.c4.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c4.RcIconButton-contained.focus-visible,
@@ -770,10 +798,6 @@ Array [
 .c4.RcIconButton-contained.focus-visible .c5,
 .c4.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
-}
-
-.c4.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c4.RcIconButton-contained:active,
@@ -857,9 +881,21 @@ Array [
   background-color: #666666;
 }
 
-.c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c8.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c8.RcIconButton-contained.focus-visible:before,
+.c8.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c8.RcIconButton-contained.focus-visible,
@@ -867,10 +903,6 @@ Array [
 .c8.RcIconButton-contained.focus-visible .c5,
 .c8.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
-}
-
-.c8.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c8.RcIconButton-contained:active,
@@ -970,8 +1002,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c4.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c4.RcIconButton-contained:hover,
@@ -992,8 +1024,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c8.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c8.RcIconButton-contained:hover,
@@ -1245,9 +1277,21 @@ Array [
   background-color: #666666;
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c11.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c11.RcIconButton-contained.focus-visible:before,
+.c11.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c11.RcIconButton-contained.focus-visible,
@@ -1255,10 +1299,6 @@ Array [
 .c11.RcIconButton-contained.focus-visible .c6,
 .c11.RcIconButton-contained[data-focus-visible-added] .c6 {
   color: #fff;
-}
-
-.c11.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c11.RcIconButton-contained:active,
@@ -1342,9 +1382,21 @@ Array [
   background-color: #666666;
 }
 
-.c13.RcIconButton-contained.focus-visible,
-.c13.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c13.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c13.RcIconButton-contained.focus-visible:before,
+.c13.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c13.RcIconButton-contained.focus-visible,
@@ -1352,10 +1404,6 @@ Array [
 .c13.RcIconButton-contained.focus-visible .c6,
 .c13.RcIconButton-contained[data-focus-visible-added] .c6 {
   color: #fff;
-}
-
-.c13.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c13.RcIconButton-contained:active,
@@ -1631,8 +1679,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c11.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c11.RcIconButton-contained:hover,
@@ -1653,8 +1701,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c13.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c13.RcIconButton-contained:hover,
@@ -1972,9 +2020,21 @@ Array [
   background-color: #666666;
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c11.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c11.RcIconButton-contained.focus-visible:before,
+.c11.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c11.RcIconButton-contained.focus-visible,
@@ -1982,10 +2042,6 @@ Array [
 .c11.RcIconButton-contained.focus-visible .c6,
 .c11.RcIconButton-contained[data-focus-visible-added] .c6 {
   color: #fff;
-}
-
-.c11.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c11.RcIconButton-contained:active,
@@ -2069,9 +2125,21 @@ Array [
   background-color: #666666;
 }
 
-.c13.RcIconButton-contained.focus-visible,
-.c13.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c13.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c13.RcIconButton-contained.focus-visible:before,
+.c13.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c13.RcIconButton-contained.focus-visible,
@@ -2079,10 +2147,6 @@ Array [
 .c13.RcIconButton-contained.focus-visible .c6,
 .c13.RcIconButton-contained[data-focus-visible-added] .c6 {
   color: #fff;
-}
-
-.c13.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c13.RcIconButton-contained:active,
@@ -2358,8 +2422,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c11.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c11.RcIconButton-contained:hover,
@@ -2380,8 +2444,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c13.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c13.RcIconButton-contained:hover,
@@ -2738,9 +2802,21 @@ Array [
   background-color: #666666;
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c11.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c11.RcIconButton-contained.focus-visible:before,
+.c11.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c11.RcIconButton-contained.focus-visible,
@@ -2748,10 +2824,6 @@ Array [
 .c11.RcIconButton-contained.focus-visible .c6,
 .c11.RcIconButton-contained[data-focus-visible-added] .c6 {
   color: #fff;
-}
-
-.c11.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c11.RcIconButton-contained:active,
@@ -2835,9 +2907,21 @@ Array [
   background-color: #666666;
 }
 
-.c13.RcIconButton-contained.focus-visible,
-.c13.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c13.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c13.RcIconButton-contained.focus-visible:before,
+.c13.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c13.RcIconButton-contained.focus-visible,
@@ -2845,10 +2929,6 @@ Array [
 .c13.RcIconButton-contained.focus-visible .c6,
 .c13.RcIconButton-contained[data-focus-visible-added] .c6 {
   color: #fff;
-}
-
-.c13.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c13.RcIconButton-contained:active,
@@ -3124,8 +3204,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c11.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c11.RcIconButton-contained:hover,
@@ -3146,8 +3226,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c13.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c13.RcIconButton-contained:hover,
@@ -3417,9 +3497,21 @@ Array [
   background-color: #666666;
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c11.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c11.RcIconButton-contained.focus-visible:before,
+.c11.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c11.RcIconButton-contained.focus-visible,
@@ -3427,10 +3519,6 @@ Array [
 .c11.RcIconButton-contained.focus-visible .c6,
 .c11.RcIconButton-contained[data-focus-visible-added] .c6 {
   color: #fff;
-}
-
-.c11.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c11.RcIconButton-contained:active,
@@ -3514,9 +3602,21 @@ Array [
   background-color: #666666;
 }
 
-.c13.RcIconButton-contained.focus-visible,
-.c13.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c13.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c13.RcIconButton-contained.focus-visible:before,
+.c13.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c13.RcIconButton-contained.focus-visible,
@@ -3524,10 +3624,6 @@ Array [
 .c13.RcIconButton-contained.focus-visible .c6,
 .c13.RcIconButton-contained[data-focus-visible-added] .c6 {
   color: #fff;
-}
-
-.c13.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c13.RcIconButton-contained:active,
@@ -3803,8 +3899,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c11.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c11.RcIconButton-contained:hover,
@@ -3825,8 +3921,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c13.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c13.RcIconButton-contained:hover,
@@ -4136,9 +4232,21 @@ Array [
   background-color: #666666;
 }
 
-.c10.RcIconButton-contained.focus-visible,
-.c10.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c10.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c10.RcIconButton-contained.focus-visible:before,
+.c10.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c10.RcIconButton-contained.focus-visible,
@@ -4146,10 +4254,6 @@ Array [
 .c10.RcIconButton-contained.focus-visible .c5,
 .c10.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
-}
-
-.c10.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c10.RcIconButton-contained:active,
@@ -4233,9 +4337,21 @@ Array [
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -4243,10 +4359,6 @@ Array [
 .c12.RcIconButton-contained.focus-visible .c5,
 .c12.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -4518,8 +4630,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c10.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c10.RcIconButton-contained:hover,
@@ -4540,8 +4652,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,

@@ -141,9 +141,21 @@ Array [
   background-color: #666666;
 }
 
-.c2.RcIconButton-contained.focus-visible,
-.c2.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c2.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c2.RcIconButton-contained.focus-visible:before,
+.c2.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c2.RcIconButton-contained.focus-visible,
@@ -151,10 +163,6 @@ Array [
 .c2.RcIconButton-contained.focus-visible .c5,
 .c2.RcIconButton-contained[data-focus-visible-added] .c5 {
   color: #fff;
-}
-
-.c2.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c2.RcIconButton-contained:active,
@@ -373,8 +381,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c2.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c2.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c2.RcIconButton-contained:hover,
@@ -458,7 +466,7 @@ Array [
           value=""
         />
         <div
-          className="MuiBox-root MuiBox-root-416"
+          className="MuiBox-root MuiBox-root-417"
         >
           <button
             aria-hidden={true}
@@ -723,9 +731,21 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -733,10 +753,6 @@ Array [
 .c5.RcIconButton-contained.focus-visible .c8,
 .c5.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -834,9 +850,21 @@ Array [
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -844,10 +872,6 @@ Array [
 .c12.RcIconButton-contained.focus-visible .c8,
 .c12.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -1069,8 +1093,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -1091,8 +1115,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -1166,7 +1190,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-417"
+          className="MuiBox-root MuiBox-root-418"
         >
           <button
             aria-hidden={true}

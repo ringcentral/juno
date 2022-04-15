@@ -1,5 +1,1422 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`] = `
+.c4 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #666666;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+}
+
+.c1:active {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+
+.c1,
+.c1 .c2 {
+  font-size: 20px;
+}
+
+.c1:active,
+.c1:active .c2 {
+  color: #666666;
+}
+
+.c1.focus-visible,
+.c1[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c1.focus-visible:active,
+.c1[data-focus-visible-added]:active,
+.c1.focus-visible:active .c2,
+.c1[data-focus-visible-added]:active .c2 {
+  color: rgba(102,102,102,0.88);
+}
+
+.c1.RcIconButton-persistBg {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c1.RcIconButton-disabled,
+.c1.RcIconButton-disabled .c2 {
+  color: #B9B9B9;
+}
+
+.c1.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c1.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c1.RcIconButton-contained {
+  color: #fff;
+  background-color: #666666;
+}
+
+.c1.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c1.RcIconButton-contained.focus-visible:before,
+.c1.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c1.RcIconButton-contained.focus-visible,
+.c1.RcIconButton-contained[data-focus-visible-added],
+.c1.RcIconButton-contained.focus-visible .c2,
+.c1.RcIconButton-contained[data-focus-visible-added] .c2 {
+  color: #fff;
+}
+
+.c1.RcIconButton-contained:active,
+.c1.RcIconButton-contained:active .c2 {
+  color: #fff;
+}
+
+.c1 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #FFFFFF;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+}
+
+.c5:active {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+
+.c5,
+.c5 .c2 {
+  font-size: 20px;
+}
+
+.c5:active,
+.c5:active .c2 {
+  color: #FFFFFF;
+}
+
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c2,
+.c5[data-focus-visible-added]:active .c2 {
+  color: rgba(255,255,255,0.88);
+}
+
+.c5.RcIconButton-persistBg {
+  background-color: rgba(255,255,255,0.12);
+}
+
+.c5.RcIconButton-disabled,
+.c5.RcIconButton-disabled .c2 {
+  color: #B9B9B9;
+}
+
+.c5.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c5.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c5.RcIconButton-contained {
+  color: rgba(0,0,0,0.87);
+  background-color: #FFFFFF;
+}
+
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
+}
+
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c2,
+.c5.RcIconButton-contained[data-focus-visible-added] .c2 {
+  color: rgba(0,0,0,0.87);
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c2 {
+  color: rgba(0,0,0,0.87);
+}
+
+.c5 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #494949;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+}
+
+.c6:active {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+
+.c6,
+.c6 .c2 {
+  font-size: 20px;
+}
+
+.c6:active,
+.c6:active .c2 {
+  color: #494949;
+}
+
+.c6.focus-visible,
+.c6[data-focus-visible-added] {
+  background-color: rgba(73,73,73,0.16);
+}
+
+.c6.focus-visible:active,
+.c6[data-focus-visible-added]:active,
+.c6.focus-visible:active .c2,
+.c6[data-focus-visible-added]:active .c2 {
+  color: rgba(73,73,73,0.88);
+}
+
+.c6.RcIconButton-persistBg {
+  background-color: rgba(73,73,73,0.12);
+}
+
+.c6.RcIconButton-disabled,
+.c6.RcIconButton-disabled .c2 {
+  color: #B9B9B9;
+}
+
+.c6.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c6.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c6.RcIconButton-contained {
+  color: #fff;
+  background-color: #494949;
+}
+
+.c6.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c6.RcIconButton-contained.focus-visible:before,
+.c6.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added],
+.c6.RcIconButton-contained.focus-visible .c2,
+.c6.RcIconButton-contained[data-focus-visible-added] .c2 {
+  color: #fff;
+}
+
+.c6.RcIconButton-contained:active,
+.c6.RcIconButton-contained:active .c2 {
+  color: #fff;
+}
+
+.c6 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #3C9949;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  box-shadow: none;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+}
+
+.c7:active {
+  box-shadow: none;
+}
+
+.c7,
+.c7 .c2 {
+  font-size: 20px;
+}
+
+.c7:active,
+.c7:active .c2 {
+  color: #3C9949;
+}
+
+.c7.focus-visible,
+.c7[data-focus-visible-added] {
+  background-color: rgba(60,153,73,0.16);
+}
+
+.c7.focus-visible:active,
+.c7[data-focus-visible-added]:active,
+.c7.focus-visible:active .c2,
+.c7[data-focus-visible-added]:active .c2 {
+  color: rgba(60,153,73,0.88);
+}
+
+.c7.RcIconButton-persistBg {
+  background-color: rgba(60,153,73,0.12);
+}
+
+.c7.RcIconButton-disabled,
+.c7.RcIconButton-disabled .c2 {
+  color: #B9B9B9;
+}
+
+.c7.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c7.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c7.RcIconButton-contained {
+  color: #fff;
+  background-color: #3C9949;
+}
+
+.c7.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c7.RcIconButton-contained.focus-visible:before,
+.c7.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c7.RcIconButton-contained.focus-visible,
+.c7.RcIconButton-contained[data-focus-visible-added],
+.c7.RcIconButton-contained.focus-visible .c2,
+.c7.RcIconButton-contained[data-focus-visible-added] .c2 {
+  color: #fff;
+}
+
+.c7.RcIconButton-contained:active,
+.c7.RcIconButton-contained:active .c2 {
+  color: #fff;
+}
+
+.c7 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #D63E39;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  box-shadow: none;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+}
+
+.c8:active {
+  box-shadow: none;
+}
+
+.c8,
+.c8 .c2 {
+  font-size: 20px;
+}
+
+.c8:active,
+.c8:active .c2 {
+  color: #D63E39;
+}
+
+.c8.focus-visible,
+.c8[data-focus-visible-added] {
+  background-color: rgba(214,62,57,0.16);
+}
+
+.c8.focus-visible:active,
+.c8[data-focus-visible-added]:active,
+.c8.focus-visible:active .c2,
+.c8[data-focus-visible-added]:active .c2 {
+  color: rgba(214,62,57,0.88);
+}
+
+.c8.RcIconButton-persistBg {
+  background-color: rgba(214,62,57,0.12);
+}
+
+.c8.RcIconButton-disabled,
+.c8.RcIconButton-disabled .c2 {
+  color: #B9B9B9;
+}
+
+.c8.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c8.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c8.RcIconButton-contained {
+  color: #fff;
+  background-color: #D63E39;
+}
+
+.c8.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c8.RcIconButton-contained.focus-visible:before,
+.c8.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c8.RcIconButton-contained.focus-visible,
+.c8.RcIconButton-contained[data-focus-visible-added],
+.c8.RcIconButton-contained.focus-visible .c2,
+.c8.RcIconButton-contained[data-focus-visible-added] .c2 {
+  color: #fff;
+}
+
+.c8.RcIconButton-contained:active:before {
+  background-color: rgba(255,255,255,0.24);
+}
+
+.c8.RcIconButton-contained:active,
+.c8.RcIconButton-contained:active .c2 {
+  color: #fff;
+}
+
+.c8 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #D63E39;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  background-color: rgba(214,62,57,0.16);
+  box-shadow: none;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+}
+
+.c9:active {
+  box-shadow: none;
+}
+
+.c9,
+.c9 .c2 {
+  font-size: 20px;
+}
+
+.c9:active,
+.c9:active .c2 {
+  color: #D63E39;
+}
+
+.c9.focus-visible,
+.c9[data-focus-visible-added] {
+  background-color: rgba(214,62,57,0.32);
+}
+
+.c9.focus-visible:active,
+.c9[data-focus-visible-added]:active,
+.c9.focus-visible:active .c2,
+.c9[data-focus-visible-added]:active .c2 {
+  color: rgba(214,62,57,0.88);
+}
+
+.c9.RcIconButton-persistBg {
+  background-color: rgba(214,62,57,0.16);
+}
+
+.c9.RcIconButton-disabled {
+  background-color: rgba(214,62,57,0.12);
+}
+
+.c9.RcIconButton-disabled,
+.c9.RcIconButton-disabled .c2 {
+  color: #B9B9B9;
+}
+
+.c9.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c9.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c9.RcIconButton-contained {
+  color: #fff;
+  background-color: #D63E39;
+}
+
+.c9.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c9.RcIconButton-contained.focus-visible:before,
+.c9.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added],
+.c9.RcIconButton-contained.focus-visible .c2,
+.c9.RcIconButton-contained[data-focus-visible-added] .c2 {
+  color: #fff;
+}
+
+.c9.RcIconButton-contained:active:before {
+  background-color: rgba(255,255,255,0.24);
+}
+
+.c9.RcIconButton-contained:active,
+.c9.RcIconButton-contained:active .c2 {
+  color: #fff;
+}
+
+.c9 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #D63E39;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+}
+
+.c12:active {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+
+.c12,
+.c12 .c2 {
+  font-size: 20px;
+}
+
+.c12:active,
+.c12:active .c2 {
+  color: #D63E39;
+}
+
+.c12.focus-visible,
+.c12[data-focus-visible-added] {
+  background-color: rgba(214,62,57,0.16);
+}
+
+.c12.focus-visible:active,
+.c12[data-focus-visible-added]:active,
+.c12.focus-visible:active .c2,
+.c12[data-focus-visible-added]:active .c2 {
+  color: rgba(214,62,57,0.88);
+}
+
+.c12.RcIconButton-persistBg {
+  background-color: rgba(214,62,57,0.12);
+}
+
+.c12.RcIconButton-disabled,
+.c12.RcIconButton-disabled .c2 {
+  color: #B9B9B9;
+}
+
+.c12.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c12.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c12.RcIconButton-contained {
+  color: #fff;
+  background-color: #D63E39;
+}
+
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c12.RcIconButton-contained.focus-visible,
+.c12.RcIconButton-contained[data-focus-visible-added],
+.c12.RcIconButton-contained.focus-visible .c2,
+.c12.RcIconButton-contained[data-focus-visible-added] .c2 {
+  color: #fff;
+}
+
+.c12.RcIconButton-contained:active,
+.c12.RcIconButton-contained:active .c2 {
+  color: #fff;
+}
+
+.c12 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #D63E39;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  background-color: rgba(214,62,57,0.16);
+}
+
+.c13,
+.c13 .c2 {
+  font-size: 20px;
+}
+
+.c13:active,
+.c13:active .c2 {
+  color: #D63E39;
+}
+
+.c13.focus-visible,
+.c13[data-focus-visible-added] {
+  background-color: rgba(214,62,57,0.32);
+}
+
+.c13.focus-visible:active,
+.c13[data-focus-visible-added]:active,
+.c13.focus-visible:active .c2,
+.c13[data-focus-visible-added]:active .c2 {
+  color: rgba(214,62,57,0.88);
+}
+
+.c13.RcIconButton-persistBg {
+  background-color: rgba(214,62,57,0.16);
+}
+
+.c13.RcIconButton-disabled {
+  background-color: rgba(214,62,57,0.12);
+}
+
+.c13.RcIconButton-disabled,
+.c13.RcIconButton-disabled .c2 {
+  color: #B9B9B9;
+}
+
+.c13.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c13.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c13.RcIconButton-contained {
+  color: #fff;
+  background-color: #D63E39;
+}
+
+.c13.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c13.RcIconButton-contained.focus-visible:before,
+.c13.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c13.RcIconButton-contained.focus-visible,
+.c13.RcIconButton-contained[data-focus-visible-added],
+.c13.RcIconButton-contained.focus-visible .c2,
+.c13.RcIconButton-contained[data-focus-visible-added] .c2 {
+  color: #fff;
+}
+
+.c13.RcIconButton-contained:active,
+.c13.RcIconButton-contained:active .c2 {
+  color: #fff;
+}
+
+.c13 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+.c10 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+}
+
+.c11.highlight-term {
+  color: #121212 !important;
+  background-color: #FFDFB1 !important;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
+
+  .c1:hover,
+  .c1:hover .c2 {
+    color: rgba(102,102,102,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
+  }
+
+  .c1.RcIconButton-contained:hover,
+  .c1.RcIconButton-contained:hover .c2 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c5:hover {
+    background-color: rgba(255,255,255,0.08);
+  }
+
+  .c5:hover,
+  .c5:hover .c2 {
+    color: rgba(255,255,255,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
+  }
+
+  .c5.RcIconButton-contained:hover,
+  .c5.RcIconButton-contained:hover .c2 {
+    color: rgba(0,0,0,0.87);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c6:hover {
+    background-color: rgba(73,73,73,0.08);
+  }
+
+  .c6:hover,
+  .c6:hover .c2 {
+    color: rgba(73,73,73,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
+  }
+
+  .c6.RcIconButton-contained:hover,
+  .c6.RcIconButton-contained:hover .c2 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7:hover {
+    background-color: rgba(60,153,73,0.08);
+  }
+
+  .c7:hover,
+  .c7:hover .c2 {
+    color: rgba(60,153,73,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
+  }
+
+  .c7.RcIconButton-contained:hover,
+  .c7.RcIconButton-contained:hover .c2 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c8:hover {
+    background-color: rgba(214,62,57,0.08);
+  }
+
+  .c8:hover,
+  .c8:hover .c2 {
+    color: rgba(214,62,57,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c8.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
+  }
+
+  .c8.RcIconButton-contained:hover,
+  .c8.RcIconButton-contained:hover .c2 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c9:hover {
+    background-color: rgba(214,62,57,0.24);
+  }
+
+  .c9:hover,
+  .c9:hover .c2 {
+    color: rgba(214,62,57,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c9.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
+  }
+
+  .c9.RcIconButton-contained:hover,
+  .c9.RcIconButton-contained:hover .c2 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c12:hover {
+    background-color: rgba(214,62,57,0.08);
+  }
+
+  .c12:hover,
+  .c12:hover .c2 {
+    color: rgba(214,62,57,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
+  }
+
+  .c12.RcIconButton-contained:hover,
+  .c12.RcIconButton-contained:hover .c2 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c13:hover {
+    background-color: rgba(214,62,57,0.24);
+  }
+
+  .c13:hover,
+  .c13:hover .c2 {
+    color: rgba(214,62,57,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c13.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
+  }
+
+  .c13.RcIconButton-contained:hover,
+  .c13.RcIconButton-contained:hover .c2 {
+    color: #fff;
+  }
+}
+
+<div
+  className="MuiBox-root MuiBox-root-71"
+>
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    contained
+  </h5>
+  <button
+    className="MuiButtonBase-root c1 RcIconButton-root RcIconButton-contained"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="c2 c3 phone icon"
+    >
+      <svg
+        className="c4"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.228 14.296c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 0 0 1.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.078c-.004.003.001-.001.009-.015l.076-.093c.226-.238.417-.428.575-.573.171-.156.362-.306.617-.477a3.574 3.574 0 0 1 2.169-.483c.803.071 1.484.39 1.965.905.599.566 1.221 1.131 1.865 1.697s1.489 1.28 2.534 2.141c.586.482.976 1.073 1.157 1.757.184.694.125 1.365-.161 1.937-.193.479-.565 1.044-1.117 1.713-.544.659-1.035 1.155-1.456 1.47-.44.363-.947.637-1.516.818a6.01 6.01 0 0 1-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.989 24.989 0 0 1-3.475-2.719 36.73 36.73 0 0 1-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716.735-.115 1.455-.01 2.133.308s1.204.818 1.577 1.5a33.63 33.63 0 0 0 1.257 2.265 49.99 49.99 0 0 0 1.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 0 1-1.027.705 1.161 1.161 0 0 1-.218.137l-.171.083a2.256 2.256 0 0 1-.223.12 1.99 1.99 0 0 0-.144.067c.027.132.084.31.182.548z"
+        />
+      </svg>
+      
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root c5 RcIconButton-root RcIconButton-contained"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="c2 c3 phone icon"
+    >
+      <svg
+        className="c4"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.228 14.296c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 0 0 1.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.078c-.004.003.001-.001.009-.015l.076-.093c.226-.238.417-.428.575-.573.171-.156.362-.306.617-.477a3.574 3.574 0 0 1 2.169-.483c.803.071 1.484.39 1.965.905.599.566 1.221 1.131 1.865 1.697s1.489 1.28 2.534 2.141c.586.482.976 1.073 1.157 1.757.184.694.125 1.365-.161 1.937-.193.479-.565 1.044-1.117 1.713-.544.659-1.035 1.155-1.456 1.47-.44.363-.947.637-1.516.818a6.01 6.01 0 0 1-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.989 24.989 0 0 1-3.475-2.719 36.73 36.73 0 0 1-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716.735-.115 1.455-.01 2.133.308s1.204.818 1.577 1.5a33.63 33.63 0 0 0 1.257 2.265 49.99 49.99 0 0 0 1.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 0 1-1.027.705 1.161 1.161 0 0 1-.218.137l-.171.083a2.256 2.256 0 0 1-.223.12 1.99 1.99 0 0 0-.144.067c.027.132.084.31.182.548z"
+        />
+      </svg>
+      
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root c6 RcIconButton-root RcIconButton-contained"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="c2 c3 phone icon"
+    >
+      <svg
+        className="c4"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.228 14.296c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 0 0 1.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.078c-.004.003.001-.001.009-.015l.076-.093c.226-.238.417-.428.575-.573.171-.156.362-.306.617-.477a3.574 3.574 0 0 1 2.169-.483c.803.071 1.484.39 1.965.905.599.566 1.221 1.131 1.865 1.697s1.489 1.28 2.534 2.141c.586.482.976 1.073 1.157 1.757.184.694.125 1.365-.161 1.937-.193.479-.565 1.044-1.117 1.713-.544.659-1.035 1.155-1.456 1.47-.44.363-.947.637-1.516.818a6.01 6.01 0 0 1-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.989 24.989 0 0 1-3.475-2.719 36.73 36.73 0 0 1-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716.735-.115 1.455-.01 2.133.308s1.204.818 1.577 1.5a33.63 33.63 0 0 0 1.257 2.265 49.99 49.99 0 0 0 1.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 0 1-1.027.705 1.161 1.161 0 0 1-.218.137l-.171.083a2.256 2.256 0 0 1-.223.12 1.99 1.99 0 0 0-.144.067c.027.132.084.31.182.548z"
+        />
+      </svg>
+      
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root c7 RcIconButton-root RcIconButton-contained"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="c2 c3 phone icon"
+    >
+      <svg
+        className="c4"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.228 14.296c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 0 0 1.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.078c-.004.003.001-.001.009-.015l.076-.093c.226-.238.417-.428.575-.573.171-.156.362-.306.617-.477a3.574 3.574 0 0 1 2.169-.483c.803.071 1.484.39 1.965.905.599.566 1.221 1.131 1.865 1.697s1.489 1.28 2.534 2.141c.586.482.976 1.073 1.157 1.757.184.694.125 1.365-.161 1.937-.193.479-.565 1.044-1.117 1.713-.544.659-1.035 1.155-1.456 1.47-.44.363-.947.637-1.516.818a6.01 6.01 0 0 1-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.989 24.989 0 0 1-3.475-2.719 36.73 36.73 0 0 1-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716.735-.115 1.455-.01 2.133.308s1.204.818 1.577 1.5a33.63 33.63 0 0 0 1.257 2.265 49.99 49.99 0 0 0 1.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 0 1-1.027.705 1.161 1.161 0 0 1-.218.137l-.171.083a2.256 2.256 0 0 1-.223.12 1.99 1.99 0 0 0-.144.067c.027.132.084.31.182.548z"
+        />
+      </svg>
+      
+    </span>
+  </button>
+  <br />
+  <br />
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Disabled ripple
+  </h5>
+  <button
+    className="MuiButtonBase-root c8 RcIconButton-root RcIconButton-contained"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="c2 c3 phone icon"
+    >
+      <svg
+        className="c4"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.228 14.296c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 0 0 1.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.078c-.004.003.001-.001.009-.015l.076-.093c.226-.238.417-.428.575-.573.171-.156.362-.306.617-.477a3.574 3.574 0 0 1 2.169-.483c.803.071 1.484.39 1.965.905.599.566 1.221 1.131 1.865 1.697s1.489 1.28 2.534 2.141c.586.482.976 1.073 1.157 1.757.184.694.125 1.365-.161 1.937-.193.479-.565 1.044-1.117 1.713-.544.659-1.035 1.155-1.456 1.47-.44.363-.947.637-1.516.818a6.01 6.01 0 0 1-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.989 24.989 0 0 1-3.475-2.719 36.73 36.73 0 0 1-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716.735-.115 1.455-.01 2.133.308s1.204.818 1.577 1.5a33.63 33.63 0 0 0 1.257 2.265 49.99 49.99 0 0 0 1.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 0 1-1.027.705 1.161 1.161 0 0 1-.218.137l-.171.083a2.256 2.256 0 0 1-.223.12 1.99 1.99 0 0 0-.144.067c.027.132.084.31.182.548z"
+        />
+      </svg>
+      
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root c9 RcIconButton-root RcIconButton-inverse"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="c2 c3 phone icon"
+    >
+      <svg
+        className="c4"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.228 14.296c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 0 0 1.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.078c-.004.003.001-.001.009-.015l.076-.093c.226-.238.417-.428.575-.573.171-.156.362-.306.617-.477a3.574 3.574 0 0 1 2.169-.483c.803.071 1.484.39 1.965.905.599.566 1.221 1.131 1.865 1.697s1.489 1.28 2.534 2.141c.586.482.976 1.073 1.157 1.757.184.694.125 1.365-.161 1.937-.193.479-.565 1.044-1.117 1.713-.544.659-1.035 1.155-1.456 1.47-.44.363-.947.637-1.516.818a6.01 6.01 0 0 1-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.989 24.989 0 0 1-3.475-2.719 36.73 36.73 0 0 1-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716.735-.115 1.455-.01 2.133.308s1.204.818 1.577 1.5a33.63 33.63 0 0 0 1.257 2.265 49.99 49.99 0 0 0 1.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 0 1-1.027.705 1.161 1.161 0 0 1-.218.137l-.171.083a2.256 2.256 0 0 1-.223.12 1.99 1.99 0 0 0-.144.067c.027.132.084.31.182.548z"
+        />
+      </svg>
+      
+    </span>
+  </button>
+  <br />
+  <br />
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    disabledFakeBorder
+    <br />
+    <span
+      className="MuiTypography-root c10 c11 highlight-term MuiTypography-noWrap"
+      data-color="initial"
+      data-variant="body1"
+      title="(Only use in highContractMode)"
+    >
+      (Only use in highContractMode)
+    </span>
+  </h5>
+  <button
+    className="MuiButtonBase-root c12 RcIconButton-root RcIconButton-contained"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="c2 c3 phone icon"
+    >
+      <svg
+        className="c4"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.228 14.296c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 0 0 1.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.078c-.004.003.001-.001.009-.015l.076-.093c.226-.238.417-.428.575-.573.171-.156.362-.306.617-.477a3.574 3.574 0 0 1 2.169-.483c.803.071 1.484.39 1.965.905.599.566 1.221 1.131 1.865 1.697s1.489 1.28 2.534 2.141c.586.482.976 1.073 1.157 1.757.184.694.125 1.365-.161 1.937-.193.479-.565 1.044-1.117 1.713-.544.659-1.035 1.155-1.456 1.47-.44.363-.947.637-1.516.818a6.01 6.01 0 0 1-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.989 24.989 0 0 1-3.475-2.719 36.73 36.73 0 0 1-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716.735-.115 1.455-.01 2.133.308s1.204.818 1.577 1.5a33.63 33.63 0 0 0 1.257 2.265 49.99 49.99 0 0 0 1.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 0 1-1.027.705 1.161 1.161 0 0 1-.218.137l-.171.083a2.256 2.256 0 0 1-.223.12 1.99 1.99 0 0 0-.144.067c.027.132.084.31.182.548z"
+        />
+      </svg>
+      
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root c13 RcIconButton-root RcIconButton-inverse"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="c2 c3 phone icon"
+    >
+      <svg
+        className="c4"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.228 14.296c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 0 0 1.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.078c-.004.003.001-.001.009-.015l.076-.093c.226-.238.417-.428.575-.573.171-.156.362-.306.617-.477a3.574 3.574 0 0 1 2.169-.483c.803.071 1.484.39 1.965.905.599.566 1.221 1.131 1.865 1.697s1.489 1.28 2.534 2.141c.586.482.976 1.073 1.157 1.757.184.694.125 1.365-.161 1.937-.193.479-.565 1.044-1.117 1.713-.544.659-1.035 1.155-1.456 1.47-.44.363-.947.637-1.516.818a6.01 6.01 0 0 1-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.989 24.989 0 0 1-3.475-2.719 36.73 36.73 0 0 1-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716.735-.115 1.455-.01 2.133.308s1.204.818 1.577 1.5a33.63 33.63 0 0 0 1.257 2.265 49.99 49.99 0 0 0 1.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 0 1-1.027.705 1.161 1.161 0 0 1-.218.137l-.171.083a2.256 2.256 0 0 1-.223.12 1.99 1.99 0 0 0-.144.067c.027.132.084.31.182.548z"
+        />
+      </svg>
+      
+    </span>
+  </button>
+</div>
+`;
+
 exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1`] = `
 .c4 {
   width: 1em;
@@ -94,9 +1511,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   background-color: #666666;
 }
 
-.c1.RcIconButton-contained.focus-visible,
-.c1.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c1.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c1.RcIconButton-contained.focus-visible:before,
+.c1.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c1.RcIconButton-contained.focus-visible,
@@ -104,10 +1533,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 .c1.RcIconButton-contained.focus-visible .c2,
 .c1.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c1.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c1.RcIconButton-contained:active,
@@ -198,9 +1623,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -208,10 +1645,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 .c5.RcIconButton-contained.focus-visible .c2,
 .c5.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -308,9 +1741,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   background-color: #666666;
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c6.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  position: absolute;
+}
+
+.c6.RcIconButton-contained.focus-visible:before,
+.c6.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c6.RcIconButton-contained.focus-visible,
@@ -318,10 +1763,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 .c6.RcIconButton-contained.focus-visible .c2,
 .c6.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c6.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c6.RcIconButton-contained:active,
@@ -418,9 +1859,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   background-color: #666666;
 }
 
-.c7.RcIconButton-contained.focus-visible,
-.c7.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c7.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100vw;
+  position: absolute;
+}
+
+.c7.RcIconButton-contained.focus-visible:before,
+.c7.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c7.RcIconButton-contained.focus-visible,
@@ -428,10 +1881,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 .c7.RcIconButton-contained.focus-visible .c2,
 .c7.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c7.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c7.RcIconButton-contained:active,
@@ -522,9 +1971,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   background-color: #666666;
 }
 
-.c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c8.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  position: absolute;
+}
+
+.c8.RcIconButton-contained.focus-visible:before,
+.c8.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c8.RcIconButton-contained.focus-visible,
@@ -532,10 +1993,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 .c8.RcIconButton-contained.focus-visible .c2,
 .c8.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c8.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c8.RcIconButton-contained:active,
@@ -632,9 +2089,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   background-color: #666666;
 }
 
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c9.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  position: absolute;
+}
+
+.c9.RcIconButton-contained.focus-visible:before,
+.c9.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c9.RcIconButton-contained.focus-visible,
@@ -642,10 +2111,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 .c9.RcIconButton-contained.focus-visible .c2,
 .c9.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c9.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c9.RcIconButton-contained:active,
@@ -742,9 +2207,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   background-color: #666666;
 }
 
-.c10.RcIconButton-contained.focus-visible,
-.c10.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c10.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  position: absolute;
+}
+
+.c10.RcIconButton-contained.focus-visible:before,
+.c10.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c10.RcIconButton-contained.focus-visible,
@@ -752,10 +2229,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 .c10.RcIconButton-contained.focus-visible .c2,
 .c10.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c10.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c10.RcIconButton-contained:active,
@@ -852,9 +2325,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   background-color: #666666;
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c11.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  position: absolute;
+}
+
+.c11.RcIconButton-contained.focus-visible:before,
+.c11.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c11.RcIconButton-contained.focus-visible,
@@ -862,10 +2347,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 .c11.RcIconButton-contained.focus-visible .c2,
 .c11.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c11.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c11.RcIconButton-contained:active,
@@ -906,8 +2387,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c1.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c1.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c1.RcIconButton-contained:hover,
@@ -928,8 +2409,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -950,8 +2431,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c6.RcIconButton-contained:hover,
@@ -972,8 +2453,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c7.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c7.RcIconButton-contained:hover,
@@ -994,8 +2475,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c8.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c8.RcIconButton-contained:hover,
@@ -1016,8 +2497,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c9.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c9.RcIconButton-contained:hover,
@@ -1038,8 +2519,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c10.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c10.RcIconButton-contained:hover,
@@ -1060,8 +2541,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c11.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c11.RcIconButton-contained:hover,
@@ -1071,10 +2552,10 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 <div
-  className="MuiBox-root MuiBox-root-98"
+  className="MuiBox-root MuiBox-root-99"
 >
   <div
-    className="MuiBox-root MuiBox-root-99"
+    className="MuiBox-root MuiBox-root-100"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1114,13 +2595,10 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
         </svg>
         
       </span>
-      <span
-        className="MuiTouchRipple-root"
-      />
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-100"
+    className="MuiBox-root MuiBox-root-101"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1160,13 +2638,10 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
         </svg>
         
       </span>
-      <span
-        className="MuiTouchRipple-root"
-      />
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-101"
+    className="MuiBox-root MuiBox-root-102"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1206,13 +2681,10 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
         </svg>
         
       </span>
-      <span
-        className="MuiTouchRipple-root"
-      />
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-102"
+    className="MuiBox-root MuiBox-root-103"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1252,13 +2724,10 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
         </svg>
         
       </span>
-      <span
-        className="MuiTouchRipple-root"
-      />
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-103"
+    className="MuiBox-root MuiBox-root-104"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1298,13 +2767,10 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
         </svg>
         
       </span>
-      <span
-        className="MuiTouchRipple-root"
-      />
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-104"
+    className="MuiBox-root MuiBox-root-105"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1344,13 +2810,10 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
         </svg>
         
       </span>
-      <span
-        className="MuiTouchRipple-root"
-      />
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-105"
+    className="MuiBox-root MuiBox-root-106"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1390,13 +2853,10 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
         </svg>
         
       </span>
-      <span
-        className="MuiTouchRipple-root"
-      />
     </button>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-106"
+    className="MuiBox-root MuiBox-root-107"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -1436,9 +2896,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
         </svg>
         
       </span>
-      <span
-        className="MuiTouchRipple-root"
-      />
     </button>
   </div>
 </div>
@@ -1531,9 +2988,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton 1`] = `
   background-color: #666666;
 }
 
-.c0.RcIconButton-contained.focus-visible,
-.c0.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c0.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c0.RcIconButton-contained.focus-visible:before,
+.c0.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c0.RcIconButton-contained.focus-visible,
@@ -1541,10 +3010,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton 1`] = `
 .c0.RcIconButton-contained.focus-visible .c1,
 .c0.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: #fff;
-}
-
-.c0.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c0.RcIconButton-contained:active,
@@ -1571,8 +3036,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c0.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c0.RcIconButton-contained:hover,
@@ -1702,9 +3167,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   background-color: #666666;
 }
 
-.c1.RcIconButton-contained.focus-visible,
-.c1.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c1.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c1.RcIconButton-contained.focus-visible:before,
+.c1.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c1.RcIconButton-contained.focus-visible,
@@ -1712,10 +3189,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 .c1.RcIconButton-contained.focus-visible .c2,
 .c1.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c1.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c1.RcIconButton-contained:active,
@@ -1799,9 +3272,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -1809,10 +3294,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 .c5.RcIconButton-contained.focus-visible .c2,
 .c5.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -1903,9 +3384,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   background-color: #666666;
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c6.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c6.RcIconButton-contained.focus-visible:before,
+.c6.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c6.RcIconButton-contained.focus-visible,
@@ -1913,10 +3406,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 .c6.RcIconButton-contained.focus-visible .c2,
 .c6.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c6.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c6.RcIconButton-contained:active,
@@ -2007,9 +3496,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   background-color: #666666;
 }
 
-.c7.RcIconButton-contained.focus-visible,
-.c7.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c7.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c7.RcIconButton-contained.focus-visible:before,
+.c7.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c7.RcIconButton-contained.focus-visible,
@@ -2017,10 +3518,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 .c7.RcIconButton-contained.focus-visible .c2,
 .c7.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c7.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c7.RcIconButton-contained:active,
@@ -2109,9 +3606,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   background-color: #666666;
 }
 
-.c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c8.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c8.RcIconButton-contained.focus-visible:before,
+.c8.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c8.RcIconButton-contained.focus-visible,
@@ -2119,10 +3628,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 .c8.RcIconButton-contained.focus-visible .c2,
 .c8.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c8.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c8.RcIconButton-contained:active,
@@ -2211,9 +3716,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   background-color: #666666;
 }
 
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c9.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c9.RcIconButton-contained.focus-visible:before,
+.c9.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c9.RcIconButton-contained.focus-visible,
@@ -2221,10 +3738,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 .c9.RcIconButton-contained.focus-visible .c2,
 .c9.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c9.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c9.RcIconButton-contained:active,
@@ -2308,9 +3821,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   background-color: #666666;
 }
 
-.c10.RcIconButton-contained.focus-visible,
-.c10.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c10.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.c10.RcIconButton-contained.focus-visible:before,
+.c10.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c10.RcIconButton-contained.focus-visible,
@@ -2318,10 +3843,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 .c10.RcIconButton-contained.focus-visible .c2,
 .c10.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c10.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c10.RcIconButton-contained:active,
@@ -2411,9 +3932,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   background-color: #666666;
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c11.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.c11.RcIconButton-contained.focus-visible:before,
+.c11.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c11.RcIconButton-contained.focus-visible,
@@ -2421,10 +3954,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 .c11.RcIconButton-contained.focus-visible .c2,
 .c11.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c11.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c11.RcIconButton-contained:active,
@@ -2528,9 +4057,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -2538,10 +4079,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 .c12.RcIconButton-contained.focus-visible .c2,
 .c12.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -2576,8 +4113,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c1.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c1.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c1.RcIconButton-contained:hover,
@@ -2598,8 +4135,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -2620,8 +4157,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c6.RcIconButton-contained:hover,
@@ -2642,8 +4179,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c7.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c7.RcIconButton-contained:hover,
@@ -2664,8 +4201,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c8.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c8.RcIconButton-contained:hover,
@@ -2686,8 +4223,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c9.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c9.RcIconButton-contained:hover,
@@ -2708,8 +4245,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c10.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c10.RcIconButton-contained:hover,
@@ -2730,8 +4267,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c11.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c11.RcIconButton-contained:hover,
@@ -2752,8 +4289,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -2950,7 +4487,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
     <button
       aria-describedby={null}
       aria-label="star"
-      className="MuiButtonBase-root c8 RcIconButton-root"
+      className="MuiButtonBase-root c8 RcIconButton-root RcIconButton-inverse"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -2988,7 +4525,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
     </button>
     <br />
     <button
-      className="MuiButtonBase-root c9 RcIconButton-root"
+      className="MuiButtonBase-root c9 RcIconButton-root RcIconButton-inverse"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -3279,9 +4816,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #3C9949;
 }
 
-.c3.RcIconButton-contained.focus-visible,
-.c3.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(60,153,73,0.84);
+.c3.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c3.RcIconButton-contained.focus-visible:before,
+.c3.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c3.RcIconButton-contained.focus-visible,
@@ -3289,10 +4838,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c3.RcIconButton-contained.focus-visible .c4,
 .c3.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c3.RcIconButton-contained:active {
-  background-color: rgba(60,153,73,0.76);
 }
 
 .c3.RcIconButton-contained:active,
@@ -3383,9 +4928,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #3C9949;
 }
 
-.c7.RcIconButton-contained.focus-visible,
-.c7.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(60,153,73,0.84);
+.c7.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c7.RcIconButton-contained.focus-visible:before,
+.c7.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c7.RcIconButton-contained.focus-visible,
@@ -3393,10 +4950,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c7.RcIconButton-contained.focus-visible .c4,
 .c7.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c7.RcIconButton-contained:active {
-  background-color: rgba(60,153,73,0.76);
 }
 
 .c7.RcIconButton-contained:active,
@@ -3485,9 +5038,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #3C9949;
 }
 
-.c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(60,153,73,0.84);
+.c8.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c8.RcIconButton-contained.focus-visible:before,
+.c8.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c8.RcIconButton-contained.focus-visible,
@@ -3495,10 +5060,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c8.RcIconButton-contained.focus-visible .c4,
 .c8.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c8.RcIconButton-contained:active {
-  background-color: rgba(60,153,73,0.76);
 }
 
 .c8.RcIconButton-contained:active,
@@ -3582,9 +5143,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #3C9949;
 }
 
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(60,153,73,0.84);
+.c9.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.c9.RcIconButton-contained.focus-visible:before,
+.c9.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c9.RcIconButton-contained.focus-visible,
@@ -3592,10 +5165,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c9.RcIconButton-contained.focus-visible .c4,
 .c9.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c9.RcIconButton-contained:active {
-  background-color: rgba(60,153,73,0.76);
 }
 
 .c9.RcIconButton-contained:active,
@@ -3699,9 +5268,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #3C9949;
 }
 
-.c10.RcIconButton-contained.focus-visible,
-.c10.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(60,153,73,0.84);
+.c10.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c10.RcIconButton-contained.focus-visible:before,
+.c10.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c10.RcIconButton-contained.focus-visible,
@@ -3709,10 +5290,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c10.RcIconButton-contained.focus-visible .c4,
 .c10.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c10.RcIconButton-contained:active {
-  background-color: rgba(60,153,73,0.76);
 }
 
 .c10.RcIconButton-contained:active,
@@ -3796,9 +5373,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #368541;
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(54,133,65,0.84);
+.c11.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c11.RcIconButton-contained.focus-visible:before,
+.c11.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c11.RcIconButton-contained.focus-visible,
@@ -3806,10 +5395,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c11.RcIconButton-contained.focus-visible .c4,
 .c11.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c11.RcIconButton-contained:active {
-  background-color: rgba(54,133,65,0.76);
 }
 
 .c11.RcIconButton-contained:active,
@@ -3900,9 +5485,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #368541;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(54,133,65,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -3910,10 +5507,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c12.RcIconButton-contained.focus-visible .c4,
 .c12.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(54,133,65,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -4002,9 +5595,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #368541;
 }
 
-.c13.RcIconButton-contained.focus-visible,
-.c13.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(54,133,65,0.84);
+.c13.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c13.RcIconButton-contained.focus-visible:before,
+.c13.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c13.RcIconButton-contained.focus-visible,
@@ -4012,10 +5617,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c13.RcIconButton-contained.focus-visible .c4,
 .c13.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c13.RcIconButton-contained:active {
-  background-color: rgba(54,133,65,0.76);
 }
 
 .c13.RcIconButton-contained:active,
@@ -4099,9 +5700,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #368541;
 }
 
-.c14.RcIconButton-contained.focus-visible,
-.c14.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(54,133,65,0.84);
+.c14.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.c14.RcIconButton-contained.focus-visible:before,
+.c14.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c14.RcIconButton-contained.focus-visible,
@@ -4109,10 +5722,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c14.RcIconButton-contained.focus-visible .c4,
 .c14.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c14.RcIconButton-contained:active {
-  background-color: rgba(54,133,65,0.76);
 }
 
 .c14.RcIconButton-contained:active,
@@ -4216,9 +5825,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #368541;
 }
 
-.c15.RcIconButton-contained.focus-visible,
-.c15.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(54,133,65,0.84);
+.c15.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c15.RcIconButton-contained.focus-visible:before,
+.c15.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c15.RcIconButton-contained.focus-visible,
@@ -4226,10 +5847,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c15.RcIconButton-contained.focus-visible .c4,
 .c15.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c15.RcIconButton-contained:active {
-  background-color: rgba(54,133,65,0.76);
 }
 
 .c15.RcIconButton-contained:active,
@@ -4313,9 +5930,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #FF8800;
 }
 
-.c16.RcIconButton-contained.focus-visible,
-.c16.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,136,0,0.84);
+.c16.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c16.RcIconButton-contained.focus-visible:before,
+.c16.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c16.RcIconButton-contained.focus-visible,
@@ -4323,10 +5952,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c16.RcIconButton-contained.focus-visible .c4,
 .c16.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: rgba(0,0,0,0.87);
-}
-
-.c16.RcIconButton-contained:active {
-  background-color: rgba(255,136,0,0.76);
 }
 
 .c16.RcIconButton-contained:active,
@@ -4417,9 +6042,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #FF8800;
 }
 
-.c17.RcIconButton-contained.focus-visible,
-.c17.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,136,0,0.84);
+.c17.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c17.RcIconButton-contained.focus-visible:before,
+.c17.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c17.RcIconButton-contained.focus-visible,
@@ -4427,10 +6064,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c17.RcIconButton-contained.focus-visible .c4,
 .c17.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: rgba(0,0,0,0.87);
-}
-
-.c17.RcIconButton-contained:active {
-  background-color: rgba(255,136,0,0.76);
 }
 
 .c17.RcIconButton-contained:active,
@@ -4519,9 +6152,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #FF8800;
 }
 
-.c18.RcIconButton-contained.focus-visible,
-.c18.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,136,0,0.84);
+.c18.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c18.RcIconButton-contained.focus-visible:before,
+.c18.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c18.RcIconButton-contained.focus-visible,
@@ -4529,10 +6174,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c18.RcIconButton-contained.focus-visible .c4,
 .c18.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: rgba(0,0,0,0.87);
-}
-
-.c18.RcIconButton-contained:active {
-  background-color: rgba(255,136,0,0.76);
 }
 
 .c18.RcIconButton-contained:active,
@@ -4616,9 +6257,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #FF8800;
 }
 
-.c19.RcIconButton-contained.focus-visible,
-.c19.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,136,0,0.84);
+.c19.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.c19.RcIconButton-contained.focus-visible:before,
+.c19.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c19.RcIconButton-contained.focus-visible,
@@ -4626,10 +6279,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c19.RcIconButton-contained.focus-visible .c4,
 .c19.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: rgba(0,0,0,0.87);
-}
-
-.c19.RcIconButton-contained:active {
-  background-color: rgba(255,136,0,0.76);
 }
 
 .c19.RcIconButton-contained:active,
@@ -4733,9 +6382,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #FF8800;
 }
 
-.c20.RcIconButton-contained.focus-visible,
-.c20.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,136,0,0.84);
+.c20.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c20.RcIconButton-contained.focus-visible:before,
+.c20.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c20.RcIconButton-contained.focus-visible,
@@ -4743,10 +6404,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c20.RcIconButton-contained.focus-visible .c4,
 .c20.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: rgba(0,0,0,0.87);
-}
-
-.c20.RcIconButton-contained:active {
-  background-color: rgba(255,136,0,0.76);
 }
 
 .c20.RcIconButton-contained:active,
@@ -4830,9 +6487,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #FFDFB1;
 }
 
-.c21.RcIconButton-contained.focus-visible,
-.c21.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,223,177,0.84);
+.c21.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c21.RcIconButton-contained.focus-visible:before,
+.c21.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c21.RcIconButton-contained.focus-visible,
@@ -4840,10 +6509,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c21.RcIconButton-contained.focus-visible .c4,
 .c21.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: rgba(0,0,0,0.87);
-}
-
-.c21.RcIconButton-contained:active {
-  background-color: rgba(255,223,177,0.76);
 }
 
 .c21.RcIconButton-contained:active,
@@ -4934,9 +6599,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #FFDFB1;
 }
 
-.c22.RcIconButton-contained.focus-visible,
-.c22.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,223,177,0.84);
+.c22.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c22.RcIconButton-contained.focus-visible:before,
+.c22.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c22.RcIconButton-contained.focus-visible,
@@ -4944,10 +6621,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c22.RcIconButton-contained.focus-visible .c4,
 .c22.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: rgba(0,0,0,0.87);
-}
-
-.c22.RcIconButton-contained:active {
-  background-color: rgba(255,223,177,0.76);
 }
 
 .c22.RcIconButton-contained:active,
@@ -5036,9 +6709,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #FFDFB1;
 }
 
-.c23.RcIconButton-contained.focus-visible,
-.c23.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,223,177,0.84);
+.c23.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c23.RcIconButton-contained.focus-visible:before,
+.c23.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c23.RcIconButton-contained.focus-visible,
@@ -5046,10 +6731,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c23.RcIconButton-contained.focus-visible .c4,
 .c23.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: rgba(0,0,0,0.87);
-}
-
-.c23.RcIconButton-contained:active {
-  background-color: rgba(255,223,177,0.76);
 }
 
 .c23.RcIconButton-contained:active,
@@ -5133,9 +6814,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #FFDFB1;
 }
 
-.c24.RcIconButton-contained.focus-visible,
-.c24.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,223,177,0.84);
+.c24.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.c24.RcIconButton-contained.focus-visible:before,
+.c24.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c24.RcIconButton-contained.focus-visible,
@@ -5143,10 +6836,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c24.RcIconButton-contained.focus-visible .c4,
 .c24.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: rgba(0,0,0,0.87);
-}
-
-.c24.RcIconButton-contained:active {
-  background-color: rgba(255,223,177,0.76);
 }
 
 .c24.RcIconButton-contained:active,
@@ -5250,9 +6939,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #FFDFB1;
 }
 
-.c25.RcIconButton-contained.focus-visible,
-.c25.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,223,177,0.84);
+.c25.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c25.RcIconButton-contained.focus-visible:before,
+.c25.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c25.RcIconButton-contained.focus-visible,
@@ -5260,10 +6961,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c25.RcIconButton-contained.focus-visible .c4,
 .c25.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: rgba(0,0,0,0.87);
-}
-
-.c25.RcIconButton-contained:active {
-  background-color: rgba(255,223,177,0.76);
 }
 
 .c25.RcIconButton-contained:active,
@@ -5347,9 +7044,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #FF8800;
 }
 
-.c26.RcIconButton-contained.focus-visible,
-.c26.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,136,0,0.84);
+.c26.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c26.RcIconButton-contained.focus-visible:before,
+.c26.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c26.RcIconButton-contained.focus-visible,
@@ -5357,10 +7066,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c26.RcIconButton-contained.focus-visible .c4,
 .c26.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: rgba(0,0,0,0.87);
-}
-
-.c26.RcIconButton-contained:active {
-  background-color: rgba(255,136,0,0.76);
 }
 
 .c26.RcIconButton-contained:active,
@@ -5451,9 +7156,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #FF8800;
 }
 
-.c27.RcIconButton-contained.focus-visible,
-.c27.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,136,0,0.84);
+.c27.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c27.RcIconButton-contained.focus-visible:before,
+.c27.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c27.RcIconButton-contained.focus-visible,
@@ -5461,10 +7178,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c27.RcIconButton-contained.focus-visible .c4,
 .c27.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: rgba(0,0,0,0.87);
-}
-
-.c27.RcIconButton-contained:active {
-  background-color: rgba(255,136,0,0.76);
 }
 
 .c27.RcIconButton-contained:active,
@@ -5553,9 +7266,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #FF8800;
 }
 
-.c28.RcIconButton-contained.focus-visible,
-.c28.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,136,0,0.84);
+.c28.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c28.RcIconButton-contained.focus-visible:before,
+.c28.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c28.RcIconButton-contained.focus-visible,
@@ -5563,10 +7288,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c28.RcIconButton-contained.focus-visible .c4,
 .c28.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: rgba(0,0,0,0.87);
-}
-
-.c28.RcIconButton-contained:active {
-  background-color: rgba(255,136,0,0.76);
 }
 
 .c28.RcIconButton-contained:active,
@@ -5650,9 +7371,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #FF8800;
 }
 
-.c29.RcIconButton-contained.focus-visible,
-.c29.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,136,0,0.84);
+.c29.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.c29.RcIconButton-contained.focus-visible:before,
+.c29.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c29.RcIconButton-contained.focus-visible,
@@ -5660,10 +7393,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c29.RcIconButton-contained.focus-visible .c4,
 .c29.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: rgba(0,0,0,0.87);
-}
-
-.c29.RcIconButton-contained:active {
-  background-color: rgba(255,136,0,0.76);
 }
 
 .c29.RcIconButton-contained:active,
@@ -5767,9 +7496,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #FF8800;
 }
 
-.c30.RcIconButton-contained.focus-visible,
-.c30.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,136,0,0.84);
+.c30.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c30.RcIconButton-contained.focus-visible:before,
+.c30.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c30.RcIconButton-contained.focus-visible,
@@ -5777,10 +7518,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c30.RcIconButton-contained.focus-visible .c4,
 .c30.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: rgba(0,0,0,0.87);
-}
-
-.c30.RcIconButton-contained:active {
-  background-color: rgba(255,136,0,0.76);
 }
 
 .c30.RcIconButton-contained:active,
@@ -5864,9 +7601,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #E6413C;
 }
 
-.c31.RcIconButton-contained.focus-visible,
-.c31.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(230,65,60,0.84);
+.c31.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c31.RcIconButton-contained.focus-visible:before,
+.c31.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c31.RcIconButton-contained.focus-visible,
@@ -5874,10 +7623,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c31.RcIconButton-contained.focus-visible .c4,
 .c31.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c31.RcIconButton-contained:active {
-  background-color: rgba(230,65,60,0.76);
 }
 
 .c31.RcIconButton-contained:active,
@@ -5968,9 +7713,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #E6413C;
 }
 
-.c32.RcIconButton-contained.focus-visible,
-.c32.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(230,65,60,0.84);
+.c32.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c32.RcIconButton-contained.focus-visible:before,
+.c32.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c32.RcIconButton-contained.focus-visible,
@@ -5978,10 +7735,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c32.RcIconButton-contained.focus-visible .c4,
 .c32.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c32.RcIconButton-contained:active {
-  background-color: rgba(230,65,60,0.76);
 }
 
 .c32.RcIconButton-contained:active,
@@ -6070,9 +7823,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #E6413C;
 }
 
-.c33.RcIconButton-contained.focus-visible,
-.c33.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(230,65,60,0.84);
+.c33.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c33.RcIconButton-contained.focus-visible:before,
+.c33.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c33.RcIconButton-contained.focus-visible,
@@ -6080,10 +7845,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c33.RcIconButton-contained.focus-visible .c4,
 .c33.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c33.RcIconButton-contained:active {
-  background-color: rgba(230,65,60,0.76);
 }
 
 .c33.RcIconButton-contained:active,
@@ -6167,9 +7928,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #E6413C;
 }
 
-.c34.RcIconButton-contained.focus-visible,
-.c34.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(230,65,60,0.84);
+.c34.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.c34.RcIconButton-contained.focus-visible:before,
+.c34.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c34.RcIconButton-contained.focus-visible,
@@ -6177,10 +7950,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c34.RcIconButton-contained.focus-visible .c4,
 .c34.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c34.RcIconButton-contained:active {
-  background-color: rgba(230,65,60,0.76);
 }
 
 .c34.RcIconButton-contained:active,
@@ -6284,9 +8053,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #E6413C;
 }
 
-.c35.RcIconButton-contained.focus-visible,
-.c35.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(230,65,60,0.84);
+.c35.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c35.RcIconButton-contained.focus-visible:before,
+.c35.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c35.RcIconButton-contained.focus-visible,
@@ -6294,10 +8075,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c35.RcIconButton-contained.focus-visible .c4,
 .c35.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c35.RcIconButton-contained:active {
-  background-color: rgba(230,65,60,0.76);
 }
 
 .c35.RcIconButton-contained:active,
@@ -6381,9 +8158,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #D63E39;
 }
 
-.c36.RcIconButton-contained.focus-visible,
-.c36.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(214,62,57,0.84);
+.c36.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c36.RcIconButton-contained.focus-visible:before,
+.c36.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c36.RcIconButton-contained.focus-visible,
@@ -6391,10 +8180,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c36.RcIconButton-contained.focus-visible .c4,
 .c36.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c36.RcIconButton-contained:active {
-  background-color: rgba(214,62,57,0.76);
 }
 
 .c36.RcIconButton-contained:active,
@@ -6485,9 +8270,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #D63E39;
 }
 
-.c37.RcIconButton-contained.focus-visible,
-.c37.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(214,62,57,0.84);
+.c37.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c37.RcIconButton-contained.focus-visible:before,
+.c37.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c37.RcIconButton-contained.focus-visible,
@@ -6495,10 +8292,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c37.RcIconButton-contained.focus-visible .c4,
 .c37.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c37.RcIconButton-contained:active {
-  background-color: rgba(214,62,57,0.76);
 }
 
 .c37.RcIconButton-contained:active,
@@ -6587,9 +8380,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #D63E39;
 }
 
-.c38.RcIconButton-contained.focus-visible,
-.c38.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(214,62,57,0.84);
+.c38.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c38.RcIconButton-contained.focus-visible:before,
+.c38.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c38.RcIconButton-contained.focus-visible,
@@ -6597,10 +8402,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c38.RcIconButton-contained.focus-visible .c4,
 .c38.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c38.RcIconButton-contained:active {
-  background-color: rgba(214,62,57,0.76);
 }
 
 .c38.RcIconButton-contained:active,
@@ -6684,9 +8485,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #D63E39;
 }
 
-.c39.RcIconButton-contained.focus-visible,
-.c39.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(214,62,57,0.84);
+.c39.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+}
+
+.c39.RcIconButton-contained.focus-visible:before,
+.c39.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c39.RcIconButton-contained.focus-visible,
@@ -6694,10 +8507,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c39.RcIconButton-contained.focus-visible .c4,
 .c39.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c39.RcIconButton-contained:active {
-  background-color: rgba(214,62,57,0.76);
 }
 
 .c39.RcIconButton-contained:active,
@@ -6801,9 +8610,21 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   background-color: #D63E39;
 }
 
-.c40.RcIconButton-contained.focus-visible,
-.c40.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(214,62,57,0.84);
+.c40.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c40.RcIconButton-contained.focus-visible:before,
+.c40.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c40.RcIconButton-contained.focus-visible,
@@ -6811,10 +8632,6 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 .c40.RcIconButton-contained.focus-visible .c4,
 .c40.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c40.RcIconButton-contained:active {
-  background-color: rgba(214,62,57,0.76);
 }
 
 .c40.RcIconButton-contained:active,
@@ -6862,8 +8679,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c3.RcIconButton-contained:hover {
-    background-color: rgba(60,153,73,0.92);
+  .c3.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c3.RcIconButton-contained:hover,
@@ -6884,8 +8701,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7.RcIconButton-contained:hover {
-    background-color: rgba(60,153,73,0.92);
+  .c7.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c7.RcIconButton-contained:hover,
@@ -6906,8 +8723,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-contained:hover {
-    background-color: rgba(60,153,73,0.92);
+  .c8.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c8.RcIconButton-contained:hover,
@@ -6928,8 +8745,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-contained:hover {
-    background-color: rgba(60,153,73,0.92);
+  .c9.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c9.RcIconButton-contained:hover,
@@ -6950,8 +8767,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-contained:hover {
-    background-color: rgba(60,153,73,0.92);
+  .c10.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c10.RcIconButton-contained:hover,
@@ -6972,8 +8789,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover {
-    background-color: rgba(54,133,65,0.92);
+  .c11.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c11.RcIconButton-contained:hover,
@@ -6994,8 +8811,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(54,133,65,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -7016,8 +8833,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcIconButton-contained:hover {
-    background-color: rgba(54,133,65,0.92);
+  .c13.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c13.RcIconButton-contained:hover,
@@ -7038,8 +8855,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c14.RcIconButton-contained:hover {
-    background-color: rgba(54,133,65,0.92);
+  .c14.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c14.RcIconButton-contained:hover,
@@ -7060,8 +8877,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c15.RcIconButton-contained:hover {
-    background-color: rgba(54,133,65,0.92);
+  .c15.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c15.RcIconButton-contained:hover,
@@ -7082,8 +8899,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c16.RcIconButton-contained:hover {
-    background-color: rgba(255,136,0,0.92);
+  .c16.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c16.RcIconButton-contained:hover,
@@ -7104,8 +8921,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c17.RcIconButton-contained:hover {
-    background-color: rgba(255,136,0,0.92);
+  .c17.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c17.RcIconButton-contained:hover,
@@ -7126,8 +8943,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c18.RcIconButton-contained:hover {
-    background-color: rgba(255,136,0,0.92);
+  .c18.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c18.RcIconButton-contained:hover,
@@ -7148,8 +8965,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c19.RcIconButton-contained:hover {
-    background-color: rgba(255,136,0,0.92);
+  .c19.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c19.RcIconButton-contained:hover,
@@ -7170,8 +8987,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c20.RcIconButton-contained:hover {
-    background-color: rgba(255,136,0,0.92);
+  .c20.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c20.RcIconButton-contained:hover,
@@ -7192,8 +9009,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c21.RcIconButton-contained:hover {
-    background-color: rgba(255,223,177,0.92);
+  .c21.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c21.RcIconButton-contained:hover,
@@ -7214,8 +9031,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c22.RcIconButton-contained:hover {
-    background-color: rgba(255,223,177,0.92);
+  .c22.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c22.RcIconButton-contained:hover,
@@ -7236,8 +9053,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c23.RcIconButton-contained:hover {
-    background-color: rgba(255,223,177,0.92);
+  .c23.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c23.RcIconButton-contained:hover,
@@ -7258,8 +9075,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c24.RcIconButton-contained:hover {
-    background-color: rgba(255,223,177,0.92);
+  .c24.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c24.RcIconButton-contained:hover,
@@ -7280,8 +9097,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c25.RcIconButton-contained:hover {
-    background-color: rgba(255,223,177,0.92);
+  .c25.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c25.RcIconButton-contained:hover,
@@ -7302,8 +9119,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c26.RcIconButton-contained:hover {
-    background-color: rgba(255,136,0,0.92);
+  .c26.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c26.RcIconButton-contained:hover,
@@ -7324,8 +9141,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c27.RcIconButton-contained:hover {
-    background-color: rgba(255,136,0,0.92);
+  .c27.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c27.RcIconButton-contained:hover,
@@ -7346,8 +9163,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c28.RcIconButton-contained:hover {
-    background-color: rgba(255,136,0,0.92);
+  .c28.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c28.RcIconButton-contained:hover,
@@ -7368,8 +9185,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c29.RcIconButton-contained:hover {
-    background-color: rgba(255,136,0,0.92);
+  .c29.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c29.RcIconButton-contained:hover,
@@ -7390,8 +9207,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c30.RcIconButton-contained:hover {
-    background-color: rgba(255,136,0,0.92);
+  .c30.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c30.RcIconButton-contained:hover,
@@ -7412,8 +9229,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c31.RcIconButton-contained:hover {
-    background-color: rgba(230,65,60,0.92);
+  .c31.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c31.RcIconButton-contained:hover,
@@ -7434,8 +9251,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c32.RcIconButton-contained:hover {
-    background-color: rgba(230,65,60,0.92);
+  .c32.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c32.RcIconButton-contained:hover,
@@ -7456,8 +9273,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c33.RcIconButton-contained:hover {
-    background-color: rgba(230,65,60,0.92);
+  .c33.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c33.RcIconButton-contained:hover,
@@ -7478,8 +9295,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c34.RcIconButton-contained:hover {
-    background-color: rgba(230,65,60,0.92);
+  .c34.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c34.RcIconButton-contained:hover,
@@ -7500,8 +9317,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c35.RcIconButton-contained:hover {
-    background-color: rgba(230,65,60,0.92);
+  .c35.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c35.RcIconButton-contained:hover,
@@ -7522,8 +9339,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c36.RcIconButton-contained:hover {
-    background-color: rgba(214,62,57,0.92);
+  .c36.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c36.RcIconButton-contained:hover,
@@ -7544,8 +9361,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c37.RcIconButton-contained:hover {
-    background-color: rgba(214,62,57,0.92);
+  .c37.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c37.RcIconButton-contained:hover,
@@ -7566,8 +9383,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c38.RcIconButton-contained:hover {
-    background-color: rgba(214,62,57,0.92);
+  .c38.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c38.RcIconButton-contained:hover,
@@ -7588,8 +9405,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c39.RcIconButton-contained:hover {
-    background-color: rgba(214,62,57,0.92);
+  .c39.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c39.RcIconButton-contained:hover,
@@ -7610,8 +9427,8 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c40.RcIconButton-contained:hover {
-    background-color: rgba(214,62,57,0.92);
+  .c40.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c40.RcIconButton-contained:hover,
@@ -7621,10 +9438,10 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 <div
-  className="MuiBox-root MuiBox-root-107"
+  className="MuiBox-root MuiBox-root-108"
 >
   <div
-    className="MuiBox-root MuiBox-root-108"
+    className="MuiBox-root MuiBox-root-109"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -7674,6 +9491,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -7708,11 +9528,14 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
     <button
-      className="MuiButtonBase-root c8 RcIconButton-root"
+      className="MuiButtonBase-root c8 RcIconButton-root RcIconButton-inverse"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -7742,6 +9565,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -7776,6 +9602,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -7815,7 +9644,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
     <br />
   </div>
   <div
-    className="MuiBox-root MuiBox-root-109"
+    className="MuiBox-root MuiBox-root-110"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -7865,6 +9694,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -7899,11 +9731,14 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
     <button
-      className="MuiButtonBase-root c13 RcIconButton-root"
+      className="MuiButtonBase-root c13 RcIconButton-root RcIconButton-inverse"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -7933,6 +9768,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -7967,6 +9805,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -8006,7 +9847,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
     <br />
   </div>
   <div
-    className="MuiBox-root MuiBox-root-110"
+    className="MuiBox-root MuiBox-root-111"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -8056,6 +9897,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -8090,11 +9934,14 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
     <button
-      className="MuiButtonBase-root c18 RcIconButton-root"
+      className="MuiButtonBase-root c18 RcIconButton-root RcIconButton-inverse"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -8124,6 +9971,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -8158,6 +10008,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -8197,7 +10050,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
     <br />
   </div>
   <div
-    className="MuiBox-root MuiBox-root-111"
+    className="MuiBox-root MuiBox-root-112"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -8247,6 +10100,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -8281,11 +10137,14 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
     <button
-      className="MuiButtonBase-root c23 RcIconButton-root"
+      className="MuiButtonBase-root c23 RcIconButton-root RcIconButton-inverse"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -8315,6 +10174,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -8349,6 +10211,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -8388,7 +10253,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
     <br />
   </div>
   <div
-    className="MuiBox-root MuiBox-root-112"
+    className="MuiBox-root MuiBox-root-113"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -8438,6 +10303,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -8472,11 +10340,14 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
     <button
-      className="MuiButtonBase-root c28 RcIconButton-root"
+      className="MuiButtonBase-root c28 RcIconButton-root RcIconButton-inverse"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -8506,6 +10377,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -8540,6 +10414,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -8579,7 +10456,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
     <br />
   </div>
   <div
-    className="MuiBox-root MuiBox-root-113"
+    className="MuiBox-root MuiBox-root-114"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -8629,6 +10506,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -8663,11 +10543,14 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
     <button
-      className="MuiButtonBase-root c33 RcIconButton-root"
+      className="MuiButtonBase-root c33 RcIconButton-root RcIconButton-inverse"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -8697,6 +10580,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -8731,6 +10617,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -8770,7 +10659,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
     <br />
   </div>
   <div
-    className="MuiBox-root MuiBox-root-114"
+    className="MuiBox-root MuiBox-root-115"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -8820,6 +10709,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -8854,11 +10746,14 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
     <button
-      className="MuiButtonBase-root c38 RcIconButton-root"
+      className="MuiButtonBase-root c38 RcIconButton-root RcIconButton-inverse"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -8888,6 +10783,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -8922,6 +10820,9 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
     <br />
     <br />
@@ -9051,9 +10952,21 @@ Array [
   background-color: #FF8800;
 }
 
-.c0.RcIconButton-contained.focus-visible,
-.c0.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,136,0,0.84);
+.c0.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c0.RcIconButton-contained.focus-visible:before,
+.c0.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c0.RcIconButton-contained.focus-visible,
@@ -9061,10 +10974,6 @@ Array [
 .c0.RcIconButton-contained.focus-visible .c1,
 .c0.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: rgba(0,0,0,0.87);
-}
-
-.c0.RcIconButton-contained:active {
-  background-color: rgba(255,136,0,0.76);
 }
 
 .c0.RcIconButton-contained:active,
@@ -9125,8 +11034,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0.RcIconButton-contained:hover {
-    background-color: rgba(255,136,0,0.92);
+  .c0.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c0.RcIconButton-contained:hover,
@@ -9302,9 +11211,21 @@ Array [
   background-color: #FF8800;
 }
 
-.c0.RcIconButton-contained.focus-visible,
-.c0.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(255,136,0,0.84);
+.c0.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c0.RcIconButton-contained.focus-visible:before,
+.c0.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c0.RcIconButton-contained.focus-visible,
@@ -9312,10 +11233,6 @@ Array [
 .c0.RcIconButton-contained.focus-visible .c1,
 .c0.RcIconButton-contained[data-focus-visible-added] .c1 {
   color: rgba(0,0,0,0.87);
-}
-
-.c0.RcIconButton-contained:active {
-  background-color: rgba(255,136,0,0.76);
 }
 
 .c0.RcIconButton-contained:active,
@@ -9356,8 +11273,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0.RcIconButton-contained:hover {
-    background-color: rgba(255,136,0,0.92);
+  .c0.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c0.RcIconButton-contained:hover,
@@ -9497,9 +11414,21 @@ Array [
   background-color: #666666;
 }
 
-.c1.RcIconButton-contained.focus-visible,
-.c1.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c1.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c1.RcIconButton-contained.focus-visible:before,
+.c1.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c1.RcIconButton-contained.focus-visible,
@@ -9507,10 +11436,6 @@ Array [
 .c1.RcIconButton-contained.focus-visible .c2,
 .c1.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c1.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c1.RcIconButton-contained:active,
@@ -9601,9 +11526,21 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -9611,10 +11548,6 @@ Array [
 .c5.RcIconButton-contained.focus-visible .c2,
 .c5.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -9705,9 +11638,21 @@ Array [
   background-color: #666666;
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c6.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c6.RcIconButton-contained.focus-visible:before,
+.c6.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c6.RcIconButton-contained.focus-visible,
@@ -9715,10 +11660,6 @@ Array [
 .c6.RcIconButton-contained.focus-visible .c2,
 .c6.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c6.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c6.RcIconButton-contained:active,
@@ -9809,9 +11750,21 @@ Array [
   background-color: #666666;
 }
 
-.c7.RcIconButton-contained.focus-visible,
-.c7.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c7.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c7.RcIconButton-contained.focus-visible:before,
+.c7.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c7.RcIconButton-contained.focus-visible,
@@ -9819,10 +11772,6 @@ Array [
 .c7.RcIconButton-contained.focus-visible .c2,
 .c7.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c7.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c7.RcIconButton-contained:active,
@@ -9913,9 +11862,21 @@ Array [
   background-color: #666666;
 }
 
-.c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c8.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c8.RcIconButton-contained.focus-visible:before,
+.c8.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c8.RcIconButton-contained.focus-visible,
@@ -9923,10 +11884,6 @@ Array [
 .c8.RcIconButton-contained.focus-visible .c2,
 .c8.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c8.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c8.RcIconButton-contained:active,
@@ -10017,9 +11974,21 @@ Array [
   background-color: #666666;
 }
 
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c9.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c9.RcIconButton-contained.focus-visible:before,
+.c9.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c9.RcIconButton-contained.focus-visible,
@@ -10027,10 +11996,6 @@ Array [
 .c9.RcIconButton-contained.focus-visible .c2,
 .c9.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c9.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c9.RcIconButton-contained:active,
@@ -10121,9 +12086,21 @@ Array [
   background-color: #666666;
 }
 
-.c10.RcIconButton-contained.focus-visible,
-.c10.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c10.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c10.RcIconButton-contained.focus-visible:before,
+.c10.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c10.RcIconButton-contained.focus-visible,
@@ -10131,10 +12108,6 @@ Array [
 .c10.RcIconButton-contained.focus-visible .c2,
 .c10.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c10.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c10.RcIconButton-contained:active,
@@ -10225,9 +12198,21 @@ Array [
   background-color: #666666;
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c11.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c11.RcIconButton-contained.focus-visible:before,
+.c11.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c11.RcIconButton-contained.focus-visible,
@@ -10235,10 +12220,6 @@ Array [
 .c11.RcIconButton-contained.focus-visible .c2,
 .c11.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c11.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c11.RcIconButton-contained:active,
@@ -10329,9 +12310,21 @@ Array [
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -10339,10 +12332,6 @@ Array [
 .c12.RcIconButton-contained.focus-visible .c2,
 .c12.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -10433,9 +12422,21 @@ Array [
   background-color: #666666;
 }
 
-.c13.RcIconButton-contained.focus-visible,
-.c13.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c13.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c13.RcIconButton-contained.focus-visible:before,
+.c13.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c13.RcIconButton-contained.focus-visible,
@@ -10443,10 +12444,6 @@ Array [
 .c13.RcIconButton-contained.focus-visible .c2,
 .c13.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c13.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c13.RcIconButton-contained:active,
@@ -10537,9 +12534,21 @@ Array [
   background-color: #666666;
 }
 
-.c14.RcIconButton-contained.focus-visible,
-.c14.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c14.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c14.RcIconButton-contained.focus-visible:before,
+.c14.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c14.RcIconButton-contained.focus-visible,
@@ -10547,10 +12556,6 @@ Array [
 .c14.RcIconButton-contained.focus-visible .c2,
 .c14.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c14.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c14.RcIconButton-contained:active,
@@ -10641,9 +12646,21 @@ Array [
   background-color: #666666;
 }
 
-.c15.RcIconButton-contained.focus-visible,
-.c15.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c15.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c15.RcIconButton-contained.focus-visible:before,
+.c15.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c15.RcIconButton-contained.focus-visible,
@@ -10651,10 +12668,6 @@ Array [
 .c15.RcIconButton-contained.focus-visible .c2,
 .c15.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c15.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c15.RcIconButton-contained:active,
@@ -10745,9 +12758,21 @@ Array [
   background-color: #666666;
 }
 
-.c16.RcIconButton-contained.focus-visible,
-.c16.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c16.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c16.RcIconButton-contained.focus-visible:before,
+.c16.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c16.RcIconButton-contained.focus-visible,
@@ -10755,10 +12780,6 @@ Array [
 .c16.RcIconButton-contained.focus-visible .c2,
 .c16.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c16.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c16.RcIconButton-contained:active,
@@ -10849,9 +12870,21 @@ Array [
   background-color: #666666;
 }
 
-.c17.RcIconButton-contained.focus-visible,
-.c17.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c17.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c17.RcIconButton-contained.focus-visible:before,
+.c17.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c17.RcIconButton-contained.focus-visible,
@@ -10859,10 +12892,6 @@ Array [
 .c17.RcIconButton-contained.focus-visible .c2,
 .c17.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c17.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c17.RcIconButton-contained:active,
@@ -10953,9 +12982,21 @@ Array [
   background-color: #666666;
 }
 
-.c18.RcIconButton-contained.focus-visible,
-.c18.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c18.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c18.RcIconButton-contained.focus-visible:before,
+.c18.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c18.RcIconButton-contained.focus-visible,
@@ -10963,10 +13004,6 @@ Array [
 .c18.RcIconButton-contained.focus-visible .c2,
 .c18.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c18.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c18.RcIconButton-contained:active,
@@ -11057,9 +13094,21 @@ Array [
   background-color: #666666;
 }
 
-.c19.RcIconButton-contained.focus-visible,
-.c19.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c19.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c19.RcIconButton-contained.focus-visible:before,
+.c19.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c19.RcIconButton-contained.focus-visible,
@@ -11067,10 +13116,6 @@ Array [
 .c19.RcIconButton-contained.focus-visible .c2,
 .c19.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c19.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c19.RcIconButton-contained:active,
@@ -11161,9 +13206,21 @@ Array [
   background-color: #666666;
 }
 
-.c20.RcIconButton-contained.focus-visible,
-.c20.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c20.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c20.RcIconButton-contained.focus-visible:before,
+.c20.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c20.RcIconButton-contained.focus-visible,
@@ -11171,10 +13228,6 @@ Array [
 .c20.RcIconButton-contained.focus-visible .c2,
 .c20.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c20.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c20.RcIconButton-contained:active,
@@ -11265,9 +13318,21 @@ Array [
   background-color: #666666;
 }
 
-.c21.RcIconButton-contained.focus-visible,
-.c21.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c21.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c21.RcIconButton-contained.focus-visible:before,
+.c21.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c21.RcIconButton-contained.focus-visible,
@@ -11275,10 +13340,6 @@ Array [
 .c21.RcIconButton-contained.focus-visible .c2,
 .c21.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c21.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c21.RcIconButton-contained:active,
@@ -11369,9 +13430,21 @@ Array [
   background-color: #666666;
 }
 
-.c22.RcIconButton-contained.focus-visible,
-.c22.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c22.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c22.RcIconButton-contained.focus-visible:before,
+.c22.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c22.RcIconButton-contained.focus-visible,
@@ -11379,10 +13452,6 @@ Array [
 .c22.RcIconButton-contained.focus-visible .c2,
 .c22.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c22.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c22.RcIconButton-contained:active,
@@ -11473,9 +13542,21 @@ Array [
   background-color: #666666;
 }
 
-.c23.RcIconButton-contained.focus-visible,
-.c23.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c23.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c23.RcIconButton-contained.focus-visible:before,
+.c23.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c23.RcIconButton-contained.focus-visible,
@@ -11483,10 +13564,6 @@ Array [
 .c23.RcIconButton-contained.focus-visible .c2,
 .c23.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c23.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c23.RcIconButton-contained:active,
@@ -11577,9 +13654,21 @@ Array [
   background-color: #666666;
 }
 
-.c24.RcIconButton-contained.focus-visible,
-.c24.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c24.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c24.RcIconButton-contained.focus-visible:before,
+.c24.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c24.RcIconButton-contained.focus-visible,
@@ -11587,10 +13676,6 @@ Array [
 .c24.RcIconButton-contained.focus-visible .c2,
 .c24.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c24.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c24.RcIconButton-contained:active,
@@ -11681,9 +13766,21 @@ Array [
   background-color: #666666;
 }
 
-.c25.RcIconButton-contained.focus-visible,
-.c25.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c25.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c25.RcIconButton-contained.focus-visible:before,
+.c25.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c25.RcIconButton-contained.focus-visible,
@@ -11691,10 +13788,6 @@ Array [
 .c25.RcIconButton-contained.focus-visible .c2,
 .c25.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c25.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c25.RcIconButton-contained:active,
@@ -11785,9 +13878,21 @@ Array [
   background-color: #666666;
 }
 
-.c26.RcIconButton-contained.focus-visible,
-.c26.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c26.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c26.RcIconButton-contained.focus-visible:before,
+.c26.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c26.RcIconButton-contained.focus-visible,
@@ -11795,10 +13900,6 @@ Array [
 .c26.RcIconButton-contained.focus-visible .c2,
 .c26.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c26.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c26.RcIconButton-contained:active,
@@ -11889,9 +13990,21 @@ Array [
   background-color: #666666;
 }
 
-.c27.RcIconButton-contained.focus-visible,
-.c27.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c27.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c27.RcIconButton-contained.focus-visible:before,
+.c27.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c27.RcIconButton-contained.focus-visible,
@@ -11899,10 +14012,6 @@ Array [
 .c27.RcIconButton-contained.focus-visible .c2,
 .c27.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c27.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c27.RcIconButton-contained:active,
@@ -11993,9 +14102,21 @@ Array [
   background-color: #666666;
 }
 
-.c28.RcIconButton-contained.focus-visible,
-.c28.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c28.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c28.RcIconButton-contained.focus-visible:before,
+.c28.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c28.RcIconButton-contained.focus-visible,
@@ -12003,10 +14124,6 @@ Array [
 .c28.RcIconButton-contained.focus-visible .c2,
 .c28.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c28.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c28.RcIconButton-contained:active,
@@ -12075,8 +14192,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c1.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c1.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c1.RcIconButton-contained:hover,
@@ -12097,8 +14214,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -12119,8 +14236,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c6.RcIconButton-contained:hover,
@@ -12141,8 +14258,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c7.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c7.RcIconButton-contained:hover,
@@ -12163,8 +14280,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c8.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c8.RcIconButton-contained:hover,
@@ -12185,8 +14302,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c9.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c9.RcIconButton-contained:hover,
@@ -12207,8 +14324,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c10.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c10.RcIconButton-contained:hover,
@@ -12229,8 +14346,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c11.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c11.RcIconButton-contained:hover,
@@ -12251,8 +14368,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -12273,8 +14390,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c13.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c13.RcIconButton-contained:hover,
@@ -12295,8 +14412,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c14.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c14.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c14.RcIconButton-contained:hover,
@@ -12317,8 +14434,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c15.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c15.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c15.RcIconButton-contained:hover,
@@ -12339,8 +14456,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c16.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c16.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c16.RcIconButton-contained:hover,
@@ -12361,8 +14478,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c17.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c17.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c17.RcIconButton-contained:hover,
@@ -12383,8 +14500,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c18.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c18.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c18.RcIconButton-contained:hover,
@@ -12405,8 +14522,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c19.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c19.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c19.RcIconButton-contained:hover,
@@ -12427,8 +14544,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c20.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c20.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c20.RcIconButton-contained:hover,
@@ -12449,8 +14566,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c21.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c21.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c21.RcIconButton-contained:hover,
@@ -12471,8 +14588,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c22.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c22.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c22.RcIconButton-contained:hover,
@@ -12493,8 +14610,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c23.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c23.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c23.RcIconButton-contained:hover,
@@ -12515,8 +14632,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c24.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c24.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c24.RcIconButton-contained:hover,
@@ -12537,8 +14654,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c25.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c25.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c25.RcIconButton-contained:hover,
@@ -12559,8 +14676,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c26.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c26.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c26.RcIconButton-contained:hover,
@@ -12581,8 +14698,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c27.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c27.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c27.RcIconButton-contained:hover,
@@ -12603,8 +14720,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c28.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c28.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c28.RcIconButton-contained:hover,
@@ -12628,10 +14745,10 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-71"
+    className="MuiBox-root MuiBox-root-72"
   >
     <div
-      className="MuiBox-root MuiBox-root-72"
+      className="MuiBox-root MuiBox-root-73"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12671,10 +14788,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-73"
+      className="MuiBox-root MuiBox-root-74"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12714,10 +14834,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-74"
+      className="MuiBox-root MuiBox-root-75"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12757,10 +14880,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-75"
+      className="MuiBox-root MuiBox-root-76"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12800,10 +14926,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-76"
+      className="MuiBox-root MuiBox-root-77"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12843,10 +14972,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-77"
+      className="MuiBox-root MuiBox-root-78"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12886,10 +15018,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-78"
+      className="MuiBox-root MuiBox-root-79"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12929,10 +15064,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-79"
+      className="MuiBox-root MuiBox-root-80"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -12972,10 +15110,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-80"
+      className="MuiBox-root MuiBox-root-81"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13015,10 +15156,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-81"
+      className="MuiBox-root MuiBox-root-82"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13058,10 +15202,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-82"
+      className="MuiBox-root MuiBox-root-83"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13101,10 +15248,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-83"
+      className="MuiBox-root MuiBox-root-84"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13144,10 +15294,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-84"
+      className="MuiBox-root MuiBox-root-85"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13187,10 +15340,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-85"
+      className="MuiBox-root MuiBox-root-86"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13230,10 +15386,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-86"
+      className="MuiBox-root MuiBox-root-87"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13273,10 +15432,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-87"
+      className="MuiBox-root MuiBox-root-88"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13316,10 +15478,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-88"
+      className="MuiBox-root MuiBox-root-89"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13359,10 +15524,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-89"
+      className="MuiBox-root MuiBox-root-90"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13402,10 +15570,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-90"
+      className="MuiBox-root MuiBox-root-91"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13445,10 +15616,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-91"
+      className="MuiBox-root MuiBox-root-92"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13488,10 +15662,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-92"
+      className="MuiBox-root MuiBox-root-93"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13531,10 +15708,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-93"
+      className="MuiBox-root MuiBox-root-94"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13574,10 +15754,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-94"
+      className="MuiBox-root MuiBox-root-95"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13617,10 +15800,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-95"
+      className="MuiBox-root MuiBox-root-96"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13660,10 +15846,13 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
     <div
-      className="MuiBox-root MuiBox-root-96"
+      className="MuiBox-root MuiBox-root-97"
     >
       <h5
         className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -13703,6 +15892,9 @@ Array [
           </svg>
           
         </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
       </button>
     </div>
   </div>,
@@ -15068,9 +17260,21 @@ Array [
   background-color: #666666;
 }
 
-.c1.RcIconButton-contained.focus-visible,
-.c1.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c1.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c1.RcIconButton-contained.focus-visible:before,
+.c1.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c1.RcIconButton-contained.focus-visible,
@@ -15078,10 +17282,6 @@ Array [
 .c1.RcIconButton-contained.focus-visible .c2,
 .c1.RcIconButton-contained[data-focus-visible-added] .c2 {
   color: #fff;
-}
-
-.c1.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c1.RcIconButton-contained:active,
@@ -15466,8 +17666,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c1.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c1.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c1.RcIconButton-contained:hover,
@@ -15477,7 +17677,7 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-97"
+    className="MuiBox-root MuiBox-root-98"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
@@ -15517,6 +17717,9 @@ Array [
         </svg>
         
       </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
     </button>
   </div>,
 ]

@@ -113,9 +113,21 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
   background-color: #F6AD16;
 }
 
-.c7.RcIconButton-contained.focus-visible,
-.c7.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(246,173,22,0.84);
+.c7.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c7.RcIconButton-contained.focus-visible:before,
+.c7.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
 }
 
 .c7.RcIconButton-contained.focus-visible,
@@ -123,10 +135,6 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
 .c7.RcIconButton-contained.focus-visible .c8,
 .c7.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: rgba(0,0,0,0.87);
-}
-
-.c7.RcIconButton-contained:active {
-  background-color: rgba(246,173,22,0.76);
 }
 
 .c7.RcIconButton-contained:active,
@@ -210,9 +218,21 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
   background-color: #666666;
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c11.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c11.RcIconButton-contained.focus-visible:before,
+.c11.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c11.RcIconButton-contained.focus-visible,
@@ -220,10 +240,6 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
 .c11.RcIconButton-contained.focus-visible .c8,
 .c11.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c11.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c11.RcIconButton-contained:active,
@@ -357,8 +373,8 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7.RcIconButton-contained:hover {
-    background-color: rgba(246,173,22,0.92);
+  .c7.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 
   .c7.RcIconButton-contained:hover,
@@ -379,8 +395,8 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c11.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c11.RcIconButton-contained:hover,
@@ -403,7 +419,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
     </div>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-135"
+    className="MuiBox-root MuiBox-root-136"
   >
     <p
       className="MuiTypography-root c3"
@@ -421,7 +437,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
     </p>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-136"
+    className="MuiBox-root MuiBox-root-137"
   >
     <h2
       className="MuiTypography-root c5"

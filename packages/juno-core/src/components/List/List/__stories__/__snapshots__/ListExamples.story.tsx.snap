@@ -87,9 +87,21 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
   background-color: #666666;
 }
 
-.c3.RcIconButton-contained.focus-visible,
-.c3.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c3.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c3.RcIconButton-contained.focus-visible:before,
+.c3.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c3.RcIconButton-contained.focus-visible,
@@ -97,10 +109,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
 .c3.RcIconButton-contained.focus-visible .c4,
 .c3.RcIconButton-contained[data-focus-visible-added] .c4 {
   color: #fff;
-}
-
-.c3.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c3.RcIconButton-contained:active,
@@ -229,8 +237,8 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c3.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c3.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c3.RcIconButton-contained:hover,

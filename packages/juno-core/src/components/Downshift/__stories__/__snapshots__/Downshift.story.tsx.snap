@@ -101,9 +101,21 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -111,10 +123,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
 .c5.RcIconButton-contained.focus-visible .c8,
 .c5.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -212,9 +220,21 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -222,10 +242,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
 .c12.RcIconButton-contained.focus-visible .c8,
 .c12.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -443,8 +459,8 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -465,8 +481,8 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -532,7 +548,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-144"
+        className="MuiBox-root MuiBox-root-145"
       >
         <button
           aria-hidden={true}
@@ -717,9 +733,21 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -727,10 +755,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
 .c5.RcIconButton-contained.focus-visible .c8,
 .c5.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -828,9 +852,21 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -838,10 +874,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
 .c12.RcIconButton-contained.focus-visible .c8,
 .c12.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -1077,8 +1109,8 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -1099,8 +1131,8 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -1187,7 +1219,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-160"
+        className="MuiBox-root MuiBox-root-161"
       >
         <button
           aria-hidden={true}
@@ -1372,9 +1404,21 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -1382,10 +1426,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
 .c5.RcIconButton-contained.focus-visible .c8,
 .c5.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -1483,9 +1523,21 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -1493,10 +1545,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
 .c12.RcIconButton-contained.focus-visible .c8,
 .c12.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -1714,8 +1762,8 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -1736,8 +1784,8 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -1803,7 +1851,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-145"
+        className="MuiBox-root MuiBox-root-146"
       >
         <button
           aria-hidden={true}
@@ -1989,9 +2037,21 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -1999,10 +2059,6 @@ Array [
 .c5.RcIconButton-contained.focus-visible .c6,
 .c5.RcIconButton-contained[data-focus-visible-added] .c6 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -2198,8 +2254,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -2475,9 +2531,21 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -2485,10 +2553,6 @@ Array [
 .c5.RcIconButton-contained.focus-visible .c6,
 .c5.RcIconButton-contained[data-focus-visible-added] .c6 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -2684,8 +2748,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -3019,9 +3083,21 @@ Array [
   background-color: #666666;
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c6.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c6.RcIconButton-contained.focus-visible:before,
+.c6.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c6.RcIconButton-contained.focus-visible,
@@ -3029,10 +3105,6 @@ Array [
 .c6.RcIconButton-contained.focus-visible .c7,
 .c6.RcIconButton-contained[data-focus-visible-added] .c7 {
   color: #fff;
-}
-
-.c6.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c6.RcIconButton-contained:active,
@@ -3130,9 +3202,21 @@ Array [
   background-color: #666666;
 }
 
-.c14.RcIconButton-contained.focus-visible,
-.c14.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c14.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c14.RcIconButton-contained.focus-visible:before,
+.c14.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c14.RcIconButton-contained.focus-visible,
@@ -3140,10 +3224,6 @@ Array [
 .c14.RcIconButton-contained.focus-visible .c7,
 .c14.RcIconButton-contained[data-focus-visible-added] .c7 {
   color: #fff;
-}
-
-.c14.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c14.RcIconButton-contained:active,
@@ -3543,8 +3623,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c6.RcIconButton-contained:hover,
@@ -3565,8 +3645,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c14.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c14.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c14.RcIconButton-contained:hover,
@@ -3870,7 +3950,7 @@ Array [
         className="c10"
       >
         <div
-          className="MuiBox-root MuiBox-root-147"
+          className="MuiBox-root MuiBox-root-148"
         >
           <button
             aria-hidden={true}
@@ -4057,9 +4137,21 @@ Array [
   background-color: #666666;
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c11.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c11.RcIconButton-contained.focus-visible:before,
+.c11.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c11.RcIconButton-contained.focus-visible,
@@ -4067,10 +4159,6 @@ Array [
 .c11.RcIconButton-contained.focus-visible .c7,
 .c11.RcIconButton-contained[data-focus-visible-added] .c7 {
   color: #fff;
-}
-
-.c11.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c11.RcIconButton-contained:active,
@@ -4202,9 +4290,21 @@ Array [
   background-color: #666666;
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c6.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c6.RcIconButton-contained.focus-visible:before,
+.c6.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c6.RcIconButton-contained.focus-visible,
@@ -4212,10 +4312,6 @@ Array [
 .c6.RcIconButton-contained.focus-visible .c7,
 .c6.RcIconButton-contained[data-focus-visible-added] .c7 {
   color: #fff;
-}
-
-.c6.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c6.RcIconButton-contained:active,
@@ -4313,9 +4409,21 @@ Array [
   background-color: #666666;
 }
 
-.c15.RcIconButton-contained.focus-visible,
-.c15.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c15.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c15.RcIconButton-contained.focus-visible:before,
+.c15.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c15.RcIconButton-contained.focus-visible,
@@ -4323,10 +4431,6 @@ Array [
 .c15.RcIconButton-contained.focus-visible .c7,
 .c15.RcIconButton-contained[data-focus-visible-added] .c7 {
   color: #fff;
-}
-
-.c15.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c15.RcIconButton-contained:active,
@@ -4658,8 +4762,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c11.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c11.RcIconButton-contained:hover,
@@ -4694,8 +4798,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c6.RcIconButton-contained:hover,
@@ -4716,8 +4820,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c15.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c15.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c15.RcIconButton-contained:hover,
@@ -4943,7 +5047,7 @@ Array [
         className="c10"
       >
         <div
-          className="MuiBox-root MuiBox-root-148"
+          className="MuiBox-root MuiBox-root-149"
         >
           <button
             aria-hidden={true}
@@ -5131,9 +5235,21 @@ Array [
   background-color: #666666;
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c6.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c6.RcIconButton-contained.focus-visible:before,
+.c6.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c6.RcIconButton-contained.focus-visible,
@@ -5141,10 +5257,6 @@ Array [
 .c6.RcIconButton-contained.focus-visible .c7,
 .c6.RcIconButton-contained[data-focus-visible-added] .c7 {
   color: #fff;
-}
-
-.c6.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c6.RcIconButton-contained:active,
@@ -5344,9 +5456,21 @@ Array [
   background-color: #BE3933;
 }
 
-.c14.RcIconButton-contained.focus-visible,
-.c14.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(190,57,51,0.84);
+.c14.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c14.RcIconButton-contained.focus-visible:before,
+.c14.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c14.RcIconButton-contained.focus-visible,
@@ -5354,10 +5478,6 @@ Array [
 .c14.RcIconButton-contained.focus-visible .c7,
 .c14.RcIconButton-contained[data-focus-visible-added] .c7 {
   color: #fff;
-}
-
-.c14.RcIconButton-contained:active {
-  background-color: rgba(190,57,51,0.76);
 }
 
 .c14.RcIconButton-contained:active,
@@ -5655,8 +5775,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c6.RcIconButton-contained:hover,
@@ -5719,8 +5839,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c14.RcIconButton-contained:hover {
-    background-color: rgba(190,57,51,0.92);
+  .c14.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c14.RcIconButton-contained:hover,
@@ -5928,7 +6048,7 @@ Array [
         className="c10"
       >
         <div
-          className="MuiBox-root MuiBox-root-149"
+          className="MuiBox-root MuiBox-root-150"
         >
           <button
             aria-hidden={true}
@@ -6115,9 +6235,21 @@ Array [
   background-color: #666666;
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c6.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c6.RcIconButton-contained.focus-visible:before,
+.c6.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c6.RcIconButton-contained.focus-visible,
@@ -6125,10 +6257,6 @@ Array [
 .c6.RcIconButton-contained.focus-visible .c7,
 .c6.RcIconButton-contained[data-focus-visible-added] .c7 {
   color: #fff;
-}
-
-.c6.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c6.RcIconButton-contained:active,
@@ -6226,9 +6354,21 @@ Array [
   background-color: #666666;
 }
 
-.c14.RcIconButton-contained.focus-visible,
-.c14.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c14.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c14.RcIconButton-contained.focus-visible:before,
+.c14.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c14.RcIconButton-contained.focus-visible,
@@ -6236,10 +6376,6 @@ Array [
 .c14.RcIconButton-contained.focus-visible .c7,
 .c14.RcIconButton-contained[data-focus-visible-added] .c7 {
   color: #fff;
-}
-
-.c14.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c14.RcIconButton-contained:active,
@@ -6639,8 +6775,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c6.RcIconButton-contained:hover,
@@ -6661,8 +6797,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c14.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c14.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c14.RcIconButton-contained:hover,
@@ -6912,7 +7048,7 @@ Array [
         className="c10"
       >
         <div
-          className="MuiBox-root MuiBox-root-150"
+          className="MuiBox-root MuiBox-root-151"
         >
           <button
             aria-hidden={true}
@@ -7582,9 +7718,21 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -7592,10 +7740,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
 .c5.RcIconButton-contained.focus-visible .c8,
 .c5.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -7693,9 +7837,21 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -7703,10 +7859,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
 .c12.RcIconButton-contained.focus-visible .c8,
 .c12.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -7924,8 +8076,8 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -7946,8 +8098,8 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -8013,7 +8165,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-146"
+        className="MuiBox-root MuiBox-root-147"
       >
         <button
           aria-hidden={true}
@@ -8234,9 +8386,21 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -8244,10 +8408,6 @@ Array [
 .c5.RcIconButton-contained.focus-visible .c8,
 .c5.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -8345,9 +8505,21 @@ Array [
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -8355,10 +8527,6 @@ Array [
 .c12.RcIconButton-contained.focus-visible .c8,
 .c12.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -8576,8 +8744,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -8598,8 +8766,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -8665,7 +8833,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-152"
+          className="MuiBox-root MuiBox-root-153"
         >
           <button
             aria-hidden={true}
@@ -8887,9 +9055,21 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -8897,10 +9077,6 @@ Array [
 .c5.RcIconButton-contained.focus-visible .c8,
 .c5.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -8998,9 +9174,21 @@ Array [
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -9008,10 +9196,6 @@ Array [
 .c12.RcIconButton-contained.focus-visible .c8,
 .c12.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -9229,8 +9413,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -9251,8 +9435,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -9318,7 +9502,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-153"
+          className="MuiBox-root MuiBox-root-154"
         >
           <button
             aria-hidden={true}
@@ -9540,9 +9724,21 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -9550,10 +9746,6 @@ Array [
 .c5.RcIconButton-contained.focus-visible .c8,
 .c5.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -9651,9 +9843,21 @@ Array [
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -9661,10 +9865,6 @@ Array [
 .c12.RcIconButton-contained.focus-visible .c8,
 .c12.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -9882,8 +10082,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -9904,8 +10104,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -9971,7 +10171,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-154"
+          className="MuiBox-root MuiBox-root-155"
         >
           <button
             aria-hidden={true}
@@ -10193,9 +10393,21 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -10203,10 +10415,6 @@ Array [
 .c5.RcIconButton-contained.focus-visible .c8,
 .c5.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -10304,9 +10512,21 @@ Array [
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -10314,10 +10534,6 @@ Array [
 .c12.RcIconButton-contained.focus-visible .c8,
 .c12.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -10535,8 +10751,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -10557,8 +10773,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -10624,7 +10840,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-155"
+          className="MuiBox-root MuiBox-root-156"
         >
           <button
             aria-hidden={true}
@@ -10815,9 +11031,21 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -10825,10 +11053,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
 .c5.RcIconButton-contained.focus-visible .c8,
 .c5.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -10926,9 +11150,21 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -10936,10 +11172,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
 .c12.RcIconButton-contained.focus-visible .c8,
 .c12.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -11157,8 +11389,8 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -11179,8 +11411,8 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -11246,7 +11478,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-151"
+        className="MuiBox-root MuiBox-root-152"
       >
         <button
           aria-hidden={true}
@@ -11437,9 +11669,21 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -11447,10 +11691,6 @@ Array [
 .c5.RcIconButton-contained.focus-visible .c8,
 .c5.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -11548,9 +11788,21 @@ Array [
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -11558,10 +11810,6 @@ Array [
 .c12.RcIconButton-contained.focus-visible .c8,
 .c12.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -11787,8 +12035,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -11809,8 +12057,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -11880,7 +12128,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-157"
+          className="MuiBox-root MuiBox-root-158"
         >
           <button
             aria-hidden={true}
@@ -12062,9 +12310,21 @@ Array [
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -12072,10 +12332,6 @@ Array [
 .c5.RcIconButton-contained.focus-visible .c8,
 .c5.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -12173,9 +12429,21 @@ Array [
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -12183,10 +12451,6 @@ Array [
 .c12.RcIconButton-contained.focus-visible .c8,
 .c12.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -12408,8 +12672,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -12430,8 +12694,8 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -12501,7 +12765,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-158"
+          className="MuiBox-root MuiBox-root-159"
         >
           <button
             aria-hidden={true}
@@ -12687,9 +12951,21 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
   background-color: #666666;
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c6.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c6.RcIconButton-contained.focus-visible:before,
+.c6.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c6.RcIconButton-contained.focus-visible,
@@ -12697,10 +12973,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
 .c6.RcIconButton-contained.focus-visible .c9,
 .c6.RcIconButton-contained[data-focus-visible-added] .c9 {
   color: #fff;
-}
-
-.c6.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c6.RcIconButton-contained:active,
@@ -12798,9 +13070,21 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
   background-color: #666666;
 }
 
-.c13.RcIconButton-contained.focus-visible,
-.c13.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c13.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c13.RcIconButton-contained.focus-visible:before,
+.c13.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c13.RcIconButton-contained.focus-visible,
@@ -12808,10 +13092,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
 .c13.RcIconButton-contained.focus-visible .c9,
 .c13.RcIconButton-contained[data-focus-visible-added] .c9 {
   color: #fff;
-}
-
-.c13.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c13.RcIconButton-contained:active,
@@ -13096,8 +13376,8 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c6.RcIconButton-contained:hover,
@@ -13118,8 +13398,8 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c13.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c13.RcIconButton-contained:hover,
@@ -13185,7 +13465,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
       className="c4"
     >
       <div
-        className="MuiBox-root MuiBox-root-159"
+        className="MuiBox-root MuiBox-root-160"
       >
         <button
           aria-hidden={true}
@@ -13370,9 +13650,21 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
   background-color: #666666;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c5.RcIconButton-contained.focus-visible,
@@ -13380,10 +13672,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
 .c5.RcIconButton-contained.focus-visible .c8,
 .c5.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c5.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c5.RcIconButton-contained:active,
@@ -13481,9 +13769,21 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
   background-color: #666666;
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.84);
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
 }
 
 .c12.RcIconButton-contained.focus-visible,
@@ -13491,10 +13791,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
 .c12.RcIconButton-contained.focus-visible .c8,
 .c12.RcIconButton-contained[data-focus-visible-added] .c8 {
   color: #fff;
-}
-
-.c12.RcIconButton-contained:active {
-  background-color: rgba(102,102,102,0.76);
 }
 
 .c12.RcIconButton-contained:active,
@@ -13708,8 +14004,8 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c5.RcIconButton-contained:hover,
@@ -13730,8 +14026,8 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover {
-    background-color: rgba(102,102,102,0.92);
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 
   .c12.RcIconButton-contained:hover,
@@ -13797,7 +14093,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-156"
+        className="MuiBox-root MuiBox-root-157"
       >
         <button
           aria-hidden={true}

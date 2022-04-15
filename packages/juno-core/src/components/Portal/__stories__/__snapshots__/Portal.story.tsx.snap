@@ -15,7 +15,7 @@ exports[`Storyshots 🚀 Cleanup Components/Portal Portal 1`] = `
 }
 
 <div
-  className="MuiBox-root MuiBox-root-330"
+  className="MuiBox-root MuiBox-root-331"
 >
   <p
     className="MuiTypography-root c0 c1 MuiTypography-noWrap"
