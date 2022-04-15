@@ -2,24 +2,7 @@ import axios from 'axios';
 import { spawnSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
-
-function clearString(s: string) {
-  const pattern = new RegExp(/[.\-_]/);
-  let rs = '';
-  for (let i = 0; i < s.length; i++) {
-    rs = rs + s.substr(i, 1).replace(pattern, ' ');
-  }
-  return rs;
-}
-
-export function camelize(str: string) {
-  let currentStr = ` ${str}`;
-  currentStr = clearString(currentStr);
-  return currentStr.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, (match, index) => {
-    if (+match === 0) return ''; // or if (/\s+/.test(match)) for white spaces
-    return index === 0 ? match.toLowerCase() : match.toUpperCase();
-  });
-}
+import camelCase from 'lodash/camelCase';
 
 const baseDir = path.join(__dirname, '..');
 const devUtilsDir = path.join(baseDir, 'devUtils');
@@ -157,7 +140,10 @@ ${contentValue}
 
         const fName = `${key}${iconSet[key] > 1 ? `-${iconSet[key]}` : ''}`;
 
-        iconMap[camelize(fName) || '0'] = fileName;
+        const camelText = camelCase(fName) || '0';
+        const iconName = `${camelText[0].toUpperCase()}${camelText.slice(1)}`;
+
+        iconMap[iconName] = fileName;
 
         fs.writeFileSync(`${JunoTmpIconPath}/${fName}.svg`, svg);
       }
