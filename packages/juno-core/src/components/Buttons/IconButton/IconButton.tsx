@@ -1,4 +1,4 @@
-import React, { forwardRef, memo, ReactElement } from 'react';
+import React, { forwardRef, memo, ReactElement, useMemo } from 'react';
 
 import clsx from 'clsx';
 
@@ -12,6 +12,7 @@ import {
   useDeprecatedCheck,
   useTheme,
   useThemeProps,
+  combineClasses,
 } from '../../../foundation';
 import { RcIcon, RcIconProps, RcIconSize } from '../../Icon';
 import { RcTooltip, withTooltip } from '../../Tooltip';
@@ -57,6 +58,10 @@ type RcIconButtonProps = {
    * 0 ~ 24 for different elevation shadow
    */
   activeElevation?: keyof RcTheme['shadows'];
+  /**
+   * not have fake border on `inverse` and `contained` variant in `highContrast` theme
+   */
+  disabledFakeBorder?: boolean;
 } & RcIconButtonDeprecatedProps &
   Pick<
     RcIconProps,
@@ -67,7 +72,9 @@ type RcIconButtonProps = {
     | 'iconSize'
     | 'color'
   > &
-  RcClassesProps<'invisible' | 'outline' | 'contained' | 'icon' | 'persistBg'> &
+  RcClassesProps<
+    'invisible' | 'outline' | 'contained' | 'inverse' | 'icon' | 'persistBg'
+  > &
   RcBaseProps<RcButtonBaseProps, 'color'>;
 
 const _RcIconButton = memo(
@@ -82,9 +89,10 @@ const _RcIconButton = memo(
     const {
       buttonRef = ref,
       className,
-      classes,
+      classes: classesProp,
       children,
       title,
+      disabledFakeBorder,
       symbol,
       disabled,
       invisible,
@@ -123,19 +131,21 @@ const _RcIconButton = memo(
 
     const isOutline = variant === 'outline';
     const isContained = variant === 'contained';
+    const isInverse = variant === 'inverse';
     const isPlain = variant === 'plain';
 
-    const IconClassName = clsx(
-      className,
-      classes!.root,
-      RcIconButtonClasses.root,
-      {
-        [RcIconButtonClasses.disabled]: disabled,
-        [RcIconButtonClasses.invisible]: invisible,
-        [RcIconButtonClasses.outline]: isOutline,
-        [RcIconButtonClasses.contained]: isContained,
-      },
+    const classes = useMemo(
+      () => combineClasses(RcIconButtonClasses, classesProp),
+      [classesProp],
     );
+
+    const IconClassName = clsx(className, classes.root, {
+      [classes.disabled]: disabled,
+      [classes.invisible]: invisible,
+      [classes.outline]: isOutline,
+      [classes.contained]: isContained,
+      [classes.inverse]: isInverse,
+    });
 
     const iconButton = (() => {
       const icon =
@@ -224,7 +234,6 @@ RcIconButton.defaultProps = {
   type: 'button',
   focusRipple: true,
   disableTouchRipple: true,
-  centerRipple: true,
   classes: {},
   useRcTooltip: true,
 };

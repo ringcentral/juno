@@ -3,7 +3,15 @@ import { RcIconSizes } from '../../../Icon/utils';
 import { RcIconButtonProps, RcIconButtonSize } from '../IconButton';
 
 export const RcIconButtonClasses = RcClasses<RcIconButtonProps>(
-  ['root', 'disabled', 'invisible', 'outline', 'contained', 'persistBg'],
+  [
+    'root',
+    'disabled',
+    'invisible',
+    'outline',
+    'contained',
+    'inverse',
+    'persistBg',
+  ],
   'RcIconButton',
 );
 

@@ -13,6 +13,7 @@ import {
   RcThemedStyled,
   setOpacity,
   shadows,
+  fakeBorder,
 } from '../../../../foundation';
 import { RcIcon } from '../../../Icon';
 import { RcIconButtonProps, RcIconButtonVariant } from '../IconButton';
@@ -70,7 +71,9 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
   useColorWhenDisabled,
   shouldPersistBg,
   radius: radiusProp,
+  disableRipple,
   elevation,
+  disabledFakeBorder,
   activeElevation,
 }) => {
   const iconSize = RcIconButtonSizes[size!];
@@ -98,6 +101,16 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
   const nowShadow =
     elevation !== undefined ? shadows(elevation) : defaultShadow;
 
+  const radiusValue = radius(currRadius);
+
+  const contrastColorBorder =
+    !disabledFakeBorder &&
+    fakeBorder({
+      color: palette2('highContrast'),
+      radius: currRadius,
+      pseudo: true,
+    });
+
   return css`
     display: inline-flex;
     justify-content: center;
@@ -106,7 +119,7 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
     width: ${containerSize};
     height: ${containerSize};
     color: ${mainColor};
-    border-radius: ${radius(currRadius)};
+    border-radius: ${radiusValue};
     transition: ${backgroundTransition};
     cursor: ${disabled ? 'default' : 'pointer'};
     background-color: ${(shouldPersistBg || isInverse) && persistBgColor};
@@ -195,9 +208,25 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
       color: ${mainColorContrast};
       background-color: ${mainColor};
 
+      &:before {
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: ${radiusValue};
+        position: absolute;
+      }
+
+      ${contrastColorBorder};
+
       ${nonTouchHoverMedia} {
         &:hover {
-          background-color: ${setOpacity(mainColor, '08', true)};
+          &:before {
+            background-color: ${setOpacity(mainColorContrast, '08')};
+          }
 
           ${childrenClass} {
             color: ${mainColorContrast};
@@ -206,7 +235,9 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
       }
 
       ${focusVisible} {
-        background-color: ${setOpacity(mainColor, '16', true)};
+        &:before {
+          background-color: ${setOpacity(mainColorContrast, '16')};
+        }
 
         ${childrenClass} {
           color: ${mainColorContrast};
@@ -214,12 +245,21 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
       }
 
       &:active {
-        background-color: ${setOpacity(mainColor, '24', true)};
+        ${disableRipple &&
+        css`
+          &:before {
+            background-color: ${setOpacity(mainColorContrast, '24')};
+          }
+        `}
 
         ${childrenClass} {
           color: ${mainColorContrast};
         }
       }
+    }
+
+    &.${RcIconButtonClasses.inverse} {
+      ${contrastColorBorder};
     }
 
     .${RcIconButtonTouchRippleClasses.ripplePulsate} {

@@ -7,7 +7,7 @@ import {
   RcPaletteProp,
   RcText,
 } from '@ringcentral/juno';
-import { Star as StarIcon } from '@ringcentral/juno-icon';
+import { Star as StarIcon, Phone } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -133,6 +133,84 @@ IconButtonExamples.argTypes = {
     'symbol',
     'title',
   ]),
+};
+
+export const IconButtonContained: Story<IconButtonProps> = ({
+  variant = 'contained',
+  ...args
+}) => {
+  switchToControlKnobs();
+
+  return (
+    <RcBox margin="1em" textAlign="center" key={variant}>
+      <Title>{variant}</Title>
+      <RcIconButton variant={variant} symbol={Phone} {...args} />
+      <RcIconButton
+        variant={variant}
+        symbol={Phone}
+        {...args}
+        color="neutral.b01"
+      />
+      <RcIconButton
+        variant={variant}
+        symbol={Phone}
+        {...args}
+        color="neutral.b05"
+      />
+      <RcIconButton
+        variant={variant}
+        symbol={Phone}
+        color="success.b03"
+        elevation={0}
+        activeElevation={0}
+        {...args}
+      />
+      <br />
+      <br />
+      <Title>Disabled ripple</Title>
+      <RcIconButton
+        variant={variant}
+        symbol={Phone}
+        disableRipple
+        elevation={0}
+        activeElevation={0}
+        color="danger.b04"
+        {...args}
+      />
+      <RcIconButton
+        variant="inverse"
+        symbol={Phone}
+        disableRipple
+        elevation={0}
+        activeElevation={0}
+        color="danger.b04"
+        {...args}
+      />
+      <br />
+      <br />
+      <Title>
+        disabledFakeBorder
+        <br />
+        <RcText highlight variant="body1">
+          (Only use in highContractMode)
+        </RcText>
+      </Title>
+      <RcIconButton
+        variant="contained"
+        symbol={Phone}
+        disabledFakeBorder
+        color="danger.b04"
+        {...args}
+      />
+      <RcIconButton
+        variant="inverse"
+        symbol={Phone}
+        disabledFakeBorder
+        color="danger.b04"
+        {...args}
+      />
+    </RcBox>
+  );
 };
 
 export const IconButtonWithElevation: Story<IconButtonProps> = () => {
