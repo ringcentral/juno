@@ -2,19 +2,33 @@ import React, { FunctionComponent, useEffect, useMemo, useState } from 'react';
 
 import {
   palette2,
+  radius,
   RcBox,
   RcCircularProgress,
   RcIcon,
+  RcText,
   RcTextField,
   RcTypography,
   styled,
   useEventCallback,
+  css,
 } from '@ringcentral/juno';
+import * as allIcons from '@ringcentral/juno-icon';
 import { Warning } from '@ringcentral/juno-icon';
 import localIcons from '@ringcentral/juno-icon/devUtils/iconSymbol';
 import { Meta } from '@storybook/react';
 
+import { SelectionSvgResponse } from './SelectionSvgResponse';
+
 const svgToComponentMapping = require('@ringcentral/juno-icon/devUtils/svgToComponentMapping.ts');
+
+const localIconMap = Object.entries<any>(svgToComponentMapping).reduce<any>(
+  (prev, [key, value]) => {
+    prev[value] = key;
+    return prev;
+  },
+  {},
+);
 
 export default {
   title: '🔧 Foundation/Icon List',
@@ -29,62 +43,45 @@ const StyledList = styled.div`
   grid-template-columns: repeat(5, 1fr);
 `;
 
-const StyledIcon = styled.div<{ state: 'new' | 'delete' | 'exist' }>`
+type StyledIconProps = {
+  state: 'new' | 'delete' | 'exist';
+  duplicated?: boolean;
+};
+
+const StyledIcon = styled.div<StyledIconProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 10px;
-  color: ${({ state }) => {
-    switch (state) {
-      case 'new':
-        return palette2('success', 'f02');
-      case 'delete':
-        return palette2('danger', 'f02');
-      default:
-        return palette2('neutral', 'f06');
-    }
-  }};
+  position: relative;
 
   & svg {
-    margin-bottom: 4px;
-    box-shadow: 0 0 10px
-      ${({ state }) => {
-        switch (state) {
-          case 'exist':
-            return 'silver';
-          case 'new':
-            return 'green';
-          case 'delete':
-            return 'red';
-          default:
-            return 'silver';
-        }
-      }};
-    width: 1em;
-    height: 1em;
     font-size: 36px;
+
+    ${({ state, duplicated }) => {
+      if (duplicated) {
+        return css`
+          box-shadow: 0 0 3px 5px ${palette2('warning', 'f02')};
+        `;
+      }
+      switch (state) {
+        case 'new':
+          return css`
+            box-shadow: 0 0 3px 5px ${palette2('success', 'f02')};
+          `;
+        case 'delete':
+          return css`
+            box-shadow: 0 0 3px 5px ${palette2('danger', 'f02')};
+          `;
+        default:
+          return css`
+            box-shadow: 0px 0px 0px 1px ${palette2('neutral', 'f06')};
+          `;
+      }
+    }};
   }
 `;
 
-const mapping = Object.entries<any>(svgToComponentMapping).reduce<any>(
-  (prev, [key, value]) => {
-    prev[value] = key;
-    return prev;
-  },
-  {},
-);
-
-const getIconList = (svgData: string) => {
-  const re = /<title>(.+?)<\/title>/g;
-  const matches: string[] = [];
-  svgData.replace(re, (m, p1) => {
-    matches.push(p1);
-    return m;
-  });
-  return matches;
-};
-
-// eslint-disable-next-line require-await
 const getRemoteSvgFile = async () => {
   try {
     return await fetch(
@@ -97,9 +94,23 @@ const getRemoteSvgFile = async () => {
   }
 };
 
-type IconListProps = {};
+const getRemoteSelectionJsonFile = async () => {
+  try {
+    const res = await fetch(
+      'https://i.icomoon.io/public/6483cc0f53/Jupiternewicontest/selection-svg.json',
+    );
+    const response: SelectionSvgResponse = await res.json();
 
-const currentIcons = getIconList(localIcons);
+    const iconNames = response.icons.map((icon) => {
+      return icon.properties.name;
+    });
+    return iconNames;
+  } catch (e) {
+    return null;
+  }
+};
+
+type IconListProps = {};
 
 const insertSVG = (data: string) => {
   const body = document.body;
@@ -118,44 +129,45 @@ const insertSVG = (data: string) => {
 
 export const IconList: FunctionComponent<IconListProps> = () => {
   const [remoteIcons, setRemoteIcons] = useState<string[]>([]);
-  const [deletedIcons, setDeletedIcons] = useState<string[]>([]);
+
+  const [loading, setLoading] = useState(true);
   const [loadFail, setLoadFail] = useState(false);
   const [filterText, setFilterText] = useState('');
 
   const resultIcons = useMemo(() => {
+    const _filterText = filterText.toLocaleLowerCase().replace(/_|-/g, '');
+
     return filterText
       ? remoteIcons.filter((x) => {
           function isInclude(value: string) {
-            const _filterText = filterText
-              .toLocaleLowerCase()
-              .replace(/_|-/g, '');
             const _value = value.toLocaleLowerCase().replace(/_|-/g, '');
 
             return _value.includes(_filterText);
           }
 
-          return isInclude(x) || (mapping[x] && isInclude(mapping[x]));
+          return isInclude(x);
         })
       : remoteIcons;
   }, [filterText, remoteIcons]);
 
-  const [loading, setLoading] = useState(true);
-
   const getRemoteIconList = async () => {
-    const value = await getRemoteSvgFile();
-    if (value) {
-      insertSVG(value);
-      const icons = getIconList(value);
+    const [value, remoteSelectionIcons] = await Promise.all([
+      getRemoteSvgFile(),
+      getRemoteSelectionJsonFile(),
+    ]);
 
-      setDeletedIcons(currentIcons.filter((x) => !icons.includes(x)));
-      setRemoteIcons(icons);
+    if (value && remoteSelectionIcons) {
+      insertSVG(value);
       setLoading(false);
+
+      setRemoteIcons(remoteSelectionIcons);
+
       return;
     }
 
     setLoadFail(true);
     insertSVG(localIcons);
-    setRemoteIcons(currentIcons);
+    // setRemoteIcons(currentIcons);
     setLoading(false);
   };
 
@@ -171,7 +183,7 @@ export const IconList: FunctionComponent<IconListProps> = () => {
 
   return (
     <StyledMain>
-      <h3>current icon number: {currentIcons.length}</h3>
+      <h3>current icon number: {Object.keys(localIconMap).length}</h3>
       <h3>
         latest icon number:{' '}
         {loading ? <RcCircularProgress /> : remoteIcons.length}
@@ -180,15 +192,22 @@ export const IconList: FunctionComponent<IconListProps> = () => {
         <RcTypography color="success.f02" variant="body1" component="span">
           green{' '}
         </RcTypography>
-        shadow means this icon is not in current version of icon yet, you can
+        badge means this icon is not in current version of icon yet, you can
         update icon by running 'yarn update-icon'
       </p>
       <p>
         <RcTypography color="danger.f02" variant="body1" component="span">
           red{' '}
         </RcTypography>
-        shadow means this icon is deleted, they will not be available in next
+        badge means this icon is deleted, they will not be available in next
         version of icon
+      </p>
+      <p>
+        <RcTypography color="warning.f02" variant="body1" component="span">
+          warning{' '}
+        </RcTypography>
+        badge means that icon have a duplicated name, should remove that or
+        change name <RcText highlight>(name is not case sensitive)</RcText>
       </p>
       <div style={{ width: 600 }}>
         <RcTextField
@@ -212,40 +231,45 @@ export const IconList: FunctionComponent<IconListProps> = () => {
           )}
           <StyledList>
             {resultIcons.map((icon) => {
-              const isExist = currentIcons.includes(icon);
+              const sourceName = localIconMap[icon];
+
+              const ComponentName = Number.isNaN(+sourceName)
+                ? sourceName
+                : `Svg${sourceName}`;
+
+              const isExist = !!sourceName;
+
+              const RemoteComponent = (props: any) => (
+                <svg {...props}>
+                  <use xlinkHref={`#icon-${icon}`} />
+                </svg>
+              );
+
+              const IconComponent = isExist
+                ? allIcons[ComponentName]
+                : RemoteComponent;
+
+              const duplicated = !isExist && IconComponent;
 
               return (
-                <StyledIcon state={isExist ? 'exist' : 'new'} key={icon}>
+                <StyledIcon
+                  state={isExist ? 'exist' : 'new'}
+                  duplicated={duplicated}
+                  key={icon}
+                >
                   <RcIcon
                     color="neutral.f06"
-                    symbol={(props) => (
-                      <svg {...props}>
-                        <use xlinkHref={`#icon-${icon}`} />
-                      </svg>
-                    )}
+                    symbol={duplicated ? RemoteComponent : IconComponent}
                   />
                   {isExist && (
                     <RcTypography color="neutral.f06" variant="subheading2">
-                      {mapping[icon]}
+                      {ComponentName}
                     </RcTypography>
                   )}
                   <RcTypography color="neutral.f03">{icon}</RcTypography>
                 </StyledIcon>
               );
             })}
-            {deletedIcons.map((icon) => (
-              <StyledIcon state="delete" key={icon}>
-                <RcIcon
-                  color="neutral.f06"
-                  symbol={(props) => (
-                    <svg {...props}>
-                      <use xlinkHref={`#icon-${icon}`} />
-                    </svg>
-                  )}
-                />
-                {icon}
-              </StyledIcon>
-            ))}
           </StyledList>
         </>
       )}
