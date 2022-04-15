@@ -14,6 +14,8 @@ export interface UseLongPressOptions {
   isPreventDefault?: boolean;
   /** the longPress delay */
   delay?: number;
+  /** for custom window */
+  externalWindow?: Window;
 }
 
 export type UseLongPressEventReason = 'keyboard' | 'click' | 'tap';
@@ -62,7 +64,11 @@ export const useLongPress = <T = unknown>(
     onContextMenu,
     onMouseUp: onMouseUpArg,
   }: UseLongPressInput<T> = {},
-  { isPreventDefault = true, delay = 300 }: UseLongPressOptions = {},
+  {
+    isPreventDefault = true,
+    delay = 300,
+    externalWindow = window,
+  }: UseLongPressOptions = {},
 ) => {
   const isEmittedRef = useRef(false);
   const isA11yDownRef = useRef(false);
@@ -80,7 +86,7 @@ export const useLongPress = <T = unknown>(
 
   const end = (e: React.MouseEvent<T, MouseEvent> | React.TouchEvent<T>) => {
     // ! mouse up only trigger when up on element, so we host that in document
-    document.removeEventListener('mouseup', onMouseUp);
+    externalWindow.document.removeEventListener('mouseup', onMouseUp);
 
     if (!isEmittedRef.current && isElmEqualOrContain(e.target as any, elmRef)) {
       onTap?.(e, reasonRef.current);
@@ -93,7 +99,7 @@ export const useLongPress = <T = unknown>(
 
   const start = (e: React.MouseEvent<T, MouseEvent> | React.TouchEvent<T>) => {
     // ! mouse up only trigger when up on element, so we host that in document
-    document.addEventListener('mouseup', onMouseUp);
+    externalWindow.document.addEventListener('mouseup', onMouseUp);
 
     const isTouch = e.type === 'touchstart';
 
@@ -161,9 +167,9 @@ export const useLongPress = <T = unknown>(
   useEffect(() => {
     return () => {
       // * clean when in start remove
-      document.removeEventListener('mouseup', onMouseUp);
+      externalWindow.document.removeEventListener('mouseup', onMouseUp);
     };
-  }, [onMouseUp]);
+  }, [onMouseUp, externalWindow]);
 
   return {
     ref: elmRef,

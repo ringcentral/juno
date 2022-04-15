@@ -40,6 +40,8 @@ import {
 type RcDialPadOnChangeReason = UseLongPressEventReason | 'customKeyboard';
 
 type RcDialPadProps = {
+  /** for custom window */
+  externalWindow?: Window;
   /**
    * trigger when value change, `reason` for trigger from what event
    *
@@ -94,6 +96,7 @@ const _RcDialPad = forwardRef<HTMLDivElement, RcDialPadProps>(
       persistBgTime,
       control,
       getDialPadButtonProps,
+      externalWindow = window,
       ...divProps
     } = props;
 
@@ -172,7 +175,11 @@ const _RcDialPad = forwardRef<HTMLDivElement, RcDialPadProps>(
           const toIndex = ACCEPTABLE_KEYS.findIndex((x) => x === value);
           focusedIndexRef.current = toIndex;
           // * mean that current focus on that dialPad, move focus to dialPad container
-          if (document.activeElement?.getAttribute(dialButtonKey) !== null) {
+          if (
+            externalWindow.document.activeElement?.getAttribute(
+              dialButtonKey,
+            ) !== null
+          ) {
             hiddenRef.current?.focus();
           }
         }

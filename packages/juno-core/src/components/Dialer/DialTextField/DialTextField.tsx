@@ -25,6 +25,8 @@ import { DialTextFieldStyle } from './styles';
 import { getDialPadValueOnlyRegex, useFixedEndSelection } from './utils';
 
 type RcDialTextFieldProps = {
+  /** for custom window */
+  externalWindow?: Window;
   /** current value */
   value: string;
   /** emit when value change */
@@ -72,6 +74,7 @@ const _RcDialTextField = forwardRef<any, RcDialTextFieldProps>(
       InputProps: InputPropsProp,
       onlyAllowKeypadValue,
       keypadMode,
+      externalWindow = window,
       ...rest
     } = props;
 
@@ -96,7 +99,8 @@ const _RcDialTextField = forwardRef<any, RcDialTextFieldProps>(
       (reason: RcDialPadOnChangeReason, isFocus?: boolean) => {
         const elm = inputRef.current;
 
-        const isInputFocus = isFocus ?? document.activeElement === elm;
+        const isInputFocus =
+          isFocus ?? externalWindow.document.activeElement === elm;
 
         if (reason !== 'click' && !isInputFocus) {
           // ! both keydown and touch, only when focus need re-focus
@@ -131,7 +135,7 @@ const _RcDialTextField = forwardRef<any, RcDialTextFieldProps>(
         const elm = inputRef.current;
 
         if (elm && value?.length) {
-          const isFocus = document.activeElement === elm;
+          const isFocus = externalWindow.document.activeElement === elm;
 
           let toPosition: number | undefined;
           let toValue: string | undefined;
@@ -163,7 +167,7 @@ const _RcDialTextField = forwardRef<any, RcDialTextFieldProps>(
           }
         }
       },
-      [checkNotReFocus, inputRef, onChange, value],
+      [checkNotReFocus, externalWindow, inputRef, onChange, value],
     );
 
     /**
@@ -175,7 +179,7 @@ const _RcDialTextField = forwardRef<any, RcDialTextFieldProps>(
         const elm = inputRef.current;
 
         if (elm) {
-          const isFocus = document.activeElement === elm;
+          const isFocus = externalWindow.document.activeElement === elm;
 
           let toPosition: number;
           let toValue: string;
@@ -208,6 +212,7 @@ const _RcDialTextField = forwardRef<any, RcDialTextFieldProps>(
       },
       [
         checkNotReFocus,
+        externalWindow,
         inputRef,
         keypadMode,
         maxLength,
