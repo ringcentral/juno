@@ -66,6 +66,8 @@ import { Meta, Story } from '@storybook/react';
 
 import avatar from '../../Avatar/__stories__/img/avatar.jpg';
 import { options } from '../../Downshift/__stories__/options';
+import { RcDialPadOnChangeReason } from '../DialPad';
+import { useEventListener } from '../../../foundation';
 
 export default {
   title: '🚀 Cleanup Components/Dialer',
@@ -568,8 +570,13 @@ export const KeypadMode: Story<any> = () => {
   const inputRef = useRef<HTMLInputElement>(null);
   const openButtonRef = useRef<HTMLButtonElement>(null);
 
+  const { onKeyDown, onKeyUp, control } = useDialKeyboard<KeyboardEvent>();
+
+  useEventListener(document, 'keydown', onKeyDown);
+  useEventListener(document, 'keyup', onKeyUp);
+
   const [history, setHistory] = useState<
-    { id: string; value: string; reason: UseLongPressEventReason }[]
+    { id: string; value: string; reason: RcDialPadOnChangeReason }[]
   >([]);
 
   return (
@@ -627,6 +634,12 @@ export const KeypadMode: Story<any> = () => {
                 fullWidth
                 onlyAllowKeypadValue
                 keypadMode
+                onKeyDown={(e) => {
+                  e.stopPropagation();
+                }}
+                onKeyUp={(e) => {
+                  e.stopPropagation();
+                }}
                 onChange={setValue}
                 onEmit={(newValue, reason) => {
                   console.log('Get value', newValue, reason);
@@ -639,7 +652,7 @@ export const KeypadMode: Story<any> = () => {
                 }}
                 placeholder="Enter a number"
               />
-              <RcDialPad sounds={RcDialerPadSounds} />
+              <RcDialPad control={control} sounds={RcDialerPadSounds} />
             </RcDialer>
           </RcPaper>
         </StyledCollapse>

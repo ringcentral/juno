@@ -37,10 +37,14 @@ import {
   useKeyAudio,
 } from './utils';
 
-type RcDialPadOnChangeReason = UseLongPressEventReason;
+type RcDialPadOnChangeReason = UseLongPressEventReason | 'customKeyboard';
 
 type RcDialPadProps = {
-  /** trigger when value change, `reason` for trigger from what event */
+  /**
+   * trigger when value change, `reason` for trigger from what event
+   *
+   * `reason` will be `customKeyboard` when it trigger by `useDiaKeyboard`.
+   */
   onChange?: (value: string, reason: RcDialPadOnChangeReason) => void;
   /** keypad sounds */
   sounds?: DialPadSoundMap;
@@ -163,7 +167,7 @@ const _RcDialPad = forwardRef<HTMLDivElement, RcDialPadProps>(
     const handleKeyboardEffect = useDebounce(
       (value: string, isKeyup: boolean) => {
         if (isKeyup) {
-          handleChange(value, 'keyboard');
+          handleChange(value, 'customKeyboard');
 
           const toIndex = ACCEPTABLE_KEYS.findIndex((x) => x === value);
           focusedIndexRef.current = toIndex;
