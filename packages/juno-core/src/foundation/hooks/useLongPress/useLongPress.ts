@@ -1,16 +1,23 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 
 import { useA11yKeyEvent } from '../useA11yKeyEvent';
 import { useDebounce } from '../useDebounce';
 import { useEventCallback } from '../useEventCallback';
-import {
-  isElmEqualOrContain,
-  useTouchMouseEvent,
-  UseTouchMouseEvent,
-} from '../useTouchMouseEvent';
+import { useEventListener } from '../useEventListener';
+import { useGlobalListener } from '../useGlobalListener';
+import { useTouchMouseEvent, UseTouchMouseEvent } from '../useTouchMouseEvent';
+
+export const isTouchEvent = <T = unknown>(
+  ev: React.MouseEvent<T, MouseEvent> | React.TouchEvent<T>,
+): ev is React.TouchEvent<T> => {
+  return 'touches' in ev;
+};
 
 export interface UseLongPressOptions {
-  /** is prevent all non need event */
+  /**
+   * auto event.preventDefault for `mousedown`, `touchstart`, `touchend`
+   * always use for not leave that element
+   */
   isPreventDefault?: boolean;
   /** the longPress delay */
   delay?: number;
@@ -18,6 +25,8 @@ export interface UseLongPressOptions {
   externalWindow?: Window;
 }
 
+// TODO: should change to below
+// export type UseLongPressEventReason = 'keyboard' | 'mouse' | 'touch';
 export type UseLongPressEventReason = 'keyboard' | 'click' | 'tap';
 
 export type UseLongPressOutput<T> = {
@@ -42,7 +51,6 @@ export type UseLongPressOutput<T> = {
 export type UseLongPressInput<T> = {
   onKeyUp?: (e: React.KeyboardEvent<T>) => void;
   onKeyDown?: (e: React.KeyboardEvent<T>) => void;
-  onContextMenu?: (e: React.MouseEvent<T, MouseEvent>) => void;
 } & UseTouchMouseEvent<T>;
 
 /**
@@ -51,17 +59,16 @@ export type UseLongPressInput<T> = {
  * - Trigger `onTap` when user action leave small than delay time.
  * - Trigger `onPress` when action time is long than delay time.
  *
- * @default UseLongPressOptions { isPreventDefault = true, delay = 300 }
+ * @default UseLongPressOptions { delay = 300 }
  */
-export const useLongPress = <T = unknown>(
+export const useLongPress = <T extends HTMLElement = HTMLElement>(
   { onTap, onPress }: UseLongPressOutput<T>,
   {
-    onTouchStart,
-    onTouchEnd,
+    onTouchStart: onTouchStartArg,
+    onTouchEnd: onTouchEndArg,
     onMouseDown,
     onKeyDown,
     onKeyUp,
-    onContextMenu,
     onMouseUp: onMouseUpArg,
   }: UseLongPressInput<T> = {},
   {
@@ -72,7 +79,7 @@ export const useLongPress = <T = unknown>(
 ) => {
   const isEmittedRef = useRef(false);
   const isA11yDownRef = useRef(false);
-  const elmRef = useRef<HTMLElement>(null);
+  const actionRef = useRef<T | null>(null);
 
   const reasonRef = useRef<UseLongPressEventReason>('click');
 
@@ -84,11 +91,14 @@ export const useLongPress = <T = unknown>(
     }
   }, delay);
 
-  const end = (e: React.MouseEvent<T, MouseEvent> | React.TouchEvent<T>) => {
+  const end = (
+    e: React.MouseEvent<T, MouseEvent> | React.TouchEvent<T>,
+    isInside?: boolean,
+  ) => {
     // ! mouse up only trigger when up on element, so we host that in document
-    externalWindow.document.removeEventListener('mouseup', onMouseUp);
+    globalMouseUpListener.remove();
 
-    if (!isEmittedRef.current && isElmEqualOrContain(e.target as any, elmRef)) {
+    if (!isEmittedRef.current && isInside) {
       onTap?.(e, reasonRef.current);
     }
 
@@ -99,13 +109,9 @@ export const useLongPress = <T = unknown>(
 
   const start = (e: React.MouseEvent<T, MouseEvent> | React.TouchEvent<T>) => {
     // ! mouse up only trigger when up on element, so we host that in document
-    externalWindow.document.addEventListener('mouseup', onMouseUp);
+    globalMouseUpListener.listen();
 
     const isTouch = e.type === 'touchstart';
-
-    if (!isTouch) e.preventDefault();
-
-    e.stopPropagation();
 
     if (isTouch) {
       reasonRef.current = 'tap';
@@ -114,27 +120,61 @@ export const useLongPress = <T = unknown>(
     emitLongPress(e);
   };
 
-  const { onMouseUp, ...events } = useTouchMouseEvent<T>(
-    {
-      onTouchStart: (e) => {
-        onTouchStart?.(e);
-        start(e);
+  const { onMouseUp, onTouchEnd, onTouchStart, ...events } =
+    useTouchMouseEvent<T>(
+      {
+        onTouchStart: (e) => {
+          // prevent long touch leave element focus
+          if (isPreventDefault) {
+            e.preventDefault();
+          }
+
+          onTouchStartArg?.(e);
+          start(e);
+        },
+        onTouchEnd: (e, isInside) => {
+          // prevent leave element focus
+          if (isPreventDefault) {
+            e.preventDefault();
+          }
+
+          onTouchEndArg?.(e, isInside);
+          end(e, isInside);
+        },
+        onMouseDown: (e) => {
+          if (isPreventDefault) {
+            e.preventDefault();
+          }
+
+          onMouseDown?.(e);
+          start(e);
+        },
+        onMouseUp: (e, isInside) => {
+          // prevent leave element focus
+          if (isPreventDefault) {
+            e.preventDefault();
+          }
+
+          onMouseUpArg?.(e);
+          end(e, isInside);
+        },
       },
-      onTouchEnd: (e) => {
-        onTouchEnd?.(e);
-        end(e);
-      },
-      onMouseDown: (e) => {
-        onMouseDown?.(e);
-        start(e);
-      },
-      onMouseUp: (e) => {
-        onMouseUpArg?.(e);
-        end(e);
-      },
-    },
-    { isPreventDefault },
-  );
+      { actionRef },
+    );
+
+  // use event listener for make event `passive` work in safari
+  useEventListener(actionRef, 'touchstart', onTouchStart, {
+    passive: false,
+  });
+  // use event listener for make event `passive` work in safari
+  useEventListener(actionRef, 'touchend', onTouchEnd, {
+    passive: false,
+  });
+
+  const globalMouseUpListener = useGlobalListener('mouseup', onMouseUp, {
+    target: externalWindow,
+    startImmediately: false,
+  });
 
   const handleDeleteKeyDown = useA11yKeyEvent((e: React.KeyboardEvent<T>) => {
     reasonRef.current = 'keyboard';
@@ -155,25 +195,12 @@ export const useLongPress = <T = unknown>(
   const handleKeyUp = useEventCallback((e) => {
     onKeyUp?.(e);
 
-    if (isA11yDownRef.current) end(e);
+    if (isA11yDownRef.current) end(e, true);
     isA11yDownRef.current = false;
   });
 
-  const handleContextMenu = useEventCallback((e) => {
-    onContextMenu?.(e);
-    e.preventDefault();
-  });
-
-  useEffect(() => {
-    return () => {
-      // * clean when in start remove
-      externalWindow.document.removeEventListener('mouseup', onMouseUp);
-    };
-  }, [onMouseUp, externalWindow]);
-
   return {
-    ref: elmRef,
-    onContextMenu: handleContextMenu,
+    ref: actionRef,
     onKeyDown: handleKeyDown,
     onKeyUp: handleKeyUp,
     ...events,
