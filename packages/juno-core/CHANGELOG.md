@@ -1,4 +1,23 @@
 
+## [2.6.0](https://github.com/ringcentral/juno/compare/juno-core-v2.5.0...juno-core-v2.6.0) (2022-04-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* **foundation:** [useLongPress] no longer export `onTouchStart` and `onTouchEnd` and `onContextMenu`, those to be inside handle with addEventListener, if you still need preventDefault, use `isPreventDefault` config
+
+### Features
+
+* **foundation:** [useGlobalListener] support startImmediately ([d0f819f](https://github.com/ringcentral/juno/commit/d0f819f878d0d14ffb306d30839e816d0c12eba3))
+* **IconButton:** [IconButton] support `IconProps` ([4febee3](https://github.com/ringcentral/juno/commit/4febee3f08d194b9a381d91a9aba3ea77a43014f))
+
+
+### Bug Fixes
+
+* **foundation:** [useGlobalListener] support listener options with overload method ([0b85147](https://github.com/ringcentral/juno/commit/0b85147941407e3e078e161973d020d16bd81e23))
+* **foundation:** [useLongPress] switch to use useGlobalListener and fix touch screen logic ([0527057](https://github.com/ringcentral/juno/commit/05270571eef2fe87beb6aae0e2f94d7feddaf01b))
+* **foundation:** [useTouchMouseEvent] remove addition check because in production should never switch between touch and mouse ([65986d6](https://github.com/ringcentral/juno/commit/65986d6a9224d147b5529098e1115a5b73b78332))
+
 ### [2.4.2](https://github.com/ringcentral/juno/compare/juno-core-v2.4.1...juno-core-v2.4.2) (2022-04-14)
 
 
