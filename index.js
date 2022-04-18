@@ -8930,6 +8930,7 @@ __export(src_exports2, {
   isOutOfRange: () => isOutOfRange,
   isRcElement: () => isRcElement,
   isRef: () => isRef,
+  isTouchEvent: () => isTouchEvent,
   isUrl: () => isUrl,
   isWebKit154: () => isWebKit154,
   keyframes: () => keyframes,
@@ -48811,6 +48812,7 @@ __export(juno_core_exports, {
   isOutOfRange: () => isOutOfRange,
   isRcElement: () => isRcElement,
   isRef: () => isRef,
+  isTouchEvent: () => isTouchEvent,
   isUrl: () => isUrl,
   isWebKit154: () => isWebKit154,
   keyframes: () => keyframes,
@@ -49199,6 +49201,7 @@ __export(src_exports, {
   isOutOfRange: () => isOutOfRange,
   isRcElement: () => isRcElement,
   isRef: () => isRef,
+  isTouchEvent: () => isTouchEvent,
   isUrl: () => isUrl,
   isWebKit154: () => isWebKit154,
   keyframes: () => keyframes,
@@ -51713,9 +51716,10 @@ var swapArrayLocs = (arr, index1, index22) => {
 };
 
 // ../juno-core/src/foundation/hooks/useEventListener/useEventListener.ts
-function useEventListener(target, ...o2) {
-  const [key, cb, options] = o2;
-  const listener = useEventCallback2(cb);
+function useEventListener(target, key, callback, ...args) {
+  const { options, config: config2 } = getListenerOverloadOption(args);
+  const { startImmediately = true } = config2 || {};
+  const listener = useEventCallback2(callback);
   const cancelRef = useRef35(() => {
   });
   const bindRef = useRef35(() => {
@@ -51730,13 +51734,33 @@ function useEventListener(target, ...o2) {
     }
     bindRef.current = () => currentElm.addEventListener(key, listener, options);
     cancelRef.current = () => currentElm.removeEventListener(key, listener, options);
-    bindRef.current();
+    if (startImmediately) {
+      bindRef.current();
+    }
     return cancelRef.current;
   }, [target, currentRefElm]);
   return {
     listen: () => bindRef.current(),
     remove: () => cancelRef.current()
   };
+}
+function getListenerOverloadOption(args) {
+  let options;
+  let config2;
+  if (typeof args[0] === "boolean") {
+    options = args[0];
+    config2 = args[1];
+  } else {
+    const { startImmediately, ...restOptions } = {
+      ...args[0] || {},
+      ...args[1] || {}
+    };
+    options = restOptions;
+    config2 = {
+      startImmediately
+    };
+  }
+  return { options, config: config2 };
 }
 
 // ../juno-core/src/foundation/hooks/useEver/useEver.ts
@@ -51763,10 +51787,9 @@ function useForceUpdate() {
 // ../juno-core/src/foundation/hooks/useForkRef/useForkRef.ts
 var useForkRef2 = useForkRef;
 
-// ../juno-core/src/foundation/hooks/useGlobalListener/useGlobalListener.ts
-import { useEffect as useEffect36, useRef as useRef37 } from "react";
+// ../juno-core/src/foundation/hooks/useGlobalListener/createGlobalListener.ts
 var globalListenerEventMap = /* @__PURE__ */ new Map();
-var createGlobalListener = (key, listener, {
+var createGlobalListener = (key, listener, options, {
   customKey = key,
   target: targetProp = window
 } = {}) => {
@@ -51786,7 +51809,7 @@ var createGlobalListener = (key, listener, {
         listeners: /* @__PURE__ */ new Set([listener])
       });
       const target = getRefElement(targetProp);
-      target?.addEventListener(key, exec);
+      target?.addEventListener(key, exec, options);
     } else {
       savedEvent.listeners.add(listener);
     }
@@ -51803,7 +51826,7 @@ var createGlobalListener = (key, listener, {
     listeners.delete(listener);
     if (listeners.size === 0) {
       const target = getRefElement(targetProp);
-      target?.removeEventListener(key, _savedEvent.exec);
+      target?.removeEventListener(key, _savedEvent.exec, options);
       globalListenerEventMap.delete(customKey);
     }
   };
@@ -51820,27 +51843,69 @@ var createGlobalListener = (key, listener, {
     }
   };
 };
-function useGlobalListener(key, listener, options = {}) {
+
+// ../juno-core/src/foundation/hooks/useGlobalListener/useGlobalListener.ts
+import { useEffect as useEffect36, useRef as useRef37 } from "react";
+function useGlobalListener(key, listener, ...args) {
+  const { options, config: config2 } = getListenerOverloadOption2(args);
+  const {
+    customKey = key,
+    target: targetProp = window,
+    startImmediately = true
+  } = config2 || {};
   const _listener = useEventCallback2(listener);
-  const { current: globalListener } = useRef37(createGlobalListener(key, _listener, options));
+  const { current: globalListener } = useRef37(createGlobalListener(key, _listener, options, {
+    customKey,
+    target: targetProp
+  }));
   if (true) {
-    const { customKey = key, target: targetProp = window } = options;
     useEffect36(() => {
-      const target = getRefElement(targetProp);
-      if (target !== window && customKey === key) {
-        logInDev({
-          component: "useGlobalListener",
-          message: "When you custom binding event target, you must custom key for determining different event group",
-          level: "error"
-        });
+      if (customKey === key) {
+        if (Object.keys(options).length > 0) {
+          logInDev({
+            component: "useGlobalListener",
+            message: "when have set options, suggest you also bind customKey, otherwise, it may use previous listener without same options",
+            level: "warn"
+          });
+        }
+        const target = getRefElement(targetProp);
+        if (target !== window) {
+          logInDev({
+            component: "useGlobalListener",
+            message: "When you custom binding event target, you must custom key for determining different event group",
+            level: "error"
+          });
+        }
       }
     }, []);
   }
   useEffect36(() => {
-    globalListener.listen();
+    if (startImmediately) {
+      globalListener.listen();
+    }
     return globalListener.remove;
   }, []);
   return globalListener;
+}
+function getListenerOverloadOption2(args) {
+  let options;
+  let config2;
+  if (typeof args[0] === "boolean") {
+    options = args[0];
+    config2 = args[1];
+  } else {
+    const { startImmediately, customKey, target, ...restOptions } = {
+      ...args[0] || {},
+      ...args[1] || {}
+    };
+    options = restOptions;
+    config2 = {
+      startImmediately,
+      customKey,
+      target
+    };
+  }
+  return { options, config: config2 };
 }
 
 // ../juno-core/src/foundation/hooks/useHiddenTabindex/useHiddenTabindex.ts
@@ -52234,7 +52299,7 @@ var useOnlyOneFocusable = ({
 };
 
 // ../juno-core/src/foundation/hooks/useLongPress/useLongPress.ts
-import { useEffect as useEffect39, useRef as useRef44 } from "react";
+import { useRef as useRef44 } from "react";
 
 // ../juno-core/src/foundation/hooks/useTouchMouseEvent/useTouchMouseEvent.ts
 import { useRef as useRef43 } from "react";
@@ -52243,47 +52308,44 @@ var useTouchMouseEvent = ({
   onMouseUp: onMouseUpArg,
   onTouchStart: onTouchStartArg,
   onTouchEnd: onTouchEndArg
-}, { isPreventDefault = true } = {}) => {
-  const isLiveEndRef = useRef43(false);
-  const isStartRef = useRef43(false);
-  const startAction = () => isStartRef.current = true;
-  const endAction = () => isStartRef.current = false;
+}, { actionRef } = {}) => {
+  const stopMouseEventRef = useRef43(false);
+  const { document: document2 } = useRcPortalWindowContext();
   const onTouchStart = useEventCallback2((e2) => {
-    startAction();
+    stopMouseEventRef.current = true;
     onTouchStartArg?.(e2);
   });
-  const onTouchEnd = useEventCallback2((e2) => {
-    endAction();
-    isLiveEndRef.current = true;
-    onTouchEndArg?.(e2);
-  });
-  const preventDefaultEvent = (e2) => {
-    if (isPreventDefault) {
-      e2.preventDefault();
-      e2.stopPropagation();
+  function checkInside(elm) {
+    const hostElement = getRefElement(actionRef);
+    if (hostElement) {
+      return !!(elm && isElmEqualOrContain(elm, hostElement));
     }
-  };
+    return false;
+  }
+  const onTouchEnd = useEventCallback2((e2) => {
+    let isInside;
+    if (actionRef && e2.touches.length < 2 && e2.changedTouches.length < 2) {
+      const touch = e2.touches[0] || e2.changedTouches[0];
+      const elm = document2.elementFromPoint(touch.pageX, touch.pageY);
+      isInside = !!elm && checkInside(elm);
+    }
+    onTouchEndArg?.(e2, isInside);
+  });
   const onMouseDown = useEventCallback2((e2) => {
-    startAction();
-    if (isLiveEndRef.current) {
-      e2.preventDefault();
-      e2.stopPropagation();
+    if (stopMouseEventRef.current) {
       return;
     }
     onMouseDownArg?.(e2);
   });
   const onMouseUp = useEventCallback2((e2) => {
-    if (!isStartRef.current) {
-      preventDefaultEvent(e2);
+    let isInside;
+    if (stopMouseEventRef.current)
       return;
+    if (actionRef) {
+      const elm = e2.target;
+      isInside = !!elm && checkInside(elm);
     }
-    endAction();
-    if (isLiveEndRef.current) {
-      isLiveEndRef.current = false;
-      preventDefaultEvent(e2);
-      return;
-    }
-    onMouseUpArg?.(e2);
+    onMouseUpArg?.(e2, isInside);
   });
   return {
     onTouchStart,
@@ -52299,13 +52361,15 @@ var isElmEqualOrContain = (sourceTarget, containTarget) => {
 };
 
 // ../juno-core/src/foundation/hooks/useLongPress/useLongPress.ts
+var isTouchEvent = (ev) => {
+  return "touches" in ev;
+};
 var useLongPress = ({ onTap, onPress }, {
-  onTouchStart,
-  onTouchEnd,
+  onTouchStart: onTouchStartArg,
+  onTouchEnd: onTouchEndArg,
   onMouseDown,
   onKeyDown,
   onKeyUp,
-  onContextMenu,
   onMouseUp: onMouseUpArg
 } = {}, {
   isPreventDefault = true,
@@ -52314,7 +52378,7 @@ var useLongPress = ({ onTap, onPress }, {
 } = {}) => {
   const isEmittedRef = useRef44(false);
   const isA11yDownRef = useRef44(false);
-  const elmRef = useRef44(null);
+  const actionRef = useRef44(null);
   const reasonRef = useRef44("click");
   const emitLongPress = useDebounce((e2) => {
     if (onPress) {
@@ -52322,9 +52386,9 @@ var useLongPress = ({ onTap, onPress }, {
       isEmittedRef.current = true;
     }
   }, delay);
-  const end2 = (e2) => {
-    externalWindow.document.removeEventListener("mouseup", onMouseUp);
-    if (!isEmittedRef.current && isElmEqualOrContain(e2.target, elmRef)) {
+  const end2 = (e2, isInside) => {
+    globalMouseUpListener.remove();
+    if (!isEmittedRef.current && isInside) {
       onTap?.(e2, reasonRef.current);
     }
     reasonRef.current = "click";
@@ -52332,34 +52396,53 @@ var useLongPress = ({ onTap, onPress }, {
     emitLongPress.cancel();
   };
   const start3 = (e2) => {
-    externalWindow.document.addEventListener("mouseup", onMouseUp);
+    globalMouseUpListener.listen();
     const isTouch2 = e2.type === "touchstart";
-    if (!isTouch2)
-      e2.preventDefault();
-    e2.stopPropagation();
     if (isTouch2) {
       reasonRef.current = "tap";
     }
     emitLongPress(e2);
   };
-  const { onMouseUp, ...events } = useTouchMouseEvent({
+  const { onMouseUp, onTouchEnd, onTouchStart, ...events } = useTouchMouseEvent({
     onTouchStart: (e2) => {
-      onTouchStart?.(e2);
+      if (isPreventDefault) {
+        e2.preventDefault();
+      }
+      onTouchStartArg?.(e2);
       start3(e2);
     },
-    onTouchEnd: (e2) => {
-      onTouchEnd?.(e2);
-      end2(e2);
+    onTouchEnd: (e2, isInside) => {
+      if (isPreventDefault) {
+        e2.preventDefault();
+      }
+      onTouchEndArg?.(e2, isInside);
+      end2(e2, isInside);
     },
     onMouseDown: (e2) => {
+      if (isPreventDefault) {
+        e2.preventDefault();
+      }
       onMouseDown?.(e2);
       start3(e2);
     },
-    onMouseUp: (e2) => {
+    onMouseUp: (e2, isInside) => {
+      if (isPreventDefault) {
+        e2.preventDefault();
+      }
       onMouseUpArg?.(e2);
-      end2(e2);
+      end2(e2, isInside);
     }
-  }, { isPreventDefault });
+  }, { actionRef });
+  useEventListener(actionRef, "touchstart", onTouchStart, {
+    passive: false
+  });
+  useEventListener(actionRef, "touchend", onTouchEnd, {
+    passive: false
+  });
+  const globalMouseUpListener = useGlobalListener("mouseup", onMouseUp, {
+    target: externalWindow,
+    startImmediately: false
+  });
   const handleDeleteKeyDown = useA11yKeyEvent((e2) => {
     reasonRef.current = "keyboard";
     if (!isA11yDownRef.current) {
@@ -52374,21 +52457,11 @@ var useLongPress = ({ onTap, onPress }, {
   const handleKeyUp = useEventCallback2((e2) => {
     onKeyUp?.(e2);
     if (isA11yDownRef.current)
-      end2(e2);
+      end2(e2, true);
     isA11yDownRef.current = false;
   });
-  const handleContextMenu = useEventCallback2((e2) => {
-    onContextMenu?.(e2);
-    e2.preventDefault();
-  });
-  useEffect39(() => {
-    return () => {
-      externalWindow.document.removeEventListener("mouseup", onMouseUp);
-    };
-  }, [onMouseUp, externalWindow]);
   return {
-    ref: elmRef,
-    onContextMenu: handleContextMenu,
+    ref: actionRef,
     onKeyDown: handleKeyDown2,
     onKeyUp: handleKeyUp,
     ...events
@@ -52396,10 +52469,10 @@ var useLongPress = ({ onTap, onPress }, {
 };
 
 // ../juno-core/src/foundation/hooks/useMountState/useMountState.ts
-import { useEffect as useEffect40, useRef as useRef45 } from "react";
+import { useEffect as useEffect39, useRef as useRef45 } from "react";
 var useMountState = () => {
   const isMountedRef = useRef45(false);
-  useEffect40(() => {
+  useEffect39(() => {
     isMountedRef.current = true;
     return () => {
       isMountedRef.current = false;
@@ -53018,11 +53091,11 @@ var useResponsiveMatch = (defaultBreakpoint) => {
 
 // ../juno-core/src/foundation/hooks/useThrottle/useThrottle.ts
 var import_throttle2 = __toModule(require_throttle());
-import { useCallback as useCallback24, useEffect as useEffect41 } from "react";
+import { useCallback as useCallback24, useEffect as useEffect40 } from "react";
 var useThrottle = (fn, debounceTime2 = 200) => {
   const memoFn = useEventCallback2(fn);
   const throttleFn = useCallback24((0, import_throttle2.default)(memoFn, debounceTime2), []);
-  useEffect41(() => () => throttleFn.cancel(), []);
+  useEffect40(() => () => throttleFn.cancel(), []);
   return throttleFn;
 };
 
@@ -55104,7 +55177,7 @@ var StyledSvg = styled_components_default(_StyledSvg)`
 `;
 
 // ../juno-core/src/components/Icon/utils/IconService.ts
-import { useEffect as useEffect42, useState as useState22 } from "react";
+import { useEffect as useEffect41, useState as useState22 } from "react";
 var _RcIconService = class {
   static getInstance() {
     if (!_RcIconService.instance) {
@@ -55140,7 +55213,7 @@ __publicField(RcIconService, "instance");
 function useIconService() {
   const iconService = RcIconService.getInstance();
   const [iconMap, setIconMap] = useState22(iconService.getIconMap());
-  useEffect42(() => {
+  useEffect41(() => {
     iconService.onIconMapChange(setIconMap);
     return () => {
       iconService.offIconMapChange(setIconMap);
@@ -55891,6 +55964,7 @@ var _RcIconButton = memo418(forwardRef517((inProps, ref2) => {
   }
   const {
     buttonRef = ref2,
+    IconProps,
     className,
     classes: classesProp,
     children: children2,
@@ -55947,7 +56021,8 @@ var _RcIconButton = memo418(forwardRef517((inProps, ref2) => {
       symbol,
       className: classes.icon,
       loading,
-      CircularProgressProps
+      CircularProgressProps,
+      ...IconProps
     }, children2);
     const iconButton2 = /* @__PURE__ */ React572.createElement(RcButtonBase, {
       ref: buttonRef,
@@ -56492,9 +56567,9 @@ __export(Transition_exports, {
   reflow: () => reflow3,
   setTransitionStyle: () => setTransitionStyle
 });
-var import_utils99 = __toModule(require_utils2());
+var import_utils100 = __toModule(require_utils2());
 __reExport(Transition_exports, __toModule(require_transitions()));
-var reflow3 = import_utils99.reflow;
+var reflow3 = import_utils100.reflow;
 function getTransitionProps2(props, options) {
   const { timeout: timeout2, easing: easing3, style: style3 = {} } = props;
   return {
@@ -60222,7 +60297,7 @@ RcChip.displayName = "RcChip";
 import React626, {
   forwardRef as forwardRef560,
   memo as memo422,
-  useEffect as useEffect44,
+  useEffect as useEffect43,
   useImperativeHandle as useImperativeHandle10,
   useMemo as useMemo34,
   useRef as useRef62,
@@ -60231,7 +60306,7 @@ import React626, {
 import ReactDOM15 from "react-dom";
 
 // ../juno-core/src/components/DetachedWindow/DetachedWindowStylesProvider.tsx
-import React625, { useEffect as useEffect43, useRef as useRef61 } from "react";
+import React625, { useEffect as useEffect42, useRef as useRef61 } from "react";
 
 // ../juno-core/src/components/DetachedWindow/utils/JssDomRendererFactory.ts
 var jssInst = createJss(jssPreset());
@@ -60410,7 +60485,7 @@ var RcDetachedWindowStylesProvider = (props) => {
   const sheetsManagerRef = useRef61(/* @__PURE__ */ new Map());
   const jssCache = useRef61();
   const sheetCache = useRef61();
-  useEffect43(() => () => {
+  useEffect42(() => () => {
     jssCache.current = void 0;
     sheetCache.current = void 0;
   }, []);
@@ -60507,7 +60582,7 @@ var RcDetachedWindow = memo422(forwardRef560((inProps, ref2) => {
     window.addEventListener("beforeunload", beforeMainUnload);
     return newWindow;
   });
-  useEffect44(() => {
+  useEffect43(() => {
     DetachedWindowRefMaps.set(innerRef, true);
     let newWindow;
     if (open) {
@@ -60580,7 +60655,7 @@ var RcDialDelete = (inProps) => {
 // ../juno-core/src/components/Dialer/DialPad/DialPad.tsx
 import React630, {
   forwardRef as forwardRef561,
-  useEffect as useEffect46,
+  useEffect as useEffect45,
   useImperativeHandle as useImperativeHandle11,
   useRef as useRef65
 } from "react";
@@ -60709,11 +60784,11 @@ var useDialKeyboard = ({
 };
 
 // ../juno-core/src/components/Dialer/DialPad/utils/useKeyAudio.ts
-import { useEffect as useEffect45, useRef as useRef64 } from "react";
+import { useEffect as useEffect44, useRef as useRef64 } from "react";
 var useKeyAudio = ({ volume, muted, sounds }) => {
   const audio = useAudio();
   const lastPlayRef = useRef64();
-  useEffect45(() => {
+  useEffect44(() => {
     audio.volume = volume;
     audio.muted = muted;
   }, [muted, volume]);
@@ -60825,7 +60900,7 @@ var _RcDialPad = forwardRef561((inProps, ref2) => {
   useImperativeHandle11(control, () => ({ handleKeyboardEffect }), [
     handleKeyboardEffect
   ]);
-  useEffect46(() => () => {
+  useEffect45(() => () => {
     for (const timer of Object.values(keyTimerMapRef.current)) {
       clearTimeout(timer);
     }
@@ -60907,7 +60982,7 @@ import React632, {
 // ../juno-core/src/components/Forms/TextField/TextField.tsx
 import React631, {
   forwardRef as forwardRef562,
-  useEffect as useEffect47,
+  useEffect as useEffect46,
   useLayoutEffect as useLayoutEffect16,
   useMemo as useMemo35,
   useRef as useRef66,
@@ -61086,7 +61161,7 @@ var _RcTextField = forwardRef562((inProps, ref2) => {
       }
     };
   }, []);
-  useEffect47(() => {
+  useEffect46(() => {
     if (id3)
       formContext.set(id3, { validate: () => runValidate() });
     return () => {
@@ -61460,7 +61535,7 @@ var Connectable = class {
 };
 
 // ../juno-core/src/components/PortalHost/PortalHost.tsx
-import React635, { useEffect as useEffect49, useRef as useRef70, useState as useState30 } from "react";
+import React635, { useEffect as useEffect48, useRef as useRef70, useState as useState30 } from "react";
 
 // ../juno-core/src/components/PortalHost/context/PortalIDContext.ts
 import { createContext as createContext14 } from "react";
@@ -61473,7 +61548,7 @@ var PortalManagerContext = createContext15(void 0);
 var PortalManagerProvider = PortalManagerContext.Provider;
 
 // ../juno-core/src/components/PortalHost/PortalRenderer.tsx
-import React634, { useEffect as useEffect48, useMemo as useMemo37 } from "react";
+import React634, { useEffect as useEffect47, useMemo as useMemo37 } from "react";
 var RcPortalRenderer = ({
   portalDescriptor
 }) => {
@@ -61486,7 +61561,7 @@ var RcPortalRenderer = ({
     open,
     id: id3
   } = portalDescriptor;
-  useEffect48(() => {
+  useEffect47(() => {
     onMounted();
     return () => onUnmounted();
   }, []);
@@ -61506,7 +61581,7 @@ RcPortalRenderer.displayName = "RcPortalRenderer";
 var RcPortalHost = ({ manager }) => {
   const [portals, setPortals] = useState30([]);
   const managerRef = useRef70(manager);
-  useEffect49(() => {
+  useEffect48(() => {
     const disconnectHandler = managerRef.current[ConnectSymbol]((portalDescriptors) => {
       setPortals(portalDescriptors);
     });
@@ -62203,7 +62278,7 @@ RcDialogTitle.displayName = "RcDialogTitle";
 import React646 from "react";
 
 // ../../node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js
-import React645, { useLayoutEffect as useLayoutEffect19, useEffect as useEffect52, useRef as useRef74, useState as useState32, useContext as useContext24 } from "react";
+import React645, { useLayoutEffect as useLayoutEffect19, useEffect as useEffect51, useRef as useRef74, useState as useState32, useContext as useContext24 } from "react";
 
 // ../../node_modules/@babel/runtime/helpers/esm/objectSpread2.js
 function ownKeys(object3, enumerableOnly) {
@@ -62649,8 +62724,8 @@ function createSubscription(store, parentSub) {
 }
 
 // ../../node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js
-import { useEffect as useEffect50, useLayoutEffect as useLayoutEffect18 } from "react";
-var useIsomorphicLayoutEffect = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined" ? useLayoutEffect18 : useEffect50;
+import { useEffect as useEffect49, useLayoutEffect as useLayoutEffect18 } from "react";
+var useIsomorphicLayoutEffect = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined" ? useLayoutEffect18 : useEffect49;
 
 // ../../node_modules/react-redux/es/components/Provider.js
 function Provider(_ref6) {
@@ -63232,7 +63307,7 @@ import { unstable_batchedUpdates } from "react-dom";
 setBatch(unstable_batchedUpdates);
 
 // ../../node_modules/use-memo-one/dist/use-memo-one.esm.js
-import { useState as useState31, useRef as useRef73, useEffect as useEffect51 } from "react";
+import { useState as useState31, useRef as useRef73, useEffect as useEffect50 } from "react";
 function areInputsEqual(newInputs, lastInputs) {
   if (newInputs.length !== lastInputs.length) {
     return false;
@@ -63258,7 +63333,7 @@ function useMemoOne(getResult, inputs) {
     inputs,
     result: getResult()
   };
-  useEffect51(function() {
+  useEffect50(function() {
     isFirstRun.current = false;
     committed.current = cache3;
   }, [cache3]);
@@ -67494,7 +67569,7 @@ var getStyles$1 = function(contextId) {
     userCancel: getStyles(rules, "userCancel")
   };
 };
-var useIsomorphicLayoutEffect2 = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined" ? useLayoutEffect19 : useEffect52;
+var useIsomorphicLayoutEffect2 = typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined" ? useLayoutEffect19 : useEffect51;
 var getHead2 = function getHead3() {
   var head = document.querySelector("head");
   !head ? true ? invariant2(false, "Cannot find the head to append a style to") : invariant2(false) : void 0;
@@ -67797,7 +67872,7 @@ function createRegistry() {
 }
 function useRegistry() {
   var registry = useMemo47(createRegistry, []);
-  useEffect52(function() {
+  useEffect51(function() {
     return function unmount() {
       requestAnimationFrame(registry.clean);
     };
@@ -67829,7 +67904,7 @@ function useAnnouncer2(contextId) {
     return getId(contextId);
   }, [contextId]);
   var ref2 = useRef74(null);
-  useEffect52(function setup() {
+  useEffect51(function setup() {
     var el2 = document.createElement("div");
     ref2.current = el2;
     el2.id = id3;
@@ -67886,7 +67961,7 @@ function useHiddenTextElement(_ref23) {
       uniqueId: uniqueId4
     });
   }, [uniqueId4, contextId]);
-  useEffect52(function mount() {
+  useEffect51(function mount() {
     var el2 = document.createElement("div");
     el2.id = id3;
     el2.textContent = text;
@@ -67964,7 +68039,7 @@ function useDev(useHook) {
 }
 function useDevSetupWarning(fn, inputs) {
   useDev(function() {
-    useEffect52(function() {
+    useEffect51(function() {
       try {
         fn();
       } catch (e2) {
@@ -67981,7 +68056,7 @@ function useStartupValidation() {
 }
 function usePrevious2(current) {
   var ref2 = useRef74(current);
-  useEffect52(function() {
+  useEffect51(function() {
     ref2.current = current;
   });
   return ref2;
@@ -69162,7 +69237,7 @@ function App(props) {
     customSensors: sensors,
     enableDefaultSensors: props.enableDefaultSensors !== false
   });
-  useEffect52(function() {
+  useEffect51(function() {
     return tryResetStore;
   }, [tryResetStore]);
   return React645.createElement(AppContext.Provider, {
@@ -69617,7 +69692,7 @@ function Placeholder(props) {
   }, []);
   var animate2 = props.animate, onTransitionEnd2 = props.onTransitionEnd, onClose = props.onClose, contextId = props.contextId;
   var _useState = useState32(props.animate === "open"), isAnimatingOpenOnMount = _useState[0], setIsAnimatingOpenOnMount = _useState[1];
-  useEffect52(function() {
+  useEffect51(function() {
     if (!isAnimatingOpenOnMount) {
       return noop$2;
     }
@@ -71780,7 +71855,7 @@ import {
 // ../juno-core/src/components/Downshift/SuggestionList/utils/useSuggestionList.ts
 import {
   useCallback as useCallback27,
-  useEffect as useEffect53,
+  useEffect as useEffect52,
   useMemo as useMemo61,
   useRef as useRef76
 } from "react";
@@ -72179,7 +72254,7 @@ var useSuggestionList = ({
       }
     }, props);
   };
-  useEffect53(() => {
+  useEffect52(() => {
     changeHighlightedIndexReasonRef.current = void 0;
   });
   return {
@@ -72970,10 +73045,10 @@ var useDownshift = ({
 
 // ../juno-core/src/components/Downshift/utils/useDownshiftError.tsx
 var import_react_is12 = __toModule(require_react_is2());
-import React664, { useEffect as useEffect54 } from "react";
+import React664, { useEffect as useEffect53 } from "react";
 var useDownshiftError = ({ isNew, MenuItem: MenuItem3, InputItem }) => {
   if (!rcConfiguration.WARNING_IGNORE) {
-    useEffect54(() => {
+    useEffect53(() => {
       if (!isNew) {
         logInDev({
           component: "RcDownshift",
@@ -73184,7 +73259,7 @@ import {
 import { createElement as createElement540 } from "react";
 
 // ../../node_modules/@virtuoso.dev/react-urx/dist/react-urx.esm.js
-import { createContext as createContext19, forwardRef as forwardRef588, useState as useState34, useImperativeHandle as useImperativeHandle14, createElement as createElement536, useLayoutEffect as useLayoutEffect22, useEffect as useEffect55, useCallback as useCallback29, useContext as useContext26 } from "react";
+import { createContext as createContext19, forwardRef as forwardRef588, useState as useState34, useImperativeHandle as useImperativeHandle14, createElement as createElement536, useLayoutEffect as useLayoutEffect22, useEffect as useEffect54, useCallback as useCallback29, useContext as useContext26 } from "react";
 
 // ../../node_modules/@virtuoso.dev/urx/dist/urx.esm.js
 var PUBLISH = 0;
@@ -73649,7 +73724,7 @@ function omit4(keys3, obj) {
   }
   return result;
 }
-var useIsomorphicLayoutEffect3 = typeof document !== "undefined" ? useLayoutEffect22 : useEffect55;
+var useIsomorphicLayoutEffect3 = typeof document !== "undefined" ? useLayoutEffect22 : useEffect54;
 function systemToComponent(systemSpec, map2, Root) {
   var requiredPropNames = Object.keys(map2.required || {});
   var optionalPropNames = Object.keys(map2.optional || {});
@@ -74928,7 +75003,7 @@ function useSize(callback, enabled = true) {
 }
 
 // ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useWindowViewportRect.ts
-import { useCallback as useCallback30, useEffect as useEffect56, useRef as useRef80 } from "react";
+import { useCallback as useCallback30, useEffect as useEffect55, useRef as useRef80 } from "react";
 function useWindowViewportRectRef(callback, customScrollParent) {
   const viewportInfo = useRef80(null);
   const { externalWindow = window } = useRcPortalWindowContext();
@@ -74960,7 +75035,7 @@ function useWindowViewportRectRef(callback, customScrollParent) {
   const scrollAndResizeEventHandler = useCallback30(() => {
     calculateInfo(ref2.current);
   }, [calculateInfo, ref2]);
-  useEffect56(() => {
+  useEffect55(() => {
     if (customScrollParent) {
       customScrollParent.addEventListener("scroll", scrollAndResizeEventHandler);
       const observer = new externalWindow["ResizeObserver"](scrollAndResizeEventHandler);
@@ -75040,12 +75115,12 @@ function getChangedChildSizes(children2, itemSize, field, log2) {
 }
 
 // ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useIsomorphicLayoutEffect.ts
-import { useEffect as useEffect57, useLayoutEffect as useLayoutEffect23 } from "react";
-var useIsomorphicLayoutEffect4 = typeof document !== "undefined" ? useLayoutEffect23 : useEffect57;
+import { useEffect as useEffect56, useLayoutEffect as useLayoutEffect23 } from "react";
+var useIsomorphicLayoutEffect4 = typeof document !== "undefined" ? useLayoutEffect23 : useEffect56;
 var useIsomorphicLayoutEffect_default = useIsomorphicLayoutEffect4;
 
 // ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useScrollTop.ts
-import { useCallback as useCallback31, useEffect as useEffect58, useRef as useRef81 } from "react";
+import { useCallback as useCallback31, useEffect as useEffect57, useRef as useRef81 } from "react";
 function approximatelyEqual(num1, num2) {
   return Math.abs(num1 - num2) < 1.01;
 }
@@ -75070,7 +75145,7 @@ function useScrollTop(scrollContainerStateCallback, smoothScrollTargetReached, s
       }
     }
   }, [externalWindow, scrollContainerStateCallback, smoothScrollTargetReached]);
-  useEffect58(() => {
+  useEffect57(() => {
     const localRef = customScrollParent ? customScrollParent : scrollerRef.current;
     scrollerRefCallback(customScrollParent ? customScrollParent : scrollerRef.current);
     handler({ target: localRef });
@@ -77592,7 +77667,7 @@ var import_moment3 = __toModule(require_moment());
 import React695, {
   forwardRef as forwardRef608,
   useCallback as useCallback34,
-  useEffect as useEffect61,
+  useEffect as useEffect60,
   useMemo as useMemo73,
   useRef as useRef91
 } from "react";
@@ -77843,7 +77918,7 @@ function useUtils() {
 
 // ../../node_modules/@material-ui/pickers/esm/Wrapper-241966d7.js
 var import_prop_types123 = __toModule(require_prop_types());
-import { createElement as createElement544, useEffect as useEffect59, useLayoutEffect as useLayoutEffect25, useRef as useRef86, Fragment as Fragment10, createContext as createContext22 } from "react";
+import { createElement as createElement544, useEffect as useEffect58, useLayoutEffect as useLayoutEffect25, useRef as useRef86, Fragment as Fragment10, createContext as createContext22 } from "react";
 var DIALOG_WIDTH = 310;
 var DIALOG_WIDTH_WIDER = 325;
 var useStyles = makeStyles_default(function(theme) {
@@ -77911,7 +77986,7 @@ var styles155 = createStyles2({
 var ModalDialog$1 = withStyles_default2(styles155, {
   name: "MuiPickersModal"
 })(ModalDialog);
-var useIsomorphicEffect = typeof window === "undefined" ? useEffect59 : useLayoutEffect25;
+var useIsomorphicEffect = typeof window === "undefined" ? useEffect58 : useLayoutEffect25;
 function runKeyHandler(e2, keyHandlers) {
   var handler = keyHandlers[e2.key];
   if (handler) {
@@ -78008,7 +78083,7 @@ import { Component as Component5 } from "react";
 
 // ../../node_modules/@material-ui/pickers/esm/Calendar-11ae61f6.js
 var import_prop_types125 = __toModule(require_prop_types());
-import React__default, { useCallback as useCallback33, createElement as createElement546, cloneElement as cloneElement27, Fragment as Fragment11, Component as Component6, useEffect as useEffect60 } from "react";
+import React__default, { useCallback as useCallback33, createElement as createElement546, cloneElement as cloneElement27, Fragment as Fragment11, Component as Component6, useEffect as useEffect59 } from "react";
 
 // ../../node_modules/@material-ui/pickers/esm/Day.js
 var import_prop_types124 = __toModule(require_prop_types());
@@ -78317,7 +78392,7 @@ var withUtils = function withUtils2() {
 };
 var KeyDownListener = function KeyDownListener2(_ref6) {
   var onKeyDown = _ref6.onKeyDown;
-  useEffect60(function() {
+  useEffect59(function() {
     window.addEventListener("keydown", onKeyDown);
     return function() {
       window.removeEventListener("keydown", onKeyDown);
@@ -79926,7 +80001,7 @@ var InnerRcDatePicker = forwardRef608((props, ref2) => {
     const newDay = day ? utils.startOfDay(day).toDate() : null;
     handleChange(newDay, fromUserSelect);
   };
-  useEffect61(() => {
+  useEffect60(() => {
     if (momentValue && value !== emitValueRef.current && shouldDisableDate(momentValue)) {
       const closestEnabledDate = getClosestEnableDate(momentValue);
       handleDaySelect(closestEnabledDate, false);
@@ -80668,7 +80743,7 @@ RcRadioGroup.displayName = "RcRadioGroup";
 import React706, { forwardRef as forwardRef618, useMemo as useMemo78 } from "react";
 
 // ../juno-core/src/components/VirtualizedMenu/VirtualizedMenu.tsx
-import React703, { forwardRef as forwardRef615, useEffect as useEffect62, useMemo as useMemo77, useRef as useRef95 } from "react";
+import React703, { forwardRef as forwardRef615, useEffect as useEffect61, useMemo as useMemo77, useRef as useRef95 } from "react";
 
 // ../juno-core/src/components/VirtualizedMenu/VirtualizedMenuList.tsx
 var import_react_is13 = __toModule(require_react_is2());
@@ -80945,7 +81020,7 @@ var _RcVirtualizedMenu = forwardRef615((inProps, ref2) => {
   });
   const forceUpdate = useForceUpdate();
   const { sleep } = useSleep();
-  useEffect62(() => {
+  useEffect61(() => {
     if (open) {
       sleep(200).then(() => {
         forceUpdate();
@@ -81011,7 +81086,7 @@ RcVirtualizedDivider.displayName = "RcVirtualizedDivider";
 // ../juno-core/src/components/Forms/Select/utils/SelectInput/SelectInput.tsx
 import React705, { forwardRef as forwardRef617, useState as useState40 } from "react";
 var import_react_is14 = __toModule(require_react_is2());
-var import_utils251 = __toModule(require_utils());
+var import_utils252 = __toModule(require_utils());
 function areEqualValues2(a2, b2) {
   if (typeof b2 === "object" && b2 !== null) {
     return a2 === b2;
@@ -81196,7 +81271,7 @@ var SelectInput3 = forwardRef617((props, ref2) => {
   const displayMultiple = [];
   let computeDisplay = false;
   let foundMatch = false;
-  if ((0, import_utils251.isFilled)({ value }) || displayEmpty) {
+  if ((0, import_utils252.isFilled)({ value }) || displayEmpty) {
     if (renderValue) {
       display = renderValue(value);
     } else {
@@ -82489,7 +82564,7 @@ __publicField(RcImageView, "initThumbnailModeState", {
 // ../juno-core/src/components/InlineEditable/InlineEditable.tsx
 import React714, {
   forwardRef as forwardRef625,
-  useEffect as useEffect63,
+  useEffect as useEffect62,
   useMemo as useMemo85,
   useRef as useRef97,
   useState as useState44
@@ -82714,7 +82789,7 @@ var _RcInlineEditable = forwardRef625((inProps, ref2) => {
     e2.stopPropagation();
   });
   const classes = useMemo85(() => combineClasses(RcInlineEditableClasses, classesProp), [classesProp]);
-  useEffect63(() => {
+  useEffect62(() => {
     return () => {
       if (shouldRemoveNode && textFieldRef && textFieldRef.current) {
         clearReactReferencesInNode(textFieldRef.current);
@@ -85207,7 +85282,7 @@ var import_isEqual = __toModule(require_isEqual());
 import React754, {
   createRef as createRef2,
   forwardRef as forwardRef652,
-  useEffect as useEffect64,
+  useEffect as useEffect63,
   useMemo as useMemo104,
   useRef as useRef101,
   useState as useState48
@@ -85538,7 +85613,7 @@ var _MoreMenuTabs = forwardRef652((props, ref2) => {
     tabRefsMapRef.current = tabRefs;
     tabsTabChildRef.current = tabsTabDefaultChild;
   }
-  useEffect64(() => {
+  useEffect63(() => {
     if (childrenProp === prevChildrenProp) {
       return;
     }
@@ -85565,7 +85640,7 @@ var _MoreMenuTabs = forwardRef652((props, ref2) => {
       moreTabSizeRef.current = size;
     }
   }, [childrenProp, prevChildrenProp]);
-  useEffect64(() => {
+  useEffect63(() => {
     let currSelectTabItem;
     const tabRefsMap = tabRefsMapRef.current;
     if (tabRefsMap) {
@@ -85740,7 +85815,7 @@ import {
   createContext as createContext25,
   createElement as createElement555,
   useContext as useContext33,
-  useEffect as useEffect65,
+  useEffect as useEffect64,
   useMemo as useMemo106,
   useState as useState49
 } from "react";
@@ -85750,7 +85825,7 @@ if (true) {
 }
 function useUniquePrefix() {
   var _React$useState = useState49(null), id3 = _React$useState[0], setId = _React$useState[1];
-  useEffect65(function() {
+  useEffect64(function() {
     setId("mui-p-".concat(Math.round(Math.random() * 1e5)));
   }, []);
   return id3;
@@ -86418,6 +86493,7 @@ export {
   isOutOfRange,
   isRcElement,
   isRef,
+  isTouchEvent,
   isUrl,
   isWebKit154,
   keyframes,
