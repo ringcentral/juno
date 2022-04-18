@@ -7,8 +7,8 @@ import {
   RcSlide,
   RcText,
   RcTypography,
-  useGlobalListener,
   useForceUpdate,
+  useGlobalListener,
 } from '@ringcentral/juno';
 import { Meta, Story } from '@storybook/react';
 
@@ -31,9 +31,22 @@ export const UseGlobalListenerExample: Story<{}> = () => {
   const blur2 = useGlobalListener('blur', () => addLog('blur event2'));
   const blur3 = useGlobalListener('blur', () => addLog('blur event3'));
 
-  const focus = useGlobalListener('focus', () => {
-    addLog('focus event');
-  });
+  useGlobalListener(
+    'touchend',
+    () => addLog('touchend'),
+    {
+      passive: false,
+    },
+    { target: boxRef, customKey: 'box-touchend' },
+  );
+
+  const focus = useGlobalListener(
+    'focus',
+    () => {
+      addLog('focus event');
+    },
+    { target: window },
+  );
 
   const forceUpdate = useForceUpdate();
 
@@ -50,7 +63,7 @@ export const UseGlobalListenerExample: Story<{}> = () => {
         <RcText highlight>getEventListeners(window)</RcText> to view state
         change after remove all listeners or add new listeners
       </RcTypography>
-      <RcBox textAlign="right">
+      <RcBox textAlign="right" ref={boxRef}>
         <RcButton
           color={focus.state.listening ? 'success.b04' : 'danger.b04'}
           onClick={() => {

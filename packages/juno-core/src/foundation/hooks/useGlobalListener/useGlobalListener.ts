@@ -1,132 +1,36 @@
-import { useEffect, useRef } from 'react';
+import { SyntheticEvent, useEffect, useRef } from 'react';
 
-import { getRefElement, logInDev, RefOrElementOrCallback } from '../../utils';
+import { getRefElement, logInDev } from '../../utils';
 import { useEventCallback } from '../useEventCallback';
+import {
+  createGlobalListener,
+  CreateGlobalListenerConfig,
+} from './createGlobalListener';
 
-export const globalListenerEventMap = new Map<
-  string,
-  {
-    /**
-     * listener exec method
-     */
-    exec: (e: any) => void;
-    /**
-     * all listener
-     */
-    listeners: Set<(e: any) => void>;
-  }
->();
+type GlobalListener = ReturnType<typeof createGlobalListener>;
 
-/**
- * create globalListener handler for share one listener event
- *
- * @example
- * ```ts
- * const globalListener = createGlobalListener('focus', () => { console.log('focus') });
- * const globalListener2 = createGlobalListener('focus', () => { console.log('focus') });
- * globalListener.listen();
- * globalListener2.listen();
- *
- * => // that will only create an event listener on window, but every callback will get emit value when event triggered
- * ```
- */
-export const createGlobalListener = (
-  key: string,
-  listener: EventListener,
-  {
-    customKey = key,
-    target: targetProp = window,
-  }: {
-    /**
-     * custom key for determining different event group, default is same as `key`
-     */
-    customKey?: string;
-    /**
-     * custom binding event target, default is `window`
-     */
-    target?: RefOrElementOrCallback | EventTarget;
-  } = {},
-) => {
-  let listening = false;
-
-  const getMapValue = () => globalListenerEventMap.get(customKey);
-
-  const addListener = () => {
-    if (listening) return;
-
-    const savedEvent = getMapValue();
-
-    if (!savedEvent?.exec) {
-      const exec = (e: any) => {
-        const event = getMapValue();
-
-        event?.listeners.forEach((c) => c(e));
-      };
-
-      globalListenerEventMap.set(customKey, {
-        exec,
-        listeners: new Set([listener]),
-      });
-
-      const target = getRefElement(targetProp as any);
-
-      target?.addEventListener(key, exec);
-    } else {
-      savedEvent.listeners.add(listener);
-    }
-    listening = true;
-  };
-
-  const removeListener = () => {
-    if (!listening) return;
-    listening = false;
-
-    const _savedEvent = getMapValue();
-
-    if (!_savedEvent) return;
-
-    const { listeners } = _savedEvent;
-
-    listeners.delete(listener);
-
-    if (listeners.size === 0) {
-      const target = getRefElement(targetProp as any);
-
-      target?.removeEventListener(key, _savedEvent.exec);
-      globalListenerEventMap.delete(customKey);
-    }
-  };
-
-  return {
-    /**
-     * bind listener again
-     */
-    listen: () => addListener(),
-    /**
-     * remove listener
-     */
-    remove: () => removeListener(),
-    /**
-     * current listener state
-     */
-    get state() {
-      return {
-        /**
-         * current listener state count
-         */
-        get count() {
-          return getMapValue()?.listeners.size || 0;
-        },
-        /**
-         * is that be listening
-         */
-        listening,
-      };
-    },
-  };
+export type UseGlobalListenerConfig = CreateGlobalListenerConfig & {
+  /**
+   * start listening when component mounted
+   *
+   * @default true
+   */
+  startImmediately?: boolean;
 };
 
-type CreateGlobalListenerParams = Parameters<typeof createGlobalListener>;
+export function useGlobalListener<T extends SyntheticEvent>(
+  key: string,
+  listener: (event?: T) => void,
+  config?: UseGlobalListenerConfig,
+): GlobalListener;
+
+export function useGlobalListener<T extends SyntheticEvent>(
+  key: string,
+  listener: (event?: T) => void,
+  options?: AddEventListenerOptions | boolean,
+  config?: UseGlobalListenerConfig,
+): GlobalListener;
+
 /**
  * bind global event, when you bind same key event,
  * that will reuse one event listener and trigger both callback once that listener be triggered.
@@ -134,6 +38,7 @@ type CreateGlobalListenerParams = Parameters<typeof createGlobalListener>;
  * also you can control listener with method `listen` and `remove`
  * and get listener `state` for check listener count number and current listing state.
  *
+ * config:
  * - `target`: custom binding event target, default is `window`
  * - `customKey`: custom key for determining different event group, default is same as `key`
  * - `startImmediately`: start listener immediately, default is `true`
@@ -143,47 +48,69 @@ type CreateGlobalListenerParams = Parameters<typeof createGlobalListener>;
  * @example
  * ```ts
  * useGlobalListener('keyup', () => console.log('window key up1'))
+ *
  * useGlobalListener('keyup', () => console.log('window key up2'))
- * useGlobalListener('keyup', () => console.log('window key up3'))
+ *
+ * useGlobalListener('touchend', () => console.log('window key up3'), {
+ *  target: someWantHostElement,
+ *  customKey: 'hostTouchend',
+ * })
+ *
+ * useGlobalListener('touchend', () => console.log('window key up3'), { passive: false }, {
+ *  target: someWantHostElement,
+ *  customKey: 'hostTouchend',
+ * })
  *
  * => // that will only create an event listener on `window`, but every callback will get emit value when event triggered
  * ```
  */
-export function useGlobalListener(
-  key: CreateGlobalListenerParams[0],
-  listener: CreateGlobalListenerParams[1],
-  options: CreateGlobalListenerParams[2] & {
-    /**
-     * start listening when component mounted
-     *
-     * @default true
-     */
-    startImmediately?: boolean;
-  } = {},
+export function useGlobalListener<T extends SyntheticEvent>(
+  key: string,
+  listener: (event?: T) => void,
+  ...args: any[]
 ) {
-  const { startImmediately = true } = options;
+  const { options, config } = getListenerOverloadOption(args);
+
+  const {
+    customKey = key,
+    target: targetProp = window,
+    startImmediately = true,
+  } = config || {};
 
   const _listener = useEventCallback(listener as any);
 
   const { current: globalListener } = useRef(
-    createGlobalListener(key, _listener, options),
+    createGlobalListener(key, _listener, options, {
+      customKey,
+      target: targetProp,
+    }),
   );
 
   if (process.env.NODE_ENV !== 'production') {
-    const { customKey = key, target: targetProp = window } = options;
-
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
-      const target = getRefElement(targetProp as any);
+      if (customKey === key) {
+        if (Object.keys(options).length > 0) {
+          logInDev({
+            component: 'useGlobalListener',
+            message:
+              'when have set options, suggest you also bind customKey, otherwise, it may use previous listener without same options',
+            level: 'warn',
+          });
+        }
 
-      if (target !== window && customKey === key) {
-        logInDev({
-          component: 'useGlobalListener',
-          message:
-            'When you custom binding event target, you must custom key for determining different event group',
-          level: 'error',
-        });
+        const target = getRefElement(targetProp as any);
+
+        if (target !== window) {
+          logInDev({
+            component: 'useGlobalListener',
+            message:
+              'When you custom binding event target, you must custom key for determining different event group',
+            level: 'error',
+          });
+        }
       }
+
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
   }
@@ -192,9 +119,35 @@ export function useGlobalListener(
     if (startImmediately) {
       globalListener.listen();
     }
+
     return globalListener.remove;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return globalListener;
+}
+
+function getListenerOverloadOption(args: any[]) {
+  let options: AddEventListenerOptions | boolean | undefined;
+  let config: UseGlobalListenerConfig | undefined;
+
+  if (typeof args[0] === 'boolean') {
+    options = args[0];
+    config = args[1];
+  } else {
+    const { startImmediately, customKey, target, ...restOptions } = {
+      ...(args[0] || {}),
+      ...(args[1] || {}),
+    } as AddEventListenerOptions & UseGlobalListenerConfig;
+
+    options = restOptions;
+
+    config = {
+      startImmediately,
+      customKey,
+      target,
+    };
+  }
+
+  return { options, config };
 }
