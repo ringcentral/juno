@@ -62,6 +62,10 @@ type RcIconButtonProps = {
    * not have fake border on `inverse` and `contained` variant in `highContrast` theme
    */
   disabledFakeBorder?: boolean;
+  /**
+   * pass props to below Icon component
+   */
+  IconProps?: RcIconProps;
 } & RcIconButtonDeprecatedProps &
   Pick<
     RcIconProps,
@@ -88,6 +92,7 @@ const _RcIconButton = memo(
 
     const {
       buttonRef = ref,
+      IconProps,
       className,
       classes: classesProp,
       children,
@@ -157,6 +162,7 @@ const _RcIconButton = memo(
             className={classes!.icon}
             loading={loading}
             CircularProgressProps={CircularProgressProps}
+            {...IconProps}
           >
             {children as string}
           </RcIcon>
