@@ -126,6 +126,7 @@ export const createGlobalListener = (
   };
 };
 
+type CreateGlobalListenerParams = Parameters<typeof createGlobalListener>;
 /**
  * bind global event, when you bind same key event,
  * that will reuse one event listener and trigger both callback once that listener be triggered.
@@ -133,7 +134,11 @@ export const createGlobalListener = (
  * also you can control listener with method `listen` and `remove`
  * and get listener `state` for check listener count number and current listing state.
  *
- * - `key` `options` only work when set first time, never change after first render
+ * - `target`: custom binding event target, default is `window`
+ * - `customKey`: custom key for determining different event group, default is same as `key`
+ * - `startImmediately`: start listener immediately, default is `true`
+ *
+ * * `key`, `options` only work when set first time, never change after first render
  *
  * @example
  * ```ts
@@ -145,19 +150,19 @@ export const createGlobalListener = (
  * ```
  */
 export function useGlobalListener(
-  key: string,
-  listener: EventListener,
-  options: {
+  key: CreateGlobalListenerParams[0],
+  listener: CreateGlobalListenerParams[1],
+  options: CreateGlobalListenerParams[2] & {
     /**
-     * custom key for determining different event group, default is same as `key`
+     * start listening when component mounted
+     *
+     * @default true
      */
-    customKey?: string;
-    /**
-     * custom binding event target, default is `window`
-     */
-    target?: RefOrElementOrCallback | EventTarget;
+    startImmediately?: boolean;
   } = {},
 ) {
+  const { startImmediately = true } = options;
+
   const _listener = useEventCallback(listener as any);
 
   const { current: globalListener } = useRef(
@@ -184,7 +189,9 @@ export function useGlobalListener(
   }
 
   useEffect(() => {
-    globalListener.listen();
+    if (startImmediately) {
+      globalListener.listen();
+    }
     return globalListener.remove;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
