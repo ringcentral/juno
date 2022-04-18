@@ -986,7 +986,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-313 MuiCheckbox-root RcCheckbox-root MuiCheckbox-indeterminate c12 c13"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-315 MuiCheckbox-root RcCheckbox-root MuiCheckbox-indeterminate c12 c13"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -1004,7 +1004,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-316"
+            className="PrivateSwitchBase-input-318"
             data-indeterminate={true}
             onChange={[Function]}
             type="checkbox"
@@ -1074,7 +1074,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-313 MuiRadio-root RcRadio-root c15 c16"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-315 MuiRadio-root RcRadio-root c15 c16"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -1092,12 +1092,12 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-316"
+            className="PrivateSwitchBase-input-318"
             onChange={[Function]}
             type="radio"
           />
           <div
-            className="PrivateRadioButtonIcon-root-317 RadioButtonIcon-root"
+            className="PrivateRadioButtonIcon-root-319 RadioButtonIcon-root"
           >
             <svg
               aria-hidden={true}
@@ -1111,7 +1111,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
             </svg>
             <svg
               aria-hidden={true}
-              className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-318"
+              className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-320"
               focusable="false"
               viewBox="0 0 24 24"
             >
@@ -1153,7 +1153,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-313 MuiCheckbox-root RcCheckbox-root MuiCheckbox-indeterminate c12 c13"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-315 MuiCheckbox-root RcCheckbox-root MuiCheckbox-indeterminate c12 c13"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -1171,7 +1171,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
             className="MuiIconButton-label"
           >
             <input
-              className="PrivateSwitchBase-input-316"
+              className="PrivateSwitchBase-input-318"
               data-indeterminate={true}
               onChange={[Function]}
               type="checkbox"
@@ -1326,7 +1326,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-313 MuiSwitch-switchBase RcSwitch-switchBase"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-315 MuiSwitch-switchBase RcSwitch-switchBase"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -1344,7 +1344,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
             className="MuiIconButton-label"
           >
             <input
-              className="PrivateSwitchBase-input-316 MuiSwitch-input"
+              className="PrivateSwitchBase-input-318 MuiSwitch-input"
               onChange={[Function]}
               type="checkbox"
             />
@@ -1431,7 +1431,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-313 MuiCheckbox-root RcCheckbox-root MuiCheckbox-indeterminate c12 c13"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-315 MuiCheckbox-root RcCheckbox-root MuiCheckbox-indeterminate c12 c13"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -1449,7 +1449,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
             className="MuiIconButton-label"
           >
             <input
-              className="PrivateSwitchBase-input-316"
+              className="PrivateSwitchBase-input-318"
               data-indeterminate={true}
               onChange={[Function]}
               type="checkbox"
@@ -2385,7 +2385,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-306 MuiCheckbox-root RcCheckbox-root c15 c16"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-308 MuiCheckbox-root RcCheckbox-root c15 c16"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -2403,7 +2403,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-309"
+            className="PrivateSwitchBase-input-311"
             data-indeterminate={false}
             onChange={[Function]}
             type="checkbox"
@@ -2463,7 +2463,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-306 MuiRadio-root RcRadio-root c18 c19"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-308 MuiRadio-root RcRadio-root c18 c19"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -2481,12 +2481,12 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-309"
+            className="PrivateSwitchBase-input-311"
             onChange={[Function]}
             type="radio"
           />
           <div
-            className="PrivateRadioButtonIcon-root-310 RadioButtonIcon-root"
+            className="PrivateRadioButtonIcon-root-312 RadioButtonIcon-root"
           >
             <svg
               aria-hidden={true}
@@ -2500,7 +2500,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
             </svg>
             <svg
               aria-hidden={true}
-              className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-311"
+              className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-313"
               focusable="false"
               viewBox="0 0 24 24"
             >
@@ -2553,7 +2553,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-306 MuiSwitch-switchBase RcSwitch-switchBase"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-308 MuiSwitch-switchBase RcSwitch-switchBase"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -2571,7 +2571,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
             className="MuiIconButton-label"
           >
             <input
-              className="PrivateSwitchBase-input-309 MuiSwitch-input"
+              className="PrivateSwitchBase-input-311 MuiSwitch-input"
               onChange={[Function]}
               type="checkbox"
             />
@@ -2628,7 +2628,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-306 MuiCheckbox-root RcCheckbox-root c15 c16"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-308 MuiCheckbox-root RcCheckbox-root c15 c16"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -2646,7 +2646,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
             className="MuiIconButton-label"
           >
             <input
-              className="PrivateSwitchBase-input-309"
+              className="PrivateSwitchBase-input-311"
               data-indeterminate={false}
               onChange={[Function]}
               type="checkbox"
@@ -2715,7 +2715,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-306 MuiRadio-root RcRadio-root c18 c19"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-308 MuiRadio-root RcRadio-root c18 c19"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -2733,12 +2733,12 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
             className="MuiIconButton-label"
           >
             <input
-              className="PrivateSwitchBase-input-309"
+              className="PrivateSwitchBase-input-311"
               onChange={[Function]}
               type="radio"
             />
             <div
-              className="PrivateRadioButtonIcon-root-310 RadioButtonIcon-root"
+              className="PrivateRadioButtonIcon-root-312 RadioButtonIcon-root"
             >
               <svg
                 aria-hidden={true}
@@ -2752,7 +2752,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
               </svg>
               <svg
                 aria-hidden={true}
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-311"
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-313"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -2814,7 +2814,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
         >
           <span
             aria-disabled={false}
-            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-306 MuiSwitch-switchBase RcSwitch-switchBase"
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-308 MuiSwitch-switchBase RcSwitch-switchBase"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -2832,7 +2832,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
               className="MuiIconButton-label"
             >
               <input
-                className="PrivateSwitchBase-input-309 MuiSwitch-input"
+                className="PrivateSwitchBase-input-311 MuiSwitch-input"
                 onChange={[Function]}
                 type="checkbox"
               />
@@ -2892,7 +2892,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-306 MuiCheckbox-root RcCheckbox-root c15 c16"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-308 MuiCheckbox-root RcCheckbox-root c15 c16"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -2910,7 +2910,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-309"
+            className="PrivateSwitchBase-input-311"
             data-indeterminate={false}
             onChange={[Function]}
             type="checkbox"
@@ -2975,7 +2975,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-306 MuiRadio-root RcRadio-root c18 c19"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-308 MuiRadio-root RcRadio-root c18 c19"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -2993,12 +2993,12 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-309"
+            className="PrivateSwitchBase-input-311"
             onChange={[Function]}
             type="radio"
           />
           <div
-            className="PrivateRadioButtonIcon-root-310 RadioButtonIcon-root"
+            className="PrivateRadioButtonIcon-root-312 RadioButtonIcon-root"
           >
             <svg
               aria-hidden={true}
@@ -3012,7 +3012,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
             </svg>
             <svg
               aria-hidden={true}
-              className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-311"
+              className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-313"
               focusable="false"
               viewBox="0 0 24 24"
             >
@@ -3070,7 +3070,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-306 MuiSwitch-switchBase RcSwitch-switchBase"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-308 MuiSwitch-switchBase RcSwitch-switchBase"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -3088,7 +3088,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
             className="MuiIconButton-label"
           >
             <input
-              className="PrivateSwitchBase-input-309 MuiSwitch-input"
+              className="PrivateSwitchBase-input-311 MuiSwitch-input"
               onChange={[Function]}
               type="checkbox"
             />
@@ -3333,7 +3333,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-306 MuiCheckbox-root RcCheckbox-root c15 c16"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-308 MuiCheckbox-root RcCheckbox-root c15 c16"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -3351,7 +3351,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
             className="MuiIconButton-label"
           >
             <input
-              className="PrivateSwitchBase-input-309"
+              className="PrivateSwitchBase-input-311"
               data-indeterminate={false}
               onChange={[Function]}
               type="checkbox"
@@ -3399,7 +3399,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-306 MuiCheckbox-root RcCheckbox-root c15 c16"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-308 MuiCheckbox-root RcCheckbox-root c15 c16"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -3417,7 +3417,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
             className="MuiIconButton-label"
           >
             <input
-              className="PrivateSwitchBase-input-309"
+              className="PrivateSwitchBase-input-311"
               data-indeterminate={false}
               onChange={[Function]}
               type="checkbox"
@@ -3477,7 +3477,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-306 MuiRadio-root RcRadio-root c18 c19"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-308 MuiRadio-root RcRadio-root c18 c19"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -3495,12 +3495,12 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
             className="MuiIconButton-label"
           >
             <input
-              className="PrivateSwitchBase-input-309"
+              className="PrivateSwitchBase-input-311"
               onChange={[Function]}
               type="radio"
             />
             <div
-              className="PrivateRadioButtonIcon-root-310 RadioButtonIcon-root"
+              className="PrivateRadioButtonIcon-root-312 RadioButtonIcon-root"
             >
               <svg
                 aria-hidden={true}
@@ -3514,7 +3514,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
               </svg>
               <svg
                 aria-hidden={true}
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-311"
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-313"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -3552,7 +3552,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-306 MuiRadio-root RcRadio-root c18 c19"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-308 MuiRadio-root RcRadio-root c18 c19"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -3570,12 +3570,12 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
             className="MuiIconButton-label"
           >
             <input
-              className="PrivateSwitchBase-input-309"
+              className="PrivateSwitchBase-input-311"
               onChange={[Function]}
               type="radio"
             />
             <div
-              className="PrivateRadioButtonIcon-root-310 RadioButtonIcon-root"
+              className="PrivateRadioButtonIcon-root-312 RadioButtonIcon-root"
             >
               <svg
                 aria-hidden={true}
@@ -3589,7 +3589,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
               </svg>
               <svg
                 aria-hidden={true}
-                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-311"
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-313"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -3642,7 +3642,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
         >
           <span
             aria-disabled={false}
-            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-306 MuiSwitch-switchBase RcSwitch-switchBase"
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-308 MuiSwitch-switchBase RcSwitch-switchBase"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -3660,7 +3660,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
               className="MuiIconButton-label"
             >
               <input
-                className="PrivateSwitchBase-input-309 MuiSwitch-input"
+                className="PrivateSwitchBase-input-311 MuiSwitch-input"
                 onChange={[Function]}
                 type="checkbox"
               />
@@ -3700,7 +3700,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
         >
           <span
             aria-disabled={false}
-            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-306 MuiSwitch-switchBase RcSwitch-switchBase"
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-308 MuiSwitch-switchBase RcSwitch-switchBase"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -3718,7 +3718,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
               className="MuiIconButton-label"
             >
               <input
-                className="PrivateSwitchBase-input-309 MuiSwitch-input"
+                className="PrivateSwitchBase-input-311 MuiSwitch-input"
                 onChange={[Function]}
                 type="checkbox"
               />

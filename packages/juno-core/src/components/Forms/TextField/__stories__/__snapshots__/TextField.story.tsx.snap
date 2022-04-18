@@ -430,7 +430,7 @@ Array [
         value=""
       />
       <div
-        className="MuiBox-root MuiBox-root-254"
+        className="MuiBox-root MuiBox-root-256"
       >
         <button
           aria-describedby={null}
@@ -903,7 +903,7 @@ Array [
         type="search"
       />
       <div
-        className="MuiBox-root MuiBox-root-255"
+        className="MuiBox-root MuiBox-root-257"
       >
         <button
           aria-hidden={true}
@@ -1416,7 +1416,7 @@ Array [
         type="number"
       />
       <div
-        className="MuiBox-root MuiBox-root-256"
+        className="MuiBox-root MuiBox-root-258"
       >
         <button
           aria-describedby={null}
@@ -1973,7 +1973,7 @@ Array [
         value="Example"
       />
       <div
-        className="MuiBox-root MuiBox-root-257"
+        className="MuiBox-root MuiBox-root-259"
       >
         <button
           aria-hidden={true}
@@ -2526,7 +2526,7 @@ Array [
         value="Example"
       />
       <div
-        className="MuiBox-root MuiBox-root-258"
+        className="MuiBox-root MuiBox-root-260"
       >
         <button
           aria-hidden={true}
@@ -3111,7 +3111,7 @@ Array [
         value="Example"
       />
       <div
-        className="MuiBox-root MuiBox-root-259"
+        className="MuiBox-root MuiBox-root-261"
       >
         <button
           aria-hidden={true}
@@ -3664,7 +3664,7 @@ Array [
         value="Example"
       />
       <div
-        className="MuiBox-root MuiBox-root-260"
+        className="MuiBox-root MuiBox-root-262"
       >
         <button
           aria-hidden={true}
@@ -4213,7 +4213,7 @@ Array [
         value="Example"
       />
       <div
-        className="MuiBox-root MuiBox-root-261"
+        className="MuiBox-root MuiBox-root-263"
       >
         <button
           aria-hidden={true}
@@ -4766,7 +4766,7 @@ Array [
         value="Example"
       />
       <div
-        className="MuiBox-root MuiBox-root-262"
+        className="MuiBox-root MuiBox-root-264"
       >
         <button
           aria-hidden={true}
@@ -5315,7 +5315,7 @@ Array [
         value="Example"
       />
       <div
-        className="MuiBox-root MuiBox-root-263"
+        className="MuiBox-root MuiBox-root-265"
       >
         <button
           aria-hidden={true}
@@ -6069,7 +6069,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
           value="text align"
         />
         <div
-          className="MuiBox-root MuiBox-root-264"
+          className="MuiBox-root MuiBox-root-266"
         >
           <button
             aria-hidden={true}
@@ -6153,7 +6153,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
           value="text align"
         />
         <div
-          className="MuiBox-root MuiBox-root-265"
+          className="MuiBox-root MuiBox-root-267"
         >
           <button
             aria-hidden={true}
@@ -6237,7 +6237,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
           value="text align"
         />
         <div
-          className="MuiBox-root MuiBox-root-266"
+          className="MuiBox-root MuiBox-root-268"
         >
           <button
             aria-hidden={true}

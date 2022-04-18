@@ -76,27 +76,37 @@ exports[`Storyshots 🔧 Foundation/Hooks/useTouchMouseEvent useTouchMouseEvent 
   }
 }
 
-<button
-  className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
-  disabled={false}
-  onBlur={[Function]}
-  onDragLeave={[Function]}
-  onFocus={[Function]}
-  onKeyDown={[Function]}
-  onKeyUp={[Function]}
-  onMouseDown={[Function]}
-  onMouseLeave={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchMove={[Function]}
-  onTouchStart={[Function]}
-  tabIndex={0}
-  type="button"
->
-  <span
-    className="MuiButton-label"
+<div>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
   >
-    Trigger event
-  </span>
-</button>
+    <span
+      className="MuiButton-label"
+    >
+      Trigger event
+    </span>
+  </button>
+  <div
+    className="MuiBox-root MuiBox-root-16"
+    style={
+      Object {
+        "overflowX": "hidden",
+      }
+    }
+  />
+</div>
 `;

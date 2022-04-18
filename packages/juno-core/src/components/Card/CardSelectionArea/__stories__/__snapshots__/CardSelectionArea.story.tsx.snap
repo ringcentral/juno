@@ -88,7 +88,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardSelectionArea CardSelectio
 >
   <span
     aria-disabled={false}
-    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-129 MuiCheckbox-root RcCardSelectionArea-root MuiCheckbox-colorSecondary c1 MuiIconButton-colorSecondary"
+    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-131 MuiCheckbox-root RcCardSelectionArea-root MuiCheckbox-colorSecondary c1 MuiIconButton-colorSecondary"
     onBlur={[Function]}
     onDragLeave={[Function]}
     onFocus={[Function]}
@@ -106,7 +106,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardSelectionArea CardSelectio
       className="MuiIconButton-label"
     >
       <input
-        className="PrivateSwitchBase-input-132"
+        className="PrivateSwitchBase-input-134"
         data-indeterminate={false}
         disabled={false}
         onChange={[Function]}

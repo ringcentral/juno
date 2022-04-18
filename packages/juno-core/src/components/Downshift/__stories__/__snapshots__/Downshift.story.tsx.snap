@@ -548,7 +548,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-145"
+        className="MuiBox-root MuiBox-root-147"
       >
         <button
           aria-hidden={true}
@@ -1219,7 +1219,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-161"
+        className="MuiBox-root MuiBox-root-163"
       >
         <button
           aria-hidden={true}
@@ -1851,7 +1851,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-146"
+        className="MuiBox-root MuiBox-root-148"
       >
         <button
           aria-hidden={true}
@@ -3950,7 +3950,7 @@ Array [
         className="c10"
       >
         <div
-          className="MuiBox-root MuiBox-root-148"
+          className="MuiBox-root MuiBox-root-150"
         >
           <button
             aria-hidden={true}
@@ -5047,7 +5047,7 @@ Array [
         className="c10"
       >
         <div
-          className="MuiBox-root MuiBox-root-149"
+          className="MuiBox-root MuiBox-root-151"
         >
           <button
             aria-hidden={true}
@@ -6048,7 +6048,7 @@ Array [
         className="c10"
       >
         <div
-          className="MuiBox-root MuiBox-root-150"
+          className="MuiBox-root MuiBox-root-152"
         >
           <button
             aria-hidden={true}
@@ -7048,7 +7048,7 @@ Array [
         className="c10"
       >
         <div
-          className="MuiBox-root MuiBox-root-151"
+          className="MuiBox-root MuiBox-root-153"
         >
           <button
             aria-hidden={true}
@@ -8165,7 +8165,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-147"
+        className="MuiBox-root MuiBox-root-149"
       >
         <button
           aria-hidden={true}
@@ -8285,1344 +8285,6 @@ Array [
     data-variant="headline1"
   >
     Normal Group
-  </h5>,
-  .c10 {
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  pointer-events: none;
-}
-
-.c9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-size: 24px;
-}
-
-.c5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  color: #666666;
-  border-radius: 50%;
-  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
-  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
-  cursor: pointer;
-}
-
-.c5,
-.c5 .c8 {
-  font-size: 20px;
-}
-
-.c5:active,
-.c5:active .c8 {
-  color: #666666;
-}
-
-.c5.focus-visible,
-.c5[data-focus-visible-added] {
-  background-color: transparent;
-}
-
-.c5.focus-visible:active,
-.c5[data-focus-visible-added]:active,
-.c5.focus-visible:active .c8,
-.c5[data-focus-visible-added]:active .c8 {
-  color: rgba(102,102,102,0.88);
-}
-
-.c5.focus-visible:after,
-.c5[data-focus-visible-added]:after {
-  content: '';
-  position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.c5.RcIconButton-persistBg {
-  background-color: rgba(102,102,102,0.12);
-}
-
-.c5.RcIconButton-disabled,
-.c5.RcIconButton-disabled .c8 {
-  color: #B9B9B9;
-}
-
-.c5.RcIconButton-invisible {
-  opacity: 0;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
-.c5.RcIconButton-outline {
-  border: 1px solid #C7C7C7;
-}
-
-.c5.RcIconButton-contained {
-  color: #fff;
-  background-color: #666666;
-}
-
-.c5.RcIconButton-contained:before {
-  content: '';
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.c5.RcIconButton-contained.focus-visible:before,
-.c5.RcIconButton-contained[data-focus-visible-added]:before {
-  background-color: rgba(255,255,255,0.16);
-}
-
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added],
-.c5.RcIconButton-contained.focus-visible .c8,
-.c5.RcIconButton-contained[data-focus-visible-added] .c8 {
-  color: #fff;
-}
-
-.c5.RcIconButton-contained:active,
-.c5.RcIconButton-contained:active .c8 {
-  color: #fff;
-}
-
-.c5 .RcIconButtonTouchRipple-ripplePulsate {
-  border-radius: 0;
-  -webkit-animation-name: none;
-  animation-name: none;
-  opacity: 0;
-}
-
-.c12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  color: #666666;
-  border-radius: 50%;
-  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
-  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
-  cursor: pointer;
-}
-
-.c12,
-.c12 .c8 {
-  font-size: 24px;
-}
-
-.c12:active,
-.c12:active .c8 {
-  color: #666666;
-}
-
-.c12.focus-visible,
-.c12[data-focus-visible-added] {
-  background-color: transparent;
-}
-
-.c12.focus-visible:active,
-.c12[data-focus-visible-added]:active,
-.c12.focus-visible:active .c8,
-.c12[data-focus-visible-added]:active .c8 {
-  color: rgba(102,102,102,0.88);
-}
-
-.c12.focus-visible:after,
-.c12[data-focus-visible-added]:after {
-  content: '';
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
-  box-shadow: 0 0 0 1px #066FAC;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.c12.RcIconButton-persistBg {
-  background-color: rgba(102,102,102,0.12);
-}
-
-.c12.RcIconButton-disabled,
-.c12.RcIconButton-disabled .c8 {
-  color: #B9B9B9;
-}
-
-.c12.RcIconButton-invisible {
-  opacity: 0;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
-.c12.RcIconButton-outline {
-  border: 1px solid #C7C7C7;
-}
-
-.c12.RcIconButton-contained {
-  color: #fff;
-  background-color: #666666;
-}
-
-.c12.RcIconButton-contained:before {
-  content: '';
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.c12.RcIconButton-contained.focus-visible:before,
-.c12.RcIconButton-contained[data-focus-visible-added]:before {
-  background-color: rgba(255,255,255,0.16);
-}
-
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added],
-.c12.RcIconButton-contained.focus-visible .c8,
-.c12.RcIconButton-contained[data-focus-visible-added] .c8 {
-  color: #fff;
-}
-
-.c12.RcIconButton-contained:active,
-.c12.RcIconButton-contained:active .c8 {
-  color: #fff;
-}
-
-.c12 .RcIconButtonTouchRipple-ripplePulsate {
-  border-radius: 0;
-  -webkit-animation-name: none;
-  animation-name: none;
-  opacity: 0;
-}
-
-.c11 {
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c0 .c4 {
-  margin-left: 12px;
-}
-
-.c0.RcTextField-root {
-  margin: 0 0 16px 0;
-}
-
-.c0 .RcTextFieldInputLabel-root {
-  font-size: 0.75rem;
-  font-weight: 700;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 16px;
-  color: #666666;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0 .RcTextFieldInputLabel-focused {
-  color: #066FAC;
-}
-
-.c0 .RcTextFieldInput-root {
-  color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .c6 {
-  display: none;
-}
-
-.c0 .RcTextFieldInput-input {
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 24px;
-}
-
-.c0 .RcTextFieldInput-input::-webkit-input-placeholder {
-  color: #757575;
-  opacity: 1;
-}
-
-.c0 .RcTextFieldInput-input::-moz-placeholder {
-  color: #757575;
-  opacity: 1;
-}
-
-.c0 .RcTextFieldInput-input:-ms-input-placeholder {
-  color: #757575;
-  opacity: 1;
-}
-
-.c0 .RcTextFieldInput-input::placeholder {
-  color: #757575;
-  opacity: 1;
-}
-
-.c0 .RcTextFieldInput-underline:before {
-  border-bottom-color: #939393;
-}
-
-.c0 .RcTextFieldInput-underline:after {
-  border-bottom-color: #066FAC;
-}
-
-.c0 .RcTextFieldInput-error:after {
-  border-bottom-color: #BE3933;
-}
-
-.c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
-}
-
-.c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
-}
-
-.c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
-}
-
-.c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
-}
-
-.c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
-}
-
-.c0 .RcTextFieldInput-disabled:before {
-  border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
-}
-
-.c0 .RcTextFieldInput-disabled:after {
-  border-bottom-style: none;
-}
-
-.c0 .RcTextFieldFormHelperText-root {
-  font-size: 0.75rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 16px;
-  color: #666666;
-}
-
-.c0 .RcTextFieldFormHelperText-error,
-.c0 .RcTextFieldInputLabel-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled,
-.c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
-}
-
-.c0 input[type='search']::-ms-clear,
-.c0 input[type='search']::-ms-reveal {
-  display: none;
-  width: 0;
-  height: 0;
-}
-
-.c0 input[type='search']::-webkit-search-decoration,
-.c0 input[type='search']::-webkit-search-cancel-button,
-.c0 input[type='search']::-webkit-search-results-button,
-.c0 input[type='search']::-webkit-search-results-decoration {
-  display: none;
-}
-
-.c3 {
-  right: 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1 .RcDownshiftInput-input {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  min-width: 30px;
-}
-
-.c2 .RcDownshiftInput-root {
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 0 68px 0 0;
-}
-
-.c2 .RcDownshiftInput-root:before,
-.c2 .RcDownshiftInput-root:after {
-  z-index: 1;
-}
-
-.c2 .RcDownshiftInput-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  overflow-y: auto;
-  max-height: 132px;
-  width: 100%;
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c5:hover {
-    background-color: transparent;
-  }
-
-  .c5:hover,
-  .c5:hover .c8 {
-    color: rgba(102,102,102,0.88);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
-  }
-
-  .c5.RcIconButton-contained:hover,
-  .c5.RcIconButton-contained:hover .c8 {
-    color: #fff;
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c12:hover {
-    background-color: transparent;
-  }
-
-  .c12:hover,
-  .c12:hover .c8 {
-    color: rgba(102,102,102,0.88);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
-  }
-
-  .c12.RcIconButton-contained:hover,
-  .c12.RcIconButton-contained:hover .c8 {
-    color: #fff;
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
-    border-bottom-color: #121212;
-  }
-}
-
-<div
-    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 c2 MuiFormControl-fullWidth"
-  >
-    <label
-      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
-      data-shrink={true}
-      htmlFor="downshift-0-input"
-      id="downshift-0-label"
-    >
-      Country
-    </label>
-    <div
-      aria-disabled={false}
-      aria-label="Country"
-      aria-required={false}
-      className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
-      onClick={[Function]}
-      onCompositionEnd={[Function]}
-      onCompositionStart={[Function]}
-      onPaste={[Function]}
-    >
-      <div
-        className="RcDownshiftInput-container"
-        onClick={[Function]}
-      >
-        <input
-          aria-autocomplete="list"
-          aria-expanded={false}
-          aria-haspopup={true}
-          aria-invalid={false}
-          autoComplete="chrome-off"
-          autoFocus={false}
-          className="MuiInputBase-input MuiInput-input RcTextFieldInput-input RcDownshiftInput-input MuiInputBase-inputAdornedEnd"
-          disabled={false}
-          id="downshift-0-input"
-          onAnimationStart={[Function]}
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          placeholder="What country have you been to?"
-          required={false}
-          role="combobox"
-          type="text"
-          value=""
-        />
-      </div>
-      <div
-        className="c3"
-      >
-        <div
-          className="MuiBox-root MuiBox-root-153"
-        >
-          <button
-            aria-hidden={true}
-            className="MuiButtonBase-root c4 c5 c6 c7 RcIconButton-root"
-            disabled={false}
-            id="downshift-0-clear-button"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            tabIndex={-1}
-            type="button"
-          >
-            <span
-              className="c8 c9 delete_circle icon"
-            >
-              <svg
-                className="c10"
-                viewBox="0 0 32 32"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 0 0-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 0 0 1.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 0 0 1.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 0 0-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-                />
-              </svg>
-              
-            </span>
-          </button>
-          <div
-            className="c4 c5 c11"
-            color="neutral.f04"
-            size="medium"
-            type="button"
-          />
-        </div>
-        <button
-          aria-hidden={true}
-          className="MuiButtonBase-root c4 c12 RcIconButton-root"
-          disabled={false}
-          id="downshift-0-toggle-button"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={-1}
-          type="button"
-        >
-          <span
-            className="c8 c9 arrow-down icon"
-          >
-            <svg
-              className="c10"
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m16.707 20.293 5.586-5.586A.999.999 0 0 0 21.586 13H10.414a1 1 0 0 0-.707 1.707l5.586 5.586a.999.999 0 0 0 1.414 0z"
-              />
-            </svg>
-            
-          </span>
-        </button>
-      </div>
-    </div>
-    <p
-      className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
-    >
-      please select country
-    </p>
-  </div>,
-  .c0 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 32px;
-  color: #121212;
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-<h5
-    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
-    data-color="neutral.f06"
-    data-variant="headline1"
-  >
-    Expanded Group
-  </h5>,
-  .c10 {
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  pointer-events: none;
-}
-
-.c9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-size: 24px;
-}
-
-.c5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  color: #666666;
-  border-radius: 50%;
-  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
-  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
-  cursor: pointer;
-}
-
-.c5,
-.c5 .c8 {
-  font-size: 20px;
-}
-
-.c5:active,
-.c5:active .c8 {
-  color: #666666;
-}
-
-.c5.focus-visible,
-.c5[data-focus-visible-added] {
-  background-color: transparent;
-}
-
-.c5.focus-visible:active,
-.c5[data-focus-visible-added]:active,
-.c5.focus-visible:active .c8,
-.c5[data-focus-visible-added]:active .c8 {
-  color: rgba(102,102,102,0.88);
-}
-
-.c5.focus-visible:after,
-.c5[data-focus-visible-added]:after {
-  content: '';
-  position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.c5.RcIconButton-persistBg {
-  background-color: rgba(102,102,102,0.12);
-}
-
-.c5.RcIconButton-disabled,
-.c5.RcIconButton-disabled .c8 {
-  color: #B9B9B9;
-}
-
-.c5.RcIconButton-invisible {
-  opacity: 0;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
-.c5.RcIconButton-outline {
-  border: 1px solid #C7C7C7;
-}
-
-.c5.RcIconButton-contained {
-  color: #fff;
-  background-color: #666666;
-}
-
-.c5.RcIconButton-contained:before {
-  content: '';
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.c5.RcIconButton-contained.focus-visible:before,
-.c5.RcIconButton-contained[data-focus-visible-added]:before {
-  background-color: rgba(255,255,255,0.16);
-}
-
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added],
-.c5.RcIconButton-contained.focus-visible .c8,
-.c5.RcIconButton-contained[data-focus-visible-added] .c8 {
-  color: #fff;
-}
-
-.c5.RcIconButton-contained:active,
-.c5.RcIconButton-contained:active .c8 {
-  color: #fff;
-}
-
-.c5 .RcIconButtonTouchRipple-ripplePulsate {
-  border-radius: 0;
-  -webkit-animation-name: none;
-  animation-name: none;
-  opacity: 0;
-}
-
-.c12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  color: #666666;
-  border-radius: 50%;
-  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
-  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
-  cursor: pointer;
-}
-
-.c12,
-.c12 .c8 {
-  font-size: 24px;
-}
-
-.c12:active,
-.c12:active .c8 {
-  color: #666666;
-}
-
-.c12.focus-visible,
-.c12[data-focus-visible-added] {
-  background-color: transparent;
-}
-
-.c12.focus-visible:active,
-.c12[data-focus-visible-added]:active,
-.c12.focus-visible:active .c8,
-.c12[data-focus-visible-added]:active .c8 {
-  color: rgba(102,102,102,0.88);
-}
-
-.c12.focus-visible:after,
-.c12[data-focus-visible-added]:after {
-  content: '';
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
-  box-shadow: 0 0 0 1px #066FAC;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.c12.RcIconButton-persistBg {
-  background-color: rgba(102,102,102,0.12);
-}
-
-.c12.RcIconButton-disabled,
-.c12.RcIconButton-disabled .c8 {
-  color: #B9B9B9;
-}
-
-.c12.RcIconButton-invisible {
-  opacity: 0;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
-.c12.RcIconButton-outline {
-  border: 1px solid #C7C7C7;
-}
-
-.c12.RcIconButton-contained {
-  color: #fff;
-  background-color: #666666;
-}
-
-.c12.RcIconButton-contained:before {
-  content: '';
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.c12.RcIconButton-contained.focus-visible:before,
-.c12.RcIconButton-contained[data-focus-visible-added]:before {
-  background-color: rgba(255,255,255,0.16);
-}
-
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added],
-.c12.RcIconButton-contained.focus-visible .c8,
-.c12.RcIconButton-contained[data-focus-visible-added] .c8 {
-  color: #fff;
-}
-
-.c12.RcIconButton-contained:active,
-.c12.RcIconButton-contained:active .c8 {
-  color: #fff;
-}
-
-.c12 .RcIconButtonTouchRipple-ripplePulsate {
-  border-radius: 0;
-  -webkit-animation-name: none;
-  animation-name: none;
-  opacity: 0;
-}
-
-.c11 {
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c0 .c4 {
-  margin-left: 12px;
-}
-
-.c0.RcTextField-root {
-  margin: 0 0 16px 0;
-}
-
-.c0 .RcTextFieldInputLabel-root {
-  font-size: 0.75rem;
-  font-weight: 700;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 16px;
-  color: #666666;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0 .RcTextFieldInputLabel-focused {
-  color: #066FAC;
-}
-
-.c0 .RcTextFieldInput-root {
-  color: #121212;
-}
-
-.c0 .RcTextFieldInput-root .c6 {
-  display: none;
-}
-
-.c0 .RcTextFieldInput-input {
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 24px;
-}
-
-.c0 .RcTextFieldInput-input::-webkit-input-placeholder {
-  color: #757575;
-  opacity: 1;
-}
-
-.c0 .RcTextFieldInput-input::-moz-placeholder {
-  color: #757575;
-  opacity: 1;
-}
-
-.c0 .RcTextFieldInput-input:-ms-input-placeholder {
-  color: #757575;
-  opacity: 1;
-}
-
-.c0 .RcTextFieldInput-input::placeholder {
-  color: #757575;
-  opacity: 1;
-}
-
-.c0 .RcTextFieldInput-underline:before {
-  border-bottom-color: #939393;
-}
-
-.c0 .RcTextFieldInput-underline:after {
-  border-bottom-color: #066FAC;
-}
-
-.c0 .RcTextFieldInput-error:after {
-  border-bottom-color: #BE3933;
-}
-
-.c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
-}
-
-.c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
-}
-
-.c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
-}
-
-.c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
-}
-
-.c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
-}
-
-.c0 .RcTextFieldInput-disabled:before {
-  border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
-}
-
-.c0 .RcTextFieldInput-disabled:after {
-  border-bottom-style: none;
-}
-
-.c0 .RcTextFieldFormHelperText-root {
-  font-size: 0.75rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 16px;
-  color: #666666;
-}
-
-.c0 .RcTextFieldFormHelperText-error,
-.c0 .RcTextFieldInputLabel-error {
-  color: #BE3933;
-}
-
-.c0 .RcTextFieldFormHelperText-disabled,
-.c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
-}
-
-.c0 input[type='search']::-ms-clear,
-.c0 input[type='search']::-ms-reveal {
-  display: none;
-  width: 0;
-  height: 0;
-}
-
-.c0 input[type='search']::-webkit-search-decoration,
-.c0 input[type='search']::-webkit-search-cancel-button,
-.c0 input[type='search']::-webkit-search-results-button,
-.c0 input[type='search']::-webkit-search-results-decoration {
-  display: none;
-}
-
-.c3 {
-  right: 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1 .RcDownshiftInput-input {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  min-width: 30px;
-}
-
-.c2 .RcDownshiftInput-root {
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 0 68px 0 0;
-}
-
-.c2 .RcDownshiftInput-root:before,
-.c2 .RcDownshiftInput-root:after {
-  z-index: 1;
-}
-
-.c2 .RcDownshiftInput-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  overflow-y: auto;
-  max-height: 132px;
-  width: 100%;
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c5:hover {
-    background-color: transparent;
-  }
-
-  .c5:hover,
-  .c5:hover .c8 {
-    color: rgba(102,102,102,0.88);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
-  }
-
-  .c5.RcIconButton-contained:hover,
-  .c5.RcIconButton-contained:hover .c8 {
-    color: #fff;
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c12:hover {
-    background-color: transparent;
-  }
-
-  .c12:hover,
-  .c12:hover .c8 {
-    color: rgba(102,102,102,0.88);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
-  }
-
-  .c12.RcIconButton-contained:hover,
-  .c12.RcIconButton-contained:hover .c8 {
-    color: #fff;
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c0 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
-    border-bottom-color: #121212;
-  }
-}
-
-<div
-    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 c2 MuiFormControl-fullWidth"
-  >
-    <label
-      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
-      data-shrink={true}
-      htmlFor="downshift-0-input"
-      id="downshift-0-label"
-    >
-      Address
-    </label>
-    <div
-      aria-disabled={false}
-      aria-label="Address"
-      aria-required={false}
-      className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
-      onClick={[Function]}
-      onCompositionEnd={[Function]}
-      onCompositionStart={[Function]}
-      onPaste={[Function]}
-    >
-      <div
-        className="RcDownshiftInput-container"
-        onClick={[Function]}
-      >
-        <input
-          aria-autocomplete="list"
-          aria-expanded={false}
-          aria-haspopup={true}
-          aria-invalid={false}
-          autoComplete="chrome-off"
-          autoFocus={false}
-          className="MuiInputBase-input MuiInput-input RcTextFieldInput-input RcDownshiftInput-input MuiInputBase-inputAdornedEnd"
-          disabled={false}
-          id="downshift-0-input"
-          onAnimationStart={[Function]}
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          placeholder="What country have you been to?"
-          required={false}
-          role="combobox"
-          type="text"
-          value=""
-        />
-      </div>
-      <div
-        className="c3"
-      >
-        <div
-          className="MuiBox-root MuiBox-root-154"
-        >
-          <button
-            aria-hidden={true}
-            className="MuiButtonBase-root c4 c5 c6 c7 RcIconButton-root"
-            disabled={false}
-            id="downshift-0-clear-button"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            tabIndex={-1}
-            type="button"
-          >
-            <span
-              className="c8 c9 delete_circle icon"
-            >
-              <svg
-                className="c10"
-                viewBox="0 0 32 32"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 0 0-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 0 0 1.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 0 0 1.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 0 0-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
-                />
-              </svg>
-              
-            </span>
-          </button>
-          <div
-            className="c4 c5 c11"
-            color="neutral.f04"
-            size="medium"
-            type="button"
-          />
-        </div>
-        <button
-          aria-hidden={true}
-          className="MuiButtonBase-root c4 c12 RcIconButton-root"
-          disabled={false}
-          id="downshift-0-toggle-button"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={-1}
-          type="button"
-        >
-          <span
-            className="c8 c9 arrow-down icon"
-          >
-            <svg
-              className="c10"
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m16.707 20.293 5.586-5.586A.999.999 0 0 0 21.586 13H10.414a1 1 0 0 0-.707 1.707l5.586 5.586a.999.999 0 0 0 1.414 0z"
-              />
-            </svg>
-            
-          </span>
-        </button>
-      </div>
-    </div>
-    <p
-      className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
-    >
-      please select country
-    </p>
-  </div>,
-  .c0 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 32px;
-  color: #121212;
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-<h5
-    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
-    data-color="neutral.f06"
-    data-variant="headline1"
-  >
-    Normal Group (Custom render)
   </h5>,
   .c10 {
   width: 1em;
@@ -10291,6 +8953,1344 @@ Array [
     data-color="neutral.f06"
     data-variant="headline1"
   >
+    Expanded Group
+  </h5>,
+  .c10 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  color: #666666;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+}
+
+.c5,
+.c5 .c8 {
+  font-size: 20px;
+}
+
+.c5:active,
+.c5:active .c8 {
+  color: #666666;
+}
+
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
+  background-color: transparent;
+}
+
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c8,
+.c5[data-focus-visible-added]:active .c8 {
+  color: rgba(102,102,102,0.88);
+}
+
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.c5.RcIconButton-persistBg {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c5.RcIconButton-disabled,
+.c5.RcIconButton-disabled .c8 {
+  color: #B9B9B9;
+}
+
+.c5.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c5.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c5.RcIconButton-contained {
+  color: #fff;
+  background-color: #666666;
+}
+
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c8,
+.c5.RcIconButton-contained[data-focus-visible-added] .c8 {
+  color: #fff;
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c8 {
+  color: #fff;
+}
+
+.c5 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  color: #666666;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+}
+
+.c12,
+.c12 .c8 {
+  font-size: 24px;
+}
+
+.c12:active,
+.c12:active .c8 {
+  color: #666666;
+}
+
+.c12.focus-visible,
+.c12[data-focus-visible-added] {
+  background-color: transparent;
+}
+
+.c12.focus-visible:active,
+.c12[data-focus-visible-added]:active,
+.c12.focus-visible:active .c8,
+.c12[data-focus-visible-added]:active .c8 {
+  color: rgba(102,102,102,0.88);
+}
+
+.c12.focus-visible:after,
+.c12[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.c12.RcIconButton-persistBg {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c12.RcIconButton-disabled,
+.c12.RcIconButton-disabled .c8 {
+  color: #B9B9B9;
+}
+
+.c12.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c12.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c12.RcIconButton-contained {
+  color: #fff;
+  background-color: #666666;
+}
+
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c12.RcIconButton-contained.focus-visible,
+.c12.RcIconButton-contained[data-focus-visible-added],
+.c12.RcIconButton-contained.focus-visible .c8,
+.c12.RcIconButton-contained[data-focus-visible-added] .c8 {
+  color: #fff;
+}
+
+.c12.RcIconButton-contained:active,
+.c12.RcIconButton-contained:active .c8 {
+  color: #fff;
+}
+
+.c12 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c11 {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.c0 .c4 {
+  margin-left: 12px;
+}
+
+.c0.RcTextField-root {
+  margin: 0 0 16px 0;
+}
+
+.c0 .RcTextFieldInputLabel-root {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0 .RcTextFieldInputLabel-focused {
+  color: #066FAC;
+}
+
+.c0 .RcTextFieldInput-root {
+  color: #121212;
+}
+
+.c0 .RcTextFieldInput-root .c6 {
+  display: none;
+}
+
+.c0 .RcTextFieldInput-input {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+}
+
+.c0 .RcTextFieldInput-input::-webkit-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input::-moz-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:-ms-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input::placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-underline:before {
+  border-bottom-color: #939393;
+}
+
+.c0 .RcTextFieldInput-underline:after {
+  border-bottom-color: #066FAC;
+}
+
+.c0 .RcTextFieldInput-error:after {
+  border-bottom-color: #BE3933;
+}
+
+.c0 .RcTextFieldInput-disabled {
+  color: #B9B9B9;
+  -webkit-text-fill-color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled::-moz-placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled::placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled:before {
+  border-bottom-style: solid;
+  border-bottom-color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled:after {
+  border-bottom-style: none;
+}
+
+.c0 .RcTextFieldFormHelperText-root {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c0 .RcTextFieldFormHelperText-error,
+.c0 .RcTextFieldInputLabel-error {
+  color: #BE3933;
+}
+
+.c0 .RcTextFieldFormHelperText-disabled,
+.c0 .RcTextFieldInputLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c0 input[type='search']::-ms-clear,
+.c0 input[type='search']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.c0 input[type='search']::-webkit-search-decoration,
+.c0 input[type='search']::-webkit-search-cancel-button,
+.c0 input[type='search']::-webkit-search-results-button,
+.c0 input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+.c3 {
+  right: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 .RcDownshiftInput-input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 30px;
+}
+
+.c2 .RcDownshiftInput-root {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 68px 0 0;
+}
+
+.c2 .RcDownshiftInput-root:before,
+.c2 .RcDownshiftInput-root:after {
+  z-index: 1;
+}
+
+.c2 .RcDownshiftInput-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 132px;
+  width: 100%;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c5:hover {
+    background-color: transparent;
+  }
+
+  .c5:hover,
+  .c5:hover .c8 {
+    color: rgba(102,102,102,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
+  }
+
+  .c5.RcIconButton-contained:hover,
+  .c5.RcIconButton-contained:hover .c8 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c12:hover {
+    background-color: transparent;
+  }
+
+  .c12:hover,
+  .c12:hover .c8 {
+    color: rgba(102,102,102,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
+  }
+
+  .c12.RcIconButton-contained:hover,
+  .c12.RcIconButton-contained:hover .c8 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
+    border-bottom-color: #121212;
+  }
+}
+
+<div
+    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 c2 MuiFormControl-fullWidth"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+      data-shrink={true}
+      htmlFor="downshift-0-input"
+      id="downshift-0-label"
+    >
+      Address
+    </label>
+    <div
+      aria-disabled={false}
+      aria-label="Address"
+      aria-required={false}
+      className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
+      onClick={[Function]}
+      onCompositionEnd={[Function]}
+      onCompositionStart={[Function]}
+      onPaste={[Function]}
+    >
+      <div
+        className="RcDownshiftInput-container"
+        onClick={[Function]}
+      >
+        <input
+          aria-autocomplete="list"
+          aria-expanded={false}
+          aria-haspopup={true}
+          aria-invalid={false}
+          autoComplete="chrome-off"
+          autoFocus={false}
+          className="MuiInputBase-input MuiInput-input RcTextFieldInput-input RcDownshiftInput-input MuiInputBase-inputAdornedEnd"
+          disabled={false}
+          id="downshift-0-input"
+          onAnimationStart={[Function]}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder="What country have you been to?"
+          required={false}
+          role="combobox"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="c3"
+      >
+        <div
+          className="MuiBox-root MuiBox-root-156"
+        >
+          <button
+            aria-hidden={true}
+            className="MuiButtonBase-root c4 c5 c6 c7 RcIconButton-root"
+            disabled={false}
+            id="downshift-0-clear-button"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={-1}
+            type="button"
+          >
+            <span
+              className="c8 c9 delete_circle icon"
+            >
+              <svg
+                className="c10"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 0 0-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 0 0 1.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 0 0 1.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 0 0-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+                />
+              </svg>
+              
+            </span>
+          </button>
+          <div
+            className="c4 c5 c11"
+            color="neutral.f04"
+            size="medium"
+            type="button"
+          />
+        </div>
+        <button
+          aria-hidden={true}
+          className="MuiButtonBase-root c4 c12 RcIconButton-root"
+          disabled={false}
+          id="downshift-0-toggle-button"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          type="button"
+        >
+          <span
+            className="c8 c9 arrow-down icon"
+          >
+            <svg
+              className="c10"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m16.707 20.293 5.586-5.586A.999.999 0 0 0 21.586 13H10.414a1 1 0 0 0-.707 1.707l5.586 5.586a.999.999 0 0 0 1.414 0z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+      </div>
+    </div>
+    <p
+      className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+    >
+      please select country
+    </p>
+  </div>,
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Normal Group (Custom render)
+  </h5>,
+  .c10 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  color: #666666;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+}
+
+.c5,
+.c5 .c8 {
+  font-size: 20px;
+}
+
+.c5:active,
+.c5:active .c8 {
+  color: #666666;
+}
+
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
+  background-color: transparent;
+}
+
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active,
+.c5.focus-visible:active .c8,
+.c5[data-focus-visible-added]:active .c8 {
+  color: rgba(102,102,102,0.88);
+}
+
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.c5.RcIconButton-persistBg {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c5.RcIconButton-disabled,
+.c5.RcIconButton-disabled .c8 {
+  color: #B9B9B9;
+}
+
+.c5.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c5.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c5.RcIconButton-contained {
+  color: #fff;
+  background-color: #666666;
+}
+
+.c5.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added],
+.c5.RcIconButton-contained.focus-visible .c8,
+.c5.RcIconButton-contained[data-focus-visible-added] .c8 {
+  color: #fff;
+}
+
+.c5.RcIconButton-contained:active,
+.c5.RcIconButton-contained:active .c8 {
+  color: #fff;
+}
+
+.c5 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  color: #666666;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+}
+
+.c12,
+.c12 .c8 {
+  font-size: 24px;
+}
+
+.c12:active,
+.c12:active .c8 {
+  color: #666666;
+}
+
+.c12.focus-visible,
+.c12[data-focus-visible-added] {
+  background-color: transparent;
+}
+
+.c12.focus-visible:active,
+.c12[data-focus-visible-added]:active,
+.c12.focus-visible:active .c8,
+.c12[data-focus-visible-added]:active .c8 {
+  color: rgba(102,102,102,0.88);
+}
+
+.c12.focus-visible:after,
+.c12[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.c12.RcIconButton-persistBg {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c12.RcIconButton-disabled,
+.c12.RcIconButton-disabled .c8 {
+  color: #B9B9B9;
+}
+
+.c12.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c12.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c12.RcIconButton-contained {
+  color: #fff;
+  background-color: #666666;
+}
+
+.c12.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c12.RcIconButton-contained.focus-visible:before,
+.c12.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c12.RcIconButton-contained.focus-visible,
+.c12.RcIconButton-contained[data-focus-visible-added],
+.c12.RcIconButton-contained.focus-visible .c8,
+.c12.RcIconButton-contained[data-focus-visible-added] .c8 {
+  color: #fff;
+}
+
+.c12.RcIconButton-contained:active,
+.c12.RcIconButton-contained:active .c8 {
+  color: #fff;
+}
+
+.c12 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c11 {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.c0 .c4 {
+  margin-left: 12px;
+}
+
+.c0.RcTextField-root {
+  margin: 0 0 16px 0;
+}
+
+.c0 .RcTextFieldInputLabel-root {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0 .RcTextFieldInputLabel-focused {
+  color: #066FAC;
+}
+
+.c0 .RcTextFieldInput-root {
+  color: #121212;
+}
+
+.c0 .RcTextFieldInput-root .c6 {
+  display: none;
+}
+
+.c0 .RcTextFieldInput-input {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 24px;
+}
+
+.c0 .RcTextFieldInput-input::-webkit-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input::-moz-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:-ms-input-placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input::placeholder {
+  color: #757575;
+  opacity: 1;
+}
+
+.c0 .RcTextFieldInput-underline:before {
+  border-bottom-color: #939393;
+}
+
+.c0 .RcTextFieldInput-underline:after {
+  border-bottom-color: #066FAC;
+}
+
+.c0 .RcTextFieldInput-error:after {
+  border-bottom-color: #BE3933;
+}
+
+.c0 .RcTextFieldInput-disabled {
+  color: #B9B9B9;
+  -webkit-text-fill-color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled::-moz-placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled::placeholder {
+  color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled:before {
+  border-bottom-style: solid;
+  border-bottom-color: #B9B9B9;
+}
+
+.c0 .RcTextFieldInput-disabled:after {
+  border-bottom-style: none;
+}
+
+.c0 .RcTextFieldFormHelperText-root {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c0 .RcTextFieldFormHelperText-error,
+.c0 .RcTextFieldInputLabel-error {
+  color: #BE3933;
+}
+
+.c0 .RcTextFieldFormHelperText-disabled,
+.c0 .RcTextFieldInputLabel-disabled {
+  color: #B9B9B9;
+}
+
+.c0 input[type='search']::-ms-clear,
+.c0 input[type='search']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.c0 input[type='search']::-webkit-search-decoration,
+.c0 input[type='search']::-webkit-search-cancel-button,
+.c0 input[type='search']::-webkit-search-results-button,
+.c0 input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+.c3 {
+  right: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 .RcDownshiftInput-input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 30px;
+}
+
+.c2 .RcDownshiftInput-root {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 68px 0 0;
+}
+
+.c2 .RcDownshiftInput-root:before,
+.c2 .RcDownshiftInput-root:after {
+  z-index: 1;
+}
+
+.c2 .RcDownshiftInput-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 132px;
+  width: 100%;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c5:hover {
+    background-color: transparent;
+  }
+
+  .c5:hover,
+  .c5:hover .c8 {
+    color: rgba(102,102,102,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
+  }
+
+  .c5.RcIconButton-contained:hover,
+  .c5.RcIconButton-contained:hover .c8 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c12:hover {
+    background-color: transparent;
+  }
+
+  .c12:hover,
+  .c12:hover .c8 {
+    color: rgba(102,102,102,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
+  }
+
+  .c12.RcIconButton-contained:hover,
+  .c12.RcIconButton-contained:hover .c8 {
+    color: #fff;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
+    border-bottom-color: #121212;
+  }
+}
+
+<div
+    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 c2 MuiFormControl-fullWidth"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+      data-shrink={true}
+      htmlFor="downshift-0-input"
+      id="downshift-0-label"
+    >
+      Country
+    </label>
+    <div
+      aria-disabled={false}
+      aria-label="Country"
+      aria-required={false}
+      className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
+      onClick={[Function]}
+      onCompositionEnd={[Function]}
+      onCompositionStart={[Function]}
+      onPaste={[Function]}
+    >
+      <div
+        className="RcDownshiftInput-container"
+        onClick={[Function]}
+      >
+        <input
+          aria-autocomplete="list"
+          aria-expanded={false}
+          aria-haspopup={true}
+          aria-invalid={false}
+          autoComplete="chrome-off"
+          autoFocus={false}
+          className="MuiInputBase-input MuiInput-input RcTextFieldInput-input RcDownshiftInput-input MuiInputBase-inputAdornedEnd"
+          disabled={false}
+          id="downshift-0-input"
+          onAnimationStart={[Function]}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder="What country have you been to?"
+          required={false}
+          role="combobox"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="c3"
+      >
+        <div
+          className="MuiBox-root MuiBox-root-157"
+        >
+          <button
+            aria-hidden={true}
+            className="MuiButtonBase-root c4 c5 c6 c7 RcIconButton-root"
+            disabled={false}
+            id="downshift-0-clear-button"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={-1}
+            type="button"
+          >
+            <span
+              className="c8 c9 delete_circle icon"
+            >
+              <svg
+                className="c10"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 0 0-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 0 0 1.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 0 0 1.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 0 0-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z"
+                />
+              </svg>
+              
+            </span>
+          </button>
+          <div
+            className="c4 c5 c11"
+            color="neutral.f04"
+            size="medium"
+            type="button"
+          />
+        </div>
+        <button
+          aria-hidden={true}
+          className="MuiButtonBase-root c4 c12 RcIconButton-root"
+          disabled={false}
+          id="downshift-0-toggle-button"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          type="button"
+        >
+          <span
+            className="c8 c9 arrow-down icon"
+          >
+            <svg
+              className="c10"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m16.707 20.293 5.586-5.586A.999.999 0 0 0 21.586 13H10.414a1 1 0 0 0-.707 1.707l5.586 5.586a.999.999 0 0 0 1.414 0z"
+              />
+            </svg>
+            
+          </span>
+        </button>
+      </div>
+    </div>
+    <p
+      className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+    >
+      please select country
+    </p>
+  </div>,
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
     Expanded Group (Custom render)
   </h5>,
   .c10 {
@@ -10840,7 +10840,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-156"
+          className="MuiBox-root MuiBox-root-158"
         >
           <button
             aria-hidden={true}
@@ -11478,7 +11478,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-152"
+        className="MuiBox-root MuiBox-root-154"
       >
         <button
           aria-hidden={true}
@@ -12128,7 +12128,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-158"
+          className="MuiBox-root MuiBox-root-160"
         >
           <button
             aria-hidden={true}
@@ -12765,7 +12765,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-159"
+          className="MuiBox-root MuiBox-root-161"
         >
           <button
             aria-hidden={true}
@@ -13465,7 +13465,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
       className="c4"
     >
       <div
-        className="MuiBox-root MuiBox-root-160"
+        className="MuiBox-root MuiBox-root-162"
       >
         <button
           aria-hidden={true}
@@ -14093,7 +14093,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-157"
+        className="MuiBox-root MuiBox-root-159"
       >
         <button
           aria-hidden={true}

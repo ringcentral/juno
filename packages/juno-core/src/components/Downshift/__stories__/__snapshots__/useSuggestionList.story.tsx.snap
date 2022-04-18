@@ -420,7 +420,7 @@ Array [
         />
       </div>
       <div
-        className="MuiBox-root MuiBox-root-162"
+        className="MuiBox-root MuiBox-root-164"
       >
         <button
           aria-hidden={true}
@@ -498,7 +498,7 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-163"
+    className="MuiBox-root MuiBox-root-165"
   >
     <div
       aria-labelledby="suggestion-list-0-label"

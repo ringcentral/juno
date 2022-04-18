@@ -307,7 +307,7 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-13"
+    className="MuiBox-root MuiBox-root-14"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-displayBlock"
@@ -680,7 +680,7 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-14"
+    className="MuiBox-root MuiBox-root-15"
   >
     <h5
       className="MuiTypography-root c0 MuiTypography-displayBlock"

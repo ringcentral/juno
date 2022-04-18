@@ -1,7 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots 🔧 Foundation/Hooks/useLongPress useLongPress 1`] = `
-.c0 {
+Array [
+  .c0 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c1 {
+  font-family: Lato,Helvetica,Arial,sans-serif;
+}
+
+.c2.highlight-term {
+  color: #121212 !important;
+  background-color: #FFDFB1 !important;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<p
+    className="MuiTypography-root c0"
+    data-color="neutral.f06"
+    data-variant="body1"
+  >
+    Provide longPress helper, both
+     
+    <span
+      className="MuiTypography-root c1 c2 highlight-term MuiTypography-noWrap"
+      data-color="initial"
+      data-variant="inherit"
+      title="\`click\`/\`tab\`/\`keydown"
+    >
+      \`click\`/\`tab\`/\`keydown
+    </span>
+    ('a11y keyboard')\` will trigger event
+    <li>
+      - Trigger \`onTap\` when user action leave small than delay time.
+    </li>
+    <li>
+      - Trigger \`onPress\` when action time is long than delay time.
+    </li>
+  </p>,
+  .c0 {
   text-transform: none;
   font-size: 0.9375rem;
   font-weight: 700;
@@ -77,30 +130,50 @@ exports[`Storyshots 🔧 Foundation/Hooks/useLongPress useLongPress 1`] = `
 }
 
 <button
-  className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
-  disabled={false}
-  onBlur={[Function]}
-  onContextMenu={[Function]}
-  onDragLeave={[Function]}
-  onFocus={[Function]}
-  onKeyDown={[Function]}
-  onKeyUp={[Function]}
-  onMouseDown={[Function]}
-  onMouseLeave={[Function]}
-  onMouseUp={[Function]}
-  onTouchEnd={[Function]}
-  onTouchMove={[Function]}
-  onTouchStart={[Function]}
-  tabIndex={0}
-  type="button"
->
-  <span
-    className="MuiButton-label"
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
   >
-    Trigger event
-  </span>
-  <span
-    className="MuiTouchRipple-root"
-  />
-</button>
+    <span
+      className="MuiButton-label"
+    >
+      Trigger event
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<div
+    className="MuiBox-root MuiBox-root-13"
+    style={
+      Object {
+        "overflowX": "hidden",
+      }
+    }
+  />,
+]
 `;

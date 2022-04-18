@@ -166,7 +166,6 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialDelete DialDelete 1`] = `
   data-sign="deleteButton"
   disabled={false}
   onBlur={[Function]}
-  onContextMenu={[Function]}
   onDragLeave={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}

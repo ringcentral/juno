@@ -32,7 +32,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio 1`] = `
 
 <span
   aria-disabled={false}
-  className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-184 MuiRadio-root RcRadio-root c0"
+  className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-186 MuiRadio-root RcRadio-root c0"
   onBlur={[Function]}
   onDragLeave={[Function]}
   onFocus={[Function]}
@@ -50,12 +50,12 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio 1`] = `
     className="MuiIconButton-label"
   >
     <input
-      className="PrivateSwitchBase-input-187"
+      className="PrivateSwitchBase-input-189"
       onChange={[Function]}
       type="radio"
     />
     <div
-      className="PrivateRadioButtonIcon-root-188 RadioButtonIcon-root"
+      className="PrivateRadioButtonIcon-root-190 RadioButtonIcon-root"
     >
       <svg
         aria-hidden={true}
@@ -69,7 +69,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio 1`] = `
       </svg>
       <svg
         aria-hidden={true}
-        className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-189"
+        className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-191"
         focusable="false"
         viewBox="0 0 24 24"
       >
@@ -165,7 +165,7 @@ Array [
   >
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-191 MuiRadio-root RcRadio-root c1"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-193 MuiRadio-root RcRadio-root c1"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -183,12 +183,12 @@ Array [
         className="MuiIconButton-label"
       >
         <input
-          className="PrivateSwitchBase-input-194"
+          className="PrivateSwitchBase-input-196"
           onChange={[Function]}
           type="radio"
         />
         <div
-          className="PrivateRadioButtonIcon-root-195 RadioButtonIcon-root"
+          className="PrivateRadioButtonIcon-root-197 RadioButtonIcon-root"
         >
           <svg
             aria-hidden={true}
@@ -202,7 +202,7 @@ Array [
           </svg>
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-196"
+            className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-198"
             focusable="false"
             viewBox="0 0 24 24"
           >
@@ -318,7 +318,7 @@ Array [
   >
     <span
       aria-disabled={false}
-      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-191 MuiRadio-root RcRadio-root c1"
+      className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-193 MuiRadio-root RcRadio-root c1"
       onBlur={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
@@ -336,12 +336,12 @@ Array [
         className="MuiIconButton-label"
       >
         <input
-          className="PrivateSwitchBase-input-194"
+          className="PrivateSwitchBase-input-196"
           onChange={[Function]}
           type="radio"
         />
         <div
-          className="PrivateRadioButtonIcon-root-195 RadioButtonIcon-root"
+          className="PrivateRadioButtonIcon-root-197 RadioButtonIcon-root"
         >
           <svg
             aria-hidden={true}
@@ -355,7 +355,7 @@ Array [
           </svg>
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-196"
+            className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-198"
             focusable="false"
             viewBox="0 0 24 24"
           >
@@ -478,7 +478,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio with custom icon 1
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-198 MuiRadio-root RcRadio-root c2 PrivateSwitchBase-checked-199 Mui-checked RcRadio-checked"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-200 MuiRadio-root RcRadio-root c2 PrivateSwitchBase-checked-201 Mui-checked RcRadio-checked"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -497,7 +497,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio with custom icon 1
         >
           <input
             checked={true}
-            className="PrivateSwitchBase-input-201"
+            className="PrivateSwitchBase-input-203"
             disabled={false}
             onChange={[Function]}
             type="radio"
@@ -530,7 +530,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio with custom icon 1
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-198 MuiRadio-root RcRadio-root c2"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-200 MuiRadio-root RcRadio-root c2"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -549,7 +549,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio with custom icon 1
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-201"
+            className="PrivateSwitchBase-input-203"
             disabled={false}
             onChange={[Function]}
             type="radio"

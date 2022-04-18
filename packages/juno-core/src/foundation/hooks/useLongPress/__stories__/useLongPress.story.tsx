@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { RcButton, useLongPress } from '@ringcentral/juno';
+import {
+  RcBox,
+  RcButton,
+  RcSlide,
+  RcText,
+  RcTypography,
+  useLongPress,
+} from '@ringcentral/juno';
 import { Meta, Story } from '@storybook/react';
 
 export default {
@@ -8,14 +15,22 @@ export default {
   argTypes: {},
 } as Meta;
 
-export const useTouchMouseEventExample: Story<{}> = () => {
-  const { ref, ...events } = useLongPress(
+export const UseTouchMouseEventExample: Story<{}> = () => {
+  const [events, setEvents] = useState<string[]>([]);
+
+  function addLog(message: string) {
+    setEvents([`${events.length + 1}. ${message}`, ...events]);
+  }
+
+  const { ref, ...eventProps } = useLongPress(
     {
-      onPress: (e) => {
-        console.log('onPress', e);
+      onPress: (e, reason) => {
+        console.log('onPress', e, reason);
+        addLog(`onPress: ${reason}`);
       },
-      onTap: (e) => {
-        console.log('onTap', e);
+      onTap: (e, reason) => {
+        console.log('onTap', e, reason);
+        addLog(`onTap: ${reason}`);
       },
     },
     {},
@@ -23,11 +38,28 @@ export const useTouchMouseEventExample: Story<{}> = () => {
   );
 
   return (
-    <RcButton ref={ref} {...events}>
-      Trigger event
-    </RcButton>
+    <>
+      <RcTypography color="neutral.f06">
+        Provide longPress helper, both{' '}
+        <RcText highlight>`click`/`tab`/`keydown</RcText>('a11y keyboard')` will
+        trigger event
+        <li>- Trigger `onTap` when user action leave small than delay time.</li>
+        <li>- Trigger `onPress` when action time is long than delay time.</li>
+      </RcTypography>
+      <RcButton ref={ref} {...eventProps}>
+        Trigger event
+      </RcButton>
+
+      <RcBox height="300px" width="500px" style={{ overflowX: 'hidden' }}>
+        {events.map((event) => (
+          <RcSlide in key={event} direction="left">
+            <RcTypography color="neutral.f06">{event}</RcTypography>
+          </RcSlide>
+        ))}
+      </RcBox>
+    </>
   );
 };
 
-useTouchMouseEventExample.args = {};
-useTouchMouseEventExample.storyName = 'useLongPress';
+UseTouchMouseEventExample.args = {};
+UseTouchMouseEventExample.storyName = 'useLongPress';

@@ -19,9 +19,7 @@ export default {
 
 export const UseGlobalListenerExample: Story<{}> = () => {
   const [events, setEvents] = useState<string[]>([]);
-
   const boxRef = useRef<HTMLDivElement>(null);
-
   function addLog(message: string) {
     console.log(message);
     setEvents([`${events.length + 1}. ${message}`, ...events]);
@@ -102,12 +100,7 @@ export const UseGlobalListenerExample: Story<{}> = () => {
         </RcButton>
       </RcBox>
 
-      <RcBox
-        ref={boxRef}
-        height="300px"
-        width="500px"
-        style={{ overflowX: 'hidden' }}
-      >
+      <RcBox height="300px" width="500px" style={{ overflowX: 'hidden' }}>
         {events.map((event) => (
           <RcSlide in key={event} direction="left">
             <RcTypography color="neutral.f06">{event}</RcTypography>
