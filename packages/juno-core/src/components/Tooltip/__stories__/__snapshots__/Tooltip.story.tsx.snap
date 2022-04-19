@@ -841,20 +841,17 @@ Array [
   position: absolute;
 }
 
+.c1.RcIconButton-contained.focus-visible,
+.c1.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c1.RcIconButton-contained.focus-visible:before,
 .c1.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c1.RcIconButton-contained.focus-visible,
-.c1.RcIconButton-contained[data-focus-visible-added],
-.c1.RcIconButton-contained.focus-visible .c2,
-.c1.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c1.RcIconButton-contained:active,
-.c1.RcIconButton-contained:active .c2 {
+.c1.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -877,13 +874,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c1.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c1.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c1.RcIconButton-contained:hover,
-  .c1.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c1.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -1035,18 +1031,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added],
-.c5.RcIconButton-contained.focus-visible .c2,
-.c5.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c5.RcIconButton-contained:active,
-.c5.RcIconButton-contained:active .c2 {
-  color: #fff;
-}
-
 .c1.RcCheckbox-root {
   color: #939393;
   padding: 10px;
@@ -1068,10 +1052,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover,
-  .c5.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1536,18 +1517,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added],
-.c8.RcIconButton-contained.focus-visible .c3,
-.c8.RcIconButton-contained[data-focus-visible-added] .c3 {
-  color: #fff;
-}
-
-.c8.RcIconButton-contained:active,
-.c8.RcIconButton-contained:active .c3 {
-  color: #fff;
-}
-
 .c2 {
   text-transform: none;
   font-size: 0.9375rem;
@@ -1657,10 +1626,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-contained:hover,
-  .c8.RcIconButton-contained:hover .c3 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {

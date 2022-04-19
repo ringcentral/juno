@@ -351,20 +351,17 @@ Array [
   position: absolute;
 }
 
+.c2.RcIconButton-contained.focus-visible,
+.c2.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c2.RcIconButton-contained.focus-visible:before,
 .c2.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c2.RcIconButton-contained.focus-visible,
-.c2.RcIconButton-contained[data-focus-visible-added],
-.c2.RcIconButton-contained.focus-visible .c5,
-.c2.RcIconButton-contained[data-focus-visible-added] .c5 {
-  color: #fff;
-}
-
-.c2.RcIconButton-contained:active,
-.c2.RcIconButton-contained:active .c5 {
+.c2.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -544,13 +541,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c2.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c2.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c2.RcIconButton-contained:hover,
-  .c2.RcIconButton-contained:hover .c5 {
-    color: #fff;
+  .c2.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 

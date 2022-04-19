@@ -106,20 +106,17 @@ exports[`Storyshots 🔧 Foundation/Hooks/useAudio useAudio 1`] = `
   position: absolute;
 }
 
+.c0.RcIconButton-contained.focus-visible,
+.c0.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c0.RcIconButton-contained.focus-visible:before,
 .c0.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c0.RcIconButton-contained.focus-visible,
-.c0.RcIconButton-contained[data-focus-visible-added],
-.c0.RcIconButton-contained.focus-visible .c1,
-.c0.RcIconButton-contained[data-focus-visible-added] .c1 {
-  color: #fff;
-}
-
-.c0.RcIconButton-contained:active,
-.c0.RcIconButton-contained:active .c1 {
+.c0.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -142,13 +139,12 @@ exports[`Storyshots 🔧 Foundation/Hooks/useAudio useAudio 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c0.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c0.RcIconButton-contained:hover,
-  .c0.RcIconButton-contained:hover .c1 {
-    color: #fff;
+  .c0.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 

@@ -113,20 +113,17 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   position: absolute;
 }
 
+.c2.RcIconButton-contained.focus-visible,
+.c2.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c2.RcIconButton-contained.focus-visible:before,
 .c2.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c2.RcIconButton-contained.focus-visible,
-.c2.RcIconButton-contained[data-focus-visible-added],
-.c2.RcIconButton-contained.focus-visible .c3,
-.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
-  color: #fff;
-}
-
-.c2.RcIconButton-contained:active,
-.c2.RcIconButton-contained:active .c3 {
+.c2.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -181,13 +178,12 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c2.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c2.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c2.RcIconButton-contained:hover,
-  .c2.RcIconButton-contained:hover .c3 {
-    color: #fff;
+  .c2.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -461,20 +457,17 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   position: absolute;
 }
 
+.c3.RcIconButton-contained.focus-visible,
+.c3.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c3.RcIconButton-contained.focus-visible:before,
 .c3.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c3.RcIconButton-contained.focus-visible,
-.c3.RcIconButton-contained[data-focus-visible-added],
-.c3.RcIconButton-contained.focus-visible .c4,
-.c3.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c3.RcIconButton-contained:active,
-.c3.RcIconButton-contained:active .c4 {
+.c3.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -566,20 +559,17 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   position: absolute;
 }
 
+.c8.RcIconButton-contained.focus-visible,
+.c8.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c8.RcIconButton-contained.focus-visible:before,
 .c8.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added],
-.c8.RcIconButton-contained.focus-visible .c4,
-.c8.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c8.RcIconButton-contained:active,
-.c8.RcIconButton-contained:active .c4 {
+.c8.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -676,20 +666,17 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   position: absolute;
 }
 
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c9.RcIconButton-contained.focus-visible:before,
 .c9.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added],
-.c9.RcIconButton-contained.focus-visible .c4,
-.c9.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c9.RcIconButton-contained:active,
-.c9.RcIconButton-contained:active .c4 {
+.c9.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -781,20 +768,17 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   position: absolute;
 }
 
+.c11.RcIconButton-contained.focus-visible,
+.c11.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c11.RcIconButton-contained.focus-visible:before,
 .c11.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added],
-.c11.RcIconButton-contained.focus-visible .c4,
-.c11.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c11.RcIconButton-contained:active,
-.c11.RcIconButton-contained:active .c4 {
+.c11.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -915,13 +899,12 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c3.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c3.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c3.RcIconButton-contained:hover,
-  .c3.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c3.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -937,13 +920,12 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c8.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c8.RcIconButton-contained:hover,
-  .c8.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c8.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -959,13 +941,12 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c9.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c9.RcIconButton-contained:hover,
-  .c9.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c9.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -981,13 +962,12 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c11.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c11.RcIconButton-contained:hover,
-  .c11.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c11.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 

@@ -99,20 +99,17 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialPad DialPad 1`] = `
   position: absolute;
 }
 
+.c3.RcIconButton-contained.focus-visible,
+.c3.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c3.RcIconButton-contained.focus-visible:before,
 .c3.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c3.RcIconButton-contained.focus-visible,
-.c3.RcIconButton-contained[data-focus-visible-added],
-.c3.RcIconButton-contained.focus-visible .c5,
-.c3.RcIconButton-contained[data-focus-visible-added] .c5 {
-  color: #fff;
-}
-
-.c3.RcIconButton-contained:active,
-.c3.RcIconButton-contained:active .c5 {
+.c3.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -195,13 +192,12 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialPad DialPad 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c3.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c3.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c3.RcIconButton-contained:hover,
-  .c3.RcIconButton-contained:hover .c5 {
-    color: #fff;
+  .c3.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 

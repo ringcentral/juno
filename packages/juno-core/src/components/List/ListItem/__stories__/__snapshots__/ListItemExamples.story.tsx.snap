@@ -129,20 +129,17 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   position: absolute;
 }
 
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c4.RcIconButton-contained.focus-visible:before,
 .c4.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added],
-.c4.RcIconButton-contained.focus-visible .c5,
-.c4.RcIconButton-contained[data-focus-visible-added] .c5 {
-  color: #fff;
-}
-
-.c4.RcIconButton-contained:active,
-.c4.RcIconButton-contained:active .c5 {
+.c4.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -248,20 +245,17 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   position: absolute;
 }
 
+.c8.RcIconButton-contained.focus-visible,
+.c8.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c8.RcIconButton-contained.focus-visible:before,
 .c8.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added],
-.c8.RcIconButton-contained.focus-visible .c5,
-.c8.RcIconButton-contained[data-focus-visible-added] .c5 {
-  color: #fff;
-}
-
-.c8.RcIconButton-contained:active,
-.c8.RcIconButton-contained:active .c5 {
+.c8.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -631,13 +625,12 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c4.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c4.RcIconButton-contained:hover,
-  .c4.RcIconButton-contained:hover .c5 {
-    color: #fff;
+  .c4.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -653,13 +646,12 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c8.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c8.RcIconButton-contained:hover,
-  .c8.RcIconButton-contained:hover .c5 {
-    color: #fff;
+  .c8.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -1616,20 +1608,17 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
   position: absolute;
 }
 
+.c13.RcIconButton-contained.focus-visible,
+.c13.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c13.RcIconButton-contained.focus-visible:before,
 .c13.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c13.RcIconButton-contained.focus-visible,
-.c13.RcIconButton-contained[data-focus-visible-added],
-.c13.RcIconButton-contained.focus-visible .c9,
-.c13.RcIconButton-contained[data-focus-visible-added] .c9 {
-  color: #fff;
-}
-
-.c13.RcIconButton-contained:active,
-.c13.RcIconButton-contained:active .c9 {
+.c13.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -2078,13 +2067,12 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c13.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c13.RcIconButton-contained:hover,
-  .c13.RcIconButton-contained:hover .c9 {
-    color: #fff;
+  .c13.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 

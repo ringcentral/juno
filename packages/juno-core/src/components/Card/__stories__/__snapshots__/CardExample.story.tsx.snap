@@ -492,20 +492,17 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
   position: absolute;
 }
 
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c6.RcIconButton-contained.focus-visible:before,
 .c6.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added],
-.c6.RcIconButton-contained.focus-visible .c7,
-.c6.RcIconButton-contained[data-focus-visible-added] .c7 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c6.RcIconButton-contained:active,
-.c6.RcIconButton-contained:active .c7 {
+.c6.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -694,13 +691,12 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c6.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c6.RcIconButton-contained:hover,
-  .c6.RcIconButton-contained:hover .c7 {
-    color: rgba(0,0,0,0.87);
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -1053,20 +1049,17 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
   position: absolute;
 }
 
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c6.RcIconButton-contained.focus-visible:before,
 .c6.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added],
-.c6.RcIconButton-contained.focus-visible .c7,
-.c6.RcIconButton-contained[data-focus-visible-added] .c7 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c6.RcIconButton-contained:active,
-.c6.RcIconButton-contained:active .c7 {
+.c6.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -1250,13 +1243,12 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c6.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c6.RcIconButton-contained:hover,
-  .c6.RcIconButton-contained:hover .c7 {
-    color: rgba(0,0,0,0.87);
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 

@@ -99,20 +99,17 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
   position: absolute;
 }
 
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c6.RcIconButton-contained.focus-visible:before,
 .c6.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added],
-.c6.RcIconButton-contained.focus-visible .c8,
-.c6.RcIconButton-contained[data-focus-visible-added] .c8 {
-  color: #fff;
-}
-
-.c6.RcIconButton-contained:active,
-.c6.RcIconButton-contained:active .c8 {
+.c6.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -325,13 +322,12 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c6.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c6.RcIconButton-contained:hover,
-  .c6.RcIconButton-contained:hover .c8 {
-    color: #fff;
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -984,20 +980,17 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
   position: absolute;
 }
 
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c6.RcIconButton-contained.focus-visible:before,
 .c6.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added],
-.c6.RcIconButton-contained.focus-visible .c7,
-.c6.RcIconButton-contained[data-focus-visible-added] .c7 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c6.RcIconButton-contained:active,
-.c6.RcIconButton-contained:active .c7 {
+.c6.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -1089,20 +1082,17 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
   position: absolute;
 }
 
+.c22.RcIconButton-contained.focus-visible,
+.c22.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c22.RcIconButton-contained.focus-visible:before,
 .c22.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c22.RcIconButton-contained.focus-visible,
-.c22.RcIconButton-contained[data-focus-visible-added],
-.c22.RcIconButton-contained.focus-visible .c7,
-.c22.RcIconButton-contained[data-focus-visible-added] .c7 {
-  color: #fff;
-}
-
-.c22.RcIconButton-contained:active,
-.c22.RcIconButton-contained:active .c7 {
+.c22.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -1201,20 +1191,17 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
   position: absolute;
 }
 
+.c25.RcIconButton-contained.focus-visible,
+.c25.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c25.RcIconButton-contained.focus-visible:before,
 .c25.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c25.RcIconButton-contained.focus-visible,
-.c25.RcIconButton-contained[data-focus-visible-added],
-.c25.RcIconButton-contained.focus-visible .c7,
-.c25.RcIconButton-contained[data-focus-visible-added] .c7 {
-  color: #fff;
-}
-
-.c25.RcIconButton-contained:active,
-.c25.RcIconButton-contained:active .c7 {
+.c25.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -1313,20 +1300,17 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
   position: absolute;
 }
 
+.c26.RcIconButton-contained.focus-visible,
+.c26.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c26.RcIconButton-contained.focus-visible:before,
 .c26.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c26.RcIconButton-contained.focus-visible,
-.c26.RcIconButton-contained[data-focus-visible-added],
-.c26.RcIconButton-contained.focus-visible .c7,
-.c26.RcIconButton-contained[data-focus-visible-added] .c7 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c26.RcIconButton-contained:active,
-.c26.RcIconButton-contained:active .c7 {
+.c26.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -1976,13 +1960,12 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c6.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c6.RcIconButton-contained:hover,
-  .c6.RcIconButton-contained:hover .c7 {
-    color: rgba(0,0,0,0.87);
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -1998,13 +1981,12 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c22.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c22.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c22.RcIconButton-contained:hover,
-  .c22.RcIconButton-contained:hover .c7 {
-    color: #fff;
+  .c22.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -2020,13 +2002,12 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c25.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c25.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c25.RcIconButton-contained:hover,
-  .c25.RcIconButton-contained:hover .c7 {
-    color: #fff;
+  .c25.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -2042,13 +2023,12 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c26.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c26.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c26.RcIconButton-contained:hover,
-  .c26.RcIconButton-contained:hover .c7 {
-    color: rgba(0,0,0,0.87);
+  .c26.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -2947,20 +2927,17 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
   position: absolute;
 }
 
+.c7.RcIconButton-contained.focus-visible,
+.c7.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c7.RcIconButton-contained.focus-visible:before,
 .c7.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c7.RcIconButton-contained.focus-visible,
-.c7.RcIconButton-contained[data-focus-visible-added],
-.c7.RcIconButton-contained.focus-visible .c8,
-.c7.RcIconButton-contained[data-focus-visible-added] .c8 {
-  color: #fff;
-}
-
-.c7.RcIconButton-contained:active,
-.c7.RcIconButton-contained:active .c8 {
+.c7.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -3052,20 +3029,17 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
   position: absolute;
 }
 
+.c15.RcIconButton-contained.focus-visible,
+.c15.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c15.RcIconButton-contained.focus-visible:before,
 .c15.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c15.RcIconButton-contained.focus-visible,
-.c15.RcIconButton-contained[data-focus-visible-added],
-.c15.RcIconButton-contained.focus-visible .c8,
-.c15.RcIconButton-contained[data-focus-visible-added] .c8 {
-  color: #fff;
-}
-
-.c15.RcIconButton-contained:active,
-.c15.RcIconButton-contained:active .c8 {
+.c15.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -3332,13 +3306,12 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c7.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c7.RcIconButton-contained:hover,
-  .c7.RcIconButton-contained:hover .c8 {
-    color: #fff;
+  .c7.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -3354,13 +3327,12 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c15.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c15.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c15.RcIconButton-contained:hover,
-  .c15.RcIconButton-contained:hover .c8 {
-    color: #fff;
+  .c15.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 

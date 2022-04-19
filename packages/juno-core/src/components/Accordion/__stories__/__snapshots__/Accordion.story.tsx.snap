@@ -122,20 +122,17 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/Accordion Accordion 1`] = 
   position: absolute;
 }
 
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c4.RcIconButton-contained.focus-visible:before,
 .c4.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added],
-.c4.RcIconButton-contained.focus-visible .c5,
-.c4.RcIconButton-contained[data-focus-visible-added] .c5 {
-  color: #fff;
-}
-
-.c4.RcIconButton-contained:active,
-.c4.RcIconButton-contained:active .c5 {
+.c4.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -191,13 +188,12 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/Accordion Accordion 1`] = 
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c4.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c4.RcIconButton-contained:hover,
-  .c4.RcIconButton-contained:hover .c5 {
-    color: #fff;
+  .c4.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -442,20 +438,17 @@ Array [
   position: absolute;
 }
 
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c4.RcIconButton-contained.focus-visible:before,
 .c4.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added],
-.c4.RcIconButton-contained.focus-visible .c5,
-.c4.RcIconButton-contained[data-focus-visible-added] .c5 {
-  color: #fff;
-}
-
-.c4.RcIconButton-contained:active,
-.c4.RcIconButton-contained:active .c5 {
+.c4.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -511,13 +504,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c4.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c4.RcIconButton-contained:hover,
-  .c4.RcIconButton-contained:hover .c5 {
-    color: #fff;
+  .c4.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -756,20 +748,17 @@ Array [
   position: absolute;
 }
 
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c4.RcIconButton-contained.focus-visible:before,
 .c4.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added],
-.c4.RcIconButton-contained.focus-visible .c5,
-.c4.RcIconButton-contained[data-focus-visible-added] .c5 {
-  color: #fff;
-}
-
-.c4.RcIconButton-contained:active,
-.c4.RcIconButton-contained:active .c5 {
+.c4.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -825,13 +814,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c4.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c4.RcIconButton-contained:hover,
-  .c4.RcIconButton-contained:hover .c5 {
-    color: #fff;
+  .c4.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -1070,20 +1058,17 @@ Array [
   position: absolute;
 }
 
+.c4.RcIconButton-contained.focus-visible,
+.c4.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c4.RcIconButton-contained.focus-visible:before,
 .c4.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added],
-.c4.RcIconButton-contained.focus-visible .c5,
-.c4.RcIconButton-contained[data-focus-visible-added] .c5 {
-  color: #fff;
-}
-
-.c4.RcIconButton-contained:active,
-.c4.RcIconButton-contained:active .c5 {
+.c4.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -1139,13 +1124,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c4.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c4.RcIconButton-contained:hover,
-  .c4.RcIconButton-contained:hover .c5 {
-    color: #fff;
+  .c4.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 

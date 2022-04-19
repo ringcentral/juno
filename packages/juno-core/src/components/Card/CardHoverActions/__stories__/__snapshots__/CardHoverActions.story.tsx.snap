@@ -106,20 +106,17 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardHoverActions CardHoverActi
   position: absolute;
 }
 
+.c2.RcIconButton-contained.focus-visible,
+.c2.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c2.RcIconButton-contained.focus-visible:before,
 .c2.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c2.RcIconButton-contained.focus-visible,
-.c2.RcIconButton-contained[data-focus-visible-added],
-.c2.RcIconButton-contained.focus-visible .c3,
-.c2.RcIconButton-contained[data-focus-visible-added] .c3 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c2.RcIconButton-contained:active,
-.c2.RcIconButton-contained:active .c3 {
+.c2.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -174,13 +171,12 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardHoverActions CardHoverActi
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c2.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c2.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c2.RcIconButton-contained:hover,
-  .c2.RcIconButton-contained:hover .c3 {
-    color: rgba(0,0,0,0.87);
+  .c2.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 

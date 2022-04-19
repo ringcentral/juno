@@ -18,6 +18,24 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
   font-size: 24px;
 }
 
+.c15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.c17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+  color: #F3F3F3;
+}
+
 .c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -106,20 +124,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
   position: absolute;
 }
 
+.c1.RcIconButton-contained.focus-visible,
+.c1.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c1.RcIconButton-contained.focus-visible:before,
 .c1.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c1.RcIconButton-contained.focus-visible,
-.c1.RcIconButton-contained[data-focus-visible-added],
-.c1.RcIconButton-contained.focus-visible .c2,
-.c1.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c1.RcIconButton-contained:active,
-.c1.RcIconButton-contained:active .c2 {
+.c1.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -218,20 +233,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
   position: absolute;
 }
 
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c5.RcIconButton-contained.focus-visible:before,
 .c5.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added],
-.c5.RcIconButton-contained.focus-visible .c2,
-.c5.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c5.RcIconButton-contained:active,
-.c5.RcIconButton-contained:active .c2 {
+.c5.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -330,20 +342,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
   position: absolute;
 }
 
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c6.RcIconButton-contained.focus-visible:before,
 .c6.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added],
-.c6.RcIconButton-contained.focus-visible .c2,
-.c6.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c6.RcIconButton-contained:active,
-.c6.RcIconButton-contained:active .c2 {
+.c6.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -442,20 +451,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
   position: absolute;
 }
 
+.c7.RcIconButton-contained.focus-visible,
+.c7.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c7.RcIconButton-contained.focus-visible:before,
 .c7.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c7.RcIconButton-contained.focus-visible,
-.c7.RcIconButton-contained[data-focus-visible-added],
-.c7.RcIconButton-contained.focus-visible .c2,
-.c7.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c7.RcIconButton-contained:active,
-.c7.RcIconButton-contained:active .c2 {
+.c7.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -554,25 +560,22 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
   position: absolute;
 }
 
+.c8.RcIconButton-contained.focus-visible,
+.c8.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c8.RcIconButton-contained.focus-visible:before,
 .c8.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added],
-.c8.RcIconButton-contained.focus-visible .c2,
-.c8.RcIconButton-contained[data-focus-visible-added] .c2 {
+.c8.RcIconButton-contained:active {
   color: #fff;
 }
 
 .c8.RcIconButton-contained:active:before {
   background-color: rgba(255,255,255,0.24);
-}
-
-.c8.RcIconButton-contained:active,
-.c8.RcIconButton-contained:active .c2 {
-  color: #fff;
 }
 
 .c8 .RcIconButtonTouchRipple-ripplePulsate {
@@ -675,25 +678,22 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
   position: absolute;
 }
 
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c9.RcIconButton-contained.focus-visible:before,
 .c9.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added],
-.c9.RcIconButton-contained.focus-visible .c2,
-.c9.RcIconButton-contained[data-focus-visible-added] .c2 {
+.c9.RcIconButton-contained:active {
   color: #fff;
 }
 
 .c9.RcIconButton-contained:active:before {
   background-color: rgba(255,255,255,0.24);
-}
-
-.c9.RcIconButton-contained:active,
-.c9.RcIconButton-contained:active .c2 {
-  color: #fff;
 }
 
 .c9 .RcIconButtonTouchRipple-ripplePulsate {
@@ -791,20 +791,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
   position: absolute;
 }
 
+.c12.RcIconButton-contained.focus-visible,
+.c12.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c12.RcIconButton-contained.focus-visible:before,
 .c12.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added],
-.c12.RcIconButton-contained.focus-visible .c2,
-.c12.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c12.RcIconButton-contained:active,
-.c12.RcIconButton-contained:active .c2 {
+.c12.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -901,24 +898,239 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
   position: absolute;
 }
 
+.c13.RcIconButton-contained.focus-visible,
+.c13.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c13.RcIconButton-contained.focus-visible:before,
 .c13.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c13.RcIconButton-contained.focus-visible,
-.c13.RcIconButton-contained[data-focus-visible-added],
-.c13.RcIconButton-contained.focus-visible .c2,
-.c13.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c13.RcIconButton-contained:active,
-.c13.RcIconButton-contained:active .c2 {
+.c13.RcIconButton-contained:active {
   color: #fff;
 }
 
 .c13 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #FF8800;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+}
+
+.c14:active {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+
+.c14,
+.c14 .c2 {
+  font-size: 20px;
+}
+
+.c14:active,
+.c14:active .c2 {
+  color: #FF8800;
+}
+
+.c14.focus-visible,
+.c14[data-focus-visible-added] {
+  background-color: rgba(255,136,0,0.16);
+}
+
+.c14.focus-visible:active,
+.c14[data-focus-visible-added]:active,
+.c14.focus-visible:active .c2,
+.c14[data-focus-visible-added]:active .c2 {
+  color: rgba(255,136,0,0.88);
+}
+
+.c14.RcIconButton-persistBg {
+  background-color: rgba(255,136,0,0.12);
+}
+
+.c14.RcIconButton-disabled,
+.c14.RcIconButton-disabled .c2 {
+  color: #B9B9B9;
+}
+
+.c14.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c14.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c14.RcIconButton-contained {
+  color: rgba(0,0,0,0.87);
+  background-color: #FF8800;
+}
+
+.c14.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c14.RcIconButton-contained.focus-visible,
+.c14.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
+.c14.RcIconButton-contained.focus-visible:before,
+.c14.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
+}
+
+.c14.RcIconButton-contained:active {
+  color: rgba(0,0,0,0.87);
+}
+
+.c14 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c16 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #3C9949;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+}
+
+.c16:active {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+
+.c16,
+.c16 .c2 {
+  font-size: 20px;
+}
+
+.c16:active,
+.c16:active .c2 {
+  color: #3C9949;
+}
+
+.c16.focus-visible,
+.c16[data-focus-visible-added] {
+  background-color: rgba(60,153,73,0.16);
+}
+
+.c16.focus-visible:active,
+.c16[data-focus-visible-added]:active,
+.c16.focus-visible:active .c2,
+.c16[data-focus-visible-added]:active .c2 {
+  color: rgba(60,153,73,0.88);
+}
+
+.c16.RcIconButton-persistBg {
+  background-color: rgba(60,153,73,0.12);
+}
+
+.c16.RcIconButton-disabled,
+.c16.RcIconButton-disabled .c2 {
+  color: #B9B9B9;
+}
+
+.c16.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c16.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c16.RcIconButton-contained {
+  color: #fff;
+  background-color: #3C9949;
+}
+
+.c16.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c16.RcIconButton-contained.focus-visible,
+.c16.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
+.c16.RcIconButton-contained.focus-visible:before,
+.c16.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c16.RcIconButton-contained:active {
+  color: #fff;
+}
+
+.c16 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
@@ -957,13 +1169,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c1.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c1.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c1.RcIconButton-contained:hover,
-  .c1.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c1.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -979,13 +1190,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c5.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c5.RcIconButton-contained:hover,
-  .c5.RcIconButton-contained:hover .c2 {
-    color: rgba(0,0,0,0.87);
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -1001,13 +1211,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c6.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c6.RcIconButton-contained:hover,
-  .c6.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -1023,13 +1232,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c7.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c7.RcIconButton-contained:hover,
-  .c7.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c7.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -1045,13 +1253,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c8.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c8.RcIconButton-contained:hover,
-  .c8.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c8.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -1067,13 +1274,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c9.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c9.RcIconButton-contained:hover,
-  .c9.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c9.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -1089,13 +1295,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c12.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c12.RcIconButton-contained:hover,
-  .c12.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -1111,13 +1316,54 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
 }
 
 @media (hover:hover) and (pointer:fine) {
+  .c13.RcIconButton-contained:hover {
+    color: #fff;
+  }
+
   .c13.RcIconButton-contained:hover:before {
     background-color: rgba(255,255,255,0.08);
   }
+}
 
-  .c13.RcIconButton-contained:hover,
-  .c13.RcIconButton-contained:hover .c2 {
+@media (hover:hover) and (pointer:fine) {
+  .c14:hover {
+    background-color: rgba(255,136,0,0.08);
+  }
+
+  .c14:hover,
+  .c14:hover .c2 {
+    color: rgba(255,136,0,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c14.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
+  }
+
+  .c14.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c16:hover {
+    background-color: rgba(60,153,73,0.08);
+  }
+
+  .c16:hover,
+  .c16:hover .c2 {
+    color: rgba(60,153,73,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c16.RcIconButton-contained:hover {
     color: #fff;
+  }
+
+  .c16.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -1414,6 +1660,79 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
       
     </span>
   </button>
+  <br />
+  <br />
+  <h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    custom icon color
+  </h5>
+  <button
+    className="MuiButtonBase-root c14 RcIconButton-root RcIconButton-contained"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="c2 c15 phone icon"
+    >
+      <svg
+        className="c4"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.228 14.296c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 0 0 1.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.078c-.004.003.001-.001.009-.015l.076-.093c.226-.238.417-.428.575-.573.171-.156.362-.306.617-.477a3.574 3.574 0 0 1 2.169-.483c.803.071 1.484.39 1.965.905.599.566 1.221 1.131 1.865 1.697s1.489 1.28 2.534 2.141c.586.482.976 1.073 1.157 1.757.184.694.125 1.365-.161 1.937-.193.479-.565 1.044-1.117 1.713-.544.659-1.035 1.155-1.456 1.47-.44.363-.947.637-1.516.818a6.01 6.01 0 0 1-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.989 24.989 0 0 1-3.475-2.719 36.73 36.73 0 0 1-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716.735-.115 1.455-.01 2.133.308s1.204.818 1.577 1.5a33.63 33.63 0 0 0 1.257 2.265 49.99 49.99 0 0 0 1.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 0 1-1.027.705 1.161 1.161 0 0 1-.218.137l-.171.083a2.256 2.256 0 0 1-.223.12 1.99 1.99 0 0 0-.144.067c.027.132.084.31.182.548z"
+        />
+      </svg>
+      
+    </span>
+  </button>
+  <button
+    className="MuiButtonBase-root c16 RcIconButton-root RcIconButton-contained"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="c2 c17 phone icon"
+    >
+      <svg
+        className="c4"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.228 14.296c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 0 0 1.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.078c-.004.003.001-.001.009-.015l.076-.093c.226-.238.417-.428.575-.573.171-.156.362-.306.617-.477a3.574 3.574 0 0 1 2.169-.483c.803.071 1.484.39 1.965.905.599.566 1.221 1.131 1.865 1.697s1.489 1.28 2.534 2.141c.586.482.976 1.073 1.157 1.757.184.694.125 1.365-.161 1.937-.193.479-.565 1.044-1.117 1.713-.544.659-1.035 1.155-1.456 1.47-.44.363-.947.637-1.516.818a6.01 6.01 0 0 1-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.989 24.989 0 0 1-3.475-2.719 36.73 36.73 0 0 1-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716.735-.115 1.455-.01 2.133.308s1.204.818 1.577 1.5a33.63 33.63 0 0 0 1.257 2.265 49.99 49.99 0 0 0 1.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 0 1-1.027.705 1.161 1.161 0 0 1-.218.137l-.171.083a2.256 2.256 0 0 1-.223.12 1.99 1.99 0 0 0-.144.067c.027.132.084.31.182.548z"
+        />
+      </svg>
+      
+    </span>
+  </button>
 </div>
 `;
 
@@ -1523,20 +1842,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   position: absolute;
 }
 
+.c1.RcIconButton-contained.focus-visible,
+.c1.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c1.RcIconButton-contained.focus-visible:before,
 .c1.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c1.RcIconButton-contained.focus-visible,
-.c1.RcIconButton-contained[data-focus-visible-added],
-.c1.RcIconButton-contained.focus-visible .c2,
-.c1.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c1.RcIconButton-contained:active,
-.c1.RcIconButton-contained:active .c2 {
+.c1.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -1635,20 +1951,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   position: absolute;
 }
 
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c5.RcIconButton-contained.focus-visible:before,
 .c5.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added],
-.c5.RcIconButton-contained.focus-visible .c2,
-.c5.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c5.RcIconButton-contained:active,
-.c5.RcIconButton-contained:active .c2 {
+.c5.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -1753,20 +2066,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   position: absolute;
 }
 
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c6.RcIconButton-contained.focus-visible:before,
 .c6.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added],
-.c6.RcIconButton-contained.focus-visible .c2,
-.c6.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c6.RcIconButton-contained:active,
-.c6.RcIconButton-contained:active .c2 {
+.c6.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -1871,20 +2181,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   position: absolute;
 }
 
+.c7.RcIconButton-contained.focus-visible,
+.c7.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c7.RcIconButton-contained.focus-visible:before,
 .c7.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c7.RcIconButton-contained.focus-visible,
-.c7.RcIconButton-contained[data-focus-visible-added],
-.c7.RcIconButton-contained.focus-visible .c2,
-.c7.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c7.RcIconButton-contained:active,
-.c7.RcIconButton-contained:active .c2 {
+.c7.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -1983,20 +2290,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   position: absolute;
 }
 
+.c8.RcIconButton-contained.focus-visible,
+.c8.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c8.RcIconButton-contained.focus-visible:before,
 .c8.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added],
-.c8.RcIconButton-contained.focus-visible .c2,
-.c8.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c8.RcIconButton-contained:active,
-.c8.RcIconButton-contained:active .c2 {
+.c8.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -2101,20 +2405,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   position: absolute;
 }
 
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c9.RcIconButton-contained.focus-visible:before,
 .c9.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added],
-.c9.RcIconButton-contained.focus-visible .c2,
-.c9.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c9.RcIconButton-contained:active,
-.c9.RcIconButton-contained:active .c2 {
+.c9.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -2219,20 +2520,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   position: absolute;
 }
 
+.c10.RcIconButton-contained.focus-visible,
+.c10.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c10.RcIconButton-contained.focus-visible:before,
 .c10.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c10.RcIconButton-contained.focus-visible,
-.c10.RcIconButton-contained[data-focus-visible-added],
-.c10.RcIconButton-contained.focus-visible .c2,
-.c10.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c10.RcIconButton-contained:active,
-.c10.RcIconButton-contained:active .c2 {
+.c10.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -2337,20 +2635,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   position: absolute;
 }
 
+.c11.RcIconButton-contained.focus-visible,
+.c11.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c11.RcIconButton-contained.focus-visible:before,
 .c11.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added],
-.c11.RcIconButton-contained.focus-visible .c2,
-.c11.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c11.RcIconButton-contained:active,
-.c11.RcIconButton-contained:active .c2 {
+.c11.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -2387,13 +2682,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c1.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c1.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c1.RcIconButton-contained:hover,
-  .c1.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c1.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -2409,13 +2703,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c5.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c5.RcIconButton-contained:hover,
-  .c5.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -2431,13 +2724,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c6.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c6.RcIconButton-contained:hover,
-  .c6.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -2453,13 +2745,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c7.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c7.RcIconButton-contained:hover,
-  .c7.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c7.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -2475,13 +2766,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c8.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c8.RcIconButton-contained:hover,
-  .c8.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c8.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -2497,13 +2787,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c9.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c9.RcIconButton-contained:hover,
-  .c9.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c9.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -2519,13 +2808,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c10.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c10.RcIconButton-contained:hover,
-  .c10.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c10.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -2541,13 +2829,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c11.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c11.RcIconButton-contained:hover,
-  .c11.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c11.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -3000,20 +3287,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton 1`] = `
   position: absolute;
 }
 
+.c0.RcIconButton-contained.focus-visible,
+.c0.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c0.RcIconButton-contained.focus-visible:before,
 .c0.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c0.RcIconButton-contained.focus-visible,
-.c0.RcIconButton-contained[data-focus-visible-added],
-.c0.RcIconButton-contained.focus-visible .c1,
-.c0.RcIconButton-contained[data-focus-visible-added] .c1 {
-  color: #fff;
-}
-
-.c0.RcIconButton-contained:active,
-.c0.RcIconButton-contained:active .c1 {
+.c0.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -3036,13 +3320,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c0.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c0.RcIconButton-contained:hover,
-  .c0.RcIconButton-contained:hover .c1 {
-    color: #fff;
+  .c0.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -3179,20 +3462,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   position: absolute;
 }
 
+.c1.RcIconButton-contained.focus-visible,
+.c1.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c1.RcIconButton-contained.focus-visible:before,
 .c1.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c1.RcIconButton-contained.focus-visible,
-.c1.RcIconButton-contained[data-focus-visible-added],
-.c1.RcIconButton-contained.focus-visible .c2,
-.c1.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c1.RcIconButton-contained:active,
-.c1.RcIconButton-contained:active .c2 {
+.c1.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -3284,20 +3564,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   position: absolute;
 }
 
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c5.RcIconButton-contained.focus-visible:before,
 .c5.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added],
-.c5.RcIconButton-contained.focus-visible .c2,
-.c5.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c5.RcIconButton-contained:active,
-.c5.RcIconButton-contained:active .c2 {
+.c5.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -3396,20 +3673,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   position: absolute;
 }
 
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c6.RcIconButton-contained.focus-visible:before,
 .c6.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added],
-.c6.RcIconButton-contained.focus-visible .c2,
-.c6.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c6.RcIconButton-contained:active,
-.c6.RcIconButton-contained:active .c2 {
+.c6.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -3508,20 +3782,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   position: absolute;
 }
 
+.c7.RcIconButton-contained.focus-visible,
+.c7.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c7.RcIconButton-contained.focus-visible:before,
 .c7.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c7.RcIconButton-contained.focus-visible,
-.c7.RcIconButton-contained[data-focus-visible-added],
-.c7.RcIconButton-contained.focus-visible .c2,
-.c7.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c7.RcIconButton-contained:active,
-.c7.RcIconButton-contained:active .c2 {
+.c7.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -3618,20 +3889,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   position: absolute;
 }
 
+.c8.RcIconButton-contained.focus-visible,
+.c8.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c8.RcIconButton-contained.focus-visible:before,
 .c8.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added],
-.c8.RcIconButton-contained.focus-visible .c2,
-.c8.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c8.RcIconButton-contained:active,
-.c8.RcIconButton-contained:active .c2 {
+.c8.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -3728,20 +3996,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   position: absolute;
 }
 
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c9.RcIconButton-contained.focus-visible:before,
 .c9.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added],
-.c9.RcIconButton-contained.focus-visible .c2,
-.c9.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c9.RcIconButton-contained:active,
-.c9.RcIconButton-contained:active .c2 {
+.c9.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -3833,20 +4098,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   position: absolute;
 }
 
+.c10.RcIconButton-contained.focus-visible,
+.c10.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c10.RcIconButton-contained.focus-visible:before,
 .c10.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c10.RcIconButton-contained.focus-visible,
-.c10.RcIconButton-contained[data-focus-visible-added],
-.c10.RcIconButton-contained.focus-visible .c2,
-.c10.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c10.RcIconButton-contained:active,
-.c10.RcIconButton-contained:active .c2 {
+.c10.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -3944,20 +4206,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   position: absolute;
 }
 
+.c11.RcIconButton-contained.focus-visible,
+.c11.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c11.RcIconButton-contained.focus-visible:before,
 .c11.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added],
-.c11.RcIconButton-contained.focus-visible .c2,
-.c11.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c11.RcIconButton-contained:active,
-.c11.RcIconButton-contained:active .c2 {
+.c11.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -4069,20 +4328,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   position: absolute;
 }
 
+.c12.RcIconButton-contained.focus-visible,
+.c12.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c12.RcIconButton-contained.focus-visible:before,
 .c12.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added],
-.c12.RcIconButton-contained.focus-visible .c2,
-.c12.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c12.RcIconButton-contained:active,
-.c12.RcIconButton-contained:active .c2 {
+.c12.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -4113,13 +4369,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c1.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c1.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c1.RcIconButton-contained:hover,
-  .c1.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c1.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -4135,13 +4390,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c5.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c5.RcIconButton-contained:hover,
-  .c5.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -4157,13 +4411,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c6.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c6.RcIconButton-contained:hover,
-  .c6.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -4179,13 +4432,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c7.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c7.RcIconButton-contained:hover,
-  .c7.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c7.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -4201,13 +4453,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c8.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c8.RcIconButton-contained:hover,
-  .c8.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c8.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -4223,13 +4474,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c9.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c9.RcIconButton-contained:hover,
-  .c9.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c9.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -4245,13 +4495,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c10.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c10.RcIconButton-contained:hover,
-  .c10.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c10.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -4267,13 +4516,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c11.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c11.RcIconButton-contained:hover,
-  .c11.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c11.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -4289,13 +4537,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c12.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c12.RcIconButton-contained:hover,
-  .c12.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -4828,20 +5075,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c3.RcIconButton-contained.focus-visible,
+.c3.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c3.RcIconButton-contained.focus-visible:before,
 .c3.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c3.RcIconButton-contained.focus-visible,
-.c3.RcIconButton-contained[data-focus-visible-added],
-.c3.RcIconButton-contained.focus-visible .c4,
-.c3.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c3.RcIconButton-contained:active,
-.c3.RcIconButton-contained:active .c4 {
+.c3.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -4940,20 +5184,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c7.RcIconButton-contained.focus-visible,
+.c7.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c7.RcIconButton-contained.focus-visible:before,
 .c7.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c7.RcIconButton-contained.focus-visible,
-.c7.RcIconButton-contained[data-focus-visible-added],
-.c7.RcIconButton-contained.focus-visible .c4,
-.c7.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c7.RcIconButton-contained:active,
-.c7.RcIconButton-contained:active .c4 {
+.c7.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -5050,20 +5291,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c8.RcIconButton-contained.focus-visible,
+.c8.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c8.RcIconButton-contained.focus-visible:before,
 .c8.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added],
-.c8.RcIconButton-contained.focus-visible .c4,
-.c8.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c8.RcIconButton-contained:active,
-.c8.RcIconButton-contained:active .c4 {
+.c8.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -5155,20 +5393,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c9.RcIconButton-contained.focus-visible:before,
 .c9.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added],
-.c9.RcIconButton-contained.focus-visible .c4,
-.c9.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c9.RcIconButton-contained:active,
-.c9.RcIconButton-contained:active .c4 {
+.c9.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -5280,20 +5515,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c10.RcIconButton-contained.focus-visible,
+.c10.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c10.RcIconButton-contained.focus-visible:before,
 .c10.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c10.RcIconButton-contained.focus-visible,
-.c10.RcIconButton-contained[data-focus-visible-added],
-.c10.RcIconButton-contained.focus-visible .c4,
-.c10.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c10.RcIconButton-contained:active,
-.c10.RcIconButton-contained:active .c4 {
+.c10.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -5385,20 +5617,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c11.RcIconButton-contained.focus-visible,
+.c11.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c11.RcIconButton-contained.focus-visible:before,
 .c11.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added],
-.c11.RcIconButton-contained.focus-visible .c4,
-.c11.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c11.RcIconButton-contained:active,
-.c11.RcIconButton-contained:active .c4 {
+.c11.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -5497,20 +5726,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c12.RcIconButton-contained.focus-visible,
+.c12.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c12.RcIconButton-contained.focus-visible:before,
 .c12.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added],
-.c12.RcIconButton-contained.focus-visible .c4,
-.c12.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c12.RcIconButton-contained:active,
-.c12.RcIconButton-contained:active .c4 {
+.c12.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -5607,20 +5833,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c13.RcIconButton-contained.focus-visible,
+.c13.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c13.RcIconButton-contained.focus-visible:before,
 .c13.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c13.RcIconButton-contained.focus-visible,
-.c13.RcIconButton-contained[data-focus-visible-added],
-.c13.RcIconButton-contained.focus-visible .c4,
-.c13.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c13.RcIconButton-contained:active,
-.c13.RcIconButton-contained:active .c4 {
+.c13.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -5712,20 +5935,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c14.RcIconButton-contained.focus-visible,
+.c14.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c14.RcIconButton-contained.focus-visible:before,
 .c14.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c14.RcIconButton-contained.focus-visible,
-.c14.RcIconButton-contained[data-focus-visible-added],
-.c14.RcIconButton-contained.focus-visible .c4,
-.c14.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c14.RcIconButton-contained:active,
-.c14.RcIconButton-contained:active .c4 {
+.c14.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -5837,20 +6057,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c15.RcIconButton-contained.focus-visible,
+.c15.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c15.RcIconButton-contained.focus-visible:before,
 .c15.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c15.RcIconButton-contained.focus-visible,
-.c15.RcIconButton-contained[data-focus-visible-added],
-.c15.RcIconButton-contained.focus-visible .c4,
-.c15.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c15.RcIconButton-contained:active,
-.c15.RcIconButton-contained:active .c4 {
+.c15.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -5942,20 +6159,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c16.RcIconButton-contained.focus-visible,
+.c16.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c16.RcIconButton-contained.focus-visible:before,
 .c16.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c16.RcIconButton-contained.focus-visible,
-.c16.RcIconButton-contained[data-focus-visible-added],
-.c16.RcIconButton-contained.focus-visible .c4,
-.c16.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c16.RcIconButton-contained:active,
-.c16.RcIconButton-contained:active .c4 {
+.c16.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -6054,20 +6268,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c17.RcIconButton-contained.focus-visible,
+.c17.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c17.RcIconButton-contained.focus-visible:before,
 .c17.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c17.RcIconButton-contained.focus-visible,
-.c17.RcIconButton-contained[data-focus-visible-added],
-.c17.RcIconButton-contained.focus-visible .c4,
-.c17.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c17.RcIconButton-contained:active,
-.c17.RcIconButton-contained:active .c4 {
+.c17.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -6164,20 +6375,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c18.RcIconButton-contained.focus-visible,
+.c18.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c18.RcIconButton-contained.focus-visible:before,
 .c18.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c18.RcIconButton-contained.focus-visible,
-.c18.RcIconButton-contained[data-focus-visible-added],
-.c18.RcIconButton-contained.focus-visible .c4,
-.c18.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c18.RcIconButton-contained:active,
-.c18.RcIconButton-contained:active .c4 {
+.c18.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -6269,20 +6477,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c19.RcIconButton-contained.focus-visible,
+.c19.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c19.RcIconButton-contained.focus-visible:before,
 .c19.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c19.RcIconButton-contained.focus-visible,
-.c19.RcIconButton-contained[data-focus-visible-added],
-.c19.RcIconButton-contained.focus-visible .c4,
-.c19.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c19.RcIconButton-contained:active,
-.c19.RcIconButton-contained:active .c4 {
+.c19.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -6394,20 +6599,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c20.RcIconButton-contained.focus-visible,
+.c20.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c20.RcIconButton-contained.focus-visible:before,
 .c20.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c20.RcIconButton-contained.focus-visible,
-.c20.RcIconButton-contained[data-focus-visible-added],
-.c20.RcIconButton-contained.focus-visible .c4,
-.c20.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c20.RcIconButton-contained:active,
-.c20.RcIconButton-contained:active .c4 {
+.c20.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -6499,20 +6701,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c21.RcIconButton-contained.focus-visible,
+.c21.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c21.RcIconButton-contained.focus-visible:before,
 .c21.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c21.RcIconButton-contained.focus-visible,
-.c21.RcIconButton-contained[data-focus-visible-added],
-.c21.RcIconButton-contained.focus-visible .c4,
-.c21.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c21.RcIconButton-contained:active,
-.c21.RcIconButton-contained:active .c4 {
+.c21.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -6611,20 +6810,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c22.RcIconButton-contained.focus-visible,
+.c22.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c22.RcIconButton-contained.focus-visible:before,
 .c22.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c22.RcIconButton-contained.focus-visible,
-.c22.RcIconButton-contained[data-focus-visible-added],
-.c22.RcIconButton-contained.focus-visible .c4,
-.c22.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c22.RcIconButton-contained:active,
-.c22.RcIconButton-contained:active .c4 {
+.c22.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -6721,20 +6917,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c23.RcIconButton-contained.focus-visible,
+.c23.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c23.RcIconButton-contained.focus-visible:before,
 .c23.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c23.RcIconButton-contained.focus-visible,
-.c23.RcIconButton-contained[data-focus-visible-added],
-.c23.RcIconButton-contained.focus-visible .c4,
-.c23.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c23.RcIconButton-contained:active,
-.c23.RcIconButton-contained:active .c4 {
+.c23.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -6826,20 +7019,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c24.RcIconButton-contained.focus-visible,
+.c24.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c24.RcIconButton-contained.focus-visible:before,
 .c24.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c24.RcIconButton-contained.focus-visible,
-.c24.RcIconButton-contained[data-focus-visible-added],
-.c24.RcIconButton-contained.focus-visible .c4,
-.c24.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c24.RcIconButton-contained:active,
-.c24.RcIconButton-contained:active .c4 {
+.c24.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -6951,20 +7141,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c25.RcIconButton-contained.focus-visible,
+.c25.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c25.RcIconButton-contained.focus-visible:before,
 .c25.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c25.RcIconButton-contained.focus-visible,
-.c25.RcIconButton-contained[data-focus-visible-added],
-.c25.RcIconButton-contained.focus-visible .c4,
-.c25.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c25.RcIconButton-contained:active,
-.c25.RcIconButton-contained:active .c4 {
+.c25.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -7056,20 +7243,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c26.RcIconButton-contained.focus-visible,
+.c26.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c26.RcIconButton-contained.focus-visible:before,
 .c26.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c26.RcIconButton-contained.focus-visible,
-.c26.RcIconButton-contained[data-focus-visible-added],
-.c26.RcIconButton-contained.focus-visible .c4,
-.c26.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c26.RcIconButton-contained:active,
-.c26.RcIconButton-contained:active .c4 {
+.c26.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -7168,20 +7352,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c27.RcIconButton-contained.focus-visible,
+.c27.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c27.RcIconButton-contained.focus-visible:before,
 .c27.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c27.RcIconButton-contained.focus-visible,
-.c27.RcIconButton-contained[data-focus-visible-added],
-.c27.RcIconButton-contained.focus-visible .c4,
-.c27.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c27.RcIconButton-contained:active,
-.c27.RcIconButton-contained:active .c4 {
+.c27.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -7278,20 +7459,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c28.RcIconButton-contained.focus-visible,
+.c28.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c28.RcIconButton-contained.focus-visible:before,
 .c28.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c28.RcIconButton-contained.focus-visible,
-.c28.RcIconButton-contained[data-focus-visible-added],
-.c28.RcIconButton-contained.focus-visible .c4,
-.c28.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c28.RcIconButton-contained:active,
-.c28.RcIconButton-contained:active .c4 {
+.c28.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -7383,20 +7561,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c29.RcIconButton-contained.focus-visible,
+.c29.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c29.RcIconButton-contained.focus-visible:before,
 .c29.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c29.RcIconButton-contained.focus-visible,
-.c29.RcIconButton-contained[data-focus-visible-added],
-.c29.RcIconButton-contained.focus-visible .c4,
-.c29.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c29.RcIconButton-contained:active,
-.c29.RcIconButton-contained:active .c4 {
+.c29.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -7508,20 +7683,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c30.RcIconButton-contained.focus-visible,
+.c30.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c30.RcIconButton-contained.focus-visible:before,
 .c30.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c30.RcIconButton-contained.focus-visible,
-.c30.RcIconButton-contained[data-focus-visible-added],
-.c30.RcIconButton-contained.focus-visible .c4,
-.c30.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c30.RcIconButton-contained:active,
-.c30.RcIconButton-contained:active .c4 {
+.c30.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -7613,20 +7785,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c31.RcIconButton-contained.focus-visible,
+.c31.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c31.RcIconButton-contained.focus-visible:before,
 .c31.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c31.RcIconButton-contained.focus-visible,
-.c31.RcIconButton-contained[data-focus-visible-added],
-.c31.RcIconButton-contained.focus-visible .c4,
-.c31.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c31.RcIconButton-contained:active,
-.c31.RcIconButton-contained:active .c4 {
+.c31.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -7725,20 +7894,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c32.RcIconButton-contained.focus-visible,
+.c32.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c32.RcIconButton-contained.focus-visible:before,
 .c32.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c32.RcIconButton-contained.focus-visible,
-.c32.RcIconButton-contained[data-focus-visible-added],
-.c32.RcIconButton-contained.focus-visible .c4,
-.c32.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c32.RcIconButton-contained:active,
-.c32.RcIconButton-contained:active .c4 {
+.c32.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -7835,20 +8001,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c33.RcIconButton-contained.focus-visible,
+.c33.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c33.RcIconButton-contained.focus-visible:before,
 .c33.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c33.RcIconButton-contained.focus-visible,
-.c33.RcIconButton-contained[data-focus-visible-added],
-.c33.RcIconButton-contained.focus-visible .c4,
-.c33.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c33.RcIconButton-contained:active,
-.c33.RcIconButton-contained:active .c4 {
+.c33.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -7940,20 +8103,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c34.RcIconButton-contained.focus-visible,
+.c34.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c34.RcIconButton-contained.focus-visible:before,
 .c34.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c34.RcIconButton-contained.focus-visible,
-.c34.RcIconButton-contained[data-focus-visible-added],
-.c34.RcIconButton-contained.focus-visible .c4,
-.c34.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c34.RcIconButton-contained:active,
-.c34.RcIconButton-contained:active .c4 {
+.c34.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -8065,20 +8225,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c35.RcIconButton-contained.focus-visible,
+.c35.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c35.RcIconButton-contained.focus-visible:before,
 .c35.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c35.RcIconButton-contained.focus-visible,
-.c35.RcIconButton-contained[data-focus-visible-added],
-.c35.RcIconButton-contained.focus-visible .c4,
-.c35.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c35.RcIconButton-contained:active,
-.c35.RcIconButton-contained:active .c4 {
+.c35.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -8170,20 +8327,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c36.RcIconButton-contained.focus-visible,
+.c36.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c36.RcIconButton-contained.focus-visible:before,
 .c36.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c36.RcIconButton-contained.focus-visible,
-.c36.RcIconButton-contained[data-focus-visible-added],
-.c36.RcIconButton-contained.focus-visible .c4,
-.c36.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c36.RcIconButton-contained:active,
-.c36.RcIconButton-contained:active .c4 {
+.c36.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -8282,20 +8436,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c37.RcIconButton-contained.focus-visible,
+.c37.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c37.RcIconButton-contained.focus-visible:before,
 .c37.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c37.RcIconButton-contained.focus-visible,
-.c37.RcIconButton-contained[data-focus-visible-added],
-.c37.RcIconButton-contained.focus-visible .c4,
-.c37.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c37.RcIconButton-contained:active,
-.c37.RcIconButton-contained:active .c4 {
+.c37.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -8392,20 +8543,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c38.RcIconButton-contained.focus-visible,
+.c38.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c38.RcIconButton-contained.focus-visible:before,
 .c38.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c38.RcIconButton-contained.focus-visible,
-.c38.RcIconButton-contained[data-focus-visible-added],
-.c38.RcIconButton-contained.focus-visible .c4,
-.c38.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c38.RcIconButton-contained:active,
-.c38.RcIconButton-contained:active .c4 {
+.c38.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -8497,20 +8645,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c39.RcIconButton-contained.focus-visible,
+.c39.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c39.RcIconButton-contained.focus-visible:before,
 .c39.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c39.RcIconButton-contained.focus-visible,
-.c39.RcIconButton-contained[data-focus-visible-added],
-.c39.RcIconButton-contained.focus-visible .c4,
-.c39.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c39.RcIconButton-contained:active,
-.c39.RcIconButton-contained:active .c4 {
+.c39.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -8622,20 +8767,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   position: absolute;
 }
 
+.c40.RcIconButton-contained.focus-visible,
+.c40.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c40.RcIconButton-contained.focus-visible:before,
 .c40.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c40.RcIconButton-contained.focus-visible,
-.c40.RcIconButton-contained[data-focus-visible-added],
-.c40.RcIconButton-contained.focus-visible .c4,
-.c40.RcIconButton-contained[data-focus-visible-added] .c4 {
-  color: #fff;
-}
-
-.c40.RcIconButton-contained:active,
-.c40.RcIconButton-contained:active .c4 {
+.c40.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -8679,13 +8821,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c3.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c3.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c3.RcIconButton-contained:hover,
-  .c3.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c3.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -8701,13 +8842,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c7.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c7.RcIconButton-contained:hover,
-  .c7.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c7.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -8723,13 +8863,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c8.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c8.RcIconButton-contained:hover,
-  .c8.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c8.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -8745,13 +8884,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c9.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c9.RcIconButton-contained:hover,
-  .c9.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c9.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -8767,13 +8905,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c10.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c10.RcIconButton-contained:hover,
-  .c10.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c10.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -8789,13 +8926,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c11.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c11.RcIconButton-contained:hover,
-  .c11.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c11.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -8811,13 +8947,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c12.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c12.RcIconButton-contained:hover,
-  .c12.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -8833,13 +8968,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c13.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c13.RcIconButton-contained:hover,
-  .c13.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c13.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -8855,13 +8989,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c14.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c14.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c14.RcIconButton-contained:hover,
-  .c14.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c14.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -8877,13 +9010,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c15.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c15.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c15.RcIconButton-contained:hover,
-  .c15.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c15.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -8899,13 +9031,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c16.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c16.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c16.RcIconButton-contained:hover,
-  .c16.RcIconButton-contained:hover .c4 {
-    color: rgba(0,0,0,0.87);
+  .c16.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -8921,13 +9052,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c17.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c17.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c17.RcIconButton-contained:hover,
-  .c17.RcIconButton-contained:hover .c4 {
-    color: rgba(0,0,0,0.87);
+  .c17.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -8943,13 +9073,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c18.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c18.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c18.RcIconButton-contained:hover,
-  .c18.RcIconButton-contained:hover .c4 {
-    color: rgba(0,0,0,0.87);
+  .c18.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -8965,13 +9094,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c19.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c19.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c19.RcIconButton-contained:hover,
-  .c19.RcIconButton-contained:hover .c4 {
-    color: rgba(0,0,0,0.87);
+  .c19.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -8987,13 +9115,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c20.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c20.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c20.RcIconButton-contained:hover,
-  .c20.RcIconButton-contained:hover .c4 {
-    color: rgba(0,0,0,0.87);
+  .c20.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -9009,13 +9136,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c21.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c21.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c21.RcIconButton-contained:hover,
-  .c21.RcIconButton-contained:hover .c4 {
-    color: rgba(0,0,0,0.87);
+  .c21.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -9031,13 +9157,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c22.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c22.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c22.RcIconButton-contained:hover,
-  .c22.RcIconButton-contained:hover .c4 {
-    color: rgba(0,0,0,0.87);
+  .c22.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -9053,13 +9178,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c23.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c23.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c23.RcIconButton-contained:hover,
-  .c23.RcIconButton-contained:hover .c4 {
-    color: rgba(0,0,0,0.87);
+  .c23.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -9075,13 +9199,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c24.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c24.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c24.RcIconButton-contained:hover,
-  .c24.RcIconButton-contained:hover .c4 {
-    color: rgba(0,0,0,0.87);
+  .c24.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -9097,13 +9220,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c25.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c25.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c25.RcIconButton-contained:hover,
-  .c25.RcIconButton-contained:hover .c4 {
-    color: rgba(0,0,0,0.87);
+  .c25.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -9119,13 +9241,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c26.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c26.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c26.RcIconButton-contained:hover,
-  .c26.RcIconButton-contained:hover .c4 {
-    color: rgba(0,0,0,0.87);
+  .c26.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -9141,13 +9262,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c27.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c27.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c27.RcIconButton-contained:hover,
-  .c27.RcIconButton-contained:hover .c4 {
-    color: rgba(0,0,0,0.87);
+  .c27.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -9163,13 +9283,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c28.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c28.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c28.RcIconButton-contained:hover,
-  .c28.RcIconButton-contained:hover .c4 {
-    color: rgba(0,0,0,0.87);
+  .c28.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -9185,13 +9304,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c29.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c29.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c29.RcIconButton-contained:hover,
-  .c29.RcIconButton-contained:hover .c4 {
-    color: rgba(0,0,0,0.87);
+  .c29.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -9207,13 +9325,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c30.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c30.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c30.RcIconButton-contained:hover,
-  .c30.RcIconButton-contained:hover .c4 {
-    color: rgba(0,0,0,0.87);
+  .c30.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -9229,13 +9346,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c31.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c31.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c31.RcIconButton-contained:hover,
-  .c31.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c31.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -9251,13 +9367,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c32.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c32.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c32.RcIconButton-contained:hover,
-  .c32.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c32.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -9273,13 +9388,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c33.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c33.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c33.RcIconButton-contained:hover,
-  .c33.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c33.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -9295,13 +9409,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c34.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c34.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c34.RcIconButton-contained:hover,
-  .c34.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c34.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -9317,13 +9430,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c35.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c35.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c35.RcIconButton-contained:hover,
-  .c35.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c35.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -9339,13 +9451,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c36.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c36.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c36.RcIconButton-contained:hover,
-  .c36.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c36.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -9361,13 +9472,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c37.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c37.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c37.RcIconButton-contained:hover,
-  .c37.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c37.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -9383,13 +9493,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c38.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c38.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c38.RcIconButton-contained:hover,
-  .c38.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c38.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -9405,13 +9514,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c39.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c39.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c39.RcIconButton-contained:hover,
-  .c39.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c39.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -9427,13 +9535,12 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c40.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c40.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c40.RcIconButton-contained:hover,
-  .c40.RcIconButton-contained:hover .c4 {
-    color: #fff;
+  .c40.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -10964,20 +11071,17 @@ Array [
   position: absolute;
 }
 
+.c0.RcIconButton-contained.focus-visible,
+.c0.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c0.RcIconButton-contained.focus-visible:before,
 .c0.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c0.RcIconButton-contained.focus-visible,
-.c0.RcIconButton-contained[data-focus-visible-added],
-.c0.RcIconButton-contained.focus-visible .c1,
-.c0.RcIconButton-contained[data-focus-visible-added] .c1 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c0.RcIconButton-contained:active,
-.c0.RcIconButton-contained:active .c1 {
+.c0.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -11010,18 +11114,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added],
-.c4.RcIconButton-contained.focus-visible .c1,
-.c4.RcIconButton-contained[data-focus-visible-added] .c1 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c4.RcIconButton-contained:active,
-.c4.RcIconButton-contained:active .c1 {
-  color: rgba(0,0,0,0.87);
-}
-
 @media (hover:hover) and (pointer:fine) {
   .c0:hover {
     background-color: rgba(255,136,0,0.08);
@@ -11034,13 +11126,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c0.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c0.RcIconButton-contained:hover,
-  .c0.RcIconButton-contained:hover .c1 {
-    color: rgba(0,0,0,0.87);
+  .c0.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -11052,10 +11143,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-contained:hover,
-  .c4.RcIconButton-contained:hover .c1 {
-    color: rgba(0,0,0,0.87);
-  }
+
 }
 
 <button
@@ -11128,18 +11216,6 @@ Array [
 .c4.RcIconButton-disabled,
 .c4.RcIconButton-disabled .c1 {
   color: rgba(255,136,0,0.32);
-}
-
-.c4.RcIconButton-contained.focus-visible,
-.c4.RcIconButton-contained[data-focus-visible-added],
-.c4.RcIconButton-contained.focus-visible .c1,
-.c4.RcIconButton-contained[data-focus-visible-added] .c1 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c4.RcIconButton-contained:active,
-.c4.RcIconButton-contained:active .c1 {
-  color: rgba(0,0,0,0.87);
 }
 
 .c0 {
@@ -11223,20 +11299,17 @@ Array [
   position: absolute;
 }
 
+.c0.RcIconButton-contained.focus-visible,
+.c0.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
 .c0.RcIconButton-contained.focus-visible:before,
 .c0.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(0,0,0,0.16);
 }
 
-.c0.RcIconButton-contained.focus-visible,
-.c0.RcIconButton-contained[data-focus-visible-added],
-.c0.RcIconButton-contained.focus-visible .c1,
-.c0.RcIconButton-contained[data-focus-visible-added] .c1 {
-  color: rgba(0,0,0,0.87);
-}
-
-.c0.RcIconButton-contained:active,
-.c0.RcIconButton-contained:active .c1 {
+.c0.RcIconButton-contained:active {
   color: rgba(0,0,0,0.87);
 }
 
@@ -11255,10 +11328,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c4.RcIconButton-contained:hover,
-  .c4.RcIconButton-contained:hover .c1 {
-    color: rgba(0,0,0,0.87);
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -11273,13 +11343,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c0.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
+  .c0.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
   }
 
-  .c0.RcIconButton-contained:hover,
-  .c0.RcIconButton-contained:hover .c1 {
-    color: rgba(0,0,0,0.87);
+  .c0.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
   }
 }
 
@@ -11426,20 +11495,17 @@ Array [
   position: absolute;
 }
 
+.c1.RcIconButton-contained.focus-visible,
+.c1.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c1.RcIconButton-contained.focus-visible:before,
 .c1.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c1.RcIconButton-contained.focus-visible,
-.c1.RcIconButton-contained[data-focus-visible-added],
-.c1.RcIconButton-contained.focus-visible .c2,
-.c1.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c1.RcIconButton-contained:active,
-.c1.RcIconButton-contained:active .c2 {
+.c1.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -11538,20 +11604,17 @@ Array [
   position: absolute;
 }
 
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c5.RcIconButton-contained.focus-visible:before,
 .c5.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added],
-.c5.RcIconButton-contained.focus-visible .c2,
-.c5.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c5.RcIconButton-contained:active,
-.c5.RcIconButton-contained:active .c2 {
+.c5.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -11650,20 +11713,17 @@ Array [
   position: absolute;
 }
 
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c6.RcIconButton-contained.focus-visible:before,
 .c6.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added],
-.c6.RcIconButton-contained.focus-visible .c2,
-.c6.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c6.RcIconButton-contained:active,
-.c6.RcIconButton-contained:active .c2 {
+.c6.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -11762,20 +11822,17 @@ Array [
   position: absolute;
 }
 
+.c7.RcIconButton-contained.focus-visible,
+.c7.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c7.RcIconButton-contained.focus-visible:before,
 .c7.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c7.RcIconButton-contained.focus-visible,
-.c7.RcIconButton-contained[data-focus-visible-added],
-.c7.RcIconButton-contained.focus-visible .c2,
-.c7.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c7.RcIconButton-contained:active,
-.c7.RcIconButton-contained:active .c2 {
+.c7.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -11874,20 +11931,17 @@ Array [
   position: absolute;
 }
 
+.c8.RcIconButton-contained.focus-visible,
+.c8.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c8.RcIconButton-contained.focus-visible:before,
 .c8.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added],
-.c8.RcIconButton-contained.focus-visible .c2,
-.c8.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c8.RcIconButton-contained:active,
-.c8.RcIconButton-contained:active .c2 {
+.c8.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -11986,20 +12040,17 @@ Array [
   position: absolute;
 }
 
+.c9.RcIconButton-contained.focus-visible,
+.c9.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c9.RcIconButton-contained.focus-visible:before,
 .c9.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added],
-.c9.RcIconButton-contained.focus-visible .c2,
-.c9.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c9.RcIconButton-contained:active,
-.c9.RcIconButton-contained:active .c2 {
+.c9.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -12098,20 +12149,17 @@ Array [
   position: absolute;
 }
 
+.c10.RcIconButton-contained.focus-visible,
+.c10.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c10.RcIconButton-contained.focus-visible:before,
 .c10.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c10.RcIconButton-contained.focus-visible,
-.c10.RcIconButton-contained[data-focus-visible-added],
-.c10.RcIconButton-contained.focus-visible .c2,
-.c10.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c10.RcIconButton-contained:active,
-.c10.RcIconButton-contained:active .c2 {
+.c10.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -12210,20 +12258,17 @@ Array [
   position: absolute;
 }
 
+.c11.RcIconButton-contained.focus-visible,
+.c11.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c11.RcIconButton-contained.focus-visible:before,
 .c11.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added],
-.c11.RcIconButton-contained.focus-visible .c2,
-.c11.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c11.RcIconButton-contained:active,
-.c11.RcIconButton-contained:active .c2 {
+.c11.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -12322,20 +12367,17 @@ Array [
   position: absolute;
 }
 
+.c12.RcIconButton-contained.focus-visible,
+.c12.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c12.RcIconButton-contained.focus-visible:before,
 .c12.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added],
-.c12.RcIconButton-contained.focus-visible .c2,
-.c12.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c12.RcIconButton-contained:active,
-.c12.RcIconButton-contained:active .c2 {
+.c12.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -12434,20 +12476,17 @@ Array [
   position: absolute;
 }
 
+.c13.RcIconButton-contained.focus-visible,
+.c13.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c13.RcIconButton-contained.focus-visible:before,
 .c13.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c13.RcIconButton-contained.focus-visible,
-.c13.RcIconButton-contained[data-focus-visible-added],
-.c13.RcIconButton-contained.focus-visible .c2,
-.c13.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c13.RcIconButton-contained:active,
-.c13.RcIconButton-contained:active .c2 {
+.c13.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -12546,20 +12585,17 @@ Array [
   position: absolute;
 }
 
+.c14.RcIconButton-contained.focus-visible,
+.c14.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c14.RcIconButton-contained.focus-visible:before,
 .c14.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c14.RcIconButton-contained.focus-visible,
-.c14.RcIconButton-contained[data-focus-visible-added],
-.c14.RcIconButton-contained.focus-visible .c2,
-.c14.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c14.RcIconButton-contained:active,
-.c14.RcIconButton-contained:active .c2 {
+.c14.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -12658,20 +12694,17 @@ Array [
   position: absolute;
 }
 
+.c15.RcIconButton-contained.focus-visible,
+.c15.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c15.RcIconButton-contained.focus-visible:before,
 .c15.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c15.RcIconButton-contained.focus-visible,
-.c15.RcIconButton-contained[data-focus-visible-added],
-.c15.RcIconButton-contained.focus-visible .c2,
-.c15.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c15.RcIconButton-contained:active,
-.c15.RcIconButton-contained:active .c2 {
+.c15.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -12770,20 +12803,17 @@ Array [
   position: absolute;
 }
 
+.c16.RcIconButton-contained.focus-visible,
+.c16.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c16.RcIconButton-contained.focus-visible:before,
 .c16.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c16.RcIconButton-contained.focus-visible,
-.c16.RcIconButton-contained[data-focus-visible-added],
-.c16.RcIconButton-contained.focus-visible .c2,
-.c16.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c16.RcIconButton-contained:active,
-.c16.RcIconButton-contained:active .c2 {
+.c16.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -12882,20 +12912,17 @@ Array [
   position: absolute;
 }
 
+.c17.RcIconButton-contained.focus-visible,
+.c17.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c17.RcIconButton-contained.focus-visible:before,
 .c17.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c17.RcIconButton-contained.focus-visible,
-.c17.RcIconButton-contained[data-focus-visible-added],
-.c17.RcIconButton-contained.focus-visible .c2,
-.c17.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c17.RcIconButton-contained:active,
-.c17.RcIconButton-contained:active .c2 {
+.c17.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -12994,20 +13021,17 @@ Array [
   position: absolute;
 }
 
+.c18.RcIconButton-contained.focus-visible,
+.c18.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c18.RcIconButton-contained.focus-visible:before,
 .c18.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c18.RcIconButton-contained.focus-visible,
-.c18.RcIconButton-contained[data-focus-visible-added],
-.c18.RcIconButton-contained.focus-visible .c2,
-.c18.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c18.RcIconButton-contained:active,
-.c18.RcIconButton-contained:active .c2 {
+.c18.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -13106,20 +13130,17 @@ Array [
   position: absolute;
 }
 
+.c19.RcIconButton-contained.focus-visible,
+.c19.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c19.RcIconButton-contained.focus-visible:before,
 .c19.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c19.RcIconButton-contained.focus-visible,
-.c19.RcIconButton-contained[data-focus-visible-added],
-.c19.RcIconButton-contained.focus-visible .c2,
-.c19.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c19.RcIconButton-contained:active,
-.c19.RcIconButton-contained:active .c2 {
+.c19.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -13218,20 +13239,17 @@ Array [
   position: absolute;
 }
 
+.c20.RcIconButton-contained.focus-visible,
+.c20.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c20.RcIconButton-contained.focus-visible:before,
 .c20.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c20.RcIconButton-contained.focus-visible,
-.c20.RcIconButton-contained[data-focus-visible-added],
-.c20.RcIconButton-contained.focus-visible .c2,
-.c20.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c20.RcIconButton-contained:active,
-.c20.RcIconButton-contained:active .c2 {
+.c20.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -13330,20 +13348,17 @@ Array [
   position: absolute;
 }
 
+.c21.RcIconButton-contained.focus-visible,
+.c21.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c21.RcIconButton-contained.focus-visible:before,
 .c21.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c21.RcIconButton-contained.focus-visible,
-.c21.RcIconButton-contained[data-focus-visible-added],
-.c21.RcIconButton-contained.focus-visible .c2,
-.c21.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c21.RcIconButton-contained:active,
-.c21.RcIconButton-contained:active .c2 {
+.c21.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -13442,20 +13457,17 @@ Array [
   position: absolute;
 }
 
+.c22.RcIconButton-contained.focus-visible,
+.c22.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c22.RcIconButton-contained.focus-visible:before,
 .c22.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c22.RcIconButton-contained.focus-visible,
-.c22.RcIconButton-contained[data-focus-visible-added],
-.c22.RcIconButton-contained.focus-visible .c2,
-.c22.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c22.RcIconButton-contained:active,
-.c22.RcIconButton-contained:active .c2 {
+.c22.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -13554,20 +13566,17 @@ Array [
   position: absolute;
 }
 
+.c23.RcIconButton-contained.focus-visible,
+.c23.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c23.RcIconButton-contained.focus-visible:before,
 .c23.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c23.RcIconButton-contained.focus-visible,
-.c23.RcIconButton-contained[data-focus-visible-added],
-.c23.RcIconButton-contained.focus-visible .c2,
-.c23.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c23.RcIconButton-contained:active,
-.c23.RcIconButton-contained:active .c2 {
+.c23.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -13666,20 +13675,17 @@ Array [
   position: absolute;
 }
 
+.c24.RcIconButton-contained.focus-visible,
+.c24.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c24.RcIconButton-contained.focus-visible:before,
 .c24.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c24.RcIconButton-contained.focus-visible,
-.c24.RcIconButton-contained[data-focus-visible-added],
-.c24.RcIconButton-contained.focus-visible .c2,
-.c24.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c24.RcIconButton-contained:active,
-.c24.RcIconButton-contained:active .c2 {
+.c24.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -13778,20 +13784,17 @@ Array [
   position: absolute;
 }
 
+.c25.RcIconButton-contained.focus-visible,
+.c25.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c25.RcIconButton-contained.focus-visible:before,
 .c25.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c25.RcIconButton-contained.focus-visible,
-.c25.RcIconButton-contained[data-focus-visible-added],
-.c25.RcIconButton-contained.focus-visible .c2,
-.c25.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c25.RcIconButton-contained:active,
-.c25.RcIconButton-contained:active .c2 {
+.c25.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -13890,20 +13893,17 @@ Array [
   position: absolute;
 }
 
+.c26.RcIconButton-contained.focus-visible,
+.c26.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c26.RcIconButton-contained.focus-visible:before,
 .c26.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c26.RcIconButton-contained.focus-visible,
-.c26.RcIconButton-contained[data-focus-visible-added],
-.c26.RcIconButton-contained.focus-visible .c2,
-.c26.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c26.RcIconButton-contained:active,
-.c26.RcIconButton-contained:active .c2 {
+.c26.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -14002,20 +14002,17 @@ Array [
   position: absolute;
 }
 
+.c27.RcIconButton-contained.focus-visible,
+.c27.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c27.RcIconButton-contained.focus-visible:before,
 .c27.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c27.RcIconButton-contained.focus-visible,
-.c27.RcIconButton-contained[data-focus-visible-added],
-.c27.RcIconButton-contained.focus-visible .c2,
-.c27.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c27.RcIconButton-contained:active,
-.c27.RcIconButton-contained:active .c2 {
+.c27.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -14114,20 +14111,17 @@ Array [
   position: absolute;
 }
 
+.c28.RcIconButton-contained.focus-visible,
+.c28.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c28.RcIconButton-contained.focus-visible:before,
 .c28.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c28.RcIconButton-contained.focus-visible,
-.c28.RcIconButton-contained[data-focus-visible-added],
-.c28.RcIconButton-contained.focus-visible .c2,
-.c28.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c28.RcIconButton-contained:active,
-.c28.RcIconButton-contained:active .c2 {
+.c28.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -14160,18 +14154,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c29.RcIconButton-contained.focus-visible,
-.c29.RcIconButton-contained[data-focus-visible-added],
-.c29.RcIconButton-contained.focus-visible .c2,
-.c29.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c29.RcIconButton-contained:active,
-.c29.RcIconButton-contained:active .c2 {
-  color: #fff;
-}
-
 .c0 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -14192,13 +14174,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c1.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c1.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c1.RcIconButton-contained:hover,
-  .c1.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c1.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14214,13 +14195,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c5.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c5.RcIconButton-contained:hover,
-  .c5.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c5.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14236,13 +14216,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c6.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c6.RcIconButton-contained:hover,
-  .c6.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14258,13 +14237,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c7.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c7.RcIconButton-contained:hover,
-  .c7.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c7.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14280,13 +14258,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c8.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c8.RcIconButton-contained:hover,
-  .c8.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c8.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14302,13 +14279,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c9.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c9.RcIconButton-contained:hover,
-  .c9.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c9.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14324,13 +14300,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c10.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c10.RcIconButton-contained:hover,
-  .c10.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c10.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14346,13 +14321,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c11.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c11.RcIconButton-contained:hover,
-  .c11.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c11.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14368,13 +14342,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c12.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c12.RcIconButton-contained:hover,
-  .c12.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c12.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14390,13 +14363,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c13.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c13.RcIconButton-contained:hover,
-  .c13.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c13.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14412,13 +14384,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c14.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c14.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c14.RcIconButton-contained:hover,
-  .c14.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c14.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14434,13 +14405,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c15.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c15.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c15.RcIconButton-contained:hover,
-  .c15.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c15.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14456,13 +14426,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c16.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c16.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c16.RcIconButton-contained:hover,
-  .c16.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c16.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14478,13 +14447,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c17.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c17.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c17.RcIconButton-contained:hover,
-  .c17.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c17.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14500,13 +14468,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c18.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c18.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c18.RcIconButton-contained:hover,
-  .c18.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c18.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14522,13 +14489,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c19.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c19.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c19.RcIconButton-contained:hover,
-  .c19.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c19.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14544,13 +14510,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c20.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c20.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c20.RcIconButton-contained:hover,
-  .c20.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c20.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14566,13 +14531,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c21.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c21.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c21.RcIconButton-contained:hover,
-  .c21.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c21.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14588,13 +14552,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c22.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c22.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c22.RcIconButton-contained:hover,
-  .c22.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c22.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14610,13 +14573,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c23.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c23.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c23.RcIconButton-contained:hover,
-  .c23.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c23.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14632,13 +14594,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c24.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c24.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c24.RcIconButton-contained:hover,
-  .c24.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c24.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14654,13 +14615,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c25.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c25.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c25.RcIconButton-contained:hover,
-  .c25.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c25.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14676,13 +14636,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c26.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c26.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c26.RcIconButton-contained:hover,
-  .c26.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c26.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14698,13 +14657,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c27.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c27.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c27.RcIconButton-contained:hover,
-  .c27.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c27.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14720,13 +14678,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c28.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c28.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c28.RcIconButton-contained:hover,
-  .c28.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c28.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
@@ -14738,10 +14695,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c29.RcIconButton-contained:hover,
-  .c29.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 <div
@@ -16356,18 +16310,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c5.RcIconButton-contained.focus-visible,
-.c5.RcIconButton-contained[data-focus-visible-added],
-.c5.RcIconButton-contained.focus-visible .c2,
-.c5.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c5.RcIconButton-contained:active,
-.c5.RcIconButton-contained:active .c2 {
-  color: #fff;
-}
-
 .c6,
 .c6 .c2 {
   font-size: 20px;
@@ -16388,18 +16330,6 @@ Array [
 .c6.RcIconButton-disabled,
 .c6.RcIconButton-disabled .c2 {
   color: #B9B9B9;
-}
-
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added],
-.c6.RcIconButton-contained.focus-visible .c2,
-.c6.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c6.RcIconButton-contained:active,
-.c6.RcIconButton-contained:active .c2 {
-  color: #fff;
 }
 
 .c7,
@@ -16424,18 +16354,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c7.RcIconButton-contained.focus-visible,
-.c7.RcIconButton-contained[data-focus-visible-added],
-.c7.RcIconButton-contained.focus-visible .c2,
-.c7.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c7.RcIconButton-contained:active,
-.c7.RcIconButton-contained:active .c2 {
-  color: #fff;
-}
-
 .c8,
 .c8 .c2 {
   font-size: 20px;
@@ -16456,18 +16374,6 @@ Array [
 .c8.RcIconButton-disabled,
 .c8.RcIconButton-disabled .c2 {
   color: #B9B9B9;
-}
-
-.c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added],
-.c8.RcIconButton-contained.focus-visible .c2,
-.c8.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c8.RcIconButton-contained:active,
-.c8.RcIconButton-contained:active .c2 {
-  color: #fff;
 }
 
 .c9,
@@ -16492,18 +16398,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added],
-.c9.RcIconButton-contained.focus-visible .c2,
-.c9.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c9.RcIconButton-contained:active,
-.c9.RcIconButton-contained:active .c2 {
-  color: #fff;
-}
-
 .c10,
 .c10 .c2 {
   font-size: 20px;
@@ -16524,18 +16418,6 @@ Array [
 .c10.RcIconButton-disabled,
 .c10.RcIconButton-disabled .c2 {
   color: #B9B9B9;
-}
-
-.c10.RcIconButton-contained.focus-visible,
-.c10.RcIconButton-contained[data-focus-visible-added],
-.c10.RcIconButton-contained.focus-visible .c2,
-.c10.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c10.RcIconButton-contained:active,
-.c10.RcIconButton-contained:active .c2 {
-  color: #fff;
 }
 
 .c11,
@@ -16560,18 +16442,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added],
-.c11.RcIconButton-contained.focus-visible .c2,
-.c11.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c11.RcIconButton-contained:active,
-.c11.RcIconButton-contained:active .c2 {
-  color: #fff;
-}
-
 .c12,
 .c12 .c2 {
   font-size: 20px;
@@ -16592,18 +16462,6 @@ Array [
 .c12.RcIconButton-disabled,
 .c12.RcIconButton-disabled .c2 {
   color: #B9B9B9;
-}
-
-.c12.RcIconButton-contained.focus-visible,
-.c12.RcIconButton-contained[data-focus-visible-added],
-.c12.RcIconButton-contained.focus-visible .c2,
-.c12.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c12.RcIconButton-contained:active,
-.c12.RcIconButton-contained:active .c2 {
-  color: #fff;
 }
 
 .c13,
@@ -16628,18 +16486,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c13.RcIconButton-contained.focus-visible,
-.c13.RcIconButton-contained[data-focus-visible-added],
-.c13.RcIconButton-contained.focus-visible .c2,
-.c13.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c13.RcIconButton-contained:active,
-.c13.RcIconButton-contained:active .c2 {
-  color: #fff;
-}
-
 .c14,
 .c14 .c2 {
   font-size: 20px;
@@ -16660,18 +16506,6 @@ Array [
 .c14.RcIconButton-disabled,
 .c14.RcIconButton-disabled .c2 {
   color: #B9B9B9;
-}
-
-.c14.RcIconButton-contained.focus-visible,
-.c14.RcIconButton-contained[data-focus-visible-added],
-.c14.RcIconButton-contained.focus-visible .c2,
-.c14.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c14.RcIconButton-contained:active,
-.c14.RcIconButton-contained:active .c2 {
-  color: #fff;
 }
 
 .c15,
@@ -16696,18 +16530,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c15.RcIconButton-contained.focus-visible,
-.c15.RcIconButton-contained[data-focus-visible-added],
-.c15.RcIconButton-contained.focus-visible .c2,
-.c15.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c15.RcIconButton-contained:active,
-.c15.RcIconButton-contained:active .c2 {
-  color: #fff;
-}
-
 .c16,
 .c16 .c2 {
   font-size: 20px;
@@ -16728,18 +16550,6 @@ Array [
 .c16.RcIconButton-disabled,
 .c16.RcIconButton-disabled .c2 {
   color: #B9B9B9;
-}
-
-.c16.RcIconButton-contained.focus-visible,
-.c16.RcIconButton-contained[data-focus-visible-added],
-.c16.RcIconButton-contained.focus-visible .c2,
-.c16.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c16.RcIconButton-contained:active,
-.c16.RcIconButton-contained:active .c2 {
-  color: #fff;
 }
 
 .c17,
@@ -16764,18 +16574,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c17.RcIconButton-contained.focus-visible,
-.c17.RcIconButton-contained[data-focus-visible-added],
-.c17.RcIconButton-contained.focus-visible .c2,
-.c17.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c17.RcIconButton-contained:active,
-.c17.RcIconButton-contained:active .c2 {
-  color: #fff;
-}
-
 .c18,
 .c18 .c2 {
   font-size: 20px;
@@ -16796,18 +16594,6 @@ Array [
 .c18.RcIconButton-disabled,
 .c18.RcIconButton-disabled .c2 {
   color: #B9B9B9;
-}
-
-.c18.RcIconButton-contained.focus-visible,
-.c18.RcIconButton-contained[data-focus-visible-added],
-.c18.RcIconButton-contained.focus-visible .c2,
-.c18.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c18.RcIconButton-contained:active,
-.c18.RcIconButton-contained:active .c2 {
-  color: #fff;
 }
 
 .c19,
@@ -16832,18 +16618,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c19.RcIconButton-contained.focus-visible,
-.c19.RcIconButton-contained[data-focus-visible-added],
-.c19.RcIconButton-contained.focus-visible .c2,
-.c19.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c19.RcIconButton-contained:active,
-.c19.RcIconButton-contained:active .c2 {
-  color: #fff;
-}
-
 .c20,
 .c20 .c2 {
   font-size: 20px;
@@ -16864,18 +16638,6 @@ Array [
 .c20.RcIconButton-disabled,
 .c20.RcIconButton-disabled .c2 {
   color: #B9B9B9;
-}
-
-.c20.RcIconButton-contained.focus-visible,
-.c20.RcIconButton-contained[data-focus-visible-added],
-.c20.RcIconButton-contained.focus-visible .c2,
-.c20.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c20.RcIconButton-contained:active,
-.c20.RcIconButton-contained:active .c2 {
-  color: #fff;
 }
 
 .c21,
@@ -16900,18 +16662,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c21.RcIconButton-contained.focus-visible,
-.c21.RcIconButton-contained[data-focus-visible-added],
-.c21.RcIconButton-contained.focus-visible .c2,
-.c21.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c21.RcIconButton-contained:active,
-.c21.RcIconButton-contained:active .c2 {
-  color: #fff;
-}
-
 .c22,
 .c22 .c2 {
   font-size: 20px;
@@ -16932,18 +16682,6 @@ Array [
 .c22.RcIconButton-disabled,
 .c22.RcIconButton-disabled .c2 {
   color: #B9B9B9;
-}
-
-.c22.RcIconButton-contained.focus-visible,
-.c22.RcIconButton-contained[data-focus-visible-added],
-.c22.RcIconButton-contained.focus-visible .c2,
-.c22.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c22.RcIconButton-contained:active,
-.c22.RcIconButton-contained:active .c2 {
-  color: #fff;
 }
 
 .c23,
@@ -16968,18 +16706,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c23.RcIconButton-contained.focus-visible,
-.c23.RcIconButton-contained[data-focus-visible-added],
-.c23.RcIconButton-contained.focus-visible .c2,
-.c23.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c23.RcIconButton-contained:active,
-.c23.RcIconButton-contained:active .c2 {
-  color: #fff;
-}
-
 .c24,
 .c24 .c2 {
   font-size: 20px;
@@ -17000,18 +16726,6 @@ Array [
 .c24.RcIconButton-disabled,
 .c24.RcIconButton-disabled .c2 {
   color: #B9B9B9;
-}
-
-.c24.RcIconButton-contained.focus-visible,
-.c24.RcIconButton-contained[data-focus-visible-added],
-.c24.RcIconButton-contained.focus-visible .c2,
-.c24.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c24.RcIconButton-contained:active,
-.c24.RcIconButton-contained:active .c2 {
-  color: #fff;
 }
 
 .c25,
@@ -17036,18 +16750,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c25.RcIconButton-contained.focus-visible,
-.c25.RcIconButton-contained[data-focus-visible-added],
-.c25.RcIconButton-contained.focus-visible .c2,
-.c25.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c25.RcIconButton-contained:active,
-.c25.RcIconButton-contained:active .c2 {
-  color: #fff;
-}
-
 .c26,
 .c26 .c2 {
   font-size: 20px;
@@ -17068,18 +16770,6 @@ Array [
 .c26.RcIconButton-disabled,
 .c26.RcIconButton-disabled .c2 {
   color: #B9B9B9;
-}
-
-.c26.RcIconButton-contained.focus-visible,
-.c26.RcIconButton-contained[data-focus-visible-added],
-.c26.RcIconButton-contained.focus-visible .c2,
-.c26.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c26.RcIconButton-contained:active,
-.c26.RcIconButton-contained:active .c2 {
-  color: #fff;
 }
 
 .c27,
@@ -17104,18 +16794,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c27.RcIconButton-contained.focus-visible,
-.c27.RcIconButton-contained[data-focus-visible-added],
-.c27.RcIconButton-contained.focus-visible .c2,
-.c27.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c27.RcIconButton-contained:active,
-.c27.RcIconButton-contained:active .c2 {
-  color: #fff;
-}
-
 .c28,
 .c28 .c2 {
   font-size: 20px;
@@ -17138,18 +16816,6 @@ Array [
   color: #B9B9B9;
 }
 
-.c28.RcIconButton-contained.focus-visible,
-.c28.RcIconButton-contained[data-focus-visible-added],
-.c28.RcIconButton-contained.focus-visible .c2,
-.c28.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c28.RcIconButton-contained:active,
-.c28.RcIconButton-contained:active .c2 {
-  color: #fff;
-}
-
 .c29,
 .c29 .c2 {
   font-size: 20px;
@@ -17170,18 +16836,6 @@ Array [
 .c29.RcIconButton-disabled,
 .c29.RcIconButton-disabled .c2 {
   color: #B9B9B9;
-}
-
-.c29.RcIconButton-contained.focus-visible,
-.c29.RcIconButton-contained[data-focus-visible-added],
-.c29.RcIconButton-contained.focus-visible .c2,
-.c29.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c29.RcIconButton-contained:active,
-.c29.RcIconButton-contained:active .c2 {
-  color: #fff;
 }
 
 .c1 {
@@ -17272,20 +16926,17 @@ Array [
   position: absolute;
 }
 
+.c1.RcIconButton-contained.focus-visible,
+.c1.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
 .c1.RcIconButton-contained.focus-visible:before,
 .c1.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c1.RcIconButton-contained.focus-visible,
-.c1.RcIconButton-contained[data-focus-visible-added],
-.c1.RcIconButton-contained.focus-visible .c2,
-.c1.RcIconButton-contained[data-focus-visible-added] .c2 {
-  color: #fff;
-}
-
-.c1.RcIconButton-contained:active,
-.c1.RcIconButton-contained:active .c2 {
+.c1.RcIconButton-contained:active {
   color: #fff;
 }
 
@@ -17312,10 +16963,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c5.RcIconButton-contained:hover,
-  .c5.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17326,10 +16974,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover,
-  .c6.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17340,10 +16985,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7.RcIconButton-contained:hover,
-  .c7.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17354,10 +16996,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-contained:hover,
-  .c8.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17368,10 +17007,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-contained:hover,
-  .c9.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17382,10 +17018,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10.RcIconButton-contained:hover,
-  .c10.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17396,10 +17029,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover,
-  .c11.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17410,10 +17040,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12.RcIconButton-contained:hover,
-  .c12.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17424,10 +17051,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13.RcIconButton-contained:hover,
-  .c13.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17438,10 +17062,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c14.RcIconButton-contained:hover,
-  .c14.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17452,10 +17073,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c15.RcIconButton-contained:hover,
-  .c15.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17466,10 +17084,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c16.RcIconButton-contained:hover,
-  .c16.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17480,10 +17095,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c17.RcIconButton-contained:hover,
-  .c17.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17494,10 +17106,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c18.RcIconButton-contained:hover,
-  .c18.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17508,10 +17117,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c19.RcIconButton-contained:hover,
-  .c19.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17522,10 +17128,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c20.RcIconButton-contained:hover,
-  .c20.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17536,10 +17139,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c21.RcIconButton-contained:hover,
-  .c21.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17550,10 +17150,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c22.RcIconButton-contained:hover,
-  .c22.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17564,10 +17161,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c23.RcIconButton-contained:hover,
-  .c23.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17578,10 +17172,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c24.RcIconButton-contained:hover,
-  .c24.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17592,10 +17183,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c25.RcIconButton-contained:hover,
-  .c25.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17606,10 +17194,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c26.RcIconButton-contained:hover,
-  .c26.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17620,10 +17205,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c27.RcIconButton-contained:hover,
-  .c27.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17634,10 +17216,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c28.RcIconButton-contained:hover,
-  .c28.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17648,10 +17227,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c29.RcIconButton-contained:hover,
-  .c29.RcIconButton-contained:hover .c2 {
-    color: #fff;
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -17666,13 +17242,12 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c1.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
+  .c1.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c1.RcIconButton-contained:hover,
-  .c1.RcIconButton-contained:hover .c2 {
-    color: #fff;
+  .c1.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
   }
 }
 
