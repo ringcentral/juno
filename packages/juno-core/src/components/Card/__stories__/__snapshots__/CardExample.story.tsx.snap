@@ -387,7 +387,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Card Responsive Ex
 `;
 
 exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 1`] = `
-.c9 {
+.c8 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -396,7 +396,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
   pointer-events: none;
 }
 
-.c8 {
+.c7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -427,19 +427,14 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
   box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
   -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  font-size: 16px;
 }
 
 .c6:active {
   box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
 }
 
-.c6,
-.c6 .c7 {
-  font-size: 16px;
-}
-
-.c6:active,
-.c6:active .c7 {
+.c6:active {
   color: #FFFFFF;
 }
 
@@ -449,9 +444,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
 }
 
 .c6.focus-visible:active,
-.c6[data-focus-visible-added]:active,
-.c6.focus-visible:active .c7,
-.c6[data-focus-visible-added]:active .c7 {
+.c6[data-focus-visible-added]:active {
   color: rgba(255,255,255,0.88);
 }
 
@@ -459,565 +452,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
   background-color: rgba(255,255,255,0.12);
 }
 
-.c6.RcIconButton-disabled,
-.c6.RcIconButton-disabled .c7 {
-  color: #B9B9B9;
-}
-
-.c6.RcIconButton-invisible {
-  opacity: 0;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
-.c6.RcIconButton-outline {
-  border: 1px solid #C7C7C7;
-}
-
-.c6.RcIconButton-contained {
-  color: rgba(0,0,0,0.87);
-  background-color: #FFFFFF;
-}
-
-.c6.RcIconButton-contained:before {
-  content: '';
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added] {
-  color: rgba(0,0,0,0.87);
-}
-
-.c6.RcIconButton-contained.focus-visible:before,
-.c6.RcIconButton-contained[data-focus-visible-added]:before {
-  background-color: rgba(0,0,0,0.16);
-}
-
-.c6.RcIconButton-contained:active {
-  color: rgba(0,0,0,0.87);
-}
-
-.c6 .RcIconButtonTouchRipple-ripplePulsate {
-  border-radius: 0;
-  -webkit-animation-name: none;
-  animation-name: none;
-  opacity: 0;
-}
-
-.c18 {
-  text-transform: none;
-  font-size: 0.9375rem;
-  font-weight: 700;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  text-align: center;
-  box-shadow: unset;
-  min-width: 96px;
-  min-height: 36px;
-  padding: 0px 16px;
-}
-
-.c18 .RcButton-startIcon {
-  margin-right: 8px;
-}
-
-.c18 .RcButton-endIcon {
-  margin-left: 8px;
-}
-
-.c18.RcButton-text {
-  color: #066FAC;
-}
-
-.c18.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
-}
-
-.c18.RcButton-contained {
-  color: #fff;
-  background-color: #066FAC;
-}
-
-.c18.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
-}
-
-.c18.RcButton-outlined {
-  color: #066FAC;
-  border-color: #066FAC;
-  padding: 0px 15px;
-}
-
-.c18.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
-}
-
-.c18.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
-}
-
-.c0 {
-  position: relative;
-  background-color: #FFFFFF;
-  border: 1px solid #E5E5E5;
-  border-radius: 8px;
-}
-
-.c0.RcCard-focusVisible,
-.c0.RcCard-selected {
-  border-color: #066FAC;
-}
-
-.c0:not(:hover):not(:focus-within) .RcCardHoverActions-root:not(.RcCardHoverActions-visible) {
-  opacity: 0;
-}
-
-.c2.RcCardActionArea-focusVisible .RcCardActionArea-focusHighlight {
-  opacity: 0;
-}
-
-.c2 .RcCardActionAreaTouchRipple-root {
-  color: #666666;
-}
-
-.c2 .RcCardActionAreaTouchRipple-rippleVisible {
-  opacity: 0.24;
-  -webkit-animation-name: bchLuH;
-  animation-name: bchLuH;
-}
-
-.c2.RcCardActionArea-disableRipple:active {
-  background-color: rgba(102,102,102,0.24);
-}
-
-.c11 {
-  padding: 16px;
-}
-
-.c17 {
-  position: relative;
-  padding: 0px 16px 16px 16px;
-  z-index: 2;
-}
-
-.c4 {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 16px;
-  -webkit-transition: opacity 300ms cubic-bezier(0.25,0.8,0.25,1) 0ms;
-  transition: opacity 300ms cubic-bezier(0.25,0.8,0.25,1) 0ms;
-}
-
-.c12 {
-  font-size: 0.75rem;
-  font-weight: 700;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 16px;
-  color: #666666;
-}
-
-.c14 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 28px;
-  color: #121212;
-}
-
-.c15 {
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #666666;
-}
-
-.c13 {
-  margin-bottom: 8px;
-}
-
-.c16 {
-  margin-top: 8px;
-  min-height: 44px;
-}
-
-.c1 {
-  width: 314px;
-}
-
-.c1 .c3 {
-  display: flex-end;
-  -webkit-align-content: right;
-  -ms-flex-line-pack: right;
-  align-content: right;
-}
-
-.c1 .c3 .c5 {
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: 8px;
-}
-
-.c10 {
-  padding: 16px 0px 0px 16px;
-  font-size: 64px;
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c6:hover {
-    background-color: rgba(255,255,255,0.08);
-  }
-
-  .c6:hover,
-  .c6:hover .c7 {
-    color: rgba(255,255,255,0.88);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover {
-    color: rgba(0,0,0,0.87);
-  }
-
-  .c6.RcIconButton-contained:hover:before {
-    background-color: rgba(0,0,0,0.08);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c18.RcButton-text:hover {
-    background-color: rgba(6,111,172,0.08);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c18.RcButton-contained:hover {
-    background-color: rgba(6,111,172,0.92);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c18.RcButton-outlined:hover {
-    background-color: rgba(6,111,172,0.08);
-  }
-}
-
-<div
-  className="MuiPaper-root MuiCard-root c0 c1 MuiPaper-outlined MuiPaper-rounded"
->
-  <div
-    aria-disabled={false}
-    className="MuiButtonBase-root MuiCardActionArea-root RcCardActionArea-root c2"
-    onBlur={[Function]}
-    onClick={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    role="button"
-    tabIndex={0}
-  >
-    <div
-      className="c3 c4 RcCardHoverActions-root"
-      onClick={[Function]}
-      onMouseDown={[Function]}
-    >
-      <button
-        aria-describedby={null}
-        aria-label="Edit"
-        className="MuiButtonBase-root c5 c6 RcIconButton-root RcIconButton-contained"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={0}
-        title="Edit"
-        type="button"
-      >
-        <span
-          className="c7 c8 edit icon"
-        >
-          <svg
-            className="c9"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M28.01 4a4 4 0 0 1 0 5.657L10.761 26.906c-.279.279-.635.47-1.022.547l-5.006 1.001a1 1 0 0 1-1.177-1.176l1.001-5.006c.077-.387.268-.743.547-1.022L22.353 4.001a4 4 0 0 1 5.657 0zm-4.242 7.07L20.94 8.242 6.598 22.584l2.828 2.828L23.768 11.07zm2.827-5.656a2 2 0 0 0-2.828 0l-1.413 1.413 2.828 2.828 1.413-1.414a2 2 0 0 0 0-2.828z"
-            />
-          </svg>
-          
-        </span>
-        <span
-          className="MuiTouchRipple-root"
-        />
-      </button>
-      <button
-        aria-describedby={null}
-        aria-label="More"
-        className="MuiButtonBase-root c5 c6 RcIconButton-root RcIconButton-contained"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={0}
-        title="More"
-        type="button"
-      >
-        <span
-          className="c7 c8 more_vert icon"
-        >
-          <svg
-            className="c9"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16 23a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zm0-9.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM16 4a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"
-            />
-          </svg>
-          
-        </span>
-        <span
-          className="MuiTouchRipple-root"
-        />
-      </button>
-    </div>
-    <span
-      className="c7 c8 c10 google-doc icon"
-    >
-      <svg
-        className="c9"
-        viewBox="0 0 32 32"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M3.556 0h24.889a3.556 3.556 0 0 1 3.556 3.556v24.889a3.556 3.556 0 0 1-3.556 3.556H3.556A3.556 3.556 0 0 1 0 28.445V3.556A3.556 3.556 0 0 1 3.556 0z"
-          fill="#fff"
-          opacity={0.992}
-        />
-        <path
-          d="M3.556 0h24.889a3.556 3.556 0 0 1 3.556 3.556v24.889a3.556 3.556 0 0 1-3.556 3.556H3.556A3.556 3.556 0 0 1 0 28.445V3.556A3.556 3.556 0 0 1 3.556 0z"
-          fill="#2196f3"
-          opacity={0.16}
-        />
-        <path
-          d="m11.915 8 4.844.023 5.463 5.114v8.889c0 .605-.215.933-.627 1.349s-.918.624-1.518.624h-8.171c-.6 0-1.106-.208-1.518-.624s-.61-.743-.61-1.349v-11.87c0-.606.206-1.116.619-1.533s.918-.624 1.518-.624zm4.579 12.148h-4.938v.988h4.938v-.988zm3.95-1.975h-8.889v.988h8.889v-.988zm0-1.975h-8.889v.988h8.889v-.988zm0-1.976h-8.889v.988h8.889v-.988z"
-          fill="#2196f3"
-        />
-      </svg>
-      
-    </span>
-    <div
-      className="MuiCardContent-root RcCardContent-root c11"
-    >
-      <p
-        className="MuiTypography-root c12 c13"
-        data-color="neutral.f04"
-        data-variant="caption2"
-      >
-        A boat afloat
-      </p>
-      <h6
-        className="MuiTypography-root c14"
-        data-color="neutral.f06"
-        data-variant="title2"
-      >
-        Boat
-      </h6>
-      <p
-        className="MuiTypography-root c15 c16"
-        data-color="neutral.f04"
-        data-variant="body1"
-      >
-        Note this boat afloat a moat. And dote and gloat this boat which totes. I quote devote a toast to boats.
-      </p>
-    </div>
-    <div
-      className="MuiCardActions-root c17 MuiCardActions-spacing"
-    >
-      <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c18"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={0}
-        type="button"
-      >
-        <span
-          className="MuiButton-label"
-        >
-          Toast
-        </span>
-        <span
-          className="MuiTouchRipple-root"
-        />
-      </button>
-      <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c18"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={0}
-        type="button"
-      >
-        <span
-          className="MuiButton-label"
-        >
-          Boast
-        </span>
-        <span
-          className="MuiTouchRipple-root"
-        />
-      </button>
-    </div>
-    <span
-      className="MuiCardActionArea-focusHighlight RcCardActionArea-focusHighlight"
-    />
-    <span
-      className="MuiTouchRipple-root RcCardActionAreaTouchRipple-root"
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example 1`] = `
-.c9 {
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  pointer-events: none;
-}
-
-.c8 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-size: 24px;
-}
-
-.c6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 32px;
-  height: 32px;
-  color: #FFFFFF;
-  border-radius: 50%;
-  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
-  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
-  cursor: pointer;
-  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
-  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
-}
-
-.c6:active {
-  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
-}
-
-.c6,
-.c6 .c7 {
-  font-size: 16px;
-}
-
-.c6:active,
-.c6:active .c7 {
-  color: #FFFFFF;
-}
-
-.c6.focus-visible,
-.c6[data-focus-visible-added] {
-  background-color: rgba(255,255,255,0.16);
-}
-
-.c6.focus-visible:active,
-.c6[data-focus-visible-added]:active,
-.c6.focus-visible:active .c7,
-.c6[data-focus-visible-added]:active .c7 {
-  color: rgba(255,255,255,0.88);
-}
-
-.c6.RcIconButton-persistBg {
-  background-color: rgba(255,255,255,0.12);
-}
-
-.c6.RcIconButton-disabled,
-.c6.RcIconButton-disabled .c7 {
+.c6.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -1231,13 +666,14 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
   margin-right: 8px;
 }
 
+.c9 {
+  padding: 16px 0px 0px 16px;
+  font-size: 64px;
+}
+
 @media (hover:hover) and (pointer:fine) {
   .c6:hover {
     background-color: rgba(255,255,255,0.08);
-  }
-
-  .c6:hover,
-  .c6:hover .c7 {
     color: rgba(255,255,255,0.88);
   }
 }
@@ -1319,10 +755,10 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
         type="button"
       >
         <span
-          className="c7 c8 edit icon"
+          className="c7 edit icon"
         >
           <svg
-            className="c9"
+            className="c8"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -1359,10 +795,10 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
         type="button"
       >
         <span
-          className="c7 c8 more_vert icon"
+          className="c7 more_vert icon"
         >
           <svg
-            className="c9"
+            className="c8"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -1377,15 +813,31 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
         />
       </button>
     </div>
-    <div
-      className="MuiCardMedia-root RcCardMedia-root "
-      style={
-        Object {
-          "backgroundImage": "url(\\"https://live.staticflickr.com/5126/5369581593_b9e2ec903c_n.jpg\\")",
-          "height": 160,
-        }
-      }
-    />
+    <span
+      className="c7 c9 google-doc icon"
+    >
+      <svg
+        className="c8"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3.556 0h24.889a3.556 3.556 0 0 1 3.556 3.556v24.889a3.556 3.556 0 0 1-3.556 3.556H3.556A3.556 3.556 0 0 1 0 28.445V3.556A3.556 3.556 0 0 1 3.556 0z"
+          fill="#fff"
+          opacity={0.992}
+        />
+        <path
+          d="M3.556 0h24.889a3.556 3.556 0 0 1 3.556 3.556v24.889a3.556 3.556 0 0 1-3.556 3.556H3.556A3.556 3.556 0 0 1 0 28.445V3.556A3.556 3.556 0 0 1 3.556 0z"
+          fill="#2196f3"
+          opacity={0.16}
+        />
+        <path
+          d="m11.915 8 4.844.023 5.463 5.114v8.889c0 .605-.215.933-.627 1.349s-.918.624-1.518.624h-8.171c-.6 0-1.106-.208-1.518-.624s-.61-.743-.61-1.349v-11.87c0-.606.206-1.116.619-1.533s.918-.624 1.518-.624zm4.579 12.148h-4.938v.988h4.938v-.988zm3.95-1.975h-8.889v.988h8.889v-.988zm0-1.975h-8.889v.988h8.889v-.988zm0-1.976h-8.889v.988h8.889v-.988z"
+          fill="#2196f3"
+        />
+      </svg>
+      
+    </span>
     <div
       className="MuiCardContent-root RcCardContent-root c10"
     >
@@ -1443,6 +895,530 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
       </button>
       <button
         className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c17"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Boast
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <span
+      className="MuiCardActionArea-focusHighlight RcCardActionArea-focusHighlight"
+    />
+    <span
+      className="MuiTouchRipple-root RcCardActionAreaTouchRipple-root"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example 1`] = `
+.c8 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 24px;
+}
+
+.c6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  color: #FFFFFF;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4,0,0.2,1) 0ms,box-shadow 250ms cubic-bezier(0.4,0,0.2,1) 0ms,border 250ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  font-size: 16px;
+}
+
+.c6:active {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+
+.c6:active {
+  color: #FFFFFF;
+}
+
+.c6.focus-visible,
+.c6[data-focus-visible-added] {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c6.focus-visible:active,
+.c6[data-focus-visible-added]:active {
+  color: rgba(255,255,255,0.88);
+}
+
+.c6.RcIconButton-persistBg {
+  background-color: rgba(255,255,255,0.12);
+}
+
+.c6.RcIconButton-disabled {
+  color: #B9B9B9;
+}
+
+.c6.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c6.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c6.RcIconButton-contained {
+  color: rgba(0,0,0,0.87);
+  background-color: #FFFFFF;
+}
+
+.c6.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c6.RcIconButton-contained.focus-visible,
+.c6.RcIconButton-contained[data-focus-visible-added] {
+  color: rgba(0,0,0,0.87);
+}
+
+.c6.RcIconButton-contained.focus-visible:before,
+.c6.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(0,0,0,0.16);
+}
+
+.c6.RcIconButton-contained:active {
+  color: rgba(0,0,0,0.87);
+}
+
+.c6 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
+.c16 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c16 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c16 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c16.RcButton-text {
+  color: #066FAC;
+}
+
+.c16.RcButton-text.RcButton-disabled {
+  color: #B9B9B9;
+}
+
+.c16.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c16.RcButton-contained.RcButton-disabled {
+  background-color: #B9B9B9;
+  color: #FFFFFF;
+}
+
+.c16.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c16.RcButton-outlined.RcButton-disabled {
+  color: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.c16.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
+.c0 {
+  position: relative;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+}
+
+.c0.RcCard-focusVisible,
+.c0.RcCard-selected {
+  border-color: #066FAC;
+}
+
+.c0:not(:hover):not(:focus-within) .RcCardHoverActions-root:not(.RcCardHoverActions-visible) {
+  opacity: 0;
+}
+
+.c2.RcCardActionArea-focusVisible .RcCardActionArea-focusHighlight {
+  opacity: 0;
+}
+
+.c2 .RcCardActionAreaTouchRipple-root {
+  color: #666666;
+}
+
+.c2 .RcCardActionAreaTouchRipple-rippleVisible {
+  opacity: 0.24;
+  -webkit-animation-name: bchLuH;
+  animation-name: bchLuH;
+}
+
+.c2.RcCardActionArea-disableRipple:active {
+  background-color: rgba(102,102,102,0.24);
+}
+
+.c9 {
+  padding: 16px;
+}
+
+.c15 {
+  position: relative;
+  padding: 0px 16px 16px 16px;
+  z-index: 2;
+}
+
+.c4 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 16px;
+  -webkit-transition: opacity 300ms cubic-bezier(0.25,0.8,0.25,1) 0ms;
+  transition: opacity 300ms cubic-bezier(0.25,0.8,0.25,1) 0ms;
+}
+
+.c10 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c12 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  color: #121212;
+}
+
+.c13 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #666666;
+}
+
+.c11 {
+  margin-bottom: 8px;
+}
+
+.c14 {
+  margin-top: 8px;
+  min-height: 44px;
+}
+
+.c1 {
+  width: 314px;
+}
+
+.c1 .c3 {
+  display: flex-end;
+  -webkit-align-content: right;
+  -ms-flex-line-pack: right;
+  align-content: right;
+}
+
+.c1 .c3 .c5 {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c6:hover {
+    background-color: rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c6.RcIconButton-contained:hover {
+    color: rgba(0,0,0,0.87);
+  }
+
+  .c6.RcIconButton-contained:hover:before {
+    background-color: rgba(0,0,0,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c16.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c16.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c16.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<div
+  className="MuiPaper-root MuiCard-root c0 c1 MuiPaper-outlined MuiPaper-rounded"
+>
+  <div
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiCardActionArea-root RcCardActionArea-root c2"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <div
+      className="c3 c4 RcCardHoverActions-root"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+    >
+      <button
+        aria-describedby={null}
+        aria-label="Edit"
+        className="MuiButtonBase-root c5 c6 RcIconButton-root RcIconButton-contained"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        title="Edit"
+        type="button"
+      >
+        <span
+          className="c7 edit icon"
+        >
+          <svg
+            className="c8"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M28.01 4a4 4 0 0 1 0 5.657L10.761 26.906c-.279.279-.635.47-1.022.547l-5.006 1.001a1 1 0 0 1-1.177-1.176l1.001-5.006c.077-.387.268-.743.547-1.022L22.353 4.001a4 4 0 0 1 5.657 0zm-4.242 7.07L20.94 8.242 6.598 22.584l2.828 2.828L23.768 11.07zm2.827-5.656a2 2 0 0 0-2.828 0l-1.413 1.413 2.828 2.828 1.413-1.414a2 2 0 0 0 0-2.828z"
+            />
+          </svg>
+          
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        aria-describedby={null}
+        aria-label="More"
+        className="MuiButtonBase-root c5 c6 RcIconButton-root RcIconButton-contained"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        title="More"
+        type="button"
+      >
+        <span
+          className="c7 more_vert icon"
+        >
+          <svg
+            className="c8"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 23a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zm0-9.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM16 4a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"
+            />
+          </svg>
+          
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <div
+      className="MuiCardMedia-root RcCardMedia-root "
+      style={
+        Object {
+          "backgroundImage": "url(\\"https://live.staticflickr.com/5126/5369581593_b9e2ec903c_n.jpg\\")",
+          "height": 160,
+        }
+      }
+    />
+    <div
+      className="MuiCardContent-root RcCardContent-root c9"
+    >
+      <p
+        className="MuiTypography-root c10 c11"
+        data-color="neutral.f04"
+        data-variant="caption2"
+      >
+        A boat afloat
+      </p>
+      <h6
+        className="MuiTypography-root c12"
+        data-color="neutral.f06"
+        data-variant="title2"
+      >
+        Boat
+      </h6>
+      <p
+        className="MuiTypography-root c13 c14"
+        data-color="neutral.f04"
+        data-variant="body1"
+      >
+        Note this boat afloat a moat. And dote and gloat this boat which totes. I quote devote a toast to boats.
+      </p>
+    </div>
+    <div
+      className="MuiCardActions-root c15 MuiCardActions-spacing"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c16"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Toast
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c16"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}

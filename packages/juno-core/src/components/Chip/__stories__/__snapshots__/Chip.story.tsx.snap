@@ -242,7 +242,7 @@ Array [
   >
     default
   </h4>,
-  .c5 {
+  .c4 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -251,7 +251,7 @@ Array [
   pointer-events: none;
 }
 
-.c4 {
+.c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -279,15 +279,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c2,
-.c2 .c3 {
   font-size: 20px;
 }
 
-.c2:active,
-.c2:active .c3 {
+.c2:active {
   color: #666666;
 }
 
@@ -297,9 +292,7 @@ Array [
 }
 
 .c2.focus-visible:active,
-.c2[data-focus-visible-added]:active,
-.c2.focus-visible:active .c3,
-.c2[data-focus-visible-added]:active .c3 {
+.c2[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -321,8 +314,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c2.RcIconButton-disabled,
-.c2.RcIconButton-disabled .c3 {
+.c2.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -375,7 +367,7 @@ Array [
   opacity: 0;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -395,32 +387,25 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: default;
-}
-
-.c6,
-.c6 .c3 {
   font-size: 20px;
 }
 
-.c6:active,
-.c6:active .c3 {
+.c5:active {
   color: #666666;
 }
 
-.c6.focus-visible,
-.c6[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c6.focus-visible:active,
-.c6[data-focus-visible-added]:active,
-.c6.focus-visible:active .c3,
-.c6[data-focus-visible-added]:active .c3 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
-.c6.focus-visible:after,
-.c6[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -433,32 +418,31 @@ Array [
   z-index: 1;
 }
 
-.c6.RcIconButton-persistBg {
+.c5.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c6.RcIconButton-disabled,
-.c6.RcIconButton-disabled .c3 {
+.c5.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
-.c6.RcIconButton-invisible {
+.c5.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c6.RcIconButton-outline {
+.c5.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c6.RcIconButton-contained {
+.c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c6.RcIconButton-contained:before {
+.c5.RcIconButton-contained:before {
   content: '';
   left: 0;
   right: 0;
@@ -470,28 +454,28 @@ Array [
   position: absolute;
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added] {
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
   color: #fff;
 }
 
-.c6.RcIconButton-contained.focus-visible:before,
-.c6.RcIconButton-contained[data-focus-visible-added]:before {
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c6.RcIconButton-contained:active {
+.c5.RcIconButton-contained:active {
   color: #fff;
 }
 
-.c6 .RcIconButtonTouchRipple-ripplePulsate {
+.c5 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
 }
 
-.c8 {
+.c7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -511,32 +495,25 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c8,
-.c8 .c3 {
   font-size: 20px;
 }
 
-.c8:active,
-.c8:active .c3 {
+.c7:active {
   color: #BE3933;
 }
 
-.c8.focus-visible,
-.c8[data-focus-visible-added] {
+.c7.focus-visible,
+.c7[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c8.focus-visible:active,
-.c8[data-focus-visible-added]:active,
-.c8.focus-visible:active .c3,
-.c8[data-focus-visible-added]:active .c3 {
+.c7.focus-visible:active,
+.c7[data-focus-visible-added]:active {
   color: rgba(190,57,51,0.88);
 }
 
-.c8.focus-visible:after,
-.c8[data-focus-visible-added]:after {
+.c7.focus-visible:after,
+.c7[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -549,32 +526,31 @@ Array [
   z-index: 1;
 }
 
-.c8.RcIconButton-persistBg {
+.c7.RcIconButton-persistBg {
   background-color: rgba(190,57,51,0.12);
 }
 
-.c8.RcIconButton-disabled,
-.c8.RcIconButton-disabled .c3 {
+.c7.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
-.c8.RcIconButton-invisible {
+.c7.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c8.RcIconButton-outline {
+.c7.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c8.RcIconButton-contained {
+.c7.RcIconButton-contained {
   color: #fff;
   background-color: #BE3933;
 }
 
-.c8.RcIconButton-contained:before {
+.c7.RcIconButton-contained:before {
   content: '';
   left: 0;
   right: 0;
@@ -586,28 +562,28 @@ Array [
   position: absolute;
 }
 
-.c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added] {
+.c7.RcIconButton-contained.focus-visible,
+.c7.RcIconButton-contained[data-focus-visible-added] {
   color: #fff;
 }
 
-.c8.RcIconButton-contained.focus-visible:before,
-.c8.RcIconButton-contained[data-focus-visible-added]:before {
+.c7.RcIconButton-contained.focus-visible:before,
+.c7.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c8.RcIconButton-contained:active {
+.c7.RcIconButton-contained:active {
   color: #fff;
 }
 
-.c8 .RcIconButtonTouchRipple-ripplePulsate {
+.c7 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
 }
 
-.c11 {
+.c10 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -642,13 +618,13 @@ Array [
   background-color: #F3F3F3;
 }
 
-.c11 > img,
-.c11 > canvas {
+.c10 > img,
+.c10 > canvas {
   width: 100%;
   height: 100%;
 }
 
-.c10 {
+.c9 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -714,7 +690,7 @@ Array [
   height: auto;
 }
 
-.c7 {
+.c6 {
   height: 28px;
   box-sizing: border-box;
   padding: 2px;
@@ -731,15 +707,15 @@ Array [
   background-color: #F3F3F3;
 }
 
-.c7.RcChip-focused,
-.c7.focus-visible,
-.c7[data-focus-visible-added] {
+.c6.RcChip-focused,
+.c6.focus-visible,
+.c6[data-focus-visible-added] {
   background-color: rgba(73,73,73,0.16);
 }
 
-.c7.RcChip-focused:after,
-.c7.focus-visible:after,
-.c7[data-focus-visible-added]:after {
+.c6.RcChip-focused:after,
+.c6.focus-visible:after,
+.c6[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: 0;
@@ -751,21 +727,21 @@ Array [
   pointer-events: none;
 }
 
-.c7:active {
+.c6:active {
   background-color: rgba(73,73,73,0.24);
 }
 
-.c7.RcChip-disabled {
+.c6.RcChip-disabled {
   color: #B9B9B9;
   opacity: 1;
 }
 
-.c7:not(.RcChip-disabled) {
+.c6:not(.RcChip-disabled) {
   color: #BE3933;
   background-color: #FFF7F5;
 }
 
-.c7:not(.RcChip-disabled):after {
+.c6:not(.RcChip-disabled):after {
   content: '';
   position: absolute;
   top: 0;
@@ -777,15 +753,15 @@ Array [
   pointer-events: none;
 }
 
-.c7:not(.RcChip-disabled).RcChip-focused,
-.c7:not(.RcChip-disabled).focus-visible,
-.c7:not(.RcChip-disabled)[data-focus-visible-added] {
+.c6:not(.RcChip-disabled).RcChip-focused,
+.c6:not(.RcChip-disabled).focus-visible,
+.c6:not(.RcChip-disabled)[data-focus-visible-added] {
   background-color: rgba(190,57,51,0.16);
 }
 
-.c7:not(.RcChip-disabled).RcChip-focused:after,
-.c7:not(.RcChip-disabled).focus-visible:after,
-.c7:not(.RcChip-disabled)[data-focus-visible-added]:after {
+.c6:not(.RcChip-disabled).RcChip-focused:after,
+.c6:not(.RcChip-disabled).focus-visible:after,
+.c6:not(.RcChip-disabled)[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: 0;
@@ -797,22 +773,22 @@ Array [
   pointer-events: none;
 }
 
-.c7:not(.RcChip-disabled):active {
+.c6:not(.RcChip-disabled):active {
   background-color: rgba(190,57,51,0.24);
 }
 
-.c7 .RcChip-avatar {
+.c6 .RcChip-avatar {
   color: #FFFFFF;
   margin-left: 0px;
   margin-right: -4px;
 }
 
-.c7 .RcChip-avatar span {
+.c6 .RcChip-avatar span {
   width: auto;
   height: auto;
 }
 
-.c9 {
+.c8 {
   height: 28px;
   box-sizing: border-box;
   padding: 2px;
@@ -829,15 +805,15 @@ Array [
   background-color: #F3F3F3;
 }
 
-.c9.RcChip-focused,
-.c9.focus-visible,
-.c9[data-focus-visible-added] {
+.c8.RcChip-focused,
+.c8.focus-visible,
+.c8[data-focus-visible-added] {
   background-color: rgba(73,73,73,0.16);
 }
 
-.c9.RcChip-focused:after,
-.c9.focus-visible:after,
-.c9[data-focus-visible-added]:after {
+.c8.RcChip-focused:after,
+.c8.focus-visible:after,
+.c8[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: 0;
@@ -849,27 +825,27 @@ Array [
   pointer-events: none;
 }
 
-.c9:active {
+.c8:active {
   background-color: rgba(73,73,73,0.24);
 }
 
-.c9.RcChip-disabled {
+.c8.RcChip-disabled {
   color: #B9B9B9;
   opacity: 1;
 }
 
-.c9 .RcChip-avatar {
+.c8 .RcChip-avatar {
   color: #FFFFFF;
   margin-left: 0px;
   margin-right: -4px;
 }
 
-.c9 .RcChip-avatar span {
+.c8 .RcChip-avatar span {
   width: auto;
   height: auto;
 }
 
-.c13 {
+.c12 {
   height: 28px;
   box-sizing: border-box;
   padding: 2px;
@@ -886,15 +862,15 @@ Array [
   background-color: #F3F3F3;
 }
 
-.c13.RcChip-focused,
-.c13.focus-visible,
-.c13[data-focus-visible-added] {
+.c12.RcChip-focused,
+.c12.focus-visible,
+.c12[data-focus-visible-added] {
   background-color: rgba(73,73,73,0.16);
 }
 
-.c13.RcChip-focused:after,
-.c13.focus-visible:after,
-.c13[data-focus-visible-added]:after {
+.c12.RcChip-focused:after,
+.c12.focus-visible:after,
+.c12[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: 0;
@@ -906,22 +882,22 @@ Array [
   pointer-events: none;
 }
 
-.c13:active {
+.c12:active {
   background-color: rgba(73,73,73,0.24);
 }
 
-.c13.RcChip-disabled {
+.c12.RcChip-disabled {
   color: #B9B9B9;
   opacity: 1;
 }
 
-.c13 .RcChip-avatar {
+.c12 .RcChip-avatar {
   color: #FFFFFF;
   margin-left: 0px;
   margin-right: -4px;
 }
 
-.c13 .RcChip-avatar span {
+.c12 .RcChip-avatar span {
   width: auto;
   height: auto;
 }
@@ -934,7 +910,7 @@ Array [
   color: #121212;
 }
 
-.c12 {
+.c11 {
   font-size: 0.75rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -942,14 +918,14 @@ Array [
   color: #666666;
 }
 
-.c14 {
+.c13 {
   font-size: 0.9375rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
 }
 
-.c15.highlight-term {
+.c14.highlight-term {
   color: #121212 !important;
   background-color: #FFDFB1 !important;
 }
@@ -957,10 +933,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c2:hover {
     background-color: transparent;
-  }
-
-  .c2:hover,
-  .c2:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -976,43 +948,35 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6:hover {
+  .c5:hover {
     background-color: transparent;
-  }
-
-  .c6:hover,
-  .c6:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover {
+  .c5.RcIconButton-contained:hover {
     color: #fff;
   }
 
-  .c6.RcIconButton-contained:hover:before {
+  .c5.RcIconButton-contained:hover:before {
     background-color: rgba(255,255,255,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8:hover {
+  .c7:hover {
     background-color: transparent;
-  }
-
-  .c8:hover,
-  .c8:hover .c3 {
     color: rgba(190,57,51,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-contained:hover {
+  .c7.RcIconButton-contained:hover {
     color: #fff;
   }
 
-  .c8.RcIconButton-contained:hover:before {
+  .c7.RcIconButton-contained:hover:before {
     background-color: rgba(255,255,255,0.08);
   }
 }
@@ -1024,25 +988,25 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7:hover {
+  .c6:hover {
     background-color: rgba(73,73,73,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7:not(.RcChip-disabled):hover {
+  .c6:not(.RcChip-disabled):hover {
     background-color: rgba(190,57,51,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9:hover {
+  .c8:hover {
     background-color: rgba(73,73,73,0.12);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13:hover {
+  .c12:hover {
     background-color: rgba(73,73,73,0.12);
   }
 }
@@ -1121,10 +1085,10 @@ Array [
           type="button"
         >
           <span
-            className="c3 c4 delete_circle icon"
+            className="c3 delete_circle icon"
           >
             <svg
-              className="c5"
+              className="c4"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1164,7 +1128,7 @@ Array [
           aria-describedby={null}
           aria-disabled={true}
           aria-label={null}
-          className="MuiButtonBase-root c6 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root RcIconButton-disabled Mui-disabled"
+          className="MuiButtonBase-root c5 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root RcIconButton-disabled Mui-disabled"
           disabled={true}
           onBlur={[Function]}
           onClick={[Function]}
@@ -1183,10 +1147,10 @@ Array [
           type="button"
         >
           <span
-            className="c3 c4 delete_circle icon"
+            className="c3 delete_circle icon"
           >
             <svg
-              className="c5"
+              className="c4"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1208,7 +1172,7 @@ Array [
         Error
       </h5>
       <div
-        className="MuiChip-root c7 MuiChip-deletable"
+        className="MuiChip-root c6 MuiChip-deletable"
         data-is-error={true}
         data-test-automation-class="selected-item"
         data-test-automation-value="Basic default Chip"
@@ -1225,7 +1189,7 @@ Array [
         <button
           aria-describedby={null}
           aria-label="Remove"
-          className="MuiButtonBase-root c8 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
+          className="MuiButtonBase-root c7 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -1245,10 +1209,10 @@ Array [
           type="button"
         >
           <span
-            className="c3 c4 delete_circle icon"
+            className="c3 delete_circle icon"
           >
             <svg
-              className="c5"
+              className="c4"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1284,7 +1248,7 @@ Array [
         </span>
       </div>
       <div
-        className="MuiChip-root c9 RcChip-focused"
+        className="MuiChip-root c8 RcChip-focused"
         data-test-automation-class="selected-item"
         data-test-automation-value="Basic default Chip"
         onKeyDown={[Function]}
@@ -1317,11 +1281,11 @@ Array [
         tabIndex={0}
       >
         <div
-          className="c10 MuiChip-avatar RcChip-avatar"
+          className="c9 MuiChip-avatar RcChip-avatar"
           data-test-automation-class="avatar"
         >
           <div
-            className="c11 RcAvatar-avatarContainer"
+            className="c10 RcAvatar-avatarContainer"
           >
             <img
               src="test-file-stub"
@@ -1353,11 +1317,11 @@ Array [
         tabIndex={0}
       >
         <div
-          className="c10 MuiChip-avatar RcChip-avatar"
+          className="c9 MuiChip-avatar RcChip-avatar"
           data-test-automation-class="avatar"
         >
           <div
-            className="c11 RcAvatar-avatarContainer"
+            className="c10 RcAvatar-avatarContainer"
           >
             <img
               src="test-file-stub"
@@ -1392,10 +1356,10 @@ Array [
           type="button"
         >
           <span
-            className="c3 c4 delete_circle icon"
+            className="c3 delete_circle icon"
           >
             <svg
-              className="c5"
+              className="c4"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1417,14 +1381,14 @@ Array [
         Custom color
       </h5>
       <p
-        className="MuiTypography-root c12 MuiTypography-gutterBottom"
+        className="MuiTypography-root c11 MuiTypography-gutterBottom"
         data-color="neutral.f04"
         data-variant="caption1"
       >
         (default only show color when keyboard focus)
       </p>
       <div
-        className="MuiChip-root c13"
+        className="MuiChip-root c12"
         data-test-automation-class="selected-item"
         data-test-automation-value="Basic Chip"
         onKeyDown={[Function]}
@@ -1466,11 +1430,11 @@ Array [
         title="Basic default Chip"
       >
         <div
-          className="c10 MuiChip-avatar RcChip-avatar"
+          className="c9 MuiChip-avatar RcChip-avatar"
           data-test-automation-class="avatar"
         >
           <div
-            className="c11 RcAvatar-avatarContainer"
+            className="c10 RcAvatar-avatarContainer"
           >
             <img
               src="test-file-stub"
@@ -1505,10 +1469,10 @@ Array [
           type="button"
         >
           <span
-            className="c3 c4 delete_circle icon"
+            className="c3 delete_circle icon"
           >
             <svg
-              className="c5"
+              className="c4"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1551,11 +1515,11 @@ Array [
         tabIndex={0}
       >
         <div
-          className="c10 MuiChip-avatar RcChip-avatar"
+          className="c9 MuiChip-avatar RcChip-avatar"
           data-test-automation-class="avatar"
         >
           <div
-            className="c11 RcAvatar-avatarContainer"
+            className="c10 RcAvatar-avatarContainer"
           >
             <img
               src="test-file-stub"
@@ -1566,7 +1530,7 @@ Array [
           className="MuiChip-label"
         >
           <p
-            className="MuiTypography-root c14 c15 MuiTypography-noWrap"
+            className="MuiTypography-root c13 c14 MuiTypography-noWrap"
             data-color="initial"
             data-variant="body1"
             title="Basic default Chip"
@@ -1597,10 +1561,10 @@ Array [
           type="button"
         >
           <span
-            className="c3 c4 delete_circle icon"
+            className="c3 delete_circle icon"
           >
             <svg
-              className="c5"
+              className="c4"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1776,7 +1740,7 @@ Array [
   >
     outlined
   </h4>,
-  .c5 {
+  .c4 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -1785,7 +1749,7 @@ Array [
   pointer-events: none;
 }
 
-.c4 {
+.c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1813,15 +1777,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c2,
-.c2 .c3 {
   font-size: 20px;
 }
 
-.c2:active,
-.c2:active .c3 {
+.c2:active {
   color: #666666;
 }
 
@@ -1831,9 +1790,7 @@ Array [
 }
 
 .c2.focus-visible:active,
-.c2[data-focus-visible-added]:active,
-.c2.focus-visible:active .c3,
-.c2[data-focus-visible-added]:active .c3 {
+.c2[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -1855,8 +1812,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c2.RcIconButton-disabled,
-.c2.RcIconButton-disabled .c3 {
+.c2.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -1909,7 +1865,7 @@ Array [
   opacity: 0;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1929,32 +1885,25 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: default;
-}
-
-.c6,
-.c6 .c3 {
   font-size: 20px;
 }
 
-.c6:active,
-.c6:active .c3 {
+.c5:active {
   color: #666666;
 }
 
-.c6.focus-visible,
-.c6[data-focus-visible-added] {
+.c5.focus-visible,
+.c5[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c6.focus-visible:active,
-.c6[data-focus-visible-added]:active,
-.c6.focus-visible:active .c3,
-.c6[data-focus-visible-added]:active .c3 {
+.c5.focus-visible:active,
+.c5[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
-.c6.focus-visible:after,
-.c6[data-focus-visible-added]:after {
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -1967,32 +1916,31 @@ Array [
   z-index: 1;
 }
 
-.c6.RcIconButton-persistBg {
+.c5.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c6.RcIconButton-disabled,
-.c6.RcIconButton-disabled .c3 {
+.c5.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
-.c6.RcIconButton-invisible {
+.c5.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c6.RcIconButton-outline {
+.c5.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c6.RcIconButton-contained {
+.c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c6.RcIconButton-contained:before {
+.c5.RcIconButton-contained:before {
   content: '';
   left: 0;
   right: 0;
@@ -2004,28 +1952,28 @@ Array [
   position: absolute;
 }
 
-.c6.RcIconButton-contained.focus-visible,
-.c6.RcIconButton-contained[data-focus-visible-added] {
+.c5.RcIconButton-contained.focus-visible,
+.c5.RcIconButton-contained[data-focus-visible-added] {
   color: #fff;
 }
 
-.c6.RcIconButton-contained.focus-visible:before,
-.c6.RcIconButton-contained[data-focus-visible-added]:before {
+.c5.RcIconButton-contained.focus-visible:before,
+.c5.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c6.RcIconButton-contained:active {
+.c5.RcIconButton-contained:active {
   color: #fff;
 }
 
-.c6 .RcIconButtonTouchRipple-ripplePulsate {
+.c5 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
 }
 
-.c8 {
+.c7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2045,32 +1993,25 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c8,
-.c8 .c3 {
   font-size: 20px;
 }
 
-.c8:active,
-.c8:active .c3 {
+.c7:active {
   color: #BE3933;
 }
 
-.c8.focus-visible,
-.c8[data-focus-visible-added] {
+.c7.focus-visible,
+.c7[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c8.focus-visible:active,
-.c8[data-focus-visible-added]:active,
-.c8.focus-visible:active .c3,
-.c8[data-focus-visible-added]:active .c3 {
+.c7.focus-visible:active,
+.c7[data-focus-visible-added]:active {
   color: rgba(190,57,51,0.88);
 }
 
-.c8.focus-visible:after,
-.c8[data-focus-visible-added]:after {
+.c7.focus-visible:after,
+.c7[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: -4px;
@@ -2083,32 +2024,31 @@ Array [
   z-index: 1;
 }
 
-.c8.RcIconButton-persistBg {
+.c7.RcIconButton-persistBg {
   background-color: rgba(190,57,51,0.12);
 }
 
-.c8.RcIconButton-disabled,
-.c8.RcIconButton-disabled .c3 {
+.c7.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
-.c8.RcIconButton-invisible {
+.c7.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c8.RcIconButton-outline {
+.c7.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c8.RcIconButton-contained {
+.c7.RcIconButton-contained {
   color: #fff;
   background-color: #BE3933;
 }
 
-.c8.RcIconButton-contained:before {
+.c7.RcIconButton-contained:before {
   content: '';
   left: 0;
   right: 0;
@@ -2120,28 +2060,28 @@ Array [
   position: absolute;
 }
 
-.c8.RcIconButton-contained.focus-visible,
-.c8.RcIconButton-contained[data-focus-visible-added] {
+.c7.RcIconButton-contained.focus-visible,
+.c7.RcIconButton-contained[data-focus-visible-added] {
   color: #fff;
 }
 
-.c8.RcIconButton-contained.focus-visible:before,
-.c8.RcIconButton-contained[data-focus-visible-added]:before {
+.c7.RcIconButton-contained.focus-visible:before,
+.c7.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c8.RcIconButton-contained:active {
+.c7.RcIconButton-contained:active {
   color: #fff;
 }
 
-.c8 .RcIconButtonTouchRipple-ripplePulsate {
+.c7 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
 }
 
-.c11 {
+.c10 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2176,13 +2116,13 @@ Array [
   background-color: #F3F3F3;
 }
 
-.c11 > img,
-.c11 > canvas {
+.c10 > img,
+.c10 > canvas {
   width: 100%;
   height: 100%;
 }
 
-.c10 {
+.c9 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2261,7 +2201,7 @@ Array [
   height: auto;
 }
 
-.c7 {
+.c6 {
   height: 28px;
   box-sizing: border-box;
   padding: 2px;
@@ -2279,7 +2219,7 @@ Array [
   background-color: #FFFFFF;
 }
 
-.c7:after {
+.c6:after {
   content: '';
   position: absolute;
   top: 0;
@@ -2291,15 +2231,15 @@ Array [
   pointer-events: none;
 }
 
-.c7.RcChip-focused,
-.c7.focus-visible,
-.c7[data-focus-visible-added] {
+.c6.RcChip-focused,
+.c6.focus-visible,
+.c6[data-focus-visible-added] {
   background-color: rgba(73,73,73,0.16);
 }
 
-.c7.RcChip-focused:after,
-.c7.focus-visible:after,
-.c7[data-focus-visible-added]:after {
+.c6.RcChip-focused:after,
+.c6.focus-visible:after,
+.c6[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: 0;
@@ -2311,21 +2251,21 @@ Array [
   pointer-events: none;
 }
 
-.c7:active {
+.c6:active {
   background-color: rgba(73,73,73,0.24);
 }
 
-.c7.RcChip-disabled {
+.c6.RcChip-disabled {
   color: #B9B9B9;
   opacity: 1;
 }
 
-.c7:not(.RcChip-disabled) {
+.c6:not(.RcChip-disabled) {
   color: #BE3933;
   background-color: #FFF7F5;
 }
 
-.c7:not(.RcChip-disabled):after {
+.c6:not(.RcChip-disabled):after {
   content: '';
   position: absolute;
   top: 0;
@@ -2337,15 +2277,15 @@ Array [
   pointer-events: none;
 }
 
-.c7:not(.RcChip-disabled).RcChip-focused,
-.c7:not(.RcChip-disabled).focus-visible,
-.c7:not(.RcChip-disabled)[data-focus-visible-added] {
+.c6:not(.RcChip-disabled).RcChip-focused,
+.c6:not(.RcChip-disabled).focus-visible,
+.c6:not(.RcChip-disabled)[data-focus-visible-added] {
   background-color: rgba(190,57,51,0.16);
 }
 
-.c7:not(.RcChip-disabled).RcChip-focused:after,
-.c7:not(.RcChip-disabled).focus-visible:after,
-.c7:not(.RcChip-disabled)[data-focus-visible-added]:after {
+.c6:not(.RcChip-disabled).RcChip-focused:after,
+.c6:not(.RcChip-disabled).focus-visible:after,
+.c6:not(.RcChip-disabled)[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: 0;
@@ -2357,22 +2297,22 @@ Array [
   pointer-events: none;
 }
 
-.c7:not(.RcChip-disabled):active {
+.c6:not(.RcChip-disabled):active {
   background-color: rgba(190,57,51,0.24);
 }
 
-.c7 .RcChip-avatar {
+.c6 .RcChip-avatar {
   color: #FFFFFF;
   margin-left: 0px;
   margin-right: -4px;
 }
 
-.c7 .RcChip-avatar span {
+.c6 .RcChip-avatar span {
   width: auto;
   height: auto;
 }
 
-.c9 {
+.c8 {
   height: 28px;
   box-sizing: border-box;
   padding: 2px;
@@ -2390,7 +2330,7 @@ Array [
   background-color: rgb(240,249,241);
 }
 
-.c9:after {
+.c8:after {
   content: '';
   position: absolute;
   top: 0;
@@ -2402,15 +2342,15 @@ Array [
   pointer-events: none;
 }
 
-.c9.RcChip-focused,
-.c9.focus-visible,
-.c9[data-focus-visible-added] {
+.c8.RcChip-focused,
+.c8.focus-visible,
+.c8[data-focus-visible-added] {
   background-color: rgba(70,190,89,0.16);
 }
 
-.c9.RcChip-focused:after,
-.c9.focus-visible:after,
-.c9[data-focus-visible-added]:after {
+.c8.RcChip-focused:after,
+.c8.focus-visible:after,
+.c8[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: 0;
@@ -2422,22 +2362,92 @@ Array [
   pointer-events: none;
 }
 
-.c9:active {
+.c8:active {
   background-color: rgba(70,190,89,0.24);
 }
 
-.c9.RcChip-disabled {
+.c8.RcChip-disabled {
   color: #B9B9B9;
   opacity: 1;
 }
 
-.c9 .RcChip-avatar {
+.c8 .RcChip-avatar {
   color: #FFFFFF;
   margin-left: 0px;
   margin-right: -4px;
 }
 
-.c9 .RcChip-avatar span {
+.c8 .RcChip-avatar span {
+  width: auto;
+  height: auto;
+}
+
+.c11 {
+  height: 28px;
+  box-sizing: border-box;
+  padding: 2px;
+  position: relative;
+  border-radius: 100vw;
+  border: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #F6AD16;
+  background-color: rgb(254,248,236);
+}
+
+.c11:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #F6AD16;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c11.RcChip-focused,
+.c11.focus-visible,
+.c11[data-focus-visible-added] {
+  background-color: rgba(246,173,22,0.16);
+}
+
+.c11.RcChip-focused:after,
+.c11.focus-visible:after,
+.c11[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px #F6AD16;
+  border-radius: 100vw;
+  pointer-events: none;
+}
+
+.c11:active {
+  background-color: rgba(246,173,22,0.24);
+}
+
+.c11.RcChip-disabled {
+  color: #B9B9B9;
+  opacity: 1;
+}
+
+.c11 .RcChip-avatar {
+  color: #FFFFFF;
+  margin-left: 0px;
+  margin-right: -4px;
+}
+
+.c11 .RcChip-avatar span {
   width: auto;
   height: auto;
 }
@@ -2456,8 +2466,8 @@ Array [
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
-  color: #F6AD16;
-  background-color: rgb(254,248,236);
+  color: #066FAC;
+  background-color: #E6F2F8;
 }
 
 .c12:after {
@@ -2467,7 +2477,7 @@ Array [
   right: 0;
   bottom: 0;
   left: 0;
-  box-shadow: inset 0 0 0 1px #F6AD16;
+  box-shadow: inset 0 0 0 1px #066FAC;
   border-radius: 100vw;
   pointer-events: none;
 }
@@ -2475,7 +2485,7 @@ Array [
 .c12.RcChip-focused,
 .c12.focus-visible,
 .c12[data-focus-visible-added] {
-  background-color: rgba(246,173,22,0.16);
+  background-color: rgba(6,111,172,0.16);
 }
 
 .c12.RcChip-focused:after,
@@ -2487,13 +2497,13 @@ Array [
   right: 0;
   bottom: 0;
   left: 0;
-  box-shadow: inset 0 0 0 1px #F6AD16;
+  box-shadow: inset 0 0 0 1px #066FAC;
   border-radius: 100vw;
   pointer-events: none;
 }
 
 .c12:active {
-  background-color: rgba(246,173,22,0.24);
+  background-color: rgba(6,111,172,0.24);
 }
 
 .c12.RcChip-disabled {
@@ -2512,77 +2522,7 @@ Array [
   height: auto;
 }
 
-.c13 {
-  height: 28px;
-  box-sizing: border-box;
-  padding: 2px;
-  position: relative;
-  border-radius: 100vw;
-  border: none;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #066FAC;
-  background-color: #E6F2F8;
-}
-
-.c13:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  box-shadow: inset 0 0 0 1px #066FAC;
-  border-radius: 100vw;
-  pointer-events: none;
-}
-
-.c13.RcChip-focused,
-.c13.focus-visible,
-.c13[data-focus-visible-added] {
-  background-color: rgba(6,111,172,0.16);
-}
-
-.c13.RcChip-focused:after,
-.c13.focus-visible:after,
-.c13[data-focus-visible-added]:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  box-shadow: inset 0 0 0 1px #066FAC;
-  border-radius: 100vw;
-  pointer-events: none;
-}
-
-.c13:active {
-  background-color: rgba(6,111,172,0.24);
-}
-
-.c13.RcChip-disabled {
-  color: #B9B9B9;
-  opacity: 1;
-}
-
-.c13 .RcChip-avatar {
-  color: #FFFFFF;
-  margin-left: 0px;
-  margin-right: -4px;
-}
-
-.c13 .RcChip-avatar span {
-  width: auto;
-  height: auto;
-}
-
-.c15 {
+.c14 {
   height: 28px;
   box-sizing: border-box;
   padding: 2px;
@@ -2600,7 +2540,7 @@ Array [
   background-color: rgb(235,243,248);
 }
 
-.c15:after {
+.c14:after {
   content: '';
   position: absolute;
   top: 0;
@@ -2612,15 +2552,15 @@ Array [
   pointer-events: none;
 }
 
-.c15.RcChip-focused,
-.c15.focus-visible,
-.c15[data-focus-visible-added] {
+.c14.RcChip-focused,
+.c14.focus-visible,
+.c14[data-focus-visible-added] {
   background-color: rgba(6,111,172,0.16);
 }
 
-.c15.RcChip-focused:after,
-.c15.focus-visible:after,
-.c15[data-focus-visible-added]:after {
+.c14.RcChip-focused:after,
+.c14.focus-visible:after,
+.c14[data-focus-visible-added]:after {
   content: '';
   position: absolute;
   top: 0;
@@ -2632,22 +2572,22 @@ Array [
   pointer-events: none;
 }
 
-.c15:active {
+.c14:active {
   background-color: rgba(6,111,172,0.24);
 }
 
-.c15.RcChip-disabled {
+.c14.RcChip-disabled {
   color: #B9B9B9;
   opacity: 1;
 }
 
-.c15 .RcChip-avatar {
+.c14 .RcChip-avatar {
   color: #FFFFFF;
   margin-left: 0px;
   margin-right: -4px;
 }
 
-.c15 .RcChip-avatar span {
+.c14 .RcChip-avatar span {
   width: auto;
   height: auto;
 }
@@ -2660,7 +2600,7 @@ Array [
   color: #121212;
 }
 
-.c14 {
+.c13 {
   font-size: 0.75rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -2668,14 +2608,14 @@ Array [
   color: #666666;
 }
 
-.c16 {
+.c15 {
   font-size: 0.9375rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 22px;
 }
 
-.c17.highlight-term {
+.c16.highlight-term {
   color: #121212 !important;
   background-color: #FFDFB1 !important;
 }
@@ -2683,10 +2623,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c2:hover {
     background-color: transparent;
-  }
-
-  .c2:hover,
-  .c2:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -2702,43 +2638,35 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6:hover {
+  .c5:hover {
     background-color: transparent;
-  }
-
-  .c6:hover,
-  .c6:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6.RcIconButton-contained:hover {
+  .c5.RcIconButton-contained:hover {
     color: #fff;
   }
 
-  .c6.RcIconButton-contained:hover:before {
+  .c5.RcIconButton-contained:hover:before {
     background-color: rgba(255,255,255,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8:hover {
+  .c7:hover {
     background-color: transparent;
-  }
-
-  .c8:hover,
-  .c8:hover .c3 {
     color: rgba(190,57,51,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8.RcIconButton-contained:hover {
+  .c7.RcIconButton-contained:hover {
     color: #fff;
   }
 
-  .c8.RcIconButton-contained:hover:before {
+  .c7.RcIconButton-contained:hover:before {
     background-color: rgba(255,255,255,0.08);
   }
 }
@@ -2750,37 +2678,37 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7:hover {
+  .c6:hover {
     background-color: rgba(73,73,73,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7:not(.RcChip-disabled):hover {
+  .c6:not(.RcChip-disabled):hover {
     background-color: rgba(190,57,51,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9:hover {
+  .c8:hover {
     background-color: rgba(70,190,89,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c12:hover {
+  .c11:hover {
     background-color: rgba(246,173,22,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c13:hover {
+  .c12:hover {
     background-color: rgba(6,111,172,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c15:hover {
+  .c14:hover {
     background-color: rgba(6,111,172,0.08);
   }
 }
@@ -2859,10 +2787,10 @@ Array [
           type="button"
         >
           <span
-            className="c3 c4 delete_circle icon"
+            className="c3 delete_circle icon"
           >
             <svg
-              className="c5"
+              className="c4"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2902,7 +2830,7 @@ Array [
           aria-describedby={null}
           aria-disabled={true}
           aria-label={null}
-          className="MuiButtonBase-root c6 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root RcIconButton-disabled Mui-disabled"
+          className="MuiButtonBase-root c5 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root RcIconButton-disabled Mui-disabled"
           disabled={true}
           onBlur={[Function]}
           onClick={[Function]}
@@ -2921,10 +2849,10 @@ Array [
           type="button"
         >
           <span
-            className="c3 c4 delete_circle icon"
+            className="c3 delete_circle icon"
           >
             <svg
-              className="c5"
+              className="c4"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2946,7 +2874,7 @@ Array [
         Error
       </h5>
       <div
-        className="MuiChip-root c7 MuiChip-outlined MuiChip-deletable"
+        className="MuiChip-root c6 MuiChip-outlined MuiChip-deletable"
         data-is-error={true}
         data-test-automation-class="selected-item"
         data-test-automation-value="Basic outlined Chip"
@@ -2963,7 +2891,7 @@ Array [
         <button
           aria-describedby={null}
           aria-label="Remove"
-          className="MuiButtonBase-root c8 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
+          className="MuiButtonBase-root c7 MuiChip-deleteIcon RcChip-deleteIcon RcIconButton-root"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -2983,10 +2911,10 @@ Array [
           type="button"
         >
           <span
-            className="c3 c4 delete_circle icon"
+            className="c3 delete_circle icon"
           >
             <svg
-              className="c5"
+              className="c4"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -3022,7 +2950,7 @@ Array [
         </span>
       </div>
       <div
-        className="MuiChip-root c9 RcChip-focused MuiChip-outlined"
+        className="MuiChip-root c8 RcChip-focused MuiChip-outlined"
         data-test-automation-class="selected-item"
         data-test-automation-value="Basic outlined Chip"
         onKeyDown={[Function]}
@@ -3055,11 +2983,11 @@ Array [
         tabIndex={0}
       >
         <div
-          className="c10 MuiChip-avatar RcChip-avatar"
+          className="c9 MuiChip-avatar RcChip-avatar"
           data-test-automation-class="avatar"
         >
           <div
-            className="c11 RcAvatar-avatarContainer"
+            className="c10 RcAvatar-avatarContainer"
           >
             <img
               src="test-file-stub"
@@ -3091,11 +3019,11 @@ Array [
         tabIndex={0}
       >
         <div
-          className="c10 MuiChip-avatar RcChip-avatar"
+          className="c9 MuiChip-avatar RcChip-avatar"
           data-test-automation-class="avatar"
         >
           <div
-            className="c11 RcAvatar-avatarContainer"
+            className="c10 RcAvatar-avatarContainer"
           >
             <img
               src="test-file-stub"
@@ -3130,10 +3058,10 @@ Array [
           type="button"
         >
           <span
-            className="c3 c4 delete_circle icon"
+            className="c3 delete_circle icon"
           >
             <svg
-              className="c5"
+              className="c4"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -3155,7 +3083,7 @@ Array [
         Custom color
       </h5>
       <div
-        className="MuiChip-root c12 MuiChip-outlined"
+        className="MuiChip-root c11 MuiChip-outlined"
         data-test-automation-class="selected-item"
         data-test-automation-value="Basic Chip"
         onKeyDown={[Function]}
@@ -3178,7 +3106,7 @@ Array [
         Custom color
       </h5>
       <div
-        className="MuiChip-root c13 MuiChip-outlined"
+        className="MuiChip-root c12 MuiChip-outlined"
         data-test-automation-class="selected-item"
         data-test-automation-value="Custom background color"
         onKeyDown={[Function]}
@@ -3194,7 +3122,7 @@ Array [
       <br />
       <br />
       <p
-        className="MuiTypography-root c14 MuiTypography-paragraph MuiTypography-displayBlock"
+        className="MuiTypography-root c13 MuiTypography-paragraph MuiTypography-displayBlock"
         data-color="neutral.f04"
         data-variant="caption1"
       >
@@ -3205,7 +3133,7 @@ Array [
         darken: darken 0.72 main color
       </p>
       <div
-        className="MuiChip-root c15 MuiChip-outlined"
+        className="MuiChip-root c14 MuiChip-outlined"
         data-test-automation-class="selected-item"
         data-test-automation-value="Only color"
         onKeyDown={[Function]}
@@ -3245,11 +3173,11 @@ Array [
         title="Basic outlined Chip"
       >
         <div
-          className="c10 MuiChip-avatar RcChip-avatar"
+          className="c9 MuiChip-avatar RcChip-avatar"
           data-test-automation-class="avatar"
         >
           <div
-            className="c11 RcAvatar-avatarContainer"
+            className="c10 RcAvatar-avatarContainer"
           >
             <img
               src="test-file-stub"
@@ -3284,10 +3212,10 @@ Array [
           type="button"
         >
           <span
-            className="c3 c4 delete_circle icon"
+            className="c3 delete_circle icon"
           >
             <svg
-              className="c5"
+              className="c4"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -3330,11 +3258,11 @@ Array [
         tabIndex={0}
       >
         <div
-          className="c10 MuiChip-avatar RcChip-avatar"
+          className="c9 MuiChip-avatar RcChip-avatar"
           data-test-automation-class="avatar"
         >
           <div
-            className="c11 RcAvatar-avatarContainer"
+            className="c10 RcAvatar-avatarContainer"
           >
             <img
               src="test-file-stub"
@@ -3345,7 +3273,7 @@ Array [
           className="MuiChip-label"
         >
           <p
-            className="MuiTypography-root c16 c17 MuiTypography-noWrap"
+            className="MuiTypography-root c15 c16 MuiTypography-noWrap"
             data-color="initial"
             data-variant="body1"
             title="Basic outlined Chip"
@@ -3376,10 +3304,10 @@ Array [
           type="button"
         >
           <span
-            className="c3 c4 delete_circle icon"
+            className="c3 delete_circle icon"
           >
             <svg
-              className="c5"
+              className="c4"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >

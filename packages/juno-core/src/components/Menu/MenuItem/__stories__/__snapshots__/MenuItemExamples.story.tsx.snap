@@ -172,7 +172,7 @@ Array [
       className="MuiTouchRipple-root"
     />
   </li>,
-  .c6 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -181,35 +181,13 @@ Array [
   pointer-events: none;
 }
 
-.c4 {
+.c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 24px;
   color: #066FAC;
-}
-
-.c7,
-.c7 .c3 {
-  font-size: 16px;
-}
-
-.c7:active,
-.c7:active .c3 {
-  color: #666666;
-}
-
-.c7.focus-visible:active,
-.c7[data-focus-visible-added]:active,
-.c7.focus-visible:active .c3,
-.c7[data-focus-visible-added]:active .c3 {
-  color: rgba(102,102,102,0.88);
-}
-
-.c7.RcIconButton-disabled,
-.c7.RcIconButton-disabled .c3 {
-  color: #B9B9B9;
 }
 
 .c2 {
@@ -275,7 +253,7 @@ Array [
   color: #666666;
 }
 
-.c5 {
+.c4 {
   height: 22px;
 }
 
@@ -308,10 +286,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7:hover,
-  .c7:hover .c3 {
-    color: rgba(102,102,102,0.88);
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -364,10 +339,10 @@ Array [
       className="MuiListItemSecondaryAction-root c2"
     >
       <span
-        className="c3 c4 c5 check icon"
+        className="c3 c4 check icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -962,7 +937,7 @@ Array [
   >
     Icon Case:
   </li>,
-  .c4 {
+  .c3 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -971,34 +946,12 @@ Array [
   pointer-events: none;
 }
 
-.c3 {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 16px;
-}
-
-.c6,
-.c6 .c2 {
-  font-size: 16px;
-}
-
-.c6:active,
-.c6:active .c2 {
-  color: #666666;
-}
-
-.c6.focus-visible:active,
-.c6[data-focus-visible-added]:active,
-.c6.focus-visible:active .c2,
-.c6[data-focus-visible-added]:active .c2 {
-  color: rgba(102,102,102,0.88);
-}
-
-.c6.RcIconButton-disabled,
-.c6.RcIconButton-disabled .c2 {
-  color: #B9B9B9;
 }
 
 .c1 {
@@ -1020,20 +973,20 @@ Array [
   min-width: unset;
 }
 
-.c5 {
+.c4 {
   padding: 0;
   margin: 0 8px 0 0;
 }
 
-.c5.RcListItemText-multiline {
+.c4.RcListItemText-multiline {
   margin: 4px 8px 4px 0px;
 }
 
-.c5.RcListItemText-inset {
+.c4.RcListItemText-inset {
   padding-left: 56px;
 }
 
-.c5 .RcListItemText-primary {
+.c4 .RcListItemText-primary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1046,7 +999,7 @@ Array [
   color: #121212;
 }
 
-.c5 .RcListItemText-secondary {
+.c4 .RcListItemText-secondary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1088,10 +1041,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6:hover,
-  .c6:hover .c2 {
-    color: rgba(102,102,102,0.88);
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1134,10 +1084,10 @@ Array [
       className="MuiListItemIcon-root c1"
     >
       <span
-        className="c2 c3 star icon"
+        className="c2 star icon"
       >
         <svg
-          className="c4"
+          className="c3"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1149,7 +1099,7 @@ Array [
       </span>
     </div>
     <div
-      className="MuiListItemText-root c5"
+      className="MuiListItemText-root c4"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
@@ -1161,7 +1111,7 @@ Array [
       className="MuiTouchRipple-root"
     />
   </li>,
-  .c4 {
+  .c3 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -1170,34 +1120,12 @@ Array [
   pointer-events: none;
 }
 
-.c3 {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 16px;
-}
-
-.c6,
-.c6 .c2 {
-  font-size: 16px;
-}
-
-.c6:active,
-.c6:active .c2 {
-  color: #666666;
-}
-
-.c6.focus-visible:active,
-.c6[data-focus-visible-added]:active,
-.c6.focus-visible:active .c2,
-.c6[data-focus-visible-added]:active .c2 {
-  color: rgba(102,102,102,0.88);
-}
-
-.c6.RcIconButton-disabled,
-.c6.RcIconButton-disabled .c2 {
-  color: #B9B9B9;
 }
 
 .c1 {
@@ -1219,20 +1147,20 @@ Array [
   min-width: unset;
 }
 
-.c5 {
+.c4 {
   padding: 0;
   margin: 0 8px 0 0;
 }
 
-.c5.RcListItemText-multiline {
+.c4.RcListItemText-multiline {
   margin: 4px 8px 4px 0px;
 }
 
-.c5.RcListItemText-inset {
+.c4.RcListItemText-inset {
   padding-left: 56px;
 }
 
-.c5 .RcListItemText-primary {
+.c4 .RcListItemText-primary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1245,7 +1173,7 @@ Array [
   color: #121212;
 }
 
-.c5 .RcListItemText-secondary {
+.c4 .RcListItemText-secondary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1287,10 +1215,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6:hover,
-  .c6:hover .c2 {
-    color: rgba(102,102,102,0.88);
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1333,10 +1258,10 @@ Array [
       className="MuiListItemIcon-root c1"
     >
       <span
-        className="c2 c3 star icon"
+        className="c2 star icon"
       >
         <svg
-          className="c4"
+          className="c3"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1348,7 +1273,7 @@ Array [
       </span>
     </div>
     <div
-      className="MuiListItemText-root c5"
+      className="MuiListItemText-root c4"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
@@ -1360,7 +1285,7 @@ Array [
       className="MuiTouchRipple-root"
     />
   </li>,
-  .c4 {
+  .c3 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -1369,34 +1294,12 @@ Array [
   pointer-events: none;
 }
 
-.c3 {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 16px;
-}
-
-.c6,
-.c6 .c2 {
-  font-size: 16px;
-}
-
-.c6:active,
-.c6:active .c2 {
-  color: #666666;
-}
-
-.c6.focus-visible:active,
-.c6[data-focus-visible-added]:active,
-.c6.focus-visible:active .c2,
-.c6[data-focus-visible-added]:active .c2 {
-  color: rgba(102,102,102,0.88);
-}
-
-.c6.RcIconButton-disabled,
-.c6.RcIconButton-disabled .c2 {
-  color: #B9B9B9;
 }
 
 .c1 {
@@ -1418,20 +1321,20 @@ Array [
   min-width: unset;
 }
 
-.c5 {
+.c4 {
   padding: 0;
   margin: 0 8px 0 0;
 }
 
-.c5.RcListItemText-multiline {
+.c4.RcListItemText-multiline {
   margin: 4px 8px 4px 0px;
 }
 
-.c5.RcListItemText-inset {
+.c4.RcListItemText-inset {
   padding-left: 56px;
 }
 
-.c5 .RcListItemText-primary {
+.c4 .RcListItemText-primary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1444,7 +1347,7 @@ Array [
   color: #121212;
 }
 
-.c5 .RcListItemText-secondary {
+.c4 .RcListItemText-secondary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1486,10 +1389,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6:hover,
-  .c6:hover .c2 {
-    color: rgba(102,102,102,0.88);
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1532,10 +1432,10 @@ Array [
       className="MuiListItemIcon-root c1"
     >
       <span
-        className="c2 c3 star icon"
+        className="c2 star icon"
       >
         <svg
-          className="c4"
+          className="c3"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1547,7 +1447,7 @@ Array [
       </span>
     </div>
     <div
-      className="MuiListItemText-root c5"
+      className="MuiListItemText-root c4"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
@@ -1646,7 +1546,7 @@ Array [
   >
     IconControl Case
   </li>,
-  .c5 {
+  .c4 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -1655,34 +1555,12 @@ Array [
   pointer-events: none;
 }
 
-.c4 {
+.c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 20px;
-}
-
-.c7,
-.c7 .c3 {
-  font-size: 16px;
-}
-
-.c7:active,
-.c7:active .c3 {
-  color: #666666;
-}
-
-.c7.focus-visible:active,
-.c7[data-focus-visible-added]:active,
-.c7.focus-visible:active .c3,
-.c7[data-focus-visible-added]:active .c3 {
-  color: rgba(102,102,102,0.88);
-}
-
-.c7.RcIconButton-disabled,
-.c7.RcIconButton-disabled .c3 {
-  color: #B9B9B9;
 }
 
 .c2.RcCheckbox-root {
@@ -1717,20 +1595,20 @@ Array [
   min-width: unset;
 }
 
-.c6 {
+.c5 {
   padding: 0;
   margin: 0 8px 0 0;
 }
 
-.c6.RcListItemText-multiline {
+.c5.RcListItemText-multiline {
   margin: 4px 8px 4px 0px;
 }
 
-.c6.RcListItemText-inset {
+.c5.RcListItemText-inset {
   padding-left: 56px;
 }
 
-.c6 .RcListItemText-primary {
+.c5 .RcListItemText-primary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1743,7 +1621,7 @@ Array [
   color: #121212;
 }
 
-.c6 .RcListItemText-secondary {
+.c5 .RcListItemText-secondary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1785,10 +1663,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c7:hover,
-  .c7:hover .c3 {
-    color: rgba(102,102,102,0.88);
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1863,10 +1738,10 @@ Array [
             type="checkbox"
           />
           <span
-            className="c3 c4 unselect icon"
+            className="c3 unselect icon"
           >
             <svg
-              className="c5"
+              className="c4"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1883,7 +1758,7 @@ Array [
       </span>
     </div>
     <div
-      className="MuiListItemText-root c6"
+      className="MuiListItemText-root c5"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
@@ -2608,7 +2483,7 @@ Array [
       className="MuiTouchRipple-root"
     />
   </li>,
-  .c5 {
+  .c4 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -2617,34 +2492,12 @@ Array [
   pointer-events: none;
 }
 
-.c4 {
+.c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 16px;
-}
-
-.c6,
-.c6 .c3 {
-  font-size: 16px;
-}
-
-.c6:active,
-.c6:active .c3 {
-  color: #666666;
-}
-
-.c6.focus-visible:active,
-.c6[data-focus-visible-added]:active,
-.c6.focus-visible:active .c3,
-.c6[data-focus-visible-added]:active .c3 {
-  color: rgba(102,102,102,0.88);
-}
-
-.c6.RcIconButton-disabled,
-.c6.RcIconButton-disabled .c3 {
-  color: #B9B9B9;
 }
 
 .c2 {
@@ -2739,10 +2592,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c6:hover,
-  .c6:hover .c3 {
-    color: rgba(102,102,102,0.88);
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2797,10 +2647,10 @@ Array [
         meta
       </span>
       <span
-        className="c3 c4 info icon"
+        className="c3 info icon"
       >
         <svg
-          className="c5"
+          className="c4"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -2852,15 +2702,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c4,
-.c4 .c5 {
   font-size: 16px;
 }
 
-.c4:active,
-.c4:active .c5 {
+.c4:active {
   color: #666666;
 }
 
@@ -2870,9 +2715,7 @@ Array [
 }
 
 .c4.focus-visible:active,
-.c4[data-focus-visible-added]:active,
-.c4.focus-visible:active .c5,
-.c4[data-focus-visible-added]:active .c5 {
+.c4[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -2894,8 +2737,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c4.RcIconButton-disabled,
-.c4.RcIconButton-disabled .c5 {
+.c4.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -3047,10 +2889,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c4:hover {
     background-color: transparent;
-  }
-
-  .c4:hover,
-  .c4:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -3236,7 +3074,7 @@ Array [
   >
     SecondaryActionControl Case:
   </li>,
-  .c7 {
+  .c6 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -3245,34 +3083,12 @@ Array [
   pointer-events: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 20px;
-}
-
-.c10,
-.c10 .c5 {
-  font-size: 16px;
-}
-
-.c10:active,
-.c10:active .c5 {
-  color: #666666;
-}
-
-.c10.focus-visible:active,
-.c10[data-focus-visible-added]:active,
-.c10.focus-visible:active .c5,
-.c10[data-focus-visible-added]:active .c5 {
-  color: rgba(102,102,102,0.88);
-}
-
-.c10.RcIconButton-disabled,
-.c10.RcIconButton-disabled .c5 {
-  color: #B9B9B9;
 }
 
 .c3 {
@@ -3335,7 +3151,7 @@ Array [
   min-width: unset;
 }
 
-.c9 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3355,28 +3171,28 @@ Array [
   color: #666666;
 }
 
-.c9 .c2 {
+.c8 .c2 {
   margin-right: -8px;
 }
 
-.c9 > * + * {
+.c8 > * + * {
   margin-left: 8px;
 }
 
-.c8 {
+.c7 {
   padding: 0;
   margin: 0 8px 0 0;
 }
 
-.c8.RcListItemText-multiline {
+.c7.RcListItemText-multiline {
   margin: 4px 8px 4px 0px;
 }
 
-.c8.RcListItemText-inset {
+.c7.RcListItemText-inset {
   padding-left: 56px;
 }
 
-.c8 .RcListItemText-primary {
+.c7 .RcListItemText-primary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -3389,7 +3205,7 @@ Array [
   color: #121212;
 }
 
-.c8 .RcListItemText-secondary {
+.c7 .RcListItemText-secondary {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -3435,10 +3251,7 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10:hover,
-  .c10:hover .c5 {
-    color: rgba(102,102,102,0.88);
-  }
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3516,10 +3329,10 @@ Array [
               type="checkbox"
             />
             <span
-              className="c5 c6 unselect icon"
+              className="c5 unselect icon"
             >
               <svg
-                className="c7"
+                className="c6"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -3542,7 +3355,7 @@ Array [
       </label>
     </div>
     <div
-      className="MuiListItemText-root c8"
+      className="MuiListItemText-root c7"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
@@ -3551,7 +3364,7 @@ Array [
       </span>
     </div>
     <div
-      className="MuiListItemSecondaryAction-root c9"
+      className="MuiListItemSecondaryAction-root c8"
     >
       <label
         className="MuiFormControlLabel-root RcFormControlLabel-root c2 c3"
@@ -3582,10 +3395,10 @@ Array [
               type="checkbox"
             />
             <span
-              className="c5 c6 unselect icon"
+              className="c5 unselect icon"
             >
               <svg
-                className="c7"
+                className="c6"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >

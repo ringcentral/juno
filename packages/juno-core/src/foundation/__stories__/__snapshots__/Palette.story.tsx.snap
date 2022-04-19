@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
-.c8 {
+.c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -10,7 +10,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   pointer-events: none;
 }
 
-.c7 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -38,15 +38,10 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c3,
-.c3 .c6 {
   font-size: 20px;
 }
 
-.c3:active,
-.c3:active .c6 {
+.c3:active {
   color: #666666;
 }
 
@@ -56,9 +51,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
 }
 
 .c3.focus-visible:active,
-.c3[data-focus-visible-added]:active,
-.c3.focus-visible:active .c6,
-.c3[data-focus-visible-added]:active .c6 {
+.c3[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -80,8 +73,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   background-color: rgba(102,102,102,0.12);
 }
 
-.c3.RcIconButton-disabled,
-.c3.RcIconButton-disabled .c6 {
+.c3.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -134,7 +126,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   opacity: 0;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   right: 0;
   pointer-events: none;
@@ -346,7 +338,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   box-shadow: inset 0 0 0 1px #B9B9B9;
 }
 
-.c10 {
+.c9 {
   font-size: 2.125rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -354,7 +346,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   color: #121212;
 }
 
-.c15 {
+.c14 {
   font-size: 0.9375rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -362,7 +354,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   color: #121212;
 }
 
-.c16 {
+.c15 {
   font-size: 0.9375rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -381,7 +373,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   height: calc(100vh - 40px - 0.7rem);
 }
 
-.c12 {
+.c11 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -395,11 +387,11 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   box-sizing: border-box;
 }
 
-.c11 {
+.c10 {
   margin: 16px;
 }
 
-.c13 {
+.c12 {
   background: #FFF7EB;
   width: 48px;
   height: 48px;
@@ -407,7 +399,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c17 {
+.c16 {
   background: #FFE7C1;
   width: 48px;
   height: 48px;
@@ -415,7 +407,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c18 {
+.c17 {
   background: #F6AD16;
   width: 48px;
   height: 48px;
@@ -423,7 +415,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c19 {
+.c18 {
   background: #896219;
   width: 48px;
   height: 48px;
@@ -431,7 +423,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c20 {
+.c19 {
   background: #F0FCEF;
   width: 48px;
   height: 48px;
@@ -439,7 +431,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c21 {
+.c20 {
   background: #CEF4CE;
   width: 48px;
   height: 48px;
@@ -447,7 +439,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c22 {
+.c21 {
   background: #3C9949;
   width: 48px;
   height: 48px;
@@ -455,7 +447,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c23 {
+.c22 {
   background: #368541;
   width: 48px;
   height: 48px;
@@ -463,7 +455,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c24 {
+.c23 {
   background: #32773B;
   width: 48px;
   height: 48px;
@@ -471,7 +463,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c25 {
+.c24 {
   background: #46BE59;
   width: 48px;
   height: 48px;
@@ -479,7 +471,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c26 {
+.c25 {
   background: #494949;
   width: 48px;
   height: 48px;
@@ -487,7 +479,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c27 {
+.c26 {
   background: #666666;
   width: 48px;
   height: 48px;
@@ -495,7 +487,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c28 {
+.c27 {
   background: #066FAC;
   width: 48px;
   height: 48px;
@@ -503,7 +495,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c29 {
+.c28 {
   background: #5A5ABF;
   width: 48px;
   height: 48px;
@@ -511,7 +503,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c30 {
+.c29 {
   background: #8E6B2B;
   width: 48px;
   height: 48px;
@@ -519,7 +511,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c31 {
+.c30 {
   background: #509AC4;
   width: 48px;
   height: 48px;
@@ -527,7 +519,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c32 {
+.c31 {
   background: #7A7000;
   width: 48px;
   height: 48px;
@@ -535,7 +527,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c33 {
+.c32 {
   background: #1A70C1;
   width: 48px;
   height: 48px;
@@ -543,7 +535,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c34 {
+.c33 {
   background: #04549F;
   width: 48px;
   height: 48px;
@@ -551,7 +543,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c35 {
+.c34 {
   background: #3C7E44;
   width: 48px;
   height: 48px;
@@ -559,7 +551,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c36 {
+.c35 {
   background: #A14B00;
   width: 48px;
   height: 48px;
@@ -567,7 +559,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c37 {
+.c36 {
   background: #047C68;
   width: 48px;
   height: 48px;
@@ -575,7 +567,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c38 {
+.c37 {
   background: #C93637;
   width: 48px;
   height: 48px;
@@ -583,7 +575,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c39 {
+.c38 {
   background: #FFF7F5;
   width: 48px;
   height: 48px;
@@ -591,7 +583,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c40 {
+.c39 {
   background: #FFE5E0;
   width: 48px;
   height: 48px;
@@ -599,7 +591,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c41 {
+.c40 {
   background: #E6413C;
   width: 48px;
   height: 48px;
@@ -607,7 +599,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c42 {
+.c41 {
   background: #D63E39;
   width: 48px;
   height: 48px;
@@ -615,7 +607,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c43 {
+.c42 {
   background: #BE3933;
   width: 48px;
   height: 48px;
@@ -623,7 +615,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c44 {
+.c43 {
   background: #F88878;
   width: 48px;
   height: 48px;
@@ -631,7 +623,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c45 {
+.c44 {
   background: #FFFFFF;
   width: 48px;
   height: 48px;
@@ -639,7 +631,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c46 {
+.c45 {
   background: rgba(255,255,255,0.88);
   width: 48px;
   height: 48px;
@@ -647,7 +639,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c47 {
+.c46 {
   background: #B9B9B9;
   width: 48px;
   height: 48px;
@@ -655,7 +647,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c48 {
+.c47 {
   background: rgba(255,255,255,0.16);
   width: 48px;
   height: 48px;
@@ -663,7 +655,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c49 {
+.c48 {
   background: rgba(255,255,255,0.08);
   width: 48px;
   height: 48px;
@@ -671,7 +663,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c50 {
+.c49 {
   background: transparent;
   width: 48px;
   height: 48px;
@@ -679,7 +671,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c51 {
+.c50 {
   background: rgba(0,0,0,0.12);
   width: 48px;
   height: 48px;
@@ -687,7 +679,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c52 {
+.c51 {
   background: #121212;
   width: 48px;
   height: 48px;
@@ -695,7 +687,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c53 {
+.c52 {
   background: rgba(255,255,255,0.32);
   width: 48px;
   height: 48px;
@@ -703,7 +695,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c54 {
+.c53 {
   background: rgba(255,255,255,0.48);
   width: 48px;
   height: 48px;
@@ -711,7 +703,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c55 {
+.c54 {
   background: #FF8800;
   width: 48px;
   height: 48px;
@@ -719,7 +711,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c56 {
+.c55 {
   background: #FFDFB1;
   width: 48px;
   height: 48px;
@@ -727,7 +719,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c57 {
+.c56 {
   background: #F6F9FC;
   width: 48px;
   height: 48px;
@@ -735,7 +727,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c58 {
+.c57 {
   background: #E3EBF4;
   width: 48px;
   height: 48px;
@@ -743,7 +735,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c59 {
+.c58 {
   background: #E6F2F8;
   width: 48px;
   height: 48px;
@@ -751,7 +743,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c60 {
+.c59 {
   background: #CD6E0D;
   width: 48px;
   height: 48px;
@@ -759,7 +751,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c61 {
+.c60 {
   background: #A15600;
   width: 48px;
   height: 48px;
@@ -767,7 +759,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c62 {
+.c61 {
   background: #8A77E3;
   width: 48px;
   height: 48px;
@@ -775,7 +767,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c63 {
+.c62 {
   background: #6C5DAF;
   width: 48px;
   height: 48px;
@@ -783,7 +775,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c64 {
+.c63 {
   background: #3093A4;
   width: 48px;
   height: 48px;
@@ -791,7 +783,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c65 {
+.c64 {
   background: #2B727F;
   width: 48px;
   height: 48px;
@@ -799,7 +791,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c66 {
+.c65 {
   background: #B17D1A;
   width: 48px;
   height: 48px;
@@ -807,7 +799,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c67 {
+.c66 {
   background: #F9F9F9;
   width: 48px;
   height: 48px;
@@ -815,7 +807,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c68 {
+.c67 {
   background: #939393;
   width: 48px;
   height: 48px;
@@ -823,7 +815,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c69 {
+.c68 {
   background: #757575;
   width: 48px;
   height: 48px;
@@ -831,7 +823,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c70 {
+.c69 {
   background: #E5E5E5;
   width: 48px;
   height: 48px;
@@ -839,7 +831,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c71 {
+.c70 {
   background: #F3F3F3;
   width: 48px;
   height: 48px;
@@ -847,7 +839,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c72 {
+.c71 {
   background: #000000;
   width: 48px;
   height: 48px;
@@ -855,7 +847,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c73 {
+.c72 {
   background: #C7C7C7;
   width: 48px;
   height: 48px;
@@ -863,17 +855,13 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
-.c14 {
+.c13 {
   margin-left: 8px;
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c3:hover {
     background-color: transparent;
-  }
-
-  .c3:hover,
-  .c3:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -941,10 +929,10 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
           type="button"
         >
           <span
-            className="c6 c7 delete_circle icon"
+            className="c6 delete_circle icon"
           >
             <svg
-              className="c8"
+              className="c7"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -956,7 +944,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
           </span>
         </button>
         <div
-          className="c2 c3 c9"
+          className="c2 c3 c8"
           color="neutral.f04"
           size="medium"
           type="button"
@@ -968,34 +956,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
     className="MuiBox-root MuiBox-root-4"
   >
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       warning
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c13"
+          className="c12"
           color="#FFF7EB"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             warning.b01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1004,24 +992,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c17"
+          className="c16"
           color="#FFE7C1"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             warning.b02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1030,24 +1018,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c18"
+          className="c17"
           color="#F6AD16"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             warning.b03
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1056,24 +1044,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c18"
+          className="c17"
           color="#F6AD16"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             warning.f01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1082,24 +1070,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c19"
+          className="c18"
           color="#896219"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             warning.f02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1108,24 +1096,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c18"
+          className="c17"
           color="#F6AD16"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             warning.f11
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1135,34 +1123,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       success
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c20"
+          className="c19"
           color="#F0FCEF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             success.b01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1171,24 +1159,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c21"
+          className="c20"
           color="#CEF4CE"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             success.b02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1197,24 +1185,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c22"
+          className="c21"
           color="#3C9949"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             success.b03
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1223,24 +1211,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c23"
+          className="c22"
           color="#368541"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             success.b04
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1249,24 +1237,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c22"
+          className="c21"
           color="#3C9949"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             success.b05
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1275,24 +1263,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c21"
+          className="c20"
           color="#CEF4CE"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             success.f01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1301,24 +1289,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c24"
+          className="c23"
           color="#32773B"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             success.f02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1327,24 +1315,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c25"
+          className="c24"
           color="#46BE59"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             success.f11
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1354,34 +1342,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       action
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c26"
+          className="c25"
           color="#494949"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             action.grayDark
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1390,24 +1378,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c27"
+          className="c26"
           color="#666666"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             action.grayLight
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1416,24 +1404,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c28"
+          className="c27"
           color="#066FAC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             action.primary
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1443,34 +1431,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       avatar
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c27"
+          className="c26"
           color="#666666"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             avatar.ash
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1479,24 +1467,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c29"
+          className="c28"
           color="#5A5ABF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             avatar.blueberry
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1505,24 +1493,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c30"
+          className="c29"
           color="#8E6B2B"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             avatar.brass
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1531,24 +1519,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c31"
+          className="c30"
           color="#509AC4"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             avatar.global
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1557,24 +1545,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c32"
+          className="c31"
           color="#7A7000"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             avatar.gold
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1583,24 +1571,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c33"
+          className="c32"
           color="#1A70C1"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             avatar.lake
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1609,24 +1597,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c34"
+          className="c33"
           color="#04549F"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             avatar.oasis
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1635,24 +1623,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c35"
+          className="c34"
           color="#3C7E44"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             avatar.pear
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1661,24 +1649,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c36"
+          className="c35"
           color="#A14B00"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             avatar.persimmon
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1687,24 +1675,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c37"
+          className="c36"
           color="#047C68"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             avatar.sage
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1713,24 +1701,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c38"
+          className="c37"
           color="#C93637"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             avatar.tomato
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1740,34 +1728,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       content
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c28"
+          className="c27"
           color="#066FAC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             content.brand
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1777,34 +1765,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       danger
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c39"
+          className="c38"
           color="#FFF7F5"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             danger.b01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1813,24 +1801,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c40"
+          className="c39"
           color="#FFE5E0"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             danger.b02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1839,24 +1827,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c41"
+          className="c40"
           color="#E6413C"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             danger.b03
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1865,24 +1853,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c42"
+          className="c41"
           color="#D63E39"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             danger.b04
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1891,24 +1879,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c40"
+          className="c39"
           color="#FFE5E0"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             danger.f01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1917,24 +1905,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c43"
+          className="c42"
           color="#BE3933"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             danger.f02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1943,24 +1931,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c44"
+          className="c43"
           color="#F88878"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             danger.f11
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -1970,34 +1958,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       dialHeader
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             dialHeader.avatarBg
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2006,24 +1994,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c28"
+          className="c27"
           color="#066FAC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             dialHeader.avatarIcon
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2032,24 +2020,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c28"
+          className="c27"
           color="#066FAC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             dialHeader.bg
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2058,24 +2046,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             dialHeader.focusBorder
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2084,24 +2072,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             dialHeader.icon
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2110,24 +2098,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             dialHeader.text
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2136,24 +2124,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c46"
+          className="c45"
           color="rgba(255,255,255,0.88)"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             dialHeader.textHint
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2163,34 +2151,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       disabled
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c47"
+          className="c46"
           color="#B9B9B9"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             disabled.b01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2199,24 +2187,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             disabled.f01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2225,24 +2213,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c47"
+          className="c46"
           color="#B9B9B9"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             disabled.f02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2252,34 +2240,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       header
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c28"
+          className="c27"
           color="#066FAC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             header.bgLeft
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2288,24 +2276,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c48"
+          className="c47"
           color="rgba(255,255,255,0.16)"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             header.bgOverlay
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2314,24 +2302,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c49"
+          className="c48"
           color="rgba(255,255,255,0.08)"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             header.bgOverlayDisabled
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2340,24 +2328,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c31"
+          className="c30"
           color="#509AC4"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             header.bgRight
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2366,24 +2354,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c50"
+          className="c49"
           color="transparent"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             header.border
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2392,24 +2380,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c51"
+          className="c50"
           color="rgba(0,0,0,0.12)"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             header.divider
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2418,24 +2406,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             header.fabBg
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2444,24 +2432,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c52"
+          className="c51"
           color="#121212"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             header.fabIcon
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2470,24 +2458,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             header.focusBorder
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2496,24 +2484,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             header.icon
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2522,24 +2510,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c53"
+          className="c52"
           color="rgba(255,255,255,0.32)"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             header.iconDisabled
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2548,24 +2536,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             header.text
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2574,24 +2562,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c54"
+          className="c53"
           color="rgba(255,255,255,0.48)"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             header.textHint
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2601,34 +2589,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       highContrast
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c50"
+          className="c49"
           color="transparent"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             highContrast
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2638,34 +2626,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       highlight
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c55"
+          className="c54"
           color="#FF8800"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             highlight.b01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2674,24 +2662,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c56"
+          className="c55"
           color="#FFDFB1"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             highlight.b02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2700,24 +2688,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c55"
+          className="c54"
           color="#FF8800"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             highlight.b03
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2726,24 +2714,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c52"
+          className="c51"
           color="#121212"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             highlight.f01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2752,24 +2740,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c55"
+          className="c54"
           color="#FF8800"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             highlight.f02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2779,34 +2767,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       informative
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c57"
+          className="c56"
           color="#F6F9FC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             informative.b01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2815,24 +2803,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c58"
+          className="c57"
           color="#E3EBF4"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             informative.f01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2841,24 +2829,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c28"
+          className="c27"
           color="#066FAC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             informative.f02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2868,34 +2856,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       interactive
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c59"
+          className="c58"
           color="#E6F2F8"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             interactive.b01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2904,24 +2892,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c28"
+          className="c27"
           color="#066FAC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             interactive.b02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2930,24 +2918,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c28"
+          className="c27"
           color="#066FAC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             interactive.f01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2957,34 +2945,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       label
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c52"
+          className="c51"
           color="#121212"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             label.black02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -2993,24 +2981,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c28"
+          className="c27"
           color="#066FAC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             label.blue01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3019,24 +3007,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c28"
+          className="c27"
           color="#066FAC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             label.blue02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3045,24 +3033,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c22"
+          className="c21"
           color="#3C9949"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             label.green01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3071,24 +3059,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c24"
+          className="c23"
           color="#32773B"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             label.green02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3097,24 +3085,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c60"
+          className="c59"
           color="#CD6E0D"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             label.orange01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3123,24 +3111,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c61"
+          className="c60"
           color="#A15600"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             label.orange02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3149,24 +3137,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c62"
+          className="c61"
           color="#8A77E3"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             label.purple01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3175,24 +3163,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c63"
+          className="c62"
           color="#6C5DAF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             label.purple02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3201,24 +3189,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c41"
+          className="c40"
           color="#E6413C"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             label.red01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3227,24 +3215,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c43"
+          className="c42"
           color="#BE3933"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             label.red02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3253,24 +3241,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c64"
+          className="c63"
           color="#3093A4"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             label.teal01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3279,24 +3267,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c65"
+          className="c64"
           color="#2B727F"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             label.teal02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3305,24 +3293,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c66"
+          className="c65"
           color="#B17D1A"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             label.yellow01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3331,24 +3319,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c19"
+          className="c18"
           color="#896219"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             label.yellow02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3358,34 +3346,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       nav
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             nav.b01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3394,24 +3382,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c67"
+          className="c66"
           color="#F9F9F9"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             nav.b02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3420,24 +3408,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c28"
+          className="c27"
           color="#066FAC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             nav.bookmark
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3446,24 +3434,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c68"
+          className="c67"
           color="#939393"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             nav.ctlDefault
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3472,24 +3460,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c28"
+          className="c27"
           color="#066FAC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             nav.ctlSelected
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3498,24 +3486,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c69"
+          className="c68"
           color="#757575"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             nav.f01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3524,24 +3512,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c27"
+          className="c26"
           color="#666666"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             nav.f02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3550,24 +3538,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c26"
+          className="c25"
           color="#494949"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             nav.f03
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3576,24 +3564,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c52"
+          className="c51"
           color="#121212"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             nav.f04
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3602,24 +3590,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c52"
+          className="c51"
           color="#121212"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             nav.iconDefault
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3628,24 +3616,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c28"
+          className="c27"
           color="#066FAC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             nav.iconSelected
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3654,24 +3642,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c70"
+          className="c69"
           color="#E5E5E5"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             nav.line
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3680,24 +3668,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c55"
+          className="c54"
           color="#FF8800"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             nav.mention
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3706,24 +3694,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c28"
+          className="c27"
           color="#066FAC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             nav.menuBg
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3732,24 +3720,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             nav.menuText
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3759,34 +3747,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       neutral
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.b01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3795,24 +3783,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c67"
+          className="c66"
           color="#F9F9F9"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.b02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3821,24 +3809,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c71"
+          className="c70"
           color="#F3F3F3"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.b03
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3847,24 +3835,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c27"
+          className="c26"
           color="#666666"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.b04
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3873,24 +3861,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c26"
+          className="c25"
           color="#494949"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.b05
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3899,24 +3887,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c72"
+          className="c71"
           color="#000000"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.b06
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3925,24 +3913,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.elevation
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3951,24 +3939,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.f01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -3977,24 +3965,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c68"
+          className="c67"
           color="#939393"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.f02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4003,24 +3991,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c69"
+          className="c68"
           color="#757575"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.f03
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4029,24 +4017,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c27"
+          className="c26"
           color="#666666"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.f04
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4055,24 +4043,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c26"
+          className="c25"
           color="#494949"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.f05
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4081,24 +4069,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c52"
+          className="c51"
           color="#121212"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.f06
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4107,24 +4095,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c52"
+          className="c51"
           color="#121212"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.f07
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4133,24 +4121,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.f11
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4159,24 +4147,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.l01
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4185,24 +4173,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c70"
+          className="c69"
           color="#E5E5E5"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.l02
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4211,24 +4199,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c73"
+          className="c72"
           color="#C7C7C7"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.l03
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4237,24 +4225,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c27"
+          className="c26"
           color="#666666"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.l04
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4263,24 +4251,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c50"
+          className="c49"
           color="transparent"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             neutral.transparent
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4290,34 +4278,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       presence
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c22"
+          className="c21"
           color="#3C9949"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             presence.available
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4326,24 +4314,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c41"
+          className="c40"
           color="#E6413C"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             presence.busy
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4352,24 +4340,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c68"
+          className="c67"
           color="#939393"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             presence.invisible
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4379,34 +4367,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       subAction
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c28"
+          className="c27"
           color="#066FAC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             subAction
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4416,34 +4404,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       tab
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c52"
+          className="c51"
           color="#121212"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             tab.default
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4452,24 +4440,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c28"
+          className="c27"
           color="#066FAC"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             tab.selected
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4479,34 +4467,34 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       </div>
     </div>
     <h4
-      className="MuiTypography-root c10"
+      className="MuiTypography-root c9"
       data-color="neutral.f06"
       data-variant="display1"
     >
       umi
     </h4>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c27"
+          className="c26"
           color="#666666"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             umi.bg
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4515,24 +4503,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c55"
+          className="c54"
           color="#FF8800"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             umi.mentioned
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >
@@ -4541,24 +4529,24 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         </div>
       </div>
       <div
-        className="c12"
+        className="c11"
       >
         <div
-          className="c45"
+          className="c44"
           color="#FFFFFF"
         />
         <div
-          className="c14"
+          className="c13"
         >
           <p
-            className="MuiTypography-root c15"
+            className="MuiTypography-root c14"
             data-color="neutral.f06"
             data-variant="body1"
           >
             umi.text
           </p>
           <p
-            className="MuiTypography-root c16"
+            className="MuiTypography-root c15"
             data-color="neutral.f05"
             data-variant="body1"
           >

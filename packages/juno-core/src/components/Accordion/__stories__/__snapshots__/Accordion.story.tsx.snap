@@ -24,7 +24,7 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/Accordion Accordion 1`] = 
   margin: 0;
 }
 
-.c7 {
+.c6 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -33,7 +33,7 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/Accordion Accordion 1`] = 
   pointer-events: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -61,15 +61,10 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/Accordion Accordion 1`] = 
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c4,
-.c4 .c5 {
   font-size: 20px;
 }
 
-.c4:active,
-.c4:active .c5 {
+.c4:active {
   color: #666666;
 }
 
@@ -79,9 +74,7 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/Accordion Accordion 1`] = 
 }
 
 .c4.focus-visible:active,
-.c4[data-focus-visible-added]:active,
-.c4.focus-visible:active .c5,
-.c4[data-focus-visible-added]:active .c5 {
+.c4[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -89,8 +82,7 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/Accordion Accordion 1`] = 
   background-color: rgba(102,102,102,0.12);
 }
 
-.c4.RcIconButton-disabled,
-.c4.RcIconButton-disabled .c5 {
+.c4.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -171,7 +163,7 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/Accordion Accordion 1`] = 
   padding: 0;
 }
 
-.c8 {
+.c7 {
   border-top: 1px solid #E5E5E5;
   padding: 16px;
 }
@@ -179,10 +171,6 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/Accordion Accordion 1`] = 
 @media (hover:hover) and (pointer:fine) {
   .c4:hover {
     background-color: rgba(102,102,102,0.08);
-  }
-
-  .c4:hover,
-  .c4:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -263,10 +251,10 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/Accordion Accordion 1`] = 
           type="button"
         >
           <span
-            className="c5 c6 arrow_down icon"
+            className="c5 arrow_down icon"
           >
             <svg
-              className="c7"
+              className="c6"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -304,7 +292,7 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/Accordion Accordion 1`] = 
           role="region"
         >
           <div
-            className="MuiAccordionDetails-root c8"
+            className="MuiAccordionDetails-root c7"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
           </div>
@@ -340,7 +328,7 @@ Array [
   margin: 0;
 }
 
-.c7 {
+.c6 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -349,7 +337,7 @@ Array [
   pointer-events: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -377,15 +365,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c4,
-.c4 .c5 {
   font-size: 20px;
 }
 
-.c4:active,
-.c4:active .c5 {
+.c4:active {
   color: #666666;
 }
 
@@ -395,9 +378,7 @@ Array [
 }
 
 .c4.focus-visible:active,
-.c4[data-focus-visible-added]:active,
-.c4.focus-visible:active .c5,
-.c4[data-focus-visible-added]:active .c5 {
+.c4[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -405,8 +386,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c4.RcIconButton-disabled,
-.c4.RcIconButton-disabled .c5 {
+.c4.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -487,7 +467,7 @@ Array [
   padding: 0;
 }
 
-.c8 {
+.c7 {
   border-top: 1px solid #E5E5E5;
   padding: 16px;
 }
@@ -495,10 +475,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c4:hover {
     background-color: rgba(102,102,102,0.08);
-  }
-
-  .c4:hover,
-  .c4:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -581,10 +557,10 @@ Array [
             type="button"
           >
             <span
-              className="c5 c6 arrow_down icon"
+              className="c5 arrow_down icon"
             >
               <svg
-                className="c7"
+                className="c6"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -618,7 +594,7 @@ Array [
             role="region"
           >
             <div
-              className="MuiAccordionDetails-root c8"
+              className="MuiAccordionDetails-root c7"
             >
               Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.
             </div>
@@ -650,7 +626,7 @@ Array [
   margin: 0;
 }
 
-.c7 {
+.c6 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -659,7 +635,7 @@ Array [
   pointer-events: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -687,15 +663,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c4,
-.c4 .c5 {
   font-size: 20px;
 }
 
-.c4:active,
-.c4:active .c5 {
+.c4:active {
   color: #666666;
 }
 
@@ -705,9 +676,7 @@ Array [
 }
 
 .c4.focus-visible:active,
-.c4[data-focus-visible-added]:active,
-.c4.focus-visible:active .c5,
-.c4[data-focus-visible-added]:active .c5 {
+.c4[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -715,8 +684,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c4.RcIconButton-disabled,
-.c4.RcIconButton-disabled .c5 {
+.c4.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -797,7 +765,7 @@ Array [
   padding: 0;
 }
 
-.c8 {
+.c7 {
   border-top: 1px solid #E5E5E5;
   padding: 16px;
 }
@@ -805,10 +773,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c4:hover {
     background-color: rgba(102,102,102,0.08);
-  }
-
-  .c4:hover,
-  .c4:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -891,10 +855,10 @@ Array [
             type="button"
           >
             <span
-              className="c5 c6 arrow_down icon"
+              className="c5 arrow_down icon"
             >
               <svg
-                className="c7"
+                className="c6"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -928,7 +892,7 @@ Array [
             role="region"
           >
             <div
-              className="MuiAccordionDetails-root c8"
+              className="MuiAccordionDetails-root c7"
             >
               Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus, varius pulvinar diam eros in elit. Pellentesque convallis laoreet laoreet.
             </div>
@@ -960,7 +924,7 @@ Array [
   margin: 0;
 }
 
-.c7 {
+.c6 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -969,7 +933,7 @@ Array [
   pointer-events: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -997,15 +961,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c4,
-.c4 .c5 {
   font-size: 20px;
 }
 
-.c4:active,
-.c4:active .c5 {
+.c4:active {
   color: #666666;
 }
 
@@ -1015,9 +974,7 @@ Array [
 }
 
 .c4.focus-visible:active,
-.c4[data-focus-visible-added]:active,
-.c4.focus-visible:active .c5,
-.c4[data-focus-visible-added]:active .c5 {
+.c4[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -1025,8 +982,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c4.RcIconButton-disabled,
-.c4.RcIconButton-disabled .c5 {
+.c4.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -1107,7 +1063,7 @@ Array [
   padding: 0;
 }
 
-.c8 {
+.c7 {
   border-top: 1px solid #E5E5E5;
   padding: 16px;
 }
@@ -1115,10 +1071,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c4:hover {
     background-color: rgba(102,102,102,0.08);
-  }
-
-  .c4:hover,
-  .c4:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -1201,10 +1153,10 @@ Array [
             type="button"
           >
             <span
-              className="c5 c6 arrow_down icon"
+              className="c5 arrow_down icon"
             >
               <svg
-                className="c7"
+                className="c6"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -1238,7 +1190,7 @@ Array [
             role="region"
           >
             <div
-              className="MuiAccordionDetails-root c8"
+              className="MuiAccordionDetails-root c7"
             >
               Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros, vitae egestas augue. Duis vel est augue.
             </div>

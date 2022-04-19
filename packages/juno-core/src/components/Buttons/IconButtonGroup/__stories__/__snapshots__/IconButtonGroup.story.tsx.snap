@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGroup 1`] = `
-.c5 {
+.c4 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -10,7 +10,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   pointer-events: none;
 }
 
-.c4 {
+.c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -38,15 +38,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c2,
-.c2 .c3 {
   font-size: 20px;
 }
 
-.c2:active,
-.c2:active .c3 {
+.c2:active {
   color: #666666;
 }
 
@@ -56,9 +51,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 }
 
 .c2.focus-visible:active,
-.c2[data-focus-visible-added]:active,
-.c2.focus-visible:active .c3,
-.c2[data-focus-visible-added]:active .c3 {
+.c2[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -80,8 +73,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   background-color: rgba(102,102,102,0.12);
 }
 
-.c2.RcIconButton-disabled,
-.c2.RcIconButton-disabled .c3 {
+.c2.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -169,10 +161,6 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 @media (hover:hover) and (pointer:fine) {
   .c2:hover {
     background-color: transparent;
-  }
-
-  .c2:hover,
-  .c2:hover .c3 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -218,10 +206,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c3 c4 emoji icon"
+        className="c3 emoji icon"
       >
         <svg
-          className="c5"
+          className="c4"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -254,10 +242,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c3 c4 quote icon"
+        className="c3 quote icon"
       >
         <svg
-          className="c5"
+          className="c4"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -290,10 +278,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c3 c4 unpin icon"
+        className="c3 unpin icon"
       >
         <svg
-          className="c5"
+          className="c4"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -326,10 +314,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c3 c4 signal-0 icon"
+        className="c3 signal-0 icon"
       >
         <svg
-          className="c5"
+          className="c4"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -345,7 +333,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 `;
 
 exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGroup Examples 1`] = `
-.c6 {
+.c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -354,7 +342,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -382,15 +370,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c3,
-.c3 .c4 {
   font-size: 20px;
 }
 
-.c3:active,
-.c3:active .c4 {
+.c3:active {
   color: #666666;
 }
 
@@ -400,9 +383,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 }
 
 .c3.focus-visible:active,
-.c3[data-focus-visible-added]:active,
-.c3.focus-visible:active .c4,
-.c3[data-focus-visible-added]:active .c4 {
+.c3[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -424,8 +405,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   background-color: rgba(102,102,102,0.12);
 }
 
-.c3.RcIconButton-disabled,
-.c3.RcIconButton-disabled .c4 {
+.c3.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -478,6 +458,100 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   opacity: 0;
 }
 
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #666666;
+  border-radius: 50%;
+  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.c7:active {
+  color: #666666;
+}
+
+.c7.focus-visible,
+.c7[data-focus-visible-added] {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c7.focus-visible:active,
+.c7[data-focus-visible-added]:active {
+  color: rgba(102,102,102,0.88);
+}
+
+.c7.RcIconButton-persistBg {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c7.RcIconButton-disabled {
+  color: #B9B9B9;
+}
+
+.c7.RcIconButton-invisible {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.c7.RcIconButton-outline {
+  border: 1px solid #C7C7C7;
+}
+
+.c7.RcIconButton-contained {
+  color: #fff;
+  background-color: #666666;
+}
+
+.c7.RcIconButton-contained:before {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c7.RcIconButton-contained.focus-visible,
+.c7.RcIconButton-contained[data-focus-visible-added] {
+  color: #fff;
+}
+
+.c7.RcIconButton-contained.focus-visible:before,
+.c7.RcIconButton-contained[data-focus-visible-added]:before {
+  background-color: rgba(255,255,255,0.16);
+}
+
+.c7.RcIconButton-contained:active {
+  color: #fff;
+}
+
+.c7 .RcIconButtonTouchRipple-ripplePulsate {
+  border-radius: 0;
+  -webkit-animation-name: none;
+  animation-name: none;
+  opacity: 0;
+}
+
 .c8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -498,37 +572,31 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c8,
-.c8 .c4 {
+  background-color: rgba(102,102,102,0.16);
   font-size: 20px;
 }
 
-.c8:active,
-.c8:active .c4 {
+.c8:active {
   color: #666666;
 }
 
 .c8.focus-visible,
 .c8[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.16);
+  background-color: rgba(102,102,102,0.32);
 }
 
 .c8.focus-visible:active,
-.c8[data-focus-visible-added]:active,
-.c8.focus-visible:active .c4,
-.c8[data-focus-visible-added]:active .c4 {
+.c8[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
 .c8.RcIconButton-persistBg {
-  background-color: rgba(102,102,102,0.12);
+  background-color: rgba(102,102,102,0.16);
 }
 
-.c8.RcIconButton-disabled,
-.c8.RcIconButton-disabled .c4 {
+.c8.RcIconButton-disabled {
   color: #B9B9B9;
+  background-color: rgba(102,102,102,0.12);
 }
 
 .c8.RcIconButton-invisible {
@@ -580,114 +648,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   opacity: 0;
 }
 
-.c9 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  color: #666666;
-  border-radius: 50%;
-  -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
-  transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
-  cursor: pointer;
-  background-color: rgba(102,102,102,0.16);
-}
-
-.c9,
-.c9 .c4 {
-  font-size: 20px;
-}
-
-.c9:active,
-.c9:active .c4 {
-  color: #666666;
-}
-
-.c9.focus-visible,
-.c9[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.32);
-}
-
-.c9.focus-visible:active,
-.c9[data-focus-visible-added]:active,
-.c9.focus-visible:active .c4,
-.c9[data-focus-visible-added]:active .c4 {
-  color: rgba(102,102,102,0.88);
-}
-
-.c9.RcIconButton-persistBg {
-  background-color: rgba(102,102,102,0.16);
-}
-
-.c9.RcIconButton-disabled {
-  background-color: rgba(102,102,102,0.12);
-}
-
-.c9.RcIconButton-disabled,
-.c9.RcIconButton-disabled .c4 {
-  color: #B9B9B9;
-}
-
-.c9.RcIconButton-invisible {
-  opacity: 0;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
-.c9.RcIconButton-outline {
-  border: 1px solid #C7C7C7;
-}
-
-.c9.RcIconButton-contained {
-  color: #fff;
-  background-color: #666666;
-}
-
-.c9.RcIconButton-contained:before {
-  content: '';
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.c9.RcIconButton-contained.focus-visible,
-.c9.RcIconButton-contained[data-focus-visible-added] {
-  color: #fff;
-}
-
-.c9.RcIconButton-contained.focus-visible:before,
-.c9.RcIconButton-contained[data-focus-visible-added]:before {
-  background-color: rgba(255,255,255,0.16);
-}
-
-.c9.RcIconButton-contained:active {
-  color: #fff;
-}
-
-.c9 .RcIconButtonTouchRipple-ripplePulsate {
-  border-radius: 0;
-  -webkit-animation-name: none;
-  animation-name: none;
-  opacity: 0;
-}
-
-.c11 {
+.c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -707,56 +668,48 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c11,
-.c11 .c4 {
   font-size: 24px;
 }
 
-.c11:active,
-.c11:active .c4 {
+.c10:active {
   color: #666666;
 }
 
-.c11.focus-visible,
-.c11[data-focus-visible-added] {
+.c10.focus-visible,
+.c10[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
-.c11.focus-visible:active,
-.c11[data-focus-visible-added]:active,
-.c11.focus-visible:active .c4,
-.c11[data-focus-visible-added]:active .c4 {
+.c10.focus-visible:active,
+.c10[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
-.c11.RcIconButton-persistBg {
+.c10.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c11.RcIconButton-disabled,
-.c11.RcIconButton-disabled .c4 {
+.c10.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
-.c11.RcIconButton-invisible {
+.c10.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c11.RcIconButton-outline {
+.c10.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c11.RcIconButton-contained {
+.c10.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c11.RcIconButton-contained:before {
+.c10.RcIconButton-contained:before {
   content: '';
   left: 0;
   right: 0;
@@ -768,28 +721,28 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   position: absolute;
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added] {
+.c10.RcIconButton-contained.focus-visible,
+.c10.RcIconButton-contained[data-focus-visible-added] {
   color: #fff;
 }
 
-.c11.RcIconButton-contained.focus-visible:before,
-.c11.RcIconButton-contained[data-focus-visible-added]:before {
+.c10.RcIconButton-contained.focus-visible:before,
+.c10.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c11.RcIconButton-contained:active {
+.c10.RcIconButton-contained:active {
   color: #fff;
 }
 
-.c11 .RcIconButtonTouchRipple-ripplePulsate {
+.c10 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
   opacity: 0;
 }
 
-.c11 .RcIconButtonTouchRipple-child {
+.c10 .RcIconButtonTouchRipple-child {
   -webkit-transform: scale(1.41421357);
   -ms-transform: scale(1.41421357);
   transform: scale(1.41421357);
@@ -822,7 +775,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   margin-left: 12px;
 }
 
-.c7 {
+.c6 {
   border-radius: 100vw;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -844,11 +797,11 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   align-items: center;
 }
 
-.c7 > * + * {
+.c6 > * + * {
   margin-left: 0;
 }
 
-.c10 {
+.c9 {
   border-radius: 3px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -870,7 +823,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
   align-items: center;
 }
 
-.c10 > * + * {
+.c9 > * + * {
   margin-left: 0;
 }
 
@@ -890,10 +843,6 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 @media (hover:hover) and (pointer:fine) {
   .c3:hover {
     background-color: transparent;
-  }
-
-  .c3:hover,
-  .c3:hover .c4 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -909,12 +858,25 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c8:hover {
+  .c7:hover {
     background-color: rgba(102,102,102,0.08);
+    color: rgba(102,102,102,0.88);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7.RcIconButton-contained:hover {
+    color: #fff;
   }
 
-  .c8:hover,
-  .c8:hover .c4 {
+  .c7.RcIconButton-contained:hover:before {
+    background-color: rgba(255,255,255,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c8:hover {
+    background-color: rgba(102,102,102,0.24);
     color: rgba(102,102,102,0.88);
   }
 }
@@ -930,43 +892,18 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9:hover {
-    background-color: rgba(102,102,102,0.24);
-  }
-
-  .c9:hover,
-  .c9:hover .c4 {
-    color: rgba(102,102,102,0.88);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c9.RcIconButton-contained:hover {
-    color: #fff;
-  }
-
-  .c9.RcIconButton-contained:hover:before {
-    background-color: rgba(255,255,255,0.08);
-  }
-}
-
-@media (hover:hover) and (pointer:fine) {
-  .c11:hover {
+  .c10:hover {
     background-color: rgba(102,102,102,0.08);
-  }
-
-  .c11:hover,
-  .c11:hover .c4 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover {
+  .c10.RcIconButton-contained:hover {
     color: #fff;
   }
 
-  .c11.RcIconButton-contained:hover:before {
+  .c10.RcIconButton-contained:hover:before {
     background-color: rgba(255,255,255,0.08);
   }
 }
@@ -1014,10 +951,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c4 c5 emoji icon"
+        className="c4 emoji icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1050,10 +987,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c4 c5 quote icon"
+        className="c4 quote icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1086,10 +1023,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c4 c5 unpin icon"
+        className="c4 unpin icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1122,10 +1059,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c4 c5 signal-0 icon"
+        className="c4 signal-0 icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1145,7 +1082,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
     round
   </h5>
   <div
-    className="c7 group"
+    className="c6 group"
     direction="horizontal"
     onClick={[Function]}
     onKeyUp={[Function]}
@@ -1153,7 +1090,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
     <button
       aria-describedby={null}
       aria-label="like"
-      className="MuiButtonBase-root c8 RcIconButton-root"
+      className="MuiButtonBase-root c7 RcIconButton-root"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -1172,10 +1109,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c4 c5 emoji icon"
+        className="c4 emoji icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1192,7 +1129,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
     <button
       aria-describedby={null}
       aria-label="like"
-      className="MuiButtonBase-root c8 RcIconButton-root"
+      className="MuiButtonBase-root c7 RcIconButton-root"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -1211,10 +1148,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c4 c5 quote icon"
+        className="c4 quote icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1231,7 +1168,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
     <button
       aria-describedby={null}
       aria-label="like"
-      className="MuiButtonBase-root c8 RcIconButton-root"
+      className="MuiButtonBase-root c7 RcIconButton-root"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -1250,10 +1187,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c4 c5 unpin icon"
+        className="c4 unpin icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1270,7 +1207,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
     <button
       aria-describedby={null}
       aria-label="like"
-      className="MuiButtonBase-root c8 RcIconButton-root"
+      className="MuiButtonBase-root c7 RcIconButton-root"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -1289,10 +1226,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c4 c5 signal-0 icon"
+        className="c4 signal-0 icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1315,7 +1252,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
     inverse
   </h5>
   <div
-    className="c7 group"
+    className="c6 group"
     direction="horizontal"
     onClick={[Function]}
     onKeyUp={[Function]}
@@ -1323,7 +1260,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
     <button
       aria-describedby={null}
       aria-label="like"
-      className="MuiButtonBase-root c9 RcIconButton-root RcIconButton-inverse"
+      className="MuiButtonBase-root c8 RcIconButton-root RcIconButton-inverse"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -1342,10 +1279,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c4 c5 emoji icon"
+        className="c4 emoji icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1362,7 +1299,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
     <button
       aria-describedby={null}
       aria-label="like"
-      className="MuiButtonBase-root c9 RcIconButton-root RcIconButton-inverse"
+      className="MuiButtonBase-root c8 RcIconButton-root RcIconButton-inverse"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -1381,10 +1318,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c4 c5 quote icon"
+        className="c4 quote icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1401,7 +1338,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
     <button
       aria-describedby={null}
       aria-label="like"
-      className="MuiButtonBase-root c9 RcIconButton-root RcIconButton-inverse"
+      className="MuiButtonBase-root c8 RcIconButton-root RcIconButton-inverse"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -1420,10 +1357,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c4 c5 unpin icon"
+        className="c4 unpin icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1440,7 +1377,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
     <button
       aria-describedby={null}
       aria-label="like"
-      className="MuiButtonBase-root c9 RcIconButton-root RcIconButton-inverse"
+      className="MuiButtonBase-root c8 RcIconButton-root RcIconButton-inverse"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -1459,10 +1396,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c4 c5 signal-0 icon"
+        className="c4 signal-0 icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1485,7 +1422,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
     outline
   </h5>
   <div
-    className="c10 group"
+    className="c9 group"
     direction="horizontal"
     onClick={[Function]}
     onKeyUp={[Function]}
@@ -1493,7 +1430,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
     <button
       aria-describedby={null}
       aria-label="like"
-      className="MuiButtonBase-root c11 RcIconButton-root RcIconButton-outline"
+      className="MuiButtonBase-root c10 RcIconButton-root RcIconButton-outline"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -1512,10 +1449,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c4 c5 emoji icon"
+        className="c4 emoji icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1532,7 +1469,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
     <button
       aria-describedby={null}
       aria-label="like"
-      className="MuiButtonBase-root c11 RcIconButton-root RcIconButton-outline"
+      className="MuiButtonBase-root c10 RcIconButton-root RcIconButton-outline"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -1551,10 +1488,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c4 c5 quote icon"
+        className="c4 quote icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1571,7 +1508,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
     <button
       aria-describedby={null}
       aria-label="like"
-      className="MuiButtonBase-root c11 RcIconButton-root RcIconButton-outline"
+      className="MuiButtonBase-root c10 RcIconButton-root RcIconButton-outline"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -1590,10 +1527,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c4 c5 unpin icon"
+        className="c4 unpin icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1610,7 +1547,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
     <button
       aria-describedby={null}
       aria-label="like"
-      className="MuiButtonBase-root c11 RcIconButton-root RcIconButton-outline"
+      className="MuiButtonBase-root c10 RcIconButton-root RcIconButton-outline"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -1629,10 +1566,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
       type="button"
     >
       <span
-        className="c4 c5 signal-0 icon"
+        className="c4 signal-0 icon"
       >
         <svg
-          className="c6"
+          className="c5"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
