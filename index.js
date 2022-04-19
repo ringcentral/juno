@@ -55758,7 +55758,6 @@ var getFocusVisibleInsetSize = ({ size }) => {
       left: -${inset}px;
     `;
 };
-var childrenClass = `&,${RcIcon}`;
 var containedVariantTransitions = ({ theme }) => theme.transitions.create(["background-color", "box-shadow", "border"], {
   duration: theme.transitions.duration.short
 });
@@ -55830,33 +55829,25 @@ var iconButtonStyle = ({
       }
     `};
 
-    ${childrenClass} {
-      font-size: ${stretchIcon ? containerSize : px2(isOutline ? iconSize * 1.2 : iconSize)};
-    }
+    font-size: ${stretchIcon ? containerSize : px2(isOutline ? iconSize * 1.2 : iconSize)};
 
     ${nonTouchHoverMedia} {
       &:hover {
         background-color: ${isPlain ? "transparent" : setOpacity(mainColor, isInverse ? "24" : "08")};
 
-        ${childrenClass} {
-          color: ${setOpacity(mainColor, "88")};
-        }
+        color: ${setOpacity(mainColor, "88")};
       }
     }
 
     &:active {
-      ${childrenClass} {
-        color: ${mainColor};
-      }
+      color: ${mainColor};
     }
 
     ${focusVisible} {
       background-color: ${isPlain ? "transparent" : setOpacity(mainColor, isInverse ? "32" : "16")};
 
       &:active {
-        ${childrenClass} {
-          color: ${setOpacity(mainColor, "88")};
-        }
+        color: ${setOpacity(mainColor, "88")};
       }
 
       ${isPlain && plainIconButtonFocusStyle({ radius: currRadius })};
@@ -55867,9 +55858,7 @@ var iconButtonStyle = ({
     }
 
     &.${RcIconButtonClasses.disabled} {
-      ${childrenClass} {
-        color: ${useColorWhenDisabled ? setOpacity(mainColor, "32") : palette22("disabled", "f02")};
-      }
+      color: ${useColorWhenDisabled ? setOpacity(mainColor, "32") : palette22("disabled", "f02")};
 
       background-color: ${isInverse && setOpacity(mainColor, "12")};
     }
