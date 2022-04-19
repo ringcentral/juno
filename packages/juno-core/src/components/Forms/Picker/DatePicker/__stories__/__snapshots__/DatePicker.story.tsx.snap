@@ -16,7 +16,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c3 {
@@ -468,7 +468,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c3 {
@@ -962,7 +962,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c3 {
@@ -1541,7 +1541,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c3 {
@@ -2030,7 +2030,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c3 {
@@ -2432,7 +2432,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c3 {
@@ -2817,7 +2817,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c4 {

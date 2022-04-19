@@ -16,7 +16,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c2 {
@@ -467,7 +467,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c1 {
@@ -976,7 +976,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c2 {
@@ -1492,6 +1492,14 @@ Array [
   pointer-events: none;
 }
 
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: inherit;
+}
+
 .c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1608,7 +1616,7 @@ Array [
   opacity: 0;
 }
 
-.c7 {
+.c8 {
   position: absolute;
   right: 0;
   pointer-events: none;
@@ -1626,15 +1634,15 @@ Array [
   position: relative;
 }
 
-.c8 *:not(input) + .c3 {
+.c9 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
-.c8 .RcTextFieldInput-root .c5 {
+.c9 .RcTextFieldInput-root .c5 {
   display: none;
 }
 
-.c8 *:not(input) + .c3 {
+.c9 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -1832,18 +1840,6 @@ Array [
   box-shadow: inset 0 0 0 1px #B9B9B9;
 }
 
-.c9 *:not(input) + .c3 {
-  margin-left: 12px;
-}
-
-.c9 .RcTextFieldInput-root .c5 {
-  display: none;
-}
-
-.c9 *:not(input) + .c3 {
-  margin-left: 12px;
-}
-
 .c10 *:not(input) + .c3 {
   margin-left: 12px;
 }
@@ -1853,6 +1849,18 @@ Array [
 }
 
 .c10 *:not(input) + .c3 {
+  margin-left: 12px;
+}
+
+.c11 *:not(input) + .c3 {
+  margin-left: 12px;
+}
+
+.c11 .RcTextFieldInput-root .c5 {
+  display: none;
+}
+
+.c11 *:not(input) + .c3 {
   margin-left: 12px;
 }
 
@@ -1963,7 +1971,7 @@ Array [
           type="button"
         >
           <span
-            className="c1 delete_circle icon"
+            className="c7 delete_circle icon"
           >
             <svg
               className="c2"
@@ -1978,7 +1986,7 @@ Array [
           </span>
         </button>
         <div
-          className="c3 c4 c7"
+          className="c3 c4 c8"
           color="neutral.f04"
           size="medium"
           type="button"
@@ -2002,7 +2010,7 @@ Array [
         type="button"
       >
         <span
-          className="c1 default-box icon"
+          className="c7 default-box icon"
         >
           <svg
             className="c2"
@@ -2081,7 +2089,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c2 {
@@ -2640,7 +2648,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c2 {
@@ -3199,7 +3207,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c2 {
@@ -3726,7 +3734,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c1 {
@@ -4429,7 +4437,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c2 {
@@ -4936,7 +4944,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c4 {
@@ -5528,7 +5536,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c4 {
@@ -6216,7 +6224,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c1 {
@@ -6808,7 +6816,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c1 {
@@ -7505,7 +7513,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c1 {
@@ -8097,7 +8105,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c1 {

@@ -15,7 +15,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c5 {
@@ -615,7 +615,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c5 {
@@ -1254,7 +1254,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c5 {
@@ -1855,7 +1855,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c5 {
@@ -2333,7 +2333,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c5 {
@@ -2869,7 +2869,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c6 {
@@ -3771,7 +3771,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c10 {
@@ -4741,7 +4741,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c6 {
@@ -5589,7 +5589,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c6 {
@@ -6920,7 +6920,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c5 {
@@ -7556,7 +7556,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c5 {
@@ -8193,7 +8193,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c5 {
@@ -8830,7 +8830,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c5 {
@@ -9467,7 +9467,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c5 {
@@ -10073,7 +10073,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c5 {
@@ -10679,7 +10679,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c5 {
@@ -11288,7 +11288,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c5 {
@@ -11897,7 +11897,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c6 {
@@ -12564,7 +12564,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c5 {

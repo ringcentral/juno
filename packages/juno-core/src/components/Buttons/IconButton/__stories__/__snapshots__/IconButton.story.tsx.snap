@@ -15,7 +15,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c14 {
@@ -23,7 +23,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
   color: #FFFFFF;
 }
 
@@ -1625,7 +1625,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Radius 1
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c1 {
@@ -2981,7 +2981,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c0 {
@@ -3144,7 +3144,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton Examples 1`] =
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c1 {
@@ -4643,7 +4643,7 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c3 {
@@ -10198,7 +10198,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c0 {
@@ -10367,7 +10367,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c0 {
@@ -10541,7 +10541,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c1 {
@@ -15097,7 +15097,7 @@ Array [
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c1 {

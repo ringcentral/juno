@@ -15,7 +15,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c3 {

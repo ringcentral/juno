@@ -401,6 +401,14 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  font-size: inherit;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-size: 24px;
 }
 
@@ -505,7 +513,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
   opacity: 0;
 }
 
-.c17 {
+.c18 {
   text-transform: none;
   font-size: 0.9375rem;
   font-weight: 700;
@@ -517,44 +525,44 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
   padding: 0px 16px;
 }
 
-.c17 .RcButton-startIcon {
+.c18 .RcButton-startIcon {
   margin-right: 8px;
 }
 
-.c17 .RcButton-endIcon {
+.c18 .RcButton-endIcon {
   margin-left: 8px;
 }
 
-.c17.RcButton-text {
+.c18.RcButton-text {
   color: #066FAC;
 }
 
-.c17.RcButton-text.RcButton-disabled {
+.c18.RcButton-text.RcButton-disabled {
   color: #B9B9B9;
 }
 
-.c17.RcButton-contained {
+.c18.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
 }
 
-.c17.RcButton-contained.RcButton-disabled {
+.c18.RcButton-contained.RcButton-disabled {
   background-color: #B9B9B9;
   color: #FFFFFF;
 }
 
-.c17.RcButton-outlined {
+.c18.RcButton-outlined {
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
 }
 
-.c17.RcButton-outlined.RcButton-disabled {
+.c18.RcButton-outlined.RcButton-disabled {
   color: #B9B9B9;
   border-color: #B9B9B9;
 }
 
-.c17.RcButton-outlined:after {
+.c18.RcButton-outlined:after {
   top: -1px;
   bottom: -1px;
   left: -1px;
@@ -596,11 +604,11 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
   background-color: rgba(102,102,102,0.24);
 }
 
-.c10 {
+.c11 {
   padding: 16px;
 }
 
-.c16 {
+.c17 {
   position: relative;
   padding: 0px 16px 16px 16px;
   z-index: 2;
@@ -615,7 +623,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
   transition: opacity 300ms cubic-bezier(0.25,0.8,0.25,1) 0ms;
 }
 
-.c11 {
+.c12 {
   font-size: 0.75rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -623,7 +631,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
   color: #666666;
 }
 
-.c13 {
+.c14 {
   font-size: 1.25rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -631,7 +639,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
   color: #121212;
 }
 
-.c14 {
+.c15 {
   font-size: 0.9375rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -639,11 +647,11 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
   color: #666666;
 }
 
-.c12 {
+.c13 {
   margin-bottom: 8px;
 }
 
-.c15 {
+.c16 {
   margin-top: 8px;
   min-height: 44px;
 }
@@ -666,7 +674,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
   margin-right: 8px;
 }
 
-.c9 {
+.c10 {
   padding: 16px 0px 0px 16px;
   font-size: 64px;
 }
@@ -689,19 +697,19 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c17.RcButton-text:hover {
+  .c18.RcButton-text:hover {
     background-color: rgba(6,111,172,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c17.RcButton-contained:hover {
+  .c18.RcButton-contained:hover {
     background-color: rgba(6,111,172,0.92);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c17.RcButton-outlined:hover {
+  .c18.RcButton-outlined:hover {
     background-color: rgba(6,111,172,0.08);
   }
 }
@@ -814,7 +822,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
       </button>
     </div>
     <span
-      className="c7 c9 google-doc icon"
+      className="c9 c10 google-doc icon"
     >
       <svg
         className="c8"
@@ -839,24 +847,24 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
       
     </span>
     <div
-      className="MuiCardContent-root RcCardContent-root c10"
+      className="MuiCardContent-root RcCardContent-root c11"
     >
       <p
-        className="MuiTypography-root c11 c12"
+        className="MuiTypography-root c12 c13"
         data-color="neutral.f04"
         data-variant="caption2"
       >
         A boat afloat
       </p>
       <h6
-        className="MuiTypography-root c13"
+        className="MuiTypography-root c14"
         data-color="neutral.f06"
         data-variant="title2"
       >
         Boat
       </h6>
       <p
-        className="MuiTypography-root c14 c15"
+        className="MuiTypography-root c15 c16"
         data-color="neutral.f04"
         data-variant="body1"
       >
@@ -864,10 +872,10 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
       </p>
     </div>
     <div
-      className="MuiCardActions-root c16 MuiCardActions-spacing"
+      className="MuiCardActions-root c17 MuiCardActions-spacing"
     >
       <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c17"
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c18"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -894,7 +902,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
         />
       </button>
       <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c17"
+        className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c18"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -946,7 +954,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 24px;
+  font-size: inherit;
 }
 
 .c6 {
