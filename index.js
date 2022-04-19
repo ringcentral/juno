@@ -8662,7 +8662,6 @@ __export(src_exports2, {
   DEFAULT_GET_OPTION_LABEL: () => DEFAULT_GET_OPTION_LABEL,
   DEFAULT_KEY_TO_CHIPS: () => DEFAULT_KEY_TO_CHIPS,
   DEFAULT_LIMIT_CHIPS: () => DEFAULT_LIMIT_CHIPS,
-  DialPadButton: () => DialPadButton,
   GlobalFixWebKitStyle: () => GlobalFixWebKitStyle,
   GroupedVirtuoso: () => GroupedVirtuoso,
   HALF_DAY_HOURS: () => HALF_DAY_HOURS,
@@ -8707,6 +8706,7 @@ __export(src_exports2, {
   RcDetachedWindowStylesProvider: () => RcDetachedWindowStylesProvider,
   RcDialDelete: () => RcDialDelete,
   RcDialPad: () => RcDialPad,
+  RcDialPadButton: () => RcDialPadButton,
   RcDialTextField: () => RcDialTextField,
   RcDialer: () => RcDialer,
   RcDialerPadSounds: () => RcDialerPadSounds_default,
@@ -48551,7 +48551,6 @@ __export(juno_core_exports, {
   DEFAULT_GET_OPTION_LABEL: () => DEFAULT_GET_OPTION_LABEL,
   DEFAULT_KEY_TO_CHIPS: () => DEFAULT_KEY_TO_CHIPS,
   DEFAULT_LIMIT_CHIPS: () => DEFAULT_LIMIT_CHIPS,
-  DialPadButton: () => DialPadButton,
   GlobalFixWebKitStyle: () => GlobalFixWebKitStyle,
   GroupedVirtuoso: () => GroupedVirtuoso,
   HALF_DAY_HOURS: () => HALF_DAY_HOURS,
@@ -48596,6 +48595,7 @@ __export(juno_core_exports, {
   RcDetachedWindowStylesProvider: () => RcDetachedWindowStylesProvider,
   RcDialDelete: () => RcDialDelete,
   RcDialPad: () => RcDialPad,
+  RcDialPadButton: () => RcDialPadButton,
   RcDialTextField: () => RcDialTextField,
   RcDialer: () => RcDialer,
   RcDialerPadSounds: () => RcDialerPadSounds_default,
@@ -48940,7 +48940,6 @@ __export(src_exports, {
   DEFAULT_GET_OPTION_LABEL: () => DEFAULT_GET_OPTION_LABEL,
   DEFAULT_KEY_TO_CHIPS: () => DEFAULT_KEY_TO_CHIPS,
   DEFAULT_LIMIT_CHIPS: () => DEFAULT_LIMIT_CHIPS,
-  DialPadButton: () => DialPadButton,
   GlobalFixWebKitStyle: () => GlobalFixWebKitStyle,
   GroupedVirtuoso: () => GroupedVirtuoso,
   HALF_DAY_HOURS: () => HALF_DAY_HOURS,
@@ -48985,6 +48984,7 @@ __export(src_exports, {
   RcDetachedWindowStylesProvider: () => RcDetachedWindowStylesProvider,
   RcDialDelete: () => RcDialDelete,
   RcDialPad: () => RcDialPad,
+  RcDialPadButton: () => RcDialPadButton,
   RcDialTextField: () => RcDialTextField,
   RcDialer: () => RcDialer,
   RcDialerPadSounds: () => RcDialerPadSounds_default,
@@ -49329,7 +49329,6 @@ __export(components_exports, {
   DEFAULT_GET_OPTION_LABEL: () => DEFAULT_GET_OPTION_LABEL,
   DEFAULT_KEY_TO_CHIPS: () => DEFAULT_KEY_TO_CHIPS,
   DEFAULT_LIMIT_CHIPS: () => DEFAULT_LIMIT_CHIPS,
-  DialPadButton: () => DialPadButton,
   GroupedVirtuoso: () => GroupedVirtuoso,
   HALF_DAY_HOURS: () => HALF_DAY_HOURS,
   HOUR_MINUTES: () => HOUR_MINUTES,
@@ -49370,6 +49369,7 @@ __export(components_exports, {
   RcDetachedWindowStylesProvider: () => RcDetachedWindowStylesProvider,
   RcDialDelete: () => RcDialDelete,
   RcDialPad: () => RcDialPad,
+  RcDialPadButton: () => RcDialPadButton,
   RcDialTextField: () => RcDialTextField,
   RcDialer: () => RcDialer,
   RcDialerPadSounds: () => RcDialerPadSounds_default,
@@ -55909,9 +55909,7 @@ var iconButtonStyle = ({
             background-color: ${setOpacity(mainColorContrast, "08")};
           }
 
-          ${childrenClass} {
-            color: ${mainColorContrast};
-          }
+          color: ${mainColorContrast};
         }
       }
 
@@ -55920,9 +55918,7 @@ var iconButtonStyle = ({
           background-color: ${setOpacity(mainColorContrast, "16")};
         }
 
-        ${childrenClass} {
-          color: ${mainColorContrast};
-        }
+        color: ${mainColorContrast};
       }
 
       &:active {
@@ -55932,9 +55928,7 @@ var iconButtonStyle = ({
           }
         `}
 
-        ${childrenClass} {
-          color: ${mainColorContrast};
-        }
+        color: ${mainColorContrast};
       }
     }
 
@@ -60670,22 +60664,9 @@ RcVisuallyHidden.displayName = "RcVisuallyHidden";
 import React628 from "react";
 
 // ../juno-core/src/components/Dialer/DialPadButton/styles/StyledDialPadButton.tsx
-var itemScale = `27.59%`;
 var buttonWrapperStyle = css2`
-  && {
-    width: ${itemScale};
-    height: 0;
-  }
-
-  padding-top: ${itemScale};
-
   ${RcIcon} {
-    position: absolute;
-    top: 0;
-    left: 0;
     svg {
-      height: 100%;
-      width: 100%;
       path:first-child {
         fill: ${palette22("neutral", "f06")};
       }
@@ -60697,7 +60678,7 @@ var buttonWrapperStyle = css2`
 `;
 
 // ../juno-core/src/components/Dialer/DialPadButton/DialPadButton.tsx
-var _DialPadButton = (props) => {
+var _RcDialPadButton = (props) => {
   const { value, longPressValue, longPressDelay, onKeyEffect, ...rest } = props;
   const isPressEvent = typeof longPressDelay === "number" && typeof longPressValue === "string";
   const { ref: ref2, ...events } = useLongPress({
@@ -60716,17 +60697,41 @@ var _DialPadButton = (props) => {
     ...events
   });
 };
-var DialPadButton = styled_components_default(_DialPadButton)`
+var RcDialPadButton = styled_components_default(_RcDialPadButton)`
   ${buttonWrapperStyle}
 `;
-DialPadButton.displayName = "DialPadButton";
+RcDialPadButton.displayName = "RcDialPadButton";
 
 // ../juno-core/src/components/Dialer/DialPad/styles/StyledDialPad.tsx
-var keypadContainerStyle = css2`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-`;
+var itemScale = `27.59%`;
+var DialPadStyle = ({
+  autoSize = true
+}) => {
+  return css2`
+    display: flex;
+    flex-wrap: wrap;
+
+    ${autoSize && css2`
+      justify-content: space-between;
+
+      ${RcDialPadButton} {
+        width: ${itemScale};
+        height: 0;
+        padding-top: ${itemScale};
+
+        ${RcIcon} {
+          position: absolute;
+          top: 0;
+          left: 0;
+          svg {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    `}
+  `;
+};
 
 // ../juno-core/src/components/Dialer/DialPad/utils/DialPadUtils.ts
 var DIALER_PAD_ICONS = [
@@ -60824,6 +60829,7 @@ var _RcDialPad = forwardRef561((inProps, ref2) => {
   const {
     sounds,
     volume,
+    autoSize,
     muted,
     classes,
     onChange: onChangeProp,
@@ -60913,7 +60919,7 @@ var _RcDialPad = forwardRef561((inProps, ref2) => {
     tabIndex: -1
   }), DIALER_PAD_ICONS.map(([symbol, key, additionLabel], index4) => {
     const ariaLabelArr = additionLabel ? [key, additionLabel] : [key];
-    return /* @__PURE__ */ React630.createElement(DialPadButton, {
+    return /* @__PURE__ */ React630.createElement(RcDialPadButton, {
       classes,
       symbol,
       key,
@@ -60932,7 +60938,7 @@ var _RcDialPad = forwardRef561((inProps, ref2) => {
   }));
 });
 var RcDialPad = styled_components_default(_RcDialPad)`
-  ${keypadContainerStyle}
+  ${DialPadStyle}
 `;
 RcDialPad.defaultProps = {
   persistBgTime: 200,
@@ -86225,7 +86231,6 @@ export {
   DEFAULT_GET_OPTION_LABEL,
   DEFAULT_KEY_TO_CHIPS,
   DEFAULT_LIMIT_CHIPS,
-  DialPadButton,
   GlobalFixWebKitStyle,
   GroupedVirtuoso,
   HALF_DAY_HOURS,
@@ -86270,6 +86275,7 @@ export {
   RcDetachedWindowStylesProvider,
   RcDialDelete,
   RcDialPad,
+  RcDialPadButton,
   RcDialTextField,
   RcDialer,
   RcDialerPadSounds_default as RcDialerPadSounds,
