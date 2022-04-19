@@ -1,6 +1,12 @@
 import React, { ComponentProps } from 'react';
 
-import { RcDialerPadSounds, RcDialPad, styled } from '@ringcentral/juno';
+import {
+  RcDialerPadSounds,
+  RcDialPad,
+  RcDialPadButton,
+  spacing,
+  styled,
+} from '@ringcentral/juno';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -38,6 +44,37 @@ export const DialPad: Story<DialPadProps> = ({ children, ...args }) => {
         {...args}
       />
     </Wrapper>
+  );
+};
+
+const CustomWrapper = styled.div`
+  width: 195px;
+  overflow: hidden;
+
+  ${RcDialPadButton} {
+    margin: ${spacing(2)};
+  }
+`;
+
+export const CustomDialPad: Story<DialPadProps> = ({ children, ...args }) => {
+  switchToControlKnobs();
+
+  return (
+    <CustomWrapper>
+      <RcDialPad
+        sounds={RcDialerPadSounds}
+        getDialPadButtonProps={(v) => ({
+          'data-test-id': `${v}`,
+          size: 'large',
+          variant: 'contained',
+          color: 'neutral.b03',
+          elevation: '0',
+          activeElevation: '0',
+        })}
+        autoSize={false}
+        {...args}
+      />
+    </CustomWrapper>
   );
 };
 
