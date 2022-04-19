@@ -2,6 +2,7 @@ import React, { ComponentProps } from 'react';
 
 import {
   RcBox,
+  RcIcon,
   RcIconButton,
   RcIconButtonVariant,
   RcPaletteProp,
@@ -209,6 +210,19 @@ export const IconButtonContained: Story<IconButtonProps> = ({
         color="danger.b04"
         {...args}
       />
+      <br />
+      <br />
+      <Title>custom icon color</Title>
+      <RcIconButton
+        variant="contained"
+        symbol={Phone}
+        color="highlight.b01"
+        IconProps={{ color: 'dialHeader.icon' }}
+        {...args}
+      />
+      <RcIconButton variant="contained" color="success.b03">
+        <RcIcon color="neutral.b03" symbol={Phone} />
+      </RcIconButton>
     </RcBox>
   );
 };

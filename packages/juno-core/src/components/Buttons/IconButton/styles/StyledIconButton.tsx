@@ -228,9 +228,7 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
             background-color: ${setOpacity(mainColorContrast, '08')};
           }
 
-          ${childrenClass} {
-            color: ${mainColorContrast};
-          }
+          color: ${mainColorContrast};
         }
       }
 
@@ -239,9 +237,7 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
           background-color: ${setOpacity(mainColorContrast, '16')};
         }
 
-        ${childrenClass} {
-          color: ${mainColorContrast};
-        }
+        color: ${mainColorContrast};
       }
 
       &:active {
@@ -252,9 +248,7 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
           }
         `}
 
-        ${childrenClass} {
-          color: ${mainColorContrast};
-        }
+        color: ${mainColorContrast};
       }
     }
 
