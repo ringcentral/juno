@@ -18,12 +18,12 @@ import {
   useOnlyOneFocusable,
   useThemeProps,
 } from '../../../foundation';
-import { RcButtonBaseProps } from '../../Buttons/ButtonBase';
+import { RcIconButtonProps } from '../../Buttons/IconButton';
 import { RcIconButtonClasses } from '../../Buttons/IconButton/utils';
 import { RcVisuallyHidden } from '../../VisuallyHidden';
-import { DialPadButton, DialPadButtonProps } from '../DialPadButton';
+import { RcDialPadButton, RcDialPadButtonProps } from '../DialPadButton';
 import { useRcDialerContext } from '../utils';
-import { keypadContainerStyle } from './styles';
+import { DialPadStyle } from './styles';
 import type {
   DIALER_PAD_ICON_VALUES,
   DialPadSoundMap,
@@ -62,6 +62,12 @@ type RcDialPadProps = {
    * @default 200
    * */
   persistBgTime?: number;
+  /**
+   * make that dialPad size auto fixed container width
+   *
+   * @default true
+   */
+  autoSize?: boolean;
   /** can manual trigger audio by ref */
   action?: Ref<RcDialPadAction>;
   /**
@@ -72,13 +78,10 @@ type RcDialPadProps = {
   /** method to get addition props for below each `DialPadButton` */
   getDialPadButtonProps?: (
     value: DIALER_PAD_ICON_VALUES,
-  ) => RcBaseProps<
-    RcButtonBaseProps,
-    'color' | 'value' | 'onKeyDown' | 'onFocus'
-  > &
+  ) => RcBaseProps<RcIconButtonProps, 'value' | 'onKeyDown' | 'onFocus'> &
     Record<string, string>;
 } & RcBaseProps<HTMLAttributes<HTMLDivElement>, 'onChange'> &
-  Pick<DialPadButtonProps, 'classes'>;
+  Pick<RcDialPadButtonProps, 'classes'>;
 
 const DEBOUNCE_TIME = 30;
 
@@ -88,6 +91,7 @@ const _RcDialPad = forwardRef<HTMLDivElement, RcDialPadProps>(
     const {
       sounds,
       volume,
+      autoSize,
       muted,
       classes,
       onChange: onChangeProp,
@@ -220,7 +224,7 @@ const _RcDialPad = forwardRef<HTMLDivElement, RcDialPadProps>(
             : [key];
 
           return (
-            <DialPadButton
+            <RcDialPadButton
               classes={classes}
               symbol={symbol}
               key={key}
@@ -247,7 +251,7 @@ const _RcDialPad = forwardRef<HTMLDivElement, RcDialPadProps>(
 
 /** @release */
 const RcDialPad = styled(_RcDialPad)`
-  ${keypadContainerStyle}
+  ${DialPadStyle}
 `;
 
 RcDialPad.defaultProps = {

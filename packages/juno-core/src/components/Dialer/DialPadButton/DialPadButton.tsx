@@ -5,7 +5,7 @@ import { RcIconButton, RcIconButtonProps } from '../../Buttons';
 import { RcDialPadOnChangeReason } from '../DialPad';
 import { buttonWrapperStyle } from './styles';
 
-export type DialPadButtonProps = {
+export type RcDialPadButtonProps = {
   /** output value when press */
   value: string;
   /** output value when long press */
@@ -22,9 +22,10 @@ export type DialPadButtonProps = {
   | 'tabIndex'
   | 'onKeyDown'
   | 'onFocus'
+  // TODO: pick type when icon button ready
 >;
 
-const _DialPadButton: FunctionComponent<DialPadButtonProps> = (props) => {
+const _RcDialPadButton: FunctionComponent<RcDialPadButtonProps> = (props) => {
   const { value, longPressValue, longPressDelay, onKeyEffect, ...rest } = props;
 
   const isPressEvent =
@@ -50,10 +51,10 @@ const _DialPadButton: FunctionComponent<DialPadButtonProps> = (props) => {
   );
 };
 
-const DialPadButton = styled(_DialPadButton)`
+const RcDialPadButton = styled(_RcDialPadButton)`
   ${buttonWrapperStyle}
 `;
 
-DialPadButton.displayName = 'DialPadButton';
+RcDialPadButton.displayName = 'RcDialPadButton';
 
-export { DialPadButton };
+export { RcDialPadButton };
