@@ -15,7 +15,6 @@ import {
   shadows,
   fakeBorder,
 } from '../../../../foundation';
-import { RcIcon } from '../../../Icon';
 import { RcIconButtonProps, RcIconButtonVariant } from '../IconButton';
 import {
   RcIconButtonClasses,
@@ -34,9 +33,6 @@ export const getFocusVisibleInsetSize: RcThemedStyled<RcIconButtonProps, any> =
       left: -${inset}px;
     `;
   };
-
-// * text inside button should also set style
-const childrenClass = `&,${RcIcon}`;
 
 const containedVariantTransitions: RcThemedStyled<RcIconButtonProps, string> =
   ({ theme }) =>
@@ -137,15 +133,13 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
       }
     `};
 
-    ${childrenClass} {
-      font-size: ${stretchIcon
-        ? containerSize
-        : px(
-            isOutline
-              ? iconSize * 1.2 // keep size same as before
-              : iconSize,
-          )};
-    }
+    font-size: ${stretchIcon
+      ? containerSize
+      : px(
+          isOutline
+            ? iconSize * 1.2 // keep size same as before
+            : iconSize,
+        )};
 
     ${nonTouchHoverMedia} {
       &:hover {
@@ -153,16 +147,12 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
           ? 'transparent'
           : setOpacity(mainColor, isInverse ? '24' : '08')};
 
-        ${childrenClass} {
-          color: ${setOpacity(mainColor, '88')};
-        }
+        color: ${setOpacity(mainColor, '88')};
       }
     }
 
     &:active {
-      ${childrenClass} {
-        color: ${mainColor};
-      }
+      color: ${mainColor};
     }
 
     ${focusVisible} {
@@ -171,9 +161,7 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
         : setOpacity(mainColor, isInverse ? '32' : '16')};
 
       &:active {
-        ${childrenClass} {
-          color: ${setOpacity(mainColor, '88')};
-        }
+        color: ${setOpacity(mainColor, '88')};
       }
 
       ${isPlain && plainIconButtonFocusStyle({ radius: currRadius })};
@@ -184,11 +172,9 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
     }
 
     &.${RcIconButtonClasses.disabled} {
-      ${childrenClass} {
-        color: ${useColorWhenDisabled
-          ? setOpacity(mainColor, '32')
-          : palette2('disabled', 'f02')};
-      }
+      color: ${useColorWhenDisabled
+        ? setOpacity(mainColor, '32')
+        : palette2('disabled', 'f02')};
 
       background-color: ${isInverse && setOpacity(mainColor, '12')};
     }
