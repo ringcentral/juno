@@ -161,6 +161,7 @@ const _RcIconButton = memo(
             symbol={symbol}
             className={classes!.icon}
             loading={loading}
+            size="inherit"
             CircularProgressProps={CircularProgressProps}
             {...IconProps}
           >
