@@ -56004,6 +56004,7 @@ var _RcIconButton = memo418(forwardRef517((inProps, ref2) => {
       symbol,
       className: classes.icon,
       loading,
+      size: "inherit",
       CircularProgressProps,
       ...IconProps
     }, children2);
