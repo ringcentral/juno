@@ -54,15 +54,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c4,
-.c4 .c5 {
   font-size: 20px;
 }
 
-.c4:active,
-.c4:active .c5 {
+.c4:active {
   color: #666666;
 }
 
@@ -72,9 +67,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 }
 
 .c4.focus-visible:active,
-.c4[data-focus-visible-added]:active,
-.c4.focus-visible:active .c5,
-.c4[data-focus-visible-added]:active .c5 {
+.c4[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -96,8 +89,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   background-color: rgba(102,102,102,0.12);
 }
 
-.c4.RcIconButton-disabled,
-.c4.RcIconButton-disabled .c5 {
+.c4.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -170,15 +162,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c8,
-.c8 .c5 {
   font-size: 16px;
 }
 
-.c8:active,
-.c8:active .c5 {
+.c8:active {
   color: #666666;
 }
 
@@ -188,9 +175,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 }
 
 .c8.focus-visible:active,
-.c8[data-focus-visible-added]:active,
-.c8.focus-visible:active .c5,
-.c8[data-focus-visible-added]:active .c5 {
+.c8[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -212,8 +197,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   background-color: rgba(102,102,102,0.12);
 }
 
-.c8.RcIconButton-disabled,
-.c8.RcIconButton-disabled .c5 {
+.c8.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -616,10 +600,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 @media (hover:hover) and (pointer:fine) {
   .c4:hover {
     background-color: transparent;
-  }
-
-  .c4:hover,
-  .c4:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -637,10 +617,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 @media (hover:hover) and (pointer:fine) {
   .c8:hover {
     background-color: transparent;
-  }
-
-  .c8:hover,
-  .c8:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -1533,15 +1509,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c13,
-.c13 .c9 {
   font-size: 16px;
 }
 
-.c13:active,
-.c13:active .c9 {
+.c13:active {
   color: #666666;
 }
 
@@ -1551,9 +1522,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
 }
 
 .c13.focus-visible:active,
-.c13[data-focus-visible-added]:active,
-.c13.focus-visible:active .c9,
-.c13[data-focus-visible-added]:active .c9 {
+.c13[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -1575,8 +1544,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
   background-color: rgba(102,102,102,0.12);
 }
 
-.c13.RcIconButton-disabled,
-.c13.RcIconButton-disabled .c9 {
+.c13.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -2058,10 +2026,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
 @media (hover:hover) and (pointer:fine) {
   .c13:hover {
     background-color: transparent;
-  }
-
-  .c13:hover,
-  .c13:hover .c9 {
     color: rgba(102,102,102,0.88);
   }
 }

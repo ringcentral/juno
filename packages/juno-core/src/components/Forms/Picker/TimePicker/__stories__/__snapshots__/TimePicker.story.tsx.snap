@@ -2,7 +2,7 @@
 
 exports[`Storyshots 🚀 Cleanup Components/Forms/TimePicker Time Picker Change Range 1`] = `
 Array [
-  .c8 {
+  .c7 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -11,7 +11,7 @@ Array [
   pointer-events: none;
 }
 
-.c7 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -39,15 +39,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c5,
-.c5 .c6 {
   font-size: 20px;
 }
 
-.c5:active,
-.c5:active .c6 {
+.c5:active {
   color: #666666;
 }
 
@@ -57,9 +52,7 @@ Array [
 }
 
 .c5.focus-visible:active,
-.c5[data-focus-visible-added]:active,
-.c5.focus-visible:active .c6,
-.c5[data-focus-visible-added]:active .c6 {
+.c5[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -81,8 +74,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c5.RcIconButton-disabled,
-.c5.RcIconButton-disabled .c6 {
+.c5.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -135,7 +127,7 @@ Array [
   opacity: 0;
 }
 
-.c9 {
+.c8 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -318,10 +310,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c5:hover {
     background-color: transparent;
-  }
-
-  .c5:hover,
-  .c5:hover .c6 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -439,10 +427,10 @@ Array [
             type="button"
           >
             <span
-              className="c6 c7 delete_circle icon"
+              className="c6 delete_circle icon"
             >
               <svg
-                className="c8"
+                className="c7"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -471,10 +459,10 @@ Array [
             type="button"
           >
             <span
-              className="c6 c7 time_border icon"
+              className="c6 time_border icon"
             >
               <svg
-                className="c8"
+                className="c7"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -488,7 +476,7 @@ Array [
         </div>
       </div>
       <span
-        className="c9"
+        className="c8"
         id="PickerTextField-0-instruction"
       >
         press enter or space to change the time
@@ -547,10 +535,10 @@ Array [
             type="button"
           >
             <span
-              className="c6 c7 delete_circle icon"
+              className="c6 delete_circle icon"
             >
               <svg
-                className="c8"
+                className="c7"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -579,10 +567,10 @@ Array [
             type="button"
           >
             <span
-              className="c6 c7 time_border icon"
+              className="c6 time_border icon"
             >
               <svg
-                className="c8"
+                className="c7"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -596,7 +584,7 @@ Array [
         </div>
       </div>
       <span
-        className="c9"
+        className="c8"
         id="PickerTextField-0-instruction"
       >
         press enter or space to change the time
@@ -1355,7 +1343,7 @@ Array [
 
 exports[`Storyshots 🚀 Cleanup Components/Forms/TimePicker TimePicker 1`] = `
 Array [
-  .c6 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -1364,7 +1352,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1392,15 +1380,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c3,
-.c3 .c4 {
   font-size: 20px;
 }
 
-.c3:active,
-.c3:active .c4 {
+.c3:active {
   color: #666666;
 }
 
@@ -1410,9 +1393,7 @@ Array [
 }
 
 .c3.focus-visible:active,
-.c3[data-focus-visible-added]:active,
-.c3.focus-visible:active .c4,
-.c3[data-focus-visible-added]:active .c4 {
+.c3[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -1434,8 +1415,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c3.RcIconButton-disabled,
-.c3.RcIconButton-disabled .c4 {
+.c3.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -1636,10 +1616,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c3:hover {
     background-color: transparent;
-  }
-
-  .c3:hover,
-  .c3:hover .c4 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -1730,10 +1706,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 delete_circle icon"
+          className="c4 delete_circle icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -1762,10 +1738,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 time_border icon"
+          className="c4 time_border icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -1899,7 +1875,7 @@ Array [
 }
 
 <br />,
-  .c6 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -1908,7 +1884,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1936,15 +1912,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c3,
-.c3 .c4 {
   font-size: 20px;
 }
 
-.c3:active,
-.c3:active .c4 {
+.c3:active {
   color: #666666;
 }
 
@@ -1954,9 +1925,7 @@ Array [
 }
 
 .c3.focus-visible:active,
-.c3[data-focus-visible-added]:active,
-.c3.focus-visible:active .c4,
-.c3[data-focus-visible-added]:active .c4 {
+.c3[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -1978,8 +1947,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c3.RcIconButton-disabled,
-.c3.RcIconButton-disabled .c4 {
+.c3.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -2164,15 +2132,15 @@ Array [
   display: none;
 }
 
+.c6 .c2 {
+  margin-left: 12px;
+}
+
 .c7 .c2 {
   margin-left: 12px;
 }
 
 .c8 .c2 {
-  margin-left: 12px;
-}
-
-.c9 .c2 {
   margin-left: 12px;
 }
 
@@ -2196,10 +2164,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c3:hover {
     background-color: transparent;
-  }
-
-  .c3:hover,
-  .c3:hover .c4 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -2294,10 +2258,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 delete_circle icon"
+          className="c4 delete_circle icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2326,10 +2290,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 time_border icon"
+          className="c4 time_border icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2425,7 +2389,7 @@ Array [
 }
 
 <br />,
-  .c6 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -2434,7 +2398,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2462,15 +2426,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c3,
-.c3 .c4 {
   font-size: 20px;
 }
 
-.c3:active,
-.c3:active .c4 {
+.c3:active {
   color: #666666;
 }
 
@@ -2480,9 +2439,7 @@ Array [
 }
 
 .c3.focus-visible:active,
-.c3[data-focus-visible-added]:active,
-.c3.focus-visible:active .c4,
-.c3[data-focus-visible-added]:active .c4 {
+.c3[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -2504,8 +2461,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c3.RcIconButton-disabled,
-.c3.RcIconButton-disabled .c4 {
+.c3.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -2690,15 +2646,15 @@ Array [
   display: none;
 }
 
+.c6 .c2 {
+  margin-left: 12px;
+}
+
 .c7 .c2 {
   margin-left: 12px;
 }
 
 .c8 .c2 {
-  margin-left: 12px;
-}
-
-.c9 .c2 {
   margin-left: 12px;
 }
 
@@ -2722,10 +2678,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c3:hover {
     background-color: transparent;
-  }
-
-  .c3:hover,
-  .c3:hover .c4 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -2820,10 +2772,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 delete_circle icon"
+          className="c4 delete_circle icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2852,10 +2804,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 time_border icon"
+          className="c4 time_border icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2998,7 +2950,7 @@ Array [
 }
 
 <br />,
-  .c6 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -3007,7 +2959,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3035,15 +2987,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c3,
-.c3 .c4 {
   font-size: 20px;
 }
 
-.c3:active,
-.c3:active .c4 {
+.c3:active {
   color: #666666;
 }
 
@@ -3053,9 +3000,7 @@ Array [
 }
 
 .c3.focus-visible:active,
-.c3[data-focus-visible-added]:active,
-.c3.focus-visible:active .c4,
-.c3[data-focus-visible-added]:active .c4 {
+.c3[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -3077,8 +3022,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c3.RcIconButton-disabled,
-.c3.RcIconButton-disabled .c4 {
+.c3.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -3131,7 +3075,7 @@ Array [
   opacity: 0;
 }
 
-.c7 .c2 {
+.c6 .c2 {
   margin-left: 12px;
 }
 
@@ -3259,11 +3203,11 @@ Array [
   display: none;
 }
 
-.c8 .c2 {
+.c7 .c2 {
   margin-left: 12px;
 }
 
-.c9 .c2 {
+.c8 .c2 {
   margin-left: 12px;
 }
 
@@ -3287,10 +3231,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c3:hover {
     background-color: transparent;
-  }
-
-  .c3:hover,
-  .c3:hover .c4 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -3377,10 +3317,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 time_border icon"
+          className="c4 time_border icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -3589,7 +3529,7 @@ Array [
 }
 
 <br />,
-  .c7 {
+  .c6 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -3598,7 +3538,7 @@ Array [
   pointer-events: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3626,15 +3566,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c4,
-.c4 .c5 {
   font-size: 20px;
 }
 
-.c4:active,
-.c4:active .c5 {
+.c4:active {
   color: #666666;
 }
 
@@ -3644,9 +3579,7 @@ Array [
 }
 
 .c4.focus-visible:active,
-.c4[data-focus-visible-added]:active,
-.c4.focus-visible:active .c5,
-.c4[data-focus-visible-added]:active .c5 {
+.c4[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -3668,8 +3601,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c4.RcIconButton-disabled,
-.c4.RcIconButton-disabled .c5 {
+.c4.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -3722,7 +3654,7 @@ Array [
   opacity: 0;
 }
 
-.c8 {
+.c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -3734,11 +3666,11 @@ Array [
   width: 1px;
 }
 
-.c9 .c3 {
+.c8 .c3 {
   margin-left: 12px;
 }
 
-.c10 .c3 {
+.c9 .c3 {
   margin-left: 12px;
 }
 
@@ -3870,7 +3802,7 @@ Array [
   display: none;
 }
 
-.c11 .c3 {
+.c10 .c3 {
   margin-left: 12px;
 }
 
@@ -3902,10 +3834,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c4:hover {
     background-color: transparent;
-  }
-
-  .c4:hover,
-  .c4:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -4007,10 +3935,10 @@ Array [
             type="button"
           >
             <span
-              className="c5 c6 time_border icon"
+              className="c5 time_border icon"
             >
               <svg
-                className="c7"
+                className="c6"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -4024,7 +3952,7 @@ Array [
         </div>
       </div>
       <span
-        className="c8"
+        className="c7"
         id="PickerTextField-0-instruction"
       >
         press enter or space to change the time
@@ -4091,10 +4019,10 @@ Array [
             type="button"
           >
             <span
-              className="c5 c6 time_border icon"
+              className="c5 time_border icon"
             >
               <svg
-                className="c7"
+                className="c6"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -4108,7 +4036,7 @@ Array [
         </div>
       </div>
       <span
-        className="c8"
+        className="c7"
         id="PickerTextField-0-instruction"
       >
         press enter or space to change the time
@@ -4261,7 +4189,7 @@ Array [
 }
 
 <br />,
-  .c7 {
+  .c6 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -4270,7 +4198,7 @@ Array [
   pointer-events: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4298,15 +4226,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c4,
-.c4 .c5 {
   font-size: 20px;
 }
 
-.c4:active,
-.c4:active .c5 {
+.c4:active {
   color: #666666;
 }
 
@@ -4316,9 +4239,7 @@ Array [
 }
 
 .c4.focus-visible:active,
-.c4[data-focus-visible-added]:active,
-.c4.focus-visible:active .c5,
-.c4[data-focus-visible-added]:active .c5 {
+.c4[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -4340,8 +4261,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c4.RcIconButton-disabled,
-.c4.RcIconButton-disabled .c5 {
+.c4.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -4394,7 +4314,7 @@ Array [
   opacity: 0;
 }
 
-.c8 {
+.c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -4406,11 +4326,11 @@ Array [
   width: 1px;
 }
 
-.c9 .c3 {
+.c8 .c3 {
   margin-left: 12px;
 }
 
-.c10 .c3 {
+.c9 .c3 {
   margin-left: 12px;
 }
 
@@ -4542,7 +4462,7 @@ Array [
   display: none;
 }
 
-.c11 .c3 {
+.c10 .c3 {
   margin-left: 12px;
 }
 
@@ -4574,10 +4494,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c4:hover {
     background-color: transparent;
-  }
-
-  .c4:hover,
-  .c4:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -4679,10 +4595,10 @@ Array [
             type="button"
           >
             <span
-              className="c5 c6 time_border icon"
+              className="c5 time_border icon"
             >
               <svg
-                className="c7"
+                className="c6"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -4696,7 +4612,7 @@ Array [
         </div>
       </div>
       <span
-        className="c8"
+        className="c7"
         id="PickerTextField-0-instruction"
       >
         press enter or space to change the time
@@ -4763,10 +4679,10 @@ Array [
             type="button"
           >
             <span
-              className="c5 c6 time_border icon"
+              className="c5 time_border icon"
             >
               <svg
-                className="c7"
+                className="c6"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -4780,7 +4696,7 @@ Array [
         </div>
       </div>
       <span
-        className="c8"
+        className="c7"
         id="PickerTextField-0-instruction"
       >
         press enter or space to change the time
@@ -4933,7 +4849,7 @@ Array [
 }
 
 <br />,
-  .c6 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -4942,7 +4858,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4970,15 +4886,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c3,
-.c3 .c4 {
   font-size: 20px;
 }
 
-.c3:active,
-.c3:active .c4 {
+.c3:active {
   color: #666666;
 }
 
@@ -4988,9 +4899,7 @@ Array [
 }
 
 .c3.focus-visible:active,
-.c3[data-focus-visible-added]:active,
-.c3.focus-visible:active .c4,
-.c3[data-focus-visible-added]:active .c4 {
+.c3[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -5012,8 +4921,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c3.RcIconButton-disabled,
-.c3.RcIconButton-disabled .c4 {
+.c3.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -5066,15 +4974,15 @@ Array [
   opacity: 0;
 }
 
+.c6 .c2 {
+  margin-left: 12px;
+}
+
 .c7 .c2 {
   margin-left: 12px;
 }
 
 .c8 .c2 {
-  margin-left: 12px;
-}
-
-.c9 .c2 {
   margin-left: 12px;
 }
 
@@ -5230,10 +5138,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c3:hover {
     background-color: transparent;
-  }
-
-  .c3:hover,
-  .c3:hover .c4 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -5319,10 +5223,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 time_border icon"
+          className="c4 time_border icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -5390,7 +5294,7 @@ Array [
 
 exports[`Storyshots 🚀 Cleanup Components/Forms/TimePicker TimePicker with default picker value 1`] = `
 Array [
-  .c6 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -5399,7 +5303,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5427,15 +5331,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c3,
-.c3 .c4 {
   font-size: 20px;
 }
 
-.c3:active,
-.c3:active .c4 {
+.c3:active {
   color: #666666;
 }
 
@@ -5445,9 +5344,7 @@ Array [
 }
 
 .c3.focus-visible:active,
-.c3[data-focus-visible-added]:active,
-.c3.focus-visible:active .c4,
-.c3[data-focus-visible-added]:active .c4 {
+.c3[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -5469,8 +5366,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c3.RcIconButton-disabled,
-.c3.RcIconButton-disabled .c4 {
+.c3.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -5671,10 +5567,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c3:hover {
     background-color: transparent;
-  }
-
-  .c3:hover,
-  .c3:hover .c4 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -5748,10 +5640,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 time_border icon"
+          className="c4 time_border icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >

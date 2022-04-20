@@ -1,4 +1,15 @@
 
+### [2.7.1](https://github.com/ringcentral/juno/compare/juno-core-v2.7.0...juno-core-v2.7.1) (2022-04-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* **fix-iconButton-contained:** By default, RcIcon color will inherit RcIconButton color. No more set RcIcon color directly anyway
+
+### Bug Fixes
+
+* **fix-iconButton-contained:** [IconButton] fix custom icon color issue when variant of IconButton is contained ([fa661c6](https://github.com/ringcentral/juno/commit/fa661c68f8bfab08be07820319b4aa1deed23b0e))
+
 ## [2.7.0](https://github.com/ringcentral/juno/compare/juno-core-v2.7.0...juno-core-v2.7.0) (2022-04-19)
 
 ## [2.7.0](https://github.com/ringcentral/juno/compare/juno-core-v2.6.0...juno-core-v2.7.0) (2022-04-19)

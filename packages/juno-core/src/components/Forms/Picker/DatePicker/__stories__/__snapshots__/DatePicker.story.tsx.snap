@@ -2,7 +2,7 @@
 
 exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker 1`] = `
 Array [
-  .c6 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -11,7 +11,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -39,15 +39,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c3,
-.c3 .c4 {
   font-size: 20px;
 }
 
-.c3:active,
-.c3:active .c4 {
+.c3:active {
   color: #666666;
 }
 
@@ -57,9 +52,7 @@ Array [
 }
 
 .c3.focus-visible:active,
-.c3[data-focus-visible-added]:active,
-.c3.focus-visible:active .c4,
-.c3[data-focus-visible-added]:active .c4 {
+.c3[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -81,8 +74,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c3.RcIconButton-disabled,
-.c3.RcIconButton-disabled .c4 {
+.c3.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -283,10 +275,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c3:hover {
     background-color: transparent;
-  }
-
-  .c3:hover,
-  .c3:hover .c4 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -377,10 +365,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 delete_circle icon"
+          className="c4 delete_circle icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -409,10 +397,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 date_border icon"
+          className="c4 date_border icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -466,7 +454,7 @@ Array [
 
 exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker Examples 1`] = `
 Array [
-  .c6 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -475,7 +463,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -503,15 +491,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c3,
-.c3 .c4 {
   font-size: 20px;
 }
 
-.c3:active,
-.c3:active .c4 {
+.c3:active {
   color: #666666;
 }
 
@@ -521,9 +504,7 @@ Array [
 }
 
 .c3.focus-visible:active,
-.c3[data-focus-visible-added]:active,
-.c3.focus-visible:active .c4,
-.c3[data-focus-visible-added]:active .c4 {
+.c3[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -545,8 +526,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c3.RcIconButton-disabled,
-.c3.RcIconButton-disabled .c4 {
+.c3.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -731,11 +711,11 @@ Array [
   display: none;
 }
 
-.c7 .c2 {
+.c6 .c2 {
   margin-left: 12px;
 }
 
-.c8 .c2 {
+.c7 .c2 {
   margin-left: 12px;
 }
 
@@ -759,10 +739,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c3:hover {
     background-color: transparent;
-  }
-
-  .c3:hover,
-  .c3:hover .c4 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -870,10 +846,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 delete_circle icon"
+          className="c4 delete_circle icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -902,10 +878,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 date_border icon"
+          className="c4 date_border icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -972,7 +948,7 @@ Array [
   >
     press enter or space to change the time
   </span>,
-  .c6 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -981,7 +957,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1009,15 +985,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c3,
-.c3 .c4 {
   font-size: 20px;
 }
 
-.c3:active,
-.c3:active .c4 {
+.c3:active {
   color: #666666;
 }
 
@@ -1027,9 +998,7 @@ Array [
 }
 
 .c3.focus-visible:active,
-.c3[data-focus-visible-added]:active,
-.c3.focus-visible:active .c4,
-.c3[data-focus-visible-added]:active .c4 {
+.c3[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -1051,8 +1020,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c3.RcIconButton-disabled,
-.c3.RcIconButton-disabled .c4 {
+.c3.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -1105,7 +1073,7 @@ Array [
   opacity: 0;
 }
 
-.c7 .c2 {
+.c6 .c2 {
   margin-left: 12px;
 }
 
@@ -1237,7 +1205,7 @@ Array [
   display: none;
 }
 
-.c8 .c2 {
+.c7 .c2 {
   margin-left: 12px;
 }
 
@@ -1261,10 +1229,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c3:hover {
     background-color: transparent;
-  }
-
-  .c3:hover,
-  .c3:hover .c4 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -1375,10 +1339,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 delete_circle icon"
+          className="c4 delete_circle icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -1407,10 +1371,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 date_border icon"
+          className="c4 date_border icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -1563,7 +1527,7 @@ Array [
   >
     Locale
   </h4>,
-  .c6 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -1572,7 +1536,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1600,15 +1564,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c3,
-.c3 .c4 {
   font-size: 20px;
 }
 
-.c3:active,
-.c3:active .c4 {
+.c3:active {
   color: #666666;
 }
 
@@ -1618,9 +1577,7 @@ Array [
 }
 
 .c3.focus-visible:active,
-.c3[data-focus-visible-added]:active,
-.c3.focus-visible:active .c4,
-.c3[data-focus-visible-added]:active .c4 {
+.c3[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -1642,8 +1599,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c3.RcIconButton-disabled,
-.c3.RcIconButton-disabled .c4 {
+.c3.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -1696,11 +1652,11 @@ Array [
   opacity: 0;
 }
 
-.c7 .c2 {
+.c6 .c2 {
   margin-left: 12px;
 }
 
-.c8 .c2 {
+.c7 .c2 {
   margin-left: 12px;
 }
 
@@ -1852,10 +1808,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c3:hover {
     background-color: transparent;
-  }
-
-  .c3:hover,
-  .c3:hover .c4 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -1953,10 +1905,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 delete_circle icon"
+          className="c4 delete_circle icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -1985,10 +1937,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 date_border icon"
+          className="c4 date_border icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2064,7 +2016,7 @@ Array [
 
 exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with TimePick 1`] = `
 Array [
-  .c6 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -2073,7 +2025,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2101,15 +2053,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c3,
-.c3 .c4 {
   font-size: 20px;
 }
 
-.c3:active,
-.c3:active .c4 {
+.c3:active {
   color: #666666;
 }
 
@@ -2119,9 +2066,7 @@ Array [
 }
 
 .c3.focus-visible:active,
-.c3[data-focus-visible-added]:active,
-.c3.focus-visible:active .c4,
-.c3[data-focus-visible-added]:active .c4 {
+.c3[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -2143,8 +2088,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c3.RcIconButton-disabled,
-.c3.RcIconButton-disabled .c4 {
+.c3.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -2345,10 +2289,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c3:hover {
     background-color: transparent;
-  }
-
-  .c3:hover,
-  .c3:hover .c4 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -2421,10 +2361,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 date_border icon"
+          className="c4 date_border icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2478,7 +2418,7 @@ Array [
 }
 
 <br />,
-  .c6 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -2487,7 +2427,7 @@ Array [
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2515,15 +2455,10 @@ Array [
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c3,
-.c3 .c4 {
   font-size: 20px;
 }
 
-.c3:active,
-.c3:active .c4 {
+.c3:active {
   color: #666666;
 }
 
@@ -2533,9 +2468,7 @@ Array [
 }
 
 .c3.focus-visible:active,
-.c3[data-focus-visible-added]:active,
-.c3.focus-visible:active .c4,
-.c3[data-focus-visible-added]:active .c4 {
+.c3[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -2557,8 +2490,7 @@ Array [
   background-color: rgba(102,102,102,0.12);
 }
 
-.c3.RcIconButton-disabled,
-.c3.RcIconButton-disabled .c4 {
+.c3.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -2759,10 +2691,6 @@ Array [
 @media (hover:hover) and (pointer:fine) {
   .c3:hover {
     background-color: transparent;
-  }
-
-  .c3:hover,
-  .c3:hover .c4 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -2827,10 +2755,10 @@ Array [
         type="button"
       >
         <span
-          className="c4 c5 time_border icon"
+          className="c4 time_border icon"
         >
           <svg
-            className="c6"
+            className="c5"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -2875,7 +2803,7 @@ Array [
 `;
 
 exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with range 1`] = `
-.c7 {
+.c6 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -2884,7 +2812,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
   pointer-events: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2912,15 +2840,10 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c4,
-.c4 .c5 {
   font-size: 20px;
 }
 
-.c4:active,
-.c4:active .c5 {
+.c4:active {
   color: #666666;
 }
 
@@ -2930,9 +2853,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
 }
 
 .c4.focus-visible:active,
-.c4[data-focus-visible-added]:active,
-.c4.focus-visible:active .c5,
-.c4[data-focus-visible-added]:active .c5 {
+.c4[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
@@ -2954,8 +2875,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
   background-color: rgba(102,102,102,0.12);
 }
 
-.c4.RcIconButton-disabled,
-.c4.RcIconButton-disabled .c5 {
+.c4.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -3008,7 +2928,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
   opacity: 0;
 }
 
-.c11 {
+.c10 {
   text-transform: none;
   font-size: 0.9375rem;
   font-weight: 700;
@@ -3020,44 +2940,44 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
   padding: 0px 16px;
 }
 
-.c11 .RcButton-startIcon {
+.c10 .RcButton-startIcon {
   margin-right: 8px;
 }
 
-.c11 .RcButton-endIcon {
+.c10 .RcButton-endIcon {
   margin-left: 8px;
 }
 
-.c11.RcButton-text {
+.c10.RcButton-text {
   color: #066FAC;
 }
 
-.c11.RcButton-text.RcButton-disabled {
+.c10.RcButton-text.RcButton-disabled {
   color: #B9B9B9;
 }
 
-.c11.RcButton-contained {
+.c10.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
 }
 
-.c11.RcButton-contained.RcButton-disabled {
+.c10.RcButton-contained.RcButton-disabled {
   background-color: #B9B9B9;
   color: #FFFFFF;
 }
 
-.c11.RcButton-outlined {
+.c10.RcButton-outlined {
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
 }
 
-.c11.RcButton-outlined.RcButton-disabled {
+.c10.RcButton-outlined.RcButton-disabled {
   color: #B9B9B9;
   border-color: #B9B9B9;
 }
 
-.c11.RcButton-outlined:after {
+.c10.RcButton-outlined:after {
   top: -1px;
   bottom: -1px;
   left: -1px;
@@ -3065,7 +2985,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
   border: 1px solid transparent;
 }
 
-.c8 {
+.c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -3205,15 +3125,15 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
   display: none;
 }
 
-.c9 {
+.c8 {
   width: 168px;
 }
 
-.c9 .c3 {
+.c8 .c3 {
   margin-left: 12px;
 }
 
-.c9 .RcTextFieldInputLabel-root {
+.c8 .RcTextFieldInputLabel-root {
   font-size: 0.75rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -3224,84 +3144,84 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
   transform: scale(1);
 }
 
-.c9 .RcTextFieldInputLabel-focused {
+.c8 .RcTextFieldInputLabel-focused {
   color: #066FAC;
 }
 
-.c9 .RcTextFieldInput-root {
+.c8 .RcTextFieldInput-root {
   color: #121212;
 }
 
-.c9 .RcTextFieldInput-input {
+.c8 .RcTextFieldInput-input {
   font-size: 1rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
   line-height: 24px;
 }
 
-.c9 .RcTextFieldInput-input::-webkit-input-placeholder {
+.c8 .RcTextFieldInput-input::-webkit-input-placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c9 .RcTextFieldInput-input::-moz-placeholder {
+.c8 .RcTextFieldInput-input::-moz-placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c9 .RcTextFieldInput-input:-ms-input-placeholder {
+.c8 .RcTextFieldInput-input:-ms-input-placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c9 .RcTextFieldInput-input::placeholder {
+.c8 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
 }
 
-.c9 .RcTextFieldInput-underline:before {
+.c8 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
 
-.c9 .RcTextFieldInput-underline:after {
+.c8 .RcTextFieldInput-underline:after {
   border-bottom-color: #066FAC;
 }
 
-.c9 .RcTextFieldInput-error:after {
+.c8 .RcTextFieldInput-error:after {
   border-bottom-color: #BE3933;
 }
 
-.c9 .RcTextFieldInput-disabled {
+.c8 .RcTextFieldInput-disabled {
   color: #B9B9B9;
   -webkit-text-fill-color: #B9B9B9;
 }
 
-.c9 .RcTextFieldInput-disabled::-webkit-input-placeholder {
+.c8 .RcTextFieldInput-disabled::-webkit-input-placeholder {
   color: #B9B9B9;
 }
 
-.c9 .RcTextFieldInput-disabled::-moz-placeholder {
+.c8 .RcTextFieldInput-disabled::-moz-placeholder {
   color: #B9B9B9;
 }
 
-.c9 .RcTextFieldInput-disabled:-ms-input-placeholder {
+.c8 .RcTextFieldInput-disabled:-ms-input-placeholder {
   color: #B9B9B9;
 }
 
-.c9 .RcTextFieldInput-disabled::placeholder {
+.c8 .RcTextFieldInput-disabled::placeholder {
   color: #B9B9B9;
 }
 
-.c9 .RcTextFieldInput-disabled:before {
+.c8 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
   border-bottom-color: #B9B9B9;
 }
 
-.c9 .RcTextFieldInput-disabled:after {
+.c8 .RcTextFieldInput-disabled:after {
   border-bottom-style: none;
 }
 
-.c9 .RcTextFieldFormHelperText-root {
+.c8 .RcTextFieldFormHelperText-root {
   font-size: 0.75rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -3309,27 +3229,27 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
   color: #666666;
 }
 
-.c9 .RcTextFieldFormHelperText-error,
-.c9 .RcTextFieldInputLabel-error {
+.c8 .RcTextFieldFormHelperText-error,
+.c8 .RcTextFieldInputLabel-error {
   color: #BE3933;
 }
 
-.c9 .RcTextFieldFormHelperText-disabled,
-.c9 .RcTextFieldInputLabel-disabled {
+.c8 .RcTextFieldFormHelperText-disabled,
+.c8 .RcTextFieldInputLabel-disabled {
   color: #B9B9B9;
 }
 
-.c9 input[type='search']::-ms-clear,
-.c9 input[type='search']::-ms-reveal {
+.c8 input[type='search']::-ms-clear,
+.c8 input[type='search']::-ms-reveal {
   display: none;
   width: 0;
   height: 0;
 }
 
-.c9 input[type='search']::-webkit-search-decoration,
-.c9 input[type='search']::-webkit-search-cancel-button,
-.c9 input[type='search']::-webkit-search-results-button,
-.c9 input[type='search']::-webkit-search-results-decoration {
+.c8 input[type='search']::-webkit-search-decoration,
+.c8 input[type='search']::-webkit-search-cancel-button,
+.c8 input[type='search']::-webkit-search-results-button,
+.c8 input[type='search']::-webkit-search-results-decoration {
   display: none;
 }
 
@@ -3358,30 +3278,26 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
   margin: 0;
 }
 
-.c10 .picker-clear {
+.c9 .picker-clear {
   display: none;
 }
 
-.c10 .RcTextFieldInput-root,
-.c10 .RcTextFieldInput-input {
+.c9 .RcTextFieldInput-root,
+.c9 .RcTextFieldInput-input {
   cursor: pointer;
 }
 
-.c10 .RcTextFieldInput-disabled {
+.c9 .RcTextFieldInput-disabled {
   cursor: auto;
 }
 
-.c10 .picker-action {
+.c9 .picker-action {
   margin: 0;
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c4:hover {
     background-color: transparent;
-  }
-
-  .c4:hover,
-  .c4:hover .c5 {
     color: rgba(102,102,102,0.88);
   }
 }
@@ -3397,19 +3313,19 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcButton-text:hover {
+  .c10.RcButton-text:hover {
     background-color: rgba(6,111,172,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcButton-contained:hover {
+  .c10.RcButton-contained:hover {
     background-color: rgba(6,111,172,0.92);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcButton-outlined:hover {
+  .c10.RcButton-outlined:hover {
     background-color: rgba(6,111,172,0.08);
   }
 }
@@ -3425,17 +3341,17 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c9 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
+  .c8 .RcTextFieldInput-underline:hover:not(.RcTextFieldInput-disabled):before {
     border-bottom-color: #121212;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c10 .RcTextFieldInput-root:hover .picker-action {
+  .c9 .RcTextFieldInput-root:hover .picker-action {
     display: none;
   }
 
-  .c10 .RcTextFieldInput-root:hover .picker-clear {
+  .c9 .RcTextFieldInput-root:hover .picker-clear {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -3509,10 +3425,10 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
           type="button"
         >
           <span
-            className="c5 c6 date_border icon"
+            className="c5 date_border icon"
           >
             <svg
-              className="c7"
+              className="c6"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -3526,7 +3442,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
       </div>
     </div>
     <span
-      className="c8"
+      className="c7"
       id="PickerTextField-0-instruction"
     />
   </div>
@@ -3593,10 +3509,10 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
           type="button"
         >
           <span
-            className="c5 c6 date_border icon"
+            className="c5 date_border icon"
           >
             <svg
-              className="c7"
+              className="c6"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -3610,7 +3526,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
       </div>
     </div>
     <span
-      className="c8"
+      className="c7"
       id="PickerTextField-0-instruction"
     />
   </div>
@@ -3677,10 +3593,10 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
           type="button"
         >
           <span
-            className="c5 c6 date_border icon"
+            className="c5 date_border icon"
           >
             <svg
-              className="c7"
+              className="c6"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -3694,7 +3610,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
       </div>
     </div>
     <span
-      className="c8"
+      className="c7"
       id="PickerTextField-0-instruction"
     />
   </div>
@@ -3761,10 +3677,10 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
           type="button"
         >
           <span
-            className="c5 c6 date_border icon"
+            className="c5 date_border icon"
           >
             <svg
-              className="c7"
+              className="c6"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -3778,7 +3694,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
       </div>
     </div>
     <span
-      className="c8"
+      className="c7"
       id="PickerTextField-0-instruction"
     />
   </div>
@@ -3845,10 +3761,10 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
           type="button"
         >
           <span
-            className="c5 c6 date_border icon"
+            className="c5 date_border icon"
           >
             <svg
-              className="c7"
+              className="c6"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -3862,7 +3778,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
       </div>
     </div>
     <span
-      className="c8"
+      className="c7"
       id="PickerTextField-0-instruction"
     />
   </div>
@@ -3877,7 +3793,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
       init value invalid(2019-11-16~2020-11-20)
     </h5>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c9 c10 "
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c8 c9 "
     >
       <label
         className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
@@ -3929,10 +3845,10 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
           type="button"
         >
           <span
-            className="c5 c6 delete_circle icon"
+            className="c5 delete_circle icon"
           >
             <svg
-              className="c7"
+              className="c6"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -3961,10 +3877,10 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
           type="button"
         >
           <span
-            className="c5 c6 date_border icon"
+            className="c5 date_border icon"
           >
             <svg
-              className="c7"
+              className="c6"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -3978,14 +3894,14 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
       </div>
     </div>
     <span
-      className="c8"
+      className="c7"
       id="PickerTextField-0-instruction"
     />
     <br />
      
     <br />
     <button
-      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c11"
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c10"
       disabled={false}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4012,7 +3928,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
      
     <br />
     <button
-      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c11"
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c10"
       disabled={false}
       onBlur={[Function]}
       onClick={[Function]}

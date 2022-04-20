@@ -27,7 +27,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle 1`] =
 `;
 
 exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examples 1`] = `
-.c10 {
+.c9 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -36,7 +36,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
   pointer-events: none;
 }
 
-.c9 {
+.c8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -64,15 +64,10 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c7,
-.c7 .c8 {
   font-size: 20px;
 }
 
-.c7:active,
-.c7:active .c8 {
+.c7:active {
   color: #F6AD16;
 }
 
@@ -82,9 +77,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
 }
 
 .c7.focus-visible:active,
-.c7[data-focus-visible-added]:active,
-.c7.focus-visible:active .c8,
-.c7[data-focus-visible-added]:active .c8 {
+.c7[data-focus-visible-added]:active {
   color: rgba(246,173,22,0.88);
 }
 
@@ -92,8 +85,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
   background-color: rgba(246,173,22,0.12);
 }
 
-.c7.RcIconButton-disabled,
-.c7.RcIconButton-disabled .c8 {
+.c7.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
@@ -146,7 +138,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
   opacity: 0;
 }
 
-.c11 {
+.c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -166,56 +158,48 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
   -webkit-transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   transition: background 150ms cubic-bezier(0.4,0,0.2,1) 0ms;
   cursor: pointer;
-}
-
-.c11,
-.c11 .c8 {
   font-size: 20px;
 }
 
-.c11:active,
-.c11:active .c8 {
+.c10:active {
   color: #666666;
 }
 
-.c11.focus-visible,
-.c11[data-focus-visible-added] {
+.c10.focus-visible,
+.c10[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
-.c11.focus-visible:active,
-.c11[data-focus-visible-added]:active,
-.c11.focus-visible:active .c8,
-.c11[data-focus-visible-added]:active .c8 {
+.c10.focus-visible:active,
+.c10[data-focus-visible-added]:active {
   color: rgba(102,102,102,0.88);
 }
 
-.c11.RcIconButton-persistBg {
+.c10.RcIconButton-persistBg {
   background-color: rgba(102,102,102,0.12);
 }
 
-.c11.RcIconButton-disabled,
-.c11.RcIconButton-disabled .c8 {
+.c10.RcIconButton-disabled {
   color: #B9B9B9;
 }
 
-.c11.RcIconButton-invisible {
+.c10.RcIconButton-invisible {
   opacity: 0;
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.c11.RcIconButton-outline {
+.c10.RcIconButton-outline {
   border: 1px solid #C7C7C7;
 }
 
-.c11.RcIconButton-contained {
+.c10.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
 }
 
-.c11.RcIconButton-contained:before {
+.c10.RcIconButton-contained:before {
   content: '';
   left: 0;
   right: 0;
@@ -227,21 +211,21 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
   position: absolute;
 }
 
-.c11.RcIconButton-contained.focus-visible,
-.c11.RcIconButton-contained[data-focus-visible-added] {
+.c10.RcIconButton-contained.focus-visible,
+.c10.RcIconButton-contained[data-focus-visible-added] {
   color: #fff;
 }
 
-.c11.RcIconButton-contained.focus-visible:before,
-.c11.RcIconButton-contained[data-focus-visible-added]:before {
+.c10.RcIconButton-contained.focus-visible:before,
+.c10.RcIconButton-contained[data-focus-visible-added]:before {
   background-color: rgba(255,255,255,0.16);
 }
 
-.c11.RcIconButton-contained:active {
+.c10.RcIconButton-contained:active {
   color: #fff;
 }
 
-.c11 .RcIconButtonTouchRipple-ripplePulsate {
+.c10 .RcIconButtonTouchRipple-ripplePulsate {
   border-radius: 0;
   -webkit-animation-name: none;
   animation-name: none;
@@ -358,10 +342,6 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
 @media (hover:hover) and (pointer:fine) {
   .c7:hover {
     background-color: rgba(246,173,22,0.08);
-  }
-
-  .c7:hover,
-  .c7:hover .c8 {
     color: rgba(246,173,22,0.88);
   }
 }
@@ -377,22 +357,18 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11:hover {
+  .c10:hover {
     background-color: rgba(102,102,102,0.08);
-  }
-
-  .c11:hover,
-  .c11:hover .c8 {
     color: rgba(102,102,102,0.88);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c11.RcIconButton-contained:hover {
+  .c10.RcIconButton-contained:hover {
     color: #fff;
   }
 
-  .c11.RcIconButton-contained:hover:before {
+  .c10.RcIconButton-contained:hover:before {
     background-color: rgba(255,255,255,0.08);
   }
 }
@@ -465,10 +441,10 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
       type="button"
     >
       <span
-        className="c8 c9 star icon"
+        className="c8 star icon"
       >
         <svg
-          className="c10"
+          className="c9"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -485,7 +461,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
     <button
       aria-describedby={null}
       aria-label="Settings"
-      className="MuiButtonBase-root c11 RcIconButton-root"
+      className="MuiButtonBase-root c10 RcIconButton-root"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -504,10 +480,10 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
       type="button"
     >
       <span
-        className="c8 c9 settings icon"
+        className="c8 settings icon"
       >
         <svg
-          className="c10"
+          className="c9"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -524,7 +500,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
     <button
       aria-describedby={null}
       aria-label="Close"
-      className="MuiButtonBase-root c11 RcIconButton-root"
+      className="MuiButtonBase-root c10 RcIconButton-root"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -543,10 +519,10 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
       type="button"
     >
       <span
-        className="c8 c9 close icon"
+        className="c8 close icon"
       >
         <svg
-          className="c10"
+          className="c9"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
