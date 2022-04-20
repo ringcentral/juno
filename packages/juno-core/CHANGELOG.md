@@ -1,4 +1,11 @@
 
+### [2.8.1](https://github.com/ringcentral/juno/compare/juno-core-v2.8.0...juno-core-v2.8.1) (2022-04-20)
+
+
+### Bug Fixes
+
+* **fix-iconButton-contained:** [IconButton] fix icon size issue ([60af026](https://github.com/ringcentral/juno/commit/60af02656b3315659864619d1cf3160be24526a5))
+
 ## [2.8.0](https://github.com/ringcentral/juno/compare/juno-core-v2.7.0...juno-core-v2.8.0) (2022-04-20)
 
 
