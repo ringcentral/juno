@@ -37643,9 +37643,9 @@ var dialHeader = {
   textHint: "rgba(255,255,255,0.88)"
 };
 var disabled = {
-  b01: "#B9B9B9",
-  f01: "#FFFFFF",
-  f02: "#B9B9B9"
+  b01: "#E5E5E5",
+  f01: "#939393",
+  f02: "#C7C7C7"
 };
 var error = {
   main: "#D63E39"
@@ -55786,8 +55786,10 @@ var iconButtonStyle = ({
   disableRipple,
   elevation,
   disabledFakeBorder,
-  activeElevation
+  activeElevation,
+  IconProps = {}
 }) => {
+  const { color: iconColor2 } = IconProps;
   const iconSize = RcIconButtonSizes[size];
   const isCircle = ["plain", "round", "inverse", "contained"].includes(variant);
   const isPlain = variant === "plain";
@@ -55796,7 +55798,7 @@ var iconButtonStyle = ({
   const isContained = variant === "contained";
   const containerSize = px2(isPlain ? iconSize : iconSize * 2);
   const mainColor = getParsePaletteColor(color2);
-  const mainColorContrast = paletteContrastText(mainColor);
+  const containedColor = iconColor2 ? getParsePaletteColor(iconColor2) : paletteContrastText(mainColor);
   const currRadius = radiusProp || (isOutline ? "lg" : isCircle ? "circle" : "zero");
   const persistBgColor = setOpacity(mainColor, isInverse ? "16" : "12");
   const defaultShadow = isContained ? shadows4("1") : void 0;
@@ -55875,8 +55877,23 @@ var iconButtonStyle = ({
     }
 
     &.${RcIconButtonClasses.contained} {
-      color: ${mainColorContrast};
+      color: ${containedColor};
       background-color: ${mainColor};
+
+      &.${RcIconButtonClasses.disabled} {
+        ${() => {
+    if (useColorWhenDisabled)
+      return css2`
+              color: ${containedColor};
+              background-color: ${mainColor};
+              opacity: ${opacity3("32")};
+            `;
+    return css2`
+            background-color: ${palette22("disabled", "b01")};
+            color: ${palette22("disabled", "f01")};
+          `;
+  }}
+      }
 
       &:before {
         content: '';
@@ -55895,29 +55912,29 @@ var iconButtonStyle = ({
       ${nonTouchHoverMedia} {
         &:hover {
           &:before {
-            background-color: ${setOpacity(mainColorContrast, "08")};
+            background-color: ${setOpacity(containedColor, "08")};
           }
 
-          color: ${mainColorContrast};
+          color: ${containedColor};
         }
       }
 
       ${focusVisible} {
         &:before {
-          background-color: ${setOpacity(mainColorContrast, "16")};
+          background-color: ${setOpacity(containedColor, "16")};
         }
 
-        color: ${mainColorContrast};
+        color: ${containedColor};
       }
 
       &:active {
         ${disableRipple && css2`
           &:before {
-            background-color: ${setOpacity(mainColorContrast, "24")};
+            background-color: ${setOpacity(containedColor, "24")};
           }
         `}
 
-        color: ${mainColorContrast};
+        color: ${containedColor};
       }
     }
 
@@ -55947,7 +55964,7 @@ var _RcIconButton = memo418(forwardRef517((inProps, ref2) => {
   }
   const {
     buttonRef = ref2,
-    IconProps,
+    IconProps = {},
     className,
     classes: classesProp,
     children: children2,
@@ -56000,13 +56017,14 @@ var _RcIconButton = memo418(forwardRef517((inProps, ref2) => {
     [classes.inverse]: isInverse
   });
   const iconButton = (() => {
+    const { color: color3, ...IconPropsWithoutColor } = IconProps;
     const icon = React572.isValidElement(children2) || children2 === "" ? children2 : /* @__PURE__ */ React572.createElement(RcIcon, {
       symbol,
       className: classes.icon,
       loading,
       size: "inherit",
       CircularProgressProps,
-      ...IconProps
+      ...IconPropsWithoutColor
     }, children2);
     const iconButton2 = /* @__PURE__ */ React572.createElement(RcButtonBase, {
       ref: buttonRef,
