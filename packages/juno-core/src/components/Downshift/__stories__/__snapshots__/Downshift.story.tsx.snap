@@ -74,7 +74,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
 }
 
 .c5.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c5.RcIconButton-invisible {
@@ -91,6 +91,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
 .c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c5.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c5.RcIconButton-contained:before {
@@ -182,7 +187,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
 }
 
 .c11.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11.RcIconButton-invisible {
@@ -199,6 +204,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
 .c11.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c11.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c11.RcIconButton-contained:before {
@@ -323,29 +333,29 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -367,7 +377,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -674,7 +684,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
 }
 
 .c5.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c5.RcIconButton-invisible {
@@ -691,6 +701,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
 .c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c5.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c5.RcIconButton-contained:before {
@@ -782,7 +797,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
 }
 
 .c11.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11.RcIconButton-invisible {
@@ -799,6 +814,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
 .c11.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c11.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c11.RcIconButton-contained:before {
@@ -934,29 +954,29 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -978,7 +998,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Autocomplete 1`]
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -1313,7 +1333,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
 }
 
 .c5.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c5.RcIconButton-invisible {
@@ -1330,6 +1350,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
 .c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c5.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c5.RcIconButton-contained:before {
@@ -1421,7 +1446,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
 }
 
 .c11.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11.RcIconButton-invisible {
@@ -1438,6 +1463,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
 .c11.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c11.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c11.RcIconButton-contained:before {
@@ -1562,29 +1592,29 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -1606,7 +1636,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -1914,7 +1944,7 @@ Array [
 }
 
 .c5.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c5.RcIconButton-invisible {
@@ -1931,6 +1961,11 @@ Array [
 .c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c5.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c5.RcIconButton-contained:before {
@@ -2033,29 +2068,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -2077,7 +2112,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -2392,7 +2427,7 @@ Array [
 }
 
 .c5.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c5.RcIconButton-invisible {
@@ -2409,6 +2444,11 @@ Array [
 .c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c5.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c5.RcIconButton-contained:before {
@@ -2511,29 +2551,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -2555,7 +2595,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -2761,7 +2801,7 @@ Array [
 }
 
 .c0.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0.RcButton-contained {
@@ -2770,8 +2810,8 @@ Array [
 }
 
 .c0.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c0.RcButton-outlined {
@@ -2781,8 +2821,8 @@ Array [
 }
 
 .c0.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c0.RcButton-outlined:after {
@@ -2928,7 +2968,7 @@ Array [
 }
 
 .c6.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c6.RcIconButton-invisible {
@@ -2945,6 +2985,11 @@ Array [
 .c6.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c6.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c6.RcIconButton-contained:before {
@@ -3036,7 +3081,7 @@ Array [
 }
 
 .c13.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c13.RcIconButton-invisible {
@@ -3053,6 +3098,11 @@ Array [
 .c13.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c13.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c13.RcIconButton-contained:before {
@@ -3148,7 +3198,7 @@ Array [
 }
 
 .c4.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 
@@ -3234,29 +3284,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -3278,7 +3328,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -3830,7 +3880,7 @@ Array [
 }
 
 .c10.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c10.RcIconButton-invisible {
@@ -3847,6 +3897,11 @@ Array [
 .c10.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c10.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c10.RcIconButton-contained:before {
@@ -3938,7 +3993,7 @@ Array [
 }
 
 .c6.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c6.RcIconButton-invisible {
@@ -3955,6 +4010,11 @@ Array [
 .c6.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c6.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c6.RcIconButton-contained:before {
@@ -4046,7 +4106,7 @@ Array [
 }
 
 .c14.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c14.RcIconButton-invisible {
@@ -4063,6 +4123,11 @@ Array [
 .c14.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c14.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c14.RcIconButton-contained:before {
@@ -4158,7 +4223,7 @@ Array [
 }
 
 .c4.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 
@@ -4244,29 +4309,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -4288,7 +4353,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -4800,7 +4865,7 @@ Array [
 }
 
 .c6.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c6.RcIconButton-invisible {
@@ -4817,6 +4882,11 @@ Array [
 .c6.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c6.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c6.RcIconButton-contained:before {
@@ -4908,7 +4978,7 @@ Array [
 }
 
 .c13.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c13.RcIconButton-invisible {
@@ -4925,6 +4995,11 @@ Array [
 .c13.RcIconButton-contained {
   color: #fff;
   background-color: #BE3933;
+}
+
+.c13.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c13.RcIconButton-contained:before {
@@ -5020,7 +5095,7 @@ Array [
 }
 
 .c4.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 
@@ -5106,29 +5181,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -5150,7 +5225,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -5648,7 +5723,7 @@ Array [
 }
 
 .c6.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c6.RcIconButton-invisible {
@@ -5665,6 +5740,11 @@ Array [
 .c6.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c6.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c6.RcIconButton-contained:before {
@@ -5756,7 +5836,7 @@ Array [
 }
 
 .c13.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c13.RcIconButton-invisible {
@@ -5773,6 +5853,11 @@ Array [
 .c13.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c13.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c13.RcIconButton-contained:before {
@@ -5868,7 +5953,7 @@ Array [
 }
 
 .c4.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 
@@ -5962,29 +6047,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -6006,7 +6091,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -6448,7 +6533,7 @@ Array [
 }
 
 .c0.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0.RcButton-contained {
@@ -6457,8 +6542,8 @@ Array [
 }
 
 .c0.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c0.RcButton-outlined {
@@ -6468,8 +6553,8 @@ Array [
 }
 
 .c0.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c0.RcButton-outlined:after {
@@ -6608,7 +6693,7 @@ Array [
 }
 
 .c0.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0.RcButton-contained {
@@ -6617,8 +6702,8 @@ Array [
 }
 
 .c0.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c0.RcButton-outlined {
@@ -6628,8 +6713,8 @@ Array [
 }
 
 .c0.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c0.RcButton-outlined:after {
@@ -6768,7 +6853,7 @@ Array [
 }
 
 .c0.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0.RcButton-contained {
@@ -6777,8 +6862,8 @@ Array [
 }
 
 .c0.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c0.RcButton-outlined {
@@ -6788,8 +6873,8 @@ Array [
 }
 
 .c0.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c0.RcButton-outlined:after {
@@ -6979,7 +7064,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
 }
 
 .c5.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c5.RcIconButton-invisible {
@@ -6996,6 +7081,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
 .c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c5.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c5.RcIconButton-contained:before {
@@ -7087,7 +7177,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
 }
 
 .c11.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11.RcIconButton-invisible {
@@ -7104,6 +7194,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
 .c11.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c11.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c11.RcIconButton-contained:before {
@@ -7228,29 +7323,29 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -7272,7 +7367,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -7615,7 +7710,7 @@ Array [
 }
 
 .c5.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c5.RcIconButton-invisible {
@@ -7632,6 +7727,11 @@ Array [
 .c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c5.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c5.RcIconButton-contained:before {
@@ -7723,7 +7823,7 @@ Array [
 }
 
 .c11.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11.RcIconButton-invisible {
@@ -7740,6 +7840,11 @@ Array [
 .c11.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c11.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c11.RcIconButton-contained:before {
@@ -7864,29 +7969,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -7908,7 +8013,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -8252,7 +8357,7 @@ Array [
 }
 
 .c5.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c5.RcIconButton-invisible {
@@ -8269,6 +8374,11 @@ Array [
 .c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c5.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c5.RcIconButton-contained:before {
@@ -8360,7 +8470,7 @@ Array [
 }
 
 .c11.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11.RcIconButton-invisible {
@@ -8377,6 +8487,11 @@ Array [
 .c11.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c11.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c11.RcIconButton-contained:before {
@@ -8501,29 +8616,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -8545,7 +8660,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -8889,7 +9004,7 @@ Array [
 }
 
 .c5.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c5.RcIconButton-invisible {
@@ -8906,6 +9021,11 @@ Array [
 .c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c5.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c5.RcIconButton-contained:before {
@@ -8997,7 +9117,7 @@ Array [
 }
 
 .c11.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11.RcIconButton-invisible {
@@ -9014,6 +9134,11 @@ Array [
 .c11.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c11.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c11.RcIconButton-contained:before {
@@ -9138,29 +9263,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -9182,7 +9307,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -9526,7 +9651,7 @@ Array [
 }
 
 .c5.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c5.RcIconButton-invisible {
@@ -9543,6 +9668,11 @@ Array [
 .c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c5.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c5.RcIconButton-contained:before {
@@ -9634,7 +9764,7 @@ Array [
 }
 
 .c11.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11.RcIconButton-invisible {
@@ -9651,6 +9781,11 @@ Array [
 .c11.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c11.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c11.RcIconButton-contained:before {
@@ -9775,29 +9910,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -9819,7 +9954,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -10132,7 +10267,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
 }
 
 .c5.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c5.RcIconButton-invisible {
@@ -10149,6 +10284,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
 .c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c5.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c5.RcIconButton-contained:before {
@@ -10240,7 +10380,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
 }
 
 .c11.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11.RcIconButton-invisible {
@@ -10257,6 +10397,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
 .c11.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c11.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c11.RcIconButton-contained:before {
@@ -10381,29 +10526,29 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -10425,7 +10570,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -10738,7 +10883,7 @@ Array [
 }
 
 .c5.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c5.RcIconButton-invisible {
@@ -10755,6 +10900,11 @@ Array [
 .c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c5.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c5.RcIconButton-contained:before {
@@ -10846,7 +10996,7 @@ Array [
 }
 
 .c11.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11.RcIconButton-invisible {
@@ -10863,6 +11013,11 @@ Array [
 .c11.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c11.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c11.RcIconButton-contained:before {
@@ -10987,29 +11142,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -11031,7 +11186,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -11347,7 +11502,7 @@ Array [
 }
 
 .c5.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c5.RcIconButton-invisible {
@@ -11364,6 +11519,11 @@ Array [
 .c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c5.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c5.RcIconButton-contained:before {
@@ -11455,7 +11615,7 @@ Array [
 }
 
 .c11.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11.RcIconButton-invisible {
@@ -11472,6 +11632,11 @@ Array [
 .c11.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c11.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c11.RcIconButton-contained:before {
@@ -11600,29 +11765,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -11644,7 +11809,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -11956,7 +12121,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
 }
 
 .c6.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c6.RcIconButton-invisible {
@@ -11973,6 +12138,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
 .c6.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c6.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c6.RcIconButton-contained:before {
@@ -12064,7 +12234,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
 }
 
 .c12.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c12.RcIconButton-invisible {
@@ -12081,6 +12251,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
 .c12.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c12.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c12.RcIconButton-contained:before {
@@ -12201,29 +12376,29 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -12245,7 +12420,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -12321,7 +12496,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
 }
 
 .c0 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 .c4 {
@@ -12623,7 +12798,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
 }
 
 .c5.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c5.RcIconButton-invisible {
@@ -12640,6 +12815,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
 .c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c5.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c5.RcIconButton-contained:before {
@@ -12731,7 +12911,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
 }
 
 .c11.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11.RcIconButton-invisible {
@@ -12748,6 +12928,11 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
 .c11.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c11.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c11.RcIconButton-contained:before {
@@ -12868,29 +13053,29 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -12912,7 +13097,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,

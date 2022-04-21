@@ -461,7 +461,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
 }
 
 .c6.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c6.RcIconButton-invisible {
@@ -478,6 +478,11 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
 .c6.RcIconButton-contained {
   color: rgba(0,0,0,0.87);
   background-color: #FFFFFF;
+}
+
+.c6.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c6.RcIconButton-contained:before {
@@ -538,7 +543,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
 }
 
 .c18.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c18.RcButton-contained {
@@ -547,8 +552,8 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
 }
 
 .c18.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c18.RcButton-outlined {
@@ -558,8 +563,8 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
 }
 
 .c18.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c18.RcButton-outlined:after {
@@ -1006,7 +1011,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
 }
 
 .c6.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c6.RcIconButton-invisible {
@@ -1023,6 +1028,11 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
 .c6.RcIconButton-contained {
   color: rgba(0,0,0,0.87);
   background-color: #FFFFFF;
+}
+
+.c6.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c6.RcIconButton-contained:before {
@@ -1083,7 +1093,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
 }
 
 .c16.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c16.RcButton-contained {
@@ -1092,8 +1102,8 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
 }
 
 .c16.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c16.RcButton-outlined {
@@ -1103,8 +1113,8 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
 }
 
 .c16.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c16.RcButton-outlined:after {

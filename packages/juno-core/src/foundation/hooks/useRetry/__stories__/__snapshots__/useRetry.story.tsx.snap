@@ -27,7 +27,7 @@ Array [
 }
 
 .c0.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0.RcButton-contained {
@@ -36,8 +36,8 @@ Array [
 }
 
 .c0.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c0.RcButton-outlined {
@@ -47,8 +47,8 @@ Array [
 }
 
 .c0.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c0.RcButton-outlined:after {
@@ -138,7 +138,7 @@ Array [
 }
 
 .c0.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0.RcButton-contained {
@@ -147,8 +147,8 @@ Array [
 }
 
 .c0.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c0.RcButton-outlined {
@@ -158,8 +158,8 @@ Array [
 }
 
 .c0.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c0.RcButton-outlined:after {
@@ -397,7 +397,7 @@ Array [
 }
 
 .c0.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0.RcButton-contained {
@@ -406,8 +406,8 @@ Array [
 }
 
 .c0.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c0.RcButton-outlined {
@@ -417,8 +417,8 @@ Array [
 }
 
 .c0.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c0.RcButton-outlined:after {
@@ -511,7 +511,7 @@ Array [
 }
 
 .c0.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0.RcButton-contained {
@@ -520,8 +520,8 @@ Array [
 }
 
 .c0.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c0.RcButton-outlined {
@@ -531,8 +531,8 @@ Array [
 }
 
 .c0.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c0.RcButton-outlined:after {

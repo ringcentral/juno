@@ -43,7 +43,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton 1`] = `
 }
 
 .c1.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1.RcButton-contained {
@@ -52,8 +52,8 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton 1`] = `
 }
 
 .c1.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c1.RcButton-outlined {
@@ -63,8 +63,8 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton 1`] = `
 }
 
 .c1.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c1.RcButton-outlined:after {
@@ -267,7 +267,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 }
 
 .c3.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c3.RcButton-contained {
@@ -276,8 +276,8 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 }
 
 .c3.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c3.RcButton-outlined {
@@ -287,8 +287,8 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 }
 
 .c3.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c3.RcButton-outlined:after {
@@ -326,7 +326,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 }
 
 .c11.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11.RcButton-text.focus-visible,
@@ -344,8 +344,8 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 }
 
 .c11.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c11.RcButton-outlined {
@@ -355,8 +355,8 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 }
 
 .c11.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c11.RcButton-outlined:after {

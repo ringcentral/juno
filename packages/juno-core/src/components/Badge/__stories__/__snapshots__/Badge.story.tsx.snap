@@ -35,7 +35,7 @@ Array [
 }
 
 .c1.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1.RcButton-contained {
@@ -44,8 +44,8 @@ Array [
 }
 
 .c1.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c1.RcButton-outlined {
@@ -55,8 +55,8 @@ Array [
 }
 
 .c1.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c1.RcButton-outlined:after {
@@ -215,7 +215,7 @@ Array [
 }
 
 .c1.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1.RcButton-contained {
@@ -224,8 +224,8 @@ Array [
 }
 
 .c1.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c1.RcButton-outlined {
@@ -235,8 +235,8 @@ Array [
 }
 
 .c1.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c1.RcButton-outlined:after {
@@ -617,7 +617,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
 }
 
 .c2.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2.RcButton-contained {
@@ -626,8 +626,8 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
 }
 
 .c2.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c2.RcButton-outlined {
@@ -637,8 +637,8 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
 }
 
 .c2.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c2.RcButton-outlined:after {
@@ -675,7 +675,7 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
 }
 
 .c4.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c4.RcButton-contained {
@@ -684,8 +684,8 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
 }
 
 .c4.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c4.RcButton-outlined {
@@ -695,8 +695,8 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
 }
 
 .c4.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c4.RcButton-outlined:after {

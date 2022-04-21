@@ -44,7 +44,7 @@ exports[`removeClassName work correctly can remove children className 1`] = `
 }
 
 .c0.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 
@@ -125,7 +125,7 @@ exports[`removeClassName work correctly should remove parent className 1`] = `
 }
 
 .c0.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 

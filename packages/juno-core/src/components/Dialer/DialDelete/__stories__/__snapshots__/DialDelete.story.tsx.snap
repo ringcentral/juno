@@ -74,7 +74,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialDelete DialDelete 1`] = `
 }
 
 .c0.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0.RcIconButton-invisible {
@@ -91,6 +91,11 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialDelete DialDelete 1`] = `
 .c0.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c0.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c0.RcIconButton-contained:before {

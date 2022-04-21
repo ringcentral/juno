@@ -53,7 +53,7 @@ Array [
 }
 
 .c0.RcRating-disabled .RcRating-iconEmpty {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0.RcRating-readOnly .RcRating-icon {
@@ -356,7 +356,7 @@ Array [
 }
 
 .c0.RcRating-disabled .RcRating-iconEmpty {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0.RcRating-readOnly .RcRating-icon {
@@ -680,7 +680,7 @@ exports[`Storyshots 🚀 Cleanup Components/Rating Rating 1`] = `
 }
 
 .c0.RcRating-disabled .RcRating-iconEmpty {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0.RcRating-readOnly .RcRating-icon {

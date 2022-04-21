@@ -44,7 +44,7 @@ Array [
 }
 
 .c0.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 
@@ -139,7 +139,7 @@ Array [
 }
 
 .c0.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 
@@ -315,7 +315,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2.RcIconButton-invisible {
@@ -332,6 +332,11 @@ Array [
 .c2.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c2.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c2.RcIconButton-contained:before {
@@ -423,7 +428,7 @@ Array [
 }
 
 .c5.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c5.RcIconButton-invisible {
@@ -440,6 +445,11 @@ Array [
 .c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c5.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c5.RcIconButton-contained:before {
@@ -531,7 +541,7 @@ Array [
 }
 
 .c7.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c7.RcIconButton-invisible {
@@ -548,6 +558,11 @@ Array [
 .c7.RcIconButton-contained {
   color: #fff;
   background-color: #BE3933;
+}
+
+.c7.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c7.RcIconButton-contained:before {
@@ -675,7 +690,7 @@ Array [
 }
 
 .c1.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 
@@ -732,7 +747,7 @@ Array [
 }
 
 .c6.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 
@@ -830,7 +845,7 @@ Array [
 }
 
 .c8.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 
@@ -887,7 +902,7 @@ Array [
 }
 
 .c12.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 
@@ -1813,7 +1828,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2.RcIconButton-invisible {
@@ -1830,6 +1845,11 @@ Array [
 .c2.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c2.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c2.RcIconButton-contained:before {
@@ -1921,7 +1941,7 @@ Array [
 }
 
 .c5.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c5.RcIconButton-invisible {
@@ -1938,6 +1958,11 @@ Array [
 .c5.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c5.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c5.RcIconButton-contained:before {
@@ -2029,7 +2054,7 @@ Array [
 }
 
 .c7.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c7.RcIconButton-invisible {
@@ -2046,6 +2071,11 @@ Array [
 .c7.RcIconButton-contained {
   color: #fff;
   background-color: #BE3933;
+}
+
+.c7.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c7.RcIconButton-contained:before {
@@ -2186,7 +2216,7 @@ Array [
 }
 
 .c1.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 
@@ -2256,7 +2286,7 @@ Array [
 }
 
 .c6.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 
@@ -2367,7 +2397,7 @@ Array [
 }
 
 .c8.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 
@@ -2437,7 +2467,7 @@ Array [
 }
 
 .c11.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 
@@ -2507,7 +2537,7 @@ Array [
 }
 
 .c12.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 
@@ -2577,7 +2607,7 @@ Array [
 }
 
 .c14.RcChip-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   opacity: 1;
 }
 

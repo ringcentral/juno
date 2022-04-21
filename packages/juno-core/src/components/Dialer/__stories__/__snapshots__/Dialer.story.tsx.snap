@@ -60,7 +60,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
 }
 
 .c6.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c6.RcIconButton-invisible {
@@ -77,6 +77,11 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
 .c6.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c6.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c6.RcIconButton-contained:before {
@@ -227,29 +232,29 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
 }
 
 .c1 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c1 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c1 .RcTextFieldInput-disabled:after {
@@ -271,7 +276,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
 
 .c1 .RcTextFieldFormHelperText-disabled,
 .c1 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1 input[type='search']::-ms-clear,
@@ -926,7 +931,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 }
 
 .c6.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c6.RcIconButton-invisible {
@@ -943,6 +948,11 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 .c6.RcIconButton-contained {
   color: rgba(0,0,0,0.87);
   background-color: #FFFFFF;
+}
+
+.c6.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c6.RcIconButton-contained:before {
@@ -1020,7 +1030,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 }
 
 .c22.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c22.RcIconButton-invisible {
@@ -1037,6 +1047,11 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 .c22.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c22.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c22.RcIconButton-contained:before {
@@ -1121,7 +1136,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 }
 
 .c26.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c26.RcIconButton-invisible {
@@ -1138,6 +1153,11 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 .c26.RcIconButton-contained {
   color: #fff;
   background-color: #3C9949;
+}
+
+.c26.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c26.RcIconButton-contained:before {
@@ -1222,7 +1242,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 }
 
 .c27.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c27.RcIconButton-invisible {
@@ -1239,6 +1259,11 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 .c27.RcIconButton-contained {
   color: rgba(0,0,0,0.87);
   background-color: #FFFFFF;
+}
+
+.c27.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c27.RcIconButton-contained:before {
@@ -1389,29 +1414,29 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 }
 
 .c11 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c11 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c11 .RcTextFieldInput-disabled:after {
@@ -1433,7 +1458,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 
 .c11 .RcTextFieldFormHelperText-disabled,
 .c11 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11 input[type='search']::-ms-clear,
@@ -1517,29 +1542,29 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 }
 
 .c16 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c16 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c16 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c16 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c16 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c16 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c16 .RcTextFieldInput-disabled:after {
@@ -1561,7 +1586,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 
 .c16 .RcTextFieldFormHelperText-disabled,
 .c16 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c16 input[type='search']::-ms-clear,
@@ -1616,11 +1641,11 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 }
 
 .c18 .RcSelectInput-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c18 .RcSelectInput-disabled .RcSelect-icon {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c18 > .RcBoxSelectInput-root {
@@ -2822,7 +2847,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
 }
 
 .c7.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c7.RcIconButton-invisible {
@@ -2839,6 +2864,11 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
 .c7.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c7.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c7.RcIconButton-contained:before {
@@ -2916,7 +2946,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
 }
 
 .c15.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c15.RcIconButton-invisible {
@@ -2933,6 +2963,11 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
 .c15.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c15.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c15.RcIconButton-contained:before {
@@ -3083,29 +3118,29 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
 }
 
 .c11 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c11 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c11 .RcTextFieldInput-disabled:after {
@@ -3127,7 +3162,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
 
 .c11 .RcTextFieldFormHelperText-disabled,
 .c11 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11 input[type='search']::-ms-clear,

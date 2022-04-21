@@ -28,7 +28,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Checkbox Checkbox 1`] = `
 }
 
 .c0.RcCheckbox-root.RcCheckbox-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -123,7 +123,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Checkbox Checkbox Examples 1`]
 }
 
 .c1 .RcFormControlLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1 .RcCheckbox-root,
@@ -152,7 +152,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Checkbox Checkbox Examples 1`]
 }
 
 .c2.RcCheckbox-root.RcCheckbox-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -315,7 +315,7 @@ Array [
 }
 
 .c0 .RcFormControlLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcCheckbox-root,
@@ -344,7 +344,7 @@ Array [
 }
 
 .c1.RcCheckbox-root.RcCheckbox-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -437,7 +437,7 @@ Array [
 }
 
 .c0 .RcFormControlLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcCheckbox-root,
@@ -466,7 +466,7 @@ Array [
 }
 
 .c1.RcCheckbox-root.RcCheckbox-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 @media (hover:hover) and (pointer:fine) {

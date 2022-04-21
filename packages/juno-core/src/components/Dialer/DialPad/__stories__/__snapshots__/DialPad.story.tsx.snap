@@ -67,7 +67,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialPad Custom Dial Pad 1`] =
 }
 
 .c3.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c3.RcIconButton-invisible {
@@ -84,6 +84,11 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialPad Custom Dial Pad 1`] =
 .c3.RcIconButton-contained {
   color: rgba(0,0,0,0.87);
   background-color: #F3F3F3;
+}
+
+.c3.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c3.RcIconButton-contained:before {
@@ -762,7 +767,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialPad DialPad 1`] = `
 }
 
 .c3.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c3.RcIconButton-invisible {
@@ -779,6 +784,11 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialPad DialPad 1`] = `
 .c3.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c3.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c3.RcIconButton-contained:before {

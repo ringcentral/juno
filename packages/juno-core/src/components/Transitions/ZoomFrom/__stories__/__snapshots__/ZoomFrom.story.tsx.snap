@@ -11,7 +11,7 @@ Array [
 }
 
 .c0 .RcFormControlLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcCheckbox-root,
@@ -72,7 +72,7 @@ Array [
 }
 
 .c1.RcSwitch-root .RcSwitch-disabled + .RcSwitch-track {
-  background-color: #B9B9B9;
+  background-color: #C7C7C7;
 }
 
 .c1.RcSwitch-root .RcSwitch-focusVisible + .RcSwitch-track:after {
@@ -217,7 +217,7 @@ Array [
 }
 
 .c0 .RcFormControlLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcCheckbox-root,
@@ -278,7 +278,7 @@ Array [
 }
 
 .c1.RcSwitch-root .RcSwitch-disabled + .RcSwitch-track {
-  background-color: #B9B9B9;
+  background-color: #C7C7C7;
 }
 
 .c1.RcSwitch-root .RcSwitch-focusVisible + .RcSwitch-track:after {

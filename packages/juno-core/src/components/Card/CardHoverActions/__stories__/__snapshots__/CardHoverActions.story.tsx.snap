@@ -67,7 +67,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardHoverActions CardHoverActi
 }
 
 .c2.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2.RcIconButton-invisible {
@@ -84,6 +84,11 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardHoverActions CardHoverActi
 .c2.RcIconButton-contained {
   color: rgba(0,0,0,0.87);
   background-color: #FFFFFF;
+}
+
+.c2.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c2.RcIconButton-contained:before {

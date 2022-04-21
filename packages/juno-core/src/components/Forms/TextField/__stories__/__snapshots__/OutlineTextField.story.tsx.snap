@@ -75,7 +75,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2.RcIconButton-invisible {
@@ -92,6 +92,11 @@ Array [
 .c2.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c2.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c2.RcIconButton-contained:before {
@@ -212,29 +217,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -256,7 +261,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -332,7 +337,7 @@ Array [
 }
 
 .c0 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -535,7 +540,7 @@ Array [
 }
 
 .c4.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c4.RcIconButton-invisible {
@@ -552,6 +557,11 @@ Array [
 .c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c4.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c4.RcIconButton-contained:before {
@@ -672,29 +682,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -716,7 +726,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -792,7 +802,7 @@ Array [
 }
 
 .c0 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1035,7 +1045,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2.RcIconButton-invisible {
@@ -1052,6 +1062,11 @@ Array [
 .c2.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c2.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c2.RcIconButton-contained:before {
@@ -1176,29 +1191,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -1220,7 +1235,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -1296,7 +1311,7 @@ Array [
 }
 
 .c0 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 .c8 *:not(input) + .c1 {
@@ -1564,7 +1579,7 @@ Array [
 }
 
 .c4.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c4.RcIconButton-invisible {
@@ -1581,6 +1596,11 @@ Array [
 .c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c4.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c4.RcIconButton-contained:before {
@@ -1717,29 +1737,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -1761,7 +1781,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -1837,7 +1857,7 @@ Array [
 }
 
 .c0 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 .c10 *:not(input) + .c3 {
@@ -2148,7 +2168,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2.RcIconButton-invisible {
@@ -2165,6 +2185,11 @@ Array [
 .c2.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c2.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c2.RcIconButton-contained:before {
@@ -2313,29 +2338,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -2357,7 +2382,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -2433,7 +2458,7 @@ Array [
 }
 
 .c0 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 .c10 *:not(input) + .c1 {
@@ -2707,7 +2732,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2.RcIconButton-invisible {
@@ -2724,6 +2749,11 @@ Array [
 .c2.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c2.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c2.RcIconButton-contained:before {
@@ -2848,29 +2878,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -2892,7 +2922,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -2968,7 +2998,7 @@ Array [
 }
 
 .c0 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 .c8 *:not(input) + .c1 {
@@ -3266,7 +3296,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2.RcIconButton-invisible {
@@ -3283,6 +3313,11 @@ Array [
 .c2.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c2.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c2.RcIconButton-contained:before {
@@ -3407,29 +3442,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -3451,7 +3486,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -3527,7 +3562,7 @@ Array [
 }
 
 .c0 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 .c8 *:not(input) + .c1 {
@@ -3743,7 +3778,7 @@ Array [
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 24px;
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c4 {
@@ -3802,7 +3837,7 @@ Array [
 }
 
 .c4.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c4.RcIconButton-invisible {
@@ -3819,6 +3854,11 @@ Array [
 .c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c4.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c4.RcIconButton-contained:before {
@@ -3910,7 +3950,7 @@ Array [
 }
 
 .c9.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c9.RcIconButton-invisible {
@@ -3927,6 +3967,11 @@ Array [
 .c9.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c9.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c9.RcIconButton-contained:before {
@@ -4051,29 +4096,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -4095,7 +4140,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -4171,7 +4216,7 @@ Array [
 }
 
 .c0 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 .c10 *:not(input) + .c3 {
@@ -4496,7 +4541,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2.RcIconButton-invisible {
@@ -4513,6 +4558,11 @@ Array [
 .c2.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c2.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c2.RcIconButton-contained:before {
@@ -4673,29 +4723,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -4717,7 +4767,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -4793,7 +4843,7 @@ Array [
 }
 
 .c0 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -5003,7 +5053,7 @@ Array [
 }
 
 .c4.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c4.RcIconButton-invisible {
@@ -5020,6 +5070,11 @@ Array [
 .c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c4.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c4.RcIconButton-contained:before {
@@ -5140,29 +5195,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -5184,7 +5239,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -5260,7 +5315,7 @@ Array [
 }
 
 .c0 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 .c9 *:not(input) + .c3 {
@@ -5595,7 +5650,7 @@ Array [
 }
 
 .c4.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c4.RcIconButton-invisible {
@@ -5612,6 +5667,11 @@ Array [
 .c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c4.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c4.RcIconButton-contained:before {
@@ -5744,29 +5804,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -5788,7 +5848,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -5864,7 +5924,7 @@ Array [
 }
 
 .c0 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 .c10 *:not(input) + .c3 {
@@ -6292,7 +6352,7 @@ Array [
 }
 
 .c4.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c4.RcIconButton-invisible {
@@ -6309,6 +6369,11 @@ Array [
 .c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c4.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c4.RcIconButton-contained:before {
@@ -6453,29 +6518,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -6497,7 +6562,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -6573,7 +6638,7 @@ Array [
 }
 
 .c0 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 .c11 *:not(input) + .c3 {
@@ -6884,7 +6949,7 @@ Array [
 }
 
 .c4.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c4.RcIconButton-invisible {
@@ -6901,6 +6966,11 @@ Array [
 .c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c4.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c4.RcIconButton-contained:before {
@@ -7057,29 +7127,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -7101,7 +7171,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -7177,7 +7247,7 @@ Array [
 }
 
 .c0 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 .c12 *:not(input) + .c3 {
@@ -7581,7 +7651,7 @@ Array [
 }
 
 .c4.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c4.RcIconButton-invisible {
@@ -7598,6 +7668,11 @@ Array [
 .c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c4.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c4.RcIconButton-contained:before {
@@ -7766,29 +7841,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -7810,7 +7885,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -7886,7 +7961,7 @@ Array [
 }
 
 .c0 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 .c13 *:not(input) + .c3 {
@@ -8173,7 +8248,7 @@ Array [
 }
 
 .c4.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c4.RcIconButton-invisible {
@@ -8190,6 +8265,11 @@ Array [
 .c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c4.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c4.RcIconButton-contained:before {
@@ -8370,29 +8450,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -8414,7 +8494,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -8490,7 +8570,7 @@ Array [
 }
 
 .c0 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 @media (hover:hover) and (pointer:fine) {

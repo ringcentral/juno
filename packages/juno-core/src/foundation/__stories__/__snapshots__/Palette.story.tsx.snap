@@ -74,7 +74,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
 }
 
 .c3.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c3.RcIconButton-invisible {
@@ -91,6 +91,11 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
 .c3.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c3.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c3.RcIconButton-contained:before {
@@ -215,29 +220,29 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
 }
 
 .c1 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c1 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c1 .RcTextFieldInput-disabled:after {
@@ -259,7 +264,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
 
 .c1 .RcTextFieldFormHelperText-disabled,
 .c1 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1 input[type='search']::-ms-clear,
@@ -335,7 +340,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
 }
 
 .c1 .RcOutlineTextFieldInput-disabled:before {
-  box-shadow: inset 0 0 0 1px #B9B9B9;
+  box-shadow: inset 0 0 0 1px #C7C7C7;
 }
 
 .c9 {
@@ -640,7 +645,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
 }
 
 .c46 {
-  background: #B9B9B9;
+  background: #E5E5E5;
   width: 48px;
   height: 48px;
   border-radius: 3px;
@@ -648,166 +653,6 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
 }
 
 .c47 {
-  background: rgba(255,255,255,0.16);
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c48 {
-  background: rgba(255,255,255,0.08);
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c49 {
-  background: transparent;
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c50 {
-  background: rgba(0,0,0,0.12);
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c51 {
-  background: #121212;
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c52 {
-  background: rgba(255,255,255,0.32);
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c53 {
-  background: rgba(255,255,255,0.48);
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c54 {
-  background: #FF8800;
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c55 {
-  background: #FFDFB1;
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c56 {
-  background: #F6F9FC;
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c57 {
-  background: #E3EBF4;
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c58 {
-  background: #E6F2F8;
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c59 {
-  background: #CD6E0D;
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c60 {
-  background: #A15600;
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c61 {
-  background: #8A77E3;
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c62 {
-  background: #6C5DAF;
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c63 {
-  background: #3093A4;
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c64 {
-  background: #2B727F;
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c65 {
-  background: #B17D1A;
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c66 {
-  background: #F9F9F9;
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c67 {
   background: #939393;
   width: 48px;
   height: 48px;
@@ -815,8 +660,168 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   display: inline-block;
 }
 
+.c48 {
+  background: #C7C7C7;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c49 {
+  background: rgba(255,255,255,0.16);
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c50 {
+  background: rgba(255,255,255,0.08);
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c51 {
+  background: transparent;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c52 {
+  background: rgba(0,0,0,0.12);
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c53 {
+  background: #121212;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c54 {
+  background: rgba(255,255,255,0.32);
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c55 {
+  background: rgba(255,255,255,0.48);
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c56 {
+  background: #FF8800;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c57 {
+  background: #FFDFB1;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c58 {
+  background: #F6F9FC;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c59 {
+  background: #E3EBF4;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c60 {
+  background: #E6F2F8;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c61 {
+  background: #CD6E0D;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c62 {
+  background: #A15600;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c63 {
+  background: #8A77E3;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c64 {
+  background: #6C5DAF;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c65 {
+  background: #3093A4;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c66 {
+  background: #2B727F;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.c67 {
+  background: #B17D1A;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
 .c68 {
-  background: #757575;
+  background: #F9F9F9;
   width: 48px;
   height: 48px;
   border-radius: 3px;
@@ -824,7 +829,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
 }
 
 .c69 {
-  background: #E5E5E5;
+  background: #757575;
   width: 48px;
   height: 48px;
   border-radius: 3px;
@@ -841,14 +846,6 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
 
 .c71 {
   background: #000000;
-  width: 48px;
-  height: 48px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.c72 {
-  background: #C7C7C7;
   width: 48px;
   height: 48px;
   border-radius: 3px;
@@ -2165,7 +2162,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
       >
         <div
           className="c46"
-          color="#B9B9B9"
+          color="#E5E5E5"
         />
         <div
           className="c13"
@@ -2182,7 +2179,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
             data-color="neutral.f05"
             data-variant="body1"
           >
-            #B9B9B9
+            #E5E5E5
           </p>
         </div>
       </div>
@@ -2190,8 +2187,8 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c44"
-          color="#FFFFFF"
+          className="c47"
+          color="#939393"
         />
         <div
           className="c13"
@@ -2208,7 +2205,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
             data-color="neutral.f05"
             data-variant="body1"
           >
-            #FFFFFF
+            #939393
           </p>
         </div>
       </div>
@@ -2216,8 +2213,8 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c46"
-          color="#B9B9B9"
+          className="c48"
+          color="#C7C7C7"
         />
         <div
           className="c13"
@@ -2234,7 +2231,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
             data-color="neutral.f05"
             data-variant="body1"
           >
-            #B9B9B9
+            #C7C7C7
           </p>
         </div>
       </div>
@@ -2279,7 +2276,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c47"
+          className="c49"
           color="rgba(255,255,255,0.16)"
         />
         <div
@@ -2305,7 +2302,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c48"
+          className="c50"
           color="rgba(255,255,255,0.08)"
         />
         <div
@@ -2357,7 +2354,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c49"
+          className="c51"
           color="transparent"
         />
         <div
@@ -2383,7 +2380,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c50"
+          className="c52"
           color="rgba(0,0,0,0.12)"
         />
         <div
@@ -2435,7 +2432,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c51"
+          className="c53"
           color="#121212"
         />
         <div
@@ -2513,7 +2510,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c52"
+          className="c54"
           color="rgba(255,255,255,0.32)"
         />
         <div
@@ -2565,7 +2562,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c53"
+          className="c55"
           color="rgba(255,255,255,0.48)"
         />
         <div
@@ -2602,7 +2599,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c49"
+          className="c51"
           color="transparent"
         />
         <div
@@ -2639,7 +2636,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c54"
+          className="c56"
           color="#FF8800"
         />
         <div
@@ -2665,7 +2662,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c55"
+          className="c57"
           color="#FFDFB1"
         />
         <div
@@ -2691,7 +2688,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c54"
+          className="c56"
           color="#FF8800"
         />
         <div
@@ -2717,7 +2714,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c51"
+          className="c53"
           color="#121212"
         />
         <div
@@ -2743,7 +2740,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c54"
+          className="c56"
           color="#FF8800"
         />
         <div
@@ -2780,7 +2777,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c56"
+          className="c58"
           color="#F6F9FC"
         />
         <div
@@ -2806,7 +2803,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c57"
+          className="c59"
           color="#E3EBF4"
         />
         <div
@@ -2869,7 +2866,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c58"
+          className="c60"
           color="#E6F2F8"
         />
         <div
@@ -2958,7 +2955,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c51"
+          className="c53"
           color="#121212"
         />
         <div
@@ -3088,7 +3085,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c59"
+          className="c61"
           color="#CD6E0D"
         />
         <div
@@ -3114,7 +3111,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c60"
+          className="c62"
           color="#A15600"
         />
         <div
@@ -3140,7 +3137,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c61"
+          className="c63"
           color="#8A77E3"
         />
         <div
@@ -3166,7 +3163,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c62"
+          className="c64"
           color="#6C5DAF"
         />
         <div
@@ -3244,7 +3241,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c63"
+          className="c65"
           color="#3093A4"
         />
         <div
@@ -3270,7 +3267,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c64"
+          className="c66"
           color="#2B727F"
         />
         <div
@@ -3296,7 +3293,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c65"
+          className="c67"
           color="#B17D1A"
         />
         <div
@@ -3385,7 +3382,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c66"
+          className="c68"
           color="#F9F9F9"
         />
         <div
@@ -3437,7 +3434,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c67"
+          className="c47"
           color="#939393"
         />
         <div
@@ -3489,7 +3486,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c68"
+          className="c69"
           color="#757575"
         />
         <div
@@ -3567,7 +3564,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c51"
+          className="c53"
           color="#121212"
         />
         <div
@@ -3593,7 +3590,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c51"
+          className="c53"
           color="#121212"
         />
         <div
@@ -3645,7 +3642,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c69"
+          className="c46"
           color="#E5E5E5"
         />
         <div
@@ -3671,7 +3668,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c54"
+          className="c56"
           color="#FF8800"
         />
         <div
@@ -3786,7 +3783,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c66"
+          className="c68"
           color="#F9F9F9"
         />
         <div
@@ -3968,7 +3965,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c67"
+          className="c47"
           color="#939393"
         />
         <div
@@ -3994,7 +3991,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c68"
+          className="c69"
           color="#757575"
         />
         <div
@@ -4072,7 +4069,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c51"
+          className="c53"
           color="#121212"
         />
         <div
@@ -4098,7 +4095,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c51"
+          className="c53"
           color="#121212"
         />
         <div
@@ -4176,7 +4173,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c69"
+          className="c46"
           color="#E5E5E5"
         />
         <div
@@ -4202,7 +4199,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c72"
+          className="c48"
           color="#C7C7C7"
         />
         <div
@@ -4254,7 +4251,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c49"
+          className="c51"
           color="transparent"
         />
         <div
@@ -4343,7 +4340,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c67"
+          className="c47"
           color="#939393"
         />
         <div
@@ -4417,7 +4414,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c51"
+          className="c53"
           color="#121212"
         />
         <div
@@ -4506,7 +4503,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         className="c11"
       >
         <div
-          className="c54"
+          className="c56"
           color="#FF8800"
         />
         <div

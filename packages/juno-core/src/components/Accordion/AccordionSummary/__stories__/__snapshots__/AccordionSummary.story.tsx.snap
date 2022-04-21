@@ -83,7 +83,7 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/AccordionSummary Accordion
 }
 
 .c4.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c4.RcIconButton-invisible {
@@ -100,6 +100,11 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/AccordionSummary Accordion
 .c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c4.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c4.RcIconButton-contained:before {
@@ -386,7 +391,7 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/AccordionSummary Accordion
 }
 
 .c4.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c4.RcIconButton-invisible {
@@ -403,6 +408,11 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/AccordionSummary Accordion
 .c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c4.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c4.RcIconButton-contained:before {

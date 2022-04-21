@@ -53,11 +53,11 @@ exports[`Storyshots 🚀 Cleanup Components/Stepper/Step Step 1`] = `
 }
 
 .c3.RcStepLabel-disabled .RcStepIcon-root {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c3.RcStepLabel-disabled .RcStepLabel-label {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2 .RcStepButton-touchRipple {

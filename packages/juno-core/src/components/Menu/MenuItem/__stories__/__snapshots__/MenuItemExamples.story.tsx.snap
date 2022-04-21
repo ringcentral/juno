@@ -1573,7 +1573,7 @@ Array [
 }
 
 .c2.RcCheckbox-root.RcCheckbox-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1 {
@@ -1780,7 +1780,7 @@ Array [
 }
 
 .c2.RcRadio-root.RcRadio-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2 .RadioButtonIcon-root svg {
@@ -2033,7 +2033,7 @@ Array [
 }
 
 .c3.RcSwitch-root .RcSwitch-disabled + .RcSwitch-track {
-  background-color: #B9B9B9;
+  background-color: #C7C7C7;
 }
 
 .c3.RcSwitch-root .RcSwitch-focusVisible + .RcSwitch-track:after {
@@ -2738,7 +2738,7 @@ Array [
 }
 
 .c4.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c4.RcIconButton-invisible {
@@ -2755,6 +2755,11 @@ Array [
 .c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c4.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c4.RcIconButton-contained:before {
@@ -3100,7 +3105,7 @@ Array [
 }
 
 .c3 .RcFormControlLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c3 .RcCheckbox-root,
@@ -3129,7 +3134,7 @@ Array [
 }
 
 .c4.RcCheckbox-root.RcCheckbox-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1 {

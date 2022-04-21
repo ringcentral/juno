@@ -26,7 +26,7 @@ exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost Dialog Example
 }
 
 .c0.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0.RcButton-contained {
@@ -35,8 +35,8 @@ exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost Dialog Example
 }
 
 .c0.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c0.RcButton-outlined {
@@ -46,8 +46,8 @@ exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost Dialog Example
 }
 
 .c0.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c0.RcButton-outlined:after {
@@ -128,7 +128,7 @@ exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost Snackbar Examp
 }
 
 .c0.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0.RcButton-contained {
@@ -137,8 +137,8 @@ exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost Snackbar Examp
 }
 
 .c0.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c0.RcButton-outlined {
@@ -148,8 +148,8 @@ exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost Snackbar Examp
 }
 
 .c0.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c0.RcButton-outlined:after {
@@ -312,7 +312,7 @@ Array [
 }
 
 .c2.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2.RcIconButton-invisible {
@@ -329,6 +329,11 @@ Array [
 .c2.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c2.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c2.RcIconButton-contained:before {
@@ -460,29 +465,29 @@ Array [
 }
 
 .c0 .RcTextFieldInput-disabled {
-  color: #B9B9B9;
-  -webkit-text-fill-color: #B9B9B9;
+  color: #C7C7C7;
+  -webkit-text-fill-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-webkit-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::-moz-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:-ms-input-placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled::placeholder {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:before {
   border-bottom-style: solid;
-  border-bottom-color: #B9B9B9;
+  border-bottom-color: #C7C7C7;
 }
 
 .c0 .RcTextFieldInput-disabled:after {
@@ -504,7 +509,7 @@ Array [
 
 .c0 .RcTextFieldFormHelperText-disabled,
 .c0 .RcTextFieldInputLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 input[type='search']::-ms-clear,
@@ -715,7 +720,7 @@ Array [
 }
 
 .c0.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0.RcButton-contained {
@@ -724,8 +729,8 @@ Array [
 }
 
 .c0.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c0.RcButton-outlined {
@@ -735,8 +740,8 @@ Array [
 }
 
 .c0.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c0.RcButton-outlined:after {
@@ -834,7 +839,7 @@ exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost With Addition 
 }
 
 .c0.RcButton-text.RcButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0.RcButton-contained {
@@ -843,8 +848,8 @@ exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost With Addition 
 }
 
 .c0.RcButton-contained.RcButton-disabled {
-  background-color: #B9B9B9;
-  color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c0.RcButton-outlined {
@@ -854,8 +859,8 @@ exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost With Addition 
 }
 
 .c0.RcButton-outlined.RcButton-disabled {
-  color: #B9B9B9;
-  border-color: #B9B9B9;
+  color: #C7C7C7;
+  border-color: #C7C7C7;
 }
 
 .c0.RcButton-outlined:after {

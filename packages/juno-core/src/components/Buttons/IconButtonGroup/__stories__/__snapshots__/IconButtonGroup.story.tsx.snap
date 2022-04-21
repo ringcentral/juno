@@ -74,7 +74,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 }
 
 .c2.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2.RcIconButton-invisible {
@@ -91,6 +91,11 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 .c2.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c2.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c2.RcIconButton-contained:before {
@@ -406,7 +411,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 }
 
 .c3.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c3.RcIconButton-invisible {
@@ -423,6 +428,11 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 .c3.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c3.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c3.RcIconButton-contained:before {
@@ -500,7 +510,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 }
 
 .c7.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c7.RcIconButton-invisible {
@@ -517,6 +527,11 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 .c7.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c7.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c7.RcIconButton-contained:before {
@@ -595,7 +610,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 }
 
 .c8.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
   background-color: rgba(102,102,102,0.12);
 }
 
@@ -613,6 +628,11 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 .c8.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c8.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c8.RcIconButton-contained:before {
@@ -690,7 +710,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 }
 
 .c10.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c10.RcIconButton-invisible {
@@ -707,6 +727,11 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/IconButtonGroup IconButtonGr
 .c10.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c10.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c10.RcIconButton-contained:before {

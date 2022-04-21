@@ -60,7 +60,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardHeader CardHeader 1`] = `
 }
 
 .c3.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c3.RcIconButton-invisible {
@@ -77,6 +77,11 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardHeader CardHeader 1`] = `
 .c3.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c3.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c3.RcIconButton-contained:before {

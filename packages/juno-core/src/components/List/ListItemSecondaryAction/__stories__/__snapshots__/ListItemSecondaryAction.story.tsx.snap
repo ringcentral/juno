@@ -27,7 +27,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
 }
 
 .c4 .RcFormControlLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c4 .RcCheckbox-root,
@@ -99,7 +99,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
 }
 
 .c5.RcCheckbox-root.RcCheckbox-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2 {

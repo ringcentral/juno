@@ -244,9 +244,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -788,9 +788,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -1332,9 +1332,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -1885,9 +1885,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -2428,9 +2428,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -2971,9 +2971,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -3519,9 +3519,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -4062,9 +4062,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -4605,9 +4605,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -5153,9 +5153,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -5696,9 +5696,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -6239,9 +6239,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -6787,9 +6787,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -7330,9 +7330,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -7873,9 +7873,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -8421,9 +8421,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -8964,9 +8964,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {
@@ -9507,9 +9507,9 @@ exports[`Storyshots 🚀 Cleanup Components/Table/TableContainer Table Container
                   "textHint": "rgba(255,255,255,0.88)",
                 },
                 "disabled": Object {
-                  "b01": "#B9B9B9",
-                  "f01": "#FFFFFF",
-                  "f02": "#B9B9B9",
+                  "b01": "#E5E5E5",
+                  "f01": "#939393",
+                  "f02": "#C7C7C7",
                 },
                 "divider": "rgba(0, 0, 0, 0.12)",
                 "error": Object {

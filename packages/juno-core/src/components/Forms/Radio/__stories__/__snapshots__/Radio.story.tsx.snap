@@ -11,7 +11,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio 1`] = `
 }
 
 .c0.RcRadio-root.RcRadio-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RadioButtonIcon-root svg {
@@ -112,7 +112,7 @@ Array [
 }
 
 .c0 .RcFormControlLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcCheckbox-root,
@@ -141,7 +141,7 @@ Array [
 }
 
 .c1.RcRadio-root.RcRadio-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1 .RadioButtonIcon-root svg {
@@ -265,7 +265,7 @@ Array [
 }
 
 .c0 .RcFormControlLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c0 .RcCheckbox-root,
@@ -294,7 +294,7 @@ Array [
 }
 
 .c1.RcRadio-root.RcRadio-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1 .RadioButtonIcon-root svg {
@@ -405,7 +405,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio with custom icon 1
 }
 
 .c1 .RcFormControlLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c1 .RcCheckbox-root,
@@ -434,7 +434,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio with custom icon 1
 }
 
 .c2.RcRadio-root.RcRadio-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2 .RadioButtonIcon-root svg {

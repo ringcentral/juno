@@ -69,11 +69,11 @@ Array [
 }
 
 .c2.RcStepLabel-disabled .RcStepIcon-root {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c2.RcStepLabel-disabled .RcStepLabel-label {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c3 .RcStepConnector-line {

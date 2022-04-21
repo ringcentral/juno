@@ -90,7 +90,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 }
 
 .c4.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c4.RcIconButton-invisible {
@@ -107,6 +107,11 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 .c4.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c4.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c4.RcIconButton-contained:before {
@@ -198,7 +203,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 }
 
 .c8.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c8.RcIconButton-invisible {
@@ -215,6 +220,11 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 .c8.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c8.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c8.RcIconButton-contained:before {
@@ -309,7 +319,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 }
 
 .c11 .RcFormControlLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c11 .RcCheckbox-root,
@@ -370,7 +380,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 }
 
 .c22.RcSwitch-root .RcSwitch-disabled + .RcSwitch-track {
-  background-color: #B9B9B9;
+  background-color: #C7C7C7;
 }
 
 .c22.RcSwitch-root .RcSwitch-focusVisible + .RcSwitch-track:after {
@@ -469,7 +479,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 }
 
 .c13.RcCheckbox-root.RcCheckbox-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c16.RcRadio-root {
@@ -482,7 +492,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 }
 
 .c16.RcRadio-root.RcRadio-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c16 .RadioButtonIcon-root svg {
@@ -1545,7 +1555,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
 }
 
 .c13.RcIconButton-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c13.RcIconButton-invisible {
@@ -1562,6 +1572,11 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
 .c13.RcIconButton-contained {
   color: #fff;
   background-color: #666666;
+}
+
+.c13.RcIconButton-contained.RcIconButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
 }
 
 .c13.RcIconButton-contained:before {
@@ -1710,7 +1725,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
 }
 
 .c23 .RcFormControlLabel-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c23 .RcCheckbox-root,
@@ -1771,7 +1786,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
 }
 
 .c21.RcSwitch-root .RcSwitch-disabled + .RcSwitch-track {
-  background-color: #B9B9B9;
+  background-color: #C7C7C7;
 }
 
 .c21.RcSwitch-root .RcSwitch-focusVisible + .RcSwitch-track:after {
@@ -1870,7 +1885,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
 }
 
 .c16.RcCheckbox-root.RcCheckbox-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c19.RcRadio-root {
@@ -1883,7 +1898,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
 }
 
 .c19.RcRadio-root.RcRadio-disabled {
-  color: #B9B9B9;
+  color: #C7C7C7;
 }
 
 .c19 .RadioButtonIcon-root svg {
