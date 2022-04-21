@@ -92,7 +92,7 @@ const _RcIconButton = memo(
 
     const {
       buttonRef = ref,
-      IconProps,
+      IconProps = {},
       className,
       classes: classesProp,
       children,
@@ -153,6 +153,10 @@ const _RcIconButton = memo(
     });
 
     const iconButton = (() => {
+      // `color` already handle in StyledIconButton
+      // eslint-disable-next-line @typescript-eslint/no-shadow
+      const { color, ...IconPropsWithoutColor } = IconProps;
+
       const icon =
         React.isValidElement(children) || children === '' ? (
           (children as ReactElement)
@@ -163,7 +167,7 @@ const _RcIconButton = memo(
             loading={loading}
             size="inherit"
             CircularProgressProps={CircularProgressProps}
-            {...IconProps}
+            {...IconPropsWithoutColor}
           >
             {children as string}
           </RcIcon>

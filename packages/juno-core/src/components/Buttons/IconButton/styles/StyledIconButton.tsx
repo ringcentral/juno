@@ -14,6 +14,7 @@ import {
   setOpacity,
   shadows,
   fakeBorder,
+  opacity,
 } from '../../../../foundation';
 import { RcIconButtonProps, RcIconButtonVariant } from '../IconButton';
 import {
@@ -71,7 +72,10 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
   elevation,
   disabledFakeBorder,
   activeElevation,
+  IconProps = {},
 }) => {
+  const { color: iconColor } = IconProps;
+
   const iconSize = RcIconButtonSizes[size!];
 
   const isCircle = (
@@ -85,7 +89,9 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
   const containerSize = px(isPlain ? iconSize : iconSize * 2);
 
   const mainColor = getParsePaletteColor(color);
-  const mainColorContrast = paletteContrastText(mainColor);
+  const containedColor = iconColor
+    ? getParsePaletteColor(iconColor)
+    : paletteContrastText(mainColor);
 
   const currRadius =
     radiusProp || (isOutline ? 'lg' : isCircle ? 'circle' : 'zero');
@@ -191,8 +197,24 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
     }
 
     &.${RcIconButtonClasses.contained} {
-      color: ${mainColorContrast};
+      color: ${containedColor};
       background-color: ${mainColor};
+
+      &.${RcIconButtonClasses.disabled} {
+        ${() => {
+          if (useColorWhenDisabled)
+            return css`
+              color: ${containedColor};
+              background-color: ${mainColor};
+              opacity: ${opacity('32')};
+            `;
+
+          return css`
+            background-color: ${palette2('disabled', 'b01')};
+            color: ${palette2('disabled', 'f01')};
+          `;
+        }}
+      }
 
       &:before {
         content: '';
@@ -211,30 +233,30 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
       ${nonTouchHoverMedia} {
         &:hover {
           &:before {
-            background-color: ${setOpacity(mainColorContrast, '08')};
+            background-color: ${setOpacity(containedColor, '08')};
           }
 
-          color: ${mainColorContrast};
+          color: ${containedColor};
         }
       }
 
       ${focusVisible} {
         &:before {
-          background-color: ${setOpacity(mainColorContrast, '16')};
+          background-color: ${setOpacity(containedColor, '16')};
         }
 
-        color: ${mainColorContrast};
+        color: ${containedColor};
       }
 
       &:active {
         ${disableRipple &&
         css`
           &:before {
-            background-color: ${setOpacity(mainColorContrast, '24')};
+            background-color: ${setOpacity(containedColor, '24')};
           }
         `}
 
-        color: ${mainColorContrast};
+        color: ${containedColor};
       }
     }
 

@@ -216,13 +216,52 @@ export const IconButtonContained: Story<IconButtonProps> = ({
       <RcIconButton
         variant="contained"
         symbol={Phone}
-        color="highlight.b01"
+        color="warning.b03"
         IconProps={{ color: 'dialHeader.icon' }}
         {...args}
       />
-      <RcIconButton variant="contained" color="success.b03">
-        <RcIcon color="neutral.b03" symbol={Phone} />
-      </RcIconButton>
+      <RcIconButton
+        variant="contained"
+        symbol={Phone}
+        color="action.primary"
+        IconProps={{ color: 'danger.b03' }}
+        {...args}
+      />
+      <br />
+      <br />
+      <Title>icon disabled</Title>
+      <RcIconButton
+        variant="contained"
+        symbol={Phone}
+        color="warning.b03"
+        IconProps={{ color: 'dialHeader.icon' }}
+        {...args}
+      />
+      <br />
+      <Title variant="body1">normal</Title>
+      <br />
+      <RcIconButton
+        variant="contained"
+        symbol={Phone}
+        color="warning.b03"
+        IconProps={{ color: 'dialHeader.icon' }}
+        disabled
+        {...args}
+      />
+      <br />
+      <Title variant="body1">disabled</Title>
+      <br />
+      <RcIconButton
+        variant="contained"
+        symbol={Phone}
+        color="warning.b03"
+        IconProps={{ color: 'dialHeader.icon' }}
+        disabled
+        useColorWhenDisabled
+        {...args}
+      />
+      <br />
+      <Title variant="body1">useColorWhenDisabled</Title>
     </RcBox>
   );
 };
