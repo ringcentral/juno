@@ -78,7 +78,7 @@ type RcDialPadProps = {
   getDialPadButtonProps?: (
     value: DIALER_PAD_ICON_VALUES,
   ) => RcBaseProps<RcIconButtonProps, 'value' | 'onKeyDown' | 'onFocus'> &
-    Record<string, string>;
+    Record<any, any>;
 } & RcBaseProps<HTMLAttributes<HTMLDivElement>, 'onChange'> &
   Pick<RcDialPadButtonProps, 'classes'>;
 
