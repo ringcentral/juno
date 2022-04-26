@@ -39,6 +39,7 @@
     "react-virtuoso": "^2.8.3",
     "resize-observer-polyfill": "^1.5.1",
     "typeface-lato": "^0.0.75",
+    "type-fest": "^2.12.2",
     "tslib": ">=2.0.0"
   },
   "devDependencies": {
