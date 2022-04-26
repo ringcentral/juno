@@ -9,6 +9,12 @@ import {
   RcDialogActions,
   RcDialogContent,
   RcDialogTitle,
+  RcDivider,
+  RcIcon,
+  RcList,
+  RcListItem,
+  RcListItemIcon,
+  RcListItemText,
   RcPortalHost,
   RcSnackbar,
   RcSnackbarProps,
@@ -21,6 +27,16 @@ import {
   switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
+import { RcDrawer, RcDrawerProps } from '../../Drawer';
+import {
+  Delete,
+  Draft,
+  Email,
+  Inbox,
+  NewEmail,
+  SendFilled,
+  Voicemail,
+} from '@ringcentral/juno-icon';
 
 // FIXME: switch between Docs and canvas page issue will throw connectable error, should handle destroy
 
@@ -146,6 +162,90 @@ export const PortalHostSnackbarExample: Story<PortalHostProps> = () => {
 };
 
 PortalHostSnackbarExample.storyName = 'PortalHost Snackbar Example';
+
+const drawerManager = new PortalManager();
+
+const Drawer: FC<Omit<RcDrawerProps, 'onClose'> & ControlledProps> = ({
+  onClose,
+  children,
+  open,
+  ...rest
+}) => {
+  return (
+    <RcDrawer
+      onClose={() => {
+        onClose();
+      }}
+      open={open}
+      {...rest}
+    >
+      <RcList style={{ width: '100%' }}>
+        <RcListItem>
+          <RcListItemIcon>
+            <RcIcon title="favorite" symbol={Inbox} size="small" />
+          </RcListItemIcon>
+          <RcListItemText primary="Inbox" />
+        </RcListItem>
+        <RcListItem>
+          <RcListItemIcon>
+            <RcIcon title="favorite" symbol={NewEmail} size="small" />
+          </RcListItemIcon>
+          <RcListItemText primary="Starred" />
+        </RcListItem>
+        <RcListItem>
+          <RcListItemIcon>
+            <RcIcon title="favorite" symbol={SendFilled} size="small" />
+          </RcListItemIcon>
+          <RcListItemText primary="Send email" />
+        </RcListItem>
+        <RcListItem>
+          <RcListItemIcon>
+            <RcIcon title="favorite" symbol={Draft} size="small" />
+          </RcListItemIcon>
+          <RcListItemText primary="Drafts" />
+        </RcListItem>
+        <RcDivider component="li" />
+        <RcListItem>
+          <RcListItemIcon>
+            <RcIcon title="favorite" symbol={Email} size="small" />
+          </RcListItemIcon>
+          <RcListItemText primary="All mail" />
+        </RcListItem>
+        <RcListItem>
+          <RcListItemIcon>
+            <RcIcon title="favorite" symbol={Delete} size="small" />
+          </RcListItemIcon>
+          <RcListItemText primary="Trash" />
+        </RcListItem>
+        <RcListItem>
+          <RcListItemIcon>
+            <RcIcon title="favorite" symbol={Voicemail} size="small" />
+          </RcListItemIcon>
+          <RcListItemText primary="Voicemail" />
+        </RcListItem>
+      </RcList>
+    </RcDrawer>
+  );
+};
+
+export const PortalHostDrawerExample: Story<PortalHostProps> = () => {
+  switchToControlKnobs();
+
+  return (
+    <>
+      <RcPortalHost manager={drawerManager} />
+      <RcButton
+        onClick={() => {
+          drawerManager.open(Drawer);
+        }}
+      >
+        toggle drawer
+      </RcButton>
+    </>
+  );
+};
+
+PortalHostDrawerExample.storyName = 'PortalHost Drawer Example';
 
 const portalManager3 = new PortalManager();
 

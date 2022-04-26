@@ -13,6 +13,7 @@ import {
 } from '../../foundation';
 import { DrawerStyle } from './styles';
 import { RcDrawerClasses } from './utils';
+import { usePortalManagerWithID, useUnmountPortalHandler } from '../PortalHost';
 
 type RcDrawerProps = {
   /** custom radius for paper, default is `lg` */
@@ -35,6 +36,7 @@ const _RcDrawer = forwardRef<any, RcDrawerProps>(
       children,
       PaperProps: PaperPropsProp,
       onClose,
+      SlideProps: SlidePropsProp,
       ...rest
     } = props;
 
@@ -63,6 +65,15 @@ const _RcDrawer = forwardRef<any, RcDrawerProps>(
       [classesProp],
     );
 
+    const onExited = useUnmountPortalHandler(SlidePropsProp?.onExited);
+    const managerWithID = usePortalManagerWithID();
+
+    const SlideProps = {
+      ...SlidePropsProp,
+      onExited,
+      ...(managerWithID ? { appear: true } : {}),
+    };
+
     return (
       <MuiDrawer
         {...rest}
@@ -71,6 +82,7 @@ const _RcDrawer = forwardRef<any, RcDrawerProps>(
         classes={classes}
         onClose={onClose}
         PaperProps={PaperProps}
+        SlideProps={SlideProps}
       >
         {children}
       </MuiDrawer>
