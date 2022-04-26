@@ -1,6 +1,8 @@
-import { createTheme as createMuiTheme } from '@material-ui/core/styles';
+import {
+  createTheme as createMuiTheme,
+  ThemeOptions as MuiThemeOptions,
+} from '@material-ui/core/styles';
 
-import { DeepPartial } from '../typings';
 import { deepmerge } from '../utils';
 import breakpoints from './assets/breakpoints.json';
 import opacity from './assets/opacity.json';
@@ -31,14 +33,15 @@ function createTheme(options: RcThemeInput = {}) {
   const _breakpoints =
     Object.keys(breakpointsInput).length > 0 ? breakpointsInput : breakpoints;
 
-  const _shadows = shadowsInput?.length > 0 ? shadowsInput : shadows;
+  const _shadows =
+    shadowsInput?.length > 0 ? shadowsInput : (shadows as RcTheme['shadows']);
 
   const _palette = deepmerge(
     paletteInput['type'] === 'dark' ? paletteDark : paletteLight,
     paletteInput as RcPalette,
   );
 
-  const theme: DeepPartial<RcTheme> = {
+  const theme: RcThemeInput & Pick<MuiThemeOptions, 'spacing'> = {
     ...options,
     spacing: 4,
     palette: _palette as any,

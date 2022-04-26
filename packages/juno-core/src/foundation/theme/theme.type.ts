@@ -204,7 +204,7 @@ export type RcTheme = {
   zIndex: ZIndex;
   shape: Shape;
   breakpoints: Breakpoints;
-} & Omit<MuiTheme, 'palette'> &
+} & Omit<MuiTheme, 'palette' | 'typography'> &
   DefaultTheme & {
     props?: {
       RcAccordion?: RcAccordionProps;
@@ -369,4 +369,4 @@ export type RcThemedStyled<T = any, K = (themeOptions: RcThemeProps) => any> = (
   props: ThemedStyledProps<T, RcTheme>,
 ) => K;
 
-export type RcThemeInput = DeepPartial<RcTheme>;
+export type RcThemeInput = DeepPartial<Omit<RcTheme, 'spacing'>>;
