@@ -60831,7 +60831,6 @@ var useKeyAudio = ({ volume, muted, sounds }) => {
 };
 
 // ../juno-core/src/components/Dialer/DialPad/DialPad.tsx
-var DEBOUNCE_TIME = 30;
 var _RcDialPad = forwardRef561((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcDialPad" });
   const {
@@ -60896,7 +60895,7 @@ var _RcDialPad = forwardRef561((inProps, ref2) => {
     onInsertRef?.current?.(value, reason);
     onChangeProp?.(value, reason);
   };
-  const handleKeyboardEffect = useDebounce((value, isKeyup) => {
+  const handleKeyboardEffect = useEventCallback2((value, isKeyup) => {
     if (isKeyup) {
       handleChange(value, "customKeyboard");
       const toIndex = ACCEPTABLE_KEYS.findIndex((x2) => x2 === value);
@@ -60905,7 +60904,7 @@ var _RcDialPad = forwardRef561((inProps, ref2) => {
         hiddenRef.current?.focus();
       }
     }
-  }, DEBOUNCE_TIME);
+  });
   const handleKeyEffect = useEventCallback2((value, reason) => {
     handleChange(value, reason);
   });
@@ -77523,6 +77522,7 @@ var _RcDrawer = forwardRef592((inProps, ref2) => {
     children: children2,
     PaperProps: PaperPropsProp,
     onClose,
+    SlideProps: SlidePropsProp,
     ...rest
   } = props;
   const { externalWindow } = useRcPortalWindowContext();
@@ -77535,13 +77535,21 @@ var _RcDrawer = forwardRef592((inProps, ref2) => {
     } : void 0
   }, PaperPropsProp), [PaperPropsProp, inlinePaper, onClose]);
   const classes = useMemo67(() => combineClasses(RcDrawerClasses, classesProp), [classesProp]);
+  const onExited = useUnmountPortalHandler(SlidePropsProp?.onExited);
+  const managerWithID = usePortalManagerWithID();
+  const SlideProps = {
+    ...SlidePropsProp,
+    onExited,
+    ...managerWithID ? { appear: true } : {}
+  };
   return /* @__PURE__ */ React676.createElement(Drawer_default, {
     ...rest,
     ref: ref2,
     container: externalWindow?.document.body,
     classes,
     onClose,
-    PaperProps
+    PaperProps,
+    SlideProps
   }, children2);
 });
 var RcDrawer = styled_components_default(_RcDrawer)`
