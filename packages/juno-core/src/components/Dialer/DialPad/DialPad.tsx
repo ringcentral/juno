@@ -10,7 +10,6 @@ import React, {
 import {
   RcBaseProps,
   styled,
-  useDebounce,
   useEventCallback,
   useForkRef,
   useKeyboardMoveFocus,
@@ -82,8 +81,6 @@ type RcDialPadProps = {
     Record<string, string>;
 } & RcBaseProps<HTMLAttributes<HTMLDivElement>, 'onChange'> &
   Pick<RcDialPadButtonProps, 'classes'>;
-
-const DEBOUNCE_TIME = 30;
 
 const _RcDialPad = forwardRef<HTMLDivElement, RcDialPadProps>(
   (inProps, ref) => {
@@ -171,7 +168,7 @@ const _RcDialPad = forwardRef<HTMLDivElement, RcDialPadProps>(
       onChangeProp?.(value, reason);
     };
 
-    const handleKeyboardEffect = useDebounce(
+    const handleKeyboardEffect = useEventCallback(
       (value: string, isKeyup: boolean) => {
         if (isKeyup) {
           handleChange(value, 'customKeyboard');
@@ -188,7 +185,6 @@ const _RcDialPad = forwardRef<HTMLDivElement, RcDialPadProps>(
           }
         }
       },
-      DEBOUNCE_TIME,
     );
 
     const handleKeyEffect = useEventCallback(
