@@ -325,3 +325,75 @@ export const PortalHostWithAdditionExample: Story<PortalHostProps> = () => {
 };
 
 PortalHostWithAdditionExample.storyName = 'PortalHost With Addition Example';
+
+const InnerDialogPortal = (props: ControlledProps) => {
+  const { onClose, open } = props;
+  const [openDialog, setOpenDialog] = useState(false);
+
+  return (
+    <RcDialog
+      open={open}
+      onClose={() => {
+        onClose();
+      }}
+    >
+      <RcDialogTitle>Dialog</RcDialogTitle>
+      <RcDialogContent>
+        <RcDialog
+          maxWidth="xs"
+          open={openDialog}
+          onClose={() => {
+            setOpenDialog(false);
+          }}
+        >
+          <RcDialogTitle>Inner Dialog</RcDialogTitle>
+          <RcDialogContent>This is content</RcDialogContent>
+          <RcDialogActions>
+            <RcButton
+              onClick={() => {
+                setOpenDialog(false);
+              }}
+            >
+              close
+            </RcButton>
+          </RcDialogActions>
+        </RcDialog>
+        <RcButton
+          onClick={() => {
+            setOpenDialog(true);
+          }}
+        >
+          open inner dialog
+        </RcButton>
+      </RcDialogContent>
+      <RcDialogActions>
+        <RcButton
+          onClick={() => {
+            onClose();
+          }}
+        >
+          close
+        </RcButton>
+      </RcDialogActions>
+    </RcDialog>
+  );
+};
+
+const innerDialogPortalManager = new PortalManager();
+
+export const PortalHostWithInnerDialog: Story<PortalHostProps> = () => {
+  switchToControlKnobs();
+
+  const openDialog = () => {
+    innerDialogPortalManager.open(InnerDialogPortal);
+  };
+
+  return (
+    <>
+      <RcPortalHost manager={innerDialogPortalManager} />
+      <RcButton onClick={openDialog}>open dialog</RcButton>
+    </>
+  );
+};
+
+PortalHostWithInnerDialog.storyName = 'PortalHost With Inner Dialog';

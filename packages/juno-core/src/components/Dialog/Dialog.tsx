@@ -15,6 +15,7 @@ import { useUnmountPortalHandler } from '../PortalHost';
 import { DialogStyle } from './styles';
 import { RcDialogChildrenSize, RcDialogClasses } from './utils';
 import { RcDialogContext } from './utils/DialogContext';
+import { HasPortalParentProvider } from '../PortalHost/context/HasPortalParentContext';
 
 type RcDialogSize =
   | RcBaseSize<'xsmall' | 'small' | 'medium' | 'large'>
@@ -110,20 +111,22 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
     };
 
     return (
-      <MuiDialog
-        ref={ref}
-        fullWidth={fullWidth}
-        container={externalWindow?.document.body}
-        maxWidth={maxWidth}
-        fullScreen={size === 'fullScreen' ? true : undefined}
-        classes={classes}
-        TransitionProps={TransitionProps}
-        {...rest}
-      >
-        <RcDialogContext.Provider value={contextValue}>
-          {children}
-        </RcDialogContext.Provider>
-      </MuiDialog>
+      <HasPortalParentProvider>
+        <MuiDialog
+          ref={ref}
+          fullWidth={fullWidth}
+          container={externalWindow?.document.body}
+          maxWidth={maxWidth}
+          fullScreen={size === 'fullScreen' ? true : undefined}
+          classes={classes}
+          TransitionProps={TransitionProps}
+          {...rest}
+        >
+          <RcDialogContext.Provider value={contextValue}>
+            {children}
+          </RcDialogContext.Provider>
+        </MuiDialog>
+      </HasPortalParentProvider>
     );
   },
 );

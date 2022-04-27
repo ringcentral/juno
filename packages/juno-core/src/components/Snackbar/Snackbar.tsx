@@ -13,6 +13,7 @@ import { useUnmountPortalHandler } from '../PortalHost';
 import { RcSnackbarContent, RcSnackbarContentProps } from './SnackbarContent';
 import { SnackbarStyle } from './styles';
 import { RcSnackbarClasses } from './utils';
+import { HasPortalParentProvider } from '../PortalHost/context/HasPortalParentContext';
 
 type RcSnackbarProps = {
   /** props apply for `RcSnackbarContent` */
@@ -45,22 +46,24 @@ const _RcSnackbar = forwardRef<any, RcSnackbarProps>(
     const TransitionProps = { ...TransitionPropsProp, onExited };
 
     return (
-      <MuiSnackbar
-        ref={ref}
-        classes={classes}
-        TransitionProps={TransitionProps}
-        {...rest}
-      >
-        {children || (
-          <RcSnackbarContent
-            size={size}
-            type={type}
-            message={message}
-            action={action}
-            {...ContentProps}
-          />
-        )}
-      </MuiSnackbar>
+      <HasPortalParentProvider>
+        <MuiSnackbar
+          ref={ref}
+          classes={classes}
+          TransitionProps={TransitionProps}
+          {...rest}
+        >
+          {children || (
+            <RcSnackbarContent
+              size={size}
+              type={type}
+              message={message}
+              action={action}
+              {...ContentProps}
+            />
+          )}
+        </MuiSnackbar>
+      </HasPortalParentProvider>
     );
   },
 );

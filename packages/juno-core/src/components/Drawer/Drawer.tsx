@@ -14,6 +14,7 @@ import {
 import { DrawerStyle } from './styles';
 import { RcDrawerClasses } from './utils';
 import { usePortalManagerWithID, useUnmountPortalHandler } from '../PortalHost';
+import { HasPortalParentProvider } from '../PortalHost/context/HasPortalParentContext';
 
 type RcDrawerProps = {
   /** custom radius for paper, default is `lg` */
@@ -75,17 +76,19 @@ const _RcDrawer = forwardRef<any, RcDrawerProps>(
     };
 
     return (
-      <MuiDrawer
-        {...rest}
-        ref={ref}
-        container={externalWindow?.document.body}
-        classes={classes}
-        onClose={onClose}
-        PaperProps={PaperProps}
-        SlideProps={SlideProps}
-      >
-        {children}
-      </MuiDrawer>
+      <HasPortalParentProvider>
+        <MuiDrawer
+          {...rest}
+          ref={ref}
+          container={externalWindow?.document.body}
+          classes={classes}
+          onClose={onClose}
+          PaperProps={PaperProps}
+          SlideProps={SlideProps}
+        >
+          {children}
+        </MuiDrawer>
+      </HasPortalParentProvider>
     );
   },
 );
