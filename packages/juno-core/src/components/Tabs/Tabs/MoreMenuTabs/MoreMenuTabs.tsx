@@ -177,17 +177,11 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
     tabsTabChildRef.current = tabsTabDefaultChild;
   }
 
-  // get real render size when render
-  useEffect(() => {
-    if (childrenProp === prevChildrenProp) {
-      return;
-    }
-
+  const updateAllTabsSize = () => {
     const tabRefsMap = tabRefsMapRef.current;
+    const allTabsSize = { ...DEFAULT_SIZE };
 
     if (tabRefsMap && tabRefsMap.size !== 0) {
-      const allTabsSize = { ...DEFAULT_SIZE };
-
       tabRefsMap.forEach((value, key) => {
         const { width, height } = getDomBoundingClientSize(value.ref.current);
         allTabsSize.width += width;
@@ -202,9 +196,19 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
 
         tabRefsMap.set(key, newRef);
       });
-
       allTabsSizeRef.current = allTabsSize;
     }
+
+    return allTabsSize;
+  };
+
+  // get real render size when render
+  useEffect(() => {
+    if (childrenProp === prevChildrenProp) {
+      return;
+    }
+
+    updateAllTabsSize();
 
     const moreElm = moreTabRef?.current;
     if (moreElm) {
@@ -242,15 +246,13 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
     };
 
     const computeWhetherToUseMoreMode = (tabsSize: Size, allTabsSize: Size) => {
-      if (
-        allTabsSize.width === 0 ||
-        allTabsSize.height === 0 ||
-        tabsSize.width === 0 ||
-        tabsSize.height === 0
-      ) {
+      if (tabsSize.width === 0 || tabsSize.height === 0) {
         return false;
       }
 
+      if (allTabsSize.width === 0 || allTabsSize.height === 0) {
+        allTabsSize = updateAllTabsSize();
+      }
       if (!isVertical) {
         return allTabsSize.width > tabsSize.width;
       }
