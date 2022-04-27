@@ -337,6 +337,7 @@ export { default as SettingsBorder } from './SettingsBorder';
 export { default as Settings } from './Settings';
 export { default as Share } from './Share';
 export { default as Sharepoint } from './Sharepoint';
+export { default as Shield } from './Shield';
 export { default as ShortcutBorder } from './ShortcutBorder';
 export { default as Shortcut } from './Shortcut';
 export { default as Signal0 } from './Signal0';
