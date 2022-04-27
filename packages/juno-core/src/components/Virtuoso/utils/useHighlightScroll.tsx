@@ -2,8 +2,6 @@ import React, { useRef } from 'react';
 
 import { IndexLocationWithAlign, ListItem } from 'react-virtuoso';
 
-import { fixWebKitTransitionStyle } from '../../../foundation';
-
 type UseHighlightScrollParams = {
   /** function to call to scroll to target index */
   scrollToIndex: (location: IndexLocationWithAlign) => void;
@@ -137,7 +135,7 @@ export function modifyVlScrollerStyle(
   position: 'absolute' | 'unset' = 'absolute',
 ) {
   if (scrollElm) {
-    scrollElm.style.transition = fixWebKitTransitionStyle;
+    scrollElm.style.transition = 'all 1ms cubic-bezier(0.4, 0, 0.2, 1) 0ms';
 
     if (position) {
       const viewPortElm = scrollElm.firstChild as HTMLElement;

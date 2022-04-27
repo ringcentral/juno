@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useMemo, useRef } from 'react';
+import React, { forwardRef, useMemo, useRef } from 'react';
 
 import clsx from 'clsx';
 
@@ -8,14 +8,13 @@ import {
   RcBaseProps,
   styled,
   useEventCallback,
-  useForceUpdate,
   useForkRef,
   useRcPortalWindowContext,
-  useSleep,
   useThemeProps,
 } from '../../foundation';
 import { RcMenuProps } from '../Menu';
 import { RcPopover } from '../Popover';
+import { RcFade } from '../Transitions';
 import { VirtualizedMenuStyle } from './styles';
 import { RcVirtualizedMenuClasses } from './utils';
 import {
@@ -110,19 +109,6 @@ const _RcVirtualizedMenu = forwardRef<any, RcVirtualizedMenuProps>(
       },
     );
 
-    const forceUpdate = useForceUpdate();
-    const { sleep } = useSleep();
-
-    // TODO: fix that when that work
-    useEffect(() => {
-      if (open) {
-        sleep(200).then(() => {
-          forceUpdate();
-        });
-      }
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [open]);
-
     return (
       <RcPopover
         ref={handleRef}
@@ -130,6 +116,8 @@ const _RcVirtualizedMenu = forwardRef<any, RcVirtualizedMenuProps>(
         classes={PopoverClasses}
         onClose={onClose}
         open={open}
+        // FIXME: workaround for virtualized menu height incorrect issue
+        TransitionComponent={RcFade}
         transitionDuration={transitionDuration}
         PaperProps={PaperProps}
         TransitionProps={TransitionProps}
