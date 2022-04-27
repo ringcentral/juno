@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { createElement, FC } from 'react';
+import { createElement, FC, PropsWithChildren } from 'react';
 
 import { systemToComponent } from '@virtuoso.dev/react-urx';
 import {
@@ -32,6 +32,7 @@ import {
   viewportStyle,
 } from './List';
 import { listSystem } from './listSystem';
+import conditionalFlushSync from './utils/conditionalFlushSync';
 import { correctItemSize } from './utils/correctItemSize';
 
 const tableComponentPropsSystem = system(() => {
@@ -80,6 +81,7 @@ const tableComponentPropsSystem = system(() => {
     ScrollerComponent: distinctProp('Scroller', 'div'),
     EmptyPlaceholder: distinctProp('EmptyPlaceholder'),
     ScrollSeekPlaceholder: distinctProp('ScrollSeekPlaceholder'),
+    FillerRow: distinctProp('FillerRow'),
   };
 });
 
@@ -93,7 +95,7 @@ const DefaultScrollSeekPlaceholder = ({ height }: { height: number }) => (
   </tr>
 );
 
-const FillerRow = ({ height }: { height: number }) => (
+const DefaultFillerRow = ({ height }: { height: number }) => (
   <tr>
     <td style={{ height, padding: 0, border: 0 }} />
   </tr>
@@ -101,7 +103,17 @@ const FillerRow = ({ height }: { height: number }) => (
 
 export const Items = React.memo(function VirtuosoItems() {
   const listState = useEmitterValue('listState');
-  const deviation = useEmitterValue('deviation');
+  const [deviation, setDeviation] = React.useState(0);
+  const react18ConcurrentRendering = useEmitterValue(
+    'react18ConcurrentRendering',
+  );
+  useEmitter('deviation', (value) => {
+    if (deviation !== value) {
+      conditionalFlushSync(react18ConcurrentRendering)(() =>
+        setDeviation(value),
+      );
+    }
+  });
   const sizeRanges = usePublisher('sizeRanges');
   const useWindowScroll = useEmitterValue('useWindowScroll');
   const customScrollParent = useEmitterValue('customScrollParent');
@@ -129,6 +141,7 @@ export const Items = React.memo(function VirtuosoItems() {
   const EmptyPlaceholder = useEmitterValue('EmptyPlaceholder');
   const ScrollSeekPlaceholder =
     useEmitterValue('ScrollSeekPlaceholder') || DefaultScrollSeekPlaceholder;
+  const FillerRow = useEmitterValue('FillerRow') || DefaultFillerRow;
   const TableBodyComponent = useEmitterValue('TableBodyComponent')!;
   const TableRowComponent = useEmitterValue('TableRowComponent')!;
   const computeItemKey = useEmitterValue('computeItemKey');
@@ -200,7 +213,7 @@ export interface Hooks {
   useEmitter: typeof useEmitter;
 }
 
-const Viewport: FC = ({ children }) => {
+const Viewport: FC<PropsWithChildren<unknown>> = ({ children }) => {
   const viewportHeight = usePublisher('viewportHeight');
   const viewportRef = useSize(
     compose(viewportHeight, (el) => correctItemSize(el, 'height')),
@@ -213,10 +226,9 @@ const Viewport: FC = ({ children }) => {
   );
 };
 
-const WindowViewport: FC = ({ children }) => {
+const WindowViewport: FC<PropsWithChildren<unknown>> = ({ children }) => {
   const windowViewportRect = usePublisher('windowViewportRect');
   const customScrollParent = useEmitterValue('customScrollParent');
-
   const viewportRef = useWindowViewportRectRef(
     windowViewportRect,
     customScrollParent,
@@ -312,6 +324,7 @@ export const {
       customScrollParent: 'customScrollParent',
       scrollerRef: 'scrollerRef',
       logLevel: 'logLevel',
+      react18ConcurrentRendering: 'react18ConcurrentRendering',
     },
     methods: {
       scrollToIndex: 'scrollToIndex',

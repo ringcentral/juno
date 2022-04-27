@@ -1,6 +1,12 @@
 /* eslint-disable no-console */
 import * as React from 'react';
-import { ComponentType, createElement, CSSProperties, FC } from 'react';
+import {
+  ComponentType,
+  createElement,
+  CSSProperties,
+  FC,
+  PropsWithChildren,
+} from 'react';
 
 import { RefHandle, systemToComponent } from '@virtuoso.dev/react-urx';
 import {
@@ -37,6 +43,7 @@ import {
   ListRootProps,
 } from './interfaces';
 import { listSystem } from './listSystem';
+import conditionalFlushSync from './utils/conditionalFlushSync';
 import { correctItemSize } from './utils/correctItemSize';
 import { positionStickyCssValue } from './utils/positionStickyCssValue';
 
@@ -242,6 +249,7 @@ const GROUP_STYLE = {
   zIndex: 1,
   overflowAnchor: 'none',
 };
+const ITEM_STYLE = { overflowAnchor: 'none' };
 
 export const Items = React.memo(function VirtuosoItems({
   showTopList = false,
@@ -249,7 +257,19 @@ export const Items = React.memo(function VirtuosoItems({
   showTopList?: boolean;
 }) {
   const listState = useEmitterValue('listState');
-  const deviation = useEmitterValue('deviation');
+
+  const [deviation, setDeviation] = React.useState(0);
+  const react18ConcurrentRendering = useEmitterValue(
+    'react18ConcurrentRendering',
+  );
+  useEmitter('deviation', (value) => {
+    if (deviation !== value) {
+      conditionalFlushSync(react18ConcurrentRendering)(() =>
+        setDeviation(value),
+      );
+    }
+  });
+
   const sizeRanges = usePublisher('sizeRanges');
   const useWindowScroll = useEmitterValue('useWindowScroll');
   const customScrollParent = useEmitterValue('customScrollParent');
@@ -353,7 +373,7 @@ export const Items = React.memo(function VirtuosoItems({
           'data-known-size': item.size,
           'data-item-index': item.index,
           'data-item-group-index': item.groupIndex,
-          style: { overflowAnchor: 'none' },
+          style: ITEM_STYLE,
         } as any,
         hasGroups
           ? (itemContent as GroupItemContent<any, any>)(
@@ -535,7 +555,7 @@ export function buildWindowScroller({
   return Scroller;
 }
 
-const Viewport: FC = ({ children }) => {
+const Viewport: FC<PropsWithChildren<unknown>> = ({ children }) => {
   const viewportHeight = usePublisher('viewportHeight');
   const viewportRef = useSize(
     compose(viewportHeight, (el) => correctItemSize(el, 'height')),
@@ -548,7 +568,7 @@ const Viewport: FC = ({ children }) => {
   );
 };
 
-const WindowViewport: FC = ({ children }) => {
+const WindowViewport: FC<PropsWithChildren<unknown>> = ({ children }) => {
   const windowViewportRect = usePublisher('windowViewportRect');
   const customScrollParent = useEmitterValue('customScrollParent');
   const viewportRef = useWindowViewportRectRef(
@@ -563,7 +583,7 @@ const WindowViewport: FC = ({ children }) => {
   );
 };
 
-const TopItemListContainer: FC = ({ children }) => {
+const TopItemListContainer: FC<PropsWithChildren<unknown>> = ({ children }) => {
   const TopItemList = useEmitterValue('TopItemListComponent');
   const headerHeight = useEmitterValue('headerHeight');
   const style = { ...topItemListStyle, marginTop: `${headerHeight}px` };
@@ -635,6 +655,7 @@ export const {
       customScrollParent: 'customScrollParent',
       scrollerRef: 'scrollerRef',
       logLevel: 'logLevel',
+      react18ConcurrentRendering: 'react18ConcurrentRendering',
 
       // deprecated
       item: 'item',

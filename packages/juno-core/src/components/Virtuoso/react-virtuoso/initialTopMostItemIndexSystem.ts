@@ -35,7 +35,7 @@ export const initialTopMostItemIndexSystem = u.system(
         didMount,
         u.withLatestFrom(initialTopMostItemIndex),
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        u.filter(([, location]) => !!location),
+        u.filter(([_, location]) => !!location),
         u.mapTo(false),
       ),
       scrolledToInitialItem,

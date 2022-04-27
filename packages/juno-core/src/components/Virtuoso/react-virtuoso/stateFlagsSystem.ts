@@ -123,7 +123,7 @@ export const stateFlagsSystem = u.system(
           (
             current,
             [
-              [scrollTop, scrollHeight],
+              { scrollTop, scrollHeight },
               viewportHeight,
               _headerHeight,
               _footerHeight,
@@ -188,9 +188,11 @@ export const stateFlagsSystem = u.system(
       u.pipe(
         scrollContainerState,
         u.scan(
-          (current, [scrollTop, scrollHeight]) => {
+          (current, { scrollTop, scrollHeight, viewportHeight }) => {
             if (current.scrollHeight !== scrollHeight) {
-              if (current.scrollTop !== scrollTop) {
+              const atBottom = scrollTop === scrollHeight - viewportHeight;
+
+              if (current.scrollTop !== scrollTop && atBottom) {
                 return {
                   scrollHeight,
                   scrollTop,
@@ -235,7 +237,7 @@ export const stateFlagsSystem = u.system(
     u.connect(
       u.pipe(
         scrollContainerState,
-        u.map(([scrollTop]) => scrollTop),
+        u.map(({ scrollTop }) => scrollTop),
         u.distinctUntilChanged(),
         u.scan(
           (acc, scrollTop) => {

@@ -2,8 +2,9 @@ import { useCallback, useEffect, useRef } from 'react';
 
 import * as u from '@virtuoso.dev/urx';
 
-import { correctItemSize } from '../utils/correctItemSize';
 import { useRcPortalWindowContext } from '../../../../foundation';
+import { ScrollContainerState } from '../interfaces';
+import { correctItemSize } from '../utils/correctItemSize';
 
 export type ScrollerRef = Window | HTMLElement | null;
 
@@ -12,7 +13,7 @@ function approximatelyEqual(num1: number, num2: number) {
 }
 
 export default function useScrollTop(
-  scrollContainerStateCallback: (state: [number, number]) => void,
+  scrollContainerStateCallback: (state: ScrollContainerState) => void,
   smoothScrollTargetReached: (yes: true) => void,
   scrollerElement: any,
   scrollerRefCallback: (ref: ScrollerRef) => void = u.noop,
@@ -36,8 +37,16 @@ export default function useScrollTop(
         (el as any) === externalWindow
           ? externalWindow.document.documentElement.scrollHeight
           : el.scrollHeight;
+      const viewportHeight =
+        (el as any) === externalWindow
+          ? externalWindow.innerHeight
+          : el.offsetHeight;
 
-      scrollContainerStateCallback([Math.max(scrollTop, 0), scrollHeight]);
+      scrollContainerStateCallback({
+        scrollTop: Math.max(scrollTop, 0),
+        scrollHeight,
+        viewportHeight,
+      });
 
       if (scrollTopTarget.current !== null) {
         if (
@@ -101,7 +110,7 @@ export default function useScrollTop(
         correctItemSize(externalWindow.document.documentElement, 'height'),
         externalWindow.document.documentElement.scrollHeight,
       );
-      offsetHeight = externalWindow.window.innerHeight;
+      offsetHeight = externalWindow.innerHeight;
       scrollTop = externalWindow.document.documentElement.scrollTop;
     } else {
       scrollHeight = (scrollerElement as HTMLElement).scrollHeight;
@@ -121,7 +130,11 @@ export default function useScrollTop(
       approximatelyEqual(offsetHeight, scrollHeight) ||
       location.top === scrollTop
     ) {
-      scrollContainerStateCallback([scrollTop, scrollHeight]);
+      scrollContainerStateCallback({
+        scrollTop,
+        scrollHeight,
+        viewportHeight: offsetHeight,
+      });
       if (isSmooth) {
         smoothScrollTargetReached(true);
       }
@@ -147,9 +160,7 @@ export default function useScrollTop(
   }
 
   function scrollByCallback(location: ScrollToOptions) {
-    if (scrollTopTarget.current === null) {
-      scrollerRef.current!.scrollBy(location);
-    }
+    scrollerRef.current!.scrollBy(location);
   }
 
   return { scrollerRef, scrollByCallback, scrollToCallback };

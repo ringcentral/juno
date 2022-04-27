@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react';
-import { useRcPortalWindowContext } from '../../../../foundation';
 
+import { useRcPortalWindowContext } from '../../../../foundation';
 import { WindowViewportInfo } from '../interfaces';
 import { useSizeWithElRef } from './useSize';
 
@@ -18,8 +18,8 @@ export default function useWindowViewportRectRef(
       }
       const rect = element.getBoundingClientRect();
       const visibleWidth = rect.width;
-      let visibleHeight: number;
-      let offsetTop: number;
+      // eslint-disable-next-line one-var
+      let visibleHeight: number, offsetTop: number;
 
       if (customScrollParent) {
         const customScrollParentRect =

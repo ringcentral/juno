@@ -234,6 +234,11 @@ export interface VirtuosoProps<D, C> extends ListRootProps {
    * By default `4`. Redefine to change how much away from the bottom the scroller can be before the list is not considered not at bottom.
    */
   atBottomThreshold?: number;
+
+  /**
+   * Reduces an edge case blinking visible in React18 by enabling flushSync in certain changes.
+   */
+  react18ConcurrentRendering?: boolean;
 }
 
 export interface GroupedVirtuosoProps<D, C>
@@ -448,6 +453,11 @@ export interface TableVirtuosoProps<D, C>
    * By default `4`. Redefine to change how much away from the bottom the scroller can be before the list is not considered not at bottom.
    */
   atBottomThreshold?: number;
+
+  /**
+   * Reduces an edge case blinking visible in React18 by enabling flushSync in certain changes.
+   */
+  react18ConcurrentRendering?: boolean;
 }
 
 export interface VirtuosoGridProps<C extends unknown = unknown>
