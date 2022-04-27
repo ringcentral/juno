@@ -76,6 +76,7 @@ export default {
 type MenuProps = ComponentProps<typeof RcVirtualizedMenu>;
 
 const menus = range(0, 1000);
+const threeItems = range(0, 3);
 
 export const VirtualizedMenu: Story<Partial<MenuProps>> = ({
   children,
@@ -84,12 +85,18 @@ export const VirtualizedMenu: Story<Partial<MenuProps>> = ({
   switchToControlKnobs();
 
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
+  const [anchorEl2, setAnchorEl2] = useState<HTMLButtonElement | null>(null);
   const [count, setCount] = useState(0);
   const handleClick = (
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   ) => setAnchorEl(event.currentTarget);
 
+  const handleClick2 = (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  ) => setAnchorEl2(event.currentTarget);
+
   const handleClose = () => setAnchorEl(null);
+  const handleClose2 = () => setAnchorEl2(null);
 
   return (
     <>
@@ -108,6 +115,35 @@ export const VirtualizedMenu: Story<Partial<MenuProps>> = ({
               key={x}
               // disabled={x < 10}
               onClick={handleClose}
+              onContextMenu={() => {
+                setCount(count + 1);
+              }}
+              data-search-text={label}
+            >
+              <RcListItemText primary={label} />
+            </RcMenuItem>
+          );
+        })}
+      </RcVirtualizedMenu>
+
+      <br />
+      <br />
+
+      <RcButton onClick={handleClick2}>Open Menu(less items)</RcButton>
+      <RcVirtualizedMenu
+        {...args}
+        open={Boolean(anchorEl2)}
+        anchorEl={anchorEl2}
+        // MenuListProps={{ disabledItemsFocusable: true }}
+        onClose={handleClose2}
+      >
+        {threeItems.map((x) => {
+          const label = `${x}-MenuItem${count}`;
+          return (
+            <RcMenuItem
+              key={x}
+              // disabled={x < 10}
+              onClick={handleClose2}
               onContextMenu={() => {
                 setCount(count + 1);
               }}
