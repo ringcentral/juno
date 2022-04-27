@@ -104,12 +104,7 @@ export const TextField: Story<TextFieldProps> = ({
       />
       <br />
       <br />
-      <Title>
-        UnControl
-        <RcText highlight variant="subheading1">
-          (if you want cleanBtn, make component to be controlled)
-        </RcText>
-      </Title>
+      <Title>UnControl</Title>
 
       <RcTextField id="search" type="search" {...args} />
     </>

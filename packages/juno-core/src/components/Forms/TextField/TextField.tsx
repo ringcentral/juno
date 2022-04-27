@@ -1,4 +1,5 @@
 import React, {
+  ChangeEventHandler,
   forwardRef,
   useEffect,
   useLayoutEffect,
@@ -21,6 +22,7 @@ import {
   RcPaletteProp,
   RcTheme,
   styled,
+  useControlled,
   useDeprecatedCheck,
   useEventCallback,
   useForkRef,
@@ -98,6 +100,8 @@ const combineOutlineClasses = combineClasses(
   RcOutlineTextFieldInputClasses,
 );
 
+const displayName = 'RcTextField';
+
 const _RcTextField = forwardRef<any, RcTextFieldProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcTextField' });
 
@@ -140,6 +144,7 @@ const _RcTextField = forwardRef<any, RcTextFieldProps>((inProps, ref) => {
     InputProps: InputPropsProp,
     error,
     helperText,
+    // no need assign to MuiTextField
     defaultValue,
     inputRef: inputRefProp,
     autoSelect = selectOnMount,
@@ -351,7 +356,6 @@ const _RcTextField = forwardRef<any, RcTextFieldProps>((inProps, ref) => {
       id={id}
       value={valueProp}
       onChange={onChange}
-      defaultValue={defaultValue}
       error={validate ? !!validateMessage : error}
       helperText={validateMessage || helperText}
       classes={classes}
@@ -365,7 +369,28 @@ const _RcTextField = forwardRef<any, RcTextFieldProps>((inProps, ref) => {
 });
 
 /** @release */
-const RcTextField = styled(_RcTextField)`
+const RcTextField = styled(_RcTextField).attrs(
+  ({
+    defaultValue = '',
+    value: valueProp,
+    onChange: onChangeProp,
+    ...rest
+  }: RcTextFieldProps) => {
+    const [value, setValue] = useControlled({
+      default: defaultValue,
+      controlled: valueProp,
+      name: displayName,
+    });
+
+    const onChange: ChangeEventHandler<HTMLTextAreaElement | HTMLInputElement> =
+      (event) => {
+        onChangeProp?.(event);
+        setValue(event.target.value);
+      };
+
+    return { ...rest, value, onChange };
+  },
+)`
   ${TextFieldStyle}
 `;
 
@@ -377,7 +402,7 @@ RcTextField.defaultProps = {
   textVariant: 'subheading1',
 };
 
-RcTextField.displayName = 'RcTextField';
+RcTextField.displayName = displayName;
 
 export { RcOutlineTextFieldIconSizes, RcTextField };
 export type {
