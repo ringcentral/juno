@@ -226,6 +226,7 @@ const _RcDialPad = forwardRef<HTMLDivElement, RcDialPadProps>(
               key={key}
               value={key}
               onKeyEffect={handleKeyEffect}
+              externalWindow={externalWindow}
               {...getItemProps(index)}
               aria-label={ariaLabelArr.join(',')}
               onKeyDown={onKeyFocusedIndexHandle}

@@ -6,6 +6,8 @@ import { RcDialPadOnChangeReason } from '../DialPad';
 import { buttonWrapperStyle } from './styles';
 
 export type RcDialPadButtonProps = {
+  /** for custom window */
+  externalWindow?: Window;
   /** output value when press */
   value: string;
   /** output value when long press */
@@ -26,7 +28,14 @@ export type RcDialPadButtonProps = {
 >;
 
 const _RcDialPadButton: FunctionComponent<RcDialPadButtonProps> = (props) => {
-  const { value, longPressValue, longPressDelay, onKeyEffect, ...rest } = props;
+  const {
+    value,
+    longPressValue,
+    longPressDelay,
+    onKeyEffect,
+    externalWindow = window,
+    ...rest
+  } = props;
 
   const isPressEvent =
     typeof longPressDelay === 'number' && typeof longPressValue === 'string';
@@ -43,7 +52,7 @@ const _RcDialPadButton: FunctionComponent<RcDialPadButtonProps> = (props) => {
         : undefined,
     },
     rest as any,
-    { delay: longPressDelay },
+    { delay: longPressDelay, externalWindow },
   );
 
   return (
