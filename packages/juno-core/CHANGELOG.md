@@ -1,4 +1,19 @@
 
+## [2.11.0](https://github.com/ringcentral/juno/compare/juno-core-v2.10.0...juno-core-v2.11.0) (2022-04-28)
+
+
+### Features
+
+* **FIJI-50006:** [virtuoso] upgrade virtuoso version to v2.10.1 ([ad9cdf7](https://github.com/ringcentral/juno/commit/ad9cdf7e17b39ba664727be1406144022e85d2ab))
+* **Tabs:** support updateAllTabsSize in computeWhetherToUseMoreMode ([622264f](https://github.com/ringcentral/juno/commit/622264f5f3d6a0f6636e427abf48d578ac40fb03))
+
+
+### Bug Fixes
+
+* **FIJI-50006:** [PortalHost] fix issue about nested components that support portalManager ([dba0426](https://github.com/ringcentral/juno/commit/dba042698bd7adc1f12fb577198b7f704b031037))
+* **FIJI-50006:** [TextField] fix issue about clear button lost when TextField is uncontrolled ([2707280](https://github.com/ringcentral/juno/commit/270728012ffaae1110e72f921a2294c572ff3c2f))
+* **FIJI-50006:** [VirtualizedMenu] change vl menu animation to fade ([d4d2864](https://github.com/ringcentral/juno/commit/d4d28642ef48ce071a86d8d5b79310c43d061051))
+
 ## [2.9.0](https://github.com/ringcentral/juno/compare/juno-core-v2.8.1...juno-core-v2.9.0) (2022-04-21)
 
 
