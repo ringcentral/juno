@@ -1,4 +1,11 @@
 
+### [1.6.1](https://github.com/ringcentral/juno/compare/juno-icon-v1.6.0...juno-icon-v1.6.1) (2022-05-05)
+
+
+### Bug Fixes
+
+* **update-icon-220505:** [Icon] fix size of AppsInstalled ([e6d4cc0](https://github.com/ringcentral/juno/commit/e6d4cc0e078ff5e969f430e1ad5430d984e7b9d3))
+
 ## [1.6.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.5.0...juno-icon-v1.6.0) (2022-05-05)
 
 
