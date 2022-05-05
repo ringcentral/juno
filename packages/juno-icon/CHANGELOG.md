@@ -1,4 +1,11 @@
 
+## [1.6.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.5.0...juno-icon-v1.6.0) (2022-05-05)
+
+
+### Features
+
+* **update-icon-220505:** [Icon] add icons AppsCategories, AppsDevelopers, AppsDiscovery, AppsInstalled, AppsProduct ([889d824](https://github.com/ringcentral/juno/commit/889d8248a3609f2a74ea07e66081b55709eeabb0))
+
 ## [1.5.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.4.0...juno-icon-v1.5.0) (2022-04-28)
 
 
