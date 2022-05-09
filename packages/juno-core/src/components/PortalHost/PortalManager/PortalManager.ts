@@ -267,6 +267,7 @@ export class PortalManager<D extends {} = {}> extends Connectable<
 
       onUnmounted: () => {
         const feedback = this._feedbackMap.get(id);
+        this._feedbackMap.delete(id);
         resolveOnClosed(feedback);
       },
 

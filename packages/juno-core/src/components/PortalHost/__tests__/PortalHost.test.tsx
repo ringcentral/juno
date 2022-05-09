@@ -1,11 +1,14 @@
 import React, { FunctionComponent, useRef } from 'react';
 
+import '@testing-library/jest-dom/extend-expect';
 import {
+  act,
   cleanup,
   fireEvent,
   render,
   screen,
   waitFor,
+  waitForElementToBeRemoved,
 } from '@testing-library/react';
 
 import { RcDialog } from '../../Dialog';
@@ -19,11 +22,11 @@ import {
 const TestComponentString = 'TestComponent';
 
 const TestComponent: FunctionComponent<
-  ControlledProps<{ text?: string }, string>
-> = ({ open, onClose, text, ...rest }) => {
+  ControlledProps<{ text?: string; feedback?: string }, string>
+> = ({ open, onClose, text, feedback = 'feedback', ...rest }) => {
   const timeRef = useRef(+new Date());
   return (
-    <RcDialog open={open} onClose={() => onClose('feedback')} {...rest}>
+    <RcDialog open={open} onClose={() => onClose(feedback)} {...rest}>
       <div>{TestComponentString}</div>
       <div>{text}</div>
       <div data-test-automation-id="create-time">{timeRef.current}</div>
@@ -235,5 +238,129 @@ describe('Check order', () => {
     const dialogB = await screen.findByTestId('B');
 
     expect(dialogA.nextElementSibling).toBe(dialogB);
+  });
+});
+
+describe('feedback', () => {
+  it('Should get feedback correctly after close dialog', async () => {
+    const portalManager = new PortalManager();
+    render(<RcPortalHost manager={portalManager} />);
+
+    const controller1 = portalManager.open(TestComponent, {
+      props: { feedback: 'feed1' },
+    });
+    const controller2 = portalManager.open(TestComponent, {
+      props: { feedback: 'back2' },
+    });
+
+    // wait open
+    const dialogs = await screen.findAllByRole('dialog', { hidden: true });
+
+    expect(dialogs).toHaveLength(2);
+
+    // close top dialog
+    fireEvent(
+      dialogs[1],
+      new KeyboardEvent('keydown', {
+        bubbles: true,
+        cancelable: true,
+        key: 'Escape',
+      }),
+    );
+
+    let feedback: string | undefined;
+
+    await waitForElementToBeRemoved(dialogs[1]);
+
+    await act(async () => {
+      feedback = await controller2.onClosed;
+    });
+
+    expect(feedback).toBe('back2');
+
+    // close second dialog
+    fireEvent(
+      dialogs[0],
+      new KeyboardEvent('keydown', {
+        bubbles: true,
+        cancelable: true,
+        key: 'Escape',
+      }),
+    );
+
+    await waitForElementToBeRemoved(dialogs[0]);
+
+    await act(async () => {
+      feedback = await controller1.onClosed;
+    });
+
+    expect(feedback).toBe('feed1');
+  });
+
+  it('Should get feedback `undefined` after close all dialog', async () => {
+    const portalManager = new PortalManager();
+    render(<RcPortalHost manager={portalManager} />);
+
+    const controller1 = portalManager.open(TestComponent, {
+      props: { feedback: 'feed1' },
+    });
+    const controller2 = portalManager.open(TestComponent, {
+      props: { feedback: 'back2' },
+    });
+
+    // wait open
+    const dialogs = await screen.findAllByRole('dialog', { hidden: true });
+
+    expect(dialogs).toHaveLength(2);
+
+    portalManager.closeAll();
+
+    let feedback: string | undefined;
+
+    await act(async () => {
+      feedback = await controller2.onClosed;
+    });
+
+    expect(feedback).toBeUndefined();
+
+    await act(async () => {
+      feedback = await controller1.onClosed;
+    });
+
+    expect(feedback).toBeUndefined();
+  });
+
+  it('Should clean `portalManager._feedbackMap` after close dialog', async () => {
+    const portalManager = new PortalManager();
+    render(<RcPortalHost manager={portalManager} />);
+
+    const controller = portalManager.open(TestComponent, {
+      props: { feedback: 'feeeed' },
+    });
+
+    const dialog = await screen.findByRole('dialog', { hidden: true });
+
+    fireEvent(
+      dialog,
+      new KeyboardEvent('keydown', {
+        bubbles: true,
+        cancelable: true,
+        key: 'Escape',
+      }),
+    );
+
+    expect(portalManager['_feedbackMap'].get(controller.id)).toBe('feeeed');
+
+    let feedback: string | undefined;
+
+    await waitForElementToBeRemoved(dialog);
+
+    await act(async () => {
+      feedback = await controller.onClosed;
+    });
+
+    expect(feedback).toBe('feeeed');
+
+    expect(portalManager['_feedbackMap'].size).toBe(0);
   });
 });
