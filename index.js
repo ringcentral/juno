@@ -61976,6 +61976,7 @@ var PortalManager = class extends Connectable {
       },
       onUnmounted: () => {
         const feedback = this._feedbackMap.get(id3);
+        this._feedbackMap.delete(id3);
         resolveOnClosed(feedback);
       },
       props,
