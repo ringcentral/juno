@@ -68,6 +68,7 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
       childrenSize,
       children,
       TransitionProps: TransitionPropsProp,
+      PaperProps: PaperPropsProp,
       ...rest
     } = props;
     const classes = useMemo(
@@ -110,6 +111,11 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
       onExited,
     };
 
+    const PaperProps = {
+      'aria-modal': true,
+      ...PaperPropsProp,
+    };
+
     return (
       <HasPortalParentProvider>
         <MuiDialog
@@ -120,6 +126,7 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
           fullScreen={size === 'fullScreen' ? true : undefined}
           classes={classes}
           TransitionProps={TransitionProps}
+          PaperProps={PaperProps}
           {...rest}
         >
           <RcDialogContext.Provider value={contextValue}>
