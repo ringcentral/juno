@@ -1,4 +1,11 @@
 
+### [2.12.3](https://github.com/ringcentral/juno/compare/juno-core-v2.12.2...juno-core-v2.12.3) (2022-05-11)
+
+
+### Bug Fixes
+
+* **fix-dialog-a11y:** [Dialog] add `aria-modal=true` attribute ([38895cd](https://github.com/ringcentral/juno/commit/38895cdb63bb432d1067b018d0f48a506dedc675))
+
 ### [2.12.2](https://github.com/ringcentral/juno/compare/juno-core-v2.12.1...juno-core-v2.12.2) (2022-05-09)
 
 
