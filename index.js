@@ -62078,6 +62078,7 @@ var _RcDialog = forwardRef570((inProps, ref2) => {
     childrenSize,
     children: children2,
     TransitionProps: TransitionPropsProp,
+    PaperProps: PaperPropsProp,
     ...rest
   } = props;
   const classes = useMemo38(() => combineClasses(RcDialogClasses, classesProp), [classesProp]);
@@ -62105,6 +62106,10 @@ var _RcDialog = forwardRef570((inProps, ref2) => {
     ...TransitionPropsProp,
     onExited
   };
+  const PaperProps = {
+    "aria-modal": true,
+    ...PaperPropsProp
+  };
   return /* @__PURE__ */ React643.createElement(HasPortalParentProvider, null, /* @__PURE__ */ React643.createElement(Dialog_default, {
     ref: ref2,
     fullWidth,
@@ -62113,6 +62118,7 @@ var _RcDialog = forwardRef570((inProps, ref2) => {
     fullScreen: size === "fullScreen" ? true : void 0,
     classes,
     TransitionProps: TransitionProps4,
+    PaperProps,
     ...rest
   }, /* @__PURE__ */ React643.createElement(RcDialogContext.Provider, {
     value: contextValue
