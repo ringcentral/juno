@@ -1,4 +1,11 @@
 
+## [1.7.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.6.1...juno-icon-v1.7.0) (2022-05-12)
+
+
+### Features
+
+* **FIJI-50567:** [Icon] add icon HybridContact, update icon AppsCategories, AppsDiscovery, AppsProduct ([c8bd630](https://github.com/ringcentral/juno/commit/c8bd630d0e355ccacd83151f46b756d5e6d6dbc8))
+
 ### [1.6.1](https://github.com/ringcentral/juno/compare/juno-icon-v1.6.0...juno-icon-v1.6.1) (2022-05-05)
 
 
