@@ -1,4 +1,4 @@
-import { SyntheticEvent, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 import { getRefElement, RefOrElementOrCallback } from '../../utils';
 import { useEventCallback } from '../useEventCallback';
@@ -17,17 +17,17 @@ export type UseEventListenerConfig = {
   startImmediately?: boolean;
 };
 
-export function useEventListener<T = SyntheticEvent>(
+export function useEventListener<T = Event>(
   target: RefOrElementOrCallback | EventTarget,
   key: string,
-  callback: (event?: T) => void,
+  callback: (event: T) => void,
   config?: UseEventListenerConfig,
 ): UseEventListenerAction;
 
-export function useEventListener<T = SyntheticEvent>(
+export function useEventListener<T = Event>(
   target: RefOrElementOrCallback | EventTarget,
   key: string,
-  callback: (event?: T) => void,
+  callback: (event: T) => void,
   options?: AddEventListenerOptions | boolean,
   config?: UseEventListenerConfig,
 ): UseEventListenerAction;
@@ -47,10 +47,10 @@ export function useEventListener<T = SyntheticEvent>(
  * useEventListener(window, 'keyup', () => console.log('window key up'))
  * ```
  */
-export function useEventListener<T = SyntheticEvent>(
+export function useEventListener<T = Event>(
   target: RefOrElementOrCallback | EventTarget,
   key: string,
-  callback: (event?: T) => void,
+  callback: (event: T) => void,
   ...args: any[]
 ) {
   const { options, config } = getListenerOverloadOption(args);
