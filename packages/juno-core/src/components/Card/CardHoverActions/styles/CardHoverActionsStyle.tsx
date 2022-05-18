@@ -20,5 +20,9 @@ export const CardHoverActionsStyle: RcThemedStyled<
     top: 0;
     padding: ${spacing(4)};
     transition: ${hoverTransition};
+    ${
+      '' /* make sure `CardHoverActions` would not be covered by `CardActionArea`  */
+    }
+    z-index: 1;
   `;
 };
