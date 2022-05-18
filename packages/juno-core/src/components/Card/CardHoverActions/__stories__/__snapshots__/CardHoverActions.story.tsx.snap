@@ -140,6 +140,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardHoverActions CardHoverActi
   padding: 16px;
   -webkit-transition: opacity 300ms cubic-bezier(0.25,0.8,0.25,1) 0ms;
   transition: opacity 300ms cubic-bezier(0.25,0.8,0.25,1) 0ms;
+  z-index: 1;
 }
 
 .c6 {
