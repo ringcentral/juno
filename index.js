@@ -59732,6 +59732,8 @@ var CardHoverActionsStyle = () => {
     top: 0;
     padding: ${spacing2(4)};
     transition: ${hoverTransition};
+    ${""}
+    z-index: 1;
   `;
 };
 
