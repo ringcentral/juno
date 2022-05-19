@@ -1,4 +1,12 @@
 
+### [2.12.4](https://github.com/ringcentral/juno/compare/juno-core-v2.12.3...juno-core-v2.12.4) (2022-05-19)
+
+
+### Bug Fixes
+
+* **fix-card-hover-action:** [CardHoverActions] add `z-index` to make sure `CardHoverActions` would not be covered by `CardSelectionArea` ([e4e80bc](https://github.com/ringcentral/juno/commit/e4e80bca4b806fc479ae38f6dcb43eecfcfe67f4))
+* **fix-useEventListener-type:** [useEventListener] fix `callback` and `event` type issues ([9a04229](https://github.com/ringcentral/juno/commit/9a04229a2bfd1dfe74ae368c0777be3a64fcb14a))
+
 ### [2.12.3](https://github.com/ringcentral/juno/compare/juno-core-v2.12.2...juno-core-v2.12.3) (2022-05-11)
 
 
