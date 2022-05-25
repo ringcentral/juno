@@ -62051,7 +62051,7 @@ var useDialogDefaultProps = ({
 };
 
 // ../juno-core/src/components/Dialog/utils/DialogUtils.ts
-var RcDialogClasses = RcClasses(["paper", "root", "paperFullScreen"], "RcDialog");
+var RcDialogClasses = RcClasses(["paper", "root", "paperFullScreen", "paperWidthXs", "paperScrollBody"], "RcDialog");
 var RcDialogMaxWidths = {
   xsmall: "272px",
   small: null,
@@ -62062,10 +62062,20 @@ var RcDialogMaxWidths = {
 
 // ../juno-core/src/components/Dialog/styles/DialogStyle.tsx
 var DialogStyle = (props) => {
-  const { size } = props;
+  const { size, theme } = props;
   return css2`
     .${RcDialogClasses.paper} {
       max-width: ${RcDialogMaxWidths[size]};
+    }
+
+    .${RcDialogClasses.paperWidthXs} {
+      max-width: ${px2(Math.max(theme.breakpoints.values.xs, 400))};
+
+      &.${RcDialogClasses.paperScrollBody} {
+        ${theme.breakpoints.down(Math.max(theme.breakpoints.values.xs, 400) + 32 * 2)} {
+          max-width: calc(100% - 64px);
+        }
+      }
     }
   `;
 };
