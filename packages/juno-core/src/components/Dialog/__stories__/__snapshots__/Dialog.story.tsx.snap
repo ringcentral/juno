@@ -76,6 +76,10 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/Dialog Dialog 1`] = `
   }
 }
 
+@media (max-width:463.95px) {
+
+}
+
 <button
   className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
   disabled={false}
@@ -210,6 +214,10 @@ Array [
 
 }
 
+@media (max-width:463.95px) {
+
+}
+
 @media (hover:hover) and (pointer:fine) {
   .c1.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
     background-color: rgba(147,147,147,0.92);
@@ -282,6 +290,10 @@ Array [
 
 }
 
+@media (max-width:463.95px) {
+
+}
+
 @media (hover:hover) and (pointer:fine) {
 
 }
@@ -346,6 +358,10 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (max-width:463.95px) {
 
 }
 
@@ -503,6 +519,10 @@ Array [
 
 }
 
+@media (max-width:463.95px) {
+
+}
+
 @media (hover:hover) and (pointer:fine) {
 
 }
@@ -567,6 +587,10 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (max-width:463.95px) {
 
 }
 
@@ -724,6 +748,10 @@ Array [
 
 }
 
+@media (max-width:463.95px) {
+
+}
+
 @media (hover:hover) and (pointer:fine) {
 
 }
@@ -806,6 +834,10 @@ Array [
   .c0.RcButton-outlined:hover {
     background-color: rgba(6,111,172,0.08);
   }
+}
+
+@media (max-width:463.95px) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -917,6 +949,10 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/Dialog Dialog with responsive
   .c0.RcButton-outlined:hover {
     background-color: rgba(6,111,172,0.08);
   }
+}
+
+@media (max-width:463.95px) {
+
 }
 
 <button

@@ -2578,6 +2578,10 @@ Array [
 
 }
 
+@media (max-width:463.95px) {
+
+}
+
 @media (hover:hover) and (pointer:fine) {
 
 }
@@ -2699,6 +2703,10 @@ Array [
   }
 }
 
+@media (max-width:463.95px) {
+
+}
+
 @media (hover:hover) and (pointer:fine) {
 
 }
@@ -2762,6 +2770,10 @@ Array [
 
 }
 
+@media (max-width:463.95px) {
+
+}
+
 @media (hover:hover) and (pointer:fine) {
 
 }
@@ -2788,6 +2800,10 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (max-width:463.95px) {
 
 }
 
@@ -2911,6 +2927,10 @@ Array [
 }
 
 @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (max-width:463.95px) {
 
 }
 

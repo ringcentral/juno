@@ -10,6 +10,10 @@ Array [
   color: #BE3933;
 }
 
+@media (max-width:463.95px) {
+
+}
+
 <p
     className="MuiTypography-root c0"
     data-color="danger.f02"
@@ -32,6 +36,10 @@ Array [
   border-color: black;
   border-width: 2px;
   overflow: hidden;
+}
+
+@media (max-width:463.95px) {
+
 }
 
 <div

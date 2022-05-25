@@ -76,6 +76,10 @@ exports[`Storyshots 🚀 Cleanup Components/PopupBox PopupBox 1`] = `
   }
 }
 
+@media (max-width:463.95px) {
+
+}
+
 <button
   className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
   disabled={false}

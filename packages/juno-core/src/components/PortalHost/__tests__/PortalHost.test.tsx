@@ -1,11 +1,12 @@
+import '@testing-library/jest-dom/extend-expect';
+
 import React, { FunctionComponent, useRef } from 'react';
 
-import '@testing-library/jest-dom/extend-expect';
+import { render } from '@ringcentral/juno-test';
 import {
   act,
   cleanup,
   fireEvent,
-  render,
   screen,
   waitFor,
   waitForElementToBeRemoved,
@@ -90,6 +91,12 @@ type ManagerHandlerProps<P extends {} = {}> = {
   manager: PortalManager;
 };
 
+const setup = () => {
+  const manager = new PortalManager();
+  render(<RcPortalHost manager={manager} />);
+  return manager;
+};
+
 describe('Close portal', () => {
   it.each([
     [
@@ -118,8 +125,7 @@ describe('Close portal', () => {
       },
     ],
   ])('Should close portal correctly (%s)', async (_, handleClose) => {
-    const manager = new PortalManager();
-    render(<RcPortalHost manager={manager} />);
+    const manager = setup();
 
     const controller = manager.open(TestComponent);
 
@@ -140,8 +146,7 @@ describe('Close portal', () => {
   });
 
   it('Should close all portal after invoke manager.closeAll', async () => {
-    const portalManager = new PortalManager();
-    render(<RcPortalHost manager={portalManager} />);
+    const portalManager = setup();
 
     portalManager.open(TestComponent);
     portalManager.open(TestComponent);
@@ -192,8 +197,7 @@ describe('Update props', () => {
       },
     ],
   ])('Should update props correctly (%s)', async (_, handleUpdate) => {
-    const manager = new PortalManager();
-    render(<RcPortalHost manager={manager} />);
+    const manager = setup();
 
     const controller = manager.open(TestComponent, {
       props: { text: '24' },
@@ -220,8 +224,7 @@ describe('Update props', () => {
 
 describe('Check order', () => {
   it('The last one to open should be at the top', async () => {
-    const manager = new PortalManager();
-    render(<RcPortalHost manager={manager} />);
+    const manager = setup();
 
     manager.open(TestComponent, {
       props: { 'data-test-automation-id': 'A' } as any,
@@ -243,8 +246,7 @@ describe('Check order', () => {
 
 describe('feedback', () => {
   it('Should get feedback correctly after close dialog', async () => {
-    const portalManager = new PortalManager();
-    render(<RcPortalHost manager={portalManager} />);
+    const portalManager = setup();
 
     const controller1 = portalManager.open(TestComponent, {
       props: { feedback: 'feed1' },
@@ -298,8 +300,7 @@ describe('feedback', () => {
   });
 
   it('Should get feedback `undefined` after close all dialog', async () => {
-    const portalManager = new PortalManager();
-    render(<RcPortalHost manager={portalManager} />);
+    const portalManager = setup();
 
     const controller1 = portalManager.open(TestComponent, {
       props: { feedback: 'feed1' },
@@ -331,8 +332,7 @@ describe('feedback', () => {
   });
 
   it('Should clean `portalManager._feedbackMap` after close dialog', async () => {
-    const portalManager = new PortalManager();
-    render(<RcPortalHost manager={portalManager} />);
+    const portalManager = setup();
 
     const controller = portalManager.open(TestComponent, {
       props: { feedback: 'feeeed' },
