@@ -62051,7 +62051,14 @@ var useDialogDefaultProps = ({
 };
 
 // ../juno-core/src/components/Dialog/utils/DialogUtils.ts
-var RcDialogClasses = RcClasses(["paper", "root", "paperFullScreen", "paperWidthXs", "paperScrollBody"], "RcDialog");
+var RcDialogClasses = RcClasses([
+  "paper",
+  "root",
+  "paperFullScreen",
+  "paperWidthXs",
+  "paperScrollBody",
+  "paperFullScreen"
+], "RcDialog");
 var RcDialogMaxWidths = {
   xsmall: "272px",
   small: null,
@@ -62062,21 +62069,23 @@ var RcDialogMaxWidths = {
 
 // ../juno-core/src/components/Dialog/styles/DialogStyle.tsx
 var DialogStyle = (props) => {
-  const { size, theme } = props;
+  const { size, theme, fullScreen } = props;
   return css2`
     .${RcDialogClasses.paper} {
       max-width: ${RcDialogMaxWidths[size]};
     }
 
-    .${RcDialogClasses.paperWidthXs} {
-      max-width: ${px2(Math.max(theme.breakpoints.values.xs, 400))};
+    ${!fullScreen && css2`
+        .${RcDialogClasses.paperWidthXs} {
+          max-width: ${px2(Math.max(theme.breakpoints.values.xs, 400))};
 
-      &.${RcDialogClasses.paperScrollBody} {
-        ${theme.breakpoints.down(Math.max(theme.breakpoints.values.xs, 400) + 32 * 2)} {
-          max-width: calc(100% - 64px);
+          &.${RcDialogClasses.paperScrollBody} {
+            ${theme.breakpoints.down(Math.max(theme.breakpoints.values.xs, 400) + 32 * 2)} {
+              max-width: calc(100% - 64px);
+            }
+          }
         }
-      }
-    }
+      `}
   `;
 };
 
