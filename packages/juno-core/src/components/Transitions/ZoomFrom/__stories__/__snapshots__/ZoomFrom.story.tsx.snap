@@ -302,10 +302,6 @@ Array [
   background-color: rgba(6,111,172,0.76);
 }
 
-@media (max-width:463.95px) {
-
-}
-
 @media (hover:hover) and (pointer:fine) {
   .c1.RcSwitch-root:hover .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
     background-color: rgba(147,147,147,0.92);
@@ -363,29 +359,17 @@ Array [
       Show
     </span>
   </label>,
-  @media (max-width:463.95px) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
+  @media (hover:hover) and (pointer:fine) {
 
 }
 
 <br />,
-  @media (max-width:463.95px) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
+  @media (hover:hover) and (pointer:fine) {
 
 }
 
 <br />,
-  @media (max-width:463.95px) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
+  @media (hover:hover) and (pointer:fine) {
 
 }
 
