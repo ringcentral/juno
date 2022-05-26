@@ -2,7 +2,14 @@ import { RcClasses, UnitMap } from '../../../foundation';
 import { RcDialogProps, RcDialogSize } from '../Dialog';
 
 export const RcDialogClasses = RcClasses<RcDialogProps>(
-  ['paper', 'root', 'paperFullScreen', 'paperWidthXs', 'paperScrollBody'],
+  [
+    'paper',
+    'root',
+    'paperFullScreen',
+    'paperWidthXs',
+    'paperScrollBody',
+    'paperFullScreen',
+  ],
   'RcDialog',
 );
 
