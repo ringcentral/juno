@@ -15,6 +15,7 @@ export { default as CompanySetup } from './CompanySetup';
 export { default as Department } from './Department';
 export { default as Description } from './Description';
 export { default as Hud } from './Hud';
+export { default as JumpTo } from './JumpTo';
 export { default as Limited } from './Limited';
 export { default as Logout } from './Logout';
 export { default as Message } from './Message';
