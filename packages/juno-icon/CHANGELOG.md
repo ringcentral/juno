@@ -1,4 +1,11 @@
 
+## [1.9.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.8.0...juno-icon-v1.9.0) (2022-06-21)
+
+
+### Features
+
+* **FIJI-52441:** [Icon] add icon `JumpTo` ([bdc8123](https://github.com/ringcentral/juno/commit/bdc81238038cc031078f222cf3b63821bdb6528d))
+
 ## [1.8.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.7.0...juno-icon-v1.8.0) (2022-06-13)
 
 
