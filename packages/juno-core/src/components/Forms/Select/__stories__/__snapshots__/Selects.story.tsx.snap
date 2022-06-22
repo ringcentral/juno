@@ -12105,6 +12105,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select 1`] = `
           Symbol(mui.nested): false,
         }
       }
+      title="example"
     >
       <label
         className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
