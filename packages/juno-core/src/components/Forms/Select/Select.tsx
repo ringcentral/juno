@@ -95,6 +95,7 @@ const _RcSelect = forwardRef<any, RcSelectProps>(
       label,
       id,
       className,
+      title,
       validate,
       InputProps,
       required,
@@ -197,6 +198,7 @@ const _RcSelect = forwardRef<any, RcSelectProps>(
         ref={ref}
         id={id}
         className={className}
+        title={title}
         // for when that is select type that type will be select onChange, just any for ignore that
         onChange={onChange as any}
         color={color}

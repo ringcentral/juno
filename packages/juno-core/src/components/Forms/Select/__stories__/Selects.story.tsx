@@ -103,6 +103,7 @@ export const Select: Story<SelectProps> = ({ id, variant, ...args }) => {
         <RcSelect
           {...args}
           id="line-select"
+          title="example"
           onChange={handleChange}
           onOpen={(e) => {
             console.log('open', e);
