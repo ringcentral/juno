@@ -1,4 +1,15 @@
 
+## [2.14.0](https://github.com/ringcentral/juno/compare/juno-core-v2.13.1...juno-core-v2.14.0) (2022-06-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* **Select:** [Select] when add title in `RcSelet` title will move to root element not in input element
+
+### Bug Fixes
+
+* **Select:** [Select] fix select title prop pass in incorrect dom ([4bd94f9](https://github.com/ringcentral/juno/commit/4bd94f9b110593753e32ddcbca72cd10a0f46549))
+
 ### [2.13.1](https://github.com/ringcentral/juno/compare/juno-core-v2.13.0...juno-core-v2.13.1) (2022-05-26)
 
 
