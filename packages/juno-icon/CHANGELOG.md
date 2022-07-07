@@ -1,4 +1,11 @@
 
+## [1.10.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.9.0...juno-icon-v1.10.0) (2022-07-07)
+
+
+### Features
+
+* **FIJI-50678:** [icon] add icon AR, remove icon color of Announcement, CallQueue, Limited, Message, Paging, SharedLine ([70f81ee](https://github.com/ringcentral/juno/commit/70f81ee6361c4e47cd01334e4a70f7e3c7d81840))
+
 ## [1.9.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.8.0...juno-icon-v1.9.0) (2022-06-21)
 
 
