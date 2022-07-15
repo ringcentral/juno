@@ -31,7 +31,7 @@ import {
   styled,
   useEventCallback,
 } from '@ringcentral/juno';
-import { ArrowDown2 } from '@ringcentral/juno-icon';
+import { ArrowDown2, ArrowUp2 } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -195,6 +195,32 @@ Downshift.parameters = {
       value: '100%',
     },
   ],
+};
+
+export const DownshiftWithCustomToggleButton: Story<DownshiftProps> = ({
+  ...args
+}) => {
+  return <Downshift {...args} />;
+};
+
+DownshiftWithCustomToggleButton.args = {
+  label: 'Downshift',
+  placeholder: 'Search and select',
+  freeSolo: true,
+  toggleButton: true,
+  autoSelect: true,
+  gutterBottom: true,
+  multiple: true,
+  clearBtn: true,
+  helperText: 'typing something to get value',
+  PopperProps: {
+    anchorElType: 'input',
+  },
+  getToggleButtonProps: (isOpen) => {
+    return {
+      symbol: isOpen ? ArrowUp2 : ArrowDown2,
+    };
+  },
 };
 
 export const DownshiftDebug: Story<DownshiftProps> = ({ ...args }) => {
