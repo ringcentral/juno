@@ -15,18 +15,20 @@ const _StyledPopper = forwardRef<
 });
 
 export const StyledPopper = styled(_StyledPopper)`
-  box-shadow: ${shadows('1')};
-  background-color: ${palette2('neutral', 'elevation')};
-  overflow: hidden;
+  > div {
+    box-shadow: ${shadows('1')};
+    background-color: ${palette2('neutral', 'elevation')};
+    overflow: hidden;
 
-  ${({ position }) =>
-    position === 'top-start'
-      ? css`
-          border-top-right-radius: ${radiusLg};
-          border-top-left-radius: ${radiusLg};
-        `
-      : css`
-          border-bottom-right-radius: ${radiusLg};
-          border-bottom-left-radius: ${radiusLg};
-        `}
+    ${({ position }) =>
+      position === 'top-start'
+        ? css`
+            border-top-right-radius: ${radiusLg};
+            border-top-left-radius: ${radiusLg};
+          `
+        : css`
+            border-bottom-right-radius: ${radiusLg};
+            border-bottom-left-radius: ${radiusLg};
+          `}
+  }
 `;

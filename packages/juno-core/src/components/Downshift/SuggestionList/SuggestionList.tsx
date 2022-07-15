@@ -68,6 +68,8 @@ export type RcSuggestionListProps<T> = RcBaseProps<
    * @default false
    */
   padding?: boolean | number;
+  /** is that menu virtualize  */
+  virtualize?: boolean;
 } & RcClassesProps<'root' | 'toggle' | 'expanded' | 'groupTitle'>;
 
 export type InnerSuggestionListProps = {
@@ -129,6 +131,7 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
       highlightedIndex,
       options,
       getItemProps,
+      virtualize = true,
       getMenuProps,
       renderOption,
       inputValue,
@@ -182,6 +185,16 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
 
     const { retry: scrollToIndexWithRetry } = useRetry(
       async (location: IndexLocationWithAlign) => {
+        const toIndex = location.index;
+        if (!virtualize) {
+          const toElm = listRef.current?.querySelector<HTMLElement>(
+            `[data-item-index="${toIndex}"]`,
+          );
+
+          toElm?.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+
+          return true;
+        }
         if (location.index === 0 && padding !== undefined) {
           location = {
             ...location,
@@ -192,8 +205,6 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
         }
 
         vlRef.current?.scrollToIndex(location);
-
-        const toIndex = location.index;
 
         await sleep(0);
         // confirm that scrollInto view
@@ -235,7 +246,7 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
 
     useLayoutEffect(() => {
       if (
-        vlRef.current &&
+        (!virtualize || vlRef.current) &&
         !isKeepHighlightedIndex &&
         // * only scroll when reason is 'keyboard'
         changeHighlightedIndexReason &&
@@ -285,6 +296,7 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
       const selected = highlightedIndex === index;
 
       const resultProps = {
+        'data-item-index': !virtualize ? index : undefined,
         ...option,
         ...itemProps,
         key: itemProps.id,
@@ -323,6 +335,7 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
       if (MenuItem) {
         return (
           <MenuItem
+            // when not virtualize, use index as key
             {...resultProps}
             itemId={option.id}
             data-suggestion-item-id={option.id}
@@ -374,29 +387,44 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
 
     return (
       <SuggestionListContext.Provider value={listRef}>
-        <Virtuoso
-          ref={forkVlRef}
-          totalCount={itemCount}
-          data={itemData}
-          className={className}
-          components={components}
-          itemContent={itemContent}
-          {...(getMenuProps() as any)}
-          {...combineProps(
-            {
-              scrollerRef: (scrollElm: HTMLElement) => {
-                scrollerRefFn(scrollElm);
+        {virtualize ? (
+          <Virtuoso
+            ref={forkVlRef}
+            totalCount={itemCount}
+            data={itemData}
+            className={className}
+            components={components}
+            itemContent={itemContent}
+            {...(getMenuProps() as any)}
+            {...combineProps(
+              {
+                scrollerRef: (scrollElm: HTMLElement) => {
+                  scrollerRefFn(scrollElm);
 
-                modifyVlScrollerStyle(scrollElm, position);
+                  modifyVlScrollerStyle(scrollElm, position);
+                },
+                itemsRendered,
+                totalListHeightChanged,
+                style,
+                isScrolling: handleScrolling,
               },
-              itemsRendered,
-              totalListHeightChanged,
-              style,
-              isScrolling: handleScrolling,
-            },
-            rest,
-          )}
-        />
+              rest,
+            )}
+          />
+        ) : (
+          <List
+            style={{ maxHeight: style.height, overflow: 'auto' }}
+            ref={(scrollElm) => {
+              scrollerRefFn(scrollElm);
+            }}
+          >
+            <PaddingComponent />
+            {options.map((x, i) => {
+              return itemContent(i, x);
+            })}
+            <PaddingComponent />
+          </List>
+        )}
       </SuggestionListContext.Provider>
     );
   },

@@ -10,7 +10,8 @@ import React, {
 } from 'react';
 
 import { ArrowDown, ArrowUp } from '@ringcentral/juno-icon';
-
+import { RcFade } from '../Transitions/Fade';
+import { RcGrow } from '../Transitions/Grow';
 import {
   combineClasses,
   combineProps,
@@ -56,6 +57,7 @@ import {
   useDownshift,
   useDownshiftError,
 } from './utils';
+import { TransitionProps as MuiTransitionProps } from '@material-ui/core/transitions';
 
 export interface RcDownshiftRenderOptionState {
   /** current input value */
@@ -266,11 +268,31 @@ type RcDownshiftProps<
     /**
      * typeof that popper `anchorEl` binding when menu open
      *
-     * `root`: on that whole TextField
-     * `input`: on that inside input
+     * - `root`: on that whole TextField
+     * - `input`: on that inside input
      * @default 'root'
      */
     anchorElType?: 'root' | 'input';
+    /**
+     * The component used for the transition.
+     *
+     * default will base on `SuggestionListProps.virtualize`
+     * @default virtualize ? `RcFade` : `RcGrow`
+     */
+    TransitionComponent?: React.JSXElementConstructor<
+      MuiTransitionProps & { children: React.ReactElement<any, any> }
+    >;
+    /**
+     * Set to 'auto' to automatically calculate transition time based on height.
+     * @default 'auto'
+     */
+    transitionDuration?: MuiTransitionProps['timeout'] | 'auto';
+    /**
+     * Props applied to the transition element.
+     * By default, the element is based on this [`Transition`](http://reactcommunity.org/react-transition-group/transition/) component.
+     * @default {}
+     */
+    TransitionProps?: MuiTransitionProps;
   };
   /** is have ToggleButton */
   toggleButton?: boolean;
@@ -469,6 +491,11 @@ type RcDownshiftRef<T = RcDownshiftSelectedItem> = {
   clearInput: () => void;
 };
 
+/**
+ * default transition style for grow when not virtualize
+ */
+const DEFAULT_GROW_STYLE = { style: { transformOrigin: '0 0 0' } };
+
 const _RcDownshift = memo(
   forwardRef<any, RcDownshiftProps<RcDownshiftSelectedItem>>((inProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcDownshift' });
@@ -643,9 +670,16 @@ const _RcDownshift = memo(
       freeSolo = enableFreeChips,
       keyToTags = keyToChips,
       maxFreeSolo = limitOfFreeChips,
-      SuggestionListProps,
+      SuggestionListProps: { virtualize = true, ...SuggestionListProps } = {},
       autoSelect = enableAutoTransform,
-      PopperProps: { anchorElType = 'root', ...PopperProps } = {},
+      PopperProps: {
+        anchorElType = 'root',
+        transition: popperTransition,
+        TransitionComponent = virtualize ? RcFade : RcGrow,
+        transitionDuration: transitionDurationProp = 'auto',
+        TransitionProps: TransitionPropsProp = {},
+        ...PopperProps
+      } = {},
       initialIsOpen,
       disabled,
       required: requiredProp,
@@ -683,6 +717,9 @@ const _RcDownshift = memo(
 
     // * if that have pass old suggestionItems mean that use old logic
     const isNew = !suggestionItems;
+
+    const transitionDuration =
+      transitionDurationProp === 'auto' ? undefined : transitionDurationProp;
 
     const anchorElRef =
       anchorElType === 'input' ? inputContainerRef : textFieldRef;
@@ -930,6 +967,38 @@ const _RcDownshift = memo(
       popperRef.current?.update();
     });
 
+    const menuChildren = (
+      // * that root element for animation host
+      <div>
+        {isOpen && (
+          <RcSuggestionList
+            highlightedIndex={highlightedIndex}
+            optionsGroupList={optionsGroupList}
+            options={optionItems}
+            groupVariant={groupVariant}
+            groupExpanded={groupExpanded}
+            renderGroup={renderGroup}
+            MenuItem={MenuItem}
+            renderOption={renderOption}
+            inputValue={inputValue}
+            getItemProps={getItemProps}
+            getMenuProps={getMenuProps}
+            changeHighlightedIndexReason={changeHighlightedIndexReason}
+            getOptionDisabled={getOptionDisabled}
+            isKeepHighlightedIndex={isKeepHighlightedIndex}
+            onUpdatePopper={handleUpdatePopper}
+            maxContainerHeight={180}
+            getOptionLabel={getOptionLabel}
+            position="unset"
+            virtualize={virtualize}
+            {...(SuggestionListProps as any)}
+          />
+        )}
+        {isRenderNoOptions &&
+          renderNoOptions?.(getNoOptionsProps, noOptionItem)}
+      </div>
+    );
+
     return (
       <>
         <StyledTextField
@@ -988,32 +1057,20 @@ const _RcDownshift = memo(
             },
           }}
           {...getPopperProps(PopperProps)}
+          transition
         >
-          {isOpen && (
-            <RcSuggestionList
-              highlightedIndex={highlightedIndex}
-              optionsGroupList={optionsGroupList}
-              options={optionItems}
-              groupVariant={groupVariant}
-              groupExpanded={groupExpanded}
-              renderGroup={renderGroup}
-              MenuItem={MenuItem}
-              renderOption={renderOption}
-              inputValue={inputValue}
-              getItemProps={getItemProps}
-              getMenuProps={getMenuProps}
-              changeHighlightedIndexReason={changeHighlightedIndexReason}
-              getOptionDisabled={getOptionDisabled}
-              isKeepHighlightedIndex={isKeepHighlightedIndex}
-              onUpdatePopper={handleUpdatePopper}
-              maxContainerHeight={180}
-              getOptionLabel={getOptionLabel}
-              position="unset"
-              {...(SuggestionListProps as any)}
-            />
-          )}
-          {isRenderNoOptions &&
-            renderNoOptions?.(getNoOptionsProps, noOptionItem)}
+          {popperTransition
+            ? ({ TransitionProps }) => (
+                <TransitionComponent
+                  {...TransitionProps}
+                  {...(virtualize ? {} : DEFAULT_GROW_STYLE)}
+                  {...TransitionPropsProp}
+                  timeout={transitionDuration}
+                >
+                  {menuChildren}
+                </TransitionComponent>
+              )
+            : menuChildren}
         </StyledPopper>
       </>
     );

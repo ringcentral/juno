@@ -30,6 +30,7 @@ import {
   spacing,
   styled,
   useEventCallback,
+  RcGrow,
 } from '@ringcentral/juno';
 import { ArrowDown2, ArrowUp2 } from '@ringcentral/juno-icon';
 import {
@@ -117,23 +118,24 @@ export default {
 
 type DownshiftProps = Partial<ComponentProps<typeof RcDownshift>>;
 
-export const Downshift: Story<DownshiftProps> = ({ ...args }) => {
-  switchToControlKnobs();
-
+export const Downshift: Story<DownshiftProps> = ({
+  options: optionsProp,
+  ...args
+}) => {
   const ref = useRef(null);
   const inputRef = useRef(null);
 
   const [value, setValue] = useState<RcDownshiftSelectedItem[]>([]);
 
   useEffect(() => {
-    console.log(ref, inputRef);
+    console.log(ref, inputRef, optionsProp);
   }, []);
 
   return (
     <RcDownshift
       {...args}
       ref={ref}
-      options={options}
+      options={optionsProp ?? options}
       value={value}
       onChange={(selectedItems) => {
         setValue(selectedItems);
@@ -197,10 +199,23 @@ Downshift.parameters = {
   ],
 };
 
+const smallOptions = options.slice(0, 20);
+
 export const DownshiftWithCustomToggleButton: Story<DownshiftProps> = ({
   ...args
 }) => {
-  return <Downshift {...args} />;
+  return (
+    <>
+      <Title>Non virtualize</Title>
+      <Downshift
+        {...args}
+        options={smallOptions}
+        SuggestionListProps={{ virtualize: false }}
+      />
+      <Title>virtualize</Title>
+      <Downshift {...args} />
+    </>
+  );
 };
 
 DownshiftWithCustomToggleButton.args = {
@@ -215,6 +230,7 @@ DownshiftWithCustomToggleButton.args = {
   helperText: 'typing something to get value',
   PopperProps: {
     anchorElType: 'input',
+    transition: true,
   },
   getToggleButtonProps: (isOpen) => {
     return {
