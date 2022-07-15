@@ -266,10 +266,15 @@ type RcDownshiftProps<
   /** is have ToggleButton */
   toggleButton?: boolean;
   /** Props for apply on ToggleButton */
-  ToggleButtonProps?: RcBaseProps<
-    RcIconButtonProps & WithTooltipProps,
-    'symbol'
-  >;
+  ToggleButtonProps?: RcIconButtonProps & WithTooltipProps;
+  /**
+   * get custom `ToggleButtonProps` with menu open state.
+   *
+   * that can be use when you need custom toggle button icon, that will override props you pass inside `ToggleButtonProps`
+   */
+  getToggleButtonProps?: (
+    isOpen: boolean,
+  ) => RcDownshiftProps<T>['ToggleButtonProps'];
   /**
    * A ref for imperative actions.
    *
@@ -610,6 +615,11 @@ const _RcDownshift = memo(
       clearButtonProps,
       onClear,
       ToggleButtonProps,
+      getToggleButtonProps: getToggleButtonPropsProp = (isOpen) => {
+        return {
+          symbol: isOpen ? ArrowUp : ArrowDown,
+        };
+      },
       inputValue: inputValueProp,
       onKeyDown: onKeyDownProp,
       helperText: helperTextProp,
@@ -853,8 +863,10 @@ const _RcDownshift = memo(
                 : 'neutral.f04'
             }
             size="large"
-            symbol={isOpen ? ArrowUp : ArrowDown}
-            {...getToggleButtonProps(ToggleButtonProps)}
+            {...getToggleButtonProps({
+              ...ToggleButtonProps,
+              ...getToggleButtonPropsProp(isOpen),
+            })}
           />
         )}
       </EndAdornment>
