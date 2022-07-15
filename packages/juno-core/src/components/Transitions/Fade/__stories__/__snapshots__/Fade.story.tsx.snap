@@ -114,7 +114,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-383 MuiSwitch-switchBase RcSwitch-switchBase"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-385 MuiSwitch-switchBase RcSwitch-switchBase"
         onBlur={[Function]}
         onClick={[Function]}
         onDragLeave={[Function]}
@@ -134,7 +134,7 @@ Array [
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-386 MuiSwitch-input"
+            className="PrivateSwitchBase-input-388 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -168,10 +168,10 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-387"
+    className="MuiBox-root MuiBox-root-389"
   >
     <div
-      className="MuiBox-root MuiBox-root-388"
+      className="MuiBox-root MuiBox-root-390"
       style={
         Object {
           "opacity": 0,
