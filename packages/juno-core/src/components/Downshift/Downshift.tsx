@@ -260,9 +260,18 @@ type RcDownshiftProps<
   autoSelect?: boolean;
   /** props for apply on `RcPopper` */
   PopperProps?: RcBaseProps<
-    RcPopperProps,
+    Partial<RcPopperProps>,
     'open' | 'keepMounted' | 'anchorEl' | 'style'
-  >;
+  > & {
+    /**
+     * typeof that popper `anchorEl` binding when menu open
+     *
+     * `root`: on that whole TextField
+     * `input`: on that inside input
+     * @default 'root'
+     */
+    anchorElType?: 'root' | 'input';
+  };
   /** is have ToggleButton */
   toggleButton?: boolean;
   /** Props for apply on ToggleButton */
@@ -636,7 +645,7 @@ const _RcDownshift = memo(
       maxFreeSolo = limitOfFreeChips,
       SuggestionListProps,
       autoSelect = enableAutoTransform,
-      PopperProps,
+      PopperProps: { anchorElType = 'root', ...PopperProps } = {},
       initialIsOpen,
       disabled,
       required: requiredProp,
@@ -674,6 +683,9 @@ const _RcDownshift = memo(
 
     // * if that have pass old suggestionItems mean that use old logic
     const isNew = !suggestionItems;
+
+    const anchorElRef =
+      anchorElType === 'input' ? inputContainerRef : textFieldRef;
 
     let oneOfTagError = false;
 
@@ -962,7 +974,7 @@ const _RcDownshift = memo(
         <StyledPopper
           open={open}
           position={position}
-          anchorEl={textFieldRef.current}
+          anchorEl={anchorElRef.current}
           data-test-automation-id="suggestions-list"
           popperRef={popperRef}
           // * view type in popper.js
