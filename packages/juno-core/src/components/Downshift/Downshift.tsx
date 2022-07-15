@@ -674,7 +674,7 @@ const _RcDownshift = memo(
       ...rest
     } = props;
 
-    const [position, setPosition] = useState<PopperPosition>('bottom');
+    const [position, setPosition] = useState<PopperPosition>('bottom-start');
 
     const innerInputRef = useRef<HTMLInputElement>(null);
     const textFieldRef = useRef<HTMLDivElement>(null);
@@ -974,6 +974,7 @@ const _RcDownshift = memo(
         <StyledPopper
           open={open}
           position={position}
+          placement="bottom-start"
           anchorEl={anchorElRef.current}
           data-test-automation-id="suggestions-list"
           popperRef={popperRef}

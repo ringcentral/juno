@@ -5,7 +5,7 @@ import { RcPopper, RcPopperProps } from '../../Popper';
 
 const radiusLg = radius('lg');
 
-export type PopperPosition = 'top' | 'bottom';
+export type PopperPosition = 'top-start' | 'bottom-start';
 
 const _StyledPopper = forwardRef<
   any,
@@ -20,7 +20,7 @@ export const StyledPopper = styled(_StyledPopper)`
   overflow: hidden;
 
   ${({ position }) =>
-    position === 'top'
+    position === 'top-start'
       ? css`
           border-top-right-radius: ${radiusLg};
           border-top-left-radius: ${radiusLg};
