@@ -1,4 +1,11 @@
 
+## [1.11.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.10.0...juno-icon-v1.11.0) (2022-07-15)
+
+
+### Features
+
+* **FIJI-53452:** [Icon] add icon `FacebookShareNumberIcon`, `SelectMore` ([2ef450e](https://github.com/ringcentral/juno/commit/2ef450ee09dae94b6ea63b7b9145d1d1d1622051))
+
 ## [1.10.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.9.0...juno-icon-v1.10.0) (2022-07-07)
 
 
