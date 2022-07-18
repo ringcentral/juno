@@ -99,6 +99,10 @@ export type InnerSuggestionListProps = {
    * set that as `unset`, let outside `absolute` container to calculate that.
    */
   position?: 'absolute' | 'unset';
+  /**
+   * in autocomplete mode, that will have selected index, show selected when focused
+   */
+  selectedIndex?: number;
 } & Pick<
   RcDownshiftProps,
   | 'inputValue'
@@ -134,6 +138,7 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
       virtualize = true,
       getMenuProps,
       renderOption,
+      value: selectedOptions,
       inputValue,
       groupVariant,
       groupExpanded,
@@ -151,6 +156,7 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
       className: classNameProp,
       classes: classesProp,
       position = 'absolute',
+      selectedIndex,
       ...rest
     } = props;
 
@@ -293,7 +299,14 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
         className: isGroupTitle ? classes.groupTitle : undefined,
       });
 
-      const selected = highlightedIndex === index;
+      const highlighted = highlightedIndex === index;
+
+      // TODO: should support multiple selected options, using `isOptionEqualToValue`
+      let selected = selectedIndex === index;
+      const selectMode = selectedIndex !== undefined;
+      if (!selectMode) {
+        selected = selected || highlighted;
+      }
 
       const resultProps = {
         'data-item-index': !virtualize ? index : undefined,
@@ -317,6 +330,10 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
         index,
         indexInOwnGroup,
       };
+
+      if (selectMode) {
+        state.highlighted = highlighted;
+      }
 
       if (renderGroup && isGroupTitle) {
         return renderGroup(resultProps, {
@@ -349,6 +366,7 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
         <RcMenuItem
           component="div"
           selected={selected}
+          {...(selectMode ? { focused: highlighted } : {})}
           {...omit(resultProps, [
             'isSuggestion',
             'freeSolo',

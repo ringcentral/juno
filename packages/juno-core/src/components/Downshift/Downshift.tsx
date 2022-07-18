@@ -66,6 +66,8 @@ export interface RcDownshiftRenderOptionState {
   inputValue?: string;
   /** is that item selected */
   selected: boolean;
+  /** is that item be show highlighted style */
+  highlighted?: boolean;
   /** that item index */
   index: number;
   /** sort index in option own group */
@@ -773,6 +775,7 @@ const _RcDownshift = memo(
       getNoOptionsProps,
       isKeepHighlightedIndex,
       focused: isDownshiftFocused,
+      autoCompleteSelectedIndex,
     } = useDownshift({
       focused,
       open: openProp,
@@ -848,9 +851,10 @@ const _RcDownshift = memo(
       () => (color ? getParsePaletteColor(color)({ theme }) : undefined),
       [color, theme],
     );
+    const isAutocomplete = variant === 'autocomplete';
 
     const startAdornment = (() => {
-      if (variant === 'autocomplete') {
+      if (isAutocomplete) {
         return undefined;
       }
       const getCustomizedTagProps = (
@@ -981,6 +985,9 @@ const _RcDownshift = memo(
       <>
         {isOpen && (
           <RcSuggestionList
+            selectedIndex={
+              isAutocomplete ? autoCompleteSelectedIndex : undefined
+            }
             highlightedIndex={highlightedIndex}
             optionsGroupList={optionsGroupList}
             options={optionItems}

@@ -131,6 +131,7 @@ export const useDownshift = <
   focused,
 }: UseDownshiftParams<T>) => {
   const isAutocomplete = variant === 'autocomplete';
+  const autoCompleteSelectedIndexRef = useRef(DEFAULT_HIGHLIGHTED_INDEX);
 
   const downshiftId = useId('downshift', true);
 
@@ -452,6 +453,7 @@ export const useDownshift = <
 
         if (fIndex > -1) {
           toIndex = fIndex;
+          autoCompleteSelectedIndexRef.current = fIndex;
         }
       }
 
@@ -798,5 +800,6 @@ export const useDownshift = <
     focused: focused ?? (tagFocused || inputFocused ? true : undefined),
     id: downshiftId,
     inputChanged: isInputValueChangedRef.current,
+    autoCompleteSelectedIndex: autoCompleteSelectedIndexRef.current,
   };
 };
