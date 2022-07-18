@@ -7,6 +7,7 @@ import React, {
   useMemo,
   useRef,
   useState,
+  ComponentType,
 } from 'react';
 
 import { ArrowDown, ArrowUp } from '@ringcentral/juno-icon';
@@ -26,6 +27,7 @@ import {
   useForkRef,
   useTheme,
   useThemeProps,
+  usePrevious,
 } from '../../foundation';
 import { RcIconButtonProps } from '../Buttons/IconButton';
 import { RcChip } from '../Chip';
@@ -260,6 +262,12 @@ type RcDownshiftProps<
    * a different option or changes the character string in the input.
    */
   autoSelect?: boolean;
+  /**
+   * custom PopperComponent for render
+   *
+   * @default RcPopper
+   */
+  PopperComponent?: ComponentType<RcPopperProps>;
   /** props for apply on `RcPopper` */
   PopperProps?: RcBaseProps<
     Partial<RcPopperProps>,
@@ -672,6 +680,7 @@ const _RcDownshift = memo(
       maxFreeSolo = limitOfFreeChips,
       SuggestionListProps: { virtualize = true, ...SuggestionListProps } = {},
       autoSelect = enableAutoTransform,
+      PopperComponent,
       PopperProps: {
         anchorElType = 'root',
         transition: popperTransition,
@@ -969,7 +978,7 @@ const _RcDownshift = memo(
 
     const menuChildren = (
       // * that root element for animation host
-      <div>
+      <>
         {isOpen && (
           <RcSuggestionList
             highlightedIndex={highlightedIndex}
@@ -996,8 +1005,10 @@ const _RcDownshift = memo(
         )}
         {isRenderNoOptions &&
           renderNoOptions?.(getNoOptionsProps, noOptionItem)}
-      </div>
+      </>
     );
+
+    const prevMenuChildren = usePrevious(() => menuChildren);
 
     return (
       <>
@@ -1043,6 +1054,7 @@ const _RcDownshift = memo(
         <StyledPopper
           open={open}
           position={position}
+          component={PopperComponent}
           placement="bottom-start"
           anchorEl={anchorElRef.current}
           data-test-automation-id="suggestions-list"
@@ -1057,19 +1069,48 @@ const _RcDownshift = memo(
             },
           }}
           {...getPopperProps(PopperProps)}
-          transition
+          transition={popperTransition}
         >
           {popperTransition
-            ? ({ TransitionProps }) => (
-                <TransitionComponent
-                  {...TransitionProps}
-                  {...(virtualize ? {} : DEFAULT_GROW_STYLE)}
-                  {...TransitionPropsProp}
-                  timeout={transitionDuration}
-                >
-                  {menuChildren}
-                </TransitionComponent>
-              )
+            ? (
+                {
+                  TransitionProps: {
+                    onEnter: onEnterProp,
+                    onExited: onExitProp,
+                    in: inProp,
+                  } = {} as any,
+                  ...restTransitionProp
+                } = {} as any,
+              ) => {
+                const onEnter = (node: HTMLElement, isAppearing: boolean) => {
+                  onEnterProp();
+                  TransitionPropsProp.onEnter?.(node, isAppearing);
+                };
+                const onExited = (node: HTMLElement) => {
+                  onExitProp();
+                  TransitionPropsProp.onExited?.(node);
+                };
+
+                return (
+                  <TransitionComponent
+                    in={inProp}
+                    onEnter={onEnter}
+                    onExited={onExited}
+                    {...restTransitionProp}
+                    timeout={transitionDuration}
+                    {...(virtualize ? {} : DEFAULT_GROW_STYLE)}
+                    {...TransitionPropsProp}
+                  >
+                    <div>
+                      {
+                        // when menu be close use previous option menu,
+                        // keep menu item before animation done
+                        inProp ? menuChildren : prevMenuChildren
+                      }
+                    </div>
+                  </TransitionComponent>
+                );
+              }
             : menuChildren}
         </StyledPopper>
       </>

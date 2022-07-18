@@ -30,7 +30,6 @@ import {
   spacing,
   styled,
   useEventCallback,
-  RcGrow,
 } from '@ringcentral/juno';
 import { ArrowDown2, ArrowUp2 } from '@ringcentral/juno-icon';
 import {
@@ -46,6 +45,7 @@ import { Meta, Story } from '@storybook/react';
 import { DialogExampleComponent } from '../../Dialog/__stories__/Dialog.story';
 import { DownshiftDoc } from './Downshift.doc';
 import { options } from './options';
+import { RcPopper } from '../../Popper';
 
 export default {
   title: '🚀 Cleanup Components/Downshift',
@@ -201,6 +201,12 @@ Downshift.parameters = {
 
 const smallOptions = options.slice(0, 20);
 
+const CustomPopper = styled(RcPopper)`
+  > div {
+    padding: 10px;
+  }
+`;
+
 export const DownshiftWithCustomToggleButton: Story<DownshiftProps> = ({
   ...args
 }) => {
@@ -210,6 +216,7 @@ export const DownshiftWithCustomToggleButton: Story<DownshiftProps> = ({
       <Downshift
         {...args}
         options={smallOptions}
+        PopperComponent={CustomPopper}
         SuggestionListProps={{ virtualize: false }}
       />
       <Title>virtualize</Title>
