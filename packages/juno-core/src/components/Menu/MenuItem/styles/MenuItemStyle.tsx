@@ -1,17 +1,11 @@
-import {
-  css,
-  palette2,
-  RcThemedStyled,
-  spacing,
-  styled,
-  typography,
-} from '../../../../foundation';
+import { css, RcThemedStyled, spacing, styled } from '../../../../foundation';
 import { RcIcon } from '../../../Icon';
-import { ListItemFormControlStyle } from '../../../List/ListItem/styles';
+import { sharedListItemStyle } from '../../../List/ListItem/styles';
 import { RcMenuItemProps } from '../MenuItem';
 import {
   RcMenuItemClasses,
   RcMenuItemLeftAndRightPaddings,
+  RcMenuItemRippleClasses,
   RcMenuItemTopAndBottomPaddings,
 } from '../utils';
 
@@ -19,22 +13,28 @@ export const StyledCheckIcon = styled(RcIcon)`
   height: 22px;
 `;
 
-export const MenuItemStyle: RcThemedStyled<RcMenuItemProps, any> = ({
-  size,
-}) => {
+export const MenuItemStyle: RcThemedStyled<RcMenuItemProps, any> = (props) => {
+  const { size, color = 'action.grayLight' } = props;
   const topAndBottomPadding = RcMenuItemTopAndBottomPaddings[size!];
   const leftAndRightPadding = RcMenuItemLeftAndRightPaddings[size!];
 
   return css`
     outline: none;
     box-sizing: border-box;
-    ${typography('body1')};
-    color: ${palette2('neutral', 'f06')};
     height: auto;
     min-height: 32px;
     min-width: 112px;
     padding-top: ${topAndBottomPadding};
     padding-bottom: ${topAndBottomPadding};
+
+    ${sharedListItemStyle({
+      ...props,
+      color,
+      // in menuItem always be can hover
+      canHover: true,
+      mainClasses: RcMenuItemClasses,
+      rippleClasses: RcMenuItemRippleClasses,
+    })};
 
     .${RcMenuItemClasses.gutters} {
       padding-left: ${leftAndRightPadding};
@@ -48,7 +48,5 @@ export const MenuItemStyle: RcThemedStyled<RcMenuItemProps, any> = ({
       line-height: 22px;
       font-weight: 700;
     }
-
-    ${ListItemFormControlStyle};
   `;
 };

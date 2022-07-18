@@ -28,9 +28,10 @@ import {
   useEventCallback,
   useId,
   useThemeProps,
+  combineProps,
 } from '../../../foundation';
 import { RcIcon, RcIconProps } from '../../Icon';
-import { RcListItemSecondaryAction } from '../../List';
+import { RcListItemSecondaryAction, RcListItemProps } from '../../List';
 import { RcListItemAvatar } from '../../List/ListItemAvatar';
 import { RcListItemIcon } from '../../List/ListItemIcon';
 import { withTooltip, WithTooltipProps } from '../../Tooltip';
@@ -38,7 +39,7 @@ import { RcMenuContext } from '../Menu/MenuContext';
 import { RcMenuListContext } from '../MenuList/MenuListContext';
 import { RcSubMenuContext } from '../SubMenu/SubMenuContext';
 import { MenuItemStyle, StyledCheckIcon } from './styles';
-import { RcMenuItemClasses } from './utils';
+import { RcMenuItemClasses, RcMenuItemRippleClasses } from './utils';
 
 type RcMenuItemSize = RcBaseSize<'large' | 'medium'>;
 
@@ -73,6 +74,7 @@ type RcMenuItemProps = {
   /** MenuItem with subAction, can use ListItemSecondaryAction */
   secondaryAction?: ReactNode;
 } & RcMenuItemClassesType &
+  Pick<RcListItemProps, 'color' | 'highlighted'> &
   WithTooltipProps &
   RcBaseProps<ComponentProps<typeof MuiMenuItem>, 'classes' | 'title'>;
 
@@ -82,10 +84,13 @@ const _RcMenuItem = forwardRef<any, RcMenuItemProps & RcMenuItemInnerProps>(
     const {
       classes: classesProp,
       children,
+      color,
+      button,
       className,
       onMouseEnter,
       onClick,
       onFocus,
+      highlighted,
       size,
       type,
       checked,
@@ -95,6 +100,7 @@ const _RcMenuItem = forwardRef<any, RcMenuItemProps & RcMenuItemInnerProps>(
       secondaryAction,
       idRef,
       isSubMenuItem,
+      TouchRippleProps: TouchRipplePropsProp,
       title,
       ...rest
     } = props;
@@ -195,6 +201,20 @@ const _RcMenuItem = forwardRef<any, RcMenuItemProps & RcMenuItemInnerProps>(
       ) : null;
     }, [checked, isCheckedType, secondaryAction]);
 
+    // * when not button can't have TouchRippleProps
+    const additionProps = useMemo<Partial<RcMenuItemProps>>(
+      () =>
+        button
+          ? {
+              TouchRippleProps: combineProps(
+                { classes: RcMenuItemRippleClasses },
+                TouchRipplePropsProp,
+              ),
+            }
+          : {},
+      [TouchRipplePropsProp, button],
+    );
+
     const handleMouseEnter = useEventCallback(
       (e: React.MouseEvent<HTMLLIElement>) => {
         onMouseEnter?.(e);
@@ -227,6 +247,7 @@ const _RcMenuItem = forwardRef<any, RcMenuItemProps & RcMenuItemInnerProps>(
     return (
       <MuiMenuItem
         aria-checked={isCheckedType && checked ? true : undefined}
+        {...additionProps}
         {...rest}
         ref={ref as any}
         title={typeof title === 'string' ? title : undefined}
@@ -239,6 +260,7 @@ const _RcMenuItem = forwardRef<any, RcMenuItemProps & RcMenuItemInnerProps>(
         onClick={handleClick}
         onFocus={handleFocus}
         data-menuitem-id={menuItemId}
+        button={button as any}
       >
         {itemAvatar}
         {itemIcon}
@@ -255,6 +277,7 @@ const RcMenuItem = styled(withTooltip(_RcMenuItem))`
 
 RcMenuItem.defaultProps = {
   size: 'medium',
+  button: true,
 };
 
 RcMenuItem.displayName = 'RcMenuItem';

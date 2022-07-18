@@ -1,5 +1,6 @@
 import {
   css,
+  focusVisible,
   getParsePaletteColor,
   nonTouchHoverMedia,
   palette2,
@@ -33,35 +34,32 @@ export const ListItemFormControlStyle = css`
   }
 `;
 
-export const ListItemStyle: RcThemedStyled<RcListItemProps, any> = ({
-  maxWidth,
-  isInline,
-  size,
-  onClick,
+export const sharedListItemStyle: RcThemedStyled<
+  Pick<RcListItemProps, 'highlighted' | 'color' | 'canHover' | 'baseColor'> & {
+    mainClasses: typeof RcListItemClasses;
+    rippleClasses: typeof RcListItemRippleClasses;
+  },
+  any
+> = ({
+  highlighted,
   color,
   canHover,
   baseColor: baseColorProp = 'black',
-  highlighted,
+  mainClasses,
+  rippleClasses,
 }) => {
   const baseColor = getParsePaletteColor(color ?? colorMap[baseColorProp!]);
 
-  const defaultPadding = RcListItemTopAndBottomPaddings[size!];
-
   return css`
     ${typography('body1')};
-    width: ${maxWidth ? px(maxWidth) : '100%'};
-    padding-top: ${defaultPadding};
-    padding-bottom: ${defaultPadding};
-    display: ${isInline ? 'inline-flex' : 'flex'};
     color: ${palette2('neutral', 'f06')};
-    cursor: ${onClick ? 'pointer' : 'default'};
 
     ${highlighted &&
     css`
       background-color: ${setAlpha(baseColor, 0.05)};
     `};
 
-    &.${RcListItemClasses.focusVisible} {
+    ${focusVisible} {
       background-color: ${setOpacity(baseColor, '16')};
     }
 
@@ -71,16 +69,37 @@ export const ListItemStyle: RcThemedStyled<RcListItemProps, any> = ({
       }
     }
 
-    &.${RcListItemClasses.selected} {
+    &.${mainClasses.selected} {
       &,
       &:hover {
         background-color: ${setOpacity(baseColor, '12')};
       }
     }
 
-    .${RcListItemRippleClasses.rippleVisible} {
+    .${rippleClasses.rippleVisible} {
       color: ${baseColor};
     }
+
+    ${ListItemFormControlStyle};
+  `;
+};
+
+export const ListItemStyle: RcThemedStyled<RcListItemProps, any> = (props) => {
+  const { maxWidth, isInline, size, onClick } = props;
+  const defaultPadding = RcListItemTopAndBottomPaddings[size!];
+
+  return css`
+    width: ${maxWidth ? px(maxWidth) : '100%'};
+    padding-top: ${defaultPadding};
+    padding-bottom: ${defaultPadding};
+    display: ${isInline ? 'inline-flex' : 'flex'};
+    cursor: ${onClick ? 'pointer' : 'default'};
+
+    ${sharedListItemStyle({
+      ...props,
+      mainClasses: RcListItemClasses,
+      rippleClasses: RcListItemRippleClasses,
+    })};
 
     &.${RcListItemClasses.gutters} {
       padding-left: ${spacing(4)};
@@ -91,7 +110,5 @@ export const ListItemStyle: RcThemedStyled<RcListItemProps, any> = ({
       padding-top: ${spacing(1)};
       padding-bottom: ${spacing(1)};
     }
-
-    ${ListItemFormControlStyle};
   `;
 };

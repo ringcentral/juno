@@ -48,7 +48,14 @@ export const ListItem: Story<ListItemProps> = ({ children, ...args }) => {
       <br />
       <RcListItem {...args} selected>
         <RcListItemText
-          primary="Primary content"
+          primary="Selected Primary content"
+          secondary="Secondary content"
+        />
+      </RcListItem>
+      <br />
+      <RcListItem {...args} highlighted>
+        <RcListItemText
+          primary="Highlighted Primary content"
           secondary="Secondary content"
         />
       </RcListItem>

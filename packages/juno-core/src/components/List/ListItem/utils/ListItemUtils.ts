@@ -6,12 +6,13 @@ import {
 } from '../../../../foundation';
 import { RcListItemColor, RcListItemProps, RcListItemSize } from '../ListItem';
 
-const RcListItemPrefix = 'RcListItem';
+export const RcListItemPrefix = 'RcListItem';
+export const RcListItemRipplePrefix = `${RcListItemPrefix}TouchRipple`;
 
 export const RcListItemMultilineClassName = `${RcListItemPrefix}-multiline`;
 
 export const RcListItemClasses = RcClasses<RcListItemProps>(
-  ['focusVisible', 'gutters', 'dense', 'selected'],
+  ['gutters', 'dense', 'selected'],
   RcListItemPrefix,
 );
 
@@ -28,4 +29,4 @@ export const colorMap: UnitMap<RcListItemColor, RcPaletteProp> = {
 
 export const RcListItemRippleClasses = RcClasses<
   RcListItemProps['TouchRippleProps']
->(['rippleVisible'], 'RcListItemTouchRipple');
+>(['rippleVisible'], RcListItemRipplePrefix);
