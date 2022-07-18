@@ -1,4 +1,22 @@
 
+## [2.15.0](https://github.com/ringcentral/juno/compare/juno-core-v2.14.0...juno-core-v2.15.0) (2022-07-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* **Downshift:** [Downshift] that popper root element will be wrap a `div` for support animation work
+
+### Features
+
+* **Downshift:** support animation with menu and non virtualize mode ([7b97be3](https://github.com/ringcentral/juno/commit/7b97be3374ca240916365596c66525df62ad4103))
+* **Downshift:** support custom anchorElType with `PopperProps.anchorElType` ([eb74ead](https://github.com/ringcentral/juno/commit/eb74ead7581b7b6e71fd77ae08e5d6dc19669e20))
+* **Downshift:** support custom toggleButton with `getToggleButtonProps` ([3848237](https://github.com/ringcentral/juno/commit/3848237416d5dc197fedcf1a84b903e98fba467d))
+
+
+### Bug Fixes
+
+* **Downshift:** fix popper position show position with `bottom-start` and `top-start` ([45149bd](https://github.com/ringcentral/juno/commit/45149bd9f9a063272e18bb704ebb59127b499065))
+
 ## [2.14.0](https://github.com/ringcentral/juno/compare/juno-core-v2.13.1...juno-core-v2.14.0) (2022-06-22)
 
 
