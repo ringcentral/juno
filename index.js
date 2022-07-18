@@ -73458,17 +73458,19 @@ var _StyledPopper = forwardRef599(({ position: position4, ...rest }, ref2) => {
   });
 });
 var StyledPopper = styled_components_default(_StyledPopper)`
-  box-shadow: ${shadows4("1")};
-  background-color: ${palette22("neutral", "elevation")};
-  overflow: hidden;
+  > div {
+    box-shadow: ${shadows4("1")};
+    background-color: ${palette22("neutral", "elevation")};
+    overflow: hidden;
 
-  ${({ position: position4 }) => position4 === "top" ? css2`
-          border-top-right-radius: ${radiusLg};
-          border-top-left-radius: ${radiusLg};
-        ` : css2`
-          border-bottom-right-radius: ${radiusLg};
-          border-bottom-left-radius: ${radiusLg};
-        `}
+    ${({ position: position4 }) => position4 === "top-start" ? css2`
+            border-top-right-radius: ${radiusLg};
+            border-top-left-radius: ${radiusLg};
+          ` : css2`
+            border-bottom-right-radius: ${radiusLg};
+            border-bottom-left-radius: ${radiusLg};
+          `}
+  }
 `;
 
 // ../juno-core/src/components/Downshift/styles/StyledTextField.tsx
@@ -77076,6 +77078,7 @@ var SuggestionList = forwardRef602((inProps, ref2) => {
     highlightedIndex,
     options,
     getItemProps,
+    virtualize = true,
     getMenuProps,
     renderOption,
     inputValue,
@@ -77118,6 +77121,12 @@ var SuggestionList = forwardRef602((inProps, ref2) => {
   });
   const { sleep } = useSleep();
   const { retry: scrollToIndexWithRetry } = useRetry(async (location) => {
+    const toIndex = location.index;
+    if (!virtualize) {
+      const toElm2 = listRef.current?.querySelector(`[data-item-index="${toIndex}"]`);
+      toElm2?.scrollIntoView({ block: "nearest", inline: "nearest" });
+      return true;
+    }
     if (location.index === 0 && padding !== void 0) {
       location = {
         ...location,
@@ -77125,7 +77134,6 @@ var SuggestionList = forwardRef602((inProps, ref2) => {
       };
     }
     vlRef.current?.scrollToIndex(location);
-    const toIndex = location.index;
     await sleep(0);
     const toElm = listRef.current?.querySelector(`[data-item-index="${toIndex}"]`);
     if (toElm) {
@@ -77153,7 +77161,7 @@ var SuggestionList = forwardRef602((inProps, ref2) => {
   }, [virtuosoViewPort, position4]);
   const prevHighlightedIndex = usePrevious(() => highlightedIndex, true);
   useLayoutEffect24(() => {
-    if (vlRef.current && !isKeepHighlightedIndex && changeHighlightedIndexReason && changeHighlightedIndexReason !== "mouse") {
+    if ((!virtualize || vlRef.current) && !isKeepHighlightedIndex && changeHighlightedIndexReason && changeHighlightedIndexReason !== "mouse") {
       scrollToHighlightedIndex(prevHighlightedIndex, highlightedIndex, isTitleMode ? 1 : 0);
     }
   });
@@ -77183,6 +77191,7 @@ var SuggestionList = forwardRef602((inProps, ref2) => {
     });
     const selected = highlightedIndex === index4;
     const resultProps = {
+      "data-item-index": !virtualize ? index4 : void 0,
       ...option,
       ...itemProps,
       key: itemProps.id
@@ -77249,7 +77258,7 @@ var SuggestionList = forwardRef602((inProps, ref2) => {
   }, [componentsProp, PaddingComponent]);
   return /* @__PURE__ */ React687.createElement(SuggestionListContext.Provider, {
     value: listRef
-  }, /* @__PURE__ */ React687.createElement(Virtuoso, {
+  }, virtualize ? /* @__PURE__ */ React687.createElement(Virtuoso, {
     ref: forkVlRef,
     totalCount: itemCount,
     data: itemData,
@@ -77267,7 +77276,14 @@ var SuggestionList = forwardRef602((inProps, ref2) => {
       style: style3,
       isScrolling: handleScrolling
     }, rest)
-  }));
+  }) : /* @__PURE__ */ React687.createElement(List4, {
+    style: { maxHeight: style3.height, overflow: "auto" },
+    ref: (scrollElm) => {
+      scrollerRefFn(scrollElm);
+    }
+  }, /* @__PURE__ */ React687.createElement(PaddingComponent, null), options.map((x2, i2) => {
+    return itemContent(i2, x2);
+  }), /* @__PURE__ */ React687.createElement(PaddingComponent, null)));
 });
 var RcSuggestionList = styled_components_default(SuggestionList)`
   ${SuggestionListStyle};
@@ -77275,6 +77291,7 @@ var RcSuggestionList = styled_components_default(SuggestionList)`
 RcSuggestionList.displayName = "RcSuggestionList";
 
 // ../juno-core/src/components/Downshift/Downshift.tsx
+var DEFAULT_GROW_STYLE = { style: { transformOrigin: "0 0 0" } };
 var _RcDownshift = memo439(forwardRef603((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcDownshift" });
   if (true) {
@@ -77426,6 +77443,11 @@ var _RcDownshift = memo439(forwardRef603((inProps, ref2) => {
     clearButtonProps,
     onClear,
     ToggleButtonProps,
+    getToggleButtonProps: getToggleButtonPropsProp = (isOpen2) => {
+      return {
+        symbol: isOpen2 ? ArrowUp_default : ArrowDown_default
+      };
+    },
     inputValue: inputValueProp,
     onKeyDown: onKeyDownProp,
     helperText: helperTextProp,
@@ -77440,9 +77462,16 @@ var _RcDownshift = memo439(forwardRef603((inProps, ref2) => {
     freeSolo = enableFreeChips,
     keyToTags = keyToChips,
     maxFreeSolo = limitOfFreeChips,
-    SuggestionListProps,
+    SuggestionListProps: { virtualize = true, ...SuggestionListProps } = {},
     autoSelect = enableAutoTransform,
-    PopperProps,
+    PopperProps: {
+      anchorElType = "root",
+      transition: popperTransition,
+      TransitionComponent = virtualize ? RcFade : RcGrow,
+      transitionDuration: transitionDurationProp = "auto",
+      TransitionProps: TransitionPropsProp = {},
+      ...PopperProps
+    } = {},
     initialIsOpen,
     disabled: disabled3,
     required: requiredProp,
@@ -77470,12 +77499,14 @@ var _RcDownshift = memo439(forwardRef603((inProps, ref2) => {
     color: color2,
     ...rest
   } = props;
-  const [position4, setPosition] = useState37("bottom");
+  const [position4, setPosition] = useState37("bottom-start");
   const innerInputRef = useRef85(null);
   const textFieldRef = useRef85(null);
   const inputRef = useForkRef2(inputRefProp, innerInputRef);
   const inputContainerRef = useRef85(null);
   const isNew = !suggestionItems;
+  const transitionDuration = transitionDurationProp === "auto" ? void 0 : transitionDurationProp;
+  const anchorElRef = anchorElType === "input" ? inputContainerRef : textFieldRef;
   let oneOfTagError = false;
   if (true) {
     useDownshiftError({ isNew, MenuItem: MenuItem3, InputItem });
@@ -77613,8 +77644,10 @@ var _RcDownshift = memo439(forwardRef603((inProps, ref2) => {
     "aria-hidden": true,
     color: isDownshiftFocused ? color2 || "interactive.f01" : error4 ? "danger.f02" : "neutral.f04",
     size: "large",
-    symbol: isOpen ? ArrowUp_default : ArrowDown_default,
-    ...getToggleButtonProps(ToggleButtonProps)
+    ...getToggleButtonProps({
+      ...ToggleButtonProps,
+      ...getToggleButtonPropsProp(isOpen)
+    })
   }));
   const { containerClassName, TextFieldInputProps } = (() => {
     const { classes, ...restInputPropsProp } = InputPropsProp || {};
@@ -77650,6 +77683,28 @@ var _RcDownshift = memo439(forwardRef603((inProps, ref2) => {
   const handleUpdatePopper = useEventCallback2(() => {
     popperRef.current?.update();
   });
+  const menuChildren = /* @__PURE__ */ React688.createElement("div", null, isOpen && /* @__PURE__ */ React688.createElement(RcSuggestionList, {
+    highlightedIndex,
+    optionsGroupList,
+    options: optionItems,
+    groupVariant,
+    groupExpanded,
+    renderGroup,
+    MenuItem: MenuItem3,
+    renderOption,
+    inputValue,
+    getItemProps,
+    getMenuProps,
+    changeHighlightedIndexReason,
+    getOptionDisabled,
+    isKeepHighlightedIndex,
+    onUpdatePopper: handleUpdatePopper,
+    maxContainerHeight: 180,
+    getOptionLabel,
+    position: "unset",
+    virtualize,
+    ...SuggestionListProps
+  }), isRenderNoOptions && renderNoOptions?.(getNoOptionsProps, noOptionItem));
   return /* @__PURE__ */ React688.createElement(React688.Fragment, null, /* @__PURE__ */ React688.createElement(StyledTextField, {
     renderInput,
     hasTags,
@@ -77684,7 +77739,8 @@ var _RcDownshift = memo439(forwardRef603((inProps, ref2) => {
   }, screenReaderText), /* @__PURE__ */ React688.createElement(StyledPopper, {
     open,
     position: position4,
-    anchorEl: textFieldRef.current,
+    placement: "bottom-start",
+    anchorEl: anchorElRef.current,
     "data-test-automation-id": "suggestions-list",
     popperRef,
     popperOptions: {
@@ -77695,28 +77751,14 @@ var _RcDownshift = memo439(forwardRef603((inProps, ref2) => {
         }
       }
     },
-    ...getPopperProps(PopperProps)
-  }, isOpen && /* @__PURE__ */ React688.createElement(RcSuggestionList, {
-    highlightedIndex,
-    optionsGroupList,
-    options: optionItems,
-    groupVariant,
-    groupExpanded,
-    renderGroup,
-    MenuItem: MenuItem3,
-    renderOption,
-    inputValue,
-    getItemProps,
-    getMenuProps,
-    changeHighlightedIndexReason,
-    getOptionDisabled,
-    isKeepHighlightedIndex,
-    onUpdatePopper: handleUpdatePopper,
-    maxContainerHeight: 180,
-    getOptionLabel,
-    position: "unset",
-    ...SuggestionListProps
-  }), isRenderNoOptions && renderNoOptions?.(getNoOptionsProps, noOptionItem)));
+    ...getPopperProps(PopperProps),
+    transition: true
+  }, popperTransition ? ({ TransitionProps: TransitionProps4 }) => /* @__PURE__ */ React688.createElement(TransitionComponent, {
+    ...TransitionProps4,
+    ...virtualize ? {} : DEFAULT_GROW_STYLE,
+    ...TransitionPropsProp,
+    timeout: transitionDuration
+  }, menuChildren) : menuChildren));
 }));
 var RcDownshift = styled_components_default(_RcDownshift)`
   ${DownshiftStyle}
