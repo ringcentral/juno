@@ -856,7 +856,7 @@ describe('Downshift', () => {
       And: highlightItem will be $highlightItem ${(args, context) => {
         const menu = screen.getByRole('presentation');
 
-        const item = menu.querySelector('.Mui-selected');
+        const item = menu.querySelector('.RcMenuItem-focusVisible');
 
         expect(item?.textContent).toEqual(args.highlightItem);
       }}
@@ -1047,10 +1047,10 @@ describe('Downshift', () => {
           expect(noOptions).not.toBeNull();
         } else if (args.addFreeSoloItem) {
           expect(items[0].textContent).toEqual('abac---aaa');
-          expect(items[0]).toHaveClass('Mui-selected');
+          expect(items[0]).toHaveClass('RcMenuItem-focusVisible');
         } else {
           expect(items[0].textContent).toEqual('Afghanistan');
-          expect(items[0]).toHaveClass('Mui-selected');
+          expect(items[0]).toHaveClass('RcMenuItem-focusVisible');
         }
       }}
     `,
@@ -1132,7 +1132,7 @@ describe('Downshift', () => {
       Then: default highlight index $resultIndex ${(args, context) => {
         const menu = screen.getByRole('presentation');
 
-        const item = menu.querySelector('.Mui-selected');
+        const item = menu.querySelector('.RcMenuItem-focusVisible');
 
         expect(item?.textContent).toEqual(args.selected);
       }}
