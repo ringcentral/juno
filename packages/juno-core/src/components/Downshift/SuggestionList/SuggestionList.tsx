@@ -301,12 +301,7 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
 
       const highlighted = highlightedIndex === index;
 
-      // TODO: should support multiple selected options, using `isOptionEqualToValue`
-      let selected = selectedIndex === index;
-      const selectMode = selectedIndex !== undefined;
-      if (!selectMode) {
-        selected = selected || highlighted;
-      }
+      const selected = selectedIndex === index;
 
       const resultProps = {
         'data-item-index': !virtualize ? index : undefined,
@@ -327,13 +322,10 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
       const state: RcDownshiftRenderOptionState = {
         inputValue,
         selected,
+        highlighted,
         index,
         indexInOwnGroup,
       };
-
-      if (selectMode) {
-        state.highlighted = highlighted;
-      }
 
       if (renderGroup && isGroupTitle) {
         return renderGroup(resultProps, {
@@ -356,7 +348,7 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
             {...resultProps}
             itemId={option.id}
             data-suggestion-item-id={option.id}
-            isHighlighted={selected}
+            isHighlighted={selected || highlighted}
             isMember={option.isMember}
           />
         );
@@ -366,7 +358,7 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
         <RcMenuItem
           component="div"
           selected={selected}
-          {...(selectMode ? { focused: highlighted } : {})}
+          focused={highlighted}
           {...omit(resultProps, [
             'isSuggestion',
             'freeSolo',
