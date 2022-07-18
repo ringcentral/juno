@@ -50,6 +50,8 @@ type RcListItemProps = {
   baseColor?: RcListItemColor;
   /** Is this listItem highlighted */
   highlighted?: boolean;
+  /** show focused style */
+  focused?: boolean;
   /** The component used for the root node. Either a string to use a HTML element or a component.
    * By default, it's a li when button is false and a div when button is true. */
   component?: React.ElementType;
@@ -98,6 +100,7 @@ const _RcListItem = forwardRef<any, RcListItemProps>(
       title,
       highlighted,
       maxWidth,
+      focused,
       ...rest
     } = props;
     const classes = useMemo(
@@ -109,8 +112,9 @@ const _RcListItem = forwardRef<any, RcListItemProps>(
       () =>
         clsx(className, {
           [RcListItemMultilineClassName]: !singleLine,
+          [classes!.focusVisible]: focused,
         }),
-      [className, singleLine],
+      [className, singleLine, classes, focused],
     );
 
     // * when not button can't have TouchRippleProps

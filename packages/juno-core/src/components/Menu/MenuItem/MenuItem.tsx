@@ -46,7 +46,11 @@ type RcMenuItemSize = RcBaseSize<'large' | 'medium'>;
 type RcMenuItemType = 'checked' | 'selected';
 
 type RcMenuItemClassesType = RcClassesProps<
-  Classes<ComponentProps<typeof MuiMenuItem>> | 'checked' | 'unchecked'
+  | Classes<ComponentProps<typeof MuiMenuItem>>
+  | 'checked'
+  | 'unchecked'
+  // TODO: can be removed after V5
+  | 'focusVisible'
 >;
 
 type RcMenuItemInnerProps = {
@@ -74,7 +78,7 @@ type RcMenuItemProps = {
   /** MenuItem with subAction, can use ListItemSecondaryAction */
   secondaryAction?: ReactNode;
 } & RcMenuItemClassesType &
-  Pick<RcListItemProps, 'color' | 'highlighted'> &
+  Pick<RcListItemProps, 'color' | 'highlighted' | 'focused'> &
   WithTooltipProps &
   RcBaseProps<ComponentProps<typeof MuiMenuItem>, 'classes' | 'title'>;
 
@@ -102,6 +106,7 @@ const _RcMenuItem = forwardRef<any, RcMenuItemProps & RcMenuItemInnerProps>(
       isSubMenuItem,
       TouchRippleProps: TouchRipplePropsProp,
       title,
+      focused,
       ...rest
     } = props;
 
@@ -128,7 +133,7 @@ const _RcMenuItem = forwardRef<any, RcMenuItemProps & RcMenuItemInnerProps>(
     );
 
     const toClasses = useMemo(
-      () => omit(classes, ['checked', 'unchecked']),
+      () => omit(classes, ['checked', 'unchecked', 'focusVisible']),
       [classes],
     );
 
@@ -255,6 +260,7 @@ const _RcMenuItem = forwardRef<any, RcMenuItemProps & RcMenuItemInnerProps>(
         className={clsx(className, {
           [classes!.checked]: isCheckedType && checked,
           [classes!.unchecked]: isCheckedType && !checked,
+          [classes!.focusVisible]: focused,
         })}
         onMouseEnter={handleMouseEnter}
         onClick={handleClick}

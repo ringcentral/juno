@@ -12,7 +12,7 @@ export const RcListItemRipplePrefix = `${RcListItemPrefix}TouchRipple`;
 export const RcListItemMultilineClassName = `${RcListItemPrefix}-multiline`;
 
 export const RcListItemClasses = RcClasses<RcListItemProps>(
-  ['gutters', 'dense', 'selected'],
+  ['gutters', 'dense', 'selected', 'focusVisible'],
   RcListItemPrefix,
 );
 

@@ -4,7 +4,7 @@ import { RcMenuItemProps, RcMenuItemSize } from '../MenuItem';
 export const RcMenuItemPrefix = 'RcMenuItem';
 export const RcMenuItemRipplePrefix = `${RcMenuItemPrefix}TouchRipple`;
 export const RcMenuItemClasses = RcClasses<RcMenuItemProps>(
-  ['checked', 'unchecked', 'gutters', 'dense', 'selected'],
+  ['checked', 'unchecked', 'gutters', 'dense', 'selected', 'focusVisible'],
   RcMenuItemPrefix,
 );
 

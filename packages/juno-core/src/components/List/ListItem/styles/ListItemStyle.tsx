@@ -59,7 +59,12 @@ export const sharedListItemStyle: RcThemedStyled<
       background-color: ${setAlpha(baseColor, 0.05)};
     `};
 
-    ${focusVisible} {
+    ${
+      // that for menuItem, because in current version of menuItem that not support focused classes
+      // TODO: that can be remove after upgrade to V5
+      focusVisible
+    },
+    &.${mainClasses.focusVisible} {
       background-color: ${setOpacity(baseColor, '16')};
     }
 

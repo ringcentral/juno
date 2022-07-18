@@ -67,6 +67,13 @@ export const MenuItem: Story<MenuItemProps> = ({ children, ...args }) => {
         />
       </RcMenuItem>
       <br />
+      <RcMenuItem {...args} tabIndex={0} focused>
+        <RcListItemText
+          primary="Focused Primary content"
+          secondary="Secondary content"
+        />
+      </RcMenuItem>
+      <br />
       <RcMenuItem {...args} tabIndex={0} highlighted color="success.b05">
         <RcListItemText
           primary="Primary content"
