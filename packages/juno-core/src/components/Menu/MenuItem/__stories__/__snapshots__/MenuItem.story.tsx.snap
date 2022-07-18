@@ -44,16 +44,31 @@ Array [
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -67,6 +82,24 @@ Array [
   min-height: auto;
   line-height: 22px;
   font-weight: 700;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 <li
@@ -99,7 +132,23 @@ Array [
       </span>
     </div>
   </li>,
-  <br />,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
   .c1 {
   padding: 0;
   margin: 0 8px 0 0;
@@ -142,16 +191,31 @@ Array [
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -165,6 +229,24 @@ Array [
   min-height: auto;
   line-height: 22px;
   font-weight: 700;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 <li
@@ -194,6 +276,769 @@ Array [
         className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
       >
         MenuItem content
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary RcListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+      >
+        Secondary content
+      </p>
+    </div>
+  </li>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c1 {
+  padding: 0;
+  margin: 0 8px 0 0;
+}
+
+.c1.RcListItemText-multiline {
+  margin: 4px 8px 4px 0px;
+}
+
+.c1.RcListItemText-inset {
+  padding-left: 56px;
+}
+
+.c1 .RcListItemText-primary {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-decoration-line: inherit;
+  text-decoration-line: inherit;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c1 .RcListItemText-secondary {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-decoration-line: inherit;
+  text-decoration-line: inherit;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c0 {
+  outline: none;
+  box-sizing: border-box;
+  height: auto;
+  min-height: 32px;
+  min-width: 112px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
+}
+
+.c0 .RcMenuItem-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c0.RcMenuItem-dense {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  min-height: auto;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<li
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c0 Mui-selected RcMenuItem-selected MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button Mui-selected"
+    data-menuitem-id="menu-item-0"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="menuitem"
+    tabIndex={0}
+  >
+    <div
+      className="MuiListItemText-root c1 MuiListItemText-multiline RcListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+      >
+        Selected Primary content
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary RcListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+      >
+        Secondary content
+      </p>
+    </div>
+  </li>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c1 {
+  padding: 0;
+  margin: 0 8px 0 0;
+}
+
+.c1.RcListItemText-multiline {
+  margin: 4px 8px 4px 0px;
+}
+
+.c1.RcListItemText-inset {
+  padding-left: 56px;
+}
+
+.c1 .RcListItemText-primary {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-decoration-line: inherit;
+  text-decoration-line: inherit;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c1 .RcListItemText-secondary {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-decoration-line: inherit;
+  text-decoration-line: inherit;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c0 {
+  outline: none;
+  box-sizing: border-box;
+  height: auto;
+  min-height: 32px;
+  min-width: 112px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+  background-color: rgba(102,102,102,0.05);
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
+}
+
+.c0 .RcMenuItem-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c0.RcMenuItem-dense {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  min-height: auto;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<li
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c0 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+    data-menuitem-id="menu-item-0"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="menuitem"
+    tabIndex={0}
+  >
+    <div
+      className="MuiListItemText-root c1 MuiListItemText-multiline RcListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+      >
+        Highlighted Primary content
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary RcListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+      >
+        Secondary content
+      </p>
+    </div>
+  </li>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c1 {
+  padding: 0;
+  margin: 0 8px 0 0;
+}
+
+.c1.RcListItemText-multiline {
+  margin: 4px 8px 4px 0px;
+}
+
+.c1.RcListItemText-inset {
+  padding-left: 56px;
+}
+
+.c1 .RcListItemText-primary {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-decoration-line: inherit;
+  text-decoration-line: inherit;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c1 .RcListItemText-secondary {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-decoration-line: inherit;
+  text-decoration-line: inherit;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c0 {
+  outline: none;
+  box-sizing: border-box;
+  height: auto;
+  min-height: 32px;
+  min-width: 112px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
+}
+
+.c0 .RcMenuItem-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c0.RcMenuItem-dense {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  min-height: auto;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<li
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c0 RcMenuItem-focusVisible MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+    data-menuitem-id="menu-item-0"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="menuitem"
+    tabIndex={0}
+  >
+    <div
+      className="MuiListItemText-root c1 MuiListItemText-multiline RcListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+      >
+        Focused Primary content
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary RcListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+      >
+        Secondary content
+      </p>
+    </div>
+  </li>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c1 {
+  padding: 0;
+  margin: 0 8px 0 0;
+}
+
+.c1.RcListItemText-multiline {
+  margin: 4px 8px 4px 0px;
+}
+
+.c1.RcListItemText-inset {
+  padding-left: 56px;
+}
+
+.c1 .RcListItemText-primary {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-decoration-line: inherit;
+  text-decoration-line: inherit;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c1 .RcListItemText-secondary {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-decoration-line: inherit;
+  text-decoration-line: inherit;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c0 {
+  outline: none;
+  box-sizing: border-box;
+  height: auto;
+  min-height: 32px;
+  min-width: 112px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+  background-color: rgba(60,153,73,0.05);
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(60,153,73,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(60,153,73,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #3C9949;
+}
+
+.c0 .RcMenuItem-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c0.RcMenuItem-dense {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  min-height: auto;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(60,153,73,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<li
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c0 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+    data-menuitem-id="menu-item-0"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="menuitem"
+    tabIndex={0}
+  >
+    <div
+      className="MuiListItemText-root c1 MuiListItemText-multiline RcListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+      >
+        Primary content
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary RcListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+      >
+        Secondary content
+      </p>
+    </div>
+  </li>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c1 {
+  padding: 0;
+  margin: 0 8px 0 0;
+}
+
+.c1.RcListItemText-multiline {
+  margin: 4px 8px 4px 0px;
+}
+
+.c1.RcListItemText-inset {
+  padding-left: 56px;
+}
+
+.c1 .RcListItemText-primary {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-decoration-line: inherit;
+  text-decoration-line: inherit;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c1 .RcListItemText-secondary {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-decoration-line: inherit;
+  text-decoration-line: inherit;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+  color: #666666;
+}
+
+.c0 {
+  outline: none;
+  box-sizing: border-box;
+  height: auto;
+  min-height: 32px;
+  min-width: 112px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+  background-color: rgba(255,136,0,0.05);
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(255,136,0,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(255,136,0,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #FF8800;
+}
+
+.c0 .RcMenuItem-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c0.RcMenuItem-dense {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  min-height: auto;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(255,136,0,0.08);
+  }
+}
+
+<li
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c0 MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+    data-menuitem-id="menu-item-0"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="menuitem"
+    tabIndex={0}
+  >
+    <div
+      className="MuiListItemText-root c1 MuiListItemText-multiline RcListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary RcListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+      >
+        Primary content
       </span>
       <p
         className="MuiTypography-root MuiListItemText-secondary RcListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"

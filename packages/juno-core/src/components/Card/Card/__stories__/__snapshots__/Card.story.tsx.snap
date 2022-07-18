@@ -392,10 +392,6 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
 }
 
 .c21 {
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -403,10 +399,16 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: #121212;
   cursor: default;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
 }
 
+.c21.focus-visible,
+.c21[data-focus-visible-added],
 .c21.RcListItem-focusVisible {
   background-color: rgba(102,102,102,0.16);
 }

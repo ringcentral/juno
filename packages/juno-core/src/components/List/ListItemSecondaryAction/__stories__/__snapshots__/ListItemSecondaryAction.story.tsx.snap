@@ -47,10 +47,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
 }
 
 .c0 {
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -58,10 +54,16 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: #121212;
   cursor: default;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
 }
 
+.c0.focus-visible,
+.c0[data-focus-visible-added],
 .c0.RcListItem-focusVisible {
   background-color: rgba(102,102,102,0.16);
 }
@@ -75,6 +77,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
   color: #666666;
 }
 
+.c0 .c3 {
+  margin-right: 0;
+}
+
 .c0.RcListItem-gutters {
   padding-left: 16px;
   padding-right: 16px;
@@ -83,10 +89,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemSecondaryAction ListIt
 .c0.RcListItem-dense {
   padding-top: 4px;
   padding-bottom: 4px;
-}
-
-.c0 .c3 {
-  margin-right: 0;
 }
 
 .c5.RcCheckbox-root {

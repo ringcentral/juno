@@ -19,6 +19,10 @@ Array [
   background-color: #FFDFB1 !important;
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <h5
     className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
     data-color="neutral.f06"
@@ -77,16 +81,31 @@ Array [
 .c1 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c1.focus-visible,
+.c1[data-focus-visible-added],
+.c1.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c1.RcMenuItem-selected,
+.c1.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c1 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c1 .RcMenuItem-gutters {
@@ -104,6 +123,12 @@ Array [
 
 .c0 {
   overflow: auto;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <ul
@@ -255,6 +280,10 @@ Array [
   background-color: #FFDFB1 !important;
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <h5
     className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
     data-color="neutral.f06"
@@ -313,16 +342,31 @@ Array [
 .c1 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c1.focus-visible,
+.c1[data-focus-visible-added],
+.c1.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c1.RcMenuItem-selected,
+.c1.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c1 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c1 .RcMenuItem-gutters {
@@ -340,6 +384,12 @@ Array [
 
 .c0 {
   overflow: auto;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <ul
@@ -383,7 +433,7 @@ Array [
     </li>
     <li
       aria-disabled={false}
-      className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c1 Mui-selected MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button Mui-selected"
+      className="MuiButtonBase-root MuiListItem-root MuiMenuItem-root c1 Mui-selected RcMenuItem-selected MuiMenuItem-gutters RcMenuItem-gutters MuiListItem-gutters MuiListItem-button Mui-selected"
       data-menuitem-id="menu-item-0"
       onBlur={[Function]}
       onClick={[Function]}

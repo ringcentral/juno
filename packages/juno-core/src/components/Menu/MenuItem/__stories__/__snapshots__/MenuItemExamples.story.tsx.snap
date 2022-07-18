@@ -47,6 +47,10 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <li
     className="MuiListSubheader-root c0 MuiListSubheader-sticky MuiListSubheader-gutters RcListSubheader-gutters"
   >
@@ -94,16 +98,31 @@ Array [
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -137,6 +156,12 @@ Array [
 
 @media (hover:hover) and (pointer:fine) {
 
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <li
@@ -260,16 +285,31 @@ Array [
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -303,6 +343,12 @@ Array [
 
 @media (hover:hover) and (pointer:fine) {
 
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <li
@@ -390,6 +436,10 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <li
     className="c0"
     role="separator"
@@ -417,6 +467,10 @@ Array [
 
 .c0.RcListSubheader-inset {
   padding-left: 72px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -553,16 +607,31 @@ Array [
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -596,6 +665,12 @@ Array [
 
 @media (hover:hover) and (pointer:fine) {
 
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <li
@@ -756,16 +831,31 @@ Array [
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -799,6 +889,12 @@ Array [
 
 @media (hover:hover) and (pointer:fine) {
 
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <li
@@ -883,6 +979,10 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <li
     className="c0"
     role="separator"
@@ -910,6 +1010,10 @@ Array [
 
 .c0.RcListSubheader-inset {
   padding-left: 72px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1015,16 +1119,31 @@ Array [
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -1058,6 +1177,12 @@ Array [
 
 @media (hover:hover) and (pointer:fine) {
 
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <li
@@ -1189,16 +1314,31 @@ Array [
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -1232,6 +1372,12 @@ Array [
 
 @media (hover:hover) and (pointer:fine) {
 
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <li
@@ -1363,16 +1509,31 @@ Array [
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -1406,6 +1567,12 @@ Array [
 
 @media (hover:hover) and (pointer:fine) {
 
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <li
@@ -1492,6 +1659,10 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <li
     className="c0"
     role="separator"
@@ -1519,6 +1690,10 @@ Array [
 
 .c0.RcListSubheader-inset {
   padding-left: 72px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1637,16 +1812,31 @@ Array [
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -1687,6 +1877,12 @@ Array [
 
 @media (hover:hover) and (pointer:fine) {
 
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <li
@@ -1849,16 +2045,31 @@ Array [
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -1898,6 +2109,12 @@ Array [
   .c2.RcRadio-root:hover.RcRadio-checked {
     color: rgba(6,111,172,0.92);
     background-color: rgba(6,111,172,0.12);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
   }
 }
 
@@ -2123,16 +2340,31 @@ Array [
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -2172,6 +2404,12 @@ Array [
 
 @media (hover:hover) and (pointer:fine) {
 
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <li
@@ -2280,6 +2518,10 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <li
     className="c0"
     role="separator"
@@ -2307,6 +2549,10 @@ Array [
 
 .c0.RcListSubheader-inset {
   padding-left: 72px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2400,16 +2646,31 @@ Array [
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -2443,6 +2704,12 @@ Array [
 
 @media (hover:hover) and (pointer:fine) {
 
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <li
@@ -2566,16 +2833,31 @@ Array [
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -2609,6 +2891,12 @@ Array [
 
 @media (hover:hover) and (pointer:fine) {
 
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <li
@@ -2866,16 +3154,31 @@ Array [
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -2918,6 +3221,12 @@ Array [
 
 @media (hover:hover) and (pointer:fine) {
 
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <li
@@ -3025,6 +3334,10 @@ Array [
 
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <li
     className="c0"
     role="separator"
@@ -3052,6 +3365,10 @@ Array [
 
 .c0.RcListSubheader-inset {
   padding-left: 72px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3226,16 +3543,35 @@ Array [
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
+}
+
+.c0 .c2 {
+  margin-right: 0;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -3249,10 +3585,6 @@ Array [
   min-height: auto;
   line-height: 22px;
   font-weight: 700;
-}
-
-.c0 .c2 {
-  margin-right: 0;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -3280,6 +3612,12 @@ Array [
 
 @media (hover:hover) and (pointer:fine) {
 
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <li
@@ -3475,16 +3813,31 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/MenuItem/MenuItem Examples Seco
 .c0 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c0.focus-visible,
+.c0[data-focus-visible-added],
+.c0.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c0.RcMenuItem-selected,
+.c0.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c0 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c0 .RcMenuItem-gutters {
@@ -3498,6 +3851,12 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/MenuItem/MenuItem Examples Seco
   min-height: auto;
   line-height: 22px;
   font-weight: 700;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <li

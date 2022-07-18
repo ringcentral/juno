@@ -2,10 +2,6 @@
 
 exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list Multiple DnD List 1`] = `
 .c1 {
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -13,10 +9,16 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list Multi
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: #121212;
   cursor: default;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
 }
 
+.c1.focus-visible,
+.c1[data-focus-visible-added],
 .c1.RcListItem-focusVisible {
   background-color: rgba(102,102,102,0.16);
 }

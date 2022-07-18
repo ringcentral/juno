@@ -179,6 +179,10 @@ Array [
   }
 }
 
+@media (hover:hover) and (pointer:fine) {
+
+}
+
 <button
     className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
     disabled={false}
@@ -265,16 +269,31 @@ Array [
 .c1 {
   outline: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
-  color: #121212;
   height: auto;
   min-height: 32px;
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 22px;
+  color: #121212;
+}
+
+.c1.focus-visible,
+.c1[data-focus-visible-added],
+.c1.RcMenuItem-focusVisible {
+  background-color: rgba(102,102,102,0.16);
+}
+
+.c1.RcMenuItem-selected,
+.c1.RcMenuItem-selected:hover {
+  background-color: rgba(102,102,102,0.12);
+}
+
+.c1 .RcMenuItemTouchRipple-rippleVisible {
+  color: #666666;
 }
 
 .c1 .RcMenuItem-gutters {
@@ -300,6 +319,12 @@ Array [
 
 @media (hover:hover) and (pointer:fine) {
 
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1:hover {
+    background-color: rgba(102,102,102,0.08);
+  }
 }
 
 <div
