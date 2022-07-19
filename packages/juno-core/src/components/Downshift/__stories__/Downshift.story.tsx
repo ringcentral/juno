@@ -310,7 +310,7 @@ const DownshiftExample = ({ actionRef, additionValue = [], ...rest }: any) => {
         <RcMenuItem
           id={`${id}`}
           {...{ ...restProps, component: 'div' }}
-          selected={state.selected}
+          focused={state.highlighted}
           key={`${id || label}-${state.index}`}
         >
           {label}
@@ -755,7 +755,7 @@ export const DownshiftWithDynamic: Story<DownshiftProps> = ({ ...args }) => {
         <RcMenuItem
           id={`${id}`}
           {...{ ...restProps, component: 'div' }}
-          selected={state.selected}
+          focused={state.highlighted}
           key={`${id || label}-${state.index}`}
         >
           {state.index % 2 === 0 ? (
@@ -826,7 +826,7 @@ export const DownshiftWithAvatar: Story<DownshiftProps> = ({ ...args }) => {
           <RcMenuItem
             id={`${id}`}
             {...{ ...restProps, component: 'div' }}
-            selected={state.selected}
+            focused={state.highlighted}
             key={`${id || label}-${state.index}`}
           >
             <RcAvatar src={`https://placeimg.com/100/100/${state.index}`} />
