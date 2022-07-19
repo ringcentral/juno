@@ -67,7 +67,7 @@ export interface RcDownshiftRenderOptionState {
   /** is that item selected */
   selected: boolean;
   /** is that item be show highlighted style */
-  highlighted?: boolean;
+  highlighted: boolean;
   /** that item index */
   index: number;
   /** sort index in option own group */
