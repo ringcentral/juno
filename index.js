@@ -71223,8 +71223,9 @@ RcSwitch.displayName = "RcSwitch";
 
 // ../juno-core/src/components/List/ListItem/utils/ListItemUtils.ts
 var RcListItemPrefix = "RcListItem";
+var RcListItemRipplePrefix = `${RcListItemPrefix}TouchRipple`;
 var RcListItemMultilineClassName = `${RcListItemPrefix}-multiline`;
-var RcListItemClasses = RcClasses(["focusVisible", "gutters", "dense", "selected"], RcListItemPrefix);
+var RcListItemClasses = RcClasses(["gutters", "dense", "selected", "focusVisible"], RcListItemPrefix);
 var RcListItemTopAndBottomPaddings = {
   small: spacing2(1),
   medium: spacing2(1.25)
@@ -71234,7 +71235,7 @@ var colorMap = {
   secondary: "highlight.f02",
   black: "action.grayLight"
 };
-var RcListItemRippleClasses = RcClasses(["rippleVisible"], "RcListItemTouchRipple");
+var RcListItemRippleClasses = RcClasses(["rippleVisible"], RcListItemRipplePrefix);
 
 // ../juno-core/src/components/List/ListItem/styles/ListItemStyle.tsx
 var ListItemFormControlStyle = css2`
@@ -71249,32 +71250,25 @@ var ListItemFormControlStyle = css2`
     }
   }
 `;
-var ListItemStyle = ({
-  maxWidth: maxWidth2,
-  isInline,
-  size,
-  onClick,
+var sharedListItemStyle = ({
+  highlighted,
   color: color2,
   canHover,
   baseColor: baseColorProp = "black",
-  highlighted
+  mainClasses,
+  rippleClasses
 }) => {
   const baseColor = getParsePaletteColor(color2 ?? colorMap[baseColorProp]);
-  const defaultPadding = RcListItemTopAndBottomPaddings[size];
   return css2`
     ${typography4("body1")};
-    width: ${maxWidth2 ? px2(maxWidth2) : "100%"};
-    padding-top: ${defaultPadding};
-    padding-bottom: ${defaultPadding};
-    display: ${isInline ? "inline-flex" : "flex"};
     color: ${palette22("neutral", "f06")};
-    cursor: ${onClick ? "pointer" : "default"};
 
     ${highlighted && css2`
       background-color: ${setAlpha(baseColor, 0.05)};
     `};
 
-    &.${RcListItemClasses.focusVisible} {
+    ${focusVisible},
+    &.${mainClasses.focusVisible} {
       background-color: ${setOpacity(baseColor, "16")};
     }
 
@@ -71284,16 +71278,35 @@ var ListItemStyle = ({
       }
     }
 
-    &.${RcListItemClasses.selected} {
+    &.${mainClasses.selected} {
       &,
       &:hover {
         background-color: ${setOpacity(baseColor, "12")};
       }
     }
 
-    .${RcListItemRippleClasses.rippleVisible} {
+    .${rippleClasses.rippleVisible} {
       color: ${baseColor};
     }
+
+    ${ListItemFormControlStyle};
+  `;
+};
+var ListItemStyle = (props) => {
+  const { maxWidth: maxWidth2, isInline, size, onClick } = props;
+  const defaultPadding = RcListItemTopAndBottomPaddings[size];
+  return css2`
+    width: ${maxWidth2 ? px2(maxWidth2) : "100%"};
+    padding-top: ${defaultPadding};
+    padding-bottom: ${defaultPadding};
+    display: ${isInline ? "inline-flex" : "flex"};
+    cursor: ${onClick ? "pointer" : "default"};
+
+    ${sharedListItemStyle({
+    ...props,
+    mainClasses: RcListItemClasses,
+    rippleClasses: RcListItemRippleClasses
+  })};
 
     &.${RcListItemClasses.gutters} {
       padding-left: ${spacing2(4)};
@@ -71304,8 +71317,6 @@ var ListItemStyle = ({
       padding-top: ${spacing2(1)};
       padding-bottom: ${spacing2(1)};
     }
-
-    ${ListItemFormControlStyle};
   `;
 };
 
@@ -71341,12 +71352,14 @@ var _RcListItem = forwardRef589((inProps, ref2) => {
     title,
     highlighted,
     maxWidth: maxWidth2,
+    focused,
     ...rest
   } = props;
   const classes = useMemo51(() => combineClasses(RcListItemClasses, classesProp), [classesProp]);
   const ListItemClassName = useMemo51(() => clsx_m_default(className, {
-    [RcListItemMultilineClassName]: !singleLine
-  }), [className, singleLine]);
+    [RcListItemMultilineClassName]: !singleLine,
+    [classes.focusVisible]: focused
+  }), [className, singleLine, classes, focused]);
   const additionProps = useMemo51(() => button2 ? {
     TouchRippleProps: combineProps({ classes: RcListItemRippleClasses }, TouchRipplePropsProp)
   } : {}, [TouchRipplePropsProp, button2]);
@@ -71921,7 +71934,9 @@ var RcSubMenuContext = createContext19({
 });
 
 // ../juno-core/src/components/Menu/MenuItem/utils/MenuItemUtils.ts
-var RcMenuItemClasses = RcClasses(["checked", "unchecked", "gutters", "dense"], "RcMenuItem");
+var RcMenuItemPrefix = "RcMenuItem";
+var RcMenuItemRipplePrefix = `${RcMenuItemPrefix}TouchRipple`;
+var RcMenuItemClasses = RcClasses(["checked", "unchecked", "gutters", "dense", "selected", "focusVisible"], RcMenuItemPrefix);
 var RcMenuItemTopAndBottomPaddings = {
   medium: spacing2(1),
   large: spacing2(2)
@@ -71930,26 +71945,32 @@ var RcMenuItemLeftAndRightPaddings = {
   medium: spacing2(4),
   large: spacing2(5)
 };
+var RcMenuItemRippleClasses = RcClasses(["rippleVisible"], RcMenuItemRipplePrefix);
 
 // ../juno-core/src/components/Menu/MenuItem/styles/MenuItemStyle.tsx
 var StyledCheckIcon = styled_components_default(RcIcon)`
   height: 22px;
 `;
-var MenuItemStyle = ({
-  size
-}) => {
+var MenuItemStyle = (props) => {
+  const { size, color: color2 = "action.grayLight" } = props;
   const topAndBottomPadding = RcMenuItemTopAndBottomPaddings[size];
   const leftAndRightPadding = RcMenuItemLeftAndRightPaddings[size];
   return css2`
     outline: none;
     box-sizing: border-box;
-    ${typography4("body1")};
-    color: ${palette22("neutral", "f06")};
     height: auto;
     min-height: 32px;
     min-width: 112px;
     padding-top: ${topAndBottomPadding};
     padding-bottom: ${topAndBottomPadding};
+
+    ${sharedListItemStyle({
+    ...props,
+    color: color2,
+    canHover: true,
+    mainClasses: RcMenuItemClasses,
+    rippleClasses: RcMenuItemRippleClasses
+  })};
 
     .${RcMenuItemClasses.gutters} {
       padding-left: ${leftAndRightPadding};
@@ -71963,8 +71984,6 @@ var MenuItemStyle = ({
       line-height: 22px;
       font-weight: 700;
     }
-
-    ${ListItemFormControlStyle};
   `;
 };
 
@@ -71974,10 +71993,13 @@ var _RcMenuItem = forwardRef597((inProps, ref2) => {
   const {
     classes: classesProp,
     children: children2,
+    color: color2,
+    button: button2,
     className,
     onMouseEnter,
     onClick,
     onFocus,
+    highlighted,
     size,
     type: type3,
     checked,
@@ -71987,7 +72009,9 @@ var _RcMenuItem = forwardRef597((inProps, ref2) => {
     secondaryAction,
     idRef,
     isSubMenuItem,
+    TouchRippleProps: TouchRipplePropsProp,
     title,
+    focused,
     ...rest
   } = props;
   const isCheckedType = type3 === "checked";
@@ -72005,7 +72029,7 @@ var _RcMenuItem = forwardRef597((inProps, ref2) => {
     }
   });
   const classes = useMemo59(() => combineClasses(RcMenuItemClasses, classesProp), [classesProp]);
-  const toClasses = useMemo59(() => omit3(classes, ["checked", "unchecked"]), [classes]);
+  const toClasses = useMemo59(() => omit3(classes, ["checked", "unchecked", "focusVisible"]), [classes]);
   const itemAvatar = useMemo59(() => {
     if (React676.isValidElement(avatar3)) {
       return isRcElement(avatar3, ["RcListItemAvatar"]) ? avatar3 : /* @__PURE__ */ React676.createElement(RcListItemAvatar, null, avatar3);
@@ -72045,6 +72069,9 @@ var _RcMenuItem = forwardRef597((inProps, ref2) => {
     }
     return secondaryAction ? isRcElement(secondaryAction, ["RcListItemSecondaryAction"]) ? secondaryAction : /* @__PURE__ */ React676.createElement(RcListItemSecondaryAction, null, secondaryAction) : null;
   }, [checked, isCheckedType, secondaryAction]);
+  const additionProps = useMemo59(() => button2 ? {
+    TouchRippleProps: combineProps({ classes: RcMenuItemRippleClasses }, TouchRipplePropsProp)
+  } : {}, [TouchRipplePropsProp, button2]);
   const handleMouseEnter = useEventCallback2((e2) => {
     onMouseEnter?.(e2);
     setFocusedMenuItemId();
@@ -72065,25 +72092,29 @@ var _RcMenuItem = forwardRef597((inProps, ref2) => {
   useImperativeHandle13(idRef, () => menuItemId, [menuItemId]);
   return /* @__PURE__ */ React676.createElement(MenuItem_default, {
     "aria-checked": isCheckedType && checked ? true : void 0,
+    ...additionProps,
     ...rest,
     ref: ref2,
     title: typeof title === "string" ? title : void 0,
     classes: toClasses,
     className: clsx_m_default(className, {
       [classes.checked]: isCheckedType && checked,
-      [classes.unchecked]: isCheckedType && !checked
+      [classes.unchecked]: isCheckedType && !checked,
+      [classes.focusVisible]: focused
     }),
     onMouseEnter: handleMouseEnter,
     onClick: handleClick,
     onFocus: handleFocus,
-    "data-menuitem-id": menuItemId
+    "data-menuitem-id": menuItemId,
+    button: button2
   }, itemAvatar, itemIcon, children2, itemSubAction);
 });
 var RcMenuItem = styled_components_default(withTooltip(_RcMenuItem))`
   ${MenuItemStyle};
 `;
 RcMenuItem.defaultProps = {
-  size: "medium"
+  size: "medium",
+  button: true
 };
 RcMenuItem.displayName = "RcMenuItem";
 
@@ -72816,6 +72847,7 @@ var useDownshift = ({
   focused
 }) => {
   const isAutocomplete = variant === "autocomplete";
+  const autoCompleteSelectedIndexRef = useRef78(DEFAULT_HIGHLIGHTED_INDEX2);
   const downshiftId = useId2("downshift", true);
   const [inputFocused, setInputFocused] = useControlled({
     controlled: focused,
@@ -73058,6 +73090,7 @@ var useDownshift = ({
         const fIndex = optionItems.findIndex((x2) => getOptionLabel(x2) === itemText);
         if (fIndex > -1) {
           toIndex = fIndex;
+          autoCompleteSelectedIndexRef.current = fIndex;
         }
       }
       setHighlightedIndex(toIndex, { reason: "auto" });
@@ -73310,7 +73343,8 @@ var useDownshift = ({
     optionsGroupList,
     focused: focused ?? (tagFocused || inputFocused ? true : void 0),
     id: downshiftId,
-    inputChanged: isInputValueChangedRef.current
+    inputChanged: isInputValueChangedRef.current,
+    autoCompleteSelectedIndex: autoCompleteSelectedIndexRef.current
   };
 };
 
@@ -73451,8 +73485,8 @@ RcPopper.displayName = "RcPopper";
 
 // ../juno-core/src/components/Downshift/styles/StyledPopper.tsx
 var radiusLg = radius3("lg");
-var _StyledPopper = forwardRef599(({ position: position4, ...rest }, ref2) => {
-  return /* @__PURE__ */ React681.createElement(RcPopper, {
+var _StyledPopper = forwardRef599(({ position: position4, component: Component7 = RcPopper, ...rest }, ref2) => {
+  return /* @__PURE__ */ React681.createElement(Component7, {
     ref: ref2,
     ...rest
   });
@@ -77081,6 +77115,7 @@ var SuggestionList = forwardRef602((inProps, ref2) => {
     virtualize = true,
     getMenuProps,
     renderOption,
+    value: selectedOptions,
     inputValue,
     groupVariant,
     groupExpanded,
@@ -77098,6 +77133,7 @@ var SuggestionList = forwardRef602((inProps, ref2) => {
     className: classNameProp,
     classes: classesProp,
     position: position4 = "absolute",
+    selectedIndex,
     ...rest
   } = props;
   const vlRef = useRef84(null);
@@ -77189,7 +77225,8 @@ var SuggestionList = forwardRef602((inProps, ref2) => {
       index: index4,
       className: isGroupTitle ? classes.groupTitle : void 0
     });
-    const selected = highlightedIndex === index4;
+    const highlighted = highlightedIndex === index4;
+    const selected = selectedIndex === index4;
     const resultProps = {
       "data-item-index": !virtualize ? index4 : void 0,
       ...option,
@@ -77204,6 +77241,7 @@ var SuggestionList = forwardRef602((inProps, ref2) => {
     const state = {
       inputValue,
       selected,
+      highlighted,
       index: index4,
       indexInOwnGroup
     };
@@ -77222,13 +77260,14 @@ var SuggestionList = forwardRef602((inProps, ref2) => {
         ...resultProps,
         itemId: option.id,
         "data-suggestion-item-id": option.id,
-        isHighlighted: selected,
+        isHighlighted: selected || highlighted,
         isMember: option.isMember
       });
     }
     return /* @__PURE__ */ React687.createElement(RcMenuItem, {
       component: "div",
       selected,
+      focused: highlighted,
       ...omit3(resultProps, [
         "isSuggestion",
         "freeSolo",
@@ -77464,6 +77503,7 @@ var _RcDownshift = memo439(forwardRef603((inProps, ref2) => {
     maxFreeSolo = limitOfFreeChips,
     SuggestionListProps: { virtualize = true, ...SuggestionListProps } = {},
     autoSelect = enableAutoTransform,
+    PopperComponent,
     PopperProps: {
       anchorElType = "root",
       transition: popperTransition,
@@ -77542,7 +77582,8 @@ var _RcDownshift = memo439(forwardRef603((inProps, ref2) => {
     noOptionItem,
     getNoOptionsProps,
     isKeepHighlightedIndex,
-    focused: isDownshiftFocused
+    focused: isDownshiftFocused,
+    autoCompleteSelectedIndex
   } = useDownshift({
     focused,
     open: openProp,
@@ -77603,8 +77644,9 @@ var _RcDownshift = memo439(forwardRef603((inProps, ref2) => {
   }
   const toTextFieldRef = useForkRef2(textFieldRef, ref2);
   const colorHex = useMemo65(() => color2 ? getParsePaletteColor(color2)({ theme }) : void 0, [color2, theme]);
+  const isAutocomplete = variant === "autocomplete";
   const startAdornment = (() => {
-    if (variant === "autocomplete") {
+    if (isAutocomplete) {
       return void 0;
     }
     const getCustomizedTagProps = (selectedItem, index4) => {
@@ -77683,7 +77725,8 @@ var _RcDownshift = memo439(forwardRef603((inProps, ref2) => {
   const handleUpdatePopper = useEventCallback2(() => {
     popperRef.current?.update();
   });
-  const menuChildren = /* @__PURE__ */ React688.createElement("div", null, isOpen && /* @__PURE__ */ React688.createElement(RcSuggestionList, {
+  const menuChildren = /* @__PURE__ */ React688.createElement(React688.Fragment, null, isOpen && /* @__PURE__ */ React688.createElement(RcSuggestionList, {
+    selectedIndex: isAutocomplete ? autoCompleteSelectedIndex : void 0,
     highlightedIndex,
     optionsGroupList,
     options: optionItems,
@@ -77705,6 +77748,7 @@ var _RcDownshift = memo439(forwardRef603((inProps, ref2) => {
     virtualize,
     ...SuggestionListProps
   }), isRenderNoOptions && renderNoOptions?.(getNoOptionsProps, noOptionItem));
+  const prevMenuChildren = usePrevious(() => menuChildren);
   return /* @__PURE__ */ React688.createElement(React688.Fragment, null, /* @__PURE__ */ React688.createElement(StyledTextField, {
     renderInput,
     hasTags,
@@ -77739,6 +77783,7 @@ var _RcDownshift = memo439(forwardRef603((inProps, ref2) => {
   }, screenReaderText), /* @__PURE__ */ React688.createElement(StyledPopper, {
     open,
     position: position4,
+    component: PopperComponent,
     placement: "bottom-start",
     anchorEl: anchorElRef.current,
     "data-test-automation-id": "suggestions-list",
@@ -77752,13 +77797,33 @@ var _RcDownshift = memo439(forwardRef603((inProps, ref2) => {
       }
     },
     ...getPopperProps(PopperProps),
-    transition: true
-  }, popperTransition ? ({ TransitionProps: TransitionProps4 }) => /* @__PURE__ */ React688.createElement(TransitionComponent, {
-    ...TransitionProps4,
-    ...virtualize ? {} : DEFAULT_GROW_STYLE,
-    ...TransitionPropsProp,
-    timeout: transitionDuration
-  }, menuChildren) : menuChildren));
+    transition: popperTransition
+  }, popperTransition ? ({
+    TransitionProps: {
+      onEnter: onEnterProp,
+      onExited: onExitProp,
+      in: inProp
+    } = {},
+    ...restTransitionProp
+  } = {}) => {
+    const onEnter = (node4, isAppearing) => {
+      onEnterProp();
+      TransitionPropsProp.onEnter?.(node4, isAppearing);
+    };
+    const onExited = (node4) => {
+      onExitProp();
+      TransitionPropsProp.onExited?.(node4);
+    };
+    return /* @__PURE__ */ React688.createElement(TransitionComponent, {
+      in: inProp,
+      onEnter,
+      onExited,
+      ...restTransitionProp,
+      timeout: transitionDuration,
+      ...virtualize ? {} : DEFAULT_GROW_STYLE,
+      ...TransitionPropsProp
+    }, /* @__PURE__ */ React688.createElement("div", null, inProp ? menuChildren : prevMenuChildren));
+  } : menuChildren));
 }));
 var RcDownshift = styled_components_default(_RcDownshift)`
   ${DownshiftStyle}
