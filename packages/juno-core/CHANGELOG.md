@@ -1,6 +1,49 @@
 
 ## [2.16.0](https://github.com/ringcentral/juno/compare/juno-core-v2.15.0...juno-core-v2.16.0) (2022-07-19)
 
+### ⚠ BREAKING CHANGES
+
+* **RCUI-707:** [Downshift] change `renderOptions` callback function field `selected` rename to `highlighted`
+
+> if you use RcMenu `selected` to show highlighted, you need to change to `focused`
+> if you use `selected` to show highlighted, you need to change to `highlighted`
+
+
+example:
+
+```tsx
+renderOption={(
+  { label, id, error, unSelectable, isSuggestion, isError, ...restProps },
+  state,
+) => (
+  <RcMenuItem
+    id={`${id}`}
+    {...{ ...restProps, component: 'div' }}
+    selected={state.selected}
+    key={`${id || label}-${state.index}`}
+  >
+    {label}
+  </RcMenuItem>
+)}
+
+// switch to =>
+
+renderOption={(
+  { label, id, error, unSelectable, isSuggestion, isError, ...restProps },
+  state,
+) => (
+  <RcMenuItem
+    id={`${id}`}
+    {...{ ...restProps, component: 'div' }}
+    // props: `selected` => `focused`
+    // value: `selected` => `highlighted`
+    focused={state.highlighted}
+    key={`${id || label}-${state.index}`}
+  >
+    {label}
+  </RcMenuItem>
+)}
+```
 
 ### Features
 
