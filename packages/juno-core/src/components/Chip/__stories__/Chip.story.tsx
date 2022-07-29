@@ -8,7 +8,6 @@ import {
   notShowInDocTable,
   paletteChoice,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -54,7 +53,6 @@ const handleDelete = (e: Event) => {
 };
 
 export const Chip: Story<ChipProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return (
     <>
       <RcChip label="default Chip" onClick={() => {}} {...args} />
@@ -221,7 +219,6 @@ export const ChipDefaultExamples: Story<ChipProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
   return <ChipExampleComponent {...args} variant="default" />;
 };
 
@@ -239,7 +236,6 @@ export const ChipOutlinedExamples: Story<ChipProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
   return <ChipExampleComponent {...args} variant="outlined" />;
 };
 

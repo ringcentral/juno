@@ -6,7 +6,6 @@ import {
   notShowInDocTable,
   paletteChoice,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -34,7 +33,6 @@ export default {
 type LinearProgressProps = ComponentProps<typeof RcLinearProgress>;
 
 export const LinearProgress: Story<LinearProgressProps> = ({ ...args }) => {
-  switchToControlKnobs();
   return <RcLinearProgress {...args} />;
 };
 
@@ -61,7 +59,6 @@ LinearProgress.parameters = {
 export const LinearProgressExample: Story<LinearProgressProps> = ({
   color,
 }) => {
-  switchToControlKnobs();
   return (
     <div>
       <Title>Default</Title>

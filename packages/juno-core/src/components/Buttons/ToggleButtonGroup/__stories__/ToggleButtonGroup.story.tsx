@@ -17,7 +17,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -42,7 +41,6 @@ export const ToggleButtonGroup: Story<ToggleButtonGroupProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
   const [alignment, setAlignment] = React.useState<string | null>('left');
 
   const handleAlignment = (
@@ -115,7 +113,6 @@ export const ToggleButtonGroupExamples: Story<ToggleButtonGroupProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
   const [alignment, setAlignment] = React.useState<string | null>('left');
   const [alignments, setAlignments] = React.useState<string[]>([
     'left',

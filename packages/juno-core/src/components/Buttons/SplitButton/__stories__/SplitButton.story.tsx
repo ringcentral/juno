@@ -13,7 +13,6 @@ import { Add as AddSvg, Reply as ReplySvg } from '@ringcentral/juno-icon';
 import {
   paletteChoice,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -38,8 +37,6 @@ const SplitButtonComponent: FunctionComponent<SplitButtonProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   return (
     <RcSplitButton
       {...args}
@@ -126,8 +123,6 @@ const SplitButtonExamplesComponent: FunctionComponent<SplitButtonProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   return (
     <div>
       <RcGrid container spacing={2}>
@@ -324,8 +319,6 @@ SplitButtonExamples.storyName = 'SplitButton Examples';
 
 const SplitButtonLoadingExamplesComponent: FunctionComponent<SplitButtonProps> =
   ({ children, ...args }) => {
-    switchToControlKnobs();
-
     return (
       <RcGrid container spacing={2}>
         {variants.map((variant) => (

@@ -5,7 +5,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -30,7 +29,6 @@ export default {
 type StepLabelProps = ComponentProps<typeof RcStepLabel>;
 
 export const StepLabel: Story<StepLabelProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return (
     <>
       <Title variant="title1">

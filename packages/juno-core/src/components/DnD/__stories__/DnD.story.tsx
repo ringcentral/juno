@@ -4,32 +4,41 @@ import {
   RcDragDropContext,
   RcDragDropContextProps,
   RcDraggable,
+  RcDraggableProps,
   RcDragHandle,
   RcDroppable,
   RcList,
   RcListItem,
 } from '@ringcentral/juno';
-import { boolean, select } from '@storybook/addon-knobs';
 import { Meta, Story } from '@storybook/react';
 
 import { simpleInitialData } from './DnDExampleData';
 
 export default {
   title: '🚀 Cleanup Components/DnD',
+  argTypes: {
+    enableDirectionOnly: {
+      control: {
+        type: 'boolean',
+      },
+      label: 'enable directionOnly',
+    },
+    direction: {
+      options: ['vertical', 'horizontal'],
+      control: {
+        type: 'select',
+      },
+    },
+  },
 } as Meta;
 
-export const DnD: Story<{}> = () => {
-  const [data, setData] = useState(simpleInitialData);
-  const enableDirectionOnly = boolean('enable directionOnly', false);
+type DnDProps = {
+  enableDirectionOnly: boolean;
+  direction: RcDraggableProps['directionOnly'];
+};
 
-  const direction = select(
-    'direction',
-    {
-      vertical: 'vertical',
-      horizontal: 'horizontal',
-    },
-    'vertical',
-  );
+export const DnD: Story<DnDProps> = ({ enableDirectionOnly, direction }) => {
+  const [data, setData] = useState(simpleInitialData);
 
   const handleDragEnd: RcDragDropContextProps['onDragEnd'] = (result) => {
     const { destination, source, draggableId } = result;
@@ -123,7 +132,10 @@ export const DnD: Story<{}> = () => {
   );
 };
 
-DnD.args = {};
+DnD.args = {
+  enableDirectionOnly: false,
+  direction: 'vertical',
+};
 
 DnD.parameters = {
   tags: [

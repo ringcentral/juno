@@ -13,7 +13,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -76,8 +75,6 @@ export default {
 type MenuProps = ComponentProps<typeof RcMenu>;
 
 export const Menu: Story<MenuProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
-
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
 
   const handleClick = (
@@ -182,8 +179,6 @@ export const MenuExampleComponent: FunctionComponent<MenuExampleComponentProps> 
   };
 
 export const MenuExamples: Story<MenuProps> = ({ anchorOrigin, ...args }) => {
-  switchToControlKnobs();
-
   return <MenuExampleComponent {...args} />;
 };
 

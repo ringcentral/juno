@@ -41,7 +41,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -127,8 +126,6 @@ const List: FunctionComponent<{
 );
 
 export const Drawer: Story<DrawerProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
-
   const [open, setOpen] = useState(false);
 
   return (
@@ -171,8 +168,6 @@ export const DrawerExamples: Story<DrawerProps> = ({
   inlinePaper,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -224,8 +219,6 @@ export const DrawerWithInlinePaper: Story<DrawerProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const [open, setOpen] = useState(false);
 
   return (
@@ -308,8 +301,6 @@ export const DrawerAndModalSwitchInDevice: Story<DrawerProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
 

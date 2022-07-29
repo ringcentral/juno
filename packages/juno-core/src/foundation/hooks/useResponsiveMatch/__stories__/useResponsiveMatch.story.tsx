@@ -13,7 +13,6 @@ import {
   useResponsiveContext,
   useResponsiveMatch,
 } from '@ringcentral/juno';
-import { switchToControlKnobs } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
 export default {
@@ -53,8 +52,6 @@ const DialogStory = () => {
 };
 
 export const ResponsiveDialog: Story = () => {
-  switchToControlKnobs();
-
   return (
     <RcResponsive>
       <DialogStory />

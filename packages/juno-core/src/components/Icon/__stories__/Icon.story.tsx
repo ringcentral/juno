@@ -13,7 +13,6 @@ import { Add, DefaultFile, Phone } from '@ringcentral/juno-icon';
 import {
   notShowInDocTable,
   paletteChoice,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -33,8 +32,6 @@ export default {
 type IconProps = ComponentProps<typeof RcIcon>;
 
 export const Icon: Story<IconProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
-
   return <RcIcon {...args} />;
 };
 
@@ -85,8 +82,6 @@ const Wrapper = styled.ul`
 `;
 
 export const IconWithSymbol: Story<IconProps> = () => {
-  switchToControlKnobs();
-
   return (
     <Wrapper>
       <li>
@@ -98,8 +93,6 @@ export const IconWithSymbol: Story<IconProps> = () => {
 };
 
 export const IconWithCustomColor: Story<IconProps> = () => {
-  switchToControlKnobs();
-
   return (
     <Wrapper>
       <li>
@@ -113,8 +106,6 @@ export const IconWithCustomColor: Story<IconProps> = () => {
 };
 
 export const IconWithCustomSize: Story<IconProps> = () => {
-  switchToControlKnobs();
-
   return (
     <Wrapper>
       <li>
@@ -152,7 +143,6 @@ const ThemeSwitcher: FunctionComponent<{}> = () => {
 };
 
 export const IconWithDarkTheme: Story<IconProps> = () => {
-  switchToControlKnobs();
   const themeMap = {
     light: {},
     dark: RcDefaultDarkTheme,

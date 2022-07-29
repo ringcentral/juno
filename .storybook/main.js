@@ -8,7 +8,6 @@ module.exports = {
   //   storyStoreV7: true,
   // },
   addons: [
-    '@storybook/addon-knobs',
     '@storybook/addon-storysource',
     '@storybook/addon-a11y',
     {

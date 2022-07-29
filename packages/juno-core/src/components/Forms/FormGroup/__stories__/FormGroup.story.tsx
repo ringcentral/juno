@@ -5,7 +5,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -22,7 +21,6 @@ export default {
 type FormGroupProps = ComponentProps<typeof RcFormGroup>;
 
 export const FormGroup: Story<FormGroupProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   const onChange = (checked: any) => console.log(checked);
 
   return (

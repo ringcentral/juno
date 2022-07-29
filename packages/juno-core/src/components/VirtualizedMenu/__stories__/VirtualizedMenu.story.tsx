@@ -12,7 +12,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -82,8 +81,6 @@ export const VirtualizedMenu: Story<Partial<MenuProps>> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
   const [anchorEl2, setAnchorEl2] = useState<HTMLButtonElement | null>(null);
   const [count, setCount] = useState(0);
@@ -226,8 +223,6 @@ export const MenuExampleComponent: FunctionComponent<MenuExampleComponentProps> 
   };
 
 export const MenuExamples: Story<MenuProps> = ({ anchorOrigin, ...args }) => {
-  switchToControlKnobs();
-
   return <MenuExampleComponent {...args} />;
 };
 

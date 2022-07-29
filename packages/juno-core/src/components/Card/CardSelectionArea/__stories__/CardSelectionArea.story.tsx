@@ -10,7 +10,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -29,8 +28,6 @@ type RcCardSelectionAreaProps = ComponentProps<typeof RcCardSelectionArea>;
 export const CardSelectionArea: Story<RcCardSelectionAreaProps> = ({
   ...args
 }) => {
-  switchToControlKnobs();
-
   const [selected, setSelected] = useState(false);
   const onSelectionChange = (
     e: React.ChangeEvent<HTMLInputElement>,

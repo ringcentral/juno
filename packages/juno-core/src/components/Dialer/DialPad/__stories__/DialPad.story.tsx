@@ -11,7 +11,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -34,8 +33,6 @@ const Wrapper = styled.div`
 `;
 
 export const DialPad: Story<DialPadProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
-
   return (
     <Wrapper>
       <RcDialPad
@@ -57,8 +54,6 @@ const CustomWrapper = styled.div`
 `;
 
 export const CustomDialPad: Story<DialPadProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
-
   return (
     <CustomWrapper>
       <RcDialPad

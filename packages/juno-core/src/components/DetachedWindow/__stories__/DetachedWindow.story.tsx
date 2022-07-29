@@ -22,7 +22,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -71,8 +70,6 @@ export const DetachedWindow: Story<DetachedWindowProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState(1);
   const ref = useRef<RcDetachedWindowRef>(null);

@@ -13,16 +13,19 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
-import { boolean } from '@storybook/addon-knobs';
 import { Meta, Story } from '@storybook/react';
 
 export default {
   title: '🚀 Cleanup Components/Stepper',
   component: RcStepper,
   argTypes: {
+    clickable: {
+      control: {
+        type: 'boolean',
+      },
+    },
     ...sortInDocTable<keyof StepperProps>([
       'activeStep',
       'nonLinear',
@@ -39,7 +42,7 @@ export default {
   },
 } as Meta;
 
-type StepperProps = ComponentProps<typeof RcStepper>;
+type StepperProps = ComponentProps<typeof RcStepper> & { clickable: boolean };
 
 function getStepContent(step: number) {
   switch (step) {
@@ -64,14 +67,12 @@ export const Stepper: Story<StepperProps> = ({
   children,
   connector,
   activeStep: activeStepProp,
+  clickable,
   ...args
 }) => {
-  switchToControlKnobs();
   const [activeStep, setActiveStep] = useState(activeStepProp || 0);
   const [completed, setCompleted] = useState(new Set<number>());
   const [skipped, setSkipped] = useState(new Set<number>());
-
-  const clickable = boolean('clickable', true);
 
   const steps = [
     'Select campaign settings',
@@ -239,7 +240,9 @@ export const Stepper: Story<StepperProps> = ({
 
 Stepper.storyName = 'Stepper';
 
-Stepper.args = {};
+Stepper.args = {
+  clickable: true,
+};
 
 Stepper.argTypes = {
   ...notControlInDocTable<keyof StepperProps>([]),

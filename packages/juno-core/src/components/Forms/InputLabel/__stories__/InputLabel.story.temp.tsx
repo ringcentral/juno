@@ -1,8 +1,7 @@
 // import { Meta, Story } from '@storybook/react';
 // import React, { ComponentProps } from 'react';
 
-// import { switchToControlKnobs } from '@ringcentral/juno-storybook';
-// import { RcInputLabel } from '../InputLabel';
+// // import { RcInputLabel } from '../InputLabel';
 
 // export default {
 //   title: 'InputLabel',
@@ -12,8 +11,7 @@
 // type InputLabelProps = ComponentProps<typeof RcInputLabel>;
 
 // export const InputLabel: Story<InputLabelProps> = ({ children, ...args }) => {
-//   switchToControlKnobs();
-//   return <RcInputLabel {...args}>{children}</RcInputLabel>;
+//   //   return <RcInputLabel {...args}>{children}</RcInputLabel>;
 // };
 
 // InputLabel.args = {};

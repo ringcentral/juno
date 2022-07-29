@@ -25,7 +25,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -50,8 +49,6 @@ export default {
 type RcCardProps = ComponentProps<typeof RcCard>;
 
 export const Card: Story<RcCardProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
-
   return (
     <RcCard {...args}>
       <RcCardContent>
@@ -175,7 +172,6 @@ const menus = [
 ];
 
 export const CardExamples: Story<RcCardProps> = () => {
-  switchToControlKnobs();
   return (
     <Wrapper>
       <Container variant="outlined">

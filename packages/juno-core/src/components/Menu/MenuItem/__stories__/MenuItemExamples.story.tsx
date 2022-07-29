@@ -21,7 +21,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -62,8 +61,6 @@ export const MenuItemExamples: Story<MenuItemProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const CheckedTypeCase = (
     <>
       <RcListSubheader>Checked Type Case:</RcListSubheader>

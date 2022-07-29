@@ -10,7 +10,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -39,8 +38,6 @@ export const MenuListTypeMenuExample: Story<MenuListProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   return (
     <>
       <Title>
@@ -70,8 +67,6 @@ export const MenuListTypeSelectedMenuExamples: Story<MenuListProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   return (
     <>
       <Title>

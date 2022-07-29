@@ -13,7 +13,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -72,8 +71,6 @@ const CustomTabPanel = styled(RcTabPanel)<{ idx: number }>`
 `;
 
 export const TabPanel: Story<TabPanelProps> = ({ ...args }) => {
-  switchToControlKnobs();
-
   const [value, setValue] = React.useState(tabsData[0].value);
 
   const handleChange = (event: React.ChangeEvent<{}>, value: any) => {

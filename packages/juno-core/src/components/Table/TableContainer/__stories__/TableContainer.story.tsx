@@ -11,7 +11,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 import React, { ComponentProps } from 'react';
@@ -36,8 +35,6 @@ export const TableContainer: Story<TableContainerProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   return (
     <RcTableContainer {...args}>
       <RcTable>
@@ -113,8 +110,6 @@ const ContainerExample = (props: RcTableContainerProps) => {
 };
 
 export const TableContainerExample: Story = () => {
-  switchToControlKnobs();
-
   return (
     <>
       <RcTypography variant="title2" color="neutral.f05">

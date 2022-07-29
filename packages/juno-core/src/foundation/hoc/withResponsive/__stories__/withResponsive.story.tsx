@@ -7,7 +7,6 @@ import {
   styled,
   withResponsive,
 } from '@ringcentral/juno';
-import { switchToControlKnobs } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
 export default {
@@ -27,7 +26,6 @@ const ResizeWrapper = styled.div`
 const ResponsiveButton = withResponsive(RcButton, ['size']);
 
 export const WithResponsive: Story = () => {
-  switchToControlKnobs();
   const ref = useRef<HTMLDivElement>(null);
   return (
     <>

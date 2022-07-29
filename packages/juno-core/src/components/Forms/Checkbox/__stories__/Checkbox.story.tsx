@@ -7,7 +7,6 @@ import {
   notShowInDocTable,
   paletteChoice,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -39,7 +38,6 @@ export default {
 type CheckboxProps = ComponentProps<typeof RcCheckbox>;
 
 export const Checkbox: Story<CheckboxProps> = ({ ...args }) => {
-  switchToControlKnobs();
   return <RcCheckbox {...args} />;
 };
 
@@ -70,8 +68,6 @@ Checkbox.parameters = {
 };
 
 export const CheckboxExamples: Story<CheckboxProps> = () => {
-  switchToControlKnobs();
-
   return (
     <div>
       <RcTypography

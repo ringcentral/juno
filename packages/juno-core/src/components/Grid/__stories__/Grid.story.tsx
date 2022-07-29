@@ -5,7 +5,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -37,7 +36,6 @@ export default {
 type GridProps = ComponentProps<typeof RcGrid>;
 
 export const GridContainer: Story<GridProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return (
     <>
       <RcText noWrap={false}>

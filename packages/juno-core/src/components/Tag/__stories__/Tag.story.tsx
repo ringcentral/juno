@@ -4,7 +4,6 @@ import { RcTag } from '@ringcentral/juno';
 import {
   notShowInDocTable,
   paletteChoice,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -36,7 +35,6 @@ export default {
 type TagProps = ComponentProps<typeof RcTag>;
 
 export const Tag: Story<TagProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return (
     <>
       <RcTag {...args}>{children}</RcTag>

@@ -5,7 +5,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -30,8 +29,6 @@ const Wrapper = styled.div`
 type ButtonBaseButtonProps = ComponentProps<typeof RcButtonBase>;
 
 export const ButtonBase: Story<ButtonBaseButtonProps> = ({ ...args }) => {
-  switchToControlKnobs();
-
   return (
     <Wrapper>
       <RcButtonBase

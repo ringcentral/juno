@@ -18,7 +18,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -42,8 +41,6 @@ export const SplitButtonRound: Story<SplitButtonProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   return (
     <RcGrid container>
       {Object.keys(omit(RcIconSizes, ['inherit'])).map(

@@ -6,7 +6,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -34,7 +33,6 @@ export const ToggleButton: Story<ToggleButtonProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
   return (
     <>
       <Title>ToggleButton should use with RcToggleButton</Title>

@@ -21,7 +21,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 import { RcMenuItem, RcMenuItemProps } from '../../../Menu';
@@ -47,7 +46,6 @@ export default {
 type TabsProps = ComponentProps<typeof RcTabs>;
 
 export const Tabs: Story<TabsProps> = ({ ...args }) => {
-  switchToControlKnobs();
   return (
     <RcPaper square>
       <RcTabs {...args}>
@@ -114,8 +112,6 @@ const tabsData = [
 ];
 
 export const TabsChangeExample: Story<TabsProps> = ({ ...args }) => {
-  switchToControlKnobs();
-
   const [value, setValue] = React.useState('tab-0');
   const handleChange = (event: React.ChangeEvent<{}>, value: any) => {
     setValue(value);

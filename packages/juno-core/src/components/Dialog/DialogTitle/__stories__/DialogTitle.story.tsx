@@ -13,7 +13,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -30,7 +29,6 @@ export default {
 type DialogTitleProps = ComponentProps<typeof RcDialogTitle>;
 
 export const DialogTitle: Story<DialogTitleProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return <RcDialogTitle {...args}>{children}</RcDialogTitle>;
 };
 
@@ -61,7 +59,6 @@ export const DialogTitleExamples: Story<DialogTitleProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
   return (
     <RcDialogTitle display="flex" disableTypography {...args} space={[0, 6]}>
       <RcAvatar size="medium" color="avatar.lake">

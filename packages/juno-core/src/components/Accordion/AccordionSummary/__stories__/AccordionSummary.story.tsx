@@ -10,7 +10,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -34,7 +33,6 @@ export const AccordionSummary: Story<AccordionSummaryProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
   return (
     <RcAccordion>
       <RcAccordionSummary {...args} expandIcon>
@@ -76,7 +74,6 @@ export const AccordionSummaryExamples: Story<AccordionSummaryProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
   return (
     <RcAccordion>
       <RcAccordionSummary

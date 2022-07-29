@@ -12,7 +12,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -29,8 +28,6 @@ export default {
 type RadioGroupProps = ComponentProps<typeof RcRadioGroup>;
 
 export const RadioGroup: Story<RadioGroupProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
-
   return (
     <RcRadioGroup {...args}>
       <RcFormControlLabel
@@ -71,8 +68,6 @@ RadioGroup.parameters = {
 };
 
 export const RadioGroupExamples: Story<RadioGroupProps> = () => {
-  switchToControlKnobs();
-
   const [value, setValue] = React.useState('radio1');
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

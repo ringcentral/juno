@@ -1,7 +1,6 @@
 // import React, { ComponentProps } from 'react';
 
-// import { switchToControlKnobs } from '@ringcentral/juno-storybook';
-// import { Meta, Story } from '@storybook/react';
+// // import { Meta, Story } from '@storybook/react';
 
 // import { RcVisuallyHidden } from '../VisuallyHidden';
 
@@ -16,8 +15,7 @@
 //   children,
 //   ...args
 // }) => {
-//   switchToControlKnobs();
-//   return <RcVisuallyHidden {...args}>{children}</RcVisuallyHidden>;
+//   //   return <RcVisuallyHidden {...args}>{children}</RcVisuallyHidden>;
 // };
 
 // VisuallyHidden.args = {};

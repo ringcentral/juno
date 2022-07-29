@@ -3,7 +3,6 @@ import React, { ComponentProps, useState } from 'react';
 import { RcTextarea } from '@ringcentral/juno';
 import {
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -25,8 +24,6 @@ export const Textarea: Story<TextareaProps> = ({
   value: valueArg,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const [value, setValue] = useState<string>(valueArg as any);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

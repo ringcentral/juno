@@ -6,7 +6,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Rc__name__ } from '../__name__';
 
@@ -23,7 +22,6 @@ export default {
 type __name__Props = ComponentProps<typeof Rc__name__>;
 
 export const __name__: Story<__name__Props> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return <Rc__name__ {...args}>{children}</Rc__name__>;
 };
 

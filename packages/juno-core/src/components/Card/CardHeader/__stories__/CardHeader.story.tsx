@@ -11,7 +11,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -37,7 +36,6 @@ export default {
 type CardHeaderProps = ComponentProps<typeof RcCardHeader>;
 
 export const CardHeader: Story<CardHeaderProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return (
     <RcCard>
       <RcCardHeader

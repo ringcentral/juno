@@ -15,7 +15,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -36,8 +35,6 @@ export default {
 type ListProps = ComponentProps<typeof RcList>;
 
 export const ListSimpleExamples: Story<ListProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
-
   return (
     <RcList {...args}>
       <RcListItem>
@@ -71,8 +68,6 @@ export const ListControlExamples: Story<ListProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   return (
     <RcList {...args}>
       {[0, 1, 2, 3].map((value) => (

@@ -5,7 +5,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -25,7 +24,6 @@ export const DialogContent: Story<DialogContentProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
   return <RcDialogContent {...args}>{children}</RcDialogContent>;
 };
 

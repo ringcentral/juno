@@ -24,7 +24,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -49,8 +48,6 @@ const OutlineTextFieldComponent: FunctionComponent<OutlineTextFieldProps> = ({
   size,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const ref = useRef();
   const inputRef = useRef();
 
@@ -284,8 +281,6 @@ const sizes = ['small', 'medium', 'large'] as OutlineTextFieldProps['size'][];
 
 const OutlineTextFieldSizesComponent: FunctionComponent<OutlineTextFieldProps> =
   ({ children, value: valueArg, ...args }) => {
-    switchToControlKnobs();
-
     const ref = useRef();
     const inputRef = useRef();
 

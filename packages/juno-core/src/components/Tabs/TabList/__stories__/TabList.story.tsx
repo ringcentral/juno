@@ -11,7 +11,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -57,8 +56,6 @@ const tabsData = [
 type TabListProps = ComponentProps<typeof RcTabList>;
 
 export const TabList: Story<TabListProps> = ({ ...args }) => {
-  switchToControlKnobs();
-
   const [value, setValue] = React.useState(tabsData[0].value);
 
   const handleChange = (event: React.ChangeEvent<{}>, value: any) => {

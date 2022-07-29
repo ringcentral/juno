@@ -20,7 +20,6 @@ import {
   notShowInDocTable,
   paletteChoice,
   sortInDocTable,
-  switchToControlKnobs,
   useCheckRenderButton,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -55,8 +54,6 @@ export default {
 type AvatarProps = ComponentProps<typeof RcAvatar>;
 
 export const Avatar: Story<AvatarProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
-
   return <RcAvatar {...args} />;
 };
 

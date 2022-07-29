@@ -9,6 +9,7 @@ import {
   RcDragDropContext,
   RcDragDropContextProps,
   RcDraggable,
+  RcDraggableProps,
   RcDroppable,
   RcList,
   RcListItem,
@@ -16,7 +17,6 @@ import {
   RcListSubheader,
   styled,
 } from '@ringcentral/juno';
-import { select } from '@storybook/addon-knobs';
 import { Meta, Story } from '@storybook/react';
 
 import { DataType, GroupType, initialData, ItemType } from './DnDExampleData';
@@ -24,6 +24,12 @@ import { DataType, GroupType, initialData, ItemType } from './DnDExampleData';
 export default {
   title:
     '🚀 Cleanup Components/DnD/Dnd Examples/Multiple list/Multiple DnD List(Portal)',
+  direction: {
+    options: ['vertical', 'horizontal'],
+    control: {
+      type: 'select',
+    },
+  },
 } as Meta;
 
 const portal: HTMLElement = document.createElement('div');
@@ -223,18 +229,12 @@ const Groups: FunctionComponent<DataType> = (props) => {
     </>
   );
 };
+type DnDListProps = {
+  direction: RcDraggableProps['directionOnly'];
+};
 
-export const DnDListPortal: Story<{}> = () => {
+export const DnDListPortal: Story<DnDListProps> = ({ direction }) => {
   const [data, setData] = useState(initialData);
-
-  const direction = select(
-    'direction',
-    {
-      vertical: 'vertical',
-      horizontal: 'horizontal',
-    },
-    'vertical',
-  );
 
   const handleDragEnd: RcDragDropContextProps['onDragEnd'] = (result) => {
     const { destination, source, draggableId, type } = result;
@@ -352,5 +352,5 @@ export const DnDListPortal: Story<{}> = () => {
   );
 };
 
-DnDListPortal.args = {};
+DnDListPortal.args = { direction: 'vertical' };
 DnDListPortal.storyName = 'Multiple DnD List(Portal)';

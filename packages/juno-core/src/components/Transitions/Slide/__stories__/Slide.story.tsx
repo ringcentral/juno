@@ -5,7 +5,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -26,7 +25,6 @@ export const Slide: Story<SlideProps> = ({
   in: openProp,
   ...args
 }) => {
-  switchToControlKnobs();
   const [open, setOpen] = useState(!!openProp);
 
   return (

@@ -11,7 +11,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -43,8 +42,6 @@ export default {
 type PopupBoxProps = ComponentProps<typeof RcPopupBox>;
 
 export const PopupBox: Story<PopupBoxProps> = ({ open: openProp, ...args }) => {
-  switchToControlKnobs();
-
   const [open, setOpen] = useState(openProp);
 
   return (

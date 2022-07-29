@@ -9,7 +9,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -29,7 +28,6 @@ export const AccordionDetails: Story<AccordionDetailsProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
   return (
     <RcAccordion expanded>
       <RcAccordionSummary {...args} expandIcon>

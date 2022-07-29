@@ -20,7 +20,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -57,7 +56,6 @@ export default {
 type DatePickerProps = ComponentProps<typeof RcDatePicker>;
 
 export const DatePicker: Story<DatePickerProps> = ({ value, ...args }) => {
-  switchToControlKnobs();
   const ref = useRef(null);
 
   const [date, setDate] = useState<Date | null | undefined>(value);
@@ -109,8 +107,6 @@ export const DatePickerWithRange: Story<DatePickerProps> = ({
   value,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const [date, setDate] = useState<Date | null | undefined>(value);
 
   return (
@@ -281,7 +277,6 @@ export const DatePickerWithTimePick: Story<DatePickerProps> = ({
   value,
   ...args
 }) => {
-  switchToControlKnobs();
   const ref = useRef(null);
 
   const [date, setDate] = useState<Date | null>(value || null);

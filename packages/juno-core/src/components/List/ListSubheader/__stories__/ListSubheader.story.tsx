@@ -10,7 +10,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -30,7 +29,6 @@ export const ListSubheader: Story<ListSubheaderProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
   return (
     <RcList subheader={<li />} style={{ height: '200px', overflow: 'auto' }}>
       {[0, 1, 2, 3, 4].map((sectionId) => (

@@ -19,7 +19,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -90,7 +89,6 @@ const DialogStory = ({
 const ResponsiveButton = withResponsive(RcButton, ['size']);
 
 export const ResponsiveButtonExamples: Story = () => {
-  switchToControlKnobs();
   const ref = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false);
 

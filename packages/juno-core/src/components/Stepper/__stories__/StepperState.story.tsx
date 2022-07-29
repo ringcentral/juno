@@ -6,7 +6,6 @@ import {
   RcStepLabel,
   RcStepper,
 } from '@ringcentral/juno';
-import { switchToControlKnobs } from '@ringcentral/juno-storybook';
 import { Meta } from '@storybook/react';
 
 export default {
@@ -14,8 +13,6 @@ export default {
 } as Meta;
 
 export const StepperAllState = () => {
-  switchToControlKnobs();
-
   return (
     <>
       <RcStepper activeStep={0}>

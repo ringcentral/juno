@@ -3,7 +3,6 @@ import React, { ComponentProps } from 'react';
 import { RcBox, RcLink, RcText } from '@ringcentral/juno';
 import {
   notControlInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -30,7 +29,6 @@ export default {
 type BoxProps = ComponentProps<typeof RcBox>;
 
 export const Box: Story<BoxProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return (
     <>
       <Title>

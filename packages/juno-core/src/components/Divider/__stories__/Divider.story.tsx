@@ -3,7 +3,6 @@ import React, { ComponentProps } from 'react';
 import { palette2, RcDivider, styled } from '@ringcentral/juno';
 import {
   paletteChoice,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -41,7 +40,6 @@ const Wrapper = styled.div`
 type DividerProps = ComponentProps<typeof RcDivider>;
 
 export const Divider: Story<DividerProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return (
     <Wrapper
       style={{

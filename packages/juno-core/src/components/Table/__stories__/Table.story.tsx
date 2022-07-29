@@ -18,7 +18,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 import { range } from 'lodash';
@@ -48,8 +47,6 @@ const StyledTableContainer = styled(RcTableContainer)`
 `;
 
 export const Table: Story<TableProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
-
   const [data, setData] = useState(() =>
     [...tableData].sort(sortHandle[defaultSortDirection](defaultSortKey)),
   );
@@ -179,8 +176,6 @@ const TableVirtuosoRow: FC<ItemProps & { context: VlContext }> = ({
 );
 
 export const VirtualizedTable: Story = () => {
-  switchToControlKnobs();
-
   const [data, setData] = useState<DataType[]>(() => vldata.slice(0, 300));
 
   const { sortedKey, switchDirection, direction } = useSortTable(

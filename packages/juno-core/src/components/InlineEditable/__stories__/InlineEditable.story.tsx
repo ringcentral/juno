@@ -16,7 +16,6 @@ import {
   paletteChoice,
   sleep,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -58,8 +57,6 @@ export const InlineEditable: Story<InlineEditableProps> = ({
   disabled: disabledProp,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const [value, setValue] = useState(valueProp || '');
 
   const [disabled, setDisabled] = useState(disabledProp);
@@ -105,8 +102,6 @@ InlineEditable.parameters = {
 };
 
 export const InlineEditableMultiline: Story<InlineEditableProps> = () => {
-  switchToControlKnobs();
-
   const [value, setValue] = useState(`All-in-one business communications
 Message,
 video,
@@ -129,8 +124,6 @@ so your team can do their best work from anywhere.`);
 InlineEditableMultiline.storyName = 'InlineEditable multiline';
 
 export const InlineEditableCustomVariant: Story<InlineEditableProps> = () => {
-  switchToControlKnobs();
-
   const [value, setValue] = useState('');
   const [value2, setValue2] = useState('');
 
@@ -171,8 +164,6 @@ export const InlineEditableCustomVariant: Story<InlineEditableProps> = () => {
 InlineEditableCustomVariant.storyName = 'InlineEditable custom';
 
 export const InlineEditableOnlyEnter: Story<InlineEditableProps> = () => {
-  switchToControlKnobs();
-
   const [value, setValue] = useState('');
 
   return (
@@ -202,8 +193,6 @@ const Wrapper = styled.div`
 `;
 
 export const InlineEditableLoading: Story<InlineEditableProps> = () => {
-  switchToControlKnobs();
-
   const [value, setValue] = useState('show loading style when onChange');
 
   const [isSaving, setSaving] = useState(false);
@@ -232,8 +221,6 @@ export const InlineEditableLoading: Story<InlineEditableProps> = () => {
 InlineEditableLoading.storyName = 'InlineEditable with loading';
 
 export const InlineEditableWithTooltip: Story<InlineEditableProps> = () => {
-  switchToControlKnobs();
-
   const [value, setValue] = useState('So value as tooltip when disabled');
 
   const [disabled, setDisabled] = useState(false);
@@ -277,8 +264,6 @@ InlineEditableWithTooltip.storyName = 'InlineEditable with tooltip';
 
 export const InlineEditableWithoutPlaceholder: Story<InlineEditableProps> =
   () => {
-    switchToControlKnobs();
-
     const [value, setValue] = useState('');
     const [disabled, setDisabled] = useState(false);
 

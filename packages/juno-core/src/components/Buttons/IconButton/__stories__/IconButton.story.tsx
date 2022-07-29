@@ -14,7 +14,6 @@ import {
   notShowInDocTable,
   paletteChoice,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -67,7 +66,6 @@ export default {
 type IconButtonProps = ComponentProps<typeof RcIconButton>;
 
 export const IconButton: Story<IconButtonProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return <RcIconButton {...args} symbol={StarIcon} />;
 };
 
@@ -94,7 +92,6 @@ export const IconButtonExamples: Story<IconButtonProps> = ({
   title,
   ...args
 }) => {
-  switchToControlKnobs();
   return (
     <RcBox display="flex" flexWrap="wrap">
       {(
@@ -140,8 +137,6 @@ export const IconButtonContained: Story<IconButtonProps> = ({
   variant = 'contained',
   ...args
 }) => {
-  switchToControlKnobs();
-
   return (
     <RcBox margin="1em" textAlign="center" key={variant}>
       <Title>{variant}</Title>
@@ -267,7 +262,6 @@ export const IconButtonContained: Story<IconButtonProps> = ({
 };
 
 export const IconButtonWithElevation: Story<IconButtonProps> = () => {
-  switchToControlKnobs();
   return (
     <>
       <RcBox display="flex" flexWrap="wrap">
@@ -297,7 +291,6 @@ export const IconButtonWithElevation: Story<IconButtonProps> = () => {
 IconButtonWithElevation.storyName = 'IconButton with elevation';
 
 export const IconButtonWithRadius: Story<IconButtonProps> = () => {
-  switchToControlKnobs();
   return (
     <RcBox display="flex" flexWrap="wrap">
       {Object.keys(radiusObj).map((radius: any) => (
@@ -311,8 +304,6 @@ export const IconButtonWithRadius: Story<IconButtonProps> = () => {
 };
 
 export const IconButtonWithColorAndSize: Story<IconButtonProps> = () => {
-  switchToControlKnobs();
-
   const colors = [
     'success.b03',
     'success.b04',
@@ -361,7 +352,6 @@ export const IconButtonWithColorAndSize: Story<IconButtonProps> = () => {
 IconButtonWithColorAndSize.storyName = 'IconButton with color and size';
 
 export const IconButtonWithDisabledColor: Story<IconButtonProps> = () => {
-  switchToControlKnobs();
   return (
     <>
       <RcIconButton

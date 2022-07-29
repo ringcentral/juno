@@ -7,7 +7,6 @@ import {
   originChoice,
   originChoiceStringToObj,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -60,8 +59,6 @@ export const Popover: Story<PopoverProps> = ({
   transformOrigin: transformOriginProp,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const anchorOrigin = originChoiceStringToObj(anchorOriginProp as any);
   const transformOrigin = originChoiceStringToObj(transformOriginProp as any);
 

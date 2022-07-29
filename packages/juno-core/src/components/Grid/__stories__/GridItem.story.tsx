@@ -5,7 +5,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -38,8 +37,6 @@ export default {
 type GridProps = ComponentProps<typeof RcGrid>;
 
 export const GridItem: Story<GridProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
-
   const items = [...new Array(6)].map((x, i) => i);
 
   return (

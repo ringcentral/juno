@@ -23,7 +23,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -60,8 +59,6 @@ type ListItemProps = ComponentProps<typeof RcListItem>;
 export const SingleLineListItemExamples: Story<ListItemProps> = ({
   ...args
 }) => {
-  switchToControlKnobs();
-
   const AvatarCase = (
     <>
       <RcListSubheader>Avatar Case:</RcListSubheader>
@@ -250,8 +247,6 @@ SingleLineListItemExamples.storyName = 'Single-Line Item';
 export const MultipleLineListItemExamples: Story<ListItemProps> = ({
   ...args
 }) => {
-  switchToControlKnobs();
-
   const MultipleLineActions = {
     Icon: (
       <RcListItemSecondaryAction>

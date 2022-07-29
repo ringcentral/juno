@@ -5,7 +5,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -22,7 +21,6 @@ export default {
 type ButtonGroupProps = ComponentProps<typeof RcButtonGroup>;
 
 export const ButtonGroup: Story<ButtonGroupProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return (
     <RcButtonGroup {...args}>
       <RcButton>One</RcButton>

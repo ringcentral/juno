@@ -6,7 +6,6 @@ import {
   notShowInDocTable,
   paletteChoice,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -35,7 +34,6 @@ export default {
 type CircularProgressProps = ComponentProps<typeof RcCircularProgress>;
 
 export const CircularProgress: Story<CircularProgressProps> = ({ ...args }) => {
-  switchToControlKnobs();
   return <RcCircularProgress {...args} />;
 };
 
@@ -61,7 +59,6 @@ export const CircularProgressExample: Story<CircularProgressProps> = ({
   color,
   thickness,
 }) => {
-  switchToControlKnobs();
   return (
     <div>
       <Title>Default</Title>

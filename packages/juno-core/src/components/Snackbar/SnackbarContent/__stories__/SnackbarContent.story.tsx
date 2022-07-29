@@ -10,7 +10,6 @@ import { Close } from '@ringcentral/juno-icon';
 import {
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -31,7 +30,6 @@ export default {
 type SnackbarContentProps = ComponentProps<typeof RcSnackbarContent>;
 
 export const SnackbarContent: Story<SnackbarContentProps> = ({ ...args }) => {
-  switchToControlKnobs();
   return <RcSnackbarContent {...args} />;
 };
 

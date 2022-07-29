@@ -22,7 +22,6 @@ import {
   notShowInDocTable,
   paletteChoice,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -60,8 +59,6 @@ export default {
 type ButtonProps = ComponentProps<typeof RcButton>;
 
 export const Button: Story<ButtonProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
-
   return <RcButton {...args}>{children}</RcButton>;
 };
 
@@ -327,8 +324,6 @@ export const ButtonWithCustomRadius: Story<ButtonProps> = () => {
 };
 
 export const ButtonWithKeepElevation: Story<ButtonProps> = () => {
-  switchToControlKnobs();
-
   return (
     <RcBox bgcolor="neutral.elevation" display="inline-block" padding="1em">
       <RcButton keepElevation>Keep</RcButton>
@@ -337,8 +332,6 @@ export const ButtonWithKeepElevation: Story<ButtonProps> = () => {
 };
 
 export const ButtonWithIcon: Story<ButtonProps> = () => {
-  switchToControlKnobs();
-
   return (
     <Wrapper>
       <li>
@@ -365,8 +358,6 @@ export const ButtonWithIcon: Story<ButtonProps> = () => {
 };
 
 export const ButtonWithCustomColor: Story<ButtonProps> = () => {
-  switchToControlKnobs();
-
   return (
     <Wrapper>
       <li>

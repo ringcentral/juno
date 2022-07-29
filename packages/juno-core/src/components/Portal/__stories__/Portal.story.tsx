@@ -5,7 +5,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -22,7 +21,6 @@ export default {
 type PortalProps = ComponentProps<typeof RcPortal>;
 
 export const Portal: Story<PortalProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return (
     <RcPortal {...args}>
       <RcBox position="absolute" top="100px" left="100px">

@@ -5,7 +5,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -22,7 +21,6 @@ export default {
 type AppBarProps = ComponentProps<typeof RcAppBar>;
 
 export const AppBar: Story<AppBarProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return <RcAppBar {...args}>{children}</RcAppBar>;
 };
 

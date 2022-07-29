@@ -6,7 +6,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -23,7 +22,6 @@ export default {
 type TabProps = ComponentProps<typeof RcTab>;
 
 export const Tab: Story<TabProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return (
     <>
       <RcTab {...args} label="Just Tab Component" />

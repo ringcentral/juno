@@ -5,7 +5,6 @@ import { Add, AddBorder } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
   paletteChoice,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -30,7 +29,6 @@ export default {
 type RatingProps = ComponentProps<typeof RcRating>;
 
 export const Rating: Story<RatingProps> = ({ icon, emptyIcon, ...args }) => {
-  switchToControlKnobs();
   return <RcRating {...args} />;
 };
 
@@ -78,8 +76,6 @@ export const CustomRatingRender: Story<RatingProps> = ({
   emptyIcon,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const [value, setValue] = useState<number | null>(2);
 
   return (

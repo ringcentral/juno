@@ -10,7 +10,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -34,7 +33,6 @@ export default {
 type StepButtonProps = ComponentProps<typeof RcStepButton>;
 
 export const StepButton: Story<StepButtonProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return (
     <RcStepper>
       <RcStep>

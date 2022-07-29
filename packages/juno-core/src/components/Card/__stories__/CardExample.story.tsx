@@ -32,7 +32,6 @@ import {
   MoreVert,
   Pin,
 } from '@ringcentral/juno-icon';
-import { switchToControlKnobs } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
 export default {
@@ -63,8 +62,6 @@ const CardBody = styled(RcTypography)`
 `;
 
 export const SimpleCardExample: Story<{}> = () => {
-  switchToControlKnobs();
-
   const onClick = () =>
     window.open('https://en.wikipedia.org/wiki/Boat', '_blank');
 
@@ -247,8 +244,6 @@ const CardHoverMoreButton: FunctionComponent<CardHoverMoreButtonProps> = (
 };
 
 export const MediaCardExample: Story<{}> = () => {
-  switchToControlKnobs();
-
   const onClick = () =>
     window.open('https://en.wikipedia.org/wiki/Boat', '_blank');
 
@@ -282,8 +277,6 @@ const CardIcon = styled(RcIcon)`
 `;
 
 export const IconCardExample: Story<{}> = () => {
-  switchToControlKnobs();
-
   const onClick = () =>
     window.open('https://en.wikipedia.org/wiki/Boat', '_blank');
 

@@ -14,7 +14,6 @@ import {
   notShowInDocTable,
   paletteChoice,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -59,7 +58,6 @@ export const Badge: Story<BadgeProps> = ({
   anchorOrigin,
   ...args
 }) => {
-  switchToControlKnobs();
   const [count, setCount] = useState(0);
   return (
     <>
@@ -115,7 +113,6 @@ export const BadgeExamples: Story<BadgeProps> = ({
   anchorOrigin,
   ...args
 }) => {
-  switchToControlKnobs();
   return (
     <RcGrid container>
       <RcGrid item xs>

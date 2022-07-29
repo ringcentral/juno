@@ -11,7 +11,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -33,8 +32,6 @@ export const VirtualizedMenuList: Story<Partial<MenuProps>> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   return (
     <RcVirtualizedMenuList {...args}>
       {menus.map((x) => (

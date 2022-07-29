@@ -32,7 +32,6 @@ import {
   notShowInDocTable,
   paletteChoice,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -61,8 +60,6 @@ type TooltipProps = ComponentProps<typeof RcTooltip>;
 const isTestEnv = (window as any).TEST_ENV;
 
 export const Tooltip: Story<TooltipProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
-
   return (
     <>
       {!isTestEnv && (
@@ -162,7 +159,6 @@ export const TooltipSizes: Story<TooltipProps> = () => {
 };
 
 export const TooltipWithDisabledChildren: Story<TooltipProps> = () => {
-  switchToControlKnobs();
   const [disabled, setDisabled] = useState(false);
   const ref = useRef(null);
 
@@ -290,8 +286,6 @@ export const TooltipWithForceHide: Story<TooltipProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const [force, setForce] = useState(false);
 
   const [openState, setOpenState] = useState(false);
@@ -372,8 +366,6 @@ export const TooltipWithCustomColor: Story<TooltipProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   return (
     <>
       <RcTooltip {...args} color="interactive.b02" textColor="neutral.f01">
@@ -400,8 +392,6 @@ export const TooltipWithInteractiveLink: Story<TooltipProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   return (
     <RcTooltip
       {...args}

@@ -12,7 +12,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -40,8 +39,6 @@ export const IconButtonGroup: Story<IconButtonGroupProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   return (
     <Wrapper>
       <RcIconButtonGroup {...args} className="group">
@@ -78,7 +75,6 @@ IconButtonGroup.parameters = {
 export const IconButtonGroupExamples: Story<IconButtonGroupProps> = ({
   ...args
 }) => {
-  switchToControlKnobs();
   return (
     <Wrapper style={{ textAlign: 'center' }}>
       <Title>plain</Title>

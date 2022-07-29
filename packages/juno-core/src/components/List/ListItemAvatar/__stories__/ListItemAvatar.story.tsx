@@ -10,7 +10,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -32,7 +31,6 @@ export const ListItemAvatar: Story<ListItemAvatarProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
   return (
     <RcListItem singleLine>
       <RcListItemAvatar {...args}>

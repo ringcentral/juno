@@ -3,7 +3,6 @@ import React, { ComponentProps } from 'react';
 import { palette2, RcPresence, styled } from '@ringcentral/juno';
 import {
   paletteChoice,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -28,7 +27,6 @@ export default {
 type PresenceProps = ComponentProps<typeof RcPresence>;
 
 export const Presence: Story<PresenceProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return <RcPresence {...args}>{children}</RcPresence>;
 };
 

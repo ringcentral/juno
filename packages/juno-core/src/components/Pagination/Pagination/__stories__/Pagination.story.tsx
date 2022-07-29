@@ -10,7 +10,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -27,7 +26,6 @@ export default {
 type PaginationProps = ComponentProps<typeof RcPagination>;
 
 export const Pagination: Story<PaginationProps> = (args) => {
-  switchToControlKnobs();
   return <RcPagination {...args} />;
 };
 
@@ -59,7 +57,6 @@ Pagination.parameters = {
 };
 
 export const PaginationCustomItem: Story<PaginationProps> = (args) => {
-  switchToControlKnobs();
   const [bg, setBg] = useState('red');
   return (
     <>

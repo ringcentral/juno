@@ -6,7 +6,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -23,7 +22,6 @@ export default {
 type DialDeleteProps = ComponentProps<typeof RcDialDelete>;
 
 export const DialDelete: Story<DialDeleteProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return (
     <RcDialDelete
       {...args}

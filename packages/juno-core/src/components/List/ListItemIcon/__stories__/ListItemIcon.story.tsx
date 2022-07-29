@@ -12,7 +12,6 @@ import {
   notShowInDocTable,
   paletteChoice,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -38,7 +37,6 @@ export const ListItemIcon: Story<ListItemIconProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
   return (
     <RcListItem singleLine>
       <RcListItemIcon {...args}>

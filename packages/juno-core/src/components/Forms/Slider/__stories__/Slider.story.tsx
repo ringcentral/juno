@@ -7,7 +7,6 @@ import {
   notShowInDocTable,
   paletteChoice,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -45,7 +44,6 @@ export default {
 type SliderProps = ComponentProps<typeof RcSlider>;
 
 export const Slider: Story<SliderProps> = ({ value: valueProp, ...args }) => {
-  switchToControlKnobs();
   const [value, setValue] = useState<number | number[]>(valueProp || 0);
 
   return <RcSlider value={value} onChange={(e, v) => setValue(v)} {...args} />;
@@ -79,7 +77,6 @@ export const SliderExamples: Story<SliderProps> = ({
   color,
   ...args
 }) => {
-  switchToControlKnobs();
   const [value, setValue] = useState<number | number[]>(valueProp || 0);
   const [value2, setValue2] = useState<number | number[]>(valueProp || 0);
   const [value3, setValue3] = useState<number | number[]>(valueProp || 0);

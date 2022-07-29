@@ -14,7 +14,6 @@ import {
   notShowInDocTable,
   paletteChoice,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -46,7 +45,6 @@ export default {
 type RadioProps = ComponentProps<typeof RcRadio>;
 
 export const Radio: Story<RadioProps> = ({ ...args }) => {
-  switchToControlKnobs();
   return <RcRadio {...args} />;
 };
 
@@ -77,8 +75,6 @@ Radio.parameters = {
 };
 
 export const RadioExamples: Story<RadioProps> = () => {
-  switchToControlKnobs();
-
   return (
     <>
       <RcTypography

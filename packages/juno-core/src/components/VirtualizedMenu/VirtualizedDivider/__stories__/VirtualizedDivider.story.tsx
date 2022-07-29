@@ -12,7 +12,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -35,7 +34,6 @@ export const VirtualizedDivider: Story<VirtualizedDividerProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
   return (
     <>
       <Title variant="body1">

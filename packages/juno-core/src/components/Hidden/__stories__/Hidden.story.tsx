@@ -5,7 +5,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -22,8 +21,6 @@ export default {
 type HiddenProps = ComponentProps<typeof RcHidden>;
 
 export const Hidden: Story<HiddenProps> = ({ ...args }) => {
-  switchToControlKnobs();
-
   const theme = useTheme();
 
   return (

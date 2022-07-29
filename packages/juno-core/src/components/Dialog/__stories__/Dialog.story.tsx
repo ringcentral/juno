@@ -27,7 +27,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -122,8 +121,6 @@ export const DialogExampleComponent: FunctionComponent<DialogExampleComponentPro
   };
 
 export const Dialog: Story<DialogProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
-
   return <DialogExampleComponent {...args} />;
 };
 
@@ -228,8 +225,6 @@ export const DialogWithResponsive: Story<DialogProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   return (
     <DialogWithResponsiveExample {...args}>
       {children}
@@ -257,8 +252,6 @@ export const DialogChildrenSizes: Story<DialogProps> = ({
   childrenSize: childrenSizeProp,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const [dividers, setDividers] = useState(false);
   const [openState, setOpenState] = useState(false);
   const [mode, setMode] = useState('dialog');

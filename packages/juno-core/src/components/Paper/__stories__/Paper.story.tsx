@@ -5,7 +5,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -22,7 +21,6 @@ export default {
 type PaperProps = ComponentProps<typeof RcPaper>;
 
 export const Paper: Story<PaperProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return (
     <RcPaper {...args}>
       <h3>This is a sheet of paper.</h3>

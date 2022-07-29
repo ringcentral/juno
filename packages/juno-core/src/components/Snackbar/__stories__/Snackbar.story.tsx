@@ -6,7 +6,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -42,7 +41,6 @@ export const Snackbar: Story<SnackbarProps> = ({
   open: openProp,
   ...args
 }) => {
-  switchToControlKnobs();
   const [open, setOpen] = useState(openProp);
 
   const toggleShow = () => {

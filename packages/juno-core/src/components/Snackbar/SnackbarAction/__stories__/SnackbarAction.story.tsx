@@ -5,7 +5,6 @@ import { Add, Close } from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -27,7 +26,6 @@ export const SnackbarAction: Story<SnackbarActionProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
   return (
     <RcSnackbarContent
       type="info"

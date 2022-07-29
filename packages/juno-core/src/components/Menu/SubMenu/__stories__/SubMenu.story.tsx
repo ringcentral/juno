@@ -13,7 +13,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -31,7 +30,6 @@ export default {
 type SubMenuProps = ComponentProps<typeof RcSubMenu>;
 
 export const SubMenuWithMenuList: Story<SubMenuProps> = ({ ...args }) => {
-  switchToControlKnobs();
   return (
     <RcMenuList
       style={{ width: '180px' }}
@@ -116,8 +114,6 @@ export const SubMenuExampleComponent: FunctionComponent<SubMenuExampleComponentP
   };
 
 export const SubMenuWithMenu: Story<SubMenuProps> = ({ ...args }) => {
-  switchToControlKnobs();
-
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = (event: any) => {

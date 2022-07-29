@@ -1,8 +1,7 @@
 // import { Meta, Story } from '@storybook/react';
 // import React, { ComponentProps } from 'react';
 
-// import { switchToControlKnobs } from '@ringcentral/juno-storybook';
-// import { RcFormHelperText } from '../FormHelperText';
+// // import { RcFormHelperText } from '../FormHelperText';
 
 // export default {
 //   title: 'FormHelperText',
@@ -15,8 +14,7 @@
 //   children,
 //   ...args
 // }) => {
-//   switchToControlKnobs();
-//   return <RcFormHelperText {...args}>{children}</RcFormHelperText>;
+//   //   return <RcFormHelperText {...args}>{children}</RcFormHelperText>;
 // };
 
 // FormHelperText.args = {};

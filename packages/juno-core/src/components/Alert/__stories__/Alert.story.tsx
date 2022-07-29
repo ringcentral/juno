@@ -3,7 +3,6 @@ import React, { ComponentProps } from 'react';
 import { RcAlert, RcTypography } from '@ringcentral/juno';
 import {
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -25,7 +24,6 @@ export default {
 type AlertProps = ComponentProps<typeof RcAlert>;
 
 export const Alert: Story<AlertProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return <RcAlert {...args}>{children}</RcAlert>;
 };
 
@@ -51,7 +49,6 @@ Alert.parameters = {
 };
 
 export const AlertExamples: Story<AlertProps> = () => {
-  switchToControlKnobs();
   return (
     <>
       <RcTypography color="neutral.f06" variant="headline1">

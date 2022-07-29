@@ -24,7 +24,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 import { RcDrawer, RcDrawerProps } from '../../Drawer';
@@ -95,8 +94,6 @@ const Dialog: FC<DialogProps> = ({ onClose, n = 0, open }) => {
 };
 
 export const PortalHostDialogExample: Story<PortalHostProps> = () => {
-  switchToControlKnobs();
-
   return (
     <>
       <RcPortalHost manager={portalManager} />
@@ -129,8 +126,6 @@ const Snackbar: FC<SnackbarProps> = ({ onClose, children, ...rest }) => {
 };
 
 export const PortalHostSnackbarExample: Story<PortalHostProps> = () => {
-  switchToControlKnobs();
-
   const [open, setOpen] = useState(false);
   const snackbarRef = useRef<PortalController<SnackbarProps, undefined>>();
 
@@ -229,8 +224,6 @@ const Drawer: FC<Omit<RcDrawerProps, 'onClose'> & ControlledProps> = ({
 };
 
 export const PortalHostDrawerExample: Story<PortalHostProps> = () => {
-  switchToControlKnobs();
-
   return (
     <>
       <RcPortalHost manager={drawerManager} />
@@ -250,8 +243,6 @@ PortalHostDrawerExample.storyName = 'PortalHost Drawer Example';
 const portalManager3 = new PortalManager();
 
 export const PortalHostUpdatePropsExample: Story<PortalHostProps> = () => {
-  switchToControlKnobs();
-
   const snackbarRef = useRef<PortalController<SnackbarProps, undefined>>();
 
   const [value, setValue] = useState('Example');
@@ -299,8 +290,6 @@ class TagPortalManager extends PortalManager<{ tag: string }> {
 const tagPortalManager = new TagPortalManager();
 
 export const PortalHostWithAdditionExample: Story<PortalHostProps> = () => {
-  switchToControlKnobs();
-
   const [open, setOpen] = useState(false);
 
   const toggle = () => {
@@ -382,8 +371,6 @@ const InnerDialogPortal = (props: ControlledProps) => {
 const innerDialogPortalManager = new PortalManager();
 
 export const PortalHostWithInnerDialog: Story<PortalHostProps> = () => {
-  switchToControlKnobs();
-
   const openDialog = () => {
     innerDialogPortalManager.open(InnerDialogPortal);
   };

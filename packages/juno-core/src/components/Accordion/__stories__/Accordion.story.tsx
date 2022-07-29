@@ -10,7 +10,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -32,7 +31,6 @@ export default {
 type AccordionProps = ComponentProps<typeof RcAccordion>;
 
 export const Accordion: Story<RcAccordionProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
   return (
     <RcAccordion {...args}>
       <RcAccordionSummary expandIcon>Expansion Panel 1</RcAccordionSummary>
@@ -68,8 +66,6 @@ Accordion.parameters = {
 };
 
 export const AccordionExamples: Story<RcAccordionProps> = () => {
-  switchToControlKnobs();
-
   const [expanded, setExpanded] = React.useState<string | false>(false);
   const handleChange =
     (panel: string) => (event: React.ChangeEvent<{}>, isExpanded: boolean) => {

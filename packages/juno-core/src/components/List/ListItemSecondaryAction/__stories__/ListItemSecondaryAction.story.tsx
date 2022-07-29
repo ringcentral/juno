@@ -11,7 +11,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -33,7 +32,6 @@ export const ListItemSecondaryAction: Story<ListItemSecondaryActionProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
   return (
     <RcListItem singleLine>
       <RcListItemText primary="ListItem Content" />

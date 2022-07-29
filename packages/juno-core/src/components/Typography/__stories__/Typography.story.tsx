@@ -3,7 +3,6 @@ import React, { ComponentProps, useEffect, useRef } from 'react';
 import { palette2, RcTypography, styled } from '@ringcentral/juno';
 import {
   notShowInDocTable,
-  switchToControlKnobs,
   textPaletteChoice,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -40,7 +39,6 @@ export const Typography: Story<TypographyProps> = ({
   variant,
   ...args
 }) => {
-  switchToControlKnobs();
   const ref = useRef();
 
   useEffect(() => {

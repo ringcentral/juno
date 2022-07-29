@@ -5,18 +5,27 @@ import {
   RcDragDropContext,
   RcDragDropContextProps,
   RcDraggable,
+  RcDraggableProps,
   RcDroppable,
   RcList,
   RcListItem,
   RcListSubheader,
 } from '@ringcentral/juno';
-import { select } from '@storybook/addon-knobs';
+
 import { Meta, Story } from '@storybook/react';
 
 import { DataType, GroupType, initialData, ItemType } from './DnDExampleData';
 
 export default {
   title: '🚀 Cleanup Components/DnD/Dnd Examples/Multiple list',
+  argTypes: {
+    direction: {
+      options: ['vertical', 'horizontal'],
+      control: {
+        type: 'select',
+      },
+    },
+  },
 } as Meta;
 
 const Item: FunctionComponent<{
@@ -102,19 +111,12 @@ const Groups: FunctionComponent<DataType> = (props) => {
   );
 };
 
-type DnDListProps = {};
+type DnDListProps = {
+  direction: RcDraggableProps['directionOnly'];
+};
 
-export const DnDList: Story<DnDListProps> = () => {
+export const DnDList: Story<DnDListProps> = ({ direction }) => {
   const [data, setData] = useState(initialData);
-
-  const direction = select(
-    'direction',
-    {
-      vertical: 'vertical',
-      horizontal: 'horizontal',
-    },
-    'vertical',
-  );
 
   const handleDragEnd: RcDragDropContextProps['onDragEnd'] = (result) => {
     const { destination, source, draggableId, type } = result;
@@ -219,5 +221,7 @@ export const DnDList: Story<DnDListProps> = () => {
   );
 };
 
-DnDList.args = {};
+DnDList.args = {
+  direction: 'vertical',
+};
 DnDList.storyName = 'Multiple DnD List';

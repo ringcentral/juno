@@ -12,7 +12,6 @@ import {
 import {
   notControlInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -44,8 +43,6 @@ export const TimePicker: Story<TimePickerProps> = ({
   value: valueProp,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const [value, setValue] = useState<number | Date | null>(valueProp);
 
   const handleChange = (time: number) => {
@@ -492,8 +489,6 @@ export const TimePickerWithDefaultPickerValue: Story<TimePickerProps> = ({
   value: valueProp,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const [value, setValue] = useState<number | Date | null>(valueProp);
 
   const handleChange = (time: number) => {

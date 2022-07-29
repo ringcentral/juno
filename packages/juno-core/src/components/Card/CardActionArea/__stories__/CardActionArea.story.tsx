@@ -10,7 +10,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -30,8 +29,6 @@ export const CardActionArea: Story<CardActionAreaProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const handleCardActionAreaClick = (e: React.MouseEvent<HTMLButtonElement>) =>
     console.log('RcCardActionArea onClick', e);
 

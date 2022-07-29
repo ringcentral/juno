@@ -10,7 +10,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -38,8 +37,6 @@ export const BorderLessTextField: Story<BorderLessTextFieldProps> = ({
   value: valueArg,
   ...args
 }) => {
-  switchToControlKnobs();
-
   const ref = useRef();
   const inputRef = useRef();
 

@@ -12,7 +12,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -32,8 +31,6 @@ export const CardHoverActions: Story<RcCardHoverActionsProps> = ({
   children,
   ...args
 }) => {
-  switchToControlKnobs();
-
   return (
     <RcCard style={{ width: 300 }} tabIndex={0}>
       <RcCardHoverActions {...args}>

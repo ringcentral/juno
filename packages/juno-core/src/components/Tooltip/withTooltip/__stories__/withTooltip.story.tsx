@@ -1,39 +1,42 @@
 import React, { forwardRef } from 'react';
 
 import { RcTooltipProps, withTooltip } from '@ringcentral/juno';
-import { boolean, select, text } from '@storybook/addon-knobs';
+import { Meta, Story } from '@storybook/react';
 
 export default {
   title: '🚀 Cleanup Components/Tooltip/withTooltip',
-};
-
-function getKnobs() {
-  const title = text('title', 'button');
-  const useRcTooltip = boolean('useRcTooltip', true);
-  const placement = select<RcTooltipProps['placement']>(
-    'placement',
-    {
-      top: 'top',
-      'top-start': 'top-start',
-      'top-end': 'top-end',
-      right: 'right',
-      'right-start': 'right-start',
-      'right-end': 'right-end',
-      bottom: 'bottom',
-      'bottom-start': 'bottom-start',
-      'bottom-end': 'bottom-end',
-      left: 'left',
-      'left-start': 'left-start',
-      'left-end': 'left-end',
+  argTypes: {
+    useRcTooltip: {
+      control: {
+        type: 'boolean',
+      },
     },
-    'bottom',
-  );
-  return {
-    title,
-    useRcTooltip,
-    placement,
-  };
-}
+    placement: {
+      options: [
+        'top',
+        'top-start',
+        'top-end',
+        'right',
+        'right-start',
+        'right-end',
+        'bottom',
+        'bottom-start',
+        'bottom-end',
+        'left',
+        'left-start',
+        'left-end',
+      ],
+      control: {
+        type: 'select',
+      },
+    },
+    title: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
+} as Meta;
 
 type CustomComponentProps = { content?: string };
 const CustomComponent = forwardRef<HTMLButtonElement, CustomComponentProps>(
@@ -47,10 +50,16 @@ const CustomComponent = forwardRef<HTMLButtonElement, CustomComponentProps>(
 );
 
 const WithTooltipComponent = withTooltip(CustomComponent);
+type WithTooltipProps = {
+  placement: RcTooltipProps['placement'];
+  title: string;
+  useRcTooltip: boolean;
+};
 
-export const _withTooltip = () => {
-  const { placement, ...rest } = getKnobs();
-
+export const _withTooltip: Story<WithTooltipProps> = ({
+  placement,
+  ...rest
+}) => {
   return (
     <WithTooltipComponent
       content="Custom Button"
@@ -60,6 +69,12 @@ export const _withTooltip = () => {
       }}
     />
   );
+};
+
+_withTooltip.args = {
+  title: 'button',
+  useRcTooltip: true,
+  placement: 'bottom',
 };
 
 _withTooltip.storyName = 'withTooltip';

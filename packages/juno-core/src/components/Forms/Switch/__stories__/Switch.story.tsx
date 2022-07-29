@@ -13,7 +13,6 @@ import {
   notShowInDocTable,
   paletteChoice,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -50,7 +49,6 @@ export default {
 type SwitchProps = ComponentProps<typeof RcSwitch>;
 
 export const Switch: Story<SwitchProps> = ({ ...args }) => {
-  switchToControlKnobs();
   return <RcSwitch {...args} />;
 };
 
@@ -78,8 +76,6 @@ Switch.parameters = {
 };
 
 export const SwitchExamples: Story<SwitchProps> = () => {
-  switchToControlKnobs();
-
   return (
     <div>
       <RcTypography

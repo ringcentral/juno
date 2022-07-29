@@ -60,7 +60,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -477,14 +476,10 @@ const SimpleDialer: FunctionComponent<DialerProps> = ({ ...args }) => {
 };
 
 export const Dialer: Story<DialerProps> = ({ ...args }) => {
-  switchToControlKnobs();
-
   return <SimpleDialer {...args} />;
 };
 
 export const DialerExamples: Story<DialerProps> = ({ ...args }) => {
-  switchToControlKnobs();
-
   return <FullDialer {...args} />;
 };
 

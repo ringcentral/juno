@@ -5,7 +5,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -22,8 +21,6 @@ export default {
 type PopperProps = Partial<ComponentProps<typeof RcPopper>>;
 
 export const Popper: Story<PopperProps> = ({ children, ...args }) => {
-  switchToControlKnobs();
-
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event: any) => {

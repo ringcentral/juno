@@ -5,7 +5,6 @@ import {
   notControlInDocTable,
   notShowInDocTable,
   sortInDocTable,
-  switchToControlKnobs,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
@@ -22,7 +21,6 @@ export default {
 type GrowProps = ComponentProps<typeof RcGrow>;
 
 export const Grow: Story<GrowProps> = ({ children, in: openProp, ...args }) => {
-  switchToControlKnobs();
   const [open, setOpen] = useState(!!openProp);
 
   return (

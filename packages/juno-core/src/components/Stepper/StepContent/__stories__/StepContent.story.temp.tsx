@@ -5,7 +5,6 @@
 //   notControlInDocTable,
 //   notShowInDocTable,
 //   sortInDocTable,
-//   switchToControlKnobs,
 // } from '@ringcentral/juno-storybook';
 // import { RcStep } from '../../Step';
 // import { RcStepLabel } from '../../StepLabel';
@@ -25,8 +24,7 @@
 // type StepContentProps = ComponentProps<typeof RcStepContent>;
 
 // export const StepContent: Story<StepContentProps> = ({ children, ...args }) => {
-//   switchToControlKnobs();
-//   return (
+//   //   return (
 //     <RcStepper activeStep={0}>
 //       <RcStep>
 //         <RcStepLabel>Select campaign settings</RcStepLabel>
