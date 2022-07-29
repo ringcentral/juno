@@ -9,6 +9,7 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  AddTextLog: 'Add-text-log',
   SelectMore: 'Select-more',
   FacebookShareNumberIcon: 'facebook-share-number-icon',
   JumpTo: 'Jump-to',
