@@ -21,7 +21,6 @@ export * from './Forms';
 export * from './Grid';
 export * from './Hidden';
 export * from './Icon';
-export * from './ImageView';
 export * from './InlineEditable';
 export * from './Link';
 export * from './List';
