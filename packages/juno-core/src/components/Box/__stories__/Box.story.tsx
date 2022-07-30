@@ -1,10 +1,7 @@
 import React, { ComponentProps } from 'react';
 
 import { RcBox, RcLink, RcText } from '@ringcentral/juno';
-import {
-  notControlInDocTable,
-  Title,
-} from '@ringcentral/juno-storybook';
+import { notControlInDocTable, Title } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
 export default {

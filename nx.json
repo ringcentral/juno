@@ -1,0 +1,49 @@
+{
+  "extends": "@nrwl/workspace/presets/npm.json",
+  "npmScope": "ringcentral",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "release",
+          "build",
+          "build:test",
+          "test",
+          "lint",
+          "package",
+          "prepare"
+        ],
+        "accessToken": "OTkwOWJjNjgtMjNmZC00MTY2LWJmYzEtYTZmMGVhMWJkNGRlfHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ],
+    "prepare": [
+      {
+        "target": "prepare",
+        "projects": "dependencies"
+      }
+    ],
+    "package": [
+      {
+        "target": "package",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "pluginsConfig": {
+    "@nrwl/js": {
+      "analyzeSourceFiles": false
+    }
+  }
+}

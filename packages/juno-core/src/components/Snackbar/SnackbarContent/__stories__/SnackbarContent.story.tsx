@@ -7,10 +7,7 @@ import {
   styled,
 } from '@ringcentral/juno';
 import { Close } from '@ringcentral/juno-icon';
-import {
-  notShowInDocTable,
-  sortInDocTable,
-} from '@ringcentral/juno-storybook';
+import { notShowInDocTable, sortInDocTable } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
 export default {

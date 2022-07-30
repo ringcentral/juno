@@ -14,12 +14,12 @@
   "scripts": {
     "release": "rm -rf dist && yarn build && node ../../scripts/build/build-npm-package.js ./npm-package-options.js",
     "build": "concurrently \"tsc --project tsconfig.prod.json\" \"tsc --project tsconfig.prod.es6.json\"",
-    "build:lib:test": "tsc --project tsconfig.prod.json --noEmit",
+    "build:test": "tsc --project tsconfig.prod.json --noEmit",
     "clean": "rm -rf node_modules",
     "clean-cache": "rm -rf node_modules/.cache",
     "clean-dist": "rm -rf dist",
     "update-theme": "concurrently \"ts-node ./scripts/getOverrides\" \"ts-node ./scripts/createPaletteType\"",
-    "lint:ts": "eslint './src/**/*.{ts,tsx,json}' --quiet",
+    "lint": "eslint './src/**/*.{ts,tsx,json}' --quiet",
     "prepublish-npm": "yarn release",
     "publish-npm": "cd dist && npm publish"
   },

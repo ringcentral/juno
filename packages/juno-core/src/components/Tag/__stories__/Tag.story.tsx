@@ -1,10 +1,7 @@
 import React, { ComponentProps } from 'react';
 
 import { RcTag } from '@ringcentral/juno';
-import {
-  notShowInDocTable,
-  paletteChoice,
-} from '@ringcentral/juno-storybook';
+import { notShowInDocTable, paletteChoice } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
 export default {

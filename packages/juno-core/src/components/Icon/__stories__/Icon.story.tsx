@@ -10,10 +10,7 @@ import {
   useThemeSwitcher,
 } from '@ringcentral/juno';
 import { Add, DefaultFile, Phone } from '@ringcentral/juno-icon';
-import {
-  notShowInDocTable,
-  paletteChoice,
-} from '@ringcentral/juno-storybook';
+import { notShowInDocTable, paletteChoice } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
 export default {

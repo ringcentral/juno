@@ -37,7 +37,6 @@ import {
   notShowInDocTable,
   paletteChoice,
   sortInDocTable,
-  switchToControlKnobs,
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
@@ -624,8 +623,6 @@ export const DownshiftGroupBy: Story<DownshiftProps> = () => {
 };
 
 export const DownshiftDisabled: Story<DownshiftProps> = ({ ...args }) => {
-  switchToControlKnobs();
-
   const ref = useRef(null);
   const inputRef = useRef(null);
   const actionRef = useRef<RcDownshiftRef>(null);
@@ -734,8 +731,6 @@ DownshiftDisabled.args = {
 };
 
 export const DownshiftWithDynamic: Story<DownshiftProps> = ({ ...args }) => {
-  switchToControlKnobs();
-
   const [value, setValue] = useState<RcDownshiftSelectedItem[]>([]);
 
   return (
@@ -784,8 +779,6 @@ DownshiftWithDynamic.args = {
 };
 
 export const DownshiftWithAvatar: Story<DownshiftProps> = ({ ...args }) => {
-  switchToControlKnobs();
-
   const [value, setValue] = useState<RcDownshiftSelectedItem[]>([]);
 
   return (
@@ -865,8 +858,6 @@ const CustomTextField = styled(RcTextField)`
 export const DownshiftWithCustomInput: Story<DownshiftProps> = ({
   ...args
 }) => {
-  switchToControlKnobs();
-
   const [value, setValue] = useState<RcDownshiftSelectedItem[]>([]);
 
   return (
@@ -906,8 +897,6 @@ DownshiftWithCustomInput.args = {
 };
 
 export const DownshiftAutocomplete: Story<DownshiftProps> = ({ ...args }) => {
-  switchToControlKnobs();
-
   const [inputValue, setInputValue] = useState('');
   const [value, setValue] = useState<RcDownshiftSelectedItem[]>([options[0]]);
 

@@ -183,7 +183,7 @@ ${contentValue}
 
     fs.rmSync(JunoTmpIconPath, { recursive: true });
 
-    handleProcessResult(spawnSync('yarn', ['lint:ts']));
+    handleProcessResult(spawnSync('yarn', ['lint']));
 
     console.log('[Juno Icon]: updated');
   })

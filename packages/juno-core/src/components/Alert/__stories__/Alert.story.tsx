@@ -1,9 +1,7 @@
 import React, { ComponentProps } from 'react';
 
 import { RcAlert, RcTypography } from '@ringcentral/juno';
-import {
-  sortInDocTable,
-} from '@ringcentral/juno-storybook';
+import { sortInDocTable } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
 export default {

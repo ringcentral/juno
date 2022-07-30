@@ -24,5 +24,14 @@ module.exports = {
       },
     },
   },
-  reporters: ['default', 'jest-html-reporters'],
+  reporters: [
+    'default',
+    [
+      'jest-html-reporters',
+      {
+        publicPath: '<rootDir>/jest-html-report',
+        filename: 'jest-html-report.html',
+      },
+    ],
+  ],
 };

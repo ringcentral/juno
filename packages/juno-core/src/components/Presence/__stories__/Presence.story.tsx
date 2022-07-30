@@ -1,9 +1,7 @@
 import React, { ComponentProps } from 'react';
 
 import { palette2, RcPresence, styled } from '@ringcentral/juno';
-import {
-  paletteChoice,
-} from '@ringcentral/juno-storybook';
+import { paletteChoice } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 
 import { RcPresenceColors } from '../utils';

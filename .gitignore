@@ -19,8 +19,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # test results
-jest_html_reporters.html
-.jest-test-results.json
+jest-html-report
 
 # build
 storybook-static/
