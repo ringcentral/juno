@@ -1,8 +1,19 @@
+const path = require('path');
+const storiesRoot = path.join(__dirname, '..');
+
+const stories = [path.join(storiesRoot, './packages/**/*.story.tsx')];
+
+// When in test mode, we not need snapshot with doc page
+// TODO: when need snapshot with mdx should find way to fix that
+if (process.env['NODE_ENV'] !== 'test') {
+  stories.push(path.join(storiesRoot, './packages/**/*.story.mdx'));
+}
+
 module.exports = {
   core: {
     builder: 'webpack5',
   },
-  stories: ['../packages/**/*.story.tsx', '../packages/**/*.story.mdx'],
+  stories,
   // TODO: wait for theme switch complete
   // features: {
   //   storyStoreV7: true,

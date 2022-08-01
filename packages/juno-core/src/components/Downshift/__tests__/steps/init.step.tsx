@@ -1,12 +1,11 @@
 import React, { useRef, useState } from 'react';
 
-import { act } from 'react-dom/test-utils';
-
 import {
   fireEvent,
   render,
   RenderResult,
   screen,
+  act,
   within,
 } from '@ringcentral/juno-test';
 import userEvent from '@testing-library/user-event';

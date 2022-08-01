@@ -1,8 +1,6 @@
 import { useState } from 'react';
 
-import { act } from 'react-dom/test-utils';
-
-import { renderHook } from '@testing-library/react-hooks';
+import { act, renderHook } from '@testing-library/react-hooks';
 
 import { useOnReRender } from '../useOnReRender';
 
