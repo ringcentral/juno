@@ -3,7 +3,7 @@
   "npmScope": "ringcentral",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/nx-cloud",
+      "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
         "cacheableOperations": [
           "release",
@@ -11,6 +11,7 @@
           "build:test",
           "test",
           "lint",
+          "lint:ts",
           "package",
           "prepare"
         ],
