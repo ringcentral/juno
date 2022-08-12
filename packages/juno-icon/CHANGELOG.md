@@ -1,4 +1,11 @@
 
+## [1.13.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.12.0...juno-icon-v1.13.0) (2022-08-12)
+
+
+### Features
+
+* **update-icon-220812:** [Icon] add icon Country, RbnOff, RbnOn ([563f204](https://github.com/ringcentral/juno/commit/563f20427e54eea1f1de6140b4101e7f55d1d77d))
+
 ## [1.12.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.11.0...juno-icon-v1.12.0) (2022-07-29)
 
 
