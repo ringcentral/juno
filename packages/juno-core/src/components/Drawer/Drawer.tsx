@@ -15,6 +15,7 @@ import { DrawerStyle } from './styles';
 import { RcDrawerClasses } from './utils';
 import { usePortalManagerWithID, useUnmountPortalHandler } from '../PortalHost';
 import { HasPortalParentProvider } from '../PortalHost/context/HasPortalParentContext';
+import { RcBackdrop } from '../Backdrop';
 
 type RcDrawerProps = {
   /** custom radius for paper, default is `lg` */
@@ -78,6 +79,7 @@ const _RcDrawer = forwardRef<any, RcDrawerProps>(
     return (
       <HasPortalParentProvider>
         <MuiDrawer
+          BackdropComponent={RcBackdrop}
           {...rest}
           ref={ref}
           container={externalWindow?.document.body}

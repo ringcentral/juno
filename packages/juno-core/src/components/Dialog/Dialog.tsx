@@ -16,6 +16,7 @@ import { DialogStyle } from './styles';
 import { RcDialogChildrenSize, RcDialogClasses } from './utils';
 import { RcDialogContext } from './utils/DialogContext';
 import { HasPortalParentProvider } from '../PortalHost/context/HasPortalParentContext';
+import { RcBackdrop } from '../Backdrop';
 
 type RcDialogSize =
   | RcBaseSize<'xsmall' | 'small' | 'medium' | 'large'>
@@ -127,6 +128,7 @@ const _RcDialog = forwardRef<any, RcDialogProps>(
           classes={classes}
           TransitionProps={TransitionProps}
           PaperProps={PaperProps}
+          BackdropComponent={RcBackdrop}
           {...rest}
         >
           <RcDialogContext.Provider value={contextValue}>

@@ -104,11 +104,15 @@ Array [
       className="MuiTouchRipple-root"
     />
   </button>,
-  .c1 {
+  .c2 {
   color: #066FAC;
 }
 
-.c0 {
+.c0.RcBackdrop-root {
+  background-color: rgba(0,0,0,0.7);
+}
+
+.c1 {
   z-index: 1200;
 }
 
@@ -126,7 +130,7 @@ Array [
 
 <div
     aria-hidden={true}
-    className="MuiBackdrop-root c0"
+    className="MuiBackdrop-root RcBackdrop-root c0 c1"
     onClick={[Function]}
     style={
       Object {
@@ -136,7 +140,7 @@ Array [
     }
   >
     <div
-      className="MuiCircularProgress-root c1 MuiCircularProgress-indeterminate"
+      className="MuiCircularProgress-root c2 MuiCircularProgress-indeterminate"
       role="progressbar"
       style={
         Object {
