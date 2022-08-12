@@ -1,4 +1,10 @@
-import { css, px, RcThemedStyled } from '../../../foundation';
+import {
+  css,
+  palette2,
+  px,
+  RcThemedStyled,
+  setOpacity,
+} from '../../../foundation';
 import { RcDialogProps } from '../Dialog';
 import { RcDialogClasses, RcDialogMaxWidths } from '../utils';
 
@@ -7,6 +13,9 @@ export const DialogStyle: RcThemedStyled<RcDialogProps, any> = (props) => {
   return css`
     .${RcDialogClasses.paper} {
       max-width: ${RcDialogMaxWidths[size!]};
+    }
+    & .MuiBackdrop-root {
+      background-color: ${setOpacity(palette2('common', 'black'), '72')};
     }
 
     ${
