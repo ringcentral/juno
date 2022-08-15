@@ -57810,13 +57810,17 @@ var useAvatarShortName = ({
 // ../juno-core/src/components/Backdrop/Backdrop.tsx
 import React617, { forwardRef as forwardRef554, useMemo as useMemo18 } from "react";
 
+// ../juno-core/src/components/Backdrop/utils/BackdropUtils.ts
+var RcBackdropClasses = RcClasses(["root"], "RcBackdrop");
+
 // ../juno-core/src/components/Backdrop/styles/BackdropStyle.tsx
 var BackdropStyle = () => {
-  return css2``;
+  return css2`
+    &.${RcBackdropClasses.root} {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  `;
 };
-
-// ../juno-core/src/components/Backdrop/utils/BackdropUtils.ts
-var RcBackdropClasses = RcClasses([], "RcBackdrop");
 
 // ../juno-core/src/components/Backdrop/Backdrop.tsx
 var _RcBackdrop = forwardRef554((inProps, ref2) => {
@@ -62306,6 +62310,7 @@ var _RcDialog = forwardRef581((inProps, ref2) => {
     classes,
     TransitionProps: TransitionProps4,
     PaperProps,
+    BackdropComponent: RcBackdrop,
     ...rest
   }, /* @__PURE__ */ React654.createElement(RcDialogContext.Provider, {
     value: contextValue
@@ -78009,6 +78014,7 @@ var _RcDrawer = forwardRef609((inProps, ref2) => {
     ...managerWithID ? { appear: true } : {}
   };
   return /* @__PURE__ */ React694.createElement(HasPortalParentProvider, null, /* @__PURE__ */ React694.createElement(Drawer_default, {
+    BackdropComponent: RcBackdrop,
     ...rest,
     ref: ref2,
     container: externalWindow?.document.body,
@@ -81565,7 +81571,7 @@ RcVirtualizedDivider.displayName = "RcVirtualizedDivider";
 // ../juno-core/src/components/Forms/Select/utils/SelectInput/SelectInput.tsx
 import React723, { forwardRef as forwardRef634, useState as useState42 } from "react";
 var import_react_is14 = __toModule(require_react_is2());
-var import_utils252 = __toModule(require_utils());
+var import_utils253 = __toModule(require_utils());
 function areEqualValues2(a2, b2) {
   if (typeof b2 === "object" && b2 !== null) {
     return a2 === b2;
@@ -81750,7 +81756,7 @@ var SelectInput3 = forwardRef634((props, ref2) => {
   const displayMultiple = [];
   let computeDisplay = false;
   let foundMatch = false;
-  if ((0, import_utils252.isFilled)({ value }) || displayEmpty) {
+  if ((0, import_utils253.isFilled)({ value }) || displayEmpty) {
     if (renderValue) {
       display = renderValue(value);
     } else {
