@@ -273,7 +273,7 @@ type RcDownshiftProps<
   /** props for apply on `RcPopper` */
   PopperProps?: RcBaseProps<
     Partial<RcPopperProps>,
-    'open' | 'keepMounted' | 'anchorEl' | 'style'
+    'open' | 'keepMounted' | 'anchorEl'
   > & {
     /**
      * typeof that popper `anchorEl` binding when menu open
