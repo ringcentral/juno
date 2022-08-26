@@ -1,4 +1,12 @@
 
+### [2.19.2](https://github.com/ringcentral/juno/compare/juno-core-v2.19.0...juno-core-v2.19.2) (2022-08-26)
+
+
+### Bug Fixes
+
+* **Downshift:** accept custom style outside ([9667d3b](https://github.com/ringcentral/juno/commit/9667d3b0eacab3282c9434910cc4e11993374b15))
+* **Downshift:** fix autoComplete mode scroll init position ([3f14de9](https://github.com/ringcentral/juno/commit/3f14de9556c02401ec1c1d38e42ae0b72bd3b14e))
+
 ## [2.19.0](https://github.com/ringcentral/juno/compare/juno-core-v2.18.0...juno-core-v2.19.0) (2022-08-25)
 
 ## [2.17.0](https://github.com/ringcentral/juno/compare/juno-core-v2.16.1...juno-core-v2.17.0) (2022-08-02)
