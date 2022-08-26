@@ -73173,12 +73173,12 @@ var useDownshift = ({
       const currIndex = highlightedIndexRef.current;
       const availableIndex = getNextFocusableOption(currIndex);
       if (currIndex !== availableIndex) {
-        setTimeout(() => {
+        requestAnimationFrame(() => {
           setHighlightedIndex(availableIndex, {
             reason: "auto",
             reRender: true
           });
-        }, 0);
+        });
       }
     }
   }
@@ -77071,12 +77071,12 @@ function useHighlightScroll({
   const scrollToHighlightedIndex = (prevHighlightedIndex, currHighlightedIndex, topHighlightIndex = 0) => {
     if (!scrollerRef.current) {
       if (currHighlightedIndex !== topHighlightIndex) {
-        setTimeout(() => {
+        requestAnimationFrame(() => {
           scrollToIndex({
             index: currHighlightedIndex,
             align: "start"
           });
-        }, 0);
+        });
       }
       return;
     }
