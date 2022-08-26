@@ -901,27 +901,56 @@ export const DownshiftAutocomplete: Story<DownshiftProps> = ({ ...args }) => {
   const [value, setValue] = useState<RcDownshiftSelectedItem[]>([options[0]]);
 
   return (
-    <RcDownshift
-      {...args}
-      variant="autocomplete"
-      options={options}
-      onOpen={() => console.log('open')}
-      onClose={(e, r) => console.log('close', r)}
-      value={value}
-      onChange={(selectedItems) => {
-        setValue(selectedItems);
-        console.log('onChange', selectedItems);
-      }}
-      inputValue={inputValue}
-      onInputChange={(value) => {
-        setInputValue(value || '');
-        console.log('input change', value);
-      }}
-      SuggestionListProps={{
-        padding: true,
-      }}
-      filterOptions={RcAutocompleteDefaultFilterOptions}
-    />
+    <>
+      <RcDownshift
+        {...args}
+        variant="autocomplete"
+        options={options}
+        onOpen={() => console.log('open')}
+        onClose={(e, r) => console.log('close', r)}
+        value={value}
+        onChange={(selectedItems) => {
+          setValue(selectedItems);
+          console.log('onChange', selectedItems);
+        }}
+        inputValue={inputValue}
+        onInputChange={(value) => {
+          setInputValue(value || '');
+          console.log('input change', value);
+        }}
+        SuggestionListProps={{
+          padding: true,
+        }}
+        filterOptions={RcAutocompleteDefaultFilterOptions}
+        gutterBottom
+      />
+
+      <Title>With custom popper width</Title>
+      <div style={{ width: 150 }}>
+        <RcDownshift
+          {...args}
+          variant="autocomplete"
+          options={options}
+          onOpen={() => console.log('open')}
+          onClose={(e, r) => console.log('close', r)}
+          value={value}
+          onChange={(selectedItems) => {
+            setValue(selectedItems);
+            console.log('onChange', selectedItems);
+          }}
+          inputValue={inputValue}
+          onInputChange={(value) => {
+            setInputValue(value || '');
+            console.log('input change', value);
+          }}
+          PopperProps={{ style: { width: 'auto', minWidth: 300 } }}
+          SuggestionListProps={{
+            padding: true,
+          }}
+          filterOptions={RcAutocompleteDefaultFilterOptions}
+        />
+      </div>
+    </>
   );
 };
 
