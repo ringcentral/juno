@@ -1910,7 +1910,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-328 MuiCheckbox-root RcCheckbox-root c2"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-329 MuiCheckbox-root RcCheckbox-root c2"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -1928,7 +1928,7 @@ Array [
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-331"
+            className="PrivateSwitchBase-input-332"
             data-indeterminate={false}
             onChange={[Function]}
             type="checkbox"
@@ -2143,7 +2143,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-328 MuiRadio-root RcRadio-root c2"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-329 MuiRadio-root RcRadio-root c2"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -2161,12 +2161,12 @@ Array [
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-331"
+            className="PrivateSwitchBase-input-332"
             onChange={[Function]}
             type="radio"
           />
           <div
-            className="PrivateRadioButtonIcon-root-332 RadioButtonIcon-root"
+            className="PrivateRadioButtonIcon-root-333 RadioButtonIcon-root"
           >
             <svg
               aria-hidden={true}
@@ -2180,7 +2180,7 @@ Array [
             </svg>
             <svg
               aria-hidden={true}
-              className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-333"
+              className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-334"
               focusable="false"
               viewBox="0 0 24 24"
             >
@@ -2440,7 +2440,7 @@ Array [
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-328 MuiSwitch-switchBase RcSwitch-switchBase"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-329 MuiSwitch-switchBase RcSwitch-switchBase"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -2458,7 +2458,7 @@ Array [
             className="MuiIconButton-label"
           >
             <input
-              className="PrivateSwitchBase-input-331 MuiSwitch-input"
+              className="PrivateSwitchBase-input-332 MuiSwitch-input"
               onChange={[Function]}
               type="checkbox"
             />
@@ -3648,7 +3648,7 @@ Array [
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-328 MuiCheckbox-root RcCheckbox-root c4"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-329 MuiCheckbox-root RcCheckbox-root c4"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -3666,7 +3666,7 @@ Array [
             className="MuiIconButton-label"
           >
             <input
-              className="PrivateSwitchBase-input-331"
+              className="PrivateSwitchBase-input-332"
               data-indeterminate={false}
               onChange={[Function]}
               type="checkbox"
@@ -3714,7 +3714,7 @@ Array [
       >
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-328 MuiCheckbox-root RcCheckbox-root c4"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-329 MuiCheckbox-root RcCheckbox-root c4"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -3732,7 +3732,7 @@ Array [
             className="MuiIconButton-label"
           >
             <input
-              className="PrivateSwitchBase-input-331"
+              className="PrivateSwitchBase-input-332"
               data-indeterminate={false}
               onChange={[Function]}
               type="checkbox"
