@@ -26,12 +26,12 @@ export function useHighlightScroll({
   ) => {
     if (!scrollerRef.current) {
       if (currHighlightedIndex !== topHighlightIndex) {
-        setTimeout(() => {
+        requestAnimationFrame(() => {
           scrollToIndex({
             index: currHighlightedIndex,
             align: 'start',
           });
-        }, 0);
+        });
       }
 
       return;

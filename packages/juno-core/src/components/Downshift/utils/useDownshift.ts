@@ -463,12 +463,12 @@ export const useDownshift = <
       const availableIndex = getNextFocusableOption(currIndex);
 
       if (currIndex !== availableIndex) {
-        setTimeout(() => {
+        requestAnimationFrame(() => {
           setHighlightedIndex(availableIndex, {
             reason: 'auto',
             reRender: true,
           });
-        }, 0);
+        });
       }
     }
   }
