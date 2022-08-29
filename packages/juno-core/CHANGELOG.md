@@ -9,6 +9,15 @@
 
 ## [2.19.0](https://github.com/ringcentral/juno/compare/juno-core-v2.18.0...juno-core-v2.19.0) (2022-08-25)
 
+### Features
+
+* **vite-support:** [Package] add createESMPkg script to create package.json for all subpath
+
+## [2.18.0](https://github.com/ringcentral/juno/compare/juno-core-v2.17.0...juno-core-v2.18.0) (2022-08-15)
+
+### Features
+* **update-backdrop-color:** [Dialog] bump up the backdrop color to 70% opacity
+
 ## [2.17.0](https://github.com/ringcentral/juno/compare/juno-core-v2.16.1...juno-core-v2.17.0) (2022-08-02)
 
 
