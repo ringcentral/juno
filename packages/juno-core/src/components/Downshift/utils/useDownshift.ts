@@ -359,12 +359,15 @@ export const useDownshift = <
     }
   };
 
-  const toggleMenu = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
+  const toggleMenu = (
+    e: React.MouseEvent<HTMLElement, MouseEvent>,
+    focus = true,
+  ) => {
     if (isOpen) {
       closeMenu(e, 'toggleInput');
     } else {
       openMenu(e);
-      focusInput();
+      if (focus) focusInput();
     }
   };
 
@@ -694,7 +697,7 @@ export const useDownshift = <
         onMouseDown: toggleWithInput
           ? (e) => {
               if (inputValue === '' || !isOpen) {
-                toggleMenu(e);
+                toggleMenu(e, false);
               }
             }
           : undefined,
