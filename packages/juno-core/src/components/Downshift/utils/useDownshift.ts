@@ -69,6 +69,7 @@ type UseDownshiftParams<
   | 'onKeyDown'
   | 'disabled'
   | 'openOnFocus'
+  | 'toggleWithInput'
   | 'onClear'
   | 'renderNoOptions'
   | 'autoHighlight'
@@ -103,6 +104,7 @@ export const useDownshift = <
   maxFreeSolo,
   onMaxFreeSolo,
   openOnFocus,
+  toggleWithInput,
   disableCloseOnSelect,
   initialIsOpen,
   autoSelect,
@@ -354,6 +356,15 @@ export const useDownshift = <
       if (e) onOpen?.(e);
 
       setIsOpen(true);
+    }
+  };
+
+  const toggleMenu = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
+    if (isOpen) {
+      closeMenu(e, 'toggleInput');
+    } else {
+      openMenu(e);
+      focusInput();
     }
   };
 
@@ -680,6 +691,13 @@ export const useDownshift = <
             }
           }
         },
+        onMouseDown: toggleWithInput
+          ? (e) => {
+              if (inputValue === '' || !isOpen) {
+                toggleMenu(e);
+              }
+            }
+          : undefined,
       },
       props,
     );
@@ -723,14 +741,7 @@ export const useDownshift = <
           e.preventDefault();
           e.stopPropagation();
         },
-        onClick: (e) => {
-          if (isOpen) {
-            closeMenu(e, 'toggleInput');
-          } else {
-            openMenu(e);
-            focusInput();
-          }
-        },
+        onClick: toggleMenu,
         tabIndex: -1,
       },
       props,

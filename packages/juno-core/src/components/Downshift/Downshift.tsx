@@ -337,6 +337,12 @@ type RcDownshiftProps<
    * and that also set `disableCloseOnSelect` to `true`
    */
   openOnFocus?: boolean;
+  /**
+   * If `true`, the input element can be click to toggle that selection list
+   *
+   * When be `autocomplete`, that `toggleWithInput` default will be `true`
+   */
+  toggleWithInput?: boolean;
   /** get expand addition props  */
   getExpandIconProps?: (
     group: RcDownshiftGroupedOption,
@@ -622,6 +628,8 @@ const _RcDownshift = memo(
     }
     const theme = useTheme();
 
+    const isAutocomplete = props.variant === 'autocomplete';
+
     const {
       itemToString = DEFAULT_GET_OPTION_LABEL,
       keyToChips = DEFAULT_KEY_TO_CHIPS,
@@ -671,6 +679,7 @@ const _RcDownshift = memo(
       helperText: helperTextProp,
       options,
       openOnFocus,
+      toggleWithInput = isAutocomplete,
       getOptionLabel = itemToString,
       renderInput,
       label = inputLabel,
@@ -803,6 +812,7 @@ const _RcDownshift = memo(
       disabled,
       required,
       openOnFocus,
+      toggleWithInput,
       autoHighlight,
       groupBy,
       groupVariant,
@@ -851,7 +861,6 @@ const _RcDownshift = memo(
       () => (color ? getParsePaletteColor(color)({ theme }) : undefined),
       [color, theme],
     );
-    const isAutocomplete = variant === 'autocomplete';
 
     const startAdornment = (() => {
       if (isAutocomplete) {
