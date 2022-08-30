@@ -72894,6 +72894,7 @@ var useDownshift = ({
   maxFreeSolo,
   onMaxFreeSolo,
   openOnFocus,
+  toggleWithInput,
   disableCloseOnSelect,
   initialIsOpen,
   autoSelect,
@@ -73100,6 +73101,15 @@ var useDownshift = ({
       if (e2)
         onOpen?.(e2);
       setIsOpen(true);
+    }
+  };
+  const toggleMenu = (e2, focus2 = true) => {
+    if (isOpen) {
+      closeMenu(e2, "toggleInput");
+    } else {
+      openMenu(e2);
+      if (focus2)
+        focusInput();
     }
   };
   const handleInputChange = (newValue, open = true, e2) => {
@@ -73323,7 +73333,12 @@ var useDownshift = ({
               break;
           }
         }
-      }
+      },
+      onMouseDown: toggleWithInput ? (e2) => {
+        if (inputValue === "" || !isOpen) {
+          toggleMenu(e2, false);
+        }
+      } : void 0
     }, props);
   };
   const getInputAriaProps = (props) => {
@@ -73355,14 +73370,7 @@ var useDownshift = ({
         e2.preventDefault();
         e2.stopPropagation();
       },
-      onClick: (e2) => {
-        if (isOpen) {
-          closeMenu(e2, "toggleInput");
-        } else {
-          openMenu(e2);
-          focusInput();
-        }
-      },
+      onClick: toggleMenu,
       tabIndex: -1
     }, props);
   };
@@ -77518,6 +77526,7 @@ var _RcDownshift = memo443(forwardRef607((inProps, ref2) => {
     ]);
   }
   const theme = RcUseTheme();
+  const isAutocomplete = props.variant === "autocomplete";
   const {
     itemToString = DEFAULT_GET_OPTION_LABEL,
     keyToChips = DEFAULT_KEY_TO_CHIPS,
@@ -77567,6 +77576,7 @@ var _RcDownshift = memo443(forwardRef607((inProps, ref2) => {
     helperText: helperTextProp,
     options,
     openOnFocus,
+    toggleWithInput = isAutocomplete,
     getOptionLabel = itemToString,
     renderInput,
     label: label3 = inputLabel,
@@ -77686,6 +77696,7 @@ var _RcDownshift = memo443(forwardRef607((inProps, ref2) => {
     disabled: disabled3,
     required: required2,
     openOnFocus,
+    toggleWithInput,
     autoHighlight,
     groupBy,
     groupVariant,
@@ -77719,7 +77730,6 @@ var _RcDownshift = memo443(forwardRef607((inProps, ref2) => {
   }
   const toTextFieldRef = useForkRef2(textFieldRef, ref2);
   const colorHex = useMemo65(() => color2 ? getParsePaletteColor(color2)({ theme }) : void 0, [color2, theme]);
-  const isAutocomplete = variant === "autocomplete";
   const startAdornment = (() => {
     if (isAutocomplete) {
       return void 0;
