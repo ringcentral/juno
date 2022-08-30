@@ -2263,6 +2263,7 @@ Array [
       onClick={[Function]}
       onCompositionEnd={[Function]}
       onCompositionStart={[Function]}
+      onMouseDown={[Function]}
       onPaste={[Function]}
     >
       <div
@@ -3552,6 +3553,7 @@ Array [
         onClick={[Function]}
         onCompositionEnd={[Function]}
         onCompositionStart={[Function]}
+        onMouseDown={[Function]}
         onPaste={[Function]}
       >
         <div
