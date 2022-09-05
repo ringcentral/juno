@@ -9,6 +9,7 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  RcLogoChatbot: 'RC-logo-chatbot',
   Country: 'Country',
   RbnOff: 'rbn-off',
   RbnOn: 'rbn-on',

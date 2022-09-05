@@ -23,6 +23,7 @@ export { default as Message } from './Message';
 export { default as MicrosoftExchangeServerLogoWine } from './MicrosoftExchangeServerLogoWine';
 export { default as NewEmail } from './NewEmail';
 export { default as Paging } from './Paging';
+export { default as RcLogoChatbot } from './RcLogoChatbot';
 export { default as SelectMore } from './SelectMore';
 export { default as SharedLine } from './SharedLine';
 export { default as ActiveCall } from './ActiveCall';
