@@ -30,9 +30,9 @@ import { BadgeStyle } from './styles';
 import { RcBadgeClasses, useRoundBadgeOffset } from './utils';
 
 type RcBadgeProps = {
-  /** tag color, default is `highlight.b03` */
+  /** tag color, default is `umi.mentioned` */
   color?: RcPaletteKeys;
-  /** text color, default is `neutral.f01` */
+  /** text color, default is `umi.text` */
   textColor?: RcPaletteKeys;
   /** tag border color */
   borderColor?: RcPaletteKeys;
@@ -169,8 +169,8 @@ const RcBadge = styled(_RcBadge)`
 `;
 
 RcBadge.defaultProps = {
-  color: 'highlight.b03',
-  textColor: 'neutral.f01',
+  color: 'umi.mentioned',
+  textColor: 'umi.text',
   overlap: 'rectangular',
   anchorOrigin: {
     horizontal: 'right',
