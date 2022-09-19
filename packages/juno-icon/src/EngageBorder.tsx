@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SVGProps, Ref, forwardRef, memo } from 'react';
 
-const EngageOutlined = memo(
+const EngageBorder = memo(
   forwardRef((props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
     <svg
       viewBox="0 0 32 32"
@@ -13,6 +13,6 @@ const EngageOutlined = memo(
     </svg>
   )),
 );
-EngageOutlined.displayName = 'EngageOutlined';
-EngageOutlined['iconName'] = 'Engage-Outlined';
-export default EngageOutlined;
+EngageBorder.displayName = 'EngageBorder';
+EngageBorder['iconName'] = 'engage_border';
+export default EngageBorder;

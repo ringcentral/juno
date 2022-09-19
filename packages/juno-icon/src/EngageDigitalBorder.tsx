@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SVGProps, Ref, forwardRef, memo } from 'react';
 
-const EngageDigitalOutlined = memo(
+const EngageDigitalBorder = memo(
   forwardRef((props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
     <svg
       viewBox="0 0 32 32"
@@ -13,6 +13,6 @@ const EngageDigitalOutlined = memo(
     </svg>
   )),
 );
-EngageDigitalOutlined.displayName = 'EngageDigitalOutlined';
-EngageDigitalOutlined['iconName'] = 'Engage-Digital-Outlined';
-export default EngageDigitalOutlined;
+EngageDigitalBorder.displayName = 'EngageDigitalBorder';
+EngageDigitalBorder['iconName'] = 'engage-digital_border';
+export default EngageDigitalBorder;

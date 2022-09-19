@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SVGProps, Ref, forwardRef, memo } from 'react';
 
-const RcCcOutlined = memo(
+const RcCcBorder = memo(
   forwardRef((props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
     <svg
       viewBox="0 0 32 32"
@@ -13,6 +13,6 @@ const RcCcOutlined = memo(
     </svg>
   )),
 );
-RcCcOutlined.displayName = 'RcCcOutlined';
-RcCcOutlined['iconName'] = 'RC-CC-Outlined';
-export default RcCcOutlined;
+RcCcBorder.displayName = 'RcCcBorder';
+RcCcBorder['iconName'] = 'rc-cc_border';
+export default RcCcBorder;
