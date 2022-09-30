@@ -1,4 +1,11 @@
 
+### [2.20.3](https://github.com/ringcentral/juno/compare/juno-core-v2.20.1...juno-core-v2.20.3) (2022-09-30)
+
+
+### Bug Fixes
+
+* **FIJI-56688:** [MoreMenuTab] fix re-calculate logic at “moreMenu” mode ([abb89b6](https://github.com/ringcentral/juno/commit/abb89b62c85490bed78d4990eddddff8841ec143))
+
 ### [2.20.1](https://github.com/ringcentral/juno/compare/juno-core-v2.20.0...juno-core-v2.20.1) (2022-09-19)
 
 
