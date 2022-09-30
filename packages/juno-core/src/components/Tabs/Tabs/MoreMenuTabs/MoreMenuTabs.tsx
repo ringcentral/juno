@@ -115,6 +115,7 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
   const forceUpdate = useForceUpdate();
 
   const sizeChange = (size: Size) => {
+    hasResizeRef.current = true;
     if (
       tabsSizeRef.current.height !== size.height ||
       tabsSizeRef.current.width !== size.width
@@ -131,7 +132,6 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
     ([entry]: ResizeObserverEntry[]) => {
       const { width, height } = entry.contentRect;
       const obj = { width, height };
-      hasResizeRef.current = true;
       throttleTabsSizeChange(obj);
     },
     { mode: 'none' },
