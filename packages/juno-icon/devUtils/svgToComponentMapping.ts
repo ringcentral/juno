@@ -9,6 +9,8 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  HudBorder: 'hud_border',
+  DialerS: 'dialer_s',
   EngageBorder: 'engage_border',
   EngageDigitalBorder: 'engage-digital_border',
   RcCcBorder: 'rc-cc_border',
