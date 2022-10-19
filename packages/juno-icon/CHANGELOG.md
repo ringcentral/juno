@@ -1,4 +1,11 @@
 
+## [1.16.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.15.0...juno-icon-v1.16.0) (2022-10-19)
+
+
+### Features
+
+* **FIJI-57410:** [icon] add icons HudBorder, DialerS; update icon VoicemailBorder ([de2f253](https://github.com/ringcentral/juno/commit/de2f253bea7d641912873c485de0f4e79719ed8e))
+
 ## [1.15.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.14.0...juno-icon-v1.15.0) (2022-09-19)
 
 
