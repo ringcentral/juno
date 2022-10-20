@@ -316,6 +316,7 @@ export const useDownshiftTag = <
           if (e.button === 0) {
             removeTag(selectedItem);
             setFocused(false);
+            inputRef.current?.focus();
           }
         },
       },

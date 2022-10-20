@@ -407,6 +407,48 @@ describe('Downshift', () => {
   );
 
   it.each`
+    tagIndex
+    ${0}
+    ${1}
+    ${2}
+  `(
+    '[Downshift] focus on tag delete by clicking',
+    EachRun<any, InitContext>`
+      Scenario: User focus on tag delete by clicking
+      Given: there is three tags
+      ${(args, context) =>
+        init(
+          {
+            ...args,
+            value: [
+              { id: 1, label: 'a' },
+              { id: 2, label: 'b' },
+              { id: 3, label: 'c' },
+            ],
+          },
+          context,
+        )}
+      When: user click delete button on $tagIndex item ${(args, context) => {
+        const tagDeleteBtn = context.result.container.querySelector(
+          `[data-tag-index="${args.tagIndex}"] [aria-label="remove"]`,
+        );
+        if (tagDeleteBtn) {
+          userEvent.click(tagDeleteBtn);
+        } else {
+          throw new Error('not find tag');
+        }
+      }}
+
+      Then: this item will be remove ${(args, context) => {
+        expect(context.value).toHaveLength(2);
+      }}
+      And: then the focus will be on input ${(args, context) => {
+        expect(document.activeElement).toEqual(context.input);
+      }}
+    `,
+  );
+
+  it.each`
     tagIndex | keydownKey     | thenFocusIndex
     ${0}     | ${'Backspace'} | ${0}
     ${1}     | ${'Backspace'} | ${0}
