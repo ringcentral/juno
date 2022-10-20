@@ -1,4 +1,11 @@
 
+### [2.21.1](https://github.com/ringcentral/juno/compare/juno-core-v2.21.0...juno-core-v2.21.1) (2022-10-20)
+
+
+### Bug Fixes
+
+* **IconButton:** [juno-core] remove autoFocus pick and error autoFocus deprecated ([0f6038c](https://github.com/ringcentral/juno/commit/0f6038c157596a6dbab61a3988a5a9ceecb9c15b))
+
 ## [2.21.0](https://github.com/ringcentral/juno/compare/juno-core-v2.20.3...juno-core-v2.21.0) (2022-10-20)
 
 
