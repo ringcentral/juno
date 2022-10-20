@@ -71,8 +71,6 @@ type RcIconButtonProps = RcIconButtonBaseProps & {
   RcBaseProps<RcIconProps, 'color' | 'children' | 'size'>;
 
 type RcIconButtonDeprecatedProps = {
-  /** @deprecated don't have any logic below, now need anymore */
-  autoFocus?: boolean;
   /**
    * @deprecated
    * enable tooltip even button is disabled. default with false

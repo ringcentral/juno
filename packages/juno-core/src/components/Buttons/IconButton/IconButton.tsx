@@ -127,7 +127,6 @@ const _RcIconButton = memo(
       popperProps,
       externalLink,
       download,
-      autoFocus,
       href,
       ...rest
     } = props;
