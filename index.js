@@ -56386,7 +56386,6 @@ var _RcIconButton = memo441(forwardRef540((inProps, ref2) => {
     popperProps,
     externalLink,
     download,
-    autoFocus,
     href,
     ...rest
   } = props;
@@ -72952,6 +72951,7 @@ var useDownshiftTag = ({
         if (e2.button === 0) {
           removeTag(selectedItem);
           setFocused(false);
+          inputRef.current?.focus();
         }
       }
     }, restTagProps);
