@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SVGProps, Ref, forwardRef, memo } from 'react';
 
-const ExtentionLine = memo(
+const ExtensionLineBorder = memo(
   forwardRef((props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
     <svg
       viewBox="0 0 32 32"
@@ -13,6 +13,6 @@ const ExtentionLine = memo(
     </svg>
   )),
 );
-ExtentionLine.displayName = 'ExtentionLine';
-ExtentionLine['iconName'] = 'extention-line';
-export default ExtentionLine;
+ExtensionLineBorder.displayName = 'ExtensionLineBorder';
+ExtensionLineBorder['iconName'] = 'extension-line_border';
+export default ExtensionLineBorder;

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SVGProps, Ref, forwardRef, memo } from 'react';
 
-const DirectLine = memo(
+const DirectLineBorder = memo(
   forwardRef((props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
     <svg
       viewBox="0 0 32 32"
@@ -13,6 +13,6 @@ const DirectLine = memo(
     </svg>
   )),
 );
-DirectLine.displayName = 'DirectLine';
-DirectLine['iconName'] = 'direct-line';
-export default DirectLine;
+DirectLineBorder.displayName = 'DirectLineBorder';
+DirectLineBorder['iconName'] = 'direct-line_border';
+export default DirectLineBorder;

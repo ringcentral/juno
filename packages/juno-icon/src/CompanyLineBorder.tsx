@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SVGProps, Ref, forwardRef, memo } from 'react';
 
-const ComplanyLine = memo(
+const CompanyLineBorder = memo(
   forwardRef((props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
     <svg
       viewBox="0 0 32 32"
@@ -13,6 +13,6 @@ const ComplanyLine = memo(
     </svg>
   )),
 );
-ComplanyLine.displayName = 'ComplanyLine';
-ComplanyLine['iconName'] = 'complany-line';
-export default ComplanyLine;
+CompanyLineBorder.displayName = 'CompanyLineBorder';
+CompanyLineBorder['iconName'] = 'company-line_border';
+export default CompanyLineBorder;
