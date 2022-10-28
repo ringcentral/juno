@@ -9111,9 +9111,9 @@ __export(juno_icon_exports, {
   CloudContact: () => CloudContact_default,
   CodeSnippets: () => CodeSnippets_default,
   Comments: () => Comments_default,
+  CompanyLineBorder: () => CompanyLineBorder_default,
   CompanySetup: () => CompanySetup_default,
   CompanySetupBorder: () => CompanySetupBorder_default,
-  ComplanyLine: () => ComplanyLine_default,
   Computer: () => Computer_default,
   Conference: () => Conference_default,
   ConferenceBorder: () => ConferenceBorder_default,
@@ -9154,7 +9154,7 @@ __export(juno_icon_exports, {
   Dial: () => Dial_default,
   Dialer: () => Dialer_default,
   DialerS: () => DialerS_default,
-  DirectLine: () => DirectLine_default,
+  DirectLineBorder: () => DirectLineBorder_default,
   Doc: () => Doc_default,
   DocD: () => DocD_default,
   DockBorder: () => DockBorder_default,
@@ -9177,7 +9177,7 @@ __export(juno_icon_exports, {
   Excel: () => Excel_default,
   ExcelD: () => ExcelD_default,
   Expand: () => Expand_default,
-  ExtentionLine: () => ExtentionLine_default,
+  ExtensionLineBorder: () => ExtensionLineBorder_default,
   ExternalLink: () => ExternalLink_default,
   FacebookShareNumberIcon: () => FacebookShareNumberIcon_default,
   FailedFax: () => FailedFax_default,
@@ -11245,12 +11245,12 @@ Comments.displayName = "Comments";
 Comments["iconName"] = "comments";
 var Comments_default = Comments;
 
-// ../juno-icon/src/ComplanyLine.tsx
+// ../juno-icon/src/CompanyLineBorder.tsx
 import {
   createElement as createElement100
 } from "react";
 import { forwardRef as forwardRef100, memo as memo100 } from "react";
-var ComplanyLine = memo100(forwardRef100((props, ref2) => /* @__PURE__ */ createElement100("svg", {
+var CompanyLineBorder = memo100(forwardRef100((props, ref2) => /* @__PURE__ */ createElement100("svg", {
   viewBox: "0 0 32 32",
   xmlns: "http://www.w3.org/2000/svg",
   ref: ref2,
@@ -11258,9 +11258,9 @@ var ComplanyLine = memo100(forwardRef100((props, ref2) => /* @__PURE__ */ create
 }, /* @__PURE__ */ createElement100("path", {
   d: "M2 5v19.833h2.333V26c0 2.579 2.087 4.667 4.667 4.667S13.667 28.58 13.667 26v-1.167H30V5H11.333v21c0 1.39-.943 2.333-2.333 2.333S6.667 27.39 6.667 26v-1.167H9V5H2zm2.333 2.333h2.333V22.5H4.333V7.333zm9.334 0h14V22.5h-14V7.333zM16 9.667V12h9.333V9.667H16zm0 4.666v2.333h2.333v-2.333H16zm3.5 0v2.333h2.333v-2.333H19.5zm3.5 0v2.333h2.333v-2.333H23zm-7 3.5v2.333h2.333v-2.333H16zm3.5 0v2.333h2.333v-2.333H19.5zm3.5 0v2.333h2.333v-2.333H23z"
 }))));
-ComplanyLine.displayName = "ComplanyLine";
-ComplanyLine["iconName"] = "complany-line";
-var ComplanyLine_default = ComplanyLine;
+CompanyLineBorder.displayName = "CompanyLineBorder";
+CompanyLineBorder["iconName"] = "company-line_border";
+var CompanyLineBorder_default = CompanyLineBorder;
 
 // ../juno-icon/src/Computer.tsx
 import {
@@ -32383,12 +32383,12 @@ Dialer.displayName = "Dialer";
 Dialer["iconName"] = "dialer";
 var Dialer_default = Dialer;
 
-// ../juno-icon/src/DirectLine.tsx
+// ../juno-icon/src/DirectLineBorder.tsx
 import {
   createElement as createElement251
 } from "react";
 import { forwardRef as forwardRef232, memo as memo140 } from "react";
-var DirectLine = memo140(forwardRef232((props, ref2) => /* @__PURE__ */ createElement251("svg", {
+var DirectLineBorder = memo140(forwardRef232((props, ref2) => /* @__PURE__ */ createElement251("svg", {
   viewBox: "0 0 32 32",
   xmlns: "http://www.w3.org/2000/svg",
   ref: ref2,
@@ -32396,9 +32396,9 @@ var DirectLine = memo140(forwardRef232((props, ref2) => /* @__PURE__ */ createEl
 }, /* @__PURE__ */ createElement251("path", {
   d: "M8 2v25.76c0 .586.206 1.186.63 1.61s1.024.63 1.61.63h11.2c.586 0 1.186-.206 1.61-.63s.63-1.024.63-1.61V7.6c0-.586-.206-1.186-.63-1.61s-1.024-.63-1.61-.63h-11.2V2H8zm2.24 5.6h11.2v4.48h-11.2V7.6zm0 6.72h11.2v13.44h-11.2V14.32zm1.12 2.24v2.24h2.24v-2.24h-2.24zm3.36 0v2.24h2.24v-2.24h-2.24zm3.36 0v2.24h2.24v-2.24h-2.24zm-6.72 3.36v2.24h2.24v-2.24h-2.24zm3.36 0v2.24h2.24v-2.24h-2.24zm3.36 0v2.24h2.24v-2.24h-2.24zm-6.72 3.36v2.24h2.24v-2.24h-2.24zm3.36 0v2.24h2.24v-2.24h-2.24zm3.36 0v2.24h2.24v-2.24h-2.24z"
 }))));
-DirectLine.displayName = "DirectLine";
-DirectLine["iconName"] = "direct-line";
-var DirectLine_default = DirectLine;
+DirectLineBorder.displayName = "DirectLineBorder";
+DirectLineBorder["iconName"] = "direct-line_border";
+var DirectLineBorder_default = DirectLineBorder;
 
 // ../juno-icon/src/DocD.tsx
 import {
@@ -32824,12 +32824,12 @@ Expand.displayName = "Expand";
 Expand["iconName"] = "expand";
 var Expand_default = Expand;
 
-// ../juno-icon/src/ExtentionLine.tsx
+// ../juno-icon/src/ExtensionLineBorder.tsx
 import {
   createElement as createElement274
 } from "react";
 import { forwardRef as forwardRef255, memo as memo163 } from "react";
-var ExtentionLine = memo163(forwardRef255((props, ref2) => /* @__PURE__ */ createElement274("svg", {
+var ExtensionLineBorder = memo163(forwardRef255((props, ref2) => /* @__PURE__ */ createElement274("svg", {
   viewBox: "0 0 32 32",
   xmlns: "http://www.w3.org/2000/svg",
   ref: ref2,
@@ -32837,9 +32837,9 @@ var ExtentionLine = memo163(forwardRef255((props, ref2) => /* @__PURE__ */ creat
 }, /* @__PURE__ */ createElement274("path", {
   d: "M16 4c-4.194 0-7.745.77-10.13 1.481A5.42 5.42 0 0 0 2 10.664v3.029a2.17 2.17 0 0 0 2.154 2.154h4.308a2.17 2.17 0 0 0 2.154-2.154v-2.827c.202-.093.244-.13.841-.303.98-.286 2.478-.572 4.543-.572s3.563.286 4.543.572c.597.172.639.21.841.303v2.827a2.17 2.17 0 0 0 2.154 2.154h4.308A2.17 2.17 0 0 0 30 13.693v-3.029a5.426 5.426 0 0 0-3.87-5.183A35.975 35.975 0 0 0 16 4zm0 2.154c3.929 0 7.29.715 9.524 1.38a3.248 3.248 0 0 1 2.322 3.13v3.029h-4.308V9.52L23 9.217s-.686-.4-1.851-.74-2.877-.639-5.149-.639c-2.272 0-3.984.299-5.149.639S9 9.217 9 9.217l-.538.303v4.173H4.154v-3.029c0-1.443.93-2.718 2.322-3.13A33.908 33.908 0 0 1 16 6.154zM9.538 18c-1.191 0-2.154.963-2.154 2.154s.963 2.154 2.154 2.154c1.191 0 2.154-.963 2.154-2.154S10.729 18 9.538 18zM16 18c-1.191 0-2.154.963-2.154 2.154s.963 2.154 2.154 2.154c1.191 0 2.154-.963 2.154-2.154S17.191 18 16 18zm6.462 0c-1.191 0-2.154.963-2.154 2.154s.963 2.154 2.154 2.154c1.191 0 2.154-.963 2.154-2.154S23.653 18 22.462 18zM9.538 24.462c-1.191 0-2.154.963-2.154 2.154s.963 2.154 2.154 2.154c1.191 0 2.154-.963 2.154-2.154s-.963-2.154-2.154-2.154zm6.462 0c-1.191 0-2.154.963-2.154 2.154S14.809 28.77 16 28.77c1.191 0 2.154-.963 2.154-2.154s-.963-2.154-2.154-2.154zm6.462 0c-1.191 0-2.154.963-2.154 2.154s.963 2.154 2.154 2.154c1.191 0 2.154-.963 2.154-2.154s-.963-2.154-2.154-2.154z"
 }))));
-ExtentionLine.displayName = "ExtentionLine";
-ExtentionLine["iconName"] = "extention-line";
-var ExtentionLine_default = ExtentionLine;
+ExtensionLineBorder.displayName = "ExtensionLineBorder";
+ExtensionLineBorder["iconName"] = "extension-line_border";
+var ExtensionLineBorder_default = ExtensionLineBorder;
 
 // ../juno-icon/src/ExternalLink.tsx
 import {
