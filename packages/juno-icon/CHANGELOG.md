@@ -1,4 +1,11 @@
 
+## [1.17.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.16.0...juno-icon-v1.17.0) (2022-10-28)
+
+
+### Features
+
+* **FIJI-57851:** [Icons] add icons ComplanyLine, DirectLine, ExtentionLine, Welcome ([e4c5619](https://github.com/ringcentral/juno/commit/e4c56193aa23752b257ab04f495473e2efe4434a))
+
 ## [1.16.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.15.0...juno-icon-v1.16.0) (2022-10-19)
 
 
