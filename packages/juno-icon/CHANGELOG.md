@@ -1,4 +1,15 @@
 
+## [1.18.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.17.0...juno-icon-v1.18.0) (2022-10-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* **fix-icon-name:** renamed ComplanyLine to CompanyLineBorder; renamed DirectLine to DirectLineBorder; renamed ExtentionLine to ExtensionLineBorder
+
+### Bug Fixes
+
+* **fix-icon-name:** [Icons] fix icon name ([80f26a7](https://github.com/ringcentral/juno/commit/80f26a7da7e59d5327bc4b2aa67a3a1001c8d1d6))
+
 ## [1.17.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.16.0...juno-icon-v1.17.0) (2022-10-28)
 
 
