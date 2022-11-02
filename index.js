@@ -8873,6 +8873,7 @@ __export(src_exports2, {
   elevationOptions: () => elevationOptions,
   ellipsis: () => ellipsis,
   fakeBorder: () => fakeBorder,
+  fixOffsetsModifer: () => fixOffsetsModifer,
   fixWebKitTransitionStyle: () => fixWebKitTransitionStyle,
   flexCenterStyle: () => flexCenterStyle,
   flexWidth: () => flexWidth,
@@ -49234,6 +49235,7 @@ __export(juno_core_exports, {
   downshiftComponentName: () => downshiftComponentName,
   ellipsis: () => ellipsis,
   fakeBorder: () => fakeBorder,
+  fixOffsetsModifer: () => fixOffsetsModifer,
   fixWebKitTransitionStyle: () => fixWebKitTransitionStyle,
   flexCenterStyle: () => flexCenterStyle,
   flexWidth: () => flexWidth,
@@ -49622,6 +49624,7 @@ __export(src_exports, {
   downshiftComponentName: () => downshiftComponentName,
   ellipsis: () => ellipsis,
   fakeBorder: () => fakeBorder,
+  fixOffsetsModifer: () => fixOffsetsModifer,
   fixWebKitTransitionStyle: () => fixWebKitTransitionStyle,
   flexCenterStyle: () => flexCenterStyle,
   flexWidth: () => flexWidth,
@@ -49976,6 +49979,7 @@ __export(components_exports, {
   config: () => config_default,
   createPromise: () => createPromise,
   downshiftComponentName: () => downshiftComponentName,
+  fixOffsetsModifer: () => fixOffsetsModifer,
   getAvatarColorTokenFromId: () => getAvatarColorTokenFromId,
   getAvatarShortName: () => getAvatarShortName,
   getDialPadValueOnlyRegex: () => getDialPadValueOnlyRegex,
@@ -73648,6 +73652,33 @@ var useDownshiftError = ({ isNew, MenuItem: MenuItem3, InputItem }) => {
   }
 };
 
+// ../juno-core/src/components/Downshift/utils/fixOffsetsModifer.ts
+var fixOffsetsModifer = {
+  order: 890,
+  enabled: true,
+  fn: (data) => {
+    for (const property of [
+      "transform",
+      "msTransform",
+      "WebkitTransform",
+      "MozTransform",
+      "OTransform"
+    ]) {
+      const tranformValue = data.styles[property];
+      if (tranformValue) {
+        const matchValue = tranformValue.match(/translate3d\((\d+)px, (\d+)px, 0\)/);
+        if (matchValue) {
+          const dpr = window.devicePixelRatio;
+          const x2 = Math.round(Number(matchValue[1]) * dpr) / dpr;
+          const y2 = Math.round(Number(matchValue[2]) * dpr) / dpr;
+          data.styles.transform = `translate3d(${x2}px, ${y2}px, 0)`;
+        }
+      }
+    }
+    return data;
+  }
+};
+
 // ../juno-core/src/components/Downshift/Downshift.tsx
 import React702, {
   forwardRef as forwardRef617,
@@ -78054,6 +78085,7 @@ var _RcDownshift = memo453(forwardRef617((inProps, ref2) => {
     anchorEl: anchorElRef.current,
     "data-test-automation-id": "suggestions-list",
     popperRef,
+    modifiers: { fixOffsets: fixOffsetsModifer },
     popperOptions: {
       onUpdate: (e2) => {
         const currPosition = e2.placement;
@@ -86886,6 +86918,7 @@ export {
   elevationOptions,
   ellipsis,
   fakeBorder,
+  fixOffsetsModifer,
   fixWebKitTransitionStyle,
   flexCenterStyle,
   flexWidth,
