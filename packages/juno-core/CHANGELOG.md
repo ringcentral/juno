@@ -1,4 +1,11 @@
 
+### [2.21.2](https://github.com/ringcentral/juno/compare/juno-core-v2.21.1...juno-core-v2.21.2) (2022-11-02)
+
+
+### Bug Fixes
+
+* **fix-downshift-blurry:** [Downshift] fix downshift blurry issue ([3e120b6](https://github.com/ringcentral/juno/commit/3e120b6bce7a951e349493f6dc55cb69994e34ea))
+
 ### [2.21.1](https://github.com/ringcentral/juno/compare/juno-core-v2.21.0...juno-core-v2.21.1) (2022-10-20)
 
 
