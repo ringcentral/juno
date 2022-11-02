@@ -5,3 +5,4 @@ export * from './useDownshift';
 export * from './useDownshiftError';
 export * from './useDownshiftGroup';
 export * from './useDownshiftTag';
+export * from './fixOffsetsModifer';

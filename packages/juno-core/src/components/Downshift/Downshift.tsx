@@ -50,6 +50,7 @@ import {
   DEFAULT_GET_OPTION_LABEL,
   DEFAULT_KEY_TO_CHIPS,
   DEFAULT_LIMIT_CHIPS,
+  fixOffsetsModifer,
   RcDownshiftDefaultFilterOptions,
   RcDownshiftFilterOptions,
   RcDownshiftGroupedOption,
@@ -1075,6 +1076,7 @@ const _RcDownshift = memo(
           anchorEl={anchorElRef.current}
           data-test-automation-id="suggestions-list"
           popperRef={popperRef}
+          modifiers={{ fixOffsets: fixOffsetsModifer }}
           // * view type in popper.js
           popperOptions={{
             onUpdate: (e: any) => {
