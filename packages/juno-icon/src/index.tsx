@@ -372,6 +372,7 @@ export { default as SmsBorder } from './SmsBorder';
 export { default as SmsDefault } from './SmsDefault';
 export { default as SmsInviteBorder } from './SmsInviteBorder';
 export { default as Sms } from './Sms';
+export { default as SortMessage } from './SortMessage';
 export { default as Sort } from './Sort';
 export { default as SpeakerDown } from './SpeakerDown';
 export { default as SpeakerMute } from './SpeakerMute';

@@ -9,6 +9,7 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  SortMessage: 'sort-message',
   Welcome: 'welcome',
   CompanyLineBorder: 'company-line_border',
   DirectLineBorder: 'direct-line_border',
