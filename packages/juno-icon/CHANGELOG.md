@@ -1,4 +1,11 @@
 
+## [1.19.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.18.0...juno-icon-v1.19.0) (2022-11-14)
+
+
+### Features
+
+* **FIJI-58542:** [Icons] add icon SortMessage ([0f160d7](https://github.com/ringcentral/juno/commit/0f160d70ebac1b81ec142e59f79b16e96f37c9e0))
+
 ## [1.18.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.17.0...juno-icon-v1.18.0) (2022-10-28)
 
 
