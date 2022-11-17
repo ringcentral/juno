@@ -309,6 +309,7 @@ export { default as People } from './People';
 export { default as PhoneBorder } from './PhoneBorder';
 export { default as PhoneOffBorder } from './PhoneOffBorder';
 export { default as PhoneOff } from './PhoneOff';
+export { default as PhoneS } from './PhoneS';
 export { default as Phone } from './Phone';
 export { default as PickUpCall } from './PickUpCall';
 export { default as Pin } from './Pin';
