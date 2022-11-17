@@ -13,6 +13,7 @@ import {
   styled,
   useDeprecatedCheck,
   useThemeProps,
+  RcBaseFocusVariant,
 } from '../../../foundation';
 import { withTooltip, WithTooltipProps } from '../../Tooltip';
 import { ListItemStyle } from './styles';
@@ -62,6 +63,12 @@ type RcListItemProps = {
   maxWidth?: number;
   /** native value attribute */
   value?: React.LiHTMLAttributes<'li'>['value'];
+  /**
+   * Set focus style for component.
+   *
+   * @default 'highlight'
+   */
+  focusVariant?: RcBaseFocusVariant<'highlight' | 'focusRing'>;
 } & WithTooltipProps &
   RcBaseProps<ComponentProps<typeof MuiListItem>, 'title' | 'button'>;
 
@@ -101,6 +108,7 @@ const _RcListItem = forwardRef<any, RcListItemProps>(
       highlighted,
       maxWidth,
       focused,
+      focusVariant,
       ...rest
     } = props;
     const classes = useMemo(
@@ -156,6 +164,7 @@ RcListItem.defaultProps = {
   button: true,
   canHover: true,
   size: 'medium',
+  focusVariant: 'highlight',
 };
 
 RcListItem.displayName = 'RcListItem';

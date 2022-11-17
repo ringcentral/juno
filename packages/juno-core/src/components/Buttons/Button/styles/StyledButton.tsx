@@ -1,6 +1,5 @@
 import {
   css,
-  fakeBorder,
   focusVisible,
   getParsePaletteColor,
   nonTouchHoverMedia,
@@ -12,6 +11,7 @@ import {
   setOpacity,
   spacing,
   typography,
+  focusRing,
 } from '../../../../foundation';
 import { RcButtonProps } from '../Button';
 import {
@@ -41,6 +41,9 @@ export const buttonTextColor: RcThemedStyled<RcButtonProps> = (props) =>
 export const buttonHoverColor: RcThemedStyled<RcButtonProps> = (props) =>
   setOpacity(buttonColor(props), '08');
 
+const textButtonFocusVisibleColor: RcThemedStyled<RcButtonProps> = (props) =>
+  setOpacity(buttonColor(props), '08');
+
 const containedButtonHoverColor: RcThemedStyled<RcButtonProps> = (props) =>
   setOpacity(buttonColor(props), '08', true);
 
@@ -53,6 +56,7 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
     loading,
     disabled,
     disabledVariant,
+    focusVariant,
   } = props;
   const isMask = loading || (disabled && disabledVariant === 'mask');
 
@@ -122,6 +126,14 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
         color: ${textDisabledColor};
       }
 
+      ${focusVariant === 'focusRing' &&
+      css`
+        ${focusVisible} {
+          ${focusRing('normal')}
+          background-color: ${textButtonFocusVisibleColor};
+        }
+      `}
+
       ${nonTouchHoverMedia} {
         &:hover {
           background-color: ${buttonHoverColor};
@@ -142,7 +154,8 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
         }
 
         ${focusVisible} {
-          ${fakeBorder({ color: plainButtonTextColor(props) })}
+          ${focusRing('inset')}
+          background-color: transparent;
         }
 
         &:active {
@@ -162,6 +175,14 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
           background-color: ${containedButtonHoverColor};
         }
       }
+
+      ${focusVariant === 'focusRing' &&
+      css`
+        ${focusVisible} {
+          ${focusRing('normal')}
+          box-shadow: unset;
+        }
+      `}
 
       ${!isMask &&
       css`
@@ -187,6 +208,13 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
         color: ${textDisabledColor};
         border-color: ${textDisabledColor};
       }
+
+      ${focusVariant === 'focusRing' &&
+      css`
+        ${focusVisible} {
+          ${focusRing('normal')}
+        }
+      `}
 
       &:after {
         top: -1px;

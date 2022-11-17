@@ -29,6 +29,7 @@ import {
   useId,
   useThemeProps,
   combineProps,
+  RcBaseFocusVariant,
 } from '../../../foundation';
 import { RcIcon, RcIconProps } from '../../Icon';
 import { RcListItemSecondaryAction, RcListItemProps } from '../../List';
@@ -77,6 +78,12 @@ type RcMenuItemProps = {
   avatar?: ReactElement;
   /** MenuItem with subAction, can use ListItemSecondaryAction */
   secondaryAction?: ReactNode;
+  /**
+   * Set focus style for component.
+   *
+   * @default 'highlight'
+   */
+  focusVariant?: RcBaseFocusVariant<'highlight' | 'focusRing'>;
 } & RcMenuItemClassesType &
   Pick<RcListItemProps, 'color' | 'highlighted' | 'focused'> &
   WithTooltipProps &
@@ -107,6 +114,7 @@ const _RcMenuItem = forwardRef<any, RcMenuItemProps & RcMenuItemInnerProps>(
       TouchRippleProps: TouchRipplePropsProp,
       title,
       focused,
+      focusVariant,
       ...rest
     } = props;
 
@@ -284,6 +292,7 @@ const RcMenuItem = styled(withTooltip(_RcMenuItem))`
 RcMenuItem.defaultProps = {
   size: 'medium',
   button: true,
+  focusVariant: 'highlight',
 };
 
 RcMenuItem.displayName = 'RcMenuItem';

@@ -10,6 +10,8 @@ import {
   setOpacity,
   spacing,
   typography,
+  focusRing,
+  RcBaseFocusVariant,
 } from '../../../../foundation';
 import { RcFormControlLabel } from '../../../Forms/FormControlLabel';
 import { RcSwitch } from '../../../Forms/Switch';
@@ -38,6 +40,7 @@ export const sharedListItemStyle: RcThemedStyled<
   Pick<RcListItemProps, 'highlighted' | 'color' | 'canHover' | 'baseColor'> & {
     mainClasses: typeof RcListItemClasses;
     rippleClasses: typeof RcListItemRippleClasses;
+    focusVariant: RcBaseFocusVariant<'highlight' | 'focusRing'>;
   },
   any
 > = ({
@@ -47,8 +50,10 @@ export const sharedListItemStyle: RcThemedStyled<
   baseColor: baseColorProp = 'black',
   mainClasses,
   rippleClasses,
+  focusVariant,
 }) => {
   const baseColor = getParsePaletteColor(color ?? colorMap[baseColorProp!]);
+  const useFocusRing = focusVariant === 'focusRing';
 
   return css`
     ${typography('body1')};
@@ -65,7 +70,15 @@ export const sharedListItemStyle: RcThemedStyled<
       focusVisible
     },
     &.${mainClasses.focusVisible} {
-      background-color: ${setOpacity(baseColor, '16')};
+      background-color: ${() => {
+        // to override mui focus visible style when item is highlighted
+        if (useFocusRing && highlighted) {
+          return setAlpha(baseColor, 0.05);
+        }
+        if (!useFocusRing) return setOpacity(baseColor, '16');
+        return 'unset';
+      }};
+      ${useFocusRing && focusRing('inset')}
     }
 
     ${nonTouchHoverMedia} {
@@ -90,7 +103,7 @@ export const sharedListItemStyle: RcThemedStyled<
 };
 
 export const ListItemStyle: RcThemedStyled<RcListItemProps, any> = (props) => {
-  const { maxWidth, isInline, size, onClick } = props;
+  const { maxWidth, isInline, size, onClick, focusVariant } = props;
   const defaultPadding = RcListItemTopAndBottomPaddings[size!];
 
   return css`
@@ -104,6 +117,7 @@ export const ListItemStyle: RcThemedStyled<RcListItemProps, any> = (props) => {
       ...props,
       mainClasses: RcListItemClasses,
       rippleClasses: RcListItemRippleClasses,
+      focusVariant: focusVariant!,
     })};
 
     &.${RcListItemClasses.gutters} {

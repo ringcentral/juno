@@ -4,6 +4,7 @@ export * from './ellipsis';
 export * from './fakeBorder';
 export * from './flexCenter';
 export * from './flexWidth';
+export * from './focusRing';
 export * from './focusVisible';
 export * from './lineClamp';
 export * from './newPalette';

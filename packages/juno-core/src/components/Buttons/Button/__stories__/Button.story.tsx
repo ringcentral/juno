@@ -40,6 +40,7 @@ export default {
     ...sortInDocTable<keyof ButtonProps>([
       'variant',
       'size',
+      'focusVariant',
       'radius',
       'children',
       'title',
@@ -365,6 +366,89 @@ export const ButtonWithCustomColor: Story<ButtonProps> = () => {
         <RcButton color="success.b03">logout</RcButton>
         <RcButton color="highlight.b03">logout</RcButton>
         <RcButton color="informative.b01">logout</RcButton>
+      </li>
+    </Wrapper>
+  );
+};
+
+export const ButtonWithFocusRing: Story<ButtonProps> = () => {
+  return (
+    <Wrapper>
+      <li>
+        <RcButton focusVariant="focusRing">button</RcButton>
+        <RcButton focusVariant="focusRing" color="danger.b03">
+          button
+        </RcButton>
+        <RcButton focusVariant="focusRing" color="success.b03">
+          button
+        </RcButton>
+        <RcButton focusVariant="focusRing" color="highlight.b03">
+          button
+        </RcButton>
+      </li>
+      <br />
+      <br />
+      <li>
+        <RcButton variant="outlined" focusVariant="focusRing">
+          button
+        </RcButton>
+        <RcButton
+          variant="outlined"
+          focusVariant="focusRing"
+          color="danger.b03"
+        >
+          button
+        </RcButton>
+        <RcButton
+          variant="outlined"
+          focusVariant="focusRing"
+          color="success.b03"
+        >
+          button
+        </RcButton>
+        <RcButton
+          variant="outlined"
+          focusVariant="focusRing"
+          color="highlight.b03"
+        >
+          button
+        </RcButton>
+      </li>
+      <br />
+      <br />
+      <li>
+        <RcButton variant="text" focusVariant="focusRing">
+          button
+        </RcButton>
+        <RcButton variant="text" focusVariant="focusRing" color="danger.b03">
+          button
+        </RcButton>
+        <RcButton variant="text" focusVariant="focusRing" color="success.b03">
+          button
+        </RcButton>
+        <RcButton variant="text" focusVariant="focusRing" color="highlight.b03">
+          button
+        </RcButton>
+      </li>
+      <br />
+      <br />
+      <li>
+        <RcButton variant="plain" focusVariant="focusRing">
+          button
+        </RcButton>
+        <RcButton variant="plain" focusVariant="focusRing" color="danger.b03">
+          button
+        </RcButton>
+        <RcButton variant="plain" focusVariant="focusRing" color="success.b03">
+          button
+        </RcButton>
+        <RcButton
+          variant="plain"
+          focusVariant="focusRing"
+          color="highlight.b03"
+        >
+          button
+        </RcButton>
       </li>
     </Wrapper>
   );

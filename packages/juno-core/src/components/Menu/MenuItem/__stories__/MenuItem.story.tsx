@@ -14,6 +14,7 @@ export default {
   argTypes: {
     ...sortInDocTable<keyof MenuItemProps>([
       'component',
+      'focusVariant',
       'size',
       'selected',
       'type',
@@ -40,11 +41,11 @@ type MenuItemProps = ComponentProps<typeof RcMenuItem>;
 export const MenuItem: Story<MenuItemProps> = ({ children, ...args }) => {
   return (
     <>
-      <RcMenuItem {...args}>
+      <RcMenuItem {...args} tabIndex={0}>
         <RcListItemText primary="MenuItem content" />
       </RcMenuItem>
       <br />
-      <RcMenuItem {...args}>
+      <RcMenuItem {...args} tabIndex={0}>
         <RcListItemText
           primary="MenuItem content"
           secondary="Secondary content"

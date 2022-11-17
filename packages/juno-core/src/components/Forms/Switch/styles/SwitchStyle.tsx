@@ -1,6 +1,5 @@
 import {
   css,
-  fakeBorder,
   getParsePaletteColor,
   nonTouchHoverMedia,
   palette2,
@@ -10,6 +9,7 @@ import {
   RcThemedStyled,
   setOpacity,
   spacing,
+  focusRing,
 } from '../../../../foundation';
 import { RcSwitchProps } from '../Switch';
 import { RcSwitchClasses } from '../utils';
@@ -59,6 +59,8 @@ export const SwitchStyle: RcThemedStyled<RcSwitchProps, any> = ({
 
   return css`
     &.${RcSwitchClasses.root} {
+      /* make sure focus ring can show correctly */
+      overflow: visible;
       padding: 0px;
       ${widthCss};
       ${heightCss};
@@ -98,18 +100,7 @@ export const SwitchStyle: RcThemedStyled<RcSwitchProps, any> = ({
       }
 
       .${RcSwitchClasses.focusVisible} + .${RcSwitchClasses.track} {
-        &:after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          box-sizing: border-box;
-          border-radius: ${radius('round')};
-          border: 1px solid ${palette2('interactive', 'f01')};
-          ${fakeBorder({ color: palette2('neutral', 'f11') })}
-        }
+        ${focusRing('normal')}
       }
 
       ${nonTouchHoverMedia} {

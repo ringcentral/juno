@@ -15,6 +15,7 @@ import {
   shadows,
   fakeBorder,
   opacity,
+  focusRing,
 } from '../../../../foundation';
 import { RcIconButtonProps, RcIconButtonVariant } from '../IconButton';
 import {
@@ -52,7 +53,7 @@ export const plainIconButtonFocusStyle = ({
     content: '';
     position: absolute;
     ${getFocusVisibleInsetSize};
-    box-shadow: 0 0 0 1px ${focusVisibleColor};
+    box-shadow: 0 0 0 2px ${focusVisibleColor};
     border-radius: ${radius(radiusProp)};
     pointer-events: none;
     z-index: 1;
@@ -73,8 +74,11 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
   disabledFakeBorder,
   activeElevation,
   IconProps = {},
+  focusVariant,
 }) => {
   const { color: iconColor } = IconProps;
+
+  const useFocusRing = focusVariant === 'focusRing';
 
   const iconSize = RcIconButtonSizes[size!];
 
@@ -85,6 +89,7 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
   const isInverse = variant === 'inverse';
   const isOutline = variant === 'outline';
   const isContained = variant === 'contained';
+  const isRound = variant === 'round';
 
   const containerSize = px(isPlain ? iconSize : iconSize * 2);
 
@@ -162,9 +167,17 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
     }
 
     ${focusVisible} {
-      background-color: ${isPlain
-        ? 'transparent'
-        : setOpacity(mainColor, isInverse ? '32' : '16')};
+      background-color: ${() => {
+        if (useFocusRing) {
+          if (isRound) return 'transparent';
+          if (isInverse) return;
+        }
+        if (isPlain) return 'transparent';
+        if (isInverse) return setOpacity(mainColor, '32');
+        return setOpacity(mainColor, '16');
+      }};
+
+      ${useFocusRing && (isRound || isInverse) && focusRing('inset')}
 
       &:active {
         color: ${setOpacity(mainColor, '88')};

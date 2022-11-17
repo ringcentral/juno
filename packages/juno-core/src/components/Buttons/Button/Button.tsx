@@ -22,6 +22,7 @@ import {
   useForkRef,
   useTheme,
   useThemeProps,
+  RcBaseFocusVariant,
 } from '../../../foundation';
 import { RcIcon, RcIconProps } from '../../Icon';
 import { RcIconSizes } from '../../Icon/utils';
@@ -71,6 +72,12 @@ type RcButtonProps = {
   keepElevation?: boolean;
   /** @deprecated Icon, please use startIcon with `<RcIcon />` */
   IconProps?: RcIconProps;
+  /**
+   * Set focus style for component. Note: plain variant always use focusRing
+   *
+   * @default 'ripple'
+   */
+  focusVariant?: RcBaseFocusVariant<'focusRing' | 'ripple'>;
 } & RcBaseProps<
   ComponentProps<typeof MuiButton>,
   | 'color'
@@ -112,6 +119,8 @@ const _RcButton = forwardRef<any, RcButtonProps>(
       disabledVariant,
       radius,
       keepElevation,
+      focusVariant,
+      disableFocusRipple: disableFocusRippleProp,
       ...rest
     } = props;
 
@@ -212,6 +221,9 @@ const _RcButton = forwardRef<any, RcButtonProps>(
       removeClassName(innerRef, 'MuiButton-iconSizeMedium');
     });
 
+    const disableFocusRipple =
+      disableFocusRippleProp ?? focusVariant === 'focusRing';
+
     return (
       <MuiButton
         ref={buttonRef}
@@ -221,6 +233,7 @@ const _RcButton = forwardRef<any, RcButtonProps>(
         startIcon={startIcon}
         endIcon={endIcon}
         classes={classes}
+        disableFocusRipple={disableFocusRipple}
         {...rest}
       >
         {loading && isReplace ? loadingElm : childrenProp}
@@ -239,6 +252,7 @@ RcButton.defaultProps = {
   color: 'primary',
   variant: 'contained',
   loadingMode: 'replace',
+  focusVariant: 'ripple',
 };
 
 RcButton.displayName = 'RcButton';

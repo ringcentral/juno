@@ -14,7 +14,7 @@ export const StyledCheckIcon = styled(RcIcon)`
 `;
 
 export const MenuItemStyle: RcThemedStyled<RcMenuItemProps, any> = (props) => {
-  const { size, color = 'action.grayLight' } = props;
+  const { size, color = 'action.grayLight', focusVariant } = props;
   const topAndBottomPadding = RcMenuItemTopAndBottomPaddings[size!];
   const leftAndRightPadding = RcMenuItemLeftAndRightPaddings[size!];
 
@@ -29,6 +29,7 @@ export const MenuItemStyle: RcThemedStyled<RcMenuItemProps, any> = (props) => {
 
     ${sharedListItemStyle({
       ...props,
+      focusVariant: focusVariant!,
       color,
       // in menuItem always be can hover
       canHover: true,

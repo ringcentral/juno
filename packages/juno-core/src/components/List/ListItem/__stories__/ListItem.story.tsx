@@ -14,6 +14,7 @@ export default {
   argTypes: {
     ...sortInDocTable<keyof ListItemProps>([
       'size',
+      'focusVariant',
       'autoFocus',
       'disabled',
       'selected',

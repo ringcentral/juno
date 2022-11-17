@@ -10,6 +10,7 @@ export const RcIconButtonClasses = RcClasses<RcIconButtonProps>(
     'outline',
     'contained',
     'inverse',
+    'round',
     'persistBg',
   ],
   'RcIconButton',
@@ -28,11 +29,11 @@ export const RcIconButtonFocusVisibleInsetSize: UnitMap<
   RcIconButtonSize,
   number
 > = {
-  xxxlarge: 7,
-  xxlarge: 6,
-  xlarge: 6,
-  large: 5,
-  medium: 4,
-  small: 3,
-  xsmall: 3,
+  xxxlarge: 6,
+  xxlarge: 5,
+  xlarge: 5,
+  large: 4,
+  medium: 3,
+  small: 2,
+  xsmall: 2,
 };

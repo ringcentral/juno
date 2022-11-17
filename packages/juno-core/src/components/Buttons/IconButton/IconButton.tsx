@@ -13,6 +13,7 @@ import {
   useTheme,
   useThemeProps,
   combineClasses,
+  RcBaseFocusVariant,
 } from '../../../foundation';
 import { RcIcon, RcIconProps, RcIconSize } from '../../Icon';
 import { RcTooltip, withTooltip } from '../../Tooltip';
@@ -66,6 +67,14 @@ type RcIconButtonProps = {
    * pass props to below Icon component
    */
   IconProps?: RcIconProps;
+  /**
+   * Set focus style for component.
+   * Only use for `inverse` and `round` variant.
+   * `plain` variant always use `focusRing`
+   *
+   * @default 'highlight'
+   */
+  focusVariant?: RcBaseFocusVariant<'highlight' | 'focusRing'>;
 } & RcIconButtonDeprecatedProps &
   Pick<
     RcIconProps,
@@ -77,7 +86,13 @@ type RcIconButtonProps = {
     | 'color'
   > &
   RcClassesProps<
-    'invisible' | 'outline' | 'contained' | 'inverse' | 'icon' | 'persistBg'
+    | 'round'
+    | 'invisible'
+    | 'outline'
+    | 'contained'
+    | 'inverse'
+    | 'icon'
+    | 'persistBg'
   > &
   RcBaseProps<RcButtonBaseProps, 'color'>;
 
@@ -128,6 +143,7 @@ const _RcIconButton = memo(
       externalLink,
       download,
       href,
+      focusVariant,
       ...rest
     } = props;
 
@@ -137,6 +153,7 @@ const _RcIconButton = memo(
     const isContained = variant === 'contained';
     const isInverse = variant === 'inverse';
     const isPlain = variant === 'plain';
+    const isRound = variant === 'round';
 
     const classes = useMemo(
       () => combineClasses(RcIconButtonClasses, classesProp),
@@ -149,6 +166,7 @@ const _RcIconButton = memo(
       [classes.outline]: isOutline,
       [classes.contained]: isContained,
       [classes.inverse]: isInverse,
+      [classes.round]: isRound,
     });
 
     const iconButton = (() => {
@@ -246,6 +264,7 @@ RcIconButton.defaultProps = {
   disableTouchRipple: true,
   classes: {},
   useRcTooltip: true,
+  focusVariant: 'highlight',
 };
 
 export { RcIconButton };

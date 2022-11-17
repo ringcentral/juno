@@ -1,5 +1,6 @@
 export * from './BaseColor';
 export * from './BaseDirection';
+export * from './BaseFocusVariant';
 export * from './BaseFormControlLabel';
 export * from './BaseLabelPlacement';
 export * from './BaseProps';

@@ -21,6 +21,7 @@ import { Meta, Story } from '@storybook/react';
 import radiusObj from '../../../../foundation/theme/assets/radius.json';
 import { Icon } from '../../../Icon/__stories__/Icon.story';
 import { RcIconButtonSizes } from '../utils';
+import { Box } from '@material-ui/core';
 
 export default {
   title: '🚀 Cleanup Components/IconButton',
@@ -44,6 +45,7 @@ export default {
       'centerRipple',
       'loading',
       'title',
+      'focusVariant',
     ]),
     ...notShowInDocTable<keyof IconButtonProps>([
       'autoFocus',
@@ -372,3 +374,98 @@ export const IconButtonWithDisabledColor: Story<IconButtonProps> = () => {
 };
 
 IconButtonWithDisabledColor.storyName = 'IconButton with color when disabled';
+
+export const IconButtonWithFocusRing: Story<IconButtonProps> = () => {
+  return (
+    <div>
+      Only support for inverse and round variant. Plain variant always use
+      focusRing
+      <Box
+        width={200}
+        display="flex"
+        justifyContent="space-between"
+        marginTop={10}
+      >
+        <RcIconButton focusVariant="focusRing" symbol={StarIcon} />
+        <RcIconButton
+          focusVariant="focusRing"
+          color="danger.b03"
+          symbol={StarIcon}
+        />
+
+        <RcIconButton
+          focusVariant="focusRing"
+          color="success.b03"
+          symbol={StarIcon}
+        />
+        <RcIconButton
+          focusVariant="focusRing"
+          color="highlight.b03"
+          symbol={StarIcon}
+        />
+      </Box>
+      <Box
+        width={200}
+        display="flex"
+        justifyContent="space-between"
+        marginTop={10}
+      >
+        <RcIconButton
+          variant="inverse"
+          focusVariant="focusRing"
+          symbol={StarIcon}
+        />
+        <RcIconButton
+          variant="inverse"
+          focusVariant="focusRing"
+          color="danger.b03"
+          symbol={StarIcon}
+        />
+
+        <RcIconButton
+          variant="inverse"
+          focusVariant="focusRing"
+          color="success.b03"
+          symbol={StarIcon}
+        />
+        <RcIconButton
+          variant="inverse"
+          focusVariant="focusRing"
+          color="highlight.b03"
+          symbol={StarIcon}
+        />
+      </Box>
+      <Box
+        width={200}
+        display="flex"
+        justifyContent="space-between"
+        marginTop={10}
+      >
+        <RcIconButton
+          variant="plain"
+          focusVariant="focusRing"
+          symbol={StarIcon}
+        />
+        <RcIconButton
+          variant="plain"
+          focusVariant="focusRing"
+          color="danger.b03"
+          symbol={StarIcon}
+        />
+
+        <RcIconButton
+          variant="plain"
+          focusVariant="focusRing"
+          color="success.b03"
+          symbol={StarIcon}
+        />
+        <RcIconButton
+          variant="plain"
+          focusVariant="focusRing"
+          color="highlight.b03"
+          symbol={StarIcon}
+        />
+      </Box>
+    </div>
+  );
+};
