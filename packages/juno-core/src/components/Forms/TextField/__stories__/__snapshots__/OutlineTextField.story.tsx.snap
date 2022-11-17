@@ -60,11 +60,11 @@ Array [
 .c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -932,7 +932,7 @@ Array [
         value=""
       />
       <div
-        className="MuiBox-root MuiBox-root-244"
+        className="MuiBox-root MuiBox-root-247"
       >
         <button
           aria-hidden={true}
@@ -1063,11 +1063,11 @@ Array [
 .c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -1960,7 +1960,7 @@ Array [
         value=""
       />
       <div
-        className="MuiBox-root MuiBox-root-245"
+        className="MuiBox-root MuiBox-root-248"
       >
         <button
           aria-hidden={true}
@@ -2106,11 +2106,11 @@ Array [
 .c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -3028,7 +3028,7 @@ Array [
         value=""
       />
       <div
-        className="MuiBox-root MuiBox-root-246"
+        className="MuiBox-root MuiBox-root-249"
       >
         <button
           aria-hidden={true}
@@ -3177,11 +3177,11 @@ Array [
 .c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -4119,7 +4119,7 @@ Array [
         value=""
       />
       <div
-        className="MuiBox-root MuiBox-root-247"
+        className="MuiBox-root MuiBox-root-250"
       >
         <button
           aria-hidden={true}
@@ -4303,11 +4303,11 @@ Array [
 .c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -5231,7 +5231,7 @@ Array [
         value=""
       />
       <div
-        className="MuiBox-root MuiBox-root-248"
+        className="MuiBox-root MuiBox-root-251"
       >
         <button
           aria-hidden={true}
@@ -5404,11 +5404,11 @@ Array [
 .c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -6332,7 +6332,7 @@ Array [
         value=""
       />
       <div
-        className="MuiBox-root MuiBox-root-249"
+        className="MuiBox-root MuiBox-root-252"
       >
         <button
           aria-hidden={true}
@@ -6505,11 +6505,11 @@ Array [
 .c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -7433,7 +7433,7 @@ Array [
         value=""
       />
       <div
-        className="MuiBox-root MuiBox-root-250"
+        className="MuiBox-root MuiBox-root-253"
       >
         <button
           aria-hidden={true}
@@ -7583,11 +7583,11 @@ Array [
 .c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -7696,11 +7696,11 @@ Array [
 .c9[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -8647,7 +8647,7 @@ Array [
         value=""
       />
       <div
-        className="MuiBox-root MuiBox-root-251"
+        className="MuiBox-root MuiBox-root-254"
       >
         <button
           aria-hidden={true}
@@ -8824,11 +8824,11 @@ Array [
 .c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -9752,7 +9752,7 @@ Array [
         value=""
       />
       <div
-        className="MuiBox-root MuiBox-root-252"
+        className="MuiBox-root MuiBox-root-255"
       >
         <button
           aria-hidden={true}
@@ -9874,11 +9874,11 @@ Array [
 .c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -3px;
-  right: -3px;
-  bottom: -3px;
-  left: -3px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -10859,7 +10859,7 @@ Array [
         value=""
       />
       <div
-        className="MuiBox-root MuiBox-root-253"
+        className="MuiBox-root MuiBox-root-256"
       >
         <button
           aria-hidden={true}
@@ -11009,11 +11009,11 @@ Array [
 .c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -3px;
-  right: -3px;
-  bottom: -3px;
-  left: -3px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -12017,7 +12017,7 @@ Array [
         tabIndex={-1}
       />
       <div
-        className="MuiBox-root MuiBox-root-254"
+        className="MuiBox-root MuiBox-root-257"
       >
         <button
           aria-hidden={true}
@@ -12249,11 +12249,11 @@ Array [
 .c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -13234,7 +13234,7 @@ Array [
         value=""
       />
       <div
-        className="MuiBox-root MuiBox-root-255"
+        className="MuiBox-root MuiBox-root-258"
       >
         <button
           aria-hidden={true}
@@ -13384,11 +13384,11 @@ Array [
 .c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -14392,7 +14392,7 @@ Array [
         tabIndex={-1}
       />
       <div
-        className="MuiBox-root MuiBox-root-256"
+        className="MuiBox-root MuiBox-root-259"
       >
         <button
           aria-hidden={true}
@@ -14624,11 +14624,11 @@ Array [
 .c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -15609,7 +15609,7 @@ Array [
         value=""
       />
       <div
-        className="MuiBox-root MuiBox-root-257"
+        className="MuiBox-root MuiBox-root-260"
       >
         <button
           aria-hidden={true}
@@ -15759,11 +15759,11 @@ Array [
 .c4[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -16767,7 +16767,7 @@ Array [
         tabIndex={-1}
       />
       <div
-        className="MuiBox-root MuiBox-root-258"
+        className="MuiBox-root MuiBox-root-261"
       >
         <button
           aria-hidden={true}

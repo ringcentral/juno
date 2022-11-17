@@ -155,7 +155,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c10.RcButton-text.focus-visible,
 .c10.RcButton-text[data-focus-visible-added] {
-  box-shadow: inset 0 0 0 1px #066FAC;
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  background-color: transparent;
 }
 
 .c10.RcButton-text:active.RcButton-text {
@@ -280,7 +284,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c24.RcButton-text.focus-visible,
 .c24.RcButton-text[data-focus-visible-added] {
-  box-shadow: inset 0 0 0 1px #066FAC;
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  background-color: transparent;
 }
 
 .c24.RcButton-text:active.RcButton-text {
@@ -405,7 +413,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c29.RcButton-text.focus-visible,
 .c29.RcButton-text[data-focus-visible-added] {
-  box-shadow: inset 0 0 0 1px #066FAC;
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  background-color: transparent;
 }
 
 .c29.RcButton-text:active.RcButton-text {
@@ -530,7 +542,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c34.RcButton-text.focus-visible,
 .c34.RcButton-text[data-focus-visible-added] {
-  box-shadow: inset 0 0 0 1px #066FAC;
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  background-color: transparent;
 }
 
 .c34.RcButton-text:active.RcButton-text {
@@ -736,11 +752,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 .c9 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -7px;
-  right: -7px;
-  bottom: -7px;
-  left: -7px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -6px;
+  right: -6px;
+  bottom: -6px;
+  left: -6px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -924,11 +940,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 .c13 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -6px;
-  right: -6px;
-  bottom: -6px;
-  left: -6px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -1112,11 +1128,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 .c16 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -6px;
-  right: -6px;
-  bottom: -6px;
-  left: -6px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -1300,11 +1316,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 .c19 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -1488,11 +1504,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 .c23 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -1676,11 +1692,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 .c28 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -3px;
-  right: -3px;
-  bottom: -3px;
-  left: -3px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -1864,11 +1880,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 .c33 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -3px;
-  right: -3px;
-  bottom: -3px;
-  left: -3px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;

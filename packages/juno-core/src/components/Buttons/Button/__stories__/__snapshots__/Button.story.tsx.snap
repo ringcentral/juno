@@ -233,7 +233,11 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
 
 .c4.RcButton-text.focus-visible,
 .c4.RcButton-text[data-focus-visible-added] {
-  box-shadow: inset 0 0 0 1px #066FAC;
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  background-color: transparent;
 }
 
 .c4.RcButton-text:active.RcButton-text {
@@ -3008,7 +3012,11 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Variants 1`] = `
 
 .c2.RcButton-text.focus-visible,
 .c2.RcButton-text[data-focus-visible-added] {
-  box-shadow: inset 0 0 0 1px #066FAC;
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  background-color: transparent;
 }
 
 .c2.RcButton-text:active.RcButton-text {
@@ -4019,6 +4027,1313 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Disabled 1`] = `
 </ul>
 `;
 
+exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Focus Ring 1`] = `
+.c1 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c1 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c1 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c1.RcButton-text {
+  color: #066FAC;
+}
+
+.c1.RcButton-text.RcButton-disabled {
+  color: #C7C7C7;
+}
+
+.c1.RcButton-text.focus-visible,
+.c1.RcButton-text[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+  background-color: rgba(6,111,172,0.08);
+}
+
+.c1.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c1.RcButton-contained.focus-visible,
+.c1.RcButton-contained[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+  box-shadow: unset;
+}
+
+.c1.RcButton-contained.RcButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
+}
+
+.c1.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c1.RcButton-outlined.RcButton-disabled {
+  color: #C7C7C7;
+  border-color: #C7C7C7;
+}
+
+.c1.RcButton-outlined.focus-visible,
+.c1.RcButton-outlined[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.c1.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
+.c2 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c2 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c2 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c2.RcButton-text {
+  color: #E6413C;
+}
+
+.c2.RcButton-text.RcButton-disabled {
+  color: #C7C7C7;
+}
+
+.c2.RcButton-text.focus-visible,
+.c2.RcButton-text[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+  background-color: rgba(230,65,60,0.08);
+}
+
+.c2.RcButton-contained {
+  color: #fff;
+  background-color: #E6413C;
+}
+
+.c2.RcButton-contained.focus-visible,
+.c2.RcButton-contained[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+  box-shadow: unset;
+}
+
+.c2.RcButton-contained.RcButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
+}
+
+.c2.RcButton-outlined {
+  color: #E6413C;
+  border-color: #E6413C;
+  padding: 0px 15px;
+}
+
+.c2.RcButton-outlined.RcButton-disabled {
+  color: #C7C7C7;
+  border-color: #C7C7C7;
+}
+
+.c2.RcButton-outlined.focus-visible,
+.c2.RcButton-outlined[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.c2.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
+.c3 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c3 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c3 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c3.RcButton-text {
+  color: #3C9949;
+}
+
+.c3.RcButton-text.RcButton-disabled {
+  color: #C7C7C7;
+}
+
+.c3.RcButton-text.focus-visible,
+.c3.RcButton-text[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+  background-color: rgba(60,153,73,0.08);
+}
+
+.c3.RcButton-contained {
+  color: #fff;
+  background-color: #3C9949;
+}
+
+.c3.RcButton-contained.focus-visible,
+.c3.RcButton-contained[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+  box-shadow: unset;
+}
+
+.c3.RcButton-contained.RcButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
+}
+
+.c3.RcButton-outlined {
+  color: #3C9949;
+  border-color: #3C9949;
+  padding: 0px 15px;
+}
+
+.c3.RcButton-outlined.RcButton-disabled {
+  color: #C7C7C7;
+  border-color: #C7C7C7;
+}
+
+.c3.RcButton-outlined.focus-visible,
+.c3.RcButton-outlined[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.c3.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
+.c4 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c4 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c4 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c4.RcButton-text {
+  color: #FF8800;
+}
+
+.c4.RcButton-text.RcButton-disabled {
+  color: #C7C7C7;
+}
+
+.c4.RcButton-text.focus-visible,
+.c4.RcButton-text[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+  background-color: rgba(255,136,0,0.08);
+}
+
+.c4.RcButton-contained {
+  color: rgba(0,0,0,0.87);
+  background-color: #FF8800;
+}
+
+.c4.RcButton-contained.focus-visible,
+.c4.RcButton-contained[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+  box-shadow: unset;
+}
+
+.c4.RcButton-contained.RcButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
+}
+
+.c4.RcButton-outlined {
+  color: #FF8800;
+  border-color: #FF8800;
+  padding: 0px 15px;
+}
+
+.c4.RcButton-outlined.RcButton-disabled {
+  color: #C7C7C7;
+  border-color: #C7C7C7;
+}
+
+.c4.RcButton-outlined.focus-visible,
+.c4.RcButton-outlined[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.c4.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
+.c5 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+}
+
+.c5 .RcButton-startIcon {
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+.c5 .RcButton-endIcon {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.c5.RcButton-text {
+  color: #066FAC;
+  padding: 4px;
+  min-width: unset;
+  line-height: 1;
+}
+
+.c5.RcButton-text.RcButton-disabled {
+  color: #C7C7C7;
+}
+
+.c5.RcButton-text.focus-visible,
+.c5.RcButton-text[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+  background-color: rgba(6,111,172,0.08);
+}
+
+.c5.RcButton-text.focus-visible,
+.c5.RcButton-text[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  background-color: transparent;
+}
+
+.c5.RcButton-text:active.RcButton-text {
+  color: rgba(6,111,172,0.64);
+}
+
+.c5.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c5.RcButton-contained.focus-visible,
+.c5.RcButton-contained[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+  box-shadow: unset;
+}
+
+.c5.RcButton-contained.RcButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
+}
+
+.c5.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c5.RcButton-outlined.RcButton-disabled {
+  color: #C7C7C7;
+  border-color: #C7C7C7;
+}
+
+.c5.RcButton-outlined.focus-visible,
+.c5.RcButton-outlined[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.c5.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
+.c6 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+}
+
+.c6 .RcButton-startIcon {
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+.c6 .RcButton-endIcon {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.c6.RcButton-text {
+  color: #E6413C;
+  padding: 4px;
+  min-width: unset;
+  line-height: 1;
+}
+
+.c6.RcButton-text.RcButton-disabled {
+  color: #C7C7C7;
+}
+
+.c6.RcButton-text.focus-visible,
+.c6.RcButton-text[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+  background-color: rgba(230,65,60,0.08);
+}
+
+.c6.RcButton-text.focus-visible,
+.c6.RcButton-text[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  background-color: transparent;
+}
+
+.c6.RcButton-text:active.RcButton-text {
+  color: rgba(230,65,60,0.64);
+}
+
+.c6.RcButton-contained {
+  color: #fff;
+  background-color: #E6413C;
+}
+
+.c6.RcButton-contained.focus-visible,
+.c6.RcButton-contained[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+  box-shadow: unset;
+}
+
+.c6.RcButton-contained.RcButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
+}
+
+.c6.RcButton-outlined {
+  color: #E6413C;
+  border-color: #E6413C;
+  padding: 0px 15px;
+}
+
+.c6.RcButton-outlined.RcButton-disabled {
+  color: #C7C7C7;
+  border-color: #C7C7C7;
+}
+
+.c6.RcButton-outlined.focus-visible,
+.c6.RcButton-outlined[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.c6.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
+.c7 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+}
+
+.c7 .RcButton-startIcon {
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+.c7 .RcButton-endIcon {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.c7.RcButton-text {
+  color: #3C9949;
+  padding: 4px;
+  min-width: unset;
+  line-height: 1;
+}
+
+.c7.RcButton-text.RcButton-disabled {
+  color: #C7C7C7;
+}
+
+.c7.RcButton-text.focus-visible,
+.c7.RcButton-text[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+  background-color: rgba(60,153,73,0.08);
+}
+
+.c7.RcButton-text.focus-visible,
+.c7.RcButton-text[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  background-color: transparent;
+}
+
+.c7.RcButton-text:active.RcButton-text {
+  color: rgba(60,153,73,0.64);
+}
+
+.c7.RcButton-contained {
+  color: #fff;
+  background-color: #3C9949;
+}
+
+.c7.RcButton-contained.focus-visible,
+.c7.RcButton-contained[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+  box-shadow: unset;
+}
+
+.c7.RcButton-contained.RcButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
+}
+
+.c7.RcButton-outlined {
+  color: #3C9949;
+  border-color: #3C9949;
+  padding: 0px 15px;
+}
+
+.c7.RcButton-outlined.RcButton-disabled {
+  color: #C7C7C7;
+  border-color: #C7C7C7;
+}
+
+.c7.RcButton-outlined.focus-visible,
+.c7.RcButton-outlined[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.c7.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
+.c8 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+}
+
+.c8 .RcButton-startIcon {
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+.c8 .RcButton-endIcon {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.c8.RcButton-text {
+  color: #FF8800;
+  padding: 4px;
+  min-width: unset;
+  line-height: 1;
+}
+
+.c8.RcButton-text.RcButton-disabled {
+  color: #C7C7C7;
+}
+
+.c8.RcButton-text.focus-visible,
+.c8.RcButton-text[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+  background-color: rgba(255,136,0,0.08);
+}
+
+.c8.RcButton-text.focus-visible,
+.c8.RcButton-text[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  background-color: transparent;
+}
+
+.c8.RcButton-text:active.RcButton-text {
+  color: rgba(255,136,0,0.64);
+}
+
+.c8.RcButton-contained {
+  color: rgba(0,0,0,0.87);
+  background-color: #FF8800;
+}
+
+.c8.RcButton-contained.focus-visible,
+.c8.RcButton-contained[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+  box-shadow: unset;
+}
+
+.c8.RcButton-contained.RcButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
+}
+
+.c8.RcButton-outlined {
+  color: #FF8800;
+  border-color: #FF8800;
+  padding: 0px 15px;
+}
+
+.c8.RcButton-outlined.RcButton-disabled {
+  color: #C7C7C7;
+  border-color: #C7C7C7;
+}
+
+.c8.RcButton-outlined.focus-visible,
+.c8.RcButton-outlined[data-focus-visible-added] {
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.c8.RcButton-outlined:after {
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid transparent;
+}
+
+.c0 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c0 li {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 li > * + * {
+  margin-left: 1em;
+}
+
+.c0 li + li {
+  margin-top: 1em;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-text:hover {
+    background-color: rgba(230,65,60,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-contained:hover {
+    background-color: rgba(230,65,60,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c2.RcButton-outlined:hover {
+    background-color: rgba(230,65,60,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c3.RcButton-text:hover {
+    background-color: rgba(60,153,73,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c3.RcButton-contained:hover {
+    background-color: rgba(60,153,73,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c3.RcButton-outlined:hover {
+    background-color: rgba(60,153,73,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-text:hover {
+    background-color: rgba(255,136,0,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-contained:hover {
+    background-color: rgba(255,136,0,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4.RcButton-outlined:hover {
+    background-color: rgba(255,136,0,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c5.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c5.RcButton-text:hover {
+    color: rgba(6,111,172,0.8);
+    background-color: transparent;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c5.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c5.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c6.RcButton-text:hover {
+    background-color: rgba(230,65,60,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c6.RcButton-text:hover {
+    color: rgba(230,65,60,0.8);
+    background-color: transparent;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c6.RcButton-contained:hover {
+    background-color: rgba(230,65,60,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c6.RcButton-outlined:hover {
+    background-color: rgba(230,65,60,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7.RcButton-text:hover {
+    background-color: rgba(60,153,73,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7.RcButton-text:hover {
+    color: rgba(60,153,73,0.8);
+    background-color: transparent;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7.RcButton-contained:hover {
+    background-color: rgba(60,153,73,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c7.RcButton-outlined:hover {
+    background-color: rgba(60,153,73,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c8.RcButton-text:hover {
+    background-color: rgba(255,136,0,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c8.RcButton-text:hover {
+    color: rgba(255,136,0,0.8);
+    background-color: transparent;
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c8.RcButton-contained:hover {
+    background-color: rgba(255,136,0,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c8.RcButton-outlined:hover {
+    background-color: rgba(255,136,0,0.08);
+  }
+}
+
+<ul
+  className="c0"
+>
+  <li>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c3"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c4"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+  </li>
+  <br />
+  <br />
+  <li>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c2"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c3"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined RcButton-outlined c4"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+  </li>
+  <br />
+  <br />
+  <li>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c1"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c2"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c4"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+  </li>
+  <br />
+  <br />
+  <li>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c5"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c6"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c7"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c8"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        button
+      </span>
+    </button>
+  </li>
+</ul>
+`;
+
 exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Icon 1`] = `
 .c4 {
   width: 1em;
@@ -4533,7 +5848,11 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
 
 .c4.RcButton-text.focus-visible,
 .c4.RcButton-text[data-focus-visible-added] {
-  box-shadow: inset 0 0 0 1px #066FAC;
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  background-color: transparent;
 }
 
 .c4.RcButton-text:active.RcButton-text {

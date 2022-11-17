@@ -906,7 +906,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
     />
     <button
       aria-label="1"
-      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root"
+      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root RcIconButton-round"
       data-move-focused-0={0}
       data-move-focused-0-dial-button="1"
       data-test-id="1"
@@ -942,7 +942,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
     </button>
     <button
       aria-label="2,A B C"
-      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root"
+      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root RcIconButton-round"
       data-move-focused-0={1}
       data-move-focused-0-dial-button="2"
       data-test-id="2"
@@ -983,7 +983,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
     </button>
     <button
       aria-label="3,D E F"
-      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root"
+      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root RcIconButton-round"
       data-move-focused-0={2}
       data-move-focused-0-dial-button="3"
       data-test-id="3"
@@ -1024,7 +1024,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
     </button>
     <button
       aria-label="4,G H I"
-      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root"
+      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root RcIconButton-round"
       data-move-focused-0={3}
       data-move-focused-0-dial-button="4"
       data-test-id="4"
@@ -1065,7 +1065,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
     </button>
     <button
       aria-label="5,J K L"
-      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root"
+      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root RcIconButton-round"
       data-move-focused-0={4}
       data-move-focused-0-dial-button="5"
       data-test-id="5"
@@ -1106,7 +1106,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
     </button>
     <button
       aria-label="6,M N O"
-      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root"
+      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root RcIconButton-round"
       data-move-focused-0={5}
       data-move-focused-0-dial-button="6"
       data-test-id="6"
@@ -1147,7 +1147,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
     </button>
     <button
       aria-label="7,P Q R S"
-      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root"
+      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root RcIconButton-round"
       data-move-focused-0={6}
       data-move-focused-0-dial-button="7"
       data-test-id="7"
@@ -1188,7 +1188,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
     </button>
     <button
       aria-label="8,T U V"
-      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root"
+      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root RcIconButton-round"
       data-move-focused-0={7}
       data-move-focused-0-dial-button="8"
       data-test-id="8"
@@ -1229,7 +1229,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
     </button>
     <button
       aria-label="9,W X Y Z"
-      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root"
+      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root RcIconButton-round"
       data-move-focused-0={8}
       data-move-focused-0-dial-button="9"
       data-test-id="9"
@@ -1270,7 +1270,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
     </button>
     <button
       aria-label="*"
-      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root"
+      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root RcIconButton-round"
       data-move-focused-0={9}
       data-move-focused-0-dial-button="*"
       data-test-id="*"
@@ -1306,7 +1306,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
     </button>
     <button
       aria-label="0,+"
-      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root"
+      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root RcIconButton-round"
       data-move-focused-0={10}
       data-move-focused-0-dial-button="0"
       data-test-id="0"
@@ -1347,7 +1347,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
     </button>
     <button
       aria-label="#"
-      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root"
+      className="MuiButtonBase-root c5 c6 c7 c8 RcIconButton-root RcIconButton-round"
       data-move-focused-0={11}
       data-move-focused-0-dial-button="#"
       data-test-id="#"
@@ -1453,11 +1453,11 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 .c6[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -3px;
-  right: -3px;
-  bottom: -3px;
-  left: -3px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -2562,7 +2562,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
         New Call
       </p>
       <div
-        className="MuiBox-root MuiBox-root-135"
+        className="MuiBox-root MuiBox-root-138"
       />
       <button
         className="MuiButtonBase-root c5 c6 RcIconButton-root"
@@ -3792,7 +3792,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
       />
       <button
         aria-label="1"
-        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root"
+        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root RcIconButton-round"
         data-move-focused-0={0}
         data-move-focused-0-dial-button="1"
         data-test-id="1"
@@ -3831,7 +3831,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
       </button>
       <button
         aria-label="2,A B C"
-        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root"
+        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root RcIconButton-round"
         data-move-focused-0={1}
         data-move-focused-0-dial-button="2"
         data-test-id="2"
@@ -3875,7 +3875,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
       </button>
       <button
         aria-label="3,D E F"
-        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root"
+        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root RcIconButton-round"
         data-move-focused-0={2}
         data-move-focused-0-dial-button="3"
         data-test-id="3"
@@ -3919,7 +3919,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
       </button>
       <button
         aria-label="4,G H I"
-        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root"
+        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root RcIconButton-round"
         data-move-focused-0={3}
         data-move-focused-0-dial-button="4"
         data-test-id="4"
@@ -3963,7 +3963,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
       </button>
       <button
         aria-label="5,J K L"
-        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root"
+        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root RcIconButton-round"
         data-move-focused-0={4}
         data-move-focused-0-dial-button="5"
         data-test-id="5"
@@ -4007,7 +4007,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
       </button>
       <button
         aria-label="6,M N O"
-        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root"
+        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root RcIconButton-round"
         data-move-focused-0={5}
         data-move-focused-0-dial-button="6"
         data-test-id="6"
@@ -4051,7 +4051,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
       </button>
       <button
         aria-label="7,P Q R S"
-        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root"
+        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root RcIconButton-round"
         data-move-focused-0={6}
         data-move-focused-0-dial-button="7"
         data-test-id="7"
@@ -4095,7 +4095,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
       </button>
       <button
         aria-label="8,T U V"
-        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root"
+        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root RcIconButton-round"
         data-move-focused-0={7}
         data-move-focused-0-dial-button="8"
         data-test-id="8"
@@ -4139,7 +4139,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
       </button>
       <button
         aria-label="9,W X Y Z"
-        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root"
+        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root RcIconButton-round"
         data-move-focused-0={8}
         data-move-focused-0-dial-button="9"
         data-test-id="9"
@@ -4183,7 +4183,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
       </button>
       <button
         aria-label="*"
-        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root"
+        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root RcIconButton-round"
         data-move-focused-0={9}
         data-move-focused-0-dial-button="*"
         data-test-id="*"
@@ -4222,7 +4222,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
       </button>
       <button
         aria-label="0,+"
-        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root"
+        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root RcIconButton-round"
         data-move-focused-0={10}
         data-move-focused-0-dial-button="0"
         data-test-id="0"
@@ -4266,7 +4266,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
       </button>
       <button
         aria-label="#"
-        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root"
+        className="MuiButtonBase-root c5 c22 c23 c24 RcIconButton-root RcIconButton-round"
         data-move-focused-0={11}
         data-move-focused-0-dial-button="#"
         data-test-id="#"
@@ -4443,11 +4443,11 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
 .c7[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -3px;
-  right: -3px;
-  bottom: -3px;
-  left: -3px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -4896,7 +4896,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
 }
 
 <div
-  className="MuiBox-root MuiBox-root-136"
+  className="MuiBox-root MuiBox-root-139"
 >
   <div
     className="c0"
@@ -5552,7 +5552,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
               />
               <button
                 aria-label="1"
-                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root"
+                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root RcIconButton-round"
                 data-move-focused-0={0}
                 data-move-focused-0-dial-button="1"
                 disabled={false}
@@ -5590,7 +5590,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
               </button>
               <button
                 aria-label="2,A B C"
-                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root"
+                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root RcIconButton-round"
                 data-move-focused-0={1}
                 data-move-focused-0-dial-button="2"
                 disabled={false}
@@ -5633,7 +5633,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
               </button>
               <button
                 aria-label="3,D E F"
-                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root"
+                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root RcIconButton-round"
                 data-move-focused-0={2}
                 data-move-focused-0-dial-button="3"
                 disabled={false}
@@ -5676,7 +5676,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
               </button>
               <button
                 aria-label="4,G H I"
-                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root"
+                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root RcIconButton-round"
                 data-move-focused-0={3}
                 data-move-focused-0-dial-button="4"
                 disabled={false}
@@ -5719,7 +5719,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
               </button>
               <button
                 aria-label="5,J K L"
-                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root"
+                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root RcIconButton-round"
                 data-move-focused-0={4}
                 data-move-focused-0-dial-button="5"
                 disabled={false}
@@ -5762,7 +5762,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
               </button>
               <button
                 aria-label="6,M N O"
-                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root"
+                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root RcIconButton-round"
                 data-move-focused-0={5}
                 data-move-focused-0-dial-button="6"
                 disabled={false}
@@ -5805,7 +5805,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
               </button>
               <button
                 aria-label="7,P Q R S"
-                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root"
+                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root RcIconButton-round"
                 data-move-focused-0={6}
                 data-move-focused-0-dial-button="7"
                 disabled={false}
@@ -5848,7 +5848,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
               </button>
               <button
                 aria-label="8,T U V"
-                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root"
+                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root RcIconButton-round"
                 data-move-focused-0={7}
                 data-move-focused-0-dial-button="8"
                 disabled={false}
@@ -5891,7 +5891,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
               </button>
               <button
                 aria-label="9,W X Y Z"
-                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root"
+                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root RcIconButton-round"
                 data-move-focused-0={8}
                 data-move-focused-0-dial-button="9"
                 disabled={false}
@@ -5934,7 +5934,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
               </button>
               <button
                 aria-label="*"
-                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root"
+                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root RcIconButton-round"
                 data-move-focused-0={9}
                 data-move-focused-0-dial-button="*"
                 disabled={false}
@@ -5972,7 +5972,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
               </button>
               <button
                 aria-label="0,+"
-                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root"
+                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root RcIconButton-round"
                 data-move-focused-0={10}
                 data-move-focused-0-dial-button="0"
                 disabled={false}
@@ -6015,7 +6015,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
               </button>
               <button
                 aria-label="#"
-                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root"
+                className="MuiButtonBase-root c6 c15 c16 c17 RcIconButton-root RcIconButton-round"
                 data-move-focused-0={11}
                 data-move-focused-0-dial-button="#"
                 disabled={false}
@@ -6058,7 +6058,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
     </div>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-137"
+    className="MuiBox-root MuiBox-root-140"
     style={
       Object {
         "overflowX": "hidden",

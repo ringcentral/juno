@@ -40,6 +40,9 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/ButtonBase ButtonBase 1`] = 
     >
       cool
     </p>
+    <span
+      className="MuiTouchRipple-root"
+    />
   </button>
 </div>
 `;

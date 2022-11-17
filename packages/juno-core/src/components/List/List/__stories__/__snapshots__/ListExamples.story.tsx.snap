@@ -278,7 +278,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
     >
       <button
         aria-label="Comments"
-        className="MuiButtonBase-root c3 RcIconButton-root"
+        className="MuiButtonBase-root c3 RcIconButton-root RcIconButton-round"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -342,7 +342,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
     >
       <button
         aria-label="Comments"
-        className="MuiButtonBase-root c3 RcIconButton-root"
+        className="MuiButtonBase-root c3 RcIconButton-root RcIconButton-round"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -406,7 +406,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
     >
       <button
         aria-label="Comments"
-        className="MuiButtonBase-root c3 RcIconButton-root"
+        className="MuiButtonBase-root c3 RcIconButton-root RcIconButton-round"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}
@@ -470,7 +470,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
     >
       <button
         aria-label="Comments"
-        className="MuiButtonBase-root c3 RcIconButton-root"
+        className="MuiButtonBase-root c3 RcIconButton-root RcIconButton-round"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}

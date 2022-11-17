@@ -397,7 +397,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
     </div>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-138"
+    className="MuiBox-root MuiBox-root-141"
   >
     <p
       className="MuiTypography-root c3"
@@ -415,7 +415,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
     </p>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-139"
+    className="MuiBox-root MuiBox-root-142"
   >
     <h2
       className="MuiTypography-root c5"
@@ -432,7 +432,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
     <button
       aria-describedby={null}
       aria-label="Favorite"
-      className="MuiButtonBase-root c7 RcIconButton-root"
+      className="MuiButtonBase-root c7 RcIconButton-root RcIconButton-round"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -471,7 +471,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
     <button
       aria-describedby={null}
       aria-label="Settings"
-      className="MuiButtonBase-root c10 RcIconButton-root"
+      className="MuiButtonBase-root c10 RcIconButton-root RcIconButton-round"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}
@@ -510,7 +510,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/DialogTitle DialogTitle Examp
     <button
       aria-describedby={null}
       aria-label="Close"
-      className="MuiButtonBase-root c10 RcIconButton-root"
+      className="MuiButtonBase-root c10 RcIconButton-root RcIconButton-round"
       disabled={false}
       onBlur={[Function]}
       onDragLeave={[Function]}

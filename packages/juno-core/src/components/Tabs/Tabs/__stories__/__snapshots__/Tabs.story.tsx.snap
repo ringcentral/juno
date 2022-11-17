@@ -289,7 +289,7 @@ exports[`Storyshots 🚀 Cleanup Components/Tabs/Tabs Tabs 1`] = `
         </button>
       </div>
       <span
-        className="PrivateTabIndicator-root-354 PrivateTabIndicator-colorPrimary-355 MuiTabs-indicator RcTabs-indicator"
+        className="PrivateTabIndicator-root-357 PrivateTabIndicator-colorPrimary-358 MuiTabs-indicator RcTabs-indicator"
         style={
           Object {
             "left": 0,
@@ -487,7 +487,7 @@ Array [
               </span>
             </span>
             <span
-              className="PrivateTabIndicator-root-363 PrivateTabIndicator-colorPrimary-364 MuiTabs-indicator RcTabs-indicator"
+              className="PrivateTabIndicator-root-366 PrivateTabIndicator-colorPrimary-367 MuiTabs-indicator RcTabs-indicator"
               style={Object {}}
             />
           </button>
@@ -1116,7 +1116,7 @@ Array [
           </button>
         </div>
         <span
-          className="PrivateTabIndicator-root-358 PrivateTabIndicator-colorPrimary-359 MuiTabs-indicator RcTabs-indicator"
+          className="PrivateTabIndicator-root-361 PrivateTabIndicator-colorPrimary-362 MuiTabs-indicator RcTabs-indicator"
           style={
             Object {
               "left": 0,
@@ -1549,7 +1549,7 @@ Array [
           </button>
         </div>
         <span
-          className="PrivateTabIndicator-root-358 PrivateTabIndicator-colorPrimary-359 MuiTabs-indicator RcTabs-indicator"
+          className="PrivateTabIndicator-root-361 PrivateTabIndicator-colorPrimary-362 MuiTabs-indicator RcTabs-indicator"
           style={
             Object {
               "left": 0,
@@ -1970,7 +1970,7 @@ Array [
           </button>
         </div>
         <span
-          className="PrivateTabIndicator-root-358 PrivateTabIndicator-colorPrimary-359 MuiTabs-indicator RcTabs-indicator"
+          className="PrivateTabIndicator-root-361 PrivateTabIndicator-colorPrimary-362 MuiTabs-indicator RcTabs-indicator"
           style={
             Object {
               "left": 0,
@@ -2471,7 +2471,7 @@ Array [
           </button>
         </div>
         <span
-          className="PrivateTabIndicator-root-358 PrivateTabIndicator-colorPrimary-359 MuiTabs-indicator RcTabs-indicator"
+          className="PrivateTabIndicator-root-361 PrivateTabIndicator-colorPrimary-362 MuiTabs-indicator RcTabs-indicator"
           style={
             Object {
               "left": 0,
@@ -2571,7 +2571,7 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-362"
+    className="MuiBox-root MuiBox-root-365"
   >
     <button
       className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
@@ -3047,7 +3047,7 @@ Array [
           </button>
         </div>
         <span
-          className="PrivateTabIndicator-root-367 PrivateTabIndicator-colorPrimary-368 MuiTabs-indicator RcTabs-indicator"
+          className="PrivateTabIndicator-root-370 PrivateTabIndicator-colorPrimary-371 MuiTabs-indicator RcTabs-indicator"
           style={
             Object {
               "left": 0,

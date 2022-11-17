@@ -1646,7 +1646,11 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
 
 .c10.RcButton-text.focus-visible,
 .c10.RcButton-text[data-focus-visible-added] {
-  box-shadow: inset 0 0 0 1px #066FAC;
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  background-color: transparent;
 }
 
 .c10.RcButton-text:active.RcButton-text {
@@ -1771,7 +1775,11 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
 
 .c18.RcButton-text.focus-visible,
 .c18.RcButton-text[data-focus-visible-added] {
-  box-shadow: inset 0 0 0 1px #46BE59;
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  background-color: transparent;
 }
 
 .c18.RcButton-text:active.RcButton-text {
@@ -2399,7 +2407,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
 }
 
 <div
-  className="MuiBox-root MuiBox-root-221"
+  className="MuiBox-root MuiBox-root-224"
 >
   <div>
     <p

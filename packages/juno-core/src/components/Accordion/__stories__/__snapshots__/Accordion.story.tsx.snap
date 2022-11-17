@@ -239,7 +239,7 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/Accordion Accordion 1`] = 
         className="MuiIconButton-label"
       >
         <button
-          className="MuiButtonBase-root c3 c4 RcIconButton-root"
+          className="MuiButtonBase-root c3 c4 RcIconButton-root RcIconButton-round"
           disabled={false}
           onBlur={[Function]}
           onDragLeave={[Function]}
@@ -550,7 +550,7 @@ Array [
           className="MuiIconButton-label"
         >
           <button
-            className="MuiButtonBase-root c3 c4 RcIconButton-root"
+            className="MuiButtonBase-root c3 c4 RcIconButton-root RcIconButton-round"
             disabled={false}
             onBlur={[Function]}
             onDragLeave={[Function]}
@@ -853,7 +853,7 @@ Array [
           className="MuiIconButton-label"
         >
           <button
-            className="MuiButtonBase-root c3 c4 RcIconButton-root"
+            className="MuiButtonBase-root c3 c4 RcIconButton-root RcIconButton-round"
             disabled={false}
             onBlur={[Function]}
             onDragLeave={[Function]}
@@ -1156,7 +1156,7 @@ Array [
           className="MuiIconButton-label"
         >
           <button
-            className="MuiButtonBase-root c3 c4 RcIconButton-root"
+            className="MuiButtonBase-root c3 c4 RcIconButton-root RcIconButton-round"
             disabled={false}
             onBlur={[Function]}
             onDragLeave={[Function]}

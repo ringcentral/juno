@@ -331,7 +331,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 
 .c11.RcButton-text.focus-visible,
 .c11.RcButton-text[data-focus-visible-added] {
-  box-shadow: inset 0 0 0 1px #066FAC;
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  background-color: transparent;
 }
 
 .c11.RcButton-text:active.RcButton-text {
@@ -734,11 +738,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 .c13 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -1801,7 +1805,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
 
 .c12.RcButton-text.focus-visible,
 .c12.RcButton-text[data-focus-visible-added] {
-  box-shadow: inset 0 0 0 1px #066FAC;
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  background-color: transparent;
 }
 
 .c12.RcButton-text:active.RcButton-text {
@@ -2175,11 +2183,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
 .c14 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;

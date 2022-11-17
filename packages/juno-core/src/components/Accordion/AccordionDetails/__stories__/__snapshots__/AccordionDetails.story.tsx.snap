@@ -239,7 +239,7 @@ exports[`Storyshots 🚀 Cleanup Components/Accordion/AccordionDetails Accordion
         className="MuiIconButton-label"
       >
         <button
-          className="MuiButtonBase-root c3 c4 RcIconButton-root"
+          className="MuiButtonBase-root c3 c4 RcIconButton-root RcIconButton-round"
           disabled={false}
           onBlur={[Function]}
           onDragLeave={[Function]}

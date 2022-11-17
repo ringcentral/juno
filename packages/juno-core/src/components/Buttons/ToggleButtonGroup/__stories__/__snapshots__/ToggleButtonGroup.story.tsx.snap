@@ -415,11 +415,11 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/ToggleButtonGroup ToggleButt
 .c9[data-focus-visible-added] .RcToggleButton-label:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 2px;
   pointer-events: none;
   z-index: 1;

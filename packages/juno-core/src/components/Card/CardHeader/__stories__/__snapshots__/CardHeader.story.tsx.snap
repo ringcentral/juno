@@ -229,7 +229,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardHeader CardHeader 1`] = `
     >
       <button
         aria-label="settings"
-        className="MuiButtonBase-root c3 RcIconButton-root"
+        className="MuiButtonBase-root c3 RcIconButton-root RcIconButton-round"
         disabled={false}
         onBlur={[Function]}
         onDragLeave={[Function]}

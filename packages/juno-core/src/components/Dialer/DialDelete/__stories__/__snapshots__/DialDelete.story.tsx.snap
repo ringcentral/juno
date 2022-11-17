@@ -59,11 +59,11 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer/DialDelete DialDelete 1`] = `
 .c0[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;

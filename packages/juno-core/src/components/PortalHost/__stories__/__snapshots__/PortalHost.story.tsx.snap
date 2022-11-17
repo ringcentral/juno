@@ -399,11 +399,11 @@ Array [
 .c2[data-focus-visible-added]:after {
   content: '';
   position: absolute;
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-  box-shadow: 0 0 0 1px #066FAC;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  box-shadow: 0 0 0 2px #066FAC;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -1231,7 +1231,7 @@ Array [
         value="Example"
       />
       <div
-        className="MuiBox-root MuiBox-root-337"
+        className="MuiBox-root MuiBox-root-340"
       >
         <button
           aria-hidden={true}
