@@ -1,4 +1,11 @@
 
+## [1.20.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.19.0...juno-icon-v1.20.0) (2022-11-18)
+
+
+### Features
+
+* **FIJI-58757:** [Icon] add icon PhoneS ([2315dc3](https://github.com/ringcentral/juno/commit/2315dc3940e13b3a7b810c771925035f8f48d9eb))
+
 ## [1.19.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.18.0...juno-icon-v1.19.0) (2022-11-14)
 
 
