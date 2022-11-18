@@ -1525,6 +1525,10 @@ Array [
   margin-right: 0;
 }
 
+.c0 .RcSplitButton-groupedContainedHorizontal:not(:last-child) {
+  border-right: unset;
+}
+
 .c0 .RcSplitButton-actionButton {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -1635,7 +1639,7 @@ Array [
 }
 
 <div
-    className="MuiButtonGroup-root RcSplitButton-root c0 MuiButtonGroup-disableElevation"
+    className="MuiButtonGroup-root RcSplitButton-root c0 MuiButtonGroup-disableElevation MuiButtonGroup-contained"
     role="group"
   >
     <span
@@ -1650,7 +1654,7 @@ Array [
       title="Normal Title"
     >
       <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-actionButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -1703,7 +1707,7 @@ Array [
     >
       <button
         aria-haspopup="listbox"
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c2 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-controlButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}

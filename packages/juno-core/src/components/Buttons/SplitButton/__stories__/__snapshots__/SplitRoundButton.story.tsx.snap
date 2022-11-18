@@ -587,6 +587,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   margin-right: 0;
 }
 
+.c2 .RcSplitButton-groupedContainedHorizontal:not(:last-child) {
+  border-right: unset;
+}
+
 .c2 .RcSplitButton-actionButton {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -678,6 +682,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   background: rgba(6,111,172,0.24);
 }
 
+.c9 .RcSplitButton-groupedContainedHorizontal:not(:last-child) {
+  border-right: unset;
+}
+
 .c9 .RcSplitButton-actionButton {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -748,6 +756,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   box-shadow: none;
 }
 
+.c9 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible,
+.c9 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added] {
+  outline: none;
+}
+
 .c9 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible:after,
 .c9 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
@@ -773,6 +786,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c9.RcSplitButton-menuOpen .RcSplitButton-controlButton {
   background: rgba(6,111,172,0.24);
+}
+
+.c11 .RcSplitButton-groupedContainedHorizontal:not(:last-child) {
+  border-right: unset;
 }
 
 .c11 .RcSplitButton-actionButton {
@@ -866,6 +883,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   background: rgba(6,111,172,0.24);
 }
 
+.c13 .RcSplitButton-groupedContainedHorizontal:not(:last-child) {
+  border-right: unset;
+}
+
 .c13 .RcSplitButton-actionButton {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -936,6 +957,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   box-shadow: none;
 }
 
+.c13 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible,
+.c13 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added] {
+  outline: none;
+}
+
 .c13 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible:after,
 .c13 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
@@ -961,6 +987,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c13.RcSplitButton-menuOpen .RcSplitButton-controlButton {
   background: rgba(6,111,172,0.24);
+}
+
+.c14 .RcSplitButton-groupedContainedHorizontal:not(:last-child) {
+  border-right: unset;
 }
 
 .c14 .RcSplitButton-actionButton {
@@ -1054,6 +1084,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   background: rgba(6,111,172,0.24);
 }
 
+.c16 .RcSplitButton-groupedContainedHorizontal:not(:last-child) {
+  border-right: unset;
+}
+
 .c16 .RcSplitButton-actionButton {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -1124,6 +1158,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   box-shadow: none;
 }
 
+.c16 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible,
+.c16 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added] {
+  outline: none;
+}
+
 .c16 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible:after,
 .c16 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
@@ -1149,6 +1188,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c16.RcSplitButton-menuOpen .RcSplitButton-controlButton {
   background: rgba(6,111,172,0.24);
+}
+
+.c17 .RcSplitButton-groupedContainedHorizontal:not(:last-child) {
+  border-right: unset;
 }
 
 .c17 .RcSplitButton-actionButton {
@@ -1242,6 +1285,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   background: rgba(6,111,172,0.24);
 }
 
+.c19 .RcSplitButton-groupedContainedHorizontal:not(:last-child) {
+  border-right: unset;
+}
+
 .c19 .RcSplitButton-actionButton {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -1312,6 +1359,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   box-shadow: none;
 }
 
+.c19 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible,
+.c19 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added] {
+  outline: none;
+}
+
 .c19 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible:after,
 .c19 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
@@ -1337,6 +1389,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c19.RcSplitButton-menuOpen .RcSplitButton-controlButton {
   background: rgba(6,111,172,0.24);
+}
+
+.c20 .RcSplitButton-groupedContainedHorizontal:not(:last-child) {
+  border-right: unset;
 }
 
 .c20 .RcSplitButton-actionButton {
@@ -1430,6 +1486,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   background: rgba(6,111,172,0.24);
 }
 
+.c23 .RcSplitButton-groupedContainedHorizontal:not(:last-child) {
+  border-right: unset;
+}
+
 .c23 .RcSplitButton-actionButton {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -1500,6 +1560,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   box-shadow: none;
 }
 
+.c23 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible,
+.c23 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added] {
+  outline: none;
+}
+
 .c23 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible:after,
 .c23 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
@@ -1525,6 +1590,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c23.RcSplitButton-menuOpen .RcSplitButton-controlButton {
   background: rgba(6,111,172,0.24);
+}
+
+.c25 .RcSplitButton-groupedContainedHorizontal:not(:last-child) {
+  border-right: unset;
 }
 
 .c25 .RcSplitButton-actionButton {
@@ -1618,6 +1687,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   background: rgba(6,111,172,0.24);
 }
 
+.c28 .RcSplitButton-groupedContainedHorizontal:not(:last-child) {
+  border-right: unset;
+}
+
 .c28 .RcSplitButton-actionButton {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -1688,6 +1761,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   box-shadow: none;
 }
 
+.c28 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible,
+.c28 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added] {
+  outline: none;
+}
+
 .c28 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible:after,
 .c28 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added]:after {
   content: '';
@@ -1713,6 +1791,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c28.RcSplitButton-menuOpen .RcSplitButton-controlButton {
   background: rgba(6,111,172,0.24);
+}
+
+.c30 .RcSplitButton-groupedContainedHorizontal:not(:last-child) {
+  border-right: unset;
 }
 
 .c30 .RcSplitButton-actionButton {
@@ -1806,6 +1888,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   background: rgba(6,111,172,0.24);
 }
 
+.c33 .RcSplitButton-groupedContainedHorizontal:not(:last-child) {
+  border-right: unset;
+}
+
 .c33 .RcSplitButton-actionButton {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -1874,6 +1960,11 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   min-width: auto;
   padding: 0;
   box-shadow: none;
+}
+
+.c33 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible,
+.c33 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton[data-focus-visible-added] {
+  outline: none;
 }
 
 .c33 .RcSplitButton-groupedHorizontal.RcSplitButton-actionButton.focus-visible:after,
@@ -2280,12 +2371,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       round
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c2 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c2 MuiButtonGroup-disableElevation MuiButtonGroup-contained"
       role="group"
     >
       <button
         aria-label="mainAction"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-actionButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -2335,7 +2426,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       <button
         aria-haspopup="listbox"
         aria-label="openMenu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-controlButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -2385,12 +2476,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       plainIcon
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c9 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c9 MuiButtonGroup-disableElevation MuiButtonGroup-contained"
       role="group"
     >
       <button
         aria-label="mainAction"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-actionButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -2437,7 +2528,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       <button
         aria-haspopup="listbox"
         aria-label="openMenu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-controlButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -2495,12 +2586,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       round
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c11 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c11 MuiButtonGroup-disableElevation MuiButtonGroup-contained"
       role="group"
     >
       <button
         aria-label="mainAction"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-actionButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -2550,7 +2641,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       <button
         aria-haspopup="listbox"
         aria-label="openMenu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-controlButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -2600,12 +2691,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       plainIcon
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c13 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c13 MuiButtonGroup-disableElevation MuiButtonGroup-contained"
       role="group"
     >
       <button
         aria-label="mainAction"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-actionButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -2652,7 +2743,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       <button
         aria-haspopup="listbox"
         aria-label="openMenu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-controlButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -2710,12 +2801,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       round
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c14 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c14 MuiButtonGroup-disableElevation MuiButtonGroup-contained"
       role="group"
     >
       <button
         aria-label="mainAction"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-actionButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -2765,7 +2856,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       <button
         aria-haspopup="listbox"
         aria-label="openMenu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-controlButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -2815,12 +2906,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       plainIcon
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c16 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c16 MuiButtonGroup-disableElevation MuiButtonGroup-contained"
       role="group"
     >
       <button
         aria-label="mainAction"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-actionButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -2867,7 +2958,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       <button
         aria-haspopup="listbox"
         aria-label="openMenu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-controlButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -2925,12 +3016,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       round
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c17 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c17 MuiButtonGroup-disableElevation MuiButtonGroup-contained"
       role="group"
     >
       <button
         aria-label="mainAction"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-actionButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -2980,7 +3071,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       <button
         aria-haspopup="listbox"
         aria-label="openMenu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c4 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-controlButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -3030,12 +3121,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       plainIcon
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c19 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c19 MuiButtonGroup-disableElevation MuiButtonGroup-contained"
       role="group"
     >
       <button
         aria-label="mainAction"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-actionButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -3082,7 +3173,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       <button
         aria-haspopup="listbox"
         aria-label="openMenu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c10 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-controlButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -3140,12 +3231,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       round
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c20 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c20 MuiButtonGroup-disableElevation MuiButtonGroup-contained"
       role="group"
     >
       <button
         aria-label="mainAction"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c21 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c21 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-actionButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -3195,7 +3286,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       <button
         aria-haspopup="listbox"
         aria-label="openMenu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c21 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c21 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-controlButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -3245,12 +3336,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       plainIcon
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c23 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c23 MuiButtonGroup-disableElevation MuiButtonGroup-contained"
       role="group"
     >
       <button
         aria-label="mainAction"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c24 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c24 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-actionButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -3297,7 +3388,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       <button
         aria-haspopup="listbox"
         aria-label="openMenu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c24 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c24 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-controlButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -3355,12 +3446,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       round
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c25 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c25 MuiButtonGroup-disableElevation MuiButtonGroup-contained"
       role="group"
     >
       <button
         aria-label="mainAction"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c26 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c26 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-actionButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -3410,7 +3501,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       <button
         aria-haspopup="listbox"
         aria-label="openMenu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c26 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c26 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-controlButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -3460,12 +3551,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       plainIcon
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c28 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c28 MuiButtonGroup-disableElevation MuiButtonGroup-contained"
       role="group"
     >
       <button
         aria-label="mainAction"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c29 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c29 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-actionButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -3512,7 +3603,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       <button
         aria-haspopup="listbox"
         aria-label="openMenu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c29 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c29 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-controlButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -3570,12 +3661,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       round
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c30 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c30 MuiButtonGroup-disableElevation MuiButtonGroup-contained"
       role="group"
     >
       <button
         aria-label="mainAction"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c31 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c31 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-actionButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -3625,7 +3716,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       <button
         aria-haspopup="listbox"
         aria-label="openMenu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c31 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c31 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-controlButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -3675,12 +3766,12 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       plainIcon
     </p>
     <div
-      className="MuiButtonGroup-root RcSplitButton-root c33 MuiButtonGroup-disableElevation"
+      className="MuiButtonGroup-root RcSplitButton-root c33 MuiButtonGroup-disableElevation MuiButtonGroup-contained"
       role="group"
     >
       <button
         aria-label="mainAction"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c34 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-actionButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c34 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-actionButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -3727,7 +3818,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
       <button
         aria-haspopup="listbox"
         aria-label="openMenu"
-        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c34 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined RcSplitButton-controlButton MuiButton-disableElevation"
+        className="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c3 c34 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal RcSplitButton-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal RcSplitButton-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary RcSplitButton-controlButton MuiButton-disableElevation"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}

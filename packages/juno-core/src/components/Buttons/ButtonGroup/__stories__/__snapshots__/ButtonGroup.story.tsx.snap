@@ -77,11 +77,11 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/ButtonGroup ButtonGroup 1`] 
 }
 
 <div
-  className="MuiButtonGroup-root "
+  className="MuiButtonGroup-root MuiButtonGroup-contained"
   role="group"
 >
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined"
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
@@ -104,7 +104,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons/ButtonGroup ButtonGroup 1`] 
     </span>
   </button>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlined"
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0 MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary"
     disabled={false}
     onBlur={[Function]}
     onDragLeave={[Function]}
