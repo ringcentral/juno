@@ -28,7 +28,13 @@ import {
 import { RcIconProps, RcIconSize } from '../../Icon';
 import { RcMenu, RcMenuProps } from '../../Menu/Menu';
 import { WithTooltipProps } from '../../Tooltip';
-import { RcButton, RcButtonProps } from '../Button';
+import {
+  RcButtonDefaultVariant,
+  RcButtonProps,
+  RcButtonDefaultSize,
+  RcButtonDefaultColor,
+  RcButton,
+} from '../Button';
 import { RcButtonGroup, RcButtonGroupProps } from '../ButtonGroup';
 import { RcIconButtonProps } from '../IconButton';
 import { splitButtonStyle, StyledArrowIcon } from './styles';
@@ -319,8 +325,12 @@ const _RcSplitButton = forwardRef<any, RcSplitButtonProps>(
           innerRef={splitRef}
           classes={classes}
         >
-          <RcButton {..._ActionButtonProps} />
-          <RcButton aria-haspopup="listbox" {..._ControlButtonProps}>
+          <RcButton {..._ActionButtonProps} focusVariant="ripple" />
+          <RcButton
+            aria-haspopup="listbox"
+            {..._ControlButtonProps}
+            focusVariant="ripple"
+          >
             <StyledArrowIcon
               open={isMenuOpen}
               size={variantIs(['round', 'plainIcon']) ? size : toButtonSize}
@@ -350,9 +360,9 @@ const RcSplitButton = styled(_RcSplitButton)`
 RcSplitButton.displayName = 'RcSplitButton';
 
 RcSplitButton.defaultProps = {
-  size: RcButton.defaultProps!.size,
-  color: RcButton.defaultProps!.color,
-  variant: RcButton.defaultProps!.variant,
+  size: RcButtonDefaultSize,
+  color: RcButtonDefaultColor,
+  variant: RcButtonDefaultVariant,
   ControlButtonProps: {},
   ActionButtonProps: {},
   MenuProps: {},

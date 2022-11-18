@@ -89,9 +89,7 @@ type RcButtonProps = {
 >;
 
 const _RcButton = forwardRef<any, RcButtonProps>(
-  (inProps: RcButtonProps, ref) => {
-    const props = useThemeProps({ props: inProps, name: 'RcButton' });
-
+  (props: RcButtonProps, ref) => {
     if (process.env.NODE_ENV !== 'production') {
       // eslint-disable-next-line react-hooks/rules-of-hooks
       useDeprecatedCheck(RcButton, props, [
@@ -102,7 +100,6 @@ const _RcButton = forwardRef<any, RcButtonProps>(
         },
       ]);
     }
-
     const {
       children: childrenProp,
       classes: classesProp,
@@ -242,18 +239,37 @@ const _RcButton = forwardRef<any, RcButtonProps>(
   },
 );
 
+export const RcButtonDefaultSize = 'large';
+export const RcButtonDefaultColor = 'primary';
+export const RcButtonDefaultVariant = 'contained';
+
 /** @release */
-const RcButton = styled(withTooltip(_RcButton))`
+const RcButton = styled(withTooltip(_RcButton)).attrs(
+  (inProps: RcButtonProps) => {
+    const {
+      // @ts-ignore
+      theme,
+      // Omit className, prevent duplicate className
+      className,
+      size = RcButtonDefaultSize,
+      color = RcButtonDefaultColor,
+      variant = RcButtonDefaultVariant,
+      loadingMode = 'replace',
+      focusVariant = 'ripple',
+      ...rest
+    } = useThemeProps({ props: inProps, name: 'RcButton' });
+    return {
+      size,
+      color,
+      variant,
+      loadingMode,
+      focusVariant,
+      ...rest,
+    };
+  },
+)`
   ${buttonStyle}
 `;
-
-RcButton.defaultProps = {
-  size: 'large',
-  color: 'primary',
-  variant: 'contained',
-  loadingMode: 'replace',
-  focusVariant: 'ripple',
-};
 
 RcButton.displayName = 'RcButton';
 

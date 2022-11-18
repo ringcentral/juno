@@ -90,8 +90,7 @@ type RcMenuItemProps = {
   RcBaseProps<ComponentProps<typeof MuiMenuItem>, 'classes' | 'title'>;
 
 const _RcMenuItem = forwardRef<any, RcMenuItemProps & RcMenuItemInnerProps>(
-  (inProps, ref) => {
-    const props = useThemeProps({ props: inProps, name: 'RcMenuItem' });
+  (props, ref) => {
     const {
       classes: classesProp,
       children,
@@ -285,15 +284,29 @@ const _RcMenuItem = forwardRef<any, RcMenuItemProps & RcMenuItemInnerProps>(
   },
 );
 
-const RcMenuItem = styled(withTooltip(_RcMenuItem))`
+const RcMenuItem = styled(withTooltip(_RcMenuItem)).attrs(
+  (inProps: RcMenuItemProps) => {
+    const {
+      // @ts-ignore
+      theme,
+      // Omit className, prevent duplicate className
+      className,
+      size = 'medium',
+      button = true,
+      focusVariant = 'highlight',
+      ...rest
+    } = useThemeProps({ props: inProps, name: 'RcMenuItem' });
+
+    return {
+      size,
+      button,
+      focusVariant,
+      ...rest,
+    };
+  },
+)`
   ${MenuItemStyle};
 `;
-
-RcMenuItem.defaultProps = {
-  size: 'medium',
-  button: true,
-  focusVariant: 'highlight',
-};
 
 RcMenuItem.displayName = 'RcMenuItem';
 

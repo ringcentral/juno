@@ -3,6 +3,11 @@ import React, { ComponentProps, forwardRef } from 'react';
 import MuiButtonGroup from '@material-ui/core/ButtonGroup';
 
 import { RcBaseProps, styled, useThemeProps } from '../../../foundation';
+import {
+  RcButtonDefaultSize,
+  RcButtonDefaultColor,
+  RcButtonDefaultVariant,
+} from '../Button';
 
 type RcButtonGroupProps = {} & RcBaseProps<
   ComponentProps<typeof MuiButtonGroup>,
@@ -10,14 +15,20 @@ type RcButtonGroupProps = {} & RcBaseProps<
 >;
 
 const _RcButtonGroup = forwardRef<any, RcButtonGroupProps>((inProps, ref) => {
-  const props = useThemeProps({ props: inProps, name: 'RcButtonGroup' });
+  const { ...rest } = useThemeProps({ props: inProps, name: 'RcButtonGroup' });
 
-  return <MuiButtonGroup ref={ref} {...props} />;
+  return (
+    <MuiButtonGroup
+      ref={ref}
+      size={RcButtonDefaultSize}
+      color={RcButtonDefaultColor}
+      variant={RcButtonDefaultVariant}
+      {...rest}
+    />
+  );
 });
 
 const RcButtonGroup = styled(_RcButtonGroup)``;
-
-RcButtonGroup.defaultProps = {};
 
 export { RcButtonGroup };
 export type { RcButtonGroupProps };

@@ -4,7 +4,14 @@ import { RcClasses } from '../../../../foundation';
 import { RcSplitButtonProps, RcSplitButtonVariant } from '../SplitButton';
 
 export const RcSplitButtonClasses = RcClasses<RcSplitButtonProps>(
-  ['root', 'groupedHorizontal', 'actionButton', 'controlButton', 'menuOpen'],
+  [
+    'root',
+    'groupedHorizontal',
+    'actionButton',
+    'controlButton',
+    'menuOpen',
+    'groupedContainedHorizontal',
+  ],
   'RcSplitButton',
 );
 

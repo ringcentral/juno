@@ -91,6 +91,7 @@ const iconButtonStyle: RcThemedStyled<RcSplitButtonProps, any> = ({
               box-shadow: none;
 
               ${focusVisible} {
+                outline: none;
                 ${plainIconButtonFocusStyle({ radius: 'circle' })}
               }
             `
@@ -124,6 +125,12 @@ export const splitButtonStyle: RcThemedStyled<RcSplitButtonProps, any> = (
   const containedActiveColor = setOpacity(currColor, '24', true);
 
   return css`
+    .${RcSplitButtonClasses.groupedContainedHorizontal} {
+      &:not(:last-child) {
+        border-right: unset;
+      }
+    }
+
     .${RcSplitButtonClasses.actionButton} {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;

@@ -16,7 +16,7 @@ import {
   RcBaseFocusVariant,
 } from '../../../foundation';
 import { RcIcon, RcIconProps, RcIconSize } from '../../Icon';
-import { RcTooltip, withTooltip } from '../../Tooltip';
+import { RcTooltip, withTooltip, WithTooltipProps } from '../../Tooltip';
 import { RcButtonBase, RcButtonBaseProps } from '../ButtonBase';
 import {
   RcIconButtonDeprecatedProps,
@@ -97,9 +97,7 @@ type RcIconButtonProps = {
   RcBaseProps<RcButtonBaseProps, 'color'>;
 
 const _RcIconButton = memo(
-  forwardRef<HTMLButtonElement, RcIconButtonProps>((inProps, ref) => {
-    const props = useThemeProps({ props: inProps, name: 'RcIconButton' });
-
+  forwardRef<HTMLButtonElement, RcIconButtonProps>((props, ref) => {
     if (process.env.NODE_ENV !== 'production') {
       // eslint-disable-next-line react-hooks/rules-of-hooks
       useDeprecatedCheck(RcIconButton, props, rcIconButtonWarning as any);
@@ -249,23 +247,43 @@ const _RcIconButton = memo(
   }),
 );
 
-const RcIconButton = styled(withTooltip(_RcIconButton))`
+const RcIconButton = styled(withTooltip(_RcIconButton)).attrs(
+  (inProps: WithTooltipProps<RcIconButtonProps>) => {
+    const {
+      // @ts-ignore
+      theme,
+      // Omit className, prevent duplicate className
+      className,
+      variant = 'round',
+      color = 'neutral.f04',
+      size = 'medium',
+      type = 'button',
+      focusRipple = true,
+      disableTouchRipple = true,
+      classes = {},
+      useRcTooltip = true,
+      focusVariant = 'highlight',
+      ...rest
+    } = useThemeProps({ props: inProps, name: 'RcIconButton' });
+
+    return {
+      variant,
+      color,
+      size,
+      type,
+      focusRipple,
+      disableTouchRipple,
+      classes,
+      useRcTooltip,
+      focusVariant,
+      ...rest,
+    };
+  },
+)`
   ${iconButtonStyle}
 `;
 
 RcIconButton.displayName = 'RcIconButton';
-
-RcIconButton.defaultProps = {
-  variant: 'round',
-  color: 'neutral.f04',
-  size: 'medium',
-  type: 'button',
-  focusRipple: true,
-  disableTouchRipple: true,
-  classes: {},
-  useRcTooltip: true,
-  focusVariant: 'highlight',
-};
 
 export { RcIconButton };
 export type { RcIconButtonProps, RcIconButtonSize, RcIconButtonVariant };

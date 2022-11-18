@@ -73,9 +73,7 @@ type RcListItemProps = {
   RcBaseProps<ComponentProps<typeof MuiListItem>, 'title' | 'button'>;
 
 const _RcListItem = forwardRef<any, RcListItemProps>(
-  (inProps: RcListItemProps, ref) => {
-    const props = useThemeProps({ props: inProps, name: 'RcListItem' });
-
+  (props: RcListItemProps, ref) => {
     if (process.env.NODE_ENV !== 'production') {
       // eslint-disable-next-line react-hooks/rules-of-hooks
       useDeprecatedCheck(RcListItem, props, [
@@ -155,17 +153,33 @@ const _RcListItem = forwardRef<any, RcListItemProps>(
   },
 );
 
-const RcListItem = styled(withTooltip(_RcListItem))`
+const RcListItem = styled(withTooltip(_RcListItem)).attrs(
+  (inProps: RcListItemProps) => {
+    const {
+      // @ts-ignore
+      theme,
+      // Omit className, prevent duplicate className
+      className,
+      singleLine = false,
+      button = true,
+      canHover = true,
+      size = 'medium',
+      focusVariant = 'highlight',
+      ...rest
+    } = useThemeProps({ props: inProps, name: 'RcListItem' });
+
+    return {
+      singleLine,
+      button,
+      canHover,
+      size,
+      focusVariant,
+      ...rest,
+    };
+  },
+)`
   ${ListItemStyle};
 `;
-
-RcListItem.defaultProps = {
-  singleLine: false,
-  button: true,
-  canHover: true,
-  size: 'medium',
-  focusVariant: 'highlight',
-};
 
 RcListItem.displayName = 'RcListItem';
 

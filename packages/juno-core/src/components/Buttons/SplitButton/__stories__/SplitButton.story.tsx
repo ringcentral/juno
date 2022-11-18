@@ -40,6 +40,8 @@ const SplitButtonComponent: FunctionComponent<SplitButtonProps> = ({
   return (
     <RcSplitButton
       {...args}
+      ControlButtonProps={{ focusVariant: 'focusRing' }}
+      ActionButtonProps={{ focusVariant: 'focusRing' }}
       MenuProps={{
         keepMounted: true,
         ...args.MenuProps,
