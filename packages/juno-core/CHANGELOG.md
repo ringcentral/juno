@@ -1,4 +1,11 @@
 
+## [2.22.0](https://github.com/ringcentral/juno/compare/juno-core-v2.21.2...juno-core-v2.22.0) (2022-11-18)
+
+
+### Features
+
+* **FIJI-58545:** [A11y] Button, IconButton, ListItem, MenuItem support focusRing; improve Switch focusRing ([4881099](https://github.com/ringcentral/juno/commit/4881099339f27c18e5573d6f7f9501152e0d785f))
+
 ### [2.21.2](https://github.com/ringcentral/juno/compare/juno-core-v2.21.1...juno-core-v2.21.2) (2022-11-02)
 
 
