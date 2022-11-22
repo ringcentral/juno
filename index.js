@@ -8669,6 +8669,9 @@ __export(src_exports2, {
   RcBox: () => RcBox,
   RcButton: () => RcButton,
   RcButtonBase: () => RcButtonBase,
+  RcButtonDefaultColor: () => RcButtonDefaultColor,
+  RcButtonDefaultSize: () => RcButtonDefaultSize,
+  RcButtonDefaultVariant: () => RcButtonDefaultVariant,
   RcButtonGroup: () => RcButtonGroup,
   RcCard: () => RcCard,
   RcCardActionArea: () => RcCardActionArea,
@@ -49073,6 +49076,9 @@ __export(juno_core_exports, {
   RcBox: () => RcBox,
   RcButton: () => RcButton,
   RcButtonBase: () => RcButtonBase,
+  RcButtonDefaultColor: () => RcButtonDefaultColor,
+  RcButtonDefaultSize: () => RcButtonDefaultSize,
+  RcButtonDefaultVariant: () => RcButtonDefaultVariant,
   RcButtonGroup: () => RcButtonGroup,
   RcCard: () => RcCard,
   RcCardActionArea: () => RcCardActionArea,
@@ -49463,6 +49469,9 @@ __export(src_exports, {
   RcBox: () => RcBox,
   RcButton: () => RcButton,
   RcButtonBase: () => RcButtonBase,
+  RcButtonDefaultColor: () => RcButtonDefaultColor,
+  RcButtonDefaultSize: () => RcButtonDefaultSize,
+  RcButtonDefaultVariant: () => RcButtonDefaultVariant,
   RcButtonGroup: () => RcButtonGroup,
   RcCard: () => RcCard,
   RcCardActionArea: () => RcCardActionArea,
@@ -49852,6 +49861,9 @@ __export(components_exports, {
   RcBox: () => RcBox,
   RcButton: () => RcButton,
   RcButtonBase: () => RcButtonBase,
+  RcButtonDefaultColor: () => RcButtonDefaultColor,
+  RcButtonDefaultSize: () => RcButtonDefaultSize,
+  RcButtonDefaultVariant: () => RcButtonDefaultVariant,
   RcButtonGroup: () => RcButtonGroup,
   RcCard: () => RcCard,
   RcCardActionArea: () => RcCardActionArea,
@@ -56491,8 +56503,7 @@ var iconButtonStyle = ({
 };
 
 // ../juno-core/src/components/Buttons/IconButton/IconButton.tsx
-var _RcIconButton = memo447(forwardRef546((inProps, ref2) => {
-  const props = useThemeProps({ props: inProps, name: "RcIconButton" });
+var _RcIconButton = memo447(forwardRef546((props, ref2) => {
   if (true) {
     useDeprecatedCheck(RcIconButton, props, rcIconButtonWarning);
   }
@@ -56602,21 +56613,37 @@ var _RcIconButton = memo447(forwardRef546((inProps, ref2) => {
   }
   return iconButton;
 }));
-var RcIconButton = styled_components_default(withTooltip(_RcIconButton))`
+var RcIconButton = styled_components_default(withTooltip(_RcIconButton)).attrs((inProps) => {
+  const {
+    theme,
+    className,
+    variant = "round",
+    color: color2 = "neutral.f04",
+    size = "medium",
+    type: type3 = "button",
+    focusRipple = true,
+    disableTouchRipple = true,
+    classes = {},
+    useRcTooltip = true,
+    focusVariant = "highlight",
+    ...rest
+  } = useThemeProps({ props: inProps, name: "RcIconButton" });
+  return {
+    variant,
+    color: color2,
+    size,
+    type: type3,
+    focusRipple,
+    disableTouchRipple,
+    classes,
+    useRcTooltip,
+    focusVariant,
+    ...rest
+  };
+})`
   ${iconButtonStyle}
 `;
 RcIconButton.displayName = "RcIconButton";
-RcIconButton.defaultProps = {
-  variant: "round",
-  color: "neutral.f04",
-  size: "medium",
-  type: "button",
-  focusRipple: true,
-  disableTouchRipple: true,
-  classes: {},
-  useRcTooltip: true,
-  focusVariant: "highlight"
-};
 
 // ../juno-core/src/components/Accordion/AccordionSummary/utils/AccordionSummaryUtils.ts
 var RcAccordionSummaryClasses = RcClasses(["content", "expanded", "expandIcon"], "RcAccordionSummary");
@@ -58520,8 +58547,7 @@ var buttonStyle = (props) => {
 };
 
 // ../juno-core/src/components/Buttons/Button/Button.tsx
-var _RcButton = forwardRef569((inProps, ref2) => {
-  const props = useThemeProps({ props: inProps, name: "RcButton" });
+var _RcButton = forwardRef569((props, ref2) => {
   if (true) {
     useDeprecatedCheck(RcButton, props, [
       {
@@ -58636,29 +58662,46 @@ var _RcButton = forwardRef569((inProps, ref2) => {
     ...rest
   }, loading && isReplace ? loadingElm : childrenProp);
 });
-var RcButton = styled_components_default(withTooltip(_RcButton))`
+var RcButtonDefaultSize = "large";
+var RcButtonDefaultColor = "primary";
+var RcButtonDefaultVariant = "contained";
+var RcButton = styled_components_default(withTooltip(_RcButton)).attrs((inProps) => {
+  const {
+    theme,
+    className,
+    size = RcButtonDefaultSize,
+    color: color2 = RcButtonDefaultColor,
+    variant = RcButtonDefaultVariant,
+    loadingMode = "replace",
+    focusVariant = "ripple",
+    ...rest
+  } = useThemeProps({ props: inProps, name: "RcButton" });
+  return {
+    size,
+    color: color2,
+    variant,
+    loadingMode,
+    focusVariant,
+    ...rest
+  };
+})`
   ${buttonStyle}
 `;
-RcButton.defaultProps = {
-  size: "large",
-  color: "primary",
-  variant: "contained",
-  loadingMode: "replace",
-  focusVariant: "ripple"
-};
 RcButton.displayName = "RcButton";
 
 // ../juno-core/src/components/Buttons/ButtonGroup/ButtonGroup.tsx
 import React634, { forwardRef as forwardRef570 } from "react";
 var _RcButtonGroup = forwardRef570((inProps, ref2) => {
-  const props = useThemeProps({ props: inProps, name: "RcButtonGroup" });
+  const { ...rest } = useThemeProps({ props: inProps, name: "RcButtonGroup" });
   return /* @__PURE__ */ React634.createElement(ButtonGroup_default, {
     ref: ref2,
-    ...props
+    size: RcButtonDefaultSize,
+    color: RcButtonDefaultColor,
+    variant: RcButtonDefaultVariant,
+    ...rest
   });
 });
 var RcButtonGroup = styled_components_default(_RcButtonGroup)``;
-RcButtonGroup.defaultProps = {};
 
 // ../juno-core/src/components/Buttons/IconButtonGroup/IconButtonGroup.tsx
 import React635, { forwardRef as forwardRef571 } from "react";
@@ -58909,7 +58952,14 @@ var StyledArrowIcon = styled_components_default(_StyledArrowIcon)`
 `;
 
 // ../juno-core/src/components/Buttons/SplitButton/utils/SplitButtonUtils.ts
-var RcSplitButtonClasses = RcClasses(["root", "groupedHorizontal", "actionButton", "controlButton", "menuOpen"], "RcSplitButton");
+var RcSplitButtonClasses = RcClasses([
+  "root",
+  "groupedHorizontal",
+  "actionButton",
+  "controlButton",
+  "menuOpen",
+  "groupedContainedHorizontal"
+], "RcSplitButton");
 var RcSplitButtonTouchRippleClasses = RcClasses(["child", "ripplePulsate"], "RcSplitButton-TouchRipple");
 var getVariant = (variant) => {
   switch (variant) {
@@ -58978,6 +59028,7 @@ var iconButtonStyle2 = ({
               box-shadow: none;
 
               ${focusVisible} {
+                outline: none;
                 ${plainIconButtonFocusStyle({ radius: "circle" })}
               }
             ` : css2`
@@ -59004,6 +59055,12 @@ var splitButtonStyle = (props) => {
   const activeColor24 = setOpacity(currColor, "24");
   const containedActiveColor = setOpacity(currColor, "24", true);
   return css2`
+    .${RcSplitButtonClasses.groupedContainedHorizontal} {
+      &:not(:last-child) {
+        border-right: unset;
+      }
+    }
+
     .${RcSplitButtonClasses.actionButton} {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
@@ -59334,10 +59391,12 @@ var _RcSplitButton = forwardRef574((inProps, ref2) => {
     innerRef: splitRef,
     classes
   }, /* @__PURE__ */ React639.createElement(RcButton, {
-    ..._ActionButtonProps
+    ..._ActionButtonProps,
+    focusVariant: "ripple"
   }), /* @__PURE__ */ React639.createElement(RcButton, {
     "aria-haspopup": "listbox",
-    ..._ControlButtonProps
+    ..._ControlButtonProps,
+    focusVariant: "ripple"
   }, /* @__PURE__ */ React639.createElement(StyledArrowIcon, {
     open: isMenuOpen,
     size: variantIs(["round", "plainIcon"]) ? size : toButtonSize,
@@ -59354,9 +59413,9 @@ var RcSplitButton = styled_components_default(_RcSplitButton)`
 `;
 RcSplitButton.displayName = "RcSplitButton";
 RcSplitButton.defaultProps = {
-  size: RcButton.defaultProps.size,
-  color: RcButton.defaultProps.color,
-  variant: RcButton.defaultProps.variant,
+  size: RcButtonDefaultSize,
+  color: RcButtonDefaultColor,
+  variant: RcButtonDefaultVariant,
   ControlButtonProps: {},
   ActionButtonProps: {},
   MenuProps: {},
@@ -71685,8 +71744,7 @@ var ListItemStyle = (props) => {
 };
 
 // ../juno-core/src/components/List/ListItem/ListItem.tsx
-var _RcListItem = forwardRef605((inProps, ref2) => {
-  const props = useThemeProps({ props: inProps, name: "RcListItem" });
+var _RcListItem = forwardRef605((props, ref2) => {
   if (true) {
     useDeprecatedCheck(RcListItem, props, [
       {
@@ -71738,16 +71796,28 @@ var _RcListItem = forwardRef605((inProps, ref2) => {
     button: button2
   }, children2);
 });
-var RcListItem = styled_components_default(withTooltip(_RcListItem))`
+var RcListItem = styled_components_default(withTooltip(_RcListItem)).attrs((inProps) => {
+  const {
+    theme,
+    className,
+    singleLine = false,
+    button: button2 = true,
+    canHover = true,
+    size = "medium",
+    focusVariant = "highlight",
+    ...rest
+  } = useThemeProps({ props: inProps, name: "RcListItem" });
+  return {
+    singleLine,
+    button: button2,
+    canHover,
+    size,
+    focusVariant,
+    ...rest
+  };
+})`
   ${ListItemStyle};
 `;
-RcListItem.defaultProps = {
-  singleLine: false,
-  button: true,
-  canHover: true,
-  size: "medium",
-  focusVariant: "highlight"
-};
 RcListItem.displayName = "RcListItem";
 
 // ../juno-core/src/components/List/ListItemAvatar/ListItemAvatar.tsx
@@ -72355,8 +72425,7 @@ var MenuItemStyle = (props) => {
 };
 
 // ../juno-core/src/components/Menu/MenuItem/MenuItem.tsx
-var _RcMenuItem = forwardRef613((inProps, ref2) => {
-  const props = useThemeProps({ props: inProps, name: "RcMenuItem" });
+var _RcMenuItem = forwardRef613((props, ref2) => {
   const {
     classes: classesProp,
     children: children2,
@@ -72477,14 +72546,24 @@ var _RcMenuItem = forwardRef613((inProps, ref2) => {
     button: button2
   }, itemAvatar, itemIcon, children2, itemSubAction);
 });
-var RcMenuItem = styled_components_default(withTooltip(_RcMenuItem))`
+var RcMenuItem = styled_components_default(withTooltip(_RcMenuItem)).attrs((inProps) => {
+  const {
+    theme,
+    className,
+    size = "medium",
+    button: button2 = true,
+    focusVariant = "highlight",
+    ...rest
+  } = useThemeProps({ props: inProps, name: "RcMenuItem" });
+  return {
+    size,
+    button: button2,
+    focusVariant,
+    ...rest
+  };
+})`
   ${MenuItemStyle};
 `;
-RcMenuItem.defaultProps = {
-  size: "medium",
-  button: true,
-  focusVariant: "highlight"
-};
 RcMenuItem.displayName = "RcMenuItem";
 
 // ../juno-core/src/components/Downshift/utils/DownshiftUtils.tsx
@@ -86824,6 +86903,9 @@ export {
   RcBox,
   RcButton,
   RcButtonBase,
+  RcButtonDefaultColor,
+  RcButtonDefaultSize,
+  RcButtonDefaultVariant,
   RcButtonGroup,
   RcCard,
   RcCardActionArea,
