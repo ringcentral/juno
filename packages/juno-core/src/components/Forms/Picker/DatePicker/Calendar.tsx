@@ -6,7 +6,7 @@ import React, {
   useState,
 } from 'react';
 
-import moment from 'moment';
+import dayjs from 'dayjs';
 
 import MuiCircularProgress from '@material-ui/core/CircularProgress';
 import { useUtils as useMuiUtils } from '@material-ui/pickers';
@@ -117,7 +117,7 @@ const Calendar = forwardRef<any, CalendarProps>(
     const weeks = useRef<MuiPickersDate[][]>([]);
 
     // * `getWeekdays` not set locale, need set locale before get
-    moment.locale(utils.locale);
+    dayjs.locale(utils.locale);
 
     const { current: weekdays } = useResultRef(() => utils.getWeekdays());
 

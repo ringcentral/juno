@@ -6,7 +6,7 @@ import React, {
   useState,
 } from 'react';
 
-import moment from 'moment';
+import dayjs from 'dayjs';
 
 import {
   RcButton,
@@ -170,14 +170,16 @@ DatePickerWithRange.args = {
 };
 
 DatePickerWithRange.argTypes = {};
-
-// * if you want to custom moment option, you need set that global by yourself
-moment.locale('zh-cn', {
+const weekdays = '(日)_(一)_(二)_(三)_(四)_(五)_(六)'.split('_');
+// * if you want to custom dayjs option, you need set that global by yourself
+dayjs.locale('zh-cn', {
   months:
     '一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月'.split(
       '_',
     ),
-  weekdaysShort: '(日)_(一)_(二)_(三)_(四)_(五)_(六)'.split('_'),
+  weekdaysShort: weekdays,
+  weekdaysMin: weekdays,
+  weekdays,
 });
 
 export const DatePickerExamples: Story<DatePickerProps> = () => {

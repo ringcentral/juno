@@ -6,9 +6,9 @@ import React, {
   useRef,
 } from 'react';
 
-import moment from 'moment';
+import dayjs from 'dayjs';
 
-import MomentUtils from '@date-io/moment';
+import DayjsUtils from '@date-io/dayjs';
 import {
   MuiPickersUtilsProvider,
   useUtils as useMuiUtils,
@@ -135,8 +135,8 @@ const InnerRcDatePicker = forwardRef<any, RcDatePickerProps>((props, ref) => {
 
   const dateRange = useMemo(
     () => ({
-      min: moment(minDate || defaultMinDate),
-      max: moment(maxDate || defaultMaxDate),
+      min: dayjs(minDate || defaultMinDate),
+      max: dayjs(maxDate || defaultMaxDate),
     }),
     [minDate, maxDate],
   );
@@ -157,7 +157,7 @@ const InnerRcDatePicker = forwardRef<any, RcDatePickerProps>((props, ref) => {
   });
 
   const getClosestEnableDate = useCallback(
-    (currDate: moment.Moment) =>
+    (currDate: dayjs.Dayjs) =>
       MuiFindClosestEnabledDate({
         date: currDate,
         utils,
@@ -178,19 +178,19 @@ const InnerRcDatePicker = forwardRef<any, RcDatePickerProps>((props, ref) => {
   );
 
   const initDate = useMemo(() => {
-    return getClosestEnableDate(moment(utils.date()));
+    return getClosestEnableDate(dayjs(utils.date()));
   }, [getClosestEnableDate, utils]);
 
-  const momentValue = useMemo(
-    () => (controlledValue ? moment(controlledValue) : null),
+  const dayjsValue = useMemo(
+    () => (controlledValue ? dayjs(controlledValue) : null),
     [controlledValue],
   );
 
-  const nowDate = momentValue || initDate;
+  const nowDate = dayjsValue || initDate;
 
   const textFiledValue = useMemo(
-    () => (momentValue ? utils.format(momentValue, formatString!) : ''),
-    [momentValue, utils, formatString],
+    () => (dayjsValue ? utils.format(dayjsValue, formatString!) : ''),
+    [dayjsValue, utils, formatString],
   );
 
   const PopoverProps = useMemo(
@@ -250,11 +250,11 @@ const InnerRcDatePicker = forwardRef<any, RcDatePickerProps>((props, ref) => {
   useEffect(() => {
     if (
       // only when inner value change need check again is that value is valid
-      momentValue &&
+      dayjsValue &&
       value !== emitValueRef.current &&
-      shouldDisableDate(momentValue)
+      shouldDisableDate(dayjsValue)
     ) {
-      const closestEnabledDate = getClosestEnableDate(momentValue);
+      const closestEnabledDate = getClosestEnableDate(dayjsValue);
 
       handleDaySelect(closestEnabledDate, false);
     }
@@ -320,9 +320,9 @@ const _RcDatePicker = forwardRef<any, RcDatePickerProps>((inProps, ref) => {
 
   return (
     <MuiPickersUtilsProvider
-      utils={MomentUtils}
+      utils={DayjsUtils}
       locale={props.locale}
-      libInstance={moment}
+      libInstance={dayjs}
     >
       <InnerRcDatePicker ref={ref} {...props} />
     </MuiPickersUtilsProvider>
