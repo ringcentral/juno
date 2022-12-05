@@ -6,14 +6,6 @@ type RcSwitchClassesType = RcSwitchProps & {
 };
 
 export const RcSwitchClasses = RcClasses<RcSwitchClassesType>(
-  [
-    'root',
-    'switchBase',
-    'thumb',
-    'track',
-    'checked',
-    'disabled',
-    'focusVisible',
-  ],
+  ['root', 'switchBase', 'thumb', 'track', 'checked', 'disabled'],
   'RcSwitch',
 );

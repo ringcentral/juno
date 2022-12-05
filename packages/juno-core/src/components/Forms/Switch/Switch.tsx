@@ -1,4 +1,4 @@
-import React, { ComponentProps, forwardRef, useMemo } from 'react';
+import React, { ComponentProps, forwardRef, useMemo, useRef } from 'react';
 
 import clsx from 'clsx';
 
@@ -9,6 +9,7 @@ import {
   omit,
   RcPaletteProp,
   useThemeProps,
+  useForkRef,
 } from '../../../foundation';
 import styled from '../../../foundation/styled-components';
 import {
@@ -57,6 +58,9 @@ const _RcSwitch = forwardRef<any, RcSwitchProps>((inProps, ref) => {
     classes: classesProp,
     color,
     trackColor,
+    inputRef: inputRefProp = null,
+    onFocus,
+    onBlur,
     ...rest
   } = props;
 
@@ -70,9 +74,13 @@ const _RcSwitch = forwardRef<any, RcSwitchProps>((inProps, ref) => {
     [focusVisibleClassNameProp],
   );
 
+  const inputRef = useRef<HTMLInputElement>(null);
+  const handleInputRef = useForkRef(inputRef, inputRefProp);
+
   const Switch = (
     <MuiSwitch
       ref={ref}
+      inputRef={handleInputRef}
       focusVisibleClassName={focusVisibleClassName}
       classes={classes}
       {...rest}
@@ -80,6 +88,21 @@ const _RcSwitch = forwardRef<any, RcSwitchProps>((inProps, ref) => {
       size="medium"
       disableRipple
       disableTouchRipple
+      onFocus={(e) => {
+        if (inputRef.current?.matches('[data-focus-visible-added]')) {
+          e.currentTarget.parentElement!.setAttribute(
+            'data-focus-visible-within',
+            '',
+          );
+        }
+        onFocus?.(e);
+      }}
+      onBlur={(e) => {
+        e.currentTarget.parentElement!.removeAttribute(
+          'data-focus-visible-within',
+        );
+        onBlur?.(e);
+      }}
     />
   );
 
