@@ -59,11 +59,14 @@ export const SwitchStyle: RcThemedStyled<RcSwitchProps, any> = ({
 
   return css`
     &.${RcSwitchClasses.root} {
-      /* make sure focus ring can show correctly */
-      overflow: visible;
       padding: 0px;
       ${widthCss};
       ${heightCss};
+
+      &[data-focus-visible-within] {
+        border-radius: 100vw;
+        ${focusRing('normal')}
+      }
 
       .${RcSwitchClasses.switchBase} {
         ${widthCss};
@@ -97,10 +100,6 @@ export const SwitchStyle: RcThemedStyled<RcSwitchProps, any> = ({
 
       .${RcSwitchClasses.disabled} + .${RcSwitchClasses.track} {
         background-color: ${disabledColor};
-      }
-
-      .${RcSwitchClasses.focusVisible} + .${RcSwitchClasses.track} {
-        ${focusRing('normal')}
       }
 
       ${nonTouchHoverMedia} {
