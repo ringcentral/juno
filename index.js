@@ -68134,15 +68134,7 @@ var RcRadioClasses = RcClasses(["root", "checked", "disabled"], "RcRadio");
 var RadioButtonIconClasses = RcClasses(["root"], "RadioButtonIcon");
 
 // ../juno-core/src/components/Forms/Switch/utils/SwitchUtils.tsx
-var RcSwitchClasses = RcClasses([
-  "root",
-  "switchBase",
-  "thumb",
-  "track",
-  "checked",
-  "disabled",
-  "focusVisible"
-], "RcSwitch");
+var RcSwitchClasses = RcClasses(["root", "switchBase", "thumb", "track", "checked", "disabled"], "RcSwitch");
 
 // ../juno-core/src/components/Forms/FormControlLabel/utils/FormControlLabelUtils.ts
 var RcFormControlLabelClasses = RcClasses(["root", "disabled", "labelPlacementStart"], "RcFormControlLabel");
@@ -68194,7 +68186,7 @@ RcFormControlLabel.defaultProps = {};
 RcFormControlLabel.displayName = "RcFormControlLabel";
 
 // ../juno-core/src/components/Forms/Switch/Switch.tsx
-import React682, { forwardRef as forwardRef604, useMemo as useMemo50 } from "react";
+import React682, { forwardRef as forwardRef604, useMemo as useMemo50, useRef as useRef75 } from "react";
 
 // ../juno-core/src/components/Forms/Switch/styles/SwitchStyle.tsx
 var thumbColor = palette22("neutral", "f01");
@@ -68231,11 +68223,14 @@ var SwitchStyle = ({
   const trackColor = getParsePaletteColor(trackColorProp, defaultTrackColorArray);
   return css2`
     &.${RcSwitchClasses.root} {
-      /* make sure focus ring can show correctly */
-      overflow: visible;
       padding: 0px;
       ${widthCss};
       ${heightCss};
+
+      &[data-focus-visible-within] {
+        border-radius: 100vw;
+        ${focusRing("normal")}
+      }
 
       .${RcSwitchClasses.switchBase} {
         ${widthCss};
@@ -68271,10 +68266,6 @@ var SwitchStyle = ({
         background-color: ${disabledColor2};
       }
 
-      .${RcSwitchClasses.focusVisible} + .${RcSwitchClasses.track} {
-        ${focusRing("normal")}
-      }
-
       ${nonTouchHoverMedia} {
         &:hover {
           ${notDisabledSwitchBase("08", checkedColor, trackColor)};
@@ -68298,19 +68289,35 @@ var _RcSwitch = forwardRef604((inProps, ref2) => {
     classes: classesProp,
     color: color2,
     trackColor,
+    inputRef: inputRefProp = null,
+    onFocus,
+    onBlur,
     ...rest
   } = props;
   const classes = useMemo50(() => combineClasses(omit3(RcSwitchClasses, ["focusVisible"]), classesProp), [classesProp]);
   const focusVisibleClassName = useMemo50(() => clsx_m_default(RcSwitchClasses.focusVisible, focusVisibleClassNameProp), [focusVisibleClassNameProp]);
+  const inputRef = useRef75(null);
+  const handleInputRef = useForkRef2(inputRef, inputRefProp);
   const Switch3 = /* @__PURE__ */ React682.createElement(Switch_default, {
     ref: ref2,
+    inputRef: handleInputRef,
     focusVisibleClassName,
     classes,
     ...rest,
     color: "default",
     size: "medium",
     disableRipple: true,
-    disableTouchRipple: true
+    disableTouchRipple: true,
+    onFocus: (e2) => {
+      if (inputRef.current?.matches("[data-focus-visible-added]")) {
+        e2.currentTarget.parentElement.setAttribute("data-focus-visible-within", "");
+      }
+      onFocus?.(e2);
+    },
+    onBlur: (e2) => {
+      e2.currentTarget.parentElement.removeAttribute("data-focus-visible-within");
+      onBlur?.(e2);
+    }
   });
   if (label3) {
     return /* @__PURE__ */ React682.createElement(RcFormControlLabel, {
@@ -68834,7 +68841,7 @@ import React689, {
   forwardRef as forwardRef610,
   useLayoutEffect as useLayoutEffect20,
   useMemo as useMemo56,
-  useRef as useRef75
+  useRef as useRef76
 } from "react";
 
 // ../juno-core/src/components/List/ListItemSecondaryAction/styles/ListItemSecondaryActionStyle.tsx
@@ -68868,7 +68875,7 @@ var _RcListItemSecondaryAction = forwardRef610((inProps, ref2) => {
     name: "RcListItemSecondaryAction"
   });
   const { classes: classesProp, children: children2, ...rest } = props;
-  const innerRef = useRef75(null);
+  const innerRef = useRef76(null);
   const divRef = useForkRef2(innerRef, ref2);
   const classes = useMemo56(() => combineClasses(RcListItemSecondaryActionClasses, classesProp), [classesProp]);
   useLayoutEffect20(() => {
@@ -69295,7 +69302,7 @@ import {
   useCallback as useCallback28,
   useLayoutEffect as useLayoutEffect21,
   useMemo as useMemo63,
-  useRef as useRef78
+  useRef as useRef79
 } from "react";
 
 // ../juno-core/src/components/Downshift/SuggestionList/utils/useSuggestionList.ts
@@ -69303,7 +69310,7 @@ import {
   useCallback as useCallback27,
   useEffect as useEffect52,
   useMemo as useMemo61,
-  useRef as useRef76
+  useRef as useRef77
 } from "react";
 
 // ../juno-core/src/components/Downshift/utils/useDownshiftGroup.ts
@@ -69506,8 +69513,8 @@ var useSuggestionList = ({
   };
   const focusInput = () => inputRef.current?.focus();
   const currUniqueId = useId2(id3 || "suggestion-list", !id3);
-  const highlightedIndexRef = useRef76(DEFAULT_HIGHLIGHTED_INDEX);
-  const changeHighlightedIndexReasonRef = useRef76();
+  const highlightedIndexRef = useRef77(DEFAULT_HIGHLIGHTED_INDEX);
+  const changeHighlightedIndexReasonRef = useRef77();
   const forceUpdate = useForceUpdate();
   const getFilteredItems = useCallback27((items) => {
     if (filterOptions) {
@@ -69735,7 +69742,7 @@ var useSuggestionList = ({
 // ../juno-core/src/components/Downshift/utils/useDownshiftTag.ts
 var import_isString = __toModule(require_isString());
 var import_uniqueId2 = __toModule(require_uniqueId());
-import { useMemo as useMemo62, useRef as useRef77, useState as useState33 } from "react";
+import { useMemo as useMemo62, useRef as useRef78, useState as useState33 } from "react";
 var DOWNSHIFT_ID_TOKEN = "rc-chip-";
 var useDownshiftTag = ({
   id: downshiftId,
@@ -69758,7 +69765,7 @@ var useDownshiftTag = ({
   onReset
 }) => {
   const isAutocomplete = variant === "autocomplete";
-  const isSelectedFromAutocompleteRef = useRef77(false);
+  const isSelectedFromAutocompleteRef = useRef78(false);
   const [tags, _setTags] = useControlled({
     controlled: selectedItemsProp,
     default: [],
@@ -69993,7 +70000,7 @@ var useDownshift = ({
   focused
 }) => {
   const isAutocomplete = variant === "autocomplete";
-  const autoCompleteSelectedIndexRef = useRef78(DEFAULT_HIGHLIGHTED_INDEX2);
+  const autoCompleteSelectedIndexRef = useRef79(DEFAULT_HIGHLIGHTED_INDEX2);
   const downshiftId = useId2("downshift", true);
   const [inputFocused, setInputFocused] = useControlled({
     controlled: focused,
@@ -70005,12 +70012,12 @@ var useDownshift = ({
     default: initialIsOpen || false,
     name: downshiftComponentName
   });
-  const isInputValueChangedRef = useRef78(false);
-  const isCompositionRef = useRef78(false);
-  const noOptionItemRef = useRef78(null);
-  const stopAutoSelectRef = useRef78(false);
-  const fromPasteString = useRef78("");
-  const keepHighlightedIndexRef = useRef78(false);
+  const isInputValueChangedRef = useRef79(false);
+  const isCompositionRef = useRef79(false);
+  const noOptionItemRef = useRef79(null);
+  const stopAutoSelectRef = useRef79(false);
+  const fromPasteString = useRef79("");
+  const keepHighlightedIndexRef = useRef79(false);
   const { sleep, getSleeping } = useSleep();
   const multiple = isAutocomplete ? false : multipleProp;
   const {
@@ -70570,7 +70577,7 @@ import React704, {
   memo as memo455,
   useImperativeHandle as useImperativeHandle15,
   useMemo as useMemo65,
-  useRef as useRef85,
+  useRef as useRef86,
   useState as useState37
 } from "react";
 
@@ -70715,7 +70722,7 @@ import React703, {
   useContext as useContext27,
   useLayoutEffect as useLayoutEffect24,
   useMemo as useMemo64,
-  useRef as useRef84
+  useRef as useRef85
 } from "react";
 
 // ../juno-core/src/components/VirtualizedMenu/styles/StyledMenuPadding.tsx
@@ -72467,9 +72474,9 @@ function itemsPerRow(viewportWidth, itemWidth) {
 }
 
 // ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useSize.ts
-import { useRef as useRef79 } from "react";
+import { useRef as useRef80 } from "react";
 function useSizeWithElRef(callback, enabled = true) {
-  const ref2 = useRef79(null);
+  const ref2 = useRef80(null);
   const { externalWindow = window } = useRcPortalWindowContext();
   let callbackRef = (_el) => {
     void 0;
@@ -72500,9 +72507,9 @@ function useSize(callback, enabled = true) {
 }
 
 // ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useWindowViewportRect.ts
-import { useCallback as useCallback30, useEffect as useEffect55, useRef as useRef80 } from "react";
+import { useCallback as useCallback30, useEffect as useEffect55, useRef as useRef81 } from "react";
 function useWindowViewportRectRef(callback, customScrollParent) {
-  const viewportInfo = useRef80(null);
+  const viewportInfo = useRef81(null);
   const { externalWindow = window } = useRcPortalWindowContext();
   const calculateInfo = useCallback30((element2) => {
     if (element2 === null) {
@@ -72617,14 +72624,14 @@ var useIsomorphicLayoutEffect4 = typeof document !== "undefined" ? useLayoutEffe
 var useIsomorphicLayoutEffect_default = useIsomorphicLayoutEffect4;
 
 // ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useScrollTop.ts
-import { useCallback as useCallback31, useEffect as useEffect57, useRef as useRef81 } from "react";
+import { useCallback as useCallback31, useEffect as useEffect57, useRef as useRef82 } from "react";
 function approximatelyEqual(num1, num2) {
   return Math.abs(num1 - num2) < 1.01;
 }
 function useScrollTop(scrollContainerStateCallback, smoothScrollTargetReached, scrollerElement, scrollerRefCallback = noop3, customScrollParent) {
-  const scrollerRef = useRef81(null);
-  const scrollTopTarget = useRef81(null);
-  const timeoutRef = useRef81(null);
+  const scrollerRef = useRef82(null);
+  const scrollTopTarget = useRef82(null);
+  const timeoutRef = useRef82(null);
   const { externalWindow = window } = useRcPortalWindowContext();
   const handler = useCallback31((ev) => {
     const el2 = ev.target;
@@ -74125,7 +74132,7 @@ function isOutOfRange(focusedIndex, range) {
 }
 
 // ../juno-core/src/components/Virtuoso/utils/useDynamicHeight.tsx
-import { useRef as useRef82 } from "react";
+import { useRef as useRef83 } from "react";
 var useDynamicHeight = ({
   itemCount,
   maxContainerHeight,
@@ -74134,7 +74141,7 @@ var useDynamicHeight = ({
   const prevItemCount = usePrevious(() => itemCount);
   const fullHeight = maxContainerHeight === "100%";
   const maxContainerSize = fullHeight ? -1 : maxContainerHeight;
-  const containerHeighRef = useRef82(maxContainerSize);
+  const containerHeighRef = useRef83(maxContainerSize);
   if (!fullHeight) {
     if (prevItemCount === 0 && itemCount !== 0) {
       containerHeighRef.current = maxContainerSize;
@@ -74166,13 +74173,13 @@ var useDynamicHeight = ({
 };
 
 // ../juno-core/src/components/Virtuoso/utils/useHighlightScroll.tsx
-import { useRef as useRef83 } from "react";
+import { useRef as useRef84 } from "react";
 function useHighlightScroll({
   containerHeighRef,
   scrollToIndex
 }) {
-  const renderedItemsRef = useRef83([]);
-  const scrollerRef = useRef83();
+  const renderedItemsRef = useRef84([]);
+  const scrollerRef = useRef84();
   const scrollToHighlightedIndex = (prevHighlightedIndex, currHighlightedIndex, topHighlightIndex = 0) => {
     if (!scrollerRef.current) {
       if (currHighlightedIndex !== topHighlightIndex) {
@@ -74316,10 +74323,10 @@ var SuggestionList = forwardRef618((inProps, ref2) => {
     selectedIndex,
     ...rest
   } = props;
-  const vlRef = useRef84(null);
+  const vlRef = useRef85(null);
   const forkVlRef = useForkRef2(ref2, vlRef);
   const isTitleMode = groupVariant === "normal";
-  const listRef = useRef84(null);
+  const listRef = useRef85(null);
   const itemData = options;
   const itemCount = options.length;
   const classes = combineClasses(RcSuggestionListClasses, classesProp);
@@ -74722,10 +74729,10 @@ var _RcDownshift = memo455(forwardRef619((inProps, ref2) => {
     ...rest
   } = props;
   const [position4, setPosition] = useState37("bottom-start");
-  const innerInputRef = useRef85(null);
-  const textFieldRef = useRef85(null);
+  const innerInputRef = useRef86(null);
+  const textFieldRef = useRef86(null);
   const inputRef = useForkRef2(inputRefProp, innerInputRef);
-  const inputContainerRef = useRef85(null);
+  const inputContainerRef = useRef86(null);
   const isNew = !suggestionItems;
   const transitionDuration = transitionDurationProp === "auto" ? void 0 : transitionDurationProp;
   const anchorElRef = anchorElType === "input" ? inputContainerRef : textFieldRef;
@@ -74903,7 +74910,7 @@ var _RcDownshift = memo455(forwardRef619((inProps, ref2) => {
   }));
   const hasTags = selectedItems.length > 0;
   const isRenderNoOptions = !!noOptionItem;
-  const popperRef = useRef85(null);
+  const popperRef = useRef86(null);
   const handleUpdatePopper = useEventCallback2(() => {
     popperRef.current?.update();
   });
@@ -75271,7 +75278,7 @@ import React725, {
   useCallback as useCallback34,
   useEffect as useEffect60,
   useMemo as useMemo73,
-  useRef as useRef91
+  useRef as useRef92
 } from "react";
 
 // ../../node_modules/@date-io/dayjs/build/index.esm.js
@@ -75533,7 +75540,7 @@ function useUtils() {
 
 // ../../node_modules/@material-ui/pickers/esm/Wrapper-241966d7.js
 var import_prop_types122 = __toModule(require_prop_types());
-import { createElement as createElement573, useEffect as useEffect58, useLayoutEffect as useLayoutEffect25, useRef as useRef86, Fragment as Fragment10, createContext as createContext23 } from "react";
+import { createElement as createElement573, useEffect as useEffect58, useLayoutEffect as useLayoutEffect25, useRef as useRef87, Fragment as Fragment10, createContext as createContext23 } from "react";
 var DIALOG_WIDTH = 310;
 var DIALOG_WIDTH_WIDER = 325;
 var useStyles = makeStyles_default(function(theme) {
@@ -75610,7 +75617,7 @@ function runKeyHandler(e2, keyHandlers) {
   }
 }
 function useKeyDown(active, keyHandlers) {
-  var keyHandlersRef = useRef86(keyHandlers);
+  var keyHandlersRef = useRef87(keyHandlers);
   keyHandlersRef.current = keyHandlers;
   useIsomorphicEffect(function() {
     if (active) {
@@ -75665,7 +75672,7 @@ ModalWrapper.defaultProps = {
 };
 var InlineWrapper = function InlineWrapper2(_ref6) {
   var open = _ref6.open, wider = _ref6.wider, children2 = _ref6.children, PopoverProps = _ref6.PopoverProps, onClear = _ref6.onClear, onDismiss = _ref6.onDismiss, onSetToday = _ref6.onSetToday, onAccept = _ref6.onAccept, showTabs = _ref6.showTabs, DateInputProps = _ref6.DateInputProps, InputComponent = _ref6.InputComponent, other = _objectWithoutProperties(_ref6, ["open", "wider", "children", "PopoverProps", "onClear", "onDismiss", "onSetToday", "onAccept", "showTabs", "DateInputProps", "InputComponent"]);
-  var ref2 = useRef86();
+  var ref2 = useRef87();
   useKeyDown(open, {
     Enter: onAccept
   });
@@ -76256,7 +76263,7 @@ import React718, {
   forwardRef as forwardRef631,
   useImperativeHandle as useImperativeHandle16,
   useMemo as useMemo70,
-  useRef as useRef87,
+  useRef as useRef88,
   useState as useState39
 } from "react";
 
@@ -76725,7 +76732,7 @@ var PickerTextField = forwardRef631((props, ref2) => {
     value,
     ...rest
   } = props;
-  const { current: idForInput } = useRef87((0, import_uniqueId3.default)(`${PICKER_DISPLAY_NAME}-`));
+  const { current: idForInput } = useRef88((0, import_uniqueId3.default)(`${PICKER_DISPLAY_NAME}-`));
   const [anchorEl, setAnchorEl] = useState39(null);
   const idForHelperText = `${idForInput}-helper-text`;
   const idForInstruction = `${idForInput}-instruction`;
@@ -76838,12 +76845,12 @@ import React724, {
   forwardRef as forwardRef636,
   useLayoutEffect as useLayoutEffect27,
   useMemo as useMemo72,
-  useRef as useRef90,
+  useRef as useRef91,
   useState as useState40
 } from "react";
 
 // ../juno-core/src/components/Forms/Picker/DatePicker/DatePickerHeader.tsx
-import React720, { memo as memo456, useRef as useRef88 } from "react";
+import React720, { memo as memo456, useRef as useRef89 } from "react";
 
 // ../juno-core/src/components/Forms/Select/styles/SelectArrowDownIcon.tsx
 import React719, { forwardRef as forwardRef632 } from "react";
@@ -77093,7 +77100,7 @@ var DatePickerHeader = memo456((props) => {
   const preMonth = utils.getPreviousMonth(focusedDate);
   const nextMonth = utils.getNextMonth(focusedDate);
   const monthLabel = utils.getCalendarHeaderText(focusedDate);
-  const changeFromRef = useRef88();
+  const changeFromRef = useRef89();
   const selectNextMonth = () => {
     onMonthChange(nextMonth, "left");
     changeFromRef.current = "next";
@@ -77193,7 +77200,7 @@ var Day3 = memo457(styled_components_default(_Day)`
   `);
 
 // ../juno-core/src/components/Forms/Picker/DatePicker/Years.tsx
-import React723, { forwardRef as forwardRef635, useLayoutEffect as useLayoutEffect26, useMemo as useMemo71, useRef as useRef89 } from "react";
+import React723, { forwardRef as forwardRef635, useLayoutEffect as useLayoutEffect26, useMemo as useMemo71, useRef as useRef90 } from "react";
 
 // ../juno-core/src/components/Forms/Picker/DatePicker/Year.tsx
 import React722, { forwardRef as forwardRef634, memo as memo458 } from "react";
@@ -77236,16 +77243,16 @@ var Years = forwardRef635((props, ref2) => {
     now: now2
   } = props;
   const utils = useUtils();
-  const containerRef = useRef89(null);
+  const containerRef = useRef90(null);
   const combineRef = useForkRef2(containerRef, ref2);
-  const selectedYearRef = useRef89(null);
+  const selectedYearRef = useRef90(null);
   const currentYear = utils.getYear(date || now2);
   const years = useMemo71(() => utils.getYearRange(minDate, maxDate), [maxDate, minDate, utils]);
   const onYearSelect = useEventCallback2((year) => {
     const newDate = utils.setYear(date, year);
     onYearChange(newDate);
   });
-  const focusedIndexRef = useRef89(0);
+  const focusedIndexRef = useRef90(0);
   const focusedYear = years[focusedIndexRef.current]?.year();
   const { focusIndex, getItemProps } = useOnlyOneFocusable({
     focusedIndexRef,
@@ -77312,10 +77319,10 @@ var Calendar2 = forwardRef636(({
   getInvalidateDateInRange
 }, ref2) => {
   const utils = useUtils();
-  const calendarRef = useRef90(null);
+  const calendarRef = useRef91(null);
   const previousFocusDate = usePrevious(() => focusedDate);
   const previousView = usePrevious(() => view);
-  const weeks = useRef90([]);
+  const weeks = useRef91([]);
   import_dayjs2.default.locale(utils.locale);
   const { current: weekdays } = useResultRef(() => utils.getWeekdays());
   const { now: now2, isTodayDisabled } = useMemo72(() => {
@@ -77557,10 +77564,10 @@ var InnerRcDatePicker = forwardRef637((props, ref2) => {
     default: null,
     name: "RcDatePicker"
   });
-  const emitValueRef = useRef91(null);
+  const emitValueRef = useRef92(null);
   const maxDate = minDateProp || max2;
   const minDate = maxDateProp || min2;
-  const actionRef = useRef91(null);
+  const actionRef = useRef92(null);
   const dateRange = useMemo73(() => ({
     min: (0, import_dayjs3.default)(minDate || defaultMinDate),
     max: (0, import_dayjs3.default)(maxDate || defaultMaxDate)
@@ -77697,7 +77704,7 @@ import React727, {
   memo as memo459,
   useImperativeHandle as useImperativeHandle17,
   useMemo as useMemo74,
-  useRef as useRef92
+  useRef as useRef93
 } from "react";
 
 // ../juno-core/src/components/Forms/Picker/TimePicker/styles/StyledNumberPicker.tsx
@@ -77773,7 +77780,7 @@ var _NumberPicker = forwardRef639((props, ref2) => {
   } = props;
   const forceUpdate = useForceUpdate();
   const [innerValueRef, setInnerValue] = useRefState(value, forceUpdate);
-  const rangeRef = useRef92({ max: maxProp, min: minProp });
+  const rangeRef = useRef93({ max: maxProp, min: minProp });
   useDepsChange(() => {
     rangeRef.current = { max: maxProp, min: minProp };
   }, [maxProp, minProp]);
@@ -78055,7 +78062,7 @@ import React730, {
   useCallback as useCallback35,
   useLayoutEffect as useLayoutEffect28,
   useMemo as useMemo75,
-  useRef as useRef93,
+  useRef as useRef94,
   useState as useState41
 } from "react";
 var _RcTimePicker = forwardRef641((inProps, ref2) => {
@@ -78080,11 +78087,11 @@ var _RcTimePicker = forwardRef641((inProps, ref2) => {
     defaultPickerValue,
     ...rest
   } = props;
-  const actionRef = useRef93(null);
-  const hourRef = useRef93(null);
-  const minuteRef = useRef93(null);
-  const periodRef = useRef93(null);
-  const textFiledValueRef = useRef93("");
+  const actionRef = useRef94(null);
+  const hourRef = useRef94(null);
+  const minuteRef = useRef94(null);
+  const periodRef = useRef94(null);
+  const textFiledValueRef = useRef94("");
   const [selectionShowType, setSelectionType] = useState41("none");
   const { nowTime, isShowTextfieldValue } = (() => {
     if (value !== null)
@@ -78358,7 +78365,7 @@ RcRadioGroup.displayName = "RcRadioGroup";
 import React736, { forwardRef as forwardRef647, useMemo as useMemo78 } from "react";
 
 // ../juno-core/src/components/VirtualizedMenu/VirtualizedMenu.tsx
-import React733, { forwardRef as forwardRef644, useMemo as useMemo77, useRef as useRef95 } from "react";
+import React733, { forwardRef as forwardRef644, useMemo as useMemo77, useRef as useRef96 } from "react";
 
 // ../juno-core/src/components/VirtualizedMenu/VirtualizedMenuList.tsx
 var import_react_is13 = __toModule(require_react_is2());
@@ -78366,7 +78373,7 @@ import React732, {
   forwardRef as forwardRef643,
   useImperativeHandle as useImperativeHandle19,
   useMemo as useMemo76,
-  useRef as useRef94
+  useRef as useRef95
 } from "react";
 var _RcVirtualizedMenuList = forwardRef643((inProps, ref2) => {
   const props = useThemeProps({
@@ -78393,10 +78400,10 @@ var _RcVirtualizedMenuList = forwardRef643((inProps, ref2) => {
   } = props;
   const theme = RcUseTheme();
   const { document: document2 } = useRcPortalWindowContext();
-  const vlRef = useRef94(null);
+  const vlRef = useRef95(null);
   const innerListRef = React732.useRef(null);
   const handleRef = useForkRef2(innerListRef, ref2);
-  const rangeChangedRef = useRef94({ startIndex: 0, endIndex: 0 });
+  const rangeChangedRef = useRef95({ startIndex: 0, endIndex: 0 });
   const isMountedRef = useMountState();
   let hasSearchText = false;
   let activeItemIndex = -1;
@@ -78426,7 +78433,7 @@ var _RcVirtualizedMenuList = forwardRef643((inProps, ref2) => {
     return child;
   });
   const itemCount = items.length;
-  const focusedIndexRef = useRef94(activeItemIndex);
+  const focusedIndexRef = useRef95(activeItemIndex);
   focusedIndexRef.current = activeItemIndex;
   const onContainerHeightChange = useEventCallback2((changeHeight) => {
     const scroller = scrollerRef.current;
@@ -78477,7 +78484,7 @@ var _RcVirtualizedMenuList = forwardRef643((inProps, ref2) => {
       return child.props["data-search-text"];
     } : void 0
   });
-  const hiddenRef = useRef94(null);
+  const hiddenRef = useRef95(null);
   const events = useHiddenTabindex(hiddenRef);
   const onMounted = useEventCallback2(() => {
     if (autoFocus) {
@@ -78600,9 +78607,9 @@ var _RcVirtualizedMenu = forwardRef644((inProps, ref2) => {
     ...rest
   } = props;
   const { document: document2 } = useRcPortalWindowContext();
-  const popoverRef = useRef95(null);
+  const popoverRef = useRef96(null);
   const handleRef = useForkRef2(ref2, popoverRef);
-  const menuListActionRef = useRef95(null);
+  const menuListActionRef = useRef96(null);
   const classes = useMemo77(() => combineClasses(RcVirtualizedMenuClasses, classesProp), [classesProp]);
   const autoFocusItem = autoFocus && !disableAutoFocusItem && open;
   const TransitionProps4 = useMemo77(() => combineProps({
@@ -79349,7 +79356,7 @@ import React738, {
   useContext as useContext31,
   useLayoutEffect as useLayoutEffect29,
   useMemo as useMemo80,
-  useRef as useRef96,
+  useRef as useRef97,
   useState as useState44
 } from "react";
 
@@ -79388,10 +79395,10 @@ var _RcSubMenu = forwardRef649((inProps, ref2) => {
     onClose,
     ...rest
   } = props;
-  const _popperRef = useRef96(null);
+  const _popperRef = useRef97(null);
   const popperRef = useForkRef2(_popperRef, PopperProps.ref || null);
   const popperId = useId2(PopperProps.id);
-  const menuItemIdRef = useRef96(null);
+  const menuItemIdRef = useRef97(null);
   const [anchorEl, setAnchorEl] = useState44(null);
   const [open, setOpen] = useState44(false);
   const menuListContext = useContext31(RcMenuListContext);
@@ -79944,7 +79951,7 @@ import React743, {
   forwardRef as forwardRef654,
   useEffect as useEffect61,
   useMemo as useMemo85,
-  useRef as useRef97,
+  useRef as useRef98,
   useState as useState46
 } from "react";
 var import_isString2 = __toModule(require_isString());
@@ -80091,9 +80098,9 @@ var _RcInlineEditable = forwardRef654((inProps, ref2) => {
   const [isEditing, setEditing] = useState46(false);
   const [isSaving, setSaving] = useState46(false);
   const [draftRef, setDraft] = useRefState("");
-  const isNotNeedSaveWhenBlurRef = useRef97(false);
-  const textFieldRef = useRef97();
-  const labelRef = useRef97(null);
+  const isNotNeedSaveWhenBlurRef = useRef98(false);
+  const textFieldRef = useRef98();
+  const labelRef = useRef98(null);
   const saving = isSaving || savingProp;
   const handleSave = async (newValue, reason) => {
     const outputValue = multiline ? (0, import_trimEnd.default)(newValue) : newValue.trim();
@@ -80935,7 +80942,7 @@ import {
   Fragment as Fragment12,
   createElement as createElement583,
   forwardRef as forwardRef661,
-  useRef as useRef98,
+  useRef as useRef99,
   useState as useState47
 } from "react";
 
@@ -81078,7 +81085,7 @@ var Rating = /* @__PURE__ */ forwardRef661(function Rating2(props, ref2) {
   }
   var _useIsFocusVisible = useIsFocusVisible(), isFocusVisible2 = _useIsFocusVisible.isFocusVisible, onBlurVisible = _useIsFocusVisible.onBlurVisible, focusVisibleRef = _useIsFocusVisible.ref;
   var _React$useState2 = useState47(false), focusVisible2 = _React$useState2[0], setFocusVisible = _React$useState2[1];
-  var rootRef = useRef98();
+  var rootRef = useRef99();
   var handleFocusRef = useForkRef(focusVisibleRef, rootRef);
   var handleRef = useForkRef(handleFocusRef, ref2);
   var handleMouseMove = function handleMouseMove2(event) {
@@ -81438,7 +81445,7 @@ RcRating.defaultProps = {
 RcRating.displayName = "RcRating";
 
 // ../juno-core/src/components/Responsive/Responsive.tsx
-import React761, { useRef as useRef99, useState as useState48 } from "react";
+import React761, { useRef as useRef100, useState as useState48 } from "react";
 
 // ../juno-core/src/components/Responsive/utils/getMatchedBreakpoint.ts
 var bpListL2S = [...breakpointList].reverse();
@@ -81456,7 +81463,7 @@ var RcResponsive = (inProps) => {
   } = props;
   const { externalWindow } = useRcPortalWindowContext();
   const currentWindow = externalWindow ?? window;
-  const bodyRef = useRef99(currentWindow.document.body);
+  const bodyRef = useRef100(currentWindow.document.body);
   const targetRef = responsiveTarget ?? bodyRef;
   const [contextValue, setContextValue] = useState48(() => {
     const target = targetRef.current;
@@ -81809,13 +81816,13 @@ import React768, { forwardRef as forwardRef667, useMemo as useMemo94 } from "rea
 import React767, { forwardRef as forwardRef666, useMemo as useMemo93 } from "react";
 
 // ../juno-core/src/components/Stepper/StepIcon/utils/StepIconUtils.ts
-import { useRef as useRef100 } from "react";
+import { useRef as useRef101 } from "react";
 var RcStepIconClasses = RcClasses(["root", "active", "text"], "RcStepIcon");
 var iconColor = palette22("interactive", "b02");
 var iconTextColor = palette22("neutral", "f01");
 var useIsEditable = ({ active, completed }) => {
-  const completedTimesRef = useRef100(0);
-  const isEditRef = useRef100(false);
+  const completedTimesRef = useRef101(0);
+  const isEditRef = useRef101(false);
   const { current: completedTimes } = completedTimesRef;
   const { current: isEdit } = isEditRef;
   if (completedTimes === 0 && !active && completed) {
@@ -82662,7 +82669,7 @@ import React783, {
   forwardRef as forwardRef681,
   useEffect as useEffect62,
   useMemo as useMemo104,
-  useRef as useRef101,
+  useRef as useRef102,
   useState as useState50
 } from "react";
 
@@ -82940,18 +82947,18 @@ var _MoreMenuTabs = forwardRef681((props, ref2) => {
   const prevChildrenProp = usePrevious(() => childrenProp);
   const isVertical = orientation === "vertical";
   const oriStr = isVertical ? "height" : "width";
-  const innerRef = useRef101(null);
-  const moreTabRef = useRef101(null);
+  const innerRef = useRef102(null);
+  const moreTabRef = useRef102(null);
   const tabsRef = useForkRef2(innerRef, ref2);
-  const tabRefsMapRef = useRef101();
-  const moreTabSizeRef = useRef101(DEFAULT_SIZE);
-  const allTabsSizeRef = useRef101(DEFAULT_SIZE);
-  const tabsTabChildRef = useRef101([]);
-  const tabsSizeRef = useRef101(DEFAULT_SIZE);
-  const groupingRef = useRef101();
+  const tabRefsMapRef = useRef102();
+  const moreTabSizeRef = useRef102(DEFAULT_SIZE);
+  const allTabsSizeRef = useRef102(DEFAULT_SIZE);
+  const tabsTabChildRef = useRef102([]);
+  const tabsSizeRef = useRef102(DEFAULT_SIZE);
+  const groupingRef = useRef102();
   const [menuTabChild, setMenuTabChild] = useState50([]);
   const [useMoreMode, setUseMoreMode] = useState50(true);
-  const hasResizeRef = useRef101(true);
+  const hasResizeRef = useRef102(true);
   const forceUpdate = useForceUpdate();
   const sizeChange = (size) => {
     hasResizeRef.current = true;
@@ -83440,7 +83447,7 @@ RcTag.defaultProps = {
 RcTag.displayName = "RcTag";
 
 // ../juno-core/src/components/Text/Text.tsx
-import React790, { forwardRef as forwardRef687, useMemo as useMemo109, useRef as useRef102, useState as useState52 } from "react";
+import React790, { forwardRef as forwardRef687, useMemo as useMemo109, useRef as useRef103, useState as useState52 } from "react";
 var import_isString3 = __toModule(require_isString());
 
 // ../juno-core/src/components/Text/styles/StyledText.tsx
@@ -83480,7 +83487,7 @@ var _RcText = forwardRef687((inProps, ref2) => {
     ...rest
   } = props;
   const [isShowTitle, setIsShowTitle] = useState52(true);
-  const innerRef = useRef102(null);
+  const innerRef = useRef103(null);
   const textRef = useForkRef2(innerRef, ref2);
   if (titleWhenOverflow) {
     useOverflow(innerRef, (state) => setIsShowTitle(state));
