@@ -1,4 +1,11 @@
 
+### [2.23.1](https://github.com/ringcentral/juno/compare/juno-core-v2.23.0...juno-core-v2.23.1) (2022-12-05)
+
+
+### Bug Fixes
+
+* **FIJI-59449:** [Switch] fix switch overflow issue ([d932f65](https://github.com/ringcentral/juno/commit/d932f65d7779ed3044326b1881809f1b7e774c0f))
+
 ## [2.23.0](https://github.com/ringcentral/juno/compare/juno-core-v2.22.1...juno-core-v2.23.0) (2022-11-23)
 
 
