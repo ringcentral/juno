@@ -339,10 +339,17 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 }
 
 .c22.RcSwitch-root {
-  overflow: visible;
   padding: 0px;
   width: 36px;
   height: 20px;
+}
+
+.c22.RcSwitch-root[data-focus-visible-within] {
+  border-radius: 100vw;
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
 }
 
 .c22.RcSwitch-root .RcSwitch-switchBase {
@@ -382,13 +389,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 
 .c22.RcSwitch-root .RcSwitch-disabled + .RcSwitch-track {
   background-color: #C7C7C7;
-}
-
-.c22.RcSwitch-root .RcSwitch-focusVisible + .RcSwitch-track {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: 2px;
 }
 
 .c22.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
@@ -1742,10 +1742,17 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
 }
 
 .c21.RcSwitch-root {
-  overflow: visible;
   padding: 0px;
   width: 36px;
   height: 20px;
+}
+
+.c21.RcSwitch-root[data-focus-visible-within] {
+  border-radius: 100vw;
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
 }
 
 .c21.RcSwitch-root .RcSwitch-switchBase {
@@ -1785,13 +1792,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
 
 .c21.RcSwitch-root .RcSwitch-disabled + .RcSwitch-track {
   background-color: #C7C7C7;
-}
-
-.c21.RcSwitch-root .RcSwitch-focusVisible + .RcSwitch-track {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: 2px;
 }
 
 .c21.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {

@@ -2,10 +2,17 @@
 
 exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch 1`] = `
 .c0.RcSwitch-root {
-  overflow: visible;
   padding: 0px;
   width: 36px;
   height: 20px;
+}
+
+.c0.RcSwitch-root[data-focus-visible-within] {
+  border-radius: 100vw;
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
 }
 
 .c0.RcSwitch-root .RcSwitch-switchBase {
@@ -45,13 +52,6 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch 1`] = `
 
 .c0.RcSwitch-root .RcSwitch-disabled + .RcSwitch-track {
   background-color: #C7C7C7;
-}
-
-.c0.RcSwitch-root .RcSwitch-focusVisible + .RcSwitch-track {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: 2px;
 }
 
 .c0.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
@@ -148,10 +148,17 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch Examples 1`] = `
 }
 
 .c2.RcSwitch-root {
-  overflow: visible;
   padding: 0px;
   width: 36px;
   height: 20px;
+}
+
+.c2.RcSwitch-root[data-focus-visible-within] {
+  border-radius: 100vw;
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
 }
 
 .c2.RcSwitch-root .RcSwitch-switchBase {
@@ -191,13 +198,6 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch Examples 1`] = `
 
 .c2.RcSwitch-root .RcSwitch-disabled + .RcSwitch-track {
   background-color: #C7C7C7;
-}
-
-.c2.RcSwitch-root .RcSwitch-focusVisible + .RcSwitch-track {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: 2px;
 }
 
 .c2.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
@@ -484,10 +484,17 @@ Array [
 }
 
 .c1.RcSwitch-root {
-  overflow: visible;
   padding: 0px;
   width: 36px;
   height: 20px;
+}
+
+.c1.RcSwitch-root[data-focus-visible-within] {
+  border-radius: 100vw;
+  outline-color: #066FAC;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
 }
 
 .c1.RcSwitch-root .RcSwitch-switchBase {
@@ -527,13 +534,6 @@ Array [
 
 .c1.RcSwitch-root .RcSwitch-disabled + .RcSwitch-track {
   background-color: #C7C7C7;
-}
-
-.c1.RcSwitch-root .RcSwitch-focusVisible + .RcSwitch-track {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: 2px;
 }
 
 .c1.RcSwitch-root:active .RcSwitch-switchBase:not(.RcSwitch-disabled) + .RcSwitch-track {
