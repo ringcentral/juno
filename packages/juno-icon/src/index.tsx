@@ -349,6 +349,7 @@ export { default as ResetZoom } from './ResetZoom';
 export { default as RichTextEditor } from './RichTextEditor';
 export { default as RollAp } from './RollAp';
 export { default as SaveDraft } from './SaveDraft';
+export { default as Scan } from './Scan';
 export { default as ScheduleMeeting } from './ScheduleMeeting';
 export { default as Schedule } from './Schedule';
 export { default as ScreenshareBorder } from './ScreenshareBorder';

@@ -9,6 +9,7 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  Scan: 'scan',
   PhoneS: 'phone_s',
   SortMessage: 'sort-message',
   Welcome: 'welcome',
