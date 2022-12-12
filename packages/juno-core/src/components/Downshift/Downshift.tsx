@@ -786,6 +786,7 @@ const _RcDownshift = memo(
       isKeepHighlightedIndex,
       focused: isDownshiftFocused,
       autoCompleteSelectedIndex,
+      popperElementRef,
     } = useDownshift({
       focused,
       open: openProp,
@@ -1069,6 +1070,7 @@ const _RcDownshift = memo(
           </RcVisuallyHidden>
         )}
         <StyledPopper
+          ref={popperElementRef}
           open={open}
           position={position}
           component={PopperComponent}
