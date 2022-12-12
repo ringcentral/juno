@@ -114,7 +114,6 @@ TextField.args = {
   helperText: 'some helper text',
   label: 'Topic',
   placeholder: 'Placeholder',
-  id: 'id-textField-1',
 };
 
 TextField.argTypes = {
@@ -317,6 +316,5 @@ TextFieldWithAlign.args = {
   helperText: 'some helper text',
   label: 'Topic',
   placeholder: 'Placeholder',
-  id: 'id-TextFieldWithAlign-1',
   value: 'text align',
 };
