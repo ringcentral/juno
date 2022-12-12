@@ -27,6 +27,7 @@ import {
   useEventCallback,
   useForkRef,
   useThemeProps,
+  useId,
 } from '../../../foundation';
 import { RcIconButtonProps } from '../../Buttons';
 import { WithTooltipProps } from '../../Tooltip';
@@ -157,7 +158,7 @@ const _RcTextField = forwardRef<any, RcTextFieldProps>((inProps, ref) => {
     onBlur,
     onFocus,
     onClear,
-    id,
+    id: idProp,
     // #region outline pick props
     variant,
     radius,
@@ -197,7 +198,7 @@ const _RcTextField = forwardRef<any, RcTextFieldProps>((inProps, ref) => {
     },
   );
 
-  const endAdornment = useMemo(() => {
+  const endAdornment = (() => {
     const getCleanButton = () => {
       const iconTitle = clearLabel || clearButtonProps?.title;
 
@@ -235,35 +236,23 @@ const _RcTextField = forwardRef<any, RcTextFieldProps>((inProps, ref) => {
     }
 
     return clearBtn ? getCleanButton() : undefined;
-  }, [
-    InputPropsProp,
-    clearAriaLabel,
-    clearBtn,
-    clearButtonProps,
-    clearLabel,
-    handleClear,
-    size,
-  ]);
+  })();
 
-  const events = useMemo(
-    () =>
-      combineProps(
-        {
-          onBlur: () => {
-            runValidate();
-          },
-          onFocus: () => {
-            if (validateMessage !== '') {
-              setValidateMessage('');
-            }
-          },
-        },
-        {
-          onBlur,
-          onFocus,
-        },
-      ),
-    [onBlur, onFocus, runValidate, validateMessage],
+  const events = combineProps(
+    {
+      onBlur: () => {
+        runValidate();
+      },
+      onFocus: () => {
+        if (validateMessage !== '') {
+          setValidateMessage('');
+        }
+      },
+    },
+    {
+      onBlur,
+      onFocus,
+    },
   );
 
   const classes = useMemo(
@@ -271,43 +260,33 @@ const _RcTextField = forwardRef<any, RcTextFieldProps>((inProps, ref) => {
     [classesProp],
   );
 
-  const InputProps = useMemo(() => {
-    const curr = {
-      outline: combineOutlineClasses,
-      borderLess: undefined,
-      standard: undefined,
-    }[variant!];
+  const additionClasses = {
+    outline: combineOutlineClasses,
+    borderLess: undefined,
+    standard: undefined,
+  }[variant!];
 
-    return combineProps(
-      {
-        classes: curr || RcTextFieldInputClasses,
-        disableUnderline: ['outline', 'borderLess', 'inline'].includes(
-          variant as any,
-        ),
-      },
-      {
-        ...InputPropsProp,
-        endAdornment,
-      },
-    );
-  }, [InputPropsProp, endAdornment, variant]);
-
-  const FormHelperTextProps = useMemo(
-    () =>
-      combineProps(
-        { classes: RcTextFieldFormHelperTextClasses },
-        FormHelperTextPropsProp,
+  const InputProps = combineProps(
+    {
+      classes: additionClasses || RcTextFieldInputClasses,
+      disableUnderline: ['outline', 'borderLess', 'inline'].includes(
+        variant as any,
       ),
-    [FormHelperTextPropsProp],
+    },
+    {
+      ...InputPropsProp,
+      endAdornment,
+    },
   );
 
-  const InputLabelProps = useMemo(
-    () =>
-      combineProps(
-        { classes: RcTextFieldInputLabelClasses, shrink: true },
-        InputLabelPropsProp,
-      ),
-    [InputLabelPropsProp],
+  const FormHelperTextProps = combineProps(
+    { classes: RcTextFieldFormHelperTextClasses },
+    FormHelperTextPropsProp,
+  );
+
+  const InputLabelProps = combineProps(
+    { classes: RcTextFieldInputLabelClasses, shrink: true },
+    InputLabelPropsProp,
   );
 
   useLayoutEffect(() => {
@@ -339,6 +318,9 @@ const _RcTextField = forwardRef<any, RcTextFieldProps>((inProps, ref) => {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // TODO: remove this after upgrade to Mui5
+  const id = useId(idProp);
 
   useEffect(() => {
     if (id) formContext.set(id, { validate: () => runValidate() });
