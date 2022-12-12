@@ -1221,6 +1221,7 @@ Array [
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputAdornedEnd"
         disabled={false}
+        id="rc-juno-id-0"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}

@@ -1431,6 +1431,7 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input RcOutlineTextFieldInput-input MuiInputBase-inputAdornedEnd"
         disabled={false}
+        id="rc-juno-id-0"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}

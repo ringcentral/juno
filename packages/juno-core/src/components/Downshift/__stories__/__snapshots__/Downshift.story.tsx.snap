@@ -8258,6 +8258,7 @@ Array [
         </div>
         <input
           aria-autocomplete="list"
+          aria-describedby="rc-juno-id-0-helper-text"
           aria-expanded={false}
           aria-haspopup={true}
           aria-invalid={false}
@@ -8364,6 +8365,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+      id="rc-juno-id-0-helper-text"
     >
       please select country
     </p>
@@ -9783,6 +9785,7 @@ Array [
         </div>
         <input
           aria-autocomplete="list"
+          aria-describedby="rc-juno-id-0-helper-text"
           aria-expanded={false}
           aria-haspopup={true}
           aria-invalid={false}
@@ -9890,6 +9893,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root Mui-disabled RcTextFieldFormHelperText-disabled"
+      id="rc-juno-id-0-helper-text"
     >
       please select country
     </p>
@@ -11183,6 +11187,7 @@ Array [
         </div>
         <input
           aria-autocomplete="list"
+          aria-describedby="rc-juno-id-0-helper-text"
           aria-expanded={false}
           aria-haspopup={true}
           aria-invalid={true}
@@ -11289,6 +11294,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root Mui-error RcTextFieldFormHelperText-error"
+      id="rc-juno-id-0-helper-text"
     >
       please select country
     </p>
@@ -12582,6 +12588,7 @@ Array [
         </div>
         <input
           aria-autocomplete="list"
+          aria-describedby="rc-juno-id-0-helper-text"
           aria-expanded={false}
           aria-haspopup={true}
           aria-invalid={false}
@@ -12688,6 +12695,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+      id="rc-juno-id-0-helper-text"
     >
       please select country
     </p>
@@ -15417,6 +15425,7 @@ Array [
       >
         <input
           aria-autocomplete="list"
+          aria-describedby="rc-juno-id-0-helper-text"
           aria-expanded={false}
           aria-haspopup={true}
           aria-invalid={false}
@@ -15524,6 +15533,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+      id="rc-juno-id-0-helper-text"
     >
       please select country
     </p>
@@ -16601,6 +16611,7 @@ Array [
       >
         <input
           aria-autocomplete="list"
+          aria-describedby="rc-juno-id-0-helper-text"
           aria-expanded={false}
           aria-haspopup={true}
           aria-invalid={false}
@@ -16708,6 +16719,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+      id="rc-juno-id-0-helper-text"
     >
       please select country
     </p>
@@ -17785,6 +17797,7 @@ Array [
       >
         <input
           aria-autocomplete="list"
+          aria-describedby="rc-juno-id-0-helper-text"
           aria-expanded={false}
           aria-haspopup={true}
           aria-invalid={false}
@@ -17892,6 +17905,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+      id="rc-juno-id-0-helper-text"
     >
       please select country
     </p>
@@ -18969,6 +18983,7 @@ Array [
       >
         <input
           aria-autocomplete="list"
+          aria-describedby="rc-juno-id-0-helper-text"
           aria-expanded={false}
           aria-haspopup={true}
           aria-invalid={false}
@@ -19076,6 +19091,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+      id="rc-juno-id-0-helper-text"
     >
       please select country
     </p>
@@ -20122,6 +20138,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
     >
       <input
         aria-autocomplete="list"
+        aria-describedby="rc-juno-id-0-helper-text"
         aria-expanded={false}
         aria-haspopup={true}
         aria-invalid={false}
@@ -20229,6 +20246,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
   </div>
   <p
     className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+    id="rc-juno-id-0-helper-text"
   >
     please select country
   </p>
@@ -24837,6 +24855,7 @@ Array [
       >
         <input
           aria-autocomplete="list"
+          aria-describedby="rc-juno-id-0-helper-text"
           aria-expanded={false}
           aria-haspopup={true}
           aria-invalid={false}
@@ -24944,6 +24963,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+      id="rc-juno-id-0-helper-text"
     >
       typing something to get value
     </p>
@@ -26021,6 +26041,7 @@ Array [
       >
         <input
           aria-autocomplete="list"
+          aria-describedby="rc-juno-id-0-helper-text"
           aria-expanded={false}
           aria-haspopup={true}
           aria-invalid={false}
@@ -26128,6 +26149,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+      id="rc-juno-id-0-helper-text"
     >
       typing something to get value
     </p>
