@@ -58412,7 +58412,7 @@ var _RcTextField = forwardRef592((inProps, ref2) => {
     onBlur,
     onFocus,
     onClear,
-    id: id3,
+    id: idProp,
     variant,
     radius: radius4,
     size,
@@ -58440,7 +58440,7 @@ var _RcTextField = forwardRef592((inProps, ref2) => {
     onChange?.(fakeEvent);
     setValidateMessage("");
   });
-  const endAdornment = useMemo35(() => {
+  const endAdornment = (() => {
     const getCleanButton = () => {
       const iconTitle = clearLabel || clearButtonProps?.title;
       const combineClearProps = combineProps({
@@ -58464,16 +58464,8 @@ var _RcTextField = forwardRef592((inProps, ref2) => {
       return InputPropsProp.endAdornment;
     }
     return clearBtn ? getCleanButton() : void 0;
-  }, [
-    InputPropsProp,
-    clearAriaLabel,
-    clearBtn,
-    clearButtonProps,
-    clearLabel,
-    handleClear,
-    size
-  ]);
-  const events = useMemo35(() => combineProps({
+  })();
+  const events = combineProps({
     onBlur: () => {
       runValidate();
     },
@@ -58485,24 +58477,22 @@ var _RcTextField = forwardRef592((inProps, ref2) => {
   }, {
     onBlur,
     onFocus
-  }), [onBlur, onFocus, runValidate, validateMessage]);
+  });
   const classes = useMemo35(() => combineClasses(RcTextFieldClasses, classesProp), [classesProp]);
-  const InputProps = useMemo35(() => {
-    const curr = {
-      outline: combineOutlineClasses,
-      borderLess: void 0,
-      standard: void 0
-    }[variant];
-    return combineProps({
-      classes: curr || RcTextFieldInputClasses,
-      disableUnderline: ["outline", "borderLess", "inline"].includes(variant)
-    }, {
-      ...InputPropsProp,
-      endAdornment
-    });
-  }, [InputPropsProp, endAdornment, variant]);
-  const FormHelperTextProps = useMemo35(() => combineProps({ classes: RcTextFieldFormHelperTextClasses }, FormHelperTextPropsProp), [FormHelperTextPropsProp]);
-  const InputLabelProps = useMemo35(() => combineProps({ classes: RcTextFieldInputLabelClasses, shrink: true }, InputLabelPropsProp), [InputLabelPropsProp]);
+  const additionClasses = {
+    outline: combineOutlineClasses,
+    borderLess: void 0,
+    standard: void 0
+  }[variant];
+  const InputProps = combineProps({
+    classes: additionClasses || RcTextFieldInputClasses,
+    disableUnderline: ["outline", "borderLess", "inline"].includes(variant)
+  }, {
+    ...InputPropsProp,
+    endAdornment
+  });
+  const FormHelperTextProps = combineProps({ classes: RcTextFieldFormHelperTextClasses }, FormHelperTextPropsProp);
+  const InputLabelProps = combineProps({ classes: RcTextFieldInputLabelClasses, shrink: true }, InputLabelPropsProp);
   useLayoutEffect16(() => {
     const inputElm = innerRef.current;
     const autoFocus = autoFocusProp || InputPropsProp?.autoFocus;
@@ -58527,6 +58517,7 @@ var _RcTextField = forwardRef592((inProps, ref2) => {
       }
     };
   }, []);
+  const id3 = useId2(idProp);
   useEffect46(() => {
     if (id3)
       formContext.set(id3, { validate: () => runValidate() });
@@ -69627,10 +69618,6 @@ var useSuggestionList = ({
       onClick: (e2) => {
         selectItem(e2, item);
       },
-      onMouseDown: (e2) => {
-        e2.preventDefault();
-        e2.stopPropagation();
-      },
       onMouseOver: () => {
         if (highlightedIndexRef.current !== index4 && getIsItemCanSelected(item)) {
           setHighlightedIndex(index4, { reason: "mouse", reRender: true });
@@ -70036,6 +70023,7 @@ var useDownshift = ({
   const stopAutoSelectRef = useRef79(false);
   const fromPasteString = useRef79("");
   const keepHighlightedIndexRef = useRef79(false);
+  const popperElementRef = useRef79(null);
   const { sleep, getSleeping } = useSleep();
   const multiple = isAutocomplete ? false : multipleProp;
   const {
@@ -70134,7 +70122,7 @@ var useDownshift = ({
     updateInputValue,
     clearInput,
     getNextFocusableOption,
-    getItemProps,
+    getItemProps: getSuggestionListItemProps,
     focusInput,
     reset: resetSuggestionList,
     getInputProps: getSuggestionListInputProps,
@@ -70179,6 +70167,20 @@ var useDownshift = ({
       }
     }
   });
+  const getItemProps = (props) => {
+    const { onMouseDown, onMouseUp, ...rest } = props;
+    return getSuggestionListItemProps({
+      ...rest,
+      onMouseDown: (e2) => {
+        e2.stopPropagation();
+        onMouseDown?.(e2);
+      },
+      onMouseUp: (e2) => {
+        focusInput();
+        onMouseUp?.(e2);
+      }
+    });
+  };
   const readOnly = !isAutocomplete && !multiple && tags.length >= 1 ? true : void 0;
   const closeMenu = (e2, reason) => {
     keepHighlightedIndexRef.current = false;
@@ -70300,9 +70302,9 @@ var useDownshift = ({
     handleAutocompleteText();
   }, []);
   const getInputProps = (props) => {
-    const suggestionListItemProps = getSuggestionListInputProps(props);
+    const suggestionListInputProps = getSuggestionListInputProps(props);
     return combineProps({
-      ...suggestionListItemProps,
+      ...suggestionListInputProps,
       onPaste: (e2) => {
         if (freeSolo) {
           const clipboardData = e2.clipboardData;
@@ -70333,6 +70335,8 @@ var useDownshift = ({
       },
       onBlur: (e2) => {
         setInputFocused(false);
+        if (popperElementRef.current?.contains(e2.relatedTarget))
+          return;
         if (autoSelect && !stopAutoSelectRef.current) {
           if (!freeSolo)
             selectItem(e2, optionItems[highlightedIndexRef.current]);
@@ -70522,7 +70526,8 @@ var useDownshift = ({
     focused: focused ?? (tagFocused || inputFocused ? true : void 0),
     id: downshiftId,
     inputChanged: isInputValueChangedRef.current,
-    autoCompleteSelectedIndex: autoCompleteSelectedIndexRef.current
+    autoCompleteSelectedIndex: autoCompleteSelectedIndexRef.current,
+    popperElementRef
   };
 };
 
@@ -74790,7 +74795,8 @@ var _RcDownshift = memo456(forwardRef620((inProps, ref2) => {
     getNoOptionsProps,
     isKeepHighlightedIndex,
     focused: isDownshiftFocused,
-    autoCompleteSelectedIndex
+    autoCompleteSelectedIndex,
+    popperElementRef
   } = useDownshift({
     focused,
     open: openProp,
@@ -74988,6 +74994,7 @@ var _RcDownshift = memo456(forwardRef620((inProps, ref2) => {
   }), !helperText && screenReaderText && /* @__PURE__ */ React705.createElement(RcVisuallyHidden, {
     id: describedbyId
   }, screenReaderText), /* @__PURE__ */ React705.createElement(StyledPopper, {
+    ref: popperElementRef,
     open,
     position: position4,
     component: PopperComponent,
