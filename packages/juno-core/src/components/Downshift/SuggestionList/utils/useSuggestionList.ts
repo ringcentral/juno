@@ -243,10 +243,6 @@ export const useSuggestionList = <
         onClick: (e) => {
           selectItem(e, item);
         },
-        onMouseDown: (e) => {
-          e.preventDefault();
-          e.stopPropagation();
-        },
         onMouseOver: () => {
           if (
             highlightedIndexRef.current !== index &&

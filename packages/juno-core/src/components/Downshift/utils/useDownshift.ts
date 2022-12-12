@@ -26,7 +26,10 @@ import {
   stringArrToRegExp,
 } from './DownshiftUtils';
 import { RcDownshiftSelectedItem } from './SelectItem';
-import { RcDownshiftFilterOptions } from './useDownshift.interface';
+import {
+  RcDownshiftFilterOptions,
+  RcDownshiftGetItemPropsOptions,
+} from './useDownshift.interface';
 import { useDownshiftTag } from './useDownshiftTag';
 
 const DOWNSHIFT_ID_NO_RESULT_TOKEN = 'rc-chip-empty';
@@ -155,6 +158,7 @@ export const useDownshift = <
   const stopAutoSelectRef = useRef(false);
   const fromPasteString = useRef('');
   const keepHighlightedIndexRef = useRef(false);
+  const popperElementRef = useRef<HTMLDivElement>(null);
 
   const { sleep, getSleeping } = useSleep();
 
@@ -277,7 +281,7 @@ export const useDownshift = <
     updateInputValue,
     clearInput,
     getNextFocusableOption,
-    getItemProps,
+    getItemProps: getSuggestionListItemProps,
     focusInput,
     reset: resetSuggestionList,
     getInputProps: getSuggestionListInputProps,
@@ -333,6 +337,24 @@ export const useDownshift = <
       }
     },
   });
+
+  const getItemProps = (props: RcDownshiftGetItemPropsOptions<T>) => {
+    const { onMouseDown, onMouseUp, ...rest } = props;
+    return getSuggestionListItemProps({
+      ...rest,
+      onMouseDown: (e) => {
+        // `getPopperProps` will prevent change focus when mouse down popper
+        // but suggestion item is an exception.
+        // so we need stop propagation to make sure focus can be changed
+        e.stopPropagation();
+        onMouseDown?.(e);
+      },
+      onMouseUp: (e) => {
+        focusInput();
+        onMouseUp?.(e);
+      },
+    });
+  };
 
   const readOnly =
     !isAutocomplete && !multiple && tags.length >= 1 ? true : undefined;
@@ -506,11 +528,11 @@ export const useDownshift = <
   }, []);
 
   const getInputProps = (props?: RcTextFieldProps['InputProps']) => {
-    const suggestionListItemProps = getSuggestionListInputProps(props);
+    const suggestionListInputProps = getSuggestionListInputProps(props);
 
     return combineProps(
       {
-        ...suggestionListItemProps,
+        ...suggestionListInputProps,
         onPaste: (e) => {
           if (freeSolo) {
             const clipboardData = e.clipboardData;
@@ -559,6 +581,11 @@ export const useDownshift = <
         },
         onBlur: (e) => {
           setInputFocused(false);
+
+          // mouse down suggestion item will change focus,
+          // but we don't want to close popper in this case
+          if (popperElementRef.current?.contains(e.relatedTarget as Node))
+            return;
 
           if (autoSelect && !stopAutoSelectRef.current) {
             if (!freeSolo)
@@ -815,5 +842,6 @@ export const useDownshift = <
     id: downshiftId,
     inputChanged: isInputValueChangedRef.current,
     autoCompleteSelectedIndex: autoCompleteSelectedIndexRef.current,
+    popperElementRef,
   };
 };
