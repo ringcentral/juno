@@ -881,6 +881,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input"
         disabled={false}
+        id="rc-juno-id-0"
         maxLength={30}
         onAnimationStart={[Function]}
         onBlur={[Function]}
@@ -3741,7 +3742,9 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
         >
           <div
             aria-haspopup="listbox"
+            aria-labelledby="rc-juno-id-0"
             className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input RcTextFieldInput-input RcBoxSelectInput-input"
+            id="rc-juno-id-0"
             onBlur={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
@@ -5530,6 +5533,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
                   autoFocus={false}
                   className="MuiInputBase-input MuiInput-input RcTextFieldInput-input"
                   disabled={false}
+                  id="rc-juno-id-0"
                   onAnimationStart={[Function]}
                   onBlur={[Function]}
                   onChange={[Function]}

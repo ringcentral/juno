@@ -12110,8 +12110,8 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select 1`] = `
       <label
         className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
         data-shrink={true}
-        htmlFor="line-select"
-        id="line-select-label"
+        htmlFor="rc-juno-id-0"
+        id="rc-juno-id-0-label"
       >
         Team Name
       </label>
@@ -12121,9 +12121,9 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select 1`] = `
       >
         <div
           aria-haspopup="listbox"
-          aria-labelledby="line-select-label line-select"
+          aria-labelledby="rc-juno-id-0-label rc-juno-id-0"
           className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input RcTextFieldInput-input RcLineSelectInput-input RcSelectInputWhenPlaceholder-input RcLineSelectInput-input"
-          id="line-select"
+          id="rc-juno-id-0"
           onBlur={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -12140,7 +12140,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select 1`] = `
           />
         </div>
         <input
-          aria-describedby="line-select-helper-text"
+          aria-describedby="rc-juno-id-0-helper-text"
           aria-hidden={true}
           autoFocus={false}
           className="MuiSelect-nativeInput"
@@ -12171,7 +12171,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select 1`] = `
       </div>
       <p
         className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
-        id="line-select-helper-text"
+        id="rc-juno-id-0-helper-text"
       >
         Some important helper text
       </p>
@@ -14764,7 +14764,9 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select With Custom Me
   >
     <div
       aria-haspopup="listbox"
+      aria-labelledby="rc-juno-id-0"
       className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input RcTextFieldInput-input RcLineSelectInput-input RcSelectInputWhenPlaceholder-input RcLineSelectInput-input"
+      id="rc-juno-id-0"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -15549,7 +15551,9 @@ Array [
     >
       <div
         aria-haspopup="listbox"
+        aria-labelledby="rc-juno-id-0"
         className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input RcTextFieldInput-input RcLineSelectInput-input RcSelectInputWhenPlaceholder-input RcLineSelectInput-input"
+        id="rc-juno-id-0"
         onBlur={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -16390,7 +16394,9 @@ Array [
     >
       <div
         aria-haspopup="listbox"
+        aria-labelledby="rc-juno-id-0"
         className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input RcTextFieldInput-input RcBoxSelectInput-input RcSelectInputWhenPlaceholder-input RcBoxSelectInput-input"
+        id="rc-juno-id-0"
         onBlur={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}

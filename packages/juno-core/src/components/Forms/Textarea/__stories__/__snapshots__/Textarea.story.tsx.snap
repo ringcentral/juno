@@ -2199,6 +2199,8 @@ Array [
     <label
       className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
       data-shrink={true}
+      htmlFor="rc-juno-id-0"
+      id="rc-juno-id-0-label"
     >
       Title
     </label>
@@ -2211,6 +2213,7 @@ Array [
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
         disabled={false}
+        id="rc-juno-id-0"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
@@ -2939,6 +2942,8 @@ Array [
     <label
       className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
       data-shrink={true}
+      htmlFor="rc-juno-id-0"
+      id="rc-juno-id-0-label"
     >
       Title
     </label>
@@ -2951,6 +2956,7 @@ Array [
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
         disabled={false}
+        id="rc-juno-id-0"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
@@ -3683,6 +3689,8 @@ Array [
     <label
       className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-focused Mui-focused RcTextFieldInputLabel-focused"
       data-shrink={true}
+      htmlFor="rc-juno-id-0"
+      id="rc-juno-id-0-label"
     >
       Title
     </label>
@@ -3695,6 +3703,7 @@ Array [
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
         disabled={false}
+        id="rc-juno-id-0"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
@@ -4427,6 +4436,8 @@ Array [
     <label
       className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-error Mui-error RcTextFieldInputLabel-error"
       data-shrink={true}
+      htmlFor="rc-juno-id-0"
+      id="rc-juno-id-0-label"
     >
       Title
     </label>
@@ -4439,6 +4450,7 @@ Array [
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
         disabled={false}
+        id="rc-juno-id-0"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
@@ -5169,6 +5181,8 @@ Array [
     <label
       className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-disabled Mui-disabled RcTextFieldInputLabel-disabled"
       data-shrink={true}
+      htmlFor="rc-juno-id-0"
+      id="rc-juno-id-0-label"
     >
       Title
     </label>
@@ -5181,6 +5195,7 @@ Array [
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input Mui-disabled Mui-disabled RcTextFieldInput-disabled MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
         disabled={true}
+        id="rc-juno-id-0"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
@@ -5913,6 +5928,8 @@ Array [
     <label
       className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
       data-shrink={true}
+      htmlFor="rc-juno-id-0"
+      id="rc-juno-id-0-label"
     >
       Auto size
     </label>
@@ -5925,6 +5942,7 @@ Array [
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputMultiline MuiInput-inputMultiline RcTextareaInput-inputMultiline"
         disabled={false}
+        id="rc-juno-id-0"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}

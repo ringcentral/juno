@@ -1910,8 +1910,8 @@ Array [
     <label
       className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
       data-shrink={true}
-      htmlFor="id-textField-1"
-      id="id-textField-1-label"
+      htmlFor="search"
+      id="search-label"
     >
       Topic
     </label>
@@ -1920,12 +1920,12 @@ Array [
       onClick={[Function]}
     >
       <input
-        aria-describedby="id-textField-1-helper-text"
+        aria-describedby="search-helper-text"
         aria-invalid={false}
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputAdornedEnd MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch"
         disabled={false}
-        id="id-textField-1"
+        id="search"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
@@ -1982,7 +1982,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
-      id="id-textField-1-helper-text"
+      id="search-helper-text"
     >
       some helper text
     </p>
@@ -2954,6 +2954,8 @@ Array [
     <label
       className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
       data-shrink={true}
+      htmlFor="rc-juno-id-0"
+      id="rc-juno-id-0-label"
     >
       Number
     </label>
@@ -2962,10 +2964,12 @@ Array [
       onClick={[Function]}
     >
       <input
+        aria-describedby="rc-juno-id-0-helper-text"
         aria-invalid={false}
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputAdornedEnd"
         disabled={false}
+        id="rc-juno-id-0"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
@@ -3026,6 +3030,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+      id="rc-juno-id-0-helper-text"
     >
       some helper text
     </p>
@@ -4037,6 +4042,8 @@ Array [
     <label
       className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
       data-shrink={true}
+      htmlFor="rc-juno-id-0"
+      id="rc-juno-id-0-label"
     >
       Title
     </label>
@@ -4045,10 +4052,12 @@ Array [
       onClick={[Function]}
     >
       <input
+        aria-describedby="rc-juno-id-0-helper-text"
         aria-invalid={false}
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputAdornedEnd"
         disabled={false}
+        id="rc-juno-id-0"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
@@ -4105,6 +4114,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+      id="rc-juno-id-0-helper-text"
     >
       some helper text
     </p>
@@ -5116,6 +5126,8 @@ Array [
     <label
       className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
       data-shrink={true}
+      htmlFor="rc-juno-id-0"
+      id="rc-juno-id-0-label"
     >
       Password
     </label>
@@ -5124,10 +5136,12 @@ Array [
       onClick={[Function]}
     >
       <input
+        aria-describedby="rc-juno-id-0-helper-text"
         aria-invalid={false}
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputAdornedEnd"
         disabled={false}
+        id="rc-juno-id-0"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
@@ -5216,6 +5230,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+      id="rc-juno-id-0-helper-text"
     >
       some helper text
     </p>
@@ -6227,6 +6242,8 @@ Array [
     <label
       className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-focused Mui-focused RcTextFieldInputLabel-focused"
       data-shrink={true}
+      htmlFor="rc-juno-id-0"
+      id="rc-juno-id-0-label"
     >
       Title
     </label>
@@ -6235,10 +6252,12 @@ Array [
       onClick={[Function]}
     >
       <input
+        aria-describedby="rc-juno-id-0-helper-text"
         aria-invalid={false}
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputAdornedEnd"
         disabled={false}
+        id="rc-juno-id-0"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
@@ -6295,6 +6314,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root Mui-focused"
+      id="rc-juno-id-0-helper-text"
     >
       some helper text
     </p>
@@ -7306,6 +7326,8 @@ Array [
     <label
       className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-error Mui-error RcTextFieldInputLabel-error"
       data-shrink={true}
+      htmlFor="rc-juno-id-0"
+      id="rc-juno-id-0-label"
     >
       Title
     </label>
@@ -7314,10 +7336,12 @@ Array [
       onClick={[Function]}
     >
       <input
+        aria-describedby="rc-juno-id-0-helper-text"
         aria-invalid={true}
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputAdornedEnd"
         disabled={false}
+        id="rc-juno-id-0"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
@@ -7374,6 +7398,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root Mui-error RcTextFieldFormHelperText-error"
+      id="rc-juno-id-0-helper-text"
     >
       some helper text
     </p>
@@ -8381,6 +8406,8 @@ Array [
     <label
       className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-disabled Mui-disabled RcTextFieldInputLabel-disabled"
       data-shrink={true}
+      htmlFor="rc-juno-id-0"
+      id="rc-juno-id-0-label"
     >
       Title
     </label>
@@ -8389,10 +8416,12 @@ Array [
       onClick={[Function]}
     >
       <input
+        aria-describedby="rc-juno-id-0-helper-text"
         aria-invalid={false}
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input Mui-disabled Mui-disabled RcTextFieldInput-disabled MuiInputBase-inputAdornedEnd"
         disabled={true}
+        id="rc-juno-id-0"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
@@ -8449,6 +8478,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root Mui-disabled RcTextFieldFormHelperText-disabled"
+      id="rc-juno-id-0-helper-text"
     >
       some helper text
     </p>
@@ -9460,6 +9490,8 @@ Array [
     <label
       className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
       data-shrink={true}
+      htmlFor="rc-juno-id-0"
+      id="rc-juno-id-0-label"
     >
       Title
     </label>
@@ -9468,10 +9500,12 @@ Array [
       onClick={[Function]}
     >
       <input
+        aria-describedby="rc-juno-id-0-helper-text"
         aria-invalid={false}
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputAdornedEnd"
         disabled={false}
+        id="rc-juno-id-0"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
@@ -9528,6 +9562,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
+      id="rc-juno-id-0-helper-text"
     >
       some helper text
     </p>
@@ -10535,6 +10570,8 @@ Array [
     <label
       className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-focused Mui-focused RcTextFieldInputLabel-focused"
       data-shrink={true}
+      htmlFor="rc-juno-id-0"
+      id="rc-juno-id-0-label"
     >
       Title
     </label>
@@ -10543,10 +10580,12 @@ Array [
       onClick={[Function]}
     >
       <input
+        aria-describedby="rc-juno-id-0-helper-text"
         aria-invalid={false}
         autoFocus={false}
         className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputAdornedEnd"
         disabled={false}
+        id="rc-juno-id-0"
         onAnimationStart={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
@@ -10603,6 +10642,7 @@ Array [
     </div>
     <p
       className="MuiFormHelperText-root RcTextFieldFormHelperText-root Mui-focused"
+      id="rc-juno-id-0-helper-text"
     >
       some helper text
     </p>
@@ -11811,8 +11851,8 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
       <label
         className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
         data-shrink={true}
-        htmlFor="id-TextFieldWithAlign-1"
-        id="id-TextFieldWithAlign-1-label"
+        htmlFor="rc-juno-id-0"
+        id="rc-juno-id-0-label"
       >
         Topic
       </label>
@@ -11821,12 +11861,12 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
         onClick={[Function]}
       >
         <input
-          aria-describedby="id-TextFieldWithAlign-1-helper-text"
+          aria-describedby="rc-juno-id-0-helper-text"
           aria-invalid={false}
           autoFocus={false}
           className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputAdornedEnd MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch"
           disabled={false}
-          id="id-TextFieldWithAlign-1"
+          id="rc-juno-id-0"
           onAnimationStart={[Function]}
           onBlur={[Function]}
           onChange={[Function]}
@@ -11883,7 +11923,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
       </div>
       <p
         className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
-        id="id-TextFieldWithAlign-1-helper-text"
+        id="rc-juno-id-0-helper-text"
       >
         some helper text
       </p>
@@ -12432,8 +12472,8 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
       <label
         className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
         data-shrink={true}
-        htmlFor="id-TextFieldWithAlign-1"
-        id="id-TextFieldWithAlign-1-label"
+        htmlFor="rc-juno-id-0"
+        id="rc-juno-id-0-label"
       >
         Topic
       </label>
@@ -12442,12 +12482,12 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
         onClick={[Function]}
       >
         <input
-          aria-describedby="id-TextFieldWithAlign-1-helper-text"
+          aria-describedby="rc-juno-id-0-helper-text"
           aria-invalid={false}
           autoFocus={false}
           className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputAdornedEnd MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch"
           disabled={false}
-          id="id-TextFieldWithAlign-1"
+          id="rc-juno-id-0"
           onAnimationStart={[Function]}
           onBlur={[Function]}
           onChange={[Function]}
@@ -12504,7 +12544,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
       </div>
       <p
         className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
-        id="id-TextFieldWithAlign-1-helper-text"
+        id="rc-juno-id-0-helper-text"
       >
         some helper text
       </p>
@@ -13053,8 +13093,8 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
       <label
         className="MuiFormLabel-root MuiInputLabel-root RcTextFieldInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
         data-shrink={true}
-        htmlFor="id-TextFieldWithAlign-1"
-        id="id-TextFieldWithAlign-1-label"
+        htmlFor="rc-juno-id-0"
+        id="rc-juno-id-0-label"
       >
         Topic
       </label>
@@ -13063,12 +13103,12 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
         onClick={[Function]}
       >
         <input
-          aria-describedby="id-TextFieldWithAlign-1-helper-text"
+          aria-describedby="rc-juno-id-0-helper-text"
           aria-invalid={false}
           autoFocus={false}
           className="MuiInputBase-input MuiInput-input RcTextFieldInput-input MuiInputBase-inputAdornedEnd MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch"
           disabled={false}
-          id="id-TextFieldWithAlign-1"
+          id="rc-juno-id-0"
           onAnimationStart={[Function]}
           onBlur={[Function]}
           onChange={[Function]}
@@ -13125,7 +13165,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
       </div>
       <p
         className="MuiFormHelperText-root RcTextFieldFormHelperText-root"
-        id="id-TextFieldWithAlign-1-helper-text"
+        id="rc-juno-id-0-helper-text"
       >
         some helper text
       </p>
