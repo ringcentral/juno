@@ -1,4 +1,4 @@
-import React, { FunctionComponent, memo, useRef } from 'react';
+import React, { FunctionComponent, memo, useRef, useLayoutEffect } from 'react';
 
 import { DateType } from '@date-io/type';
 import { useUtils as useMuiUtils } from '@material-ui/pickers';
@@ -66,6 +66,11 @@ const DatePickerHeader: FunctionComponent<DatePickerHeaderProps> = memo(
     const monthLabel = utils.getCalendarHeaderText(focusedDate);
 
     const changeFromRef = useRef<'next' | 'previous'>();
+    const headerRef = useRef<HTMLButtonElement | null>(null);
+
+    useLayoutEffect(() => {
+      headerRef.current!.focus();
+    }, []);
 
     const selectNextMonth = () => {
       onMonthChange(nextMonth, 'left');
@@ -115,6 +120,7 @@ const DatePickerHeader: FunctionComponent<DatePickerHeaderProps> = memo(
             aria-expanded={ariaExpanded}
             data-test-automation-id="date-picker-month-year"
             className={classes!.select}
+            ref={headerRef}
           >
             {monthLabel}
             <SelectArrowDownIcon />
