@@ -51995,14 +51995,32 @@ var flexWidth = (width2) => css2`
 // ../juno-core/src/foundation/styles/focusRing.ts
 var focusRingOffsetMap = {
   normal: "2px",
-  inset: "-2px"
+  inset: "0px"
 };
-var focusRing = (variant) => {
+var focusRing = (variant, options = {}) => {
+  const { pseudo = true } = options;
+  if (pseudo) {
+    const { borderRadius: borderRadius3 = "zero", borderWidth = "0px" } = options;
+    const isInset = variant === "inset";
+    const offset7 = focusRingOffsetMap[variant];
+    return css2`
+      &:after {
+        pointer-events: none;
+        content: '';
+        position: absolute;
+        inset: 0;
+
+        margin: calc(-${offset7} - ${borderWidth});
+        border-radius: calc(${offset7} + ${radius3(borderRadius3)});
+        box-shadow: ${isInset ? "inset" : ""} 0 0 0 2px
+          ${palette22("interactive", "b02")};
+      }
+    `;
+  }
+  const { gapColor = "neutral.b01" } = options;
   return css2`
-    outline-color: ${palette22("interactive", "b02")};
-    outline-width: 2px;
-    outline-style: solid;
-    outline-offset: ${focusRingOffsetMap[variant]};
+    box-shadow: 0 0 0 2px ${getParsePaletteColor(gapColor)},
+      0 0 0 4px ${palette22("interactive", "b02")};
   `;
 };
 
@@ -53106,7 +53124,7 @@ var iconButtonStyle = ({
     return setOpacity(mainColor, "16");
   }};
 
-      ${useFocusRing && (isRound || isInverse) && focusRing("inset")}
+      ${useFocusRing && (isRound || isInverse) && focusRing("inset", { borderRadius: currRadius })}
 
       &:active {
         color: ${setOpacity(mainColor, "88")};
@@ -55098,7 +55116,7 @@ var buttonStyle = (props) => {
   const {
     variant,
     size,
-    radius: radiusProp,
+    radius: radiusProp = "lg",
     keepElevation,
     loading,
     disabled: disabled3,
@@ -55115,7 +55133,7 @@ var buttonStyle = (props) => {
     ${typography4(RcButtonTypographies[size], true)};
     text-align: center;
     box-shadow: ${!keepElevation && "unset"};
-    border-radius: ${radiusProp && radius3(radiusProp)};
+    border-radius: ${radius3(radiusProp)};
 
     ${isMask && css2`
       &:after {
@@ -55166,7 +55184,7 @@ var buttonStyle = (props) => {
 
       ${focusVariant === "focusRing" && css2`
         ${focusVisible} {
-          ${focusRing("normal")}
+          ${focusRing("normal", { borderRadius: radiusProp })}
           background-color: ${textButtonFocusVisibleColor};
         }
       `}
@@ -55190,7 +55208,7 @@ var buttonStyle = (props) => {
         }
 
         ${focusVisible} {
-          ${focusRing("inset")}
+          ${focusRing("inset", { borderRadius: radiusProp })}
           background-color: transparent;
         }
 
@@ -55214,7 +55232,9 @@ var buttonStyle = (props) => {
 
       ${focusVariant === "focusRing" && css2`
         ${focusVisible} {
-          ${focusRing("normal")}
+          ${focusRing("normal", {
+    borderRadius: radiusProp
+  })}
           box-shadow: unset;
         }
       `}
@@ -55245,17 +55265,12 @@ var buttonStyle = (props) => {
 
       ${focusVariant === "focusRing" && css2`
         ${focusVisible} {
-          ${focusRing("normal")}
+          ${focusRing("normal", {
+    borderRadius: radiusProp,
+    borderWidth: "1px"
+  })}
         }
       `}
-
-      &:after {
-        top: -1px;
-        bottom: -1px;
-        left: -1px;
-        right: -1px;
-        border: 1px solid transparent;
-      }
     }
   `;
 };
@@ -68237,8 +68252,8 @@ var SwitchStyle = ({
       ${heightCss};
 
       &[data-focus-visible-within] {
-        border-radius: 100vw;
-        ${focusRing("normal")}
+        border-radius: ${radius3("round")};
+        ${focusRing("normal", { pseudo: false })}
       }
 
       .${RcSwitchClasses.switchBase} {
@@ -83109,7 +83124,7 @@ var _MoreMenuTabs = forwardRef682((props, ref2) => {
           size: value.size ? value.size[oriStr] : 0
         });
       });
-      const limitSize = tabsSize[oriStr] - moreTabSizeRef.current[oriStr];
+      const limitSize = tabsSizeRef.current[oriStr] - moreTabSizeRef.current[oriStr];
       const { plainArr: tabsTabLabel, groupArr: menuTabLabel } = computeChildBySize(labelArray, currSelectTabItem?.[0], limitSize);
       computeGroupingInfo(tabsTabLabel, menuTabLabel);
       const tabsTabChild = tabsTabLabel.map((key) => findChildrenByKey(childrenProp, key));
@@ -83134,11 +83149,11 @@ var _MoreMenuTabs = forwardRef682((props, ref2) => {
         useMoreMode2 ? computedMoreModeChild(tabRefsMap) : computedStandardModeChild(tabRefsMap);
       }
     };
-    if (tabsSize.width !== 0 && tabsSize.height !== 0) {
+    if (tabsSizeRef.current.width !== 0 && tabsSizeRef.current.height !== 0) {
       if (groupingRef.current?.tabs.includes(currSelectTabItem?.[0] || "") && !hasResizeRef.current && prevChildrenProp === childrenProp) {
         return;
       }
-      computeTabChild(tabsSize);
+      computeTabChild(tabsSizeRef.current);
       hasResizeRef.current = false;
     }
   }, [
