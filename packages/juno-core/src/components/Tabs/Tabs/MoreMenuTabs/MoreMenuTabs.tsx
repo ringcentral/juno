@@ -269,7 +269,8 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
           size: value.size ? value.size[oriStr] : 0,
         });
       });
-      const limitSize = tabsSize[oriStr] - moreTabSizeRef.current[oriStr];
+      const limitSize =
+        tabsSizeRef.current[oriStr] - moreTabSizeRef.current[oriStr];
 
       const { plainArr: tabsTabLabel, groupArr: menuTabLabel } =
         computeChildBySize(labelArray, currSelectTabItem?.[0], limitSize);
@@ -321,7 +322,7 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
       }
     };
 
-    if (tabsSize.width !== 0 && tabsSize.height !== 0) {
+    if (tabsSizeRef.current.width !== 0 && tabsSizeRef.current.height !== 0) {
       // computed: 1.resize 2. valueProp 3.moreMenuClick 4.children change
       // not computed: visible tab change
       if (
@@ -332,7 +333,10 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
         return;
       }
 
-      computeTabChild(tabsSize);
+      // can't use tabsSize
+      // It is possible that the children prop render effect will execute before the sizeChange effect
+      // which get a old tabsSize value
+      computeTabChild(tabsSizeRef.current);
       hasResizeRef.current = false;
     }
   }, [
