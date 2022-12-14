@@ -346,10 +346,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 
 .c22.RcSwitch-root[data-focus-visible-within] {
   border-radius: 100vw;
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #066FAC;
 }
 
 .c22.RcSwitch-root .RcSwitch-switchBase {
@@ -1749,10 +1746,7 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
 
 .c21.RcSwitch-root[data-focus-visible-within] {
   border-radius: 100vw;
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #066FAC;
 }
 
 .c21.RcSwitch-root .RcSwitch-switchBase {

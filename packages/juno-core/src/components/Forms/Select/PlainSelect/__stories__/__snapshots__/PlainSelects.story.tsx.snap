@@ -25,6 +25,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 88px;
   min-height: 32px;
   padding: 0px 12px;
@@ -65,14 +66,6 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
 .c5.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c5.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 .c1 {
@@ -1564,6 +1557,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 88px;
   min-height: 32px;
   padding: 0px 12px;
@@ -1606,14 +1600,6 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
   border-color: #C7C7C7;
 }
 
-.c5.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
-}
-
 .c10 {
   text-transform: none;
   font-size: 0.9375rem;
@@ -1621,6 +1607,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
 }
 
 .c10 .RcButton-startIcon {
@@ -1646,11 +1633,18 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
 
 .c10.RcButton-text.focus-visible,
 .c10.RcButton-text[data-focus-visible-added] {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: -2px;
   background-color: transparent;
+}
+
+.c10.RcButton-text.focus-visible:after,
+.c10.RcButton-text[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 4px);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c10.RcButton-text:active.RcButton-text {
@@ -1678,14 +1672,6 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
   border-color: #C7C7C7;
 }
 
-.c10.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
-}
-
 .c17 {
   text-transform: none;
   font-size: 0.9375rem;
@@ -1693,6 +1679,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 88px;
   min-height: 32px;
   padding: 0px 12px;
@@ -1735,14 +1722,6 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
   border-color: #C7C7C7;
 }
 
-.c17.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
-}
-
 .c18 {
   text-transform: none;
   font-size: 0.9375rem;
@@ -1750,6 +1729,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
 }
 
 .c18 .RcButton-startIcon {
@@ -1775,11 +1755,18 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
 
 .c18.RcButton-text.focus-visible,
 .c18.RcButton-text[data-focus-visible-added] {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: -2px;
   background-color: transparent;
+}
+
+.c18.RcButton-text.focus-visible:after,
+.c18.RcButton-text[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 4px);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c18.RcButton-text:active.RcButton-text {
@@ -1805,14 +1792,6 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
 .c18.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c18.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 .c1 {

@@ -2216,10 +2216,7 @@ Array [
 
 .c3.RcSwitch-root[data-focus-visible-within] {
   border-radius: 100vw;
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #066FAC;
 }
 
 .c3.RcSwitch-root .RcSwitch-switchBase {

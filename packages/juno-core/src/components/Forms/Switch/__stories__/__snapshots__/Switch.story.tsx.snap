@@ -9,10 +9,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch 1`] = `
 
 .c0.RcSwitch-root[data-focus-visible-within] {
   border-radius: 100vw;
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #066FAC;
 }
 
 .c0.RcSwitch-root .RcSwitch-switchBase {
@@ -155,10 +152,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch Examples 1`] = `
 
 .c2.RcSwitch-root[data-focus-visible-within] {
   border-radius: 100vw;
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #066FAC;
 }
 
 .c2.RcSwitch-root .RcSwitch-switchBase {
@@ -491,10 +485,7 @@ Array [
 
 .c1.RcSwitch-root[data-focus-visible-within] {
   border-radius: 100vw;
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #066FAC;
 }
 
 .c1.RcSwitch-root .RcSwitch-switchBase {

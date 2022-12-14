@@ -1722,6 +1722,7 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
@@ -1762,14 +1763,6 @@ Array [
 .c0.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c0.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1946,6 +1939,7 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
@@ -1986,14 +1980,6 @@ Array [
 .c1.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c1.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 .c0 {
@@ -2194,6 +2180,7 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
@@ -2234,14 +2221,6 @@ Array [
 .c1.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c1.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 .c0 {

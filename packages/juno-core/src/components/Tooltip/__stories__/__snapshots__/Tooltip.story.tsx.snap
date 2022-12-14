@@ -8,6 +8,7 @@ exports[`Storyshots 🚀 Cleanup Components/Tooltip Tooltip 1`] = `
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
@@ -48,14 +49,6 @@ exports[`Storyshots 🚀 Cleanup Components/Tooltip Tooltip 1`] = `
 .c0.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c0.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -122,6 +115,7 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
@@ -162,14 +156,6 @@ Array [
 .c0.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c0.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -238,6 +224,7 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
@@ -278,14 +265,6 @@ Array [
 .c0.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c0.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -461,6 +440,7 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
@@ -501,14 +481,6 @@ Array [
 .c0.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c0.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -1470,6 +1442,7 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
@@ -1510,14 +1483,6 @@ Array [
 .c2.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c2.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 .c6.c6.c6 {
@@ -1761,6 +1726,7 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
@@ -1801,14 +1767,6 @@ Array [
 .c1.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c1.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2096,14 +2054,6 @@ Array [
   border-color: #C7C7C7;
 }
 
-.c0.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
-}
-
 @media (hover:hover) and (pointer:fine) {
 
 }
@@ -2383,14 +2333,6 @@ Array [
   border-color: #C7C7C7;
 }
 
-.c0.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
-}
-
 @media (hover:hover) and (pointer:fine) {
 
 }
@@ -2502,6 +2444,7 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
@@ -2542,14 +2485,6 @@ Array [
 .c0.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c0.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2627,6 +2562,7 @@ Array [
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
@@ -2667,14 +2603,6 @@ Array [
 .c0.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c0.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -2852,10 +2780,7 @@ Array [
 
 .c1.RcSwitch-root[data-focus-visible-within] {
   border-radius: 100vw;
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #066FAC;
 }
 
 .c1.RcSwitch-root .RcSwitch-switchBase {
@@ -3001,6 +2926,7 @@ exports[`Storyshots 🚀 Cleanup Components/Tooltip Tooltip With Interactive Lin
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
@@ -3041,14 +2967,6 @@ exports[`Storyshots 🚀 Cleanup Components/Tooltip Tooltip With Interactive Lin
 .c0.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c0.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 @media (hover:hover) and (pointer:fine) {

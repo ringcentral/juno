@@ -25,6 +25,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton 1`] = `
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
@@ -65,14 +66,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton 1`] = `
 .c1.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c1.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 .c3.c3.c3 {
@@ -250,6 +243,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
@@ -292,14 +286,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   border-color: #C7C7C7;
 }
 
-.c3.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
-}
-
 .c11 {
   text-transform: none;
   font-size: 0.9375rem;
@@ -307,6 +293,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
 }
 
 .c11 .RcButton-startIcon {
@@ -332,11 +319,18 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 
 .c11.RcButton-text.focus-visible,
 .c11.RcButton-text[data-focus-visible-added] {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: -2px;
   background-color: transparent;
+}
+
+.c11.RcButton-text.focus-visible:after,
+.c11.RcButton-text[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 4px);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c11.RcButton-text:active.RcButton-text {
@@ -362,14 +356,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Examples 1`]
 .c11.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c11.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 .c6.c6.c6 {
@@ -1739,6 +1725,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
@@ -1783,14 +1770,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
   padding: 0px 15px;
 }
 
-.c3.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
-}
-
 .c12 {
   text-transform: none;
   font-size: 0.9375rem;
@@ -1798,6 +1777,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
 }
 
 .c12:after {
@@ -1835,11 +1815,18 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
 
 .c12.RcButton-text.focus-visible,
 .c12.RcButton-text[data-focus-visible-added] {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: -2px;
   background-color: transparent;
+}
+
+.c12.RcButton-text.focus-visible:after,
+.c12.RcButton-text[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 4px);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c12.RcButton-text:active.RcButton-text {
@@ -1855,14 +1842,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton SplitButton Loading 1`] 
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
-}
-
-.c12.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 .c7.c7.c7 {

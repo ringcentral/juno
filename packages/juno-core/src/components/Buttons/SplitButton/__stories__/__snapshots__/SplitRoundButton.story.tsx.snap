@@ -73,6 +73,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 96px;
   min-height: 36px;
   padding: 0px 16px;
@@ -115,14 +116,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-color: #C7C7C7;
 }
 
-.c4.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
-}
-
 .c10 {
   text-transform: none;
   font-size: 0.9375rem;
@@ -130,6 +123,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
 }
 
 .c10 .RcButton-startIcon {
@@ -155,11 +149,18 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c10.RcButton-text.focus-visible,
 .c10.RcButton-text[data-focus-visible-added] {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: -2px;
   background-color: transparent;
+}
+
+.c10.RcButton-text.focus-visible:after,
+.c10.RcButton-text[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 4px);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c10.RcButton-text:active.RcButton-text {
@@ -187,14 +188,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-color: #C7C7C7;
 }
 
-.c10.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
-}
-
 .c21 {
   text-transform: none;
   font-size: 0.9375rem;
@@ -202,6 +195,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 88px;
   min-height: 32px;
   padding: 0px 12px;
@@ -244,14 +238,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-color: #C7C7C7;
 }
 
-.c21.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
-}
-
 .c24 {
   text-transform: none;
   font-size: 0.9375rem;
@@ -259,6 +245,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
 }
 
 .c24 .RcButton-startIcon {
@@ -284,11 +271,18 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c24.RcButton-text.focus-visible,
 .c24.RcButton-text[data-focus-visible-added] {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: -2px;
   background-color: transparent;
+}
+
+.c24.RcButton-text.focus-visible:after,
+.c24.RcButton-text[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 4px);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c24.RcButton-text:active.RcButton-text {
@@ -316,14 +310,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-color: #C7C7C7;
 }
 
-.c24.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
-}
-
 .c26 {
   text-transform: none;
   font-size: 0.75rem;
@@ -331,6 +317,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 0px;
   min-height: 28px;
   padding: 0px 16px;
@@ -373,14 +360,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-color: #C7C7C7;
 }
 
-.c26.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
-}
-
 .c29 {
   text-transform: none;
   font-size: 0.75rem;
@@ -388,6 +367,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
 }
 
 .c29 .RcButton-startIcon {
@@ -413,11 +393,18 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c29.RcButton-text.focus-visible,
 .c29.RcButton-text[data-focus-visible-added] {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: -2px;
   background-color: transparent;
+}
+
+.c29.RcButton-text.focus-visible:after,
+.c29.RcButton-text[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 4px);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c29.RcButton-text:active.RcButton-text {
@@ -445,14 +432,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-color: #C7C7C7;
 }
 
-.c29.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
-}
-
 .c31 {
   text-transform: none;
   font-size: 0.75rem;
@@ -460,6 +439,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
   min-width: 0px;
   min-height: 24px;
   padding: 0px 8px;
@@ -502,14 +482,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   border-color: #C7C7C7;
 }
 
-.c31.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
-}
-
 .c34 {
   text-transform: none;
   font-size: 0.75rem;
@@ -517,6 +489,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
   box-shadow: unset;
+  border-radius: 4px;
 }
 
 .c34 .RcButton-startIcon {
@@ -542,11 +515,18 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c34.RcButton-text.focus-visible,
 .c34.RcButton-text[data-focus-visible-added] {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: -2px;
   background-color: transparent;
+}
+
+.c34.RcButton-text.focus-visible:after,
+.c34.RcButton-text[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 4px);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c34.RcButton-text:active.RcButton-text {
@@ -572,14 +552,6 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 .c34.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
-}
-
-.c34.RcButton-outlined:after {
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  border: 1px solid transparent;
 }
 
 .c8.c8.c8 {

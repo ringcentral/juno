@@ -333,10 +333,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
 
 .c27.RcSwitch-root[data-focus-visible-within] {
   border-radius: 100vw;
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #066FAC;
 }
 
 .c27.RcSwitch-root .RcSwitch-switchBase {

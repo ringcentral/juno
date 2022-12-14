@@ -2078,10 +2078,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Focus Ri
 .c0.focus-visible,
 .c0[data-focus-visible-added] {
   background-color: transparent;
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: -2px;
+}
+
+.c0.focus-visible:after,
+.c0[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 50%);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c0.focus-visible:active,
@@ -2181,10 +2188,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Focus Ri
 .c3.focus-visible,
 .c3[data-focus-visible-added] {
   background-color: transparent;
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: -2px;
+}
+
+.c3.focus-visible:after,
+.c3[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 50%);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c3.focus-visible:active,
@@ -2284,10 +2298,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Focus Ri
 .c4.focus-visible,
 .c4[data-focus-visible-added] {
   background-color: transparent;
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: -2px;
+}
+
+.c4.focus-visible:after,
+.c4[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 50%);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c4.focus-visible:active,
@@ -2387,10 +2408,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Focus Ri
 .c5.focus-visible,
 .c5[data-focus-visible-added] {
   background-color: transparent;
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: -2px;
+}
+
+.c5.focus-visible:after,
+.c5[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 50%);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c5.focus-visible:active,
@@ -2488,12 +2516,15 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Focus Ri
   color: #666666;
 }
 
-.c6.focus-visible,
-.c6[data-focus-visible-added] {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: -2px;
+.c6.focus-visible:after,
+.c6[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 50%);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c6.focus-visible:active,
@@ -2592,12 +2623,15 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Focus Ri
   color: #E6413C;
 }
 
-.c7.focus-visible,
-.c7[data-focus-visible-added] {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: -2px;
+.c7.focus-visible:after,
+.c7[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 50%);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c7.focus-visible:active,
@@ -2696,12 +2730,15 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Focus Ri
   color: #3C9949;
 }
 
-.c8.focus-visible,
-.c8[data-focus-visible-added] {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: -2px;
+.c8.focus-visible:after,
+.c8[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 50%);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c8.focus-visible:active,
@@ -2800,12 +2837,15 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button With Focus Ri
   color: #FF8800;
 }
 
-.c9.focus-visible,
-.c9[data-focus-visible-added] {
-  outline-color: #066FAC;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-offset: -2px;
+.c9.focus-visible:after,
+.c9[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 50%);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c9.focus-visible:active,
