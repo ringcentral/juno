@@ -373,83 +373,207 @@ export const ButtonWithCustomColor: Story<ButtonProps> = () => {
 
 export const ButtonWithFocusRing: Story<ButtonProps> = () => {
   return (
-    <Wrapper>
-      <li>
-        <RcButton focusVariant="focusRing">button</RcButton>
-        <RcButton focusVariant="focusRing" color="danger.b03">
-          button
-        </RcButton>
-        <RcButton focusVariant="focusRing" color="success.b03">
-          button
-        </RcButton>
-        <RcButton focusVariant="focusRing" color="highlight.b03">
-          button
-        </RcButton>
-      </li>
+    <>
+      <Wrapper>
+        <li>
+          <RcButton focusVariant="focusRing">button</RcButton>
+          <RcButton focusVariant="focusRing" color="danger.b03">
+            button
+          </RcButton>
+          <RcButton focusVariant="focusRing" color="success.b03">
+            button
+          </RcButton>
+          <RcButton focusVariant="focusRing" color="highlight.b03">
+            button
+          </RcButton>
+        </li>
+        <br />
+        <br />
+        <li>
+          <RcButton variant="outlined" focusVariant="focusRing">
+            button
+          </RcButton>
+          <RcButton
+            variant="outlined"
+            focusVariant="focusRing"
+            color="danger.b03"
+          >
+            button
+          </RcButton>
+          <RcButton
+            variant="outlined"
+            focusVariant="focusRing"
+            color="success.b03"
+          >
+            button
+          </RcButton>
+          <RcButton
+            variant="outlined"
+            focusVariant="focusRing"
+            color="highlight.b03"
+          >
+            button
+          </RcButton>
+        </li>
+        <br />
+        <br />
+        <li>
+          <RcButton variant="text" focusVariant="focusRing">
+            button
+          </RcButton>
+          <RcButton variant="text" focusVariant="focusRing" color="danger.b03">
+            button
+          </RcButton>
+          <RcButton variant="text" focusVariant="focusRing" color="success.b03">
+            button
+          </RcButton>
+          <RcButton
+            variant="text"
+            focusVariant="focusRing"
+            color="highlight.b03"
+          >
+            button
+          </RcButton>
+        </li>
+        <br />
+        <br />
+        <li>
+          <RcButton variant="plain" focusVariant="focusRing">
+            button
+          </RcButton>
+          <RcButton variant="plain" focusVariant="focusRing" color="danger.b03">
+            button
+          </RcButton>
+          <RcButton
+            variant="plain"
+            focusVariant="focusRing"
+            color="success.b03"
+          >
+            button
+          </RcButton>
+          <RcButton
+            variant="plain"
+            focusVariant="focusRing"
+            color="highlight.b03"
+          >
+            button
+          </RcButton>
+        </li>
+      </Wrapper>
       <br />
-      <br />
-      <li>
-        <RcButton variant="outlined" focusVariant="focusRing">
-          button
-        </RcButton>
-        <RcButton
-          variant="outlined"
-          focusVariant="focusRing"
-          color="danger.b03"
-        >
-          button
-        </RcButton>
-        <RcButton
-          variant="outlined"
-          focusVariant="focusRing"
-          color="success.b03"
-        >
-          button
-        </RcButton>
-        <RcButton
-          variant="outlined"
-          focusVariant="focusRing"
-          color="highlight.b03"
-        >
-          button
-        </RcButton>
-      </li>
-      <br />
-      <br />
-      <li>
-        <RcButton variant="text" focusVariant="focusRing">
-          button
-        </RcButton>
-        <RcButton variant="text" focusVariant="focusRing" color="danger.b03">
-          button
-        </RcButton>
-        <RcButton variant="text" focusVariant="focusRing" color="success.b03">
-          button
-        </RcButton>
-        <RcButton variant="text" focusVariant="focusRing" color="highlight.b03">
-          button
-        </RcButton>
-      </li>
-      <br />
-      <br />
-      <li>
-        <RcButton variant="plain" focusVariant="focusRing">
-          button
-        </RcButton>
-        <RcButton variant="plain" focusVariant="focusRing" color="danger.b03">
-          button
-        </RcButton>
-        <RcButton variant="plain" focusVariant="focusRing" color="success.b03">
-          button
-        </RcButton>
-        <RcButton
-          variant="plain"
-          focusVariant="focusRing"
-          color="highlight.b03"
-        >
-          button
-        </RcButton>
-      </li>
-    </Wrapper>
+      <Wrapper>
+        <li>
+          <RcButton focusVariant="focusRing" radius="round">
+            button
+          </RcButton>
+          <RcButton focusVariant="focusRing" radius="round" color="danger.b03">
+            button
+          </RcButton>
+          <RcButton focusVariant="focusRing" radius="round" color="success.b03">
+            button
+          </RcButton>
+          <RcButton
+            focusVariant="focusRing"
+            radius="round"
+            color="highlight.b03"
+          >
+            button
+          </RcButton>
+        </li>
+        <br />
+        <br />
+        <li>
+          <RcButton variant="outlined" focusVariant="focusRing" radius="round">
+            button
+          </RcButton>
+          <RcButton
+            variant="outlined"
+            focusVariant="focusRing"
+            radius="round"
+            color="danger.b03"
+          >
+            button
+          </RcButton>
+          <RcButton
+            variant="outlined"
+            focusVariant="focusRing"
+            radius="round"
+            color="success.b03"
+          >
+            button
+          </RcButton>
+          <RcButton
+            variant="outlined"
+            focusVariant="focusRing"
+            radius="round"
+            color="highlight.b03"
+          >
+            button
+          </RcButton>
+        </li>
+        <br />
+        <br />
+        <li>
+          <RcButton variant="text" focusVariant="focusRing" radius="round">
+            button
+          </RcButton>
+          <RcButton
+            variant="text"
+            focusVariant="focusRing"
+            radius="round"
+            color="danger.b03"
+          >
+            button
+          </RcButton>
+          <RcButton
+            variant="text"
+            focusVariant="focusRing"
+            radius="round"
+            color="success.b03"
+          >
+            button
+          </RcButton>
+          <RcButton
+            variant="text"
+            focusVariant="focusRing"
+            radius="round"
+            color="highlight.b03"
+          >
+            button
+          </RcButton>
+        </li>
+        <br />
+        <br />
+        <li>
+          <RcButton variant="plain" focusVariant="focusRing" radius="round">
+            button
+          </RcButton>
+          <RcButton
+            variant="plain"
+            focusVariant="focusRing"
+            radius="round"
+            color="danger.b03"
+          >
+            button
+          </RcButton>
+          <RcButton
+            variant="plain"
+            focusVariant="focusRing"
+            radius="round"
+            color="success.b03"
+          >
+            button
+          </RcButton>
+          <RcButton
+            variant="plain"
+            focusVariant="focusRing"
+            radius="round"
+            color="highlight.b03"
+          >
+            button
+          </RcButton>
+        </li>
+      </Wrapper>
+    </>
   );
 };

@@ -51,7 +51,7 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
   const {
     variant,
     size,
-    radius: radiusProp,
+    radius: radiusProp = 'lg',
     keepElevation,
     loading,
     disabled,
@@ -73,7 +73,7 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
     ${typography(RcButtonTypographies[size!], true)};
     text-align: center;
     box-shadow: ${!keepElevation && 'unset'};
-    border-radius: ${radiusProp && radius(radiusProp)};
+    border-radius: ${radius(radiusProp)};
 
     ${isMask &&
     css`
@@ -129,7 +129,7 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
       ${focusVariant === 'focusRing' &&
       css`
         ${focusVisible} {
-          ${focusRing('normal')}
+          ${focusRing('normal', { borderRadius: radiusProp })}
           background-color: ${textButtonFocusVisibleColor};
         }
       `}
@@ -154,7 +154,7 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
         }
 
         ${focusVisible} {
-          ${focusRing('inset')}
+          ${focusRing('inset', { borderRadius: radiusProp })}
           background-color: transparent;
         }
 
@@ -179,7 +179,9 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
       ${focusVariant === 'focusRing' &&
       css`
         ${focusVisible} {
-          ${focusRing('normal')}
+          ${focusRing('normal', {
+            borderRadius: radiusProp,
+          })}
           box-shadow: unset;
         }
       `}
@@ -212,17 +214,12 @@ export const buttonStyle: RcThemedStyled<RcButtonProps, any> = (props) => {
       ${focusVariant === 'focusRing' &&
       css`
         ${focusVisible} {
-          ${focusRing('normal')}
+          ${focusRing('normal', {
+            borderRadius: radiusProp,
+            borderWidth: '1px',
+          })}
         }
       `}
-
-      &:after {
-        top: -1px;
-        bottom: -1px;
-        left: -1px;
-        right: -1px;
-        border: 1px solid transparent;
-      }
     }
   `;
 };

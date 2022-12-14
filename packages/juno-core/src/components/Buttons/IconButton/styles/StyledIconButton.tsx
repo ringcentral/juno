@@ -177,7 +177,9 @@ export const iconButtonStyle: RcThemedStyled<RcIconButtonProps, any> = ({
         return setOpacity(mainColor, '16');
       }};
 
-      ${useFocusRing && (isRound || isInverse) && focusRing('inset')}
+      ${useFocusRing &&
+      (isRound || isInverse) &&
+      focusRing('inset', { borderRadius: currRadius })}
 
       &:active {
         color: ${setOpacity(mainColor, '88')};

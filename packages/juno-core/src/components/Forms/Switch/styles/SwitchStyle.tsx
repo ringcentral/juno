@@ -64,8 +64,8 @@ export const SwitchStyle: RcThemedStyled<RcSwitchProps, any> = ({
       ${heightCss};
 
       &[data-focus-visible-within] {
-        border-radius: 100vw;
-        ${focusRing('normal')}
+        border-radius: ${radius('round')};
+        ${focusRing('normal', { pseudo: false })}
       }
 
       .${RcSwitchClasses.switchBase} {
