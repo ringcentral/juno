@@ -9,6 +9,8 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  SwitchboardBorder: 'switchboard_border',
+  Switchboard: 'switchboard',
   Scan: 'scan',
   PhoneS: 'phone_s',
   SortMessage: 'sort-message',

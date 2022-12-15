@@ -389,6 +389,8 @@ export { default as StopCircleBorder } from './StopCircleBorder';
 export { default as StopRecord } from './StopRecord';
 export { default as Stop } from './Stop';
 export { default as Strike } from './Strike';
+export { default as SwitchboardBorder } from './SwitchboardBorder';
+export { default as Switchboard } from './Switchboard';
 export { default as TakeOver } from './TakeOver';
 export { default as TaskNewBorder } from './TaskNewBorder';
 export { default as TaskNew } from './TaskNew';
