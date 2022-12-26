@@ -9,6 +9,7 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  ListBulletL: 'list-bullet_l',
   GoogleBusiness: 'google-business',
   Yelp: 'yelp',
   SwitchboardBorder: 'switchboard_border',
