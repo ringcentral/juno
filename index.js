@@ -77005,14 +77005,14 @@ PickerTextField.displayName = PICKER_DISPLAY_NAME;
 var import_dayjs2 = __toModule(require_dayjs_min());
 import React730, {
   forwardRef as forwardRef642,
-  useLayoutEffect as useLayoutEffect28,
+  useLayoutEffect as useLayoutEffect27,
   useMemo as useMemo72,
   useRef as useRef91,
   useState as useState40
 } from "react";
 
 // ../juno-core/src/components/Forms/Picker/DatePicker/DatePickerHeader.tsx
-import React726, { memo as memo462, useRef as useRef89, useLayoutEffect as useLayoutEffect26 } from "react";
+import React726, { memo as memo462, useRef as useRef89 } from "react";
 
 // ../juno-core/src/components/Forms/Select/styles/SelectArrowDownIcon.tsx
 import React725, { forwardRef as forwardRef638 } from "react";
@@ -77263,10 +77263,6 @@ var DatePickerHeader = memo462((props) => {
   const nextMonth = utils.getNextMonth(focusedDate);
   const monthLabel = utils.getCalendarHeaderText(focusedDate);
   const changeFromRef = useRef89();
-  const headerRef = useRef89(null);
-  useLayoutEffect26(() => {
-    headerRef.current.focus();
-  }, []);
   const selectNextMonth = () => {
     onMonthChange(nextMonth, "left");
     changeFromRef.current = "next";
@@ -77294,8 +77290,7 @@ var DatePickerHeader = memo462((props) => {
     "aria-label": monthYearAriaLabel,
     "aria-expanded": ariaExpanded,
     "data-test-automation-id": "date-picker-month-year",
-    className: classes.select,
-    ref: headerRef
+    className: classes.select
   }, monthLabel, /* @__PURE__ */ React726.createElement(SelectArrowDownIcon, null)), /* @__PURE__ */ React726.createElement(SwitchHeaderButtonWrapper, {
     size,
     gap: 3,
@@ -77367,7 +77362,7 @@ var Day3 = memo463(styled_components_default(_Day)`
   `);
 
 // ../juno-core/src/components/Forms/Picker/DatePicker/Years.tsx
-import React729, { forwardRef as forwardRef641, useLayoutEffect as useLayoutEffect27, useMemo as useMemo71, useRef as useRef90 } from "react";
+import React729, { forwardRef as forwardRef641, useLayoutEffect as useLayoutEffect26, useMemo as useMemo71, useRef as useRef90 } from "react";
 
 // ../juno-core/src/components/Forms/Picker/DatePicker/Year.tsx
 import React728, { forwardRef as forwardRef640, memo as memo464 } from "react";
@@ -77438,7 +77433,7 @@ var Years = forwardRef641((props, ref2) => {
     },
     getOptionDisabled
   });
-  useLayoutEffect27(() => {
+  useLayoutEffect26(() => {
     const index4 = years.findIndex((x2) => utils.getYear(x2) === currentYear);
     focusIndex(index4);
   }, []);
@@ -77658,17 +77653,18 @@ var Calendar2 = forwardRef642(({
         return null;
     }
   };
-  useLayoutEffect28(() => {
+  useLayoutEffect27(() => {
     if (sameMonthDate && !viewChange) {
       focusDayElement();
     }
   });
-  useLayoutEffect28(() => {
+  useLayoutEffect27(() => {
     if (previousView && view === "day" && viewChange) {
       focusDayElement();
     }
   }, [previousView, view, viewChange]);
-  useLayoutEffect28(() => {
+  useLayoutEffect27(() => {
+    focusDayElement();
     calendarRef.current = document.querySelector(`.${RcDatePickerClasses.popover} .${RcDatePickerClasses.popoverPaper}`);
     const unsubscribe = transitionendSubscriber(calendarRef.current, onTransitionEnd);
     return () => {
@@ -77870,8 +77866,7 @@ import React733, {
   memo as memo465,
   useImperativeHandle as useImperativeHandle17,
   useMemo as useMemo74,
-  useRef as useRef93,
-  useLayoutEffect as useLayoutEffect29
+  useRef as useRef93
 } from "react";
 
 // ../juno-core/src/components/Forms/Picker/TimePicker/styles/StyledNumberPicker.tsx
@@ -77943,18 +77938,11 @@ var _NumberPicker = forwardRef645((props, ref2) => {
     onInnerChange,
     renderValue,
     getScreenReaderLabel,
-    autoFocus,
     ...rest
   } = props;
   const forceUpdate = useForceUpdate();
   const [innerValueRef, setInnerValue] = useRefState(value, forceUpdate);
   const rangeRef = useRef93({ max: maxProp, min: minProp });
-  const pickerRef = useRef93(null);
-  useLayoutEffect29(() => {
-    if (autoFocus) {
-      pickerRef.current.focus();
-    }
-  }, []);
   useDepsChange(() => {
     rangeRef.current = { max: maxProp, min: minProp };
   }, [maxProp, minProp]);
@@ -78043,7 +78031,6 @@ var _NumberPicker = forwardRef645((props, ref2) => {
     onKeyDown: handleKeyDown2,
     "aria-live": "assertive",
     "aria-label": label3,
-    ref: pickerRef,
     ...rest
   }, /* @__PURE__ */ React733.createElement(StyledTimeIconButton, {
     tabIndex: -1,
@@ -78235,7 +78222,7 @@ SelectionView.displayName = "SelectionView";
 import React736, {
   forwardRef as forwardRef647,
   useCallback as useCallback35,
-  useLayoutEffect as useLayoutEffect30,
+  useLayoutEffect as useLayoutEffect28,
   useMemo as useMemo75,
   useRef as useRef94,
   useState as useState41
@@ -78400,7 +78387,7 @@ var _RcTimePicker = forwardRef647((inProps, ref2) => {
       onEnter: () => setSelectionType("none")
     }
   }, PopoverPropsProp), [PopoverPropsProp, classes, handlePopoverKeydown]);
-  useLayoutEffect30(() => {
+  useLayoutEffect28(() => {
     if (currentTimestamp === null)
       return;
     const time = getEmitInitDate();
@@ -78468,7 +78455,6 @@ var _RcTimePicker = forwardRef647((inProps, ref2) => {
     source: isTwelveHourSystem ? twelveHourSystemSource : twentyFourHourSystemSource,
     renderValue: renderHourValue,
     automationId: "time-picker-hour",
-    autoFocus: true,
     ...HourPickerProps
   }), /* @__PURE__ */ React736.createElement(RcBox, {
     textAlign: "center",
@@ -79530,7 +79516,7 @@ import React744, {
   forwardRef as forwardRef655,
   memo as memo468,
   useContext as useContext31,
-  useLayoutEffect as useLayoutEffect31,
+  useLayoutEffect as useLayoutEffect29,
   useMemo as useMemo80,
   useRef as useRef97,
   useState as useState44
@@ -79666,7 +79652,7 @@ var _RcSubMenu = forwardRef655((inProps, ref2) => {
       handleClose(e2, "popperMouseLeave");
     }
   });
-  useLayoutEffect31(() => {
+  useLayoutEffect29(() => {
     if (open && menuListContext.menuListId !== "" && menuListContext.focusedMenuItemId !== menuItemIdRef.current) {
       handleCloseSubMenu();
     }
@@ -79676,7 +79662,7 @@ var _RcSubMenu = forwardRef655((inProps, ref2) => {
     menuListContext.menuListId,
     open
   ]);
-  useLayoutEffect31(() => {
+  useLayoutEffect29(() => {
     if (open && menuListContext.menuListId === "" && menuContext.focusedMenuItemId !== menuItemIdRef.current) {
       handleCloseSubMenu();
     }
