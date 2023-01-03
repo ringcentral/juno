@@ -77866,7 +77866,8 @@ import React733, {
   memo as memo465,
   useImperativeHandle as useImperativeHandle17,
   useMemo as useMemo74,
-  useRef as useRef93
+  useRef as useRef93,
+  useLayoutEffect as useLayoutEffect28
 } from "react";
 
 // ../juno-core/src/components/Forms/Picker/TimePicker/styles/StyledNumberPicker.tsx
@@ -77938,11 +77939,18 @@ var _NumberPicker = forwardRef645((props, ref2) => {
     onInnerChange,
     renderValue,
     getScreenReaderLabel,
+    autoFocus,
     ...rest
   } = props;
   const forceUpdate = useForceUpdate();
   const [innerValueRef, setInnerValue] = useRefState(value, forceUpdate);
   const rangeRef = useRef93({ max: maxProp, min: minProp });
+  const pickerRef = useRef93(null);
+  useLayoutEffect28(() => {
+    if (autoFocus) {
+      pickerRef.current.focus();
+    }
+  }, []);
   useDepsChange(() => {
     rangeRef.current = { max: maxProp, min: minProp };
   }, [maxProp, minProp]);
@@ -78031,6 +78039,7 @@ var _NumberPicker = forwardRef645((props, ref2) => {
     onKeyDown: handleKeyDown2,
     "aria-live": "assertive",
     "aria-label": label3,
+    ref: pickerRef,
     ...rest
   }, /* @__PURE__ */ React733.createElement(StyledTimeIconButton, {
     tabIndex: -1,
@@ -78222,7 +78231,7 @@ SelectionView.displayName = "SelectionView";
 import React736, {
   forwardRef as forwardRef647,
   useCallback as useCallback35,
-  useLayoutEffect as useLayoutEffect28,
+  useLayoutEffect as useLayoutEffect29,
   useMemo as useMemo75,
   useRef as useRef94,
   useState as useState41
@@ -78387,7 +78396,7 @@ var _RcTimePicker = forwardRef647((inProps, ref2) => {
       onEnter: () => setSelectionType("none")
     }
   }, PopoverPropsProp), [PopoverPropsProp, classes, handlePopoverKeydown]);
-  useLayoutEffect28(() => {
+  useLayoutEffect29(() => {
     if (currentTimestamp === null)
       return;
     const time = getEmitInitDate();
@@ -78455,6 +78464,7 @@ var _RcTimePicker = forwardRef647((inProps, ref2) => {
     source: isTwelveHourSystem ? twelveHourSystemSource : twentyFourHourSystemSource,
     renderValue: renderHourValue,
     automationId: "time-picker-hour",
+    autoFocus: true,
     ...HourPickerProps
   }), /* @__PURE__ */ React736.createElement(RcBox, {
     textAlign: "center",
@@ -79516,7 +79526,7 @@ import React744, {
   forwardRef as forwardRef655,
   memo as memo468,
   useContext as useContext31,
-  useLayoutEffect as useLayoutEffect29,
+  useLayoutEffect as useLayoutEffect30,
   useMemo as useMemo80,
   useRef as useRef97,
   useState as useState44
@@ -79652,7 +79662,7 @@ var _RcSubMenu = forwardRef655((inProps, ref2) => {
       handleClose(e2, "popperMouseLeave");
     }
   });
-  useLayoutEffect29(() => {
+  useLayoutEffect30(() => {
     if (open && menuListContext.menuListId !== "" && menuListContext.focusedMenuItemId !== menuItemIdRef.current) {
       handleCloseSubMenu();
     }
@@ -79662,7 +79672,7 @@ var _RcSubMenu = forwardRef655((inProps, ref2) => {
     menuListContext.menuListId,
     open
   ]);
-  useLayoutEffect29(() => {
+  useLayoutEffect30(() => {
     if (open && menuListContext.menuListId === "" && menuContext.focusedMenuItemId !== menuItemIdRef.current) {
       handleCloseSubMenu();
     }
