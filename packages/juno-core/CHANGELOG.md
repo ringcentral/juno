@@ -1,4 +1,11 @@
 
+## [2.26.0](https://github.com/ringcentral/juno/compare/juno-core-v2.25.1...juno-core-v2.26.0) (2023-01-03)
+
+
+### Bug Fixes
+
+* **DatePicker/TimePicker:** revert improve DatePicker/TimePicker first focus ([b90a190](https://github.com/ringcentral/juno/commit/b90a190641ac975580a104864e5a66f677f316cf))
+
 ### [2.25.1](https://github.com/ringcentral/juno/compare/juno-core-v2.25.0...juno-core-v2.25.1) (2022-12-14)
 
 
