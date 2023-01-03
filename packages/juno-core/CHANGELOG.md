@@ -1,4 +1,11 @@
 
+### [2.26.1](https://github.com/ringcentral/juno/compare/juno-core-v2.26.0...juno-core-v2.26.1) (2023-01-03)
+
+
+### Features
+
+* **TimePicker:** change TimePicker open focus to hour ([908b75c](https://github.com/ringcentral/juno/commit/908b75cf39d082f2012f86e261f4d4e2f77097ee))
+
 ## [2.26.0](https://github.com/ringcentral/juno/compare/juno-core-v2.25.1...juno-core-v2.26.0) (2023-01-03)
 
 
