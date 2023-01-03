@@ -33,7 +33,7 @@ describe('TimePicker', () => {
     screen.getByText('15');
     screen.getByText('23');
 
-    fireEvent.keyDown(document.activeElement!, { key: 'Esc' });
+    fireEvent.keyDown(screen.queryByRole('presentation')!, { key: 'Esc' });
 
     expect(screen.queryByRole('presentation')).toBeNull();
 
@@ -49,7 +49,7 @@ describe('TimePicker', () => {
     screen.getByText('30');
     screen.getByText('45');
 
-    fireEvent.keyDown(document.activeElement!, { key: 'Enter' });
+    fireEvent.keyDown(screen.queryByRole('presentation')!, { key: 'Enter' });
 
     expect(screen.queryByRole('presentation')).toBeNull();
 

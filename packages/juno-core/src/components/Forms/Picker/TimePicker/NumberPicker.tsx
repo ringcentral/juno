@@ -5,6 +5,7 @@ import React, {
   useImperativeHandle,
   useMemo,
   useRef,
+  useLayoutEffect,
 } from 'react';
 
 import { runKeyHandler } from '@material-ui/pickers/_shared/hooks/useKeyDown';
@@ -58,6 +59,10 @@ type NumberPickerProps = {
   step: number;
   /** render value fn */
   renderValue?: (value: number) => string;
+  /**
+   * If `true`, the `NumberPicker` element will be focused during the first mount.
+   */
+  autoFocus?: boolean;
 } & RcClickFiledStyleProps &
   RcBaseProps<HTMLAttributes<HTMLDivElement>, 'onClick' | 'onChange'>;
 
@@ -83,12 +88,21 @@ const _NumberPicker = forwardRef<NumberPickerRef, NumberPickerProps>(
       onInnerChange,
       renderValue,
       getScreenReaderLabel,
+      autoFocus,
       ...rest
     } = props;
     const forceUpdate = useForceUpdate();
     const [innerValueRef, setInnerValue] = useRefState(value, forceUpdate);
 
     const rangeRef = useRef<Range>({ max: maxProp, min: minProp });
+    const pickerRef = useRef<HTMLInputElement | null>(null);
+
+    useLayoutEffect(() => {
+      if (autoFocus) {
+        pickerRef.current!.focus();
+      }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     useDepsChange(() => {
       rangeRef.current = { max: maxProp, min: minProp };
@@ -219,6 +233,7 @@ const _NumberPicker = forwardRef<NumberPickerRef, NumberPickerProps>(
         onKeyDown={handleKeyDown}
         aria-live="assertive"
         aria-label={label}
+        ref={pickerRef}
         {...rest}
       >
         <StyledTimeIconButton
