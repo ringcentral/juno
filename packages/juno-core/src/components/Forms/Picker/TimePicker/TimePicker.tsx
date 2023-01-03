@@ -479,7 +479,6 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
                 }
                 renderValue={renderHourValue}
                 automationId="time-picker-hour"
-                autoFocus
                 {...HourPickerProps}
               />
               <RcBox textAlign="center" width="48px">

@@ -408,6 +408,8 @@ const Calendar = forwardRef<any, CalendarProps>(
     }, [previousView, view, viewChange]);
 
     useLayoutEffect(() => {
+      focusDayElement();
+
       calendarRef.current = document.querySelector(
         `.${RcDatePickerClasses.popover} .${RcDatePickerClasses.popoverPaper}`,
       );
