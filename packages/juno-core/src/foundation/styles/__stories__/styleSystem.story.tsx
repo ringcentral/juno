@@ -7,6 +7,9 @@ import {
   fakeBorder,
   flexCenterStyle,
   flexWidth,
+  focusRing,
+  FocusRingVariant,
+  focusVisible,
   focusVisibleShadowStyle,
   getContrastBgColor,
   getParsePaletteColor,
@@ -212,10 +215,35 @@ const FocusVisible = styled(Basic)`
   position: relative;
   ${focusVisibleShadowStyle};
 `;
+
+const FocusRing = styled(Basic)<{ ringType: FocusRingVariant }>`
+  outline: none;
+  position: relative;
+  background: ${palette2('warning', 'b02')};
+
+  ${focusVisible} {
+    ${({ ringType }) => focusRing(ringType)};
+  }
+`;
+
 export const FocusVisibleExample: Story<{}> = () => {
   return <FocusVisible tabIndex={0}>focus visible</FocusVisible>;
 };
 FocusVisibleExample.storyName = 'focusVisibleShadowStyle';
+
+export const FocusRingExample: Story<{}> = () => {
+  return (
+    <>
+      <FocusRing tabIndex={0} ringType="inset">
+        focus visible
+      </FocusRing>
+      <FocusRing tabIndex={0} ringType="normal">
+        focus visible
+      </FocusRing>
+    </>
+  );
+};
+FocusRingExample.storyName = 'focusRing';
 
 const Ellipsis = styled(Block)`
   ${ellipsis}

@@ -199,6 +199,71 @@ exports[`Storyshots 💅 Style system/utils flexWidth 1`] = `
 </div>
 `;
 
+exports[`Storyshots 💅 Style system/utils focusRing 1`] = `
+Array [
+  .c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  outline: none;
+  position: relative;
+  background: #FFE7C1;
+}
+
+.c1.focus-visible:after,
+.c1[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 0px);
+  box-shadow: inset 0 0 0 2px #066FAC;
+}
+
+<div
+    className="c0 c1"
+    tabIndex={0}
+  >
+    focus visible
+  </div>,
+  .c0 {
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}
+
+.c1 {
+  outline: none;
+  position: relative;
+  background: #FFE7C1;
+}
+
+.c1.focus-visible:after,
+.c1[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-2px - 0px);
+  border-radius: calc(2px + 0px);
+  box-shadow: 0 0 0 2px #066FAC;
+}
+
+<div
+    className="c0 c1"
+    tabIndex={0}
+  >
+    focus visible
+  </div>,
+]
+`;
+
 exports[`Storyshots 💅 Style system/utils focusVisibleShadowStyle 1`] = `
 .c0 {
   margin: 1em;
