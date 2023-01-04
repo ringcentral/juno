@@ -52066,9 +52066,9 @@ var shadowBorder = (r3 = "zero", color2 = focusVisibleColor, inset = true, size 
     pointer-events: none;
   }
 `;
-var focusVisibleShadowStyle = (r3, color2) => css2`
+var focusVisibleShadowStyle = (r3, color2, inset = true, size = 1) => css2`
   ${focusVisible} {
-    ${shadowBorder(r3, color2)};
+    ${shadowBorder(r3, color2, inset, size)};
   }
 `;
 
@@ -76441,6 +76441,7 @@ var PickerBaseIconButton = forwardRef634((props, ref2) => {
     color: selected ? "interactive.b02" : "neutral.f06",
     "data-hidden": hidden,
     size: "xsmall",
+    focusVariant: "focusRing",
     ...rest
   }, children2);
 });
@@ -76868,6 +76869,29 @@ var StyledPopover = styled_components_default(RcPopover)`
   }
 `;
 
+// ../juno-core/src/components/Forms/Picker/styles/datePickerCustomFocusRingStyle.tsx
+var RcPickerFocusInsetBorderSizes = {
+  small: 1,
+  medium: 2
+};
+var datePickerCustomFocusRingStyle = ({ size, selected, radius: radius4 = "circle" }) => {
+  const focusInsetBorderSizes = RcPickerFocusInsetBorderSizes[size];
+  return selected && css2`
+      ${focusVisible} {
+        ${shadowBorder(radius4, palette22("neutral", "b01"), true, focusInsetBorderSizes)}
+        &:after {
+          top: ${focusInsetBorderSizes}px;
+          right: ${focusInsetBorderSizes}px;
+          bottom: ${focusInsetBorderSizes}px;
+          left: ${focusInsetBorderSizes}px;
+        }
+        &:before {
+          background-color: unset !important;
+        }
+      }
+    `;
+};
+
 // ../juno-core/src/components/Forms/Picker/utils/PickerTextField/PickerTextField.tsx
 var popoverAnchorOrigin = {
   vertical: "bottom",
@@ -77036,14 +77060,17 @@ var DayStyle = ({
   hidden,
   selected
 }) => {
+  const sizeValue = RcDatePickerIconWidths[size];
   return css2`
     &.${RcIconButtonClasses.root} {
-      width: ${RcDatePickerIconWidths[size]};
-      height: ${RcDatePickerIconWidths[size]};
+      width: ${sizeValue};
+      height: ${sizeValue};
       margin: 0 2px;
       visibility: ${hidden && "hidden"};
       ${typography4("caption1")};
       ${current && !selected && CurrentDayStyle};
+
+      ${datePickerCustomFocusRingStyle}
     }
   `;
 };
@@ -77056,6 +77083,7 @@ var StyledYear = styled_components_default(PickerBaseIconButton)`
     height: 28px;
     margin: 4px 0;
     ${typography4("body1")};
+    ${datePickerCustomFocusRingStyle};
   }
 `;
 
@@ -77082,7 +77110,7 @@ var StyledCurrentMonth = styled_components_default.button`
 
   padding: ${spacing2(1, 0, 1, 1)};
 
-  ${focusVisibleShadowStyle("sm")};
+  ${focusVisibleShadowStyle("lg", void 0, void 0, 2)};
 
   ${RcIcon} {
     margin-left: ${spacing2(2)};
@@ -77304,7 +77332,8 @@ var DatePickerHeader = memo462((props) => {
     "aria-label": previousMonthAriaLabel,
     "data-picker-action": true,
     "data-test-automation-id": "date-picker-pre-month",
-    className: classes.leftArrow
+    className: classes.leftArrow,
+    focusVariant: "focusRing"
   }), /* @__PURE__ */ React726.createElement(SwitchHeaderButton, {
     color: "neutral.f04",
     size: "small",
@@ -77314,7 +77343,8 @@ var DatePickerHeader = memo462((props) => {
     "aria-label": nextMonthAriaLabel,
     "data-picker-action": true,
     "data-test-automation-id": "date-picker-next-month",
-    className: classes.rightArrow
+    className: classes.rightArrow,
+    focusVariant: "focusRing"
   }))));
 });
 DatePickerHeader.defaultProps = {
@@ -77383,6 +77413,7 @@ var Year = memo464(forwardRef640((props, ref2) => {
     ref: ref2,
     selected,
     "aria-pressed": focused,
+    size: "medium",
     "aria-label": yearAriaLabel,
     className,
     "data-test-automation-class": "date-picker-year",
