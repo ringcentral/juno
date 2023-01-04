@@ -41,8 +41,7 @@
     "test:percy": "percy storybook ./public",
     "update-mdx": "ts-node scripts/mdToMdx",
     "update-packageJson": "eslint ./package.json --no-ignore --fix",
-    "update-snapshot": "yarn clean-dist && jest --updateSnapshot",
-    "update-storybook-snapshot": "yarn clean-dist && jest ./packages/juno-core/src/__tests__/snapshot/storyShots.test.tsx --updateSnapshot",
+    "update-snapshot": "yarn clean-dist && jest --testMatch='**/*snapshot.test.tsx' ./ --u",
     "predeploy": "yarn build:storybook && yarn workspace @ringcentral/juno-framer run framer:build",
     "deploy": "gh-pages -d public",
     "publish-npm": "nx run-many --target=publish-npm --all"

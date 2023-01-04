@@ -21,7 +21,7 @@
     "clean-dist": "rm -rf dist",
     "test": "yarn clean-dist && jest",
     "update-icon": "ts-node ./scripts/update-icon",
-    "postupdate-icon": "jest ./__tests__/icons.test.ts --updateSnapshot",
+    "postupdate-icon": "jest ./__tests__/icons.snapshot.test.ts --updateSnapshot",
     "prepublish-npm": "yarn release",
     "publish-npm": "cd dist && npm publish"
   },

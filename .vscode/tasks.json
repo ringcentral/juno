@@ -40,13 +40,6 @@
       "problemMatcher": []
     },
     {
-      "label": "update storybook snapshot",
-      "type": "shell",
-      "command": "yarn update-storybook-snapshot",
-      "isBackground": true,
-      "problemMatcher": []
-    },
-    {
       "label": "update snapshot",
       "type": "shell",
       "command": "yarn update-snapshot",
