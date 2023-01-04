@@ -169,7 +169,18 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
 
 .c14.focus-visible,
 .c14[data-focus-visible-added] {
-  background-color: rgba(102,102,102,0.16);
+  background-color: transparent;
+}
+
+.c14.focus-visible:after,
+.c14[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 50%);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c14.focus-visible:active,
@@ -275,7 +286,18 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
 
 .c21.focus-visible,
 .c21[data-focus-visible-added] {
-  background-color: rgba(18,18,18,0.16);
+  background-color: transparent;
+}
+
+.c21.focus-visible:after,
+.c21[data-focus-visible-added]:after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: calc(-0px - 0px);
+  border-radius: calc(0px + 50%);
+  box-shadow: inset 0 0 0 2px #066FAC;
 }
 
 .c21.focus-visible:active,
@@ -451,7 +473,7 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
   opacity: 0;
 }
 
-.c26 {
+.c27 {
   text-transform: none;
   font-size: 0.9375rem;
   font-weight: 700;
@@ -461,34 +483,34 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
   border-radius: 4px;
 }
 
-.c26 .RcButton-startIcon {
+.c27 .RcButton-startIcon {
   margin-right: 8px;
   margin-left: 0;
 }
 
-.c26 .RcButton-endIcon {
+.c27 .RcButton-endIcon {
   margin-left: 8px;
   margin-right: 0;
 }
 
-.c26.RcButton-text {
+.c27.RcButton-text {
   color: #066FAC;
   padding: 4px;
   min-width: unset;
   line-height: 1;
 }
 
-.c26.RcButton-text.RcButton-disabled {
+.c27.RcButton-text.RcButton-disabled {
   color: #C7C7C7;
 }
 
-.c26.RcButton-text.focus-visible,
-.c26.RcButton-text[data-focus-visible-added] {
+.c27.RcButton-text.focus-visible,
+.c27.RcButton-text[data-focus-visible-added] {
   background-color: transparent;
 }
 
-.c26.RcButton-text.focus-visible:after,
-.c26.RcButton-text[data-focus-visible-added]:after {
+.c27.RcButton-text.focus-visible:after,
+.c27.RcButton-text[data-focus-visible-added]:after {
   pointer-events: none;
   content: '';
   position: absolute;
@@ -498,27 +520,27 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
   box-shadow: inset 0 0 0 2px #066FAC;
 }
 
-.c26.RcButton-text:active.RcButton-text {
+.c27.RcButton-text:active.RcButton-text {
   color: rgba(6,111,172,0.64);
 }
 
-.c26.RcButton-contained {
+.c27.RcButton-contained {
   color: #fff;
   background-color: #066FAC;
 }
 
-.c26.RcButton-contained.RcButton-disabled {
+.c27.RcButton-contained.RcButton-disabled {
   background-color: #E5E5E5;
   color: #939393;
 }
 
-.c26.RcButton-outlined {
+.c27.RcButton-outlined {
   color: #066FAC;
   border-color: #066FAC;
   padding: 0px 15px;
 }
 
-.c26.RcButton-outlined.RcButton-disabled {
+.c27.RcButton-outlined.RcButton-disabled {
   color: #C7C7C7;
   border-color: #C7C7C7;
 }
@@ -742,8 +764,8 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  box-shadow: inset 0 0 0 1px #066FAC;
-  border-radius: 2px;
+  box-shadow: inset 0 0 0 2px #066FAC;
+  border-radius: 4px;
   pointer-events: none;
 }
 
@@ -873,7 +895,7 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
   min-height: 216px;
 }
 
-.c25 {
+.c26 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -903,6 +925,42 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
 }
 
 .c24.RcIconButton-root {
+  width: 28px;
+  height: 28px;
+  margin: 0 2px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 16px;
+}
+
+.c24.RcIconButton-root.focus-visible:after,
+.c24.RcIconButton-root[data-focus-visible-added]:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 2px #FFFFFF;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.c24.RcIconButton-root.focus-visible:after,
+.c24.RcIconButton-root[data-focus-visible-added]:after {
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+}
+
+.c24.RcIconButton-root.focus-visible:before,
+.c24.RcIconButton-root[data-focus-visible-added]:before {
+  background-color: unset !important;
+}
+
+.c25.RcIconButton-root {
   width: 28px;
   height: 28px;
   margin: 0 2px;
@@ -982,26 +1040,26 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c26.RcButton-text:hover {
+  .c27.RcButton-text:hover {
     background-color: rgba(6,111,172,0.08);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c26.RcButton-text:hover {
+  .c27.RcButton-text:hover {
     color: rgba(6,111,172,0.8);
     background-color: transparent;
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c26.RcButton-contained:hover {
+  .c27.RcButton-contained:hover {
     background-color: rgba(6,111,172,0.92);
   }
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c26.RcButton-outlined:hover {
+  .c27.RcButton-outlined:hover {
     background-color: rgba(6,111,172,0.08);
   }
 }
@@ -1302,7 +1360,7 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
                   <button
                     aria-disabled="false"
                     aria-pressed="true"
-                    class="MuiButtonBase-root c2 c23 c22 RcIconButton-root RcIconButton-contained Mui-focusVisible"
+                    class="MuiButtonBase-root c2 c23 c24 RcIconButton-root RcIconButton-contained Mui-focusVisible"
                     data-focus-visible-added=""
                     data-hidden="false"
                     data-picker-focused=""
@@ -1865,7 +1923,7 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
                   <button
                     aria-disabled="false"
                     aria-pressed="false"
-                    class="MuiButtonBase-root c2 c21 c24 RcIconButton-root RcIconButton-round"
+                    class="MuiButtonBase-root c2 c21 c25 RcIconButton-root RcIconButton-round"
                     data-hidden="true"
                     data-test-automation-class="date-picker-hidden-day"
                     data-test-automation-value="1"
@@ -1884,7 +1942,7 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
                   <button
                     aria-disabled="false"
                     aria-pressed="false"
-                    class="MuiButtonBase-root c2 c21 c24 RcIconButton-root RcIconButton-round"
+                    class="MuiButtonBase-root c2 c21 c25 RcIconButton-root RcIconButton-round"
                     data-hidden="true"
                     data-test-automation-class="date-picker-hidden-day"
                     data-test-automation-value="2"
@@ -1903,7 +1961,7 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
                   <button
                     aria-disabled="false"
                     aria-pressed="false"
-                    class="MuiButtonBase-root c2 c21 c24 RcIconButton-root RcIconButton-round"
+                    class="MuiButtonBase-root c2 c21 c25 RcIconButton-root RcIconButton-round"
                     data-hidden="true"
                     data-test-automation-class="date-picker-hidden-day"
                     data-test-automation-value="3"
@@ -1922,7 +1980,7 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
                   <button
                     aria-disabled="false"
                     aria-pressed="false"
-                    class="MuiButtonBase-root c2 c21 c24 RcIconButton-root RcIconButton-round"
+                    class="MuiButtonBase-root c2 c21 c25 RcIconButton-root RcIconButton-round"
                     data-hidden="true"
                     data-test-automation-class="date-picker-hidden-day"
                     data-test-automation-value="4"
@@ -1939,10 +1997,10 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
             </div>
           </div>
           <div
-            class="c25 RcDatePicker-footer"
+            class="c26 RcDatePicker-footer"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c26"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text RcButton-text c27"
               data-test-automation-id="date-picker-today"
               tabindex="0"
               type="button"
