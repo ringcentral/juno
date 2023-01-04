@@ -130,6 +130,7 @@ const DatePickerHeader: FunctionComponent<DatePickerHeaderProps> = memo(
               data-picker-action
               data-test-automation-id="date-picker-pre-month"
               className={classes!.leftArrow}
+              focusVariant="focusRing"
             />
             <SwitchHeaderButton
               color="neutral.f04"
@@ -141,6 +142,7 @@ const DatePickerHeader: FunctionComponent<DatePickerHeaderProps> = memo(
               data-picker-action
               data-test-automation-id="date-picker-next-month"
               className={classes!.rightArrow}
+              focusVariant="focusRing"
             />
           </SwitchHeaderButtonWrapper>
         </SwitchHeaderWrapper>

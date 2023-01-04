@@ -48,6 +48,7 @@ const Year = memo(
         ref={ref}
         selected={selected}
         aria-pressed={focused}
+        size="medium"
         aria-label={yearAriaLabel}
         className={className}
         data-test-automation-class="date-picker-year"

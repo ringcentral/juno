@@ -42,7 +42,7 @@ const StyledCurrentMonth = styled.button<StyledCurrentMonthProps>`
 
   padding: ${spacing(1, 0, 1, 1)};
 
-  ${focusVisibleShadowStyle('sm')};
+  ${focusVisibleShadowStyle('lg', undefined, undefined, 2)};
 
   ${RcIcon} {
     margin-left: ${spacing(2)};

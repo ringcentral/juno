@@ -20,6 +20,7 @@ export const PickerBaseIconButton = forwardRef<any, PickerBaseIconButtonProps>(
         color={selected ? 'interactive.b02' : 'neutral.f06'}
         data-hidden={hidden}
         size="xsmall"
+        focusVariant="focusRing"
         {...rest}
       >
         {children}

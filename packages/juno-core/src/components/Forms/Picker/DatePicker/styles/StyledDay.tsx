@@ -5,6 +5,7 @@ import {
   typography,
 } from '../../../../../foundation';
 import { RcIconButtonClasses } from '../../../../Buttons/IconButton/utils';
+import { datePickerCustomFocusRingStyle } from '../../styles';
 import { DayProps } from '../Day';
 import { RcDatePickerIconWidths } from '../utils';
 
@@ -18,14 +19,17 @@ export const DayStyle: RcThemedStyled<DayProps, any> = ({
   hidden,
   selected,
 }) => {
+  const sizeValue = RcDatePickerIconWidths[size!];
   return css`
     &.${RcIconButtonClasses.root} {
-      width: ${RcDatePickerIconWidths[size!]};
-      height: ${RcDatePickerIconWidths[size!]};
+      width: ${sizeValue};
+      height: ${sizeValue};
       margin: 0 2px;
       visibility: ${hidden && 'hidden'};
       ${typography('caption1')};
       ${current && !selected && CurrentDayStyle};
+
+      ${datePickerCustomFocusRingStyle}
     }
   `;
 };

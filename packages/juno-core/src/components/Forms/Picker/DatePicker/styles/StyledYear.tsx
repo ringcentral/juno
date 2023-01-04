@@ -1,6 +1,9 @@
 import { styled, typography } from '../../../../../foundation';
 import { RcIconButtonClasses } from '../../../../Buttons/IconButton/utils';
-import { PickerBaseIconButton } from '../../styles';
+import {
+  datePickerCustomFocusRingStyle,
+  PickerBaseIconButton,
+} from '../../styles';
 
 export const StyledYear = styled(PickerBaseIconButton)`
   &.${RcIconButtonClasses.root} {
@@ -9,5 +12,6 @@ export const StyledYear = styled(PickerBaseIconButton)`
     height: 28px;
     margin: 4px 0;
     ${typography('body1')};
+    ${datePickerCustomFocusRingStyle};
   }
 `;

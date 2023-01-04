@@ -30,8 +30,10 @@ export const shadowBorder = (
 export const focusVisibleShadowStyle = (
   r?: Parameters<typeof radius>[0],
   color?: any,
+  inset: boolean = true,
+  size: number = 1,
 ) => css`
   ${focusVisible} {
-    ${shadowBorder(r, color)};
+    ${shadowBorder(r, color, inset, size)};
   }
 `;
