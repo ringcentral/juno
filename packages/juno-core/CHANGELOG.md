@@ -1,4 +1,11 @@
 
+### [2.26.2](https://github.com/ringcentral/juno/compare/juno-core-v2.26.1...juno-core-v2.26.2) (2023-01-04)
+
+
+### Features
+
+* **FiJI-59870:** [DatePicker] change focusVisible style to focusRing style ([956ebc9](https://github.com/ringcentral/juno/commit/956ebc982de44c9138aa1a2e96c35d806349d922))
+
 ### [2.26.1](https://github.com/ringcentral/juno/compare/juno-core-v2.26.0...juno-core-v2.26.1) (2023-01-03)
 
 
