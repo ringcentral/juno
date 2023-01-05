@@ -1359,17 +1359,36 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
                 >
                   <button
                     aria-disabled="false"
+                    aria-pressed="false"
+                    class="MuiButtonBase-root c2 c21 c22 RcIconButton-root RcIconButton-round"
+                    data-hidden="false"
+                    data-test-automation-class="date-picker-day"
+                    data-test-automation-value="4"
+                    tabindex="-1"
+                    type="button"
+                  >
+                    4
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </div>
+                <div
+                  role="cell"
+                >
+                  <button
+                    aria-disabled="false"
                     aria-pressed="true"
                     class="MuiButtonBase-root c2 c23 c24 RcIconButton-root RcIconButton-contained Mui-focusVisible"
                     data-focus-visible-added=""
                     data-hidden="false"
                     data-picker-focused=""
                     data-test-automation-class="date-picker-day"
-                    data-test-automation-value="4"
+                    data-test-automation-value="5"
                     tabindex="0"
                     type="button"
                   >
-                    4
+                    5
                     <span
                       class="MuiTouchRipple-root"
                     >
@@ -1382,25 +1401,6 @@ exports[`RcDatePicker Check RcDatePicker render correctly in popup 1`] = `
                         />
                       </span>
                     </span>
-                  </button>
-                </div>
-                <div
-                  role="cell"
-                >
-                  <button
-                    aria-disabled="false"
-                    aria-pressed="false"
-                    class="MuiButtonBase-root c2 c21 c22 RcIconButton-root RcIconButton-round"
-                    data-hidden="false"
-                    data-test-automation-class="date-picker-day"
-                    data-test-automation-value="5"
-                    tabindex="-1"
-                    type="button"
-                  >
-                    5
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
                   </button>
                 </div>
                 <div
