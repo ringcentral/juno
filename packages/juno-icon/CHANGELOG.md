@@ -1,4 +1,11 @@
 
+## [1.26.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.25.0...juno-icon-v1.26.0) (2023-01-16)
+
+
+### Features
+
+* **Icons:** add new icon Chat, Highlight, Summary, Notes, Transcript, Whiteboard ([8e02257](https://github.com/ringcentral/juno/commit/8e02257e11172bd779e329709d2a86c1e42ecdd0))
+
 ## [1.25.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.24.0...juno-icon-v1.25.0) (2023-01-05)
 
 
