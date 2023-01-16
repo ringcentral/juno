@@ -7,6 +7,25 @@ import { Canvas, Meta, Story } from '@storybook/addon-docs';
 <br />
 
 
+## [2.27.0](https://github.com/ringcentral/juno/compare/juno-core-v2.26.2...juno-core-v2.27.0) (2023-01-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* **JMX-1543:** Remove `overcan` of VirtualizedMenuList. If you need this to improve performance, please use `increaseViewportBy` to replace it.
+* **JMX-1543:** Remove `retryOptions` of useOnlyOneFocusable. If you need this, please use `useRetry` directly
+
+### Features
+
+* **Icon:** add icon `calls`, `calls-border`, `phone-inbox`, `phone-inbox-border`, `transcript-bottom` ([26cb576](https://github.com/ringcentral/juno/commit/26cb5762f6b0426e5771d51dc4dbf19a104133e8))
+* **JMX-1543:** [useOnlyOneFocusable] remove retry logic of `focusIndex` ([d24b3ac](https://github.com/ringcentral/juno/commit/d24b3acd3830592642cb44e9cb53669343c0f08a))
+* **JMX-1543:** [VirtualizedMenuList] improve focus logic ([2f8d491](https://github.com/ringcentral/juno/commit/2f8d4919460678202e8596982f3801fa015463b0))
+
+
+### Bug Fixes
+
+* **JMX-1543:** [Virtuoso] fix virtuoso root HtmlElement type ([07e2dc2](https://github.com/ringcentral/juno/commit/07e2dc293893b8067b28e2ae7d2141f02a13f603))
+
 ### [2.26.2](https://github.com/ringcentral/juno/compare/juno-core-v2.26.1...juno-core-v2.26.2) (2023-01-04)
 
 
