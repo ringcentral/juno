@@ -7,9 +7,7 @@ import React, {
   useMemo,
   useRef,
 } from 'react';
-
 import { isFragment } from 'react-is';
-
 import {
   combineProps,
   getScrollbarSize,
@@ -17,7 +15,6 @@ import {
   logInDev,
   RcBaseProps,
   styled,
-  useDebounce,
   useEventCallback,
   useForkRef,
   useHiddenTabindex,
@@ -75,7 +72,7 @@ type RcVirtualizedMenuListProps = {
    */
   VirtuosoProps?: RcBaseProps<
     ComponentProps<typeof Virtuoso>,
-    'data' | 'itemContent' | 'totalCount' | 'components'
+    'data' | 'itemContent' | 'totalCount' | 'components' | 'overscan'
   >;
 } & RcMenuListProps;
 
@@ -112,6 +109,10 @@ const _RcVirtualizedMenuList = forwardRef<any, RcVirtualizedMenuListProps>(
     const handleRef = useForkRef(innerListRef, ref);
     const rangeChangedRef = useRef<ListRange>({ startIndex: 0, endIndex: 0 });
     const isMountedRef = useMountState();
+    const itemRenderedDescriptorRef = useRef<{
+      resolve: () => void;
+      index: number;
+    } | null>(null);
 
     let hasSearchText = false;
     /**
@@ -187,19 +188,35 @@ const _RcVirtualizedMenuList = forwardRef<any, RcVirtualizedMenuListProps>(
         vlRef.current?.scrollToIndex(location);
 
         if (location.index === 0) modifyScrollPosition();
-
-        debounceFocusIndex(focusedIndexRef.current);
       },
     });
 
     const { focusIndex, getItemProps } = useOnlyOneFocusable({
       focusedIndexRef,
       containerRef: innerListRef,
-      // * retry focusIndex, because that may not scroll to and render complete
-      retryOptions: { retryTimes: 10, intervalTime: 20 },
     });
 
-    const debounceFocusIndex = useDebounce(focusIndex, 20);
+    const focusItemByIndex = (
+      currentfocusedIndex: number | null,
+      targetfocusedIndex: number,
+    ) => {
+      scrollToHighlightedIndex(
+        currentfocusedIndex === null ? 0 : currentfocusedIndex,
+        targetfocusedIndex,
+      );
+      if (isOutOfRange(targetfocusedIndex, rangeChangedRef.current)) {
+        new Promise<void>((resolve) => {
+          itemRenderedDescriptorRef.current = {
+            resolve,
+            index: targetfocusedIndex,
+          };
+        }).then(() => {
+          focusIndex(targetfocusedIndex);
+        });
+      } else {
+        focusIndex(targetfocusedIndex);
+      }
+    };
 
     const { onKeyFocusedIndexHandle, getNextFocusableOption } =
       useKeyboardMoveFocus({
@@ -207,12 +224,7 @@ const _RcVirtualizedMenuList = forwardRef<any, RcVirtualizedMenuListProps>(
         focusedIndexRef,
         infinite: !disableListWrap,
         onFocusedIndexChange: (event, toIndex) => {
-          scrollToHighlightedIndex(focusedIndexRef.current, toIndex);
-          focusedIndexRef.current = toIndex;
-
-          // * fix that will focus at previous index
-          // * use debounce to prevent same time scrollToIndex and here trigger,
-          debounceFocusIndex(focusedIndexRef.current);
+          focusItemByIndex(focusedIndexRef.current, toIndex);
 
           event.preventDefault();
         },
@@ -245,9 +257,7 @@ const _RcVirtualizedMenuList = forwardRef<any, RcVirtualizedMenuListProps>(
       }
 
       if (disabledItemsFocusable) {
-        modifyScrollPosition();
-
-        debounceFocusIndex(0);
+        focusItemByIndex(null, 0);
       } else {
         // * when init find available default index
         const initFocusedIndex = getNextFocusableOption();
@@ -255,12 +265,7 @@ const _RcVirtualizedMenuList = forwardRef<any, RcVirtualizedMenuListProps>(
         if (autoFocusItem) {
           // * timeout for wait vl render complete
           setTimeout(() => {
-            // * when index is not zero need scrollBy menuBoundary Padding
-            vlRef.current?.scrollToIndex(initFocusedIndex);
-
-            modifyScrollPosition();
-
-            debounceFocusIndex(initFocusedIndex);
+            focusItemByIndex(null, initFocusedIndex);
           }, 0);
         }
       }
@@ -355,6 +360,15 @@ const _RcVirtualizedMenuList = forwardRef<any, RcVirtualizedMenuListProps>(
           ) {
             listElm.focus();
           }
+
+          const itemRenderedDescriptor = itemRenderedDescriptorRef.current;
+          if (
+            itemRenderedDescriptor &&
+            !isOutOfRange(itemRenderedDescriptor.index, rangeChangedRef.current)
+          ) {
+            itemRenderedDescriptor.resolve();
+            itemRenderedDescriptorRef.current = null;
+          }
         },
         totalListHeightChanged,
         style,
@@ -368,16 +382,10 @@ const _RcVirtualizedMenuList = forwardRef<any, RcVirtualizedMenuListProps>(
         <RcVisuallyHidden
           ref={hiddenRef}
           onFocus={() => {
-            if (
-              isOutOfRange(focusedIndexRef.current, rangeChangedRef.current)
-            ) {
-              scrollToHighlightedIndex(
-                rangeChangedRef.current?.startIndex || 0,
-                focusedIndexRef.current,
-              );
-            } else {
-              debounceFocusIndex(focusedIndexRef.current);
-            }
+            focusItemByIndex(
+              rangeChangedRef.current?.startIndex || 0,
+              focusedIndexRef.current,
+            );
           }}
         />
         <Virtuoso

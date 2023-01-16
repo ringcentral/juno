@@ -47,7 +47,7 @@ VirtualizedMenuList.args = {
   maxHeight: 180,
   VirtuosoProps: {
     // view more in https://virtuoso.dev/virtuoso-api-reference/
-    overscan: 200,
+    increaseViewportBy: 200,
   },
 };
 
