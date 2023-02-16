@@ -1,4 +1,11 @@
 
+## [1.28.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.27.0...juno-icon-v1.28.0) (2023-02-16)
+
+
+### Features
+
+* **Icon:** add new icon AddFolderBorder ([77f29f0](https://github.com/ringcentral/juno/commit/77f29f0564418cd14fe5189a7ef29ecc4d18d7ae))
+
 ## [1.27.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.26.0...juno-icon-v1.27.0) (2023-02-08)
 
 
