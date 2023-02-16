@@ -32,6 +32,7 @@ export { default as AddBorder } from './AddBorder';
 export { default as AddEmojiMore } from './AddEmojiMore';
 export { default as AddEvent } from './AddEvent';
 export { default as AddField } from './AddField';
+export { default as AddFolderBorder } from './AddFolderBorder';
 export { default as AddIntegration } from './AddIntegration';
 export { default as AddMemberBorder } from './AddMemberBorder';
 export { default as AddMember } from './AddMember';

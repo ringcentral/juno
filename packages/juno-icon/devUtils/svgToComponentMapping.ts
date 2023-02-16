@@ -9,6 +9,7 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  AddFolderBorder: 'add-folder_border',
   PinWindow: 'pin-window',
   PopIn: 'pop-in',
   PopOut: 'pop-out',
