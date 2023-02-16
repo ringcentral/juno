@@ -48,9 +48,7 @@ type MoreButtonProps = {
   'size' | 'menuItems' | 'onChange' | 'orientation' | 'ref' | 'innerRef'
 >;
 
-type MoreMenuTabsProps = {
-  MoreButtonProps?: MoreButtonProps;
-} & RcTabsProps;
+type MoreMenuTabsProps = RcTabsProps;
 
 type TabRefType = {
   ref: React.RefObject<HTMLDivElement>;
@@ -84,6 +82,7 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
     value: valueProp,
     onChange,
     MoreButtonProps = {},
+    resizeThrottleTime = 300,
     ...rest
   } = props;
 
@@ -125,7 +124,7 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
     }
   };
 
-  const throttleTabsSizeChange = useThrottle(sizeChange, 300);
+  const throttleTabsSizeChange = useThrottle(sizeChange, resizeThrottleTime);
 
   useResizeObserver(
     innerRef,

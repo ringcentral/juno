@@ -45,6 +45,11 @@ type RcTabsProps = {
    * Props applied to the `moreMenu` variant more button
    */
   MoreButtonProps?: MoreButtonProps;
+  /**
+   * Prop for `moreMenu` variant to improve resize performance
+   * @default 300
+   */
+  resizeThrottleTime?: number;
 } & RcBaseProps<
   ComponentProps<typeof MuiTabs>,
   'variant' | 'indicatorColor' | 'TabIndicatorProps' | 'textColor' | 'disabled'
@@ -57,6 +62,7 @@ const _RcTabs = forwardRef<any, RcTabsProps>((inProps: RcTabsProps, ref) => {
     children: childrenProp,
     variant: variantProp,
     size,
+    resizeThrottleTime,
     MoreButtonProps,
     ...rest
   } = props;
@@ -82,6 +88,7 @@ const _RcTabs = forwardRef<any, RcTabsProps>((inProps: RcTabsProps, ref) => {
     return (
       <MoreMenuTabs
         {...rest}
+        resizeThrottleTime={resizeThrottleTime}
         ref={ref}
         classes={classes}
         size={size}
