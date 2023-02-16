@@ -1,4 +1,11 @@
 
+## [2.28.0](https://github.com/ringcentral/juno/compare/juno-core-v2.27.0...juno-core-v2.28.0) (2023-02-16)
+
+
+### Features
+
+* **improve-more-menu-tabs-resize:** [Tabs] add prop `resizeThrottleTime` to improve resize performance ([1578f1a](https://github.com/ringcentral/juno/commit/1578f1a2d111db454fb9da13f466bbd76cf8db37))
+
 ## [2.27.0](https://github.com/ringcentral/juno/compare/juno-core-v2.26.2...juno-core-v2.27.0) (2023-01-16)
 
 
