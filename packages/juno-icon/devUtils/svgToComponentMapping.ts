@@ -9,6 +9,10 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  PrisenceAvailable: 'prisence-available',
+  PrisenceAway: 'prisence-away',
+  PrisenceDontDisturb: 'prisence-dont_disturb',
+  PrisenceOffline: 'prisence-offline',
   AddFolderBorder: 'add-folder_border',
   PinWindow: 'pin-window',
   PopIn: 'pop-in',
@@ -464,4 +468,5 @@ module.exports = {
   DefaultAvatar: 'default-avatar',
   Assignment: 'assignment',
   ItemListSelected: 'item-list-selected',
+  GetStartedVideo: 'get-started-video',
 };
