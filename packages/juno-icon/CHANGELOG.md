@@ -1,4 +1,11 @@
 
+## [1.29.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.28.0...juno-icon-v1.29.0) (2023-02-20)
+
+
+### Features
+
+* **Icon:** add new icons PrisenceAvailable, PrisenceAway, PrisenceDontDisturb, PrisenceOffline ([1bdfd07](https://github.com/ringcentral/juno/commit/1bdfd07a547c5a77c01596421d6816cdbbd85b77))
+
 ## [1.28.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.27.0...juno-icon-v1.28.0) (2023-02-16)
 
 
