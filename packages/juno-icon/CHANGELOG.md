@@ -1,4 +1,15 @@
 
+## [1.31.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.30.0...juno-icon-v1.31.0) (2023-02-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* **Icon:** Icon PrisenceAvailable, PrisenceAway, PrisenceDontDisturb, PrisenceOffline are renamed. Please use PresenceAvailable, PresenceAway, PresenceDnd, PresenceOffline
+
+### Features
+
+* **Icon:** Fix misspelled icons; Update icons PresenceAvailable, PresenceAway, PresenceDnd, PresenceOffline ([f99a66f](https://github.com/ringcentral/juno/commit/f99a66f87ed2b2abaedbca0ec5a002e4d5b29291))
+
 ## [1.30.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.29.0...juno-icon-v1.30.0) (2023-02-21)
 
 
