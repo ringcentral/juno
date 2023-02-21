@@ -6069,11 +6069,11 @@ __export(juno_icon_exports, {
   PopOut: () => PopOut_default,
   Ppt: () => Ppt_default,
   PptD: () => PptD_default,
+  PresenceAvailable: () => PresenceAvailable_default,
+  PresenceAway: () => PresenceAway_default,
+  PresenceDnd: () => PresenceDnd_default,
+  PresenceOffline: () => PresenceOffline_default,
   Previous: () => Previous_default,
-  PrisenceAvailable: () => PrisenceAvailable_default,
-  PrisenceAway: () => PrisenceAway_default,
-  PrisenceDontDisturb: () => PrisenceDontDisturb_default,
-  PrisenceOffline: () => PrisenceOffline_default,
   Quote: () => Quote_default,
   Radio: () => Radio_default2,
   RadioUnselect: () => RadioUnselect_default,
@@ -33116,90 +33116,90 @@ Ppt.displayName = "Ppt";
 Ppt["iconName"] = "ppt";
 var Ppt_default = Ppt;
 
-// ../juno-icon/src/Previous.tsx
+// ../juno-icon/src/PresenceAvailable.tsx
 import {
   createElement as createElement457
 } from "react";
 import { forwardRef as forwardRef438, memo as memo346 } from "react";
-var Previous = memo346(forwardRef438((props, ref2) => /* @__PURE__ */ createElement457("svg", {
+var PresenceAvailable = memo346(forwardRef438((props, ref2) => /* @__PURE__ */ createElement457("svg", {
   viewBox: "0 0 32 32",
   xmlns: "http://www.w3.org/2000/svg",
   ref: ref2,
   ...props
 }, /* @__PURE__ */ createElement457("path", {
-  d: "M14.899 6.101a.999.999 0 0 1 0 1.414L7.413 15h19.586a1 1 0 0 1 0 2H7.411l7.488 7.486a.999.999 0 1 1-1.414 1.414l-9.192-9.192a.999.999 0 0 1 0-1.414l9.192-9.192a.999.999 0 0 1 1.414 0z"
+  d: "m29.253 7.261-11.147 20.9A3.452 3.452 0 0 1 15.737 30h-.641a3.345 3.345 0 0 1-2.146-.836l-9.753-8.36a3.483 3.483 0 0 1 3.734-5.797c.227.137.434.306.613.502l6.465 5.573L23.121 4a3.483 3.483 0 0 1 4.626-1.672 3.456 3.456 0 0 1 1.672 4.625l-.167.334v-.028z"
 }))));
-Previous.displayName = "Previous";
-Previous["iconName"] = "previous";
-var Previous_default = Previous;
+PresenceAvailable.displayName = "PresenceAvailable";
+PresenceAvailable["iconName"] = "presence-available";
+var PresenceAvailable_default = PresenceAvailable;
 
-// ../juno-icon/src/PrisenceAvailable.tsx
+// ../juno-icon/src/PresenceAway.tsx
 import {
   createElement as createElement458
 } from "react";
 import { forwardRef as forwardRef439, memo as memo347 } from "react";
-var PrisenceAvailable = memo347(forwardRef439((props, ref2) => /* @__PURE__ */ createElement458("svg", {
+var PresenceAway = memo347(forwardRef439((props, ref2) => /* @__PURE__ */ createElement458("svg", {
   viewBox: "0 0 32 32",
   xmlns: "http://www.w3.org/2000/svg",
   ref: ref2,
   ...props
 }, /* @__PURE__ */ createElement458("path", {
-  d: "M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm7.544 9.084-6.222 11.667A1.928 1.928 0 0 1 16 23.778h-.358a1.867 1.867 0 0 1-1.198-.467L9 18.644a1.944 1.944 0 0 1 2.085-3.235c.127.077.242.171.342.28l3.609 3.111 5.087-9.536a1.943 1.943 0 0 1 2.582-.933 1.926 1.926 0 0 1 .933 2.582l-.093.187v-.016z"
+  d: "M26.667 22H13.334a3.333 3.333 0 0 1-3.333-3.333V5.334a3.333 3.333 0 1 1 6.666 0v10h10a3.333 3.333 0 1 1 0 6.666z"
 }))));
-PrisenceAvailable.displayName = "PrisenceAvailable";
-PrisenceAvailable["iconName"] = "prisence-available";
-var PrisenceAvailable_default = PrisenceAvailable;
+PresenceAway.displayName = "PresenceAway";
+PresenceAway["iconName"] = "presence-away";
+var PresenceAway_default = PresenceAway;
 
-// ../juno-icon/src/PrisenceAway.tsx
+// ../juno-icon/src/PresenceDnd.tsx
 import {
   createElement as createElement459
 } from "react";
 import { forwardRef as forwardRef440, memo as memo348 } from "react";
-var PrisenceAway = memo348(forwardRef440((props, ref2) => /* @__PURE__ */ createElement459("svg", {
+var PresenceDnd = memo348(forwardRef440((props, ref2) => /* @__PURE__ */ createElement459("svg", {
   viewBox: "0 0 32 32",
   xmlns: "http://www.w3.org/2000/svg",
   ref: ref2,
   ...props
 }, /* @__PURE__ */ createElement459("path", {
-  d: "M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm7.389 16.022h-7.778a1.944 1.944 0 0 1-1.944-1.944V8.3a1.944 1.944 0 0 1 3.888 0v5.833h5.833a1.944 1.944 0 0 1 0 3.888z"
+  d: "M27.083 18.833H4.916a2.917 2.917 0 0 1 0-5.834h22.167a2.917 2.917 0 0 1 0 5.834z"
 }))));
-PrisenceAway.displayName = "PrisenceAway";
-PrisenceAway["iconName"] = "prisence-away";
-var PrisenceAway_default = PrisenceAway;
+PresenceDnd.displayName = "PresenceDnd";
+PresenceDnd["iconName"] = "presence-dnd";
+var PresenceDnd_default = PresenceDnd;
 
-// ../juno-icon/src/PrisenceDontDisturb.tsx
+// ../juno-icon/src/PresenceOffline.tsx
 import {
   createElement as createElement460
 } from "react";
 import { forwardRef as forwardRef441, memo as memo349 } from "react";
-var PrisenceDontDisturb = memo349(forwardRef441((props, ref2) => /* @__PURE__ */ createElement460("svg", {
+var PresenceOffline = memo349(forwardRef441((props, ref2) => /* @__PURE__ */ createElement460("svg", {
   viewBox: "0 0 32 32",
   xmlns: "http://www.w3.org/2000/svg",
   ref: ref2,
   ...props
 }, /* @__PURE__ */ createElement460("path", {
-  d: "M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm7.389 15.944H8.611a1.944 1.944 0 0 1 0-3.888h14.778a1.944 1.944 0 0 1 0 3.888z"
+  d: "M30 16c0 7.732-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2s14 6.268 14 14z"
 }))));
-PrisenceDontDisturb.displayName = "PrisenceDontDisturb";
-PrisenceDontDisturb["iconName"] = "prisence-dont_disturb";
-var PrisenceDontDisturb_default = PrisenceDontDisturb;
+PresenceOffline.displayName = "PresenceOffline";
+PresenceOffline["iconName"] = "presence-offline";
+var PresenceOffline_default = PresenceOffline;
 
-// ../juno-icon/src/PrisenceOffline.tsx
+// ../juno-icon/src/Previous.tsx
 import {
   createElement as createElement461
 } from "react";
 import { forwardRef as forwardRef442, memo as memo350 } from "react";
-var PrisenceOffline = memo350(forwardRef442((props, ref2) => /* @__PURE__ */ createElement461("svg", {
+var Previous = memo350(forwardRef442((props, ref2) => /* @__PURE__ */ createElement461("svg", {
   viewBox: "0 0 32 32",
   xmlns: "http://www.w3.org/2000/svg",
   ref: ref2,
   ...props
 }, /* @__PURE__ */ createElement461("path", {
-  d: "M16 2a14.002 14.002 0 0 1 14 14c0 7.732-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 5.6a8.4 8.4 0 1 0 0 16.8 8.4 8.4 0 0 0 0-16.8z"
+  d: "M14.899 6.101a.999.999 0 0 1 0 1.414L7.413 15h19.586a1 1 0 0 1 0 2H7.411l7.488 7.486a.999.999 0 1 1-1.414 1.414l-9.192-9.192a.999.999 0 0 1 0-1.414l9.192-9.192a.999.999 0 0 1 1.414 0z"
 }))));
-PrisenceOffline.displayName = "PrisenceOffline";
-PrisenceOffline["iconName"] = "prisence-offline";
-var PrisenceOffline_default = PrisenceOffline;
+Previous.displayName = "Previous";
+Previous["iconName"] = "previous";
+var Previous_default = Previous;
 
 // ../juno-icon/src/Quote.tsx
 import {
