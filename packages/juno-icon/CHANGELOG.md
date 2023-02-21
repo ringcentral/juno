@@ -1,4 +1,11 @@
 
+## [1.30.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.29.0...juno-icon-v1.30.0) (2023-02-21)
+
+
+### Features
+
+* **Icon:** add new Icons AdvancedSetting, Billing, CalendarDay, CalendarMonth, CalendarWeek, Features, FolderBorder, Recent, WhatIsNew ([dffcd50](https://github.com/ringcentral/juno/commit/dffcd50181003f471cedba708160da582d090a40))
+
 ## [1.29.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.28.0...juno-icon-v1.29.0) (2023-02-20)
 
 
