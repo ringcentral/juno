@@ -25,14 +25,48 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   background: #939393;
 }
 
+.c1 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <div
   className="c0 "
-/>
+>
+  <div
+    className="c1"
+    size="xsmall"
+  />
+</div>
 `;
 
 exports[`Storyshots 🚀 Cleanup Components/Presence Presence Examples 1`] = `
 Array [
-  .c1 {
+  .c4 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: inherit;
+  color: #FFFFFF;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -56,7 +90,18 @@ Array [
   background: #3C9949;
 }
 
-.c2 {
+.c1 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c1 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -80,7 +125,18 @@ Array [
   background: #3C9949;
 }
 
-.c3 {
+.c5 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c5 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -104,31 +160,12 @@ Array [
   background: #3C9949;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 3px solid #FFFFFF;
-  background: #3C9949;
+.c6 .c2 svg {
+  width: 6px;
+  height: 6px;
 }
 
-.c5 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -148,11 +185,16 @@ Array [
   box-sizing: content-box;
   width: 14px;
   height: 14px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #3C9949;
 }
 
-.c6 {
+.c7 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -172,8 +214,161 @@ Array [
   box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #3C9949;
+}
+
+.c8 .c2 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c10 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c10 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c11 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c11 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c12 .c2 svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c13 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c14 .c2 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c15 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c15 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c16 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c16 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c17 .c2 svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c18 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c19 .c2 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c20 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c20 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c21 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c21 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c22 .c2 svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c23 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c24 .c2 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c25 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c25 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c26 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c26 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c27 .c2 svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c28 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c29 .c2 svg {
+  width: 12px;
+  height: 12px;
 }
 
 .c0 {
@@ -184,7 +379,7 @@ Array [
   padding: 10px;
 }
 
-.c7 {
+.c9 {
   margin-left: 5px;
   color: #121212;
 }
@@ -194,24 +389,114 @@ Array [
   >
     <div
       className="c1 "
-    />
-    <div
-      className="c2 "
-    />
-    <div
-      className="c3 "
-    />
-    <div
-      className="c4 "
-    />
+    >
+      <span
+        className="c2 c3 presence-available icon"
+      >
+        <svg
+          className="c4"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m29.253 7.261-11.147 20.9A3.452 3.452 0 0 1 15.737 30h-.641a3.345 3.345 0 0 1-2.146-.836l-9.753-8.36a3.483 3.483 0 0 1 3.734-5.797c.227.137.434.306.613.502l6.465 5.573L23.121 4a3.483 3.483 0 0 1 4.626-1.672 3.456 3.456 0 0 1 1.672 4.625l-.167.334v-.028z"
+          />
+        </svg>
+        
+      </span>
+    </div>
     <div
       className="c5 "
-    />
+    >
+      <span
+        className="c2 c3 presence-available icon"
+      >
+        <svg
+          className="c4"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m29.253 7.261-11.147 20.9A3.452 3.452 0 0 1 15.737 30h-.641a3.345 3.345 0 0 1-2.146-.836l-9.753-8.36a3.483 3.483 0 0 1 3.734-5.797c.227.137.434.306.613.502l6.465 5.573L23.121 4a3.483 3.483 0 0 1 4.626-1.672 3.456 3.456 0 0 1 1.672 4.625l-.167.334v-.028z"
+          />
+        </svg>
+        
+      </span>
+    </div>
     <div
       className="c6 "
-    />
+    >
+      <span
+        className="c2 c3 presence-available icon"
+      >
+        <svg
+          className="c4"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m29.253 7.261-11.147 20.9A3.452 3.452 0 0 1 15.737 30h-.641a3.345 3.345 0 0 1-2.146-.836l-9.753-8.36a3.483 3.483 0 0 1 3.734-5.797c.227.137.434.306.613.502l6.465 5.573L23.121 4a3.483 3.483 0 0 1 4.626-1.672 3.456 3.456 0 0 1 1.672 4.625l-.167.334v-.028z"
+          />
+        </svg>
+        
+      </span>
+    </div>
+    <div
+      className="c6 "
+    >
+      <span
+        className="c2 c3 presence-available icon"
+      >
+        <svg
+          className="c4"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m29.253 7.261-11.147 20.9A3.452 3.452 0 0 1 15.737 30h-.641a3.345 3.345 0 0 1-2.146-.836l-9.753-8.36a3.483 3.483 0 0 1 3.734-5.797c.227.137.434.306.613.502l6.465 5.573L23.121 4a3.483 3.483 0 0 1 4.626-1.672 3.456 3.456 0 0 1 1.672 4.625l-.167.334v-.028z"
+          />
+        </svg>
+        
+      </span>
+    </div>
+    <div
+      className="c7 "
+    >
+      <span
+        className="c2 c3 presence-available icon"
+      >
+        <svg
+          className="c4"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m29.253 7.261-11.147 20.9A3.452 3.452 0 0 1 15.737 30h-.641a3.345 3.345 0 0 1-2.146-.836l-9.753-8.36a3.483 3.483 0 0 1 3.734-5.797c.227.137.434.306.613.502l6.465 5.573L23.121 4a3.483 3.483 0 0 1 4.626-1.672 3.456 3.456 0 0 1 1.672 4.625l-.167.334v-.028z"
+          />
+        </svg>
+        
+      </span>
+    </div>
+    <div
+      className="c8 "
+    >
+      <span
+        className="c2 c3 presence-available icon"
+      >
+        <svg
+          className="c4"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m29.253 7.261-11.147 20.9A3.452 3.452 0 0 1 15.737 30h-.641a3.345 3.345 0 0 1-2.146-.836l-9.753-8.36a3.483 3.483 0 0 1 3.734-5.797c.227.137.434.306.613.502l6.465 5.573L23.121 4a3.483 3.483 0 0 1 4.626-1.672 3.456 3.456 0 0 1 1.672 4.625l-.167.334v-.028z"
+          />
+        </svg>
+        
+      </span>
+    </div>
     <span
-      className="c7"
+      className="c9"
     >
       available
     </span>
@@ -351,15 +636,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 3px solid #FFFFFF;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #FFFFFF;
   background: #3C9949;
 }
 
 .c7 .c2 svg {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
 }
 
 .c8 {
@@ -380,44 +665,26 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 14px;
-  height: 14px;
-  border: 3px solid #FFFFFF;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #FFFFFF;
   background: #3C9949;
 }
 
 .c8 .c2 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 18px;
-  height: 18px;
-  border: 3px solid #FFFFFF;
-  background: #3C9949;
-}
-
-.c9 .c2 svg {
   width: 12px;
   height: 12px;
+}
+
+.c10 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c10 .c2 svg {
+  width: 10px;
+  height: 10px;
 }
 
 .c11 .c2 {
@@ -431,25 +698,25 @@ Array [
   height: 10px;
 }
 
-.c12 .c2 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
+.c12 .c2 svg {
+  width: 6px;
+  height: 6px;
 }
 
-.c12 .c2 svg {
+.c13 .c2 svg {
   width: 10px;
   height: 10px;
 }
 
-.c13 .c2 svg {
-  width: 6px;
-  height: 6px;
+.c14 .c2 svg {
+  width: 12px;
+  height: 12px;
 }
 
-.c14 .c2 svg {
-  width: 6px;
-  height: 6px;
+.c15 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
 }
 
 .c15 .c2 svg {
@@ -457,26 +724,20 @@ Array [
   height: 10px;
 }
 
-.c16 .c2 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c17 .c2 {
+.c16 .c2 {
   -webkit-transform: scale(0.5);
   -ms-transform: scale(0.5);
   transform: scale(0.5);
 }
 
-.c17 .c2 svg {
+.c16 .c2 svg {
   width: 10px;
   height: 10px;
 }
 
-.c18 .c2 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
+.c17 .c2 svg {
+  width: 6px;
+  height: 6px;
 }
 
 .c18 .c2 svg {
@@ -485,13 +746,25 @@ Array [
 }
 
 .c19 .c2 svg {
-  width: 6px;
-  height: 6px;
+  width: 12px;
+  height: 12px;
+}
+
+.c20 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
 }
 
 .c20 .c2 svg {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
+}
+
+.c21 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
 }
 
 .c21 .c2 svg {
@@ -500,14 +773,8 @@ Array [
 }
 
 .c22 .c2 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c23 .c2 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
+  width: 6px;
+  height: 6px;
 }
 
 .c23 .c2 svg {
@@ -515,75 +782,44 @@ Array [
   height: 10px;
 }
 
-.c24 .c2 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
 .c24 .c2 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c25 .c2 svg {
-  width: 6px;
-  height: 6px;
-}
-
-.c26 .c2 svg {
-  width: 6px;
-  height: 6px;
-}
-
-.c27 .c2 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c28 .c2 svg {
   width: 12px;
   height: 12px;
 }
 
-.c29 .c2 {
+.c25 .c2 {
   -webkit-transform: scale(0.5);
   -ms-transform: scale(0.5);
   transform: scale(0.5);
+}
+
+.c25 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c26 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c26 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c27 .c2 svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c28 .c2 svg {
+  width: 10px;
+  height: 10px;
 }
 
 .c29 .c2 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c30 .c2 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c30 .c2 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c31 .c2 svg {
-  width: 6px;
-  height: 6px;
-}
-
-.c32 .c2 svg {
-  width: 6px;
-  height: 6px;
-}
-
-.c33 .c2 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c34 .c2 svg {
   width: 12px;
   height: 12px;
 }
@@ -596,7 +832,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c9 {
   margin-left: 5px;
   color: #121212;
 }
@@ -624,6 +860,24 @@ Array [
     </div>
     <div
       className="c5 "
+    >
+      <span
+        className="c2 c3 attended icon"
+      >
+        <svg
+          className="c4"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M30 10.393L24.509 5 12.96 16.253l-5.459-5.301L2 16.314 12.963 27z"
+          />
+        </svg>
+        
+      </span>
+    </div>
+    <div
+      className="c6 "
     >
       <span
         className="c2 c3 attended icon"
@@ -694,26 +948,8 @@ Array [
         
       </span>
     </div>
-    <div
-      className="c9 "
-    >
-      <span
-        className="c2 c3 attended icon"
-      >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M30 10.393L24.509 5 12.96 16.253l-5.459-5.301L2 16.314 12.963 27z"
-          />
-        </svg>
-        
-      </span>
-    </div>
     <span
-      className="c10"
+      className="c9"
     >
       attended
     </span>
@@ -736,6 +972,17 @@ Array [
   color: #FFFFFF;
 }
 
+.c10 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c10 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
 .c11 .c2 {
   -webkit-transform: scale(0.5);
   -ms-transform: scale(0.5);
@@ -747,33 +994,17 @@ Array [
   height: 10px;
 }
 
-.c12 .c2 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
 .c12 .c2 svg {
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
 }
 
 .c13 .c2 svg {
-  width: 6px;
-  height: 6px;
-}
-
-.c14 .c2 svg {
-  width: 6px;
-  height: 6px;
-}
-
-.c15 .c2 svg {
   width: 10px;
   height: 10px;
 }
 
-.c16 .c2 svg {
+.c14 .c2 svg {
   width: 12px;
   height: 12px;
 }
@@ -895,15 +1126,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 3px solid #FFFFFF;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #FFFFFF;
   background: #E6413C;
 }
 
 .c7 .c2 svg {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
 }
 
 .c8 {
@@ -924,61 +1155,42 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 14px;
-  height: 14px;
-  border: 3px solid #FFFFFF;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #FFFFFF;
   background: #E6413C;
 }
 
 .c8 .c2 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 18px;
-  height: 18px;
-  border: 3px solid #FFFFFF;
-  background: #E6413C;
-}
-
-.c9 .c2 svg {
   width: 12px;
   height: 12px;
 }
 
-.c17 .c2 {
+.c15 .c2 {
   -webkit-transform: scale(0.5);
   -ms-transform: scale(0.5);
   transform: scale(0.5);
 }
 
-.c17 .c2 svg {
+.c15 .c2 svg {
   width: 10px;
   height: 10px;
 }
 
-.c18 .c2 {
+.c16 .c2 {
   -webkit-transform: scale(0.5);
   -ms-transform: scale(0.5);
   transform: scale(0.5);
+}
+
+.c16 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c17 .c2 svg {
+  width: 6px;
+  height: 6px;
 }
 
 .c18 .c2 svg {
@@ -987,13 +1199,25 @@ Array [
 }
 
 .c19 .c2 svg {
-  width: 6px;
-  height: 6px;
+  width: 12px;
+  height: 12px;
+}
+
+.c20 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
 }
 
 .c20 .c2 svg {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
+}
+
+.c21 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
 }
 
 .c21 .c2 svg {
@@ -1002,14 +1226,8 @@ Array [
 }
 
 .c22 .c2 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c23 .c2 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
+  width: 6px;
+  height: 6px;
 }
 
 .c23 .c2 svg {
@@ -1017,75 +1235,44 @@ Array [
   height: 10px;
 }
 
-.c24 .c2 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
 .c24 .c2 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c25 .c2 svg {
-  width: 6px;
-  height: 6px;
-}
-
-.c26 .c2 svg {
-  width: 6px;
-  height: 6px;
-}
-
-.c27 .c2 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c28 .c2 svg {
   width: 12px;
   height: 12px;
 }
 
-.c29 .c2 {
+.c25 .c2 {
   -webkit-transform: scale(0.5);
   -ms-transform: scale(0.5);
   transform: scale(0.5);
+}
+
+.c25 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c26 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c26 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c27 .c2 svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c28 .c2 svg {
+  width: 10px;
+  height: 10px;
 }
 
 .c29 .c2 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c30 .c2 {
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.c30 .c2 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c31 .c2 svg {
-  width: 6px;
-  height: 6px;
-}
-
-.c32 .c2 svg {
-  width: 6px;
-  height: 6px;
-}
-
-.c33 .c2 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c34 .c2 svg {
   width: 12px;
   height: 12px;
 }
@@ -1098,7 +1285,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c9 {
   margin-left: 5px;
   color: #121212;
 }
@@ -1126,6 +1313,24 @@ Array [
     </div>
     <div
       className="c5 "
+    >
+      <span
+        className="c2 c3 unattended icon"
+      >
+        <svg
+          className="c4"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M24.27 2L16 10.271 7.73 2 2 7.73 10.271 16 2 24.27 7.73 30 16 21.729 24.27 30 30 24.27 21.729 16 30 7.73z"
+          />
+        </svg>
+        
+      </span>
+    </div>
+    <div
+      className="c6 "
     >
       <span
         className="c2 c3 unattended icon"
@@ -1196,26 +1401,8 @@ Array [
         
       </span>
     </div>
-    <div
-      className="c9 "
-    >
-      <span
-        className="c2 c3 unattended icon"
-      >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M24.27 2L16 10.271 7.73 2 2 7.73 10.271 16 2 24.27 7.73 30 16 21.729 24.27 30 30 24.27 21.729 16 30 7.73z"
-          />
-        </svg>
-        
-      </span>
-    </div>
     <span
-      className="c10"
+      className="c9"
     >
       unAttended
     </span>
@@ -1310,9 +1497,9 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 3px solid #FFFFFF;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #FFFFFF;
   background: #E6413C;
 }
 
@@ -1334,33 +1521,9 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 14px;
-  height: 14px;
-  border: 3px solid #FFFFFF;
-  background: #E6413C;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #E6413C;
 }
 
@@ -1372,7 +1535,7 @@ Array [
   padding: 10px;
 }
 
-.c7 {
+.c6 {
   margin-left: 5px;
   color: #121212;
 }
@@ -1390,16 +1553,16 @@ Array [
       className="c3 "
     />
     <div
+      className="c3 "
+    />
+    <div
       className="c4 "
     />
     <div
       className="c5 "
     />
-    <div
-      className="c6 "
-    />
     <span
-      className="c7"
+      className="c6"
     >
       onCall
     </span>
@@ -1494,9 +1657,9 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 3px solid #FFFFFF;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #FFFFFF;
   background: #E6413C;
 }
 
@@ -1518,33 +1681,9 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 14px;
-  height: 14px;
-  border: 3px solid #FFFFFF;
-  background: #E6413C;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #E6413C;
 }
 
@@ -1556,7 +1695,7 @@ Array [
   padding: 10px;
 }
 
-.c7 {
+.c6 {
   margin-left: 5px;
   color: #121212;
 }
@@ -1574,42 +1713,73 @@ Array [
       className="c3 "
     />
     <div
+      className="c3 "
+    />
+    <div
       className="c4 "
     />
     <div
       className="c5 "
     />
-    <div
-      className="c6 "
-    />
     <span
-      className="c7"
+      className="c6"
     >
       inMeeting
     </span>
   </div>,
-  .c2 {
-  width: 4px;
-  height: 2px;
-  background: #FFFFFF;
+  .c4 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
 }
 
-.c4 {
-  width: 6px;
-  height: 2px;
-  background: #FFFFFF;
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: inherit;
+  color: #FFFFFF;
 }
 
-.c8 {
+.c10 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c10 .c2 svg {
   width: 10px;
-  height: 4px;
-  background: #FFFFFF;
+  height: 10px;
 }
 
-.c10 {
-  width: 14px;
-  height: 4px;
-  background: #FFFFFF;
+.c11 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c11 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c12 .c2 svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c13 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c14 .c2 svg {
+  width: 12px;
+  height: 12px;
 }
 
 .c1 {
@@ -1636,7 +1806,18 @@ Array [
   background: #E6413C;
 }
 
-.c3 {
+.c1 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c1 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1660,7 +1841,18 @@ Array [
   background: #E6413C;
 }
 
-.c5 {
+.c5 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c5 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1684,28 +1876,9 @@ Array [
   background: #E6413C;
 }
 
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 3px solid #FFFFFF;
-  background: #E6413C;
+.c6 .c2 svg {
+  width: 6px;
+  height: 6px;
 }
 
 .c7 {
@@ -1728,11 +1901,16 @@ Array [
   box-sizing: content-box;
   width: 14px;
   height: 14px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #E6413C;
 }
 
-.c9 {
+.c7 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1752,8 +1930,124 @@ Array [
   box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #E6413C;
+}
+
+.c8 .c2 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c15 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c15 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c16 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c16 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c17 .c2 svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c18 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c19 .c2 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c20 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c20 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c21 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c21 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c22 .c2 svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c23 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c24 .c2 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c25 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c25 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c26 .c2 {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c26 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c27 .c2 svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c28 .c2 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c29 .c2 svg {
+  width: 12px;
+  height: 12px;
 }
 
 .c0 {
@@ -1764,7 +2058,7 @@ Array [
   padding: 10px;
 }
 
-.c11 {
+.c9 {
   margin-left: 5px;
   color: #121212;
 }
@@ -1775,53 +2069,113 @@ Array [
     <div
       className="c1 "
     >
-      <div
-        className="c2"
-        size="xxsmall"
-      />
-    </div>
-    <div
-      className="c3 "
-    >
-      <div
-        className="c4"
-        size="xsmall"
-      />
+      <span
+        className="c2 c3 presence-dnd icon"
+      >
+        <svg
+          className="c4"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M27.083 18.833H4.916a2.917 2.917 0 0 1 0-5.834h22.167a2.917 2.917 0 0 1 0 5.834z"
+          />
+        </svg>
+        
+      </span>
     </div>
     <div
       className="c5 "
     >
-      <div
-        className="c4"
-        size="small"
-      />
+      <span
+        className="c2 c3 presence-dnd icon"
+      >
+        <svg
+          className="c4"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M27.083 18.833H4.916a2.917 2.917 0 0 1 0-5.834h22.167a2.917 2.917 0 0 1 0 5.834z"
+          />
+        </svg>
+        
+      </span>
     </div>
     <div
       className="c6 "
     >
-      <div
-        className="c4"
-        size="medium"
-      />
+      <span
+        className="c2 c3 presence-dnd icon"
+      >
+        <svg
+          className="c4"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M27.083 18.833H4.916a2.917 2.917 0 0 1 0-5.834h22.167a2.917 2.917 0 0 1 0 5.834z"
+          />
+        </svg>
+        
+      </span>
+    </div>
+    <div
+      className="c6 "
+    >
+      <span
+        className="c2 c3 presence-dnd icon"
+      >
+        <svg
+          className="c4"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M27.083 18.833H4.916a2.917 2.917 0 0 1 0-5.834h22.167a2.917 2.917 0 0 1 0 5.834z"
+          />
+        </svg>
+        
+      </span>
     </div>
     <div
       className="c7 "
     >
-      <div
-        className="c8"
-        size="large"
-      />
+      <span
+        className="c2 c3 presence-dnd icon"
+      >
+        <svg
+          className="c4"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M27.083 18.833H4.916a2.917 2.917 0 0 1 0-5.834h22.167a2.917 2.917 0 0 1 0 5.834z"
+          />
+        </svg>
+        
+      </span>
     </div>
     <div
-      className="c9 "
+      className="c8 "
     >
-      <div
-        className="c10"
-        size="xlarge"
-      />
+      <span
+        className="c2 c3 presence-dnd icon"
+      >
+        <svg
+          className="c4"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M27.083 18.833H4.916a2.917 2.917 0 0 1 0-5.834h22.167a2.917 2.917 0 0 1 0 5.834z"
+          />
+        </svg>
+        
+      </span>
     </div>
     <span
-      className="c11"
+      className="c9"
     >
       DND
     </span>
@@ -1916,9 +2270,9 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 3px solid #FFFFFF;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #FFFFFF;
   background: #E6413C;
 }
 
@@ -1940,33 +2294,9 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 14px;
-  height: 14px;
-  border: 3px solid #FFFFFF;
-  background: #E6413C;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #E6413C;
 }
 
@@ -1978,7 +2308,7 @@ Array [
   padding: 10px;
 }
 
-.c7 {
+.c6 {
   margin-left: 5px;
   color: #121212;
 }
@@ -1996,16 +2326,16 @@ Array [
       className="c3 "
     />
     <div
+      className="c3 "
+    />
+    <div
       className="c4 "
     />
     <div
       className="c5 "
     />
-    <div
-      className="c6 "
-    />
     <span
-      className="c7"
+      className="c6"
     >
       busy
     </span>
@@ -2034,7 +2364,7 @@ Array [
   background: #939393;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2054,30 +2384,6 @@ Array [
   box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 2px solid #FFFFFF;
-  background: #939393;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
   border: 2px solid #FFFFFF;
   background: #939393;
 }
@@ -2102,31 +2408,7 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 3px solid #FFFFFF;
-  background: #939393;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 14px;
-  height: 14px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #939393;
 }
 
@@ -2148,10 +2430,78 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #FFFFFF;
+  background: #939393;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #939393;
+}
+
+.c2 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c7 {
+  height: 12px;
+  width: 12px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c9 {
+  height: 16px;
+  width: 16px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c0 {
@@ -2162,7 +2512,7 @@ Array [
   padding: 10px;
 }
 
-.c7 {
+.c10 {
   margin-left: 5px;
   color: #121212;
 }
@@ -2172,24 +2522,54 @@ Array [
   >
     <div
       className="c1 "
-    />
-    <div
-      className="c2 "
-    />
+    >
+      <div
+        className="c2"
+        size="xxsmall"
+      />
+    </div>
     <div
       className="c3 "
-    />
+    >
+      <div
+        className="c2"
+        size="xsmall"
+      />
+    </div>
     <div
       className="c4 "
-    />
+    >
+      <div
+        className="c5"
+        size="small"
+      />
+    </div>
     <div
-      className="c5 "
-    />
+      className="c4 "
+    >
+      <div
+        className="c5"
+        size="medium"
+      />
+    </div>
     <div
       className="c6 "
-    />
+    >
+      <div
+        className="c7"
+        size="large"
+      />
+    </div>
+    <div
+      className="c8 "
+    >
+      <div
+        className="c9"
+        size="xlarge"
+      />
+    </div>
     <span
-      className="c7"
+      className="c10"
     >
       unavailable
     </span>
@@ -2218,7 +2598,7 @@ Array [
   background: #939393;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2238,30 +2618,6 @@ Array [
   box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 2px solid #FFFFFF;
-  background: #939393;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
   border: 2px solid #FFFFFF;
   background: #939393;
 }
@@ -2286,31 +2642,7 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 3px solid #FFFFFF;
-  background: #939393;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 14px;
-  height: 14px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #939393;
 }
 
@@ -2332,10 +2664,78 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #FFFFFF;
+  background: #939393;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #939393;
+}
+
+.c2 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c7 {
+  height: 12px;
+  width: 12px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c9 {
+  height: 16px;
+  width: 16px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c0 {
@@ -2346,7 +2746,7 @@ Array [
   padding: 10px;
 }
 
-.c7 {
+.c10 {
   margin-left: 5px;
   color: #121212;
 }
@@ -2356,24 +2756,54 @@ Array [
   >
     <div
       className="c1 "
-    />
-    <div
-      className="c2 "
-    />
+    >
+      <div
+        className="c2"
+        size="xxsmall"
+      />
+    </div>
     <div
       className="c3 "
-    />
+    >
+      <div
+        className="c2"
+        size="xsmall"
+      />
+    </div>
     <div
       className="c4 "
-    />
+    >
+      <div
+        className="c5"
+        size="small"
+      />
+    </div>
     <div
-      className="c5 "
-    />
+      className="c4 "
+    >
+      <div
+        className="c5"
+        size="medium"
+      />
+    </div>
     <div
       className="c6 "
-    />
+    >
+      <div
+        className="c7"
+        size="large"
+      />
+    </div>
+    <div
+      className="c8 "
+    >
+      <div
+        className="c9"
+        size="xlarge"
+      />
+    </div>
     <span
-      className="c7"
+      className="c10"
     >
       notReady
     </span>
@@ -2402,7 +2832,7 @@ Array [
   background: #939393;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2422,30 +2852,6 @@ Array [
   box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 2px solid #FFFFFF;
-  background: #939393;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
   border: 2px solid #FFFFFF;
   background: #939393;
 }
@@ -2470,31 +2876,7 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 3px solid #FFFFFF;
-  background: #939393;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 14px;
-  height: 14px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #939393;
 }
 
@@ -2516,10 +2898,78 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #FFFFFF;
+  background: #939393;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #939393;
+}
+
+.c2 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c7 {
+  height: 12px;
+  width: 12px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c9 {
+  height: 16px;
+  width: 16px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c0 {
@@ -2530,7 +2980,7 @@ Array [
   padding: 10px;
 }
 
-.c7 {
+.c10 {
   margin-left: 5px;
   color: #121212;
 }
@@ -2540,24 +2990,54 @@ Array [
   >
     <div
       className="c1 "
-    />
-    <div
-      className="c2 "
-    />
+    >
+      <div
+        className="c2"
+        size="xxsmall"
+      />
+    </div>
     <div
       className="c3 "
-    />
+    >
+      <div
+        className="c2"
+        size="xsmall"
+      />
+    </div>
     <div
       className="c4 "
-    />
+    >
+      <div
+        className="c5"
+        size="small"
+      />
+    </div>
     <div
-      className="c5 "
-    />
+      className="c4 "
+    >
+      <div
+        className="c5"
+        size="medium"
+      />
+    </div>
     <div
       className="c6 "
-    />
+    >
+      <div
+        className="c7"
+        size="large"
+      />
+    </div>
+    <div
+      className="c8 "
+    >
+      <div
+        className="c9"
+        size="xlarge"
+      />
+    </div>
     <span
-      className="c7"
+      className="c10"
     >
       offline
     </span>
@@ -2586,7 +3066,7 @@ Array [
   background: #066FAC;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2606,30 +3086,6 @@ Array [
   box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 2px solid #FFFFFF;
-  background: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
   border: 2px solid #FFFFFF;
   background: #066FAC;
 }
@@ -2654,31 +3110,7 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 3px solid #FFFFFF;
-  background: #066FAC;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 14px;
-  height: 14px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -2700,10 +3132,78 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #FFFFFF;
+  background: #066FAC;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c2 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c7 {
+  height: 12px;
+  width: 12px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c9 {
+  height: 16px;
+  width: 16px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c0 {
@@ -2714,7 +3214,7 @@ Array [
   padding: 10px;
 }
 
-.c7 {
+.c10 {
   margin-left: 5px;
   color: #121212;
 }
@@ -2724,24 +3224,54 @@ Array [
   >
     <div
       className="c1 "
-    />
-    <div
-      className="c2 "
-    />
+    >
+      <div
+        className="c2"
+        size="xxsmall"
+      />
+    </div>
     <div
       className="c3 "
-    />
+    >
+      <div
+        className="c2"
+        size="xsmall"
+      />
+    </div>
     <div
       className="c4 "
-    />
+    >
+      <div
+        className="c5"
+        size="small"
+      />
+    </div>
     <div
-      className="c5 "
-    />
+      className="c4 "
+    >
+      <div
+        className="c5"
+        size="medium"
+      />
+    </div>
     <div
       className="c6 "
-    />
+    >
+      <div
+        className="c7"
+        size="large"
+      />
+    </div>
+    <div
+      className="c8 "
+    >
+      <div
+        className="c9"
+        size="xlarge"
+      />
+    </div>
     <span
-      className="c7"
+      className="c10"
     >
       Custom Color with theme method
     </span>
@@ -2770,7 +3300,7 @@ Array [
   background: yellow;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2790,30 +3320,6 @@ Array [
   box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 2px solid #FFFFFF;
-  background: yellow;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
   border: 2px solid #FFFFFF;
   background: yellow;
 }
@@ -2838,31 +3344,7 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 3px solid #FFFFFF;
-  background: yellow;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 14px;
-  height: 14px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: yellow;
 }
 
@@ -2884,10 +3366,78 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #FFFFFF;
+  background: yellow;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: yellow;
+}
+
+.c2 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c7 {
+  height: 12px;
+  width: 12px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c9 {
+  height: 16px;
+  width: 16px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c0 {
@@ -2898,7 +3448,7 @@ Array [
   padding: 10px;
 }
 
-.c7 {
+.c10 {
   margin-left: 5px;
   color: #121212;
 }
@@ -2908,24 +3458,54 @@ Array [
   >
     <div
       className="c1 "
-    />
-    <div
-      className="c2 "
-    />
+    >
+      <div
+        className="c2"
+        size="xxsmall"
+      />
+    </div>
     <div
       className="c3 "
-    />
+    >
+      <div
+        className="c2"
+        size="xsmall"
+      />
+    </div>
     <div
       className="c4 "
-    />
+    >
+      <div
+        className="c5"
+        size="small"
+      />
+    </div>
     <div
-      className="c5 "
-    />
+      className="c4 "
+    >
+      <div
+        className="c5"
+        size="medium"
+      />
+    </div>
     <div
       className="c6 "
-    />
+    >
+      <div
+        className="c7"
+        size="large"
+      />
+    </div>
+    <div
+      className="c8 "
+    >
+      <div
+        className="c9"
+        size="xlarge"
+      />
+    </div>
     <span
-      className="c7"
+      className="c10"
     >
       Custom Color with css color
     </span>

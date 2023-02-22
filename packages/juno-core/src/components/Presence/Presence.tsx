@@ -1,4 +1,4 @@
-import React, { forwardRef, useMemo } from 'react';
+import React, { forwardRef } from 'react';
 
 import {
   RcBaseSize,
@@ -8,7 +8,14 @@ import {
 } from '../../foundation';
 import { RcIcon } from '../Icon';
 import { Attended, Unattended } from './assets';
-import { StyledDND, StyledPresence } from './styles';
+import { StyledPresence } from './styles';
+import {
+  PresenceAvailable,
+  PresenceDnd,
+  PresenceOffline,
+} from '@ringcentral/juno-icon';
+import { UnAvailableIconType } from './utils';
+import { CircleDiv } from './styles/StyledCircle';
 
 type RcPresenceType =
   | 'notReady'
@@ -41,24 +48,34 @@ const _RcPresence = forwardRef<any, RcPresenceProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcPresence' });
   const { type, size } = props;
 
-  const innerChildren = useMemo(() => {
+  const symbol = (() => {
     switch (type) {
       case 'DND':
-        return <StyledDND size={size} />;
+        return PresenceDnd;
+      case 'available':
+        return PresenceAvailable;
+      case 'offline':
+      case 'unavailable':
+      case 'notReady':
+        return PresenceOffline;
       case 'attended':
-        return <RcIcon symbol={Attended} color="neutral.f01" size="inherit" />;
+        return Attended;
       case 'unAttended':
-        return (
-          <RcIcon symbol={Unattended} color="neutral.f01" size="inherit" />
-        );
+        return Unattended;
       default:
         return null;
     }
-  }, [size, type]);
+  })();
+
+  const showUnAvailable = UnAvailableIconType[type!];
+
+  const symbolElm = symbol ? (
+    <RcIcon symbol={symbol} color="neutral.f01" size="inherit" />
+  ) : null;
 
   return (
     <StyledPresence ref={ref} {...props}>
-      {innerChildren}
+      {showUnAvailable ? <CircleDiv size={size!} /> : symbolElm}
     </StyledPresence>
   );
 });

@@ -10,7 +10,7 @@ import {
 import { RcIcon } from '../../Icon';
 import { RcPresenceProps } from '../Presence';
 import {
-  RcPresenceAvailableIconSizes,
+  RcPresenceIconSizes,
   RcPresenceColors,
   RcPresenceSizes,
 } from '../utils';
@@ -32,10 +32,10 @@ export const StyledPresence = styled(_StyledPresence)`
   ${({ size, borderSize, type, color }) => {
     const sizeValue = px(RcPresenceSizes[size!][0]);
 
-    const availableSize = RcPresenceAvailableIconSizes[size!];
+    const initSizeMap = RcPresenceIconSizes[size!];
 
-    const iconSizeValue = px(availableSize[0]);
-    const scaleRate = availableSize[1];
+    const iconSizeValue = px(initSizeMap[0]);
+    const scaleRate = initSizeMap[1];
 
     return css`
       width: ${sizeValue};

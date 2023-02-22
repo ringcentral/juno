@@ -627,6 +627,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -705,7 +716,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xxsmall"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -732,6 +748,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -810,7 +837,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xsmall"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -837,6 +869,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -915,7 +958,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="small"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -938,8 +986,19 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -1020,7 +1079,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="medium"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -1043,8 +1107,19 @@ Array [
   box-sizing: content-box;
   width: 14px;
   height: 14px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 12px;
+  width: 12px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -1125,7 +1200,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="large"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -1148,8 +1228,19 @@ Array [
   box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 16px;
+  width: 16px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -1230,7 +1321,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xlarge"
+        />
+      </div>
     </div>
   </div>,
   <br />,
@@ -1258,6 +1354,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -1336,7 +1443,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xxsmall"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -1363,6 +1475,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -1441,7 +1564,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xsmall"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -1468,6 +1596,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -1546,7 +1685,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="small"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -1569,8 +1713,19 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -1651,7 +1806,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="medium"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -1674,8 +1834,19 @@ Array [
   box-sizing: content-box;
   width: 14px;
   height: 14px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 12px;
+  width: 12px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -1756,7 +1927,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="large"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -1779,8 +1955,19 @@ Array [
   box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 16px;
+  width: 16px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -1861,7 +2048,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xlarge"
+        />
+      </div>
     </div>
   </div>,
   <br />,
@@ -1889,6 +2081,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -1967,7 +2170,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xxsmall"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -1994,6 +2202,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2072,7 +2291,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xsmall"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -2099,6 +2323,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2177,7 +2412,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="small"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -2200,8 +2440,19 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -2282,7 +2533,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="medium"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -2305,8 +2561,19 @@ Array [
   box-sizing: content-box;
   width: 14px;
   height: 14px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 12px;
+  width: 12px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -2387,7 +2654,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="large"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -2410,8 +2682,19 @@ Array [
   box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 16px;
+  width: 16px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -2492,7 +2775,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xlarge"
+        />
+      </div>
     </div>
   </div>,
   <br />,
@@ -2520,6 +2808,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2598,7 +2897,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xxsmall"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -2625,6 +2929,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2703,7 +3018,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xsmall"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -2730,6 +3050,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2808,7 +3139,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="small"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -2831,8 +3167,19 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -2913,7 +3260,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="medium"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -2936,8 +3288,19 @@ Array [
   box-sizing: content-box;
   width: 14px;
   height: 14px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 12px;
+  width: 12px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -3018,7 +3381,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="large"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -3041,8 +3409,19 @@ Array [
   box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 16px;
+  width: 16px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -3123,7 +3502,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xlarge"
+        />
+      </div>
     </div>
   </div>,
   <br />,
@@ -3151,6 +3535,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -3229,7 +3624,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xxsmall"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -3256,6 +3656,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -3334,7 +3745,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xsmall"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -3361,6 +3777,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -3439,7 +3866,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="small"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -3462,8 +3894,19 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -3544,7 +3987,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="medium"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -3567,8 +4015,19 @@ Array [
   box-sizing: content-box;
   width: 14px;
   height: 14px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 12px;
+  width: 12px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -3649,7 +4108,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="large"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -3672,8 +4136,19 @@ Array [
   box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 16px;
+  width: 16px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -3754,7 +4229,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xlarge"
+        />
+      </div>
     </div>
   </div>,
   <br />,
@@ -3782,6 +4262,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -3860,7 +4351,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xxsmall"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -3887,6 +4383,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -3965,7 +4472,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xsmall"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -3992,6 +4504,17 @@ Array [
   background: #066FAC;
 }
 
+.c4 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -4070,7 +4593,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="small"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -4093,8 +4621,19 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -4175,7 +4714,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="medium"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -4198,8 +4742,19 @@ Array [
   box-sizing: content-box;
   width: 14px;
   height: 14px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 12px;
+  width: 12px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -4280,7 +4835,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="large"
+        />
+      </div>
     </div>
   </div>,
   .c3 {
@@ -4303,8 +4863,19 @@ Array [
   box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #066FAC;
+}
+
+.c4 {
+  height: 16px;
+  width: 16px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -4385,7 +4956,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="xlarge"
+        />
+      </div>
     </div>
   </div>,
   <br />,
@@ -4393,7 +4969,7 @@ Array [
 `;
 
 exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
-.c10 {
+.c9 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -4402,7 +4978,16 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   pointer-events: none;
 }
 
-.c9 {
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: inherit;
+  color: #FFFFFF;
+}
+
+.c11 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4410,7 +4995,7 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   font-size: 24px;
 }
 
-.c12 {
+.c13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4418,7 +5003,7 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   font-size: 16px;
 }
 
-.c14 {
+.c15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4429,12 +5014,6 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
 .c0 {
   display: inline-block;
   outline: none;
-}
-
-.c6 {
-  width: 6px;
-  height: 2px;
-  background: #FFFFFF;
 }
 
 .c4 {
@@ -4461,18 +5040,18 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   background: #066FAC;
 }
 
-.c4 .c8 {
+.c4 .c7 {
   -webkit-transform: scale(0.5);
   -ms-transform: scale(0.5);
   transform: scale(0.5);
 }
 
-.c4 .c8 svg {
+.c4 .c7 svg {
   width: 10px;
   height: 10px;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4492,13 +5071,24 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #E6413C;
 }
 
-.c5 .c8 svg {
+.c6 .c7 svg {
   width: 6px;
   height: 6px;
+}
+
+.c5 {
+  height: 6px;
+  width: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c2 {
@@ -4542,7 +5132,7 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   height: 100%;
 }
 
-.c7 {
+.c10 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4577,13 +5167,13 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   background-color: #1A70C1;
 }
 
-.c7 > img,
-.c7 > canvas {
+.c10 > img,
+.c10 > canvas {
   width: 100%;
   height: 100%;
 }
 
-.c13 {
+.c14 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4617,8 +5207,8 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   height: 64px;
 }
 
-.c13 > img,
-.c13 > canvas {
+.c14 > img,
+.c14 > canvas {
   width: 100%;
   height: 100%;
 }
@@ -4659,11 +5249,11 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   opacity: 0.76;
 }
 
-.c15 {
+.c16 {
   font-size: 64px;
 }
 
-.c11 {
+.c12 {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -4730,7 +5320,12 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
       >
         <div
           className="c4 "
-        />
+        >
+          <div
+            className="c5"
+            size="xsmall"
+          />
+        </div>
       </div>
     </button>
   </span>
@@ -4751,12 +5346,22 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
       className="c3 RcAvatar-presenceWrapper"
     >
       <div
-        className="c5 "
+        className="c6 "
       >
-        <div
-          className="c6"
-          size="medium"
-        />
+        <span
+          className="c7 c8 presence-dnd icon"
+        >
+          <svg
+            className="c9"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M27.083 18.833H4.916a2.917 2.917 0 0 1 0-5.834h22.167a2.917 2.917 0 0 1 0 5.834z"
+            />
+          </svg>
+          
+        </span>
       </div>
     </div>
   </button>
@@ -4769,13 +5374,13 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
     type="button"
   >
     <div
-      className="c7 RcAvatar-avatarContainer"
+      className="c10 RcAvatar-avatarContainer"
     >
       <span
-        className="c8 c9 default-team-avatar icon"
+        className="c7 c11 default-team-avatar icon"
       >
         <svg
-          className="c10"
+          className="c9"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -4786,13 +5391,13 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
         
       </span>
       <div
-        className="c11 RcAvatar-mask"
+        className="c12 RcAvatar-mask"
       >
         <span
-          className="c8 c12 call-add icon"
+          className="c7 c13 call-add icon"
         >
           <svg
-            className="c10"
+            className="c9"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -4814,13 +5419,13 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
     type="button"
   >
     <div
-      className="c13 RcAvatar-avatarContainer"
+      className="c14 RcAvatar-avatarContainer"
     >
       <span
-        className="c8 c14 c15 call-add icon"
+        className="c7 c15 c16 call-add icon"
       >
         <svg
-          className="c10"
+          className="c9"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -5113,127 +5718,22 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Mask 1`] = `
 
 exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Presence 1`] = `
 Array [
-  .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 3px solid #FFFFFF;
-  background: #3C9949;
+  .c6 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
 }
 
-.c1 {
-  position: relative;
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  line-height: 1;
-  border-radius: 50%;
-  overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  outline: none;
+  font-size: inherit;
   color: #FFFFFF;
-  font-size: 1.25rem;
-  font-weight: 700;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 28px;
-  width: 64px;
-  height: 64px;
-  background-color: #F3F3F3;
-}
-
-.c1 > img,
-.c1 > canvas {
-  width: 100%;
-  height: 100%;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  outline: 0;
-}
-
-.c2 {
-  position: absolute;
-  right: 14%;
-  bottom: 14%;
-  -webkit-transform: translate( 50%, 50% );
-  -ms-transform: translate( 50%, 50% );
-  transform: translate( 50%, 50% );
-  -webkit-transform-origin: 100% 100%;
-  -ms-transform-origin: 100% 100%;
-  transform-origin: 100% 100%;
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-@media (hover:hover) and (pointer:fine) {
-
-}
-
-<div
-    className="c0 "
-    data-test-automation-class="avatar"
-  >
-    <div
-      className="c1 RcAvatar-avatarContainer"
-    >
-      <img
-        src="test-file-stub"
-      />
-    </div>
-    <div
-      className="c2 RcAvatar-presenceWrapper"
-    >
-      <div
-        className="c3 "
-      />
-    </div>
-  </div>,
-  .c4 {
-  width: 6px;
-  height: 2px;
-  background: #FFFFFF;
 }
 
 .c3 {
@@ -5256,8 +5756,23 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 3px solid #FFFFFF;
-  background: #E6413C;
+  border: 2px solid #FFFFFF;
+  background: #3C9949;
+}
+
+.c3 .c4 svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c7 .c4 svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c8 .c4 svg {
+  width: 6px;
+  height: 6px;
 }
 
 .c1 {
@@ -5351,10 +5866,185 @@ Array [
       <div
         className="c3 "
       >
-        <div
-          className="c4"
-          size="medium"
-        />
+        <span
+          className="c4 c5 presence-available icon"
+        >
+          <svg
+            className="c6"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m29.253 7.261-11.147 20.9A3.452 3.452 0 0 1 15.737 30h-.641a3.345 3.345 0 0 1-2.146-.836l-9.753-8.36a3.483 3.483 0 0 1 3.734-5.797c.227.137.434.306.613.502l6.465 5.573L23.121 4a3.483 3.483 0 0 1 4.626-1.672 3.456 3.456 0 0 1 1.672 4.625l-.167.334v-.028z"
+            />
+          </svg>
+          
+        </span>
+      </div>
+    </div>
+  </div>,
+  .c6 {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: inherit;
+  color: #FFFFFF;
+}
+
+.c7 .c4 svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #FFFFFF;
+  background: #E6413C;
+}
+
+.c3 .c4 svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c8 .c4 svg {
+  width: 6px;
+  height: 6px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #F3F3F3;
+}
+
+.c1 > img,
+.c1 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+}
+
+.c2 {
+  position: absolute;
+  right: 14%;
+  bottom: 14%;
+  -webkit-transform: translate( 50%, 50% );
+  -ms-transform: translate( 50%, 50% );
+  transform: translate( 50%, 50% );
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<div
+    className="c0 "
+    data-test-automation-class="avatar"
+  >
+    <div
+      className="c1 RcAvatar-avatarContainer"
+    >
+      <img
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2 RcAvatar-presenceWrapper"
+    >
+      <div
+        className="c3 "
+      >
+        <span
+          className="c4 c5 presence-dnd icon"
+        >
+          <svg
+            className="c6"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M27.083 18.833H4.916a2.917 2.917 0 0 1 0-5.834h22.167a2.917 2.917 0 0 1 0 5.834z"
+            />
+          </svg>
+          
+        </span>
       </div>
     </div>
   </div>,
@@ -5405,8 +6095,19 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #939393;
+}
+
+.c4 {
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -5534,7 +6235,12 @@ Array [
     >
       <div
         className="c3 "
-      />
+      >
+        <div
+          className="c4"
+          size="medium"
+        />
+      </div>
     </div>
   </button>,
   .c3 {
@@ -5557,7 +6263,7 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background: #E6413C;
 }
 
