@@ -1,4 +1,11 @@
 
+## [2.29.0](https://github.com/ringcentral/juno/compare/juno-core-v2.28.0...juno-core-v2.29.0) (2023-02-22)
+
+
+### Features
+
+* **Presence:** add new icon support for Presence ([9a31c98](https://github.com/ringcentral/juno/commit/9a31c980a81ce48d7dbc69dd71cd778194f0a1c1))
+
 ## [2.28.0](https://github.com/ringcentral/juno/compare/juno-core-v2.27.0...juno-core-v2.28.0) (2023-02-16)
 
 
