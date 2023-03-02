@@ -33162,7 +33162,7 @@ var PresenceDnd = memo348(forwardRef440((props, ref2) => /* @__PURE__ */ createE
   ref: ref2,
   ...props
 }, /* @__PURE__ */ createElement459("path", {
-  d: "M27.083 18.833H4.916a2.917 2.917 0 0 1 0-5.834h22.167a2.917 2.917 0 0 1 0 5.834z"
+  d: "M5 13h22a3 3 0 0 1 3 3v.4a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V16a3 3 0 0 1 3-3z"
 }))));
 PresenceDnd.displayName = "PresenceDnd";
 PresenceDnd["iconName"] = "presence-dnd";
