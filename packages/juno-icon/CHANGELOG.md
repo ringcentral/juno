@@ -1,4 +1,11 @@
 
+## [1.34.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.33.0...juno-icon-v1.34.0) (2023-03-02)
+
+
+### Features
+
+* **Icon:** update icon PresenceDnd ([da22fd8](https://github.com/ringcentral/juno/commit/da22fd8fc0734a911f0b63b27b8582c4bd81af06))
+
 ## [1.33.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.31.0...juno-icon-v1.33.0) (2023-03-02)
 
 
