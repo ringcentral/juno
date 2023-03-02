@@ -9,6 +9,7 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  RcLogo: 'rc-logo',
   PresenceAvailable: 'presence-available',
   PresenceAway: 'presence-away',
   PresenceDnd: 'presence-dnd',

@@ -357,6 +357,7 @@ export { default as RcCcBorder } from './RcCcBorder';
 export { default as RcCloudContact } from './RcCloudContact';
 export { default as RcContact } from './RcContact';
 export { default as RcHelp } from './RcHelp';
+export { default as RcLogo } from './RcLogo';
 export { default as RcvMicOff } from './RcvMicOff';
 export { default as RcvVideocamOff } from './RcvVideocamOff';
 export { default as Read } from './Read';
