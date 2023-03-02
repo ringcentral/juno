@@ -1,4 +1,11 @@
 
+## [1.33.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.31.0...juno-icon-v1.33.0) (2023-03-02)
+
+
+### Features
+
+* **Icon:** add new icon RcLogo ([5cf1931](https://github.com/ringcentral/juno/commit/5cf1931c291e45c10422aa2505eabd540e901203))
+
 ## [1.31.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.30.0...juno-icon-v1.31.0) (2023-02-21)
 
 
