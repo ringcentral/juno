@@ -103,7 +103,12 @@ export const TextField: Story<TextFieldProps> = ({
       <br />
       <Title>UnControl</Title>
 
-      <RcTextField id="search" type="search" {...args} />
+      <RcTextField
+        id="search"
+        type="search"
+        {...args}
+        placeholder="Placeholder with very long text that should be truncated"
+      />
     </>
   );
 };

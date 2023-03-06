@@ -6,6 +6,7 @@ import {
   palette2,
   px,
   RcThemedStyled,
+  ellipsis,
   spacing,
   typography,
 } from '../../../../foundation';
@@ -120,6 +121,10 @@ export const TextFieldStyle: RcThemedStyled<RcTextFieldProps, any> = (
       ::placeholder {
         color: ${placeholderColor};
         opacity: 1;
+      }
+
+      &:placeholder-shown {
+        ${ellipsis}
       }
 
       ${clearBtn &&
