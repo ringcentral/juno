@@ -25,25 +25,9 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   background: #939393;
 }
 
-.c1 {
-  height: 6px;
-  width: 6px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
   className="c0 "
->
-  <div
-    className="c1"
-    size="xsmall"
-  />
-</div>
+/>
 `;
 
 exports[`Storyshots 🚀 Cleanup Components/Presence Presence Examples 1`] = `
@@ -2364,7 +2348,7 @@ Array [
   background: #939393;
 }
 
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2388,7 +2372,7 @@ Array [
   background: #939393;
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2412,7 +2396,7 @@ Array [
   background: #939393;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2436,7 +2420,7 @@ Array [
   background: #939393;
 }
 
-.c8 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2460,50 +2444,6 @@ Array [
   background: #939393;
 }
 
-.c2 {
-  height: 6px;
-  width: 6px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c5 {
-  height: 8px;
-  width: 8px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c7 {
-  height: 12px;
-  width: 12px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c9 {
-  height: 16px;
-  width: 16px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2512,7 +2452,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c6 {
   margin-left: 5px;
   color: #121212;
 }
@@ -2522,54 +2462,24 @@ Array [
   >
     <div
       className="c1 "
-    >
-      <div
-        className="c2"
-        size="xxsmall"
-      />
-    </div>
+    />
+    <div
+      className="c2 "
+    />
     <div
       className="c3 "
-    >
-      <div
-        className="c2"
-        size="xsmall"
-      />
-    </div>
+    />
+    <div
+      className="c3 "
+    />
     <div
       className="c4 "
-    >
-      <div
-        className="c5"
-        size="small"
-      />
-    </div>
+    />
     <div
-      className="c4 "
-    >
-      <div
-        className="c5"
-        size="medium"
-      />
-    </div>
-    <div
-      className="c6 "
-    >
-      <div
-        className="c7"
-        size="large"
-      />
-    </div>
-    <div
-      className="c8 "
-    >
-      <div
-        className="c9"
-        size="xlarge"
-      />
-    </div>
+      className="c5 "
+    />
     <span
-      className="c10"
+      className="c6"
     >
       unavailable
     </span>
@@ -2598,7 +2508,7 @@ Array [
   background: #939393;
 }
 
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2622,7 +2532,7 @@ Array [
   background: #939393;
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2646,7 +2556,7 @@ Array [
   background: #939393;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2670,7 +2580,7 @@ Array [
   background: #939393;
 }
 
-.c8 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2694,50 +2604,6 @@ Array [
   background: #939393;
 }
 
-.c2 {
-  height: 6px;
-  width: 6px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c5 {
-  height: 8px;
-  width: 8px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c7 {
-  height: 12px;
-  width: 12px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c9 {
-  height: 16px;
-  width: 16px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2746,7 +2612,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c6 {
   margin-left: 5px;
   color: #121212;
 }
@@ -2756,54 +2622,24 @@ Array [
   >
     <div
       className="c1 "
-    >
-      <div
-        className="c2"
-        size="xxsmall"
-      />
-    </div>
+    />
+    <div
+      className="c2 "
+    />
     <div
       className="c3 "
-    >
-      <div
-        className="c2"
-        size="xsmall"
-      />
-    </div>
+    />
+    <div
+      className="c3 "
+    />
     <div
       className="c4 "
-    >
-      <div
-        className="c5"
-        size="small"
-      />
-    </div>
+    />
     <div
-      className="c4 "
-    >
-      <div
-        className="c5"
-        size="medium"
-      />
-    </div>
-    <div
-      className="c6 "
-    >
-      <div
-        className="c7"
-        size="large"
-      />
-    </div>
-    <div
-      className="c8 "
-    >
-      <div
-        className="c9"
-        size="xlarge"
-      />
-    </div>
+      className="c5 "
+    />
     <span
-      className="c10"
+      className="c6"
     >
       notReady
     </span>
@@ -2832,7 +2668,7 @@ Array [
   background: #939393;
 }
 
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2856,7 +2692,7 @@ Array [
   background: #939393;
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2880,7 +2716,7 @@ Array [
   background: #939393;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2904,7 +2740,7 @@ Array [
   background: #939393;
 }
 
-.c8 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2928,50 +2764,6 @@ Array [
   background: #939393;
 }
 
-.c2 {
-  height: 6px;
-  width: 6px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c5 {
-  height: 8px;
-  width: 8px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c7 {
-  height: 12px;
-  width: 12px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c9 {
-  height: 16px;
-  width: 16px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2980,7 +2772,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c6 {
   margin-left: 5px;
   color: #121212;
 }
@@ -2990,54 +2782,24 @@ Array [
   >
     <div
       className="c1 "
-    >
-      <div
-        className="c2"
-        size="xxsmall"
-      />
-    </div>
+    />
+    <div
+      className="c2 "
+    />
     <div
       className="c3 "
-    >
-      <div
-        className="c2"
-        size="xsmall"
-      />
-    </div>
+    />
+    <div
+      className="c3 "
+    />
     <div
       className="c4 "
-    >
-      <div
-        className="c5"
-        size="small"
-      />
-    </div>
+    />
     <div
-      className="c4 "
-    >
-      <div
-        className="c5"
-        size="medium"
-      />
-    </div>
-    <div
-      className="c6 "
-    >
-      <div
-        className="c7"
-        size="large"
-      />
-    </div>
-    <div
-      className="c8 "
-    >
-      <div
-        className="c9"
-        size="xlarge"
-      />
-    </div>
+      className="c5 "
+    />
     <span
-      className="c10"
+      className="c6"
     >
       offline
     </span>
@@ -3066,7 +2828,7 @@ Array [
   background: #066FAC;
 }
 
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3090,7 +2852,7 @@ Array [
   background: #066FAC;
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3114,7 +2876,7 @@ Array [
   background: #066FAC;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3138,7 +2900,7 @@ Array [
   background: #066FAC;
 }
 
-.c8 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3162,50 +2924,6 @@ Array [
   background: #066FAC;
 }
 
-.c2 {
-  height: 6px;
-  width: 6px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c5 {
-  height: 8px;
-  width: 8px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c7 {
-  height: 12px;
-  width: 12px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c9 {
-  height: 16px;
-  width: 16px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3214,7 +2932,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c6 {
   margin-left: 5px;
   color: #121212;
 }
@@ -3224,54 +2942,24 @@ Array [
   >
     <div
       className="c1 "
-    >
-      <div
-        className="c2"
-        size="xxsmall"
-      />
-    </div>
+    />
+    <div
+      className="c2 "
+    />
     <div
       className="c3 "
-    >
-      <div
-        className="c2"
-        size="xsmall"
-      />
-    </div>
+    />
+    <div
+      className="c3 "
+    />
     <div
       className="c4 "
-    >
-      <div
-        className="c5"
-        size="small"
-      />
-    </div>
+    />
     <div
-      className="c4 "
-    >
-      <div
-        className="c5"
-        size="medium"
-      />
-    </div>
-    <div
-      className="c6 "
-    >
-      <div
-        className="c7"
-        size="large"
-      />
-    </div>
-    <div
-      className="c8 "
-    >
-      <div
-        className="c9"
-        size="xlarge"
-      />
-    </div>
+      className="c5 "
+    />
     <span
-      className="c10"
+      className="c6"
     >
       Custom Color with theme method
     </span>
@@ -3300,7 +2988,7 @@ Array [
   background: yellow;
 }
 
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3324,7 +3012,7 @@ Array [
   background: yellow;
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3348,7 +3036,7 @@ Array [
   background: yellow;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3372,7 +3060,7 @@ Array [
   background: yellow;
 }
 
-.c8 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3396,50 +3084,6 @@ Array [
   background: yellow;
 }
 
-.c2 {
-  height: 6px;
-  width: 6px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c5 {
-  height: 8px;
-  width: 8px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c7 {
-  height: 12px;
-  width: 12px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c9 {
-  height: 16px;
-  width: 16px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3448,7 +3092,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c6 {
   margin-left: 5px;
   color: #121212;
 }
@@ -3458,54 +3102,24 @@ Array [
   >
     <div
       className="c1 "
-    >
-      <div
-        className="c2"
-        size="xxsmall"
-      />
-    </div>
+    />
+    <div
+      className="c2 "
+    />
     <div
       className="c3 "
-    >
-      <div
-        className="c2"
-        size="xsmall"
-      />
-    </div>
+    />
+    <div
+      className="c3 "
+    />
     <div
       className="c4 "
-    >
-      <div
-        className="c5"
-        size="small"
-      />
-    </div>
+    />
     <div
-      className="c4 "
-    >
-      <div
-        className="c5"
-        size="medium"
-      />
-    </div>
-    <div
-      className="c6 "
-    >
-      <div
-        className="c7"
-        size="large"
-      />
-    </div>
-    <div
-      className="c8 "
-    >
-      <div
-        className="c9"
-        size="xlarge"
-      />
-    </div>
+      className="c5 "
+    />
     <span
-      className="c10"
+      className="c6"
     >
       Custom Color with css color
     </span>
