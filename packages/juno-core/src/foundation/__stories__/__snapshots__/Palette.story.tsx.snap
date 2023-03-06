@@ -207,6 +207,12 @@ exports[`Storyshots 🔧 Foundation/Palette Palette 1`] = `
   opacity: 1;
 }
 
+.c1 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c1 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }

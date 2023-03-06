@@ -118,6 +118,12 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
   opacity: 1;
 }
 
+.c1 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c1 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -1844,6 +1850,12 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
   opacity: 1;
 }
 
+.c1 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c1 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -1966,6 +1978,12 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
 .c15 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c15 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c15 .RcTextFieldInput-underline:before {

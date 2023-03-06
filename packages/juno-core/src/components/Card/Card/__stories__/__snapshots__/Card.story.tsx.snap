@@ -226,6 +226,12 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   opacity: 1;
 }
 
+.c30 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c30 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }

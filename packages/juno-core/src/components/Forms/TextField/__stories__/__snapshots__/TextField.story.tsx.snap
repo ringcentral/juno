@@ -290,6 +290,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -1270,6 +1276,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -1930,7 +1942,7 @@ Array [
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
-        placeholder="Placeholder"
+        placeholder="Placeholder with very long text that should be truncated"
         required={false}
         type="search"
         value=""
@@ -2200,6 +2212,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -3305,6 +3323,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -4387,6 +4411,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -5505,6 +5535,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -6587,6 +6623,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -7682,6 +7724,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -8783,6 +8831,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #F6AD16;
 }
@@ -9878,6 +9932,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #46BE59;
 }
@@ -10868,6 +10928,12 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -11013,6 +11079,12 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
   opacity: 1;
 }
 
+.c8 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c8 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -11156,6 +11228,12 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/TextField TextField with align
 .c9 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c9 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c9 .RcTextFieldInput-underline:before {

@@ -320,6 +320,12 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -1489,6 +1495,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -2789,6 +2801,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -3991,6 +4009,12 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -5002,6 +5026,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -6022,6 +6052,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -7282,6 +7318,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -8852,6 +8894,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -10267,6 +10315,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -11674,6 +11728,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -13495,6 +13555,12 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -14676,6 +14742,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -15864,6 +15936,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -17048,6 +17126,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -18236,6 +18320,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -19391,6 +19481,12 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -20544,6 +20640,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -21706,6 +21808,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -22852,6 +22960,12 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -24108,6 +24222,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -25294,6 +25414,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -26443,6 +26569,12 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {

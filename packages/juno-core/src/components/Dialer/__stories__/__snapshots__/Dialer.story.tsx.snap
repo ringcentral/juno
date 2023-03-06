@@ -219,6 +219,12 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
   opacity: 1;
 }
 
+.c1 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c1 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -1939,6 +1945,12 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
   opacity: 1;
 }
 
+.c11 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c11 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -2065,6 +2077,12 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
 .c16 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c16 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c16 .RcTextFieldInput-underline:before {
@@ -4717,6 +4735,12 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
 .c11 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c11 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c11 .RcTextFieldInput-underline:before {

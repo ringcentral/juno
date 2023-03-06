@@ -204,6 +204,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -1205,6 +1211,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -2252,6 +2264,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -3338,6 +3356,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -4483,6 +4507,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -5563,6 +5593,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -6669,6 +6705,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -7867,6 +7909,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -9036,6 +9084,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #F6AD16;
 }
@@ -10049,6 +10103,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -11196,6 +11256,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -12450,6 +12516,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -13595,6 +13667,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -14849,6 +14927,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -15994,6 +16078,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {

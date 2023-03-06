@@ -280,6 +280,12 @@ Array [
   opacity: 1;
 }
 
+.c2 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c2 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -1953,6 +1959,12 @@ Array [
 .c3 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c3 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3 .RcTextFieldInput-underline:before {
@@ -3752,6 +3764,12 @@ Array [
 .c3 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c3 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3 .RcTextFieldInput-underline:before {
@@ -5592,6 +5610,12 @@ Array [
   opacity: 1;
 }
 
+.c3 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c3 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -6802,6 +6826,12 @@ Array [
 .c3 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c3 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3 .RcTextFieldInput-underline:before {
@@ -8054,6 +8084,12 @@ Array [
 .c2 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c2 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c2 .RcTextFieldInput-underline:before {

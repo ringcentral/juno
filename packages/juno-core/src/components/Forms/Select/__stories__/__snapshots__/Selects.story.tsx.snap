@@ -97,6 +97,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -981,6 +987,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #F6AD16;
 }
@@ -1849,6 +1861,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -2735,6 +2753,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -3619,6 +3643,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -4500,6 +4530,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -5391,6 +5427,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -6222,6 +6264,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -7057,6 +7105,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #46BE59;
 }
@@ -7888,6 +7942,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -8723,6 +8783,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -9554,6 +9620,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -10389,6 +10461,12 @@ Array [
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -11198,6 +11276,12 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select 1`] = `
   opacity: 1;
 }
 
+.c1 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c1 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -11320,6 +11404,12 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select 1`] = `
 .c6 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c6 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c6 .RcTextFieldInput-underline:before {
@@ -14097,6 +14187,12 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select With Custom Me
   opacity: 1;
 }
 
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 .RcTextFieldInput-underline:before {
   border-bottom-color: #939393;
 }
@@ -14882,6 +14978,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -15675,6 +15777,12 @@ Array [
 .c0 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c0 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 .RcTextFieldInput-underline:before {
@@ -16512,6 +16620,12 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Virtualize Menu 1`] =
 .c1 .RcTextFieldInput-input::placeholder {
   color: #757575;
   opacity: 1;
+}
+
+.c1 .RcTextFieldInput-input:placeholder-shown {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c1 .RcTextFieldInput-underline:before {
