@@ -9,13 +9,7 @@ import {
 import { RcIcon } from '../Icon';
 import { Attended, Unattended } from './assets';
 import { StyledPresence } from './styles';
-import {
-  PresenceAvailable,
-  PresenceDnd,
-  PresenceOffline,
-} from '@ringcentral/juno-icon';
-import { UnAvailableIconType } from './utils';
-import { CircleDiv } from './styles/StyledCircle';
+import { PresenceAvailable, PresenceDnd } from '@ringcentral/juno-icon';
 
 type RcPresenceType =
   | 'notReady'
@@ -46,7 +40,7 @@ type RcPresenceProps = {
 
 const _RcPresence = forwardRef<any, RcPresenceProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcPresence' });
-  const { type, size } = props;
+  const { type } = props;
 
   const symbol = (() => {
     switch (type) {
@@ -54,10 +48,6 @@ const _RcPresence = forwardRef<any, RcPresenceProps>((inProps, ref) => {
         return PresenceDnd;
       case 'available':
         return PresenceAvailable;
-      case 'offline':
-      case 'unavailable':
-      case 'notReady':
-        return PresenceOffline;
       case 'attended':
         return Attended;
       case 'unAttended':
@@ -67,15 +57,13 @@ const _RcPresence = forwardRef<any, RcPresenceProps>((inProps, ref) => {
     }
   })();
 
-  const showUnAvailable = UnAvailableIconType[type!];
-
   const symbolElm = symbol ? (
     <RcIcon symbol={symbol} color="neutral.f01" size="inherit" />
   ) : null;
 
   return (
     <StyledPresence ref={ref} {...props}>
-      {showUnAvailable ? <CircleDiv size={size!} /> : symbolElm}
+      {symbolElm}
     </StyledPresence>
   );
 });
