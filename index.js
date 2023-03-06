@@ -54948,18 +54948,6 @@ var RcPresenceIconSizes = {
   large: [10, void 0],
   xlarge: [12, void 0]
 };
-var UnAvailableIconType = {
-  notReady: true,
-  unavailable: true,
-  offline: true,
-  available: false,
-  onCall: false,
-  DND: false,
-  inMeeting: false,
-  busy: false,
-  attended: false,
-  unAttended: false
-};
 var presenceOn = palette22("presence", "available");
 var presenceBusy = palette22("presence", "busy");
 var presenceOff = palette22("presence", "invisible");
@@ -55013,37 +55001,16 @@ var StyledPresence = styled_components_default(_StyledPresence)`
 }};
 `;
 
-// ../juno-core/src/components/Presence/styles/StyledCircle.tsx
-var InnerSizes = {
-  xxsmall: 6,
-  xsmall: 6,
-  small: 8,
-  medium: 8,
-  large: 12,
-  xlarge: 16
-};
-var CircleDiv = styled_components_default.div`
-  height: ${({ size }) => InnerSizes[size]}px;
-  width: ${({ size }) => InnerSizes[size]}px;
-  background: ${palette22("neutral", "f01")};
-  border-radius: 50%;
-  justify-content: center;
-`;
-
 // ../juno-core/src/components/Presence/Presence.tsx
 var _RcPresence = forwardRef597((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcPresence" });
-  const { type: type3, size } = props;
+  const { type: type3 } = props;
   const symbol = (() => {
     switch (type3) {
       case "DND":
         return PresenceDnd_default;
       case "available":
         return PresenceAvailable_default;
-      case "offline":
-      case "unavailable":
-      case "notReady":
-        return PresenceOffline_default;
       case "attended":
         return Attended_default;
       case "unAttended":
@@ -55052,7 +55019,6 @@ var _RcPresence = forwardRef597((inProps, ref2) => {
         return null;
     }
   })();
-  const showUnAvailable = UnAvailableIconType[type3];
   const symbolElm = symbol ? /* @__PURE__ */ React658.createElement(RcIcon, {
     symbol,
     color: "neutral.f01",
@@ -55061,9 +55027,7 @@ var _RcPresence = forwardRef597((inProps, ref2) => {
   return /* @__PURE__ */ React658.createElement(StyledPresence, {
     ref: ref2,
     ...props
-  }, showUnAvailable ? /* @__PURE__ */ React658.createElement(CircleDiv, {
-    size
-  }) : symbolElm);
+  }, symbolElm);
 });
 var RcPresence = styled_components_default(_RcPresence)``;
 RcPresence.defaultProps = {
@@ -79451,7 +79415,7 @@ RcVirtualizedDivider.displayName = "RcVirtualizedDivider";
 // ../juno-core/src/components/Forms/Select/utils/SelectInput/SelectInput.tsx
 import React770, { forwardRef as forwardRef681, useState as useState42 } from "react";
 var import_react_is14 = __toModule(require_react_is2());
-var import_utils253 = __toModule(require_utils());
+var import_utils252 = __toModule(require_utils());
 function areEqualValues2(a2, b2) {
   if (typeof b2 === "object" && b2 !== null) {
     return a2 === b2;
@@ -79636,7 +79600,7 @@ var SelectInput3 = forwardRef681((props, ref2) => {
   const displayMultiple = [];
   let computeDisplay = false;
   let foundMatch = false;
-  if ((0, import_utils253.isFilled)({ value }) || displayEmpty) {
+  if ((0, import_utils252.isFilled)({ value }) || displayEmpty) {
     if (renderValue) {
       display = renderValue(value);
     } else {
