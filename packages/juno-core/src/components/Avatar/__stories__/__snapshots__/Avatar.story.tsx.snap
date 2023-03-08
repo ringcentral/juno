@@ -938,7 +938,7 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -1043,7 +1043,7 @@ Array [
   box-sizing: content-box;
   width: 14px;
   height: 14px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -1148,7 +1148,7 @@ Array [
   box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -1569,7 +1569,7 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -1674,7 +1674,7 @@ Array [
   box-sizing: content-box;
   width: 14px;
   height: 14px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -1779,7 +1779,7 @@ Array [
   box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -2200,7 +2200,7 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -2305,7 +2305,7 @@ Array [
   box-sizing: content-box;
   width: 14px;
   height: 14px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -2410,7 +2410,7 @@ Array [
   box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -2831,7 +2831,7 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -2936,7 +2936,7 @@ Array [
   box-sizing: content-box;
   width: 14px;
   height: 14px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -3041,7 +3041,7 @@ Array [
   box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -3462,7 +3462,7 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -3567,7 +3567,7 @@ Array [
   box-sizing: content-box;
   width: 14px;
   height: 14px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -3672,7 +3672,7 @@ Array [
   box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -4093,7 +4093,7 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -4198,7 +4198,7 @@ Array [
   box-sizing: content-box;
   width: 14px;
   height: 14px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -4303,7 +4303,7 @@ Array [
   box-sizing: content-box;
   width: 18px;
   height: 18px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #066FAC;
 }
 
@@ -4393,7 +4393,7 @@ Array [
 `;
 
 exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
-.c8 {
+.c10 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -4402,16 +4402,7 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   pointer-events: none;
 }
 
-.c7 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-size: inherit;
-  color: #FFFFFF;
-}
-
-.c10 {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4440,6 +4431,12 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   outline: none;
 }
 
+.c6 {
+  width: 6px;
+  height: 2px;
+  background: #FFFFFF;
+}
+
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4464,13 +4461,13 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   background: #066FAC;
 }
 
-.c4 .c6 {
+.c4 .c8 {
   -webkit-transform: scale(0.5);
   -ms-transform: scale(0.5);
   transform: scale(0.5);
 }
 
-.c4 .c6 svg {
+.c4 .c8 svg {
   width: 10px;
   height: 10px;
 }
@@ -4495,11 +4492,11 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #E6413C;
 }
 
-.c5 .c6 svg {
+.c5 .c8 svg {
   width: 6px;
   height: 6px;
 }
@@ -4545,7 +4542,7 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   height: 100%;
 }
 
-.c9 {
+.c7 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4580,8 +4577,8 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   background-color: #1A70C1;
 }
 
-.c9 > img,
-.c9 > canvas {
+.c7 > img,
+.c7 > canvas {
   width: 100%;
   height: 100%;
 }
@@ -4756,20 +4753,10 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
       <div
         className="c5 "
       >
-        <span
-          className="c6 c7 presence-dnd icon"
-        >
-          <svg
-            className="c8"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5 13h22a3 3 0 0 1 3 3v.4a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V16a3 3 0 0 1 3-3z"
-            />
-          </svg>
-          
-        </span>
+        <div
+          className="c6"
+          size="medium"
+        />
       </div>
     </div>
   </button>
@@ -4782,13 +4769,13 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
     type="button"
   >
     <div
-      className="c9 RcAvatar-avatarContainer"
+      className="c7 RcAvatar-avatarContainer"
     >
       <span
-        className="c6 c10 default-team-avatar icon"
+        className="c8 c9 default-team-avatar icon"
       >
         <svg
-          className="c8"
+          className="c10"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -4802,10 +4789,10 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
         className="c11 RcAvatar-mask"
       >
         <span
-          className="c6 c12 call-add icon"
+          className="c8 c12 call-add icon"
         >
           <svg
-            className="c8"
+            className="c10"
             viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -4830,10 +4817,10 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
       className="c13 RcAvatar-avatarContainer"
     >
       <span
-        className="c6 c14 c15 call-add icon"
+        className="c8 c14 c15 call-add icon"
       >
         <svg
-          className="c8"
+          className="c10"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -5126,25 +5113,7 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Mask 1`] = `
 
 exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Presence 1`] = `
 Array [
-  .c6 {
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  pointer-events: none;
-}
-
-.c5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-size: inherit;
-  color: #FFFFFF;
-}
-
-.c3 {
+  .c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5164,25 +5133,10 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #3C9949;
 }
 
-.c3 .c4 svg {
-  width: 6px;
-  height: 6px;
-}
-
-.c7 .c4 svg {
-  width: 6px;
-  height: 6px;
-}
-
-.c8 .c4 svg {
-  width: 6px;
-  height: 6px;
-}
-
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -5273,45 +5227,13 @@ Array [
     >
       <div
         className="c3 "
-      >
-        <span
-          className="c4 c5 presence-available icon"
-        >
-          <svg
-            className="c6"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="m29.253 7.261-11.147 20.9A3.452 3.452 0 0 1 15.737 30h-.641a3.345 3.345 0 0 1-2.146-.836l-9.753-8.36a3.483 3.483 0 0 1 3.734-5.797c.227.137.434.306.613.502l6.465 5.573L23.121 4a3.483 3.483 0 0 1 4.626-1.672 3.456 3.456 0 0 1 1.672 4.625l-.167.334v-.028z"
-            />
-          </svg>
-          
-        </span>
-      </div>
+      />
     </div>
   </div>,
-  .c6 {
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  pointer-events: none;
-}
-
-.c5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-size: inherit;
-  color: #FFFFFF;
-}
-
-.c7 .c4 svg {
+  .c4 {
   width: 6px;
-  height: 6px;
+  height: 2px;
+  background: #FFFFFF;
 }
 
 .c3 {
@@ -5334,18 +5256,8 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #E6413C;
-}
-
-.c3 .c4 svg {
-  width: 6px;
-  height: 6px;
-}
-
-.c8 .c4 svg {
-  width: 6px;
-  height: 6px;
 }
 
 .c1 {
@@ -5439,20 +5351,10 @@ Array [
       <div
         className="c3 "
       >
-        <span
-          className="c4 c5 presence-dnd icon"
-        >
-          <svg
-            className="c6"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5 13h22a3 3 0 0 1 3 3v.4a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V16a3 3 0 0 1 3-3z"
-            />
-          </svg>
-          
-        </span>
+        <div
+          className="c4"
+          size="medium"
+        />
       </div>
     </div>
   </div>,
@@ -5503,7 +5405,7 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #939393;
 }
 
@@ -5655,7 +5557,7 @@ Array [
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 2px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   background: #E6413C;
 }
 
