@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef, useMemo } from 'react';
 
 import {
   RcBaseSize,
@@ -8,8 +8,7 @@ import {
 } from '../../foundation';
 import { RcIcon } from '../Icon';
 import { Attended, Unattended } from './assets';
-import { StyledPresence } from './styles';
-import { PresenceAvailable, PresenceDnd } from '@ringcentral/juno-icon';
+import { StyledDND, StyledPresence } from './styles';
 
 type RcPresenceType =
   | 'notReady'
@@ -40,30 +39,26 @@ type RcPresenceProps = {
 
 const _RcPresence = forwardRef<any, RcPresenceProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcPresence' });
-  const { type } = props;
+  const { type, size } = props;
 
-  const symbol = (() => {
+  const innerChildren = useMemo(() => {
     switch (type) {
       case 'DND':
-        return PresenceDnd;
-      case 'available':
-        return PresenceAvailable;
+        return <StyledDND size={size} />;
       case 'attended':
-        return Attended;
+        return <RcIcon symbol={Attended} color="neutral.f01" size="inherit" />;
       case 'unAttended':
-        return Unattended;
+        return (
+          <RcIcon symbol={Unattended} color="neutral.f01" size="inherit" />
+        );
       default:
         return null;
     }
-  })();
-
-  const symbolElm = symbol ? (
-    <RcIcon symbol={symbol} color="neutral.f01" size="inherit" />
-  ) : null;
+  }, [size, type]);
 
   return (
     <StyledPresence ref={ref} {...props}>
-      {symbolElm}
+      {innerChildren}
     </StyledPresence>
   );
 });
