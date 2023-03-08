@@ -57987,6 +57987,10 @@ var TextFieldStyle = (props) => {
         opacity: 1;
       }
 
+      &:placeholder-shown {
+        ${ellipsis}
+      }
+
       ${clearBtn && align && align !== "left" && css2`
         width: calc(100% - ${px2(RcIconButtonSizes[size])});
       `};
