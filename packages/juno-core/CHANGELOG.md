@@ -1,4 +1,11 @@
 
+## [2.31.0](https://github.com/ringcentral/juno/compare/juno-core-v2.30.1...juno-core-v2.31.0) (2023-03-08)
+
+
+### Features
+
+* **Presence:** revert changes for Presence icon ([6a75e4b](https://github.com/ringcentral/juno/commit/6a75e4be392b9423c692c1851a0f678605281a1a))
+
 ### [2.30.1](https://github.com/ringcentral/juno/compare/juno-core-v2.30.0...juno-core-v2.30.1) (2023-03-08)
 
 
