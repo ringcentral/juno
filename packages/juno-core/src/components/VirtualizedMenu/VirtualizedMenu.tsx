@@ -22,6 +22,8 @@ import {
   RcVirtualizedMenuListProps,
   RcVirtualizedMenuListRef,
 } from './VirtualizedMenuList';
+import { useNextFrame } from './useNextFrame';
+import { PopoverActions } from '@material-ui/core';
 
 type RcVirtualizedMenuProps = {
   /** props for apply on inner `MenuList` */
@@ -36,7 +38,12 @@ const _RcVirtualizedMenu = forwardRef<any, RcVirtualizedMenuProps>(
       children,
       classes: classesProp,
       disableAutoFocusItem = false,
-      MenuListProps: { maxHeight = 416, onKeyDown, ...MenuListProps } = {},
+      MenuListProps: {
+        maxHeight = 416,
+        onKeyDown,
+        VirtuosoProps,
+        ...MenuListProps
+      } = {},
       onClose,
       open,
       TransitionProps: TransitionPropsProp,
@@ -44,12 +51,16 @@ const _RcVirtualizedMenu = forwardRef<any, RcVirtualizedMenuProps>(
       PopoverClasses,
       transitionDuration = 'auto',
       variant = 'selectedMenu',
+      action: popoverActionProp = null,
       ...rest
     } = props;
     const { document } = useRcPortalWindowContext();
 
     const popoverRef = useRef<HTMLDivElement>(null);
     const handleRef = useForkRef(ref, popoverRef);
+
+    const popoverAction = useRef<PopoverActions>(null);
+    const handlePopoverAction = useForkRef(popoverAction, popoverActionProp);
 
     const menuListActionRef = useRef<RcVirtualizedMenuListRef>(null);
 
@@ -109,9 +120,12 @@ const _RcVirtualizedMenu = forwardRef<any, RcVirtualizedMenuProps>(
       },
     );
 
+    const runInNextFrame = useNextFrame();
+
     return (
       <RcPopover
         ref={handleRef}
+        action={handlePopoverAction}
         container={document.body}
         classes={PopoverClasses}
         onClose={onClose}
@@ -131,6 +145,16 @@ const _RcVirtualizedMenu = forwardRef<any, RcVirtualizedMenuProps>(
           maxHeight={maxHeight}
           variant={variant}
           onKeyDown={handleListKeyDown}
+          VirtuosoProps={{
+            ...VirtuosoProps,
+            totalListHeightChanged: (height) => {
+              VirtuosoProps?.totalListHeightChanged?.(height);
+
+              runInNextFrame(() => {
+                popoverAction.current?.updatePosition();
+              });
+            },
+          }}
           {...MenuListProps}
           className={clsx(classes.list, MenuListProps.className)}
         >

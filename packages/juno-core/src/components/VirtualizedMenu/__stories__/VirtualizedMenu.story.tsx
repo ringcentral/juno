@@ -83,6 +83,7 @@ export const VirtualizedMenu: Story<Partial<MenuProps>> = ({
 }) => {
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
   const [anchorEl2, setAnchorEl2] = useState<HTMLButtonElement | null>(null);
+  const [anchorEl3, setAnchorEl3] = useState<HTMLButtonElement | null>(null);
   const [count, setCount] = useState(0);
   const handleClick = (
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
@@ -92,8 +93,13 @@ export const VirtualizedMenu: Story<Partial<MenuProps>> = ({
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   ) => setAnchorEl2(event.currentTarget);
 
+  const handleClick3 = (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  ) => setAnchorEl3(event.currentTarget);
+
   const handleClose = () => setAnchorEl(null);
   const handleClose2 = () => setAnchorEl2(null);
+  const handleClose3 = () => setAnchorEl3(null);
 
   return (
     <>
@@ -141,6 +147,37 @@ export const VirtualizedMenu: Story<Partial<MenuProps>> = ({
               key={x}
               // disabled={x < 10}
               onClick={handleClose2}
+              onContextMenu={() => {
+                setCount(count + 1);
+              }}
+              data-search-text={label}
+            >
+              <RcListItemText primary={label} />
+            </RcMenuItem>
+          );
+        })}
+      </RcVirtualizedMenu>
+
+      <br />
+      <br />
+
+      <RcButton onClick={handleClick3}>
+        Open Menu(less items, above button)
+      </RcButton>
+      <RcVirtualizedMenu
+        {...args}
+        open={Boolean(anchorEl3)}
+        anchorEl={anchorEl3}
+        onClose={handleClose3}
+        anchorOrigin={{ vertical: 'top', horizontal: 'left' }}
+        transformOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+      >
+        {threeItems.map((x) => {
+          const label = `${x}-MenuItem${count}`;
+          return (
+            <RcMenuItem
+              key={x}
+              onClick={handleClose3}
               onContextMenu={() => {
                 setCount(count + 1);
               }}
