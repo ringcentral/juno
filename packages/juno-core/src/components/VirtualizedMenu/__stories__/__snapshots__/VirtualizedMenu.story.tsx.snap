@@ -441,5 +441,123 @@ Array [
       Open Menu(less items)
     </span>
   </button>,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  @media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<br />,
+  .c0 {
+  text-transform: none;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  border-radius: 4px;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #066FAC;
+}
+
+.c0.RcButton-text.RcButton-disabled {
+  color: #C7C7C7;
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
+}
+
+.c0.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c0.RcButton-outlined.RcButton-disabled {
+  color: #C7C7C7;
+  border-color: #C7C7C7;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Open Menu(less items, above button)
+    </span>
+  </button>,
 ]
 `;
