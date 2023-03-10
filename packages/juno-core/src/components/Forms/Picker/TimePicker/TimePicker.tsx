@@ -54,6 +54,7 @@ import {
   twelveHourSystemSource,
   twentyFourHourSystemSource,
 } from './utils';
+import { PeriodTexts } from './types';
 
 type RcTimePickerSize = RcBaseSize<'small' | 'medium'>;
 
@@ -80,6 +81,8 @@ type PickNumberPickerProps = RcBaseProps<
   | 'source'
   | 'step'
 >;
+
+type RcTimePickerPeriodTexts = Record<'input' | 'toggle', PeriodTexts>;
 
 type RcTimePickerProps<T = false> = {
   /** with two size: 'small' | 'medium', default with medium. */
@@ -110,6 +113,7 @@ type RcTimePickerProps<T = false> = {
     | 'onUpdateValue'
     | 'children'
   >;
+  periodTexts?: RcTimePickerPeriodTexts;
   /** picker will show default value when textfield is empty */
   defaultPickerValue?: T extends true ? Date : number;
 } & RcBaseProps<PickerTextFieldProps, 'onClick' | 'value' | 'children'> &
@@ -119,6 +123,11 @@ type UpdateTimeOption = {
   hour?: number;
   minute?: number;
   period?: TIME_SYSTEM_TEXT;
+};
+
+const defaultPeriodTexts: RcTimePickerPeriodTexts = {
+  input: { AM: 'AM', PM: 'PM' },
+  toggle: { AM: 'AM', PM: 'PM' },
 };
 
 const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
@@ -142,6 +151,7 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
       InputProps: InputPropsProp,
       classes,
       defaultPickerValue,
+      periodTexts = defaultPeriodTexts,
       ...rest
     } = props;
 
@@ -393,6 +403,7 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
           hour,
           minute,
           period: currentPeriod,
+          periodTexts: periodTexts.input,
         },
         isTwelveHourSystem,
       );
@@ -404,6 +415,8 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
       currentTimestamp,
       isTwelveHourSystem,
       currentPeriod,
+      periodTexts.input.AM,
+      periodTexts.input.PM,
     ]);
 
     // * when no value, open menu use min as value
@@ -501,6 +514,7 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
               {isTwelveHourSystem && (
                 <div>
                   <ToggleText
+                    periodTexts={periodTexts.toggle}
                     ref={periodRef}
                     size={size}
                     disabled={toggleTextDisabled}
@@ -569,4 +583,9 @@ const ExportType: <T extends boolean = false>(
   RcTimePicker as any;
 
 export { ExportType as RcTimePicker };
-export type { RcClickFiledStyleProps, RcTimePickerProps, RcTimePickerSize };
+export type {
+  RcClickFiledStyleProps,
+  RcTimePickerProps,
+  RcTimePickerSize,
+  RcTimePickerPeriodTexts,
+};

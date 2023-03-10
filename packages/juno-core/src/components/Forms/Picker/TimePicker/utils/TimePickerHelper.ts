@@ -26,6 +26,7 @@ type GetFormattedTimeOption = {
   hour: number;
   minute: number;
   period: TIME_SYSTEM_TEXT;
+  periodTexts: { AM: string; PM: string };
 };
 
 /**
@@ -35,12 +36,12 @@ type GetFormattedTimeOption = {
  * @returns `hh:mm AM` or `hh:mm PM` or `hh:mm`
  */
 const getFormattedTime = (
-  { hour, minute, period }: GetFormattedTimeOption,
+  { hour, minute, period, periodTexts }: GetFormattedTimeOption,
   isTwelveHourSystem?: boolean,
 ) => {
   const formattedHour = parseNumberToString(hour, isTwelveHourSystem);
   const formattedMinute = parseNumberToString(minute);
-  const periodText = isTwelveHourSystem ? ` ${period}` : '';
+  const periodText = isTwelveHourSystem ? ` ${periodTexts[period]}` : '';
 
   return `${formattedHour}:${formattedMinute}${periodText}`;
 };

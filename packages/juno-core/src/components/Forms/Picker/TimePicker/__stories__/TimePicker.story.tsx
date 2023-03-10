@@ -89,6 +89,30 @@ TimePicker.parameters = {
   ],
 };
 
+export const TimePickerWithCoustomPeriodText: Story = () => {
+  const [value, setValue] = useState<number | null>(58500000);
+
+  const handleChange = (time: number) => {
+    console.log('time', time);
+    setValue(time);
+  };
+
+  return (
+    <RcTimePicker
+      value={value}
+      onChange={handleChange}
+      label="Time"
+      isTwelveHourSystem
+      placeholder="what's time?"
+      periodTexts={{
+        input: { AM: '早上', PM: '晚上' },
+        toggle: { AM: '早', PM: '晚' },
+      }}
+      {...accessibilityProps}
+    />
+  );
+};
+
 const accessibilityProps = {
   HourPickerProps: {
     'aria-describedby': 'this is hour button',

@@ -9,7 +9,7 @@ import { RcTimePickerProps } from '../TimePicker';
 import { RcTimePickerUtils } from '../utils';
 
 export const StyledPickerPopperWrap = styled.div<
-  Omit<RcTimePickerProps, 'value'>
+  Omit<RcTimePickerProps, 'value' | 'periodTexts'>
 >`
   ${({ size }) => {
     const { width, height } = RcTimePickerUtils[size!];

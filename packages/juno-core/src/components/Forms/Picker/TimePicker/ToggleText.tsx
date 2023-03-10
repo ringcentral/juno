@@ -30,6 +30,8 @@ type ToggleTextProps = {
   getScreenReaderLabel?: (value: string) => string;
   /** trigger when confirm value */
   onClose: (event: React.KeyboardEvent<HTMLButtonElement>) => void;
+  /** custom text for 'AM' and 'PM' */
+  periodTexts: { AM: string; PM: string };
 } & RcClickFiledStyleProps &
   Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'onClick' | 'value'>;
 
@@ -48,6 +50,7 @@ const _ToggleText = memo(
         disabled,
         getScreenReaderLabel,
         onClose,
+        periodTexts,
         ...rest
       },
       ref,
@@ -122,7 +125,7 @@ const _ToggleText = memo(
           aria-label={label}
           {...rest}
         >
-          <>{innerValue}</>
+          <>{periodTexts[innerValue]}</>
         </StyledTimeIconButton>
       );
     },
