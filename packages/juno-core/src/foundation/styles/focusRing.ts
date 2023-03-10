@@ -57,7 +57,7 @@ export const focusRing = (
         margin: calc(-${offset} - ${borderWidth});
         border-radius: calc(${offset} + ${radius(borderRadius)});
         box-shadow: ${isInset ? 'inset' : ''} 0 0 0 2px
-          ${palette2('interactive', 'b02')};
+          ${palette2('interactive', 'f01')};
       }
     `;
   }
@@ -66,6 +66,6 @@ export const focusRing = (
 
   return css`
     box-shadow: 0 0 0 2px ${getParsePaletteColor(gapColor)},
-      0 0 0 4px ${palette2('interactive', 'b02')};
+      0 0 0 4px ${palette2('interactive', 'f01')};
   `;
 };
