@@ -352,6 +352,7 @@ export { default as RadioUnselect } from './RadioUnselect';
 export { default as Radio } from './Radio';
 export { default as RbnOff } from './RbnOff';
 export { default as RbnOn } from './RbnOn';
+export { default as RcApp } from './RcApp';
 export { default as RcBlog } from './RcBlog';
 export { default as RcCcBorder } from './RcCcBorder';
 export { default as RcCloudContact } from './RcCloudContact';
