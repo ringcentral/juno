@@ -52659,14 +52659,14 @@ var focusRing = (variant, options = {}) => {
         margin: calc(-${offset7} - ${borderWidth});
         border-radius: calc(${offset7} + ${radius3(borderRadius3)});
         box-shadow: ${isInset ? "inset" : ""} 0 0 0 2px
-          ${palette22("interactive", "b02")};
+          ${palette22("interactive", "f01")};
       }
     `;
   }
   const { gapColor = "neutral.b01" } = options;
   return css2`
     box-shadow: 0 0 0 2px ${getParsePaletteColor(gapColor)},
-      0 0 0 4px ${palette22("interactive", "b02")};
+      0 0 0 4px ${palette22("interactive", "f01")};
   `;
 };
 
@@ -77172,10 +77172,10 @@ var pad = (num, size = 2) => {
   }
   return s2;
 };
-var getFormattedTime = ({ hour, minute, period }, isTwelveHourSystem) => {
+var getFormattedTime = ({ hour, minute, period, periodTexts }, isTwelveHourSystem) => {
   const formattedHour = parseNumberToString(hour, isTwelveHourSystem);
   const formattedMinute = parseNumberToString(minute);
-  const periodText = isTwelveHourSystem ? ` ${period}` : "";
+  const periodText = isTwelveHourSystem ? ` ${periodTexts[period]}` : "";
   return `${formattedHour}:${formattedMinute}${periodText}`;
 };
 var HALF_DAY_HOURS = 12;
@@ -78690,6 +78690,7 @@ var _ToggleText = memo495(forwardRef675(({
   disabled: disabled3,
   getScreenReaderLabel,
   onClose,
+  periodTexts,
   ...rest
 }, ref2) => {
   const [innerValueRef, setInnerValue] = useRefState(value);
@@ -78738,7 +78739,7 @@ var _ToggleText = memo495(forwardRef675(({
     "aria-live": "assertive",
     "aria-label": label3,
     ...rest
-  }, /* @__PURE__ */ React763.createElement(React763.Fragment, null, innerValue));
+  }, /* @__PURE__ */ React763.createElement(React763.Fragment, null, periodTexts[innerValue]));
 }));
 var ToggleText = styled_components_default(_ToggleText)`
   margin-left: ${({ size }) => RcTimePickerUtils[size].timeSystem.margin};
@@ -78795,6 +78796,10 @@ import React765, {
   useRef as useRef94,
   useState as useState41
 } from "react";
+var defaultPeriodTexts = {
+  input: { AM: "AM", PM: "PM" },
+  toggle: { AM: "AM", PM: "PM" }
+};
 var _RcTimePicker = forwardRef676((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcTimePicker" });
   const {
@@ -78815,6 +78820,7 @@ var _RcTimePicker = forwardRef676((inProps, ref2) => {
     InputProps: InputPropsProp,
     classes,
     defaultPickerValue,
+    periodTexts = defaultPeriodTexts,
     ...rest
   } = props;
   const actionRef = useRef94(null);
@@ -78978,7 +78984,8 @@ var _RcTimePicker = forwardRef676((inProps, ref2) => {
     const formattedTime = getFormattedTime({
       hour,
       minute,
-      period: currentPeriod
+      period: currentPeriod,
+      periodTexts: periodTexts.input
     }, isTwelveHourSystem);
     textFiledValueRef.current = formattedTime;
   }, [
@@ -78986,7 +78993,9 @@ var _RcTimePicker = forwardRef676((inProps, ref2) => {
     currentHourMinute.minute,
     currentTimestamp,
     isTwelveHourSystem,
-    currentPeriod
+    currentPeriod,
+    periodTexts.input.AM,
+    periodTexts.input.PM
   ]);
   const originalHourValue = isHaveValue ? currentHourMinute.hour : range.min.hour || 0;
   const boundary = useMemo75(() => getNumberPickerBoundary(originalHourValue, {
@@ -79041,6 +79050,7 @@ var _RcTimePicker = forwardRef676((inProps, ref2) => {
     automationId: "time-picker-minute",
     ...MinutePickerProps
   }), isTwelveHourSystem && /* @__PURE__ */ React765.createElement("div", null, /* @__PURE__ */ React765.createElement(ToggleText, {
+    periodTexts: periodTexts.toggle,
     ref: periodRef,
     size,
     disabled: toggleTextDisabled,
@@ -79096,7 +79106,7 @@ RcRadioGroup.displayName = "RcRadioGroup";
 import React771, { forwardRef as forwardRef682, useMemo as useMemo78 } from "react";
 
 // ../juno-core/src/components/VirtualizedMenu/VirtualizedMenu.tsx
-import React768, { forwardRef as forwardRef679, useMemo as useMemo77, useRef as useRef96 } from "react";
+import React768, { forwardRef as forwardRef679, useMemo as useMemo77, useRef as useRef97 } from "react";
 
 // ../juno-core/src/components/VirtualizedMenu/VirtualizedMenuList.tsx
 var import_react_is13 = __toModule(require_react_is2());
@@ -79328,6 +79338,28 @@ var RcVirtualizedMenuList = styled_components_default(_RcVirtualizedMenuList)``;
 RcVirtualizedMenuList.defaultProps = {};
 RcVirtualizedMenuList.displayName = "RcVirtualizedMenuList";
 
+// ../juno-core/src/components/VirtualizedMenu/useNextFrame.tsx
+import { useRef as useRef96, useLayoutEffect as useLayoutEffect30 } from "react";
+var useNextFrame = () => {
+  const rafIdRef = useRef96(null);
+  useLayoutEffect30(() => {
+    if (rafIdRef.current !== null) {
+      cancelAnimationFrame(rafIdRef.current);
+    }
+  }, []);
+  return (task) => {
+    if (rafIdRef.current !== null) {
+      cancelAnimationFrame(rafIdRef.current);
+    }
+    rafIdRef.current = requestAnimationFrame(() => {
+      rafIdRef.current = requestAnimationFrame(() => {
+        rafIdRef.current = null;
+        task();
+      });
+    });
+  };
+};
+
 // ../juno-core/src/components/VirtualizedMenu/VirtualizedMenu.tsx
 var _RcVirtualizedMenu = forwardRef679((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcVirtualizedMenu" });
@@ -79336,7 +79368,12 @@ var _RcVirtualizedMenu = forwardRef679((inProps, ref2) => {
     children: children2,
     classes: classesProp,
     disableAutoFocusItem = false,
-    MenuListProps: { maxHeight: maxHeight2 = 416, onKeyDown, ...MenuListProps } = {},
+    MenuListProps: {
+      maxHeight: maxHeight2 = 416,
+      onKeyDown,
+      VirtuosoProps: VirtuosoProps2,
+      ...MenuListProps
+    } = {},
     onClose,
     open,
     TransitionProps: TransitionPropsProp,
@@ -79344,12 +79381,15 @@ var _RcVirtualizedMenu = forwardRef679((inProps, ref2) => {
     PopoverClasses,
     transitionDuration = "auto",
     variant = "selectedMenu",
+    action: popoverActionProp = null,
     ...rest
   } = props;
   const { document: document2 } = useRcPortalWindowContext();
-  const popoverRef = useRef96(null);
+  const popoverRef = useRef97(null);
   const handleRef = useForkRef2(ref2, popoverRef);
-  const menuListActionRef = useRef96(null);
+  const popoverAction = useRef97(null);
+  const handlePopoverAction = useForkRef2(popoverAction, popoverActionProp);
+  const menuListActionRef = useRef97(null);
   const classes = useMemo77(() => combineClasses(RcVirtualizedMenuClasses, classesProp), [classesProp]);
   const autoFocusItem = autoFocus && !disableAutoFocusItem && open;
   const TransitionProps4 = useMemo77(() => combineProps({
@@ -79380,8 +79420,10 @@ var _RcVirtualizedMenu = forwardRef679((inProps, ref2) => {
       }
     }
   });
+  const runInNextFrame = useNextFrame();
   return /* @__PURE__ */ React768.createElement(RcPopover, {
     ref: handleRef,
+    action: handlePopoverAction,
     container: document2.body,
     classes: PopoverClasses,
     onClose,
@@ -79399,6 +79441,15 @@ var _RcVirtualizedMenu = forwardRef679((inProps, ref2) => {
     maxHeight: maxHeight2,
     variant,
     onKeyDown: handleListKeyDown,
+    VirtuosoProps: {
+      ...VirtuosoProps2,
+      totalListHeightChanged: (height2) => {
+        VirtuosoProps2?.totalListHeightChanged?.(height2);
+        runInNextFrame(() => {
+          popoverAction.current?.updatePosition();
+        });
+      }
+    },
     ...MenuListProps,
     className: clsx_m_default(classes.list, MenuListProps.className)
   }, children2));
@@ -80094,9 +80145,9 @@ import React773, {
   forwardRef as forwardRef684,
   memo as memo497,
   useContext as useContext31,
-  useLayoutEffect as useLayoutEffect30,
+  useLayoutEffect as useLayoutEffect31,
   useMemo as useMemo80,
-  useRef as useRef97,
+  useRef as useRef98,
   useState as useState44
 } from "react";
 
@@ -80135,10 +80186,10 @@ var _RcSubMenu = forwardRef684((inProps, ref2) => {
     onClose,
     ...rest
   } = props;
-  const _popperRef = useRef97(null);
+  const _popperRef = useRef98(null);
   const popperRef = useForkRef2(_popperRef, PopperProps.ref || null);
   const popperId = useId2(PopperProps.id);
-  const menuItemIdRef = useRef97(null);
+  const menuItemIdRef = useRef98(null);
   const [anchorEl, setAnchorEl] = useState44(null);
   const [open, setOpen] = useState44(false);
   const menuListContext = useContext31(RcMenuListContext);
@@ -80230,7 +80281,7 @@ var _RcSubMenu = forwardRef684((inProps, ref2) => {
       handleClose(e2, "popperMouseLeave");
     }
   });
-  useLayoutEffect30(() => {
+  useLayoutEffect31(() => {
     if (open && menuListContext.menuListId !== "" && menuListContext.focusedMenuItemId !== menuItemIdRef.current) {
       handleCloseSubMenu();
     }
@@ -80240,7 +80291,7 @@ var _RcSubMenu = forwardRef684((inProps, ref2) => {
     menuListContext.menuListId,
     open
   ]);
-  useLayoutEffect30(() => {
+  useLayoutEffect31(() => {
     if (open && menuListContext.menuListId === "" && menuContext.focusedMenuItemId !== menuItemIdRef.current) {
       handleCloseSubMenu();
     }
@@ -80691,7 +80742,7 @@ import React778, {
   forwardRef as forwardRef689,
   useEffect as useEffect61,
   useMemo as useMemo85,
-  useRef as useRef98,
+  useRef as useRef99,
   useState as useState46
 } from "react";
 var import_isString2 = __toModule(require_isString());
@@ -80838,9 +80889,9 @@ var _RcInlineEditable = forwardRef689((inProps, ref2) => {
   const [isEditing, setEditing] = useState46(false);
   const [isSaving, setSaving] = useState46(false);
   const [draftRef, setDraft] = useRefState("");
-  const isNotNeedSaveWhenBlurRef = useRef98(false);
-  const textFieldRef = useRef98();
-  const labelRef = useRef98(null);
+  const isNotNeedSaveWhenBlurRef = useRef99(false);
+  const textFieldRef = useRef99();
+  const labelRef = useRef99(null);
   const saving = isSaving || savingProp;
   const handleSave = async (newValue, reason) => {
     const outputValue = multiline ? (0, import_trimEnd.default)(newValue) : newValue.trim();
@@ -81682,7 +81733,7 @@ import {
   Fragment as Fragment12,
   createElement as createElement618,
   forwardRef as forwardRef696,
-  useRef as useRef99,
+  useRef as useRef100,
   useState as useState47
 } from "react";
 
@@ -81825,7 +81876,7 @@ var Rating = /* @__PURE__ */ forwardRef696(function Rating2(props, ref2) {
   }
   var _useIsFocusVisible = useIsFocusVisible(), isFocusVisible2 = _useIsFocusVisible.isFocusVisible, onBlurVisible = _useIsFocusVisible.onBlurVisible, focusVisibleRef = _useIsFocusVisible.ref;
   var _React$useState2 = useState47(false), focusVisible2 = _React$useState2[0], setFocusVisible = _React$useState2[1];
-  var rootRef = useRef99();
+  var rootRef = useRef100();
   var handleFocusRef = useForkRef(focusVisibleRef, rootRef);
   var handleRef = useForkRef(handleFocusRef, ref2);
   var handleMouseMove = function handleMouseMove2(event) {
@@ -82185,7 +82236,7 @@ RcRating.defaultProps = {
 RcRating.displayName = "RcRating";
 
 // ../juno-core/src/components/Responsive/Responsive.tsx
-import React796, { useRef as useRef100, useState as useState48 } from "react";
+import React796, { useRef as useRef101, useState as useState48 } from "react";
 
 // ../juno-core/src/components/Responsive/utils/getMatchedBreakpoint.ts
 var bpListL2S = [...breakpointList].reverse();
@@ -82203,7 +82254,7 @@ var RcResponsive = (inProps) => {
   } = props;
   const { externalWindow } = useRcPortalWindowContext();
   const currentWindow = externalWindow ?? window;
-  const bodyRef = useRef100(currentWindow.document.body);
+  const bodyRef = useRef101(currentWindow.document.body);
   const targetRef = responsiveTarget ?? bodyRef;
   const [contextValue, setContextValue] = useState48(() => {
     const target = targetRef.current;
@@ -82556,13 +82607,13 @@ import React803, { forwardRef as forwardRef702, useMemo as useMemo94 } from "rea
 import React802, { forwardRef as forwardRef701, useMemo as useMemo93 } from "react";
 
 // ../juno-core/src/components/Stepper/StepIcon/utils/StepIconUtils.ts
-import { useRef as useRef101 } from "react";
+import { useRef as useRef102 } from "react";
 var RcStepIconClasses = RcClasses(["root", "active", "text"], "RcStepIcon");
 var iconColor = palette22("interactive", "b02");
 var iconTextColor = palette22("neutral", "f01");
 var useIsEditable = ({ active, completed }) => {
-  const completedTimesRef = useRef101(0);
-  const isEditRef = useRef101(false);
+  const completedTimesRef = useRef102(0);
+  const isEditRef = useRef102(false);
   const { current: completedTimes } = completedTimesRef;
   const { current: isEdit } = isEditRef;
   if (completedTimes === 0 && !active && completed) {
@@ -83409,7 +83460,7 @@ import React818, {
   forwardRef as forwardRef716,
   useEffect as useEffect62,
   useMemo as useMemo104,
-  useRef as useRef102,
+  useRef as useRef103,
   useState as useState50
 } from "react";
 
@@ -83688,18 +83739,18 @@ var _MoreMenuTabs = forwardRef716((props, ref2) => {
   const prevChildrenProp = usePrevious(() => childrenProp);
   const isVertical = orientation === "vertical";
   const oriStr = isVertical ? "height" : "width";
-  const innerRef = useRef102(null);
-  const moreTabRef = useRef102(null);
+  const innerRef = useRef103(null);
+  const moreTabRef = useRef103(null);
   const tabsRef = useForkRef2(innerRef, ref2);
-  const tabRefsMapRef = useRef102();
-  const moreTabSizeRef = useRef102(DEFAULT_SIZE);
-  const allTabsSizeRef = useRef102(DEFAULT_SIZE);
-  const tabsTabChildRef = useRef102([]);
-  const tabsSizeRef = useRef102(DEFAULT_SIZE);
-  const groupingRef = useRef102();
+  const tabRefsMapRef = useRef103();
+  const moreTabSizeRef = useRef103(DEFAULT_SIZE);
+  const allTabsSizeRef = useRef103(DEFAULT_SIZE);
+  const tabsTabChildRef = useRef103([]);
+  const tabsSizeRef = useRef103(DEFAULT_SIZE);
+  const groupingRef = useRef103();
   const [menuTabChild, setMenuTabChild] = useState50([]);
   const [useMoreMode, setUseMoreMode] = useState50(true);
-  const hasResizeRef = useRef102(true);
+  const hasResizeRef = useRef103(true);
   const forceUpdate = useForceUpdate();
   const sizeChange = (size) => {
     hasResizeRef.current = true;
@@ -84190,7 +84241,7 @@ RcTag.defaultProps = {
 RcTag.displayName = "RcTag";
 
 // ../juno-core/src/components/Text/Text.tsx
-import React825, { forwardRef as forwardRef722, useMemo as useMemo109, useRef as useRef103, useState as useState52 } from "react";
+import React825, { forwardRef as forwardRef722, useMemo as useMemo109, useRef as useRef104, useState as useState52 } from "react";
 var import_isString3 = __toModule(require_isString());
 
 // ../juno-core/src/components/Text/styles/StyledText.tsx
@@ -84230,7 +84281,7 @@ var _RcText = forwardRef722((inProps, ref2) => {
     ...rest
   } = props;
   const [isShowTitle, setIsShowTitle] = useState52(true);
-  const innerRef = useRef103(null);
+  const innerRef = useRef104(null);
   const textRef = useForkRef2(innerRef, ref2);
   if (titleWhenOverflow) {
     useOverflow(innerRef, (state) => setIsShowTitle(state));
