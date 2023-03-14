@@ -1228,7 +1228,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
           className="MuiBox-root MuiBox-root-129"
         >
           <div
-            className="MuiFormControl-root MuiTextField-root RcTextField-root c30 c31 sc-fXeWAj c31"
+            className="MuiFormControl-root MuiTextField-root RcTextField-root c30 c31 sc-gUQvok c31"
             theme={
               Object {
                 "breakpoints": Object {
