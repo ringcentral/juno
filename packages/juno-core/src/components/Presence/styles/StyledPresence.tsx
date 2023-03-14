@@ -10,9 +10,9 @@ import {
 import { RcIcon } from '../../Icon';
 import { RcPresenceProps } from '../Presence';
 import {
-  RcPresenceAvailableIconSizes,
-  RcPresenceColors,
   RcPresenceSizes,
+  RcPresenceInnerIconSizes,
+  RcPresenceBackgroundColors,
 } from '../utils';
 
 export const _StyledPresence = forwardRef<any, RcPresenceProps>(
@@ -29,13 +29,12 @@ export const StyledPresence = styled(_StyledPresence)`
   border-radius: 50%;
   box-sizing: content-box;
 
-  ${({ size, borderSize, type, color }) => {
+  ${({ size, type, borderSize, color }) => {
     const sizeValue = px(RcPresenceSizes[size!][0]);
 
-    const availableSize = RcPresenceAvailableIconSizes[size!];
+    const innerIconSize = RcPresenceInnerIconSizes[size!];
 
-    const iconSizeValue = px(availableSize[0]);
-    const scaleRate = availableSize[1];
+    const iconSizeValue = px(innerIconSize);
 
     return css`
       width: ${sizeValue};
@@ -44,11 +43,9 @@ export const StyledPresence = styled(_StyledPresence)`
         ${palette2('neutral', 'l01')};
       background: ${color
         ? getParsePaletteColor(color)
-        : RcPresenceColors[type!]};
+        : RcPresenceBackgroundColors[type!] || palette2('neutral', 'l01')};
 
       ${RcIcon} {
-        transform: ${scaleRate && `scale(${scaleRate})`};
-
         svg {
           width: ${iconSizeValue};
           height: ${iconSizeValue};
