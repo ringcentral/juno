@@ -1,6 +1,6 @@
 import React, { forwardRef, memo } from 'react';
 
-const Attended = memo(
+const Dnd = memo(
   forwardRef(
     (
       props: React.SVGProps<SVGSVGElement>,
@@ -12,11 +12,11 @@ const Attended = memo(
         ref={svgRef}
         {...props}
       >
-        <path d="M30 10.393L24.509 5 12.96 16.253l-5.459-5.301L2 16.314 12.963 27z" />
+        <path d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.44,18.22H7.56a2.22,2.22,0,1,1,0-4.44H24.44a2.22,2.22,0,1,1,0,4.44Z" />
       </svg>
     ),
   ),
 );
-Attended.displayName = 'Attended';
-Attended['iconName'] = 'attended';
-export default Attended;
+Dnd.displayName = 'Dnd';
+Dnd['iconName'] = 'dnd';
+export default Dnd;

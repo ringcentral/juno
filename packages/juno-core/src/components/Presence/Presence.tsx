@@ -1,4 +1,4 @@
-import React, { forwardRef, useMemo } from 'react';
+import React, { forwardRef } from 'react';
 
 import {
   RcBaseSize,
@@ -7,8 +7,9 @@ import {
   useThemeProps,
 } from '../../foundation';
 import { RcIcon } from '../Icon';
-import { Attended, Unattended } from './assets';
-import { StyledDND, StyledPresence } from './styles';
+import { Unattended, Dnd, Check, Offline, Default } from './assets';
+import { StyledPresence } from './styles';
+import { RcPresenceColors } from './utils';
 
 type RcPresenceType =
   | 'notReady'
@@ -21,7 +22,6 @@ type RcPresenceType =
   | 'offline'
   | 'attended'
   | 'unAttended';
-
 type RcPresenceSize = RcBaseSize<
   'xxsmall' | 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge'
 >;
@@ -39,26 +39,33 @@ type RcPresenceProps = {
 
 const _RcPresence = forwardRef<any, RcPresenceProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcPresence' });
-  const { type, size } = props;
+  const { type, color } = props;
 
-  const innerChildren = useMemo(() => {
+  const symbol = (() => {
     switch (type) {
       case 'DND':
-        return <StyledDND size={size} />;
+        return Dnd;
+      case 'available':
       case 'attended':
-        return <RcIcon symbol={Attended} color="neutral.f01" size="inherit" />;
+        return Check;
       case 'unAttended':
-        return (
-          <RcIcon symbol={Unattended} color="neutral.f01" size="inherit" />
-        );
+        return Unattended;
+      case 'offline':
+      case 'unavailable':
+      case 'notReady':
+        return Offline;
       default:
-        return null;
+        return Default;
     }
-  }, [size, type]);
+  })();
 
   return (
     <StyledPresence ref={ref} {...props}>
-      {innerChildren}
+      <RcIcon
+        symbol={symbol}
+        color={color || RcPresenceColors[type!]}
+        size="inherit"
+      />
     </StyledPresence>
   );
 });

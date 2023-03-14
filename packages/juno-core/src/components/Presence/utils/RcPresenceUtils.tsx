@@ -6,36 +6,19 @@ export const RcPresenceSizes: UnitMap<RcPresenceSize, [number, number]> = {
   xxsmall: [8, 1],
   xsmall: [8, 2],
   small: [10, 2],
-  medium: [10, 3],
-  large: [14, 3],
-  xlarge: [18, 3],
+  medium: [12, 2],
+  large: [16, 2],
+  xlarge: [20, 2],
 };
 
 // width, height
-export const RcPresenceInnerIconSizes: UnitMap<
-  RcPresenceSize,
-  [number, number]
-> = {
-  xxsmall: [4, 2],
-  xsmall: [6, 2],
-  small: [6, 2],
-  medium: [6, 2],
-  large: [10, 4],
-  xlarge: [14, 4],
-};
-
-// use scale rate to make that be odd value
-// width, scaleRate
-export const RcPresenceAvailableIconSizes: UnitMap<
-  RcPresenceSize,
-  [number, number | undefined]
-> = {
-  xxsmall: [10, 0.5],
-  xsmall: [10, 0.5],
-  small: [6, undefined],
-  medium: [6, undefined],
-  large: [10, undefined],
-  xlarge: [12, undefined],
+export const RcPresenceInnerIconSizes: UnitMap<RcPresenceSize, number> = {
+  xxsmall: 8,
+  xsmall: 8,
+  small: 10,
+  medium: 12,
+  large: 16,
+  xlarge: 20,
 };
 
 const presenceOn = palette2('presence', 'available');
@@ -56,4 +39,20 @@ export const RcPresenceColors: UnitMap<RcPresenceType> = {
   unavailable: presenceOff,
   notReady: presenceOff,
   offline: presenceOff,
+};
+
+export const RcPresenceBackgroundColors: UnitMap<RcPresenceType> = {
+  // positive
+  available: '#FFFFFF',
+  attended: '#FFFFFF',
+  // negative
+  unAttended: '#FFFFFF',
+  onCall: '#FFFFFF',
+  inMeeting: '#FFFFFF',
+  DND: '#FFFFFF',
+  busy: '#FFFFFF',
+
+  unavailable: palette2('neutral', 'l01'),
+  notReady: palette2('neutral', 'l01'),
+  offline: palette2('neutral', 'l01'),
 };
