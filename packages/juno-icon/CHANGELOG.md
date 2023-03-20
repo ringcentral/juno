@@ -1,4 +1,15 @@
 
+## [1.36.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.35.0...juno-icon-v1.36.0) (2023-03-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* **Icon:** remove icon PresenceAvailable, PresenceAvailable, PresenceDnd, PresenceOffline
+
+### Features
+
+* **Icon:** add icon ExternalLinkGlobal, GoogleChromeLogo; remove icon PresenceAvailable, PresenceAvailable, PresenceDnd, PresenceOffline ([41449b8](https://github.com/ringcentral/juno/commit/41449b874f21ac4bcb669050f5e9fe3c2aec77f8))
+
 ## [1.35.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.34.0...juno-icon-v1.35.0) (2023-03-13)
 
 
