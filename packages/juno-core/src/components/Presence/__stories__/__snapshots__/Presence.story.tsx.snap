@@ -30,9 +30,9 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c1 {
@@ -53,14 +53,14 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
 }
 
 .c1 .c2 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 <div
@@ -68,9 +68,9 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   type="notReady"
 >
   <div
-    borderSizeValue={2}
+    borderSizeValue={1}
     className="c1"
-    iconSizeValue={8}
+    iconSizeValue={10}
   >
     <span
       className="c2 c3 offline icon"
@@ -136,12 +136,12 @@ Array [
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -233,7 +233,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -256,7 +256,7 @@ Array [
   background: #FFFFFF;
 }
 
-.c8 .c3 svg {
+.c7 .c3 svg {
   width: 10px;
   height: 10px;
 }
@@ -442,9 +442,9 @@ Array [
       type="available"
     >
       <div
-        borderSizeValue={2}
-        className="c2"
-        iconSizeValue={8}
+        borderSizeValue={1}
+        className="c7"
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 check icon"
@@ -464,12 +464,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8"
       type="available"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c7"
         iconSizeValue={10}
       >
         <span
@@ -618,12 +618,12 @@ Array [
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -715,7 +715,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -738,7 +738,7 @@ Array [
   background: #FFFFFF;
 }
 
-.c8 .c3 svg {
+.c7 .c3 svg {
   width: 10px;
   height: 10px;
 }
@@ -924,9 +924,9 @@ Array [
       type="attended"
     >
       <div
-        borderSizeValue={2}
-        className="c2"
-        iconSizeValue={8}
+        borderSizeValue={1}
+        className="c7"
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 check icon"
@@ -946,12 +946,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8"
       type="attended"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c7"
         iconSizeValue={10}
       >
         <span
@@ -1100,12 +1100,12 @@ Array [
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1197,7 +1197,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1220,7 +1220,7 @@ Array [
   background: #FFFFFF;
 }
 
-.c8 .c3 svg {
+.c7 .c3 svg {
   width: 10px;
   height: 10px;
 }
@@ -1405,9 +1405,9 @@ Array [
       type="unAttended"
     >
       <div
-        borderSizeValue={2}
-        className="c2"
-        iconSizeValue={8}
+        borderSizeValue={1}
+        className="c7"
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 unattended icon"
@@ -1426,12 +1426,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8"
       type="unAttended"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c7"
         iconSizeValue={10}
       >
         <span
@@ -1576,12 +1576,12 @@ Array [
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1673,7 +1673,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1696,7 +1696,7 @@ Array [
   background: #FFFFFF;
 }
 
-.c8 .c3 svg {
+.c7 .c3 svg {
   width: 10px;
   height: 10px;
 }
@@ -1883,9 +1883,9 @@ Array [
       type="onCall"
     >
       <div
-        borderSizeValue={2}
-        className="c2"
-        iconSizeValue={8}
+        borderSizeValue={1}
+        className="c7"
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 default icon"
@@ -1906,12 +1906,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8"
       type="onCall"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c7"
         iconSizeValue={10}
       >
         <span
@@ -2064,12 +2064,12 @@ Array [
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2161,7 +2161,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2184,7 +2184,7 @@ Array [
   background: #FFFFFF;
 }
 
-.c8 .c3 svg {
+.c7 .c3 svg {
   width: 10px;
   height: 10px;
 }
@@ -2371,9 +2371,9 @@ Array [
       type="inMeeting"
     >
       <div
-        borderSizeValue={2}
-        className="c2"
-        iconSizeValue={8}
+        borderSizeValue={1}
+        className="c7"
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 default icon"
@@ -2394,12 +2394,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8"
       type="inMeeting"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c7"
         iconSizeValue={10}
       >
         <span
@@ -2552,12 +2552,12 @@ Array [
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2649,7 +2649,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2672,7 +2672,7 @@ Array [
   background: #FFFFFF;
 }
 
-.c8 .c3 svg {
+.c7 .c3 svg {
   width: 10px;
   height: 10px;
 }
@@ -2857,9 +2857,9 @@ Array [
       type="DND"
     >
       <div
-        borderSizeValue={2}
-        className="c2"
-        iconSizeValue={8}
+        borderSizeValue={1}
+        className="c7"
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 dnd icon"
@@ -2878,12 +2878,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8"
       type="DND"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c7"
         iconSizeValue={10}
       >
         <span
@@ -3028,12 +3028,12 @@ Array [
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3125,7 +3125,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3148,7 +3148,7 @@ Array [
   background: #FFFFFF;
 }
 
-.c8 .c3 svg {
+.c7 .c3 svg {
   width: 10px;
   height: 10px;
 }
@@ -3335,9 +3335,9 @@ Array [
       type="busy"
     >
       <div
-        borderSizeValue={2}
-        className="c2"
-        iconSizeValue={8}
+        borderSizeValue={1}
+        className="c7"
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 default icon"
@@ -3358,12 +3358,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8"
       type="busy"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c7"
         iconSizeValue={10}
       >
         <span
@@ -3516,12 +3516,12 @@ Array [
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3613,7 +3613,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3636,7 +3636,7 @@ Array [
   background: #FFFFFF;
 }
 
-.c8 .c3 svg {
+.c7 .c3 svg {
   width: 10px;
   height: 10px;
 }
@@ -3820,9 +3820,9 @@ Array [
       type="unavailable"
     >
       <div
-        borderSizeValue={2}
-        className="c2"
-        iconSizeValue={8}
+        borderSizeValue={1}
+        className="c7"
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -3840,12 +3840,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8"
       type="unavailable"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c7"
         iconSizeValue={10}
       >
         <span
@@ -3986,12 +3986,12 @@ Array [
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4083,7 +4083,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4106,7 +4106,7 @@ Array [
   background: #FFFFFF;
 }
 
-.c8 .c3 svg {
+.c7 .c3 svg {
   width: 10px;
   height: 10px;
 }
@@ -4290,9 +4290,9 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
-        className="c2"
-        iconSizeValue={8}
+        borderSizeValue={1}
+        className="c7"
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -4310,12 +4310,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8"
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c7"
         iconSizeValue={10}
       >
         <span
@@ -4456,12 +4456,12 @@ Array [
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4553,7 +4553,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4576,7 +4576,7 @@ Array [
   background: #FFFFFF;
 }
 
-.c8 .c3 svg {
+.c7 .c3 svg {
   width: 10px;
   height: 10px;
 }
@@ -4760,9 +4760,9 @@ Array [
       type="offline"
     >
       <div
-        borderSizeValue={2}
-        className="c2"
-        iconSizeValue={8}
+        borderSizeValue={1}
+        className="c7"
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -4780,12 +4780,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8"
       type="offline"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c7"
         iconSizeValue={10}
       >
         <span
@@ -4926,12 +4926,12 @@ Array [
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5048,7 +5048,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5071,7 +5071,7 @@ Array [
   background: #066FAC;
 }
 
-.c8 .c3 svg {
+.c7 .c3 svg {
   width: 10px;
   height: 10px;
 }
@@ -5230,9 +5230,9 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
-        className="c2"
-        iconSizeValue={8}
+        borderSizeValue={1}
+        className="c7"
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -5250,12 +5250,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8"
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c7"
         iconSizeValue={10}
       >
         <span
@@ -5396,12 +5396,12 @@ Array [
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5543,7 +5543,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5566,7 +5566,7 @@ Array [
   background: yellow;
 }
 
-.c8 .c3 svg {
+.c7 .c3 svg {
   width: 10px;
   height: 10px;
 }
@@ -5700,9 +5700,9 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
-        className="c2"
-        iconSizeValue={8}
+        borderSizeValue={1}
+        className="c7"
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -5720,12 +5720,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8"
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c7"
         iconSizeValue={10}
       >
         <span
