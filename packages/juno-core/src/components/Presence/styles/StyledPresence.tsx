@@ -4,24 +4,31 @@ import {
   css,
   getParsePaletteColor,
   palette2,
-  px,
   styled,
 } from '../../../foundation';
 import { RcIcon } from '../../Icon';
-import { RcPresenceProps } from '../Presence';
-import {
-  RcPresenceSizes,
-  RcPresenceInnerIconSizes,
-  RcPresenceBackgroundColors,
-} from '../utils';
+import { PresenceSizeProps } from '../Presence';
+import { RcPresenceBackgroundColors } from '../utils';
 
-export const _StyledPresence = forwardRef<any, RcPresenceProps>(
-  ({ color, borderSize, type, size, ...rest }, ref) => (
-    <div ref={ref} {...rest} />
-  ),
+export const PresenceContainer = styled.div<PresenceSizeProps>`
+  ${({ iconSizeValue, borderSizeValue }) => {
+    return css`
+      display: flex;
+      justify-content: center;
+      background-color: ${palette2('neutral', 'l01')};
+      border-radius: 50%;
+      width: ${iconSizeValue}px;
+      height: ${iconSizeValue}px;
+      padding: ${borderSizeValue}px;
+    `;
+  }}
+`;
+
+export const _StyledPresence = forwardRef<any, PresenceSizeProps>(
+  ({ color, type, ...rest }, ref) => <div ref={ref} {...rest} />,
 );
 
-export const StyledPresence = styled(_StyledPresence)`
+export const StyledPresence = styled(_StyledPresence)<PresenceSizeProps>`
   display: flex;
   flex-shrink: 0;
   justify-content: center;
@@ -29,26 +36,18 @@ export const StyledPresence = styled(_StyledPresence)`
   border-radius: 50%;
   box-sizing: content-box;
 
-  ${({ size, type, borderSize, color }) => {
-    const sizeValue = px(RcPresenceSizes[size!][0]);
-
-    const innerIconSize = RcPresenceInnerIconSizes[size!];
-
-    const iconSizeValue = px(innerIconSize);
-
+  ${({ type, iconSizeValue, color }) => {
     return css`
-      width: ${sizeValue};
-      height: ${sizeValue};
-      border: ${RcPresenceSizes[borderSize || size!][1]}px solid
-        ${palette2('neutral', 'l01')};
+      width: ${iconSizeValue}px;
+      height: ${iconSizeValue}px;
       background: ${color
         ? getParsePaletteColor(color)
         : RcPresenceBackgroundColors[type!] || palette2('neutral', 'l01')};
 
       ${RcIcon} {
         svg {
-          width: ${iconSizeValue};
-          height: ${iconSizeValue};
+          width: ${iconSizeValue}px;
+          height: ${iconSizeValue}px;
         }
       }
     `;
