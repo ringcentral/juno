@@ -324,7 +324,7 @@ Array [
 }
 
 <div
-    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 sc-bXTejn c1 "
+    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 sc-eGRUor c1 "
     theme={
       Object {
         "breakpoints": Object {
@@ -1352,7 +1352,7 @@ Array [
 }
 
 <div
-    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 sc-bXTejn c1 "
+    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 sc-eGRUor c1 "
     onClick={[Function]}
     theme={
       Object {
@@ -2390,7 +2390,7 @@ Array [
 }
 
 <div
-    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 sc-bXTejn c1 MuiFormControl-fullWidth"
+    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 sc-eGRUor c1 MuiFormControl-fullWidth"
     theme={
       Object {
         "breakpoints": Object {
@@ -3508,7 +3508,7 @@ Array [
 }
 
 <div
-    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 sc-bXTejn c1 "
+    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 sc-eGRUor c1 "
     onClick={[Function]}
     theme={
       Object {
@@ -4513,7 +4513,7 @@ Array [
 }
 
 <div
-    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 sc-bXTejn c1 "
+    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 sc-eGRUor c1 "
     theme={
       Object {
         "breakpoints": Object {
@@ -5463,7 +5463,7 @@ Array [
 }
 
 <div
-    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 sc-bXTejn c1 "
+    className="MuiFormControl-root MuiTextField-root RcTextField-root c0 c1 sc-eGRUor c1 "
     theme={
       Object {
         "breakpoints": Object {
@@ -6671,7 +6671,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
       Min
     </h5>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 sc-bXTejn c2 "
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 sc-eGRUor c2 "
       theme={
         Object {
           "breakpoints": Object {
@@ -7292,7 +7292,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
       Max
     </h5>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 sc-bXTejn c2 "
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 sc-eGRUor c2 "
       theme={
         Object {
           "breakpoints": Object {
@@ -7913,7 +7913,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
       Min and Max
     </h5>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 sc-bXTejn c2 "
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 sc-eGRUor c2 "
       theme={
         Object {
           "breakpoints": Object {
@@ -8534,7 +8534,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
       disablePast
     </h5>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 sc-bXTejn c2 "
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 sc-eGRUor c2 "
       theme={
         Object {
           "breakpoints": Object {
@@ -9155,7 +9155,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
       disableFuture
     </h5>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 sc-bXTejn c2 "
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 sc-eGRUor c2 "
       theme={
         Object {
           "breakpoints": Object {
@@ -9776,7 +9776,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
       init value invalid(2019-11-16~2020-11-20)
     </h5>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c8 c9 sc-bXTejn c9 "
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c8 c9 sc-eGRUor c9 "
       theme={
         Object {
           "breakpoints": Object {
