@@ -11,16 +11,6 @@ export const RcPresenceSizes: UnitMap<RcPresenceSize, [number, number]> = {
   xlarge: [20, 2],
 };
 
-// width, height
-export const RcPresenceInnerIconSizes: UnitMap<RcPresenceSize, number> = {
-  xxsmall: 8,
-  xsmall: 8,
-  small: 10,
-  medium: 12,
-  large: 16,
-  xlarge: 20,
-};
-
 const presenceOn = palette2('presence', 'available');
 const presenceBusy = palette2('presence', 'busy');
 const presenceOff = palette2('presence', 'invisible');

@@ -8,8 +8,8 @@ import {
 } from '../../foundation';
 import { RcIcon } from '../Icon';
 import { Unattended, Dnd, Check, Offline, Default } from './assets';
-import { StyledPresence } from './styles';
-import { RcPresenceColors } from './utils';
+import { StyledPresence, PresenceContainer } from './styles';
+import { RcPresenceColors, RcPresenceSizes } from './utils';
 
 type RcPresenceType =
   | 'notReady'
@@ -37,9 +37,26 @@ type RcPresenceProps = {
   color?: RcPaletteProp;
 } & Omit<React.HTMLAttributes<HTMLDivElement>, 'color'>;
 
+type PresenceSizeProps = {
+  /** sizeValue in px */
+  iconSizeValue: number;
+  /** border size value in px * */
+  borderSizeValue: number;
+  /** presence type */
+  type?: RcPresenceType;
+  /** other custom color with presence */
+  color?: RcPaletteProp;
+};
+
 const _RcPresence = forwardRef<any, RcPresenceProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcPresence' });
-  const { type, color } = props;
+  const { type, color, size, borderSize } = props;
+  const sizeProps = {
+    iconSizeValue: RcPresenceSizes[size!][0],
+    borderSizeValue: RcPresenceSizes[borderSize || size!][1],
+    borderSize,
+    type,
+  };
 
   const symbol = (() => {
     switch (type) {
@@ -60,13 +77,15 @@ const _RcPresence = forwardRef<any, RcPresenceProps>((inProps, ref) => {
   })();
 
   return (
-    <StyledPresence ref={ref} {...props}>
-      <RcIcon
-        symbol={symbol}
-        color={color || RcPresenceColors[type!]}
-        size="inherit"
-      />
-    </StyledPresence>
+    <PresenceContainer {...sizeProps}>
+      <StyledPresence ref={ref} {...sizeProps} color={color}>
+        <RcIcon
+          symbol={symbol}
+          color={color || RcPresenceColors[type!]}
+          size="inherit"
+        />
+      </StyledPresence>
+    </PresenceContainer>
   );
 });
 
@@ -81,4 +100,9 @@ RcPresence.defaultProps = {
 RcPresence.displayName = 'RcPresence';
 
 export { RcPresence };
-export type { RcPresenceProps, RcPresenceSize, RcPresenceType };
+export type {
+  RcPresenceProps,
+  RcPresenceSize,
+  RcPresenceType,
+  PresenceSizeProps,
+};
