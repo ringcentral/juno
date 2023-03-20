@@ -54978,14 +54978,6 @@ var RcPresenceSizes = {
   large: [16, 2],
   xlarge: [20, 2]
 };
-var RcPresenceInnerIconSizes = {
-  xxsmall: 8,
-  xsmall: 8,
-  small: 10,
-  medium: 12,
-  large: 16,
-  xlarge: 20
-};
 var presenceOn = palette22("presence", "available");
 var presenceBusy = palette22("presence", "busy");
 var presenceOff = palette22("presence", "invisible");
@@ -55015,7 +55007,20 @@ var RcPresenceBackgroundColors = {
 };
 
 // ../juno-core/src/components/Presence/styles/StyledPresence.tsx
-var _StyledPresence = forwardRef598(({ color: color2, borderSize, type: type3, size, ...rest }, ref2) => /* @__PURE__ */ React659.createElement("div", {
+var PresenceContainer = styled_components_default.div`
+  ${({ iconSizeValue, borderSizeValue }) => {
+  return css2`
+      display: flex;
+      justify-content: center;
+      background-color: ${palette22("neutral", "l01")};
+      border-radius: 50%;
+      width: ${iconSizeValue}px;
+      height: ${iconSizeValue}px;
+      padding: ${borderSizeValue}px;
+    `;
+}}
+`;
+var _StyledPresence = forwardRef598(({ color: color2, type: type3, ...rest }, ref2) => /* @__PURE__ */ React659.createElement("div", {
   ref: ref2,
   ...rest
 }));
@@ -55027,21 +55032,16 @@ var StyledPresence = styled_components_default(_StyledPresence)`
   border-radius: 50%;
   box-sizing: content-box;
 
-  ${({ size, type: type3, borderSize, color: color2 }) => {
-  const sizeValue = px2(RcPresenceSizes[size][0]);
-  const innerIconSize = RcPresenceInnerIconSizes[size];
-  const iconSizeValue = px2(innerIconSize);
+  ${({ type: type3, iconSizeValue, color: color2 }) => {
   return css2`
-      width: ${sizeValue};
-      height: ${sizeValue};
-      border: ${RcPresenceSizes[borderSize || size][1]}px solid
-        ${palette22("neutral", "l01")};
+      width: ${iconSizeValue}px;
+      height: ${iconSizeValue}px;
       background: ${color2 ? getParsePaletteColor(color2) : RcPresenceBackgroundColors[type3] || palette22("neutral", "l01")};
 
       ${RcIcon} {
         svg {
-          width: ${iconSizeValue};
-          height: ${iconSizeValue};
+          width: ${iconSizeValue}px;
+          height: ${iconSizeValue}px;
         }
       }
     `;
@@ -55051,7 +55051,13 @@ var StyledPresence = styled_components_default(_StyledPresence)`
 // ../juno-core/src/components/Presence/Presence.tsx
 var _RcPresence = forwardRef599((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcPresence" });
-  const { type: type3, color: color2 } = props;
+  const { type: type3, color: color2, size, borderSize } = props;
+  const sizeProps = {
+    iconSizeValue: RcPresenceSizes[size][0],
+    borderSizeValue: RcPresenceSizes[borderSize || size][1],
+    borderSize,
+    type: type3
+  };
   const symbol = (() => {
     switch (type3) {
       case "DND":
@@ -55069,14 +55075,17 @@ var _RcPresence = forwardRef599((inProps, ref2) => {
         return Default_default;
     }
   })();
-  return /* @__PURE__ */ React660.createElement(StyledPresence, {
+  return /* @__PURE__ */ React660.createElement(PresenceContainer, {
+    ...sizeProps
+  }, /* @__PURE__ */ React660.createElement(StyledPresence, {
     ref: ref2,
-    ...props
+    ...sizeProps,
+    color: color2
   }, /* @__PURE__ */ React660.createElement(RcIcon, {
     symbol,
     color: color2 || RcPresenceColors[type3],
     size: "inherit"
-  }));
+  })));
 });
 var RcPresence = styled_components_default(_RcPresence)``;
 RcPresence.defaultProps = {
