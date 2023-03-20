@@ -306,7 +306,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
       controlled mode
     </h5>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c3 sc-gUQvok c2 sc-fmciRz c3"
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c3 sc-fXeWAj c2 sc-eXlEPa c3"
       theme={
         Object {
           "breakpoints": Object {
@@ -926,7 +926,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect 1`] 
       uncontrolled mode
     </h5>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c3 sc-gUQvok c2 sc-fmciRz c3"
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c3 sc-fXeWAj c2 sc-eXlEPa c3"
       theme={
         Object {
           "breakpoints": Object {
@@ -2415,7 +2415,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
       text
     </p>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c3 sc-gUQvok c2 sc-fmciRz c3"
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c3 sc-fXeWAj c2 sc-eXlEPa c3"
       theme={
         Object {
           "breakpoints": Object {
@@ -3032,7 +3032,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
       plain
     </p>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c9 sc-gUQvok c2 sc-fmciRz c9"
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c9 sc-fXeWAj c2 sc-eXlEPa c9"
       theme={
         Object {
           "breakpoints": Object {
@@ -3672,7 +3672,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
       round
     </p>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c14 sc-gUQvok c2 sc-fmciRz c14"
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c14 sc-fXeWAj c2 sc-eXlEPa c14"
       theme={
         Object {
           "breakpoints": Object {
@@ -4302,7 +4302,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
       plainIcon
     </p>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c14 sc-gUQvok c2 sc-fmciRz c14"
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c14 sc-fXeWAj c2 sc-eXlEPa c14"
       theme={
         Object {
           "breakpoints": Object {
@@ -4929,7 +4929,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
       text
     </p>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c15 c16 c3 sc-gUQvok c16 sc-fmciRz c3"
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c15 c16 c3 sc-fXeWAj c16 sc-eXlEPa c3"
       theme={
         Object {
           "breakpoints": Object {
@@ -5546,7 +5546,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
       plain
     </p>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c15 c16 c9 sc-gUQvok c16 sc-fmciRz c9"
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c15 c16 c9 sc-fXeWAj c16 sc-eXlEPa c9"
       theme={
         Object {
           "breakpoints": Object {
@@ -6186,7 +6186,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
       round
     </p>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c15 c16 c14 sc-gUQvok c16 sc-fmciRz c14"
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c15 c16 c14 sc-fXeWAj c16 sc-eXlEPa c14"
       theme={
         Object {
           "breakpoints": Object {
@@ -6816,7 +6816,7 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/PlainSelect PlainSelect Exam
       plainIcon
     </p>
     <div
-      className="MuiFormControl-root MuiTextField-root RcTextField-root c15 c16 c14 sc-gUQvok c16 sc-fmciRz c14"
+      className="MuiFormControl-root MuiTextField-root RcTextField-root c15 c16 c14 sc-fXeWAj c16 sc-eXlEPa c14"
       theme={
         Object {
           "breakpoints": Object {

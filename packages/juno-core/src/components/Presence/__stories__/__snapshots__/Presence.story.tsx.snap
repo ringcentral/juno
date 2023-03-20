@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
-.c3 {
+.c4 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -10,7 +10,7 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   pointer-events: none;
 }
 
-.c2 {
+.c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -20,6 +20,22 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
 }
 
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -39,37 +55,43 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 2px solid #FFFFFF;
   background: #FFFFFF;
 }
 
-.c0 .c1 svg {
+.c1 .c2 svg {
   width: 8px;
   height: 8px;
 }
 
 <div
-  className="c0 "
+  className="c0"
+  type="notReady"
 >
-  <span
-    className="c1 c2 offline icon"
+  <div
+    borderSizeValue={2}
+    className="c1"
+    iconSizeValue={8}
   >
-    <svg
-      className="c3"
-      viewBox="0 0 32 32"
+    <span
+      className="c2 c3 offline icon"
     >
-      <path
-        d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-      />
-    </svg>
-    
-  </span>
+      <svg
+        className="c4"
+        viewBox="0 0 32 32"
+      >
+        <path
+          d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+        />
+      </svg>
+      
+    </span>
+  </div>
 </div>
 `;
 
 exports[`Storyshots 🚀 Cleanup Components/Presence Presence Examples 1`] = `
 Array [
-  .c4 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -78,7 +100,7 @@ Array [
   pointer-events: none;
 }
 
-.c3 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -92,57 +114,15 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 1px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c1 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c5 .c2 svg {
-  width: 8px;
-  height: 8px;
+  padding: 1px;
 }
 
 .c6 {
@@ -150,31 +130,82 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c6 .c2 svg {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
 }
 
 .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -192,15 +223,14 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #FFFFFF;
+  width: 8px;
+  height: 8px;
   background: #FFFFFF;
 }
 
-.c7 .c2 svg {
-  width: 12px;
-  height: 12px;
+.c2 .c3 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c8 {
@@ -221,18 +251,73 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #FFFFFF;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
 }
 
-.c8 .c2 svg {
+.c8 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+}
+
+.c10 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+}
+
+.c12 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c9 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -252,71 +337,60 @@ Array [
   box-sizing: content-box;
   width: 20px;
   height: 20px;
-  border: 2px solid #FFFFFF;
   background: #FFFFFF;
 }
 
-.c9 .c2 svg {
+.c14 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c11 .c2 svg {
+.c16 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c12 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c13 .c2 svg {
+.c17 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c14 .c2 svg {
+.c18 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c15 .c2 svg {
+.c19 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c16 .c2 svg {
+.c20 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c17 .c2 svg {
+.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c18 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c19 .c2 svg {
+.c22 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c20 .c2 svg {
+.c23 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c21 .c2 svg {
+.c24 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c22 .c2 svg {
+.c25 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -329,7 +403,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c15 {
   margin-left: 5px;
   color: #121212;
 }
@@ -338,126 +412,168 @@ Array [
     className="c0"
   >
     <div
-      className="c1 "
+      className="c1"
+      type="available"
     >
-      <span
-        className="c2 c3 check icon"
+      <div
+        borderSizeValue={1}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 check icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
-            id="Shape"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
+              id="Shape"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c5 "
+      className="c6"
+      type="available"
     >
-      <span
-        className="c2 c3 check icon"
+      <div
+        borderSizeValue={2}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 check icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
-            id="Shape"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
+              id="Shape"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c6 "
+      className="c7"
+      type="available"
     >
-      <span
-        className="c2 c3 check icon"
+      <div
+        borderSizeValue={2}
+        className="c8"
+        iconSizeValue={10}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 check icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
-            id="Shape"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
+              id="Shape"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c7 "
+      className="c9"
+      type="available"
     >
-      <span
-        className="c2 c3 check icon"
+      <div
+        borderSizeValue={2}
+        className="c10"
+        iconSizeValue={12}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 check icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
-            id="Shape"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
+              id="Shape"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c8 "
+      className="c11"
+      type="available"
     >
-      <span
-        className="c2 c3 check icon"
+      <div
+        borderSizeValue={2}
+        className="c12"
+        iconSizeValue={16}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 check icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
-            id="Shape"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
+              id="Shape"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c9 "
+      className="c13"
+      type="available"
     >
-      <span
-        className="c2 c3 check icon"
+      <div
+        borderSizeValue={2}
+        className="c14"
+        iconSizeValue={20}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 check icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
-            id="Shape"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
+              id="Shape"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <span
-      className="c10"
+      className="c15"
     >
       available
     </span>
   </div>,
-  .c4 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -466,7 +582,7 @@ Array [
   pointer-events: none;
 }
 
-.c3 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -480,57 +596,15 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 1px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c1 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c5 .c2 svg {
-  width: 8px;
-  height: 8px;
+  padding: 1px;
 }
 
 .c6 {
@@ -538,31 +612,82 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c6 .c2 svg {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
 }
 
 .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -580,15 +705,14 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #FFFFFF;
+  width: 8px;
+  height: 8px;
   background: #FFFFFF;
 }
 
-.c7 .c2 svg {
-  width: 12px;
-  height: 12px;
+.c2 .c3 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c8 {
@@ -609,18 +733,73 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #FFFFFF;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
 }
 
-.c8 .c2 svg {
+.c8 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+}
+
+.c10 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+}
+
+.c12 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c9 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -640,71 +819,60 @@ Array [
   box-sizing: content-box;
   width: 20px;
   height: 20px;
-  border: 2px solid #FFFFFF;
   background: #FFFFFF;
 }
 
-.c9 .c2 svg {
+.c14 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c11 .c2 svg {
+.c16 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c12 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c13 .c2 svg {
+.c17 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c14 .c2 svg {
+.c18 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c15 .c2 svg {
+.c19 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c16 .c2 svg {
+.c20 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c17 .c2 svg {
+.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c18 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c19 .c2 svg {
+.c22 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c20 .c2 svg {
+.c23 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c21 .c2 svg {
+.c24 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c22 .c2 svg {
+.c25 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -717,7 +885,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c15 {
   margin-left: 5px;
   color: #121212;
 }
@@ -726,126 +894,168 @@ Array [
     className="c0"
   >
     <div
-      className="c1 "
+      className="c1"
+      type="attended"
     >
-      <span
-        className="c2 c3 check icon"
+      <div
+        borderSizeValue={1}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 check icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
-            id="Shape"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
+              id="Shape"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c5 "
+      className="c6"
+      type="attended"
     >
-      <span
-        className="c2 c3 check icon"
+      <div
+        borderSizeValue={2}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 check icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
-            id="Shape"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
+              id="Shape"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c6 "
+      className="c7"
+      type="attended"
     >
-      <span
-        className="c2 c3 check icon"
+      <div
+        borderSizeValue={2}
+        className="c8"
+        iconSizeValue={10}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 check icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
-            id="Shape"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
+              id="Shape"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c7 "
+      className="c9"
+      type="attended"
     >
-      <span
-        className="c2 c3 check icon"
+      <div
+        borderSizeValue={2}
+        className="c10"
+        iconSizeValue={12}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 check icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
-            id="Shape"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
+              id="Shape"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c8 "
+      className="c11"
+      type="attended"
     >
-      <span
-        className="c2 c3 check icon"
+      <div
+        borderSizeValue={2}
+        className="c12"
+        iconSizeValue={16}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 check icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
-            id="Shape"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
+              id="Shape"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c9 "
+      className="c13"
+      type="attended"
     >
-      <span
-        className="c2 c3 check icon"
+      <div
+        borderSizeValue={2}
+        className="c14"
+        iconSizeValue={20}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 check icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
-            id="Shape"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
+              id="Shape"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <span
-      className="c10"
+      className="c15"
     >
       attended
     </span>
   </div>,
-  .c4 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -854,7 +1064,7 @@ Array [
   pointer-events: none;
 }
 
-.c3 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -868,57 +1078,15 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 1px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c1 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c5 .c2 svg {
-  width: 8px;
-  height: 8px;
+  padding: 1px;
 }
 
 .c6 {
@@ -926,31 +1094,82 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c6 .c2 svg {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
 }
 
 .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -968,15 +1187,14 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #FFFFFF;
+  width: 8px;
+  height: 8px;
   background: #FFFFFF;
 }
 
-.c7 .c2 svg {
-  width: 12px;
-  height: 12px;
+.c2 .c3 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c8 {
@@ -997,18 +1215,73 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #FFFFFF;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
 }
 
-.c8 .c2 svg {
+.c8 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+}
+
+.c10 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+}
+
+.c12 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c9 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1028,71 +1301,60 @@ Array [
   box-sizing: content-box;
   width: 20px;
   height: 20px;
-  border: 2px solid #FFFFFF;
   background: #FFFFFF;
 }
 
-.c9 .c2 svg {
+.c14 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c11 .c2 svg {
+.c16 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c12 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c13 .c2 svg {
+.c17 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c14 .c2 svg {
+.c18 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c15 .c2 svg {
+.c19 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c16 .c2 svg {
+.c20 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c17 .c2 svg {
+.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c18 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c19 .c2 svg {
+.c22 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c20 .c2 svg {
+.c23 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c21 .c2 svg {
+.c24 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c22 .c2 svg {
+.c25 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -1105,7 +1367,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c15 {
   margin-left: 5px;
   color: #121212;
 }
@@ -1114,120 +1376,162 @@ Array [
     className="c0"
   >
     <div
-      className="c1 "
+      className="c1"
+      type="unAttended"
     >
-      <span
-        className="c2 c3 unattended icon"
+      <div
+        borderSizeValue={1}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 unattended icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm7.54,20.39a2.23,2.23,0,0,1-3.15,3.15h0L16,19.15l-4.39,4.39a2.23,2.23,0,0,1-3.15-3.15h0L12.85,16,8.46,11.61a2.23,2.23,0,0,1,3.15-3.15L16,12.85l4.39-4.39a2.23,2.23,0,0,1,3.15,3.15h0L19.15,16Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm7.54,20.39a2.23,2.23,0,0,1-3.15,3.15h0L16,19.15l-4.39,4.39a2.23,2.23,0,0,1-3.15-3.15h0L12.85,16,8.46,11.61a2.23,2.23,0,0,1,3.15-3.15L16,12.85l4.39-4.39a2.23,2.23,0,0,1,3.15,3.15h0L19.15,16Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c5 "
+      className="c6"
+      type="unAttended"
     >
-      <span
-        className="c2 c3 unattended icon"
+      <div
+        borderSizeValue={2}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 unattended icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm7.54,20.39a2.23,2.23,0,0,1-3.15,3.15h0L16,19.15l-4.39,4.39a2.23,2.23,0,0,1-3.15-3.15h0L12.85,16,8.46,11.61a2.23,2.23,0,0,1,3.15-3.15L16,12.85l4.39-4.39a2.23,2.23,0,0,1,3.15,3.15h0L19.15,16Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm7.54,20.39a2.23,2.23,0,0,1-3.15,3.15h0L16,19.15l-4.39,4.39a2.23,2.23,0,0,1-3.15-3.15h0L12.85,16,8.46,11.61a2.23,2.23,0,0,1,3.15-3.15L16,12.85l4.39-4.39a2.23,2.23,0,0,1,3.15,3.15h0L19.15,16Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c6 "
+      className="c7"
+      type="unAttended"
     >
-      <span
-        className="c2 c3 unattended icon"
+      <div
+        borderSizeValue={2}
+        className="c8"
+        iconSizeValue={10}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 unattended icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm7.54,20.39a2.23,2.23,0,0,1-3.15,3.15h0L16,19.15l-4.39,4.39a2.23,2.23,0,0,1-3.15-3.15h0L12.85,16,8.46,11.61a2.23,2.23,0,0,1,3.15-3.15L16,12.85l4.39-4.39a2.23,2.23,0,0,1,3.15,3.15h0L19.15,16Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm7.54,20.39a2.23,2.23,0,0,1-3.15,3.15h0L16,19.15l-4.39,4.39a2.23,2.23,0,0,1-3.15-3.15h0L12.85,16,8.46,11.61a2.23,2.23,0,0,1,3.15-3.15L16,12.85l4.39-4.39a2.23,2.23,0,0,1,3.15,3.15h0L19.15,16Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c7 "
+      className="c9"
+      type="unAttended"
     >
-      <span
-        className="c2 c3 unattended icon"
+      <div
+        borderSizeValue={2}
+        className="c10"
+        iconSizeValue={12}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 unattended icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm7.54,20.39a2.23,2.23,0,0,1-3.15,3.15h0L16,19.15l-4.39,4.39a2.23,2.23,0,0,1-3.15-3.15h0L12.85,16,8.46,11.61a2.23,2.23,0,0,1,3.15-3.15L16,12.85l4.39-4.39a2.23,2.23,0,0,1,3.15,3.15h0L19.15,16Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm7.54,20.39a2.23,2.23,0,0,1-3.15,3.15h0L16,19.15l-4.39,4.39a2.23,2.23,0,0,1-3.15-3.15h0L12.85,16,8.46,11.61a2.23,2.23,0,0,1,3.15-3.15L16,12.85l4.39-4.39a2.23,2.23,0,0,1,3.15,3.15h0L19.15,16Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c8 "
+      className="c11"
+      type="unAttended"
     >
-      <span
-        className="c2 c3 unattended icon"
+      <div
+        borderSizeValue={2}
+        className="c12"
+        iconSizeValue={16}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 unattended icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm7.54,20.39a2.23,2.23,0,0,1-3.15,3.15h0L16,19.15l-4.39,4.39a2.23,2.23,0,0,1-3.15-3.15h0L12.85,16,8.46,11.61a2.23,2.23,0,0,1,3.15-3.15L16,12.85l4.39-4.39a2.23,2.23,0,0,1,3.15,3.15h0L19.15,16Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm7.54,20.39a2.23,2.23,0,0,1-3.15,3.15h0L16,19.15l-4.39,4.39a2.23,2.23,0,0,1-3.15-3.15h0L12.85,16,8.46,11.61a2.23,2.23,0,0,1,3.15-3.15L16,12.85l4.39-4.39a2.23,2.23,0,0,1,3.15,3.15h0L19.15,16Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c9 "
+      className="c13"
+      type="unAttended"
     >
-      <span
-        className="c2 c3 unattended icon"
+      <div
+        borderSizeValue={2}
+        className="c14"
+        iconSizeValue={20}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 unattended icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm7.54,20.39a2.23,2.23,0,0,1-3.15,3.15h0L16,19.15l-4.39,4.39a2.23,2.23,0,0,1-3.15-3.15h0L12.85,16,8.46,11.61a2.23,2.23,0,0,1,3.15-3.15L16,12.85l4.39-4.39a2.23,2.23,0,0,1,3.15,3.15h0L19.15,16Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm7.54,20.39a2.23,2.23,0,0,1-3.15,3.15h0L16,19.15l-4.39,4.39a2.23,2.23,0,0,1-3.15-3.15h0L12.85,16,8.46,11.61a2.23,2.23,0,0,1,3.15-3.15L16,12.85l4.39-4.39a2.23,2.23,0,0,1,3.15,3.15h0L19.15,16Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <span
-      className="c10"
+      className="c15"
     >
       unAttended
     </span>
   </div>,
-  .c4 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -1236,7 +1540,7 @@ Array [
   pointer-events: none;
 }
 
-.c3 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1250,57 +1554,15 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 1px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c1 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c5 .c2 svg {
-  width: 8px;
-  height: 8px;
+  padding: 1px;
 }
 
 .c6 {
@@ -1308,31 +1570,82 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c6 .c2 svg {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
 }
 
 .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1350,15 +1663,14 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #FFFFFF;
+  width: 8px;
+  height: 8px;
   background: #FFFFFF;
 }
 
-.c7 .c2 svg {
-  width: 12px;
-  height: 12px;
+.c2 .c3 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c8 {
@@ -1379,18 +1691,73 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #FFFFFF;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
 }
 
-.c8 .c2 svg {
+.c8 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+}
+
+.c10 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+}
+
+.c12 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c9 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1410,71 +1777,60 @@ Array [
   box-sizing: content-box;
   width: 20px;
   height: 20px;
-  border: 2px solid #FFFFFF;
   background: #FFFFFF;
 }
 
-.c9 .c2 svg {
+.c14 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c11 .c2 svg {
+.c16 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c12 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c13 .c2 svg {
+.c17 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c14 .c2 svg {
+.c18 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c15 .c2 svg {
+.c19 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c16 .c2 svg {
+.c20 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c17 .c2 svg {
+.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c18 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c19 .c2 svg {
+.c22 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c20 .c2 svg {
+.c23 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c21 .c2 svg {
+.c24 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c22 .c2 svg {
+.c25 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -1487,7 +1843,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c15 {
   margin-left: 5px;
   color: #121212;
 }
@@ -1496,132 +1852,174 @@ Array [
     className="c0"
   >
     <div
-      className="c1 "
+      className="c1"
+      type="onCall"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={1}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c5 "
+      className="c6"
+      type="onCall"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={2}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c6 "
+      className="c7"
+      type="onCall"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={2}
+        className="c8"
+        iconSizeValue={10}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c7 "
+      className="c9"
+      type="onCall"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={2}
+        className="c10"
+        iconSizeValue={12}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c8 "
+      className="c11"
+      type="onCall"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={2}
+        className="c12"
+        iconSizeValue={16}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c9 "
+      className="c13"
+      type="onCall"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={2}
+        className="c14"
+        iconSizeValue={20}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <span
-      className="c10"
+      className="c15"
     >
       onCall
     </span>
   </div>,
-  .c4 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -1630,7 +2028,7 @@ Array [
   pointer-events: none;
 }
 
-.c3 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1644,57 +2042,15 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 1px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c1 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c5 .c2 svg {
-  width: 8px;
-  height: 8px;
+  padding: 1px;
 }
 
 .c6 {
@@ -1702,31 +2058,82 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c6 .c2 svg {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
 }
 
 .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1744,15 +2151,14 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #FFFFFF;
+  width: 8px;
+  height: 8px;
   background: #FFFFFF;
 }
 
-.c7 .c2 svg {
-  width: 12px;
-  height: 12px;
+.c2 .c3 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c8 {
@@ -1773,18 +2179,73 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #FFFFFF;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
 }
 
-.c8 .c2 svg {
+.c8 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+}
+
+.c10 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+}
+
+.c12 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c9 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1804,71 +2265,60 @@ Array [
   box-sizing: content-box;
   width: 20px;
   height: 20px;
-  border: 2px solid #FFFFFF;
   background: #FFFFFF;
 }
 
-.c9 .c2 svg {
+.c14 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c11 .c2 svg {
+.c16 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c12 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c13 .c2 svg {
+.c17 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c14 .c2 svg {
+.c18 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c15 .c2 svg {
+.c19 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c16 .c2 svg {
+.c20 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c17 .c2 svg {
+.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c18 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c19 .c2 svg {
+.c22 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c20 .c2 svg {
+.c23 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c21 .c2 svg {
+.c24 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c22 .c2 svg {
+.c25 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -1881,7 +2331,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c15 {
   margin-left: 5px;
   color: #121212;
 }
@@ -1890,132 +2340,174 @@ Array [
     className="c0"
   >
     <div
-      className="c1 "
+      className="c1"
+      type="inMeeting"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={1}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c5 "
+      className="c6"
+      type="inMeeting"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={2}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c6 "
+      className="c7"
+      type="inMeeting"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={2}
+        className="c8"
+        iconSizeValue={10}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c7 "
+      className="c9"
+      type="inMeeting"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={2}
+        className="c10"
+        iconSizeValue={12}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c8 "
+      className="c11"
+      type="inMeeting"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={2}
+        className="c12"
+        iconSizeValue={16}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c9 "
+      className="c13"
+      type="inMeeting"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={2}
+        className="c14"
+        iconSizeValue={20}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <span
-      className="c10"
+      className="c15"
     >
       inMeeting
     </span>
   </div>,
-  .c4 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -2024,7 +2516,7 @@ Array [
   pointer-events: none;
 }
 
-.c3 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2038,57 +2530,15 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 1px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c1 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c5 .c2 svg {
-  width: 8px;
-  height: 8px;
+  padding: 1px;
 }
 
 .c6 {
@@ -2096,31 +2546,82 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c6 .c2 svg {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
 }
 
 .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2138,15 +2639,14 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #FFFFFF;
+  width: 8px;
+  height: 8px;
   background: #FFFFFF;
 }
 
-.c7 .c2 svg {
-  width: 12px;
-  height: 12px;
+.c2 .c3 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c8 {
@@ -2167,18 +2667,73 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #FFFFFF;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
 }
 
-.c8 .c2 svg {
+.c8 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+}
+
+.c10 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+}
+
+.c12 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c9 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2198,71 +2753,60 @@ Array [
   box-sizing: content-box;
   width: 20px;
   height: 20px;
-  border: 2px solid #FFFFFF;
   background: #FFFFFF;
 }
 
-.c9 .c2 svg {
+.c14 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c11 .c2 svg {
+.c16 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c12 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c13 .c2 svg {
+.c17 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c14 .c2 svg {
+.c18 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c15 .c2 svg {
+.c19 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c16 .c2 svg {
+.c20 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c17 .c2 svg {
+.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c18 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c19 .c2 svg {
+.c22 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c20 .c2 svg {
+.c23 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c21 .c2 svg {
+.c24 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c22 .c2 svg {
+.c25 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -2275,7 +2819,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c15 {
   margin-left: 5px;
   color: #121212;
 }
@@ -2284,120 +2828,162 @@ Array [
     className="c0"
   >
     <div
-      className="c1 "
+      className="c1"
+      type="DND"
     >
-      <span
-        className="c2 c3 dnd icon"
+      <div
+        borderSizeValue={1}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 dnd icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.44,18.22H7.56a2.22,2.22,0,1,1,0-4.44H24.44a2.22,2.22,0,1,1,0,4.44Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.44,18.22H7.56a2.22,2.22,0,1,1,0-4.44H24.44a2.22,2.22,0,1,1,0,4.44Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c5 "
+      className="c6"
+      type="DND"
     >
-      <span
-        className="c2 c3 dnd icon"
+      <div
+        borderSizeValue={2}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 dnd icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.44,18.22H7.56a2.22,2.22,0,1,1,0-4.44H24.44a2.22,2.22,0,1,1,0,4.44Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.44,18.22H7.56a2.22,2.22,0,1,1,0-4.44H24.44a2.22,2.22,0,1,1,0,4.44Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c6 "
+      className="c7"
+      type="DND"
     >
-      <span
-        className="c2 c3 dnd icon"
+      <div
+        borderSizeValue={2}
+        className="c8"
+        iconSizeValue={10}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 dnd icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.44,18.22H7.56a2.22,2.22,0,1,1,0-4.44H24.44a2.22,2.22,0,1,1,0,4.44Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.44,18.22H7.56a2.22,2.22,0,1,1,0-4.44H24.44a2.22,2.22,0,1,1,0,4.44Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c7 "
+      className="c9"
+      type="DND"
     >
-      <span
-        className="c2 c3 dnd icon"
+      <div
+        borderSizeValue={2}
+        className="c10"
+        iconSizeValue={12}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 dnd icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.44,18.22H7.56a2.22,2.22,0,1,1,0-4.44H24.44a2.22,2.22,0,1,1,0,4.44Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.44,18.22H7.56a2.22,2.22,0,1,1,0-4.44H24.44a2.22,2.22,0,1,1,0,4.44Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c8 "
+      className="c11"
+      type="DND"
     >
-      <span
-        className="c2 c3 dnd icon"
+      <div
+        borderSizeValue={2}
+        className="c12"
+        iconSizeValue={16}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 dnd icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.44,18.22H7.56a2.22,2.22,0,1,1,0-4.44H24.44a2.22,2.22,0,1,1,0,4.44Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.44,18.22H7.56a2.22,2.22,0,1,1,0-4.44H24.44a2.22,2.22,0,1,1,0,4.44Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c9 "
+      className="c13"
+      type="DND"
     >
-      <span
-        className="c2 c3 dnd icon"
+      <div
+        borderSizeValue={2}
+        className="c14"
+        iconSizeValue={20}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 dnd icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.44,18.22H7.56a2.22,2.22,0,1,1,0-4.44H24.44a2.22,2.22,0,1,1,0,4.44Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.44,18.22H7.56a2.22,2.22,0,1,1,0-4.44H24.44a2.22,2.22,0,1,1,0,4.44Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <span
-      className="c10"
+      className="c15"
     >
       DND
     </span>
   </div>,
-  .c4 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -2406,7 +2992,7 @@ Array [
   pointer-events: none;
 }
 
-.c3 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2420,57 +3006,15 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 1px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c1 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c5 .c2 svg {
-  width: 8px;
-  height: 8px;
+  padding: 1px;
 }
 
 .c6 {
@@ -2478,31 +3022,82 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c6 .c2 svg {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
 }
 
 .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2520,15 +3115,14 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #FFFFFF;
+  width: 8px;
+  height: 8px;
   background: #FFFFFF;
 }
 
-.c7 .c2 svg {
-  width: 12px;
-  height: 12px;
+.c2 .c3 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c8 {
@@ -2549,18 +3143,73 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #FFFFFF;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
 }
 
-.c8 .c2 svg {
+.c8 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+}
+
+.c10 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+}
+
+.c12 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c9 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2580,71 +3229,60 @@ Array [
   box-sizing: content-box;
   width: 20px;
   height: 20px;
-  border: 2px solid #FFFFFF;
   background: #FFFFFF;
 }
 
-.c9 .c2 svg {
+.c14 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c11 .c2 svg {
+.c16 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c12 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c13 .c2 svg {
+.c17 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c14 .c2 svg {
+.c18 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c15 .c2 svg {
+.c19 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c16 .c2 svg {
+.c20 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c17 .c2 svg {
+.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c18 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c19 .c2 svg {
+.c22 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c20 .c2 svg {
+.c23 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c21 .c2 svg {
+.c24 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c22 .c2 svg {
+.c25 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -2657,7 +3295,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c15 {
   margin-left: 5px;
   color: #121212;
 }
@@ -2666,132 +3304,174 @@ Array [
     className="c0"
   >
     <div
-      className="c1 "
+      className="c1"
+      type="busy"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={1}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c5 "
+      className="c6"
+      type="busy"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={2}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c6 "
+      className="c7"
+      type="busy"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={2}
+        className="c8"
+        iconSizeValue={10}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c7 "
+      className="c9"
+      type="busy"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={2}
+        className="c10"
+        iconSizeValue={12}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c8 "
+      className="c11"
+      type="busy"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={2}
+        className="c12"
+        iconSizeValue={16}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c9 "
+      className="c13"
+      type="busy"
     >
-      <span
-        className="c2 c3 default icon"
+      <div
+        borderSizeValue={2}
+        className="c14"
+        iconSizeValue={20}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          className="c3 c4 default icon"
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="16"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="16"
+              cy="16"
+              r="16"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <span
-      className="c10"
+      className="c15"
     >
       busy
     </span>
   </div>,
-  .c4 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -2800,7 +3480,7 @@ Array [
   pointer-events: none;
 }
 
-.c3 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2814,57 +3494,15 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 1px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c1 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c5 .c2 svg {
-  width: 8px;
-  height: 8px;
+  padding: 1px;
 }
 
 .c6 {
@@ -2872,31 +3510,82 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c6 .c2 svg {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
 }
 
 .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2914,15 +3603,14 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #FFFFFF;
+  width: 8px;
+  height: 8px;
   background: #FFFFFF;
 }
 
-.c7 .c2 svg {
-  width: 12px;
-  height: 12px;
+.c2 .c3 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c8 {
@@ -2943,18 +3631,73 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #FFFFFF;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
 }
 
-.c8 .c2 svg {
+.c8 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+}
+
+.c10 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+}
+
+.c12 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c9 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2974,71 +3717,60 @@ Array [
   box-sizing: content-box;
   width: 20px;
   height: 20px;
-  border: 2px solid #FFFFFF;
   background: #FFFFFF;
 }
 
-.c9 .c2 svg {
+.c14 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c11 .c2 svg {
+.c16 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c12 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c13 .c2 svg {
+.c17 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c14 .c2 svg {
+.c18 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c15 .c2 svg {
+.c19 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c16 .c2 svg {
+.c20 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c17 .c2 svg {
+.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c18 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c19 .c2 svg {
+.c22 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c20 .c2 svg {
+.c23 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c21 .c2 svg {
+.c24 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c22 .c2 svg {
+.c25 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -3051,7 +3783,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c15 {
   margin-left: 5px;
   color: #121212;
 }
@@ -3060,114 +3792,156 @@ Array [
     className="c0"
   >
     <div
-      className="c1 "
+      className="c1"
+      type="unavailable"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={1}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c5 "
+      className="c6"
+      type="unavailable"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c6 "
+      className="c7"
+      type="unavailable"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c8"
+        iconSizeValue={10}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c7 "
+      className="c9"
+      type="unavailable"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c10"
+        iconSizeValue={12}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c8 "
+      className="c11"
+      type="unavailable"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c12"
+        iconSizeValue={16}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c9 "
+      className="c13"
+      type="unavailable"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c14"
+        iconSizeValue={20}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <span
-      className="c10"
+      className="c15"
     >
       unavailable
     </span>
   </div>,
-  .c4 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -3176,7 +3950,7 @@ Array [
   pointer-events: none;
 }
 
-.c3 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3190,57 +3964,15 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 1px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c1 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c5 .c2 svg {
-  width: 8px;
-  height: 8px;
+  padding: 1px;
 }
 
 .c6 {
@@ -3248,31 +3980,82 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c6 .c2 svg {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
 }
 
 .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3290,15 +4073,14 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #FFFFFF;
+  width: 8px;
+  height: 8px;
   background: #FFFFFF;
 }
 
-.c7 .c2 svg {
-  width: 12px;
-  height: 12px;
+.c2 .c3 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c8 {
@@ -3319,18 +4101,73 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #FFFFFF;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
 }
 
-.c8 .c2 svg {
+.c8 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+}
+
+.c10 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+}
+
+.c12 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c9 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3350,71 +4187,60 @@ Array [
   box-sizing: content-box;
   width: 20px;
   height: 20px;
-  border: 2px solid #FFFFFF;
   background: #FFFFFF;
 }
 
-.c9 .c2 svg {
+.c14 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c11 .c2 svg {
+.c16 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c12 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c13 .c2 svg {
+.c17 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c14 .c2 svg {
+.c18 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c15 .c2 svg {
+.c19 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c16 .c2 svg {
+.c20 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c17 .c2 svg {
+.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c18 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c19 .c2 svg {
+.c22 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c20 .c2 svg {
+.c23 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c21 .c2 svg {
+.c24 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c22 .c2 svg {
+.c25 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -3427,7 +4253,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c15 {
   margin-left: 5px;
   color: #121212;
 }
@@ -3436,114 +4262,156 @@ Array [
     className="c0"
   >
     <div
-      className="c1 "
+      className="c1"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={1}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c5 "
+      className="c6"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c6 "
+      className="c7"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c8"
+        iconSizeValue={10}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c7 "
+      className="c9"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c10"
+        iconSizeValue={12}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c8 "
+      className="c11"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c12"
+        iconSizeValue={16}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c9 "
+      className="c13"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c14"
+        iconSizeValue={20}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <span
-      className="c10"
+      className="c15"
     >
       notReady
     </span>
   </div>,
-  .c4 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -3552,7 +4420,7 @@ Array [
   pointer-events: none;
 }
 
-.c3 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3566,57 +4434,15 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 1px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c1 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c5 .c2 svg {
-  width: 8px;
-  height: 8px;
+  padding: 1px;
 }
 
 .c6 {
@@ -3624,31 +4450,82 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #FFFFFF;
-  background: #FFFFFF;
-}
-
-.c6 .c2 svg {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
 }
 
 .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3666,15 +4543,14 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #FFFFFF;
+  width: 8px;
+  height: 8px;
   background: #FFFFFF;
 }
 
-.c7 .c2 svg {
-  width: 12px;
-  height: 12px;
+.c2 .c3 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c8 {
@@ -3695,18 +4571,73 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #FFFFFF;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
 }
 
-.c8 .c2 svg {
+.c8 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+}
+
+.c10 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+}
+
+.c12 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c9 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3726,71 +4657,60 @@ Array [
   box-sizing: content-box;
   width: 20px;
   height: 20px;
-  border: 2px solid #FFFFFF;
   background: #FFFFFF;
 }
 
-.c9 .c2 svg {
+.c14 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c11 .c2 svg {
+.c16 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c12 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c13 .c2 svg {
+.c17 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c14 .c2 svg {
+.c18 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c15 .c2 svg {
+.c19 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c16 .c2 svg {
+.c20 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c17 .c2 svg {
+.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c18 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c19 .c2 svg {
+.c22 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c20 .c2 svg {
+.c23 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c21 .c2 svg {
+.c24 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c22 .c2 svg {
+.c25 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -3803,7 +4723,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c15 {
   margin-left: 5px;
   color: #121212;
 }
@@ -3812,114 +4732,156 @@ Array [
     className="c0"
   >
     <div
-      className="c1 "
+      className="c1"
+      type="offline"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={1}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c5 "
+      className="c6"
+      type="offline"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c6 "
+      className="c7"
+      type="offline"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c8"
+        iconSizeValue={10}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c7 "
+      className="c9"
+      type="offline"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c10"
+        iconSizeValue={12}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c8 "
+      className="c11"
+      type="offline"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c12"
+        iconSizeValue={16}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c9 "
+      className="c13"
+      type="offline"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c14"
+        iconSizeValue={20}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <span
-      className="c10"
+      className="c15"
     >
       offline
     </span>
   </div>,
-  .c4 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -3928,7 +4890,7 @@ Array [
   pointer-events: none;
 }
 
-.c3 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3937,92 +4899,20 @@ Array [
   color: #066FAC;
 }
 
-.c11 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c12 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c13 .c2 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c14 .c2 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c15 .c2 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c16 .c2 svg {
-  width: 20px;
-  height: 20px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 1px solid #FFFFFF;
-  background: #066FAC;
-}
-
-.c1 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #FFFFFF;
-  background: #066FAC;
-}
-
-.c5 .c2 svg {
-  width: 8px;
-  height: 8px;
+  padding: 1px;
 }
 
 .c6 {
@@ -4030,31 +4920,107 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #FFFFFF;
-  background: #066FAC;
-}
-
-.c6 .c2 svg {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
 }
 
 .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+.c16 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c17 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c18 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c19 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c20 .c3 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4072,15 +5038,14 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #FFFFFF;
+  width: 8px;
+  height: 8px;
   background: #066FAC;
 }
 
-.c7 .c2 svg {
-  width: 12px;
-  height: 12px;
+.c2 .c3 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c8 {
@@ -4101,18 +5066,73 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #FFFFFF;
+  width: 10px;
+  height: 10px;
   background: #066FAC;
 }
 
-.c8 .c2 svg {
+.c8 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #066FAC;
+}
+
+.c10 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #066FAC;
+}
+
+.c12 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c9 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4132,41 +5152,35 @@ Array [
   box-sizing: content-box;
   width: 20px;
   height: 20px;
-  border: 2px solid #FFFFFF;
   background: #066FAC;
 }
 
-.c9 .c2 svg {
+.c14 .c3 svg {
   width: 20px;
   height: 20px;
 }
 
-.c17 .c2 svg {
+.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c18 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c19 .c2 svg {
+.c22 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c20 .c2 svg {
+.c23 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c21 .c2 svg {
+.c24 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c22 .c2 svg {
+.c25 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -4179,7 +5193,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c15 {
   margin-left: 5px;
   color: #121212;
 }
@@ -4188,114 +5202,156 @@ Array [
     className="c0"
   >
     <div
-      className="c1 "
+      className="c1"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={1}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c5 "
+      className="c6"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c6 "
+      className="c7"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c8"
+        iconSizeValue={10}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c7 "
+      className="c9"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c10"
+        iconSizeValue={12}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c8 "
+      className="c11"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c12"
+        iconSizeValue={16}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c9 "
+      className="c13"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c14"
+        iconSizeValue={20}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <span
-      className="c10"
+      className="c15"
     >
       Custom Color with theme method
     </span>
   </div>,
-  .c4 {
+  .c5 {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -4304,7 +5360,7 @@ Array [
   pointer-events: none;
 }
 
-.c3 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4313,122 +5369,20 @@ Array [
   color: yellow;
 }
 
-.c11 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c12 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c13 .c2 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c14 .c2 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c15 .c2 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c16 .c2 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c17 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c18 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c19 .c2 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c20 .c2 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c21 .c2 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c22 .c2 svg {
-  width: 20px;
-  height: 20px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
   width: 8px;
   height: 8px;
-  border: 1px solid #FFFFFF;
-  background: yellow;
-}
-
-.c1 .c2 svg {
-  width: 8px;
-  height: 8px;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #FFFFFF;
-  background: yellow;
-}
-
-.c5 .c2 svg {
-  width: 8px;
-  height: 8px;
+  padding: 1px;
 }
 
 .c6 {
@@ -4436,31 +5390,132 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #FFFFFF;
-  background: yellow;
-}
-
-.c6 .c2 svg {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
 }
 
 .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+.c16 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c17 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c18 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c19 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c20 .c3 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c21 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c22 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c23 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c24 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c25 .c3 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4478,15 +5533,14 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #FFFFFF;
+  width: 8px;
+  height: 8px;
   background: yellow;
 }
 
-.c7 .c2 svg {
-  width: 12px;
-  height: 12px;
+.c2 .c3 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c8 {
@@ -4507,18 +5561,73 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #FFFFFF;
+  width: 10px;
+  height: 10px;
   background: yellow;
 }
 
-.c8 .c2 svg {
+.c8 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: yellow;
+}
+
+.c10 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: yellow;
+}
+
+.c12 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c9 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4538,11 +5647,10 @@ Array [
   box-sizing: content-box;
   width: 20px;
   height: 20px;
-  border: 2px solid #FFFFFF;
   background: yellow;
 }
 
-.c9 .c2 svg {
+.c14 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -4555,7 +5663,7 @@ Array [
   padding: 10px;
 }
 
-.c10 {
+.c15 {
   margin-left: 5px;
   color: #121212;
 }
@@ -4564,109 +5672,151 @@ Array [
     className="c0"
   >
     <div
-      className="c1 "
+      className="c1"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={1}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c5 "
+      className="c6"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c2"
+        iconSizeValue={8}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c6 "
+      className="c7"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c8"
+        iconSizeValue={10}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c7 "
+      className="c9"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c10"
+        iconSizeValue={12}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c8 "
+      className="c11"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c12"
+        iconSizeValue={16}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <div
-      className="c9 "
+      className="c13"
+      type="notReady"
     >
-      <span
-        className="c2 c3 offline icon"
+      <div
+        borderSizeValue={2}
+        className="c14"
+        iconSizeValue={20}
       >
-        <svg
-          className="c4"
-          viewBox="0 0 32 32"
+        <span
+          className="c3 c4 offline icon"
         >
-          <path
-            d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
-          />
-        </svg>
-        
-      </span>
+          <svg
+            className="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm0,27.2A11.2,11.2,0,1,1,27.2,16,11.19,11.19,0,0,1,16,27.2Z"
+            />
+          </svg>
+          
+        </span>
+      </div>
     </div>
     <span
-      className="c10"
+      className="c15"
     >
       Custom Color with css color
     </span>
