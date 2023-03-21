@@ -1,4 +1,11 @@
 
+## [1.37.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.36.0...juno-icon-v1.37.0) (2023-03-21)
+
+
+### Features
+
+* **Icon:** add new icon ReportAnIssue ([5ea3f00](https://github.com/ringcentral/juno/commit/5ea3f000690aca596e9f2321c82a49d1fcbc3f2a))
+
 ## [1.36.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.35.0...juno-icon-v1.36.0) (2023-03-20)
 
 
