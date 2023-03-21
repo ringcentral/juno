@@ -11,6 +11,7 @@ module.exports = {
   '9': '9',
   GoogleChromeLogo: 'google-chrome-logo',
   ExternalLinkGlobal: 'external-link-global',
+  ReportAnIssue: 'report-an-issue',
   RcApp: 'rc-app',
   RcLogo: 'rc-logo',
   WhatIsNew: 'what-is-new',

@@ -369,6 +369,7 @@ export { default as RemoveField } from './RemoveField';
 export { default as Remove } from './Remove';
 export { default as Repeat } from './Repeat';
 export { default as Reply } from './Reply';
+export { default as ReportAnIssue } from './ReportAnIssue';
 export { default as ResendFax } from './ResendFax';
 export { default as ResetZoom } from './ResetZoom';
 export { default as RichTextEditor } from './RichTextEditor';
