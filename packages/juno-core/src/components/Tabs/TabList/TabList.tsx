@@ -33,15 +33,19 @@ const _RcTabList = forwardRef<any, RcTabListProps>(
       throw new TypeError('[RcTabList] No TabContext provided');
     }
 
-    const children = React.Children.map(
-      childrenProp,
-      (child: React.ReactElement<RcTabProps>) => {
-        const { value } = child.props;
-        return React.cloneElement(child, {
-          'aria-controls': getPanelId(context, value),
-          id: getTabId(context, value),
-        });
-      },
+    const children = useMemo(
+      () =>
+        React.Children.map(
+          childrenProp,
+          (child: React.ReactElement<RcTabProps>) => {
+            const { value } = child.props;
+            return React.cloneElement(child, {
+              'aria-controls': getPanelId(context, value),
+              id: getTabId(context, value),
+            });
+          },
+        ),
+      [childrenProp, context],
     );
 
     return (
