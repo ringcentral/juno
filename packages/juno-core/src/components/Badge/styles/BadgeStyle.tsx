@@ -2,7 +2,9 @@ import {
   css,
   fakeBorder,
   getParsePaletteColor,
+  palette2,
   RcThemedStyled,
+  styled,
 } from '../../../foundation';
 import { RcBadgeProps } from '../Badge';
 import { RcBadgeClasses, roundBadgeMarginKey } from '../utils';
@@ -62,3 +64,10 @@ export const BadgeStyle: RcThemedStyled<RcBadgeProps, any> = ({
     }
   `;
 };
+
+export const DefaultDotComponent = styled.div`
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  border: 2px solid ${palette2('neutral', 'l01')};
+`;

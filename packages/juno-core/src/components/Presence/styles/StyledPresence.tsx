@@ -5,6 +5,7 @@ import {
   getParsePaletteColor,
   palette2,
   styled,
+  fakeBorder,
 } from '../../../foundation';
 import { RcIcon } from '../../Icon';
 import { PresenceSizeProps } from '../Presence';
@@ -15,8 +16,6 @@ export const PresenceContainer = styled.div<PresenceSizeProps>`
     return css`
       display: flex;
       justify-content: center;
-      background-color: ${palette2('neutral', 'l01')};
-      border-radius: 50%;
       width: ${iconSizeValue}px;
       height: ${iconSizeValue}px;
       padding: ${borderSizeValue}px;
@@ -36,14 +35,19 @@ export const StyledPresence = styled(_StyledPresence)<PresenceSizeProps>`
   border-radius: 50%;
   box-sizing: content-box;
 
-  ${({ type, iconSizeValue, color }) => {
+  ${({ type, iconSizeValue, borderSizeValue, color }) => {
     return css`
       width: ${iconSizeValue}px;
       height: ${iconSizeValue}px;
       background: ${color
         ? getParsePaletteColor(color)
         : RcPresenceBackgroundColors[type!] || palette2('neutral', 'l01')};
-
+      margin: ${borderSizeValue}px;
+      ${fakeBorder({
+        inset: false,
+        color: palette2('neutral', 'l01'),
+        size: borderSizeValue,
+      })};
       ${RcIcon} {
         svg {
           width: ${iconSizeValue}px;
