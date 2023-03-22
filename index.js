@@ -83700,19 +83700,27 @@ var _MoreMenuTab = forwardRef718((props, ref2) => {
   } = MenuProps;
   const menuId = useId2(menuIdProp);
   const [anchorEl, setAnchorEl] = useState49(null);
-  const MoreIcon = useMemo102(() => {
-    const Icon = MoreIconProp || /* @__PURE__ */ React820.createElement(RcIcon, {
-      size: "medium",
-      color: "neutral.f04",
-      symbol: MoreHoriz_default
-    });
+  const open = Boolean(anchorEl);
+  const MoreIcon = (() => {
+    let Icon;
+    if (!MoreIconProp) {
+      Icon = /* @__PURE__ */ React820.createElement(RcIcon, {
+        size: "medium",
+        color: "neutral.f04",
+        symbol: MoreHoriz_default
+      });
+    } else if (typeof MoreIconProp === "function") {
+      Icon = MoreIconProp(open);
+    } else {
+      Icon = MoreIconProp;
+    }
     if (TooltipProps?.title) {
       return /* @__PURE__ */ React820.createElement(RcTooltip, {
         ...TooltipProps
       }, Icon);
     }
     return Icon;
-  }, [MoreIconProp, TooltipProps]);
+  })();
   const handleTabClick = useEventCallback2((event) => {
     setAnchorEl(event.currentTarget);
   });
@@ -83763,7 +83771,7 @@ var _MoreMenuTab = forwardRef718((props, ref2) => {
     ...MenuPropsRest,
     id: menuId,
     anchorEl,
-    open: Boolean(anchorEl),
+    open,
     variant: "menu",
     onClose: handleMenuClose
   }, MenuList3));
@@ -84140,13 +84148,13 @@ var _RcTabList = forwardRef721((inProps, ref2) => {
   if (context === null) {
     throw new TypeError("[RcTabList] No TabContext provided");
   }
-  const children2 = React824.Children.map(childrenProp, (child) => {
+  const children2 = useMemo106(() => React824.Children.map(childrenProp, (child) => {
     const { value } = child.props;
     return React824.cloneElement(child, {
       "aria-controls": getPanelId(context, value),
       id: getTabId(context, value)
     });
-  });
+  }), [childrenProp, context]);
   return /* @__PURE__ */ React824.createElement(RcTabs, {
     ...rest,
     ref: ref2,
