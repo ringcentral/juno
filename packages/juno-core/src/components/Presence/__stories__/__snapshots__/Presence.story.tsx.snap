@@ -28,8 +28,6 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
@@ -56,6 +54,8 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   width: 8px;
   height: 8px;
   background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c1 .c2 svg {
@@ -64,7 +64,7 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 "
   type="notReady"
 >
   <div
@@ -118,8 +118,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -134,14 +132,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -150,14 +146,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -166,14 +160,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -182,14 +174,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -198,8 +188,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
@@ -226,6 +214,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c2 .c3 svg {
@@ -233,7 +223,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -251,146 +241,194 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  background: #FFFFFF;
-}
-
-.c8 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  background: #FFFFFF;
-}
-
-.c10 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  background: #FFFFFF;
-}
-
-.c12 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 20px;
-  height: 20px;
-  background: #FFFFFF;
-}
-
-.c14 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c16 .c3 svg {
   width: 8px;
   height: 8px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c7 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c9 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c11 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c13 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c15 .c3 svg {
+  width: 20px;
+  height: 20px;
 }
 
 .c17 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c18 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c19 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c20 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c22 .c3 svg {
+.c18 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c19 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c23 .c3 svg {
+.c20 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c24 .c3 svg {
+.c21 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
+.c22 .c3 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c23 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c24 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
 .c25 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c26 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c27 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c28 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -403,7 +441,7 @@ Array [
   padding: 10px;
 }
 
-.c15 {
+.c16 {
   margin-left: 5px;
   color: #121212;
 }
@@ -412,7 +450,7 @@ Array [
     className="c0"
   >
     <div
-      className="c1"
+      className="c1 "
       type="available"
     >
       <div
@@ -438,12 +476,12 @@ Array [
       </div>
     </div>
     <div
-      className="c6"
+      className="c6 "
       type="available"
     >
       <div
         borderSizeValue={2}
-        className="c2"
+        className="c7"
         iconSizeValue={8}
       >
         <span
@@ -464,12 +502,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8 "
       type="available"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c9"
         iconSizeValue={10}
       >
         <span
@@ -490,12 +528,12 @@ Array [
       </div>
     </div>
     <div
-      className="c9"
+      className="c10 "
       type="available"
     >
       <div
         borderSizeValue={2}
-        className="c10"
+        className="c11"
         iconSizeValue={12}
       >
         <span
@@ -516,12 +554,12 @@ Array [
       </div>
     </div>
     <div
-      className="c11"
+      className="c12 "
       type="available"
     >
       <div
         borderSizeValue={2}
-        className="c12"
+        className="c13"
         iconSizeValue={16}
       >
         <span
@@ -542,12 +580,12 @@ Array [
       </div>
     </div>
     <div
-      className="c13"
+      className="c14 "
       type="available"
     >
       <div
         borderSizeValue={2}
-        className="c14"
+        className="c15"
         iconSizeValue={20}
       >
         <span
@@ -568,7 +606,7 @@ Array [
       </div>
     </div>
     <span
-      className="c15"
+      className="c16"
     >
       available
     </span>
@@ -600,8 +638,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -616,14 +652,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -632,14 +666,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -648,14 +680,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -664,14 +694,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -680,8 +708,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
@@ -708,6 +734,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c2 .c3 svg {
@@ -715,7 +743,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -733,146 +761,194 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  background: #FFFFFF;
-}
-
-.c8 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  background: #FFFFFF;
-}
-
-.c10 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  background: #FFFFFF;
-}
-
-.c12 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 20px;
-  height: 20px;
-  background: #FFFFFF;
-}
-
-.c14 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c16 .c3 svg {
   width: 8px;
   height: 8px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c7 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c9 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c11 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c13 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c15 .c3 svg {
+  width: 20px;
+  height: 20px;
 }
 
 .c17 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c18 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c19 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c20 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c22 .c3 svg {
+.c18 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c19 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c23 .c3 svg {
+.c20 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c24 .c3 svg {
+.c21 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
+.c22 .c3 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c23 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c24 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
 .c25 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c26 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c27 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c28 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -885,7 +961,7 @@ Array [
   padding: 10px;
 }
 
-.c15 {
+.c16 {
   margin-left: 5px;
   color: #121212;
 }
@@ -894,7 +970,7 @@ Array [
     className="c0"
   >
     <div
-      className="c1"
+      className="c1 "
       type="attended"
     >
       <div
@@ -920,12 +996,12 @@ Array [
       </div>
     </div>
     <div
-      className="c6"
+      className="c6 "
       type="attended"
     >
       <div
         borderSizeValue={2}
-        className="c2"
+        className="c7"
         iconSizeValue={8}
       >
         <span
@@ -946,12 +1022,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8 "
       type="attended"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c9"
         iconSizeValue={10}
       >
         <span
@@ -972,12 +1048,12 @@ Array [
       </div>
     </div>
     <div
-      className="c9"
+      className="c10 "
       type="attended"
     >
       <div
         borderSizeValue={2}
-        className="c10"
+        className="c11"
         iconSizeValue={12}
       >
         <span
@@ -998,12 +1074,12 @@ Array [
       </div>
     </div>
     <div
-      className="c11"
+      className="c12 "
       type="attended"
     >
       <div
         borderSizeValue={2}
-        className="c12"
+        className="c13"
         iconSizeValue={16}
       >
         <span
@@ -1024,12 +1100,12 @@ Array [
       </div>
     </div>
     <div
-      className="c13"
+      className="c14 "
       type="attended"
     >
       <div
         borderSizeValue={2}
-        className="c14"
+        className="c15"
         iconSizeValue={20}
       >
         <span
@@ -1050,7 +1126,7 @@ Array [
       </div>
     </div>
     <span
-      className="c15"
+      className="c16"
     >
       attended
     </span>
@@ -1082,8 +1158,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -1098,14 +1172,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1114,14 +1186,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1130,14 +1200,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1146,14 +1214,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1162,8 +1228,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
@@ -1190,6 +1254,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c2 .c3 svg {
@@ -1197,7 +1263,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1215,146 +1281,194 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  background: #FFFFFF;
-}
-
-.c8 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  background: #FFFFFF;
-}
-
-.c10 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  background: #FFFFFF;
-}
-
-.c12 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 20px;
-  height: 20px;
-  background: #FFFFFF;
-}
-
-.c14 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c16 .c3 svg {
   width: 8px;
   height: 8px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c7 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c9 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c11 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c13 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c15 .c3 svg {
+  width: 20px;
+  height: 20px;
 }
 
 .c17 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c18 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c19 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c20 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c22 .c3 svg {
+.c18 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c19 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c23 .c3 svg {
+.c20 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c24 .c3 svg {
+.c21 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
+.c22 .c3 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c23 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c24 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
 .c25 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c26 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c27 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c28 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -1367,7 +1481,7 @@ Array [
   padding: 10px;
 }
 
-.c15 {
+.c16 {
   margin-left: 5px;
   color: #121212;
 }
@@ -1376,7 +1490,7 @@ Array [
     className="c0"
   >
     <div
-      className="c1"
+      className="c1 "
       type="unAttended"
     >
       <div
@@ -1401,12 +1515,12 @@ Array [
       </div>
     </div>
     <div
-      className="c6"
+      className="c6 "
       type="unAttended"
     >
       <div
         borderSizeValue={2}
-        className="c2"
+        className="c7"
         iconSizeValue={8}
       >
         <span
@@ -1426,12 +1540,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8 "
       type="unAttended"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c9"
         iconSizeValue={10}
       >
         <span
@@ -1451,12 +1565,12 @@ Array [
       </div>
     </div>
     <div
-      className="c9"
+      className="c10 "
       type="unAttended"
     >
       <div
         borderSizeValue={2}
-        className="c10"
+        className="c11"
         iconSizeValue={12}
       >
         <span
@@ -1476,12 +1590,12 @@ Array [
       </div>
     </div>
     <div
-      className="c11"
+      className="c12 "
       type="unAttended"
     >
       <div
         borderSizeValue={2}
-        className="c12"
+        className="c13"
         iconSizeValue={16}
       >
         <span
@@ -1501,12 +1615,12 @@ Array [
       </div>
     </div>
     <div
-      className="c13"
+      className="c14 "
       type="unAttended"
     >
       <div
         borderSizeValue={2}
-        className="c14"
+        className="c15"
         iconSizeValue={20}
       >
         <span
@@ -1526,7 +1640,7 @@ Array [
       </div>
     </div>
     <span
-      className="c15"
+      className="c16"
     >
       unAttended
     </span>
@@ -1558,8 +1672,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -1574,14 +1686,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1590,14 +1700,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1606,14 +1714,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1622,14 +1728,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1638,8 +1742,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
@@ -1666,6 +1768,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c2 .c3 svg {
@@ -1673,7 +1777,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1691,146 +1795,194 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  background: #FFFFFF;
-}
-
-.c8 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  background: #FFFFFF;
-}
-
-.c10 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  background: #FFFFFF;
-}
-
-.c12 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 20px;
-  height: 20px;
-  background: #FFFFFF;
-}
-
-.c14 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c16 .c3 svg {
   width: 8px;
   height: 8px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c7 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c9 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c11 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c13 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c15 .c3 svg {
+  width: 20px;
+  height: 20px;
 }
 
 .c17 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c18 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c19 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c20 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c22 .c3 svg {
+.c18 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c19 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c23 .c3 svg {
+.c20 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c24 .c3 svg {
+.c21 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
+.c22 .c3 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c23 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c24 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
 .c25 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c26 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c27 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c28 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -1843,7 +1995,7 @@ Array [
   padding: 10px;
 }
 
-.c15 {
+.c16 {
   margin-left: 5px;
   color: #121212;
 }
@@ -1852,7 +2004,7 @@ Array [
     className="c0"
   >
     <div
-      className="c1"
+      className="c1 "
       type="onCall"
     >
       <div
@@ -1879,12 +2031,12 @@ Array [
       </div>
     </div>
     <div
-      className="c6"
+      className="c6 "
       type="onCall"
     >
       <div
         borderSizeValue={2}
-        className="c2"
+        className="c7"
         iconSizeValue={8}
       >
         <span
@@ -1906,12 +2058,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8 "
       type="onCall"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c9"
         iconSizeValue={10}
       >
         <span
@@ -1933,12 +2085,12 @@ Array [
       </div>
     </div>
     <div
-      className="c9"
+      className="c10 "
       type="onCall"
     >
       <div
         borderSizeValue={2}
-        className="c10"
+        className="c11"
         iconSizeValue={12}
       >
         <span
@@ -1960,12 +2112,12 @@ Array [
       </div>
     </div>
     <div
-      className="c11"
+      className="c12 "
       type="onCall"
     >
       <div
         borderSizeValue={2}
-        className="c12"
+        className="c13"
         iconSizeValue={16}
       >
         <span
@@ -1987,12 +2139,12 @@ Array [
       </div>
     </div>
     <div
-      className="c13"
+      className="c14 "
       type="onCall"
     >
       <div
         borderSizeValue={2}
-        className="c14"
+        className="c15"
         iconSizeValue={20}
       >
         <span
@@ -2014,7 +2166,7 @@ Array [
       </div>
     </div>
     <span
-      className="c15"
+      className="c16"
     >
       onCall
     </span>
@@ -2046,8 +2198,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -2062,14 +2212,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2078,14 +2226,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2094,14 +2240,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2110,14 +2254,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2126,8 +2268,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
@@ -2154,6 +2294,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c2 .c3 svg {
@@ -2161,7 +2303,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2179,146 +2321,194 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  background: #FFFFFF;
-}
-
-.c8 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  background: #FFFFFF;
-}
-
-.c10 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  background: #FFFFFF;
-}
-
-.c12 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 20px;
-  height: 20px;
-  background: #FFFFFF;
-}
-
-.c14 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c16 .c3 svg {
   width: 8px;
   height: 8px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c7 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c9 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c11 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c13 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c15 .c3 svg {
+  width: 20px;
+  height: 20px;
 }
 
 .c17 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c18 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c19 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c20 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c22 .c3 svg {
+.c18 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c19 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c23 .c3 svg {
+.c20 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c24 .c3 svg {
+.c21 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
+.c22 .c3 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c23 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c24 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
 .c25 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c26 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c27 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c28 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -2331,7 +2521,7 @@ Array [
   padding: 10px;
 }
 
-.c15 {
+.c16 {
   margin-left: 5px;
   color: #121212;
 }
@@ -2340,7 +2530,7 @@ Array [
     className="c0"
   >
     <div
-      className="c1"
+      className="c1 "
       type="inMeeting"
     >
       <div
@@ -2367,12 +2557,12 @@ Array [
       </div>
     </div>
     <div
-      className="c6"
+      className="c6 "
       type="inMeeting"
     >
       <div
         borderSizeValue={2}
-        className="c2"
+        className="c7"
         iconSizeValue={8}
       >
         <span
@@ -2394,12 +2584,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8 "
       type="inMeeting"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c9"
         iconSizeValue={10}
       >
         <span
@@ -2421,12 +2611,12 @@ Array [
       </div>
     </div>
     <div
-      className="c9"
+      className="c10 "
       type="inMeeting"
     >
       <div
         borderSizeValue={2}
-        className="c10"
+        className="c11"
         iconSizeValue={12}
       >
         <span
@@ -2448,12 +2638,12 @@ Array [
       </div>
     </div>
     <div
-      className="c11"
+      className="c12 "
       type="inMeeting"
     >
       <div
         borderSizeValue={2}
-        className="c12"
+        className="c13"
         iconSizeValue={16}
       >
         <span
@@ -2475,12 +2665,12 @@ Array [
       </div>
     </div>
     <div
-      className="c13"
+      className="c14 "
       type="inMeeting"
     >
       <div
         borderSizeValue={2}
-        className="c14"
+        className="c15"
         iconSizeValue={20}
       >
         <span
@@ -2502,7 +2692,7 @@ Array [
       </div>
     </div>
     <span
-      className="c15"
+      className="c16"
     >
       inMeeting
     </span>
@@ -2534,8 +2724,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -2550,14 +2738,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2566,14 +2752,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2582,14 +2766,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2598,14 +2780,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2614,8 +2794,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
@@ -2642,6 +2820,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c2 .c3 svg {
@@ -2649,7 +2829,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2667,146 +2847,194 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  background: #FFFFFF;
-}
-
-.c8 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  background: #FFFFFF;
-}
-
-.c10 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  background: #FFFFFF;
-}
-
-.c12 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 20px;
-  height: 20px;
-  background: #FFFFFF;
-}
-
-.c14 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c16 .c3 svg {
   width: 8px;
   height: 8px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c7 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c9 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c11 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c13 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c15 .c3 svg {
+  width: 20px;
+  height: 20px;
 }
 
 .c17 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c18 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c19 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c20 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c22 .c3 svg {
+.c18 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c19 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c23 .c3 svg {
+.c20 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c24 .c3 svg {
+.c21 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
+.c22 .c3 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c23 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c24 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
 .c25 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c26 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c27 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c28 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -2819,7 +3047,7 @@ Array [
   padding: 10px;
 }
 
-.c15 {
+.c16 {
   margin-left: 5px;
   color: #121212;
 }
@@ -2828,7 +3056,7 @@ Array [
     className="c0"
   >
     <div
-      className="c1"
+      className="c1 "
       type="DND"
     >
       <div
@@ -2853,12 +3081,12 @@ Array [
       </div>
     </div>
     <div
-      className="c6"
+      className="c6 "
       type="DND"
     >
       <div
         borderSizeValue={2}
-        className="c2"
+        className="c7"
         iconSizeValue={8}
       >
         <span
@@ -2878,12 +3106,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8 "
       type="DND"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c9"
         iconSizeValue={10}
       >
         <span
@@ -2903,12 +3131,12 @@ Array [
       </div>
     </div>
     <div
-      className="c9"
+      className="c10 "
       type="DND"
     >
       <div
         borderSizeValue={2}
-        className="c10"
+        className="c11"
         iconSizeValue={12}
       >
         <span
@@ -2928,12 +3156,12 @@ Array [
       </div>
     </div>
     <div
-      className="c11"
+      className="c12 "
       type="DND"
     >
       <div
         borderSizeValue={2}
-        className="c12"
+        className="c13"
         iconSizeValue={16}
       >
         <span
@@ -2953,12 +3181,12 @@ Array [
       </div>
     </div>
     <div
-      className="c13"
+      className="c14 "
       type="DND"
     >
       <div
         borderSizeValue={2}
-        className="c14"
+        className="c15"
         iconSizeValue={20}
       >
         <span
@@ -2978,7 +3206,7 @@ Array [
       </div>
     </div>
     <span
-      className="c15"
+      className="c16"
     >
       DND
     </span>
@@ -3010,8 +3238,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -3026,14 +3252,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3042,14 +3266,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3058,14 +3280,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3074,14 +3294,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3090,8 +3308,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
@@ -3118,6 +3334,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c2 .c3 svg {
@@ -3125,7 +3343,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3143,146 +3361,194 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  background: #FFFFFF;
-}
-
-.c8 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  background: #FFFFFF;
-}
-
-.c10 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  background: #FFFFFF;
-}
-
-.c12 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 20px;
-  height: 20px;
-  background: #FFFFFF;
-}
-
-.c14 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c16 .c3 svg {
   width: 8px;
   height: 8px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c7 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c9 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c11 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c13 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c15 .c3 svg {
+  width: 20px;
+  height: 20px;
 }
 
 .c17 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c18 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c19 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c20 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c22 .c3 svg {
+.c18 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c19 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c23 .c3 svg {
+.c20 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c24 .c3 svg {
+.c21 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
+.c22 .c3 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c23 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c24 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
 .c25 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c26 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c27 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c28 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -3295,7 +3561,7 @@ Array [
   padding: 10px;
 }
 
-.c15 {
+.c16 {
   margin-left: 5px;
   color: #121212;
 }
@@ -3304,7 +3570,7 @@ Array [
     className="c0"
   >
     <div
-      className="c1"
+      className="c1 "
       type="busy"
     >
       <div
@@ -3331,12 +3597,12 @@ Array [
       </div>
     </div>
     <div
-      className="c6"
+      className="c6 "
       type="busy"
     >
       <div
         borderSizeValue={2}
-        className="c2"
+        className="c7"
         iconSizeValue={8}
       >
         <span
@@ -3358,12 +3624,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8 "
       type="busy"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c9"
         iconSizeValue={10}
       >
         <span
@@ -3385,12 +3651,12 @@ Array [
       </div>
     </div>
     <div
-      className="c9"
+      className="c10 "
       type="busy"
     >
       <div
         borderSizeValue={2}
-        className="c10"
+        className="c11"
         iconSizeValue={12}
       >
         <span
@@ -3412,12 +3678,12 @@ Array [
       </div>
     </div>
     <div
-      className="c11"
+      className="c12 "
       type="busy"
     >
       <div
         borderSizeValue={2}
-        className="c12"
+        className="c13"
         iconSizeValue={16}
       >
         <span
@@ -3439,12 +3705,12 @@ Array [
       </div>
     </div>
     <div
-      className="c13"
+      className="c14 "
       type="busy"
     >
       <div
         borderSizeValue={2}
-        className="c14"
+        className="c15"
         iconSizeValue={20}
       >
         <span
@@ -3466,7 +3732,7 @@ Array [
       </div>
     </div>
     <span
-      className="c15"
+      className="c16"
     >
       busy
     </span>
@@ -3498,8 +3764,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -3514,14 +3778,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3530,14 +3792,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3546,14 +3806,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3562,14 +3820,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3578,8 +3834,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
@@ -3606,6 +3860,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c2 .c3 svg {
@@ -3613,7 +3869,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3631,146 +3887,194 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  background: #FFFFFF;
-}
-
-.c8 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  background: #FFFFFF;
-}
-
-.c10 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  background: #FFFFFF;
-}
-
-.c12 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 20px;
-  height: 20px;
-  background: #FFFFFF;
-}
-
-.c14 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c16 .c3 svg {
   width: 8px;
   height: 8px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c7 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c9 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c11 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c13 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c15 .c3 svg {
+  width: 20px;
+  height: 20px;
 }
 
 .c17 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c18 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c19 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c20 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c22 .c3 svg {
+.c18 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c19 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c23 .c3 svg {
+.c20 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c24 .c3 svg {
+.c21 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
+.c22 .c3 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c23 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c24 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
 .c25 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c26 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c27 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c28 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -3783,7 +4087,7 @@ Array [
   padding: 10px;
 }
 
-.c15 {
+.c16 {
   margin-left: 5px;
   color: #121212;
 }
@@ -3792,7 +4096,7 @@ Array [
     className="c0"
   >
     <div
-      className="c1"
+      className="c1 "
       type="unavailable"
     >
       <div
@@ -3816,12 +4120,12 @@ Array [
       </div>
     </div>
     <div
-      className="c6"
+      className="c6 "
       type="unavailable"
     >
       <div
         borderSizeValue={2}
-        className="c2"
+        className="c7"
         iconSizeValue={8}
       >
         <span
@@ -3840,12 +4144,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8 "
       type="unavailable"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c9"
         iconSizeValue={10}
       >
         <span
@@ -3864,12 +4168,12 @@ Array [
       </div>
     </div>
     <div
-      className="c9"
+      className="c10 "
       type="unavailable"
     >
       <div
         borderSizeValue={2}
-        className="c10"
+        className="c11"
         iconSizeValue={12}
       >
         <span
@@ -3888,12 +4192,12 @@ Array [
       </div>
     </div>
     <div
-      className="c11"
+      className="c12 "
       type="unavailable"
     >
       <div
         borderSizeValue={2}
-        className="c12"
+        className="c13"
         iconSizeValue={16}
       >
         <span
@@ -3912,12 +4216,12 @@ Array [
       </div>
     </div>
     <div
-      className="c13"
+      className="c14 "
       type="unavailable"
     >
       <div
         borderSizeValue={2}
-        className="c14"
+        className="c15"
         iconSizeValue={20}
       >
         <span
@@ -3936,7 +4240,7 @@ Array [
       </div>
     </div>
     <span
-      className="c15"
+      className="c16"
     >
       unavailable
     </span>
@@ -3968,8 +4272,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -3984,14 +4286,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4000,14 +4300,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4016,14 +4314,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4032,14 +4328,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4048,8 +4342,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
@@ -4076,6 +4368,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c2 .c3 svg {
@@ -4083,7 +4377,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4101,146 +4395,194 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  background: #FFFFFF;
-}
-
-.c8 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  background: #FFFFFF;
-}
-
-.c10 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  background: #FFFFFF;
-}
-
-.c12 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 20px;
-  height: 20px;
-  background: #FFFFFF;
-}
-
-.c14 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c16 .c3 svg {
   width: 8px;
   height: 8px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c7 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c9 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c11 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c13 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c15 .c3 svg {
+  width: 20px;
+  height: 20px;
 }
 
 .c17 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c18 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c19 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c20 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c22 .c3 svg {
+.c18 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c19 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c23 .c3 svg {
+.c20 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c24 .c3 svg {
+.c21 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
+.c22 .c3 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c23 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c24 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
 .c25 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c26 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c27 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c28 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -4253,7 +4595,7 @@ Array [
   padding: 10px;
 }
 
-.c15 {
+.c16 {
   margin-left: 5px;
   color: #121212;
 }
@@ -4262,7 +4604,7 @@ Array [
     className="c0"
   >
     <div
-      className="c1"
+      className="c1 "
       type="notReady"
     >
       <div
@@ -4286,12 +4628,12 @@ Array [
       </div>
     </div>
     <div
-      className="c6"
+      className="c6 "
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c2"
+        className="c7"
         iconSizeValue={8}
       >
         <span
@@ -4310,12 +4652,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8 "
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c9"
         iconSizeValue={10}
       >
         <span
@@ -4334,12 +4676,12 @@ Array [
       </div>
     </div>
     <div
-      className="c9"
+      className="c10 "
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c10"
+        className="c11"
         iconSizeValue={12}
       >
         <span
@@ -4358,12 +4700,12 @@ Array [
       </div>
     </div>
     <div
-      className="c11"
+      className="c12 "
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c12"
+        className="c13"
         iconSizeValue={16}
       >
         <span
@@ -4382,12 +4724,12 @@ Array [
       </div>
     </div>
     <div
-      className="c13"
+      className="c14 "
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c14"
+        className="c15"
         iconSizeValue={20}
       >
         <span
@@ -4406,7 +4748,7 @@ Array [
       </div>
     </div>
     <span
-      className="c15"
+      className="c16"
     >
       notReady
     </span>
@@ -4438,8 +4780,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -4454,14 +4794,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4470,14 +4808,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4486,14 +4822,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4502,14 +4836,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4518,8 +4850,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
@@ -4546,6 +4876,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c2 .c3 svg {
@@ -4553,7 +4885,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4571,146 +4903,194 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 10px;
-  height: 10px;
-  background: #FFFFFF;
-}
-
-.c8 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  background: #FFFFFF;
-}
-
-.c10 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  background: #FFFFFF;
-}
-
-.c12 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 20px;
-  height: 20px;
-  background: #FFFFFF;
-}
-
-.c14 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c16 .c3 svg {
   width: 8px;
   height: 8px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c7 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c9 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c11 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c13 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c15 .c3 svg {
+  width: 20px;
+  height: 20px;
 }
 
 .c17 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c18 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c19 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c20 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c22 .c3 svg {
+.c18 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c19 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c23 .c3 svg {
+.c20 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c24 .c3 svg {
+.c21 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
+.c22 .c3 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c23 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c24 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
 .c25 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c26 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c27 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c28 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -4723,7 +5103,7 @@ Array [
   padding: 10px;
 }
 
-.c15 {
+.c16 {
   margin-left: 5px;
   color: #121212;
 }
@@ -4732,7 +5112,7 @@ Array [
     className="c0"
   >
     <div
-      className="c1"
+      className="c1 "
       type="offline"
     >
       <div
@@ -4756,12 +5136,12 @@ Array [
       </div>
     </div>
     <div
-      className="c6"
+      className="c6 "
       type="offline"
     >
       <div
         borderSizeValue={2}
-        className="c2"
+        className="c7"
         iconSizeValue={8}
       >
         <span
@@ -4780,12 +5160,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8 "
       type="offline"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c9"
         iconSizeValue={10}
       >
         <span
@@ -4804,12 +5184,12 @@ Array [
       </div>
     </div>
     <div
-      className="c9"
+      className="c10 "
       type="offline"
     >
       <div
         borderSizeValue={2}
-        className="c10"
+        className="c11"
         iconSizeValue={12}
       >
         <span
@@ -4828,12 +5208,12 @@ Array [
       </div>
     </div>
     <div
-      className="c11"
+      className="c12 "
       type="offline"
     >
       <div
         borderSizeValue={2}
-        className="c12"
+        className="c13"
         iconSizeValue={16}
       >
         <span
@@ -4852,12 +5232,12 @@ Array [
       </div>
     </div>
     <div
-      className="c13"
+      className="c14 "
       type="offline"
     >
       <div
         borderSizeValue={2}
-        className="c14"
+        className="c15"
         iconSizeValue={20}
       >
         <span
@@ -4876,7 +5256,7 @@ Array [
       </div>
     </div>
     <span
-      className="c15"
+      className="c16"
     >
       offline
     </span>
@@ -4908,8 +5288,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -4924,14 +5302,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4940,14 +5316,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4956,14 +5330,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4972,14 +5344,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4988,34 +5358,37 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
 }
 
-.c16 .c3 svg {
+.c17 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c17 .c3 svg {
+.c18 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c19 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c18 .c3 svg {
+.c20 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c19 .c3 svg {
+.c21 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c20 .c3 svg {
+.c22 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -5041,6 +5414,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #066FAC;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c2 .c3 svg {
@@ -5048,7 +5423,7 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5066,121 +5441,164 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
-.c8 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 12px;
-  height: 12px;
-  background: #066FAC;
-}
-
-.c10 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 16px;
-  height: 16px;
-  background: #066FAC;
-}
-
-.c12 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  box-sizing: content-box;
-  width: 20px;
-  height: 20px;
-  background: #066FAC;
-}
-
-.c14 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c21 .c3 svg {
+.c7 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c22 .c3 svg {
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c9 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c23 .c3 svg {
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c11 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c24 .c3 svg {
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c13 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c15 .c3 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c23 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c24 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
 .c25 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c26 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c27 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c28 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -5193,7 +5611,7 @@ Array [
   padding: 10px;
 }
 
-.c15 {
+.c16 {
   margin-left: 5px;
   color: #121212;
 }
@@ -5202,7 +5620,7 @@ Array [
     className="c0"
   >
     <div
-      className="c1"
+      className="c1 "
       type="notReady"
     >
       <div
@@ -5226,12 +5644,12 @@ Array [
       </div>
     </div>
     <div
-      className="c6"
+      className="c6 "
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c2"
+        className="c7"
         iconSizeValue={8}
       >
         <span
@@ -5250,12 +5668,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8 "
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c9"
         iconSizeValue={10}
       >
         <span
@@ -5274,12 +5692,12 @@ Array [
       </div>
     </div>
     <div
-      className="c9"
+      className="c10 "
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c10"
+        className="c11"
         iconSizeValue={12}
       >
         <span
@@ -5298,12 +5716,12 @@ Array [
       </div>
     </div>
     <div
-      className="c11"
+      className="c12 "
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c12"
+        className="c13"
         iconSizeValue={16}
       >
         <span
@@ -5322,12 +5740,12 @@ Array [
       </div>
     </div>
     <div
-      className="c13"
+      className="c14 "
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c14"
+        className="c15"
         iconSizeValue={20}
       >
         <span
@@ -5346,7 +5764,7 @@ Array [
       </div>
     </div>
     <span
-      className="c15"
+      className="c16"
     >
       Custom Color with theme method
     </span>
@@ -5378,8 +5796,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -5394,14 +5810,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5410,14 +5824,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5426,14 +5838,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
 }
 
-.c11 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5442,14 +5852,12 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5458,59 +5866,67 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
-}
-
-.c16 .c3 svg {
-  width: 8px;
-  height: 8px;
 }
 
 .c17 .c3 svg {
-  width: 10px;
-  height: 10px;
-}
-
-.c18 .c3 svg {
-  width: 12px;
-  height: 12px;
-}
-
-.c19 .c3 svg {
-  width: 16px;
-  height: 16px;
-}
-
-.c20 .c3 svg {
-  width: 20px;
-  height: 20px;
-}
-
-.c21 .c3 svg {
   width: 8px;
   height: 8px;
 }
 
-.c22 .c3 svg {
+.c18 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c19 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c23 .c3 svg {
+.c20 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c24 .c3 svg {
+.c21 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
+.c22 .c3 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c23 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c24 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
 .c25 .c3 svg {
+  width: 10px;
+  height: 10px;
+}
+
+.c26 .c3 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.c27 .c3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.c28 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -5536,6 +5952,8 @@ Array [
   width: 8px;
   height: 8px;
   background: yellow;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c2 .c3 svg {
@@ -5543,7 +5961,37 @@ Array [
   height: 8px;
 }
 
-.c8 {
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  background: yellow;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.c7 .c3 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5564,14 +6012,16 @@ Array [
   width: 10px;
   height: 10px;
   background: yellow;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
-.c8 .c3 svg {
+.c9 .c3 svg {
   width: 10px;
   height: 10px;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5592,14 +6042,16 @@ Array [
   width: 12px;
   height: 12px;
   background: yellow;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
-.c10 .c3 svg {
+.c11 .c3 svg {
   width: 12px;
   height: 12px;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5620,14 +6072,16 @@ Array [
   width: 16px;
   height: 16px;
   background: yellow;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
-.c12 .c3 svg {
+.c13 .c3 svg {
   width: 16px;
   height: 16px;
 }
 
-.c14 {
+.c15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5648,9 +6102,11 @@ Array [
   width: 20px;
   height: 20px;
   background: yellow;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
-.c14 .c3 svg {
+.c15 .c3 svg {
   width: 20px;
   height: 20px;
 }
@@ -5663,7 +6119,7 @@ Array [
   padding: 10px;
 }
 
-.c15 {
+.c16 {
   margin-left: 5px;
   color: #121212;
 }
@@ -5672,7 +6128,7 @@ Array [
     className="c0"
   >
     <div
-      className="c1"
+      className="c1 "
       type="notReady"
     >
       <div
@@ -5696,12 +6152,12 @@ Array [
       </div>
     </div>
     <div
-      className="c6"
+      className="c6 "
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c2"
+        className="c7"
         iconSizeValue={8}
       >
         <span
@@ -5720,12 +6176,12 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
+      className="c8 "
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c8"
+        className="c9"
         iconSizeValue={10}
       >
         <span
@@ -5744,12 +6200,12 @@ Array [
       </div>
     </div>
     <div
-      className="c9"
+      className="c10 "
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c10"
+        className="c11"
         iconSizeValue={12}
       >
         <span
@@ -5768,12 +6224,12 @@ Array [
       </div>
     </div>
     <div
-      className="c11"
+      className="c12 "
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c12"
+        className="c13"
         iconSizeValue={16}
       >
         <span
@@ -5792,12 +6248,12 @@ Array [
       </div>
     </div>
     <div
-      className="c13"
+      className="c14 "
       type="notReady"
     >
       <div
         borderSizeValue={2}
-        className="c14"
+        className="c15"
         iconSizeValue={20}
       >
         <span
@@ -5816,7 +6272,7 @@ Array [
       </div>
     </div>
     <span
-      className="c15"
+      className="c16"
     >
       Custom Color with css color
     </span>

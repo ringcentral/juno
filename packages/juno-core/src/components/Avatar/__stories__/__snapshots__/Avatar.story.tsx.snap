@@ -630,8 +630,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -658,6 +656,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #066FAC;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -666,21 +666,26 @@ Array [
 }
 
 .c8 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -762,7 +767,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -814,11 +819,14 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
+}
+
+.c8 .c5 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c4 {
@@ -842,6 +850,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -849,22 +859,22 @@ Array [
   height: 8px;
 }
 
-.c8 .c5 svg {
+.c9 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -946,7 +956,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -998,14 +1008,17 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
 .c8 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 .c5 svg {
   width: 8px;
   height: 8px;
 }
@@ -1031,6 +1044,8 @@ Array [
   width: 10px;
   height: 10px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -1038,17 +1053,17 @@ Array [
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -1130,7 +1145,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -1182,8 +1197,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
@@ -1195,6 +1208,11 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
@@ -1220,6 +1238,8 @@ Array [
   width: 12px;
   height: 12px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -1227,12 +1247,12 @@ Array [
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -1314,7 +1334,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -1366,8 +1386,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
@@ -1379,11 +1397,16 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 12px;
   height: 12px;
 }
@@ -1409,6 +1432,8 @@ Array [
   width: 16px;
   height: 16px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -1416,7 +1441,7 @@ Array [
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -1498,7 +1523,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -1550,8 +1575,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
@@ -1563,16 +1586,21 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 16px;
   height: 16px;
 }
@@ -1598,6 +1626,8 @@ Array [
   width: 20px;
   height: 20px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -1682,7 +1712,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -1735,8 +1765,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -1763,6 +1791,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #066FAC;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -1771,21 +1801,26 @@ Array [
 }
 
 .c8 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -1867,7 +1902,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -1919,11 +1954,14 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
+}
+
+.c8 .c5 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c4 {
@@ -1947,6 +1985,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -1954,22 +1994,22 @@ Array [
   height: 8px;
 }
 
-.c8 .c5 svg {
+.c9 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -2051,7 +2091,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -2103,14 +2143,17 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
 .c8 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 .c5 svg {
   width: 8px;
   height: 8px;
 }
@@ -2136,6 +2179,8 @@ Array [
   width: 10px;
   height: 10px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -2143,17 +2188,17 @@ Array [
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -2235,7 +2280,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -2287,8 +2332,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
@@ -2300,6 +2343,11 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
@@ -2325,6 +2373,8 @@ Array [
   width: 12px;
   height: 12px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -2332,12 +2382,12 @@ Array [
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -2419,7 +2469,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -2471,8 +2521,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
@@ -2484,11 +2532,16 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 12px;
   height: 12px;
 }
@@ -2514,6 +2567,8 @@ Array [
   width: 16px;
   height: 16px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -2521,7 +2576,7 @@ Array [
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -2603,7 +2658,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -2655,8 +2710,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
@@ -2668,16 +2721,21 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 16px;
   height: 16px;
 }
@@ -2703,6 +2761,8 @@ Array [
   width: 20px;
   height: 20px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -2787,7 +2847,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -2840,8 +2900,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -2868,6 +2926,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #066FAC;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -2876,21 +2936,26 @@ Array [
 }
 
 .c8 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -2972,7 +3037,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -3024,11 +3089,14 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
+}
+
+.c8 .c5 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c4 {
@@ -3052,6 +3120,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -3059,22 +3129,22 @@ Array [
   height: 8px;
 }
 
-.c8 .c5 svg {
+.c9 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -3156,7 +3226,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -3208,14 +3278,17 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
 .c8 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 .c5 svg {
   width: 8px;
   height: 8px;
 }
@@ -3241,6 +3314,8 @@ Array [
   width: 10px;
   height: 10px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -3248,17 +3323,17 @@ Array [
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -3340,7 +3415,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -3392,8 +3467,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
@@ -3405,6 +3478,11 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
@@ -3430,6 +3508,8 @@ Array [
   width: 12px;
   height: 12px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -3437,12 +3517,12 @@ Array [
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -3524,7 +3604,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -3576,8 +3656,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
@@ -3589,11 +3667,16 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 12px;
   height: 12px;
 }
@@ -3619,6 +3702,8 @@ Array [
   width: 16px;
   height: 16px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -3626,7 +3711,7 @@ Array [
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -3708,7 +3793,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -3760,8 +3845,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
@@ -3773,16 +3856,21 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 16px;
   height: 16px;
 }
@@ -3808,6 +3896,8 @@ Array [
   width: 20px;
   height: 20px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -3892,7 +3982,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -3945,8 +4035,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -3973,6 +4061,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #066FAC;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -3981,21 +4071,26 @@ Array [
 }
 
 .c8 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -4077,7 +4172,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -4129,11 +4224,14 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
+}
+
+.c8 .c5 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c4 {
@@ -4157,6 +4255,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -4164,22 +4264,22 @@ Array [
   height: 8px;
 }
 
-.c8 .c5 svg {
+.c9 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -4261,7 +4361,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -4313,14 +4413,17 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
 .c8 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 .c5 svg {
   width: 8px;
   height: 8px;
 }
@@ -4346,6 +4449,8 @@ Array [
   width: 10px;
   height: 10px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -4353,17 +4458,17 @@ Array [
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -4445,7 +4550,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -4497,8 +4602,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
@@ -4510,6 +4613,11 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
@@ -4535,6 +4643,8 @@ Array [
   width: 12px;
   height: 12px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -4542,12 +4652,12 @@ Array [
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -4629,7 +4739,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -4681,8 +4791,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
@@ -4694,11 +4802,16 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 12px;
   height: 12px;
 }
@@ -4724,6 +4837,8 @@ Array [
   width: 16px;
   height: 16px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -4731,7 +4846,7 @@ Array [
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -4813,7 +4928,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -4865,8 +4980,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
@@ -4878,16 +4991,21 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 16px;
   height: 16px;
 }
@@ -4913,6 +5031,8 @@ Array [
   width: 20px;
   height: 20px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -4997,7 +5117,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -5050,8 +5170,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -5078,6 +5196,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #066FAC;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -5086,21 +5206,26 @@ Array [
 }
 
 .c8 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -5182,7 +5307,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -5234,11 +5359,14 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
+}
+
+.c8 .c5 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c4 {
@@ -5262,6 +5390,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -5269,22 +5399,22 @@ Array [
   height: 8px;
 }
 
-.c8 .c5 svg {
+.c9 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -5366,7 +5496,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -5418,14 +5548,17 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
 .c8 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 .c5 svg {
   width: 8px;
   height: 8px;
 }
@@ -5451,6 +5584,8 @@ Array [
   width: 10px;
   height: 10px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -5458,17 +5593,17 @@ Array [
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -5550,7 +5685,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -5602,8 +5737,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
@@ -5615,6 +5748,11 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
@@ -5640,6 +5778,8 @@ Array [
   width: 12px;
   height: 12px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -5647,12 +5787,12 @@ Array [
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -5734,7 +5874,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -5786,8 +5926,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
@@ -5799,11 +5937,16 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 12px;
   height: 12px;
 }
@@ -5829,6 +5972,8 @@ Array [
   width: 16px;
   height: 16px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -5836,7 +5981,7 @@ Array [
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -5918,7 +6063,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -5970,8 +6115,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
@@ -5983,16 +6126,21 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 16px;
   height: 16px;
 }
@@ -6018,6 +6166,8 @@ Array [
   width: 20px;
   height: 20px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -6102,7 +6252,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -6155,8 +6305,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 1px;
@@ -6183,6 +6331,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #066FAC;
+  margin: 1px;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -6191,21 +6341,26 @@ Array [
 }
 
 .c8 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -6287,7 +6442,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -6339,11 +6494,14 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
+}
+
+.c8 .c5 svg {
+  width: 8px;
+  height: 8px;
 }
 
 .c4 {
@@ -6367,6 +6525,8 @@ Array [
   width: 8px;
   height: 8px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -6374,22 +6534,22 @@ Array [
   height: 8px;
 }
 
-.c8 .c5 svg {
+.c9 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -6471,7 +6631,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -6523,14 +6683,17 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
   padding: 2px;
 }
 
 .c8 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c9 .c5 svg {
   width: 8px;
   height: 8px;
 }
@@ -6556,6 +6719,8 @@ Array [
   width: 10px;
   height: 10px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -6563,17 +6728,17 @@ Array [
   height: 10px;
 }
 
-.c9 .c5 svg {
+.c10 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -6655,7 +6820,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -6707,8 +6872,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
@@ -6720,6 +6883,11 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
@@ -6745,6 +6913,8 @@ Array [
   width: 12px;
   height: 12px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -6752,12 +6922,12 @@ Array [
   height: 12px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 16px;
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -6839,7 +7009,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -6891,8 +7061,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 16px;
   height: 16px;
   padding: 2px;
@@ -6904,11 +7072,16 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 12px;
   height: 12px;
 }
@@ -6934,6 +7107,8 @@ Array [
   width: 16px;
   height: 16px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -6941,7 +7116,7 @@ Array [
   height: 16px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 20px;
   height: 20px;
 }
@@ -7023,7 +7198,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -7075,8 +7250,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
   padding: 2px;
@@ -7088,16 +7261,21 @@ Array [
 }
 
 .c9 .c5 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.c10 .c5 svg {
   width: 10px;
   height: 10px;
 }
 
-.c10 .c5 svg {
+.c11 .c5 svg {
   width: 12px;
   height: 12px;
 }
 
-.c11 .c5 svg {
+.c12 .c5 svg {
   width: 16px;
   height: 16px;
 }
@@ -7123,6 +7301,8 @@ Array [
   width: 20px;
   height: 20px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -7207,7 +7387,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -7302,8 +7482,6 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
   padding: 2px;
@@ -7318,8 +7496,6 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
@@ -7346,6 +7522,8 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   width: 8px;
   height: 8px;
   background: #066FAC;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c5 .c6 svg {
@@ -7374,6 +7552,8 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   width: 12px;
   height: 12px;
   background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c10 .c6 svg {
@@ -7609,7 +7789,7 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
         className="c3 RcAvatar-presenceWrapper"
       >
         <div
-          className="c4"
+          className="c4 "
           type="notReady"
         >
           <div
@@ -7652,7 +7832,7 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
       className="c3 RcAvatar-presenceWrapper"
     >
       <div
-        className="c9"
+        className="c9 "
         type="DND"
       >
         <div
@@ -8058,8 +8238,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
@@ -8086,6 +8264,8 @@ Array [
   width: 12px;
   height: 12px;
   background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -8182,7 +8362,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="available"
       >
         <div
@@ -8236,8 +8416,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
@@ -8264,6 +8442,8 @@ Array [
   width: 12px;
   height: 12px;
   background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -8360,7 +8540,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="DND"
       >
         <div
@@ -8440,8 +8620,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
@@ -8468,6 +8646,8 @@ Array [
   width: 12px;
   height: 12px;
   background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -8599,7 +8779,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="notReady"
       >
         <div
@@ -8651,8 +8831,6 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
   width: 12px;
   height: 12px;
   padding: 2px;
@@ -8679,6 +8857,8 @@ Array [
   width: 12px;
   height: 12px;
   background: #FFFFFF;
+  margin: 2px;
+  box-shadow: 0 0 0 2px #FFFFFF;
 }
 
 .c4 .c5 svg {
@@ -8810,7 +8990,7 @@ Array [
       className="c2 RcAvatar-presenceWrapper"
     >
       <div
-        className="c3"
+        className="c3 "
         type="busy"
       >
         <div
