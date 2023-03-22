@@ -1,4 +1,11 @@
 
+## [1.38.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.37.0...juno-icon-v1.38.0) (2023-03-22)
+
+
+### Features
+
+* **Icon:** add new icons Folder, PdfBorder ([fecad4b](https://github.com/ringcentral/juno/commit/fecad4bbf97f1377bf3216aa5b89e9dc201b620c))
+
 ## [1.37.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.36.0...juno-icon-v1.37.0) (2023-03-21)
 
 
