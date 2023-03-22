@@ -50,7 +50,7 @@ type PresenceSizeProps = {
 
 const _RcPresence = forwardRef<any, RcPresenceProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcPresence' });
-  const { type, color, size, borderSize } = props;
+  const { type, color, size, borderSize, ...rest } = props;
   const sizeProps = {
     iconSizeValue: RcPresenceSizes[size!][0],
     borderSizeValue: RcPresenceSizes[borderSize || size!][1],
@@ -77,8 +77,8 @@ const _RcPresence = forwardRef<any, RcPresenceProps>((inProps, ref) => {
   })();
 
   return (
-    <PresenceContainer {...sizeProps}>
-      <StyledPresence ref={ref} {...sizeProps} color={color}>
+    <PresenceContainer ref={ref} {...sizeProps} {...rest}>
+      <StyledPresence {...sizeProps} color={color}>
         <RcIcon
           symbol={symbol}
           color={color || RcPresenceColors[type!]}

@@ -25,8 +25,8 @@ import {
   useThemeProps,
 } from '../../foundation';
 import { RcBox } from '../Box';
-import { RcPresence, RcPresenceProps } from '../Presence';
-import { BadgeStyle } from './styles';
+import { RcPresenceProps } from '../Presence';
+import { BadgeStyle, DefaultDotComponent } from './styles';
 import { RcBadgeClasses, useRoundBadgeOffset } from './utils';
 
 type RcBadgeProps = {
@@ -127,7 +127,7 @@ const _RcBadge = forwardRef<any, RcBadgeProps>((inProps: RcBadgeProps, ref) => {
             vertical!,
           )}${capitalize(horizontal!)}${capitalize(overlap!)}`;
 
-          const DotComponent = dotComponent ?? RcPresence;
+          const DotComponent = dotComponent ?? DefaultDotComponent;
 
           const applyDotProps = combineProps(
             { className: clsx(addClassName, RcBadgeClasses.badge) },
