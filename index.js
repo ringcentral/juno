@@ -55030,8 +55030,6 @@ var PresenceContainer = styled_components_default.div`
   return css2`
       display: flex;
       justify-content: center;
-      background-color: ${palette22("neutral", "l01")};
-      border-radius: 50%;
       width: ${iconSizeValue}px;
       height: ${iconSizeValue}px;
       padding: ${borderSizeValue}px;
@@ -55050,12 +55048,17 @@ var StyledPresence = styled_components_default(_StyledPresence)`
   border-radius: 50%;
   box-sizing: content-box;
 
-  ${({ type: type3, iconSizeValue, color: color2 }) => {
+  ${({ type: type3, iconSizeValue, borderSizeValue, color: color2 }) => {
   return css2`
       width: ${iconSizeValue}px;
       height: ${iconSizeValue}px;
       background: ${color2 ? getParsePaletteColor(color2) : RcPresenceBackgroundColors[type3] || palette22("neutral", "l01")};
-
+      margin: ${borderSizeValue}px;
+      ${fakeBorder({
+    inset: false,
+    color: palette22("neutral", "l01"),
+    size: borderSizeValue
+  })};
       ${RcIcon} {
         svg {
           width: ${iconSizeValue}px;
@@ -55069,7 +55072,7 @@ var StyledPresence = styled_components_default(_StyledPresence)`
 // ../juno-core/src/components/Presence/Presence.tsx
 var _RcPresence = forwardRef600((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcPresence" });
-  const { type: type3, color: color2, size, borderSize } = props;
+  const { type: type3, color: color2, size, borderSize, ...rest } = props;
   const sizeProps = {
     iconSizeValue: RcPresenceSizes[size][0],
     borderSizeValue: RcPresenceSizes[borderSize || size][1],
@@ -55094,9 +55097,10 @@ var _RcPresence = forwardRef600((inProps, ref2) => {
     }
   })();
   return /* @__PURE__ */ React661.createElement(PresenceContainer, {
-    ...sizeProps
-  }, /* @__PURE__ */ React661.createElement(StyledPresence, {
     ref: ref2,
+    ...sizeProps,
+    ...rest
+  }, /* @__PURE__ */ React661.createElement(StyledPresence, {
     ...sizeProps,
     color: color2
   }, /* @__PURE__ */ React661.createElement(RcIcon, {
@@ -55644,6 +55648,12 @@ var BadgeStyle = ({
     }
   `;
 };
+var DefaultDotComponent = styled_components_default.div`
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  border: 2px solid ${palette22("neutral", "l01")};
+`;
 
 // ../juno-core/src/components/Badge/Badge.tsx
 var _RcBadge = forwardRef606((inProps, ref2) => {
@@ -55686,7 +55696,7 @@ var _RcBadge = forwardRef606((inProps, ref2) => {
     return isDot ? forwardRef606(({ children: OmitChildren, ...rest2 }, ref3) => {
       const { horizontal: horizontal2, vertical: vertical2 } = anchorOrigin;
       const addClassName = `MuiBadge-anchorOrigin${capitalize(vertical2)}${capitalize(horizontal2)}${capitalize(overlap)}`;
-      const DotComponent = dotComponent ?? RcPresence;
+      const DotComponent = dotComponent ?? DefaultDotComponent;
       const applyDotProps = combineProps({ className: clsx_m_default(addClassName, RcBadgeClasses.badge) }, dotProps);
       return /* @__PURE__ */ React670.createElement("div", {
         ...rest2,
