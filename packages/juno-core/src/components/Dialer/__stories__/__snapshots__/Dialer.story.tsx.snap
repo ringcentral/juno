@@ -337,7 +337,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer 1`] = `
   className="c0"
 >
   <div
-    className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c2 dDXcaQ MuiFormControl-fullWidth"
+    className="MuiFormControl-root MuiTextField-root RcTextField-root c1 c2 c2 iuMvTB MuiFormControl-fullWidth"
     theme={
       Object {
         "breakpoints": Object {
@@ -2620,7 +2620,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
       className="c10"
     >
       <div
-        className="MuiFormControl-root MuiTextField-root RcTextField-root c11 c12 c12 dDXcaQ MuiFormControl-fullWidth"
+        className="MuiFormControl-root MuiTextField-root RcTextField-root c11 c12 c12 iuMvTB MuiFormControl-fullWidth"
         theme={
           Object {
             "breakpoints": Object {
@@ -5007,7 +5007,7 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Keypad mode 1`] = `
               </div>
             </div>
             <div
-              className="MuiFormControl-root MuiTextField-root RcTextField-root c11 c12 c12 dDXcaQ MuiFormControl-fullWidth"
+              className="MuiFormControl-root MuiTextField-root RcTextField-root c11 c12 c12 iuMvTB MuiFormControl-fullWidth"
               theme={
                 Object {
                   "breakpoints": Object {
