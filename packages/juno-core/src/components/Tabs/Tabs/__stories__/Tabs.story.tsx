@@ -16,7 +16,11 @@ import {
   RcTabsMoreMenuGroupInfoType,
   RcTypography,
 } from '@ringcentral/juno';
-import { MoreHoriz as MoreHorizIcon } from '@ringcentral/juno-icon';
+import {
+  MoreHoriz as MoreHorizIcon,
+  ArrowUp2,
+  ArrowDown2,
+} from '@ringcentral/juno-icon';
 import {
   notControlInDocTable,
   notShowInDocTable,
@@ -305,9 +309,9 @@ const TabsCustomExampleComponent: FunctionComponent<TabsCustomExampleProps> = (
     setValue(value);
   };
 
-  const MoreIconCmp = (
+  const MoreIconCmp = (isMenuOpen: boolean) => (
     <>
-      <RcIcon size="medium" symbol={MoreHorizIcon} />
+      <RcIcon size="medium" symbol={isMenuOpen ? ArrowUp2 : ArrowDown2} />
       <RcBadge badgeContent={moreBadgeNumber} showZero={false} overlap="none" />
     </>
   );

@@ -32,7 +32,7 @@ type MoreMenuTabProps = {
   TooltipProps?: RcBaseProps<RcTooltipProps, 'children'>;
   onChange?: (event: React.MouseEvent<HTMLLIElement>, value: any) => void;
   orientation?: 'horizontal' | 'vertical';
-  MoreIcon?: JSX.Element;
+  MoreIcon?: JSX.Element | ((isMenuOpen: boolean) => JSX.Element);
 } & RcBaseProps<RcTabProps, 'onChange'>;
 
 const DEFAULT_MORE_MENU_TAB_LABEL = 'more_menu_tab';
@@ -55,16 +55,25 @@ const _MoreMenuTab = forwardRef<any, MoreMenuTabProps>((props, ref) => {
 
   const menuId = useId(menuIdProp);
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
+  const open = Boolean(anchorEl);
 
-  const MoreIcon = useMemo(() => {
-    const Icon = MoreIconProp || (
-      <RcIcon size="medium" color="neutral.f04" symbol={MoreHorizIcon} />
-    );
+  const MoreIcon = (() => {
+    let Icon: JSX.Element;
+    if (!MoreIconProp) {
+      Icon = (
+        <RcIcon size="medium" color="neutral.f04" symbol={MoreHorizIcon} />
+      );
+    } else if (typeof MoreIconProp === 'function') {
+      Icon = MoreIconProp(open);
+    } else {
+      Icon = MoreIconProp;
+    }
+
     if (TooltipProps?.title) {
       return <RcTooltip {...(TooltipProps as any)}>{Icon}</RcTooltip>;
     }
     return Icon;
-  }, [MoreIconProp, TooltipProps]);
+  })();
 
   const handleTabClick = useEventCallback(
     (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -131,7 +140,7 @@ const _MoreMenuTab = forwardRef<any, MoreMenuTabProps>((props, ref) => {
         {...MenuPropsRest}
         id={menuId}
         anchorEl={anchorEl}
-        open={Boolean(anchorEl)}
+        open={open}
         variant="menu"
         onClose={handleMenuClose}
       >
