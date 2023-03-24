@@ -42,7 +42,6 @@ export const StyledPresence = styled(_StyledPresence)<PresenceSizeProps>`
       background: ${color
         ? getParsePaletteColor(color)
         : RcPresenceBackgroundColors[type!] || palette2('neutral', 'l01')};
-      margin: ${borderSizeValue}px;
       ${fakeBorder({
         inset: false,
         color: palette2('neutral', 'l01'),
