@@ -54,7 +54,6 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -214,7 +213,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 1px;
   box-shadow: 0 0 0 1px #FFFFFF;
 }
 
@@ -244,7 +242,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -274,7 +271,6 @@ Array [
   width: 10px;
   height: 10px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -304,7 +300,6 @@ Array [
   width: 12px;
   height: 12px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -334,7 +329,6 @@ Array [
   width: 16px;
   height: 16px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -364,7 +358,6 @@ Array [
   width: 20px;
   height: 20px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -734,7 +727,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 1px;
   box-shadow: 0 0 0 1px #FFFFFF;
 }
 
@@ -764,7 +756,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -794,7 +785,6 @@ Array [
   width: 10px;
   height: 10px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -824,7 +814,6 @@ Array [
   width: 12px;
   height: 12px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -854,7 +843,6 @@ Array [
   width: 16px;
   height: 16px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -884,7 +872,6 @@ Array [
   width: 20px;
   height: 20px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -1254,7 +1241,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 1px;
   box-shadow: 0 0 0 1px #FFFFFF;
 }
 
@@ -1284,7 +1270,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -1314,7 +1299,6 @@ Array [
   width: 10px;
   height: 10px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -1344,7 +1328,6 @@ Array [
   width: 12px;
   height: 12px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -1374,7 +1357,6 @@ Array [
   width: 16px;
   height: 16px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -1404,7 +1386,6 @@ Array [
   width: 20px;
   height: 20px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -1768,7 +1749,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 1px;
   box-shadow: 0 0 0 1px #FFFFFF;
 }
 
@@ -1798,7 +1778,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -1828,7 +1807,6 @@ Array [
   width: 10px;
   height: 10px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -1858,7 +1836,6 @@ Array [
   width: 12px;
   height: 12px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -1888,7 +1865,6 @@ Array [
   width: 16px;
   height: 16px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -1918,7 +1894,6 @@ Array [
   width: 20px;
   height: 20px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -2294,7 +2269,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 1px;
   box-shadow: 0 0 0 1px #FFFFFF;
 }
 
@@ -2324,7 +2298,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -2354,7 +2327,6 @@ Array [
   width: 10px;
   height: 10px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -2384,7 +2356,6 @@ Array [
   width: 12px;
   height: 12px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -2414,7 +2385,6 @@ Array [
   width: 16px;
   height: 16px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -2444,7 +2414,6 @@ Array [
   width: 20px;
   height: 20px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -2820,7 +2789,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 1px;
   box-shadow: 0 0 0 1px #FFFFFF;
 }
 
@@ -2850,7 +2818,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -2880,7 +2847,6 @@ Array [
   width: 10px;
   height: 10px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -2910,7 +2876,6 @@ Array [
   width: 12px;
   height: 12px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -2940,7 +2905,6 @@ Array [
   width: 16px;
   height: 16px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -2970,7 +2934,6 @@ Array [
   width: 20px;
   height: 20px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -3334,7 +3297,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 1px;
   box-shadow: 0 0 0 1px #FFFFFF;
 }
 
@@ -3364,7 +3326,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -3394,7 +3355,6 @@ Array [
   width: 10px;
   height: 10px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -3424,7 +3384,6 @@ Array [
   width: 12px;
   height: 12px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -3454,7 +3413,6 @@ Array [
   width: 16px;
   height: 16px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -3484,7 +3442,6 @@ Array [
   width: 20px;
   height: 20px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -3860,7 +3817,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 1px;
   box-shadow: 0 0 0 1px #FFFFFF;
 }
 
@@ -3890,7 +3846,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -3920,7 +3875,6 @@ Array [
   width: 10px;
   height: 10px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -3950,7 +3904,6 @@ Array [
   width: 12px;
   height: 12px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -3980,7 +3933,6 @@ Array [
   width: 16px;
   height: 16px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -4010,7 +3962,6 @@ Array [
   width: 20px;
   height: 20px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -4368,7 +4319,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 1px;
   box-shadow: 0 0 0 1px #FFFFFF;
 }
 
@@ -4398,7 +4348,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -4428,7 +4377,6 @@ Array [
   width: 10px;
   height: 10px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -4458,7 +4406,6 @@ Array [
   width: 12px;
   height: 12px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -4488,7 +4435,6 @@ Array [
   width: 16px;
   height: 16px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -4518,7 +4464,6 @@ Array [
   width: 20px;
   height: 20px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -4876,7 +4821,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 1px;
   box-shadow: 0 0 0 1px #FFFFFF;
 }
 
@@ -4906,7 +4850,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -4936,7 +4879,6 @@ Array [
   width: 10px;
   height: 10px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -4966,7 +4908,6 @@ Array [
   width: 12px;
   height: 12px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -4996,7 +4937,6 @@ Array [
   width: 16px;
   height: 16px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -5026,7 +4966,6 @@ Array [
   width: 20px;
   height: 20px;
   background: #FFFFFF;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -5414,7 +5353,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #066FAC;
-  margin: 1px;
   box-shadow: 0 0 0 1px #FFFFFF;
 }
 
@@ -5444,7 +5382,6 @@ Array [
   width: 8px;
   height: 8px;
   background: #066FAC;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -5474,7 +5411,6 @@ Array [
   width: 10px;
   height: 10px;
   background: #066FAC;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -5504,7 +5440,6 @@ Array [
   width: 12px;
   height: 12px;
   background: #066FAC;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -5534,7 +5469,6 @@ Array [
   width: 16px;
   height: 16px;
   background: #066FAC;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -5564,7 +5498,6 @@ Array [
   width: 20px;
   height: 20px;
   background: #066FAC;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -5952,7 +5885,6 @@ Array [
   width: 8px;
   height: 8px;
   background: yellow;
-  margin: 1px;
   box-shadow: 0 0 0 1px #FFFFFF;
 }
 
@@ -5982,7 +5914,6 @@ Array [
   width: 8px;
   height: 8px;
   background: yellow;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -6012,7 +5943,6 @@ Array [
   width: 10px;
   height: 10px;
   background: yellow;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -6042,7 +5972,6 @@ Array [
   width: 12px;
   height: 12px;
   background: yellow;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -6072,7 +6001,6 @@ Array [
   width: 16px;
   height: 16px;
   background: yellow;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
@@ -6102,7 +6030,6 @@ Array [
   width: 20px;
   height: 20px;
   background: yellow;
-  margin: 2px;
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
