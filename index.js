@@ -29745,7 +29745,7 @@ var ExternalLinkGlobal = memo173(forwardRef265((props, ref2) => /* @__PURE__ */ 
   ref: ref2,
   ...props
 }, /* @__PURE__ */ createElement284("path", {
-  d: "M24 6.666v16h-2.666V11.23L7.886 24.68 6 22.794l13.46-13.46H8V6.666z"
+  d: "M9.778 8.222a1 1 0 0 0 1 1h10.586L7.515 23.072a.999.999 0 1 0 1.414 1.414L22.78 10.635l-.001 10.588a1 1 0 0 0 2 0v-13a1 1 0 0 0-1-1h-13a1 1 0 0 0-1 1z"
 }))));
 ExternalLinkGlobal.displayName = "ExternalLinkGlobal";
 ExternalLinkGlobal["iconName"] = "external-link-global";
@@ -55089,7 +55089,6 @@ var StyledPresence = styled_components_default(_StyledPresence)`
       width: ${iconSizeValue}px;
       height: ${iconSizeValue}px;
       background: ${color2 ? getParsePaletteColor(color2) : RcPresenceBackgroundColors[type3] || palette22("neutral", "l01")};
-      margin: ${borderSizeValue}px;
       ${fakeBorder({
     inset: false,
     color: palette22("neutral", "l01"),
