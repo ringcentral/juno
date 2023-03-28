@@ -13,7 +13,7 @@ export default `<svg aria-hidden="true" style="position: absolute; width: 0; hei
 </symbol>
 <symbol id="icon-external-link-global" viewBox="0 0 32 32">
 <title>external-link-global</title>
-<path d="M24 6.666v16h-2.666v-11.436l-13.448 13.45-1.886-1.886 13.46-13.46h-11.46v-2.668z"></path>
+<path d="M9.778 8.222c0 0.552 0.448 1 1 1l10.586-0-13.849 13.85c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l13.851-13.851-0.001 10.588c0 0.552 0.448 1 1 1s1-0.448 1-1v-13c0-0.552-0.448-1-1-1h-13c-0.552 0-1 0.448-1 1z"></path>
 </symbol>
 <symbol id="icon-report-an-issue" viewBox="0 0 32 32">
 <title>report-an-issue</title>
