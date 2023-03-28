@@ -1,4 +1,11 @@
 
+## [1.39.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.38.0...juno-icon-v1.39.0) (2023-03-28)
+
+
+### Features
+
+* **update-icon0328:** [Icon] update icon ExternalLinkGlobal ([e01ef67](https://github.com/ringcentral/juno/commit/e01ef67a34e131ddaf7aa9c95b4755fa9bc69cb2))
+
 ## [1.38.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.37.0...juno-icon-v1.38.0) (2023-03-22)
 
 
