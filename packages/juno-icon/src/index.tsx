@@ -281,6 +281,7 @@ export { default as Mic } from './Mic';
 export { default as MicrosoftLogoDisabled } from './MicrosoftLogoDisabled';
 export { default as MicrosoftLogo } from './MicrosoftLogo';
 export { default as MicrosoftOutlook2019 } from './MicrosoftOutlook2019';
+export { default as MicrosoftTeams2019 } from './MicrosoftTeams2019';
 export { default as Minimize } from './Minimize';
 export { default as MissedcallBorder } from './MissedcallBorder';
 export { default as Missedcall } from './Missedcall';
