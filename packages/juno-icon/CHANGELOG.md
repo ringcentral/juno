@@ -1,4 +1,11 @@
 
+## [1.40.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.39.0...juno-icon-v1.40.0) (2023-03-29)
+
+
+### Features
+
+* **Icon:** add icon MicrosoftTeams2019 ([82c9f47](https://github.com/ringcentral/juno/commit/82c9f47ca82e3564ed44dfd88ae75d5f38d4b89f))
+
 ## [1.39.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.38.0...juno-icon-v1.39.0) (2023-03-28)
 
 
