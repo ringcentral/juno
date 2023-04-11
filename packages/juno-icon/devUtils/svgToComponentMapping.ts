@@ -9,6 +9,7 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  TxtBorder: 'txt_border',
   MicrosoftTeams2019: 'microsoft-teams-2019',
   PdfBorder: 'pdf_border',
   GoogleChromeLogo: 'google-chrome-logo',

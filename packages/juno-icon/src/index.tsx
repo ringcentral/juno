@@ -439,6 +439,7 @@ export { default as Transcript } from './Transcript';
 export { default as Transcription } from './Transcription';
 export { default as TransferCall } from './TransferCall';
 export { default as TransferCallBorder } from './TransferCallBorder';
+export { default as TxtBorder } from './TxtBorder';
 export { default as Unblocked } from './Unblocked';
 export { default as Underline } from './Underline';
 export { default as UndockBorder } from './UndockBorder';
