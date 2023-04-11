@@ -1,4 +1,11 @@
 
+## [1.41.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.40.0...juno-icon-v1.41.0) (2023-04-11)
+
+
+### Features
+
+* **Icon:** add new icon TxtBorder ([ee084b3](https://github.com/ringcentral/juno/commit/ee084b3c880cff14dfaf8e3f73cdaf8363590a67))
+
 ## [1.40.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.39.0...juno-icon-v1.40.0) (2023-03-29)
 
 
