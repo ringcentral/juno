@@ -19,7 +19,6 @@ import {
 import type { RcMenuOnCloseReasonsType } from '../../../Menu/Menu/MenuContext';
 import { RcTooltip, RcTooltipProps } from '../../../Tooltip';
 import { RcTab, RcTabProps } from '../../Tab';
-import { getKey } from '../MoreMenuTabs/utils';
 import { MoreMenuTabStyle } from './styles';
 
 type MoreMenuTabProps = {
@@ -92,7 +91,7 @@ const _MoreMenuTab = forwardRef<any, MoreMenuTabProps>((props, ref) => {
     if (!menuItems || menuItems.length === 0) {
       return null;
     }
-    return menuItems.map((item, idx) => {
+    return menuItems.map((item) => {
       const {
         icon,
         label,
@@ -100,6 +99,7 @@ const _MoreMenuTab = forwardRef<any, MoreMenuTabProps>((props, ref) => {
         disabled,
         onClick,
         selected,
+        key,
         ...menuItemRest
       } = item;
 
@@ -110,7 +110,7 @@ const _MoreMenuTab = forwardRef<any, MoreMenuTabProps>((props, ref) => {
 
       return (
         <MenuItemComponent
-          key={getKey(menuItemRest.key!, idx)}
+          key={key}
           disabled={disabled}
           selected={selected}
           value={value}
@@ -134,6 +134,7 @@ const _MoreMenuTab = forwardRef<any, MoreMenuTabProps>((props, ref) => {
         value={DEFAULT_MORE_MENU_TAB_LABEL}
         aria-haspopup="true"
         aria-controls={menuId}
+        data-tab-more-button=""
       />
       <RcMenu
         autoClose

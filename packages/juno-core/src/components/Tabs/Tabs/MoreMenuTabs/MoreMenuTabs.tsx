@@ -1,45 +1,31 @@
+import MuiTabs from '@material-ui/core/Tabs';
 import React, {
-  createRef,
+  cloneElement,
   forwardRef,
+  isValidElement,
+  ReactElement,
+  ReactNode,
   useEffect,
-  useMemo,
   useRef,
   useState,
 } from 'react';
-
-import isEqual from 'lodash/isEqual';
-
-import MuiTabs from '@material-ui/core/Tabs';
-
 import {
+  getResizeObserver,
   RcBaseProps,
   styled,
-  useForceUpdate,
   useForkRef,
-  usePrevious,
-  useResizeObserver,
+  useMountState,
+  useOnReRender,
   useThrottle,
 } from '../../../../foundation';
-import { RcTabProps } from '../../Tab';
 import {
   DEFAULT_MORE_MENU_TAB_LABEL,
   MoreMenuTab,
   MoreMenuTabProps,
 } from '../MoreMenuTab';
 import { RcTabsProps } from '../Tabs';
-import {
-  computeChildBySize,
-  DEFAULT_SIZE,
-  getDomBoundingClientSize,
-  getKey,
-  parseKey,
-  RcTabsMoreMenuGroupInfoType,
-} from './utils';
-
-type Size = {
-  width: number;
-  height: number;
-};
+import { MoreMenuTabSentinel } from './MoreMenuTabSentinel';
+import { GroupTabInfoType, RcTabsMoreMenuGroupInfoType } from './utils';
 
 type MoreButtonProps = {
   onGroupInfoChange?: (info: RcTabsMoreMenuGroupInfoType) => void;
@@ -50,307 +36,260 @@ type MoreButtonProps = {
 
 type MoreMenuTabsProps = RcTabsProps;
 
-type TabRefType = {
-  ref: React.RefObject<HTMLDivElement>;
-  size: Size | null;
-  index: number | undefined;
-  value: MoreMenuTabsProps['value'];
-};
+type TabInfo = GroupTabInfoType & { value: any; element: ReactElement };
+type GroupInfo = { all: TabInfo[]; tab: TabInfo[]; menu: TabInfo[] };
 
-type TabRefsMapType = Map<string, TabRefType>;
+// with of more button with a icon
+const basicMoreButtonSize = 44;
 
-export const findChildrenByKey = (
-  childrenProp: React.ReactNode,
-  key: string,
-) => {
-  let children;
-  React.Children.forEach(childrenProp, (child, idx) => {
-    if (React.isValidElement(child)) {
-      const keyString = typeof child.key === 'string' ? child.key : '';
-      if (getKey(keyString, idx) === key) {
-        children = child;
-      }
+const getTabsInfoFromChildren = (children: ReactNode) => {
+  const childrenInfo = React.Children.map(children, (child, index) => {
+    if (isValidElement(child)) {
+      const key = child.key ?? index;
+
+      return {
+        index,
+        key,
+        value: child.props.value ?? key,
+        element: child,
+      };
     }
+    return null;
   });
-  return children;
+
+  if (!childrenInfo) return [] as TabInfo[];
+
+  return childrenInfo.filter((info) => Boolean(info));
 };
 
 const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
   const {
     orientation,
     children: childrenProp,
-    value: valueProp,
+    value,
     onChange,
     MoreButtonProps = {},
-    resizeThrottleTime = 300,
+    resizeThrottleTime = 100,
     ...rest
   } = props;
 
   const { onGroupInfoChange, ...MoreButtonPropsRest } = MoreButtonProps;
 
-  const prevChildrenProp = usePrevious(() => childrenProp);
-
   const isVertical = orientation === 'vertical';
-  const oriStr = isVertical ? 'height' : 'width';
+  const sizeKey = isVertical ? 'offsetHeight' : 'offsetWidth';
 
   const innerRef = useRef<HTMLButtonElement>(null);
   const moreTabRef = useRef<HTMLButtonElement>(null);
+  const sentinelStartRef = useRef<HTMLDivElement>(null);
   const tabsRef = useForkRef(innerRef, ref);
 
-  const tabRefsMapRef = useRef<TabRefsMapType>();
-  const moreTabSizeRef = useRef<Size>(DEFAULT_SIZE);
-  const allTabsSizeRef = useRef<Size>(DEFAULT_SIZE);
-  const tabsTabChildRef = useRef<React.ReactElement[]>([]);
-  const tabsSizeRef = useRef<Size>(DEFAULT_SIZE);
-  const groupingRef = useRef<{
-    tabs: string[];
-    menu: string[];
-  }>();
+  const mountStateRef = useMountState();
 
-  const [menuTabChild, setMenuTabChild] = useState<React.ReactElement[]>([]);
-  const [useMoreMode, setUseMoreMode] = useState(true);
+  const [groupInfo, setGroupInfo] = useState<GroupInfo>(() => {
+    const tabsInfo = getTabsInfoFromChildren(childrenProp);
 
-  const hasResizeRef = useRef(true);
-  const forceUpdate = useForceUpdate();
-
-  const sizeChange = (size: Size) => {
-    hasResizeRef.current = true;
-    if (
-      tabsSizeRef.current.height !== size.height ||
-      tabsSizeRef.current.width !== size.width
-    ) {
-      tabsSizeRef.current = size;
-      forceUpdate();
+    if (!tabsInfo) {
+      return {
+        all: [] as TabInfo[],
+        tab: [] as TabInfo[],
+        menu: [] as TabInfo[],
+      };
     }
-  };
 
-  const throttleTabsSizeChange = useThrottle(sizeChange, resizeThrottleTime);
+    return {
+      all: tabsInfo,
+      tab: tabsInfo,
+      menu: [] as TabInfo[],
+    };
+  });
 
-  useResizeObserver(
-    innerRef,
-    ([entry]: ResizeObserverEntry[]) => {
-      const { width, height } = entry.contentRect;
-      const obj = { width, height };
-      throttleTabsSizeChange(obj);
+  const throttleCalculateGroupInfo = useThrottle(() => {
+    const tablist = innerRef.current?.querySelector('[role="tablist"]');
+
+    if (!tablist) return;
+
+    const allTabs = Array.from(tablist.children);
+    const allTabsSize: number[] = [];
+    const selectedIndex = groupInfo.all.findIndex(
+      (info) => info.value === value,
+    );
+    const tablistSize = tablist[sizeKey];
+    let moreButtonSize = basicMoreButtonSize;
+
+    let allTabsSizeSumWidthoutMoreButton = 0;
+
+    for (const tabEl of allTabs) {
+      if (tabEl instanceof HTMLElement) {
+        if (typeof tabEl.dataset['tabOriginIndex'] === 'string') {
+          const tabOriginIndex = Number(tabEl.dataset['tabOriginIndex']);
+          const elSize = tabEl[sizeKey];
+          allTabsSize[tabOriginIndex] = elSize;
+          allTabsSizeSumWidthoutMoreButton += elSize;
+        } else if (typeof tabEl.dataset['tabMoreButton'] === 'string') {
+          const elSize = tabEl[sizeKey];
+          moreButtonSize = elSize;
+        }
+      }
+    }
+
+    const newGroupInfo = {
+      all: groupInfo.all,
+      tab: [] as TabInfo[],
+      menu: [] as TabInfo[],
+    };
+
+    if (allTabsSizeSumWidthoutMoreButton > tablistSize) {
+      const allTabsSizeSum = allTabsSizeSumWidthoutMoreButton + moreButtonSize;
+      let targetSize = allTabsSizeSum;
+
+      for (let i = allTabsSize.length - 1; i >= 0; i--) {
+        if (i !== selectedIndex) {
+          targetSize -= allTabsSize[i];
+          newGroupInfo.menu.unshift(groupInfo.all[i]);
+          if (targetSize <= tablistSize) {
+            break;
+          }
+        }
+      }
+
+      newGroupInfo.tab = groupInfo.all.filter(
+        (info) => !newGroupInfo.menu.some(({ index }) => index === info.index),
+      );
+    } else {
+      newGroupInfo.tab = newGroupInfo.all;
+    }
+
+    let shouldUpdateGroupInfo = false;
+    if (
+      newGroupInfo.tab.length === groupInfo.tab.length &&
+      newGroupInfo.tab.length === groupInfo.tab.length
+    ) {
+      for (let i = 0; i < groupInfo.tab.length; i++) {
+        if (newGroupInfo.tab[i] !== groupInfo.tab[i]) {
+          shouldUpdateGroupInfo = true;
+          break;
+        }
+      }
+    } else {
+      shouldUpdateGroupInfo = true;
+    }
+
+    if (shouldUpdateGroupInfo) {
+      // prevent resize observer loop limit exceeded
+      setTimeout(() => {
+        if (mountStateRef.current) setGroupInfo(newGroupInfo);
+      }, 0);
+    }
+  }, resizeThrottleTime);
+
+  useEffect(() => {
+    const tablist = innerRef.current?.querySelector('[role="tablist"]');
+
+    if (!tablist) return;
+
+    const resizeObserver = getResizeObserver(throttleCalculateGroupInfo);
+
+    resizeObserver.observe(tablist);
+
+    for (const tabItem of Array.from(tablist.children)) {
+      resizeObserver.observe(
+        tabItem,
+        // TODO: remove this, after remove ResizeObserver polyfill
+        // @ts-ignore
+        { box: 'border-box' },
+      );
+    }
+
+    const mutationObserver = new MutationObserver((mutations) => {
+      for (const mutation of mutations) {
+        if (mutation.type === 'childList') {
+          mutation.removedNodes.forEach((removedNode) => {
+            if (removedNode instanceof Element) {
+              resizeObserver.unobserve(removedNode);
+            }
+          });
+
+          mutation.addedNodes.forEach((addedNode) => {
+            if (addedNode instanceof Element) {
+              resizeObserver.observe(
+                addedNode,
+                // TODO: remove this, after remove ResizeObserver polyfill
+                // @ts-ignore
+                { box: 'border-box' },
+              );
+            }
+          });
+
+          // should re-calculate group info when dom is removed and not added
+          if (mutation.removedNodes.length && !mutation.addedNodes.length) {
+            setTimeout(() => {
+              if (mountStateRef.current) throttleCalculateGroupInfo();
+            }, 0);
+          }
+        }
+      }
+    });
+
+    mutationObserver.observe(tablist, {
+      childList: true,
+    });
+
+    return () => {
+      resizeObserver.disconnect();
+      mutationObserver.disconnect();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // No need calculate during the first rendering,
+  // resize observer will do this
+  useOnReRender(
+    () => {
+      throttleCalculateGroupInfo();
     },
-    { mode: 'none' },
+    [value],
+    false,
   );
 
-  const tabsSize = tabsSizeRef.current;
-
-  // initial tabRefsMapRef and tabsTabChildRef
-  if (
-    tabRefsMapRef.current === undefined ||
-    prevChildrenProp !== childrenProp
-  ) {
-    const tabRefs: TabRefsMapType = new Map();
-    const tabsTabDefaultChild: React.ReactElement<RcTabProps>[] = [];
-
-    React.Children.forEach(
-      childrenProp,
-      (child: React.ReactElement<RcTabProps>, index) => {
-        const { ref, value } = child.props;
-        const innerRef = createRef<HTMLDivElement>();
-        const tabRef = ref ? useForkRef(innerRef, ref) : innerRef;
-
-        const childrenValue = value || index;
-
-        const children = React.cloneElement(child, {
-          ref: tabRef,
-          value: childrenValue,
-        });
-
-        const keyString = typeof child.key === 'string' ? child.key : '';
-        tabRefs.set(getKey(keyString, index), {
-          ref: tabRef as React.RefObject<HTMLDivElement>,
-          size: null,
-          index,
-          value: childrenValue,
-        });
-
-        tabsTabDefaultChild.push(children);
-      },
-    );
-
-    tabRefsMapRef.current = tabRefs;
-    tabsTabChildRef.current = tabsTabDefaultChild;
-  }
-
-  const updateAllTabsSize = () => {
-    const tabRefsMap = tabRefsMapRef.current;
-    const allTabsSize = { ...DEFAULT_SIZE };
-
-    if (tabRefsMap && tabRefsMap.size !== 0) {
-      tabRefsMap.forEach((value, key) => {
-        const { width, height } = getDomBoundingClientSize(value.ref.current);
-        allTabsSize.width += width;
-        allTabsSize.height += height;
-
-        const newRef: TabRefType = {
-          ref: value.ref,
-          size: { width, height },
-          index: value.index,
-          value: value.value,
-        };
-
-        tabRefsMap.set(key, newRef);
-      });
-      allTabsSizeRef.current = allTabsSize;
-    }
-
-    return allTabsSize;
-  };
-
-  // get real render size when render
-  useEffect(() => {
-    if (childrenProp === prevChildrenProp) {
-      return;
-    }
-
-    updateAllTabsSize();
-
-    const moreElm = moreTabRef?.current;
-    if (moreElm) {
-      const size = getDomBoundingClientSize(moreElm);
-      moreTabSizeRef.current = size;
-    }
-  }, [childrenProp, prevChildrenProp]);
-
-  useEffect(() => {
-    let currSelectTabItem: [string, TabRefType] | undefined;
-
-    const tabRefsMap = tabRefsMapRef.current;
-
-    if (tabRefsMap) {
-      currSelectTabItem = [...tabRefsMap].find(([, mapValue]) => {
-        return valueProp === mapValue.value || valueProp === mapValue.index;
-      });
-    }
-
-    const computeGroupingInfo = (
-      tabsTabLabel: string[],
-      menuTabLabel: string[],
-    ) => {
-      const newGrouping = {
-        tabs: tabsTabLabel,
-        menu: menuTabLabel,
+  useOnReRender(
+    () => {
+      const tabsInfo = getTabsInfoFromChildren(childrenProp);
+      const newGroupInfo = {
+        all: tabsInfo,
+        tab: [] as TabInfo[],
+        menu: [] as TabInfo[],
       };
-      if (!isEqual(groupingRef.current, newGrouping)) {
-        groupingRef.current = newGrouping;
-        onGroupInfoChange?.([
-          tabsTabLabel.map((key) => parseKey(key)),
-          menuTabLabel.map((key) => parseKey(key)),
-        ]);
+
+      // Prevent moreButton from flickering after children update
+      for (const tabInfo of tabsInfo) {
+        if (groupInfo.tab.some(({ key }) => tabInfo.key === key)) {
+          newGroupInfo.tab.push(tabInfo);
+        } else {
+          // push new tab or invisible old tab to menu group
+          newGroupInfo.menu.push(tabInfo);
+        }
       }
-    };
+      setGroupInfo(newGroupInfo);
+    },
+    [childrenProp],
+    false,
+  );
 
-    const computeWhetherToUseMoreMode = (tabsSize: Size, allTabsSize: Size) => {
-      if (tabsSize.width === 0 || tabsSize.height === 0) {
-        return false;
-      }
+  useEffect(() => {
+    onGroupInfoChange?.([
+      groupInfo.tab.map(({ index, key }) => ({ index, key })),
+      groupInfo.menu.map(({ index, key }) => ({ index, key })),
+    ]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [groupInfo]); // ignore onGroupInfoChange
 
-      if (allTabsSize.width === 0 || allTabsSize.height === 0) {
-        allTabsSize = updateAllTabsSize();
-      }
-      if (!isVertical) {
-        return allTabsSize.width > tabsSize.width;
-      }
+  const useMoreMode = groupInfo.menu.length > 0;
 
-      return allTabsSize.height > tabsSize.height;
-    };
+  const MoreMenuTabCmp = (() => {
+    if (!useMoreMode) return null;
 
-    const computedMoreModeChild = (tabRefsMap: TabRefsMapType) => {
-      const labelArray: { key: string; size: number }[] = [];
-
-      tabRefsMap.forEach((value, key) => {
-        labelArray.push({
-          key,
-          size: value.size ? value.size[oriStr] : 0,
-        });
-      });
-      const limitSize =
-        tabsSizeRef.current[oriStr] - moreTabSizeRef.current[oriStr];
-
-      const { plainArr: tabsTabLabel, groupArr: menuTabLabel } =
-        computeChildBySize(labelArray, currSelectTabItem?.[0], limitSize);
-
-      computeGroupingInfo(tabsTabLabel, menuTabLabel);
-
-      const tabsTabChild = tabsTabLabel.map((key) =>
-        findChildrenByKey(childrenProp, key),
-      );
-
-      const menuTabChild = menuTabLabel.map((key) =>
-        findChildrenByKey(childrenProp, key),
-      );
-
-      tabsTabChildRef.current = tabsTabChild as unknown as React.ReactElement[];
-      setMenuTabChild(menuTabChild as unknown as React.ReactElement[]);
-    };
-
-    const computedStandardModeChild = (tabRefsMap: TabRefsMapType) => {
-      const tabsTabLabel: string[] = [];
-
-      tabRefsMap.forEach((value, key) => {
-        tabsTabLabel.push(key);
-      });
-
-      computeGroupingInfo(tabsTabLabel, []);
-
-      const tabsTabChild = tabsTabLabel.map((key) =>
-        findChildrenByKey(childrenProp, key),
-      );
-
-      tabsTabChildRef.current = tabsTabChild as unknown as React.ReactElement[];
-      setMenuTabChild([]);
-    };
-
-    const computeTabChild = (tabsSize: Size) => {
-      const useMoreMode = computeWhetherToUseMoreMode(
-        tabsSize,
-        allTabsSizeRef.current,
-      );
-
-      setUseMoreMode(useMoreMode);
-
-      if (tabRefsMap) {
-        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-        useMoreMode
-          ? computedMoreModeChild(tabRefsMap)
-          : computedStandardModeChild(tabRefsMap);
-      }
-    };
-
-    if (tabsSizeRef.current.width !== 0 && tabsSizeRef.current.height !== 0) {
-      // computed: 1.resize 2. valueProp 3.moreMenuClick 4.children change
-      // not computed: visible tab change
-      if (
-        groupingRef.current?.tabs.includes(currSelectTabItem?.[0] || '') &&
-        !hasResizeRef.current &&
-        prevChildrenProp === childrenProp
-      ) {
-        return;
-      }
-
-      // can't use tabsSize
-      // It is possible that the children prop render effect will execute before the sizeChange effect
-      // which get a old tabsSize value
-      computeTabChild(tabsSizeRef.current);
-      hasResizeRef.current = false;
-    }
-  }, [
-    childrenProp,
-    prevChildrenProp,
-    isVertical,
-    onGroupInfoChange,
-    oriStr,
-    tabsSize,
-    valueProp,
-  ]);
-
-  const MoreMenuTabCmp = useMemo(() => {
-    const menuItems = React.Children.map(menuTabChild, (child) => {
-      return { ...child.props };
+    const menuItems = groupInfo.menu.map(({ key, element }) => {
+      return { ...element.props, key };
     });
 
     return useMoreMode ? (
@@ -364,27 +303,77 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
         orientation={orientation}
       />
     ) : null;
-  }, [
-    MoreButtonPropsRest,
-    menuTabChild,
-    onChange,
-    orientation,
-    rest.size,
-    useMoreMode,
-  ]);
+  })();
+
+  const children = (() => {
+    const tabGroupElements = groupInfo.tab.map(
+      ({ index, key, value: tabValue, element }) => {
+        return cloneElement(element, {
+          key,
+          value: tabValue,
+          'data-tab-origin-index': index,
+          'data-tab-key': key,
+        });
+      },
+    );
+
+    if (!useMoreMode) return tabGroupElements;
+
+    return [
+      ...tabGroupElements,
+      <MoreMenuTabSentinel
+        id="start"
+        value="sentinel-start"
+        key="sentinel-start"
+        ref={sentinelStartRef}
+        onFocus={() => {
+          moreTabRef.current?.focus();
+        }}
+      />,
+      ...groupInfo.menu.map(({ index, key, value: tabValue, element }) => {
+        return cloneElement(element, {
+          key,
+          value: tabValue,
+          'data-tab-origin-index': index,
+          'data-tab-key': key,
+          'aria-hidden': true,
+          disabled: true,
+          style: {
+            ...element.props.style,
+            opacity: 0,
+            position: 'absolute',
+            top: 0,
+            left: 0,
+          },
+        });
+      }),
+      <MoreMenuTabSentinel
+        id="end"
+        value="sentinel-end"
+        key="sentinel-end"
+        onFocus={() => {
+          const focusTarget =
+            sentinelStartRef.current?.previousElementSibling ||
+            moreTabRef.current;
+
+          if (focusTarget) (focusTarget as HTMLElement).focus();
+        }}
+      />,
+    ];
+  })();
 
   return (
     <MuiTabs
       {...rest}
       ref={tabsRef}
-      value={valueProp}
+      value={value}
       variant="standard"
       indicatorColor="primary"
       textColor="primary"
       onChange={onChange}
       orientation={orientation}
     >
-      {tabsTabChildRef.current}
+      {children}
       {MoreMenuTabCmp}
     </MuiTabs>
   );
@@ -396,5 +385,4 @@ const MoreMenuTabs = styled(_MoreMenuTabs)``;
 MoreMenuTabs.displayName = 'MoreMenuTabs';
 
 export { MoreMenuTabs };
-
 export type { MoreButtonProps, MoreMenuTabsProps, RcTabsMoreMenuGroupInfoType };

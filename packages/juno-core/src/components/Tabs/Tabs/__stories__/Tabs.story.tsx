@@ -3,6 +3,8 @@ import React, {
   FunctionComponent,
   useMemo,
   useState,
+  useRef,
+  cloneElement,
 } from 'react';
 
 import {
@@ -28,6 +30,7 @@ import {
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
 import { RcMenuItem, RcMenuItemProps } from '../../../Menu';
+import { createGlobalStyle } from '../../../../foundation';
 
 export default {
   title: '🚀 Cleanup Components/Tabs/Tabs',
@@ -453,6 +456,135 @@ export const TabsWithDynamicChildren: Story<TabsProps> = ({ ...args }) => {
       >
         click
       </RcButton>
+    </>
+  );
+};
+
+const ChangeSizeGlobalStyle = createGlobalStyle`
+  [data-large-size] {
+    ${RcTab} {
+      padding: 6px 20px;
+    }
+  }
+`;
+
+export const MoreMenuTabs: Story<TabsProps> = ({ ...args }) => {
+  const [value, setValue] = React.useState('tab-0');
+  const handleChange = (event: React.ChangeEvent<{}>, value: any) => {
+    setValue(value);
+  };
+
+  const idRef = useRef(0);
+  const tabsRef = useRef<HTMLDivElement>(null);
+
+  const [tabs, setTabs] = React.useState(() => [
+    { label: 'Tab 0', value: 'tab-0', key: idRef.current++ },
+    { label: 'Tab 1', value: 'tab-1', key: idRef.current++ },
+    { label: 'Tab 2', value: 'tab-2', key: idRef.current++ },
+    { label: 'Tab 3', value: 'tab-3', key: idRef.current++ },
+    { label: 'Tab 4', value: 'tab-4', key: idRef.current++ },
+    {
+      label: 'Tab 5',
+      value: 'tab-5',
+      key: idRef.current++,
+    },
+    { label: 'Tab 6', value: 'tab-6', key: idRef.current++ },
+    {
+      label: 'Tab 77777777',
+      value: 'tab-7',
+      key: idRef.current++,
+    },
+    { label: 'Tab 8', value: 'tab-8', key: idRef.current++ },
+    { label: 'Tab 9', value: 'tab-9', key: idRef.current++ },
+  ]);
+
+  const TabChildren = useMemo(
+    () =>
+      tabs.map((tab) => {
+        const { label, value, ...rest } = tab;
+        return (
+          <RcTab key={idRef.current++} label={label} value={value} {...rest} />
+        );
+      }),
+    [tabs],
+  );
+
+  const handleAddTabHead = () => {
+    setTabs([
+      {
+        label: `Tab ${tabs.length}`,
+        value: `tab-${tabs.length}`,
+        key: idRef.current++,
+      },
+      ...tabs,
+    ]);
+  };
+  const handleRemoveTabHead = () => {
+    const newTabs = [...tabs];
+    const shiftedTab = newTabs.shift();
+    if (shiftedTab?.value === value) {
+      setValue(newTabs[0].value);
+    }
+    setTabs(newTabs);
+  };
+  const handleAddTabTail = () => {
+    setTabs([
+      ...tabs,
+      {
+        label: `Tab ${tabs.length}`,
+        value: `tab-${tabs.length}`,
+        key: idRef.current++,
+      },
+    ]);
+  };
+
+  const handleChangeTabSize = () => {
+    const tablist = tabsRef.current!;
+    if (typeof tablist.dataset['largeSize'] === 'string') {
+      delete tablist.dataset['largeSize'];
+    } else {
+      tablist.dataset['largeSize'] = '';
+    }
+  };
+
+  return (
+    <>
+      <RcPaper square>
+        <RcTabs
+          {...args}
+          ref={tabsRef}
+          value={value}
+          onChange={handleChange}
+          variant="moreMenu"
+          MoreButtonProps={{
+            MenuProps: {
+              id: 'custom-menu-id',
+              MenuListProps: {
+                className: 'moreMenuList-className',
+              },
+            },
+            TooltipProps: {
+              title: 'tooltip',
+            },
+          }}
+        >
+          {TabChildren}
+        </RcTabs>
+      </RcPaper>
+      <ChangeSizeGlobalStyle />
+      <br />
+      <RcBox>
+        <RcButton onClick={handleAddTabHead}>Add Tab head</RcButton>
+        <br />
+        <br />
+        <RcButton onClick={handleRemoveTabHead}>Remove Tab head</RcButton>
+        <br />
+        <br />
+        <RcButton onClick={handleAddTabTail}>Add Tab tail</RcButton>
+        <br />
+        <br />
+        <RcButton onClick={handleChangeTabSize}>change Tab size</RcButton>
+      </RcBox>
     </>
   );
 };
