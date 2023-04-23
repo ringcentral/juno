@@ -1,4 +1,11 @@
 
+## [1.42.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.41.0...juno-icon-v1.42.0) (2023-04-23)
+
+
+### Features
+
+* **Icon:** add new icons Deskphone, DeskphonePairingInfo, Compose, Callrail, CallrailBorder ([f9c0df7](https://github.com/ringcentral/juno/commit/f9c0df7aba5189fcdb42bb2f33b07a0dad3b4393))
+
 ## [1.41.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.40.0...juno-icon-v1.41.0) (2023-04-11)
 
 
