@@ -665,8 +665,8 @@ Array [
 }
 
 .c8 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 .c5 svg {
@@ -818,9 +818,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 .c5 svg {
@@ -846,15 +846,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #066FAC;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c4 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 .c5 svg {
@@ -958,9 +958,9 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
+          borderSizeValue={1}
           className="c4"
-          iconSizeValue={8}
+          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -1017,8 +1017,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c4 {
@@ -1205,8 +1205,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -1393,8 +1393,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -1581,8 +1581,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -1794,8 +1794,8 @@ Array [
 }
 
 .c8 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 .c5 svg {
@@ -1947,9 +1947,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 .c5 svg {
@@ -1975,15 +1975,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #066FAC;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c4 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 .c5 svg {
@@ -2087,9 +2087,9 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
+          borderSizeValue={1}
           className="c4"
-          iconSizeValue={8}
+          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -2146,8 +2146,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c4 {
@@ -2334,8 +2334,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -2522,8 +2522,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -2710,8 +2710,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -2923,8 +2923,8 @@ Array [
 }
 
 .c8 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 .c5 svg {
@@ -3076,9 +3076,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 .c5 svg {
@@ -3104,15 +3104,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #066FAC;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c4 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 .c5 svg {
@@ -3216,9 +3216,9 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
+          borderSizeValue={1}
           className="c4"
-          iconSizeValue={8}
+          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -3275,8 +3275,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c4 {
@@ -3463,8 +3463,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -3651,8 +3651,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -3839,8 +3839,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -4052,8 +4052,8 @@ Array [
 }
 
 .c8 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 .c5 svg {
@@ -4205,9 +4205,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 .c5 svg {
@@ -4233,15 +4233,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #066FAC;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c4 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 .c5 svg {
@@ -4345,9 +4345,9 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
+          borderSizeValue={1}
           className="c4"
-          iconSizeValue={8}
+          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -4404,8 +4404,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c4 {
@@ -4592,8 +4592,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -4780,8 +4780,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -4968,8 +4968,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -5181,8 +5181,8 @@ Array [
 }
 
 .c8 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 .c5 svg {
@@ -5334,9 +5334,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 .c5 svg {
@@ -5362,15 +5362,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #066FAC;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c4 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 .c5 svg {
@@ -5474,9 +5474,9 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
+          borderSizeValue={1}
           className="c4"
-          iconSizeValue={8}
+          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -5533,8 +5533,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c4 {
@@ -5721,8 +5721,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -5909,8 +5909,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -6097,8 +6097,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -6310,8 +6310,8 @@ Array [
 }
 
 .c8 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 .c5 svg {
@@ -6463,9 +6463,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 .c5 svg {
@@ -6491,15 +6491,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #066FAC;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c4 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 .c5 svg {
@@ -6603,9 +6603,9 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
+          borderSizeValue={1}
           className="c4"
-          iconSizeValue={8}
+          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -6662,8 +6662,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c4 {
@@ -6850,8 +6850,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -7038,8 +7038,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -7226,8 +7226,8 @@ Array [
 }
 
 .c9 .c5 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 .c5 svg {
@@ -7446,9 +7446,9 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c9 {
@@ -7483,15 +7483,15 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #066FAC;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c5 .c6 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c10 {
@@ -7755,9 +7755,9 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
           type="notReady"
         >
           <div
-            borderSizeValue={2}
+            borderSizeValue={1}
             className="c5"
-            iconSizeValue={8}
+            iconSizeValue={10}
           >
             <span
               className="c6 c7 offline icon"

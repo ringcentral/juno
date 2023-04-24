@@ -28,9 +28,9 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c1 {
@@ -51,15 +51,15 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c1 .c2 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 <div
@@ -67,9 +67,9 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   type="notReady"
 >
   <div
-    borderSizeValue={2}
+    borderSizeValue={1}
     className="c1"
-    iconSizeValue={8}
+    iconSizeValue={10}
   >
     <span
       className="c2 c3 offline icon"
@@ -131,9 +131,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 {
@@ -239,15 +239,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c7 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 {
@@ -372,8 +372,8 @@ Array [
 }
 
 .c18 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c19 .c3 svg {
@@ -402,8 +402,8 @@ Array [
 }
 
 .c24 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c25 .c3 svg {
@@ -473,9 +473,9 @@ Array [
       type="available"
     >
       <div
-        borderSizeValue={2}
+        borderSizeValue={1}
         className="c7"
-        iconSizeValue={8}
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 check icon"
@@ -645,9 +645,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 {
@@ -753,15 +753,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c7 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 {
@@ -886,8 +886,8 @@ Array [
 }
 
 .c18 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c19 .c3 svg {
@@ -916,8 +916,8 @@ Array [
 }
 
 .c24 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c25 .c3 svg {
@@ -987,9 +987,9 @@ Array [
       type="attended"
     >
       <div
-        borderSizeValue={2}
+        borderSizeValue={1}
         className="c7"
-        iconSizeValue={8}
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 check icon"
@@ -1159,9 +1159,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 {
@@ -1267,15 +1267,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c7 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 {
@@ -1400,8 +1400,8 @@ Array [
 }
 
 .c18 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c19 .c3 svg {
@@ -1430,8 +1430,8 @@ Array [
 }
 
 .c24 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c25 .c3 svg {
@@ -1500,9 +1500,9 @@ Array [
       type="unAttended"
     >
       <div
-        borderSizeValue={2}
+        borderSizeValue={1}
         className="c7"
-        iconSizeValue={8}
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 unattended icon"
@@ -1667,9 +1667,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 {
@@ -1775,15 +1775,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c7 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 {
@@ -1908,8 +1908,8 @@ Array [
 }
 
 .c18 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c19 .c3 svg {
@@ -1938,8 +1938,8 @@ Array [
 }
 
 .c24 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c25 .c3 svg {
@@ -2010,9 +2010,9 @@ Array [
       type="onCall"
     >
       <div
-        borderSizeValue={2}
+        borderSizeValue={1}
         className="c7"
-        iconSizeValue={8}
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 default icon"
@@ -2187,9 +2187,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 {
@@ -2295,15 +2295,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c7 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 {
@@ -2428,8 +2428,8 @@ Array [
 }
 
 .c18 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c19 .c3 svg {
@@ -2458,8 +2458,8 @@ Array [
 }
 
 .c24 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c25 .c3 svg {
@@ -2530,9 +2530,9 @@ Array [
       type="inMeeting"
     >
       <div
-        borderSizeValue={2}
+        borderSizeValue={1}
         className="c7"
-        iconSizeValue={8}
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 default icon"
@@ -2707,9 +2707,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 {
@@ -2815,15 +2815,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c7 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 {
@@ -2948,8 +2948,8 @@ Array [
 }
 
 .c18 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c19 .c3 svg {
@@ -2978,8 +2978,8 @@ Array [
 }
 
 .c24 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c25 .c3 svg {
@@ -3048,9 +3048,9 @@ Array [
       type="DND"
     >
       <div
-        borderSizeValue={2}
+        borderSizeValue={1}
         className="c7"
-        iconSizeValue={8}
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 dnd icon"
@@ -3215,9 +3215,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 {
@@ -3323,15 +3323,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c7 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 {
@@ -3456,8 +3456,8 @@ Array [
 }
 
 .c18 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c19 .c3 svg {
@@ -3486,8 +3486,8 @@ Array [
 }
 
 .c24 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c25 .c3 svg {
@@ -3558,9 +3558,9 @@ Array [
       type="busy"
     >
       <div
-        borderSizeValue={2}
+        borderSizeValue={1}
         className="c7"
-        iconSizeValue={8}
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 default icon"
@@ -3735,9 +3735,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 {
@@ -3843,15 +3843,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c7 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 {
@@ -3976,8 +3976,8 @@ Array [
 }
 
 .c18 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c19 .c3 svg {
@@ -4006,8 +4006,8 @@ Array [
 }
 
 .c24 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c25 .c3 svg {
@@ -4075,9 +4075,9 @@ Array [
       type="unavailable"
     >
       <div
-        borderSizeValue={2}
+        borderSizeValue={1}
         className="c7"
-        iconSizeValue={8}
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -4237,9 +4237,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 {
@@ -4345,15 +4345,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c7 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 {
@@ -4478,8 +4478,8 @@ Array [
 }
 
 .c18 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c19 .c3 svg {
@@ -4508,8 +4508,8 @@ Array [
 }
 
 .c24 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c25 .c3 svg {
@@ -4577,9 +4577,9 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
+        borderSizeValue={1}
         className="c7"
-        iconSizeValue={8}
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -4739,9 +4739,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 {
@@ -4847,15 +4847,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #FFFFFF;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c7 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 {
@@ -4980,8 +4980,8 @@ Array [
 }
 
 .c18 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c19 .c3 svg {
@@ -5010,8 +5010,8 @@ Array [
 }
 
 .c24 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c25 .c3 svg {
@@ -5079,9 +5079,9 @@ Array [
       type="offline"
     >
       <div
-        borderSizeValue={2}
+        borderSizeValue={1}
         className="c7"
-        iconSizeValue={8}
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -5241,9 +5241,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 {
@@ -5308,8 +5308,8 @@ Array [
 }
 
 .c18 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c19 .c3 svg {
@@ -5379,15 +5379,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #066FAC;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c7 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 {
@@ -5512,8 +5512,8 @@ Array [
 }
 
 .c24 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c25 .c3 svg {
@@ -5581,9 +5581,9 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
+        borderSizeValue={1}
         className="c7"
-        iconSizeValue={8}
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -5743,9 +5743,9 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 2px;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
 }
 
 .c8 {
@@ -5810,8 +5810,8 @@ Array [
 }
 
 .c18 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c19 .c3 svg {
@@ -5840,8 +5840,8 @@ Array [
 }
 
 .c24 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c25 .c3 svg {
@@ -5911,15 +5911,15 @@ Array [
   align-items: center;
   border-radius: 50%;
   box-sizing: content-box;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: yellow;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
 }
 
 .c7 .c3 svg {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 .c9 {
@@ -6083,9 +6083,9 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
+        borderSizeValue={1}
         className="c7"
-        iconSizeValue={8}
+        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
