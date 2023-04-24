@@ -4,7 +4,7 @@ import { RcPresenceSize, RcPresenceType } from '../Presence';
 // first is width, second is border
 export const RcPresenceSizes: UnitMap<RcPresenceSize, [number, number]> = {
   xxsmall: [8, 1],
-  xsmall: [8, 2],
+  xsmall: [10, 1],
   small: [10, 2],
   medium: [12, 2],
   large: [16, 2],
