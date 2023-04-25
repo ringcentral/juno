@@ -54823,7 +54823,7 @@ import React669, { forwardRef as forwardRef608 } from "react";
 // ../juno-core/src/components/Presence/utils/RcPresenceUtils.tsx
 var RcPresenceSizes = {
   xxsmall: [8, 1],
-  xsmall: [8, 2],
+  xsmall: [10, 1],
   small: [10, 2],
   medium: [12, 2],
   large: [16, 2],
