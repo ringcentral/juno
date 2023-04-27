@@ -83596,6 +83596,7 @@ var _MoreMenuTabs = forwardRef729((props, ref2) => {
   const moreTabRef = useRef103(null);
   const sentinelStartRef = useRef103(null);
   const tabsRef = useForkRef2(innerRef, ref2);
+  const { externalWindow = window } = useRcPortalWindowContext();
   const mountStateRef = useMountState();
   const [groupInfo, setGroupInfo] = useState50(() => {
     const tabsInfo = getTabsInfoFromChildren(childrenProp);
@@ -83623,16 +83624,14 @@ var _MoreMenuTabs = forwardRef729((props, ref2) => {
     let moreButtonSize = basicMoreButtonSize;
     let allTabsSizeSumWidthoutMoreButton = 0;
     for (const tabEl of allTabs) {
-      if (tabEl instanceof HTMLElement) {
-        if (typeof tabEl.dataset["tabOriginIndex"] === "string") {
-          const tabOriginIndex = Number(tabEl.dataset["tabOriginIndex"]);
-          const elSize = tabEl[sizeKey];
-          allTabsSize[tabOriginIndex] = elSize;
-          allTabsSizeSumWidthoutMoreButton += elSize;
-        } else if (typeof tabEl.dataset["tabMoreButton"] === "string") {
-          const elSize = tabEl[sizeKey];
-          moreButtonSize = elSize;
-        }
+      if (typeof tabEl.dataset["tabOriginIndex"] === "string") {
+        const tabOriginIndex = Number(tabEl.dataset["tabOriginIndex"]);
+        const elSize = tabEl[sizeKey];
+        allTabsSize[tabOriginIndex] = elSize;
+        allTabsSizeSumWidthoutMoreButton += elSize;
+      } else if (typeof tabEl.dataset["tabMoreButton"] === "string") {
+        const elSize = tabEl[sizeKey];
+        moreButtonSize = elSize;
       }
     }
     const newGroupInfo = {
@@ -83678,21 +83677,21 @@ var _MoreMenuTabs = forwardRef729((props, ref2) => {
     const tablist = innerRef.current?.querySelector('[role="tablist"]');
     if (!tablist)
       return;
-    const resizeObserver = getResizeObserver(throttleCalculateGroupInfo);
+    const resizeObserver = getResizeObserver(throttleCalculateGroupInfo, externalWindow);
     resizeObserver.observe(tablist);
     for (const tabItem of Array.from(tablist.children)) {
       resizeObserver.observe(tabItem, { box: "border-box" });
     }
-    const mutationObserver = new MutationObserver((mutations) => {
+    const mutationObserver = new externalWindow.MutationObserver((mutations) => {
       for (const mutation of mutations) {
         if (mutation.type === "childList") {
           mutation.removedNodes.forEach((removedNode) => {
-            if (removedNode instanceof Element) {
+            if (removedNode.getAttribute("role") === "tab") {
               resizeObserver.unobserve(removedNode);
             }
           });
           mutation.addedNodes.forEach((addedNode) => {
-            if (addedNode instanceof Element) {
+            if (addedNode.getAttribute("role") === "tab") {
               resizeObserver.observe(addedNode, { box: "border-box" });
             }
           });
