@@ -1,4 +1,11 @@
 
+## [2.35.0](https://github.com/ringcentral/juno/compare/juno-core-v2.34.0...juno-core-v2.35.0) (2023-04-27)
+
+
+### Features
+
+* **undockMoreMenu:** [MoreMenuTabs] support external window ([e86467b](https://github.com/ringcentral/juno/commit/e86467b0fa537aca5bc3fee1afc7768b6c3a5112))
+
 ## [2.34.0](https://github.com/ringcentral/juno/compare/juno-core-v2.33.0...juno-core-v2.34.0) (2023-04-25)
 
 
