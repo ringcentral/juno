@@ -17,6 +17,7 @@ import {
   useMountState,
   useOnReRender,
   useThrottle,
+  useRcPortalWindowContext,
 } from '../../../../foundation';
 import {
   DEFAULT_MORE_MENU_TAB_LABEL,
@@ -82,6 +83,7 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
   const moreTabRef = useRef<HTMLButtonElement>(null);
   const sentinelStartRef = useRef<HTMLDivElement>(null);
   const tabsRef = useForkRef(innerRef, ref);
+  const { externalWindow = window } = useRcPortalWindowContext();
 
   const mountStateRef = useMountState();
 
@@ -108,7 +110,7 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
 
     if (!tablist) return;
 
-    const allTabs = Array.from(tablist.children);
+    const allTabs = Array.from(tablist.children) as HTMLElement[];
     const allTabsSize: number[] = [];
     const selectedIndex = groupInfo.all.findIndex(
       (info) => info.value === value,
@@ -119,16 +121,14 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
     let allTabsSizeSumWidthoutMoreButton = 0;
 
     for (const tabEl of allTabs) {
-      if (tabEl instanceof HTMLElement) {
-        if (typeof tabEl.dataset['tabOriginIndex'] === 'string') {
-          const tabOriginIndex = Number(tabEl.dataset['tabOriginIndex']);
-          const elSize = tabEl[sizeKey];
-          allTabsSize[tabOriginIndex] = elSize;
-          allTabsSizeSumWidthoutMoreButton += elSize;
-        } else if (typeof tabEl.dataset['tabMoreButton'] === 'string') {
-          const elSize = tabEl[sizeKey];
-          moreButtonSize = elSize;
-        }
+      if (typeof tabEl.dataset['tabOriginIndex'] === 'string') {
+        const tabOriginIndex = Number(tabEl.dataset['tabOriginIndex']);
+        const elSize = tabEl[sizeKey];
+        allTabsSize[tabOriginIndex] = elSize;
+        allTabsSizeSumWidthoutMoreButton += elSize;
+      } else if (typeof tabEl.dataset['tabMoreButton'] === 'string') {
+        const elSize = tabEl[sizeKey];
+        moreButtonSize = elSize;
       }
     }
 
@@ -187,7 +187,10 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
 
     if (!tablist) return;
 
-    const resizeObserver = getResizeObserver(throttleCalculateGroupInfo);
+    const resizeObserver = getResizeObserver(
+      throttleCalculateGroupInfo,
+      externalWindow,
+    );
 
     resizeObserver.observe(tablist);
 
@@ -200,17 +203,19 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
       );
     }
 
-    const mutationObserver = new MutationObserver((mutations) => {
+    const mutationObserver = new (
+      externalWindow as unknown as typeof globalThis
+    ).MutationObserver((mutations) => {
       for (const mutation of mutations) {
         if (mutation.type === 'childList') {
-          mutation.removedNodes.forEach((removedNode) => {
-            if (removedNode instanceof Element) {
+          mutation.removedNodes.forEach((removedNode: HTMLElement) => {
+            if (removedNode.getAttribute('role') === 'tab') {
               resizeObserver.unobserve(removedNode);
             }
           });
 
-          mutation.addedNodes.forEach((addedNode) => {
-            if (addedNode instanceof Element) {
+          mutation.addedNodes.forEach((addedNode: HTMLElement) => {
+            if (addedNode.getAttribute('role') === 'tab') {
               resizeObserver.observe(
                 addedNode,
                 // TODO: remove this, after remove ResizeObserver polyfill
