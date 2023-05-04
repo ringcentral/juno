@@ -621,20 +621,6 @@ Array [
   color: #066FAC;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -687,6 +673,20 @@ Array [
 .c12 .c5 svg {
   width: 20px;
   height: 20px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
 }
 
 .c1 {
@@ -770,9 +770,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={1}
           className="c4"
-          iconSizeValue={8}
         >
           <span
             className="c5 c6 offline icon"
@@ -807,20 +805,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
 }
 
 .c8 .c5 svg {
@@ -877,6 +861,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -958,9 +956,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={1}
           className="c4"
-          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -995,20 +991,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -1065,6 +1047,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -1146,9 +1142,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -1183,20 +1177,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -1253,6 +1233,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -1334,9 +1328,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={12}
         >
           <span
             className="c5 c6 offline icon"
@@ -1371,20 +1363,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -1441,6 +1419,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -1522,9 +1514,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={16}
         >
           <span
             className="c5 c6 offline icon"
@@ -1559,20 +1549,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -1629,6 +1605,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -1710,9 +1700,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={20}
         >
           <span
             className="c5 c6 offline icon"
@@ -1750,20 +1738,6 @@ Array [
   color: #066FAC;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1816,6 +1790,20 @@ Array [
 .c12 .c5 svg {
   width: 20px;
   height: 20px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
 }
 
 .c1 {
@@ -1899,9 +1887,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={1}
           className="c4"
-          iconSizeValue={8}
         >
           <span
             className="c5 c6 offline icon"
@@ -1936,20 +1922,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
 }
 
 .c8 .c5 svg {
@@ -2006,6 +1978,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2087,9 +2073,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={1}
           className="c4"
-          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -2124,20 +2108,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -2194,6 +2164,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2275,9 +2259,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -2312,20 +2294,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -2382,6 +2350,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2463,9 +2445,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={12}
         >
           <span
             className="c5 c6 offline icon"
@@ -2500,20 +2480,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -2570,6 +2536,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2651,9 +2631,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={16}
         >
           <span
             className="c5 c6 offline icon"
@@ -2688,20 +2666,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -2758,6 +2722,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -2839,9 +2817,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={20}
         >
           <span
             className="c5 c6 offline icon"
@@ -2879,20 +2855,6 @@ Array [
   color: #066FAC;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2945,6 +2907,20 @@ Array [
 .c12 .c5 svg {
   width: 20px;
   height: 20px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
 }
 
 .c1 {
@@ -3028,9 +3004,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={1}
           className="c4"
-          iconSizeValue={8}
         >
           <span
             className="c5 c6 offline icon"
@@ -3065,20 +3039,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
 }
 
 .c8 .c5 svg {
@@ -3135,6 +3095,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -3216,9 +3190,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={1}
           className="c4"
-          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -3253,20 +3225,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -3323,6 +3281,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -3404,9 +3376,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -3441,20 +3411,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -3511,6 +3467,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -3592,9 +3562,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={12}
         >
           <span
             className="c5 c6 offline icon"
@@ -3629,20 +3597,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -3699,6 +3653,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -3780,9 +3748,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={16}
         >
           <span
             className="c5 c6 offline icon"
@@ -3817,20 +3783,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -3887,6 +3839,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -3968,9 +3934,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={20}
         >
           <span
             className="c5 c6 offline icon"
@@ -4008,20 +3972,6 @@ Array [
   color: #066FAC;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4074,6 +4024,20 @@ Array [
 .c12 .c5 svg {
   width: 20px;
   height: 20px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
 }
 
 .c1 {
@@ -4157,9 +4121,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={1}
           className="c4"
-          iconSizeValue={8}
         >
           <span
             className="c5 c6 offline icon"
@@ -4194,20 +4156,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
 }
 
 .c8 .c5 svg {
@@ -4264,6 +4212,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -4345,9 +4307,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={1}
           className="c4"
-          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -4382,20 +4342,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -4452,6 +4398,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -4533,9 +4493,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -4570,20 +4528,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -4640,6 +4584,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -4721,9 +4679,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={12}
         >
           <span
             className="c5 c6 offline icon"
@@ -4758,20 +4714,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -4828,6 +4770,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -4909,9 +4865,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={16}
         >
           <span
             className="c5 c6 offline icon"
@@ -4946,20 +4900,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -5016,6 +4956,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -5097,9 +5051,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={20}
         >
           <span
             className="c5 c6 offline icon"
@@ -5137,20 +5089,6 @@ Array [
   color: #066FAC;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5203,6 +5141,20 @@ Array [
 .c12 .c5 svg {
   width: 20px;
   height: 20px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
 }
 
 .c1 {
@@ -5286,9 +5238,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={1}
           className="c4"
-          iconSizeValue={8}
         >
           <span
             className="c5 c6 offline icon"
@@ -5323,20 +5273,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
 }
 
 .c8 .c5 svg {
@@ -5393,6 +5329,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -5474,9 +5424,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={1}
           className="c4"
-          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -5511,20 +5459,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -5581,6 +5515,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -5662,9 +5610,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -5699,20 +5645,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -5769,6 +5701,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -5850,9 +5796,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={12}
         >
           <span
             className="c5 c6 offline icon"
@@ -5887,20 +5831,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -5957,6 +5887,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -6038,9 +5982,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={16}
         >
           <span
             className="c5 c6 offline icon"
@@ -6075,20 +6017,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -6145,6 +6073,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -6226,9 +6168,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={20}
         >
           <span
             className="c5 c6 offline icon"
@@ -6266,20 +6206,6 @@ Array [
   color: #066FAC;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6332,6 +6258,20 @@ Array [
 .c12 .c5 svg {
   width: 20px;
   height: 20px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
 }
 
 .c1 {
@@ -6415,9 +6355,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={1}
           className="c4"
-          iconSizeValue={8}
         >
           <span
             className="c5 c6 offline icon"
@@ -6452,20 +6390,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
 }
 
 .c8 .c5 svg {
@@ -6522,6 +6446,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -6603,9 +6541,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={1}
           className="c4"
-          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -6640,20 +6576,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -6710,6 +6632,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -6791,9 +6727,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={10}
         >
           <span
             className="c5 c6 offline icon"
@@ -6828,20 +6762,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -6898,6 +6818,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -6979,9 +6913,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={12}
         >
           <span
             className="c5 c6 offline icon"
@@ -7016,20 +6948,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -7086,6 +7004,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -7167,9 +7099,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={16}
         >
           <span
             className="c5 c6 offline icon"
@@ -7204,20 +7134,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #066FAC;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
 }
 
 .c8 .c5 svg {
@@ -7274,6 +7190,20 @@ Array [
   height: 20px;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-inline-box;
@@ -7355,9 +7285,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={20}
         >
           <span
             className="c5 c6 offline icon"
@@ -7437,34 +7365,6 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
   outline: none;
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
 .c5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7521,6 +7421,34 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
 .c10 .c6 svg {
   width: 12px;
   height: 12px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
 }
 
 .c2 {
@@ -7755,9 +7683,7 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
           type="notReady"
         >
           <div
-            borderSizeValue={1}
             className="c5"
-            iconSizeValue={10}
           >
             <span
               className="c6 c7 offline icon"
@@ -7798,9 +7724,7 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
         type="DND"
       >
         <div
-          borderSizeValue={2}
           className="c10"
-          iconSizeValue={12}
         >
           <span
             className="c6 c11 dnd icon"
@@ -8191,20 +8115,6 @@ Array [
   color: #3C9949;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8232,6 +8142,20 @@ Array [
 .c4 .c5 svg {
   width: 12px;
   height: 12px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
 }
 
 .c1 {
@@ -8327,9 +8251,7 @@ Array [
         type="available"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={12}
         >
           <span
             className="c5 c6 check icon"
@@ -8368,20 +8290,6 @@ Array [
   color: #E6413C;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8409,6 +8317,20 @@ Array [
 .c4 .c5 svg {
   width: 12px;
   height: 12px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
 }
 
 .c1 {
@@ -8504,9 +8426,7 @@ Array [
         type="DND"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={12}
         >
           <span
             className="c5 c6 dnd icon"
@@ -8571,20 +8491,6 @@ Array [
   color: #939393;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8612,6 +8518,20 @@ Array [
 .c4 .c5 svg {
   width: 12px;
   height: 12px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
 }
 
 .c1 {
@@ -8742,9 +8662,7 @@ Array [
         type="notReady"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={12}
         >
           <span
             className="c5 c6 offline icon"
@@ -8781,20 +8699,6 @@ Array [
   color: #E6413C;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8822,6 +8726,20 @@ Array [
 .c4 .c5 svg {
   width: 12px;
   height: 12px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
 }
 
 .c1 {
@@ -8952,9 +8870,7 @@ Array [
         type="busy"
       >
         <div
-          borderSizeValue={2}
           className="c4"
-          iconSizeValue={12}
         >
           <span
             className="c5 c6 default icon"

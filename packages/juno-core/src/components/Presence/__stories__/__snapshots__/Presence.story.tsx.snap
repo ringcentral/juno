@@ -19,20 +19,6 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   color: #939393;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -62,14 +48,26 @@ exports[`Storyshots 🚀 Cleanup Components/Presence Presence 1`] = `
   height: 10px;
 }
 
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
 <div
   className="c0 "
   type="notReady"
 >
   <div
-    borderSizeValue={1}
     className="c1"
-    iconSizeValue={10}
   >
     <span
       className="c2 c3 offline icon"
@@ -106,90 +104,6 @@ Array [
   display: inline-flex;
   font-size: inherit;
   color: #3C9949;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
 }
 
 .c2 {
@@ -426,6 +340,90 @@ Array [
   height: 20px;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -447,9 +445,7 @@ Array [
       type="available"
     >
       <div
-        borderSizeValue={1}
         className="c2"
-        iconSizeValue={8}
       >
         <span
           className="c3 c4 check icon"
@@ -473,9 +469,7 @@ Array [
       type="available"
     >
       <div
-        borderSizeValue={1}
         className="c7"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 check icon"
@@ -499,9 +493,7 @@ Array [
       type="available"
     >
       <div
-        borderSizeValue={2}
         className="c9"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 check icon"
@@ -525,9 +517,7 @@ Array [
       type="available"
     >
       <div
-        borderSizeValue={2}
         className="c11"
-        iconSizeValue={12}
       >
         <span
           className="c3 c4 check icon"
@@ -551,9 +541,7 @@ Array [
       type="available"
     >
       <div
-        borderSizeValue={2}
         className="c13"
-        iconSizeValue={16}
       >
         <span
           className="c3 c4 check icon"
@@ -577,9 +565,7 @@ Array [
       type="available"
     >
       <div
-        borderSizeValue={2}
         className="c15"
-        iconSizeValue={20}
       >
         <span
           className="c3 c4 check icon"
@@ -622,90 +608,6 @@ Array [
   color: #3C9949;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -940,6 +842,90 @@ Array [
   height: 20px;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -961,9 +947,7 @@ Array [
       type="attended"
     >
       <div
-        borderSizeValue={1}
         className="c2"
-        iconSizeValue={8}
       >
         <span
           className="c3 c4 check icon"
@@ -987,9 +971,7 @@ Array [
       type="attended"
     >
       <div
-        borderSizeValue={1}
         className="c7"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 check icon"
@@ -1013,9 +995,7 @@ Array [
       type="attended"
     >
       <div
-        borderSizeValue={2}
         className="c9"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 check icon"
@@ -1039,9 +1019,7 @@ Array [
       type="attended"
     >
       <div
-        borderSizeValue={2}
         className="c11"
-        iconSizeValue={12}
       >
         <span
           className="c3 c4 check icon"
@@ -1065,9 +1043,7 @@ Array [
       type="attended"
     >
       <div
-        borderSizeValue={2}
         className="c13"
-        iconSizeValue={16}
       >
         <span
           className="c3 c4 check icon"
@@ -1091,9 +1067,7 @@ Array [
       type="attended"
     >
       <div
-        borderSizeValue={2}
         className="c15"
-        iconSizeValue={20}
       >
         <span
           className="c3 c4 check icon"
@@ -1136,90 +1110,6 @@ Array [
   color: #E6413C;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1454,6 +1344,90 @@ Array [
   height: 20px;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1475,9 +1449,7 @@ Array [
       type="unAttended"
     >
       <div
-        borderSizeValue={1}
         className="c2"
-        iconSizeValue={8}
       >
         <span
           className="c3 c4 unattended icon"
@@ -1500,9 +1472,7 @@ Array [
       type="unAttended"
     >
       <div
-        borderSizeValue={1}
         className="c7"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 unattended icon"
@@ -1525,9 +1495,7 @@ Array [
       type="unAttended"
     >
       <div
-        borderSizeValue={2}
         className="c9"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 unattended icon"
@@ -1550,9 +1518,7 @@ Array [
       type="unAttended"
     >
       <div
-        borderSizeValue={2}
         className="c11"
-        iconSizeValue={12}
       >
         <span
           className="c3 c4 unattended icon"
@@ -1575,9 +1541,7 @@ Array [
       type="unAttended"
     >
       <div
-        borderSizeValue={2}
         className="c13"
-        iconSizeValue={16}
       >
         <span
           className="c3 c4 unattended icon"
@@ -1600,9 +1564,7 @@ Array [
       type="unAttended"
     >
       <div
-        borderSizeValue={2}
         className="c15"
-        iconSizeValue={20}
       >
         <span
           className="c3 c4 unattended icon"
@@ -1644,90 +1606,6 @@ Array [
   color: #E6413C;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1962,6 +1840,90 @@ Array [
   height: 20px;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1983,9 +1945,7 @@ Array [
       type="onCall"
     >
       <div
-        borderSizeValue={1}
         className="c2"
-        iconSizeValue={8}
       >
         <span
           className="c3 c4 default icon"
@@ -2010,9 +1970,7 @@ Array [
       type="onCall"
     >
       <div
-        borderSizeValue={1}
         className="c7"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 default icon"
@@ -2037,9 +1995,7 @@ Array [
       type="onCall"
     >
       <div
-        borderSizeValue={2}
         className="c9"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 default icon"
@@ -2064,9 +2020,7 @@ Array [
       type="onCall"
     >
       <div
-        borderSizeValue={2}
         className="c11"
-        iconSizeValue={12}
       >
         <span
           className="c3 c4 default icon"
@@ -2091,9 +2045,7 @@ Array [
       type="onCall"
     >
       <div
-        borderSizeValue={2}
         className="c13"
-        iconSizeValue={16}
       >
         <span
           className="c3 c4 default icon"
@@ -2118,9 +2070,7 @@ Array [
       type="onCall"
     >
       <div
-        borderSizeValue={2}
         className="c15"
-        iconSizeValue={20}
       >
         <span
           className="c3 c4 default icon"
@@ -2164,90 +2114,6 @@ Array [
   color: #E6413C;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2482,6 +2348,90 @@ Array [
   height: 20px;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2503,9 +2453,7 @@ Array [
       type="inMeeting"
     >
       <div
-        borderSizeValue={1}
         className="c2"
-        iconSizeValue={8}
       >
         <span
           className="c3 c4 default icon"
@@ -2530,9 +2478,7 @@ Array [
       type="inMeeting"
     >
       <div
-        borderSizeValue={1}
         className="c7"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 default icon"
@@ -2557,9 +2503,7 @@ Array [
       type="inMeeting"
     >
       <div
-        borderSizeValue={2}
         className="c9"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 default icon"
@@ -2584,9 +2528,7 @@ Array [
       type="inMeeting"
     >
       <div
-        borderSizeValue={2}
         className="c11"
-        iconSizeValue={12}
       >
         <span
           className="c3 c4 default icon"
@@ -2611,9 +2553,7 @@ Array [
       type="inMeeting"
     >
       <div
-        borderSizeValue={2}
         className="c13"
-        iconSizeValue={16}
       >
         <span
           className="c3 c4 default icon"
@@ -2638,9 +2578,7 @@ Array [
       type="inMeeting"
     >
       <div
-        borderSizeValue={2}
         className="c15"
-        iconSizeValue={20}
       >
         <span
           className="c3 c4 default icon"
@@ -2684,90 +2622,6 @@ Array [
   color: #E6413C;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3002,6 +2856,90 @@ Array [
   height: 20px;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3023,9 +2961,7 @@ Array [
       type="DND"
     >
       <div
-        borderSizeValue={1}
         className="c2"
-        iconSizeValue={8}
       >
         <span
           className="c3 c4 dnd icon"
@@ -3048,9 +2984,7 @@ Array [
       type="DND"
     >
       <div
-        borderSizeValue={1}
         className="c7"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 dnd icon"
@@ -3073,9 +3007,7 @@ Array [
       type="DND"
     >
       <div
-        borderSizeValue={2}
         className="c9"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 dnd icon"
@@ -3098,9 +3030,7 @@ Array [
       type="DND"
     >
       <div
-        borderSizeValue={2}
         className="c11"
-        iconSizeValue={12}
       >
         <span
           className="c3 c4 dnd icon"
@@ -3123,9 +3053,7 @@ Array [
       type="DND"
     >
       <div
-        borderSizeValue={2}
         className="c13"
-        iconSizeValue={16}
       >
         <span
           className="c3 c4 dnd icon"
@@ -3148,9 +3076,7 @@ Array [
       type="DND"
     >
       <div
-        borderSizeValue={2}
         className="c15"
-        iconSizeValue={20}
       >
         <span
           className="c3 c4 dnd icon"
@@ -3192,90 +3118,6 @@ Array [
   color: #E6413C;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3510,6 +3352,90 @@ Array [
   height: 20px;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3531,9 +3457,7 @@ Array [
       type="busy"
     >
       <div
-        borderSizeValue={1}
         className="c2"
-        iconSizeValue={8}
       >
         <span
           className="c3 c4 default icon"
@@ -3558,9 +3482,7 @@ Array [
       type="busy"
     >
       <div
-        borderSizeValue={1}
         className="c7"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 default icon"
@@ -3585,9 +3507,7 @@ Array [
       type="busy"
     >
       <div
-        borderSizeValue={2}
         className="c9"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 default icon"
@@ -3612,9 +3532,7 @@ Array [
       type="busy"
     >
       <div
-        borderSizeValue={2}
         className="c11"
-        iconSizeValue={12}
       >
         <span
           className="c3 c4 default icon"
@@ -3639,9 +3557,7 @@ Array [
       type="busy"
     >
       <div
-        borderSizeValue={2}
         className="c13"
-        iconSizeValue={16}
       >
         <span
           className="c3 c4 default icon"
@@ -3666,9 +3582,7 @@ Array [
       type="busy"
     >
       <div
-        borderSizeValue={2}
         className="c15"
-        iconSizeValue={20}
       >
         <span
           className="c3 c4 default icon"
@@ -3712,90 +3626,6 @@ Array [
   color: #939393;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4030,6 +3860,90 @@ Array [
   height: 20px;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4051,9 +3965,7 @@ Array [
       type="unavailable"
     >
       <div
-        borderSizeValue={1}
         className="c2"
-        iconSizeValue={8}
       >
         <span
           className="c3 c4 offline icon"
@@ -4075,9 +3987,7 @@ Array [
       type="unavailable"
     >
       <div
-        borderSizeValue={1}
         className="c7"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -4099,9 +4009,7 @@ Array [
       type="unavailable"
     >
       <div
-        borderSizeValue={2}
         className="c9"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -4123,9 +4031,7 @@ Array [
       type="unavailable"
     >
       <div
-        borderSizeValue={2}
         className="c11"
-        iconSizeValue={12}
       >
         <span
           className="c3 c4 offline icon"
@@ -4147,9 +4053,7 @@ Array [
       type="unavailable"
     >
       <div
-        borderSizeValue={2}
         className="c13"
-        iconSizeValue={16}
       >
         <span
           className="c3 c4 offline icon"
@@ -4171,9 +4075,7 @@ Array [
       type="unavailable"
     >
       <div
-        borderSizeValue={2}
         className="c15"
-        iconSizeValue={20}
       >
         <span
           className="c3 c4 offline icon"
@@ -4214,90 +4116,6 @@ Array [
   color: #939393;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4532,6 +4350,90 @@ Array [
   height: 20px;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4553,9 +4455,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={1}
         className="c2"
-        iconSizeValue={8}
       >
         <span
           className="c3 c4 offline icon"
@@ -4577,9 +4477,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={1}
         className="c7"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -4601,9 +4499,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
         className="c9"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -4625,9 +4521,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
         className="c11"
-        iconSizeValue={12}
       >
         <span
           className="c3 c4 offline icon"
@@ -4649,9 +4543,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
         className="c13"
-        iconSizeValue={16}
       >
         <span
           className="c3 c4 offline icon"
@@ -4673,9 +4565,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
         className="c15"
-        iconSizeValue={20}
       >
         <span
           className="c3 c4 offline icon"
@@ -4716,90 +4606,6 @@ Array [
   color: #939393;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5034,6 +4840,90 @@ Array [
   height: 20px;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5055,9 +4945,7 @@ Array [
       type="offline"
     >
       <div
-        borderSizeValue={1}
         className="c2"
-        iconSizeValue={8}
       >
         <span
           className="c3 c4 offline icon"
@@ -5079,9 +4967,7 @@ Array [
       type="offline"
     >
       <div
-        borderSizeValue={1}
         className="c7"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -5103,9 +4989,7 @@ Array [
       type="offline"
     >
       <div
-        borderSizeValue={2}
         className="c9"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -5127,9 +5011,7 @@ Array [
       type="offline"
     >
       <div
-        borderSizeValue={2}
         className="c11"
-        iconSizeValue={12}
       >
         <span
           className="c3 c4 offline icon"
@@ -5151,9 +5033,7 @@ Array [
       type="offline"
     >
       <div
-        borderSizeValue={2}
         className="c13"
-        iconSizeValue={16}
       >
         <span
           className="c3 c4 offline icon"
@@ -5175,9 +5055,7 @@ Array [
       type="offline"
     >
       <div
-        borderSizeValue={2}
         className="c15"
-        iconSizeValue={20}
       >
         <span
           className="c3 c4 offline icon"
@@ -5218,90 +5096,6 @@ Array [
   color: #066FAC;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-}
-
 .c17 .c3 svg {
   width: 8px;
   height: 8px;
@@ -5536,6 +5330,90 @@ Array [
   height: 20px;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5557,9 +5435,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={1}
         className="c2"
-        iconSizeValue={8}
       >
         <span
           className="c3 c4 offline icon"
@@ -5581,9 +5457,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={1}
         className="c7"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -5605,9 +5479,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
         className="c9"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -5629,9 +5501,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
         className="c11"
-        iconSizeValue={12}
       >
         <span
           className="c3 c4 offline icon"
@@ -5653,9 +5523,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
         className="c13"
-        iconSizeValue={16}
       >
         <span
           className="c3 c4 offline icon"
@@ -5677,9 +5545,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
         className="c15"
-        iconSizeValue={20}
       >
         <span
           className="c3 c4 offline icon"
@@ -5720,90 +5586,6 @@ Array [
   color: yellow;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 8px;
-  height: 8px;
-  padding: 1px;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-}
-
 .c17 .c3 svg {
   width: 8px;
   height: 8px;
@@ -6038,6 +5820,90 @@ Array [
   height: 20px;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+  padding: 1px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6059,9 +5925,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={1}
         className="c2"
-        iconSizeValue={8}
       >
         <span
           className="c3 c4 offline icon"
@@ -6083,9 +5947,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={1}
         className="c7"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -6107,9 +5969,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
         className="c9"
-        iconSizeValue={10}
       >
         <span
           className="c3 c4 offline icon"
@@ -6131,9 +5991,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
         className="c11"
-        iconSizeValue={12}
       >
         <span
           className="c3 c4 offline icon"
@@ -6155,9 +6013,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
         className="c13"
-        iconSizeValue={16}
       >
         <span
           className="c3 c4 offline icon"
@@ -6179,9 +6035,7 @@ Array [
       type="notReady"
     >
       <div
-        borderSizeValue={2}
         className="c15"
-        iconSizeValue={20}
       >
         <span
           className="c3 c4 offline icon"
