@@ -54,7 +54,6 @@ const _RcPresence = forwardRef<any, RcPresenceProps>((inProps, ref) => {
   const sizeProps = {
     iconSizeValue: RcPresenceSizes[size!][0],
     borderSizeValue: RcPresenceSizes[borderSize || size!][1],
-    borderSize,
     type,
   };
 

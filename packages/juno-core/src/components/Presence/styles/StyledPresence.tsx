@@ -11,20 +11,10 @@ import { RcIcon } from '../../Icon';
 import { PresenceSizeProps } from '../Presence';
 import { RcPresenceBackgroundColors } from '../utils';
 
-export const PresenceContainer = styled.div<PresenceSizeProps>`
-  ${({ iconSizeValue, borderSizeValue }) => {
-    return css`
-      display: flex;
-      justify-content: center;
-      width: ${iconSizeValue}px;
-      height: ${iconSizeValue}px;
-      padding: ${borderSizeValue}px;
-    `;
-  }}
-`;
-
 export const _StyledPresence = forwardRef<any, PresenceSizeProps>(
-  ({ color, type, ...rest }, ref) => <div ref={ref} {...rest} />,
+  ({ color, type, iconSizeValue, borderSizeValue, ...rest }, ref) => (
+    <div ref={ref} {...rest} />
+  ),
 );
 
 export const StyledPresence = styled(_StyledPresence)<PresenceSizeProps>`
@@ -55,4 +45,16 @@ export const StyledPresence = styled(_StyledPresence)<PresenceSizeProps>`
       }
     `;
   }};
+`;
+
+export const PresenceContainer = styled.div<PresenceSizeProps>`
+  ${({ iconSizeValue, borderSizeValue }) => {
+    return css`
+      display: flex;
+      justify-content: center;
+      width: ${iconSizeValue}px;
+      height: ${iconSizeValue}px;
+      padding: ${borderSizeValue}px;
+    `;
+  }}
 `;
