@@ -1,4 +1,11 @@
 
+### [2.35.2](https://github.com/ringcentral/juno/compare/juno-core-v2.35.1...juno-core-v2.35.2) (2023-05-08)
+
+
+### Bug Fixes
+
+* **fix-more-tabs:** [MoreMenuTabs] fix issue about update groupInfo incorrectly ([938dbb2](https://github.com/ringcentral/juno/commit/938dbb2c4fc5b1c85e9cc2e5f9e786682c2d591d))
+
 ### [2.35.1](https://github.com/ringcentral/juno/compare/juno-core-v2.35.0...juno-core-v2.35.1) (2023-05-08)
 
 
