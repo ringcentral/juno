@@ -95,8 +95,8 @@ export const useTouchMouseEvent = <T extends HTMLElement = HTMLElement>(
       const touch = e.touches[0] || e.changedTouches[0];
 
       const elm = document.elementFromPoint(
-        touch.pageX,
-        touch.pageY,
+        touch.clientX,
+        touch.clientY,
       ) as HTMLElement | null;
 
       isInside = !!elm && checkInside(elm);
