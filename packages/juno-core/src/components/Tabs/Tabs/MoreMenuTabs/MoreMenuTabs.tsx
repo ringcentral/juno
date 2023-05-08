@@ -265,16 +265,18 @@ const _MoreMenuTabs = forwardRef<any, MoreMenuTabsProps>((props, ref) => {
         menu: [] as TabInfo[],
       };
 
-      // Prevent moreButton from flickering after children update
-      for (const tabInfo of tabsInfo) {
-        if (groupInfo.tab.some(({ key }) => tabInfo.key === key)) {
-          newGroupInfo.tab.push(tabInfo);
-        } else {
-          // push new tab or invisible old tab to menu group
-          newGroupInfo.menu.push(tabInfo);
+      setGroupInfo((preGroupInfo) => {
+        // Prevent moreButton from flickering after children update
+        for (const tabInfo of tabsInfo) {
+          if (preGroupInfo.tab.some(({ key }) => tabInfo.key === key)) {
+            newGroupInfo.tab.push(tabInfo);
+          } else {
+            // push new tab or invisible old tab to menu group
+            newGroupInfo.menu.push(tabInfo);
+          }
         }
-      }
-      setGroupInfo(newGroupInfo);
+        return newGroupInfo;
+      });
     },
     [childrenProp],
     false,
