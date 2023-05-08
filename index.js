@@ -49949,7 +49949,7 @@ var useTouchMouseEvent = ({
     let isInside;
     if (actionRef && e2.touches.length < 2 && e2.changedTouches.length < 2) {
       const touch = e2.touches[0] || e2.changedTouches[0];
-      const elm = document2.elementFromPoint(touch.pageX, touch.pageY);
+      const elm = document2.elementFromPoint(touch.clientX, touch.clientY);
       isInside = !!elm && checkInside(elm);
     }
     onTouchEndArg?.(e2, isInside);
@@ -54858,18 +54858,7 @@ var RcPresenceBackgroundColors = {
 };
 
 // ../juno-core/src/components/Presence/styles/StyledPresence.tsx
-var PresenceContainer = styled_components_default.div`
-  ${({ iconSizeValue, borderSizeValue }) => {
-  return css2`
-      display: flex;
-      justify-content: center;
-      width: ${iconSizeValue}px;
-      height: ${iconSizeValue}px;
-      padding: ${borderSizeValue}px;
-    `;
-}}
-`;
-var _StyledPresence = forwardRef608(({ color: color2, type: type3, ...rest }, ref2) => /* @__PURE__ */ React669.createElement("div", {
+var _StyledPresence = forwardRef608(({ color: color2, type: type3, iconSizeValue, borderSizeValue, ...rest }, ref2) => /* @__PURE__ */ React669.createElement("div", {
   ref: ref2,
   ...rest
 }));
@@ -54900,6 +54889,17 @@ var StyledPresence = styled_components_default(_StyledPresence)`
     `;
 }};
 `;
+var PresenceContainer = styled_components_default.div`
+  ${({ iconSizeValue, borderSizeValue }) => {
+  return css2`
+      display: flex;
+      justify-content: center;
+      width: ${iconSizeValue}px;
+      height: ${iconSizeValue}px;
+      padding: ${borderSizeValue}px;
+    `;
+}}
+`;
 
 // ../juno-core/src/components/Presence/Presence.tsx
 var _RcPresence = forwardRef609((inProps, ref2) => {
@@ -54908,7 +54908,6 @@ var _RcPresence = forwardRef609((inProps, ref2) => {
   const sizeProps = {
     iconSizeValue: RcPresenceSizes[size][0],
     borderSizeValue: RcPresenceSizes[borderSize || size][1],
-    borderSize,
     type: type3
   };
   const symbol = (() => {
@@ -83722,14 +83721,16 @@ var _MoreMenuTabs = forwardRef729((props, ref2) => {
       tab: [],
       menu: []
     };
-    for (const tabInfo of tabsInfo) {
-      if (groupInfo.tab.some(({ key }) => tabInfo.key === key)) {
-        newGroupInfo.tab.push(tabInfo);
-      } else {
-        newGroupInfo.menu.push(tabInfo);
+    setGroupInfo((preGroupInfo) => {
+      for (const tabInfo of tabsInfo) {
+        if (preGroupInfo.tab.some(({ key }) => tabInfo.key === key)) {
+          newGroupInfo.tab.push(tabInfo);
+        } else {
+          newGroupInfo.menu.push(tabInfo);
+        }
       }
-    }
-    setGroupInfo(newGroupInfo);
+      return newGroupInfo;
+    });
   }, [childrenProp], false);
   useEffect63(() => {
     onGroupInfoChange?.([
