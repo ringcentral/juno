@@ -1,4 +1,12 @@
 
+### [2.35.1](https://github.com/ringcentral/juno/compare/juno-core-v2.35.0...juno-core-v2.35.1) (2023-05-08)
+
+
+### Bug Fixes
+
+* **JMX-3143:** [useTouchMouseEvent] fix ios touch issue ([8ae344c](https://github.com/ringcentral/juno/commit/8ae344cee65f47919b53383d6517e93af3ead6a3))
+* **juno-core:** [Presence] fix not pick custom props ([486efdb](https://github.com/ringcentral/juno/commit/486efdb36f0f1b55326955c9c1a768545475d72e))
+
 ## [2.35.0](https://github.com/ringcentral/juno/compare/juno-core-v2.34.0...juno-core-v2.35.0) (2023-04-27)
 
 
