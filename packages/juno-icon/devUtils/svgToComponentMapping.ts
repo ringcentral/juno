@@ -9,6 +9,7 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  RemoveMemberBorder: 'remove-member_border',
   Compose: 'compose',
   Callrail: 'callrail',
   CallrailBorder: 'callrail_border',

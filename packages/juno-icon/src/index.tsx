@@ -374,6 +374,7 @@ export { default as Record } from './Record';
 export { default as Refresh } from './Refresh';
 export { default as RemoveBorder } from './RemoveBorder';
 export { default as RemoveField } from './RemoveField';
+export { default as RemoveMemberBorder } from './RemoveMemberBorder';
 export { default as Remove } from './Remove';
 export { default as Repeat } from './Repeat';
 export { default as Reply } from './Reply';
