@@ -77002,8 +77002,8 @@ var RcDatePickerIconWidths = {
   small: "18px",
   medium: "28px"
 };
-var focusDayElement = () => {
-  const elm = document.querySelector("[data-picker-focused]");
+var focusDayElement = (doc = document) => {
+  const elm = doc.querySelector("[data-picker-focused]");
   elm?.focus();
 };
 var isSameYearAndMonth = ({ source, comparing }, utils) => {
@@ -77016,8 +77016,8 @@ var isSameYearAndMonth = ({ source, comparing }, utils) => {
   const comparingYear = utils.getYear(comparing);
   return thisMonth === comparingMonth && thisYear === comparingYear;
 };
-var onTransitionEnd = (event) => {
-  const activeElm = document.activeElement;
+var onTransitionEnd = (event, doc = document) => {
+  const activeElm = doc.activeElement;
   if (event.target.dataset["transitionTag"] && activeElm.dataset["pickerAction"] !== "true") {
     focusDayElement();
   }
@@ -77957,6 +77957,7 @@ var Calendar2 = forwardRef684(({
   const calendarRef = useRef91(null);
   const previousFocusDate = usePrevious(() => focusedDate);
   const previousView = usePrevious(() => view);
+  const { document: doc } = useRcPortalWindowContext();
   const weeks = useRef91([]);
   import_dayjs2.default.locale(utils.locale);
   const { current: weekdays } = useResultRef(() => utils.getWeekdays());
@@ -78128,18 +78129,20 @@ var Calendar2 = forwardRef684(({
   };
   useLayoutEffect27(() => {
     if (sameMonthDate && !viewChange) {
-      focusDayElement();
+      focusDayElement(doc);
     }
   });
   useLayoutEffect27(() => {
     if (previousView && view === "day" && viewChange) {
-      focusDayElement();
+      focusDayElement(doc);
     }
-  }, [previousView, view, viewChange]);
+  }, [previousView, view, viewChange, doc]);
   useLayoutEffect27(() => {
-    focusDayElement();
-    calendarRef.current = document.querySelector(`.${RcDatePickerClasses.popover} .${RcDatePickerClasses.popoverPaper}`);
-    const unsubscribe = transitionendSubscriber(calendarRef.current, onTransitionEnd);
+    focusDayElement(doc);
+    calendarRef.current = doc.querySelector(`.${RcDatePickerClasses.popover} .${RcDatePickerClasses.popoverPaper}`);
+    const unsubscribe = transitionendSubscriber(calendarRef.current, (event) => {
+      onTransitionEnd(event, doc);
+    });
     return () => {
       unsubscribe();
     };
