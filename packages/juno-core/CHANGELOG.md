@@ -1,4 +1,11 @@
 
+### [2.35.3](https://github.com/ringcentral/juno/compare/juno-core-v2.35.2...juno-core-v2.35.3) (2023-05-11)
+
+
+### Bug Fixes
+
+* **fix-DatePicker:** [DatePicker] get document/window from RcPortalWindowContext ([8413810](https://github.com/ringcentral/juno/commit/84138106eab9eb80f53a94da0d4a089e46214175))
+
 ### [2.35.2](https://github.com/ringcentral/juno/compare/juno-core-v2.35.1...juno-core-v2.35.2) (2023-05-08)
 
 
