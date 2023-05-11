@@ -19,6 +19,7 @@ import {
   RcClassesProps,
   useEventCallback,
   usePrevious,
+  useRcPortalWindowContext,
   useResultRef,
 } from '../../../../foundation';
 import { RcButton } from '../../../Buttons';
@@ -113,7 +114,7 @@ const Calendar = forwardRef<any, CalendarProps>(
 
     const previousFocusDate = usePrevious(() => focusedDate);
     const previousView = usePrevious(() => view);
-
+    const { document: doc } = useRcPortalWindowContext();
     const weeks = useRef<MuiPickersDate[][]>([]);
 
     // * `getWeekdays` not set locale, need set locale before get
@@ -396,27 +397,29 @@ const Calendar = forwardRef<any, CalendarProps>(
     // same month anchor switch
     useLayoutEffect(() => {
       if (sameMonthDate && !viewChange) {
-        focusDayElement();
+        focusDayElement(doc);
       }
     });
 
     // when view change and current is day also focusDay again
     useLayoutEffect(() => {
       if (previousView && view === 'day' && viewChange) {
-        focusDayElement();
+        focusDayElement(doc);
       }
-    }, [previousView, view, viewChange]);
+    }, [previousView, view, viewChange, doc]);
 
     useLayoutEffect(() => {
-      focusDayElement();
+      focusDayElement(doc);
 
-      calendarRef.current = document.querySelector(
+      calendarRef.current = doc.querySelector(
         `.${RcDatePickerClasses.popover} .${RcDatePickerClasses.popoverPaper}`,
       );
 
       const unsubscribe = transitionendSubscriber(
         calendarRef.current,
-        onTransitionEnd,
+        (event) => {
+          onTransitionEnd(event, doc);
+        },
       );
 
       return () => {

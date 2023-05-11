@@ -54,8 +54,8 @@ export const RcDatePickerIconWidths: UnitMap<RcDatePickerSize, string> = {
   medium: '28px',
 };
 
-export const focusDayElement = () => {
-  const elm = document.querySelector<HTMLElement>('[data-picker-focused]');
+export const focusDayElement = (doc = document) => {
+  const elm = doc.querySelector<HTMLElement>('[data-picker-focused]');
   elm?.focus();
 };
 
@@ -74,8 +74,8 @@ export const isSameYearAndMonth = (
   return thisMonth === comparingMonth && thisYear === comparingYear;
 };
 
-export const onTransitionEnd = (event: any) => {
-  const activeElm = document.activeElement as HTMLElement;
+export const onTransitionEnd = (event: any, doc = document) => {
+  const activeElm = doc.activeElement as HTMLElement;
   if (
     event.target.dataset['transitionTag'] &&
     // * check is not focus on other thing, like click next month
