@@ -1,4 +1,11 @@
 
+## [1.44.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.43.0...juno-icon-v1.44.0) (2023-05-18)
+
+
+### Features
+
+* **Icon:** add 24 experimental icons, update PinWindow icon ([d695892](https://github.com/ringcentral/juno/commit/d69589227450bdc637a46036aed402481f76a7b7))
+
 ## [1.43.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.42.0...juno-icon-v1.43.0) (2023-05-08)
 
 
