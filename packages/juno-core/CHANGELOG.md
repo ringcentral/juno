@@ -1,4 +1,11 @@
 
+### [2.35.4](https://github.com/ringcentral/juno/compare/juno-core-v2.35.3...juno-core-v2.35.4) (2023-05-19)
+
+
+### Bug Fixes
+
+* **fix-dot-badge:** [Badge] fix issue about dot Badge does not support `invisible` and `showZero` ([4600aca](https://github.com/ringcentral/juno/commit/4600acac9fe80d1b45d1d04777cd8e1fff717b45))
+
 ### [2.35.3](https://github.com/ringcentral/juno/compare/juno-core-v2.35.2...juno-core-v2.35.3) (2023-05-11)
 
 
