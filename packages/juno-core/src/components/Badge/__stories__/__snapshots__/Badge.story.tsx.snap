@@ -5,6 +5,9 @@ Array [
   .c0 .RcBadge-badge {
   color: #FFFFFF;
   background-color: #FF8800;
+  -webkit-transition: -webkit-transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  -webkit-transition: transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
   height: 18px;
   min-width: 18px;
   padding: 0;
@@ -177,6 +180,9 @@ Array [
   margin: var(--badge-round-margin);
   color: #FFFFFF;
   background-color: #FF8800;
+  -webkit-transition: -webkit-transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  -webkit-transition: transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
   height: 18px;
   min-width: 18px;
   padding: 0;
@@ -398,6 +404,9 @@ Array [
 .c0 .RcBadge-badge {
   color: #FFFFFF;
   background-color: #FF8800;
+  -webkit-transition: -webkit-transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  -webkit-transition: transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
   height: 18px;
   min-width: 18px;
   padding: 0;
@@ -521,6 +530,9 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
 .c1 .RcBadge-badge {
   color: #FFFFFF;
   background-color: #FF8800;
+  -webkit-transition: -webkit-transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  -webkit-transition: transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
   height: 18px;
   min-width: 18px;
   padding: 0;
@@ -530,6 +542,9 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
   margin: var(--badge-round-margin);
   color: #FFFFFF;
   background-color: #FF8800;
+  -webkit-transition: -webkit-transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  -webkit-transition: transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
   height: 18px;
   min-width: 18px;
   padding: 0;
@@ -538,6 +553,9 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
 .c7 .RcBadge-badge {
   color: #FFFFFF;
   background-color: #FF8800;
+  -webkit-transition: -webkit-transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  -webkit-transition: transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
   height: 18px;
   min-width: 18px;
   position: unset;
@@ -555,6 +573,9 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
 .c8 .RcBadge-badge {
   color: #FFFFFF;
   background-color: #FF8800;
+  -webkit-transition: -webkit-transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  -webkit-transition: transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
   height: 18px;
   min-width: 18px;
   padding: 0;
@@ -573,6 +594,9 @@ exports[`Storyshots 🚀 Cleanup Components/Badge Badge Examples 1`] = `
 .c14 .RcBadge-badge {
   color: #FFFFFF;
   background-color: #FF8800;
+  -webkit-transition: -webkit-transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  -webkit-transition: transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
+  transition: transform 225ms cubic-bezier(0.4,0,0.2,1) 0ms;
   height: 18px;
   min-width: 18px;
 }

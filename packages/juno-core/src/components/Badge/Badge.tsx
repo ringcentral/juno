@@ -7,14 +7,10 @@ import React, {
   useRef,
 } from 'react';
 
-import clsx from 'clsx';
-
 import MuiBadge from '@material-ui/core/Badge';
-import { capitalize } from '@material-ui/core/utils';
 
 import {
   combineClasses,
-  combineProps,
   logInDev,
   RcBaseProps,
   RcPaletteKeys,
@@ -24,10 +20,10 @@ import {
   useForkRef,
   useThemeProps,
 } from '../../foundation';
-import { RcBox } from '../Box';
 import { RcPresenceProps } from '../Presence';
-import { BadgeStyle, DefaultDotComponent } from './styles';
+import { BadgeStyle } from './styles';
 import { RcBadgeClasses, useRoundBadgeOffset } from './utils';
+import { DotBadgeContext, DotBadge } from './DotBadge';
 
 type RcBadgeProps = {
   /** tag color, default is `umi.mentioned` */
@@ -80,6 +76,9 @@ const _RcBadge = forwardRef<any, RcBadgeProps>((inProps: RcBadgeProps, ref) => {
     component,
     dotComponent,
     dotProps,
+    invisible,
+    badgeContent,
+    showZero = false,
     ...rest
   } = props;
 
@@ -118,42 +117,15 @@ const _RcBadge = forwardRef<any, RcBadgeProps>((inProps: RcBadgeProps, ref) => {
     [classesProp],
   );
 
-  const CustomDotBadge = useMemo(() => {
-    return isDot
-      ? forwardRef<any, any>(({ children: OmitChildren, ...rest }, ref) => {
-          const { horizontal, vertical } = anchorOrigin!;
-
-          const addClassName = `MuiBadge-anchorOrigin${capitalize(
-            vertical!,
-          )}${capitalize(horizontal!)}${capitalize(overlap!)}`;
-
-          const DotComponent = dotComponent ?? DefaultDotComponent;
-
-          const applyDotProps = combineProps(
-            { className: clsx(addClassName, RcBadgeClasses.badge) },
-            dotProps,
-          );
-
-          return (
-            <div {...rest} ref={ref}>
-              {children}
-              {dotComponent !== null && (
-                <RcBox position="absolute" zIndex="1" clone>
-                  <DotComponent {...applyDotProps} />
-                </RcBox>
-              )}
-            </div>
-          );
-        })
-      : undefined;
-  }, [isDot, dotProps, overlap, anchorOrigin, children, dotComponent]);
-
-  return (
+  const renderBadge = (customComponent: any = component) => (
     <MuiBadge
       {...rest}
       variant={variant}
+      invisible={invisible}
+      badgeContent={badgeContent}
+      showZero={showZero}
       anchorOrigin={anchorOrigin}
-      component={(component || CustomDotBadge) as any}
+      component={customComponent}
       // TODO: that as any for ts v3.8 still not support pick variable out of if check
       overlap={notPassOverlapToMui ? (overlap as any) : undefined}
       ref={badgeRef}
@@ -162,6 +134,27 @@ const _RcBadge = forwardRef<any, RcBadgeProps>((inProps: RcBadgeProps, ref) => {
       {children}
     </MuiBadge>
   );
+
+  if (isDot) {
+    return (
+      <DotBadgeContext.Provider
+        value={{
+          anchorOrigin,
+          dotComponent,
+          dotProps,
+          invisible,
+          overlap,
+          children,
+          badgeContent,
+          showZero,
+        }}
+      >
+        {renderBadge(DotBadge)}
+      </DotBadgeContext.Provider>
+    );
+  }
+
+  return renderBadge(component);
 });
 
 const RcBadge = styled(_RcBadge)`
