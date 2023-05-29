@@ -30,19 +30,3 @@ export const RcPresenceColors: UnitMap<RcPresenceType> = {
   notReady: presenceOff,
   offline: presenceOff,
 };
-
-export const RcPresenceBackgroundColors: UnitMap<RcPresenceType> = {
-  // positive
-  available: '#FFFFFF',
-  attended: '#FFFFFF',
-  // negative
-  unAttended: '#FFFFFF',
-  onCall: '#FFFFFF',
-  inMeeting: '#FFFFFF',
-  DND: '#FFFFFF',
-  busy: '#FFFFFF',
-
-  unavailable: palette2('neutral', 'l01'),
-  notReady: palette2('neutral', 'l01'),
-  offline: palette2('neutral', 'l01'),
-};

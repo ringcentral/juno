@@ -9,7 +9,6 @@ import {
 } from '../../../foundation';
 import { RcIcon } from '../../Icon';
 import { PresenceSizeProps } from '../Presence';
-import { RcPresenceBackgroundColors } from '../utils';
 
 export const _StyledPresence = forwardRef<any, PresenceSizeProps>(
   ({ color, type, iconSizeValue, borderSizeValue, ...rest }, ref) => (
@@ -25,13 +24,13 @@ export const StyledPresence = styled(_StyledPresence)<PresenceSizeProps>`
   border-radius: 50%;
   box-sizing: content-box;
 
-  ${({ type, iconSizeValue, borderSizeValue, color }) => {
+  ${({ iconSizeValue, borderSizeValue, color }) => {
     return css`
       width: ${iconSizeValue}px;
       height: ${iconSizeValue}px;
       background: ${color
         ? getParsePaletteColor(color)
-        : RcPresenceBackgroundColors[type!] || palette2('neutral', 'l01')};
+        : palette2('neutral', 'l01')};
       ${fakeBorder({
         inset: false,
         color: palette2('neutral', 'l01'),
