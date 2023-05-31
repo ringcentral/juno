@@ -55262,7 +55262,11 @@ var Unattended = memo520(forwardRef631((props, svgRef) => /* @__PURE__ */ React6
   ref: svgRef,
   ...props
 }, /* @__PURE__ */ React692.createElement("path", {
-  d: "M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm7.54,20.39a2.23,2.23,0,0,1-3.15,3.15h0L16,19.15l-4.39,4.39a2.23,2.23,0,0,1-3.15-3.15h0L12.85,16,8.46,11.61a2.23,2.23,0,0,1,3.15-3.15L16,12.85l4.39-4.39a2.23,2.23,0,0,1,3.15,3.15h0L19.15,16Z"
+  fill: "#dd6057",
+  d: "M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Z"
+}), /* @__PURE__ */ React692.createElement("path", {
+  fill: "#fff",
+  d: "M23.54,20.39a2.23,2.23,0,0,1-3.15,3.15h0L16,19.15l-4.39,4.39a2.23,2.23,0,0,1-3.15-3.15h0L12.85,16,8.46,11.61a2.23,2.23,0,0,1,3.15-3.15L16,12.85l4.39-4.39a2.23,2.23,0,0,1,3.15,3.15h0L19.15,16Z"
 }))));
 Unattended.displayName = "Unattended";
 Unattended["iconName"] = "unattended";
@@ -55275,9 +55279,15 @@ var Check2 = memo521(forwardRef632((props, svgRef) => /* @__PURE__ */ React693.c
   viewBox: "0 0 32 32",
   ref: svgRef,
   ...props
+}, /* @__PURE__ */ React693.createElement("g", {
+  id: "Available"
 }, /* @__PURE__ */ React693.createElement("path", {
   id: "Shape",
-  d: "M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.62,10.38L17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,1.76,1.76,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.21,2.21,0,0,1,2.95-1.06,2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
+  fill: "#3c9949",
+  d: "M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Z"
+})), /* @__PURE__ */ React693.createElement("path", {
+  fill: "#fff",
+  d: "M24.62,10.38,17.51,23.72A2.19,2.19,0,0,1,16,24.89h-.41a2.17,2.17,0,0,1-1.37-.53L8,19a2.22,2.22,0,0,1,2.38-3.7,2,2,0,0,1,.39.32L14.9,19.2,20.71,8.3a2.22,2.22,0,0,1,2.94-1.07h0a2.15,2.15,0,0,1,1.15,1.25,2.23,2.23,0,0,1-.08,1.7l-.11.21Z"
 }))));
 Check2.displayName = "Check";
 Check2["iconName"] = "check";
@@ -55320,7 +55330,11 @@ var Dnd = memo524(forwardRef635((props, svgRef) => /* @__PURE__ */ React696.crea
   ref: svgRef,
   ...props
 }, /* @__PURE__ */ React696.createElement("path", {
-  d: "M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm8.44,18.22H7.56a2.22,2.22,0,1,1,0-4.44H24.44a2.22,2.22,0,1,1,0,4.44Z"
+  fill: "#dd6057",
+  d: "M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Z"
+}), /* @__PURE__ */ React696.createElement("path", {
+  fill: "#fff",
+  d: "M24.44,18.22H7.56a2.22,2.22,0,1,1,0-4.44H24.44a2.22,2.22,0,0,1,0,4.44Z"
 }))));
 Dnd.displayName = "Dnd";
 Dnd["iconName"] = "dnd";
@@ -55328,45 +55342,6 @@ var Dnd_default = Dnd;
 
 // ../juno-core/src/components/Presence/styles/StyledPresence.tsx
 import React697, { forwardRef as forwardRef636 } from "react";
-
-// ../juno-core/src/components/Presence/utils/RcPresenceUtils.tsx
-var RcPresenceSizes = {
-  xxsmall: [8, 1],
-  xsmall: [10, 1],
-  small: [10, 2],
-  medium: [12, 2],
-  large: [16, 2],
-  xlarge: [20, 2]
-};
-var presenceOn = palette22("presence", "available");
-var presenceBusy = palette22("presence", "busy");
-var presenceOff = palette22("presence", "invisible");
-var RcPresenceColors = {
-  available: presenceOn,
-  attended: presenceOn,
-  unAttended: presenceBusy,
-  onCall: presenceBusy,
-  inMeeting: presenceBusy,
-  DND: presenceBusy,
-  busy: presenceBusy,
-  unavailable: presenceOff,
-  notReady: presenceOff,
-  offline: presenceOff
-};
-var RcPresenceBackgroundColors = {
-  available: "#FFFFFF",
-  attended: "#FFFFFF",
-  unAttended: "#FFFFFF",
-  onCall: "#FFFFFF",
-  inMeeting: "#FFFFFF",
-  DND: "#FFFFFF",
-  busy: "#FFFFFF",
-  unavailable: palette22("neutral", "l01"),
-  notReady: palette22("neutral", "l01"),
-  offline: palette22("neutral", "l01")
-};
-
-// ../juno-core/src/components/Presence/styles/StyledPresence.tsx
 var _StyledPresence = forwardRef636(({ color: color2, type: type3, iconSizeValue, borderSizeValue, ...rest }, ref2) => /* @__PURE__ */ React697.createElement("div", {
   ref: ref2,
   ...rest
@@ -55379,11 +55354,11 @@ var StyledPresence = styled_components_default(_StyledPresence)`
   border-radius: 50%;
   box-sizing: content-box;
 
-  ${({ type: type3, iconSizeValue, borderSizeValue, color: color2 }) => {
+  ${({ iconSizeValue, borderSizeValue, color: color2 }) => {
   return css2`
       width: ${iconSizeValue}px;
       height: ${iconSizeValue}px;
-      background: ${color2 ? getParsePaletteColor(color2) : RcPresenceBackgroundColors[type3] || palette22("neutral", "l01")};
+      background: ${color2 ? getParsePaletteColor(color2) : palette22("neutral", "l01")};
       ${fakeBorder({
     inset: false,
     color: palette22("neutral", "l01"),
@@ -55409,6 +55384,31 @@ var PresenceContainer = styled_components_default.div`
     `;
 }}
 `;
+
+// ../juno-core/src/components/Presence/utils/RcPresenceUtils.tsx
+var RcPresenceSizes = {
+  xxsmall: [8, 1],
+  xsmall: [10, 1],
+  small: [10, 2],
+  medium: [12, 2],
+  large: [16, 2],
+  xlarge: [20, 2]
+};
+var presenceOn = palette22("presence", "available");
+var presenceBusy = palette22("presence", "busy");
+var presenceOff = palette22("presence", "invisible");
+var RcPresenceColors = {
+  available: presenceOn,
+  attended: presenceOn,
+  unAttended: presenceBusy,
+  onCall: presenceBusy,
+  inMeeting: presenceBusy,
+  DND: presenceBusy,
+  busy: presenceBusy,
+  unavailable: presenceOff,
+  notReady: presenceOff,
+  offline: presenceOff
+};
 
 // ../juno-core/src/components/Presence/Presence.tsx
 var _RcPresence = forwardRef637((inProps, ref2) => {
@@ -79947,7 +79947,7 @@ RcVirtualizedDivider.displayName = "RcVirtualizedDivider";
 // ../juno-core/src/components/Forms/Select/utils/SelectInput/SelectInput.tsx
 import React811, { forwardRef as forwardRef722, useState as useState42 } from "react";
 var import_react_is14 = __toModule(require_react_is2());
-var import_utils254 = __toModule(require_utils());
+var import_utils253 = __toModule(require_utils());
 function areEqualValues2(a2, b2) {
   if (typeof b2 === "object" && b2 !== null) {
     return a2 === b2;
@@ -80132,7 +80132,7 @@ var SelectInput3 = forwardRef722((props, ref2) => {
   const displayMultiple = [];
   let computeDisplay = false;
   let foundMatch = false;
-  if ((0, import_utils254.isFilled)({ value }) || displayEmpty) {
+  if ((0, import_utils253.isFilled)({ value }) || displayEmpty) {
     if (renderValue) {
       display = renderValue(value);
     } else {
