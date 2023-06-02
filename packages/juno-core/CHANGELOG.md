@@ -1,4 +1,11 @@
 
+## [2.36.0](https://github.com/ringcentral/juno/compare/juno-core-v2.35.5...juno-core-v2.36.0) (2023-06-02)
+
+
+### Features
+
+* **JMX-3428:** [SubMenu] support touch interaction on mobile ([641c74c](https://github.com/ringcentral/juno/commit/641c74cad1493fc0d72bacc8570b03521cfa354b))
+
 ### [2.35.5](https://github.com/ringcentral/juno/compare/juno-core-v2.35.4...juno-core-v2.35.5) (2023-05-31)
 
 
