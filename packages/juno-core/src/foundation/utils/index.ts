@@ -21,3 +21,4 @@ export * from './shallowEqual';
 export * from './styleParser';
 export * from './swapArrayLocs';
 export * from './withDeprecatedCheck';
+export * from './isTap';

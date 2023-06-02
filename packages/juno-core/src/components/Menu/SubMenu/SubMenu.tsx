@@ -22,6 +22,7 @@ import {
   useId,
   useRcPortalWindowContext,
   useThemeProps,
+  isTap,
 } from '../../../foundation';
 import { ClickAwayListener } from '../../ClickAwayListener';
 import { RcIcon } from '../../Icon';
@@ -83,6 +84,8 @@ const _RcSubMenu = forwardRef<any, RcSubMenuProps>(
       title: titleProp,
       disabled,
       onKeyDown,
+      onTouchStart,
+      onTouchEnd,
       onMouseEnter,
       onMouseLeave,
       MenuListProps,
@@ -102,55 +105,64 @@ const _RcSubMenu = forwardRef<any, RcSubMenuProps>(
     const menuListContext = useContext(RcMenuListContext);
     const menuContext = useContext(RcMenuContext);
     const subMenuContext = useContext(RcSubMenuContext);
+    const ignoreMouseEventRef = useRef(false);
 
     const { externalWindow } = useRcPortalWindowContext();
 
-    const handleClose = useEventCallback(
-      (e: {}, reason: RcSubMenuOnCloseReasonsType) => {
-        onClose?.(e, reason);
-        menuListContext?.onClose?.(e, reason);
-      },
-    );
+    const handleClose = (e: {}, reason: RcSubMenuOnCloseReasonsType) => {
+      onClose?.(e, reason);
+      menuListContext?.onClose?.(e, reason);
+    };
 
-    const handleItemKeyDown = useEventCallback(
-      (e: React.KeyboardEvent<HTMLLIElement>) => {
-        const { key } = e;
-        const { ArrowRight, Space, Enter } = a11yKeyboard;
+    const handleItemKeyDown = (e: React.KeyboardEvent<HTMLLIElement>) => {
+      const { key } = e;
+      const { ArrowRight, Space, Enter } = a11yKeyboard;
 
-        if ([ArrowRight, Space, Enter].includes(key)) {
-          openPopper(e);
-        }
-
-        onKeyDown?.(e);
-      },
-    );
-
-    const handleItemMouseEnter = useEventCallback(
-      (e: React.MouseEvent<HTMLLIElement>) => {
+      if ([ArrowRight, Space, Enter].includes(key)) {
         openPopper(e);
-        onMouseEnter?.(e);
-      },
-    );
+      }
 
-    const handleItemMouseLeave = useEventCallback(
-      (e: React.MouseEvent<HTMLLIElement>) => {
-        onMouseLeave?.(e);
+      onKeyDown?.(e);
+    };
 
-        if (!_popperRef.current || !e.currentTarget) {
-          return;
-        }
-        const { clientX } = e;
-        const { left, width } = _popperRef.current.getBoundingClientRect();
-        const isMoveToPopper =
-          left < clientX + POPPER_OFFSET &&
-          clientX - POPPER_OFFSET < left + width;
+    const handleItemTouchStart = (e: React.TouchEvent<HTMLLIElement>) => {
+      ignoreMouseEventRef.current = true;
+      onTouchStart?.(e);
+    };
 
-        if (!isMoveToPopper) {
-          closePopper();
-          handleClose(e, 'subMenuItemAnchorMouseLeave');
-        }
-      },
-    );
+    const handleItemTouchEnd = (e: React.TouchEvent<HTMLLIElement>) => {
+      if (isTap(e)) {
+        openPopper(e);
+      }
+      onTouchEnd?.(e);
+    };
+
+    const handleItemMouseEnter = (e: React.MouseEvent<HTMLLIElement>) => {
+      if (!ignoreMouseEventRef.current) {
+        openPopper(e);
+      } else {
+        ignoreMouseEventRef.current = false;
+      }
+      onMouseEnter?.(e);
+    };
+
+    const handleItemMouseLeave = (e: React.MouseEvent<HTMLLIElement>) => {
+      onMouseLeave?.(e);
+
+      if (!_popperRef.current || !e.currentTarget) {
+        return;
+      }
+      const { clientX } = e;
+      const { left, width } = _popperRef.current.getBoundingClientRect();
+      const isMoveToPopper =
+        left < clientX + POPPER_OFFSET &&
+        clientX - POPPER_OFFSET < left + width;
+
+      if (!isMoveToPopper) {
+        closePopper();
+        handleClose(e, 'subMenuItemAnchorMouseLeave');
+      }
+    };
 
     const classes = useMemo(
       () => combineClasses(RcSubMenuClasses, classesProp),
@@ -173,80 +185,74 @@ const _RcSubMenu = forwardRef<any, RcSubMenuProps>(
       ...restPopperProps
     } = PopperProps;
 
-    const openPopper = useEventCallback(
-      (event: React.MouseEvent | React.KeyboardEvent) => {
-        if (!disabled && event.currentTarget) {
-          setAnchorEl(event.currentTarget as HTMLElement);
-          setOpen(true);
-        }
-      },
-    );
+    const openPopper = (
+      event: React.MouseEvent | React.KeyboardEvent | React.TouchEvent,
+    ) => {
+      if (!disabled && event.currentTarget) {
+        setAnchorEl(event.currentTarget as HTMLElement);
+        setOpen(true);
+      }
+    };
 
-    const closePopper = useEventCallback(() => {
+    const closePopper = () => {
       setOpen(false);
       setAnchorEl(null);
-    });
+    };
 
     const handleCloseSubMenu = useEventCallback(() => {
       anchorEl?.focus();
       closePopper();
     });
 
-    const handlePopperKeyDown = useEventCallback(
-      (e: React.KeyboardEvent<HTMLDivElement>) => {
-        const { key } = e;
-        const { ArrowLeft, Escape, Tab } = a11yKeyboard;
+    const handlePopperKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+      const { key } = e;
+      const { ArrowLeft, Escape, Tab } = a11yKeyboard;
 
-        e.stopPropagation();
+      e.stopPropagation();
 
-        if (key === ArrowLeft) {
-          handleCloseSubMenu();
-          handleClose(e, 'subMenuItemArrowLeftKeyDown');
-        } else if ([Escape, Tab].includes(key)) {
-          const reason = key === Escape ? 'escapeKeyDown' : 'tabKeyDown';
-          handleCloseSubMenu();
-          menuContext.closeMenu(e, reason);
-          subMenuContext?.closeSubMenu?.(e, reason);
-          handleClose(e, reason);
-        }
+      if (key === ArrowLeft) {
+        handleCloseSubMenu();
+        handleClose(e, 'subMenuItemArrowLeftKeyDown');
+      } else if ([Escape, Tab].includes(key)) {
+        const reason = key === Escape ? 'escapeKeyDown' : 'tabKeyDown';
+        handleCloseSubMenu();
+        menuContext.closeMenu(e, reason);
+        subMenuContext?.closeSubMenu?.(e, reason);
+        handleClose(e, reason);
+      }
 
-        onPopperKeyDown?.(e);
-      },
-    );
+      onPopperKeyDown?.(e);
+    };
 
-    const handlePopperClickAway = useEventCallback(
-      (e: React.MouseEvent<Document, MouseEvent>) => {
-        if (
-          anchorEl &&
-          e.target &&
-          !anchorEl.contains(e.target as HTMLElement)
-        ) {
-          closePopper();
-          handleClose(e, 'backdropClick');
-        }
-      },
-    );
-
-    const handlePopperMouseLeave = useEventCallback(
-      (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    const handlePopperClickAway = (
+      e: React.MouseEvent<Document, MouseEvent>,
+    ) => {
+      if (anchorEl && e.target && !anchorEl.contains(e.target as HTMLElement)) {
         closePopper();
-        onPopperMouseLeave?.(e);
+        handleClose(e, 'backdropClick');
+      }
+    };
 
-        if (!anchorEl || !e.currentTarget) {
-          return;
-        }
+    const handlePopperMouseLeave = (
+      e: React.MouseEvent<HTMLDivElement, MouseEvent>,
+    ) => {
+      closePopper();
+      onPopperMouseLeave?.(e);
 
-        const { clientX } = e;
-        const { left, width } = anchorEl.getBoundingClientRect();
-        const isMoveToAnchor =
-          left < clientX + POPPER_OFFSET &&
-          clientX - POPPER_OFFSET < left + width;
+      if (!anchorEl || !e.currentTarget) {
+        return;
+      }
 
-        if (!isMoveToAnchor) {
-          handleClose(e, 'popperMouseLeave');
-        }
-      },
-    );
+      const { clientX } = e;
+      const { left, width } = anchorEl.getBoundingClientRect();
+      const isMoveToAnchor =
+        left < clientX + POPPER_OFFSET &&
+        clientX - POPPER_OFFSET < left + width;
+
+      if (!isMoveToAnchor) {
+        handleClose(e, 'popperMouseLeave');
+      }
+    };
 
     useLayoutEffect(() => {
       if (
@@ -324,6 +330,8 @@ const _RcSubMenu = forwardRef<any, RcSubMenuProps>(
           disabled={disabled}
           classes={classes}
           onKeyDown={handleItemKeyDown}
+          onTouchStart={handleItemTouchStart}
+          onTouchEnd={handleItemTouchEnd}
           onMouseEnter={handleItemMouseEnter}
           onMouseLeave={handleItemMouseLeave}
           idRef={menuItemIdRef}
