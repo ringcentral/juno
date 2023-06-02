@@ -5257,6 +5257,7 @@ __export(src_exports2, {
   isOutOfRange: () => isOutOfRange,
   isRcElement: () => isRcElement,
   isRef: () => isRef,
+  isTap: () => isTap,
   isTouchEvent: () => isTouchEvent,
   isUrl: () => isUrl,
   isWebKit154: () => isWebKit154,
@@ -47036,6 +47037,7 @@ __export(juno_core_exports, {
   isOutOfRange: () => isOutOfRange,
   isRcElement: () => isRcElement,
   isRef: () => isRef,
+  isTap: () => isTap,
   isTouchEvent: () => isTouchEvent,
   isUrl: () => isUrl,
   isWebKit154: () => isWebKit154,
@@ -47429,6 +47431,7 @@ __export(src_exports, {
   isOutOfRange: () => isOutOfRange,
   isRcElement: () => isRcElement,
   isRef: () => isRef,
+  isTap: () => isTap,
   isTouchEvent: () => isTouchEvent,
   isUrl: () => isUrl,
   isWebKit154: () => isWebKit154,
@@ -49944,6 +49947,16 @@ var swapArrayLocs = (arr, index1, index22) => {
   arr[index1] = arr[index22];
   arr[index22] = temp;
   return arr;
+};
+
+// ../juno-core/src/foundation/utils/isTap.ts
+var isTap = (event) => {
+  if (event.touches.length < 2 && event.changedTouches.length < 2) {
+    const touch = event.touches[0] || event.changedTouches[0];
+    const elm = document.elementFromPoint(touch.clientX, touch.clientY);
+    return event.currentTarget === elm || event.currentTarget.contains(elm);
+  }
+  return false;
 };
 
 // ../juno-core/src/foundation/hooks/useEventListener/useEventListener.ts
@@ -80635,6 +80648,8 @@ var _RcSubMenu = forwardRef725((inProps, ref2) => {
     title: titleProp,
     disabled: disabled3,
     onKeyDown,
+    onTouchStart,
+    onTouchEnd,
     onMouseEnter,
     onMouseLeave,
     MenuListProps,
@@ -80651,24 +80666,39 @@ var _RcSubMenu = forwardRef725((inProps, ref2) => {
   const menuListContext = useContext32(RcMenuListContext);
   const menuContext = useContext32(RcMenuContext);
   const subMenuContext = useContext32(RcSubMenuContext);
+  const ignoreMouseEventRef = useRef98(false);
   const { externalWindow } = useRcPortalWindowContext();
-  const handleClose = useEventCallback2((e2, reason) => {
+  const handleClose = (e2, reason) => {
     onClose?.(e2, reason);
     menuListContext?.onClose?.(e2, reason);
-  });
-  const handleItemKeyDown = useEventCallback2((e2) => {
+  };
+  const handleItemKeyDown = (e2) => {
     const { key } = e2;
     const { ArrowRight: ArrowRight2, Space, Enter } = a11yKeyboard;
     if ([ArrowRight2, Space, Enter].includes(key)) {
       openPopper(e2);
     }
     onKeyDown?.(e2);
-  });
-  const handleItemMouseEnter = useEventCallback2((e2) => {
-    openPopper(e2);
+  };
+  const handleItemTouchStart = (e2) => {
+    ignoreMouseEventRef.current = true;
+    onTouchStart?.(e2);
+  };
+  const handleItemTouchEnd = (e2) => {
+    if (isTap(e2)) {
+      openPopper(e2);
+    }
+    onTouchEnd?.(e2);
+  };
+  const handleItemMouseEnter = (e2) => {
+    if (!ignoreMouseEventRef.current) {
+      openPopper(e2);
+    } else {
+      ignoreMouseEventRef.current = false;
+    }
     onMouseEnter?.(e2);
-  });
-  const handleItemMouseLeave = useEventCallback2((e2) => {
+  };
+  const handleItemMouseLeave = (e2) => {
     onMouseLeave?.(e2);
     if (!_popperRef.current || !e2.currentTarget) {
       return;
@@ -80680,7 +80710,7 @@ var _RcSubMenu = forwardRef725((inProps, ref2) => {
       closePopper();
       handleClose(e2, "subMenuItemAnchorMouseLeave");
     }
-  });
+  };
   const classes = useMemo79(() => combineClasses(RcSubMenuClasses, classesProp), [classesProp]);
   const title = useMemo79(() => typeof titleProp === "string" ? /* @__PURE__ */ React814.createElement(RcListItemText, null, titleProp) : titleProp, [titleProp]);
   const {
@@ -80688,21 +80718,21 @@ var _RcSubMenu = forwardRef725((inProps, ref2) => {
     onMouseLeave: onPopperMouseLeave,
     ...restPopperProps
   } = PopperProps;
-  const openPopper = useEventCallback2((event) => {
+  const openPopper = (event) => {
     if (!disabled3 && event.currentTarget) {
       setAnchorEl(event.currentTarget);
       setOpen(true);
     }
-  });
-  const closePopper = useEventCallback2(() => {
+  };
+  const closePopper = () => {
     setOpen(false);
     setAnchorEl(null);
-  });
+  };
   const handleCloseSubMenu = useEventCallback2(() => {
     anchorEl?.focus();
     closePopper();
   });
-  const handlePopperKeyDown = useEventCallback2((e2) => {
+  const handlePopperKeyDown = (e2) => {
     const { key } = e2;
     const { ArrowLeft: ArrowLeft3, Escape, Tab: Tab3 } = a11yKeyboard;
     e2.stopPropagation();
@@ -80717,14 +80747,14 @@ var _RcSubMenu = forwardRef725((inProps, ref2) => {
       handleClose(e2, reason);
     }
     onPopperKeyDown?.(e2);
-  });
-  const handlePopperClickAway = useEventCallback2((e2) => {
+  };
+  const handlePopperClickAway = (e2) => {
     if (anchorEl && e2.target && !anchorEl.contains(e2.target)) {
       closePopper();
       handleClose(e2, "backdropClick");
     }
-  });
-  const handlePopperMouseLeave = useEventCallback2((e2) => {
+  };
+  const handlePopperMouseLeave = (e2) => {
     closePopper();
     onPopperMouseLeave?.(e2);
     if (!anchorEl || !e2.currentTarget) {
@@ -80736,7 +80766,7 @@ var _RcSubMenu = forwardRef725((inProps, ref2) => {
     if (!isMoveToAnchor) {
       handleClose(e2, "popperMouseLeave");
     }
-  });
+  };
   useLayoutEffect31(() => {
     if (open && menuListContext.menuListId !== "" && menuListContext.focusedMenuItemId !== menuItemIdRef.current) {
       handleCloseSubMenu();
@@ -80784,6 +80814,8 @@ var _RcSubMenu = forwardRef725((inProps, ref2) => {
     disabled: disabled3,
     classes,
     onKeyDown: handleItemKeyDown,
+    onTouchStart: handleItemTouchStart,
+    onTouchEnd: handleItemTouchEnd,
     onMouseEnter: handleItemMouseEnter,
     onMouseLeave: handleItemMouseLeave,
     idRef: menuItemIdRef,
@@ -85106,6 +85138,7 @@ export {
   isOutOfRange,
   isRcElement,
   isRef,
+  isTap,
   isTouchEvent,
   isUrl,
   isWebKit154,
