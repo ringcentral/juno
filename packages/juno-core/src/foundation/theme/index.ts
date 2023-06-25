@@ -7,3 +7,4 @@ export * from './paletteProp.type';
 export * from './theme.type';
 export * from './typography.type';
 export * from './useThemeProps';
+export * from './DefaultTheme';

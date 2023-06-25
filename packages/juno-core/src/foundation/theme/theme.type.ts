@@ -170,9 +170,7 @@ import radius from './assets/radius.json';
 import shape from './assets/shape.json';
 import zIndex from './assets/zIndex.json';
 import { RcTypographyType } from './typography.type';
-
-/** that theme provide user to custom with */
-export interface DefaultTheme {}
+import { DefaultTheme } from './DefaultTheme';
 
 /** inner for make `(DefaultTheme & ForExtendTheme)['palette']` work with ts */
 type ForExtendTheme = { palette: {} };

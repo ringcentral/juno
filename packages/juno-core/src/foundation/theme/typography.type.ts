@@ -1,6 +1,7 @@
 import { Theme as MuiTheme } from '@material-ui/core/styles';
 
 import typography from './assets/typography.json';
+import { DefaultTheme } from './DefaultTheme';
 
 type RcTypographyPickFields =
   | 'fontFamily'
@@ -27,22 +28,25 @@ export type RcTypographyKeys =
   | 'body1'
   | 'caption2'
   | 'caption1'
-  | 'inherit';
+  | 'inherit'
+  | keyof ExtensionTypography;
 
 export type RcTypographyAddition = Pick<
   typeof typography,
   RcTypographyPickFields
 >;
 
-export type RcTypographies = Record<
-  RcTypographyKeys,
-  {
-    fontSize: string | number;
-    fontWeight: number | number;
-    lineHeight: string | number;
-  }
->;
+export type RcTypographyDetail = {
+  fontSize: string | number;
+  fontWeight: number;
+  lineHeight: string | number;
+};
+
+export type RcTypographies = Record<RcTypographyKeys, RcTypographyDetail>;
+
+type ExtensionTypography = (DefaultTheme & { typography: {} })['typography'];
 
 export type RcTypographyType = RcTypographyAddition &
+  ExtensionTypography &
   RcTypographies &
   MuiTheme['typography'];
