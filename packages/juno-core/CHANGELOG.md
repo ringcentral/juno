@@ -1,4 +1,11 @@
 
+### [2.36.1](https://github.com/ringcentral/juno/compare/juno-core-v2.36.0...juno-core-v2.36.1) (2023-06-26)
+
+
+### Bug Fixes
+
+* **fix-typography-extend:** [DefaultTheme] fix typography type extension ([68680ba](https://github.com/ringcentral/juno/commit/68680ba9eea44524fdfda7ff44d55d8a9ead85bd))
+
 ## [2.36.0](https://github.com/ringcentral/juno/compare/juno-core-v2.35.5...juno-core-v2.36.0) (2023-06-02)
 
 
