@@ -92,7 +92,7 @@ const _RcText = forwardRef<any, RcTextProps>((inProps, ref) => {
  *  and the default wrap is noWrap,
  *  also bring with show title only when overflow
  */
-const RcText = styled(_RcText)`
+const RcText = styled<RcTextProps>(_RcText)`
   ${textStyle}
 `;
 

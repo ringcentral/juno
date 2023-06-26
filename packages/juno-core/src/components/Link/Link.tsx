@@ -103,7 +103,7 @@ const _RcLink = forwardRef<any, RcLinkProps>((inProps: RcLinkProps, ref) => {
  * @release
  * that onClick event will be trigger with `enter` like `<a>`, when have custom onKeydown event, that will be cover by outside
  * */
-const RcLink = styled(_RcLink)`
+const RcLink = styled<RcLinkProps>(_RcLink)`
   ${LinkStyle}
 `;
 

@@ -73,7 +73,9 @@ const _RcTypography = forwardRef<any, RcTypographyProps>(
 );
 
 /** @release */
-const RcTypography = styled(withTooltip(_RcTypography))`
+const RcTypography = styled<WithTooltipProps<RcTypographyProps>>(
+  withTooltip(_RcTypography),
+)`
   ${TypographyStyle}
 `;
 
