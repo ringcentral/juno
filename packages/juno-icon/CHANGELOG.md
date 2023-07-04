@@ -1,4 +1,11 @@
 
+## [1.46.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.45.0...juno-icon-v1.46.0) (2023-07-04)
+
+
+### Features
+
+* **Icon:** add 18 thrid party icons ([082506f](https://github.com/ringcentral/juno/commit/082506f2f92b452cf1d08b9bfe43a004e82f6983))
+
 ## [1.45.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.44.0...juno-icon-v1.45.0) (2023-05-24)
 
 
