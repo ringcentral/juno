@@ -53518,7 +53518,16 @@ function typographyProp(name, key) {
   return ({ theme }) => {
     const themeOfTypography = theme.typography[name];
     if (typeof themeOfTypography !== "object") {
-      throw new Error(`Unexpected typography name: ${name}`);
+      if (true) {
+        throw new Error(`Unexpected typography name: ${name}`);
+      } else {
+        logInDev2({
+          message: `Unexpected typography name: ${name}`,
+          component: "typographyProp",
+          level: "warn"
+        });
+        return void 0;
+      }
     }
     return themeOfTypography[key];
   };
@@ -55202,9 +55211,9 @@ __export(Transition_exports, {
   reflow: () => reflow3,
   setTransitionStyle: () => setTransitionStyle
 });
-var import_utils100 = __toModule(require_utils2());
+var import_utils101 = __toModule(require_utils2());
 __reExport(Transition_exports, __toModule(require_transitions()));
-var reflow3 = import_utils100.reflow;
+var reflow3 = import_utils101.reflow;
 function getTransitionProps2(props, options) {
   const { timeout: timeout2, easing: easing3, style: style3 = {} } = props;
   return {
@@ -80284,7 +80293,7 @@ RcVirtualizedDivider.displayName = "RcVirtualizedDivider";
 // ../juno-core/src/components/Forms/Select/utils/SelectInput/SelectInput.tsx
 import React829, { forwardRef as forwardRef740, useState as useState42 } from "react";
 var import_react_is14 = __toModule(require_react_is2());
-var import_utils253 = __toModule(require_utils());
+var import_utils254 = __toModule(require_utils());
 function areEqualValues2(a2, b2) {
   if (typeof b2 === "object" && b2 !== null) {
     return a2 === b2;
@@ -80469,7 +80478,7 @@ var SelectInput3 = forwardRef740((props, ref2) => {
   const displayMultiple = [];
   let computeDisplay = false;
   let foundMatch = false;
-  if ((0, import_utils253.isFilled)({ value }) || displayEmpty) {
+  if ((0, import_utils254.isFilled)({ value }) || displayEmpty) {
     if (renderValue) {
       display = renderValue(value);
     } else {
