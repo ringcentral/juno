@@ -1,21 +1,22 @@
 import React, { FunctionComponent, useEffect, useMemo, useState } from 'react';
 
 import {
+  css,
   palette2,
-  radius,
   RcBox,
   RcCircularProgress,
   RcIcon,
+  RcSwitch,
   RcText,
   RcTextField,
   RcTypography,
   styled,
   useEventCallback,
-  css,
 } from '@ringcentral/juno';
 import * as allIcons from '@ringcentral/juno-icon';
 import { Warning } from '@ringcentral/juno-icon';
 import localIcons from '@ringcentral/juno-icon/devUtils/iconSymbol';
+import localJsonIcons from '@ringcentral/juno-icon/devUtils/iconJsonSymbol.json';
 import { Meta } from '@storybook/react';
 
 import { SelectionSvgResponse } from './SelectionSvgResponse';
@@ -94,6 +95,13 @@ const getRemoteSvgFile = async () => {
   }
 };
 
+function getIconList(response: SelectionSvgResponse) {
+  const iconNames = response.icons.map((icon) => {
+    return icon.properties.name;
+  });
+  return iconNames;
+}
+
 const getRemoteSelectionJsonFile = async () => {
   try {
     const res = await fetch(
@@ -101,10 +109,7 @@ const getRemoteSelectionJsonFile = async () => {
     );
     const response: SelectionSvgResponse = await res.json();
 
-    const iconNames = response.icons.map((icon) => {
-      return icon.properties.name;
-    });
-    return iconNames;
+    return getIconList(response);
   } catch (e) {
     return null;
   }
@@ -127,8 +132,11 @@ const insertSVG = (data: string) => {
   }
 };
 
+const localIconList = getIconList(localJsonIcons as SelectionSvgResponse);
+
 export const IconList: FunctionComponent<IconListProps> = () => {
   const [remoteIcons, setRemoteIcons] = useState<string[]>([]);
+  const [showMode, setShowMode] = useState<'local' | 'remote'>('local');
 
   const [loading, setLoading] = useState(true);
   const [loadFail, setLoadFail] = useState(false);
@@ -137,8 +145,10 @@ export const IconList: FunctionComponent<IconListProps> = () => {
   const resultIcons = useMemo(() => {
     const _filterText = filterText.toLocaleLowerCase().replace(/_|-/g, '');
 
+    const showIcons = showMode === 'local' ? localIconList : remoteIcons;
+
     return filterText
-      ? remoteIcons.filter((x) => {
+      ? showIcons.filter((x) => {
           function isInclude(value: string) {
             const _value = value.toLocaleLowerCase().replace(/_|-/g, '');
 
@@ -147,8 +157,8 @@ export const IconList: FunctionComponent<IconListProps> = () => {
 
           return isInclude(x);
         })
-      : remoteIcons;
-  }, [filterText, remoteIcons]);
+      : showIcons;
+  }, [filterText, showMode, remoteIcons]);
 
   const getRemoteIconList = async () => {
     const [value, remoteSelectionIcons] = await Promise.all([
@@ -187,6 +197,13 @@ export const IconList: FunctionComponent<IconListProps> = () => {
       <h3>
         latest icon number:{' '}
         {loading ? <RcCircularProgress /> : remoteIcons.length}
+        <span style={{ paddingLeft: '1em' }}>{''}</span>
+        <RcSwitch
+          onChange={(e, checked) => {
+            setShowMode(checked ? 'remote' : 'local');
+          }}
+          label="Show Remote"
+        />
       </h3>
       <p>
         <RcTypography color="success.f02" variant="body1" component="span">
@@ -219,7 +236,7 @@ export const IconList: FunctionComponent<IconListProps> = () => {
           onChange={handleChange}
         />
       </div>
-      {!loading && (
+      {!(loading && showMode === 'remote') && (
         <>
           {loadFail && (
             <RcBox display="flex" alignItems="center" clone marginBottom="1em">
