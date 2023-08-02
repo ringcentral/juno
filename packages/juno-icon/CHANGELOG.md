@@ -1,4 +1,11 @@
 
+## [1.47.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.46.0...juno-icon-v1.47.0) (2023-08-02)
+
+
+### Features
+
+* **Icon:** add new icons CcLSp, HideSp, ParkedCallBorder, StopSp; update icon ExpandSp, ReportAnIssue ([a4c684f](https://github.com/ringcentral/juno/commit/a4c684f05cdbb4382112e3f063ce740854e67841))
+
 ## [1.46.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.45.0...juno-icon-v1.46.0) (2023-07-04)
 
 
