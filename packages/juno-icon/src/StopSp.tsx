@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SVGProps, Ref, forwardRef, memo } from 'react';
 
-const ExpandSp = memo(
+const StopSp = memo(
   forwardRef((props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
     <svg
       viewBox="0 0 32 32"
@@ -9,10 +9,10 @@ const ExpandSp = memo(
       ref={ref}
       {...props}
     >
-      <path d="M4.8 3.2v25.6H2.4V3.2h2.4zm24.8 11.6H10.139l8.221-8.219L16.68 4.8 5.6 16l11.2 11.2 1.68-1.699-8.341-8.301H29.6v-2.4z" />
+      <path d="M16.001 8C8.824 8 8 8.822 8 16s.824 8 8.001 8c7.086 0 7.984-.858 7.999-7.655v-.689c-.014-6.798-.913-7.655-7.999-7.655z" />
     </svg>
   )),
 );
-ExpandSp.displayName = 'ExpandSp';
-ExpandSp['iconName'] = 'expand_sp';
-export default ExpandSp;
+StopSp.displayName = 'StopSp';
+StopSp['iconName'] = 'stop_sp';
+export default StopSp;
