@@ -9,16 +9,22 @@ import {
   useThemeProps,
 } from '../../foundation';
 import { PopperStyle } from './styles';
+import { fixOffsetsModifer } from './modifiers';
 
 type RcPopperProps = {} & RcBaseProps<ComponentProps<typeof MuiPopper>>;
 
 const _RcPopper = forwardRef<any, RcPopperProps>((inProps, ref) => {
   const props = useThemeProps({ props: inProps, name: 'RcPopper' });
-  const { children, ...rest } = props;
+  const { children, modifiers, ...rest } = props;
   const { externalWindow } = useRcPortalWindowContext();
 
   return (
-    <MuiPopper container={externalWindow?.document.body} {...rest} ref={ref}>
+    <MuiPopper
+      container={externalWindow?.document.body}
+      {...rest}
+      modifiers={{ fixOffsets: fixOffsetsModifer, ...modifiers }}
+      ref={ref}
+    >
       {children}
     </MuiPopper>
   );
