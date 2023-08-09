@@ -22,7 +22,6 @@ import {
   RcVirtualizedMenuListProps,
   RcVirtualizedMenuListRef,
 } from './VirtualizedMenuList';
-import { useNextFrame } from './useNextFrame';
 import { PopoverActions } from '@material-ui/core';
 
 type RcVirtualizedMenuProps = {
@@ -120,8 +119,6 @@ const _RcVirtualizedMenu = forwardRef<any, RcVirtualizedMenuProps>(
       },
     );
 
-    const runInNextFrame = useNextFrame();
-
     return (
       <RcPopover
         ref={handleRef}
@@ -149,8 +146,8 @@ const _RcVirtualizedMenu = forwardRef<any, RcVirtualizedMenuProps>(
             ...VirtuosoProps,
             totalListHeightChanged: (height) => {
               VirtuosoProps?.totalListHeightChanged?.(height);
-
-              runInNextFrame(() => {
+              // fix for popover position incorrect issue
+              queueMicrotask(() => {
                 popoverAction.current?.updatePosition();
               });
             },
