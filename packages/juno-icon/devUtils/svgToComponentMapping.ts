@@ -9,6 +9,8 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  DelegatedLines: 'Delegated-lines',
+  ThreadReply: 'thread_reply',
   StopSp: 'stop_sp',
   CcLSp: 'cc_l_sp',
   HideSp: 'hide_sp',
