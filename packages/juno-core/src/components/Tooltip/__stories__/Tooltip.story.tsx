@@ -25,7 +25,6 @@ import {
   RcTypography,
   styled,
   useTheme,
-  isWebKit154,
 } from '@ringcentral/juno';
 import { Add, Videocam } from '@ringcentral/juno-icon';
 import {
@@ -61,33 +60,23 @@ const isTestEnv = (window as any).TEST_ENV;
 
 export const Tooltip: Story<TooltipProps> = ({ children, ...args }) => {
   return (
-    <>
+    <RcBox textAlign="center">
+      <RcTooltip {...args}>
+        <RcButton>Tooltip when hover or keyboard focus</RcButton>
+      </RcTooltip>
       {!isTestEnv && (
         <>
-          <Title>current is {isWebKit154 ? '' : 'not'} webkit 15.4~15.9</Title>
-          <Title variant="body1">{navigator.userAgent}</Title>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <RcTooltip {...args} title="I'm tooltip" open>
+            <RcTypography color="neutral.f06">tooltip always open</RcTypography>
+          </RcTooltip>
         </>
       )}
-      <RcBox textAlign="center">
-        <RcTooltip {...args}>
-          <RcButton>Tooltip when hover or keyboard focus</RcButton>
-        </RcTooltip>
-        {!isTestEnv && (
-          <>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <RcTooltip {...args} title="I'm tooltip" open>
-              <RcTypography color="neutral.f06">
-                tooltip always open
-              </RcTypography>
-            </RcTooltip>
-          </>
-        )}
-      </RcBox>
-    </>
+    </RcBox>
   );
 };
 

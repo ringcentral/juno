@@ -1,7 +1,6 @@
 import styled from './styled-components';
 
 export * from './config';
-export * from './isWebKit154';
 export * from './contexts';
 export * from './hoc';
 export * from './hooks';

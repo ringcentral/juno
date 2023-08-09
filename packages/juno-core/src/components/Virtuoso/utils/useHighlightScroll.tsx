@@ -135,8 +135,6 @@ export function modifyVlScrollerStyle(
   position: 'absolute' | 'unset' = 'absolute',
 ) {
   if (scrollElm) {
-    scrollElm.style.transition = 'all 1ms cubic-bezier(0.4, 0, 0.2, 1) 0ms';
-
     if (position) {
       const viewPortElm = scrollElm.firstChild as HTMLElement;
 

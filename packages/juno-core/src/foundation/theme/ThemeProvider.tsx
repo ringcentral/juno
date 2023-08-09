@@ -15,11 +15,6 @@ import {
 
 import { useResultRef } from '../hooks';
 import {
-  getWebKit154Theme,
-  GlobalFixWebKitStyle,
-  isWebKit154,
-} from '../isWebKit154';
-import {
   ThemeProvider as StyledThemeProvider,
   useTheme,
 } from '../styled-components';
@@ -29,13 +24,6 @@ import { RcThemeInput } from './theme.type';
 type SubThemeProviderProps = {
   /** custom theme */
   theme?: RcThemeInput;
-  // TODO: that should be remove after safari 16.x
-  /**
-   * workaround for fix safari 15.4~.9 bug
-   *
-   * use for when your environment need that fix but userAgent not have safari
-   */
-  fixWebKit154?: boolean;
   children?: ReactNode;
 };
 
@@ -56,26 +44,17 @@ const NestedThemeContext = createContext(false);
 const SubThemeProvider: FunctionComponent<SubThemeProviderProps> = ({
   theme: themeProp,
   children,
-  fixWebKit154,
 }) => {
   const parentTheme = useTheme();
 
   const isHaveParentRcTheme = parentTheme.palette?.content?.brand;
 
-  // TODO: can be remove after safari fix that bug, maybe after v16
-  const theme = getWebKit154Theme(
-    !themeProp && isHaveParentRcTheme ? parentTheme : createTheme(themeProp),
-    fixWebKit154,
-  );
+  const theme =
+    !themeProp && isHaveParentRcTheme ? parentTheme : createTheme(themeProp);
 
   return (
     <MuiThemeProvider theme={theme}>
-      <StyledThemeProvider theme={theme}>
-        <>
-          {(fixWebKit154 ?? isWebKit154) && <GlobalFixWebKitStyle />}
-          {children}
-        </>
-      </StyledThemeProvider>
+      <StyledThemeProvider theme={theme}>{children}</StyledThemeProvider>
     </MuiThemeProvider>
   );
 };
