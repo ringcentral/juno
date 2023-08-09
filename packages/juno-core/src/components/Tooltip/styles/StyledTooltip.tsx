@@ -42,6 +42,13 @@ const horizontalMarginTopAndMarginBottom = css`
 
 export const tooltipStyle: RcThemedStyled<RcTooltipProps, any> = () => {
   return css`
+    ${
+      // The preventOverflowModifier of popperjs has 5px padding.
+      // So need set max-width to calc(100% - 10px) to prevent overflow when the tooltip is too long.
+      ''
+    }
+    max-width: calc(100% - 10px);
+
     .${RcTooltipClasses.tooltip} {
       ${tooltipTypography};
       background-color: ${tooltipColor};

@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip style check, use as to check all style, because that issue with Mui Grow renders correctly 1`] = `
+.c0 {
+  max-width: calc(100% - 10px);
+}
+
 .c0 .RcTooltip-tooltip {
   font-size: 0.9375rem;
   font-weight: 400;
