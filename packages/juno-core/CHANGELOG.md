@@ -1,4 +1,11 @@
 
+### [2.36.5](https://github.com/ringcentral/juno/compare/juno-core-v2.36.4...juno-core-v2.36.5) (2023-08-10)
+
+
+### Bug Fixes
+
+* **Tooltip:** Fix tooltip position when it is near the edge of the screen ([62580df](https://github.com/ringcentral/juno/commit/62580dfb9589e7a03926fca5dfcb3cbf7747227b))
+
 ### [2.36.4](https://github.com/ringcentral/juno/compare/juno-core-v2.36.3...juno-core-v2.36.4) (2023-08-03)
 
 
