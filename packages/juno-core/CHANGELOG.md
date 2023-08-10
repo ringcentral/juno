@@ -1,4 +1,20 @@
 
+## [2.37.0](https://github.com/ringcentral/juno/compare/juno-core-v2.36.5...juno-core-v2.37.0) (2023-08-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* **Browser compatibility:** remove prop fixWebKit154 of ThemeProvider; remove utils about safari 15.4  animation issue
+
+### Features
+
+* **Browser compatibility:** remove hack fixing about safari 15.4  animation issue ([e2818ac](https://github.com/ringcentral/juno/commit/e2818acb8ed9554e39a0ca582da4dd0f1827e434))
+
+
+### Bug Fixes
+
+* **VirtualizedMenu:** Fix menu position issue ([0dd5121](https://github.com/ringcentral/juno/commit/0dd51212c28480daf012c5bb6c0f4fafb284253e))
+
 ### [2.36.5](https://github.com/ringcentral/juno/compare/juno-core-v2.36.4...juno-core-v2.36.5) (2023-08-10)
 
 
