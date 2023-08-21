@@ -1,4 +1,15 @@
 
+## [1.49.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.48.0...juno-icon-v1.49.0) (2023-08-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* **Icon:** rename DelegatedLines to AvatarDelegatedLines; rename icon-thread_reply.svg to icon-thread-reply.svg;
+
+### Features
+
+* **Icon:** add new icons Reminder, ReminderBorder; rename DelegatedLines to AvatarDelegatedLines; rename icon-thread_reply.svg to icon-thread-reply.svg ([0ab2118](https://github.com/ringcentral/juno/commit/0ab21185ae5d84f7c34f62faffca0be17ab39812))
+
 ## [1.48.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.47.0...juno-icon-v1.48.0) (2023-08-10)
 
 
