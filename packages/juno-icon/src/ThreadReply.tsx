@@ -14,5 +14,5 @@ const ThreadReply = memo(
   )),
 );
 ThreadReply.displayName = 'ThreadReply';
-ThreadReply['iconName'] = 'thread_reply';
+ThreadReply['iconName'] = 'thread-reply';
 export default ThreadReply;
