@@ -1,4 +1,11 @@
 
+## [1.50.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.49.0...juno-icon-v1.50.0) (2023-08-31)
+
+
+### Features
+
+* **Icon:** add new icon ThreadReplySnackbar; update icon AvatarDelegatedLines ([3344a6d](https://github.com/ringcentral/juno/commit/3344a6dd3daa13720d5496f7b990e0153f4ae8a2))
+
 ## [1.49.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.48.0...juno-icon-v1.49.0) (2023-08-21)
 
 
