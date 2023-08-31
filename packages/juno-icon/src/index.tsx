@@ -480,6 +480,7 @@ export { default as TeamDefault } from './TeamDefault';
 export { default as Team } from './Team';
 export { default as Text } from './Text';
 export { default as Theme } from './Theme';
+export { default as ThreadReplySnackbar } from './ThreadReplySnackbar';
 export { default as ThreadReply } from './ThreadReply';
 export { default as ThumbupBorder } from './ThumbupBorder';
 export { default as Thumbup } from './Thumbup';
