@@ -68,7 +68,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c4 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -118,7 +118,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c10 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -190,7 +190,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c21 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -240,7 +240,7 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 
 .c24 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -1975,10 +1975,10 @@ exports[`Storyshots 🚀 Cleanup Components/SplitButton/SplitButton Examples(Ico
 }
 
 .c1 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #666666;
 }
 

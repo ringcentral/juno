@@ -3,7 +3,7 @@
 exports[`Storyshots 🚀 Cleanup Components/Tooltip Tooltip 1`] = `
 .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -110,7 +110,7 @@ exports[`Storyshots 🚀 Cleanup Components/Tooltip Tooltip With Custom Color 1`
 Array [
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -219,7 +219,7 @@ Array [
   </button>,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -435,7 +435,7 @@ Array [
   </h5>,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -1437,7 +1437,7 @@ Array [
 
 .c2 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -1721,7 +1721,7 @@ Array [
 
 .c1 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -2006,7 +2006,7 @@ Array [
 <br />,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -2285,7 +2285,7 @@ Array [
 <br />,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -2439,7 +2439,7 @@ exports[`Storyshots 🚀 Cleanup Components/Tooltip Tooltip With Force Hide 1`] 
 Array [
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -2557,7 +2557,7 @@ Array [
   </button>,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -2746,10 +2746,10 @@ Array [
 <br />,
   .c0 {
   color: #121212;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c0 .RcFormControlLabel-disabled {
@@ -2921,7 +2921,7 @@ Array [
 exports[`Storyshots 🚀 Cleanup Components/Tooltip Tooltip With Interactive Link 1`] = `
 .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;

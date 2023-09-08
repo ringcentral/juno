@@ -60,10 +60,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemAvatar ListItemAvatar 
   display: -ms-flexbox;
   display: flex;
   cursor: default;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -128,10 +128,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemAvatar ListItemAvatar 
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 

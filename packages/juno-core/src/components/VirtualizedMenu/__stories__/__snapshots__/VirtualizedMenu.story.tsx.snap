@@ -4,7 +4,7 @@ exports[`Storyshots 🚀 Cleanup Components/VirtualizedMenu Menu Examples 1`] = 
 Array [
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -233,7 +233,7 @@ exports[`Storyshots 🚀 Cleanup Components/VirtualizedMenu Virtualized Menu 1`]
 Array [
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -351,7 +351,7 @@ Array [
 <br />,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -469,7 +469,7 @@ Array [
 <br />,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;

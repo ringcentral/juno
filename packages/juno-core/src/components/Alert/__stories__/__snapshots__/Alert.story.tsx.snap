@@ -13,10 +13,10 @@ exports[`Storyshots 🚀 Cleanup Components/Alert Alert 1`] = `
 }
 
 .c0 .RcAlert-message {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
   text-align: left;
   -webkit-flex: 1 1 auto;
@@ -86,10 +86,10 @@ Array [
 }
 
 .c0 .RcAlert-message {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
   text-align: left;
   -webkit-flex: 1 1 auto;
@@ -156,10 +156,10 @@ Array [
 }
 
 .c0 .RcAlert-message {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #BE3933;
   text-align: left;
   -webkit-flex: 1 1 auto;
@@ -226,10 +226,10 @@ Array [
 }
 
 .c0 .RcAlert-message {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #32773B;
   text-align: left;
   -webkit-flex: 1 1 auto;
@@ -296,10 +296,10 @@ Array [
 }
 
 .c0 .RcAlert-message {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #896219;
   text-align: left;
   -webkit-flex: 1 1 auto;
@@ -366,10 +366,10 @@ Array [
 }
 
 .c0 .RcAlert-message {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
   text-align: left;
   -webkit-flex: 1 1 auto;

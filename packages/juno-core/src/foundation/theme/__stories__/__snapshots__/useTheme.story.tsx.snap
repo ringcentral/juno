@@ -380,14 +380,14 @@ exports[`Storyshots 🔧 Foundation/Hooks/useTheme Theme Value 1`] = `
     "body1": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
-      "fontSize": "0.9375rem",
-      "lineHeight": "22px"
+      "fontSize": "0.875rem",
+      "lineHeight": "20px"
     },
     "body2": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 700,
-      "fontSize": "0.9375rem",
-      "lineHeight": "22px"
+      "fontSize": "0.875rem",
+      "lineHeight": "20px"
     },
     "button": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -926,14 +926,14 @@ Array [
     "body1": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
-      "fontSize": "0.9375rem",
-      "lineHeight": "22px"
+      "fontSize": "0.875rem",
+      "lineHeight": "20px"
     },
     "body2": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",
       "fontWeight": 700,
-      "fontSize": "0.9375rem",
-      "lineHeight": "22px"
+      "fontSize": "0.875rem",
+      "lineHeight": "20px"
     },
     "button": {
       "fontFamily": "Lato, Helvetica, Arial, sans-serif",

@@ -701,15 +701,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -1730,15 +1730,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -2767,15 +2767,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -3886,15 +3886,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -4890,15 +4890,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -5840,15 +5840,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -6223,7 +6223,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
 
 .c10 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -7048,15 +7048,15 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
           "typography": Object {
             "body1": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 400,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "body2": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 700,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "button": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -7669,15 +7669,15 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
           "typography": Object {
             "body1": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 400,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "body2": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 700,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "button": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -8290,15 +8290,15 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
           "typography": Object {
             "body1": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 400,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "body2": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 700,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "button": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -8911,15 +8911,15 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
           "typography": Object {
             "body1": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 400,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "body2": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 700,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "button": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -9532,15 +9532,15 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
           "typography": Object {
             "body1": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 400,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "body2": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 700,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "button": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -10153,15 +10153,15 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
           "typography": Object {
             "body1": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 400,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "body2": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 700,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "button": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",

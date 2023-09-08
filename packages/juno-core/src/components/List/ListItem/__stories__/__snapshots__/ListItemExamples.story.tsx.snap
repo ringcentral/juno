@@ -312,10 +312,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
 
 .c11 {
   color: #121212;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c11 .RcFormControlLabel-disabled {
@@ -405,10 +405,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   display: -ms-flexbox;
   display: flex;
   cursor: default;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -581,10 +581,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -1712,10 +1712,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
 
 .c23 {
   color: #121212;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c23 .RcFormControlLabel-disabled {
@@ -1805,10 +1805,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
   display: -ms-flexbox;
   display: flex;
   cursor: default;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -1972,10 +1972,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
   display: flex;
   background: #FFFFFF;
   color: #666666;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c0.RcListSubheader-gutters {
@@ -2006,10 +2006,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 

@@ -554,15 +554,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -1315,15 +1315,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -2052,15 +2052,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -2801,15 +2801,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -3554,15 +3554,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -4307,15 +4307,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -5058,15 +5058,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -5811,15 +5811,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",

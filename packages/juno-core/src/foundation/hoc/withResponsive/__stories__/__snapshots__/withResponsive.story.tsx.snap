@@ -3,10 +3,10 @@
 exports[`Storyshots 🔧 Foundation/HoC/withResponsive withResponsive 1`] = `
 Array [
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #BE3933;
 }
 
@@ -18,10 +18,10 @@ Array [
     If you want to make duplicate component can responsive size such as listItemActions, this hook is better than 'withResponsive'. Because there is no need to double count the matched size
   </p>,
   .c1 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c0 {

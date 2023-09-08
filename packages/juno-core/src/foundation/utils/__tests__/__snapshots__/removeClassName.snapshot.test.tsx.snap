@@ -11,10 +11,10 @@ exports[`removeClassName work correctly can remove children className 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
   background-color: #F3F3F3;
 }
@@ -92,10 +92,10 @@ exports[`removeClassName work correctly should remove parent className 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
   background-color: #F3F3F3;
 }

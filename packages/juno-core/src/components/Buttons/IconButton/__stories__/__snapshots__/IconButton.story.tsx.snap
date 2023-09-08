@@ -1305,17 +1305,17 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton Icon Button Contained 1`]
 }
 
 .c9 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c15 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -10803,10 +10803,10 @@ exports[`Storyshots 🚀 Cleanup Components/IconButton IconButton with color and
 }
 
 .c1 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #666666;
 }
 

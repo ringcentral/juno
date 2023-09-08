@@ -3,10 +3,10 @@
 exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable 1`] = `
 Array [
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   position: relative;
   display: inline-block;
   width: auto;
@@ -196,7 +196,7 @@ Array [
 <br />,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -627,10 +627,10 @@ Array [
 
 exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable multiline 1`] = `
 .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   position: relative;
   display: inline-block;
   width: 100%;
@@ -788,10 +788,10 @@ so your team can do their best work from anywhere.
 
 exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable only enter 1`] = `
 .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   position: relative;
   display: inline-block;
   width: 100%;
@@ -937,10 +937,10 @@ exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable only e
 
 exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable with loading 1`] = `
 .c1 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   position: relative;
   display: inline-block;
   width: auto;
@@ -1104,10 +1104,10 @@ exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable with l
 exports[`Storyshots 🚀 Cleanup Components/InlineEditable InlineEditable with tooltip 1`] = `
 Array [
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   position: relative;
   display: inline-block;
   width: auto;
@@ -1296,10 +1296,10 @@ Array [
 
 <br />,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   position: relative;
   display: inline-block;
   width: 100%;
@@ -1487,7 +1487,7 @@ Array [
 <br />,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -1627,10 +1627,10 @@ Array [
 
 <br />,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -1668,7 +1668,7 @@ Array [
 <br />,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -1773,10 +1773,10 @@ Array [
 
 <br />,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -1800,10 +1800,10 @@ Array [
     one line: 
   </p>,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   position: relative;
   display: inline-block;
   width: auto;
@@ -1979,10 +1979,10 @@ Array [
 
 <br />,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -2006,10 +2006,10 @@ Array [
     multiple line: 
   </p>,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   position: relative;
   display: inline-block;
   width: 100%;

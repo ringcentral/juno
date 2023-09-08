@@ -6,10 +6,10 @@ exports[`Tooltip style check, use as to check all style, because that issue with
 }
 
 .c0 .RcTooltip-tooltip {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   background-color: #666666;
   color: #FFFFFF;
   padding: 4px 8px;

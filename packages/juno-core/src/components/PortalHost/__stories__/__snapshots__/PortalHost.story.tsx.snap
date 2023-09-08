@@ -3,7 +3,7 @@
 exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost Dialog Example 1`] = `
 .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -98,7 +98,7 @@ exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost Dialog Example
 exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost Drawer Example 1`] = `
 .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -193,7 +193,7 @@ exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost Drawer Example
 exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost Snackbar Example 1`] = `
 .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -1035,15 +1035,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -1322,7 +1322,7 @@ Array [
 <br />,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -1437,7 +1437,7 @@ Array [
 exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost With Addition Example 1`] = `
 .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -1533,7 +1533,7 @@ exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost With Addition 
 exports[`Storyshots 🚀 Cleanup Components/PortalHost PortalHost With Inner Dialog 1`] = `
 .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;

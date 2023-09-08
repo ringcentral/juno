@@ -4,7 +4,7 @@ exports[`Storyshots 🔧 Foundation/Hooks/useRetry useRetry 1`] = `
 Array [
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -108,7 +108,7 @@ Array [
   </button>,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -360,7 +360,7 @@ exports[`Storyshots 🔧 Foundation/Hooks/useRetry useRetry with async 1`] = `
 Array [
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -467,7 +467,7 @@ Array [
   </button>,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;

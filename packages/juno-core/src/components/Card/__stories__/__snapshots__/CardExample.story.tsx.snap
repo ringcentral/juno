@@ -29,10 +29,10 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Card Responsive Ex
 }
 
 .c4 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c5 {
@@ -520,7 +520,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
 
 .c18 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -639,10 +639,10 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Icon Card Example 
 }
 
 .c15 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #666666;
 }
 
@@ -1064,7 +1064,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
 
 .c16 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -1183,10 +1183,10 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Media Card Example
 }
 
 .c13 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #666666;
 }
 
@@ -1524,10 +1524,10 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardExample Simple Card Exampl
 }
 
 .c7 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #666666;
 }
 

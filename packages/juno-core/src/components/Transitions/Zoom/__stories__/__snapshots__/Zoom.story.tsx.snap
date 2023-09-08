@@ -4,10 +4,10 @@ exports[`Storyshots 🚀 Cleanup Components/🌈Animations/Transition/Zoom Zoom 
 Array [
   .c0 {
   color: #121212;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c0 .RcFormControlLabel-disabled {

@@ -66,10 +66,10 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardSelectionArea CardSelectio
 }
 
 .c4 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 @media (hover:hover) and (pointer:fine) {

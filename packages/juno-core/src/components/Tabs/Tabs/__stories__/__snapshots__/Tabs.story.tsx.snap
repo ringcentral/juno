@@ -5,20 +5,20 @@ Array [
   .c1 {
   text-transform: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
   min-height: 32px;
   min-width: 32px;
 }
 
 .c1.RcTab-selected {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #066FAC;
 }
 
@@ -412,7 +412,7 @@ Array [
 <br />,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -603,20 +603,20 @@ exports[`Storyshots 🚀 Cleanup Components/Tabs/Tabs Tabs 1`] = `
 .c1 {
   text-transform: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
   min-height: 32px;
   min-width: 32px;
 }
 
 .c1.RcTab-selected {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #066FAC;
 }
 
@@ -904,10 +904,10 @@ exports[`Storyshots 🚀 Cleanup Components/Tabs/Tabs Tabs 1`] = `
 exports[`Storyshots 🚀 Cleanup Components/Tabs/Tabs Tabs Custom Example 1`] = `
 Array [
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 <p
@@ -959,29 +959,29 @@ Array [
 }
 
 .c2 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c1 {
   text-transform: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
   min-height: 32px;
   min-width: 32px;
 }
 
 .c1.RcTab-selected {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #066FAC;
 }
 
@@ -1280,10 +1280,10 @@ Array [
 exports[`Storyshots 🚀 Cleanup Components/Tabs/Tabs Tabs Example 1`] = `
 Array [
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -1309,20 +1309,20 @@ Array [
   .c1 {
   text-transform: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
   min-height: 32px;
   min-width: 32px;
 }
 
 .c1.RcTab-selected {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #066FAC;
 }
 
@@ -1669,10 +1669,10 @@ Array [
 
 <br />,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -1698,20 +1698,20 @@ Array [
   .c1 {
   text-transform: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
   min-height: 32px;
   min-width: 32px;
 }
 
 .c1.RcTab-selected {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #066FAC;
 }
 
@@ -2070,10 +2070,10 @@ Array [
 
 <br />,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -2099,20 +2099,20 @@ Array [
   .c1 {
   text-transform: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
   min-height: 32px;
   min-width: 32px;
 }
 
 .c1.RcTab-selected {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #066FAC;
 }
 
@@ -2459,10 +2459,10 @@ Array [
 
 <br />,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -2488,20 +2488,20 @@ Array [
   .c1 {
   text-transform: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
   min-height: 32px;
   min-width: 32px;
 }
 
 .c1.RcTab-selected {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #066FAC;
 }
 
@@ -2870,7 +2870,7 @@ Array [
 <br />,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -2972,20 +2972,20 @@ Array [
   .c1 {
   text-transform: none;
   box-sizing: border-box;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
   min-height: 32px;
   min-width: 32px;
 }
 
 .c1.RcTab-selected {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #066FAC;
 }
 
@@ -3367,7 +3367,7 @@ Array [
 <br />,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;

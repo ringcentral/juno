@@ -105,10 +105,10 @@ Array [
   </h5>,
   .c0 {
   color: #121212;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c0 .RcFormControlLabel-disabled {
@@ -258,10 +258,10 @@ Array [
   </h5>,
   .c0 {
   color: #121212;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c0 .RcFormControlLabel-disabled {
@@ -398,10 +398,10 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Radio Radio with custom icon 1
 
 .c1 {
   color: #121212;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c1 .RcFormControlLabel-disabled {

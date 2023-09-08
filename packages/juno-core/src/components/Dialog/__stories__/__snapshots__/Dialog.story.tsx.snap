@@ -3,7 +3,7 @@
 exports[`Storyshots 🚀 Cleanup Components/Dialog/Dialog Dialog 1`] = `
 .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -103,10 +103,10 @@ exports[`Storyshots 🚀 Cleanup Components/Dialog/Dialog Dialog with different 
 Array [
   .c0 {
   color: #121212;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c0 .RcFormControlLabel-disabled {
@@ -290,10 +290,10 @@ Array [
 <br />,
   .c0 {
   color: #121212;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c0 .RcFormControlLabel-disabled {
@@ -519,10 +519,10 @@ Array [
 <br />,
   .c0 {
   color: #121212;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c0 .RcFormControlLabel-disabled {
@@ -748,7 +748,7 @@ Array [
 <br />,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -856,7 +856,7 @@ Array [
 exports[`Storyshots 🚀 Cleanup Components/Dialog/Dialog Dialog with responsive 1`] = `
 .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;

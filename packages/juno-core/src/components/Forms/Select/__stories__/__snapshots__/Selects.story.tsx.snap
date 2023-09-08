@@ -3,10 +3,10 @@
 exports[`Storyshots 🚀 Cleanup Components/Selects/Select BoxSelect 1`] = `
 Array [
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -258,10 +258,10 @@ Array [
 
 .c1 .RcBoxSelectInput-input {
   padding: 6px 24px 6px 8px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   line-height: 20px;
 }
 
@@ -661,15 +661,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -893,10 +893,10 @@ Array [
     </p>
   </div>,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -1148,10 +1148,10 @@ Array [
 
 .c1 .RcBoxSelectInput-input {
   padding: 6px 24px 6px 8px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   line-height: 20px;
 }
 
@@ -1551,15 +1551,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -2024,10 +2024,10 @@ Array [
 
 .c1 .RcBoxSelectInput-input {
   padding: 6px 24px 6px 8px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   line-height: 20px;
 }
 
@@ -2427,15 +2427,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -2659,10 +2659,10 @@ Array [
     </p>
   </div>,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -2914,10 +2914,10 @@ Array [
 
 .c1 .RcBoxSelectInput-input {
   padding: 6px 24px 6px 8px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   line-height: 20px;
 }
 
@@ -3317,15 +3317,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -3549,10 +3549,10 @@ Array [
     </p>
   </div>,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -3804,10 +3804,10 @@ Array [
 
 .c1 .RcBoxSelectInput-input {
   padding: 6px 24px 6px 8px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   line-height: 20px;
 }
 
@@ -4207,15 +4207,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -4438,10 +4438,10 @@ Array [
     </p>
   </div>,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -4693,10 +4693,10 @@ Array [
 
 .c1 .RcBoxSelectInput-input {
   padding: 6px 24px 6px 8px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   line-height: 20px;
 }
 
@@ -5096,15 +5096,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -5333,10 +5333,10 @@ Array [
 exports[`Storyshots 🚀 Cleanup Components/Selects/Select LineSelect 1`] = `
 Array [
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -5940,15 +5940,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -6172,10 +6172,10 @@ Array [
     </p>
   </div>,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -6779,15 +6779,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -7011,10 +7011,10 @@ Array [
     </p>
   </div>,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -7618,15 +7618,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -7850,10 +7850,10 @@ Array [
     </p>
   </div>,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -8457,15 +8457,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -8689,10 +8689,10 @@ Array [
     </p>
   </div>,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -9296,15 +9296,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -9528,10 +9528,10 @@ Array [
     </p>
   </div>,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -10135,15 +10135,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -10367,10 +10367,10 @@ Array [
     </p>
   </div>,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -10974,15 +10974,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -11616,10 +11616,10 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select 1`] = `
 
 .c5 .RcBoxSelectInput-input {
   padding: 6px 24px 6px 8px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   line-height: 20px;
 }
 
@@ -12034,15 +12034,15 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select 1`] = `
           "typography": Object {
             "body1": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 400,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "body2": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 700,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "button": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -12655,15 +12655,15 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select 1`] = `
           "typography": Object {
             "body1": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 400,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "body2": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 700,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "button": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -13275,15 +13275,15 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select 1`] = `
           "typography": Object {
             "body1": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 400,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "body2": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 700,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "button": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -13889,15 +13889,15 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select 1`] = `
           "typography": Object {
             "body1": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 400,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "body2": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 700,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "button": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -14692,15 +14692,15 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Select With Custom Me
       "typography": Object {
         "body1": Object {
           "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-          "fontSize": "0.9375rem",
+          "fontSize": "0.875rem",
           "fontWeight": 400,
-          "lineHeight": "22px",
+          "lineHeight": "20px",
         },
         "body2": Object {
           "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-          "fontSize": "0.9375rem",
+          "fontSize": "0.875rem",
           "fontWeight": 700,
-          "lineHeight": "22px",
+          "lineHeight": "20px",
         },
         "button": Object {
           "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -15485,15 +15485,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -15939,10 +15939,10 @@ Array [
 
 .c1 .RcBoxSelectInput-input {
   padding: 6px 24px 6px 8px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   line-height: 20px;
 }
 
@@ -16334,15 +16334,15 @@ Array [
         "typography": Object {
           "body1": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 400,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "body2": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-            "fontSize": "0.9375rem",
+            "fontSize": "0.875rem",
             "fontWeight": 700,
-            "lineHeight": "22px",
+            "lineHeight": "20px",
           },
           "button": Object {
             "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -16832,10 +16832,10 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Virtualize Menu 1`] =
 
 .c5 .RcBoxSelectInput-input {
   padding: 6px 24px 6px 8px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   line-height: 20px;
 }
 
@@ -17240,15 +17240,15 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Virtualize Menu 1`] =
           "typography": Object {
             "body1": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 400,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "body2": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 700,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "button": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
@@ -17860,15 +17860,15 @@ exports[`Storyshots 🚀 Cleanup Components/Selects/Select Virtualize Menu 1`] =
           "typography": Object {
             "body1": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 400,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "body2": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",
-              "fontSize": "0.9375rem",
+              "fontSize": "0.875rem",
               "fontWeight": 700,
-              "lineHeight": "22px",
+              "lineHeight": "20px",
             },
             "button": Object {
               "fontFamily": "Lato, Helvetica, Arial, sans-serif",

@@ -11,10 +11,10 @@ Array [
   display: -ms-flexbox;
   display: flex;
   cursor: default;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -62,10 +62,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -156,10 +156,10 @@ Array [
   display: -ms-flexbox;
   display: flex;
   cursor: default;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -207,10 +207,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -306,10 +306,10 @@ Array [
   display: -ms-flexbox;
   display: flex;
   cursor: default;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -357,10 +357,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -456,10 +456,10 @@ Array [
   display: -ms-flexbox;
   display: flex;
   cursor: default;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
   background-color: rgba(102,102,102,0.05);
 }
@@ -508,10 +508,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -607,10 +607,10 @@ Array [
   display: -ms-flexbox;
   display: flex;
   cursor: default;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
   background-color: rgba(60,153,73,0.05);
 }
@@ -659,10 +659,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -758,10 +758,10 @@ Array [
   display: -ms-flexbox;
   display: flex;
   cursor: default;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
   background-color: rgba(255,136,0,0.05);
 }
@@ -810,10 +810,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 

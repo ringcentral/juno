@@ -5,10 +5,10 @@ Array [
   .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #066FAC;
   cursor: pointer;
 }
@@ -60,10 +60,10 @@ Array [
   .c0 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #066FAC;
   cursor: pointer;
 }

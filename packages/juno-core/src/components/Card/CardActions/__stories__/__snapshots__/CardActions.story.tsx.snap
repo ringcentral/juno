@@ -3,7 +3,7 @@
 exports[`Storyshots 🚀 Cleanup Components/Cards/CardActions CardActions 1`] = `
 .c5 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -74,10 +74,10 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/CardActions CardActions 1`] = 
 }
 
 .c3 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 @media (hover:hover) and (pointer:fine) {

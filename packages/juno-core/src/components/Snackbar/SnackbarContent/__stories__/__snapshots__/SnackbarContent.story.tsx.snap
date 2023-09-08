@@ -2,10 +2,10 @@
 
 exports[`Storyshots 🚀 Cleanup Components/Snackbar/SnackbarContent SnackbarContent 1`] = `
 .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   line-height: 24px;
   overflow: hidden;
   background-color: #368541;
@@ -83,10 +83,10 @@ exports[`Storyshots 🚀 Cleanup Components/Snackbar/SnackbarContent SnackbarCon
 .c6 {
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #066FAC;
   cursor: pointer;
 }
@@ -106,10 +106,10 @@ exports[`Storyshots 🚀 Cleanup Components/Snackbar/SnackbarContent SnackbarCon
 }
 
 .c1 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   line-height: 24px;
   overflow: hidden;
   background-color: #368541;
@@ -151,10 +151,10 @@ exports[`Storyshots 🚀 Cleanup Components/Snackbar/SnackbarContent SnackbarCon
 }
 
 .c2 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   line-height: 24px;
   overflow: hidden;
   background-color: #D63E39;
@@ -196,10 +196,10 @@ exports[`Storyshots 🚀 Cleanup Components/Snackbar/SnackbarContent SnackbarCon
 }
 
 .c5 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   line-height: 24px;
   overflow: hidden;
   background-color: #F6AD16;
@@ -241,10 +241,10 @@ exports[`Storyshots 🚀 Cleanup Components/Snackbar/SnackbarContent SnackbarCon
 }
 
 .c7 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   line-height: 24px;
   overflow: hidden;
   background-color: #666666;
@@ -286,10 +286,10 @@ exports[`Storyshots 🚀 Cleanup Components/Snackbar/SnackbarContent SnackbarCon
 }
 
 .c11 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   line-height: 24px;
   overflow: hidden;
   background-color: #666666;
@@ -332,10 +332,10 @@ exports[`Storyshots 🚀 Cleanup Components/Snackbar/SnackbarContent SnackbarCon
 }
 
 .c4.RcSnackbarAction-text {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   line-height: 24px;
   -webkit-text-decoration: underline;
   text-decoration: underline;

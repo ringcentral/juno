@@ -3,7 +3,7 @@
 exports[`Storyshots 🚀 Cleanup Components/Buttons Button 1`] = `
 .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -139,7 +139,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
 
 .c1 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -189,7 +189,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
 
 .c4 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -361,7 +361,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
 
 .c11 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -468,10 +468,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Examples 1`] = `
 }
 
 .c6 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -2154,7 +2154,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
 
 .c7 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -2204,7 +2204,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
 
 .c8 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -2303,10 +2303,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
 }
 
 .c1 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -2848,7 +2848,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Sizes 1`] = `
 exports[`Storyshots 🚀 Cleanup Components/Buttons Button Variants 1`] = `
 .c1 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -2898,7 +2898,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Variants 1`] = `
 
 .c2 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -3136,7 +3136,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button Variants 1`] = `
 exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Color 1`] = `
 .c1 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -3186,7 +3186,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Color 1`]
 
 .c2 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -3236,7 +3236,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Color 1`]
 
 .c3 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -3286,7 +3286,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Color 1`]
 
 .c4 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -3655,7 +3655,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Custom Radius 1`
 exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Disabled 1`] = `
 .c2 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -3705,7 +3705,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Disabled 1`] = `
 
 .c3 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -3756,10 +3756,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Disabled 1`] = `
 }
 
 .c1 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -3897,7 +3897,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Focus Ring 1`] =
 Array [
   .c1 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -3990,7 +3990,7 @@ Array [
 
 .c2 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -4083,7 +4083,7 @@ Array [
 
 .c3 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -4176,7 +4176,7 @@ Array [
 
 .c4 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -4269,7 +4269,7 @@ Array [
 
 .c5 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -4384,7 +4384,7 @@ Array [
 
 .c6 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -4499,7 +4499,7 @@ Array [
 
 .c7 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -4614,7 +4614,7 @@ Array [
 
 .c8 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -5646,7 +5646,7 @@ Array [
 <br />,
   .c1 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -5739,7 +5739,7 @@ Array [
 
 .c2 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -5832,7 +5832,7 @@ Array [
 
 .c3 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -5925,7 +5925,7 @@ Array [
 
 .c4 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -6018,7 +6018,7 @@ Array [
 
 .c5 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -6133,7 +6133,7 @@ Array [
 
 .c6 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -6248,7 +6248,7 @@ Array [
 
 .c7 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -6363,7 +6363,7 @@ Array [
 
 .c8 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -7191,7 +7191,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Icon 1`] = `
 
 .c2 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -7240,10 +7240,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Icon 1`] = `
 }
 
 .c1 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -7466,7 +7466,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Icon 1`] = `
 exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Keep Elevation 1`] = `
 .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -7570,7 +7570,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
 
 .c2 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -7622,7 +7622,7 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
 
 .c4 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -7695,10 +7695,10 @@ exports[`Storyshots 🚀 Cleanup Components/Buttons Button With Loading 1`] = `
 }
 
 .c1 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 

@@ -12,10 +12,10 @@ Array [
   display: flex;
   background: #FFFFFF;
   color: #666666;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c0.RcListSubheader-gutters {
@@ -75,10 +75,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -103,10 +103,10 @@ Array [
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -258,10 +258,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -290,10 +290,10 @@ Array [
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -454,10 +454,10 @@ Array [
   display: flex;
   background: #FFFFFF;
   color: #666666;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c0.RcListSubheader-gutters {
@@ -584,10 +584,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -612,10 +612,10 @@ Array [
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -808,10 +808,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -836,10 +836,10 @@ Array [
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -997,10 +997,10 @@ Array [
   display: flex;
   background: #FFFFFF;
   color: #666666;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c0.RcListSubheader-gutters {
@@ -1096,10 +1096,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -1124,10 +1124,10 @@ Array [
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -1291,10 +1291,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -1319,10 +1319,10 @@ Array [
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -1486,10 +1486,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -1514,10 +1514,10 @@ Array [
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -1677,10 +1677,10 @@ Array [
   display: flex;
   background: #FFFFFF;
   color: #666666;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c0.RcListSubheader-gutters {
@@ -1789,10 +1789,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -1817,10 +1817,10 @@ Array [
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -2022,10 +2022,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -2050,10 +2050,10 @@ Array [
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -2309,10 +2309,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -2337,10 +2337,10 @@ Array [
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -2528,10 +2528,10 @@ Array [
   display: flex;
   background: #FFFFFF;
   color: #666666;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c0.RcListSubheader-gutters {
@@ -2615,10 +2615,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -2643,10 +2643,10 @@ Array [
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -2802,10 +2802,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -2830,10 +2830,10 @@ Array [
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -3123,10 +3123,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -3151,10 +3151,10 @@ Array [
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -3344,10 +3344,10 @@ Array [
   display: flex;
   background: #FFFFFF;
   color: #666666;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c0.RcListSubheader-gutters {
@@ -3407,10 +3407,10 @@ Array [
 
 .c3 {
   color: #121212;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c3 .RcFormControlLabel-disabled {
@@ -3512,10 +3512,10 @@ Array [
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -3540,10 +3540,10 @@ Array [
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -3782,10 +3782,10 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/MenuItem/MenuItem Examples Seco
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -3810,10 +3810,10 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/MenuItem/MenuItem Examples Seco
   min-width: 112px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 

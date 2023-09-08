@@ -4,7 +4,7 @@ exports[`Storyshots 🚀 Cleanup Components/Typography/Text Text 1`] = `
 Array [
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -95,10 +95,10 @@ Array [
     </span>
   </button>,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c1.highlight-term {
@@ -250,7 +250,7 @@ exports[`Storyshots 🚀 Cleanup Components/Typography/Text Text With Title When
 Array [
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -344,10 +344,10 @@ Array [
     />
   </button>,
   .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #494949;
 }
 
@@ -425,10 +425,10 @@ Array [
 
 exports[`Storyshots 🚀 Cleanup Components/Typography/Text Text Without Default Title 1`] = `
 .c0 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 

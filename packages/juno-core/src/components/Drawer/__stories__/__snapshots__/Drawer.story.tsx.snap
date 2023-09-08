@@ -3,7 +3,7 @@
 exports[`Storyshots 🚀 Cleanup Components/Drawer Drawer 1`] = `
 .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -99,7 +99,7 @@ exports[`Storyshots 🚀 Cleanup Components/Drawer Drawer And Modal Switch In De
 Array [
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -268,7 +268,7 @@ Array [
 <br />,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -423,7 +423,7 @@ Array [
   </h5>,
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -539,7 +539,7 @@ Array [
 exports[`Storyshots 🚀 Cleanup Components/Drawer Drawer Examples 1`] = `
 .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -720,7 +720,7 @@ exports[`Storyshots 🚀 Cleanup Components/Drawer Drawer Examples 1`] = `
 exports[`Storyshots 🚀 Cleanup Components/Drawer Drawer With Inline Paper 1`] = `
 .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -816,7 +816,7 @@ exports[`Storyshots 🚀 Cleanup Components/Drawer Multi Drawer 1`] = `
 Array [
   .c0 {
   text-transform: none;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -912,10 +912,10 @@ Array [
   </button>,
   .c0 {
   color: #121212;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .c0 .RcFormControlLabel-disabled {

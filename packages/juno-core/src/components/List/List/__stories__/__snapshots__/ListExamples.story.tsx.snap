@@ -126,10 +126,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
   display: -ms-flexbox;
   display: flex;
   cursor: default;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -201,10 +201,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -546,10 +546,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
   display: -ms-flexbox;
   display: flex;
   cursor: default;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
@@ -616,10 +616,10 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
   text-overflow: ellipsis;
   -webkit-text-decoration-line: inherit;
   text-decoration-line: inherit;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: Lato,Helvetica,Arial,sans-serif;
-  line-height: 22px;
+  line-height: 20px;
   color: #121212;
 }
 
