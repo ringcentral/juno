@@ -1,4 +1,11 @@
 
+## [1.51.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.50.0...juno-icon-v1.51.0) (2023-09-11)
+
+
+### Features
+
+* **Icon:** add new icons Category, Conversion, MarkAsReadBorder, Update ([0510572](https://github.com/ringcentral/juno/commit/05105720ef81cb2691d5bebd51d0dc4ea9c68b50))
+
 ## [1.50.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.49.0...juno-icon-v1.50.0) (2023-08-31)
 
 
