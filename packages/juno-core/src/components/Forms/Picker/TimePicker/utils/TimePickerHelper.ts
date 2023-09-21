@@ -1,3 +1,4 @@
+import range from 'lodash/range';
 import { TIME_SYSTEM_TEXT } from '../constant';
 
 const parseNumber = (value: number, isTwelveHourSystem?: boolean) => {
@@ -53,21 +54,14 @@ const TIME_GAP = 15;
 const ONE_HOUR = HOUR_MINUTES * HOUR_MINUTES * 1000;
 const ONE_MINUTE = HOUR_MINUTES * 1000;
 
-const buildConsecutiveNumberToArray = (min: number, max: number) => {
-  const array: number[] = [];
-  if (min > max) return array;
-  let count = min;
-  while (count <= max) {
-    array.push(count);
-    count++;
-  }
-  return array;
-};
+// [0, 12)
+const twelveHourSystemSource = range(0, 12);
+// [0, 24)
+const twentyFourHourSystemSource = range(0, 24);
 
-const twelveHourSystemSource = buildConsecutiveNumberToArray(0, 11);
-const twentyFourHourSystemSource = buildConsecutiveNumberToArray(0, 23);
-const minuteSource = [0, 15, 30, 45];
-const lastMinute = 45;
+// [0, 60) step 5
+const minuteSource = range(0, 60, 5);
+const lastMinute = 55;
 
 /**
  * hour and minute timestamp
