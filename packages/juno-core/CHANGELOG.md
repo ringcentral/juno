@@ -1,4 +1,15 @@
 
+## [2.39.0](https://github.com/ringcentral/juno/compare/juno-core-v2.38.0...juno-core-v2.39.0) (2023-09-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* **TimePicker:** update the minute step from 15 to 5
+
+### Features
+
+* **TimePicker:** update the minute step from 15 to 5 ([3d293db](https://github.com/ringcentral/juno/commit/3d293dbd21abad1073a20d2ff533b0f64ac1c2e3))
+
 ## [2.38.0](https://github.com/ringcentral/juno/compare/juno-core-v2.37.0...juno-core-v2.38.0) (2023-09-08)
 
 
