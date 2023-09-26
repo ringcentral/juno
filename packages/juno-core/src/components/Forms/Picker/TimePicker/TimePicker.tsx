@@ -563,7 +563,7 @@ RcTimePicker.defaultProps = {
   },
   MinutePickerProps: {
     getScreenReaderLabel: (minute: string) =>
-      `Minute: ${minute}, use up and down arrow keys to change minutes time by 15 minutes`,
+      `Minute: ${minute}, use up and down arrow keys to change minutes time by ${TIME_GAP} minutes`,
   },
   PeriodToggleProps: {
     getScreenReaderLabel: (period: string) =>

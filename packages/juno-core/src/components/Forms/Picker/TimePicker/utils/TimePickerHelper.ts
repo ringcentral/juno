@@ -49,7 +49,7 @@ const getFormattedTime = (
 
 const HALF_DAY_HOURS = 12;
 const HOUR_MINUTES = 60;
-const TIME_GAP = 15;
+const TIME_GAP = 5;
 
 const ONE_HOUR = HOUR_MINUTES * HOUR_MINUTES * 1000;
 const ONE_MINUTE = HOUR_MINUTES * 1000;
@@ -60,7 +60,7 @@ const twelveHourSystemSource = range(0, 12);
 const twentyFourHourSystemSource = range(0, 24);
 
 // [0, 60) step 5
-const minuteSource = range(0, 60, 5);
+const minuteSource = range(0, 60, TIME_GAP);
 const lastMinute = 55;
 
 /**
