@@ -1,4 +1,11 @@
 
+### [2.39.1](https://github.com/ringcentral/juno/compare/juno-core-v2.39.0...juno-core-v2.39.1) (2023-09-26)
+
+
+### Bug Fixes
+
+* **TimePicker:** fix time picker minute gap ([349323f](https://github.com/ringcentral/juno/commit/349323f8b9573ba8156d9e8b48129fce8b054393))
+
 ## [2.39.0](https://github.com/ringcentral/juno/compare/juno-core-v2.38.0...juno-core-v2.39.0) (2023-09-22)
 
 
