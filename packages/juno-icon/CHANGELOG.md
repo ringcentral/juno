@@ -1,4 +1,11 @@
 
+## [1.52.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.51.0...juno-icon-v1.52.0) (2023-09-28)
+
+
+### Features
+
+* **update-icon-230928:** [Icon] Update icon RecordSp ([b661c03](https://github.com/ringcentral/juno/commit/b661c03a34930f6e648c9bdc3d31d88dd57ba87a))
+
 ## [1.51.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.50.0...juno-icon-v1.51.0) (2023-09-11)
 
 
