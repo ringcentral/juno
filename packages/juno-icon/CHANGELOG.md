@@ -1,4 +1,11 @@
 
+## [1.54.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.53.0...juno-icon-v1.54.0) (2023-11-08)
+
+
+### Features
+
+* **Icon:** add new icons Bundle, Device, PaymentMethod, PurchaseCart, PushToTalk ([c6c749c](https://github.com/ringcentral/juno/commit/c6c749c5188cda5c132f7a57c4c028f05b42c803))
+
 ## [1.53.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.52.0...juno-icon-v1.53.0) (2023-10-25)
 
 
