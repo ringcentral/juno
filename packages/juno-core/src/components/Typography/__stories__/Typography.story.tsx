@@ -66,10 +66,10 @@ export const Typography: Story<TypographyProps> = ({
           Show for you know bottom margin, when you use props
         </RcTypography>
         <RcTypography align="center" color="highlight.f02" display="block">
-          paragraph: 0.35em
+          paragraph: 16px
         </RcTypography>
         <RcTypography align="center" color="highlight.f02" display="block">
-          gutterBottom: 16px
+          gutterBottom: 0.35em
         </RcTypography>
       </ShowForKnowButtonMargin>
     </>
