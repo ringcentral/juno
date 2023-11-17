@@ -477,6 +477,7 @@ export { default as Stop } from './Stop';
 export { default as Strike } from './Strike';
 export { default as Stripe } from './Stripe';
 export { default as Summary } from './Summary';
+export { default as Swap } from './Swap';
 export { default as SwitchboardBorder } from './SwitchboardBorder';
 export { default as Switchboard } from './Switchboard';
 export { default as TakeOverSp } from './TakeOverSp';
