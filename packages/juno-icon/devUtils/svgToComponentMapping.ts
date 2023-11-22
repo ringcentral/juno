@@ -9,6 +9,8 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  ControlRoom: 'control-room',
+  PersonalMeeting: 'personal-meeting',
   Swap: 'swap',
   PaymentMethod: 'payment-method',
   Bundle: 'bundle',
