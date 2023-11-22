@@ -1,4 +1,11 @@
 
+## [1.57.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.56.0...juno-icon-v1.57.0) (2023-11-22)
+
+
+### Features
+
+* **Icon:** add new icon Globe ([d446bf7](https://github.com/ringcentral/juno/commit/d446bf70cd28d2725803936e79d7112a9fd48654))
+
 ## [1.56.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.55.0...juno-icon-v1.56.0) (2023-11-22)
 
 
