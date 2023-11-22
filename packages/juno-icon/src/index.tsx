@@ -223,6 +223,7 @@ export { default as GifFile } from './GifFile';
 export { default as Gif } from './Gif';
 export { default as Github } from './Github';
 export { default as Glipwebhooks } from './Glipwebhooks';
+export { default as Globe } from './Globe';
 export { default as Gmail } from './Gmail';
 export { default as GoodConnection } from './GoodConnection';
 export { default as GoogleBusiness } from './GoogleBusiness';

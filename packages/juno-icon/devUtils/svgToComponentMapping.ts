@@ -11,6 +11,7 @@ module.exports = {
   '9': '9',
   ControlRoom: 'control-room',
   PersonalMeeting: 'personal-meeting',
+  Globe: 'globe',
   Swap: 'swap',
   PaymentMethod: 'payment-method',
   Bundle: 'bundle',
