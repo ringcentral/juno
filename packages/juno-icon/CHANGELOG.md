@@ -1,4 +1,11 @@
 
+## [1.56.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.55.0...juno-icon-v1.56.0) (2023-11-22)
+
+
+### Features
+
+* **Icon:** add icons ControlRoom, PersonalMeeting ([60378fa](https://github.com/ringcentral/juno/commit/60378fa1116fbc13b0e24e6922a9f7a4b7b30518))
+
 ## [1.55.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.54.0...juno-icon-v1.55.0) (2023-11-17)
 
 
