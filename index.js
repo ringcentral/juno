@@ -78994,7 +78994,21 @@ var WeekWrapper = styled_components_default.div`
 `;
 var StyledDaysHeader = styled_components_default.div`
   ${flexCenterStyle};
-  height: 32px;
+  ${({ size }) => {
+  if (size === "small") {
+    return css2`
+        height: 28px;
+        ${StyledDayLabel} {
+          width: 20px;
+          max-width: 20px;
+          flex: none;
+        }
+      `;
+  }
+  return css2`
+      height: 32px;
+    `;
+}}
 `;
 var StyledDayLabel = styled_components_default(Typography_default)`
   ${({ size }) => {
@@ -79394,7 +79408,9 @@ var Calendar2 = forwardRef753(({
   });
   const { getBackToTodayAriaLabel, getDayAriaLabel } = useScreenReaderContext();
   const backToTodayAriaLabel = getBackToTodayAriaLabel?.();
-  const header3 = useMemo71(() => /* @__PURE__ */ React841.createElement(StyledDaysHeader, null, weekdays.map((day) => /* @__PURE__ */ React841.createElement(StyledDayLabel, {
+  const header3 = useMemo71(() => /* @__PURE__ */ React841.createElement(StyledDaysHeader, {
+    size
+  }, weekdays.map((day) => /* @__PURE__ */ React841.createElement(StyledDayLabel, {
     size,
     key: day,
     variant: "caption"
