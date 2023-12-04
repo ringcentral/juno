@@ -46,9 +46,23 @@ const WeekWrapper = styled.div<Pick<RcDatePickerProps, 'size'>>`
   }};
 `;
 
-const StyledDaysHeader = styled.div`
+const StyledDaysHeader = styled.div<StyledDayLabelProps>`
   ${flexCenterStyle};
-  height: 32px;
+  ${({ size }) => {
+    if (size === 'small') {
+      return css`
+        height: 28px;
+        ${StyledDayLabel} {
+          width: 20px;
+          max-width: 20px;
+          flex: none;
+        }
+      `;
+    }
+    return css`
+      height: 32px;
+    `;
+  }}
 `;
 
 type StyledDayLabelProps = Pick<RcDatePickerProps, 'size'>;

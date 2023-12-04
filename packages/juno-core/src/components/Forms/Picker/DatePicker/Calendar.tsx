@@ -253,7 +253,7 @@ const Calendar = forwardRef<any, CalendarProps>(
 
     const header = useMemo(
       () => (
-        <StyledDaysHeader>
+        <StyledDaysHeader size={size}>
           {weekdays.map((day) => (
             <StyledDayLabel size={size!} key={day} variant="caption">
               {day}

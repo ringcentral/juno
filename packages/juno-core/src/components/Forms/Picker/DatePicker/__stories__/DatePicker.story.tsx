@@ -64,7 +64,18 @@ export const DatePicker: Story<DatePickerProps> = ({ value, ...args }) => {
     console.log(ref);
   }, []);
 
-  return <RcDatePicker ref={ref} value={date} onChange={setDate} {...args} />;
+  return (
+    <>
+      <RcDatePicker
+        size="small"
+        ref={ref}
+        value={date}
+        onChange={setDate}
+        {...args}
+      />{' '}
+      <RcDatePicker ref={ref} value={date} onChange={setDate} {...args} />
+    </>
+  );
 };
 
 DatePicker.storyName = 'DatePicker';
@@ -252,6 +263,25 @@ export const DatePickerExamples: Story<DatePickerProps> = () => {
         Locale
       </RcTypography>
       <RcDatePicker
+        clearBtn={false}
+        screenReaderProps={screenReaderProps}
+        inputProps={{
+          'aria-describedby': 'text-field-today',
+        }}
+        value={date}
+        placeholder="when?"
+        onChange={setDate}
+        onClick={(e) => console.log('click', e)}
+        onClear={(e: any) => console.log('clear', e)}
+        onClose={() => console.log('close')}
+        onKeyDown={(e) => console.log('keydown', e)}
+        locale="zh-cn"
+        todayButtonText="今天"
+        label="日期"
+        helperText="选择日期"
+      />
+      <RcDatePicker
+        size="small"
         clearBtn={false}
         screenReaderProps={screenReaderProps}
         inputProps={{
