@@ -259,14 +259,14 @@
   ],
   "typography": {
     "body1": {
-      "fontSize": "0.9375rem",
+      "fontSize": "0.875rem",
       "fontWeight": 400,
-      "lineHeight": "22px"
+      "lineHeight": "20px"
     },
     "body2": {
-      "fontSize": "0.9375rem",
+      "fontSize": "0.875rem",
       "fontWeight": 700,
-      "lineHeight": "22px"
+      "lineHeight": "20px"
     },
     "button": {
       "fontSize": "0.9375rem",
