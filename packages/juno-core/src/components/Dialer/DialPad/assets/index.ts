@@ -1,3 +1,11 @@
-import RcDialerPadSounds from './RcDialerPadSounds.json';
+import RcDialerPadSoundsOGG from './RcDialerPadSoundsOGG.json';
+import RcDialerPadSoundsMPEG from './RcDialerPadSoundsMPEG.json';
 
-export { RcDialerPadSounds };
+export {
+  RcDialerPadSoundsMPEG,
+  RcDialerPadSoundsOGG,
+  /**
+   * @deprecated use `RcDialerPadSoundsOGG` or `RcDialerPadSoundsMPEG instead base on your browser support
+   */
+  RcDialerPadSoundsMPEG as RcDialerPadSounds,
+};

@@ -47,7 +47,19 @@ type RcDialPadProps = {
    * `reason` will be `customKeyboard` when it trigger by `useDiaKeyboard`.
    */
   onChange?: (value: string, reason: RcDialPadOnChangeReason) => void;
-  /** keypad sounds */
+  /**
+   * keypad sounds
+   *
+   * By default, we not have any sound for best file size for you can define when and what audio you need
+   * should pass sound map when you want play sound.
+   *
+   * @example
+   *
+   * ```ts
+   * import { RcDialerPadSoundsMPEG } from '@ringcentral/juno';
+   * import { RcDialerPadSoundsOGG } from '@ringcentral/juno';
+   * ```
+   */
   sounds?: DialPadSoundMap;
   /** volume of keypad sound */
   volume?: number;

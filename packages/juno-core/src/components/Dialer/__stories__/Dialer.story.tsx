@@ -44,7 +44,7 @@ import {
   typography,
   useDialKeyboard,
   useDownshift,
-  UseLongPressEventReason,
+  RcDialerPadSoundsMPEG,
 } from '@ringcentral/juno';
 import {
   Close,
@@ -466,7 +466,7 @@ const SimpleDialer: FunctionComponent<DialerProps> = ({ ...args }) => {
         />
 
         <RcDialPad
-          sounds={RcDialerPadSounds}
+          sounds={args.sounds}
           getDialPadButtonProps={(v) => ({ 'data-test-id': `${v}` })}
           {...dialKeyboardProps}
         />
@@ -476,7 +476,22 @@ const SimpleDialer: FunctionComponent<DialerProps> = ({ ...args }) => {
 };
 
 export const Dialer: Story<DialerProps> = ({ ...args }) => {
-  return <SimpleDialer {...args} />;
+  return (
+    <RcBox display="flex">
+      <div>
+        <RcText align="center" color="neutral.f06" variant="title1">
+          MPEG
+        </RcText>
+        <SimpleDialer {...args} sounds={RcDialerPadSoundsMPEG} />
+      </div>
+      <div>
+        <RcText align="center" color="neutral.f06" variant="title1">
+          OGG
+        </RcText>
+        <SimpleDialer {...args} sounds={RcDialerPadSounds} />
+      </div>
+    </RcBox>
+  );
 };
 
 export const DialerExamples: Story<DialerProps> = ({ ...args }) => {
