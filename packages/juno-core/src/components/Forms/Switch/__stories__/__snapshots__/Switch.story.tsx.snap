@@ -74,7 +74,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch 1`] = `
 >
   <span
     aria-disabled={false}
-    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-235 MuiSwitch-switchBase RcSwitch-switchBase"
+    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-236 MuiSwitch-switchBase RcSwitch-switchBase"
     onBlur={[Function]}
     onDragLeave={[Function]}
     onFocus={[Function]}
@@ -92,7 +92,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch 1`] = `
       className="MuiIconButton-label"
     >
       <input
-        className="PrivateSwitchBase-input-238 MuiSwitch-input"
+        className="PrivateSwitchBase-input-239 MuiSwitch-input"
         onChange={[Function]}
         type="checkbox"
       />
@@ -236,7 +236,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch Examples 1`] = `
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-239 MuiSwitch-switchBase RcSwitch-switchBase"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-240 MuiSwitch-switchBase RcSwitch-switchBase"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -254,7 +254,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch Examples 1`] = `
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-242 MuiSwitch-input"
+            className="PrivateSwitchBase-input-243 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -291,7 +291,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch Examples 1`] = `
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-239 MuiSwitch-switchBase RcSwitch-switchBase"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-240 MuiSwitch-switchBase RcSwitch-switchBase"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -309,7 +309,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch Examples 1`] = `
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-242 MuiSwitch-input"
+            className="PrivateSwitchBase-input-243 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />
@@ -357,7 +357,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch Examples 1`] = `
         >
           <span
             aria-disabled={false}
-            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-239 MuiSwitch-switchBase RcSwitch-switchBase"
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-240 MuiSwitch-switchBase RcSwitch-switchBase"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -375,7 +375,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch Examples 1`] = `
               className="MuiIconButton-label"
             >
               <input
-                className="PrivateSwitchBase-input-242 MuiSwitch-input"
+                className="PrivateSwitchBase-input-243 MuiSwitch-input"
                 disabled={false}
                 name="RcSwitch name prop"
                 onChange={[Function]}
@@ -404,7 +404,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch Examples 1`] = `
         >
           <span
             aria-disabled={false}
-            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-239 MuiSwitch-switchBase RcSwitch-switchBase"
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-240 MuiSwitch-switchBase RcSwitch-switchBase"
             onBlur={[Function]}
             onDragLeave={[Function]}
             onFocus={[Function]}
@@ -422,7 +422,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Switch Switch Examples 1`] = `
               className="MuiIconButton-label"
             >
               <input
-                className="PrivateSwitchBase-input-242 MuiSwitch-input"
+                className="PrivateSwitchBase-input-243 MuiSwitch-input"
                 disabled={false}
                 onChange={[Function]}
                 type="checkbox"
@@ -553,7 +553,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-243 MuiSwitch-switchBase RcSwitch-switchBase"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-244 MuiSwitch-switchBase RcSwitch-switchBase"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -571,7 +571,7 @@ Array [
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-246 MuiSwitch-input"
+            className="PrivateSwitchBase-input-247 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
           />

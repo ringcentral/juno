@@ -1069,7 +1069,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-150"
+        className="MuiBox-root MuiBox-root-151"
       >
         <button
           aria-hidden={true}
@@ -2307,7 +2307,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-168"
+          className="MuiBox-root MuiBox-root-169"
         >
           <button
             aria-hidden={true}
@@ -3603,7 +3603,7 @@ Array [
           className="c3"
         >
           <div
-            className="MuiBox-root MuiBox-root-169"
+            className="MuiBox-root MuiBox-root-170"
           >
             <button
               aria-hidden={true}
@@ -4758,7 +4758,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-153"
+        className="MuiBox-root MuiBox-root-154"
       >
         <button
           aria-hidden={true}
@@ -8317,7 +8317,7 @@ Array [
         className="c9"
       >
         <div
-          className="MuiBox-root MuiBox-root-155"
+          className="MuiBox-root MuiBox-root-156"
         >
           <button
             aria-hidden={true}
@@ -9850,7 +9850,7 @@ Array [
         className="c9"
       >
         <div
-          className="MuiBox-root MuiBox-root-156"
+          className="MuiBox-root MuiBox-root-157"
         >
           <button
             aria-hidden={true}
@@ -11258,7 +11258,7 @@ Array [
         className="c9"
       >
         <div
-          className="MuiBox-root MuiBox-root-157"
+          className="MuiBox-root MuiBox-root-158"
         >
           <button
             aria-hidden={true}
@@ -12665,7 +12665,7 @@ Array [
         className="c9"
       >
         <div
-          className="MuiBox-root MuiBox-root-158"
+          className="MuiBox-root MuiBox-root-159"
         >
           <button
             aria-hidden={true}
@@ -14304,7 +14304,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-154"
+        className="MuiBox-root MuiBox-root-155"
       >
         <button
           aria-hidden={true}
@@ -15494,7 +15494,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-160"
+          className="MuiBox-root MuiBox-root-161"
         >
           <button
             aria-hidden={true}
@@ -16686,7 +16686,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-161"
+          className="MuiBox-root MuiBox-root-162"
         >
           <button
             aria-hidden={true}
@@ -17878,7 +17878,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-162"
+          className="MuiBox-root MuiBox-root-163"
         >
           <button
             aria-hidden={true}
@@ -19070,7 +19070,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-163"
+          className="MuiBox-root MuiBox-root-164"
         >
           <button
             aria-hidden={true}
@@ -20231,7 +20231,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-159"
+        className="MuiBox-root MuiBox-root-160"
       >
         <button
           aria-hidden={true}
@@ -21403,7 +21403,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-165"
+          className="MuiBox-root MuiBox-root-166"
         >
           <button
             aria-hidden={true}
@@ -22561,7 +22561,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-166"
+          className="MuiBox-root MuiBox-root-167"
         >
           <button
             aria-hidden={true}
@@ -23782,7 +23782,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
       className="c4"
     >
       <div
-        className="MuiBox-root MuiBox-root-167"
+        className="MuiBox-root MuiBox-root-168"
       >
         <button
           aria-hidden={true}
@@ -24972,7 +24972,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-151"
+          className="MuiBox-root MuiBox-root-152"
         >
           <button
             aria-hidden={true}
@@ -26164,7 +26164,7 @@ Array [
         className="c3"
       >
         <div
-          className="MuiBox-root MuiBox-root-152"
+          className="MuiBox-root MuiBox-root-153"
         >
           <button
             aria-hidden={true}
@@ -27320,7 +27320,7 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
       className="c3"
     >
       <div
-        className="MuiBox-root MuiBox-root-164"
+        className="MuiBox-root MuiBox-root-165"
       >
         <button
           aria-hidden={true}
