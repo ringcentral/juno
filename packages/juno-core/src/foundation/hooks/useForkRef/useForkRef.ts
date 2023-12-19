@@ -1,4 +1,7 @@
-import { useForkRef as MuiUseForkRef } from '@material-ui/core/utils';
+import {
+  useForkRef as MuiUseForkRef,
+  setRef as MuiSetRef,
+} from '@material-ui/core/utils';
 
 /**
  * That method will give you ability fork same value `ref object` or `method`
@@ -18,3 +21,4 @@ import { useForkRef as MuiUseForkRef } from '@material-ui/core/utils';
  * ```
  */
 export const useForkRef = MuiUseForkRef;
+export const setRef = MuiSetRef;

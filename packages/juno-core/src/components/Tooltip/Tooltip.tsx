@@ -21,6 +21,7 @@ import {
   useForkRef,
   useRcPortalWindowContext,
   useThemeProps,
+  setRef,
 } from '../../foundation';
 import { Mask, tooltipStyle } from './styles';
 import { RcTooltipClasses, useTooltipForceHide } from './utils';
@@ -93,6 +94,7 @@ const _RcTooltip = forwardRef<any, RcTooltipProps>((inProps, ref) => {
   const { externalWindow } = useRcPortalWindowContext();
 
   const [isDisabledButton, setIsDisabledButton] = useState(false);
+  const popperInnerRef = useRef<HTMLDivElement | null>(null);
 
   const innerRef = useRef<HTMLElement>(null);
 
@@ -107,16 +109,38 @@ const _RcTooltip = forwardRef<any, RcTooltipProps>((inProps, ref) => {
     [classNameProp, classesProp],
   );
 
-  const PopperProps = useMemo(
-    () =>
-      combineProps(
+  const PopperProps = useMemo(() => {
+    const { ref: tooltipPopperRef, ...restPopperPropsProp } =
+      PopperPropsProp || {};
+
+    return {
+      ...combineProps(
         {
           container: externalWindow?.document.body,
+          popperOptions: {
+            // when popper update position, if left < 0 and top <= 0, that means popper is out of window
+            // that occur when use not destroy component, use style hidden, host element be disappear, but popper still exist
+            onUpdate: (e: any) => {
+              const tooltipElm = popperInnerRef?.current;
+              if (
+                tooltipElm &&
+                e.popper &&
+                e.popper.left < 0 &&
+                e.popper.top <= 0
+              ) {
+                tooltipElm.style.display = 'none';
+              }
+            },
+          },
         },
-        PopperPropsProp,
+        restPopperPropsProp,
       ),
-    [PopperPropsProp, externalWindow?.document.body],
-  );
+      ref: (elm) => {
+        popperInnerRef.current = elm;
+        setRef(tooltipPopperRef, elm);
+      },
+    } as RcTooltipProps['PopperProps'];
+  }, [PopperPropsProp, externalWindow?.document.body]);
 
   const forceHideAdditionProps = useTooltipForceHide({
     ref: innerRef,

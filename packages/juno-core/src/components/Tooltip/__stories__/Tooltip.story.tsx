@@ -34,6 +34,7 @@ import {
   Title,
 } from '@ringcentral/juno-storybook';
 import { Meta, Story } from '@storybook/react';
+import { useSleep } from '../../../foundation';
 
 export default {
   title: '🚀 Cleanup Components/Tooltip',
@@ -405,3 +406,31 @@ export const TooltipWithInteractiveLink: Story<TooltipProps> = ({
 };
 
 TooltipWithInteractiveLink.args = {};
+
+export const TooltipWithToggleShow: Story<TooltipProps> = () => {
+  const [hidden, setHidden] = useState(false);
+
+  const { sleep } = useSleep();
+
+  return (
+    <>
+      <Title>
+        When host anchor be disappear, tooltip should also be hidden
+      </Title>
+      <RcTooltip title="I'm tooltip" size="medium">
+        <RcButton
+          style={{ display: hidden ? 'none' : undefined }}
+          onClick={() => {
+            setHidden(true);
+
+            sleep(1000).then(() => {
+              setHidden(false);
+            });
+          }}
+        >
+          Button
+        </RcButton>
+      </RcTooltip>
+    </>
+  );
+};
