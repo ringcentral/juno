@@ -1,4 +1,16 @@
 
+## [2.40.0](https://github.com/ringcentral/juno/compare/juno-core-v2.39.2...juno-core-v2.40.0) (2023-12-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* **DialerPad:** change default RcDialerPadSounds to MPEG format for better work with most browser, if you need ogg, please import by your self with `import { RcDialerPadSoundsOGG } from @ringcentral/juno;`
+
+### Bug Fixes
+
+* **DialerPad:** [juno-core] add DialerPad mpeg format sound for work with safari ([c64461a](https://github.com/ringcentral/juno/commit/c64461a0ac9d674a68d97b2f4720d6a575d2085d))
+* **project:** [juno-core] update miss update dark json in example ([ff1fb7e](https://github.com/ringcentral/juno/commit/ff1fb7e396a6d51167ffb7d52ea0868b50d2d1fe))
+
 ### [2.39.2](https://github.com/ringcentral/juno/compare/juno-core-v2.39.1...juno-core-v2.39.2) (2023-12-04)
 
 
