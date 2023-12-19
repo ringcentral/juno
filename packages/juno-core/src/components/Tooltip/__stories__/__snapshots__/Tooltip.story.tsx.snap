@@ -3017,3 +3017,138 @@ exports[`Storyshots 🚀 Cleanup Components/Tooltip Tooltip With Interactive Lin
   />
 </button>
 `;
+
+exports[`Storyshots 🚀 Cleanup Components/Tooltip Tooltip With Toggle Show 1`] = `
+Array [
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+}
+
+<h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    When host anchor be disappear, tooltip should also be hidden
+  </h5>,
+  .c0 {
+  text-transform: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-shadow: unset;
+  border-radius: 4px;
+  min-width: 96px;
+  min-height: 36px;
+  padding: 0px 16px;
+}
+
+.c0 .RcButton-startIcon {
+  margin-right: 8px;
+}
+
+.c0 .RcButton-endIcon {
+  margin-left: 8px;
+}
+
+.c0.RcButton-text {
+  color: #066FAC;
+}
+
+.c0.RcButton-text.RcButton-disabled {
+  color: #C7C7C7;
+}
+
+.c0.RcButton-contained {
+  color: #fff;
+  background-color: #066FAC;
+}
+
+.c0.RcButton-contained.RcButton-disabled {
+  background-color: #E5E5E5;
+  color: #939393;
+}
+
+.c0.RcButton-outlined {
+  color: #066FAC;
+  border-color: #066FAC;
+  padding: 0px 15px;
+}
+
+.c0.RcButton-outlined.RcButton-disabled {
+  color: #C7C7C7;
+  border-color: #C7C7C7;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-text:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-contained:hover {
+    background-color: rgba(6,111,172,0.92);
+  }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c0.RcButton-outlined:hover {
+    background-color: rgba(6,111,172,0.08);
+  }
+}
+
+<button
+    aria-describedby={null}
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained RcButton-contained c0"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    style={
+      Object {
+        "display": undefined,
+      }
+    }
+    tabIndex={0}
+    title="I'm tooltip"
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Button
+    </span>
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>,
+]
+`;
