@@ -1,4 +1,16 @@
 
+### [2.40.1](https://github.com/ringcentral/juno/compare/juno-core-v2.40.0...juno-core-v2.40.1) (2023-12-21)
+
+
+### Features
+
+* **juno-core:** hide tooltip when host element be hidden or disappear ([12ea133](https://github.com/ringcentral/juno/commit/12ea133e952c5698a835562145f121ff09fb8068))
+
+
+### Bug Fixes
+
+* **Doc:** [juno-core] update example to OGG ([0162006](https://github.com/ringcentral/juno/commit/0162006462c645d94ff5c659f9865b702ea768b6))
+
 ## [2.40.0](https://github.com/ringcentral/juno/compare/juno-core-v2.39.2...juno-core-v2.40.0) (2023-12-19)
 
 
