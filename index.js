@@ -5387,6 +5387,7 @@ __export(src_exports2, {
   rippleStyle: () => rippleStyle,
   setAlpha: () => setAlpha,
   setOpacity: () => setOpacity,
+  setRef: () => setRef2,
   setSelectionPosition: () => setSelectionPosition,
   setTransitionStyle: () => setTransitionStyle,
   shadowBorder: () => shadowBorder,
@@ -47917,6 +47918,7 @@ __export(juno_core_exports, {
   rippleStyle: () => rippleStyle,
   setAlpha: () => setAlpha,
   setOpacity: () => setOpacity,
+  setRef: () => setRef2,
   setSelectionPosition: () => setSelectionPosition,
   setTransitionStyle: () => setTransitionStyle,
   shadowBorder: () => shadowBorder,
@@ -48308,6 +48310,7 @@ __export(src_exports, {
   rippleStyle: () => rippleStyle,
   setAlpha: () => setAlpha,
   setOpacity: () => setOpacity,
+  setRef: () => setRef2,
   setSelectionPosition: () => setSelectionPosition,
   setTransitionStyle: () => setTransitionStyle,
   shadowBorder: () => shadowBorder,
@@ -50834,6 +50837,7 @@ function useForceUpdate() {
 
 // ../juno-core/src/foundation/hooks/useForkRef/useForkRef.ts
 var useForkRef2 = useForkRef;
+var setRef2 = setRef;
 
 // ../juno-core/src/foundation/hooks/useGlobalListener/createGlobalListener.ts
 var globalListenerEventMap = /* @__PURE__ */ new Map();
@@ -54631,12 +54635,30 @@ var _RcTooltip = forwardRef657((inProps, ref2) => {
   } = props;
   const { externalWindow } = useRcPortalWindowContext();
   const [isDisabledButton, setIsDisabledButton] = useState23(false);
+  const popperInnerRef = useRef51(null);
   const innerRef = useRef51(null);
   const tooltipRef = useForkRef2(ref2, innerRef);
   const classes = useMemo10(() => combineClasses(combineClasses({ popper: classNameProp }, RcTooltipClasses), classesProp), [classNameProp, classesProp]);
-  const PopperProps = useMemo10(() => combineProps({
-    container: externalWindow?.document.body
-  }, PopperPropsProp), [PopperPropsProp, externalWindow?.document.body]);
+  const PopperProps = useMemo10(() => {
+    const { ref: tooltipPopperRef, ...restPopperPropsProp } = PopperPropsProp || {};
+    return {
+      ...combineProps({
+        container: externalWindow?.document.body,
+        popperOptions: {
+          onUpdate: (e2) => {
+            const tooltipElm = popperInnerRef?.current;
+            if (tooltipElm && e2.popper && e2.popper.left < 0 && e2.popper.top <= 0) {
+              tooltipElm.style.display = "none";
+            }
+          }
+        }
+      }, restPopperPropsProp),
+      ref: (elm) => {
+        popperInnerRef.current = elm;
+        setRef2(tooltipPopperRef, elm);
+      }
+    };
+  }, [PopperPropsProp, externalWindow?.document.body]);
   const forceHideAdditionProps = useTooltipForceHide({
     ref: innerRef,
     tooltipForceHide,
@@ -69377,7 +69399,7 @@ function preventHtml5Dnd(event) {
 }
 function Draggable(props) {
   var ref2 = useRef74(null);
-  var setRef2 = useCallback26(function(el2) {
+  var setRef3 = useCallback26(function(el2) {
     ref2.current = el2;
   }, []);
   var getRef = useCallback26(function() {
@@ -69436,7 +69458,7 @@ function Draggable(props) {
     var style3 = getStyle$1(mapped);
     var onTransitionEnd2 = mapped.type === "DRAGGING" && mapped.dropping ? onMoveEnd : null;
     var result = {
-      innerRef: setRef2,
+      innerRef: setRef3,
       draggableProps: {
         "data-rbd-draggable-context-id": contextId,
         "data-rbd-draggable-id": draggableId,
@@ -69446,7 +69468,7 @@ function Draggable(props) {
       dragHandleProps
     };
     return result;
-  }, [contextId, dragHandleProps, draggableId, mapped, onMoveEnd, setRef2]);
+  }, [contextId, dragHandleProps, draggableId, mapped, onMoveEnd, setRef3]);
   var rubric = useMemo46(function() {
     return {
       draggableId: descriptor.id,
@@ -86001,6 +86023,7 @@ export {
   rippleStyle,
   setAlpha,
   setOpacity,
+  setRef2 as setRef,
   setSelectionPosition,
   setTransitionStyle,
   shadowBorder,
