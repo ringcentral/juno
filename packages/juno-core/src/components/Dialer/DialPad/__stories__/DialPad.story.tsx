@@ -1,7 +1,7 @@
 import React, { ComponentProps } from 'react';
 
 import {
-  RcDialerPadSounds,
+  RcDialerPadSoundsMPEG,
   RcDialPad,
   RcDialPadButton,
   spacing,
@@ -36,7 +36,7 @@ export const DialPad: Story<DialPadProps> = ({ children, ...args }) => {
   return (
     <Wrapper>
       <RcDialPad
-        sounds={RcDialerPadSounds}
+        sounds={RcDialerPadSoundsMPEG}
         getDialPadButtonProps={(v) => ({ 'data-test-id': `${v}` })}
         {...args}
       />
@@ -57,7 +57,7 @@ export const CustomDialPad: Story<DialPadProps> = ({ children, ...args }) => {
   return (
     <CustomWrapper>
       <RcDialPad
-        sounds={RcDialerPadSounds}
+        sounds={RcDialerPadSoundsMPEG}
         getDialPadButtonProps={(v) => ({
           'data-test-id': `${v}`,
           size: 'large',

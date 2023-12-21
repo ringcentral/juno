@@ -326,7 +326,7 @@ const FullDialer: FunctionComponent<DialerProps> = ({ children, ...rest }) => {
             </RcSelect>
           </BodyTop>
           <RcDialPad
-            sounds={RcDialerPadSounds}
+            sounds={RcDialerPadSoundsMPEG}
             getDialPadButtonProps={(v) => ({ 'data-test-id': `${v}` })}
             {...dialKeyboardProps}
           />
@@ -662,7 +662,7 @@ export const KeypadMode: Story<any> = () => {
                 }}
                 placeholder="Enter a number"
               />
-              <RcDialPad control={control} sounds={RcDialerPadSounds} />
+              <RcDialPad control={control} sounds={RcDialerPadSoundsMPEG} />
             </RcDialer>
           </RcPaper>
         </StyledCollapse>
