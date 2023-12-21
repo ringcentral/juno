@@ -18,7 +18,7 @@ import {
   RcCollapse,
   RcDialDelete,
   RcDialer,
-  RcDialerPadSounds,
+  RcDialerPadSoundsOGG,
   RcDialPad,
   RcDialTextField,
   RcDownshiftDefaultFilterOptions,
@@ -488,7 +488,7 @@ export const Dialer: Story<DialerProps> = ({ ...args }) => {
         <RcText align="center" color="neutral.f06" variant="title1">
           OGG
         </RcText>
-        <SimpleDialer {...args} sounds={RcDialerPadSounds} />
+        <SimpleDialer {...args} sounds={RcDialerPadSoundsOGG} />
       </div>
     </RcBox>
   );
