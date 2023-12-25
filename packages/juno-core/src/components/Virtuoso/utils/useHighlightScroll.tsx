@@ -1,10 +1,10 @@
 import React, { useRef } from 'react';
 
-import { IndexLocationWithAlign, ListItem } from 'react-virtuoso';
+import { FlatIndexLocationWithAlign, ListItem } from '../react-virtuoso';
 
 type UseHighlightScrollParams = {
   /** function to call to scroll to target index */
-  scrollToIndex: (location: IndexLocationWithAlign) => void;
+  scrollToIndex: (location: FlatIndexLocationWithAlign) => void;
   /** that scroll container height ref */
   containerHeighRef: React.MutableRefObject<number>;
 };

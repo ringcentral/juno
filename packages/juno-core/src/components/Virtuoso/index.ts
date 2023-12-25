@@ -1,2 +1,2 @@
-export * from './Virtuoso';
+export * from './react-virtuoso';
 export * from './utils';

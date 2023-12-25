@@ -64203,6 +64203,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Virtualized Table 1`] = 
       style={
         Object {
           "borderSpacing": 0,
+          "overflowAnchor": "none",
         }
       }
     >
@@ -66020,7 +66021,7 @@ exports[`Storyshots 🚀 Cleanup Components/Table/Table Virtualized Table 1`] = 
           Object {
             "position": "sticky",
             "top": 0,
-            "zIndex": 1,
+            "zIndex": 2,
           }
         }
       >

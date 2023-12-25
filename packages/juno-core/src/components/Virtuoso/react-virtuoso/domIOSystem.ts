@@ -1,40 +1,40 @@
-import * as u from '@virtuoso.dev/urx';
-
-import { ScrollContainerState } from './interfaces';
+import * as u from './urx'
+import { ScrollContainerState } from './interfaces'
 
 export const domIOSystem = u.system(
   () => {
-    const scrollContainerState = u.stream<ScrollContainerState>();
-    const scrollTop = u.stream<number>();
-    const deviation = u.statefulStream(0);
-    const smoothScrollTargetReached = u.stream<true>();
-    const statefulScrollTop = u.statefulStream(0);
-    const viewportHeight = u.stream<number>();
-    const scrollHeight = u.stream<number>();
-    const headerHeight = u.statefulStream(0);
-    const footerHeight = u.statefulStream(0);
-    const scrollTo = u.stream<ScrollToOptions>();
-    const scrollBy = u.stream<ScrollToOptions>();
-    const scrollingInProgress = u.statefulStream(false);
-    const react18ConcurrentRendering = u.statefulStream(false);
+    const scrollContainerState = u.stream<ScrollContainerState>()
+    const scrollTop = u.stream<number>()
+    const deviation = u.statefulStream(0)
+    const smoothScrollTargetReached = u.stream<true>()
+    const statefulScrollTop = u.statefulStream(0)
+    const viewportHeight = u.stream<number>()
+    const scrollHeight = u.stream<number>()
+    const headerHeight = u.statefulStream(0)
+    const fixedHeaderHeight = u.statefulStream(0)
+    const fixedFooterHeight = u.statefulStream(0)
+    const footerHeight = u.statefulStream(0)
+    const scrollTo = u.stream<ScrollToOptions>()
+    const scrollBy = u.stream<ScrollToOptions>()
+    const scrollingInProgress = u.statefulStream(false)
 
     u.connect(
       u.pipe(
         scrollContainerState,
-        u.map(({ scrollTop }) => scrollTop),
+        u.map(({ scrollTop }) => scrollTop)
       ),
-      scrollTop,
-    );
+      scrollTop
+    )
 
     u.connect(
       u.pipe(
         scrollContainerState,
-        u.map(({ scrollHeight }) => scrollHeight),
+        u.map(({ scrollHeight }) => scrollHeight)
       ),
-      scrollHeight,
-    );
+      scrollHeight
+    )
 
-    u.connect(scrollTop, statefulScrollTop);
+    u.connect(scrollTop, statefulScrollTop)
 
     return {
       // input
@@ -42,10 +42,11 @@ export const domIOSystem = u.system(
       scrollTop,
       viewportHeight,
       headerHeight,
+      fixedHeaderHeight,
+      fixedFooterHeight,
       footerHeight,
       scrollHeight,
       smoothScrollTargetReached,
-      react18ConcurrentRendering,
 
       // signals
       scrollTo,
@@ -55,8 +56,8 @@ export const domIOSystem = u.system(
       statefulScrollTop,
       deviation,
       scrollingInProgress,
-    };
+    }
   },
   [],
-  { singleton: true },
-);
+  { singleton: true }
+)

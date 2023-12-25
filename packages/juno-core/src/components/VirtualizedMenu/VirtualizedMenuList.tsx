@@ -29,7 +29,7 @@ import { RcList } from '../List/List/List';
 import { RcMenuListProps } from '../Menu/MenuList';
 import {
   Components,
-  IndexLocationWithAlign,
+  FlatIndexLocationWithAlign,
   isOutOfRange,
   ListRange,
   modifyVlScrollerStyle,
@@ -184,7 +184,7 @@ const _RcVirtualizedMenuList = forwardRef<any, RcVirtualizedMenuListProps>(
       scrollToHighlightedIndex,
     } = useHighlightScroll({
       containerHeighRef,
-      scrollToIndex: (location: IndexLocationWithAlign) => {
+      scrollToIndex: (location: FlatIndexLocationWithAlign) => {
         vlRef.current?.scrollToIndex(location);
 
         if (location.index === 0) modifyScrollPosition();

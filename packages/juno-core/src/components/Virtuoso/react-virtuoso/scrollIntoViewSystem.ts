@@ -1,89 +1,85 @@
-import * as u from '@virtuoso.dev/urx';
+import * as u from './urx'
+import { findMaxKeyValue } from './AATree'
+import { domIOSystem } from './domIOSystem'
+import { offsetOf, originalIndexFromLocation, sizeSystem } from './sizeSystem'
+import { loggerSystem } from './loggerSystem'
+import { scrollToIndexSystem } from './scrollToIndexSystem'
+import { listStateSystem } from './listStateSystem'
+import { ScrollIntoViewLocation, CalculateViewLocation } from './interfaces'
 
-import { findMaxKeyValue } from './AATree';
-import { domIOSystem } from './domIOSystem';
-import { ScrollIntoViewLocation } from './interfaces';
-import { listStateSystem } from './listStateSystem';
-import { loggerSystem } from './loggerSystem';
-import { scrollToIndexSystem } from './scrollToIndexSystem';
-import { offsetOf, originalIndexFromItemIndex, sizeSystem } from './sizeSystem';
+const defaultCalculateViewLocation: CalculateViewLocation = ({
+  itemTop,
+  itemBottom,
+  viewportTop,
+  viewportBottom,
+  locationParams: { behavior, align, ...rest },
+}) => {
+  if (itemTop < viewportTop) {
+    return { ...rest, behavior, align: align ?? 'start' }
+  }
+  if (itemBottom > viewportBottom) {
+    return { ...rest, behavior, align: align ?? 'end' }
+  }
+  return null
+}
 
 export const scrollIntoViewSystem = u.system(
   ([
-    { sizes, totalCount },
-    { scrollTop, viewportHeight, headerHeight, scrollingInProgress },
+    { sizes, totalCount, gap },
+    { scrollTop, viewportHeight, headerHeight, fixedHeaderHeight, fixedFooterHeight, scrollingInProgress },
     { scrollToIndex },
   ]) => {
-    const scrollIntoView = u.stream<ScrollIntoViewLocation>();
+    const scrollIntoView = u.stream<ScrollIntoViewLocation>()
 
     u.connect(
       u.pipe(
         scrollIntoView,
-        u.withLatestFrom(
-          sizes,
-          viewportHeight,
-          totalCount,
-          headerHeight,
-          scrollTop,
-        ),
-        u.map(
-          ([
-            { index, behavior = 'auto', done },
-            sizes,
-            viewportHeight,
-            totalCount,
-            headerHeight,
-            scrollTop,
-          ]) => {
-            const lastIndex = totalCount - 1;
-            let location = null;
-            index = originalIndexFromItemIndex(index, sizes);
-            index = Math.max(0, index, Math.min(lastIndex, index));
+        u.withLatestFrom(sizes, viewportHeight, totalCount, headerHeight, fixedHeaderHeight, fixedFooterHeight, scrollTop),
+        u.withLatestFrom(gap),
+        u.map(([[viewLocation, sizes, viewportHeight, totalCount, headerHeight, fixedHeaderHeight, fixedFooterHeight, scrollTop], gap]) => {
+          const { done, behavior, align, calculateViewLocation = defaultCalculateViewLocation, ...rest } = viewLocation
+          const actualIndex = originalIndexFromLocation(viewLocation, sizes, totalCount - 1)
 
-            const itemTop = offsetOf(index, sizes.offsetTree) + headerHeight;
-            if (itemTop < scrollTop) {
-              location = { index, behavior, align: 'start' };
-            } else {
-              const itemBottom =
-                itemTop + findMaxKeyValue(sizes.sizeTree, index)[1]!;
+          const itemTop = offsetOf(actualIndex, sizes.offsetTree, gap) + headerHeight + fixedHeaderHeight
+          const itemBottom = itemTop + findMaxKeyValue(sizes.sizeTree, actualIndex)[1]!
+          const viewportTop = scrollTop + fixedHeaderHeight
+          const viewportBottom = scrollTop + viewportHeight - fixedFooterHeight
 
-              if (itemBottom > scrollTop + viewportHeight) {
-                location = { index, behavior, align: 'end' };
-              }
-            }
+          const location = calculateViewLocation({
+            itemTop,
+            itemBottom,
+            viewportTop,
+            viewportBottom,
+            locationParams: { behavior, align, ...rest },
+          })
 
-            if (location) {
-              done &&
-                u.handleNext(
-                  u.pipe(
-                    scrollingInProgress,
-                    u.skip(1),
-                    u.filter((value) => value === false),
-                  ),
-                  done,
-                );
-            } else {
-              done && done();
-            }
+          if (location) {
+            done &&
+              u.handleNext(
+                u.pipe(
+                  scrollingInProgress,
+                  u.filter((value) => value === false),
+                  // skips the initial publish of false, and the cleanup call.
+                  // but if scrollingInProgress is true, we skip the initial publish.
+                  u.skip(u.getValue(scrollingInProgress) ? 1 : 2)
+                ),
+                done
+              )
+          } else {
+            done && done()
+          }
 
-            return location;
-          },
-        ),
-        u.filter((value) => value !== null),
+          return location
+        }),
+        u.filter((value) => value !== null)
       ),
-      scrollToIndex,
-    );
+      scrollToIndex
+    )
 
     return {
       scrollIntoView,
-    };
+    }
   },
-  u.tup(
-    sizeSystem,
-    domIOSystem,
-    scrollToIndexSystem,
-    listStateSystem,
-    loggerSystem,
-  ),
-  { singleton: true },
-);
+  u.tup(sizeSystem, domIOSystem, scrollToIndexSystem, listStateSystem, loggerSystem),
+  { singleton: true }
+)

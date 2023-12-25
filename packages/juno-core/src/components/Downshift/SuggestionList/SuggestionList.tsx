@@ -34,7 +34,7 @@ import {
 } from '../../VirtualizedMenu/styles';
 import {
   Components,
-  IndexLocationWithAlign,
+  FlatIndexLocationWithAlign,
   modifyVlScrollerStyle,
   useDynamicHeight,
   useHighlightScroll,
@@ -190,7 +190,7 @@ const SuggestionList = forwardRef<any, InnerSuggestionListProps>(
     const { sleep } = useSleep();
 
     const { retry: scrollToIndexWithRetry } = useRetry(
-      async (location: IndexLocationWithAlign) => {
+      async (location: FlatIndexLocationWithAlign) => {
         const toIndex = location.index;
         if (!virtualize) {
           const toElm = listRef.current?.querySelector<HTMLElement>(

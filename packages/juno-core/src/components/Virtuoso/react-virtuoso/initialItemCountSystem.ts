@@ -1,47 +1,25 @@
-import * as u from '@virtuoso.dev/urx';
-
-import { buildListState, listStateSystem } from './listStateSystem';
-import { propsReadySystem } from './propsReadySystem';
-import { sizeSystem } from './sizeSystem';
+import * as u from './urx'
+import { listStateSystem, buildListStateFromItemCount } from './listStateSystem'
+import { sizeSystem } from './sizeSystem'
+import { propsReadySystem } from './propsReadySystem'
+import { initialTopMostItemIndexSystem } from './initialTopMostItemIndexSystem'
 
 export const initialItemCountSystem = u.system(
-  ([{ sizes, firstItemIndex, data }, { listState }, { didMount }]) => {
-    const initialItemCount = u.statefulStream(0);
-
+  ([{ sizes, firstItemIndex, data, gap }, { initialTopMostItemIndex }, { initialItemCount, listState }, { didMount }]) => {
     u.connect(
       u.pipe(
         didMount,
         u.withLatestFrom(initialItemCount),
         u.filter(([, count]) => count !== 0),
-        u.withLatestFrom(sizes, firstItemIndex, data),
-        u.map(([[, count], sizes, firstItemIndex, data = []]) => {
-          let includedGroupsCount = 0;
-          if (sizes.groupIndices.length > 0) {
-            for (const index of sizes.groupIndices) {
-              if (index - includedGroupsCount >= count) {
-                break;
-              }
-              includedGroupsCount++;
-            }
-          }
-          const adjustedCount = count + includedGroupsCount;
-          const items = Array.from({ length: adjustedCount }).map(
-            (_, index) => ({ index, size: 0, offset: 0, data: data[index] }),
-          );
-          return buildListState(
-            items,
-            [],
-            adjustedCount,
-            sizes,
-            firstItemIndex,
-          );
-        }),
+        u.withLatestFrom(initialTopMostItemIndex, sizes, firstItemIndex, gap, data),
+        u.map(([[, count], initialTopMostItemIndexValue, sizes, firstItemIndex, gap, data = []]) => {
+          return buildListStateFromItemCount(count, initialTopMostItemIndexValue, sizes, firstItemIndex, gap, data)
+        })
       ),
-      listState,
-    );
-
-    return { initialItemCount };
+      listState
+    )
+    return {}
   },
-  u.tup(sizeSystem, listStateSystem, propsReadySystem),
-  { singleton: true },
-);
+  u.tup(sizeSystem, initialTopMostItemIndexSystem, listStateSystem, propsReadySystem),
+  { singleton: true }
+)
