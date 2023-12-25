@@ -1455,8 +1455,8 @@ var require_uniqueId = __commonJS({
     var toString2 = require_toString();
     var idCounter = 0;
     function uniqueId4(prefix4) {
-      var id3 = ++idCounter;
-      return toString2(prefix4) + id3;
+      var id2 = ++idCounter;
+      return toString2(prefix4) + id2;
     }
     module.exports = uniqueId4;
   }
@@ -4176,7 +4176,7 @@ var require_interopRequireDefault = __commonJS({
 // ../../node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js
 var require_objectWithoutPropertiesLoose = __commonJS({
   "../../node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js"(exports, module) {
-    function _objectWithoutPropertiesLoose3(source, excluded) {
+    function _objectWithoutPropertiesLoose2(source, excluded) {
       if (source == null)
         return {};
       var target = {};
@@ -4190,7 +4190,7 @@ var require_objectWithoutPropertiesLoose = __commonJS({
       }
       return target;
     }
-    module.exports = _objectWithoutPropertiesLoose3, module.exports.__esModule = true, module.exports["default"] = module.exports;
+    module.exports = _objectWithoutPropertiesLoose2, module.exports.__esModule = true, module.exports["default"] = module.exports;
   }
 });
 
@@ -4317,7 +4317,7 @@ var require_dayjs_min = __commonJS({
       typeof exports == "object" && typeof module != "undefined" ? module.exports = e2() : typeof define == "function" && define.amd ? define(e2) : (t2 = typeof globalThis != "undefined" ? globalThis : t2 || self).dayjs = e2();
     }(exports, function() {
       "use strict";
-      var t2 = 1e3, e2 = 6e4, n2 = 36e5, r3 = "millisecond", i2 = "second", s2 = "minute", u24 = "hour", a2 = "day", o2 = "week", f = "month", h2 = "quarter", c2 = "year", d2 = "date", l2 = "Invalid Date", $2 = /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[Tt\s]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/, y2 = /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g, M2 = { name: "en", weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"), months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"), ordinal: function(t3) {
+      var t2 = 1e3, e2 = 6e4, n2 = 36e5, r3 = "millisecond", i2 = "second", s2 = "minute", u31 = "hour", a2 = "day", o2 = "week", f = "month", h2 = "quarter", c2 = "year", d2 = "date", l2 = "Invalid Date", $2 = /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[Tt\s]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/, y2 = /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g, M2 = { name: "en", weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"), months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"), ordinal: function(t3) {
         var e3 = ["th", "st", "nd", "rd"], n3 = t3 % 100;
         return "[" + t3 + (e3[(n3 - 20) % 10] || e3[n3] || e3[0]) + "]";
       } }, m = function(t3, e3, n3) {
@@ -4329,12 +4329,12 @@ var require_dayjs_min = __commonJS({
       }, m: function t3(e3, n3) {
         if (e3.date() < n3.date())
           return -t3(n3, e3);
-        var r4 = 12 * (n3.year() - e3.year()) + (n3.month() - e3.month()), i3 = e3.clone().add(r4, f), s3 = n3 - i3 < 0, u25 = e3.clone().add(r4 + (s3 ? -1 : 1), f);
-        return +(-(r4 + (n3 - i3) / (s3 ? i3 - u25 : u25 - i3)) || 0);
+        var r4 = 12 * (n3.year() - e3.year()) + (n3.month() - e3.month()), i3 = e3.clone().add(r4, f), s3 = n3 - i3 < 0, u32 = e3.clone().add(r4 + (s3 ? -1 : 1), f);
+        return +(-(r4 + (n3 - i3) / (s3 ? i3 - u32 : u32 - i3)) || 0);
       }, a: function(t3) {
         return t3 < 0 ? Math.ceil(t3) || 0 : Math.floor(t3);
       }, p: function(t3) {
-        return { M: f, y: c2, w: o2, d: a2, D: d2, h: u24, m: s2, s: i2, ms: r3, Q: h2 }[t3] || String(t3 || "").toLowerCase().replace(/s$/, "");
+        return { M: f, y: c2, w: o2, d: a2, D: d2, h: u31, m: s2, s: i2, ms: r3, Q: h2 }[t3] || String(t3 || "").toLowerCase().replace(/s$/, "");
       }, u: function(t3) {
         return t3 === void 0;
       } }, g2 = "en", D2 = {};
@@ -4348,9 +4348,9 @@ var require_dayjs_min = __commonJS({
         if (typeof e3 == "string") {
           var s3 = e3.toLowerCase();
           D2[s3] && (i3 = s3), n3 && (D2[s3] = n3, i3 = s3);
-          var u25 = e3.split("-");
-          if (!i3 && u25.length > 1)
-            return t3(u25[0]);
+          var u32 = e3.split("-");
+          if (!i3 && u32.length > 1)
+            return t3(u32[0]);
         } else {
           var a3 = e3.name;
           D2[a3] = e3, i3 = a3;
@@ -4426,7 +4426,7 @@ var require_dayjs_min = __commonJS({
             case a2:
             case d2:
               return $3(v3 + "Hours", 0);
-            case u24:
+            case u31:
               return $3(v3 + "Minutes", 1);
             case s2:
               return $3(v3 + "Seconds", 2);
@@ -4438,7 +4438,7 @@ var require_dayjs_min = __commonJS({
         }, m2.endOf = function(t3) {
           return this.startOf(t3, false);
         }, m2.$set = function(t3, e3) {
-          var n3, o3 = O2.p(t3), h3 = "set" + (this.$u ? "UTC" : ""), l3 = (n3 = {}, n3[a2] = h3 + "Date", n3[d2] = h3 + "Date", n3[f] = h3 + "Month", n3[c2] = h3 + "FullYear", n3[u24] = h3 + "Hours", n3[s2] = h3 + "Minutes", n3[i2] = h3 + "Seconds", n3[r3] = h3 + "Milliseconds", n3)[o3], $3 = o3 === a2 ? this.$D + (e3 - this.$W) : e3;
+          var n3, o3 = O2.p(t3), h3 = "set" + (this.$u ? "UTC" : ""), l3 = (n3 = {}, n3[a2] = h3 + "Date", n3[d2] = h3 + "Date", n3[f] = h3 + "Month", n3[c2] = h3 + "FullYear", n3[u31] = h3 + "Hours", n3[s2] = h3 + "Minutes", n3[i2] = h3 + "Seconds", n3[r3] = h3 + "Milliseconds", n3)[o3], $3 = o3 === a2 ? this.$D + (e3 - this.$W) : e3;
           if (o3 === f || o3 === c2) {
             var y3 = this.clone().set(d2, 1);
             y3.$d[l3]($3), y3.init(), this.$d = y3.set(d2, Math.min(this.$D, y3.daysInMonth())).$d;
@@ -4464,7 +4464,7 @@ var require_dayjs_min = __commonJS({
             return y3(1);
           if ($3 === o2)
             return y3(7);
-          var M4 = (d3 = {}, d3[s2] = e2, d3[u24] = n2, d3[i2] = t2, d3)[$3] || 1, m3 = this.$d.getTime() + r4 * M4;
+          var M4 = (d3 = {}, d3[s2] = e2, d3[u31] = n2, d3[i2] = t2, d3)[$3] || 1, m3 = this.$d.getTime() + r4 * M4;
           return O2.w(m3, this);
         }, m2.subtract = function(t3, e3) {
           return this.add(-1 * t3, e3);
@@ -4472,14 +4472,14 @@ var require_dayjs_min = __commonJS({
           var e3 = this, n3 = this.$locale();
           if (!this.isValid())
             return n3.invalidDate || l2;
-          var r4 = t3 || "YYYY-MM-DDTHH:mm:ssZ", i3 = O2.z(this), s3 = this.$H, u25 = this.$m, a3 = this.$M, o3 = n3.weekdays, f2 = n3.months, h3 = function(t4, n4, i4, s4) {
+          var r4 = t3 || "YYYY-MM-DDTHH:mm:ssZ", i3 = O2.z(this), s3 = this.$H, u32 = this.$m, a3 = this.$M, o3 = n3.weekdays, f2 = n3.months, h3 = function(t4, n4, i4, s4) {
             return t4 && (t4[n4] || t4(e3, r4)) || i4[n4].slice(0, s4);
           }, c3 = function(t4) {
             return O2.s(s3 % 12 || 12, t4, "0");
           }, d3 = n3.meridiem || function(t4, e4, n4) {
             var r5 = t4 < 12 ? "AM" : "PM";
             return n4 ? r5.toLowerCase() : r5;
-          }, $3 = { YY: String(this.$y).slice(-2), YYYY: this.$y, M: a3 + 1, MM: O2.s(a3 + 1, 2, "0"), MMM: h3(n3.monthsShort, a3, f2, 3), MMMM: h3(f2, a3), D: this.$D, DD: O2.s(this.$D, 2, "0"), d: String(this.$W), dd: h3(n3.weekdaysMin, this.$W, o3, 2), ddd: h3(n3.weekdaysShort, this.$W, o3, 3), dddd: o3[this.$W], H: String(s3), HH: O2.s(s3, 2, "0"), h: c3(1), hh: c3(2), a: d3(s3, u25, true), A: d3(s3, u25, false), m: String(u25), mm: O2.s(u25, 2, "0"), s: String(this.$s), ss: O2.s(this.$s, 2, "0"), SSS: O2.s(this.$ms, 3, "0"), Z: i3 };
+          }, $3 = { YY: String(this.$y).slice(-2), YYYY: this.$y, M: a3 + 1, MM: O2.s(a3 + 1, 2, "0"), MMM: h3(n3.monthsShort, a3, f2, 3), MMMM: h3(f2, a3), D: this.$D, DD: O2.s(this.$D, 2, "0"), d: String(this.$W), dd: h3(n3.weekdaysMin, this.$W, o3, 2), ddd: h3(n3.weekdaysShort, this.$W, o3, 3), dddd: o3[this.$W], H: String(s3), HH: O2.s(s3, 2, "0"), h: c3(1), hh: c3(2), a: d3(s3, u32, true), A: d3(s3, u32, false), m: String(u32), mm: O2.s(u32, 2, "0"), s: String(this.$s), ss: O2.s(this.$s, 2, "0"), SSS: O2.s(this.$ms, 3, "0"), Z: i3 };
           return r4.replace(y2, function(t4, e4) {
             return e4 || $3[t4] || i3.replace(":", "");
           });
@@ -4487,7 +4487,7 @@ var require_dayjs_min = __commonJS({
           return 15 * -Math.round(this.$d.getTimezoneOffset() / 15);
         }, m2.diff = function(r4, d3, l3) {
           var $3, y3 = O2.p(d3), M4 = w2(r4), m3 = (M4.utcOffset() - this.utcOffset()) * e2, v3 = this - M4, g3 = O2.m(this, M4);
-          return g3 = ($3 = {}, $3[c2] = g3 / 12, $3[f] = g3, $3[h2] = g3 / 3, $3[o2] = (v3 - m3) / 6048e5, $3[a2] = (v3 - m3) / 864e5, $3[u24] = v3 / n2, $3[s2] = v3 / e2, $3[i2] = v3 / t2, $3)[y3] || v3, l3 ? g3 : O2.a(g3);
+          return g3 = ($3 = {}, $3[c2] = g3 / 12, $3[f] = g3, $3[h2] = g3 / 3, $3[o2] = (v3 - m3) / 6048e5, $3[a2] = (v3 - m3) / 864e5, $3[u31] = v3 / n2, $3[s2] = v3 / e2, $3[i2] = v3 / t2, $3)[y3] || v3, l3 ? g3 : O2.a(g3);
         }, m2.daysInMonth = function() {
           return this.endOf(f).$D;
         }, m2.$locale = function() {
@@ -4509,7 +4509,7 @@ var require_dayjs_min = __commonJS({
           return this.$d.toUTCString();
         }, M3;
       }(), T2 = _32.prototype;
-      return w2.prototype = T2, [["$ms", r3], ["$s", i2], ["$m", s2], ["$H", u24], ["$W", a2], ["$M", f], ["$y", c2], ["$D", d2]].forEach(function(t3) {
+      return w2.prototype = T2, [["$ms", r3], ["$s", i2], ["$m", s2], ["$H", u31], ["$W", a2], ["$M", f], ["$y", c2], ["$D", d2]].forEach(function(t3) {
         T2[t3[1]] = function(e3) {
           return this.$g(e3, t3[0], t3[1]);
         };
@@ -4548,7 +4548,7 @@ var require_customParseFormat = __commonJS({
       }], h2 = function(e3) {
         var t3 = o2[e3];
         return t3 && (t3.indexOf ? t3 : t3.s.concat(t3.f));
-      }, u24 = function(e3, t3) {
+      }, u31 = function(e3, t3) {
         var n3, r4 = o2.meridiem;
         if (r4) {
           for (var i3 = 1; i3 <= 24; i3 += 1)
@@ -4560,9 +4560,9 @@ var require_customParseFormat = __commonJS({
           n3 = e3 === (t3 ? "pm" : "PM");
         return n3;
       }, d2 = { A: [i2, function(e3) {
-        this.afternoon = u24(e3, false);
+        this.afternoon = u31(e3, false);
       }], a: [i2, function(e3) {
-        this.afternoon = u24(e3, true);
+        this.afternoon = u31(e3, true);
       }], S: [/\d/, function(e3) {
         this.milliseconds = 100 * +e3;
       }], SS: [n2, function(e3) {
@@ -4598,7 +4598,7 @@ var require_customParseFormat = __commonJS({
             return t4 || n5.slice(1);
           });
         })).match(t2), a3 = s3.length, f2 = 0; f2 < a3; f2 += 1) {
-          var h3 = s3[f2], u25 = d2[h3], c3 = u25 && u25[0], l2 = u25 && u25[1];
+          var h3 = s3[f2], u32 = d2[h3], c3 = u32 && u32[0], l2 = u32 && u32[1];
           s3[f2] = l2 ? { regex: c3, parser: l2 } : h3.replace(/^\[|\]$/g, "");
         }
         return function(e3) {
@@ -4607,8 +4607,8 @@ var require_customParseFormat = __commonJS({
             if (typeof i4 == "string")
               r5 += i4.length;
             else {
-              var o3 = i4.regex, f3 = i4.parser, h4 = e3.slice(r5), u26 = o3.exec(h4)[0];
-              f3.call(t3, u26), e3 = e3.replace(u26, "");
+              var o3 = i4.regex, f3 = i4.parser, h4 = e3.slice(r5), u33 = o3.exec(h4)[0];
+              f3.call(t3, u33), e3 = e3.replace(u33, "");
             }
           }
           return function(e4) {
@@ -4628,19 +4628,19 @@ var require_customParseFormat = __commonJS({
           this.$u = r5;
           var a3 = s3[1];
           if (typeof a3 == "string") {
-            var f2 = s3[2] === true, h3 = s3[3] === true, u25 = f2 || h3, d3 = s3[2];
+            var f2 = s3[2] === true, h3 = s3[3] === true, u32 = f2 || h3, d3 = s3[2];
             h3 && (d3 = s3[2]), o2 = this.$locale(), !f2 && d3 && (o2 = n3.Ls[d3]), this.$d = function(e5, t5, n4) {
               try {
                 if (["x", "X"].indexOf(t5) > -1)
                   return new Date((t5 === "X" ? 1e3 : 1) * e5);
-                var r6 = c2(t5)(e5), i4 = r6.year, o3 = r6.month, s4 = r6.day, a4 = r6.hours, f3 = r6.minutes, h4 = r6.seconds, u26 = r6.milliseconds, d4 = r6.zone, l3 = new Date(), m2 = s4 || (i4 || o3 ? 1 : l3.getDate()), M3 = i4 || l3.getFullYear(), Y2 = 0;
+                var r6 = c2(t5)(e5), i4 = r6.year, o3 = r6.month, s4 = r6.day, a4 = r6.hours, f3 = r6.minutes, h4 = r6.seconds, u33 = r6.milliseconds, d4 = r6.zone, l3 = new Date(), m2 = s4 || (i4 || o3 ? 1 : l3.getDate()), M3 = i4 || l3.getFullYear(), Y2 = 0;
                 i4 && !o3 || (Y2 = o3 > 0 ? o3 - 1 : l3.getMonth());
-                var p = a4 || 0, v2 = f3 || 0, D2 = h4 || 0, g2 = u26 || 0;
+                var p = a4 || 0, v2 = f3 || 0, D2 = h4 || 0, g2 = u33 || 0;
                 return d4 ? new Date(Date.UTC(M3, Y2, m2, p, v2, D2, g2 + 60 * d4.offset * 1e3)) : n4 ? new Date(Date.UTC(M3, Y2, m2, p, v2, D2, g2)) : new Date(M3, Y2, m2, p, v2, D2, g2);
               } catch (e6) {
                 return new Date("");
               }
-            }(t4, a3, r5), this.init(), d3 && d3 !== true && (this.$L = this.locale(d3).$L), u25 && t4 != this.format(a3) && (this.$d = new Date("")), o2 = {};
+            }(t4, a3, r5), this.init(), d3 && d3 !== true && (this.$L = this.locale(d3).$L), u32 && t4 != this.format(a3) && (this.$d = new Date("")), o2 = {};
           } else if (a3 instanceof Array)
             for (var l2 = a3.length, m = 1; m <= l2; m += 1) {
               s3[1] = a3[m - 1];
@@ -5285,6 +5285,8 @@ __export(src_exports2, {
   UnmountSymbol: () => UnmountSymbol,
   Virtuoso: () => Virtuoso,
   VirtuosoGrid: () => VirtuosoGrid,
+  VirtuosoGridMockContext: () => VirtuosoGridMockContext,
+  VirtuosoMockContext: () => VirtuosoMockContext,
   a11yKeyboard: () => a11yKeyboard,
   a11yKeyboardCode: () => a11yKeyboardCode,
   backgroundTransition: () => backgroundTransition,
@@ -8866,12 +8868,12 @@ function exactProp(propTypes) {
     return propTypes;
   }
   return _extends({}, propTypes, _defineProperty({}, specialProperty, function(props) {
-    var unsupportedProps = Object.keys(props).filter(function(prop2) {
-      return !propTypes.hasOwnProperty(prop2);
+    var unsupportedProps = Object.keys(props).filter(function(prop) {
+      return !propTypes.hasOwnProperty(prop);
     });
     if (unsupportedProps.length > 0) {
-      return new Error("The following props are not supported: ".concat(unsupportedProps.map(function(prop2) {
-        return "`".concat(prop2, "`");
+      return new Error("The following props are not supported: ".concat(unsupportedProps.map(function(prop) {
+        return "`".concat(prop, "`");
       }).join(", "), ". Please remove them."));
     }
     return null;
@@ -9538,12 +9540,12 @@ function getPath(obj, path) {
   }, obj);
 }
 function style(options) {
-  var prop2 = options.prop, _options$cssProperty = options.cssProperty, cssProperty = _options$cssProperty === void 0 ? options.prop : _options$cssProperty, themeKey = options.themeKey, transform4 = options.transform;
+  var prop = options.prop, _options$cssProperty = options.cssProperty, cssProperty = _options$cssProperty === void 0 ? options.prop : _options$cssProperty, themeKey = options.themeKey, transform4 = options.transform;
   var fn = function fn2(props) {
-    if (props[prop2] == null) {
+    if (props[prop] == null) {
       return null;
     }
-    var propValue = props[prop2];
+    var propValue = props[prop];
     var theme = props.theme;
     var themeMapping = getPath(theme, themeKey) || {};
     var styleFromPropValue = function styleFromPropValue2(propValueFinal) {
@@ -9565,8 +9567,8 @@ function style(options) {
     };
     return handleBreakpoints(props, propValue, styleFromPropValue);
   };
-  fn.propTypes = true ? _defineProperty({}, prop2, responsivePropType_default) : {};
-  fn.filterProps = [prop2];
+  fn.propTypes = true ? _defineProperty({}, prop, responsivePropType_default) : {};
+  fn.filterProps = [prop];
   return fn;
 }
 var style_default = style;
@@ -9642,9 +9644,9 @@ var borders_default = borders;
 var import_prop_types4 = __toModule(require_prop_types());
 function omit(input, fields) {
   var output = {};
-  Object.keys(input).forEach(function(prop2) {
-    if (fields.indexOf(prop2) === -1) {
-      output[prop2] = input[prop2];
+  Object.keys(input).forEach(function(prop) {
+    if (fields.indexOf(prop) === -1) {
+      output[prop] = input[prop];
     }
   });
   return output;
@@ -9954,15 +9956,15 @@ var aliases = {
   paddingX: "px",
   paddingY: "py"
 };
-var getCssProperties = memoize(function(prop2) {
-  if (prop2.length > 2) {
-    if (aliases[prop2]) {
-      prop2 = aliases[prop2];
+var getCssProperties = memoize(function(prop) {
+  if (prop.length > 2) {
+    if (aliases[prop]) {
+      prop = aliases[prop];
     } else {
-      return [prop2];
+      return [prop];
     }
   }
-  var _prop$split = prop2.split(""), _prop$split2 = _slicedToArray(_prop$split, 2), a2 = _prop$split2[0], b2 = _prop$split2[1];
+  var _prop$split = prop.split(""), _prop$split2 = _slicedToArray(_prop$split, 2), a2 = _prop$split2[0], b2 = _prop$split2[1];
   var property = properties[a2];
   var direction = directions[b2] || "";
   return Array.isArray(direction) ? direction.map(function(dir) {
@@ -10027,13 +10029,13 @@ function getStyleFromPropValue(cssProperties, transformer) {
 function spacing(props) {
   var theme = props.theme;
   var transformer = createUnarySpacing(theme);
-  return Object.keys(props).map(function(prop2) {
-    if (spacingKeys.indexOf(prop2) === -1) {
+  return Object.keys(props).map(function(prop) {
+    if (spacingKeys.indexOf(prop) === -1) {
       return null;
     }
-    var cssProperties = getCssProperties(prop2);
+    var cssProperties = getCssProperties(prop);
     var styleFromPropValue = getStyleFromPropValue(cssProperties, transformer);
-    var propValue = props[prop2];
+    var propValue = props[prop];
     return handleBreakpoints(props, propValue, styleFromPropValue);
   }).reduce(merge_default, {});
 }
@@ -10484,12 +10486,12 @@ function toCss(selector, style3, options) {
     if (Array.isArray(fallbacks)) {
       for (var index4 = 0; index4 < fallbacks.length; index4++) {
         var fallback = fallbacks[index4];
-        for (var prop2 in fallback) {
-          var value = fallback[prop2];
+        for (var prop in fallback) {
+          var value = fallback[prop];
           if (value != null) {
             if (result)
               result += linebreak;
-            result += indentStr(prop2 + ":" + space2 + toCssValue(value) + ";", indent);
+            result += indentStr(prop + ":" + space2 + toCssValue(value) + ";", indent);
           }
         }
       }
@@ -10540,7 +10542,7 @@ var BaseStyleRule = /* @__PURE__ */ function() {
       this.renderer = new Renderer2();
   }
   var _proto = BaseStyleRule2.prototype;
-  _proto.prop = function prop2(name, value, options) {
+  _proto.prop = function prop(name, value, options) {
     if (value === void 0)
       return this.style[name];
     var force = options ? options.force : false;
@@ -10551,10 +10553,10 @@ var BaseStyleRule = /* @__PURE__ */ function() {
       newValue = this.options.jss.plugins.onChangeValue(value, name, this);
     }
     var isEmpty3 = newValue == null || newValue === false;
-    var isDefined = name in this.style;
-    if (isEmpty3 && !isDefined && !force)
+    var isDefined2 = name in this.style;
+    if (isEmpty3 && !isDefined2 && !force)
       return this;
-    var remove2 = isEmpty3 && isDefined;
+    var remove2 = isEmpty3 && isDefined2;
     if (remove2)
       delete this.style[name];
     else
@@ -10593,20 +10595,20 @@ var StyleRule = /* @__PURE__ */ function(_BaseStyleRule) {
     var renderer = this.renderer;
     if (renderer) {
       var json = this.toJSON();
-      for (var prop2 in json) {
-        renderer.setProperty(renderable, prop2, json[prop2]);
+      for (var prop in json) {
+        renderer.setProperty(renderable, prop, json[prop]);
       }
     }
     return this;
   };
   _proto2.toJSON = function toJSON() {
     var json = {};
-    for (var prop2 in this.style) {
-      var value = this.style[prop2];
+    for (var prop in this.style) {
+      var value = this.style[prop];
       if (typeof value !== "object")
-        json[prop2] = value;
+        json[prop] = value;
       else if (Array.isArray(value))
-        json[prop2] = toCssValue(value);
+        json[prop] = toCssValue(value);
     }
     return json;
   };
@@ -10776,11 +10778,11 @@ var findReferencedKeyframe = function findReferencedKeyframe2(val, keyframes2) {
   }
   return val;
 };
-var replaceRef = function replaceRef2(style3, prop2, keyframes2) {
-  var value = style3[prop2];
+var replaceRef = function replaceRef2(style3, prop, keyframes2) {
+  var value = style3[prop];
   var refKeyframe = findReferencedKeyframe(value, keyframes2);
   if (refKeyframe !== value) {
-    style3[prop2] = refKeyframe;
+    style3[prop] = refKeyframe;
   }
 };
 var pluginKeyframesRule = {
@@ -10796,12 +10798,12 @@ var pluginKeyframesRule = {
       replaceRef(style3, "animation", sheet.keyframes);
     return style3;
   },
-  onChangeValue: function onChangeValue(val, prop2, rule) {
+  onChangeValue: function onChangeValue(val, prop, rule) {
     var sheet = rule.options.sheet;
     if (!sheet) {
       return val;
     }
-    switch (prop2) {
+    switch (prop) {
       case "animation":
         return findReferencedKeyframe(val, sheet.keyframes);
       case "animation-name":
@@ -11049,11 +11051,11 @@ var RuleList = /* @__PURE__ */ function() {
     plugins3.onUpdate(data, rule, sheet, options);
     if (options.process && style3 && style3 !== rule.style) {
       plugins3.onProcessStyle(rule.style, rule, sheet);
-      for (var prop2 in rule.style) {
-        var nextValue = rule.style[prop2];
-        var prevValue = style3[prop2];
+      for (var prop in rule.style) {
+        var nextValue = rule.style[prop];
+        var prevValue = style3[prop];
         if (nextValue !== prevValue) {
-          rule.prop(prop2, nextValue, forceUpdateOptions);
+          rule.prop(prop, nextValue, forceUpdateOptions);
         }
       }
       for (var _prop in style3) {
@@ -11265,10 +11267,10 @@ var PluginsRegistry = /* @__PURE__ */ function() {
       this.registry.onUpdate[i2](data, rule, sheet, options);
     }
   };
-  _proto.onChangeValue = function onChangeValue2(value, prop2, rule) {
+  _proto.onChangeValue = function onChangeValue2(value, prop, rule) {
     var processedValue = value;
     for (var i2 = 0; i2 < this.registry.onChangeValue.length; i2++) {
-      processedValue = this.registry.onChangeValue[i2](processedValue, prop2, rule);
+      processedValue = this.registry.onChangeValue[i2](processedValue, prop, rule);
     }
     return processedValue;
   };
@@ -11396,43 +11398,43 @@ var memoize2 = function memoize3(fn) {
     return value;
   };
 };
-var getPropertyValue = function getPropertyValue2(cssRule, prop2) {
+var getPropertyValue = function getPropertyValue2(cssRule, prop) {
   try {
     if (cssRule.attributeStyleMap) {
-      return cssRule.attributeStyleMap.get(prop2);
+      return cssRule.attributeStyleMap.get(prop);
     }
-    return cssRule.style.getPropertyValue(prop2);
+    return cssRule.style.getPropertyValue(prop);
   } catch (err) {
     return "";
   }
 };
-var setProperty = function setProperty2(cssRule, prop2, value) {
+var setProperty = function setProperty2(cssRule, prop, value) {
   try {
     var cssValue = value;
     if (Array.isArray(value)) {
       cssValue = toCssValue(value);
     }
     if (cssRule.attributeStyleMap) {
-      cssRule.attributeStyleMap.set(prop2, cssValue);
+      cssRule.attributeStyleMap.set(prop, cssValue);
     } else {
       var indexOfImportantFlag = cssValue ? cssValue.indexOf("!important") : -1;
       var cssValueWithoutImportantFlag = indexOfImportantFlag > -1 ? cssValue.substr(0, indexOfImportantFlag - 1) : cssValue;
-      cssRule.style.setProperty(prop2, cssValueWithoutImportantFlag, indexOfImportantFlag > -1 ? "important" : "");
+      cssRule.style.setProperty(prop, cssValueWithoutImportantFlag, indexOfImportantFlag > -1 ? "important" : "");
     }
   } catch (err) {
     return false;
   }
   return true;
 };
-var removeProperty = function removeProperty2(cssRule, prop2) {
+var removeProperty = function removeProperty2(cssRule, prop) {
   try {
     if (cssRule.attributeStyleMap) {
-      cssRule.attributeStyleMap.delete(prop2);
+      cssRule.attributeStyleMap.delete(prop);
     } else {
-      cssRule.style.removeProperty(prop2);
+      cssRule.style.removeProperty(prop);
     }
   } catch (err) {
-    true ? tiny_warning_esm_default(false, '[JSS] DOMException "' + err.message + '" was thrown. Tried to remove property "' + prop2 + '".') : void 0;
+    true ? tiny_warning_esm_default(false, '[JSS] DOMException "' + err.message + '" was thrown. Tried to remove property "' + prop + '".') : void 0;
   }
 };
 var setSelector = function setSelector2(cssRule, selectorText) {
@@ -11821,12 +11823,12 @@ var functionPlugin = function functionPlugin2() {
       if (fnValuesNs in rule || fnRuleNs in rule)
         return style3;
       var fnValues = {};
-      for (var prop2 in style3) {
-        var value = style3[prop2];
+      for (var prop in style3) {
+        var value = style3[prop];
         if (typeof value !== "function")
           continue;
-        delete style3[prop2];
-        fnValues[prop2] = value;
+        delete style3[prop];
+        fnValues[prop] = value;
       }
       rule[fnValuesNs] = fnValues;
       return style3;
@@ -11837,8 +11839,8 @@ var functionPlugin = function functionPlugin2() {
       if (fnRule) {
         styleRule.style = fnRule(data) || {};
         if (true) {
-          for (var prop2 in styleRule.style) {
-            if (typeof styleRule.style[prop2] === "function") {
+          for (var prop in styleRule.style) {
+            if (typeof styleRule.style[prop] === "function") {
               true ? tiny_warning_esm_default(false, "[JSS] Function values inside function rules are not supported.") : void 0;
               break;
             }
@@ -11941,14 +11943,14 @@ function handleNestedGlobalContainerRule(rule, sheet) {
 }
 function handlePrefixedGlobalRule(rule, sheet) {
   var options = rule.options, style3 = rule.style;
-  for (var prop2 in style3) {
-    if (prop2[0] !== "@" || prop2.substr(0, at.length) !== at)
+  for (var prop in style3) {
+    if (prop[0] !== "@" || prop.substr(0, at.length) !== at)
       continue;
-    var selector = addScope(prop2.substr(at.length), rule.selector);
-    sheet.addRule(selector, style3[prop2], _extends({}, options, {
+    var selector = addScope(prop.substr(at.length), rule.selector);
+    sheet.addRule(selector, style3[prop], _extends({}, options, {
       selector
     }));
-    delete style3[prop2];
+    delete style3[prop];
   }
 }
 function jssGlobal() {
@@ -12036,33 +12038,33 @@ function jssNested() {
     var container = styleRule.options.parent;
     var options;
     var replaceRef3;
-    for (var prop2 in style3) {
-      var isNested = prop2.indexOf("&") !== -1;
-      var isNestedConditional = prop2[0] === "@";
+    for (var prop in style3) {
+      var isNested = prop.indexOf("&") !== -1;
+      var isNestedConditional = prop[0] === "@";
       if (!isNested && !isNestedConditional)
         continue;
       options = getOptions2(styleRule, container, options);
       if (isNested) {
-        var selector = replaceParentRefs(prop2, styleRule.selector);
+        var selector = replaceParentRefs(prop, styleRule.selector);
         if (!replaceRef3)
           replaceRef3 = getReplaceRef(container, sheet);
         selector = selector.replace(refRegExp2, replaceRef3);
-        var name = styleRule.key + "-" + prop2;
+        var name = styleRule.key + "-" + prop;
         if ("replaceRule" in container) {
-          container.replaceRule(name, style3[prop2], _extends({}, options, {
+          container.replaceRule(name, style3[prop], _extends({}, options, {
             selector
           }));
         } else {
-          container.addRule(name, style3[prop2], _extends({}, options, {
+          container.addRule(name, style3[prop], _extends({}, options, {
             selector
           }));
         }
       } else if (isNestedConditional) {
-        container.addRule(prop2, {}, options).addRule(styleRule.key, style3[prop2], {
+        container.addRule(prop, {}, options).addRule(styleRule.key, style3[prop], {
           selector: styleRule.selector
         });
       }
-      delete style3[prop2];
+      delete style3[prop];
     }
     return style3;
   }
@@ -12091,9 +12093,9 @@ var hyphenate_style_name_default = hyphenateStyleName;
 // ../../node_modules/jss-plugin-camel-case/dist/jss-plugin-camel-case.esm.js
 function convertCase(style3) {
   var converted = {};
-  for (var prop2 in style3) {
-    var key = prop2.indexOf("--") === 0 ? prop2 : hyphenate_style_name_default(prop2);
-    converted[key] = style3[prop2];
+  for (var prop in style3) {
+    var key = prop.indexOf("--") === 0 ? prop : hyphenate_style_name_default(prop);
+    converted[key] = style3[prop];
   }
   if (style3.fallbacks) {
     if (Array.isArray(style3.fallbacks))
@@ -12113,12 +12115,12 @@ function camelCase() {
     }
     return convertCase(style3);
   }
-  function onChangeValue2(value, prop2, rule) {
-    if (prop2.indexOf("--") === 0) {
+  function onChangeValue2(value, prop, rule) {
+    if (prop.indexOf("--") === 0) {
       return value;
     }
-    var hyphenatedProp = hyphenate_style_name_default(prop2);
-    if (prop2 === hyphenatedProp)
+    var hyphenatedProp = hyphenate_style_name_default(prop);
+    if (prop === hyphenatedProp)
       return value;
     rule.prop(hyphenatedProp, value);
     return null;
@@ -12278,25 +12280,25 @@ function addCamelCasedVersion(obj) {
   return newObj;
 }
 var units = addCamelCasedVersion(defaultUnits);
-function iterate(prop2, value, options) {
+function iterate(prop, value, options) {
   if (value == null)
     return value;
   if (Array.isArray(value)) {
     for (var i2 = 0; i2 < value.length; i2++) {
-      value[i2] = iterate(prop2, value[i2], options);
+      value[i2] = iterate(prop, value[i2], options);
     }
   } else if (typeof value === "object") {
-    if (prop2 === "fallbacks") {
+    if (prop === "fallbacks") {
       for (var innerProp in value) {
         value[innerProp] = iterate(innerProp, value[innerProp], options);
       }
     } else {
       for (var _innerProp in value) {
-        value[_innerProp] = iterate(prop2 + "-" + _innerProp, value[_innerProp], options);
+        value[_innerProp] = iterate(prop + "-" + _innerProp, value[_innerProp], options);
       }
     }
   } else if (typeof value === "number" && isNaN(value) === false) {
-    var unit3 = options[prop2] || units[prop2];
+    var unit3 = options[prop] || units[prop];
     if (unit3 && !(value === 0 && unit3 === px)) {
       return typeof unit3 === "function" ? unit3(value).toString() : "" + value + unit3;
     }
@@ -12312,13 +12314,13 @@ function defaultUnit(options) {
   function onProcessStyle2(style3, rule) {
     if (rule.type !== "style")
       return style3;
-    for (var prop2 in style3) {
-      style3[prop2] = iterate(prop2, style3[prop2], camelCasedOptions);
+    for (var prop in style3) {
+      style3[prop] = iterate(prop, style3[prop], camelCasedOptions);
     }
     return style3;
   }
-  function onChangeValue2(value, prop2) {
-    return iterate(prop2, value, camelCasedOptions);
+  function onChangeValue2(value, prop) {
+    return iterate(prop, value, camelCasedOptions);
   }
   return {
     onProcessStyle: onProcessStyle2,
@@ -12379,22 +12381,22 @@ function supportedKeyframes(key) {
 }
 var appearence = {
   noPrefill: ["appearance"],
-  supportedProperty: function supportedProperty(prop2) {
-    if (prop2 !== "appearance")
+  supportedProperty: function supportedProperty(prop) {
+    if (prop !== "appearance")
       return false;
     if (prefix.js === "ms")
-      return "-webkit-" + prop2;
-    return prefix.css + prop2;
+      return "-webkit-" + prop;
+    return prefix.css + prop;
   }
 };
 var colorAdjust = {
   noPrefill: ["color-adjust"],
-  supportedProperty: function supportedProperty2(prop2) {
-    if (prop2 !== "color-adjust")
+  supportedProperty: function supportedProperty2(prop) {
+    if (prop !== "color-adjust")
       return false;
     if (prefix.js === "Webkit")
-      return prefix.css + "print-" + prop2;
-    return prop2;
+      return prefix.css + "print-" + prop;
+    return prop;
   }
 };
 var regExp = /[-\s]+(.)?/g;
@@ -12409,138 +12411,138 @@ function pascalize(str) {
 }
 var mask = {
   noPrefill: ["mask"],
-  supportedProperty: function supportedProperty3(prop2, style3) {
-    if (!/^mask/.test(prop2))
+  supportedProperty: function supportedProperty3(prop, style3) {
+    if (!/^mask/.test(prop))
       return false;
     if (prefix.js === "Webkit") {
       var longhand = "mask-image";
       if (camelize(longhand) in style3) {
-        return prop2;
+        return prop;
       }
       if (prefix.js + pascalize(longhand) in style3) {
-        return prefix.css + prop2;
+        return prefix.css + prop;
       }
     }
-    return prop2;
+    return prop;
   }
 };
 var textOrientation = {
   noPrefill: ["text-orientation"],
-  supportedProperty: function supportedProperty4(prop2) {
-    if (prop2 !== "text-orientation")
+  supportedProperty: function supportedProperty4(prop) {
+    if (prop !== "text-orientation")
       return false;
     if (prefix.vendor === "apple" && !prefix.isTouch) {
-      return prefix.css + prop2;
+      return prefix.css + prop;
     }
-    return prop2;
+    return prop;
   }
 };
 var transform3 = {
   noPrefill: ["transform"],
-  supportedProperty: function supportedProperty5(prop2, style3, options) {
-    if (prop2 !== "transform")
+  supportedProperty: function supportedProperty5(prop, style3, options) {
+    if (prop !== "transform")
       return false;
     if (options.transform) {
-      return prop2;
+      return prop;
     }
-    return prefix.css + prop2;
+    return prefix.css + prop;
   }
 };
 var transition = {
   noPrefill: ["transition"],
-  supportedProperty: function supportedProperty6(prop2, style3, options) {
-    if (prop2 !== "transition")
+  supportedProperty: function supportedProperty6(prop, style3, options) {
+    if (prop !== "transition")
       return false;
     if (options.transition) {
-      return prop2;
+      return prop;
     }
-    return prefix.css + prop2;
+    return prefix.css + prop;
   }
 };
 var writingMode = {
   noPrefill: ["writing-mode"],
-  supportedProperty: function supportedProperty7(prop2) {
-    if (prop2 !== "writing-mode")
+  supportedProperty: function supportedProperty7(prop) {
+    if (prop !== "writing-mode")
       return false;
     if (prefix.js === "Webkit" || prefix.js === "ms" && prefix.browser !== "edge") {
-      return prefix.css + prop2;
+      return prefix.css + prop;
     }
-    return prop2;
+    return prop;
   }
 };
 var userSelect = {
   noPrefill: ["user-select"],
-  supportedProperty: function supportedProperty8(prop2) {
-    if (prop2 !== "user-select")
+  supportedProperty: function supportedProperty8(prop) {
+    if (prop !== "user-select")
       return false;
     if (prefix.js === "Moz" || prefix.js === "ms" || prefix.vendor === "apple") {
-      return prefix.css + prop2;
+      return prefix.css + prop;
     }
-    return prop2;
+    return prop;
   }
 };
 var breakPropsOld = {
-  supportedProperty: function supportedProperty9(prop2, style3) {
-    if (!/^break-/.test(prop2))
+  supportedProperty: function supportedProperty9(prop, style3) {
+    if (!/^break-/.test(prop))
       return false;
     if (prefix.js === "Webkit") {
-      var jsProp = "WebkitColumn" + pascalize(prop2);
-      return jsProp in style3 ? prefix.css + "column-" + prop2 : false;
+      var jsProp = "WebkitColumn" + pascalize(prop);
+      return jsProp in style3 ? prefix.css + "column-" + prop : false;
     }
     if (prefix.js === "Moz") {
-      var _jsProp = "page" + pascalize(prop2);
-      return _jsProp in style3 ? "page-" + prop2 : false;
+      var _jsProp = "page" + pascalize(prop);
+      return _jsProp in style3 ? "page-" + prop : false;
     }
     return false;
   }
 };
 var inlineLogicalOld = {
-  supportedProperty: function supportedProperty10(prop2, style3) {
-    if (!/^(border|margin|padding)-inline/.test(prop2))
+  supportedProperty: function supportedProperty10(prop, style3) {
+    if (!/^(border|margin|padding)-inline/.test(prop))
       return false;
     if (prefix.js === "Moz")
-      return prop2;
-    var newProp = prop2.replace("-inline", "");
+      return prop;
+    var newProp = prop.replace("-inline", "");
     return prefix.js + pascalize(newProp) in style3 ? prefix.css + newProp : false;
   }
 };
 var unprefixed = {
-  supportedProperty: function supportedProperty11(prop2, style3) {
-    return camelize(prop2) in style3 ? prop2 : false;
+  supportedProperty: function supportedProperty11(prop, style3) {
+    return camelize(prop) in style3 ? prop : false;
   }
 };
 var prefixed = {
-  supportedProperty: function supportedProperty12(prop2, style3) {
-    var pascalized = pascalize(prop2);
-    if (prop2[0] === "-")
-      return prop2;
-    if (prop2[0] === "-" && prop2[1] === "-")
-      return prop2;
+  supportedProperty: function supportedProperty12(prop, style3) {
+    var pascalized = pascalize(prop);
+    if (prop[0] === "-")
+      return prop;
+    if (prop[0] === "-" && prop[1] === "-")
+      return prop;
     if (prefix.js + pascalized in style3)
-      return prefix.css + prop2;
+      return prefix.css + prop;
     if (prefix.js !== "Webkit" && "Webkit" + pascalized in style3)
-      return "-webkit-" + prop2;
+      return "-webkit-" + prop;
     return false;
   }
 };
 var scrollSnap = {
-  supportedProperty: function supportedProperty13(prop2) {
-    if (prop2.substring(0, 11) !== "scroll-snap")
+  supportedProperty: function supportedProperty13(prop) {
+    if (prop.substring(0, 11) !== "scroll-snap")
       return false;
     if (prefix.js === "ms") {
-      return "" + prefix.css + prop2;
+      return "" + prefix.css + prop;
     }
-    return prop2;
+    return prop;
   }
 };
 var overscrollBehavior = {
-  supportedProperty: function supportedProperty14(prop2) {
-    if (prop2 !== "overscroll-behavior")
+  supportedProperty: function supportedProperty14(prop) {
+    if (prop !== "overscroll-behavior")
       return false;
     if (prefix.js === "ms") {
       return prefix.css + "scroll-chaining";
     }
-    return prop2;
+    return prop;
   }
 };
 var propMap = {
@@ -12553,8 +12555,8 @@ var propMap = {
   "align-content": "flex-line-pack"
 };
 var flex2012 = {
-  supportedProperty: function supportedProperty15(prop2, style3) {
-    var newProp = propMap[prop2];
+  supportedProperty: function supportedProperty15(prop, style3) {
+    var newProp = propMap[prop];
     if (!newProp)
       return false;
     return prefix.js + pascalize(newProp) in style3 ? prefix.css + newProp : false;
@@ -12574,10 +12576,10 @@ var prefixCss = function prefixCss2(p) {
   return prefix.css + p;
 };
 var flex2009 = {
-  supportedProperty: function supportedProperty16(prop2, style3, _ref6) {
+  supportedProperty: function supportedProperty16(prop, style3, _ref6) {
     var multiple = _ref6.multiple;
-    if (propKeys.indexOf(prop2) > -1) {
-      var newProp = propMap$1[prop2];
+    if (propKeys.indexOf(prop) > -1) {
+      var newProp = propMap$1[prop];
       if (!Array.isArray(newProp)) {
         return prefix.js + pascalize(newProp) in style3 ? prefix.css + newProp : false;
       }
@@ -12620,29 +12622,29 @@ if (module_default) {
 }
 var computed;
 var key$1;
-function supportedProperty17(prop2, options) {
+function supportedProperty17(prop, options) {
   if (options === void 0) {
     options = {};
   }
   if (!el)
-    return prop2;
-  if (cache2[prop2] != null) {
-    return cache2[prop2];
+    return prop;
+  if (cache2[prop] != null) {
+    return cache2[prop];
   }
-  if (prop2 === "transition" || prop2 === "transform") {
-    options[prop2] = prop2 in el.style;
+  if (prop === "transition" || prop === "transform") {
+    options[prop] = prop in el.style;
   }
   for (var i2 = 0; i2 < propertyDetectors.length; i2++) {
-    cache2[prop2] = propertyDetectors[i2](prop2, el.style, options);
-    if (cache2[prop2])
+    cache2[prop] = propertyDetectors[i2](prop, el.style, options);
+    if (cache2[prop])
       break;
   }
   try {
-    el.style[prop2] = "";
+    el.style[prop] = "";
   } catch (err) {
     return false;
   }
-  return cache2[prop2];
+  return cache2[prop];
 }
 var cache$1 = {};
 var transitionProperties = {
@@ -12710,15 +12712,15 @@ function jssVendorPrefixer() {
     }
   }
   function prefixStyle(style3) {
-    for (var prop2 in style3) {
-      var value = style3[prop2];
-      if (prop2 === "fallbacks" && Array.isArray(value)) {
-        style3[prop2] = value.map(prefixStyle);
+    for (var prop in style3) {
+      var value = style3[prop];
+      if (prop === "fallbacks" && Array.isArray(value)) {
+        style3[prop] = value.map(prefixStyle);
         continue;
       }
       var changeProp = false;
-      var supportedProp = supportedProperty17(prop2);
-      if (supportedProp && supportedProp !== prop2)
+      var supportedProp = supportedProperty17(prop);
+      if (supportedProp && supportedProp !== prop)
         changeProp = true;
       var changeValue = false;
       var supportedValue$1 = supportedValue(supportedProp, toCssValue(value));
@@ -12726,8 +12728,8 @@ function jssVendorPrefixer() {
         changeValue = true;
       if (changeProp || changeValue) {
         if (changeProp)
-          delete style3[prop2];
-        style3[supportedProp || prop2] = supportedValue$1 || value;
+          delete style3[prop];
+        style3[supportedProp || prop] = supportedValue$1 || value;
       }
     }
     return style3;
@@ -12737,8 +12739,8 @@ function jssVendorPrefixer() {
       return style3;
     return prefixStyle(style3);
   }
-  function onChangeValue2(value, prop2) {
-    return supportedValue(prop2, toCssValue(value)) || value;
+  function onChangeValue2(value, prop) {
+    return supportedValue(prop, toCssValue(value)) || value;
   }
   return {
     onProcessRule,
@@ -13205,9 +13207,9 @@ var import_prop_types6 = __toModule(require_prop_types());
 var import_hoist_non_react_statics = __toModule(require_hoist_non_react_statics_cjs());
 function omit2(input, fields) {
   var output = {};
-  Object.keys(input).forEach(function(prop2) {
-    if (fields.indexOf(prop2) === -1) {
-      output[prop2] = input[prop2];
+  Object.keys(input).forEach(function(prop) {
+    if (fields.indexOf(prop) === -1) {
+      output[prop] = input[prop];
     }
   });
   return output;
@@ -13773,13 +13775,13 @@ import {
 } from "react";
 function useId(idOverride) {
   var _React$useState = useState2(idOverride), defaultId = _React$useState[0], setDefaultId = _React$useState[1];
-  var id3 = idOverride || defaultId;
+  var id2 = idOverride || defaultId;
   useEffect3(function() {
     if (defaultId == null) {
       setDefaultId("mui-".concat(Math.round(Math.random() * 1e5)));
     }
   }, [defaultId]);
-  return id3;
+  return id2;
 }
 
 // ../../node_modules/@material-ui/core/esm/utils/useIsFocusVisible.js
@@ -14441,8 +14443,8 @@ function mergeChildMappings(prev, next) {
   }
   return childMapping;
 }
-function getProp(child, prop2, props) {
-  return props[prop2] != null ? props[prop2] : child.props[prop2];
+function getProp(child, prop, props) {
+  return props[prop] != null ? props[prop] : child.props[prop];
 }
 function getInitialChildMapping(props, onExited) {
   return getChildMapping(props.children, function(child) {
@@ -17431,7 +17433,7 @@ var styles37 = {
   }
 };
 var SwitchBase = /* @__PURE__ */ forwardRef168(function SwitchBase2(props, ref2) {
-  var autoFocus = props.autoFocus, checkedProp = props.checked, checkedIcon = props.checkedIcon, classes = props.classes, className = props.className, defaultChecked = props.defaultChecked, disabledProp = props.disabled, icon = props.icon, id3 = props.id, inputProps = props.inputProps, inputRef = props.inputRef, name = props.name, onBlur = props.onBlur, onChange = props.onChange, onFocus = props.onFocus, readOnly = props.readOnly, required2 = props.required, tabIndex = props.tabIndex, type3 = props.type, value = props.value, other = _objectWithoutProperties(props, ["autoFocus", "checked", "checkedIcon", "classes", "className", "defaultChecked", "disabled", "icon", "id", "inputProps", "inputRef", "name", "onBlur", "onChange", "onFocus", "readOnly", "required", "tabIndex", "type", "value"]);
+  var autoFocus = props.autoFocus, checkedProp = props.checked, checkedIcon = props.checkedIcon, classes = props.classes, className = props.className, defaultChecked = props.defaultChecked, disabledProp = props.disabled, icon = props.icon, id2 = props.id, inputProps = props.inputProps, inputRef = props.inputRef, name = props.name, onBlur = props.onBlur, onChange = props.onChange, onFocus = props.onFocus, readOnly = props.readOnly, required2 = props.required, tabIndex = props.tabIndex, type3 = props.type, value = props.value, other = _objectWithoutProperties(props, ["autoFocus", "checked", "checkedIcon", "classes", "className", "defaultChecked", "disabled", "icon", "id", "inputProps", "inputRef", "name", "onBlur", "onChange", "onFocus", "readOnly", "required", "tabIndex", "type", "value"]);
   var _useControlled = useControlled({
     controlled: checkedProp,
     default: Boolean(defaultChecked),
@@ -17484,7 +17486,7 @@ var SwitchBase = /* @__PURE__ */ forwardRef168(function SwitchBase2(props, ref2)
     defaultChecked,
     className: classes.input,
     disabled: disabled3,
-    id: hasLabelFor && id3,
+    id: hasLabelFor && id2,
     name,
     onChange: handleInputChange,
     readOnly,
@@ -19826,7 +19828,7 @@ var styles57 = function styles58(theme) {
 };
 var useEnhancedEffect5 = typeof window === "undefined" ? useEffect15 : useLayoutEffect5;
 var InputBase = /* @__PURE__ */ forwardRef183(function InputBase2(props, ref2) {
-  var ariaDescribedby = props["aria-describedby"], autoComplete = props.autoComplete, autoFocus = props.autoFocus, classes = props.classes, className = props.className, color2 = props.color, defaultValue = props.defaultValue, disabled3 = props.disabled, endAdornment = props.endAdornment, error4 = props.error, _props$fullWidth = props.fullWidth, fullWidth = _props$fullWidth === void 0 ? false : _props$fullWidth, id3 = props.id, _props$inputComponent = props.inputComponent, inputComponent = _props$inputComponent === void 0 ? "input" : _props$inputComponent, _props$inputProps = props.inputProps, inputPropsProp = _props$inputProps === void 0 ? {} : _props$inputProps, inputRefProp = props.inputRef, margin = props.margin, _props$multiline = props.multiline, multiline = _props$multiline === void 0 ? false : _props$multiline, name = props.name, onBlur = props.onBlur, onChange = props.onChange, onClick = props.onClick, onFocus = props.onFocus, onKeyDown = props.onKeyDown, onKeyUp = props.onKeyUp, placeholder2 = props.placeholder, readOnly = props.readOnly, renderSuffix = props.renderSuffix, rows = props.rows, rowsMax = props.rowsMax, rowsMin = props.rowsMin, maxRows = props.maxRows, minRows = props.minRows, startAdornment = props.startAdornment, _props$type = props.type, type3 = _props$type === void 0 ? "text" : _props$type, valueProp = props.value, other = _objectWithoutProperties(props, ["aria-describedby", "autoComplete", "autoFocus", "classes", "className", "color", "defaultValue", "disabled", "endAdornment", "error", "fullWidth", "id", "inputComponent", "inputProps", "inputRef", "margin", "multiline", "name", "onBlur", "onChange", "onClick", "onFocus", "onKeyDown", "onKeyUp", "placeholder", "readOnly", "renderSuffix", "rows", "rowsMax", "rowsMin", "maxRows", "minRows", "startAdornment", "type", "value"]);
+  var ariaDescribedby = props["aria-describedby"], autoComplete = props.autoComplete, autoFocus = props.autoFocus, classes = props.classes, className = props.className, color2 = props.color, defaultValue = props.defaultValue, disabled3 = props.disabled, endAdornment = props.endAdornment, error4 = props.error, _props$fullWidth = props.fullWidth, fullWidth = _props$fullWidth === void 0 ? false : _props$fullWidth, id2 = props.id, _props$inputComponent = props.inputComponent, inputComponent = _props$inputComponent === void 0 ? "input" : _props$inputComponent, _props$inputProps = props.inputProps, inputPropsProp = _props$inputProps === void 0 ? {} : _props$inputProps, inputRefProp = props.inputRef, margin = props.margin, _props$multiline = props.multiline, multiline = _props$multiline === void 0 ? false : _props$multiline, name = props.name, onBlur = props.onBlur, onChange = props.onChange, onClick = props.onClick, onFocus = props.onFocus, onKeyDown = props.onKeyDown, onKeyUp = props.onKeyUp, placeholder2 = props.placeholder, readOnly = props.readOnly, renderSuffix = props.renderSuffix, rows = props.rows, rowsMax = props.rowsMax, rowsMin = props.rowsMin, maxRows = props.maxRows, minRows = props.minRows, startAdornment = props.startAdornment, _props$type = props.type, type3 = _props$type === void 0 ? "text" : _props$type, valueProp = props.value, other = _objectWithoutProperties(props, ["aria-describedby", "autoComplete", "autoFocus", "classes", "className", "color", "defaultValue", "disabled", "endAdornment", "error", "fullWidth", "id", "inputComponent", "inputProps", "inputRef", "margin", "multiline", "name", "onBlur", "onChange", "onClick", "onFocus", "onKeyDown", "onKeyUp", "placeholder", "readOnly", "renderSuffix", "rows", "rowsMax", "rowsMin", "maxRows", "minRows", "startAdornment", "type", "value"]);
   var value = inputPropsProp.value != null ? inputPropsProp.value : valueProp;
   var _React$useRef = useRef15(value != null), isControlled = _React$useRef.current;
   var inputRef = useRef15();
@@ -19993,7 +19995,7 @@ var InputBase = /* @__PURE__ */ forwardRef183(function InputBase2(props, ref2) {
     autoFocus,
     defaultValue,
     disabled: fcs.disabled,
-    id: id3,
+    id: id2,
     onAnimationStart: handleAutoFill,
     name,
     placeholder: placeholder2,
@@ -23800,14 +23802,14 @@ function find(arr, check) {
   }
   return arr.filter(check)[0];
 }
-function findIndex(arr, prop2, value) {
+function findIndex(arr, prop, value) {
   if (Array.prototype.findIndex) {
     return arr.findIndex(function(cur) {
-      return cur[prop2] === value;
+      return cur[prop] === value;
     });
   }
   var match2 = find(arr, function(obj) {
-    return obj[prop2] === value;
+    return obj[prop] === value;
   });
   return arr.indexOf(match2);
 }
@@ -23936,21 +23938,21 @@ function isNumeric(n2) {
   return n2 !== "" && !isNaN(parseFloat(n2)) && isFinite(n2);
 }
 function setStyles(element2, styles165) {
-  Object.keys(styles165).forEach(function(prop2) {
+  Object.keys(styles165).forEach(function(prop) {
     var unit3 = "";
-    if (["width", "height", "top", "right", "bottom", "left"].indexOf(prop2) !== -1 && isNumeric(styles165[prop2])) {
+    if (["width", "height", "top", "right", "bottom", "left"].indexOf(prop) !== -1 && isNumeric(styles165[prop])) {
       unit3 = "px";
     }
-    element2.style[prop2] = styles165[prop2] + unit3;
+    element2.style[prop] = styles165[prop] + unit3;
   });
 }
 function setAttributes(element2, attributes) {
-  Object.keys(attributes).forEach(function(prop2) {
-    var value = attributes[prop2];
+  Object.keys(attributes).forEach(function(prop) {
+    var value = attributes[prop];
     if (value !== false) {
-      element2.setAttribute(prop2, attributes[prop2]);
+      element2.setAttribute(prop, attributes[prop]);
     } else {
-      element2.removeAttribute(prop2);
+      element2.removeAttribute(prop);
     }
   });
 }
@@ -25347,7 +25349,7 @@ var styles104 = styles94;
 var _ref = /* @__PURE__ */ createElement227(Input_default, null);
 var _ref2 = /* @__PURE__ */ createElement227(FilledInput_default, null);
 var Select = /* @__PURE__ */ forwardRef214(function Select2(props, ref2) {
-  var _props$autoWidth = props.autoWidth, autoWidth = _props$autoWidth === void 0 ? false : _props$autoWidth, children2 = props.children, classes = props.classes, _props$displayEmpty = props.displayEmpty, displayEmpty = _props$displayEmpty === void 0 ? false : _props$displayEmpty, _props$IconComponent = props.IconComponent, IconComponent = _props$IconComponent === void 0 ? ArrowDropDown_default : _props$IconComponent, id3 = props.id, input = props.input, inputProps = props.inputProps, label3 = props.label, labelId = props.labelId, _props$labelWidth = props.labelWidth, labelWidth = _props$labelWidth === void 0 ? 0 : _props$labelWidth, MenuProps = props.MenuProps, _props$multiple = props.multiple, multiple = _props$multiple === void 0 ? false : _props$multiple, _props$native = props.native, native = _props$native === void 0 ? false : _props$native, onClose = props.onClose, onOpen = props.onOpen, open = props.open, renderValue = props.renderValue, SelectDisplayProps = props.SelectDisplayProps, _props$variant = props.variant, variantProps = _props$variant === void 0 ? "standard" : _props$variant, other = _objectWithoutProperties(props, ["autoWidth", "children", "classes", "displayEmpty", "IconComponent", "id", "input", "inputProps", "label", "labelId", "labelWidth", "MenuProps", "multiple", "native", "onClose", "onOpen", "open", "renderValue", "SelectDisplayProps", "variant"]);
+  var _props$autoWidth = props.autoWidth, autoWidth = _props$autoWidth === void 0 ? false : _props$autoWidth, children2 = props.children, classes = props.classes, _props$displayEmpty = props.displayEmpty, displayEmpty = _props$displayEmpty === void 0 ? false : _props$displayEmpty, _props$IconComponent = props.IconComponent, IconComponent = _props$IconComponent === void 0 ? ArrowDropDown_default : _props$IconComponent, id2 = props.id, input = props.input, inputProps = props.inputProps, label3 = props.label, labelId = props.labelId, _props$labelWidth = props.labelWidth, labelWidth = _props$labelWidth === void 0 ? 0 : _props$labelWidth, MenuProps = props.MenuProps, _props$multiple = props.multiple, multiple = _props$multiple === void 0 ? false : _props$multiple, _props$native = props.native, native = _props$native === void 0 ? false : _props$native, onClose = props.onClose, onOpen = props.onOpen, open = props.open, renderValue = props.renderValue, SelectDisplayProps = props.SelectDisplayProps, _props$variant = props.variant, variantProps = _props$variant === void 0 ? "standard" : _props$variant, other = _objectWithoutProperties(props, ["autoWidth", "children", "classes", "displayEmpty", "IconComponent", "id", "input", "inputProps", "label", "labelId", "labelWidth", "MenuProps", "multiple", "native", "onClose", "onOpen", "open", "renderValue", "SelectDisplayProps", "variant"]);
   var inputComponent = native ? NativeSelectInput_default : SelectInput_default;
   var muiFormControl = useFormControl2();
   var fcs = formControlState({
@@ -25373,7 +25375,7 @@ var Select = /* @__PURE__ */ forwardRef214(function Select2(props, ref2) {
       type: void 0,
       multiple
     }, native ? {
-      id: id3
+      id: id2
     } : {
       autoWidth,
       displayEmpty,
@@ -25384,7 +25386,7 @@ var Select = /* @__PURE__ */ forwardRef214(function Select2(props, ref2) {
       open,
       renderValue,
       SelectDisplayProps: _extends({
-        id: id3
+        id: id2
       }, SelectDisplayProps)
     }, inputProps, {
       classes: inputProps ? mergeClasses({
@@ -28302,7 +28304,7 @@ var styles143 = {
   root: {}
 };
 var TextField = /* @__PURE__ */ forwardRef236(function TextField2(props, ref2) {
-  var autoComplete = props.autoComplete, _props$autoFocus = props.autoFocus, autoFocus = _props$autoFocus === void 0 ? false : _props$autoFocus, children2 = props.children, classes = props.classes, className = props.className, _props$color = props.color, color2 = _props$color === void 0 ? "primary" : _props$color, defaultValue = props.defaultValue, _props$disabled = props.disabled, disabled3 = _props$disabled === void 0 ? false : _props$disabled, _props$error = props.error, error4 = _props$error === void 0 ? false : _props$error, FormHelperTextProps = props.FormHelperTextProps, _props$fullWidth = props.fullWidth, fullWidth = _props$fullWidth === void 0 ? false : _props$fullWidth, helperText = props.helperText, hiddenLabel = props.hiddenLabel, id3 = props.id, InputLabelProps = props.InputLabelProps, inputProps = props.inputProps, InputProps = props.InputProps, inputRef = props.inputRef, label3 = props.label, _props$multiline = props.multiline, multiline = _props$multiline === void 0 ? false : _props$multiline, name = props.name, onBlur = props.onBlur, onChange = props.onChange, onFocus = props.onFocus, placeholder2 = props.placeholder, _props$required = props.required, required2 = _props$required === void 0 ? false : _props$required, rows = props.rows, rowsMax = props.rowsMax, maxRows = props.maxRows, minRows = props.minRows, _props$select = props.select, select = _props$select === void 0 ? false : _props$select, SelectProps = props.SelectProps, type3 = props.type, value = props.value, _props$variant = props.variant, variant = _props$variant === void 0 ? "standard" : _props$variant, other = _objectWithoutProperties(props, ["autoComplete", "autoFocus", "children", "classes", "className", "color", "defaultValue", "disabled", "error", "FormHelperTextProps", "fullWidth", "helperText", "hiddenLabel", "id", "InputLabelProps", "inputProps", "InputProps", "inputRef", "label", "multiline", "name", "onBlur", "onChange", "onFocus", "placeholder", "required", "rows", "rowsMax", "maxRows", "minRows", "select", "SelectProps", "type", "value", "variant"]);
+  var autoComplete = props.autoComplete, _props$autoFocus = props.autoFocus, autoFocus = _props$autoFocus === void 0 ? false : _props$autoFocus, children2 = props.children, classes = props.classes, className = props.className, _props$color = props.color, color2 = _props$color === void 0 ? "primary" : _props$color, defaultValue = props.defaultValue, _props$disabled = props.disabled, disabled3 = _props$disabled === void 0 ? false : _props$disabled, _props$error = props.error, error4 = _props$error === void 0 ? false : _props$error, FormHelperTextProps = props.FormHelperTextProps, _props$fullWidth = props.fullWidth, fullWidth = _props$fullWidth === void 0 ? false : _props$fullWidth, helperText = props.helperText, hiddenLabel = props.hiddenLabel, id2 = props.id, InputLabelProps = props.InputLabelProps, inputProps = props.inputProps, InputProps = props.InputProps, inputRef = props.inputRef, label3 = props.label, _props$multiline = props.multiline, multiline = _props$multiline === void 0 ? false : _props$multiline, name = props.name, onBlur = props.onBlur, onChange = props.onChange, onFocus = props.onFocus, placeholder2 = props.placeholder, _props$required = props.required, required2 = _props$required === void 0 ? false : _props$required, rows = props.rows, rowsMax = props.rowsMax, maxRows = props.maxRows, minRows = props.minRows, _props$select = props.select, select = _props$select === void 0 ? false : _props$select, SelectProps = props.SelectProps, type3 = props.type, value = props.value, _props$variant = props.variant, variant = _props$variant === void 0 ? "standard" : _props$variant, other = _objectWithoutProperties(props, ["autoComplete", "autoFocus", "children", "classes", "className", "color", "defaultValue", "disabled", "error", "FormHelperTextProps", "fullWidth", "helperText", "hiddenLabel", "id", "InputLabelProps", "inputProps", "InputProps", "inputRef", "label", "multiline", "name", "onBlur", "onChange", "onFocus", "placeholder", "required", "rows", "rowsMax", "maxRows", "minRows", "select", "SelectProps", "type", "value", "variant"]);
   if (true) {
     if (select && !children2) {
       console.error("Material-UI: `children` must be passed when using the `TextField` component with `select`.");
@@ -28325,8 +28327,8 @@ var TextField = /* @__PURE__ */ forwardRef236(function TextField2(props, ref2) {
     }
     InputMore["aria-describedby"] = void 0;
   }
-  var helperTextId = helperText && id3 ? "".concat(id3, "-helper-text") : void 0;
-  var inputLabelId = label3 && id3 ? "".concat(id3, "-label") : void 0;
+  var helperTextId = helperText && id2 ? "".concat(id2, "-helper-text") : void 0;
+  var inputLabelId = label3 && id2 ? "".concat(id2, "-label") : void 0;
   var InputComponent = variantComponent[variant];
   var InputElement = /* @__PURE__ */ createElement255(InputComponent, _extends({
     "aria-describedby": helperTextId,
@@ -28342,7 +28344,7 @@ var TextField = /* @__PURE__ */ forwardRef236(function TextField2(props, ref2) {
     minRows,
     type: type3,
     value,
-    id: id3,
+    id: id2,
     inputRef,
     onBlur,
     onChange,
@@ -28361,11 +28363,11 @@ var TextField = /* @__PURE__ */ forwardRef236(function TextField2(props, ref2) {
     color: color2,
     variant
   }, other), label3 && /* @__PURE__ */ createElement255(InputLabel_default, _extends({
-    htmlFor: id3,
+    htmlFor: id2,
     id: inputLabelId
   }, InputLabelProps), label3), select ? /* @__PURE__ */ createElement255(Select_default, _extends({
     "aria-describedby": helperTextId,
-    id: id3,
+    id: id2,
     labelId: inputLabelId,
     value,
     input: InputElement
@@ -28583,7 +28585,7 @@ var Tooltip = /* @__PURE__ */ forwardRef237(function Tooltip2(props, ref2) {
       }
     }, [title, childNode, isControlled]);
   }
-  var id3 = useId(idProp);
+  var id2 = useId(idProp);
   useEffect28(function() {
     return function() {
       clearTimeout(closeTimer.current);
@@ -28723,7 +28725,7 @@ var Tooltip = /* @__PURE__ */ forwardRef237(function Tooltip2(props, ref2) {
   }
   var shouldShowNativeTitle = !open && !disableHoverListener;
   var childrenProps = _extends({
-    "aria-describedby": open ? id3 : null,
+    "aria-describedby": open ? id2 : null,
     title: shouldShowNativeTitle && typeof title === "string" ? title : null
   }, other, children2.props, {
     className: clsx_m_default(other.className, children2.props.className),
@@ -47821,6 +47823,8 @@ __export(juno_core_exports, {
   UnmountSymbol: () => UnmountSymbol,
   Virtuoso: () => Virtuoso,
   VirtuosoGrid: () => VirtuosoGrid,
+  VirtuosoGridMockContext: () => VirtuosoGridMockContext,
+  VirtuosoMockContext: () => VirtuosoMockContext,
   a11yKeyboard: () => a11yKeyboard,
   a11yKeyboardCode: () => a11yKeyboardCode,
   backgroundTransition: () => backgroundTransition,
@@ -48213,6 +48217,8 @@ __export(src_exports, {
   UnmountSymbol: () => UnmountSymbol,
   Virtuoso: () => Virtuoso,
   VirtuosoGrid: () => VirtuosoGrid,
+  VirtuosoGridMockContext: () => VirtuosoGridMockContext,
+  VirtuosoMockContext: () => VirtuosoMockContext,
   a11yKeyboard: () => a11yKeyboard,
   a11yKeyboardCode: () => a11yKeyboardCode,
   backgroundTransition: () => backgroundTransition,
@@ -48591,6 +48597,8 @@ __export(components_exports, {
   UnmountSymbol: () => UnmountSymbol,
   Virtuoso: () => Virtuoso,
   VirtuosoGrid: () => VirtuosoGrid,
+  VirtuosoGridMockContext: () => VirtuosoGridMockContext,
+  VirtuosoMockContext: () => VirtuosoMockContext,
   config: () => config_default,
   createPromise: () => createPromise,
   downshiftComponentName: () => downshiftComponentName,
@@ -48673,7 +48681,7 @@ import r2, { useState as o, useContext as s, useMemo as i, useEffect as a, useRe
 // ../../node_modules/@emotion/stylis/dist/stylis.browser.esm.js
 function stylis_min(W2) {
   function M2(d2, c2, e2, h2, a2) {
-    for (var m = 0, b2 = 0, v2 = 0, n2 = 0, q2, g2, x2 = 0, K2 = 0, k2, u24 = k2 = q2 = 0, l2 = 0, r3 = 0, I2 = 0, t2 = 0, B3 = e2.length, J2 = B3 - 1, y2, f = "", p = "", F3 = "", G3 = "", C2; l2 < B3; ) {
+    for (var m = 0, b2 = 0, v2 = 0, n2 = 0, q2, g2, x2 = 0, K2 = 0, k2, u31 = k2 = q2 = 0, l2 = 0, r3 = 0, I2 = 0, t2 = 0, B3 = e2.length, J2 = B3 - 1, y2, f = "", p = "", F3 = "", G3 = "", C2; l2 < B3; ) {
       g2 = e2.charCodeAt(l2);
       l2 === J2 && b2 + n2 + v2 + m !== 0 && (b2 !== 0 && (g2 = b2 === 47 ? 10 : 47), n2 = v2 = m = 0, B3++, J2++);
       if (b2 + n2 + v2 + m === 0) {
@@ -48708,22 +48716,22 @@ function stylis_min(W2) {
                     case 42:
                     case 47:
                       a: {
-                        for (u24 = l2 + 1; u24 < J2; ++u24) {
-                          switch (e2.charCodeAt(u24)) {
+                        for (u31 = l2 + 1; u31 < J2; ++u31) {
+                          switch (e2.charCodeAt(u31)) {
                             case 47:
-                              if (g2 === 42 && e2.charCodeAt(u24 - 1) === 42 && l2 + 2 !== u24) {
-                                l2 = u24 + 1;
+                              if (g2 === 42 && e2.charCodeAt(u31 - 1) === 42 && l2 + 2 !== u31) {
+                                l2 = u31 + 1;
                                 break a;
                               }
                               break;
                             case 10:
                               if (g2 === 47) {
-                                l2 = u24 + 1;
+                                l2 = u31 + 1;
                                 break a;
                               }
                           }
                         }
-                        l2 = u24;
+                        l2 = u31;
                       }
                   }
                   break;
@@ -48783,7 +48791,7 @@ function stylis_min(W2) {
                 k2 = M2(c2, X2(c2, f, I2), k2, h2, a2 + 1);
             }
             F3 += k2;
-            k2 = I2 = r3 = u24 = q2 = 0;
+            k2 = I2 = r3 = u31 = q2 = 0;
             f = "";
             g2 = e2.charCodeAt(++l2);
             break;
@@ -48791,7 +48799,7 @@ function stylis_min(W2) {
           case 59:
             f = (0 < r3 ? f.replace(N2, "") : f).trim();
             if (1 < (t2 = f.length))
-              switch (u24 === 0 && (q2 = f.charCodeAt(0), q2 === 45 || 96 < q2 && 123 > q2) && (t2 = (f = f.replace(" ", ":")).length), 0 < A2 && (C2 = H2(1, f, c2, d2, D2, z2, p.length, h2, a2, h2)) !== void 0 && (t2 = (f = C2.trim()).length) === 0 && (f = "\0\0"), q2 = f.charCodeAt(0), g2 = f.charCodeAt(1), q2) {
+              switch (u31 === 0 && (q2 = f.charCodeAt(0), q2 === 45 || 96 < q2 && 123 > q2) && (t2 = (f = f.replace(" ", ":")).length), 0 < A2 && (C2 = H2(1, f, c2, d2, D2, z2, p.length, h2, a2, h2)) !== void 0 && (t2 = (f = C2.trim()).length) === 0 && (f = "\0\0"), q2 = f.charCodeAt(0), g2 = f.charCodeAt(1), q2) {
                 case 0:
                   break;
                 case 64:
@@ -48802,7 +48810,7 @@ function stylis_min(W2) {
                 default:
                   f.charCodeAt(t2 - 1) !== 58 && (p += P2(f, q2, g2, f.charCodeAt(2)));
               }
-            I2 = r3 = u24 = q2 = 0;
+            I2 = r3 = u31 = q2 = 0;
             f = "";
             g2 = e2.charCodeAt(++l2);
         }
@@ -48852,8 +48860,8 @@ function stylis_min(W2) {
               n2 + b2 + m === 0 && (r3 = I2 = 1, y2 = "\f" + y2);
               break;
             case 108:
-              if (n2 + b2 + m + E2 === 0 && 0 < u24)
-                switch (l2 - u24) {
+              if (n2 + b2 + m + E2 === 0 && 0 < u31)
+                switch (l2 - u31) {
                   case 2:
                     x2 === 112 && e2.charCodeAt(l2 - 3) === 58 && (E2 = x2);
                   case 8:
@@ -48861,7 +48869,7 @@ function stylis_min(W2) {
                 }
               break;
             case 58:
-              n2 + b2 + m === 0 && (u24 = l2);
+              n2 + b2 + m === 0 && (u31 = l2);
               break;
             case 44:
               b2 + v2 + n2 + m === 0 && (r3 = 1, y2 += "\r");
@@ -48892,7 +48900,7 @@ function stylis_min(W2) {
               }
               break;
             case 64:
-              b2 + v2 + n2 + m + u24 + k2 === 0 && (k2 = 1);
+              b2 + v2 + n2 + m + u31 + k2 === 0 && (k2 = 1);
               break;
             case 42:
             case 47:
@@ -49222,8 +49230,8 @@ var memoize_browser_esm_default = memoize4;
 
 // ../../node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js
 var reactPropsRegex = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|download|draggable|encType|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|inert|itemProp|itemScope|itemType|itemID|itemRef|on|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/;
-var index2 = memoize_browser_esm_default(function(prop2) {
-  return reactPropsRegex.test(prop2) || prop2.charCodeAt(0) === 111 && prop2.charCodeAt(1) === 110 && prop2.charCodeAt(2) < 91;
+var index2 = memoize_browser_esm_default(function(prop) {
+  return reactPropsRegex.test(prop) || prop.charCodeAt(0) === 111 && prop.charCodeAt(1) === 110 && prop.charCodeAt(2) < 91;
 });
 var is_prop_valid_browser_esm_default = index2;
 
@@ -49340,8 +49348,8 @@ var Y = function(e2, t2) {
     if (i2) {
       var a2 = i2.match(L);
       if (a2) {
-        var c2 = 0 | parseInt(a2[1], 10), u24 = a2[2];
-        c2 !== 0 && (M(u24, c2), F(e2, u24, a2[3]), e2.getTag().insertRules(c2, r3)), r3.length = 0;
+        var c2 = 0 | parseInt(a2[1], 10), u31 = a2[2];
+        c2 !== 0 && (M(u31, c2), F(e2, u31, a2[3]), e2.getTag().insertRules(c2, r3)), r3.length = 0;
       } else
         r3.push(i2);
     }
@@ -49467,10 +49475,10 @@ var Z = function() {
         if (s2 !== void 0) {
           var i2 = e3.names.get(s2), a2 = t3.getGroup(o2);
           if (i2 && a2 && i2.size) {
-            var c2 = A + ".g" + o2 + '[id="' + s2 + '"]', u24 = "";
+            var c2 = A + ".g" + o2 + '[id="' + s2 + '"]', u31 = "";
             i2 !== void 0 && i2.forEach(function(e4) {
-              e4.length > 0 && (u24 += e4 + ",");
-            }), r3 += "" + a2 + c2 + '{content:"' + u24 + '"}/*!sc*/\n';
+              e4.length > 0 && (u31 += e4 + ",");
+            }), r3 += "" + a2 + c2 + '{content:"' + u31 + '"}/*!sc*/\n';
           }
         }
       }
@@ -49523,17 +49531,17 @@ var se = function() {
         o2.push(i2), this.staticRulesId = i2;
       }
     else {
-      for (var c2 = this.rules.length, u24 = te(this.baseHash, n2.hash), l2 = "", d2 = 0; d2 < c2; d2++) {
+      for (var c2 = this.rules.length, u31 = te(this.baseHash, n2.hash), l2 = "", d2 = 0; d2 < c2; d2++) {
         var h2 = this.rules[d2];
         if (typeof h2 == "string")
-          l2 += h2, u24 = te(u24, h2 + d2);
+          l2 += h2, u31 = te(u31, h2 + d2);
         else if (h2) {
           var p = Ne(h2, e3, t2, n2), f = Array.isArray(p) ? p.join("") : p;
-          u24 = te(u24, f + d2), l2 += f;
+          u31 = te(u31, f + d2), l2 += f;
         }
       }
       if (l2) {
-        var m = ee(u24 >>> 0);
+        var m = ee(u31 >>> 0);
         if (!t2.hasNameForId(r3, m)) {
           var y2 = n2(l2, "." + m, void 0, r3);
           t2.insertRules(r3, m, y2);
@@ -49547,7 +49555,7 @@ var se = function() {
 var ie = /^\s*\/\/.*$/gm;
 var ae = [":", "[", ".", "#"];
 function ce(e2) {
-  var t2, n2, r3, o2, s2 = e2 === void 0 ? E : e2, i2 = s2.options, a2 = i2 === void 0 ? E : i2, c2 = s2.plugins, u24 = c2 === void 0 ? w : c2, l2 = new stylis_browser_esm_default(a2), d2 = [], h2 = function(e3) {
+  var t2, n2, r3, o2, s2 = e2 === void 0 ? E : e2, i2 = s2.options, a2 = i2 === void 0 ? E : i2, c2 = s2.plugins, u31 = c2 === void 0 ? w : c2, l2 = new stylis_browser_esm_default(a2), d2 = [], h2 = function(e3) {
     function t3(t4) {
       if (t4)
         try {
@@ -49555,18 +49563,18 @@ function ce(e2) {
         } catch (e4) {
         }
     }
-    return function(n3, r4, o3, s3, i3, a3, c3, u25, l3, d3) {
+    return function(n3, r4, o3, s3, i3, a3, c3, u32, l3, d3) {
       switch (n3) {
         case 1:
           if (l3 === 0 && r4.charCodeAt(0) === 64)
             return e3(r4 + ";"), "";
           break;
         case 2:
-          if (u25 === 0)
+          if (u32 === 0)
             return r4 + "/*|*/";
           break;
         case 3:
-          switch (u25) {
+          switch (u32) {
             case 102:
             case 112:
               return e3(o3[0] + r4), "";
@@ -49584,17 +49592,17 @@ function ce(e2) {
   };
   function m(e3, s3, i3, a3) {
     a3 === void 0 && (a3 = "&");
-    var c3 = e3.replace(ie, ""), u25 = s3 && i3 ? i3 + " " + s3 + " { " + c3 + " }" : c3;
-    return t2 = a3, n2 = s3, r3 = new RegExp("\\" + n2 + "\\b", "g"), o2 = new RegExp("(\\" + n2 + "\\b){2,}"), l2(i3 || !s3 ? "" : s3, u25);
+    var c3 = e3.replace(ie, ""), u32 = s3 && i3 ? i3 + " " + s3 + " { " + c3 + " }" : c3;
+    return t2 = a3, n2 = s3, r3 = new RegExp("\\" + n2 + "\\b", "g"), o2 = new RegExp("(\\" + n2 + "\\b){2,}"), l2(i3 || !s3 ? "" : s3, u32);
   }
-  return l2.use([].concat(u24, [function(e3, t3, o3) {
+  return l2.use([].concat(u31, [function(e3, t3, o3) {
     e3 === 2 && o3.length && o3[0].lastIndexOf(n2) > 0 && (o3[0] = o3[0].replace(r3, f));
   }, h2, function(e3) {
     if (e3 === -2) {
       var t3 = d2;
       return d2 = [], t3;
     }
-  }])), m.hash = u24.length ? u24.reduce(function(e3, t3) {
+  }])), m.hash = u31.length ? u31.reduce(function(e3, t3) {
     return t3.name || j(15), te(e3, t3.name);
   }, 5381).toString() : "", m;
 }
@@ -49610,7 +49618,7 @@ function me() {
   return s(de) || pe;
 }
 function ye(e2) {
-  var t2 = o(e2.stylisPlugins), n2 = t2[0], s2 = t2[1], c2 = fe(), u24 = i(function() {
+  var t2 = o(e2.stylisPlugins), n2 = t2[0], s2 = t2[1], c2 = fe(), u31 = i(function() {
     var t3 = c2;
     return e2.sheet ? t3 = e2.sheet : e2.target && (t3 = t3.reconstructWithOptions({ target: e2.target }, false)), e2.disableCSSOMInjection && (t3 = t3.reconstructWithOptions({ useCSSOMInjection: false })), t3;
   }, [e2.disableCSSOMInjection, e2.sheet, e2.target]), l2 = i(function() {
@@ -49618,7 +49626,7 @@ function ye(e2) {
   }, [e2.disableVendorPrefixes, n2]);
   return a(function() {
     (0, import_shallowequal.default)(n2, e2.stylisPlugins) || s2(e2.stylisPlugins);
-  }, [e2.stylisPlugins]), r2.createElement(ue.Provider, { value: u24 }, r2.createElement(de.Provider, { value: l2 }, true ? r2.Children.only(e2.children) : e2.children));
+  }, [e2.stylisPlugins]), r2.createElement(ue.Provider, { value: u31 }, r2.createElement(de.Provider, { value: l2 }, true ? r2.Children.only(e2.children) : e2.children));
 }
 var ve = function() {
   function e2(e3, t2) {
@@ -49660,8 +49668,8 @@ function Ne(e2, n2, r3, o2) {
   if (b(e2)) {
     if (typeof (l2 = e2) != "function" || l2.prototype && l2.prototype.isReactComponent || !n2)
       return e2;
-    var u24 = e2(n2);
-    return (0, import_react_is9.isElement)(u24) && console.warn(_(e2) + " is not a styled component and cannot be referred to via component selector. See https://www.styled-components.com/docs/advanced#referring-to-other-components for more details."), Ne(u24, n2, r3, o2);
+    var u31 = e2(n2);
+    return (0, import_react_is9.isElement)(u31) && console.warn(_(e2) + " is not a styled component and cannot be referred to via component selector. See https://www.styled-components.com/docs/advanced#referring-to-other-components for more details."), Ne(u31, n2, r3, o2);
   }
   var l2;
   return e2 instanceof ve ? r3 ? (e2.inject(r3, o2), e2.getName(o2)) : e2 : S(e2) ? function e3(t2, n3) {
@@ -49847,7 +49855,7 @@ var $e = function() {
 function We(e2) {
   for (var t2 = arguments.length, n2 = new Array(t2 > 1 ? t2 - 1 : 0), o2 = 1; o2 < t2; o2++)
     n2[o2 - 1] = arguments[o2];
-  var i2 = Ce.apply(void 0, [e2].concat(n2)), a2 = "sc-global-" + xe(JSON.stringify(i2)), u24 = new $e(i2, a2);
+  var i2 = Ce.apply(void 0, [e2].concat(n2)), a2 = "sc-global-" + xe(JSON.stringify(i2)), u31 = new $e(i2, a2);
   function l2(e3) {
     var t3 = fe(), n3 = me(), o3 = s(Ge), l3 = c(t3.allocateGSInstance(a2)).current;
     return r2.Children.count(e3.children) && console.warn("The global style component " + a2 + " was given child JSX. createGlobalStyle does not render children."), i2.some(function(e4) {
@@ -49855,16 +49863,16 @@ function We(e2) {
     }) && console.warn("Please do not use @import CSS syntax in createGlobalStyle at this time, as the CSSOM APIs we use in production do not handle it well. Instead, we recommend using a library such as react-helmet to inject a typical <link> meta tag to the stylesheet, or simply embedding it manually in your index.html <head> section for a simpler app."), t3.server && h2(l3, e3, t3, o3, n3), d(function() {
       if (!t3.server)
         return h2(l3, e3, t3, o3, n3), function() {
-          return u24.removeStyles(l3, t3);
+          return u31.removeStyles(l3, t3);
         };
     }, [l3, e3, t3, o3, n3]), null;
   }
   function h2(e3, t3, n3, r3, o3) {
-    if (u24.isStatic)
-      u24.renderStyles(e3, O, n3, o3);
+    if (u31.isStatic)
+      u31.renderStyles(e3, O, n3, o3);
     else {
       var s2 = v({}, t3, { theme: Re(t3, r3, l2.defaultProps) });
-      u24.renderStyles(e3, s2, n3, o3);
+      u31.renderStyles(e3, s2, n3, o3);
     }
   }
   return Oe(a2), r2.memo(l2);
@@ -50223,13 +50231,13 @@ function useResultRef(cb) {
 
 // ../juno-core/src/foundation/hooks/useId/useId.ts
 var DEFAULT_PREFIX = "rc-juno-id-";
-function useId2(id3, prefixMode) {
+function useId2(id2, prefixMode) {
   const { current: resultId } = useResultRef(() => {
-    if (id3) {
+    if (id2) {
       if (prefixMode) {
-        return (0, import_uniqueId.default)(`${id3}-`);
+        return (0, import_uniqueId.default)(`${id2}-`);
       }
-      return id3;
+      return id2;
     }
     return (0, import_uniqueId.default)(DEFAULT_PREFIX);
   });
@@ -50246,8 +50254,8 @@ var visuallyHiddenStyles = `
   white-space: nowrap;
   width: 1px;
 `;
-var useAnnouncer = (id3) => {
-  const _id = useId2(id3 ? `rc-announcer-${id3}` : "rc-announcer", !id3);
+var useAnnouncer = (id2) => {
+  const _id = useId2(id2 ? `rc-announcer-${id2}` : "rc-announcer", !id2);
   const ref2 = useRef32(null);
   useEffect30(() => {
     const el2 = document.createElement("div");
@@ -50414,11 +50422,11 @@ function useDeprecatedCheck(Component7, props, depreciates, source) {
   const name = Component7.displayName || source || "";
   if (!rcConfiguration.WARNING_IGNORE) {
     useEffect34(() => {
-      depreciates.forEach(({ prop: prop2, comment, time }) => {
-        if (props[prop2] !== void 0 && props[prop2] !== Component7.defaultProps?.[prop2]) {
+      depreciates.forEach(({ prop, comment, time }) => {
+        if (props[prop] !== void 0 && props[prop] !== Component7.defaultProps?.[prop]) {
           showDeprecated({
             component: name,
-            target: prop2,
+            target: prop,
             time,
             comment
           });
@@ -50497,17 +50505,17 @@ function mergeChildProps({
   coverPropKeys
 }) {
   const result = Object.keys(baseProps || {}).reduce((output, curr) => {
-    const prop2 = baseProps[curr];
+    const prop = baseProps[curr];
     const propTo = newProps[curr];
     if (propTo !== void 0) {
-      switch (typeof prop2) {
+      switch (typeof prop) {
         case "undefined":
           output[curr] = propTo;
           break;
         case "object": {
-          if (!isValidElement14(propTo) && !isValidElement14(prop2) && (0, import_isPlainObject.default)(propTo) && (0, import_isPlainObject.default)(prop2)) {
+          if (!isValidElement14(propTo) && !isValidElement14(prop) && (0, import_isPlainObject.default)(propTo) && (0, import_isPlainObject.default)(prop)) {
             output[curr] = mergeChildProps({
-              baseProps: prop2,
+              baseProps: prop,
               newProps: propTo || {},
               combineAllString: combineAllString || curr === "classes"
             });
@@ -50518,7 +50526,7 @@ function mergeChildProps({
         }
         case "string":
           if (combineAllString || curr === "className") {
-            output[curr] = [prop2, propTo].filter((x2) => typeof x2 === "string" && x2).join(" ");
+            output[curr] = [prop, propTo].filter((x2) => typeof x2 === "string" && x2).join(" ");
           } else {
             output[curr] = propTo;
           }
@@ -50535,14 +50543,14 @@ function mergeChildProps({
           } else {
             output[curr] = (...args) => {
               propTo?.(...args);
-              prop2?.(...args);
+              prop?.(...args);
             };
           }
           break;
         default:
       }
     } else {
-      output[curr] = prop2;
+      output[curr] = prop;
     }
     return output;
   }, {});
@@ -52054,10 +52062,10 @@ var useSleep = () => {
   const rejectRef = useRef48();
   const sleepingRef = useRef48(false);
   const clearCurrTimeout = () => {
-    const id3 = timeoutIdRef.current;
+    const id2 = timeoutIdRef.current;
     sleepingRef.current = false;
-    if (id3 !== void 0)
-      window.clearTimeout(id3);
+    if (id2 !== void 0)
+      window.clearTimeout(id2);
   };
   const sleep = (time) => new Promise((resolve, reject) => {
     clearCurrTimeout();
@@ -56660,18 +56668,18 @@ var AVATAR_COLORS = [
   "avatar.brass",
   "avatar.lake"
 ];
-function getAvatarColorTokenFromId(id3) {
+function getAvatarColorTokenFromId(id2) {
   let hash = 0;
   const total = AVATAR_COLORS.length;
-  for (const i2 of `${id3 ?? ""}`) {
+  for (const i2 of `${id2 ?? ""}`) {
     hash = hash + String(i2).charCodeAt(0);
   }
   if (hash < 0)
     hash = -hash;
   return AVATAR_COLORS[hash % total];
 }
-var useAvatarColorToken = (id3) => {
-  const result = useMemo15(() => getAvatarColorTokenFromId(id3), [id3]);
+var useAvatarColorToken = (id2) => {
+  const result = useMemo15(() => getAvatarColorTokenFromId(id2), [id2]);
   return result;
 };
 
@@ -57578,19 +57586,19 @@ var _RcMenu = forwardRef690((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcMenu" });
   const { classes: classesProp, children: children2, autoClose, onClose, ...rest } = props;
   const [focusedMenuItemId, setFocusedMenuItemId] = useState25(null);
-  const id3 = useId2("menu-", true);
+  const id2 = useId2("menu-", true);
   const { externalWindow } = useRcPortalWindowContext();
   const classes = useMemo20(() => combineClasses(RcMenuClasses, classesProp), [classesProp]);
   const handleClose = useEventCallback2((event, reason) => {
     onClose?.(event, reason);
   });
   const ctxValue = useMemo20(() => ({
-    menuId: id3,
+    menuId: id2,
     autoClose: !!autoClose,
     focusedMenuItemId,
     setFocusedMenuItemId,
     closeMenu: handleClose
-  }), [autoClose, focusedMenuItemId, handleClose, id3]);
+  }), [autoClose, focusedMenuItemId, handleClose, id2]);
   return /* @__PURE__ */ React754.createElement(RcMenuContext.Provider, {
     value: ctxValue
   }, /* @__PURE__ */ React754.createElement(MemoMuiMenu, {
@@ -59530,7 +59538,7 @@ var _RcChip = forwardRef705((inProps, ref2) => {
     classes: classesProp,
     avatar: avatarProp = AvatarProp,
     error: error4 = isError2,
-    id: id3,
+    id: id2,
     label: label3,
     disabled: disabled3,
     deleteIcon: deleteIconProp,
@@ -59584,7 +59592,7 @@ var _RcChip = forwardRef705((inProps, ref2) => {
   });
   return /* @__PURE__ */ React770.createElement(Chip_default, {
     ref: chipRef,
-    id: id3,
+    id: id2,
     tabIndex: disabled3 ? -1 : tabIndex,
     label: label3,
     disabled: disabled3,
@@ -59593,7 +59601,7 @@ var _RcChip = forwardRef705((inProps, ref2) => {
     avatar: avatar3,
     deleteIcon,
     "data-test-automation-class": "selected-item",
-    "data-test-automation-value": id3 ? id3 : label3,
+    "data-test-automation-value": id2 ? id2 : label3,
     "data-is-error": error4,
     ...rest
   });
@@ -60513,19 +60521,19 @@ var _RcTextField = forwardRef708((inProps, ref2) => {
       }
     };
   }, []);
-  const id3 = useId2(idProp);
+  const id2 = useId2(idProp);
   useEffect47(() => {
-    if (id3)
-      formContext.set(id3, { validate: () => runValidate() });
+    if (id2)
+      formContext.set(id2, { validate: () => runValidate() });
     return () => {
-      if (id3)
-        formContext.delete(id3);
+      if (id2)
+        formContext.delete(id2);
     };
   }, []);
   return /* @__PURE__ */ React777.createElement(TextField_default, {
     ...rest,
     ...events,
-    id: id3,
+    id: id2,
     value: valueProp,
     onChange,
     error: validate ? !!validateMessage : error4,
@@ -60934,7 +60942,7 @@ var RcPortalRenderer = ({
     onUnmounted,
     onClose,
     open,
-    id: id3
+    id: id2
   } = portalDescriptor;
   useEffect48(() => {
     onMounted();
@@ -60947,7 +60955,7 @@ var RcPortalRenderer = ({
     });
   }, [_props, open]);
   return /* @__PURE__ */ React781.createElement(PortalIDProvider, {
-    value: id3
+    value: id2
   }, element2);
 };
 RcPortalRenderer.displayName = "RcPortalRenderer";
@@ -60993,8 +61001,8 @@ var PortalStore = class extends Connectable {
     if (!this._batchMode)
       this._emitChanges();
   }
-  delete(id3) {
-    this._portalMap.delete(id3);
+  delete(id2) {
+    this._portalMap.delete(id2);
     if (!this._batchMode)
       this._emitChanges();
   }
@@ -61003,11 +61011,11 @@ var PortalStore = class extends Connectable {
     if (!this._batchMode)
       this._emitChanges();
   }
-  has(id3) {
-    return this._portalMap.has(id3);
+  has(id2) {
+    return this._portalMap.has(id2);
   }
-  get(id3) {
-    return this._portalMap.get(id3);
+  get(id2) {
+    return this._portalMap.get(id2);
   }
   batch(handle) {
     this._batchMode = true;
@@ -61055,20 +61063,20 @@ var PortalManager = class extends Connectable {
   _uniqIdUtils = new UniqIdUtil();
   open(Component7, options = {}) {
     const { id: _id, props, data } = options;
-    const id3 = _id ?? this._uniqIdUtils.get();
-    const currPortal = this.portalStore.get(id3);
+    const id2 = _id ?? this._uniqIdUtils.get();
+    const currPortal = this.portalStore.get(id2);
     if (currPortal?.open) {
       if (true) {
         logInDev({
           component: "RcPortalHost",
-          message: `open the portal with id('${id3}') failed, this portal is already open`
+          message: `open the portal with id('${id2}') failed, this portal is already open`
         });
       }
       return currPortal.portalController;
     }
     const portalDescriptor = this.createPortalDescriptor({
       Component: Component7,
-      id: id3,
+      id: id2,
       props,
       data
     });
@@ -61091,18 +61099,18 @@ var PortalManager = class extends Connectable {
   getTop() {
     return this.portalStore.lastPortal?.portalController;
   }
-  getByID(id3) {
-    return this.portalStore.get(id3)?.portalController;
+  getByID(id2) {
+    return this.portalStore.get(id2)?.portalController;
   }
-  isOpened(id3) {
-    const portal = this.portalStore.get(id3);
+  isOpened(id2) {
+    const portal = this.portalStore.get(id2);
     return Boolean(portal?.open);
   }
-  isTop(id3) {
-    return this.portalStore.lastPortal?.id === id3;
+  isTop(id2) {
+    return this.portalStore.lastPortal?.id === id2;
   }
-  closeByID(id3, feedback) {
-    const portal = this.portalStore.get(id3);
+  closeByID(id2, feedback) {
+    const portal = this.portalStore.get(id2);
     if (!portal?.open) {
       if (true) {
         logInDev({
@@ -61115,8 +61123,8 @@ var PortalManager = class extends Connectable {
     this._feedbackMap.set(portal.id, feedback);
     this.portalStore.addOrUpdate({ ...portal, open: false });
   }
-  [UnmountSymbol](id3) {
-    const portal = this.portalStore.get(id3);
+  [UnmountSymbol](id2) {
+    const portal = this.portalStore.get(id2);
     if (!portal) {
       if (true) {
         logInDev({
@@ -61128,8 +61136,8 @@ var PortalManager = class extends Connectable {
     }
     this.portalStore.delete(portal.id);
   }
-  updatePropsByID(id3, propsOrHandler) {
-    const portal = this.portalStore.get(id3);
+  updatePropsByID(id2, propsOrHandler) {
+    const portal = this.portalStore.get(id2);
     if (!portal?.open) {
       if (true) {
         logInDev({
@@ -61163,21 +61171,21 @@ var PortalManager = class extends Connectable {
     props,
     data,
     Component: Component7,
-    id: id3
+    id: id2
   }) {
     const [onOpened, resolveOnOpened] = createPromise();
     const [onClosed, resolveOnClosed] = createPromise();
-    const isTop = () => this.isTop(id3);
-    const isOpened = () => this.isOpened(id3);
+    const isTop = () => this.isTop(id2);
+    const isOpened = () => this.isOpened(id2);
     const portalController = {
-      id: id3,
+      id: id2,
       onOpened,
       onClosed,
       close: (feedback) => {
-        this.closeByID(id3, feedback);
+        this.closeByID(id2, feedback);
       },
       updateProps: (propsOrHandler) => {
-        this.updatePropsByID(id3, propsOrHandler);
+        this.updatePropsByID(id2, propsOrHandler);
       },
       data,
       get isOpened() {
@@ -61188,19 +61196,19 @@ var PortalManager = class extends Connectable {
       }
     };
     const portalDescriptor = {
-      id: id3,
+      id: id2,
       Component: Component7,
       onMounted: () => {
         resolveOnOpened();
       },
       onUnmounted: () => {
-        const feedback = this._feedbackMap.get(id3);
-        this._feedbackMap.delete(id3);
+        const feedback = this._feedbackMap.get(id2);
+        this._feedbackMap.delete(id2);
         resolveOnClosed(feedback);
       },
       props,
       onClose: (feedback) => {
-        this.closeByID(id3, feedback);
+        this.closeByID(id2, feedback);
       },
       open: true,
       portalController
@@ -61213,11 +61221,11 @@ var PortalManager = class extends Connectable {
 import { useContext as useContext19 } from "react";
 var usePortalManagerWithID = () => {
   const manager = useContext19(PortalManagerContext);
-  const id3 = useContext19(PortalIDContext);
+  const id2 = useContext19(PortalIDContext);
   const hasPortalParent = useContext19(HasPortalParentContext);
-  if (hasPortalParent || !manager || id3 === void 0)
+  if (hasPortalParent || !manager || id2 === void 0)
     return void 0;
-  return { manager, id: id3 };
+  return { manager, id: id2 };
 };
 
 // ../juno-core/src/components/PortalHost/utils/useUnmountPortalHandler.ts
@@ -61226,8 +61234,8 @@ var useUnmountPortalHandler = (handler) => {
   const handleExited = useEventCallback2((node4) => {
     handler?.(node4);
     if (managerWithID) {
-      const { manager, id: id3 } = managerWithID;
-      manager[UnmountSymbol](id3);
+      const { manager, id: id2 } = managerWithID;
+      manager[UnmountSymbol](id2);
     }
   });
   return handleExited;
@@ -62254,7 +62262,7 @@ function connectAdvanced(selectorFactory, _ref6) {
   }
   var _ref23 = _ref6, _ref2$getDisplayName = _ref23.getDisplayName, getDisplayName2 = _ref2$getDisplayName === void 0 ? function(name) {
     return "ConnectAdvanced(" + name + ")";
-  } : _ref2$getDisplayName, _ref2$methodName = _ref23.methodName, methodName = _ref2$methodName === void 0 ? "connectAdvanced" : _ref2$methodName, _ref2$renderCountProp = _ref23.renderCountProp, renderCountProp = _ref2$renderCountProp === void 0 ? void 0 : _ref2$renderCountProp, _ref2$shouldHandleSta = _ref23.shouldHandleStateChanges, shouldHandleStateChanges = _ref2$shouldHandleSta === void 0 ? true : _ref2$shouldHandleSta, _ref2$storeKey = _ref23.storeKey, storeKey = _ref2$storeKey === void 0 ? "store" : _ref2$storeKey, _ref2$withRef = _ref23.withRef, withRef = _ref2$withRef === void 0 ? false : _ref2$withRef, _ref2$forwardRef = _ref23.forwardRef, forwardRef807 = _ref2$forwardRef === void 0 ? false : _ref2$forwardRef, _ref2$context = _ref23.context, context = _ref2$context === void 0 ? ReactReduxContext : _ref2$context, connectOptions = _objectWithoutPropertiesLoose(_ref23, _excluded);
+  } : _ref2$getDisplayName, _ref2$methodName = _ref23.methodName, methodName = _ref2$methodName === void 0 ? "connectAdvanced" : _ref2$methodName, _ref2$renderCountProp = _ref23.renderCountProp, renderCountProp = _ref2$renderCountProp === void 0 ? void 0 : _ref2$renderCountProp, _ref2$shouldHandleSta = _ref23.shouldHandleStateChanges, shouldHandleStateChanges = _ref2$shouldHandleSta === void 0 ? true : _ref2$shouldHandleSta, _ref2$storeKey = _ref23.storeKey, storeKey = _ref2$storeKey === void 0 ? "store" : _ref2$storeKey, _ref2$withRef = _ref23.withRef, withRef = _ref2$withRef === void 0 ? false : _ref2$withRef, _ref2$forwardRef = _ref23.forwardRef, forwardRef806 = _ref2$forwardRef === void 0 ? false : _ref2$forwardRef, _ref2$context = _ref23.context, context = _ref2$context === void 0 ? ReactReduxContext : _ref2$context, connectOptions = _objectWithoutPropertiesLoose(_ref23, _excluded);
   if (true) {
     if (renderCountProp !== void 0) {
       throw new Error("renderCountProp is removed. render counting is built into the latest React Dev Tools profiling extension");
@@ -62358,7 +62366,7 @@ function connectAdvanced(selectorFactory, _ref6) {
     var Connect2 = pure ? React791.memo(ConnectFunction) : ConnectFunction;
     Connect2.WrappedComponent = WrappedComponent;
     Connect2.displayName = ConnectFunction.displayName = displayName3;
-    if (forwardRef807) {
+    if (forwardRef806) {
       var forwarded = React791.forwardRef(function forwardConnectRef(props, ref2) {
         return /* @__PURE__ */ React791.createElement(Connect2, _extends({}, props, {
           reactReduxForwardedRef: ref2
@@ -63103,12 +63111,12 @@ var withLocation = function withLocation2(source, destination) {
   }
   return "\n    You have moved the item from position " + startPosition + "\n    in list " + source.droppableId + "\n    to list " + destination.droppableId + "\n    in position " + endPosition + "\n  ";
 };
-var withCombine = function withCombine2(id3, source, combine2) {
+var withCombine = function withCombine2(id2, source, combine2) {
   var inHomeList = source.droppableId === combine2.droppableId;
   if (inHomeList) {
-    return "\n      The item " + id3 + "\n      has been combined with " + combine2.draggableId;
+    return "\n      The item " + id2 + "\n      has been combined with " + combine2.draggableId;
   }
-  return "\n      The item " + id3 + "\n      in list " + source.droppableId + "\n      has been combined with " + combine2.draggableId + "\n      in list " + combine2.droppableId + "\n    ";
+  return "\n      The item " + id2 + "\n      in list " + source.droppableId + "\n      has been combined with " + combine2.draggableId + "\n      in list " + combine2.droppableId + "\n    ";
 };
 var onDragUpdate = function onDragUpdate2(update4) {
   var location = update4.destination;
@@ -63538,7 +63546,7 @@ var isTotallyVisibleOnAxis = function isTotallyVisibleOnAxis2(args) {
     isVisibleThroughFrameFn: isTotallyVisibleThroughFrameOnAxis(args.destination.axis)
   }));
 };
-var getShouldAnimate = function getShouldAnimate2(id3, last2, forceShouldAnimate) {
+var getShouldAnimate = function getShouldAnimate2(id2, last2, forceShouldAnimate) {
   if (typeof forceShouldAnimate === "boolean") {
     return forceShouldAnimate;
   }
@@ -63546,10 +63554,10 @@ var getShouldAnimate = function getShouldAnimate2(id3, last2, forceShouldAnimate
     return true;
   }
   var invisible = last2.invisible, visible = last2.visible;
-  if (invisible[id3]) {
+  if (invisible[id2]) {
     return false;
   }
-  var previous = visible[id3];
+  var previous = visible[id2];
   return previous ? previous.shouldAnimate : true;
 };
 function getTarget(draggable2, displacedBy) {
@@ -63566,8 +63574,8 @@ function getDisplacementGroups(_ref6) {
   var afterDragging = _ref6.afterDragging, destination = _ref6.destination, displacedBy = _ref6.displacedBy, viewport = _ref6.viewport, forceShouldAnimate = _ref6.forceShouldAnimate, last2 = _ref6.last;
   return afterDragging.reduce(function process2(groups, draggable2) {
     var target = getTarget(draggable2, displacedBy);
-    var id3 = draggable2.descriptor.id;
-    groups.all.push(id3);
+    var id2 = draggable2.descriptor.id;
+    groups.all.push(id2);
     var isVisible3 = isPartiallyVisible({
       target,
       destination,
@@ -63578,12 +63586,12 @@ function getDisplacementGroups(_ref6) {
       groups.invisible[draggable2.descriptor.id] = true;
       return groups;
     }
-    var shouldAnimate = getShouldAnimate(id3, last2, forceShouldAnimate);
+    var shouldAnimate = getShouldAnimate(id2, last2, forceShouldAnimate);
     var displacement = {
-      draggableId: id3,
+      draggableId: id2,
       shouldAnimate
     };
-    groups.visible[id3] = displacement;
+    groups.visible[id2] = displacement;
     return groups;
   }, {
     all: [],
@@ -63899,13 +63907,13 @@ var scrollViewport = function(viewport, newScroll) {
   return updated;
 };
 function getDraggables(ids, draggables) {
-  return ids.map(function(id3) {
-    return draggables[id3];
+  return ids.map(function(id2) {
+    return draggables[id2];
   });
 }
-function tryGetVisible(id3, groups) {
+function tryGetVisible(id2, groups) {
   for (var i2 = 0; i2 < groups.length; i2++) {
-    var displacement = groups[i2].visible[id3];
+    var displacement = groups[i2].visible[id2];
     if (displacement) {
       return displacement;
     }
@@ -63936,13 +63944,13 @@ var speculativelyIncrease = function(_ref6) {
   var invisible = {};
   var visible = {};
   var groups = [last2, withViewportScroll, withDroppableScroll2];
-  last2.all.forEach(function(id3) {
-    var displacement = tryGetVisible(id3, groups);
+  last2.all.forEach(function(id2) {
+    var displacement = tryGetVisible(id2, groups);
     if (displacement) {
-      visible[id3] = displacement;
+      visible[id2] = displacement;
       return;
     }
-    invisible[id3] = true;
+    invisible[id2] = true;
   });
   var newImpact = _extends({}, impact, {
     displaced: {
@@ -64354,8 +64362,8 @@ var whatIsDraggedOver = function(impact) {
   return at2.combine.droppableId;
 };
 var getDroppableOver = function getDroppableOver2(impact, droppables) {
-  var id3 = whatIsDraggedOver(impact);
-  return id3 ? droppables[id3] : null;
+  var id2 = whatIsDraggedOver(impact);
+  return id2 ? droppables[id2] : null;
 };
 var moveInDirection = function(_ref6) {
   var state = _ref6.state, type3 = _ref6.type;
@@ -64475,8 +64483,8 @@ var withDroppableScroll = function(droppable2, area) {
   return offsetRectByPosition(area, frame.scroll.diff.value);
 };
 function getIsDisplaced(_ref6) {
-  var displaced = _ref6.displaced, id3 = _ref6.id;
-  return Boolean(displaced.visible[id3] || displaced.invisible[id3]);
+  var displaced = _ref6.displaced, id2 = _ref6.id;
+  return Boolean(displaced.visible[id2] || displaced.invisible[id2]);
 }
 function atIndex(_ref6) {
   var draggable2 = _ref6.draggable, closest3 = _ref6.closest, inHomeList = _ref6.inHomeList;
@@ -64500,12 +64508,12 @@ var getReorderImpact = function(_ref23) {
   var targetEnd = targetRect[axis.end];
   var withoutDragging = removeDraggableFromList(draggable2, insideDestination);
   var closest3 = find2(withoutDragging, function(child) {
-    var id3 = child.descriptor.id;
+    var id2 = child.descriptor.id;
     var childCenter = child.page.borderBox.center[axis.line];
-    var didStartAfterCritical$1 = didStartAfterCritical(id3, afterCritical);
+    var didStartAfterCritical$1 = didStartAfterCritical(id2, afterCritical);
     var isDisplaced = getIsDisplaced({
       displaced: last2,
-      id: id3
+      id: id2
     });
     if (didStartAfterCritical$1) {
       if (isDisplaced) {
@@ -64546,14 +64554,14 @@ var getCombineImpact = function(_ref6) {
   var targetEnd = targetRect[axis.end];
   var withoutDragging = removeDraggableFromList(draggable2, insideDestination);
   var combineWith = find2(withoutDragging, function(child) {
-    var id3 = child.descriptor.id;
+    var id2 = child.descriptor.id;
     var childRect = child.page.borderBox;
     var childSize = childRect[axis.size];
     var threshold = childSize / combineThresholdDivisor;
-    var didStartAfterCritical$1 = didStartAfterCritical(id3, afterCritical);
+    var didStartAfterCritical$1 = didStartAfterCritical(id2, afterCritical);
     var isDisplaced = getIsDisplaced({
       displaced: previousImpact.displaced,
-      id: id3
+      id: id2
     });
     if (didStartAfterCritical$1) {
       if (isDisplaced) {
@@ -64715,8 +64723,8 @@ var update3 = function(_ref6) {
   return result;
 };
 function getDraggables$1(ids, draggables) {
-  return ids.map(function(id3) {
-    return draggables[id3];
+  return ids.map(function(id2) {
+    return draggables[id2];
   });
 }
 var recompute = function(_ref6) {
@@ -64896,8 +64904,8 @@ var publishWhileDraggingInVirtual = function(_ref6) {
     viewport: state.viewport
   }));
   var draggables = _extends({}, state.dimensions.draggables, {}, updatedAdditions);
-  published.removals.forEach(function(id3) {
-    delete draggables[id3];
+  published.removals.forEach(function(id2) {
+    delete draggables[id2];
   });
   var dimensions = {
     droppables,
@@ -65073,8 +65081,8 @@ var reducer = function(state, action3) {
       return removeScrollJumpRequest(state);
     }
     !isMovementAllowed(state) ? true ? invariant2(false, action3.type + " not permitted in phase " + state.phase) : invariant2(false) : void 0;
-    var _action$payload2 = action3.payload, id3 = _action$payload2.id, newScroll = _action$payload2.newScroll;
-    var target = state.dimensions.droppables[id3];
+    var _action$payload2 = action3.payload, id2 = _action$payload2.id, newScroll = _action$payload2.newScroll;
+    var target = state.dimensions.droppables[id2];
     if (!target) {
       return state;
     }
@@ -65368,7 +65376,7 @@ var lift$1 = function(marshal) {
           next(action3);
           return;
         }
-        var _action$payload = action3.payload, id3 = _action$payload.id, clientSelection = _action$payload.clientSelection, movementMode = _action$payload.movementMode;
+        var _action$payload = action3.payload, id2 = _action$payload.id, clientSelection = _action$payload.clientSelection, movementMode = _action$payload.movementMode;
         var initial = getState();
         if (initial.phase === "DROP_ANIMATING") {
           dispatch(completeDrop({
@@ -65378,14 +65386,14 @@ var lift$1 = function(marshal) {
         !(getState().phase === "IDLE") ? true ? invariant2(false, "Unexpected phase to start a drag") : invariant2(false) : void 0;
         dispatch(flush());
         dispatch(beforeInitialCapture({
-          draggableId: id3,
+          draggableId: id2,
           movementMode
         }));
         var scrollOptions = {
           shouldPublishImmediately: movementMode === "SNAP"
         };
         var request = {
-          draggableId: id3,
+          draggableId: id2,
           scrollOptions
         };
         var _marshal$startPublish = marshal.startPublishing(request), critical = _marshal$startPublish.critical, dimensions = _marshal$startPublish.dimensions, viewport = _marshal$startPublish.viewport;
@@ -66111,16 +66119,16 @@ function createPublisher(_ref6) {
       frameId = null;
       start();
       var _staging = staging, additions = _staging.additions, removals = _staging.removals, modified = _staging.modified;
-      var added = Object.keys(additions).map(function(id3) {
-        return registry.draggable.getById(id3).getDimension(origin);
+      var added = Object.keys(additions).map(function(id2) {
+        return registry.draggable.getById(id2).getDimension(origin);
       }).sort(function(a2, b2) {
         return a2.descriptor.index - b2.descriptor.index;
       });
-      var updated = Object.keys(modified).map(function(id3) {
-        var entry = registry.droppable.getById(id3);
+      var updated = Object.keys(modified).map(function(id2) {
+        var entry = registry.droppable.getById(id2);
         var scroll3 = entry.callbacks.getScrollWhileDragging();
         return {
-          droppableId: id3,
+          droppableId: id2,
           scroll: scroll3
         };
       });
@@ -66135,11 +66143,11 @@ function createPublisher(_ref6) {
     });
   };
   var add3 = function add4(entry) {
-    var id3 = entry.descriptor.id;
-    staging.additions[id3] = entry;
+    var id2 = entry.descriptor.id;
+    staging.additions[id2] = entry;
     staging.modified[entry.descriptor.droppableId] = true;
-    if (staging.removals[id3]) {
-      delete staging.removals[id3];
+    if (staging.removals[id2]) {
+      delete staging.removals[id2];
     }
     collect();
   };
@@ -66273,41 +66281,41 @@ var createDimensionMarshal = function(registry, callbacks) {
     },
     registry
   });
-  var updateDroppableIsEnabled3 = function updateDroppableIsEnabled4(id3, isEnabled) {
-    !registry.droppable.exists(id3) ? true ? invariant2(false, "Cannot update is enabled flag of Droppable " + id3 + " as it is not registered") : invariant2(false) : void 0;
+  var updateDroppableIsEnabled3 = function updateDroppableIsEnabled4(id2, isEnabled) {
+    !registry.droppable.exists(id2) ? true ? invariant2(false, "Cannot update is enabled flag of Droppable " + id2 + " as it is not registered") : invariant2(false) : void 0;
     if (!collection) {
       return;
     }
     callbacks.updateDroppableIsEnabled({
-      id: id3,
+      id: id2,
       isEnabled
     });
   };
-  var updateDroppableIsCombineEnabled3 = function updateDroppableIsCombineEnabled4(id3, isCombineEnabled) {
+  var updateDroppableIsCombineEnabled3 = function updateDroppableIsCombineEnabled4(id2, isCombineEnabled) {
     if (!collection) {
       return;
     }
-    !registry.droppable.exists(id3) ? true ? invariant2(false, "Cannot update isCombineEnabled flag of Droppable " + id3 + " as it is not registered") : invariant2(false) : void 0;
+    !registry.droppable.exists(id2) ? true ? invariant2(false, "Cannot update isCombineEnabled flag of Droppable " + id2 + " as it is not registered") : invariant2(false) : void 0;
     callbacks.updateDroppableIsCombineEnabled({
-      id: id3,
+      id: id2,
       isCombineEnabled
     });
   };
-  var updateDroppableScroll3 = function updateDroppableScroll4(id3, newScroll) {
+  var updateDroppableScroll3 = function updateDroppableScroll4(id2, newScroll) {
     if (!collection) {
       return;
     }
-    !registry.droppable.exists(id3) ? true ? invariant2(false, "Cannot update the scroll on Droppable " + id3 + " as it is not registered") : invariant2(false) : void 0;
+    !registry.droppable.exists(id2) ? true ? invariant2(false, "Cannot update the scroll on Droppable " + id2 + " as it is not registered") : invariant2(false) : void 0;
     callbacks.updateDroppableScroll({
-      id: id3,
+      id: id2,
       newScroll
     });
   };
-  var scrollDroppable2 = function scrollDroppable3(id3, change) {
+  var scrollDroppable2 = function scrollDroppable3(id2, change) {
     if (!collection) {
       return;
     }
-    registry.droppable.getById(id3).callbacks.scroll(change);
+    registry.droppable.getById(id2).callbacks.scroll(change);
   };
   var stopPublishing = function stopPublishing2() {
     if (!collection) {
@@ -66364,14 +66372,14 @@ var createDimensionMarshal = function(registry, callbacks) {
   };
   return marshal;
 };
-var canStartDrag = function(state, id3) {
+var canStartDrag = function(state, id2) {
   if (state.phase === "IDLE") {
     return true;
   }
   if (state.phase !== "DROP_ANIMATING") {
     return false;
   }
-  if (state.completed.result.draggableId === id3) {
+  if (state.completed.result.draggableId === id2) {
     return false;
   }
   return state.completed.result.reason === "DROP";
@@ -67071,17 +67079,17 @@ function useFocusMarshal(contextId) {
   var recordRef = useRef74(null);
   var restoreFocusFrameRef = useRef74(null);
   var isMountedRef = useRef74(false);
-  var register = useCallback26(function register2(id3, focus2) {
+  var register = useCallback26(function register2(id2, focus2) {
     var entry = {
-      id: id3,
+      id: id2,
       focus: focus2
     };
-    entriesRef.current[id3] = entry;
+    entriesRef.current[id2] = entry;
     return function unregister() {
       var entries = entriesRef.current;
-      var current = entries[id3];
+      var current = entries[id2];
       if (current !== entry) {
-        delete entries[id3];
+        delete entries[id2];
       }
     };
   }, []);
@@ -67111,16 +67119,16 @@ function useFocusMarshal(contextId) {
       }
     });
   }, [tryGiveFocus]);
-  var tryRecordFocus = useCallback26(function tryRecordFocus2(id3) {
+  var tryRecordFocus = useCallback26(function tryRecordFocus2(id2) {
     recordRef.current = null;
     var focused = document.activeElement;
     if (!focused) {
       return;
     }
-    if (focused.getAttribute(dragHandle.draggableId) !== id3) {
+    if (focused.getAttribute(dragHandle.draggableId) !== id2) {
       return;
     }
-    recordRef.current = id3;
+    recordRef.current = id2;
   }, []);
   useIsomorphicLayoutEffect2(function() {
     isMountedRef.current = true;
@@ -67165,12 +67173,12 @@ function createRegistry() {
       });
     }
   }
-  function findDraggableById(id3) {
-    return entries.draggables[id3] || null;
+  function findDraggableById(id2) {
+    return entries.draggables[id2] || null;
   }
-  function getDraggableById(id3) {
-    var entry = findDraggableById(id3);
-    !entry ? true ? invariant2(false, "Cannot find draggable entry with id [" + id3 + "]") : invariant2(false) : void 0;
+  function getDraggableById(id2) {
+    var entry = findDraggableById(id2);
+    !entry ? true ? invariant2(false, "Cannot find draggable entry with id [" + id2 + "]") : invariant2(false) : void 0;
     return entry;
   }
   var draggableAPI = {
@@ -67209,8 +67217,8 @@ function createRegistry() {
     },
     getById: getDraggableById,
     findById: findDraggableById,
-    exists: function exists(id3) {
-      return Boolean(findDraggableById(id3));
+    exists: function exists(id2) {
+      return Boolean(findDraggableById(id2));
     },
     getAllByType: function getAllByType(type3) {
       return values4(entries.draggables).filter(function(entry) {
@@ -67218,12 +67226,12 @@ function createRegistry() {
       });
     }
   };
-  function findDroppableById(id3) {
-    return entries.droppables[id3] || null;
+  function findDroppableById(id2) {
+    return entries.droppables[id2] || null;
   }
-  function getDroppableById(id3) {
-    var entry = findDroppableById(id3);
-    !entry ? true ? invariant2(false, "Cannot find droppable entry with id [" + id3 + "]") : invariant2(false) : void 0;
+  function getDroppableById(id2) {
+    var entry = findDroppableById(id2);
+    !entry ? true ? invariant2(false, "Cannot find droppable entry with id [" + id2 + "]") : invariant2(false) : void 0;
     return entry;
   }
   var droppableAPI = {
@@ -67242,8 +67250,8 @@ function createRegistry() {
     },
     getById: getDroppableById,
     findById: findDroppableById,
-    exists: function exists(id3) {
-      return Boolean(findDroppableById(id3));
+    exists: function exists(id2) {
+      return Boolean(findDroppableById(id2));
     },
     getAllByType: function getAllByType(type3) {
       return values4(entries.droppables).filter(function(entry) {
@@ -67293,14 +67301,14 @@ var getId = function getId2(contextId) {
   return "rbd-announcement-" + contextId;
 };
 function useAnnouncer2(contextId) {
-  var id3 = useMemo46(function() {
+  var id2 = useMemo46(function() {
     return getId(contextId);
   }, [contextId]);
   var ref2 = useRef74(null);
   useEffect52(function setup() {
     var el2 = document.createElement("div");
     ref2.current = el2;
-    el2.id = id3;
+    el2.id = id2;
     el2.setAttribute("aria-live", "assertive");
     el2.setAttribute("aria-atomic", "true");
     _extends(el2.style, visuallyHidden);
@@ -67316,7 +67324,7 @@ function useAnnouncer2(contextId) {
         }
       });
     };
-  }, [id3]);
+  }, [id2]);
   var announce = useCallback26(function(message) {
     var el2 = ref2.current;
     if (el2) {
@@ -67348,7 +67356,7 @@ function useHiddenTextElement(_ref23) {
   var uniqueId4 = useUniqueId("hidden-text", {
     separator: "-"
   });
-  var id3 = useMemo46(function() {
+  var id2 = useMemo46(function() {
     return getElementId({
       contextId,
       uniqueId: uniqueId4
@@ -67356,7 +67364,7 @@ function useHiddenTextElement(_ref23) {
   }, [uniqueId4, contextId]);
   useEffect52(function mount() {
     var el2 = document.createElement("div");
-    el2.id = id3;
+    el2.id = id2;
     el2.textContent = text;
     el2.style.display = "none";
     getBodyElement().appendChild(el2);
@@ -67366,8 +67374,8 @@ function useHiddenTextElement(_ref23) {
         body.removeChild(el2);
       }
     };
-  }, [id3, text]);
-  return id3;
+  }, [id2, text]);
+  return id2;
 }
 var AppContext = React792.createContext(null);
 var peerDependencies = {
@@ -67667,18 +67675,18 @@ function useMouseSensor(api) {
         if (event.defaultPrevented) {
           return;
         }
-        var id3 = api.findClosestDraggableId(event);
-        if (!id3) {
+        var id2 = api.findClosestDraggableId(event);
+        if (!id2) {
           return;
         }
-        var options = api.findOptionsForDraggable(id3);
+        var options = api.findOptionsForDraggable(id2);
         if (!options) {
           return;
         }
         if (options.shouldRespectForcePress) {
           return;
         }
-        if (!api.canGetLock(id3)) {
+        if (!api.canGetLock(id2)) {
           return;
         }
         event.preventDefault();
@@ -68491,8 +68499,8 @@ function useSensorMarshal(_ref42) {
   var findClosestDraggableId = useCallback26(function(event) {
     return tryGetClosestDraggableIdFromEvent(contextId, event);
   }, [contextId]);
-  var findOptionsForDraggable = useCallback26(function(id3) {
-    var entry = registry.draggable.findById(id3);
+  var findOptionsForDraggable = useCallback26(function(id2) {
+    var entry = registry.draggable.findById(id2);
     return entry ? entry.options : null;
   }, [registry.draggable]);
   var tryReleaseLock = useCallback26(function tryReleaseLock2() {
@@ -68606,8 +68614,8 @@ function App(props) {
     };
   }, [isDragging, tryResetStore]);
   setCallbacks(appCallbacks);
-  var getCanLift = useCallback26(function(id3) {
-    return canStartDrag(getStore(lazyStoreRef).getState(), id3);
+  var getCanLift = useCallback26(function(id2) {
+    return canStartDrag(getStore(lazyStoreRef).getState(), id2);
   }, []);
   var getIsMovementAllowed = useCallback26(function() {
     return isMovementAllowed(getStore(lazyStoreRef).getState());
@@ -69370,19 +69378,19 @@ function useDraggablePublisher(args) {
 }
 function useValidation$1(props, contextId, getRef) {
   useDevSetupWarning(function() {
-    function prefix4(id4) {
-      return "Draggable[id: " + id4 + "]: ";
+    function prefix4(id3) {
+      return "Draggable[id: " + id3 + "]: ";
     }
-    var id3 = props.draggableId;
-    !id3 ? true ? invariant2(false, "Draggable requires a draggableId") : invariant2(false) : void 0;
-    !(typeof id3 === "string") ? true ? invariant2(false, "Draggable requires a [string] draggableId.\n      Provided: [type: " + typeof id3 + "] (value: " + id3 + ")") : invariant2(false) : void 0;
-    !isInteger(props.index) ? true ? invariant2(false, prefix4(id3) + " requires an integer index prop") : invariant2(false) : void 0;
+    var id2 = props.draggableId;
+    !id2 ? true ? invariant2(false, "Draggable requires a draggableId") : invariant2(false) : void 0;
+    !(typeof id2 === "string") ? true ? invariant2(false, "Draggable requires a [string] draggableId.\n      Provided: [type: " + typeof id2 + "] (value: " + id2 + ")") : invariant2(false) : void 0;
+    !isInteger(props.index) ? true ? invariant2(false, prefix4(id2) + " requires an integer index prop") : invariant2(false) : void 0;
     if (props.mapped.type === "DRAGGING") {
       return;
     }
     checkIsValidInnerRef(getRef());
     if (props.isEnabled) {
-      !findDragHandle(contextId, id3) ? true ? invariant2(false, prefix4(id3) + " Unable to find drag handle") : invariant2(false) : void 0;
+      !findDragHandle(contextId, id2) ? true ? invariant2(false, prefix4(id2) + " Unable to find drag handle") : invariant2(false) : void 0;
     }
   });
 }
@@ -69830,9 +69838,9 @@ var makeMapStateToProps$1 = function makeMapStateToProps3() {
       }
     };
   });
-  var getMapProps = memoize_one_esm_default(function(id3, isEnabled, isDraggingOverForConsumer, isDraggingOverForImpact, dragging, renderClone) {
+  var getMapProps = memoize_one_esm_default(function(id2, isEnabled, isDraggingOverForConsumer, isDraggingOverForImpact, dragging, renderClone) {
     var draggableId = dragging.descriptor.id;
-    var isHome = dragging.descriptor.droppableId === id3;
+    var isHome = dragging.descriptor.droppableId === id2;
     if (isHome) {
       var useClone = renderClone ? {
         render: renderClone,
@@ -69871,7 +69879,7 @@ var makeMapStateToProps$1 = function makeMapStateToProps3() {
     };
   });
   var selector = function selector2(state, ownProps) {
-    var id3 = ownProps.droppableId;
+    var id2 = ownProps.droppableId;
     var type3 = ownProps.type;
     var isEnabled = !ownProps.isDropDisabled;
     var renderClone = ownProps.renderClone;
@@ -69881,8 +69889,8 @@ var makeMapStateToProps$1 = function makeMapStateToProps3() {
         return idleWithoutAnimation;
       }
       var dragging = getDraggable(critical, state.dimensions);
-      var isDraggingOver = whatIsDraggedOver(state.impact) === id3;
-      return getMapProps(id3, isEnabled, isDraggingOver, isDraggingOver, dragging, renderClone);
+      var isDraggingOver = whatIsDraggedOver(state.impact) === id2;
+      return getMapProps(id2, isEnabled, isDraggingOver, isDraggingOver, dragging, renderClone);
     }
     if (state.phase === "DROP_ANIMATING") {
       var completed = state.completed;
@@ -69890,16 +69898,16 @@ var makeMapStateToProps$1 = function makeMapStateToProps3() {
         return idleWithoutAnimation;
       }
       var _dragging = getDraggable(completed.critical, state.dimensions);
-      return getMapProps(id3, isEnabled, whatIsDraggedOverFromResult(completed.result) === id3, whatIsDraggedOver(completed.impact) === id3, _dragging, renderClone);
+      return getMapProps(id2, isEnabled, whatIsDraggedOverFromResult(completed.result) === id2, whatIsDraggedOver(completed.impact) === id2, _dragging, renderClone);
     }
     if (state.phase === "IDLE" && state.completed && !state.shouldFlush) {
       var _completed = state.completed;
       if (!isMatchingType(type3, _completed.critical)) {
         return idleWithoutAnimation;
       }
-      var wasOver = whatIsDraggedOver(_completed.impact) === id3;
+      var wasOver = whatIsDraggedOver(_completed.impact) === id2;
       var wasCombining = Boolean(_completed.impact.at && _completed.impact.at.type === "COMBINE");
-      var isHome = _completed.critical.droppable.id === id3;
+      var isHome = _completed.critical.droppable.id === id2;
       if (wasOver) {
         return wasCombining ? idleWithAnimation : idleWithoutAnimation;
       }
@@ -71330,7 +71338,7 @@ var useDownshiftGroup = ({
   onGroupExpanded,
   groupVariant,
   getOptionDisabled,
-  id: id3
+  id: id2
 }) => {
   const [groupExpandedMapRef, setGroupExpandedMap] = useRefState({});
   const isTitleGroup = groupVariant === "normal";
@@ -71409,7 +71417,7 @@ var useDownshiftGroup = ({
           newGroup.options[0].group = newGroup;
           if (isTitleGroup) {
             const groupTitleOption = {
-              id: `${id3}-${group}`,
+              id: `${id2}-${group}`,
               label: group,
               disabled: true,
               group: newGroup
@@ -71437,7 +71445,7 @@ var useDownshiftGroup = ({
     getOptionDisabled,
     groupBy,
     handleExpandIconClick,
-    id3,
+    id2,
     isTitleGroup,
     options
   ]);
@@ -71486,7 +71494,7 @@ var useDownshiftGroup = ({
 var DEFAULT_HIGHLIGHTED_INDEX = -1;
 var componentName = "useSuggestionList";
 var useSuggestionList = ({
-  id: id3,
+  id: id2,
   inputValue: inputValueProp,
   getOptionLabel = DEFAULT_GET_OPTION_LABEL,
   filterOptions,
@@ -71517,7 +71525,7 @@ var useSuggestionList = ({
     setInputValue(newValue);
   };
   const focusInput = () => inputRef.current?.focus();
-  const currUniqueId = useId2(id3 || "suggestion-list", !id3);
+  const currUniqueId = useId2(id2 || "suggestion-list", !id2);
   const highlightedIndexRef = useRef77(DEFAULT_HIGHLIGHTED_INDEX);
   const changeHighlightedIndexReasonRef = useRef77();
   const forceUpdate = useForceUpdate();
@@ -72564,13 +72572,13 @@ var useDownshiftError = ({ isNew, MenuItem: MenuItem3, InputItem }) => {
 };
 
 // ../juno-core/src/components/Downshift/Downshift.tsx
-import React821, {
-  forwardRef as forwardRef736,
-  memo as memo571,
-  useImperativeHandle as useImperativeHandle15,
+import React828, {
+  forwardRef as forwardRef735,
+  memo as memo568,
+  useImperativeHandle as useImperativeHandle14,
   useMemo as useMemo64,
-  useRef as useRef86,
-  useState as useState37
+  useRef as useRef83,
+  useState as useState34
 } from "react";
 
 // ../juno-core/src/components/Downshift/styles/DownshiftInput.tsx
@@ -72736,13 +72744,13 @@ var StyledTextField = styled_components_default(_StyledTextField)`
 `;
 
 // ../juno-core/src/components/Downshift/SuggestionList/SuggestionList.tsx
-import React820, {
-  createContext as createContext22,
-  forwardRef as forwardRef735,
-  useContext as useContext28,
-  useLayoutEffect as useLayoutEffect24,
+import React827, {
+  createContext as createContext21,
+  forwardRef as forwardRef734,
+  useContext as useContext27,
+  useLayoutEffect as useLayoutEffect22,
   useMemo as useMemo63,
-  useRef as useRef85
+  useRef as useRef82
 } from "react";
 
 // ../juno-core/src/components/VirtualizedMenu/styles/StyledMenuPadding.tsx
@@ -72765,72 +72773,53 @@ var VirtualizedMenuStyle = () => {
     `;
 };
 
-// ../juno-core/src/components/Virtuoso/react-virtuoso/Grid.tsx
-import {
-  createElement as createElement681,
-  memo as memo569
-} from "react";
-import { createElement as createElement682 } from "react";
+// ../juno-core/src/components/Virtuoso/react-virtuoso/react-urx/index.ts
+import React816 from "react";
 
-// ../../node_modules/@virtuoso.dev/react-urx/dist/react-urx.esm.js
-import { createContext as createContext21, forwardRef as forwardRef734, useState as useState34, useImperativeHandle as useImperativeHandle14, createElement as createElement678, useLayoutEffect as useLayoutEffect22, useEffect as useEffect55, useCallback as useCallback29, useContext as useContext27 } from "react";
-
-// ../../node_modules/@virtuoso.dev/urx/dist/urx.esm.js
+// ../juno-core/src/components/Virtuoso/react-virtuoso/urx/constants.ts
 var PUBLISH = 0;
 var SUBSCRIBE = 1;
 var RESET = 2;
 var VALUE = 4;
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/urx/utils.ts
 function compose3(a2, b2) {
-  return function(arg) {
-    return a2(b2(arg));
-  };
+  return (arg) => a2(b2(arg));
 }
 function thrush(arg, proc) {
   return proc(arg);
 }
 function curry2to1(proc, arg1) {
-  return function(arg2) {
-    return proc(arg1, arg2);
-  };
+  return (arg2) => proc(arg1, arg2);
 }
 function curry1to0(proc, arg) {
-  return function() {
-    return proc(arg);
-  };
-}
-function prop(property) {
-  return function(object3) {
-    return object3[property];
-  };
+  return () => proc(arg);
 }
 function tap(arg, proc) {
   proc(arg);
   return arg;
 }
-function tup() {
-  for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-    args[_key] = arguments[_key];
-  }
+function tup(...args) {
   return args;
 }
 function call(proc) {
   proc();
 }
 function always(value) {
-  return function() {
-    return value;
-  };
+  return () => value;
 }
-function joinProc() {
-  for (var _len2 = arguments.length, procs = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-    procs[_key2] = arguments[_key2];
-  }
-  return function() {
+function joinProc(...procs) {
+  return () => {
     procs.map(call);
   };
 }
+function isDefined(arg) {
+  return arg !== void 0;
+}
 function noop3() {
 }
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/urx/actions.ts
 function subscribe(emitter, subscription) {
   return emitter(SUBSCRIBE, subscription);
 }
@@ -72847,44 +72836,46 @@ function connect(emitter, publisher) {
   return subscribe(emitter, curry2to1(publisher, PUBLISH));
 }
 function handleNext(emitter, subscription) {
-  var unsub = emitter(SUBSCRIBE, function(value) {
+  const unsub = emitter(SUBSCRIBE, (value) => {
     unsub();
     subscription(value);
   });
   return unsub;
 }
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/urx/streams.ts
 function stream() {
-  var subscriptions = [];
-  return function(action3, arg) {
+  const subscriptions = [];
+  return (action3, arg) => {
     switch (action3) {
       case RESET:
         subscriptions.splice(0, subscriptions.length);
         return;
       case SUBSCRIBE:
         subscriptions.push(arg);
-        return function() {
-          var indexOf = subscriptions.indexOf(arg);
+        return () => {
+          const indexOf = subscriptions.indexOf(arg);
           if (indexOf > -1) {
             subscriptions.splice(indexOf, 1);
           }
         };
       case PUBLISH:
-        subscriptions.slice().forEach(function(subscription) {
+        subscriptions.slice().forEach((subscription) => {
           subscription(arg);
         });
         return;
       default:
-        throw new Error("unrecognized action " + action3);
+        throw new Error(`unrecognized action ${action3}`);
     }
   };
 }
 function statefulStream(initial) {
-  var value = initial;
-  var innerSubject = stream();
-  return function(action3, arg) {
+  let value = initial;
+  const innerSubject = stream();
+  return (action3, arg) => {
     switch (action3) {
       case SUBSCRIBE:
-        var subscription = arg;
+        const subscription = arg;
         subscription(value);
         break;
       case PUBLISH:
@@ -72897,11 +72888,9 @@ function statefulStream(initial) {
   };
 }
 function eventHandler(emitter) {
-  var unsub;
-  var currentSubscription;
-  var cleanup = function cleanup2() {
-    return unsub && unsub();
-  };
+  let unsub;
+  let currentSubscription;
+  const cleanup = () => unsub && unsub();
   return function(action3, subscription) {
     switch (action3) {
       case SUBSCRIBE:
@@ -72922,138 +72911,102 @@ function eventHandler(emitter) {
         currentSubscription = null;
         return;
       default:
-        throw new Error("unrecognized action " + action3);
+        throw new Error(`unrecognized action ${action3}`);
     }
   };
 }
 function streamFromEmitter(emitter) {
-  return tap(stream(), function(stream2) {
-    return connect(emitter, stream2);
-  });
+  return tap(stream(), (stream2) => connect(emitter, stream2));
 }
 function statefulStreamFromEmitter(emitter, initial) {
-  return tap(statefulStream(initial), function(stream2) {
-    return connect(emitter, stream2);
-  });
+  return tap(statefulStream(initial), (stream2) => connect(emitter, stream2));
 }
-function combineOperators() {
-  for (var _len = arguments.length, operators = new Array(_len), _key = 0; _key < _len; _key++) {
-    operators[_key] = arguments[_key];
-  }
-  return function(subscriber) {
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/urx/pipe.ts
+function combineOperators(...operators) {
+  return (subscriber) => {
     return operators.reduceRight(thrush, subscriber);
   };
 }
-function pipe(source) {
-  for (var _len2 = arguments.length, operators = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-    operators[_key2 - 1] = arguments[_key2];
-  }
-  var project = combineOperators.apply(void 0, operators);
-  return function(action3, subscription) {
+function pipe(source, ...operators) {
+  const project = combineOperators(...operators);
+  return (action3, subscription) => {
     switch (action3) {
       case SUBSCRIBE:
         return subscribe(source, project(subscription));
       case RESET:
         reset(source);
         return;
-      default:
-        throw new Error("unrecognized action " + action3);
     }
   };
 }
 function defaultComparator(previous, next) {
   return previous === next;
 }
-function distinctUntilChanged(comparator) {
-  if (comparator === void 0) {
-    comparator = defaultComparator;
-  }
-  var current;
-  return function(done) {
-    return function(next) {
-      if (!comparator(current, next)) {
-        current = next;
-        done(next);
-      }
-    };
+function distinctUntilChanged(comparator = defaultComparator) {
+  let current;
+  return (done) => (next) => {
+    if (!comparator(current, next)) {
+      current = next;
+      done(next);
+    }
   };
 }
 function filter(predicate) {
-  return function(done) {
-    return function(value) {
-      predicate(value) && done(value);
-    };
+  return (done) => (value) => {
+    predicate(value) && done(value);
   };
 }
 function map(project) {
-  return function(done) {
-    return compose3(done, project);
-  };
+  return (done) => compose3(done, project);
 }
 function mapTo(value) {
-  return function(done) {
-    return function() {
-      return done(value);
-    };
-  };
+  return (done) => () => done(value);
 }
 function scan(scanner, initial) {
-  return function(done) {
-    return function(value) {
-      return done(initial = scanner(initial, value));
-    };
-  };
+  return (done) => (value) => done(initial = scanner(initial, value));
 }
 function skip(times) {
-  return function(done) {
-    return function(value) {
-      times > 0 ? times-- : done(value);
-    };
+  return (done) => (value) => {
+    times > 0 ? times-- : done(value);
   };
 }
 function throttleTime(interval) {
-  var currentValue;
-  var timeout2;
-  return function(done) {
-    return function(value) {
-      currentValue = value;
-      if (timeout2) {
-        return;
-      }
-      timeout2 = setTimeout(function() {
-        timeout2 = void 0;
-        done(currentValue);
-      }, interval);
-    };
+  let currentValue = null;
+  let timeout2;
+  return (done) => (value) => {
+    currentValue = value;
+    if (timeout2) {
+      return;
+    }
+    timeout2 = setTimeout(() => {
+      timeout2 = void 0;
+      done(currentValue);
+    }, interval);
   };
 }
 function debounceTime(interval) {
-  var currentValue;
-  var timeout2;
-  return function(done) {
-    return function(value) {
-      currentValue = value;
-      if (timeout2) {
-        clearTimeout(timeout2);
-      }
-      timeout2 = setTimeout(function() {
-        done(currentValue);
-      }, interval);
-    };
+  let currentValue;
+  let timeout2;
+  return (done) => (value) => {
+    currentValue = value;
+    if (timeout2) {
+      clearTimeout(timeout2);
+    }
+    timeout2 = setTimeout(() => {
+      done(currentValue);
+    }, interval);
   };
 }
-function withLatestFrom() {
-  for (var _len3 = arguments.length, sources = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
-    sources[_key3] = arguments[_key3];
-  }
-  var values5 = new Array(sources.length);
-  var called = 0;
-  var pendingCall = null;
-  var allCalled = Math.pow(2, sources.length) - 1;
-  sources.forEach(function(source, index4) {
-    var bit = Math.pow(2, index4);
-    subscribe(source, function(value) {
-      var prevCalled = called;
+function withLatestFrom(...sources) {
+  const values5 = new Array(sources.length);
+  let called = 0;
+  let pendingCall = null;
+  const allCalled = Math.pow(2, sources.length) - 1;
+  sources.forEach((source, index4) => {
+    const bit = Math.pow(2, index4);
+    subscribe(source, (value) => {
+      const prevCalled = called;
       called = called | bit;
       values5[index4] = value;
       if (prevCalled !== allCalled && called === allCalled && pendingCall) {
@@ -73062,53 +73015,40 @@ function withLatestFrom() {
       }
     });
   });
-  return function(done) {
-    return function(value) {
-      var call2 = function call3() {
-        return done([value].concat(values5));
-      };
-      if (called === allCalled) {
-        call2();
-      } else {
-        pendingCall = call2;
-      }
-    };
-  };
-}
-function merge2() {
-  for (var _len = arguments.length, sources = new Array(_len), _key = 0; _key < _len; _key++) {
-    sources[_key] = arguments[_key];
-  }
-  return function(action3, subscription) {
-    switch (action3) {
-      case SUBSCRIBE:
-        return joinProc.apply(void 0, sources.map(function(source) {
-          return subscribe(source, subscription);
-        }));
-      case RESET:
-        return;
-      default:
-        throw new Error("unrecognized action " + action3);
+  return (done) => (value) => {
+    const call2 = () => done([value].concat(values5));
+    if (called === allCalled) {
+      call2();
+    } else {
+      pendingCall = call2;
     }
   };
 }
-function duc(source, comparator) {
-  if (comparator === void 0) {
-    comparator = defaultComparator;
-  }
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/urx/transformers.ts
+function merge2(...sources) {
+  return function(action3, subscription) {
+    switch (action3) {
+      case SUBSCRIBE:
+        return joinProc(...sources.map((source) => subscribe(source, subscription)));
+      case RESET:
+        return;
+      default:
+        throw new Error(`unrecognized action ${action3}`);
+    }
+  };
+}
+function duc(source, comparator = defaultComparator) {
   return pipe(source, distinctUntilChanged(comparator));
 }
-function combineLatest() {
-  var innerSubject = stream();
-  for (var _len2 = arguments.length, emitters = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-    emitters[_key2] = arguments[_key2];
-  }
-  var values5 = new Array(emitters.length);
-  var called = 0;
-  var allCalled = Math.pow(2, emitters.length) - 1;
-  emitters.forEach(function(source, index4) {
-    var bit = Math.pow(2, index4);
-    subscribe(source, function(value) {
+function combineLatest(...emitters) {
+  const innerSubject = stream();
+  const values5 = new Array(emitters.length);
+  let called = 0;
+  const allCalled = Math.pow(2, emitters.length) - 1;
+  emitters.forEach((source, index4) => {
+    const bit = Math.pow(2, index4);
+    subscribe(source, (value) => {
       values5[index4] = value;
       called = called | bit;
       if (called === allCalled) {
@@ -73126,17 +73066,13 @@ function combineLatest() {
       case RESET:
         return reset(innerSubject);
       default:
-        throw new Error("unrecognized action " + action3);
+        throw new Error(`unrecognized action ${action3}`);
     }
   };
 }
-function system(constructor, dependencies, _temp) {
-  if (dependencies === void 0) {
-    dependencies = [];
-  }
-  var _ref6 = _temp === void 0 ? {
-    singleton: true
-  } : _temp, singleton = _ref6.singleton;
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/urx/system.ts
+function system(constructor, dependencies = [], { singleton } = { singleton: true }) {
   return {
     id: id(),
     constructor,
@@ -73144,121 +73080,58 @@ function system(constructor, dependencies, _temp) {
     singleton
   };
 }
-var id = function id2() {
-  return Symbol();
-};
+var id = () => Symbol();
 function init(systemSpec) {
-  var singletons = /* @__PURE__ */ new Map();
-  var _init = function _init2(_ref23) {
-    var id3 = _ref23.id, constructor = _ref23.constructor, dependencies = _ref23.dependencies, singleton = _ref23.singleton;
-    if (singleton && singletons.has(id3)) {
-      return singletons.get(id3);
+  const singletons = /* @__PURE__ */ new Map();
+  const _init = ({ id: id2, constructor, dependencies, singleton }) => {
+    if (singleton && singletons.has(id2)) {
+      return singletons.get(id2);
     }
-    var system2 = constructor(dependencies.map(function(e2) {
-      return _init2(e2);
-    }));
+    const system2 = constructor(dependencies.map((e2) => _init(e2)));
     if (singleton) {
-      singletons.set(id3, system2);
+      singletons.set(id2, system2);
     }
     return system2;
   };
   return _init(systemSpec);
 }
 
-// ../../node_modules/@virtuoso.dev/react-urx/dist/react-urx.esm.js
-function _objectWithoutPropertiesLoose2(source, excluded) {
-  if (source == null)
-    return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i2;
-  for (i2 = 0; i2 < sourceKeys.length; i2++) {
-    key = sourceKeys[i2];
-    if (excluded.indexOf(key) >= 0)
-      continue;
-    target[key] = source[key];
-  }
-  return target;
-}
-function _unsupportedIterableToArray2(o2, minLen) {
-  if (!o2)
-    return;
-  if (typeof o2 === "string")
-    return _arrayLikeToArray2(o2, minLen);
-  var n2 = Object.prototype.toString.call(o2).slice(8, -1);
-  if (n2 === "Object" && o2.constructor)
-    n2 = o2.constructor.name;
-  if (n2 === "Map" || n2 === "Set")
-    return Array.from(o2);
-  if (n2 === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n2))
-    return _arrayLikeToArray2(o2, minLen);
-}
-function _arrayLikeToArray2(arr, len) {
-  if (len == null || len > arr.length)
-    len = arr.length;
-  for (var i2 = 0, arr2 = new Array(len); i2 < len; i2++)
-    arr2[i2] = arr[i2];
-  return arr2;
-}
-function _createForOfIteratorHelperLoose(o2, allowArrayLike) {
-  var it = typeof Symbol !== "undefined" && o2[Symbol.iterator] || o2["@@iterator"];
-  if (it)
-    return (it = it.call(o2)).next.bind(it);
-  if (Array.isArray(o2) || (it = _unsupportedIterableToArray2(o2)) || allowArrayLike && o2 && typeof o2.length === "number") {
-    if (it)
-      o2 = it;
-    var i2 = 0;
-    return function() {
-      if (i2 >= o2.length)
-        return {
-          done: true
-        };
-      return {
-        done: false,
-        value: o2[i2++]
-      };
-    };
-  }
-  throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-var _excluded5 = ["children"];
+// ../juno-core/src/components/Virtuoso/react-virtuoso/react-urx/index.ts
 function omit4(keys3, obj) {
-  var result = {};
-  var index4 = {};
-  var idx = 0;
-  var len = keys3.length;
+  const result = {};
+  const index4 = {};
+  let idx = 0;
+  const len = keys3.length;
   while (idx < len) {
     index4[keys3[idx]] = 1;
     idx += 1;
   }
-  for (var prop2 in obj) {
-    if (!index4.hasOwnProperty(prop2)) {
-      result[prop2] = obj[prop2];
+  for (const prop in obj) {
+    if (!index4.hasOwnProperty(prop)) {
+      result[prop] = obj[prop];
     }
   }
   return result;
 }
-var useIsomorphicLayoutEffect3 = typeof document !== "undefined" ? useLayoutEffect22 : useEffect55;
+var useIsomorphicLayoutEffect3 = typeof document !== "undefined" ? React816.useLayoutEffect : React816.useEffect;
 function systemToComponent(systemSpec, map2, Root) {
-  var requiredPropNames = Object.keys(map2.required || {});
-  var optionalPropNames = Object.keys(map2.optional || {});
-  var methodNames = Object.keys(map2.methods || {});
-  var eventNames = Object.keys(map2.events || {});
-  var Context2 = createContext21({});
+  const requiredPropNames = Object.keys(map2.required || {});
+  const optionalPropNames = Object.keys(map2.optional || {});
+  const methodNames = Object.keys(map2.methods || {});
+  const eventNames = Object.keys(map2.events || {});
+  const Context2 = React816.createContext({});
   function applyPropsToSystem(system2, props) {
     if (system2["propsReady"]) {
       publish(system2["propsReady"], false);
     }
-    for (var _iterator = _createForOfIteratorHelperLoose(requiredPropNames), _step; !(_step = _iterator()).done; ) {
-      var requiredPropName = _step.value;
-      var stream2 = system2[map2.required[requiredPropName]];
+    for (const requiredPropName of requiredPropNames) {
+      const stream2 = system2[map2.required[requiredPropName]];
       publish(stream2, props[requiredPropName]);
     }
-    for (var _iterator2 = _createForOfIteratorHelperLoose(optionalPropNames), _step2; !(_step2 = _iterator2()).done; ) {
-      var optionalPropName = _step2.value;
+    for (const optionalPropName of optionalPropNames) {
       if (optionalPropName in props) {
-        var _stream = system2[map2.optional[optionalPropName]];
-        publish(_stream, props[optionalPropName]);
+        const stream2 = system2[map2.optional[optionalPropName]];
+        publish(stream2, props[optionalPropName]);
       }
     }
     if (system2["propsReady"]) {
@@ -73266,69 +73139,61 @@ function systemToComponent(systemSpec, map2, Root) {
     }
   }
   function buildMethods(system2) {
-    return methodNames.reduce(function(acc, methodName) {
-      acc[methodName] = function(value) {
-        var stream2 = system2[map2.methods[methodName]];
+    return methodNames.reduce((acc, methodName) => {
+      ;
+      acc[methodName] = (value) => {
+        const stream2 = system2[map2.methods[methodName]];
         publish(stream2, value);
       };
       return acc;
     }, {});
   }
   function buildEventHandlers(system2) {
-    return eventNames.reduce(function(handlers, eventName) {
+    return eventNames.reduce((handlers, eventName) => {
       handlers[eventName] = eventHandler(system2[map2.events[eventName]]);
       return handlers;
     }, {});
   }
-  var Component7 = forwardRef734(function(propsWithChildren, ref2) {
-    var children2 = propsWithChildren.children, props = _objectWithoutPropertiesLoose2(propsWithChildren, _excluded5);
-    var _useState = useState34(function() {
-      return tap(init(systemSpec), function(system3) {
-        return applyPropsToSystem(system3, props);
-      });
-    }), system2 = _useState[0];
-    var _useState2 = useState34(curry1to0(buildEventHandlers, system2)), handlers = _useState2[0];
-    useIsomorphicLayoutEffect3(function() {
-      for (var _iterator3 = _createForOfIteratorHelperLoose(eventNames), _step3; !(_step3 = _iterator3()).done; ) {
-        var eventName = _step3.value;
+  const Component7 = React816.forwardRef((propsWithChildren, ref2) => {
+    const { children: children2, ...props } = propsWithChildren;
+    const [system2] = React816.useState(() => {
+      return tap(init(systemSpec), (system3) => applyPropsToSystem(system3, props));
+    });
+    const [handlers] = React816.useState(curry1to0(buildEventHandlers, system2));
+    useIsomorphicLayoutEffect3(() => {
+      for (const eventName of eventNames) {
         if (eventName in props) {
           subscribe(handlers[eventName], props[eventName]);
         }
       }
-      return function() {
+      return () => {
         Object.values(handlers).map(reset);
       };
     }, [props, handlers, system2]);
-    useIsomorphicLayoutEffect3(function() {
+    useIsomorphicLayoutEffect3(() => {
       applyPropsToSystem(system2, props);
     });
-    useImperativeHandle14(ref2, always(buildMethods(system2)));
-    return createElement678(Context2.Provider, {
-      value: system2
-    }, Root ? createElement678(Root, omit4([].concat(requiredPropNames, optionalPropNames, eventNames), props), children2) : children2);
+    React816.useImperativeHandle(ref2, always(buildMethods(system2)));
+    return React816.createElement(Context2.Provider, { value: system2 }, Root ? React816.createElement(Root, omit4([...requiredPropNames, ...optionalPropNames, ...eventNames], props), children2) : children2);
   });
-  var usePublisher4 = function usePublisher5(key) {
-    return useCallback29(curry2to1(publish, useContext27(Context2)[key]), [key]);
+  const usePublisher4 = (key) => {
+    return React816.useCallback(curry2to1(publish, React816.useContext(Context2)[key]), [key]);
   };
-  var useEmitterValue4 = function useEmitterValue5(key) {
-    var context = useContext27(Context2);
-    var source = context[key];
-    var _useState3 = useState34(curry1to0(getValue3, source)), value = _useState3[0], setValue = _useState3[1];
-    useIsomorphicLayoutEffect3(function() {
-      return subscribe(source, function(next) {
-        if (next !== value) {
-          setValue(always(next));
-        }
-      });
-    }, [source, value]);
+  const useEmitterValue4 = (key) => {
+    const system2 = React816.useContext(Context2);
+    const source = system2[key];
+    const [value, setValue] = React816.useState(curry1to0(getValue3, source));
+    useIsomorphicLayoutEffect3(() => subscribe(source, (next) => {
+      if (next !== value) {
+        setValue(always(next));
+      }
+    }), [source, value]);
     return value;
   };
-  var useEmitter4 = function useEmitter5(key, callback) {
-    var context = useContext27(Context2);
-    var source = context[key];
-    useIsomorphicLayoutEffect3(function() {
-      return subscribe(source, callback);
-    }, [callback, source]);
+  const useEmitter4 = (key, callback) => {
+    const context = React816.useContext(Context2);
+    const source = context[key];
+    useIsomorphicLayoutEffect3(() => subscribe(source, callback), [callback, source]);
   };
   return {
     Component: Component7,
@@ -73338,48 +73203,16 @@ function systemToComponent(systemSpec, map2, Root) {
   };
 }
 
-// ../juno-core/src/components/Virtuoso/react-virtuoso/comparators.tsx
-function tupleComparator(prev, current) {
-  return !!(prev && prev[0] === current[0] && prev[1] === current[1]);
-}
-function rangeComparator(prev, next) {
-  return !!(prev && prev.startIndex === next.startIndex && prev.endIndex === next.endIndex);
-}
+// ../juno-core/src/components/Virtuoso/react-virtuoso/Virtuoso.tsx
+import React823 from "react";
 
-// ../juno-core/src/components/Virtuoso/react-virtuoso/domIOSystem.ts
-var domIOSystem = system(() => {
-  const scrollContainerState = stream();
-  const scrollTop = stream();
-  const deviation = statefulStream(0);
-  const smoothScrollTargetReached = stream();
-  const statefulScrollTop = statefulStream(0);
-  const viewportHeight = stream();
-  const scrollHeight = stream();
-  const headerHeight = statefulStream(0);
-  const footerHeight = statefulStream(0);
-  const scrollTo = stream();
-  const scrollBy = stream();
-  const scrollingInProgress = statefulStream(false);
-  const react18ConcurrentRendering = statefulStream(false);
-  connect(pipe(scrollContainerState, map(({ scrollTop: scrollTop2 }) => scrollTop2)), scrollTop);
-  connect(pipe(scrollContainerState, map(({ scrollHeight: scrollHeight2 }) => scrollHeight2)), scrollHeight);
-  connect(scrollTop, statefulScrollTop);
-  return {
-    scrollContainerState,
-    scrollTop,
-    viewportHeight,
-    headerHeight,
-    footerHeight,
-    scrollHeight,
-    smoothScrollTargetReached,
-    react18ConcurrentRendering,
-    scrollTo,
-    scrollBy,
-    statefulScrollTop,
-    deviation,
-    scrollingInProgress
-  };
-}, [], { singleton: true });
+// ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useIsomorphicLayoutEffect.ts
+import React817 from "react";
+var useIsomorphicLayoutEffect4 = typeof document !== "undefined" ? React817.useLayoutEffect : React817.useEffect;
+var useIsomorphicLayoutEffect_default = useIsomorphicLayoutEffect4;
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useChangedChildSizes.ts
+import React819 from "react";
 
 // ../juno-core/src/components/Virtuoso/react-virtuoso/loggerSystem.ts
 var LogLevel = /* @__PURE__ */ ((LogLevel2) => {
@@ -73410,176 +73243,250 @@ var loggerSystem = system(() => {
   };
 }, [], { singleton: true });
 
-// ../juno-core/src/components/Virtuoso/react-virtuoso/propsReadySystem.ts
-var propsReadySystem = system(([{ log: log2 }]) => {
-  const propsReady = statefulStream(false);
-  const didMount = streamFromEmitter(pipe(propsReady, filter((ready) => ready), distinctUntilChanged()));
-  subscribe(propsReady, (value) => {
-    value && getValue3(log2)("props updated", {}, LogLevel.DEBUG);
-  });
-  return { propsReady, didMount };
-}, tup(loggerSystem), { singleton: true });
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/stateFlagsSystem.ts
-var UP = "up";
-var DOWN = "down";
-var NONE = "none";
-var INITIAL_BOTTOM_STATE = {
-  atBottom: false,
-  notAtBottomBecause: "NOT_SHOWING_LAST_ITEM",
-  state: {
-    offsetBottom: 0,
-    scrollTop: 0,
-    viewportHeight: 0,
-    scrollHeight: 0
+// ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useSize.ts
+import React818 from "react";
+function useSizeWithElRef(callback, enabled = true) {
+  const ref2 = React818.useRef(null);
+  const { externalWindow = window } = useRcPortalWindowContext();
+  let callbackRef = (_el) => {
+    void 0;
+  };
+  if (typeof externalWindow["ResizeObserver"] !== "undefined") {
+    const observer = React818.useMemo(() => {
+      return new externalWindow["ResizeObserver"]((entries) => {
+        const element2 = entries[0].target;
+        if (element2.offsetParent !== null) {
+          callback(element2);
+        }
+      });
+    }, [callback]);
+    callbackRef = (elRef) => {
+      if (elRef && enabled) {
+        observer.observe(elRef);
+        ref2.current = elRef;
+      } else {
+        if (ref2.current) {
+          observer.unobserve(ref2.current);
+        }
+        ref2.current = null;
+      }
+    };
   }
-};
-var stateFlagsSystem = system(([
-  {
+  return { ref: ref2, callbackRef };
+}
+function useSize(callback, enabled = true) {
+  return useSizeWithElRef(callback, enabled).callbackRef;
+}
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useChangedChildSizes.ts
+function useChangedListContentsSizes(callback, itemSize, enabled, scrollContainerStateCallback, log2, gap, customScrollParent) {
+  const { externalWindow = window } = useRcPortalWindowContext();
+  const memoedCallback = React819.useCallback((el2) => {
+    const ranges = getChangedChildSizes(el2.children, itemSize, "offsetHeight", log2);
+    let scrollableElement = el2.parentElement;
+    while (!scrollableElement.dataset["virtuosoScroller"]) {
+      scrollableElement = scrollableElement.parentElement;
+    }
+    const windowScrolling = scrollableElement.lastElementChild.dataset["viewportType"] === "window";
+    const scrollTop = customScrollParent ? customScrollParent.scrollTop : windowScrolling ? externalWindow.pageYOffset || externalWindow.document.documentElement.scrollTop : scrollableElement.scrollTop;
+    const scrollHeight = customScrollParent ? customScrollParent.scrollHeight : windowScrolling ? externalWindow.document.documentElement.scrollHeight : scrollableElement.scrollHeight;
+    const viewportHeight = customScrollParent ? customScrollParent.offsetHeight : windowScrolling ? externalWindow.innerHeight : scrollableElement.offsetHeight;
+    scrollContainerStateCallback({
+      scrollTop: Math.max(scrollTop, 0),
+      scrollHeight,
+      viewportHeight
+    });
+    gap?.(resolveGapValue("row-gap", getComputedStyle(el2).rowGap, log2));
+    if (ranges !== null) {
+      callback(ranges);
+    }
+  }, [callback, itemSize, log2, gap, customScrollParent, scrollContainerStateCallback, externalWindow]);
+  return useSizeWithElRef(memoedCallback, enabled);
+}
+function getChangedChildSizes(children2, itemSize, field, log2) {
+  const length = children2.length;
+  if (length === 0) {
+    return null;
+  }
+  const results = [];
+  for (let i2 = 0; i2 < length; i2++) {
+    const child = children2.item(i2);
+    if (!child || child.dataset.index === void 0) {
+      continue;
+    }
+    const index4 = parseInt(child.dataset.index);
+    const knownSize = parseFloat(child.dataset.knownSize);
+    const size = itemSize(child, field);
+    if (size === 0) {
+      log2("Zero-sized element, this should not happen", { child }, LogLevel.ERROR);
+    }
+    if (size === knownSize) {
+      continue;
+    }
+    const lastResult = results[results.length - 1];
+    if (results.length === 0 || lastResult.size !== size || lastResult.endIndex !== index4 - 1) {
+      results.push({ startIndex: index4, endIndex: index4, size });
+    } else {
+      results[results.length - 1].endIndex++;
+    }
+  }
+  return results;
+}
+function resolveGapValue(property, value, log2) {
+  if (value !== "normal" && !value?.endsWith("px")) {
+    log2(`${property} was not resolved to pixel value correctly`, value, LogLevel.WARN);
+  }
+  if (value === "normal") {
+    return 0;
+  }
+  return parseInt(value ?? "0", 10);
+}
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useScrollTop.ts
+import React820 from "react";
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/utils/correctItemSize.ts
+function correctItemSize(el2, dimension) {
+  return Math.round(el2.getBoundingClientRect()[dimension]);
+}
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useScrollTop.ts
+import ReactDOM17 from "react-dom";
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/utils/approximatelyEqual.ts
+function approximatelyEqual(num1, num2) {
+  return Math.abs(num1 - num2) < 1.01;
+}
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useScrollTop.ts
+function useScrollTop(scrollContainerStateCallback, smoothScrollTargetReached, scrollerElement, scrollerRefCallback = noop3, customScrollParent) {
+  const scrollerRef = React820.useRef(null);
+  const scrollTopTarget = React820.useRef(null);
+  const timeoutRef = React820.useRef(null);
+  const { externalWindow = window } = useRcPortalWindowContext();
+  const handler = React820.useCallback((ev) => {
+    const el2 = ev.target;
+    const windowScroll = el2 === externalWindow || el2 === externalWindow.document;
+    const scrollTop = windowScroll ? externalWindow.pageYOffset || externalWindow.document.documentElement.scrollTop : el2.scrollTop;
+    const scrollHeight = windowScroll ? externalWindow.document.documentElement.scrollHeight : el2.scrollHeight;
+    const viewportHeight = windowScroll ? externalWindow.innerHeight : el2.offsetHeight;
+    const call2 = () => {
+      scrollContainerStateCallback({
+        scrollTop: Math.max(scrollTop, 0),
+        scrollHeight,
+        viewportHeight
+      });
+    };
+    if (ev.suppressFlushSync) {
+      call2();
+    } else {
+      ReactDOM17.flushSync(call2);
+    }
+    if (scrollTopTarget.current !== null) {
+      if (scrollTop === scrollTopTarget.current || scrollTop <= 0 || scrollTop === scrollHeight - viewportHeight) {
+        scrollTopTarget.current = null;
+        smoothScrollTargetReached(true);
+        if (timeoutRef.current) {
+          clearTimeout(timeoutRef.current);
+          timeoutRef.current = null;
+        }
+      }
+    }
+  }, [externalWindow, scrollContainerStateCallback, smoothScrollTargetReached]);
+  React820.useEffect(() => {
+    const localRef = customScrollParent ? customScrollParent : scrollerRef.current;
+    scrollerRefCallback(customScrollParent ? customScrollParent : scrollerRef.current);
+    handler({ target: localRef, suppressFlushSync: true });
+    localRef.addEventListener("scroll", handler, { passive: true });
+    return () => {
+      scrollerRefCallback(null);
+      localRef.removeEventListener("scroll", handler);
+    };
+  }, [scrollerRef, handler, scrollerElement, scrollerRefCallback, customScrollParent]);
+  function scrollToCallback(location) {
+    const scrollerElement2 = scrollerRef.current;
+    if (!scrollerElement2 || "offsetHeight" in scrollerElement2 && scrollerElement2.offsetHeight === 0) {
+      return;
+    }
+    const isSmooth = location.behavior === "smooth";
+    let offsetHeight;
+    let scrollHeight;
+    let scrollTop;
+    if (scrollerElement2 === externalWindow) {
+      scrollHeight = Math.max(correctItemSize(externalWindow.document.documentElement, "height"), externalWindow.document.documentElement.scrollHeight);
+      offsetHeight = externalWindow.innerHeight;
+      scrollTop = externalWindow.document.documentElement.scrollTop;
+    } else {
+      scrollHeight = scrollerElement2.scrollHeight;
+      offsetHeight = correctItemSize(scrollerElement2, "height");
+      scrollTop = scrollerElement2.scrollTop;
+    }
+    const maxScrollTop = scrollHeight - offsetHeight;
+    location.top = Math.ceil(Math.max(Math.min(maxScrollTop, location.top), 0));
+    if (approximatelyEqual(offsetHeight, scrollHeight) || location.top === scrollTop) {
+      scrollContainerStateCallback({ scrollTop, scrollHeight, viewportHeight: offsetHeight });
+      if (isSmooth) {
+        smoothScrollTargetReached(true);
+      }
+      return;
+    }
+    if (isSmooth) {
+      scrollTopTarget.current = location.top;
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+      timeoutRef.current = setTimeout(() => {
+        timeoutRef.current = null;
+        scrollTopTarget.current = null;
+        smoothScrollTargetReached(true);
+      }, 1e3);
+    } else {
+      scrollTopTarget.current = null;
+    }
+    scrollerElement2.scrollTo(location);
+  }
+  function scrollByCallback(location) {
+    scrollerRef.current.scrollBy(location);
+  }
+  return { scrollerRef, scrollByCallback, scrollToCallback };
+}
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/domIOSystem.ts
+var domIOSystem = system(() => {
+  const scrollContainerState = stream();
+  const scrollTop = stream();
+  const deviation = statefulStream(0);
+  const smoothScrollTargetReached = stream();
+  const statefulScrollTop = statefulStream(0);
+  const viewportHeight = stream();
+  const scrollHeight = stream();
+  const headerHeight = statefulStream(0);
+  const fixedHeaderHeight = statefulStream(0);
+  const fixedFooterHeight = statefulStream(0);
+  const footerHeight = statefulStream(0);
+  const scrollTo = stream();
+  const scrollBy = stream();
+  const scrollingInProgress = statefulStream(false);
+  connect(pipe(scrollContainerState, map(({ scrollTop: scrollTop2 }) => scrollTop2)), scrollTop);
+  connect(pipe(scrollContainerState, map(({ scrollHeight: scrollHeight2 }) => scrollHeight2)), scrollHeight);
+  connect(scrollTop, statefulScrollTop);
+  return {
     scrollContainerState,
     scrollTop,
     viewportHeight,
     headerHeight,
+    fixedHeaderHeight,
+    fixedFooterHeight,
     footerHeight,
-    scrollBy
-  }
-]) => {
-  const isAtBottom = statefulStream(false);
-  const isAtTop = statefulStream(true);
-  const atBottomStateChange = stream();
-  const atTopStateChange = stream();
-  const atBottomThreshold = statefulStream(4);
-  const isScrolling = streamFromEmitter(pipe(merge2(pipe(duc(scrollTop), skip(1), mapTo(true)), pipe(duc(scrollTop), skip(1), mapTo(false), debounceTime(100))), distinctUntilChanged()));
-  const isScrollingBy = statefulStreamFromEmitter(pipe(merge2(pipe(scrollBy, mapTo(true)), pipe(scrollBy, mapTo(false), debounceTime(200))), distinctUntilChanged()), false);
-  connect(pipe(duc(scrollTop), map((top2) => top2 === 0), distinctUntilChanged()), isAtTop);
-  connect(isAtTop, atTopStateChange);
-  const atBottomState = streamFromEmitter(pipe(combineLatest(scrollContainerState, duc(viewportHeight), duc(headerHeight), duc(footerHeight), duc(atBottomThreshold)), scan((current, [
-    { scrollTop: scrollTop2, scrollHeight },
-    viewportHeight2,
-    _headerHeight,
-    _footerHeight,
-    atBottomThreshold2
-  ]) => {
-    const isAtBottom2 = scrollTop2 + viewportHeight2 - scrollHeight > -atBottomThreshold2;
-    const state = {
-      viewportHeight: viewportHeight2,
-      scrollTop: scrollTop2,
-      scrollHeight
-    };
-    if (isAtBottom2) {
-      let atBottomBecause;
-      let scrollTopDelta;
-      if (scrollTop2 > current.state.scrollTop) {
-        atBottomBecause = "SCROLLED_DOWN";
-        scrollTopDelta = current.state.scrollTop - scrollTop2;
-      } else {
-        atBottomBecause = "SIZE_DECREASED";
-        scrollTopDelta = current.state.scrollTop - scrollTop2 || current.scrollTopDelta;
-      }
-      return {
-        atBottom: true,
-        state,
-        atBottomBecause,
-        scrollTopDelta
-      };
-    }
-    let notAtBottomBecause;
-    if (state.scrollHeight > current.state.scrollHeight) {
-      notAtBottomBecause = "SIZE_INCREASED";
-    } else if (viewportHeight2 < current.state.viewportHeight) {
-      notAtBottomBecause = "VIEWPORT_HEIGHT_DECREASING";
-    } else if (scrollTop2 < current.state.scrollTop) {
-      notAtBottomBecause = "SCROLLING_UPWARDS";
-    } else {
-      notAtBottomBecause = "NOT_FULLY_SCROLLED_TO_LAST_ITEM_BOTTOM";
-    }
-    return {
-      atBottom: false,
-      notAtBottomBecause,
-      state
-    };
-  }, INITIAL_BOTTOM_STATE), distinctUntilChanged((prev, next) => {
-    return prev && prev.atBottom === next.atBottom;
-  })));
-  const lastJumpDueToItemResize = statefulStreamFromEmitter(pipe(scrollContainerState, scan((current, { scrollTop: scrollTop2, scrollHeight, viewportHeight: viewportHeight2 }) => {
-    if (current.scrollHeight !== scrollHeight) {
-      const atBottom = scrollTop2 === scrollHeight - viewportHeight2;
-      if (current.scrollTop !== scrollTop2 && atBottom) {
-        return {
-          scrollHeight,
-          scrollTop: scrollTop2,
-          jump: current.scrollTop - scrollTop2,
-          changed: true
-        };
-      }
-      return {
-        scrollHeight,
-        scrollTop: scrollTop2,
-        jump: 0,
-        changed: true
-      };
-    }
-    return {
-      scrollTop: scrollTop2,
-      scrollHeight,
-      jump: 0,
-      changed: false
-    };
-  }, { scrollHeight: 0, jump: 0, scrollTop: 0, changed: false }), filter((value) => value.changed), map((value) => value.jump)), 0);
-  connect(pipe(atBottomState, map((state) => state.atBottom)), isAtBottom);
-  connect(pipe(isAtBottom, throttleTime(50)), atBottomStateChange);
-  const scrollDirection = statefulStream(DOWN);
-  connect(pipe(scrollContainerState, map(({ scrollTop: scrollTop2 }) => scrollTop2), distinctUntilChanged(), scan((acc, scrollTop2) => {
-    if (getValue3(isScrollingBy)) {
-      return { direction: acc.direction, prevScrollTop: scrollTop2 };
-    }
-    return {
-      direction: scrollTop2 < acc.prevScrollTop ? UP : DOWN,
-      prevScrollTop: scrollTop2
-    };
-  }, { direction: DOWN, prevScrollTop: 0 }), map((value) => value.direction)), scrollDirection);
-  connect(pipe(scrollContainerState, throttleTime(50), mapTo(NONE)), scrollDirection);
-  const scrollVelocity = statefulStream(0);
-  connect(pipe(isScrolling, filter((value) => !value), mapTo(0)), scrollVelocity);
-  connect(pipe(scrollTop, throttleTime(100), withLatestFrom(isScrolling), filter(([_32, isScrolling2]) => !!isScrolling2), scan(([_32, prev], [next]) => [prev, next], [0, 0]), map(([prev, next]) => next - prev)), scrollVelocity);
-  return {
-    isScrolling,
-    isAtTop,
-    isAtBottom,
-    atBottomState,
-    atTopStateChange,
-    atBottomStateChange,
-    scrollDirection,
-    atBottomThreshold,
-    scrollVelocity,
-    lastJumpDueToItemResize
+    scrollHeight,
+    smoothScrollTargetReached,
+    scrollTo,
+    scrollBy,
+    statefulScrollTop,
+    deviation,
+    scrollingInProgress
   };
-}, tup(domIOSystem));
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/scrollSeekSystem.ts
-var scrollSeekSystem = system(([{ scrollVelocity }]) => {
-  const isSeeking = statefulStream(false);
-  const rangeChanged = stream();
-  const scrollSeekConfiguration = statefulStream(false);
-  connect(pipe(scrollVelocity, withLatestFrom(scrollSeekConfiguration, isSeeking, rangeChanged), filter(([, config2]) => !!config2), map(([speed, config2, isSeeking2, range2]) => {
-    const { exit, enter: enter2 } = config2;
-    if (isSeeking2) {
-      if (exit(speed, range2)) {
-        return false;
-      }
-    } else if (enter2(speed, range2)) {
-      return true;
-    }
-    return isSeeking2;
-  }), distinctUntilChanged()), isSeeking);
-  subscribe(pipe(combineLatest(isSeeking, scrollVelocity, rangeChanged), withLatestFrom(scrollSeekConfiguration)), ([[isSeeking2, velocity, range2], config2]) => isSeeking2 && config2 && config2.change && config2.change(velocity, range2));
-  return {
-    isSeeking,
-    scrollSeekConfiguration,
-    scrollVelocity,
-    scrollSeekRangeChanged: rangeChanged
-  };
-}, tup(stateFlagsSystem), { singleton: true });
+}, [], { singleton: true });
 
 // ../juno-core/src/components/Virtuoso/react-virtuoso/AATree.ts
 var NIL_NODE = { lvl: 0 };
@@ -73599,31 +73506,44 @@ function remove(node4, key) {
   if (key === k2) {
     if (empty2(l2)) {
       return r3;
-    }
-    if (empty2(r3)) {
+    } else if (empty2(r3)) {
       return l2;
+    } else {
+      const [lastKey, lastValue] = last(l2);
+      return adjust(clone(node4, { k: lastKey, v: lastValue, l: deleteLast(l2) }));
     }
-    const [lastKey, lastValue] = last(l2);
-    return adjust(clone(node4, { k: lastKey, v: lastValue, l: deleteLast(l2) }));
-  }
-  if (key < k2) {
+  } else if (key < k2) {
     return adjust(clone(node4, { l: remove(l2, key) }));
+  } else {
+    return adjust(clone(node4, { r: remove(r3, key) }));
   }
-  return adjust(clone(node4, { r: remove(r3, key) }));
+}
+function find3(node4, key) {
+  if (empty2(node4)) {
+    return;
+  }
+  if (key === node4.k) {
+    return node4.v;
+  } else if (key < node4.k) {
+    return find3(node4.l, key);
+  } else {
+    return find3(node4.r, key);
+  }
 }
 function findMaxKeyValue(node4, value, field = "k") {
   if (empty2(node4)) {
     return [-Infinity, void 0];
   }
-  if (node4[field] === value) {
+  if (Number(node4[field]) === value) {
     return [node4.k, node4.v];
   }
-  if (node4[field] < value) {
+  if (Number(node4[field]) < value) {
     const r3 = findMaxKeyValue(node4.r, value, field);
     if (r3[0] === -Infinity) {
       return [node4.k, node4.v];
+    } else {
+      return r3;
     }
-    return r3;
   }
   return findMaxKeyValue(node4.l, value, field);
 }
@@ -73633,11 +73553,11 @@ function insert(node4, k2, v2) {
   }
   if (k2 === node4.k) {
     return clone(node4, { k: k2, v: v2 });
-  }
-  if (k2 < node4.k) {
+  } else if (k2 < node4.k) {
     return rebalance(clone(node4, { l: insert(node4.l, k2, v2) }));
+  } else {
+    return rebalance(clone(node4, { r: insert(node4.r, k2, v2) }));
   }
-  return rebalance(clone(node4, { r: insert(node4.r, k2, v2) }));
 }
 function walkWithin(node4, start3, end2) {
   if (empty2(node4)) {
@@ -73681,37 +73601,42 @@ function adjust(node4) {
   const { l: l2, r: r3, lvl } = node4;
   if (r3.lvl >= lvl - 1 && l2.lvl >= lvl - 1) {
     return node4;
-  }
-  if (lvl > r3.lvl + 1) {
+  } else if (lvl > r3.lvl + 1) {
     if (isSingle(l2)) {
       return skew(clone(node4, { lvl: lvl - 1 }));
+    } else {
+      if (!empty2(l2) && !empty2(l2.r)) {
+        return clone(l2.r, {
+          l: clone(l2, { r: l2.r.l }),
+          r: clone(node4, {
+            l: l2.r.r,
+            lvl: lvl - 1
+          }),
+          lvl
+        });
+      } else {
+        throw new Error("Unexpected empty nodes");
+      }
     }
-    if (!empty2(l2) && !empty2(l2.r)) {
-      return clone(l2.r, {
-        l: clone(l2, { r: l2.r.l }),
-        r: clone(node4, {
-          l: l2.r.r,
-          lvl: lvl - 1
-        }),
-        lvl
-      });
-    }
-    throw new Error("Unexpected empty nodes");
-  } else if (isSingle(node4)) {
-    return split(clone(node4, { lvl: lvl - 1 }));
-  } else if (!empty2(r3) && !empty2(r3.l)) {
-    const rl = r3.l;
-    const rlvl = isSingle(rl) ? r3.lvl - 1 : r3.lvl;
-    return clone(rl, {
-      l: clone(node4, {
-        r: rl.l,
-        lvl: lvl - 1
-      }),
-      r: split(clone(r3, { l: rl.r, lvl: rlvl })),
-      lvl: rl.lvl + 1
-    });
   } else {
-    throw new Error("Unexpected empty nodes");
+    if (isSingle(node4)) {
+      return split(clone(node4, { lvl: lvl - 1 }));
+    } else {
+      if (!empty2(r3) && !empty2(r3.l)) {
+        const rl = r3.l;
+        const rlvl = isSingle(rl) ? r3.lvl - 1 : r3.lvl;
+        return clone(rl, {
+          l: clone(node4, {
+            r: rl.l,
+            lvl: lvl - 1
+          }),
+          r: split(clone(r3, { l: rl.r, lvl: rlvl })),
+          lvl: rl.lvl + 1
+        });
+      } else {
+        throw new Error("Unexpected empty nodes");
+      }
+    }
   }
 }
 function rangesWithin(node4, startIndex, endIndex) {
@@ -73782,10 +73707,11 @@ function findRange(items, startValue, endValue, comparator) {
   return items.slice(startIndex, endIndex + 1);
 }
 
-// ../juno-core/src/components/Virtuoso/react-virtuoso/utils/correctItemSize.ts
-function correctItemSize(el2, dimension) {
-  return Math.round(el2.getBoundingClientRect()[dimension]);
-}
+// ../juno-core/src/components/Virtuoso/react-virtuoso/recalcSystem.ts
+var recalcSystem = system(() => {
+  const recalcInProgress = statefulStream(false);
+  return { recalcInProgress };
+}, [], { singleton: true });
 
 // ../juno-core/src/components/Virtuoso/react-virtuoso/sizeSystem.ts
 function rangeIncludes(refRange) {
@@ -73793,6 +73719,16 @@ function rangeIncludes(refRange) {
   return (range2) => {
     return range2.start === startIndex && (range2.end === endIndex || range2.end === Infinity) && range2.value === size;
   };
+}
+function affectedGroupCount(offset7, groupIndices) {
+  let recognizedOffsetItems = 0;
+  let groupIndex = 0;
+  while (recognizedOffsetItems < offset7) {
+    recognizedOffsetItems += groupIndices[groupIndex + 1] - groupIndices[groupIndex] - 1;
+    groupIndex++;
+  }
+  const offsetIsExact = recognizedOffsetItems === offset7;
+  return groupIndex - (offsetIsExact ? 0 : 1);
 }
 function insertRanges(sizeTree, ranges) {
   let syncStart = empty2(sizeTree) ? 0 : Infinity;
@@ -73809,16 +73745,14 @@ function insertRanges(sizeTree, ranges) {
     }
     let firstPassDone = false;
     let shouldInsert = false;
-    for (const {
-      start: rangeStart,
-      end: rangeEnd,
-      value: rangeValue
-    } of overlappingRanges) {
+    for (const { start: rangeStart, end: rangeEnd, value: rangeValue } of overlappingRanges) {
       if (!firstPassDone) {
         shouldInsert = rangeValue !== size;
         firstPassDone = true;
-      } else if (endIndex >= rangeStart || size === rangeValue) {
-        sizeTree = remove(sizeTree, rangeStart);
+      } else {
+        if (endIndex >= rangeStart || size === rangeValue) {
+          sizeTree = remove(sizeTree, rangeStart);
+        }
       }
       if (rangeEnd > endIndex && endIndex >= rangeStart) {
         if (rangeValue !== size) {
@@ -73858,7 +73792,7 @@ function rangesWithinOffsets(tree, startOffset, endOffset, minStartIndex = 0) {
   }
   return arrayToRanges(findRange(tree, startOffset, endOffset, offsetComparator), offsetPointParser);
 }
-function createOffsetTree(prevOffsetTree, syncStart, sizeTree) {
+function createOffsetTree(prevOffsetTree, syncStart, sizeTree, gap) {
   let offsetTree = prevOffsetTree;
   let prevIndex = 0;
   let prevSize = 0;
@@ -73879,7 +73813,8 @@ function createOffsetTree(prevOffsetTree, syncStart, sizeTree) {
     offsetTree = [];
   }
   for (const { start: startIndex2, value } of rangesWithin(sizeTree, syncStart, Infinity)) {
-    const aOffset = (startIndex2 - prevIndex) * prevSize + prevOffset;
+    const indexOffset = startIndex2 - prevIndex;
+    const aOffset = indexOffset * prevSize + prevOffset + indexOffset * gap;
     offsetTree.push({
       offset: aOffset,
       size: value,
@@ -73896,7 +73831,7 @@ function createOffsetTree(prevOffsetTree, syncStart, sizeTree) {
     lastSize: prevSize
   };
 }
-function sizeStateReducer(state, [ranges, groupIndices, log2]) {
+function sizeStateReducer(state, [ranges, groupIndices, log2, gap]) {
   if (ranges.length > 0) {
     log2("received item sizes", ranges, LogLevel.DEBUG);
   }
@@ -73910,17 +73845,13 @@ function sizeStateReducer(state, [ranges, groupIndices, log2]) {
       return insert(insert(tree, groupIndex, groupSize), groupIndex + 1, itemSize);
     }, newSizeTree);
   } else {
+    ;
     [newSizeTree, syncStart] = insertRanges(newSizeTree, ranges);
   }
   if (newSizeTree === sizeTree) {
     return state;
   }
-  const {
-    offsetTree: newOffsetTree,
-    lastIndex,
-    lastSize,
-    lastOffset
-  } = createOffsetTree(state.offsetTree, syncStart, newSizeTree);
+  const { offsetTree: newOffsetTree, lastIndex, lastSize, lastOffset } = createOffsetTree(state.offsetTree, syncStart, newSizeTree, gap);
   return {
     sizeTree: newSizeTree,
     offsetTree: newOffsetTree,
@@ -73928,21 +73859,32 @@ function sizeStateReducer(state, [ranges, groupIndices, log2]) {
     lastOffset,
     lastSize,
     groupOffsetTree: groupIndices.reduce((tree, index4) => {
-      return insert(tree, index4, offsetOf(index4, newOffsetTree));
+      return insert(tree, index4, offsetOf(index4, newOffsetTree, gap));
     }, newTree()),
     groupIndices
   };
 }
-function offsetOf(index4, tree) {
+function offsetOf(index4, tree, gap) {
   if (tree.length === 0) {
     return 0;
   }
-  const {
-    offset: offset7,
-    index: startIndex,
-    size
-  } = findClosestSmallerOrEqual(tree, index4, indexComparator);
-  return size * (index4 - startIndex) + offset7;
+  const { offset: offset7, index: startIndex, size } = findClosestSmallerOrEqual(tree, index4, indexComparator);
+  const itemCount = index4 - startIndex;
+  const top2 = size * itemCount + (itemCount - 1) * gap + offset7;
+  return top2 > 0 ? top2 + gap : top2;
+}
+function isGroupLocation(location) {
+  return typeof location.groupIndex !== "undefined";
+}
+function originalIndexFromLocation(location, sizes, lastIndex) {
+  if (isGroupLocation(location)) {
+    return sizes.groupIndices[location.groupIndex] + 1;
+  } else {
+    const numericIndex = location.index === "LAST" ? lastIndex : location.index;
+    let result = originalIndexFromItemIndex(numericIndex, sizes);
+    result = Math.max(0, result, Math.min(lastIndex, result));
+    return result;
+  }
 }
 function originalIndexFromItemIndex(itemIndex, sizes) {
   if (!hasGroups(sizes)) {
@@ -73957,11 +73899,18 @@ function originalIndexFromItemIndex(itemIndex, sizes) {
 function hasGroups(sizes) {
   return !empty2(sizes.groupOffsetTree);
 }
+function sizeTreeToRanges(sizeTree) {
+  return walk(sizeTree).map(({ k: startIndex, v: size }, index4, sizeArray) => {
+    const nextSize = sizeArray[index4 + 1];
+    const endIndex = nextSize ? nextSize.k - 1 : Infinity;
+    return { startIndex, endIndex, size };
+  });
+}
 var SIZE_MAP = {
   offsetHeight: "height",
   offsetWidth: "width"
 };
-var sizeSystem = system(([{ log: log2 }]) => {
+var sizeSystem = system(([{ log: log2 }, { recalcInProgress }]) => {
   const sizeRanges = stream();
   const totalCount = stream();
   const statefulTotalCount = statefulStreamFromEmitter(totalCount, 0);
@@ -73973,11 +73922,16 @@ var sizeSystem = system(([{ log: log2 }]) => {
   const defaultItemSize = statefulStream(void 0);
   const itemSize = statefulStream((el2, field) => correctItemSize(el2, SIZE_MAP[field]));
   const data = statefulStream(void 0);
+  const gap = statefulStream(0);
   const initial = initialSizeState();
-  const sizes = statefulStreamFromEmitter(pipe(sizeRanges, withLatestFrom(groupIndices, log2), scan(sizeStateReducer, initial), distinctUntilChanged()), initial);
-  connect(pipe(groupIndices, filter((indexes) => indexes.length > 0), withLatestFrom(sizes), map(([groupIndices2, sizes2]) => {
+  const sizes = statefulStreamFromEmitter(pipe(sizeRanges, withLatestFrom(groupIndices, log2, gap), scan(sizeStateReducer, initial), distinctUntilChanged()), initial);
+  const prevGroupIndices = statefulStreamFromEmitter(pipe(groupIndices, distinctUntilChanged(), scan((prev, curr) => ({ prev: prev.current, current: curr }), {
+    prev: [],
+    current: []
+  }), map(({ prev }) => prev)), []);
+  connect(pipe(groupIndices, filter((indexes) => indexes.length > 0), withLatestFrom(sizes, gap), map(([groupIndices2, sizes2, gap2]) => {
     const groupOffsetTree = groupIndices2.reduce((tree, index4, idx) => {
-      return insert(tree, index4, offsetOf(index4, sizes2.offsetTree) || idx);
+      return insert(tree, index4, offsetOf(index4, sizes2.offsetTree, gap2) || idx);
     }, newTree());
     return {
       ...sizes2,
@@ -74001,7 +73955,7 @@ var sizeSystem = system(([{ log: log2 }]) => {
   connect(pipe(defaultItemSize, filter((value) => {
     return value !== void 0 && empty2(getValue3(sizes).sizeTree);
   }), map((size) => [{ startIndex: 0, endIndex: 0, size }])), sizeRanges);
-  const listRefresh = streamFromEmitter(pipe(sizeRanges, withLatestFrom(sizes), scan(({ sizes: oldSizes }, [, newSizes]) => {
+  const listRefresh = streamFromEmitter(pipe(sizeRanges, withLatestFrom(sizes), scan(({ sizes: oldSizes }, [_32, newSizes]) => {
     return {
       changed: newSizes !== oldSizes,
       sizes: newSizes
@@ -74010,9 +73964,15 @@ var sizeSystem = system(([{ log: log2 }]) => {
   subscribe(pipe(firstItemIndex, scan((prev, next) => {
     return { diff: prev.prev - next, prev: next };
   }, { diff: 0, prev: 0 }), map((val) => val.diff)), (offset7) => {
+    const { groupIndices: groupIndices2 } = getValue3(sizes);
     if (offset7 > 0) {
-      publish(unshiftWith, offset7);
+      publish(recalcInProgress, true);
+      publish(unshiftWith, offset7 + affectedGroupCount(offset7, groupIndices2));
     } else if (offset7 < 0) {
+      const prevGroupIndicesValue = getValue3(prevGroupIndices);
+      if (prevGroupIndicesValue.length > 0) {
+        offset7 -= affectedGroupCount(-offset7, prevGroupIndicesValue);
+      }
       publish(shiftWith, offset7);
     }
   });
@@ -74023,44 +73983,115 @@ var sizeSystem = system(([{ log: log2 }]) => {
   });
   const beforeUnshiftWith = streamFromEmitter(unshiftWith);
   connect(pipe(unshiftWith, withLatestFrom(sizes), map(([unshiftWith2, sizes2]) => {
-    if (sizes2.groupIndices.length > 0) {
-      throw new Error("Virtuoso: prepending items does not work with groups");
+    const groupedMode = sizes2.groupIndices.length > 0;
+    const initialRanges = [];
+    const defaultSize2 = sizes2.lastSize;
+    if (groupedMode) {
+      const firstGroupSize = find3(sizes2.sizeTree, 0);
+      let prependedGroupItemsCount = 0;
+      let groupIndex = 0;
+      while (prependedGroupItemsCount < unshiftWith2) {
+        const theGroupIndex = sizes2.groupIndices[groupIndex];
+        const groupItemCount = sizes2.groupIndices.length === groupIndex + 1 ? Infinity : sizes2.groupIndices[groupIndex + 1] - theGroupIndex - 1;
+        initialRanges.push({
+          startIndex: theGroupIndex,
+          endIndex: theGroupIndex,
+          size: firstGroupSize
+        });
+        initialRanges.push({
+          startIndex: theGroupIndex + 1,
+          endIndex: theGroupIndex + 1 + groupItemCount - 1,
+          size: defaultSize2
+        });
+        groupIndex++;
+        prependedGroupItemsCount += groupItemCount + 1;
+      }
+      const sizeTreeKV = walk(sizes2.sizeTree);
+      const firstGroupIsExpanded = prependedGroupItemsCount !== unshiftWith2;
+      if (firstGroupIsExpanded) {
+        sizeTreeKV.shift();
+      }
+      return sizeTreeKV.reduce((acc, { k: index4, v: size }) => {
+        let ranges = acc.ranges;
+        if (acc.prevSize !== 0) {
+          ranges = [
+            ...acc.ranges,
+            {
+              startIndex: acc.prevIndex,
+              endIndex: index4 + unshiftWith2 - 1,
+              size: acc.prevSize
+            }
+          ];
+        }
+        return {
+          ranges,
+          prevIndex: index4 + unshiftWith2,
+          prevSize: size
+        };
+      }, {
+        ranges: initialRanges,
+        prevIndex: unshiftWith2,
+        prevSize: 0
+      }).ranges;
     }
     return walk(sizes2.sizeTree).reduce((acc, { k: index4, v: size }) => {
       return {
-        ranges: [
-          ...acc.ranges,
-          {
-            startIndex: acc.prevIndex,
-            endIndex: index4 + unshiftWith2 - 1,
-            size: acc.prevSize
-          }
-        ],
+        ranges: [...acc.ranges, { startIndex: acc.prevIndex, endIndex: index4 + unshiftWith2 - 1, size: acc.prevSize }],
         prevIndex: index4 + unshiftWith2,
         prevSize: size
       };
     }, {
       ranges: [],
       prevIndex: 0,
-      prevSize: sizes2.lastSize
+      prevSize: defaultSize2
     }).ranges;
   })), sizeRanges);
-  const shiftWithOffset = streamFromEmitter(pipe(shiftWith, withLatestFrom(sizes), map(([shiftWith2, { offsetTree }]) => {
+  const shiftWithOffset = streamFromEmitter(pipe(shiftWith, withLatestFrom(sizes, gap), map(([shiftWith2, { offsetTree }, gap2]) => {
     const newFirstItemIndex = -shiftWith2;
-    return offsetOf(newFirstItemIndex, offsetTree);
+    return offsetOf(newFirstItemIndex, offsetTree, gap2);
   })));
-  connect(pipe(shiftWith, withLatestFrom(sizes), map(([shiftWith2, sizes2]) => {
-    if (sizes2.groupIndices.length > 0) {
-      throw new Error("Virtuoso: shifting items does not work with groups");
+  connect(pipe(shiftWith, withLatestFrom(sizes, gap), map(([shiftWith2, sizes2, gap2]) => {
+    const groupedMode = sizes2.groupIndices.length > 0;
+    if (groupedMode) {
+      if (empty2(sizes2.sizeTree)) {
+        return sizes2;
+      }
+      let newSizeTree = newTree();
+      const prevGroupIndicesValue = getValue3(prevGroupIndices);
+      let removedItemsCount = 0;
+      let groupIndex = 0;
+      let groupOffset = 0;
+      while (removedItemsCount < -shiftWith2) {
+        groupOffset = prevGroupIndicesValue[groupIndex];
+        const groupItemCount = prevGroupIndicesValue[groupIndex + 1] - groupOffset - 1;
+        groupIndex++;
+        removedItemsCount += groupItemCount + 1;
+      }
+      newSizeTree = walk(sizes2.sizeTree).reduce((acc, { k: k2, v: v2 }) => {
+        return insert(acc, Math.max(0, k2 + shiftWith2), v2);
+      }, newSizeTree);
+      const aGroupIsShrunk = removedItemsCount !== -shiftWith2;
+      if (aGroupIsShrunk) {
+        const firstGroupSize = find3(sizes2.sizeTree, groupOffset);
+        newSizeTree = insert(newSizeTree, 0, firstGroupSize);
+        const nextItemSize = findMaxKeyValue(sizes2.sizeTree, -shiftWith2 + 1)[1];
+        newSizeTree = insert(newSizeTree, 1, nextItemSize);
+      }
+      return {
+        ...sizes2,
+        sizeTree: newSizeTree,
+        ...createOffsetTree(sizes2.offsetTree, 0, newSizeTree, gap2)
+      };
+    } else {
+      const newSizeTree = walk(sizes2.sizeTree).reduce((acc, { k: k2, v: v2 }) => {
+        return insert(acc, Math.max(0, k2 + shiftWith2), v2);
+      }, newTree());
+      return {
+        ...sizes2,
+        sizeTree: newSizeTree,
+        ...createOffsetTree(sizes2.offsetTree, 0, newSizeTree, gap2)
+      };
     }
-    const newSizeTree = walk(sizes2.sizeTree).reduce((acc, { k: k2, v: v2 }) => {
-      return insert(acc, Math.max(0, k2 + shiftWith2), v2);
-    }, newTree());
-    return {
-      ...sizes2,
-      sizeTree: newSizeTree,
-      ...createOffsetTree(sizes2.offsetTree, 0, newSizeTree)
-    };
   })), sizes);
   return {
     data,
@@ -74074,13 +74105,14 @@ var sizeSystem = system(([{ log: log2 }]) => {
     shiftWithOffset,
     beforeUnshiftWith,
     firstItemIndex,
+    gap,
     sizes,
     listRefresh,
     statefulTotalCount,
     trackItemSizes,
     itemSize
   };
-}, tup(loggerSystem), { singleton: true });
+}, tup(loggerSystem, recalcSystem), { singleton: true });
 
 // ../juno-core/src/components/Virtuoso/react-virtuoso/scrollToIndexSystem.ts
 var SUPPORTS_SCROLL_TO_OPTIONS = typeof document !== "undefined" && "scrollBehavior" in document.documentElement.style;
@@ -74098,14 +74130,16 @@ function normalizeIndexLocation(location) {
   return result;
 }
 var scrollToIndexSystem = system(([
-  { sizes, totalCount, listRefresh },
+  { sizes, totalCount, listRefresh, gap },
   {
     scrollingInProgress,
     viewportHeight,
     scrollTo,
     smoothScrollTargetReached,
     headerHeight,
-    footerHeight
+    footerHeight,
+    fixedHeaderHeight,
+    fixedFooterHeight
   },
   { log: log2 }
 ]) => {
@@ -74129,33 +74163,24 @@ var scrollToIndexSystem = system(([
     }
     publish(scrollingInProgress, false);
   }
-  connect(pipe(scrollToIndex, withLatestFrom(sizes, viewportHeight, totalCount, topListHeight, headerHeight, footerHeight, log2), map(([
-    location,
-    sizes2,
-    viewportHeight2,
-    totalCount2,
-    topListHeight2,
-    headerHeight2,
-    footerHeight2,
-    log3
+  connect(pipe(scrollToIndex, withLatestFrom(sizes, viewportHeight, totalCount, topListHeight, headerHeight, footerHeight, log2), withLatestFrom(gap, fixedHeaderHeight, fixedFooterHeight), map(([
+    [location, sizes2, viewportHeight2, totalCount2, topListHeight2, headerHeight2, footerHeight2, log3],
+    gap2,
+    fixedHeaderHeight2,
+    fixedFooterHeight2
   ]) => {
     const normalLocation = normalizeIndexLocation(location);
     const { align, behavior, offset: offset7 } = normalLocation;
     const lastIndex = totalCount2 - 1;
-    let index4 = normalLocation.index;
-    if (index4 === "LAST") {
-      index4 = lastIndex;
-    }
-    index4 = originalIndexFromItemIndex(index4, sizes2);
-    index4 = Math.max(0, index4, Math.min(lastIndex, index4));
-    let top2 = offsetOf(index4, sizes2.offsetTree) + headerHeight2;
+    const index4 = originalIndexFromLocation(normalLocation, sizes2, lastIndex);
+    let top2 = offsetOf(index4, sizes2.offsetTree, gap2) + headerHeight2;
     if (align === "end") {
-      top2 = top2 - viewportHeight2 + findMaxKeyValue(sizes2.sizeTree, index4)[1];
+      top2 += fixedHeaderHeight2 + findMaxKeyValue(sizes2.sizeTree, index4)[1] - viewportHeight2 + fixedFooterHeight2;
       if (index4 === lastIndex) {
         top2 += footerHeight2;
       }
     } else if (align === "center") {
-      top2 = top2 - viewportHeight2 / 2 + findMaxKeyValue(sizes2.sizeTree, index4)[1] / 2;
+      top2 += (fixedHeaderHeight2 + findMaxKeyValue(sizes2.sizeTree, index4)[1] - viewportHeight2 + fixedFooterHeight2) / 2;
     } else {
       top2 -= topListHeight2;
     }
@@ -74181,7 +74206,7 @@ var scrollToIndexSystem = system(([
         retry(listChanged);
       });
     } else {
-      unsubscribeNextListRefresh = handleNext(pipe(listRefresh, watchChangesFor(50)), retry);
+      unsubscribeNextListRefresh = handleNext(pipe(listRefresh, watchChangesFor(150)), retry);
     }
     cleartTimeoutRef = setTimeout(() => {
       cleanup();
@@ -74209,6 +74234,279 @@ function watchChangesFor(limit) {
   };
 }
 
+// ../juno-core/src/components/Virtuoso/react-virtuoso/stateFlagsSystem.ts
+var UP = "up";
+var DOWN = "down";
+var NONE = "none";
+var INITIAL_BOTTOM_STATE = {
+  atBottom: false,
+  notAtBottomBecause: "NOT_SHOWING_LAST_ITEM",
+  state: {
+    offsetBottom: 0,
+    scrollTop: 0,
+    viewportHeight: 0,
+    scrollHeight: 0
+  }
+};
+var DEFAULT_AT_TOP_THRESHOLD = 0;
+var stateFlagsSystem = system(([{ scrollContainerState, scrollTop, viewportHeight, headerHeight, footerHeight, scrollBy }]) => {
+  const isAtBottom = statefulStream(false);
+  const isAtTop = statefulStream(true);
+  const atBottomStateChange = stream();
+  const atTopStateChange = stream();
+  const atBottomThreshold = statefulStream(4);
+  const atTopThreshold = statefulStream(DEFAULT_AT_TOP_THRESHOLD);
+  const isScrolling = statefulStreamFromEmitter(pipe(merge2(pipe(duc(scrollTop), skip(1), mapTo(true)), pipe(duc(scrollTop), skip(1), mapTo(false), debounceTime(100))), distinctUntilChanged()), false);
+  const isScrollingBy = statefulStreamFromEmitter(pipe(merge2(pipe(scrollBy, mapTo(true)), pipe(scrollBy, mapTo(false), debounceTime(200))), distinctUntilChanged()), false);
+  connect(pipe(combineLatest(duc(scrollTop), duc(atTopThreshold)), map(([top2, atTopThreshold2]) => top2 <= atTopThreshold2), distinctUntilChanged()), isAtTop);
+  connect(pipe(isAtTop, throttleTime(50)), atTopStateChange);
+  const atBottomState = streamFromEmitter(pipe(combineLatest(scrollContainerState, duc(viewportHeight), duc(headerHeight), duc(footerHeight), duc(atBottomThreshold)), scan((current, [{ scrollTop: scrollTop2, scrollHeight }, viewportHeight2, _headerHeight, _footerHeight, atBottomThreshold2]) => {
+    const isAtBottom2 = scrollTop2 + viewportHeight2 - scrollHeight > -atBottomThreshold2;
+    const state = {
+      viewportHeight: viewportHeight2,
+      scrollTop: scrollTop2,
+      scrollHeight
+    };
+    if (isAtBottom2) {
+      let atBottomBecause;
+      let scrollTopDelta;
+      if (scrollTop2 > current.state.scrollTop) {
+        atBottomBecause = "SCROLLED_DOWN";
+        scrollTopDelta = current.state.scrollTop - scrollTop2;
+      } else {
+        atBottomBecause = "SIZE_DECREASED";
+        scrollTopDelta = current.state.scrollTop - scrollTop2 || current.scrollTopDelta;
+      }
+      return {
+        atBottom: true,
+        state,
+        atBottomBecause,
+        scrollTopDelta
+      };
+    }
+    let notAtBottomBecause;
+    if (state.scrollHeight > current.state.scrollHeight) {
+      notAtBottomBecause = "SIZE_INCREASED";
+    } else if (viewportHeight2 < current.state.viewportHeight) {
+      notAtBottomBecause = "VIEWPORT_HEIGHT_DECREASING";
+    } else if (scrollTop2 < current.state.scrollTop) {
+      notAtBottomBecause = "SCROLLING_UPWARDS";
+    } else {
+      notAtBottomBecause = "NOT_FULLY_SCROLLED_TO_LAST_ITEM_BOTTOM";
+    }
+    return {
+      atBottom: false,
+      notAtBottomBecause,
+      state
+    };
+  }, INITIAL_BOTTOM_STATE), distinctUntilChanged((prev, next) => {
+    return prev && prev.atBottom === next.atBottom;
+  })));
+  const lastJumpDueToItemResize = statefulStreamFromEmitter(pipe(scrollContainerState, scan((current, { scrollTop: scrollTop2, scrollHeight, viewportHeight: viewportHeight2 }) => {
+    if (!approximatelyEqual(current.scrollHeight, scrollHeight)) {
+      const atBottom = scrollHeight - (scrollTop2 + viewportHeight2) < 1;
+      if (current.scrollTop !== scrollTop2 && atBottom) {
+        return {
+          scrollHeight,
+          scrollTop: scrollTop2,
+          jump: current.scrollTop - scrollTop2,
+          changed: true
+        };
+      } else {
+        return {
+          scrollHeight,
+          scrollTop: scrollTop2,
+          jump: 0,
+          changed: true
+        };
+      }
+    } else {
+      return {
+        scrollTop: scrollTop2,
+        scrollHeight,
+        jump: 0,
+        changed: false
+      };
+    }
+  }, { scrollHeight: 0, jump: 0, scrollTop: 0, changed: false }), filter((value) => value.changed), map((value) => value.jump)), 0);
+  connect(pipe(atBottomState, map((state) => state.atBottom)), isAtBottom);
+  connect(pipe(isAtBottom, throttleTime(50)), atBottomStateChange);
+  const scrollDirection = statefulStream(DOWN);
+  connect(pipe(scrollContainerState, map(({ scrollTop: scrollTop2 }) => scrollTop2), distinctUntilChanged(), scan((acc, scrollTop2) => {
+    if (getValue3(isScrollingBy)) {
+      return { direction: acc.direction, prevScrollTop: scrollTop2 };
+    }
+    return { direction: scrollTop2 < acc.prevScrollTop ? UP : DOWN, prevScrollTop: scrollTop2 };
+  }, { direction: DOWN, prevScrollTop: 0 }), map((value) => value.direction)), scrollDirection);
+  connect(pipe(scrollContainerState, throttleTime(50), mapTo(NONE)), scrollDirection);
+  const scrollVelocity = statefulStream(0);
+  connect(pipe(isScrolling, filter((value) => !value), mapTo(0)), scrollVelocity);
+  connect(pipe(scrollTop, throttleTime(100), withLatestFrom(isScrolling), filter(([_32, isScrolling2]) => !!isScrolling2), scan(([_32, prev], [next]) => [prev, next], [0, 0]), map(([prev, next]) => next - prev)), scrollVelocity);
+  return {
+    isScrolling,
+    isAtTop,
+    isAtBottom,
+    atBottomState,
+    atTopStateChange,
+    atBottomStateChange,
+    scrollDirection,
+    atBottomThreshold,
+    atTopThreshold,
+    scrollVelocity,
+    lastJumpDueToItemResize
+  };
+}, tup(domIOSystem));
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/propsReadySystem.ts
+var propsReadySystem = system(([{ log: log2 }]) => {
+  const propsReady = statefulStream(false);
+  const didMount = streamFromEmitter(pipe(propsReady, filter((ready) => ready), distinctUntilChanged()));
+  subscribe(propsReady, (value) => {
+    value && getValue3(log2)("props updated", {}, LogLevel.DEBUG);
+  });
+  return { propsReady, didMount };
+}, tup(loggerSystem), { singleton: true });
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/utils/skipFrames.ts
+function skipFrames(frameCount, callback) {
+  if (frameCount == 0) {
+    callback();
+  } else {
+    requestAnimationFrame(() => skipFrames(frameCount - 1, callback));
+  }
+}
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/initialTopMostItemIndexSystem.ts
+function getInitialTopMostItemIndexNumber(location, totalCount) {
+  const lastIndex = totalCount - 1;
+  const index4 = typeof location === "number" ? location : location.index === "LAST" ? lastIndex : location.index;
+  return index4;
+}
+var initialTopMostItemIndexSystem = system(([{ sizes, listRefresh, defaultItemSize }, { scrollTop }, { scrollToIndex }, { didMount }]) => {
+  const scrolledToInitialItem = statefulStream(true);
+  const initialTopMostItemIndex = statefulStream(0);
+  const scrollScheduled = statefulStream(false);
+  connect(pipe(didMount, withLatestFrom(initialTopMostItemIndex), filter(([_32, location]) => !!location), mapTo(false)), scrolledToInitialItem);
+  subscribe(pipe(combineLatest(listRefresh, didMount), withLatestFrom(scrolledToInitialItem, sizes, defaultItemSize, scrollScheduled), filter(([[, didMount2], scrolledToInitialItem2, { sizeTree }, defaultItemSize2, scrollScheduled2]) => {
+    return didMount2 && (!empty2(sizeTree) || isDefined(defaultItemSize2)) && !scrolledToInitialItem2 && !scrollScheduled2;
+  }), withLatestFrom(initialTopMostItemIndex)), ([, initialTopMostItemIndex2]) => {
+    publish(scrollScheduled, true);
+    skipFrames(3, () => {
+      handleNext(scrollTop, () => publish(scrolledToInitialItem, true));
+      publish(scrollToIndex, initialTopMostItemIndex2);
+    });
+  });
+  return {
+    scrolledToInitialItem,
+    initialTopMostItemIndex
+  };
+}, tup(sizeSystem, domIOSystem, scrollToIndexSystem, propsReadySystem), { singleton: true });
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/followOutputSystem.ts
+function normalizeFollowOutput(follow) {
+  if (!follow) {
+    return false;
+  }
+  return follow === "smooth" ? "smooth" : "auto";
+}
+var behaviorFromFollowOutput = (follow, isAtBottom) => {
+  if (typeof follow === "function") {
+    return normalizeFollowOutput(follow(isAtBottom));
+  }
+  return isAtBottom && normalizeFollowOutput(follow);
+};
+var followOutputSystem = system(([
+  { totalCount, listRefresh },
+  { isAtBottom, atBottomState },
+  { scrollToIndex },
+  { scrolledToInitialItem },
+  { propsReady, didMount },
+  { log: log2 },
+  { scrollingInProgress }
+]) => {
+  const followOutput = statefulStream(false);
+  const autoscrollToBottom = stream();
+  let pendingScrollHandle = null;
+  function scrollToBottom(followOutputBehavior) {
+    publish(scrollToIndex, {
+      index: "LAST",
+      align: "end",
+      behavior: followOutputBehavior
+    });
+  }
+  subscribe(pipe(combineLatest(pipe(duc(totalCount), skip(1)), didMount), withLatestFrom(duc(followOutput), isAtBottom, scrolledToInitialItem, scrollingInProgress), map(([[totalCount2, didMount2], followOutput2, isAtBottom2, scrolledToInitialItem2, scrollingInProgress2]) => {
+    let shouldFollow = didMount2 && scrolledToInitialItem2;
+    let followOutputBehavior = "auto";
+    if (shouldFollow) {
+      followOutputBehavior = behaviorFromFollowOutput(followOutput2, isAtBottom2 || scrollingInProgress2);
+      shouldFollow = shouldFollow && !!followOutputBehavior;
+    }
+    return { totalCount: totalCount2, shouldFollow, followOutputBehavior };
+  }), filter(({ shouldFollow }) => shouldFollow)), ({ totalCount: totalCount2, followOutputBehavior }) => {
+    if (pendingScrollHandle) {
+      pendingScrollHandle();
+      pendingScrollHandle = null;
+    }
+    pendingScrollHandle = handleNext(listRefresh, () => {
+      getValue3(log2)("following output to ", { totalCount: totalCount2 }, LogLevel.DEBUG);
+      scrollToBottom(followOutputBehavior);
+      pendingScrollHandle = null;
+    });
+  });
+  function trapNextSizeIncrease(followOutput2) {
+    const cancel = handleNext(atBottomState, (state) => {
+      if (followOutput2 && !state.atBottom && state.notAtBottomBecause === "SIZE_INCREASED" && !pendingScrollHandle) {
+        getValue3(log2)("scrolling to bottom due to increased size", {}, LogLevel.DEBUG);
+        scrollToBottom("auto");
+      }
+    });
+    setTimeout(cancel, 100);
+  }
+  subscribe(pipe(combineLatest(duc(followOutput), totalCount, propsReady), filter(([follow, , ready]) => follow && ready), scan(({ value }, [, next]) => {
+    return { refreshed: value === next, value: next };
+  }, { refreshed: false, value: 0 }), filter(({ refreshed }) => refreshed), withLatestFrom(followOutput, totalCount)), ([, followOutput2]) => {
+    trapNextSizeIncrease(followOutput2 !== false);
+  });
+  subscribe(autoscrollToBottom, () => {
+    trapNextSizeIncrease(getValue3(followOutput) !== false);
+  });
+  subscribe(combineLatest(duc(followOutput), atBottomState), ([followOutput2, state]) => {
+    if (followOutput2 && !state.atBottom && state.notAtBottomBecause === "VIEWPORT_HEIGHT_DECREASING") {
+      scrollToBottom("auto");
+    }
+  });
+  return { followOutput, autoscrollToBottom };
+}, tup(sizeSystem, stateFlagsSystem, scrollToIndexSystem, initialTopMostItemIndexSystem, propsReadySystem, loggerSystem, domIOSystem));
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/groupedListSystem.ts
+function groupCountsToIndicesAndCount(counts) {
+  return counts.reduce((acc, groupCount) => {
+    acc.groupIndices.push(acc.totalCount);
+    acc.totalCount += groupCount + 1;
+    return acc;
+  }, {
+    totalCount: 0,
+    groupIndices: []
+  });
+}
+var groupedListSystem = system(([{ totalCount, groupIndices, sizes }, { scrollTop, headerHeight }]) => {
+  const groupCounts = stream();
+  const topItemsIndexes = stream();
+  const groupIndicesAndCount = streamFromEmitter(pipe(groupCounts, map(groupCountsToIndicesAndCount)));
+  connect(pipe(groupIndicesAndCount, map((value) => value.totalCount)), totalCount);
+  connect(pipe(groupIndicesAndCount, map((value) => value.groupIndices)), groupIndices);
+  connect(pipe(combineLatest(scrollTop, sizes, headerHeight), filter(([_32, sizes2]) => hasGroups(sizes2)), map(([scrollTop2, state, headerHeight2]) => findMaxKeyValue(state.groupOffsetTree, Math.max(scrollTop2 - headerHeight2, 0), "v")[0]), distinctUntilChanged(), map((index4) => [index4])), topItemsIndexes);
+  return { groupCounts, topItemsIndexes };
+}, tup(sizeSystem, domIOSystem));
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/comparators.tsx
+function tupleComparator(prev, current) {
+  return !!(prev && prev[0] === current[0] && prev[1] === current[1]);
+}
+function rangeComparator(prev, next) {
+  return !!(prev && prev.startIndex === next.startIndex && prev.endIndex === next.endIndex);
+}
+
 // ../juno-core/src/components/Virtuoso/react-virtuoso/sizeRangeSystem.ts
 var TOP = "top";
 var BOTTOM = "bottom";
@@ -74216,19 +74514,20 @@ var NONE2 = "none";
 function getOverscan(overscan, end2, direction) {
   if (typeof overscan === "number") {
     return direction === UP && end2 === TOP || direction === DOWN && end2 === BOTTOM ? overscan : 0;
+  } else {
+    if (direction === UP) {
+      return end2 === TOP ? overscan.main : overscan.reverse;
+    } else {
+      return end2 === BOTTOM ? overscan.main : overscan.reverse;
+    }
   }
-  if (direction === UP) {
-    return end2 === TOP ? overscan.main : overscan.reverse;
-  }
-  return end2 === BOTTOM ? overscan.main : overscan.reverse;
 }
 function getViewportIncrease(value, end2) {
   return typeof value === "number" ? value : value[end2] || 0;
 }
-var sizeRangeSystem = system(([{ scrollTop, viewportHeight, deviation, headerHeight }]) => {
+var sizeRangeSystem = system(([{ scrollTop, viewportHeight, deviation, headerHeight, fixedHeaderHeight }]) => {
   const listBoundary = stream();
   const topListHeight = statefulStream(0);
-  const fixedHeaderHeight = statefulStream(0);
   const increaseViewportBy = statefulStream(0);
   const overscan = statefulStream(0);
   const visibleRange = statefulStreamFromEmitter(pipe(combineLatest(duc(scrollTop), duc(viewportHeight), duc(headerHeight), duc(listBoundary, tupleComparator), duc(overscan), duc(topListHeight), duc(fixedHeaderHeight), duc(deviation), duc(increaseViewportBy)), map(([
@@ -74270,534 +74569,10 @@ var sizeRangeSystem = system(([{ scrollTop, viewportHeight, deviation, headerHei
     listBoundary,
     overscan,
     topListHeight,
-    fixedHeaderHeight,
     increaseViewportBy,
     visibleRange
   };
 }, tup(domIOSystem), { singleton: true });
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/windowScrollerSystem.ts
-var windowScrollerSystem = system(([{ scrollTo, scrollContainerState }]) => {
-  const windowScrollContainerState = stream();
-  const windowViewportRect = stream();
-  const windowScrollTo = stream();
-  const useWindowScroll = statefulStream(false);
-  const customScrollParent = statefulStream(void 0);
-  connect(pipe(combineLatest(windowScrollContainerState, windowViewportRect), map(([
-    { viewportHeight, scrollTop: windowScrollTop, scrollHeight },
-    { offsetTop }
-  ]) => {
-    return {
-      scrollTop: Math.max(0, windowScrollTop - offsetTop),
-      scrollHeight,
-      viewportHeight
-    };
-  })), scrollContainerState);
-  connect(pipe(scrollTo, withLatestFrom(windowViewportRect), map(([scrollTo2, { offsetTop }]) => {
-    return {
-      ...scrollTo2,
-      top: scrollTo2.top + offsetTop
-    };
-  })), windowScrollTo);
-  return {
-    useWindowScroll,
-    customScrollParent,
-    windowScrollContainerState,
-    windowViewportRect,
-    windowScrollTo
-  };
-}, tup(domIOSystem));
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/gridSystem.ts
-var INITIAL_GRID_STATE = {
-  items: [],
-  offsetBottom: 0,
-  offsetTop: 0,
-  top: 0,
-  bottom: 0,
-  itemHeight: 0,
-  itemWidth: 0
-};
-var PROBE_GRID_STATE = {
-  items: [{ index: 0 }],
-  offsetBottom: 0,
-  offsetTop: 0,
-  top: 0,
-  bottom: 0,
-  itemHeight: 0,
-  itemWidth: 0
-};
-var { round: round4, ceil, floor, min, max } = Math;
-function buildItems(startIndex, endIndex) {
-  return Array.from({ length: endIndex - startIndex + 1 }).map((_32, i2) => ({ index: i2 + startIndex }));
-}
-var gridSystem = system(([
-  { overscan, visibleRange, listBoundary },
-  {
-    scrollTop,
-    viewportHeight,
-    scrollBy,
-    scrollTo,
-    smoothScrollTargetReached,
-    scrollContainerState
-  },
-  stateFlags,
-  scrollSeek,
-  { propsReady, didMount },
-  {
-    windowViewportRect,
-    windowScrollTo,
-    useWindowScroll,
-    customScrollParent,
-    windowScrollContainerState
-  }
-]) => {
-  const totalCount = statefulStream(0);
-  const initialItemCount = statefulStream(0);
-  const gridState = statefulStream(INITIAL_GRID_STATE);
-  const viewportDimensions = statefulStream({
-    height: 0,
-    width: 0
-  });
-  const itemDimensions = statefulStream({
-    height: 0,
-    width: 0
-  });
-  const scrollToIndex = stream();
-  const scrollHeight = stream();
-  const deviation = statefulStream(0);
-  connect(pipe(didMount, withLatestFrom(initialItemCount), filter(([, count2]) => count2 !== 0), map(([, count2]) => {
-    return {
-      items: buildItems(0, count2 - 1),
-      top: 0,
-      bottom: 0,
-      offsetBottom: 0,
-      offsetTop: 0,
-      itemHeight: 0,
-      itemWidth: 0
-    };
-  })), gridState);
-  connect(pipe(combineLatest(duc(totalCount), visibleRange, duc(itemDimensions, (prev, next) => prev && prev.width === next.width && prev.height === next.height)), withLatestFrom(viewportDimensions), map(([[totalCount2, [startOffset, endOffset], item], viewport]) => {
-    const { height: itemHeight, width: itemWidth } = item;
-    const { width: viewportWidth } = viewport;
-    if (totalCount2 === 0 || viewportWidth === 0) {
-      return INITIAL_GRID_STATE;
-    }
-    if (itemWidth === 0) {
-      return PROBE_GRID_STATE;
-    }
-    const perRow = itemsPerRow(viewportWidth, itemWidth);
-    let startIndex = perRow * floor(startOffset / itemHeight);
-    let endIndex = perRow * ceil(endOffset / itemHeight) - 1;
-    endIndex = min(totalCount2 - 1, endIndex);
-    startIndex = min(endIndex, max(0, startIndex));
-    const items = buildItems(startIndex, endIndex);
-    const { top: top2, bottom: bottom2 } = gridLayout(viewport, item, items);
-    const totalHeight = ceil(totalCount2 / perRow) * itemHeight;
-    const offsetBottom = totalHeight - bottom2;
-    return {
-      items,
-      offsetTop: top2,
-      offsetBottom,
-      top: top2,
-      bottom: bottom2,
-      itemHeight,
-      itemWidth
-    };
-  })), gridState);
-  connect(pipe(viewportDimensions, map(({ height: height2 }) => height2)), viewportHeight);
-  connect(pipe(combineLatest(viewportDimensions, itemDimensions, gridState), map(([viewportDimensions2, item, { items }]) => {
-    const { top: top2, bottom: bottom2 } = gridLayout(viewportDimensions2, item, items);
-    return [top2, bottom2];
-  }), distinctUntilChanged(tupleComparator)), listBoundary);
-  const endReached = streamFromEmitter(pipe(duc(gridState), filter(({ items }) => items.length > 0), withLatestFrom(totalCount), filter(([{ items }, totalCount2]) => items[items.length - 1].index === totalCount2 - 1), map(([, totalCount2]) => totalCount2 - 1), distinctUntilChanged()));
-  const startReached = streamFromEmitter(pipe(duc(gridState), filter(({ items }) => {
-    return items.length > 0 && items[0].index === 0;
-  }), mapTo(0), distinctUntilChanged()));
-  const rangeChanged = streamFromEmitter(pipe(duc(gridState), filter(({ items }) => items.length > 0), map(({ items }) => {
-    return {
-      startIndex: items[0].index,
-      endIndex: items[items.length - 1].index
-    };
-  }), distinctUntilChanged(rangeComparator)));
-  connect(rangeChanged, scrollSeek.scrollSeekRangeChanged);
-  connect(pipe(scrollToIndex, withLatestFrom(viewportDimensions, itemDimensions, totalCount), map(([location, viewport, item, totalCount2]) => {
-    const normalLocation = normalizeIndexLocation(location);
-    const { align, behavior, offset: offset7 } = normalLocation;
-    let index4 = normalLocation.index;
-    if (index4 === "LAST") {
-      index4 = totalCount2 - 1;
-    }
-    index4 = max(0, index4, min(totalCount2 - 1, index4));
-    let top2 = itemTop(viewport, item, index4);
-    if (align === "end") {
-      top2 = round4(top2 - viewport.height + item.height);
-    } else if (align === "center") {
-      top2 = round4(top2 - viewport.height / 2 + item.height / 2);
-    }
-    if (offset7) {
-      top2 += offset7;
-    }
-    return { top: top2, behavior };
-  })), scrollTo);
-  const totalListHeight = statefulStreamFromEmitter(pipe(gridState, map((gridState2) => {
-    return gridState2.offsetBottom + gridState2.bottom;
-  })), 0);
-  connect(pipe(windowViewportRect, map((viewportInfo) => ({
-    width: viewportInfo.visibleWidth,
-    height: viewportInfo.visibleHeight
-  }))), viewportDimensions);
-  return {
-    totalCount,
-    viewportDimensions,
-    itemDimensions,
-    scrollTop,
-    scrollHeight,
-    overscan,
-    scrollBy,
-    scrollTo,
-    scrollToIndex,
-    smoothScrollTargetReached,
-    windowViewportRect,
-    windowScrollTo,
-    useWindowScroll,
-    customScrollParent,
-    windowScrollContainerState,
-    deviation,
-    scrollContainerState,
-    initialItemCount,
-    ...scrollSeek,
-    gridState,
-    totalListHeight,
-    ...stateFlags,
-    startReached,
-    endReached,
-    rangeChanged,
-    propsReady
-  };
-}, tup(sizeRangeSystem, domIOSystem, stateFlagsSystem, scrollSeekSystem, propsReadySystem, windowScrollerSystem));
-function gridLayout(viewport, item, items) {
-  const { height: itemHeight } = item;
-  if (itemHeight === void 0 || items.length === 0) {
-    return { top: 0, bottom: 0 };
-  }
-  const top2 = itemTop(viewport, item, items[0].index);
-  const bottom2 = itemTop(viewport, item, items[items.length - 1].index) + itemHeight;
-  return { top: top2, bottom: bottom2 };
-}
-function itemTop(viewport, item, index4) {
-  const perRow = itemsPerRow(viewport.width, item.width);
-  return floor(index4 / perRow) * item.height;
-}
-function itemsPerRow(viewportWidth, itemWidth) {
-  return max(1, floor(viewportWidth / itemWidth));
-}
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useSize.ts
-import { useRef as useRef80 } from "react";
-function useSizeWithElRef(callback, enabled = true) {
-  const ref2 = useRef80(null);
-  const { externalWindow = window } = useRcPortalWindowContext();
-  let callbackRef = (_el) => {
-    void 0;
-  };
-  if (typeof externalWindow["ResizeObserver"] !== "undefined") {
-    const observer = new externalWindow["ResizeObserver"]((entries) => {
-      const element2 = entries[0].target;
-      if (element2.offsetParent !== null) {
-        callback(element2);
-      }
-    });
-    callbackRef = (elRef) => {
-      if (elRef && enabled) {
-        observer.observe(elRef);
-        ref2.current = elRef;
-      } else {
-        if (ref2.current) {
-          observer.unobserve(ref2.current);
-        }
-        ref2.current = null;
-      }
-    };
-  }
-  return { ref: ref2, callbackRef };
-}
-function useSize(callback, enabled = true) {
-  return useSizeWithElRef(callback, enabled).callbackRef;
-}
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useWindowViewportRect.ts
-import { useCallback as useCallback30, useEffect as useEffect56, useRef as useRef81 } from "react";
-function useWindowViewportRectRef(callback, customScrollParent) {
-  const viewportInfo = useRef81(null);
-  const { externalWindow = window } = useRcPortalWindowContext();
-  const calculateInfo = useCallback30((element2) => {
-    if (element2 === null) {
-      return;
-    }
-    const rect = element2.getBoundingClientRect();
-    const visibleWidth = rect.width;
-    let visibleHeight, offsetTop;
-    if (customScrollParent) {
-      const customScrollParentRect = customScrollParent.getBoundingClientRect();
-      const deltaTop = rect.top - customScrollParentRect.top;
-      visibleHeight = customScrollParentRect.height - Math.max(0, deltaTop);
-      offsetTop = deltaTop + customScrollParent.scrollTop;
-    } else {
-      visibleHeight = externalWindow.innerHeight - Math.max(0, rect.top);
-      offsetTop = rect.top + externalWindow.pageYOffset;
-    }
-    viewportInfo.current = {
-      offsetTop,
-      visibleHeight,
-      visibleWidth
-    };
-    callback(viewportInfo.current);
-  }, [callback, customScrollParent, externalWindow]);
-  const { callbackRef, ref: ref2 } = useSizeWithElRef(calculateInfo);
-  const scrollAndResizeEventHandler = useCallback30(() => {
-    calculateInfo(ref2.current);
-  }, [calculateInfo, ref2]);
-  useEffect56(() => {
-    if (customScrollParent) {
-      customScrollParent.addEventListener("scroll", scrollAndResizeEventHandler);
-      const observer = new externalWindow["ResizeObserver"](scrollAndResizeEventHandler);
-      observer.observe(customScrollParent);
-      return () => {
-        customScrollParent.removeEventListener("scroll", scrollAndResizeEventHandler);
-        observer.unobserve(customScrollParent);
-      };
-    }
-    externalWindow.addEventListener("scroll", scrollAndResizeEventHandler);
-    externalWindow.addEventListener("resize", scrollAndResizeEventHandler);
-    return () => {
-      externalWindow.removeEventListener("scroll", scrollAndResizeEventHandler);
-      externalWindow.removeEventListener("resize", scrollAndResizeEventHandler);
-    };
-  }, [scrollAndResizeEventHandler, customScrollParent, externalWindow]);
-  return callbackRef;
-}
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/List.tsx
-import {
-  createElement as createElement679,
-  memo as memo568,
-  useState as useState35
-} from "react";
-import {
-  createElement as createElement680
-} from "react";
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useChangedChildSizes.ts
-function useChangedListContentsSizes(callback, itemSize, enabled, scrollContainerStateCallback, log2, customScrollParent) {
-  const { externalWindow = window } = useRcPortalWindowContext();
-  return useSize((el2) => {
-    const ranges = getChangedChildSizes(el2.children, itemSize, "offsetHeight", log2);
-    let scrollableElement = el2.parentElement;
-    while (!scrollableElement.dataset["virtuosoScroller"]) {
-      scrollableElement = scrollableElement.parentElement;
-    }
-    const scrollTop = customScrollParent ? customScrollParent.scrollTop : scrollableElement.firstElementChild.dataset["viewportType"] === "window" ? externalWindow.pageYOffset || externalWindow.document.documentElement.scrollTop : scrollableElement.scrollTop;
-    scrollContainerStateCallback({
-      scrollTop: Math.max(scrollTop, 0),
-      scrollHeight: (customScrollParent ?? scrollableElement).scrollHeight,
-      viewportHeight: (customScrollParent ?? scrollableElement).offsetHeight
-    });
-    if (ranges !== null) {
-      callback(ranges);
-    }
-  }, enabled);
-}
-function getChangedChildSizes(children2, itemSize, field, log2) {
-  const length = children2.length;
-  if (length === 0) {
-    return null;
-  }
-  const results = [];
-  for (let i2 = 0; i2 < length; i2++) {
-    const child = children2.item(i2);
-    if (!child || child.dataset.index === void 0) {
-      continue;
-    }
-    const index4 = parseInt(child.dataset.index);
-    const knownSize = parseFloat(child.dataset.knownSize);
-    const size = itemSize(child, field);
-    if (size === 0) {
-      log2("Zero-sized element, this should not happen", { child }, LogLevel.ERROR);
-    }
-    if (size === knownSize) {
-      continue;
-    }
-    const lastResult = results[results.length - 1];
-    if (results.length === 0 || lastResult.size !== size || lastResult.endIndex !== index4 - 1) {
-      results.push({ startIndex: index4, endIndex: index4, size });
-    } else {
-      results[results.length - 1].endIndex++;
-    }
-  }
-  return results;
-}
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useIsomorphicLayoutEffect.ts
-import { useEffect as useEffect57, useLayoutEffect as useLayoutEffect23 } from "react";
-var useIsomorphicLayoutEffect4 = typeof document !== "undefined" ? useLayoutEffect23 : useEffect57;
-var useIsomorphicLayoutEffect_default = useIsomorphicLayoutEffect4;
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useScrollTop.ts
-import { useCallback as useCallback31, useEffect as useEffect58, useRef as useRef82 } from "react";
-function approximatelyEqual(num1, num2) {
-  return Math.abs(num1 - num2) < 1.01;
-}
-function useScrollTop(scrollContainerStateCallback, smoothScrollTargetReached, scrollerElement, scrollerRefCallback = noop3, customScrollParent) {
-  const scrollerRef = useRef82(null);
-  const scrollTopTarget = useRef82(null);
-  const timeoutRef = useRef82(null);
-  const { externalWindow = window } = useRcPortalWindowContext();
-  const handler = useCallback31((ev) => {
-    const el2 = ev.target;
-    const scrollTop = el2 === externalWindow || el2 === externalWindow.document ? externalWindow.pageYOffset || externalWindow.document.documentElement.scrollTop : el2.scrollTop;
-    const scrollHeight = el2 === externalWindow ? externalWindow.document.documentElement.scrollHeight : el2.scrollHeight;
-    const viewportHeight = el2 === externalWindow ? externalWindow.innerHeight : el2.offsetHeight;
-    scrollContainerStateCallback({
-      scrollTop: Math.max(scrollTop, 0),
-      scrollHeight,
-      viewportHeight
-    });
-    if (scrollTopTarget.current !== null) {
-      if (scrollTop === scrollTopTarget.current || scrollTop <= 0 || scrollTop === el2.scrollHeight - correctItemSize(el2, "height")) {
-        scrollTopTarget.current = null;
-        smoothScrollTargetReached(true);
-        if (timeoutRef.current) {
-          clearTimeout(timeoutRef.current);
-          timeoutRef.current = null;
-        }
-      }
-    }
-  }, [externalWindow, scrollContainerStateCallback, smoothScrollTargetReached]);
-  useEffect58(() => {
-    const localRef = customScrollParent ? customScrollParent : scrollerRef.current;
-    scrollerRefCallback(customScrollParent ? customScrollParent : scrollerRef.current);
-    handler({ target: localRef });
-    localRef.addEventListener("scroll", handler, { passive: true });
-    return () => {
-      scrollerRefCallback(null);
-      localRef.removeEventListener("scroll", handler);
-    };
-  }, [
-    scrollerRef,
-    handler,
-    scrollerElement,
-    scrollerRefCallback,
-    customScrollParent
-  ]);
-  function scrollToCallback(location) {
-    const scrollerElement2 = scrollerRef.current;
-    if (!scrollerElement2 || "offsetHeight" in scrollerElement2 && scrollerElement2.offsetHeight === 0) {
-      return;
-    }
-    const isSmooth = location.behavior === "smooth";
-    let offsetHeight;
-    let scrollHeight;
-    let scrollTop;
-    if (scrollerElement2 === externalWindow) {
-      scrollHeight = Math.max(correctItemSize(externalWindow.document.documentElement, "height"), externalWindow.document.documentElement.scrollHeight);
-      offsetHeight = externalWindow.innerHeight;
-      scrollTop = externalWindow.document.documentElement.scrollTop;
-    } else {
-      scrollHeight = scrollerElement2.scrollHeight;
-      offsetHeight = correctItemSize(scrollerElement2, "height");
-      scrollTop = scrollerElement2.scrollTop;
-    }
-    const maxScrollTop = scrollHeight - offsetHeight;
-    location.top = Math.ceil(Math.max(Math.min(maxScrollTop, location.top), 0));
-    if (approximatelyEqual(offsetHeight, scrollHeight) || location.top === scrollTop) {
-      scrollContainerStateCallback({
-        scrollTop,
-        scrollHeight,
-        viewportHeight: offsetHeight
-      });
-      if (isSmooth) {
-        smoothScrollTargetReached(true);
-      }
-      return;
-    }
-    if (isSmooth) {
-      scrollTopTarget.current = location.top;
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-      }
-      timeoutRef.current = setTimeout(() => {
-        timeoutRef.current = null;
-        scrollTopTarget.current = null;
-        smoothScrollTargetReached(true);
-      }, 1e3);
-    } else {
-      scrollTopTarget.current = null;
-    }
-    scrollerElement2.scrollTo(location);
-  }
-  function scrollByCallback(location) {
-    scrollerRef.current.scrollBy(location);
-  }
-  return { scrollerRef, scrollByCallback, scrollToCallback };
-}
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/groupedListSystem.ts
-function groupCountsToIndicesAndCount(counts) {
-  return counts.reduce((acc, groupCount) => {
-    acc.groupIndices.push(acc.totalCount);
-    acc.totalCount += groupCount + 1;
-    return acc;
-  }, {
-    totalCount: 0,
-    groupIndices: []
-  });
-}
-var groupedListSystem = system(([{ totalCount, groupIndices, sizes }, { scrollTop, headerHeight }]) => {
-  const groupCounts = stream();
-  const topItemsIndexes = stream();
-  const groupIndicesAndCount = streamFromEmitter(pipe(groupCounts, map(groupCountsToIndicesAndCount)));
-  connect(pipe(groupIndicesAndCount, map(prop("totalCount"))), totalCount);
-  connect(pipe(groupIndicesAndCount, map(prop("groupIndices"))), groupIndices);
-  connect(pipe(combineLatest(scrollTop, sizes, headerHeight), filter(([, sizes2]) => hasGroups(sizes2)), map(([scrollTop2, state, headerHeight2]) => findMaxKeyValue(state.groupOffsetTree, Math.max(scrollTop2 - headerHeight2, 0), "v")[0]), distinctUntilChanged(), map((index4) => [index4])), topItemsIndexes);
-  return { groupCounts, topItemsIndexes };
-}, tup(sizeSystem, domIOSystem));
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/initialTopMostItemIndexSystem.ts
-function getInitialTopMostItemIndexNumber(location, totalCount) {
-  const lastIndex = totalCount - 1;
-  const index4 = typeof location === "number" ? location : location.index === "LAST" ? lastIndex : location.index;
-  return index4;
-}
-var initialTopMostItemIndexSystem = system(([
-  { sizes, listRefresh, defaultItemSize },
-  { scrollTop },
-  { scrollToIndex },
-  { didMount }
-]) => {
-  const scrolledToInitialItem = statefulStream(true);
-  const initialTopMostItemIndex = statefulStream(0);
-  connect(pipe(didMount, withLatestFrom(initialTopMostItemIndex), filter(([_32, location]) => !!location), mapTo(false)), scrolledToInitialItem);
-  subscribe(pipe(combineLatest(listRefresh, didMount), withLatestFrom(scrolledToInitialItem, sizes, defaultItemSize), filter(([
-    [, didMount2],
-    scrolledToInitialItem2,
-    { sizeTree },
-    defaultItemSize2
-  ]) => {
-    return didMount2 && (!empty2(sizeTree) || defaultItemSize2 !== void 0) && !scrolledToInitialItem2;
-  }), withLatestFrom(initialTopMostItemIndex)), ([, initialTopMostItemIndex2]) => {
-    setTimeout(() => {
-      handleNext(scrollTop, () => {
-        publish(scrolledToInitialItem, true);
-      });
-      publish(scrollToIndex, initialTopMostItemIndex2);
-    });
-  });
-  return {
-    scrolledToInitialItem,
-    initialTopMostItemIndex
-  };
-}, tup(sizeSystem, domIOSystem, scrollToIndexSystem, propsReadySystem), { singleton: true });
 
 // ../juno-core/src/components/Virtuoso/react-virtuoso/listStateSystem.ts
 function probeItemSet(index4, sizes, data) {
@@ -74819,24 +74594,21 @@ var EMPTY_LIST_STATE = {
   top: 0,
   bottom: 0,
   topListHeight: 0,
-  totalCount: 0
+  totalCount: 0,
+  firstItemIndex: 0
 };
 function transposeItems(items, sizes, firstItemIndex) {
   if (items.length === 0) {
     return [];
   }
   if (!hasGroups(sizes)) {
-    return items.map((item) => ({
-      ...item,
-      index: item.index + firstItemIndex,
-      originalIndex: item.index
-    }));
+    return items.map((item) => ({ ...item, index: item.index + firstItemIndex, originalIndex: item.index }));
   }
   const startIndex = items[0].index;
   const endIndex = items[items.length - 1].index;
   const transposedItems = [];
   const groupRanges = rangesWithin(sizes.groupOffsetTree, startIndex, endIndex);
-  let currentRange;
+  let currentRange = void 0;
   let currentGroupIndex = 0;
   for (const item of items) {
     if (!currentRange || currentRange.end < item.index) {
@@ -74865,7 +74637,7 @@ function transposeItems(items, sizes, firstItemIndex) {
   }
   return transposedItems;
 }
-function buildListState(items, topItems, totalCount, sizes, firstItemIndex) {
+function buildListState(items, topItems, totalCount, gap, sizes, firstItemIndex) {
   const { lastSize, lastOffset, lastIndex } = sizes;
   let offsetTop = 0;
   let bottom2 = 0;
@@ -74874,7 +74646,8 @@ function buildListState(items, topItems, totalCount, sizes, firstItemIndex) {
     const lastItem = items[items.length - 1];
     bottom2 = lastItem.offset + lastItem.size;
   }
-  const total = lastOffset + (totalCount - lastIndex) * lastSize;
+  const itemCount = totalCount - lastIndex;
+  const total = lastOffset + itemCount * lastSize + (itemCount - 1) * gap;
   const top2 = offsetTop;
   const offsetBottom = total - bottom2;
   return {
@@ -74885,22 +74658,49 @@ function buildListState(items, topItems, totalCount, sizes, firstItemIndex) {
     offsetBottom,
     top: top2,
     bottom: bottom2,
-    totalCount
+    totalCount,
+    firstItemIndex
   };
 }
+function buildListStateFromItemCount(itemCount, initialTopMostItemIndex, sizes, firstItemIndex, gap, data) {
+  let includedGroupsCount = 0;
+  if (sizes.groupIndices.length > 0) {
+    for (const index4 of sizes.groupIndices) {
+      if (index4 - includedGroupsCount >= itemCount) {
+        break;
+      }
+      includedGroupsCount++;
+    }
+  }
+  const adjustedCount = itemCount + includedGroupsCount;
+  const initialTopMostItemIndexNumber = getInitialTopMostItemIndexNumber(initialTopMostItemIndex, adjustedCount);
+  const items = Array.from({ length: adjustedCount }).map((_32, index4) => ({
+    index: index4 + initialTopMostItemIndexNumber,
+    size: 0,
+    offset: 0,
+    data: data[index4 + initialTopMostItemIndexNumber]
+  }));
+  return buildListState(items, [], adjustedCount, gap, sizes, firstItemIndex);
+}
 var listStateSystem = system(([
-  { sizes, totalCount, data, firstItemIndex },
+  { sizes, totalCount, data, firstItemIndex, gap },
   groupedListSystem2,
   { visibleRange, listBoundary, topListHeight: rangeTopListHeight },
   { scrolledToInitialItem, initialTopMostItemIndex },
   { topListHeight },
   stateFlags,
-  { didMount }
+  { didMount },
+  { recalcInProgress }
 ]) => {
   const topItemsIndexes = statefulStream([]);
+  const initialItemCount = statefulStream(0);
   const itemsRendered = stream();
   connect(groupedListSystem2.topItemsIndexes, topItemsIndexes);
-  const listState = statefulStreamFromEmitter(pipe(combineLatest(didMount, duc(visibleRange), duc(totalCount), duc(sizes), duc(initialTopMostItemIndex), scrolledToInitialItem, duc(topItemsIndexes), duc(firstItemIndex), data), filter(([mount]) => mount), map(([
+  const listState = statefulStreamFromEmitter(pipe(combineLatest(didMount, recalcInProgress, duc(visibleRange, tupleComparator), duc(totalCount), duc(sizes), duc(initialTopMostItemIndex), scrolledToInitialItem, duc(topItemsIndexes), duc(firstItemIndex), duc(gap), data), filter(([mount, recalcInProgress2, , totalCount2, , , , , , , data2]) => {
+    const dataChangeInProgress = data2 && data2.length !== totalCount2;
+    return mount && !recalcInProgress2 && !dataChangeInProgress;
+  }), map(([
+    ,
     ,
     [startOffset, endOffset],
     totalCount2,
@@ -74909,15 +74709,28 @@ var listStateSystem = system(([
     scrolledToInitialItem2,
     topItemsIndexes2,
     firstItemIndex2,
+    gap2,
     data2
   ]) => {
     const sizesValue = sizes2;
     const { sizeTree, offsetTree } = sizesValue;
-    if (totalCount2 === 0 || startOffset === 0 && endOffset === 0) {
-      return EMPTY_LIST_STATE;
+    const initialItemCountValue = getValue3(initialItemCount);
+    if (totalCount2 === 0) {
+      return { ...EMPTY_LIST_STATE, totalCount: totalCount2 };
+    }
+    if (startOffset === 0 && endOffset === 0) {
+      if (initialItemCountValue === 0) {
+        return { ...EMPTY_LIST_STATE, totalCount: totalCount2 };
+      } else {
+        return buildListStateFromItemCount(initialItemCountValue, initialTopMostItemIndex2, sizes2, firstItemIndex2, gap2, data2 || []);
+      }
     }
     if (empty2(sizeTree)) {
-      return buildListState(probeItemSet(getInitialTopMostItemIndexNumber(initialTopMostItemIndex2, totalCount2), sizesValue, data2), [], totalCount2, sizesValue, firstItemIndex2);
+      if (initialItemCountValue > 0) {
+        return null;
+      }
+      const state = buildListState(probeItemSet(getInitialTopMostItemIndexNumber(initialTopMostItemIndex2, totalCount2), sizesValue, data2), [], totalCount2, gap2, sizesValue, firstItemIndex2);
+      return state;
     }
     const topItems = [];
     if (topItemsIndexes2.length > 0) {
@@ -74929,18 +74742,13 @@ var listStateSystem = system(([
         const rangeStartIndex = Math.max(range2.start, startIndex);
         const rangeEndIndex = Math.min(range2.end, endIndex);
         for (let i2 = rangeStartIndex; i2 <= rangeEndIndex; i2++) {
-          topItems.push({
-            index: i2,
-            size,
-            offset: offset7,
-            data: data2 && data2[i2]
-          });
+          topItems.push({ index: i2, size, offset: offset7, data: data2 && data2[i2] });
           offset7 += size;
         }
       }
     }
     if (!scrolledToInitialItem2) {
-      return buildListState([], topItems, totalCount2, sizesValue, firstItemIndex2);
+      return buildListState([], topItems, totalCount2, gap2, sizesValue, firstItemIndex2);
     }
     const minStartIndex = topItemsIndexes2.length > 0 ? topItemsIndexes2[topItemsIndexes2.length - 1] + 1 : 0;
     const offsetPointRanges = rangesWithinOffsets(offsetTree, startOffset, endOffset, minStartIndex);
@@ -74955,8 +74763,9 @@ var listStateSystem = system(([
         let rangeStartIndex = range2.start;
         const size = point.size;
         if (point.offset < startOffset) {
-          rangeStartIndex += Math.floor((startOffset - point.offset) / size);
-          offset7 += (rangeStartIndex - range2.start) * size;
+          rangeStartIndex += Math.floor((startOffset - point.offset + gap2) / (size + gap2));
+          const itemCount = rangeStartIndex - range2.start;
+          offset7 += itemCount * size + itemCount * gap2;
         }
         if (rangeStartIndex < minStartIndex) {
           offset7 += (minStartIndex - rangeStartIndex) * size;
@@ -74967,20 +74776,15 @@ var listStateSystem = system(([
           if (offset7 >= endOffset) {
             break;
           }
-          result.push({
-            index: i2,
-            size,
-            offset: offset7,
-            data: data2 && data2[i2]
-          });
-          offset7 += size;
+          result.push({ index: i2, size, offset: offset7, data: data2 && data2[i2] });
+          offset7 += size + gap2;
         }
       }
     });
-    return buildListState(items, topItems, totalCount2, sizesValue, firstItemIndex2);
+    return buildListState(items, topItems, totalCount2, gap2, sizesValue, firstItemIndex2);
   }), filter((value) => value !== null), distinctUntilChanged()), EMPTY_LIST_STATE);
-  connect(pipe(data, filter((data2) => data2 !== void 0), map((data2) => data2.length)), totalCount);
-  connect(pipe(listState, map(prop("topListHeight"))), topListHeight);
+  connect(pipe(data, filter(isDefined), map((data2) => data2?.length)), totalCount);
+  connect(pipe(listState, map((value) => value.topListHeight)), topListHeight);
   connect(topListHeight, rangeTopListHeight);
   connect(pipe(listState, map((state) => [state.top, state.bottom])), listBoundary);
   connect(pipe(listState, map((state) => state.items)), itemsRendered);
@@ -74989,190 +74793,51 @@ var listStateSystem = system(([
     return items.length > 0 && items[0].originalIndex === topItems.length;
   }), map(({ items }) => items[0].index), distinctUntilChanged()));
   const rangeChanged = streamFromEmitter(pipe(listState, filter(({ items }) => items.length > 0), map(({ items }) => {
+    let startIndex = 0;
+    let endIndex = items.length - 1;
+    while (items[startIndex].type === "group" && startIndex < endIndex) {
+      startIndex++;
+    }
+    while (items[endIndex].type === "group" && endIndex > startIndex) {
+      endIndex--;
+    }
     return {
-      startIndex: items[0].index,
-      endIndex: items[items.length - 1].index
+      startIndex: items[startIndex].index,
+      endIndex: items[endIndex].index
     };
   }), distinctUntilChanged(rangeComparator)));
-  return {
-    listState,
-    topItemsIndexes,
-    endReached,
-    startReached,
-    rangeChanged,
-    itemsRendered,
-    ...stateFlags
-  };
-}, tup(sizeSystem, groupedListSystem, sizeRangeSystem, initialTopMostItemIndexSystem, scrollToIndexSystem, stateFlagsSystem, propsReadySystem), { singleton: true });
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/totalListHeightSystem.ts
-var totalListHeightSystem = system(([{ footerHeight, headerHeight }, { listState }]) => {
-  const totalListHeightChanged = stream();
-  const totalListHeight = statefulStreamFromEmitter(pipe(combineLatest(footerHeight, headerHeight, listState), map(([footerHeight2, headerHeight2, listState2]) => {
-    return footerHeight2 + headerHeight2 + listState2.offsetBottom + listState2.bottom;
-  })), 0);
-  connect(duc(totalListHeight), totalListHeightChanged);
-  return { totalListHeight, totalListHeightChanged };
-}, tup(domIOSystem, listStateSystem), { singleton: true });
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/alignToBottomSystem.ts
-var alignToBottomSystem = system(([{ viewportHeight }, { totalListHeight }]) => {
-  const alignToBottom = statefulStream(false);
-  const paddingTopAddition = statefulStreamFromEmitter(pipe(combineLatest(alignToBottom, viewportHeight, totalListHeight), filter(([enabled]) => enabled), map(([, viewportHeight2, totalListHeight2]) => {
-    return Math.max(0, viewportHeight2 - totalListHeight2);
-  }), distinctUntilChanged()), 0);
-  return { alignToBottom, paddingTopAddition };
-}, tup(domIOSystem, totalListHeightSystem), { singleton: true });
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/followOutputSystem.ts
-function normalizeFollowOutput(follow) {
-  if (!follow) {
-    return false;
-  }
-  return follow === "smooth" ? "smooth" : "auto";
-}
-var behaviorFromFollowOutput = (follow, isAtBottom) => {
-  if (typeof follow === "function") {
-    return normalizeFollowOutput(follow(isAtBottom));
-  }
-  return isAtBottom && normalizeFollowOutput(follow);
-};
-var followOutputSystem = system(([
-  { totalCount, listRefresh },
-  { isAtBottom, atBottomState },
-  { scrollToIndex },
-  { scrolledToInitialItem },
-  { propsReady, didMount },
-  { log: log2 },
-  { scrollingInProgress }
-]) => {
-  const followOutput = statefulStream(false);
-  let pendingScrollHandle = null;
-  function scrollToBottom(followOutputBehavior) {
-    publish(scrollToIndex, {
-      index: "LAST",
-      align: "end",
-      behavior: followOutputBehavior
-    });
-  }
-  subscribe(pipe(combineLatest(pipe(duc(totalCount), skip(1)), didMount), withLatestFrom(duc(followOutput), isAtBottom, scrolledToInitialItem, scrollingInProgress), map(([
-    [totalCount2, didMount2],
-    followOutput2,
-    isAtBottom2,
-    scrolledToInitialItem2,
-    scrollingInProgress2
-  ]) => {
-    let shouldFollow = didMount2 && scrolledToInitialItem2;
-    let followOutputBehavior = "auto";
-    if (shouldFollow) {
-      followOutputBehavior = behaviorFromFollowOutput(followOutput2, isAtBottom2 || scrollingInProgress2);
-      shouldFollow = shouldFollow && !!followOutputBehavior;
-    }
-    return { totalCount: totalCount2, shouldFollow, followOutputBehavior };
-  }), filter(({ shouldFollow }) => shouldFollow)), ({ totalCount: totalCount2, followOutputBehavior }) => {
-    if (pendingScrollHandle) {
-      pendingScrollHandle();
-      pendingScrollHandle = null;
-    }
-    pendingScrollHandle = handleNext(listRefresh, () => {
-      getValue3(log2)("following output to ", { totalCount: totalCount2 }, LogLevel.DEBUG);
-      scrollToBottom(followOutputBehavior);
-      pendingScrollHandle = null;
-    });
-  });
-  subscribe(pipe(combineLatest(duc(followOutput), totalCount, propsReady), filter(([follow, , ready]) => follow && ready), scan(({ value }, [, next]) => {
-    return { refreshed: value === next, value: next };
-  }, { refreshed: false, value: 0 }), filter(({ refreshed }) => refreshed), withLatestFrom(followOutput, totalCount)), ([, followOutput2]) => {
-    const cancel = handleNext(atBottomState, (state) => {
-      if (followOutput2 && !state.atBottom && state.notAtBottomBecause === "SIZE_INCREASED" && !pendingScrollHandle) {
-        getValue3(log2)("scrolling to bottom due to increased size", {}, LogLevel.DEBUG);
-        scrollToBottom("auto");
-      }
-    });
-    setTimeout(cancel, 100);
-  });
-  subscribe(combineLatest(duc(followOutput), atBottomState), ([followOutput2, state]) => {
-    if (followOutput2 && !state.atBottom && state.notAtBottomBecause === "VIEWPORT_HEIGHT_DECREASING") {
-      scrollToBottom("auto");
-    }
-  });
-  return { followOutput };
-}, tup(sizeSystem, stateFlagsSystem, scrollToIndexSystem, initialTopMostItemIndexSystem, propsReadySystem, loggerSystem, domIOSystem));
+  return { listState, topItemsIndexes, endReached, startReached, rangeChanged, itemsRendered, initialItemCount, ...stateFlags };
+}, tup(sizeSystem, groupedListSystem, sizeRangeSystem, initialTopMostItemIndexSystem, scrollToIndexSystem, stateFlagsSystem, propsReadySystem, recalcSystem), { singleton: true });
 
 // ../juno-core/src/components/Virtuoso/react-virtuoso/initialItemCountSystem.ts
-var initialItemCountSystem = system(([{ sizes, firstItemIndex, data }, { listState }, { didMount }]) => {
-  const initialItemCount = statefulStream(0);
-  connect(pipe(didMount, withLatestFrom(initialItemCount), filter(([, count2]) => count2 !== 0), withLatestFrom(sizes, firstItemIndex, data), map(([[, count2], sizes2, firstItemIndex2, data2 = []]) => {
-    let includedGroupsCount = 0;
-    if (sizes2.groupIndices.length > 0) {
-      for (const index4 of sizes2.groupIndices) {
-        if (index4 - includedGroupsCount >= count2) {
-          break;
-        }
-        includedGroupsCount++;
-      }
-    }
-    const adjustedCount = count2 + includedGroupsCount;
-    const items = Array.from({ length: adjustedCount }).map((_32, index4) => ({ index: index4, size: 0, offset: 0, data: data2[index4] }));
-    return buildListState(items, [], adjustedCount, sizes2, firstItemIndex2);
+var initialItemCountSystem = system(([{ sizes, firstItemIndex, data, gap }, { initialTopMostItemIndex }, { initialItemCount, listState }, { didMount }]) => {
+  connect(pipe(didMount, withLatestFrom(initialItemCount), filter(([, count2]) => count2 !== 0), withLatestFrom(initialTopMostItemIndex, sizes, firstItemIndex, gap, data), map(([[, count2], initialTopMostItemIndexValue, sizes2, firstItemIndex2, gap2, data2 = []]) => {
+    return buildListStateFromItemCount(count2, initialTopMostItemIndexValue, sizes2, firstItemIndex2, gap2, data2);
   })), listState);
-  return { initialItemCount };
-}, tup(sizeSystem, listStateSystem, propsReadySystem), { singleton: true });
+  return {};
+}, tup(sizeSystem, initialTopMostItemIndexSystem, listStateSystem, propsReadySystem), { singleton: true });
 
-// ../juno-core/src/components/Virtuoso/react-virtuoso/initialScrollTopSystem.ts
-var initialScrollTopSystem = system(([{ totalListHeight }, { didMount }, { scrollTo }]) => {
-  const initialScrollTop = statefulStream(0);
-  subscribe(pipe(didMount, withLatestFrom(initialScrollTop), filter(([, offset7]) => offset7 !== 0), map(([, offset7]) => ({ top: offset7 }))), (location) => {
-    handleNext(pipe(totalListHeight, filter((val) => val !== 0)), () => {
-      setTimeout(() => {
-        publish(scrollTo, location);
-      });
-    });
-  });
-  return {
-    initialScrollTop
-  };
-}, tup(totalListHeightSystem, propsReadySystem, domIOSystem), { singleton: true });
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/scrollIntoViewSystem.ts
-var scrollIntoViewSystem = system(([
-  { sizes, totalCount },
-  { scrollTop, viewportHeight, headerHeight, scrollingInProgress },
-  { scrollToIndex }
-]) => {
-  const scrollIntoView = stream();
-  connect(pipe(scrollIntoView, withLatestFrom(sizes, viewportHeight, totalCount, headerHeight, scrollTop), map(([
-    { index: index4, behavior = "auto", done },
-    sizes2,
-    viewportHeight2,
-    totalCount2,
-    headerHeight2,
-    scrollTop2
-  ]) => {
-    const lastIndex = totalCount2 - 1;
-    let location = null;
-    index4 = originalIndexFromItemIndex(index4, sizes2);
-    index4 = Math.max(0, index4, Math.min(lastIndex, index4));
-    const itemTop2 = offsetOf(index4, sizes2.offsetTree) + headerHeight2;
-    if (itemTop2 < scrollTop2) {
-      location = { index: index4, behavior, align: "start" };
+// ../juno-core/src/components/Virtuoso/react-virtuoso/scrollSeekSystem.ts
+var scrollSeekSystem = system(([{ scrollVelocity }]) => {
+  const isSeeking = statefulStream(false);
+  const rangeChanged = stream();
+  const scrollSeekConfiguration = statefulStream(false);
+  connect(pipe(scrollVelocity, withLatestFrom(scrollSeekConfiguration, isSeeking, rangeChanged), filter(([_32, config2]) => !!config2), map(([speed, config2, isSeeking2, range2]) => {
+    const { exit, enter: enter2 } = config2;
+    if (isSeeking2) {
+      if (exit(speed, range2)) {
+        return false;
+      }
     } else {
-      const itemBottom = itemTop2 + findMaxKeyValue(sizes2.sizeTree, index4)[1];
-      if (itemBottom > scrollTop2 + viewportHeight2) {
-        location = { index: index4, behavior, align: "end" };
+      if (enter2(speed, range2)) {
+        return true;
       }
     }
-    if (location) {
-      done && handleNext(pipe(scrollingInProgress, skip(1), filter((value) => value === false)), done);
-    } else {
-      done && done();
-    }
-    return location;
-  }), filter((value) => value !== null)), scrollToIndex);
-  return {
-    scrollIntoView
-  };
-}, tup(sizeSystem, domIOSystem, scrollToIndexSystem, listStateSystem, loggerSystem), { singleton: true });
+    return isSeeking2;
+  }), distinctUntilChanged()), isSeeking);
+  subscribe(pipe(combineLatest(isSeeking, scrollVelocity, rangeChanged), withLatestFrom(scrollSeekConfiguration)), ([[isSeeking2, velocity, range2], config2]) => isSeeking2 && config2 && config2.change && config2.change(velocity, range2));
+  return { isSeeking, scrollSeekConfiguration, scrollVelocity, scrollSeekRangeChanged: rangeChanged };
+}, tup(stateFlagsSystem), { singleton: true });
 
 // ../juno-core/src/components/Virtuoso/react-virtuoso/topItemCountSystem.ts
 var topItemCountSystem = system(([{ topItemsIndexes }]) => {
@@ -75181,141 +74846,15 @@ var topItemCountSystem = system(([{ topItemsIndexes }]) => {
   return { topItemCount };
 }, tup(listStateSystem));
 
-// ../juno-core/src/components/Virtuoso/react-virtuoso/upwardScrollFixSystem.ts
-var upwardScrollFixSystem = system(([
-  { scrollBy, scrollTop, deviation, scrollingInProgress },
-  {
-    isScrolling,
-    isAtBottom,
-    atBottomState,
-    scrollDirection,
-    lastJumpDueToItemResize
-  },
-  { listState },
-  { beforeUnshiftWith, shiftWithOffset, sizes },
-  { log: log2 }
-]) => {
-  const deviationOffset = streamFromEmitter(pipe(listState, withLatestFrom(lastJumpDueToItemResize), scan(([, prevItems, prevTotalCount, prevTotalHeight], [
-    { items, totalCount, bottom: bottom2, offsetBottom },
-    lastJumpDueToItemResize2
-  ]) => {
-    const totalHeight = bottom2 + offsetBottom;
-    let newDev = 0;
-    if (prevTotalCount === totalCount) {
-      if (prevItems.length > 0 && items.length > 0) {
-        const atStart = items[0].originalIndex === 0 && prevItems[0].originalIndex === 0;
-        if (!atStart) {
-          newDev = totalHeight - prevTotalHeight;
-          if (newDev !== 0) {
-            newDev += lastJumpDueToItemResize2;
-          }
-        }
-      }
-    }
-    return [newDev, items, totalCount, totalHeight];
-  }, [0, [], 0, 0]), filter(([amount]) => amount !== 0), withLatestFrom(scrollTop, scrollDirection, scrollingInProgress, log2, isAtBottom, atBottomState), filter(([, scrollTop2, scrollDirection2, scrollingInProgress2]) => {
-    return !scrollingInProgress2 && scrollTop2 !== 0 && scrollDirection2 === UP;
-  }), map(([[amount], , , , log3]) => {
-    log3("Upward scrolling compensation", { amount }, LogLevel.DEBUG);
-    return amount;
-  })));
-  connect(pipe(deviationOffset, withLatestFrom(deviation), map(([amount, deviation2]) => deviation2 - amount)), deviation);
-  subscribe(pipe(combineLatest(statefulStreamFromEmitter(isScrolling, false), deviation), filter(([is3, deviation2]) => !is3 && deviation2 !== 0), map(([, deviation2]) => deviation2), throttleTime(1)), (offset7) => {
-    if (offset7 > 0) {
-      publish(scrollBy, { top: -offset7, behavior: "auto" });
-      publish(deviation, 0);
-    } else {
-      publish(deviation, 0);
-      publish(scrollBy, { top: -offset7, behavior: "auto" });
-    }
-  });
-  connect(pipe(shiftWithOffset, map((offset7) => {
-    return { top: -offset7 };
-  })), scrollBy);
-  connect(pipe(beforeUnshiftWith, withLatestFrom(sizes), map(([offset7, { lastSize }]) => offset7 * lastSize)), deviationOffset);
-  return { deviation };
-}, tup(domIOSystem, stateFlagsSystem, listStateSystem, sizeSystem, loggerSystem));
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/listSystem.ts
-var featureGroup1System = system(([
-  sizeRange,
-  initialItemCount,
-  propsReady,
-  scrollSeek,
-  totalListHeight,
-  initialScrollTopSystem2,
-  alignToBottom,
-  windowScroller,
-  scrollIntoView
-]) => {
-  return {
-    ...sizeRange,
-    ...initialItemCount,
-    ...propsReady,
-    ...scrollSeek,
-    ...totalListHeight,
-    ...initialScrollTopSystem2,
-    ...alignToBottom,
-    ...windowScroller,
-    ...scrollIntoView
-  };
-}, tup(sizeRangeSystem, initialItemCountSystem, propsReadySystem, scrollSeekSystem, totalListHeightSystem, initialScrollTopSystem, alignToBottomSystem, windowScrollerSystem, scrollIntoViewSystem));
-var listSystem = system(([
-  {
-    totalCount,
-    sizeRanges,
-    fixedItemSize,
-    defaultItemSize,
-    trackItemSizes,
-    itemSize,
-    data,
-    firstItemIndex,
-    groupIndices,
-    statefulTotalCount
-  },
-  { initialTopMostItemIndex, scrolledToInitialItem },
-  domIO,
-  followOutput,
-  { listState, topItemsIndexes, ...flags },
-  { scrollToIndex },
-  ,
-  { topItemCount },
-  { groupCounts },
-  featureGroup1,
-  log2
-]) => {
-  connect(flags.rangeChanged, featureGroup1.scrollSeekRangeChanged);
-  connect(pipe(featureGroup1.windowViewportRect, map(prop("visibleHeight"))), domIO.viewportHeight);
-  return {
-    totalCount,
-    data,
-    firstItemIndex,
-    sizeRanges,
-    initialTopMostItemIndex,
-    scrolledToInitialItem,
-    topItemsIndexes,
-    topItemCount,
-    groupCounts,
-    fixedItemHeight: fixedItemSize,
-    defaultItemHeight: defaultItemSize,
-    ...followOutput,
-    statefulTotalCount,
-    listState,
-    scrollToIndex,
-    trackItemSizes,
-    itemSize,
-    groupIndices,
-    ...flags,
-    ...featureGroup1,
-    ...domIO,
-    ...log2
-  };
-}, tup(sizeSystem, initialTopMostItemIndexSystem, domIOSystem, followOutputSystem, listStateSystem, scrollToIndexSystem, upwardScrollFixSystem, topItemCountSystem, groupedListSystem, featureGroup1System, loggerSystem));
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/utils/conditionalFlushSync.ts
-function conditionalFlushSync(flag) {
-  return (cb) => cb();
-}
+// ../juno-core/src/components/Virtuoso/react-virtuoso/totalListHeightSystem.ts
+var totalListHeightSystem = system(([{ footerHeight, headerHeight, fixedHeaderHeight, fixedFooterHeight }, { listState }]) => {
+  const totalListHeightChanged = stream();
+  const totalListHeight = statefulStreamFromEmitter(pipe(combineLatest(footerHeight, fixedFooterHeight, headerHeight, fixedHeaderHeight, listState), map(([footerHeight2, fixedFooterHeight2, headerHeight2, fixedHeaderHeight2, listState2]) => {
+    return footerHeight2 + fixedFooterHeight2 + headerHeight2 + fixedHeaderHeight2 + listState2.offsetBottom + listState2.bottom;
+  })), 0);
+  connect(duc(totalListHeight), totalListHeightChanged);
+  return { totalListHeight, totalListHeightChanged };
+}, tup(domIOSystem, listStateSystem), { singleton: true });
 
 // ../juno-core/src/components/Virtuoso/react-virtuoso/utils/simpleMemoize.ts
 function simpleMemoize(func4) {
@@ -75330,6 +74869,314 @@ function simpleMemoize(func4) {
   };
 }
 
+// ../juno-core/src/components/Virtuoso/react-virtuoso/upwardScrollFixSystem.ts
+var isMobileSafari = simpleMemoize(() => {
+  return /iP(ad|od|hone)/i.test(navigator.userAgent) && /WebKit/i.test(navigator.userAgent);
+});
+var upwardScrollFixSystem = system(([
+  { scrollBy, scrollTop, deviation, scrollingInProgress },
+  { isScrolling, isAtBottom, scrollDirection, lastJumpDueToItemResize },
+  { listState },
+  { beforeUnshiftWith, shiftWithOffset, sizes, gap },
+  { log: log2 },
+  { recalcInProgress }
+]) => {
+  const deviationOffset = streamFromEmitter(pipe(listState, withLatestFrom(lastJumpDueToItemResize), scan(([, prevItems, prevTotalCount, prevTotalHeight], [{ items, totalCount, bottom: bottom2, offsetBottom }, lastJumpDueToItemResize2]) => {
+    const totalHeight = bottom2 + offsetBottom;
+    let newDev = 0;
+    if (prevTotalCount === totalCount) {
+      if (prevItems.length > 0 && items.length > 0) {
+        const atStart = items[0].originalIndex === 0 && prevItems[0].originalIndex === 0;
+        if (!atStart) {
+          newDev = totalHeight - prevTotalHeight;
+          if (newDev !== 0) {
+            newDev += lastJumpDueToItemResize2;
+          }
+        }
+      }
+    }
+    return [newDev, items, totalCount, totalHeight];
+  }, [0, [], 0, 0]), filter(([amount]) => amount !== 0), withLatestFrom(scrollTop, scrollDirection, scrollingInProgress, isAtBottom, log2, recalcInProgress), filter(([, scrollTop2, scrollDirection2, scrollingInProgress2, , , recalcInProgress2]) => {
+    return !recalcInProgress2 && !scrollingInProgress2 && scrollTop2 !== 0 && scrollDirection2 === UP;
+  }), map(([[amount], , , , , log3]) => {
+    log3("Upward scrolling compensation", { amount }, LogLevel.DEBUG);
+    return amount;
+  })));
+  function scrollByWith(offset7) {
+    if (offset7 > 0) {
+      publish(scrollBy, { top: -offset7, behavior: "auto" });
+      publish(deviation, 0);
+    } else {
+      publish(deviation, 0);
+      publish(scrollBy, { top: -offset7, behavior: "auto" });
+    }
+  }
+  subscribe(pipe(deviationOffset, withLatestFrom(deviation, isScrolling)), ([offset7, deviationAmount, isScrolling2]) => {
+    if (isScrolling2 && isMobileSafari()) {
+      publish(deviation, deviationAmount - offset7);
+    } else {
+      scrollByWith(-offset7);
+    }
+  });
+  subscribe(pipe(combineLatest(statefulStreamFromEmitter(isScrolling, false), deviation, recalcInProgress), filter(([is3, deviation2, recalc]) => !is3 && !recalc && deviation2 !== 0), map(([_32, deviation2]) => deviation2), throttleTime(1)), scrollByWith);
+  connect(pipe(shiftWithOffset, map((offset7) => {
+    return { top: -offset7 };
+  })), scrollBy);
+  subscribe(pipe(beforeUnshiftWith, withLatestFrom(sizes, gap), map(([offset7, { lastSize: defaultItemSize, groupIndices, sizeTree }, gap2]) => {
+    function getItemOffset(itemCount) {
+      return itemCount * (defaultItemSize + gap2);
+    }
+    if (groupIndices.length === 0) {
+      return getItemOffset(offset7);
+    } else {
+      let amount = 0;
+      const defaultGroupSize = find3(sizeTree, 0);
+      let recognizedOffsetItems = 0;
+      let groupIndex = 0;
+      while (recognizedOffsetItems < offset7) {
+        recognizedOffsetItems++;
+        amount += defaultGroupSize;
+        let groupItemCount = groupIndices.length === groupIndex + 1 ? Infinity : groupIndices[groupIndex + 1] - groupIndices[groupIndex] - 1;
+        if (recognizedOffsetItems + groupItemCount > offset7) {
+          amount -= defaultGroupSize;
+          groupItemCount = offset7 - recognizedOffsetItems + 1;
+        }
+        recognizedOffsetItems += groupItemCount;
+        amount += getItemOffset(groupItemCount);
+        groupIndex++;
+      }
+      return amount;
+    }
+  })), (offset7) => {
+    publish(deviation, offset7);
+    requestAnimationFrame(() => {
+      publish(scrollBy, { top: offset7 });
+      requestAnimationFrame(() => {
+        publish(deviation, 0);
+        publish(recalcInProgress, false);
+      });
+    });
+  });
+  return { deviation };
+}, tup(domIOSystem, stateFlagsSystem, listStateSystem, sizeSystem, loggerSystem, recalcSystem));
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/initialScrollTopSystem.ts
+var initialScrollTopSystem = system(([{ didMount }, { scrollTo }, { listState }]) => {
+  const initialScrollTop = statefulStream(0);
+  subscribe(pipe(didMount, withLatestFrom(initialScrollTop), filter(([, offset7]) => offset7 !== 0), map(([, offset7]) => ({ top: offset7 }))), (location) => {
+    handleNext(pipe(listState, skip(1), filter((state) => state.items.length > 1)), () => {
+      requestAnimationFrame(() => {
+        publish(scrollTo, location);
+      });
+    });
+  });
+  return {
+    initialScrollTop
+  };
+}, tup(propsReadySystem, domIOSystem, listStateSystem), { singleton: true });
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/alignToBottomSystem.ts
+var alignToBottomSystem = system(([{ viewportHeight }, { totalListHeight }]) => {
+  const alignToBottom = statefulStream(false);
+  const paddingTopAddition = statefulStreamFromEmitter(pipe(combineLatest(alignToBottom, viewportHeight, totalListHeight), filter(([enabled]) => enabled), map(([, viewportHeight2, totalListHeight2]) => {
+    return Math.max(0, viewportHeight2 - totalListHeight2);
+  }), throttleTime(0), distinctUntilChanged()), 0);
+  return { alignToBottom, paddingTopAddition };
+}, tup(domIOSystem, totalListHeightSystem), { singleton: true });
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/windowScrollerSystem.ts
+var windowScrollerSystem = system(([{ scrollTo, scrollContainerState }]) => {
+  const windowScrollContainerState = stream();
+  const windowViewportRect = stream();
+  const windowScrollTo = stream();
+  const useWindowScroll = statefulStream(false);
+  const customScrollParent = statefulStream(void 0);
+  connect(pipe(combineLatest(windowScrollContainerState, windowViewportRect), map(([{ viewportHeight, scrollTop: windowScrollTop, scrollHeight }, { offsetTop }]) => {
+    return {
+      scrollTop: Math.max(0, windowScrollTop - offsetTop),
+      scrollHeight,
+      viewportHeight
+    };
+  })), scrollContainerState);
+  connect(pipe(scrollTo, withLatestFrom(windowViewportRect), map(([scrollTo2, { offsetTop }]) => {
+    return {
+      ...scrollTo2,
+      top: scrollTo2.top + offsetTop
+    };
+  })), windowScrollTo);
+  return {
+    useWindowScroll,
+    customScrollParent,
+    windowScrollContainerState,
+    windowViewportRect,
+    windowScrollTo
+  };
+}, tup(domIOSystem));
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/scrollIntoViewSystem.ts
+var defaultCalculateViewLocation = ({
+  itemTop: itemTop2,
+  itemBottom,
+  viewportTop,
+  viewportBottom,
+  locationParams: { behavior, align, ...rest }
+}) => {
+  if (itemTop2 < viewportTop) {
+    return { ...rest, behavior, align: align ?? "start" };
+  }
+  if (itemBottom > viewportBottom) {
+    return { ...rest, behavior, align: align ?? "end" };
+  }
+  return null;
+};
+var scrollIntoViewSystem = system(([
+  { sizes, totalCount, gap },
+  { scrollTop, viewportHeight, headerHeight, fixedHeaderHeight, fixedFooterHeight, scrollingInProgress },
+  { scrollToIndex }
+]) => {
+  const scrollIntoView = stream();
+  connect(pipe(scrollIntoView, withLatestFrom(sizes, viewportHeight, totalCount, headerHeight, fixedHeaderHeight, fixedFooterHeight, scrollTop), withLatestFrom(gap), map(([[viewLocation, sizes2, viewportHeight2, totalCount2, headerHeight2, fixedHeaderHeight2, fixedFooterHeight2, scrollTop2], gap2]) => {
+    const { done, behavior, align, calculateViewLocation = defaultCalculateViewLocation, ...rest } = viewLocation;
+    const actualIndex = originalIndexFromLocation(viewLocation, sizes2, totalCount2 - 1);
+    const itemTop2 = offsetOf(actualIndex, sizes2.offsetTree, gap2) + headerHeight2 + fixedHeaderHeight2;
+    const itemBottom = itemTop2 + findMaxKeyValue(sizes2.sizeTree, actualIndex)[1];
+    const viewportTop = scrollTop2 + fixedHeaderHeight2;
+    const viewportBottom = scrollTop2 + viewportHeight2 - fixedFooterHeight2;
+    const location = calculateViewLocation({
+      itemTop: itemTop2,
+      itemBottom,
+      viewportTop,
+      viewportBottom,
+      locationParams: { behavior, align, ...rest }
+    });
+    if (location) {
+      done && handleNext(pipe(scrollingInProgress, filter((value) => value === false), skip(getValue3(scrollingInProgress) ? 1 : 2)), done);
+    } else {
+      done && done();
+    }
+    return location;
+  }), filter((value) => value !== null)), scrollToIndex);
+  return {
+    scrollIntoView
+  };
+}, tup(sizeSystem, domIOSystem, scrollToIndexSystem, listStateSystem, loggerSystem), { singleton: true });
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/stateLoadSystem.ts
+var stateLoadSystem = system(([
+  { sizes, sizeRanges },
+  { scrollTop },
+  { initialTopMostItemIndex },
+  { didMount },
+  { useWindowScroll, windowScrollContainerState, windowViewportRect }
+]) => {
+  const getState = stream();
+  const restoreStateFrom = statefulStream(void 0);
+  const statefulWindowScrollContainerState = statefulStream(null);
+  const statefulWindowViewportRect = statefulStream(null);
+  connect(windowScrollContainerState, statefulWindowScrollContainerState);
+  connect(windowViewportRect, statefulWindowViewportRect);
+  subscribe(pipe(getState, withLatestFrom(sizes, scrollTop, useWindowScroll, statefulWindowScrollContainerState, statefulWindowViewportRect)), ([callback, sizes2, scrollTop2, useWindowScroll2, windowScrollContainerState2, windowViewportRect2]) => {
+    const ranges = sizeTreeToRanges(sizes2.sizeTree);
+    if (useWindowScroll2 && windowScrollContainerState2 !== null && windowViewportRect2 !== null) {
+      scrollTop2 = windowScrollContainerState2.scrollTop - windowViewportRect2.offsetTop;
+    }
+    callback({ ranges, scrollTop: scrollTop2 });
+  });
+  connect(pipe(restoreStateFrom, filter(isDefined), map(locationFromSnapshot)), initialTopMostItemIndex);
+  connect(pipe(didMount, withLatestFrom(restoreStateFrom), filter(([, state]) => state !== void 0), distinctUntilChanged(), map(([, snapshot]) => {
+    return snapshot.ranges;
+  })), sizeRanges);
+  return {
+    getState,
+    restoreStateFrom
+  };
+}, tup(sizeSystem, domIOSystem, initialTopMostItemIndexSystem, propsReadySystem, windowScrollerSystem));
+function locationFromSnapshot(snapshot) {
+  return { offset: snapshot.scrollTop, index: 0, align: "start" };
+}
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/listSystem.ts
+var featureGroup1System = system(([
+  sizeRange,
+  initialItemCount,
+  propsReady,
+  scrollSeek,
+  totalListHeight,
+  initialScrollTopSystem2,
+  alignToBottom,
+  windowScroller,
+  scrollIntoView,
+  logger
+]) => {
+  return {
+    ...sizeRange,
+    ...initialItemCount,
+    ...propsReady,
+    ...scrollSeek,
+    ...totalListHeight,
+    ...initialScrollTopSystem2,
+    ...alignToBottom,
+    ...windowScroller,
+    ...scrollIntoView,
+    ...logger
+  };
+}, tup(sizeRangeSystem, initialItemCountSystem, propsReadySystem, scrollSeekSystem, totalListHeightSystem, initialScrollTopSystem, alignToBottomSystem, windowScrollerSystem, scrollIntoViewSystem, loggerSystem));
+var listSystem = system(([
+  {
+    totalCount,
+    sizeRanges,
+    fixedItemSize,
+    defaultItemSize,
+    trackItemSizes,
+    itemSize,
+    data,
+    firstItemIndex,
+    groupIndices,
+    statefulTotalCount,
+    gap,
+    sizes
+  },
+  { initialTopMostItemIndex, scrolledToInitialItem },
+  domIO,
+  stateLoad,
+  followOutput,
+  { listState, topItemsIndexes, ...flags },
+  { scrollToIndex },
+  _32,
+  { topItemCount },
+  { groupCounts },
+  featureGroup1
+]) => {
+  connect(flags.rangeChanged, featureGroup1.scrollSeekRangeChanged);
+  connect(pipe(featureGroup1.windowViewportRect, map((value) => value.visibleHeight)), domIO.viewportHeight);
+  return {
+    totalCount,
+    data,
+    firstItemIndex,
+    sizeRanges,
+    initialTopMostItemIndex,
+    scrolledToInitialItem,
+    topItemsIndexes,
+    topItemCount,
+    groupCounts,
+    fixedItemHeight: fixedItemSize,
+    defaultItemHeight: defaultItemSize,
+    gap,
+    ...followOutput,
+    statefulTotalCount,
+    listState,
+    scrollToIndex,
+    trackItemSizes,
+    itemSize,
+    groupIndices,
+    ...flags,
+    ...featureGroup1,
+    ...domIO,
+    sizes,
+    ...stateLoad
+  };
+}, tup(sizeSystem, initialTopMostItemIndexSystem, domIOSystem, stateLoadSystem, followOutputSystem, listStateSystem, scrollToIndexSystem, upwardScrollFixSystem, topItemCountSystem, groupedListSystem, featureGroup1System));
+
 // ../juno-core/src/components/Virtuoso/react-virtuoso/utils/positionStickyCssValue.ts
 var WEBKIT_STICKY = "-webkit-sticky";
 var STICKY = "sticky";
@@ -75342,11 +75189,69 @@ var positionStickyCssValue = simpleMemoize(() => {
   return node4.style.position === WEBKIT_STICKY ? WEBKIT_STICKY : STICKY;
 });
 
-// ../juno-core/src/components/Virtuoso/react-virtuoso/List.tsx
+// ../juno-core/src/components/Virtuoso/react-virtuoso/hooks/useWindowViewportRect.ts
+import React821 from "react";
+function useWindowViewportRectRef(callback, customScrollParent) {
+  const viewportInfo = React821.useRef(null);
+  const { externalWindow = window } = useRcPortalWindowContext();
+  const calculateInfo = React821.useCallback((element2) => {
+    if (element2 === null || !element2.offsetParent) {
+      return;
+    }
+    const rect = element2.getBoundingClientRect();
+    const visibleWidth = rect.width;
+    let visibleHeight, offsetTop;
+    if (customScrollParent) {
+      const customScrollParentRect = customScrollParent.getBoundingClientRect();
+      const deltaTop = rect.top - customScrollParentRect.top;
+      visibleHeight = customScrollParentRect.height - Math.max(0, deltaTop);
+      offsetTop = deltaTop + customScrollParent.scrollTop;
+    } else {
+      visibleHeight = externalWindow.innerHeight - Math.max(0, rect.top);
+      offsetTop = rect.top + externalWindow.pageYOffset;
+    }
+    viewportInfo.current = {
+      offsetTop,
+      visibleHeight,
+      visibleWidth
+    };
+    callback(viewportInfo.current);
+  }, [callback, customScrollParent, externalWindow]);
+  const { callbackRef, ref: ref2 } = useSizeWithElRef(calculateInfo);
+  const scrollAndResizeEventHandler = React821.useCallback(() => {
+    calculateInfo(ref2.current);
+  }, [calculateInfo, ref2]);
+  React821.useEffect(() => {
+    if (customScrollParent) {
+      customScrollParent.addEventListener("scroll", scrollAndResizeEventHandler);
+      const observer = new externalWindow["ResizeObserver"](scrollAndResizeEventHandler);
+      observer.observe(customScrollParent);
+      return () => {
+        customScrollParent.removeEventListener("scroll", scrollAndResizeEventHandler);
+        observer.unobserve(customScrollParent);
+      };
+    } else {
+      externalWindow.addEventListener("scroll", scrollAndResizeEventHandler);
+      externalWindow.addEventListener("resize", scrollAndResizeEventHandler);
+      return () => {
+        externalWindow.removeEventListener("scroll", scrollAndResizeEventHandler);
+        externalWindow.removeEventListener("resize", scrollAndResizeEventHandler);
+      };
+    }
+  }, [scrollAndResizeEventHandler, customScrollParent, externalWindow]);
+  return callbackRef;
+}
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/utils/context.ts
+import React822 from "react";
+var VirtuosoMockContext = React822.createContext(void 0);
+var VirtuosoGridMockContext = React822.createContext(void 0);
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/Virtuoso.tsx
 function identity(value) {
   return value;
 }
-var listComponentPropsSystem = system(() => {
+var listComponentPropsSystem = /* @__PURE__ */ system(() => {
   const itemContent = statefulStream((index4) => `Item ${index4}`);
   const context = statefulStream(null);
   const groupContent = statefulStream((index4) => `Group ${index4}`);
@@ -75376,87 +75281,16 @@ var listComponentPropsSystem = system(() => {
     ScrollSeekPlaceholder: distinctProp("ScrollSeekPlaceholder")
   };
 });
-function addDeprecatedAlias(prop2, message) {
-  const alias = stream();
-  subscribe(alias, () => console.warn(`react-virtuoso: You are using a deprecated property. ${message}`, "color: red;", "color: inherit;", "color: blue;"));
-  connect(alias, prop2);
-  return alias;
-}
-var combinedSystem = system(([listSystem2, propsSystem]) => {
-  const deprecatedProps = {
-    item: addDeprecatedAlias(propsSystem.itemContent, "Rename the %citem%c prop to %citemContent."),
-    group: addDeprecatedAlias(propsSystem.groupContent, "Rename the %cgroup%c prop to %cgroupContent."),
-    topItems: addDeprecatedAlias(listSystem2.topItemCount, "Rename the %ctopItems%c prop to %ctopItemCount."),
-    itemHeight: addDeprecatedAlias(listSystem2.fixedItemHeight, "Rename the %citemHeight%c prop to %cfixedItemHeight."),
-    scrollingStateChange: addDeprecatedAlias(listSystem2.isScrolling, "Rename the %cscrollingStateChange%c prop to %cisScrolling."),
-    adjustForPrependedItems: stream(),
-    maxHeightCacheSize: stream(),
-    footer: stream(),
-    header: stream(),
-    HeaderContainer: stream(),
-    FooterContainer: stream(),
-    ItemContainer: stream(),
-    ScrollContainer: stream(),
-    GroupContainer: stream(),
-    ListContainer: stream(),
-    emptyComponent: stream(),
-    scrollSeek: stream()
-  };
-  subscribe(deprecatedProps.adjustForPrependedItems, () => {
-    console.warn(`react-virtuoso: adjustForPrependedItems is no longer supported. Use the firstItemIndex property instead - https://virtuoso.dev/prepend-items.`, "color: red;", "color: inherit;", "color: blue;");
-  });
-  subscribe(deprecatedProps.maxHeightCacheSize, () => {
-    console.warn(`react-virtuoso: maxHeightCacheSize is no longer necessary. Setting it has no effect - remove it from your code.`);
-  });
-  subscribe(deprecatedProps.HeaderContainer, () => {
-    console.warn(`react-virtuoso: HeaderContainer is deprecated. Use headerFooterTag if you want to change the wrapper of the header component and pass components.Header to change its contents.`);
-  });
-  subscribe(deprecatedProps.FooterContainer, () => {
-    console.warn(`react-virtuoso: FooterContainer is deprecated. Use headerFooterTag if you want to change the wrapper of the footer component and pass components.Footer to change its contents.`);
-  });
-  function deprecateComponentProp(stream2, componentName2, propName) {
-    connect(pipe(stream2, withLatestFrom(propsSystem.components), map(([comp, components]) => {
-      console.warn(`react-virtuoso: ${propName} property is deprecated. Pass components.${componentName2} instead.`);
-      return { ...components, [componentName2]: comp };
-    })), propsSystem.components);
-  }
-  subscribe(deprecatedProps.scrollSeek, ({ placeholder: placeholder2, ...config2 }) => {
-    console.warn(`react-virtuoso: scrollSeek property is deprecated. Pass scrollSeekConfiguration and specify the placeholder in components.ScrollSeekPlaceholder instead.`);
-    publish(propsSystem.components, {
-      ...getValue3(propsSystem.components),
-      ScrollSeekPlaceholder: placeholder2
-    });
-    publish(listSystem2.scrollSeekConfiguration, config2);
-  });
-  deprecateComponentProp(deprecatedProps.footer, "Footer", "footer");
-  deprecateComponentProp(deprecatedProps.header, "Header", "header");
-  deprecateComponentProp(deprecatedProps.ItemContainer, "Item", "ItemContainer");
-  deprecateComponentProp(deprecatedProps.ListContainer, "List", "ListContainer");
-  deprecateComponentProp(deprecatedProps.ScrollContainer, "Scroller", "ScrollContainer");
-  deprecateComponentProp(deprecatedProps.emptyComponent, "EmptyPlaceholder", "emptyComponent");
-  deprecateComponentProp(deprecatedProps.GroupContainer, "Group", "GroupContainer");
-  return { ...listSystem2, ...propsSystem, ...deprecatedProps };
+var combinedSystem = /* @__PURE__ */ system(([listSystem2, propsSystem]) => {
+  return { ...listSystem2, ...propsSystem };
 }, tup(listSystem, listComponentPropsSystem));
-var DefaultScrollSeekPlaceholder = ({ height: height2 }) => /* @__PURE__ */ createElement679("div", {
+var DefaultScrollSeekPlaceholder = ({ height: height2 }) => /* @__PURE__ */ React823.createElement("div", {
   style: { height: height2 }
 });
-var GROUP_STYLE = {
-  position: positionStickyCssValue(),
-  zIndex: 1,
-  overflowAnchor: "none"
-};
+var GROUP_STYLE = { position: positionStickyCssValue(), zIndex: 1, overflowAnchor: "none" };
 var ITEM_STYLE = { overflowAnchor: "none" };
-var Items = memo568(function VirtuosoItems({
-  showTopList = false
-}) {
+var Items = /* @__PURE__ */ React823.memo(function VirtuosoItems({ showTopList = false }) {
   const listState = useEmitterValue("listState");
-  const [deviation, setDeviation] = useState35(0);
-  const react18ConcurrentRendering = useEmitterValue("react18ConcurrentRendering");
-  useEmitter("deviation", (value) => {
-    if (deviation !== value) {
-      conditionalFlushSync(react18ConcurrentRendering)(() => setDeviation(value));
-    }
-  });
   const sizeRanges = usePublisher("sizeRanges");
   const useWindowScroll = useEmitterValue("useWindowScroll");
   const customScrollParent = useEmitterValue("customScrollParent");
@@ -75469,7 +75303,14 @@ var Items = memo568(function VirtuosoItems({
   const trackItemSizes = useEmitterValue("trackItemSizes");
   const itemSize = useEmitterValue("itemSize");
   const log2 = useEmitterValue("log");
-  const ref2 = useChangedListContentsSizes(sizeRanges, itemSize, trackItemSizes, showTopList ? noop3 : scrollContainerStateCallback, log2, customScrollParent);
+  const listGap = usePublisher("gap");
+  const { callbackRef } = useChangedListContentsSizes(sizeRanges, itemSize, trackItemSizes, showTopList ? noop3 : scrollContainerStateCallback, log2, listGap, customScrollParent);
+  const [deviation, setDeviation] = React823.useState(0);
+  useEmitter("deviation", (value) => {
+    if (deviation !== value) {
+      setDeviation(value);
+    }
+  });
   const EmptyPlaceholder = useEmitterValue("EmptyPlaceholder");
   const ScrollSeekPlaceholder = useEmitterValue("ScrollSeekPlaceholder") || DefaultScrollSeekPlaceholder;
   const ListComponent = useEmitterValue("ListComponent");
@@ -75479,27 +75320,27 @@ var Items = memo568(function VirtuosoItems({
   const isSeeking = useEmitterValue("isSeeking");
   const hasGroups2 = useEmitterValue("groupIndices").length > 0;
   const paddingTopAddition = useEmitterValue("paddingTopAddition");
-  const firstItemIndex = useEmitterValue("firstItemIndex");
-  const statefulTotalCount = useEmitterValue("statefulTotalCount");
+  const scrolledToInitialItem = useEmitterValue("scrolledToInitialItem");
   const containerStyle = showTopList ? {} : {
     boxSizing: "border-box",
     paddingTop: listState.offsetTop + paddingTopAddition,
     paddingBottom: listState.offsetBottom,
-    marginTop: deviation
+    marginTop: deviation,
+    ...scrolledToInitialItem ? {} : { visibility: "hidden" }
   };
-  if (!showTopList && statefulTotalCount === 0 && EmptyPlaceholder) {
-    return createElement680(EmptyPlaceholder, contextPropIfNotDomElement(EmptyPlaceholder, context));
+  if (!showTopList && listState.totalCount === 0 && EmptyPlaceholder) {
+    return React823.createElement(EmptyPlaceholder, contextPropIfNotDomElement(EmptyPlaceholder, context));
   }
-  return createElement680(ListComponent, {
+  return React823.createElement(ListComponent, {
     ...contextPropIfNotDomElement(ListComponent, context),
-    ref: ref2,
+    ref: callbackRef,
     style: containerStyle,
     "data-test-id": showTopList ? "virtuoso-top-item-list" : "virtuoso-item-list"
   }, (showTopList ? listState.topItems : listState.items).map((item) => {
     const index4 = item.originalIndex;
-    const key = computeItemKey(index4 + firstItemIndex, item.data, context);
+    const key = computeItemKey(index4 + listState.firstItemIndex, item.data, context);
     if (isSeeking) {
-      return createElement680(ScrollSeekPlaceholder, {
+      return React823.createElement(ScrollSeekPlaceholder, {
         ...contextPropIfNotDomElement(ScrollSeekPlaceholder, context),
         key,
         index: item.index,
@@ -75509,24 +75350,26 @@ var Items = memo568(function VirtuosoItems({
       });
     }
     if (item.type === "group") {
-      return createElement680(GroupComponent, {
+      return React823.createElement(GroupComponent, {
         ...contextPropIfNotDomElement(GroupComponent, context),
         key,
         "data-index": index4,
         "data-known-size": item.size,
         "data-item-index": item.index,
         style: GROUP_STYLE
-      }, groupContent(item.index));
+      }, groupContent(item.index, context));
+    } else {
+      return React823.createElement(ItemComponent, {
+        ...contextPropIfNotDomElement(ItemComponent, context),
+        ...itemPropIfNotDomElement(ItemComponent, item.data),
+        key,
+        "data-index": index4,
+        "data-known-size": item.size,
+        "data-item-index": item.index,
+        "data-item-group-index": item.groupIndex,
+        style: ITEM_STYLE
+      }, hasGroups2 ? itemContent(item.index, item.groupIndex, item.data, context) : itemContent(item.index, item.data, context));
     }
-    return createElement680(ItemComponent, {
-      ...contextPropIfNotDomElement(ItemComponent, context),
-      key,
-      "data-index": index4,
-      "data-known-size": item.size,
-      "data-item-index": item.index,
-      "data-item-group-index": item.groupIndex,
-      style: ITEM_STYLE
-    }, hasGroups2 ? itemContent(item.index, item.groupIndex, item.data, context) : itemContent(item.index, item.data, context));
   }));
 });
 var scrollerStyle = {
@@ -75545,7 +75388,8 @@ var viewportStyle = {
 var topItemListStyle = {
   width: "100%",
   position: positionStickyCssValue(),
-  top: 0
+  top: 0,
+  zIndex: 1
 };
 function contextPropIfNotDomElement(element2, context) {
   if (typeof element2 === "string") {
@@ -75553,28 +75397,27 @@ function contextPropIfNotDomElement(element2, context) {
   }
   return { context };
 }
-var Header = memo568(function VirtuosoHeader() {
-  const Header2 = useEmitterValue("HeaderComponent");
+function itemPropIfNotDomElement(element2, item) {
+  return { item: typeof element2 === "string" ? void 0 : item };
+}
+var Header = /* @__PURE__ */ React823.memo(function VirtuosoHeader() {
+  const Header3 = useEmitterValue("HeaderComponent");
   const headerHeight = usePublisher("headerHeight");
   const headerFooterTag = useEmitterValue("headerFooterTag");
   const ref2 = useSize((el2) => headerHeight(correctItemSize(el2, "height")));
   const context = useEmitterValue("context");
-  return Header2 ? createElement680(headerFooterTag, { ref: ref2 }, createElement680(Header2, contextPropIfNotDomElement(Header2, context))) : null;
+  return Header3 ? React823.createElement(headerFooterTag, { ref: ref2 }, React823.createElement(Header3, contextPropIfNotDomElement(Header3, context))) : null;
 });
-var Footer = memo568(function VirtuosoFooter() {
-  const Footer2 = useEmitterValue("FooterComponent");
+var Footer = /* @__PURE__ */ React823.memo(function VirtuosoFooter() {
+  const Footer3 = useEmitterValue("FooterComponent");
   const footerHeight = usePublisher("footerHeight");
   const headerFooterTag = useEmitterValue("headerFooterTag");
   const ref2 = useSize((el2) => footerHeight(correctItemSize(el2, "height")));
   const context = useEmitterValue("context");
-  return Footer2 ? createElement680(headerFooterTag, { ref: ref2 }, createElement680(Footer2, contextPropIfNotDomElement(Footer2, context))) : null;
+  return Footer3 ? React823.createElement(headerFooterTag, { ref: ref2 }, React823.createElement(Footer3, contextPropIfNotDomElement(Footer3, context))) : null;
 });
-function buildScroller({
-  usePublisher: usePublisher4,
-  useEmitter: useEmitter4,
-  useEmitterValue: useEmitterValue4
-}) {
-  const Scroller4 = memo568(function VirtuosoScroller({ style: style3, children: children2, ...props }) {
+function buildScroller({ usePublisher: usePublisher4, useEmitter: useEmitter4, useEmitterValue: useEmitterValue4 }) {
+  const Scroller4 = React823.memo(function VirtuosoScroller({ style: style3, children: children2, ...props }) {
     const scrollContainerStateCallback = usePublisher4("scrollContainerState");
     const ScrollerComponent = useEmitterValue4("ScrollerComponent");
     const smoothScrollTargetReached = usePublisher4("smoothScrollTargetReached");
@@ -75583,7 +75426,7 @@ function buildScroller({
     const { scrollerRef, scrollByCallback, scrollToCallback } = useScrollTop(scrollContainerStateCallback, smoothScrollTargetReached, ScrollerComponent, scrollerRefCallback);
     useEmitter4("scrollTo", scrollToCallback);
     useEmitter4("scrollBy", scrollByCallback);
-    return createElement680(ScrollerComponent, {
+    return React823.createElement(ScrollerComponent, {
       ref: scrollerRef,
       style: { ...scrollerStyle, ...style3 },
       "data-test-id": "virtuoso-scroller",
@@ -75595,12 +75438,8 @@ function buildScroller({
   });
   return Scroller4;
 }
-function buildWindowScroller({
-  usePublisher: usePublisher4,
-  useEmitter: useEmitter4,
-  useEmitterValue: useEmitterValue4
-}) {
-  const Scroller4 = memo568(function VirtuosoWindowScroller({ style: style3, children: children2, ...props }) {
+function buildWindowScroller({ usePublisher: usePublisher4, useEmitter: useEmitter4, useEmitterValue: useEmitterValue4 }) {
+  const Scroller4 = React823.memo(function VirtuosoWindowScroller({ style: style3, children: children2, ...props }) {
     const scrollContainerStateCallback = usePublisher4("windowScrollContainerState");
     const ScrollerComponent = useEmitterValue4("ScrollerComponent");
     const smoothScrollTargetReached = usePublisher4("smoothScrollTargetReached");
@@ -75617,12 +75456,8 @@ function buildWindowScroller({
     }, [scrollerRef, customScrollParent]);
     useEmitter4("windowScrollTo", scrollToCallback);
     useEmitter4("scrollBy", scrollByCallback);
-    return createElement680(ScrollerComponent, {
-      style: {
-        position: "relative",
-        ...style3,
-        ...totalListHeight !== 0 ? { height: totalListHeight + deviation } : {}
-      },
+    return React823.createElement(ScrollerComponent, {
+      style: { position: "relative", ...style3, ...totalListHeight !== 0 ? { height: totalListHeight + deviation } : {} },
       "data-virtuoso-scroller": true,
       ...props,
       ...contextPropIfNotDomElement(ScrollerComponent, context)
@@ -75631,19 +75466,35 @@ function buildWindowScroller({
   return Scroller4;
 }
 var Viewport = ({ children: children2 }) => {
+  const ctx = React823.useContext(VirtuosoMockContext);
   const viewportHeight = usePublisher("viewportHeight");
+  const fixedItemHeight = usePublisher("fixedItemHeight");
   const viewportRef = useSize(compose3(viewportHeight, (el2) => correctItemSize(el2, "height")));
-  return /* @__PURE__ */ createElement679("div", {
+  React823.useEffect(() => {
+    if (ctx) {
+      viewportHeight(ctx.viewportHeight);
+      fixedItemHeight(ctx.itemHeight);
+    }
+  }, [ctx, viewportHeight, fixedItemHeight]);
+  return /* @__PURE__ */ React823.createElement("div", {
     style: viewportStyle,
     ref: viewportRef,
     "data-viewport-type": "element"
   }, children2);
 };
 var WindowViewport = ({ children: children2 }) => {
+  const ctx = React823.useContext(VirtuosoMockContext);
   const windowViewportRect = usePublisher("windowViewportRect");
+  const fixedItemHeight = usePublisher("fixedItemHeight");
   const customScrollParent = useEmitterValue("customScrollParent");
   const viewportRef = useWindowViewportRectRef(windowViewportRect, customScrollParent);
-  return /* @__PURE__ */ createElement679("div", {
+  React823.useEffect(() => {
+    if (ctx) {
+      fixedItemHeight(ctx.itemHeight);
+      windowViewportRect({ offsetTop: 0, visibleHeight: ctx.viewportHeight, visibleWidth: 100 });
+    }
+  }, [ctx, windowViewportRect, fixedItemHeight]);
+  return /* @__PURE__ */ React823.createElement("div", {
     ref: viewportRef,
     style: viewportStyle,
     "data-viewport-type": "window"
@@ -75654,41 +75505,43 @@ var TopItemListContainer = ({ children: children2 }) => {
   const headerHeight = useEmitterValue("headerHeight");
   const style3 = { ...topItemListStyle, marginTop: `${headerHeight}px` };
   const context = useEmitterValue("context");
-  return createElement680(TopItemList || "div", { style: style3, context }, children2);
+  return React823.createElement(TopItemList || "div", { style: style3, context }, children2);
 };
-var ListRoot = memo568(function VirtuosoRoot(props) {
+var ListRoot = /* @__PURE__ */ React823.memo(function VirtuosoRoot(props) {
   const useWindowScroll = useEmitterValue("useWindowScroll");
   const showTopList = useEmitterValue("topItemsIndexes").length > 0;
   const customScrollParent = useEmitterValue("customScrollParent");
   const TheScroller = customScrollParent || useWindowScroll ? WindowScroller : Scroller;
   const TheViewport = customScrollParent || useWindowScroll ? WindowViewport : Viewport;
-  return /* @__PURE__ */ createElement679(TheScroller, {
+  return /* @__PURE__ */ React823.createElement(TheScroller, {
     ...props
-  }, /* @__PURE__ */ createElement679(TheViewport, null, /* @__PURE__ */ createElement679(Header, null), /* @__PURE__ */ createElement679(Items, null), /* @__PURE__ */ createElement679(Footer, null)), showTopList && /* @__PURE__ */ createElement679(TopItemListContainer, null, /* @__PURE__ */ createElement679(Items, {
+  }, showTopList && /* @__PURE__ */ React823.createElement(TopItemListContainer, null, /* @__PURE__ */ React823.createElement(Items, {
     showTopList: true
-  })));
+  })), /* @__PURE__ */ React823.createElement(TheViewport, null, /* @__PURE__ */ React823.createElement(Header, null), /* @__PURE__ */ React823.createElement(Items, null), /* @__PURE__ */ React823.createElement(Footer, null)));
 });
 var {
   Component: List3,
   usePublisher,
   useEmitterValue,
   useEmitter
-} = systemToComponent(combinedSystem, {
+} = /* @__PURE__ */ systemToComponent(combinedSystem, {
   required: {},
   optional: {
+    restoreStateFrom: "restoreStateFrom",
     context: "context",
     followOutput: "followOutput",
-    firstItemIndex: "firstItemIndex",
     itemContent: "itemContent",
     groupContent: "groupContent",
     overscan: "overscan",
     increaseViewportBy: "increaseViewportBy",
     totalCount: "totalCount",
+    groupCounts: "groupCounts",
     topItemCount: "topItemCount",
+    firstItemIndex: "firstItemIndex",
     initialTopMostItemIndex: "initialTopMostItemIndex",
     components: "components",
-    groupCounts: "groupCounts",
     atBottomThreshold: "atBottomThreshold",
+    atTopThreshold: "atTopThreshold",
     computeItemKey: "computeItemKey",
     defaultItemHeight: "defaultItemHeight",
     fixedItemHeight: "fixedItemHeight",
@@ -75702,31 +75555,15 @@ var {
     useWindowScroll: "useWindowScroll",
     customScrollParent: "customScrollParent",
     scrollerRef: "scrollerRef",
-    logLevel: "logLevel",
-    react18ConcurrentRendering: "react18ConcurrentRendering",
-    item: "item",
-    group: "group",
-    topItems: "topItems",
-    itemHeight: "itemHeight",
-    scrollingStateChange: "scrollingStateChange",
-    maxHeightCacheSize: "maxHeightCacheSize",
-    footer: "footer",
-    header: "header",
-    ItemContainer: "ItemContainer",
-    ScrollContainer: "ScrollContainer",
-    ListContainer: "ListContainer",
-    GroupContainer: "GroupContainer",
-    emptyComponent: "emptyComponent",
-    HeaderContainer: "HeaderContainer",
-    FooterContainer: "FooterContainer",
-    scrollSeek: "scrollSeek"
+    logLevel: "logLevel"
   },
   methods: {
     scrollToIndex: "scrollToIndex",
     scrollIntoView: "scrollIntoView",
     scrollTo: "scrollTo",
     scrollBy: "scrollBy",
-    adjustForPrependedItems: "adjustForPrependedItems"
+    autoscrollToBottom: "autoscrollToBottom",
+    getState: "getState"
   },
   events: {
     isScrolling: "isScrolling",
@@ -75740,21 +75577,273 @@ var {
     groupIndices: "groupIndices"
   }
 }, ListRoot);
-var Scroller = buildScroller({ usePublisher, useEmitterValue, useEmitter });
-var WindowScroller = buildWindowScroller({
-  usePublisher,
-  useEmitterValue,
-  useEmitter
-});
+var Scroller = /* @__PURE__ */ buildScroller({ usePublisher, useEmitterValue, useEmitter });
+var WindowScroller = /* @__PURE__ */ buildWindowScroller({ usePublisher, useEmitterValue, useEmitter });
+var Virtuoso = List3;
+var GroupedVirtuoso = List3;
 
-// ../juno-core/src/components/Virtuoso/react-virtuoso/Grid.tsx
-var gridComponentPropsSystem = system(() => {
+// ../juno-core/src/components/Virtuoso/react-virtuoso/VirtuosoGrid.tsx
+import React824 from "react";
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/gridSystem.ts
+var INITIAL_GRID_STATE = {
+  items: [],
+  offsetBottom: 0,
+  offsetTop: 0,
+  top: 0,
+  bottom: 0,
+  itemHeight: 0,
+  itemWidth: 0
+};
+var PROBE_GRID_STATE = {
+  items: [{ index: 0 }],
+  offsetBottom: 0,
+  offsetTop: 0,
+  top: 0,
+  bottom: 0,
+  itemHeight: 0,
+  itemWidth: 0
+};
+var { round: round4, ceil, floor, min, max } = Math;
+function buildProbeGridState(items) {
+  return {
+    ...PROBE_GRID_STATE,
+    items
+  };
+}
+function buildItems(startIndex, endIndex, data) {
+  return Array.from({ length: endIndex - startIndex + 1 }).map((_32, i2) => {
+    const dataItem = data === null ? null : data[i2 + startIndex];
+    return { index: i2 + startIndex, data: dataItem };
+  });
+}
+function gapComparator(prev, next) {
+  return prev && prev.column === next.column && prev.row === next.row;
+}
+function dimensionComparator(prev, next) {
+  return prev && prev.width === next.width && prev.height === next.height;
+}
+var gridSystem = /* @__PURE__ */ system(([
+  { overscan, visibleRange, listBoundary },
+  { scrollTop, viewportHeight, scrollBy, scrollTo, smoothScrollTargetReached, scrollContainerState, footerHeight, headerHeight },
+  stateFlags,
+  scrollSeek,
+  { propsReady, didMount },
+  { windowViewportRect, useWindowScroll, customScrollParent, windowScrollContainerState, windowScrollTo },
+  log2
+]) => {
+  const totalCount = statefulStream(0);
+  const initialItemCount = statefulStream(0);
+  const gridState = statefulStream(INITIAL_GRID_STATE);
+  const viewportDimensions = statefulStream({ height: 0, width: 0 });
+  const itemDimensions = statefulStream({ height: 0, width: 0 });
+  const scrollToIndex = stream();
+  const scrollHeight = stream();
+  const deviation = statefulStream(0);
+  const data = statefulStream(null);
+  const gap = statefulStream({ row: 0, column: 0 });
+  const stateChanged = stream();
+  const restoreStateFrom = stream();
+  const stateRestoreInProgress = statefulStream(false);
+  const initialTopMostItemIndex = statefulStream(0);
+  const scrolledToInitialItem = statefulStream(true);
+  const scrollScheduled = statefulStream(false);
+  subscribe(pipe(didMount, withLatestFrom(initialTopMostItemIndex), filter(([_32, location]) => !!location)), () => {
+    publish(scrolledToInitialItem, false);
+    publish(initialItemCount, 0);
+  });
+  subscribe(pipe(combineLatest(didMount, scrolledToInitialItem, itemDimensions, viewportDimensions, initialTopMostItemIndex, scrollScheduled), filter(([didMount2, scrolledToInitialItem2, itemDimensions2, viewportDimensions2, , scrollScheduled2]) => {
+    return didMount2 && !scrolledToInitialItem2 && itemDimensions2.height !== 0 && viewportDimensions2.height !== 0 && !scrollScheduled2;
+  })), ([, , , , initialTopMostItemIndex2]) => {
+    publish(scrollScheduled, true);
+    skipFrames(1, () => {
+      publish(scrollToIndex, initialTopMostItemIndex2);
+    });
+    handleNext(pipe(scrollTop), () => {
+      publish(listBoundary, [0, 0]);
+      publish(scrolledToInitialItem, true);
+    });
+  });
+  connect(pipe(restoreStateFrom, filter((value) => value !== void 0 && value !== null && value.scrollTop > 0), mapTo(0)), initialItemCount);
+  subscribe(pipe(didMount, withLatestFrom(restoreStateFrom), filter(([, snapshot]) => snapshot !== void 0 && snapshot !== null)), ([, snapshot]) => {
+    if (!snapshot) {
+      return;
+    }
+    publish(viewportDimensions, snapshot.viewport), publish(itemDimensions, snapshot?.item);
+    publish(gap, snapshot.gap);
+    if (snapshot.scrollTop > 0) {
+      publish(stateRestoreInProgress, true);
+      handleNext(pipe(scrollTop, skip(1)), (_value) => {
+        publish(stateRestoreInProgress, false);
+      });
+      publish(scrollTo, { top: snapshot.scrollTop });
+    }
+  });
+  connect(pipe(viewportDimensions, map(({ height: height2 }) => height2)), viewportHeight);
+  connect(pipe(combineLatest(duc(viewportDimensions, dimensionComparator), duc(itemDimensions, dimensionComparator), duc(gap, (prev, next) => prev && prev.column === next.column && prev.row === next.row), duc(scrollTop)), map(([viewport, item, gap2, scrollTop2]) => ({
+    viewport,
+    item,
+    gap: gap2,
+    scrollTop: scrollTop2
+  }))), stateChanged);
+  connect(pipe(combineLatest(duc(totalCount), visibleRange, duc(gap, gapComparator), duc(itemDimensions, dimensionComparator), duc(viewportDimensions, dimensionComparator), duc(data), duc(initialItemCount), duc(stateRestoreInProgress), duc(scrolledToInitialItem), duc(initialTopMostItemIndex)), filter(([, , , , , , , stateRestoreInProgress2]) => {
+    return !stateRestoreInProgress2;
+  }), map(([
+    totalCount2,
+    [startOffset, endOffset],
+    gap2,
+    item,
+    viewport,
+    data2,
+    initialItemCount2,
+    ,
+    scrolledToInitialItem2,
+    initialTopMostItemIndex2
+  ]) => {
+    const { row: rowGap, column: columnGap } = gap2;
+    const { height: itemHeight, width: itemWidth } = item;
+    const { width: viewportWidth } = viewport;
+    if (initialItemCount2 === 0 && (totalCount2 === 0 || viewportWidth === 0)) {
+      return INITIAL_GRID_STATE;
+    }
+    if (itemWidth === 0) {
+      const startIndex2 = getInitialTopMostItemIndexNumber(initialTopMostItemIndex2, totalCount2);
+      const endIndex2 = startIndex2 === 0 ? Math.max(initialItemCount2 - 1, 0) : startIndex2;
+      return buildProbeGridState(buildItems(startIndex2, endIndex2, data2));
+    }
+    const perRow = itemsPerRow(viewportWidth, itemWidth, columnGap);
+    let startIndex;
+    let endIndex;
+    if (!scrolledToInitialItem2) {
+      startIndex = 0;
+      endIndex = -1;
+    } else if (startOffset === 0 && endOffset === 0 && initialItemCount2 > 0) {
+      startIndex = 0;
+      endIndex = initialItemCount2 - 1;
+    } else {
+      startIndex = perRow * floor((startOffset + rowGap) / (itemHeight + rowGap));
+      endIndex = perRow * ceil((endOffset + rowGap) / (itemHeight + rowGap)) - 1;
+      endIndex = min(totalCount2 - 1, max(endIndex, perRow - 1));
+      startIndex = min(endIndex, max(0, startIndex));
+    }
+    const items = buildItems(startIndex, endIndex, data2);
+    const { top: top2, bottom: bottom2 } = gridLayout(viewport, gap2, item, items);
+    const rowCount = ceil(totalCount2 / perRow);
+    const totalHeight = rowCount * itemHeight + (rowCount - 1) * rowGap;
+    const offsetBottom = totalHeight - bottom2;
+    return { items, offsetTop: top2, offsetBottom, top: top2, bottom: bottom2, itemHeight, itemWidth };
+  })), gridState);
+  connect(pipe(data, filter((data2) => data2 !== null), map((data2) => data2.length)), totalCount);
+  connect(pipe(combineLatest(viewportDimensions, itemDimensions, gridState, gap), filter(([viewportDimensions2, itemDimensions2, { items }]) => {
+    return items.length > 0 && itemDimensions2.height !== 0 && viewportDimensions2.height !== 0;
+  }), map(([viewportDimensions2, itemDimensions2, { items }, gap2]) => {
+    const { top: top2, bottom: bottom2 } = gridLayout(viewportDimensions2, gap2, itemDimensions2, items);
+    return [top2, bottom2];
+  }), distinctUntilChanged(tupleComparator)), listBoundary);
+  const hasScrolled = statefulStream(false);
+  connect(pipe(scrollTop, withLatestFrom(hasScrolled), map(([scrollTop2, hasScrolled2]) => {
+    return hasScrolled2 || scrollTop2 !== 0;
+  })), hasScrolled);
+  const endReached = streamFromEmitter(pipe(duc(gridState), filter(({ items }) => items.length > 0), withLatestFrom(totalCount, hasScrolled), filter(([{ items }, totalCount2, hasScrolled2]) => hasScrolled2 && items[items.length - 1].index === totalCount2 - 1), map(([, totalCount2]) => totalCount2 - 1), distinctUntilChanged()));
+  const startReached = streamFromEmitter(pipe(duc(gridState), filter(({ items }) => {
+    return items.length > 0 && items[0].index === 0;
+  }), mapTo(0), distinctUntilChanged()));
+  const rangeChanged = streamFromEmitter(pipe(duc(gridState), withLatestFrom(stateRestoreInProgress), filter(([{ items }, stateRestoreInProgress2]) => items.length > 0 && !stateRestoreInProgress2), map(([{ items }]) => {
+    return {
+      startIndex: items[0].index,
+      endIndex: items[items.length - 1].index
+    };
+  }), distinctUntilChanged(rangeComparator), throttleTime(0)));
+  connect(rangeChanged, scrollSeek.scrollSeekRangeChanged);
+  connect(pipe(scrollToIndex, withLatestFrom(viewportDimensions, itemDimensions, totalCount, gap), map(([location, viewportDimensions2, itemDimensions2, totalCount2, gap2]) => {
+    const normalLocation = normalizeIndexLocation(location);
+    const { align, behavior, offset: offset7 } = normalLocation;
+    let index4 = normalLocation.index;
+    if (index4 === "LAST") {
+      index4 = totalCount2 - 1;
+    }
+    index4 = max(0, index4, min(totalCount2 - 1, index4));
+    let top2 = itemTop(viewportDimensions2, gap2, itemDimensions2, index4);
+    if (align === "end") {
+      top2 = round4(top2 - viewportDimensions2.height + itemDimensions2.height);
+    } else if (align === "center") {
+      top2 = round4(top2 - viewportDimensions2.height / 2 + itemDimensions2.height / 2);
+    }
+    if (offset7) {
+      top2 += offset7;
+    }
+    return { top: top2, behavior };
+  })), scrollTo);
+  const totalListHeight = statefulStreamFromEmitter(pipe(gridState, map((gridState2) => {
+    return gridState2.offsetBottom + gridState2.bottom;
+  })), 0);
+  connect(pipe(windowViewportRect, map((viewportInfo) => ({ width: viewportInfo.visibleWidth, height: viewportInfo.visibleHeight }))), viewportDimensions);
+  return {
+    data,
+    totalCount,
+    viewportDimensions,
+    itemDimensions,
+    scrollTop,
+    scrollHeight,
+    overscan,
+    scrollBy,
+    scrollTo,
+    scrollToIndex,
+    smoothScrollTargetReached,
+    windowViewportRect,
+    windowScrollTo,
+    useWindowScroll,
+    customScrollParent,
+    windowScrollContainerState,
+    deviation,
+    scrollContainerState,
+    footerHeight,
+    headerHeight,
+    initialItemCount,
+    gap,
+    restoreStateFrom,
+    ...scrollSeek,
+    initialTopMostItemIndex,
+    gridState,
+    totalListHeight,
+    ...stateFlags,
+    startReached,
+    endReached,
+    rangeChanged,
+    stateChanged,
+    propsReady,
+    stateRestoreInProgress,
+    ...log2
+  };
+}, tup(sizeRangeSystem, domIOSystem, stateFlagsSystem, scrollSeekSystem, propsReadySystem, windowScrollerSystem, loggerSystem));
+function gridLayout(viewport, gap, item, items) {
+  const { height: itemHeight } = item;
+  if (itemHeight === void 0 || items.length === 0) {
+    return { top: 0, bottom: 0 };
+  }
+  const top2 = itemTop(viewport, gap, item, items[0].index);
+  const bottom2 = itemTop(viewport, gap, item, items[items.length - 1].index) + itemHeight;
+  return { top: top2, bottom: bottom2 };
+}
+function itemTop(viewport, gap, item, index4) {
+  const perRow = itemsPerRow(viewport.width, item.width, gap.column);
+  const rowCount = floor(index4 / perRow);
+  const top2 = rowCount * item.height + max(0, rowCount - 1) * gap.row;
+  return top2 > 0 ? top2 + gap.row : top2;
+}
+function itemsPerRow(viewportWidth, itemWidth, gap) {
+  return max(1, floor((viewportWidth + gap) / (floor(itemWidth) + gap)));
+}
+
+// ../juno-core/src/components/Virtuoso/react-virtuoso/VirtuosoGrid.tsx
+var gridComponentPropsSystem = /* @__PURE__ */ system(() => {
   const itemContent = statefulStream((index4) => `Item ${index4}`);
   const components = statefulStream({});
   const context = statefulStream(null);
   const itemClassName = statefulStream("virtuoso-grid-item");
   const listClassName = statefulStream("virtuoso-grid-list");
   const computeItemKey = statefulStream(identity);
+  const headerFooterTag = statefulStream("div");
   const scrollerRef = statefulStream(noop3);
   const distinctProp = (propName, defaultValue = null) => {
     return statefulStreamFromEmitter(pipe(components, map((components2) => components2[propName]), distinctUntilChanged()), defaultValue);
@@ -75766,42 +75855,20 @@ var gridComponentPropsSystem = system(() => {
     computeItemKey,
     itemClassName,
     listClassName,
+    headerFooterTag,
     scrollerRef,
+    FooterComponent: distinctProp("Footer"),
+    HeaderComponent: distinctProp("Header"),
     ListComponent: distinctProp("List", "div"),
     ItemComponent: distinctProp("Item", "div"),
     ScrollerComponent: distinctProp("Scroller", "div"),
     ScrollSeekPlaceholder: distinctProp("ScrollSeekPlaceholder", "div")
   };
 });
-var combinedSystem2 = system(([gridSystem2, gridComponentPropsSystem2]) => {
-  const deprecatedProps = {
-    item: addDeprecatedAlias(gridComponentPropsSystem2.itemContent, "Rename the %citem%c prop to %citemContent."),
-    ItemContainer: stream(),
-    ScrollContainer: stream(),
-    ListContainer: stream(),
-    emptyComponent: stream(),
-    scrollSeek: stream()
-  };
-  function deprecateComponentProp(stream2, componentName2, propName) {
-    connect(pipe(stream2, withLatestFrom(gridComponentPropsSystem2.components), map(([comp, components]) => {
-      console.warn(`react-virtuoso: ${propName} property is deprecated. Pass components.${componentName2} instead.`);
-      return { ...components, [componentName2]: comp };
-    })), gridComponentPropsSystem2.components);
-  }
-  subscribe(deprecatedProps.scrollSeek, ({ placeholder: placeholder2, ...config2 }) => {
-    console.warn(`react-virtuoso: scrollSeek property is deprecated. Pass scrollSeekConfiguration and specify the placeholder in components.ScrollSeekPlaceholder instead.`);
-    publish(gridComponentPropsSystem2.components, {
-      ...getValue3(gridComponentPropsSystem2.components),
-      ScrollSeekPlaceholder: placeholder2
-    });
-    publish(gridSystem2.scrollSeekConfiguration, config2);
-  });
-  deprecateComponentProp(deprecatedProps.ItemContainer, "Item", "ItemContainer");
-  deprecateComponentProp(deprecatedProps.ListContainer, "List", "ListContainer");
-  deprecateComponentProp(deprecatedProps.ScrollContainer, "Scroller", "ScrollContainer");
-  return { ...gridSystem2, ...gridComponentPropsSystem2, ...deprecatedProps };
+var combinedSystem2 = /* @__PURE__ */ system(([gridSystem2, gridComponentPropsSystem2]) => {
+  return { ...gridSystem2, ...gridComponentPropsSystem2 };
 }, tup(gridSystem, gridComponentPropsSystem));
-var GridItems = memo569(function GridItems2() {
+var GridItems = /* @__PURE__ */ React824.memo(function GridItems2() {
   const gridState = useEmitterValue2("gridState");
   const listClassName = useEmitterValue2("listClassName");
   const itemClassName = useEmitterValue2("itemClassName");
@@ -75814,90 +75881,127 @@ var GridItems = memo569(function GridItems2() {
   const ScrollSeekPlaceholder = useEmitterValue2("ScrollSeekPlaceholder");
   const context = useEmitterValue2("context");
   const itemDimensions = usePublisher2("itemDimensions");
+  const gridGap2 = usePublisher2("gap");
+  const log2 = useEmitterValue2("log");
+  const stateRestoreInProgress = useEmitterValue2("stateRestoreInProgress");
   const listRef = useSize((el2) => {
     const scrollHeight = el2.parentElement.parentElement.scrollHeight;
     scrollHeightCallback(scrollHeight);
     const firstItem = el2.firstChild;
     if (firstItem) {
-      itemDimensions(firstItem.getBoundingClientRect());
+      const { width: width2, height: height2 } = firstItem.getBoundingClientRect();
+      itemDimensions({ width: width2, height: height2 });
     }
+    gridGap2({
+      row: resolveGapValue2("row-gap", getComputedStyle(el2).rowGap, log2),
+      column: resolveGapValue2("column-gap", getComputedStyle(el2).columnGap, log2)
+    });
   });
-  return createElement682(ListComponent, {
+  if (stateRestoreInProgress) {
+    return null;
+  }
+  return React824.createElement(ListComponent, {
     ref: listRef,
     className: listClassName,
     ...contextPropIfNotDomElement(ListComponent, context),
-    style: {
-      paddingTop: gridState.offsetTop,
-      paddingBottom: gridState.offsetBottom
-    }
+    style: { paddingTop: gridState.offsetTop, paddingBottom: gridState.offsetBottom },
+    "data-test-id": "virtuoso-item-list"
   }, gridState.items.map((item) => {
-    const key = computeItemKey(item.index);
-    return isSeeking ? createElement682(ScrollSeekPlaceholder, {
+    const key = computeItemKey(item.index, item.data, context);
+    return isSeeking ? React824.createElement(ScrollSeekPlaceholder, {
       key,
       ...contextPropIfNotDomElement(ScrollSeekPlaceholder, context),
       index: item.index,
       height: gridState.itemHeight,
       width: gridState.itemWidth
-    }) : createElement682(ItemComponent, {
-      ...contextPropIfNotDomElement(ItemComponent, context),
-      className: itemClassName,
-      "data-index": item.index,
-      key
-    }, itemContent(item.index, context));
+    }) : React824.createElement(ItemComponent, { ...contextPropIfNotDomElement(ItemComponent, context), className: itemClassName, "data-index": item.index, key }, itemContent(item.index, item.data, context));
   }));
 });
+var Header2 = React824.memo(function VirtuosoHeader2() {
+  const Header3 = useEmitterValue2("HeaderComponent");
+  const headerHeight = usePublisher2("headerHeight");
+  const headerFooterTag = useEmitterValue2("headerFooterTag");
+  const ref2 = useSize((el2) => headerHeight(correctItemSize(el2, "height")));
+  const context = useEmitterValue2("context");
+  return Header3 ? React824.createElement(headerFooterTag, { ref: ref2 }, React824.createElement(Header3, contextPropIfNotDomElement(Header3, context))) : null;
+});
+var Footer2 = React824.memo(function VirtuosoGridFooter() {
+  const Footer3 = useEmitterValue2("FooterComponent");
+  const footerHeight = usePublisher2("footerHeight");
+  const headerFooterTag = useEmitterValue2("headerFooterTag");
+  const ref2 = useSize((el2) => footerHeight(correctItemSize(el2, "height")));
+  const context = useEmitterValue2("context");
+  return Footer3 ? React824.createElement(headerFooterTag, { ref: ref2 }, React824.createElement(Footer3, contextPropIfNotDomElement(Footer3, context))) : null;
+});
 var Viewport2 = ({ children: children2 }) => {
+  const ctx = React824.useContext(VirtuosoGridMockContext);
+  const itemDimensions = usePublisher2("itemDimensions");
   const viewportDimensions = usePublisher2("viewportDimensions");
   const viewportRef = useSize((el2) => {
     viewportDimensions(el2.getBoundingClientRect());
   });
-  return /* @__PURE__ */ createElement681("div", {
+  React824.useEffect(() => {
+    if (ctx) {
+      viewportDimensions({ height: ctx.viewportHeight, width: ctx.viewportWidth });
+      itemDimensions({ height: ctx.itemHeight, width: ctx.itemWidth });
+    }
+  }, [ctx, viewportDimensions, itemDimensions]);
+  return /* @__PURE__ */ React824.createElement("div", {
     style: viewportStyle,
     ref: viewportRef
   }, children2);
 };
 var WindowViewport2 = ({ children: children2 }) => {
+  const ctx = React824.useContext(VirtuosoGridMockContext);
   const windowViewportRect = usePublisher2("windowViewportRect");
+  const itemDimensions = usePublisher2("itemDimensions");
   const customScrollParent = useEmitterValue2("customScrollParent");
   const viewportRef = useWindowViewportRectRef(windowViewportRect, customScrollParent);
-  return /* @__PURE__ */ createElement681("div", {
+  React824.useEffect(() => {
+    if (ctx) {
+      itemDimensions({ height: ctx.itemHeight, width: ctx.itemWidth });
+      windowViewportRect({ offsetTop: 0, visibleHeight: ctx.viewportHeight, visibleWidth: ctx.viewportWidth });
+    }
+  }, [ctx, windowViewportRect, itemDimensions]);
+  return /* @__PURE__ */ React824.createElement("div", {
     ref: viewportRef,
     style: viewportStyle
   }, children2);
 };
-var GridRoot = memo569(function GridRoot2({ ...props }) {
+var GridRoot = /* @__PURE__ */ React824.memo(function GridRoot2({ ...props }) {
   const useWindowScroll = useEmitterValue2("useWindowScroll");
   const customScrollParent = useEmitterValue2("customScrollParent");
   const TheScroller = customScrollParent || useWindowScroll ? WindowScroller2 : Scroller2;
   const TheViewport = customScrollParent || useWindowScroll ? WindowViewport2 : Viewport2;
-  return /* @__PURE__ */ createElement681(TheScroller, {
+  return /* @__PURE__ */ React824.createElement(TheScroller, {
     ...props
-  }, /* @__PURE__ */ createElement681(TheViewport, null, /* @__PURE__ */ createElement681(GridItems, null)));
+  }, /* @__PURE__ */ React824.createElement(TheViewport, null, /* @__PURE__ */ React824.createElement(Header2, null), /* @__PURE__ */ React824.createElement(GridItems, null), /* @__PURE__ */ React824.createElement(Footer2, null)));
 });
 var {
   Component: Grid3,
   usePublisher: usePublisher2,
   useEmitterValue: useEmitterValue2,
   useEmitter: useEmitter2
-} = systemToComponent(combinedSystem2, {
+} = /* @__PURE__ */ systemToComponent(combinedSystem2, {
   optional: {
+    context: "context",
     totalCount: "totalCount",
     overscan: "overscan",
     itemContent: "itemContent",
     components: "components",
     computeItemKey: "computeItemKey",
+    data: "data",
     initialItemCount: "initialItemCount",
     scrollSeekConfiguration: "scrollSeekConfiguration",
+    headerFooterTag: "headerFooterTag",
     listClassName: "listClassName",
     itemClassName: "itemClassName",
     useWindowScroll: "useWindowScroll",
     customScrollParent: "customScrollParent",
     scrollerRef: "scrollerRef",
-    item: "item",
-    ItemContainer: "ItemContainer",
-    ScrollContainer: "ScrollContainer",
-    ListContainer: "ListContainer",
-    scrollSeek: "scrollSeek"
+    logLevel: "logLevel",
+    restoreStateFrom: "restoreStateFrom",
+    initialTopMostItemIndex: "initialTopMostItemIndex"
   },
   methods: {
     scrollTo: "scrollTo",
@@ -75910,27 +76014,30 @@ var {
     startReached: "startReached",
     rangeChanged: "rangeChanged",
     atBottomStateChange: "atBottomStateChange",
-    atTopStateChange: "atTopStateChange"
+    atTopStateChange: "atTopStateChange",
+    stateChanged: "stateChanged"
   }
 }, GridRoot);
-var Scroller2 = buildScroller({ usePublisher: usePublisher2, useEmitterValue: useEmitterValue2, useEmitter: useEmitter2 });
-var WindowScroller2 = buildWindowScroller({
-  usePublisher: usePublisher2,
-  useEmitterValue: useEmitterValue2,
-  useEmitter: useEmitter2
-});
+var Scroller2 = /* @__PURE__ */ buildScroller({ usePublisher: usePublisher2, useEmitterValue: useEmitterValue2, useEmitter: useEmitter2 });
+var WindowScroller2 = /* @__PURE__ */ buildWindowScroller({ usePublisher: usePublisher2, useEmitterValue: useEmitterValue2, useEmitter: useEmitter2 });
+function resolveGapValue2(property, value, log2) {
+  if (value !== "normal" && !value?.endsWith("px")) {
+    log2(`${property} was not resolved to pixel value correctly`, value, LogLevel.WARN);
+  }
+  if (value === "normal") {
+    return 0;
+  }
+  return parseInt(value ?? "0", 10);
+}
+var VirtuosoGrid = Grid3;
 
-// ../juno-core/src/components/Virtuoso/react-virtuoso/Table.tsx
-import {
-  createElement as createElement683,
-  memo as memo570,
-  useState as useState36
-} from "react";
-import { createElement as createElement684 } from "react";
-var tableComponentPropsSystem = system(() => {
-  const itemContent = statefulStream((index4) => /* @__PURE__ */ createElement683("td", null, "Item $", index4));
+// ../juno-core/src/components/Virtuoso/react-virtuoso/TableVirtuoso.tsx
+import React825 from "react";
+var tableComponentPropsSystem = /* @__PURE__ */ system(() => {
+  const itemContent = statefulStream((index4) => /* @__PURE__ */ React825.createElement("td", null, "Item $", index4));
   const context = statefulStream(null);
   const fixedHeaderContent = statefulStream(null);
+  const fixedFooterContent = statefulStream(null);
   const components = statefulStream({});
   const computeItemKey = statefulStream(identity);
   const scrollerRef = statefulStream(noop3);
@@ -75941,11 +76048,13 @@ var tableComponentPropsSystem = system(() => {
     context,
     itemContent,
     fixedHeaderContent,
+    fixedFooterContent,
     components,
     computeItemKey,
     scrollerRef,
     TableComponent: distinctProp("Table", "table"),
     TableHeadComponent: distinctProp("TableHead", "thead"),
+    TableFooterComponent: distinctProp("TableFoot", "tfoot"),
     TableBodyComponent: distinctProp("TableBody", "tbody"),
     TableRowComponent: distinctProp("TableRow", "tr"),
     ScrollerComponent: distinctProp("Scroller", "div"),
@@ -75954,24 +76063,18 @@ var tableComponentPropsSystem = system(() => {
     FillerRow: distinctProp("FillerRow")
   };
 });
-var combinedSystem3 = system(([listSystem2, propsSystem]) => {
+var combinedSystem3 = /* @__PURE__ */ system(([listSystem2, propsSystem]) => {
   return { ...listSystem2, ...propsSystem };
 }, tup(listSystem, tableComponentPropsSystem));
-var DefaultScrollSeekPlaceholder2 = ({ height: height2 }) => /* @__PURE__ */ createElement683("tr", null, /* @__PURE__ */ createElement683("td", {
+var DefaultScrollSeekPlaceholder2 = ({ height: height2 }) => /* @__PURE__ */ React825.createElement("tr", null, /* @__PURE__ */ React825.createElement("td", {
   style: { height: height2 }
 }));
-var DefaultFillerRow = ({ height: height2 }) => /* @__PURE__ */ createElement683("tr", null, /* @__PURE__ */ createElement683("td", {
+var DefaultFillerRow = ({ height: height2 }) => /* @__PURE__ */ React825.createElement("tr", null, /* @__PURE__ */ React825.createElement("td", {
   style: { height: height2, padding: 0, border: 0 }
 }));
-var Items2 = memo570(function VirtuosoItems2() {
+var ITEM_STYLE2 = { overflowAnchor: "none" };
+var Items2 = /* @__PURE__ */ React825.memo(function VirtuosoItems2() {
   const listState = useEmitterValue3("listState");
-  const [deviation, setDeviation] = useState36(0);
-  const react18ConcurrentRendering = useEmitterValue3("react18ConcurrentRendering");
-  useEmitter3("deviation", (value) => {
-    if (deviation !== value) {
-      conditionalFlushSync(react18ConcurrentRendering)(() => setDeviation(value));
-    }
-  });
   const sizeRanges = usePublisher3("sizeRanges");
   const useWindowScroll = useEmitterValue3("useWindowScroll");
   const customScrollParent = useEmitterValue3("customScrollParent");
@@ -75982,7 +76085,14 @@ var Items2 = memo570(function VirtuosoItems2() {
   const trackItemSizes = useEmitterValue3("trackItemSizes");
   const itemSize = useEmitterValue3("itemSize");
   const log2 = useEmitterValue3("log");
-  const ref2 = useChangedListContentsSizes(sizeRanges, itemSize, trackItemSizes, scrollContainerStateCallback, log2, customScrollParent);
+  const { callbackRef, ref: ref2 } = useChangedListContentsSizes(sizeRanges, itemSize, trackItemSizes, scrollContainerStateCallback, log2, void 0, customScrollParent);
+  const [deviation, setDeviation] = React825.useState(0);
+  useEmitter3("deviation", (value) => {
+    if (deviation !== value) {
+      ref2.current.style.marginTop = `${value}px`;
+      setDeviation(value);
+    }
+  });
   const EmptyPlaceholder = useEmitterValue3("EmptyPlaceholder");
   const ScrollSeekPlaceholder = useEmitterValue3("ScrollSeekPlaceholder") || DefaultScrollSeekPlaceholder2;
   const FillerRow = useEmitterValue3("FillerRow") || DefaultFillerRow;
@@ -75995,23 +76105,25 @@ var Items2 = memo570(function VirtuosoItems2() {
   const statefulTotalCount = useEmitterValue3("statefulTotalCount");
   const context = useEmitterValue3("context");
   if (statefulTotalCount === 0 && EmptyPlaceholder) {
-    return createElement684(EmptyPlaceholder, contextPropIfNotDomElement(EmptyPlaceholder, context));
+    return React825.createElement(EmptyPlaceholder, contextPropIfNotDomElement(EmptyPlaceholder, context));
   }
   const paddingTop = listState.offsetTop + paddingTopAddition + deviation;
   const paddingBottom = listState.offsetBottom;
-  const paddingTopEl = paddingTop > 0 ? /* @__PURE__ */ createElement683(FillerRow, {
+  const paddingTopEl = paddingTop > 0 ? /* @__PURE__ */ React825.createElement(FillerRow, {
     height: paddingTop,
-    key: "padding-top"
+    key: "padding-top",
+    context
   }) : null;
-  const paddingBottomEl = paddingBottom > 0 ? /* @__PURE__ */ createElement683(FillerRow, {
+  const paddingBottomEl = paddingBottom > 0 ? /* @__PURE__ */ React825.createElement(FillerRow, {
     height: paddingBottom,
-    key: "padding-bottom"
+    key: "padding-bottom",
+    context
   }) : null;
   const items = listState.items.map((item) => {
     const index4 = item.originalIndex;
     const key = computeItemKey(index4 + firstItemIndex, item.data, context);
     if (isSeeking) {
-      return createElement684(ScrollSeekPlaceholder, {
+      return React825.createElement(ScrollSeekPlaceholder, {
         ...contextPropIfNotDomElement(ScrollSeekPlaceholder, context),
         key,
         index: item.index,
@@ -76019,79 +76131,101 @@ var Items2 = memo570(function VirtuosoItems2() {
         type: item.type || "item"
       });
     }
-    return createElement684(TableRowComponent, {
+    return React825.createElement(TableRowComponent, {
       ...contextPropIfNotDomElement(TableRowComponent, context),
+      ...itemPropIfNotDomElement(TableRowComponent, item.data),
       key,
       "data-index": index4,
       "data-known-size": item.size,
       "data-item-index": item.index,
-      style: { overflowAnchor: "none" }
+      style: ITEM_STYLE2
     }, itemContent(item.index, item.data, context));
   });
-  return createElement684(TableBodyComponent, {
-    ref: ref2,
-    "data-test-id": "virtuoso-item-list",
-    ...contextPropIfNotDomElement(TableBodyComponent, context)
-  }, [paddingTopEl, ...items, paddingBottomEl]);
+  return React825.createElement(TableBodyComponent, { ref: callbackRef, "data-test-id": "virtuoso-item-list", ...contextPropIfNotDomElement(TableBodyComponent, context) }, [paddingTopEl, ...items, paddingBottomEl]);
 });
 var Viewport3 = ({ children: children2 }) => {
+  const ctx = React825.useContext(VirtuosoMockContext);
   const viewportHeight = usePublisher3("viewportHeight");
+  const fixedItemHeight = usePublisher3("fixedItemHeight");
   const viewportRef = useSize(compose3(viewportHeight, (el2) => correctItemSize(el2, "height")));
-  return /* @__PURE__ */ createElement683("div", {
+  React825.useEffect(() => {
+    if (ctx) {
+      viewportHeight(ctx.viewportHeight);
+      fixedItemHeight(ctx.itemHeight);
+    }
+  }, [ctx, viewportHeight, fixedItemHeight]);
+  return /* @__PURE__ */ React825.createElement("div", {
     style: viewportStyle,
     ref: viewportRef,
     "data-viewport-type": "element"
   }, children2);
 };
 var WindowViewport3 = ({ children: children2 }) => {
+  const ctx = React825.useContext(VirtuosoMockContext);
   const windowViewportRect = usePublisher3("windowViewportRect");
+  const fixedItemHeight = usePublisher3("fixedItemHeight");
   const customScrollParent = useEmitterValue3("customScrollParent");
   const viewportRef = useWindowViewportRectRef(windowViewportRect, customScrollParent);
-  return /* @__PURE__ */ createElement683("div", {
+  React825.useEffect(() => {
+    if (ctx) {
+      fixedItemHeight(ctx.itemHeight);
+      windowViewportRect({ offsetTop: 0, visibleHeight: ctx.viewportHeight, visibleWidth: 100 });
+    }
+  }, [ctx, windowViewportRect, fixedItemHeight]);
+  return /* @__PURE__ */ React825.createElement("div", {
     ref: viewportRef,
     style: viewportStyle,
     "data-viewport-type": "window"
   }, children2);
 };
-var TableRoot = memo570(function TableVirtuosoRoot(props) {
+var TableRoot = /* @__PURE__ */ React825.memo(function TableVirtuosoRoot(props) {
   const useWindowScroll = useEmitterValue3("useWindowScroll");
   const customScrollParent = useEmitterValue3("customScrollParent");
   const fixedHeaderHeight = usePublisher3("fixedHeaderHeight");
+  const fixedFooterHeight = usePublisher3("fixedFooterHeight");
   const fixedHeaderContent = useEmitterValue3("fixedHeaderContent");
+  const fixedFooterContent = useEmitterValue3("fixedFooterContent");
   const context = useEmitterValue3("context");
   const theadRef = useSize(compose3(fixedHeaderHeight, (el2) => correctItemSize(el2, "height")));
+  const tfootRef = useSize(compose3(fixedFooterHeight, (el2) => correctItemSize(el2, "height")));
   const TheScroller = customScrollParent || useWindowScroll ? WindowScroller3 : Scroller3;
   const TheViewport = customScrollParent || useWindowScroll ? WindowViewport3 : Viewport3;
   const TheTable = useEmitterValue3("TableComponent");
   const TheTHead = useEmitterValue3("TableHeadComponent");
-  const theHead = fixedHeaderContent ? createElement683(TheTHead, {
+  const TheTFoot = useEmitterValue3("TableFooterComponent");
+  const theHead = fixedHeaderContent ? React825.createElement(TheTHead, {
     key: "TableHead",
-    style: { zIndex: 1, position: "sticky", top: 0 },
+    style: { zIndex: 2, position: "sticky", top: 0 },
     ref: theadRef,
     ...contextPropIfNotDomElement(TheTHead, context)
   }, fixedHeaderContent()) : null;
-  return /* @__PURE__ */ createElement683(TheScroller, {
+  const theFoot = fixedFooterContent ? React825.createElement(TheTFoot, {
+    key: "TableFoot",
+    style: { zIndex: 1, position: "sticky", bottom: 0 },
+    ref: tfootRef,
+    ...contextPropIfNotDomElement(TheTFoot, context)
+  }, fixedFooterContent()) : null;
+  return /* @__PURE__ */ React825.createElement(TheScroller, {
     ...props
-  }, /* @__PURE__ */ createElement683(TheViewport, null, createElement683(TheTable, {
-    style: { borderSpacing: 0 },
-    ...contextPropIfNotDomElement(TheTable, context)
-  }, [theHead, /* @__PURE__ */ createElement683(Items2, {
+  }, /* @__PURE__ */ React825.createElement(TheViewport, null, React825.createElement(TheTable, { style: { borderSpacing: 0, overflowAnchor: "none" }, ...contextPropIfNotDomElement(TheTable, context) }, [theHead, /* @__PURE__ */ React825.createElement(Items2, {
     key: "TableBody"
-  })])));
+  }), theFoot])));
 });
 var {
   Component: Table3,
   usePublisher: usePublisher3,
   useEmitterValue: useEmitterValue3,
   useEmitter: useEmitter3
-} = systemToComponent(combinedSystem3, {
+} = /* @__PURE__ */ systemToComponent(combinedSystem3, {
   required: {},
   optional: {
+    restoreStateFrom: "restoreStateFrom",
     context: "context",
     followOutput: "followOutput",
     firstItemIndex: "firstItemIndex",
     itemContent: "itemContent",
     fixedHeaderContent: "fixedHeaderContent",
+    fixedFooterContent: "fixedFooterContent",
     overscan: "overscan",
     increaseViewportBy: "increaseViewportBy",
     totalCount: "totalCount",
@@ -76100,6 +76234,7 @@ var {
     components: "components",
     groupCounts: "groupCounts",
     atBottomThreshold: "atBottomThreshold",
+    atTopThreshold: "atTopThreshold",
     computeItemKey: "computeItemKey",
     defaultItemHeight: "defaultItemHeight",
     fixedItemHeight: "fixedItemHeight",
@@ -76112,14 +76247,14 @@ var {
     useWindowScroll: "useWindowScroll",
     customScrollParent: "customScrollParent",
     scrollerRef: "scrollerRef",
-    logLevel: "logLevel",
-    react18ConcurrentRendering: "react18ConcurrentRendering"
+    logLevel: "logLevel"
   },
   methods: {
     scrollToIndex: "scrollToIndex",
     scrollIntoView: "scrollIntoView",
     scrollTo: "scrollTo",
-    scrollBy: "scrollBy"
+    scrollBy: "scrollBy",
+    getState: "getState"
   },
   events: {
     isScrolling: "isScrolling",
@@ -76133,18 +76268,9 @@ var {
     groupIndices: "groupIndices"
   }
 }, TableRoot);
-var Scroller3 = buildScroller({ usePublisher: usePublisher3, useEmitterValue: useEmitterValue3, useEmitter: useEmitter3 });
-var WindowScroller3 = buildWindowScroller({
-  usePublisher: usePublisher3,
-  useEmitterValue: useEmitterValue3,
-  useEmitter: useEmitter3
-});
-
-// ../juno-core/src/components/Virtuoso/react-virtuoso/components.tsx
-var Virtuoso = List3;
-var GroupedVirtuoso = List3;
+var Scroller3 = /* @__PURE__ */ buildScroller({ usePublisher: usePublisher3, useEmitterValue: useEmitterValue3, useEmitter: useEmitter3 });
+var WindowScroller3 = /* @__PURE__ */ buildWindowScroller({ usePublisher: usePublisher3, useEmitterValue: useEmitterValue3, useEmitter: useEmitter3 });
 var TableVirtuoso = Table3;
-var VirtuosoGrid = Grid3;
 
 // ../juno-core/src/components/Virtuoso/utils/isOutOfRange.ts
 function isOutOfRange(focusedIndex, range2) {
@@ -76152,7 +76278,7 @@ function isOutOfRange(focusedIndex, range2) {
 }
 
 // ../juno-core/src/components/Virtuoso/utils/useDynamicHeight.tsx
-import { useRef as useRef83 } from "react";
+import { useRef as useRef80 } from "react";
 var useDynamicHeight = ({
   itemCount,
   maxContainerHeight,
@@ -76161,7 +76287,7 @@ var useDynamicHeight = ({
   const prevItemCount = usePrevious(() => itemCount);
   const fullHeight = maxContainerHeight === "100%";
   const maxContainerSize = fullHeight ? -1 : maxContainerHeight;
-  const containerHeighRef = useRef83(maxContainerSize);
+  const containerHeighRef = useRef80(maxContainerSize);
   if (!fullHeight) {
     if (prevItemCount === 0 && itemCount !== 0) {
       containerHeighRef.current = maxContainerSize;
@@ -76193,13 +76319,13 @@ var useDynamicHeight = ({
 };
 
 // ../juno-core/src/components/Virtuoso/utils/useHighlightScroll.tsx
-import { useRef as useRef84 } from "react";
+import { useRef as useRef81 } from "react";
 function useHighlightScroll({
   containerHeighRef,
   scrollToIndex
 }) {
-  const renderedItemsRef = useRef84([]);
-  const scrollerRef = useRef84();
+  const renderedItemsRef = useRef81([]);
+  const scrollerRef = useRef81();
   const scrollToHighlightedIndex = (prevHighlightedIndex, currHighlightedIndex, topHighlightIndex = 0) => {
     if (!scrollerRef.current) {
       if (currHighlightedIndex !== topHighlightIndex) {
@@ -76302,17 +76428,17 @@ var SuggestionListStyle = () => {
 };
 
 // ../juno-core/src/components/Downshift/SuggestionList/SuggestionList.tsx
-var SuggestionListContext = createContext22(null);
-var List4 = forwardRef735((props, ref2) => {
-  const listRef = useContext28(SuggestionListContext);
+var SuggestionListContext = createContext21(null);
+var List4 = forwardRef734((props, ref2) => {
+  const listRef = useContext27(SuggestionListContext);
   const forkRef = useForkRef2(ref2, listRef);
-  return /* @__PURE__ */ React820.createElement("div", {
+  return /* @__PURE__ */ React827.createElement("div", {
     ref: forkRef,
     "data-suggestion-list": true,
     ...props
   });
 });
-var SuggestionList = forwardRef735((inProps, ref2) => {
+var SuggestionList = forwardRef734((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcSuggestionList" });
   const {
     highlightedIndex,
@@ -76342,10 +76468,10 @@ var SuggestionList = forwardRef735((inProps, ref2) => {
     selectedIndex,
     ...rest
   } = props;
-  const vlRef = useRef85(null);
+  const vlRef = useRef82(null);
   const forkVlRef = useForkRef2(ref2, vlRef);
   const isTitleMode = groupVariant === "normal";
-  const listRef = useRef85(null);
+  const listRef = useRef82(null);
   const itemData = options;
   const itemCount = options.length;
   const classes = combineClasses(RcSuggestionListClasses, classesProp);
@@ -76396,13 +76522,13 @@ var SuggestionList = forwardRef735((inProps, ref2) => {
     scrollToIndex: scrollToIndexWithRetry
   });
   const virtuosoViewPort = scrollerRef.current?.firstElementChild;
-  useLayoutEffect24(() => {
+  useLayoutEffect22(() => {
     if (virtuosoViewPort) {
       virtuosoViewPort.style.position = position4;
     }
   }, [virtuosoViewPort, position4]);
   const prevHighlightedIndex = usePrevious(() => highlightedIndex, true);
-  useLayoutEffect24(() => {
+  useLayoutEffect22(() => {
     if ((!virtualize || vlRef.current) && !isKeepHighlightedIndex && changeHighlightedIndexReason && changeHighlightedIndexReason !== "mouse") {
       scrollToHighlightedIndex(prevHighlightedIndex, highlightedIndex, isTitleMode ? 1 : 0);
     }
@@ -76462,7 +76588,7 @@ var SuggestionList = forwardRef735((inProps, ref2) => {
       return renderOption(resultProps, state);
     }
     if (MenuItem3) {
-      return /* @__PURE__ */ React820.createElement(MenuItem3, {
+      return /* @__PURE__ */ React827.createElement(MenuItem3, {
         ...resultProps,
         itemId: option.id,
         "data-suggestion-item-id": option.id,
@@ -76470,7 +76596,7 @@ var SuggestionList = forwardRef735((inProps, ref2) => {
         isMember: option.isMember
       });
     }
-    return /* @__PURE__ */ React820.createElement(RcMenuItem, {
+    return /* @__PURE__ */ React827.createElement(RcMenuItem, {
       component: "div",
       selected,
       focused: highlighted,
@@ -76480,16 +76606,16 @@ var SuggestionList = forwardRef735((inProps, ref2) => {
         "label",
         "unSelectable"
       ])
-    }, getOptionLabel ? getOptionLabel(option) : option.label, /* @__PURE__ */ React820.createElement(RcBox, {
+    }, getOptionLabel ? getOptionLabel(option) : option.label, /* @__PURE__ */ React827.createElement(RcBox, {
       flex: "1 1 auto"
-    }), expandIconProps && /* @__PURE__ */ React820.createElement(RcIconButton, {
+    }), expandIconProps && /* @__PURE__ */ React827.createElement(RcIconButton, {
       ...expandIconProps,
       symbol: ArrowDown2_default
     }));
   };
   const PaddingComponent = useMemo63(() => {
     const paddingValue = padding !== void 0 && itemCount > 0 ? typeof padding === "number" ? padding : menuListBoundaryPadding : 0;
-    return () => /* @__PURE__ */ React820.createElement(StyledMenuListPadding, {
+    return () => /* @__PURE__ */ React827.createElement(StyledMenuListPadding, {
       height: paddingValue
     });
   }, [itemCount, padding]);
@@ -76501,9 +76627,9 @@ var SuggestionList = forwardRef735((inProps, ref2) => {
       ...componentsProp
     };
   }, [componentsProp, PaddingComponent]);
-  return /* @__PURE__ */ React820.createElement(SuggestionListContext.Provider, {
+  return /* @__PURE__ */ React827.createElement(SuggestionListContext.Provider, {
     value: listRef
-  }, virtualize ? /* @__PURE__ */ React820.createElement(Virtuoso, {
+  }, virtualize ? /* @__PURE__ */ React827.createElement(Virtuoso, {
     ref: forkVlRef,
     totalCount: itemCount,
     data: itemData,
@@ -76521,14 +76647,14 @@ var SuggestionList = forwardRef735((inProps, ref2) => {
       style: style3,
       isScrolling: handleScrolling
     }, rest)
-  }) : /* @__PURE__ */ React820.createElement(List4, {
+  }) : /* @__PURE__ */ React827.createElement(List4, {
     style: { maxHeight: style3.height, overflow: "auto" },
     ref: (scrollElm) => {
       scrollerRefFn(scrollElm);
     }
-  }, /* @__PURE__ */ React820.createElement(PaddingComponent, null), options.map((x2, i2) => {
+  }, /* @__PURE__ */ React827.createElement(PaddingComponent, null), options.map((x2, i2) => {
     return itemContent(i2, x2);
-  }), /* @__PURE__ */ React820.createElement(PaddingComponent, null)));
+  }), /* @__PURE__ */ React827.createElement(PaddingComponent, null)));
 });
 var RcSuggestionList = styled_components_default(SuggestionList)`
   ${SuggestionListStyle};
@@ -76537,7 +76663,7 @@ RcSuggestionList.displayName = "RcSuggestionList";
 
 // ../juno-core/src/components/Downshift/Downshift.tsx
 var DEFAULT_GROW_STYLE = { style: { transformOrigin: "0 0 0" } };
-var _RcDownshift = memo571(forwardRef736((inProps, ref2) => {
+var _RcDownshift = memo568(forwardRef735((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcDownshift" });
   if (true) {
     useDeprecatedCheck(RcDownshift, props, [
@@ -76747,11 +76873,11 @@ var _RcDownshift = memo571(forwardRef736((inProps, ref2) => {
     color: color2,
     ...rest
   } = props;
-  const [position4, setPosition] = useState37("bottom-start");
-  const innerInputRef = useRef86(null);
-  const textFieldRef = useRef86(null);
+  const [position4, setPosition] = useState34("bottom-start");
+  const innerInputRef = useRef83(null);
+  const textFieldRef = useRef83(null);
   const inputRef = useForkRef2(inputRefProp, innerInputRef);
-  const inputContainerRef = useRef86(null);
+  const inputContainerRef = useRef83(null);
   const isNew = !suggestionItems;
   const transitionDuration = transitionDurationProp === "auto" ? void 0 : transitionDurationProp;
   const anchorElRef = anchorElType === "input" ? inputContainerRef : textFieldRef;
@@ -76874,13 +77000,13 @@ var _RcDownshift = memo571(forwardRef736((inProps, ref2) => {
       const itemChipProps = getCustomizedTagProps(selectedItem, index4);
       if (InputItem) {
         const isError2 = emailError && emailError === selectedItem.label?.trim() || selectedItem.id && errorSelectedItems?.includes(selectedItem.id) || selectedItem.isError || selectedItem.error;
-        return /* @__PURE__ */ React821.createElement(InputItem, {
+        return /* @__PURE__ */ React828.createElement(InputItem, {
           ...selectedItem,
           ...itemChipProps,
           isError: isError2
         });
       }
-      return /* @__PURE__ */ React821.createElement(RcChip, {
+      return /* @__PURE__ */ React828.createElement(RcChip, {
         ...itemChipProps,
         deleteIconProps: {
           "aria-label": "remove"
@@ -76888,9 +77014,9 @@ var _RcDownshift = memo571(forwardRef736((inProps, ref2) => {
       });
     });
   })();
-  const endAdornment = (toggleButton || clearBtn) && /* @__PURE__ */ React821.createElement(EndAdornment, null, clearBtn && /* @__PURE__ */ React821.createElement(ClearIconButton, {
+  const endAdornment = (toggleButton || clearBtn) && /* @__PURE__ */ React828.createElement(EndAdornment, null, clearBtn && /* @__PURE__ */ React828.createElement(ClearIconButton, {
     ...getClearButtonProps(clearButtonProps)
-  }), toggleButton && /* @__PURE__ */ React821.createElement(ArrowDownButton, {
+  }), toggleButton && /* @__PURE__ */ React828.createElement(ArrowDownButton, {
     variant: "plain",
     "aria-hidden": true,
     color: isDownshiftFocused ? color2 || "interactive.f01" : error4 ? "danger.f02" : "neutral.f04",
@@ -76915,7 +77041,7 @@ var _RcDownshift = memo571(forwardRef736((inProps, ref2) => {
       }, restInputPropsProp)
     };
   })();
-  useImperativeHandle15(action3, () => ({
+  useImperativeHandle14(action3, () => ({
     getActiveIndex: () => activeIndex,
     setActiveIndex,
     getFilterResultItems: () => optionItems,
@@ -76930,11 +77056,11 @@ var _RcDownshift = memo571(forwardRef736((inProps, ref2) => {
   }));
   const hasTags = selectedItems.length > 0;
   const isRenderNoOptions = !!noOptionItem;
-  const popperRef = useRef86(null);
+  const popperRef = useRef83(null);
   const handleUpdatePopper = useEventCallback2(() => {
     popperRef.current?.update();
   });
-  const menuChildren = /* @__PURE__ */ React821.createElement(React821.Fragment, null, isOpen && /* @__PURE__ */ React821.createElement(RcSuggestionList, {
+  const menuChildren = /* @__PURE__ */ React828.createElement(React828.Fragment, null, isOpen && /* @__PURE__ */ React828.createElement(RcSuggestionList, {
     selectedIndex: isAutocomplete ? autoCompleteSelectedIndex : void 0,
     highlightedIndex,
     optionsGroupList,
@@ -76958,7 +77084,7 @@ var _RcDownshift = memo571(forwardRef736((inProps, ref2) => {
     ...SuggestionListProps
   }), isRenderNoOptions && renderNoOptions?.(getNoOptionsProps, noOptionItem));
   const prevMenuChildren = usePrevious(() => menuChildren);
-  return /* @__PURE__ */ React821.createElement(React821.Fragment, null, /* @__PURE__ */ React821.createElement(StyledTextField, {
+  return /* @__PURE__ */ React828.createElement(React828.Fragment, null, /* @__PURE__ */ React828.createElement(StyledTextField, {
     renderInput,
     hasTags,
     ref: toTextFieldRef,
@@ -76987,9 +77113,9 @@ var _RcDownshift = memo571(forwardRef736((inProps, ref2) => {
     }, rest),
     value: inputValue,
     clearBtn: false
-  }), !helperText && screenReaderText && /* @__PURE__ */ React821.createElement(RcVisuallyHidden, {
+  }), !helperText && screenReaderText && /* @__PURE__ */ React828.createElement(RcVisuallyHidden, {
     id: describedbyId
-  }, screenReaderText), /* @__PURE__ */ React821.createElement(StyledPopper, {
+  }, screenReaderText), /* @__PURE__ */ React828.createElement(StyledPopper, {
     ref: popperElementRef,
     open,
     position: position4,
@@ -77024,7 +77150,7 @@ var _RcDownshift = memo571(forwardRef736((inProps, ref2) => {
       onExitProp();
       TransitionPropsProp.onExited?.(node4);
     };
-    return /* @__PURE__ */ React821.createElement(TransitionComponent, {
+    return /* @__PURE__ */ React828.createElement(TransitionComponent, {
       in: inProp,
       onEnter,
       onExited,
@@ -77032,7 +77158,7 @@ var _RcDownshift = memo571(forwardRef736((inProps, ref2) => {
       timeout: transitionDuration,
       ...virtualize ? {} : DEFAULT_GROW_STYLE,
       ...TransitionPropsProp
-    }, /* @__PURE__ */ React821.createElement("div", null, inProp ? menuChildren : prevMenuChildren));
+    }, /* @__PURE__ */ React828.createElement("div", null, inProp ? menuChildren : prevMenuChildren));
   } : menuChildren));
 }));
 var RcDownshift = styled_components_default(_RcDownshift)`
@@ -77043,10 +77169,10 @@ RcDownshift.displayName = "RcDownshift";
 var ExportType2 = RcDownshift;
 
 // ../juno-core/src/components/Drawer/Drawer.tsx
-import React823, { forwardRef as forwardRef738, useMemo as useMemo66 } from "react";
+import React830, { forwardRef as forwardRef737, useMemo as useMemo66 } from "react";
 
 // ../juno-core/src/components/Paper/Paper.tsx
-import React822, { forwardRef as forwardRef737, useMemo as useMemo65 } from "react";
+import React829, { forwardRef as forwardRef736, useMemo as useMemo65 } from "react";
 
 // ../juno-core/src/components/Paper/styles/PaperStyle.tsx
 var PaperStyle = () => {
@@ -77057,11 +77183,11 @@ var PaperStyle = () => {
 var RcPaperClasses = RcClasses([], "RcPaper");
 
 // ../juno-core/src/components/Paper/Paper.tsx
-var _RcPaper = forwardRef737((inProps, ref2) => {
+var _RcPaper = forwardRef736((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcPaper" });
   const { classes: classesProp, children: children2, ...rest } = props;
   const classes = useMemo65(() => combineClasses(RcPaperClasses, classesProp), [classesProp]);
-  return /* @__PURE__ */ React822.createElement(Paper_default, {
+  return /* @__PURE__ */ React829.createElement(Paper_default, {
     ...rest,
     ref: ref2,
     classes
@@ -77119,7 +77245,7 @@ var DrawerStyle = (props) => {
 };
 
 // ../juno-core/src/components/Drawer/Drawer.tsx
-var _RcDrawer = forwardRef738((inProps, ref2) => {
+var _RcDrawer = forwardRef737((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcDrawer" });
   const {
     inlinePaper,
@@ -77148,7 +77274,7 @@ var _RcDrawer = forwardRef738((inProps, ref2) => {
     onExited,
     ...managerWithID ? { appear: true } : {}
   };
-  return /* @__PURE__ */ React823.createElement(HasPortalParentProvider, null, /* @__PURE__ */ React823.createElement(Drawer_default, {
+  return /* @__PURE__ */ React830.createElement(HasPortalParentProvider, null, /* @__PURE__ */ React830.createElement(Drawer_default, {
     BackdropComponent: RcBackdrop,
     ...rest,
     ref: ref2,
@@ -77168,7 +77294,7 @@ RcDrawer.defaultProps = {
 RcDrawer.displayName = "RcDrawer";
 
 // ../juno-core/src/components/Forms/Form/Form/Form.tsx
-import React824, { useCallback as useCallback32, useState as useState38 } from "react";
+import React831, { useCallback as useCallback29, useState as useState35 } from "react";
 var RcForm = (inProps) => {
   const props = useThemeProps({ props: inProps, name: "RcForm" });
   const {
@@ -77179,8 +77305,8 @@ var RcForm = (inProps) => {
     onSubmit,
     ...rest
   } = props;
-  const [fieldManager] = useState38(() => /* @__PURE__ */ new Map());
-  const handleSubmit = useCallback32((event) => {
+  const [fieldManager] = useState35(() => /* @__PURE__ */ new Map());
+  const handleSubmit = useCallback29((event) => {
     event.preventDefault();
     if (isSubmitting)
       return;
@@ -77192,9 +77318,9 @@ var RcForm = (inProps) => {
     }
     onSubmit && onSubmit(event);
   }, [isSubmitting, onBeforeSubmit, fieldManager, onSubmit, onValidateFailed]);
-  return /* @__PURE__ */ React824.createElement(RcFormContext.Provider, {
+  return /* @__PURE__ */ React831.createElement(RcFormContext.Provider, {
     value: fieldManager
-  }, /* @__PURE__ */ React824.createElement("form", {
+  }, /* @__PURE__ */ React831.createElement("form", {
     onSubmit: handleSubmit,
     ...rest
   }, children2));
@@ -77205,10 +77331,10 @@ var RcFormControl = styled_components_default(FormControl_default)``;
 RcFormControl.displayName = "RcFormControl";
 
 // ../juno-core/src/components/Forms/FormGroup/FormGroup.tsx
-import React825, { forwardRef as forwardRef739 } from "react";
-var _RcFormGroup = forwardRef739((inProps, ref2) => {
+import React832, { forwardRef as forwardRef738 } from "react";
+var _RcFormGroup = forwardRef738((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcFormGroup" });
-  return /* @__PURE__ */ React825.createElement(FormGroup_default, {
+  return /* @__PURE__ */ React832.createElement(FormGroup_default, {
     ref: ref2,
     ...props
   });
@@ -77217,12 +77343,12 @@ var RcFormGroup = styled_components_default(_RcFormGroup)``;
 RcFormGroup.displayName = "RcFormGroup";
 
 // ../juno-core/src/components/Forms/FormHelperText/FormHelperText.tsx
-import React827, { forwardRef as forwardRef741 } from "react";
+import React834, { forwardRef as forwardRef740 } from "react";
 
 // ../juno-core/src/components/Forms/FormHelperText/styles/StyledFormHelperText.tsx
-import React826, { forwardRef as forwardRef740 } from "react";
-var _StyledFormHelperText = forwardRef740(({ ...rest }, ref2) => {
-  return /* @__PURE__ */ React826.createElement(FormHelperText_default, {
+import React833, { forwardRef as forwardRef739 } from "react";
+var _StyledFormHelperText = forwardRef739(({ ...rest }, ref2) => {
+  return /* @__PURE__ */ React833.createElement(FormHelperText_default, {
     ...rest,
     ref: ref2
   });
@@ -77233,10 +77359,10 @@ var StyledFormHelperText = styled_components_default(_StyledFormHelperText)``;
 var RcFormHelperTextClasses = RcClasses([], "RcFormHelperText");
 
 // ../juno-core/src/components/Forms/FormHelperText/FormHelperText.tsx
-var _RcFormHelperText = forwardRef741((inProps, ref2) => {
+var _RcFormHelperText = forwardRef740((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcFormHelperText" });
   const { classes, children: children2 } = props;
-  return /* @__PURE__ */ React827.createElement(StyledFormHelperText, {
+  return /* @__PURE__ */ React834.createElement(StyledFormHelperText, {
     ...props,
     ref: ref2,
     classes: combineClasses(RcFormHelperTextClasses, classes)
@@ -77247,10 +77373,10 @@ RcFormHelperText.defaultProps = {};
 RcFormHelperText.displayName = "RcFormHelperText";
 
 // ../juno-core/src/components/Forms/FormLabel.tsx
-import React828, { forwardRef as forwardRef742 } from "react";
-var _RcFormLabel = React828.memo(forwardRef742((inProps, ref2) => {
+import React835, { forwardRef as forwardRef741 } from "react";
+var _RcFormLabel = React835.memo(forwardRef741((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcFormLabel" });
-  return /* @__PURE__ */ React828.createElement(FormLabel_default, {
+  return /* @__PURE__ */ React835.createElement(FormLabel_default, {
     ref: ref2,
     ...props
   });
@@ -77262,12 +77388,12 @@ var RcFormLabel = styled_components_default(_RcFormLabel)`
 RcFormLabel.displayName = "RcFormLabel";
 
 // ../juno-core/src/components/Forms/InputLabel/InputLabel.tsx
-import React830, { forwardRef as forwardRef744 } from "react";
+import React837, { forwardRef as forwardRef743 } from "react";
 
 // ../juno-core/src/components/Forms/InputLabel/styles/StyledInputLabel.tsx
-import React829, { forwardRef as forwardRef743 } from "react";
-var _StyledInputLabel = forwardRef743(({ ...rest }, ref2) => {
-  return /* @__PURE__ */ React829.createElement(InputLabel_default, {
+import React836, { forwardRef as forwardRef742 } from "react";
+var _StyledInputLabel = forwardRef742(({ ...rest }, ref2) => {
+  return /* @__PURE__ */ React836.createElement(InputLabel_default, {
     ...rest,
     ref: ref2
   });
@@ -77278,10 +77404,10 @@ var StyledInputLabel = styled_components_default(_StyledInputLabel)``;
 var RcInputLabelClasses = RcClasses([], "RcInputLabel");
 
 // ../juno-core/src/components/Forms/InputLabel/InputLabel.tsx
-var _RcInputLabel = forwardRef744((inProps, ref2) => {
+var _RcInputLabel = forwardRef743((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcInputLabel" });
   const { classes, children: children2 } = props;
-  return /* @__PURE__ */ React830.createElement(StyledInputLabel, {
+  return /* @__PURE__ */ React837.createElement(StyledInputLabel, {
     ...props,
     ref: ref2,
     classes: combineClasses(RcInputLabelClasses, classes)
@@ -77293,12 +77419,12 @@ RcInputLabel.displayName = "RcInputLabel";
 
 // ../juno-core/src/components/Forms/Picker/DatePicker/DatePicker.tsx
 var import_dayjs3 = __toModule(require_dayjs_min());
-import React842, {
-  forwardRef as forwardRef754,
-  useCallback as useCallback34,
-  useEffect as useEffect61,
+import React849, {
+  forwardRef as forwardRef753,
+  useCallback as useCallback31,
+  useEffect as useEffect57,
   useMemo as useMemo72,
-  useRef as useRef92
+  useRef as useRef89
 } from "react";
 
 // ../../node_modules/@date-io/dayjs/build/index.esm.js
@@ -77527,8 +77653,8 @@ import "react";
 
 // ../../node_modules/@material-ui/pickers/esm/useUtils-cfb96ac9.js
 var import_prop_types121 = __toModule(require_prop_types());
-import { createContext as createContext23, useMemo as useMemo67, createElement as createElement685, useContext as useContext29 } from "react";
-var MuiPickersContext = createContext23(null);
+import { createContext as createContext22, useMemo as useMemo67, createElement as createElement678, useContext as useContext28 } from "react";
+var MuiPickersContext = createContext22(null);
 var MuiPickersUtilsProvider = function MuiPickersUtilsProvider2(_ref6) {
   var Utils = _ref6.utils, children2 = _ref6.children, locale = _ref6.locale, libInstance = _ref6.libInstance;
   var utils = useMemo67(function() {
@@ -77537,7 +77663,7 @@ var MuiPickersUtilsProvider = function MuiPickersUtilsProvider2(_ref6) {
       instance: libInstance
     });
   }, [Utils, libInstance, locale]);
-  return createElement685(MuiPickersContext.Provider, {
+  return createElement678(MuiPickersContext.Provider, {
     value: utils,
     children: children2
   });
@@ -77553,14 +77679,14 @@ var checkUtils = function checkUtils2(utils) {
   }
 };
 function useUtils() {
-  var utils = useContext29(MuiPickersContext);
+  var utils = useContext28(MuiPickersContext);
   checkUtils(utils);
   return utils;
 }
 
 // ../../node_modules/@material-ui/pickers/esm/Wrapper-241966d7.js
 var import_prop_types122 = __toModule(require_prop_types());
-import { createElement as createElement686, useEffect as useEffect59, useLayoutEffect as useLayoutEffect25, useRef as useRef87, Fragment as Fragment10, createContext as createContext24 } from "react";
+import { createElement as createElement679, useEffect as useEffect55, useLayoutEffect as useLayoutEffect23, useRef as useRef84, Fragment as Fragment10, createContext as createContext23 } from "react";
 var DIALOG_WIDTH = 310;
 var DIALOG_WIDTH_WIDER = 325;
 var useStyles = makeStyles_default(function(theme) {
@@ -77578,29 +77704,29 @@ var useStyles = makeStyles_default(function(theme) {
 });
 var ModalDialog = function ModalDialog2(_ref6) {
   var children2 = _ref6.children, classes = _ref6.classes, onAccept = _ref6.onAccept, onDismiss = _ref6.onDismiss, onClear = _ref6.onClear, onSetToday = _ref6.onSetToday, okLabel = _ref6.okLabel, cancelLabel = _ref6.cancelLabel, clearLabel = _ref6.clearLabel, todayLabel = _ref6.todayLabel, clearable = _ref6.clearable, showTodayButton = _ref6.showTodayButton, showTabs = _ref6.showTabs, wider = _ref6.wider, other = _objectWithoutProperties(_ref6, ["children", "classes", "onAccept", "onDismiss", "onClear", "onSetToday", "okLabel", "cancelLabel", "clearLabel", "todayLabel", "clearable", "showTodayButton", "showTabs", "wider"]);
-  return createElement686(Dialog_default, _extends({
+  return createElement679(Dialog_default, _extends({
     role: "dialog",
     onClose: onDismiss,
     classes: {
       paper: clsx_m_default(classes.dialogRoot, wider && classes.dialogRootWider)
     }
-  }, other), createElement686(DialogContent_default, {
+  }, other), createElement679(DialogContent_default, {
     children: children2,
     className: classes.dialog
-  }), createElement686(DialogActions_default, {
+  }), createElement679(DialogActions_default, {
     classes: {
       root: clsx_m_default((clearable || showTodayButton) && classes.withAdditionalAction)
     }
-  }, clearable && createElement686(Button_default, {
+  }, clearable && createElement679(Button_default, {
     color: "primary",
     onClick: onClear
-  }, clearLabel), showTodayButton && createElement686(Button_default, {
+  }, clearLabel), showTodayButton && createElement679(Button_default, {
     color: "primary",
     onClick: onSetToday
-  }, todayLabel), cancelLabel && createElement686(Button_default, {
+  }, todayLabel), cancelLabel && createElement679(Button_default, {
     color: "primary",
     onClick: onDismiss
-  }, cancelLabel), okLabel && createElement686(Button_default, {
+  }, cancelLabel), okLabel && createElement679(Button_default, {
     color: "primary",
     onClick: onAccept
   }, okLabel)));
@@ -77628,7 +77754,7 @@ var styles155 = createStyles2({
 var ModalDialog$1 = withStyles_default2(styles155, {
   name: "MuiPickersModal"
 })(ModalDialog);
-var useIsomorphicEffect = typeof window === "undefined" ? useEffect59 : useLayoutEffect25;
+var useIsomorphicEffect = typeof window === "undefined" ? useEffect55 : useLayoutEffect23;
 function runKeyHandler(e2, keyHandlers) {
   var handler = keyHandlers[e2.key];
   if (handler) {
@@ -77637,7 +77763,7 @@ function runKeyHandler(e2, keyHandlers) {
   }
 }
 function useKeyDown(active, keyHandlers) {
-  var keyHandlersRef = useRef87(keyHandlers);
+  var keyHandlersRef = useRef84(keyHandlers);
   keyHandlersRef.current = keyHandlers;
   useIsomorphicEffect(function() {
     if (active) {
@@ -77656,7 +77782,7 @@ var ModalWrapper = function ModalWrapper2(_ref6) {
   useKeyDown(open, {
     Enter: onAccept
   });
-  return createElement686(Fragment10, null, createElement686(InputComponent, _extends({}, other, DateInputProps)), createElement686(ModalDialog$1, _extends({
+  return createElement679(Fragment10, null, createElement679(InputComponent, _extends({}, other, DateInputProps)), createElement679(ModalDialog$1, _extends({
     wider,
     showTabs,
     open,
@@ -77692,13 +77818,13 @@ ModalWrapper.defaultProps = {
 };
 var InlineWrapper = function InlineWrapper2(_ref6) {
   var open = _ref6.open, wider = _ref6.wider, children2 = _ref6.children, PopoverProps = _ref6.PopoverProps, onClear = _ref6.onClear, onDismiss = _ref6.onDismiss, onSetToday = _ref6.onSetToday, onAccept = _ref6.onAccept, showTabs = _ref6.showTabs, DateInputProps = _ref6.DateInputProps, InputComponent = _ref6.InputComponent, other = _objectWithoutProperties(_ref6, ["open", "wider", "children", "PopoverProps", "onClear", "onDismiss", "onSetToday", "onAccept", "showTabs", "DateInputProps", "InputComponent"]);
-  var ref2 = useRef87();
+  var ref2 = useRef84();
   useKeyDown(open, {
     Enter: onAccept
   });
-  return createElement686(Fragment10, null, createElement686(InputComponent, _extends({}, other, DateInputProps, {
+  return createElement679(Fragment10, null, createElement679(InputComponent, _extends({}, other, DateInputProps, {
     inputRef: ref2
-  })), createElement686(Popover_default, _extends({
+  })), createElement679(Popover_default, _extends({
     open,
     onClose: onDismiss,
     anchorEl: ref2.current,
@@ -77718,18 +77844,18 @@ true ? InlineWrapper.propTypes = {
   onClose: import_prop_types122.func,
   PopoverProps: import_prop_types122.object
 } : void 0;
-var VariantContext = createContext24(null);
+var VariantContext = createContext23(null);
 
 // ../../node_modules/rifm/dist/rifm.esm.js
 import { Component as Component5 } from "react";
 
 // ../../node_modules/@material-ui/pickers/esm/Calendar-11ae61f6.js
 var import_prop_types124 = __toModule(require_prop_types());
-import React__default, { useCallback as useCallback33, createElement as createElement688, cloneElement as cloneElement27, Fragment as Fragment11, Component as Component6, useEffect as useEffect60 } from "react";
+import React__default, { useCallback as useCallback30, createElement as createElement681, cloneElement as cloneElement27, Fragment as Fragment11, Component as Component6, useEffect as useEffect56 } from "react";
 
 // ../../node_modules/@material-ui/pickers/esm/Day.js
 var import_prop_types123 = __toModule(require_prop_types());
-import { createElement as createElement687 } from "react";
+import { createElement as createElement680 } from "react";
 var useStyles2 = makeStyles_default(function(theme) {
   return {
     day: {
@@ -77769,10 +77895,10 @@ var Day = function Day2(_ref6) {
   var children2 = _ref6.children, disabled3 = _ref6.disabled, hidden = _ref6.hidden, current = _ref6.current, selected = _ref6.selected, other = _objectWithoutProperties(_ref6, ["children", "disabled", "hidden", "current", "selected"]);
   var classes = useStyles2();
   var className = clsx_m_default(classes.day, hidden && classes.hidden, current && classes.current, selected && classes.daySelected, disabled3 && classes.dayDisabled);
-  return createElement687(IconButton_default, _extends({
+  return createElement680(IconButton_default, _extends({
     className,
     tabIndex: hidden || disabled3 ? -1 : 0
-  }, other), createElement687(Typography_default, {
+  }, other), createElement680(Typography_default, {
     variant: "body2",
     color: "inherit"
   }, children2));
@@ -77838,10 +77964,10 @@ var findClosestEnabledDate = function findClosestEnabledDate2(_ref6) {
 };
 var DayWrapper = function DayWrapper2(_ref6) {
   var children2 = _ref6.children, value = _ref6.value, disabled3 = _ref6.disabled, onSelect = _ref6.onSelect, dayInCurrentMonth = _ref6.dayInCurrentMonth, other = _objectWithoutProperties(_ref6, ["children", "value", "disabled", "onSelect", "dayInCurrentMonth"]);
-  var handleClick = useCallback33(function() {
+  var handleClick = useCallback30(function() {
     return onSelect(value);
   }, [onSelect, value]);
-  return createElement688("div", _extends({
+  return createElement681("div", _extends({
     role: "presentation",
     onClick: dayInCurrentMonth && !disabled3 ? handleClick : void 0,
     onKeyPress: dayInCurrentMonth && !disabled3 ? handleClick : void 0
@@ -77902,14 +78028,14 @@ var SlideTransition = function SlideTransition2(_ref6) {
     enter: classes["slideEnter-" + slideDirection],
     exitActive: classes["slideExitActiveLeft-" + slideDirection]
   };
-  return createElement688(TransitionGroup_default, {
+  return createElement681(TransitionGroup_default, {
     className: clsx_m_default(classes.transitionContainer, className),
     childFactory: function childFactory2(element2) {
       return cloneElement27(element2, {
         classNames: transitionClasses
       });
     }
-  }, createElement688(CSSTransition_default, {
+  }, createElement681(CSSTransition_default, {
     mountOnEnter: true,
     unmountOnExit: true,
     key: transKey + slideDirection,
@@ -77980,27 +78106,27 @@ var CalendarHeader = function CalendarHeader2(_ref6) {
   var selectPreviousMonth = function selectPreviousMonth2() {
     return onMonthChange(utils.getPreviousMonth(currentMonth), "right");
   };
-  return createElement688("div", null, createElement688("div", {
+  return createElement681("div", null, createElement681("div", {
     className: classes.switchHeader
-  }, createElement688(IconButton_default, _extends({}, leftArrowButtonProps, {
+  }, createElement681(IconButton_default, _extends({}, leftArrowButtonProps, {
     disabled: disablePrevMonth,
     onClick: selectPreviousMonth,
     className: classes.iconButton
-  }), rtl ? rightArrowIcon : leftArrowIcon), createElement688(SlideTransition, {
+  }), rtl ? rightArrowIcon : leftArrowIcon), createElement681(SlideTransition, {
     slideDirection,
     transKey: currentMonth.toString(),
     className: classes.transitionContainer
-  }, createElement688(Typography_default, {
+  }, createElement681(Typography_default, {
     align: "center",
     variant: "body1"
-  }, utils.getCalendarHeaderText(currentMonth))), createElement688(IconButton_default, _extends({}, rightArrowButtonProps, {
+  }, utils.getCalendarHeaderText(currentMonth))), createElement681(IconButton_default, _extends({}, rightArrowButtonProps, {
     disabled: disableNextMonth,
     onClick: selectNextMonth,
     className: classes.iconButton
-  }), rtl ? leftArrowIcon : rightArrowIcon)), createElement688("div", {
+  }), rtl ? leftArrowIcon : rightArrowIcon)), createElement681("div", {
     className: classes.daysHeader
   }, utils.getWeekdays().map(function(day, index4) {
-    return createElement688(Typography_default, {
+    return createElement681(Typography_default, {
       key: index4,
       variant: "caption",
       className: classes.dayLabel
@@ -78015,8 +78141,8 @@ true ? CalendarHeader.propTypes = {
   disableNextMonth: import_prop_types124.bool
 } : void 0;
 CalendarHeader.defaultProps = {
-  leftArrowIcon: createElement688(ArrowLeftIcon, null),
-  rightArrowIcon: createElement688(ArrowRightIcon, null),
+  leftArrowIcon: createElement681(ArrowLeftIcon, null),
+  rightArrowIcon: createElement681(ArrowRightIcon, null),
   disablePrevMonth: false,
   disableNextMonth: false
 };
@@ -78024,7 +78150,7 @@ var withUtils = function withUtils2() {
   return function(Component7) {
     var WithUtils = function WithUtils2(props) {
       var utils = useUtils();
-      return createElement688(Component7, _extends({
+      return createElement681(Component7, _extends({
         utils
       }, props));
     };
@@ -78034,7 +78160,7 @@ var withUtils = function withUtils2() {
 };
 var KeyDownListener = function KeyDownListener2(_ref6) {
   var onKeyDown = _ref6.onKeyDown;
-  useEffect60(function() {
+  useEffect56(function() {
     window.addEventListener("keydown", onKeyDown);
     return function() {
       window.removeEventListener("keydown", onKeyDown);
@@ -78141,7 +78267,7 @@ var Calendar = /* @__PURE__ */ function(_React$Component) {
       var _this$props6 = _this.props, utils = _this$props6.utils, classes = _this$props6.classes;
       var weeks = utils.getWeekArray(_this.state.currentMonth);
       return weeks.map(function(week) {
-        return createElement688("div", {
+        return createElement681("div", {
           key: "week-".concat(week[0].toString()),
           className: classes.week
         }, _this.renderDays(week));
@@ -78155,7 +78281,7 @@ var Calendar = /* @__PURE__ */ function(_React$Component) {
       return week.map(function(day) {
         var disabled3 = _this.shouldDisableDate(day);
         var isDayInCurrentMonth = utils.getMonth(day) === currentMonthNumber;
-        var dayComponent = createElement688(Day_default, {
+        var dayComponent = createElement681(Day_default, {
           disabled: disabled3,
           current: utils.isSameDay(day, now2),
           hidden: !isDayInCurrentMonth,
@@ -78164,7 +78290,7 @@ var Calendar = /* @__PURE__ */ function(_React$Component) {
         if (renderDay) {
           dayComponent = renderDay(day, selectedDate, isDayInCurrentMonth, dayComponent);
         }
-        return createElement688(DayWrapper, {
+        return createElement681(DayWrapper, {
           value: day,
           key: day.toString(),
           disabled: disabled3,
@@ -78197,10 +78323,10 @@ var Calendar = /* @__PURE__ */ function(_React$Component) {
     value: function render() {
       var _this$state = this.state, currentMonth = _this$state.currentMonth, slideDirection = _this$state.slideDirection;
       var _this$props9 = this.props, classes = _this$props9.classes, allowKeyboardControl = _this$props9.allowKeyboardControl, leftArrowButtonProps = _this$props9.leftArrowButtonProps, leftArrowIcon = _this$props9.leftArrowIcon, rightArrowButtonProps = _this$props9.rightArrowButtonProps, rightArrowIcon = _this$props9.rightArrowIcon, loadingIndicator = _this$props9.loadingIndicator;
-      var loadingElement = loadingIndicator ? loadingIndicator : createElement688(CircularProgress_default, null);
-      return createElement688(Fragment11, null, allowKeyboardControl && this.context !== "static" && createElement688(KeyDownListener, {
+      var loadingElement = loadingIndicator ? loadingIndicator : createElement681(CircularProgress_default, null);
+      return createElement681(Fragment11, null, allowKeyboardControl && this.context !== "static" && createElement681(KeyDownListener, {
         onKeyDown: this.handleKeyDown
-      }), createElement688(CalendarHeader, {
+      }), createElement681(CalendarHeader, {
         currentMonth,
         slideDirection,
         onMonthChange: this.handleChangeMonth,
@@ -78210,13 +78336,13 @@ var Calendar = /* @__PURE__ */ function(_React$Component) {
         rightArrowButtonProps,
         disablePrevMonth: this.shouldDisablePrevMonth(),
         disableNextMonth: this.shouldDisableNextMonth()
-      }), createElement688(SlideTransition, {
+      }), createElement681(SlideTransition, {
         slideDirection,
         transKey: currentMonth.toString(),
         className: classes.transitionContainer
-      }, createElement688(Fragment11, null, this.state.loadingQueue > 0 && createElement688("div", {
+      }, createElement681(Fragment11, null, this.state.loadingQueue > 0 && createElement681("div", {
         className: classes.progressContainer
-      }, loadingElement) || createElement688("div", null, this.renderWeeks()))));
+      }, loadingElement) || createElement681("div", null, this.renderWeeks()))));
     }
   }], [{
     key: "getDerivedStateFromProps",
@@ -78279,19 +78405,19 @@ var import_date_utils = __toModule(require_date_utils());
 
 // ../juno-core/src/components/Forms/Picker/utils/PickerTextField/PickerTextField.tsx
 var import_uniqueId3 = __toModule(require_uniqueId());
-import React835, {
-  forwardRef as forwardRef748,
-  useImperativeHandle as useImperativeHandle16,
+import React842, {
+  forwardRef as forwardRef747,
+  useImperativeHandle as useImperativeHandle15,
   useMemo as useMemo69,
-  useRef as useRef88,
-  useState as useState39
+  useRef as useRef85,
+  useState as useState36
 } from "react";
 
 // ../juno-core/src/components/Forms/Picker/styles/PickerBaseIconButton.tsx
-import React831, { forwardRef as forwardRef745 } from "react";
-var PickerBaseIconButton = forwardRef745((props, ref2) => {
+import React838, { forwardRef as forwardRef744 } from "react";
+var PickerBaseIconButton = forwardRef744((props, ref2) => {
   const { children: children2, selected, hidden, ...rest } = props;
-  return /* @__PURE__ */ React831.createElement(RcIconButton, {
+  return /* @__PURE__ */ React838.createElement(RcIconButton, {
     elevation: 0,
     activeElevation: 0,
     ref: ref2,
@@ -78306,10 +78432,10 @@ var PickerBaseIconButton = forwardRef745((props, ref2) => {
 PickerBaseIconButton.displayName = "PickerBaseIconButton";
 
 // ../juno-core/src/components/Forms/Picker/styles/StyledPickerTextField.tsx
-import React832, { forwardRef as forwardRef746 } from "react";
-var _RcTextField2 = forwardRef746((props, ref2) => {
+import React839, { forwardRef as forwardRef745 } from "react";
+var _RcTextField2 = forwardRef745((props, ref2) => {
   const { ...rest } = props;
-  return /* @__PURE__ */ React832.createElement(RcTextField, {
+  return /* @__PURE__ */ React839.createElement(RcTextField, {
     ref: ref2,
     ...rest,
     clearBtn: false
@@ -78356,7 +78482,7 @@ var StyledPickerTextField = styled_components_default(_RcTextField2)`
 `;
 
 // ../juno-core/src/components/Popover/Popover.tsx
-import React833, { forwardRef as forwardRef747, useMemo as useMemo68 } from "react";
+import React840, { forwardRef as forwardRef746, useMemo as useMemo68 } from "react";
 
 // ../juno-core/src/components/Popover/styles/PopoverStyle.tsx
 var PopoverStyle = () => {
@@ -78367,12 +78493,12 @@ var PopoverStyle = () => {
 var RcPopoverClasses = RcClasses([], "RcPopover");
 
 // ../juno-core/src/components/Popover/Popover.tsx
-var _RcPopover = forwardRef747((inProps, ref2) => {
+var _RcPopover = forwardRef746((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcPopover" });
   const { classes: classesProp, children: children2, ...rest } = props;
   const classes = useMemo68(() => combineClasses(RcPopoverClasses, classesProp), [classesProp]);
   const { externalWindow } = useRcPortalWindowContext();
-  return /* @__PURE__ */ React833.createElement(Popover_default, {
+  return /* @__PURE__ */ React840.createElement(Popover_default, {
     container: externalWindow?.document.body,
     ...rest,
     ref: ref2,
@@ -78460,14 +78586,14 @@ var invalidateDateInRange = (day, {
 };
 
 // ../juno-core/src/components/Forms/Picker/DatePicker/utils/DatePickerAriaLabelUtils.tsx
-import React834, { createContext as createContext25, useContext as useContext30 } from "react";
-var ScreenReaderContext = createContext25({});
-var useScreenReaderContext = () => useContext30(ScreenReaderContext);
+import React841, { createContext as createContext24, useContext as useContext29 } from "react";
+var ScreenReaderContext = createContext24({});
+var useScreenReaderContext = () => useContext29(ScreenReaderContext);
 var ScreenReaderProvider = ({
   screenReaderProps,
   children: children2
 }) => {
-  return /* @__PURE__ */ React834.createElement(ScreenReaderContext.Provider, {
+  return /* @__PURE__ */ React841.createElement(ScreenReaderContext.Provider, {
     value: screenReaderProps || {}
   }, children2);
 };
@@ -78752,7 +78878,7 @@ var popoverTransformOrigin = {
   horizontal: "left"
 };
 var PICKER_DISPLAY_NAME = "PickerTextField";
-var PickerTextField = forwardRef748((props, ref2) => {
+var PickerTextField = forwardRef747((props, ref2) => {
   const {
     onClear,
     InputProps,
@@ -78768,8 +78894,8 @@ var PickerTextField = forwardRef748((props, ref2) => {
     value,
     ...rest
   } = props;
-  const { current: idForInput } = useRef88((0, import_uniqueId3.default)(`${PICKER_DISPLAY_NAME}-`));
-  const [anchorEl, setAnchorEl] = useState39(null);
+  const { current: idForInput } = useRef85((0, import_uniqueId3.default)(`${PICKER_DISPLAY_NAME}-`));
+  const [anchorEl, setAnchorEl] = useState36(null);
   const idForHelperText = `${idForInput}-helper-text`;
   const idForInstruction = `${idForInput}-instruction`;
   const handlePickerClick = useEventCallback2((event) => {
@@ -78801,7 +78927,7 @@ var PickerTextField = forwardRef748((props, ref2) => {
     }, clearButtonProps);
     return combineProps({
       readOnly: true,
-      endAdornment: /* @__PURE__ */ React835.createElement(React835.Fragment, null, value && /* @__PURE__ */ React835.createElement(RcIconButton, {
+      endAdornment: /* @__PURE__ */ React842.createElement(React842.Fragment, null, value && /* @__PURE__ */ React842.createElement(RcIconButton, {
         className: "picker-clear",
         variant: "plain",
         tabIndex: -1,
@@ -78810,7 +78936,7 @@ var PickerTextField = forwardRef748((props, ref2) => {
         title: iconTitle,
         "aria-label": iconTitle,
         ...combineClearProps
-      }), /* @__PURE__ */ React835.createElement(RcIconButton, {
+      }), /* @__PURE__ */ React842.createElement(RcIconButton, {
         className: "picker-action",
         variant: "plain",
         tabIndex: -1,
@@ -78849,10 +78975,10 @@ var PickerTextField = forwardRef748((props, ref2) => {
     onClose: onPickerViewClose
   }, PopoverPropsProp), [PopoverPropsProp, onPickerViewClose]);
   const popoverOpen = Boolean(anchorEl);
-  useImperativeHandle16(action3, () => ({
+  useImperativeHandle15(action3, () => ({
     close: onPickerViewClose
   }), [onPickerViewClose]);
-  return /* @__PURE__ */ React835.createElement(React835.Fragment, null, /* @__PURE__ */ React835.createElement(StyledPickerTextField, {
+  return /* @__PURE__ */ React842.createElement(React842.Fragment, null, /* @__PURE__ */ React842.createElement(StyledPickerTextField, {
     id: idForInput,
     ref: ref2,
     InputProps: _InputProps,
@@ -78862,14 +78988,14 @@ var PickerTextField = forwardRef748((props, ref2) => {
     clearBtn,
     value,
     ...rest
-  }), /* @__PURE__ */ React835.createElement(StyledPopover, {
+  }), /* @__PURE__ */ React842.createElement(StyledPopover, {
     open: popoverOpen,
     anchorEl,
     onClose: onPickerViewClose,
     anchorOrigin: popoverAnchorOrigin,
     transformOrigin: popoverTransformOrigin,
     ...PopoverProps
-  }, children2), /* @__PURE__ */ React835.createElement(RcVisuallyHidden, {
+  }, children2), /* @__PURE__ */ React842.createElement(RcVisuallyHidden, {
     id: idForInstruction
   }, announcementText));
 });
@@ -78877,20 +79003,20 @@ PickerTextField.displayName = PICKER_DISPLAY_NAME;
 
 // ../juno-core/src/components/Forms/Picker/DatePicker/Calendar.tsx
 var import_dayjs2 = __toModule(require_dayjs_min());
-import React841, {
-  forwardRef as forwardRef753,
-  useLayoutEffect as useLayoutEffect27,
+import React848, {
+  forwardRef as forwardRef752,
+  useLayoutEffect as useLayoutEffect25,
   useMemo as useMemo71,
-  useRef as useRef91,
-  useState as useState40
+  useRef as useRef88,
+  useState as useState37
 } from "react";
 
 // ../juno-core/src/components/Forms/Picker/DatePicker/DatePickerHeader.tsx
-import React837, { memo as memo572, useRef as useRef89 } from "react";
+import React844, { memo as memo569, useRef as useRef86 } from "react";
 
 // ../juno-core/src/components/Forms/Select/styles/SelectArrowDownIcon.tsx
-import React836, { forwardRef as forwardRef749 } from "react";
-var _SelectArrowDownIcon = forwardRef749(({ className, ...rest }, ref2) => /* @__PURE__ */ React836.createElement(RcIcon, {
+import React843, { forwardRef as forwardRef748 } from "react";
+var _SelectArrowDownIcon = forwardRef748(({ className, ...rest }, ref2) => /* @__PURE__ */ React843.createElement(RcIcon, {
   ref: ref2,
   className: clsx_m_default("MuiSvgIcon-root", className),
   color: "neutral.f04",
@@ -79139,7 +79265,7 @@ var YearsWrapper = styled_components_default.ul`
 `;
 
 // ../juno-core/src/components/Forms/Picker/DatePicker/DatePickerHeader.tsx
-var DatePickerHeader = memo572((props) => {
+var DatePickerHeader = memo569((props) => {
   const {
     focusedDate,
     onMonthChange,
@@ -79154,7 +79280,7 @@ var DatePickerHeader = memo572((props) => {
   const preMonth = utils.getPreviousMonth(focusedDate);
   const nextMonth = utils.getNextMonth(focusedDate);
   const monthLabel = utils.getCalendarHeaderText(focusedDate);
-  const changeFromRef = useRef89();
+  const changeFromRef = useRef86();
   const selectNextMonth = () => {
     onMonthChange(nextMonth, "left");
     changeFromRef.current = "next";
@@ -79168,13 +79294,13 @@ var DatePickerHeader = memo572((props) => {
   const monthYearAriaLabel = getMonthYearAriaLabel?.(`${monthLabel}`, ariaExpanded);
   const nextMonthAriaLabel = getSwitchMonthAriaLabel?.(true, utils.getMonthText(focusedDate));
   const previousMonthAriaLabel = getSwitchMonthAriaLabel?.(false, utils.getMonthText(focusedDate));
-  return /* @__PURE__ */ React837.createElement(React837.Fragment, null, changeFromRef.current && /* @__PURE__ */ React837.createElement(RcVisuallyHidden, {
+  return /* @__PURE__ */ React844.createElement(React844.Fragment, null, changeFromRef.current && /* @__PURE__ */ React844.createElement(RcVisuallyHidden, {
     role: "region",
     "aria-live": "assertive"
-  }, changeFromRef.current === "next" ? nextMonthAriaLabel : previousMonthAriaLabel), /* @__PURE__ */ React837.createElement(SwitchHeaderWrapper, {
+  }, changeFromRef.current === "next" ? nextMonthAriaLabel : previousMonthAriaLabel), /* @__PURE__ */ React844.createElement(SwitchHeaderWrapper, {
     size,
     className: classes.header
-  }, /* @__PURE__ */ React837.createElement(StyledCurrentMonth, {
+  }, /* @__PURE__ */ React844.createElement(StyledCurrentMonth, {
     role: "button",
     tabIndex: 0,
     view,
@@ -79183,11 +79309,11 @@ var DatePickerHeader = memo572((props) => {
     "aria-expanded": ariaExpanded,
     "data-test-automation-id": "date-picker-month-year",
     className: classes.select
-  }, monthLabel, /* @__PURE__ */ React837.createElement(SelectArrowDownIcon, null)), /* @__PURE__ */ React837.createElement(SwitchHeaderButtonWrapper, {
+  }, monthLabel, /* @__PURE__ */ React844.createElement(SelectArrowDownIcon, null)), /* @__PURE__ */ React844.createElement(SwitchHeaderButtonWrapper, {
     size,
     gap: 3,
     view
-  }, /* @__PURE__ */ React837.createElement(SwitchHeaderButton, {
+  }, /* @__PURE__ */ React844.createElement(SwitchHeaderButton, {
     color: "neutral.f04",
     size: "small",
     disabled: disablePrevMonth,
@@ -79198,7 +79324,7 @@ var DatePickerHeader = memo572((props) => {
     "data-test-automation-id": "date-picker-pre-month",
     className: classes.leftArrow,
     focusVariant: "focusRing"
-  }), /* @__PURE__ */ React837.createElement(SwitchHeaderButton, {
+  }), /* @__PURE__ */ React844.createElement(SwitchHeaderButton, {
     color: "neutral.f04",
     size: "small",
     disabled: disableNextMonth,
@@ -79218,8 +79344,8 @@ DatePickerHeader.defaultProps = {
 DatePickerHeader.displayName = "RcDatePickerHeader";
 
 // ../juno-core/src/components/Forms/Picker/DatePicker/Day.tsx
-import React838, { forwardRef as forwardRef750, memo as memo573 } from "react";
-var _Day = forwardRef750((props, ref2) => {
+import React845, { forwardRef as forwardRef749, memo as memo570 } from "react";
+var _Day = forwardRef749((props, ref2) => {
   const {
     children: children2,
     disabled: disabled3,
@@ -79231,7 +79357,7 @@ var _Day = forwardRef750((props, ref2) => {
     day,
     ...rest
   } = props;
-  return /* @__PURE__ */ React838.createElement(PickerBaseIconButton, {
+  return /* @__PURE__ */ React845.createElement(PickerBaseIconButton, {
     "aria-pressed": focused,
     ref: ref2,
     size,
@@ -79242,7 +79368,7 @@ var _Day = forwardRef750((props, ref2) => {
     "data-test-automation-value": children2,
     disabled: disabled3,
     ...rest
-  }, /* @__PURE__ */ React838.createElement(React838.Fragment, null, children2));
+  }, /* @__PURE__ */ React845.createElement(React845.Fragment, null, children2));
 });
 _Day.displayName = "RcDay";
 _Day.defaultProps = {
@@ -79251,16 +79377,16 @@ _Day.defaultProps = {
   current: false,
   selected: false
 };
-var Day3 = memo573(styled_components_default(_Day)`
+var Day3 = memo570(styled_components_default(_Day)`
     ${DayStyle}
   `);
 
 // ../juno-core/src/components/Forms/Picker/DatePicker/Years.tsx
-import React840, { forwardRef as forwardRef752, useLayoutEffect as useLayoutEffect26, useMemo as useMemo70, useRef as useRef90 } from "react";
+import React847, { forwardRef as forwardRef751, useLayoutEffect as useLayoutEffect24, useMemo as useMemo70, useRef as useRef87 } from "react";
 
 // ../juno-core/src/components/Forms/Picker/DatePicker/Year.tsx
-import React839, { forwardRef as forwardRef751, memo as memo574 } from "react";
-var Year = memo574(forwardRef751((props, ref2) => {
+import React846, { forwardRef as forwardRef750, memo as memo571 } from "react";
+var Year = memo571(forwardRef750((props, ref2) => {
   const { onSelect, value, selected, disabled: disabled3, focused, children: children2, ...rest } = props;
   const { getYearAriaLabel } = useScreenReaderContext();
   const _handleClick = useEventCallback2(() => onSelect(value));
@@ -79270,7 +79396,7 @@ var Year = memo574(forwardRef751((props, ref2) => {
   });
   const yearAriaLabel = getYearAriaLabel?.(`${value}`, selected);
   const handleClick = !disabled3 ? _handleClick : void 0;
-  return /* @__PURE__ */ React839.createElement(StyledYear, {
+  return /* @__PURE__ */ React846.createElement(StyledYear, {
     radius: "round",
     onClick: handleClick,
     onKeyPress: handleClick,
@@ -79283,12 +79409,12 @@ var Year = memo574(forwardRef751((props, ref2) => {
     "data-test-automation-class": "date-picker-year",
     "data-test-automation-value": children2,
     ...rest
-  }, /* @__PURE__ */ React839.createElement(React839.Fragment, null, children2));
+  }, /* @__PURE__ */ React846.createElement(React846.Fragment, null, children2));
 }));
 Year.displayName = "RcYear";
 
 // ../juno-core/src/components/Forms/Picker/DatePicker/Years.tsx
-var Years = forwardRef752((props, ref2) => {
+var Years = forwardRef751((props, ref2) => {
   const {
     date,
     onYearChange,
@@ -79300,16 +79426,16 @@ var Years = forwardRef752((props, ref2) => {
     now: now2
   } = props;
   const utils = useUtils();
-  const containerRef = useRef90(null);
+  const containerRef = useRef87(null);
   const combineRef = useForkRef2(containerRef, ref2);
-  const selectedYearRef = useRef90(null);
+  const selectedYearRef = useRef87(null);
   const currentYear = utils.getYear(date || now2);
   const years = useMemo70(() => utils.getYearRange(minDate, maxDate), [maxDate, minDate, utils]);
   const onYearSelect = useEventCallback2((year) => {
     const newDate = utils.setYear(date, year);
     onYearChange(newDate);
   });
-  const focusedIndexRef = useRef90(0);
+  const focusedIndexRef = useRef87(0);
   const focusedYear = years[focusedIndexRef.current]?.year();
   const { focusIndex, getItemProps } = useOnlyOneFocusable({
     focusedIndexRef,
@@ -79328,11 +79454,11 @@ var Years = forwardRef752((props, ref2) => {
     },
     getOptionDisabled
   });
-  useLayoutEffect26(() => {
+  useLayoutEffect24(() => {
     const index4 = years.findIndex((x2) => utils.getYear(x2) === currentYear);
     focusIndex(index4);
   }, []);
-  return /* @__PURE__ */ React840.createElement(YearsWrapper, {
+  return /* @__PURE__ */ React847.createElement(YearsWrapper, {
     role: "presentation",
     "aria-label": " ",
     columns,
@@ -79343,9 +79469,9 @@ var Years = forwardRef752((props, ref2) => {
     const selected = yearNumber === currentYear;
     const focused = yearNumber === focusedYear;
     const disabled3 = getOptionDisabled(year);
-    return /* @__PURE__ */ React840.createElement("li", {
+    return /* @__PURE__ */ React847.createElement("li", {
       key: utils.getYearText(year)
-    }, /* @__PURE__ */ React840.createElement(Year, {
+    }, /* @__PURE__ */ React847.createElement(Year, {
       ...getItemProps(index4),
       ref: focused ? selectedYearRef : void 0,
       key: utils.getYearText(year),
@@ -79360,7 +79486,7 @@ var Years = forwardRef752((props, ref2) => {
 Years.displayName = "RcYears";
 
 // ../juno-core/src/components/Forms/Picker/DatePicker/Calendar.tsx
-var Calendar2 = forwardRef753(({
+var Calendar2 = forwardRef752(({
   onMonthChange,
   size,
   date,
@@ -79376,11 +79502,11 @@ var Calendar2 = forwardRef753(({
   getInvalidateDateInRange
 }, ref2) => {
   const utils = useUtils();
-  const calendarRef = useRef91(null);
+  const calendarRef = useRef88(null);
   const previousFocusDate = usePrevious(() => focusedDate);
   const previousView = usePrevious(() => view);
   const { document: doc } = useRcPortalWindowContext();
-  const weeks = useRef91([]);
+  const weeks = useRef88([]);
   import_dayjs2.default.locale(utils.locale);
   const { current: weekdays } = useResultRef(() => utils.getWeekdays());
   const { now: now2, isTodayDisabled } = useMemo71(() => {
@@ -79390,10 +79516,10 @@ var Calendar2 = forwardRef753(({
       isTodayDisabled: shouldDisableDate(nowDate)
     };
   }, [shouldDisableDate, utils]);
-  const [focusedDate, setFocusedDate] = useState40(date);
-  const [view, setView] = useState40("day");
-  const [slideDirection, setSlideDirection] = useState40("left");
-  const [loadingQueue, setLoadingQueue] = useState40(0);
+  const [focusedDate, setFocusedDate] = useState37(date);
+  const [view, setView] = useState37("day");
+  const [slideDirection, setSlideDirection] = useState37("left");
+  const [loadingQueue, setLoadingQueue] = useState37(0);
   const { min: min2, max: max2 } = dateRange;
   const currentMonthNumber = utils.getMonth(focusedDate);
   const pickClasses = useMemo71(() => pick(classes, ["header", "leftArrow", "rightArrow", "select"]), [classes]);
@@ -79466,9 +79592,9 @@ var Calendar2 = forwardRef753(({
   });
   const { getBackToTodayAriaLabel, getDayAriaLabel } = useScreenReaderContext();
   const backToTodayAriaLabel = getBackToTodayAriaLabel?.();
-  const header3 = useMemo71(() => /* @__PURE__ */ React841.createElement(StyledDaysHeader, {
+  const header3 = useMemo71(() => /* @__PURE__ */ React848.createElement(StyledDaysHeader, {
     size
-  }, weekdays.map((day) => /* @__PURE__ */ React841.createElement(StyledDayLabel, {
+  }, weekdays.map((day) => /* @__PURE__ */ React848.createElement(StyledDayLabel, {
     size,
     key: day,
     variant: "caption"
@@ -79482,7 +79608,7 @@ var Calendar2 = forwardRef753(({
       const selected = utils.isSameDay(day, selectedDate);
       const ariaLabel = getDayAriaLabel?.(selected, `${utils.getDatePickerHeaderText(day)} ${utils.getYearText(day)}`);
       const focused = utils.isSameDay(focusedDate, day);
-      const dayComponent = /* @__PURE__ */ React841.createElement(Day3, {
+      const dayComponent = /* @__PURE__ */ React848.createElement(Day3, {
         size,
         disabled: disabled3,
         current: utils.isSameDay(day, now2),
@@ -79494,7 +79620,7 @@ var Calendar2 = forwardRef753(({
         "aria-label": ariaLabel
       }, dayText);
       const handleClick = !disabled3 && isDayInCurrentMonth ? () => handleDaySelect(day) : void 0;
-      return /* @__PURE__ */ React841.createElement("div", {
+      return /* @__PURE__ */ React848.createElement("div", {
         role: "cell",
         key: day.toString(),
         onClick: handleClick,
@@ -79503,29 +79629,29 @@ var Calendar2 = forwardRef753(({
     });
   };
   const renderBody = () => {
-    const loadingElement = loadingIndicator ? loadingIndicator : /* @__PURE__ */ React841.createElement(CircularProgress_default, null);
+    const loadingElement = loadingIndicator ? loadingIndicator : /* @__PURE__ */ React848.createElement(CircularProgress_default, null);
     switch (view) {
       case "day":
-        return /* @__PURE__ */ React841.createElement(DaysWrapper, {
+        return /* @__PURE__ */ React848.createElement(DaysWrapper, {
           role: "presentation",
           "aria-label": " "
-        }, header3, /* @__PURE__ */ React841.createElement(CalendarSlideTransitionWrapper, {
+        }, header3, /* @__PURE__ */ React848.createElement(CalendarSlideTransitionWrapper, {
           className: classes.calendarSlider,
           slideDirection,
           transKey: currentMonthNumber
-        }, loadingQueue > 0 ? /* @__PURE__ */ React841.createElement(ProgressContainer, {
+        }, loadingQueue > 0 ? /* @__PURE__ */ React848.createElement(ProgressContainer, {
           className: classes.progress
-        }, loadingElement) : /* @__PURE__ */ React841.createElement("div", {
+        }, loadingElement) : /* @__PURE__ */ React848.createElement("div", {
           role: "rowgroup",
           "data-transition-tag": true,
           onKeyDown: handleKeyDown2
-        }, weeks.current.map((week) => /* @__PURE__ */ React841.createElement(WeekWrapper, {
+        }, weeks.current.map((week) => /* @__PURE__ */ React848.createElement(WeekWrapper, {
           role: "row",
           size,
           key: `week-${week[0].toString()}`
-        }, renderDays(week))))), /* @__PURE__ */ React841.createElement(DayFooterWrapper, {
+        }, renderDays(week))))), /* @__PURE__ */ React848.createElement(DayFooterWrapper, {
           className: classes.footer
-        }, /* @__PURE__ */ React841.createElement(RcButton, {
+        }, /* @__PURE__ */ React848.createElement(RcButton, {
           variant: "plain",
           onClick: backToToday,
           disabled: isTodayDisabled,
@@ -79533,7 +79659,7 @@ var Calendar2 = forwardRef753(({
           "data-test-automation-id": "date-picker-today"
         }, todayButtonText)));
       case "year":
-        return /* @__PURE__ */ React841.createElement(Years, {
+        return /* @__PURE__ */ React848.createElement(Years, {
           date: focusedDate,
           size,
           minDate: min2,
@@ -79551,17 +79677,17 @@ var Calendar2 = forwardRef753(({
         return null;
     }
   };
-  useLayoutEffect27(() => {
+  useLayoutEffect25(() => {
     if (sameMonthDate && !viewChange) {
       focusDayElement(doc);
     }
   });
-  useLayoutEffect27(() => {
+  useLayoutEffect25(() => {
     if (previousView && view === "day" && viewChange) {
       focusDayElement(doc);
     }
   }, [previousView, view, viewChange, doc]);
-  useLayoutEffect27(() => {
+  useLayoutEffect25(() => {
     focusDayElement(doc);
     calendarRef.current = doc.querySelector(`.${RcDatePickerClasses.popover} .${RcDatePickerClasses.popoverPaper}`);
     const unsubscribe = transitionendSubscriber(calendarRef.current, (event) => {
@@ -79571,10 +79697,10 @@ var Calendar2 = forwardRef753(({
       unsubscribe();
     };
   }, []);
-  return /* @__PURE__ */ React841.createElement(DatePickerWrapper, {
+  return /* @__PURE__ */ React848.createElement(DatePickerWrapper, {
     size,
     ref: ref2
-  }, /* @__PURE__ */ React841.createElement(DatePickerHeader, {
+  }, /* @__PURE__ */ React848.createElement(DatePickerHeader, {
     classes: pickClasses,
     size,
     focusedDate,
@@ -79593,7 +79719,7 @@ Calendar2.displayName = "RcCalendar";
 var defaultMinDate = new Date("1900-01-01");
 var defaultMaxDate = new Date("2100-01-01");
 var DEFAULT_FORMAT = "MM/DD/YYYY";
-var InnerRcDatePicker = forwardRef754((props, ref2) => {
+var InnerRcDatePicker = forwardRef753((props, ref2) => {
   const {
     date,
     value = date,
@@ -79626,10 +79752,10 @@ var InnerRcDatePicker = forwardRef754((props, ref2) => {
     default: null,
     name: "RcDatePicker"
   });
-  const emitValueRef = useRef92(null);
+  const emitValueRef = useRef89(null);
   const maxDate = minDateProp || max2;
   const minDate = maxDateProp || min2;
-  const actionRef = useRef92(null);
+  const actionRef = useRef89(null);
   const dateRange = useMemo72(() => ({
     min: (0, import_dayjs3.default)(minDate || defaultMinDate),
     max: (0, import_dayjs3.default)(maxDate || defaultMaxDate)
@@ -79638,7 +79764,7 @@ var InnerRcDatePicker = forwardRef754((props, ref2) => {
   const shouldDisableDate = useEventCallback2((day) => {
     return Boolean(getInvalidateDateInRange(day)) || Boolean(shouldDisableDateProp?.(day));
   });
-  const getClosestEnableDate = useCallback34((currDate) => (0, import_date_utils.findClosestEnabledDate)({
+  const getClosestEnableDate = useCallback31((currDate) => (0, import_date_utils.findClosestEnabledDate)({
     date: currDate,
     utils,
     minDate: utils.date(dateRange.min),
@@ -79685,13 +79811,13 @@ var InnerRcDatePicker = forwardRef754((props, ref2) => {
     const newDay = day ? utils.startOfDay(day).toDate() : null;
     handleChange(newDay, fromUserSelect);
   };
-  useEffect61(() => {
+  useEffect57(() => {
     if (dayjsValue && value !== emitValueRef.current && shouldDisableDate(dayjsValue)) {
       const closestEnabledDate = getClosestEnableDate(dayjsValue);
       handleDaySelect(closestEnabledDate, false);
     }
   }, [value]);
-  return /* @__PURE__ */ React842.createElement(PickerTextField, {
+  return /* @__PURE__ */ React849.createElement(PickerTextField, {
     ref: ref2,
     action: actionRef,
     onClear: handleClear,
@@ -79700,9 +79826,9 @@ var InnerRcDatePicker = forwardRef754((props, ref2) => {
     disabled: disabled3,
     ActionSymbol: DateBorder_default,
     ...rest
-  }, /* @__PURE__ */ React842.createElement(ScreenReaderProvider, {
+  }, /* @__PURE__ */ React849.createElement(ScreenReaderProvider, {
     screenReaderProps
-  }, /* @__PURE__ */ React842.createElement(Calendar2, {
+  }, /* @__PURE__ */ React849.createElement(Calendar2, {
     size,
     classes: calendarClasses,
     date: nowDate,
@@ -79719,7 +79845,7 @@ var InnerRcDatePicker = forwardRef754((props, ref2) => {
     formatString
   })));
 });
-var _RcDatePicker = forwardRef754((inProps, ref2) => {
+var _RcDatePicker = forwardRef753((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcDatePicker" });
   if (true) {
     useDeprecatedCheck(RcDatePicker, props, [
@@ -79740,11 +79866,11 @@ var _RcDatePicker = forwardRef754((inProps, ref2) => {
       }
     ]);
   }
-  return /* @__PURE__ */ React842.createElement(MuiPickersUtilsProvider, {
+  return /* @__PURE__ */ React849.createElement(MuiPickersUtilsProvider, {
     utils: index_esm_default,
     locale: props.locale,
     libInstance: import_dayjs3.default
-  }, /* @__PURE__ */ React842.createElement(InnerRcDatePicker, {
+  }, /* @__PURE__ */ React849.createElement(InnerRcDatePicker, {
     ref: ref2,
     ...props
   }));
@@ -79761,13 +79887,13 @@ RcDatePicker.defaultProps = {
 RcDatePicker.displayName = "RcDatePicker";
 
 // ../juno-core/src/components/Forms/Picker/TimePicker/NumberPicker.tsx
-import React844, {
-  forwardRef as forwardRef756,
-  memo as memo575,
-  useImperativeHandle as useImperativeHandle17,
+import React851, {
+  forwardRef as forwardRef755,
+  memo as memo572,
+  useImperativeHandle as useImperativeHandle16,
   useMemo as useMemo73,
-  useRef as useRef93,
-  useLayoutEffect as useLayoutEffect28
+  useRef as useRef90,
+  useLayoutEffect as useLayoutEffect26
 } from "react";
 
 // ../juno-core/src/components/Forms/Picker/TimePicker/styles/StyledNumberPicker.tsx
@@ -79795,9 +79921,9 @@ var StyledNumberPicker = styled_components_default.div`
 `;
 
 // ../juno-core/src/components/Forms/Picker/TimePicker/styles/StyledTimeIconButton.tsx
-import React843, { forwardRef as forwardRef755 } from "react";
-var _StyledTimeIconButton = forwardRef755(({ itemLength, wrapperSize, ...rest }, ref2) => {
-  return /* @__PURE__ */ React843.createElement(PickerBaseIconButton, {
+import React850, { forwardRef as forwardRef754 } from "react";
+var _StyledTimeIconButton = forwardRef754(({ itemLength, wrapperSize, ...rest }, ref2) => {
+  return /* @__PURE__ */ React850.createElement(PickerBaseIconButton, {
     ref: ref2,
     ...rest
   });
@@ -79823,7 +79949,7 @@ var StyledTimeIconButton = styled_components_default(_StyledTimeIconButton)`
 `;
 
 // ../juno-core/src/components/Forms/Picker/TimePicker/NumberPicker.tsx
-var _NumberPicker = forwardRef756((props, ref2) => {
+var _NumberPicker = forwardRef755((props, ref2) => {
   const {
     onClick,
     value,
@@ -79844,9 +79970,9 @@ var _NumberPicker = forwardRef756((props, ref2) => {
   } = props;
   const forceUpdate = useForceUpdate();
   const [innerValueRef, setInnerValue] = useRefState(value, forceUpdate);
-  const rangeRef = useRef93({ max: maxProp, min: minProp });
-  const pickerRef = useRef93(null);
-  useLayoutEffect28(() => {
+  const rangeRef = useRef90({ max: maxProp, min: minProp });
+  const pickerRef = useRef90(null);
+  useLayoutEffect26(() => {
     if (autoFocus) {
       pickerRef.current.focus();
     }
@@ -79905,7 +80031,7 @@ var _NumberPicker = forwardRef756((props, ref2) => {
     });
     onKeyDown?.(event);
   });
-  useImperativeHandle17(ref2, () => ({
+  useImperativeHandle16(ref2, () => ({
     value: innerValue,
     setRange: (newRange) => {
       const range2 = rangeRef.current;
@@ -79934,14 +80060,14 @@ var _NumberPicker = forwardRef756((props, ref2) => {
         return "large";
     }
   })();
-  return /* @__PURE__ */ React844.createElement(StyledNumberPicker, {
+  return /* @__PURE__ */ React851.createElement(StyledNumberPicker, {
     tabIndex: 0,
     onKeyDown: handleKeyDown2,
     "aria-live": "assertive",
     "aria-label": label3,
     ref: pickerRef,
     ...rest
-  }, /* @__PURE__ */ React844.createElement(StyledTimeIconButton, {
+  }, /* @__PURE__ */ React851.createElement(StyledTimeIconButton, {
     tabIndex: -1,
     size: iconSize,
     color: "neutral.f04",
@@ -79953,12 +80079,12 @@ var _NumberPicker = forwardRef756((props, ref2) => {
     symbol: ArrowUp_default,
     "data-test-automation-id": automationId && `${automationId}-prev-pagination`,
     "aria-label": "Arrow Up"
-  }), /* @__PURE__ */ React844.createElement(StyledTimeIconButton, {
+  }), /* @__PURE__ */ React851.createElement(StyledTimeIconButton, {
     wrapperSize: size,
     tabIndex: -1,
     onClick,
     "data-test-automation-id": automationId && `${automationId}-text`
-  }, /* @__PURE__ */ React844.createElement(React844.Fragment, null, showValue)), /* @__PURE__ */ React844.createElement(StyledTimeIconButton, {
+  }, /* @__PURE__ */ React851.createElement(React851.Fragment, null, showValue)), /* @__PURE__ */ React851.createElement(StyledTimeIconButton, {
     tabIndex: -1,
     size: iconSize,
     color: "neutral.f04",
@@ -79972,14 +80098,14 @@ var _NumberPicker = forwardRef756((props, ref2) => {
     "aria-label": "Arrow Down"
   }));
 });
-var NumberPicker = styled_components_default(memo575(_NumberPicker))``;
+var NumberPicker = styled_components_default(memo572(_NumberPicker))``;
 NumberPicker.displayName = "NumberPicker";
 
 // ../juno-core/src/components/Forms/Picker/TimePicker/ToggleText.tsx
-import React845, {
-  forwardRef as forwardRef757,
-  memo as memo576,
-  useImperativeHandle as useImperativeHandle18
+import React852, {
+  forwardRef as forwardRef756,
+  memo as memo573,
+  useImperativeHandle as useImperativeHandle17
 } from "react";
 
 // ../juno-core/src/components/Forms/Picker/TimePicker/styles/StyledPickerPopperWrap.tsx
@@ -80023,7 +80149,7 @@ var StyledSelectionView = styled_components_default.div`
 `;
 
 // ../juno-core/src/components/Forms/Picker/TimePicker/ToggleText.tsx
-var _ToggleText = memo576(forwardRef757(({
+var _ToggleText = memo573(forwardRef756(({
   onUpdateValue,
   onInnerChange,
   value,
@@ -80068,10 +80194,10 @@ var _ToggleText = memo576(forwardRef757(({
       " ": keydownSubmit
     });
   });
-  useImperativeHandle18(ref2, () => ({
+  useImperativeHandle17(ref2, () => ({
     value: innerValue
   }), [innerValue]);
-  return /* @__PURE__ */ React845.createElement(StyledTimeIconButton, {
+  return /* @__PURE__ */ React852.createElement(StyledTimeIconButton, {
     wrapperSize: size,
     onClick: handleClick,
     onKeyDown: handleToggleKeyDown,
@@ -80080,7 +80206,7 @@ var _ToggleText = memo576(forwardRef757(({
     "aria-live": "assertive",
     "aria-label": label3,
     ...rest
-  }, /* @__PURE__ */ React845.createElement(React845.Fragment, null, periodTexts[innerValue]));
+  }, /* @__PURE__ */ React852.createElement(React852.Fragment, null, periodTexts[innerValue]));
 }));
 var ToggleText = styled_components_default(_ToggleText)`
   margin-left: ${({ size }) => RcTimePickerUtils[size].timeSystem.margin};
@@ -80088,7 +80214,7 @@ var ToggleText = styled_components_default(_ToggleText)`
 ToggleText.displayName = "ToggleText";
 
 // ../juno-core/src/components/Forms/Picker/TimePicker/SelectionView.tsx
-import React846 from "react";
+import React853 from "react";
 var SelectionView = (props) => {
   const {
     source,
@@ -80109,12 +80235,12 @@ var SelectionView = (props) => {
     return () => onClick(toValue2);
   };
   const showValue = parseNumberToString(value, isTwelveHourSystem);
-  return /* @__PURE__ */ React846.createElement(StyledSelectionView, {
+  return /* @__PURE__ */ React853.createElement(StyledSelectionView, {
     size
   }, source.map((v2) => {
     const disabled3 = !!(max2 !== void 0 && v2 > max2 || min2 !== void 0 && v2 < min2);
     const itemShowValue = parseNumberToString(v2, isTwelveHourSystem);
-    return /* @__PURE__ */ React846.createElement(StyledSelectionItem, {
+    return /* @__PURE__ */ React853.createElement(StyledSelectionItem, {
       disabled: disabled3,
       radius: "round",
       wrapperSize: size,
@@ -80123,25 +80249,25 @@ var SelectionView = (props) => {
       selected: itemShowValue === showValue,
       "data-test-automation-id": automationId && `${automationId}-${itemShowValue}`,
       itemLength: source.length
-    }, /* @__PURE__ */ React846.createElement(React846.Fragment, null, itemShowValue));
+    }, /* @__PURE__ */ React853.createElement(React853.Fragment, null, itemShowValue));
   }));
 };
 SelectionView.displayName = "SelectionView";
 
 // ../juno-core/src/components/Forms/Picker/TimePicker/TimePicker.tsx
-import React847, {
-  forwardRef as forwardRef758,
-  useCallback as useCallback35,
-  useLayoutEffect as useLayoutEffect29,
+import React854, {
+  forwardRef as forwardRef757,
+  useCallback as useCallback32,
+  useLayoutEffect as useLayoutEffect27,
   useMemo as useMemo74,
-  useRef as useRef94,
-  useState as useState41
+  useRef as useRef91,
+  useState as useState38
 } from "react";
 var defaultPeriodTexts = {
   input: { AM: "AM", PM: "PM" },
   toggle: { AM: "AM", PM: "PM" }
 };
-var _RcTimePicker = forwardRef758((inProps, ref2) => {
+var _RcTimePicker = forwardRef757((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcTimePicker" });
   const {
     isTwelveHourSystem,
@@ -80164,12 +80290,12 @@ var _RcTimePicker = forwardRef758((inProps, ref2) => {
     periodTexts = defaultPeriodTexts,
     ...rest
   } = props;
-  const actionRef = useRef94(null);
-  const hourRef = useRef94(null);
-  const minuteRef = useRef94(null);
-  const periodRef = useRef94(null);
-  const textFiledValueRef = useRef94("");
-  const [selectionShowType, setSelectionType] = useState41("none");
+  const actionRef = useRef91(null);
+  const hourRef = useRef91(null);
+  const minuteRef = useRef91(null);
+  const periodRef = useRef91(null);
+  const textFiledValueRef = useRef91("");
+  const [selectionShowType, setSelectionType] = useState38("none");
   const { nowTime, isShowTextfieldValue } = (() => {
     if (value !== null)
       return { nowTime: value, isShowTextfieldValue: true };
@@ -80193,7 +80319,7 @@ var _RcTimePicker = forwardRef758((inProps, ref2) => {
     date.setHours(hour, minute, 0, 0);
     return date;
   });
-  const handleChange = useCallback35((toValue2) => {
+  const handleChange = useCallback32((toValue2) => {
     if (onChange) {
       if (isDateMode) {
         onChange(toValue2);
@@ -80302,7 +80428,7 @@ var _RcTimePicker = forwardRef758((inProps, ref2) => {
       onEnter: () => setSelectionType("none")
     }
   }, PopoverPropsProp), [PopoverPropsProp, classes, handlePopoverKeydown]);
-  useLayoutEffect29(() => {
+  useLayoutEffect27(() => {
     if (currentTimestamp === null)
       return;
     const time = getEmitInitDate();
@@ -80349,7 +80475,7 @@ var _RcTimePicker = forwardRef758((inProps, ref2) => {
   const hourValue = isTwelveHourSystem ? originalHourValue % HALF_DAY_HOURS : originalHourValue;
   const minuteValue = isHaveValue ? currentHourMinute.minute : boundary.minute.min;
   const periodValue = isHaveValue ? currentPeriod : getPeriod(originalHourValue);
-  return /* @__PURE__ */ React847.createElement(PickerTextField, {
+  return /* @__PURE__ */ React854.createElement(PickerTextField, {
     ref: ref2,
     action: actionRef,
     onClear: handleClear,
@@ -80358,9 +80484,9 @@ var _RcTimePicker = forwardRef758((inProps, ref2) => {
     PopoverProps,
     ActionSymbol: TimeBorder_default,
     ...rest
-  }, /* @__PURE__ */ React847.createElement(StyledPickerPopperWrap, {
+  }, /* @__PURE__ */ React854.createElement(StyledPickerPopperWrap, {
     size
-  }, selectionShowType === "none" ? /* @__PURE__ */ React847.createElement(React847.Fragment, null, /* @__PURE__ */ React847.createElement(NumberPicker, {
+  }, selectionShowType === "none" ? /* @__PURE__ */ React854.createElement(React854.Fragment, null, /* @__PURE__ */ React854.createElement(NumberPicker, {
     ref: hourRef,
     size,
     onInnerChange: handleHourInnerChange,
@@ -80375,10 +80501,10 @@ var _RcTimePicker = forwardRef758((inProps, ref2) => {
     automationId: "time-picker-hour",
     autoFocus: true,
     ...HourPickerProps
-  }), /* @__PURE__ */ React847.createElement(RcBox, {
+  }), /* @__PURE__ */ React854.createElement(RcBox, {
     textAlign: "center",
     width: "48px"
-  }, ":"), /* @__PURE__ */ React847.createElement(NumberPicker, {
+  }, ":"), /* @__PURE__ */ React854.createElement(NumberPicker, {
     ref: minuteRef,
     size,
     ...boundary.minute,
@@ -80390,7 +80516,7 @@ var _RcTimePicker = forwardRef758((inProps, ref2) => {
     step: TIME_GAP,
     automationId: "time-picker-minute",
     ...MinutePickerProps
-  }), isTwelveHourSystem && /* @__PURE__ */ React847.createElement("div", null, /* @__PURE__ */ React847.createElement(ToggleText, {
+  }), isTwelveHourSystem && /* @__PURE__ */ React854.createElement("div", null, /* @__PURE__ */ React854.createElement(ToggleText, {
     periodTexts: periodTexts.toggle,
     ref: periodRef,
     size,
@@ -80400,7 +80526,7 @@ var _RcTimePicker = forwardRef758((inProps, ref2) => {
     onClose: closeMenu,
     value: periodValue,
     ...PeriodToggleProps
-  }))) : /* @__PURE__ */ React847.createElement(SelectionView, {
+  }))) : /* @__PURE__ */ React854.createElement(SelectionView, {
     size,
     ...isHourView ? boundary.hour : boundary.minute,
     source: isHourView ? isTwelveHourSystem ? twelveHourSystemSource : twentyFourHourSystemSource : minuteSource,
@@ -80429,11 +80555,11 @@ RcTimePicker.displayName = "RcTimePicker";
 var ExportType3 = RcTimePicker;
 
 // ../juno-core/src/components/Forms/RadioGroup/RadioGroup.tsx
-import React848, { forwardRef as forwardRef759 } from "react";
-var _RcRadioGroup = forwardRef759((inProps, ref2) => {
+import React855, { forwardRef as forwardRef758 } from "react";
+var _RcRadioGroup = forwardRef758((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcRadioGroup" });
   const { classes: classesProp, children: children2, ...rest } = props;
-  return /* @__PURE__ */ React848.createElement(RadioGroup_default, {
+  return /* @__PURE__ */ React855.createElement(RadioGroup_default, {
     ...rest,
     ref: ref2,
     classes: classesProp
@@ -80444,20 +80570,20 @@ RcRadioGroup.defaultProps = {};
 RcRadioGroup.displayName = "RcRadioGroup";
 
 // ../juno-core/src/components/Forms/Select/Select.tsx
-import React853, { forwardRef as forwardRef764, useMemo as useMemo77 } from "react";
+import React860, { forwardRef as forwardRef763, useMemo as useMemo77 } from "react";
 
 // ../juno-core/src/components/VirtualizedMenu/VirtualizedMenu.tsx
-import React850, { forwardRef as forwardRef761, useMemo as useMemo76, useRef as useRef96 } from "react";
+import React857, { forwardRef as forwardRef760, useMemo as useMemo76, useRef as useRef93 } from "react";
 
 // ../juno-core/src/components/VirtualizedMenu/VirtualizedMenuList.tsx
 var import_react_is13 = __toModule(require_react_is2());
-import React849, {
-  forwardRef as forwardRef760,
-  useImperativeHandle as useImperativeHandle19,
+import React856, {
+  forwardRef as forwardRef759,
+  useImperativeHandle as useImperativeHandle18,
   useMemo as useMemo75,
-  useRef as useRef95
+  useRef as useRef92
 } from "react";
-var _RcVirtualizedMenuList = forwardRef760((inProps, ref2) => {
+var _RcVirtualizedMenuList = forwardRef759((inProps, ref2) => {
   const props = useThemeProps({
     props: inProps,
     name: "RcVirtualizedMenuList"
@@ -80482,16 +80608,16 @@ var _RcVirtualizedMenuList = forwardRef760((inProps, ref2) => {
   } = props;
   const theme = RcUseTheme();
   const { document: document2 } = useRcPortalWindowContext();
-  const vlRef = useRef95(null);
-  const innerListRef = React849.useRef(null);
+  const vlRef = useRef92(null);
+  const innerListRef = React856.useRef(null);
   const handleRef = useForkRef2(innerListRef, ref2);
-  const rangeChangedRef = useRef95({ startIndex: 0, endIndex: 0 });
+  const rangeChangedRef = useRef92({ startIndex: 0, endIndex: 0 });
   const isMountedRef = useMountState();
-  const itemRenderedDescriptorRef = useRef95(null);
+  const itemRenderedDescriptorRef = useRef92(null);
   let hasSearchText = false;
   let activeItemIndex = -1;
-  const items = React849.Children.map(childrenProp, (child, index4) => {
-    if (!React849.isValidElement(child)) {
+  const items = React856.Children.map(childrenProp, (child, index4) => {
+    if (!React856.isValidElement(child)) {
       return;
     }
     if ((0, import_react_is13.isFragment)(child)) {
@@ -80516,7 +80642,7 @@ var _RcVirtualizedMenuList = forwardRef760((inProps, ref2) => {
     return child;
   });
   const itemCount = items.length;
-  const focusedIndexRef = useRef95(activeItemIndex);
+  const focusedIndexRef = useRef92(activeItemIndex);
   focusedIndexRef.current = activeItemIndex;
   const onContainerHeightChange = useEventCallback2((changeHeight) => {
     const scroller = scrollerRef.current;
@@ -80577,7 +80703,7 @@ var _RcVirtualizedMenuList = forwardRef760((inProps, ref2) => {
       return child.props["data-search-text"];
     } : void 0
   });
-  const hiddenRef = useRef95(null);
+  const hiddenRef = useRef92(null);
   const events = useHiddenTabindex(hiddenRef);
   const onMounted = useEventCallback2(() => {
     if (autoFocus) {
@@ -80594,7 +80720,7 @@ var _RcVirtualizedMenuList = forwardRef760((inProps, ref2) => {
       }
     }
   });
-  useImperativeHandle19(action3, () => ({
+  useImperativeHandle18(action3, () => ({
     scrollIntoViewAndFocus: onMounted,
     adjustStyleForScrollbar: () => {
       const listElm = innerListRef.current;
@@ -80615,9 +80741,9 @@ var _RcVirtualizedMenuList = forwardRef760((inProps, ref2) => {
   const components = useMemo75(() => ({
     Header: disablePadding ? void 0 : StyledMenuListPadding,
     Footer: disablePadding ? void 0 : StyledMenuListPadding,
-    List: React849.forwardRef(({ children: children2, ...listRest }, listRef) => {
+    List: React856.forwardRef(({ children: children2, ...listRest }, listRef) => {
       const toRef = useForkRef2(handleRef, listRef);
-      return /* @__PURE__ */ React849.createElement(RcList, {
+      return /* @__PURE__ */ React856.createElement(RcList, {
         role: "menu",
         ref: toRef,
         ...combineProps(listRest, rest)
@@ -80625,7 +80751,7 @@ var _RcVirtualizedMenuList = forwardRef760((inProps, ref2) => {
     }),
     Item: ({ children: child, ...itemRest }) => {
       const index4 = itemRest["data-index"];
-      return React849.cloneElement(child, {
+      return React856.cloneElement(child, {
         ...itemRest,
         "aria-posinset": index4,
         "aria-setsize": itemCount,
@@ -80661,12 +80787,12 @@ var _RcVirtualizedMenuList = forwardRef760((inProps, ref2) => {
     style: style3,
     ...events
   }, VirtuosoProps2);
-  return /* @__PURE__ */ React849.createElement(React849.Fragment, null, /* @__PURE__ */ React849.createElement(RcVisuallyHidden, {
+  return /* @__PURE__ */ React856.createElement(React856.Fragment, null, /* @__PURE__ */ React856.createElement(RcVisuallyHidden, {
     ref: hiddenRef,
     onFocus: () => {
       focusItemByIndex(rangeChangedRef.current?.startIndex || 0, focusedIndexRef.current);
     }
-  }), /* @__PURE__ */ React849.createElement(Virtuoso, {
+  }), /* @__PURE__ */ React856.createElement(Virtuoso, {
     ref: vlRef,
     data: items,
     itemContent: (index4, data) => data,
@@ -80680,7 +80806,7 @@ RcVirtualizedMenuList.defaultProps = {};
 RcVirtualizedMenuList.displayName = "RcVirtualizedMenuList";
 
 // ../juno-core/src/components/VirtualizedMenu/VirtualizedMenu.tsx
-var _RcVirtualizedMenu = forwardRef761((inProps, ref2) => {
+var _RcVirtualizedMenu = forwardRef760((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcVirtualizedMenu" });
   const {
     autoFocus = true,
@@ -80704,11 +80830,11 @@ var _RcVirtualizedMenu = forwardRef761((inProps, ref2) => {
     ...rest
   } = props;
   const { document: document2 } = useRcPortalWindowContext();
-  const popoverRef = useRef96(null);
+  const popoverRef = useRef93(null);
   const handleRef = useForkRef2(ref2, popoverRef);
-  const popoverAction = useRef96(null);
+  const popoverAction = useRef93(null);
   const handlePopoverAction = useForkRef2(popoverAction, popoverActionProp);
-  const menuListActionRef = useRef96(null);
+  const menuListActionRef = useRef93(null);
   const classes = useMemo76(() => combineClasses(RcVirtualizedMenuClasses, classesProp), [classesProp]);
   const autoFocusItem = autoFocus && !disableAutoFocusItem && open;
   const TransitionProps4 = useMemo76(() => combineProps({
@@ -80739,7 +80865,7 @@ var _RcVirtualizedMenu = forwardRef761((inProps, ref2) => {
       }
     }
   });
-  return /* @__PURE__ */ React850.createElement(RcPopover, {
+  return /* @__PURE__ */ React857.createElement(RcPopover, {
     ref: handleRef,
     action: handlePopoverAction,
     container: document2.body,
@@ -80751,7 +80877,7 @@ var _RcVirtualizedMenu = forwardRef761((inProps, ref2) => {
     PaperProps,
     TransitionProps: TransitionProps4,
     ...rest
-  }, /* @__PURE__ */ React850.createElement(RcVirtualizedMenuList, {
+  }, /* @__PURE__ */ React857.createElement(RcVirtualizedMenuList, {
     position: "unset",
     action: menuListActionRef,
     autoFocus,
@@ -80784,17 +80910,17 @@ RcVirtualizedMenu.defaultProps = {
 };
 
 // ../juno-core/src/components/VirtualizedMenu/VirtualizedDivider/VirtualizedDivider.tsx
-import React851, { forwardRef as forwardRef762 } from "react";
-var _RcVirtualizedDivider = forwardRef762((inProps, ref2) => {
+import React858, { forwardRef as forwardRef761 } from "react";
+var _RcVirtualizedDivider = forwardRef761((inProps, ref2) => {
   const props = useThemeProps({
     props: inProps,
     name: "RcVirtualizedDivider"
   });
   const { className, ...rest } = props;
-  return /* @__PURE__ */ React851.createElement("li", {
+  return /* @__PURE__ */ React858.createElement("li", {
     className,
     "data-disabled-focus": true
-  }, /* @__PURE__ */ React851.createElement(RcDivider, {
+  }, /* @__PURE__ */ React858.createElement(RcDivider, {
     ...rest,
     ref: ref2
   }));
@@ -80807,9 +80933,9 @@ RcVirtualizedDivider.defaultProps = {};
 RcVirtualizedDivider.displayName = "RcVirtualizedDivider";
 
 // ../juno-core/src/components/Forms/Select/utils/SelectInput/SelectInput.tsx
-import React852, { forwardRef as forwardRef763, useState as useState42 } from "react";
+import React859, { forwardRef as forwardRef762, useState as useState39 } from "react";
 var import_react_is14 = __toModule(require_react_is2());
-var import_utils254 = __toModule(require_utils());
+var import_utils258 = __toModule(require_utils());
 function areEqualValues2(a2, b2) {
   if (typeof b2 === "object" && b2 !== null) {
     return a2 === b2;
@@ -80819,7 +80945,7 @@ function areEqualValues2(a2, b2) {
 function isEmpty2(display) {
   return display == null || typeof display === "string" && !display.trim();
 }
-var SelectInput3 = forwardRef763((props, ref2) => {
+var SelectInput3 = forwardRef762((props, ref2) => {
   const {
     MenuComponent = Menu_default,
     "aria-label": ariaLabel,
@@ -80856,32 +80982,32 @@ var SelectInput3 = forwardRef763((props, ref2) => {
     default: defaultValue,
     name: "Select"
   });
-  const inputRef = React852.useRef(null);
-  const displayRef = React852.useRef(null);
-  const [displayNode, setDisplayNode] = React852.useState(null);
-  const { current: isOpenControlled } = React852.useRef(openProp != null);
-  const [menuMinWidthState, setMenuMinWidthState] = useState42();
-  const [openState, setOpenState] = React852.useState(false);
+  const inputRef = React859.useRef(null);
+  const displayRef = React859.useRef(null);
+  const [displayNode, setDisplayNode] = React859.useState(null);
+  const { current: isOpenControlled } = React859.useRef(openProp != null);
+  const [menuMinWidthState, setMenuMinWidthState] = useState39();
+  const [openState, setOpenState] = React859.useState(false);
   const handleRef = useForkRef(ref2, inputRefProp);
-  const handleDisplayRef = React852.useCallback((node4) => {
+  const handleDisplayRef = React859.useCallback((node4) => {
     displayRef.current = node4;
     if (node4) {
       setDisplayNode(node4);
     }
   }, []);
-  React852.useImperativeHandle(handleRef, () => ({
+  React859.useImperativeHandle(handleRef, () => ({
     focus: () => {
       displayRef.current.focus();
     },
     node: inputRef.current,
     value
   }), [value]);
-  React852.useEffect(() => {
+  React859.useEffect(() => {
     if (autoFocus) {
       displayRef.current.focus();
     }
   }, [autoFocus]);
-  React852.useEffect(() => {
+  React859.useEffect(() => {
     const label3 = ownerDocument(displayRef.current).getElementById(labelId);
     if (label3) {
       const handler = () => {
@@ -80920,7 +81046,7 @@ var SelectInput3 = forwardRef763((props, ref2) => {
   const handleClose = (event) => {
     update4(false, event);
   };
-  const childrenArray = React852.Children.toArray(children2);
+  const childrenArray = React859.Children.toArray(children2);
   const handleChange = (event) => {
     const index4 = childrenArray.map((child2) => child2.props.value).indexOf(event.target.value);
     if (index4 === -1) {
@@ -80994,7 +81120,7 @@ var SelectInput3 = forwardRef763((props, ref2) => {
   const displayMultiple = [];
   let computeDisplay = false;
   let foundMatch = false;
-  if ((0, import_utils254.isFilled)({ value }) || displayEmpty) {
+  if ((0, import_utils258.isFilled)({ value }) || displayEmpty) {
     if (renderValue) {
       display = renderValue(value);
     } else {
@@ -81002,7 +81128,7 @@ var SelectInput3 = forwardRef763((props, ref2) => {
     }
   }
   const items = childrenArray.map((child) => {
-    if (!React852.isValidElement(child)) {
+    if (!React859.isValidElement(child)) {
       return null;
     }
     if (true) {
@@ -81031,7 +81157,7 @@ var SelectInput3 = forwardRef763((props, ref2) => {
     if (selected) {
       foundMatch = true;
     }
-    return React852.cloneElement(child, {
+    return React859.cloneElement(child, {
       "aria-selected": selected ? "true" : void 0,
       onClick: handleItemClick(child),
       onKeyUp: (event) => {
@@ -81049,7 +81175,7 @@ var SelectInput3 = forwardRef763((props, ref2) => {
     });
   });
   if (true) {
-    React852.useEffect(() => {
+    React859.useEffect(() => {
       if (!foundMatch && !multiple && value !== "") {
         const values5 = childrenArray.map((child) => child.props.value);
         console.warn([
@@ -81074,7 +81200,7 @@ var SelectInput3 = forwardRef763((props, ref2) => {
     tabIndex = disabled3 ? void 0 : 0;
   }
   const buttonId = SelectDisplayProps.id || (name ? `mui-component-select-${name}` : void 0);
-  return /* @__PURE__ */ React852.createElement(React852.Fragment, null, /* @__PURE__ */ React852.createElement("div", {
+  return /* @__PURE__ */ React859.createElement(React859.Fragment, null, /* @__PURE__ */ React859.createElement("div", {
     ref: handleDisplayRef,
     tabIndex,
     role: "button",
@@ -81092,9 +81218,9 @@ var SelectInput3 = forwardRef763((props, ref2) => {
       [classes.disabled]: disabled3
     }, className, SelectDisplayProps.className),
     id: buttonId
-  }, isEmpty2(display) ? /* @__PURE__ */ React852.createElement("span", {
+  }, isEmpty2(display) ? /* @__PURE__ */ React859.createElement("span", {
     dangerouslySetInnerHTML: { __html: "&#8203;" }
-  }) : display), /* @__PURE__ */ React852.createElement("input", {
+  }) : display), /* @__PURE__ */ React859.createElement("input", {
     value: Array.isArray(value) ? value.join(",") : value,
     name,
     ref: inputRef,
@@ -81105,14 +81231,14 @@ var SelectInput3 = forwardRef763((props, ref2) => {
     className: classes.nativeInput,
     autoFocus,
     ...other
-  }), /* @__PURE__ */ React852.createElement(IconComponent, {
+  }), /* @__PURE__ */ React859.createElement(IconComponent, {
     disabled: disabled3,
     className: clsx_m_default(classes.icon, classes.iconOpen && {
       [classes.iconOpen]: open
     }, classes.disabled && {
       [classes.disabled]: disabled3
     })
-  }), /* @__PURE__ */ React852.createElement(MenuComponent, {
+  }), /* @__PURE__ */ React859.createElement(MenuComponent, {
     id: `menu-${name || ""}`,
     anchorEl: displayNode,
     open,
@@ -81275,7 +81401,7 @@ var leftBottomAnchorOrigin = {
   horizontal: "left",
   vertical: "bottom"
 };
-var _RcSelect = forwardRef764((inProps, ref2) => {
+var _RcSelect = forwardRef763((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcSelect" });
   const {
     children: children2,
@@ -81296,7 +81422,7 @@ var _RcSelect = forwardRef764((inProps, ref2) => {
     helperText,
     color: color2,
     label: label3,
-    id: id3,
+    id: id2,
     className,
     title,
     validate,
@@ -81370,9 +81496,9 @@ var _RcSelect = forwardRef764((inProps, ref2) => {
   }, [InputProps, placeholder2, nonValue, applyClasses, variant]);
   const valueIsNumber = typeof value === "number";
   const currValue = valueIsNumber ? value : value || "";
-  return /* @__PURE__ */ React853.createElement(RcSelectTextField, {
+  return /* @__PURE__ */ React860.createElement(RcSelectTextField, {
     ref: ref2,
-    id: id3,
+    id: id2,
     className,
     title,
     onChange,
@@ -81405,23 +81531,23 @@ RcSelect.defaultProps = {
 };
 
 // ../juno-core/src/components/Forms/Select/PlainSelect/PlainSelect.tsx
-import React856, { forwardRef as forwardRef767, useMemo as useMemo80, useState as useState45 } from "react";
+import React863, { forwardRef as forwardRef766, useMemo as useMemo80, useState as useState42 } from "react";
 
 // ../juno-core/src/components/Menu/MenuList/MenuList.tsx
-import React854, {
-  forwardRef as forwardRef765,
-  memo as memo577,
-  useContext as useContext31,
+import React861, {
+  forwardRef as forwardRef764,
+  memo as memo574,
+  useContext as useContext30,
   useMemo as useMemo78,
-  useState as useState43
+  useState as useState40
 } from "react";
 
 // ../juno-core/src/components/Menu/MenuList/utils/MenuListUtils.ts
 var RcMenuListClasses = RcClasses([], "RcMenuList");
 
 // ../juno-core/src/components/Menu/MenuList/MenuList.tsx
-var MemoMuiListMenu = memo577(MenuList_default);
-var _RcMenuList = forwardRef765((inProps, ref2) => {
+var MemoMuiListMenu = memo574(MenuList_default);
+var _RcMenuList = forwardRef764((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcMenuList" });
   const {
     classes: classesProp,
@@ -81431,20 +81557,20 @@ var _RcMenuList = forwardRef765((inProps, ref2) => {
     maxHeight: maxHeight2,
     ...rest
   } = props;
-  const [focusedMenuItemId, setFocusedMenuItemId] = useState43(null);
-  const id3 = useId2("menu-list", true);
+  const [focusedMenuItemId, setFocusedMenuItemId] = useState40(null);
+  const id2 = useId2("menu-list", true);
   const classes = useMemo78(() => combineClasses(RcMenuListClasses, classesProp), [classesProp]);
-  const subMenuContext = useContext31(RcSubMenuContext);
+  const subMenuContext = useContext30(RcSubMenuContext);
   const ctxValue = useMemo78(() => ({
-    menuListId: id3,
+    menuListId: id2,
     autoClose: !!autoClose || subMenuContext.autoClose,
     focusedMenuItemId,
     setFocusedMenuItemId,
     onClose: onCloseProp
-  }), [autoClose, focusedMenuItemId, id3, onCloseProp, subMenuContext.autoClose]);
-  return /* @__PURE__ */ React854.createElement(RcMenuListContext.Provider, {
+  }), [autoClose, focusedMenuItemId, id2, onCloseProp, subMenuContext.autoClose]);
+  return /* @__PURE__ */ React861.createElement(RcMenuListContext.Provider, {
     value: ctxValue
-  }, /* @__PURE__ */ React854.createElement(MemoMuiListMenu, {
+  }, /* @__PURE__ */ React861.createElement(MemoMuiListMenu, {
     ...rest,
     ref: ref2,
     classes
@@ -81459,14 +81585,14 @@ RcMenuList.defaultProps = {
 RcMenuList.displayName = "RcMenuList";
 
 // ../juno-core/src/components/Menu/SubMenu/SubMenu.tsx
-import React855, {
-  forwardRef as forwardRef766,
-  memo as memo578,
-  useContext as useContext32,
-  useLayoutEffect as useLayoutEffect30,
+import React862, {
+  forwardRef as forwardRef765,
+  memo as memo575,
+  useContext as useContext31,
+  useLayoutEffect as useLayoutEffect28,
   useMemo as useMemo79,
-  useRef as useRef97,
-  useState as useState44
+  useRef as useRef94,
+  useState as useState41
 } from "react";
 
 // ../juno-core/src/components/Menu/SubMenu/styles/SubMenuStyle.tsx
@@ -81488,8 +81614,8 @@ var RcSubMenuClasses = RcClasses([], "RcSubMenu");
 
 // ../juno-core/src/components/Menu/SubMenu/SubMenu.tsx
 var POPPER_OFFSET = 2;
-var MemoMenuList = memo578(RcMenuList);
-var _RcSubMenu = forwardRef766((inProps, ref2) => {
+var MemoMenuList = memo575(RcMenuList);
+var _RcSubMenu = forwardRef765((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcSubMenu" });
   const {
     classes: classesProp,
@@ -81506,16 +81632,16 @@ var _RcSubMenu = forwardRef766((inProps, ref2) => {
     onClose,
     ...rest
   } = props;
-  const _popperRef = useRef97(null);
+  const _popperRef = useRef94(null);
   const popperRef = useForkRef2(_popperRef, PopperProps.ref || null);
   const popperId = useId2(PopperProps.id);
-  const menuItemIdRef = useRef97(null);
-  const [anchorEl, setAnchorEl] = useState44(null);
-  const [open, setOpen] = useState44(false);
-  const menuListContext = useContext32(RcMenuListContext);
-  const menuContext = useContext32(RcMenuContext);
-  const subMenuContext = useContext32(RcSubMenuContext);
-  const ignoreMouseEventRef = useRef97(false);
+  const menuItemIdRef = useRef94(null);
+  const [anchorEl, setAnchorEl] = useState41(null);
+  const [open, setOpen] = useState41(false);
+  const menuListContext = useContext31(RcMenuListContext);
+  const menuContext = useContext31(RcMenuContext);
+  const subMenuContext = useContext31(RcSubMenuContext);
+  const ignoreMouseEventRef = useRef94(false);
   const { externalWindow } = useRcPortalWindowContext();
   const handleClose = (e2, reason) => {
     onClose?.(e2, reason);
@@ -81561,7 +81687,7 @@ var _RcSubMenu = forwardRef766((inProps, ref2) => {
     }
   };
   const classes = useMemo79(() => combineClasses(RcSubMenuClasses, classesProp), [classesProp]);
-  const title = useMemo79(() => typeof titleProp === "string" ? /* @__PURE__ */ React855.createElement(RcListItemText, null, titleProp) : titleProp, [titleProp]);
+  const title = useMemo79(() => typeof titleProp === "string" ? /* @__PURE__ */ React862.createElement(RcListItemText, null, titleProp) : titleProp, [titleProp]);
   const {
     onKeyDown: onPopperKeyDown,
     onMouseLeave: onPopperMouseLeave,
@@ -81616,7 +81742,7 @@ var _RcSubMenu = forwardRef766((inProps, ref2) => {
       handleClose(e2, "popperMouseLeave");
     }
   };
-  useLayoutEffect30(() => {
+  useLayoutEffect28(() => {
     if (open && menuListContext.menuListId !== "" && menuListContext.focusedMenuItemId !== menuItemIdRef.current) {
       handleCloseSubMenu();
     }
@@ -81626,7 +81752,7 @@ var _RcSubMenu = forwardRef766((inProps, ref2) => {
     menuListContext.menuListId,
     open
   ]);
-  useLayoutEffect30(() => {
+  useLayoutEffect28(() => {
     if (open && menuListContext.menuListId === "" && menuContext.focusedMenuItemId !== menuItemIdRef.current) {
       handleCloseSubMenu();
     }
@@ -81656,7 +81782,7 @@ var _RcSubMenu = forwardRef766((inProps, ref2) => {
       boundariesElement: externalWindow ? "window" : "viewport"
     }
   }), [externalWindow]);
-  return /* @__PURE__ */ React855.createElement(React855.Fragment, null, /* @__PURE__ */ React855.createElement(RcMenuItem, {
+  return /* @__PURE__ */ React862.createElement(React862.Fragment, null, /* @__PURE__ */ React862.createElement(RcMenuItem, {
     "aria-controls": popperId,
     ...rest,
     ref: ref2,
@@ -81671,11 +81797,11 @@ var _RcSubMenu = forwardRef766((inProps, ref2) => {
     isSubMenuItem: true,
     "aria-haspopup": "true",
     "aria-expanded": open
-  }, title, /* @__PURE__ */ React855.createElement(StyledListItemSecondaryAction, null, /* @__PURE__ */ React855.createElement(RcIcon, {
+  }, title, /* @__PURE__ */ React862.createElement(StyledListItemSecondaryAction, null, /* @__PURE__ */ React862.createElement(RcIcon, {
     size: "medium",
     color: "neutral.f04",
     symbol: ArrowRight_default
-  }))), /* @__PURE__ */ React855.createElement(RcPopper, {
+  }))), /* @__PURE__ */ React862.createElement(RcPopper, {
     role: "menu",
     id: popperId,
     container: externalWindow?.document.body,
@@ -81688,14 +81814,14 @@ var _RcSubMenu = forwardRef766((inProps, ref2) => {
     modifiers: modifiers2,
     onKeyDown: handlePopperKeyDown,
     onMouseLeave: handlePopperMouseLeave
-  }, ({ TransitionProps: TransitionProps4 }) => /* @__PURE__ */ React855.createElement(StyledGrow, {
+  }, ({ TransitionProps: TransitionProps4 }) => /* @__PURE__ */ React862.createElement(StyledGrow, {
     ...TransitionProps4,
     timeout: "auto"
-  }, /* @__PURE__ */ React855.createElement(RcPaper, null, /* @__PURE__ */ React855.createElement(RcSubMenuContext.Provider, {
+  }, /* @__PURE__ */ React862.createElement(RcPaper, null, /* @__PURE__ */ React862.createElement(RcSubMenuContext.Provider, {
     value: ctxValue
-  }, /* @__PURE__ */ React855.createElement(ClickAwayListener_default, {
+  }, /* @__PURE__ */ React862.createElement(ClickAwayListener_default, {
     onClickAway: handlePopperClickAway
-  }, /* @__PURE__ */ React855.createElement(MemoMenuList, {
+  }, /* @__PURE__ */ React862.createElement(MemoMenuList, {
     ...MenuListProps,
     autoFocusItem: true
   }, children2)))))));
@@ -81794,7 +81920,7 @@ var plainAnchorOrigin = {
   horizontal: "left",
   vertical: "bottom"
 };
-var _RcPlainSelect = forwardRef767(({
+var _RcPlainSelect = forwardRef766(({
   children: children2,
   className,
   classes,
@@ -81823,7 +81949,7 @@ var _RcPlainSelect = forwardRef767(({
     default: defaultValue,
     name: displayName2
   });
-  const [open, setOpen] = useState45(false);
+  const [open, setOpen] = useState42(false);
   const isEmpty3 = !hasValue2(value);
   if (isEmpty3) {
     logInDev({
@@ -81840,7 +81966,7 @@ var _RcPlainSelect = forwardRef767(({
   }, [children2, value]);
   const _renderValue = (newValue) => {
     const _variant = switchVariantToButtonVariant(variant);
-    return /* @__PURE__ */ React856.createElement(RcButton, {
+    return /* @__PURE__ */ React863.createElement(RcButton, {
       ref: ref2,
       innerRef,
       disabled: disabled3,
@@ -81852,9 +81978,9 @@ var _RcPlainSelect = forwardRef767(({
       "aria-label": "open menu",
       "aria-haspopup": "listbox",
       ...combineProps(defaultButtonProps, ButtonProps)
-    }, renderValue ? renderValue(newValue) : display, IconComponent && /* @__PURE__ */ React856.createElement(IconComponent, {
+    }, renderValue ? renderValue(newValue) : display, IconComponent && /* @__PURE__ */ React863.createElement(IconComponent, {
       open
-    }) || /* @__PURE__ */ React856.createElement(SelectArrowDownIcon, {
+    }) || /* @__PURE__ */ React863.createElement(SelectArrowDownIcon, {
       color: void 0,
       className: open ? "MuiSelect-iconOpen" : ""
     }));
@@ -81878,7 +82004,7 @@ var _RcPlainSelect = forwardRef767(({
       disableUnderline: true
     }, InputProps);
   }, [InputProps]);
-  return /* @__PURE__ */ React856.createElement(RcSelect, {
+  return /* @__PURE__ */ React863.createElement(RcSelect, {
     className,
     value,
     variant: "none",
@@ -81914,7 +82040,7 @@ RcPlainSelect.defaultProps = {
 RcPlainSelect.displayName = displayName2;
 
 // ../juno-core/src/components/Forms/Slider/Slider.tsx
-import React857, { forwardRef as forwardRef768, useMemo as useMemo81 } from "react";
+import React864, { forwardRef as forwardRef767, useMemo as useMemo81 } from "react";
 
 // ../juno-core/src/components/Forms/Slider/utils/SliderUtil.ts
 var RcSliderClasses = RcClasses(["thumb", "active", "trackInverted", "track", "focusVisible", "disabled"], "RcSlider");
@@ -81955,11 +82081,11 @@ var SliderStyle = (props) => {
 };
 
 // ../juno-core/src/components/Forms/Slider/Slider.tsx
-var _RcSlider = forwardRef768((inProps, ref2) => {
+var _RcSlider = forwardRef767((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcSlider" });
   const { classes: classesProp, color: color2, children: children2, ...rest } = props;
   const classes = useMemo81(() => combineClasses(RcSliderClasses, classesProp), [classesProp]);
-  return /* @__PURE__ */ React857.createElement(Slider_default, {
+  return /* @__PURE__ */ React864.createElement(Slider_default, {
     ...rest,
     ref: ref2,
     classes
@@ -81975,7 +82101,7 @@ RcSlider.defaultProps = {
 RcSlider.displayName = "RcSlider";
 
 // ../juno-core/src/components/Forms/Textarea/Textarea.tsx
-import React858, { forwardRef as forwardRef769, useMemo as useMemo82 } from "react";
+import React865, { forwardRef as forwardRef768, useMemo as useMemo82 } from "react";
 
 // ../juno-core/src/components/Forms/Textarea/utils/TextareaUtils.ts
 var RcTextareaInputClasses = RcClasses(["inputMultiline", "root"], "RcTextareaInput");
@@ -82006,7 +82132,7 @@ var TextareaStyle = ({
 };
 
 // ../juno-core/src/components/Forms/Textarea/Textarea.tsx
-var _RcTextarea = forwardRef769((inProps, ref2) => {
+var _RcTextarea = forwardRef768((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcTextarea" });
   const {
     classes,
@@ -82023,7 +82149,7 @@ var _RcTextarea = forwardRef769((inProps, ref2) => {
   if (minRows || maxRows) {
     rows = void 0;
   }
-  return /* @__PURE__ */ React858.createElement(RcTextField, {
+  return /* @__PURE__ */ React865.createElement(RcTextField, {
     ...rest,
     rows,
     minRows,
@@ -82043,7 +82169,7 @@ RcTextarea.defaultProps = {
 RcTextarea.displayName = "RcTextarea";
 
 // ../juno-core/src/components/Grid/Grid.tsx
-import React859, { forwardRef as forwardRef770, useMemo as useMemo83 } from "react";
+import React866, { forwardRef as forwardRef769, useMemo as useMemo83 } from "react";
 
 // ../juno-core/src/components/Grid/styles/GridStyle.tsx
 var GridStyle = () => {
@@ -82054,11 +82180,11 @@ var GridStyle = () => {
 var RcGridClasses = RcClasses([], "RcGrid");
 
 // ../juno-core/src/components/Grid/Grid.tsx
-var _RcGrid = forwardRef770((inProps, ref2) => {
+var _RcGrid = forwardRef769((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcGrid" });
   const { classes: classesProp, children: children2, ...rest } = props;
   const classes = useMemo83(() => combineClasses(RcGridClasses, classesProp), [classesProp]);
-  return /* @__PURE__ */ React859.createElement(Grid_default, {
+  return /* @__PURE__ */ React866.createElement(Grid_default, {
     ...rest,
     ref: ref2,
     classes
@@ -82075,12 +82201,12 @@ var RcHidden = Hidden_default;
 RcHidden.displayName = "RcHidden";
 
 // ../juno-core/src/components/InlineEditable/InlineEditable.tsx
-import React860, {
-  forwardRef as forwardRef771,
-  useEffect as useEffect62,
+import React867, {
+  forwardRef as forwardRef770,
+  useEffect as useEffect58,
   useMemo as useMemo84,
-  useRef as useRef98,
-  useState as useState46
+  useRef as useRef95,
+  useState as useState43
 } from "react";
 var import_isString2 = __toModule(require_isString());
 var import_trimEnd = __toModule(require_trimEnd());
@@ -82195,7 +82321,7 @@ var InlineEditableStyle = ({ variant, multiline, fullWidth, disabled: disabled3,
 };
 
 // ../juno-core/src/components/InlineEditable/InlineEditable.tsx
-var _RcInlineEditable = forwardRef771((inProps, ref2) => {
+var _RcInlineEditable = forwardRef770((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcInlineEditable" });
   const {
     onSave,
@@ -82223,12 +82349,12 @@ var _RcInlineEditable = forwardRef771((inProps, ref2) => {
     inputProps,
     ...rest
   } = props;
-  const [isEditing, setEditing] = useState46(false);
-  const [isSaving, setSaving] = useState46(false);
+  const [isEditing, setEditing] = useState43(false);
+  const [isSaving, setSaving] = useState43(false);
   const [draftRef, setDraft] = useRefState("");
-  const isNotNeedSaveWhenBlurRef = useRef98(false);
-  const textFieldRef = useRef98();
-  const labelRef = useRef98(null);
+  const isNotNeedSaveWhenBlurRef = useRef95(false);
+  const textFieldRef = useRef95();
+  const labelRef = useRef95(null);
   const saving = isSaving || savingProp;
   const handleSave = async (newValue, reason) => {
     const outputValue = multiline ? (0, import_trimEnd.default)(newValue) : newValue.trim();
@@ -82302,7 +82428,7 @@ var _RcInlineEditable = forwardRef771((inProps, ref2) => {
     e2.stopPropagation();
   });
   const classes = useMemo84(() => combineClasses(RcInlineEditableClasses, classesProp), [classesProp]);
-  useEffect62(() => {
+  useEffect58(() => {
     return () => {
       if (shouldRemoveNode && textFieldRef && textFieldRef.current) {
         clearReactReferencesInNode(textFieldRef.current);
@@ -82318,7 +82444,7 @@ var _RcInlineEditable = forwardRef771((inProps, ref2) => {
   const draft = draftRef.current;
   const displayValue = isEditing || saving ? draft : value;
   const toTooltipTitle = ((0, import_isString2.default)(TooltipProps?.title) ? TooltipProps?.title : void 0) ?? tooltipTitle;
-  const children2 = /* @__PURE__ */ React860.createElement("div", {
+  const children2 = /* @__PURE__ */ React867.createElement("div", {
     ref: ref2,
     "data-test-automation-id": automationId,
     onKeyDown: handleKeyDown2,
@@ -82327,7 +82453,7 @@ var _RcInlineEditable = forwardRef771((inProps, ref2) => {
     }),
     onMouseDown: handleMouseDown,
     ...rest
-  }, disabled3 ? null : /* @__PURE__ */ React860.createElement(Component7, {
+  }, disabled3 ? null : /* @__PURE__ */ React867.createElement(Component7, {
     ref: textFieldRef,
     value: draft,
     autoComplete: "off",
@@ -82345,7 +82471,7 @@ var _RcInlineEditable = forwardRef771((inProps, ref2) => {
       onBlurCapture: handleBlur,
       className: classes.textField
     }, inputProps)
-  }), /* @__PURE__ */ React860.createElement("div", {
+  }), /* @__PURE__ */ React867.createElement("div", {
     ref: labelRef,
     title: title || displayValue,
     className: clsx_m_default(classes.label, {
@@ -82356,7 +82482,7 @@ var _RcInlineEditable = forwardRef771((inProps, ref2) => {
     onKeyDown: disabled3 || saving ? void 0 : focusTextField
   }, displayValue || placeholder2));
   if (!disabled3 && toTooltipTitle && (TooltipProps || tooltipTitle)) {
-    return /* @__PURE__ */ React860.createElement(RcTooltip, {
+    return /* @__PURE__ */ React867.createElement(RcTooltip, {
       tooltipForceHide: isEditing,
       disableFocusListener: true,
       ...TooltipProps,
@@ -82375,7 +82501,7 @@ RcInlineEditable.defaultProps = {
 RcInlineEditable.displayName = "RcInlineEditable";
 
 // ../juno-core/src/components/Link/Link.tsx
-import React861, { forwardRef as forwardRef772 } from "react";
+import React868, { forwardRef as forwardRef771 } from "react";
 
 // ../juno-core/src/components/Link/utils/LinkUtils.ts
 var RcLinkTypographies = {
@@ -82425,7 +82551,7 @@ var LinkStyle = ({
 };
 
 // ../juno-core/src/components/Link/Link.tsx
-var _RcLink = forwardRef772((inProps, ref2) => {
+var _RcLink = forwardRef771((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcLink" });
   if (true) {
     useDeprecatedCheck(RcLink, props, [
@@ -82463,7 +82589,7 @@ var _RcLink = forwardRef772((inProps, ref2) => {
     checkKeys: ["Enter"]
   });
   const Component7 = ComponentProp;
-  return /* @__PURE__ */ React861.createElement(Component7, {
+  return /* @__PURE__ */ React868.createElement(Component7, {
     ...rest,
     tabIndex: disabled3 ? -1 : tabIndex,
     ref: ref2,
@@ -82483,10 +82609,10 @@ RcLink.defaultProps = {
 RcLink.displayName = "RcLink";
 
 // ../juno-core/src/components/Loading/Loading.tsx
-import React863 from "react";
+import React870 from "react";
 
 // ../juno-core/src/components/Loading/styles/StyledLoadingPage.tsx
-import React862 from "react";
+import React869 from "react";
 var StyledLoadingPage = styled_components_default.div`
   position: absolute;
   width: 100%;
@@ -82500,10 +82626,10 @@ var StyledLoadingPage = styled_components_default.div`
   background: ${palette22("neutral", "b01")};
   z-index: 1000;
 `;
-var RcDefaultLoadingWithDelay = withDelay(({ backgroundType, size, disableShrink }) => /* @__PURE__ */ React862.createElement(StyledLoadingPage, {
+var RcDefaultLoadingWithDelay = withDelay(({ backgroundType, size, disableShrink }) => /* @__PURE__ */ React869.createElement(StyledLoadingPage, {
   "data-test-automation-id": "loading-page",
   backgroundType
-}, /* @__PURE__ */ React862.createElement(RcCircularProgress, {
+}, /* @__PURE__ */ React869.createElement(RcCircularProgress, {
   size,
   disableShrink
 })));
@@ -82526,8 +82652,8 @@ var RcLoading = (inProps) => {
   } = props;
   const childrenWhenLoading = !keepMounted && loading ? null : children2;
   const getCloneNode = () => {
-    if (childrenWhenLoading && React863.isValidElement(childrenWhenLoading) && childrenWhenLoading.type !== React863.Fragment) {
-      return /* @__PURE__ */ React863.createElement(RcBox, {
+    if (childrenWhenLoading && React870.isValidElement(childrenWhenLoading) && childrenWhenLoading.type !== React870.Fragment) {
+      return /* @__PURE__ */ React870.createElement(RcBox, {
         clone: true,
         display: "none"
       }, childrenWhenLoading);
@@ -82540,7 +82666,7 @@ var RcLoading = (inProps) => {
     }
     return childrenWhenLoading;
   };
-  return /* @__PURE__ */ React863.createElement(React863.Fragment, null, loading && /* @__PURE__ */ React863.createElement(LoadingComponent, {
+  return /* @__PURE__ */ React870.createElement(React870.Fragment, null, loading && /* @__PURE__ */ React870.createElement(LoadingComponent, {
     delay,
     backgroundType,
     size,
@@ -82549,13 +82675,13 @@ var RcLoading = (inProps) => {
 };
 
 // ../juno-core/src/components/Pagination/Pagination/Pagination.tsx
-import React870, { forwardRef as forwardRef775, useMemo as useMemo85 } from "react";
+import React877, { forwardRef as forwardRef774, useMemo as useMemo85 } from "react";
 
 // ../../node_modules/@material-ui/lab/esm/Pagination/Pagination.js
 var import_prop_types126 = __toModule(require_prop_types());
 import {
-  createElement as createElement694,
-  forwardRef as forwardRef774
+  createElement as createElement687,
+  forwardRef as forwardRef773
 } from "react";
 
 // ../../node_modules/@material-ui/lab/esm/Pagination/usePagination.js
@@ -82631,39 +82757,39 @@ function usePagination() {
 // ../../node_modules/@material-ui/lab/esm/PaginationItem/PaginationItem.js
 var import_prop_types125 = __toModule(require_prop_types());
 import {
-  createElement as createElement693,
-  forwardRef as forwardRef773
+  createElement as createElement686,
+  forwardRef as forwardRef772
 } from "react";
 
 // ../../node_modules/@material-ui/lab/esm/internal/svg-icons/FirstPage.js
 import {
-  createElement as createElement689
+  createElement as createElement682
 } from "react";
-var FirstPage_default = createSvgIcon(/* @__PURE__ */ createElement689("path", {
+var FirstPage_default = createSvgIcon(/* @__PURE__ */ createElement682("path", {
   d: "M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"
 }), "FirstPage");
 
 // ../../node_modules/@material-ui/lab/esm/internal/svg-icons/LastPage.js
 import {
-  createElement as createElement690
+  createElement as createElement683
 } from "react";
-var LastPage_default = createSvgIcon(/* @__PURE__ */ createElement690("path", {
+var LastPage_default = createSvgIcon(/* @__PURE__ */ createElement683("path", {
   d: "M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"
 }), "LastPage");
 
 // ../../node_modules/@material-ui/lab/esm/internal/svg-icons/NavigateBefore.js
 import {
-  createElement as createElement691
+  createElement as createElement684
 } from "react";
-var NavigateBefore_default = createSvgIcon(/* @__PURE__ */ createElement691("path", {
+var NavigateBefore_default = createSvgIcon(/* @__PURE__ */ createElement684("path", {
   d: "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
 }), "NavigateBefore");
 
 // ../../node_modules/@material-ui/lab/esm/internal/svg-icons/NavigateNext.js
 import {
-  createElement as createElement692
+  createElement as createElement685
 } from "react";
-var NavigateNext_default = createSvgIcon(/* @__PURE__ */ createElement692("path", {
+var NavigateNext_default = createSvgIcon(/* @__PURE__ */ createElement685("path", {
   d: "M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
 }), "NavigateNext");
 
@@ -82819,7 +82945,7 @@ var styles158 = function styles159(theme) {
     }
   };
 };
-var PaginationItem = /* @__PURE__ */ forwardRef773(function PaginationItem2(props, ref2) {
+var PaginationItem = /* @__PURE__ */ forwardRef772(function PaginationItem2(props, ref2) {
   var classes = props.classes, className = props.className, _props$color = props.color, color2 = _props$color === void 0 ? "standard" : _props$color, component = props.component, _props$disabled = props.disabled, disabled3 = _props$disabled === void 0 ? false : _props$disabled, page = props.page, _props$selected = props.selected, selected = _props$selected === void 0 ? false : _props$selected, _props$shape = props.shape, shape2 = _props$shape === void 0 ? "round" : _props$shape, _props$size = props.size, size = _props$size === void 0 ? "medium" : _props$size, _props$type = props.type, type3 = _props$type === void 0 ? "page" : _props$type, _props$variant = props.variant, variant = _props$variant === void 0 ? "text" : _props$variant, other = _objectWithoutProperties(props, ["classes", "className", "color", "component", "disabled", "page", "selected", "shape", "size", "type", "variant"]);
   var theme = useTheme2();
   var normalizedIcons = theme.direction === "rtl" ? {
@@ -82834,16 +82960,16 @@ var PaginationItem = /* @__PURE__ */ forwardRef773(function PaginationItem2(prop
     last: LastPage_default
   };
   var Icon = normalizedIcons[type3];
-  return type3 === "start-ellipsis" || type3 === "end-ellipsis" ? /* @__PURE__ */ createElement693("div", {
+  return type3 === "start-ellipsis" || type3 === "end-ellipsis" ? /* @__PURE__ */ createElement686("div", {
     ref: ref2,
     className: clsx_m_default(classes.root, classes.ellipsis, disabled3 && classes.disabled, size !== "medium" && classes["size".concat(capitalize(size))])
-  }, "\u2026") : /* @__PURE__ */ createElement693(ButtonBase_default, _extends({
+  }, "\u2026") : /* @__PURE__ */ createElement686(ButtonBase_default, _extends({
     ref: ref2,
     component,
     disabled: disabled3,
     focusVisibleClassName: classes.focusVisible,
     className: clsx_m_default(classes.root, classes.page, classes[variant], classes[shape2], className, color2 !== "standard" && classes["".concat(variant).concat(capitalize(color2))], disabled3 && classes.disabled, selected && classes.selected, size !== "medium" && classes["size".concat(capitalize(size))])
-  }, other), type3 === "page" && page, Icon ? /* @__PURE__ */ createElement693(Icon, {
+  }, other), type3 === "page" && page, Icon ? /* @__PURE__ */ createElement686(Icon, {
     className: classes.icon
   }) : null);
 });
@@ -82882,21 +83008,21 @@ function defaultGetAriaLabel(type3, page, selected) {
   }
   return "Go to ".concat(type3, " page");
 }
-var Pagination = /* @__PURE__ */ forwardRef774(function Pagination2(props, ref2) {
+var Pagination = /* @__PURE__ */ forwardRef773(function Pagination2(props, ref2) {
   var boundaryCount = props.boundaryCount, classes = props.classes, className = props.className, _props$color = props.color, color2 = _props$color === void 0 ? "standard" : _props$color, count2 = props.count, defaultPage = props.defaultPage, disabled3 = props.disabled, _props$getItemAriaLab = props.getItemAriaLabel, getItemAriaLabel = _props$getItemAriaLab === void 0 ? defaultGetAriaLabel : _props$getItemAriaLab, hideNextButton = props.hideNextButton, hidePrevButton = props.hidePrevButton, onChange = props.onChange, page = props.page, _props$renderItem = props.renderItem, renderItem = _props$renderItem === void 0 ? function(item) {
-    return /* @__PURE__ */ createElement694(PaginationItem_default, item);
+    return /* @__PURE__ */ createElement687(PaginationItem_default, item);
   } : _props$renderItem, _props$shape = props.shape, shape2 = _props$shape === void 0 ? "round" : _props$shape, showFirstButton = props.showFirstButton, showLastButton = props.showLastButton, siblingCount = props.siblingCount, _props$size = props.size, size = _props$size === void 0 ? "medium" : _props$size, _props$variant = props.variant, variant = _props$variant === void 0 ? "text" : _props$variant, other = _objectWithoutProperties(props, ["boundaryCount", "classes", "className", "color", "count", "defaultPage", "disabled", "getItemAriaLabel", "hideNextButton", "hidePrevButton", "onChange", "page", "renderItem", "shape", "showFirstButton", "showLastButton", "siblingCount", "size", "variant"]);
   var _usePagination = usePagination(_extends({}, props, {
     componentName: "Pagination"
   })), items = _usePagination.items;
-  return /* @__PURE__ */ createElement694("nav", _extends({
+  return /* @__PURE__ */ createElement687("nav", _extends({
     "aria-label": "pagination navigation",
     className: clsx_m_default(classes.root, className),
     ref: ref2
-  }, other), /* @__PURE__ */ createElement694("ul", {
+  }, other), /* @__PURE__ */ createElement687("ul", {
     className: classes.ul
   }, items.map(function(item, index4) {
-    return /* @__PURE__ */ createElement694("li", {
+    return /* @__PURE__ */ createElement687("li", {
       key: index4
     }, renderItem(_extends({}, item, {
       color: color2,
@@ -82941,11 +83067,11 @@ var paginationStyle = () => {
 var RcPaginationClasses = RcClasses([], "RcPagination");
 
 // ../juno-core/src/components/Pagination/Pagination/Pagination.tsx
-var _RcPagination = forwardRef775((inProps, ref2) => {
+var _RcPagination = forwardRef774((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcPagination" });
   const { classes: classesProp, ...reset2 } = props;
   const classes = useMemo85(() => combineProps(RcPaginationClasses, classesProp), [classesProp]);
-  return /* @__PURE__ */ React870.createElement(Pagination_default, {
+  return /* @__PURE__ */ React877.createElement(Pagination_default, {
     ref: ref2,
     classes,
     ...reset2
@@ -82958,17 +83084,17 @@ RcPagination.defaultProps = {};
 RcPagination.displayName = "RcPagination";
 
 // ../juno-core/src/components/Pagination/PaginationItem/PaginationItem.tsx
-import React871, { forwardRef as forwardRef776, useMemo as useMemo86 } from "react";
+import React878, { forwardRef as forwardRef775, useMemo as useMemo86 } from "react";
 
 // ../juno-core/src/components/Pagination/PaginationItem/utils/PaginationItemUtils.ts
 var RcPaginationItemClasses = RcClasses([], "RcPaginationItem");
 
 // ../juno-core/src/components/Pagination/PaginationItem/PaginationItem.tsx
-var _RcPaginationItem = forwardRef776((inProps, ref2) => {
+var _RcPaginationItem = forwardRef775((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcPaginationItem" });
   const { classes: classesProp, children: children2, ...rest } = props;
   const classes = useMemo86(() => combineProps(RcPaginationItemClasses, classesProp), [classesProp]);
-  return /* @__PURE__ */ React871.createElement(PaginationItem_default, {
+  return /* @__PURE__ */ React878.createElement(PaginationItem_default, {
     ...rest,
     ref: ref2,
     classes
@@ -82979,8 +83105,8 @@ RcPaginationItem.defaultProps = {};
 RcPaginationItem.displayName = "RcPaginationItem";
 
 // ../juno-core/src/components/PopupBox/PopupBox.tsx
-import React872, { forwardRef as forwardRef777 } from "react";
-var _RcPopupBox = forwardRef777((inProps, ref2) => {
+import React879, { forwardRef as forwardRef776 } from "react";
+var _RcPopupBox = forwardRef776((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcPopupBox" });
   const {
     childrenSize,
@@ -83013,32 +83139,32 @@ var _RcPopupBox = forwardRef777((inProps, ref2) => {
     onClose?.(e2, reason);
     onCancel?.(e2, reason);
   });
-  return /* @__PURE__ */ React872.createElement(RcDialog, {
+  return /* @__PURE__ */ React879.createElement(RcDialog, {
     ref: ref2,
     childrenSize,
     disableEscapeKeyDown: isLoading,
     onClose: handleClose,
     open,
     ...rest
-  }, /* @__PURE__ */ React872.createElement(RcLoading, {
+  }, /* @__PURE__ */ React879.createElement(RcLoading, {
     loading: loadingOverlay
-  }, /* @__PURE__ */ React872.createElement(RcDialogTitle, {
+  }, /* @__PURE__ */ React879.createElement(RcDialogTitle, {
     "data-test-automation-id": "DialogTitle",
     ...TitleProps
-  }, title), /* @__PURE__ */ React872.createElement(RcDialogContent, {
+  }, title), /* @__PURE__ */ React879.createElement(RcDialogContent, {
     "data-test-automation-id": "DialogContent",
     ...ContentProps
-  }, typeof children2 === "string" ? /* @__PURE__ */ React872.createElement(RcDialogContentText, null, children2) : children2), footer !== null && /* @__PURE__ */ React872.createElement(RcDialogActions, {
+  }, typeof children2 === "string" ? /* @__PURE__ */ React879.createElement(RcDialogContentText, null, children2) : children2), footer !== null && /* @__PURE__ */ React879.createElement(RcDialogActions, {
     "data-test-automation-id": "DialogActions",
     ...ActionsProps
-  }, footer || /* @__PURE__ */ React872.createElement(React872.Fragment, null, cancelButtonText && /* @__PURE__ */ React872.createElement(RcButton, {
+  }, footer || /* @__PURE__ */ React879.createElement(React879.Fragment, null, cancelButtonText && /* @__PURE__ */ React879.createElement(RcButton, {
     fullWidth: isXsmall,
     variant: "text",
     onClick: (e2) => onCancel?.(e2, "cancelClick"),
     "data-test-automation-id": "DialogCancelButton",
     disabled: loading,
     ...cancelButtonProps
-  }, cancelButtonText), confirmButtonText && /* @__PURE__ */ React872.createElement(RcButton, {
+  }, cancelButtonText), confirmButtonText && /* @__PURE__ */ React879.createElement(RcButton, {
     fullWidth: isXsmall,
     onClick: onConfirm,
     variant: "contained",
@@ -83052,33 +83178,33 @@ var RcPopupBox = styled_components_default(_RcPopupBox)``;
 RcPopupBox.defaultProps = {};
 
 // ../juno-core/src/components/Portal/Portal.tsx
-import React873 from "react";
+import React880 from "react";
 var _RcPortal = (inProps) => {
   const props = useThemeProps({ props: inProps, name: "RcPortal" });
-  return /* @__PURE__ */ React873.createElement(Portal_default, {
+  return /* @__PURE__ */ React880.createElement(Portal_default, {
     ...props
   });
 };
 var RcPortal = _RcPortal;
 
 // ../juno-core/src/components/Rating/Rating.tsx
-import React877, { forwardRef as forwardRef779, useCallback as useCallback36, useMemo as useMemo87 } from "react";
+import React884, { forwardRef as forwardRef778, useCallback as useCallback33, useMemo as useMemo87 } from "react";
 
 // ../../node_modules/@material-ui/lab/esm/Rating/Rating.js
 var import_prop_types127 = __toModule(require_prop_types());
 import {
   Fragment as Fragment12,
-  createElement as createElement696,
-  forwardRef as forwardRef778,
-  useRef as useRef99,
-  useState as useState47
+  createElement as createElement689,
+  forwardRef as forwardRef777,
+  useRef as useRef96,
+  useState as useState44
 } from "react";
 
 // ../../node_modules/@material-ui/lab/esm/internal/svg-icons/Star.js
 import {
-  createElement as createElement695
+  createElement as createElement688
 } from "react";
-var Star_default2 = createSvgIcon(/* @__PURE__ */ createElement695("path", {
+var Star_default2 = createSvgIcon(/* @__PURE__ */ createElement688("path", {
   d: "M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
 }), "Star");
 
@@ -83179,18 +83305,18 @@ var styles161 = function styles162(theme) {
 };
 function IconContainer(props) {
   var value = props.value, other = _objectWithoutProperties(props, ["value"]);
-  return /* @__PURE__ */ createElement696("span", other);
+  return /* @__PURE__ */ createElement689("span", other);
 }
 true ? IconContainer.propTypes = {
   value: import_prop_types127.default.number.isRequired
 } : void 0;
-var defaultIcon3 = /* @__PURE__ */ createElement696(Star_default2, {
+var defaultIcon3 = /* @__PURE__ */ createElement689(Star_default2, {
   fontSize: "inherit"
 });
 function defaultLabelText(value) {
   return "".concat(value, " Star").concat(value !== 1 ? "s" : "");
 }
-var Rating = /* @__PURE__ */ forwardRef778(function Rating2(props, ref2) {
+var Rating = /* @__PURE__ */ forwardRef777(function Rating2(props, ref2) {
   var classes = props.classes, className = props.className, _props$defaultValue = props.defaultValue, defaultValue = _props$defaultValue === void 0 ? null : _props$defaultValue, _props$disabled = props.disabled, disabled3 = _props$disabled === void 0 ? false : _props$disabled, emptyIcon = props.emptyIcon, _props$emptyLabelText = props.emptyLabelText, emptyLabelText = _props$emptyLabelText === void 0 ? "Empty" : _props$emptyLabelText, _props$getLabelText = props.getLabelText, getLabelText = _props$getLabelText === void 0 ? defaultLabelText : _props$getLabelText, _props$icon = props.icon, icon = _props$icon === void 0 ? defaultIcon3 : _props$icon, _props$IconContainerC = props.IconContainerComponent, IconContainerComponent = _props$IconContainerC === void 0 ? IconContainer : _props$IconContainerC, _props$max = props.max, max2 = _props$max === void 0 ? 5 : _props$max, nameProp = props.name, onChange = props.onChange, onChangeActive = props.onChangeActive, onMouseLeave = props.onMouseLeave, onMouseMove = props.onMouseMove, _props$precision = props.precision, precision = _props$precision === void 0 ? 1 : _props$precision, _props$readOnly = props.readOnly, readOnly = _props$readOnly === void 0 ? false : _props$readOnly, _props$size = props.size, size = _props$size === void 0 ? "medium" : _props$size, valueProp = props.value, other = _objectWithoutProperties(props, ["classes", "className", "defaultValue", "disabled", "emptyIcon", "emptyLabelText", "getLabelText", "icon", "IconContainerComponent", "max", "name", "onChange", "onChangeActive", "onMouseLeave", "onMouseMove", "precision", "readOnly", "size", "value"]);
   var name = useId(nameProp);
   var _useControlled = useControlled({
@@ -83200,7 +83326,7 @@ var Rating = /* @__PURE__ */ forwardRef778(function Rating2(props, ref2) {
   }), _useControlled2 = _slicedToArray(_useControlled, 2), valueDerived = _useControlled2[0], setValueState = _useControlled2[1];
   var valueRounded = roundValueToPrecision(valueDerived, precision);
   var theme = useTheme2();
-  var _React$useState = useState47({
+  var _React$useState = useState44({
     hover: -1,
     focus: -1
   }), _React$useState$ = _React$useState[0], hover = _React$useState$.hover, focus2 = _React$useState$.focus, setState = _React$useState[1];
@@ -83212,8 +83338,8 @@ var Rating = /* @__PURE__ */ forwardRef778(function Rating2(props, ref2) {
     value = focus2;
   }
   var _useIsFocusVisible = useIsFocusVisible(), isFocusVisible2 = _useIsFocusVisible.isFocusVisible, onBlurVisible = _useIsFocusVisible.onBlurVisible, focusVisibleRef = _useIsFocusVisible.ref;
-  var _React$useState2 = useState47(false), focusVisible2 = _React$useState2[0], setFocusVisible = _React$useState2[1];
-  var rootRef = useRef99();
+  var _React$useState2 = useState44(false), focusVisible2 = _React$useState2[0], setFocusVisible = _React$useState2[1];
+  var rootRef = useRef96();
   var handleFocusRef = useForkRef(focusVisibleRef, rootRef);
   var handleRef = useForkRef(handleFocusRef, ref2);
   var handleMouseMove = function handleMouseMove2(event) {
@@ -83310,38 +83436,38 @@ var Rating = /* @__PURE__ */ forwardRef778(function Rating2(props, ref2) {
     }
   };
   var item = function item2(state, labelProps) {
-    var id3 = "".concat(name, "-").concat(String(state.value).replace(".", "-"));
-    var container = /* @__PURE__ */ createElement696(IconContainerComponent, {
+    var id2 = "".concat(name, "-").concat(String(state.value).replace(".", "-"));
+    var container = /* @__PURE__ */ createElement689(IconContainerComponent, {
       value: state.value,
       className: clsx_m_default(classes.icon, state.filled ? classes.iconFilled : classes.iconEmpty, state.hover && classes.iconHover, state.focus && classes.iconFocus, state.active && classes.iconActive)
     }, emptyIcon && !state.filled ? emptyIcon : icon);
     if (readOnly) {
-      return /* @__PURE__ */ createElement696("span", _extends({
+      return /* @__PURE__ */ createElement689("span", _extends({
         key: state.value
       }, labelProps), container);
     }
-    return /* @__PURE__ */ createElement696(Fragment12, {
+    return /* @__PURE__ */ createElement689(Fragment12, {
       key: state.value
-    }, /* @__PURE__ */ createElement696("label", _extends({
+    }, /* @__PURE__ */ createElement689("label", _extends({
       className: classes.label,
-      htmlFor: id3
-    }, labelProps), container, /* @__PURE__ */ createElement696("span", {
+      htmlFor: id2
+    }, labelProps), container, /* @__PURE__ */ createElement689("span", {
       className: classes.visuallyhidden
-    }, getLabelText(state.value))), /* @__PURE__ */ createElement696("input", {
+    }, getLabelText(state.value))), /* @__PURE__ */ createElement689("input", {
       onFocus: handleFocus,
       onBlur: handleBlur,
       onChange: handleChange,
       onClick: handleClear,
       disabled: disabled3,
       value: state.value,
-      id: id3,
+      id: id2,
       type: "radio",
       name,
       checked: state.checked,
       className: classes.visuallyhidden
     }));
   };
-  return /* @__PURE__ */ createElement696("span", _extends({
+  return /* @__PURE__ */ createElement689("span", _extends({
     ref: handleRef,
     onMouseMove: handleMouseMove,
     onMouseLeave: handleMouseLeave,
@@ -83352,7 +83478,7 @@ var Rating = /* @__PURE__ */ forwardRef778(function Rating2(props, ref2) {
     var itemValue = index4 + 1;
     if (precision < 1) {
       var items = Array.from(new Array(1 / precision));
-      return /* @__PURE__ */ createElement696("span", {
+      return /* @__PURE__ */ createElement689("span", {
         key: itemValue,
         className: clsx_m_default(classes.decimal, itemValue === Math.ceil(value) && (hover !== -1 || focus2 !== -1) && classes.iconActive)
       }, items.map(function($2, indexDecimal) {
@@ -83381,17 +83507,17 @@ var Rating = /* @__PURE__ */ forwardRef778(function Rating2(props, ref2) {
       focus: itemValue <= focus2,
       checked: itemValue === valueRounded
     });
-  }), !readOnly && !disabled3 && valueRounded == null && /* @__PURE__ */ createElement696(Fragment12, null, /* @__PURE__ */ createElement696("input", {
+  }), !readOnly && !disabled3 && valueRounded == null && /* @__PURE__ */ createElement689(Fragment12, null, /* @__PURE__ */ createElement689("input", {
     value: "",
     id: "".concat(name, "-empty"),
     type: "radio",
     name,
     defaultChecked: true,
     className: classes.visuallyhidden
-  }), /* @__PURE__ */ createElement696("label", {
+  }), /* @__PURE__ */ createElement689("label", {
     className: classes.pristine,
     htmlFor: "".concat(name, "-empty")
-  }, /* @__PURE__ */ createElement696("span", {
+  }, /* @__PURE__ */ createElement689("span", {
     className: classes.visuallyhidden
   }, emptyLabelText))));
 });
@@ -83431,7 +83557,7 @@ var Rating_default = withStyles_default2(styles161, {
 })(Rating);
 
 // ../juno-core/src/components/Rating/styles/RatingStyle.tsx
-import React876 from "react";
+import React883 from "react";
 
 // ../juno-core/src/components/Rating/utils/RatingUtils.ts
 var RcRatingClasses = RcClasses([
@@ -83452,7 +83578,7 @@ var getColor = ({ emphasized, color: color2 }) => {
 };
 var RatingStyle = (props) => {
   const { icon, emptyIcon, emphasized, color: color2 } = props;
-  const isIcon = React876.isValidElement(icon) && React876.isValidElement(emptyIcon) && isRcElement(icon, ["RcIcon"]) && isRcElement(emptyIcon, ["RcIcon"]);
+  const isIcon = React883.isValidElement(icon) && React883.isValidElement(emptyIcon) && isRcElement(icon, ["RcIcon"]) && isRcElement(emptyIcon, ["RcIcon"]);
   return css2`
     &.${RcRatingClasses.focusVisible}
       .${RcRatingClasses.iconActive},
@@ -83503,15 +83629,15 @@ var RatingStyle = (props) => {
 
 // ../juno-core/src/components/Rating/Rating.tsx
 var defaultSize = "xlarge";
-var defaultIcon4 = /* @__PURE__ */ React877.createElement(RcIcon, {
+var defaultIcon4 = /* @__PURE__ */ React884.createElement(RcIcon, {
   size: defaultSize,
   symbol: Star_default
 });
-var defaultEmptyIcon = /* @__PURE__ */ React877.createElement(RcIcon, {
+var defaultEmptyIcon = /* @__PURE__ */ React884.createElement(RcIcon, {
   size: defaultSize,
   symbol: StarBorder_default
 });
-var _RcRating = forwardRef779((inProps, ref2) => {
+var _RcRating = forwardRef778((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcRating" });
   const {
     TooltipProps,
@@ -83531,11 +83657,11 @@ var _RcRating = forwardRef779((inProps, ref2) => {
     }
     return tooltipOpenStatus2;
   }, [max2]);
-  const IconContainer2 = useCallback36((containerProps) => {
+  const IconContainer2 = useCallback33((containerProps) => {
     const { value: itemValue, children: children2, ...other } = containerProps;
-    return /* @__PURE__ */ React877.createElement("span", {
+    return /* @__PURE__ */ React884.createElement("span", {
       ...other
-    }, !disableTooltip && tooltips?.[itemValue - 1] ? /* @__PURE__ */ React877.createElement(RcTooltip, {
+    }, !disableTooltip && tooltips?.[itemValue - 1] ? /* @__PURE__ */ React884.createElement(RcTooltip, {
       title: tooltips[itemValue - 1],
       open: !!tooltipOpenStatus[itemValue - 1],
       ...TooltipProps
@@ -83548,7 +83674,7 @@ var _RcRating = forwardRef779((inProps, ref2) => {
     onChangeActiveProp?.(e2, value);
   });
   const classes = useMemo87(() => combineClasses(RcRatingClasses, classesProp), [classesProp]);
-  return /* @__PURE__ */ React877.createElement(Rating_default, {
+  return /* @__PURE__ */ React884.createElement(Rating_default, {
     ref: ref2,
     classes,
     max: max2,
@@ -83573,7 +83699,7 @@ RcRating.defaultProps = {
 RcRating.displayName = "RcRating";
 
 // ../juno-core/src/components/Responsive/Responsive.tsx
-import React878, { useRef as useRef100, useState as useState48 } from "react";
+import React885, { useRef as useRef97, useState as useState45 } from "react";
 
 // ../juno-core/src/components/Responsive/utils/getMatchedBreakpoint.ts
 var bpListL2S = [...breakpointList].reverse();
@@ -83591,9 +83717,9 @@ var RcResponsive = (inProps) => {
   } = props;
   const { externalWindow } = useRcPortalWindowContext();
   const currentWindow = externalWindow ?? window;
-  const bodyRef = useRef100(currentWindow.document.body);
+  const bodyRef = useRef97(currentWindow.document.body);
   const targetRef = responsiveTarget ?? bodyRef;
-  const [contextValue, setContextValue] = useState48(() => {
+  const [contextValue, setContextValue] = useState45(() => {
     const target = targetRef.current;
     if (target) {
       const width2 = target.clientWidth;
@@ -83608,7 +83734,7 @@ var RcResponsive = (inProps) => {
     const matchedBreakpoint = getMatchedBreakpoint(width2, breakpointMap);
     setContextValue(matchedBreakpoint);
   }, { mode: "throttle", time: resizeThrottle });
-  return /* @__PURE__ */ React878.createElement(RcResponsiveContext.Provider, {
+  return /* @__PURE__ */ React885.createElement(RcResponsiveContext.Provider, {
     value: contextValue
   }, children2);
 };
@@ -83618,11 +83744,11 @@ RcResponsive.defaultProps = {
 RcResponsive.displayName = "RcResponsive";
 
 // ../juno-core/src/components/Snackbar/Snackbar.tsx
-import React880, { forwardRef as forwardRef781, useMemo as useMemo89 } from "react";
+import React887, { forwardRef as forwardRef780, useMemo as useMemo89 } from "react";
 
 // ../juno-core/src/components/Snackbar/SnackbarContent/SnackbarContent.tsx
-import React879, {
-  forwardRef as forwardRef780,
+import React886, {
+  forwardRef as forwardRef779,
   isValidElement as isValidElement19,
   useMemo as useMemo88
 } from "react";
@@ -83707,7 +83833,7 @@ var snackbarContentStyle = ({ fullWidth, square, messageAlign, size }) => {
 };
 
 // ../juno-core/src/components/Snackbar/SnackbarContent/SnackbarContent.tsx
-var _RcSnackbarContent = forwardRef780((inProps, ref2) => {
+var _RcSnackbarContent = forwardRef779((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcSnackbarContent" });
   if (true) {
     useDeprecatedCheck(RcSnackbarContent, props, [
@@ -83735,7 +83861,7 @@ var _RcSnackbarContent = forwardRef780((inProps, ref2) => {
         if (size !== RcSnackbarContent.defaultProps.size) {
           return item;
         }
-        return React879.cloneElement(item, { size });
+        return React886.cloneElement(item, { size });
       }
       return item;
     };
@@ -83744,11 +83870,11 @@ var _RcSnackbarContent = forwardRef780((inProps, ref2) => {
     }
     return getItem(actionProp);
   }, [actionProp, size]);
-  return /* @__PURE__ */ React879.createElement(SnackbarContent_default, {
+  return /* @__PURE__ */ React886.createElement(SnackbarContent_default, {
     ...rest,
     ref: ref2,
     classes,
-    action: loading ? /* @__PURE__ */ React879.createElement(RcCircularProgress, {
+    action: loading ? /* @__PURE__ */ React886.createElement(RcCircularProgress, {
       color: "inherit",
       size: RcSnackbarContentLoadingSizes[size]
     }) : action3
@@ -83773,7 +83899,7 @@ var SnackbarStyle = () => {
 var RcSnackbarClasses = RcClasses([], "RcSnackbar");
 
 // ../juno-core/src/components/Snackbar/Snackbar.tsx
-var _RcSnackbar = forwardRef781((inProps, ref2) => {
+var _RcSnackbar = forwardRef780((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcSnackbar" });
   const {
     classes: classesProp,
@@ -83789,12 +83915,12 @@ var _RcSnackbar = forwardRef781((inProps, ref2) => {
   const classes = useMemo89(() => combineClasses(RcSnackbarClasses, classesProp), [classesProp]);
   const onExited = useUnmountPortalHandler(TransitionPropsProp?.onExited);
   const TransitionProps4 = { ...TransitionPropsProp, onExited };
-  return /* @__PURE__ */ React880.createElement(HasPortalParentProvider, null, /* @__PURE__ */ React880.createElement(Snackbar_default, {
+  return /* @__PURE__ */ React887.createElement(HasPortalParentProvider, null, /* @__PURE__ */ React887.createElement(Snackbar_default, {
     ref: ref2,
     classes,
     TransitionProps: TransitionProps4,
     ...rest
-  }, children2 || /* @__PURE__ */ React880.createElement(RcSnackbarContent, {
+  }, children2 || /* @__PURE__ */ React887.createElement(RcSnackbarContent, {
     size,
     type: type3,
     message,
@@ -83815,7 +83941,7 @@ RcSnackbar.defaultProps = {
 RcSnackbar.displayName = "RcSnackbar";
 
 // ../juno-core/src/components/Snackbar/SnackbarAction/SnackbarAction.tsx
-import React881, { useMemo as useMemo90 } from "react";
+import React888, { useMemo as useMemo90 } from "react";
 
 // ../juno-core/src/components/Snackbar/SnackbarAction/utils/SnackbarActionUtils.tsx
 var RcSnackbarActionClasses = RcClasses(["text", "icon"], "RcSnackbarAction");
@@ -83877,11 +84003,11 @@ var _RcSnackbarAction = (inProps) => {
     [RcSnackbarActionClasses.icon]: variant === "icon"
   }), [classNameProp, variant]);
   const classes = useMemo90(() => omit3(classesProp, ["text", "icon"]), [classesProp]);
-  return /* @__PURE__ */ React881.createElement(ButtonBase_default, {
+  return /* @__PURE__ */ React888.createElement(ButtonBase_default, {
     className,
     classes,
     ...rest
-  }, variant === "icon" ? /* @__PURE__ */ React881.createElement(RcIcon, {
+  }, variant === "icon" ? /* @__PURE__ */ React888.createElement(RcIcon, {
     size,
     symbol
   }, children2) : children2);
@@ -83897,7 +84023,7 @@ RcSnackbarAction.defaultProps = {
 };
 
 // ../juno-core/src/components/Stepper/Step/Step.tsx
-import React882, { forwardRef as forwardRef782, useMemo as useMemo91 } from "react";
+import React889, { forwardRef as forwardRef781, useMemo as useMemo91 } from "react";
 
 // ../juno-core/src/components/Stepper/Step/utils/StepUtils.ts
 var RcStepClasses = RcClasses(["root", "horizontal"], "RcStep");
@@ -83914,11 +84040,11 @@ var StepStyle = () => {
 };
 
 // ../juno-core/src/components/Stepper/Step/Step.tsx
-var _RcStep = forwardRef782((inProps, ref2) => {
+var _RcStep = forwardRef781((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcStep" });
   const { classes: classesProp, children: children2, ...rest } = props;
   const classes = useMemo91(() => combineClasses(RcStepClasses, classesProp), [classesProp]);
-  return /* @__PURE__ */ React882.createElement(Step_default, {
+  return /* @__PURE__ */ React889.createElement(Step_default, {
     ...rest,
     ref: ref2,
     classes
@@ -83931,26 +84057,26 @@ RcStep.defaultProps = {};
 RcStep.displayName = "RcStep";
 
 // ../juno-core/src/components/Stepper/StepButton/StepButton.tsx
-import React886, {
+import React893, {
   cloneElement as cloneElement28,
-  forwardRef as forwardRef785,
+  forwardRef as forwardRef784,
   useMemo as useMemo94
 } from "react";
 
 // ../juno-core/src/components/Stepper/StepLabel/StepLabel.tsx
-import React885, { forwardRef as forwardRef784, useMemo as useMemo93 } from "react";
+import React892, { forwardRef as forwardRef783, useMemo as useMemo93 } from "react";
 
 // ../juno-core/src/components/Stepper/StepIcon/StepIcon.tsx
-import React884, { forwardRef as forwardRef783, useMemo as useMemo92 } from "react";
+import React891, { forwardRef as forwardRef782, useMemo as useMemo92 } from "react";
 
 // ../juno-core/src/components/Stepper/StepIcon/utils/StepIconUtils.ts
-import { useRef as useRef101 } from "react";
+import { useRef as useRef98 } from "react";
 var RcStepIconClasses = RcClasses(["root", "active", "text"], "RcStepIcon");
 var iconColor = palette22("interactive", "b02");
 var iconTextColor = palette22("neutral", "f01");
 var useIsEditable = ({ active, completed }) => {
-  const completedTimesRef = useRef101(0);
-  const isEditRef = useRef101(false);
+  const completedTimesRef = useRef98(0);
+  const isEditRef = useRef98(false);
   const { current: completedTimes } = completedTimesRef;
   const { current: isEdit } = isEditRef;
   if (completedTimes === 0 && !active && completed) {
@@ -83989,12 +84115,12 @@ var StepIconStyle = () => {
 };
 
 // ../juno-core/src/components/Stepper/StepIcon/styles/StyledCircleIcon.tsx
-import React883 from "react";
+import React890 from "react";
 var _StyledCircleIcon = ({
   isEdit,
   ...rest
 }) => {
-  return /* @__PURE__ */ React883.createElement(RcIcon, {
+  return /* @__PURE__ */ React890.createElement(RcIcon, {
     ...rest
   });
 };
@@ -84011,7 +84137,7 @@ var StyledCircleIcon = styled_components_default(_StyledCircleIcon)`
 `;
 
 // ../juno-core/src/components/Stepper/StepIcon/StepIcon.tsx
-var _RcStepIcon = forwardRef783((inProps, ref2) => {
+var _RcStepIcon = forwardRef782((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcStepIcon" });
   const {
     icon: iconProp,
@@ -84025,19 +84151,19 @@ var _RcStepIcon = forwardRef783((inProps, ref2) => {
   const isEdit = useIsEditable(props);
   const icon = useMemo92(() => {
     if (editable) {
-      return /* @__PURE__ */ React884.createElement(StyledCircleIcon, {
+      return /* @__PURE__ */ React891.createElement(StyledCircleIcon, {
         isEdit: true,
         symbol: Edit_default,
         size: "small"
       });
     }
-    return completed ? /* @__PURE__ */ React884.createElement(StyledCircleIcon, {
+    return completed ? /* @__PURE__ */ React891.createElement(StyledCircleIcon, {
       isEdit,
       symbol: isEdit ? Edit_default : Check_default,
       size: "small"
     }) : iconProp;
   }, [editable, completed, isEdit, iconProp]);
-  return /* @__PURE__ */ React884.createElement(StepIcon_default, {
+  return /* @__PURE__ */ React891.createElement(StepIcon_default, {
     ...rest,
     ref: ref2,
     classes,
@@ -84106,7 +84232,7 @@ var StepLabelStyle = () => {
 };
 
 // ../juno-core/src/components/Stepper/StepLabel/StepLabel.tsx
-var _RcStepLabel = forwardRef784((inProps, ref2) => {
+var _RcStepLabel = forwardRef783((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcStepLabel" });
   const {
     classes: classesProp,
@@ -84119,7 +84245,7 @@ var _RcStepLabel = forwardRef784((inProps, ref2) => {
   } = props;
   const classes = useMemo93(() => combineClasses(RcStepLabelClasses, classesProp), [classesProp]);
   const StepIconProps = useMemo93(() => combineProps({ editable }, StepIconPropsProp), [StepIconPropsProp, editable]);
-  return /* @__PURE__ */ React885.createElement(StepLabel_default, {
+  return /* @__PURE__ */ React892.createElement(StepLabel_default, {
     ref: ref2,
     StepIconComponent: RcStepIcon,
     StepIconProps,
@@ -84149,7 +84275,7 @@ var StepButtonStyle = () => {
 };
 
 // ../juno-core/src/components/Stepper/StepButton/StepButton.tsx
-var _RcStepButton = forwardRef785((inProps, ref2) => {
+var _RcStepButton = forwardRef784((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcStepButton" });
   const {
     classes: classesProp,
@@ -84169,11 +84295,11 @@ var _RcStepButton = forwardRef785((inProps, ref2) => {
       error: error4,
       StepIconProps: { editable }
     }, StepLabelProps);
-    return isRcElement(childrenProp, ["RcStepLabel"]) ? cloneElement28(childrenProp, childProps) : /* @__PURE__ */ React886.createElement(RcStepLabel, {
+    return isRcElement(childrenProp, ["RcStepLabel"]) ? cloneElement28(childrenProp, childProps) : /* @__PURE__ */ React893.createElement(RcStepLabel, {
       ...childProps
     }, childrenProp);
   }, [StepLabelProps, childrenProp, editable, error4, icon, optional]);
-  return /* @__PURE__ */ React886.createElement(StepButton_default, {
+  return /* @__PURE__ */ React893.createElement(StepButton_default, {
     ...rest,
     icon,
     optional,
@@ -84190,7 +84316,7 @@ RcStepButton.defaultProps = {
 RcStepButton.displayName = "RcStepButton";
 
 // ../juno-core/src/components/Stepper/StepConnector/StepConnector.tsx
-import React887, { forwardRef as forwardRef786, useMemo as useMemo95 } from "react";
+import React894, { forwardRef as forwardRef785, useMemo as useMemo95 } from "react";
 
 // ../juno-core/src/components/Stepper/StepConnector/utils/StepConnectorUtils.ts
 var RcStepConnectorClasses = RcClasses(["line"], "RcStepConnector");
@@ -84205,11 +84331,11 @@ var StepConnectorStyle = () => {
 };
 
 // ../juno-core/src/components/Stepper/StepConnector/StepConnector.tsx
-var _RcStepConnector = forwardRef786((inProps, ref2) => {
-  const prop2 = useThemeProps({ props: inProps, name: "RcStepConnector" });
-  const { classes: classesProp, ...rest } = prop2;
+var _RcStepConnector = forwardRef785((inProps, ref2) => {
+  const prop = useThemeProps({ props: inProps, name: "RcStepConnector" });
+  const { classes: classesProp, ...rest } = prop;
   const classes = useMemo95(() => combineClasses(RcStepConnectorClasses, classesProp), [classesProp]);
-  return /* @__PURE__ */ React887.createElement(StepConnector_default, {
+  return /* @__PURE__ */ React894.createElement(StepConnector_default, {
     ...rest,
     ref: ref2,
     classes
@@ -84222,7 +84348,7 @@ RcStepConnector.defaultProps = {};
 RcStepConnector.displayName = "RcStepConnector";
 
 // ../juno-core/src/components/Stepper/Stepper.tsx
-import React888, { forwardRef as forwardRef787, useMemo as useMemo96 } from "react";
+import React895, { forwardRef as forwardRef786, useMemo as useMemo96 } from "react";
 
 // ../juno-core/src/components/Stepper/styles/StepperStyle.tsx
 var StepperStyle = () => {
@@ -84235,11 +84361,11 @@ var StepperStyle = () => {
 var RcStepperClasses = RcClasses([], "RcStepper");
 
 // ../juno-core/src/components/Stepper/Stepper.tsx
-var _RcStepper = forwardRef787((inProps, ref2) => {
+var _RcStepper = forwardRef786((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcStepper" });
   const { classes: classesProp, children: children2, ...rest } = props;
   const classes = useMemo96(() => combineClasses(RcStepperClasses, classesProp), [classesProp]);
-  return /* @__PURE__ */ React888.createElement(Stepper_default, {
+  return /* @__PURE__ */ React895.createElement(Stepper_default, {
     ...rest,
     ref: ref2,
     classes
@@ -84251,18 +84377,18 @@ var RcStepper = styled_components_default(_RcStepper)`
 RcStepper.defaultProps = {
   alternativeLabel: true,
   nonLinear: true,
-  connector: /* @__PURE__ */ React888.createElement(RcStepConnector, null)
+  connector: /* @__PURE__ */ React895.createElement(RcStepConnector, null)
 };
 RcStepper.displayName = "RcStepper";
 
 // ../juno-core/src/components/TablePagination/TablePagination.tsx
-import React891, { forwardRef as forwardRef789, useMemo as useMemo97 } from "react";
+import React898, { forwardRef as forwardRef788, useMemo as useMemo97 } from "react";
 
 // ../juno-core/src/components/Toolbar/Toolbar.tsx
-import React889, { forwardRef as forwardRef788 } from "react";
-var _RcToolbar = forwardRef788((inProps, ref2) => {
+import React896, { forwardRef as forwardRef787 } from "react";
+var _RcToolbar = forwardRef787((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcToolbar" });
-  return /* @__PURE__ */ React889.createElement(Toolbar_default, {
+  return /* @__PURE__ */ React896.createElement(Toolbar_default, {
     ref: ref2,
     ...props
   });
@@ -84271,12 +84397,12 @@ var RcToolbar = styled_components_default(_RcToolbar)``;
 RcToolbar.displayName = "RcToolbar";
 
 // ../juno-core/src/components/TablePagination/styles/TablePaginationActions.tsx
-import React890, { memo as memo579 } from "react";
+import React897, { memo as memo576 } from "react";
 var TablePaginationActionsWrapper = styled_components_default.div`
   display: flex;
   margin-left: ${spacing2(5)};
 `;
-var RcTablePaginationActions = memo579((props) => {
+var RcTablePaginationActions = memo576((props) => {
   const {
     onPageChange,
     page,
@@ -84294,15 +84420,15 @@ var RcTablePaginationActions = memo579((props) => {
   };
   const prevDisabled = page === 0;
   const nextDisabled = count2 !== -1 ? page >= Math.ceil(count2 / rowsPerPage) - 1 : false;
-  return /* @__PURE__ */ React890.createElement(TablePaginationActionsWrapper, {
+  return /* @__PURE__ */ React897.createElement(TablePaginationActionsWrapper, {
     className
-  }, /* @__PURE__ */ React890.createElement(RcIconButton, {
+  }, /* @__PURE__ */ React897.createElement(RcIconButton, {
     symbol: ArrowLeft2_default,
     onClick: handleBackButtonClick,
     size: "medium",
     disabled: prevDisabled,
     ...combineProps({ TooltipProps: { tooltipForceHide: prevDisabled } }, backIconButtonProps)
-  }), /* @__PURE__ */ React890.createElement(RcIconButton, {
+  }), /* @__PURE__ */ React897.createElement(RcIconButton, {
     symbol: ArrowRight_default,
     onClick: handleNextButtonClick,
     size: "medium",
@@ -84386,7 +84512,7 @@ var TablePaginationStyle = () => {
 var TablePaginationRoot = styled_components_default(TableCell_default)``;
 
 // ../juno-core/src/components/TablePagination/TablePagination.tsx
-var _RcTablePagination = forwardRef789((inProps, ref2) => {
+var _RcTablePagination = forwardRef788((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcTablePagination" });
   const {
     classes: classesProp,
@@ -84427,7 +84553,7 @@ var _RcTablePagination = forwardRef789((inProps, ref2) => {
     if (!isPageSelection)
       return menus;
     for (let i2 = 0; i2 < totalPage; i2++) {
-      menus.push(/* @__PURE__ */ React891.createElement(MenuItemComponent, {
+      menus.push(/* @__PURE__ */ React898.createElement(MenuItemComponent, {
         value: i2,
         selected: i2 === page,
         key: i2,
@@ -84446,21 +84572,21 @@ var _RcTablePagination = forwardRef789((inProps, ref2) => {
     page,
     totalPage
   ]);
-  return /* @__PURE__ */ React891.createElement(TablePaginationRoot, {
+  return /* @__PURE__ */ React898.createElement(TablePaginationRoot, {
     colSpan,
     ref: ref2,
     as: component,
     className: clsx_m_default(classes.root, className),
     ...rest
-  }, /* @__PURE__ */ React891.createElement(RcToolbar, {
+  }, /* @__PURE__ */ React898.createElement(RcToolbar, {
     className: classes.toolbar
-  }, /* @__PURE__ */ React891.createElement("div", {
+  }, /* @__PURE__ */ React898.createElement("div", {
     className: classes.spacer
-  }), rowsPerPageOptions.length > 1 && /* @__PURE__ */ React891.createElement(RcTypography, {
+  }), rowsPerPageOptions.length > 1 && /* @__PURE__ */ React898.createElement(RcTypography, {
     color: "inherit",
     variant: "body1",
     className: classes.caption
-  }, labelRowsPerPage), rowsPerPageOptions.length > 1 && /* @__PURE__ */ React891.createElement(RcSelect, {
+  }, labelRowsPerPage), rowsPerPageOptions.length > 1 && /* @__PURE__ */ React898.createElement(RcSelect, {
     className: classes.selectRoot,
     InputProps: { disableUnderline: true },
     value: rowsPerPage,
@@ -84469,26 +84595,26 @@ var _RcTablePagination = forwardRef789((inProps, ref2) => {
   }, rowsPerPageOptions.map((rowsPerPageOption) => {
     const value = rowsPerPageOption.value ? rowsPerPageOption.value : rowsPerPageOption;
     const label3 = rowsPerPageOption.label ? rowsPerPageOption.label : rowsPerPageOption;
-    return /* @__PURE__ */ React891.createElement(MenuItemComponent, {
+    return /* @__PURE__ */ React898.createElement(MenuItemComponent, {
       className: classes.menuItem,
       key: value,
       value
     }, label3);
-  })), isPageSelection ? /* @__PURE__ */ React891.createElement(React891.Fragment, null, /* @__PURE__ */ React891.createElement(RcSelect, {
+  })), isPageSelection ? /* @__PURE__ */ React898.createElement(React898.Fragment, null, /* @__PURE__ */ React898.createElement(RcSelect, {
     value: page,
     InputProps: { disableUnderline: true },
     renderValue: (p) => p + 1,
     virtualize: true
-  }, menuItems), /* @__PURE__ */ React891.createElement("p", {
+  }, menuItems), /* @__PURE__ */ React898.createElement("p", {
     className: classes.caption
-  }, labelOfPage({ totalPage }))) : /* @__PURE__ */ React891.createElement("p", {
+  }, labelOfPage({ totalPage }))) : /* @__PURE__ */ React898.createElement("p", {
     className: classes.caption
   }, labelDisplayedRows({
     from: count2 === 0 ? 0 : page * rowsPerPage + 1,
     to: getLabelDisplayedRowsTo(),
     count: count2 === -1 ? -1 : count2,
     page
-  })), /* @__PURE__ */ React891.createElement(ActionsComponent, {
+  })), /* @__PURE__ */ React898.createElement(ActionsComponent, {
     className: classes.actions,
     backIconButtonProps,
     count: count2,
@@ -84504,18 +84630,18 @@ var RcTablePagination = styled_components_default(_RcTablePagination)`
 RcTablePagination.displayName = "RcTablePagination";
 
 // ../juno-core/src/components/Table/context.ts
-import { createContext as createContext26 } from "react";
-var RcTableContext = createContext26({});
+import { createContext as createContext25 } from "react";
+var RcTableContext = createContext25({});
 
 // ../juno-core/src/components/Table/Table.tsx
-import React892, { forwardRef as forwardRef790, useMemo as useMemo98 } from "react";
-var _RcTable = forwardRef790((props, ref2) => {
+import React899, { forwardRef as forwardRef789, useMemo as useMemo98 } from "react";
+var _RcTable = forwardRef789((props, ref2) => {
   const { children: children2, size, ...rest } = useThemeProps({ props, name: "RcTable" });
   const tableContextValue = useMemo98(() => ({ size }), [size]);
-  return /* @__PURE__ */ React892.createElement(Table_default, {
+  return /* @__PURE__ */ React899.createElement(Table_default, {
     ...rest,
     ref: ref2
-  }, /* @__PURE__ */ React892.createElement(RcTableContext.Provider, {
+  }, /* @__PURE__ */ React899.createElement(RcTableContext.Provider, {
     value: tableContextValue
   }, children2));
 });
@@ -84523,10 +84649,10 @@ var RcTable = styled_components_default(_RcTable)``;
 RcTable.displayName = "RcTable";
 
 // ../juno-core/src/components/Table/TableBody/TableBody.tsx
-import React893, { forwardRef as forwardRef791 } from "react";
-var _RcTableBody = forwardRef791((props, ref2) => {
+import React900, { forwardRef as forwardRef790 } from "react";
+var _RcTableBody = forwardRef790((props, ref2) => {
   const { children: children2, ...rest } = useThemeProps({ props, name: "RcTableHead" });
-  return /* @__PURE__ */ React893.createElement(TableBody_default, {
+  return /* @__PURE__ */ React900.createElement(TableBody_default, {
     ...rest,
     ref: ref2
   }, children2);
@@ -84535,7 +84661,7 @@ var RcTableBody = styled_components_default(_RcTableBody)``;
 RcTableBody.displayName = "RcTableBody";
 
 // ../juno-core/src/components/Table/TableCell/TableCell.tsx
-import React894, { forwardRef as forwardRef792, useMemo as useMemo99, useContext as useContext33 } from "react";
+import React901, { forwardRef as forwardRef791, useMemo as useMemo99, useContext as useContext32 } from "react";
 
 // ../juno-core/src/components/Table/TableCell/utils/TableCellUtils.ts
 var RcTableCellClasses = RcClasses([
@@ -84556,8 +84682,8 @@ var SizeMap2 = {
   small: 40
 };
 var HeadTypography = typography4("caption2");
-var TableCellStyle = (prop2) => {
-  const { size, sortDirection } = prop2;
+var TableCellStyle = (prop) => {
+  const { size, sortDirection } = prop;
   return css2`
     box-sizing: border-box;
     padding: ${spacing2(0, 2)};
@@ -84636,7 +84762,7 @@ var TableCellStyle = (prop2) => {
 };
 
 // ../juno-core/src/components/Table/TableCell/TableCell.tsx
-var _RcTableCell = forwardRef792((props, ref2) => {
+var _RcTableCell = forwardRef791((props, ref2) => {
   const {
     classes: classesProp,
     children: childrenProp,
@@ -84654,12 +84780,12 @@ var _RcTableCell = forwardRef792((props, ref2) => {
   } = classes;
   const children2 = useMemo99(() => {
     if (sortDirection) {
-      return /* @__PURE__ */ React894.createElement(RcButtonBase, {
+      return /* @__PURE__ */ React901.createElement(RcButtonBase, {
         disableRipple: true,
         className: clsx_m_default(classes.sortButton, {
           [classes.activeSort]: activeSort
         })
-      }, childrenProp, /* @__PURE__ */ React894.createElement(RcIcon, {
+      }, childrenProp, /* @__PURE__ */ React901.createElement(RcIcon, {
         size: "small",
         className: classes.sortIcon,
         symbol: sortDirection === "asc" ? JumpToUnread_default : JumpToLatest_default
@@ -84667,7 +84793,7 @@ var _RcTableCell = forwardRef792((props, ref2) => {
     }
     return childrenProp;
   }, [activeSort, childrenProp, classes, sortDirection]);
-  return /* @__PURE__ */ React894.createElement(TableCell_default, {
+  return /* @__PURE__ */ React901.createElement(TableCell_default, {
     ...rest,
     ...sortDirection ? { sortDirection } : {},
     ref: ref2,
@@ -84675,7 +84801,7 @@ var _RcTableCell = forwardRef792((props, ref2) => {
   }, children2);
 });
 var RcTableCell = styled_components_default(_RcTableCell).attrs(({ size: sizeProp, sortDirection = false, ...rest }) => {
-  const { size: contextSize } = useContext33(RcTableContext);
+  const { size: contextSize } = useContext32(RcTableContext);
   const size = sizeProp ?? contextSize ?? "medium";
   return { ...rest, size, sortDirection };
 })`
@@ -84684,10 +84810,10 @@ var RcTableCell = styled_components_default(_RcTableCell).attrs(({ size: sizePro
 RcTableCell.displayName = "RcTableCell";
 
 // ../juno-core/src/components/Table/TableContainer/TableContainer.tsx
-import React896, { forwardRef as forwardRef794 } from "react";
+import React903, { forwardRef as forwardRef793 } from "react";
 
 // ../juno-core/src/components/Table/TableRow/TableRow.tsx
-import React895, { forwardRef as forwardRef793, useMemo as useMemo100 } from "react";
+import React902, { forwardRef as forwardRef792, useMemo as useMemo100 } from "react";
 
 // ../juno-core/src/components/Table/TableRow/utils/TableRowUtils.ts
 var RcTableRowClasses = RcClasses(["selected", "hover", "disabled"], "RcTableRow");
@@ -84717,7 +84843,7 @@ var TableRowStyle = () => {
 };
 
 // ../juno-core/src/components/Table/TableRow/TableRow.tsx
-var _RcTableRow = forwardRef793((props, ref2) => {
+var _RcTableRow = forwardRef792((props, ref2) => {
   const {
     className,
     classes: classesProp,
@@ -84727,7 +84853,7 @@ var _RcTableRow = forwardRef793((props, ref2) => {
   } = useThemeProps({ props, name: "RcTableRow" });
   const classes = useMemo100(() => combineClasses(RcTableRowClasses, classesProp), [classesProp]);
   const { disabled: disabledClass, ...tableRowClasses } = classes;
-  return /* @__PURE__ */ React895.createElement(TableRow_default, {
+  return /* @__PURE__ */ React902.createElement(TableRow_default, {
     ...rest,
     ref: ref2,
     classes: tableRowClasses,
@@ -84756,12 +84882,12 @@ var TableContainerStyle = (props) => {
 };
 
 // ../juno-core/src/components/Table/TableContainer/TableContainer.tsx
-var _RcTableContainer = forwardRef794((props, ref2) => {
+var _RcTableContainer = forwardRef793((props, ref2) => {
   const { children: children2, bordered, square, ...rest } = useThemeProps({
     props,
     name: "RcTableContainer"
   });
-  return /* @__PURE__ */ React896.createElement(TableContainer_default, {
+  return /* @__PURE__ */ React903.createElement(TableContainer_default, {
     ...rest,
     ref: ref2
   }, children2);
@@ -84776,10 +84902,10 @@ RcTableContainer.defaultProps = {
 RcTableContainer.displayName = "RcTableContainer";
 
 // ../juno-core/src/components/Table/TableHead/TableHead.tsx
-import React897, { forwardRef as forwardRef795 } from "react";
-var _RcTableHead = forwardRef795((props, ref2) => {
+import React904, { forwardRef as forwardRef794 } from "react";
+var _RcTableHead = forwardRef794((props, ref2) => {
   const { children: children2, ...rest } = useThemeProps({ props, name: "RcTableHead" });
-  return /* @__PURE__ */ React897.createElement(TableHead_default, {
+  return /* @__PURE__ */ React904.createElement(TableHead_default, {
     ...rest,
     ref: ref2
   }, children2);
@@ -84788,23 +84914,23 @@ var RcTableHead = styled_components_default(_RcTableHead)``;
 RcTableHead.displayName = "RcTableHead";
 
 // ../juno-core/src/components/Tabs/Tabs/Tabs.tsx
-import React902, { forwardRef as forwardRef800, useMemo as useMemo103 } from "react";
+import React909, { forwardRef as forwardRef799, useMemo as useMemo103 } from "react";
 
 // ../juno-core/src/components/Tabs/Tabs/MoreMenuTabs/MoreMenuTabs.tsx
-import React901, {
+import React908, {
   cloneElement as cloneElement29,
-  forwardRef as forwardRef799,
+  forwardRef as forwardRef798,
   isValidElement as isValidElement20,
-  useEffect as useEffect63,
-  useRef as useRef102,
-  useState as useState50
+  useEffect as useEffect59,
+  useRef as useRef99,
+  useState as useState47
 } from "react";
 
 // ../juno-core/src/components/Tabs/Tabs/MoreMenuTab/MoreMenuTab.tsx
-import React899, { forwardRef as forwardRef797, useMemo as useMemo102, useState as useState49 } from "react";
+import React906, { forwardRef as forwardRef796, useMemo as useMemo102, useState as useState46 } from "react";
 
 // ../juno-core/src/components/Tabs/Tab/Tab.tsx
-import React898, { forwardRef as forwardRef796, useMemo as useMemo101 } from "react";
+import React905, { forwardRef as forwardRef795, useMemo as useMemo101 } from "react";
 
 // ../juno-core/src/components/Tabs/Tab/utils/TabUtils.ts
 var RcTabClasses = RcClasses(["labelIcon", "wrapper", "selected"], "RcTab");
@@ -84843,11 +84969,11 @@ var TabStyle = (props) => {
 };
 
 // ../juno-core/src/components/Tabs/Tab/Tab.tsx
-var _RcTab = forwardRef796((inProps, ref2) => {
+var _RcTab = forwardRef795((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcTab" });
   const { classes: classesProp, children: children2, direction, ...rest } = props;
   const classes = useMemo101(() => combineProps(RcTabClasses, classesProp), [classesProp]);
-  return /* @__PURE__ */ React898.createElement(Tab_default, {
+  return /* @__PURE__ */ React905.createElement(Tab_default, {
     ...rest,
     ref: ref2,
     classes
@@ -84881,7 +85007,7 @@ var MoreMenuTabStyle = ({
 
 // ../juno-core/src/components/Tabs/Tabs/MoreMenuTab/MoreMenuTab.tsx
 var DEFAULT_MORE_MENU_TAB_LABEL = "more_menu_tab";
-var _MoreMenuTab = forwardRef797((props, ref2) => {
+var _MoreMenuTab = forwardRef796((props, ref2) => {
   const {
     menuItems,
     MenuItemComponent = RcMenuItem,
@@ -84897,12 +85023,12 @@ var _MoreMenuTab = forwardRef797((props, ref2) => {
     ...MenuPropsRest
   } = MenuProps;
   const menuId = useId2(menuIdProp);
-  const [anchorEl, setAnchorEl] = useState49(null);
+  const [anchorEl, setAnchorEl] = useState46(null);
   const open = Boolean(anchorEl);
   const MoreIcon = (() => {
     let Icon;
     if (!MoreIconProp) {
-      Icon = /* @__PURE__ */ React899.createElement(RcIcon, {
+      Icon = /* @__PURE__ */ React906.createElement(RcIcon, {
         size: "medium",
         color: "neutral.f04",
         symbol: MoreHoriz_default
@@ -84913,7 +85039,7 @@ var _MoreMenuTab = forwardRef797((props, ref2) => {
       Icon = MoreIconProp;
     }
     if (TooltipProps?.title) {
-      return /* @__PURE__ */ React899.createElement(RcTooltip, {
+      return /* @__PURE__ */ React906.createElement(RcTooltip, {
         ...TooltipProps
       }, Icon);
     }
@@ -84945,19 +85071,19 @@ var _MoreMenuTab = forwardRef797((props, ref2) => {
         onChange?.(event, value);
         onClick?.(event);
       };
-      return /* @__PURE__ */ React899.createElement(MenuItemComponent, {
+      return /* @__PURE__ */ React906.createElement(MenuItemComponent, {
         key,
         disabled: disabled3,
         selected,
         value,
         onClick: handleClick,
         "data-test-automation-id": menuItemRest["data-test-automation-id"]
-      }, icon ? /* @__PURE__ */ React899.createElement(RcListItemIcon, null, icon) : null, /* @__PURE__ */ React899.createElement(RcListItemText, {
+      }, icon ? /* @__PURE__ */ React906.createElement(RcListItemIcon, null, icon) : null, /* @__PURE__ */ React906.createElement(RcListItemText, {
         primary: label3 || value
       }));
     });
   }, [MenuItemComponent, menuItems, onChange]);
-  return /* @__PURE__ */ React899.createElement(React899.Fragment, null, /* @__PURE__ */ React899.createElement(RcTab, {
+  return /* @__PURE__ */ React906.createElement(React906.Fragment, null, /* @__PURE__ */ React906.createElement(RcTab, {
     ...rest,
     ref: ref2,
     onClick: handleTabClick,
@@ -84966,7 +85092,7 @@ var _MoreMenuTab = forwardRef797((props, ref2) => {
     "aria-haspopup": "true",
     "aria-controls": menuId,
     "data-tab-more-button": ""
-  }), /* @__PURE__ */ React899.createElement(RcMenu, {
+  }), /* @__PURE__ */ React906.createElement(RcMenu, {
     autoClose: true,
     ...MenuPropsRest,
     id: menuId,
@@ -84986,15 +85112,15 @@ MoreMenuTab.defaultProps = {
 MoreMenuTab.displayName = "MoreMenuTab";
 
 // ../juno-core/src/components/Tabs/Tabs/MoreMenuTabs/MoreMenuTabSentinel.tsx
-import React900, { forwardRef as forwardRef798 } from "react";
-var MoreMenuTabSentinel = forwardRef798((props, ref2) => {
-  const { onFocus, id: id3 } = props;
-  return /* @__PURE__ */ React900.createElement("div", {
+import React907, { forwardRef as forwardRef797 } from "react";
+var MoreMenuTabSentinel = forwardRef797((props, ref2) => {
+  const { onFocus, id: id2 } = props;
+  return /* @__PURE__ */ React907.createElement("div", {
     ref: ref2,
     "aria-hidden": true,
     style: { position: "absolute", top: 0, left: 0, height: 0, width: 0 },
     tabIndex: -1,
-    "data-tab-sentinel": id3,
+    "data-tab-sentinel": id2,
     onFocus
   });
 });
@@ -85003,7 +85129,7 @@ MoreMenuTabSentinel.displayName = "MoreMenuTabSentinel";
 // ../juno-core/src/components/Tabs/Tabs/MoreMenuTabs/MoreMenuTabs.tsx
 var basicMoreButtonSize = 44;
 var getTabsInfoFromChildren = (children2) => {
-  const childrenInfo = React901.Children.map(children2, (child, index4) => {
+  const childrenInfo = React908.Children.map(children2, (child, index4) => {
     if (isValidElement20(child)) {
       const key = child.key ?? index4;
       return {
@@ -85019,7 +85145,7 @@ var getTabsInfoFromChildren = (children2) => {
     return [];
   return childrenInfo.filter((info3) => Boolean(info3));
 };
-var _MoreMenuTabs = forwardRef799((props, ref2) => {
+var _MoreMenuTabs = forwardRef798((props, ref2) => {
   const {
     orientation,
     children: childrenProp,
@@ -85032,13 +85158,13 @@ var _MoreMenuTabs = forwardRef799((props, ref2) => {
   const { onGroupInfoChange, ...MoreButtonPropsRest } = MoreButtonProps;
   const isVertical = orientation === "vertical";
   const sizeKey = isVertical ? "offsetHeight" : "offsetWidth";
-  const innerRef = useRef102(null);
-  const moreTabRef = useRef102(null);
-  const sentinelStartRef = useRef102(null);
+  const innerRef = useRef99(null);
+  const moreTabRef = useRef99(null);
+  const sentinelStartRef = useRef99(null);
   const tabsRef = useForkRef2(innerRef, ref2);
   const { externalWindow = window } = useRcPortalWindowContext();
   const mountStateRef = useMountState();
-  const [groupInfo, setGroupInfo] = useState50(() => {
+  const [groupInfo, setGroupInfo] = useState47(() => {
     const tabsInfo = getTabsInfoFromChildren(childrenProp);
     if (!tabsInfo) {
       return {
@@ -85113,7 +85239,7 @@ var _MoreMenuTabs = forwardRef799((props, ref2) => {
       }, 0);
     }
   }, resizeThrottleTime);
-  useEffect63(() => {
+  useEffect59(() => {
     const tablist = innerRef.current?.querySelector('[role="tablist"]');
     if (!tablist)
       return;
@@ -85173,7 +85299,7 @@ var _MoreMenuTabs = forwardRef799((props, ref2) => {
       return newGroupInfo;
     });
   }, [childrenProp], false);
-  useEffect63(() => {
+  useEffect59(() => {
     onGroupInfoChange?.([
       groupInfo.tab.map(({ index: index4, key }) => ({ index: index4, key })),
       groupInfo.menu.map(({ index: index4, key }) => ({ index: index4, key }))
@@ -85186,7 +85312,7 @@ var _MoreMenuTabs = forwardRef799((props, ref2) => {
     const menuItems = groupInfo.menu.map(({ key, element: element2 }) => {
       return { ...element2.props, key };
     });
-    return useMoreMode ? /* @__PURE__ */ React901.createElement(MoreMenuTab, {
+    return useMoreMode ? /* @__PURE__ */ React908.createElement(MoreMenuTab, {
       ...MoreButtonPropsRest,
       key: DEFAULT_MORE_MENU_TAB_LABEL,
       size: rest.size,
@@ -85209,7 +85335,7 @@ var _MoreMenuTabs = forwardRef799((props, ref2) => {
       return tabGroupElements;
     return [
       ...tabGroupElements,
-      /* @__PURE__ */ React901.createElement(MoreMenuTabSentinel, {
+      /* @__PURE__ */ React908.createElement(MoreMenuTabSentinel, {
         id: "start",
         value: "sentinel-start",
         key: "sentinel-start",
@@ -85235,7 +85361,7 @@ var _MoreMenuTabs = forwardRef799((props, ref2) => {
           }
         });
       }),
-      /* @__PURE__ */ React901.createElement(MoreMenuTabSentinel, {
+      /* @__PURE__ */ React908.createElement(MoreMenuTabSentinel, {
         id: "end",
         value: "sentinel-end",
         key: "sentinel-end",
@@ -85247,7 +85373,7 @@ var _MoreMenuTabs = forwardRef799((props, ref2) => {
       })
     ];
   })();
-  return /* @__PURE__ */ React901.createElement(Tabs_default, {
+  return /* @__PURE__ */ React908.createElement(Tabs_default, {
     ...rest,
     ref: tabsRef,
     value,
@@ -85276,7 +85402,7 @@ var TabsStyle = () => {
 };
 
 // ../juno-core/src/components/Tabs/Tabs/Tabs.tsx
-var _RcTabs = forwardRef800((inProps, ref2) => {
+var _RcTabs = forwardRef799((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcTabs" });
   const {
     classes: classesProp,
@@ -85289,9 +85415,9 @@ var _RcTabs = forwardRef800((inProps, ref2) => {
   } = props;
   const isMore = variantProp === "moreMenu";
   const classes = useMemo103(() => combineProps(RcTabsClasses, classesProp), [classesProp]);
-  const children2 = useMemo103(() => React902.Children.map(childrenProp, (child) => React902.cloneElement(child, { size })), [childrenProp, size]);
+  const children2 = useMemo103(() => React909.Children.map(childrenProp, (child) => React909.cloneElement(child, { size })), [childrenProp, size]);
   if (isMore) {
-    return /* @__PURE__ */ React902.createElement(MoreMenuTabs, {
+    return /* @__PURE__ */ React909.createElement(MoreMenuTabs, {
       ...rest,
       resizeThrottleTime,
       ref: ref2,
@@ -85300,7 +85426,7 @@ var _RcTabs = forwardRef800((inProps, ref2) => {
       MoreButtonProps
     }, children2);
   }
-  return /* @__PURE__ */ React902.createElement(Tabs_default, {
+  return /* @__PURE__ */ React909.createElement(Tabs_default, {
     ...rest,
     ref: ref2,
     classes,
@@ -85321,23 +85447,23 @@ RcTabs.displayName = "RcTabs";
 // ../../node_modules/@material-ui/lab/esm/TabContext/TabContext.js
 var PropTypes125 = __toModule(require_prop_types());
 import {
-  createContext as createContext27,
-  createElement as createElement697,
-  useContext as useContext34,
-  useEffect as useEffect64,
+  createContext as createContext26,
+  createElement as createElement690,
+  useContext as useContext33,
+  useEffect as useEffect60,
   useMemo as useMemo104,
-  useState as useState51
+  useState as useState48
 } from "react";
-var Context = createContext27(null);
+var Context = createContext26(null);
 if (true) {
   Context.displayName = "TabContext";
 }
 function useUniquePrefix() {
-  var _React$useState = useState51(null), id3 = _React$useState[0], setId = _React$useState[1];
-  useEffect64(function() {
+  var _React$useState = useState48(null), id2 = _React$useState[0], setId = _React$useState[1];
+  useEffect60(function() {
     setId("mui-p-".concat(Math.round(Math.random() * 1e5)));
   }, []);
-  return id3;
+  return id2;
 }
 function TabContext(props) {
   var children2 = props.children, value = props.value;
@@ -85348,7 +85474,7 @@ function TabContext(props) {
       value
     };
   }, [idPrefix, value]);
-  return /* @__PURE__ */ createElement697(Context.Provider, {
+  return /* @__PURE__ */ createElement690(Context.Provider, {
     value: context
   }, children2);
 }
@@ -85357,7 +85483,7 @@ true ? TabContext.propTypes = {
   value: PropTypes125.string.isRequired
 } : void 0;
 function useTabContext() {
-  return useContext34(Context);
+  return useContext33(Context);
 }
 function getPanelId(context, value) {
   var idPrefix = context.idPrefix;
@@ -85379,7 +85505,7 @@ var RcTabContext = TabContext;
 RcTabContext.displayName = "RcTabContext";
 
 // ../juno-core/src/components/Tabs/TabList/TabList.tsx
-import React904, { forwardRef as forwardRef801, useMemo as useMemo105 } from "react";
+import React911, { forwardRef as forwardRef800, useMemo as useMemo105 } from "react";
 
 // ../juno-core/src/components/Tabs/TabList/styles/TabListStyle.tsx
 var TabListStyle = () => {
@@ -85390,7 +85516,7 @@ var TabListStyle = () => {
 var RcTabListClasses = RcClasses([], "RcTabList");
 
 // ../juno-core/src/components/Tabs/TabList/TabList.tsx
-var _RcTabList = forwardRef801((inProps, ref2) => {
+var _RcTabList = forwardRef800((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcTabList" });
   const { classes: classesProp, children: childrenProp, ...rest } = props;
   const classes = useMemo105(() => combineClasses(RcTabListClasses, classesProp), [classesProp]);
@@ -85398,14 +85524,14 @@ var _RcTabList = forwardRef801((inProps, ref2) => {
   if (context === null) {
     throw new TypeError("[RcTabList] No TabContext provided");
   }
-  const children2 = useMemo105(() => React904.Children.map(childrenProp, (child) => {
+  const children2 = useMemo105(() => React911.Children.map(childrenProp, (child) => {
     const { value } = child.props;
-    return React904.cloneElement(child, {
+    return React911.cloneElement(child, {
       "aria-controls": getPanelId(context, value),
       id: getTabId(context, value)
     });
   }), [childrenProp, context]);
-  return /* @__PURE__ */ React904.createElement(RcTabs, {
+  return /* @__PURE__ */ React911.createElement(RcTabs, {
     ...rest,
     ref: ref2,
     classes,
@@ -85419,13 +85545,13 @@ RcTabList.defaultProps = {};
 RcTabList.displayName = "RcTabList";
 
 // ../juno-core/src/components/Tabs/TabPanel/TabPanel.tsx
-import React906, { forwardRef as forwardRef803, useMemo as useMemo106 } from "react";
+import React913, { forwardRef as forwardRef802, useMemo as useMemo106 } from "react";
 
 // ../../node_modules/@material-ui/lab/esm/TabPanel/TabPanel.js
 var import_prop_types128 = __toModule(require_prop_types());
 import {
-  createElement as createElement698,
-  forwardRef as forwardRef802
+  createElement as createElement691,
+  forwardRef as forwardRef801
 } from "react";
 var styles163 = function styles164(theme) {
   return {
@@ -85434,19 +85560,19 @@ var styles163 = function styles164(theme) {
     }
   };
 };
-var TabPanel = /* @__PURE__ */ forwardRef802(function TabPanel2(props, ref2) {
+var TabPanel = /* @__PURE__ */ forwardRef801(function TabPanel2(props, ref2) {
   var children2 = props.children, className = props.className, classes = props.classes, value = props.value, other = _objectWithoutProperties(props, ["children", "className", "classes", "value"]);
   var context = useTabContext();
   if (context === null) {
     throw new TypeError("No TabContext provided");
   }
-  var id3 = getPanelId(context, value);
+  var id2 = getPanelId(context, value);
   var tabId = getTabId(context, value);
-  return /* @__PURE__ */ createElement698("div", _extends({
+  return /* @__PURE__ */ createElement691("div", _extends({
     "aria-labelledby": tabId,
     className: clsx_m_default(classes.root, className),
     hidden: value !== context.value,
-    id: id3,
+    id: id2,
     ref: ref2,
     role: "tabpanel"
   }, other), value === context.value && children2);
@@ -85470,7 +85596,7 @@ var TabPanelStyle = () => {
 var RcTabPanelClasses = RcClasses([], "RcTabPanel");
 
 // ../juno-core/src/components/Tabs/TabPanel/TabPanel.tsx
-var _RcTabPanel = forwardRef803((inProps, ref2) => {
+var _RcTabPanel = forwardRef802((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcTabPanel" });
   const { classes: classesProp, children: children2, ...rest } = props;
   const classes = useMemo106(() => combineClasses(RcTabPanelClasses, classesProp), [classesProp]);
@@ -85478,7 +85604,7 @@ var _RcTabPanel = forwardRef803((inProps, ref2) => {
   if (context === null) {
     throw new TypeError("[RcTabList] No RcTabContext provided");
   }
-  return /* @__PURE__ */ React906.createElement(TabPanel_default, {
+  return /* @__PURE__ */ React913.createElement(TabPanel_default, {
     ...rest,
     ref: ref2,
     classes
@@ -85491,7 +85617,7 @@ RcTabPanel.defaultProps = {};
 RcTabPanel.displayName = "RcTabPanel";
 
 // ../juno-core/src/components/Tag/Tag.tsx
-import React907, { forwardRef as forwardRef804, memo as memo580 } from "react";
+import React914, { forwardRef as forwardRef803, memo as memo577 } from "react";
 
 // ../juno-core/src/components/Tag/utils/TagUtils.ts
 var colorMap2 = {
@@ -85528,7 +85654,7 @@ var TagStyle = ({
 };
 
 // ../juno-core/src/components/Tag/Tag.tsx
-var _RcTag = memo580(forwardRef804((inProps, ref2) => {
+var _RcTag = memo577(forwardRef803((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcTag" });
   if (true) {
     useDeprecatedCheck(RcTag, props, [
@@ -85548,7 +85674,7 @@ var _RcTag = memo580(forwardRef804((inProps, ref2) => {
     radius: radius4,
     ...rest
   } = props;
-  return /* @__PURE__ */ React907.createElement("span", {
+  return /* @__PURE__ */ React914.createElement("span", {
     ...rest,
     ref: ref2
   }, content3 || children2);
@@ -85564,7 +85690,7 @@ RcTag.defaultProps = {
 RcTag.displayName = "RcTag";
 
 // ../juno-core/src/components/Text/Text.tsx
-import React908, { forwardRef as forwardRef805, useMemo as useMemo107, useRef as useRef103, useState as useState52 } from "react";
+import React915, { forwardRef as forwardRef804, useMemo as useMemo107, useRef as useRef100, useState as useState49 } from "react";
 var import_isString3 = __toModule(require_isString());
 
 // ../juno-core/src/components/Text/styles/StyledText.tsx
@@ -85590,7 +85716,7 @@ var textStyle = (props) => {
 };
 
 // ../juno-core/src/components/Text/Text.tsx
-var _RcText = forwardRef805((inProps, ref2) => {
+var _RcText = forwardRef804((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcText" });
   const {
     children: children2,
@@ -85603,8 +85729,8 @@ var _RcText = forwardRef805((inProps, ref2) => {
     TooltipProps: TooltipPropsProp,
     ...rest
   } = props;
-  const [isShowTitle, setIsShowTitle] = useState52(true);
-  const innerRef = useRef103(null);
+  const [isShowTitle, setIsShowTitle] = useState49(true);
+  const innerRef = useRef100(null);
   const textRef = useForkRef2(innerRef, ref2);
   if (titleWhenOverflow) {
     useOverflow(innerRef, (state) => setIsShowTitle(state));
@@ -85613,7 +85739,7 @@ var _RcText = forwardRef805((inProps, ref2) => {
   const TooltipProps = useMemo107(() => combineProps({
     tooltipForceHide: !isShowTitle
   }, TooltipPropsProp), [TooltipPropsProp, isShowTitle]);
-  return /* @__PURE__ */ React908.createElement(RcTypography, {
+  return /* @__PURE__ */ React915.createElement(RcTypography, {
     ref: textRef,
     title: isShowTitle || useRcTooltip ? title ?? ((0, import_isString3.default)(children2) ? children2 : void 0) : void 0,
     TooltipProps,
@@ -85632,7 +85758,7 @@ RcText.defaultProps = {
 };
 
 // ../juno-core/src/components/Thumbnail/Thumbnail.tsx
-import React909, { forwardRef as forwardRef806, memo as memo581 } from "react";
+import React916, { forwardRef as forwardRef805, memo as memo578 } from "react";
 
 // ../juno-core/src/components/Thumbnail/utils/ThumbnailUtils.ts
 var RcThumbnailSizes = {
@@ -85657,7 +85783,7 @@ var StyledThumbnail = styled_components_default.span`
 `;
 
 // ../juno-core/src/components/Thumbnail/Thumbnail.tsx
-var _RcThumbnail = forwardRef806((inProps, ref2) => {
+var _RcThumbnail = forwardRef805((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcThumbnail" });
   if (true) {
     useDeprecatedCheck(RcThumbnail, props, [
@@ -85674,13 +85800,13 @@ var _RcThumbnail = forwardRef806((inProps, ref2) => {
     ]);
   }
   const { url, src = url, iconType, size, symbol, ...rest } = props;
-  return /* @__PURE__ */ React909.createElement(React909.Fragment, null, src ? /* @__PURE__ */ React909.createElement(StyledThumbnail, {
+  return /* @__PURE__ */ React916.createElement(React916.Fragment, null, src ? /* @__PURE__ */ React916.createElement(StyledThumbnail, {
     ref: ref2,
     src,
     size,
     "data-test-automation-id": "thumbnail",
     ...rest
-  }) : /* @__PURE__ */ React909.createElement(RcIcon, {
+  }) : /* @__PURE__ */ React916.createElement(RcIcon, {
     ref: ref2,
     "data-test-automation-id": "iconThumbnail",
     ...rest,
@@ -85688,7 +85814,7 @@ var _RcThumbnail = forwardRef806((inProps, ref2) => {
     symbol
   }, iconType));
 });
-var RcThumbnail = styled_components_default(memo581(_RcThumbnail))``;
+var RcThumbnail = styled_components_default(memo578(_RcThumbnail))``;
 RcThumbnail.defaultProps = {
   size: "large"
 };
@@ -85921,6 +86047,8 @@ export {
   UnmountSymbol,
   Virtuoso,
   VirtuosoGrid,
+  VirtuosoGridMockContext,
+  VirtuosoMockContext,
   a11yKeyboard,
   a11yKeyboardCode,
   backgroundTransition,
