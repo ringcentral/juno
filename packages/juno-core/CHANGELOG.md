@@ -1,4 +1,16 @@
 
+## [2.41.0](https://github.com/ringcentral/juno/compare/juno-core-v2.40.1...juno-core-v2.41.0) (2023-12-25)
+
+
+### Features
+
+* **juno-core:** update react-virtuoso version update to v4.6.2 ([feef2bb](https://github.com/ringcentral/juno/commit/feef2bb38a4c680e16e2479cc5cf2ba79dd6af04))
+
+
+### Bug Fixes
+
+* **Doc:** [juno-core] fix error doc ([dee6bcd](https://github.com/ringcentral/juno/commit/dee6bcd3babb6bbd55ca8dfcdf7ebbc71fb54d14))
+
 ### [2.40.1](https://github.com/ringcentral/juno/compare/juno-core-v2.40.0...juno-core-v2.40.1) (2023-12-21)
 
 
