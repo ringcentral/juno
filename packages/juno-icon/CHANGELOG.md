@@ -1,4 +1,11 @@
 
+## [1.60.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.59.0...juno-icon-v1.60.0) (2023-12-28)
+
+
+### Features
+
+* **Icon:** update icon AvatarDelegatedLines ([4588532](https://github.com/ringcentral/juno/commit/4588532dd35ed083fd97d6494bf6867604c4e31d))
+
 ## [1.59.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.58.0...juno-icon-v1.59.0) (2023-12-28)
 
 
