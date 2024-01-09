@@ -18,6 +18,7 @@ module.exports = {
   Globe: 'globe',
   Swap: 'swap',
   PaymentMethod: 'payment-method',
+  AdditionalNumbers: 'additional-numbers',
   Bundle: 'bundle',
   PurchaseCart: 'purchase-cart',
   Device: 'device',
