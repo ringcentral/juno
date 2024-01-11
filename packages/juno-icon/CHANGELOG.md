@@ -1,4 +1,11 @@
 
+## [1.62.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.61.0...juno-icon-v1.62.0) (2024-01-11)
+
+
+### Features
+
+* **Icon:** add new icon SmsTemplate ([a1d6f41](https://github.com/ringcentral/juno/commit/a1d6f41628c69c8630adb236c2d5250ade0e8b82))
+
 ## [1.61.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.60.0...juno-icon-v1.61.0) (2024-01-09)
 
 
