@@ -9,6 +9,7 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  SmsTemplate: 'sms-template',
   AiSparkles: 'ai-sparkles',
   RcDirectory: 'rc-directory',
   ReportAnIssueAlternative: 'report-an-issue-alternative',

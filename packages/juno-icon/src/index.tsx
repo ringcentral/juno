@@ -465,6 +465,7 @@ export { default as Signal3 } from './Signal3';
 export { default as SmsBorder } from './SmsBorder';
 export { default as SmsDefault } from './SmsDefault';
 export { default as SmsInviteBorder } from './SmsInviteBorder';
+export { default as SmsTemplate } from './SmsTemplate';
 export { default as Sms } from './Sms';
 export { default as SortMessage } from './SortMessage';
 export { default as Sort } from './Sort';
