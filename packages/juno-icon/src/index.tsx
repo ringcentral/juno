@@ -49,6 +49,7 @@ export { default as AdminBorder } from './AdminBorder';
 export { default as Admin } from './Admin';
 export { default as AdvancedSetting } from './AdvancedSetting';
 export { default as Advanced } from './Advanced';
+export { default as AiSmartNotes } from './AiSmartNotes';
 export { default as AiSparkles } from './AiSparkles';
 export { default as Airbrake } from './Airbrake';
 export { default as AlignCenter } from './AlignCenter';

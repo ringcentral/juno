@@ -9,6 +9,7 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  AiSmartNotes: 'ai-smart-notes',
   SmsTemplate: 'sms-template',
   AiSparkles: 'ai-sparkles',
   RcDirectory: 'rc-directory',
