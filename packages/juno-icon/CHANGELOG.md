@@ -1,4 +1,11 @@
 
+## [1.63.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.62.0...juno-icon-v1.63.0) (2024-01-24)
+
+
+### Features
+
+* **Icon:** add new icon AiSmartNotes ([143643a](https://github.com/ringcentral/juno/commit/143643aeeffd089a9251f5fbeba6f8607cbf009f))
+
 ## [1.62.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.61.0...juno-icon-v1.62.0) (2024-01-11)
 
 
