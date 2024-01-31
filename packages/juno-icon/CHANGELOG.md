@@ -1,4 +1,11 @@
 
+## [1.64.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.63.0...juno-icon-v1.64.0) (2024-01-31)
+
+
+### Features
+
+* **Icon:** add new icon MarkReplyAsUnread ([18798bb](https://github.com/ringcentral/juno/commit/18798bb9d4ccd779c822bbcfb8bd3d4f8cb74299))
+
 ## [1.63.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.62.0...juno-icon-v1.63.0) (2024-01-24)
 
 
