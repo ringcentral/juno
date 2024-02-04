@@ -1,4 +1,15 @@
 
+## [1.65.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.64.0...juno-icon-v1.65.0) (2024-02-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* **Icon:** RcDirectory has already been removed, pls use SharedDirectory as a replacement.
+
+### Features
+
+* **Icon:** Add new icons Export, MissedCallDnd, SharedDirectory. Remove icon RcDirectory ([827d141](https://github.com/ringcentral/juno/commit/827d1410c81625f78abac9adf28cb34bbb8cbf15))
+
 ## [1.64.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.63.0...juno-icon-v1.64.0) (2024-01-31)
 
 
