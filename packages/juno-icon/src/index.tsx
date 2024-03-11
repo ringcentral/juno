@@ -473,6 +473,7 @@ export { default as Signal1 } from './Signal1';
 export { default as Signal2 } from './Signal2';
 export { default as Signal3 } from './Signal3';
 export { default as SmartCompose } from './SmartCompose';
+export { default as SmartSummary } from './SmartSummary';
 export { default as SmsBorder } from './SmsBorder';
 export { default as SmsDefault } from './SmsDefault';
 export { default as SmsInviteBorder } from './SmsInviteBorder';
