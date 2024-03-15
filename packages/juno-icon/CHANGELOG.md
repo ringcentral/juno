@@ -1,4 +1,11 @@
 
+## [1.68.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.67.0...juno-icon-v1.68.0) (2024-03-15)
+
+
+### Features
+
+* **Icon:** add icons SupportCase, WhatsNew ([35fa4c5](https://github.com/ringcentral/juno/commit/35fa4c5275281b9c44fc2fcc9d112f7ce90a117f))
+
 ## [1.67.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.66.0...juno-icon-v1.67.0) (2024-03-11)
 
 
