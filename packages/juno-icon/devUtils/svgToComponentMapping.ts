@@ -10,6 +10,8 @@ module.exports = {
   '8': '8',
   '9': '9',
   ImproveWithAi: 'improve-with-ai',
+  SupportCase: 'support-case',
+  WhatsNew: 'whats-new',
   SmartCompose: 'smart-compose',
   SmartSummary: 'smart-summary',
   AiWritingOptions: 'ai-writing-options',
