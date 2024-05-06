@@ -9,6 +9,7 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  AiIndicator: 'ai-indicator',
   TakeNotes: 'take-notes',
   Regenerate: 'regenerate',
   AiSmartNotesSp: 'ai-smart-notes_sp',
