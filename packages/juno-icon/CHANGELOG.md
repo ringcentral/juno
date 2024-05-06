@@ -1,4 +1,11 @@
 
+## [1.71.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.70.0...juno-icon-v1.71.0) (2024-05-06)
+
+
+### Features
+
+* **Icon:** add new icon AiIndicator ([9fbf858](https://github.com/ringcentral/juno/commit/9fbf85860461385686b589dc513a28b30c6f2acf))
+
 ## [1.70.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.69.0...juno-icon-v1.70.0) (2024-04-28)
 
 
