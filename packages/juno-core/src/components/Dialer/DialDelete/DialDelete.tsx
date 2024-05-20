@@ -28,6 +28,7 @@ type RcDialDeleteProps = {
       | React.KeyboardEvent<unknown>,
     reason: RcDialPadOnChangeReason,
   ) => void;
+  externalWindow?: Window;
 };
 
 const holdTime = 1000;
@@ -50,7 +51,7 @@ const RcDialDelete: FunctionComponent<RcDialDeleteProps> = (inProps) => {
   const { ref, ...events } = useLongPress(
     { onTap: handleDelete, onPress: handleClear },
     children.props,
-    { delay: holdTime },
+    { delay: holdTime, externalWindow: props.externalWindow },
   );
 
   const forkEleRef = useForkRef(children.props.ref, ref);
