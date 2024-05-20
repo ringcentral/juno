@@ -60402,7 +60402,7 @@ var RcDialDelete = (inProps) => {
     onDelete?.(e2, reason);
     onDeleteRef?.current?.(e2, reason);
   };
-  const { ref: ref2, ...events } = useLongPress({ onTap: handleDelete, onPress: handleClear }, children2.props, { delay: holdTime });
+  const { ref: ref2, ...events } = useLongPress({ onTap: handleDelete, onPress: handleClear }, children2.props, { delay: holdTime, externalWindow: props.externalWindow });
   const forkEleRef = useForkRef2(children2.props.ref, ref2);
   return React797.cloneElement(children2, {
     ref: forkEleRef,
