@@ -15,6 +15,7 @@ export { default as CompanySetupBorder } from './CompanySetupBorder';
 export { default as CompanySetup } from './CompanySetup';
 export { default as Country } from './Country';
 export { default as Description } from './Description';
+export { default as Disposition } from './Disposition';
 export { default as Hud } from './Hud';
 export { default as JumpTo } from './JumpTo';
 export { default as Limited } from './Limited';
