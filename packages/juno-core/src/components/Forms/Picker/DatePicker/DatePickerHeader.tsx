@@ -109,6 +109,7 @@ const DatePickerHeader: FunctionComponent<DatePickerHeaderProps> = memo(
           <StyledCurrentMonth
             role={'button'}
             tabIndex={0}
+            data-focusable
             view={view}
             onClick={onViewChange}
             aria-label={monthYearAriaLabel}

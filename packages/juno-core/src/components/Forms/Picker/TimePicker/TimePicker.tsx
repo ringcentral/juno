@@ -522,6 +522,7 @@ const _RcTimePicker = forwardRef<any, RcTimePickerProps<any>>(
                     onInnerChange={handlePeriodInnerChange}
                     onClose={closeMenu}
                     value={periodValue}
+                    data-focusable
                     {...PeriodToggleProps}
                   />
                 </div>

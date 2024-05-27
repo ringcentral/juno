@@ -17,6 +17,7 @@ import {
   RcBaseProps,
   useA11yKeyEvent,
   useEventCallback,
+  useFocusInside,
 } from '../../../../../foundation';
 import { RcIconButton } from '../../../../Buttons/IconButton';
 import { SvgSymbol } from '../../../../Icon';
@@ -108,6 +109,7 @@ const PickerTextField = forwardRef<any, PickerTextFieldProps>((props, ref) => {
     ...rest
   } = props;
 
+  const focusInside = useFocusInside();
   const { current: idForInput } = useRef(uniqueId(`${PICKER_DISPLAY_NAME}-`));
   const [anchorEl, setAnchorEl] = useState<HTMLDivElement | null>(null);
 
@@ -239,7 +241,6 @@ const PickerTextField = forwardRef<any, PickerTextFieldProps>((props, ref) => {
     }),
     [onPickerViewClose],
   );
-
   return (
     <>
       <StyledPickerTextField
@@ -261,7 +262,9 @@ const PickerTextField = forwardRef<any, PickerTextFieldProps>((props, ref) => {
         transformOrigin={popoverTransformOrigin}
         {...PopoverProps}
       >
+        {focusInside.start}
         {children}
+        {focusInside.end}
       </StyledPopover>
       <RcVisuallyHidden id={idForInstruction}>
         {announcementText}

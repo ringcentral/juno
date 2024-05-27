@@ -51,6 +51,7 @@ const Year = memo(
         size="medium"
         aria-label={yearAriaLabel}
         className={className}
+        data-focusable={selected}
         data-test-automation-class="date-picker-year"
         data-test-automation-value={children}
         {...rest}

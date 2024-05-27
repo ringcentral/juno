@@ -361,6 +361,7 @@ const Calendar = forwardRef<any, CalendarProps>(
               </CalendarSlideTransitionWrapper>
               <DayFooterWrapper className={classes!.footer}>
                 <RcButton
+                  data-focusable
                   variant="plain"
                   onClick={backToToday}
                   disabled={isTodayDisabled}

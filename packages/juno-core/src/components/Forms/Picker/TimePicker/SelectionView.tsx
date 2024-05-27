@@ -62,6 +62,7 @@ const SelectionView: FunctionComponent<SelectionViewProps> = (props) => {
         return (
           <StyledSelectionItem
             disabled={disabled}
+            data-focusable
             radius="round"
             wrapperSize={size}
             key={v}

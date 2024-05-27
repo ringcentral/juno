@@ -7,6 +7,7 @@ export * from './useDebounce';
 export * from './useEventCallback';
 export * from './useEventListener';
 export * from './useEver';
+export * from './useFocusInside';
 export * from './useForceUpdate';
 export * from './useForkRef';
 export * from './useGlobalListener';
