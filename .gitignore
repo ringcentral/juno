@@ -34,3 +34,4 @@ jira.cache.json
 framer/scripts/auth.json
 
 .env
+.nx
