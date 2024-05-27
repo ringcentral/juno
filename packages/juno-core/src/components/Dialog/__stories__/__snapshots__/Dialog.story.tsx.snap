@@ -225,7 +225,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-144 MuiSwitch-switchBase RcSwitch-switchBase"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-145 MuiSwitch-switchBase RcSwitch-switchBase"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -243,7 +243,7 @@ Array [
           className="MuiIconButton-label"
         >
           <input
-            className="PrivateSwitchBase-input-147 MuiSwitch-input"
+            className="PrivateSwitchBase-input-148 MuiSwitch-input"
             onChange={[Function]}
             type="checkbox"
             value={false}
@@ -374,7 +374,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-144 MuiRadio-root RcRadio-root c1 PrivateSwitchBase-checked-145 Mui-checked RcRadio-checked"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-145 MuiRadio-root RcRadio-root c1 PrivateSwitchBase-checked-146 Mui-checked RcRadio-checked"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -393,13 +393,13 @@ Array [
         >
           <input
             checked={true}
-            className="PrivateSwitchBase-input-147"
+            className="PrivateSwitchBase-input-148"
             onChange={[Function]}
             type="radio"
             value="dialog"
           />
           <div
-            className="PrivateRadioButtonIcon-root-148 RadioButtonIcon-root PrivateRadioButtonIcon-checked-150"
+            className="PrivateRadioButtonIcon-root-149 RadioButtonIcon-root PrivateRadioButtonIcon-checked-151"
           >
             <svg
               aria-hidden={true}
@@ -413,7 +413,7 @@ Array [
             </svg>
             <svg
               aria-hidden={true}
-              className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-149"
+              className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-150"
               focusable="false"
               viewBox="0 0 24 24"
             >
@@ -435,7 +435,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-144 MuiRadio-root RcRadio-root c1"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-145 MuiRadio-root RcRadio-root c1"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -454,13 +454,13 @@ Array [
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-147"
+            className="PrivateSwitchBase-input-148"
             onChange={[Function]}
             type="radio"
             value="drawer"
           />
           <div
-            className="PrivateRadioButtonIcon-root-148 RadioButtonIcon-root"
+            className="PrivateRadioButtonIcon-root-149 RadioButtonIcon-root"
           >
             <svg
               aria-hidden={true}
@@ -474,7 +474,7 @@ Array [
             </svg>
             <svg
               aria-hidden={true}
-              className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-149"
+              className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-150"
               focusable="false"
               viewBox="0 0 24 24"
             >
@@ -603,7 +603,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-144 MuiRadio-root RcRadio-root c1"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-145 MuiRadio-root RcRadio-root c1"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -622,13 +622,13 @@ Array [
         >
           <input
             checked={false}
-            className="PrivateSwitchBase-input-147"
+            className="PrivateSwitchBase-input-148"
             onChange={[Function]}
             type="radio"
             value="small"
           />
           <div
-            className="PrivateRadioButtonIcon-root-148 RadioButtonIcon-root"
+            className="PrivateRadioButtonIcon-root-149 RadioButtonIcon-root"
           >
             <svg
               aria-hidden={true}
@@ -642,7 +642,7 @@ Array [
             </svg>
             <svg
               aria-hidden={true}
-              className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-149"
+              className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-150"
               focusable="false"
               viewBox="0 0 24 24"
             >
@@ -664,7 +664,7 @@ Array [
     >
       <span
         aria-disabled={false}
-        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-144 MuiRadio-root RcRadio-root c1 PrivateSwitchBase-checked-145 Mui-checked RcRadio-checked"
+        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-145 MuiRadio-root RcRadio-root c1 PrivateSwitchBase-checked-146 Mui-checked RcRadio-checked"
         onBlur={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
@@ -683,13 +683,13 @@ Array [
         >
           <input
             checked={true}
-            className="PrivateSwitchBase-input-147"
+            className="PrivateSwitchBase-input-148"
             onChange={[Function]}
             type="radio"
             value="medium"
           />
           <div
-            className="PrivateRadioButtonIcon-root-148 RadioButtonIcon-root PrivateRadioButtonIcon-checked-150"
+            className="PrivateRadioButtonIcon-root-149 RadioButtonIcon-root PrivateRadioButtonIcon-checked-151"
           >
             <svg
               aria-hidden={true}
@@ -703,7 +703,7 @@ Array [
             </svg>
             <svg
               aria-hidden={true}
-              className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-149"
+              className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-150"
               focusable="false"
               viewBox="0 0 24 24"
             >

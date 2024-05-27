@@ -121,9 +121,6 @@ Array [
       Render times: 
       1
     </span>
-    <span
-      className="MuiTouchRipple-root"
-    />
   </button>,
   @media (hover:hover) and (pointer:fine) {
 
@@ -270,9 +267,6 @@ Array [
       Render times: 
       1
     </span>
-    <span
-      className="MuiTouchRipple-root"
-    />
   </button>,
 ]
 `;

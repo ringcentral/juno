@@ -7649,7 +7649,7 @@ exports[`Storyshots 🚀 Cleanup Components/Avatar Avatar With Disabled 1`] = `
 }
 
 <div
-  className="MuiBox-root MuiBox-root-53"
+  className="MuiBox-root MuiBox-root-54"
 >
   <span
     aria-describedby={null}

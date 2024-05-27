@@ -94,7 +94,7 @@ exports[`Storyshots 🔧 Foundation/Hooks/useTouchMouseEvent useTouchMouseEvent 
     </span>
   </button>
   <div
-    className="MuiBox-root MuiBox-root-16"
+    className="MuiBox-root MuiBox-root-17"
     style={
       Object {
         "overflowX": "hidden",

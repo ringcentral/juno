@@ -1,0 +1,330 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 🔧 Foundation/Hooks/useFocusInside useFocusInside 1`] = `
+Array [
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 32px;
+  color: #121212;
+}
+
+.c1 {
+  font-family: Lato,Helvetica,Arial,sans-serif;
+}
+
+.c2.highlight-term {
+  color: #121212 !important;
+  background-color: #FFDFB1 !important;
+}
+
+<h5
+    className="MuiTypography-root c0 MuiTypography-paragraph MuiTypography-displayBlock"
+    data-color="neutral.f06"
+    data-variant="headline1"
+  >
+    Focus will alway inside the container with
+     
+    <span
+      className="MuiTypography-root c1 c2 highlight-term MuiTypography-noWrap"
+      data-color="initial"
+      data-variant="inherit"
+      title="useFocusInside"
+    >
+      useFocusInside
+    </span>
+    <br />
+    <br />
+    use tab to switch focus, will alway keep inside container
+     
+  </h5>,
+  .c0 {
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 0;
+  height: 0;
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 28px;
+  width: 64px;
+  height: 64px;
+  background-color: #F3F3F3;
+}
+
+.c2 > img,
+.c2 > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  outline: 0;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.c1.focus-visible,
+.c1[data-focus-visible-added] {
+  box-shadow: 0 0 0 1px #066FAC;
+  border-radius: 4px;
+}
+
+.c1.focus-visible,
+.c1[data-focus-visible-added] .RcAvatar-avatarContainer,
+.c1 .RcAvatar-avatarContainer:hover {
+  opacity: 0.88;
+}
+
+.c1.focus-visible:active,
+.c1[data-focus-visible-added] .RcAvatar-avatarContainer:active,
+.c1 .RcAvatar-avatarContainer:active {
+  opacity: 0.76;
+}
+
+.c3 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  line-height: 20px;
+  color: #666666;
+}
+
+<div
+    className="MuiBox-root MuiBox-root-8"
+  >
+    <span
+      className="c0"
+      data-test-automation-id="focus-inside-start"
+      onFocus={[Function]}
+      tabIndex={0}
+    />
+    <button
+      className="c1 "
+      data-focusable={true}
+      data-test-automation-class="avatar"
+      type="button"
+    >
+      <div
+        className="c2 RcAvatar-avatarContainer"
+      >
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          0
+        </p>
+      </div>
+    </button>
+    <button
+      className="c1 "
+      data-focusable={true}
+      data-test-automation-class="avatar"
+      type="button"
+    >
+      <div
+        className="c2 RcAvatar-avatarContainer"
+      >
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          1
+        </p>
+      </div>
+    </button>
+    <button
+      className="c1 "
+      data-focusable={true}
+      data-test-automation-class="avatar"
+      type="button"
+    >
+      <div
+        className="c2 RcAvatar-avatarContainer"
+      >
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          2
+        </p>
+      </div>
+    </button>
+    <button
+      className="c1 "
+      data-focusable={true}
+      data-test-automation-class="avatar"
+      type="button"
+    >
+      <div
+        className="c2 RcAvatar-avatarContainer"
+      >
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          3
+        </p>
+      </div>
+    </button>
+    <button
+      className="c1 "
+      data-focusable={true}
+      data-test-automation-class="avatar"
+      type="button"
+    >
+      <div
+        className="c2 RcAvatar-avatarContainer"
+      >
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          4
+        </p>
+      </div>
+    </button>
+    <button
+      className="c1 "
+      data-focusable={true}
+      data-test-automation-class="avatar"
+      type="button"
+    >
+      <div
+        className="c2 RcAvatar-avatarContainer"
+      >
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          5
+        </p>
+      </div>
+    </button>
+    <button
+      className="c1 "
+      data-focusable={true}
+      data-test-automation-class="avatar"
+      type="button"
+    >
+      <div
+        className="c2 RcAvatar-avatarContainer"
+      >
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          6
+        </p>
+      </div>
+    </button>
+    <button
+      className="c1 "
+      data-focusable={true}
+      data-test-automation-class="avatar"
+      type="button"
+    >
+      <div
+        className="c2 RcAvatar-avatarContainer"
+      >
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          7
+        </p>
+      </div>
+    </button>
+    <button
+      className="c1 "
+      data-focusable={true}
+      data-test-automation-class="avatar"
+      type="button"
+    >
+      <div
+        className="c2 RcAvatar-avatarContainer"
+      >
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          8
+        </p>
+      </div>
+    </button>
+    <button
+      className="c1 "
+      data-focusable={true}
+      data-test-automation-class="avatar"
+      type="button"
+    >
+      <div
+        className="c2 RcAvatar-avatarContainer"
+      >
+        <p
+          className="MuiTypography-root c3"
+          data-color="neutral.f04"
+          data-variant="body1"
+        >
+          9
+        </p>
+      </div>
+    </button>
+    <span
+      className="c0"
+      data-test-automation-id="focus-inside-end"
+      onFocus={[Function]}
+      tabIndex={0}
+    />
+  </div>,
+]
+`;

@@ -897,12 +897,12 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         </h6>
       </a>
       <div
-        className="MuiBox-root MuiBox-root-121"
+        className="MuiBox-root MuiBox-root-122"
       />
       <div>
         <span
           aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-122 MuiCheckbox-root RcCheckbox-root c14"
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-123 MuiCheckbox-root RcCheckbox-root c14"
           onBlur={[Function]}
           onDragLeave={[Function]}
           onFocus={[Function]}
@@ -920,7 +920,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
             className="MuiIconButton-label"
           >
             <input
-              className="PrivateSwitchBase-input-125"
+              className="PrivateSwitchBase-input-126"
               data-indeterminate={false}
               onChange={[Function]}
               type="checkbox"
@@ -1139,7 +1139,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         display="flex"
       >
         <div
-          className="MuiBox-root MuiBox-root-126"
+          className="MuiBox-root MuiBox-root-127"
         >
           <div
             className="MuiTypography-root c11"
@@ -1157,14 +1157,14 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
           </p>
         </div>
         <div
-          className="MuiBox-root MuiBox-root-127"
+          className="MuiBox-root MuiBox-root-128"
         >
           <span
             className="MuiSwitch-root RcSwitch-root c26 c27"
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-122 MuiSwitch-switchBase RcSwitch-switchBase PrivateSwitchBase-checked-123 Mui-checked RcSwitch-checked"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-123 MuiSwitch-switchBase RcSwitch-switchBase PrivateSwitchBase-checked-124 Mui-checked RcSwitch-checked"
               onBlur={[Function]}
               onDragLeave={[Function]}
               onFocus={[Function]}
@@ -1182,7 +1182,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
                 className="MuiIconButton-label"
               >
                 <input
-                  className="PrivateSwitchBase-input-125 MuiSwitch-input"
+                  className="PrivateSwitchBase-input-126 MuiSwitch-input"
                   defaultChecked={true}
                   onChange={[Function]}
                   type="checkbox"
@@ -1207,7 +1207,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         display="flex"
       >
         <div
-          className="MuiBox-root MuiBox-root-128"
+          className="MuiBox-root MuiBox-root-129"
         >
           <div
             className="MuiTypography-root c11"
@@ -1225,10 +1225,10 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
           </p>
         </div>
         <div
-          className="MuiBox-root MuiBox-root-129"
+          className="MuiBox-root MuiBox-root-130"
         >
           <div
-            className="MuiFormControl-root MuiTextField-root RcTextField-root c30 c31 sc-fIosxK c31"
+            className="MuiFormControl-root MuiTextField-root RcTextField-root c30 c31 sc-gyElHZ c31"
             theme={
               Object {
                 "breakpoints": Object {
@@ -1825,7 +1825,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         display="flex"
       >
         <div
-          className="MuiBox-root MuiBox-root-130"
+          className="MuiBox-root MuiBox-root-131"
         >
           <div
             className="MuiTypography-root c11"
@@ -1843,14 +1843,14 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
           </p>
         </div>
         <div
-          className="MuiBox-root MuiBox-root-131"
+          className="MuiBox-root MuiBox-root-132"
         >
           <span
             className="MuiSwitch-root RcSwitch-root c26 c27"
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-122 MuiSwitch-switchBase RcSwitch-switchBase PrivateSwitchBase-checked-123 Mui-checked RcSwitch-checked"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-123 MuiSwitch-switchBase RcSwitch-switchBase PrivateSwitchBase-checked-124 Mui-checked RcSwitch-checked"
               onBlur={[Function]}
               onDragLeave={[Function]}
               onFocus={[Function]}
@@ -1868,7 +1868,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
                 className="MuiIconButton-label"
               >
                 <input
-                  className="PrivateSwitchBase-input-125 MuiSwitch-input"
+                  className="PrivateSwitchBase-input-126 MuiSwitch-input"
                   defaultChecked={true}
                   onChange={[Function]}
                   type="checkbox"
@@ -1893,7 +1893,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
         display="flex"
       >
         <div
-          className="MuiBox-root MuiBox-root-132"
+          className="MuiBox-root MuiBox-root-133"
         >
           <div
             className="MuiTypography-root c11"
@@ -1911,14 +1911,14 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
           </p>
         </div>
         <div
-          className="MuiBox-root MuiBox-root-133"
+          className="MuiBox-root MuiBox-root-134"
         >
           <span
             className="MuiSwitch-root RcSwitch-root c26 c27"
           >
             <span
               aria-disabled={false}
-              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-122 MuiSwitch-switchBase RcSwitch-switchBase"
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-123 MuiSwitch-switchBase RcSwitch-switchBase"
               onBlur={[Function]}
               onDragLeave={[Function]}
               onFocus={[Function]}
@@ -1936,7 +1936,7 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
                 className="MuiIconButton-label"
               >
                 <input
-                  className="PrivateSwitchBase-input-125 MuiSwitch-input"
+                  className="PrivateSwitchBase-input-126 MuiSwitch-input"
                   onChange={[Function]}
                   type="checkbox"
                 />

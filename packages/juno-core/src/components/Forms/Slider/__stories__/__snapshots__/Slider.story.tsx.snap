@@ -52,7 +52,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Slider Slider 1`] = `
     aria-valuemax={100}
     aria-valuemin={0}
     aria-valuenow={0}
-    className="MuiSlider-thumb RcSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-226"
+    className="MuiSlider-thumb RcSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-227"
     data-index={0}
     onBlur={[Function]}
     onFocus={[Function]}
@@ -68,13 +68,13 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/Slider Slider 1`] = `
     tabIndex={0}
   >
     <span
-      className="PrivateValueLabel-offset-228 MuiSlider-valueLabel"
+      className="PrivateValueLabel-offset-229 MuiSlider-valueLabel"
     >
       <span
-        className="PrivateValueLabel-circle-229"
+        className="PrivateValueLabel-circle-230"
       >
         <span
-          className="PrivateValueLabel-label-230"
+          className="PrivateValueLabel-label-231"
         >
           0
         </span>
@@ -214,7 +214,7 @@ Array [
           aria-valuemax={100}
           aria-valuemin={0}
           aria-valuenow={0}
-          className="MuiSlider-thumb RcSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-231"
+          className="MuiSlider-thumb RcSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-232"
           data-index={0}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -230,13 +230,13 @@ Array [
           tabIndex={0}
         >
           <span
-            className="PrivateValueLabel-offset-233 MuiSlider-valueLabel"
+            className="PrivateValueLabel-offset-234 MuiSlider-valueLabel"
           >
             <span
-              className="PrivateValueLabel-circle-234"
+              className="PrivateValueLabel-circle-235"
             >
               <span
-                className="PrivateValueLabel-label-235"
+                className="PrivateValueLabel-label-236"
               >
                 0
               </span>
@@ -550,7 +550,7 @@ Array [
           aria-valuemax={100}
           aria-valuemin={0}
           aria-valuenow={0}
-          className="MuiSlider-thumb RcSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-231"
+          className="MuiSlider-thumb RcSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-232"
           data-index={0}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -566,13 +566,13 @@ Array [
           tabIndex={0}
         >
           <span
-            className="PrivateValueLabel-offset-233 MuiSlider-valueLabel"
+            className="PrivateValueLabel-offset-234 MuiSlider-valueLabel"
           >
             <span
-              className="PrivateValueLabel-circle-234"
+              className="PrivateValueLabel-circle-235"
             >
               <span
-                className="PrivateValueLabel-label-235"
+                className="PrivateValueLabel-label-236"
               >
                 0
               </span>
@@ -1306,7 +1306,7 @@ Array [
           aria-valuemax={100}
           aria-valuemin={0}
           aria-valuenow={0}
-          className="MuiSlider-thumb RcSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-231"
+          className="MuiSlider-thumb RcSlider-thumb MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-232"
           data-index={0}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -1322,13 +1322,13 @@ Array [
           tabIndex={0}
         >
           <span
-            className="PrivateValueLabel-offset-233 MuiSlider-valueLabel"
+            className="PrivateValueLabel-offset-234 MuiSlider-valueLabel"
           >
             <span
-              className="PrivateValueLabel-circle-234"
+              className="PrivateValueLabel-circle-235"
             >
               <span
-                className="PrivateValueLabel-label-235"
+                className="PrivateValueLabel-label-236"
               >
                 0%
               </span>

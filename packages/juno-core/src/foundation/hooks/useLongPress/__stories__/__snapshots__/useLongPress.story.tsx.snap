@@ -161,7 +161,7 @@ Array [
 }
 
 <div
-    className="MuiBox-root MuiBox-root-13"
+    className="MuiBox-root MuiBox-root-14"
     style={
       Object {
         "overflowX": "hidden",
