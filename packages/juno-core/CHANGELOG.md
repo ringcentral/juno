@@ -1,4 +1,11 @@
 
+### [2.41.2](https://github.com/ringcentral/juno/compare/juno-core-v2.41.1...juno-core-v2.41.2) (2024-05-28)
+
+
+### Features
+
+* **juno-core:** support focus inside with Pickers ([7584a91](https://github.com/ringcentral/juno/commit/7584a91bb268ba7c35af450fb3849d20644063d8))
+
 ### [2.41.1](https://github.com/ringcentral/juno/compare/juno-core-v2.41.0...juno-core-v2.41.1) (2024-05-20)
 
 
