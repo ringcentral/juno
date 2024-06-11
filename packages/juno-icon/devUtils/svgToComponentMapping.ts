@@ -9,6 +9,8 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  RecordingInsights: 'recording-insights',
+  KeypadOffSp: 'keypad-off_sp',
   Disposition: 'Disposition',
   AiIndicator: 'ai-indicator',
   TakeNotes: 'take-notes',

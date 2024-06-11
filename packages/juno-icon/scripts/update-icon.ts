@@ -159,7 +159,6 @@ ${contentValue}
     ]),
   );
   fs.rmSync(JunoTmpIconPath, { recursive: true });
-  handleProcessResult(spawnSync('yarn', ['lint']));
 }
 
 (async () => {
@@ -174,6 +173,8 @@ ${contentValue}
     });
 
   await Promise.all([p, p2]);
+
+  handleProcessResult(spawnSync('yarn', ['lint']));
 
   console.log('[Juno Icon]: updated');
 })();
