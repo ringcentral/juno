@@ -1,4 +1,11 @@
 
+## [1.74.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.73.0...juno-icon-v1.74.0) (2024-06-14)
+
+
+### Features
+
+* **Icon:** add new icon ViewInConversationThread ([8519b26](https://github.com/ringcentral/juno/commit/8519b263b8f9bc2545a13cf161355c23527b17e2))
+
 ## [1.73.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.72.0...juno-icon-v1.73.0) (2024-06-11)
 
 
