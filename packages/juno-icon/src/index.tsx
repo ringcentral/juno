@@ -556,6 +556,7 @@ export { default as VideocamOffBorder } from './VideocamOffBorder';
 export { default as VideocamOff } from './VideocamOff';
 export { default as Videocam } from './Videocam';
 export { default as ViewBorder } from './ViewBorder';
+export { default as ViewInConversationThread } from './ViewInConversationThread';
 export { default as ViewLogBorder } from './ViewLogBorder';
 export { default as View } from './View';
 export { default as VoicemailBorder } from './VoicemailBorder';
