@@ -337,7 +337,7 @@ const SelectInput = forwardRef<any, SelectInputProps>((props, ref) => {
     }
 
     return React.cloneElement(child, {
-      'aria-selected': selected ? 'true' : undefined,
+      'aria-selected': selected ? 'true' : 'false',
       onClick: handleItemClick(child),
       onKeyUp: (event: any) => {
         if (event.key === ' ') {
