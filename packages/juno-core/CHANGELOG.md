@@ -1,4 +1,11 @@
 
+### [2.41.4](https://github.com/ringcentral/juno/compare/juno-core-v2.41.3...juno-core-v2.41.4) (2024-06-19)
+
+
+### Bug Fixes
+
+* **Select:** [juno-core] fix Select issue with aria-selected same as latest mui for fix a11y issue ([75d95de](https://github.com/ringcentral/juno/commit/75d95de790b5cbdd22eee36819f4f2d85c8e6b40))
+
 ### [2.41.3](https://github.com/ringcentral/juno/compare/juno-core-v2.41.2...juno-core-v2.41.3) (2024-06-12)
 
 ### [2.41.2](https://github.com/ringcentral/juno/compare/juno-core-v2.41.1...juno-core-v2.41.2) (2024-05-28)
