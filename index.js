@@ -81742,7 +81742,7 @@ var SelectInput3 = forwardRef790((props, ref2) => {
       foundMatch = true;
     }
     return React888.cloneElement(child, {
-      "aria-selected": selected ? "true" : void 0,
+      "aria-selected": selected ? "true" : "false",
       onClick: handleItemClick(child),
       onKeyUp: (event) => {
         if (event.key === " ") {
