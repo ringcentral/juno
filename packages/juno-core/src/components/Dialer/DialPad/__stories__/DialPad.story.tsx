@@ -1,4 +1,4 @@
-import React, { ComponentProps } from 'react';
+import React, { ComponentProps, useEffect, useState } from 'react';
 
 import {
   RcDialerPadSoundsMPEG,
@@ -6,6 +6,8 @@ import {
   RcDialPadButton,
   spacing,
   styled,
+  RcMenuItem,
+  RcSelect,
 } from '@ringcentral/juno';
 import {
   notControlInDocTable,
@@ -36,6 +38,59 @@ export const DialPad: Story<DialPadProps> = ({ children, ...args }) => {
   return (
     <Wrapper>
       <RcDialPad
+        sounds={RcDialerPadSoundsMPEG}
+        getDialPadButtonProps={(v) => ({ 'data-test-id': `${v}` })}
+        {...args}
+      />
+    </Wrapper>
+  );
+};
+
+export const DialPadWithCustomAudio: Story<DialPadProps> = ({
+  children,
+  ...args
+}) => {
+  const [sinkId, setSinkId] = useState<string | undefined>(undefined);
+  const [devices, setDevices] = useState<MediaDeviceInfo[]>([]);
+  useEffect(() => {
+    (async () => {
+      try {
+        await navigator.mediaDevices.getUserMedia({
+          audio: true,
+          video: false,
+        });
+
+        const audioDevice = (
+          await navigator.mediaDevices.enumerateDevices()
+        ).filter((device) => device.kind === 'audiooutput');
+        console.log('🐞 ~ audioDevice:', audioDevice);
+
+        setDevices(audioDevice);
+      } catch (error) {
+        //
+      }
+    })();
+  }, []);
+
+  return (
+    <Wrapper>
+      <RcSelect
+        fullWidth
+        placeholder="Select audio output"
+        value={sinkId}
+        onChange={(e) => {
+          setSinkId(e.target.value as any);
+        }}
+      >
+        <RcMenuItem value={undefined}>default</RcMenuItem>
+        {devices.map((item) => (
+          <RcMenuItem value={item.deviceId} key={item.deviceId}>
+            {item.label || 'unknown'}
+          </RcMenuItem>
+        ))}
+      </RcSelect>
+      <RcDialPad
+        sinkId={sinkId}
         sounds={RcDialerPadSoundsMPEG}
         getDialPadButtonProps={(v) => ({ 'data-test-id': `${v}` })}
         {...args}

@@ -5,6 +5,7 @@ import React, {
   useEffect,
   useImperativeHandle,
   useRef,
+  useCallback,
 } from 'react';
 
 import {
@@ -65,6 +66,14 @@ type RcDialPadProps = {
   volume?: number;
   /** is keypad sound muted */
   muted?: boolean;
+  /**
+   * sinkId of keypad sound
+   *
+   * @important
+   * Safari is not supported the `setSinkId` method
+   * https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/setSinkId#browser_compatibility
+   */
+  sinkId?: string;
   /** long press '0' time to typing '+' */
   longPressDelay?: number;
   /**
@@ -110,6 +119,7 @@ const _RcDialPad = forwardRef<HTMLDivElement, RcDialPadProps>(
       control,
       getDialPadButtonProps,
       externalWindow = window,
+      sinkId,
       ...divProps
     } = props;
 
@@ -144,10 +154,22 @@ const _RcDialPad = forwardRef<HTMLDivElement, RcDialPadProps>(
       },
     });
 
+    const audioProcessor = useCallback(
+      (audio: HTMLAudioElement): void => {
+        if (typeof volume !== 'undefined') audio.volume = volume;
+        if (typeof muted !== 'undefined') audio.muted = muted;
+        if (typeof audio['setSinkId'] === 'function')
+          audio['setSinkId'](
+            // when pass undefined, use '' to remove sinkId to default
+            sinkId || '',
+          );
+      },
+      [muted, sinkId, volume],
+    );
+
     const play = useKeyAudio({
-      volume: volume!,
-      muted: muted!,
       sounds,
+      processor: audioProcessor,
     });
 
     const playAudio = useEventCallback((value: string) => {

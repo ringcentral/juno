@@ -3,21 +3,27 @@ import { useEffect, useRef } from 'react';
 import { logInDev, useAudio } from '../../../../foundation';
 import { DIALER_PAD_PLUS, DialPadSoundMap } from './DialPadUtils';
 
-export type audioOption = {
-  volume: number;
-  muted: boolean;
+export type UseKeyAudioOptions = {
   sounds?: DialPadSoundMap;
+  /**
+   * custom audio process, you can custom audio process when you want to custom audio process
+   */
+  processor?: (audio: HTMLAudioElement) => void;
 };
 
-export const useKeyAudio = ({ volume, muted, sounds }: audioOption) => {
+/**
+ * Custom hook that handles playing audio for key presses in a dial pad.
+ *
+ * @param audioOption - The audio options for configuring the hook.
+ * @returns A function that plays the audio for a given key.
+ */
+export const useKeyAudio = ({ sounds, processor }: UseKeyAudioOptions) => {
   const audio = useAudio();
   const lastPlayRef = useRef<Promise<void>>();
 
   useEffect(() => {
-    audio.volume = volume;
-    audio.muted = muted;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [muted, volume]);
+    processor?.(audio);
+  }, [audio, processor]);
 
   const play = async (src: string) => {
     const lastPlay = lastPlayRef.current;
