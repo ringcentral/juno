@@ -4254,8 +4254,6 @@ exports[`Storyshots 🚀 Cleanup Components/Dialer Dialer Examples 1`] = `
         }
       >
         <div
-          aria-disabled={false}
-          aria-required={false}
           className="MuiInputBase-root MuiInput-root RcTextFieldInput-root MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
           onClick={[Function]}
           onCompositionEnd={[Function]}

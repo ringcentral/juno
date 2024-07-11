@@ -1030,9 +1030,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift 1`] = `
     Downshift
   </label>
   <div
-    aria-disabled={false}
-    aria-label="Downshift"
-    aria-required={false}
     className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
     onClick={[Function]}
     onCompositionEnd={[Function]}
@@ -2268,9 +2265,6 @@ Array [
       Downshift
     </label>
     <div
-      aria-disabled={false}
-      aria-label="Downshift"
-      aria-required={false}
       className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       onClick={[Function]}
       onCompositionEnd={[Function]}
@@ -3564,9 +3558,6 @@ Array [
         Downshift
       </label>
       <div
-        aria-disabled={false}
-        aria-label="Downshift"
-        aria-required={false}
         className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
         onClick={[Function]}
         onCompositionEnd={[Function]}
@@ -4719,9 +4710,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Debug 1`] = `
     Downshift
   </label>
   <div
-    aria-disabled={false}
-    aria-label="Downshift"
-    aria-required={false}
     className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
     onClick={[Function]}
     onCompositionEnd={[Function]}
@@ -5733,9 +5721,6 @@ Array [
       Downshift
     </label>
     <div
-      aria-disabled={false}
-      aria-label="Downshift"
-      aria-required={false}
       className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       onClick={[Function]}
       onCompositionEnd={[Function]}
@@ -6759,9 +6744,6 @@ Array [
       Downshift
     </label>
     <div
-      aria-disabled={false}
-      aria-label="Downshift"
-      aria-required={false}
       className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       onClick={[Function]}
       onCompositionEnd={[Function]}
@@ -8116,9 +8098,6 @@ Array [
       Country
     </label>
     <div
-      aria-disabled={false}
-      aria-label="Country"
-      aria-required={false}
       className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       onClick={[Function]}
       onCompositionEnd={[Function]}
@@ -9699,9 +9678,6 @@ Array [
       Country
     </label>
     <div
-      aria-disabled={true}
-      aria-label="Country"
-      aria-required={false}
       className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline Mui-disabled Mui-disabled RcTextFieldInput-disabled MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       onClick={[Function]}
       onCompositionEnd={[Function]}
@@ -11111,9 +11087,6 @@ Array [
       Country
     </label>
     <div
-      aria-disabled={false}
-      aria-label="Country"
-      aria-required={false}
       className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline Mui-error Mui-error RcTextFieldInput-error MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       onClick={[Function]}
       onCompositionEnd={[Function]}
@@ -12518,9 +12491,6 @@ Array [
       Country
     </label>
     <div
-      aria-disabled={false}
-      aria-label="Country"
-      aria-required={false}
       className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       onClick={[Function]}
       onCompositionEnd={[Function]}
@@ -14265,9 +14235,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Fixed Item Heigh
     Downshift
   </label>
   <div
-    aria-disabled={false}
-    aria-label="Downshift"
-    aria-required={false}
     className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
     onClick={[Function]}
     onCompositionEnd={[Function]}
@@ -15454,9 +15421,6 @@ Array [
       Country
     </label>
     <div
-      aria-disabled={false}
-      aria-label="Country"
-      aria-required={false}
       className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       onClick={[Function]}
       onCompositionEnd={[Function]}
@@ -16646,9 +16610,6 @@ Array [
       Address
     </label>
     <div
-      aria-disabled={false}
-      aria-label="Address"
-      aria-required={false}
       className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       onClick={[Function]}
       onCompositionEnd={[Function]}
@@ -17838,9 +17799,6 @@ Array [
       Country
     </label>
     <div
-      aria-disabled={false}
-      aria-label="Country"
-      aria-required={false}
       className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       onClick={[Function]}
       onCompositionEnd={[Function]}
@@ -19030,9 +18988,6 @@ Array [
       Country
     </label>
     <div
-      aria-disabled={false}
-      aria-label="Country"
-      aria-required={false}
       className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       onClick={[Function]}
       onCompositionEnd={[Function]}
@@ -20191,9 +20146,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift Lazy Load Exampl
     Country
   </label>
   <div
-    aria-disabled={false}
-    aria-label="Country"
-    aria-required={false}
     className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
     onClick={[Function]}
     onCompositionEnd={[Function]}
@@ -21364,9 +21316,6 @@ Array [
       Downshift
     </label>
     <div
-      aria-disabled={false}
-      aria-label="Downshift"
-      aria-required={false}
       className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       onClick={[Function]}
       onCompositionEnd={[Function]}
@@ -22522,9 +22471,6 @@ Array [
       Downshift
     </label>
     <div
-      aria-disabled={false}
-      aria-label="Downshift"
-      aria-required={false}
       className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       onClick={[Function]}
       onCompositionEnd={[Function]}
@@ -23743,9 +23689,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Custom Inpu
     Downshift
   </label>
   <div
-    aria-disabled={false}
-    aria-label="Downshift"
-    aria-required={false}
     className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcOutlineTextFieldInput-root CustomDownshiftInput-root RcDownshiftInput-root MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
     onClick={[Function]}
     onCompositionEnd={[Function]}
@@ -24932,9 +24875,6 @@ Array [
       Downshift
     </label>
     <div
-      aria-disabled={false}
-      aria-label="Downshift"
-      aria-required={false}
       className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       onClick={[Function]}
       onCompositionEnd={[Function]}
@@ -26124,9 +26064,6 @@ Array [
       Downshift
     </label>
     <div
-      aria-disabled={false}
-      aria-label="Downshift"
-      aria-required={false}
       className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       onClick={[Function]}
       onCompositionEnd={[Function]}
@@ -27281,9 +27218,6 @@ exports[`Storyshots 🚀 Cleanup Components/Downshift Downshift With Dynamic 1`]
     Downshift
   </label>
   <div
-    aria-disabled={false}
-    aria-label="Downshift"
-    aria-required={false}
     className="MuiInputBase-root MuiInput-root RcTextFieldInput-root RcDownshiftInput-root MuiInput-underline RcTextFieldInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
     onClick={[Function]}
     onCompositionEnd={[Function]}
