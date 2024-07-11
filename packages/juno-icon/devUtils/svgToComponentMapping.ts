@@ -9,6 +9,8 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  WorkflowOutlined: 'workflow-outlined',
+  WorkflowFilled: 'workflow-filled',
   ViewInConversationThread: 'view-in-conversation-thread',
   RecordingInsights: 'recording-insights',
   KeypadOffSp: 'keypad-off_sp',

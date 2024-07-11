@@ -574,6 +574,8 @@ export { default as WhisperSp } from './WhisperSp';
 export { default as Whisper } from './Whisper';
 export { default as Whiteboard } from './Whiteboard';
 export { default as Work } from './Work';
+export { default as WorkflowFilled } from './WorkflowFilled';
+export { default as WorkflowOutlined } from './WorkflowOutlined';
 export { default as WorkspaceBorder } from './WorkspaceBorder';
 export { default as Workspace } from './Workspace';
 export { default as Yelp } from './Yelp';
