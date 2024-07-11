@@ -1,4 +1,12 @@
 
+### [2.42.2](https://github.com/ringcentral/juno/compare/juno-core-v2.42.0...juno-core-v2.42.2) (2024-07-11)
+
+
+### Features
+
+* **Downshift:** [juno-core] fix ut and lint ([6a3fe95](https://github.com/ringcentral/juno/commit/6a3fe95024097535ca959a564043d1f5db8bbebe))
+* **Downshift:** [juno-core] remove downshift lisbox useless aria attr ([57d59c0](https://github.com/ringcentral/juno/commit/57d59c09199dda4a6c9c2d3905c766df7a514643))
+
 ## [2.42.0](https://github.com/ringcentral/juno/compare/juno-core-v2.41.4...juno-core-v2.42.0) (2024-07-03)
 
 
