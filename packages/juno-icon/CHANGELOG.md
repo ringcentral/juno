@@ -1,4 +1,11 @@
 
+## [1.75.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.74.0...juno-icon-v1.75.0) (2024-07-11)
+
+
+### Features
+
+* **Icon:** add new icons WorkflowFilled, WorkflowOutlined ([568d8a7](https://github.com/ringcentral/juno/commit/568d8a7c445188720e9347eaa34a573906587d10))
+
 ## [1.74.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.73.0...juno-icon-v1.74.0) (2024-06-14)
 
 
