@@ -57,6 +57,7 @@ export const init = (
     groupVariant,
     groupExpanded,
     groupBy,
+    InputProps,
   }: {
     isHaveTags?: boolean;
     options?: RcDownshiftSelectedItem[];
@@ -85,6 +86,7 @@ export const init = (
     | 'groupBy'
     | 'groupVariant'
     | 'groupExpanded'
+    | 'InputProps'
   >,
   context: InitContext,
 ) => {
@@ -152,6 +154,7 @@ export const init = (
         renderNoOptions={renderNoOptions}
         openOnFocus={openOnFocus}
         disabledItemsHighlightable={disabledItemsHighlightable}
+        InputProps={InputProps}
       />
     );
   };

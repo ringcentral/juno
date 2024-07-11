@@ -1215,6 +1215,9 @@ describe('Downshift', () => {
           {
             ...args,
             label: 'downshift',
+            InputProps: {
+              'data-test-automation-id': 'downshift-input-wrapper',
+            },
             value: [
               { id: 1, label: 'A', error: args.tagErrors[0] },
               { id: 2, label: 'B', error: args.tagErrors[1] },
@@ -1227,9 +1230,7 @@ describe('Downshift', () => {
         );
       }}
       Then: the downshift error state is $resultError ${(args, context) => {
-        const label = context.result.getByLabelText('downshift', {
-          selector: 'div',
-        });
+        const label = context.result.getByTestId('downshift-input-wrapper');
         if (args.resultError) {
           expect(label).toHaveClass('RcTextFieldInput-error');
         } else {

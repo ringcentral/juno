@@ -1,6 +1,5 @@
 import { ChangeEvent, HTMLAttributes, useMemo, useRef, useState } from 'react';
 
-import isString from 'lodash/isString';
 import uniqueId from 'lodash/uniqueId';
 
 import {
@@ -68,9 +67,6 @@ export const useDownshiftTag = <
   keyToTags,
   onMaxFreeSolo,
   multiple,
-  label: labelProp,
-  required,
-  disabled,
   getStopCreateFreeSolo,
   onReset,
 }: UseDownshiftTagParams<T>) => {
