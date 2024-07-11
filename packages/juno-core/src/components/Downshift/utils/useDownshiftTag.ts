@@ -232,9 +232,6 @@ export const useDownshiftTag = <
     props?: Omit<HTMLAttributes<HTMLElement>, 'color'>,
   ) => {
     return {
-      'aria-label': isString(labelProp) ? labelProp : undefined,
-      'aria-required': required || false,
-      'aria-disabled': disabled || false,
       // TODO: wait for input can complete that.
       // 'aria-multiselectable': false,
       // role: selectedItems.length > 0 ? 'listbox' : undefined,
