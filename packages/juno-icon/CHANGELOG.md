@@ -1,4 +1,6 @@
 
+## [1.76.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.75.0...juno-icon-v1.76.0) (2024-07-15)
+
 ## [1.75.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.74.0...juno-icon-v1.75.0) (2024-07-11)
 
 
