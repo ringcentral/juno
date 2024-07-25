@@ -267,6 +267,7 @@ export { default as HoldAnswer } from './HoldAnswer';
 export { default as HoldSp } from './HoldSp';
 export { default as Hold } from './Hold';
 export { default as HoldcallBorder } from './HoldcallBorder';
+export { default as HomeBorder } from './HomeBorder';
 export { default as HorizontalLine } from './HorizontalLine';
 export { default as HudBorder } from './HudBorder';
 export { default as HybridContact } from './HybridContact';

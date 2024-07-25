@@ -9,6 +9,7 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  HomeBorder: 'home_border',
   IdBorder: 'ID_border',
   WorkflowOutlined: 'workflow-outlined',
   WorkflowFilled: 'workflow-filled',
