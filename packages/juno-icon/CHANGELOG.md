@@ -1,4 +1,11 @@
 
+## [1.77.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.76.0...juno-icon-v1.77.0) (2024-07-25)
+
+
+### Features
+
+* **Icon:** add new icon HomeBorder ([af9902b](https://github.com/ringcentral/juno/commit/af9902bb917aabac40e72cb7a77b0033300aa730))
+
 ## [1.76.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.75.0...juno-icon-v1.76.0) (2024-07-15)
 
 ## [1.75.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.74.0...juno-icon-v1.75.0) (2024-07-11)
