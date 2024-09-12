@@ -71054,8 +71054,12 @@ var sharedListItemStyle = ({
       background-color: ${setAlpha(baseColor, 0.05)};
     `};
 
-    ${focusVisible},
-    &.${mainClasses.focusVisible} {
+    ${""}
+    &.Mui-focusVisible {
+      background-color: unset;
+    }
+
+    ${focusVisible} {
       background-color: ${() => {
     if (useFocusRing && highlighted) {
       return setAlpha(baseColor, 0.05);
