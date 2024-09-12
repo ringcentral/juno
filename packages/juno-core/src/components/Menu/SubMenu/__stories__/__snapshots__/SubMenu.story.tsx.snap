@@ -195,7 +195,6 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/SubMenu SubMenu With MenuList 1
   color: #121212;
 }
 
-.c1.RcMenuItem-focusVisible,
 .c1.Mui-focusVisible {
   background-color: unset;
 }

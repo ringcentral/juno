@@ -405,7 +405,6 @@ exports[`Storyshots 🚀 Cleanup Components/Cards/Card Card Examples 1`] = `
   color: #121212;
 }
 
-.c21.RcListItem-focusVisible,
 .c21.Mui-focusVisible {
   background-color: unset;
 }

@@ -17,7 +17,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List List 1`] = `
   color: #121212;
 }
 
-.c0.RcListItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }

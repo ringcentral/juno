@@ -110,7 +110,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -301,7 +300,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -627,7 +625,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -855,7 +852,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -1147,7 +1143,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -1346,7 +1341,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -1545,7 +1539,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -1852,7 +1845,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -2089,7 +2081,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -2380,7 +2371,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -2690,7 +2680,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -2881,7 +2870,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -3206,7 +3194,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -3599,7 +3586,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -3873,7 +3859,6 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/MenuItem/MenuItem Examples Seco
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }

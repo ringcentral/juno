@@ -412,7 +412,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Multiple-Lin
   color: #121212;
 }
 
-.c0.RcListItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -1816,7 +1815,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItem Examples Single-Line 
   color: #121212;
 }
 
-.c1.RcListItem-focusVisible,
 .c1.Mui-focusVisible {
   background-color: unset;
 }

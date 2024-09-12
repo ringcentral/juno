@@ -56,7 +56,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -207,7 +206,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -363,7 +361,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -520,7 +517,6 @@ Array [
   background-color: rgba(102,102,102,0.05);
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -676,7 +672,6 @@ Array [
   color: #121212;
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -833,7 +828,6 @@ Array [
   background-color: rgba(60,153,73,0.05);
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -990,7 +984,6 @@ Array [
   background-color: rgba(255,136,0,0.05);
 }
 
-.c0.RcMenuItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }

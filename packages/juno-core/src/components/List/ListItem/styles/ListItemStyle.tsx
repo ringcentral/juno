@@ -64,14 +64,11 @@ export const sharedListItemStyle: RcThemedStyled<
       background-color: ${setAlpha(baseColor, 0.05)};
     `};
 
-    &.${
-        // mui focus visible have issue in old version, we use the focus-visible polyfill class to do that
-
-        // that for menuItem, because in current version of menuItem that not support focused classes
-        // TODO: that can be remove after upgrade to V5
-        mainClasses.focusVisible
-      },
-      &.Mui-focusVisible {
+    ${
+      // mui focus visible have issue in old version, we use the focus-visible polyfill class to do that
+      ''
+    }
+    &.Mui-focusVisible {
       background-color: unset;
     }
 

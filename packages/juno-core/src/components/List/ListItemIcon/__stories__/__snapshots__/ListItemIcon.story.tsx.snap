@@ -34,7 +34,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemIcon ListItemIcon 1`] 
   color: #121212;
 }
 
-.c0.RcListItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }

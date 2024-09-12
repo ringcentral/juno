@@ -17,7 +17,6 @@ exports[`Storyshots 🚀 Cleanup Components/DnD/Dnd Examples/Multiple list/Multi
   color: #121212;
 }
 
-.c2.RcListItem-focusVisible,
 .c2.Mui-focusVisible {
   background-color: unset;
 }

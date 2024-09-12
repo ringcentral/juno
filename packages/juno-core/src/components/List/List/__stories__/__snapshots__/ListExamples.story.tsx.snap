@@ -133,7 +133,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples List With Contro
   color: #121212;
 }
 
-.c0.RcListItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
@@ -557,7 +556,6 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/List Examples Simple List 1`] 
   color: #121212;
 }
 
-.c0.RcListItem-focusVisible,
 .c0.Mui-focusVisible {
   background-color: unset;
 }
