@@ -93,9 +93,13 @@ Array [
   color: #121212;
 }
 
+.c1.RcMenuItem-focusVisible,
+.c1.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c1.focus-visible,
-.c1[data-focus-visible-added],
-.c1.RcMenuItem-focusVisible {
+.c1[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
@@ -354,9 +358,13 @@ Array [
   color: #121212;
 }
 
+.c1.RcMenuItem-focusVisible,
+.c1.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c1.focus-visible,
-.c1[data-focus-visible-added],
-.c1.RcMenuItem-focusVisible {
+.c1[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 

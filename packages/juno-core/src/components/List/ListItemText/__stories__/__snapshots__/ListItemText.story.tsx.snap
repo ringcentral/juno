@@ -17,9 +17,13 @@ exports[`Storyshots 🚀 Cleanup Components/Lists/ListItemText ListItemText 1`] 
   color: #121212;
 }
 
+.c0.RcListItem-focusVisible,
+.c0.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c0.focus-visible,
-.c0[data-focus-visible-added],
-.c0.RcListItem-focusVisible {
+.c0[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 

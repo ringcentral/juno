@@ -110,9 +110,13 @@ Array [
   color: #121212;
 }
 
+.c0.RcMenuItem-focusVisible,
+.c0.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c0.focus-visible,
-.c0[data-focus-visible-added],
-.c0.RcMenuItem-focusVisible {
+.c0[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
@@ -297,9 +301,13 @@ Array [
   color: #121212;
 }
 
+.c0.RcMenuItem-focusVisible,
+.c0.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c0.focus-visible,
-.c0[data-focus-visible-added],
-.c0.RcMenuItem-focusVisible {
+.c0[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
@@ -619,9 +627,13 @@ Array [
   color: #121212;
 }
 
+.c0.RcMenuItem-focusVisible,
+.c0.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c0.focus-visible,
-.c0[data-focus-visible-added],
-.c0.RcMenuItem-focusVisible {
+.c0[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
@@ -843,9 +855,13 @@ Array [
   color: #121212;
 }
 
+.c0.RcMenuItem-focusVisible,
+.c0.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c0.focus-visible,
-.c0[data-focus-visible-added],
-.c0.RcMenuItem-focusVisible {
+.c0[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
@@ -1131,9 +1147,13 @@ Array [
   color: #121212;
 }
 
+.c0.RcMenuItem-focusVisible,
+.c0.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c0.focus-visible,
-.c0[data-focus-visible-added],
-.c0.RcMenuItem-focusVisible {
+.c0[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
@@ -1326,9 +1346,13 @@ Array [
   color: #121212;
 }
 
+.c0.RcMenuItem-focusVisible,
+.c0.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c0.focus-visible,
-.c0[data-focus-visible-added],
-.c0.RcMenuItem-focusVisible {
+.c0[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
@@ -1521,9 +1545,13 @@ Array [
   color: #121212;
 }
 
+.c0.RcMenuItem-focusVisible,
+.c0.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c0.focus-visible,
-.c0[data-focus-visible-added],
-.c0.RcMenuItem-focusVisible {
+.c0[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
@@ -1824,9 +1852,13 @@ Array [
   color: #121212;
 }
 
+.c0.RcMenuItem-focusVisible,
+.c0.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c0.focus-visible,
-.c0[data-focus-visible-added],
-.c0.RcMenuItem-focusVisible {
+.c0[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
@@ -2057,9 +2089,13 @@ Array [
   color: #121212;
 }
 
+.c0.RcMenuItem-focusVisible,
+.c0.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c0.focus-visible,
-.c0[data-focus-visible-added],
-.c0.RcMenuItem-focusVisible {
+.c0[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
@@ -2344,9 +2380,13 @@ Array [
   color: #121212;
 }
 
+.c0.RcMenuItem-focusVisible,
+.c0.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c0.focus-visible,
-.c0[data-focus-visible-added],
-.c0.RcMenuItem-focusVisible {
+.c0[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
@@ -2650,9 +2690,13 @@ Array [
   color: #121212;
 }
 
+.c0.RcMenuItem-focusVisible,
+.c0.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c0.focus-visible,
-.c0[data-focus-visible-added],
-.c0.RcMenuItem-focusVisible {
+.c0[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
@@ -2837,9 +2881,13 @@ Array [
   color: #121212;
 }
 
+.c0.RcMenuItem-focusVisible,
+.c0.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c0.focus-visible,
-.c0[data-focus-visible-added],
-.c0.RcMenuItem-focusVisible {
+.c0[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
@@ -3158,9 +3206,13 @@ Array [
   color: #121212;
 }
 
+.c0.RcMenuItem-focusVisible,
+.c0.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c0.focus-visible,
-.c0[data-focus-visible-added],
-.c0.RcMenuItem-focusVisible {
+.c0[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
@@ -3547,9 +3599,13 @@ Array [
   color: #121212;
 }
 
+.c0.RcMenuItem-focusVisible,
+.c0.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c0.focus-visible,
-.c0[data-focus-visible-added],
-.c0.RcMenuItem-focusVisible {
+.c0[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
@@ -3817,9 +3873,13 @@ exports[`Storyshots 🚀 Cleanup Components/Menu/MenuItem/MenuItem Examples Seco
   color: #121212;
 }
 
+.c0.RcMenuItem-focusVisible,
+.c0.Mui-focusVisible {
+  background-color: unset;
+}
+
 .c0.focus-visible,
-.c0[data-focus-visible-added],
-.c0.RcMenuItem-focusVisible {
+.c0[data-focus-visible-added] {
   background-color: rgba(102,102,102,0.16);
 }
 
