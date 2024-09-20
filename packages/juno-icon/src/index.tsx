@@ -8,6 +8,8 @@ export { default as Svg6 } from './6';
 export { default as Svg7 } from './7';
 export { default as Svg8 } from './8';
 export { default as Svg9 } from './9';
+export { default as AiSingleStarOutlineMd } from './AiSingleStarOutlineMd';
+export { default as AiSummaryMd } from './AiSummaryMd';
 export { default as AddTextLog } from './AddTextLog';
 export { default as Announcement } from './Announcement';
 export { default as CallQueue } from './CallQueue';

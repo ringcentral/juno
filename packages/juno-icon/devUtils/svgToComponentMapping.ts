@@ -9,6 +9,8 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  AiSingleStarOutlineMd: 'AISingleStarOutlineMD',
+  AiSummaryMd: 'AISummaryMD',
   ThumbDownBorderSp: 'thumb-down_border_sp',
   ThumbDownSp: 'thumb-down_sp',
   ThumbUpBorderSp: 'thumb-up_border_sp',
