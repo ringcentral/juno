@@ -1,4 +1,11 @@
 
+## [1.79.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.78.0...juno-icon-v1.79.0) (2024-09-20)
+
+
+### Features
+
+* **Icon:** add icons AiSingleStarOutlineMd, AiSummaryMd ([e225481](https://github.com/ringcentral/juno/commit/e2254818b89c06549c8985223646e299b9931797))
+
 ## [1.78.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.77.0...juno-icon-v1.78.0) (2024-09-18)
 
 
