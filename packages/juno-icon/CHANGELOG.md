@@ -1,4 +1,11 @@
 
+## [1.80.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.79.0...juno-icon-v1.80.0) (2024-09-26)
+
+
+### Features
+
+* **Icon:** add icon TranscriptBorder ([b7dc233](https://github.com/ringcentral/juno/commit/b7dc233c1b8ebc0d56e4629ab8262ccd40240de0))
+
 ## [1.79.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.78.0...juno-icon-v1.79.0) (2024-09-20)
 
 
