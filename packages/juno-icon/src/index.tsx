@@ -535,6 +535,7 @@ export { default as Time } from './Time';
 export { default as TodayCalendarIco } from './TodayCalendarIco';
 export { default as TransciptSp } from './TransciptSp';
 export { default as Transcribe } from './Transcribe';
+export { default as TranscriptBorder } from './TranscriptBorder';
 export { default as TranscriptBottom } from './TranscriptBottom';
 export { default as Transcript } from './Transcript';
 export { default as Transcription } from './Transcription';
