@@ -1,5 +1,9 @@
 export default `<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-Decline" viewBox="0 0 34 32">
+<title>Decline</title>
+<path d="M5.486 4.686c-0.781 0.781-0.781 2.047 0 2.828l8.485 8.485-8.485 8.485c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l8.485-8.485 8.485 8.485c0.781 0.781 2.047 0.781 2.828 0s0.781-2.047 0-2.828l-8.485-8.485 8.485-8.485c0.781-0.781 0.781-2.047 0-2.828s-2.047-0.781-2.828 0l-8.485 8.485-8.485-8.485c-0.781-0.781-2.047-0.781-2.828 0z"></path>
+</symbol>
 <symbol id="icon-transcript_border" viewBox="0 0 32 32">
 <title>transcript_border</title>
 <path d="M23 21.6v2.4h-21v-2.4h21zM30 15.6v2.4h-28v-2.4h28zM30 9.6v2.4h-28v-2.4h28z"></path>

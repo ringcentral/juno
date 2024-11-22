@@ -9,6 +9,7 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  Decline: 'Decline',
   TranscriptBorder: 'transcript_border',
   AiSingleStarOutlineMd: 'AISingleStarOutlineMD',
   AiSummaryMd: 'AISummaryMD',

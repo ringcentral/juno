@@ -16,6 +16,7 @@ export { default as CallQueue } from './CallQueue';
 export { default as CompanySetupBorder } from './CompanySetupBorder';
 export { default as CompanySetup } from './CompanySetup';
 export { default as Country } from './Country';
+export { default as Decline } from './Decline';
 export { default as Description } from './Description';
 export { default as Disposition } from './Disposition';
 export { default as Hud } from './Hud';
