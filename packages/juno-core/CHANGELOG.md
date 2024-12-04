@@ -1,4 +1,11 @@
 
+## [2.43.0](https://github.com/ringcentral/juno/compare/juno-core-v2.42.3...juno-core-v2.43.0) (2024-12-04)
+
+
+### Features
+
+* **TabList:** separate the binding relationship between TabContext and RcTabList ([ee40215](https://github.com/ringcentral/juno/commit/ee4021581ee8bcf2ec75365b452fa414c00a4362))
+
 ### [2.42.3](https://github.com/ringcentral/juno/compare/juno-core-v2.42.2...juno-core-v2.42.3) (2024-09-12)
 
 
