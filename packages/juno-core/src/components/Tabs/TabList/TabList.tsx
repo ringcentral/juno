@@ -43,8 +43,14 @@ const _RcTabList = forwardRef<any, RcTabListProps>(
 
     const context = {
       value: value ?? tabContext?.value,
-      idPrefix: idPrefix ?? tabContext?.idPrefix!,
+      idPrefix: idPrefix ?? tabContext?.idPrefix,
     };
+
+    if (!tabContext && !context.idPrefix) {
+      throw new Error(
+        '[TabList] No idPrefix provided, use RcTabContext or idPrefix prop',
+      );
+    }
 
     const children = useMemo(
       () =>
@@ -53,8 +59,8 @@ const _RcTabList = forwardRef<any, RcTabListProps>(
           (child: React.ReactElement<RcTabProps>) => {
             const { value } = child.props;
             return React.cloneElement(child, {
-              'aria-controls': getPanelId(context, value),
-              id: getTabId(context, value),
+              'aria-controls': getPanelId(context as TabContextValue, value),
+              id: getTabId(context as TabContextValue, value),
             });
           },
         ),
