@@ -86341,17 +86341,23 @@ var RcTabListClasses = RcClasses([], "RcTabList");
 // ../juno-core/src/components/Tabs/TabList/TabList.tsx
 var _RcTabList = forwardRef841((inProps, ref2) => {
   const props = useThemeProps({ props: inProps, name: "RcTabList" });
-  const { classes: classesProp, children: childrenProp, ...rest } = props;
+  const {
+    classes: classesProp,
+    children: childrenProp,
+    idPrefix = "",
+    value,
+    ...rest
+  } = props;
   const classes = useMemo106(() => combineClasses(RcTabListClasses, classesProp), [classesProp]);
-  const context = useTabContext();
-  if (context === null) {
-    throw new TypeError("[RcTabList] No TabContext provided");
-  }
+  const context = useTabContext() || {
+    value,
+    idPrefix
+  };
   const children2 = useMemo106(() => React953.Children.map(childrenProp, (child) => {
-    const { value } = child.props;
+    const { value: value2 } = child.props;
     return React953.cloneElement(child, {
-      "aria-controls": getPanelId(context, value),
-      id: getTabId(context, value)
+      "aria-controls": getPanelId(context, value2),
+      id: getTabId(context, value2)
     });
   }), [childrenProp, context]);
   return /* @__PURE__ */ React953.createElement(RcTabs, {
