@@ -41,10 +41,13 @@ const _RcTabList = forwardRef<any, RcTabListProps>(
 
     const tabContext = useTabContext();
 
-    const context = {
-      value: value ?? tabContext?.value,
-      idPrefix: idPrefix ?? tabContext?.idPrefix,
-    };
+    const context = useMemo(
+      () => ({
+        value: value ?? tabContext?.value,
+        idPrefix: idPrefix ?? tabContext?.idPrefix,
+      }),
+      [value, idPrefix, tabContext],
+    );
 
     if (!tabContext && !context.idPrefix) {
       throw new Error(
@@ -64,7 +67,7 @@ const _RcTabList = forwardRef<any, RcTabListProps>(
             });
           },
         ),
-      [childrenProp, tabContext, value, idPrefix],
+      [childrenProp, context],
     );
 
     return (
