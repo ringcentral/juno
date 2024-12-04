@@ -30,7 +30,7 @@ const _RcTabList = forwardRef<any, RcTabListProps>(
     const {
       classes: classesProp,
       children: childrenProp,
-      idPrefix = '',
+      idPrefix,
       value,
       ...rest
     } = props;
@@ -39,9 +39,11 @@ const _RcTabList = forwardRef<any, RcTabListProps>(
       [classesProp],
     );
 
-    const context = useTabContext() || {
-      value,
-      idPrefix,
+    const tabContext = useTabContext();
+
+    const context = {
+      value: value ?? tabContext?.value,
+      idPrefix: idPrefix ?? tabContext?.idPrefix!,
     };
 
     const children = useMemo(
@@ -56,7 +58,7 @@ const _RcTabList = forwardRef<any, RcTabListProps>(
             });
           },
         ),
-      [childrenProp, context],
+      [childrenProp, tabContext, value, idPrefix],
     );
 
     return (
