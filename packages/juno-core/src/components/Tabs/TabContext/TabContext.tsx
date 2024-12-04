@@ -4,6 +4,7 @@ import MuiTabContext, {
   getPanelId,
   getTabId,
   useTabContext,
+  TabContextValue,
 } from '@material-ui/lab/TabContext';
 
 const RcTabContext = MuiTabContext as FunctionComponent<
@@ -12,4 +13,4 @@ const RcTabContext = MuiTabContext as FunctionComponent<
 
 RcTabContext.displayName = 'RcTabContext';
 
-export { getPanelId, getTabId, RcTabContext, useTabContext };
+export { getPanelId, getTabId, RcTabContext, useTabContext, TabContextValue };

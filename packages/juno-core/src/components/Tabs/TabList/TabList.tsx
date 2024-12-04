@@ -12,26 +12,37 @@ import {
   useThemeProps,
 } from '../../../foundation';
 import { RcTabProps } from '../Tab/Tab';
-import { getPanelId, getTabId, useTabContext } from '../TabContext';
+import {
+  getPanelId,
+  getTabId,
+  useTabContext,
+  TabContextValue,
+} from '../TabContext';
 import { RcTabs, RcTabsProps } from '../Tabs';
 import { TabListStyle } from './styles';
 import { RcTabListClasses } from './utils';
 
-type RcTabListProps = {} & RcBaseProps<RcTabsProps>;
+type RcTabListProps = Partial<TabContextValue> & RcBaseProps<RcTabsProps>;
 
 const _RcTabList = forwardRef<any, RcTabListProps>(
   (inProps: RcTabListProps, ref) => {
     const props = useThemeProps({ props: inProps, name: 'RcTabList' });
-    const { classes: classesProp, children: childrenProp, ...rest } = props;
+    const {
+      classes: classesProp,
+      children: childrenProp,
+      idPrefix = '',
+      value,
+      ...rest
+    } = props;
     const classes = useMemo(
       () => combineClasses(RcTabListClasses, classesProp),
       [classesProp],
     );
 
-    const context = useTabContext();
-    if (context === null) {
-      throw new TypeError('[RcTabList] No TabContext provided');
-    }
+    const context = useTabContext() || {
+      value,
+      idPrefix,
+    };
 
     const children = useMemo(
       () =>
