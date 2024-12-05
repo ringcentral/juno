@@ -86344,15 +86344,19 @@ var _RcTabList = forwardRef841((inProps, ref2) => {
   const {
     classes: classesProp,
     children: childrenProp,
-    idPrefix = "",
+    idPrefix,
     value,
     ...rest
   } = props;
   const classes = useMemo106(() => combineClasses(RcTabListClasses, classesProp), [classesProp]);
-  const context = useTabContext() || {
-    value,
-    idPrefix
-  };
+  const tabContext = useTabContext();
+  const context = useMemo106(() => ({
+    value: value ?? tabContext?.value,
+    idPrefix: idPrefix ?? tabContext?.idPrefix
+  }), [value, idPrefix, tabContext]);
+  if (!tabContext && !context.idPrefix) {
+    throw new Error("[TabList] No idPrefix provided, use RcTabContext or idPrefix prop");
+  }
   const children2 = useMemo106(() => React953.Children.map(childrenProp, (child) => {
     const { value: value2 } = child.props;
     return React953.cloneElement(child, {
