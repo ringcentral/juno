@@ -1,4 +1,13 @@
 
+### [2.43.1](https://github.com/ringcentral/juno/compare/juno-core-v2.43.0...juno-core-v2.43.1) (2024-12-05)
+
+
+### Features
+
+* **TabList:** fix tabList child memo not working ([e0e5bb9](https://github.com/ringcentral/juno/commit/e0e5bb953abfa869b2dd280183e1a4833c553d9c))
+* **TabList:** optimize TabList component with useMemo ([7d5c4cf](https://github.com/ringcentral/juno/commit/7d5c4cf96e982745dbc69a9de30bd5ceb15970b6))
+* **TabList:** throw error if idPrefix is missing in TabList ([aa69996](https://github.com/ringcentral/juno/commit/aa6999647635c38876611f5c1ff6b78a879ba6d2))
+
 ## [2.43.0](https://github.com/ringcentral/juno/compare/juno-core-v2.42.3...juno-core-v2.43.0) (2024-12-04)
 
 
