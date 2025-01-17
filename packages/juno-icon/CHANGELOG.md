@@ -1,4 +1,11 @@
 
+## [1.82.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.81.0...juno-icon-v1.82.0) (2025-01-17)
+
+
+### Features
+
+* **Icon:** add new icon MenuWem ([ca71494](https://github.com/ringcentral/juno/commit/ca71494e9f96b09d4c1b309910a60f4bcbcb2c9c))
+
 ## [1.81.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.80.0...juno-icon-v1.81.0) (2024-11-22)
 
 
