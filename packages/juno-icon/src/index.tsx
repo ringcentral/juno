@@ -335,6 +335,7 @@ export { default as MarkerS } from './MarkerS';
 export { default as MemberBorder } from './MemberBorder';
 export { default as MentionBorder } from './MentionBorder';
 export { default as Mention } from './Mention';
+export { default as MenuWem } from './MenuWem';
 export { default as Merge } from './Merge';
 export { default as MicBorder } from './MicBorder';
 export { default as MicOffBorder } from './MicOffBorder';
