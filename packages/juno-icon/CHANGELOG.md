@@ -1,4 +1,11 @@
 
+## [1.83.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.82.0...juno-icon-v1.83.0) (2025-02-14)
+
+
+### Features
+
+* **Icon:** Add icons MacosCommand, MacosControl, MacosOption, Reset ([720b92a](https://github.com/ringcentral/juno/commit/720b92a43b24658ae73b116cb1c66f3bd07f5e1b))
+
 ## [1.82.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.81.0...juno-icon-v1.82.0) (2025-01-17)
 
 
