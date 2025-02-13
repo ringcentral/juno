@@ -327,6 +327,9 @@ export { default as MacNumbersD } from './MacNumbersD';
 export { default as MacNumbers } from './MacNumbers';
 export { default as MacPagesD } from './MacPagesD';
 export { default as MacPages } from './MacPages';
+export { default as MacosCommand } from './MacosCommand';
+export { default as MacosControl } from './MacosControl';
+export { default as MacosOption } from './MacosOption';
 export { default as Mailchimp } from './Mailchimp';
 export { default as MarkAsReadBorder } from './MarkAsReadBorder';
 export { default as MarkReplyAsUnread } from './MarkReplyAsUnread';
@@ -458,6 +461,7 @@ export { default as ReportAnIssueAlternative } from './ReportAnIssueAlternative'
 export { default as ReportAnIssue } from './ReportAnIssue';
 export { default as ResendFax } from './ResendFax';
 export { default as ResetZoom } from './ResetZoom';
+export { default as Reset } from './Reset';
 export { default as RichTextEditor } from './RichTextEditor';
 export { default as Ringsense } from './Ringsense';
 export { default as RollAp } from './RollAp';
