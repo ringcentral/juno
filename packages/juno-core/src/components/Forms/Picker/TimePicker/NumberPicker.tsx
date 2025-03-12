@@ -235,6 +235,7 @@ const _NumberPicker = forwardRef<NumberPickerRef, NumberPickerProps>(
         aria-label={label}
         ref={pickerRef}
         data-focusable
+        role="spinbutton"
         {...rest}
       >
         <StyledTimeIconButton
