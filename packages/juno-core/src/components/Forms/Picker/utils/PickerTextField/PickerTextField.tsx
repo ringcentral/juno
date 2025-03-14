@@ -177,6 +177,7 @@ const PickerTextField = forwardRef<any, PickerTextFieldProps>((props, ref) => {
               />
             )}
             <RcIconButton
+              aria-hidden="true"
               className="picker-action"
               variant="plain"
               tabIndex={-1}

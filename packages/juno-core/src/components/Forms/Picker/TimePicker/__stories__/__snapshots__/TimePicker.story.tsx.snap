@@ -990,6 +990,7 @@ Array [
             </span>
           </button>
           <button
+            aria-hidden="true"
             className="MuiButtonBase-root c4 c5 picker-action RcIconButton-root"
             disabled={false}
             onBlur={[Function]}
@@ -1635,6 +1636,7 @@ Array [
             </span>
           </button>
           <button
+            aria-hidden="true"
             className="MuiButtonBase-root c4 c5 picker-action RcIconButton-root"
             disabled={false}
             onBlur={[Function]}
@@ -3333,6 +3335,7 @@ Array [
         </span>
       </button>
       <button
+        aria-hidden="true"
         className="MuiButtonBase-root c2 c3 picker-action RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
@@ -4333,6 +4336,7 @@ Array [
         </span>
       </button>
       <button
+        aria-hidden="true"
         className="MuiButtonBase-root c2 c3 picker-action RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
@@ -5433,6 +5437,7 @@ Array [
         </span>
       </button>
       <button
+        aria-hidden="true"
         className="MuiButtonBase-root c2 c3 picker-action RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
@@ -6495,6 +6500,7 @@ Array [
         </span>
       </button>
       <button
+        aria-hidden="true"
         className="MuiButtonBase-root c2 c3 picker-action RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
@@ -7556,6 +7562,7 @@ Array [
       />
       
       <button
+        aria-hidden="true"
         className="MuiButtonBase-root c2 c3 picker-action RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
@@ -8722,6 +8729,7 @@ Array [
           />
           
           <button
+            aria-hidden="true"
             className="MuiButtonBase-root c3 c4 picker-action RcIconButton-root"
             disabled={false}
             onBlur={[Function]}
@@ -9343,6 +9351,7 @@ Array [
           />
           
           <button
+            aria-hidden="true"
             className="MuiButtonBase-root c3 c4 picker-action RcIconButton-root"
             disabled={false}
             onBlur={[Function]}
@@ -10467,6 +10476,7 @@ Array [
           />
           
           <button
+            aria-hidden="true"
             className="MuiButtonBase-root c3 c4 picker-action RcIconButton-root"
             disabled={false}
             onBlur={[Function]}
@@ -11088,6 +11098,7 @@ Array [
           />
           
           <button
+            aria-hidden="true"
             className="MuiButtonBase-root c3 c4 picker-action RcIconButton-root"
             disabled={false}
             onBlur={[Function]}
@@ -12180,6 +12191,7 @@ Array [
       />
       
       <button
+        aria-hidden="true"
         className="MuiButtonBase-root c2 c3 picker-action RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
@@ -13145,6 +13157,7 @@ Array [
       />
       
       <button
+        aria-hidden="true"
         className="MuiButtonBase-root c2 c3 picker-action RcIconButton-root"
         disabled={false}
         onBlur={[Function]}

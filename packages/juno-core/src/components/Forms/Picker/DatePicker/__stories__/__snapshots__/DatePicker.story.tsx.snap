@@ -928,6 +928,7 @@ Array [
         </span>
       </button>
       <button
+        aria-hidden="true"
         className="MuiButtonBase-root c2 c3 picker-action RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
@@ -1924,6 +1925,7 @@ Array [
         </span>
       </button>
       <button
+        aria-hidden="true"
         className="MuiButtonBase-root c2 c3 picker-action RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
@@ -2953,6 +2955,7 @@ Array [
         </span>
       </button>
       <button
+        aria-hidden="true"
         className="MuiButtonBase-root c2 c3 picker-action RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
@@ -3994,6 +3997,7 @@ Array [
         </span>
       </button>
       <button
+        aria-hidden="true"
         className="MuiButtonBase-root c2 c3 picker-action RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
@@ -5108,6 +5112,7 @@ Array [
         </span>
       </button>
       <button
+        aria-hidden="true"
         className="MuiButtonBase-root c2 c3 picker-action RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
@@ -6140,6 +6145,7 @@ Array [
         </span>
       </button>
       <button
+        aria-hidden="true"
         className="MuiButtonBase-root c2 c3 picker-action RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
@@ -7112,6 +7118,7 @@ Array [
       />
       
       <button
+        aria-hidden="true"
         className="MuiButtonBase-root c2 c3 picker-action RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
@@ -8054,6 +8061,7 @@ Array [
       />
       
       <button
+        aria-hidden="true"
         className="MuiButtonBase-root c2 c3 picker-action RcIconButton-root"
         disabled={false}
         onBlur={[Function]}
@@ -9271,6 +9279,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
         />
         
         <button
+          aria-hidden="true"
           className="MuiButtonBase-root c3 c4 picker-action RcIconButton-root"
           disabled={false}
           onBlur={[Function]}
@@ -9892,6 +9901,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
         />
         
         <button
+          aria-hidden="true"
           className="MuiButtonBase-root c3 c4 picker-action RcIconButton-root"
           disabled={false}
           onBlur={[Function]}
@@ -10513,6 +10523,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
         />
         
         <button
+          aria-hidden="true"
           className="MuiButtonBase-root c3 c4 picker-action RcIconButton-root"
           disabled={false}
           onBlur={[Function]}
@@ -11134,6 +11145,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
         />
         
         <button
+          aria-hidden="true"
           className="MuiButtonBase-root c3 c4 picker-action RcIconButton-root"
           disabled={false}
           onBlur={[Function]}
@@ -11755,6 +11767,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
         />
         
         <button
+          aria-hidden="true"
           className="MuiButtonBase-root c3 c4 picker-action RcIconButton-root"
           disabled={false}
           onBlur={[Function]}
@@ -12408,6 +12421,7 @@ exports[`Storyshots 🚀 Cleanup Components/Forms/DatePicker DatePicker with ran
           </span>
         </button>
         <button
+          aria-hidden="true"
           className="MuiButtonBase-root c3 c4 picker-action RcIconButton-root"
           disabled={false}
           onBlur={[Function]}
