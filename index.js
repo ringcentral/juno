@@ -79848,6 +79848,7 @@ var PickerTextField = forwardRef793((props, ref2) => {
         "aria-label": iconTitle,
         ...combineClearProps
       }), /* @__PURE__ */ React889.createElement(RcIconButton, {
+        "aria-hidden": "true",
         className: "picker-action",
         variant: "plain",
         tabIndex: -1,
