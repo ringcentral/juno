@@ -1,4 +1,11 @@
 
+## [2.45.0](https://github.com/ringcentral/juno/compare/juno-core-v2.44.0...juno-core-v2.45.0) (2025-03-17)
+
+
+### Features
+
+* **PickerTextField:** add aria-hidden="true" on picker icon in endAdornment since this icon is purely decorative ([e00ca33](https://github.com/ringcentral/juno/commit/e00ca33804df4db50950c2d925fe8a15d64785c8))
+
 ## [2.44.0](https://github.com/ringcentral/juno/compare/juno-core-v2.43.1...juno-core-v2.44.0) (2025-03-13)
 
 
