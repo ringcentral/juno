@@ -1,4 +1,11 @@
 
+## [1.84.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.83.0...juno-icon-v1.84.0) (2025-03-19)
+
+
+### Features
+
+* **Icon:** Add AiWriterMenu icon ([72cbfba](https://github.com/ringcentral/juno/commit/72cbfbae914558f34ef1b687ecdf31eba43ea4ff))
+
 ## [1.83.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.82.0...juno-icon-v1.83.0) (2025-02-14)
 
 
