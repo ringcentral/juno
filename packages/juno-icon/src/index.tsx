@@ -59,6 +59,7 @@ export { default as AiSmartNotesSp } from './AiSmartNotesSp';
 export { default as AiSmartNotes } from './AiSmartNotes';
 export { default as AiSparkle } from './AiSparkle';
 export { default as AiSparkles } from './AiSparkles';
+export { default as AiWriterMenu } from './AiWriterMenu';
 export { default as AiWritingOptions } from './AiWritingOptions';
 export { default as Airbrake } from './Airbrake';
 export { default as AlignCenter } from './AlignCenter';

@@ -9,6 +9,7 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  AiWriterMenu: 'ai-writer-menu',
   MacosCommand: 'macos_command',
   MacosControl: 'macos_control',
   MacosOption: 'macos_option',
