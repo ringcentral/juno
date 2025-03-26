@@ -81001,6 +81001,7 @@ var _NumberPicker = forwardRef802((props, ref2) => {
     ref: pickerRef,
     "data-focusable": true,
     role: "spinbutton",
+    "aria-valuenow": innerValue,
     ...rest
   }, /* @__PURE__ */ React899.createElement(StyledTimeIconButton, {
     tabIndex: -1,
