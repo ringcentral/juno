@@ -1,4 +1,11 @@
 
+### [2.45.1](https://github.com/ringcentral/juno/compare/juno-core-v2.45.0...juno-core-v2.45.1) (2025-03-26)
+
+
+### Bug Fixes
+
+* **NumberPicker:** shall add aria-valuenow for current value when role is spinbutton, or it will read 0 ([2e47998](https://github.com/ringcentral/juno/commit/2e4799896ba6e6094588ac9e76aed83406ca6e9d))
+
 ## [2.45.0](https://github.com/ringcentral/juno/compare/juno-core-v2.44.0...juno-core-v2.45.0) (2025-03-17)
 
 
