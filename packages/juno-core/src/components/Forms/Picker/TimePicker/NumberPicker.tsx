@@ -236,6 +236,7 @@ const _NumberPicker = forwardRef<NumberPickerRef, NumberPickerProps>(
         ref={pickerRef}
         data-focusable
         role="spinbutton"
+        aria-valuenow={innerValue}
         {...rest}
       >
         <StyledTimeIconButton
