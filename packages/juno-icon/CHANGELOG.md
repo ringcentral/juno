@@ -1,4 +1,11 @@
 
+### [1.84.2](https://github.com/ringcentral/juno/compare/juno-icon-v1.84.1...juno-icon-v1.84.2) (2025-03-31)
+
+
+### Bug Fixes
+
+* **juno-icon:** fix AiWriterMenu size ([67fcd88](https://github.com/ringcentral/juno/commit/67fcd88a12246b9702501cda2e7349ae5361b18d))
+
 ### [1.84.1](https://github.com/ringcentral/juno/compare/juno-icon-v1.84.0...juno-icon-v1.84.1) (2025-03-20)
 
 
