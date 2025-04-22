@@ -9,6 +9,8 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  WindowsKey: 'windows_key',
+  UsFlagTcr: 'us-flag-tcr',
   AiWriterMenu: 'ai-writer-menu',
   MacosCommand: 'macos_command',
   MacosControl: 'macos_control',
