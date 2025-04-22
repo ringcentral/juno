@@ -1,4 +1,11 @@
 
+## [1.85.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.84.2...juno-icon-v1.85.0) (2025-04-22)
+
+
+### Features
+
+* **update-icon-250422:** [Icon] Add new icons UsFlagTcr, WindowsKey; Update icons CameraFilled, CameraOutlined ([07a1f10](https://github.com/ringcentral/juno/commit/07a1f10f9a99939fe22a571b3aacddb5a4f6fea6))
+
 ### [1.84.2](https://github.com/ringcentral/juno/compare/juno-icon-v1.84.1...juno-icon-v1.84.2) (2025-03-31)
 
 
