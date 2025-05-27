@@ -1,4 +1,11 @@
 
+### [1.85.2](https://github.com/ringcentral/juno/compare/juno-icon-v1.85.0...juno-icon-v1.85.2) (2025-05-27)
+
+
+### Features
+
+* **Icon:** Add new icons AdminSettings, AdminSettingsBorder, Statistics, StatisticsBorder, AiIndicatorBorder, CompactViewMd, LargeViewMd; ([a46725a](https://github.com/ringcentral/juno/commit/a46725ac2527c9e6762cc0122552bba3e50305db))
+
 ## [1.85.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.84.2...juno-icon-v1.85.0) (2025-04-22)
 
 
