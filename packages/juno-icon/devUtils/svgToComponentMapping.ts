@@ -9,6 +9,8 @@ module.exports = {
   '7': '7',
   '8': '8',
   '9': '9',
+  LargeView2: 'LargeView2',
+  CompactView2: 'CompactView2',
   ContactCenter: 'ContactCenter',
   AiIndicatorBorder: 'ai-indicator-border',
   CompactViewMd: 'CompactViewMD',
