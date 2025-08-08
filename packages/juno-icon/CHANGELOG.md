@@ -1,4 +1,11 @@
 
+## [1.90.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.88.0...juno-icon-v1.90.0) (2025-08-08)
+
+
+### Bug Fixes
+
+* **2025.07.24 Update Juno Icon:** update Reply icon ([371b6a8](https://github.com/ringcentral/juno/commit/371b6a8c79bb407a9d02e2b9bf03afff2ce3897a))
+
 ## [1.88.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.86.0...juno-icon-v1.88.0) (2025-07-16)
 
 
