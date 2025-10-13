@@ -70,10 +70,13 @@ type RcDialPadProps = {
    * sinkId of keypad sound
    *
    * @important
-   * Safari is not supported the `setSinkId` method
+   * Safari prior to 18.4 does not support the `setSinkId` method
    * https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/setSinkId#browser_compatibility
+   *
+   * Safari 18.4+ although supports the `setSinkId` method, it will throw an error “NotAllowedError A user gesture is required” if the user has not yet interacted with the page
    */
   sinkId?: string;
+  onSinkError?: (error: unknown) => void;
   /** long press '0' time to typing '+' */
   longPressDelay?: number;
   /**
@@ -120,6 +123,7 @@ const _RcDialPad = forwardRef<HTMLDivElement, RcDialPadProps>(
       getDialPadButtonProps,
       externalWindow = window,
       sinkId,
+      onSinkError,
       ...divProps
     } = props;
 
@@ -162,7 +166,9 @@ const _RcDialPad = forwardRef<HTMLDivElement, RcDialPadProps>(
           audio['setSinkId'](
             // when pass undefined, use '' to remove sinkId to default
             sinkId || '',
-          );
+          ).catch((error)=>{
+            onSinkError?.(error);
+          });
       },
       [muted, sinkId, volume],
     );
