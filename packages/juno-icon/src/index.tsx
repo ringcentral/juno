@@ -217,6 +217,8 @@ export { default as EventNew } from './EventNew';
 export { default as Evernote } from './Evernote';
 export { default as ExcelD } from './ExcelD';
 export { default as Excel } from './Excel';
+export { default as ExclamationMark } from './ExclamationMark';
+export { default as ExclamationMarkBorder } from './ExclamationMarkBorder';
 export { default as ExpandSp } from './ExpandSp';
 export { default as Expand } from './Expand';
 export { default as Export } from './Export';
