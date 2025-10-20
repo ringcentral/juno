@@ -1,4 +1,11 @@
 
+## [1.92.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.90.0...juno-icon-v1.92.0) (2025-10-20)
+
+
+### Features
+
+* **2025.10.16 Update Juno Icon:** Add exclamationMark and exclamationMarkBorder icons ([e60bc4d](https://github.com/ringcentral/juno/commit/e60bc4d52fd50bac37a67d8b9a77a0fb63d98050))
+
 ## [1.90.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.88.0...juno-icon-v1.90.0) (2025-08-08)
 
 
