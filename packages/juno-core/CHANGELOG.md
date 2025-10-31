@@ -1,4 +1,13 @@
 
+## [2.46.0](https://github.com/ringcentral/juno/compare/juno-core-v2.45.1...juno-core-v2.46.0) (2025-10-31)
+
+
+### Bug Fixes
+
+* **juno-core:** add onSinkError for Safari 18.4+ ([2c0d8cb](https://github.com/ringcentral/juno/commit/2c0d8cb838ae214a78e026158679e2c1228f57ed))
+* **juno-core:** revert version ([4f2dfa4](https://github.com/ringcentral/juno/commit/4f2dfa48a72e3ef216b8bbff0c0731f1667edb54))
+* **juno-core:** tsc ([88932bd](https://github.com/ringcentral/juno/commit/88932bd9f02a6a6a7c90f8cff490eb1ccbd76ae7))
+
 ### [2.45.1](https://github.com/ringcentral/juno/compare/juno-core-v2.45.0...juno-core-v2.45.1) (2025-03-26)
 
 
