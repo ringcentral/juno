@@ -166,11 +166,11 @@ const _RcDialPad = forwardRef<HTMLDivElement, RcDialPadProps>(
           audio['setSinkId'](
             // when pass undefined, use '' to remove sinkId to default
             sinkId || '',
-          ).catch((error)=>{
+          ).catch((error: unknown) => {
             onSinkError?.(error);
           });
       },
-      [muted, sinkId, volume],
+      [muted, onSinkError, sinkId, volume],
     );
 
     const play = useKeyAudio({
