@@ -61364,6 +61364,7 @@ var _RcDialPad = forwardRef768((inProps, ref2) => {
     getDialPadButtonProps,
     externalWindow = window,
     sinkId,
+    onSinkError,
     ...divProps
   } = props;
   const containerRef = useRef65(null);
@@ -61394,8 +61395,10 @@ var _RcDialPad = forwardRef768((inProps, ref2) => {
     if (typeof muted !== "undefined")
       audio.muted = muted;
     if (typeof audio["setSinkId"] === "function")
-      audio["setSinkId"](sinkId || "");
-  }, [muted, sinkId, volume]);
+      audio["setSinkId"](sinkId || "").catch((error4) => {
+        onSinkError?.(error4);
+      });
+  }, [muted, onSinkError, sinkId, volume]);
   const play = useKeyAudio({
     sounds,
     processor: audioProcessor
