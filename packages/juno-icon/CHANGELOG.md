@@ -1,4 +1,11 @@
 
+## [1.94.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.92.0...juno-icon-v1.94.0) (2025-11-03)
+
+
+### Features
+
+* **UXTECH-140:** [juno-icon] add past-time and HourglassMD icon ([6df0d22](https://github.com/ringcentral/juno/commit/6df0d223797bdbd9e8117d5e3a71ecd1bc38bbbd))
+
 ## [1.92.0](https://github.com/ringcentral/juno/compare/juno-icon-v1.90.0...juno-icon-v1.92.0) (2025-10-20)
 
 
