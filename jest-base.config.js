@@ -1,7 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  testURL: 'http://localhost',
+  testEnvironment: 'jsdom',
+  testEnvironmentOptions: {
+    url: 'http://localhost',
+  },
   testPathIgnorePatterns: ['/node_modules/', '/build/', '/dist/'],
   modulePathIgnorePatterns: ['/dist/'],
   moduleNameMapper: {
@@ -14,16 +17,16 @@ module.exports = {
   },
   transform: {
     '^.+\\.story\\.tsx$': '@storybook/addon-storyshots/injectFileName',
-    '^.+\\.(jsx?|tsx?)$': 'ts-jest',
-  },
-  globals: {
-    'ts-jest': {
-      diagnostics: false,
-      tsconfig: path.join(__dirname, './tsconfig.test.json'),
-      babelConfig: {
-        plugins: ['require-context-hook'],
+    '^.+\\.(jsx?|tsx?)$': [
+      'ts-jest',
+      {
+        diagnostics: false,
+        tsconfig: path.join(__dirname, './tsconfig.test.json'),
+        babelConfig: {
+          plugins: ['require-context-hook'],
+        },
       },
-    },
+    ],
   },
   reporters: [
     'default',

@@ -1,10 +1,11 @@
 import React, { useRef } from 'react';
 
-import { render, screen, cleanup, renderHook } from '@testing-library/react';
+import { render, screen, cleanup } from '@testing-library/react';
 
 import { RcChip } from '../../../components';
 import { RcThemeProvider } from '../../theme';
 import { removeClassName } from '../removeClassName';
+import { renderHook } from '@testing-library/react';
 
 afterEach(cleanup);
 

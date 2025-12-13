@@ -24,10 +24,10 @@ describe('useInterval()', () => {
       renderHook(() => useInterval(fn, intervalTime));
 
       jest.advanceTimersByTime(intervalTime);
-      expect(fn).toHaveBeenCalledTimes(1);
+      expect(fn).toBeCalledTimes(1);
 
       jest.advanceTimersByTime(intervalTime);
-      expect(fn).toHaveBeenCalledTimes(2);
+      expect(fn).toBeCalledTimes(2);
     },
   );
 
@@ -50,7 +50,7 @@ describe('useInterval()', () => {
       cancel();
 
       jest.advanceTimersByTime(intervalTime);
-      expect(fn).not.toHaveBeenCalled();
+      expect(fn).not.toBeCalled();
     },
   );
 
@@ -73,15 +73,15 @@ describe('useInterval()', () => {
       cancel();
 
       jest.advanceTimersByTime(intervalTime);
-      expect(fn).not.toHaveBeenCalled();
+      expect(fn).not.toBeCalled();
 
       play();
 
       jest.advanceTimersByTime(intervalTime);
-      expect(fn).toHaveBeenCalledTimes(1);
+      expect(fn).toBeCalledTimes(1);
 
       jest.advanceTimersByTime(intervalTime);
-      expect(fn).toHaveBeenCalledTimes(2);
+      expect(fn).toBeCalledTimes(2);
     },
   );
 
@@ -103,32 +103,32 @@ describe('useInterval()', () => {
 
       jest.advanceTimersByTime(intervalTime);
       // that will get times with 1
-      expect(fn).toHaveBeenCalledWith(1);
+      expect(fn).toBeCalledWith(1);
 
       jest.advanceTimersByTime(intervalTime / 2);
-      expect(fn).toHaveBeenCalledTimes(1);
+      expect(fn).toBeCalledTimes(1);
 
       pause();
       jest.advanceTimersByTime(intervalTime);
       // still call once
-      expect(fn).toHaveBeenCalledTimes(1);
+      expect(fn).toBeCalledTimes(1);
 
       play();
       jest.advanceTimersByTime(intervalTime);
       // that will get times with 2
-      expect(fn).toHaveBeenCalledWith(2);
+      expect(fn).toBeCalledWith(2);
 
-      expect(fn).toHaveBeenCalledTimes(2);
+      expect(fn).toBeCalledTimes(2);
 
       cancel();
       jest.advanceTimersByTime(intervalTime);
-      expect(fn).toHaveBeenCalledTimes(2);
+      expect(fn).toBeCalledTimes(2);
 
       play();
       jest.advanceTimersByTime(intervalTime);
       // re-start with number 1
-      expect(fn).toHaveBeenCalledWith(1);
-      expect(fn).toHaveBeenCalledTimes(3);
+      expect(fn).toBeCalledWith(1);
+      expect(fn).toBeCalledTimes(3);
     },
   );
 
@@ -149,11 +149,11 @@ describe('useInterval()', () => {
       } = result;
 
       jest.advanceTimersByTime(intervalTime);
-      expect(fn).not.toHaveBeenCalled();
+      expect(fn).not.toBeCalled();
 
       play();
       jest.advanceTimersByTime(intervalTime);
-      expect(fn).toHaveBeenCalledTimes(1);
+      expect(fn).toBeCalledTimes(1);
     },
   );
 
