@@ -4,12 +4,12 @@
   "license": "MIT",
   "author": "RingCentral",
   "bugs": {
-    "url": "https://github.com/ringcentral/juno/issues"
+    "url": "https://git.ringcentral.com/RCUI/rcui/issues"
   },
-  "homepage": "https://github.com/ringcentral/juno#readme",
+  "homepage": "https://git.ringcentral.com/RCUI/rcui#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ringcentral/juno.git"
+    "url": "https://git.ringcentral.com/RCUI/rcui.git"
   },
   "scripts": {
     "release": "rm -rf dist && yarn build && node ../../scripts/build/build-npm-package.js ./npm-package-options.js && node ./scripts/createESMPkg.js",

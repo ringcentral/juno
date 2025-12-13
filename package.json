@@ -69,10 +69,10 @@
     "@types/glob-parent": "^5.1.0",
     "@types/jest": "26.0.22",
     "@types/node": "16.11.9",
-    "@types/react": "17.0.35",
-    "@types/react-dom": "17.0.11",
-    "@types/react-is": "17.0.3",
-    "@types/react-test-renderer": "17.0.1",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "@types/react-is": "18.2.4",
+    "@types/react-test-renderer": "18.0.7",
     "@typescript-eslint/eslint-plugin": "5.4.0",
     "@typescript-eslint/parser": "5.4.0",
     "axios": "0.24.0",
@@ -116,7 +116,7 @@
     "tsconfig-paths-webpack-plugin": "^4.0.0",
     "typedoc": "^0.17.6",
     "typedoc-plugin-markdown": "^2.2.17",
-    "typescript": "3.8.3",
+    "typescript": "5.3.3",
     "webpack": "5.74.0",
     "webpack-merge": "5.8.0",
     "winston": "3.3.3",
@@ -127,6 +127,11 @@
   "engines": {
     "node": ">=12.0.0",
     "npm": ">=6.9.0"
+  },
+  "resolutions": {
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "@types/react-transition-group": "4.4.12"
   },
   "packageManager": "yarn@1.22.19"
 }

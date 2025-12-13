@@ -7,7 +7,7 @@ const FOCUSABLE_QUERY = '[data-focusable="true"]';
 /**
  * non size for just render hidden element
  */
-export const RcFocusInside = styled.span`
+export const RcFocusInside = styled.span<React.HTMLAttributes<HTMLSpanElement>>`
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
@@ -43,8 +43,9 @@ export const useFocusInside = (options: useFocusInsideParams = {}) => {
         {...(process.env.NODE_ENV !== 'production'
           ? { 'data-test-automation-id': 'focus-inside-start' }
           : undefined)}
-        onFocus={(e) => {
-          const container = containerRef?.current || e.target.parentElement;
+        onFocus={(e: React.FocusEvent<HTMLSpanElement>) => {
+          const container =
+            containerRef?.current || (e.target as HTMLElement).parentElement;
           const nodes = container?.querySelectorAll<HTMLElement>(selector);
 
           if (nodes) {
@@ -68,8 +69,9 @@ export const useFocusInside = (options: useFocusInsideParams = {}) => {
         {...(process.env.NODE_ENV !== 'production'
           ? { 'data-test-automation-id': 'focus-inside-end' }
           : undefined)}
-        onFocus={(e) => {
-          const container = containerRef?.current || e.target.parentElement;
+        onFocus={(e: React.FocusEvent<HTMLSpanElement>) => {
+          const container =
+            containerRef?.current || (e.target as HTMLElement).parentElement;
           const node = container?.querySelector<HTMLElement>(selector);
 
           if (node) {

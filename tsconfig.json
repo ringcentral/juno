@@ -4,7 +4,9 @@
     "baseUrl": ".",
     "paths": {
       "@ringcentral/juno": ["packages/juno-core/index.ts"],
-      "@ringcentral/juno-foundation": ["packages/juno-core/src/foundation/index.ts"]
+      "@ringcentral/juno-foundation": [
+        "packages/juno-core/src/foundation/index.ts"
+      ]
     },
     "importHelpers": true,
     "moduleResolution": "node",
@@ -19,6 +21,7 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
+    "ignoreDeprecations": "5.0",
     "suppressImplicitAnyIndexErrors": true,
     "strictNullChecks": true,
     "downlevelIteration": true,
@@ -27,7 +30,8 @@
     "emitDecoratorMetadata": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["node", "jest"]
   },
   "include": [
     "packages/**/*.tsx",
