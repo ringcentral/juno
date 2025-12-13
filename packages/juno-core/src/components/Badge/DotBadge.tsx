@@ -62,8 +62,8 @@ export const DotBadge = forwardRef<any, any>(
       <div {...rest} ref={ref}>
         {children}
         {dotComponent !== null && (
-          <RcBox position="absolute" zIndex="1" clone>
-            <DotComponent {...applyDotProps} />
+          <RcBox position="absolute" zIndex="1" clone={true as any}>
+            <DotComponent {...(applyDotProps as any)} />
           </RcBox>
         )}
       </div>

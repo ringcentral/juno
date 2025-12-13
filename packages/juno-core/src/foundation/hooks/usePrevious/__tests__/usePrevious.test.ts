@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { act, renderHook } from '@testing-library/react-hooks';
+import { act, renderHook } from '@testing-library/react';
 
 import { usePrevious } from '../usePrevious';
 

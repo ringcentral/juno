@@ -138,7 +138,14 @@ function withResponsive<P extends any, K extends keyof P>(
         return null;
       }
 
-      return <Component {...(componentProps as P)} ref={ref} {...sizeProps} />;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      return (
+        <Component
+          {...(componentProps as any)}
+          ref={ref}
+          {...(sizeProps as any)}
+        />
+      );
     },
   );
 

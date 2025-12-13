@@ -90,7 +90,9 @@ export type ControlledProps<P extends {} = {}, F = undefined> = P & {
   open: boolean;
 };
 
-export type UncontrolledProps<P extends {}> = Omit<P, 'onClose' | 'open'>;
+export type UncontrolledProps<P> = P extends {}
+  ? Omit<P, 'onClose' | 'open'>
+  : never;
 
 export type PortalOptions<P, D> = {
   /**

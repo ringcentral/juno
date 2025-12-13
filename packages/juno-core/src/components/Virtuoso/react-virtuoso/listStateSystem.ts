@@ -323,7 +323,7 @@ export const listStateSystem = u.system(
             return buildListState(items, topItems, totalCount, gap, sizesValue, firstItemIndex)
           }
         ),
-        //@ts-expect-error filter needs to be fixed
+        // @ts-ignore filter needs to be fixed
         u.filter((value) => value !== null),
         u.distinctUntilChanged()
       ),

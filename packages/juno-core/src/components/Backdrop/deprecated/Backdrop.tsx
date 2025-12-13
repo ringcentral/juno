@@ -8,7 +8,7 @@ export type RcBackdropProps = Omit<MuiBackdropProps, 'innerRef'> & {
   size?: 'small' | 'large';
 };
 
-export const RcBackdrop: React.SFC<RcBackdropProps> & {
+export const RcBackdrop: React.FC<RcBackdropProps> & {
   dependencies?: any[];
 } = React.memo((props) => <MuiBackdrop {...props} />);
 

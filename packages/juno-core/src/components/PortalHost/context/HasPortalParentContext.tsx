@@ -1,9 +1,14 @@
-import React, { createContext, FunctionComponent } from 'react';
+import React, { createContext, FunctionComponent, ReactNode } from 'react';
 
 export const HasPortalParentContext = createContext(false);
 
-export const HasPortalParentProvider: FunctionComponent = ({ children }) => (
-  <HasPortalParentContext.Provider value>
-    {children}
-  </HasPortalParentContext.Provider>
-);
+type HasPortalParentProviderProps = {
+  children?: ReactNode;
+};
+
+export const HasPortalParentProvider: FunctionComponent<HasPortalParentProviderProps> =
+  ({ children }) => (
+    <HasPortalParentContext.Provider value>
+      {children}
+    </HasPortalParentContext.Provider>
+  );

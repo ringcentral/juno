@@ -73,13 +73,11 @@ const _RcTypography = forwardRef<any, RcTypographyProps>(
 );
 
 /** @release */
-const RcTypography = styled<WithTooltipProps<RcTypographyProps>>(
-  withTooltip(_RcTypography),
-)`
+const RcTypography = styled(withTooltip(_RcTypography))`
   ${TypographyStyle}
 `;
 
-RcTypography.defaultProps = {
+(RcTypography as any).defaultProps = {
   variant: 'body1',
   color: 'initial',
 };

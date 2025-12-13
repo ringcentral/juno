@@ -107,7 +107,7 @@ const SelectInput = forwardRef<any, SelectInputProps>((props, ref) => {
   const [openState, setOpenState] = React.useState(false);
   const handleRef = useForkRef(ref, inputRefProp!);
 
-  const handleDisplayRef = React.useCallback((node) => {
+  const handleDisplayRef = React.useCallback((node: HTMLDivElement | null) => {
     displayRef.current = node;
 
     if (node) {
@@ -336,7 +336,7 @@ const SelectInput = forwardRef<any, SelectInputProps>((props, ref) => {
       foundMatch = true;
     }
 
-    return React.cloneElement(child, {
+    return React.cloneElement(child as React.ReactElement<any>, {
       'aria-selected': selected ? 'true' : 'false',
       onClick: handleItemClick(child),
       onKeyUp: (event: any) => {

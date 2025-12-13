@@ -30,7 +30,9 @@ import { useDownshiftGroup } from '../../utils/useDownshiftGroup';
 
 const DEFAULT_HIGHLIGHTED_INDEX = -1;
 
-type UseDownshiftParams<T = RcDownshiftSelectedItem> = {
+type UseDownshiftParams<
+  T extends RcDownshiftSelectedItem = RcDownshiftSelectedItem,
+> = {
   /** current suggestion list unique id */
   id?: string;
   /** that input ref you binding event */

@@ -25,6 +25,10 @@ type RcResponsiveProps = {
    * default target is body of current window
    */
   responsiveTarget?: RefObject<HTMLElement>;
+  /**
+   * children
+   */
+  children?: React.ReactNode;
 };
 
 const RcResponsive: FC<RcResponsiveProps> = (inProps) => {

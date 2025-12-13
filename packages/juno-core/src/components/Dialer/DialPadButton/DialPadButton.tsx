@@ -56,7 +56,13 @@ const _RcDialPadButton: FunctionComponent<RcDialPadButtonProps> = (props) => {
   );
 
   return (
-    <RcIconButton ref={ref} variant="round" stretchIcon {...rest} {...events} />
+    <RcIconButton
+      ref={ref}
+      variant="round"
+      stretchIcon
+      {...(rest as any)}
+      {...events}
+    />
   );
 };
 

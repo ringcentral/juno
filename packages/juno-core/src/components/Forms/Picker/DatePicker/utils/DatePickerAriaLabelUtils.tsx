@@ -17,6 +17,7 @@ const useScreenReaderContext = () =>
 
 type ScreenReaderProviderProps = {
   screenReaderProps: ScreenReaderProps;
+  children?: React.ReactNode;
 };
 
 const ScreenReaderProvider: FunctionComponent<ScreenReaderProviderProps> = ({

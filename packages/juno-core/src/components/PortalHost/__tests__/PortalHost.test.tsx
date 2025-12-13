@@ -4,7 +4,6 @@ import React, { FunctionComponent, useRef } from 'react';
 
 import { render } from '@ringcentral/juno-test';
 import {
-  act,
   cleanup,
   fireEvent,
   screen,
@@ -270,15 +269,10 @@ describe('feedback', () => {
       }),
     );
 
-    let feedback: string | undefined;
-
+    // Wait for dialog to be removed first, then get feedback
     await waitForElementToBeRemoved(dialogs[1]);
-
-    await act(async () => {
-      feedback = await controller2.onClosed;
-    });
-
-    expect(feedback).toBe('back2');
+    const feedback2 = await controller2.onClosed;
+    expect(feedback2).toBe('back2');
 
     // close second dialog
     fireEvent(
@@ -291,12 +285,8 @@ describe('feedback', () => {
     );
 
     await waitForElementToBeRemoved(dialogs[0]);
-
-    await act(async () => {
-      feedback = await controller1.onClosed;
-    });
-
-    expect(feedback).toBe('feed1');
+    const feedback1 = await controller1.onClosed;
+    expect(feedback1).toBe('feed1');
   });
 
   it('Should get feedback `undefined` after close all dialog', async () => {
@@ -316,19 +306,17 @@ describe('feedback', () => {
 
     portalManager.closeAll();
 
-    let feedback: string | undefined;
-
-    await act(async () => {
-      feedback = await controller2.onClosed;
+    // Wait for all dialogs to be removed first
+    await waitFor(() => {
+      expect(screen.queryAllByRole('dialog', { hidden: true })).toHaveLength(0);
     });
 
-    expect(feedback).toBeUndefined();
+    // Now the promises should resolve
+    const feedback2 = await controller2.onClosed;
+    expect(feedback2).toBeUndefined();
 
-    await act(async () => {
-      feedback = await controller1.onClosed;
-    });
-
-    expect(feedback).toBeUndefined();
+    const feedback1 = await controller1.onClosed;
+    expect(feedback1).toBeUndefined();
   });
 
   it('Should clean `portalManager._feedbackMap` after close dialog', async () => {
@@ -351,14 +339,10 @@ describe('feedback', () => {
 
     expect(portalManager['_feedbackMap'].get(controller.id)).toBe('feeeed');
 
-    let feedback: string | undefined;
-
+    // Wait for dialog to be removed first
     await waitForElementToBeRemoved(dialog);
 
-    await act(async () => {
-      feedback = await controller.onClosed;
-    });
-
+    const feedback = await controller.onClosed;
     expect(feedback).toBe('feeeed');
 
     expect(portalManager['_feedbackMap'].size).toBe(0);

@@ -11,3 +11,6 @@ export * from './styles';
 export * from './typings';
 export * from './utils';
 export { styled };
+
+// MUI direct re-exports (prefixed with "Mui" or "mui" to indicate raw MUI APIs)
+export * from './MuiExports';

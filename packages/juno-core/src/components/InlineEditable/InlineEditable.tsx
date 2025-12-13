@@ -359,11 +359,11 @@ const _RcInlineEditable = forwardRef<any, RcInlineEditableProps>(
   },
 );
 
-const RcInlineEditable = styled<RcInlineEditableProps>(_RcInlineEditable)`
+const RcInlineEditable = styled(_RcInlineEditable)`
   ${InlineEditableStyle}
 `;
 
-RcInlineEditable.defaultProps = {
+(RcInlineEditable as any).defaultProps = {
   variant: 'body1',
   color: 'neutral.f06',
 };

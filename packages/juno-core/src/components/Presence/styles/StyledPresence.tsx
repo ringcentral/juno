@@ -10,9 +10,15 @@ import {
 import { RcIcon } from '../../Icon';
 import { PresenceSizeProps } from '../Presence';
 
-export const _StyledPresence = forwardRef<any, PresenceSizeProps>(
-  ({ color, type, iconSizeValue, borderSizeValue, ...rest }, ref) => (
-    <div ref={ref} {...rest} />
+type StyledPresenceProps = PresenceSizeProps & {
+  children?: React.ReactNode;
+};
+
+export const _StyledPresence = forwardRef<any, StyledPresenceProps>(
+  ({ color, type, iconSizeValue, borderSizeValue, children, ...rest }, ref) => (
+    <div ref={ref} {...rest}>
+      {children}
+    </div>
   ),
 );
 
@@ -56,4 +62,6 @@ export const PresenceContainer = styled.div<PresenceSizeProps>`
       padding: ${borderSizeValue}px;
     `;
   }}
-`;
+` as React.ComponentType<
+  PresenceSizeProps & React.HTMLAttributes<HTMLDivElement>
+>;

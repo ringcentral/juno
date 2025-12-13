@@ -1,5 +1,5 @@
 import { EachRun } from '@ringcentral/juno-test';
-import { renderHook } from '@testing-library/react-hooks';
+import { renderHook } from '@testing-library/react';
 
 import { useId } from '../useId';
 

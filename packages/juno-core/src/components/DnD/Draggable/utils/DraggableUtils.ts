@@ -21,7 +21,7 @@ export const getDirectionOnlyItemStyle = (
 
   const isVertical = direction === 'vertical';
 
-  const overrideStyles = {};
+  const overrideStyles: Record<string, string> = {};
   const currentTransformMatch =
     style &&
     style.transform &&
@@ -37,5 +37,5 @@ export const getDirectionOnlyItemStyle = (
   return {
     ...style,
     ...overrideStyles,
-  };
+  } as DraggableProvidedDraggableProps['style'];
 };

@@ -13,6 +13,7 @@ type RcDragHandleClassesType = RcClassesProps<'root'>;
 
 type RcDragHandleProps = {
   className?: string;
+  children?: React.ReactNode;
 } & RcDragHandleClassesType;
 
 const defaultChildren = <RcIcon size="xsmall" symbol={DraggableHandle} />;

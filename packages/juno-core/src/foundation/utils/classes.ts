@@ -7,9 +7,12 @@ export type RcClassesProps<T extends string> = {
   classes?: Partial<ClassNameMap<T>>;
 };
 
-export const RcClasses = <T>(classes: Classes<T>[], prefix: string) => {
-  return classes.reduce<ClassesMap<T>>((prev, curr) => {
-    prev[curr as string] = `${prefix}-${curr}`;
+export const RcClasses = <T extends { classes?: any } | undefined>(
+  classes: Classes<T>[],
+  prefix: string,
+) => {
+  return classes.reduce<Record<string, string>>((prev, curr) => {
+    prev[String(curr)] = `${prefix}-${String(curr)}`;
     return prev;
-  }, {});
+  }, {}) as ClassesMap<T>;
 };

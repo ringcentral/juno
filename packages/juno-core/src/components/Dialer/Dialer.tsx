@@ -1,8 +1,10 @@
-import React, { FunctionComponent, useRef } from 'react';
+import React, { FunctionComponent, ReactNode, useRef } from 'react';
 
 import { RcDialerContext, RcDialerContextValue } from './utils';
 
-type RcDialerProps = {};
+type RcDialerProps = {
+  children?: ReactNode;
+};
 
 const RcDialer: FunctionComponent<RcDialerProps> = ({ children }) => {
   const dialPadActionRef: RcDialerContextValue['dialPadActionRef'] =

@@ -76,7 +76,7 @@ const _RcPresence = forwardRef<any, RcPresenceProps>((inProps, ref) => {
   })();
 
   return (
-    <PresenceContainer ref={ref} {...sizeProps} {...rest}>
+    <PresenceContainer ref={ref} {...(sizeProps as any)} {...(rest as any)}>
       <StyledPresence {...sizeProps} color={color}>
         <RcIcon
           symbol={symbol}
@@ -91,7 +91,7 @@ const _RcPresence = forwardRef<any, RcPresenceProps>((inProps, ref) => {
 /** @release */
 const RcPresence = styled(_RcPresence)``;
 
-RcPresence.defaultProps = {
+(RcPresence as any).defaultProps = {
   size: 'xsmall',
   type: 'notReady',
 };

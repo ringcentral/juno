@@ -157,7 +157,7 @@ const _RcTablePagination = forwardRef<any, RcTablePaginationProps>(
           <div className={classes.spacer} />
           {rowsPerPageOptions!.length > 1 && (
             <RcTypography
-              color="inherit"
+              color={'inherit' as any}
               variant="body1"
               className={classes!.caption}
               // id={labelId}

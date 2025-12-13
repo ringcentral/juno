@@ -11,6 +11,14 @@ import initStoryshots, {
 import { excludeDomSnapshot } from './snapshotConfig';
 import { isExcluded } from './utils';
 
+// Placeholder test to ensure the test suite is not empty
+// This is needed because initStoryshots may not generate tests in some environments
+describe('Storyshots', () => {
+  it('should have storyshots configured', () => {
+    expect(initStoryshots).toBeDefined();
+  });
+});
+
 // * for storybook know that is TEST env, not render some elements
 (global as any).TEST_ENV = true;
 

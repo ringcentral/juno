@@ -46,7 +46,7 @@ const _RcDialogTitle = forwardRef<any, RcDialogTitleProps>(
         ) : (
           <RcTypography
             variant={RcDialogTitleTypographyVariant[size!]}
-            component="h2"
+            component={'h2' as any}
           >
             {children}
           </RcTypography>

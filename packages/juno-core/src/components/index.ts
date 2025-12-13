@@ -52,3 +52,6 @@ export * from './Typography';
 export * from './VirtualizedMenu';
 export * from './Virtuoso';
 export * from './VisuallyHidden';
+
+// MUI direct re-exports (prefixed with "Mui" to indicate raw MUI components)
+export * from './MuiExports';

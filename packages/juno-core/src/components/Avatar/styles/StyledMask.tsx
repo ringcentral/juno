@@ -26,6 +26,7 @@ const defaultChildren = <RcIcon size="small" symbol={Edit} />;
 
 type RcAvatarMaskProps = {
   className?: string;
+  children?: React.ReactNode;
 };
 
 const RcAvatarMask: FunctionComponent<RcAvatarMaskProps> = ({

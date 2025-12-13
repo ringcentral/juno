@@ -1086,7 +1086,7 @@ const _RcDownshift = memo(
               }
             },
           }}
-          {...getPopperProps(PopperProps)}
+          {...(getPopperProps(PopperProps as any) as any)}
           transition={popperTransition}
         >
           {popperTransition

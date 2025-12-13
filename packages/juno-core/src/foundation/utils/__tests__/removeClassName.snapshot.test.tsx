@@ -5,7 +5,7 @@ import { render, screen, cleanup } from '@testing-library/react';
 import { RcChip } from '../../../components';
 import { RcThemeProvider } from '../../theme';
 import { removeClassName } from '../removeClassName';
-import { renderHook } from '@testing-library/react-hooks';
+import { renderHook } from '@testing-library/react';
 
 afterEach(cleanup);
 

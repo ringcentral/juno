@@ -16,6 +16,8 @@ import { RcStepIconClasses, useIsEditable } from './utils';
 type RcStepIconProps = {
   /** is that icon editable */
   editable?: boolean;
+  /** children */
+  children?: React.ReactNode;
 } & RcBaseProps<ComponentProps<typeof MuiStepIcon>>;
 
 const _RcStepIcon = forwardRef<any, RcStepIconProps>((inProps, ref) => {

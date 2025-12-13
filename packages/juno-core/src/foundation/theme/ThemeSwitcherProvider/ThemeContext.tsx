@@ -5,6 +5,7 @@ import { RcThemeInput } from '../theme.type';
 export type RcThemeSwitcherProviderProps = {
   defaultTheme?: string;
   themeMap?: Record<any, RcThemeInput>;
+  children?: React.ReactNode;
 };
 
 export type ThemeContextValue = {

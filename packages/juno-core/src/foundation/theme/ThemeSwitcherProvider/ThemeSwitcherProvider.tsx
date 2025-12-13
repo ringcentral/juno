@@ -5,8 +5,9 @@ import darkTheme from './rcDark.json';
 import highContrast from './rcHighContrast.json';
 import { RcThemeContext, RcThemeSwitcherProviderProps } from './ThemeContext';
 
-export const RcDefaultDarkTheme = darkTheme as RcThemeInput;
-export const RcDefaultHighContrastTheme = highContrast as RcThemeInput;
+export const RcDefaultDarkTheme = darkTheme as unknown as RcThemeInput;
+export const RcDefaultHighContrastTheme =
+  highContrast as unknown as RcThemeInput;
 
 export const RcThemeSwitcherDefaultTheme = {
   defaultTheme: 'light',
@@ -40,9 +41,12 @@ export const RcThemeSwitcherProvider: FunctionComponent<RcThemeSwitcherProviderP
             document.body.setAttribute(theme!, '');
 
             if (isValidElement(children)) {
-              const _children = React.cloneElement(children, {
-                theme: themeMap![theme!],
-              });
+              const _children = React.cloneElement(
+                children as React.ReactElement<any>,
+                {
+                  theme: themeMap![theme!],
+                },
+              );
               return _children;
             }
             throw new Error(

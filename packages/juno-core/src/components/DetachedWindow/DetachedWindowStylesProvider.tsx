@@ -21,6 +21,11 @@ export type RcDetachedWindowStylesProviderProps = {
    * the insertion point for jss
    */
   jssInsertionPoint?: string;
+
+  /**
+   * children
+   */
+  children?: React.ReactNode;
 };
 
 export const RcDetachedWindowStylesProvider: FunctionComponent<RcDetachedWindowStylesProviderProps> =
