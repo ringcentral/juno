@@ -6,16 +6,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     environment: npm
-    permissions:
-      contents: read
-      id-token: write
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
+      # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v4
         with:
-          node-version: "24.x"
+          node-version: "20.x"
           registry-url: "https://registry.npmjs.org"
 
       - name: Install 👾
@@ -27,13 +25,9 @@ jobs:
 
       - name: Publish core 🚀
         if: ${{ contains(github.ref, 'juno-core') }}
-        run: |
-          VERSION=$(node -p "require('./packages/juno-core/dist/package.json').version")
-          if [[ "$VERSION" == *-* ]]; then
-            npm publish ./packages/juno-core/dist --provenance --access public --tag next
-          else
-            npm publish ./packages/juno-core/dist --provenance --access public
-          fi
+        run: npm publish ./packages/juno-core/dist
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Build icon 📦
         if: ${{ contains(github.ref, 'juno-icon') }}
@@ -41,10 +35,6 @@ jobs:
 
       - name: Publish icon 🚀
         if: ${{ contains(github.ref, 'juno-icon') }}
-        run: |
-          VERSION=$(node -p "require('./packages/juno-icon/dist/package.json').version")
-          if [[ "$VERSION" == *-* ]]; then
-            npm publish ./packages/juno-icon/dist --provenance --access public --tag next
-          else
-            npm publish ./packages/juno-icon/dist --provenance --access public
-          fi
+        run: npm publish ./packages/juno-icon/dist
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
