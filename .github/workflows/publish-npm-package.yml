@@ -6,6 +6,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     environment: npm
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -25,7 +28,7 @@ jobs:
 
       - name: Publish core 🚀
         if: ${{ contains(github.ref, 'juno-core') }}
-        run: npm publish ./packages/juno-core/dist
+        run: npm publish ./packages/juno-core/dist --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -35,6 +38,6 @@ jobs:
 
       - name: Publish icon 🚀
         if: ${{ contains(github.ref, 'juno-icon') }}
-        run: npm publish ./packages/juno-icon/dist
+        run: npm publish ./packages/juno-icon/dist --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
