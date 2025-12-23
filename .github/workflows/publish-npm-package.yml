@@ -15,7 +15,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "20.x"
+          node-version: "24.x"
           registry-url: "https://registry.npmjs.org"
 
       - name: Install 👾
@@ -27,9 +27,7 @@ jobs:
 
       - name: Publish core 🚀
         if: ${{ contains(github.ref, 'juno-core') }}
-        run: |
-          npm config delete //registry.npmjs.org/:_authToken || true
-          npm publish ./packages/juno-core/dist --provenance --access public
+        run: npm publish ./packages/juno-core/dist --provenance --access public
 
       - name: Build icon 📦
         if: ${{ contains(github.ref, 'juno-icon') }}
@@ -37,6 +35,4 @@ jobs:
 
       - name: Publish icon 🚀
         if: ${{ contains(github.ref, 'juno-icon') }}
-        run: |
-          npm config delete //registry.npmjs.org/:_authToken || true
-          npm publish ./packages/juno-icon/dist --provenance --access public
+        run: npm publish ./packages/juno-icon/dist --provenance --access public
