@@ -27,7 +27,13 @@ jobs:
 
       - name: Publish core 🚀
         if: ${{ contains(github.ref, 'juno-core') }}
-        run: npm publish ./packages/juno-core/dist --provenance --access public
+        run: |
+          VERSION=$(node -p "require('./packages/juno-core/dist/package.json').version")
+          if [[ "$VERSION" == *-* ]]; then
+            npm publish ./packages/juno-core/dist --provenance --access public --tag next
+          else
+            npm publish ./packages/juno-core/dist --provenance --access public
+          fi
 
       - name: Build icon 📦
         if: ${{ contains(github.ref, 'juno-icon') }}
@@ -35,4 +41,10 @@ jobs:
 
       - name: Publish icon 🚀
         if: ${{ contains(github.ref, 'juno-icon') }}
-        run: npm publish ./packages/juno-icon/dist --provenance --access public
+        run: |
+          VERSION=$(node -p "require('./packages/juno-icon/dist/package.json').version")
+          if [[ "$VERSION" == *-* ]]; then
+            npm publish ./packages/juno-icon/dist --provenance --access public --tag next
+          else
+            npm publish ./packages/juno-icon/dist --provenance --access public
+          fi
