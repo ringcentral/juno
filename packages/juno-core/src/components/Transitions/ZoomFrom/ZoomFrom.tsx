@@ -43,7 +43,7 @@ const RcZoomFrom = forwardRef<any, RcZoomFromProps>((inProps, ref) => {
     children,
     in: inProp,
     style,
-    timeout,
+    timeout = { enter: duration.enteringScreen, exit: duration.enteringScreen },
     onExit,
     onEnter,
     onExited,
@@ -131,13 +131,6 @@ const RcZoomFrom = forwardRef<any, RcZoomFromProps>((inProps, ref) => {
     </Transition>
   );
 });
-
-RcZoomFrom.defaultProps = {
-  timeout: {
-    enter: duration.enteringScreen,
-    exit: duration.enteringScreen,
-  },
-};
 
 RcZoomFrom.displayName = 'ZoomInFadeOut';
 

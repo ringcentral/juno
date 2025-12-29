@@ -19,7 +19,7 @@ import { useResultRef } from '../useResultRef';
  *
  * click();
  * ```
- * @see stories {@link https://develop-rcui-int.fiji.gliprc.com/?path=/story/%F0%9F%94%A7-foundation-hooks-useaudio--simple-announcer 🔧-foundation-hooks-useaudio--simple-announcer}
+ * @see stories {@link https://ringcentral.github.io/juno/?path=/story/%F0%9F%94%A7-foundation-hooks-useaudio--simple-announcer 🔧-foundation-hooks-useaudio--simple-announcer}
  * @see {@link https://chromium-review.googlesource.com/c/chromium/src/+/2816118}
  */
 export const useAudio = (init?: (audio: HTMLAudioElement) => void) => {

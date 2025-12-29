@@ -15,15 +15,14 @@ export default {
 } as Meta;
 
 const RcButtonExample: FunctionComponent<RcButtonProps> = (inProps) => {
-  const props = useThemeProps({ props: inProps, name: 'RcButton' });
+  const props = useThemeProps({
+    props: { size: 'large', ...inProps },
+    name: 'RcButton',
+  });
   console.log(props);
   const { loading } = props;
 
   return <RcText>loading: {`${loading}`}</RcText>;
-};
-
-RcButtonExample.defaultProps = {
-  size: 'large',
 };
 
 export const useThemePropsExample: Story<{}> = () => {

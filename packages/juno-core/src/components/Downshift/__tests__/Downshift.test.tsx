@@ -56,14 +56,14 @@ describe('Downshift', () => {
       Then: transform result will be $transformResult ${(args, context) => {
         switch (args.transformResult) {
           case 'input value':
-            expect(context.onChangeFn).toBeCalled();
+            expect(context.onChangeFn).toHaveBeenCalled();
             expect(context.onChangeFn.mock.calls[0][0][0].label).toEqual('a');
             break;
           case false:
-            expect(context.onChangeFn).not.toBeCalled();
+            expect(context.onChangeFn).not.toHaveBeenCalled();
             break;
           case 'highlight item':
-            expect(context.onChangeFn).toBeCalled();
+            expect(context.onChangeFn).toHaveBeenCalled();
             expect(context.onChangeFn.mock.calls[0][0][0].label).toEqual(
               options[0].label,
             );
@@ -96,15 +96,15 @@ describe('Downshift', () => {
       Then: result will be $result ${(args, context) => {
         switch (args.result) {
           case 'transform input value to tag':
-            expect(context.onChangeFn).toBeCalled();
+            expect(context.onChangeFn).toHaveBeenCalled();
             expect(context.onChangeFn.mock.calls[0][0][0].label).toEqual('a');
             break;
           case 'keep input value':
-            expect(context.onChangeFn).not.toBeCalled();
+            expect(context.onChangeFn).not.toHaveBeenCalled();
             expect(context.input.getAttribute('value')).toEqual('a');
             break;
           case 'transform highlight item to tag':
-            expect(context.onChangeFn).toBeCalled();
+            expect(context.onChangeFn).toHaveBeenCalled();
             expect(context.onChangeFn.mock.calls[0][0][0].label).toEqual(
               options[0].label,
             );
@@ -663,9 +663,9 @@ describe('Downshift', () => {
       }}
       Then: select item result will be $isSelectSuccess ${(args, context) => {
         if (args.isSelectSuccess) {
-          expect(context.onChangeFn).toBeCalled();
+          expect(context.onChangeFn).toHaveBeenCalled();
         } else {
-          expect(context.onChangeFn).not.toBeCalled();
+          expect(context.onChangeFn).not.toHaveBeenCalled();
         }
       }}
       And: menu close will be $isCloseMenu ${(args, context) => {
@@ -808,12 +808,12 @@ describe('Downshift', () => {
       }}
       Then: tags will be $result ${(args, context) => {
         if (args.result.length > 0) {
-          expect(context.onChangeFn).toBeCalled();
+          expect(context.onChangeFn).toHaveBeenCalled();
           expect(context.onChangeFn.mock.calls[0][0][0].label).toEqual(
             args.result[0],
           );
         } else {
-          expect(context.onChangeFn).not.toBeCalled();
+          expect(context.onChangeFn).not.toHaveBeenCalled();
         }
       }}
       And: input will be clear ${(args, context) => {
@@ -854,14 +854,14 @@ describe('Downshift', () => {
       }}
       Then: tags will be $result ${(args, context) => {
         if (args.result.length > 0) {
-          expect(context.onChangeFn).toBeCalled();
+          expect(context.onChangeFn).toHaveBeenCalled();
           const callResult = context.onChangeFn.mock.calls[0][0].map(
             (x: any) => x.label,
           );
 
           expect(callResult).toEqual(args.result);
         } else {
-          expect(context.onChangeFn).not.toBeCalled();
+          expect(context.onChangeFn).not.toHaveBeenCalled();
         }
       }}
       And: input will be clear ${(args, context) => {
@@ -905,14 +905,14 @@ describe('Downshift', () => {
       When: leave input ${blurInput}
       Then: tags will be $result  ${(args, context) => {
         if (args.result.length > 0) {
-          expect(context.onChangeFn).toBeCalled();
+          expect(context.onChangeFn).toHaveBeenCalled();
           const callResult = context.onChangeFn.mock.calls[0][0].map(
             (x: any) => x.label,
           );
 
           expect(callResult).toEqual(args.result);
         } else {
-          expect(context.onChangeFn).not.toBeCalled();
+          expect(context.onChangeFn).not.toHaveBeenCalled();
         }
       }}
       And: input value will be $thenInputValue ${(args, context) => {
@@ -986,17 +986,17 @@ describe('Downshift', () => {
           keydownKey('Enter')(args, context);
         });
 
-        expect(context.onChangeFn).toBeCalledTimes(args.tagsCount);
+        expect(context.onChangeFn).toHaveBeenCalledTimes(args.tagsCount);
       }}
       When: trigger new tag event
       ${(args, context) => {
         fireEvent.change(context.input, { target: { value: 'trigger-more' } });
         keydownKey('Enter')(args, context);
 
-        expect(context.onChangeFn).toBeCalledTimes(args.tagsCount);
+        expect(context.onChangeFn).toHaveBeenCalledTimes(args.tagsCount);
       }}
       Then: onMaxFreeSolo will be trigger ${() => {
-        expect(onMaxFreeSolo).toBeCalled();
+        expect(onMaxFreeSolo).toHaveBeenCalled();
       }}
       Then: input value will be clear ${(args, context) => {
         expect(context.input.getAttribute('value')).toEqual('');
@@ -1398,8 +1398,8 @@ describe('Downshift', () => {
         userEvent.click(item);
       }}
       Then: onChange and onInputChange should be call ${(args, context) => {
-        expect(context.onChangeFn).toBeCalled();
-        expect(context.onInputChangeFn).toBeCalled();
+        expect(context.onChangeFn).toHaveBeenCalled();
+        expect(context.onInputChangeFn).toHaveBeenCalled();
       }}
       And: keep focus on input ${(args, context) => {
         expect(document.activeElement).toBe(context.input);
@@ -1432,7 +1432,7 @@ describe('Downshift', () => {
           context,
         )}
       Then: onInputChange should be call ${(args, context) => {
-        expect(context.onInputChangeFn).toBeCalled();
+        expect(context.onInputChangeFn).toHaveBeenCalled();
       }}
       And: input value change to select Item ${(args, context) => {
         expect(context.input.getAttribute('value')).toEqual('Alan Zou');

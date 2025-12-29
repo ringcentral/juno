@@ -21,7 +21,7 @@ import { Meta } from '@storybook/react';
 
 import { SelectionSvgResponse } from './SelectionSvgResponse';
 
-const svgToComponentMapping = require('@ringcentral/juno-icon/devUtils/svgToComponentMapping.ts');
+const svgToComponentMapping = require('@ringcentral/juno-icon/devUtils/svgToComponentMapping');
 
 const localIconMap = Object.entries<any>(svgToComponentMapping).reduce<any>(
   (prev, [key, value]) => {

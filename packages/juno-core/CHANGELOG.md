@@ -1,67 +1,67 @@
 
-## [2.46.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.45.1...juno-core-v2.46.0) (2025-10-31)
+## [2.46.0](https://github.com/ringcentral/juno/compare/juno-core-v2.45.1...juno-core-v2.46.0) (2025-10-31)
 
 
 ### Bug Fixes
 
-* **FIJI-97521:** [juno-core] add onSinkError for Safari 18.4+ ([d3b17d9](https://git.ringcentral.com/RCUI/rcui/commit/d3b17d91334264fbfee82be8ef89bf5364025fba))
-* **FIJI-97521:** [juno-core] revert version ([bae3cca](https://git.ringcentral.com/RCUI/rcui/commit/bae3cca4d1cf2266081e60df22e5098bf36bda75))
-* **FIJI-97521:** [juno-core] tsc ([e1eb787](https://git.ringcentral.com/RCUI/rcui/commit/e1eb787d8051fa9a25c48cb6960ea5651bc6595f))
+* **FIJI-97521:** [juno-core] add onSinkError for Safari 18.4+ ([d3b17d9](https://github.com/ringcentral/juno/commit/d3b17d91334264fbfee82be8ef89bf5364025fba))
+* **FIJI-97521:** [juno-core] revert version ([bae3cca](https://github.com/ringcentral/juno/commit/bae3cca4d1cf2266081e60df22e5098bf36bda75))
+* **FIJI-97521:** [juno-core] tsc ([e1eb787](https://github.com/ringcentral/juno/commit/e1eb787d8051fa9a25c48cb6960ea5651bc6595f))
 
-### [2.45.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.45.0...juno-core-v2.45.1) (2025-03-26)
-
-
-### Bug Fixes
-
-* **FIJI-91093:** [NumberPicker] shall add aria-valuenow for current value when role is spinbutton, or it will read 0 ([ddf7e99](https://git.ringcentral.com/RCUI/rcui/commit/ddf7e999046e3a7ba85abdf1501bd50e572a7df8))
-
-## [2.45.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.44.0...juno-core-v2.45.0) (2025-03-17)
-
-
-### Features
-
-* **FIJI-89103:** [PickerTextField] add aria-hidden="true" on picker icon in endAdornment since this icon is purely decorative ([8ae1fc1](https://git.ringcentral.com/RCUI/rcui/commit/8ae1fc1d1fa556441fed1efae9084c2ab4325e12))
-
-## [2.44.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.43.1...juno-core-v2.44.0) (2025-03-13)
-
-
-### Features
-
-* **FIJI-87840:** [NumberPicker] Add role=spinbutton to achieve A11y requirement ([b902d22](https://git.ringcentral.com/RCUI/rcui/commit/b902d2225a72447f071e2d74b48ad14c479dc8fa))
-
-### [2.43.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.43.0...juno-core-v2.43.1) (2024-12-05)
-
-
-### Features
-
-* **FIJI-87675:** [TabList] fix tabList child memo not working ([539032c](https://git.ringcentral.com/RCUI/rcui/commit/539032cb297afce8fffe74eec164c4ebc75350eb))
-* **FIJI-87675:** [TabList] optimize TabList component with useMemo ([3180c88](https://git.ringcentral.com/RCUI/rcui/commit/3180c8887b47d3a6cf59ddd19f19bdcaa5bf35d2))
-* **FIJI-87675:** [TabList] throw error if idPrefix is missing in TabList ([c99d61f](https://git.ringcentral.com/RCUI/rcui/commit/c99d61f485a31aa4ebcdd03abe56e3e9617039de))
-
-## [2.43.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.42.3...juno-core-v2.43.0) (2024-12-04)
-
-
-### Features
-
-* **FIJI-87675:** [TabList] separate the binding relationship between TabContext and RcTabList ([acd0595](https://git.ringcentral.com/RCUI/rcui/commit/acd05954c6ebe53a00888d50324f5f0d94a5c44d))
-
-### [2.42.3](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.42.2...juno-core-v2.42.3) (2024-09-12)
+### [2.45.1](https://github.com/ringcentral/juno/compare/juno-core-v2.45.0...juno-core-v2.45.1) (2025-03-26)
 
 
 ### Bug Fixes
 
-* **List, Menu:** [juno-core] fix list item focus inside issue with mui focus-visible issue ([c3dd213](https://git.ringcentral.com/RCUI/rcui/commit/c3dd213f2453d6bca230cd0950fb2861ee42037e))
-* **List, Menu:** [juno-core] remove not need class ([b6cce52](https://git.ringcentral.com/RCUI/rcui/commit/b6cce524ea8a73229d46031dea7a404808c5ed57))
+* **FIJI-91093:** [NumberPicker] shall add aria-valuenow for current value when role is spinbutton, or it will read 0 ([ddf7e99](https://github.com/ringcentral/juno/commit/ddf7e999046e3a7ba85abdf1501bd50e572a7df8))
 
-### [2.42.2](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.42.0...juno-core-v2.42.2) (2024-07-11)
+## [2.45.0](https://github.com/ringcentral/juno/compare/juno-core-v2.44.0...juno-core-v2.45.0) (2025-03-17)
 
 
 ### Features
 
-* **Downshift:** [juno-core] fix ut and lint ([308cd6b](https://git.ringcentral.com/RCUI/rcui/commit/308cd6b8f249a66a70b9d57bb9080bb7d97f3352))
-* **Downshift:** [juno-core] remove downshift lisbox useless aria attr ([c6ebab8](https://git.ringcentral.com/RCUI/rcui/commit/c6ebab8863be6398fe710b88a47767253aedf977))
+* **FIJI-89103:** [PickerTextField] add aria-hidden="true" on picker icon in endAdornment since this icon is purely decorative ([8ae1fc1](https://github.com/ringcentral/juno/commit/8ae1fc1d1fa556441fed1efae9084c2ab4325e12))
 
-## [2.42.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.41.4...juno-core-v2.42.0) (2024-07-03)
+## [2.44.0](https://github.com/ringcentral/juno/compare/juno-core-v2.43.1...juno-core-v2.44.0) (2025-03-13)
+
+
+### Features
+
+* **FIJI-87840:** [NumberPicker] Add role=spinbutton to achieve A11y requirement ([b902d22](https://github.com/ringcentral/juno/commit/b902d2225a72447f071e2d74b48ad14c479dc8fa))
+
+### [2.43.1](https://github.com/ringcentral/juno/compare/juno-core-v2.43.0...juno-core-v2.43.1) (2024-12-05)
+
+
+### Features
+
+* **FIJI-87675:** [TabList] fix tabList child memo not working ([539032c](https://github.com/ringcentral/juno/commit/539032cb297afce8fffe74eec164c4ebc75350eb))
+* **FIJI-87675:** [TabList] optimize TabList component with useMemo ([3180c88](https://github.com/ringcentral/juno/commit/3180c8887b47d3a6cf59ddd19f19bdcaa5bf35d2))
+* **FIJI-87675:** [TabList] throw error if idPrefix is missing in TabList ([c99d61f](https://github.com/ringcentral/juno/commit/c99d61f485a31aa4ebcdd03abe56e3e9617039de))
+
+## [2.43.0](https://github.com/ringcentral/juno/compare/juno-core-v2.42.3...juno-core-v2.43.0) (2024-12-04)
+
+
+### Features
+
+* **FIJI-87675:** [TabList] separate the binding relationship between TabContext and RcTabList ([acd0595](https://github.com/ringcentral/juno/commit/acd05954c6ebe53a00888d50324f5f0d94a5c44d))
+
+### [2.42.3](https://github.com/ringcentral/juno/compare/juno-core-v2.42.2...juno-core-v2.42.3) (2024-09-12)
+
+
+### Bug Fixes
+
+* **List, Menu:** [juno-core] fix list item focus inside issue with mui focus-visible issue ([c3dd213](https://github.com/ringcentral/juno/commit/c3dd213f2453d6bca230cd0950fb2861ee42037e))
+* **List, Menu:** [juno-core] remove not need class ([b6cce52](https://github.com/ringcentral/juno/commit/b6cce524ea8a73229d46031dea7a404808c5ed57))
+
+### [2.42.2](https://github.com/ringcentral/juno/compare/juno-core-v2.42.0...juno-core-v2.42.2) (2024-07-11)
+
+
+### Features
+
+* **Downshift:** [juno-core] fix ut and lint ([308cd6b](https://github.com/ringcentral/juno/commit/308cd6b8f249a66a70b9d57bb9080bb7d97f3352))
+* **Downshift:** [juno-core] remove downshift lisbox useless aria attr ([c6ebab8](https://github.com/ringcentral/juno/commit/c6ebab8863be6398fe710b88a47767253aedf977))
+
+## [2.42.0](https://github.com/ringcentral/juno/compare/juno-core-v2.41.4...juno-core-v2.42.0) (2024-07-03)
 
 
 ### ⚠ BREAKING CHANGES
@@ -70,56 +70,56 @@
 
 ### Features
 
-* **DialPad:** [juno-core] support DialPad with `sinkId` ([658cc30](https://git.ringcentral.com/RCUI/rcui/commit/658cc30b61fa2d44f90009b2afaa05c7be2e08c1))
+* **DialPad:** [juno-core] support DialPad with `sinkId` ([658cc30](https://github.com/ringcentral/juno/commit/658cc30b61fa2d44f90009b2afaa05c7be2e08c1))
 
-### [2.41.4](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.41.3...juno-core-v2.41.4) (2024-06-19)
+### [2.41.4](https://github.com/ringcentral/juno/compare/juno-core-v2.41.3...juno-core-v2.41.4) (2024-06-19)
 
 
 ### Bug Fixes
 
-* **Select:** [juno-core] fix Select issue with aria-selected same as latest mui for fix a11y issue ([659fb75](https://git.ringcentral.com/RCUI/rcui/commit/659fb75fc97efd04fa58f5a3457437f47fcc453f))
+* **Select:** [juno-core] fix Select issue with aria-selected same as latest mui for fix a11y issue ([659fb75](https://github.com/ringcentral/juno/commit/659fb75fc97efd04fa58f5a3457437f47fcc453f))
 
-### [2.41.3](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.41.2...juno-core-v2.41.3) (2024-06-12)
+### [2.41.3](https://github.com/ringcentral/juno/compare/juno-core-v2.41.2...juno-core-v2.41.3) (2024-06-12)
 
-### [2.41.2](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.41.1...juno-core-v2.41.2) (2024-05-28)
+### [2.41.2](https://github.com/ringcentral/juno/compare/juno-core-v2.41.1...juno-core-v2.41.2) (2024-05-28)
 
 
 ### Features
 
-* **FIJI-78652:** [juno-core] support focus inside with Pickers ([a8217aa](https://git.ringcentral.com/RCUI/rcui/commit/a8217aab58d89ff9026316b4b551d34f6dcc05cb))
+* **FIJI-78652:** [juno-core] support focus inside with Pickers ([a8217aa](https://github.com/ringcentral/juno/commit/a8217aab58d89ff9026316b4b551d34f6dcc05cb))
 
-### [2.41.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.41.0...juno-core-v2.41.1) (2024-05-20)
+### [2.41.1](https://github.com/ringcentral/juno/compare/juno-core-v2.41.0...juno-core-v2.41.1) (2024-05-20)
 
 
 ### Bug Fixes
 
-* **FIJI-79898:** [Dialer] support external window ([588e087](https://git.ringcentral.com/RCUI/rcui/commit/588e087b8be8d7b4f7f03a0bcea878604a1cfc1e))
+* **FIJI-79898:** [Dialer] support external window ([588e087](https://github.com/ringcentral/juno/commit/588e087b8be8d7b4f7f03a0bcea878604a1cfc1e))
 
-## [2.41.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.40.1...juno-core-v2.41.0) (2023-12-25)
+## [2.41.0](https://github.com/ringcentral/juno/compare/juno-core-v2.40.1...juno-core-v2.41.0) (2023-12-25)
 
 
 ### Features
 
-* **FIJI-73474:** [juno-core] update react-virtuoso version update to v4.6.2 ([4fe6bd5](https://git.ringcentral.com/RCUI/rcui/commit/4fe6bd5955fd5b61f2d8c9b21d5098abb957cdf3))
+* **FIJI-73474:** [juno-core] update react-virtuoso version update to v4.6.2 ([4fe6bd5](https://github.com/ringcentral/juno/commit/4fe6bd5955fd5b61f2d8c9b21d5098abb957cdf3))
 
 
 ### Bug Fixes
 
-* **Doc:** [juno-core] fix error doc ([ac007a8](https://git.ringcentral.com/RCUI/rcui/commit/ac007a8752c8f7b97fc329ba400ce26172da070a))
+* **Doc:** [juno-core] fix error doc ([ac007a8](https://github.com/ringcentral/juno/commit/ac007a8752c8f7b97fc329ba400ce26172da070a))
 
-### [2.40.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.40.0...juno-core-v2.40.1) (2023-12-21)
+### [2.40.1](https://github.com/ringcentral/juno/compare/juno-core-v2.40.0...juno-core-v2.40.1) (2023-12-21)
 
 
 ### Features
 
-* **FIJI-74231:** [juno-core] hide tooltip when host element be hidden or disappear ([7b0d031](https://git.ringcentral.com/RCUI/rcui/commit/7b0d03157c212cb43709af8e455cda1850719b15))
+* **FIJI-74231:** [juno-core] hide tooltip when host element be hidden or disappear ([7b0d031](https://github.com/ringcentral/juno/commit/7b0d03157c212cb43709af8e455cda1850719b15))
 
 
 ### Bug Fixes
 
-* **Doc:** [juno-core] update example to OGG ([8c421c9](https://git.ringcentral.com/RCUI/rcui/commit/8c421c940b938c7ff5bdcb6740920e5583ff7e9c))
+* **Doc:** [juno-core] update example to OGG ([8c421c9](https://github.com/ringcentral/juno/commit/8c421c940b938c7ff5bdcb6740920e5583ff7e9c))
 
-## [2.40.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.39.2...juno-core-v2.40.0) (2023-12-19)
+## [2.40.0](https://github.com/ringcentral/juno/compare/juno-core-v2.39.2...juno-core-v2.40.0) (2023-12-19)
 
 
 ### ⚠ BREAKING CHANGES
@@ -128,24 +128,24 @@
 
 ### Bug Fixes
 
-* **DialerPad:** [juno-core] add DialerPad mpeg format sound for work with safari ([16d6831](https://git.ringcentral.com/RCUI/rcui/commit/16d68310db208e41c521414c15c9f49ad361673a))
-* **project:** [juno-core] update miss update dark json in example ([af5185a](https://git.ringcentral.com/RCUI/rcui/commit/af5185af4ac60d9af54004fc10b764caf9f3b688))
+* **DialerPad:** [juno-core] add DialerPad mpeg format sound for work with safari ([16d6831](https://github.com/ringcentral/juno/commit/16d68310db208e41c521414c15c9f49ad361673a))
+* **project:** [juno-core] update miss update dark json in example ([af5185a](https://github.com/ringcentral/juno/commit/af5185af4ac60d9af54004fc10b764caf9f3b688))
 
-### [2.39.2](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.39.1...juno-core-v2.39.2) (2023-12-04)
-
-
-### Bug Fixes
-
-* **RCUI-717:** [juno-core] fix datepicker style issue with small size ([d94b0ec](https://git.ringcentral.com/RCUI/rcui/commit/d94b0ecdd1956fa510873f24d81f8cae5e1bc961))
-
-### [2.39.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.39.0...juno-core-v2.39.1) (2023-09-26)
+### [2.39.2](https://github.com/ringcentral/juno/compare/juno-core-v2.39.1...juno-core-v2.39.2) (2023-12-04)
 
 
 ### Bug Fixes
 
-* **FIJI-71227:** [TimePicker] fix time picker minute gap ([b15943a](https://git.ringcentral.com/RCUI/rcui/commit/b15943a8ecdf2910c8f635b321806922e5437502))
+* **RCUI-717:** [juno-core] fix datepicker style issue with small size ([d94b0ec](https://github.com/ringcentral/juno/commit/d94b0ecdd1956fa510873f24d81f8cae5e1bc961))
 
-## [2.39.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.38.0...juno-core-v2.39.0) (2023-09-22)
+### [2.39.1](https://github.com/ringcentral/juno/compare/juno-core-v2.39.0...juno-core-v2.39.1) (2023-09-26)
+
+
+### Bug Fixes
+
+* **FIJI-71227:** [TimePicker] fix time picker minute gap ([b15943a](https://github.com/ringcentral/juno/commit/b15943a8ecdf2910c8f635b321806922e5437502))
+
+## [2.39.0](https://github.com/ringcentral/juno/compare/juno-core-v2.38.0...juno-core-v2.39.0) (2023-09-22)
 
 
 ### ⚠ BREAKING CHANGES
@@ -154,9 +154,9 @@
 
 ### Features
 
-* **FIJI-69620:** [TimePicker] update the minute step from 15 to 5 ([5bc41be](https://git.ringcentral.com/RCUI/rcui/commit/5bc41bef9e52ddc4629d2b8234befb1b1a932c85))
+* **FIJI-69620:** [TimePicker] update the minute step from 15 to 5 ([5bc41be](https://github.com/ringcentral/juno/commit/5bc41bef9e52ddc4629d2b8234befb1b1a932c85))
 
-## [2.38.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.37.0...juno-core-v2.38.0) (2023-09-08)
+## [2.38.0](https://github.com/ringcentral/juno/compare/juno-core-v2.37.0...juno-core-v2.38.0) (2023-09-08)
 
 
 ### ⚠ BREAKING CHANGES
@@ -165,9 +165,9 @@
 
 ### Features
 
-* **update-typography:** [Theme] update typography body1 and body2 ([cf4e7f0](https://git.ringcentral.com/RCUI/rcui/commit/cf4e7f03592b275257a0669428247de7a02b14fd))
+* **update-typography:** [Theme] update typography body1 and body2 ([cf4e7f0](https://github.com/ringcentral/juno/commit/cf4e7f03592b275257a0669428247de7a02b14fd))
 
-## [2.37.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.36.5...juno-core-v2.37.0) (2023-08-10)
+## [2.37.0](https://github.com/ringcentral/juno/compare/juno-core-v2.36.5...juno-core-v2.37.0) (2023-08-10)
 
 
 ### ⚠ BREAKING CHANGES
@@ -176,99 +176,99 @@
 
 ### Features
 
-* **FIJI-69021:** [Browser compatibility] remove hack fixing about safari 15.4  animation issue ([27cf9e1](https://git.ringcentral.com/RCUI/rcui/commit/27cf9e1f5b01623ecc6ca2b6cd36ec8ce952a7bf))
+* **FIJI-69021:** [Browser compatibility] remove hack fixing about safari 15.4  animation issue ([27cf9e1](https://github.com/ringcentral/juno/commit/27cf9e1f5b01623ecc6ca2b6cd36ec8ce952a7bf))
 
 
 ### Bug Fixes
 
-* **FIJI-69021:** [VirtualizedMenu] Fix menu position issue ([661daf9](https://git.ringcentral.com/RCUI/rcui/commit/661daf914bdbced6b64cff16183151d963fdb4ad))
+* **FIJI-69021:** [VirtualizedMenu] Fix menu position issue ([661daf9](https://github.com/ringcentral/juno/commit/661daf914bdbced6b64cff16183151d963fdb4ad))
 
-### [2.36.5](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.36.4...juno-core-v2.36.5) (2023-08-09)
-
-
-### Bug Fixes
-
-* **FIJI-64725:** [Tooltip] Fix tooltip position when it is near the edge of the screen ([f333fe6](https://git.ringcentral.com/RCUI/rcui/commit/f333fe6b95a91d594bd44f1beb064139f69010ae))
-
-### [2.36.4](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.36.3...juno-core-v2.36.4) (2023-08-03)
+### [2.36.5](https://github.com/ringcentral/juno/compare/juno-core-v2.36.4...juno-core-v2.36.5) (2023-08-09)
 
 
 ### Bug Fixes
 
-* **FIJI-68633:** [Popper] fix the issue with blurry rendering of popper. ([1b0b094](https://git.ringcentral.com/RCUI/rcui/commit/1b0b0947308648891c4980977cd4cfccc69eab0c))
+* **FIJI-64725:** [Tooltip] Fix tooltip position when it is near the edge of the screen ([f333fe6](https://github.com/ringcentral/juno/commit/f333fe6b95a91d594bd44f1beb064139f69010ae))
 
-### [2.36.3](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.36.2...juno-core-v2.36.3) (2023-07-13)
-
-
-### Bug Fixes
-
-* **typography-warning:** [typography] warning when typography is not existed ([67e2f0e](https://git.ringcentral.com/RCUI/rcui/commit/67e2f0e9b0ddeb1fe1f09327d3b32011acfa5051))
-
-### [2.36.2](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.36.1...juno-core-v2.36.2) (2023-06-26)
+### [2.36.4](https://github.com/ringcentral/juno/compare/juno-core-v2.36.3...juno-core-v2.36.4) (2023-08-03)
 
 
 ### Bug Fixes
 
-* **fix-typography-type:** [Types] improve RcLink, RcText, RcTypography, RcInlineEditable variant type for extension typography token ([a39b483](https://git.ringcentral.com/RCUI/rcui/commit/a39b48313aa7c46797e22a65955dac982d510f53))
+* **FIJI-68633:** [Popper] fix the issue with blurry rendering of popper. ([1b0b094](https://github.com/ringcentral/juno/commit/1b0b0947308648891c4980977cd4cfccc69eab0c))
 
-### [2.36.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.36.0...juno-core-v2.36.1) (2023-06-26)
+### [2.36.3](https://github.com/ringcentral/juno/compare/juno-core-v2.36.2...juno-core-v2.36.3) (2023-07-13)
 
 
 ### Bug Fixes
 
-* **fix-typography-extend:** [DefaultTheme] fix typography type extension ([b5e5351](https://git.ringcentral.com/RCUI/rcui/commit/b5e53517b7e548cf7e84f72da4189ab459ab9ca2))
+* **typography-warning:** [typography] warning when typography is not existed ([67e2f0e](https://github.com/ringcentral/juno/commit/67e2f0e9b0ddeb1fe1f09327d3b32011acfa5051))
 
-## [2.36.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.35.5...juno-core-v2.36.0) (2023-06-02)
+### [2.36.2](https://github.com/ringcentral/juno/compare/juno-core-v2.36.1...juno-core-v2.36.2) (2023-06-26)
+
+
+### Bug Fixes
+
+* **fix-typography-type:** [Types] improve RcLink, RcText, RcTypography, RcInlineEditable variant type for extension typography token ([a39b483](https://github.com/ringcentral/juno/commit/a39b48313aa7c46797e22a65955dac982d510f53))
+
+### [2.36.1](https://github.com/ringcentral/juno/compare/juno-core-v2.36.0...juno-core-v2.36.1) (2023-06-26)
+
+
+### Bug Fixes
+
+* **fix-typography-extend:** [DefaultTheme] fix typography type extension ([b5e5351](https://github.com/ringcentral/juno/commit/b5e53517b7e548cf7e84f72da4189ab459ab9ca2))
+
+## [2.36.0](https://github.com/ringcentral/juno/compare/juno-core-v2.35.5...juno-core-v2.36.0) (2023-06-02)
 
 
 ### Features
 
-* **JMX-3428:** [SubMenu] support touch interaction on mobile ([5f7dffd](https://git.ringcentral.com/RCUI/rcui/commit/5f7dffde66d522257b0f3c7e2564914d104f0646))
+* **JMX-3428:** [SubMenu] support touch interaction on mobile ([5f7dffd](https://github.com/ringcentral/juno/commit/5f7dffde66d522257b0f3c7e2564914d104f0646))
 
-### [2.35.5](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.35.4...juno-core-v2.35.5) (2023-05-31)
-
-
-### Bug Fixes
-
-* **FIJI-63773:** [Presence] fix issue on 1080p dark theme ([e3dd0ba](https://git.ringcentral.com/RCUI/rcui/commit/e3dd0bab20e7622b0beb9d82854cdd776905a43a))
-
-### [2.35.4](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.35.3...juno-core-v2.35.4) (2023-05-19)
+### [2.35.5](https://github.com/ringcentral/juno/compare/juno-core-v2.35.4...juno-core-v2.35.5) (2023-05-31)
 
 
 ### Bug Fixes
 
-* **fix-dot-badge:** [Badge] fix issue about dot Badge does not support `invisible` and `showZero` ([ee75633](https://git.ringcentral.com/RCUI/rcui/commit/ee75633acc56b264d38f10ff57d9df121dcc1266))
+* **FIJI-63773:** [Presence] fix issue on 1080p dark theme ([e3dd0ba](https://github.com/ringcentral/juno/commit/e3dd0bab20e7622b0beb9d82854cdd776905a43a))
 
-### [2.35.3](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.35.2...juno-core-v2.35.3) (2023-05-11)
-
-
-### Bug Fixes
-
-* **fix-DatePicker:** [DatePicker] get document/window from RcPortalWindowContext ([a041504](https://git.ringcentral.com/RCUI/rcui/commit/a041504d50ffa7af5838eb176bc69e5874774cf2))
-
-### [2.35.2](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.35.1...juno-core-v2.35.2) (2023-05-08)
+### [2.35.4](https://github.com/ringcentral/juno/compare/juno-core-v2.35.3...juno-core-v2.35.4) (2023-05-19)
 
 
 ### Bug Fixes
 
-* **fix-more-tabs:** [MoreMenuTabs] fix issue about update groupInfo incorrectly ([f4e0a18](https://git.ringcentral.com/RCUI/rcui/commit/f4e0a181ff82d81282ecc8f97c419ef40e1705f7))
+* **fix-dot-badge:** [Badge] fix issue about dot Badge does not support `invisible` and `showZero` ([ee75633](https://github.com/ringcentral/juno/commit/ee75633acc56b264d38f10ff57d9df121dcc1266))
 
-### [2.35.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.35.0...juno-core-v2.35.1) (2023-05-08)
+### [2.35.3](https://github.com/ringcentral/juno/compare/juno-core-v2.35.2...juno-core-v2.35.3) (2023-05-11)
 
 
 ### Bug Fixes
 
-* **JMX-3143:** [useTouchMouseEvent] fix ios touch issue ([9ca8eb8](https://git.ringcentral.com/RCUI/rcui/commit/9ca8eb8a99517ff340b0329209581761dc773c59))
-* **juno-core:** [Presence] fix not pick custom props ([cd3933e](https://git.ringcentral.com/RCUI/rcui/commit/cd3933e1b6f250ff8211a27d4c7074840ad69aae))
+* **fix-DatePicker:** [DatePicker] get document/window from RcPortalWindowContext ([a041504](https://github.com/ringcentral/juno/commit/a041504d50ffa7af5838eb176bc69e5874774cf2))
 
-## [2.35.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.34.0...juno-core-v2.35.0) (2023-04-27)
+### [2.35.2](https://github.com/ringcentral/juno/compare/juno-core-v2.35.1...juno-core-v2.35.2) (2023-05-08)
+
+
+### Bug Fixes
+
+* **fix-more-tabs:** [MoreMenuTabs] fix issue about update groupInfo incorrectly ([f4e0a18](https://github.com/ringcentral/juno/commit/f4e0a181ff82d81282ecc8f97c419ef40e1705f7))
+
+### [2.35.1](https://github.com/ringcentral/juno/compare/juno-core-v2.35.0...juno-core-v2.35.1) (2023-05-08)
+
+
+### Bug Fixes
+
+* **JMX-3143:** [useTouchMouseEvent] fix ios touch issue ([9ca8eb8](https://github.com/ringcentral/juno/commit/9ca8eb8a99517ff340b0329209581761dc773c59))
+* **juno-core:** [Presence] fix not pick custom props ([cd3933e](https://github.com/ringcentral/juno/commit/cd3933e1b6f250ff8211a27d4c7074840ad69aae))
+
+## [2.35.0](https://github.com/ringcentral/juno/compare/juno-core-v2.34.0...juno-core-v2.35.0) (2023-04-27)
 
 
 ### Features
 
-* **undockMoreMenu:** [MoreMenuTabs] support external window ([026b42f](https://git.ringcentral.com/RCUI/rcui/commit/026b42f1a5f04b0394bb9d776cd4de065bb8cf2d))
+* **undockMoreMenu:** [MoreMenuTabs] support external window ([026b42f](https://github.com/ringcentral/juno/commit/026b42f1a5f04b0394bb9d776cd4de065bb8cf2d))
 
-## [2.34.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.33.0...juno-core-v2.34.0) (2023-04-25)
+## [2.34.0](https://github.com/ringcentral/juno/compare/juno-core-v2.33.0...juno-core-v2.34.0) (2023-04-25)
 
 
 ### ⚠ BREAKING CHANGES
@@ -277,80 +277,80 @@
 
 ### Features
 
-* **FIJI-62919:** [Presence] update presence size for xsmall ([6a6737e](https://git.ringcentral.com/RCUI/rcui/commit/6a6737e92beb2af655ec160e78a2df83e9a6bbc0))
-* **JMX-2860:** [MoreMenuTabs] refactor more menu responsive logic ([50c2e84](https://git.ringcentral.com/RCUI/rcui/commit/50c2e8469a7e415ca377709c3419918d639e3a18))
-* **JMX-2860:** [useDebounce/useThrottle] support `leading` and `trailing` setting ([8591543](https://git.ringcentral.com/RCUI/rcui/commit/85915431efb81f41217d2eaab8b8c76f7f4844e5))
+* **FIJI-62919:** [Presence] update presence size for xsmall ([6a6737e](https://github.com/ringcentral/juno/commit/6a6737e92beb2af655ec160e78a2df83e9a6bbc0))
+* **JMX-2860:** [MoreMenuTabs] refactor more menu responsive logic ([50c2e84](https://github.com/ringcentral/juno/commit/50c2e8469a7e415ca377709c3419918d639e3a18))
+* **JMX-2860:** [useDebounce/useThrottle] support `leading` and `trailing` setting ([8591543](https://github.com/ringcentral/juno/commit/85915431efb81f41217d2eaab8b8c76f7f4844e5))
 
 
 ### Bug Fixes
 
-* **FIJI-63391:** [Presence] change align draft when zoom in ([9953078](https://git.ringcentral.com/RCUI/rcui/commit/9953078aefda1e3de3cacc89962b9f6e5743d24f))
+* **FIJI-63391:** [Presence] change align draft when zoom in ([9953078](https://github.com/ringcentral/juno/commit/9953078aefda1e3de3cacc89962b9f6e5743d24f))
 
-## [2.33.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.32.0...juno-core-v2.33.0) (2023-03-22)
+## [2.33.0](https://github.com/ringcentral/juno/compare/juno-core-v2.32.0...juno-core-v2.33.0) (2023-03-22)
 
 
 ### Features
 
-* **FIJI-60991:** [Presence] update style of offline, unavailable, notReady,DND status ([55e2d0a](https://git.ringcentral.com/RCUI/rcui/commit/55e2d0a131783fe461fc1c8886a271e48783bfde))
-* **JMX-2378:** [MoreMenuTab] support custom icon by menu open state ([3956e3f](https://git.ringcentral.com/RCUI/rcui/commit/3956e3f4d58ea7b6ce1e867fbdb14cefb40d1c30))
-* **JMX-2378:** [TabList] memo children to reduce moreMenu variant re-render ([ec9cf43](https://git.ringcentral.com/RCUI/rcui/commit/ec9cf432875445a232e2a9eda7f9d2c61791316d))
+* **FIJI-60991:** [Presence] update style of offline, unavailable, notReady,DND status ([55e2d0a](https://github.com/ringcentral/juno/commit/55e2d0a131783fe461fc1c8886a271e48783bfde))
+* **JMX-2378:** [MoreMenuTab] support custom icon by menu open state ([3956e3f](https://github.com/ringcentral/juno/commit/3956e3f4d58ea7b6ce1e867fbdb14cefb40d1c30))
+* **JMX-2378:** [TabList] memo children to reduce moreMenu variant re-render ([ec9cf43](https://github.com/ringcentral/juno/commit/ec9cf432875445a232e2a9eda7f9d2c61791316d))
 
 
 ### Bug Fixes
 
-* **FIJI-63019:** [Presence] change presence border to box shadow to avoid zoom in/ zoom out issue ([6bef1e9](https://git.ringcentral.com/RCUI/rcui/commit/6bef1e960b48cee48b49d04b30ed2ca50f466420))
-* **FIJI-63019:** [Presence] change presence border to box shadow to avoid zoom in/ zoom out issue ([9747c8e](https://git.ringcentral.com/RCUI/rcui/commit/9747c8e344cdd0bd10988225042e92bd7367b011))
+* **FIJI-63019:** [Presence] change presence border to box shadow to avoid zoom in/ zoom out issue ([6bef1e9](https://github.com/ringcentral/juno/commit/6bef1e960b48cee48b49d04b30ed2ca50f466420))
+* **FIJI-63019:** [Presence] change presence border to box shadow to avoid zoom in/ zoom out issue ([9747c8e](https://github.com/ringcentral/juno/commit/9747c8e344cdd0bd10988225042e92bd7367b011))
 
-## [2.32.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.31.0...juno-core-v2.32.0) (2023-03-13)
+## [2.32.0](https://github.com/ringcentral/juno/compare/juno-core-v2.31.0...juno-core-v2.32.0) (2023-03-13)
 
 
 ### Features
 
-* **FIJI-59143:** [TimePicker] support custom period text ([bbd3ce7](https://git.ringcentral.com/RCUI/rcui/commit/bbd3ce7c298b5527f3fe3b5467eae6f769c10ef5))
+* **FIJI-59143:** [TimePicker] support custom period text ([bbd3ce7](https://github.com/ringcentral/juno/commit/bbd3ce7c298b5527f3fe3b5467eae6f769c10ef5))
 
 
 ### Bug Fixes
 
-* **FIJI-59143:** [focusRing] fix focusRing color ([f26573c](https://git.ringcentral.com/RCUI/rcui/commit/f26573cf5f4fecb1d4ea93508ac9c5bb5b4e7656))
-* **FIJI-59143:** [VirtualizedMenu] fix VirtualizedMenu position issue ([0715daf](https://git.ringcentral.com/RCUI/rcui/commit/0715daf162b06f229bf979ebd36e3226a886ac51))
+* **FIJI-59143:** [focusRing] fix focusRing color ([f26573c](https://github.com/ringcentral/juno/commit/f26573cf5f4fecb1d4ea93508ac9c5bb5b4e7656))
+* **FIJI-59143:** [VirtualizedMenu] fix VirtualizedMenu position issue ([0715daf](https://github.com/ringcentral/juno/commit/0715daf162b06f229bf979ebd36e3226a886ac51))
 
-## [2.31.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.30.1...juno-core-v2.31.0) (2023-03-08)
-
-
-### Features
-
-* **FIJI-60991:** [Presence] revert changes for Presence icon ([1cfaec8](https://git.ringcentral.com/RCUI/rcui/commit/1cfaec84e805626cb6ddbd77eb02fa24d0df84fb))
-
-### [2.30.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.30.0...juno-core-v2.30.1) (2023-03-08)
+## [2.31.0](https://github.com/ringcentral/juno/compare/juno-core-v2.30.1...juno-core-v2.31.0) (2023-03-08)
 
 
 ### Features
 
-* **RCUI:** [TextField] support placeholder ellipsis ([2671a9a](https://git.ringcentral.com/RCUI/rcui/commit/2671a9a6e2d75e7fbee6aabb143707974edc72ce))
+* **FIJI-60991:** [Presence] revert changes for Presence icon ([1cfaec8](https://github.com/ringcentral/juno/commit/1cfaec84e805626cb6ddbd77eb02fa24d0df84fb))
 
-## [2.30.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.29.0...juno-core-v2.30.0) (2023-03-06)
-
-
-### Features
-
-* **FIJI-60991:** [Presence] update style of offline, unavailable, notReady status and remove unused CircleDiv component ([3cb7ea3](https://git.ringcentral.com/RCUI/rcui/commit/3cb7ea3bcfcdbd966eee79e2bee0a3f8629ea895))
-* **FIJI-61988:** [Icon] update icon PresenceDnd ([ac2914e](https://git.ringcentral.com/RCUI/rcui/commit/ac2914e402dca4dd4810d5c47cd0155fc2a519bb))
-
-## [2.29.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.28.0...juno-core-v2.29.0) (2023-02-22)
+### [2.30.1](https://github.com/ringcentral/juno/compare/juno-core-v2.30.0...juno-core-v2.30.1) (2023-03-08)
 
 
 ### Features
 
-* **FIJI-60991:** [Presence] add new icon support for Presence ([ca54d2f](https://git.ringcentral.com/RCUI/rcui/commit/ca54d2f1135306c321899fd6958dcba6d8ab9096))
+* **RCUI:** [TextField] support placeholder ellipsis ([2671a9a](https://github.com/ringcentral/juno/commit/2671a9a6e2d75e7fbee6aabb143707974edc72ce))
 
-## [2.28.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.27.0...juno-core-v2.28.0) (2023-02-16)
+## [2.30.0](https://github.com/ringcentral/juno/compare/juno-core-v2.29.0...juno-core-v2.30.0) (2023-03-06)
 
 
 ### Features
 
-* **improve-more-menu-tabs-resize:** [Tabs] add prop `resizeThrottleTime` to improve resize performance ([457222d](https://git.ringcentral.com/RCUI/rcui/commit/457222d5366d92c1f7f1de6e4528faed771df117))
+* **FIJI-60991:** [Presence] update style of offline, unavailable, notReady status and remove unused CircleDiv component ([3cb7ea3](https://github.com/ringcentral/juno/commit/3cb7ea3bcfcdbd966eee79e2bee0a3f8629ea895))
+* **FIJI-61988:** [Icon] update icon PresenceDnd ([ac2914e](https://github.com/ringcentral/juno/commit/ac2914e402dca4dd4810d5c47cd0155fc2a519bb))
 
-## [2.27.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.26.2...juno-core-v2.27.0) (2023-01-16)
+## [2.29.0](https://github.com/ringcentral/juno/compare/juno-core-v2.28.0...juno-core-v2.29.0) (2023-02-22)
+
+
+### Features
+
+* **FIJI-60991:** [Presence] add new icon support for Presence ([ca54d2f](https://github.com/ringcentral/juno/commit/ca54d2f1135306c321899fd6958dcba6d8ab9096))
+
+## [2.28.0](https://github.com/ringcentral/juno/compare/juno-core-v2.27.0...juno-core-v2.28.0) (2023-02-16)
+
+
+### Features
+
+* **improve-more-menu-tabs-resize:** [Tabs] add prop `resizeThrottleTime` to improve resize performance ([457222d](https://github.com/ringcentral/juno/commit/457222d5366d92c1f7f1de6e4528faed771df117))
+
+## [2.27.0](https://github.com/ringcentral/juno/compare/juno-core-v2.26.2...juno-core-v2.27.0) (2023-01-16)
 
 
 ### ⚠ BREAKING CHANGES
@@ -360,153 +360,153 @@
 
 ### Features
 
-* **FIJI-60428:** [Icon] add icon `calls`, `calls-border`, `phone-inbox`, `phone-inbox-border`, `transcript-bottom` ([e257ae4](https://git.ringcentral.com/RCUI/rcui/commit/e257ae4b70fb80dfb71bfa92e451608afd920505))
-* **JMX-1543:** [useOnlyOneFocusable] remove retry logic of `focusIndex` ([4525287](https://git.ringcentral.com/RCUI/rcui/commit/45252872ad21781d89e5b9b0d84bd70f0d2efd93))
-* **JMX-1543:** [VirtualizedMenuList] improve focus logic ([560a490](https://git.ringcentral.com/RCUI/rcui/commit/560a4903459663c2e95e62e1c68762d96563aa11))
+* **FIJI-60428:** [Icon] add icon `calls`, `calls-border`, `phone-inbox`, `phone-inbox-border`, `transcript-bottom` ([e257ae4](https://github.com/ringcentral/juno/commit/e257ae4b70fb80dfb71bfa92e451608afd920505))
+* **JMX-1543:** [useOnlyOneFocusable] remove retry logic of `focusIndex` ([4525287](https://github.com/ringcentral/juno/commit/45252872ad21781d89e5b9b0d84bd70f0d2efd93))
+* **JMX-1543:** [VirtualizedMenuList] improve focus logic ([560a490](https://github.com/ringcentral/juno/commit/560a4903459663c2e95e62e1c68762d96563aa11))
 
 
 ### Bug Fixes
 
-* **JMX-1543:** [Virtuoso] fix virtuoso root HtmlElement type ([e903082](https://git.ringcentral.com/RCUI/rcui/commit/e90308239de87a90da46a85949eba27f98bd5adf))
+* **JMX-1543:** [Virtuoso] fix virtuoso root HtmlElement type ([e903082](https://github.com/ringcentral/juno/commit/e90308239de87a90da46a85949eba27f98bd5adf))
 
-### [2.26.2](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.26.1...juno-core-v2.26.2) (2023-01-04)
+### [2.26.2](https://github.com/ringcentral/juno/compare/juno-core-v2.26.1...juno-core-v2.26.2) (2023-01-04)
 
 
 ### Features
 
-* **FiJI-59870:** [DatePicker] change focusVisible style to focusRing style ([639aa14](https://git.ringcentral.com/RCUI/rcui/commit/639aa147d1dc524fbc17b158ca5ccabec33a9374))
+* **FiJI-59870:** [DatePicker] change focusVisible style to focusRing style ([639aa14](https://github.com/ringcentral/juno/commit/639aa147d1dc524fbc17b158ca5ccabec33a9374))
 
-### [2.26.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.26.0...juno-core-v2.26.1) (2023-01-03)
-
-
-### Features
-
-* **TimePicker:** change TimePicker open focus to hour ([3a867a3](https://git.ringcentral.com/RCUI/rcui/commit/3a867a3330d27dc312c266ed1a5b75b13ab3835e))
-
-## [2.26.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.25.1...juno-core-v2.26.0) (2023-01-03)
-
-
-### Bug Fixes
-
-* **FIJI-55778:** [DatePicker/TimePicker] revert improve DatePicker/TimePicker first focus ([5eb73ed](https://git.ringcentral.com/RCUI/rcui/commit/5eb73ed1c9ef9bbf7c6e22ccddf94a7db71efc27))
-
-### [2.25.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.25.0...juno-core-v2.25.1) (2022-12-14)
-
-
-### Bug Fixes
-
-* **FIJI-56688:** [Tab] fix MoreMenuTabs compute tab error ([6de1981](https://git.ringcentral.com/RCUI/rcui/commit/6de1981525c9ed8589dccbbb1dcf87bfae0aadc8))
-* **JUP-911:** [A11y] fix IconButton, Button, Switch focusRing style issue in safari ([32822c5](https://git.ringcentral.com/RCUI/rcui/commit/32822c5b4775385f33f6f3d58b8089b73f0dbbf6))
-
-## [2.25.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.24.0...juno-core-v2.25.0) (2022-12-13)
+### [2.26.1](https://github.com/ringcentral/juno/compare/juno-core-v2.26.0...juno-core-v2.26.1) (2023-01-03)
 
 
 ### Features
 
-* **FIJI-55778:** [DatePicker/TimePicker] improve DatePicker/TimePicker first focus ([9b1e5af](https://git.ringcentral.com/RCUI/rcui/commit/9b1e5afe09244f4b81853dad4691bfb4b3d6daea))
+* **TimePicker:** change TimePicker open focus to hour ([3a867a3](https://github.com/ringcentral/juno/commit/3a867a3330d27dc312c266ed1a5b75b13ab3835e))
 
-## [2.24.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.23.1...juno-core-v2.24.0) (2022-12-12)
+## [2.26.0](https://github.com/ringcentral/juno/compare/juno-core-v2.25.1...juno-core-v2.26.0) (2023-01-03)
+
+
+### Bug Fixes
+
+* **FIJI-55778:** [DatePicker/TimePicker] revert improve DatePicker/TimePicker first focus ([5eb73ed](https://github.com/ringcentral/juno/commit/5eb73ed1c9ef9bbf7c6e22ccddf94a7db71efc27))
+
+### [2.25.1](https://github.com/ringcentral/juno/compare/juno-core-v2.25.0...juno-core-v2.25.1) (2022-12-14)
+
+
+### Bug Fixes
+
+* **FIJI-56688:** [Tab] fix MoreMenuTabs compute tab error ([6de1981](https://github.com/ringcentral/juno/commit/6de1981525c9ed8589dccbbb1dcf87bfae0aadc8))
+* **JUP-911:** [A11y] fix IconButton, Button, Switch focusRing style issue in safari ([32822c5](https://github.com/ringcentral/juno/commit/32822c5b4775385f33f6f3d58b8089b73f0dbbf6))
+
+## [2.25.0](https://github.com/ringcentral/juno/compare/juno-core-v2.24.0...juno-core-v2.25.0) (2022-12-13)
 
 
 ### Features
 
-* **FIJI-53990:** [Downshift] improve Downshift focus logic ([81d7759](https://git.ringcentral.com/RCUI/rcui/commit/81d7759c7ceb8a8141c5e4bcd6dc9c247721f187))
+* **FIJI-55778:** [DatePicker/TimePicker] improve DatePicker/TimePicker first focus ([9b1e5af](https://github.com/ringcentral/juno/commit/9b1e5afe09244f4b81853dad4691bfb4b3d6daea))
 
-
-### Bug Fixes
-
-* **FIJI-53990:** [Form] fix issue about screen reader cannot read label if id are not passed to Select and TextField ([6ed4dd6](https://git.ringcentral.com/RCUI/rcui/commit/6ed4dd664096bbf16cc5732b6da3c3df8f007f92))
-
-### [2.23.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.23.0...juno-core-v2.23.1) (2022-12-05)
-
-
-### Bug Fixes
-
-* **FIJI-59449:** [Switch] fix switch overflow issue ([b87e8ab](https://git.ringcentral.com/RCUI/rcui/commit/b87e8ab10eefd1d2130ab8c6e79525bd5b60a396))
-
-## [2.23.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.22.1...juno-core-v2.23.0) (2022-11-23)
+## [2.24.0](https://github.com/ringcentral/juno/compare/juno-core-v2.23.1...juno-core-v2.24.0) (2022-12-12)
 
 
 ### Features
 
-* **FIJI-58646:** [DatePicker] replace moment with dayjs ([1dcacab](https://git.ringcentral.com/RCUI/rcui/commit/1dcacab29578fdb14fd8b8622d85840bec6c83fc))
-
-### [2.22.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.22.0...juno-core-v2.22.1) (2022-11-22)
+* **FIJI-53990:** [Downshift] improve Downshift focus logic ([81d7759](https://github.com/ringcentral/juno/commit/81d7759c7ceb8a8141c5e4bcd6dc9c247721f187))
 
 
 ### Bug Fixes
 
-* **fix-theme-props:** [Components] fix ThemeProvider cannot set default focusVariant issue ([d334ddd](https://git.ringcentral.com/RCUI/rcui/commit/d334dddfdf10f0fb79ef23fe4a2954d641abf5db))
+* **FIJI-53990:** [Form] fix issue about screen reader cannot read label if id are not passed to Select and TextField ([6ed4dd6](https://github.com/ringcentral/juno/commit/6ed4dd664096bbf16cc5732b6da3c3df8f007f92))
 
-## [2.22.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.21.2...juno-core-v2.22.0) (2022-11-17)
+### [2.23.1](https://github.com/ringcentral/juno/compare/juno-core-v2.23.0...juno-core-v2.23.1) (2022-12-05)
+
+
+### Bug Fixes
+
+* **FIJI-59449:** [Switch] fix switch overflow issue ([b87e8ab](https://github.com/ringcentral/juno/commit/b87e8ab10eefd1d2130ab8c6e79525bd5b60a396))
+
+## [2.23.0](https://github.com/ringcentral/juno/compare/juno-core-v2.22.1...juno-core-v2.23.0) (2022-11-23)
 
 
 ### Features
 
-* **FIJI-58545:** [A11y] Button, IconButton, ListItem, MenuItem support focusRing; improve Switch focusRing ([0eed117](https://git.ringcentral.com/RCUI/rcui/commit/0eed117a8116ebf030f6c176759b14a11703d390))
+* **FIJI-58646:** [DatePicker] replace moment with dayjs ([1dcacab](https://github.com/ringcentral/juno/commit/1dcacab29578fdb14fd8b8622d85840bec6c83fc))
 
-### [2.21.2](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.21.1...juno-core-v2.21.2) (2022-11-02)
-
-
-### Bug Fixes
-
-* **fix-downshift-blurry:** [Downshift] fix downshift blurry issue ([98dc298](https://git.ringcentral.com/RCUI/rcui/commit/98dc29893f9b97ac4e8638eccb7b880db9d7e490))
-
-### [2.21.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.21.0...juno-core-v2.21.1) (2022-10-20)
+### [2.22.1](https://github.com/ringcentral/juno/compare/juno-core-v2.22.0...juno-core-v2.22.1) (2022-11-22)
 
 
 ### Bug Fixes
 
-* **IconButton:** [juno-core] remove autoFocus pick and error autoFocus deprecated ([a312383](https://git.ringcentral.com/RCUI/rcui/commit/a31238303a3a0506b3bb6b6c170f325700cfbb4d))
+* **fix-theme-props:** [Components] fix ThemeProvider cannot set default focusVariant issue ([d334ddd](https://github.com/ringcentral/juno/commit/d334dddfdf10f0fb79ef23fe4a2954d641abf5db))
 
-## [2.21.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.20.3...juno-core-v2.21.0) (2022-10-20)
+## [2.22.0](https://github.com/ringcentral/juno/compare/juno-core-v2.21.2...juno-core-v2.22.0) (2022-11-17)
 
 
 ### Features
 
-* **imporve-downshift-focus:** [downshift] imporve downshift focus when delete chip by clicking remove icon ([cc1c1c4](https://git.ringcentral.com/RCUI/rcui/commit/cc1c1c413c6538aa66e494e45a27485c1e9028c9))
+* **FIJI-58545:** [A11y] Button, IconButton, ListItem, MenuItem support focusRing; improve Switch focusRing ([0eed117](https://github.com/ringcentral/juno/commit/0eed117a8116ebf030f6c176759b14a11703d390))
 
-### [2.20.3](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.20.1...juno-core-v2.20.3) (2022-09-30)
-
-
-### Bug Fixes
-
-* **FIJI-56688:** [MoreMenuTab] fix re-calculate logic at “moreMenu” mode ([5876cb3](https://git.ringcentral.com/RCUI/rcui/commit/5876cb3765ba6caad2aff3deb71cc474ed2524f6))
-
-### [2.20.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.20.0...juno-core-v2.20.1) (2022-09-19)
+### [2.21.2](https://github.com/ringcentral/juno/compare/juno-core-v2.21.1...juno-core-v2.21.2) (2022-11-02)
 
 
 ### Bug Fixes
 
-* **RCUI-714:** [Badge] change badge default color to `umi.mentioned` and text color to `umi.text` ([cacf6cd](https://git.ringcentral.com/RCUI/rcui/commit/cacf6cdeeff90f503ce00455ab9b26f56f3dd211))
+* **fix-downshift-blurry:** [Downshift] fix downshift blurry issue ([98dc298](https://github.com/ringcentral/juno/commit/98dc29893f9b97ac4e8638eccb7b880db9d7e490))
 
-## [2.20.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.19.2...juno-core-v2.20.0) (2022-08-30)
+### [2.21.1](https://github.com/ringcentral/juno/compare/juno-core-v2.21.0...juno-core-v2.21.1) (2022-10-20)
+
+
+### Bug Fixes
+
+* **IconButton:** [juno-core] remove autoFocus pick and error autoFocus deprecated ([a312383](https://github.com/ringcentral/juno/commit/a31238303a3a0506b3bb6b6c170f325700cfbb4d))
+
+## [2.21.0](https://github.com/ringcentral/juno/compare/juno-core-v2.20.3...juno-core-v2.21.0) (2022-10-20)
 
 
 ### Features
 
-* **RCUI-712:** [Downshift] support toggleWithInput with autocomplete variant ([f98c6a5](https://git.ringcentral.com/RCUI/rcui/commit/f98c6a51e0eb214cb6e723cb5148caad324e4113))
+* **imporve-downshift-focus:** [downshift] imporve downshift focus when delete chip by clicking remove icon ([cc1c1c4](https://github.com/ringcentral/juno/commit/cc1c1c413c6538aa66e494e45a27485c1e9028c9))
+
+### [2.20.3](https://github.com/ringcentral/juno/compare/juno-core-v2.20.1...juno-core-v2.20.3) (2022-09-30)
 
 
 ### Bug Fixes
 
-* **RCUI-712:** [Downshift] not focus again when toggle with input ([6949eb6](https://git.ringcentral.com/RCUI/rcui/commit/6949eb64d7e625a365408bb08e462c573c01b906))
+* **FIJI-56688:** [MoreMenuTab] fix re-calculate logic at “moreMenu” mode ([5876cb3](https://github.com/ringcentral/juno/commit/5876cb3765ba6caad2aff3deb71cc474ed2524f6))
 
-### [2.19.2](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.19.0...juno-core-v2.19.2) (2022-08-26)
+### [2.20.1](https://github.com/ringcentral/juno/compare/juno-core-v2.20.0...juno-core-v2.20.1) (2022-09-19)
 
 
 ### Bug Fixes
 
-* **RCUI-712:** [Downshift] accept custom style outside ([100d23f](https://git.ringcentral.com/RCUI/rcui/commit/100d23f0fc47ddf1105a6517ec3a5e63ae194565))
-* **RCUI-712:** [Downshift] fix autoComplete mode scroll init position ([fb5ddb5](https://git.ringcentral.com/RCUI/rcui/commit/fb5ddb55bb3b4f0348d926a23498b55771788b60))
+* **RCUI-714:** [Badge] change badge default color to `umi.mentioned` and text color to `umi.text` ([cacf6cd](https://github.com/ringcentral/juno/commit/cacf6cdeeff90f503ce00455ab9b26f56f3dd211))
 
-## [2.19.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.18.0...juno-core-v2.19.0) (2022-08-25)
+## [2.20.0](https://github.com/ringcentral/juno/compare/juno-core-v2.19.2...juno-core-v2.20.0) (2022-08-30)
+
+
+### Features
+
+* **RCUI-712:** [Downshift] support toggleWithInput with autocomplete variant ([f98c6a5](https://github.com/ringcentral/juno/commit/f98c6a51e0eb214cb6e723cb5148caad324e4113))
+
+
+### Bug Fixes
+
+* **RCUI-712:** [Downshift] not focus again when toggle with input ([6949eb6](https://github.com/ringcentral/juno/commit/6949eb64d7e625a365408bb08e462c573c01b906))
+
+### [2.19.2](https://github.com/ringcentral/juno/compare/juno-core-v2.19.0...juno-core-v2.19.2) (2022-08-26)
+
+
+### Bug Fixes
+
+* **RCUI-712:** [Downshift] accept custom style outside ([100d23f](https://github.com/ringcentral/juno/commit/100d23f0fc47ddf1105a6517ec3a5e63ae194565))
+* **RCUI-712:** [Downshift] fix autoComplete mode scroll init position ([fb5ddb5](https://github.com/ringcentral/juno/commit/fb5ddb55bb3b4f0348d926a23498b55771788b60))
+
+## [2.19.0](https://github.com/ringcentral/juno/compare/juno-core-v2.18.0...juno-core-v2.19.0) (2022-08-25)
 
 ### Features
 
 * **vite-support:** [Package] add createESMPkg script to create package.json for all subpath
 
-## [2.18.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.17.0...juno-core-v2.18.0) (2022-08-15)
+## [2.18.0](https://github.com/ringcentral/juno/compare/juno-core-v2.17.0...juno-core-v2.18.0) (2022-08-15)
 
 ### Features
 * **update-backdrop-color:** [Dialog] bump up the backdrop color to 70% opacity
@@ -514,10 +514,10 @@
 
 ### Features
 
-* **update-backdrop-color:** [Dialog] bump up the backdrop color to 70% opacity ([74cb583](https://git.ringcentral.com/RCUI/rcui/commit/74cb583af7d5659f5955bb39787308ee544a572c))
-* **update-backdrop-color:** [Dialog] bump up the backdrop color to 70% opacity ([3154e11](https://git.ringcentral.com/RCUI/rcui/commit/3154e112933372419efb22ec4722bd804b899e6a))
+* **update-backdrop-color:** [Dialog] bump up the backdrop color to 70% opacity ([74cb583](https://github.com/ringcentral/juno/commit/74cb583af7d5659f5955bb39787308ee544a572c))
+* **update-backdrop-color:** [Dialog] bump up the backdrop color to 70% opacity ([3154e11](https://github.com/ringcentral/juno/commit/3154e112933372419efb22ec4722bd804b899e6a))
 
-## [2.17.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.16.1...juno-core-v2.17.0) (2022-08-01)
+## [2.17.0](https://github.com/ringcentral/juno/compare/juno-core-v2.16.1...juno-core-v2.17.0) (2022-08-01)
 
 
 ### ⚠ BREAKING CHANGES
@@ -530,16 +530,16 @@
 
 ### Features
 
-* **Cleanup:** [Components] remove all not need deprecated components ([76acf5c](https://git.ringcentral.com/RCUI/rcui/commit/76acf5c6801ca560844fa437170e8ac72e7d77e4))
+* **Cleanup:** [Components] remove all not need deprecated components ([76acf5c](https://github.com/ringcentral/juno/commit/76acf5c6801ca560844fa437170e8ac72e7d77e4))
 
-### [2.16.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.16.0...juno-core-v2.16.1) (2022-07-19)
+### [2.16.1](https://github.com/ringcentral/juno/compare/juno-core-v2.16.0...juno-core-v2.16.1) (2022-07-19)
 
 
 ### Bug Fixes
 
-* **fix-downshift-type-issue:** [downshift] fix highlighted type of RcDownshiftRenderOptionState ([0956f35](https://git.ringcentral.com/RCUI/rcui/commit/0956f355f0193d38f9cfbeec25ffce490b607622))
+* **fix-downshift-type-issue:** [downshift] fix highlighted type of RcDownshiftRenderOptionState ([0956f35](https://github.com/ringcentral/juno/commit/0956f355f0193d38f9cfbeec25ffce490b607622))
 
-## [2.16.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.15.0...juno-core-v2.16.0) (2022-07-19)
+## [2.16.0](https://github.com/ringcentral/juno/compare/juno-core-v2.15.0...juno-core-v2.16.0) (2022-07-19)
 
 ### ⚠ BREAKING CHANGES
 
@@ -588,17 +588,17 @@ renderOption={(
 
 ### Features
 
-* **RCUI-708:** [Downshift] change `renderOptions` callback function field `selected` rename to `highlighted` ([cfc4f17](https://git.ringcentral.com/RCUI/rcui/commit/cfc4f17435c40f762e290add849a69deb7384b83))
-* **RCUI-708:** [Downshift] separate highlighted and selected when in `autocomplete` variant ([b067d2b](https://git.ringcentral.com/RCUI/rcui/commit/b067d2bdee6dacae2f4d5985763ad6f08ee6b627))
-* **RCUI-708:** [Downshift] support custom `PopperComponent` ([854a434](https://git.ringcentral.com/RCUI/rcui/commit/854a4344c1148e1aefe06e14d52ef0918ec03998))
+* **RCUI-708:** [Downshift] change `renderOptions` callback function field `selected` rename to `highlighted` ([cfc4f17](https://github.com/ringcentral/juno/commit/cfc4f17435c40f762e290add849a69deb7384b83))
+* **RCUI-708:** [Downshift] separate highlighted and selected when in `autocomplete` variant ([b067d2b](https://github.com/ringcentral/juno/commit/b067d2bdee6dacae2f4d5985763ad6f08ee6b627))
+* **RCUI-708:** [Downshift] support custom `PopperComponent` ([854a434](https://github.com/ringcentral/juno/commit/854a4344c1148e1aefe06e14d52ef0918ec03998))
 
 
 ### Bug Fixes
 
-* **RCUI-709:** [MenuItem, ListItem] support focused for add focused style ([4514078](https://git.ringcentral.com/RCUI/rcui/commit/4514078b8b67f28d7e69ea47d6739fe9a63311ed))
-* **RCUI-709:** [MenuItem, ListItem] sync `MenuItem` and `ListItem` style ([ca55cc7](https://git.ringcentral.com/RCUI/rcui/commit/ca55cc717df12f27f39542876211e5fb894b5aa3))
+* **RCUI-709:** [MenuItem, ListItem] support focused for add focused style ([4514078](https://github.com/ringcentral/juno/commit/4514078b8b67f28d7e69ea47d6739fe9a63311ed))
+* **RCUI-709:** [MenuItem, ListItem] sync `MenuItem` and `ListItem` style ([ca55cc7](https://github.com/ringcentral/juno/commit/ca55cc717df12f27f39542876211e5fb894b5aa3))
 
-## [2.15.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.14.0...juno-core-v2.15.0) (2022-07-18)
+## [2.15.0](https://github.com/ringcentral/juno/compare/juno-core-v2.14.0...juno-core-v2.15.0) (2022-07-18)
 
 
 ### ⚠ BREAKING CHANGES
@@ -607,16 +607,16 @@ renderOption={(
 
 ### Features
 
-* **RCUI-707:** [Downshift] support animation with menu and non virtualize mode ([c633380](https://git.ringcentral.com/RCUI/rcui/commit/c63338072601b1a3b1837e92e0af27ea6ebfc5e1))
-* **RCUI-707:** [Downshift] support custom anchorElType with `PopperProps.anchorElType` ([579edbc](https://git.ringcentral.com/RCUI/rcui/commit/579edbc91627f500ba2eb0cdbf317c8fb93e12f2))
-* **RCUI-707:** [Downshift] support custom toggleButton with `getToggleButtonProps` ([ecc76c3](https://git.ringcentral.com/RCUI/rcui/commit/ecc76c3dc1241309fe424b2a45febc8d5266d5a4))
+* **RCUI-707:** [Downshift] support animation with menu and non virtualize mode ([c633380](https://github.com/ringcentral/juno/commit/c63338072601b1a3b1837e92e0af27ea6ebfc5e1))
+* **RCUI-707:** [Downshift] support custom anchorElType with `PopperProps.anchorElType` ([579edbc](https://github.com/ringcentral/juno/commit/579edbc91627f500ba2eb0cdbf317c8fb93e12f2))
+* **RCUI-707:** [Downshift] support custom toggleButton with `getToggleButtonProps` ([ecc76c3](https://github.com/ringcentral/juno/commit/ecc76c3dc1241309fe424b2a45febc8d5266d5a4))
 
 
 ### Bug Fixes
 
-* **RCUI-707:** [Downshift] fix popper position show position with `bottom-start` and `top-start` ([81e21e0](https://git.ringcentral.com/RCUI/rcui/commit/81e21e018ce34411d2422a56db12bd2e6903d5e1))
+* **RCUI-707:** [Downshift] fix popper position show position with `bottom-start` and `top-start` ([81e21e0](https://github.com/ringcentral/juno/commit/81e21e018ce34411d2422a56db12bd2e6903d5e1))
 
-## [2.14.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.13.1...juno-core-v2.14.0) (2022-06-22)
+## [2.14.0](https://github.com/ringcentral/juno/compare/juno-core-v2.13.1...juno-core-v2.14.0) (2022-06-22)
 
 
 ### ⚠ BREAKING CHANGES
@@ -625,16 +625,16 @@ renderOption={(
 
 ### Bug Fixes
 
-* **Select:** [Select] fix select title prop pass in incorrect dom ([b845707](https://git.ringcentral.com/RCUI/rcui/commit/b8457077c5da70c351bc0d9956b1dfd140fcdd78))
+* **Select:** [Select] fix select title prop pass in incorrect dom ([b845707](https://github.com/ringcentral/juno/commit/b8457077c5da70c351bc0d9956b1dfd140fcdd78))
 
-### [2.13.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.13.0...juno-core-v2.13.1) (2022-05-26)
+### [2.13.1](https://github.com/ringcentral/juno/compare/juno-core-v2.13.0...juno-core-v2.13.1) (2022-05-26)
 
 
 ### Bug Fixes
 
-* **fix-dialog-size:** [Dialog] make sure `fullScreen` can work correctly when `maxWidth` is `xs` ([b992500](https://git.ringcentral.com/RCUI/rcui/commit/b992500b7685b5831e89d27f85053b15dd661a1e))
+* **fix-dialog-size:** [Dialog] make sure `fullScreen` can work correctly when `maxWidth` is `xs` ([b992500](https://github.com/ringcentral/juno/commit/b992500b7685b5831e89d27f85053b15dd661a1e))
 
-## [2.13.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.12.4...juno-core-v2.13.0) (2022-05-25)
+## [2.13.0](https://github.com/ringcentral/juno/compare/juno-core-v2.12.4...juno-core-v2.13.0) (2022-05-25)
 
 
 ### ⚠ BREAKING CHANGES
@@ -643,37 +643,37 @@ renderOption={(
 
 ### Bug Fixes
 
-* **fix-dialog-size:** [Dialog] change Dialog `max-width` to to follow design when maxWidth=`xs` ([fe71b41](https://git.ringcentral.com/RCUI/rcui/commit/fe71b4149c61b11b8f84aa77c5b7b08d1a6a64a9))
+* **fix-dialog-size:** [Dialog] change Dialog `max-width` to to follow design when maxWidth=`xs` ([fe71b41](https://github.com/ringcentral/juno/commit/fe71b4149c61b11b8f84aa77c5b7b08d1a6a64a9))
 
-### [2.12.4](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.12.3...juno-core-v2.12.4) (2022-05-18)
-
-
-### Bug Fixes
-
-* **fix-card-hover-action:** [CardHoverActions] add `z-index` to make sure `CardHoverActions` would not be covered by `CardSelectionArea` ([993f86e](https://git.ringcentral.com/RCUI/rcui/commit/993f86e96cc25c0210754da6adb75d67774fa0cf))
-
-### [2.12.3](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.12.2...juno-core-v2.12.3) (2022-05-10)
+### [2.12.4](https://github.com/ringcentral/juno/compare/juno-core-v2.12.3...juno-core-v2.12.4) (2022-05-18)
 
 
 ### Bug Fixes
 
-* **fix-dialog-a11y:** [Dialog] add `aria-modal=true` attribute ([b4a1fc4](https://git.ringcentral.com/RCUI/rcui/commit/b4a1fc46783262f9c4662f054e4ccfbfcc527f45))
+* **fix-card-hover-action:** [CardHoverActions] add `z-index` to make sure `CardHoverActions` would not be covered by `CardSelectionArea` ([993f86e](https://github.com/ringcentral/juno/commit/993f86e96cc25c0210754da6adb75d67774fa0cf))
 
-### [2.12.2](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.12.1...juno-core-v2.12.2) (2022-05-09)
-
-
-### Bug Fixes
-
-* **FIJI-50300:** [PortalManager] fix `_feedbackMap` memory leak issue ([c2319ba](https://git.ringcentral.com/RCUI/rcui/commit/c2319ba5e7a8b128d75cdab2e8f688f1e8647575))
-
-### [2.12.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.12.0...juno-core-v2.12.1) (2022-05-05)
+### [2.12.3](https://github.com/ringcentral/juno/compare/juno-core-v2.12.2...juno-core-v2.12.3) (2022-05-10)
 
 
 ### Bug Fixes
 
-* **Virtuoso:** [Virtuoso] ignore flushSync cause framer still not support that flushSync ([d7790d3](https://git.ringcentral.com/RCUI/rcui/commit/d7790d35df807306dac51ba683a2f9c6b3bc9b09))
+* **fix-dialog-a11y:** [Dialog] add `aria-modal=true` attribute ([b4a1fc4](https://github.com/ringcentral/juno/commit/b4a1fc46783262f9c4662f054e4ccfbfcc527f45))
 
-## [2.12.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.11.0...juno-core-v2.12.0) (2022-04-28)
+### [2.12.2](https://github.com/ringcentral/juno/compare/juno-core-v2.12.1...juno-core-v2.12.2) (2022-05-09)
+
+
+### Bug Fixes
+
+* **FIJI-50300:** [PortalManager] fix `_feedbackMap` memory leak issue ([c2319ba](https://github.com/ringcentral/juno/commit/c2319ba5e7a8b128d75cdab2e8f688f1e8647575))
+
+### [2.12.1](https://github.com/ringcentral/juno/compare/juno-core-v2.12.0...juno-core-v2.12.1) (2022-05-05)
+
+
+### Bug Fixes
+
+* **Virtuoso:** [Virtuoso] ignore flushSync cause framer still not support that flushSync ([d7790d3](https://github.com/ringcentral/juno/commit/d7790d35df807306dac51ba683a2f9c6b3bc9b09))
+
+## [2.12.0](https://github.com/ringcentral/juno/compare/juno-core-v2.11.0...juno-core-v2.12.0) (2022-04-28)
 
 
 ### ⚠ BREAKING CHANGES
@@ -682,64 +682,64 @@ renderOption={(
 
 ### Features
 
-* **RCUI-704:** [DialPad] support externalWindow for RcDialPadButton ([54e87e3](https://git.ringcentral.com/RCUI/rcui/commit/54e87e36897e8a7d1945c12617b7c643b5c7d880))
+* **RCUI-704:** [DialPad] support externalWindow for RcDialPadButton ([54e87e3](https://github.com/ringcentral/juno/commit/54e87e36897e8a7d1945c12617b7c643b5c7d880))
 
 
 ### Bug Fixes
 
-* **fix-change-log:** [PortalHost] export `HasPortalParentProvider` ([7c65411](https://git.ringcentral.com/RCUI/rcui/commit/7c65411eeb46555759c9a074a763575891fe93ea))
+* **fix-change-log:** [PortalHost] export `HasPortalParentProvider` ([7c65411](https://github.com/ringcentral/juno/commit/7c65411eeb46555759c9a074a763575891fe93ea))
 
-## [2.11.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.9.0...juno-core-v2.11.0) (2022-04-27)
+## [2.11.0](https://github.com/ringcentral/juno/compare/juno-core-v2.9.0...juno-core-v2.11.0) (2022-04-27)
 
 
 ### Features
 
-* **FIJI-49778:** [PortalHost] support RcDrawer ([5ad181c](https://git.ringcentral.com/RCUI/rcui/commit/5ad181c476410991a7ec1977a6acafba96465c65))
-* **FIJI-50006:** [virtuoso] upgrade virtuoso version to v2.10.1 ([acc6711](https://git.ringcentral.com/RCUI/rcui/commit/acc671146d67e713d15f6ec007918ca7ce0eaec7))
+* **FIJI-49778:** [PortalHost] support RcDrawer ([5ad181c](https://github.com/ringcentral/juno/commit/5ad181c476410991a7ec1977a6acafba96465c65))
+* **FIJI-50006:** [virtuoso] upgrade virtuoso version to v2.10.1 ([acc6711](https://github.com/ringcentral/juno/commit/acc671146d67e713d15f6ec007918ca7ce0eaec7))
 
 
 ### Bug Fixes
 
-* **FIJI-50006:** [PortalHost] fix issue about nested components that support portalManager ([3e28890](https://git.ringcentral.com/RCUI/rcui/commit/3e2889009374c92026f4268bd53b460279f1f9b5))
-* **FIJI-50006:** [TextField] fix issue about clear button lost when TextField is uncontrolled ([15658e8](https://git.ringcentral.com/RCUI/rcui/commit/15658e81c229b1ec35701dedcf545fbc2c08eab7))
-* **FIJI-50006:** [VirtualizedMenu] change vl menu animation to fade ([1a108c6](https://git.ringcentral.com/RCUI/rcui/commit/1a108c63637269fbccc619344defaf4f2a437ca2))
+* **FIJI-50006:** [PortalHost] fix issue about nested components that support portalManager ([3e28890](https://github.com/ringcentral/juno/commit/3e2889009374c92026f4268bd53b460279f1f9b5))
+* **FIJI-50006:** [TextField] fix issue about clear button lost when TextField is uncontrolled ([15658e8](https://github.com/ringcentral/juno/commit/15658e81c229b1ec35701dedcf545fbc2c08eab7))
+* **FIJI-50006:** [VirtualizedMenu] change vl menu animation to fade ([1a108c6](https://github.com/ringcentral/juno/commit/1a108c63637269fbccc619344defaf4f2a437ca2))
 
-## [2.10.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.9.0...juno-core-v2.10.0) (2022-04-26)
+## [2.10.0](https://github.com/ringcentral/juno/compare/juno-core-v2.9.0...juno-core-v2.10.0) (2022-04-26)
 
 
 ### Features
 
-* **FIJI-49778:** [deepPartial] add dependency `type-fest` and use type-fest `PartialDeep` to replace current implementation ([d493c04](https://git.ringcentral.com/RCUI/rcui/commit/d493c04015eed10f5b40c1b68d5d5d3c7a945173))
-* **FIJI-49778:** [DialPad] remove handleKeyboardEffect debounce ([87827ff](https://git.ringcentral.com/RCUI/rcui/commit/87827ff5ab07043160b3404e18c6577d436a7487))
-* **FIJI-49778:** [PortalHost] support RcDrawer ([3233143](https://git.ringcentral.com/RCUI/rcui/commit/3233143fef882296bb7404f3c3f7f3cf1a210917))
+* **FIJI-49778:** [deepPartial] add dependency `type-fest` and use type-fest `PartialDeep` to replace current implementation ([d493c04](https://github.com/ringcentral/juno/commit/d493c04015eed10f5b40c1b68d5d5d3c7a945173))
+* **FIJI-49778:** [DialPad] remove handleKeyboardEffect debounce ([87827ff](https://github.com/ringcentral/juno/commit/87827ff5ab07043160b3404e18c6577d436a7487))
+* **FIJI-49778:** [PortalHost] support RcDrawer ([3233143](https://github.com/ringcentral/juno/commit/3233143fef882296bb7404f3c3f7f3cf1a210917))
 
 
 ### Bug Fixes
 
-* **FIJI-49778:** [DialPad] fix `getDialPadButtonProps` return type ([4f4ba0b](https://git.ringcentral.com/RCUI/rcui/commit/4f4ba0b25d98220b17d917c8c8a5d8ba098758d6))
-* **FIJI-49778:** [Theme] fix theme type `RcTheme`, `RcThemeInput` ([67d9135](https://git.ringcentral.com/RCUI/rcui/commit/67d913560aa0b3250f8764f3fc90019ab10a84e6))
+* **FIJI-49778:** [DialPad] fix `getDialPadButtonProps` return type ([4f4ba0b](https://github.com/ringcentral/juno/commit/4f4ba0b25d98220b17d917c8c8a5d8ba098758d6))
+* **FIJI-49778:** [Theme] fix theme type `RcTheme`, `RcThemeInput` ([67d9135](https://github.com/ringcentral/juno/commit/67d913560aa0b3250f8764f3fc90019ab10a84e6))
 
-## [2.9.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.8.0...juno-core-v2.9.0) (2022-04-21)
+## [2.9.0](https://github.com/ringcentral/juno/compare/juno-core-v2.8.0...juno-core-v2.9.0) (2022-04-21)
 
 
 ### Features
 
-* **fix-iconButton-disabled:** [Themes] update palette.light ([812e802](https://git.ringcentral.com/RCUI/rcui/commit/812e8026a7760e87c6b778337a4adb82add2cc56))
+* **fix-iconButton-disabled:** [Themes] update palette.light ([812e802](https://github.com/ringcentral/juno/commit/812e8026a7760e87c6b778337a4adb82add2cc56))
 
 
 ### Bug Fixes
 
-* **fix-iconButton-contained:** [IconButton] fix icon size issue ([d11d05a](https://git.ringcentral.com/RCUI/rcui/commit/d11d05a89da75bfb72d99c01544f2714699fd5f3))
-* **fix-iconButton-disabled:** [IconButton] fix contained IconButton `disabled` style issue ([bfec2d2](https://git.ringcentral.com/RCUI/rcui/commit/bfec2d264ca2387ae12d4f5348eeb3c482ebde66))
+* **fix-iconButton-contained:** [IconButton] fix icon size issue ([d11d05a](https://github.com/ringcentral/juno/commit/d11d05a89da75bfb72d99c01544f2714699fd5f3))
+* **fix-iconButton-disabled:** [IconButton] fix contained IconButton `disabled` style issue ([bfec2d2](https://github.com/ringcentral/juno/commit/bfec2d264ca2387ae12d4f5348eeb3c482ebde66))
 
-### [2.8.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.8.0...juno-core-v2.8.1) (2022-04-19)
+### [2.8.1](https://github.com/ringcentral/juno/compare/juno-core-v2.8.0...juno-core-v2.8.1) (2022-04-19)
 
 
 ### Bug Fixes
 
-* **fix-iconButton-contained:** [IconButton] fix icon size issue ([f8ad83f](https://git.ringcentral.com/RCUI/rcui/commit/f8ad83fcbfe8bd51aa9c9b034c9ac8074d973a64))
+* **fix-iconButton-contained:** [IconButton] fix icon size issue ([f8ad83f](https://github.com/ringcentral/juno/commit/f8ad83fcbfe8bd51aa9c9b034c9ac8074d973a64))
 
-## [2.8.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.7.0...juno-core-v2.8.0) (2022-04-19)
+## [2.8.0](https://github.com/ringcentral/juno/compare/juno-core-v2.7.0...juno-core-v2.8.0) (2022-04-19)
 
 
 ### ⚠ BREAKING CHANGES
@@ -748,9 +748,9 @@ renderOption={(
 
 ### Bug Fixes
 
-* **fix-iconButton-contained:** [IconButton] fix custom icon color issue when variant of IconButton is contained ([84ed02f](https://git.ringcentral.com/RCUI/rcui/commit/84ed02f5a823d71874e131ab6f15ab95c09017c4))
+* **fix-iconButton-contained:** [IconButton] fix custom icon color issue when variant of IconButton is contained ([84ed02f](https://github.com/ringcentral/juno/commit/84ed02f5a823d71874e131ab6f15ab95c09017c4))
 
-## [2.7.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.6.0...juno-core-v2.7.0) (2022-04-19)
+## [2.7.0](https://github.com/ringcentral/juno/compare/juno-core-v2.6.0...juno-core-v2.7.0) (2022-04-19)
 
 
 ### ⚠ BREAKING CHANGES
@@ -759,14 +759,14 @@ renderOption={(
 
 ### Features
 
-* **DialPad:** [DialPad] support `autoSize` prop for use can custom dialpad style ([09a1c73](https://git.ringcentral.com/RCUI/rcui/commit/09a1c73c1917d5a10b8d98472ec799ddf69b632d))
+* **DialPad:** [DialPad] support `autoSize` prop for use can custom dialpad style ([09a1c73](https://github.com/ringcentral/juno/commit/09a1c73c1917d5a10b8d98472ec799ddf69b632d))
 
 
 ### Bug Fixes
 
-* **fix-iconButton-contained:** [IconButton] fix custom icon color issue when variant of IconButton is contained ([604a9c3](https://git.ringcentral.com/RCUI/rcui/commit/604a9c3756c90019f49a51905a7f8847f7eb5481))
+* **fix-iconButton-contained:** [IconButton] fix custom icon color issue when variant of IconButton is contained ([604a9c3](https://github.com/ringcentral/juno/commit/604a9c3756c90019f49a51905a7f8847f7eb5481))
 
-## [2.6.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.4.2...juno-core-v2.6.0) (2022-04-18)
+## [2.6.0](https://github.com/ringcentral/juno/compare/juno-core-v2.4.2...juno-core-v2.6.0) (2022-04-18)
 
 
 ### ⚠ BREAKING CHANGES
@@ -776,25 +776,25 @@ renderOption={(
 
 ### Features
 
-* **dialer-issue:** [Dialer] support custom window ([65576b5](https://git.ringcentral.com/RCUI/rcui/commit/65576b5994dd9d7e8c6ce595881dc9deeb29d6f9))
-* **dialer-issue:** [DialPad] `onChange` will emit reason `customKeyboard` if it trigger by `useDialKeyboard` ([fa21ad2](https://git.ringcentral.com/RCUI/rcui/commit/fa21ad2edca5e8a7c7b7eb307c92f58e1f646229))
-* **dialer-issue:** [useDialKeyboard] support browser keyboard event type ([50ae64d](https://git.ringcentral.com/RCUI/rcui/commit/50ae64d40ffad3c6cf216b1e866f5bf6975ef8e8))
-* **foundation:** [useGlobalListener] support startImmediately ([f82a641](https://git.ringcentral.com/RCUI/rcui/commit/f82a641fd05402ed040094d1e62c9f17758e32b0))
-* **IconButton:** [IconButton] support `IconProps` ([beed4ca](https://git.ringcentral.com/RCUI/rcui/commit/beed4ca0fbb3ab2e51014fa129584ed085225613))
-* **RCUI-702:** [IconButton] change IconButton spec for more like mui fab Icon ([8b063d9](https://git.ringcentral.com/RCUI/rcui/commit/8b063d92b0c92bfb0479b1de8436954073ae476c))
-* **upgrade-virtuoso:** [TableCellStyle] add xlarge size ([85debb2](https://git.ringcentral.com/RCUI/rcui/commit/85debb26a084a7ea83aba1b73becb1363f7e08b3))
-* **upgrade-virtuoso:** [virtuoso] upgrade to 2.8.6 ([440a9ef](https://git.ringcentral.com/RCUI/rcui/commit/440a9ef67c2a27a43f76783fb5f7057dbc3c6f28))
+* **dialer-issue:** [Dialer] support custom window ([65576b5](https://github.com/ringcentral/juno/commit/65576b5994dd9d7e8c6ce595881dc9deeb29d6f9))
+* **dialer-issue:** [DialPad] `onChange` will emit reason `customKeyboard` if it trigger by `useDialKeyboard` ([fa21ad2](https://github.com/ringcentral/juno/commit/fa21ad2edca5e8a7c7b7eb307c92f58e1f646229))
+* **dialer-issue:** [useDialKeyboard] support browser keyboard event type ([50ae64d](https://github.com/ringcentral/juno/commit/50ae64d40ffad3c6cf216b1e866f5bf6975ef8e8))
+* **foundation:** [useGlobalListener] support startImmediately ([f82a641](https://github.com/ringcentral/juno/commit/f82a641fd05402ed040094d1e62c9f17758e32b0))
+* **IconButton:** [IconButton] support `IconProps` ([beed4ca](https://github.com/ringcentral/juno/commit/beed4ca0fbb3ab2e51014fa129584ed085225613))
+* **RCUI-702:** [IconButton] change IconButton spec for more like mui fab Icon ([8b063d9](https://github.com/ringcentral/juno/commit/8b063d92b0c92bfb0479b1de8436954073ae476c))
+* **upgrade-virtuoso:** [TableCellStyle] add xlarge size ([85debb2](https://github.com/ringcentral/juno/commit/85debb26a084a7ea83aba1b73becb1363f7e08b3))
+* **upgrade-virtuoso:** [virtuoso] upgrade to 2.8.6 ([440a9ef](https://github.com/ringcentral/juno/commit/440a9ef67c2a27a43f76783fb5f7057dbc3c6f28))
 
 
 ### Bug Fixes
 
-* **foundation:** [useGlobalListener] support listener options with overload method ([fc41528](https://git.ringcentral.com/RCUI/rcui/commit/fc4152863e7f342398ecabe37fa3fdf07baf2b05))
-* **foundation:** [useLongPress] switch to use useGlobalListener and fix touch screen logic ([0067e27](https://git.ringcentral.com/RCUI/rcui/commit/0067e27d4817236605ea9f36e125bfc4698d6f51))
-* **foundation:** [useTouchMouseEvent] remove addition check because in production should never switch between touch and mouse ([147c0fb](https://git.ringcentral.com/RCUI/rcui/commit/147c0fb97710be922feba0d4941240d46bb4f072))
-* **upgrade-virtuoso:** [TableCell] fix font issue when TableCell is sortable ([36461a3](https://git.ringcentral.com/RCUI/rcui/commit/36461a3d706a95ed374a9f6f48bb4eb94bccac31))
-* **VirtualizedMenu:** [VirtualizedMenu] fix virtuoso issue with vl menu ([68a3139](https://git.ringcentral.com/RCUI/rcui/commit/68a3139dcc39ecc2f1b2c05d65a459ffd3e60a44))
+* **foundation:** [useGlobalListener] support listener options with overload method ([fc41528](https://github.com/ringcentral/juno/commit/fc4152863e7f342398ecabe37fa3fdf07baf2b05))
+* **foundation:** [useLongPress] switch to use useGlobalListener and fix touch screen logic ([0067e27](https://github.com/ringcentral/juno/commit/0067e27d4817236605ea9f36e125bfc4698d6f51))
+* **foundation:** [useTouchMouseEvent] remove addition check because in production should never switch between touch and mouse ([147c0fb](https://github.com/ringcentral/juno/commit/147c0fb97710be922feba0d4941240d46bb4f072))
+* **upgrade-virtuoso:** [TableCell] fix font issue when TableCell is sortable ([36461a3](https://github.com/ringcentral/juno/commit/36461a3d706a95ed374a9f6f48bb4eb94bccac31))
+* **VirtualizedMenu:** [VirtualizedMenu] fix virtuoso issue with vl menu ([68a3139](https://github.com/ringcentral/juno/commit/68a3139dcc39ecc2f1b2c05d65a459ffd3e60a44))
 
-## [2.5.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.4.2...juno-core-v2.5.0) (2022-04-15)
+## [2.5.0](https://github.com/ringcentral/juno/compare/juno-core-v2.4.2...juno-core-v2.5.0) (2022-04-15)
 
 
 ### ⚠ BREAKING CHANGES
@@ -803,196 +803,196 @@ renderOption={(
 
 ### Features
 
-* **dialer-issue:** [Dialer] support custom window ([65576b5](https://git.ringcentral.com/RCUI/rcui/commit/65576b5994dd9d7e8c6ce595881dc9deeb29d6f9))
-* **dialer-issue:** [DialPad] `onChange` will emit reason `customKeyboard` if it trigger by `useDialKeyboard` ([fa21ad2](https://git.ringcentral.com/RCUI/rcui/commit/fa21ad2edca5e8a7c7b7eb307c92f58e1f646229))
-* **dialer-issue:** [useDialKeyboard] support browser keyboard event type ([50ae64d](https://git.ringcentral.com/RCUI/rcui/commit/50ae64d40ffad3c6cf216b1e866f5bf6975ef8e8))
-* **RCUI-702:** [IconButton] change IconButton spec for more like mui fab Icon ([8b063d9](https://git.ringcentral.com/RCUI/rcui/commit/8b063d92b0c92bfb0479b1de8436954073ae476c))
-* **upgrade-virtuoso:** [TableCellStyle] add xlarge size ([85debb2](https://git.ringcentral.com/RCUI/rcui/commit/85debb26a084a7ea83aba1b73becb1363f7e08b3))
-* **upgrade-virtuoso:** [virtuoso] upgrade to 2.8.6 ([440a9ef](https://git.ringcentral.com/RCUI/rcui/commit/440a9ef67c2a27a43f76783fb5f7057dbc3c6f28))
+* **dialer-issue:** [Dialer] support custom window ([65576b5](https://github.com/ringcentral/juno/commit/65576b5994dd9d7e8c6ce595881dc9deeb29d6f9))
+* **dialer-issue:** [DialPad] `onChange` will emit reason `customKeyboard` if it trigger by `useDialKeyboard` ([fa21ad2](https://github.com/ringcentral/juno/commit/fa21ad2edca5e8a7c7b7eb307c92f58e1f646229))
+* **dialer-issue:** [useDialKeyboard] support browser keyboard event type ([50ae64d](https://github.com/ringcentral/juno/commit/50ae64d40ffad3c6cf216b1e866f5bf6975ef8e8))
+* **RCUI-702:** [IconButton] change IconButton spec for more like mui fab Icon ([8b063d9](https://github.com/ringcentral/juno/commit/8b063d92b0c92bfb0479b1de8436954073ae476c))
+* **upgrade-virtuoso:** [TableCellStyle] add xlarge size ([85debb2](https://github.com/ringcentral/juno/commit/85debb26a084a7ea83aba1b73becb1363f7e08b3))
+* **upgrade-virtuoso:** [virtuoso] upgrade to 2.8.6 ([440a9ef](https://github.com/ringcentral/juno/commit/440a9ef67c2a27a43f76783fb5f7057dbc3c6f28))
 
 
 ### Bug Fixes
 
-* **upgrade-virtuoso:** [TableCell] fix font issue when TableCell is sortable ([36461a3](https://git.ringcentral.com/RCUI/rcui/commit/36461a3d706a95ed374a9f6f48bb4eb94bccac31))
-* **VirtualizedMenu:** [VirtualizedMenu] fix virtuoso issue with vl menu ([68a3139](https://git.ringcentral.com/RCUI/rcui/commit/68a3139dcc39ecc2f1b2c05d65a459ffd3e60a44))
+* **upgrade-virtuoso:** [TableCell] fix font issue when TableCell is sortable ([36461a3](https://github.com/ringcentral/juno/commit/36461a3d706a95ed374a9f6f48bb4eb94bccac31))
+* **VirtualizedMenu:** [VirtualizedMenu] fix virtuoso issue with vl menu ([68a3139](https://github.com/ringcentral/juno/commit/68a3139dcc39ecc2f1b2c05d65a459ffd3e60a44))
 
-### [2.4.2](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.4.1...juno-core-v2.4.2) (2022-04-14)
-
-
-### Bug Fixes
-
-* **RCUI-700:** [ThemeProvider] add isSafari154 check point with 15_4 ([015256c](https://git.ringcentral.com/RCUI/rcui/commit/015256cbbbcac1db74a13723bb1c72bad82f81d4))
-
-### [2.4.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.4.0...juno-core-v2.4.1) (2022-04-13)
+### [2.4.2](https://github.com/ringcentral/juno/compare/juno-core-v2.4.1...juno-core-v2.4.2) (2022-04-14)
 
 
 ### Bug Fixes
 
-* **RCUI-700:** [ThemeProvider] add more check with iPhone, iPad ([73d672f](https://git.ringcentral.com/RCUI/rcui/commit/73d672f7236b3d51ce679ec490385dfad1b0bd33))
-* **RCUI-700:** [ThemeProvider] support outside custom should enable `fixSafari154` style fix ([08a4766](https://git.ringcentral.com/RCUI/rcui/commit/08a476618898507a695f13a1e824192035485762))
+* **RCUI-700:** [ThemeProvider] add isSafari154 check point with 15_4 ([015256c](https://github.com/ringcentral/juno/commit/015256cbbbcac1db74a13723bb1c72bad82f81d4))
 
-## [2.4.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.3.7...juno-core-v2.4.0) (2022-04-12)
-
-
-### Bug Fixes
-
-* **RCUI-700:** [BaseProps] fix RcVirtualizedDivider to optional ([a7dabb0](https://git.ringcentral.com/RCUI/rcui/commit/a7dabb000fa20f5b1bc95f4d306664be9486b393))
-* **RCUI-700:** [Grow] fix Grow issue with safari issue ([f51fb27](https://git.ringcentral.com/RCUI/rcui/commit/f51fb2785b103eaf7b449fdf5a159e28b025d563))
-* **RCUI-700:** [SubMenu] fix error binding transform-origin ([786d70d](https://git.ringcentral.com/RCUI/rcui/commit/786d70d7879f00cc447e071d8f46fef7e44fb05e))
-
-### [2.3.7](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.3.6...juno-core-v2.3.7) (2022-04-08)
+### [2.4.1](https://github.com/ringcentral/juno/compare/juno-core-v2.4.0...juno-core-v2.4.1) (2022-04-13)
 
 
 ### Bug Fixes
 
-* **Bug:** [Downshift] fix Downshift clearBtn style error with CleanBtnRefactor ([e1c777f](https://git.ringcentral.com/RCUI/rcui/commit/e1c777f0d2256473674e65c2827074ec412fb6d6))
+* **RCUI-700:** [ThemeProvider] add more check with iPhone, iPad ([73d672f](https://github.com/ringcentral/juno/commit/73d672f7236b3d51ce679ec490385dfad1b0bd33))
+* **RCUI-700:** [ThemeProvider] support outside custom should enable `fixSafari154` style fix ([08a4766](https://github.com/ringcentral/juno/commit/08a476618898507a695f13a1e824192035485762))
 
-### [2.3.6](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.3.5...juno-core-v2.3.6) (2022-04-08)
+## [2.4.0](https://github.com/ringcentral/juno/compare/juno-core-v2.3.7...juno-core-v2.4.0) (2022-04-12)
 
 
 ### Bug Fixes
 
-* **Bug:** [useA11yKeyEvent] fix a11yKeyEvent error binding with key as Space to ' ' ([ce1577a](https://git.ringcentral.com/RCUI/rcui/commit/ce1577a3833fd8ab8c6ac206478f496871c5ecdb))
+* **RCUI-700:** [BaseProps] fix RcVirtualizedDivider to optional ([a7dabb0](https://github.com/ringcentral/juno/commit/a7dabb000fa20f5b1bc95f4d306664be9486b393))
+* **RCUI-700:** [Grow] fix Grow issue with safari issue ([f51fb27](https://github.com/ringcentral/juno/commit/f51fb2785b103eaf7b449fdf5a159e28b025d563))
+* **RCUI-700:** [SubMenu] fix error binding transform-origin ([786d70d](https://github.com/ringcentral/juno/commit/786d70d7879f00cc447e071d8f46fef7e44fb05e))
 
-### [2.3.5](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.3.4...juno-core-v2.3.5) (2022-04-07)
+### [2.3.7](https://github.com/ringcentral/juno/compare/juno-core-v2.3.6...juno-core-v2.3.7) (2022-04-08)
+
+
+### Bug Fixes
+
+* **Bug:** [Downshift] fix Downshift clearBtn style error with CleanBtnRefactor ([e1c777f](https://github.com/ringcentral/juno/commit/e1c777f0d2256473674e65c2827074ec412fb6d6))
+
+### [2.3.6](https://github.com/ringcentral/juno/compare/juno-core-v2.3.5...juno-core-v2.3.6) (2022-04-08)
+
+
+### Bug Fixes
+
+* **Bug:** [useA11yKeyEvent] fix a11yKeyEvent error binding with key as Space to ' ' ([ce1577a](https://github.com/ringcentral/juno/commit/ce1577a3833fd8ab8c6ac206478f496871c5ecdb))
+
+### [2.3.5](https://github.com/ringcentral/juno/compare/juno-core-v2.3.4...juno-core-v2.3.5) (2022-04-07)
 
 
 ### Features
 
-* **VirtualizedMenuList:** [VirtualizedMenuList] support disablePadding ([38348af](https://git.ringcentral.com/RCUI/rcui/commit/38348af570e366e767afb523ee2e75b0b8ada8cb))
+* **VirtualizedMenuList:** [VirtualizedMenuList] support disablePadding ([38348af](https://github.com/ringcentral/juno/commit/38348af570e366e767afb523ee2e75b0b8ada8cb))
 
-### [2.3.4](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.3.3...juno-core-v2.3.4) (2022-04-02)
-
-
-### Bug Fixes
-
-* **table-issue:** [DialogContent] fix default color ([5c93a0f](https://git.ringcentral.com/RCUI/rcui/commit/5c93a0fb2b19217a45312be0d3a79f63f4dcf66e))
-* **table-issue:** [Table] fix some css issue and mui warning ([6e55444](https://git.ringcentral.com/RCUI/rcui/commit/6e55444115726474fb9a60079d79a89e01ed80bf))
-
-### [2.3.3](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.3.1...juno-core-v2.3.3) (2022-04-01)
+### [2.3.4](https://github.com/ringcentral/juno/compare/juno-core-v2.3.3...juno-core-v2.3.4) (2022-04-02)
 
 
 ### Bug Fixes
 
-* **fix-portalmanager-issue:** [portalmanager] fix ThrottleScheduler issue ([2b2ac1d](https://git.ringcentral.com/RCUI/rcui/commit/2b2ac1d04488fab2bba55871f0474357d04d4064))
+* **table-issue:** [DialogContent] fix default color ([5c93a0f](https://github.com/ringcentral/juno/commit/5c93a0fb2b19217a45312be0d3a79f63f4dcf66e))
+* **table-issue:** [Table] fix some css issue and mui warning ([6e55444](https://github.com/ringcentral/juno/commit/6e55444115726474fb9a60079d79a89e01ed80bf))
 
-### [2.3.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.3.0...juno-core-v2.3.1) (2022-03-31)
+### [2.3.3](https://github.com/ringcentral/juno/compare/juno-core-v2.3.1...juno-core-v2.3.3) (2022-04-01)
 
 
 ### Bug Fixes
 
-* **Badge:** [Badge] fix bug with combine classes ([086f568](https://git.ringcentral.com/RCUI/rcui/commit/086f568f00c921ca7ee2665efecb1307f8d6ed0f))
-* **FIJI-48582:** [TextField] fix issue about tooltip show incorrectly after click textField clean button ([cbe41ae](https://git.ringcentral.com/RCUI/rcui/commit/cbe41ae87bdd7bbcc3a11b75f2e8266ae489ea78))
+* **fix-portalmanager-issue:** [portalmanager] fix ThrottleScheduler issue ([2b2ac1d](https://github.com/ringcentral/juno/commit/2b2ac1d04488fab2bba55871f0474357d04d4064))
 
-## [2.3.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.2.0...juno-core-v2.3.0) (2022-03-29)
+### [2.3.1](https://github.com/ringcentral/juno/compare/juno-core-v2.3.0...juno-core-v2.3.1) (2022-03-31)
+
+
+### Bug Fixes
+
+* **Badge:** [Badge] fix bug with combine classes ([086f568](https://github.com/ringcentral/juno/commit/086f568f00c921ca7ee2665efecb1307f8d6ed0f))
+* **FIJI-48582:** [TextField] fix issue about tooltip show incorrectly after click textField clean button ([cbe41ae](https://github.com/ringcentral/juno/commit/cbe41ae87bdd7bbcc3a11b75f2e8266ae489ea78))
+
+## [2.3.0](https://github.com/ringcentral/juno/compare/juno-core-v2.2.0...juno-core-v2.3.0) (2022-03-29)
 
 
 ### Features
 
-* **foundation:** [foundation] implement `useGlobalListener` for share event ([453d4da](https://git.ringcentral.com/RCUI/rcui/commit/453d4daac5b652add19be0fb4cfe2e1d7ab9e284))
-* **foundation:** [foundation] support getRefElement for some element event related method ([46a220c](https://git.ringcentral.com/RCUI/rcui/commit/46a220c319afea1f8e7e817677643afc665c72e6))
-* **RCUI-687:** [Deprecated Tables] remove tables export ([c57e47c](https://git.ringcentral.com/RCUI/rcui/commit/c57e47c4ccc860ffef7f37500850ff3a5c60e0c4))
-* **RCUI-687:** [Table] new table base on mui ([dc7f298](https://git.ringcentral.com/RCUI/rcui/commit/dc7f2984a7c344389ea7b051542f0f93d312dac5))
+* **foundation:** [foundation] implement `useGlobalListener` for share event ([453d4da](https://github.com/ringcentral/juno/commit/453d4daac5b652add19be0fb4cfe2e1d7ab9e284))
+* **foundation:** [foundation] support getRefElement for some element event related method ([46a220c](https://github.com/ringcentral/juno/commit/46a220c319afea1f8e7e817677643afc665c72e6))
+* **RCUI-687:** [Deprecated Tables] remove tables export ([c57e47c](https://github.com/ringcentral/juno/commit/c57e47c4ccc860ffef7f37500850ff3a5c60e0c4))
+* **RCUI-687:** [Table] new table base on mui ([dc7f298](https://github.com/ringcentral/juno/commit/dc7f2984a7c344389ea7b051542f0f93d312dac5))
 
 
 ### Bug Fixes
 
-* **Foundation:** [useGlobalListener] change array to Set ([dd2b85c](https://git.ringcentral.com/RCUI/rcui/commit/dd2b85c9eda7ed73bf18eb19b80ed9a5994f1fbf))
-* **juno-core:** [Tooptip] fix tooltipForceHide alway binding event issue ([6c86789](https://git.ringcentral.com/RCUI/rcui/commit/6c86789542608dd16bfd6dd5cac1f13812c002ef))
-* **RCUI-687:** [Highlight] fix `action` prop type ([10ace81](https://git.ringcentral.com/RCUI/rcui/commit/10ace818f6e929730f60d2d4680d0c86d028ab97))
+* **Foundation:** [useGlobalListener] change array to Set ([dd2b85c](https://github.com/ringcentral/juno/commit/dd2b85c9eda7ed73bf18eb19b80ed9a5994f1fbf))
+* **juno-core:** [Tooptip] fix tooltipForceHide alway binding event issue ([6c86789](https://github.com/ringcentral/juno/commit/6c86789542608dd16bfd6dd5cac1f13812c002ef))
+* **RCUI-687:** [Highlight] fix `action` prop type ([10ace81](https://github.com/ringcentral/juno/commit/10ace818f6e929730f60d2d4680d0c86d028ab97))
 
-## [2.2.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.1.1...juno-core-v2.2.0) (2022-03-15)
+## [2.2.0](https://github.com/ringcentral/juno/compare/juno-core-v2.1.1...juno-core-v2.2.0) (2022-03-15)
 
 
 ### Features
 
-* **RCUI-693:** [Badge] support round overlap ([4e87404](https://git.ringcentral.com/RCUI/rcui/commit/4e8740453aa96524fbf6bee9c9af018faeff7d75))
-* **RCUI-693:** [Chip] support component prop with overridableStyled ([6f153f3](https://git.ringcentral.com/RCUI/rcui/commit/6f153f3d102586bb1d70a24fac8ea39860cf8a33))
-* **RCUI-693:** [MoreMenuTab] support custom MenuItemComponent for moreMenu variant ([0dcc630](https://git.ringcentral.com/RCUI/rcui/commit/0dcc630a9524d3fc29609b15c7b4c04a94edff7c))
+* **RCUI-693:** [Badge] support round overlap ([4e87404](https://github.com/ringcentral/juno/commit/4e8740453aa96524fbf6bee9c9af018faeff7d75))
+* **RCUI-693:** [Chip] support component prop with overridableStyled ([6f153f3](https://github.com/ringcentral/juno/commit/6f153f3d102586bb1d70a24fac8ea39860cf8a33))
+* **RCUI-693:** [MoreMenuTab] support custom MenuItemComponent for moreMenu variant ([0dcc630](https://github.com/ringcentral/juno/commit/0dcc630a9524d3fc29609b15c7b4c04a94edff7c))
 
-### [2.1.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.1.0...juno-core-v2.1.1) (2022-03-10)
+### [2.1.1](https://github.com/ringcentral/juno/compare/juno-core-v2.1.0...juno-core-v2.1.1) (2022-03-10)
 
 
 ### Bug Fixes
 
-* **RCUI-692:** [RcTab] fix dynamic children ([cbc1cb9](https://git.ringcentral.com/RCUI/rcui/commit/cbc1cb9d4c867fcab6102e4d1f73b57d326cf37f))
-* **RCUI-692:** [RcTab] fix dynamic children ([e7520b5](https://git.ringcentral.com/RCUI/rcui/commit/e7520b5a336b90c2ca39a1bc2ec30a06f3e27236))
-* **RCUI-692:** [RcTab] update snapshot ([1d33927](https://git.ringcentral.com/RCUI/rcui/commit/1d339278a6edde83bd2ad25dfa36040dafee9e4d))
+* **RCUI-692:** [RcTab] fix dynamic children ([cbc1cb9](https://github.com/ringcentral/juno/commit/cbc1cb9d4c867fcab6102e4d1f73b57d326cf37f))
+* **RCUI-692:** [RcTab] fix dynamic children ([e7520b5](https://github.com/ringcentral/juno/commit/e7520b5a336b90c2ca39a1bc2ec30a06f3e27236))
+* **RCUI-692:** [RcTab] update snapshot ([1d33927](https://github.com/ringcentral/juno/commit/1d339278a6edde83bd2ad25dfa36040dafee9e4d))
 
-## [2.1.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.0.2...juno-core-v2.1.0) (2022-03-09)
+## [2.1.0](https://github.com/ringcentral/juno/compare/juno-core-v2.0.2...juno-core-v2.1.0) (2022-03-09)
 
 
 ### Features
 
-* **RCUI-691:** [Chip] support outlined variant ([4a27b80](https://git.ringcentral.com/RCUI/rcui/commit/4a27b803a018afb984ac533321ba84eaf95e8744))
+* **RCUI-691:** [Chip] support outlined variant ([4a27b80](https://github.com/ringcentral/juno/commit/4a27b803a018afb984ac533321ba84eaf95e8744))
 
 
 ### Bug Fixes
 
-* **juno-core:** [Menu] re-export RcMenuOnCloseReasonsType ([cc002cc](https://git.ringcentral.com/RCUI/rcui/commit/cc002cc18a339bb66ee38f7780a8816883c7fab1))
-* **RCUI-690:** [DatePicker] fix DatePicker error when RcThemeProvider are provided `prefixGlobalClass` prop ([701e945](https://git.ringcentral.com/RCUI/rcui/commit/701e9456c643e6938b651cd0b10c0f4a236c1db8))
+* **juno-core:** [Menu] re-export RcMenuOnCloseReasonsType ([cc002cc](https://github.com/ringcentral/juno/commit/cc002cc18a339bb66ee38f7780a8816883c7fab1))
+* **RCUI-690:** [DatePicker] fix DatePicker error when RcThemeProvider are provided `prefixGlobalClass` prop ([701e945](https://github.com/ringcentral/juno/commit/701e9456c643e6938b651cd0b10c0f4a236c1db8))
 
-## [2.1.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.0.2...juno-core-v2.1.0) (2022-03-09)
+## [2.1.0](https://github.com/ringcentral/juno/compare/juno-core-v2.0.2...juno-core-v2.1.0) (2022-03-09)
 
 
 ### Features
 
-* **RCUI-691:** [Chip] support outlined variant ([4a27b80](https://git.ringcentral.com/RCUI/rcui/commit/4a27b803a018afb984ac533321ba84eaf95e8744))
+* **RCUI-691:** [Chip] support outlined variant ([4a27b80](https://github.com/ringcentral/juno/commit/4a27b803a018afb984ac533321ba84eaf95e8744))
 
 
 ### Bug Fixes
 
-* **juno-core:** [Menu] re-export RcMenuOnCloseReasonsType ([cc002cc](https://git.ringcentral.com/RCUI/rcui/commit/cc002cc18a339bb66ee38f7780a8816883c7fab1))
-* **RCUI-690:** [DatePicker] fix DatePicker error when RcThemeProvider are provided `prefixGlobalClass` prop ([701e945](https://git.ringcentral.com/RCUI/rcui/commit/701e9456c643e6938b651cd0b10c0f4a236c1db8))
+* **juno-core:** [Menu] re-export RcMenuOnCloseReasonsType ([cc002cc](https://github.com/ringcentral/juno/commit/cc002cc18a339bb66ee38f7780a8816883c7fab1))
+* **RCUI-690:** [DatePicker] fix DatePicker error when RcThemeProvider are provided `prefixGlobalClass` prop ([701e945](https://github.com/ringcentral/juno/commit/701e9456c643e6938b651cd0b10c0f4a236c1db8))
 
-## [2.1.0](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.0.4...juno-core-v2.1.0) (2022-03-09)
+## [2.1.0](https://github.com/ringcentral/juno/compare/juno-core-v2.0.4...juno-core-v2.1.0) (2022-03-09)
 
 ### Features
 
-* **RCUI-691:** [Chip] support outlined variant ([4a27b80](https://git.ringcentral.com/RCUI/rcui/commit/4a27b803a018afb984ac533321ba84eaf95e8744))
+* **RCUI-691:** [Chip] support outlined variant ([4a27b80](https://github.com/ringcentral/juno/commit/4a27b803a018afb984ac533321ba84eaf95e8744))
 
 
 ### Bug Fixes
 
-* **juno-core:** [Menu] re-export RcMenuOnCloseReasonsType ([cc002cc](https://git.ringcentral.com/RCUI/rcui/commit/cc002cc18a339bb66ee38f7780a8816883c7fab1))
-* **RCUI-690:** [DatePicker] fix DatePicker error when RcThemeProvider are provided `prefixGlobalClass` prop ([701e945](https://git.ringcentral.com/RCUI/rcui/commit/701e9456c643e6938b651cd0b10c0f4a236c1db8))
+* **juno-core:** [Menu] re-export RcMenuOnCloseReasonsType ([cc002cc](https://github.com/ringcentral/juno/commit/cc002cc18a339bb66ee38f7780a8816883c7fab1))
+* **RCUI-690:** [DatePicker] fix DatePicker error when RcThemeProvider are provided `prefixGlobalClass` prop ([701e945](https://github.com/ringcentral/juno/commit/701e9456c643e6938b651cd0b10c0f4a236c1db8))
 
-### [2.0.3](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.0.2...juno-core-v2.0.3) (2022-02-28)
-
-
-### Bug Fixes
-
-* **RCUI-690:** [DatePicker] fix DatePicker error when RcThemeProvider are provided `prefixGlobalClass` prop ([701e945](https://git.ringcentral.com/RCUI/rcui/commit/701e9456c643e6938b651cd0b10c0f4a236c1db8))
-
-### [2.0.2](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.0.1...juno-core-v2.0.2) (2022-02-22)
+### [2.0.3](https://github.com/ringcentral/juno/compare/juno-core-v2.0.2...juno-core-v2.0.3) (2022-02-28)
 
 
 ### Bug Fixes
 
-* **RCUI-685:** fix Downshift SuggestionList position in safari ([85d88fc](https://git.ringcentral.com/RCUI/rcui/commit/85d88fc91d251fa78e7aee7f302af558dfed9bfd))
+* **RCUI-690:** [DatePicker] fix DatePicker error when RcThemeProvider are provided `prefixGlobalClass` prop ([701e945](https://github.com/ringcentral/juno/commit/701e9456c643e6938b651cd0b10c0f4a236c1db8))
 
-### [2.0.1](https://git.ringcentral.com/RCUI/rcui/compare/juno-core-v2.0.0...juno-core-v2.0.1) (2022-02-21)
+### [2.0.2](https://github.com/ringcentral/juno/compare/juno-core-v2.0.1...juno-core-v2.0.2) (2022-02-22)
 
 
 ### Bug Fixes
 
-* **RCUI-688:** [Tabs] [Tabs] fix tabs children change not re-render issue ([61162d1](https://git.ringcentral.com/RCUI/rcui/commit/61162d17118f816dbf3b9c551bac4409d60e1655))
+* **RCUI-685:** fix Downshift SuggestionList position in safari ([85d88fc](https://github.com/ringcentral/juno/commit/85d88fc91d251fa78e7aee7f302af558dfed9bfd))
+
+### [2.0.1](https://github.com/ringcentral/juno/compare/juno-core-v2.0.0...juno-core-v2.0.1) (2022-02-21)
+
+
+### Bug Fixes
+
+* **RCUI-688:** [Tabs] [Tabs] fix tabs children change not re-render issue ([61162d1](https://github.com/ringcentral/juno/commit/61162d17118f816dbf3b9c551bac4409d60e1655))
 
 ## 2.0.0 (2022-02-21)
 
 
 ### Features
 
-* **RCUI-662:** [DetachedWindow] remove  deprecated props `replace` ([b556480](https://git.ringcentral.com/RCUI/rcui/commit/b5564802e9fb8b930fbed67b460a3e62bd8a837e))
-* **RCUI-662:** [Monorepo] migrate to monorepo ([ab22994](https://git.ringcentral.com/RCUI/rcui/commit/ab229945b867f8248062ceeca15e5076bf685a9d))
+* **RCUI-662:** [DetachedWindow] remove  deprecated props `replace` ([b556480](https://github.com/ringcentral/juno/commit/b5564802e9fb8b930fbed67b460a3e62bd8a837e))
+* **RCUI-662:** [Monorepo] migrate to monorepo ([ab22994](https://github.com/ringcentral/juno/commit/ab229945b867f8248062ceeca15e5076bf685a9d))
 
 
 ### Bug Fixes
 
-* **RCUI-684:** [juno-core] add `process.env.NODE_ENV !== 'production'` to prevent production build contain not need code ([8317689](https://git.ringcentral.com/RCUI/rcui/commit/83176894011f9cdb7bc76d6ead12d4839a01f2cd))
-* **RCUI-686:** [Text] fix title issue check, let user can set null to cancel title ([dc95b27](https://git.ringcentral.com/RCUI/rcui/commit/dc95b273707401ce9acf5979b6cf24e21156af7e))
+* **RCUI-684:** [juno-core] add `process.env.NODE_ENV !== 'production'` to prevent production build contain not need code ([8317689](https://github.com/ringcentral/juno/commit/83176894011f9cdb7bc76d6ead12d4839a01f2cd))
+* **RCUI-686:** [Text] fix title issue check, let user can set null to cancel title ([dc95b27](https://github.com/ringcentral/juno/commit/dc95b273707401ce9acf5979b6cf24e21156af7e))
 
-### [1.12.6](https://git.ringcentral.com/RCUI/rcui/compare/1.12.5...1.12.6) (2022-02-09)
+### [1.12.6](https://github.com/ringcentral/juno/compare/1.12.5...1.12.6) (2022-02-09)
 
 
 ### ⚠ BREAKING CHANGES
@@ -1002,16 +1002,16 @@ renderOption={(
 
 ### Features
 
-* **RCUI-667:** [AppBar] remove min-width ([149d73c](https://git.ringcentral.com/RCUI/rcui/commit/149d73c9e21c60a48024d2cdb5c0027613c265a6))
-* **RCUI-667:** fix current day styles ([0c33f55](https://git.ringcentral.com/RCUI/rcui/commit/0c33f559797e2bb8c9992a35c3b542d50465d342))
-* **RCUI-667:** support default picker value; remove prop `times` ([35070fc](https://git.ringcentral.com/RCUI/rcui/commit/35070fc587e8870fa9b60b6ce27ffc1a64ec6747))
+* **RCUI-667:** [AppBar] remove min-width ([149d73c](https://github.com/ringcentral/juno/commit/149d73c9e21c60a48024d2cdb5c0027613c265a6))
+* **RCUI-667:** fix current day styles ([0c33f55](https://github.com/ringcentral/juno/commit/0c33f559797e2bb8c9992a35c3b542d50465d342))
+* **RCUI-667:** support default picker value; remove prop `times` ([35070fc](https://github.com/ringcentral/juno/commit/35070fc587e8870fa9b60b6ce27ffc1a64ec6747))
 
 
 ### Bug Fixes
 
-* **RCUI-667:** [storybook] fix story name ([8b88a09](https://git.ringcentral.com/RCUI/rcui/commit/8b88a09fd57a133205c400925192f68ab2cd9476))
+* **RCUI-667:** [storybook] fix story name ([8b88a09](https://github.com/ringcentral/juno/commit/8b88a09fd57a133205c400925192f68ab2cd9476))
 
-### [1.12.5](https://git.ringcentral.com/RCUI/rcui/compare/1.12.4...1.12.5) (2022-01-27)
+### [1.12.5](https://github.com/ringcentral/juno/compare/1.12.4...1.12.5) (2022-01-27)
 
 
 ### ⚠ BREAKING CHANGES
@@ -1020,21 +1020,21 @@ renderOption={(
 
 ### Features
 
-* **RCUI-678:** [ThemeProvider] remove `RcSubThemeProvider` and make `RcThemeProvider` support nesting ([948061c](https://git.ringcentral.com/RCUI/rcui/commit/948061c46aca67441b63917fe88f2a1d6096e68b))
-* **RCUI-681:** [a11y] Convert role none presentation to presentation ([54758ef](https://git.ringcentral.com/RCUI/rcui/commit/54758ef4172417978460eb18371516338ed507dc))
-* **RCUI-681:** update icon ([834df67](https://git.ringcentral.com/RCUI/rcui/commit/834df67bd6b6e82e65c7e28bc11df8e4a40b141d))
+* **RCUI-678:** [ThemeProvider] remove `RcSubThemeProvider` and make `RcThemeProvider` support nesting ([948061c](https://github.com/ringcentral/juno/commit/948061c46aca67441b63917fe88f2a1d6096e68b))
+* **RCUI-681:** [a11y] Convert role none presentation to presentation ([54758ef](https://github.com/ringcentral/juno/commit/54758ef4172417978460eb18371516338ed507dc))
+* **RCUI-681:** update icon ([834df67](https://github.com/ringcentral/juno/commit/834df67bd6b6e82e65c7e28bc11df8e4a40b141d))
 
 
 ### Bug Fixes
 
-* **RCUI-679:** [Textarea] remove not support `variant` prop ([356875f](https://git.ringcentral.com/RCUI/rcui/commit/356875fa1a338340bfaab63edd092be94c954f05))
-* **RCUI-679:** [TextField] fix outline variant multiline height not auto issue ([241a871](https://git.ringcentral.com/RCUI/rcui/commit/241a871cf1852a1108258e98cec589de43726d7e))
-* **RCUI-679:** [TextField] outline mode remove non multiline padding issue ([32ae13f](https://git.ringcentral.com/RCUI/rcui/commit/32ae13fa0246ea124fd4764a30b4593e810c352f))
-* **RCUI-682:** [Select] fix defaultValue not work issue, and open some miss props ([aeb88a8](https://git.ringcentral.com/RCUI/rcui/commit/aeb88a88dc2070267f1b3c177e0d0f6fa796b530))
-* **RCUI-682:** [Select] fix Select MenuProps not working issue ([1db387b](https://git.ringcentral.com/RCUI/rcui/commit/1db387b7bbc35c5c3ad9cefcb1472c6afd97b86d))
-* **RCUI-683:** [PlainSelect] re-export miss PlainSelect ([c499c94](https://git.ringcentral.com/RCUI/rcui/commit/c499c947f9298af6d49c3b1f65425891b2aad1f6))
+* **RCUI-679:** [Textarea] remove not support `variant` prop ([356875f](https://github.com/ringcentral/juno/commit/356875fa1a338340bfaab63edd092be94c954f05))
+* **RCUI-679:** [TextField] fix outline variant multiline height not auto issue ([241a871](https://github.com/ringcentral/juno/commit/241a871cf1852a1108258e98cec589de43726d7e))
+* **RCUI-679:** [TextField] outline mode remove non multiline padding issue ([32ae13f](https://github.com/ringcentral/juno/commit/32ae13fa0246ea124fd4764a30b4593e810c352f))
+* **RCUI-682:** [Select] fix defaultValue not work issue, and open some miss props ([aeb88a8](https://github.com/ringcentral/juno/commit/aeb88a88dc2070267f1b3c177e0d0f6fa796b530))
+* **RCUI-682:** [Select] fix Select MenuProps not working issue ([1db387b](https://github.com/ringcentral/juno/commit/1db387b7bbc35c5c3ad9cefcb1472c6afd97b86d))
+* **RCUI-683:** [PlainSelect] re-export miss PlainSelect ([c499c94](https://github.com/ringcentral/juno/commit/c499c947f9298af6d49c3b1f65425891b2aad1f6))
 
-### [1.12.4](https://git.ringcentral.com/RCUI/rcui/compare/1.12.3...1.12.4) (2021-12-27)
+### [1.12.4](https://github.com/ringcentral/juno/compare/1.12.3...1.12.4) (2021-12-27)
 
 
 ### ⚠ BREAKING CHANGES
@@ -1043,72 +1043,72 @@ renderOption={(
 
 ### Features
 
-* **RCUI-672:** [ThemeProvider][jss] support prefix class ([29c6fbe](https://git.ringcentral.com/RCUI/rcui/commit/29c6fbe377518374cff89d69ddc6bf9cf12f3748))
-* **RCUI-673:** [Fix runtime error when render in next.js] detect window existed ([e44ccb7](https://git.ringcentral.com/RCUI/rcui/commit/e44ccb7d43d16a488b4298fa88325038b0e8172d))
-* **RCUI-675:** [useEver] provide hook for return `true` when the value ever to be `you want value` once. ([e288f84](https://git.ringcentral.com/RCUI/rcui/commit/e288f84417df2504e6fa46471957a2393cb69abe))
-* **RCUI-675:** [SplitButton] improve the render performance ([e288f84](https://git.ringcentral.com/RCUI/rcui/commit/e288f84417df2504e6fa46471957a2393cb69abe))
-* **RCUI-676:** [Downshift] support indexInOwnGroup field ([556eeb3](https://git.ringcentral.com/RCUI/rcui/commit/556eeb3ce69f03ec7c808c5a7a79fabc47491296))
-* **RCUI-677:** [Type] improve PortalManager and SubThemeProvider type ([ff85a94](https://git.ringcentral.com/RCUI/rcui/commit/ff85a94efc803fd8e403fd5cde9e3d57dbe9a0fb))
+* **RCUI-672:** [ThemeProvider][jss] support prefix class ([29c6fbe](https://github.com/ringcentral/juno/commit/29c6fbe377518374cff89d69ddc6bf9cf12f3748))
+* **RCUI-673:** [Fix runtime error when render in next.js] detect window existed ([e44ccb7](https://github.com/ringcentral/juno/commit/e44ccb7d43d16a488b4298fa88325038b0e8172d))
+* **RCUI-675:** [useEver] provide hook for return `true` when the value ever to be `you want value` once. ([e288f84](https://github.com/ringcentral/juno/commit/e288f84417df2504e6fa46471957a2393cb69abe))
+* **RCUI-675:** [SplitButton] improve the render performance ([e288f84](https://github.com/ringcentral/juno/commit/e288f84417df2504e6fa46471957a2393cb69abe))
+* **RCUI-676:** [Downshift] support indexInOwnGroup field ([556eeb3](https://github.com/ringcentral/juno/commit/556eeb3ce69f03ec7c808c5a7a79fabc47491296))
+* **RCUI-677:** [Type] improve PortalManager and SubThemeProvider type ([ff85a94](https://github.com/ringcentral/juno/commit/ff85a94efc803fd8e403fd5cde9e3d57dbe9a0fb))
 
 
 ### Bug Fixes
 
-* **RCUI-674:** [TimePicker] add description for time picker utils, and re-export that ([efe6d8e](https://git.ringcentral.com/RCUI/rcui/commit/efe6d8ee057891ea85e8cb0990d06ec34f819ed3))
-* **RCUI-674:** [TimePicker] fix TimePicker text be empty when is 00:00 ([ff498ce](https://git.ringcentral.com/RCUI/rcui/commit/ff498ce07c4a2594a30c0612e997652b4e9bc496))
-* **RCUI-674:** [TimePicker] support dateMode type generic and emit `null` when click clear ([9253eba](https://git.ringcentral.com/RCUI/rcui/commit/9253eba0ca59e2cd81a1754e0a39b6851763809a))
+* **RCUI-674:** [TimePicker] add description for time picker utils, and re-export that ([efe6d8e](https://github.com/ringcentral/juno/commit/efe6d8ee057891ea85e8cb0990d06ec34f819ed3))
+* **RCUI-674:** [TimePicker] fix TimePicker text be empty when is 00:00 ([ff498ce](https://github.com/ringcentral/juno/commit/ff498ce07c4a2594a30c0612e997652b4e9bc496))
+* **RCUI-674:** [TimePicker] support dateMode type generic and emit `null` when click clear ([9253eba](https://github.com/ringcentral/juno/commit/9253eba0ca59e2cd81a1754e0a39b6851763809a))
 
-### [1.12.3](https://git.ringcentral.com/RCUI/rcui/compare/1.12.2...1.12.3) (2021-12-16)
+### [1.12.3](https://github.com/ringcentral/juno/compare/1.12.2...1.12.3) (2021-12-16)
 
 
 ### Features
 
-* **RCUI-665:** [PortalManager] updateProps support 'function' param ([976fdec](https://git.ringcentral.com/RCUI/rcui/commit/976fdec18f993490e93630ef6552fbd703a0254e))
-* **RCUI-665:** [Webstorm] add .idea ([8f4ace9](https://git.ringcentral.com/RCUI/rcui/commit/8f4ace90134c6b08c20b968e4bada0018cbc13da))
-* **RCUI-665:** [withTooltip] fix withTooltip type error ([f80522e](https://git.ringcentral.com/RCUI/rcui/commit/f80522e102f79a532aa1d12e492a4fa22fe9c0e3))
-* **RCUI-666:** [Downshift] provide autocomplete mode default filter and export inputChanged state for outside use ([f4d8951](https://git.ringcentral.com/RCUI/rcui/commit/f4d89519030615b816dde73baec9682d1a1d854a))
-* **RCUI-666:** [SuggestionList] support useSuggestionList ([f4897e0](https://git.ringcentral.com/RCUI/rcui/commit/f4897e0a25669256f433bdd049c74ecb0713bac8))
-* **RCUI-666:** [useSuggestionList, useDownshift] export id ([f72c373](https://git.ringcentral.com/RCUI/rcui/commit/f72c3737204f1a30ac452cfe17fd827cf2cdfa9a))
-* **RCUI-669:** [SubMenu] added ability to set placement via props ([8c853a8](https://git.ringcentral.com/RCUI/rcui/commit/8c853a817709f503d4081ee071e1cb069bb380e1))
-* **RCUI-670:** [Card] rename type name ([a4168f7](https://git.ringcentral.com/RCUI/rcui/commit/a4168f74e9388e6dc1e0a50db1cf3e93a88b81c1))
-* **RCUI-670:** [Chid] support `color` and `focused` prop ([3450df9](https://git.ringcentral.com/RCUI/rcui/commit/3450df9cb9f50e814300e0f5d8165f939b89b5b6))
-* **RCUI-670:** [TextField, Select, Downshift] support color prop ([39bbd2b](https://git.ringcentral.com/RCUI/rcui/commit/39bbd2b8377c2661e6d44787813910d3e6d0290e))
-* **RCUI-670:** [TextField] color follow color prop in normal status ([c30409b](https://git.ringcentral.com/RCUI/rcui/commit/c30409bb1e617395555332d26d3fc7463e2fb009))
+* **RCUI-665:** [PortalManager] updateProps support 'function' param ([976fdec](https://github.com/ringcentral/juno/commit/976fdec18f993490e93630ef6552fbd703a0254e))
+* **RCUI-665:** [Webstorm] add .idea ([8f4ace9](https://github.com/ringcentral/juno/commit/8f4ace90134c6b08c20b968e4bada0018cbc13da))
+* **RCUI-665:** [withTooltip] fix withTooltip type error ([f80522e](https://github.com/ringcentral/juno/commit/f80522e102f79a532aa1d12e492a4fa22fe9c0e3))
+* **RCUI-666:** [Downshift] provide autocomplete mode default filter and export inputChanged state for outside use ([f4d8951](https://github.com/ringcentral/juno/commit/f4d89519030615b816dde73baec9682d1a1d854a))
+* **RCUI-666:** [SuggestionList] support useSuggestionList ([f4897e0](https://github.com/ringcentral/juno/commit/f4897e0a25669256f433bdd049c74ecb0713bac8))
+* **RCUI-666:** [useSuggestionList, useDownshift] export id ([f72c373](https://github.com/ringcentral/juno/commit/f72c3737204f1a30ac452cfe17fd827cf2cdfa9a))
+* **RCUI-669:** [SubMenu] added ability to set placement via props ([8c853a8](https://github.com/ringcentral/juno/commit/8c853a817709f503d4081ee071e1cb069bb380e1))
+* **RCUI-670:** [Card] rename type name ([a4168f7](https://github.com/ringcentral/juno/commit/a4168f74e9388e6dc1e0a50db1cf3e93a88b81c1))
+* **RCUI-670:** [Chid] support `color` and `focused` prop ([3450df9](https://github.com/ringcentral/juno/commit/3450df9cb9f50e814300e0f5d8165f939b89b5b6))
+* **RCUI-670:** [TextField, Select, Downshift] support color prop ([39bbd2b](https://github.com/ringcentral/juno/commit/39bbd2b8377c2661e6d44787813910d3e6d0290e))
+* **RCUI-670:** [TextField] color follow color prop in normal status ([c30409b](https://github.com/ringcentral/juno/commit/c30409bb1e617395555332d26d3fc7463e2fb009))
 
 
 ### Bug Fixes
 
-* **RCUI-666:** [Downshift] fix inputChanged type to optional ([a4847bd](https://git.ringcentral.com/RCUI/rcui/commit/a4847bd8f21bb836d150f17df609e65352a06edf))
-* **RCUI-666:** [Downshift] fix padding issue with ([94c66ae](https://git.ringcentral.com/RCUI/rcui/commit/94c66ae967b538063e9b404f20b9c7b63e97fa66))
-* **RCUI-666:** [Downshift] support groupDefaultExpanded and fill miss type ([d59ea5b](https://git.ringcentral.com/RCUI/rcui/commit/d59ea5b23c1ac949a70976b3cb424a2488b47c80))
-* **RCUI-666:** [useKeyboardMoveFocus] fix when focusedIndex is -1 and move to 0 not move issue ([77e21a4](https://git.ringcentral.com/RCUI/rcui/commit/77e21a4a8e48b7c64413edc1340be622a03fbc20))
-* **RCUI-670:** [Button] fix button color prop to RcPaletteProp ([51ec458](https://git.ringcentral.com/RCUI/rcui/commit/51ec458016a725218eb43aa0bd9bb0d400d94f3f))
-* **RCUI-670:** [PlainSelect] fix wrapper with width issue ([0d654ad](https://git.ringcentral.com/RCUI/rcui/commit/0d654ad6c4bf83f06ac7ed7ea4380dd0737c85b9))
-* **RCUI-671:** [TimePicker] add Math.floor check for minute ([bb36c40](https://git.ringcentral.com/RCUI/rcui/commit/bb36c408a128669a56e64b4b76829063200704c1))
-* **RCUI-671:** [TimePicker] remove time number disabled check, always be clickable ([e637df8](https://git.ringcentral.com/RCUI/rcui/commit/e637df842c979c7355557fe5d7da733835e32b8c))
+* **RCUI-666:** [Downshift] fix inputChanged type to optional ([a4847bd](https://github.com/ringcentral/juno/commit/a4847bd8f21bb836d150f17df609e65352a06edf))
+* **RCUI-666:** [Downshift] fix padding issue with ([94c66ae](https://github.com/ringcentral/juno/commit/94c66ae967b538063e9b404f20b9c7b63e97fa66))
+* **RCUI-666:** [Downshift] support groupDefaultExpanded and fill miss type ([d59ea5b](https://github.com/ringcentral/juno/commit/d59ea5b23c1ac949a70976b3cb424a2488b47c80))
+* **RCUI-666:** [useKeyboardMoveFocus] fix when focusedIndex is -1 and move to 0 not move issue ([77e21a4](https://github.com/ringcentral/juno/commit/77e21a4a8e48b7c64413edc1340be622a03fbc20))
+* **RCUI-670:** [Button] fix button color prop to RcPaletteProp ([51ec458](https://github.com/ringcentral/juno/commit/51ec458016a725218eb43aa0bd9bb0d400d94f3f))
+* **RCUI-670:** [PlainSelect] fix wrapper with width issue ([0d654ad](https://github.com/ringcentral/juno/commit/0d654ad6c4bf83f06ac7ed7ea4380dd0737c85b9))
+* **RCUI-671:** [TimePicker] add Math.floor check for minute ([bb36c40](https://github.com/ringcentral/juno/commit/bb36c408a128669a56e64b4b76829063200704c1))
+* **RCUI-671:** [TimePicker] remove time number disabled check, always be clickable ([e637df8](https://github.com/ringcentral/juno/commit/e637df842c979c7355557fe5d7da733835e32b8c))
 
-### [1.12.2](https://git.ringcentral.com/RCUI/rcui/compare/1.12.1...1.12.2) (2021-12-11)
+### [1.12.2](https://github.com/ringcentral/juno/compare/1.12.1...1.12.2) (2021-12-11)
 
 
 ### Bug Fixes
 
-* **RCUI-664:** [Dialog, PopupBox, Snackbar] fix error TransitionProps combine, and remove `disableBackdropClick` ([965a606](https://git.ringcentral.com/RCUI/rcui/commit/965a6068ba2cad242f7c449f87369fa9cbe016c9))
+* **RCUI-664:** [Dialog, PopupBox, Snackbar] fix error TransitionProps combine, and remove `disableBackdropClick` ([965a606](https://github.com/ringcentral/juno/commit/965a6068ba2cad242f7c449f87369fa9cbe016c9))
 
-### [1.12.1](https://git.ringcentral.com/RCUI/rcui/compare/1.12.0...1.12.1) (2021-12-10)
+### [1.12.1](https://github.com/ringcentral/juno/compare/1.12.0...1.12.1) (2021-12-10)
 
 
 ### Features
 
-* **RCUI-647:** [Icon] update icon ([379f8c9](https://git.ringcentral.com/RCUI/rcui/commit/379f8c9c383d245df8eb7201b2c041b061352596))
-* **RCUI-660:** [Icon] update icon (Description) ([0ff9f4f](https://git.ringcentral.com/RCUI/rcui/commit/0ff9f4f926495d4a0a415e69d27b26e1b0791b6e))
-* **RCUI-661:** [Hooks] implement controllable interval ([354d03e](https://git.ringcentral.com/RCUI/rcui/commit/354d03ef490c629638ff3359fbd343f9b1e5ba23))
+* **RCUI-647:** [Icon] update icon ([379f8c9](https://github.com/ringcentral/juno/commit/379f8c9c383d245df8eb7201b2c041b061352596))
+* **RCUI-660:** [Icon] update icon (Description) ([0ff9f4f](https://github.com/ringcentral/juno/commit/0ff9f4f926495d4a0a415e69d27b26e1b0791b6e))
+* **RCUI-661:** [Hooks] implement controllable interval ([354d03e](https://github.com/ringcentral/juno/commit/354d03ef490c629638ff3359fbd343f9b1e5ba23))
 
 
 ### Bug Fixes
 
-* **Project:** [DialPad] add miss export ([61e2791](https://git.ringcentral.com/RCUI/rcui/commit/61e279157707806d704528e34e0feefed4241cf4))
-* **RCUI-663:** [TextField] fix type with rows ([f67d15f](https://git.ringcentral.com/RCUI/rcui/commit/f67d15f2bb583298c835d899f0f81a4e2128153a))
+* **Project:** [DialPad] add miss export ([61e2791](https://github.com/ringcentral/juno/commit/61e279157707806d704528e34e0feefed4241cf4))
+* **RCUI-663:** [TextField] fix type with rows ([f67d15f](https://github.com/ringcentral/juno/commit/f67d15f2bb583298c835d899f0f81a4e2128153a))
 
-## [1.12.0](https://git.ringcentral.com/RCUI/rcui/compare/1.11.5...1.12.0) (2021-11-23)
+## [1.12.0](https://github.com/ringcentral/juno/compare/1.11.5...1.12.0) (2021-11-23)
 
 
 ### ⚠ BREAKING CHANGES
@@ -1125,29 +1125,29 @@ renderOption={(
 
 ### Features
 
-* **RCUI-649:** [ThemeProvider] subThemeProvider use parent theme as default when not pass theme into ([ddc31a1](https://git.ringcentral.com/RCUI/rcui/commit/ddc31a1616ab687b0214d085818f3f4c5a388bcc))
-* **RCUI-652:** [AppBar] cleanup AppBar ([61bb924](https://git.ringcentral.com/RCUI/rcui/commit/61bb92492f1f64b3a4dd95a30abdbb437fd54c22))
-* **RCUI-654:** [InlineEditable] change default word break rules like textarea ([d2adcba](https://git.ringcentral.com/RCUI/rcui/commit/d2adcba78e90db00515e7e429019199f93820dae))
-* **RCUI-655:** [Package] update mui version to v4.12.3 for prepare upgrade to v5 ([ada509c](https://git.ringcentral.com/RCUI/rcui/commit/ada509caccb303b717a96fdc69f2b723dec03e8c))
-* **RCUI-657:** [Link] support underline prop ([f984f64](https://git.ringcentral.com/RCUI/rcui/commit/f984f645f07cf914bdc22ea089481ca707013080))
+* **RCUI-649:** [ThemeProvider] subThemeProvider use parent theme as default when not pass theme into ([ddc31a1](https://github.com/ringcentral/juno/commit/ddc31a1616ab687b0214d085818f3f4c5a388bcc))
+* **RCUI-652:** [AppBar] cleanup AppBar ([61bb924](https://github.com/ringcentral/juno/commit/61bb92492f1f64b3a4dd95a30abdbb437fd54c22))
+* **RCUI-654:** [InlineEditable] change default word break rules like textarea ([d2adcba](https://github.com/ringcentral/juno/commit/d2adcba78e90db00515e7e429019199f93820dae))
+* **RCUI-655:** [Package] update mui version to v4.12.3 for prepare upgrade to v5 ([ada509c](https://github.com/ringcentral/juno/commit/ada509caccb303b717a96fdc69f2b723dec03e8c))
+* **RCUI-657:** [Link] support underline prop ([f984f64](https://github.com/ringcentral/juno/commit/f984f645f07cf914bdc22ea089481ca707013080))
 
 
 ### Bug Fixes
 
-* **Project:** [Package] fix type for ready to upgrade type to latest styled-components ([6666cfb](https://git.ringcentral.com/RCUI/rcui/commit/6666cfb114181b391e8478cfe12012a29422ee1c))
-* **RCUI-651:** [Tag] remove not need `margin-left` ([e6d378e](https://git.ringcentral.com/RCUI/rcui/commit/e6d378e803d11af960c5987b6ffb632cf84c336b))
-* **RCUI-654:** [InlineEditable] change 'anwhere' to 'anywhere' ([e2d1d5c](https://git.ringcentral.com/RCUI/rcui/commit/e2d1d5ca8a067192d93a9f3d274c591efeef42da))
-* **RCUI-655:** [AppBar] use RcAppBarProps ([9527047](https://git.ringcentral.com/RCUI/rcui/commit/9527047ad84c3f6e6d5bdc15a46b499987a6bd7e))
-* **RCUI-655:** [Badge] rename circle and rectangle to 'circular' and 'rectangular' ([c4581f6](https://git.ringcentral.com/RCUI/rcui/commit/c4581f6d2c278158eb77666eb7a88dd1a5f29d0d))
-* **RCUI-655:** [createTheme] rename mud createTheme to createTheme, fade to alpha ([cef352d](https://git.ringcentral.com/RCUI/rcui/commit/cef352ddd88cbc6090d9f41010901c1f12ba4138))
-* **RCUI-655:** [Dialog, Snackbar, TimePicker, VirtualizedMenu] move `onXXX` inside `TransitionProps` ([0bb80e0](https://git.ringcentral.com/RCUI/rcui/commit/0bb80e0415264fa5b4065f03bcac47740e6bf163))
-* **RCUI-655:** [Icon] change icon dep on juno main library to @material-ui/core ([c41c964](https://git.ringcentral.com/RCUI/rcui/commit/c41c9646050a43da1620fe324eafd68cfc306cbf))
-* **RCUI-655:** [MenuList] pick forget props `maxHeight` ([cb6df9b](https://git.ringcentral.com/RCUI/rcui/commit/cb6df9b8f16b3a6b31bc0de134928441b4679782))
-* **RCUI-655:** [Stepper] remove StepContent temporary, because we not support orientation vertical ([32fa9ad](https://git.ringcentral.com/RCUI/rcui/commit/32fa9add92a0eeb916357fbb3e16201a5568cb4f))
-* **RCUI-655:** [TablePagination] change deprecated props to new name onChangePage, onChangeRowsPerPage ([f8a5704](https://git.ringcentral.com/RCUI/rcui/commit/f8a5704773ea7598967ef4d0ce53d8c9e3bf49c6))
-* **RCUI-655:** [TextField, Textarea, Select] remove rowsMax and rows, and switch to new props minRows, maxRows ([66f9b69](https://git.ringcentral.com/RCUI/rcui/commit/66f9b691d8423b7a92013c350814d23c7173fc31))
+* **Project:** [Package] fix type for ready to upgrade type to latest styled-components ([6666cfb](https://github.com/ringcentral/juno/commit/6666cfb114181b391e8478cfe12012a29422ee1c))
+* **RCUI-651:** [Tag] remove not need `margin-left` ([e6d378e](https://github.com/ringcentral/juno/commit/e6d378e803d11af960c5987b6ffb632cf84c336b))
+* **RCUI-654:** [InlineEditable] change 'anwhere' to 'anywhere' ([e2d1d5c](https://github.com/ringcentral/juno/commit/e2d1d5ca8a067192d93a9f3d274c591efeef42da))
+* **RCUI-655:** [AppBar] use RcAppBarProps ([9527047](https://github.com/ringcentral/juno/commit/9527047ad84c3f6e6d5bdc15a46b499987a6bd7e))
+* **RCUI-655:** [Badge] rename circle and rectangle to 'circular' and 'rectangular' ([c4581f6](https://github.com/ringcentral/juno/commit/c4581f6d2c278158eb77666eb7a88dd1a5f29d0d))
+* **RCUI-655:** [createTheme] rename mud createTheme to createTheme, fade to alpha ([cef352d](https://github.com/ringcentral/juno/commit/cef352ddd88cbc6090d9f41010901c1f12ba4138))
+* **RCUI-655:** [Dialog, Snackbar, TimePicker, VirtualizedMenu] move `onXXX` inside `TransitionProps` ([0bb80e0](https://github.com/ringcentral/juno/commit/0bb80e0415264fa5b4065f03bcac47740e6bf163))
+* **RCUI-655:** [Icon] change icon dep on juno main library to @material-ui/core ([c41c964](https://github.com/ringcentral/juno/commit/c41c9646050a43da1620fe324eafd68cfc306cbf))
+* **RCUI-655:** [MenuList] pick forget props `maxHeight` ([cb6df9b](https://github.com/ringcentral/juno/commit/cb6df9b8f16b3a6b31bc0de134928441b4679782))
+* **RCUI-655:** [Stepper] remove StepContent temporary, because we not support orientation vertical ([32fa9ad](https://github.com/ringcentral/juno/commit/32fa9add92a0eeb916357fbb3e16201a5568cb4f))
+* **RCUI-655:** [TablePagination] change deprecated props to new name onChangePage, onChangeRowsPerPage ([f8a5704](https://github.com/ringcentral/juno/commit/f8a5704773ea7598967ef4d0ce53d8c9e3bf49c6))
+* **RCUI-655:** [TextField, Textarea, Select] remove rowsMax and rows, and switch to new props minRows, maxRows ([66f9b69](https://github.com/ringcentral/juno/commit/66f9b691d8423b7a92013c350814d23c7173fc31))
 
-### [1.11.6](https://git.ringcentral.com/RCUI/rcui/compare/1.11.5...1.11.6) (2021-11-20)
+### [1.11.6](https://github.com/ringcentral/juno/compare/1.11.5...1.11.6) (2021-11-20)
 
 
 ### ⚠ BREAKING CHANGES
@@ -1159,28 +1159,28 @@ renderOption={(
 
 ### Features
 
-* **RCUI-649:** [ThemeProvider] subThemeProvider use parent theme as default when not pass theme into ([ddc31a1](https://git.ringcentral.com/RCUI/rcui/commit/ddc31a1616ab687b0214d085818f3f4c5a388bcc))
-* **RCUI-652:** [AppBar] cleanup AppBar ([61bb924](https://git.ringcentral.com/RCUI/rcui/commit/61bb92492f1f64b3a4dd95a30abdbb437fd54c22))
-* **RCUI-654:** [InlineEditable] change default word break rules like textarea ([d2adcba](https://git.ringcentral.com/RCUI/rcui/commit/d2adcba78e90db00515e7e429019199f93820dae))
-* **RCUI-655:** [Package] update mui version to v4.12.3 for prepare upgrade to v5 ([ada509c](https://git.ringcentral.com/RCUI/rcui/commit/ada509caccb303b717a96fdc69f2b723dec03e8c))
-* **RCUI-657:** [Link] support underline prop ([f984f64](https://git.ringcentral.com/RCUI/rcui/commit/f984f645f07cf914bdc22ea089481ca707013080))
+* **RCUI-649:** [ThemeProvider] subThemeProvider use parent theme as default when not pass theme into ([ddc31a1](https://github.com/ringcentral/juno/commit/ddc31a1616ab687b0214d085818f3f4c5a388bcc))
+* **RCUI-652:** [AppBar] cleanup AppBar ([61bb924](https://github.com/ringcentral/juno/commit/61bb92492f1f64b3a4dd95a30abdbb437fd54c22))
+* **RCUI-654:** [InlineEditable] change default word break rules like textarea ([d2adcba](https://github.com/ringcentral/juno/commit/d2adcba78e90db00515e7e429019199f93820dae))
+* **RCUI-655:** [Package] update mui version to v4.12.3 for prepare upgrade to v5 ([ada509c](https://github.com/ringcentral/juno/commit/ada509caccb303b717a96fdc69f2b723dec03e8c))
+* **RCUI-657:** [Link] support underline prop ([f984f64](https://github.com/ringcentral/juno/commit/f984f645f07cf914bdc22ea089481ca707013080))
 
 
 ### Bug Fixes
 
-* **RCUI-651:** [Tag] remove not need `margin-left` ([e6d378e](https://git.ringcentral.com/RCUI/rcui/commit/e6d378e803d11af960c5987b6ffb632cf84c336b))
-* **RCUI-654:** [InlineEditable] change 'anwhere' to 'anywhere' ([e2d1d5c](https://git.ringcentral.com/RCUI/rcui/commit/e2d1d5ca8a067192d93a9f3d274c591efeef42da))
-* **RCUI-655:** [AppBar] use RcAppBarProps ([9527047](https://git.ringcentral.com/RCUI/rcui/commit/9527047ad84c3f6e6d5bdc15a46b499987a6bd7e))
-* **RCUI-655:** [Badge] rename circle and rectangle to 'circular' and 'rectangular' ([c4581f6](https://git.ringcentral.com/RCUI/rcui/commit/c4581f6d2c278158eb77666eb7a88dd1a5f29d0d))
-* **RCUI-655:** [createTheme] rename mud createTheme to createTheme, fade to alpha ([cef352d](https://git.ringcentral.com/RCUI/rcui/commit/cef352ddd88cbc6090d9f41010901c1f12ba4138))
-* **RCUI-655:** [Dialog, Snackbar, TimePicker, VirtualizedMenu] move `onXXX` inside `TransitionProps` ([0bb80e0](https://git.ringcentral.com/RCUI/rcui/commit/0bb80e0415264fa5b4065f03bcac47740e6bf163))
-* **RCUI-655:** [Icon] change icon dep on juno main library to @material-ui/core ([c41c964](https://git.ringcentral.com/RCUI/rcui/commit/c41c9646050a43da1620fe324eafd68cfc306cbf))
-* **RCUI-655:** [MenuList] pick forget props `maxHeight` ([cb6df9b](https://git.ringcentral.com/RCUI/rcui/commit/cb6df9b8f16b3a6b31bc0de134928441b4679782))
-* **RCUI-655:** [Stepper] remove StepContent temporary, because we not support orientation vertical ([32fa9ad](https://git.ringcentral.com/RCUI/rcui/commit/32fa9add92a0eeb916357fbb3e16201a5568cb4f))
-* **RCUI-655:** [TablePagination] change deprecated props to new name onChangePage, onChangeRowsPerPage ([f8a5704](https://git.ringcentral.com/RCUI/rcui/commit/f8a5704773ea7598967ef4d0ce53d8c9e3bf49c6))
-* **RCUI-655:** [TextField, Textarea, Select] remove rowsMax and rows, and switch to new props minRows, maxRows ([66f9b69](https://git.ringcentral.com/RCUI/rcui/commit/66f9b691d8423b7a92013c350814d23c7173fc31))
+* **RCUI-651:** [Tag] remove not need `margin-left` ([e6d378e](https://github.com/ringcentral/juno/commit/e6d378e803d11af960c5987b6ffb632cf84c336b))
+* **RCUI-654:** [InlineEditable] change 'anwhere' to 'anywhere' ([e2d1d5c](https://github.com/ringcentral/juno/commit/e2d1d5ca8a067192d93a9f3d274c591efeef42da))
+* **RCUI-655:** [AppBar] use RcAppBarProps ([9527047](https://github.com/ringcentral/juno/commit/9527047ad84c3f6e6d5bdc15a46b499987a6bd7e))
+* **RCUI-655:** [Badge] rename circle and rectangle to 'circular' and 'rectangular' ([c4581f6](https://github.com/ringcentral/juno/commit/c4581f6d2c278158eb77666eb7a88dd1a5f29d0d))
+* **RCUI-655:** [createTheme] rename mud createTheme to createTheme, fade to alpha ([cef352d](https://github.com/ringcentral/juno/commit/cef352ddd88cbc6090d9f41010901c1f12ba4138))
+* **RCUI-655:** [Dialog, Snackbar, TimePicker, VirtualizedMenu] move `onXXX` inside `TransitionProps` ([0bb80e0](https://github.com/ringcentral/juno/commit/0bb80e0415264fa5b4065f03bcac47740e6bf163))
+* **RCUI-655:** [Icon] change icon dep on juno main library to @material-ui/core ([c41c964](https://github.com/ringcentral/juno/commit/c41c9646050a43da1620fe324eafd68cfc306cbf))
+* **RCUI-655:** [MenuList] pick forget props `maxHeight` ([cb6df9b](https://github.com/ringcentral/juno/commit/cb6df9b8f16b3a6b31bc0de134928441b4679782))
+* **RCUI-655:** [Stepper] remove StepContent temporary, because we not support orientation vertical ([32fa9ad](https://github.com/ringcentral/juno/commit/32fa9add92a0eeb916357fbb3e16201a5568cb4f))
+* **RCUI-655:** [TablePagination] change deprecated props to new name onChangePage, onChangeRowsPerPage ([f8a5704](https://github.com/ringcentral/juno/commit/f8a5704773ea7598967ef4d0ce53d8c9e3bf49c6))
+* **RCUI-655:** [TextField, Textarea, Select] remove rowsMax and rows, and switch to new props minRows, maxRows ([66f9b69](https://github.com/ringcentral/juno/commit/66f9b691d8423b7a92013c350814d23c7173fc31))
 
-### [1.11.6](https://git.ringcentral.com/RCUI/rcui/compare/1.11.5...1.11.6) (2021-11-20)
+### [1.11.6](https://github.com/ringcentral/juno/compare/1.11.5...1.11.6) (2021-11-20)
 
 
 ### ⚠ BREAKING CHANGES
@@ -1192,28 +1192,28 @@ renderOption={(
 
 ### Features
 
-* **RCUI-649:** [ThemeProvider] subThemeProvider use parent theme as default when not pass theme into ([ddc31a1](https://git.ringcentral.com/RCUI/rcui/commit/ddc31a1616ab687b0214d085818f3f4c5a388bcc))
-* **RCUI-652:** [AppBar] cleanup AppBar ([61bb924](https://git.ringcentral.com/RCUI/rcui/commit/61bb92492f1f64b3a4dd95a30abdbb437fd54c22))
-* **RCUI-654:** [InlineEditable] change default word break rules like textarea ([d2adcba](https://git.ringcentral.com/RCUI/rcui/commit/d2adcba78e90db00515e7e429019199f93820dae))
-* **RCUI-655:** [Package] update mui version to v4.12.3 for prepare upgrade to v5 ([ada509c](https://git.ringcentral.com/RCUI/rcui/commit/ada509caccb303b717a96fdc69f2b723dec03e8c))
-* **RCUI-657:** [Link] support underline prop ([f984f64](https://git.ringcentral.com/RCUI/rcui/commit/f984f645f07cf914bdc22ea089481ca707013080))
+* **RCUI-649:** [ThemeProvider] subThemeProvider use parent theme as default when not pass theme into ([ddc31a1](https://github.com/ringcentral/juno/commit/ddc31a1616ab687b0214d085818f3f4c5a388bcc))
+* **RCUI-652:** [AppBar] cleanup AppBar ([61bb924](https://github.com/ringcentral/juno/commit/61bb92492f1f64b3a4dd95a30abdbb437fd54c22))
+* **RCUI-654:** [InlineEditable] change default word break rules like textarea ([d2adcba](https://github.com/ringcentral/juno/commit/d2adcba78e90db00515e7e429019199f93820dae))
+* **RCUI-655:** [Package] update mui version to v4.12.3 for prepare upgrade to v5 ([ada509c](https://github.com/ringcentral/juno/commit/ada509caccb303b717a96fdc69f2b723dec03e8c))
+* **RCUI-657:** [Link] support underline prop ([f984f64](https://github.com/ringcentral/juno/commit/f984f645f07cf914bdc22ea089481ca707013080))
 
 
 ### Bug Fixes
 
-* **RCUI-651:** [Tag] remove not need `margin-left` ([e6d378e](https://git.ringcentral.com/RCUI/rcui/commit/e6d378e803d11af960c5987b6ffb632cf84c336b))
-* **RCUI-654:** [InlineEditable] change 'anwhere' to 'anywhere' ([e2d1d5c](https://git.ringcentral.com/RCUI/rcui/commit/e2d1d5ca8a067192d93a9f3d274c591efeef42da))
-* **RCUI-655:** [AppBar] use RcAppBarProps ([9527047](https://git.ringcentral.com/RCUI/rcui/commit/9527047ad84c3f6e6d5bdc15a46b499987a6bd7e))
-* **RCUI-655:** [Badge] rename circle and rectangle to 'circular' and 'rectangular' ([c4581f6](https://git.ringcentral.com/RCUI/rcui/commit/c4581f6d2c278158eb77666eb7a88dd1a5f29d0d))
-* **RCUI-655:** [createTheme] rename mud createTheme to createTheme, fade to alpha ([cef352d](https://git.ringcentral.com/RCUI/rcui/commit/cef352ddd88cbc6090d9f41010901c1f12ba4138))
-* **RCUI-655:** [Dialog, Snackbar, TimePicker, VirtualizedMenu] move `onXXX` inside `TransitionProps` ([0bb80e0](https://git.ringcentral.com/RCUI/rcui/commit/0bb80e0415264fa5b4065f03bcac47740e6bf163))
-* **RCUI-655:** [Icon] change icon dep on juno main library to @material-ui/core ([c41c964](https://git.ringcentral.com/RCUI/rcui/commit/c41c9646050a43da1620fe324eafd68cfc306cbf))
-* **RCUI-655:** [MenuList] pick forget props `maxHeight` ([cb6df9b](https://git.ringcentral.com/RCUI/rcui/commit/cb6df9b8f16b3a6b31bc0de134928441b4679782))
-* **RCUI-655:** [Stepper] remove StepContent temporary, because we not support orientation vertical ([32fa9ad](https://git.ringcentral.com/RCUI/rcui/commit/32fa9add92a0eeb916357fbb3e16201a5568cb4f))
-* **RCUI-655:** [TablePagination] change deprecated props to new name onChangePage, onChangeRowsPerPage ([f8a5704](https://git.ringcentral.com/RCUI/rcui/commit/f8a5704773ea7598967ef4d0ce53d8c9e3bf49c6))
-* **RCUI-655:** [TextField, Textarea, Select] remove rowsMax and rows, and switch to new props minRows, maxRows ([66f9b69](https://git.ringcentral.com/RCUI/rcui/commit/66f9b691d8423b7a92013c350814d23c7173fc31))
+* **RCUI-651:** [Tag] remove not need `margin-left` ([e6d378e](https://github.com/ringcentral/juno/commit/e6d378e803d11af960c5987b6ffb632cf84c336b))
+* **RCUI-654:** [InlineEditable] change 'anwhere' to 'anywhere' ([e2d1d5c](https://github.com/ringcentral/juno/commit/e2d1d5ca8a067192d93a9f3d274c591efeef42da))
+* **RCUI-655:** [AppBar] use RcAppBarProps ([9527047](https://github.com/ringcentral/juno/commit/9527047ad84c3f6e6d5bdc15a46b499987a6bd7e))
+* **RCUI-655:** [Badge] rename circle and rectangle to 'circular' and 'rectangular' ([c4581f6](https://github.com/ringcentral/juno/commit/c4581f6d2c278158eb77666eb7a88dd1a5f29d0d))
+* **RCUI-655:** [createTheme] rename mud createTheme to createTheme, fade to alpha ([cef352d](https://github.com/ringcentral/juno/commit/cef352ddd88cbc6090d9f41010901c1f12ba4138))
+* **RCUI-655:** [Dialog, Snackbar, TimePicker, VirtualizedMenu] move `onXXX` inside `TransitionProps` ([0bb80e0](https://github.com/ringcentral/juno/commit/0bb80e0415264fa5b4065f03bcac47740e6bf163))
+* **RCUI-655:** [Icon] change icon dep on juno main library to @material-ui/core ([c41c964](https://github.com/ringcentral/juno/commit/c41c9646050a43da1620fe324eafd68cfc306cbf))
+* **RCUI-655:** [MenuList] pick forget props `maxHeight` ([cb6df9b](https://github.com/ringcentral/juno/commit/cb6df9b8f16b3a6b31bc0de134928441b4679782))
+* **RCUI-655:** [Stepper] remove StepContent temporary, because we not support orientation vertical ([32fa9ad](https://github.com/ringcentral/juno/commit/32fa9add92a0eeb916357fbb3e16201a5568cb4f))
+* **RCUI-655:** [TablePagination] change deprecated props to new name onChangePage, onChangeRowsPerPage ([f8a5704](https://github.com/ringcentral/juno/commit/f8a5704773ea7598967ef4d0ce53d8c9e3bf49c6))
+* **RCUI-655:** [TextField, Textarea, Select] remove rowsMax and rows, and switch to new props minRows, maxRows ([66f9b69](https://github.com/ringcentral/juno/commit/66f9b691d8423b7a92013c350814d23c7173fc31))
 
-### [1.11.5](https://git.ringcentral.com/RCUI/rcui/compare/1.11.4...1.11.5) (2021-10-14)
+### [1.11.5](https://github.com/ringcentral/juno/compare/1.11.4...1.11.5) (2021-10-14)
 
 
 ### ⚠ BREAKING CHANGES
@@ -1222,12 +1222,12 @@ renderOption={(
 
 ### Bug Fixes
 
-* **RCUI-648:** [type error] fix PortalManager.open return type, it would lost after build ([a74d0b3](https://git.ringcentral.com/RCUI/rcui/commit/a74d0b373ef64ffe3d97f99209454dfc4cf0948c))
+* **RCUI-648:** [type error] fix PortalManager.open return type, it would lost after build ([a74d0b3](https://github.com/ringcentral/juno/commit/a74d0b373ef64ffe3d97f99209454dfc4cf0948c))
 
 
-* **RCUI-647:** [Icon] update icon ([b278720](https://git.ringcentral.com/RCUI/rcui/commit/b2787202ee84536f133db8f55447434e993745d1))
+* **RCUI-647:** [Icon] update icon ([b278720](https://github.com/ringcentral/juno/commit/b2787202ee84536f133db8f55447434e993745d1))
 
-### [1.11.4](https://git.ringcentral.com/RCUI/rcui/compare/1.11.3...1.11.4) (2021-09-27)
+### [1.11.4](https://github.com/ringcentral/juno/compare/1.11.3...1.11.4) (2021-09-27)
 
 
 ### ⚠ BREAKING CHANGES
@@ -1236,25 +1236,25 @@ renderOption={(
 
 ### Features
 
-* **DetachedWindow:** RcDetachedWindowStylesProvider ([158ba6d](https://git.ringcentral.com/RCUI/rcui/commit/158ba6d66f6408ca735c2d9db5bfa6ecee174e84))
-* **RCUI-643:** [Picker] add PickerBaseIconButton for picker use ([a260fe7](https://git.ringcentral.com/RCUI/rcui/commit/a260fe76f516dbed6fdee3f1c4c6b1ed590af661))
-* **RCUI-643:** [TimePicker] forwardRef with TimePicker ([97ca673](https://git.ringcentral.com/RCUI/rcui/commit/97ca673a3078b47716675b4a2ff8a4af6432f935))
-* **update-icon:** [update-icon] update ([1392864](https://git.ringcentral.com/RCUI/rcui/commit/139286475e2b33040a8de5490a98b4fb193494bc))
+* **DetachedWindow:** RcDetachedWindowStylesProvider ([158ba6d](https://github.com/ringcentral/juno/commit/158ba6d66f6408ca735c2d9db5bfa6ecee174e84))
+* **RCUI-643:** [Picker] add PickerBaseIconButton for picker use ([a260fe7](https://github.com/ringcentral/juno/commit/a260fe76f516dbed6fdee3f1c4c6b1ed590af661))
+* **RCUI-643:** [TimePicker] forwardRef with TimePicker ([97ca673](https://github.com/ringcentral/juno/commit/97ca673a3078b47716675b4a2ff8a4af6432f935))
+* **update-icon:** [update-icon] update ([1392864](https://github.com/ringcentral/juno/commit/139286475e2b33040a8de5490a98b4fb193494bc))
 
 
 ### Bug Fixes
 
-* **RCUI-643:** [DatePicker] fix whole date picker range logic, and make that support uncontrolled component ([649e7a6](https://git.ringcentral.com/RCUI/rcui/commit/649e7a629d6a85ba1256e048656fc27e7904b64e))
-* **RCUI-643:** [DatePicker] migrate and cleanup to new PickerBaseButton ([cf83ae5](https://git.ringcentral.com/RCUI/rcui/commit/cf83ae5aabbb73a07e3c6a82fdfd1aa04f08b540))
-* **RCUI-643:** [IconButton] fix interaction state color ([41f1c57](https://git.ringcentral.com/RCUI/rcui/commit/41f1c572e00d6c0d9ace04aa01465613ed554942))
-* **RCUI-643:** [IconButton] follow interation color, `inverse` background color from .20=>.16 ([fb25099](https://git.ringcentral.com/RCUI/rcui/commit/fb25099e428620907a53d28af04b56d68ae8743c))
-* **RCUI-643:** [IconButton] follow interation color, `inverse` hover 0.4=>0.24, focus 0.4=>0.32 ([2da0f1d](https://git.ringcentral.com/RCUI/rcui/commit/2da0f1d99f7872e578ae8d619c8eb21153bdb235))
-* **RCUI-643:** [IconButton] text inside icon also set color style ([ced39ba](https://git.ringcentral.com/RCUI/rcui/commit/ced39bad869d956adb44bc66f90f78cacb3d2f41))
-* **RCUI-643:** [Picker] fix not need memo and error naming ([9fdfaf1](https://git.ringcentral.com/RCUI/rcui/commit/9fdfaf1ff96d062a639ec2b901df57b6a69e88b0))
-* **RCUI-643:** [TimePicker] migrate and cleanup to new PickerBaseButton ([033c6fb](https://git.ringcentral.com/RCUI/rcui/commit/033c6fb2754addab93f6de1ecbc8d15dda5f26af))
-* **RCUI-645:** fix DatePicker disabled bug ([a3621a3](https://git.ringcentral.com/RCUI/rcui/commit/a3621a34c00494646c5ba05b0218e8907bdbd9ee))
+* **RCUI-643:** [DatePicker] fix whole date picker range logic, and make that support uncontrolled component ([649e7a6](https://github.com/ringcentral/juno/commit/649e7a629d6a85ba1256e048656fc27e7904b64e))
+* **RCUI-643:** [DatePicker] migrate and cleanup to new PickerBaseButton ([cf83ae5](https://github.com/ringcentral/juno/commit/cf83ae5aabbb73a07e3c6a82fdfd1aa04f08b540))
+* **RCUI-643:** [IconButton] fix interaction state color ([41f1c57](https://github.com/ringcentral/juno/commit/41f1c572e00d6c0d9ace04aa01465613ed554942))
+* **RCUI-643:** [IconButton] follow interation color, `inverse` background color from .20=>.16 ([fb25099](https://github.com/ringcentral/juno/commit/fb25099e428620907a53d28af04b56d68ae8743c))
+* **RCUI-643:** [IconButton] follow interation color, `inverse` hover 0.4=>0.24, focus 0.4=>0.32 ([2da0f1d](https://github.com/ringcentral/juno/commit/2da0f1d99f7872e578ae8d619c8eb21153bdb235))
+* **RCUI-643:** [IconButton] text inside icon also set color style ([ced39ba](https://github.com/ringcentral/juno/commit/ced39bad869d956adb44bc66f90f78cacb3d2f41))
+* **RCUI-643:** [Picker] fix not need memo and error naming ([9fdfaf1](https://github.com/ringcentral/juno/commit/9fdfaf1ff96d062a639ec2b901df57b6a69e88b0))
+* **RCUI-643:** [TimePicker] migrate and cleanup to new PickerBaseButton ([033c6fb](https://github.com/ringcentral/juno/commit/033c6fb2754addab93f6de1ecbc8d15dda5f26af))
+* **RCUI-645:** fix DatePicker disabled bug ([a3621a3](https://github.com/ringcentral/juno/commit/a3621a34c00494646c5ba05b0218e8907bdbd9ee))
 
-### [1.11.3](https://git.ringcentral.com/RCUI/rcui/compare/1.11.2...1.11.3) (2021-09-13)
+### [1.11.3](https://github.com/ringcentral/juno/compare/1.11.2...1.11.3) (2021-09-13)
 
 
 ### ⚠ BREAKING CHANGES
@@ -1265,31 +1265,31 @@ renderOption={(
 
 ### Features
 
-* **RCUI-593:** fix some problem and refactor types ([e5c6603](https://git.ringcentral.com/RCUI/rcui/commit/e5c66036d7f09e412c77f40a2507045ce1c815ec))
-* **RCUI-593:** make Dialog, Snackbar support portalMnager ([0158f31](https://git.ringcentral.com/RCUI/rcui/commit/0158f31b01a30de281b26e5141b22293fe54998b))
-* **RCUI-593:** PortalHost ([862f645](https://git.ringcentral.com/RCUI/rcui/commit/862f6454eddfcd9cb3403e5269a72388203a5ed5))
-* **RCUI-593:** PortalManager ([6796908](https://git.ringcentral.com/RCUI/rcui/commit/6796908e915100cf0200c475d8726e8ca9035d24))
-* **RCUI-618:** [Downshift] support `groupVariant` and `groupExpanded` ([31c34a1](https://git.ringcentral.com/RCUI/rcui/commit/31c34a13e0bdcace853bf5746b78d1f2a8ae737d))
-* **RCUI-618:** [Downshift] support action with `getFilterResultItems` to get current filter result items ([f40f34b](https://git.ringcentral.com/RCUI/rcui/commit/f40f34b712f29b730ca95bcd99428a7734ee8217))
-* **RCUI-618:** [useHighlightScroll] support custom topHighlightIndex ([c8a9347](https://git.ringcentral.com/RCUI/rcui/commit/c8a9347dc427fb46c04061e4bbde7ce99630685a))
-* **RCUI-639:** [DatePicker] migrate deprecated `RcButtonBar` to `RcIconButtonGroup` ([400ab9e](https://git.ringcentral.com/RCUI/rcui/commit/400ab9e67785e5cdb2737a52a151d817cd54badc))
-* **RCUI-639:** [Dialog] support childrenSize with `DialogActions`, `DialogContent`, `DialogTitle` ([82ac221](https://git.ringcentral.com/RCUI/rcui/commit/82ac2215156019e5d9548602767397e454bc4122))
-* **RCUI-639:** [Dialog] support typography size with DialogContentText and Title ([90a742e](https://git.ringcentral.com/RCUI/rcui/commit/90a742eb6a5ddcc4bf3ca4ca0d7aafcc24f3ef2c))
-* **RCUI-639:** [DialogActions] change default space between items to `spacing(2)` ([56c514d](https://git.ringcentral.com/RCUI/rcui/commit/56c514df572129332456c530cac4a14ae306e196))
-* **RCUI-639:** [DialogActions] support `reverse` and fix mui gutterBottom bug ([0d6671b](https://git.ringcentral.com/RCUI/rcui/commit/0d6671b7ec3d9134e4733b3807be76438e8c81ef))
-* **RCUI-639:** [DialogActions] when size is `small` default  direction to be  `vertical` ([29d2f05](https://git.ringcentral.com/RCUI/rcui/commit/29d2f054e4feae26c0cfc215e790022bebb68f69))
-* **RCUI-639:** [PopupBox] migrate to Dialog new API ([82796d2](https://git.ringcentral.com/RCUI/rcui/commit/82796d217ccfbef59befe7208796b18e84d496f3))
-* **RCUI-642:** [Switch] fix error token from `highContrast` to `neutral-f11` ([1801b7d](https://git.ringcentral.com/RCUI/rcui/commit/1801b7ddca3244019340d121104f1ebebecf7da9))
-* **RCUI-643:** [DatePicker] support today disabled when today is not validate item ([4241d9c](https://git.ringcentral.com/RCUI/rcui/commit/4241d9cf95eed9b5600a91c7985362f7c5abb263))
-* **update-icon:** [update-icon] update ([6f7414c](https://git.ringcentral.com/RCUI/rcui/commit/6f7414c073ec4a1ca78171149dbed0d87c953cf0))
+* **RCUI-593:** fix some problem and refactor types ([e5c6603](https://github.com/ringcentral/juno/commit/e5c66036d7f09e412c77f40a2507045ce1c815ec))
+* **RCUI-593:** make Dialog, Snackbar support portalMnager ([0158f31](https://github.com/ringcentral/juno/commit/0158f31b01a30de281b26e5141b22293fe54998b))
+* **RCUI-593:** PortalHost ([862f645](https://github.com/ringcentral/juno/commit/862f6454eddfcd9cb3403e5269a72388203a5ed5))
+* **RCUI-593:** PortalManager ([6796908](https://github.com/ringcentral/juno/commit/6796908e915100cf0200c475d8726e8ca9035d24))
+* **RCUI-618:** [Downshift] support `groupVariant` and `groupExpanded` ([31c34a1](https://github.com/ringcentral/juno/commit/31c34a13e0bdcace853bf5746b78d1f2a8ae737d))
+* **RCUI-618:** [Downshift] support action with `getFilterResultItems` to get current filter result items ([f40f34b](https://github.com/ringcentral/juno/commit/f40f34b712f29b730ca95bcd99428a7734ee8217))
+* **RCUI-618:** [useHighlightScroll] support custom topHighlightIndex ([c8a9347](https://github.com/ringcentral/juno/commit/c8a9347dc427fb46c04061e4bbde7ce99630685a))
+* **RCUI-639:** [DatePicker] migrate deprecated `RcButtonBar` to `RcIconButtonGroup` ([400ab9e](https://github.com/ringcentral/juno/commit/400ab9e67785e5cdb2737a52a151d817cd54badc))
+* **RCUI-639:** [Dialog] support childrenSize with `DialogActions`, `DialogContent`, `DialogTitle` ([82ac221](https://github.com/ringcentral/juno/commit/82ac2215156019e5d9548602767397e454bc4122))
+* **RCUI-639:** [Dialog] support typography size with DialogContentText and Title ([90a742e](https://github.com/ringcentral/juno/commit/90a742eb6a5ddcc4bf3ca4ca0d7aafcc24f3ef2c))
+* **RCUI-639:** [DialogActions] change default space between items to `spacing(2)` ([56c514d](https://github.com/ringcentral/juno/commit/56c514df572129332456c530cac4a14ae306e196))
+* **RCUI-639:** [DialogActions] support `reverse` and fix mui gutterBottom bug ([0d6671b](https://github.com/ringcentral/juno/commit/0d6671b7ec3d9134e4733b3807be76438e8c81ef))
+* **RCUI-639:** [DialogActions] when size is `small` default  direction to be  `vertical` ([29d2f05](https://github.com/ringcentral/juno/commit/29d2f054e4feae26c0cfc215e790022bebb68f69))
+* **RCUI-639:** [PopupBox] migrate to Dialog new API ([82796d2](https://github.com/ringcentral/juno/commit/82796d217ccfbef59befe7208796b18e84d496f3))
+* **RCUI-642:** [Switch] fix error token from `highContrast` to `neutral-f11` ([1801b7d](https://github.com/ringcentral/juno/commit/1801b7ddca3244019340d121104f1ebebecf7da9))
+* **RCUI-643:** [DatePicker] support today disabled when today is not validate item ([4241d9c](https://github.com/ringcentral/juno/commit/4241d9cf95eed9b5600a91c7985362f7c5abb263))
+* **update-icon:** [update-icon] update ([6f7414c](https://github.com/ringcentral/juno/commit/6f7414c073ec4a1ca78171149dbed0d87c953cf0))
 
 
 ### Bug Fixes
 
-* **RCUI-618:** [Downshift] fix groupStateMap logic with group name ([34760c2](https://git.ringcentral.com/RCUI/rcui/commit/34760c2eb979dc620430b225babe85c985efefb5))
-* **RCUI-640:** [ListItem] move default baseColorProp into style ([f47fe3a](https://git.ringcentral.com/RCUI/rcui/commit/f47fe3a916be4c763385382b5640ece64e004672))
+* **RCUI-618:** [Downshift] fix groupStateMap logic with group name ([34760c2](https://github.com/ringcentral/juno/commit/34760c2eb979dc620430b225babe85c985efefb5))
+* **RCUI-640:** [ListItem] move default baseColorProp into style ([f47fe3a](https://github.com/ringcentral/juno/commit/f47fe3a916be4c763385382b5640ece64e004672))
 
-### [1.11.2](https://git.ringcentral.com/RCUI/rcui/compare/1.11.1...1.11.2) (2021-08-26)
+### [1.11.2](https://github.com/ringcentral/juno/compare/1.11.1...1.11.2) (2021-08-26)
 
 
 ### ⚠ BREAKING CHANGES
@@ -1301,38 +1301,38 @@ renderOption={(
 
 ### Features
 
-* **RCUI-633:** [Button] support `mask` disabledVariant ([b1255d8](https://git.ringcentral.com/RCUI/rcui/commit/b1255d863f773f7304c5a92e8fa9f674927473c6))
-* **RCUI-633:** [Button] support loading mask ([96404a2](https://git.ringcentral.com/RCUI/rcui/commit/96404a23103d7b62c7f51e6899301bdb83a7a566))
-* **RCUI-633:** [SplitButton] support `loading` ([60c1dab](https://git.ringcentral.com/RCUI/rcui/commit/60c1dab1810c00f8eaa35a4846b17c724cc6c224))
-* **update-icon:** [update-icon] fix gif dark icon name ([c86edcb](https://git.ringcentral.com/RCUI/rcui/commit/c86edcb8801de2d4e7f0a50c4d38163e8fbcf92d))
+* **RCUI-633:** [Button] support `mask` disabledVariant ([b1255d8](https://github.com/ringcentral/juno/commit/b1255d863f773f7304c5a92e8fa9f674927473c6))
+* **RCUI-633:** [Button] support loading mask ([96404a2](https://github.com/ringcentral/juno/commit/96404a23103d7b62c7f51e6899301bdb83a7a566))
+* **RCUI-633:** [SplitButton] support `loading` ([60c1dab](https://github.com/ringcentral/juno/commit/60c1dab1810c00f8eaa35a4846b17c724cc6c224))
+* **update-icon:** [update-icon] fix gif dark icon name ([c86edcb](https://github.com/ringcentral/juno/commit/c86edcb8801de2d4e7f0a50c4d38163e8fbcf92d))
 
 
 ### Bug Fixes
 
-* **RCUI-633:** [Button] loading mask use `neutral.b01` with `0.32` opacity ([70b6de8](https://git.ringcentral.com/RCUI/rcui/commit/70b6de8bb84f89de81995d3eed8b9af03445b8ac))
-* **RCUI-633:** [Button] when loading button always be disabled ([b4bdf6a](https://git.ringcentral.com/RCUI/rcui/commit/b4bdf6a2d649b626cf5490acbe9c385e77268cb0))
-* **RCUI-635:** [InlineEditable] fix empty placeholder problem ([c7ca1f5](https://git.ringcentral.com/RCUI/rcui/commit/c7ca1f5b7cc057e6cc0d8c72b5b547db2d38669f))
-* **RCUI-636:** [Downshift] fix autocomplete mode value be clear issue ([c329a84](https://git.ringcentral.com/RCUI/rcui/commit/c329a842d05a67feacffb3c46f7ce0214b433c13))
-* **RCUI-638:** [OutlineTextField] add OutlineTextField sizes with token ([ee3415e](https://git.ringcentral.com/RCUI/rcui/commit/ee3415eefa2947d80a0991423e1b3983b0589029))
-* **RCUI-638:** [OutlineTextField] fix typography size miss use in OutlineTextField ([a998b16](https://git.ringcentral.com/RCUI/rcui/commit/a998b164e7ff3794bb15c74752c6190ebf69746d))
-* **script:** export miss `RcThemeProviderProps` ([1d4e715](https://git.ringcentral.com/RCUI/rcui/commit/1d4e7152980eefab9a6f26bce5f2a098207028ac))
+* **RCUI-633:** [Button] loading mask use `neutral.b01` with `0.32` opacity ([70b6de8](https://github.com/ringcentral/juno/commit/70b6de8bb84f89de81995d3eed8b9af03445b8ac))
+* **RCUI-633:** [Button] when loading button always be disabled ([b4bdf6a](https://github.com/ringcentral/juno/commit/b4bdf6a2d649b626cf5490acbe9c385e77268cb0))
+* **RCUI-635:** [InlineEditable] fix empty placeholder problem ([c7ca1f5](https://github.com/ringcentral/juno/commit/c7ca1f5b7cc057e6cc0d8c72b5b547db2d38669f))
+* **RCUI-636:** [Downshift] fix autocomplete mode value be clear issue ([c329a84](https://github.com/ringcentral/juno/commit/c329a842d05a67feacffb3c46f7ce0214b433c13))
+* **RCUI-638:** [OutlineTextField] add OutlineTextField sizes with token ([ee3415e](https://github.com/ringcentral/juno/commit/ee3415eefa2947d80a0991423e1b3983b0589029))
+* **RCUI-638:** [OutlineTextField] fix typography size miss use in OutlineTextField ([a998b16](https://github.com/ringcentral/juno/commit/a998b164e7ff3794bb15c74752c6190ebf69746d))
+* **script:** export miss `RcThemeProviderProps` ([1d4e715](https://github.com/ringcentral/juno/commit/1d4e7152980eefab9a6f26bce5f2a098207028ac))
 
-### [1.11.1](https://git.ringcentral.com/RCUI/rcui/compare/1.11.0...1.11.1) (2021-08-16)
+### [1.11.1](https://github.com/ringcentral/juno/compare/1.11.0...1.11.1) (2021-08-16)
 
 
 ### Features
 
-* **RCUI-631:** [[Icon] update icon] update icon ([ffdba00](https://git.ringcentral.com/RCUI/rcui/commit/ffdba00cb2ffeb912aeb8deb042544887fb03551))
+* **RCUI-631:** [[Icon] update icon] update icon ([ffdba00](https://github.com/ringcentral/juno/commit/ffdba00cb2ffeb912aeb8deb042544887fb03551))
 
 
 ### Bug Fixes
 
-* **Box:** change RcBox to forwardable component ([bc33225](https://git.ringcentral.com/RCUI/rcui/commit/bc33225a599f544de733225212acfc404fbbf0c5))
-* **RCUI-632:** [Downshift] fix useDownshift set inner input value not emit issue ([29cc6e4](https://git.ringcentral.com/RCUI/rcui/commit/29cc6e408f02b5a0b0ae909e164c9ac871f25333))
-* **RCUI-632:** [Downshift]: fix init don't have textFieldRef open issue, and change `onInputChange` type to non optional ([c2f044e](https://git.ringcentral.com/RCUI/rcui/commit/c2f044e55dd763a1f49542add3db3b81334b1f02))
+* **Box:** change RcBox to forwardable component ([bc33225](https://github.com/ringcentral/juno/commit/bc33225a599f544de733225212acfc404fbbf0c5))
+* **RCUI-632:** [Downshift] fix useDownshift set inner input value not emit issue ([29cc6e4](https://github.com/ringcentral/juno/commit/29cc6e408f02b5a0b0ae909e164c9ac871f25333))
+* **RCUI-632:** [Downshift]: fix init don't have textFieldRef open issue, and change `onInputChange` type to non optional ([c2f044e](https://github.com/ringcentral/juno/commit/c2f044e55dd763a1f49542add3db3b81334b1f02))
 
 
-## [1.11.0](https://git.ringcentral.com/RCUI/rcui/compare/1.10.1...1.11.0) (2021-08-13)
+## [1.11.0](https://github.com/ringcentral/juno/compare/1.10.1...1.11.0) (2021-08-13)
 
 ### ⚠ BREAKING CHANGES
 
@@ -1342,37 +1342,37 @@ renderOption={(
 
 ### Features
 
-* **RCUI-619:** [[Icon] add dark prop to svg component] add story ([ebbe618](https://git.ringcentral.com/RCUI/rcui/commit/ebbe618690f761c415e93f2202a76d8d0df9e649))
-* **RCUI-619:** [[Icon] add dark prop to svg component] make svg comp use global theme default ([8994565](https://git.ringcentral.com/RCUI/rcui/commit/8994565c60130e1d61c9cde9e6897a6da904b2c1))
-* **RCUI-619:** [[Icon] add dark prop to svg component] update icon ([5454c7a](https://git.ringcentral.com/RCUI/rcui/commit/5454c7adb2adf8dee204c0372fa95e1ba647b913))
-* **RCUI-625:** [Responsive] breakpoint pattern follow mui ([4f7f815](https://git.ringcentral.com/RCUI/rcui/commit/4f7f815816f5c04192c1831a7eae01ea287e62e3))
-* **RCUI-625:** [Responsive] update storybook ([52a9923](https://git.ringcentral.com/RCUI/rcui/commit/52a99233ffcf35f93eecd852d9965ae87614dcd7))
-* **RCUI-629:** [Tooltip] clean up tooltip spec and new size `xlarge` ([e1cf5d5](https://git.ringcentral.com/RCUI/rcui/commit/e1cf5d57d58e68c047ee4f24339c4c11f766575b))
+* **RCUI-619:** [[Icon] add dark prop to svg component] add story ([ebbe618](https://github.com/ringcentral/juno/commit/ebbe618690f761c415e93f2202a76d8d0df9e649))
+* **RCUI-619:** [[Icon] add dark prop to svg component] make svg comp use global theme default ([8994565](https://github.com/ringcentral/juno/commit/8994565c60130e1d61c9cde9e6897a6da904b2c1))
+* **RCUI-619:** [[Icon] add dark prop to svg component] update icon ([5454c7a](https://github.com/ringcentral/juno/commit/5454c7adb2adf8dee204c0372fa95e1ba647b913))
+* **RCUI-625:** [Responsive] breakpoint pattern follow mui ([4f7f815](https://github.com/ringcentral/juno/commit/4f7f815816f5c04192c1831a7eae01ea287e62e3))
+* **RCUI-625:** [Responsive] update storybook ([52a9923](https://github.com/ringcentral/juno/commit/52a99233ffcf35f93eecd852d9965ae87614dcd7))
+* **RCUI-629:** [Tooltip] clean up tooltip spec and new size `xlarge` ([e1cf5d5](https://github.com/ringcentral/juno/commit/e1cf5d57d58e68c047ee4f24339c4c11f766575b))
 
 
 ### Bug Fixes
 
-* **RCUI-628:** [Presence] add `box-sizing: content-box` to prevent reset outside ([99c2c4e](https://git.ringcentral.com/RCUI/rcui/commit/99c2c4e8cde8ad904e280a578268dff43c5b26fc))
-* **RCUI-630:** [TimePicker] reset view to main page when open ([284c8a2](https://git.ringcentral.com/RCUI/rcui/commit/284c8a27d1c598739fac4c169d28ff45f26adddb))
+* **RCUI-628:** [Presence] add `box-sizing: content-box` to prevent reset outside ([99c2c4e](https://github.com/ringcentral/juno/commit/99c2c4e8cde8ad904e280a578268dff43c5b26fc))
+* **RCUI-630:** [TimePicker] reset view to main page when open ([284c8a2](https://github.com/ringcentral/juno/commit/284c8a27d1c598739fac4c169d28ff45f26adddb))
 
-### [1.10.1](https://git.ringcentral.com/RCUI/rcui/compare/1.10.0...1.10.1) (2021-08-06)
+### [1.10.1](https://github.com/ringcentral/juno/compare/1.10.0...1.10.1) (2021-08-06)
 
 
 ### Features
 
-* **RCUI-616:** [Drawer] add multi drawer example ([23ae2c2](https://git.ringcentral.com/RCUI/rcui/commit/23ae2c276667e2823ce39a5496e4beeacb467176))
-* **RCUI-622:** [Dialog] add Responsive dialog Example ([6ec071d](https://git.ringcentral.com/RCUI/rcui/commit/6ec071d39b71c5b6aeec81899a356e06380dd0ae))
-* **RCUI-623:** implement `useAudio` get Browser `Audio` instance, and auto destroy when component be destroyed. ([424dc38](https://git.ringcentral.com/RCUI/rcui/commit/424dc38ffa6a801031329698336ed2f7eb9d5db8))
-* **RCUI-624:** [Hidden] reexport Hidden component ([47b8293](https://git.ringcentral.com/RCUI/rcui/commit/47b82931583b6d50b9c9a2bae5cddfaa0add39fd))
+* **RCUI-616:** [Drawer] add multi drawer example ([23ae2c2](https://github.com/ringcentral/juno/commit/23ae2c276667e2823ce39a5496e4beeacb467176))
+* **RCUI-622:** [Dialog] add Responsive dialog Example ([6ec071d](https://github.com/ringcentral/juno/commit/6ec071d39b71c5b6aeec81899a356e06380dd0ae))
+* **RCUI-623:** implement `useAudio` get Browser `Audio` instance, and auto destroy when component be destroyed. ([424dc38](https://github.com/ringcentral/juno/commit/424dc38ffa6a801031329698336ed2f7eb9d5db8))
+* **RCUI-624:** [Hidden] reexport Hidden component ([47b8293](https://github.com/ringcentral/juno/commit/47b82931583b6d50b9c9a2bae5cddfaa0add39fd))
 
 
 ### Bug Fixes
 
-* **RCUI-617:** [ListItem] list item interaction style follow spec ([1da96c4](https://git.ringcentral.com/RCUI/rcui/commit/1da96c4bbfbc1339941e9d722b3a23004de6a5f0))
-* **RCUI-621:** [Deepmerge] switch deepmerge to mui inner deepmerge ([56af37a](https://git.ringcentral.com/RCUI/rcui/commit/56af37a2c7c966cc8eec0f99e0dce1e6adf70331))
-* **RCUI-623:** [DialPad] switch to useAudio ([77ae33a](https://git.ringcentral.com/RCUI/rcui/commit/77ae33adab416cd3a47769e1fd118e32d95e0de7))
+* **RCUI-617:** [ListItem] list item interaction style follow spec ([1da96c4](https://github.com/ringcentral/juno/commit/1da96c4bbfbc1339941e9d722b3a23004de6a5f0))
+* **RCUI-621:** [Deepmerge] switch deepmerge to mui inner deepmerge ([56af37a](https://github.com/ringcentral/juno/commit/56af37a2c7c966cc8eec0f99e0dce1e6adf70331))
+* **RCUI-623:** [DialPad] switch to useAudio ([77ae33a](https://github.com/ringcentral/juno/commit/77ae33adab416cd3a47769e1fd118e32d95e0de7))
 
-## [1.10.0](https://git.ringcentral.com/RCUI/rcui/compare/1.9.0...1.10.0) (2021-07-27)
+## [1.10.0](https://github.com/ringcentral/juno/compare/1.9.0...1.10.0) (2021-07-27)
 
 
 ### ⚠ BREAKING CHANGES
@@ -1393,53 +1393,53 @@ renderOption={(
 
 ### Features
 
-* **FIJI-36407:** [RcInlineEditable] support custom inputProps ([d08ca41](https://git.ringcentral.com/RCUI/rcui/commit/d08ca41be0cf40ad0f868dbbdfed3c28d0ded872))
-* **RCUI-550:** [[Card] move Jui card example into Juno] add media card example and icon card example & remove knob in simple card example ([719c812](https://git.ringcentral.com/RCUI/rcui/commit/719c8123cdd98acf5cac57882debdc7080f0f511))
-* **RCUI-583:** [[Text] support two(or more) line ellipsis] add jsdoc and remove useless style ([73f0fa9](https://git.ringcentral.com/RCUI/rcui/commit/73f0fa915c7abff781f944c68b570c6f4ad52df5))
-* **RCUI-583:** [[Text] support two(or more) line ellipsis] add line clamp support ([90480a6](https://git.ringcentral.com/RCUI/rcui/commit/90480a646539f6c0a1469eb7fefcdb9ef856b2cf))
-* **RCUI-596:** [CustomTheme] support custom theme with styled-component type, and palette2 ([7cbb331](https://git.ringcentral.com/RCUI/rcui/commit/7cbb33194aaf77684c25debae7aa550e3bb5d9b3))
-* **RCUI-597:** [Test] add UT for `useKeyboardMoveFocus` ([5a617af](https://git.ringcentral.com/RCUI/rcui/commit/5a617afdec6aa932c52a3b3772c8a8ed8ab19064))
-* **RCUI-607:** [Downshift] support `onOpen` and `onClose` and `open` ([10354e8](https://git.ringcentral.com/RCUI/rcui/commit/10354e8f59a83e9172ee2623aa37ec14a7f4f799))
-* **RCUI-607:** [Downshift] support autocomplete mode ([4d68958](https://git.ringcentral.com/RCUI/rcui/commit/4d689586eb2ebf592f9789aaf72ef4785a254b8e))
-* **RCUI-607:** [Downshift] support custom `renderInput` ([21d2cd4](https://git.ringcentral.com/RCUI/rcui/commit/21d2cd401830cdbe3753ff5fec674ac4abb154a1))
-* **RCUI-607:** [Downshift] support padding with SuggestionList ([11c9c54](https://git.ringcentral.com/RCUI/rcui/commit/11c9c545b3a72f6149a4e0e65d67330e9beeeb84))
-* **RCUI-611:** [Theme] fix token use ([6f965f1](https://git.ringcentral.com/RCUI/rcui/commit/6f965f1e4c58a7c87c7e05a85323b8bed3ff241e))
-* **RCUI-611:** [Theme] not merge mui base theme token ([34c273e](https://git.ringcentral.com/RCUI/rcui/commit/34c273eb89a833c349b72093cfaa8ee0fbac6860))
-* **RCUI-611:** [Theme] update scss theme ([d49e54f](https://git.ringcentral.com/RCUI/rcui/commit/d49e54f1878288ace0fbf1842af3d26747bc4f7a))
-* **RCUI-613:** [Button] change button small font-size to `caption2` ([83d2548](https://git.ringcentral.com/RCUI/rcui/commit/83d2548269386302f7573dd6e5955769d8e16775))
-* **RCUI-613:** [Button] change button small padding from 12px to 16px ([8a1f540](https://git.ringcentral.com/RCUI/rcui/commit/8a1f54041fcec1a262f3c84d03a0a27bd7fdcd6f))
+* **FIJI-36407:** [RcInlineEditable] support custom inputProps ([d08ca41](https://github.com/ringcentral/juno/commit/d08ca41be0cf40ad0f868dbbdfed3c28d0ded872))
+* **RCUI-550:** [[Card] move Jui card example into Juno] add media card example and icon card example & remove knob in simple card example ([719c812](https://github.com/ringcentral/juno/commit/719c8123cdd98acf5cac57882debdc7080f0f511))
+* **RCUI-583:** [[Text] support two(or more) line ellipsis] add jsdoc and remove useless style ([73f0fa9](https://github.com/ringcentral/juno/commit/73f0fa915c7abff781f944c68b570c6f4ad52df5))
+* **RCUI-583:** [[Text] support two(or more) line ellipsis] add line clamp support ([90480a6](https://github.com/ringcentral/juno/commit/90480a646539f6c0a1469eb7fefcdb9ef856b2cf))
+* **RCUI-596:** [CustomTheme] support custom theme with styled-component type, and palette2 ([7cbb331](https://github.com/ringcentral/juno/commit/7cbb33194aaf77684c25debae7aa550e3bb5d9b3))
+* **RCUI-597:** [Test] add UT for `useKeyboardMoveFocus` ([5a617af](https://github.com/ringcentral/juno/commit/5a617afdec6aa932c52a3b3772c8a8ed8ab19064))
+* **RCUI-607:** [Downshift] support `onOpen` and `onClose` and `open` ([10354e8](https://github.com/ringcentral/juno/commit/10354e8f59a83e9172ee2623aa37ec14a7f4f799))
+* **RCUI-607:** [Downshift] support autocomplete mode ([4d68958](https://github.com/ringcentral/juno/commit/4d689586eb2ebf592f9789aaf72ef4785a254b8e))
+* **RCUI-607:** [Downshift] support custom `renderInput` ([21d2cd4](https://github.com/ringcentral/juno/commit/21d2cd401830cdbe3753ff5fec674ac4abb154a1))
+* **RCUI-607:** [Downshift] support padding with SuggestionList ([11c9c54](https://github.com/ringcentral/juno/commit/11c9c545b3a72f6149a4e0e65d67330e9beeeb84))
+* **RCUI-611:** [Theme] fix token use ([6f965f1](https://github.com/ringcentral/juno/commit/6f965f1e4c58a7c87c7e05a85323b8bed3ff241e))
+* **RCUI-611:** [Theme] not merge mui base theme token ([34c273e](https://github.com/ringcentral/juno/commit/34c273eb89a833c349b72093cfaa8ee0fbac6860))
+* **RCUI-611:** [Theme] update scss theme ([d49e54f](https://github.com/ringcentral/juno/commit/d49e54f1878288ace0fbf1842af3d26747bc4f7a))
+* **RCUI-613:** [Button] change button small font-size to `caption2` ([83d2548](https://github.com/ringcentral/juno/commit/83d2548269386302f7573dd6e5955769d8e16775))
+* **RCUI-613:** [Button] change button small padding from 12px to 16px ([8a1f540](https://github.com/ringcentral/juno/commit/8a1f54041fcec1a262f3c84d03a0a27bd7fdcd6f))
 
 
 ### Bug Fixes
 
-* **package:** remove not need `@types/smoothscroll-polyfill` ([3309f11](https://git.ringcentral.com/RCUI/rcui/commit/3309f11bb4a04d9a8a6934e1994489a609f91c3b))
-* **RCUI-606:** [DafaultTheme] fix error default theme ([be432ff](https://git.ringcentral.com/RCUI/rcui/commit/be432ff8ca1b49bb2f6ffd75988f13825fd2a06b))
-* **RCUI-607:** [Autocomplete] deprecated `Autocomplete` ([5710b0b](https://git.ringcentral.com/RCUI/rcui/commit/5710b0b94c33920eca43e1b3f99fb9281991a8b5))
-* **RCUI-607:** [useKeyboardMoveFocus] fix loop when total is zero ([af548a3](https://git.ringcentral.com/RCUI/rcui/commit/af548a3878a7d7f017b64002b98e3e5222612e5d))
-* **RCUI-608:** [IconButton] remove transition delay and easing ([a0faa54](https://git.ringcentral.com/RCUI/rcui/commit/a0faa540dbd8441df82dfef6e48561dd9114fe45))
-* **RCUI-609:** [Deprecated] migrate width and height to directly write down value ([214326f](https://git.ringcentral.com/RCUI/rcui/commit/214326f2232dcca2bb67302ea1509fb1677541eb))
-* **RCUI-609:** [Deprecated] remove `AnnotationRightRail` ([d63aece](https://git.ringcentral.com/RCUI/rcui/commit/d63aece418bd846725ef3e674ef742ef449b8152))
-* **RCUI-609:** [Deprecated] remove `BorderLessTextField`, `OutlineTextField`, `TextField` ([2a08ecf](https://git.ringcentral.com/RCUI/rcui/commit/2a08ecff476eb68e6b164deae82c0230461e409d))
-* **RCUI-609:** [Deprecated] remove `BoxSelect`, `LineSelect` ([b1e009a](https://git.ringcentral.com/RCUI/rcui/commit/b1e009a23ef4abc92dea21a01e69184d8fc185f2))
-* **RCUI-609:** [Deprecated] remove `LozengeButton`, `ExpansionPanel` ([201d748](https://git.ringcentral.com/RCUI/rcui/commit/201d748718ec80f23fd548fccea6d8527cbdd906))
-* **RCUI-609:** [Deprecated] remove `RcFabButton`, `RcFabIconButton`, `RoundButton` ([ef6c000](https://git.ringcentral.com/RCUI/rcui/commit/ef6c000e4fb0aa8e3f44a1cad6c735db8ffdbc59))
-* **RCUI-609:** [Deprecated] remove `Textarea` ([e667275](https://git.ringcentral.com/RCUI/rcui/commit/e6672753ff172cda4ee4111c82bd9d2dd98256fc))
-* **RCUI-609:** [Deprecated] remove `TextField` and move inner TextField outside ([6c19858](https://git.ringcentral.com/RCUI/rcui/commit/6c19858bfc4e074acb71217c5d0eb50be5095d5b))
-* **RCUI-609:** [Downshift] fix safari tab and enter in composition mode issue ([920f10c](https://git.ringcentral.com/RCUI/rcui/commit/920f10ce18f51acd585c9e48f3ba472cea518524))
-* **RCUI-609:** [FormLabel] cleanup FormLablel ([8289235](https://git.ringcentral.com/RCUI/rcui/commit/82892351a840e8e57f4114e76c932bd9586bd9ec))
-* **RCUI-609:** [foundation] cleanup whole foundation ([5b97ed9](https://git.ringcentral.com/RCUI/rcui/commit/5b97ed9b1d76f969620a712aef15a4fda479e2fe))
-* **RCUI-609:** [lineClamp] maxHeight not more have height * 4 ([45e53c8](https://git.ringcentral.com/RCUI/rcui/commit/45e53c8f52f053f980941de91caa1aab1761601b))
-* **RCUI-609:** [Path] TextField related path change ([25ffd5f](https://git.ringcentral.com/RCUI/rcui/commit/25ffd5f038243823d2decf9172f85aacff890dec))
-* **RCUI-609:** [Script] fix json to scss method ([680e426](https://git.ringcentral.com/RCUI/rcui/commit/680e426d158b91e721cd4d49b12431f42836012b))
-* **RCUI-609:** [switchSize] move foundation switchSize into `Icon` component ([744b639](https://git.ringcentral.com/RCUI/rcui/commit/744b639f768ab9cc07fb01582511832623d2bfce))
-* **RCUI-609:** [theme style] remove not need style method ([1d4a964](https://git.ringcentral.com/RCUI/rcui/commit/1d4a964f2fc429b29409f8adaf585529550d3deb))
-* **RCUI-609:** [Type] fix rippleStyle type ([564fc99](https://git.ringcentral.com/RCUI/rcui/commit/564fc99ff48547d428369fbc9cb6529c5fa2aca8))
-* **RCUI-609:** [useHiddenToFocus] rename to `useHiddenTabindex` ([78a9390](https://git.ringcentral.com/RCUI/rcui/commit/78a9390316c917574fa3dff05cb9de1e6f0a5235))
-* **RCUI-609:** [useSleep] support `getSleeping` to get current sleeping state ([a4972e4](https://git.ringcentral.com/RCUI/rcui/commit/a4972e4bec1ac7a82642d17879510d70214f5119))
-* **RCUI-615:**  [DialPad] also set srcObject as null ([3e75f16](https://git.ringcentral.com/RCUI/rcui/commit/3e75f16e53d39894a63ea3943a24e045582e745e))
-* **RCUI-615:**  [DialPad] remove audio instance after destroy ([13e5363](https://git.ringcentral.com/RCUI/rcui/commit/13e53631c720e6247e48300369d5e85d37b87899))
+* **package:** remove not need `@types/smoothscroll-polyfill` ([3309f11](https://github.com/ringcentral/juno/commit/3309f11bb4a04d9a8a6934e1994489a609f91c3b))
+* **RCUI-606:** [DafaultTheme] fix error default theme ([be432ff](https://github.com/ringcentral/juno/commit/be432ff8ca1b49bb2f6ffd75988f13825fd2a06b))
+* **RCUI-607:** [Autocomplete] deprecated `Autocomplete` ([5710b0b](https://github.com/ringcentral/juno/commit/5710b0b94c33920eca43e1b3f99fb9281991a8b5))
+* **RCUI-607:** [useKeyboardMoveFocus] fix loop when total is zero ([af548a3](https://github.com/ringcentral/juno/commit/af548a3878a7d7f017b64002b98e3e5222612e5d))
+* **RCUI-608:** [IconButton] remove transition delay and easing ([a0faa54](https://github.com/ringcentral/juno/commit/a0faa540dbd8441df82dfef6e48561dd9114fe45))
+* **RCUI-609:** [Deprecated] migrate width and height to directly write down value ([214326f](https://github.com/ringcentral/juno/commit/214326f2232dcca2bb67302ea1509fb1677541eb))
+* **RCUI-609:** [Deprecated] remove `AnnotationRightRail` ([d63aece](https://github.com/ringcentral/juno/commit/d63aece418bd846725ef3e674ef742ef449b8152))
+* **RCUI-609:** [Deprecated] remove `BorderLessTextField`, `OutlineTextField`, `TextField` ([2a08ecf](https://github.com/ringcentral/juno/commit/2a08ecff476eb68e6b164deae82c0230461e409d))
+* **RCUI-609:** [Deprecated] remove `BoxSelect`, `LineSelect` ([b1e009a](https://github.com/ringcentral/juno/commit/b1e009a23ef4abc92dea21a01e69184d8fc185f2))
+* **RCUI-609:** [Deprecated] remove `LozengeButton`, `ExpansionPanel` ([201d748](https://github.com/ringcentral/juno/commit/201d748718ec80f23fd548fccea6d8527cbdd906))
+* **RCUI-609:** [Deprecated] remove `RcFabButton`, `RcFabIconButton`, `RoundButton` ([ef6c000](https://github.com/ringcentral/juno/commit/ef6c000e4fb0aa8e3f44a1cad6c735db8ffdbc59))
+* **RCUI-609:** [Deprecated] remove `Textarea` ([e667275](https://github.com/ringcentral/juno/commit/e6672753ff172cda4ee4111c82bd9d2dd98256fc))
+* **RCUI-609:** [Deprecated] remove `TextField` and move inner TextField outside ([6c19858](https://github.com/ringcentral/juno/commit/6c19858bfc4e074acb71217c5d0eb50be5095d5b))
+* **RCUI-609:** [Downshift] fix safari tab and enter in composition mode issue ([920f10c](https://github.com/ringcentral/juno/commit/920f10ce18f51acd585c9e48f3ba472cea518524))
+* **RCUI-609:** [FormLabel] cleanup FormLablel ([8289235](https://github.com/ringcentral/juno/commit/82892351a840e8e57f4114e76c932bd9586bd9ec))
+* **RCUI-609:** [foundation] cleanup whole foundation ([5b97ed9](https://github.com/ringcentral/juno/commit/5b97ed9b1d76f969620a712aef15a4fda479e2fe))
+* **RCUI-609:** [lineClamp] maxHeight not more have height * 4 ([45e53c8](https://github.com/ringcentral/juno/commit/45e53c8f52f053f980941de91caa1aab1761601b))
+* **RCUI-609:** [Path] TextField related path change ([25ffd5f](https://github.com/ringcentral/juno/commit/25ffd5f038243823d2decf9172f85aacff890dec))
+* **RCUI-609:** [Script] fix json to scss method ([680e426](https://github.com/ringcentral/juno/commit/680e426d158b91e721cd4d49b12431f42836012b))
+* **RCUI-609:** [switchSize] move foundation switchSize into `Icon` component ([744b639](https://github.com/ringcentral/juno/commit/744b639f768ab9cc07fb01582511832623d2bfce))
+* **RCUI-609:** [theme style] remove not need style method ([1d4a964](https://github.com/ringcentral/juno/commit/1d4a964f2fc429b29409f8adaf585529550d3deb))
+* **RCUI-609:** [Type] fix rippleStyle type ([564fc99](https://github.com/ringcentral/juno/commit/564fc99ff48547d428369fbc9cb6529c5fa2aca8))
+* **RCUI-609:** [useHiddenToFocus] rename to `useHiddenTabindex` ([78a9390](https://github.com/ringcentral/juno/commit/78a9390316c917574fa3dff05cb9de1e6f0a5235))
+* **RCUI-609:** [useSleep] support `getSleeping` to get current sleeping state ([a4972e4](https://github.com/ringcentral/juno/commit/a4972e4bec1ac7a82642d17879510d70214f5119))
+* **RCUI-615:**  [DialPad] also set srcObject as null ([3e75f16](https://github.com/ringcentral/juno/commit/3e75f16e53d39894a63ea3943a24e045582e745e))
+* **RCUI-615:**  [DialPad] remove audio instance after destroy ([13e5363](https://github.com/ringcentral/juno/commit/13e53631c720e6247e48300369d5e85d37b87899))
 
-## [1.9.0](https://git.ringcentral.com/RCUI/rcui/compare/1.8.7...1.9.0) (2021-07-13)
+## [1.9.0](https://github.com/ringcentral/juno/compare/1.8.7...1.9.0) (2021-07-13)
 
 
 ### ⚠ BREAKING CHANGES
@@ -1448,15 +1448,15 @@ renderOption={(
 
 ### Features
 
-* **RCUI-605:** [ThemeProvider] deprecated old ThemeProvider ([115c3ac](https://git.ringcentral.com/RCUI/rcui/commit/115c3acc0c14e157ac48973dccd11aa68773396e))
-* **RCUI-605:** [ThemeProvider] support subThemeProvider ([5b2f55a](https://git.ringcentral.com/RCUI/rcui/commit/5b2f55a49d26b23b1ebee75c7ff2d43619d8b5cb))
+* **RCUI-605:** [ThemeProvider] deprecated old ThemeProvider ([115c3ac](https://github.com/ringcentral/juno/commit/115c3acc0c14e157ac48973dccd11aa68773396e))
+* **RCUI-605:** [ThemeProvider] support subThemeProvider ([5b2f55a](https://github.com/ringcentral/juno/commit/5b2f55a49d26b23b1ebee75c7ff2d43619d8b5cb))
 
 
 ### Bug Fixes
 
-* **RCUI-605:** [createTheme] fix error createTheme ([091d6fe](https://git.ringcentral.com/RCUI/rcui/commit/091d6feca2af64e7253426698456b870da31ab40))
+* **RCUI-605:** [createTheme] fix error createTheme ([091d6fe](https://github.com/ringcentral/juno/commit/091d6feca2af64e7253426698456b870da31ab40))
 
-### [1.8.7](https://git.ringcentral.com/RCUI/rcui/compare/1.8.6...1.8.7) (2021-07-12)
+### [1.8.7](https://github.com/ringcentral/juno/compare/1.8.6...1.8.7) (2021-07-12)
 
 
 ### ⚠ BREAKING CHANGES
@@ -1469,49 +1469,49 @@ renderOption={(
 
 ### Features
 
-* **RCUI-595:** [add useThemeProps to components] add forwardRef and remove useThemeProps in deprecated components ([d381f3a](https://git.ringcentral.com/RCUI/rcui/commit/d381f3a73f182dfa4ddd4a30855ea1cb2888e86d))
-* **RCUI-595:** [add useThemeProps to components] add useThemeProps ([59da666](https://git.ringcentral.com/RCUI/rcui/commit/59da666c94c50abe5d1c310e14a539cfb37d4999))
-* **RCUI-595:** [add useThemeProps to components] add useThemeProps story and update custom theme doc ([be950be](https://git.ringcentral.com/RCUI/rcui/commit/be950be2ef1663bb392dbb582f5bc09814d917c3))
-* **RCUI-595:** [add useThemeProps to components] add useThemePropsd ([f01dd61](https://git.ringcentral.com/RCUI/rcui/commit/f01dd61f0f3dfbcbcbd2bc730429150776b75b5f))
-* **RCUI-595:** [add useThemeProps to components] fix circular type reference cause by 'typeof' ([ab2f487](https://git.ringcentral.com/RCUI/rcui/commit/ab2f4877887bfd07f84187e495d401378e1f4059))
-* **RCUI-595:** [add useThemeProps to components] fix menu ([594041d](https://git.ringcentral.com/RCUI/rcui/commit/594041d0145acf76f9826ef9f4f63503dc31cadb))
-* **RCUI-595:** [add useThemeProps to components] fix prettier problem ([1abbd14](https://git.ringcentral.com/RCUI/rcui/commit/1abbd1466830fe50475f85eebb63f0ec8094f415))
-* **RCUI-595:** [add useThemeProps to components] fix tablepagination ([d858494](https://git.ringcentral.com/RCUI/rcui/commit/d85849431ef022f6e3783463c6e17a1eacbce9ea))
-* **RCUI-595:** [add useThemeProps to components] rm DialPadButton in theme.ts ([c46b11a](https://git.ringcentral.com/RCUI/rcui/commit/c46b11a9ae386217ed5e0318ee2a35a933d1397e))
-* **RCUI-595:** [add useThemeProps to components] update story snapshot ([c6f9234](https://git.ringcentral.com/RCUI/rcui/commit/c6f9234135375aa6a2ff8f4f5126cafb1f77eb01))
-* **RCUI-598:** [[build] Support tree-shaking when importing by subpath] config ([049383f](https://git.ringcentral.com/RCUI/rcui/commit/049383f199138bce57e74a395ae2227e9a5dbf52))
-* **RCUI-600:** [Virtuoso] clone virtuoso into project 1.9.3 ([c3f6f93](https://git.ringcentral.com/RCUI/rcui/commit/c3f6f9399f8d62a09665b6207da7d25353c11d25))
-* **RCUI-600:** [Virtuoso] format and fix eslint with package ([2f82880](https://git.ringcentral.com/RCUI/rcui/commit/2f828802cfbfb1ba6a8e24883f09543070ff1290))
-* **RCUI-600:** [Virtuoso] support `PortalWindowContext` ([e6a98e3](https://git.ringcentral.com/RCUI/rcui/commit/e6a98e39aec248ccd57a12f0ff9dad6dc803cca9))
-* **RCUI-600:** [Virtuoso] update virtuoso version to 1.9.3 ([7dd3958](https://git.ringcentral.com/RCUI/rcui/commit/7dd3958922cebb2f02adf05a84139cdc8672162a))
-* **RCUI-602:** [TablePagination] implement whole new TablePagination ([0fd3c9d](https://git.ringcentral.com/RCUI/rcui/commit/0fd3c9d8848161fe06b23c5797c623ca28cc7efb))
-* **RCUI-603:** [Downshift] remove deprecated component ([1d81a37](https://git.ringcentral.com/RCUI/rcui/commit/1d81a37c11bc7ada2dd0297186bfb2c63fc0f156))
-* **RCUI-603:** [Downshift] remove deprecated component ([3f0dd2e](https://git.ringcentral.com/RCUI/rcui/commit/3f0dd2e45619afccdbe8c3280a8bcb76ef1e265b))
-* **RCUI-603:** [Theme] fix create theme for dark and light palette ([c8f5abc](https://git.ringcentral.com/RCUI/rcui/commit/c8f5abc4d9f99c695a34e22426d029acd49715ea))
-* **RCUI-604:** [dependencies] remove dependencies, downshift,  react-resize-detector, react-sortable-hoc, smoothscroll-polyfill ([465fd18](https://git.ringcentral.com/RCUI/rcui/commit/465fd18400ba5472029a905ab9b548b31632190c))
-* **RCUI-604:** [Icon] update icon ([965dd27](https://git.ringcentral.com/RCUI/rcui/commit/965dd2783316986f249285d52fec6d7c304b1e78))
-* **RCUI-604:** [ZoomArea] remove ZoomArea ([b635e54](https://git.ringcentral.com/RCUI/rcui/commit/b635e54475402cc66a228aa6914e018ec29978d2))
+* **RCUI-595:** [add useThemeProps to components] add forwardRef and remove useThemeProps in deprecated components ([d381f3a](https://github.com/ringcentral/juno/commit/d381f3a73f182dfa4ddd4a30855ea1cb2888e86d))
+* **RCUI-595:** [add useThemeProps to components] add useThemeProps ([59da666](https://github.com/ringcentral/juno/commit/59da666c94c50abe5d1c310e14a539cfb37d4999))
+* **RCUI-595:** [add useThemeProps to components] add useThemeProps story and update custom theme doc ([be950be](https://github.com/ringcentral/juno/commit/be950be2ef1663bb392dbb582f5bc09814d917c3))
+* **RCUI-595:** [add useThemeProps to components] add useThemePropsd ([f01dd61](https://github.com/ringcentral/juno/commit/f01dd61f0f3dfbcbcbd2bc730429150776b75b5f))
+* **RCUI-595:** [add useThemeProps to components] fix circular type reference cause by 'typeof' ([ab2f487](https://github.com/ringcentral/juno/commit/ab2f4877887bfd07f84187e495d401378e1f4059))
+* **RCUI-595:** [add useThemeProps to components] fix menu ([594041d](https://github.com/ringcentral/juno/commit/594041d0145acf76f9826ef9f4f63503dc31cadb))
+* **RCUI-595:** [add useThemeProps to components] fix prettier problem ([1abbd14](https://github.com/ringcentral/juno/commit/1abbd1466830fe50475f85eebb63f0ec8094f415))
+* **RCUI-595:** [add useThemeProps to components] fix tablepagination ([d858494](https://github.com/ringcentral/juno/commit/d85849431ef022f6e3783463c6e17a1eacbce9ea))
+* **RCUI-595:** [add useThemeProps to components] rm DialPadButton in theme.ts ([c46b11a](https://github.com/ringcentral/juno/commit/c46b11a9ae386217ed5e0318ee2a35a933d1397e))
+* **RCUI-595:** [add useThemeProps to components] update story snapshot ([c6f9234](https://github.com/ringcentral/juno/commit/c6f9234135375aa6a2ff8f4f5126cafb1f77eb01))
+* **RCUI-598:** [[build] Support tree-shaking when importing by subpath] config ([049383f](https://github.com/ringcentral/juno/commit/049383f199138bce57e74a395ae2227e9a5dbf52))
+* **RCUI-600:** [Virtuoso] clone virtuoso into project 1.9.3 ([c3f6f93](https://github.com/ringcentral/juno/commit/c3f6f9399f8d62a09665b6207da7d25353c11d25))
+* **RCUI-600:** [Virtuoso] format and fix eslint with package ([2f82880](https://github.com/ringcentral/juno/commit/2f828802cfbfb1ba6a8e24883f09543070ff1290))
+* **RCUI-600:** [Virtuoso] support `PortalWindowContext` ([e6a98e3](https://github.com/ringcentral/juno/commit/e6a98e39aec248ccd57a12f0ff9dad6dc803cca9))
+* **RCUI-600:** [Virtuoso] update virtuoso version to 1.9.3 ([7dd3958](https://github.com/ringcentral/juno/commit/7dd3958922cebb2f02adf05a84139cdc8672162a))
+* **RCUI-602:** [TablePagination] implement whole new TablePagination ([0fd3c9d](https://github.com/ringcentral/juno/commit/0fd3c9d8848161fe06b23c5797c623ca28cc7efb))
+* **RCUI-603:** [Downshift] remove deprecated component ([1d81a37](https://github.com/ringcentral/juno/commit/1d81a37c11bc7ada2dd0297186bfb2c63fc0f156))
+* **RCUI-603:** [Downshift] remove deprecated component ([3f0dd2e](https://github.com/ringcentral/juno/commit/3f0dd2e45619afccdbe8c3280a8bcb76ef1e265b))
+* **RCUI-603:** [Theme] fix create theme for dark and light palette ([c8f5abc](https://github.com/ringcentral/juno/commit/c8f5abc4d9f99c695a34e22426d029acd49715ea))
+* **RCUI-604:** [dependencies] remove dependencies, downshift,  react-resize-detector, react-sortable-hoc, smoothscroll-polyfill ([465fd18](https://github.com/ringcentral/juno/commit/465fd18400ba5472029a905ab9b548b31632190c))
+* **RCUI-604:** [Icon] update icon ([965dd27](https://github.com/ringcentral/juno/commit/965dd2783316986f249285d52fec6d7c304b1e78))
+* **RCUI-604:** [ZoomArea] remove ZoomArea ([b635e54](https://github.com/ringcentral/juno/commit/b635e54475402cc66a228aa6914e018ec29978d2))
 
 
 ### Bug Fixes
 
-* **RCUI-595:** [add useThemeProps to components] remove any ([efe6e6c](https://git.ringcentral.com/RCUI/rcui/commit/efe6e6ced9f0b92546870b3be94dd78c7f9c3def))
-* **RCUI-595:** [Type] add miss WithTooltip props type ([f1e8167](https://git.ringcentral.com/RCUI/rcui/commit/f1e8167f522f9dcf6331e53c8fc1ce2be0e8cbe2))
-* **RCUI-601:** [Deprecated] remove Deprecated ListItemIcon ([c5052ee](https://git.ringcentral.com/RCUI/rcui/commit/c5052eefd1ddbed1847385524bb244d1fb3b3c8a))
-* **RCUI-601:** [Tooltip] fix forceHide logic, also bind blur event with item ([1ed8407](https://git.ringcentral.com/RCUI/rcui/commit/1ed8407344dc7f39d35dc2153b9c7d3181333858))
-* **RCUI-601:** [VisuallyHidden] share style between useAnnouncer and VisuallyHidden ([3b1f983](https://git.ringcentral.com/RCUI/rcui/commit/3b1f983b56c481f1bc1edebccf14dfd3a15c7f83))
-* **RCUI-603:** [Deprecated] remove deprecated export ([86b4532](https://git.ringcentral.com/RCUI/rcui/commit/86b4532c9a312d6a8268bed42c336c42fc7fdc23))
-* **RCUI-603:** [Deprecated] remove Deprecated IconButton ([f88c852](https://git.ringcentral.com/RCUI/rcui/commit/f88c8524d7ee0ea81d1edb5cb02247566265f187))
-* **RCUI-603:** [Deprecated] remove VirtualizedList related code ([358e5b8](https://git.ringcentral.com/RCUI/rcui/commit/358e5b83bc2df43b2ad807939ddb1a6659ea4119))
-* **RCUI-603:** [Hoc] migrate withDelay import path ([406bf39](https://git.ringcentral.com/RCUI/rcui/commit/406bf393f592de4a7c8330b6f088bb5c89bffe3f))
-* **RCUI-603:** [Hoc] move hoc into foundation ([8b7e096](https://git.ringcentral.com/RCUI/rcui/commit/8b7e09661b96d5da6c91eceb3c6e82c879ff6103))
-* **RCUI-603:** [Hoc] move withToolTip into Tooltip component ([93d6ca0](https://git.ringcentral.com/RCUI/rcui/commit/93d6ca0aed210382d293d9ec7f2cb50c18563cc1))
-* **RCUI-603:** [TableHeadCell] switch error import from util to lodash method ([5f2d860](https://git.ringcentral.com/RCUI/rcui/commit/5f2d860b5bbc64ad6a92728cf84adc77d736a97f))
-* **RCUI-603:** [useA11yKeyDown] rename to `useA11yKeyEvent` and change api using way ([36528bd](https://git.ringcentral.com/RCUI/rcui/commit/36528bd82dfb3516a3a2725d4bd57c74dff0b24c))
-* **RCUI-603:** [VirtualizedDivider] fix VirtualizedDivider style ([5e65917](https://git.ringcentral.com/RCUI/rcui/commit/5e65917013d4d0fee6c3c0067ae045334284df3c))
-* **RCUI-603:** [withToolTip] migrate withToolTip import path ([ee62c3e](https://git.ringcentral.com/RCUI/rcui/commit/ee62c3e7629c680e748df64440ddb9b7e6eaf4a0))
+* **RCUI-595:** [add useThemeProps to components] remove any ([efe6e6c](https://github.com/ringcentral/juno/commit/efe6e6ced9f0b92546870b3be94dd78c7f9c3def))
+* **RCUI-595:** [Type] add miss WithTooltip props type ([f1e8167](https://github.com/ringcentral/juno/commit/f1e8167f522f9dcf6331e53c8fc1ce2be0e8cbe2))
+* **RCUI-601:** [Deprecated] remove Deprecated ListItemIcon ([c5052ee](https://github.com/ringcentral/juno/commit/c5052eefd1ddbed1847385524bb244d1fb3b3c8a))
+* **RCUI-601:** [Tooltip] fix forceHide logic, also bind blur event with item ([1ed8407](https://github.com/ringcentral/juno/commit/1ed8407344dc7f39d35dc2153b9c7d3181333858))
+* **RCUI-601:** [VisuallyHidden] share style between useAnnouncer and VisuallyHidden ([3b1f983](https://github.com/ringcentral/juno/commit/3b1f983b56c481f1bc1edebccf14dfd3a15c7f83))
+* **RCUI-603:** [Deprecated] remove deprecated export ([86b4532](https://github.com/ringcentral/juno/commit/86b4532c9a312d6a8268bed42c336c42fc7fdc23))
+* **RCUI-603:** [Deprecated] remove Deprecated IconButton ([f88c852](https://github.com/ringcentral/juno/commit/f88c8524d7ee0ea81d1edb5cb02247566265f187))
+* **RCUI-603:** [Deprecated] remove VirtualizedList related code ([358e5b8](https://github.com/ringcentral/juno/commit/358e5b83bc2df43b2ad807939ddb1a6659ea4119))
+* **RCUI-603:** [Hoc] migrate withDelay import path ([406bf39](https://github.com/ringcentral/juno/commit/406bf393f592de4a7c8330b6f088bb5c89bffe3f))
+* **RCUI-603:** [Hoc] move hoc into foundation ([8b7e096](https://github.com/ringcentral/juno/commit/8b7e09661b96d5da6c91eceb3c6e82c879ff6103))
+* **RCUI-603:** [Hoc] move withToolTip into Tooltip component ([93d6ca0](https://github.com/ringcentral/juno/commit/93d6ca0aed210382d293d9ec7f2cb50c18563cc1))
+* **RCUI-603:** [TableHeadCell] switch error import from util to lodash method ([5f2d860](https://github.com/ringcentral/juno/commit/5f2d860b5bbc64ad6a92728cf84adc77d736a97f))
+* **RCUI-603:** [useA11yKeyDown] rename to `useA11yKeyEvent` and change api using way ([36528bd](https://github.com/ringcentral/juno/commit/36528bd82dfb3516a3a2725d4bd57c74dff0b24c))
+* **RCUI-603:** [VirtualizedDivider] fix VirtualizedDivider style ([5e65917](https://github.com/ringcentral/juno/commit/5e65917013d4d0fee6c3c0067ae045334284df3c))
+* **RCUI-603:** [withToolTip] migrate withToolTip import path ([ee62c3e](https://github.com/ringcentral/juno/commit/ee62c3e7629c680e748df64440ddb9b7e6eaf4a0))
 
-### [1.8.6](https://git.ringcentral.com/RCUI/rcui/compare/1.8.5...1.8.6) (2021-07-07)
+### [1.8.6](https://github.com/ringcentral/juno/compare/1.8.5...1.8.6) (2021-07-07)
 
 
 ### ⚠ BREAKING CHANGES
@@ -1527,42 +1527,42 @@ renderOption={(
 
 ### Features
 
-* **RCUI-514:** [Downshift] provide groupBy feature ([5d6554c](https://git.ringcentral.com/RCUI/rcui/commit/5d6554c9181218382a7f22b4ed99d33b37ee98dc))
-* **RCUI-584:** [Animation] implement whole animations ([4e59265](https://git.ringcentral.com/RCUI/rcui/commit/4e59265fece1fc7956d7edafc495947a32c4acec))
-* **RCUI-584:** [Portal] provide Mui portal outside, remove `useportal` ([7ae8866](https://git.ringcentral.com/RCUI/rcui/commit/7ae8866fdc409da20d97fdc038f872a95fc56bfb))
-* **RCUI-590:** [[VirtualizedList]Make virtualized list compatible with chrome 91+] only use overflow-anchor in chrome and do not use both solutions at the same time ([8b7e0d9](https://git.ringcentral.com/RCUI/rcui/commit/8b7e0d9f7dca8336e292ebf8becce229a2eed9bc))
-* **RCUI-591:** [Avatar] provide shortName and colorToken hook ([4d7dda3](https://git.ringcentral.com/RCUI/rcui/commit/4d7dda3d419aa189b09a220be6925d44f2c89eb9))
-* **RCUI-594:** [Downshift] migrate to `useKeyboardMoveFocus` to control all focus behaviours. ([4112940](https://git.ringcentral.com/RCUI/rcui/commit/411294053c1b68120417dae50cab89984205e595))
-* **RCUI-594:** [Hook] provide `useHiddenToFocus` to move focus from hidden element ([3cd4cd7](https://git.ringcentral.com/RCUI/rcui/commit/3cd4cd7a8ce9f3baf3053956e90743918e5f8fdd))
-* **RCUI-594:** [Hook] provide cancelable sleep method ([26350ba](https://git.ringcentral.com/RCUI/rcui/commit/26350ba55fb610aac718e5234222d9d55dfbb0b9))
-* **RCUI-594:** [Hook] provide hook for useKeyboardMoveFocus, useOnlyOneFocusable ([31cc258](https://git.ringcentral.com/RCUI/rcui/commit/31cc258d512e974b26187f331584ed4d4f5bf7bd))
-* **RCUI-594:** [Hook] provide useRetry for retry times when exec callback fail ([4f132b8](https://git.ringcentral.com/RCUI/rcui/commit/4f132b81bd31a05bb077961ba83a433a585efc96))
-* **RCUI-594:** [RcPortalWindowContext] init document ad default value ([23e8de4](https://git.ringcentral.com/RCUI/rcui/commit/23e8de4b2ddd6278dd7a4199aae20ad2315c5c2a))
-* **RCUI-594:** [Select] migrate to new VirtualizedMenu with `Virtuoso` ([55f7d75](https://git.ringcentral.com/RCUI/rcui/commit/55f7d7595e94db8e107bc0b9c6fd36ecc6dc3b4d))
-* **RCUI-594:** [Utils] provide getScrollbarSize from Mui ([0bc53ce](https://git.ringcentral.com/RCUI/rcui/commit/0bc53ce43eb968dcb14549bcefa15e513a7f852d))
-* **RCUI-594:** [VirtualizedMenu]  new VirtualizedMenu with `Virtuoso` ([a54ab71](https://git.ringcentral.com/RCUI/rcui/commit/a54ab71b3a6cd00acb141b366bf4e98cad8b6c1e))
-* **RCUI-594:** [Virtuoso] provide `useDynamicHeight`, `useHighlightScroll` ([116ec8b](https://git.ringcentral.com/RCUI/rcui/commit/116ec8b6def2b68fd6aa8c49ed8ff461d197431f))
-* **RCUI-594:** [Virtuoso] provide utils with `isOutOfRange` ([06581b8](https://git.ringcentral.com/RCUI/rcui/commit/06581b8d1201e2a13400f78e58ede2bfa9025d24))
-* **RCUI-594:** [Virtuoso] re-export virtuoso ([ee661a0](https://git.ringcentral.com/RCUI/rcui/commit/ee661a03fb0e344ec184aaff7b21772c126fcb7e))
-* **RCUI-599:** [Hook] `useOverflow`  hook for trigger when overflow state change ([3ff8723](https://git.ringcentral.com/RCUI/rcui/commit/3ff87231982f5e5f23f6bc8e3df4b9fb627660c2))
-* **RCUI-601:** [focusVisible] change focusVisible color to `interactive.f01` ([66970dd](https://git.ringcentral.com/RCUI/rcui/commit/66970dd7c8feb6b810ac1dbd5067bdd72747da68))
+* **RCUI-514:** [Downshift] provide groupBy feature ([5d6554c](https://github.com/ringcentral/juno/commit/5d6554c9181218382a7f22b4ed99d33b37ee98dc))
+* **RCUI-584:** [Animation] implement whole animations ([4e59265](https://github.com/ringcentral/juno/commit/4e59265fece1fc7956d7edafc495947a32c4acec))
+* **RCUI-584:** [Portal] provide Mui portal outside, remove `useportal` ([7ae8866](https://github.com/ringcentral/juno/commit/7ae8866fdc409da20d97fdc038f872a95fc56bfb))
+* **RCUI-590:** [[VirtualizedList]Make virtualized list compatible with chrome 91+] only use overflow-anchor in chrome and do not use both solutions at the same time ([8b7e0d9](https://github.com/ringcentral/juno/commit/8b7e0d9f7dca8336e292ebf8becce229a2eed9bc))
+* **RCUI-591:** [Avatar] provide shortName and colorToken hook ([4d7dda3](https://github.com/ringcentral/juno/commit/4d7dda3d419aa189b09a220be6925d44f2c89eb9))
+* **RCUI-594:** [Downshift] migrate to `useKeyboardMoveFocus` to control all focus behaviours. ([4112940](https://github.com/ringcentral/juno/commit/411294053c1b68120417dae50cab89984205e595))
+* **RCUI-594:** [Hook] provide `useHiddenToFocus` to move focus from hidden element ([3cd4cd7](https://github.com/ringcentral/juno/commit/3cd4cd7a8ce9f3baf3053956e90743918e5f8fdd))
+* **RCUI-594:** [Hook] provide cancelable sleep method ([26350ba](https://github.com/ringcentral/juno/commit/26350ba55fb610aac718e5234222d9d55dfbb0b9))
+* **RCUI-594:** [Hook] provide hook for useKeyboardMoveFocus, useOnlyOneFocusable ([31cc258](https://github.com/ringcentral/juno/commit/31cc258d512e974b26187f331584ed4d4f5bf7bd))
+* **RCUI-594:** [Hook] provide useRetry for retry times when exec callback fail ([4f132b8](https://github.com/ringcentral/juno/commit/4f132b81bd31a05bb077961ba83a433a585efc96))
+* **RCUI-594:** [RcPortalWindowContext] init document ad default value ([23e8de4](https://github.com/ringcentral/juno/commit/23e8de4b2ddd6278dd7a4199aae20ad2315c5c2a))
+* **RCUI-594:** [Select] migrate to new VirtualizedMenu with `Virtuoso` ([55f7d75](https://github.com/ringcentral/juno/commit/55f7d7595e94db8e107bc0b9c6fd36ecc6dc3b4d))
+* **RCUI-594:** [Utils] provide getScrollbarSize from Mui ([0bc53ce](https://github.com/ringcentral/juno/commit/0bc53ce43eb968dcb14549bcefa15e513a7f852d))
+* **RCUI-594:** [VirtualizedMenu]  new VirtualizedMenu with `Virtuoso` ([a54ab71](https://github.com/ringcentral/juno/commit/a54ab71b3a6cd00acb141b366bf4e98cad8b6c1e))
+* **RCUI-594:** [Virtuoso] provide `useDynamicHeight`, `useHighlightScroll` ([116ec8b](https://github.com/ringcentral/juno/commit/116ec8b6def2b68fd6aa8c49ed8ff461d197431f))
+* **RCUI-594:** [Virtuoso] provide utils with `isOutOfRange` ([06581b8](https://github.com/ringcentral/juno/commit/06581b8d1201e2a13400f78e58ede2bfa9025d24))
+* **RCUI-594:** [Virtuoso] re-export virtuoso ([ee661a0](https://github.com/ringcentral/juno/commit/ee661a03fb0e344ec184aaff7b21772c126fcb7e))
+* **RCUI-599:** [Hook] `useOverflow`  hook for trigger when overflow state change ([3ff8723](https://github.com/ringcentral/juno/commit/3ff87231982f5e5f23f6bc8e3df4b9fb627660c2))
+* **RCUI-601:** [focusVisible] change focusVisible color to `interactive.f01` ([66970dd](https://github.com/ringcentral/juno/commit/66970dd7c8feb6b810ac1dbd5067bdd72747da68))
 
 
 ### Bug Fixes
 
-* **RCUI-584:** [Animation] remove all old animation ([4425358](https://git.ringcentral.com/RCUI/rcui/commit/4425358ba1332a5fe870d0c5efd9ac490c5edcfa))
-* **RCUI-584:** [Hoc] re-export Hoc ([8e6d987](https://git.ringcentral.com/RCUI/rcui/commit/8e6d9871de9f60a0bfd7bba0db1621a7ddfc0169))
-* **RCUI-584:** [ZoomArea] fix ZoomArea type naming ([1baa7f3](https://git.ringcentral.com/RCUI/rcui/commit/1baa7f3ddea71622d634128a6979656d871a1b83))
-* **RCUI-586:** [Select] boxSelect should have outline in highContast Theme ([2a75772](https://git.ringcentral.com/RCUI/rcui/commit/2a75772273b7bb3f857e005495a6110ee33f6842))
-* **RCUI-590:** [[VirtualizedList]Make virtualized list compatible with chrome 91+] fix check logic code ([18ad833](https://git.ringcentral.com/RCUI/rcui/commit/18ad8337b0d8726fc1b7df832e86560d2e15739c))
-* **RCUI-592:** [Responsive] change default breakpointMap same with theme breakpoint tokens ([b85dc26](https://git.ringcentral.com/RCUI/rcui/commit/b85dc26a253f07574a25aef0b5c91f44f7859901))
-* **RCUI-594:** [Dialer] migrate to useKeyboardMoveFocus ([ecdd0f8](https://git.ringcentral.com/RCUI/rcui/commit/ecdd0f8d34dfc89057050514383f615c10b50afb))
-* **RCUI-594:** [MenuItem] fix menu item menuItemId with useId ([a97bdb2](https://git.ringcentral.com/RCUI/rcui/commit/a97bdb26fc2afc3b42969a5981f5b452f6789443))
-* **RCUI-594:** [MenuList] remove MenuList min-width and max-width for use easy ([5ea4b19](https://git.ringcentral.com/RCUI/rcui/commit/5ea4b1902fafcd14a4137e1275b2669ad76ab493))
-* **RCUI-594:** [VirtualizedMenus]  deprecated old VirtualizedMenu ([fc9bb85](https://git.ringcentral.com/RCUI/rcui/commit/fc9bb85f4a785f378ce6eb547c42aad280cd33d7))
-* **RCUI-599:** [Text] fix useRcTooltip with open error, migrate to `useOverflow` ([4b44aee](https://git.ringcentral.com/RCUI/rcui/commit/4b44aee30312275cc190247225effa4e40bc541e))
+* **RCUI-584:** [Animation] remove all old animation ([4425358](https://github.com/ringcentral/juno/commit/4425358ba1332a5fe870d0c5efd9ac490c5edcfa))
+* **RCUI-584:** [Hoc] re-export Hoc ([8e6d987](https://github.com/ringcentral/juno/commit/8e6d9871de9f60a0bfd7bba0db1621a7ddfc0169))
+* **RCUI-584:** [ZoomArea] fix ZoomArea type naming ([1baa7f3](https://github.com/ringcentral/juno/commit/1baa7f3ddea71622d634128a6979656d871a1b83))
+* **RCUI-586:** [Select] boxSelect should have outline in highContast Theme ([2a75772](https://github.com/ringcentral/juno/commit/2a75772273b7bb3f857e005495a6110ee33f6842))
+* **RCUI-590:** [[VirtualizedList]Make virtualized list compatible with chrome 91+] fix check logic code ([18ad833](https://github.com/ringcentral/juno/commit/18ad8337b0d8726fc1b7df832e86560d2e15739c))
+* **RCUI-592:** [Responsive] change default breakpointMap same with theme breakpoint tokens ([b85dc26](https://github.com/ringcentral/juno/commit/b85dc26a253f07574a25aef0b5c91f44f7859901))
+* **RCUI-594:** [Dialer] migrate to useKeyboardMoveFocus ([ecdd0f8](https://github.com/ringcentral/juno/commit/ecdd0f8d34dfc89057050514383f615c10b50afb))
+* **RCUI-594:** [MenuItem] fix menu item menuItemId with useId ([a97bdb2](https://github.com/ringcentral/juno/commit/a97bdb26fc2afc3b42969a5981f5b452f6789443))
+* **RCUI-594:** [MenuList] remove MenuList min-width and max-width for use easy ([5ea4b19](https://github.com/ringcentral/juno/commit/5ea4b1902fafcd14a4137e1275b2669ad76ab493))
+* **RCUI-594:** [VirtualizedMenus]  deprecated old VirtualizedMenu ([fc9bb85](https://github.com/ringcentral/juno/commit/fc9bb85f4a785f378ce6eb547c42aad280cd33d7))
+* **RCUI-599:** [Text] fix useRcTooltip with open error, migrate to `useOverflow` ([4b44aee](https://github.com/ringcentral/juno/commit/4b44aee30312275cc190247225effa4e40bc541e))
 
-### [1.8.5](https://git.ringcentral.com/RCUI/rcui/compare/1.8.4...1.8.5) (2021-06-30)
+### [1.8.5](https://github.com/ringcentral/juno/compare/1.8.4...1.8.5) (2021-06-30)
 
 ## Main change:
 
@@ -1583,32 +1583,32 @@ renderOption={(
 
 ### Features
 
-* **RCUI-391:** [InlineEditable] cleanup InlineEditable ([b13ad4c](https://git.ringcentral.com/RCUI/rcui/commit/b13ad4c92f1685d5936bf9efdde2b5c69c777435))
-* **RCUI-580:** [SplitButton] keep active style when menu open ([6d85069](https://git.ringcentral.com/RCUI/rcui/commit/6d850690104c031358eca1993462bb77d354dc41))
-* **RCUI-581:** [Foundation] provide GlobalScrollBarStyle ([a61633a](https://git.ringcentral.com/RCUI/rcui/commit/a61633a087c0b103261069d0aabafa403144b88e))
-* **RCUI-585:** [Theme] remove deprecated token ([efb872b](https://git.ringcentral.com/RCUI/rcui/commit/efb872b1fe8ca3e600bdf614379c368b9c7e4ec1))
-* **RCUI-585:** [Theme] remove deprecated token ([77a15aa](https://git.ringcentral.com/RCUI/rcui/commit/77a15aade8f74f58815b36a9780db4f59a0f2a56))
-* **RCUI-585:** [Theme] remove mui default typography ([3c462dd](https://git.ringcentral.com/RCUI/rcui/commit/3c462ddd2fccb49207497cc934e8de8583474214))
-* **RCUI-585:** [Theme] Sync themes and change default theme to rcBlue ([5e32ff0](https://git.ringcentral.com/RCUI/rcui/commit/5e32ff00a3c337b241e4c85e9da13d473cb9fda3))
-* **RCUI-585:** [Theme] Sync themes and change default theme to rcBlue ([7281f55](https://git.ringcentral.com/RCUI/rcui/commit/7281f5568ead2d9ac442340a4e065db6e1702d73))
-* **RCUI-585:** [Theme] Sync themes and update scss ([3af58cb](https://git.ringcentral.com/RCUI/rcui/commit/3af58cb0fa83725db81f3c1c1fecc942e15b9c36))
-* **RCUI-586:** [Theme] fix theme merge ([d0d1f9d](https://git.ringcentral.com/RCUI/rcui/commit/d0d1f9d63062a7923239b48d6018509c05bb0441))
-* **RCUI-586:** [Theme] update default theme ([270171a](https://git.ringcentral.com/RCUI/rcui/commit/270171a5f58a1bdb4531d91d531bf5476d4aec75))
-* **RCUI-587:** [Dialer] support keypadMode with Dialer, new util setSelectionPosition, useFixedEndSelection ([a07cc1e](https://git.ringcentral.com/RCUI/rcui/commit/a07cc1eb1ae1f6a27c1fcc533d078834446acb6a))
-* **RCUI-588:** [Downshift] support noSkip that will no skip disabled item highlight ([7a76dc7](https://git.ringcentral.com/RCUI/rcui/commit/7a76dc794841333b297242d1557566e6ddfb7e56))
+* **RCUI-391:** [InlineEditable] cleanup InlineEditable ([b13ad4c](https://github.com/ringcentral/juno/commit/b13ad4c92f1685d5936bf9efdde2b5c69c777435))
+* **RCUI-580:** [SplitButton] keep active style when menu open ([6d85069](https://github.com/ringcentral/juno/commit/6d850690104c031358eca1993462bb77d354dc41))
+* **RCUI-581:** [Foundation] provide GlobalScrollBarStyle ([a61633a](https://github.com/ringcentral/juno/commit/a61633a087c0b103261069d0aabafa403144b88e))
+* **RCUI-585:** [Theme] remove deprecated token ([efb872b](https://github.com/ringcentral/juno/commit/efb872b1fe8ca3e600bdf614379c368b9c7e4ec1))
+* **RCUI-585:** [Theme] remove deprecated token ([77a15aa](https://github.com/ringcentral/juno/commit/77a15aade8f74f58815b36a9780db4f59a0f2a56))
+* **RCUI-585:** [Theme] remove mui default typography ([3c462dd](https://github.com/ringcentral/juno/commit/3c462ddd2fccb49207497cc934e8de8583474214))
+* **RCUI-585:** [Theme] Sync themes and change default theme to rcBlue ([5e32ff0](https://github.com/ringcentral/juno/commit/5e32ff00a3c337b241e4c85e9da13d473cb9fda3))
+* **RCUI-585:** [Theme] Sync themes and change default theme to rcBlue ([7281f55](https://github.com/ringcentral/juno/commit/7281f5568ead2d9ac442340a4e065db6e1702d73))
+* **RCUI-585:** [Theme] Sync themes and update scss ([3af58cb](https://github.com/ringcentral/juno/commit/3af58cb0fa83725db81f3c1c1fecc942e15b9c36))
+* **RCUI-586:** [Theme] fix theme merge ([d0d1f9d](https://github.com/ringcentral/juno/commit/d0d1f9d63062a7923239b48d6018509c05bb0441))
+* **RCUI-586:** [Theme] update default theme ([270171a](https://github.com/ringcentral/juno/commit/270171a5f58a1bdb4531d91d531bf5476d4aec75))
+* **RCUI-587:** [Dialer] support keypadMode with Dialer, new util setSelectionPosition, useFixedEndSelection ([a07cc1e](https://github.com/ringcentral/juno/commit/a07cc1eb1ae1f6a27c1fcc533d078834446acb6a))
+* **RCUI-588:** [Downshift] support noSkip that will no skip disabled item highlight ([7a76dc7](https://github.com/ringcentral/juno/commit/7a76dc794841333b297242d1557566e6ddfb7e56))
 
 
 ### Bug Fixes
 
-* **RCUI-585:** [Palette, Typography] pick only our palette and typography type ([86b0c7e](https://git.ringcentral.com/RCUI/rcui/commit/86b0c7e18e8267448ff7307c0f95947bd17deb91))
-* **RCUI-585:** [Scss] update scss ([cc59c9e](https://git.ringcentral.com/RCUI/rcui/commit/cc59c9eb7b1e56556cc43c2f2b933e684ca19316))
-* **RCUI-586:** [Theme] defined spacing ([b019361](https://git.ringcentral.com/RCUI/rcui/commit/b019361ac9eb0ebdeeb09b9fcb86c80aa924856e))
-* **RCUI-586:** [Theme] update sass ([44a7c51](https://git.ringcentral.com/RCUI/rcui/commit/44a7c517c1818355e12d572fd526a2ba8644e66a))
-* **RCUI-587:** [Dialer] fix error refactor with delete char ([5a5294c](https://git.ringcentral.com/RCUI/rcui/commit/5a5294cbd267c249d553bbf113b7a38d0ad97249))
-* **RCUI-590:** [Make virtualized list compatible with chrome 91+] fix the scrollTop jump after load more data ([12a3854](https://git.ringcentral.com/RCUI/rcui/commit/12a3854a5ad78e73605bf601fd391562cb330eae))
-* **RCUI-590:** [Virtualized List] fix some code ([59e2d31](https://git.ringcentral.com/RCUI/rcui/commit/59e2d31d0942d9e5c45d561b09569fc2f65b5005))
+* **RCUI-585:** [Palette, Typography] pick only our palette and typography type ([86b0c7e](https://github.com/ringcentral/juno/commit/86b0c7e18e8267448ff7307c0f95947bd17deb91))
+* **RCUI-585:** [Scss] update scss ([cc59c9e](https://github.com/ringcentral/juno/commit/cc59c9eb7b1e56556cc43c2f2b933e684ca19316))
+* **RCUI-586:** [Theme] defined spacing ([b019361](https://github.com/ringcentral/juno/commit/b019361ac9eb0ebdeeb09b9fcb86c80aa924856e))
+* **RCUI-586:** [Theme] update sass ([44a7c51](https://github.com/ringcentral/juno/commit/44a7c517c1818355e12d572fd526a2ba8644e66a))
+* **RCUI-587:** [Dialer] fix error refactor with delete char ([5a5294c](https://github.com/ringcentral/juno/commit/5a5294cbd267c249d553bbf113b7a38d0ad97249))
+* **RCUI-590:** [Make virtualized list compatible with chrome 91+] fix the scrollTop jump after load more data ([12a3854](https://github.com/ringcentral/juno/commit/12a3854a5ad78e73605bf601fd391562cb330eae))
+* **RCUI-590:** [Virtualized List] fix some code ([59e2d31](https://github.com/ringcentral/juno/commit/59e2d31d0942d9e5c45d561b09569fc2f65b5005))
 
-### [1.8.4](https://git.ringcentral.com/RCUI/rcui/compare/1.8.3...1.8.4) (2021-06-11)
+### [1.8.4](https://github.com/ringcentral/juno/compare/1.8.3...1.8.4) (2021-06-11)
 
 
 ### ⚠ BREAKING CHANGES
@@ -1625,29 +1625,29 @@ renderOption={(
 
 ### Features
 
-* **RCUI-576:** [DialTextField] support onlyAllowKeypadValue ([887a253](https://git.ringcentral.com/RCUI/rcui/commit/887a25305662e07d89098c9c2728470400ba3803))
-* **RCUI-576:** [Downshift] support `SuggestionList`, `useDownshift` export, support `maxContainerHeight` ([b322a20](https://git.ringcentral.com/RCUI/rcui/commit/b322a20dee47a81eb0860914bc68882a0502b3dd))
-* **RCUI-576:** [foundation] `flexWidth` Provide utils for set width in flex box ([9a54778](https://git.ringcentral.com/RCUI/rcui/commit/9a54778efa1987007ea564772e7d47688125e6ff))
-* **RCUI-576:** [IconButton] support elevation and activeElevation ([e96a6d8](https://git.ringcentral.com/RCUI/rcui/commit/e96a6d80e0872a4a898158ed19399aff7221e1eb))
-* **RCUI-576:** [Select] support Select with textVariant ([952d7d8](https://git.ringcentral.com/RCUI/rcui/commit/952d7d8077a1709a1f33a8c00d2be89671d04a36))
-* **RCUI-578:** [Deprecated] move deprecated to jupiter ([1045518](https://git.ringcentral.com/RCUI/rcui/commit/10455187af210a6c0cf101c0a19856924c65acc2))
-* **RCUI-578:** [Deprecated] move deprecated to jupiter ([5277229](https://git.ringcentral.com/RCUI/rcui/commit/5277229b37d872e1c9eaaeac1fdd4505d192dd91))
-* **RCUI-578:** [Deprecated] move deprecated to jupiter ([e2081a5](https://git.ringcentral.com/RCUI/rcui/commit/e2081a576f6470e6e2ee66e81d7464df9d144352))
-* **RCUI-578:** [Deprecated] move deprecated to jupiter ([f1f9beb](https://git.ringcentral.com/RCUI/rcui/commit/f1f9beb335a85379fc4809d6de4765fc86301499))
-* **RCUI-578:** [Deprecated] move deprecated to jupiter ([7daf0f0](https://git.ringcentral.com/RCUI/rcui/commit/7daf0f0b1c81dc88ec5148d8d1f1b7cd25249298))
-* **RCUI-578:** [Deprecated] move deprecated to jupiter ([8fd55b8](https://git.ringcentral.com/RCUI/rcui/commit/8fd55b8b1a6b5d042385a07aef92f45b3a2edb0e))
-* **RCUI-578:** [Deprecated] move deprecated to jupiter ([c1bd0e5](https://git.ringcentral.com/RCUI/rcui/commit/c1bd0e56a4e84176a9ffd13c51fd26e7e0934ba8))
-* **RCUI-578:** [Deprecated] move deprecated to jupiter ([d7aacdf](https://git.ringcentral.com/RCUI/rcui/commit/d7aacdf216783acdd7fea26a3416c0e19aba48e5))
-* **RCUI-578:** [Deprecated] move deprecated to jupiter ([14a598a](https://git.ringcentral.com/RCUI/rcui/commit/14a598ad10ee868b230976fcf9910355a5a4da85))
-* **RCUI-578:** [Deprecated] remove all __mock__ folder ([02e82a9](https://git.ringcentral.com/RCUI/rcui/commit/02e82a9b900aca1887bb44400aeac7d860679488))
+* **RCUI-576:** [DialTextField] support onlyAllowKeypadValue ([887a253](https://github.com/ringcentral/juno/commit/887a25305662e07d89098c9c2728470400ba3803))
+* **RCUI-576:** [Downshift] support `SuggestionList`, `useDownshift` export, support `maxContainerHeight` ([b322a20](https://github.com/ringcentral/juno/commit/b322a20dee47a81eb0860914bc68882a0502b3dd))
+* **RCUI-576:** [foundation] `flexWidth` Provide utils for set width in flex box ([9a54778](https://github.com/ringcentral/juno/commit/9a54778efa1987007ea564772e7d47688125e6ff))
+* **RCUI-576:** [IconButton] support elevation and activeElevation ([e96a6d8](https://github.com/ringcentral/juno/commit/e96a6d80e0872a4a898158ed19399aff7221e1eb))
+* **RCUI-576:** [Select] support Select with textVariant ([952d7d8](https://github.com/ringcentral/juno/commit/952d7d8077a1709a1f33a8c00d2be89671d04a36))
+* **RCUI-578:** [Deprecated] move deprecated to jupiter ([1045518](https://github.com/ringcentral/juno/commit/10455187af210a6c0cf101c0a19856924c65acc2))
+* **RCUI-578:** [Deprecated] move deprecated to jupiter ([5277229](https://github.com/ringcentral/juno/commit/5277229b37d872e1c9eaaeac1fdd4505d192dd91))
+* **RCUI-578:** [Deprecated] move deprecated to jupiter ([e2081a5](https://github.com/ringcentral/juno/commit/e2081a576f6470e6e2ee66e81d7464df9d144352))
+* **RCUI-578:** [Deprecated] move deprecated to jupiter ([f1f9beb](https://github.com/ringcentral/juno/commit/f1f9beb335a85379fc4809d6de4765fc86301499))
+* **RCUI-578:** [Deprecated] move deprecated to jupiter ([7daf0f0](https://github.com/ringcentral/juno/commit/7daf0f0b1c81dc88ec5148d8d1f1b7cd25249298))
+* **RCUI-578:** [Deprecated] move deprecated to jupiter ([8fd55b8](https://github.com/ringcentral/juno/commit/8fd55b8b1a6b5d042385a07aef92f45b3a2edb0e))
+* **RCUI-578:** [Deprecated] move deprecated to jupiter ([c1bd0e5](https://github.com/ringcentral/juno/commit/c1bd0e56a4e84176a9ffd13c51fd26e7e0934ba8))
+* **RCUI-578:** [Deprecated] move deprecated to jupiter ([d7aacdf](https://github.com/ringcentral/juno/commit/d7aacdf216783acdd7fea26a3416c0e19aba48e5))
+* **RCUI-578:** [Deprecated] move deprecated to jupiter ([14a598a](https://github.com/ringcentral/juno/commit/14a598ad10ee868b230976fcf9910355a5a4da85))
+* **RCUI-578:** [Deprecated] remove all __mock__ folder ([02e82a9](https://github.com/ringcentral/juno/commit/02e82a9b900aca1887bb44400aeac7d860679488))
 
 
 ### Bug Fixes
 
-* **RCUI-576:** [Export] re-export missing components ([e327bc7](https://git.ringcentral.com/RCUI/rcui/commit/e327bc7bfdd1f710a047276b4949718f788a5a7f))
-* **RCUI-576:** [Typography] fix typography with inherit variant not have font-family issue ([17f2522](https://git.ringcentral.com/RCUI/rcui/commit/17f2522af8668206a5f86f62bdc0147501b06211))
+* **RCUI-576:** [Export] re-export missing components ([e327bc7](https://github.com/ringcentral/juno/commit/e327bc7bfdd1f710a047276b4949718f788a5a7f))
+* **RCUI-576:** [Typography] fix typography with inherit variant not have font-family issue ([17f2522](https://github.com/ringcentral/juno/commit/17f2522af8668206a5f86f62bdc0147501b06211))
 
-### [1.8.3](https://git.ringcentral.com/RCUI/rcui/compare/1.8.2...1.8.3) (2021-06-10)
+### [1.8.3](https://github.com/ringcentral/juno/compare/1.8.2...1.8.3) (2021-06-10)
 
 ## Main change:
 
@@ -1673,61 +1673,61 @@ renderOption={(
 
 ### Features
 
-- **FIJI-34913:** [Icons] update icon list ([2b60791](https://git.ringcentral.com/RCUI/rcui/commit/2b60791c525c38ab686b0d7fb30021d05727a7a3))
-- **RCUI-391:** [foundation] provide clearWindowSelection method to clear window current selection cursor ([9d7cc42](https://git.ringcentral.com/RCUI/rcui/commit/9d7cc42b846d773b028509de4455d33f57343df4))
-- **RCUI-391:** [foundation] provide getCursorPosition utils for get current input element cursor position and is that selectRange state ([18528b3](https://git.ringcentral.com/RCUI/rcui/commit/18528b392e2594048336a5eee12ad4cf277e200d))
-- **RCUI-519:** [nonTouchHoverMedia] apply hover style to all need only have hover style in desktop components ([b53d353](https://git.ringcentral.com/RCUI/rcui/commit/b53d3533465f51ab97339bbc13af2e8e72672d0f))
-- **RCUI-519:** [nonTouchHoverMedia] apply to clean button ([517e79a](https://git.ringcentral.com/RCUI/rcui/commit/517e79a8b9ca1e215cd5534a141c04b123f18ef6))
-- **RCUI-533:** [Global Theme Props] support set props global with Downshift ([3a80ae2](https://git.ringcentral.com/RCUI/rcui/commit/3a80ae2939f89befa1b670dec95f2ac9865b6fad))
-- **RCUI-562:** [Timepicker] provide getTimestampFromHourAndMin ([898f91b](https://git.ringcentral.com/RCUI/rcui/commit/898f91b3d52682e04e1cb99f42e17b4acd762394))
-- **RCUI-562:** [useDepsChange] provide a deps listen for sync check is that value have change ([ba180c9](https://git.ringcentral.com/RCUI/rcui/commit/ba180c92aba5cb6c34e7ed7313c1be4e0f6c93bf))
-- **RCUI-562:** [useRefState] provide a deps listen for sync check is that value have change ([0132f3e](https://git.ringcentral.com/RCUI/rcui/commit/0132f3ec3b80151225941609e5dd71d935cd0c63))
-- **RCUI-570:** [Drawer] new component `Drawer` ([927b8c8](https://git.ringcentral.com/RCUI/rcui/commit/927b8c853389ea34863bfc433100f8524137bed0))
-- **RCUI-574:** [Dialer] add token color for dialer icon second text ([1c74648](https://git.ringcentral.com/RCUI/rcui/commit/1c7464833b5cc5461eed322bce263679cc6ec718))
-- **RCUI-576:** [Dialer] init whole dialer related components ([cbeab72](https://git.ringcentral.com/RCUI/rcui/commit/cbeab72909acfcd764aafd7f5d64c935119370c4))
-- **RCUI-576:** [Dialer] refactor whole dialer with useLongPress ([d0bca54](https://git.ringcentral.com/RCUI/rcui/commit/d0bca54d51848bbaf2867c0a7c83f2bc95a0c4ef))
-- **RCUI-576:** [Dialer] support touch device ([45b7331](https://git.ringcentral.com/RCUI/rcui/commit/45b7331fada5d19e8d64c9a15aa46a06387c1c57))
-- **RCUI-576:** [DialerPad] support arrow direction ([37446a9](https://git.ringcentral.com/RCUI/rcui/commit/37446a952c5504526b8059eb198c93bf42cd8524))
-- **RCUI-576:** [foundation] `useKeyDownOnce` Provide user trigger `onKeyDown` only one time when hold press on key. ([605b709](https://git.ringcentral.com/RCUI/rcui/commit/605b70947a260aad8a17418fb8cf0fe9ab2b67d4))
-- **RCUI-576:** [foundation] `useLongPress` Provide longPress helper, both `click`/`tab`/`keydown` will trigger event ([3b9df3d](https://git.ringcentral.com/RCUI/rcui/commit/3b9df3d13ff8c0616fc1c6d59474e02dc3925cc8))
-- **RCUI-576:** [foundation] `useTouchMouseEvent` Provide a utils for switch trigger touch event or mouse event between different device ([b1be608](https://git.ringcentral.com/RCUI/rcui/commit/b1be6088841a0378bbd6e73d413c8847dd6c1977))
-- **RCUI-576:** [IconButton] support persistBg class, let user can set color by className ([51f9f07](https://git.ringcentral.com/RCUI/rcui/commit/51f9f0734ba41d2c1ddb3c22b9022683adf44c86))
+- **FIJI-34913:** [Icons] update icon list ([2b60791](https://github.com/ringcentral/juno/commit/2b60791c525c38ab686b0d7fb30021d05727a7a3))
+- **RCUI-391:** [foundation] provide clearWindowSelection method to clear window current selection cursor ([9d7cc42](https://github.com/ringcentral/juno/commit/9d7cc42b846d773b028509de4455d33f57343df4))
+- **RCUI-391:** [foundation] provide getCursorPosition utils for get current input element cursor position and is that selectRange state ([18528b3](https://github.com/ringcentral/juno/commit/18528b392e2594048336a5eee12ad4cf277e200d))
+- **RCUI-519:** [nonTouchHoverMedia] apply hover style to all need only have hover style in desktop components ([b53d353](https://github.com/ringcentral/juno/commit/b53d3533465f51ab97339bbc13af2e8e72672d0f))
+- **RCUI-519:** [nonTouchHoverMedia] apply to clean button ([517e79a](https://github.com/ringcentral/juno/commit/517e79a8b9ca1e215cd5534a141c04b123f18ef6))
+- **RCUI-533:** [Global Theme Props] support set props global with Downshift ([3a80ae2](https://github.com/ringcentral/juno/commit/3a80ae2939f89befa1b670dec95f2ac9865b6fad))
+- **RCUI-562:** [Timepicker] provide getTimestampFromHourAndMin ([898f91b](https://github.com/ringcentral/juno/commit/898f91b3d52682e04e1cb99f42e17b4acd762394))
+- **RCUI-562:** [useDepsChange] provide a deps listen for sync check is that value have change ([ba180c9](https://github.com/ringcentral/juno/commit/ba180c92aba5cb6c34e7ed7313c1be4e0f6c93bf))
+- **RCUI-562:** [useRefState] provide a deps listen for sync check is that value have change ([0132f3e](https://github.com/ringcentral/juno/commit/0132f3ec3b80151225941609e5dd71d935cd0c63))
+- **RCUI-570:** [Drawer] new component `Drawer` ([927b8c8](https://github.com/ringcentral/juno/commit/927b8c853389ea34863bfc433100f8524137bed0))
+- **RCUI-574:** [Dialer] add token color for dialer icon second text ([1c74648](https://github.com/ringcentral/juno/commit/1c7464833b5cc5461eed322bce263679cc6ec718))
+- **RCUI-576:** [Dialer] init whole dialer related components ([cbeab72](https://github.com/ringcentral/juno/commit/cbeab72909acfcd764aafd7f5d64c935119370c4))
+- **RCUI-576:** [Dialer] refactor whole dialer with useLongPress ([d0bca54](https://github.com/ringcentral/juno/commit/d0bca54d51848bbaf2867c0a7c83f2bc95a0c4ef))
+- **RCUI-576:** [Dialer] support touch device ([45b7331](https://github.com/ringcentral/juno/commit/45b7331fada5d19e8d64c9a15aa46a06387c1c57))
+- **RCUI-576:** [DialerPad] support arrow direction ([37446a9](https://github.com/ringcentral/juno/commit/37446a952c5504526b8059eb198c93bf42cd8524))
+- **RCUI-576:** [foundation] `useKeyDownOnce` Provide user trigger `onKeyDown` only one time when hold press on key. ([605b709](https://github.com/ringcentral/juno/commit/605b70947a260aad8a17418fb8cf0fe9ab2b67d4))
+- **RCUI-576:** [foundation] `useLongPress` Provide longPress helper, both `click`/`tab`/`keydown` will trigger event ([3b9df3d](https://github.com/ringcentral/juno/commit/3b9df3d13ff8c0616fc1c6d59474e02dc3925cc8))
+- **RCUI-576:** [foundation] `useTouchMouseEvent` Provide a utils for switch trigger touch event or mouse event between different device ([b1be608](https://github.com/ringcentral/juno/commit/b1be6088841a0378bbd6e73d413c8847dd6c1977))
+- **RCUI-576:** [IconButton] support persistBg class, let user can set color by className ([51f9f07](https://github.com/ringcentral/juno/commit/51f9f0734ba41d2c1ddb3c22b9022683adf44c86))
 
 ### Bug Fixes
 
-- **RCUI-391:** [DialPad] comment for props type ([327d53f](https://git.ringcentral.com/RCUI/rcui/commit/327d53f69eb8fd934c17f7b643f2c2b9038df8e7))
-- **RCUI-391:** [foundation] fix useDebounce and useThrottle type ([9b0a576](https://git.ringcentral.com/RCUI/rcui/commit/9b0a576e76e736bedf1d19a7bc343974757148b2))
-- **RCUI-391:** [foundation] remove useEventListener warning, just destroy listener ([fdee13a](https://git.ringcentral.com/RCUI/rcui/commit/fdee13a97df8868a49b680192a43c548aae3d994))
-- **RCUI-533:** [Downshift] fix array polluted issue ([9c09be1](https://git.ringcentral.com/RCUI/rcui/commit/9c09be16339a16f68139f641a77f515f238b63ed))
-- **RCUI-533:** [Downshift] fix copy paste when disableCloseOnSelect={true} not open issue ([d1936db](https://git.ringcentral.com/RCUI/rcui/commit/d1936db495ffdf3d8c397479ece3655b4f49e37e))
-- **RCUI-533:** [Downshift] fix jest issue ([d5a7df9](https://git.ringcentral.com/RCUI/rcui/commit/d5a7df9c46dba797355225ea671bf0a4c58bf243))
-- **RCUI-533:** [Downshift] fix popper position issue when at the bottom and item number small that max ([53f6c83](https://git.ringcentral.com/RCUI/rcui/commit/53f6c8396d70f88800e25b77a97165e67ada809d))
-- **RCUI-533:** [Downshift] fix scroll scrollIssue, when optionItems.length is zero, just return -1 ([1037ed3](https://git.ringcentral.com/RCUI/rcui/commit/1037ed3f2a7b38fc4fcced02d4d441180723f02f))
-- **RCUI-554:** [Tooltip] fix logic with forceHide ([7a1bf7b](https://git.ringcentral.com/RCUI/rcui/commit/7a1bf7bf8c5edb0f09bfb0286bfb9dae71ae19b3))
-- **RCUI-554:** [Tooltip] fix when children button is `disabled` that error in Mui ([43ce47b](https://git.ringcentral.com/RCUI/rcui/commit/43ce47b5c99933d6df5b6081a4b8913770a1d3f8))
-- **RCUI-554:** [Tooltip] support show tooltip when switch tooltipForceHide ([e543b5a](https://git.ringcentral.com/RCUI/rcui/commit/e543b5a2f0d6e23f5ba7c893d534100603b136a6))
-- **RCUI-560:** [Timepicker] fix min and max check timing when range change ([6c2b0bf](https://git.ringcentral.com/RCUI/rcui/commit/6c2b0bfa7c3d883ea86310c472c044863b7051e4))
-- **RCUI-562:** [Snapshot] update snapshot ([fcb8b11](https://git.ringcentral.com/RCUI/rcui/commit/fcb8b111c5c7c6181abce6e49464c6dd310d208d))
-- **RCUI-562:** [TimePicker] check boundary after get original show hour value ([a9862c3](https://git.ringcentral.com/RCUI/rcui/commit/a9862c300ecd59a85c81f32f29cde3b5b1f05dab))
-- **RCUI-562:** [TimePicker] fix init selectionView init value when no value and has range set error show ([a163e1d](https://git.ringcentral.com/RCUI/rcui/commit/a163e1dc75fd2c9e44f431d9235ee1120b27e0c1))
-- **RCUI-562:** [TimePicker] fix min and max logic ([a0d7ddc](https://git.ringcentral.com/RCUI/rcui/commit/a0d7ddce2a839e121cd193f5de0ac9f55b322f70))
-- **RCUI-562:** [TimePicker] fix period init value with undefined ([2018519](https://git.ringcentral.com/RCUI/rcui/commit/201851911a4738217fefcdc78ff66ebee76f29bb))
-- **RCUI-562:** [TimePicker] fix period switch logic when only have min ([39c2df7](https://git.ringcentral.com/RCUI/rcui/commit/39c2df7c925f990c3d28198962a71fde5054df36))
-- **RCUI-565:** [Card Pressed State] Apply card pressed state when ripple is disabled ([ca90fcc](https://git.ringcentral.com/RCUI/rcui/commit/ca90fcc60ac7ebc97009016ac6bf2c8b539ce45d))
-- **RCUI-565:** [Card Pressed State] Removed unused vars ([dfaea59](https://git.ringcentral.com/RCUI/rcui/commit/dfaea59f94477a7efc5b543e365dd0f8bb3b37f5))
-- **RCUI-565:** [Card Pressed State] Updated story ([ae39394](https://git.ringcentral.com/RCUI/rcui/commit/ae39394bc3114854b896e39607c9f8662aab1eca))
-- **RCUI-565:** [Card] fix logic with `useThemeProps` ([8ef5196](https://git.ringcentral.com/RCUI/rcui/commit/8ef519680106b85c87062f4f41e7b23b8cb49f67))
-- **RCUI-565:** [Types] fix RcComponentsProps type for that can use Mui base props ([8b5df58](https://git.ringcentral.com/RCUI/rcui/commit/8b5df58c69c448b2e033697b28b95693da96cbd2))
-- **RCUI-566:** [PortalWindow] add some miss PortalWindow ([feb4c5b](https://git.ringcentral.com/RCUI/rcui/commit/feb4c5bc7f8ecdf2835d4df5fd342c2208330c84))
-- **RCUI-566:** [SubMenu] fix DetchedWindow popper postiton ([839d3fb](https://git.ringcentral.com/RCUI/rcui/commit/839d3fb131c37f12bff564ee347092f3f67cfe47))
-- **RCUI-567:** [Tabs] should not reorder the fixed item when switch to first item in MoreMenu varaint ([b631d79](https://git.ringcentral.com/RCUI/rcui/commit/b631d791ca0423eaaad5f17cdd6b02c079962819))
-- **RCUI-570:** [Drawer] set default radius as `lg` ([0262262](https://git.ringcentral.com/RCUI/rcui/commit/026226255a2e6493308c49f8371f9c1acc0e00ff))
-- **RCUI-572:** [Menu] deprecated menu support detachWindow ([44317c1](https://git.ringcentral.com/RCUI/rcui/commit/44317c113a216919d369d06c6282ad92273fca95))
-- **RCUI-575:** [Menu] popper outside the viewport ([b35b827](https://git.ringcentral.com/RCUI/rcui/commit/b35b82714d62dbf8c8c4f31863d80eb8d06295d5))
-- **RCUI-576:** [DialerPad] fix keydown delete button not re-focus issue ([20f80d4](https://git.ringcentral.com/RCUI/rcui/commit/20f80d4dc3fe4a6ed9798bab480dc44832a759b2))
-- **RCUI-577:** [IconButton] fix style with plain logic ([2636f2c](https://git.ringcentral.com/RCUI/rcui/commit/2636f2c5da6360c81c6adade52c0abd177e6e917))
+- **RCUI-391:** [DialPad] comment for props type ([327d53f](https://github.com/ringcentral/juno/commit/327d53f69eb8fd934c17f7b643f2c2b9038df8e7))
+- **RCUI-391:** [foundation] fix useDebounce and useThrottle type ([9b0a576](https://github.com/ringcentral/juno/commit/9b0a576e76e736bedf1d19a7bc343974757148b2))
+- **RCUI-391:** [foundation] remove useEventListener warning, just destroy listener ([fdee13a](https://github.com/ringcentral/juno/commit/fdee13a97df8868a49b680192a43c548aae3d994))
+- **RCUI-533:** [Downshift] fix array polluted issue ([9c09be1](https://github.com/ringcentral/juno/commit/9c09be16339a16f68139f641a77f515f238b63ed))
+- **RCUI-533:** [Downshift] fix copy paste when disableCloseOnSelect={true} not open issue ([d1936db](https://github.com/ringcentral/juno/commit/d1936db495ffdf3d8c397479ece3655b4f49e37e))
+- **RCUI-533:** [Downshift] fix jest issue ([d5a7df9](https://github.com/ringcentral/juno/commit/d5a7df9c46dba797355225ea671bf0a4c58bf243))
+- **RCUI-533:** [Downshift] fix popper position issue when at the bottom and item number small that max ([53f6c83](https://github.com/ringcentral/juno/commit/53f6c8396d70f88800e25b77a97165e67ada809d))
+- **RCUI-533:** [Downshift] fix scroll scrollIssue, when optionItems.length is zero, just return -1 ([1037ed3](https://github.com/ringcentral/juno/commit/1037ed3f2a7b38fc4fcced02d4d441180723f02f))
+- **RCUI-554:** [Tooltip] fix logic with forceHide ([7a1bf7b](https://github.com/ringcentral/juno/commit/7a1bf7bf8c5edb0f09bfb0286bfb9dae71ae19b3))
+- **RCUI-554:** [Tooltip] fix when children button is `disabled` that error in Mui ([43ce47b](https://github.com/ringcentral/juno/commit/43ce47b5c99933d6df5b6081a4b8913770a1d3f8))
+- **RCUI-554:** [Tooltip] support show tooltip when switch tooltipForceHide ([e543b5a](https://github.com/ringcentral/juno/commit/e543b5a2f0d6e23f5ba7c893d534100603b136a6))
+- **RCUI-560:** [Timepicker] fix min and max check timing when range change ([6c2b0bf](https://github.com/ringcentral/juno/commit/6c2b0bfa7c3d883ea86310c472c044863b7051e4))
+- **RCUI-562:** [Snapshot] update snapshot ([fcb8b11](https://github.com/ringcentral/juno/commit/fcb8b111c5c7c6181abce6e49464c6dd310d208d))
+- **RCUI-562:** [TimePicker] check boundary after get original show hour value ([a9862c3](https://github.com/ringcentral/juno/commit/a9862c300ecd59a85c81f32f29cde3b5b1f05dab))
+- **RCUI-562:** [TimePicker] fix init selectionView init value when no value and has range set error show ([a163e1d](https://github.com/ringcentral/juno/commit/a163e1dc75fd2c9e44f431d9235ee1120b27e0c1))
+- **RCUI-562:** [TimePicker] fix min and max logic ([a0d7ddc](https://github.com/ringcentral/juno/commit/a0d7ddce2a839e121cd193f5de0ac9f55b322f70))
+- **RCUI-562:** [TimePicker] fix period init value with undefined ([2018519](https://github.com/ringcentral/juno/commit/201851911a4738217fefcdc78ff66ebee76f29bb))
+- **RCUI-562:** [TimePicker] fix period switch logic when only have min ([39c2df7](https://github.com/ringcentral/juno/commit/39c2df7c925f990c3d28198962a71fde5054df36))
+- **RCUI-565:** [Card Pressed State] Apply card pressed state when ripple is disabled ([ca90fcc](https://github.com/ringcentral/juno/commit/ca90fcc60ac7ebc97009016ac6bf2c8b539ce45d))
+- **RCUI-565:** [Card Pressed State] Removed unused vars ([dfaea59](https://github.com/ringcentral/juno/commit/dfaea59f94477a7efc5b543e365dd0f8bb3b37f5))
+- **RCUI-565:** [Card Pressed State] Updated story ([ae39394](https://github.com/ringcentral/juno/commit/ae39394bc3114854b896e39607c9f8662aab1eca))
+- **RCUI-565:** [Card] fix logic with `useThemeProps` ([8ef5196](https://github.com/ringcentral/juno/commit/8ef519680106b85c87062f4f41e7b23b8cb49f67))
+- **RCUI-565:** [Types] fix RcComponentsProps type for that can use Mui base props ([8b5df58](https://github.com/ringcentral/juno/commit/8b5df58c69c448b2e033697b28b95693da96cbd2))
+- **RCUI-566:** [PortalWindow] add some miss PortalWindow ([feb4c5b](https://github.com/ringcentral/juno/commit/feb4c5bc7f8ecdf2835d4df5fd342c2208330c84))
+- **RCUI-566:** [SubMenu] fix DetchedWindow popper postiton ([839d3fb](https://github.com/ringcentral/juno/commit/839d3fb131c37f12bff564ee347092f3f67cfe47))
+- **RCUI-567:** [Tabs] should not reorder the fixed item when switch to first item in MoreMenu varaint ([b631d79](https://github.com/ringcentral/juno/commit/b631d791ca0423eaaad5f17cdd6b02c079962819))
+- **RCUI-570:** [Drawer] set default radius as `lg` ([0262262](https://github.com/ringcentral/juno/commit/026226255a2e6493308c49f8371f9c1acc0e00ff))
+- **RCUI-572:** [Menu] deprecated menu support detachWindow ([44317c1](https://github.com/ringcentral/juno/commit/44317c113a216919d369d06c6282ad92273fca95))
+- **RCUI-575:** [Menu] popper outside the viewport ([b35b827](https://github.com/ringcentral/juno/commit/b35b82714d62dbf8c8c4f31863d80eb8d06295d5))
+- **RCUI-576:** [DialerPad] fix keydown delete button not re-focus issue ([20f80d4](https://github.com/ringcentral/juno/commit/20f80d4dc3fe4a6ed9798bab480dc44832a759b2))
+- **RCUI-577:** [IconButton] fix style with plain logic ([2636f2c](https://github.com/ringcentral/juno/commit/2636f2c5da6360c81c6adade52c0abd177e6e917))
 
-### [1.8.2](https://git.ringcentral.com/RCUI/rcui/compare/1.8.1...1.8.2) (2021-05-26)
+### [1.8.2](https://github.com/ringcentral/juno/compare/1.8.1...1.8.2) (2021-05-26)
 
 ### ⚠ BREAKING CHANGES
 
@@ -1736,36 +1736,36 @@ renderOption={(
 
 ### Features
 
-- **Package:** [Lodash] update lodash to 4.17.21 ([6c3fbe4](https://git.ringcentral.com/RCUI/rcui/commit/6c3fbe4dc0ceceb86bf839fe2be8766b6e9c4871))
-- **RCUI-426:** [Avatar] move opacity to wrapper ([da66eb1](https://git.ringcentral.com/RCUI/rcui/commit/da66eb14e3d53b51570fc5f96c49f2a6a74e513b))
-- **RCUI-426:** [Avatar] support disabled when clickable ([0d9bfde](https://git.ringcentral.com/RCUI/rcui/commit/0d9bfdeb0d9c137a6dc9efb87285352504297c38))
-- **RCUI-533:** [Downshift] migrate VirtualizedList to 3rd react-virtuoso ([a7c131b](https://git.ringcentral.com/RCUI/rcui/commit/a7c131bc78117bd6e0f96cb6054f6121ddda91e2))
-- **RCUI-533:** [Downshift] support debug with popup menu ([01f6a9e](https://git.ringcentral.com/RCUI/rcui/commit/01f6a9e0269544a464a4a0874608246be8e5c649))
-- **RCUI-533:** [outerSize] provide a utils for get element outerSize ([fee4ebf](https://git.ringcentral.com/RCUI/rcui/commit/fee4ebff2d597ca1443b8bf264ac0161653a9fae))
-- **RCUI-533:** [useResizeObserver] support ignoreFireWhenObserve ([47d4a1b](https://git.ringcentral.com/RCUI/rcui/commit/47d4a1b65331853fe8d614e5a96986e9a61391df))
-- **RCUI-549:** [SubMenu] support DetachedWindow ([9d09cd4](https://git.ringcentral.com/RCUI/rcui/commit/9d09cd4c865ac87fa4d88a613eb376c25b68ad2b))
-- **RCUI-549:** [Token] add palette type dark ([288d85f](https://git.ringcentral.com/RCUI/rcui/commit/288d85f1b25f3539baee07e5388bba2469fa45ef))
-- **RCUI-549:** [Token] update theme ([63965b3](https://git.ringcentral.com/RCUI/rcui/commit/63965b39b0e84db16882c1ffe16455ea81a2ec41))
-- **RCUI-549:** [Token] update theme ([a059cd8](https://git.ringcentral.com/RCUI/rcui/commit/a059cd85b0fe8c92a9b9ed640882872574f96013))
-- **RCUI-555:** [DialPad] support addition props on DialPadButton ([72962d9](https://git.ringcentral.com/RCUI/rcui/commit/72962d9361d38336c0f65dee54e79a29867bdd4e))
+- **Package:** [Lodash] update lodash to 4.17.21 ([6c3fbe4](https://github.com/ringcentral/juno/commit/6c3fbe4dc0ceceb86bf839fe2be8766b6e9c4871))
+- **RCUI-426:** [Avatar] move opacity to wrapper ([da66eb1](https://github.com/ringcentral/juno/commit/da66eb14e3d53b51570fc5f96c49f2a6a74e513b))
+- **RCUI-426:** [Avatar] support disabled when clickable ([0d9bfde](https://github.com/ringcentral/juno/commit/0d9bfdeb0d9c137a6dc9efb87285352504297c38))
+- **RCUI-533:** [Downshift] migrate VirtualizedList to 3rd react-virtuoso ([a7c131b](https://github.com/ringcentral/juno/commit/a7c131bc78117bd6e0f96cb6054f6121ddda91e2))
+- **RCUI-533:** [Downshift] support debug with popup menu ([01f6a9e](https://github.com/ringcentral/juno/commit/01f6a9e0269544a464a4a0874608246be8e5c649))
+- **RCUI-533:** [outerSize] provide a utils for get element outerSize ([fee4ebf](https://github.com/ringcentral/juno/commit/fee4ebff2d597ca1443b8bf264ac0161653a9fae))
+- **RCUI-533:** [useResizeObserver] support ignoreFireWhenObserve ([47d4a1b](https://github.com/ringcentral/juno/commit/47d4a1b65331853fe8d614e5a96986e9a61391df))
+- **RCUI-549:** [SubMenu] support DetachedWindow ([9d09cd4](https://github.com/ringcentral/juno/commit/9d09cd4c865ac87fa4d88a613eb376c25b68ad2b))
+- **RCUI-549:** [Token] add palette type dark ([288d85f](https://github.com/ringcentral/juno/commit/288d85f1b25f3539baee07e5388bba2469fa45ef))
+- **RCUI-549:** [Token] update theme ([63965b3](https://github.com/ringcentral/juno/commit/63965b39b0e84db16882c1ffe16455ea81a2ec41))
+- **RCUI-549:** [Token] update theme ([a059cd8](https://github.com/ringcentral/juno/commit/a059cd85b0fe8c92a9b9ed640882872574f96013))
+- **RCUI-555:** [DialPad] support addition props on DialPadButton ([72962d9](https://github.com/ringcentral/juno/commit/72962d9361d38336c0f65dee54e79a29867bdd4e))
 
 ### Bug Fixes
 
-- **Package:** [Eslint] update eslint related change ([f8802f5](https://git.ringcentral.com/RCUI/rcui/commit/f8802f5f2bd095a5e1a94ed5910e8cd8eb6492b9))
-- **Package:** [Jest] fix tsConfig to tsconfig ([2162994](https://git.ringcentral.com/RCUI/rcui/commit/2162994b42134777d6f4d02ad9be15e17ccd3a52))
-- **RCUI-533:** [Downshift] fix init with zero items height issue ([a06fe23](https://git.ringcentral.com/RCUI/rcui/commit/a06fe23b28def2641cb2b7f4a3c1c13ba888c270))
-- **RCUI-533:** [Downshift] fix scroll logic ([b8bbf23](https://git.ringcentral.com/RCUI/rcui/commit/b8bbf23c3a32cf88a51e29a6b1ec0fb4a489dd99))
-- **RCUI-533:** [Downshift] migrate virtual list to `react-virtuoso` ([23b241d](https://git.ringcentral.com/RCUI/rcui/commit/23b241d3f620c929661b0126bd3923464a9b18b3))
-- **RCUI-533:** [useVirtualDynamicHeight] refactor whole with Hoc and make that easy to use ([2881d24](https://git.ringcentral.com/RCUI/rcui/commit/2881d24a28a610ecbcecd0e7e84b543c8be918a6))
-- **RCUI-533:** [useVirtualDynamicHeight] remove not need `useVirtualDynamicHeight` ([e745efd](https://git.ringcentral.com/RCUI/rcui/commit/e745efddc54527dcf26d84842baee60432f42e6a))
-- **RCUI-533:** [VirtualizedList] relive vl ([cf176d4](https://git.ringcentral.com/RCUI/rcui/commit/cf176d4d5821fb22de3b63aafaa3bc79a8c98b25))
-- **RCUI-545:** [Styled-component] support outside custom theme with DefaultTheme ([f28faa5](https://git.ringcentral.com/RCUI/rcui/commit/f28faa5a3e2c13a6b52195931fe2ffec2aa47570))
-- **RCUI-545:** [styled-components] migrate inner lot of styled-components to foundation ([1984ac5](https://git.ringcentral.com/RCUI/rcui/commit/1984ac52c34b1c8d6ca76f68903f7c7334bb7218))
-- **RCUI-545:** [Type] fix Hoc type implement way ([920950e](https://git.ringcentral.com/RCUI/rcui/commit/920950e08328cfc07a35e633a64c09826df718d4))
-- **RCUI-551:** [Scss] fix variable non correct string type issue ([1778c0b](https://git.ringcentral.com/RCUI/rcui/commit/1778c0bb33f6565aa17ebf503a2ee18e01d6bacb))
-- **RCUI-553:** [TimePicker] error with max ([509e4ed](https://git.ringcentral.com/RCUI/rcui/commit/509e4ed8b83a89a8f8dd257df72a372a05c8063a))
+- **Package:** [Eslint] update eslint related change ([f8802f5](https://github.com/ringcentral/juno/commit/f8802f5f2bd095a5e1a94ed5910e8cd8eb6492b9))
+- **Package:** [Jest] fix tsConfig to tsconfig ([2162994](https://github.com/ringcentral/juno/commit/2162994b42134777d6f4d02ad9be15e17ccd3a52))
+- **RCUI-533:** [Downshift] fix init with zero items height issue ([a06fe23](https://github.com/ringcentral/juno/commit/a06fe23b28def2641cb2b7f4a3c1c13ba888c270))
+- **RCUI-533:** [Downshift] fix scroll logic ([b8bbf23](https://github.com/ringcentral/juno/commit/b8bbf23c3a32cf88a51e29a6b1ec0fb4a489dd99))
+- **RCUI-533:** [Downshift] migrate virtual list to `react-virtuoso` ([23b241d](https://github.com/ringcentral/juno/commit/23b241d3f620c929661b0126bd3923464a9b18b3))
+- **RCUI-533:** [useVirtualDynamicHeight] refactor whole with Hoc and make that easy to use ([2881d24](https://github.com/ringcentral/juno/commit/2881d24a28a610ecbcecd0e7e84b543c8be918a6))
+- **RCUI-533:** [useVirtualDynamicHeight] remove not need `useVirtualDynamicHeight` ([e745efd](https://github.com/ringcentral/juno/commit/e745efddc54527dcf26d84842baee60432f42e6a))
+- **RCUI-533:** [VirtualizedList] relive vl ([cf176d4](https://github.com/ringcentral/juno/commit/cf176d4d5821fb22de3b63aafaa3bc79a8c98b25))
+- **RCUI-545:** [Styled-component] support outside custom theme with DefaultTheme ([f28faa5](https://github.com/ringcentral/juno/commit/f28faa5a3e2c13a6b52195931fe2ffec2aa47570))
+- **RCUI-545:** [styled-components] migrate inner lot of styled-components to foundation ([1984ac5](https://github.com/ringcentral/juno/commit/1984ac52c34b1c8d6ca76f68903f7c7334bb7218))
+- **RCUI-545:** [Type] fix Hoc type implement way ([920950e](https://github.com/ringcentral/juno/commit/920950e08328cfc07a35e633a64c09826df718d4))
+- **RCUI-551:** [Scss] fix variable non correct string type issue ([1778c0b](https://github.com/ringcentral/juno/commit/1778c0bb33f6565aa17ebf503a2ee18e01d6bacb))
+- **RCUI-553:** [TimePicker] error with max ([509e4ed](https://github.com/ringcentral/juno/commit/509e4ed8b83a89a8f8dd257df72a372a05c8063a))
 
-### [1.8.1](https://git.ringcentral.com/RCUI/rcui/compare/1.8.0...1.8.1) (2021-05-13)
+### [1.8.1](https://github.com/ringcentral/juno/compare/1.8.0...1.8.1) (2021-05-13)
 
 ## Main change:
 
@@ -1796,78 +1796,78 @@ renderOption={(
 
 ### Features
 
-- **RCUI-271:** [React] upgrade react/react-dom version to 17.0.2 and enzyme-adapter-react-17 ([62ce09b](https://git.ringcentral.com/RCUI/rcui/commit/62ce09b56700211d48e1527a5d0e3e7f6968c456))
-- **RCUI-271:** [React] upgrade react/react-dom version to 17.0.2 and enzyme-adapter-react-17 ([333c473](https://git.ringcentral.com/RCUI/rcui/commit/333c473c7b01cf54da87368db841346fe2c52fd2))
-- **RCUI-511:** [SubMenu] add onClose prop to MenuList and SubMenu ([02a02b2](https://git.ringcentral.com/RCUI/rcui/commit/02a02b24af389235d719164bf2a6920f7fa01d35))
-- **RCUI-518:** [Menu] use useId in menu component ([9589d81](https://git.ringcentral.com/RCUI/rcui/commit/9589d813f99db9ea2ed39013d9194c1a668969fd))
-- **RCUI-518:** [Package] remove not need @react-aria/utils ([761603a](https://git.ringcentral.com/RCUI/rcui/commit/761603a45a9ee0fd7e849703ff378dabb85bd537))
-- **RCUI-518:** [useId] add useId hook ([7e40e75](https://git.ringcentral.com/RCUI/rcui/commit/7e40e7588fba9829a32dc1cf930514d883be4a88))
-- **RCUI-523:** [Downshift] support click area focus on input ([d2349d6](https://git.ringcentral.com/RCUI/rcui/commit/d2349d603d468293830c67f0b51f084b362c98f4))
-- **RCUI-524:** [Downshift] set z-index for before and after to prevent line behind tags ([5360594](https://git.ringcentral.com/RCUI/rcui/commit/5360594cdfc4e49bb773f84f38979a5f12607b98))
-- **RCUI-525:** [RCTable - Make sort arrows consistent with DataGrid] Changed sort arrow display to match JUI DataGrid. Temporarily using arrowUp and arrowDown icons ([9fad59f](https://git.ringcentral.com/RCUI/rcui/commit/9fad59f5ddb45c83e0fb6619edf70745de306c0b))
-- **RCUI-526:** [ResizeObserver Polyfill] fix ([29a1ba4](https://git.ringcentral.com/RCUI/rcui/commit/29a1ba44cd94817a618199b4ad11b41742a8f288))
-- **RCUI-526:** [ResizeObserver Polyfill] fix ([96b830d](https://git.ringcentral.com/RCUI/rcui/commit/96b830dfb584ae81485a9923dd0dc3117914f0ea))
-- **RCUI-526:** [Tabs] add ResizeObserver polyfill ([d757bec](https://git.ringcentral.com/RCUI/rcui/commit/d757bec3828df1f69325b2fdc00747986b07303e))
-- **RCUI-526:** [Tabs] add window for ResizeObserver polyfill ([014d784](https://git.ringcentral.com/RCUI/rcui/commit/014d7840ba3b4e12cfd934d275e814c27c18b7aa))
-- **RCUI-526:** [useResizeObserver] fix type ([8e7b0f7](https://git.ringcentral.com/RCUI/rcui/commit/8e7b0f70ed58d2808abc89c90212da758ac51560))
-- **RCUI-526:** [useResizeObserver] support detachedWindow with externalWindow ([d184ac7](https://git.ringcentral.com/RCUI/rcui/commit/d184ac704ab3045107784ed2b9d34bdf764ecd47))
-- **RCUI-529:** [Downshift] `keepHighlightedIndex` when options change reset highlightedIndex ([764788c](https://git.ringcentral.com/RCUI/rcui/commit/764788ca24e52db5e38fb7d1ff98be32a998ee94))
-- **RCUI-529:** [Downshift] trim value for avoid paste with newline end ([23ca997](https://git.ringcentral.com/RCUI/rcui/commit/23ca9974c3743a493c3127a8dba03560df2d7221))
-- **RCUI-534:** [Menu] support in DecatedWindow ([da59426](https://git.ringcentral.com/RCUI/rcui/commit/da594261312b5cc6d15ed665c81687772231d048))
-- **RCUI-535:** [PopperMenu] fix type ([46c674f](https://git.ringcentral.com/RCUI/rcui/commit/46c674fdfe2735b06f3d96e958cfb13d0dd6d084))
-- **RCUI-535:** [PopperMenu] remove component ([2e144d4](https://git.ringcentral.com/RCUI/rcui/commit/2e144d4336073d8535b97bfff8c4966ecaa0e56a))
-- **RCUI-536:** [Ripple] fix component disableRipple prop ([a519c26](https://git.ringcentral.com/RCUI/rcui/commit/a519c26814a0198cadfc086d651b59f6bf0d3158))
-- **RCUI-536:** [Tab] remove not need observed prop ([36d24c6](https://git.ringcentral.com/RCUI/rcui/commit/36d24c677cfd8ae330bb0ef4e95cd3ce8a3a51c2))
-- **RCUI-536:** [Tab] remove rename prop ([69a2c79](https://git.ringcentral.com/RCUI/rcui/commit/69a2c7986a34909662e2727a062091ca4ef60a5f))
-- **RCUI-536:** [Tabs] support Custom MoreButton when variant is moreMenu ([0c7da8c](https://git.ringcentral.com/RCUI/rcui/commit/0c7da8c112ee90012ef8e82eb66985ca31000b8f))
-- **RCUI-536:** [Tabs] support Custom MoreButton when variant is moreMenu ([5a91f88](https://git.ringcentral.com/RCUI/rcui/commit/5a91f88482a2fbf83f54bd71e0ed6771640ab8a5))
-- **RCUI-536:** [Tabs] update story example ([a15f33e](https://git.ringcentral.com/RCUI/rcui/commit/a15f33e0779882df04ab715080d7913270eb05ed))
-- **RCUI-538:** [SnackbarAction] support color ([111a831](https://git.ringcentral.com/RCUI/rcui/commit/111a8319decd40c02f9bceb83c74cf5d051e650e))
-- **RCUI-540:** [Animation] remove tinycolor2 replace with mui fade ([fe4fce1](https://git.ringcentral.com/RCUI/rcui/commit/fe4fce1ebe1b746983848b862cb7b6f776cfeaf0))
-- **RCUI-540:** [IconButton] support radius for IconButton ([5a96683](https://git.ringcentral.com/RCUI/rcui/commit/5a96683c345c82e6f298b458e6c8bdc6cf41a9e8))
-- **RCUI-540:** [Tag] support radius for Tag ([21ad16b](https://git.ringcentral.com/RCUI/rcui/commit/21ad16bd54df0f7662ed575775aa3e5ba5d4e8bd))
-- **RCUI-541:** [Button] support xlarge size with Button ([14372f1](https://git.ringcentral.com/RCUI/rcui/commit/14372f150dff1e8276d710f5fedc27d881e945e2))
-- **RCUI-547:** [ResizeObserver] remove fork resize-observer-polyfill, provide getResizeObserver for check is that have `ResizeObserver` ([915327e](https://git.ringcentral.com/RCUI/rcui/commit/915327e9bf8caafd84ae59452be5f6ebb64cb3ce))
+- **RCUI-271:** [React] upgrade react/react-dom version to 17.0.2 and enzyme-adapter-react-17 ([62ce09b](https://github.com/ringcentral/juno/commit/62ce09b56700211d48e1527a5d0e3e7f6968c456))
+- **RCUI-271:** [React] upgrade react/react-dom version to 17.0.2 and enzyme-adapter-react-17 ([333c473](https://github.com/ringcentral/juno/commit/333c473c7b01cf54da87368db841346fe2c52fd2))
+- **RCUI-511:** [SubMenu] add onClose prop to MenuList and SubMenu ([02a02b2](https://github.com/ringcentral/juno/commit/02a02b24af389235d719164bf2a6920f7fa01d35))
+- **RCUI-518:** [Menu] use useId in menu component ([9589d81](https://github.com/ringcentral/juno/commit/9589d813f99db9ea2ed39013d9194c1a668969fd))
+- **RCUI-518:** [Package] remove not need @react-aria/utils ([761603a](https://github.com/ringcentral/juno/commit/761603a45a9ee0fd7e849703ff378dabb85bd537))
+- **RCUI-518:** [useId] add useId hook ([7e40e75](https://github.com/ringcentral/juno/commit/7e40e7588fba9829a32dc1cf930514d883be4a88))
+- **RCUI-523:** [Downshift] support click area focus on input ([d2349d6](https://github.com/ringcentral/juno/commit/d2349d603d468293830c67f0b51f084b362c98f4))
+- **RCUI-524:** [Downshift] set z-index for before and after to prevent line behind tags ([5360594](https://github.com/ringcentral/juno/commit/5360594cdfc4e49bb773f84f38979a5f12607b98))
+- **RCUI-525:** [RCTable - Make sort arrows consistent with DataGrid] Changed sort arrow display to match JUI DataGrid. Temporarily using arrowUp and arrowDown icons ([9fad59f](https://github.com/ringcentral/juno/commit/9fad59f5ddb45c83e0fb6619edf70745de306c0b))
+- **RCUI-526:** [ResizeObserver Polyfill] fix ([29a1ba4](https://github.com/ringcentral/juno/commit/29a1ba44cd94817a618199b4ad11b41742a8f288))
+- **RCUI-526:** [ResizeObserver Polyfill] fix ([96b830d](https://github.com/ringcentral/juno/commit/96b830dfb584ae81485a9923dd0dc3117914f0ea))
+- **RCUI-526:** [Tabs] add ResizeObserver polyfill ([d757bec](https://github.com/ringcentral/juno/commit/d757bec3828df1f69325b2fdc00747986b07303e))
+- **RCUI-526:** [Tabs] add window for ResizeObserver polyfill ([014d784](https://github.com/ringcentral/juno/commit/014d7840ba3b4e12cfd934d275e814c27c18b7aa))
+- **RCUI-526:** [useResizeObserver] fix type ([8e7b0f7](https://github.com/ringcentral/juno/commit/8e7b0f70ed58d2808abc89c90212da758ac51560))
+- **RCUI-526:** [useResizeObserver] support detachedWindow with externalWindow ([d184ac7](https://github.com/ringcentral/juno/commit/d184ac704ab3045107784ed2b9d34bdf764ecd47))
+- **RCUI-529:** [Downshift] `keepHighlightedIndex` when options change reset highlightedIndex ([764788c](https://github.com/ringcentral/juno/commit/764788ca24e52db5e38fb7d1ff98be32a998ee94))
+- **RCUI-529:** [Downshift] trim value for avoid paste with newline end ([23ca997](https://github.com/ringcentral/juno/commit/23ca9974c3743a493c3127a8dba03560df2d7221))
+- **RCUI-534:** [Menu] support in DecatedWindow ([da59426](https://github.com/ringcentral/juno/commit/da594261312b5cc6d15ed665c81687772231d048))
+- **RCUI-535:** [PopperMenu] fix type ([46c674f](https://github.com/ringcentral/juno/commit/46c674fdfe2735b06f3d96e958cfb13d0dd6d084))
+- **RCUI-535:** [PopperMenu] remove component ([2e144d4](https://github.com/ringcentral/juno/commit/2e144d4336073d8535b97bfff8c4966ecaa0e56a))
+- **RCUI-536:** [Ripple] fix component disableRipple prop ([a519c26](https://github.com/ringcentral/juno/commit/a519c26814a0198cadfc086d651b59f6bf0d3158))
+- **RCUI-536:** [Tab] remove not need observed prop ([36d24c6](https://github.com/ringcentral/juno/commit/36d24c677cfd8ae330bb0ef4e95cd3ce8a3a51c2))
+- **RCUI-536:** [Tab] remove rename prop ([69a2c79](https://github.com/ringcentral/juno/commit/69a2c7986a34909662e2727a062091ca4ef60a5f))
+- **RCUI-536:** [Tabs] support Custom MoreButton when variant is moreMenu ([0c7da8c](https://github.com/ringcentral/juno/commit/0c7da8c112ee90012ef8e82eb66985ca31000b8f))
+- **RCUI-536:** [Tabs] support Custom MoreButton when variant is moreMenu ([5a91f88](https://github.com/ringcentral/juno/commit/5a91f88482a2fbf83f54bd71e0ed6771640ab8a5))
+- **RCUI-536:** [Tabs] update story example ([a15f33e](https://github.com/ringcentral/juno/commit/a15f33e0779882df04ab715080d7913270eb05ed))
+- **RCUI-538:** [SnackbarAction] support color ([111a831](https://github.com/ringcentral/juno/commit/111a8319decd40c02f9bceb83c74cf5d051e650e))
+- **RCUI-540:** [Animation] remove tinycolor2 replace with mui fade ([fe4fce1](https://github.com/ringcentral/juno/commit/fe4fce1ebe1b746983848b862cb7b6f776cfeaf0))
+- **RCUI-540:** [IconButton] support radius for IconButton ([5a96683](https://github.com/ringcentral/juno/commit/5a96683c345c82e6f298b458e6c8bdc6cf41a9e8))
+- **RCUI-540:** [Tag] support radius for Tag ([21ad16b](https://github.com/ringcentral/juno/commit/21ad16bd54df0f7662ed575775aa3e5ba5d4e8bd))
+- **RCUI-541:** [Button] support xlarge size with Button ([14372f1](https://github.com/ringcentral/juno/commit/14372f150dff1e8276d710f5fedc27d881e945e2))
+- **RCUI-547:** [ResizeObserver] remove fork resize-observer-polyfill, provide getResizeObserver for check is that have `ResizeObserver` ([915327e](https://github.com/ringcentral/juno/commit/915327e9bf8caafd84ae59452be5f6ebb64cb3ce))
 
 ### Bug Fixes
 
-- **RCUI-:** [Icon] update icons ([c7243ba](https://git.ringcentral.com/RCUI/rcui/commit/c7243ba273d28dca9ab59d21ee034bfcb87dd9e2))
-- **RCUI-164:** [dependencies] move not need dependency shelljs to devDependencies ([8d12046](https://git.ringcentral.com/RCUI/rcui/commit/8d120460c1ee65693bd74e452a8ce021d23ebbba))
-- **RCUI-164:** [Dependencies] remove re-resizable dep ([e5356db](https://git.ringcentral.com/RCUI/rcui/commit/e5356db23b05cef44d7ffb2b42b711c7ae1aae4e))
-- **RCUI-164:** [Deprecated] remove deprecated Dialog ([cf9ebd7](https://git.ringcentral.com/RCUI/rcui/commit/cf9ebd7c2ab4f42a984895b87abf1395477514e4))
-- **RCUI-164:** [foundation] fix some foundation type ([3772899](https://git.ringcentral.com/RCUI/rcui/commit/3772899481fddff81ea3cb4dd8d05fe638e6e54b))
-- **RCUI-514:** [Downshift] fix highlightedIndex be reset to first when disableCloseOnSelect is true ([0347970](https://git.ringcentral.com/RCUI/rcui/commit/0347970eef692d1f335042903834951131792520))
-- **RCUI-518:** [Tab] remove children cache ([9c83ea2](https://git.ringcentral.com/RCUI/rcui/commit/9c83ea272eaeef22749d59d1beba581be22fa0ab))
-- **RCUI-518:** [Tabs] fix component tabs size computed ([89ac549](https://git.ringcentral.com/RCUI/rcui/commit/89ac5498a38d8121ec9ced4fd56f14120b0b084e))
-- **RCUI-518:** [useId] add test and fix logic, fix useResultRef type ([cd89a08](https://git.ringcentral.com/RCUI/rcui/commit/cd89a085056cc638cbf5c8b41a56e340cf285574))
-- **RCUI-520:** [style] remove const styles ([8408fc0](https://git.ringcentral.com/RCUI/rcui/commit/8408fc0fc96e3d0b2d6e410ad11a0399f45a46e9))
-- **RCUI-520:** [style] remove const styles ([afa15d1](https://git.ringcentral.com/RCUI/rcui/commit/afa15d1f1b5869ff790e6721cd70aeee59d0f950))
-- **RCUI-523:** [Cards] Changed default styling to preserve original styling ([d18515e](https://git.ringcentral.com/RCUI/rcui/commit/d18515ef3f08c02d05e79693c3af657eddc1e3e8))
-- **RCUI-523:** [Cards] fix storybook ([028214a](https://git.ringcentral.com/RCUI/rcui/commit/028214a5afe6c7f9ce51ecf734800091123023df))
-- **RCUI-523:** [Cards] remove all not need defaultProps ([a8abe79](https://git.ringcentral.com/RCUI/rcui/commit/a8abe79db3a4edf51e1b7422eda9168cc79c73b5))
-- **RCUI-524:** [Downshift] support scroll in downshift tags area ([fd43b78](https://git.ringcentral.com/RCUI/rcui/commit/fd43b7837aad5d7284ea7cff8a20dd19d4fa706a))
-- **RCUI-528:** [Picker] support type required for picker ([4bfe3ae](https://git.ringcentral.com/RCUI/rcui/commit/4bfe3aec6281773076b23194c426dfafb503be6a))
-- **RCUI-532:** [Link] fix default color to 'informative.f02' ([f68e0e9](https://git.ringcentral.com/RCUI/rcui/commit/f68e0e92d83cada38dde8e58cadf5c786da4d50d))
-- **RCUI-536:** [Badge] fix none invisible style ([058e31e](https://git.ringcentral.com/RCUI/rcui/commit/058e31edc440f07f823ecfa675ed605ab00d9892))
-- **RCUI-537:** [Downshift] apply keepHighlightedIndex logic ([9a86257](https://git.ringcentral.com/RCUI/rcui/commit/9a862578433be299f5aae9ae27ceafa9aab92a69))
-- **RCUI-537:** [Downshift] remove not need logic because migrate to new downshift ([c1cd272](https://git.ringcentral.com/RCUI/rcui/commit/c1cd2726d0d2340de03320d2790040c04ae7ab49))
-- **RCUI-538:** [Color token] migrate all miss token ([9fd97f2](https://git.ringcentral.com/RCUI/rcui/commit/9fd97f28ce83a534b3990d9f17bd121c13ad8105))
-- **RCUI-538:** [ColorProp] migrate all RcColorSet to RcPaletteProp for full support correct type ([b61c263](https://git.ringcentral.com/RCUI/rcui/commit/b61c2639f39454a2eb3371f6737eff0716ceb26e))
-- **RCUI-538:** [Tag] fix tag color to new structure and fix color ([ea6b8d3](https://git.ringcentral.com/RCUI/rcui/commit/ea6b8d380c9e1f7b196b0953d98c18b71b09b444))
-- **RCUI-538:** [Typography] fix data-color show logic ([b8ac654](https://git.ringcentral.com/RCUI/rcui/commit/b8ac6540ab42d90b5ca1d378dcbae2c11d2efdb8))
-- **RCUI-544:** [Build] fix build polyfills folder Lost ([71389d1](https://git.ringcentral.com/RCUI/rcui/commit/71389d1428442c50e3b192b716d2aa8ab8d076d1))
-- **RCUI-544:** [Build] fix build polyfills folder Lost ([4d16d15](https://git.ringcentral.com/RCUI/rcui/commit/4d16d159796328a64afc00d0309f2ae7bde1d5dd))
-- **RCUI-545:** [Styled-component] fix type for prepare update styled-component version ([5454525](https://git.ringcentral.com/RCUI/rcui/commit/545452543ef020a114fd8ff8491ed980c84579dd))
-- **RCUI-545:** [Type] fix NodeJs Type ([051467a](https://git.ringcentral.com/RCUI/rcui/commit/051467a297f779125beaa0bd00021a431571bf0f))
-- **RCUI-546:** [TimePicker] Value is wrong when set min props ([0864015](https://git.ringcentral.com/RCUI/rcui/commit/0864015270b7d71d1c632ef41a420ca6a98daef2))
+- **RCUI-:** [Icon] update icons ([c7243ba](https://github.com/ringcentral/juno/commit/c7243ba273d28dca9ab59d21ee034bfcb87dd9e2))
+- **RCUI-164:** [dependencies] move not need dependency shelljs to devDependencies ([8d12046](https://github.com/ringcentral/juno/commit/8d120460c1ee65693bd74e452a8ce021d23ebbba))
+- **RCUI-164:** [Dependencies] remove re-resizable dep ([e5356db](https://github.com/ringcentral/juno/commit/e5356db23b05cef44d7ffb2b42b711c7ae1aae4e))
+- **RCUI-164:** [Deprecated] remove deprecated Dialog ([cf9ebd7](https://github.com/ringcentral/juno/commit/cf9ebd7c2ab4f42a984895b87abf1395477514e4))
+- **RCUI-164:** [foundation] fix some foundation type ([3772899](https://github.com/ringcentral/juno/commit/3772899481fddff81ea3cb4dd8d05fe638e6e54b))
+- **RCUI-514:** [Downshift] fix highlightedIndex be reset to first when disableCloseOnSelect is true ([0347970](https://github.com/ringcentral/juno/commit/0347970eef692d1f335042903834951131792520))
+- **RCUI-518:** [Tab] remove children cache ([9c83ea2](https://github.com/ringcentral/juno/commit/9c83ea272eaeef22749d59d1beba581be22fa0ab))
+- **RCUI-518:** [Tabs] fix component tabs size computed ([89ac549](https://github.com/ringcentral/juno/commit/89ac5498a38d8121ec9ced4fd56f14120b0b084e))
+- **RCUI-518:** [useId] add test and fix logic, fix useResultRef type ([cd89a08](https://github.com/ringcentral/juno/commit/cd89a085056cc638cbf5c8b41a56e340cf285574))
+- **RCUI-520:** [style] remove const styles ([8408fc0](https://github.com/ringcentral/juno/commit/8408fc0fc96e3d0b2d6e410ad11a0399f45a46e9))
+- **RCUI-520:** [style] remove const styles ([afa15d1](https://github.com/ringcentral/juno/commit/afa15d1f1b5869ff790e6721cd70aeee59d0f950))
+- **RCUI-523:** [Cards] Changed default styling to preserve original styling ([d18515e](https://github.com/ringcentral/juno/commit/d18515ef3f08c02d05e79693c3af657eddc1e3e8))
+- **RCUI-523:** [Cards] fix storybook ([028214a](https://github.com/ringcentral/juno/commit/028214a5afe6c7f9ce51ecf734800091123023df))
+- **RCUI-523:** [Cards] remove all not need defaultProps ([a8abe79](https://github.com/ringcentral/juno/commit/a8abe79db3a4edf51e1b7422eda9168cc79c73b5))
+- **RCUI-524:** [Downshift] support scroll in downshift tags area ([fd43b78](https://github.com/ringcentral/juno/commit/fd43b7837aad5d7284ea7cff8a20dd19d4fa706a))
+- **RCUI-528:** [Picker] support type required for picker ([4bfe3ae](https://github.com/ringcentral/juno/commit/4bfe3aec6281773076b23194c426dfafb503be6a))
+- **RCUI-532:** [Link] fix default color to 'informative.f02' ([f68e0e9](https://github.com/ringcentral/juno/commit/f68e0e92d83cada38dde8e58cadf5c786da4d50d))
+- **RCUI-536:** [Badge] fix none invisible style ([058e31e](https://github.com/ringcentral/juno/commit/058e31edc440f07f823ecfa675ed605ab00d9892))
+- **RCUI-537:** [Downshift] apply keepHighlightedIndex logic ([9a86257](https://github.com/ringcentral/juno/commit/9a862578433be299f5aae9ae27ceafa9aab92a69))
+- **RCUI-537:** [Downshift] remove not need logic because migrate to new downshift ([c1cd272](https://github.com/ringcentral/juno/commit/c1cd2726d0d2340de03320d2790040c04ae7ab49))
+- **RCUI-538:** [Color token] migrate all miss token ([9fd97f2](https://github.com/ringcentral/juno/commit/9fd97f28ce83a534b3990d9f17bd121c13ad8105))
+- **RCUI-538:** [ColorProp] migrate all RcColorSet to RcPaletteProp for full support correct type ([b61c263](https://github.com/ringcentral/juno/commit/b61c2639f39454a2eb3371f6737eff0716ceb26e))
+- **RCUI-538:** [Tag] fix tag color to new structure and fix color ([ea6b8d3](https://github.com/ringcentral/juno/commit/ea6b8d380c9e1f7b196b0953d98c18b71b09b444))
+- **RCUI-538:** [Typography] fix data-color show logic ([b8ac654](https://github.com/ringcentral/juno/commit/b8ac6540ab42d90b5ca1d378dcbae2c11d2efdb8))
+- **RCUI-544:** [Build] fix build polyfills folder Lost ([71389d1](https://github.com/ringcentral/juno/commit/71389d1428442c50e3b192b716d2aa8ab8d076d1))
+- **RCUI-544:** [Build] fix build polyfills folder Lost ([4d16d15](https://github.com/ringcentral/juno/commit/4d16d159796328a64afc00d0309f2ae7bde1d5dd))
+- **RCUI-545:** [Styled-component] fix type for prepare update styled-component version ([5454525](https://github.com/ringcentral/juno/commit/545452543ef020a114fd8ff8491ed980c84579dd))
+- **RCUI-545:** [Type] fix NodeJs Type ([051467a](https://github.com/ringcentral/juno/commit/051467a297f779125beaa0bd00021a431571bf0f))
+- **RCUI-546:** [TimePicker] Value is wrong when set min props ([0864015](https://github.com/ringcentral/juno/commit/0864015270b7d71d1c632ef41a420ca6a98daef2))
 
-## [1.8.0](https://git.ringcentral.com/RCUI/rcui/compare/1.7.0...1.8.0) (2021-04-28)
+## [1.8.0](https://github.com/ringcentral/juno/compare/1.7.0...1.8.0) (2021-04-28)
 
 ## Main change:
 
 ## 🎉🎉🎉🎉Responsive API announce🎉🎉🎉🎉🎉
 
-We announce new responsive API for you to easy to switch size between different size of device, view [Responsive](https://develop-rcui-int.fiji.gliprc.com/?path=/story/responsive--responsive-button)
+We announce new responsive API for you to easy to switch size between different size of device, view [Responsive](https://ringcentral.github.io/juno/?path=/story/responsive--responsive-button)
 
 ### New Components
 
@@ -1893,89 +1893,89 @@ We announce new responsive API for you to easy to switch size between different 
 
 ### Features
 
-- **RCUI-475:** [Downshift] implement whole downshift behaviour ([3274b99](https://git.ringcentral.com/RCUI/rcui/commit/3274b99cbddc57a63b4fbfc8ec454c34cc16ef14))
-- **RCUI-475:** [isRef] provide isRef to check object is useRef ([04682a5](https://git.ringcentral.com/RCUI/rcui/commit/04682a59332f3343a1bd75198c9d4063ed049a04))
-- **RCUI-475:** [RcVirtualizedList] part implement vl v2, not complete yet, but is ok to use ([c219192](https://git.ringcentral.com/RCUI/rcui/commit/c219192dbf164e86f941b05633464c9d4bfcfa46))
-- **RCUI-475:** [useForceUpdate] implement useForceUpdate ([e172d9b](https://git.ringcentral.com/RCUI/rcui/commit/e172d9b6471217c4cf46dcd1be287deb9f0d8298))
-- **RCUI-475:** [useOnReRender] provide method for only trigger when rerender ([e782019](https://git.ringcentral.com/RCUI/rcui/commit/e7820193380d0f57f5d1acce3b7a8ffa561e301a))
-- **RCUI-475:** [useResultRef] provide a method for enhance useRef, provide useRef can get follow function value once, prevent `useRef(getValue())`, that `getValue` calculate every re-render ([b12af26](https://git.ringcentral.com/RCUI/rcui/commit/b12af260841b40fccab783b7c8f72ea3e190f476))
-- **RCUI-475:** [VirtualizedList] provide getIsScrolling state ref ([fea9201](https://git.ringcentral.com/RCUI/rcui/commit/fea92013b6ae5c92c1953b23977815021c9cfc9d))
-- **RCUI-475:** support SuggestionListProps ([a6427ad](https://git.ringcentral.com/RCUI/rcui/commit/a6427adc36bf88e458f6084d5e86aa9f7c6bb233))
-- **RCUI-486:** [Tabs] component cleanup ([f066461](https://git.ringcentral.com/RCUI/rcui/commit/f0664613f77ccda8589319025715cff69c72dbc3))
-- **RCUI-487:** [Infinite List] extend infinite list with customized scrollbar ([74870e7](https://git.ringcentral.com/RCUI/rcui/commit/74870e74bc426f9caf0981c0c5fc238f2e615b22))
-- **RCUI-487:** [Vertualized list] update snapshot ([b68e5df](https://git.ringcentral.com/RCUI/rcui/commit/b68e5dff195c81e2da8e91c5f51bb8432d87840e))
-- **RCUI-488:** [TabContext] add displayName ([5d05d09](https://git.ringcentral.com/RCUI/rcui/commit/5d05d097178abede4f5911fce91afe99a1cb917e))
-- **RCUI-488:** [TabList][tabpanel] cleanup component ([f4495f6](https://git.ringcentral.com/RCUI/rcui/commit/f4495f684d596d715a1bc2e9eeb8245cc0172e91))
-- **RCUI-488:** [Tabs] fix performance ([5e5d857](https://git.ringcentral.com/RCUI/rcui/commit/5e5d85771a44daa61661066eb3c3774265300230))
-- **RCUI-488:** [Tabs] remove console ([66847e4](https://git.ringcentral.com/RCUI/rcui/commit/66847e45ec9f40163d815b63558b2ecf59fa47d2))
-- **RCUI-488:** [useThrottle] fix provide useThrottle ([8c11ede](https://git.ringcentral.com/RCUI/rcui/commit/8c11edef70e0049bf1323019cab2ad9c5365aca3))
-- **RCUI-489:** [SplitButton] set menuProps keepMounted false ([e4521e3](https://git.ringcentral.com/RCUI/rcui/commit/e4521e31ee6cc7b380fb8345a7d8dbe496f5cf10))
-- **RCUI-492:** [Card Components] new Card component ([5a7da7e](https://git.ringcentral.com/RCUI/rcui/commit/5a7da7e67c3a095d77dc08260898b32fe8684013))
-- **RCUI-492:** [Virtualized list] customized vertical scroller ([9ab4025](https://git.ringcentral.com/RCUI/rcui/commit/9ab402562dedacb8b4e4851ce718511bb6fbde49))
-- **RCUI-498:** [SplitButton] fix ripple in safari issue ([9bac1f5](https://git.ringcentral.com/RCUI/rcui/commit/9bac1f5127cec8fa98abbf7adb6593f81c38bb87))
-- **RCUI-499:** [Responsive] add common responsive hoc, hook, context ([2844ecd](https://git.ringcentral.com/RCUI/rcui/commit/2844ecddf0ac9dc1612ef42f710914d133bb8605))
-- **RCUI-499:** [Responsive] add some demo ([4e0b469](https://git.ringcentral.com/RCUI/rcui/commit/4e0b469f48b9af3d39e287d3dfd6ca3ce3921b4b))
-- **RCUI-499:** [Responsive] get width by clientWidth ([dd5095d](https://git.ringcentral.com/RCUI/rcui/commit/dd5095d5ba8dbb2fd270b16dcccef9a15f3c0a2b))
-- **RCUI-499:** [Responsive] withResponsive ([366b051](https://git.ringcentral.com/RCUI/rcui/commit/366b051bd64820714cdf69b6652fce56681ffbc6))
-- **RCUI-499:** [useResizeObserver] add throttle option ([d021fbe](https://git.ringcentral.com/RCUI/rcui/commit/d021fbef9961d0533ea7e62f9dabed1a08550e80))
-- **RCUI-500:** [Icon] supports to be auto-updated when theme changes ([3a7fbd2](https://git.ringcentral.com/RCUI/rcui/commit/3a7fbd2d34979ca97dff30bc94286576a32fa6d0))
-- **RCUI-501:** [AtMention] fix color token ([e8ee734](https://git.ringcentral.com/RCUI/rcui/commit/e8ee734129778d9a7f135e2ff1ce70e5a2d76b22))
-- **RCUI-501:** [Switch] fix track color ([d86c8c1](https://git.ringcentral.com/RCUI/rcui/commit/d86c8c1957fe461f0dac67b2b1058b225315cb77))
-- **RCUI-503:** [Hover] add common media string to fix hover issue in touch devices ([f1d7574](https://git.ringcentral.com/RCUI/rcui/commit/f1d7574e7588c169b03a2ddf955e999418171445))
-- **RCUI-506:** [Tabs] use new token ([2293524](https://git.ringcentral.com/RCUI/rcui/commit/2293524783bc78cff9c48dd2cfd7df78b299fdad))
-- **RCUI-507:** [Downshift] getOptionDisabled support ([c811ac6](https://git.ringcentral.com/RCUI/rcui/commit/c811ac6fff48cfc15227859a83742a22ecac6aa9))
-- **RCUI-507:** [Downshift] memo defaultHighlightedIndex ([729c0fd](https://git.ringcentral.com/RCUI/rcui/commit/729c0fdf6d84f53cca547eec5f8310d16a0f3cea))
-- **RCUI-507:** [Downshift] support check defaultHighlightedIndex ([b38168a](https://git.ringcentral.com/RCUI/rcui/commit/b38168ac0924706ea9945b8b8b65d34ad8b93a2f))
-- **RCUI-512:** [Downshift] optimate getFiltered result only when menu isOpen ([4ac8990](https://git.ringcentral.com/RCUI/rcui/commit/4ac8990f9c09f0514494997e443d9c19466413c9))
-- **RCUI-512:** [Downshift] remove downshiftjs and support generic type with options ([aa675c7](https://git.ringcentral.com/RCUI/rcui/commit/aa675c7a3cebef2bb9e1b91bc7557d8049d6c16d))
-- **RCUI-513:** [SplitButton] change combine onClick together to cover ([cc120e7](https://git.ringcentral.com/RCUI/rcui/commit/cc120e7bda80d8a16f0fdaf750373a2b8b7e25e8))
-- **RCUI-514:** [Downshift] add id for clearButton ([b16dbb4](https://git.ringcentral.com/RCUI/rcui/commit/b16dbb4537b9ac9967b34ed952d373b850b4277a))
-- **RCUI-515:** [Update theme token] add new theme token ([aaae298](https://git.ringcentral.com/RCUI/rcui/commit/aaae2984611c2195d7374fbf6ac75f20817952e6))
+- **RCUI-475:** [Downshift] implement whole downshift behaviour ([3274b99](https://github.com/ringcentral/juno/commit/3274b99cbddc57a63b4fbfc8ec454c34cc16ef14))
+- **RCUI-475:** [isRef] provide isRef to check object is useRef ([04682a5](https://github.com/ringcentral/juno/commit/04682a59332f3343a1bd75198c9d4063ed049a04))
+- **RCUI-475:** [RcVirtualizedList] part implement vl v2, not complete yet, but is ok to use ([c219192](https://github.com/ringcentral/juno/commit/c219192dbf164e86f941b05633464c9d4bfcfa46))
+- **RCUI-475:** [useForceUpdate] implement useForceUpdate ([e172d9b](https://github.com/ringcentral/juno/commit/e172d9b6471217c4cf46dcd1be287deb9f0d8298))
+- **RCUI-475:** [useOnReRender] provide method for only trigger when rerender ([e782019](https://github.com/ringcentral/juno/commit/e7820193380d0f57f5d1acce3b7a8ffa561e301a))
+- **RCUI-475:** [useResultRef] provide a method for enhance useRef, provide useRef can get follow function value once, prevent `useRef(getValue())`, that `getValue` calculate every re-render ([b12af26](https://github.com/ringcentral/juno/commit/b12af260841b40fccab783b7c8f72ea3e190f476))
+- **RCUI-475:** [VirtualizedList] provide getIsScrolling state ref ([fea9201](https://github.com/ringcentral/juno/commit/fea92013b6ae5c92c1953b23977815021c9cfc9d))
+- **RCUI-475:** support SuggestionListProps ([a6427ad](https://github.com/ringcentral/juno/commit/a6427adc36bf88e458f6084d5e86aa9f7c6bb233))
+- **RCUI-486:** [Tabs] component cleanup ([f066461](https://github.com/ringcentral/juno/commit/f0664613f77ccda8589319025715cff69c72dbc3))
+- **RCUI-487:** [Infinite List] extend infinite list with customized scrollbar ([74870e7](https://github.com/ringcentral/juno/commit/74870e74bc426f9caf0981c0c5fc238f2e615b22))
+- **RCUI-487:** [Vertualized list] update snapshot ([b68e5df](https://github.com/ringcentral/juno/commit/b68e5dff195c81e2da8e91c5f51bb8432d87840e))
+- **RCUI-488:** [TabContext] add displayName ([5d05d09](https://github.com/ringcentral/juno/commit/5d05d097178abede4f5911fce91afe99a1cb917e))
+- **RCUI-488:** [TabList][tabpanel] cleanup component ([f4495f6](https://github.com/ringcentral/juno/commit/f4495f684d596d715a1bc2e9eeb8245cc0172e91))
+- **RCUI-488:** [Tabs] fix performance ([5e5d857](https://github.com/ringcentral/juno/commit/5e5d85771a44daa61661066eb3c3774265300230))
+- **RCUI-488:** [Tabs] remove console ([66847e4](https://github.com/ringcentral/juno/commit/66847e45ec9f40163d815b63558b2ecf59fa47d2))
+- **RCUI-488:** [useThrottle] fix provide useThrottle ([8c11ede](https://github.com/ringcentral/juno/commit/8c11edef70e0049bf1323019cab2ad9c5365aca3))
+- **RCUI-489:** [SplitButton] set menuProps keepMounted false ([e4521e3](https://github.com/ringcentral/juno/commit/e4521e31ee6cc7b380fb8345a7d8dbe496f5cf10))
+- **RCUI-492:** [Card Components] new Card component ([5a7da7e](https://github.com/ringcentral/juno/commit/5a7da7e67c3a095d77dc08260898b32fe8684013))
+- **RCUI-492:** [Virtualized list] customized vertical scroller ([9ab4025](https://github.com/ringcentral/juno/commit/9ab402562dedacb8b4e4851ce718511bb6fbde49))
+- **RCUI-498:** [SplitButton] fix ripple in safari issue ([9bac1f5](https://github.com/ringcentral/juno/commit/9bac1f5127cec8fa98abbf7adb6593f81c38bb87))
+- **RCUI-499:** [Responsive] add common responsive hoc, hook, context ([2844ecd](https://github.com/ringcentral/juno/commit/2844ecddf0ac9dc1612ef42f710914d133bb8605))
+- **RCUI-499:** [Responsive] add some demo ([4e0b469](https://github.com/ringcentral/juno/commit/4e0b469f48b9af3d39e287d3dfd6ca3ce3921b4b))
+- **RCUI-499:** [Responsive] get width by clientWidth ([dd5095d](https://github.com/ringcentral/juno/commit/dd5095d5ba8dbb2fd270b16dcccef9a15f3c0a2b))
+- **RCUI-499:** [Responsive] withResponsive ([366b051](https://github.com/ringcentral/juno/commit/366b051bd64820714cdf69b6652fce56681ffbc6))
+- **RCUI-499:** [useResizeObserver] add throttle option ([d021fbe](https://github.com/ringcentral/juno/commit/d021fbef9961d0533ea7e62f9dabed1a08550e80))
+- **RCUI-500:** [Icon] supports to be auto-updated when theme changes ([3a7fbd2](https://github.com/ringcentral/juno/commit/3a7fbd2d34979ca97dff30bc94286576a32fa6d0))
+- **RCUI-501:** [AtMention] fix color token ([e8ee734](https://github.com/ringcentral/juno/commit/e8ee734129778d9a7f135e2ff1ce70e5a2d76b22))
+- **RCUI-501:** [Switch] fix track color ([d86c8c1](https://github.com/ringcentral/juno/commit/d86c8c1957fe461f0dac67b2b1058b225315cb77))
+- **RCUI-503:** [Hover] add common media string to fix hover issue in touch devices ([f1d7574](https://github.com/ringcentral/juno/commit/f1d7574e7588c169b03a2ddf955e999418171445))
+- **RCUI-506:** [Tabs] use new token ([2293524](https://github.com/ringcentral/juno/commit/2293524783bc78cff9c48dd2cfd7df78b299fdad))
+- **RCUI-507:** [Downshift] getOptionDisabled support ([c811ac6](https://github.com/ringcentral/juno/commit/c811ac6fff48cfc15227859a83742a22ecac6aa9))
+- **RCUI-507:** [Downshift] memo defaultHighlightedIndex ([729c0fd](https://github.com/ringcentral/juno/commit/729c0fdf6d84f53cca547eec5f8310d16a0f3cea))
+- **RCUI-507:** [Downshift] support check defaultHighlightedIndex ([b38168a](https://github.com/ringcentral/juno/commit/b38168ac0924706ea9945b8b8b65d34ad8b93a2f))
+- **RCUI-512:** [Downshift] optimate getFiltered result only when menu isOpen ([4ac8990](https://github.com/ringcentral/juno/commit/4ac8990f9c09f0514494997e443d9c19466413c9))
+- **RCUI-512:** [Downshift] remove downshiftjs and support generic type with options ([aa675c7](https://github.com/ringcentral/juno/commit/aa675c7a3cebef2bb9e1b91bc7557d8049d6c16d))
+- **RCUI-513:** [SplitButton] change combine onClick together to cover ([cc120e7](https://github.com/ringcentral/juno/commit/cc120e7bda80d8a16f0fdaf750373a2b8b7e25e8))
+- **RCUI-514:** [Downshift] add id for clearButton ([b16dbb4](https://github.com/ringcentral/juno/commit/b16dbb4537b9ac9967b34ed952d373b850b4277a))
+- **RCUI-515:** [Update theme token] add new theme token ([aaae298](https://github.com/ringcentral/juno/commit/aaae2984611c2195d7374fbf6ac75f20817952e6))
 
 ### Bug Fixes
 
-- **RCUI-475:** [combineProps] change combineProps not be undefined, always have value after combine ([6f00419](https://git.ringcentral.com/RCUI/rcui/commit/6f004196c216ce58ff01689287b8848f50814be4))
-- **RCUI-475:** [Downshift] fix \n issue with RegExp ([92feda7](https://git.ringcentral.com/RCUI/rcui/commit/92feda7dbfb97e062abf07d34f62c3ab79ab3b11))
-- **RCUI-475:** [Downshift] fix error logic ([115619d](https://git.ringcentral.com/RCUI/rcui/commit/115619d993ab6ef77561cd3d589cdeb234fbfe5f))
-- **RCUI-475:** [Downshift] fix shift tab auto select issue ([b9d0587](https://git.ringcentral.com/RCUI/rcui/commit/b9d0587b1af17249d578929c31074229f548767f))
-- **RCUI-475:** [RcVirtualizedList] a little vl change, wait whole refactor to switch ([e830077](https://git.ringcentral.com/RCUI/rcui/commit/e830077cc28fdc2f51308919868ef62556af251b))
-- **RCUI-475:** [useChange] improve useChange with emit prev and next value ([58d7d56](https://git.ringcentral.com/RCUI/rcui/commit/58d7d569c40ee4a58340a6a71578205756f2a3ec))
-- **RCUI-475:** [useEventListener] change useEventListener implementation, make that more useful ([94573af](https://git.ringcentral.com/RCUI/rcui/commit/94573af22fcdc2824209e0bac13377ea0ebed491))
-- **RCUI-475:** [usePrevious] support use previous can have default value ([8357bfb](https://git.ringcentral.com/RCUI/rcui/commit/8357bfb4b2fb3a92dddbb697532128e513b24d3b))
-- **RCUI-487:** [Virtualized list] remove divRef error ([4126d88](https://git.ringcentral.com/RCUI/rcui/commit/4126d881e25380ac9217abb6e5b241c91cf9c85f))
-- **RCUI-490:** [SubMenu] fix disabled props ([cb92a55](https://git.ringcentral.com/RCUI/rcui/commit/cb92a55d186bfca5d0feb1ae25e292e39aa5364a))
-- **RCUI-490:** [SubMenu] update snapshot ([247033e](https://git.ringcentral.com/RCUI/rcui/commit/247033e32dd041d6119803197612edf306636b67))
-- **RCUI-498:** [VirtualizedList] fix vl logic ([eac547b](https://git.ringcentral.com/RCUI/rcui/commit/eac547be03c34639a5637c7f47af96a5f2a9eb31))
-- **RCUI-499:** [UT] fix UT of 'getMatchedBreakPoint' ([53f7893](https://git.ringcentral.com/RCUI/rcui/commit/53f789360300bf18aa438b71fbb5d003e0d148d4))
-- **RCUI-502:** [ListItem] button mode should not have TouchRippleProps ([6a11fbd](https://git.ringcentral.com/RCUI/rcui/commit/6a11fbd4f9a67e95e275941394cbafc2e86182b1))
-- **RCUI-504:** [Switch] fix trackColor pass to dom node ([5cf2aa3](https://git.ringcentral.com/RCUI/rcui/commit/5cf2aa3840999b6b5cb94550ae6aab1cf3ad419b))
-- **RCUI-505:** [ThemeToken] fix token ([1036c4b](https://git.ringcentral.com/RCUI/rcui/commit/1036c4b865b2dcb07a9169dc6c7cd91c3f676f27))
-- **RCUI-505:** [ThemeToken] fix token issues ([c330024](https://git.ringcentral.com/RCUI/rcui/commit/c3300241599f75d9f0a614d2c7c00a3be0421fac))
-- **RCUI-505:** [ThemeToken] update snapshot ([715d44f](https://git.ringcentral.com/RCUI/rcui/commit/715d44f46882e54d6bc17d4c08b6b4f819db071d))
-- **RCUI-505:** [ThemeToken] update snapshot ([202e81a](https://git.ringcentral.com/RCUI/rcui/commit/202e81a05258338aea8642b444e04814ded028c6))
-- **RCUI-505:** [ThemeToken] update snapshot ([781688c](https://git.ringcentral.com/RCUI/rcui/commit/781688cf990175cc1c5ce90c48553343ee0ba8c7))
-- **RCUI-505:** [ThemeToken] update theme from rcTheme to rcJupiterBlue theme ([d08da91](https://git.ringcentral.com/RCUI/rcui/commit/d08da914d9de1a65d889df25b1ec0cc4dde843a7))
-- **RCUI-509:** [SubMenu] The SubMenu of the first level is in the MenuList and cannot be closed by Esc or Tab ([a40b431](https://git.ringcentral.com/RCUI/rcui/commit/a40b431c52ac06d84b993ec12c6adefcb77ceb8a))
-- **RCUI-510:** [ThemeToken] add TabIndicatorProps for RcTabs component ([7bb3686](https://git.ringcentral.com/RCUI/rcui/commit/7bb36865480592d2275d6dcd4f2ae3b34c125c6c))
-- **RCUI-510:** [ThemeToken] optimize ([7c441a1](https://git.ringcentral.com/RCUI/rcui/commit/7c441a161e2f081d193042d74b29ae88e1a0dce2))
-- **RCUI-510:** [ThemeToken] update palette to palette2 ([a0217cf](https://git.ringcentral.com/RCUI/rcui/commit/a0217cf3bc4fdb82198804867f330c5f1449f854))
-- **RCUI-510:** [ThemeToken] use combinProps ([9407895](https://git.ringcentral.com/RCUI/rcui/commit/940789533fc5473fc031007cff70d2a1a0eec37d))
-- **RCUI-510:** [ThemeToken] use combinProps ([2276a67](https://git.ringcentral.com/RCUI/rcui/commit/2276a670759651e9063db3b574718bbe7b45045c))
-- **RCUI-512:** [Downshift] fix a11y issue ([bc2733a](https://git.ringcentral.com/RCUI/rcui/commit/bc2733aa63deb01e29e46329d44b0ad2e506ccd1))
-- **RCUI-512:** [Downshift] fix a11y issue listbox back ([67ba3c7](https://git.ringcentral.com/RCUI/rcui/commit/67ba3c7c5d7b1ba92ff58f8070636fb4691c97be))
-- **RCUI-512:** [Downshift] fix data-item-last error logic, onPaste only need check when freeSolo ([b5fe933](https://git.ringcentral.com/RCUI/rcui/commit/b5fe93313c6128d701d12db788cbcaa1995c96d2))
-- **RCUI-512:** [Downshift] fix freeSolo when Enter ([df75fc4](https://git.ringcentral.com/RCUI/rcui/commit/df75fc42e4173cd1b453f2610c0ba6a87196bcd9))
-- **RCUI-512:** [Downshift] remove textarea use onPaste to prevent a11y issue ([a656746](https://git.ringcentral.com/RCUI/rcui/commit/a656746ada6fe79256d771e57da1a4f4c6bcb769))
-- **RCUI-512:** [Downshift] setHighlightedIndex outside alway render ([99e06b4](https://git.ringcentral.com/RCUI/rcui/commit/99e06b43e5c900f74cfbe2b6929455fe554c2940))
-- **RCUI-514:** [Downshift] fix onMouseDown event stop target and provide id for popper ([d602aa9](https://git.ringcentral.com/RCUI/rcui/commit/d602aa92e94da9653ca7208d3c5be5a438e1b9ae))
-- **RCUI-516:** [DeprecatedMessage] change all related deprecated components ([ab94d80](https://git.ringcentral.com/RCUI/rcui/commit/ab94d805affa0d341570dbbe060f1c1a12af2e90))
-- **RCUI-516:** [DeprecatedMessage] only when open isShowJunoWarning will register useEffect ([d7a2b36](https://git.ringcentral.com/RCUI/rcui/commit/d7a2b368a1679b462bcc48e7ea1c364c211f7adc))
-- **RCUI-517:** [Downshift] fix bug when not open set to defaultHighlightedIndex ([b430ce3](https://git.ringcentral.com/RCUI/rcui/commit/b430ce312f2ec7a957bdebb13dd91cd273ba91e3))
-- **RCUI-517:** [Downshift] fix bug when paste non become tags, text change twice issue ([f1b9ad4](https://git.ringcentral.com/RCUI/rcui/commit/f1b9ad4c312c97cce7d97c8aabaf034d1eabc698))
-- **RCUI-517:** [Downshift] fix bug when with paste value ([2190d2c](https://git.ringcentral.com/RCUI/rcui/commit/2190d2c4095464caff1b159fa976f0621b74de5e))
-- **RCUI-517:** [Downshift] fix highlightedIndex is -1 issue ([726d8f9](https://git.ringcentral.com/RCUI/rcui/commit/726d8f94e3ec9e8b9330e146ebab5d9094d45c96))
+- **RCUI-475:** [combineProps] change combineProps not be undefined, always have value after combine ([6f00419](https://github.com/ringcentral/juno/commit/6f004196c216ce58ff01689287b8848f50814be4))
+- **RCUI-475:** [Downshift] fix \n issue with RegExp ([92feda7](https://github.com/ringcentral/juno/commit/92feda7dbfb97e062abf07d34f62c3ab79ab3b11))
+- **RCUI-475:** [Downshift] fix error logic ([115619d](https://github.com/ringcentral/juno/commit/115619d993ab6ef77561cd3d589cdeb234fbfe5f))
+- **RCUI-475:** [Downshift] fix shift tab auto select issue ([b9d0587](https://github.com/ringcentral/juno/commit/b9d0587b1af17249d578929c31074229f548767f))
+- **RCUI-475:** [RcVirtualizedList] a little vl change, wait whole refactor to switch ([e830077](https://github.com/ringcentral/juno/commit/e830077cc28fdc2f51308919868ef62556af251b))
+- **RCUI-475:** [useChange] improve useChange with emit prev and next value ([58d7d56](https://github.com/ringcentral/juno/commit/58d7d569c40ee4a58340a6a71578205756f2a3ec))
+- **RCUI-475:** [useEventListener] change useEventListener implementation, make that more useful ([94573af](https://github.com/ringcentral/juno/commit/94573af22fcdc2824209e0bac13377ea0ebed491))
+- **RCUI-475:** [usePrevious] support use previous can have default value ([8357bfb](https://github.com/ringcentral/juno/commit/8357bfb4b2fb3a92dddbb697532128e513b24d3b))
+- **RCUI-487:** [Virtualized list] remove divRef error ([4126d88](https://github.com/ringcentral/juno/commit/4126d881e25380ac9217abb6e5b241c91cf9c85f))
+- **RCUI-490:** [SubMenu] fix disabled props ([cb92a55](https://github.com/ringcentral/juno/commit/cb92a55d186bfca5d0feb1ae25e292e39aa5364a))
+- **RCUI-490:** [SubMenu] update snapshot ([247033e](https://github.com/ringcentral/juno/commit/247033e32dd041d6119803197612edf306636b67))
+- **RCUI-498:** [VirtualizedList] fix vl logic ([eac547b](https://github.com/ringcentral/juno/commit/eac547be03c34639a5637c7f47af96a5f2a9eb31))
+- **RCUI-499:** [UT] fix UT of 'getMatchedBreakPoint' ([53f7893](https://github.com/ringcentral/juno/commit/53f789360300bf18aa438b71fbb5d003e0d148d4))
+- **RCUI-502:** [ListItem] button mode should not have TouchRippleProps ([6a11fbd](https://github.com/ringcentral/juno/commit/6a11fbd4f9a67e95e275941394cbafc2e86182b1))
+- **RCUI-504:** [Switch] fix trackColor pass to dom node ([5cf2aa3](https://github.com/ringcentral/juno/commit/5cf2aa3840999b6b5cb94550ae6aab1cf3ad419b))
+- **RCUI-505:** [ThemeToken] fix token ([1036c4b](https://github.com/ringcentral/juno/commit/1036c4b865b2dcb07a9169dc6c7cd91c3f676f27))
+- **RCUI-505:** [ThemeToken] fix token issues ([c330024](https://github.com/ringcentral/juno/commit/c3300241599f75d9f0a614d2c7c00a3be0421fac))
+- **RCUI-505:** [ThemeToken] update snapshot ([715d44f](https://github.com/ringcentral/juno/commit/715d44f46882e54d6bc17d4c08b6b4f819db071d))
+- **RCUI-505:** [ThemeToken] update snapshot ([202e81a](https://github.com/ringcentral/juno/commit/202e81a05258338aea8642b444e04814ded028c6))
+- **RCUI-505:** [ThemeToken] update snapshot ([781688c](https://github.com/ringcentral/juno/commit/781688cf990175cc1c5ce90c48553343ee0ba8c7))
+- **RCUI-505:** [ThemeToken] update theme from rcTheme to rcJupiterBlue theme ([d08da91](https://github.com/ringcentral/juno/commit/d08da914d9de1a65d889df25b1ec0cc4dde843a7))
+- **RCUI-509:** [SubMenu] The SubMenu of the first level is in the MenuList and cannot be closed by Esc or Tab ([a40b431](https://github.com/ringcentral/juno/commit/a40b431c52ac06d84b993ec12c6adefcb77ceb8a))
+- **RCUI-510:** [ThemeToken] add TabIndicatorProps for RcTabs component ([7bb3686](https://github.com/ringcentral/juno/commit/7bb36865480592d2275d6dcd4f2ae3b34c125c6c))
+- **RCUI-510:** [ThemeToken] optimize ([7c441a1](https://github.com/ringcentral/juno/commit/7c441a161e2f081d193042d74b29ae88e1a0dce2))
+- **RCUI-510:** [ThemeToken] update palette to palette2 ([a0217cf](https://github.com/ringcentral/juno/commit/a0217cf3bc4fdb82198804867f330c5f1449f854))
+- **RCUI-510:** [ThemeToken] use combinProps ([9407895](https://github.com/ringcentral/juno/commit/940789533fc5473fc031007cff70d2a1a0eec37d))
+- **RCUI-510:** [ThemeToken] use combinProps ([2276a67](https://github.com/ringcentral/juno/commit/2276a670759651e9063db3b574718bbe7b45045c))
+- **RCUI-512:** [Downshift] fix a11y issue ([bc2733a](https://github.com/ringcentral/juno/commit/bc2733aa63deb01e29e46329d44b0ad2e506ccd1))
+- **RCUI-512:** [Downshift] fix a11y issue listbox back ([67ba3c7](https://github.com/ringcentral/juno/commit/67ba3c7c5d7b1ba92ff58f8070636fb4691c97be))
+- **RCUI-512:** [Downshift] fix data-item-last error logic, onPaste only need check when freeSolo ([b5fe933](https://github.com/ringcentral/juno/commit/b5fe93313c6128d701d12db788cbcaa1995c96d2))
+- **RCUI-512:** [Downshift] fix freeSolo when Enter ([df75fc4](https://github.com/ringcentral/juno/commit/df75fc42e4173cd1b453f2610c0ba6a87196bcd9))
+- **RCUI-512:** [Downshift] remove textarea use onPaste to prevent a11y issue ([a656746](https://github.com/ringcentral/juno/commit/a656746ada6fe79256d771e57da1a4f4c6bcb769))
+- **RCUI-512:** [Downshift] setHighlightedIndex outside alway render ([99e06b4](https://github.com/ringcentral/juno/commit/99e06b43e5c900f74cfbe2b6929455fe554c2940))
+- **RCUI-514:** [Downshift] fix onMouseDown event stop target and provide id for popper ([d602aa9](https://github.com/ringcentral/juno/commit/d602aa92e94da9653ca7208d3c5be5a438e1b9ae))
+- **RCUI-516:** [DeprecatedMessage] change all related deprecated components ([ab94d80](https://github.com/ringcentral/juno/commit/ab94d805affa0d341570dbbe060f1c1a12af2e90))
+- **RCUI-516:** [DeprecatedMessage] only when open isShowJunoWarning will register useEffect ([d7a2b36](https://github.com/ringcentral/juno/commit/d7a2b368a1679b462bcc48e7ea1c364c211f7adc))
+- **RCUI-517:** [Downshift] fix bug when not open set to defaultHighlightedIndex ([b430ce3](https://github.com/ringcentral/juno/commit/b430ce312f2ec7a957bdebb13dd91cd273ba91e3))
+- **RCUI-517:** [Downshift] fix bug when paste non become tags, text change twice issue ([f1b9ad4](https://github.com/ringcentral/juno/commit/f1b9ad4c312c97cce7d97c8aabaf034d1eabc698))
+- **RCUI-517:** [Downshift] fix bug when with paste value ([2190d2c](https://github.com/ringcentral/juno/commit/2190d2c4095464caff1b159fa976f0621b74de5e))
+- **RCUI-517:** [Downshift] fix highlightedIndex is -1 issue ([726d8f9](https://github.com/ringcentral/juno/commit/726d8f94e3ec9e8b9330e146ebab5d9094d45c96))
 
-## [1.7.0](https://git.ringcentral.com/RCUI/rcui/compare/1.6.0...1.7.0) (2021-04-14)
+## [1.7.0](https://github.com/ringcentral/juno/compare/1.6.0...1.7.0) (2021-04-14)
 
 ## Main change:
 
@@ -1987,38 +1987,38 @@ We announce new responsive API for you to easy to switch size between different 
 
 ### Features
 
-- **RCUI-445:** [Update new tokens] apply new token ([dc0c8eb](https://git.ringcentral.com/RCUI/rcui/commit/dc0c8eb14080a4d71d3e138f051d4e091ffa857b))
-- **RCUI-456:** [Pagination] cleanup Pagination ([1962fc3](https://git.ringcentral.com/RCUI/rcui/commit/1962fc3156fb9c6afb91a66c457514819865a49a))
-- **RCUI-479:** [Presence] change attended and unattended icon ([efeb2aa](https://git.ringcentral.com/RCUI/rcui/commit/efeb2aac3b2aa71700aba63614700bd54bbbbf85))
-- **RCUI-479:** [Presence] new type avariable and unAvariable ([8ad21f5](https://git.ringcentral.com/RCUI/rcui/commit/8ad21f5e5662cd0ec5791a5219807e41c984d909))
-- **RCUI-480:** [combineProps] change logic about group function ([0d9f3d0](https://git.ringcentral.com/RCUI/rcui/commit/0d9f3d0298da19e134b94f33c6635e38025376d7))
-- **RCUI-480:** [combineProps] change logic about undefined prop ([eb587c3](https://git.ringcentral.com/RCUI/rcui/commit/eb587c35b8228e8b124c11db25669ae9bb9ebe09))
+- **RCUI-445:** [Update new tokens] apply new token ([dc0c8eb](https://github.com/ringcentral/juno/commit/dc0c8eb14080a4d71d3e138f051d4e091ffa857b))
+- **RCUI-456:** [Pagination] cleanup Pagination ([1962fc3](https://github.com/ringcentral/juno/commit/1962fc3156fb9c6afb91a66c457514819865a49a))
+- **RCUI-479:** [Presence] change attended and unattended icon ([efeb2aa](https://github.com/ringcentral/juno/commit/efeb2aac3b2aa71700aba63614700bd54bbbbf85))
+- **RCUI-479:** [Presence] new type avariable and unAvariable ([8ad21f5](https://github.com/ringcentral/juno/commit/8ad21f5e5662cd0ec5791a5219807e41c984d909))
+- **RCUI-480:** [combineProps] change logic about group function ([0d9f3d0](https://github.com/ringcentral/juno/commit/0d9f3d0298da19e134b94f33c6635e38025376d7))
+- **RCUI-480:** [combineProps] change logic about undefined prop ([eb587c3](https://github.com/ringcentral/juno/commit/eb587c35b8228e8b124c11db25669ae9bb9ebe09))
 
 ### Bug Fixes
 
-- **RCUI-:** [Dialog] add miss useRcPortalWindowContext with new dialog ([ff78353](https://git.ringcentral.com/RCUI/rcui/commit/ff78353b38b5397fd758d00881e905cf28ddf949))
-- **RCUI-445:** [RcTextPaletteKeys] temp support all color token ([65a3024](https://git.ringcentral.com/RCUI/rcui/commit/65a302420cfa24cd834d3ff0db65e16bd27ec990))
-- **RCUI-456:** [Foundation] change overridableStyled method ([d33f332](https://git.ringcentral.com/RCUI/rcui/commit/d33f332f4384c4603fefb152309396372743cbe6))
-- **RCUI-462:** [CombineProps] change classes from combineProps to combineClasses ([09f769a](https://git.ringcentral.com/RCUI/rcui/commit/09f769af8d26dd9ead4411885ec1e84a294d5a40))
-- **RCUI-462:** [CombineProps] complete combineProps, support full type of object ([6beea3d](https://git.ringcentral.com/RCUI/rcui/commit/6beea3d1cea6499afcfeba52a20f08cd8276daa3))
-- **RCUI-462:** [CombineProps] fix combineProps logic with null and undefined check ([e25773c](https://git.ringcentral.com/RCUI/rcui/commit/e25773ca84bba38bfb50e1921f5f3e5b773f6e7d))
-- **RCUI-467:** [Select] more example and remove not need svg style assign ([b6a1deb](https://git.ringcentral.com/RCUI/rcui/commit/b6a1deb39586f2cba0eab5c1d36d5ed70d575250))
-- **RCUI-469:** [Button, SplitButton] support color for custom all palette color ([4214d57](https://git.ringcentral.com/RCUI/rcui/commit/4214d5716a2f18082ce659f63e917a28d9d9516c))
-- **RCUI-469:** [SplitButton] fix className remove issue ([d9ac801](https://git.ringcentral.com/RCUI/rcui/commit/d9ac801508b880b714a644a359a30ab6c94b06f1))
-- **RCUI-469:** [SplitButton] fix plainIcon style again ([7f6392d](https://git.ringcentral.com/RCUI/rcui/commit/7f6392d6552a8eea5ccf01ee39c3412401c11323))
-- **RCUI-469:** [SplitButton] fix SplitButton style issue ([5d4721c](https://git.ringcentral.com/RCUI/rcui/commit/5d4721cbd4984e1b3e09259a51338c7d62bff269))
-- **RCUI-469:** [SplitButton] remove focusWithin color ([cfa4f3e](https://git.ringcentral.com/RCUI/rcui/commit/cfa4f3e6f31d28632585cdab2cd03ecfd931c1d4))
-- **RCUI-469:** [SplitButton] remove not need custom style for plain ([69cf5b3](https://git.ringcentral.com/RCUI/rcui/commit/69cf5b3fc6d729132cfdb1f4c63a78ae48ae3243))
-- **RCUI-469:** [SplitButton] remove roundSpacingSize, just use size and confirm is that variant come from Button ([70bc995](https://git.ringcentral.com/RCUI/rcui/commit/70bc9952b8c0fa418f2243b78467679a4e7e77ce))
-- **RCUI-469:** [SplitButton] use className to replace :last-child selector ([468a003](https://git.ringcentral.com/RCUI/rcui/commit/468a0033af34b55f2aab8c7befe5281dc0cbad2d))
-- **RCUI-469:** [Tooltip] support ignorePointer just wrap a span, let user decide when to use by themself ([fbd94aa](https://git.ringcentral.com/RCUI/rcui/commit/fbd94aab06682f51def368889377dfb41b2fb891))
-- **RCUI-472:** [Downshift] fix loop onClick issue ([d4eb033](https://git.ringcentral.com/RCUI/rcui/commit/d4eb033441e1ac224067bbf4788e6448f8b72786))
-- **RCUI-473:** [ListItem] list item truncated error ([af1b1f3](https://git.ringcentral.com/RCUI/rcui/commit/af1b1f307a2acfeee495756a626c3d5db294adf6))
-- **RCUI-482:** [Button] fix Icon can't custom size issue ([b7ec774](https://git.ringcentral.com/RCUI/rcui/commit/b7ec7748a8d6a773cba46b34cd8615acaa429412))
-- **RCUI-484:** [Tooltip]: style error classes ([2ce2b0b](https://git.ringcentral.com/RCUI/rcui/commit/2ce2b0b3cd98b7ffb6fc5c1f52bdb8ada626ffa8))
-- **RCUI-484:** [Tooltip]: style error with popper custom issue ([5390f95](https://git.ringcentral.com/RCUI/rcui/commit/5390f95130fd85e1d8adef1a90a6e4945b10464e))
+- **RCUI-:** [Dialog] add miss useRcPortalWindowContext with new dialog ([ff78353](https://github.com/ringcentral/juno/commit/ff78353b38b5397fd758d00881e905cf28ddf949))
+- **RCUI-445:** [RcTextPaletteKeys] temp support all color token ([65a3024](https://github.com/ringcentral/juno/commit/65a302420cfa24cd834d3ff0db65e16bd27ec990))
+- **RCUI-456:** [Foundation] change overridableStyled method ([d33f332](https://github.com/ringcentral/juno/commit/d33f332f4384c4603fefb152309396372743cbe6))
+- **RCUI-462:** [CombineProps] change classes from combineProps to combineClasses ([09f769a](https://github.com/ringcentral/juno/commit/09f769af8d26dd9ead4411885ec1e84a294d5a40))
+- **RCUI-462:** [CombineProps] complete combineProps, support full type of object ([6beea3d](https://github.com/ringcentral/juno/commit/6beea3d1cea6499afcfeba52a20f08cd8276daa3))
+- **RCUI-462:** [CombineProps] fix combineProps logic with null and undefined check ([e25773c](https://github.com/ringcentral/juno/commit/e25773ca84bba38bfb50e1921f5f3e5b773f6e7d))
+- **RCUI-467:** [Select] more example and remove not need svg style assign ([b6a1deb](https://github.com/ringcentral/juno/commit/b6a1deb39586f2cba0eab5c1d36d5ed70d575250))
+- **RCUI-469:** [Button, SplitButton] support color for custom all palette color ([4214d57](https://github.com/ringcentral/juno/commit/4214d5716a2f18082ce659f63e917a28d9d9516c))
+- **RCUI-469:** [SplitButton] fix className remove issue ([d9ac801](https://github.com/ringcentral/juno/commit/d9ac801508b880b714a644a359a30ab6c94b06f1))
+- **RCUI-469:** [SplitButton] fix plainIcon style again ([7f6392d](https://github.com/ringcentral/juno/commit/7f6392d6552a8eea5ccf01ee39c3412401c11323))
+- **RCUI-469:** [SplitButton] fix SplitButton style issue ([5d4721c](https://github.com/ringcentral/juno/commit/5d4721cbd4984e1b3e09259a51338c7d62bff269))
+- **RCUI-469:** [SplitButton] remove focusWithin color ([cfa4f3e](https://github.com/ringcentral/juno/commit/cfa4f3e6f31d28632585cdab2cd03ecfd931c1d4))
+- **RCUI-469:** [SplitButton] remove not need custom style for plain ([69cf5b3](https://github.com/ringcentral/juno/commit/69cf5b3fc6d729132cfdb1f4c63a78ae48ae3243))
+- **RCUI-469:** [SplitButton] remove roundSpacingSize, just use size and confirm is that variant come from Button ([70bc995](https://github.com/ringcentral/juno/commit/70bc9952b8c0fa418f2243b78467679a4e7e77ce))
+- **RCUI-469:** [SplitButton] use className to replace :last-child selector ([468a003](https://github.com/ringcentral/juno/commit/468a0033af34b55f2aab8c7befe5281dc0cbad2d))
+- **RCUI-469:** [Tooltip] support ignorePointer just wrap a span, let user decide when to use by themself ([fbd94aa](https://github.com/ringcentral/juno/commit/fbd94aab06682f51def368889377dfb41b2fb891))
+- **RCUI-472:** [Downshift] fix loop onClick issue ([d4eb033](https://github.com/ringcentral/juno/commit/d4eb033441e1ac224067bbf4788e6448f8b72786))
+- **RCUI-473:** [ListItem] list item truncated error ([af1b1f3](https://github.com/ringcentral/juno/commit/af1b1f307a2acfeee495756a626c3d5db294adf6))
+- **RCUI-482:** [Button] fix Icon can't custom size issue ([b7ec774](https://github.com/ringcentral/juno/commit/b7ec7748a8d6a773cba46b34cd8615acaa429412))
+- **RCUI-484:** [Tooltip]: style error classes ([2ce2b0b](https://github.com/ringcentral/juno/commit/2ce2b0b3cd98b7ffb6fc5c1f52bdb8ada626ffa8))
+- **RCUI-484:** [Tooltip]: style error with popper custom issue ([5390f95](https://github.com/ringcentral/juno/commit/5390f95130fd85e1d8adef1a90a6e4945b10464e))
 
-## [1.6.0](https://git.ringcentral.com/RCUI/rcui/compare/1.5.1...1.6.0) (2021-04-01)
+## [1.6.0](https://github.com/ringcentral/juno/compare/1.5.1...1.6.0) (2021-04-01)
 
 ### New Feature:
 
@@ -2045,109 +2045,109 @@ We announce new responsive API for you to easy to switch size between different 
 - **RCUI-458:** [Badge] the default `RcBadge` change to `components/Badge`
 - **RCUI-454:** [Dialog] deprecated old Dialog
 - **RCUI-454:** [Modal] deprecated Modal, please switch to PopupBox
-- **RCUI-413:** [Dialer] Cleanup component add focusTarget; pad button background can persist when manual trigger by action ([9e922d7](https://git.ringcentral.com/RCUI/rcui/commit/9e922d77c757c727010517ce03a0538163eb0e95))
-- **RCUI-424:** [Downshift] new Downshift, follow Mui Autocomplete API and follow Angular behavior ([f39db78](https://git.ringcentral.com/RCUI/rcui/commit/f39db78d9883a357f2e09115ba54ea5f5983ca14))
+- **RCUI-413:** [Dialer] Cleanup component add focusTarget; pad button background can persist when manual trigger by action ([9e922d7](https://github.com/ringcentral/juno/commit/9e922d77c757c727010517ce03a0538163eb0e95))
+- **RCUI-424:** [Downshift] new Downshift, follow Mui Autocomplete API and follow Angular behavior ([f39db78](https://github.com/ringcentral/juno/commit/f39db78d9883a357f2e09115ba54ea5f5983ca14))
 
 ### Features
 
-- **RCUI-396:** [ToggleButton, ToggleButtonGroup] new component ToggleButton ([7a8c678](https://git.ringcentral.com/RCUI/rcui/commit/7a8c678a5914fea211f98206dd50fab6787bf7a7))
-- **RCUI-408:** [SubMenu] support child item to receive mouseEnter event ([501ce5e](https://git.ringcentral.com/RCUI/rcui/commit/501ce5e3cbdea17400c11b9b6634d30a1262fb75))
-- **RCUI-411:** [Chip] cleanup whole Chip ([b79184f](https://git.ringcentral.com/RCUI/rcui/commit/b79184f05fadd465b3ff08c45f7e04f55a40430e))
-- **RCUI-413:** [[Dialer] Cleanup component] add focusTarget; pad button background can persist when manual trigger by action ([9e922d7](https://git.ringcentral.com/RCUI/rcui/commit/9e922d77c757c727010517ce03a0538163eb0e95))
-- **RCUI-413:** [[Dialer] Cleanup component] change function showDeprecatedInDev name to logInDev ([c74fd6c](https://git.ringcentral.com/RCUI/rcui/commit/c74fd6cd68f09eea73be3de670368c0a75eef451))
-- **RCUI-413:** [[Dialer] Cleanup component] clean up dialer ([46af032](https://git.ringcentral.com/RCUI/rcui/commit/46af03205ff3d3ccd669b3429ccb10f1525b9859))
-- **RCUI-413:** [[Dialer] Cleanup component] make Dialer can auto fill parent ([89a5df6](https://git.ringcentral.com/RCUI/rcui/commit/89a5df6fe0de32ab2b0e163806f6331ef20e57a8))
-- **RCUI-413:** [[Dialer] Cleanup component] prevent error when keyboard prop change ([2cbfcd0](https://git.ringcentral.com/RCUI/rcui/commit/2cbfcd061c81e4a1b5b33f74d0b8acf2f6e1eaaa))
-- **RCUI-413:** [[Dialer] Cleanup component] remove focusTarget ([4cd0684](https://git.ringcentral.com/RCUI/rcui/commit/4cd06843a49e8b51c879f190a50cc1d92f9e461a))
-- **RCUI-413:** [[Dialer] Cleanup component] remove keyboard event, update storybook ([bf41564](https://git.ringcentral.com/RCUI/rcui/commit/bf41564298e19f8837c2a14bb280e7366c9bb6fc))
-- **RCUI-413:** [useDebounce] new method use debounce ([c7db55b](https://git.ringcentral.com/RCUI/rcui/commit/c7db55b070078ad9d50457318faa045ba49ea3d1))
-- **RCUI-413:** [useEventListener] custom event target ([e6ee0c2](https://git.ringcentral.com/RCUI/rcui/commit/e6ee0c28133dbb06c4735a8747921ec96046d2de))
-- **RCUI-413:** [useEventListener] new method useEventListener ([5869c3e](https://git.ringcentral.com/RCUI/rcui/commit/5869c3e082a96cd5fcd96c31574f3a27bf523902))
-- **RCUI-424:** [Downshift] fix a11y issue ([49dc583](https://git.ringcentral.com/RCUI/rcui/commit/49dc5837d448d9f7af4e347e33c0607b09c71a2e))
-- **RCUI-424:** [Downshift] support first tag tagFocusable ([671ca5f](https://git.ringcentral.com/RCUI/rcui/commit/671ca5f460f11226d4be00726ac17983362c2ff6))
-- **RCUI-424:** [Downshift] support full tagFocusable ([62d4230](https://git.ringcentral.com/RCUI/rcui/commit/62d423010ea4c00af0a444a9764053db8e4d86de))
-- **RCUI-424:** [Downshift] support multiple false with can't typing anything ([d1fa64a](https://git.ringcentral.com/RCUI/rcui/commit/d1fa64aa8eefe1290e2065b615d5ab7b7294f57c))
-- **RCUI-424:** [Downshift] change filterOptions to not have default filter ([cd68533](https://git.ringcentral.com/RCUI/rcui/commit/cd68533c8c9a9ed8f4e385f3fe3241b2adf5b9f5))
-- **RCUI-424:** [Downshift] implement new Downshift with full support deprecated props ([da45ad6](https://git.ringcentral.com/RCUI/rcui/commit/da45ad6c91c7e8259ed2c2b3384f92d1b133f57e))
-- **RCUI-424:** [Downshift] prevent escape propagation when menu is open ([af5d86a](https://git.ringcentral.com/RCUI/rcui/commit/af5d86a0dcb3f72b5960e12d4a10ee06b640c78c))
-- **RCUI-424:** [Downshift] support autoClose menu when options is zero ([f39db78](https://git.ringcentral.com/RCUI/rcui/commit/f39db78d9883a357f2e09115ba54ea5f5983ca14))
-- **RCUI-424:** [Downshift] support outside change downshift inputValue ([bc27b3e](https://git.ringcentral.com/RCUI/rcui/commit/bc27b3ee36f6fa90ab85985ea62ba0f3be80f25a))
-- **RCUI-424:** [Foundation] support element type assign for isRcElement ([c9ecbbc](https://git.ringcentral.com/RCUI/rcui/commit/c9ecbbcf984573ec21cbe297f232fbe32bfed889))
-- **RCUI-424:** [Loading] new component Loading to replace withLoading hoc ([1bf091a](https://git.ringcentral.com/RCUI/rcui/commit/1bf091a0b331c4a140707a174c4835929dd7ea30))
-- **RCUI-424:** [Package] update downshift version to 6.1.0 ([04050a3](https://git.ringcentral.com/RCUI/rcui/commit/04050a3eb6028a5670e46fc9e2096ab8f84229c6))
-- **RCUI-424:** [PopupBox] new PopupBox component ([f993787](https://git.ringcentral.com/RCUI/rcui/commit/f99378734f9dcb8d1ea274fd0063a7c054d27d3f))
-- **RCUI-446:** [DnD] cleanup RcDragDropContext ([97d6506](https://git.ringcentral.com/RCUI/rcui/commit/97d6506ad2d44880fc8b913eb79c37dd87a8a003))
-- **RCUI-446:** [DnD] cleanup RcDraggable ([2d72c7c](https://git.ringcentral.com/RCUI/rcui/commit/2d72c7cab12db34a76dca94d79021c3d430ef009))
-- **RCUI-446:** [DnD] cleanup RcDragHandle ([8856b2a](https://git.ringcentral.com/RCUI/rcui/commit/8856b2ac463d1df34d6bac257142fcc0dad7d1e7))
-- **RCUI-446:** [DnD] cleanup RcDroppable ([171044b](https://git.ringcentral.com/RCUI/rcui/commit/171044b0bafcf6d0509f84072c3edc9731c087c7))
-- **RCUI-446:** [DnD] fix RcDragHandle style ([b70ecb0](https://git.ringcentral.com/RCUI/rcui/commit/b70ecb0433615b1e2230830022345d42712b4da5))
-- **RCUI-446:** [DnD] remove utils ([7476d7d](https://git.ringcentral.com/RCUI/rcui/commit/7476d7d621f0b4e9a2e69efe75ee4dc424aed2fa))
-- **RCUI-446:** [DnD] update story ([1644ba5](https://git.ringcentral.com/RCUI/rcui/commit/1644ba53f8388f2185038bf3757ff5b68c23e322))
-- **RCUI-450:** [Foundation] fix swapArrayLocs for testcafe ([93f4745](https://git.ringcentral.com/RCUI/rcui/commit/93f4745133ea6ae8223cc06f00505680a6ec7411))
-- **RCUI-452:** [Box] release base component Box ([424af47](https://git.ringcentral.com/RCUI/rcui/commit/424af472f5a6ecd4a41f954eb38da2bc6596e4ad))
-- **RCUI-458:** [Badge] support full Badge component ([9f88ebd](https://git.ringcentral.com/RCUI/rcui/commit/9f88ebdcac345d4259223e062f7d594e49ce85ed))
-- **RCUI-461:** [Tooltip] support custom portal target window with ignorePointer ([d7b297d](https://git.ringcentral.com/RCUI/rcui/commit/d7b297db7fadd24ac5d1dbfe2fea73972adfc638))
-- **RCUI-461:** [Tooltip] support hiddenMask action and Props ([5612083](https://git.ringcentral.com/RCUI/rcui/commit/5612083f7f765977aa8bbeeaf2048db2294d2bbf))
-- **RCUI-461:** [Tooltip] support tooltip ignore children pointer-event none ([6176d40](https://git.ringcentral.com/RCUI/rcui/commit/6176d40ca2ed7a526e7fce7dd49ceec7c64f94e5))
+- **RCUI-396:** [ToggleButton, ToggleButtonGroup] new component ToggleButton ([7a8c678](https://github.com/ringcentral/juno/commit/7a8c678a5914fea211f98206dd50fab6787bf7a7))
+- **RCUI-408:** [SubMenu] support child item to receive mouseEnter event ([501ce5e](https://github.com/ringcentral/juno/commit/501ce5e3cbdea17400c11b9b6634d30a1262fb75))
+- **RCUI-411:** [Chip] cleanup whole Chip ([b79184f](https://github.com/ringcentral/juno/commit/b79184f05fadd465b3ff08c45f7e04f55a40430e))
+- **RCUI-413:** [[Dialer] Cleanup component] add focusTarget; pad button background can persist when manual trigger by action ([9e922d7](https://github.com/ringcentral/juno/commit/9e922d77c757c727010517ce03a0538163eb0e95))
+- **RCUI-413:** [[Dialer] Cleanup component] change function showDeprecatedInDev name to logInDev ([c74fd6c](https://github.com/ringcentral/juno/commit/c74fd6cd68f09eea73be3de670368c0a75eef451))
+- **RCUI-413:** [[Dialer] Cleanup component] clean up dialer ([46af032](https://github.com/ringcentral/juno/commit/46af03205ff3d3ccd669b3429ccb10f1525b9859))
+- **RCUI-413:** [[Dialer] Cleanup component] make Dialer can auto fill parent ([89a5df6](https://github.com/ringcentral/juno/commit/89a5df6fe0de32ab2b0e163806f6331ef20e57a8))
+- **RCUI-413:** [[Dialer] Cleanup component] prevent error when keyboard prop change ([2cbfcd0](https://github.com/ringcentral/juno/commit/2cbfcd061c81e4a1b5b33f74d0b8acf2f6e1eaaa))
+- **RCUI-413:** [[Dialer] Cleanup component] remove focusTarget ([4cd0684](https://github.com/ringcentral/juno/commit/4cd06843a49e8b51c879f190a50cc1d92f9e461a))
+- **RCUI-413:** [[Dialer] Cleanup component] remove keyboard event, update storybook ([bf41564](https://github.com/ringcentral/juno/commit/bf41564298e19f8837c2a14bb280e7366c9bb6fc))
+- **RCUI-413:** [useDebounce] new method use debounce ([c7db55b](https://github.com/ringcentral/juno/commit/c7db55b070078ad9d50457318faa045ba49ea3d1))
+- **RCUI-413:** [useEventListener] custom event target ([e6ee0c2](https://github.com/ringcentral/juno/commit/e6ee0c28133dbb06c4735a8747921ec96046d2de))
+- **RCUI-413:** [useEventListener] new method useEventListener ([5869c3e](https://github.com/ringcentral/juno/commit/5869c3e082a96cd5fcd96c31574f3a27bf523902))
+- **RCUI-424:** [Downshift] fix a11y issue ([49dc583](https://github.com/ringcentral/juno/commit/49dc5837d448d9f7af4e347e33c0607b09c71a2e))
+- **RCUI-424:** [Downshift] support first tag tagFocusable ([671ca5f](https://github.com/ringcentral/juno/commit/671ca5f460f11226d4be00726ac17983362c2ff6))
+- **RCUI-424:** [Downshift] support full tagFocusable ([62d4230](https://github.com/ringcentral/juno/commit/62d423010ea4c00af0a444a9764053db8e4d86de))
+- **RCUI-424:** [Downshift] support multiple false with can't typing anything ([d1fa64a](https://github.com/ringcentral/juno/commit/d1fa64aa8eefe1290e2065b615d5ab7b7294f57c))
+- **RCUI-424:** [Downshift] change filterOptions to not have default filter ([cd68533](https://github.com/ringcentral/juno/commit/cd68533c8c9a9ed8f4e385f3fe3241b2adf5b9f5))
+- **RCUI-424:** [Downshift] implement new Downshift with full support deprecated props ([da45ad6](https://github.com/ringcentral/juno/commit/da45ad6c91c7e8259ed2c2b3384f92d1b133f57e))
+- **RCUI-424:** [Downshift] prevent escape propagation when menu is open ([af5d86a](https://github.com/ringcentral/juno/commit/af5d86a0dcb3f72b5960e12d4a10ee06b640c78c))
+- **RCUI-424:** [Downshift] support autoClose menu when options is zero ([f39db78](https://github.com/ringcentral/juno/commit/f39db78d9883a357f2e09115ba54ea5f5983ca14))
+- **RCUI-424:** [Downshift] support outside change downshift inputValue ([bc27b3e](https://github.com/ringcentral/juno/commit/bc27b3ee36f6fa90ab85985ea62ba0f3be80f25a))
+- **RCUI-424:** [Foundation] support element type assign for isRcElement ([c9ecbbc](https://github.com/ringcentral/juno/commit/c9ecbbcf984573ec21cbe297f232fbe32bfed889))
+- **RCUI-424:** [Loading] new component Loading to replace withLoading hoc ([1bf091a](https://github.com/ringcentral/juno/commit/1bf091a0b331c4a140707a174c4835929dd7ea30))
+- **RCUI-424:** [Package] update downshift version to 6.1.0 ([04050a3](https://github.com/ringcentral/juno/commit/04050a3eb6028a5670e46fc9e2096ab8f84229c6))
+- **RCUI-424:** [PopupBox] new PopupBox component ([f993787](https://github.com/ringcentral/juno/commit/f99378734f9dcb8d1ea274fd0063a7c054d27d3f))
+- **RCUI-446:** [DnD] cleanup RcDragDropContext ([97d6506](https://github.com/ringcentral/juno/commit/97d6506ad2d44880fc8b913eb79c37dd87a8a003))
+- **RCUI-446:** [DnD] cleanup RcDraggable ([2d72c7c](https://github.com/ringcentral/juno/commit/2d72c7cab12db34a76dca94d79021c3d430ef009))
+- **RCUI-446:** [DnD] cleanup RcDragHandle ([8856b2a](https://github.com/ringcentral/juno/commit/8856b2ac463d1df34d6bac257142fcc0dad7d1e7))
+- **RCUI-446:** [DnD] cleanup RcDroppable ([171044b](https://github.com/ringcentral/juno/commit/171044b0bafcf6d0509f84072c3edc9731c087c7))
+- **RCUI-446:** [DnD] fix RcDragHandle style ([b70ecb0](https://github.com/ringcentral/juno/commit/b70ecb0433615b1e2230830022345d42712b4da5))
+- **RCUI-446:** [DnD] remove utils ([7476d7d](https://github.com/ringcentral/juno/commit/7476d7d621f0b4e9a2e69efe75ee4dc424aed2fa))
+- **RCUI-446:** [DnD] update story ([1644ba5](https://github.com/ringcentral/juno/commit/1644ba53f8388f2185038bf3757ff5b68c23e322))
+- **RCUI-450:** [Foundation] fix swapArrayLocs for testcafe ([93f4745](https://github.com/ringcentral/juno/commit/93f4745133ea6ae8223cc06f00505680a6ec7411))
+- **RCUI-452:** [Box] release base component Box ([424af47](https://github.com/ringcentral/juno/commit/424af472f5a6ecd4a41f954eb38da2bc6596e4ad))
+- **RCUI-458:** [Badge] support full Badge component ([9f88ebd](https://github.com/ringcentral/juno/commit/9f88ebdcac345d4259223e062f7d594e49ce85ed))
+- **RCUI-461:** [Tooltip] support custom portal target window with ignorePointer ([d7b297d](https://github.com/ringcentral/juno/commit/d7b297db7fadd24ac5d1dbfe2fea73972adfc638))
+- **RCUI-461:** [Tooltip] support hiddenMask action and Props ([5612083](https://github.com/ringcentral/juno/commit/5612083f7f765977aa8bbeeaf2048db2294d2bbf))
+- **RCUI-461:** [Tooltip] support tooltip ignore children pointer-event none ([6176d40](https://github.com/ringcentral/juno/commit/6176d40ca2ed7a526e7fce7dd49ceec7c64f94e5))
 
 ### Bug Fixes
 
-- **RCUI-166:** [[DialPad] dail pad 0 not support long touch to input + on surface] fix ([7630ba8](https://git.ringcentral.com/RCUI/rcui/commit/7630ba88400765d80b3b32d173f396d084be4379))
-- **RCUI-398:** [Deprecatede] mark FabButton, FabIconButton, LozengeButton, VirtualizedSelects deprecated ([4301bd9](https://git.ringcentral.com/RCUI/rcui/commit/4301bd92b8c6bcc30241c44628aeee54848e6552))
-- **RCUI-398:** [IconButton] share plainIconButtonFocusStyle ([3cb072d](https://git.ringcentral.com/RCUI/rcui/commit/3cb072d2e40041d854cc10ad98863e86c704f837))
-- **RCUI-398:** [ToggleButton] fix radius in standard and box focusVisible ([0ec782a](https://git.ringcentral.com/RCUI/rcui/commit/0ec782a7bb9d34fa85cbcb4553a38ad07619be81))
-- **RCUI-413:** [[Dialer] Cleanup component] fix DialPadProps ([3235604](https://git.ringcentral.com/RCUI/rcui/commit/32356042c66a180f1ca4d9428c4032f580ee32b9))
-- **RCUI-413:** [[Dialer] Cleanup component] fix MenuItem import ([2db334e](https://git.ringcentral.com/RCUI/rcui/commit/2db334e5d7f6cf1d5796f2615b44f2b5f00d990d))
-- **RCUI-413:** [[Dialer] Cleanup component] fix some layer ([8bcea14](https://git.ringcentral.com/RCUI/rcui/commit/8bcea1457e63308e198ed0ebe26032761afea345))
-- **RCUI-413:** [Dialer] fix some code structure and naming ([9d99dae](https://git.ringcentral.com/RCUI/rcui/commit/9d99dae01a8bb5d05703f6b5f1a7c6888b168fdf))
-- **RCUI-413:** [showDeprecatedInDev] change to logInDev ([df2de0c](https://git.ringcentral.com/RCUI/rcui/commit/df2de0c893727d5d384bc877e54855695da68b75))
-- **RCUI-413:** [useDebounce] fix useDebounce logic ([3236a3c](https://git.ringcentral.com/RCUI/rcui/commit/3236a3cf70c47ed1cfff65ced63da97c0beb4d11))
-- **RCUI-424:** [Accordion] export miss Accordion ([9f4f03a](https://git.ringcentral.com/RCUI/rcui/commit/9f4f03ad4f07a1574b4d867737df3f3723f7b08a))
-- **RCUI-424:** [Chip] fix chip border issue ([d69ecc5](https://git.ringcentral.com/RCUI/rcui/commit/d69ecc557b1cda07c532eebd828a1dd6b1d77b2f))
-- **RCUI-424:** [Chip] remove multiple class :not selector, that not support in Chrom87 ([05beb2b](https://git.ringcentral.com/RCUI/rcui/commit/05beb2b73e04bc0d50fd1dff746749214984edf5))
-- **RCUI-424:** [Dialer] change layout from grid to flex to support IE ([fae0e46](https://git.ringcentral.com/RCUI/rcui/commit/fae0e46065a9b0b2cbe31bef3139a1396cc470e2))
-- **RCUI-424:** [Downshift] fix not multiple with FunctionSetSelectedItems not check issue ([507c239](https://git.ringcentral.com/RCUI/rcui/commit/507c2394ac0103863518f54796d8d06f38212476))
-- **RCUI-424:** [Downshift] implement create multiple free tags once ([8094ca0](https://git.ringcentral.com/RCUI/rcui/commit/8094ca0e4307e2028e1a1002251d8e30cdd9cfe7))
-- **RCUI-424:** [Downshift] add data-suggestion-item-id back ([77ea3e0](https://git.ringcentral.com/RCUI/rcui/commit/77ea3e0b66c0c998a8f682aea950321929429cb9))
-- **RCUI-424:** [Downshift] add miss deprecated tag props back ([1367f90](https://git.ringcentral.com/RCUI/rcui/commit/1367f903114c6de26198d565f8a7f1db039ecdd8))
-- **RCUI-424:** [Downshift] change backspace in tagFocusable mode, that will focus into last tag ([2445f08](https://git.ringcentral.com/RCUI/rcui/commit/2445f0840e7c3e18ace4886691c6b7c825d79334))
-- **RCUI-424:** [Downshift] change downshift freeSolo select item logic ([b97fb8e](https://git.ringcentral.com/RCUI/rcui/commit/b97fb8e261b3dc5fc6b0ea5d142ada2d466891e7))
-- **RCUI-424:** [Downshift] change error name with blurOnSelect to autoSelect ([b75c410](https://git.ringcentral.com/RCUI/rcui/commit/b75c410d66ff379f86a873d0400b13725d92eb8b))
-- **RCUI-424:** [Downshift] fix backspace when have value in input ([c334cbd](https://git.ringcentral.com/RCUI/rcui/commit/c334cbd16d10993625558743a4fa743b2d6f8514))
-- **RCUI-424:** [Downshift] fix error icon color, and disabled hover clearBtn issue ([aec1efd](https://git.ringcentral.com/RCUI/rcui/commit/aec1efd6242c5141f6b9633b3dd2ac521bd92eaa))
-- **RCUI-424:** [Downshift] fix highItem non speak issue ([52dc00b](https://git.ringcentral.com/RCUI/rcui/commit/52dc00bde35e3e75e0bb3802de844826e87a498b))
-- **RCUI-424:** [Downshift] fix is disabled logic ([b898695](https://git.ringcentral.com/RCUI/rcui/commit/b8986953765d8bef7f24a35bed939b76ab389a94))
-- **RCUI-424:** [Downshift] fix item change outside not update issue ([569860f](https://git.ringcentral.com/RCUI/rcui/commit/569860f823a9360a10e0e45d61e1dcf006b9e5cd))
-- **RCUI-424:** [Downshift] fix on tag tab not reset ActiveIndex issue ([19b9fef](https://git.ringcentral.com/RCUI/rcui/commit/19b9fefab00b8bb9e8fb7c222c71bf3b5ff2e064))
-- **RCUI-424:** [Downshift] fix toggleButton false no clearButton issue ([04e130a](https://git.ringcentral.com/RCUI/rcui/commit/04e130ac2bba610fd0ef73618490038666862992))
-- **RCUI-424:** [Downshift] mark deprecated props ([66e2d4d](https://git.ringcentral.com/RCUI/rcui/commit/66e2d4dea65897546323a2d1591a51f80b6ddb49))
-- **RCUI-424:** [Downshift] mark downshift deprecated ([91275d7](https://git.ringcentral.com/RCUI/rcui/commit/91275d7ba9ef346c1cc76de273b90babd00e84e1))
-- **RCUI-424:** [Downshift] move logic into useDownshift ([ae75f67](https://git.ringcentral.com/RCUI/rcui/commit/ae75f6746d8ab09bae7f89a9d7d398d04ee20a0c))
-- **RCUI-424:** [Downshift] remove `autoClose` not autoClose, just only stopPropagation when have filter result ([3ef59f0](https://git.ringcentral.com/RCUI/rcui/commit/3ef59f03adc0a2bcf54c3ab0f80b3060e85a3507))
-- **RCUI-424:** [Downshift] remove role in input and tag, that need fix when we can make that speak correctly. ([ed2a7d7](https://git.ringcentral.com/RCUI/rcui/commit/ed2a7d79f9fec7eb4284d0fdddb6a8a23ee42a1f))
-- **RCUI-424:** [Downshift] support all chip error when downshift error ([f2e18a2](https://git.ringcentral.com/RCUI/rcui/commit/f2e18a2e57fcabde86d7ad76adb9ba83acb23cb1))
-- **RCUI-424:** [Foundation] full EventListener params ([46c4466](https://git.ringcentral.com/RCUI/rcui/commit/46c4466a8c247db531a3a947b7feceb8a1466ee7))
-- **RCUI-424:** [Foundation] provide hook useChange that will reset value when listener change ([fe75e14](https://git.ringcentral.com/RCUI/rcui/commit/fe75e14bec90c7cab61c7f400af88980a5e7a419))
-- **RCUI-424:** [Foundation] remove not need `isEmail` ([50a072b](https://git.ringcentral.com/RCUI/rcui/commit/50a072b056451d89709fc16ff53042d0fc82ca6e))
-- **RCUI-424:** [VirtualizedMenu] change style way ([71be8d3](https://git.ringcentral.com/RCUI/rcui/commit/71be8d37659078db41776d0d7c4f559827577426))
-- **RCUI-424:** [withTooltip] rename WithTooltipProps ([8dcb70f](https://git.ringcentral.com/RCUI/rcui/commit/8dcb70f92e5e2c73c706390e50c737aa46d4ec89))
-- **RCUI-449:** [VirtualizedMenu] fix a11y issue with items not wrap with listbox ([953ffbe](https://git.ringcentral.com/RCUI/rcui/commit/953ffbed56514ac7fd2838d0bbc5af5a9a5c93db))
-- **RCUI-452:** [IconButtonGroup] fix some hint message, and reexport from Buttons ([c96a433](https://git.ringcentral.com/RCUI/rcui/commit/c96a4330f8e5879629b22d3dd2fec802acdcc9ca))
-- **RCUI-454:** [Dialog] deprecated old Dialog ([290582f](https://git.ringcentral.com/RCUI/rcui/commit/290582f98ef11485669214b4865a8f2efd9e2529))
-- **RCUI-454:** [Dialog] implement new Dialog ([c82a501](https://git.ringcentral.com/RCUI/rcui/commit/c82a501c9d0a0b1b938975a4ff81f81818e91e63))
-- **RCUI-454:** [Downshift] support check props is that has forwardRef ([c5db2c7](https://git.ringcentral.com/RCUI/rcui/commit/c5db2c7adbed26a07860374a8cf3b4edb31ca56e))
-- **RCUI-454:** [withDelay] fix withDelay Hoc type ([97050bf](https://git.ringcentral.com/RCUI/rcui/commit/97050bf3a04e60b9072fe6c70dc7f06e8f742937))
-- **RCUI-454:** [withLoading] remove withLoading Hoc, should use RcLoading directly ([5e6c8c1](https://git.ringcentral.com/RCUI/rcui/commit/5e6c8c1390f7792aea3b31a327195f0fccedac40))
-- **RCUI-457:** [SplitButton] fix split button ControlButtonProps, ActionButtonProps combine issue ([ff7cc60](https://git.ringcentral.com/RCUI/rcui/commit/ff7cc60c67fc16460d98ec4c6b59fa29c0cb500d))
-- **RCUI-458:** [Avatar] change avatar presence style way with just css ([3600ec2](https://git.ringcentral.com/RCUI/rcui/commit/3600ec2d6fc84c7f86b542f41aaa91e14694edd1))
-- **RCUI-458:** [Badge] fix check has manyChar logic ([b596476](https://git.ringcentral.com/RCUI/rcui/commit/b5964763afe8ece9a54832dce7579023b55b8027))
-- **RCUI-458:** [Badge] old RcBadge be deprecated ([e66e87a](https://git.ringcentral.com/RCUI/rcui/commit/e66e87a4a2e43ed79fad2aa5d69a8dfe28b2f4e6))
-- **RCUI-460:** [Downshift] fix select item very quick issue ([592d72c](https://git.ringcentral.com/RCUI/rcui/commit/592d72c68c3e2a414a067bee14ccbe2858bd4ced))
-- **RCUI-461:** [Tooltip] fix useHiddenTooltip logic ([b3918dd](https://git.ringcentral.com/RCUI/rcui/commit/b3918ddc4a11adca44893d7f42318fa316e0f86f))
-- **RCUI-461:** [useResizeObserver] fix useResizeObserver logic need, a wrapper for that can get new state ([7ddf891](https://git.ringcentral.com/RCUI/rcui/commit/7ddf8910d5ac6cd5c7b0ad1b65422ede901809ce))
-- **RCUI-467:** [Icon] update icon ([750532f](https://git.ringcentral.com/RCUI/rcui/commit/750532fe55e60ab4b4888b9b18d64ccc2b7c57b9))
+- **RCUI-166:** [[DialPad] dail pad 0 not support long touch to input + on surface] fix ([7630ba8](https://github.com/ringcentral/juno/commit/7630ba88400765d80b3b32d173f396d084be4379))
+- **RCUI-398:** [Deprecatede] mark FabButton, FabIconButton, LozengeButton, VirtualizedSelects deprecated ([4301bd9](https://github.com/ringcentral/juno/commit/4301bd92b8c6bcc30241c44628aeee54848e6552))
+- **RCUI-398:** [IconButton] share plainIconButtonFocusStyle ([3cb072d](https://github.com/ringcentral/juno/commit/3cb072d2e40041d854cc10ad98863e86c704f837))
+- **RCUI-398:** [ToggleButton] fix radius in standard and box focusVisible ([0ec782a](https://github.com/ringcentral/juno/commit/0ec782a7bb9d34fa85cbcb4553a38ad07619be81))
+- **RCUI-413:** [[Dialer] Cleanup component] fix DialPadProps ([3235604](https://github.com/ringcentral/juno/commit/32356042c66a180f1ca4d9428c4032f580ee32b9))
+- **RCUI-413:** [[Dialer] Cleanup component] fix MenuItem import ([2db334e](https://github.com/ringcentral/juno/commit/2db334e5d7f6cf1d5796f2615b44f2b5f00d990d))
+- **RCUI-413:** [[Dialer] Cleanup component] fix some layer ([8bcea14](https://github.com/ringcentral/juno/commit/8bcea1457e63308e198ed0ebe26032761afea345))
+- **RCUI-413:** [Dialer] fix some code structure and naming ([9d99dae](https://github.com/ringcentral/juno/commit/9d99dae01a8bb5d05703f6b5f1a7c6888b168fdf))
+- **RCUI-413:** [showDeprecatedInDev] change to logInDev ([df2de0c](https://github.com/ringcentral/juno/commit/df2de0c893727d5d384bc877e54855695da68b75))
+- **RCUI-413:** [useDebounce] fix useDebounce logic ([3236a3c](https://github.com/ringcentral/juno/commit/3236a3cf70c47ed1cfff65ced63da97c0beb4d11))
+- **RCUI-424:** [Accordion] export miss Accordion ([9f4f03a](https://github.com/ringcentral/juno/commit/9f4f03ad4f07a1574b4d867737df3f3723f7b08a))
+- **RCUI-424:** [Chip] fix chip border issue ([d69ecc5](https://github.com/ringcentral/juno/commit/d69ecc557b1cda07c532eebd828a1dd6b1d77b2f))
+- **RCUI-424:** [Chip] remove multiple class :not selector, that not support in Chrom87 ([05beb2b](https://github.com/ringcentral/juno/commit/05beb2b73e04bc0d50fd1dff746749214984edf5))
+- **RCUI-424:** [Dialer] change layout from grid to flex to support IE ([fae0e46](https://github.com/ringcentral/juno/commit/fae0e46065a9b0b2cbe31bef3139a1396cc470e2))
+- **RCUI-424:** [Downshift] fix not multiple with FunctionSetSelectedItems not check issue ([507c239](https://github.com/ringcentral/juno/commit/507c2394ac0103863518f54796d8d06f38212476))
+- **RCUI-424:** [Downshift] implement create multiple free tags once ([8094ca0](https://github.com/ringcentral/juno/commit/8094ca0e4307e2028e1a1002251d8e30cdd9cfe7))
+- **RCUI-424:** [Downshift] add data-suggestion-item-id back ([77ea3e0](https://github.com/ringcentral/juno/commit/77ea3e0b66c0c998a8f682aea950321929429cb9))
+- **RCUI-424:** [Downshift] add miss deprecated tag props back ([1367f90](https://github.com/ringcentral/juno/commit/1367f903114c6de26198d565f8a7f1db039ecdd8))
+- **RCUI-424:** [Downshift] change backspace in tagFocusable mode, that will focus into last tag ([2445f08](https://github.com/ringcentral/juno/commit/2445f0840e7c3e18ace4886691c6b7c825d79334))
+- **RCUI-424:** [Downshift] change downshift freeSolo select item logic ([b97fb8e](https://github.com/ringcentral/juno/commit/b97fb8e261b3dc5fc6b0ea5d142ada2d466891e7))
+- **RCUI-424:** [Downshift] change error name with blurOnSelect to autoSelect ([b75c410](https://github.com/ringcentral/juno/commit/b75c410d66ff379f86a873d0400b13725d92eb8b))
+- **RCUI-424:** [Downshift] fix backspace when have value in input ([c334cbd](https://github.com/ringcentral/juno/commit/c334cbd16d10993625558743a4fa743b2d6f8514))
+- **RCUI-424:** [Downshift] fix error icon color, and disabled hover clearBtn issue ([aec1efd](https://github.com/ringcentral/juno/commit/aec1efd6242c5141f6b9633b3dd2ac521bd92eaa))
+- **RCUI-424:** [Downshift] fix highItem non speak issue ([52dc00b](https://github.com/ringcentral/juno/commit/52dc00bde35e3e75e0bb3802de844826e87a498b))
+- **RCUI-424:** [Downshift] fix is disabled logic ([b898695](https://github.com/ringcentral/juno/commit/b8986953765d8bef7f24a35bed939b76ab389a94))
+- **RCUI-424:** [Downshift] fix item change outside not update issue ([569860f](https://github.com/ringcentral/juno/commit/569860f823a9360a10e0e45d61e1dcf006b9e5cd))
+- **RCUI-424:** [Downshift] fix on tag tab not reset ActiveIndex issue ([19b9fef](https://github.com/ringcentral/juno/commit/19b9fefab00b8bb9e8fb7c222c71bf3b5ff2e064))
+- **RCUI-424:** [Downshift] fix toggleButton false no clearButton issue ([04e130a](https://github.com/ringcentral/juno/commit/04e130ac2bba610fd0ef73618490038666862992))
+- **RCUI-424:** [Downshift] mark deprecated props ([66e2d4d](https://github.com/ringcentral/juno/commit/66e2d4dea65897546323a2d1591a51f80b6ddb49))
+- **RCUI-424:** [Downshift] mark downshift deprecated ([91275d7](https://github.com/ringcentral/juno/commit/91275d7ba9ef346c1cc76de273b90babd00e84e1))
+- **RCUI-424:** [Downshift] move logic into useDownshift ([ae75f67](https://github.com/ringcentral/juno/commit/ae75f6746d8ab09bae7f89a9d7d398d04ee20a0c))
+- **RCUI-424:** [Downshift] remove `autoClose` not autoClose, just only stopPropagation when have filter result ([3ef59f0](https://github.com/ringcentral/juno/commit/3ef59f03adc0a2bcf54c3ab0f80b3060e85a3507))
+- **RCUI-424:** [Downshift] remove role in input and tag, that need fix when we can make that speak correctly. ([ed2a7d7](https://github.com/ringcentral/juno/commit/ed2a7d79f9fec7eb4284d0fdddb6a8a23ee42a1f))
+- **RCUI-424:** [Downshift] support all chip error when downshift error ([f2e18a2](https://github.com/ringcentral/juno/commit/f2e18a2e57fcabde86d7ad76adb9ba83acb23cb1))
+- **RCUI-424:** [Foundation] full EventListener params ([46c4466](https://github.com/ringcentral/juno/commit/46c4466a8c247db531a3a947b7feceb8a1466ee7))
+- **RCUI-424:** [Foundation] provide hook useChange that will reset value when listener change ([fe75e14](https://github.com/ringcentral/juno/commit/fe75e14bec90c7cab61c7f400af88980a5e7a419))
+- **RCUI-424:** [Foundation] remove not need `isEmail` ([50a072b](https://github.com/ringcentral/juno/commit/50a072b056451d89709fc16ff53042d0fc82ca6e))
+- **RCUI-424:** [VirtualizedMenu] change style way ([71be8d3](https://github.com/ringcentral/juno/commit/71be8d37659078db41776d0d7c4f559827577426))
+- **RCUI-424:** [withTooltip] rename WithTooltipProps ([8dcb70f](https://github.com/ringcentral/juno/commit/8dcb70f92e5e2c73c706390e50c737aa46d4ec89))
+- **RCUI-449:** [VirtualizedMenu] fix a11y issue with items not wrap with listbox ([953ffbe](https://github.com/ringcentral/juno/commit/953ffbed56514ac7fd2838d0bbc5af5a9a5c93db))
+- **RCUI-452:** [IconButtonGroup] fix some hint message, and reexport from Buttons ([c96a433](https://github.com/ringcentral/juno/commit/c96a4330f8e5879629b22d3dd2fec802acdcc9ca))
+- **RCUI-454:** [Dialog] deprecated old Dialog ([290582f](https://github.com/ringcentral/juno/commit/290582f98ef11485669214b4865a8f2efd9e2529))
+- **RCUI-454:** [Dialog] implement new Dialog ([c82a501](https://github.com/ringcentral/juno/commit/c82a501c9d0a0b1b938975a4ff81f81818e91e63))
+- **RCUI-454:** [Downshift] support check props is that has forwardRef ([c5db2c7](https://github.com/ringcentral/juno/commit/c5db2c7adbed26a07860374a8cf3b4edb31ca56e))
+- **RCUI-454:** [withDelay] fix withDelay Hoc type ([97050bf](https://github.com/ringcentral/juno/commit/97050bf3a04e60b9072fe6c70dc7f06e8f742937))
+- **RCUI-454:** [withLoading] remove withLoading Hoc, should use RcLoading directly ([5e6c8c1](https://github.com/ringcentral/juno/commit/5e6c8c1390f7792aea3b31a327195f0fccedac40))
+- **RCUI-457:** [SplitButton] fix split button ControlButtonProps, ActionButtonProps combine issue ([ff7cc60](https://github.com/ringcentral/juno/commit/ff7cc60c67fc16460d98ec4c6b59fa29c0cb500d))
+- **RCUI-458:** [Avatar] change avatar presence style way with just css ([3600ec2](https://github.com/ringcentral/juno/commit/3600ec2d6fc84c7f86b542f41aaa91e14694edd1))
+- **RCUI-458:** [Badge] fix check has manyChar logic ([b596476](https://github.com/ringcentral/juno/commit/b5964763afe8ece9a54832dce7579023b55b8027))
+- **RCUI-458:** [Badge] old RcBadge be deprecated ([e66e87a](https://github.com/ringcentral/juno/commit/e66e87a4a2e43ed79fad2aa5d69a8dfe28b2f4e6))
+- **RCUI-460:** [Downshift] fix select item very quick issue ([592d72c](https://github.com/ringcentral/juno/commit/592d72c68c3e2a414a067bee14ccbe2858bd4ced))
+- **RCUI-461:** [Tooltip] fix useHiddenTooltip logic ([b3918dd](https://github.com/ringcentral/juno/commit/b3918ddc4a11adca44893d7f42318fa316e0f86f))
+- **RCUI-461:** [useResizeObserver] fix useResizeObserver logic need, a wrapper for that can get new state ([7ddf891](https://github.com/ringcentral/juno/commit/7ddf8910d5ac6cd5c7b0ad1b65422ede901809ce))
+- **RCUI-467:** [Icon] update icon ([750532f](https://github.com/ringcentral/juno/commit/750532fe55e60ab4b4888b9b18d64ccc2b7c57b9))
 
-### [1.5.1](https://git.ringcentral.com/RCUI/rcui/compare/1.5.0...1.5.1) (2021-03-22)
+### [1.5.1](https://github.com/ringcentral/juno/compare/1.5.0...1.5.1) (2021-03-22)
 
 ### ⚠ BREAKING CHANGES
 
@@ -2157,67 +2157,67 @@ We announce new responsive API for you to easy to switch size between different 
 
 ### Features
 
-- **RCUI-365:** [Accessibility][mac] Can't read out the month in real-time when hit Enter to change month in date selector dialog. ([d62729f](https://git.ringcentral.com/RCUI/rcui/commit/d62729f3625bb77a0e66098829cb6fc4192154cd))
-- **RCUI-407:** [Aria utils] add @react-aria/utils ([3fa027f](https://git.ringcentral.com/RCUI/rcui/commit/3fa027f2a92431cbe02dc27369d17fbc7bfffe7c))
-- **RCUI-407:** [Menu] cleanup the Menu ([a9a7a03](https://git.ringcentral.com/RCUI/rcui/commit/a9a7a03ffa8995f72c0ccb8201c577d8f9a96c5f))
-- **RCUI-407:** [Menu] cleanup the Menu ([3224947](https://git.ringcentral.com/RCUI/rcui/commit/32249476545f470d08db93824e623b877f547ea2))
-- **RCUI-407:** [Menu] depreacted the storybook ([cf51f26](https://git.ringcentral.com/RCUI/rcui/commit/cf51f26998f56db79afc77365848f72272779d6e))
-- **RCUI-407:** [Menu] move to deprecated ([e386444](https://git.ringcentral.com/RCUI/rcui/commit/e386444bc80297dc581552124bc484ff72ec45ab))
-- **RCUI-407:** [MenuItem] cleanup the MenuItem ([5f99d65](https://git.ringcentral.com/RCUI/rcui/commit/5f99d65ca21d634661cf5bf0cd0047a7379ad675))
-- **RCUI-407:** [MenuList] cleanup the MenuList ([4353196](https://git.ringcentral.com/RCUI/rcui/commit/43531962077a1ee162bd6b368f9b8ee86b6fa939))
-- **RCUI-407:** [Popper] component cleanup ([e85d779](https://git.ringcentral.com/RCUI/rcui/commit/e85d779ac29392377495441581e840ce85916274))
-- **RCUI-411:** [Slider] cleanup whole Slider and support custom color ([c6d0d9f](https://git.ringcentral.com/RCUI/rcui/commit/c6d0d9f0931ca9aab629f48e2c1e5a7636deac44))
-- **RCUI-412:** [Snackbar] cleanup support full size and type with ContentProps pass ([9c9e436](https://git.ringcentral.com/RCUI/rcui/commit/9c9e436953165135ffb8b766e144c2c5b24565a3))
-- **RCUI-412:** [SnackbarContent] support auto set action size, when user not set ([668bf81](https://git.ringcentral.com/RCUI/rcui/commit/668bf81546f0f05104d614725bf19ba9e96dcd03))
-- **RCUI-413:** [Backdrop] cleanup Backdrop, mark old Backdrop deprecated ([e6b9b64](https://git.ringcentral.com/RCUI/rcui/commit/e6b9b64fcbbe45130ebad71ca1e7464301f978df))
-- **RCUI-413:** [Grid] cleanup Grid ([ae00b10](https://git.ringcentral.com/RCUI/rcui/commit/ae00b109159c8b050ff976c67bca834516476bd1))
-- **RCUI-413:** [Paper] cleanup Backdrop, mark old Paper deprecated ([4d5fa56](https://git.ringcentral.com/RCUI/rcui/commit/4d5fa56eed18a4146bc2d18995cc40ed501fd3c1))
-- **RCUI-416:** [Popover] Component CleanUp ([efdfd48](https://git.ringcentral.com/RCUI/rcui/commit/efdfd487ef9320967f98f8834ff2a5fa83c3297e))
-- **RCUI-421:** [Downshift] update RcDownshiftProps to support list to be always opened ([23f9075](https://git.ringcentral.com/RCUI/rcui/commit/23f90752d472722cff23b578bc56e36b9d902788))
-- **RCUI-422:** [[RcTabs][updated] Fix the display of More button on undocked window] add TooltipProps into MoreButtonProps ([9a77860](https://git.ringcentral.com/RCUI/rcui/commit/9a778606c370705a5e64ef210edd335ea61fa9fc))
-- **RCUI-423:** [ListButtonItem] remove component ([67a18af](https://git.ringcentral.com/RCUI/rcui/commit/67a18af82a124f36219df4beeea6834cde4e1868))
-- **RCUI-423:** [ListItemSecondarySpan] remove component ([a450ad6](https://git.ringcentral.com/RCUI/rcui/commit/a450ad6c7e1407940994f3f853e5097b8c826c8b))
-- **RCUI-423:** [ListItemSecondaryText] remove component ([bd7d06e](https://git.ringcentral.com/RCUI/rcui/commit/bd7d06e7e01272698c2fe88cc1d50fd787cfada4))
-- **RCUI-423:** [ListItemWithHover] remove component ([7c110e3](https://git.ringcentral.com/RCUI/rcui/commit/7c110e3fbf5c37feb721fd1d503a4b83ef5e4128))
-- **RCUI-423:** [ListLoading] remove component ([efae4d7](https://git.ringcentral.com/RCUI/rcui/commit/efae4d7172345adddd3faf4f6779151f00650c77))
-- **RCUI-423:** [ListNavItem] remove component ([f6a32a0](https://git.ringcentral.com/RCUI/rcui/commit/f6a32a093cf74124df350d9d1d3bb1a3688c540b))
-- **RCUI-423:** [MinimizedWindow] remove component ([eed8e3d](https://git.ringcentral.com/RCUI/rcui/commit/eed8e3d7d17b5bcee28dc0002328b8c26e5722fc))
-- **RCUI-423:** [VirtualList] add ListLading for virtualList ([8993db1](https://git.ringcentral.com/RCUI/rcui/commit/8993db1b91e169a2cf2e61d3d9d2e7d3ef58ce7f))
-- **RCUI-427:** [IconButton] add variant contained type ([e43576a](https://git.ringcentral.com/RCUI/rcui/commit/e43576a8cc76870320f5605312c20229d84a08a9))
-- **RCUI-428:** [Downshift] Update Downshift component props ([cef69cb](https://git.ringcentral.com/RCUI/rcui/commit/cef69cb825fda9a3ff3da1ea07545e97dd625505))
-- **RCUI-429:** [CoverAvatar] remove component ([8825dd3](https://git.ringcentral.com/RCUI/rcui/commit/8825dd347ae9eab50ada1b28464e7564df1fb66d))
-- **RCUI-429:** [Grid] move depreacted path ([3dc8668](https://git.ringcentral.com/RCUI/rcui/commit/3dc866882a49fe5bbb6e1745b09a7f15d9069014))
-- **RCUI-429:** [Marker] remove component ([0539313](https://git.ringcentral.com/RCUI/rcui/commit/0539313dd297794f69e48ae6a5e56e053d9ab75b))
-- **RCUI-429:** [Responsive] remove component ([8ff252a](https://git.ringcentral.com/RCUI/rcui/commit/8ff252aee81d32b15cd5e0c70f9f60dd89a2144d))
-- **RCUI-429:** [SuffixFollowTextField] remove component ([e36864f](https://git.ringcentral.com/RCUI/rcui/commit/e36864f8ba714bab3d898a2382ed0cd5617d54ef))
-- **RCUI-429:** [Toast] remove component ([3c75317](https://git.ringcentral.com/RCUI/rcui/commit/3c753171065ffcd391fbcdacff7ed720ac17199a))
-- **RCUI-429:** [Toast] remove component and rebase ([24fce39](https://git.ringcentral.com/RCUI/rcui/commit/24fce39bb7c9b645e4c1e719d39c959d2bcf0332))
-- **RCUI-429:** [UMI] remove component ([30e01f7](https://git.ringcentral.com/RCUI/rcui/commit/30e01f775684c0bcabe05c2ca6880d8b9c0577bc))
-- **RCUI-436:** [Table] new component for table body cell content, support TableHeadCell text align ([c05d946](https://git.ringcentral.com/RCUI/rcui/commit/c05d9468988afcaf3e1184f18369cdd9f6d38c05))
-- **RCUI-439:** [SplitButton] add MenuProps ([6425f22](https://git.ringcentral.com/RCUI/rcui/commit/6425f228309dd41d55a3850226dc48d548d3ba5b))
+- **RCUI-365:** [Accessibility][mac] Can't read out the month in real-time when hit Enter to change month in date selector dialog. ([d62729f](https://github.com/ringcentral/juno/commit/d62729f3625bb77a0e66098829cb6fc4192154cd))
+- **RCUI-407:** [Aria utils] add @react-aria/utils ([3fa027f](https://github.com/ringcentral/juno/commit/3fa027f2a92431cbe02dc27369d17fbc7bfffe7c))
+- **RCUI-407:** [Menu] cleanup the Menu ([a9a7a03](https://github.com/ringcentral/juno/commit/a9a7a03ffa8995f72c0ccb8201c577d8f9a96c5f))
+- **RCUI-407:** [Menu] cleanup the Menu ([3224947](https://github.com/ringcentral/juno/commit/32249476545f470d08db93824e623b877f547ea2))
+- **RCUI-407:** [Menu] depreacted the storybook ([cf51f26](https://github.com/ringcentral/juno/commit/cf51f26998f56db79afc77365848f72272779d6e))
+- **RCUI-407:** [Menu] move to deprecated ([e386444](https://github.com/ringcentral/juno/commit/e386444bc80297dc581552124bc484ff72ec45ab))
+- **RCUI-407:** [MenuItem] cleanup the MenuItem ([5f99d65](https://github.com/ringcentral/juno/commit/5f99d65ca21d634661cf5bf0cd0047a7379ad675))
+- **RCUI-407:** [MenuList] cleanup the MenuList ([4353196](https://github.com/ringcentral/juno/commit/43531962077a1ee162bd6b368f9b8ee86b6fa939))
+- **RCUI-407:** [Popper] component cleanup ([e85d779](https://github.com/ringcentral/juno/commit/e85d779ac29392377495441581e840ce85916274))
+- **RCUI-411:** [Slider] cleanup whole Slider and support custom color ([c6d0d9f](https://github.com/ringcentral/juno/commit/c6d0d9f0931ca9aab629f48e2c1e5a7636deac44))
+- **RCUI-412:** [Snackbar] cleanup support full size and type with ContentProps pass ([9c9e436](https://github.com/ringcentral/juno/commit/9c9e436953165135ffb8b766e144c2c5b24565a3))
+- **RCUI-412:** [SnackbarContent] support auto set action size, when user not set ([668bf81](https://github.com/ringcentral/juno/commit/668bf81546f0f05104d614725bf19ba9e96dcd03))
+- **RCUI-413:** [Backdrop] cleanup Backdrop, mark old Backdrop deprecated ([e6b9b64](https://github.com/ringcentral/juno/commit/e6b9b64fcbbe45130ebad71ca1e7464301f978df))
+- **RCUI-413:** [Grid] cleanup Grid ([ae00b10](https://github.com/ringcentral/juno/commit/ae00b109159c8b050ff976c67bca834516476bd1))
+- **RCUI-413:** [Paper] cleanup Backdrop, mark old Paper deprecated ([4d5fa56](https://github.com/ringcentral/juno/commit/4d5fa56eed18a4146bc2d18995cc40ed501fd3c1))
+- **RCUI-416:** [Popover] Component CleanUp ([efdfd48](https://github.com/ringcentral/juno/commit/efdfd487ef9320967f98f8834ff2a5fa83c3297e))
+- **RCUI-421:** [Downshift] update RcDownshiftProps to support list to be always opened ([23f9075](https://github.com/ringcentral/juno/commit/23f90752d472722cff23b578bc56e36b9d902788))
+- **RCUI-422:** [[RcTabs][updated] Fix the display of More button on undocked window] add TooltipProps into MoreButtonProps ([9a77860](https://github.com/ringcentral/juno/commit/9a778606c370705a5e64ef210edd335ea61fa9fc))
+- **RCUI-423:** [ListButtonItem] remove component ([67a18af](https://github.com/ringcentral/juno/commit/67a18af82a124f36219df4beeea6834cde4e1868))
+- **RCUI-423:** [ListItemSecondarySpan] remove component ([a450ad6](https://github.com/ringcentral/juno/commit/a450ad6c7e1407940994f3f853e5097b8c826c8b))
+- **RCUI-423:** [ListItemSecondaryText] remove component ([bd7d06e](https://github.com/ringcentral/juno/commit/bd7d06e7e01272698c2fe88cc1d50fd787cfada4))
+- **RCUI-423:** [ListItemWithHover] remove component ([7c110e3](https://github.com/ringcentral/juno/commit/7c110e3fbf5c37feb721fd1d503a4b83ef5e4128))
+- **RCUI-423:** [ListLoading] remove component ([efae4d7](https://github.com/ringcentral/juno/commit/efae4d7172345adddd3faf4f6779151f00650c77))
+- **RCUI-423:** [ListNavItem] remove component ([f6a32a0](https://github.com/ringcentral/juno/commit/f6a32a093cf74124df350d9d1d3bb1a3688c540b))
+- **RCUI-423:** [MinimizedWindow] remove component ([eed8e3d](https://github.com/ringcentral/juno/commit/eed8e3d7d17b5bcee28dc0002328b8c26e5722fc))
+- **RCUI-423:** [VirtualList] add ListLading for virtualList ([8993db1](https://github.com/ringcentral/juno/commit/8993db1b91e169a2cf2e61d3d9d2e7d3ef58ce7f))
+- **RCUI-427:** [IconButton] add variant contained type ([e43576a](https://github.com/ringcentral/juno/commit/e43576a8cc76870320f5605312c20229d84a08a9))
+- **RCUI-428:** [Downshift] Update Downshift component props ([cef69cb](https://github.com/ringcentral/juno/commit/cef69cb825fda9a3ff3da1ea07545e97dd625505))
+- **RCUI-429:** [CoverAvatar] remove component ([8825dd3](https://github.com/ringcentral/juno/commit/8825dd347ae9eab50ada1b28464e7564df1fb66d))
+- **RCUI-429:** [Grid] move depreacted path ([3dc8668](https://github.com/ringcentral/juno/commit/3dc866882a49fe5bbb6e1745b09a7f15d9069014))
+- **RCUI-429:** [Marker] remove component ([0539313](https://github.com/ringcentral/juno/commit/0539313dd297794f69e48ae6a5e56e053d9ab75b))
+- **RCUI-429:** [Responsive] remove component ([8ff252a](https://github.com/ringcentral/juno/commit/8ff252aee81d32b15cd5e0c70f9f60dd89a2144d))
+- **RCUI-429:** [SuffixFollowTextField] remove component ([e36864f](https://github.com/ringcentral/juno/commit/e36864f8ba714bab3d898a2382ed0cd5617d54ef))
+- **RCUI-429:** [Toast] remove component ([3c75317](https://github.com/ringcentral/juno/commit/3c753171065ffcd391fbcdacff7ed720ac17199a))
+- **RCUI-429:** [Toast] remove component and rebase ([24fce39](https://github.com/ringcentral/juno/commit/24fce39bb7c9b645e4c1e719d39c959d2bcf0332))
+- **RCUI-429:** [UMI] remove component ([30e01f7](https://github.com/ringcentral/juno/commit/30e01f775684c0bcabe05c2ca6880d8b9c0577bc))
+- **RCUI-436:** [Table] new component for table body cell content, support TableHeadCell text align ([c05d946](https://github.com/ringcentral/juno/commit/c05d9468988afcaf3e1184f18369cdd9f6d38c05))
+- **RCUI-439:** [SplitButton] add MenuProps ([6425f22](https://github.com/ringcentral/juno/commit/6425f228309dd41d55a3850226dc48d548d3ba5b))
 
 ### Bug Fixes
 
-- **RCUI-209:** [Dialog] fix dialog title color ([8d09802](https://git.ringcentral.com/RCUI/rcui/commit/8d09802aea434230a264df43b5a65af7c446238b))
-- **RCUI-407:** [Menu] fix component circle import ([58c99da](https://git.ringcentral.com/RCUI/rcui/commit/58c99dacdfad8d2c756f0fe97419adc1ca025c82))
-- **RCUI-407:** [Menu] fix export ([4be6ac5](https://git.ringcentral.com/RCUI/rcui/commit/4be6ac57f15a3db666ef1316662079350dcfadd3))
-- **RCUI-407:** [Menu] fix some code structure and more storybook ([09a343f](https://git.ringcentral.com/RCUI/rcui/commit/09a343fd62f2493e2028a22b9ba3b3c7f8f7fd76))
-- **RCUI-407:** [MenuItemActionWrapper, MenuItemSubAction, MenuOption, VirtualizedSelects, a11yKeyboardCode] mark component deprecated ([5eb0fa9](https://git.ringcentral.com/RCUI/rcui/commit/5eb0fa9d7629dc95dd004dee300f3c2fff781c4f))
-- **RCUI-407:** [withTooltip] add miss withTooltip for menu and list ([5a57f13](https://git.ringcentral.com/RCUI/rcui/commit/5a57f134da3ad5e3442dc2ac42e9367c794e7c15))
-- **RCUI-409:** [Stepper] cleanup whole Stepper and profermance fix ([f2889ad](https://git.ringcentral.com/RCUI/rcui/commit/f2889ad9f7b889f201c023287c143f26c1133f3c))
-- **RCUI-412:** [Snackbar] change default transition animation to slide down ([2a34315](https://git.ringcentral.com/RCUI/rcui/commit/2a343157c88342bd9ab44089ddd6e1dda79777f5))
-- **RCUI-412:** [Toast] change toast format and mark deprecated for move back to Jui ([efa9627](https://git.ringcentral.com/RCUI/rcui/commit/efa962737f223a4348494f75fe12a3d0d4274d2a))
-- **RCUI-413:** [DetachedWindow] re export DetachedWindow ([98fb95c](https://git.ringcentral.com/RCUI/rcui/commit/98fb95c87d62c556e89b968f1d2b93a62a7231a4))
-- **RCUI-413:** [TextField] make TextField can be uncontrol component ([eb21466](https://git.ringcentral.com/RCUI/rcui/commit/eb214668a4ffe4060ef8e5db1b680bed548c792b))
-- **RCUI-427:** [IconButton] rebase ([4775832](https://git.ringcentral.com/RCUI/rcui/commit/47758324767797343965b42f43c5234d3cf42cf2))
-- **RCUI-427:** [IconButton] use transition create function ([b3b1f50](https://git.ringcentral.com/RCUI/rcui/commit/b3b1f5000b5119ab7c41efdc2ff0cc06f2172777))
-- **RCUI-435:** [rcui table bugs] Reimplement header bottom border ([af4581e](https://git.ringcentral.com/RCUI/rcui/commit/af4581e0e9b47134275cf5c52eda5f5ffa2f9399))
-- **RCUI-437:** [TextField] try cache clearReactReferencesInNode for IE render issue ([925dac6](https://git.ringcentral.com/RCUI/rcui/commit/925dac6c1d741349dfd3570ca0c8cad4d99b3008))
-- **RCUI-439:** [SplitButton] plain onOpen and onClose on SplitButton ([7c0b1f7](https://git.ringcentral.com/RCUI/rcui/commit/7c0b1f71166cddc1bb281f230ca2c23f305641ec))
-- **RCUI-440:** [DatePicker] fix below icon with empty margin from TextField issue ([94875e9](https://git.ringcentral.com/RCUI/rcui/commit/94875e99959884ae8c2291919dbb95d546a9781c))
-- **RCUI-443:** [Select] never switch control component to uncontrol component in select ([f9ab754](https://git.ringcentral.com/RCUI/rcui/commit/f9ab7549357838fb8be981cfae88f1d9657ca031))
+- **RCUI-209:** [Dialog] fix dialog title color ([8d09802](https://github.com/ringcentral/juno/commit/8d09802aea434230a264df43b5a65af7c446238b))
+- **RCUI-407:** [Menu] fix component circle import ([58c99da](https://github.com/ringcentral/juno/commit/58c99dacdfad8d2c756f0fe97419adc1ca025c82))
+- **RCUI-407:** [Menu] fix export ([4be6ac5](https://github.com/ringcentral/juno/commit/4be6ac57f15a3db666ef1316662079350dcfadd3))
+- **RCUI-407:** [Menu] fix some code structure and more storybook ([09a343f](https://github.com/ringcentral/juno/commit/09a343fd62f2493e2028a22b9ba3b3c7f8f7fd76))
+- **RCUI-407:** [MenuItemActionWrapper, MenuItemSubAction, MenuOption, VirtualizedSelects, a11yKeyboardCode] mark component deprecated ([5eb0fa9](https://github.com/ringcentral/juno/commit/5eb0fa9d7629dc95dd004dee300f3c2fff781c4f))
+- **RCUI-407:** [withTooltip] add miss withTooltip for menu and list ([5a57f13](https://github.com/ringcentral/juno/commit/5a57f134da3ad5e3442dc2ac42e9367c794e7c15))
+- **RCUI-409:** [Stepper] cleanup whole Stepper and profermance fix ([f2889ad](https://github.com/ringcentral/juno/commit/f2889ad9f7b889f201c023287c143f26c1133f3c))
+- **RCUI-412:** [Snackbar] change default transition animation to slide down ([2a34315](https://github.com/ringcentral/juno/commit/2a343157c88342bd9ab44089ddd6e1dda79777f5))
+- **RCUI-412:** [Toast] change toast format and mark deprecated for move back to Jui ([efa9627](https://github.com/ringcentral/juno/commit/efa962737f223a4348494f75fe12a3d0d4274d2a))
+- **RCUI-413:** [DetachedWindow] re export DetachedWindow ([98fb95c](https://github.com/ringcentral/juno/commit/98fb95c87d62c556e89b968f1d2b93a62a7231a4))
+- **RCUI-413:** [TextField] make TextField can be uncontrol component ([eb21466](https://github.com/ringcentral/juno/commit/eb214668a4ffe4060ef8e5db1b680bed548c792b))
+- **RCUI-427:** [IconButton] rebase ([4775832](https://github.com/ringcentral/juno/commit/47758324767797343965b42f43c5234d3cf42cf2))
+- **RCUI-427:** [IconButton] use transition create function ([b3b1f50](https://github.com/ringcentral/juno/commit/b3b1f5000b5119ab7c41efdc2ff0cc06f2172777))
+- **RCUI-435:** [rcui table bugs] Reimplement header bottom border ([af4581e](https://github.com/ringcentral/juno/commit/af4581e0e9b47134275cf5c52eda5f5ffa2f9399))
+- **RCUI-437:** [TextField] try cache clearReactReferencesInNode for IE render issue ([925dac6](https://github.com/ringcentral/juno/commit/925dac6c1d741349dfd3570ca0c8cad4d99b3008))
+- **RCUI-439:** [SplitButton] plain onOpen and onClose on SplitButton ([7c0b1f7](https://github.com/ringcentral/juno/commit/7c0b1f71166cddc1bb281f230ca2c23f305641ec))
+- **RCUI-440:** [DatePicker] fix below icon with empty margin from TextField issue ([94875e9](https://github.com/ringcentral/juno/commit/94875e99959884ae8c2291919dbb95d546a9781c))
+- **RCUI-443:** [Select] never switch control component to uncontrol component in select ([f9ab754](https://github.com/ringcentral/juno/commit/f9ab7549357838fb8be981cfae88f1d9657ca031))
 
-## [1.5.0](https://git.ringcentral.com/RCUI/rcui/compare/1.4.1...1.5.0) (2021-03-04)
+## [1.5.0](https://github.com/ringcentral/juno/compare/1.4.1...1.5.0) (2021-03-04)
 
 ### ⚠ BREAKING CHANGES
 
@@ -2228,56 +2228,56 @@ We announce new responsive API for you to easy to switch size between different 
 
 ### Features
 
-- **RCUI-243:** [Button] refactor whole button and add size with 'xsmall' | 'small'` ([8828a1e](https://git.ringcentral.com/RCUI/rcui/commit/8828a1e1f986e690f9324356dc50764be71a3398))
-- **RCUI-388:** [Foundation] export useForkRef ([a05d624](https://git.ringcentral.com/RCUI/rcui/commit/a05d624c1df1f4feef6b4ad694247f07179ac6e3))
-- **RCUI-398:** [Foundation] new method swapArrayLocs ([d95e85b](https://git.ringcentral.com/RCUI/rcui/commit/d95e85b0199a20e7a9bd1de27bdf57f1fe47f046))
-- **RCUI-398:** [Foundation] pick remove class method in foundation ([84a894c](https://git.ringcentral.com/RCUI/rcui/commit/84a894c260b0146d5c2a9f6af06625cf596e9e71))
-- **RCUI-399:** [List] add deprecated warning ([f80da29](https://git.ringcentral.com/RCUI/rcui/commit/f80da2931de6897b0e08920545b4008b91fc5a18))
-- **RCUI-399:** [List] cleanup components ([f036d9d](https://git.ringcentral.com/RCUI/rcui/commit/f036d9db306c31b04011f96fc7100830bb7d7c5c))
-- **RCUI-399:** [List] cleanup components and story ([2aa384e](https://git.ringcentral.com/RCUI/rcui/commit/2aa384ec4872c6f13e9af4b7237c4e7e6497a7db))
-- **RCUI-399:** [List] delete RcList default dense prop ([2e0ec3f](https://git.ringcentral.com/RCUI/rcui/commit/2e0ec3f6ebd39228e2e656d205b92bea282f9689))
-- **RCUI-399:** [List] fix import path ([d1e81d4](https://git.ringcentral.com/RCUI/rcui/commit/d1e81d4bfd327e0e8bb3e469a76a4ec1d85835d9))
-- **RCUI-399:** [ListItemIcon] refact ListItemIcon ([d966027](https://git.ringcentral.com/RCUI/rcui/commit/d966027fdbdaba8a67ab92b8606a66539df5568a))
-- **RCUI-399:** [PlainSelect] fix PlainSelect style import ([3c98445](https://git.ringcentral.com/RCUI/rcui/commit/3c98445bf6cda977d6605ec07e7a555cf34d928d))
-- **RCUI-400:** [Chip] add disabled for deleteIcon ([22d0c7b](https://git.ringcentral.com/RCUI/rcui/commit/22d0c7b3488349e4decee5fadf3e0a8525897415))
-- **RCUI-400:** [Downshift] add support with downshift disabled and some deprecated code fix ([e6da09b](https://git.ringcentral.com/RCUI/rcui/commit/e6da09b4a8c66d8d35277aeefffeb2ac77f0e06f))
-- **RCUI-401:** [Token] change typography display3, display4 default font-weight to 700 ([04b3fa6](https://git.ringcentral.com/RCUI/rcui/commit/04b3fa64bb323b965994c4566b20165e5dbb1818))
-- **RCUI-402:** [DetachedWindow] support render in custom portal ([a35b489](https://git.ringcentral.com/RCUI/rcui/commit/a35b489ba46be40fc458a293a1cbdf2695d10f9a))
-- **RCUI-402:** [DeteachedWindow] init detached window ([ab4c1ac](https://git.ringcentral.com/RCUI/rcui/commit/ab4c1ac5b0430d3bff05baba5812b1b07575282e))
-- **RCUI-402:** [Dialog] support render in custom portal ([6a1877b](https://git.ringcentral.com/RCUI/rcui/commit/6a1877b0e14e2bc3570657caeccc731c1a95907a))
-- **RCUI-402:** [Ｍ enu] support render in custom portal ([b78ea85](https://git.ringcentral.com/RCUI/rcui/commit/b78ea8571ebbff3e637593c17a0218ccf3d85451))
-- **RCUI-402:** [PortalWindowContext] init PortalWindowContext for share window ([d0c1b31](https://git.ringcentral.com/RCUI/rcui/commit/d0c1b31b7f671ca02816684c27a26267c5747eee))
-- **RCUI-402:** [Tooltip] support render in custom portal ([9b1de98](https://git.ringcentral.com/RCUI/rcui/commit/9b1de982b23cba12c3a2348f80abca62ae999069))
-- **RCUI-406:** [Accordion] cleanup RcExpansionPanel to new name Accordion ([e3ec29c](https://git.ringcentral.com/RCUI/rcui/commit/e3ec29c1c1927c9f93eaeb4dfe3e3ec3fa47e641))
-- **RCUI-406:** [Material Upgrade] upgrade Mui version to 4.11.3 ([5549a3d](https://git.ringcentral.com/RCUI/rcui/commit/5549a3d3e2ed88a3dc94da13d09463d479040682))
-- **RCUI-409:** [DetachedWindow] support getWindow method ([0caeb74](https://git.ringcentral.com/RCUI/rcui/commit/0caeb7429c0405bcd61d97be39b24264f153f2d4))
+- **RCUI-243:** [Button] refactor whole button and add size with 'xsmall' | 'small'` ([8828a1e](https://github.com/ringcentral/juno/commit/8828a1e1f986e690f9324356dc50764be71a3398))
+- **RCUI-388:** [Foundation] export useForkRef ([a05d624](https://github.com/ringcentral/juno/commit/a05d624c1df1f4feef6b4ad694247f07179ac6e3))
+- **RCUI-398:** [Foundation] new method swapArrayLocs ([d95e85b](https://github.com/ringcentral/juno/commit/d95e85b0199a20e7a9bd1de27bdf57f1fe47f046))
+- **RCUI-398:** [Foundation] pick remove class method in foundation ([84a894c](https://github.com/ringcentral/juno/commit/84a894c260b0146d5c2a9f6af06625cf596e9e71))
+- **RCUI-399:** [List] add deprecated warning ([f80da29](https://github.com/ringcentral/juno/commit/f80da2931de6897b0e08920545b4008b91fc5a18))
+- **RCUI-399:** [List] cleanup components ([f036d9d](https://github.com/ringcentral/juno/commit/f036d9db306c31b04011f96fc7100830bb7d7c5c))
+- **RCUI-399:** [List] cleanup components and story ([2aa384e](https://github.com/ringcentral/juno/commit/2aa384ec4872c6f13e9af4b7237c4e7e6497a7db))
+- **RCUI-399:** [List] delete RcList default dense prop ([2e0ec3f](https://github.com/ringcentral/juno/commit/2e0ec3f6ebd39228e2e656d205b92bea282f9689))
+- **RCUI-399:** [List] fix import path ([d1e81d4](https://github.com/ringcentral/juno/commit/d1e81d4bfd327e0e8bb3e469a76a4ec1d85835d9))
+- **RCUI-399:** [ListItemIcon] refact ListItemIcon ([d966027](https://github.com/ringcentral/juno/commit/d966027fdbdaba8a67ab92b8606a66539df5568a))
+- **RCUI-399:** [PlainSelect] fix PlainSelect style import ([3c98445](https://github.com/ringcentral/juno/commit/3c98445bf6cda977d6605ec07e7a555cf34d928d))
+- **RCUI-400:** [Chip] add disabled for deleteIcon ([22d0c7b](https://github.com/ringcentral/juno/commit/22d0c7b3488349e4decee5fadf3e0a8525897415))
+- **RCUI-400:** [Downshift] add support with downshift disabled and some deprecated code fix ([e6da09b](https://github.com/ringcentral/juno/commit/e6da09b4a8c66d8d35277aeefffeb2ac77f0e06f))
+- **RCUI-401:** [Token] change typography display3, display4 default font-weight to 700 ([04b3fa6](https://github.com/ringcentral/juno/commit/04b3fa64bb323b965994c4566b20165e5dbb1818))
+- **RCUI-402:** [DetachedWindow] support render in custom portal ([a35b489](https://github.com/ringcentral/juno/commit/a35b489ba46be40fc458a293a1cbdf2695d10f9a))
+- **RCUI-402:** [DeteachedWindow] init detached window ([ab4c1ac](https://github.com/ringcentral/juno/commit/ab4c1ac5b0430d3bff05baba5812b1b07575282e))
+- **RCUI-402:** [Dialog] support render in custom portal ([6a1877b](https://github.com/ringcentral/juno/commit/6a1877b0e14e2bc3570657caeccc731c1a95907a))
+- **RCUI-402:** [Ｍ enu] support render in custom portal ([b78ea85](https://github.com/ringcentral/juno/commit/b78ea8571ebbff3e637593c17a0218ccf3d85451))
+- **RCUI-402:** [PortalWindowContext] init PortalWindowContext for share window ([d0c1b31](https://github.com/ringcentral/juno/commit/d0c1b31b7f671ca02816684c27a26267c5747eee))
+- **RCUI-402:** [Tooltip] support render in custom portal ([9b1de98](https://github.com/ringcentral/juno/commit/9b1de982b23cba12c3a2348f80abca62ae999069))
+- **RCUI-406:** [Accordion] cleanup RcExpansionPanel to new name Accordion ([e3ec29c](https://github.com/ringcentral/juno/commit/e3ec29c1c1927c9f93eaeb4dfe3e3ec3fa47e641))
+- **RCUI-406:** [Material Upgrade] upgrade Mui version to 4.11.3 ([5549a3d](https://github.com/ringcentral/juno/commit/5549a3d3e2ed88a3dc94da13d09463d479040682))
+- **RCUI-409:** [DetachedWindow] support getWindow method ([0caeb74](https://github.com/ringcentral/juno/commit/0caeb7429c0405bcd61d97be39b24264f153f2d4))
 
 ### Bug Fixes
 
-- **RCUI-388:** [Button, SplitButton, PlainSelect, Text] fix ref issue, should switch to innerRef, ref will be change by Tooltip ([9616096](https://git.ringcentral.com/RCUI/rcui/commit/96160966aee4e9ed5daf7244ad0fdbd625f62a08))
-- **RCUI-392:** [Button] remove not need class `MuiButton-iconSizeMedium` after view render ([cffad2b](https://git.ringcentral.com/RCUI/rcui/commit/cffad2be78ebfbe46259da8bb5b7fa3e6c703b63))
-- **RCUI-392:** [Button] support radius for button, and add keepElevation when user want to keep contained button elevation in normal state ([a065f0c](https://git.ringcentral.com/RCUI/rcui/commit/a065f0c5f7130592cb5fc67255d920d10d0b8899))
-- **RCUI-396:** [Button] rename switch method to getButtonIconSize ([3750ad7](https://git.ringcentral.com/RCUI/rcui/commit/3750ad71fd9187b78c87439b07c2d7a8adf7e95e))
-- **RCUI-396:** [RoundButton] deprecated round button ([38a1406](https://git.ringcentral.com/RCUI/rcui/commit/38a1406ac53428b2854378ebf1c36b9554d8806d))
-- **RCUI-398:** [Foundation] remove not need ' ' in content ([1a5c29b](https://git.ringcentral.com/RCUI/rcui/commit/1a5c29b6488472640c080e4c013028748fff3343))
-- **RCUI-399:** [Lis] some coding fix and fix ripple color when set baseColor ([64a9c2d](https://git.ringcentral.com/RCUI/rcui/commit/64a9c2dffba26bef4daa2e8af2016db8de46c1a2))
-- **RCUI-399:** [ListItem] fix listItem with controls style ([64e1e2f](https://git.ringcentral.com/RCUI/rcui/commit/64e1e2f14ca29f38d9cbb980ef5fcea4aa9e493f))
-- **RCUI-399:** [ListItem] update storybook ([beecefb](https://git.ringcentral.com/RCUI/rcui/commit/beecefb9a078badae46e58c1b35b8ea53ca42790))
-- **RCUI-399:** [ListItemText] fix primaryProps/secondaryProps ([241ca13](https://git.ringcentral.com/RCUI/rcui/commit/241ca13cbfcf2f3b145bd962dde50ac0537e42ad))
-- **RCUI-399:** [ListSubheader] fix gutter inset prop style ([7ba6e31](https://git.ringcentral.com/RCUI/rcui/commit/7ba6e31c6d486808c41e97da528a29a9e8c0885d))
-- **RCUI-400:** [Downshift] remove deprecated Downshift ([b596cd4](https://git.ringcentral.com/RCUI/rcui/commit/b596cd4b37c4b4bca5c052e4285796d720fa1f81))
-- **RCUI-403:** [CheckBox, Radio] change ripple apply size way with padding, avoid set display issue with that element ([a5a72c9](https://git.ringcentral.com/RCUI/rcui/commit/a5a72c9fa3d9189f921c92459cbf10b9cf5b3a64))
-- **RCUI-404:** [Downshift] ] fix can't select suggestion item when use Chinese pinyin language input ([c80599d](https://git.ringcentral.com/RCUI/rcui/commit/c80599d89d0c987ef6f77eae9af40b216f9d3a3e))
-- **RCUI-404:** [Downshift] ] remove select highlighted; fix can't select first suggestion item when use Chinese ([1b03322](https://git.ringcentral.com/RCUI/rcui/commit/1b03322eb1a3db4a1bd48236c800e990c942eb49))
-- **RCUI-405:** [Select] fix number zero issue ([f918924](https://git.ringcentral.com/RCUI/rcui/commit/f91892417d3a654709db38e4910c917c83ffc9b2))
-- **RCUI-405:** [Select] fix select with non label margin issue, and default width same as TextField ([30521a7](https://git.ringcentral.com/RCUI/rcui/commit/30521a7dc492debe8002d2236af918412063a9bb))
-- **RCUI-405:** [Textarea] fix more pick issue with Textarea ([9c63956](https://git.ringcentral.com/RCUI/rcui/commit/9c639561a6bef56cfba8bb4f3e4e55289359309c))
-- **RCUI-406:** [ExpansionPanel] fix style not change issue ([823d935](https://git.ringcentral.com/RCUI/rcui/commit/823d935fb1efeba90858fc15c775df07d76bf794))
-- **RCUI-406:** [ExpansionPanel] mark ExpansionPanel as deprecated ([1fdc366](https://git.ringcentral.com/RCUI/rcui/commit/1fdc3661662a29ec27f1a2004564123f60f234bd))
-- **RCUI-409:** [Accordion] fix default arrow direct ([d324778](https://git.ringcentral.com/RCUI/rcui/commit/d3247783f10fc76266d1dce68a1424dd9686f983))
-- **RCUI-409:** [Accordion] support expandIcon type `false` ([edcd4b2](https://git.ringcentral.com/RCUI/rcui/commit/edcd4b2ee81ae635f43a66cc23483141cf34cfc0))
+- **RCUI-388:** [Button, SplitButton, PlainSelect, Text] fix ref issue, should switch to innerRef, ref will be change by Tooltip ([9616096](https://github.com/ringcentral/juno/commit/96160966aee4e9ed5daf7244ad0fdbd625f62a08))
+- **RCUI-392:** [Button] remove not need class `MuiButton-iconSizeMedium` after view render ([cffad2b](https://github.com/ringcentral/juno/commit/cffad2be78ebfbe46259da8bb5b7fa3e6c703b63))
+- **RCUI-392:** [Button] support radius for button, and add keepElevation when user want to keep contained button elevation in normal state ([a065f0c](https://github.com/ringcentral/juno/commit/a065f0c5f7130592cb5fc67255d920d10d0b8899))
+- **RCUI-396:** [Button] rename switch method to getButtonIconSize ([3750ad7](https://github.com/ringcentral/juno/commit/3750ad71fd9187b78c87439b07c2d7a8adf7e95e))
+- **RCUI-396:** [RoundButton] deprecated round button ([38a1406](https://github.com/ringcentral/juno/commit/38a1406ac53428b2854378ebf1c36b9554d8806d))
+- **RCUI-398:** [Foundation] remove not need ' ' in content ([1a5c29b](https://github.com/ringcentral/juno/commit/1a5c29b6488472640c080e4c013028748fff3343))
+- **RCUI-399:** [Lis] some coding fix and fix ripple color when set baseColor ([64a9c2d](https://github.com/ringcentral/juno/commit/64a9c2dffba26bef4daa2e8af2016db8de46c1a2))
+- **RCUI-399:** [ListItem] fix listItem with controls style ([64e1e2f](https://github.com/ringcentral/juno/commit/64e1e2f14ca29f38d9cbb980ef5fcea4aa9e493f))
+- **RCUI-399:** [ListItem] update storybook ([beecefb](https://github.com/ringcentral/juno/commit/beecefb9a078badae46e58c1b35b8ea53ca42790))
+- **RCUI-399:** [ListItemText] fix primaryProps/secondaryProps ([241ca13](https://github.com/ringcentral/juno/commit/241ca13cbfcf2f3b145bd962dde50ac0537e42ad))
+- **RCUI-399:** [ListSubheader] fix gutter inset prop style ([7ba6e31](https://github.com/ringcentral/juno/commit/7ba6e31c6d486808c41e97da528a29a9e8c0885d))
+- **RCUI-400:** [Downshift] remove deprecated Downshift ([b596cd4](https://github.com/ringcentral/juno/commit/b596cd4b37c4b4bca5c052e4285796d720fa1f81))
+- **RCUI-403:** [CheckBox, Radio] change ripple apply size way with padding, avoid set display issue with that element ([a5a72c9](https://github.com/ringcentral/juno/commit/a5a72c9fa3d9189f921c92459cbf10b9cf5b3a64))
+- **RCUI-404:** [Downshift] ] fix can't select suggestion item when use Chinese pinyin language input ([c80599d](https://github.com/ringcentral/juno/commit/c80599d89d0c987ef6f77eae9af40b216f9d3a3e))
+- **RCUI-404:** [Downshift] ] remove select highlighted; fix can't select first suggestion item when use Chinese ([1b03322](https://github.com/ringcentral/juno/commit/1b03322eb1a3db4a1bd48236c800e990c942eb49))
+- **RCUI-405:** [Select] fix number zero issue ([f918924](https://github.com/ringcentral/juno/commit/f91892417d3a654709db38e4910c917c83ffc9b2))
+- **RCUI-405:** [Select] fix select with non label margin issue, and default width same as TextField ([30521a7](https://github.com/ringcentral/juno/commit/30521a7dc492debe8002d2236af918412063a9bb))
+- **RCUI-405:** [Textarea] fix more pick issue with Textarea ([9c63956](https://github.com/ringcentral/juno/commit/9c639561a6bef56cfba8bb4f3e4e55289359309c))
+- **RCUI-406:** [ExpansionPanel] fix style not change issue ([823d935](https://github.com/ringcentral/juno/commit/823d935fb1efeba90858fc15c775df07d76bf794))
+- **RCUI-406:** [ExpansionPanel] mark ExpansionPanel as deprecated ([1fdc366](https://github.com/ringcentral/juno/commit/1fdc3661662a29ec27f1a2004564123f60f234bd))
+- **RCUI-409:** [Accordion] fix default arrow direct ([d324778](https://github.com/ringcentral/juno/commit/d3247783f10fc76266d1dce68a1424dd9686f983))
+- **RCUI-409:** [Accordion] support expandIcon type `false` ([edcd4b2](https://github.com/ringcentral/juno/commit/edcd4b2ee81ae635f43a66cc23483141cf34cfc0))
 
-### [1.4.1](https://git.ringcentral.com/RCUI/rcui/compare/1.4.0...1.4.1) (2021-02-25)
+### [1.4.1](https://github.com/ringcentral/juno/compare/1.4.0...1.4.1) (2021-02-25)
 
 ### ⚠ BREAKING CHANGES
 
@@ -2288,56 +2288,56 @@ We announce new responsive API for you to easy to switch size between different 
 
 ### Features
 
-- **RCUI-243:** [FormContext] provide useRcFormContext for work with RcFormContext ([6b8adf3](https://git.ringcentral.com/RCUI/rcui/commit/6b8adf351286e1df714fab281d2fbd59c9487510))
-- **RCUI-243:** [Icon] refactor whole icon not use fill to change that below icon color ([c76cfff](https://git.ringcentral.com/RCUI/rcui/commit/c76cfff2686a851c7c5b3cc24a3355e8964d4480))
-- **RCUI-367:** [VirtualizedList] Keep scrollTop after switch native/custom scrollbar ([c7c9a54](https://git.ringcentral.com/RCUI/rcui/commit/c7c9a542564b015098bd390525a96f08213866b7))
-- **RCUI-380:** [SplitButton] implement control button size with RcIconButton ([aef010a](https://git.ringcentral.com/RCUI/rcui/commit/aef010a2bda8a736f16b22dd66b52e58bd338e6c))
-- **RCUI-380:** [SplitButton] implement SplitButton round spacing size ([42528f2](https://git.ringcentral.com/RCUI/rcui/commit/42528f2080619080078b64e118c5e410b0ce894b))
-- **RCUI-388:** [Foundation] support size for fakeBorder ([a8e2348](https://git.ringcentral.com/RCUI/rcui/commit/a8e23481eb9d7227ced231c25906cbdc2b6c3a6c))
-- **RCUI-388:** [OutlineTextField, TextField, BorderLessTextField] group TextField together, full support all with those just style different components ([6c71c2c](https://git.ringcentral.com/RCUI/rcui/commit/6c71c2c0567d1ee9a7dae23c67ca01445047cfed))
-- **RCUI-396:** [Icon] support switch loading size with Icon size ([5b7edf3](https://git.ringcentral.com/RCUI/rcui/commit/5b7edf30bd9d570e034151cf0592aad509ccb995))
-- **RCUI-396:** [IconButtonGroup] new component IconButtonGroup for replace ButtonBar ([8be4cea](https://git.ringcentral.com/RCUI/rcui/commit/8be4cea7c9908bcc77a8ae257ae9b7c5e2920048))
+- **RCUI-243:** [FormContext] provide useRcFormContext for work with RcFormContext ([6b8adf3](https://github.com/ringcentral/juno/commit/6b8adf351286e1df714fab281d2fbd59c9487510))
+- **RCUI-243:** [Icon] refactor whole icon not use fill to change that below icon color ([c76cfff](https://github.com/ringcentral/juno/commit/c76cfff2686a851c7c5b3cc24a3355e8964d4480))
+- **RCUI-367:** [VirtualizedList] Keep scrollTop after switch native/custom scrollbar ([c7c9a54](https://github.com/ringcentral/juno/commit/c7c9a542564b015098bd390525a96f08213866b7))
+- **RCUI-380:** [SplitButton] implement control button size with RcIconButton ([aef010a](https://github.com/ringcentral/juno/commit/aef010a2bda8a736f16b22dd66b52e58bd338e6c))
+- **RCUI-380:** [SplitButton] implement SplitButton round spacing size ([42528f2](https://github.com/ringcentral/juno/commit/42528f2080619080078b64e118c5e410b0ce894b))
+- **RCUI-388:** [Foundation] support size for fakeBorder ([a8e2348](https://github.com/ringcentral/juno/commit/a8e23481eb9d7227ced231c25906cbdc2b6c3a6c))
+- **RCUI-388:** [OutlineTextField, TextField, BorderLessTextField] group TextField together, full support all with those just style different components ([6c71c2c](https://github.com/ringcentral/juno/commit/6c71c2c0567d1ee9a7dae23c67ca01445047cfed))
+- **RCUI-396:** [Icon] support switch loading size with Icon size ([5b7edf3](https://github.com/ringcentral/juno/commit/5b7edf30bd9d570e034151cf0592aad509ccb995))
+- **RCUI-396:** [IconButtonGroup] new component IconButtonGroup for replace ButtonBar ([8be4cea](https://github.com/ringcentral/juno/commit/8be4cea7c9908bcc77a8ae257ae9b7c5e2920048))
 
 ### Bug Fixes
 
-- **RCUI-243:** [IconButton] RcIcon change related style fix ([cce6db8](https://git.ringcentral.com/RCUI/rcui/commit/cce6db8324172f26f77a6c726839fc12a98e8a59))
-- **RCUI-243:** [Picker] RcIcon change related style fix ([44de596](https://git.ringcentral.com/RCUI/rcui/commit/44de5963f8fa3f236ca7bf90c50df4bc095eecb8))
-- **RCUI-243:** [Radio] release radio ([9c7b900](https://git.ringcentral.com/RCUI/rcui/commit/9c7b900ad7ddf454dac08b3882841afcd3e658f2))
-- **RCUI-243:** [Rating] switch to new structure style ([312184c](https://git.ringcentral.com/RCUI/rcui/commit/312184ce7ea8436b2a599f3729e858852385586c))
-- **RCUI-282:** [Package] not lock material ui version in juno, only lock in inner release ([8fafca6](https://git.ringcentral.com/RCUI/rcui/commit/8fafca68590bbb9746b18ed6e21e9c6b718a50d3))
-- **RCUI-377:** [Menu] remove enableCloseMenuWhenItemClicked ([23fc407](https://git.ringcentral.com/RCUI/rcui/commit/23fc4071fb239247f3713b57e03e2db1960cfaa1))
-- **RCUI-377:** [Scss] fix miss dark scss ([798a773](https://git.ringcentral.com/RCUI/rcui/commit/798a77334baee7d19f16c9460edb54ca958c34b4))
-- **RCUI-377:** [Scss] fix theme issue ([be889bb](https://git.ringcentral.com/RCUI/rcui/commit/be889bb0cb06606342f6cba38b2b9800eeb48b40))
-- **RCUI-377:** [Tooltip] remove all injectGlobalStyle ([f52e27a](https://git.ringcentral.com/RCUI/rcui/commit/f52e27a3060c814508c8eb713b6fc3828ebebdbe))
-- **RCUI-381:** [Foundation] try catch with setOpacity ([c222e16](https://git.ringcentral.com/RCUI/rcui/commit/c222e16530d07447864120baf158c0627e4af99e))
-- **RCUI-381:** [Select] pick Select prop outside make that easy to understand ([89a4a41](https://git.ringcentral.com/RCUI/rcui/commit/89a4a41b0607d97125d0b8a7b2af9b0a6b6d6d19))
-- **RCUI-381:** [Table] export RcTableRow ([e3708cd](https://git.ringcentral.com/RCUI/rcui/commit/e3708cdb25290ba3fedb56f2e94eb9677800a973))
-- **RCUI-381:** [Text] change useRcTooltip hide tooltip logic ([3ef5bb3](https://git.ringcentral.com/RCUI/rcui/commit/3ef5bb3b07032d94c1d721854173e863e72d0c11))
-- **RCUI-381:** [Text] combine outside props ([151ec3a](https://git.ringcentral.com/RCUI/rcui/commit/151ec3a0b6156c4c989c206f906d222b5695bca8))
-- **RCUI-381:** [Typography, Text] fix titleWhenOverflow and miss withTooltip HoC ([34e7894](https://git.ringcentral.com/RCUI/rcui/commit/34e78941dca98ac73bf1b8b55d383e8b1211299d))
-- **RCUI-382:** [RcAudioPlayer] fix storybook ([7feaed5](https://git.ringcentral.com/RCUI/rcui/commit/7feaed5a269c40a974af8f67093e43b66e93aec2))
-- **RCUI-388:** [Checkbox] move checkbox to forms ([21aa5c2](https://git.ringcentral.com/RCUI/rcui/commit/21aa5c2271699b24b02edb03fd0e10c2a57d210d))
-- **RCUI-388:** [Downshift] mark Downshift deprecated ([35cef33](https://git.ringcentral.com/RCUI/rcui/commit/35cef336a6c3390440073cc9108e42b1ed9e7484))
-- **RCUI-388:** [Foundation] rename ReturnType to PaletteReturnType ([24243f1](https://git.ringcentral.com/RCUI/rcui/commit/24243f1dfe6eb55ef190a9cca7f226a54022ea10))
-- **RCUI-388:** [Icon] update icon ([f757c0f](https://git.ringcentral.com/RCUI/rcui/commit/f757c0f9d79beb3f075dc7a6e3a101fdc5d16326))
-- **RCUI-388:** [Picker] picker with clearLabel tooltip float issue ([a9109e2](https://git.ringcentral.com/RCUI/rcui/commit/a9109e2136a2a0db43ae3f0c6551e336dca8f3fa))
-- **RCUI-388:** [Select] imgrate to new TextField ([4acfd78](https://git.ringcentral.com/RCUI/rcui/commit/4acfd78425865bc03cfed529cd77ca07ff8cdd56))
-- **RCUI-388:** [Select] mark BoxSelect, LineSelect deprecated ([4aff935](https://git.ringcentral.com/RCUI/rcui/commit/4aff9354e0d4c2070add9be1a57927b98642f881))
-- **RCUI-388:** [Switch, Checkbox] release Checkbox and Switch ([5aa1fac](https://git.ringcentral.com/RCUI/rcui/commit/5aa1facafb841bf081b331074424cb04f5b712b1))
-- **RCUI-388:** [Switch] move Switch to forms ([34a1302](https://git.ringcentral.com/RCUI/rcui/commit/34a130229575cbe44c020e66c073aab7a231ef26))
-- **RCUI-388:** [Text] mark deprecated Text related component Text deprecated ([04b25c5](https://git.ringcentral.com/RCUI/rcui/commit/04b25c5a2ee303d766598f4b2557982b7ce17d74))
-- **RCUI-392:** [RcIconButton] sync IconButton size with Icon ([ac65b94](https://git.ringcentral.com/RCUI/rcui/commit/ac65b94a10601c1f5a659ae3cd4f6fcd3cd0b36f))
-- **RCUI-392:** [Theme] correct theme with RcTheme type ([3fd3abe](https://git.ringcentral.com/RCUI/rcui/commit/3fd3abee2a94a954c79257630898b00088b35428))
-- **RCUI-395:** [DatePicker, TimePicker] release picker, wrapper with styled ([bf1a057](https://git.ringcentral.com/RCUI/rcui/commit/bf1a0573d42b066ae56981fc71a73298af8e4085))
-- **RCUI-396:** [ButtonBar] mark deprecated ([eed8b8a](https://git.ringcentral.com/RCUI/rcui/commit/eed8b8a9607db273cec1b20a733cad7d6ee7f993))
-- **RCUI-396:** [Checkbox] change iconSize type to RcIconButtonSize, exclude `inherit` ([cf2b5c4](https://git.ringcentral.com/RCUI/rcui/commit/cf2b5c4dbf9dcd9a4937536102926165c23db264))
-- **RCUI-396:** [CheckedStyles] remove `inherit` in size list ([d8e7fcc](https://git.ringcentral.com/RCUI/rcui/commit/d8e7fccbe6426f037fe7f6092e2830c3526891e8))
-- **RCUI-396:** [Icon] add check deprecated iconColorProp back ([01cf2ed](https://git.ringcentral.com/RCUI/rcui/commit/01cf2ed5e02caab0f35b5a934149462d321baa6f))
-- **RCUI-396:** [Picker] remove clearLabel props ([4d0446e](https://git.ringcentral.com/RCUI/rcui/commit/4d0446e0cfcf6287308c8518b59dcb265dfb4054))
-- **RCUI-396:** [Radio] use Mui default RadioIconButton and custom style with that. ([b6e941d](https://git.ringcentral.com/RCUI/rcui/commit/b6e941df70be54e31b0d9ffc8bbf9492ca4d53ab))
-- **RCUI-396:** [TextField] deprecated clearLabel, should use clearButtonProps replace that ([2a56187](https://git.ringcentral.com/RCUI/rcui/commit/2a56187a7d125f888674a43a905dd9dd063aafdf))
+- **RCUI-243:** [IconButton] RcIcon change related style fix ([cce6db8](https://github.com/ringcentral/juno/commit/cce6db8324172f26f77a6c726839fc12a98e8a59))
+- **RCUI-243:** [Picker] RcIcon change related style fix ([44de596](https://github.com/ringcentral/juno/commit/44de5963f8fa3f236ca7bf90c50df4bc095eecb8))
+- **RCUI-243:** [Radio] release radio ([9c7b900](https://github.com/ringcentral/juno/commit/9c7b900ad7ddf454dac08b3882841afcd3e658f2))
+- **RCUI-243:** [Rating] switch to new structure style ([312184c](https://github.com/ringcentral/juno/commit/312184ce7ea8436b2a599f3729e858852385586c))
+- **RCUI-282:** [Package] not lock material ui version in juno, only lock in inner release ([8fafca6](https://github.com/ringcentral/juno/commit/8fafca68590bbb9746b18ed6e21e9c6b718a50d3))
+- **RCUI-377:** [Menu] remove enableCloseMenuWhenItemClicked ([23fc407](https://github.com/ringcentral/juno/commit/23fc4071fb239247f3713b57e03e2db1960cfaa1))
+- **RCUI-377:** [Scss] fix miss dark scss ([798a773](https://github.com/ringcentral/juno/commit/798a77334baee7d19f16c9460edb54ca958c34b4))
+- **RCUI-377:** [Scss] fix theme issue ([be889bb](https://github.com/ringcentral/juno/commit/be889bb0cb06606342f6cba38b2b9800eeb48b40))
+- **RCUI-377:** [Tooltip] remove all injectGlobalStyle ([f52e27a](https://github.com/ringcentral/juno/commit/f52e27a3060c814508c8eb713b6fc3828ebebdbe))
+- **RCUI-381:** [Foundation] try catch with setOpacity ([c222e16](https://github.com/ringcentral/juno/commit/c222e16530d07447864120baf158c0627e4af99e))
+- **RCUI-381:** [Select] pick Select prop outside make that easy to understand ([89a4a41](https://github.com/ringcentral/juno/commit/89a4a41b0607d97125d0b8a7b2af9b0a6b6d6d19))
+- **RCUI-381:** [Table] export RcTableRow ([e3708cd](https://github.com/ringcentral/juno/commit/e3708cdb25290ba3fedb56f2e94eb9677800a973))
+- **RCUI-381:** [Text] change useRcTooltip hide tooltip logic ([3ef5bb3](https://github.com/ringcentral/juno/commit/3ef5bb3b07032d94c1d721854173e863e72d0c11))
+- **RCUI-381:** [Text] combine outside props ([151ec3a](https://github.com/ringcentral/juno/commit/151ec3a0b6156c4c989c206f906d222b5695bca8))
+- **RCUI-381:** [Typography, Text] fix titleWhenOverflow and miss withTooltip HoC ([34e7894](https://github.com/ringcentral/juno/commit/34e78941dca98ac73bf1b8b55d383e8b1211299d))
+- **RCUI-382:** [RcAudioPlayer] fix storybook ([7feaed5](https://github.com/ringcentral/juno/commit/7feaed5a269c40a974af8f67093e43b66e93aec2))
+- **RCUI-388:** [Checkbox] move checkbox to forms ([21aa5c2](https://github.com/ringcentral/juno/commit/21aa5c2271699b24b02edb03fd0e10c2a57d210d))
+- **RCUI-388:** [Downshift] mark Downshift deprecated ([35cef33](https://github.com/ringcentral/juno/commit/35cef336a6c3390440073cc9108e42b1ed9e7484))
+- **RCUI-388:** [Foundation] rename ReturnType to PaletteReturnType ([24243f1](https://github.com/ringcentral/juno/commit/24243f1dfe6eb55ef190a9cca7f226a54022ea10))
+- **RCUI-388:** [Icon] update icon ([f757c0f](https://github.com/ringcentral/juno/commit/f757c0f9d79beb3f075dc7a6e3a101fdc5d16326))
+- **RCUI-388:** [Picker] picker with clearLabel tooltip float issue ([a9109e2](https://github.com/ringcentral/juno/commit/a9109e2136a2a0db43ae3f0c6551e336dca8f3fa))
+- **RCUI-388:** [Select] imgrate to new TextField ([4acfd78](https://github.com/ringcentral/juno/commit/4acfd78425865bc03cfed529cd77ca07ff8cdd56))
+- **RCUI-388:** [Select] mark BoxSelect, LineSelect deprecated ([4aff935](https://github.com/ringcentral/juno/commit/4aff9354e0d4c2070add9be1a57927b98642f881))
+- **RCUI-388:** [Switch, Checkbox] release Checkbox and Switch ([5aa1fac](https://github.com/ringcentral/juno/commit/5aa1facafb841bf081b331074424cb04f5b712b1))
+- **RCUI-388:** [Switch] move Switch to forms ([34a1302](https://github.com/ringcentral/juno/commit/34a130229575cbe44c020e66c073aab7a231ef26))
+- **RCUI-388:** [Text] mark deprecated Text related component Text deprecated ([04b25c5](https://github.com/ringcentral/juno/commit/04b25c5a2ee303d766598f4b2557982b7ce17d74))
+- **RCUI-392:** [RcIconButton] sync IconButton size with Icon ([ac65b94](https://github.com/ringcentral/juno/commit/ac65b94a10601c1f5a659ae3cd4f6fcd3cd0b36f))
+- **RCUI-392:** [Theme] correct theme with RcTheme type ([3fd3abe](https://github.com/ringcentral/juno/commit/3fd3abee2a94a954c79257630898b00088b35428))
+- **RCUI-395:** [DatePicker, TimePicker] release picker, wrapper with styled ([bf1a057](https://github.com/ringcentral/juno/commit/bf1a0573d42b066ae56981fc71a73298af8e4085))
+- **RCUI-396:** [ButtonBar] mark deprecated ([eed8b8a](https://github.com/ringcentral/juno/commit/eed8b8a9607db273cec1b20a733cad7d6ee7f993))
+- **RCUI-396:** [Checkbox] change iconSize type to RcIconButtonSize, exclude `inherit` ([cf2b5c4](https://github.com/ringcentral/juno/commit/cf2b5c4dbf9dcd9a4937536102926165c23db264))
+- **RCUI-396:** [CheckedStyles] remove `inherit` in size list ([d8e7fcc](https://github.com/ringcentral/juno/commit/d8e7fccbe6426f037fe7f6092e2830c3526891e8))
+- **RCUI-396:** [Icon] add check deprecated iconColorProp back ([01cf2ed](https://github.com/ringcentral/juno/commit/01cf2ed5e02caab0f35b5a934149462d321baa6f))
+- **RCUI-396:** [Picker] remove clearLabel props ([4d0446e](https://github.com/ringcentral/juno/commit/4d0446e0cfcf6287308c8518b59dcb265dfb4054))
+- **RCUI-396:** [Radio] use Mui default RadioIconButton and custom style with that. ([b6e941d](https://github.com/ringcentral/juno/commit/b6e941df70be54e31b0d9ffc8bbf9492ca4d53ab))
+- **RCUI-396:** [TextField] deprecated clearLabel, should use clearButtonProps replace that ([2a56187](https://github.com/ringcentral/juno/commit/2a56187a7d125f888674a43a905dd9dd063aafdf))
 
-## [1.4.0](https://git.ringcentral.com/RCUI/rcui/compare/1.3.2...1.4.0) (2021-02-01)
+## [1.4.0](https://github.com/ringcentral/juno/compare/1.3.2...1.4.0) (2021-02-01)
 
 ### Main change:
 
@@ -2429,79 +2429,79 @@ more detail, please view changelog below.
 
 ### Features
 
-- **RCUI-180:** [hook] implement useResizeObserver ([8fa0175](https://git.ringcentral.com/RCUI/rcui/commit/8fa01753bef8ba2e9361e6104625b9d0253ed526))
-- **RCUI-180:** [Link] add props variant for just typography use, deprecated size, that confused ([6f37ec7](https://git.ringcentral.com/RCUI/rcui/commit/6f37ec7f4e81f1e20c7174982f9d79eb333d4938))
-- **RCUI-180:** [Text] implement new version Text with full type support ([78aba8c](https://git.ringcentral.com/RCUI/rcui/commit/78aba8c43f0f8c6365dc39ec751075bce4488154))
-- **RCUI-180:** [Typography] implement full typography with correct type ([92e771a](https://git.ringcentral.com/RCUI/rcui/commit/92e771a28bec49d6fb2663e0143bcf85aab7b699))
-- **RCUI-252:** [Select] init new Select support full vl and select ([3bfcccc](https://git.ringcentral.com/RCUI/rcui/commit/3bfccccb573bb176b30f68d9af146179fadd56e3))
-- **RCUI-294:** [ListItemIcon] support color with listItemIcon ([4ab8255](https://git.ringcentral.com/RCUI/rcui/commit/4ab825569dd0766aa994ab05c7451993a8b91a59))
-- **RCUI-294:** [PlainSelect] init plainSelect ([c93a5bf](https://git.ringcentral.com/RCUI/rcui/commit/c93a5bf1cb438dad93466b9987d911d4bee3340f))
-- **RCUI-330:** [Accessibility] Focus on Year selector dialog shouldn't read out extra years & Windows: Focus on the date shouldn't read out the date twice ([ef3c6cc](https://git.ringcentral.com/RCUI/rcui/commit/ef3c6cc210cc37817942f32a5bb993bd34416f4e))
-- **RCUI-351:** [Theme] update theme token ([4fba5e5](https://git.ringcentral.com/RCUI/rcui/commit/4fba5e5e67876d233f0c7c20634f94feeafdfd05))
-- **RCUI-351:** [Tooltip] clean up styled ([aba370f](https://git.ringcentral.com/RCUI/rcui/commit/aba370f2207c463324b540aa9ee3d11c8cc1d58a))
-- **RCUI-351:** [Tooltip] remove GlobalTooltipStyle ([a659e28](https://git.ringcentral.com/RCUI/rcui/commit/a659e280d4b108be6b089432066eb623b3651b24))
-- **RCUI-356:** [fakeBorder] support to custom 'inset' ([3375a65](https://git.ringcentral.com/RCUI/rcui/commit/3375a6566f9d933a2ebb6fc569a88bac30407317))
-- **RCUI-358:** [RcLink] use \$color-text-link ([e690e59](https://git.ringcentral.com/RCUI/rcui/commit/e690e59c78eb780a83c131bb5790fc25f1c705ec))
-- **RCUI-363:** [RcDownshift] enableAutoTransform improvement ([faf8d3e](https://git.ringcentral.com/RCUI/rcui/commit/faf8d3e25ff941649c4beb300ae6e243a29597e1))
-- **RCUI-367:** [Chip, TextField, AudioAction] swith inner tooltipTitle to title ([0b2395d](https://git.ringcentral.com/RCUI/rcui/commit/0b2395dd06bd7ec9a056bc8a176e830282f394f0))
-- **RCUI-367:** [IconButton] refactor whole IconButton with ButtonBase and fix a lot of style issue, mark this release ([e79cb62](https://git.ringcentral.com/RCUI/rcui/commit/e79cb62c911cd6c4d8e640e92abc098be839f03b))
-- **RCUI-377:** [RcFormControlLabel] cleanup component ([a7e5671](https://git.ringcentral.com/RCUI/rcui/commit/a7e567131a1939997ec56c0da0e04d768aa1f56c))
-- **RCUI-377:** [RcSwitch] cleanup component ([1f0112c](https://git.ringcentral.com/RCUI/rcui/commit/1f0112c8ea8cb54946f2eab0a821955a2d93139e))
+- **RCUI-180:** [hook] implement useResizeObserver ([8fa0175](https://github.com/ringcentral/juno/commit/8fa01753bef8ba2e9361e6104625b9d0253ed526))
+- **RCUI-180:** [Link] add props variant for just typography use, deprecated size, that confused ([6f37ec7](https://github.com/ringcentral/juno/commit/6f37ec7f4e81f1e20c7174982f9d79eb333d4938))
+- **RCUI-180:** [Text] implement new version Text with full type support ([78aba8c](https://github.com/ringcentral/juno/commit/78aba8c43f0f8c6365dc39ec751075bce4488154))
+- **RCUI-180:** [Typography] implement full typography with correct type ([92e771a](https://github.com/ringcentral/juno/commit/92e771a28bec49d6fb2663e0143bcf85aab7b699))
+- **RCUI-252:** [Select] init new Select support full vl and select ([3bfcccc](https://github.com/ringcentral/juno/commit/3bfccccb573bb176b30f68d9af146179fadd56e3))
+- **RCUI-294:** [ListItemIcon] support color with listItemIcon ([4ab8255](https://github.com/ringcentral/juno/commit/4ab825569dd0766aa994ab05c7451993a8b91a59))
+- **RCUI-294:** [PlainSelect] init plainSelect ([c93a5bf](https://github.com/ringcentral/juno/commit/c93a5bf1cb438dad93466b9987d911d4bee3340f))
+- **RCUI-330:** [Accessibility] Focus on Year selector dialog shouldn't read out extra years & Windows: Focus on the date shouldn't read out the date twice ([ef3c6cc](https://github.com/ringcentral/juno/commit/ef3c6cc210cc37817942f32a5bb993bd34416f4e))
+- **RCUI-351:** [Theme] update theme token ([4fba5e5](https://github.com/ringcentral/juno/commit/4fba5e5e67876d233f0c7c20634f94feeafdfd05))
+- **RCUI-351:** [Tooltip] clean up styled ([aba370f](https://github.com/ringcentral/juno/commit/aba370f2207c463324b540aa9ee3d11c8cc1d58a))
+- **RCUI-351:** [Tooltip] remove GlobalTooltipStyle ([a659e28](https://github.com/ringcentral/juno/commit/a659e280d4b108be6b089432066eb623b3651b24))
+- **RCUI-356:** [fakeBorder] support to custom 'inset' ([3375a65](https://github.com/ringcentral/juno/commit/3375a6566f9d933a2ebb6fc569a88bac30407317))
+- **RCUI-358:** [RcLink] use \$color-text-link ([e690e59](https://github.com/ringcentral/juno/commit/e690e59c78eb780a83c131bb5790fc25f1c705ec))
+- **RCUI-363:** [RcDownshift] enableAutoTransform improvement ([faf8d3e](https://github.com/ringcentral/juno/commit/faf8d3e25ff941649c4beb300ae6e243a29597e1))
+- **RCUI-367:** [Chip, TextField, AudioAction] swith inner tooltipTitle to title ([0b2395d](https://github.com/ringcentral/juno/commit/0b2395dd06bd7ec9a056bc8a176e830282f394f0))
+- **RCUI-367:** [IconButton] refactor whole IconButton with ButtonBase and fix a lot of style issue, mark this release ([e79cb62](https://github.com/ringcentral/juno/commit/e79cb62c911cd6c4d8e640e92abc098be839f03b))
+- **RCUI-377:** [RcFormControlLabel] cleanup component ([a7e5671](https://github.com/ringcentral/juno/commit/a7e567131a1939997ec56c0da0e04d768aa1f56c))
+- **RCUI-377:** [RcSwitch] cleanup component ([1f0112c](https://github.com/ringcentral/juno/commit/1f0112c8ea8cb54946f2eab0a821955a2d93139e))
 
 ### Bug Fixes
 
-- **RCUI-180:** [Button] fix button token use ([47482da](https://git.ringcentral.com/RCUI/rcui/commit/47482daf1ce124a2c0de59f1d8c7e396bfe87922))
-- **RCUI-180:** [Foundation] fix type with only apply for our typography ([c0cd0fb](https://git.ringcentral.com/RCUI/rcui/commit/c0cd0fb695e42cb6acb23f4970d02295a0dfd883))
-- **RCUI-180:** [Foundation] remove not need break-word in ellipsis ([c368f25](https://git.ringcentral.com/RCUI/rcui/commit/c368f254af22baa434352e0384c7d09b86c0772d))
-- **RCUI-180:** [InlineEditable] change variant to correct typographyKeys ([ab79890](https://git.ringcentral.com/RCUI/rcui/commit/ab798906e1f0aa9f0a430438de522180dfd504f9))
-- **RCUI-180:** [Link] fix link style and logic, that only be click when press Enter ([1edbb06](https://git.ringcentral.com/RCUI/rcui/commit/1edbb06fa2e10b9104d5fd38ba23ba6079825ebd))
-- **RCUI-180:** [Text] deprecated all old RcText component ([2d4ed33](https://git.ringcentral.com/RCUI/rcui/commit/2d4ed33b7301f5f7e20af9bd0e4e037f1fbf5fd7))
-- **RCUI-180:** [TimePicker] fix timePicker token when medium ([982e60c](https://git.ringcentral.com/RCUI/rcui/commit/982e60c3d57f67dcc7222171152c5bdf1d2b5f18))
-- **RCUI-180:** [Token] add miss token headline2 ([4400aba](https://git.ringcentral.com/RCUI/rcui/commit/4400aba243d7c33a3fd84f6b96b449c1cc8dfb99))
-- **RCUI-180:** [Token] remove not need subheading3 ([c605b41](https://git.ringcentral.com/RCUI/rcui/commit/c605b412eb62a59c2862de483ea7b34b0d63350e))
-- **RCUI-180:** [Typography] switch old typography as deparcated ([e6ea172](https://git.ringcentral.com/RCUI/rcui/commit/e6ea1726f929d1b3d3feba8cf3c96adbd17aa816))
-- **RCUI-234:** [Button] change button with icon will effect below all RcIcon margin issue ([ca5b2a9](https://git.ringcentral.com/RCUI/rcui/commit/ca5b2a9c126e35afffc044566187858b1c183c22))
-- **RCUI-234:** [Button] pre cleanup refactor ([c9a972c](https://git.ringcentral.com/RCUI/rcui/commit/c9a972c09ff70242cebf746764031ae130afdfd2))
-- **RCUI-234:** [CombineProps] fix combine props logic with only stop event pass with stop propagation ([dae4fba](https://git.ringcentral.com/RCUI/rcui/commit/dae4fba7997a4f6988c532a99c458448ee904191))
-- **RCUI-234:** [SplitButton] fix style with button remove two layer cause issue ([e8de3cc](https://git.ringcentral.com/RCUI/rcui/commit/e8de3ccb74d312b770c4c4ca4569fa91b142ccd2))
-- **RCUI-252:** [RegionSelect] remove not need RegionSelect ([653fb29](https://git.ringcentral.com/RCUI/rcui/commit/653fb2996457eff4e59490b53d2dba43cb97f1a5))
-- **RCUI-252:** [VirtualizedMenu] fix VirtualizedMenu code and logic ([aa43d1c](https://git.ringcentral.com/RCUI/rcui/commit/aa43d1c38aeaec863249c8f34d1085b402cae754))
-- **RCUI-294:** [LineSelect, BoxSelect] mark original storybook and components deprecated ([68849e2](https://git.ringcentral.com/RCUI/rcui/commit/68849e2e7593f656eed55c4251cfe86c3c49c753))
-- **RCUI-294:** [Plain] refactor with style ([46be2a0](https://git.ringcentral.com/RCUI/rcui/commit/46be2a082c51e34e22898e64cce5e13502639819))
-- **RCUI-294:** [Plain] update naming ([7352dac](https://git.ringcentral.com/RCUI/rcui/commit/7352dacc7eda8c10d956b08d32c4790e2a5953ad))
-- **RCUI-294:** [TextField] remove not need two layer class name ([c1842dc](https://git.ringcentral.com/RCUI/rcui/commit/c1842dc6f0ff3bb72a1469e8c5abf1e2c2743180))
-- **RCUI-344:** [DatePicker] fix date picker range overflow issue ([5b4ec38](https://git.ringcentral.com/RCUI/rcui/commit/5b4ec384754b2c5f6deaa0c5b0a16b3b8b1842bb))
-- **RCUI-351:** [Alert] update with new file structure ([3b98998](https://git.ringcentral.com/RCUI/rcui/commit/3b98998a210ea0ca3e30a51442d0721e9df2263f))
-- **RCUI-351:** [Divider] change divider to hr ([1005986](https://git.ringcentral.com/RCUI/rcui/commit/1005986fbef753bd5e2b2ce826ce4a849e5e6fc5))
-- **RCUI-351:** [Foundation] rename cssValue to px ([296eb5e](https://git.ringcentral.com/RCUI/rcui/commit/296eb5ec7046c96de44f109921b13c00c57b8f20))
-- **RCUI-351:** [Icon] memo icon for pure render component, and remove width ([fd0354e](https://git.ringcentral.com/RCUI/rcui/commit/fd0354e1656b73e37f67b877f62ea072172c689e))
-- **RCUI-351:** [Tooltip] pick className only pass into popper ([a3ec0e2](https://git.ringcentral.com/RCUI/rcui/commit/a3ec0e208a5804166f9efddd35cbd56683e92604))
-- **RCUI-357:** [Downshift] enableAutoTransform should emit when textField blur and have suggestion list ([69459e1](https://git.ringcentral.com/RCUI/rcui/commit/69459e1fee85f68d04ad14574dbfd41fcfcdd218))
-- **RCUI-359:** [ButtonBar] add handleOnKeyDown. should follow isStopPropagation, also keep keyup work ([c7058aa](https://git.ringcentral.com/RCUI/rcui/commit/c7058aa852f754b856c6f5a1628e8bccda5acb14))
-- **RCUI-360:** [TextField] color of underline to be icon.dark when hover ([4ff30bc](https://git.ringcentral.com/RCUI/rcui/commit/4ff30bc96259539932d7dcb02071aa25fe3d1f72))
-- **RCUI-364:** [useFocusHelper] support outside setFousedIndex ([7574d66](https://git.ringcentral.com/RCUI/rcui/commit/7574d6636220653722c372a7b93349e12abde012))
-- **RCUI-365:** [[Accessibility][mac]] Can't read out the month in real-time when hit Enter to change month in date selector dialog. ([e9025a1](https://git.ringcentral.com/RCUI/rcui/commit/e9025a16cb389a4c83f65ad41ea2f3d9866d8cf2))
-- **RCUI-366:** [Snackbar] update calendar text selected color ([0a327d1](https://git.ringcentral.com/RCUI/rcui/commit/0a327d118541a58d10cb7aa74084cebbe8d2ba04))
-- **RCUI-366:** [Snackbar] update warning text color ([c0638db](https://git.ringcentral.com/RCUI/rcui/commit/c0638db593da556ebc7f26cd7c4d61aa5ef20961))
-- **RCUI-367:** [ButtonBase] change buttonBase props with ComponentProps ([22dd1f7](https://git.ringcentral.com/RCUI/rcui/commit/22dd1f7569a2dcb0a097d6d1912ce7d933e0e269))
-- **RCUI-367:** [Deprecated] mark some theme method deprecated ([310e329](https://git.ringcentral.com/RCUI/rcui/commit/310e32981d052db2483464e591bdbaa1896382ad))
-- **RCUI-367:** [IconButton] deprecated props fix ([f123649](https://git.ringcentral.com/RCUI/rcui/commit/f1236493f288d9b1f881ff82a4c101f0ed804b39))
-- **RCUI-367:** [IconButton] refactor with styled method ([89153d6](https://git.ringcentral.com/RCUI/rcui/commit/89153d65e1fc15bf88fad63584cc93bef3d57352))
-- **RCUI-367:** [PlusButton] remove not need PlusButton ([a86e9d7](https://git.ringcentral.com/RCUI/rcui/commit/a86e9d7e1a79d263eedbd0f65a0eb1a00dd476e6))
-- **RCUI-367:** [RcPlusButton] mark RcPlusButton deprecated ([476614b](https://git.ringcentral.com/RCUI/rcui/commit/476614be8a93821f58fd2634595827d32449f49e))
-- **RCUI-367:** [SplitButton] fix style with setOpaciaty ([0d53afe](https://git.ringcentral.com/RCUI/rcui/commit/0d53afe9bebad48bb254e17ab91cbbc2a9ab836e))
-- **RCUI-369:** [VirtualizedBoxSelect] fix disabled style ([a1d8e3b](https://git.ringcentral.com/RCUI/rcui/commit/a1d8e3bedc93836b21906c2967e86dd2a1119ef9))
-- **RCUI-370:** [Opacity] swith tinycolor2 to mui method ([ee326fa](https://git.ringcentral.com/RCUI/rcui/commit/ee326fa5099ee8ec54fb58bf40b68e5fab6ef717))
-- **RCUI-371:** [Deprecated] mark activeOpacity and disabledOpacity deprecated ([878a35d](https://git.ringcentral.com/RCUI/rcui/commit/878a35d9ab598be218b2263cd7515ff39350c48b))
-- **RCUI-371:** [SnackbarAction] cleanup snackbar action code style and props ([0ff6cad](https://git.ringcentral.com/RCUI/rcui/commit/0ff6cad879126b828cc917bfdd33ec813602a98b))
-- **RCUI-371:** [SnackbarContent] cleanup snackbar content code style and props ([161366a](https://git.ringcentral.com/RCUI/rcui/commit/161366a711cb1f79bd554679339ffffd14221005))
-- **RCUI-372:** [Accessibility][mac] Revert Can't read out the month in real-time when hit Enter to change month in date selector dialog. ([b0871a1](https://git.ringcentral.com/RCUI/rcui/commit/b0871a1390dc1d1d9035fb5ec0661aa73dd3cb5e))
-- **RCUI-373:** [Select] fix disabled style when have selected item ([1a3ecf1](https://git.ringcentral.com/RCUI/rcui/commit/1a3ecf157342bba479fd249b1d471e7150db3139))
-- **RCUI-375:** [SplitButton] fix style with injectFirst ([aa22352](https://git.ringcentral.com/RCUI/rcui/commit/aa223520588af6d193683f2ebf6873ee5230353a))
-- **RCUI-377:** [Classes] fix omit type ([4539bea](https://git.ringcentral.com/RCUI/rcui/commit/4539bea32b4054b86fe85f7aa2b0771f12537853))
-- **RCUI-377:** [Switch] fix disabled color append issue and some forwardRef ([442ae3a](https://git.ringcentral.com/RCUI/rcui/commit/442ae3a04ed9600ce4756fa449092f4f5b03352c))
+- **RCUI-180:** [Button] fix button token use ([47482da](https://github.com/ringcentral/juno/commit/47482daf1ce124a2c0de59f1d8c7e396bfe87922))
+- **RCUI-180:** [Foundation] fix type with only apply for our typography ([c0cd0fb](https://github.com/ringcentral/juno/commit/c0cd0fb695e42cb6acb23f4970d02295a0dfd883))
+- **RCUI-180:** [Foundation] remove not need break-word in ellipsis ([c368f25](https://github.com/ringcentral/juno/commit/c368f254af22baa434352e0384c7d09b86c0772d))
+- **RCUI-180:** [InlineEditable] change variant to correct typographyKeys ([ab79890](https://github.com/ringcentral/juno/commit/ab798906e1f0aa9f0a430438de522180dfd504f9))
+- **RCUI-180:** [Link] fix link style and logic, that only be click when press Enter ([1edbb06](https://github.com/ringcentral/juno/commit/1edbb06fa2e10b9104d5fd38ba23ba6079825ebd))
+- **RCUI-180:** [Text] deprecated all old RcText component ([2d4ed33](https://github.com/ringcentral/juno/commit/2d4ed33b7301f5f7e20af9bd0e4e037f1fbf5fd7))
+- **RCUI-180:** [TimePicker] fix timePicker token when medium ([982e60c](https://github.com/ringcentral/juno/commit/982e60c3d57f67dcc7222171152c5bdf1d2b5f18))
+- **RCUI-180:** [Token] add miss token headline2 ([4400aba](https://github.com/ringcentral/juno/commit/4400aba243d7c33a3fd84f6b96b449c1cc8dfb99))
+- **RCUI-180:** [Token] remove not need subheading3 ([c605b41](https://github.com/ringcentral/juno/commit/c605b412eb62a59c2862de483ea7b34b0d63350e))
+- **RCUI-180:** [Typography] switch old typography as deparcated ([e6ea172](https://github.com/ringcentral/juno/commit/e6ea1726f929d1b3d3feba8cf3c96adbd17aa816))
+- **RCUI-234:** [Button] change button with icon will effect below all RcIcon margin issue ([ca5b2a9](https://github.com/ringcentral/juno/commit/ca5b2a9c126e35afffc044566187858b1c183c22))
+- **RCUI-234:** [Button] pre cleanup refactor ([c9a972c](https://github.com/ringcentral/juno/commit/c9a972c09ff70242cebf746764031ae130afdfd2))
+- **RCUI-234:** [CombineProps] fix combine props logic with only stop event pass with stop propagation ([dae4fba](https://github.com/ringcentral/juno/commit/dae4fba7997a4f6988c532a99c458448ee904191))
+- **RCUI-234:** [SplitButton] fix style with button remove two layer cause issue ([e8de3cc](https://github.com/ringcentral/juno/commit/e8de3ccb74d312b770c4c4ca4569fa91b142ccd2))
+- **RCUI-252:** [RegionSelect] remove not need RegionSelect ([653fb29](https://github.com/ringcentral/juno/commit/653fb2996457eff4e59490b53d2dba43cb97f1a5))
+- **RCUI-252:** [VirtualizedMenu] fix VirtualizedMenu code and logic ([aa43d1c](https://github.com/ringcentral/juno/commit/aa43d1c38aeaec863249c8f34d1085b402cae754))
+- **RCUI-294:** [LineSelect, BoxSelect] mark original storybook and components deprecated ([68849e2](https://github.com/ringcentral/juno/commit/68849e2e7593f656eed55c4251cfe86c3c49c753))
+- **RCUI-294:** [Plain] refactor with style ([46be2a0](https://github.com/ringcentral/juno/commit/46be2a082c51e34e22898e64cce5e13502639819))
+- **RCUI-294:** [Plain] update naming ([7352dac](https://github.com/ringcentral/juno/commit/7352dacc7eda8c10d956b08d32c4790e2a5953ad))
+- **RCUI-294:** [TextField] remove not need two layer class name ([c1842dc](https://github.com/ringcentral/juno/commit/c1842dc6f0ff3bb72a1469e8c5abf1e2c2743180))
+- **RCUI-344:** [DatePicker] fix date picker range overflow issue ([5b4ec38](https://github.com/ringcentral/juno/commit/5b4ec384754b2c5f6deaa0c5b0a16b3b8b1842bb))
+- **RCUI-351:** [Alert] update with new file structure ([3b98998](https://github.com/ringcentral/juno/commit/3b98998a210ea0ca3e30a51442d0721e9df2263f))
+- **RCUI-351:** [Divider] change divider to hr ([1005986](https://github.com/ringcentral/juno/commit/1005986fbef753bd5e2b2ce826ce4a849e5e6fc5))
+- **RCUI-351:** [Foundation] rename cssValue to px ([296eb5e](https://github.com/ringcentral/juno/commit/296eb5ec7046c96de44f109921b13c00c57b8f20))
+- **RCUI-351:** [Icon] memo icon for pure render component, and remove width ([fd0354e](https://github.com/ringcentral/juno/commit/fd0354e1656b73e37f67b877f62ea072172c689e))
+- **RCUI-351:** [Tooltip] pick className only pass into popper ([a3ec0e2](https://github.com/ringcentral/juno/commit/a3ec0e208a5804166f9efddd35cbd56683e92604))
+- **RCUI-357:** [Downshift] enableAutoTransform should emit when textField blur and have suggestion list ([69459e1](https://github.com/ringcentral/juno/commit/69459e1fee85f68d04ad14574dbfd41fcfcdd218))
+- **RCUI-359:** [ButtonBar] add handleOnKeyDown. should follow isStopPropagation, also keep keyup work ([c7058aa](https://github.com/ringcentral/juno/commit/c7058aa852f754b856c6f5a1628e8bccda5acb14))
+- **RCUI-360:** [TextField] color of underline to be icon.dark when hover ([4ff30bc](https://github.com/ringcentral/juno/commit/4ff30bc96259539932d7dcb02071aa25fe3d1f72))
+- **RCUI-364:** [useFocusHelper] support outside setFousedIndex ([7574d66](https://github.com/ringcentral/juno/commit/7574d6636220653722c372a7b93349e12abde012))
+- **RCUI-365:** [[Accessibility][mac]] Can't read out the month in real-time when hit Enter to change month in date selector dialog. ([e9025a1](https://github.com/ringcentral/juno/commit/e9025a16cb389a4c83f65ad41ea2f3d9866d8cf2))
+- **RCUI-366:** [Snackbar] update calendar text selected color ([0a327d1](https://github.com/ringcentral/juno/commit/0a327d118541a58d10cb7aa74084cebbe8d2ba04))
+- **RCUI-366:** [Snackbar] update warning text color ([c0638db](https://github.com/ringcentral/juno/commit/c0638db593da556ebc7f26cd7c4d61aa5ef20961))
+- **RCUI-367:** [ButtonBase] change buttonBase props with ComponentProps ([22dd1f7](https://github.com/ringcentral/juno/commit/22dd1f7569a2dcb0a097d6d1912ce7d933e0e269))
+- **RCUI-367:** [Deprecated] mark some theme method deprecated ([310e329](https://github.com/ringcentral/juno/commit/310e32981d052db2483464e591bdbaa1896382ad))
+- **RCUI-367:** [IconButton] deprecated props fix ([f123649](https://github.com/ringcentral/juno/commit/f1236493f288d9b1f881ff82a4c101f0ed804b39))
+- **RCUI-367:** [IconButton] refactor with styled method ([89153d6](https://github.com/ringcentral/juno/commit/89153d65e1fc15bf88fad63584cc93bef3d57352))
+- **RCUI-367:** [PlusButton] remove not need PlusButton ([a86e9d7](https://github.com/ringcentral/juno/commit/a86e9d7e1a79d263eedbd0f65a0eb1a00dd476e6))
+- **RCUI-367:** [RcPlusButton] mark RcPlusButton deprecated ([476614b](https://github.com/ringcentral/juno/commit/476614be8a93821f58fd2634595827d32449f49e))
+- **RCUI-367:** [SplitButton] fix style with setOpaciaty ([0d53afe](https://github.com/ringcentral/juno/commit/0d53afe9bebad48bb254e17ab91cbbc2a9ab836e))
+- **RCUI-369:** [VirtualizedBoxSelect] fix disabled style ([a1d8e3b](https://github.com/ringcentral/juno/commit/a1d8e3bedc93836b21906c2967e86dd2a1119ef9))
+- **RCUI-370:** [Opacity] swith tinycolor2 to mui method ([ee326fa](https://github.com/ringcentral/juno/commit/ee326fa5099ee8ec54fb58bf40b68e5fab6ef717))
+- **RCUI-371:** [Deprecated] mark activeOpacity and disabledOpacity deprecated ([878a35d](https://github.com/ringcentral/juno/commit/878a35d9ab598be218b2263cd7515ff39350c48b))
+- **RCUI-371:** [SnackbarAction] cleanup snackbar action code style and props ([0ff6cad](https://github.com/ringcentral/juno/commit/0ff6cad879126b828cc917bfdd33ec813602a98b))
+- **RCUI-371:** [SnackbarContent] cleanup snackbar content code style and props ([161366a](https://github.com/ringcentral/juno/commit/161366a711cb1f79bd554679339ffffd14221005))
+- **RCUI-372:** [Accessibility][mac] Revert Can't read out the month in real-time when hit Enter to change month in date selector dialog. ([b0871a1](https://github.com/ringcentral/juno/commit/b0871a1390dc1d1d9035fb5ec0661aa73dd3cb5e))
+- **RCUI-373:** [Select] fix disabled style when have selected item ([1a3ecf1](https://github.com/ringcentral/juno/commit/1a3ecf157342bba479fd249b1d471e7150db3139))
+- **RCUI-375:** [SplitButton] fix style with injectFirst ([aa22352](https://github.com/ringcentral/juno/commit/aa223520588af6d193683f2ebf6873ee5230353a))
+- **RCUI-377:** [Classes] fix omit type ([4539bea](https://github.com/ringcentral/juno/commit/4539bea32b4054b86fe85f7aa2b0771f12537853))
+- **RCUI-377:** [Switch] fix disabled color append issue and some forwardRef ([442ae3a](https://github.com/ringcentral/juno/commit/442ae3a04ed9600ce4756fa449092f4f5b03352c))
 
-### [1.3.2](https://git.ringcentral.com/RCUI/rcui/compare/1.3.1...1.3.2) (2021-01-20)
+### [1.3.2](https://github.com/ringcentral/juno/compare/1.3.1...1.3.2) (2021-01-20)
 
 ### ⚠ BREAKING CHANGES
 
@@ -2509,69 +2509,69 @@ more detail, please view changelog below.
 
 ### Features
 
-- **RCUI-295:** [DnD] implement new component Drag and drop ([5914754](https://git.ringcentral.com/RCUI/rcui/commit/5914754bc0bb97fa09f565463311314bc23b5317))
-- **RCUI-324:** [Chip][button] cleanup work for High Contrast Theme ([1b1ca1d](https://git.ringcentral.com/RCUI/rcui/commit/1b1ca1dffee1974bb6e4a27f7db2e336e731ca5c))
-- **RCUI-327:** [Divider] support a11y with divider role ([517f439](https://git.ringcentral.com/RCUI/rcui/commit/517f4390a8f8e1ebef7d30a0944cb3a4ffd90d5f))
-- **RCUI-328:** [[Date picker][deque report]] support screenreader ([b46b89b](https://git.ringcentral.com/RCUI/rcui/commit/b46b89ba8bcf189ac5de5db7613e75be4ff89f4e))
-- **RCUI-334:** [TimePicker][deque report] add aria-label to fix deque issues ([7f8a72a](https://git.ringcentral.com/RCUI/rcui/commit/7f8a72a2fb8769c748b08198ea348c65cff4e73e))
-- **RCUI-335:** [Link] remove link mocks folder ([540df8d](https://git.ringcentral.com/RCUI/rcui/commit/540df8d72c7d5495bd200a6aafed8a33a5a80248))
-- **RCUI-336:** [usePortal] add usePortal hook ([fc358ce](https://git.ringcentral.com/RCUI/rcui/commit/fc358ce1771407c341c10328a6801e42bc163a46))
-- **RCUI-340:** [Scss] update scss file with token ([2e1d523](https://git.ringcentral.com/RCUI/rcui/commit/2e1d523d8b14e2fc5dc7510b30b204f474df22cb))
-- **RCUI-340:** [Update token] Update tokens in JUNO ([4e4a5c7](https://git.ringcentral.com/RCUI/rcui/commit/4e4a5c7bd645b8f93040d40637efb3335d01443d))
-- **RCUI-342:** [Form] init form relate component, FormHelperText, InputLabel ([087ea4b](https://git.ringcentral.com/RCUI/rcui/commit/087ea4bc8d5511ce9fcb41d252f6e673a6894f30))
-- **RCUI-342:** [Foundation] implement UnionOmit ([28cefea](https://git.ringcentral.com/RCUI/rcui/commit/28cefea35ba3f948b0b4a32c5ad06c0c1ab3ad75))
-- **RCUI-343:** [High Contrast] add highContrast color ([9fbf165](https://git.ringcentral.com/RCUI/rcui/commit/9fbf1654723d8e1f6f20289b0ad5e6f756c7abb7))
-- **RCUI-343:** [Picker] support highContrast in TimePicker and DatePicker ([ff3149b](https://git.ringcentral.com/RCUI/rcui/commit/ff3149b3f38d9e9b7acd20c2744e9baf10b3c418))
-- **RCUI-344:** [Animation] add util transitionendSubscriber ([1de2668](https://git.ringcentral.com/RCUI/rcui/commit/1de2668683edc5026bfbb5763a0e885910adcf58))
-- **RCUI-344:** [focusVisible] add pointer-event: none in fake border ([2543749](https://git.ringcentral.com/RCUI/rcui/commit/2543749cad4151e6d51b6197808084d8c298349a))
-- **RCUI-345:** [AppBar] adjustments for high contrast theme ([f8123bd](https://git.ringcentral.com/RCUI/rcui/commit/f8123bd776914ff2448783592d8956d9b3c303a3))
-- **RCUI-345:** [Avatar] adjustments for high contrast theme ([03b4de8](https://git.ringcentral.com/RCUI/rcui/commit/03b4de8cc01017379955dac786fbee8cffb09f72))
-- **RCUI-345:** [BoxSelect] adjustments for high contrast theme ([10cd864](https://git.ringcentral.com/RCUI/rcui/commit/10cd864f383133745eae252e2f49c0a70623d7e3))
-- **RCUI-345:** [Chip] adjustments for high contrast theme ([da1f2c5](https://git.ringcentral.com/RCUI/rcui/commit/da1f2c53c256572f6f26a839fd699f07e254ade3))
-- **RCUI-345:** [DatePicker, TimePicker] adjustments for high contrast theme ([2062d50](https://git.ringcentral.com/RCUI/rcui/commit/2062d5053e6e748d195299da9cce327393886dcd))
-- **RCUI-345:** [DnD] adjustments for high contrast theme ([13649b5](https://git.ringcentral.com/RCUI/rcui/commit/13649b5da24fd3da56951eb301ef736819f3e9d9))
-- **RCUI-345:** [FabButton] adjustments for high contrast theme ([fabab67](https://git.ringcentral.com/RCUI/rcui/commit/fabab6751a736a4b630534d713eb5ac5debc18a1))
-- **RCUI-345:** [ListButtonItem] adjustments for high contrast theme ([2a39f52](https://git.ringcentral.com/RCUI/rcui/commit/2a39f52a2b4a9533aecada6ab1375d5a43f2a7a6))
-- **RCUI-345:** [LozengeButton] adjustments for high contrast theme ([9ca3841](https://git.ringcentral.com/RCUI/rcui/commit/9ca384158127987f9c9fe93a10dbf659a5276b01))
-- **RCUI-345:** [OutlineTextField] adjustments for high contrast theme ([804e303](https://git.ringcentral.com/RCUI/rcui/commit/804e3039f21c765e059ea5386eae0637fa0954ef))
-- **RCUI-345:** [RoundButton] adjustments for high contrast theme ([ec619bb](https://git.ringcentral.com/RCUI/rcui/commit/ec619bb9668e2b5b41b1650ce9e4948f04b7386c))
-- **RCUI-345:** [Table] adjustments for high contrast theme ([68c5f54](https://git.ringcentral.com/RCUI/rcui/commit/68c5f54919260c6d8dc95f9ca67e38e7edf6c174))
-- **RCUI-345:** [Textarea] adjustments for high contrast theme ([ad2a994](https://git.ringcentral.com/RCUI/rcui/commit/ad2a994b66c08decb51e50adcc02da9dee8fa45d))
-- **RCUI-345:** [Theme] update token with highContrast ([eb5e953](https://git.ringcentral.com/RCUI/rcui/commit/eb5e9537d82af85e12ac26a5b41f9b5c3445431e))
-- **RCUI-345:** [Thumbnail] adjustments for high contrast theme ([cf2668c](https://git.ringcentral.com/RCUI/rcui/commit/cf2668c712f9fc15f0f9d05aa8e44378f70b279f))
-- **RCUI-345:** [Tooltip] adjustments for high contrast theme ([ef37e72](https://git.ringcentral.com/RCUI/rcui/commit/ef37e7265cd0457a8b3fdc580ab5c7ef2a66e368))
-- **RCUI-345:** [VideoPlayer] adjustments for high contrast theme ([501c0af](https://git.ringcentral.com/RCUI/rcui/commit/501c0aff316b3fa1132387367f82378e88f5a119))
-- **RCUI-345:** [VirtualizedSelects] adjustments for high contrast theme ([23caacc](https://git.ringcentral.com/RCUI/rcui/commit/23caacc074162b31301611e3dfd17e8cf8f846ae))
-- **RCUI-346:** [useAnnouncer] add announce hook ([160d123](https://git.ringcentral.com/RCUI/rcui/commit/160d1231d1b549d04a9b7f1f5554eaca8303f6f0))
-- **RCUI-353:** [fakeBorder] avoid overriding box-shadow for light/dark theme ([e5da785](https://git.ringcentral.com/RCUI/rcui/commit/e5da78522f9536fbf30cceee60c34d4e86f9cbde))
+- **RCUI-295:** [DnD] implement new component Drag and drop ([5914754](https://github.com/ringcentral/juno/commit/5914754bc0bb97fa09f565463311314bc23b5317))
+- **RCUI-324:** [Chip][button] cleanup work for High Contrast Theme ([1b1ca1d](https://github.com/ringcentral/juno/commit/1b1ca1dffee1974bb6e4a27f7db2e336e731ca5c))
+- **RCUI-327:** [Divider] support a11y with divider role ([517f439](https://github.com/ringcentral/juno/commit/517f4390a8f8e1ebef7d30a0944cb3a4ffd90d5f))
+- **RCUI-328:** [[Date picker][deque report]] support screenreader ([b46b89b](https://github.com/ringcentral/juno/commit/b46b89ba8bcf189ac5de5db7613e75be4ff89f4e))
+- **RCUI-334:** [TimePicker][deque report] add aria-label to fix deque issues ([7f8a72a](https://github.com/ringcentral/juno/commit/7f8a72a2fb8769c748b08198ea348c65cff4e73e))
+- **RCUI-335:** [Link] remove link mocks folder ([540df8d](https://github.com/ringcentral/juno/commit/540df8d72c7d5495bd200a6aafed8a33a5a80248))
+- **RCUI-336:** [usePortal] add usePortal hook ([fc358ce](https://github.com/ringcentral/juno/commit/fc358ce1771407c341c10328a6801e42bc163a46))
+- **RCUI-340:** [Scss] update scss file with token ([2e1d523](https://github.com/ringcentral/juno/commit/2e1d523d8b14e2fc5dc7510b30b204f474df22cb))
+- **RCUI-340:** [Update token] Update tokens in JUNO ([4e4a5c7](https://github.com/ringcentral/juno/commit/4e4a5c7bd645b8f93040d40637efb3335d01443d))
+- **RCUI-342:** [Form] init form relate component, FormHelperText, InputLabel ([087ea4b](https://github.com/ringcentral/juno/commit/087ea4bc8d5511ce9fcb41d252f6e673a6894f30))
+- **RCUI-342:** [Foundation] implement UnionOmit ([28cefea](https://github.com/ringcentral/juno/commit/28cefea35ba3f948b0b4a32c5ad06c0c1ab3ad75))
+- **RCUI-343:** [High Contrast] add highContrast color ([9fbf165](https://github.com/ringcentral/juno/commit/9fbf1654723d8e1f6f20289b0ad5e6f756c7abb7))
+- **RCUI-343:** [Picker] support highContrast in TimePicker and DatePicker ([ff3149b](https://github.com/ringcentral/juno/commit/ff3149b3f38d9e9b7acd20c2744e9baf10b3c418))
+- **RCUI-344:** [Animation] add util transitionendSubscriber ([1de2668](https://github.com/ringcentral/juno/commit/1de2668683edc5026bfbb5763a0e885910adcf58))
+- **RCUI-344:** [focusVisible] add pointer-event: none in fake border ([2543749](https://github.com/ringcentral/juno/commit/2543749cad4151e6d51b6197808084d8c298349a))
+- **RCUI-345:** [AppBar] adjustments for high contrast theme ([f8123bd](https://github.com/ringcentral/juno/commit/f8123bd776914ff2448783592d8956d9b3c303a3))
+- **RCUI-345:** [Avatar] adjustments for high contrast theme ([03b4de8](https://github.com/ringcentral/juno/commit/03b4de8cc01017379955dac786fbee8cffb09f72))
+- **RCUI-345:** [BoxSelect] adjustments for high contrast theme ([10cd864](https://github.com/ringcentral/juno/commit/10cd864f383133745eae252e2f49c0a70623d7e3))
+- **RCUI-345:** [Chip] adjustments for high contrast theme ([da1f2c5](https://github.com/ringcentral/juno/commit/da1f2c53c256572f6f26a839fd699f07e254ade3))
+- **RCUI-345:** [DatePicker, TimePicker] adjustments for high contrast theme ([2062d50](https://github.com/ringcentral/juno/commit/2062d5053e6e748d195299da9cce327393886dcd))
+- **RCUI-345:** [DnD] adjustments for high contrast theme ([13649b5](https://github.com/ringcentral/juno/commit/13649b5da24fd3da56951eb301ef736819f3e9d9))
+- **RCUI-345:** [FabButton] adjustments for high contrast theme ([fabab67](https://github.com/ringcentral/juno/commit/fabab6751a736a4b630534d713eb5ac5debc18a1))
+- **RCUI-345:** [ListButtonItem] adjustments for high contrast theme ([2a39f52](https://github.com/ringcentral/juno/commit/2a39f52a2b4a9533aecada6ab1375d5a43f2a7a6))
+- **RCUI-345:** [LozengeButton] adjustments for high contrast theme ([9ca3841](https://github.com/ringcentral/juno/commit/9ca384158127987f9c9fe93a10dbf659a5276b01))
+- **RCUI-345:** [OutlineTextField] adjustments for high contrast theme ([804e303](https://github.com/ringcentral/juno/commit/804e3039f21c765e059ea5386eae0637fa0954ef))
+- **RCUI-345:** [RoundButton] adjustments for high contrast theme ([ec619bb](https://github.com/ringcentral/juno/commit/ec619bb9668e2b5b41b1650ce9e4948f04b7386c))
+- **RCUI-345:** [Table] adjustments for high contrast theme ([68c5f54](https://github.com/ringcentral/juno/commit/68c5f54919260c6d8dc95f9ca67e38e7edf6c174))
+- **RCUI-345:** [Textarea] adjustments for high contrast theme ([ad2a994](https://github.com/ringcentral/juno/commit/ad2a994b66c08decb51e50adcc02da9dee8fa45d))
+- **RCUI-345:** [Theme] update token with highContrast ([eb5e953](https://github.com/ringcentral/juno/commit/eb5e9537d82af85e12ac26a5b41f9b5c3445431e))
+- **RCUI-345:** [Thumbnail] adjustments for high contrast theme ([cf2668c](https://github.com/ringcentral/juno/commit/cf2668c712f9fc15f0f9d05aa8e44378f70b279f))
+- **RCUI-345:** [Tooltip] adjustments for high contrast theme ([ef37e72](https://github.com/ringcentral/juno/commit/ef37e7265cd0457a8b3fdc580ab5c7ef2a66e368))
+- **RCUI-345:** [VideoPlayer] adjustments for high contrast theme ([501c0af](https://github.com/ringcentral/juno/commit/501c0aff316b3fa1132387367f82378e88f5a119))
+- **RCUI-345:** [VirtualizedSelects] adjustments for high contrast theme ([23caacc](https://github.com/ringcentral/juno/commit/23caacc074162b31301611e3dfd17e8cf8f846ae))
+- **RCUI-346:** [useAnnouncer] add announce hook ([160d123](https://github.com/ringcentral/juno/commit/160d1231d1b549d04a9b7f1f5554eaca8303f6f0))
+- **RCUI-353:** [fakeBorder] avoid overriding box-shadow for light/dark theme ([e5da785](https://github.com/ringcentral/juno/commit/e5da78522f9536fbf30cceee60c34d4e86f9cbde))
 
 ### Bug Fixes
 
-- **RCUI-295:** [Select] fix placeholder with empty value also display placeholder ([2861210](https://git.ringcentral.com/RCUI/rcui/commit/28612106eda262acb83dfeb907ca2d9b58951b5c))
-- **RCUI-330:** [DatePicker] refactor whole datepicker for sync spec ([51b9972](https://git.ringcentral.com/RCUI/rcui/commit/51b9972217a6bede0917773d5a217285ccecc52d))
-- **RCUI-334:** [TimePicker] fix code rerender issue with picker ([9fde62e](https://git.ringcentral.com/RCUI/rcui/commit/9fde62ecf76931bb719136f58ebc45813bc6632a))
-- **RCUI-334:** [TimePicker] full all props pass with Picker ([6f56d08](https://git.ringcentral.com/RCUI/rcui/commit/6f56d0808554e7590cc9d23dfeebd7fd5b2fcf2f))
-- **RCUI-337:** [Icon] remove not need icon position: relative ([00ffc6e](https://git.ringcentral.com/RCUI/rcui/commit/00ffc6e4ce2628db6532d0c85aa587d30ce09ed8))
-- **RCUI-337:** [ThemeProvider] inject Mui class first as default ([b3f7f8b](https://git.ringcentral.com/RCUI/rcui/commit/b3f7f8bfe07ffe77ca90719b5fd041bcb6a610a5))
-- **RCUI-338:** [Avatar] presenceSize value compute incorrect fix ([b5f9f16](https://git.ringcentral.com/RCUI/rcui/commit/b5f9f166404e47376515d2244ddf4f39b20afb6f))
-- **RCUI-339:** [DnD] export require type ([d566447](https://git.ringcentral.com/RCUI/rcui/commit/d566447b4aee9bd0694a22225105ef223027c3a2))
-- **RCUI-339:** [LineSelect] add displayName ([c2377f0](https://git.ringcentral.com/RCUI/rcui/commit/c2377f0a09e2815e81ffe5c073220dbbb5f1ab79))
-- **RCUI-339:** [usePortal] modify the story ([59fc285](https://git.ringcentral.com/RCUI/rcui/commit/59fc28575e27f2050c8d07ccaafe9bd64863a100))
-- **RCUI-340:** [getParsePaletteColor] fix support palette function and string type ([0f8c4ce](https://git.ringcentral.com/RCUI/rcui/commit/0f8c4ce297cfda875fa71a5c46ee4dfca55317e2))
-- **RCUI-344:** [DatePicker] add close in datePicker ([d3948b6](https://git.ringcentral.com/RCUI/rcui/commit/d3948b667ca9004dfa3f82123fa7461349f2360c))
-- **RCUI-344:** [TextField, OutlineTextField] fix TextField issue with disable in safari ([7c967d3](https://git.ringcentral.com/RCUI/rcui/commit/7c967d3c70130424dccf02859895d6478565f5b4))
-- **RCUI-344:** [TimePicker] fix default value issue ([d796f80](https://git.ringcentral.com/RCUI/rcui/commit/d796f804cfff72fcb555360903a6777a35b6067f))
-- **RCUI-344:** [TimePicker] fix render value issue with hour ([a219694](https://git.ringcentral.com/RCUI/rcui/commit/a2196945ebb2fe83f5f9fa5de231401829589e50))
-- **RCUI-344:** [TimePicker] fix style with textfield, and anchor position ([5fbed40](https://git.ringcentral.com/RCUI/rcui/commit/5fbed40ff763faf82f71d87aef3355a0f647dbad))
-- **RCUI-344:** [TimePicker] pick PickerTextField for support shared in Date and Time picker ([574ea88](https://git.ringcentral.com/RCUI/rcui/commit/574ea88f049edfd88c6d56784296cda950cf8b42))
-- **RCUI-345:** [DatePicker, TimePicker] add miss props back ([a7abf62](https://git.ringcentral.com/RCUI/rcui/commit/a7abf62a8573ff0d323af526a1237bcc64a2586e))
-- **RCUI-348:** [Menu] change context jsx layer, only for children as customer ([c410da4](https://git.ringcentral.com/RCUI/rcui/commit/c410da482c99c3609e31827493de6d3f61d1e908))
-- **RCUI-349:** [Menu] fix menu with memo, refactor with focus ref future ([aca2eb3](https://git.ringcentral.com/RCUI/rcui/commit/aca2eb3f26eaa8726ef0c81623ee54552238caab))
-- **RCUI-351:** [Downshift] remove uuid, replace with uniqueId ([ba0977a](https://git.ringcentral.com/RCUI/rcui/commit/ba0977a91ff1dc1a7c94b22368dab8d7fbcc7960))
-- **RCUI-351:** [Menu] refactor come code and remove uuid package ([cdcb87c](https://git.ringcentral.com/RCUI/rcui/commit/cdcb87ca7901241198784f9bdea7761b9394e5d2))
-- **RCUI-352:** [TimePicker, DatePicker] remove GlobalPickerStyle ([9dba939](https://git.ringcentral.com/RCUI/rcui/commit/9dba93905a27da3d992b5385b3010d8eb638988d))
+- **RCUI-295:** [Select] fix placeholder with empty value also display placeholder ([2861210](https://github.com/ringcentral/juno/commit/28612106eda262acb83dfeb907ca2d9b58951b5c))
+- **RCUI-330:** [DatePicker] refactor whole datepicker for sync spec ([51b9972](https://github.com/ringcentral/juno/commit/51b9972217a6bede0917773d5a217285ccecc52d))
+- **RCUI-334:** [TimePicker] fix code rerender issue with picker ([9fde62e](https://github.com/ringcentral/juno/commit/9fde62ecf76931bb719136f58ebc45813bc6632a))
+- **RCUI-334:** [TimePicker] full all props pass with Picker ([6f56d08](https://github.com/ringcentral/juno/commit/6f56d0808554e7590cc9d23dfeebd7fd5b2fcf2f))
+- **RCUI-337:** [Icon] remove not need icon position: relative ([00ffc6e](https://github.com/ringcentral/juno/commit/00ffc6e4ce2628db6532d0c85aa587d30ce09ed8))
+- **RCUI-337:** [ThemeProvider] inject Mui class first as default ([b3f7f8b](https://github.com/ringcentral/juno/commit/b3f7f8bfe07ffe77ca90719b5fd041bcb6a610a5))
+- **RCUI-338:** [Avatar] presenceSize value compute incorrect fix ([b5f9f16](https://github.com/ringcentral/juno/commit/b5f9f166404e47376515d2244ddf4f39b20afb6f))
+- **RCUI-339:** [DnD] export require type ([d566447](https://github.com/ringcentral/juno/commit/d566447b4aee9bd0694a22225105ef223027c3a2))
+- **RCUI-339:** [LineSelect] add displayName ([c2377f0](https://github.com/ringcentral/juno/commit/c2377f0a09e2815e81ffe5c073220dbbb5f1ab79))
+- **RCUI-339:** [usePortal] modify the story ([59fc285](https://github.com/ringcentral/juno/commit/59fc28575e27f2050c8d07ccaafe9bd64863a100))
+- **RCUI-340:** [getParsePaletteColor] fix support palette function and string type ([0f8c4ce](https://github.com/ringcentral/juno/commit/0f8c4ce297cfda875fa71a5c46ee4dfca55317e2))
+- **RCUI-344:** [DatePicker] add close in datePicker ([d3948b6](https://github.com/ringcentral/juno/commit/d3948b667ca9004dfa3f82123fa7461349f2360c))
+- **RCUI-344:** [TextField, OutlineTextField] fix TextField issue with disable in safari ([7c967d3](https://github.com/ringcentral/juno/commit/7c967d3c70130424dccf02859895d6478565f5b4))
+- **RCUI-344:** [TimePicker] fix default value issue ([d796f80](https://github.com/ringcentral/juno/commit/d796f804cfff72fcb555360903a6777a35b6067f))
+- **RCUI-344:** [TimePicker] fix render value issue with hour ([a219694](https://github.com/ringcentral/juno/commit/a2196945ebb2fe83f5f9fa5de231401829589e50))
+- **RCUI-344:** [TimePicker] fix style with textfield, and anchor position ([5fbed40](https://github.com/ringcentral/juno/commit/5fbed40ff763faf82f71d87aef3355a0f647dbad))
+- **RCUI-344:** [TimePicker] pick PickerTextField for support shared in Date and Time picker ([574ea88](https://github.com/ringcentral/juno/commit/574ea88f049edfd88c6d56784296cda950cf8b42))
+- **RCUI-345:** [DatePicker, TimePicker] add miss props back ([a7abf62](https://github.com/ringcentral/juno/commit/a7abf62a8573ff0d323af526a1237bcc64a2586e))
+- **RCUI-348:** [Menu] change context jsx layer, only for children as customer ([c410da4](https://github.com/ringcentral/juno/commit/c410da482c99c3609e31827493de6d3f61d1e908))
+- **RCUI-349:** [Menu] fix menu with memo, refactor with focus ref future ([aca2eb3](https://github.com/ringcentral/juno/commit/aca2eb3f26eaa8726ef0c81623ee54552238caab))
+- **RCUI-351:** [Downshift] remove uuid, replace with uniqueId ([ba0977a](https://github.com/ringcentral/juno/commit/ba0977a91ff1dc1a7c94b22368dab8d7fbcc7960))
+- **RCUI-351:** [Menu] refactor come code and remove uuid package ([cdcb87c](https://github.com/ringcentral/juno/commit/cdcb87ca7901241198784f9bdea7761b9394e5d2))
+- **RCUI-352:** [TimePicker, DatePicker] remove GlobalPickerStyle ([9dba939](https://github.com/ringcentral/juno/commit/9dba93905a27da3d992b5385b3010d8eb638988d))
 
-### [1.3.1](https://git.ringcentral.com/RCUI/rcui/compare/1.3.0...1.3.1) (2021-01-07)
+### [1.3.1](https://github.com/ringcentral/juno/compare/1.3.0...1.3.1) (2021-01-07)
 
 ### ⚠ BREAKING CHANGES
 
@@ -2584,60 +2584,60 @@ more detail, please view changelog below.
 
 ### Features
 
-- **RCUI-181:** [Avatar] add warning with all script ([a625183](https://git.ringcentral.com/RCUI/rcui/commit/a625183a05a304ca6411874eb2d8bb5bedcad408))
-- **RCUI-181:** [Avatar] release whole avatar component ([2e8bca7](https://git.ringcentral.com/RCUI/rcui/commit/2e8bca7d5291ec4410bf9c8ada675693f464969d))
-- **RCUI-181:** [foundation] add nonStyleButton for a11y button use ([5bac0b7](https://git.ringcentral.com/RCUI/rcui/commit/5bac0b7f3653eb203d638dd7bbc79806eceb1b11))
-- **RCUI-181:** [foundation] add reverse with opacity ([128da2d](https://git.ringcentral.com/RCUI/rcui/commit/128da2dcee28a8663d1ca4a29918c3d3b20b3a01))
-- **RCUI-181:** [foundation] export mui useTheme ([f3c5468](https://git.ringcentral.com/RCUI/rcui/commit/f3c54688dfeacb2e3d10f9de332ceb408859c68a))
-- **RCUI-181:** [foundation] move a11yKeyboardCode into foundation ([9cd206b](https://git.ringcentral.com/RCUI/rcui/commit/9cd206bc3bb3251de180b5436e6306394b071218))
-- **RCUI-181:** [Release]Avatar ([480432c](https://git.ringcentral.com/RCUI/rcui/commit/480432c2732150b49d24685229c97b7747111c0f))
-- **RCUI-295:** [Select] add placeholder with Select and move storybook ([9720c2a](https://git.ringcentral.com/RCUI/rcui/commit/9720c2a2942543b3cb2cf9f47cdc94f526a48fe0))
-- **RCUI-295:** [Storybook] add tag for storybook a11y ([d9e2731](https://git.ringcentral.com/RCUI/rcui/commit/d9e2731dd510a63b7ab074793cd58be559804107))
+- **RCUI-181:** [Avatar] add warning with all script ([a625183](https://github.com/ringcentral/juno/commit/a625183a05a304ca6411874eb2d8bb5bedcad408))
+- **RCUI-181:** [Avatar] release whole avatar component ([2e8bca7](https://github.com/ringcentral/juno/commit/2e8bca7d5291ec4410bf9c8ada675693f464969d))
+- **RCUI-181:** [foundation] add nonStyleButton for a11y button use ([5bac0b7](https://github.com/ringcentral/juno/commit/5bac0b7f3653eb203d638dd7bbc79806eceb1b11))
+- **RCUI-181:** [foundation] add reverse with opacity ([128da2d](https://github.com/ringcentral/juno/commit/128da2dcee28a8663d1ca4a29918c3d3b20b3a01))
+- **RCUI-181:** [foundation] export mui useTheme ([f3c5468](https://github.com/ringcentral/juno/commit/f3c54688dfeacb2e3d10f9de332ceb408859c68a))
+- **RCUI-181:** [foundation] move a11yKeyboardCode into foundation ([9cd206b](https://github.com/ringcentral/juno/commit/9cd206bc3bb3251de180b5436e6306394b071218))
+- **RCUI-181:** [Release]Avatar ([480432c](https://github.com/ringcentral/juno/commit/480432c2732150b49d24685229c97b7747111c0f))
+- **RCUI-295:** [Select] add placeholder with Select and move storybook ([9720c2a](https://github.com/ringcentral/juno/commit/9720c2a2942543b3cb2cf9f47cdc94f526a48fe0))
+- **RCUI-295:** [Storybook] add tag for storybook a11y ([d9e2731](https://github.com/ringcentral/juno/commit/d9e2731dd510a63b7ab074793cd58be559804107))
 
 ### Bug Fixes
 
-- **RCUI-181:** [Avatar] add shouldRenderPresenceHovered feat back ([d88ec24](https://git.ringcentral.com/RCUI/rcui/commit/d88ec24f989e65b7ed1d5794ec4b2f8190e68aba))
-- **RCUI-181:** [Icon] fix defaultProps loadingSize issue ([1328560](https://git.ringcentral.com/RCUI/rcui/commit/1328560fc8f26e66f16219bd047b34392e8e11e9))
+- **RCUI-181:** [Avatar] add shouldRenderPresenceHovered feat back ([d88ec24](https://github.com/ringcentral/juno/commit/d88ec24f989e65b7ed1d5794ec4b2f8190e68aba))
+- **RCUI-181:** [Icon] fix defaultProps loadingSize issue ([1328560](https://github.com/ringcentral/juno/commit/1328560fc8f26e66f16219bd047b34392e8e11e9))
 
-## [1.3.0](https://git.ringcentral.com/RCUI/rcui/compare/1.2.6...1.3.0) (2020-12-31)
+## [1.3.0](https://github.com/ringcentral/juno/compare/1.2.6...1.3.0) (2020-12-31)
 
 ### Features
 
-- **RCUI-315:** [Divider] release Divider ([a21f72c](https://git.ringcentral.com/RCUI/rcui/commit/a21f72c562b79c429149bc350d5827498e6c4123))
-- **RCUI-315:** [Presence] forwardRef Presence ([5fdbd1f](https://git.ringcentral.com/RCUI/rcui/commit/5fdbd1f1e0ea9b9d14271f9a93aeb67e20d7685e))
-- **RCUI-315:** [Presence] release Presence ([e4035c7](https://git.ringcentral.com/RCUI/rcui/commit/e4035c73f72c75fd8ecdf789c6c9a76cb1b206fc))
-- **RCUI-315:** [Rating] release Rating ([c3ca773](https://git.ringcentral.com/RCUI/rcui/commit/c3ca773086d61eda30d61ec87492ac9c49a36114))
-- **RCUI-315:** [Table] add classes for apply class to part of component ([bc23b9d](https://git.ringcentral.com/RCUI/rcui/commit/bc23b9d7225295caf4169b2449f94977b770f2f6))
-- **RCUI-315:** [Table] switch table to styled component ([a113ba9](https://git.ringcentral.com/RCUI/rcui/commit/a113ba9507bd7adf67158ce7cb603fa1d192b9d5))
-- **RCUI-315:** [Token] add presence token ([258989c](https://git.ringcentral.com/RCUI/rcui/commit/258989c88cb0fd648f880b55538d815c1d48af91))
-- **RCUI-315:** [Tooltip] release tooltip ([9ce497c](https://git.ringcentral.com/RCUI/rcui/commit/9ce497c251980ba35fb952674018b66884db678d))
-- **RCUI-321:** Paddings in menu with groups ([6623511](https://git.ringcentral.com/RCUI/rcui/commit/6623511e12ef822df754160ce5a9412ea94ea2bf))
-- **RCUI-321:** Paddings in menu with groups update snapshot ([a9c4282](https://git.ringcentral.com/RCUI/rcui/commit/a9c4282d5603bbef39668e9e8c0418b1ef1aa4b1))
-- **RCUI-322:** [[SubMenu] add MenuListProps for subMenuList] add MenuListProps prop ([d0d42ce](https://git.ringcentral.com/RCUI/rcui/commit/d0d42ceb67221d9cab4102289fcbf52b95a36cad))
+- **RCUI-315:** [Divider] release Divider ([a21f72c](https://github.com/ringcentral/juno/commit/a21f72c562b79c429149bc350d5827498e6c4123))
+- **RCUI-315:** [Presence] forwardRef Presence ([5fdbd1f](https://github.com/ringcentral/juno/commit/5fdbd1f1e0ea9b9d14271f9a93aeb67e20d7685e))
+- **RCUI-315:** [Presence] release Presence ([e4035c7](https://github.com/ringcentral/juno/commit/e4035c73f72c75fd8ecdf789c6c9a76cb1b206fc))
+- **RCUI-315:** [Rating] release Rating ([c3ca773](https://github.com/ringcentral/juno/commit/c3ca773086d61eda30d61ec87492ac9c49a36114))
+- **RCUI-315:** [Table] add classes for apply class to part of component ([bc23b9d](https://github.com/ringcentral/juno/commit/bc23b9d7225295caf4169b2449f94977b770f2f6))
+- **RCUI-315:** [Table] switch table to styled component ([a113ba9](https://github.com/ringcentral/juno/commit/a113ba9507bd7adf67158ce7cb603fa1d192b9d5))
+- **RCUI-315:** [Token] add presence token ([258989c](https://github.com/ringcentral/juno/commit/258989c88cb0fd648f880b55538d815c1d48af91))
+- **RCUI-315:** [Tooltip] release tooltip ([9ce497c](https://github.com/ringcentral/juno/commit/9ce497c251980ba35fb952674018b66884db678d))
+- **RCUI-321:** Paddings in menu with groups ([6623511](https://github.com/ringcentral/juno/commit/6623511e12ef822df754160ce5a9412ea94ea2bf))
+- **RCUI-321:** Paddings in menu with groups update snapshot ([a9c4282](https://github.com/ringcentral/juno/commit/a9c4282d5603bbef39668e9e8c0418b1ef1aa4b1))
+- **RCUI-322:** [[SubMenu] add MenuListProps for subMenuList] add MenuListProps prop ([d0d42ce](https://github.com/ringcentral/juno/commit/d0d42ceb67221d9cab4102289fcbf52b95a36cad))
 
 ### Bug Fixes
 
-- **RCUI-315:** [Avatar] fix avatar with presence ([6fd6472](https://git.ringcentral.com/RCUI/rcui/commit/6fd647218fa7a739ae17a2dac23c34c5e2aa688f))
-- **RCUI-315:** [Foundation] add comment for classesProps ([325e636](https://git.ringcentral.com/RCUI/rcui/commit/325e6365db64d4286cc122b8402ee70c75410350))
-- **RCUI-315:** [Link] remove link below span issue ([72a1c30](https://git.ringcentral.com/RCUI/rcui/commit/72a1c3043e7d3872968dc88f64b7608945616d8f))
-- **RCUI-315:** [newPalette] fix type and mark height and width deprecated ([77b0eb6](https://git.ringcentral.com/RCUI/rcui/commit/77b0eb645b569ced1fd3562555db1706a2cc0d17))
-- **RCUI-315:** [Presence] switch presence token to presence ([a13a9b6](https://git.ringcentral.com/RCUI/rcui/commit/a13a9b6fc0e6b0f31a82dc3d754642441c455a82))
-- **RCUI-315:** [Tooltip] sync tooltip default color to bg.neutral ([f121d0e](https://git.ringcentral.com/RCUI/rcui/commit/f121d0e14b48af84a8535022a8cf49bba40f4fd1))
-- **RCUI-321:** [Menu] remove not need memo and forwardRef for outside use ([52781ea](https://git.ringcentral.com/RCUI/rcui/commit/52781ea01d765d8c46bc6b30d1f0962b80b17549))
-- **RCUI-322:** [SubMenu] remove not need destructure ([2b48c11](https://git.ringcentral.com/RCUI/rcui/commit/2b48c1178311ca8f3f3fc51a3cfe443ae9486fe2))
+- **RCUI-315:** [Avatar] fix avatar with presence ([6fd6472](https://github.com/ringcentral/juno/commit/6fd647218fa7a739ae17a2dac23c34c5e2aa688f))
+- **RCUI-315:** [Foundation] add comment for classesProps ([325e636](https://github.com/ringcentral/juno/commit/325e6365db64d4286cc122b8402ee70c75410350))
+- **RCUI-315:** [Link] remove link below span issue ([72a1c30](https://github.com/ringcentral/juno/commit/72a1c3043e7d3872968dc88f64b7608945616d8f))
+- **RCUI-315:** [newPalette] fix type and mark height and width deprecated ([77b0eb6](https://github.com/ringcentral/juno/commit/77b0eb645b569ced1fd3562555db1706a2cc0d17))
+- **RCUI-315:** [Presence] switch presence token to presence ([a13a9b6](https://github.com/ringcentral/juno/commit/a13a9b6fc0e6b0f31a82dc3d754642441c455a82))
+- **RCUI-315:** [Tooltip] sync tooltip default color to bg.neutral ([f121d0e](https://github.com/ringcentral/juno/commit/f121d0e14b48af84a8535022a8cf49bba40f4fd1))
+- **RCUI-321:** [Menu] remove not need memo and forwardRef for outside use ([52781ea](https://github.com/ringcentral/juno/commit/52781ea01d765d8c46bc6b30d1f0962b80b17549))
+- **RCUI-322:** [SubMenu] remove not need destructure ([2b48c11](https://github.com/ringcentral/juno/commit/2b48c1178311ca8f3f3fc51a3cfe443ae9486fe2))
 
-### [1.2.6](https://git.ringcentral.com/RCUI/rcui/compare/1.2.5...1.2.6) (2020-12-23)
+### [1.2.6](https://github.com/ringcentral/juno/compare/1.2.5...1.2.6) (2020-12-23)
 
 ### Features
 
-- **RCUI-312:** [[Tag] TS to support basic HTML attributes] fix TS ([7b5af99](https://git.ringcentral.com/RCUI/rcui/commit/7b5af9973b4bce2d521bcfb60d9daeeaaa8bcd68))
-- **RCUI-313:** [VerticalScrollbar] TypeError VerticalScrollbar.prototype.\_smoothScrollBy(main.1c9ce9a5.chunk) error Object doesn't support property or method 'scrollBy' ([1a17e14](https://git.ringcentral.com/RCUI/rcui/commit/1a17e1406d6ce30e695c560b27c8d36b085c1fee))
+- **RCUI-312:** [[Tag] TS to support basic HTML attributes] fix TS ([7b5af99](https://github.com/ringcentral/juno/commit/7b5af9973b4bce2d521bcfb60d9daeeaaa8bcd68))
+- **RCUI-313:** [VerticalScrollbar] TypeError VerticalScrollbar.prototype.\_smoothScrollBy(main.1c9ce9a5.chunk) error Object doesn't support property or method 'scrollBy' ([1a17e14](https://github.com/ringcentral/juno/commit/1a17e1406d6ce30e695c560b27c8d36b085c1fee))
 
 ### Bug Fixes
 
-- **RCUI-286:** [Icon] fix switch error ([a96bfcc](https://git.ringcentral.com/RCUI/rcui/commit/a96bfcca1abe12937bb07531fc605d03c06db530))
+- **RCUI-286:** [Icon] fix switch error ([a96bfcc](https://github.com/ringcentral/juno/commit/a96bfcca1abe12937bb07531fc605d03c06db530))
 
-### [1.2.5](https://git.ringcentral.com/RCUI/rcui/compare/1.2.4...1.2.5) (2020-12-22)
+### [1.2.5](https://github.com/ringcentral/juno/compare/1.2.4...1.2.5) (2020-12-22)
 
 ### ⚠ BREAKING CHANGES
 
@@ -2647,35 +2647,35 @@ more detail, please view changelog below.
 
 ### Features
 
-- **RCUI-302:** [LineSelect] deprecated props and release for warning use ([4e68644](https://git.ringcentral.com/RCUI/rcui/commit/4e686447ae3cf8b32c63a28251079c244ef90664))
-- **RCUI-302:** [Scss] add shadows scss mixin ([e4d73e6](https://git.ringcentral.com/RCUI/rcui/commit/e4d73e661c0d07adbc0164ab05b4011b4ff37926))
-- **RCUI-307:** [hooks] fix useReneredOnceHelper ([2a7ed7a](https://git.ringcentral.com/RCUI/rcui/commit/2a7ed7a421dd9d27b64c1e66ebf7c4e721b8abf1))
-- **RCUI-309:** [HoverHelper] Failed to execute 'contains' on 'Node': parameter 1 is not of type 'Node'. fix ([2be3819](https://git.ringcentral.com/RCUI/rcui/commit/2be3819ec8fa753a86e6d28b3f6400e9e6faa7ed))
-- **RCUI-310:** [ThemeSwitcherProvider] init themeSwitcher for theme switch ([d295e3a](https://git.ringcentral.com/RCUI/rcui/commit/d295e3a4e29e45c60a5c726f42f5b71f61df0cbf))
+- **RCUI-302:** [LineSelect] deprecated props and release for warning use ([4e68644](https://github.com/ringcentral/juno/commit/4e686447ae3cf8b32c63a28251079c244ef90664))
+- **RCUI-302:** [Scss] add shadows scss mixin ([e4d73e6](https://github.com/ringcentral/juno/commit/e4d73e661c0d07adbc0164ab05b4011b4ff37926))
+- **RCUI-307:** [hooks] fix useReneredOnceHelper ([2a7ed7a](https://github.com/ringcentral/juno/commit/2a7ed7a421dd9d27b64c1e66ebf7c4e721b8abf1))
+- **RCUI-309:** [HoverHelper] Failed to execute 'contains' on 'Node': parameter 1 is not of type 'Node'. fix ([2be3819](https://github.com/ringcentral/juno/commit/2be3819ec8fa753a86e6d28b3f6400e9e6faa7ed))
+- **RCUI-310:** [ThemeSwitcherProvider] init themeSwitcher for theme switch ([d295e3a](https://github.com/ringcentral/juno/commit/d295e3a4e29e45c60a5c726f42f5b71f61df0cbf))
 
 ### Bug Fixes
 
-- **FIJI-306:** [[Downshift] fix `key` prop of InputItem in RcTextFieldWithFreeChips] fix key. ([2f7d59d](https://git.ringcentral.com/RCUI/rcui/commit/2f7d59dcef0a8c4e08336e035fa01c71c0f0acf9))
-- **RCUI-234:** [Lint] fix error hook use ([357a5e7](https://git.ringcentral.com/RCUI/rcui/commit/357a5e7c14ab3d7ab28b7b428db24c4d7e8dd7a4))
-- **RCUI-286:** [BoxSelect] fix BoxSelect style ([ea19943](https://git.ringcentral.com/RCUI/rcui/commit/ea199431e74a9baf3430317953ba405125063924))
-- **RCUI-286:** [Icon] fix icon switch bug ([f26564c](https://git.ringcentral.com/RCUI/rcui/commit/f26564cc3753ae3435b9fb5696797211e9aa9575))
-- **RCUI-286:** [Icon] fix inner user icon way ([a932607](https://git.ringcentral.com/RCUI/rcui/commit/a9326074a5dfdc5b17e8ef6edfe2f5788a46eaec))
-- **RCUI-301:** [[Downshift] input not need required attr when downshift have selectedItems] fix ([7860471](https://git.ringcentral.com/RCUI/rcui/commit/786047191b550aa262d7c58f9d30915e437003b4))
-- **RCUI-301:** [[Downshift] input not need required attr when downshift have selectedItems] fix ([4bcd09c](https://git.ringcentral.com/RCUI/rcui/commit/4bcd09cdf4795829086e5b24d0d3c9a16704241e))
-- **RCUI-301:** [[Downshift] input not need required attr when downshift have selectedItems] update snapshot ([5997238](https://git.ringcentral.com/RCUI/rcui/commit/5997238d785b7bf12e36d0b7ccf3629ae84b27eb))
-- **RCUI-301:** [[Downshift] input not need required attr when downshift have selectedItems] update ut ([9c897a5](https://git.ringcentral.com/RCUI/rcui/commit/9c897a5009b7ab35a3e59f5f545b1db45408cec4))
-- **RCUI-302:** [ListButtonItem] fix type issue ([e5f8349](https://git.ringcentral.com/RCUI/rcui/commit/e5f83494778dfafb2f8d958f8ea54617a406b8d6))
-- **RCUI-302:** [Shadows] add miss shadow token ([29000f8](https://git.ringcentral.com/RCUI/rcui/commit/29000f8bcb7a4db6832d372679e9346f9136050d))
-- **RCUI-302:** [Snapshot] update snapshot ([f568ca6](https://git.ringcentral.com/RCUI/rcui/commit/f568ca6b31a871582a13907e815b82814427415e))
-- **RCUI-303:** [Textarea] fix Textarea color with use same base with TextField ([f437e8f](https://git.ringcentral.com/RCUI/rcui/commit/f437e8f7cd804987ac838473a75c778bfada25bb))
-- **RCUI-303:** [Textared] fix color when disabled ([3348639](https://git.ringcentral.com/RCUI/rcui/commit/334863989a1c7c54cf60075de8aaf7aebba01d4d))
-- **RCUI-303:** [Textared] remove hover color ([5eb9642](https://git.ringcentral.com/RCUI/rcui/commit/5eb9642f42cfb4e5220b52309bfe9aac7e818fc2))
-- **RCUI-304:** [AduioPlayer] fix icon name use to Svg Icon ([ba8dc99](https://git.ringcentral.com/RCUI/rcui/commit/ba8dc994549a02951b82b127dd8757f0a748ba64))
-- **RCUI-304:** [Icon] fix all inner icon use way ([72cdb9e](https://git.ringcentral.com/RCUI/rcui/commit/72cdb9ef8ae1f1caedb92cd1a6369d240635eae7))
-- **RCUI-304:** [Marker] change use icon way ([6687abb](https://git.ringcentral.com/RCUI/rcui/commit/6687abb76a22b2b9a9f356381ccc9bef6a972fe9))
-- **RCUI-304:** [Thumbnail] release thumbnail ([4b7a057](https://git.ringcentral.com/RCUI/rcui/commit/4b7a0577795cb2b7ebe1c888c112f2181055a160))
+- **FIJI-306:** [[Downshift] fix `key` prop of InputItem in RcTextFieldWithFreeChips] fix key. ([2f7d59d](https://github.com/ringcentral/juno/commit/2f7d59dcef0a8c4e08336e035fa01c71c0f0acf9))
+- **RCUI-234:** [Lint] fix error hook use ([357a5e7](https://github.com/ringcentral/juno/commit/357a5e7c14ab3d7ab28b7b428db24c4d7e8dd7a4))
+- **RCUI-286:** [BoxSelect] fix BoxSelect style ([ea19943](https://github.com/ringcentral/juno/commit/ea199431e74a9baf3430317953ba405125063924))
+- **RCUI-286:** [Icon] fix icon switch bug ([f26564c](https://github.com/ringcentral/juno/commit/f26564cc3753ae3435b9fb5696797211e9aa9575))
+- **RCUI-286:** [Icon] fix inner user icon way ([a932607](https://github.com/ringcentral/juno/commit/a9326074a5dfdc5b17e8ef6edfe2f5788a46eaec))
+- **RCUI-301:** [[Downshift] input not need required attr when downshift have selectedItems] fix ([7860471](https://github.com/ringcentral/juno/commit/786047191b550aa262d7c58f9d30915e437003b4))
+- **RCUI-301:** [[Downshift] input not need required attr when downshift have selectedItems] fix ([4bcd09c](https://github.com/ringcentral/juno/commit/4bcd09cdf4795829086e5b24d0d3c9a16704241e))
+- **RCUI-301:** [[Downshift] input not need required attr when downshift have selectedItems] update snapshot ([5997238](https://github.com/ringcentral/juno/commit/5997238d785b7bf12e36d0b7ccf3629ae84b27eb))
+- **RCUI-301:** [[Downshift] input not need required attr when downshift have selectedItems] update ut ([9c897a5](https://github.com/ringcentral/juno/commit/9c897a5009b7ab35a3e59f5f545b1db45408cec4))
+- **RCUI-302:** [ListButtonItem] fix type issue ([e5f8349](https://github.com/ringcentral/juno/commit/e5f83494778dfafb2f8d958f8ea54617a406b8d6))
+- **RCUI-302:** [Shadows] add miss shadow token ([29000f8](https://github.com/ringcentral/juno/commit/29000f8bcb7a4db6832d372679e9346f9136050d))
+- **RCUI-302:** [Snapshot] update snapshot ([f568ca6](https://github.com/ringcentral/juno/commit/f568ca6b31a871582a13907e815b82814427415e))
+- **RCUI-303:** [Textarea] fix Textarea color with use same base with TextField ([f437e8f](https://github.com/ringcentral/juno/commit/f437e8f7cd804987ac838473a75c778bfada25bb))
+- **RCUI-303:** [Textared] fix color when disabled ([3348639](https://github.com/ringcentral/juno/commit/334863989a1c7c54cf60075de8aaf7aebba01d4d))
+- **RCUI-303:** [Textared] remove hover color ([5eb9642](https://github.com/ringcentral/juno/commit/5eb9642f42cfb4e5220b52309bfe9aac7e818fc2))
+- **RCUI-304:** [AduioPlayer] fix icon name use to Svg Icon ([ba8dc99](https://github.com/ringcentral/juno/commit/ba8dc994549a02951b82b127dd8757f0a748ba64))
+- **RCUI-304:** [Icon] fix all inner icon use way ([72cdb9e](https://github.com/ringcentral/juno/commit/72cdb9ef8ae1f1caedb92cd1a6369d240635eae7))
+- **RCUI-304:** [Marker] change use icon way ([6687abb](https://github.com/ringcentral/juno/commit/6687abb76a22b2b9a9f356381ccc9bef6a972fe9))
+- **RCUI-304:** [Thumbnail] release thumbnail ([4b7a057](https://github.com/ringcentral/juno/commit/4b7a0577795cb2b7ebe1c888c112f2181055a160))
 
-### [1.2.4](https://git.ringcentral.com/RCUI/rcui/compare/1.2.3...1.2.4) (2020-12-17)
+### [1.2.4](https://github.com/ringcentral/juno/compare/1.2.3...1.2.4) (2020-12-17)
 
 ### ⚠ BREAKING CHANGES
 
@@ -2686,78 +2686,78 @@ more detail, please view changelog below.
 
 ### Features
 
-- **RCUI-234:** [CheckBox] support RcCheckBox with tooltip ([db61d35](https://git.ringcentral.com/RCUI/rcui/commit/db61d3556fe5e9b808be1b34eb0d05a5c0ddfc83))
-- **RCUI-234:** [FabButton] support full color set pass ([8e8aeb8](https://git.ringcentral.com/RCUI/rcui/commit/8e8aeb85c57dd3cae8c6df074a0c8291741bc604))
-- **RCUI-234:** [FabIconButton] support full color set pass ([a4be290](https://git.ringcentral.com/RCUI/rcui/commit/a4be29073d9a0a3006d260c84300a7f0f131c9ca))
-- **RCUI-234:** [IconButton] support full color set pass ([0a408f9](https://git.ringcentral.com/RCUI/rcui/commit/0a408f9fb7018dad1ae3a8f8d6768c5f768670a4))
-- **RCUI-288:** [hooks] add new utils useRenderedOnceHelper ([27bd9c1](https://git.ringcentral.com/RCUI/rcui/commit/27bd9c1c07a123ef2c361b45da8572cb9ac99b4c))
-- **RCUI-288:** [hooks] UseRenderedOnceHelper. change KeyboardEvent to FocusEvent for onFocus ([a7a3800](https://git.ringcentral.com/RCUI/rcui/commit/a7a380029cd8dea4484f25ceb5ec6ca4f2b06107))
-- **RCUI-290:** [[LineSelect][virtuallist] fix accessibility support] fix MenuList ([e237192](https://git.ringcentral.com/RCUI/rcui/commit/e23719261edbc59fbf38e5b9dc92df95e17bcba6))
-- **RCUI-298:** [Scss] init all theme token for normal sass use ([57e2c03](https://git.ringcentral.com/RCUI/rcui/commit/57e2c039ca6ef36620f28a6f0471f6747d081bb8))
+- **RCUI-234:** [CheckBox] support RcCheckBox with tooltip ([db61d35](https://github.com/ringcentral/juno/commit/db61d3556fe5e9b808be1b34eb0d05a5c0ddfc83))
+- **RCUI-234:** [FabButton] support full color set pass ([8e8aeb8](https://github.com/ringcentral/juno/commit/8e8aeb85c57dd3cae8c6df074a0c8291741bc604))
+- **RCUI-234:** [FabIconButton] support full color set pass ([a4be290](https://github.com/ringcentral/juno/commit/a4be29073d9a0a3006d260c84300a7f0f131c9ca))
+- **RCUI-234:** [IconButton] support full color set pass ([0a408f9](https://github.com/ringcentral/juno/commit/0a408f9fb7018dad1ae3a8f8d6768c5f768670a4))
+- **RCUI-288:** [hooks] add new utils useRenderedOnceHelper ([27bd9c1](https://github.com/ringcentral/juno/commit/27bd9c1c07a123ef2c361b45da8572cb9ac99b4c))
+- **RCUI-288:** [hooks] UseRenderedOnceHelper. change KeyboardEvent to FocusEvent for onFocus ([a7a3800](https://github.com/ringcentral/juno/commit/a7a380029cd8dea4484f25ceb5ec6ca4f2b06107))
+- **RCUI-290:** [[LineSelect][virtuallist] fix accessibility support] fix MenuList ([e237192](https://github.com/ringcentral/juno/commit/e23719261edbc59fbf38e5b9dc92df95e17bcba6))
+- **RCUI-298:** [Scss] init all theme token for normal sass use ([57e2c03](https://github.com/ringcentral/juno/commit/57e2c039ca6ef36620f28a6f0471f6747d081bb8))
 
 ### Bug Fixes
 
-- **RCUI-183:** [[Release]Presence] use palette2 ([a4a297d](https://git.ringcentral.com/RCUI/rcui/commit/a4a297d59037ae064c7d1cf1c79f271a897f7cac))
-- **RCUI-234:** [CheckboxButton] remove RcCheckboxButton, should use RcCheckBox to replace that ([42ee5c9](https://git.ringcentral.com/RCUI/rcui/commit/42ee5c98faeb0b6887e5fd3587fb24d53c4dbfde))
-- **RCUI-234:** [getParsePaletteColor] change color to optional value ([1940838](https://git.ringcentral.com/RCUI/rcui/commit/19408388d3e8a5a0f34b57bff8247aef466e27e6))
-- **RCUI-234:** [IconButton] show warning when use tiny color ([fbdb22e](https://git.ringcentral.com/RCUI/rcui/commit/fbdb22e4d1a1f1417caa46cb9e5bb7baa311b250))
-- **RCUI-234:** [Link] release Link withDeprecatedCheck ([51a2565](https://git.ringcentral.com/RCUI/rcui/commit/51a25654c493afed7970bbee5d5e231ec93ef941))
-- **RCUI-234:** [Link] support full color set pass ([4c87d73](https://git.ringcentral.com/RCUI/rcui/commit/4c87d73b79721c6abacd9767e3359f0d43a7b231))
-- **RCUI-277:** [Table a11y] RcTableProps.desc no longer required prop, to avoid breaking existing use cases ([1befabd](https://git.ringcentral.com/RCUI/rcui/commit/1befabdf8ef1cedc91498e7529c7324555dcf216))
-- **RCUI-29ˊ:** [BoxSelect] pick heightSize from MuiSelect ([21db54c](https://git.ringcentral.com/RCUI/rcui/commit/21db54c1274be9afdd8d4fdb269dac53bb12f2bf))
-- **RCUI-293:** [DatePicker] remove prop \`localeOptions\`, that should custom outside ([5bf534f](https://git.ringcentral.com/RCUI/rcui/commit/5bf534f6e5695de7e58819abb2f2081718960135))
-- **RCUI-296:** [BoxSelect] fix error style cause with remove align center and flex ([5127b9b](https://git.ringcentral.com/RCUI/rcui/commit/5127b9b3e69b88b8bcf05f6e81eda243b60f9161))
-- **RCUI-296:** [DialDad] fix svg 0-9 icon fill color ([a74cc86](https://git.ringcentral.com/RCUI/rcui/commit/a74cc86914910469bc82cf22b471291bfef4fbc4))
-- **RCUI-296:** [OutlineTextField] fix HelperText style and pass props into ([2045023](https://git.ringcentral.com/RCUI/rcui/commit/204502359f857304eb6f099f9bc4f7b32f7edfc5))
-- **RCUI-296:** [TablePagination] fix root text color error in dark mode ([2811210](https://git.ringcentral.com/RCUI/rcui/commit/2811210d276e67815037d39376607f5330831a14))
-- **RCUI-296:** [TextField] fix disabled color ([3361288](https://git.ringcentral.com/RCUI/rcui/commit/33612883256031f869c8d47185e4a76d7f749ed5))
-- **RCUI-296:** [TextField] fix error disable style with value ([d025664](https://git.ringcentral.com/RCUI/rcui/commit/d025664bd9f4b0a64969f5b51b3d20caf0140ccd))
-- **RCUI-296:** [TextField] fix helperText color ([d5e73c6](https://git.ringcentral.com/RCUI/rcui/commit/d5e73c6ab259f547df10b57ed1a9051a1c1e8fa7))
-- **RCUI-296:** [VirtualizeSelect] fix props not correct issue ([228fcb6](https://git.ringcentral.com/RCUI/rcui/commit/228fcb641f00ac0f04930ebe9aaab7c221cad4d4))
-- **RCUI-297:** [Table] Modifying check for presence of valid sortKey to set tabindex ([3e1229d](https://git.ringcentral.com/RCUI/rcui/commit/3e1229d1d289f65d649bec86172245be187495e7))
-- **RCUI-298:** [RcColorSet] change to just use string[] that will refactor in the future when ts v4 work ([b427650](https://git.ringcentral.com/RCUI/rcui/commit/b42765039afde105623c7622fd05da2b86a21c14))
-- **RCUI-300:** [Scss] rename custom-palette => custom-rc-palette ([c478d45](https://git.ringcentral.com/RCUI/rcui/commit/c478d4500f22d06c9c171367455e40fac4ca83bd))
+- **RCUI-183:** [[Release]Presence] use palette2 ([a4a297d](https://github.com/ringcentral/juno/commit/a4a297d59037ae064c7d1cf1c79f271a897f7cac))
+- **RCUI-234:** [CheckboxButton] remove RcCheckboxButton, should use RcCheckBox to replace that ([42ee5c9](https://github.com/ringcentral/juno/commit/42ee5c98faeb0b6887e5fd3587fb24d53c4dbfde))
+- **RCUI-234:** [getParsePaletteColor] change color to optional value ([1940838](https://github.com/ringcentral/juno/commit/19408388d3e8a5a0f34b57bff8247aef466e27e6))
+- **RCUI-234:** [IconButton] show warning when use tiny color ([fbdb22e](https://github.com/ringcentral/juno/commit/fbdb22e4d1a1f1417caa46cb9e5bb7baa311b250))
+- **RCUI-234:** [Link] release Link withDeprecatedCheck ([51a2565](https://github.com/ringcentral/juno/commit/51a25654c493afed7970bbee5d5e231ec93ef941))
+- **RCUI-234:** [Link] support full color set pass ([4c87d73](https://github.com/ringcentral/juno/commit/4c87d73b79721c6abacd9767e3359f0d43a7b231))
+- **RCUI-277:** [Table a11y] RcTableProps.desc no longer required prop, to avoid breaking existing use cases ([1befabd](https://github.com/ringcentral/juno/commit/1befabdf8ef1cedc91498e7529c7324555dcf216))
+- **RCUI-29ˊ:** [BoxSelect] pick heightSize from MuiSelect ([21db54c](https://github.com/ringcentral/juno/commit/21db54c1274be9afdd8d4fdb269dac53bb12f2bf))
+- **RCUI-293:** [DatePicker] remove prop \`localeOptions\`, that should custom outside ([5bf534f](https://github.com/ringcentral/juno/commit/5bf534f6e5695de7e58819abb2f2081718960135))
+- **RCUI-296:** [BoxSelect] fix error style cause with remove align center and flex ([5127b9b](https://github.com/ringcentral/juno/commit/5127b9b3e69b88b8bcf05f6e81eda243b60f9161))
+- **RCUI-296:** [DialDad] fix svg 0-9 icon fill color ([a74cc86](https://github.com/ringcentral/juno/commit/a74cc86914910469bc82cf22b471291bfef4fbc4))
+- **RCUI-296:** [OutlineTextField] fix HelperText style and pass props into ([2045023](https://github.com/ringcentral/juno/commit/204502359f857304eb6f099f9bc4f7b32f7edfc5))
+- **RCUI-296:** [TablePagination] fix root text color error in dark mode ([2811210](https://github.com/ringcentral/juno/commit/2811210d276e67815037d39376607f5330831a14))
+- **RCUI-296:** [TextField] fix disabled color ([3361288](https://github.com/ringcentral/juno/commit/33612883256031f869c8d47185e4a76d7f749ed5))
+- **RCUI-296:** [TextField] fix error disable style with value ([d025664](https://github.com/ringcentral/juno/commit/d025664bd9f4b0a64969f5b51b3d20caf0140ccd))
+- **RCUI-296:** [TextField] fix helperText color ([d5e73c6](https://github.com/ringcentral/juno/commit/d5e73c6ab259f547df10b57ed1a9051a1c1e8fa7))
+- **RCUI-296:** [VirtualizeSelect] fix props not correct issue ([228fcb6](https://github.com/ringcentral/juno/commit/228fcb641f00ac0f04930ebe9aaab7c221cad4d4))
+- **RCUI-297:** [Table] Modifying check for presence of valid sortKey to set tabindex ([3e1229d](https://github.com/ringcentral/juno/commit/3e1229d1d289f65d649bec86172245be187495e7))
+- **RCUI-298:** [RcColorSet] change to just use string[] that will refactor in the future when ts v4 work ([b427650](https://github.com/ringcentral/juno/commit/b42765039afde105623c7622fd05da2b86a21c14))
+- **RCUI-300:** [Scss] rename custom-palette => custom-rc-palette ([c478d45](https://github.com/ringcentral/juno/commit/c478d4500f22d06c9c171367455e40fac4ca83bd))
 
-### [1.2.3](https://git.ringcentral.com/RCUI/rcui/compare/1.2.2...1.2.3) (2020-12-10)
+### [1.2.3](https://github.com/ringcentral/juno/compare/1.2.2...1.2.3) (2020-12-10)
 
 ### Features
 
-- **RCUI-278:** [[RcVirtualizedList] fix scrollContainer props for container wrapper div] fix scrollContainerProps ([7c79c32](https://git.ringcentral.com/RCUI/rcui/commit/7c79c327cdb0ac393fc4e01d2656a13759d3f40a))
-- **RCUI-278:** [[RcVirtualizedList] fix scrollContainer props for container wrapper div] fix scrollContainerProps ([ea61941](https://git.ringcentral.com/RCUI/rcui/commit/ea61941d2a99aa675d485db395a535d241120680))
-- **RCUI-278:** [[RcVirtualizedList] fix scrollContainer props for container wrapper div] fix scrollContainerProps ([d4ff9bd](https://git.ringcentral.com/RCUI/rcui/commit/d4ff9bdebb5016c12fa77a65baa99d78af7ea551))
-- **RCUI-280:** [[Downshift] suggestion list support accessibility] fix suggestion list a11y ([953f67b](https://git.ringcentral.com/RCUI/rcui/commit/953f67bc8bcef03c1a17d7d827c606be2d2d9beb))
-- **RCUI-283:** [[RcChip] Update RcChip supports truncate] just add storybook demo ([8cc549b](https://git.ringcentral.com/RCUI/rcui/commit/8cc549b6351d9ee3af21f6ac5d53d1a8791c6e51))
-- **RCUI-283:** [[RcChip] Update RcChip supports truncate] update snapshot ([e11a63c](https://git.ringcentral.com/RCUI/rcui/commit/e11a63c162b521bd42a3e4918ab1679ac4a0a4d8))
-- **RCUI-287:** [[RcTag] Update `color` props to support more colors.] add more colors. ([6b22e84](https://git.ringcentral.com/RCUI/rcui/commit/6b22e84c0f18b9fc63fc013e29f76de905ce27ad))
-- **RCUI-287:** [Tag] complete Tag Release ([819e010](https://git.ringcentral.com/RCUI/rcui/commit/819e0103505ca65628955aeceeef91ec9270e9c9))
-- **RCUI-289:** [[IconButton] fix **mocks** file] fix mock file ([1d5d80a](https://git.ringcentral.com/RCUI/rcui/commit/1d5d80a8a455dbfa39806b0c4dde6704d33a8ecb))
+- **RCUI-278:** [[RcVirtualizedList] fix scrollContainer props for container wrapper div] fix scrollContainerProps ([7c79c32](https://github.com/ringcentral/juno/commit/7c79c327cdb0ac393fc4e01d2656a13759d3f40a))
+- **RCUI-278:** [[RcVirtualizedList] fix scrollContainer props for container wrapper div] fix scrollContainerProps ([ea61941](https://github.com/ringcentral/juno/commit/ea61941d2a99aa675d485db395a535d241120680))
+- **RCUI-278:** [[RcVirtualizedList] fix scrollContainer props for container wrapper div] fix scrollContainerProps ([d4ff9bd](https://github.com/ringcentral/juno/commit/d4ff9bdebb5016c12fa77a65baa99d78af7ea551))
+- **RCUI-280:** [[Downshift] suggestion list support accessibility] fix suggestion list a11y ([953f67b](https://github.com/ringcentral/juno/commit/953f67bc8bcef03c1a17d7d827c606be2d2d9beb))
+- **RCUI-283:** [[RcChip] Update RcChip supports truncate] just add storybook demo ([8cc549b](https://github.com/ringcentral/juno/commit/8cc549b6351d9ee3af21f6ac5d53d1a8791c6e51))
+- **RCUI-283:** [[RcChip] Update RcChip supports truncate] update snapshot ([e11a63c](https://github.com/ringcentral/juno/commit/e11a63c162b521bd42a3e4918ab1679ac4a0a4d8))
+- **RCUI-287:** [[RcTag] Update `color` props to support more colors.] add more colors. ([6b22e84](https://github.com/ringcentral/juno/commit/6b22e84c0f18b9fc63fc013e29f76de905ce27ad))
+- **RCUI-287:** [Tag] complete Tag Release ([819e010](https://github.com/ringcentral/juno/commit/819e0103505ca65628955aeceeef91ec9270e9c9))
+- **RCUI-289:** [[IconButton] fix **mocks** file] fix mock file ([1d5d80a](https://github.com/ringcentral/juno/commit/1d5d80a8a455dbfa39806b0c4dde6704d33a8ecb))
 
 ### Bug Fixes
 
-- **RCUI-284:** [[IconButton] buttonRef not working] fix tooltip prop `tooltipForceHide` ([b9aa7be](https://git.ringcentral.com/RCUI/rcui/commit/b9aa7beb6427bff85f293967f0e1a277c42663fd))
-- **RCUI-286:** [Button] export SplitButton and related ButtonGroup ([0154e69](https://git.ringcentral.com/RCUI/rcui/commit/0154e6929722eac4ef471f2a853f9b170a92245f))
-- **RCUI-286:** [Icon] add static icon name ([f1d4f70](https://git.ringcentral.com/RCUI/rcui/commit/f1d4f7044efabf44598c29bc64c4b4e64b4128bb))
-- **RCUI-286:** [Icon] switch all inner svg use to component ([a67d140](https://git.ringcentral.com/RCUI/rcui/commit/a67d140e17f7503f51c410f93cbc43b24324fce2))
-- **RCUI-293:** [DatePicker] fix datePicker type issue and local issue ([0953ca7](https://git.ringcentral.com/RCUI/rcui/commit/0953ca71ed860522920f26815870922315037b0f))
+- **RCUI-284:** [[IconButton] buttonRef not working] fix tooltip prop `tooltipForceHide` ([b9aa7be](https://github.com/ringcentral/juno/commit/b9aa7beb6427bff85f293967f0e1a277c42663fd))
+- **RCUI-286:** [Button] export SplitButton and related ButtonGroup ([0154e69](https://github.com/ringcentral/juno/commit/0154e6929722eac4ef471f2a853f9b170a92245f))
+- **RCUI-286:** [Icon] add static icon name ([f1d4f70](https://github.com/ringcentral/juno/commit/f1d4f7044efabf44598c29bc64c4b4e64b4128bb))
+- **RCUI-286:** [Icon] switch all inner svg use to component ([a67d140](https://github.com/ringcentral/juno/commit/a67d140e17f7503f51c410f93cbc43b24324fce2))
+- **RCUI-293:** [DatePicker] fix datePicker type issue and local issue ([0953ca7](https://github.com/ringcentral/juno/commit/0953ca71ed860522920f26815870922315037b0f))
 
-### [1.2.2](https://git.ringcentral.com/RCUI/rcui/compare/1.2.1...1.2.2) (2020-12-07)
+### [1.2.2](https://github.com/ringcentral/juno/compare/1.2.1...1.2.2) (2020-12-07)
 
 ### Bug Fixes
 
-- **RCUI-286:** [Package] fix cli into dev deps ([2899f91](https://git.ringcentral.com/RCUI/rcui/commit/2899f91d4ce78092c48cf8e21a884046529f0b63))
+- **RCUI-286:** [Package] fix cli into dev deps ([2899f91](https://github.com/ringcentral/juno/commit/2899f91d4ce78092c48cf8e21a884046529f0b63))
 
-### [1.2.1](https://git.ringcentral.com/RCUI/rcui/compare/1.2.0...1.2.1) (2020-12-07)
+### [1.2.1](https://github.com/ringcentral/juno/compare/1.2.0...1.2.1) (2020-12-07)
 
 ### Features
 
-- **RCUI-286:** [Icon] init all icon component from svg to component ([6fcb229](https://git.ringcentral.com/RCUI/rcui/commit/6fcb2295878d8790c039101592ad22f61273e096))
+- **RCUI-286:** [Icon] init all icon component from svg to component ([6fcb229](https://github.com/ringcentral/juno/commit/6fcb2295878d8790c039101592ad22f61273e096))
 
 ### Bug Fixes
 
-- **RCUI-285:** [isShowJunoWarning] fix localStorage not exist issue ([64986ce](https://git.ringcentral.com/RCUI/rcui/commit/64986cee2836dc57c7f8ac802979269fad9e18da))
-- **RCUI-286:** [Icon] switch all inner svg use to component ([a129b01](https://git.ringcentral.com/RCUI/rcui/commit/a129b01fe2dd3ad95634de026110d0b514c63bd2))
+- **RCUI-285:** [isShowJunoWarning] fix localStorage not exist issue ([64986ce](https://github.com/ringcentral/juno/commit/64986cee2836dc57c7f8ac802979269fad9e18da))
+- **RCUI-286:** [Icon] switch all inner svg use to component ([a129b01](https://github.com/ringcentral/juno/commit/a129b01fe2dd3ad95634de026110d0b514c63bd2))
 
-## [1.2.0](https://git.ringcentral.com/RCUI/rcui/compare/1.1.3...1.2.0) (2020-12-04)
+## [1.2.0](https://github.com/ringcentral/juno/compare/1.1.3...1.2.0) (2020-12-04)
 
 ### ⚠ BREAKING CHANGES
 
@@ -2766,60 +2766,60 @@ more detail, please view changelog below.
 
 ### Features
 
-- **RCUI-179:** [Icon] make all deprecated props warning ([bf26ef1](https://git.ringcentral.com/RCUI/rcui/commit/bf26ef1c122c2c7507db609b141f801da54f22b1))
-- **RCUI-179:** [Icon] ready to release icon ([6446802](https://git.ringcentral.com/RCUI/rcui/commit/644680212cbc01f1e879ee858f106c7ed1cd0016))
-- **RCUI-189:** [[Downshift] refactor the downshift] update ([6084708](https://git.ringcentral.com/RCUI/rcui/commit/60847089ca145614bfafcf37d6096cf1a24475f8))
-- **RCUI-189:** [[Downshift] refactor the downshift] update ([098ff9f](https://git.ringcentral.com/RCUI/rcui/commit/098ff9fd3957a39b83dbe0c5c9c08615254e5ed3))
-- **RCUI-189:** [[Downshift] refactor the downshift] update ([7253bd7](https://git.ringcentral.com/RCUI/rcui/commit/7253bd7c8fef35f6696c51d572c18a45a0e84f8b))
-- **RCUI-189:** [[Downshift] refactor the downshift] update ([48dd45f](https://git.ringcentral.com/RCUI/rcui/commit/48dd45f64d9f39bddd0253712d4283d9e6c36897))
-- **RCUI-189:** [[Downshift] refactor the downshift] update snapshot ([435e097](https://git.ringcentral.com/RCUI/rcui/commit/435e097e66d25926beb1a472090aec0ead2901e7))
-- **RCUI-214:** [DatePicker] support accessibility ([5333154](https://git.ringcentral.com/RCUI/rcui/commit/5333154bfa617e45867919b5b5848d36282202f0))
-- **RCUI-215:** [TimePicker] add aria-live for screen reader ([13150f2](https://git.ringcentral.com/RCUI/rcui/commit/13150f241d3676a67d14fbac322bff61a751bcd0))
-- **RCUI-215:** [TimePicker] support A11y ([bfc04b2](https://git.ringcentral.com/RCUI/rcui/commit/bfc04b2c77224bef3ae2f36799593a51d2c8f08a))
-- **RCUI-215:** [TimePicker] support accessbility ([e2fcfed](https://git.ringcentral.com/RCUI/rcui/commit/e2fcfeda178979d75ba1fe852b09a1d77bd3fd01))
-- **RCUI-233:** [Banner] remove RcBanner, full alert component ([4ab8cc5](https://git.ringcentral.com/RCUI/rcui/commit/4ab8cc54a6c2d77aafb7794bcbaf2bacfbdf4de7))
-- **RCUI-241:** [Button, ListItem, MenuItem] apply withTooltip ([6fa09a9](https://git.ringcentral.com/RCUI/rcui/commit/6fa09a915a2735d9012de5a56f9554cd5c422e05))
-- **RCUI-241:** [ButtonGroup] implement ButtonGroup ([63a8238](https://git.ringcentral.com/RCUI/rcui/commit/63a82388d5f0c5e53d1a4bb0a23a839cf2b5df34))
-- **RCUI-241:** [SplitButton] implement SplitButton ([8db5def](https://git.ringcentral.com/RCUI/rcui/commit/8db5deff9836e7fb28bbc36dbf03acad5990741c))
-- **RCUI-241:** [withTooltip] implement with Tooltip hoc ([31a5259](https://git.ringcentral.com/RCUI/rcui/commit/31a5259f5337b3efc62bfdfb09ac32865478a833))
-- **RCUI-242:** [[Component update] Icon button/plain- add offset for focus indicator] add offset to keyboard focus ([e91a733](https://git.ringcentral.com/RCUI/rcui/commit/e91a7330cbcb1a47c3cf53a554dcf5608954a581))
-- **RCUI-249:** [[RcVirtualizedList] add scrollContainer props] add scrollContainerProps props ([72c2271](https://git.ringcentral.com/RCUI/rcui/commit/72c2271b98df36662e5e6e21bd5d825010f8f839))
-- **RCUI-249:** [[RcVirtualizedList] add scrollContainer props] update snapshot ([476c1d9](https://git.ringcentral.com/RCUI/rcui/commit/476c1d904b82b301336597e6b9909c2140f992e7))
-- **RCUI-261:** [DatePicker] add automation id for month year day ([1259115](https://git.ringcentral.com/RCUI/rcui/commit/12591159d51978d1edf3fc3205178982b4019650))
-- **RCUI-264:** [[Downshift] add unSelectable to replace the isMember] add unSelectable ([8603078](https://git.ringcentral.com/RCUI/rcui/commit/8603078a52e437a5f2e9499c823baf7aae8c7f95))
-- **RCUI-265:** [Add auto hide feature to scrollbar in virtualized list] add auto hide. ([16bec33](https://git.ringcentral.com/RCUI/rcui/commit/16bec33467c384aecb3336e3fedcbcda1f4580bc))
-- **RCUI-272:** [Deprecate check] add production check with warning only show in dev mode ([38b43de](https://git.ringcentral.com/RCUI/rcui/commit/38b43de45a9dfca7223a4c05d5219f32819c2a54))
-- **RCUI-272:** [Deprecate check] add tooltip depecrate warning ([7e8c6aa](https://git.ringcentral.com/RCUI/rcui/commit/7e8c6aa2507995ad4b1516c89fec145065498d41))
-- **RCUI-272:** [Deprecate check] implement deprecate check method ([8e015d7](https://git.ringcentral.com/RCUI/rcui/commit/8e015d771f7701b928210cf9cf802347bfbf2f32))
-- **RCUI-273:** [[AutoCollapseAction][iconbutton][InlineEditable] deprecated tooltipForceHide] remove tooltipForceHide ([4140f29](https://git.ringcentral.com/RCUI/rcui/commit/4140f29a88418497467da48d1f28bdaaedf15608))
-- **RCUI-281:** [[MenuItem] add props deprecate warning] add deprecated prop waring ([5f1b5e8](https://git.ringcentral.com/RCUI/rcui/commit/5f1b5e83d29cb0e290f58b4a3105501f77bf84d3))
+- **RCUI-179:** [Icon] make all deprecated props warning ([bf26ef1](https://github.com/ringcentral/juno/commit/bf26ef1c122c2c7507db609b141f801da54f22b1))
+- **RCUI-179:** [Icon] ready to release icon ([6446802](https://github.com/ringcentral/juno/commit/644680212cbc01f1e879ee858f106c7ed1cd0016))
+- **RCUI-189:** [[Downshift] refactor the downshift] update ([6084708](https://github.com/ringcentral/juno/commit/60847089ca145614bfafcf37d6096cf1a24475f8))
+- **RCUI-189:** [[Downshift] refactor the downshift] update ([098ff9f](https://github.com/ringcentral/juno/commit/098ff9fd3957a39b83dbe0c5c9c08615254e5ed3))
+- **RCUI-189:** [[Downshift] refactor the downshift] update ([7253bd7](https://github.com/ringcentral/juno/commit/7253bd7c8fef35f6696c51d572c18a45a0e84f8b))
+- **RCUI-189:** [[Downshift] refactor the downshift] update ([48dd45f](https://github.com/ringcentral/juno/commit/48dd45f64d9f39bddd0253712d4283d9e6c36897))
+- **RCUI-189:** [[Downshift] refactor the downshift] update snapshot ([435e097](https://github.com/ringcentral/juno/commit/435e097e66d25926beb1a472090aec0ead2901e7))
+- **RCUI-214:** [DatePicker] support accessibility ([5333154](https://github.com/ringcentral/juno/commit/5333154bfa617e45867919b5b5848d36282202f0))
+- **RCUI-215:** [TimePicker] add aria-live for screen reader ([13150f2](https://github.com/ringcentral/juno/commit/13150f241d3676a67d14fbac322bff61a751bcd0))
+- **RCUI-215:** [TimePicker] support A11y ([bfc04b2](https://github.com/ringcentral/juno/commit/bfc04b2c77224bef3ae2f36799593a51d2c8f08a))
+- **RCUI-215:** [TimePicker] support accessbility ([e2fcfed](https://github.com/ringcentral/juno/commit/e2fcfeda178979d75ba1fe852b09a1d77bd3fd01))
+- **RCUI-233:** [Banner] remove RcBanner, full alert component ([4ab8cc5](https://github.com/ringcentral/juno/commit/4ab8cc54a6c2d77aafb7794bcbaf2bacfbdf4de7))
+- **RCUI-241:** [Button, ListItem, MenuItem] apply withTooltip ([6fa09a9](https://github.com/ringcentral/juno/commit/6fa09a915a2735d9012de5a56f9554cd5c422e05))
+- **RCUI-241:** [ButtonGroup] implement ButtonGroup ([63a8238](https://github.com/ringcentral/juno/commit/63a82388d5f0c5e53d1a4bb0a23a839cf2b5df34))
+- **RCUI-241:** [SplitButton] implement SplitButton ([8db5def](https://github.com/ringcentral/juno/commit/8db5deff9836e7fb28bbc36dbf03acad5990741c))
+- **RCUI-241:** [withTooltip] implement with Tooltip hoc ([31a5259](https://github.com/ringcentral/juno/commit/31a5259f5337b3efc62bfdfb09ac32865478a833))
+- **RCUI-242:** [[Component update] Icon button/plain- add offset for focus indicator] add offset to keyboard focus ([e91a733](https://github.com/ringcentral/juno/commit/e91a7330cbcb1a47c3cf53a554dcf5608954a581))
+- **RCUI-249:** [[RcVirtualizedList] add scrollContainer props] add scrollContainerProps props ([72c2271](https://github.com/ringcentral/juno/commit/72c2271b98df36662e5e6e21bd5d825010f8f839))
+- **RCUI-249:** [[RcVirtualizedList] add scrollContainer props] update snapshot ([476c1d9](https://github.com/ringcentral/juno/commit/476c1d904b82b301336597e6b9909c2140f992e7))
+- **RCUI-261:** [DatePicker] add automation id for month year day ([1259115](https://github.com/ringcentral/juno/commit/12591159d51978d1edf3fc3205178982b4019650))
+- **RCUI-264:** [[Downshift] add unSelectable to replace the isMember] add unSelectable ([8603078](https://github.com/ringcentral/juno/commit/8603078a52e437a5f2e9499c823baf7aae8c7f95))
+- **RCUI-265:** [Add auto hide feature to scrollbar in virtualized list] add auto hide. ([16bec33](https://github.com/ringcentral/juno/commit/16bec33467c384aecb3336e3fedcbcda1f4580bc))
+- **RCUI-272:** [Deprecate check] add production check with warning only show in dev mode ([38b43de](https://github.com/ringcentral/juno/commit/38b43de45a9dfca7223a4c05d5219f32819c2a54))
+- **RCUI-272:** [Deprecate check] add tooltip depecrate warning ([7e8c6aa](https://github.com/ringcentral/juno/commit/7e8c6aa2507995ad4b1516c89fec145065498d41))
+- **RCUI-272:** [Deprecate check] implement deprecate check method ([8e015d7](https://github.com/ringcentral/juno/commit/8e015d771f7701b928210cf9cf802347bfbf2f32))
+- **RCUI-273:** [[AutoCollapseAction][iconbutton][InlineEditable] deprecated tooltipForceHide] remove tooltipForceHide ([4140f29](https://github.com/ringcentral/juno/commit/4140f29a88418497467da48d1f28bdaaedf15608))
+- **RCUI-281:** [[MenuItem] add props deprecate warning] add deprecated prop waring ([5f1b5e8](https://github.com/ringcentral/juno/commit/5f1b5e83d29cb0e290f58b4a3105501f77bf84d3))
 
 ### Bug Fixes
 
-- **RCUI-205:** [IconButton] forwardRef ([11ed19b](https://git.ringcentral.com/RCUI/rcui/commit/11ed19bc62ccfa5fe3b0056e8f21db5c94d20421))
-- **RCUI-222:** [[Switch] error style in dark theme] fix switch token ([c54b696](https://git.ringcentral.com/RCUI/rcui/commit/c54b69612cbf0ede808b5740fcfb927ea79abb31))
-- **RCUI-233:** [Alert] full alert component with RcAlert ([b259d6b](https://git.ringcentral.com/RCUI/rcui/commit/b259d6b213aeb296a2eb35cd840de7dca0aaed67))
-- **RCUI-233:** [Alert] only need align ([a133d2e](https://git.ringcentral.com/RCUI/rcui/commit/a133d2e1c7f11644e78e3d41738f83f961840784))
-- **RCUI-233:** [Banner] mark deprecated and remove storybook ([862c4a6](https://git.ringcentral.com/RCUI/rcui/commit/862c4a6d09c15950ff65fa7435693bb09728cb6f))
-- **RCUI-241:** [Button] forwardRef ([5b3240b](https://git.ringcentral.com/RCUI/rcui/commit/5b3240bee73b980ab01fb2bd9528f535f1a9ac04))
-- **RCUI-241:** [ListItem] forwardRef ListItem ([ceee3fa](https://git.ringcentral.com/RCUI/rcui/commit/ceee3fa7daa35d6ef1f946f17812a4fc128e2b17))
-- **RCUI-241:** [MenuItem] forwardRef ([3a28015](https://git.ringcentral.com/RCUI/rcui/commit/3a28015d071b06af16b22d3a73ba40dd7616a556))
-- **RCUI-241:** [palette] fix setOpacity props not pass full issue ([b627d25](https://git.ringcentral.com/RCUI/rcui/commit/b627d25b3486bad0253dd0cdee2864323b3bb332))
-- **RCUI-241:** [SplitButton] add TooltipProps enterNextDelay for first menuItem ([c743e3a](https://git.ringcentral.com/RCUI/rcui/commit/c743e3acde5023c855fa9abb21ce0842e19e66ae))
-- **RCUI-241:** [Tooltip] forwardRef tooltip ([db4fb23](https://git.ringcentral.com/RCUI/rcui/commit/db4fb23b5fc7d3d5eb97f7afe0abc05509d212bb))
-- **RCUI-254:** [[Checkbox] should fix style utils import path] fix path ([d530e0f](https://git.ringcentral.com/RCUI/rcui/commit/d530e0fcef7f73bbad990e577af22571356ce8f0))
-- **RCUI-254:** [[Checkbox] should fix style utils import path] update snapshot ([15b77fb](https://git.ringcentral.com/RCUI/rcui/commit/15b77fb7165c1a1fce23c1280eb7f2b9d250cefa))
-- **RCUI-256:** [VirtualizedMenuList] should keep focus on the top/bottom item when \`loop\` is false and keep pressing up/down ([d7faf05](https://git.ringcentral.com/RCUI/rcui/commit/d7faf05d8f8ed1d3df2e7fb1711f69d81de29f22))
-- **RCUI-257:** [[Downshift][windows]Focus not on the chip when hit Del to delete chip.] handle Delete key ([181ccb0](https://git.ringcentral.com/RCUI/rcui/commit/181ccb02867c5660fd698a801eb6f29c84cbfa2e))
-- **RCUI-260:** [fix `do not disturb` color of presence] fix color token ([6023e59](https://git.ringcentral.com/RCUI/rcui/commit/6023e593be974437bb74d3cc72fe977e55c2ccf3))
-- **RCUI-262:** [[Downshift] It did't scroll to top when input changed] let suggestion list scroll to top when input changed ([1d15b25](https://git.ringcentral.com/RCUI/rcui/commit/1d15b2521f88e84438fe445a587d01dae9cf9a9b))
-- **RCUI-266:** [Select] truncated when text too long ([98cc6fe](https://git.ringcentral.com/RCUI/rcui/commit/98cc6fea9f95d6a59420964157eb5e4193295198))
-- **RCUI-268:** [Expose autoHideScrollbar prop for RcInfiniteList] forward prop. ([99dafdd](https://git.ringcentral.com/RCUI/rcui/commit/99dafdd4b8f4cffbf7e24bfa6bc1c9ef69dfe283))
-- **RCUI-268:** [Expose autoHideScrollbar prop for RcInfiniteList] normalize props. ([f10fb4e](https://git.ringcentral.com/RCUI/rcui/commit/f10fb4ec0d845b1b94e9eb95b0747731820fba9d))
-- **RCUI-270:** [[Downshift] onKeydown was override] avoid override onKeyDown ([8674d8a](https://git.ringcentral.com/RCUI/rcui/commit/8674d8a74d7e2c8e3c305001011967543f0b0a70))
-- **RCUI-272:** [Icon] apply withDeprecatedCheck with props ([83be6e8](https://git.ringcentral.com/RCUI/rcui/commit/83be6e8a3d102c54d8df480b75a9b0caa536fe6f))
+- **RCUI-205:** [IconButton] forwardRef ([11ed19b](https://github.com/ringcentral/juno/commit/11ed19bc62ccfa5fe3b0056e8f21db5c94d20421))
+- **RCUI-222:** [[Switch] error style in dark theme] fix switch token ([c54b696](https://github.com/ringcentral/juno/commit/c54b69612cbf0ede808b5740fcfb927ea79abb31))
+- **RCUI-233:** [Alert] full alert component with RcAlert ([b259d6b](https://github.com/ringcentral/juno/commit/b259d6b213aeb296a2eb35cd840de7dca0aaed67))
+- **RCUI-233:** [Alert] only need align ([a133d2e](https://github.com/ringcentral/juno/commit/a133d2e1c7f11644e78e3d41738f83f961840784))
+- **RCUI-233:** [Banner] mark deprecated and remove storybook ([862c4a6](https://github.com/ringcentral/juno/commit/862c4a6d09c15950ff65fa7435693bb09728cb6f))
+- **RCUI-241:** [Button] forwardRef ([5b3240b](https://github.com/ringcentral/juno/commit/5b3240bee73b980ab01fb2bd9528f535f1a9ac04))
+- **RCUI-241:** [ListItem] forwardRef ListItem ([ceee3fa](https://github.com/ringcentral/juno/commit/ceee3fa7daa35d6ef1f946f17812a4fc128e2b17))
+- **RCUI-241:** [MenuItem] forwardRef ([3a28015](https://github.com/ringcentral/juno/commit/3a28015d071b06af16b22d3a73ba40dd7616a556))
+- **RCUI-241:** [palette] fix setOpacity props not pass full issue ([b627d25](https://github.com/ringcentral/juno/commit/b627d25b3486bad0253dd0cdee2864323b3bb332))
+- **RCUI-241:** [SplitButton] add TooltipProps enterNextDelay for first menuItem ([c743e3a](https://github.com/ringcentral/juno/commit/c743e3acde5023c855fa9abb21ce0842e19e66ae))
+- **RCUI-241:** [Tooltip] forwardRef tooltip ([db4fb23](https://github.com/ringcentral/juno/commit/db4fb23b5fc7d3d5eb97f7afe0abc05509d212bb))
+- **RCUI-254:** [[Checkbox] should fix style utils import path] fix path ([d530e0f](https://github.com/ringcentral/juno/commit/d530e0fcef7f73bbad990e577af22571356ce8f0))
+- **RCUI-254:** [[Checkbox] should fix style utils import path] update snapshot ([15b77fb](https://github.com/ringcentral/juno/commit/15b77fb7165c1a1fce23c1280eb7f2b9d250cefa))
+- **RCUI-256:** [VirtualizedMenuList] should keep focus on the top/bottom item when \`loop\` is false and keep pressing up/down ([d7faf05](https://github.com/ringcentral/juno/commit/d7faf05d8f8ed1d3df2e7fb1711f69d81de29f22))
+- **RCUI-257:** [[Downshift][windows]Focus not on the chip when hit Del to delete chip.] handle Delete key ([181ccb0](https://github.com/ringcentral/juno/commit/181ccb02867c5660fd698a801eb6f29c84cbfa2e))
+- **RCUI-260:** [fix `do not disturb` color of presence] fix color token ([6023e59](https://github.com/ringcentral/juno/commit/6023e593be974437bb74d3cc72fe977e55c2ccf3))
+- **RCUI-262:** [[Downshift] It did't scroll to top when input changed] let suggestion list scroll to top when input changed ([1d15b25](https://github.com/ringcentral/juno/commit/1d15b2521f88e84438fe445a587d01dae9cf9a9b))
+- **RCUI-266:** [Select] truncated when text too long ([98cc6fe](https://github.com/ringcentral/juno/commit/98cc6fea9f95d6a59420964157eb5e4193295198))
+- **RCUI-268:** [Expose autoHideScrollbar prop for RcInfiniteList] forward prop. ([99dafdd](https://github.com/ringcentral/juno/commit/99dafdd4b8f4cffbf7e24bfa6bc1c9ef69dfe283))
+- **RCUI-268:** [Expose autoHideScrollbar prop for RcInfiniteList] normalize props. ([f10fb4e](https://github.com/ringcentral/juno/commit/f10fb4ec0d845b1b94e9eb95b0747731820fba9d))
+- **RCUI-270:** [[Downshift] onKeydown was override] avoid override onKeyDown ([8674d8a](https://github.com/ringcentral/juno/commit/8674d8a74d7e2c8e3c305001011967543f0b0a70))
+- **RCUI-272:** [Icon] apply withDeprecatedCheck with props ([83be6e8](https://github.com/ringcentral/juno/commit/83be6e8a3d102c54d8df480b75a9b0caa536fe6f))
 
-### [1.1.3](https://git.ringcentral.com/RCUI/rcui/compare/1.1.2...1.1.3) (2020-11-18)
+### [1.1.3](https://github.com/ringcentral/juno/compare/1.1.2...1.1.3) (2020-11-18)
 
 ### ⚠ BREAKING CHANGES
 
@@ -2835,42 +2835,42 @@ more detail, please view changelog below.
 
 ### Features
 
-- **RCUI-74:** [ToggleButton] remove ToggleButton ([5bc5a73](https://git.ringcentral.com/RCUI/rcui/commit/5bc5a734a6781784dc3d3dfcaf73b44277d73251))
-- **RCUI-213:** [[Form] remove FormItem FormItemGroup FormSection FormSectionTitle] update snapshot ([c4f19f6](https://git.ringcentral.com/RCUI/rcui/commit/c4f19f6e9d0b44dbfbf7f4bdc45ab4e4df093236))
-- **RCUI-213:** [[Form] remove FormItem FormItemGroup FormSection FormSectionTitle] update snapshot ([46cd42f](https://git.ringcentral.com/RCUI/rcui/commit/46cd42fd21c1de9afe6b787455fbfc9555e4a028))
-- **RCUI-221:** [[DatePicker] upgrade @material-ui/pickers to 3.2.10] upgrade mui picker version ([cbbcac5](https://git.ringcentral.com/RCUI/rcui/commit/cbbcac599c9e8d6e810845c3406e613a91335f35))
-- **RCUI-224:** [AutoCollapseActions] change to RcMenu ([40f6764](https://git.ringcentral.com/RCUI/rcui/commit/40f6764b73415fd1d7f22bffff61d70bc4a4049e))
-- **RCUI-224:** [AutoCollapseActions] change to RcMenu ([3083792](https://git.ringcentral.com/RCUI/rcui/commit/3083792be3228f05e96a34d7a8f0ff5da2c4de2c))
-- **RCUI-224:** [AutoCollapseActions] fix key issue and example ([7686ea6](https://git.ringcentral.com/RCUI/rcui/commit/7686ea65f2cf9c2487ab9ec02b44a80566bdd02b))
-- **RCUI-224:** [AutoCollapseActions] fix lint ([6bfc560](https://git.ringcentral.com/RCUI/rcui/commit/6bfc5602452a8d863570a0d82a742c954bdea9ac))
-- **RCUI-224:** [AutoCollapseActions] remove anchorOrigin ([222a47a](https://git.ringcentral.com/RCUI/rcui/commit/222a47a89f80017da2cfa5fb25cfbf516ac04183))
-- **RCUI-224:** [AutoCollapseActions] remove RcMenuItem ([c168d3a](https://git.ringcentral.com/RCUI/rcui/commit/c168d3a23b3be04791b4a5999e7af289b1ddd098))
-- **RCUI-225:** [[Rating] New component] show tooltip when tab on a star & fix error margin when enable readonly prop ([ecfe6e3](https://git.ringcentral.com/RCUI/rcui/commit/ecfe6e35cd7ce95058b698ba44ef7861da7bef0b))
-- **RCUI-230:** [mention] focus style. ([24551a2](https://git.ringcentral.com/RCUI/rcui/commit/24551a20db3ff3be8719e0703a220028486c45dd))
-- **RCUI-235:** [Checkbox - should have 4 px padding between the label and the button] fix padding with label ([ba3f20a](https://git.ringcentral.com/RCUI/rcui/commit/ba3f20aa0099b5a1f6a719bd3951535cdb250e86))
-- **RCUI-240:** [Link] add a11y suppor ([39c29bd](https://git.ringcentral.com/RCUI/rcui/commit/39c29bd6b98bfda453eeef21869f78da14b637a6))
+- **RCUI-74:** [ToggleButton] remove ToggleButton ([5bc5a73](https://github.com/ringcentral/juno/commit/5bc5a734a6781784dc3d3dfcaf73b44277d73251))
+- **RCUI-213:** [[Form] remove FormItem FormItemGroup FormSection FormSectionTitle] update snapshot ([c4f19f6](https://github.com/ringcentral/juno/commit/c4f19f6e9d0b44dbfbf7f4bdc45ab4e4df093236))
+- **RCUI-213:** [[Form] remove FormItem FormItemGroup FormSection FormSectionTitle] update snapshot ([46cd42f](https://github.com/ringcentral/juno/commit/46cd42fd21c1de9afe6b787455fbfc9555e4a028))
+- **RCUI-221:** [[DatePicker] upgrade @material-ui/pickers to 3.2.10] upgrade mui picker version ([cbbcac5](https://github.com/ringcentral/juno/commit/cbbcac599c9e8d6e810845c3406e613a91335f35))
+- **RCUI-224:** [AutoCollapseActions] change to RcMenu ([40f6764](https://github.com/ringcentral/juno/commit/40f6764b73415fd1d7f22bffff61d70bc4a4049e))
+- **RCUI-224:** [AutoCollapseActions] change to RcMenu ([3083792](https://github.com/ringcentral/juno/commit/3083792be3228f05e96a34d7a8f0ff5da2c4de2c))
+- **RCUI-224:** [AutoCollapseActions] fix key issue and example ([7686ea6](https://github.com/ringcentral/juno/commit/7686ea65f2cf9c2487ab9ec02b44a80566bdd02b))
+- **RCUI-224:** [AutoCollapseActions] fix lint ([6bfc560](https://github.com/ringcentral/juno/commit/6bfc5602452a8d863570a0d82a742c954bdea9ac))
+- **RCUI-224:** [AutoCollapseActions] remove anchorOrigin ([222a47a](https://github.com/ringcentral/juno/commit/222a47a89f80017da2cfa5fb25cfbf516ac04183))
+- **RCUI-224:** [AutoCollapseActions] remove RcMenuItem ([c168d3a](https://github.com/ringcentral/juno/commit/c168d3a23b3be04791b4a5999e7af289b1ddd098))
+- **RCUI-225:** [[Rating] New component] show tooltip when tab on a star & fix error margin when enable readonly prop ([ecfe6e3](https://github.com/ringcentral/juno/commit/ecfe6e35cd7ce95058b698ba44ef7861da7bef0b))
+- **RCUI-230:** [mention] focus style. ([24551a2](https://github.com/ringcentral/juno/commit/24551a20db3ff3be8719e0703a220028486c45dd))
+- **RCUI-235:** [Checkbox - should have 4 px padding between the label and the button] fix padding with label ([ba3f20a](https://github.com/ringcentral/juno/commit/ba3f20aa0099b5a1f6a719bd3951535cdb250e86))
+- **RCUI-240:** [Link] add a11y suppor ([39c29bd](https://github.com/ringcentral/juno/commit/39c29bd6b98bfda453eeef21869f78da14b637a6))
 
 ### Bug Fixes
 
-- **RCUI-216:** [[AutoSizer] Should call setSize when element was hide or size not changed] avoid re-render when element hide/show ([4a570ba](https://git.ringcentral.com/RCUI/rcui/commit/4a570ba496086b341ccfb8f2f8246a403773e053))
-- **RCUI-224:** [AutoCollapseActions] fix props type ([76f0cde](https://git.ringcentral.com/RCUI/rcui/commit/76f0cdee41aff2012f715b054b8e81db9e615e6e))
-- **RCUI-227:** [[Dark Theme] fix wrong color usage in components] ExpansionPanelDetails, Tabs, Thumbnail ([c44acf2](https://git.ringcentral.com/RCUI/rcui/commit/c44acf2858f02f216cec0a987d9c5fae33d95e47))
-- **RCUI-228:** [[VirtualizedScrollContainer] fix tabIndex] fix ([0d0461b](https://git.ringcentral.com/RCUI/rcui/commit/0d0461bda94c9d0108c3254f0955e64d13d9f3bb))
-- **RCUI-232:** [AtMention] should not show outline when focused ([44da67b](https://git.ringcentral.com/RCUI/rcui/commit/44da67b612c4128bc464ed814a3b286009a2dad4))
-- **RCUI-74:** [Icon] mark iconColor and iconSize deprecated, replace with color and size ([9532322](https://git.ringcentral.com/RCUI/rcui/commit/9532322b1b2d226ef3f4efd47751f289f79d5eb3))
-- **RCUI-74:** [Presence] fix issue - pass color object into div ([3f79fdc](https://git.ringcentral.com/RCUI/rcui/commit/3f79fdcbab10cea5da70ebc1e7eb526642e2ca9d))
+- **RCUI-216:** [[AutoSizer] Should call setSize when element was hide or size not changed] avoid re-render when element hide/show ([4a570ba](https://github.com/ringcentral/juno/commit/4a570ba496086b341ccfb8f2f8246a403773e053))
+- **RCUI-224:** [AutoCollapseActions] fix props type ([76f0cde](https://github.com/ringcentral/juno/commit/76f0cdee41aff2012f715b054b8e81db9e615e6e))
+- **RCUI-227:** [[Dark Theme] fix wrong color usage in components] ExpansionPanelDetails, Tabs, Thumbnail ([c44acf2](https://github.com/ringcentral/juno/commit/c44acf2858f02f216cec0a987d9c5fae33d95e47))
+- **RCUI-228:** [[VirtualizedScrollContainer] fix tabIndex] fix ([0d0461b](https://github.com/ringcentral/juno/commit/0d0461bda94c9d0108c3254f0955e64d13d9f3bb))
+- **RCUI-232:** [AtMention] should not show outline when focused ([44da67b](https://github.com/ringcentral/juno/commit/44da67b612c4128bc464ed814a3b286009a2dad4))
+- **RCUI-74:** [Icon] mark iconColor and iconSize deprecated, replace with color and size ([9532322](https://github.com/ringcentral/juno/commit/9532322b1b2d226ef3f4efd47751f289f79d5eb3))
+- **RCUI-74:** [Presence] fix issue - pass color object into div ([3f79fdc](https://github.com/ringcentral/juno/commit/3f79fdcbab10cea5da70ebc1e7eb526642e2ca9d))
 
-### [1.1.2](https://git.ringcentral.com/RCUI/rcui/compare/1.1.1...1.1.2) (2020-11-03)
+### [1.1.2](https://github.com/ringcentral/juno/compare/1.1.1...1.1.2) (2020-11-03)
 
 ### Features
 
-- **RCUI-207:** [Release] add release note with standard-version ([546063f](https://git.ringcentral.com/RCUI/rcui/commit/546063f6d9b7115edcd8ba0e3879210bb3b82031))
-- **RCUI-90:** [Alert] init Alert component with desing spec ([44979b8](https://git.ringcentral.com/RCUI/rcui/commit/44979b814507d3f36f0d31752320b168483d927a))
-- **RCUI-90:** [Storybook] change alert and confirm dialog name ([2c2726c](https://git.ringcentral.com/RCUI/rcui/commit/2c2726c1619247ee9a3fded218e6bc74e8e52868))
+- **RCUI-207:** [Release] add release note with standard-version ([546063f](https://github.com/ringcentral/juno/commit/546063f6d9b7115edcd8ba0e3879210bb3b82031))
+- **RCUI-90:** [Alert] init Alert component with desing spec ([44979b8](https://github.com/ringcentral/juno/commit/44979b814507d3f36f0d31752320b168483d927a))
+- **RCUI-90:** [Storybook] change alert and confirm dialog name ([2c2726c](https://github.com/ringcentral/juno/commit/2c2726c1619247ee9a3fded218e6bc74e8e52868))
 
 ### Bug Fixes
 
-- **RCUI-90:** [Alert] remove not need comment and fix comment ([f1f49df](https://git.ringcentral.com/RCUI/rcui/commit/f1f49dfa184081bfaca210695705ad2f1b7e8c23))
-- **RCUI-90:** [Alert] support size switch ([d6da159](https://git.ringcentral.com/RCUI/rcui/commit/d6da1590f5240bf3ed35f62bd3001dedd8a69aad))
-- **RCUI-90:** [Snapshot] update-snapshot ([36bd04c](https://git.ringcentral.com/RCUI/rcui/commit/36bd04ca367cd212046019d8c183f793a74ca70d))
-- **RCUI-90:** [Snapshot] update-snapshot ([3f55342](https://git.ringcentral.com/RCUI/rcui/commit/3f5534287086ec9d175fc85b455a7c9e7b28baf9))
+- **RCUI-90:** [Alert] remove not need comment and fix comment ([f1f49df](https://github.com/ringcentral/juno/commit/f1f49dfa184081bfaca210695705ad2f1b7e8c23))
+- **RCUI-90:** [Alert] support size switch ([d6da159](https://github.com/ringcentral/juno/commit/d6da1590f5240bf3ed35f62bd3001dedd8a69aad))
+- **RCUI-90:** [Snapshot] update-snapshot ([36bd04c](https://github.com/ringcentral/juno/commit/36bd04ca367cd212046019d8c183f793a74ca70d))
+- **RCUI-90:** [Snapshot] update-snapshot ([3f55342](https://github.com/ringcentral/juno/commit/3f5534287086ec9d175fc85b455a7c9e7b28baf9))

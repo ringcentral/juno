@@ -61,8 +61,8 @@ describe('InlineEditable', () => {
       fireEvent.mouseDown(container.firstChild!);
       fireEvent.keyDown(container.firstChild!, { key: 'Enter' });
 
-      expect(handleKeyDown).toBeCalled();
-      expect(handleChange).not.toBeCalled();
+      expect(handleKeyDown).toHaveBeenCalled();
+      expect(handleChange).not.toHaveBeenCalled();
     });
 
     it('should call onChange when "TAB" is pressed and value has changed', () => {
@@ -77,7 +77,7 @@ describe('InlineEditable', () => {
       fireEvent.keyDown(input!, { key: 'Tab' });
       fireEvent.blur(input!);
 
-      expect(handleKeyDown).toBeCalled();
+      expect(handleKeyDown).toHaveBeenCalled();
       expect(handleChange).toHaveBeenCalledTimes(1);
       expect(handleChange).toHaveBeenCalledWith('abc', 'leave');
     });
@@ -91,7 +91,7 @@ describe('InlineEditable', () => {
 
       fireEvent.keyDown(container.firstChild!, { key: 'Escape' });
 
-      expect(handleChange).not.toBeCalled();
+      expect(handleChange).not.toHaveBeenCalled();
     });
     it('should trim both the start and the end of the value when being saved with multiline being false [JPT-924]', async () => {
       const { container } = renderResult;

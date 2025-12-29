@@ -1,6 +1,6 @@
 {
   "name": "@ringcentral/juno",
-  "version": "3.0.0-alpha.0",
+  "version": "3.0.0-alpha.1",
   "license": "MIT",
   "author": "RingCentral",
   "bugs": {
@@ -31,7 +31,6 @@
     "@material-ui/styles": "^4.11.4",
     "@types/lodash": "^4.14.169",
     "@types/react-beautiful-dnd": "^13.0.0",
-    "@types/styled-components": "5.1.36",
     "clsx": "^1.0.4",
     "focus-visible": "^5.1.0",
     "lodash": "^4.17.21",

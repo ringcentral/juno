@@ -49,7 +49,10 @@ const RcZoomInFadeOut = forwardRef<any, RcZoomInFadeOutProps>(
       style,
       onExit,
       onEnter,
-      timeout,
+      timeout = {
+        enter: duration.enteringScreen,
+        exit: duration.enteringScreen,
+      },
       ...other
     } = props;
     const theme = useTheme();
@@ -123,13 +126,6 @@ const RcZoomInFadeOut = forwardRef<any, RcZoomInFadeOutProps>(
     );
   },
 );
-
-RcZoomInFadeOut.defaultProps = {
-  timeout: {
-    enter: duration.enteringScreen,
-    exit: duration.enteringScreen,
-  },
-};
 
 RcZoomInFadeOut.displayName = 'ZoomInFadeOut';
 

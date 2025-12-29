@@ -141,8 +141,8 @@ describe('combineProps work correctly', () => {
 
     onCombineClick();
 
-    expect(onClick).toBeCalled();
-    expect(onClick2).toBeCalled();
+    expect(onClick).toHaveBeenCalled();
+    expect(onClick2).toHaveBeenCalled();
   });
 
   it('trigger order of function is `intoFunction(e) => defaultFunction(e)`', () => {
