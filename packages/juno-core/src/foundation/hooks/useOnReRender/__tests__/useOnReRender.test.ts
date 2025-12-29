@@ -22,27 +22,27 @@ const setup = <T>(initialValue: T) => {
 describe('useOnReRender()', () => {
   it('should not be call when rendered first time', () => {
     const { result: hookRef } = setup(0);
-    expect(hookRef.current.method).not.toBeCalled();
-    expect(hookRef.current.destroyMethod).not.toBeCalled();
+    expect(hookRef.current.method).not.toHaveBeenCalled();
+    expect(hookRef.current.destroyMethod).not.toHaveBeenCalled();
   });
 
   it('should be call when render twice', () => {
     const { result: hookRef } = setup(0);
     act(() => hookRef.current.setValue(1));
 
-    expect(hookRef.current.method).toBeCalled();
+    expect(hookRef.current.method).toHaveBeenCalled();
   });
 
   it('should be call when destroy', () => {
     const { result: hookRef } = setup(0);
     act(() => hookRef.current.setValue(1));
 
-    expect(hookRef.current.method).toBeCalledTimes(1);
+    expect(hookRef.current.method).toHaveBeenCalledTimes(1);
 
     act(() => hookRef.current.setValue(2));
     setTimeout(() => {
-      expect(hookRef.current.method).toBeCalledTimes(2);
-      expect(hookRef.current.destroyMethod).toBeCalled();
+      expect(hookRef.current.method).toHaveBeenCalledTimes(2);
+      expect(hookRef.current.destroyMethod).toHaveBeenCalled();
     }, 0);
   });
 });

@@ -69,4 +69,3 @@ export type {
   Theme as MuiTheme,
   ThemeOptions as MuiThemeOptions,
 } from '@material-ui/core/styles';
-

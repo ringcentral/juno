@@ -12,8 +12,12 @@ module.exports = {
       path.join(__dirname, './tests/__mocks__/fileMock.js'),
     '\\.(css|less)$': path.join(__dirname, './tests/__mocks__/cssMock.js'),
     '@ringcentral/juno$': '<rootDir>/packages/juno-core/index.ts',
+    '@ringcentral/juno/(.*)$': '<rootDir>/packages/juno-core/$1',
     '@ringcentral/juno-foundation$':
       '<rootDir>/packages/juno-core/src/foundation/index.ts',
+    // Map juno-icon to local source to avoid ES6 module resolution issues
+    '@ringcentral/juno-icon$': '<rootDir>/packages/juno-icon/index.ts',
+    '@ringcentral/juno-icon/(.*)$': '<rootDir>/packages/juno-icon/$1',
   },
   transform: {
     '^.+\\.story\\.tsx$': '@storybook/addon-storyshots/injectFileName',
