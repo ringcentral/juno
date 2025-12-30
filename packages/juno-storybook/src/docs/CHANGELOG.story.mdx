@@ -7,67 +7,74 @@ import { Canvas, Meta, Story } from '@storybook/addon-docs';
 <br />
 
 
+## [3.0.0-alpha.2](https://github.com/ringcentral/juno/compare/juno-core-v3.0.0-alpha.1...juno-core-v3.0.0-alpha.2) (2025-12-30)
+
+
+### Bug Fixes
+
+* resolve build issues for TypeScript 5.x and React 18 compatibility ([11ace02](https://github.com/ringcentral/juno/commit/11ace023ca1a40a598118ccfd8bc3829c9eb761f))
+
 ## [2.46.0](https://github.com/ringcentral/juno/compare/juno-core-v2.45.1...juno-core-v2.46.0) (2025-10-31)
 
 
 ### Bug Fixes
 
-* **juno-core:** add onSinkError for Safari 18.4+ ([2c0d8cb](https://github.com/ringcentral/juno/commit/2c0d8cb838ae214a78e026158679e2c1228f57ed))
-* **juno-core:** revert version ([4f2dfa4](https://github.com/ringcentral/juno/commit/4f2dfa48a72e3ef216b8bbff0c0731f1667edb54))
-* **juno-core:** tsc ([88932bd](https://github.com/ringcentral/juno/commit/88932bd9f02a6a6a7c90f8cff490eb1ccbd76ae7))
+* **FIJI-97521:** [juno-core] add onSinkError for Safari 18.4+ ([d3b17d9](https://github.com/ringcentral/juno/commit/d3b17d91334264fbfee82be8ef89bf5364025fba))
+* **FIJI-97521:** [juno-core] revert version ([bae3cca](https://github.com/ringcentral/juno/commit/bae3cca4d1cf2266081e60df22e5098bf36bda75))
+* **FIJI-97521:** [juno-core] tsc ([e1eb787](https://github.com/ringcentral/juno/commit/e1eb787d8051fa9a25c48cb6960ea5651bc6595f))
 
 ### [2.45.1](https://github.com/ringcentral/juno/compare/juno-core-v2.45.0...juno-core-v2.45.1) (2025-03-26)
 
 
 ### Bug Fixes
 
-* **NumberPicker:** shall add aria-valuenow for current value when role is spinbutton, or it will read 0 ([2e47998](https://github.com/ringcentral/juno/commit/2e4799896ba6e6094588ac9e76aed83406ca6e9d))
+* **FIJI-91093:** [NumberPicker] shall add aria-valuenow for current value when role is spinbutton, or it will read 0 ([ddf7e99](https://github.com/ringcentral/juno/commit/ddf7e999046e3a7ba85abdf1501bd50e572a7df8))
 
 ## [2.45.0](https://github.com/ringcentral/juno/compare/juno-core-v2.44.0...juno-core-v2.45.0) (2025-03-17)
 
 
 ### Features
 
-* **PickerTextField:** add aria-hidden="true" on picker icon in endAdornment since this icon is purely decorative ([e00ca33](https://github.com/ringcentral/juno/commit/e00ca33804df4db50950c2d925fe8a15d64785c8))
+* **FIJI-89103:** [PickerTextField] add aria-hidden="true" on picker icon in endAdornment since this icon is purely decorative ([8ae1fc1](https://github.com/ringcentral/juno/commit/8ae1fc1d1fa556441fed1efae9084c2ab4325e12))
 
 ## [2.44.0](https://github.com/ringcentral/juno/compare/juno-core-v2.43.1...juno-core-v2.44.0) (2025-03-13)
 
 
 ### Features
 
-* **NumberPicker:** Add role=spinbutton to achieve A11y requirement ([d6ec8ee](https://github.com/ringcentral/juno/commit/d6ec8ee0b4d4e6a08bec641a97526050b9dad919))
+* **FIJI-87840:** [NumberPicker] Add role=spinbutton to achieve A11y requirement ([b902d22](https://github.com/ringcentral/juno/commit/b902d2225a72447f071e2d74b48ad14c479dc8fa))
 
 ### [2.43.1](https://github.com/ringcentral/juno/compare/juno-core-v2.43.0...juno-core-v2.43.1) (2024-12-05)
 
 
 ### Features
 
-* **TabList:** fix tabList child memo not working ([e0e5bb9](https://github.com/ringcentral/juno/commit/e0e5bb953abfa869b2dd280183e1a4833c553d9c))
-* **TabList:** optimize TabList component with useMemo ([7d5c4cf](https://github.com/ringcentral/juno/commit/7d5c4cf96e982745dbc69a9de30bd5ceb15970b6))
-* **TabList:** throw error if idPrefix is missing in TabList ([aa69996](https://github.com/ringcentral/juno/commit/aa6999647635c38876611f5c1ff6b78a879ba6d2))
+* **FIJI-87675:** [TabList] fix tabList child memo not working ([539032c](https://github.com/ringcentral/juno/commit/539032cb297afce8fffe74eec164c4ebc75350eb))
+* **FIJI-87675:** [TabList] optimize TabList component with useMemo ([3180c88](https://github.com/ringcentral/juno/commit/3180c8887b47d3a6cf59ddd19f19bdcaa5bf35d2))
+* **FIJI-87675:** [TabList] throw error if idPrefix is missing in TabList ([c99d61f](https://github.com/ringcentral/juno/commit/c99d61f485a31aa4ebcdd03abe56e3e9617039de))
 
 ## [2.43.0](https://github.com/ringcentral/juno/compare/juno-core-v2.42.3...juno-core-v2.43.0) (2024-12-04)
 
 
 ### Features
 
-* **TabList:** separate the binding relationship between TabContext and RcTabList ([ee40215](https://github.com/ringcentral/juno/commit/ee4021581ee8bcf2ec75365b452fa414c00a4362))
+* **FIJI-87675:** [TabList] separate the binding relationship between TabContext and RcTabList ([acd0595](https://github.com/ringcentral/juno/commit/acd05954c6ebe53a00888d50324f5f0d94a5c44d))
 
 ### [2.42.3](https://github.com/ringcentral/juno/compare/juno-core-v2.42.2...juno-core-v2.42.3) (2024-09-12)
 
 
 ### Bug Fixes
 
-* **List, Menu:** [juno-core] fix list item focus inside issue with mui focus-visible issue ([985231b](https://github.com/ringcentral/juno/commit/985231bce9fc05873f0bb6554babcbc9e1c1826a))
-* **List, Menu:** [juno-core] remove not need class ([4b4a8b9](https://github.com/ringcentral/juno/commit/4b4a8b9fb7392e1f8bfa995c1223a572284d2d2c))
+* **List, Menu:** [juno-core] fix list item focus inside issue with mui focus-visible issue ([c3dd213](https://github.com/ringcentral/juno/commit/c3dd213f2453d6bca230cd0950fb2861ee42037e))
+* **List, Menu:** [juno-core] remove not need class ([b6cce52](https://github.com/ringcentral/juno/commit/b6cce524ea8a73229d46031dea7a404808c5ed57))
 
 ### [2.42.2](https://github.com/ringcentral/juno/compare/juno-core-v2.42.0...juno-core-v2.42.2) (2024-07-11)
 
 
 ### Features
 
-* **Downshift:** [juno-core] fix ut and lint ([6a3fe95](https://github.com/ringcentral/juno/commit/6a3fe95024097535ca959a564043d1f5db8bbebe))
-* **Downshift:** [juno-core] remove downshift lisbox useless aria attr ([57d59c0](https://github.com/ringcentral/juno/commit/57d59c09199dda4a6c9c2d3905c766df7a514643))
+* **Downshift:** [juno-core] fix ut and lint ([308cd6b](https://github.com/ringcentral/juno/commit/308cd6b8f249a66a70b9d57bb9080bb7d97f3352))
+* **Downshift:** [juno-core] remove downshift lisbox useless aria attr ([c6ebab8](https://github.com/ringcentral/juno/commit/c6ebab8863be6398fe710b88a47767253aedf977))
 
 ## [2.42.0](https://github.com/ringcentral/juno/compare/juno-core-v2.41.4...juno-core-v2.42.0) (2024-07-03)
 
@@ -78,14 +85,14 @@ import { Canvas, Meta, Story } from '@storybook/addon-docs';
 
 ### Features
 
-* **DialPad:** [juno-core] support DialPad with `sinkId` ([05622ad](https://github.com/ringcentral/juno/commit/05622adb22965c6661c16fc8ae4fdfcfcfacd2cd))
+* **DialPad:** [juno-core] support DialPad with `sinkId` ([658cc30](https://github.com/ringcentral/juno/commit/658cc30b61fa2d44f90009b2afaa05c7be2e08c1))
 
 ### [2.41.4](https://github.com/ringcentral/juno/compare/juno-core-v2.41.3...juno-core-v2.41.4) (2024-06-19)
 
 
 ### Bug Fixes
 
-* **Select:** [juno-core] fix Select issue with aria-selected same as latest mui for fix a11y issue ([75d95de](https://github.com/ringcentral/juno/commit/75d95de790b5cbdd22eee36819f4f2d85c8e6b40))
+* **Select:** [juno-core] fix Select issue with aria-selected same as latest mui for fix a11y issue ([659fb75](https://github.com/ringcentral/juno/commit/659fb75fc97efd04fa58f5a3457437f47fcc453f))
 
 ### [2.41.3](https://github.com/ringcentral/juno/compare/juno-core-v2.41.2...juno-core-v2.41.3) (2024-06-12)
 
@@ -94,75 +101,75 @@ import { Canvas, Meta, Story } from '@storybook/addon-docs';
 
 ### Features
 
-* **juno-core:** support focus inside with Pickers ([7584a91](https://github.com/ringcentral/juno/commit/7584a91bb268ba7c35af450fb3849d20644063d8))
+* **FIJI-78652:** [juno-core] support focus inside with Pickers ([a8217aa](https://github.com/ringcentral/juno/commit/a8217aab58d89ff9026316b4b551d34f6dcc05cb))
 
 ### [2.41.1](https://github.com/ringcentral/juno/compare/juno-core-v2.41.0...juno-core-v2.41.1) (2024-05-20)
 
 
 ### Bug Fixes
 
-* **Dialer:** support external window ([1159cca](https://github.com/ringcentral/juno/commit/1159cca660ef22ee0079c2fdad40984089d7746e))
+* **FIJI-79898:** [Dialer] support external window ([588e087](https://github.com/ringcentral/juno/commit/588e087b8be8d7b4f7f03a0bcea878604a1cfc1e))
 
 ## [2.41.0](https://github.com/ringcentral/juno/compare/juno-core-v2.40.1...juno-core-v2.41.0) (2023-12-25)
 
 
 ### Features
 
-* **juno-core:** update react-virtuoso version update to v4.6.2 ([feef2bb](https://github.com/ringcentral/juno/commit/feef2bb38a4c680e16e2479cc5cf2ba79dd6af04))
+* **FIJI-73474:** [juno-core] update react-virtuoso version update to v4.6.2 ([4fe6bd5](https://github.com/ringcentral/juno/commit/4fe6bd5955fd5b61f2d8c9b21d5098abb957cdf3))
 
 
 ### Bug Fixes
 
-* **Doc:** [juno-core] fix error doc ([dee6bcd](https://github.com/ringcentral/juno/commit/dee6bcd3babb6bbd55ca8dfcdf7ebbc71fb54d14))
+* **Doc:** [juno-core] fix error doc ([ac007a8](https://github.com/ringcentral/juno/commit/ac007a8752c8f7b97fc329ba400ce26172da070a))
 
 ### [2.40.1](https://github.com/ringcentral/juno/compare/juno-core-v2.40.0...juno-core-v2.40.1) (2023-12-21)
 
 
 ### Features
 
-* **juno-core:** hide tooltip when host element be hidden or disappear ([12ea133](https://github.com/ringcentral/juno/commit/12ea133e952c5698a835562145f121ff09fb8068))
+* **FIJI-74231:** [juno-core] hide tooltip when host element be hidden or disappear ([7b0d031](https://github.com/ringcentral/juno/commit/7b0d03157c212cb43709af8e455cda1850719b15))
 
 
 ### Bug Fixes
 
-* **Doc:** [juno-core] update example to OGG ([0162006](https://github.com/ringcentral/juno/commit/0162006462c645d94ff5c659f9865b702ea768b6))
+* **Doc:** [juno-core] update example to OGG ([8c421c9](https://github.com/ringcentral/juno/commit/8c421c940b938c7ff5bdcb6740920e5583ff7e9c))
 
 ## [2.40.0](https://github.com/ringcentral/juno/compare/juno-core-v2.39.2...juno-core-v2.40.0) (2023-12-19)
 
 
 ### ⚠ BREAKING CHANGES
 
-* **DialerPad:** change default RcDialerPadSounds to MPEG format for better work with most browser, if you need ogg, please import by your self with `import { RcDialerPadSoundsOGG } from @ringcentral/juno;`
+* **DialerPad:** change default RcDialerPadSounds to MPEG format for better work with most browser, if you need ogg, please import by your self with `import { RcDialerPadSoundsOGG } from '@ringcentral/juno';`
 
 ### Bug Fixes
 
-* **DialerPad:** [juno-core] add DialerPad mpeg format sound for work with safari ([c64461a](https://github.com/ringcentral/juno/commit/c64461a0ac9d674a68d97b2f4720d6a575d2085d))
-* **project:** [juno-core] update miss update dark json in example ([ff1fb7e](https://github.com/ringcentral/juno/commit/ff1fb7e396a6d51167ffb7d52ea0868b50d2d1fe))
+* **DialerPad:** [juno-core] add DialerPad mpeg format sound for work with safari ([16d6831](https://github.com/ringcentral/juno/commit/16d68310db208e41c521414c15c9f49ad361673a))
+* **project:** [juno-core] update miss update dark json in example ([af5185a](https://github.com/ringcentral/juno/commit/af5185af4ac60d9af54004fc10b764caf9f3b688))
 
 ### [2.39.2](https://github.com/ringcentral/juno/compare/juno-core-v2.39.1...juno-core-v2.39.2) (2023-12-04)
 
 
 ### Bug Fixes
 
-* **juno-core:** fix datepicker style issue with small size ([fd8b4a0](https://github.com/ringcentral/juno/commit/fd8b4a0102ec2aa04e2441fafac9982667ced97e))
+* **RCUI-717:** [juno-core] fix datepicker style issue with small size ([d94b0ec](https://github.com/ringcentral/juno/commit/d94b0ecdd1956fa510873f24d81f8cae5e1bc961))
 
 ### [2.39.1](https://github.com/ringcentral/juno/compare/juno-core-v2.39.0...juno-core-v2.39.1) (2023-09-26)
 
 
 ### Bug Fixes
 
-* **TimePicker:** fix time picker minute gap ([349323f](https://github.com/ringcentral/juno/commit/349323f8b9573ba8156d9e8b48129fce8b054393))
+* **FIJI-71227:** [TimePicker] fix time picker minute gap ([b15943a](https://github.com/ringcentral/juno/commit/b15943a8ecdf2910c8f635b321806922e5437502))
 
 ## [2.39.0](https://github.com/ringcentral/juno/compare/juno-core-v2.38.0...juno-core-v2.39.0) (2023-09-22)
 
 
 ### ⚠ BREAKING CHANGES
 
-* **TimePicker:** update the minute step from 15 to 5
+* **FIJI-69620:** update the minute step from 15 to 5
 
 ### Features
 
-* **TimePicker:** update the minute step from 15 to 5 ([3d293db](https://github.com/ringcentral/juno/commit/3d293dbd21abad1073a20d2ff533b0f64ac1c2e3))
+* **FIJI-69620:** [TimePicker] update the minute step from 15 to 5 ([5bc41be](https://github.com/ringcentral/juno/commit/5bc41bef9e52ddc4629d2b8234befb1b1a932c85))
 
 ## [2.38.0](https://github.com/ringcentral/juno/compare/juno-core-v2.37.0...juno-core-v2.38.0) (2023-09-08)
 
@@ -173,190 +180,190 @@ import { Canvas, Meta, Story } from '@storybook/addon-docs';
 
 ### Features
 
-* **update-typography:** [Theme] update typography body1 and body2 ([bcd0d64](https://github.com/ringcentral/juno/commit/bcd0d64c507cd5f04dac7f05c4cf8030acd95ad4))
+* **update-typography:** [Theme] update typography body1 and body2 ([cf4e7f0](https://github.com/ringcentral/juno/commit/cf4e7f03592b275257a0669428247de7a02b14fd))
 
 ## [2.37.0](https://github.com/ringcentral/juno/compare/juno-core-v2.36.5...juno-core-v2.37.0) (2023-08-10)
 
 
 ### ⚠ BREAKING CHANGES
 
-* **Browser compatibility:** remove prop fixWebKit154 of ThemeProvider; remove utils about safari 15.4  animation issue
+* **FIJI-69021:** remove prop fixWebKit154 of ThemeProvider; remove utils about safari 15.4  animation issue
 
 ### Features
 
-* **Browser compatibility:** remove hack fixing about safari 15.4  animation issue ([e2818ac](https://github.com/ringcentral/juno/commit/e2818acb8ed9554e39a0ca582da4dd0f1827e434))
+* **FIJI-69021:** [Browser compatibility] remove hack fixing about safari 15.4  animation issue ([27cf9e1](https://github.com/ringcentral/juno/commit/27cf9e1f5b01623ecc6ca2b6cd36ec8ce952a7bf))
 
 
 ### Bug Fixes
 
-* **VirtualizedMenu:** Fix menu position issue ([0dd5121](https://github.com/ringcentral/juno/commit/0dd51212c28480daf012c5bb6c0f4fafb284253e))
+* **FIJI-69021:** [VirtualizedMenu] Fix menu position issue ([661daf9](https://github.com/ringcentral/juno/commit/661daf914bdbced6b64cff16183151d963fdb4ad))
 
-### [2.36.5](https://github.com/ringcentral/juno/compare/juno-core-v2.36.4...juno-core-v2.36.5) (2023-08-10)
+### [2.36.5](https://github.com/ringcentral/juno/compare/juno-core-v2.36.4...juno-core-v2.36.5) (2023-08-09)
 
 
 ### Bug Fixes
 
-* **Tooltip:** Fix tooltip position when it is near the edge of the screen ([62580df](https://github.com/ringcentral/juno/commit/62580dfb9589e7a03926fca5dfcb3cbf7747227b))
+* **FIJI-64725:** [Tooltip] Fix tooltip position when it is near the edge of the screen ([f333fe6](https://github.com/ringcentral/juno/commit/f333fe6b95a91d594bd44f1beb064139f69010ae))
 
 ### [2.36.4](https://github.com/ringcentral/juno/compare/juno-core-v2.36.3...juno-core-v2.36.4) (2023-08-03)
 
 
 ### Bug Fixes
 
-* **Popper:** fix the issue with blurry rendering of popper. ([1d43bfa](https://github.com/ringcentral/juno/commit/1d43bfa114de77b5082d243f95f2cd1e25ee4a54))
+* **FIJI-68633:** [Popper] fix the issue with blurry rendering of popper. ([1b0b094](https://github.com/ringcentral/juno/commit/1b0b0947308648891c4980977cd4cfccc69eab0c))
 
 ### [2.36.3](https://github.com/ringcentral/juno/compare/juno-core-v2.36.2...juno-core-v2.36.3) (2023-07-13)
 
 
 ### Bug Fixes
 
-* **typography-warning:** [typography] warning when typography is not existed ([35291e5](https://github.com/ringcentral/juno/commit/35291e5e7b52dc2cfb59071a7d39750edaee8527))
+* **typography-warning:** [typography] warning when typography is not existed ([67e2f0e](https://github.com/ringcentral/juno/commit/67e2f0e9b0ddeb1fe1f09327d3b32011acfa5051))
 
 ### [2.36.2](https://github.com/ringcentral/juno/compare/juno-core-v2.36.1...juno-core-v2.36.2) (2023-06-26)
 
 
 ### Bug Fixes
 
-* **fix-typography-type:** [Types] improve RcLink, RcText, RcTypography, RcInlineEditable variant type for extension typography token ([67c2763](https://github.com/ringcentral/juno/commit/67c2763af841f8f397c849eafe83a5ec045c9352))
+* **fix-typography-type:** [Types] improve RcLink, RcText, RcTypography, RcInlineEditable variant type for extension typography token ([a39b483](https://github.com/ringcentral/juno/commit/a39b48313aa7c46797e22a65955dac982d510f53))
 
 ### [2.36.1](https://github.com/ringcentral/juno/compare/juno-core-v2.36.0...juno-core-v2.36.1) (2023-06-26)
 
 
 ### Bug Fixes
 
-* **fix-typography-extend:** [DefaultTheme] fix typography type extension ([68680ba](https://github.com/ringcentral/juno/commit/68680ba9eea44524fdfda7ff44d55d8a9ead85bd))
+* **fix-typography-extend:** [DefaultTheme] fix typography type extension ([b5e5351](https://github.com/ringcentral/juno/commit/b5e53517b7e548cf7e84f72da4189ab459ab9ca2))
 
 ## [2.36.0](https://github.com/ringcentral/juno/compare/juno-core-v2.35.5...juno-core-v2.36.0) (2023-06-02)
 
 
 ### Features
 
-* **JMX-3428:** [SubMenu] support touch interaction on mobile ([641c74c](https://github.com/ringcentral/juno/commit/641c74cad1493fc0d72bacc8570b03521cfa354b))
+* **JMX-3428:** [SubMenu] support touch interaction on mobile ([5f7dffd](https://github.com/ringcentral/juno/commit/5f7dffde66d522257b0f3c7e2564914d104f0646))
 
 ### [2.35.5](https://github.com/ringcentral/juno/compare/juno-core-v2.35.4...juno-core-v2.35.5) (2023-05-31)
 
 
 ### Bug Fixes
 
-* **Presence:** fix issue on 1080p dark theme ([8a4e921](https://github.com/ringcentral/juno/commit/8a4e921ce2389b6fd940f06f3284b4bf18aec3f3))
+* **FIJI-63773:** [Presence] fix issue on 1080p dark theme ([e3dd0ba](https://github.com/ringcentral/juno/commit/e3dd0bab20e7622b0beb9d82854cdd776905a43a))
 
 ### [2.35.4](https://github.com/ringcentral/juno/compare/juno-core-v2.35.3...juno-core-v2.35.4) (2023-05-19)
 
 
 ### Bug Fixes
 
-* **fix-dot-badge:** [Badge] fix issue about dot Badge does not support `invisible` and `showZero` ([4600aca](https://github.com/ringcentral/juno/commit/4600acac9fe80d1b45d1d04777cd8e1fff717b45))
+* **fix-dot-badge:** [Badge] fix issue about dot Badge does not support `invisible` and `showZero` ([ee75633](https://github.com/ringcentral/juno/commit/ee75633acc56b264d38f10ff57d9df121dcc1266))
 
 ### [2.35.3](https://github.com/ringcentral/juno/compare/juno-core-v2.35.2...juno-core-v2.35.3) (2023-05-11)
 
 
 ### Bug Fixes
 
-* **fix-DatePicker:** [DatePicker] get document/window from RcPortalWindowContext ([8413810](https://github.com/ringcentral/juno/commit/84138106eab9eb80f53a94da0d4a089e46214175))
+* **fix-DatePicker:** [DatePicker] get document/window from RcPortalWindowContext ([a041504](https://github.com/ringcentral/juno/commit/a041504d50ffa7af5838eb176bc69e5874774cf2))
 
 ### [2.35.2](https://github.com/ringcentral/juno/compare/juno-core-v2.35.1...juno-core-v2.35.2) (2023-05-08)
 
 
 ### Bug Fixes
 
-* **fix-more-tabs:** [MoreMenuTabs] fix issue about update groupInfo incorrectly ([938dbb2](https://github.com/ringcentral/juno/commit/938dbb2c4fc5b1c85e9cc2e5f9e786682c2d591d))
+* **fix-more-tabs:** [MoreMenuTabs] fix issue about update groupInfo incorrectly ([f4e0a18](https://github.com/ringcentral/juno/commit/f4e0a181ff82d81282ecc8f97c419ef40e1705f7))
 
 ### [2.35.1](https://github.com/ringcentral/juno/compare/juno-core-v2.35.0...juno-core-v2.35.1) (2023-05-08)
 
 
 ### Bug Fixes
 
-* **JMX-3143:** [useTouchMouseEvent] fix ios touch issue ([8ae344c](https://github.com/ringcentral/juno/commit/8ae344cee65f47919b53383d6517e93af3ead6a3))
-* **juno-core:** [Presence] fix not pick custom props ([486efdb](https://github.com/ringcentral/juno/commit/486efdb36f0f1b55326955c9c1a768545475d72e))
+* **JMX-3143:** [useTouchMouseEvent] fix ios touch issue ([9ca8eb8](https://github.com/ringcentral/juno/commit/9ca8eb8a99517ff340b0329209581761dc773c59))
+* **juno-core:** [Presence] fix not pick custom props ([cd3933e](https://github.com/ringcentral/juno/commit/cd3933e1b6f250ff8211a27d4c7074840ad69aae))
 
 ## [2.35.0](https://github.com/ringcentral/juno/compare/juno-core-v2.34.0...juno-core-v2.35.0) (2023-04-27)
 
 
 ### Features
 
-* **undockMoreMenu:** [MoreMenuTabs] support external window ([e86467b](https://github.com/ringcentral/juno/commit/e86467b0fa537aca5bc3fee1afc7768b6c3a5112))
+* **undockMoreMenu:** [MoreMenuTabs] support external window ([026b42f](https://github.com/ringcentral/juno/commit/026b42f1a5f04b0394bb9d776cd4de065bb8cf2d))
 
 ## [2.34.0](https://github.com/ringcentral/juno/compare/juno-core-v2.33.0...juno-core-v2.34.0) (2023-04-25)
 
 
 ### ⚠ BREAKING CHANGES
 
-* **Presence:** Change the `xsmall` size of RcPresence from 8px to 10px.
+* **FIJI-62919:** Change the `xsmall` size of RcPresence from 8px to 10px.
 
 ### Features
 
-* **JMX-2860:** [MoreMenuTabs] refactor more menu responsive logic ([3b14711](https://github.com/ringcentral/juno/commit/3b14711e26e4b1a97ede0b43d1364b7ca045d050))
-* **JMX-2860:** [useDebounce/useThrottle] support `leading` and `trailing` setting ([2c86c88](https://github.com/ringcentral/juno/commit/2c86c88bb60e784f3e8d83d08a6679e12040bb96))
-* **Presence:** update presence size for xsmall ([3077e88](https://github.com/ringcentral/juno/commit/3077e88f73390bd582bfdff409ba233c33092a20))
+* **FIJI-62919:** [Presence] update presence size for xsmall ([6a6737e](https://github.com/ringcentral/juno/commit/6a6737e92beb2af655ec160e78a2df83e9a6bbc0))
+* **JMX-2860:** [MoreMenuTabs] refactor more menu responsive logic ([50c2e84](https://github.com/ringcentral/juno/commit/50c2e8469a7e415ca377709c3419918d639e3a18))
+* **JMX-2860:** [useDebounce/useThrottle] support `leading` and `trailing` setting ([8591543](https://github.com/ringcentral/juno/commit/85915431efb81f41217d2eaab8b8c76f7f4844e5))
 
 
 ### Bug Fixes
 
-* **Presence:** change align draft when zoom in ([3cda8f2](https://github.com/ringcentral/juno/commit/3cda8f22fc58f57632f2cd9c0586fc67f9a77d81))
+* **FIJI-63391:** [Presence] change align draft when zoom in ([9953078](https://github.com/ringcentral/juno/commit/9953078aefda1e3de3cacc89962b9f6e5743d24f))
 
 ## [2.33.0](https://github.com/ringcentral/juno/compare/juno-core-v2.32.0...juno-core-v2.33.0) (2023-03-22)
 
 
 ### Features
 
-* **JMX-2378:** [MoreMenuTab] support custom icon by menu open state ([9c417d8](https://github.com/ringcentral/juno/commit/9c417d8090d3294c1c14cbb01b5cfb3368f730bc))
-* **JMX-2378:** [TabList] memo children to reduce moreMenu variant re-render ([84c3ff1](https://github.com/ringcentral/juno/commit/84c3ff1d3450b2f9f691637111b35c8115d05214))
-* **Presence:** update style of offline, unavailable, notReady,DND status ([95ab7a6](https://github.com/ringcentral/juno/commit/95ab7a66bb01deb36abd4464b3e80ba1d22c39dd))
+* **FIJI-60991:** [Presence] update style of offline, unavailable, notReady,DND status ([55e2d0a](https://github.com/ringcentral/juno/commit/55e2d0a131783fe461fc1c8886a271e48783bfde))
+* **JMX-2378:** [MoreMenuTab] support custom icon by menu open state ([3956e3f](https://github.com/ringcentral/juno/commit/3956e3f4d58ea7b6ce1e867fbdb14cefb40d1c30))
+* **JMX-2378:** [TabList] memo children to reduce moreMenu variant re-render ([ec9cf43](https://github.com/ringcentral/juno/commit/ec9cf432875445a232e2a9eda7f9d2c61791316d))
 
 
 ### Bug Fixes
 
-* **Presence:** change presence border to box shadow to avoid zoom in/ zoom out issue ([44fc213](https://github.com/ringcentral/juno/commit/44fc213d04d66c3ba3e61920246f8dd01e7171b8))
-* **Presence:** change presence border to box shadow to avoid zoom in/ zoom out issue ([91812d1](https://github.com/ringcentral/juno/commit/91812d1df4bbf3f6b80b3f5c56005f99dced195c))
+* **FIJI-63019:** [Presence] change presence border to box shadow to avoid zoom in/ zoom out issue ([6bef1e9](https://github.com/ringcentral/juno/commit/6bef1e960b48cee48b49d04b30ed2ca50f466420))
+* **FIJI-63019:** [Presence] change presence border to box shadow to avoid zoom in/ zoom out issue ([9747c8e](https://github.com/ringcentral/juno/commit/9747c8e344cdd0bd10988225042e92bd7367b011))
 
 ## [2.32.0](https://github.com/ringcentral/juno/compare/juno-core-v2.31.0...juno-core-v2.32.0) (2023-03-13)
 
 
 ### Features
 
-* **TimePicker:** support custom period text ([31b17ee](https://github.com/ringcentral/juno/commit/31b17ee9286d5d71ed8f5beaa939cc4caaf37560))
+* **FIJI-59143:** [TimePicker] support custom period text ([bbd3ce7](https://github.com/ringcentral/juno/commit/bbd3ce7c298b5527f3fe3b5467eae6f769c10ef5))
 
 
 ### Bug Fixes
 
-* **focusRing:** fix focusRing color ([0a237d3](https://github.com/ringcentral/juno/commit/0a237d393de9f1d9f85d694ed378062fbd1b00e9))
-* **VirtualizedMenu:** fix VirtualizedMenu position issue ([d09675a](https://github.com/ringcentral/juno/commit/d09675a05c5449c217e799a380047d8821e0b8ea))
+* **FIJI-59143:** [focusRing] fix focusRing color ([f26573c](https://github.com/ringcentral/juno/commit/f26573cf5f4fecb1d4ea93508ac9c5bb5b4e7656))
+* **FIJI-59143:** [VirtualizedMenu] fix VirtualizedMenu position issue ([0715daf](https://github.com/ringcentral/juno/commit/0715daf162b06f229bf979ebd36e3226a886ac51))
 
 ## [2.31.0](https://github.com/ringcentral/juno/compare/juno-core-v2.30.1...juno-core-v2.31.0) (2023-03-08)
 
 
 ### Features
 
-* **Presence:** revert changes for Presence icon ([6a75e4b](https://github.com/ringcentral/juno/commit/6a75e4be392b9423c692c1851a0f678605281a1a))
+* **FIJI-60991:** [Presence] revert changes for Presence icon ([1cfaec8](https://github.com/ringcentral/juno/commit/1cfaec84e805626cb6ddbd77eb02fa24d0df84fb))
 
 ### [2.30.1](https://github.com/ringcentral/juno/compare/juno-core-v2.30.0...juno-core-v2.30.1) (2023-03-08)
 
 
 ### Features
 
-* **RCUI:** [TextField] support placeholder ellipsis ([f2e460c](https://github.com/ringcentral/juno/commit/f2e460cbfbcc53bfe87c076b762e12e417c1e620))
+* **RCUI:** [TextField] support placeholder ellipsis ([2671a9a](https://github.com/ringcentral/juno/commit/2671a9a6e2d75e7fbee6aabb143707974edc72ce))
 
 ## [2.30.0](https://github.com/ringcentral/juno/compare/juno-core-v2.29.0...juno-core-v2.30.0) (2023-03-06)
 
 
 ### Features
 
-* **Icon:** update icon PresenceDnd ([da22fd8](https://github.com/ringcentral/juno/commit/da22fd8fc0734a911f0b63b27b8582c4bd81af06))
-* **Presence:** update style of offline, unavailable, notReady status and remove unused CircleDiv component ([48a8f25](https://github.com/ringcentral/juno/commit/48a8f25229ee2947f7cdfdbcf76c2ef3942370f4))
+* **FIJI-60991:** [Presence] update style of offline, unavailable, notReady status and remove unused CircleDiv component ([3cb7ea3](https://github.com/ringcentral/juno/commit/3cb7ea3bcfcdbd966eee79e2bee0a3f8629ea895))
+* **FIJI-61988:** [Icon] update icon PresenceDnd ([ac2914e](https://github.com/ringcentral/juno/commit/ac2914e402dca4dd4810d5c47cd0155fc2a519bb))
 
 ## [2.29.0](https://github.com/ringcentral/juno/compare/juno-core-v2.28.0...juno-core-v2.29.0) (2023-02-22)
 
 
 ### Features
 
-* **Presence:** add new icon support for Presence ([9a31c98](https://github.com/ringcentral/juno/commit/9a31c980a81ce48d7dbc69dd71cd778194f0a1c1))
+* **FIJI-60991:** [Presence] add new icon support for Presence ([ca54d2f](https://github.com/ringcentral/juno/commit/ca54d2f1135306c321899fd6958dcba6d8ab9096))
 
 ## [2.28.0](https://github.com/ringcentral/juno/compare/juno-core-v2.27.0...juno-core-v2.28.0) (2023-02-16)
 
 
 ### Features
 
-* **improve-more-menu-tabs-resize:** [Tabs] add prop `resizeThrottleTime` to improve resize performance ([1578f1a](https://github.com/ringcentral/juno/commit/1578f1a2d111db454fb9da13f466bbd76cf8db37))
+* **improve-more-menu-tabs-resize:** [Tabs] add prop `resizeThrottleTime` to improve resize performance ([457222d](https://github.com/ringcentral/juno/commit/457222d5366d92c1f7f1de6e4528faed771df117))
 
 ## [2.27.0](https://github.com/ringcentral/juno/compare/juno-core-v2.26.2...juno-core-v2.27.0) (2023-01-16)
 
@@ -368,145 +375,145 @@ import { Canvas, Meta, Story } from '@storybook/addon-docs';
 
 ### Features
 
-* **Icon:** add icon `calls`, `calls-border`, `phone-inbox`, `phone-inbox-border`, `transcript-bottom` ([26cb576](https://github.com/ringcentral/juno/commit/26cb5762f6b0426e5771d51dc4dbf19a104133e8))
-* **JMX-1543:** [useOnlyOneFocusable] remove retry logic of `focusIndex` ([d24b3ac](https://github.com/ringcentral/juno/commit/d24b3acd3830592642cb44e9cb53669343c0f08a))
-* **JMX-1543:** [VirtualizedMenuList] improve focus logic ([2f8d491](https://github.com/ringcentral/juno/commit/2f8d4919460678202e8596982f3801fa015463b0))
+* **FIJI-60428:** [Icon] add icon `calls`, `calls-border`, `phone-inbox`, `phone-inbox-border`, `transcript-bottom` ([e257ae4](https://github.com/ringcentral/juno/commit/e257ae4b70fb80dfb71bfa92e451608afd920505))
+* **JMX-1543:** [useOnlyOneFocusable] remove retry logic of `focusIndex` ([4525287](https://github.com/ringcentral/juno/commit/45252872ad21781d89e5b9b0d84bd70f0d2efd93))
+* **JMX-1543:** [VirtualizedMenuList] improve focus logic ([560a490](https://github.com/ringcentral/juno/commit/560a4903459663c2e95e62e1c68762d96563aa11))
 
 
 ### Bug Fixes
 
-* **JMX-1543:** [Virtuoso] fix virtuoso root HtmlElement type ([07e2dc2](https://github.com/ringcentral/juno/commit/07e2dc293893b8067b28e2ae7d2141f02a13f603))
+* **JMX-1543:** [Virtuoso] fix virtuoso root HtmlElement type ([e903082](https://github.com/ringcentral/juno/commit/e90308239de87a90da46a85949eba27f98bd5adf))
 
 ### [2.26.2](https://github.com/ringcentral/juno/compare/juno-core-v2.26.1...juno-core-v2.26.2) (2023-01-04)
 
 
 ### Features
 
-* **FiJI-59870:** [DatePicker] change focusVisible style to focusRing style ([956ebc9](https://github.com/ringcentral/juno/commit/956ebc982de44c9138aa1a2e96c35d806349d922))
+* **FiJI-59870:** [DatePicker] change focusVisible style to focusRing style ([639aa14](https://github.com/ringcentral/juno/commit/639aa147d1dc524fbc17b158ca5ccabec33a9374))
 
 ### [2.26.1](https://github.com/ringcentral/juno/compare/juno-core-v2.26.0...juno-core-v2.26.1) (2023-01-03)
 
 
 ### Features
 
-* **TimePicker:** change TimePicker open focus to hour ([908b75c](https://github.com/ringcentral/juno/commit/908b75cf39d082f2012f86e261f4d4e2f77097ee))
+* **TimePicker:** change TimePicker open focus to hour ([3a867a3](https://github.com/ringcentral/juno/commit/3a867a3330d27dc312c266ed1a5b75b13ab3835e))
 
 ## [2.26.0](https://github.com/ringcentral/juno/compare/juno-core-v2.25.1...juno-core-v2.26.0) (2023-01-03)
 
 
 ### Bug Fixes
 
-* **DatePicker/TimePicker:** revert improve DatePicker/TimePicker first focus ([b90a190](https://github.com/ringcentral/juno/commit/b90a190641ac975580a104864e5a66f677f316cf))
+* **FIJI-55778:** [DatePicker/TimePicker] revert improve DatePicker/TimePicker first focus ([5eb73ed](https://github.com/ringcentral/juno/commit/5eb73ed1c9ef9bbf7c6e22ccddf94a7db71efc27))
 
 ### [2.25.1](https://github.com/ringcentral/juno/compare/juno-core-v2.25.0...juno-core-v2.25.1) (2022-12-14)
 
 
 ### Bug Fixes
 
-* **FIJI-56688:** [Tab] fix MoreMenuTabs compute tab error ([15bf2bb](https://github.com/ringcentral/juno/commit/15bf2bbfd95f87a930134c618daa4d1bc86db50c))
-* **JUP-911:** [A11y] fix IconButton, Button, Switch focusRing style issue in safari ([ba1df4e](https://github.com/ringcentral/juno/commit/ba1df4ed4bf005f440ce3196439386e6b805ee6d))
+* **FIJI-56688:** [Tab] fix MoreMenuTabs compute tab error ([6de1981](https://github.com/ringcentral/juno/commit/6de1981525c9ed8589dccbbb1dcf87bfae0aadc8))
+* **JUP-911:** [A11y] fix IconButton, Button, Switch focusRing style issue in safari ([32822c5](https://github.com/ringcentral/juno/commit/32822c5b4775385f33f6f3d58b8089b73f0dbbf6))
 
 ## [2.25.0](https://github.com/ringcentral/juno/compare/juno-core-v2.24.0...juno-core-v2.25.0) (2022-12-13)
 
 
 ### Features
 
-* **FIJI-55778:** [DatePicker/TimePicker] improve DatePicker/TimePicker first focus ([cf3b38d](https://github.com/ringcentral/juno/commit/cf3b38dd07057b9d06e37fe7b0096a51a2c939a0))
+* **FIJI-55778:** [DatePicker/TimePicker] improve DatePicker/TimePicker first focus ([9b1e5af](https://github.com/ringcentral/juno/commit/9b1e5afe09244f4b81853dad4691bfb4b3d6daea))
 
 ## [2.24.0](https://github.com/ringcentral/juno/compare/juno-core-v2.23.1...juno-core-v2.24.0) (2022-12-12)
 
 
 ### Features
 
-* **FIJI-53990:** [Downshift] improve Downshift focus logic ([c667abb](https://github.com/ringcentral/juno/commit/c667abb91d3195da2f7a20bb36cc6f5528604f71))
+* **FIJI-53990:** [Downshift] improve Downshift focus logic ([81d7759](https://github.com/ringcentral/juno/commit/81d7759c7ceb8a8141c5e4bcd6dc9c247721f187))
 
 
 ### Bug Fixes
 
-* **FIJI-53990:** [Form] fix issue about screen reader cannot read label if id are not passed to Select and TextField ([de6e3ce](https://github.com/ringcentral/juno/commit/de6e3ce72a9cdc7c4b0263f1b368522fd0081a63))
+* **FIJI-53990:** [Form] fix issue about screen reader cannot read label if id are not passed to Select and TextField ([6ed4dd6](https://github.com/ringcentral/juno/commit/6ed4dd664096bbf16cc5732b6da3c3df8f007f92))
 
 ### [2.23.1](https://github.com/ringcentral/juno/compare/juno-core-v2.23.0...juno-core-v2.23.1) (2022-12-05)
 
 
 ### Bug Fixes
 
-* **FIJI-59449:** [Switch] fix switch overflow issue ([d932f65](https://github.com/ringcentral/juno/commit/d932f65d7779ed3044326b1881809f1b7e774c0f))
+* **FIJI-59449:** [Switch] fix switch overflow issue ([b87e8ab](https://github.com/ringcentral/juno/commit/b87e8ab10eefd1d2130ab8c6e79525bd5b60a396))
 
 ## [2.23.0](https://github.com/ringcentral/juno/compare/juno-core-v2.22.1...juno-core-v2.23.0) (2022-11-23)
 
 
 ### Features
 
-* **FIJI-58646:** [DatePicker] replace moment with dayjs ([15ce1ab](https://github.com/ringcentral/juno/commit/15ce1abc889e543bf7fea5e8c872d79eb2112b39))
+* **FIJI-58646:** [DatePicker] replace moment with dayjs ([1dcacab](https://github.com/ringcentral/juno/commit/1dcacab29578fdb14fd8b8622d85840bec6c83fc))
 
 ### [2.22.1](https://github.com/ringcentral/juno/compare/juno-core-v2.22.0...juno-core-v2.22.1) (2022-11-22)
 
 
 ### Bug Fixes
 
-* **fix-theme-props:** [Components] fix ThemeProvider cannot set default focusVariant issue ([b2852b8](https://github.com/ringcentral/juno/commit/b2852b8a7bd5bf72811baa71e5f29ec033d49861))
+* **fix-theme-props:** [Components] fix ThemeProvider cannot set default focusVariant issue ([d334ddd](https://github.com/ringcentral/juno/commit/d334dddfdf10f0fb79ef23fe4a2954d641abf5db))
 
-## [2.22.0](https://github.com/ringcentral/juno/compare/juno-core-v2.21.2...juno-core-v2.22.0) (2022-11-18)
+## [2.22.0](https://github.com/ringcentral/juno/compare/juno-core-v2.21.2...juno-core-v2.22.0) (2022-11-17)
 
 
 ### Features
 
-* **FIJI-58545:** [A11y] Button, IconButton, ListItem, MenuItem support focusRing; improve Switch focusRing ([4881099](https://github.com/ringcentral/juno/commit/4881099339f27c18e5573d6f7f9501152e0d785f))
+* **FIJI-58545:** [A11y] Button, IconButton, ListItem, MenuItem support focusRing; improve Switch focusRing ([0eed117](https://github.com/ringcentral/juno/commit/0eed117a8116ebf030f6c176759b14a11703d390))
 
 ### [2.21.2](https://github.com/ringcentral/juno/compare/juno-core-v2.21.1...juno-core-v2.21.2) (2022-11-02)
 
 
 ### Bug Fixes
 
-* **fix-downshift-blurry:** [Downshift] fix downshift blurry issue ([3e120b6](https://github.com/ringcentral/juno/commit/3e120b6bce7a951e349493f6dc55cb69994e34ea))
+* **fix-downshift-blurry:** [Downshift] fix downshift blurry issue ([98dc298](https://github.com/ringcentral/juno/commit/98dc29893f9b97ac4e8638eccb7b880db9d7e490))
 
 ### [2.21.1](https://github.com/ringcentral/juno/compare/juno-core-v2.21.0...juno-core-v2.21.1) (2022-10-20)
 
 
 ### Bug Fixes
 
-* **IconButton:** [juno-core] remove autoFocus pick and error autoFocus deprecated ([0f6038c](https://github.com/ringcentral/juno/commit/0f6038c157596a6dbab61a3988a5a9ceecb9c15b))
+* **IconButton:** [juno-core] remove autoFocus pick and error autoFocus deprecated ([a312383](https://github.com/ringcentral/juno/commit/a31238303a3a0506b3bb6b6c170f325700cfbb4d))
 
 ## [2.21.0](https://github.com/ringcentral/juno/compare/juno-core-v2.20.3...juno-core-v2.21.0) (2022-10-20)
 
 
 ### Features
 
-* **imporve-downshift-focus:** [downshift] imporve downshift focus when delete chip by clicking remove icon ([ed61369](https://github.com/ringcentral/juno/commit/ed61369d732402f979ad30e5a4d03180090477f0))
+* **imporve-downshift-focus:** [downshift] imporve downshift focus when delete chip by clicking remove icon ([cc1c1c4](https://github.com/ringcentral/juno/commit/cc1c1c413c6538aa66e494e45a27485c1e9028c9))
 
 ### [2.20.3](https://github.com/ringcentral/juno/compare/juno-core-v2.20.1...juno-core-v2.20.3) (2022-09-30)
 
 
 ### Bug Fixes
 
-* **FIJI-56688:** [MoreMenuTab] fix re-calculate logic at “moreMenu” mode ([abb89b6](https://github.com/ringcentral/juno/commit/abb89b62c85490bed78d4990eddddff8841ec143))
+* **FIJI-56688:** [MoreMenuTab] fix re-calculate logic at “moreMenu” mode ([5876cb3](https://github.com/ringcentral/juno/commit/5876cb3765ba6caad2aff3deb71cc474ed2524f6))
 
 ### [2.20.1](https://github.com/ringcentral/juno/compare/juno-core-v2.20.0...juno-core-v2.20.1) (2022-09-19)
 
 
 ### Bug Fixes
 
-* **Badge:** change badge default color to `umi.mentioned` and text color to `umi.text` ([0258805](https://github.com/ringcentral/juno/commit/0258805a112499fbf391a141743f7b0fb08ab67d))
+* **RCUI-714:** [Badge] change badge default color to `umi.mentioned` and text color to `umi.text` ([cacf6cd](https://github.com/ringcentral/juno/commit/cacf6cdeeff90f503ce00455ab9b26f56f3dd211))
 
 ## [2.20.0](https://github.com/ringcentral/juno/compare/juno-core-v2.19.2...juno-core-v2.20.0) (2022-08-30)
 
 
 ### Features
 
-* **Downshift:** support toggleWithInput with autocomplete variant ([6f55077](https://github.com/ringcentral/juno/commit/6f550774d4a97a6585bc14d775d42e65466547ec))
+* **RCUI-712:** [Downshift] support toggleWithInput with autocomplete variant ([f98c6a5](https://github.com/ringcentral/juno/commit/f98c6a51e0eb214cb6e723cb5148caad324e4113))
 
 
 ### Bug Fixes
 
-* **Downshift:** not focus again when toggle with input ([d030c70](https://github.com/ringcentral/juno/commit/d030c707b503dbb45443d4f84b2528c7c953ba5b))
+* **RCUI-712:** [Downshift] not focus again when toggle with input ([6949eb6](https://github.com/ringcentral/juno/commit/6949eb64d7e625a365408bb08e462c573c01b906))
 
 ### [2.19.2](https://github.com/ringcentral/juno/compare/juno-core-v2.19.0...juno-core-v2.19.2) (2022-08-26)
 
 
 ### Bug Fixes
 
-* **Downshift:** accept custom style outside ([9667d3b](https://github.com/ringcentral/juno/commit/9667d3b0eacab3282c9434910cc4e11993374b15))
-* **Downshift:** fix autoComplete mode scroll init position ([3f14de9](https://github.com/ringcentral/juno/commit/3f14de9556c02401ec1c1d38e42ae0b72bd3b14e))
+* **RCUI-712:** [Downshift] accept custom style outside ([100d23f](https://github.com/ringcentral/juno/commit/100d23f0fc47ddf1105a6517ec3a5e63ae194565))
+* **RCUI-712:** [Downshift] fix autoComplete mode scroll init position ([fb5ddb5](https://github.com/ringcentral/juno/commit/fb5ddb55bb3b4f0348d926a23498b55771788b60))
 
 ## [2.19.0](https://github.com/ringcentral/juno/compare/juno-core-v2.18.0...juno-core-v2.19.0) (2022-08-25)
 
@@ -519,7 +526,13 @@ import { Canvas, Meta, Story } from '@storybook/addon-docs';
 ### Features
 * **update-backdrop-color:** [Dialog] bump up the backdrop color to 70% opacity
 
-## [2.17.0](https://github.com/ringcentral/juno/compare/juno-core-v2.16.1...juno-core-v2.17.0) (2022-08-02)
+
+### Features
+
+* **update-backdrop-color:** [Dialog] bump up the backdrop color to 70% opacity ([74cb583](https://github.com/ringcentral/juno/commit/74cb583af7d5659f5955bb39787308ee544a572c))
+* **update-backdrop-color:** [Dialog] bump up the backdrop color to 70% opacity ([3154e11](https://github.com/ringcentral/juno/commit/3154e112933372419efb22ec4722bd804b899e6a))
+
+## [2.17.0](https://github.com/ringcentral/juno/compare/juno-core-v2.16.1...juno-core-v2.17.0) (2022-08-01)
 
 
 ### ⚠ BREAKING CHANGES
@@ -532,14 +545,14 @@ import { Canvas, Meta, Story } from '@storybook/addon-docs';
 
 ### Features
 
-* **Cleanup:** [Components] remove all not need deprecated components ([ed79974](https://github.com/ringcentral/juno/commit/ed79974fad985f861a92d57fa4e27ea74ff4be20))
+* **Cleanup:** [Components] remove all not need deprecated components ([76acf5c](https://github.com/ringcentral/juno/commit/76acf5c6801ca560844fa437170e8ac72e7d77e4))
 
 ### [2.16.1](https://github.com/ringcentral/juno/compare/juno-core-v2.16.0...juno-core-v2.16.1) (2022-07-19)
 
 
 ### Bug Fixes
 
-* **fix-downshift-type-issue:** [downshift] fix highlighted type of RcDownshiftRenderOptionState ([16b222e](https://github.com/ringcentral/juno/commit/16b222e38b725d792a236c22bfc1db21fd7e336f))
+* **fix-downshift-type-issue:** [downshift] fix highlighted type of RcDownshiftRenderOptionState ([0956f35](https://github.com/ringcentral/juno/commit/0956f355f0193d38f9cfbeec25ffce490b607622))
 
 ## [2.16.0](https://github.com/ringcentral/juno/compare/juno-core-v2.15.0...juno-core-v2.16.0) (2022-07-19)
 
@@ -587,35 +600,36 @@ renderOption={(
 )}
 ```
 
+
 ### Features
 
-* **Downshift:** change `renderOptions` callback function field `selected` rename to `highlighted` ([4db0c3a](https://github.com/ringcentral/juno/commit/4db0c3a99dbdbb8f97c4fb4a268cf1cecfe3190b))
-* **Downshift:** separate highlighted and selected when in `autocomplete` variant ([2e450cb](https://github.com/ringcentral/juno/commit/2e450cb98c0188cdfcee9521adb10614312cdcec))
-* **Downshift:** support custom `PopperComponent` ([e68721e](https://github.com/ringcentral/juno/commit/e68721e86f8c1a9c630821f557e11b751aa233d5))
+* **RCUI-708:** [Downshift] change `renderOptions` callback function field `selected` rename to `highlighted` ([cfc4f17](https://github.com/ringcentral/juno/commit/cfc4f17435c40f762e290add849a69deb7384b83))
+* **RCUI-708:** [Downshift] separate highlighted and selected when in `autocomplete` variant ([b067d2b](https://github.com/ringcentral/juno/commit/b067d2bdee6dacae2f4d5985763ad6f08ee6b627))
+* **RCUI-708:** [Downshift] support custom `PopperComponent` ([854a434](https://github.com/ringcentral/juno/commit/854a4344c1148e1aefe06e14d52ef0918ec03998))
 
 
 ### Bug Fixes
 
-* **MenuItem, ListItem:** support focused for add focused style ([6672509](https://github.com/ringcentral/juno/commit/6672509c04483a9823d60e6c4b3bbe8c78ff40ac))
-* **MenuItem, ListItem:** sync `MenuItem` and `ListItem` style ([757e7d8](https://github.com/ringcentral/juno/commit/757e7d88090155fc73769915834806ca597bba8c))
+* **RCUI-709:** [MenuItem, ListItem] support focused for add focused style ([4514078](https://github.com/ringcentral/juno/commit/4514078b8b67f28d7e69ea47d6739fe9a63311ed))
+* **RCUI-709:** [MenuItem, ListItem] sync `MenuItem` and `ListItem` style ([ca55cc7](https://github.com/ringcentral/juno/commit/ca55cc717df12f27f39542876211e5fb894b5aa3))
 
 ## [2.15.0](https://github.com/ringcentral/juno/compare/juno-core-v2.14.0...juno-core-v2.15.0) (2022-07-18)
 
 
 ### ⚠ BREAKING CHANGES
 
-* **Downshift:** [Downshift] that popper root element will be wrap a `div` for support animation work
+* **RCUI-707:** [Downshift] that popper root element will be wrap a `div` for support animation work
 
 ### Features
 
-* **Downshift:** support animation with menu and non virtualize mode ([7b97be3](https://github.com/ringcentral/juno/commit/7b97be3374ca240916365596c66525df62ad4103))
-* **Downshift:** support custom anchorElType with `PopperProps.anchorElType` ([eb74ead](https://github.com/ringcentral/juno/commit/eb74ead7581b7b6e71fd77ae08e5d6dc19669e20))
-* **Downshift:** support custom toggleButton with `getToggleButtonProps` ([3848237](https://github.com/ringcentral/juno/commit/3848237416d5dc197fedcf1a84b903e98fba467d))
+* **RCUI-707:** [Downshift] support animation with menu and non virtualize mode ([c633380](https://github.com/ringcentral/juno/commit/c63338072601b1a3b1837e92e0af27ea6ebfc5e1))
+* **RCUI-707:** [Downshift] support custom anchorElType with `PopperProps.anchorElType` ([579edbc](https://github.com/ringcentral/juno/commit/579edbc91627f500ba2eb0cdbf317c8fb93e12f2))
+* **RCUI-707:** [Downshift] support custom toggleButton with `getToggleButtonProps` ([ecc76c3](https://github.com/ringcentral/juno/commit/ecc76c3dc1241309fe424b2a45febc8d5266d5a4))
 
 
 ### Bug Fixes
 
-* **Downshift:** fix popper position show position with `bottom-start` and `top-start` ([45149bd](https://github.com/ringcentral/juno/commit/45149bd9f9a063272e18bb704ebb59127b499065))
+* **RCUI-707:** [Downshift] fix popper position show position with `bottom-start` and `top-start` ([81e21e0](https://github.com/ringcentral/juno/commit/81e21e018ce34411d2422a56db12bd2e6903d5e1))
 
 ## [2.14.0](https://github.com/ringcentral/juno/compare/juno-core-v2.13.1...juno-core-v2.14.0) (2022-06-22)
 
@@ -626,16 +640,16 @@ renderOption={(
 
 ### Bug Fixes
 
-* **Select:** [Select] fix select title prop pass in incorrect dom ([4bd94f9](https://github.com/ringcentral/juno/commit/4bd94f9b110593753e32ddcbca72cd10a0f46549))
+* **Select:** [Select] fix select title prop pass in incorrect dom ([b845707](https://github.com/ringcentral/juno/commit/b8457077c5da70c351bc0d9956b1dfd140fcdd78))
 
 ### [2.13.1](https://github.com/ringcentral/juno/compare/juno-core-v2.13.0...juno-core-v2.13.1) (2022-05-26)
 
 
 ### Bug Fixes
 
-* **fix-dialog-size:** [Dialog] make sure `fullScreen` can work correctly when `maxWidth` is `xs` ([95e3014](https://github.com/ringcentral/juno/commit/95e3014cc0c9865f76dbbdf66c8b11560ee0d538))
+* **fix-dialog-size:** [Dialog] make sure `fullScreen` can work correctly when `maxWidth` is `xs` ([b992500](https://github.com/ringcentral/juno/commit/b992500b7685b5831e89d27f85053b15dd661a1e))
 
-## [2.13.0](https://github.com/ringcentral/juno/compare/juno-core-v2.12.3...juno-core-v2.13.0) (2022-05-25)
+## [2.13.0](https://github.com/ringcentral/juno/compare/juno-core-v2.12.4...juno-core-v2.13.0) (2022-05-25)
 
 
 ### ⚠ BREAKING CHANGES
@@ -644,90 +658,103 @@ renderOption={(
 
 ### Bug Fixes
 
-* **fix-card-hover-action:** [CardHoverActions] add `z-index` to make sure `CardHoverActions` would not be covered by `CardSelectionArea` ([e4e80bc](https://github.com/ringcentral/juno/commit/e4e80bca4b806fc479ae38f6dcb43eecfcfe67f4))
-* **fix-dialog-size:** [Dialog] change Dialog `max-width` to to follow design when maxWidth=`xs` ([c92cec7](https://github.com/ringcentral/juno/commit/c92cec7312f9d45957a3e4c80820f02f19c16bdb))
-* **fix-useEventListener-type:** [useEventListener] fix `callback` and `event` type issues ([9a04229](https://github.com/ringcentral/juno/commit/9a04229a2bfd1dfe74ae368c0777be3a64fcb14a))
+* **fix-dialog-size:** [Dialog] change Dialog `max-width` to to follow design when maxWidth=`xs` ([fe71b41](https://github.com/ringcentral/juno/commit/fe71b4149c61b11b8f84aa77c5b7b08d1a6a64a9))
 
-### [2.12.4](https://github.com/ringcentral/juno/compare/juno-core-v2.12.3...juno-core-v2.12.4) (2022-05-19)
+### [2.12.4](https://github.com/ringcentral/juno/compare/juno-core-v2.12.3...juno-core-v2.12.4) (2022-05-18)
 
 
 ### Bug Fixes
 
-* **fix-card-hover-action:** [CardHoverActions] add `z-index` to make sure `CardHoverActions` would not be covered by `CardSelectionArea` ([e4e80bc](https://github.com/ringcentral/juno/commit/e4e80bca4b806fc479ae38f6dcb43eecfcfe67f4))
-* **fix-useEventListener-type:** [useEventListener] fix `callback` and `event` type issues ([9a04229](https://github.com/ringcentral/juno/commit/9a04229a2bfd1dfe74ae368c0777be3a64fcb14a))
+* **fix-card-hover-action:** [CardHoverActions] add `z-index` to make sure `CardHoverActions` would not be covered by `CardSelectionArea` ([993f86e](https://github.com/ringcentral/juno/commit/993f86e96cc25c0210754da6adb75d67774fa0cf))
 
-### [2.12.3](https://github.com/ringcentral/juno/compare/juno-core-v2.12.2...juno-core-v2.12.3) (2022-05-11)
+### [2.12.3](https://github.com/ringcentral/juno/compare/juno-core-v2.12.2...juno-core-v2.12.3) (2022-05-10)
 
 
 ### Bug Fixes
 
-* **fix-dialog-a11y:** [Dialog] add `aria-modal=true` attribute ([38895cd](https://github.com/ringcentral/juno/commit/38895cdb63bb432d1067b018d0f48a506dedc675))
+* **fix-dialog-a11y:** [Dialog] add `aria-modal=true` attribute ([b4a1fc4](https://github.com/ringcentral/juno/commit/b4a1fc46783262f9c4662f054e4ccfbfcc527f45))
 
 ### [2.12.2](https://github.com/ringcentral/juno/compare/juno-core-v2.12.1...juno-core-v2.12.2) (2022-05-09)
 
 
 ### Bug Fixes
 
-* **FIJI-50300:** [PortalManager] fix `_feedbackMap` memory leak issue ([216ac96](https://github.com/ringcentral/juno/commit/216ac96298aac897a178bd9540a2e5940e66b90e))
+* **FIJI-50300:** [PortalManager] fix `_feedbackMap` memory leak issue ([c2319ba](https://github.com/ringcentral/juno/commit/c2319ba5e7a8b128d75cdab2e8f688f1e8647575))
 
 ### [2.12.1](https://github.com/ringcentral/juno/compare/juno-core-v2.12.0...juno-core-v2.12.1) (2022-05-05)
 
 
 ### Bug Fixes
 
-* **Virtuoso:** [Virtuoso] ignore flushSync cause framer still not support that flushSync ([273e897](https://github.com/ringcentral/juno/commit/273e8978f601d45d541dc4ddb10ed61953c79bac))
+* **Virtuoso:** [Virtuoso] ignore flushSync cause framer still not support that flushSync ([d7790d3](https://github.com/ringcentral/juno/commit/d7790d35df807306dac51ba683a2f9c6b3bc9b09))
 
 ## [2.12.0](https://github.com/ringcentral/juno/compare/juno-core-v2.11.0...juno-core-v2.12.0) (2022-04-28)
 
 
 ### ⚠ BREAKING CHANGES
 
-* **DialPad:** fix externalWindow for DialPadButton
+* **RCUI-704:** fix externalWindow for DialPadButton
 
 ### Features
 
-* **DialPad:** support externalWindow for RcDialPadButton ([13d935e](https://github.com/ringcentral/juno/commit/13d935e85b1320e9ce951ef4dc11d723fcd85976))
+* **RCUI-704:** [DialPad] support externalWindow for RcDialPadButton ([54e87e3](https://github.com/ringcentral/juno/commit/54e87e36897e8a7d1945c12617b7c643b5c7d880))
 
 
 ### Bug Fixes
 
-* **fix-change-log:** [PortalHost] export `HasPortalParentProvider` ([dd1aadd](https://github.com/ringcentral/juno/commit/dd1aadd1991265a46c2aa707423bbfcf92fb5524))
+* **fix-change-log:** [PortalHost] export `HasPortalParentProvider` ([7c65411](https://github.com/ringcentral/juno/commit/7c65411eeb46555759c9a074a763575891fe93ea))
 
-## [2.11.0](https://github.com/ringcentral/juno/compare/juno-core-v2.10.0...juno-core-v2.11.0) (2022-04-28)
-
-
-### Features
-
-* **FIJI-50006:** [virtuoso] upgrade virtuoso version to v2.10.1 ([ad9cdf7](https://github.com/ringcentral/juno/commit/ad9cdf7e17b39ba664727be1406144022e85d2ab))
-* **Tabs:** support updateAllTabsSize in computeWhetherToUseMoreMode ([622264f](https://github.com/ringcentral/juno/commit/622264f5f3d6a0f6636e427abf48d578ac40fb03))
-
-
-### Bug Fixes
-
-* **FIJI-50006:** [PortalHost] fix issue about nested components that support portalManager ([dba0426](https://github.com/ringcentral/juno/commit/dba042698bd7adc1f12fb577198b7f704b031037))
-* **FIJI-50006:** [TextField] fix issue about clear button lost when TextField is uncontrolled ([2707280](https://github.com/ringcentral/juno/commit/270728012ffaae1110e72f921a2294c572ff3c2f))
-* **FIJI-50006:** [VirtualizedMenu] change vl menu animation to fade ([d4d2864](https://github.com/ringcentral/juno/commit/d4d28642ef48ce071a86d8d5b79310c43d061051))
-
-## [2.9.0](https://github.com/ringcentral/juno/compare/juno-core-v2.8.1...juno-core-v2.9.0) (2022-04-21)
+## [2.11.0](https://github.com/ringcentral/juno/compare/juno-core-v2.9.0...juno-core-v2.11.0) (2022-04-27)
 
 
 ### Features
 
-* **fix-iconButton-disabled:** [Themes] update palette.light ([c644b98](https://github.com/ringcentral/juno/commit/c644b98c636f517d715c1a22a25310c685f2b5df))
+* **FIJI-49778:** [PortalHost] support RcDrawer ([5ad181c](https://github.com/ringcentral/juno/commit/5ad181c476410991a7ec1977a6acafba96465c65))
+* **FIJI-50006:** [virtuoso] upgrade virtuoso version to v2.10.1 ([acc6711](https://github.com/ringcentral/juno/commit/acc671146d67e713d15f6ec007918ca7ce0eaec7))
 
 
 ### Bug Fixes
 
-* **fix-iconButton-disabled:** [IconButton] fix contained IconButton `disabled` style issue ([b9a216c](https://github.com/ringcentral/juno/commit/b9a216cf1897a739efb5684b67c6d7603087149c))
+* **FIJI-50006:** [PortalHost] fix issue about nested components that support portalManager ([3e28890](https://github.com/ringcentral/juno/commit/3e2889009374c92026f4268bd53b460279f1f9b5))
+* **FIJI-50006:** [TextField] fix issue about clear button lost when TextField is uncontrolled ([15658e8](https://github.com/ringcentral/juno/commit/15658e81c229b1ec35701dedcf545fbc2c08eab7))
+* **FIJI-50006:** [VirtualizedMenu] change vl menu animation to fade ([1a108c6](https://github.com/ringcentral/juno/commit/1a108c63637269fbccc619344defaf4f2a437ca2))
 
-### [2.8.1](https://github.com/ringcentral/juno/compare/juno-core-v2.8.0...juno-core-v2.8.1) (2022-04-20)
+## [2.10.0](https://github.com/ringcentral/juno/compare/juno-core-v2.9.0...juno-core-v2.10.0) (2022-04-26)
+
+
+### Features
+
+* **FIJI-49778:** [deepPartial] add dependency `type-fest` and use type-fest `PartialDeep` to replace current implementation ([d493c04](https://github.com/ringcentral/juno/commit/d493c04015eed10f5b40c1b68d5d5d3c7a945173))
+* **FIJI-49778:** [DialPad] remove handleKeyboardEffect debounce ([87827ff](https://github.com/ringcentral/juno/commit/87827ff5ab07043160b3404e18c6577d436a7487))
+* **FIJI-49778:** [PortalHost] support RcDrawer ([3233143](https://github.com/ringcentral/juno/commit/3233143fef882296bb7404f3c3f7f3cf1a210917))
 
 
 ### Bug Fixes
 
-* **fix-iconButton-contained:** [IconButton] fix icon size issue ([60af026](https://github.com/ringcentral/juno/commit/60af02656b3315659864619d1cf3160be24526a5))
+* **FIJI-49778:** [DialPad] fix `getDialPadButtonProps` return type ([4f4ba0b](https://github.com/ringcentral/juno/commit/4f4ba0b25d98220b17d917c8c8a5d8ba098758d6))
+* **FIJI-49778:** [Theme] fix theme type `RcTheme`, `RcThemeInput` ([67d9135](https://github.com/ringcentral/juno/commit/67d913560aa0b3250f8764f3fc90019ab10a84e6))
 
-## [2.8.0](https://github.com/ringcentral/juno/compare/juno-core-v2.7.0...juno-core-v2.8.0) (2022-04-20)
+## [2.9.0](https://github.com/ringcentral/juno/compare/juno-core-v2.8.0...juno-core-v2.9.0) (2022-04-21)
+
+
+### Features
+
+* **fix-iconButton-disabled:** [Themes] update palette.light ([812e802](https://github.com/ringcentral/juno/commit/812e8026a7760e87c6b778337a4adb82add2cc56))
+
+
+### Bug Fixes
+
+* **fix-iconButton-contained:** [IconButton] fix icon size issue ([d11d05a](https://github.com/ringcentral/juno/commit/d11d05a89da75bfb72d99c01544f2714699fd5f3))
+* **fix-iconButton-disabled:** [IconButton] fix contained IconButton `disabled` style issue ([bfec2d2](https://github.com/ringcentral/juno/commit/bfec2d264ca2387ae12d4f5348eeb3c482ebde66))
+
+### [2.8.1](https://github.com/ringcentral/juno/compare/juno-core-v2.8.0...juno-core-v2.8.1) (2022-04-19)
+
+
+### Bug Fixes
+
+* **fix-iconButton-contained:** [IconButton] fix icon size issue ([f8ad83f](https://github.com/ringcentral/juno/commit/f8ad83fcbfe8bd51aa9c9b034c9ac8074d973a64))
+
+## [2.8.0](https://github.com/ringcentral/juno/compare/juno-core-v2.7.0...juno-core-v2.8.0) (2022-04-19)
 
 
 ### ⚠ BREAKING CHANGES
@@ -736,197 +763,249 @@ renderOption={(
 
 ### Bug Fixes
 
-* **fix-iconButton-contained:** [IconButton] fix custom icon color issue when variant of IconButton is contained ([fa661c6](https://github.com/ringcentral/juno/commit/fa661c68f8bfab08be07820319b4aa1deed23b0e))
-
-## [2.7.0](https://github.com/ringcentral/juno/compare/juno-core-v2.7.0...juno-core-v2.7.0) (2022-04-19)
+* **fix-iconButton-contained:** [IconButton] fix custom icon color issue when variant of IconButton is contained ([84ed02f](https://github.com/ringcentral/juno/commit/84ed02f5a823d71874e131ab6f15ab95c09017c4))
 
 ## [2.7.0](https://github.com/ringcentral/juno/compare/juno-core-v2.6.0...juno-core-v2.7.0) (2022-04-19)
 
 
 ### ⚠ BREAKING CHANGES
 
-* **fix-iconButton-contained:** By default, RcIcon color will inherit RcIconButton color when variant of IconButton is contained. No more set RcIcon color directly
+* **fix-iconButton-contained:** By default, RcIcon's color will inherit RcIconButton's color when variant of IconButton is contained. No more set RcIcon's color directly
 
 ### Features
 
-* **DialPad:** [DialPad] support `autoSize` prop for use can custom dialpad style ([747a7f7](https://github.com/ringcentral/juno/commit/747a7f750840816a3966c6f3254d60fd74d1b6d6))
+* **DialPad:** [DialPad] support `autoSize` prop for use can custom dialpad style ([09a1c73](https://github.com/ringcentral/juno/commit/09a1c73c1917d5a10b8d98472ec799ddf69b632d))
 
 
 ### Bug Fixes
 
-* **fix-iconButton-contained:** [IconButton] fix custom icon color issue when variant of IconButton is contained ([e9506a5](https://github.com/ringcentral/juno/commit/e9506a50bba5c7a2241c554a3ac67e51aac4c28e))
+* **fix-iconButton-contained:** [IconButton] fix custom icon color issue when variant of IconButton is contained ([604a9c3](https://github.com/ringcentral/juno/commit/604a9c3756c90019f49a51905a7f8847f7eb5481))
 
-## [2.6.0](https://github.com/ringcentral/juno/compare/juno-core-v2.5.0...juno-core-v2.6.0) (2022-04-18)
+## [2.6.0](https://github.com/ringcentral/juno/compare/juno-core-v2.4.2...juno-core-v2.6.0) (2022-04-18)
 
 
 ### ⚠ BREAKING CHANGES
 
 * **foundation:** [useLongPress] no longer export `onTouchStart` and `onTouchEnd` and `onContextMenu`, those to be inside handle with addEventListener, if you still need preventDefault, use `isPreventDefault` config
+* **RCUI-702:** [IconButton] that have a :before element near button, that may cause issue with some users custom style
 
 ### Features
 
-* **foundation:** [useGlobalListener] support startImmediately ([d0f819f](https://github.com/ringcentral/juno/commit/d0f819f878d0d14ffb306d30839e816d0c12eba3))
-* **IconButton:** [IconButton] support `IconProps` ([4febee3](https://github.com/ringcentral/juno/commit/4febee3f08d194b9a381d91a9aba3ea77a43014f))
+* **dialer-issue:** [Dialer] support custom window ([65576b5](https://github.com/ringcentral/juno/commit/65576b5994dd9d7e8c6ce595881dc9deeb29d6f9))
+* **dialer-issue:** [DialPad] `onChange` will emit reason `customKeyboard` if it trigger by `useDialKeyboard` ([fa21ad2](https://github.com/ringcentral/juno/commit/fa21ad2edca5e8a7c7b7eb307c92f58e1f646229))
+* **dialer-issue:** [useDialKeyboard] support browser keyboard event type ([50ae64d](https://github.com/ringcentral/juno/commit/50ae64d40ffad3c6cf216b1e866f5bf6975ef8e8))
+* **foundation:** [useGlobalListener] support startImmediately ([f82a641](https://github.com/ringcentral/juno/commit/f82a641fd05402ed040094d1e62c9f17758e32b0))
+* **IconButton:** [IconButton] support `IconProps` ([beed4ca](https://github.com/ringcentral/juno/commit/beed4ca0fbb3ab2e51014fa129584ed085225613))
+* **RCUI-702:** [IconButton] change IconButton spec for more like mui fab Icon ([8b063d9](https://github.com/ringcentral/juno/commit/8b063d92b0c92bfb0479b1de8436954073ae476c))
+* **upgrade-virtuoso:** [TableCellStyle] add xlarge size ([85debb2](https://github.com/ringcentral/juno/commit/85debb26a084a7ea83aba1b73becb1363f7e08b3))
+* **upgrade-virtuoso:** [virtuoso] upgrade to 2.8.6 ([440a9ef](https://github.com/ringcentral/juno/commit/440a9ef67c2a27a43f76783fb5f7057dbc3c6f28))
 
 
 ### Bug Fixes
 
-* **foundation:** [useGlobalListener] support listener options with overload method ([0b85147](https://github.com/ringcentral/juno/commit/0b85147941407e3e078e161973d020d16bd81e23))
-* **foundation:** [useLongPress] switch to use useGlobalListener and fix touch screen logic ([0527057](https://github.com/ringcentral/juno/commit/05270571eef2fe87beb6aae0e2f94d7feddaf01b))
-* **foundation:** [useTouchMouseEvent] remove addition check because in production should never switch between touch and mouse ([65986d6](https://github.com/ringcentral/juno/commit/65986d6a9224d147b5529098e1115a5b73b78332))
+* **foundation:** [useGlobalListener] support listener options with overload method ([fc41528](https://github.com/ringcentral/juno/commit/fc4152863e7f342398ecabe37fa3fdf07baf2b05))
+* **foundation:** [useLongPress] switch to use useGlobalListener and fix touch screen logic ([0067e27](https://github.com/ringcentral/juno/commit/0067e27d4817236605ea9f36e125bfc4698d6f51))
+* **foundation:** [useTouchMouseEvent] remove addition check because in production should never switch between touch and mouse ([147c0fb](https://github.com/ringcentral/juno/commit/147c0fb97710be922feba0d4941240d46bb4f072))
+* **upgrade-virtuoso:** [TableCell] fix font issue when TableCell is sortable ([36461a3](https://github.com/ringcentral/juno/commit/36461a3d706a95ed374a9f6f48bb4eb94bccac31))
+* **VirtualizedMenu:** [VirtualizedMenu] fix virtuoso issue with vl menu ([68a3139](https://github.com/ringcentral/juno/commit/68a3139dcc39ecc2f1b2c05d65a459ffd3e60a44))
+
+## [2.5.0](https://github.com/ringcentral/juno/compare/juno-core-v2.4.2...juno-core-v2.5.0) (2022-04-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* **RCUI-702:** [IconButton] that have a :before element near button, that may cause issue with some users custom style
+
+### Features
+
+* **dialer-issue:** [Dialer] support custom window ([65576b5](https://github.com/ringcentral/juno/commit/65576b5994dd9d7e8c6ce595881dc9deeb29d6f9))
+* **dialer-issue:** [DialPad] `onChange` will emit reason `customKeyboard` if it trigger by `useDialKeyboard` ([fa21ad2](https://github.com/ringcentral/juno/commit/fa21ad2edca5e8a7c7b7eb307c92f58e1f646229))
+* **dialer-issue:** [useDialKeyboard] support browser keyboard event type ([50ae64d](https://github.com/ringcentral/juno/commit/50ae64d40ffad3c6cf216b1e866f5bf6975ef8e8))
+* **RCUI-702:** [IconButton] change IconButton spec for more like mui fab Icon ([8b063d9](https://github.com/ringcentral/juno/commit/8b063d92b0c92bfb0479b1de8436954073ae476c))
+* **upgrade-virtuoso:** [TableCellStyle] add xlarge size ([85debb2](https://github.com/ringcentral/juno/commit/85debb26a084a7ea83aba1b73becb1363f7e08b3))
+* **upgrade-virtuoso:** [virtuoso] upgrade to 2.8.6 ([440a9ef](https://github.com/ringcentral/juno/commit/440a9ef67c2a27a43f76783fb5f7057dbc3c6f28))
+
+
+### Bug Fixes
+
+* **upgrade-virtuoso:** [TableCell] fix font issue when TableCell is sortable ([36461a3](https://github.com/ringcentral/juno/commit/36461a3d706a95ed374a9f6f48bb4eb94bccac31))
+* **VirtualizedMenu:** [VirtualizedMenu] fix virtuoso issue with vl menu ([68a3139](https://github.com/ringcentral/juno/commit/68a3139dcc39ecc2f1b2c05d65a459ffd3e60a44))
 
 ### [2.4.2](https://github.com/ringcentral/juno/compare/juno-core-v2.4.1...juno-core-v2.4.2) (2022-04-14)
 
 
 ### Bug Fixes
 
-* **ThemeProvider:** add isSafari154 check point with 15_4 ([4b62831](https://github.com/ringcentral/juno/commit/4b6283118e411abddf74c777d82f8d20aa099d7f))
+* **RCUI-700:** [ThemeProvider] add isSafari154 check point with 15_4 ([015256c](https://github.com/ringcentral/juno/commit/015256cbbbcac1db74a13723bb1c72bad82f81d4))
 
 ### [2.4.1](https://github.com/ringcentral/juno/compare/juno-core-v2.4.0...juno-core-v2.4.1) (2022-04-13)
 
 
 ### Bug Fixes
 
-* **ThemeProvider:** add more check with iPhone, iPad ([00de83a](https://github.com/ringcentral/juno/commit/00de83ae67e8421057e69d11c89d08fcc26d910f))
-* **ThemeProvider:** support outside custom should enable `fixSafari154` style fix ([935bc0e](https://github.com/ringcentral/juno/commit/935bc0ed124d7a40efa06fd51596543755e33330))
+* **RCUI-700:** [ThemeProvider] add more check with iPhone, iPad ([73d672f](https://github.com/ringcentral/juno/commit/73d672f7236b3d51ce679ec490385dfad1b0bd33))
+* **RCUI-700:** [ThemeProvider] support outside custom should enable `fixSafari154` style fix ([08a4766](https://github.com/ringcentral/juno/commit/08a476618898507a695f13a1e824192035485762))
 
 ## [2.4.0](https://github.com/ringcentral/juno/compare/juno-core-v2.3.7...juno-core-v2.4.0) (2022-04-12)
 
 
 ### Bug Fixes
 
-* **BaseProps:** fix RcVirtualizedDivider to optional ([7435083](https://github.com/ringcentral/juno/commit/7435083bb8948e0ab8e246bc78132e5b0951e1ac))
-* **Grow:** fix Grow issue with safari issue ([77aadc1](https://github.com/ringcentral/juno/commit/77aadc1191ee83373a6c18d7dbb48de247406c60))
-* **SubMenu:** fix error binding transform-origin ([53fc7b8](https://github.com/ringcentral/juno/commit/53fc7b8bdd628c6b6e14e8df106817a05a06be98))
+* **RCUI-700:** [BaseProps] fix RcVirtualizedDivider to optional ([a7dabb0](https://github.com/ringcentral/juno/commit/a7dabb000fa20f5b1bc95f4d306664be9486b393))
+* **RCUI-700:** [Grow] fix Grow issue with safari issue ([f51fb27](https://github.com/ringcentral/juno/commit/f51fb2785b103eaf7b449fdf5a159e28b025d563))
+* **RCUI-700:** [SubMenu] fix error binding transform-origin ([786d70d](https://github.com/ringcentral/juno/commit/786d70d7879f00cc447e071d8f46fef7e44fb05e))
 
 ### [2.3.7](https://github.com/ringcentral/juno/compare/juno-core-v2.3.6...juno-core-v2.3.7) (2022-04-08)
 
 
 ### Bug Fixes
 
-* **Bug:** [Downshift] fix Downshift clearBtn style error with CleanBtnRefactor ([16f9add](https://github.com/ringcentral/juno/commit/16f9addca4c016866d66ae92096f41ec348e71e6))
+* **Bug:** [Downshift] fix Downshift clearBtn style error with CleanBtnRefactor ([e1c777f](https://github.com/ringcentral/juno/commit/e1c777f0d2256473674e65c2827074ec412fb6d6))
 
 ### [2.3.6](https://github.com/ringcentral/juno/compare/juno-core-v2.3.5...juno-core-v2.3.6) (2022-04-08)
 
 
 ### Bug Fixes
 
-* **Bug:** [useA11yKeyEvent] fix a11yKeyEvent error binding with key as Space to ' ' ([4920e49](https://github.com/ringcentral/juno/commit/4920e49ff88f602203894ac0334bd46dd25c49b7))
+* **Bug:** [useA11yKeyEvent] fix a11yKeyEvent error binding with key as Space to ' ' ([ce1577a](https://github.com/ringcentral/juno/commit/ce1577a3833fd8ab8c6ac206478f496871c5ecdb))
 
 ### [2.3.5](https://github.com/ringcentral/juno/compare/juno-core-v2.3.4...juno-core-v2.3.5) (2022-04-07)
 
 
 ### Features
 
-* **VirtualizedMenuList:** [VirtualizedMenuList] support disablePadding ([fcf9222](https://github.com/ringcentral/juno/commit/fcf9222267c8a5b8dee44d223951fa47b3211d4d))
+* **VirtualizedMenuList:** [VirtualizedMenuList] support disablePadding ([38348af](https://github.com/ringcentral/juno/commit/38348af570e366e767afb523ee2e75b0b8ada8cb))
 
 ### [2.3.4](https://github.com/ringcentral/juno/compare/juno-core-v2.3.3...juno-core-v2.3.4) (2022-04-02)
 
 
 ### Bug Fixes
 
-* **table-issue:** [DialogContent] fix default color ([daf8c46](https://github.com/ringcentral/juno/commit/daf8c46a42567ab57ca961a31ad734c4e25fdc20))
-* **table-issue:** [Table] fix some css issue and mui warning ([76aa08c](https://github.com/ringcentral/juno/commit/76aa08c09d1d40df961019e31c7be0bb93fd9e6a))
+* **table-issue:** [DialogContent] fix default color ([5c93a0f](https://github.com/ringcentral/juno/commit/5c93a0fb2b19217a45312be0d3a79f63f4dcf66e))
+* **table-issue:** [Table] fix some css issue and mui warning ([6e55444](https://github.com/ringcentral/juno/commit/6e55444115726474fb9a60079d79a89e01ed80bf))
 
 ### [2.3.3](https://github.com/ringcentral/juno/compare/juno-core-v2.3.1...juno-core-v2.3.3) (2022-04-01)
 
 
 ### Bug Fixes
 
-* **fix-portalmanager-issue:** [portalmanager] fix ThrottleScheduler issue ([f3e66e2](https://github.com/ringcentral/juno/commit/f3e66e22e4ef1dbfde86cbbf7a6fc570d73a895c))
+* **fix-portalmanager-issue:** [portalmanager] fix ThrottleScheduler issue ([2b2ac1d](https://github.com/ringcentral/juno/commit/2b2ac1d04488fab2bba55871f0474357d04d4064))
 
 ### [2.3.1](https://github.com/ringcentral/juno/compare/juno-core-v2.3.0...juno-core-v2.3.1) (2022-03-31)
 
 
 ### Bug Fixes
 
-* **Badge:** [Badge] fix bug with combine classes ([b81895d](https://github.com/ringcentral/juno/commit/b81895dc7639e437fd0e672b19e7ac2ebd49b92e))
-* **FIJI-48582:** [TextField] fix issue about tooltip show incorrectly after click textField clean button ([39b6749](https://github.com/ringcentral/juno/commit/39b674914bc026ede0de910861053bb4323c02ee))
-
-## [2.3.0](https://github.com/ringcentral/juno/compare/juno-core-v2.3.0...juno-core-v2.3.0) (2022-03-31)
+* **Badge:** [Badge] fix bug with combine classes ([086f568](https://github.com/ringcentral/juno/commit/086f568f00c921ca7ee2665efecb1307f8d6ed0f))
+* **FIJI-48582:** [TextField] fix issue about tooltip show incorrectly after click textField clean button ([cbe41ae](https://github.com/ringcentral/juno/commit/cbe41ae87bdd7bbcc3a11b75f2e8266ae489ea78))
 
 ## [2.3.0](https://github.com/ringcentral/juno/compare/juno-core-v2.2.0...juno-core-v2.3.0) (2022-03-29)
 
 
 ### Features
 
-* **Deprecated Tables:** remove tables export ([3a62ba0](https://github.com/ringcentral/juno/commit/3a62ba0adf65365c2aaa718235c38dd5ade5a9d1))
-* **foundation:** [foundation] implement `useGlobalListener` for share event ([6e6e05a](https://github.com/ringcentral/juno/commit/6e6e05aa58a865431de0a2e5babad4fcda636fe0))
-* **foundation:** [foundation] support getRefElement for some element event related method ([bcc321e](https://github.com/ringcentral/juno/commit/bcc321e27190fca6a2066a4bc7a59fdea8da1b13))
-* **Table:** new table base on mui ([c29f8e7](https://github.com/ringcentral/juno/commit/c29f8e72203657e69da169d977d77ceb578b13de))
+* **foundation:** [foundation] implement `useGlobalListener` for share event ([453d4da](https://github.com/ringcentral/juno/commit/453d4daac5b652add19be0fb4cfe2e1d7ab9e284))
+* **foundation:** [foundation] support getRefElement for some element event related method ([46a220c](https://github.com/ringcentral/juno/commit/46a220c319afea1f8e7e817677643afc665c72e6))
+* **RCUI-687:** [Deprecated Tables] remove tables export ([c57e47c](https://github.com/ringcentral/juno/commit/c57e47c4ccc860ffef7f37500850ff3a5c60e0c4))
+* **RCUI-687:** [Table] new table base on mui ([dc7f298](https://github.com/ringcentral/juno/commit/dc7f2984a7c344389ea7b051542f0f93d312dac5))
 
 
 ### Bug Fixes
 
-* **Foundation:** [useGlobalListener] change array to Set ([d4fcad2](https://github.com/ringcentral/juno/commit/d4fcad29a8c7baf88bd9325317541d07be544c7b))
-* **Highlight:** fix `action` prop type ([888bba1](https://github.com/ringcentral/juno/commit/888bba1c7ece7f0fb8c51ad80cd59f77378225af))
-* **juno-core:** [Tooptip] fix tooltipForceHide alway binding event issue ([b4ceeae](https://github.com/ringcentral/juno/commit/b4ceeaeb01749a83b8b7b0ccdba395b0c018b78b))
+* **Foundation:** [useGlobalListener] change array to Set ([dd2b85c](https://github.com/ringcentral/juno/commit/dd2b85c9eda7ed73bf18eb19b80ed9a5994f1fbf))
+* **juno-core:** [Tooptip] fix tooltipForceHide alway binding event issue ([6c86789](https://github.com/ringcentral/juno/commit/6c86789542608dd16bfd6dd5cac1f13812c002ef))
+* **RCUI-687:** [Highlight] fix `action` prop type ([10ace81](https://github.com/ringcentral/juno/commit/10ace818f6e929730f60d2d4680d0c86d028ab97))
 
-## [2.2.0](https://github.com/ringcentral/juno/compare/juno-core-v2.1.2...juno-core-v2.2.0) (2022-03-15)
-
-
-### Features
-
-* **Badge:** support round overlap ([06d67a1](https://github.com/ringcentral/juno/commit/06d67a1ea0dcd5e4ba5c85f993080384524e3a18))
-* **Chip:** support component prop with overridableStyled ([ee650aa](https://github.com/ringcentral/juno/commit/ee650aa9f2d1680afd4727557ddc35d0e985a544))
-* **MoreMenuTab:** support custom MenuItemComponent for moreMenu variant ([49c59fc](https://github.com/ringcentral/juno/commit/49c59fc80a595fb32f375a055027cc1f98b9de0b))
-
-### [2.1.2](https://github.com/ringcentral/juno/compare/juno-core-v2.1.1...juno-core-v2.1.2) (2022-03-11)
+## [2.2.0](https://github.com/ringcentral/juno/compare/juno-core-v2.1.1...juno-core-v2.2.0) (2022-03-15)
 
 
 ### Features
 
-* **Badge:** support round overlap ([af73059](https://github.com/ringcentral/juno/commit/af73059345fe39ceb1f0c492db749cd13cc0682f))
+* **RCUI-693:** [Badge] support round overlap ([4e87404](https://github.com/ringcentral/juno/commit/4e8740453aa96524fbf6bee9c9af018faeff7d75))
+* **RCUI-693:** [Chip] support component prop with overridableStyled ([6f153f3](https://github.com/ringcentral/juno/commit/6f153f3d102586bb1d70a24fac8ea39860cf8a33))
+* **RCUI-693:** [MoreMenuTab] support custom MenuItemComponent for moreMenu variant ([0dcc630](https://github.com/ringcentral/juno/commit/0dcc630a9524d3fc29609b15c7b4c04a94edff7c))
 
 ### [2.1.1](https://github.com/ringcentral/juno/compare/juno-core-v2.1.0...juno-core-v2.1.1) (2022-03-10)
 
 
 ### Bug Fixes
 
-* **RcTab:** fix dynamic children ([48f9c77](https://github.com/ringcentral/juno/commit/48f9c77433ea8333ceb9e9629a9ae9a8d1dc66f1))
-* **RcTab:** fix dynamic children ([d1d085e](https://github.com/ringcentral/juno/commit/d1d085e7c5075f4566eb373bf9a23b7a508e32bf))
-* **RcTab:** update snapshot ([91093c7](https://github.com/ringcentral/juno/commit/91093c79494685e3e0992c10d485fbcc6f4785de))
+* **RCUI-692:** [RcTab] fix dynamic children ([cbc1cb9](https://github.com/ringcentral/juno/commit/cbc1cb9d4c867fcab6102e4d1f73b57d326cf37f))
+* **RCUI-692:** [RcTab] fix dynamic children ([e7520b5](https://github.com/ringcentral/juno/commit/e7520b5a336b90c2ca39a1bc2ec30a06f3e27236))
+* **RCUI-692:** [RcTab] update snapshot ([1d33927](https://github.com/ringcentral/juno/commit/1d339278a6edde83bd2ad25dfa36040dafee9e4d))
 
-## [2.1.0](https://github.com/ringcentral/juno/compare/juno-core-v2.0.3...juno-core-v2.1.0) (2022-03-09)
+## [2.1.0](https://github.com/ringcentral/juno/compare/juno-core-v2.0.2...juno-core-v2.1.0) (2022-03-09)
 
 
 ### Features
 
-* **Chip:** support outlined variant ([d3f6308](https://github.com/ringcentral/juno/commit/d3f630851600faa5d633355a410204b9d57fd65b))
+* **RCUI-691:** [Chip] support outlined variant ([4a27b80](https://github.com/ringcentral/juno/commit/4a27b803a018afb984ac533321ba84eaf95e8744))
 
 
 ### Bug Fixes
 
-* **juno-core:** [Menu] re-export RcMenuOnCloseReasonsType ([fd78631](https://github.com/ringcentral/juno/commit/fd786310a284725ccd4e47209e6e0d6de5df71cb))
+* **juno-core:** [Menu] re-export RcMenuOnCloseReasonsType ([cc002cc](https://github.com/ringcentral/juno/commit/cc002cc18a339bb66ee38f7780a8816883c7fab1))
+* **RCUI-690:** [DatePicker] fix DatePicker error when RcThemeProvider are provided `prefixGlobalClass` prop ([701e945](https://github.com/ringcentral/juno/commit/701e9456c643e6938b651cd0b10c0f4a236c1db8))
 
-### [2.0.3](https://github.com/ringcentral/juno/compare/juno-core-v2.0.1...juno-core-v2.0.3) (2022-02-28)
+## [2.1.0](https://github.com/ringcentral/juno/compare/juno-core-v2.0.2...juno-core-v2.1.0) (2022-03-09)
+
+
+### Features
+
+* **RCUI-691:** [Chip] support outlined variant ([4a27b80](https://github.com/ringcentral/juno/commit/4a27b803a018afb984ac533321ba84eaf95e8744))
 
 
 ### Bug Fixes
 
-* **DatePicker:** fix DatePicker error when RcThemeProvider are provided `prefixGlobalClass` prop ([8fad20a](https://github.com/ringcentral/juno/commit/8fad20a05a71499320c67100ecf259e40102efc4))
+* **juno-core:** [Menu] re-export RcMenuOnCloseReasonsType ([cc002cc](https://github.com/ringcentral/juno/commit/cc002cc18a339bb66ee38f7780a8816883c7fab1))
+* **RCUI-690:** [DatePicker] fix DatePicker error when RcThemeProvider are provided `prefixGlobalClass` prop ([701e945](https://github.com/ringcentral/juno/commit/701e9456c643e6938b651cd0b10c0f4a236c1db8))
+
+## [2.1.0](https://github.com/ringcentral/juno/compare/juno-core-v2.0.4...juno-core-v2.1.0) (2022-03-09)
+
+### Features
+
+* **RCUI-691:** [Chip] support outlined variant ([4a27b80](https://github.com/ringcentral/juno/commit/4a27b803a018afb984ac533321ba84eaf95e8744))
+
+
+### Bug Fixes
+
+* **juno-core:** [Menu] re-export RcMenuOnCloseReasonsType ([cc002cc](https://github.com/ringcentral/juno/commit/cc002cc18a339bb66ee38f7780a8816883c7fab1))
+* **RCUI-690:** [DatePicker] fix DatePicker error when RcThemeProvider are provided `prefixGlobalClass` prop ([701e945](https://github.com/ringcentral/juno/commit/701e9456c643e6938b651cd0b10c0f4a236c1db8))
+
+### [2.0.3](https://github.com/ringcentral/juno/compare/juno-core-v2.0.2...juno-core-v2.0.3) (2022-02-28)
+
+
+### Bug Fixes
+
+* **RCUI-690:** [DatePicker] fix DatePicker error when RcThemeProvider are provided `prefixGlobalClass` prop ([701e945](https://github.com/ringcentral/juno/commit/701e9456c643e6938b651cd0b10c0f4a236c1db8))
 
 ### [2.0.2](https://github.com/ringcentral/juno/compare/juno-core-v2.0.1...juno-core-v2.0.2) (2022-02-22)
+
+
+### Bug Fixes
+
+* **RCUI-685:** fix Downshift SuggestionList position in safari ([85d88fc](https://github.com/ringcentral/juno/commit/85d88fc91d251fa78e7aee7f302af558dfed9bfd))
 
 ### [2.0.1](https://github.com/ringcentral/juno/compare/juno-core-v2.0.0...juno-core-v2.0.1) (2022-02-21)
 
 
 ### Bug Fixes
 
-* **Tabs Tabs:** fix tabs children change not re-render issue ([31de650](https://github.com/ringcentral/juno/commit/31de650cd5b237f727d730a8357e55be00ad9180))
+* **RCUI-688:** [Tabs] [Tabs] fix tabs children change not re-render issue ([61162d1](https://github.com/ringcentral/juno/commit/61162d17118f816dbf3b9c551bac4409d60e1655))
 
 ## 2.0.0 (2022-02-21)
 
 
 ### Features
 
-* **DetachedWindow:** remove  deprecated props `replace` ([b81cf02](https://github.com/ringcentral/juno/commit/b81cf0296657725704e9ee8aecb8c1288b0aeb44))
-* **Monorepo:** migrate to monorepo ([7f72715](https://github.com/ringcentral/juno/commit/7f727156f5716f6dc1d0894ffd2faf46d9ebce06))
+* **RCUI-662:** [DetachedWindow] remove  deprecated props `replace` ([b556480](https://github.com/ringcentral/juno/commit/b5564802e9fb8b930fbed67b460a3e62bd8a837e))
+* **RCUI-662:** [Monorepo] migrate to monorepo ([ab22994](https://github.com/ringcentral/juno/commit/ab229945b867f8248062ceeca15e5076bf685a9d))
 
 
 ### Bug Fixes
 
-* **Text:** fix title issue check, let user can set null to cancel title ([c6355c4](https://github.com/ringcentral/juno/commit/c6355c445061e9c617b340ee22e3862d84910786))
+* **RCUI-684:** [juno-core] add `process.env.NODE_ENV !== 'production'` to prevent production build contain not need code ([8317689](https://github.com/ringcentral/juno/commit/83176894011f9cdb7bc76d6ead12d4839a01f2cd))
+* **RCUI-686:** [Text] fix title issue check, let user can set null to cancel title ([dc95b27](https://github.com/ringcentral/juno/commit/dc95b273707401ce9acf5979b6cf24e21156af7e))
 
 ### [1.12.6](https://github.com/ringcentral/juno/compare/1.12.5...1.12.6) (2022-02-09)
 

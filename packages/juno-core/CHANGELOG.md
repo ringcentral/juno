@@ -1,4 +1,11 @@
 
+## [3.0.0-alpha.2](https://github.com/ringcentral/juno/compare/juno-core-v3.0.0-alpha.1...juno-core-v3.0.0-alpha.2) (2025-12-30)
+
+
+### Bug Fixes
+
+* resolve build issues for TypeScript 5.x and React 18 compatibility ([11ace02](https://github.com/ringcentral/juno/commit/11ace023ca1a40a598118ccfd8bc3829c9eb761f))
+
 ## [2.46.0](https://github.com/ringcentral/juno/compare/juno-core-v2.45.1...juno-core-v2.46.0) (2025-10-31)
 
 
