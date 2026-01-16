@@ -67,7 +67,7 @@ type RcTextFieldProps = {
   /** when clear button trigger */
   onClear?: React.MouseEventHandler<HTMLButtonElement>;
   /** props apply on default clear button */
-  clearButtonProps?: RcIconButtonProps & WithTooltipProps;
+  clearButtonProps?: Partial<RcIconButtonProps & WithTooltipProps>;
   /** If `true`, the input element will be `select` during the first mount. */
   autoSelect?: boolean;
 
