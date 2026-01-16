@@ -1,4 +1,11 @@
 
+## [3.0.0-alpha.3](https://github.com/ringcentral/juno/compare/juno-core-v3.0.0-alpha.2...juno-core-v3.0.0-alpha.3) (2026-01-16)
+
+
+### Bug Fixes
+
+* **TextField:** make clearButtonProps partial for React 18 compatibility ([1958209](https://github.com/ringcentral/juno/commit/1958209f05883ec4738e5484ec6097f6acafce2f))
+
 ## [3.0.0-alpha.2](https://github.com/ringcentral/juno/compare/juno-core-v3.0.0-alpha.1...juno-core-v3.0.0-alpha.2) (2025-12-30)
 
 
