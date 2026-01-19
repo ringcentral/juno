@@ -19,8 +19,8 @@
   },
   "dependencies": {
     "esbuild": "0.14.1",
-    "@ringcentral/juno": "*",
-    "@ringcentral/juno-icon": "*"
+    "@ringcentral/juno": "3.0.0-alpha.3",
+    "@ringcentral/juno-icon": "3.0.0-alpha.3"
   },
   "devDependencies": {
     "framer": "2.1.3"

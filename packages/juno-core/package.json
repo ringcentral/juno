@@ -44,7 +44,7 @@
   "devDependencies": {
     "dayjs": "^1.11.6",
     "styled-components": "5.3.11",
-    "@ringcentral/juno-icon": "*",
+    "@ringcentral/juno-icon": "3.0.0-alpha.3",
     "@ringcentral/juno-storybook": "*"
   },
   "peerDependencies": {
