@@ -101,12 +101,13 @@ const _RcPopupBox = forwardRef<any, RcPopupBoxProps>(
 
     const handleClose = useEventCallback(
       (e: {}, reason: 'backdropClick' | 'escapeKeyDown') => {
-      if (reason === 'backdropClick' && disableBackdropClick) {
-        return;
-      }
-      onClose?.(e, reason);
-      onCancel?.(e, reason);
-    });
+        if (reason === 'backdropClick' && disableBackdropClick) {
+          return;
+        }
+        onClose?.(e, reason);
+        onCancel?.(e, reason);
+      },
+    );
 
     return (
       <RcDialog

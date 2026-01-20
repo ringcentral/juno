@@ -46,8 +46,10 @@ const StyledCurrentMonth = styled.button<StyledCurrentMonthProps>`
 
   ${RcIcon} {
     margin-left: ${spacing(2)};
-    transform: rotate(${({ view }: StyledCurrentMonthProps) =>
-      view === 'day' ? '0' : '180'}deg);
+    transform: rotate(
+      ${({ view }: StyledCurrentMonthProps) =>
+        view === 'day' ? '0' : '180'}deg
+    );
     color: ${palette2('neutral', 'f04')};
   }
 
@@ -85,7 +87,8 @@ type SwitchHeaderProps = Pick<DatePickerHeaderProps, 'size' | 'view'>;
 
 const SwitchHeaderButtonWrapper = styled(RcIconButtonGroup)<SwitchHeaderProps>`
   flex: 1;
-  display: ${({ view }: SwitchHeaderProps) => (view === 'day' ? 'flex' : 'none')};
+  display: ${({ view }: SwitchHeaderProps) =>
+    view === 'day' ? 'flex' : 'none'};
   justify-content: flex-end;
   padding-right: 12px;
 
