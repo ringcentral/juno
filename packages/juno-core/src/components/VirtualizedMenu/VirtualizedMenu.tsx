@@ -144,7 +144,7 @@ const _RcVirtualizedMenu = forwardRef<any, RcVirtualizedMenuProps>(
           onKeyDown={handleListKeyDown}
           VirtuosoProps={{
             ...VirtuosoProps,
-            totalListHeightChanged: (height) => {
+            totalListHeightChanged: (height: number) => {
               VirtuosoProps?.totalListHeightChanged?.(height);
               // fix for popover position incorrect issue
               queueMicrotask(() => {

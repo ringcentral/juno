@@ -358,7 +358,7 @@ const _RcSubMenu = forwardRef<any, RcSubMenuProps>(
           onKeyDown={handlePopperKeyDown}
           onMouseLeave={handlePopperMouseLeave}
         >
-          {({ TransitionProps }) => (
+          {({ TransitionProps }: { TransitionProps: object }) => (
             <StyledGrow {...TransitionProps} timeout="auto">
               <RcPaper>
                 <RcSubMenuContext.Provider value={ctxValue}>

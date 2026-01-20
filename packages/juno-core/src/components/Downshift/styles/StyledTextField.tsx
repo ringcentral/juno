@@ -28,5 +28,5 @@ export const StyledTextField = styled(_StyledTextField)`
     min-width: 30px;
   }
 
-  ${({ hasTags }) => hasTags && clearBtnInactiveStyle}
+  ${({ hasTags }: StyledTextFieldProps) => hasTags && clearBtnInactiveStyle}
 `;

@@ -26,7 +26,7 @@ const boxActionBackgroundColor = palette2('action', 'grayDark');
 
 const lineSelectStyle = css<RcSelectProps>`
   .${RcLineSelectInputClasses.input} {
-    ${({ textVariant }) => typography(textVariant || 'subheading1')};
+    ${({ textVariant }: RcSelectProps) => typography(textVariant || 'subheading1')};
     line-height: unset;
 
     &:focus {
@@ -92,8 +92,8 @@ const boxSelectStyle: RcThemedStyled<RcSelectProps, any> = ({
 
   .${RcBoxSelectInputClasses.input} {
     padding: ${spacing(1.5, 6, 1.5, 2)};
-    ${({ textVariant }) => typography(textVariant || 'body1')};
-    line-height: ${({ size }: any) =>
+    ${({ textVariant }: RcSelectProps) => typography(textVariant || 'body1')};
+    line-height: ${({ size }: RcSelectProps) =>
       // here -12 for make this input height same as container
       px(RcBoxSelectInputHeights[size!] - 12)};
 

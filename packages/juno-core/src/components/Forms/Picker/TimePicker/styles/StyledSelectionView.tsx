@@ -8,7 +8,7 @@ import { RcClickFiledStyleProps } from '../TimePicker';
 import { RcTimePickerUtils } from '../utils';
 
 export const StyledSelectionView = styled.div<RcClickFiledStyleProps>`
-  ${({ size }) => {
+  ${({ size }: RcClickFiledStyleProps) => {
     const { width, height } = RcTimePickerUtils[size!];
 
     return css`

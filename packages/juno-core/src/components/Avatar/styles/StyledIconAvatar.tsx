@@ -14,5 +14,5 @@ const _StyledIconAvatar: FunctionComponent<StyledIconAvatarProps> = ({
 }) => <RcIcon size="inherit" {...rest} />;
 
 export const StyledIconAvatar = styled(_StyledIconAvatar)`
-  font-size: ${({ size }) => size}px;
+  font-size: ${({ size }: StyledIconAvatarProps) => size}px;
 `;

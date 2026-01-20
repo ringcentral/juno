@@ -26,11 +26,13 @@ const ProgressContainer = styled.div`
   align-items: center;
 `;
 
-const WeekWrapper = styled.div<Pick<RcDatePickerProps, 'size'>>`
+type WeekWrapperProps = Pick<RcDatePickerProps, 'size'>;
+
+const WeekWrapper = styled.div<WeekWrapperProps>`
   display: flex;
   justify-content: center;
 
-  ${({ size }) => {
+  ${({ size }: WeekWrapperProps) => {
     if (size === 'small') {
       return css`
         height: 28px;
@@ -48,7 +50,7 @@ const WeekWrapper = styled.div<Pick<RcDatePickerProps, 'size'>>`
 
 const StyledDaysHeader = styled.div<StyledDayLabelProps>`
   ${flexCenterStyle};
-  ${({ size }) => {
+  ${({ size }: StyledDayLabelProps) => {
     if (size === 'small') {
       return css`
         height: 28px;
@@ -68,7 +70,7 @@ const StyledDaysHeader = styled.div<StyledDayLabelProps>`
 type StyledDayLabelProps = Pick<RcDatePickerProps, 'size'>;
 
 const StyledDayLabel = styled(MuiTypography)<StyledDayLabelProps>`
-  ${({ size }) => {
+  ${({ size }: StyledDayLabelProps) => {
     if (size === 'small') {
       return css`
         &:not(:first-child) {
@@ -90,8 +92,10 @@ const StyledDayLabel = styled(MuiTypography)<StyledDayLabelProps>`
   color: ${palette2('neutral', 'f04')};
 `;
 
-const DatePickerWrapper = styled.div<Pick<RcDatePickerProps, 'size'>>`
-  ${({ size }) => {
+type DatePickerWrapperProps = Pick<RcDatePickerProps, 'size'>;
+
+const DatePickerWrapper = styled.div<DatePickerWrapperProps>`
+  ${({ size }: DatePickerWrapperProps) => {
     const { width, height } = RcDatePickerSizes[size!];
     return css`
       width: ${width};

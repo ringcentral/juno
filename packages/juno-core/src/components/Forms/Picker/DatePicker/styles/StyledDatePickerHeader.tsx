@@ -46,7 +46,8 @@ const StyledCurrentMonth = styled.button<StyledCurrentMonthProps>`
 
   ${RcIcon} {
     margin-left: ${spacing(2)};
-    transform: rotate(${({ view }) => (view === 'day' ? '0' : '180')}deg);
+    transform: rotate(${({ view }: StyledCurrentMonthProps) =>
+      view === 'day' ? '0' : '180'}deg);
     color: ${palette2('neutral', 'f04')};
   }
 
@@ -61,13 +62,15 @@ const StyledCurrentMonth = styled.button<StyledCurrentMonthProps>`
   }
 `;
 
-const SwitchHeaderWrapper = styled.div<Pick<DatePickerHeaderProps, 'size'>>`
+type SwitchHeaderWrapperProps = Pick<DatePickerHeaderProps, 'size'>;
+
+const SwitchHeaderWrapper = styled.div<SwitchHeaderWrapperProps>`
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 
-  ${({ size }) => {
+  ${({ size }: SwitchHeaderWrapperProps) => {
     if (size === 'small') {
       return '';
     }
@@ -82,11 +85,11 @@ type SwitchHeaderProps = Pick<DatePickerHeaderProps, 'size' | 'view'>;
 
 const SwitchHeaderButtonWrapper = styled(RcIconButtonGroup)<SwitchHeaderProps>`
   flex: 1;
-  display: ${({ view }) => (view === 'day' ? 'flex' : 'none')};
+  display: ${({ view }: SwitchHeaderProps) => (view === 'day' ? 'flex' : 'none')};
   justify-content: flex-end;
   padding-right: 12px;
 
-  ${({ size }) => {
+  ${({ size }: SwitchHeaderProps) => {
     if (size === 'small') {
       return css`
         flex: 1 1 100%;

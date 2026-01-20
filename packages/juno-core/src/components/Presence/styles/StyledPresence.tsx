@@ -30,7 +30,7 @@ export const StyledPresence = styled(_StyledPresence)<PresenceSizeProps>`
   border-radius: 50%;
   box-sizing: content-box;
 
-  ${({ iconSizeValue, borderSizeValue, color }) => {
+  ${({ iconSizeValue, borderSizeValue, color }: PresenceSizeProps) => {
     return css`
       width: ${iconSizeValue}px;
       height: ${iconSizeValue}px;
@@ -53,7 +53,7 @@ export const StyledPresence = styled(_StyledPresence)<PresenceSizeProps>`
 `;
 
 export const PresenceContainer = styled.div<PresenceSizeProps>`
-  ${({ iconSizeValue, borderSizeValue }) => {
+  ${({ iconSizeValue, borderSizeValue }: PresenceSizeProps) => {
     return css`
       display: flex;
       justify-content: center;

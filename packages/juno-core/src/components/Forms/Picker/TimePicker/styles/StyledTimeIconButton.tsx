@@ -19,7 +19,7 @@ const _StyledTimeIconButton = forwardRef<any, StyledTimeIconButtonProps>(
 
 export const StyledTimeIconButton = styled(_StyledTimeIconButton)`
   && {
-    ${({ wrapperSize, itemLength }) => {
+    ${({ wrapperSize, itemLength }: StyledTimeIconButtonProps) => {
       const iconWidth = RcTimePickerIconWidths[wrapperSize!];
 
       if (itemLength! > HALF_DAY_HOURS) {
@@ -35,7 +35,7 @@ export const StyledTimeIconButton = styled(_StyledTimeIconButton)`
       `;
     }};
 
-    ${({ wrapperSize }) =>
+    ${({ wrapperSize }: StyledTimeIconButtonProps) =>
       typography(wrapperSize === 'medium' ? 'title1' : 'subheading1')};
   }
 `;

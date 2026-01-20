@@ -2435,37 +2435,6 @@
     schema-utils "^4.2.0"
     source-map "^0.7.3"
 
-"@ringcentral/juno-icon@*":
-  version "1.94.0"
-  resolved "https://registry.npmjs.org/@ringcentral/juno-icon/-/juno-icon-1.94.0.tgz#51478445b9149d02f4aaf7cdf3f2c7a872472d99"
-  integrity sha512-v/gf7BNtu2INjOyjssn6+Zn7UQ5/z4PYcKIGH+pSEGPxs+sAZ9u1bICdfTDKrHVZEcgEIZag5VjNdsY9WjuXvA==
-  dependencies:
-    "@material-ui/core" "^4.12.3"
-    tslib ">=2.0.0"
-
-"@ringcentral/juno@*":
-  version "2.46.0"
-  resolved "https://registry.npmjs.org/@ringcentral/juno/-/juno-2.46.0.tgz#809aed38bb009843b7ddd6177d8c4c1733a91fa3"
-  integrity sha512-DxpHX74OIv0AyZguW9TnOV8enIRe7X2Rah42jQEZyBma7ikEl8YfDDyWf9hHv/+lYH4ptg+cCvYx8XooyJ6lHg==
-  dependencies:
-    "@date-io/dayjs" "^1.3.13"
-    "@material-ui/core" "^4.12.3"
-    "@material-ui/lab" "^4.0.0-alpha.60"
-    "@material-ui/pickers" "^3.3.10"
-    "@material-ui/styles" "^4.11.4"
-    "@types/lodash" "^4.14.169"
-    "@types/react-beautiful-dnd" "^13.0.0"
-    "@types/styled-components" "4.0.3"
-    clsx "^1.0.4"
-    focus-visible "^5.1.0"
-    lodash "^4.17.21"
-    react-beautiful-dnd "^13.0.0"
-    react-virtuoso "^4.6.2"
-    resize-observer-polyfill "^1.5.1"
-    tslib ">=2.0.0"
-    type-fest "^2.12.2"
-    typeface-lato "^0.0.75"
-
 "@rtsao/scc@^1.1.0":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@rtsao/scc/-/scc-1.1.0.tgz#927dd2fae9bc3361403ac2c7a00c32ddce9ad7e8"
@@ -4104,7 +4073,7 @@
   resolved "https://registry.npmjs.org/@types/stack-utils/-/stack-utils-2.0.3.tgz#6209321eb2c1712a7e7466422b8cb1fc0d9dd5d8"
   integrity sha512-9aEbYZ3TbYMznPdcdr3SmIrLXwC/AKZXQeCf9Pgao5CKb8CyHuEX5jzWPTkvregvhRJHcpRO6BFoGW9ycaOkYw==
 
-"@types/styled-components@4.0.3", "@types/styled-components@5.1.36":
+"@types/styled-components@5.1.36":
   version "5.1.36"
   resolved "https://registry.npmjs.org/@types/styled-components/-/styled-components-5.1.36.tgz#d63db8ad9005afc82f173012036c4c101dc93d57"
   integrity sha512-pGMRNY5G2rNDKEv2DOiFYa7Ft1r0jrhmgBwHhOMzPTgCjO76bCot0/4uEfqj7K0Jf1KdQmDtAuaDk9EAs9foSw==

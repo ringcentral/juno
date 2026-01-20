@@ -8,10 +8,13 @@ import {
 import { RcTimePickerProps } from '../TimePicker';
 import { RcTimePickerUtils } from '../utils';
 
-export const StyledPickerPopperWrap = styled.div<
-  Omit<RcTimePickerProps, 'value' | 'periodTexts'>
->`
-  ${({ size }) => {
+type StyledPickerPopperWrapProps = Omit<
+  RcTimePickerProps,
+  'value' | 'periodTexts'
+>;
+
+export const StyledPickerPopperWrap = styled.div<StyledPickerPopperWrapProps>`
+  ${({ size }: StyledPickerPopperWrapProps) => {
     const { width, height } = RcTimePickerUtils[size!];
 
     return css`

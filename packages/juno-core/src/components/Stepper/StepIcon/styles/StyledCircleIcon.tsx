@@ -19,7 +19,7 @@ export const StyledCircleIcon = styled(_StyledCircleIcon)`
   ${flexCenterStyle};
   color: ${iconTextColor};
   svg {
-    stroke-width: ${({ isEdit }) => (isEdit ? 1 : 2)}px;
+    stroke-width: ${({ isEdit }: StyledCircleIconProps) => (isEdit ? 1 : 2)}px;
   }
   border-radius: ${radius('circle')};
   background: ${iconColor};

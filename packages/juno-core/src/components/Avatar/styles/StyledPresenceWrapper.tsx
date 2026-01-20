@@ -1,16 +1,20 @@
 import { styled } from '../../../foundation';
 import { PresenceOrigin } from '../Avatar';
 
-export const StyledPresenceWrapper = styled.div<{
+type StyledPresenceWrapperProps = {
   horizontal: PresenceOrigin['horizontal'];
   vertical: PresenceOrigin['vertical'];
-}>`
+};
+
+export const StyledPresenceWrapper = styled.div<StyledPresenceWrapperProps>`
   position: absolute;
-  ${({ horizontal }) => horizontal}: 14%;
-  ${({ vertical }) => vertical}: 14%;
+  ${({ horizontal }: StyledPresenceWrapperProps) => horizontal}: 14%;
+  ${({ vertical }: StyledPresenceWrapperProps) => vertical}: 14%;
   transform: translate(
-    ${({ horizontal }) => (horizontal === 'right' ? '' : '-')}50%,
-    ${({ vertical }) => (vertical === 'bottom' ? '' : '-')}50%
+    ${({ horizontal }: StyledPresenceWrapperProps) =>
+      horizontal === 'right' ? '' : '-'}50%,
+    ${({ vertical }: StyledPresenceWrapperProps) =>
+      vertical === 'bottom' ? '' : '-'}50%
   );
   transform-origin: 100% 100%;
 `;

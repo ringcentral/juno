@@ -35,7 +35,7 @@ export const BadgeStyle: RcThemedStyled<RcBadgeProps, any> = ({
       margin: ${overlapRound && `var(${roundBadgeMarginKey})`};
       color: ${getParsePaletteColor(textColor!, null, false)};
       background-color: ${getParsePaletteColor(color, null, false)};
-      transition: ${({ theme }) =>
+      transition: ${({ theme }: { theme: import('../../../foundation').RcTheme }) =>
         theme.transitions.create('transform', {
           easing: theme.transitions.easing.easeInOut,
           duration: theme.transitions.duration.enteringScreen,

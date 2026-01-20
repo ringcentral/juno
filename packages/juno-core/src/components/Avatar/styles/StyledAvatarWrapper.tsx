@@ -43,14 +43,14 @@ export const StyledAvatarWrapper = styled(_StyledAvatarWrapper)`
   display: inline-flex;
   outline: 0;
 
-  ${({ disabled }) =>
+  ${({ disabled }: StyledAvatarWrapperProps) =>
     disabled &&
     css`
       pointer-events: none;
       opacity: ${opacity('32')};
     `};
 
-  ${({ shouldRenderPresenceHovered }) =>
+  ${({ shouldRenderPresenceHovered }: StyledAvatarWrapperProps) =>
     shouldRenderPresenceHovered &&
     css`
       .${RcAvatarClasses.presenceWrapper} {
@@ -64,7 +64,7 @@ export const StyledAvatarWrapper = styled(_StyledAvatarWrapper)`
       }
     `}
 
-  ${({ clickable }) =>
+  ${({ clickable }: StyledAvatarWrapperProps) =>
     clickable &&
     css`
       ${nonStyleButton};

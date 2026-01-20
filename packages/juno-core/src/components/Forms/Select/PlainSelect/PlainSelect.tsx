@@ -173,15 +173,18 @@ const _RcPlainSelect = forwardRef<any, RcPlainSelectProps>(
         variant={'none' as any}
         disabled={disabled}
         IconComponent={EmptyIcon}
-        onOpen={(e) => {
+        onOpen={(e: React.SyntheticEvent) => {
           setOpen(true);
           onOpenProp?.(e);
         }}
-        onClose={(e) => {
+        onClose={(e: React.SyntheticEvent) => {
           setOpen(false);
           onCloseProp?.(e);
         }}
-        onChange={(e, v) => {
+        onChange={(
+          e: React.ChangeEvent<{ value: unknown }>,
+          v: React.ReactNode,
+        ) => {
           setValue(e.target.value);
           onChangeProp?.(e, v);
         }}

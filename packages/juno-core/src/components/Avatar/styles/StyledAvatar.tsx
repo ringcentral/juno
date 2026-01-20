@@ -55,7 +55,7 @@ export const StyledAvatar = styled(_StyledAvatar)`
   outline: none;
   color: ${palette2('neutral', 'f01')};
 
-  ${({ size, color, iconSymbol }) => {
+  ${({ size, color, iconSymbol }: StyledAvatarProps) => {
     const value = RcAvatarSizes[size!];
     return css`
       ${typography(RcAvatarFonts[size!])};

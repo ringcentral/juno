@@ -20,7 +20,8 @@ const RcAppBar = styled(MuiAppBar)<RcAppBarProps>`
     ${palette2('header', 'bgRight')}
   );
   border-bottom: 1px solid ${palette2('header', 'divider')};
-  z-index: ${({ theme }) => `${theme.zIndex.drawer + 10}`};
+  z-index: ${({ theme }: { theme: import('../../foundation').RcTheme }) =>
+    `${theme.zIndex.drawer + 10}`};
 `;
 
 RcAppBar.displayName = 'RcAppBar';

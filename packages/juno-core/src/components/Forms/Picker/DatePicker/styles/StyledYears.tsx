@@ -15,7 +15,7 @@ export const YearsWrapper = styled.ul<YearsWrapperProps>`
   li {
     list-style: none;
 
-    &:not(:nth-child(${({ columns }) => columns}n + 1)) {
+    &:not(:nth-child(${({ columns }: YearsWrapperProps) => columns}n + 1)) {
       margin-left: 4px;
     }
   }

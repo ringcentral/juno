@@ -99,7 +99,8 @@ const _RcPopupBox = forwardRef<any, RcPopupBoxProps>(
     const isLoading = loading || loadingOverlay;
     const disableBackdropClick = disableBackdropClickProp ?? isLoading;
 
-    const handleClose = useEventCallback((e, reason) => {
+    const handleClose = useEventCallback(
+      (e: {}, reason: 'backdropClick' | 'escapeKeyDown') => {
       if (reason === 'backdropClick' && disableBackdropClick) {
         return;
       }
@@ -144,7 +145,9 @@ const _RcPopupBox = forwardRef<any, RcPopupBoxProps>(
                     <RcButton
                       fullWidth={isXsmall}
                       variant="text"
-                      onClick={(e) => onCancel?.(e, 'cancelClick')}
+                      onClick={(e: React.MouseEvent) =>
+                        onCancel?.(e, 'cancelClick')
+                      }
                       data-test-automation-id="DialogCancelButton"
                       disabled={loading}
                       {...cancelButtonProps}

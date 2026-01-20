@@ -133,7 +133,8 @@ const _ToggleText = memo(
 );
 
 const ToggleText = styled(_ToggleText)`
-  margin-left: ${({ size }) => RcTimePickerUtils[size!].timeSystem.margin};
+  margin-left: ${({ size }: ToggleTextProps) =>
+    RcTimePickerUtils[size!].timeSystem.margin};
 `;
 
 ToggleText.displayName = 'ToggleText';

@@ -14,7 +14,7 @@ const _StyledArrowIcon: FunctionComponent<StyledArrowIconProps> = (props) => (
 );
 
 export const StyledArrowIcon = styled(_StyledArrowIcon)`
-  transform: ${({ open }) => open && 'rotate(180deg)'};
+  transform: ${({ open }: StyledArrowIconProps) => open && 'rotate(180deg)'};
 
   &&& {
     color: inherit;

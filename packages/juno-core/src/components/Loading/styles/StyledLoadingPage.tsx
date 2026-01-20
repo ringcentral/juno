@@ -18,7 +18,7 @@ export const StyledLoadingPage = styled.div<StyledLoadingPageProps>`
   justify-content: center;
   top: 0px;
   left: 0px;
-  opacity: ${({ backgroundType }) =>
+  opacity: ${({ backgroundType }: StyledLoadingPageProps) =>
     backgroundType ? opacity('40', true) : 1};
   background: ${palette2('neutral', 'b01')};
   z-index: 1000;

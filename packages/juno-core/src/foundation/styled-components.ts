@@ -1,3 +1,4 @@
+// @ts-ignore - styled-components 5.x bundled types
 import type {
   FlattenInterpolation,
   Interpolation,
@@ -6,8 +7,10 @@ import type {
   ThemedStyledComponentsModule,
   ThemedStyledProps,
   ThemeProps as StyledThemeProps,
+  // @ts-ignore
 } from 'styled-components';
 /* eslint-disable import/no-duplicates */
+// @ts-ignore - styled-components 5.x type import workaround
 import * as styledComponents from 'styled-components';
 
 import { useTheme } from '@material-ui/core/styles';

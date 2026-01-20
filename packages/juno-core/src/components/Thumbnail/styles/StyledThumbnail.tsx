@@ -3,7 +3,7 @@ import { RcThumbnailProps } from '../Thumbnail';
 import { RcThumbnailSizes } from '../utils';
 
 export const StyledThumbnail = styled.span<RcThumbnailProps>`
-  ${({ size, src }) => css`
+  ${({ size, src }: RcThumbnailProps) => css`
     width: ${RcThumbnailSizes[size!]}px;
     height: ${RcThumbnailSizes[size!]}px;
     background-image: url(${src});

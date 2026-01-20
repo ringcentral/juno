@@ -27,7 +27,7 @@ export const StyledPopper = styled(_StyledPopper)`
     background-color: ${palette2('neutral', 'elevation')};
     overflow: hidden;
 
-    ${({ position }) =>
+    ${({ position }: StyledPopperProps) =>
       position === 'top-start'
         ? css`
             border-top-right-radius: ${radiusLg};

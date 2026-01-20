@@ -14,7 +14,7 @@ export const DrawerStyle: RcThemedStyled<RcDrawerProps, any> = (props) => {
     if (radiusValue === '0px' || radiusValue === 0) return null;
 
     return drawerRadius[anchor]
-      .map((x) => (x === 1 ? radiusValue : 0))
+      .map((x: number) => (x === 1 ? radiusValue : 0))
       .join(' ');
   })();
 
