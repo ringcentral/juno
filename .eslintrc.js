@@ -2,6 +2,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
     'plugin:jest/recommended',
+    'airbnb',
     'airbnb-typescript',
     'plugin:prettier/recommended',
     'prettier',
@@ -31,6 +32,13 @@ module.exports = {
     es6: true,
   },
   rules: {
+    // Disable new rules from eslint-config-airbnb@19 to maintain backward compatibility
+    'react/function-component-definition': 'off',
+    'react/jsx-no-useless-fragment': 'off',
+    'react/no-unstable-nested-components': 'off',
+    'react/jsx-no-constructed-context-values': 'off',
+    '@typescript-eslint/default-param-last': 'off',
+    'default-param-last': 'off',
     'react/no-unused-prop-types': 'off',
     '@typescript-eslint/no-unused-expressions': 'warn',
     'react/require-default-props': 'off',
@@ -54,6 +62,7 @@ module.exports = {
       },
     ],
     'import/no-extraneous-dependencies': 'off',
+    'import/no-relative-packages': 'off',
     'import/order': 'off',
     'import/first': 'error',
     'import/no-cycle': 'off',

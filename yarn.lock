@@ -4199,16 +4199,6 @@
   dependencies:
     "@typescript-eslint/utils" "5.62.0"
 
-"@typescript-eslint/parser@^4.4.1":
-  version "4.33.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-4.33.0.tgz#dfe797570d9694e560528d18eecad86c8c744899"
-  integrity sha512-ZohdsbXadjGBSK0/r+d87X0SBmKzOq4/S5nzK6SBgJspFo9/CUDJ7hjayuze+JK7CZQLDMroqytp7pOcFKTxZA==
-  dependencies:
-    "@typescript-eslint/scope-manager" "4.33.0"
-    "@typescript-eslint/types" "4.33.0"
-    "@typescript-eslint/typescript-estree" "4.33.0"
-    debug "^4.3.1"
-
 "@typescript-eslint/parser@^6.0.0":
   version "6.21.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-6.21.0.tgz#af8fcf66feee2edc86bc5d1cf45e33b0630bf35b"
@@ -4219,14 +4209,6 @@
     "@typescript-eslint/typescript-estree" "6.21.0"
     "@typescript-eslint/visitor-keys" "6.21.0"
     debug "^4.3.4"
-
-"@typescript-eslint/scope-manager@4.33.0":
-  version "4.33.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-4.33.0.tgz#d38e49280d983e8772e29121cf8c6e9221f280a3"
-  integrity sha512-5IfJHpgTsTZuONKbODctL4kKuQje/bzBRkwHE8UOZ4f89Zeddg+EGZs8PD8NcN4LdM3ygHWYB3ukPAYjvl/qbQ==
-  dependencies:
-    "@typescript-eslint/types" "4.33.0"
-    "@typescript-eslint/visitor-keys" "4.33.0"
 
 "@typescript-eslint/scope-manager@5.62.0":
   version "5.62.0"
@@ -4254,11 +4236,6 @@
     debug "^4.3.4"
     ts-api-utils "^1.0.1"
 
-"@typescript-eslint/types@4.33.0":
-  version "4.33.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/types/-/types-4.33.0.tgz#a1e59036a3b53ae8430ceebf2a919dc7f9af6d72"
-  integrity sha512-zKp7CjQzLQImXEpLt2BUw1tvOMPfNoTAfb8l51evhYbOEEzdWyQNmHWWGPR6hwKJDAi+1VXSBmnhL9kyVTTOuQ==
-
 "@typescript-eslint/types@5.62.0":
   version "5.62.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/types/-/types-5.62.0.tgz#258607e60effa309f067608931c3df6fed41fd2f"
@@ -4268,19 +4245,6 @@
   version "6.21.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/types/-/types-6.21.0.tgz#205724c5123a8fef7ecd195075fa6e85bac3436d"
   integrity sha512-1kFmZ1rOm5epu9NZEZm1kckCDGj5UJEf7P1kliH4LKu/RkwpsfqqGmY2OOcUs18lSlQBKLDYBOGxRVtrMN5lpg==
-
-"@typescript-eslint/typescript-estree@4.33.0":
-  version "4.33.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-4.33.0.tgz#0dfb51c2908f68c5c08d82aefeaf166a17c24609"
-  integrity sha512-rkWRY1MPFzjwnEVHsxGemDzqqddw2QbTJlICPD9p9I9LfsO8fdmfQPOX3uKfUaGRDFJbfrtm/sXhVXN4E+bzCA==
-  dependencies:
-    "@typescript-eslint/types" "4.33.0"
-    "@typescript-eslint/visitor-keys" "4.33.0"
-    debug "^4.3.1"
-    globby "^11.0.3"
-    is-glob "^4.0.1"
-    semver "^7.3.5"
-    tsutils "^3.21.0"
 
 "@typescript-eslint/typescript-estree@5.62.0":
   version "5.62.0"
@@ -4335,14 +4299,6 @@
     "@typescript-eslint/types" "6.21.0"
     "@typescript-eslint/typescript-estree" "6.21.0"
     semver "^7.5.4"
-
-"@typescript-eslint/visitor-keys@4.33.0":
-  version "4.33.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-4.33.0.tgz#2a22f77a41604289b7a186586e9ec48ca92ef1dd"
-  integrity sha512-uqi/2aSz9g2ftcHWf8uLPJA70rUv6yuMW5Bohw+bwcuzaxQIHaKFZCKGoGXIrc9vkTJ3+0txM73K0Hq3d5wgIg==
-  dependencies:
-    "@typescript-eslint/types" "4.33.0"
-    eslint-visitor-keys "^2.0.0"
 
 "@typescript-eslint/visitor-keys@5.62.0":
   version "5.62.0"
@@ -8539,32 +8495,31 @@ escodegen@^2.0.0, escodegen@^2.1.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-airbnb-base@^14.2.0, eslint-config-airbnb-base@^14.2.1:
-  version "14.2.1"
-  resolved "https://registry.npmjs.org/eslint-config-airbnb-base/-/eslint-config-airbnb-base-14.2.1.tgz#8a2eb38455dc5a312550193b319cdaeef042cd1e"
-  integrity sha512-GOrQyDtVEc1Xy20U7vsB2yAoB4nBlfH5HZJeatRXHleO+OS5Ot+MWij4Dpltw4/DyIkqUfqz1epfhVR5XWWQPA==
+eslint-config-airbnb-base@^15.0.0:
+  version "15.0.0"
+  resolved "https://registry.npmjs.org/eslint-config-airbnb-base/-/eslint-config-airbnb-base-15.0.0.tgz#6b09add90ac79c2f8d723a2580e07f3925afd236"
+  integrity sha512-xaX3z4ZZIcFLvh2oUNvcX5oEofXda7giYmuplVxoOg5A7EXJMrUyqRgR+mhDhPK8LZ4PttFOBvCYDbX3sUoUig==
   dependencies:
     confusing-browser-globals "^1.0.10"
     object.assign "^4.1.2"
-    object.entries "^1.1.2"
+    object.entries "^1.1.5"
+    semver "^6.3.0"
 
-eslint-config-airbnb-typescript@12.3.1:
-  version "12.3.1"
-  resolved "https://registry.npmjs.org/eslint-config-airbnb-typescript/-/eslint-config-airbnb-typescript-12.3.1.tgz#83ab40d76402c208eb08516260d1d6fac8f8acbc"
-  integrity sha512-ql/Pe6/hppYuRp4m3iPaHJqkBB7dgeEmGPQ6X0UNmrQOfTF+dXw29/ZjU2kQ6RDoLxaxOA+Xqv07Vbef6oVTWw==
+eslint-config-airbnb-typescript@^18.0.0:
+  version "18.0.0"
+  resolved "https://registry.npmjs.org/eslint-config-airbnb-typescript/-/eslint-config-airbnb-typescript-18.0.0.tgz#b1646db4134858d704b1d2bee47e1d72c180315f"
+  integrity sha512-oc+Lxzgzsu8FQyFVa4QFaVKiitTYiiW3frB9KYW5OWdPrqFc7FzxgB20hP4cHMlr+MBzGcLl3jnCOVOydL9mIg==
   dependencies:
-    "@typescript-eslint/parser" "^4.4.1"
-    eslint-config-airbnb "^18.2.0"
-    eslint-config-airbnb-base "^14.2.0"
+    eslint-config-airbnb-base "^15.0.0"
 
-eslint-config-airbnb@^18.2.0:
-  version "18.2.1"
-  resolved "https://registry.npmjs.org/eslint-config-airbnb/-/eslint-config-airbnb-18.2.1.tgz#b7fe2b42f9f8173e825b73c8014b592e449c98d9"
-  integrity sha512-glZNDEZ36VdlZWoxn/bUR1r/sdFKPd1mHPbqUtkctgNG4yT2DLLtJ3D+yCV+jzZCc2V1nBVkmdknOJBZ5Hc0fg==
+eslint-config-airbnb@^19.0.0:
+  version "19.0.4"
+  resolved "https://registry.npmjs.org/eslint-config-airbnb/-/eslint-config-airbnb-19.0.4.tgz#84d4c3490ad70a0ffa571138ebcdea6ab085fdc3"
+  integrity sha512-T75QYQVQX57jiNgpF9r1KegMICE94VYwoFQyMGhrvc+lB8YF2E/M/PYDaQe1AJcWaEgqLE+ErXV1Og/+6Vyzew==
   dependencies:
-    eslint-config-airbnb-base "^14.2.1"
+    eslint-config-airbnb-base "^15.0.0"
     object.assign "^4.1.2"
-    object.entries "^1.1.2"
+    object.entries "^1.1.5"
 
 eslint-config-prettier@^9.0.0:
   version "9.1.2"
@@ -8737,11 +8692,6 @@ eslint-scope@^7.2.2:
   dependencies:
     esrecurse "^4.3.0"
     estraverse "^5.2.0"
-
-eslint-visitor-keys@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-2.1.0.tgz#f65328259305927392c938ed44eb0a5c9b2bd303"
-  integrity sha512-0rSmRBzXgDzIsD6mGdJgevzgezI534Cer5L/vyMX0kHzT/jiB43jRhd9YUlMGYLQy2zprNmoT8qasCGtY+QaKw==
 
 eslint-visitor-keys@^3.3.0, eslint-visitor-keys@^3.4.1, eslint-visitor-keys@^3.4.3:
   version "3.4.3"
@@ -10023,7 +9973,7 @@ globby@10.0.0:
     merge2 "^1.2.3"
     slash "^3.0.0"
 
-globby@^11.0.2, globby@^11.0.3, globby@^11.0.4, globby@^11.1.0:
+globby@^11.0.2, globby@^11.0.4, globby@^11.1.0:
   version "11.1.0"
   resolved "https://registry.npmjs.org/globby/-/globby-11.1.0.tgz#bd4be98bb042f83d796f7e3811991fbe82a0d34b"
   integrity sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==
@@ -14171,7 +14121,7 @@ object.assign@^4.1.2, object.assign@^4.1.4, object.assign@^4.1.7:
     has-symbols "^1.1.0"
     object-keys "^1.1.1"
 
-object.entries@^1.1.0, object.entries@^1.1.2, object.entries@^1.1.9:
+object.entries@^1.1.0, object.entries@^1.1.5, object.entries@^1.1.9:
   version "1.1.9"
   resolved "https://registry.npmjs.org/object.entries/-/object.entries-1.1.9.tgz#e4770a6a1444afb61bd39f984018b5bede25f8b3"
   integrity sha512-8u/hfXFRBD1O0hPUjioLhoWFHRmt6tKA4/vZPyckBr18l1KE9uHrFaFaUi8MDRTpi4uak2goyPTSNJLXX2k2Hw==
