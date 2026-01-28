@@ -1,6 +1,7 @@
 {
   "name": "@ringcentral/juno-test",
   "version": "3.0.0-alpha.5",
+  "private": true,
   "license": "MIT",
   "author": "RingCentral",
   "bugs": {
