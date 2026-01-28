@@ -1,6 +1,6 @@
 {
   "name": "@ringcentral/juno-framer",
-  "version": "1.0.0",
+  "version": "3.0.0-alpha.5",
   "license": "MIT",
   "author": "RingCentral",
   "bugs": {
@@ -19,8 +19,8 @@
   },
   "dependencies": {
     "esbuild": "0.14.1",
-    "@ringcentral/juno": "3.0.0-alpha.3",
-    "@ringcentral/juno-icon": "3.0.0-alpha.3"
+    "@ringcentral/juno": "3.0.0-alpha.5",
+    "@ringcentral/juno-icon": "3.0.0-alpha.5"
   },
   "devDependencies": {
     "framer": "2.1.3"

@@ -1,6 +1,6 @@
 {
   "name": "@ringcentral/juno-test",
-  "version": "1.0.0",
+  "version": "3.0.0-alpha.5",
   "license": "MIT",
   "author": "RingCentral",
   "bugs": {
@@ -16,7 +16,7 @@
     "clean-cache": "rm -rf node_modules/.cache"
   },
   "dependencies": {
-    "@ringcentral/juno": "3.0.0-alpha.3"
+    "@ringcentral/juno": "3.0.0-alpha.5"
   },
   "peerDependencies": {
     "@material-ui/core": "^4.12.3",
