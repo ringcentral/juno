@@ -1,4 +1,11 @@
 
+## [3.0.0-alpha.9](https://github.com/ringcentral/juno/compare/juno-core-v3.0.0-alpha.8...juno-core-v3.0.0-alpha.9) (2026-01-30)
+
+
+### Bug Fixes
+
+* **juno-core:** eliminate any type inference in styled-components exports ([2fceae3](https://github.com/ringcentral/juno/commit/2fceae3c2943309a78ad989f0b1e55e6b9b41919))
+
 ## [3.0.0-alpha.8](https://github.com/ringcentral/juno/compare/juno-core-v3.0.0-alpha.8...juno-core-v3.0.0-alpha.8) (2026-01-30)
 
 ## [3.0.0-alpha.8](https://github.com/ringcentral/juno/compare/juno-core-v3.0.0-alpha.7...juno-core-v3.0.0-alpha.8) (2026-01-29)
