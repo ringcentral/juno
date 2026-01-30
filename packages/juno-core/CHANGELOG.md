@@ -1,4 +1,6 @@
 
+## [3.0.0-alpha.8](https://github.com/ringcentral/juno/compare/juno-core-v3.0.0-alpha.8...juno-core-v3.0.0-alpha.8) (2026-01-30)
+
 ## [3.0.0-alpha.8](https://github.com/ringcentral/juno/compare/juno-core-v3.0.0-alpha.7...juno-core-v3.0.0-alpha.8) (2026-01-29)
 
 ## [3.0.0-alpha.7](https://github.com/ringcentral/juno/compare/juno-core-v3.0.0-alpha.7...juno-core-v3.0.0-alpha.7) (2026-01-29)
