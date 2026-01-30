@@ -1,16 +1,17 @@
-// @ts-ignore - styled-components 5.x bundled types
+import type { ComponentType, ReactNode } from 'react';
+
 import type {
   FlattenInterpolation,
   Interpolation,
   InterpolationValue,
   Keyframes,
+  ThemedCssFunction,
   ThemedStyledComponentsModule,
+  ThemedStyledInterface,
   ThemedStyledProps,
   ThemeProps as StyledThemeProps,
-  // @ts-ignore
 } from 'styled-components';
 /* eslint-disable import/no-duplicates */
-// @ts-ignore - styled-components 5.x type import workaround
 import * as styledComponents from 'styled-components';
 
 import { useTheme } from '@material-ui/core/styles';
@@ -19,20 +20,26 @@ import { RcTheme } from './theme/theme.type';
 
 type ThemeProps = StyledThemeProps<RcTheme>;
 
-const {
-  default: styled,
-  css,
-  keyframes,
-  createGlobalStyle,
-  withTheme,
-  // @ts-ignore
-  StyleSheetManager,
-  ThemeProvider,
-  ThemeConsumer,
-} = styledComponents as any as ThemedStyledComponentsModule<RcTheme>;
+const styledModule =
+  styledComponents as unknown as ThemedStyledComponentsModule<RcTheme>;
+const styled: ThemedStyledInterface<RcTheme> = styledModule.default;
+const css: ThemedCssFunction<RcTheme> = styledModule.css;
+const keyframes: typeof styledModule.keyframes = styledModule.keyframes;
+const createGlobalStyle: typeof styledModule.createGlobalStyle =
+  styledModule.createGlobalStyle;
+const withTheme: typeof styledModule.withTheme = styledModule.withTheme;
+const StyleSheetManager = (
+  styledComponents as typeof styledComponents & {
+    StyleSheetManager: ComponentType<{ children?: ReactNode }>;
+  }
+).StyleSheetManager;
+const ThemeProvider: typeof styledModule.ThemeProvider =
+  styledModule.ThemeProvider;
+const ThemeConsumer: typeof styledModule.ThemeConsumer =
+  styledModule.ThemeConsumer;
 
 type Dependencies = {
-  dependencies?: (React.ComponentType | ((props: any) => JSX.Element))[];
+  dependencies?: (ComponentType | ((props: unknown) => JSX.Element))[];
 };
 
 const RcUseTheme = <T = RcTheme>() => useTheme<T>();

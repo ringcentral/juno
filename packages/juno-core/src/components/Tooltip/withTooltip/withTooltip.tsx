@@ -1,4 +1,9 @@
-import React, { ComponentType, forwardRef } from 'react';
+import React, { forwardRef } from 'react';
+import type {
+  ComponentPropsWithoutRef,
+  ElementRef,
+  ComponentType,
+} from 'react';
 
 import { RcTooltip, RcTooltipProps } from '../Tooltip';
 
@@ -14,20 +19,36 @@ type WithTooltipProps<P extends {} = {}> = {
 /**
  * Make a component can be use with `RcTooltip` and Tooltip Props
  */
-function withTooltip<T extends object>(Component: ComponentType<T>) {
-  return forwardRef<any, WithTooltipProps<T>>((props, ref) => {
+function withTooltip<C extends ComponentType<unknown>>(Component: C) {
+  type ComponentProps = ComponentPropsWithoutRef<C>;
+  type SafeProps = ComponentProps extends object ? ComponentProps : {};
+  type Props = WithTooltipProps<SafeProps>;
+  type Ref = ElementRef<C>;
+
+  const WithTooltip = forwardRef<Ref, Props>((props, ref) => {
     const { title, useRcTooltip, TooltipProps, ...rest } = props;
+    const restProps = rest as SafeProps;
+    const ComponentWithRef = Component as unknown as React.ComponentType<
+      SafeProps & { ref?: React.Ref<Ref> }
+    >;
 
     if (title && useRcTooltip) {
       return (
         <RcTooltip title={title as RcTooltipProps['title']} {...TooltipProps}>
-          <Component {...(rest as any)} ref={ref} />
+          <ComponentWithRef {...restProps} ref={ref} />
         </RcTooltip>
       );
     }
 
-    return <Component title={title} {...(rest as any)} ref={ref} />;
+    return (
+      <ComponentWithRef {...({ ...restProps, title } as SafeProps)} ref={ref} />
+    );
   });
+
+  return WithTooltip as React.ForwardRefExoticComponent<
+    React.PropsWithoutRef<Props> & React.RefAttributes<Ref>
+  > &
+    React.ComponentType<Props>;
 }
 
 export { withTooltip };
