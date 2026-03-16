@@ -30,7 +30,7 @@ export const useAnnouncer = (id?: string) => {
   const { externalWindow = window } = useRcPortalWindowContext();
 
   useEffect(() => {
-    const document = externalWindow?.document || window.document;
+    const document = externalWindow.document;
     const el = document.createElement('div');
 
     ref.current = el;
