@@ -1,4 +1,11 @@
 
+## [3.0.0-alpha.12](https://github.com/ringcentral/juno/compare/juno-core-v3.0.0-alpha.11...juno-core-v3.0.0-alpha.12) (2026-03-16)
+
+
+### Bug Fixes
+
+* **juno-core:** guard autoFocus ripple initialization ([4a877b4](https://github.com/ringcentral/juno/commit/4a877b42501f5aedc9555b47c785d5c8666e02da))
+
 ## [3.0.0-alpha.11](https://github.com/ringcentral/juno/compare/juno-core-v3.0.0-alpha.11...juno-core-v3.0.0-alpha.11) (2026-03-16)
 
 ## [3.0.0-alpha.11](https://github.com/ringcentral/juno/compare/juno-core-v3.0.0-alpha.10...juno-core-v3.0.0-alpha.11) (2026-02-02)
