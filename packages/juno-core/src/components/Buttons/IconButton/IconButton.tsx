@@ -1,4 +1,11 @@
-import React, { forwardRef, memo, ReactElement, useMemo } from 'react';
+import React, {
+  FocusEvent,
+  forwardRef,
+  memo,
+  ReactElement,
+  useMemo,
+  useRef,
+} from 'react';
 
 import clsx from 'clsx';
 
@@ -10,6 +17,9 @@ import {
   styled,
   UnionOmit,
   useDeprecatedCheck,
+  useEventCallback,
+  useForkRef,
+  useSafeAutoFocus,
   useTheme,
   useThemeProps,
   combineClasses,
@@ -126,6 +136,7 @@ const _RcIconButton = memo(
       iconSize,
       disableTouchRipple,
       useColorWhenDisabled,
+      autoFocus = false,
       size,
       radius,
       elevation,
@@ -141,11 +152,17 @@ const _RcIconButton = memo(
       externalLink,
       download,
       href,
+      focusRipple: focusRippleProp = true,
       focusVariant,
+      onBlur,
       ...rest
     } = props;
 
     const theme = useTheme();
+    const innerButtonRef = useRef<HTMLButtonElement>(null);
+    const handleButtonRef = useForkRef(innerButtonRef, buttonRef as any);
+    const { suppressInitialFocusRipple, handleAutoFocusBlur } =
+      useSafeAutoFocus(autoFocus && !disabled, innerButtonRef);
 
     const isOutline = variant === 'outline';
     const isContained = variant === 'contained';
@@ -166,6 +183,13 @@ const _RcIconButton = memo(
       [classes.inverse]: isInverse,
       [classes.round]: isRound,
     });
+
+    const handleBlur = useEventCallback(
+      (event: FocusEvent<HTMLButtonElement>) => {
+        handleAutoFocusBlur(event);
+        onBlur?.(event);
+      },
+    );
 
     const iconButton = (() => {
       // `color` already handle in StyledIconButton
@@ -190,7 +214,7 @@ const _RcIconButton = memo(
 
       const iconButton = (
         <RcButtonBase
-          ref={buttonRef as any}
+          ref={handleButtonRef as any}
           disableRipple={theme.props?.MuiButtonBase?.disableRipple || isPlain}
           type={type}
           disabled={disabled}
@@ -198,6 +222,10 @@ const _RcIconButton = memo(
           title={title}
           aria-disabled={disabled}
           className={IconClassName}
+          focusRipple={
+            suppressInitialFocusRipple ? false : focusRippleProp
+          }
+          onBlur={handleBlur}
           TouchRippleProps={combineProps(
             {
               classes: RcIconButtonTouchRippleClasses,

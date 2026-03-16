@@ -1,8 +1,10 @@
 import React, {
   cloneElement,
   ComponentProps,
+  FocusEvent,
   forwardRef,
   useMemo,
+  useRef,
 } from 'react';
 
 import MuiStepButton from '@material-ui/core/StepButton';
@@ -13,6 +15,9 @@ import {
   isRcElement,
   RcBaseProps,
   styled,
+  useEventCallback,
+  useForkRef,
+  useSafeAutoFocus,
   useThemeProps,
 } from '../../../foundation';
 import { RcStepLabel, RcStepLabelProps } from '../StepLabel';
@@ -36,8 +41,16 @@ const _RcStepButton = forwardRef<any, RcStepButtonProps>(
       error,
       StepLabelProps,
       editable,
+      autoFocus = false,
+      disabled = false,
+      focusRipple,
+      onBlur,
       ...rest
     } = props;
+    const innerRef = useRef<HTMLButtonElement>(null);
+    const handleRef = useForkRef(innerRef, ref);
+    const { suppressInitialFocusRipple, handleAutoFocusBlur } =
+      useSafeAutoFocus(autoFocus && !disabled, innerRef);
 
     const classes = useMemo(
       () => combineClasses(RcStepButtonClasses, classesProp),
@@ -62,12 +75,24 @@ const _RcStepButton = forwardRef<any, RcStepButtonProps>(
       );
     }, [StepLabelProps, childrenProp, editable, error, icon, optional]);
 
+    const handleBlur = useEventCallback(
+      (event: FocusEvent<HTMLButtonElement>) => {
+        handleAutoFocusBlur(event);
+        onBlur?.(event);
+      },
+    );
+
     return (
       <MuiStepButton
         {...rest}
+        disabled={disabled}
+        focusRipple={
+          suppressInitialFocusRipple ? false : focusRipple
+        }
         icon={icon}
+        onBlur={handleBlur}
         optional={optional}
-        ref={ref}
+        ref={handleRef}
         classes={classes}
       >
         {children}

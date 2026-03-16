@@ -19,7 +19,9 @@ import {
   removeClassName,
   styled,
   useDeprecatedCheck,
+  useEventCallback,
   useForkRef,
+  useSafeAutoFocus,
   useTheme,
   useThemeProps,
   RcBaseFocusVariant,
@@ -117,13 +119,17 @@ const _RcButton = forwardRef<any, RcButtonProps>(
       radius,
       keepElevation,
       focusVariant,
+      autoFocus = false,
       disableFocusRipple: disableFocusRippleProp,
+      onBlur,
       ...rest
     } = props;
 
     const theme = useTheme();
     const innerRef = useRef<HTMLButtonElement>(null);
     const buttonRef = useForkRef(innerRef, ref);
+    const { suppressInitialFocusRipple, handleAutoFocusBlur } =
+      useSafeAutoFocus(autoFocus && !(disabled || loading), innerRef);
 
     const isPlain = variant === 'plain';
     const isReplace = loadingMode === 'replace';
@@ -218,8 +224,15 @@ const _RcButton = forwardRef<any, RcButtonProps>(
       removeClassName(innerRef, 'MuiButton-iconSizeMedium');
     });
 
-    const disableFocusRipple =
-      disableFocusRippleProp ?? focusVariant === 'focusRing';
+    const disableFocusRipple = suppressInitialFocusRipple
+      ? true
+      : disableFocusRippleProp ?? focusVariant === 'focusRing';
+    const handleBlur = useEventCallback(
+      (event: React.FocusEvent<HTMLButtonElement>) => {
+        handleAutoFocusBlur(event);
+        onBlur?.(event);
+      },
+    );
 
     return (
       <MuiButton
@@ -231,6 +244,7 @@ const _RcButton = forwardRef<any, RcButtonProps>(
         endIcon={endIcon}
         classes={classes}
         disableFocusRipple={disableFocusRipple}
+        onBlur={handleBlur}
         {...rest}
       >
         {loading && isReplace ? loadingElm : childrenProp}

@@ -26,6 +26,7 @@ export * from './useResizeObserver';
 export * from './useResponsiveMatch';
 export * from './useResultRef';
 export * from './useRetry';
+export * from './useSafeAutoFocus';
 export * from './useSleep';
 export * from './useThrottle';
 export * from './useTouchMouseEvent';
