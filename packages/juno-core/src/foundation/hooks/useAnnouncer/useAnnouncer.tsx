@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef } from 'react';
+import { useRcPortalWindowContext } from '../../contexts/PortalWindowContext';
 
 import { useId } from '../useId';
 
@@ -26,8 +27,10 @@ export const useAnnouncer = (id?: string) => {
   const _id = useId(id ? `rc-announcer-${id}` : 'rc-announcer', !id);
 
   const ref = useRef<HTMLElement | null>(null);
+  const { externalWindow = window } = useRcPortalWindowContext();
 
   useEffect(() => {
+    const document = externalWindow?.document || window.document;
     const el = document.createElement('div');
 
     ref.current = el;
@@ -53,7 +56,7 @@ export const useAnnouncer = (id?: string) => {
         }
       });
     };
-  }, [_id]);
+  }, [_id, externalWindow]);
 
   /** announce method, call with message that want let reader speak */
   const announce = useCallback((message?: string) => {
