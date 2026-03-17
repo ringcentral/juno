@@ -86,9 +86,7 @@ const _RcStepButton = forwardRef<any, RcStepButtonProps>(
       <MuiStepButton
         {...rest}
         disabled={disabled}
-        focusRipple={
-          suppressInitialFocusRipple ? false : focusRipple
-        }
+        focusRipple={suppressInitialFocusRipple ? false : focusRipple}
         icon={icon}
         onBlur={handleBlur}
         optional={optional}

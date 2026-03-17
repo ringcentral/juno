@@ -22,8 +22,10 @@ const _RcButtonBase = forwardRef<any, RcButtonBaseProps>((props, ref) => {
   } = props;
   const innerRef = useRef<any>(null);
   const buttonRef = useForkRef(ref, innerRef);
-  const { suppressInitialFocusRipple, handleAutoFocusBlur } =
-    useSafeAutoFocus(autoFocus && !disabled, innerRef);
+  const { suppressInitialFocusRipple, handleAutoFocusBlur } = useSafeAutoFocus(
+    autoFocus && !disabled,
+    innerRef,
+  );
 
   const handleBlur = useEventCallback((event: FocusEvent<any>) => {
     handleAutoFocusBlur(event);

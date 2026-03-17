@@ -222,9 +222,7 @@ const _RcIconButton = memo(
           title={title}
           aria-disabled={disabled}
           className={IconClassName}
-          focusRipple={
-            suppressInitialFocusRipple ? false : focusRippleProp
-          }
+          focusRipple={suppressInitialFocusRipple ? false : focusRippleProp}
           onBlur={handleBlur}
           TouchRippleProps={combineProps(
             {

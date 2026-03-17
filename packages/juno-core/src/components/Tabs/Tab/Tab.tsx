@@ -44,8 +44,10 @@ const _RcTab = forwardRef<any, RcTabProps>((inProps, ref) => {
   } = props;
   const innerRef = useRef<any>(null);
   const tabRef = useForkRef(ref, innerRef);
-  const { suppressInitialFocusRipple, handleAutoFocusBlur } =
-    useSafeAutoFocus(autoFocus && !disabled, innerRef);
+  const { suppressInitialFocusRipple, handleAutoFocusBlur } = useSafeAutoFocus(
+    autoFocus && !disabled,
+    innerRef,
+  );
   const classes = useMemo(
     () => combineProps(RcTabClasses, classesProp),
     [classesProp],
