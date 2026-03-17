@@ -51430,18 +51430,20 @@ var visuallyHiddenStyles = `
 var useAnnouncer = (id2) => {
   const _id = useId2(id2 ? `rc-announcer-${id2}` : "rc-announcer", !id2);
   const ref2 = useRef32(null);
+  const { externalWindow = window } = useRcPortalWindowContext();
   useEffect30(() => {
-    const el2 = document.createElement("div");
+    const document2 = externalWindow.document;
+    const el2 = document2.createElement("div");
     ref2.current = el2;
     el2.id = _id;
     el2.setAttribute("aria-live", "assertive");
     el2.setAttribute("aria-atomic", "true");
     el2.setAttribute("aria-hidden", "false");
     el2.setAttribute("style", visuallyHiddenStyles);
-    document.body.appendChild(el2);
+    document2.body.appendChild(el2);
     return () => {
       setTimeout(() => {
-        const body = document.body;
+        const body = document2.body;
         if (body.contains(el2)) {
           body.removeChild(el2);
         }
@@ -51450,7 +51452,7 @@ var useAnnouncer = (id2) => {
         }
       });
     };
-  }, [_id]);
+  }, [_id, externalWindow]);
   const announce = useCallback20((message) => {
     const el2 = ref2.current;
     if (el2 && message) {
