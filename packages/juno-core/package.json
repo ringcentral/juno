@@ -1,6 +1,6 @@
 {
   "name": "@ringcentral/juno",
-  "version": "2.53.0",
+  "version": "3.0.0-alpha.13",
   "license": "MIT",
   "author": "RingCentral",
   "bugs": {
@@ -31,28 +31,28 @@
     "@material-ui/styles": "^4.11.4",
     "@types/lodash": "^4.14.169",
     "@types/react-beautiful-dnd": "^13.0.0",
-    "@types/styled-components": "4.0.3",
+    "@types/styled-components": "5.1.36",
     "clsx": "^1.0.4",
     "focus-visible": "^5.1.0",
     "lodash": "^4.17.21",
     "react-beautiful-dnd": "^13.0.0",
     "react-virtuoso": "^4.6.2",
     "resize-observer-polyfill": "^1.5.1",
-    "typeface-lato": "^0.0.75",
+    "tslib": ">=2.0.0",
     "type-fest": "^2.12.2",
-    "tslib": ">=2.0.0"
+    "typeface-lato": "^0.0.75"
   },
   "devDependencies": {
+    "@ringcentral/juno-icon": "3.0.0-alpha.13",
+    "@ringcentral/juno-storybook": "3.0.0-alpha.13",
     "dayjs": "^1.11.6",
-    "styled-components": "5.3.3",
-    "@ringcentral/juno-icon": "*",
-    "@ringcentral/juno-storybook": "*"
+    "styled-components": "5.3.11"
   },
   "peerDependencies": {
-    "@ringcentral/juno-icon": ">=1.0.0 <2.0.0",
+    "@ringcentral/juno-icon": "^1.0.0 || ^2.0.0-alpha.0 || ^3.0.0-alpha.0",
     "dayjs": "^1.11.6",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "styled-components": "^5.3.3"
+    "react": "^17.0.2 || ^18.0.0",
+    "react-dom": "^17.0.2 || ^18.0.0",
+    "styled-components": "^5.3.11"
   }
 }
