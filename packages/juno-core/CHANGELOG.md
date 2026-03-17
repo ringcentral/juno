@@ -1,4 +1,6 @@
 
+## [2.52.0](https://github.com/ringcentral/juno/compare/juno-core-v2.50.0...juno-core-v2.52.0) (2026-03-17)
+
 ## [2.50.0](https://github.com/ringcentral/juno/compare/juno-core-v2.46.0...juno-core-v2.50.0) (2026-03-17)
 
 
