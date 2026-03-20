@@ -1,6 +1,6 @@
 {
   "name": "@ringcentral/juno-storybook",
-  "version": "3.0.0-alpha.13",
+  "version": "3.0.0-alpha.14",
   "private": true,
   "license": "MIT",
   "author": "RingCentral",
@@ -17,7 +17,7 @@
     "clean-cache": "rm -rf node_modules/.cache"
   },
   "dependencies": {
-    "@ringcentral/juno": "3.0.0-alpha.13",
+    "@ringcentral/juno": "3.0.0-alpha.14",
     "moment": "^2.29.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",

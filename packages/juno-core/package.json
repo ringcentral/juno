@@ -1,6 +1,6 @@
 {
   "name": "@ringcentral/juno",
-  "version": "3.0.0-alpha.13",
+  "version": "3.0.0-alpha.14",
   "license": "MIT",
   "author": "RingCentral",
   "bugs": {
@@ -43,8 +43,8 @@
     "typeface-lato": "^0.0.75"
   },
   "devDependencies": {
-    "@ringcentral/juno-icon": "3.0.0-alpha.13",
-    "@ringcentral/juno-storybook": "3.0.0-alpha.13",
+    "@ringcentral/juno-icon": "3.0.0-alpha.14",
+    "@ringcentral/juno-storybook": "3.0.0-alpha.14",
     "dayjs": "^1.11.6",
     "styled-components": "5.3.11"
   },
